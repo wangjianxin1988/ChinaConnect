@@ -1,12 +1,13 @@
 import { TIER_CONFIG } from "@/data/cities/tier-data";
 import type { CityTier } from "@/data/cities/types";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 interface CityTierBadgeProps {
   tier: CityTier;
   size?: "sm" | "md" | "lg";
   showLabel?: boolean;
   className?: string;
+  lang?: string;
 }
 
 export function CityTierBadge({
@@ -14,8 +15,16 @@ export function CityTierBadge({
   size = "md",
   showLabel = true,
   className = "",
+  lang,
 }: CityTierBadgeProps) {
   const config = TIER_CONFIG[tier];
+  const [currentLang, setCurrentLang] = useState(lang || "en");
+  useEffect(() => {
+    try {
+      const stored = window.localStorage.getItem("chinaconnect_language");
+      if (stored) setCurrentLang(stored);
+    } catch (e) {}
+  }, [lang]);
 
   const sizeClasses = {
     sm: "px-2 py-0.5 text-xs",
@@ -97,7 +106,7 @@ export function CityTierBadge({
           </svg>
         )}
       </span>
-      {showLabel && <span className="hidden sm:inline">{config.labelZh}</span>}
+      {showLabel && <span className="hidden sm:inline">{currentLang === "ja" ? config.labelJa : currentLang === "en" ? config.label : config.labelZh}</span>}
     </span>
   );
 }

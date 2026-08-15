@@ -9,17 +9,18 @@ import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import React, { useState, useRef, useEffect } from "react";
 import { type Language, translations } from "@/i18n/translations";
+import { jaText, Bi } from "./guide-i18n";
 
 interface FormValues {
   [key: string]: string;
 }
 
-function buildLetterHTML(template: (typeof INVITATION_TEMPLATES)[0], values: FormValues): string {
+function buildLetterHTML(template: (typeof INVITATION_TEMPLATES)[0], values: FormValues, lang: Language): string {
   let html = `<div class="print-container">`;
 
   // Header
   html += `<div class="print-header">
-    <div class="print-title">${template.titleCn}</div>
+    <div class="print-title">${jaText(template.titleCn, lang)}</div>
     <div style="font-size:14pt;font-weight:normal;margin-top:5px;">${template.title}</div>
   </div>`;
 
@@ -73,7 +74,7 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
   // Update preview when form values change
   useEffect(() => {
     if (previewMode && printRef.current) {
-      const html = buildLetterHTML(currentTemplate, formValues);
+      const html = buildLetterHTML(currentTemplate, formValues, lang);
       setPreviewHTML(html);
       printRef.current.innerHTML = html;
     }
@@ -90,7 +91,7 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
     setIsGeneratingPDF(true);
     try {
       // Temporarily add the full HTML for better rendering
-      const fullHTML = buildLetterHTML(currentTemplate, formValues);
+      const fullHTML = buildLetterHTML(currentTemplate, formValues, lang);
       printRef.current.innerHTML = fullHTML;
 
       const canvas = await html2canvas(printRef.current, {
@@ -137,7 +138,7 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
 
     const lines: string[] = [];
 
-    lines.push(`${currentTemplate.titleCn}`);
+    lines.push(`${jaText(currentTemplate.titleCn, lang)}`);
     lines.push(currentTemplate.title);
     lines.push("");
     lines.push("─".repeat(50));
@@ -176,7 +177,7 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
   const handlePrint = () => {
     if (!printRef.current) return;
 
-    const fullHTML = buildLetterHTML(currentTemplate, formValues);
+    const fullHTML = buildLetterHTML(currentTemplate, formValues, lang);
     printRef.current.innerHTML = fullHTML;
 
     const printWindow = window.open("", "_blank");
@@ -259,14 +260,14 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
               Download ready-to-use invitation letters for visa applications, trade visits, and
               business meetings. Fill in the fields and download as PDF or print.
             </p>
-            <LastVerifiedStamp dataKey="invitation-letter" />
+            <LastVerifiedStamp dataKey="invitation-letter" lang={lang} />
           </div>
         </div>
       </div>
 
       {/* Template Selector */}
       <div>
-        <h3 className="text-lg font-semibold mb-3">Choose Template / 选择模板</h3>
+        <h3 className="text-lg font-semibold mb-3"><Bi en="Choose Template" zh="选择模板" lang={lang} /></h3>
         <div className="grid md:grid-cols-3 gap-4">
           {INVITATION_TEMPLATES.map((tpl) => (
             <button
@@ -288,7 +289,7 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
                 </span>
                 <div>
                   <div className="font-semibold">{tpl.title}</div>
-                  <div className="text-xs text-muted-foreground">{tpl.titleCn}</div>
+                  <div className="text-xs text-muted-foreground">{jaText(tpl.titleCn, lang)}</div>
                 </div>
               </div>
               <p className="text-sm text-muted-foreground">{tpl.description}</p>
@@ -318,7 +319,7 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
         {/* Form */}
         <div className="space-y-4">
           <div className="flex items-center justify-between">
-            <h3 className="text-lg font-semibold">Fill in Fields / 填写字段</h3>
+            <h3 className="text-lg font-semibold"><Bi en="Fill in Fields" zh="填写字段" lang={lang} /></h3>
             <button
               onClick={() => {
                 setFormValues({});
@@ -336,7 +337,7 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
                 <label className="block text-sm font-medium mb-1">
                   {field.label}
                   {field.required && <span className="text-red-500 ml-1">*</span>}
-                  <span className="text-muted-foreground ml-2 text-xs">{field.labelCn}</span>
+                  <span className="text-muted-foreground ml-2 text-xs">{jaText(field.labelCn, lang)}</span>
                 </label>
                 <input
                   type="text"
@@ -353,7 +354,7 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
         {/* Preview */}
         <div>
           <div className="flex items-center justify-between mb-3">
-            <h3 className="text-lg font-semibold">Preview / 预览</h3>
+            <h3 className="text-lg font-semibold"><Bi en="Preview" zh="预览" lang={lang} /></h3>
             <div className="flex gap-2">
               <button
                 onClick={() => setPreviewMode(!previewMode)}
@@ -429,8 +430,7 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
       {/* Tips */}
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-5">
         <h4 className="font-semibold text-amber-900 mb-3 flex items-center gap-2">
-          <span>💡</span> Important Tips for Visa Applications / 签证申请重要提示
-        </h4>
+          <span>💡</span><Bi en="Important Tips for Visa Applications" zh="签证申请重要提示" lang={lang} /></h4>
         <ul className="space-y-2 text-sm text-amber-800">
           <li>
             • Include the company registration number (统一社会信用代码) — required by most

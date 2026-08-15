@@ -1,4 +1,4 @@
-/**
+﻿/**
  * App Recommendations Component
  * Suggests useful apps for foreigners in China with English/multilingual support
  */
@@ -10,6 +10,8 @@ export interface AppRecommendation {
   nameEn: string;
   description: string;
   descriptionEn: string;
+  /** Japanese description */
+  descriptionJa?: string;
   icon: string;
   category: AppCategory;
   appStoreUrl?: string;
@@ -63,6 +65,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     description: "Essential messaging, payments, mini-programs",
     descriptionEn:
       "Essential messaging, payments, mini-programs, and social platform for daily life in China. Supports English interface.",
+    descriptionJa: "中国での日常生活に欠かせないメッセージ、決済、ミニアプリ、ソーシャルプラットフォーム。英語インターフェース対応。",
     icon: "💬",
     category: "payment",
     appStoreUrl: "https://apps.apple.com/app/wechat/id414478124",
@@ -78,6 +81,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     description: "Payment, transfers, government services",
     descriptionEn:
       "China's dominant payment app. Pay anywhere, transfer money, access government services. Full English support available.",
+    descriptionJa: "中国で最も普及している決済アプリ。どこでも支払い、送金、行政サービスへのアクセスが可能。英語フル対応。",
     icon: "💰",
     category: "payment",
     appStoreUrl: "https://apps.apple.com/app/alipay/id333206289",
@@ -93,6 +97,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     description: "QR payments, split bills, store payments",
     descriptionEn:
       "Link your foreign card to WeChat Pay for QR code payments at stores and restaurants throughout China.",
+    descriptionJa: "外国のカードをWeChat Payに紐付けて、中国全土の店舗やレストランでQRコード決済ができます。",
     icon: "💳",
     category: "payment",
     appStoreUrl: "https://apps.apple.com/app/wechat/id414478124",
@@ -109,6 +114,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     description: "Taxi, ride-hailing with English interface",
     descriptionEn:
       "Book taxis, private cars, and rides with English interface. Supports international credit cards and English destination input.",
+    descriptionJa: "英語インターフェースでタクシーやプライベートカーを予約。国際クレジットカード対応、英語での目的地入力も可能。",
     icon: "🚗",
     category: "transport",
     appStoreUrl: "https://apps.apple.com/app/didi-passenger/id1138808114",
@@ -124,6 +130,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     description: "Flights, hotels, trains - full English",
     descriptionEn:
       "Book flights, hotels, trains, and tours with full English interface. Excellent for international travelers. Join affiliate program for commissions on bookings.",
+    descriptionJa: "英語フル対応で航空券、ホテル、鉄道、ツアーを予約。海外旅行者に最適。アフィリエイトプログラムで予約ごとにコミッション獲得。",
     icon: "✈️",
     category: "travel",
     appStoreUrl: "https://apps.apple.com/app/trip-com-flights-hotels/id616396150",
@@ -141,6 +148,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     description: "Maps with English place names, navigation",
     descriptionEn:
       "Navigate with turn-by-turn directions in English. Search places using English. Works offline with download.",
+    descriptionJa: "英語のターンバイターン方式ナビゲーション。英語で場所を検索可能。ダウンロードでオフラインでも動作。",
     icon: "🗺️",
     category: "maps",
     appStoreUrl: "https://apps.apple.com/app/bidu-maps/id452696370",
@@ -156,6 +164,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     description: "Precise navigation, real-time traffic",
     descriptionEn:
       "High-precision navigation, real-time traffic updates, and walking directions. Popular among locals.",
+    descriptionJa: "高精度ナビゲーション、リアルタイム交通情報、徒歩ルート案内。地元で人気。",
     icon: "🗺️",
     category: "maps",
     appStoreUrl: "https://apps.apple.com/app/autonavi-maps/id572143177",
@@ -173,6 +182,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     description: "Food delivery, restaurant reviews, deals",
     descriptionEn:
       "Order food delivery, browse restaurant menus (with translation), find deals. Has English menu feature for local restaurants.",
+    descriptionJa: "フードデリバリー注文、レストランメニュー閲覧（翻訳付き）、お得な情報を発見。地元レストランの英語メニュー機能あり。",
     icon: "🍜",
     category: "food",
     appStoreUrl: "https://apps.apple.com/app/meituan-takeaway-food-ordering/id938124123",
@@ -188,6 +198,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     description: "Food delivery with real-time tracking",
     descriptionEn:
       "Major food delivery platform with wide restaurant coverage. Track your order in real-time.",
+    descriptionJa: "広いレストラン網を誇る主要フードデリバリープラットフォーム。注文をリアルタイムで追跡可能。",
     icon: "🍔",
     category: "food",
     appStoreUrl: "https://apps.apple.com/app/ele-me-food-delivery/id1071811712",
@@ -205,6 +216,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     description: "Best Chinese dictionary with OCR",
     descriptionEn:
       "The ultimate Chinese learning companion. Camera OCR, flash cards, example sentences. Essential for reading menus and signs.",
+    descriptionJa: "究極の中国語学習アプリ。カメラOCR、フラッシュカード、例文付き。メニューや看板を読むのに必須。",
     icon: "📚",
     category: "language",
     appStoreUrl: "https://apps.apple.com/app/pleco-document-camera-ocr/id384387940",
@@ -220,6 +232,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     description: "Chinese translation with camera",
     descriptionEn:
       "Point your camera at Chinese text for instant translation. Download offline Chinese language pack.",
+    descriptionJa: "カメラを中国語のテキストに向けるだけで即時翻訳。オフライン用中国語パックのダウンロードも可能。",
     icon: "🌐",
     category: "language",
     appStoreUrl: "https://apps.apple.com/app/google-translate/id469823299",
@@ -235,6 +248,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     description: "Accurate AI-powered translation",
     descriptionEn:
       "More accurate than Google for nuanced Chinese. Great for menu translation and conversations.",
+    descriptionJa: "ニュアンスのある中国語でGoogleより正確。メニュー翻訳や会話に最適。",
     icon: "🤖",
     category: "language",
     hasEnglish: true,
@@ -250,6 +264,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     description: "Social discovery, local recommendations",
     descriptionEn:
       "Chinese social platform with local recommendations, reviews, and travel guides. Great for finding hidden gems and local tips.",
+    descriptionJa: "地元のおすすめ、レビュー、旅行ガイドが揃う中国のソーシャルプラットフォーム。隠れた名所や地元のヒントを見つけるのに最適。",
     icon: "📕",
     category: "social",
     appStoreUrl: "https://apps.apple.com/app/xiaohongshu/id741292507",
@@ -265,6 +280,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     description: "English reviews, travel planning",
     descriptionEn:
       "English-language reviews for restaurants, attractions, and hotels in China. Good for cross-referencing recommendations.",
+    descriptionJa: "中国のレストラン、観光スポット、ホテルの英語レビュー。おすすめのクロスチェックに便利。",
     icon: "🏨",
     category: "travel",
     appStoreUrl: "https://apps.apple.com/app/tripadvisor-hotels-flights/id284876795",
@@ -280,6 +296,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     description: "Email with English interface",
     descriptionEn:
       "Free email service often needed for Chinese app registrations. Clean English interface.",
+    descriptionJa: "中国のアプリ登録に必要な無料メールサービス。クリーンな英語インターフェース。",
     icon: "📧",
     category: "utilities",
     appStoreUrl: "https://apps.apple.com/app/163-mail/id413948029",
@@ -297,6 +314,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     description: "Book high-speed train tickets",
     descriptionEn:
       "Easy train ticket booking with English interface. Supports international credit cards.",
+    descriptionJa: "英語インターフェースで簡単に鉄道チケットを予約。国際クレジットカード対応。",
     icon: "🚄",
     category: "transport",
     appStoreUrl: "https://apps.apple.com/app/trip-com-flights-hotels/id616396150",
@@ -312,6 +330,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     description: "Metro QR code payment",
     descriptionEn:
       "Scan QR codes to enter metro stations in Shanghai and other cities. Links to Alipay/WeChat Pay.",
+    descriptionJa: "上海などの地下鉄駅でQRコードをスキャンして入場。AlipayやWeChat Payに連携。",
     icon: "🚇",
     category: "transport",
     appStoreUrl: "https://apps.apple.com/app/metro/id1202750238",
@@ -328,6 +347,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     description: "Restaurant reviews, deals, booking",
     descriptionEn:
       "The Yelp+Groupon of China. Browse restaurant reviews, find deals, and book tables. English interface available.",
+    descriptionJa: "中国版Yelp+Groupon。レストランのレビュー閲覧、お得な情報、テーブル予約が可能。英語インターフェース対応。",
     icon: "🍽️",
     category: "food",
     appStoreUrl: "https://apps.apple.com/app/dianping/id423433029",
@@ -343,6 +363,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     description: "International transfers, travel card",
     descriptionEn:
       "Best rates for currency exchange. Get a Wise card for travel with real exchange rates and low fees in China.",
+    descriptionJa: "最良の為替レートで両替。Wiseカードを取得すれば、中国でリアルな為替レートと低手数料で旅行可能。",
     icon: "💳",
     category: "payment",
     appStoreUrl: "https://apps.apple.com/app/wise-money/id1304618831",
@@ -359,6 +380,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     description: "eSIM data plans for China",
     descriptionEn:
       "Stay connected in China with affordable eSIM data plans. No physical SIM needed. Supports China data packages.",
+    descriptionJa: "手頃なeSIMデータプランで中国でも接続を維持。物理SIM不要。中国データパッケージ対応。",
     icon: "📱",
     category: "connectivity",
     appStoreUrl: "https://apps.apple.com/app/airalo-esim/id1486867646",
@@ -376,6 +398,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     description: "Unlimited data eSIM for China",
     descriptionEn:
       "Unlimited data plans for China. Easy setup, instant activation. Perfect for travelers who need reliable internet.",
+    descriptionJa: "中国向け無制限データプラン。簡単設定、即時アクティベーション。安定したインターネットが必要な旅行者に最適。",
     icon: "🌏",
     category: "connectivity",
     appStoreUrl: "https://apps.apple.com/app/holafly-esim-unlimited-data/id1511917051",
@@ -393,6 +416,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     description: "Setup service for foreigners",
     descriptionEn:
       "Helps foreigners set up WeChat Pay, Alipay, and other Chinese apps. English support and guided assistance.",
+    descriptionJa: "外国人がWeChat Pay、Alipay、その他の中国アプリを設定するのを支援。英語サポートとガイド付き支援。",
     icon: "🤝",
     category: "utilities",
     appStoreUrl: "https://apps.apple.com/app/nihao-china/id1630264602",

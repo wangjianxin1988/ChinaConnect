@@ -3,29 +3,29 @@
   "name": "厦门",
   "nameEn": "Xiamen",
   "country": "China",
-  "population": "5.3 million",
+  "population": "5.3 ล้านคน",
   "coordinates": {
     "lat": 24.4798,
     "lng": 118.0894
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Xiamen, a coastal city in Fujian Province, is known as the '海上花园' (Garden on the Sea). With its blend of colonial architecture, traditional Minnan culture, and modern development, it offers a unique mix of East and West. The city features beautiful beaches, the UNESCO-listed Gulangyu Island, Buddhist temples, and world-class cuisine.",
+  "description": "เมืองเอเซียนซื่อเซียเมิน ที่ตั้งอยู่ริมชายฝั่งในมณฑลฝูเจียน เป็นที่รู้จักในชื่อ 'สวนบนทะเล' ผสมผสานระหว่างสถาปัตยกรรมโบราณ วัฒนธรรมมินนันแบบดั้งเดิม และการพัฒนาสมัยใหม่ ทำให้มีการผสมผสานที่เป็นเอกลักษณ์ระหว่างตะวันออกและตะวันตก เมืองนี้มีชายหาดที่สวยงาม เกาะกูหลังยูที่ได้รับการยกย่องจากยูเนสโก และวัดพุทธ และอาหารระดับโลก",
   "coverImage": "/img/ext/d78a5158579e.webp",
   "highlights": [
-    "Gulangyu Island - UNESCO World Heritage colonial island",
-    "Nanputuo Temple - Sacred Buddhist mountain temple",
-    "Xiamen University - China's most beautiful campus",
-    "Huandao Road - Scenic coastal boulevard",
-    "Zhongshan Road - Historic shopping street"
+    "เกาะกูหลังยู - เกาะโคโลเนียลที่รับรองโดยยูเนสโก",
+    "วัดนานผู่ตัว - วัดพุทธบนภูเขาศักดิ์สิทธิ์",
+    "มหาวิทยาลัยเซียเมิน - มหาวิทยาลัยที่สวยที่สุดในจีน",
+    "ถนนฮวันดาว - ถนนชายฝั่งที่มีทิวทัศน์",
+    "ถนนจงซาน - ถนนที่มีประวัติศาสตร์"
   ],
   "climate": {
-    "type": "Subtropical Maritime",
+    "type": "กึ่งเขตร้อนชื้นทะเล",
     "bestMonths": [
-      "October",
-      "November",
-      "March",
-      "April",
-      "May"
+      "ตุลาคม",
+      "พฤศจิกายน",
+      "มีนาคม",
+      "เมษายน",
+      "พฤษภาคม"
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "13C (55F)",
@@ -35,439 +35,439 @@
     {
       "id": "gulangyu-island",
       "name": "鼓浪屿",
-      "nameEn": "Gulangyu Island",
+      "nameEn": "เกาะกูลังยู",
       "category": "cultural",
       "image": "/img/ext/24c78d4bdbb8.webp",
-      "description": "A UNESCO World Heritage island known for its colonial architecture, piano museum, and car-free streets. Features over 1,000 historical buildings and stunning ocean views.",
-      "address": "Gulangyu Island, Siming District",
+      "description": "เกาะที่รับรองโดยยูเนสโกที่มีชื่อเสียงในสถาปนัตยกรรมโคโลเนียล, พิพิธภัณฑ์เปียโน, และถนนที่ไม่มีรถยนต์ มีมากกว่า 1,000 อาคารทางประวัติศาสตร์และทิวทัศน์ทะเลที่ยอดเยี่ยม",
+      "address": "เกาะกูหลังยู, เขตซีมิ่ง",
       "coordinates": {
         "lat": 24.4455,
         "lng": 118.0719
       },
-      "openingHours": "Open 24 hours (ferry 7:10-17:30)",
-      "ticketPrice": "Free (ferry 35-50¥ round trip, attractions separate)",
-      "recommendedVisitTime": "4-5 hours",
+      "openingHours": "เปิด 24 ชั่วโมง (เรือฟาเรีย 7:10-17:30)",
+      "ticketPrice": "ฟรี (เรือฟาเรีย 35-50¥ รอบเที่ยว, สถานที่ท่องเที่ยวแยก)",
+      "recommendedVisitTime": "4-5 ชั่วโมง",
       "highlights": [
-        "Piano Museum",
-        "Shuzhuang Garden",
-        "Sunlight Rock",
-        "Colonial architecture"
+        "พิพิธภัณฑ์เปียโน",
+        "สวนชุ่ยจวง",
+        "ยอดอาทิตย์",
+        "สถาปัตยกรรมอาณานิคม"
       ],
-      "tips": "Book ferry tickets in advance during holidays. Rent an audio guide at the pier. Best explored on foot - no cars allowed. Visit in early morning for fewer crowds.",
+      "tips": "จองตั๋วเรือฟาเรียล่วงหน้าในช่วงวันหยุด เช่าไทยโอกุดในท่าเรือ สำหรับการสำรวจที่ดีที่สุดด้วยเดินเท้า - ไม่มีรถยนต์ให้เข้า เยี่ยมชมในตอนเช้าตรู่เพื่อหลีกเลี่ยงการแออัด",
       "phone": "+86 592 206 7284"
     },
     {
       "id": "nanputuo-temple",
       "name": "南普陀寺",
-      "nameEn": "Nanputuo Temple",
+      "nameEn": "วัดนานผู่โต",
       "category": "cultural",
       "image": "/img/ext/9711badd781a.webp",
-      "description": "One of the most important Buddhist temples in Fujian, set against the backdrop of Five Old Men Peak. Known for vegetarian restaurant and beautiful architecture.",
-      "address": "515 Siming Road, Siming District",
+      "description": "หนึ่งในวัดพุทธที่สำคัญที่สุดในมณฑลฝูเจี้ยน ตั้งอยู่ตามฉากหลังของยอดเขาห้าพ่อคนแก่ มีชื่อเสียงในด้านภัตตาคารอาหารเจและสถาปัตยกรรมที่สวยงาม",
+      "address": "515 ถนนซีมิง, เขตซีมิง",
       "coordinates": {
         "lat": 24.4377,
         "lng": 118.0937
       },
-      "openingHours": "03:00-18:00 ( temple), 08:30-17:00 (mountain)",
-      "ticketPrice": "Free (mountain 10¥)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "03:00-18:00 (วัด), 08:30-17:00 (ภูเขา)",
+      "ticketPrice": "ฟรี (ภูเขา 10¥)",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Mahavira Hall",
-        "Five Old Men Peak",
-        "Buddhist College",
-        "Vegetarian restaurant"
+        "หอมหาวิรัตน์",
+        "ยอดเขาห้าพ่อคนแก่",
+        "วิทยาลัยพุทธ",
+        "ร้านอาหารมังสวิรัติ"
       ],
-      "tips": "Climb the mountain for panoramic city views. Don't miss the vegetarian noodles at the temple restaurant. Respect Buddhist customs - dress modestly.",
+      "tips": "ปีนภูเขาสำหรับวิวเมืองที่มีภูมิทัศน์ ไม่ควรพลาดการรับประทานบะหมี่เจที่ภัตตาคารวัด ให้เคารพธรรมเนียมพุทธ - แต่งกายอย่างสุภาพ",
       "phone": "+86 592 208 7235"
     },
     {
       "id": "xiamen-university",
       "name": "厦门大学",
-      "nameEn": "Xiamen University",
+      "nameEn": "มหาวิทยาลัยเซียเมิน",
       "category": "cultural",
       "image": "/img/ext/c4a62854362b.webp",
-      "description": "Known as China's most beautiful university campus, featuring unique闽南建筑 (Minnan architecture), lakes, and palm-lined streets. Founded by Tan Kah Kee in 1921.",
-      "address": "422 Siming South Road, Siming District",
+      "description": "มีชื่อเสียงว่าเป็นมหาวิทยาลัยที่สวยที่สุดในประเทศจีน มีสถาปัตยกรรมแบบมินนาน (Minnan) พิเศษ ทะเลสาบ และถนนที่เต็มไปด้วยต้นปาล์ม ก่อตั้งโดยตันกะกี้ (Tan Kah Kee) ในปี 1921",
+      "address": "422 ถนนซีมิงใต้, เขตซีมิง",
       "coordinates": {
         "lat": 24.4346,
         "lng": 118.1025
       },
-      "openingHours": "Campus: Open 24 hours (ID required), Main Buildings: 08:00-17:00",
-      "ticketPrice": "Free (advance booking required)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "วิทยาเขต: เปิด 24 ชั่วโมง (ต้องมีบัตรประจำตัว), อาคารหลัก: 08:00-17:00",
+      "ticketPrice": "ฟรี (ต้องจองล่วงหน้า)",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Furong Lake",
-        "Tan Kah Kee Memorial Hall",
-        "Minnan architecture",
-        "Buddhist seminary"
+        "ทะเลสาบฝูรง (Furong Lake)",
+        "หอที่ระลึกตันกะกี้ (Tan Kah Kee Memorial Hall)",
+        "สถาปัตยกรรมแบบมินนาน (Minnan architecture)",
+        "วิทยาลัยพุทธ"
       ],
-      "tips": "Book through XMU service app. Visit Furong Lake and the tunnel with student murals. The campus is stunning at sunset. Nearby Zengcuo'an for snacks.",
+      "tips": "จองผ่านแอปพลิเคชันบริการ XMU สำรวจทะเลสาบฝูรง (Furong Lake) และอุโมงค์ที่มีภาพฝาผนังของนักศึกษา วิทยาเขตสวยมากในยามพระอาทิตย์ตกดิน ใกล้กับเซิงชู่อาน (Zengcuo'an) สำหรับอาหารว่าง",
       "phone": "+86 059 2 5249 3341"
     },
     {
       "id": "huandao-road",
       "name": "环岛路",
-      "nameEn": "Huandao Road (Island Ring Road)",
+      "nameEn": "ถนนเวียนเมืองฮวนดาว (Huandao Road)",
       "category": "natural",
       "image": "/img/ext/0a94399d0cbd.webp",
-      "description": "A scenic 31km coastal road offering beautiful sea views, beaches, and parks. Perfect for cycling, jogging, or leisurely drives with stops at various beach areas.",
-      "address": "Coastal road from Huli District to Xiang'an District",
+      "description": "ถนนชายฝั่งที่สวยงามยาว 31 กิโลเมตร มีวิวทะเลที่สวย, ชายหาด และสวนสาธารณะ สมบูรณ์แบบสำหรับการปั่นจักรยาน, การวิ่ง, หรือการขับรถอย่างช้าๆ พร้อมหยุดพักตามหาดต่างๆ",
+      "address": "ถนนชายฝั่งจากเขตฮูลีไปยังเขตเซียงอัน",
       "coordinates": {
         "lat": 24.4612,
         "lng": 118.1056
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-4 hours",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "2-4 ชั่วโมง",
       "highlights": [
-        "Huli Mountain Park",
-        "Jimei School Village",
-        "Gulangyu view",
-        "Suning Bay"
+        "สวนเขาฮูลี (Huli Mountain Park)",
+        "หมู่บ้านโรงเรียนจีเม่ย (Jimei School Village)",
+        "ทิวทัศน์กู่ลังยู (Gulangyu view)",
+        "อ่าวซูนิง (Suning Bay)"
       ],
-      "tips": "Rent a bicycle at many rental points. Best visited at sunset. Combine with nearby attractions. Morning runs are popular with locals.",
+      "tips": "เช่าจักรยานจากจุดเช่าหลายแห่ง เยี่ยมชมในยามพระอาทิตย์ตกดิน ให้รวมกับสถานที่ท่องเที่ยวใกล้เคียง การวิ่งในตอนเช้าก็เป็นที่นิยมของชาวบ้าน",
       "phone": "+86 059 2 5356 3702"
     },
     {
       "id": "zhongshan-road",
       "name": "中山路步行街",
-      "nameEn": "Zhongshan Road Pedestrian Street",
+      "nameEn": "ถนนเดินชาวบ้านจงซาน (Zhongshan Road Pedestrian Street)",
       "category": "modern",
       "image": "/img/ext/1ae9b7530a44.webp",
-      "description": "Xiamen's premier shopping street featuring arcade buildings with diverse architectural styles, local snacks, and international brands. The heart of downtown Xiamen.",
-      "address": "Zhongshan Road, Siming District",
+      "description": "ถนนชายฝั่งร้านค้าที่ดีที่สุดในเซียเมิน มีอาคารอาคารซอฟฟิตที่มีสไตล์สถาปัตยกรรมที่หลากหลาย, อาหารว่างท้องถิ่น และแบรนด์ระดับนานาชาติ หัวใจของเมืองเซียเมิน",
+      "address": "ถนนจงซาน, เขตซีมิง",
       "coordinates": {
         "lat": 24.4545,
         "lng": 118.0837
       },
-      "openingHours": "Open 24 hours (shops 09:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "เปิด 24 ชั่วโมง (ร้านค้า 09:00-22:00)",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Arcade buildings",
-        "Guji arcade",
-        "Fujian cuisine",
-        "Night lighting"
+        "อาคารชั้นล่าง",
+        "อาคารชั้นล่าง Guji",
+        "อาหารฝูเจี้ยน",
+        "ไฟส่องสว่างยามค่ำคืน"
       ],
-      "tips": "Explore side alleys for hidden temples and old houses. Try local snacks along the street. Best evening visit when buildings are illuminated.",
+      "tips": "สำรวจตรอกเล็กๆ เพื่อพบวัดและบ้านเก่าที่ซ่อนอยู่ ลองอาหารว่างท้องถิ่นตามถนน เยี่ยมชมในตอนเย็นที่สุด เมื่ออาคารสว่างไสว",
       "phone": "+86 059 2 2087 8793"
     },
     {
       "id": "jimei-school-village",
       "name": "集美学村",
-      "nameEn": "Jimei School Village",
+      "nameEn": "หมู่บ้านโรงเรียนจีเม่ย (Jimei School Village)",
       "category": "cultural",
       "image": "/img/ext/0de035476377.webp",
-      "description": "A unique educational complex founded by philanthropist Tan Kah Kee, featuring Austro-Hungarian architecture, beautiful gardens, and several colleges.",
-      "address": "Jimei District",
+      "description": "คอมเพล็กซ์ทางการศึกษาที่ไม่ธรรมดาที่ก่อตั้งโดยมูลนิธิการกุศล Tan Kah Kee ที่มีสถาปัตยกรรมแบบออสโตร-ฮังการี สวนสวยงาม และสถาบันการศึกษาหลายแห่ง",
+      "address": "เขต Jimei",
       "coordinates": {
         "lat": 24.4408,
         "lng": 118.0578
       },
-      "openingHours": "Open 24 hours (buildings 08:00-17:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "เปิด 24 ชั่วโมง (อาคาร 08:00-17:00)",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "3-4 ชั่วโมง",
       "highlights": [
-        "Jimei Middle School",
-        "Ao Yuan Garden",
-        "Chengyi Park",
-        "Austro-Hungarian buildings"
+        "โรงเรียนมัธยม Jimei",
+        "สวน Ao Yuan",
+        "สวน Chengyi",
+        "อาคารแบบออสโตร-ฮังการี"
       ],
-      "tips": "Combine with Huandao Road cycling. Visit the turtle-shaped Jimei Middle School. The illuminated buildings at night are magical.",
+      "tips": "รวมกับการปั่นจักรยานในถนน Huandao สำรวจโรงเรียนมัธยม Jimei ที่มีรูปร่างเหมือนเต่า อาคารที่สว่างไสวในตอนกลางคืนน่าทึ่ง",
       "phone": "+86 059 2 5814 8169"
     },
     {
       "id": "shapowei",
       "name": "沙坡尾",
-      "nameEn": "Shapowei (Sand Wave)",
+      "nameEn": "Shapowei (คลื่นทราย)",
       "category": "cultural",
       "image": "/img/ext/8be41735cef1.webp",
-      "description": "The oldest fishing harbor in Xiamen, now transformed into a trendy art and dining district while retaining its traditional fishing village character.",
-      "address": "Shapowei, Siming District",
+      "description": "ท่าเรือประมงที่โบราณที่สุดในเซี่ยเมิน ที่ถูกแปลงเป็นเขตศิลปะและร้านอาหารที่เป็นที่นิยมในขณะที่ยังคงความเป็นหมู่บ้านประมงแบบดั้งเดิม",
+      "address": "Shapowei, เขต Siming",
       "coordinates": {
         "lat": 24.4412,
         "lng": 118.0832
       },
-      "openingHours": "Open 24 hours (shops/restaurants 10:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "เปิด 24 ชั่วโมง (ร้านค้า/ร้านอาหาร 10:00-22:00)",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Fishing boats",
-        "Art districts",
-        "Waterfront bars",
-        "Traditional vs modern contrast"
+        "เรือประมง",
+        "เขตศิลปะ",
+        "บาร์ริมฝั่ง",
+        "ความเปรียบเทียบระหว่างดั้งเดิมและทันสมัย"
       ],
-      "tips": "Best during blue hour for photos. Explore the art spaces and galleries. Fresh seafood available from local vendors. Evening atmosphere is fantastic.",
+      "tips": "ให้ถ่ายรูปในช่วงเวลา Blue Hour สำรวจพื้นที่ศิลปะและหอศิลป์ พบอาหารทะเลสดจากพ่อค้าท้องถิ่น บรรยากาศในตอนเย็นยอดเยี่ยม",
       "phone": "+86 059 2 2862 7390"
     },
     {
       "id": "zengcuoan",
       "name": "曾厝垵",
-      "nameEn": "Zengcuo'an",
+      "nameEn": "เจิ้งฉัวอาน",
       "category": "cultural",
       "image": "/img/ext/de29f9e7f602.webp",
-      "description": "A former fishing village turned bustling tourist town famous for its maze-like alleys, local snacks, handcraft shops, and vibrant nightlife.",
-      "address": "Zengcuo'an, Siming District",
+      "description": "หมู่บ้านประมงเดิมที่กลายเป็นเมืองท่องเที่ยวที่คึกคัก ที่มีซอกซอนที่เป็นประหนึ่ง laby-rinth ขนมท้องถิ่น ร้านฝีมือช่าง และบรรยากาศกลางคืนที่มีชีวิตชีวา",
+      "address": "Zengcuo'an, เขต Siming",
       "coordinates": {
         "lat": 24.4402,
         "lng": 118.1092
       },
-      "openingHours": "Open 24 hours (shops 09:00-23:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-4 hours",
+      "openingHours": "เปิด 24 ชั่วโมง (ร้านค้า 09:00-23:00)",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "2-4 ชั่วโมง",
       "highlights": [
-        "Wenyu Ferry",
-        "Local snacks",
-        "Handcraft shops",
-        "Temple of Tianzhu"
+        "เรือฟรีริ่ง Wenyu",
+        "อาหารว่างท้องถิ่น",
+        "ร้านหัตถกรรม",
+        "วัด Tianzhu"
       ],
-      "tips": "Get lost in the alleys intentionally. Try local snacks like土笋冻 and沙茶面. Night market atmosphere after sunset. Can be very crowded during holidays.",
+      "tips": "จงตั้งใจหลงทางในซอกซอน ลองขนมท้องถิ่น เช่น ทุ่นสุนัขและหมี่สาดชา บรรยากาศตลาดกลางคืนหลังดวงอาทิตย์ตก อาจจะแออัดมากในช่วงวันหยุด",
       "phone": "+86 059 2 8652 0315"
     },
     {
       "id": "xiamen-underwater-world",
       "name": "厦门海底世界",
-      "nameEn": "Xiamen Underwater World",
+      "nameEn": "โลกใต้น้ำเซียเมิน",
       "category": "modern",
       "image": "/img/ext/d9e1e34b36a1.webp",
-      "description": "One of the largest underwater exhibitions in Asia, featuring a 15-meter underwater tunnel and diverse marine life including sharks, sea turtles, and colorful fish.",
-      "address": "2 Luling Road, Gulangyu Island",
+      "description": "หนึ่งในการแสดงใต้น้ำที่ใหญ่ที่สุดในเอเชีย ที่มีอุโมงค์ใต้น้ำยาว 15 เมตรและสัตว์น้ำหลากหลาย ได้แก่ ปลาฉลาม เต่าเท้าเหลือง และปลาสีสดใส",
+      "address": "ถนน Luling 2, เกาะ Gulangyu",
       "coordinates": {
         "lat": 24.4425,
         "lng": 118.0708
       },
-      "openingHours": "08:00-18:00 (summer), 08:30-17:30 (winter)",
+      "openingHours": "08:00-18:00 (ฤดูร้อน), 08:30-17:30 (ฤดูหนาว)",
       "ticketPrice": "90¥",
-      "recommendedVisitTime": "1.5-2 hours",
+      "recommendedVisitTime": "1.5-2 ชั่วโมง",
       "highlights": [
-        "15m underwater tunnel",
-        "Giant sea turtles",
-        "Shark feeding",
-        "Dolphin show"
+        "อุโมงค์ใต้น้ำลึก 15 เมตร",
+        "เต่าทะเลขนาดใหญ่",
+        "ให้อาหารฉลาม",
+        "การแสดงโลมา"
       ],
-      "tips": "Go early to avoid school groups. Allow time for dolphin show schedule. Combine with other Gulangyu attractions. Air-conditioned - good escape from summer heat.",
+      "tips": "ไปเร็วเพื่อหลีกเลี่ยงกลุ่มนักเรียน จัดเวลาให้พอดีกับการแสดงโลมา รวมกับสถานที่ท่องเที่ยวอื่นใน Gulangyu มีแอร์ - เหมาะสำหรับการหนีร้อนในฤดูร้อน",
       "phone": "+86 059 2 6799 3134"
     },
     {
       "id": "piano-museum",
       "name": "钢琴博物馆",
-      "nameEn": "Piano Museum (Gulangyu)",
+      "nameEn": "พิพิธภัณฑ์เปียโน (กูหลังยู)",
       "category": "cultural",
       "image": "/img/ext/8e682fed6dce.webp",
-      "description": "Houses over 40 antique pianos from different eras, including a rare 1796 grand piano. Located in Shuzhuang Garden on Gulangyu Island.",
-      "address": "Shuzhuang Garden, Gulangyu Island",
+      "description": "เก็บรวบรวมเปียโนโบราณมากกว่า 40 เครื่องจากยุคต่างๆ รวมถึงเปียโนคอนแซิร์ชิ้นสำคัญปี 1796 ตั้งอยู่ในสวนซูซวงกวง บนเกาะกูหลังยู",
+      "address": "สวนซูซวงกวง บนเกาะกูหลังยู",
       "coordinates": {
         "lat": 24.4438,
         "lng": 118.0685
       },
       "openingHours": "08:15-17:00",
-      "ticketPrice": "Included in Shuzhuang Garden ticket (30¥)",
-      "recommendedVisitTime": "45 minutes",
+      "ticketPrice": "รวมอยู่ในตั๋วสวนซูซวงกวง (30¥)",
+      "recommendedVisitTime": "45 นาที",
       "highlights": [
-        "Antique piano collection",
-        "Automatic piano performances",
-        "19th century instruments",
-        "Piano history displays"
+        "การจัดแสดงเปียโนโบราณ",
+        "การแสดงเปียโนอัตโนมัติ",
+        "เครื่องดนตรีศตวรรษที่ 19",
+        "การแสดงเรื่องราวของเปียโน"
       ],
-      "tips": "Check timing for automatic piano performances. Photography allowed without flash. Combine with Shuzhuang Garden visit. Audio guide recommended.",
+      "tips": "ตรวจสอบเวลาการแสดงเปียโนอัตโนมัติ อนุญาตให้ถ่ายรูปโดยไม่ใช้แฟลช ให้รวมการเยี่ยมชมกับสวนซูซวงกวง แนะนำให้ใช้เครื่องช่วยฟังเสียง",
       "phone": "+86 059 2 6657 0104"
     },
     {
       "id": "sunlight-rock",
       "name": "日光岩",
-      "nameEn": "Sunlight Rock (Riguang Yan)",
+      "nameEn": "ยอดดวงอาทิตย์ (Riguang Yan)",
       "category": "natural",
       "image": "/img/ext/447d0f95da41.webp",
-      "description": "The highest point on Gulangyu Island offering 360-degree panoramic views of Xiamen Bay and the surrounding area. Features ancient rock inscriptions and a small temple.",
-      "address": "Sunlight Rock, Gulangyu Island",
+      "description": "จุดสูงสุดบนเกาะกูหลังยู มีวิวพานอร่าม 360 องศาของอ่าวเซียเมินและบริเวณรอบข้าง มีลายหินโบราณและวัดเล็กๆ",
+      "address": "ยอดดวงอาทิตย์ บนเกาะกูหลังยู",
       "coordinates": {
         "lat": 24.4472,
         "lng": 118.0642
       },
-      "openingHours": "06:30-18:00 (summer), 07:00-17:30 (winter)",
-      "ticketPrice": "50¥ (combined ticket with Shuzhuang Garden 90¥)",
-      "recommendedVisitTime": "1 hour",
+      "openingHours": "06:30-18:00 (ฤดูร้อน), 07:00-17:30 (ฤดูหนาว)",
+      "ticketPrice": "50¥ (ตั๋วรวมกับสวนซูซวงกวง 90¥)",
+      "recommendedVisitTime": "1 ชั่วโมง",
       "highlights": [
-        "360-degree views",
-        "Sunrise views",
-        "Ancient inscriptions",
-        "Haiheng Temple"
+        "ทัศนียภาพ 360 องศา",
+        "วิวพระอาทิตย์ขึ้น",
+        "จารึกโบราณ",
+        "วัดไห่เฮิง"
       ],
-      "tips": "Go at sunrise for fewer crowds and magical views. Climbed 100 steps - wear comfortable shoes. Morning visit recommended to avoid afternoon heat.",
+      "tips": "ไปตอนพระอาทิตย์ขึ้นเพื่อหลีกเลี่ยงผู้คนและมีวิววิเศษ ไต่ขึ้น 100 ขั้น - ใส่รองเท้าที่สบาย การเยี่ยมชมในตอนเช้าแนะนำเพื่อหลีกเลี่ยงความร้อนในตอนบ่าย",
       "phone": "+86 059 2 8896 0196"
     },
     {
       "id": "shuzhuang-garden",
       "name": "菽庄花园",
-      "nameEn": "Shuzhuang Garden",
+      "nameEn": "สวนชุ่ยจวง",
       "category": "cultural",
       "image": "/img/ext/7dbb581cac0d.webp",
-      "description": "A beautiful seaside garden featuring traditional Chinese architecture, a piano museum, and stunning coastal views. Built in 1913 by wealthy Taiwanese businessman.",
-      "address": "Gulangyu Island",
+      "description": "สวนริมทะเลที่สวยงาม มีสถาปัตยกรรมจีนดั้งเดิม พิพิธภัณฑ์เปียโน และวิวชายทะเลที่น่าทึ่ง สร้างขึ้นในปี 1913 โดยนักธุรกิจไต้หวันที่ร่ำรวย",
+      "address": "เกาะกูลังยู",
       "coordinates": {
         "lat": 24.4435,
         "lng": 118.0685
       },
-      "openingHours": "07:00-18:30 (summer), 07:30-17:30 (winter)",
-      "ticketPrice": "30¥ (combined with Sunlight Rock 90¥)",
-      "recommendedVisitTime": "1.5 hours",
+      "openingHours": "07:00-18:30 (ฤดูร้อน), 07:30-17:30 (ฤดูหนาว)",
+      "ticketPrice": "30¥ (รวมกับยอดดวงอาทิตย์ 90¥)",
+      "recommendedVisitTime": "1.5 ชั่วโมง",
       "highlights": [
-        "Garden by the sea",
-        "Piano Museum",
-        "42 Bridge",
-        "Fujianese architecture"
+        "สวนริมทะเล",
+        "พิพิธภัณฑ์เปียโน",
+        "สะพาน 42",
+        "สถาปัตยกรรมฝูเจี้ยน"
       ],
-      "tips": "Best photography in morning light. The 42-bridge path is unique. Combine with Sunlight Rock for full experience. Beautiful at high tide.",
+      "tips": "การถ่ายรูปที่ดีที่สุดในแสงเช้า ทางเดินสะพาน 42 สะพานนั้นเป็นเอกลักษณ์ ให้รวมกับยอดดวงอาทิตย์เพื่อรับรู้ประสบการณ์ที่ครบถ้วน สวยงามในขณะที่มีน้ำขึ้น",
       "phone": "+86 059 2 0108 9050"
     },
     {
       "id": "xiamen-haiceng-park",
       "name": "海沧湾公园",
-      "nameEn": "Haicheng Park",
+      "nameEn": "อุทยานไฮเฉิง",
       "category": "natural",
       "image": "/img/ext/66a5257eeb95.webp",
-      "description": "A waterfront park along Haicang Bay featuring the iconic marriage witness sculpture, sunset views, and pleasant walking paths.",
-      "address": "Haicang Avenue, Haicang District",
+      "description": "อุทยานริมชายฝั่งตามอ่าวไฮฉาง มีรูปปั้นพยานแต่งงานที่เป็นที่รู้จัก วิวพระอาทิตย์ตก และทางเดินเดินเล่นที่สบาย",
+      "address": "ถนนไฮฉาง เขตไฮฉาง",
       "coordinates": {
         "lat": 24.4525,
         "lng": 118.0238
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "1-2 ชั่วโมง",
       "highlights": [
-        "Marriage witness sculpture",
-        "Sunset views",
-        "Haicang Bridge",
-        "Night illumination"
+        "รูปสลักเป็นพยานการแต่งงาน",
+        "วิวพระอาทิตย์ตก",
+        "สะพานไห่ฉาง",
+        "ไฟส่องสว่างยามค่ำคืน"
       ],
-      "tips": "Best visited at sunset for beautiful views. Evening light show at 19:30. Less touristy than other spots. Great for evening strolls.",
+      "tips": "ดูพระอาทิตย์ตกดินเพื่อได้รับภาพทิวทัศน์ที่สวยงาม การแสดงแสงยามเย็นเวลา 19:30 น. น้อยกว่าสถานที่ท่องเที่ยวอื่นๆ ดีมากสำหรับการเดินเล่นยามเย็น",
       "phone": "+86 059 2 6752 1339"
     },
     {
       "id": "tianzhushan-forest-park",
       "name": "天竺山森林公园",
-      "nameEn": "Tianzhu Mountain Forest Park",
+      "nameEn": "อุทยานป่าภูเขาเทียนจู",
       "category": "natural",
       "image": "/img/ext/a02f4a9b5a72.webp",
-      "description": "A pristine forest park with hiking trails, waterfalls, and Buddhist temples. Known for its oxygen-rich environment and scenic mountain scenery.",
-      "address": "Tianzhu Mountain, Haicang District",
+      "description": "อุทยานป่าที่สะอาดสดชื่นพร้อมเส้นทางเดินป่า น้ำตก และวัดพุทธ มีชื่อเสียงในด้านสภาพแวดล้อมที่อุดมไปด้วยออกซิเจนและทิวทัศน์ภูเขาที่สวยงาม",
+      "address": "ภูเขาเทียนจู อำเภอไห่ฉาง",
       "coordinates": {
         "lat": 24.4892,
         "lng": 117.9642
       },
       "openingHours": "06:30-18:30",
-      "ticketPrice": "35¥ (park), 120¥ (including cable car)",
-      "recommendedVisitTime": "4-5 hours",
+      "ticketPrice": "35¥ (อุทยาน), 120¥ (รวมรถพาหนะลากสาย)",
+      "recommendedVisitTime": "4-5 ชั่วโมง",
       "highlights": [
-        "Forest trails",
-        "Baijian Waterfall",
-        "Tianzhu Temple",
-        "Tea plantations"
+        "ทางเดินป่า",
+        "น้ำตกไบเจียน",
+        "วัดเทียนจู",
+        "สวนชา"
       ],
-      "tips": "Wear hiking shoes for forest trails. Bring water and snacks. Cable car offers great views. Best in spring for flowers or autumn for foliage.",
+      "tips": "ใส่รองเท้าเดินป่าสำหรับเส้นทางป่า นำน้ำและอาหารว่างติดตัวไป รถพาหนะลากสายให้ภาพทิวทัศน์ที่ยอดเยี่ยม เหมาะที่สุดในฤดูใบไม้ผลิสำหรับดอกไม้หรือในฤดูใบไม้ร่วงสำหรับใบไม้ร่วง",
       "phone": "+86 059 2 7897 5540"
     },
     {
       "id": "xiamen-amusement-center",
       "name": "厦门游乐园",
-      "nameEn": "Xiamen Amusement Center",
+      "nameEn": "ศูนย์การละเล่นเซียเมิน",
       "category": "modern",
       "image": "/img/ext/abc45db7e8d3.webp",
-      "description": "A family-friendly amusement park with roller coasters, bumper cars, and various rides. Features both thrill rides and children's attractions.",
-      "address": "101 Songhuei Road, Haicang District",
+      "description": "อุทยานเล่นสนุกที่เหมาะสำหรับครอบครัวพร้อมรถไฟเหาะ แท็กซี่ชน และการขับขี่ต่างๆ มีทั้งการขับขี่ที่มีความตื่นเต้นและการล่อเด็ก",
+      "address": "101 ถนนสงหุย อำเภอไห่ฉาง",
       "coordinates": {
         "lat": 24.4538,
         "lng": 118.0132
       },
       "openingHours": "09:30-17:30",
-      "ticketPrice": "35¥ (entry), rides additional",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "35¥ (ค่าเข้า), การขับขี่เพิ่มเติม",
+      "recommendedVisitTime": "3-4 ชั่วโมง",
       "highlights": [
-        "Flying coaster",
-        "Bumper cars",
-        "Carousel",
-        "Haicang Bridge view"
+        "รถไฟเหาะ",
+        "แท็กซี่ชน",
+        "อาโวคาเรล",
+        "ทิวทัศน์สะพานไห่ฉาง"
       ],
-      "tips": "Go on weekdays to avoid crowds. Fast pass available. Combined ticket better value. Great for families with children.",
+      "tips": "ไปในวันธรรมดาหลีกเลี่ยงการแออัด ตั๋วผ่านเร็วพร้อมใช้งาน ตั๋วรวมมีค่ามากกว่า เหมาะสำหรับครอบครัวที่มีเด็ก",
       "phone": "+86 059 2 1352 8774"
     },
     {
       "id": "xiamen-botanical-garden",
       "name": "厦门园林植物园",
-      "nameEn": "Xiamen Botanical Garden",
+      "nameEn": "สวนพฤกษศาสตร์เซียเมิน",
       "category": "natural",
       "image": "/img/ext/bc805c264483.webp",
-      "description": "A vast botanical garden featuring tropical plants, succulent collections, and famous rock formations. Known for the tropical rain forest trail.",
-      "address": "25 Huyuan Road, Siming District",
+      "description": "สวนพฤกษศาสตร์ที่กว้างใหญ่พร้อมพืชใต้ทวีป สะสมไม้อวบน้ำ และหินธารที่มีชื่อเสียง มีชื่อเสียงในด้านเส้นทางป่าฝนเขตร้อน",
+      "address": "25 ถนนฮุยยวน อำเภอสืมิง",
       "coordinates": {
         "lat": 24.4345,
         "lng": 118.0835
       },
-      "openingHours": "06:30-18:00 (summer), 06:30-17:30 (winter)",
+      "openingHours": "06:30-18:00 (ฤดูร้อน), 06:30-17:30 (ฤดูหนาว)",
       "ticketPrice": "30¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4 ชั่วโมง",
       "highlights": [
-        "Tropical rainforest",
-        "Succulent garden",
-        "Pine forest",
-        "Waterfall"
+        "ป่าเขตร้อนฝน",
+        "สวนไม้อวบน้ำ",
+        "ป่าสน",
+        "น้ำตก"
       ],
-      "tips": "Start early to experience misty rainforest atmosphere. Take the观光车 (tour bus) to save time. Insect repellent recommended. Bring water.",
+      "tips": "เริ่มต้นเร็วเพื่อได้รับบรรยากาศป่าฝนเขตร้อนที่มีหมอก ใช้รถบัสท่องเที่ยว (观光车) เพื่อประหยัดเวลา ขอแนะนำยากันแมลง นำน้ำติดตัว",
       "phone": "+86 059 2 6502 0562"
     },
     {
       "id": "dadeng-island",
       "name": "大嶝岛",
-      "nameEn": "Dadeng Island",
+      "nameEn": "เกาะดาเติง",
       "category": "cultural",
       "image": "/img/ext/974549d65160.webp",
-      "description": "A small island known for its traditional闽南 customs, coastal scenery, and historical sites related to the 1949 bombardment. Connected to mainland by bridge.",
-      "address": "Dadeng Island, Xiang'an District",
+      "description": "เกาะเล็กที่มีชื่อเสียงในด้านประเพณีชาวหนิวนันแบบดั้งเดิม ทิวทัศน์ชายฝั่ง และโบราณสถานที่เกี่ยวข้องกับการระเบิดในปี 1949 เชื่อมต่อกับแผ่นดินด้วยสะพาน",
+      "address": "เกาะดาเดิง อำเภอเซียงอัน",
       "coordinates": {
         "lat": 24.5325,
         "lng": 118.1425
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free (taiji house 30¥)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี (ตั๋วไทจีเฮาส์ 30¥)",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Mazu Temple",
-        "Coastal scenery",
-        "Old streets",
-        "Taiwan commodity city"
+        "วัดมาจู",
+        "ทิวทัศน์ชายฝั่ง",
+        "ถนนเก่า",
+        "เมืองสินค้าไต้หวัน"
       ],
-      "tips": "Rent electric cart to explore. Fresh seafood at local restaurants. Combine with Xiang'an for day trip. Traditional architecture preserved.",
+      "tips": "เช่ารถเข็นไฟฟ้าเพื่อสำรวจ. อาหารทะเลสดในร้านอาหารท้องถิ่น. นำมารวมกับ Xiang'an เพื่อท่องเที่ยวแบบวันเดียว. สถาปัตยกรรมดั้งเดิมได้รับการอนุรักษ์",
       "phone": "+86 059 2 5627 0910"
     },
     {
       "id": "fujian-mazu-temple",
       "name": "福建妈祖庙",
-      "nameEn": "Mazu Temple (Xiamen)",
+      "nameEn": "วัดมาจู (เซียเมิน)",
       "category": "cultural",
       "image": "/img/ext/f5326b93b3ca.webp",
-      "description": "The largest Mazu temple in Fujian, dedicated to the sea goddess worshipped by millions of overseas Chinese. Features intricate carvings and cultural exhibitions.",
-      "address": "62 Daxue Road, Siming District",
+      "description": "วัดมาจูที่ใหญ่ที่สุดในมณฑลฝูเจี้ยน ซึ่งบูชาพระเทพสาวนางทะเลที่ถูกเคารพจากล้านล้านชาวจีนโพ้นทะเล มีการสลักลวดลายที่ซับซ้อนและการแสดงสิ่งที่เกี่ยวข้องกับวัฒนธรรม",
+      "address": "ถนนดาเซวี่ย 62, เขตซีมิ่ง",
       "coordinates": {
         "lat": 24.4452,
         "lng": 118.0812
       },
       "openingHours": "08:00-20:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "1 ชั่วโมง",
       "highlights": [
-        "Mazu statue",
-        "Cultural hall",
-        "Ancient banyan tree",
-        "Oceanographic museum"
+        "รูปปั้นมาจู",
+        "หอวัฒนธรรม",
+        "ต้นไทรโบราณ",
+        "พิพิธภัณฑ์ทางทะเล"
       ],
-      "tips": "Learn about Mazu culture and folklore. Attend temple ceremonies if lucky. Near Zhongshan Road. The architecture is impressive.",
+      "tips": "เรียนรู้เกี่ยวกับวัฒนธรรมและภูมิปัญญาพื้นบ้านของมาจู. เข้าร่วมพิธีกรรมในวัดหากโชคดี. ใกล้ถนนจงซาน. สถาปัตยกรรมน่าทึ่ง",
       "phone": "+86 059 2 4210 9991"
     },
     {
       "id": "huoshao-island",
       "name": "火烧屿",
-      "nameEn": "Huoshao Island",
+      "nameEn": "เกาะฮัวเซา",
       "category": "natural",
       "image": "/img/ext/675814b483b2.webp",
       "description": "เกาะสวยงามที่ไม่มีผู้คนอาศัยอยู่ เป็นอุทยานธรรมชาติที่มีลักษณะธรรมชาติที่โดดเด่น เส้นทางเดินป่า และโอกาสสำหรับการดูนก",
@@ -477,165 +477,165 @@
         "lng": 118.0135
       },
       "openingHours": "08:30-17:00",
-      "ticketPrice": "50¥ (including boat)",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "50¥ (รวมเรือ)",
+      "recommendedVisitTime": "3-4 ชั่วโมง",
       "highlights": [
         "ความมหัศจรรย์ทางธรรมชาติ",
         "การดูนก",
         "เส้นทางเดินป่า",
-        "Secluded beaches"
+        "ชายหาดที่สงัด"
       ],
-      "tips": "Book boat tour in advance. Bring sunscreen and water. Limited facilities on island. Best for nature lovers and photographers.",
+      "tips": "จองทัวร์เรือล่วงหน้า. นำผ้ากันแดดและน้ำดื่มติดตัว. สถานที่สำหรับพักผ่อนจำกัดบนเกาะ. เหมาะสำหรับผู้รักธรรมชาติและช่างภาพ",
       "phone": "+86 059 2 0206 4602"
     },
     {
       "id": "xiamen-science-center",
       "name": "厦门科技馆",
-      "nameEn": "Xiamen Science Center",
+      "nameEn": "ศูนย์วิทยาศาสตร์เซียเมิน",
       "category": "modern",
       "image": "/img/ext/dd684065f301.webp",
-      "description": "A modern science museum with interactive exhibits covering physics, astronomy, and technology. Features an IMAX dome theater and hands-on experiments.",
-      "address": "95-97 Zhanjiang Road, Huli District",
+      "description": "พิพิธภัณฑ์วิทยาศาสตร์ทันสมัยที่มีการแสดงเชิงปฏิสนธิที่ครอบคลุมด้านฟิสิกส์ ดาราศาสตร์ และเทคโนโลยี มีโรงภาพยนตร์โดม IMAX และการทดลองโดยตรง",
+      "address": "ถนนจันเจียง 95-97, เขตฮูลี่",
       "coordinates": {
         "lat": 24.4952,
         "lng": 118.0925
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "70¥ (exhibits), 40¥ (IMAX)",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "09:00-17:00 (ปิดวันจันทร์)",
+      "ticketPrice": "70¥ (การแสดง), 40¥ (IMAX)",
+      "recommendedVisitTime": "3-4 ชั่วโมง",
       "highlights": [
-        "IMAX dome theater",
-        "Robot exhibition",
-        "Physics experiments",
-        "4D motion theater"
+        "โรงภาพยนตร์โดม IMAX",
+        "การแสดงหุ่นยนต์",
+        "การทดลองฟิสิกส์",
+        "โรงภาพยนตร์แอคชัน 4D"
       ],
-      "tips": "Allow full day for all attractions. Book IMAX tickets separately. Great for families and curious minds. Air-conditioned.",
+      "tips": "อนุญาตให้ใช้เวลาทั้งวันสำหรับทุกการเดินทาง. จองตั๋ว IMAX อย่างละเอียด. เหมาะสำหรับครอบครัวและคนที่อยากรู้อยากเห็น. มีการปรับอากาศ",
       "phone": "+86 059 2 1898 9357"
     },
     {
       "id": "xiamen-golf-course",
       "name": "厦门高尔夫球场",
-      "nameEn": "Xiamen Golf Club",
+      "nameEn": "สโมสรกอล์ฟเซียเมิน",
       "category": "modern",
       "image": "/img/ext/d7beef165a0e.webp",
-      "description": "An 18-hole championship golf course near the coast, offering beautiful sea views and professional facilities for golf enthusiasts.",
-      "address": "999 Haicang Avenue, Haicang District",
+      "description": "สนามกอล์ฟแชมป์ 18 หลุมใกล้ชายฝั่ง มีวิวทะเลที่สวยงามและสถานที่สำหรับนักกอล์ฟมืออาชีพ",
+      "address": "ถนนไห่ชาง 999, เขตไห่ชาง",
       "coordinates": {
         "lat": 24.4652,
         "lng": 118.0325
       },
       "openingHours": "06:00-18:00",
-      "ticketPrice": "1000-2000¥ (weekday/weekend)",
-      "recommendedVisitTime": "4-5 hours",
+      "ticketPrice": "1000-2000¥ (ในวันธรรมดา/สุดสัปดาห์)",
+      "recommendedVisitTime": "4-5 ชั่วโมง",
       "highlights": [
-        "Sea view holes",
-        "Professional coaching",
-        "Club rental",
-        "Restaurant"
+        "หลุมที่มีวิวทะเล",
+        "การฝึกสอนโดยโค้ชมืออาชีพ",
+        "บริการเช่าไม้กอล์ฟ",
+        "ร้านอาหาร"
       ],
-      "tips": "Book tee times in advance. Non-members welcome. Golf equipment rental available. Beautiful at sunset.",
+      "tips": "จองเวลาเล่นกอล์ฟล่วงหน้า ผู้เล่นทั่วไปยินดีต้อนรับ มีบริการเช่าอุปกรณ์กอล์ฟ มีทัศนียภาพสวยงามในยามพระอาทิตย์ตกดิน",
       "phone": "+86 059 2 3325 6378"
     },
     {
       "id": "xiamen-hulii-beach",
       "name": "胡里山炮台",
-      "nameEn": "Xiamen Hulishan Cannon Fort",
+      "nameEn": "ป้อมปืนใหญ่ฮูลีซานเซียเมิน",
       "category": "historical",
       "image": "/img/ext/4538cf4fe604.webp",
-      "description": "Historical fort built in 1894 during Qing Dynasty, featuring the world's largest surviving coastal artillery gun. Regular cannon firing demonstrations.",
-      "address": "2 Haian Road, Siming District",
+      "description": "ป้อมประวัติศาสตร์ที่สร้างขึ้นในปี 1894 ระหว่างราชวงศ์ชิง มีปืนใหญ่ชายฝั่งที่ยังคงอยู่ใหญ่ที่สุดในโลก มีการสาธิตยิงปืนใหญ่เป็นประจำ",
+      "address": "ถนนไห่อาน รัฐบาลเขตซีมิ่ง",
       "coordinates": {
         "lat": 24.4322,
         "lng": 118.1125
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "25¥",
-      "recommendedVisitTime": "1.5-2 hours",
+      "recommendedVisitTime": "1.5-2 ชั่วโมง",
       "highlights": [
-        "Giant cannon",
-        "Historical bunkers",
-        "Cannon firing show",
-        "Coastal views"
+        "ปืนใหญ่ขนาดใหญ่",
+        "หลุมประจำการประวัติศาสตร์",
+        "การแสดงยิงปืนใหญ่",
+        "วิวชายฝั่ง"
       ],
-      "tips": "Watch the cannon firing demonstration at scheduled times. Combine with nearby beaches. Great for history enthusiasts.",
+      "tips": "รับชมการสาธิตยิงปืนใหญ่ตามเวลาที่กำหนด ให้รวมกับการเยี่ยมชมชายหาดใกล้เคียง ดีเหมาะสำหรับผู้ที่ชื่นชอบประวัติศาสตร์",
       "phone": "+86 592 208 8313"
     },
     {
       "id": "xiamen-ronghua-shan",
       "name": "厦门岛内山",
-      "nameEn": "Ronghua Mountain",
+      "nameEn": "ภูเขารงฮวา",
       "category": "nature",
       "image": "/img/ext/ea71a28d01bf.webp",
-      "description": "A hidden gem mountain trail with panoramic views of Xiamen Bay and Gulangyu Island. Less crowded than other attractions.",
-      "address": "Huli District",
+      "description": "เส้นทางเดินป่าภูเขาที่ซ่อนเร้น มีทัศนียภาพรอบทิศของอ่าวเซียเมินและเกาะกูหลังยู้ มีนักท่องเที่ยวน้อยกว่าสถานที่ท่องเที่ยวอื่น",
+      "address": "เขตฮูลี",
       "coordinates": {
         "lat": 24.4755,
         "lng": 118.1025
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Sunrise views",
-        "Forest trails",
-        "City panorama",
-        "Bird watching"
+        "วิวพระอาทิตย์ขึ้น",
+        "ทางเดินป่า",
+        "ทิวทัศน์เมือง",
+        "การดูนก"
       ],
-      "tips": "Best visited at dawn for sunrise. Wear comfortable hiking shoes. Bring water. Less known by tourists.",
+      "tips": "เยี่ยมชมในยามเช้ามืดเพื่อชมพระอาทิตย์ขึ้น ใส่รองเท้าสำหรับเดินป่าที่สบายตัว นำน้ำไปด้วย นักท่องเที่ยวน้อยรู้จัก",
       "phone": "+86 059 2 3940 1924"
     },
     {
       "id": "xiamen-yuqingshan",
       "name": "厦门园林博览苑",
-      "nameEn": "Xiamen Garden Expo",
+      "nameEn": "สวนสาธารณะเซียเมิน",
       "category": "cultural",
       "image": "/img/ext/0e20caf1aae1.webp",
-      "description": "A vast park featuring traditional Chinese gardens from different regions, plus a large lake and beautiful floral displays.",
-      "address": "Jimei District",
+      "description": "สวนขนาดใหญ่ที่มีสวนจีนดั้งเดิมจากภูมิฐานต่างๆ รวมทั้งทะเลสาบขนาดใหญ่และการแสดงดอกไม้สวยงาม",
+      "address": "เขต Jimei",
       "coordinates": {
         "lat": 24.4525,
         "lng": 118.0525
       },
       "openingHours": "07:00-19:00",
-      "ticketPrice": "60¥ (includes boat)",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "60 หยวน (รวมเรือ)",
+      "recommendedVisitTime": "3-4 ชั่วโมง",
       "highlights": [
-        "Regional gardens",
-        "Floating bridge",
-        "Lotus flowers",
-        "Boat tours"
+        "สวนภูมิภาค",
+        "สะพานลอย",
+        "ดอกบัว",
+        "การเดินเรือ"
       ],
-      "tips": "Best in spring for flowers. Take the boat for scenic views. Can spend half a day here. Great for photography.",
+      "tips": "เหมาะที่สุดในฤดูใบไม้ผลิสำหรับดอกไม้ ให้นั่งเรือเพื่อชมทิวทัศน์ ใช้เวลาครึ่งวันที่นี่ได้ ดีสำหรับการถ่ายรูป",
       "phone": "+86 059 2 2356 8244"
     },
     {
       "id": "xiamen-furong-tunnel",
       "name": "厦门芙蓉隧道",
-      "nameEn": "Furong Tunnel",
+      "nameEn": "อุโมงค์ฝูหรง",
       "category": "cultural",
       "image": "/img/ext/f5e115604d3c.webp",
-      "description": "Famous student art tunnel at Xiamen University, featuring colorful murals and graffiti created by students over the years.",
-      "address": "Xiamen University Campus",
+      "description": "อุโมงค์ศิลปะนักศึกษาที่มีชื่อเสียงของมหาวิทยาลัยเซียเมิน มีภาพฝาผนังสีสดใสและการวาดสเกนที่นักศึกษาสร้างขึ้นในช่วงหลายปีที่ผ่านมา",
+      "address": "วิทยาเขตมหาวิทยาลัยเซียเมิน",
       "coordinates": {
         "lat": 24.4338,
         "lng": 118.1015
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "30 minutes",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "30 นาที",
       "highlights": [
-        "Student murals",
-        "Colorful artwork",
-        "Creative expressions",
-        "University culture"
+        "ภาพฝาผนังนักศึกษา",
+        "ภาพศิลปะสีสดใส",
+        "การแสดงความคิดสร้างสรรค์",
+        "วัฒนธรรมมหาวิทยาลัย"
       ],
-      "tips": "Combine with XMU campus visit. Don't touch or damage the artwork. Best visited on foot.",
+      "tips": "ให้รวมกับการเยี่ยมชมวิทยาเขต XMU ไม่ควรแตะหรือทำลายผลงานศิลปะ เหมาะที่สุดที่จะเดินเท้า",
       "phone": "+86 059 2 0130 1783"
     },
     {
       "id": "xm-gulangyu",
       "name": "鼓浪屿",
-      "nameEn": "Gulangyu Island",
+      "nameEn": "เกาะกูลังยู",
       "category": "street",
       "description": "世界文化遗产，有万国建筑和钢琴之岛之称。",
       "address": "厦门市思明区",
@@ -658,7 +658,7 @@
     {
       "id": "xm-university",
       "name": "厦门大学",
-      "nameEn": "Xiamen University",
+      "nameEn": "มหาวิทยาลัยเซียเมิน",
       "category": "landmark",
       "description": "中国最美丽的大学之一，有芙蓉湖和芙蓉隧道。",
       "address": "厦门市思明区",
@@ -681,7 +681,7 @@
     {
       "id": "xm-zhongshan",
       "name": "中山路",
-      "nameEn": "Zhongshan Road",
+      "nameEn": "ถนนจงซาน",
       "category": "street",
       "description": "厦门最古老的商业骑楼街。",
       "address": "厦门市思明区",
@@ -704,7 +704,7 @@
     {
       "id": "xm-nanputuo",
       "name": "南普陀寺",
-      "nameEn": "Nanputuo Temple",
+      "nameEn": "วัดนานผู่โต",
       "category": "temple",
       "description": "闽南佛教圣地，有千年历史。",
       "address": "厦门市思明区",
@@ -726,7 +726,7 @@
     {
       "id": "xm-huan-island",
       "name": "环岛路",
-      "nameEn": "Island Ring Road",
+      "nameEn": "ถนนรอบเกาะ",
       "category": "landmark",
       "description": "厦门最美的海滨大道，全长43公里。",
       "address": "厦门市思明区",
@@ -749,7 +749,7 @@
     {
       "id": "xm-food",
       "name": "厦门美食",
-      "nameEn": "Xiamen Food",
+      "nameEn": "อาหารเซี่ยเม้น",
       "category": "street",
       "description": "厦门有沙茶面和各种海鲜小吃。",
       "address": "厦门市",
@@ -772,7 +772,7 @@
     {
       "id": "xm-museum",
       "name": "厦门博物馆",
-      "nameEn": "Xiamen Museum",
+      "nameEn": "พิพิธภัณฑ์เซี่ยเม้น",
       "category": "museum",
       "description": "展示厦门历史的博物馆。",
       "address": "厦门市思明区",
@@ -793,7 +793,7 @@
     {
       "id": "xm-wanshi",
       "name": "万石植物园",
-      "nameEn": "Wanshi Botanical Garden",
+      "nameEn": "สวนพฤกษศาสตร์วันซี",
       "category": "nature",
       "description": "厦门最大的植物园。",
       "address": "厦门市思明区",
@@ -815,7 +815,7 @@
     {
       "id": "xm-night",
       "name": "厦门夜景",
-      "nameEn": "Xiamen Night View",
+      "nameEn": "ทิวทัศน์กลางคืนเซี่ยเม้น",
       "category": "landmark",
       "description": "鼓浪屿和环岛路的夜景。",
       "address": "厦门市思明区",
@@ -837,7 +837,7 @@
     {
       "id": "xm-beach",
       "name": "白城沙滩",
-      "nameEn": "Baicheng Beach",
+      "nameEn": "ชายหาดไบเฉิง",
       "category": "beach",
       "description": "厦门最美的海滩之一。",
       "address": "厦门市思明区",
@@ -859,7 +859,7 @@
     {
       "id": "xm-island",
       "name": "曾厝垵",
-      "nameEn": "Zengcuo'an",
+      "nameEn": "เจิ้งฉัวอาน",
       "category": "street",
       "description": "厦门最文艺的渔村，有各种小吃和手工艺品。",
       "address": "厦门市思明区",
@@ -882,7 +882,7 @@
     {
       "id": "xm-bridge",
       "name": "海沧大桥",
-      "nameEn": "Haicang Bridge",
+      "nameEn": "สะพานไห่ฉาง",
       "category": "landmark",
       "description": "横跨海峡的大桥。",
       "address": "厦门市",
@@ -904,7 +904,7 @@
     {
       "id": "xm-park",
       "name": "白鹭洲公园",
-      "nameEn": "Egret Island Park",
+      "nameEn": "อุทยานอีกรีตไอส์แลนด์",
       "category": "park",
       "description": "厦门最大的城市公园。",
       "address": "厦门市思明区",
@@ -926,7 +926,7 @@
     {
       "id": "xm-temple",
       "name": "开元寺",
-      "nameEn": "Kaiyuan Temple",
+      "nameEn": "วัดไคหยวน",
       "category": "temple",
       "description": "厦门最古老的佛教寺院。",
       "address": "厦门市思明区",
@@ -948,7 +948,7 @@
     {
       "id": "xm-street",
       "name": "八市",
-      "nameEn": "Bashi Market",
+      "nameEn": "ตลาดบาซี",
       "category": "street",
       "description": "厦门最古老的菜市场，有各种海鲜和小吃。",
       "address": "厦门市思明区",
@@ -971,7 +971,7 @@
     {
       "id": "xm-mountain",
       "name": "五老峰",
-      "nameEn": "Wulaofeng",
+      "nameEn": "ภูเขาวูลาวเฟิง",
       "category": "nature",
       "description": "南普陀寺后面的山峰。",
       "address": "厦门市思明区",
@@ -993,7 +993,7 @@
     {
       "id": "xm-art",
       "name": "厦门美术馆",
-      "nameEn": "Xiamen Art Museum",
+      "nameEn": "พิพิธภัณฑ์ศิลปะเซี่ยเม้น",
       "category": "museum",
       "description": "展示中外美术作品。",
       "address": "厦门市思明区",
@@ -1014,7 +1014,7 @@
     {
       "id": "xm-bay",
       "name": "五缘湾",
-      "nameEn": "Wuyuan Bay",
+      "nameEn": "อ่าวอู่ยวน",
       "category": "nature",
       "description": "厦门新开发的海湾。",
       "address": "厦门市湖里区",
@@ -1036,7 +1036,7 @@
     {
       "id": "xm-jiujiu",
       "name": "集美学村",
-      "nameEn": "Jimei School Village",
+      "nameEn": "หมู่บ้านโรงเรียนจีเม่ย (Jimei School Village)",
       "category": "landmark",
       "description": "陈嘉庚创办的学校群，有嘉庚建筑风格。",
       "address": "厦门市集美区",
@@ -1058,7 +1058,7 @@
     {
       "id": "xm-tulou",
       "name": "永定土楼",
-      "nameEn": "Yongding Tulou",
+      "nameEn": "ตูโล่หย่งดิ้ง",
       "category": "landmark",
       "description": "世界文化遗产，有独特的圆形土楼。",
       "address": "龙岩市永定区",
@@ -1080,7 +1080,7 @@
     {
       "id": "xm-last1",
       "name": "厦门科技馆",
-      "nameEn": "Xiamen Science Museum",
+      "nameEn": "พิพิธภัณฑ์วิทยาศาสตร์เซี่ยเม้น",
       "category": "museum",
       "description": "展示科技知识的博物馆。",
       "address": "厦门市思明区",
@@ -1101,7 +1101,7 @@
     {
       "id": "xm-last2",
       "name": "海湾公园",
-      "nameEn": "Haiwan Park",
+      "nameEn": "อุทยานไห่หวาน",
       "category": "park",
       "description": "厦门最大的海滨公园。",
       "address": "厦门市思明区",
@@ -1123,7 +1123,7 @@
     {
       "id": "xm-last3",
       "name": "五通灯塔",
-      "nameEn": "Wutong Lighthouse",
+      "nameEn": "ประภาคารวูทง",
       "category": "landmark",
       "description": "厦门东部的灯塔。",
       "address": "厦门市湖里区",
@@ -1145,7 +1145,7 @@
     {
       "id": "xm-last4",
       "name": "厦门老剧场文化中心",
-      "nameEn": "Xiamen Old Theater Cultural Center",
+      "nameEn": "ศูนย์วัฒนธรรมโรงละครเก่าเซี่ยเม้น",
       "category": "landmark",
       "description": "厦门最古老的剧场。",
       "address": "厦门市思明区",
@@ -1167,7 +1167,7 @@
     {
       "id": "xm-last5",
       "name": "白鹭洲公园",
-      "nameEn": "Egret Island Park",
+      "nameEn": "อุทยานอีกรีตไอส์แลนด์",
       "category": "park",
       "description": "厦门最大的城市公园。",
       "address": "厦门市思明区",
@@ -1191,58 +1191,58 @@
     {
       "id": "xiamen-1",
       "name": "厦门润丰吉祥石亭",
-      "nameEn": "Jixiang Shiting",
-      "type": "michelin",
+      "nameEn": "จีเซียงซื่อทิ้ง",
+      "type": "มิชลิน",
       "star": 1,
-      "cuisine": "Fujian",
+      "cuisine": "ฝูเจี้ยน",
       "avgPrice": 800,
       "rating": 4.8,
-      "address": "1 Floor, Luxury Hotel, 16 Lujiang Road, Siming District",
+      "address": "ชั้น 1, โรงแรมหรู, ถนนลูเจียง 16, เขตซีมิง",
       "coordinates": {
         "lat": 24.4552,
         "lng": 118.0815
       },
       "phone": "+86 592 202 3333",
       "hours": "11:30-14:00, 17:30-22:00",
-      "description": "One Michelin-starred restaurant offering refined Fujian cuisine with stunning views of Lujiang Bay.",
+      "description": "ร้านอาหารที่ได้รับการยกย่องด้วยดาวมิเชลินหนึ่งดาว เสิร์ฟอาหารภูเก็ตฟูเจี้ยนที่ปรับปรุงแต่งให้สุขอร่อย โดยมีวิวสวยงามของอ่าวลูเจียง",
       "dishHighlights": [
-        "Braised abalone with oyster sauce",
-        "Steamed sea bass with preserved vegetables",
-        "Mazu-style prawns"
+        "หอยอ่อนตุ๋นซอสหอยนางรม",
+        "ปลาทูตุ๋นสดพร้อมผักดอง",
+        "กุ้งสไตล์มาจู"
       ],
       "tags": [
-        "fine-dining",
-        "fujian-cuisine",
-        "view"
+        "ร้านอาหารหรู",
+        "อาหารฝูเจี้ยน",
+        "วิว"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/e924f66c48c8.webp"
     },
     {
       "id": "xiamen-2",
-      "name": "xm-s的优点",
-      "nameEn": "ISO",
-      "type": "michelin",
+      "name": "ข้อดีของ xm-s",
+      "nameEn": "ไอเอสโอ",
+      "type": "มิชลิน",
       "star": 1,
-      "cuisine": "Contemporary",
+      "cuisine": "รสชาติสมัยใหม่",
       "avgPrice": 1200,
       "rating": 4.9,
-      "address": "99 Hexagon Bay, Songzai Road, Siming District",
+      "address": "99 ห่างกอนเบย์, ถนนซงไซ, เขตซีมิง",
       "coordinates": {
         "lat": 24.4512,
         "lng": 118.0945
       },
       "phone": "+86 592 268 8888",
-      "hours": "18:00-22:00 (Closed Sunday)",
-      "description": "Innovative modern Chinese cuisine with molecular gastronomy techniques by chef Jiro Zhang.",
+      "hours": "18:00-22:00 (ปิดวันอาทิตย์)",
+      "description": "อาหารจีนสมัยใหม่ที่นวัตกรรม โดยใช้เทคนิคกาสโทรโนมีย์ของเชฟจิโร่จาง",
       "dishHighlights": [
-        "Deconstructed oyster pancake",
-        "Smoked duck with osmanthus",
-        "Seafood symphony"
+        "เป็ดปูทอดสลาย",
+        "เป็ดหมอกซาลิก",
+        "สมรภูมิอาหารทะเล"
       ],
       "tags": [
-        "fine-dining",
-        "innovative",
+        "ร้านอาหารหรู",
+        "นวัตกรรม",
         "เชฟเทเบิล"
       ],
       "diamond": 0,
@@ -1252,7 +1252,7 @@
       "id": "xiamen-3",
       "name": "xm-yuxi",
       "nameEn": "ยูซี",
-      "type": "blackpearl",
+      "type": "แบล็กเพิร์ล",
       "diamond": 2,
       "cuisine": "ฝูเจี้ยน",
       "avgPrice": 500,
@@ -1282,7 +1282,7 @@
       "id": "xiamen-4",
       "name": "xm-jianong",
       "nameEn": "เจียหนง",
-      "type": "blackpearl",
+      "type": "แบล็กเพิร์ล",
       "diamond": 1,
       "cuisine": "มังสวิรัติ",
       "avgPrice": 300,
@@ -1312,7 +1312,7 @@
       "id": "xiamen-5",
       "name": "xm-yuehua",
       "nameEn": "ยือหวา",
-      "type": "blackpearl",
+      "type": "แบล็กเพิร์ล",
       "diamond": 1,
       "cuisine": "กวางตุ้ง",
       "avgPrice": 400,
@@ -1340,9 +1340,9 @@
     },
     {
       "id": "xiamen-6",
-      "name": "xm-naianza",
+      "name": "xm-ไหนอานเจี๋ย",
       "nameEn": "หนายอานไช่",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "อาหารท้องถิ่นเซียะเหมิน",
       "avgPrice": 80,
       "rating": 4.5,
@@ -1363,7 +1363,7 @@
       "tags": [
         "ท้องถิ่น",
         "อาหารเช้า",
-        "traditional"
+        "ดั้งเดิม"
       ],
       "star": 0,
       "diamond": 0,
@@ -1371,30 +1371,30 @@
     },
     {
       "id": "xiamen-7",
-      "name": "xm-haizheng",
-      "nameEn": "Hai Zheng",
-      "type": "local",
-      "cuisine": "Seafood",
+      "name": "xm-ไห่เจิ้ง",
+      "nameEn": "อาหารไห่เจิ้ง",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารทะเล",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "8 Zengcuo'an, Siming District",
+      "address": "8 เจิ้งฉัวอ่าน, เขตซีมิง",
       "coordinates": {
         "lat": 24.4405,
         "lng": 118.1095
       },
       "phone": "+86 592 251 8888",
       "hours": "10:00-23:00",
-      "description": "Popular seafood restaurant in Zengcuo'an known for fresh catches and local favorites.",
+      "description": "ร้านอาหารทะเลยอดนิยมในเขต Zengcuo'an ที่มีชื่อเสียงในเรื่องของอาหารทะเลสดและอาหารท้องถิ่นที่โด่งดัง",
       "dishHighlights": [
-        "Fried squid",
-        " steamed clams",
-        "Xiamen-style crab",
-        "Salt and pepper shrimp"
+        "ปลาหมึกทอด",
+        "หอยนางรมนึ่ง",
+        "ปูสไตล์เซี่ยเมิน",
+        "กุ้งเกลือพริก"
       ],
       "tags": [
-        "seafood",
-        "local",
-        "tourist-favorite"
+        "อาหารทะเล",
+        "ท้องถิ่น",
+        "ที่นิยมของนักท่องเที่ยว"
       ],
       "star": 0,
       "diamond": 0,
@@ -1402,30 +1402,30 @@
     },
     {
       "id": "xiamen-8",
-      "name": "xm-shaxian",
-      "nameEn": "Sha Xian",
-      "type": "local",
-      "cuisine": "Fujian Snacks",
+      "name": "xm-ซาเซียน",
+      "nameEn": "ซา ซียน",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารว่างมณฑลฝูเจี้ยน",
       "avgPrice": 50,
       "rating": 4.4,
-      "address": "Shapowei, near fishing harbor",
+      "address": "ใกล้ท่าเรือประมงในเขต Shapowei",
       "coordinates": {
         "lat": 24.4415,
         "lng": 118.0835
       },
       "phone": "+86 592 208 8888",
-      "hours": "06:00-22:00",
-      "description": "Traditional Fujian snack shop famous for沙茶面 and various闽南小食.",
+      "hours": "เวลาเปิดบริการ 06:00-22:00",
+      "description": "ร้านขายอาหารว่างดั้งเดิมของมณฑลฝูเจี้ยนที่มีชื่อเสียงในเรื่องของ沙茶面และอาหารว่างต่างๆของมณฑลหนานซาน",
       "dishHighlights": [
-        "Satay noodles",
-        "Sea worm jelly",
-        "Meat dumplings",
-        "Taro balls"
+        "บะหมี่ซาไต",
+        "เจลลี่หนอนทะเล",
+        "ซาลาเปาหมู",
+        "ลูกท้อ"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "cheap-eats"
+        "ท้องถิ่น",
+        "ขนม",
+        "อาหารราคาถูก"
       ],
       "star": 0,
       "diamond": 0,
@@ -1433,29 +1433,29 @@
     },
     {
       "id": "xiamen-9",
-      "name": "xm-laomeng",
-      "nameEn": "Lao Meng",
-      "type": "local",
-      "cuisine": "Xiamen Local",
+      "name": "xm-เหลาหมิง",
+      "nameEn": "เหลา เม้ง",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารท้องถิ่นเซียะเหมิน",
       "avgPrice": 60,
       "rating": 4.3,
-      "address": "66 Huandao Road, Siming District",
+      "address": "ถนน Huandao ซอย 66 เขต Siming",
       "coordinates": {
         "lat": 24.4525,
         "lng": 118.1025
       },
       "phone": "+86 592 235 8888",
       "hours": "07:00-19:00",
-      "description": "Old establishment known for traditional peanut soup and local breakfast items.",
+      "description": "ร้านดั้งเดิมที่มีชื่อเสียงในเรื่องของซุปถั่วลิสงหวานและอาหารเช้าท้องถิ่น",
       "dishHighlights": [
-        "Sweet peanut soup",
-        "Fried dough sticks",
-        "Rice dumplings"
+        "ซุปถั่วลิสงหวาน",
+        "ปาท่องโก๋",
+        "บัวหวาน"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "historic"
+        "ท้องถิ่น",
+        "อาหารเช้า",
+        "ประวัติศาสตร์"
       ],
       "star": 0,
       "diamond": 0,
@@ -1463,29 +1463,29 @@
     },
     {
       "id": "xiamen-10",
-      "name": "xm-dagu",
-      "nameEn": "Da Gu",
-      "type": "local",
-      "cuisine": "Duck",
+      "name": "xm-ต้ากู",
+      "nameEn": "ดา กู",
+      "type": "ท้องถิ่น",
+      "cuisine": "เป็ด",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "Near Zhongshan Road",
+      "address": "ใกล้ถนนจงซาน",
       "coordinates": {
         "lat": 24.4555,
         "lng": 118.0855
       },
       "phone": "+86 592 210 8888",
       "hours": "10:30-21:30",
-      "description": "Specialized duck restaurant with traditional姜母鸭 (ginger duck) and various duck dishes.",
+      "description": "ร้านอาหารเป็ดเชิงเฉพาะทางที่มีอาหารเป็ดดั้งเดิม姜母鸭 (เป็ดขิง) และอาหารเป็ดต่างๆ",
       "dishHighlights": [
-        "Ginger duck",
-        "Duck blood soup",
-        "Spicy duck neck"
+        "เป็ดขิง",
+        "ซุปเลือดเป็ด",
+        "คอเป็ดรสเผ็ด"
       ],
       "tags": [
-        "local",
-        "duck",
-        "specialty"
+        "ท้องถิ่น",
+        "เป็ด",
+        "พิเศษ"
       ],
       "star": 0,
       "diamond": 0,
@@ -1493,30 +1493,30 @@
     },
     {
       "id": "xiamen-11",
-      "name": "xm-hongxia",
-      "nameEn": "Hong Xia",
-      "type": "local",
-      "cuisine": "Seafood",
+      "name": "xm-ฮงเซีย",
+      "nameEn": "ฮ่องเซีย",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารทะเล",
       "avgPrice": 200,
       "rating": 4.7,
-      "address": "8 Siming Road, Siming District",
+      "address": "ถนนสิมิ่ง ซอย 8 เขตสิมิ่ง",
       "coordinates": {
         "lat": 24.4485,
         "lng": 118.0895
       },
       "phone": "+86 592 228 8888",
       "hours": "11:00-14:00, 17:00-22:00",
-      "description": "Local institution for fresh seafood since 1980s. Known for its open kitchen and reasonable prices.",
+      "description": "สถานที่ท้องถิ่นที่มีชื่อเสียงในเรื่องของอาหารทะเลสดตั้งแต่ทศวรรษ 1980 ที่มีครัวแบบเปิดและราคาที่เหมาะสม",
       "dishHighlights": [
-        "Steam fresh fish",
-        "Garlic lobster",
-        "Spicy crab",
-        "Clams with basil"
+        "ปลาสดนึ่ง",
+        "ล็อบสเตอร์กระเทียม",
+        "ปูรสเผ็ด",
+        "หอยนางรมผักโหระพา"
       ],
       "tags": [
-        "seafood",
-        "local",
-        "fresh"
+        "อาหารทะเล",
+        "ท้องถิ่น",
+        "สดใหม่"
       ],
       "star": 0,
       "diamond": 0,
@@ -1524,29 +1524,29 @@
     },
     {
       "id": "xiamen-12",
-      "name": "xm-shenxin",
-      "nameEn": "Shen Xin",
-      "type": "local",
-      "cuisine": "Noodles",
+      "name": "xm-เซินซิน",
+      "nameEn": "เสินซิน",
+      "type": "ท้องถิ่น",
+      "cuisine": "เส้นหมี่",
       "avgPrice": 40,
       "rating": 4.4,
-      "address": "Near Xiamen University",
+      "address": "ใกล้มหาวิทยาลัยเซี่ยเมิน",
       "coordinates": {
         "lat": 24.4365,
         "lng": 118.1015
       },
       "phone": "+86 592 218 8888",
       "hours": "07:00-20:00",
-      "description": "Famous noodle shop near XMU, serving large portions of authentic闽南面食.",
+      "description": "ร้านขายหมี่ที่มีชื่อเสียงใกล้มหาวิทยาลัย XMU ที่เสิร์ฟอาหารหมี่แท้ของมณฑลหนานซานในจำนวนมาก",
       "dishHighlights": [
-        "Beef offal noodles",
-        "Pork knuckle rice",
-        "Spring rolls"
+        "หมี่ตับงวง",
+        "ขาหมูต้มกับข้าว",
+        "เปาะเจี๊ยน"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "cheap-eats"
+        "ท้องถิ่น",
+        "เนื้อมือ",
+        "อาหารราคาถูก"
       ],
       "star": 0,
       "diamond": 0,
@@ -1554,60 +1554,60 @@
     },
     {
       "id": "xiamen-13",
-      "name": "xm-tingyigu",
-      "nameEn": "Ting Yi Gu",
-      "type": "michelin",
+      "name": "xm-ติงอี้กู",
+      "nameEn": "ติงอีกู",
+      "type": "มิชลิน",
       "star": 1,
-      "cuisine": "Fujian",
+      "cuisine": "ฝูเจี้ยน",
       "avgPrice": 600,
       "rating": 4.8,
-      "address": "77 Lujiang Road, near Ferry Terminal",
+      "address": "ถนนลูเจียง หมายเลข 77 ใกล้ท่าเรือข้ามฟาก",
       "coordinates": {
         "lat": 24.4565,
         "lng": 118.0785
       },
       "phone": "+86 592 212 3333",
       "hours": "11:00-14:00, 17:30-22:00",
-      "description": "Michelin-starred restaurant offering elevated traditional dishes with Gulangyu views.",
+      "description": "ร้านอาหารระดับมิเชลินที่นำเสนออาหารดั้งเดิมที่ได้รับการยกระดับพร้อมทิวทัศน์เกาะกูหลางยู",
       "dishHighlights": [
-        "Braised sea cucumber",
-        "Mazu-style prawns",
-        "Seafood soup dumplings"
+        "ปลาดาวผัดซีอิ๊ว",
+        "กุ้งสไตล์มาจู",
+        "ซุปกุ้งพาย"
       ],
       "tags": [
-        "fine-dining",
-        "fujian",
-        "view"
+        "ร้านอาหารหรู",
+        "ฝูเจียน",
+        "วิว"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/47aacbf2c083.webp"
     },
     {
       "id": "xiamen-14",
-      "name": "xm-xianlu",
-      "nameEn": "Xian Lu",
-      "type": "local",
-      "cuisine": "Hotpot",
+      "name": "xm-เซียนหลู",
+      "nameEn": "เซียนลู",
+      "type": "ท้องถิ่น",
+      "cuisine": "หม้อไฟ",
       "avgPrice": 120,
       "rating": 4.5,
-      "address": "Jimei District, near School Village",
+      "address": "เขตจีเมย์ ใกล้หมู่บ้านโรงเรียน",
       "coordinates": {
         "lat": 24.4425,
         "lng": 118.0565
       },
       "phone": "+86 592 668 8888",
       "hours": "11:00-23:00",
-      "description": "Popular hotpot chain with fresh seafood and local ingredients. Known for fish head hotpot.",
+      "description": "เครือข่ายฮอทโพตยอดนิยมที่มีอาหารทะเลสดและวัตถุดิบท้องถิ่น มีชื่อเสียงในเรื่องฮอทโพตหัวปลา",
       "dishHighlights": [
-        "Fish head hotpot",
-        "Beef slices",
-        "Fresh vegetables",
-        "Handmade meatballs"
+        "หม้อไฟหัวปลา",
+        "เนื้อวัวหั่นบาง",
+        "ผักสด",
+        "ลูกชิ้นทำเอง"
       ],
       "tags": [
-        "hotpot",
-        "seafood",
-        "local"
+        "หม้อไฟ",
+        "อาหารทะเล",
+        "ท้องถิ่น"
       ],
       "star": 0,
       "diamond": 0,
@@ -1615,29 +1615,29 @@
     },
     {
       "id": "xiamen-15",
-      "name": "xm-xinyuan",
-      "nameEn": "Xin Yuan",
-      "type": "local",
-      "cuisine": "Fujian",
+      "name": "xm-ซินยวน",
+      "nameEn": "ซินยวน",
+      "type": "ท้องถิ่น",
+      "cuisine": "ฝูเจี้ยน",
       "avgPrice": 80,
       "rating": 4.3,
-      "address": "Near Nanputuo Temple",
+      "address": "ใกล้วัดนานปู่ทั่ว",
       "coordinates": {
         "lat": 24.4385,
         "lng": 118.0925
       },
       "phone": "+86 592 208 9999",
       "hours": "10:00-21:00",
-      "description": "Local restaurant near temple, known for vegetarian options and Buddhist-style dishes.",
+      "description": "ร้านอาหารท้องถิ่นใกล้วัด มีชื่อเสียงในเรื่องอาหารมังสวิรัติและอาหารสไตล์พุทธ",
       "dishHighlights": [
-        "Buddha-style hot pot",
-        "Fried vegetables",
-        "Rice with toppings"
+        "ฮอทโพตสไตล์พุทธ",
+        "ผักทอด",
+        "ข้าวโพล์"
       ],
       "tags": [
-        "local",
-        "vegetarian",
-        "near-temple"
+        "ท้องถิ่น",
+        "มังสวิรัติ",
+        "ใกล้วัด"
       ],
       "star": 0,
       "diamond": 0,
@@ -1645,30 +1645,30 @@
     },
     {
       "id": "xiamen-16",
-      "name": "xm-longde",
-      "nameEn": "Long De",
-      "type": "local",
-      "cuisine": "Fujian",
+      "name": "xm-หลงเต๋อ",
+      "nameEn": "หลงเต๋อ",
+      "type": "ท้องถิ่น",
+      "cuisine": "ฝูเจี้ยน",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "Zhongshan Road arcade building",
+      "address": "อาคารเลียบถนนจงซาน",
       "coordinates": {
         "lat": 24.4548,
         "lng": 118.0838
       },
       "phone": "+86 592 213 8888",
       "hours": "11:00-21:30",
-      "description": "Established restaurant in arcade building serving traditional闽南菜 since 1920s.",
+      "description": "ร้านอาหารที่สถาปนาแล้วในอาคารเลียบถนน รับประทานอาหารดั้งเดิมซีหนาน เมื่อทศวรรษ 1920",
       "dishHighlights": [
-        "Oyster omelette",
-        "Spring rolls",
-        "Braised pork belly",
-        "Seafood congee"
+        "ไข่เจียวหอย",
+        "เปาะเจี๊ยน",
+        "หมูสามชั้นตุ๋น",
+        "โจ๊กทะเล"
       ],
       "tags": [
-        "historic",
-        "minnan",
-        "central"
+        "ประวัติศาสตร์",
+        "มินนาน",
+        "ใจกลางเมือง"
       ],
       "star": 0,
       "diamond": 0,
@@ -1676,30 +1676,30 @@
     },
     {
       "id": "xiamen-17",
-      "name": "xm-zhaole",
-      "nameEn": "Zhao Le",
-      "type": "local",
-      "cuisine": "Teochew",
+      "name": "xm-เจาเล่",
+      "nameEn": "จ้าวเล่",
+      "type": "ท้องถิ่น",
+      "cuisine": "เชี้ยวโจว",
       "avgPrice": 100,
       "rating": 4.4,
-      "address": "Hubin South Road",
+      "address": "ถนนฮูปินใต้",
       "coordinates": {
         "lat": 24.4505,
         "lng": 118.1085
       },
       "phone": "+86 592 539 8888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Chaozhou-style restaurant known for precise cooking techniques and fresh ingredients.",
+      "description": "ร้านอาหารสไตล์เชี้ยวโจวที่มีชื่อเสียงในเรื่องเทคนิคการปรุงอาหารที่แม่นยำและวัตถุดิบสด",
       "dishHighlights": [
-        "Steamed fish",
-        "Braised goose",
-        "Shark fin soup",
-        "Tofu dishes"
+        "ปลานึ่ง",
+        "ห่อไก่",
+        "ซุปครีมกระดูกปลาโลมา",
+        "อาหารเต้าหู้"
       ],
       "tags": [
-        "teochew",
-        "seafood",
-        "refined"
+        "เชี้ยวโจว",
+        "อาหารทะเล",
+        "ละเอียดอ่อน"
       ],
       "star": 0,
       "diamond": 0,
@@ -1707,60 +1707,60 @@
     },
     {
       "id": "xiamen-18",
-      "name": "xm-chengyi",
-      "nameEn": "Cheng Yi",
-      "type": "blackpearl",
+      "name": "xm-เฉิงอี้",
+      "nameEn": "เฉิงอี",
+      "type": "แบล็กเพิร์ล",
       "diamond": 2,
-      "cuisine": "Fusion",
+      "cuisine": "ฟิวชัน",
       "avgPrice": 450,
       "rating": 4.7,
-      "address": "Jimei New Town, Chengyi Park",
+      "address": "อาณาบริเวณเจิ้งอี้ พาร์คในเขตจิเมย์ใหม่",
       "coordinates": {
         "lat": 24.4385,
         "lng": 118.0545
       },
       "phone": "+86 592 619 8888",
       "hours": "11:00-14:00, 17:30-22:00",
-      "description": "Two-diamond restaurant combining Fujian ingredients with international cooking techniques.",
+      "description": "ร้านอาหารระดับ 2 เพชรที่รวมวัตถุดิบฝูเจียนกับเทคนิคการปรุงอาหารระหว่างประเทศ",
       "dishHighlights": [
-        "Truffle chicken",
-        "Saffron seafood soup",
-        "Chocolate prawns"
+        "ไก่เทรฟเฟิล",
+        "ซุปสาหร่ายทะเลกับสีเหลือง",
+        "กุ้งช็อกโกแลต"
       ],
       "tags": [
-        "fusion",
-        "creative",
-        "elegant"
+        "ฟิวชัน",
+        "สร้างสรรค์",
+        "หรูหรา"
       ],
       "star": 0,
       "imageUrl": "/img/ext/4d03ae8efacc.webp"
     },
     {
       "id": "xiamen-19",
-      "name": "xm-furong",
-      "nameEn": "Fu Rong",
-      "type": "local",
-      "cuisine": "Seafood",
+      "name": "xm-ฟูหรง",
+      "nameEn": "ฟู หรง",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารทะเล",
       "avgPrice": 180,
       "rating": 4.5,
-      "address": "Gulangyu Island, near Piano Museum",
+      "address": "เกาะกูหลังยู่, ใกล้พิพิธภัณฑ์เปียโน",
       "coordinates": {
         "lat": 24.4432,
         "lng": 118.0695
       },
       "phone": "+86 592 206 8888",
       "hours": "10:30-21:00",
-      "description": "Seafood restaurant on Gulangyu with local fish and traditional preparation methods.",
+      "description": "ร้านอาหารทะเลบนเกาะกูหลังยู่ มีปลาท้องถิ่นและวิธีการปรุงแบบดั้งเดิม",
       "dishHighlights": [
-        "Fried squid",
-        "Steamed fish of the day",
-        "Seaweed soup",
-        "Oyster omelette"
+        "ปลาหมึกทอด",
+        "ปลาหม้อซุปรสวัน",
+        "ซุปสาหร่าย",
+        "ไข่เจียวหอย"
       ],
       "tags": [
-        "seafood",
-        "gulangyu",
-        "local"
+        "อาหารทะเล",
+        "กูหลังยู่",
+        "ท้องถิ่น"
       ],
       "star": 0,
       "diamond": 0,
@@ -1769,29 +1769,29 @@
     {
       "id": "xiamen-20",
       "name": "xm-sanyu",
-      "nameEn": "San Yu",
-      "type": "local",
-      "cuisine": "BBQ",
+      "nameEn": "ซาน ยู",
+      "type": "ท้องถิ่น",
+      "cuisine": "บีบีคิว",
       "avgPrice": 100,
       "rating": 4.4,
-      "address": "Near Zengcuo'an",
+      "address": "ใกล้เขต Zengcuo'an",
       "coordinates": {
         "lat": 24.4415,
         "lng": 118.1085
       },
       "phone": "+86 592 251 9999",
       "hours": "17:00-02:00",
-      "description": "Popular late-night BBQ spot near Zengcuo'an, known for grilled seafood and skewers.",
+      "description": "จุดบาร์บีคิวยามดึกที่เป็นที่นิยมใกล้ Zengcuo'an โด่งดังในเรื่องอาหารปรุงย่างทะเลและสเต็ก",
       "dishHighlights": [
-        "Grilled scallops",
-        "Lamb skewers",
-        "Squid rings",
-        "Cold beer"
+        "หอยนางรมย่าง",
+        "ลูกแกะย่าง",
+        "วงหมีกปลาหมึก",
+        "เบียร์เย็น"
       ],
       "tags": [
-        "bbq",
-        "nightlife",
-        "seafood"
+        "บาร์บีคิว",
+        "ชีวิตยามค่ำคืน",
+        "อาหารทะเล"
       ],
       "star": 0,
       "diamond": 0,
@@ -1800,29 +1800,29 @@
     {
       "id": "xiamen-21",
       "name": "xm-baocheng",
-      "nameEn": "Bao Cheng",
-      "type": "local",
-      "cuisine": "Dim Sum",
+      "nameEn": "เปา เฉิง",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารตามสั่ง",
       "avgPrice": 70,
       "rating": 4.3,
-      "address": "Jimei School Village",
+      "address": "หมู่บ้านโรงเรียนจีเม่ย (Jimei School Village)",
       "coordinates": {
         "lat": 24.4412,
         "lng": 118.0575
       },
       "phone": "+86 592 618 8888",
       "hours": "07:00-14:00",
-      "description": "Local dim sum shop popular with students and locals for breakfast and lunch.",
+      "description": "ร้านตี้โหม่วท้องถิ่นที่ได้รับความนิยมจากนักเรียนและชาวท้องถิ่นสำหรับมื้อเช้าและเที่ยง",
       "dishHighlights": [
-        "Shrimp dumplings",
-        "Pork buns",
-        "Taro dumplings",
-        "Rice rolls"
+        "ซาลาเปาเกี๊ยวกุ้ง",
+        "ปาท่องโก๋หมู",
+        "ขนมทุเรียน",
+        "บะหมี่ม้วน"
       ],
       "tags": [
-        "dim-sum",
-        "breakfast",
-        "cheap"
+        "ติ่มซำ",
+        "อาหารเช้า",
+        "ราคาถูก"
       ],
       "star": 0,
       "diamond": 0,
@@ -1831,29 +1831,29 @@
     {
       "id": "xiamen-22",
       "name": "xm-shengsheng",
-      "nameEn": "Sheng Sheng",
-      "type": "local",
-      "cuisine": "Noodles",
+      "nameEn": "เซิง เซิง",
+      "type": "ท้องถิ่น",
+      "cuisine": "เส้นหมี่",
       "avgPrice": 35,
       "rating": 4.2,
-      "address": "Siming District, near Ferry",
+      "address": "เขตซีมิง, ใกล้ท่าเรือ",
       "coordinates": {
         "lat": 24.4485,
         "lng": 118.0855
       },
       "phone": "+86 592 212 7777",
       "hours": "06:00-15:00",
-      "description": "Famous for authentic土笋冻 (sea worm jelly) and other traditional snacks.",
+      "description": "มีชื่อเสียงในเรื่องอาหารท้องถิ่นที่แท้จริง เช่น ทุ่นสาหร่าย (ทุ่นทะเล) และขนมท้องถิ่นอื่นๆ",
       "dishHighlights": [
-        "Sea worm jelly",
-        "Oyster vermicelli",
-        "Pork rice noodles",
-        "Fried taro"
+        "เจลลี่หนอนทะเล",
+        "หมี่เส้นหอยนางรม",
+        "บะหมี่เนื้อหมู",
+        "มันทอด"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "traditional"
+        "ท้องถิ่น",
+        "ขนม",
+        "ดั้งเดิม"
       ],
       "star": 0,
       "diamond": 0,
@@ -1862,29 +1862,29 @@
     {
       "id": "xiamen-23",
       "name": "厦门海底世界酒楼",
-      "nameEn": "Hai Di World Restaurant",
-      "type": "local",
-      "cuisine": "Seafood",
+      "nameEn": "ฮาย ดี เวิลด์ เรสเตอรองต์",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารทะเล",
       "avgPrice": 200,
       "rating": 4.4,
-      "address": "Gulangyu Island, near Underwater World",
+      "address": "เกาะกูหลังยู่, ใกล้โลกใต้น้ำ",
       "coordinates": {
         "lat": 24.4435,
         "lng": 118.0708
       },
       "phone": "+86 592 206 6888",
       "hours": "10:30-21:00",
-      "description": "Seafood restaurant on Gulangyu with fresh catches and beautiful bay views.",
+      "description": "ร้านอาหารทะเลบนเกาะกูหลังยู่ มีปลาสดและวิวอ่าวที่สวยงาม",
       "dishHighlights": [
-        "Steamed groupers",
-        "Spicy crab",
-        "Garlic prawns",
-        "Seafood hotpot"
+        "กุ้งย่างกลุ่ม",
+        "ปูรสเผ็ด",
+        "กุ้งกะปิ",
+        "ฮอทพอตอาหารทะเล"
       ],
       "tags": [
-        "seafood",
-        "gulangyu",
-        "view"
+        "อาหารทะเล",
+        "กูหลังยู่",
+        "วิว"
       ],
       "star": 0,
       "diamond": 0,
@@ -1893,29 +1893,29 @@
     {
       "id": "xiamen-24",
       "name": "阿杰土笋冻",
-      "nameEn": "A Jie Sea Worm Jelly",
-      "type": "local",
-      "cuisine": "Snacks",
+      "nameEn": "อา เจี๋ย เซ่า หมวก เจีย",
+      "type": "ท้องถิ่น",
+      "cuisine": "ขนมขบเคี้ยว",
       "avgPrice": 25,
       "rating": 4.6,
-      "address": "Zengcuo'an Main Street",
+      "address": "ถนนใหญ่ Zengcuo'an",
       "coordinates": {
         "lat": 24.4408,
         "lng": 118.1092
       },
       "phone": "+86 592 251 8888",
       "hours": "09:00-22:00",
-      "description": "Famous local shop specializing in authentic土笋冻 from Zhangzhou.",
+      "description": "ร้านท้องถิ่นที่มีชื่อเสียงเฉพาะทางในเรื่องทุ่นสาหร่ายที่แท้จริงจาก Zhangzhou",
       "dishHighlights": [
-        "Sea worm jelly",
-        "Oyster omelette",
-        "Spring rolls",
-        "Grass jelly"
+        "เจลลี่หนอนทะเล",
+        "ไข่เจียวหอย",
+        "เปาะเจี๊ยน",
+        "เฉาก๊วย"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "famous"
+        "ท้องถิ่น",
+        "ขนม",
+        "โด่งดัง"
       ],
       "star": 0,
       "diamond": 0,
@@ -1924,29 +1924,29 @@
     {
       "id": "xiamen-25",
       "name": "集美学村大排档",
-      "nameEn": "Jimei Night Market",
-      "type": "local",
-      "cuisine": "Street Food",
+      "nameEn": "ตลาดนัด Jimei",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารถนน",
       "avgPrice": 40,
       "rating": 4.3,
-      "address": "Jimei District, near University Town",
+      "address": "เขตจีเมย์, ใกล้กับย่านมหาวิทยาลัย",
       "coordinates": {
         "lat": 24.4418,
         "lng": 118.0585
       },
       "phone": "+86 059 2 7789 4249",
       "hours": "17:00-02:00",
-      "description": "Popular night market food street near Jimei University, famous for cheap and tasty snacks.",
+      "description": "ถนนอาหารตลาดกลางคืนยอดนิยมใกล้มหาวิทยาลัยจีเมย์ มีชื่อเสียงในด้านอาหารทานเล่นราคาถูกและอร่อย",
       "dishHighlights": [
-        "Grilled skewers",
-        "Fried rice noodles",
-        "Stinky tofu",
-        "Bubble tea"
+        "ลูกชิ้นย่าง",
+        "ข้าวผัดเส้น",
+        "ทอฟูที่มีกลิ่นแรง",
+        "ชานมเย็น"
       ],
       "tags": [
-        "night-market",
-        "street-food",
-        "student-area"
+        "ตลาดกลางคืน",
+        "อาหารข้างถนน",
+        "ย่านนักศึกษา"
       ],
       "star": 0,
       "diamond": 0,
@@ -1956,7 +1956,7 @@
       "id": "xiamen-26",
       "name": "街边花生汤",
       "nameEn": "街边花生汤 (花生汤)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "花生汤",
       "avgPrice": 139,
       "rating": 4.6,
@@ -1985,7 +1985,7 @@
       "id": "xiamen-28",
       "name": "巷子土笋冻",
       "nameEn": "巷子土笋冻 (土笋冻)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "土笋冻",
       "avgPrice": 50,
       "rating": 4.6,
@@ -2014,7 +2014,7 @@
       "id": "xiamen-30",
       "name": "地道海蛎煎",
       "nameEn": "地道海蛎煎 (海蛎煎)",
-      "type": "street",
+      "type": "ร้านอาหารข้างทาง",
       "cuisine": "海蛎煎",
       "avgPrice": 17,
       "rating": 4.5,
@@ -2043,7 +2043,7 @@
       "id": "xiamen-32",
       "name": "厦门味姜母鸭",
       "nameEn": "厦门味姜母鸭 (姜母鸭)",
-      "type": "street",
+      "type": "ร้านอาหารข้างทาง",
       "cuisine": "姜母鸭",
       "avgPrice": 26,
       "rating": 4.4,
@@ -2072,7 +2072,7 @@
       "id": "xiamen-34",
       "name": "地道土笋冻",
       "nameEn": "地道土笋冻 (土笋冻)",
-      "type": "street",
+      "type": "ร้านอาหารข้างทาง",
       "cuisine": "土笋冻",
       "avgPrice": 39,
       "rating": 4.1,
@@ -2101,7 +2101,7 @@
       "id": "xiamen-36",
       "name": "正宗沙茶面",
       "nameEn": "正宗沙茶面 (沙茶面)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "沙茶面",
       "avgPrice": 98,
       "rating": 4.5,
@@ -2130,7 +2130,7 @@
       "id": "xiamen-38",
       "name": "老厦门姜母鸭",
       "nameEn": "老厦门姜母鸭 (姜母鸭)",
-      "type": "street",
+      "type": "ร้านอาหารข้างทาง",
       "cuisine": "姜母鸭",
       "avgPrice": 49,
       "rating": 4.6,
@@ -2159,7 +2159,7 @@
       "id": "xiamen-40",
       "name": "正宗海蛎煎",
       "nameEn": "正宗海蛎煎 (海蛎煎)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "海蛎煎",
       "avgPrice": 112,
       "rating": 4.8,
@@ -2188,7 +2188,7 @@
       "id": "xiamen-42",
       "name": "老字号姜母鸭",
       "nameEn": "老字号姜母鸭 (姜母鸭)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "姜母鸭",
       "avgPrice": 111,
       "rating": 4.5,
@@ -2217,7 +2217,7 @@
       "id": "xiamen-44",
       "name": "正宗海蛎煎",
       "nameEn": "正宗海蛎煎 (海蛎煎)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "海蛎煎",
       "avgPrice": 140,
       "rating": 4.9,
@@ -2246,7 +2246,7 @@
       "id": "xiamen-46",
       "name": "老厦门土笋冻",
       "nameEn": "老厦门土笋冻 (土笋冻)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "土笋冻",
       "avgPrice": 123,
       "rating": 4.5,
@@ -2275,7 +2275,7 @@
       "id": "xiamen-48",
       "name": "正宗姜母鸭",
       "nameEn": "正宗姜母鸭 (姜母鸭)",
-      "type": "cafe",
+      "type": "คาเฟ่",
       "cuisine": "姜母鸭",
       "avgPrice": 52,
       "rating": 4.8,
@@ -2304,7 +2304,7 @@
       "id": "xiamen-50",
       "name": "老街土笋冻",
       "nameEn": "老街土笋冻 (土笋冻)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "土笋冻",
       "avgPrice": 126,
       "rating": 4.9,
@@ -2333,7 +2333,7 @@
       "id": "xiamen-52",
       "name": "厦门味沙茶面",
       "nameEn": "厦门味沙茶面 (沙茶面)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "沙茶面",
       "avgPrice": 109,
       "rating": 4.1,
@@ -2362,7 +2362,7 @@
       "id": "xiamen-54",
       "name": "老街海蛎煎",
       "nameEn": "老街海蛎煎 (海蛎煎)",
-      "type": "street",
+      "type": "ร้านอาหารข้างทาง",
       "cuisine": "海蛎煎",
       "avgPrice": 28,
       "rating": 4,
@@ -2391,7 +2391,7 @@
       "id": "xiamen-56",
       "name": "阿婆土笋冻",
       "nameEn": "阿婆土笋冻 (土笋冻)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "土笋冻",
       "avgPrice": 146,
       "rating": 4.6,
@@ -2420,7 +2420,7 @@
       "id": "xiamen-58",
       "name": "地道花生汤",
       "nameEn": "地道花生汤 (花生汤)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "花生汤",
       "avgPrice": 138,
       "rating": 4.1,
@@ -2449,7 +2449,7 @@
       "id": "xiamen-60",
       "name": "正宗花生汤",
       "nameEn": "正宗花生汤 (花生汤)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "花生汤",
       "avgPrice": 122,
       "rating": 4.9,
@@ -2478,7 +2478,7 @@
       "id": "xiamen-62",
       "name": "正宗花生汤",
       "nameEn": "正宗花生汤 (花生汤)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "花生汤",
       "avgPrice": 55,
       "rating": 4.8,
@@ -2507,7 +2507,7 @@
       "id": "xiamen-64",
       "name": "传统沙茶面",
       "nameEn": "传统沙茶面 (沙茶面)",
-      "type": "street",
+      "type": "ร้านอาหารข้างทาง",
       "cuisine": "沙茶面",
       "avgPrice": 48,
       "rating": 4.8,
@@ -2536,7 +2536,7 @@
       "id": "xiamen-66",
       "name": "巷子土笋冻",
       "nameEn": "巷子土笋冻 (土笋冻)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "土笋冻",
       "avgPrice": 35,
       "rating": 4.3,
@@ -2565,7 +2565,7 @@
       "id": "xiamen-68",
       "name": "老字号土笋冻",
       "nameEn": "老字号土笋冻 (土笋冻)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "土笋冻",
       "avgPrice": 50,
       "rating": 4.4,
@@ -2594,7 +2594,7 @@
       "id": "xiamen-70",
       "name": "正宗姜母鸭",
       "nameEn": "正宗姜母鸭 (姜母鸭)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "姜母鸭",
       "avgPrice": 36,
       "rating": 4.9,
@@ -2623,7 +2623,7 @@
       "id": "xiamen-72",
       "name": "老街土笋冻",
       "nameEn": "老街土笋冻 (土笋冻)",
-      "type": "street",
+      "type": "ร้านอาหารข้างทาง",
       "cuisine": "土笋冻",
       "avgPrice": 41,
       "rating": 4.7,
@@ -2652,7 +2652,7 @@
       "id": "xiamen-74",
       "name": "阿婆沙茶面",
       "nameEn": "阿婆沙茶面 (沙茶面)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "沙茶面",
       "avgPrice": 75,
       "rating": 4.1,
@@ -3170,122 +3170,122 @@
   "culturalTips": [
     {
       "category": "greeting",
-      "title": "Min Nan Dialect Greetings",
-      "content": "Learn a few闽南话 phrases: 'Li ho' (hello), 'Zuo zai' (thank you), 'Cheh beh' (not good). Locals appreciate the effort even if pronunciation isn't perfect.",
+      "title": "คำทักทายภาษาหมิ่นหนาน",
+      "content": "เรียนรู้ภาษามินนันไม่กี่คำ: 'Li ho' (สวัสดี), 'Zuo zai' (ขอบคุณ), 'Cheh beh' (ไม่ดี). ชาวบ้านจะชื่นชมการพยายามของคุณ แม้ว่าการออกเสียงอาจไม่สมบูรณ์",
       "importance": "medium"
     },
     {
       "category": "dining",
-      "title": "Seafood Ordering Etiquette",
-      "content": "At seafood restaurants, prices are often 'per jin' (500g). Confirm total price before ordering. Watch the scale when selecting live seafood. Don't hesitate to negotiate at wet markets.",
+      "title": "มารยาทในการสั่งอาหารทะเล",
+      "content": "ที่ร้านอาหารอาหารทะเล ราคามักจะเป็น 'ต่อจิน' (500กรัม). ยืนยันราคารวมก่อนสั่ง. เฝ้าดูตาชั่งเมื่อเลือกอาหารทะเลสด. ไม่ต้องลังเลที่จะเจรจาต่อรองที่ตลาดน้ำ",
       "importance": "high"
     },
     {
       "category": "dining",
-      "title": "Tea Culture",
-      "content": "Xiamen is famous for tea (mikong tea/功夫茶). When invited to someone's home, expect tea service. Turn the cup with both hands when receiving tea as a sign of respect.",
+      "title": "วัฒนธรรมชา",
+      "content": "เซียเมินมีชื่อเสียงในด้านชา (ชามิกง/กงฟูชา). เมื่อได้รับเชิญไปที่บ้านของใครบางคน คาดหวังการเสิร์ฟชา. เมื่อรับชาด้วยทั้งสองมือเป็นการแสดงความเคารพ",
       "importance": "high"
     },
     {
       "category": "dining",
-      "title": "Chopstick customs",
-      "content": "Don't stick chopsticks vertically in rice - it resembles incense for the dead. Don't point with chopsticks. Don't pass food directly from chopstick to chopstick.",
+      "title": "มารยาทในการใช้ตะเกียบ",
+      "content": "อย่าแทงไม้ตะเกียบในข้าวในแนวดิ่ง - มันเหมือนกับธูปสำหรับคนตาย. อย่าชี้ด้วยไม้ตะเกียบ. อย่าส่งอาหารโดยตรงจากไม้ตะเกียบไปยังไม้ตะเกียบ",
       "importance": "medium"
     },
     {
       "category": "social",
-      "title": "Gulangyu Island Courtesy",
-      "content": "Gulangyu is a residential island with many elderly residents. Keep noise levels down, especially near the piano museum and residential areas. No cars are allowed - respect the peaceful atmosphere.",
+      "title": "มารยาทบนเกาะกูลางยู",
+      "content": "เกูลังยูเป็นเกาะที่มีผู้อยู่อาศัยส่วนใหญ่เป็นผู้สูงอายุ กรุณารักษาระดับเสียงให้ต่ำ โดยเฉพาะอย่างยิ่งใกล้กับพิพิธภัณฑ์เปียโนและพื้นที่ที่มีผู้อยู่อาศัย ยานพาหนะยี่ห้อใดยี่ห้อหนึ่งไม่ได้รับอนุญาตให้เข้า - รักษาบรรยากาศที่สงบ",
       "importance": "high"
     },
     {
       "category": "social",
-      "title": "Temple Respect",
-      "content": "At Nanputuo Temple, dress modestly covering shoulders and knees. Remove sunglasses and hats when entering halls. Don't take photos where prohibited. Walk clockwise around Buddhist halls.",
+      "title": "การให้เกียรติวัด",
+      "content": "ที่วัดนานผู่ตัว ให้แต่งกายให้เรียบร้อยโดยคลุมไหล่และเข่า เมื่อเข้าพระราชวังให้ถอดแว่นกันแดดและหมวก อย่าถ่ายรูปในพื้นที่ที่ห้ามถ่ายรูป เดินในทิศทางทวนเข็มนาฬิการอบพระราชวังพุทธ",
       "importance": "high"
     },
     {
       "category": "photography",
-      "title": "Photography at Fishing Harbor",
-      "content": "At Shapowei and fishing harbors, ask before photographing fishermen or their catches. Some may ask for small payment (5-10¥) for photos of them or their boats.",
+      "title": "การถ่ายภาพที่ท่าเรือประมง",
+      "content": "ที่ชาปาเว่ยและท่าเทียบเรือประมง ให้ขออนุญาตก่อนถ่ายรูปชาวประมงหรือผลการจับปลา บางคนอาจขอเงินเล็กน้อย (5-10¥) สำหรับการถ่ายรูปของพวกเขาหรือเรือของพวกเขา",
       "importance": "low"
     },
     {
       "category": "photography",
-      "title": "Sunrise and Sunset Etiquette",
-      "content": "Popular sunrise spots (Huandao Road, Gulangyu) get crowded. Don't block others' views or set up tripods for long periods. Be mindful of passing cyclists on Huandao Road.",
+      "title": "มารยาทในการชมพระอาทิตย์ขึ้นและตก",
+      "content": "จุดชมพระอาทิตย์ขึ้นที่ได้รับความนิยม (ถนนฮวันดาว, เกาะกูหลังยู) มักจะแออัด อย่าปิดทางมุมมองของผู้อื่นหรือตั้งขาตั้งกล้องยาวนาน ระมัดระวังผู้ขับขี่จักรยานบนถนนฮวันดาว",
       "importance": "medium"
     },
     {
       "category": "shopping",
-      "title": "Bargaining in Xiamen",
-      "content": "Bargaining expected at Zhongshan Road stalls, Zengcuo'an shops, and markets. Start at 40-50% of asking price. Be friendly - it's part of the experience. Walk away if you can't agree.",
+      "title": "การต่อรองราคาในเซี่ยเหมิน",
+      "content": "การเจรจาต่อรองราคาจะคาดหวังที่ร้านตลาดถนนจงซาน, ร้านค้าที่เจิ้งฉัวอัน และตลาดต่างๆ เริ่มต้นที่ 40-50% ของราคาที่ต้องการ รักษาความสุภาพ - นี่เป็นส่วนหนึ่งของประสบการณ์ หากคุณไม่สามารถตกลงกันได้ให้เดินจากไป",
       "importance": "medium"
     },
     {
       "category": "shopping",
-      "title": "Local Products to Buy",
-      "content": "Famous Xiamen products:桂圆干 (dried longan), 金门高粱酒 (Kinmen Kaoliang wine), 闽南特产 (Minnan specialties), 茶叶 (tea), 馅饼 (pastries). Buy from reputable shops near Zhongshan Road.",
+      "title": "สินค้าท้องถิ่นที่ควรซื้อ",
+      "content": "ผลิตภัณฑ์ที่มีชื่อเสียงของเซียเมิน: โกวยวันกาน (ลองกันแห้ง), จินเมินกาวเลียงเจี้ยว (เหล้ากาวเลียงจินเมิน), สินค้าพิเศษหมินหนัน (Minnan specialties), ชา (tea), เซียวเปียง (pastries). ซื้อจากร้านที่มีชื่อเสียงใกล้ถนนจงซาน",
       "importance": "low"
     },
     {
       "category": "social",
-      "title": "Beach Culture",
-      "content": "Xiamen beaches (Hulhi Beach, Jimei Beach) can get crowded. Don't swim at unguarded beaches. Watch for jellyfish in summer. Clean up after yourself.",
+      "title": "วัฒนธรรมชายหาด",
+      "content": "ชายหาดของเซียเมิน (ชายหาดฮูหลี่, ชายหาดจีเม่ย) อาจแออัด อย่าว่ายน้ำที่ชายหาดที่ไม่มีเจ้าหน้าที่คุ้มครอง ระวังแมงกะพรุนในฤดูร้อน ระวังการทิ้งขยะตามลำพัง",
       "importance": "medium"
     },
     {
       "category": "social",
-      "title": "Respecting Elders",
-      "content": "In Minnan culture, show respect to elders by addressing them first, offering seats, and not starting eating before older people at the table.",
+      "title": "การเคารพผู้อาวุโส",
+      "content": "ในวัฒนธรรมหมินหนัน ให้แสดงความเคารพต่อผู้สูงอายุโดยการทักทายพวกเขาก่อน, ให้ที่นั่ง, และไม่เริ่มทานอาหารก่อนผู้สูงอายุที่โต๊ะ",
       "importance": "medium"
     },
     {
       "category": "photography",
-      "title": "University Etiquette",
-      "content": "When visiting Xiamen University, be respectful of students studying. Don't wander into classroom buildings. The campus is private property - follow all rules.",
+      "title": "มารยาทในมหาวิทยาลัย",
+      "content": "เมื่อเยี่ยมชมมหาวิทยาลัยเซียเมิน ให้แสดงความเคารพต่อนักศึกษาที่กำลังเรียน ไม่เดินเข้าอาคารเรียน มหาวิทยาลัยเป็นทรัพย์สินส่วนตัว - ปฏิบัติตามกฎเกณฑ์ทั้งหมด",
       "importance": "medium"
     },
     {
       "category": "shopping",
-      "title": "Market haggling",
-      "content": "At local wet markets, prices are often fixed for locals but negotiable for tourists. Start lower, meet in middle. Bring small bills. Fresh seafood markets are open early morning.",
+      "title": "การต่อรองราคาในตลาด",
+      "content": "ที่ตลาดสดท้องถิ่น ราคามักจะตายตัวสำหรับชาวท้องถิ่น แต่สามารถเจรจาต่อรองได้สำหรับนักท่องเที่ยว เริ่มต้นที่ราคา�ต่ำกว่า, พบกันในระดับกลาง พกธนบัตรเล็กๆ ตลาดสดทะเลสดเปิดตั้งแต่เช้า",
       "importance": "low"
     },
     {
       "category": "dining",
-      "title": "Tipping Culture",
-      "content": "Tipping is not expected or common in Xiamen. High-end restaurants may add service charge. Good service is considered standard - a small tip (10-20¥) for exceptional service at nice restaurants is appreciated.",
+      "title": "วัฒนธรรมการให้ทิป",
+      "content": "การให้ทิปไม่คาดหวังหรือทั่วไปในเซียเมิน ร้านอาหารระดับสูงอาจเพิ่มค่าบริการ การบริการที่ดีถือว่าเป็นมาตรฐาน - ทิปเล็กๆ (10-20¥) สำหรับบริการที่ยอดเยี่ยมที่ร้านอาหารที่ดีจะถือว่าเป็นการต้อนรับ",
       "importance": "low"
     },
     {
       "category": "social",
-      "title": "Dancing in Parks",
-      "content": "Early morning park dancing (广场舞) is popular. Don't interrupt or photograph without permission. Some groups may welcome foreigners to join.",
+      "title": "การเต้นรำในสวนสาธารณะ",
+      "content": "การเต้นรำในสวนสาธารณะ (广场舞) เป็นที่นิยมในตอนเช้าตรู่ ไม่ให้ขัดจังหวะหรือถ่ายรูปโดยไม่ได้รับอนุญาต บางกลุ่มอาจต้อนรับชาวต่างชาติให้เข้าร่วม",
       "importance": "low"
     },
     {
       "category": "dining",
-      "title": "Xiamen Snacks to Try",
-      "content": "Must-try snacks: 土笋冻 (sea worm jelly), 沙茶面 (satay noodles), 烧肉粽 (braised rice dumplings), 花生汤 (peanut soup), 馅饼 (pastries). Buy from local shops in Zhongshan Road or Zengcuo'an.",
+      "title": "ขนมขบเคี้ยวเซียนเหมินที่ต้องลอง",
+      "content": "อาหารว่างที่ต้องลอง: ทูซุนตง (เยลลี่ปลาหวาน), ซาเจาเหมี่ยน (หมี่ซาเต้), เซาโหร่วจื่อ (บะหมี่ห่อเนื้อย่าง), หวันเซิงทัง (ซุปถั่วลิสง), เซียวเปียง (pastries). ซื้อจากร้านท้องถิ่นในถนนจงซานหรือเจิ้งฉัวอัน",
       "importance": "high"
     },
     {
       "category": "social",
-      "title": "Gambling Culture",
-      "content": "Mahjong is popular social activity in Xiamen. You may hear mahjong tiles clicking in tea houses or parks. It's a social game, not gambling in the Western sense - tourists are welcome to watch or learn.",
+      "title": "วัฒนธรรมการพนัน",
+      "content": "มาจองเป็นกีฬาทางสังคมที่ได้รับความนิยมในเซียเมิน คุณอาจได้ยินเสียงกระดานมาจองกระทบกันในที่ดื่มชาและสวนสาธารณะ นี่เป็นเกมทางสังคม ไม่ใช่การพนันในความหมายตะวันตก - นักท่องเที่ยวยินดีต้อนรับที่จะมาดูหรือเรียนรู้",
       "importance": "low"
     },
     {
       "category": "shopping",
-      "title": "Taiwan Products",
-      "content": "Due to proximity to Taiwan, Xiamen has many Taiwan products: Kinmen Kaoliang wine, Taiwan pineapple cakes, dried seafood, and Taiwan-style snacks. Taiwan Commodity City (大嶝小镇) offers duty-free shopping.",
+      "title": "ผลิตภัณฑ์ไต้หวัน",
+      "content": "เนื่องจากใกล้กับไต้หวัน เซียเมินมีผลิตภัณฑ์ไต้หวันหลายประเภท: เหล้ากาวเลียงจินเมิน, เค้กสับปะรดไต้หวัน, อาหารทะเลแห้ง, และอาหารว่างแบบไต้หวัน. เมืองการค้าตามภาษี (大嶝小镇) ให้บริการการซื้อขายฟรีภาษี",
       "importance": "medium"
     },
     {
       "category": "social",
-      "title": "Teahouse Etiquette",
-      "content": "Xiamen has many traditional teahouses. When receiving tea, tap two fingers on the table as thanks - this gesture shows respect to the host. Don't pour tea for yourself first; pour for others before yourself.",
+      "title": "มารยาทในร้านน้ำชา",
+      "content": "เซียเมินมีที่ดื่มชาดั้งเดิมหลายแห่ง เมื่อรับชา ให้เคาะสองนิ้วที่โต๊ะเพื่อแสดงความขอบคุณ - การกระทำนี้แสดงความเคารพต่อเจ้าบ้าน ไม่ให้เทชาก่อนตัวเอง; เทชาก่อนผู้อื่นก่อนตัวเอง",
       "importance": "medium"
     }
   ],
@@ -3293,171 +3293,171 @@
     {
       "type": "ambulance",
       "name": "厦门急救中心",
-      "nameEn": "Xiamen Emergency Center",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "120",
-      "address": "Various locations citywide",
-      "notes": "English operators may be limited. Ask for 'ying yu' (English) operator."
+      "address": "กว่างโจว",
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "police",
       "name": "厦门市公安局",
-      "nameEn": "Xiamen Public Security Bureau",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "110",
-      "address": "Xiamen City Center",
-      "notes": "Tourist police stations at major attractions and Gulangyu Ferry Terminal"
+      "address": "กว่างโจว",
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "fire",
       "name": "厦门消防",
-      "nameEn": "Xiamen Fire Brigade",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "119",
-      "address": "Various stations citywide",
-      "notes": "Also handles rescue operations and accidents"
+      "address": "กว่างโจว",
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "hospital",
       "name": "厦门大学附属第一医院",
-      "nameEn": "The First Affiliated Hospital of Xiamen University",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 592 213 2222",
-      "address": "55 Zhenhai Road, Siming District",
+      "address": "กว่างโจว",
       "coordinates": {
         "lat": 24.4592,
         "lng": 118.0885
       },
-      "notes": "Large public hospital, 24-hour emergency. English interpretation available."
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "hospital",
       "name": "厦门市中医院",
-      "nameEn": "Xiamen Traditional Chinese Medicine Hospital",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 592 202 5209",
-      "address": "16 Jiahe Road, Siming District",
+      "address": "กว่างโจว",
       "coordinates": {
         "lat": 24.4615,
         "lng": 118.0915
       },
-      "notes": "Good for traditional Chinese medicine treatments. Emergency services available."
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "hospital",
       "name": "厦门长庚医院",
-      "nameEn": "Xiamen Chang Gung Hospital",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 592 620 3456",
-      "address": "123 Changle Road, Haicang District",
+      "address": "กว่างโจว",
       "coordinates": {
         "lat": 24.4525,
         "lng": 118.0385
       },
-      "notes": "Taiwanese-run hospital, English-speaking staff, accepts international insurance"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "embassy",
       "name": "新加坡驻厦门总领事馆",
-      "nameEn": "Consulate-General of Singapore in Xiamen",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 592 268 8691",
-      "address": "Xiamen Center, 95 Lujiang Road",
+      "address": "กว่างโจว",
       "coordinates": {
         "lat": 24.4555,
         "lng": 118.0795
       },
-      "notes": "For Singapore citizens only. Check hours before visiting."
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "embassy",
       "name": "马来西亚驻厦门总领事馆",
-      "nameEn": "Consulate-General of Malaysia in Xiamen",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 592 202 7984",
-      "address": "Xiamen International Bank Building, 50 Lujiang Road",
+      "address": "กว่างโจว",
       "coordinates": {
         "lat": 24.4558,
         "lng": 118.0785
       },
-      "notes": "For Malaysian citizens. Monday-Friday 09:00-12:00, 14:00-17:00."
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "police",
       "name": "厦门出入境管理局",
-      "nameEn": "Xiamen Exit-Entry Administration",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 592 202 2020",
-      "address": "28-32 Hubin North Road, Siming District",
+      "address": "กว่างโจว",
       "coordinates": {
         "lat": 24.4552,
         "lng": 118.0985
       },
-      "notes": "For visa extensions, passport issues, and residency permits"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "hospital",
       "name": "厦门大学医院",
-      "nameEn": "Xiamen University Hospital",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 592 218 0120",
-      "address": "422 Siming South Road, Siming District",
+      "address": "กว่างโจว",
       "coordinates": {
         "lat": 24.4345,
         "lng": 118.1025
       },
-      "notes": "On XMU campus, good for minor ailments and health checks"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "hospital",
       "name": "厦门眼科中心",
-      "nameEn": "Xiamen Eye Center",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 592 210 9898",
-      "address": "336 Xiahe Road, Siming District",
+      "address": "กว่างโจว",
       "coordinates": {
         "lat": 24.4522,
         "lng": 118.0912
       },
-      "notes": "Specialized eye hospital, 24-hour emergency for eye injuries"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "tourist-complaint",
       "name": "厦门旅游投诉热线",
-      "nameEn": "Xiamen Tourism Complaint Hotline",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "12345",
-      "address": "Citywide",
-      "notes": "Report travel scams, price disputes, or service issues"
+      "address": "กว่างโจว",
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "coast-guard",
       "name": "厦门海上搜救中心",
-      "nameEn": "Xiamen Maritime Rescue Center",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "12395",
-      "address": "Xiamen Port",
-      "notes": "For maritime emergencies, drowning, or boat accidents"
+      "address": "กว่างโจว",
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "tourist-police",
       "name": "厦门旅游警察",
-      "nameEn": "Xiamen Tourist Police",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 592 202 2020",
-      "address": "Near major attractions",
+      "address": "กว่างโจว",
       "coordinates": {
         "lat": 24.4455,
         "lng": 118.0719
       },
-      "notes": "Tourist police station at Gulangyu Ferry Terminal"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "foreign-affairs",
       "name": "厦门市人民政府外事办公室",
-      "nameEn": "Xiamen Foreign Affairs Office",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 592 285 8888",
-      "address": "11 Xiamen Government Building",
+      "address": "กว่างโจว",
       "coordinates": {
         "lat": 24.4582,
         "lng": 118.0865
       },
-      "notes": "Assistance for foreign nationals in Xiamen"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese (Simplified), Minnan dialect widely spoken",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa (L-tourist, M-business, V-entry). 72-hour transit visa available for some nationalities at XMN.",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs (same as US/Japan two-pin or China three-pin)",
-    "water": "Tap water not recommended for drinking. Bottled water widely available (2-5¥).",
-    "bestTimeToVisit": "March-May for flowers, October-November for weather, avoid July-September for typhoons"
+    "language": "ภาษาจีน (แมนดาริน)",
+    "currency": "หยวนจีน (CNY/RMB)",
+    "visa": "ส่วนใหญ่ต้องมีวีซ่า นักเดินทางที่มีคุณสมบัติสามารถขอวีซ่าแวนผ่าน 72 ชั่วโมงที่สนามบิน",
+    "timeZone": "UTC+8 (เวลามาตรฐานจีน)",
+    "electricity": "220V/50Hz, ปลั๊กประเภท A/I",
+    "water": "น้ำประปาดื่มได้ แต่แนะนำให้ดื่มน้ำขวด",
+    "bestTimeToVisit": "มีนาคม-พฤษภาคมสำหรับดอกไม้, ตุลาคม-พฤศจิกายนสำหรับอากาศ, หลีกเลี่ยงกรกฎาคม-กันยายนเพราะพายุไต้ฝุ่น"
   }
 }

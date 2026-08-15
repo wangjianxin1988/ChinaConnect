@@ -1,63 +1,63 @@
 {
   "slug": "dali",
   "name": "大理",
-  "nameEn": "Dali",
+  "nameEn": "大理",
   "country": "China",
   "population": "720,000",
   "coordinates": {
     "lat": 25.6069,
     "lng": 100.2676
   },
-  "timezone": "UTC+8 (China Standard Time)",
-  "description": "Dali is a picturesque town in Yunnan province, set against the dramatic backdrop of Cangshan Mountains and beside the crystal-clear Erhai Lake. Home to the Bai ethnic minority with 1,000 years of history. Known for cobblestone streets, traditional Bai architecture, and vibrant local culture. A laid-back atmosphere perfect for cycling, hiking, and cultural immersion.",
+  "timezone": "UTC+8（中国標準時）",
+  "description": "大理は雲南省の絵のように美しい町で、雄大な蒼山を背に、透き通った洱海のほとりに位置しています。1000年の歴史を持つ白族の故郷であり、石畳の道、伝統的な白族建築、活気ある地元文化で知られています。サイクリング、ハイキング、文化体験に最適な落ち着いた雰囲気です。",
   "coverImage": "/img/ext/4e2e5e513a4d.webp",
   "highlights": [
-    "Erhai Lake - Scenic cycling and views",
-    "Three Pagodas of Dali - Buddhist temples",
-    "Dali Old Town - Traditional Bai architecture",
-    "Xizhou Market - Local Bai culture",
-    "Shuanglang - Lakeside photography"
+    "洱海 - 景色サイクリングと眺望",
+    "大理三塔 - 佛教寺院",
+    "大理古城 - 伝統的なバイ族建築",
+    "喜洲マーケット - 現地のバイ族文化",
+    "双廊 - 湖畔写真"
   ],
   "climate": {
-    "type": "Subtropical highland",
+    "type": "亜熱帯高地気候",
     "bestMonths": [
-      "March",
-      "April",
-      "May",
-      "September",
-      "October"
+      "3月",
+      "4月",
+      "5月",
+      "9月",
+      "10月"
     ],
     "avgSummerTemp": "18-25C (64-77F)",
     "avgWinterTemp": "8-15C (46-59F)",
-    "tips": "Spring (March-May) is flower season with mild weather. Autumn (Sept-Oct) has clear skies and comfortable temps. Summer is rainy but green. Winter is dry and sunny but cold. Bring layers - temperature swings daily."
+    "tips": "春（3月〜5月）は花の季節で、気候は穏やかです。秋（9月〜10月）は空が澄み、過ごしやすい気温です。夏は雨が多いですが緑が美しいです。冬は乾燥して晴れますが寒いです。重ね着を用意してください。気温の変化が毎日あります。"
   },
   "restaurants": [
     {
       "id": "dali-1",
       "name": "三塔寺素斋",
-      "nameEn": "Three Pagodas Vegetarian Restaurant",
-      "type": "local",
-      "cuisine": "Buddhist Vegetarian",
+      "nameEn": "三塔精進料理レストラン",
+      "type": "ローカル",
+      "cuisine": "精進料理",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "Near Three Pagodas entrance",
+      "address": "三塔入口近く",
       "coordinates": {
         "lat": 25.6722,
         "lng": 100.1572
       },
       "hours": "08:00-18:00",
-      "description": "Simple vegetarian restaurant near the pagodas serving Buddhist-style meat substitutes and local vegetables.",
+      "description": "塔近くのシンプルな精進料理店で、肉の代用品と地元の野菜を使用した料理を提供しています。",
       "dishHighlights": [
-        "Vegetarian chicken",
-        "Bamboo shoot dishes",
-        "Mountain vegetables",
-        "Rice porridge"
+        "ヴィーチャイケン（精進チキン）",
+        "竹の子料理",
+        "山菜",
+        "おかゆ"
       ],
       "tags": [
-        "local",
-        "vegetarian",
-        "buddhist",
-        "budget"
+        "地元",
+        "ベジタリアン",
+        "精進",
+        "格安"
       ],
       "star": 0,
       "diamond": 0,
@@ -66,29 +66,29 @@
     },
     {
       "id": "dali-2",
-      "name": "古城第一凉鸡米线",
-      "nameEn": "Dali First Cold Chicken Rice Noodles",
-      "type": "local",
-      "cuisine": "Bai Specialty",
+      "name": "古城第一涼鶏米線（涼しげな鶏肉入り米線）",
+      "nameEn": "大理第一名涼鶏米線",
+      "type": "ローカル",
+      "cuisine": "白族特色料理",
       "avgPrice": 25,
       "rating": 4.8,
-      "address": "Fuxing Road, Dali Old Town",
+      "address": "大理古城復興路",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "07:00-19:00",
-      "description": "Legendary local spot famous for cold chicken rice noodles - a Dali specialty with tangy sauce and fresh ingredients.",
+      "description": "伝説的な地元で有名なスポット。大理の特産である酸っぱいタレと新鮮な食材を使用した冷やし鶏米ヌードルが有名です。",
       "dishHighlights": [
-        "Cold chicken rice noodles",
-        "Pickled vegetables",
-        "Bai style sauce"
+        "冷やし鶏米ヌードル",
+        "漬物",
+        "バイ族風ソース"
       ],
       "tags": [
-        "local",
-        "bai-cuisine",
-        "famous",
-        "budget"
+        "地元",
+        "バイ料理",
+        "有名",
+        "予算やすい"
       ],
       "star": 0,
       "diamond": 0,
@@ -98,29 +98,29 @@
     {
       "id": "dali-3",
       "name": "苍山道素食",
-      "nameEn": "Cangshan Dao Vegetarian",
-      "type": "local",
-      "cuisine": "Vegetarian",
+      "nameEn": "蒼山道精進料理",
+      "type": "ローカル",
+      "cuisine": "ベジタリアン",
       "avgPrice": 60,
       "rating": 4.6,
-      "address": "Yeyou Road, near Dali Old Town",
+      "address": "夜游路、大理古城近く",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
       },
       "hours": "10:00-21:00",
-      "description": "Cozy vegetarian restaurant with organic ingredients, creative dishes, and peaceful atmosphere near the old town.",
+      "description": "有機食材、創作料理、古城近くの落ち着いた雰囲気を備えた居心地の良いベジタリアンレストラン。",
       "dishHighlights": [
-        "Mock meat dishes",
-        "Forest mushrooms",
-        "Herbal teas",
-        "Home-style cooking"
+        "模擬肉料理",
+        "森茸",
+        "漢茶",
+        "家庭料理"
       ],
       "tags": [
-        "local",
-        "vegetarian",
-        "organic",
-        "healthy"
+        "地元",
+        "ベジタリアン",
+        "有機",
+        "健康"
       ],
       "star": 0,
       "diamond": 0,
@@ -130,30 +130,30 @@
     {
       "id": "dali-4",
       "name": "双廊海韵",
-      "nameEn": "Shuanglang Sea Melody",
-      "type": "local",
-      "cuisine": "Yunnan/Seafood",
+      "nameEn": "双廊・シーンメロディ",
+      "type": "ローカル",
+      "cuisine": "雲南料理/海鮮",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "Shuanglang waterfront",
+      "address": "双廊ウォーターフロント",
       "coordinates": {
         "lat": 25.8822,
         "lng": 100.1572
       },
       "phone": "+86 872 246 8888",
       "hours": "10:00-22:00",
-      "description": "Lakeside restaurant with Erhai views, serving fresh fish from the lake and Yunnan specialties.",
+      "description": "洱海を望む湖畔のレストランで、新鮮な湖魚と雲南料理をご提供いたします。",
       "dishHighlights": [
-        "Erhai lake fish",
-        "Bai style pork",
-        "Wild mushrooms",
-        "Lake views"
+        "洱海の湖魚",
+        "バイ族風豚肉",
+        "山菜茸",
+        "湖の眺望"
       ],
       "tags": [
-        "local",
-        "scenic",
-        "seafood",
-        "yunnan'style"
+        "地元の",
+        "景色の良い",
+        "シーフード",
+        "雲南スタイル"
       ],
       "star": 0,
       "diamond": 0,
@@ -162,28 +162,28 @@
     {
       "id": "dali-5",
       "name": "永祥火把腿",
-      "nameEn": "Yongxiang Ham Leg",
-      "type": "local",
-      "cuisine": "Yunnan Specialty",
+      "nameEn": "永祥ハムレッグ",
+      "type": "ローカル",
+      "cuisine": "雲南料理",
       "avgPrice": 40,
       "rating": 4.7,
-      "address": "Fuxing Road, Dali Old Town",
+      "address": "大理古城復興路",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "08:00-20:00",
-      "description": "Famous for Yunnan ham and leg meat, a local specialty snack perfect for quick lunch or snack.",
+      "description": "雲南ハムと腿肉で知られる地元の特産スパイシーで、軽いランチやスナックに最適です。",
       "dishHighlights": [
-        "Smoked ham leg",
-        "Bai sausage",
-        "Grilled meat skewers"
+        "スモークハムレッグ",
+        "バイソーセージ",
+        "焼き肉串"
       ],
       "tags": [
-        "local",
-        "specialty",
-        "snacks",
-        "budget"
+        "地元の",
+        "特産",
+        "軽食",
+        "予算"
       ],
       "star": 0,
       "diamond": 0,
@@ -192,30 +192,30 @@
     },
     {
       "id": "dali-6",
-      "name": "大理古城咖啡馆",
-      "nameEn": "Dali Old Town Cafe",
-      "type": "local",
-      "cuisine": "Western/Yunnan Fusion",
+      "name": "大理古城カフェ",
+      "nameEn": "大理古城カフェ",
+      "type": "ローカル",
+      "cuisine": "西洋・雲南フュージョン",
       "avgPrice": 50,
       "rating": 4.4,
-      "address": "Foreigners Street, Dali Old Town",
+      "address": "大理古城外人街",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "08:00-23:00",
-      "description": "Lively cafe in the old town serving Yunnan coffee, Western breakfasts, and fusion dishes popular with expats.",
+      "description": "古城にある活気のあるカフェで、雲南コーヒーや西洋朝食、駐在員に人気のフュージョン料理を提供します。",
       "dishHighlights": [
-        "Yunnan coffee",
-        "Pancakes",
-        "Muesli breakfast",
-        "Fresh fruit shakes"
+        "雲南コーヒー",
+        "パンケーキ",
+        "ミューズリーブレックファースト",
+        "フレッシュフルーツシェイク"
       ],
       "tags": [
-        "local",
-        "cafe",
-        "western",
-        "cozy"
+        "地元",
+        "カフェ",
+        "西洋",
+        "居心地が良い"
       ],
       "star": 0,
       "diamond": 0,
@@ -225,28 +225,28 @@
     {
       "id": "dali-7",
       "name": "喜洲破酥粑粑",
-      "nameEn": "Xizhou Baba",
-      "type": "local",
-      "cuisine": "Bai Street Food",
+      "nameEn": "西州ババ",
+      "type": "ローカル",
+      "cuisine": "白族ストリートフード",
       "avgPrice": 15,
       "rating": 4.8,
-      "address": "Xizhou Old Town",
+      "address": "西州古城",
       "coordinates": {
         "lat": 25.7622,
         "lng": 100.1272
       },
       "hours": "07:00-18:00",
-      "description": "Famous street food - crispy Baba flatbread with sweet or savory fillings, a Bai specialty.",
+      "description": "有名なストリートフード - カリカリのババ蒸しパンに甘じょっぱ具材、白族の特産品。",
       "dishHighlights": [
-        "Sweet Baba (玫瑰糖)",
-        "Savory Baba (鲜肉)",
-        "Egg Baba"
+        "甘ババ（玫瑰糖）",
+        "塩味ババ（鮮肉）",
+        "卵ババ"
       ],
       "tags": [
-        "local",
-        "street-food",
-        "bai",
-        "must-try"
+        "ローカル",
+        "ストリートフード",
+        "白族",
+        "必食"
       ],
       "star": 0,
       "diamond": 0,
@@ -255,30 +255,30 @@
     },
     {
       "id": "dali-8",
-      "name": "花与餐厅",
-      "nameEn": "Flower and Restaurant",
-      "type": "local",
-      "cuisine": "Yunnan Fusion",
+      "name": "花とレストラン",
+      "nameEn": "花とレストラン",
+      "type": "ローカル",
+      "cuisine": "雲南フュージョン",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Erhai area, near Shuanglang",
+      "address": "洱海エリア、双廊近く",
       "coordinates": {
         "lat": 25.8522,
         "lng": 100.1572
       },
       "hours": "10:00-22:00",
-      "description": "Romantic garden restaurant with Erhai views, serving creative Yunnan cuisine with fresh local ingredients.",
+      "description": "エアイ湖の眺望を持つロマンチックな庭園レストランで、新鮮な地元食材を使った創作雲南料理を提供します。",
       "dishHighlights": [
-        "Bai style fish",
-        "Truffle dishes",
-        "Organic vegetables",
-        "Lake view dining"
+        "白族風魚",
+        "トリュフ料理",
+        "有機野菜",
+        "湖の眺めを楽しむダイニング"
       ],
       "tags": [
-        "local",
-        "scenic",
-        "romantic",
-        "yunnan'style"
+        "地元",
+        "景勝地",
+        "ロマンチック",
+        "雲南スタイル"
       ],
       "star": 0,
       "diamond": 0,
@@ -287,30 +287,30 @@
     },
     {
       "id": "dali-9",
-      "name": "白族菜馆",
-      "nameEn": "Bai Cuisine Restaurant",
-      "type": "local",
-      "cuisine": "Bai Specialty",
+      "name": "白族料理店",
+      "nameEn": "白族料理レストラン",
+      "type": "ローカル",
+      "cuisine": "白族の特産料理",
       "avgPrice": 60,
       "rating": 4.6,
-      "address": "Yeyou Road, Dali Old Town",
+      "address": "大理古城葉小路",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "10:00-22:00",
-      "description": "Authentic Bai cuisine restaurant serving traditional dishes like Bender (Bai cold chicken), Rushan cheese, and Sai ao (rice noodle rolls).",
+      "description": "伝統的な白族料理を提供する本格的白族料理レストラン。ベンダー（白族冷やし鶏）、ルーサンチーズ、サイアオ（米麺ロール）などの伝統料理があります。",
       "dishHighlights": [
-        "Bender (cold chicken)",
-        "Rushan cheese",
-        "Sai ao",
-        "Bai style pork"
+        "ベンダー（冷製チキン）",
+        "ルーシャンチーズ",
+        "サイアオ",
+        "バイ族風豚肉"
       ],
       "tags": [
-        "local",
-        "bai-cuisine",
-        "traditional",
-        "famous"
+        "地元",
+        "バイ料理",
+        "伝統的",
+        "有名"
       ],
       "star": 0,
       "diamond": 0,
@@ -319,30 +319,30 @@
     },
     {
       "id": "dali-10",
-      "name": "饵丝飘香",
-      "nameEn": "Ersi Delight",
-      "type": "local",
-      "cuisine": "Bai Specialty",
+      "name": "餌絲飄香（アルシーの香り）",
+      "nameEn": "エルシー・デライト",
+      "type": "ローカル",
+      "cuisine": "バイ料理",
       "avgPrice": 20,
       "rating": 4.7,
-      "address": "Fuxing Road, Dali Old Town",
+      "address": "大理古城復興路",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "07:00-19:00",
-      "description": "Famous local spot for Ersi (rice noodle strips) in savory soup, a Dali breakfast staple.",
+      "description": "地元で有名なエアルシー（米の麺）提供している朝食専門店で、大理の朝食として欠かせない存在です。",
       "dishHighlights": [
-        "Beef ersi",
-        "Pork ersi",
-        "Pickled vegetables",
-        "Bai style broth"
+        "牛肉エアルシー",
+        "豚肉エアルシー",
+        "漬物",
+        "白族風ブイヨン"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "bai-cuisine",
-        "budget"
+        "地元",
+        "朝食",
+        "白族料理",
+        "お手頃"
       ],
       "star": 0,
       "diamond": 0,
@@ -351,30 +351,30 @@
     },
     {
       "id": "dali-11",
-      "name": "酸菜鱼庄",
-      "nameEn": "Sour Cabbage Fish Restaurant",
-      "type": "local",
-      "cuisine": "Yunnan Specialty",
+      "name": "酸菜魚荘",
+      "nameEn": "酸白菜魚レストラン",
+      "type": "ローカル",
+      "cuisine": "雲南料理",
       "avgPrice": 70,
       "rating": 4.5,
-      "address": "Erhai Lake area, near Caicun",
+      "address": "洱海エリア、蔡村近く",
       "coordinates": {
         "lat": 25.7222,
         "lng": 100.1672
       },
       "hours": "10:00-21:00",
-      "description": "Popular restaurant specializing in sour cabbage fish hotpot made with fresh Erhai Lake fish and homemade pickled cabbage.",
+      "description": "洱海の新鮮な魚と自家製漬白菜を使用した酸白菜魚鍋で人気のレストラン",
       "dishHighlights": [
-        "Sour cabbage fish",
-        "Fish hotpot",
-        "Fresh lake fish",
-        "Spicy dipping sauce"
+        "酸白菜魚",
+        "魚鍋",
+        "新鮮な湖魚",
+        "辛いディップソース"
       ],
       "tags": [
-        "local",
-        "seafood",
-        "hotpot",
-        "yunnan'style"
+        "地元",
+        "魚介類",
+        "火鍋",
+        "雲南スタイル"
       ],
       "star": 0,
       "diamond": 0,
@@ -384,29 +384,29 @@
     {
       "id": "dali-12",
       "name": "乳扇烧烤摊",
-      "nameEn": "Rushan BBQ Stall",
-      "type": "street",
-      "cuisine": "Bai Street Food",
+      "nameEn": "ルーシャンバーキュー屋台",
+      "type": "ストリート",
+      "cuisine": "ベージ族ストリートフード",
       "avgPrice": 15,
       "rating": 4.6,
-      "address": "Foreigners Street, Dali Old Town",
+      "address": "大理古城外国人通り",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "17:00-23:00",
-      "description": "Famous street food stall serving grilled Rushan (Bai milk cheese) skewers, a must-try Dali snack.",
+      "description": "大理の名物ストリートフードとして知られるルーシャン（ベージ族の牛乳チーズ）の串焼きを提供する屋台。大理のおすすめスナック。",
       "dishHighlights": [
-        "Grilled Rushan",
-        "Sweet version",
-        "Savory version",
-        "Rose syrup Rushan"
+        "焼きルーシャン",
+        "甘口",
+        "塩味",
+        "玫瑰ソースールーシャン"
       ],
       "tags": [
-        "street-food",
-        "bai",
-        "snacks",
-        "must-try"
+        "ストリートフード",
+        "ベージ族",
+        "軽食",
+        "必食"
       ],
       "star": 0,
       "diamond": 0,
@@ -415,30 +415,30 @@
     },
     {
       "id": "dali-13",
-      "name": "鲜花饼总店",
-      "nameEn": "Flower Cake Headquarters",
-      "type": "local",
-      "cuisine": "Yunnan Pastry",
+      "name": "鮮花餅本店",
+      "nameEn": "花餅本店",
+      "type": "ローカル",
+      "cuisine": "雲南果子",
       "avgPrice": 30,
       "rating": 4.8,
-      "address": "Fuxing Road, Dali Old Town",
+      "address": "大理古城復興路",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "08:00-20:00",
-      "description": "Famous bakery specializing in flower cakes - delicate pastries filled with fresh rose and other edible flowers.",
+      "description": "新鮮なバラや食用花を使用した繊細なペイストリーで知られる花ケーキ専門ベーカリー。",
       "dishHighlights": [
-        "Rose flower cake",
-        "Lavender cake",
-        "Osmanthus cake",
-        "Gift boxes"
+        "バラの花餅",
+        "ラベンダーケーキ",
+        "キンモクセイケーキ",
+        "ギフトボックス"
       ],
       "tags": [
-        "local",
-        "pastry",
-        "souvenir",
-        "famous"
+        "地元",
+        "点心",
+        "お土産",
+        "有名"
       ],
       "star": 0,
       "diamond": 0,
@@ -447,30 +447,30 @@
     },
     {
       "id": "dali-14",
-      "name": "米凉虾小馆",
-      "nameEn": "Mi Liangxia Shop",
-      "type": "street",
-      "cuisine": "Bai Dessert",
+      "name": "米涼蝦小館",
+      "nameEn": "米良峡商店",
+      "type": "ストリート",
+      "cuisine": "バイ族デザート",
       "avgPrice": 10,
       "rating": 4.5,
-      "address": "Dali Old Town alley",
+      "address": "大理古城的路地",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "10:00-18:00",
-      "description": "Local dessert shop serving Mi Liangxia - shrimp-shaped rice jelly in sweet osmanthus syrup, a Dali specialty.",
+      "description": "地元のデザートショップ。ミリアンシャというエビの形をした米粉ジェリーを甘いキンモクセイシロップで提供する、大理の名物デザートです。",
       "dishHighlights": [
-        "Mi Liangxia",
-        "Sweet osmanthus syrup",
-        "Red sugar version",
-        "Ice cold version"
+        "ミリアンシャ",
+        "甘いキンモクセイシロップ",
+        "黒糖バージョン",
+        "アイス、冷たいバージョン"
       ],
       "tags": [
-        "street-food",
-        "dessert",
-        "bai",
-        "budget"
+        "屋台料理",
+        "デザート",
+        "白族",
+        "予算"
       ],
       "star": 0,
       "diamond": 0,
@@ -479,30 +479,30 @@
     },
     {
       "id": "dali-15",
-      "name": "野生菌火锅",
-      "nameEn": "Wild Mushroom Hotpot",
-      "type": "local",
-      "cuisine": "Yunnan Specialty",
+      "name": "野生菌火鍋",
+      "nameEn": "きのこ鍋",
+      "type": "ローカル",
+      "cuisine": "雲南料理",
       "avgPrice": 120,
       "rating": 4.7,
-      "address": "Dali City, near old town",
+      "address": "大理市、旧市街近く",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
       },
       "hours": "11:00-22:00",
-      "description": "Premium hotpot restaurant featuring fresh wild mushrooms from Yunnan mountains, served in nourishing broth.",
+      "description": "雲南山の新鮮な野生きのこを栄養満点のダシで提供するプレミアム鍋レストラン",
       "dishHighlights": [
-        "Matsutake mushroom",
-        "Chicken thigh mushroom",
-        "Bolete mushroom",
-        "Wild herb dipping sauce"
+        "松茸",
+        "鶏もも肉",
+        "ポルチーニ茸",
+        "山菜ディップソース"
       ],
       "tags": [
-        "local",
-        "hotpot",
-        "premium",
-        "yunnan'style"
+        "地元",
+        "鍋",
+        "プレミアム",
+        "雲南スタイル"
       ],
       "star": 0,
       "diamond": 0,
@@ -511,30 +511,30 @@
     },
     {
       "id": "dali-16",
-      "name": "洱海鱼村",
-      "nameEn": "Erhai Fish Village",
-      "type": "local",
-      "cuisine": "Yunnan/Seafood",
+      "name": "洱海魚村",
+      "nameEn": "洱海魚村",
+      "type": "ローカル",
+      "cuisine": "雲南・海鮮",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Caicun Village, Erhai Lake",
+      "address": "洱海湖畔の蔡村",
       "coordinates": {
         "lat": 25.7222,
         "lng": 100.1672
       },
       "hours": "10:00-21:00",
-      "description": "Riverside restaurant in fishing village serving fresh Erhai Lake fish prepared in various styles.",
+      "description": "湖畔の漁村にあるレストランで、新鮮な洱海の魚を様々な調理法で提供します。",
       "dishHighlights": [
-        "Braised Erhai fish",
-        "Fish soup",
-        "Steamed fish",
-        "Lake shrimp"
+        "煮詰めた洱海魚",
+        "魚スープ",
+        "蒸し魚",
+        "湖のエビ"
       ],
       "tags": [
-        "local",
-        "seafood",
-        "scenic",
-        "fresh"
+        "ローカル",
+        "海鮮",
+        "景勝地",
+        "新鮮"
       ],
       "star": 0,
       "diamond": 0,
@@ -543,30 +543,30 @@
     },
     {
       "id": "dali-17",
-      "name": "白族三道茶茶馆",
-      "nameEn": "Bai Three Tea House",
-      "type": "local",
-      "cuisine": "Tea House",
+      "name": "白族三道茶茶館",
+      "nameEn": "白族三茶屋",
+      "type": "ローカル",
+      "cuisine": "茶屋",
       "avgPrice": 50,
       "rating": 4.6,
-      "address": "Xizhou Ancient Town",
+      "address": "喜洲古鎮",
       "coordinates": {
         "lat": 25.7622,
         "lng": 100.1272
       },
       "hours": "09:00-18:00",
-      "description": "Traditional tea house offering authentic Bai Three Tea Ceremony - bitter tea, sweet tea, and aftertaste tea.",
+      "description": "伝統的な茶館で本格的な白族三道茶の儀式を提供しています - 苦茶、甘茶、回味茶。",
       "dishHighlights": [
-        "Bitter tea",
-        "Sweet tea",
-        "Aftertaste tea",
-        "Bai tea ceremony"
+        "苦茶",
+        "甘茶",
+        "回味茶",
+        "白茶儀式"
       ],
       "tags": [
-        "local",
-        "tea",
-        "cultural",
-        "bai-culture"
+        "ローカル",
+        "茶",
+        "文化",
+        "白族文化"
       ],
       "star": 0,
       "diamond": 0,
@@ -575,30 +575,30 @@
     },
     {
       "id": "dali-18",
-      "name": "青梅酒铺",
-      "nameEn": "Plum Wine Shop",
-      "type": "local",
-      "cuisine": "Bai Bar",
+      "name": "青梅酒舗",
+      "nameEn": "プラムワインショップ",
+      "type": "ローカル",
+      "cuisine": "白酒バー",
       "avgPrice": 40,
       "rating": 4.5,
-      "address": "Foreigners Street, Dali Old Town",
+      "address": "大理古城外国人通り",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "14:00-24:00",
-      "description": "Cozy bar specializing in local plum wine and fruit wines made from Yunnan's fresh fruits.",
+      "description": "地元の大理プラムワインと雲南の新鮮な果物を使ったフルーツワインを専門とする居心地の良いバー。",
       "dishHighlights": [
-        "Plum wine",
-        "Raspberry wine",
-        "Rose wine",
-        "Local craft beer"
+        "プラムワイン",
+        "ラズベリー酒",
+        "ロゼワイン",
+        "地ビール"
       ],
       "tags": [
-        "local",
-        "bar",
-        "wine",
-        "cozy"
+        "ローカル",
+        "バー",
+        "ワイン",
+        "居心地良好"
       ],
       "star": 0,
       "diamond": 0,
@@ -608,29 +608,29 @@
     {
       "id": "dali-19",
       "name": "当地烧烤一条街",
-      "nameEn": "Local BBQ Street",
-      "type": "street",
-      "cuisine": "BBQ",
+      "nameEn": "ローカルバーベキューストリート",
+      "type": "ストリート",
+      "cuisine": "バーベキュー",
       "avgPrice": 40,
       "rating": 4.4,
-      "address": "Dali Old Town, south gate area",
+      "address": "大理旧市街、南門エリア",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "18:00-02:00",
-      "description": "Famous BBQ street with multiple stalls serving Yunnan-style grilled meat, mushrooms, and vegetables.",
+      "description": "有名なバーベキューストリートで、複数の屋台が雲南風のグリル肉、キノコ、野菜を提供しています。",
       "dishHighlights": [
-        "Grilled lamb skewers",
-        "Mushroom BBQ",
-        "Eggplant with garlic",
-        "Yunnan sausage"
+        "ラム肉の串焼き",
+        "キノコのバーベキュー",
+        "ニンニク風味のナス",
+        "雲南ソーセージ"
       ],
       "tags": [
-        "street-food",
-        "bbq",
-        "nightlife",
-        "local"
+        "屋台料理",
+        "焼肉",
+        "ナイトライフ",
+        "ローカル"
       ],
       "star": 0,
       "diamond": 0,
@@ -640,29 +640,29 @@
     {
       "id": "dali-20",
       "name": "巍山一根面",
-      "nameEn": "Weishan Single Noodle",
-      "type": "local",
-      "cuisine": "Yunnan Noodles",
+      "nameEn": "巍山単一麺",
+      "type": "ローカル",
+      "cuisine": "雲南麺料理",
       "avgPrice": 25,
       "rating": 4.8,
-      "address": "Weishan Ancient Town",
+      "address": "巍山古城",
       "coordinates": {
         "lat": 25.2322,
         "lng": 100.3072
       },
       "hours": "07:00-14:00",
-      "description": "Legendary noodle shop famous for One Strand Noodles - a single kilometer-long noodle served in one bowl.",
+      "description": "伝説的な麺店で、一本の麺が特徴。一つのボウルに1キロメートルもの長さの一本の麺が提供される。",
       "dishHighlights": [
-        "One strand noodle",
-        "Hot and sour broth",
-        "Braised pork topping",
-        "Hand-pulled noodles"
+        "一本素麺",
+        "酸辣スープ",
+        "煮豚トッピング",
+        "手伸ばしラーメン"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "famous",
-        "must-try"
+        "地元",
+        "ラーメン",
+        "有名",
+        "必食"
       ],
       "star": 0,
       "diamond": 0,
@@ -672,29 +672,29 @@
     {
       "id": "dali-21",
       "name": "白族特色凉拌菜",
-      "nameEn": "Bai Cold Salad",
-      "type": "local",
-      "cuisine": "Bai Specialty",
+      "nameEn": "ペイ冷やしサラダ",
+      "type": "ローカル",
+      "cuisine": "ペイ料理",
       "avgPrice": 35,
       "rating": 4.5,
-      "address": "Xizhou Market",
+      "address": "西洲市場",
       "coordinates": {
         "lat": 25.7622,
         "lng": 100.1272
       },
       "hours": "08:00-18:00",
-      "description": "Local specialty shop at Xizhou market serving various Bai-style cold salads with fresh vegetables and herbs.",
+      "description": "西洲市場の地元特産店で、新鮮な野菜と薬草を使った様々なペイスタイルの冷やしサラダを提供しています。",
       "dishHighlights": [
-        "Cold radish salad",
-        "Bai style potato salad",
-        "Pickled cucumber",
-        "Herb salad"
+        "冷やし大根サラダ",
+        "ペイ風ポテトサラダ",
+        "酢漬けきゅうり",
+        "ハーブサラダ"
       ],
       "tags": [
-        "local",
-        "vegetarian",
-        "market",
-        "healthy"
+        "ローカル",
+        "ベジタリアン",
+        "マーケット",
+        "健康志向"
       ],
       "star": 0,
       "diamond": 0,
@@ -704,29 +704,29 @@
     {
       "id": "dali-22",
       "name": "烤全羊",
-      "nameEn": "Roast Whole Lamb",
-      "type": "local",
-      "cuisine": "Yunnan BBQ",
+      "nameEn": "羊肉丸焼き",
+      "type": "ローカル",
+      "cuisine": "雲南バーベキュー",
       "avgPrice": 150,
       "rating": 4.7,
-      "address": "Dali Countryside, near Cangshan",
+      "address": "大理郊外、蒼山附近",
       "coordinates": {
         "lat": 25.6722,
         "lng": 100.1172
       },
       "hours": "11:00-22:00",
-      "description": "Traditional whole lamb roasting experience in scenic countryside setting, perfect for groups.",
+      "description": "美しい田園風景の中で伝統的な羊肉丸焼きを体験。グループに最適。",
       "dishHighlights": [
-        "Roast whole lamb",
-        "Mutton soup",
-        "Grilled lamb chops",
-        "Countryside scenery"
+        "羊肉丸焼き",
+        "羊肉スープ",
+        "羊肉のグリル",
+        "田園風景"
       ],
       "tags": [
-        "local",
-        "bbq",
-        "group",
-        "specialty"
+        "ローカル",
+        "バーベキュー",
+        "グループ",
+        "特色"
       ],
       "star": 0,
       "diamond": 0,
@@ -735,30 +735,30 @@
     },
     {
       "id": "dali-23",
-      "name": "银桥米线馆",
-      "nameEn": "Yinqiao Rice Noodle Shop",
-      "type": "local",
-      "cuisine": "Yunnan Rice Noodles",
+      "name": "銀橋米線館",
+      "nameEn": "銀橋麺店",
+      "type": "ローカル",
+      "cuisine": "雲南ラーメン",
       "avgPrice": 20,
       "rating": 4.5,
-      "address": "Yinqiao Town, Dali",
+      "address": "大理市銀橋鎮",
       "coordinates": {
         "lat": 25.7222,
         "lng": 100.0872
       },
       "hours": "07:00-15:00",
-      "description": "Local spot famous for rice noodles in rich broth, popular with locals and in-the-know travelers.",
+      "description": "旨みの効いたラーメンで地元の人々や旅通に人気のローカル店",
       "dishHighlights": [
-        "Beef rice noodles",
-        "Pork rice noodles",
-        "Pickled vegetables",
-        "Chili oil"
+        "牛肉ラーメン",
+        "豚肉ラーメン",
+        "漬物",
+        "ラー油"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "budget",
-        "breakfast"
+        "ローカル",
+        "麺類",
+        "格安",
+        "朝食"
       ],
       "star": 0,
       "diamond": 0,
@@ -767,30 +767,30 @@
     },
     {
       "id": "dali-24",
-      "name": "双廊咖啡馆",
-      "nameEn": "Shuanglang Lakeside Cafe",
-      "type": "cafe",
-      "cuisine": "Western/Yunnan Fusion",
+      "name": "双廊カフェ",
+      "nameEn": "双廊湖畔カフェ",
+      "type": "カフェ",
+      "cuisine": "西洋・雲南フュージョン",
       "avgPrice": 50,
       "rating": 4.6,
-      "address": "Shuanglang Waterfront",
+      "address": "双廊湖畔",
       "coordinates": {
         "lat": 25.8822,
         "lng": 100.1572
       },
       "hours": "08:00-22:00",
-      "description": "Cozy lakeside cafe with Erhai views, serving Yunnan coffee, Western breakfasts, and homemade pastries.",
+      "description": "湖畔の居心地の良いカフェで、洱海の景色を楽しみながら、雲南コーヒー、洋風の朝食、手作りペストリーを提供しています。",
       "dishHighlights": [
-        "Yunnan coffee",
-        "Pancakes with fruit",
-        "Fresh smoothies",
-        "Cheesecake"
+        "雲南コーヒー",
+        "フルーツのパンケーキ",
+        "新鮮なスムージー",
+        "チーズケーキ"
       ],
       "tags": [
-        "cafe",
-        "scenic",
-        "western",
-        "cozy"
+        "カフェ",
+        "景勝地",
+        "西洋風",
+        "居心地良好"
       ],
       "star": 0,
       "diamond": 0,
@@ -800,30 +800,30 @@
     {
       "id": "dali-25",
       "name": "大理壹号院",
-      "nameEn": "Dali No.1 Courtyard",
-      "type": "local",
-      "cuisine": "Bai Fine Dining",
+      "nameEn": "大理一号庭院",
+      "type": "ローカル",
+      "cuisine": "白族美食",
       "avgPrice": 150,
       "rating": 4.7,
-      "address": "Dali Old Town, West Gate",
+      "address": "大理古城、西門",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1472
       },
       "phone": "+86 872 267 8888",
       "hours": "11:00-22:00",
-      "description": "Upscale Bai cuisine restaurant in a traditional courtyard, offering refined local specialties with elegant presentation.",
+      "description": "伝統的な中庭にある高級な白族料理レストランで、洗練された地元の特産品を提供し、優雅なプレゼンテーションが特徴です。",
       "dishHighlights": [
-        "Bai style fish",
-        "Mushroom hotpot",
-        "Bender cold chicken",
-        "Seasonal vegetables"
+        "白族風魚",
+        "キノコの鍋料理",
+        "バンダイ冷やし鶏肉",
+        "季節の野菜"
       ],
       "tags": [
-        "fine-dining",
-        "bai-cuisine",
-        "courtyard",
-        "special-occasion"
+        "高級レストラン",
+        "白族料理",
+        "庭院",
+        "特別な機会"
       ],
       "star": 0,
       "diamond": 0,
@@ -832,29 +832,29 @@
     {
       "id": "dali-26",
       "name": "小邑庄白族菜",
-      "nameEn": "Xiaoyi Zhuang Bai Cuisine",
-      "type": "local",
-      "cuisine": "Bai Home Style",
+      "nameEn": "シャオイ・ジュアン白族料理",
+      "type": "ローカル",
+      "cuisine": "白族家庭料理",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Xiaoyi Village, near Dali Old Town",
+      "address": "シャオイ村、大理旧市街近く",
       "coordinates": {
         "lat": 25.7022,
         "lng": 100.1772
       },
       "hours": "10:00-21:00",
-      "description": "Local family-run restaurant serving authentic Bai home-style dishes in a traditional courtyard.",
+      "description": "地元の家族経営のレストランで、伝統的な中庭で本格的な白族家庭料理を提供しています。",
       "dishHighlights": [
-        "Braised pork",
-        "Steam egg",
-        "Pickled vegetables",
-        "Rice cakes"
+        "紅焼肉",
+        "蒸し卵",
+        "漬物",
+        "米粉のケーキ"
       ],
       "tags": [
-        "local",
-        "home-style",
-        "family-run",
-        "value"
+        "ローカル",
+        "家庭料理",
+        "家族経営",
+        "コストパフォーマンス"
       ],
       "star": 0,
       "diamond": 0,
@@ -863,30 +863,30 @@
     },
     {
       "id": "dali-27",
-      "name": "巍山老街面馆",
-      "nameEn": "Weishan Old Street Noodles",
-      "type": "local",
-      "cuisine": "Yunnan Noodles",
+      "name": "巍山老街麺館",
+      "nameEn": "ウェイシャン旧市街麺",
+      "type": "ローカル",
+      "cuisine": "雲南麺料理",
       "avgPrice": 25,
       "rating": 4.8,
-      "address": "Weishan Ancient Town",
+      "address": "巍山古城",
       "coordinates": {
         "lat": 25.2322,
         "lng": 100.3072
       },
       "hours": "07:00-14:00",
-      "description": "Legendary single-noodle shop famous for one long strand noodle in rich broth, a must-try in Weishan.",
+      "description": "伝説的な一本麺の店で、豊かなスープに長い一本の麺が特徴で、巍山でぜひ試すべき一品です。",
       "dishHighlights": [
-        "Single strand noodle",
-        "Hot and sour broth",
-        "Braised pork topping",
-        "Hand-pulled noodles"
+        "一本素麺（いっぽんそうめん）",
+        "酸辣スープ",
+        "煮豚トッピング",
+        "手引ラーメン"
       ],
       "tags": [
-        "local",
-        "famous",
-        "noodles",
-        "must-try"
+        "ローカル",
+        "有名",
+        "麺類",
+        "必食"
       ],
       "star": 0,
       "diamond": 0,
@@ -895,30 +895,30 @@
     },
     {
       "id": "dali-28",
-      "name": "才村湖景餐厅",
-      "nameEn": "Caicun Lake View Restaurant",
-      "type": "local",
-      "cuisine": "Yunnan/Seafood",
+      "name": "才村湖景レストラン",
+      "nameEn": "彩村湖畔レストラン（さいそんこはんレストラン）",
+      "type": "ローカル",
+      "cuisine": "雲南・海鮮",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Caicun Village, Erhai Lake",
+      "address": "洱海湖畔の蔡村",
       "coordinates": {
         "lat": 25.7222,
         "lng": 100.1672
       },
       "hours": "10:00-21:00",
-      "description": "Lakeside restaurant with Erhai views, serving fresh fish from the lake and Yunnan specialties.",
+      "description": "洱海を望む湖畔のレストランで、新鮮な湖魚と雲南料理をご提供いたします。",
       "dishHighlights": [
-        "Erhai lake fish",
-        "Sour cabbage fish",
-        "Lake shrimp",
-        "Bai style pork"
+        "洱海の湖魚",
+        "酸白菜魚",
+        "湖のエビ",
+        "バイ族風豚肉"
       ],
       "tags": [
-        "local",
-        "scenic",
-        "seafood",
-        "lake-view"
+        "ローカル",
+        "景勝地",
+        "シーフード",
+        "湖畔展望"
       ],
       "star": 0,
       "diamond": 0,
@@ -927,30 +927,30 @@
     },
     {
       "id": "dali-29",
-      "name": "桃溪牧场",
-      "nameEn": "Taoxi Pasture",
-      "type": "local",
-      "cuisine": "Yunnan BBQ/Grill",
+      "name": "桃渓牧場",
+      "nameEn": "桃渓牧場（とうけいぼくじょう）",
+      "type": "ローカル",
+      "cuisine": "雲南バーベキュー/グリル",
       "avgPrice": 100,
       "rating": 4.7,
-      "address": "Dali Countryside,桃溪",
+      "address": "大理郊外、桃渓",
       "coordinates": {
         "lat": 25.6522,
         "lng": 100.1072
       },
       "hours": "11:00-22:00",
-      "description": "Countryside restaurant specializing in grilled meats and fresh vegetables in scenic mountain setting.",
+      "description": "景色の良い山の中で、グリル肉と新鮮な野菜を専門とする田舎のレストランです。",
       "dishHighlights": [
-        "Grilled lamb",
-        "Wild mushroom BBQ",
-        "Fresh vegetables",
-        "Mountain stream fish"
+        "羊肉のグリル",
+        "野生キノコのバーベキュー",
+        "新鮮な野菜",
+        "山間の川魚"
       ],
       "tags": [
-        "local",
-        "countryside",
-        "bbq",
-        "scenic"
+        "ローカル",
+        "田舎",
+        "焼肉",
+        "景勝地"
       ],
       "star": 0,
       "diamond": 0,
@@ -960,29 +960,29 @@
     {
       "id": "dali-30",
       "name": "床山咖啡",
-      "nameEn": "Cangshan Coffee",
-      "type": "cafe",
-      "cuisine": "Specialty Coffee",
+      "nameEn": "蒼山コーヒー",
+      "type": "カフェ",
+      "cuisine": "スペシャリティコーヒー",
       "avgPrice": 40,
       "rating": 4.5,
-      "address": "Dali Old Town, Renmin Road",
+      "address": "大理古城、人民路",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "08:00-20:00",
-      "description": "Specialty coffee shop serving Yunnan beans, pour-overs, and espresso drinks in cozy atmosphere.",
+      "description": "雲南産コーヒー豆を使用したスペシャリティコーヒーショップで、ドリップコーヒーやエスプレッソドリンクを落ち着いた雰囲気の中で提供しています。",
       "dishHighlights": [
-        "Yunnan pour-over",
-        "Cappuccino",
-        "Affogato",
-        "Homemade cake"
+        "雲南ドリップコーヒー",
+        "カプチーノ",
+        "アフォガート",
+        "自家製ケーキ"
       ],
       "tags": [
-        "cafe",
-        "coffee",
-        "specialty",
-        "cozy"
+        "カフェ",
+        "コーヒー",
+        "名物",
+        "居心地良好"
       ],
       "star": 0,
       "diamond": 0,
@@ -992,8 +992,8 @@
     {
       "id": "dali-31",
       "name": "喜洲甜品店",
-      "nameEn": "Xizhou Sweet Shop",
-      "type": "local",
+      "nameEn": "喜洲スイーツショップ",
+      "type": "ローカル",
       "cuisine": "バイ族デザート",
       "avgPrice": 20,
       "rating": 4.6,
@@ -1023,9 +1023,9 @@
     },
     {
       "id": "dali-32",
-      "name": "下关沱茶馆",
+      "name": "下関沱茶館",
       "nameEn": "下関プー茶館",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "茶館",
       "avgPrice": 60,
       "rating": 4.7,
@@ -1055,10 +1055,10 @@
     },
     {
       "id": "dali-33",
-      "name": "街边饵丝",
-      "nameEn": "街边饵丝 (饵丝)",
-      "type": "local",
-      "cuisine": "餌絲",
+      "name": "街角のアルシー（米線）",
+      "nameEn": "街角のアルシー（アルシー）",
+      "type": "ローカル",
+      "cuisine": "饵丝",
       "avgPrice": 150,
       "rating": 4.6,
       "address": "大理市新城区美食街86号",
@@ -1068,26 +1068,26 @@
       },
       "phone": "+86 010 71237084",
       "hours": "10:00-22:00",
-      "description": "大理本地人推荐的饵丝店，味道正宗，价格实惠",
+      "description": "大理の地元民おすすめの饵丝店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
-        "餌糸",
-        "乳酸扇",
+        "饵丝",
+        "乳扇",
         "白族三道茶"
       ],
       "tags": [
-        "並びの王様",
+        "行列のできる店",
         "家庭料理",
-        "町の古参店"
+        "地元の老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/219c69c1495d.webp"
     },
     {
       "id": "dali-35",
-      "name": "大理味砂锅鱼",
-      "nameEn": "大理味しゃり鍋魚（しゃり鍋魚）",
-      "type": "street",
-      "cuisine": "しゃり鍋魚",
+      "name": "大理風土鍋魚",
+      "nameEn": "大理風土鍋魚（土鍋魚）",
+      "type": "ストリート",
+      "cuisine": "砂鍋魚",
       "avgPrice": 25,
       "rating": 4.9,
       "address": "大理市市中心区美食街58号",
@@ -1097,26 +1097,26 @@
       },
       "phone": "+86 010 21807513",
       "hours": "17:00-02:00",
-      "description": "大理の地元人がおすすめするしゃり鍋魚店。味は本格的で価格は手頃",
+      "description": "大理の地元民おすすめの砂鍋魚店。味は本格的で、価格も手頃です。",
       "dishHighlights": [
-        "しゃり鍋魚",
-        "乳酸扇",
+        "砂鍋魚",
+        "乳扇",
         "酸辣魚"
       ],
       "tags": [
         "夜市",
         "小吃",
-        "深夜美食"
+        "深夜グルメ"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/e4738a2d9a3c.webp"
     },
     {
       "id": "dali-37",
-      "name": "老字号酸辣鱼",
-      "nameEn": "老字号酸辣鱼 (酸辣鱼)",
-      "type": "local",
-      "cuisine": "酸辣鱼",
+      "name": "老舗の酸辣魚",
+      "nameEn": "老舗の酸辣魚（スアンラーユー）",
+      "type": "ローカル",
+      "cuisine": "酸辣魚",
       "avgPrice": 62,
       "rating": 4.8,
       "address": "大理市市中心区美食街169号",
@@ -1126,26 +1126,26 @@
       },
       "phone": "+86 010 47472455",
       "hours": "10:00-22:00",
-      "description": "大理本地人推荐的酸辣鱼店，味道正宗，价格实惠",
+      "description": "大理の地元民おすすめの酸辣魚店。味は本格的で、価格も手頃です。",
       "dishHighlights": [
         "饵丝",
-        "酸辣鱼",
-        "砂锅鱼"
+        "酸辣魚",
+        "砂鍋魚"
       ],
       "tags": [
-        "性价比高",
-        "隐藏美食",
-        "排队王"
+        "コスパ最高",
+        "隠れた名店",
+        "行列のできる店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/c8bbce462f92.webp"
     },
     {
       "id": "dali-39",
-      "name": "正宗酸辣鱼",
-      "nameEn": "正宗酸辣鱼 (酸辣鱼)",
-      "type": "local",
-      "cuisine": "酸辣鱼",
+      "name": "本格酸辣魚（スアンラーユー）",
+      "nameEn": "本格酸辣魚（スアンラーユー）",
+      "type": "ローカル",
+      "cuisine": "酸辣魚",
       "avgPrice": 68,
       "rating": 4.1,
       "address": "大理市新城区美食街60号",
@@ -1155,16 +1155,16 @@
       },
       "phone": "+86 010 88896092",
       "hours": "10:00-22:00",
-      "description": "大理本地人推荐的酸辣鱼店，味道正宗，价格实惠",
+      "description": "大理の地元民おすすめの酸辣魚店。味は本格的で、価格も手頃です。",
       "dishHighlights": [
-        "砂锅鱼",
-        "酸辣鱼",
+        "砂鍋魚",
+        "酸辣魚",
         "白族三道茶"
       ],
       "tags": [
-        "老字号",
-        "本地人爱去",
-        "社区老店"
+        "老舗",
+        "地元の人に人気",
+        "地元の老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/022342ff2887.webp"
@@ -1173,7 +1173,7 @@
       "id": "dali-41",
       "name": "大理味饵丝",
       "nameEn": "大理味饵丝 (饵丝)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "饵丝",
       "avgPrice": 141,
       "rating": 4.5,
@@ -1184,25 +1184,25 @@
       },
       "phone": "+86 010 56353316",
       "hours": "09:00-21:00",
-      "description": "大理本地人推荐的饵丝店，味道正宗，价格实惠",
+      "description": "大理の地元民おすすめの饵丝店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "饵丝",
-        "砂锅鱼",
-        "酸辣鱼"
+        "砂鍋魚",
+        "酸辣魚"
       ],
       "tags": [
-        "家常菜",
-        "排队王",
-        "社区老店"
+        "家庭料理",
+        "行列のできる店",
+        "地元の老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/06724cf5ee0d.webp"
     },
     {
       "id": "dali-43",
-      "name": "街边乳扇",
-      "nameEn": "街边乳扇 (乳扇)",
-      "type": "local",
+      "name": "街角の乳扇（ルーシャン）",
+      "nameEn": "街角の乳扇（ルーシャン）",
+      "type": "ローカル",
       "cuisine": "乳扇",
       "avgPrice": 139,
       "rating": 4,
@@ -1213,16 +1213,16 @@
       },
       "phone": "+86 010 13801976",
       "hours": "10:00-22:00",
-      "description": "大理本地人推荐的乳扇店，味道正宗，价格实惠",
+      "description": "大理の地元民おすすめの乳扇店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
-        "酸辣鱼",
+        "酸辣魚",
         "白族三道茶",
-        "砂锅鱼"
+        "砂鍋魚"
       ],
       "tags": [
-        "家常菜",
-        "社区老店",
-        "性价比高"
+        "家庭料理",
+        "地元の老舗",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/281cec6f0bad.webp"
@@ -1231,7 +1231,7 @@
       "id": "dali-45",
       "name": "老字号白族三道茶",
       "nameEn": "老字号白族三道茶 (白族三道茶)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "白族三道茶",
       "avgPrice": 99,
       "rating": 4,
@@ -1242,26 +1242,26 @@
       },
       "phone": "+86 010 63319381",
       "hours": "09:00-21:00",
-      "description": "大理本地人推荐的白族三道茶店，味道正宗，价格实惠",
+      "description": "大理の地元民おすすめの白族三道茶店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "白族三道茶",
         "乳扇",
-        "砂锅鱼"
+        "砂鍋魚"
       ],
       "tags": [
-        "排队王",
-        "社区老店",
-        "本地人爱去"
+        "行列のできる店",
+        "地元の老舗",
+        "地元の人に人気"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/d0bb747585f9.webp"
     },
     {
       "id": "dali-47",
-      "name": "传统酸辣鱼",
-      "nameEn": "传统酸辣鱼 (酸辣鱼)",
-      "type": "local",
-      "cuisine": "酸辣鱼",
+      "name": "伝統の酸辣魚（スアンラーユー）",
+      "nameEn": "伝統の酸辣魚（スアンラーユー）",
+      "type": "ローカル",
+      "cuisine": "酸辣魚",
       "avgPrice": 109,
       "rating": 4,
       "address": "大理市老城区美食街24号",
@@ -1271,16 +1271,16 @@
       },
       "phone": "+86 010 34924020",
       "hours": "06:00-14:00",
-      "description": "大理本地人推荐的酸辣鱼店，味道正宗，价格实惠",
+      "description": "大理の地元民おすすめの酸辣魚店。味は本格的で、価格も手頃です。",
       "dishHighlights": [
         "饵丝",
         "白族三道茶",
         "乳扇"
       ],
       "tags": [
-        "家常菜",
-        "性价比高",
-        "本地人爱去"
+        "家庭料理",
+        "コスパ最高",
+        "地元の人に人気"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/2fe38aab1319.webp"
@@ -1289,7 +1289,7 @@
       "id": "dali-49",
       "name": "老字号乳扇",
       "nameEn": "老字号乳扇 (乳扇)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "乳扇",
       "avgPrice": 78,
       "rating": 4.1,
@@ -1300,26 +1300,26 @@
       },
       "phone": "+86 010 58916299",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "大理本地人推荐的乳扇店，味道正宗，价格实惠",
+      "description": "大理の地元民おすすめの乳扇店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "乳扇",
-        "砂锅鱼",
+        "砂鍋魚",
         "白族三道茶"
       ],
       "tags": [
-        "隐藏美食",
-        "社区老店",
-        "家常菜"
+        "隠れた名店",
+        "地元の老舗",
+        "家庭料理"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/0eab5a89fd58.webp"
     },
     {
       "id": "dali-51",
-      "name": "巷子砂锅鱼",
-      "nameEn": "巷子砂锅鱼 (砂锅鱼)",
-      "type": "local",
-      "cuisine": "砂锅鱼",
+      "name": "路地の土鍋魚（サグオユー）",
+      "nameEn": "路地の土鍋魚（サグオユー）",
+      "type": "ローカル",
+      "cuisine": "砂鍋魚",
       "avgPrice": 89,
       "rating": 4.2,
       "address": "大理市老城区美食街196号",
@@ -1329,26 +1329,26 @@
       },
       "phone": "+86 010 32566578",
       "hours": "09:00-21:00",
-      "description": "大理本地人推荐的砂锅鱼店，味道正宗，价格实惠",
+      "description": "大理の地元民おすすめの砂鍋魚店。味は本格的で、価格も手頃です。",
       "dishHighlights": [
         "乳扇",
         "饵丝",
-        "砂锅鱼"
+        "砂鍋魚"
       ],
       "tags": [
-        "排队王",
-        "家常菜",
-        "本地人爱去"
+        "行列のできる店",
+        "家庭料理",
+        "地元の人に人気"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/29a735c3a222.webp"
     },
     {
       "id": "dali-53",
-      "name": "老字号酸辣鱼",
-      "nameEn": "老字号酸辣鱼 (酸辣鱼)",
-      "type": "local",
-      "cuisine": "酸辣鱼",
+      "name": "老舗の酸辣魚",
+      "nameEn": "老舗の酸辣魚（スアンラーユー）",
+      "type": "ローカル",
+      "cuisine": "酸辣魚",
       "avgPrice": 53,
       "rating": 4.8,
       "address": "大理市市中心区美食街112号",
@@ -1358,16 +1358,16 @@
       },
       "phone": "+86 010 58931936",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "大理本地人推荐的酸辣鱼店，味道正宗，价格实惠",
+      "description": "大理の地元民おすすめの酸辣魚店。味は本格的で、価格も手頃です。",
       "dishHighlights": [
         "乳扇",
-        "酸辣鱼",
+        "酸辣魚",
         "饵丝"
       ],
       "tags": [
-        "性价比高",
-        "家常菜",
-        "隐藏美食"
+        "コスパ最高",
+        "家庭料理",
+        "隠れた名店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/fef9c8149df0.webp"
@@ -1376,7 +1376,7 @@
       "id": "dali-55",
       "name": "正宗乳扇",
       "nameEn": "正宗乳扇 (乳扇)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "乳扇",
       "avgPrice": 128,
       "rating": 4.6,
@@ -1387,16 +1387,16 @@
       },
       "phone": "+86 010 24332998",
       "hours": "17:00-02:00",
-      "description": "大理本地人推荐的乳扇店，味道正宗，价格实惠",
+      "description": "大理の地元民おすすめの乳扇店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
-        "酸辣鱼",
+        "酸辣魚",
         "乳扇",
         "饵丝"
       ],
       "tags": [
-        "家常菜",
-        "性价比高",
-        "老字号"
+        "家庭料理",
+        "コスパ最高",
+        "老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/264707907046.webp"
@@ -1405,7 +1405,7 @@
       "id": "dali-57",
       "name": "老字号乳扇",
       "nameEn": "老字号乳扇 (乳扇)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "乳扇",
       "avgPrice": 47,
       "rating": 4.8,
@@ -1416,26 +1416,26 @@
       },
       "phone": "+86 010 29181683",
       "hours": "09:00-21:00",
-      "description": "大理本地人推荐的乳扇店，味道正宗，价格实惠",
+      "description": "大理の地元民おすすめの乳扇店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "饵丝",
         "乳扇",
-        "砂锅鱼"
+        "砂鍋魚"
       ],
       "tags": [
-        "社区老店",
-        "隐藏美食",
-        "排队王"
+        "地元の老舗",
+        "隠れた名店",
+        "行列のできる店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/3a5c815b343d.webp"
     },
     {
       "id": "dali-59",
-      "name": "街边砂锅鱼",
-      "nameEn": "街边砂锅鱼 (砂锅鱼)",
-      "type": "local",
-      "cuisine": "砂锅鱼",
+      "name": "街角の土鍋魚（サグオユー）",
+      "nameEn": "街辺砂鍋魚（砂鍋魚）",
+      "type": "ローカル",
+      "cuisine": "砂鍋魚",
       "avgPrice": 112,
       "rating": 4.4,
       "address": "大理市市中心区美食街199号",
@@ -1445,16 +1445,16 @@
       },
       "phone": "+86 010 95932833",
       "hours": "06:00-14:00",
-      "description": "大理本地人推荐的砂锅鱼店，味道正宗，价格实惠",
+      "description": "大理の地元民おすすめの砂鍋魚店。味は本格的で、価格も手頃です。",
       "dishHighlights": [
-        "砂锅鱼",
+        "砂鍋魚",
         "白族三道茶",
         "乳扇"
       ],
       "tags": [
-        "老字号",
-        "隐藏美食",
-        "社区老店"
+        "老舗",
+        "隠れた名店",
+        "地元の老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/fedea860d170.webp"
@@ -1463,7 +1463,7 @@
       "id": "dali-61",
       "name": "正宗饵丝",
       "nameEn": "正宗饵丝 (饵丝)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "饵丝",
       "avgPrice": 118,
       "rating": 4.5,
@@ -1474,16 +1474,16 @@
       },
       "phone": "+86 010 91186134",
       "hours": "10:00-22:00",
-      "description": "大理本地人推荐的饵丝店，味道正宗，价格实惠",
+      "description": "大理の地元民おすすめの饵丝店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
-        "砂锅鱼",
+        "砂鍋魚",
         "白族三道茶",
         "饵丝"
       ],
       "tags": [
-        "老字号",
-        "家常菜",
-        "本地人爱去"
+        "老舗",
+        "家庭料理",
+        "地元の人に人気"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/c834231ccf54.webp"
@@ -1492,7 +1492,7 @@
       "id": "dali-63",
       "name": "正宗饵丝",
       "nameEn": "正宗饵丝 (饵丝)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "饵丝",
       "avgPrice": 97,
       "rating": 4.9,
@@ -1503,16 +1503,16 @@
       },
       "phone": "+86 010 42939460",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "大理本地人推荐的饵丝店，味道正宗，价格实惠",
+      "description": "大理の地元民おすすめの饵丝店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
-        "酸辣鱼",
+        "酸辣魚",
         "白族三道茶",
         "乳扇"
       ],
       "tags": [
-        "老字号",
-        "社区老店",
-        "排队王"
+        "老舗",
+        "地元の老舗",
+        "行列のできる店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/b2ee408e4d76.webp"
@@ -1521,7 +1521,7 @@
       "id": "dali-65",
       "name": "正宗白族三道茶",
       "nameEn": "正宗白族三道茶 (白族三道茶)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "白族三道茶",
       "avgPrice": 70,
       "rating": 4.4,
@@ -1532,16 +1532,16 @@
       },
       "phone": "+86 010 17188869",
       "hours": "06:00-14:00",
-      "description": "大理本地人推荐的白族三道茶店，味道正宗，价格实惠",
+      "description": "大理の地元民おすすめの白族三道茶店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
-        "砂锅鱼",
+        "砂鍋魚",
         "乳扇",
         "白族三道茶"
       ],
       "tags": [
-        "老字号",
-        "家常菜",
-        "性价比高"
+        "老舗",
+        "家庭料理",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/070cbf7a8ee5.webp"
@@ -1550,7 +1550,7 @@
       "id": "dali-67",
       "name": "阿婆饵丝",
       "nameEn": "阿婆饵丝 (饵丝)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "饵丝",
       "avgPrice": 83,
       "rating": 4.3,
@@ -1561,16 +1561,16 @@
       },
       "phone": "+86 010 62598238",
       "hours": "17:00-02:00",
-      "description": "大理本地人推荐的饵丝店，味道正宗，价格实惠",
+      "description": "大理の地元民おすすめの饵丝店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
-        "砂锅鱼",
+        "砂鍋魚",
         "白族三道茶",
         "饵丝"
       ],
       "tags": [
-        "家常菜",
-        "隐藏美食",
-        "排队王"
+        "家庭料理",
+        "隠れた名店",
+        "行列のできる店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/240c1b260dae.webp"
@@ -1580,65 +1580,65 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major Chinese cities",
-        "to": "Dali Fenghuang Airport (DLU)",
-        "duration": "Varies (2h from Kunming)",
+        "from": "中国の主要都市",
+        "to": "大理鳳凰空港（DLU）",
+        "duration": "所要時間は様々（昆明から2時間）",
         "price": "300-800¥",
-        "frequency": "Daily flights from Kunming, some seasonal",
-        "tips": "Airport 13km from Dali Old Town. Airport bus or taxi to town. Flights can be delayed in fog."
+        "frequency": "昆明から毎日運航、一部季節便",
+        "tips": "大理古城から13kmの空港。空港バスまたはタクシーで市内へ。霧のため欠航・遅延が発生することがあります。"
       },
       {
         "type": "train",
-        "from": "Kunming (6-8 hours), Lijiang (2.5 hours)",
-        "to": "Dali Railway Station (near downtown)",
-        "duration": "2.5-8 hours",
+        "from": "昆明（6〜8時間）、麗江（2.5時間）",
+        "to": "大理駅（市内中心部に近い）",
+        "duration": "2.5〜8時間",
         "price": "100-300¥",
-        "frequency": "Daily trains from major Yunnan's cities",
-        "tips": "New high-speed train from Kunming is scenic but slow. Old train is faster. Dali Station is closer to old town than new."
+        "frequency": "雲南省の主要都市から毎日列車",
+        "tips": "昆明からの新しい高速鉄道は景色が良いが遅い。旧型の列車の方が速い。大理駅は新しい駅よりも古城に近い。"
       },
       {
         "type": "bus",
-        "from": "Kunming (4 hours), Lijiang (2.5 hours)",
-        "to": "Dali Bus Station",
-        "duration": "2.5-4 hours",
+        "from": "昆明（4時間）、麗江（2.5時間）",
+        "to": "大理バスターミナル",
+        "duration": "2.5〜4時間",
         "price": "100-200¥",
-        "frequency": "Frequent buses from major cities",
-        "tips": "Bus from Kunming's Xiying Hotel is comfortable. Dali Bus Station is near old town."
+        "frequency": "主要都市から頻繁なバス",
+        "tips": "昆明の西駅酒店からのバスは快適です。大理バスターミナルは旧市街に近いです。"
       }
     ],
     "local": {
       "bus": [
-        "Local buses connect Dali to Xizhou, Shuanglang",
-        "Bus 4 to Xizhou from Dali Old Town",
-        "Bus to Shuanglang from Dali (2 hours)",
-        "Song of the River bus for scenic route"
+        "現地バスで大理から喜洲、双廊へ",
+        "大理古城から喜洲行きバス4番",
+        "大理から双廊行きバス（2時間）",
+        "景観ルートの「川の歌」バス"
       ],
       "taxi": [
-        "City taxis within Dali: 10-30¥",
-        "Taxi to Shuanglang: 80-120¥",
-        "Taxi to Xizhou: 40-60¥",
-        "Negotiate price for day trips"
+        "大理市内のタクシー：10〜30¥",
+        "双廊までのタクシー：80〜120¥",
+        "喜洲までのタクシー：40〜60¥",
+        "日帰りツアーの価格交渉"
       ],
       "bicycle": [
-        "Rent bicycles near Dali Old Town: 30-80¥/day",
-        "Electric bikes available: 80-150¥/day",
-        "Cycling Erhai Lake: 40-60km, full day",
-        "Mountain bikes for Cangshan trails"
+        "大理古城近くで自転車レンタル：1日30〜80元",
+        "電動自転車あり：1日80〜150元",
+        "洱海サイクリング：40〜60km、終日",
+        "蒼山トレイル用マウンテンバイク"
       ],
       "electric-bike": [
-        "Popular way to explore Erhai Lake area",
-        "Rent in Dali or Shuanglang",
-        "80-150¥ per day",
-        "Need to recharge for long trips"
+        "洱海エリアを探索する人気の方法",
+        "大理または双廊でレンタル",
+        "1日80〜150元",
+        "長距離ツアーには充電が必要"
       ],
       "metro": [
-        "No metro system in Dali old town",
-        "Bus connections available"
+        "大理古城には地下鉄なし",
+        "バス接続あり"
       ],
       "bike": [
-        "Bike rental shops in Dali old town",
-        "Electric bikes recommended for Erhai cycling",
-        "Mountain bikes available for countryside"
+        "大理古城の自転車レンタルショップ",
+        "洱海サイクリングには電動自転車がおすすめ",
+        "田舎向けマウンテンバイクあり"
       ]
     }
   },
@@ -1647,547 +1647,547 @@
       "name": "大理古城海景酒店",
       "nameEn": "Dali Old Town Lake View Hotel",
       "budget": "mid",
-      "priceRange": "¥400-800/night",
-      "address": "Near Dali Old Town",
+      "priceRange": "1泊400〜800元",
+      "address": "大理古城付近",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "rating": 4.6,
       "highlights": [
-        "Old town location",
-        "Erhai views",
-        "Bai architecture",
-        "Rooftop cafe"
+        "旧市街地のロケーション",
+        "洱海の眺め",
+        "白族の建築",
+        "屋上カフェ"
       ],
-      "bookingTips": "Book well ahead in peak season. Request lake view room."
+      "bookingTips": "ピークシーズンは早めに予約しましょう。湖側の部屋をリクエストしてください。"
     },
     {
       "name": "双廊海角酒店",
       "nameEn": "Shuanglang Haijiao Hotel",
       "budget": "luxury",
-      "priceRange": "¥800-2000/night",
-      "address": "Shuanglang waterfront",
+      "priceRange": "1泊800〜2000元",
+      "address": "双廊のウォーターフロント",
       "coordinates": {
         "lat": 25.8822,
         "lng": 100.1572
       },
       "rating": 4.8,
       "highlights": [
-        "Lake front location",
-        "Sunset views",
-        "Boutique design",
-        "Private balconies"
+        "湖畔のロケーション",
+        "夕日が見える",
+        "ブティックデザイン",
+        "専用バルコニー"
       ],
-      "bookingTips": "The best lakeside area in Dali. Premium for Nantian views."
+      "bookingTips": "大理で最高の湖畔エリア。南天の眺めに最適。"
     },
     {
       "name": "大理中和坊酒店",
       "nameEn": "Dali Zhonghefang Hotel",
       "budget": "mid",
-      "priceRange": "¥300-600/night",
-      "address": "Within Dali Old Town",
+      "priceRange": "1泊300〜600元",
+      "address": "大理旧市街内",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "rating": 4.5,
       "highlights": [
-        "Central location",
-        "Traditional courtyard",
-        "Quiet atmosphere",
-        "Bai style"
+        "中心部に好立地",
+        "伝統的な中庭",
+        "静かな雰囲気",
+        "白族様式"
       ],
-      "bookingTips": "Good value in old town. Book inner courtyard rooms for quiet."
+      "bookingTips": "旧市街でコスパ良し。静かな中庭側の部屋を予約するのがおすすめ。"
     },
     {
-      "name": "才村码头客栈",
+      "name": "才村桟橋の民宿",
       "nameEn": "Caicun Village Inn",
       "budget": "budget",
-      "priceRange": "¥150-400/night",
-      "address": "Caicun Village, Erhai Lake",
+      "priceRange": "1泊150〜400元",
+      "address": "洱海の才村",
       "coordinates": {
         "lat": 25.7222,
         "lng": 100.1672
       },
       "rating": 4.4,
       "highlights": [
-        "Lake access",
-        "Bike rental",
-        "Local family-run",
-        "Peaceful"
+        "湖へのアクセス",
+        "レンタサイクル",
+        "地元の家族経営",
+        "静か"
       ],
-      "bookingTips": "Great for cyclists. Families run many guesthouses here."
+      "bookingTips": "サイクリストに最適。家族経営のゲストハウスが多い。"
     },
     {
-      "name": "大理国际大酒店",
+      "name": "大理国際大酒店",
       "nameEn": "Dali International Hotel",
       "budget": "luxury",
-      "priceRange": "¥600-1500/night",
-      "address": "Dali City, near Erhai",
+      "priceRange": "1泊600〜1500元",
+      "address": "大理市、洱海近く",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1672
       },
       "rating": 4.5,
       "highlights": [
-        "Modern facilities",
-        "Lake views",
-        "Multiple restaurants",
-        "Pool"
+        "近代的な設備",
+        "湖の景色",
+        "複数のレストラン",
+        "プール"
       ],
-      "bookingTips": "Best for comfort seekers. Good location between old town and lake."
+      "bookingTips": "快適さを求める人に最適。旧市街と湖の間に位置する好立地。"
     },
     {
-      "name": "大理古城兰陵阁",
+      "name": "大理古城蘭陵閣",
       "nameEn": "Dali Old Town Lanlingge",
       "budget": "mid",
-      "priceRange": "¥350-700/night",
-      "address": "Within Dali Old Town",
+      "priceRange": "1泊350〜700元",
+      "address": "大理旧市街内",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "rating": 4.5,
       "highlights": [
-        "Traditional courtyard",
-        "Central location",
-        "Rooftop views",
-        "Bai architecture"
+        "伝統的な中庭",
+        "中心部に好立地",
+        "屋上からの眺め",
+        "白族の建築"
       ],
-      "bookingTips": "Book inner rooms for quiet. Good value for location."
+      "bookingTips": "静かな部屋を予約するのがおすすめ。立地の割にコスパが良い。"
     },
     {
       "name": "双廊湖思茶屋",
       "nameEn": "Shuanglang Lake Thoughts",
       "budget": "luxury",
-      "priceRange": "¥600-1500/night",
-      "address": "Shuanglang, Erhai Lake",
+      "priceRange": "1泊600〜1500元",
+      "address": "双廊、洱海",
       "coordinates": {
         "lat": 25.8822,
         "lng": 100.1572
       },
       "rating": 4.8,
       "highlights": [
-        "Lake front",
-        "Design hotel",
-        "Sunset views",
-        "Tea house"
+        "湖畔",
+        "デザインホテル",
+        "夕日が見える",
+        "茶館"
       ],
-      "bookingTips": "Premium lakeside location. Book well ahead in peak season."
+      "bookingTips": "湖畔のプレミアム立地。ピークシーズンは早めの予約が必要。"
     },
     {
       "name": "才村民宿",
       "nameEn": "Caicun Village Homestay",
       "budget": "budget",
-      "priceRange": "¥150-400/night",
-      "address": "Caicun Village, Erhai",
+      "priceRange": "1泊150〜400元",
+      "address": "才村、洱海",
       "coordinates": {
         "lat": 25.7222,
         "lng": 100.1672
       },
       "rating": 4.5,
       "highlights": [
-        "Lake access",
-        "Family-run",
-        "Bike rental",
-        "Local experience"
+        "湖へのアクセス",
+        "家族経営",
+        "レンタサイクル",
+        "地元体験"
       ],
-      "bookingTips": "Great for cyclists. Locals are very friendly."
+      "bookingTips": "サイクリストに最適。地元の人々はとても親切です。"
     },
     {
-      "name": "大理风花雪月酒店",
+      "name": "大理風花雪月酒店",
       "nameEn": "Dali Wind Flower Snow Moon Hotel",
       "budget": "mid",
-      "priceRange": "¥400-800/night",
-      "address": "Dali City, near old town",
+      "priceRange": "1泊400〜800元",
+      "address": "大理市、旧市街近く",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
       },
       "rating": 4.4,
       "highlights": [
-        "Central location",
-        "Modern rooms",
-        "Good service",
-        "Value"
+        "中心部に好立地",
+        "モダンな客室",
+        "サービス良好",
+        "価値"
       ],
-      "bookingTips": "Good balance of comfort and location."
+      "bookingTips": "快適さと立地のバランスが良い。"
     },
     {
-      "name": "喜洲杨家拼图",
+      "name": "喜洲楊家拼図",
       "nameEn": "Xizhou Yang's Courtyard",
       "budget": "mid",
-      "priceRange": "¥300-600/night",
-      "address": "Xizhou Ancient Town",
+      "priceRange": "1泊300〜600元",
+      "address": "喜洲古鎮",
       "coordinates": {
         "lat": 25.7622,
         "lng": 100.1272
       },
       "rating": 4.6,
       "highlights": [
-        "Historic Bai courtyard",
-        "Near Baba shops",
-        "Authentic decor",
-        "Quiet"
+        "歴史ある白族の中庭",
+        "ババ商店付近",
+        "本格的な装飾",
+        "静か"
       ],
-      "bookingTips": "Experience traditional Bai living. Book during market day."
+      "bookingTips": "伝統的な白族の暮らしを体験。市の日に予約してください。"
     },
     {
       "name": "大理背包客青年旅舍",
       "nameEn": "Dali Backpacker Youth Hostel",
       "budget": "budget",
-      "priceRange": "¥60-150/night",
-      "address": "Dali Old Town",
+      "priceRange": "1泊60〜150元",
+      "address": "大理旧市街",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "rating": 4.3,
       "highlights": [
-        "Social atmosphere",
-        "Budget-friendly",
-        "Central location",
-        "Bike rental"
+        "社交的な雰囲気",
+        "リーズナブルな価格",
+        "中心部に好立地",
+        "レンタサイクル"
       ],
-      "bookingTips": "Great for solo travelers. Evening pub crawls organized."
+      "bookingTips": "一人旅に最適。夜のパブ巡りも企画されています。"
     },
     {
-      "name": "双廊晴天见",
+      "name": "双廊晴天見",
       "nameEn": "Shuanglang Clear Sky",
       "budget": "luxury",
-      "priceRange": "¥800-1800/night",
-      "address": "Shuanglang, eastern shore",
+      "priceRange": "1泊800〜1800元",
+      "address": "双廊、東岸",
       "coordinates": {
         "lat": 25.8822,
         "lng": 100.1572
       },
       "rating": 4.9,
       "highlights": [
-        "Beachfront location",
-        "Boutique design",
-        "Sunrise views",
-        "Private balcony"
+        "ビーチフロントの立地",
+        "ブティックデザイン",
+        "日の出の眺め",
+        "専用バルコニー"
       ],
-      "bookingTips": "Best sunrise location in Shuanglang. Book months ahead."
+      "bookingTips": "双廊で最も日の出に適した場所。数ヶ月前からの予約が必要。"
     },
     {
       "name": "挖色洱海客栈",
       "nameEn": "Wase Erhai Inn",
       "budget": "mid",
-      "priceRange": "¥250-500/night",
-      "address": "Wase Town, Erhai",
+      "priceRange": "1泊250〜500元",
+      "address": "瓦色鎮、洱海",
       "coordinates": {
         "lat": 25.9222,
         "lng": 100.1872
       },
       "rating": 4.5,
       "highlights": [
-        "Quiet location",
-        "Lake views",
-        "Local family",
-        "Off-the-beaten-path"
+        "静かな立地",
+        "湖の景色",
+        "地元の家族",
+        "穴場スポット"
       ],
-      "bookingTips": "Good alternative to Shuanglang. Very peaceful."
+      "bookingTips": "双廊の良い代替案。とても静か。"
     },
     {
-      "name": "大理苍山饭店",
+      "name": "大理蒼山飯店",
       "nameEn": "Dali Cangshan Hotel",
       "budget": "mid",
-      "priceRange": "¥400-700/night",
-      "address": "Dali City",
+      "priceRange": "1泊400〜700元",
+      "address": "大理市",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1672
       },
       "rating": 4.4,
       "highlights": [
-        "Near old town",
-        "Mountain views",
-        "Comfortable",
-        "Good breakfast"
+        "旧市街付近",
+        "山の景色",
+        "快適",
+        "朝食が良い"
       ],
-      "bookingTips": "Good base for exploring. Request mountain view rooms."
+      "bookingTips": "観光に便利な拠点。山側の部屋をリクエストしましょう。"
     },
     {
-      "name": "三塔寺周边民宿",
+      "name": "三塔寺周辺の民宿",
       "nameEn": "Three Pagodas Area Homestay",
       "budget": "budget",
-      "priceRange": "¥120-300/night",
-      "address": "Near Three Pagodas",
+      "priceRange": "1泊120〜300元",
+      "address": "三塔付近",
       "coordinates": {
         "lat": 25.6722,
         "lng": 100.1572
       },
       "rating": 4.4,
       "highlights": [
-        "Quiet area",
-        "Near temples",
-        "Family-run",
-        "Value"
+        "静かなエリア",
+        "寺院の近く",
+        "家族経営",
+        "価値"
       ],
-      "bookingTips": "Good for temple visitors. Very peaceful mornings."
+      "bookingTips": "寺院参拝に便利。朝はとても静かです。"
     },
     {
-      "name": "银桥花语客栈",
+      "name": "銀橋花語客棧",
       "nameEn": "Yinqiao Flower Language Inn",
       "budget": "budget",
-      "priceRange": "¥150-350/night",
-      "address": "Yinqiao Town",
+      "priceRange": "1泊150〜350元",
+      "address": "銀橋鎮",
       "coordinates": {
         "lat": 25.7222,
         "lng": 100.0872
       },
       "rating": 4.5,
       "highlights": [
-        "Near flower fields",
-        "Countryside setting",
-        "Quiet",
-        "Bike friendly"
+        "花畑付近",
+        "田園風景",
+        "静か",
+        "自転車に優しい"
       ],
-      "bookingTips": "Great for photographers. Perfect for flower season."
+      "bookingTips": "写真家に最適。花の季節にぴったり。"
     },
     {
       "name": "周城白族客栈",
       "nameEn": "Zhoucheng Bai Homestay",
       "budget": "budget",
-      "priceRange": "¥100-280/night",
-      "address": "Zhoucheng Village",
+      "priceRange": "1泊100〜280元",
+      "address": "周城村",
       "coordinates": {
         "lat": 25.8022,
         "lng": 100.0872
       },
       "rating": 4.6,
       "highlights": [
-        "Authentic Bai village",
-        "Tie-dye workshops",
-        "Local family",
-        "Cultural immersion"
+        "本格的な白族の村",
+        "藍染め工房",
+        "地元の家族",
+        "文化体験"
       ],
-      "bookingTips": "Best for culture seekers. Morning market is walking distance."
+      "bookingTips": "文化愛好家に最適。朝市が徒歩圏内です。"
     },
     {
       "name": "巍山古城客栈",
       "nameEn": "Weishan Ancient Town Inn",
       "budget": "mid",
-      "priceRange": "¥200-450/night",
-      "address": "Weishan Ancient Town",
+      "priceRange": "¥200〜450/泊",
+      "address": "巍山古城",
       "coordinates": {
         "lat": 25.2322,
         "lng": 100.3072
       },
       "rating": 4.7,
       "highlights": [
-        "Historic town",
-        "Traditional courtyard",
-        "Authentic",
-        "Quiet"
+        "歴史的な町",
+        "伝統的な中庭",
+        "本格的",
+        "静か"
       ],
-      "bookingTips": "Perfect for escaping tourism. Nanzhao Kingdom atmosphere."
+      "bookingTips": "観光客から離れるのに最適。南詔王国の雰囲気。"
     }
   ],
   "payment": [
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Works in most Dali establishments",
+      "description": "大理のほとんどの店で利用可能",
       "howToUse": [
-        "Download before arrival",
-        "Link international card"
+        "到着前にダウンロード",
+        "国際カードを紐付ける"
       ],
       "tips": [
-        "Common in tourist areas",
-        "May not work in remote villages"
+        "観光地で一般的",
+        "辺鄙な村では使えない場合がある"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Accepted in most places",
+      "description": "ほとんどの場所で利用可能",
       "howToUse": [
-        "WeChat required",
-        "International cards accepted"
+        "WeChatが必要",
+        "国際カード対応"
       ],
       "tips": [
-        "Set to English mode",
-        "Useful in villages"
+        "英語モードに設定",
+        "村で役立つ"
       ]
     },
     {
       "method": "Cash",
       "icon": "cash",
-      "description": "Essential for markets and remote areas",
+      "description": "市場や辺鄙な地域に必須",
       "howToUse": [
-        "ATM in Dali Old Town",
-        "Banks in city"
+        "大理古城のATM",
+        "市内の銀行"
       ],
       "tips": [
-        "Bring 500+¥ for Erhai cycling",
-        "Some guesthouses prefer cash"
+        "洱海サイクリングには500元以上持参",
+        "一部のゲストハウスは現金を好む"
       ]
     }
   ],
   "culturalTips": [
     {
       "category": "bai",
-      "title": "Bai Culture",
-      "content": "Dali is home to the Bai ethnic minority. Respect local customs. The Bai have unique traditions including the 'Three-Angel' dress and tie-dye crafts. March Fair and绕三灵 festival are major events.",
+      "title": "白族文化",
+      "content": "大理は白族の居住地です。地元の習慣を尊重してください。白族には「三道茶」の衣装や藍染りの工芸品などの独特の伝統があります。三月街と繞三靈祭りは主要な行事です。",
       "importance": "high"
     },
     {
       "category": "cycling",
-      "title": "Erhai Cycling",
-      "content": "Cycling Erhai Lake is the signature experience. 120km around the lake. Start early, bring water and sunscreen. Rent bikes in Dali or Caicun. The eastern shore is less crowded.",
+      "title": "洱海サイクリング",
+      "content": "洱海湖畔のサイクリングは象徴的な体験です。湖の周囲は120kmあります。早朝に出発し、水と日焼け止めを持参しましょう。大理または才村で自転車をレンタルできます。東側の湖畔は比較的空いています。",
       "importance": "high"
     },
     {
       "category": "weather",
-      "title": "Mountain Weather",
-      "content": "Dali's weather changes quickly. Mountains cause localized weather systems. Even in summer, bring a jacket. Rain can appear suddenly. Spring flowers and autumn colors are spectacular.",
+      "title": "山の天気",
+      "content": "大理の天気はすぐに変化します。山岳地帯によりローカルな気象システムが形成されます。夏でも上着を持ってきてください。雨が突然降ることがあります。春のの花と秋の紅葉は素晴らしい通りです。",
       "importance": "medium"
     },
     {
       "category": "etiquette",
-      "title": "Temple Etiquette",
-      "content": "When visiting Three Pagodas and temples, dress modestly covering shoulders and knees. Remove hats in temples. Don't point feet at Buddha images. Walk clockwise around pagodas.",
+      "title": "寺社でのマナー",
+      "content": "三塔や寺院を訪問する際は、肩と膝を覆う服装で敬虔に訪問してください。寺院では帽子を脱いでください。仏像に足を向けないようにしてください。塔の周りは時計回りに歩いてください。",
       "importance": "medium"
     },
     {
       "category": "tiedye",
-      "title": "Bai Tie-dye Culture",
-      "content": "The Bai are famous for traditional tie-dye (扎染), using natural plant dyes on cotton fabric. Each pattern has symbolic meaning. Zhoucheng village is the center of this craft. Look for butterfly, fish, and flower patterns.",
+      "title": "白族藍染め文化",
+      "content": "白族は伝統的な藍染りで知られています。自然な植物染料を綿生地に使用します。各模様には象徴的な意味があります。周城村がこの工芸の中心です。蝶、魚、花の模様を探してください。",
       "importance": "high"
     },
     {
       "category": "tea",
-      "title": "Yunnan Tea Culture",
-      "content": "Yunnan is famous for Pu'er tea. Dali has tea houses where you can experience tea ceremony. The Bai Three Tea Ceremony (三道茶) represents life flavors: bitter, sweet, and aftertaste. Tea is an important part of local social life.",
+      "title": "雲南茶文化",
+      "content": "雲南，普洱茶で有名です。大理には茶道を体験できる茶館があります。白族の三道茶は人生の味を表します：苦い、甘いのどごしです。茶は地元の社会生活において重要な一部です。",
       "importance": "medium"
     },
     {
       "category": "festivals",
-      "title": "Bai Festivals",
-      "content": "Major Bai festivals include: March Fair (三月街) - horse trading and trading fair in Dali; Rao San Ling (绕三灵) - pilgrimage to Three Sacred Places; Torch Festival (火把节) - lighting torches to ward off pests. Summer and early autumn are festival seasons.",
+      "title": "白族フェスティバル",
+      "content": "主な白族の祭りには次のものがあります：三月街 - 大理での馬市と商業市；繞三灵 - 三聖地への巡礼；火把節 - 害虫を避けるための松明点火。夏から初秋は祭りの季節です。",
       "importance": "high"
     },
     {
       "category": "architecture",
-      "title": "Bai Architecture",
-      "content": "Bai houses feature white walls, grey tiles, and horse-head roofs. Three-in-one courtyards (三坊一照壁) are typical. Look for the精美的门楼 (ornate gate towers) and paintings on walls inside courtyards.",
+      "title": "白族建築",
+      "content": "白族の家は白壁、灰瓦、馬頭壁が特徴です。三坊一照壁が典型です。精巧な門楼（中庭内の装飾的な門塔）と壁の絵画探してください。",
       "importance": "medium"
     },
     {
       "category": "clothing",
-      "title": "Bai Traditional Clothing",
-      "content": "Bai women wear 'Three-Angel' costumes (三道茶) with white jackets, blue belts, and embroidered shoes. The famous 'Phoenix Crown' headdress symbolizes the phoenix. You can rent costumes for photos in tourist areas.",
+      "title": "白族の伝統衣装",
+      "content": "白族の女性は「三道茶」の衣装、白いジャケット、青いベルト、刺しゅう入りの靴を着ています。有名な鳳凰帽の頭飾りは鳳凰を象徴しています。観光エリアでは写真用の衣装をレンタルできます。",
       "importance": "medium"
     },
     {
       "category": "religion",
-      "title": "Bai Religion",
-      "content": "The Bai follow a mix of Buddhism, Taoism, and Benzhu (本主) worship - worship of local deities. Every village has a Benzhu temple. The Three Pagodas are important Buddhist sites. Be respectful when observing rituals.",
+      "title": "白族の宗教",
+      "content": "白族は仏教、道教、そして本主（地元神を崇拝する）の混合を信じています。すべての村には本主寺があります。三塔は重要な佛教遺跡です。儀式を観察する際は敬意を表してください。",
       "importance": "low"
     },
     {
       "category": "music",
-      "title": "Bai Music",
-      "content": "Bai opera (白剧) combines singing, dancing, and acting. Traditional instruments include the Sanxian (三弦) and Horse-head fiddle. You can catch performances at Dali Ancient Town or during festivals.",
+      "title": "白族音楽",
+      "content": "白劇は歌、踊りを組み合わせた伝統芝居です。伝統的な楽器には三弦と馬頭胡琴が含まれています。大理古城または祭りの際にパフォーマンスを見ることができます。",
       "importance": "low"
     },
     {
       "category": "food",
-      "title": "Bai Food Culture",
-      "content": "Bai cuisine features fresh vegetables, mushrooms, and fish. Rushan (乳扇) is stretched milk cheese. Bender (凉鸡) is cold chicken. Try local specialties at markets: Baba (粑粑) flatbread, Ersi (饵丝) rice noodles, and Mi Liangxia (米凉虾) shrimp-shaped jelly dessert.",
+      "title": "白族の食文化",
+      "content": "白族料理は新鮮な野菜、キノコ、魚が特徴です。乳扇は伸ばしたチーズです。涼雞は冷やし鶏です。市場で地元の特産品を食べてください：粑粑蒸しパン、餌丝米ヌードル、米涼蝦のエビ型ジェリーディズです。",
       "importance": "high"
     },
     {
       "category": "crafts",
-      "title": "Bai Silver Crafts",
-      "content": "Bai silver smithing is famous for intricate jewelry and decorative items. Silver is believed to have health benefits. Popular items include silver bracelets, hair ornaments, and tea accessories. Authentic silver has high purity.",
+      "title": "白族の銀細工",
+      "content": "バイ族の銀細工は、精巧な宝石や装飾品で有名であり、銀は健康に良いと考えられています。人気の商品には、銀のブレスレット、髪飾り、茶道具があります。真正な銀は高純度です。",
       "importance": "low"
     },
     {
       "category": "wedding",
-      "title": "Bai Wedding Customs",
-      "content": "Bai weddings feature unique customs including the 'Jiao Zhai' (咬嫁) ritual where the bride bites the groom's ear. Wedding feasts are elaborate multi-course affairs. The bride changes into multiple costumes during the ceremony.",
+      "title": "白族の結婚習慣",
+      "content": "バイ族の結婚式には、新婦が新郎の耳を咬む「焦嫁」儀式など、独自の慣習があります。結婚式の宴は手の込んだ多品目の料理です。花嫁は 式場 で複数の着物に更衣します。",
       "importance": "low"
     },
     {
       "category": "fishing",
-      "title": "Erhai Fishing Culture",
-      "content": "Fishing has been central to Erhai life for centuries. Traditional fishing methods include using cormorants (鸬鹚). Some fishing villages still practice these methods. Fish dishes are staples of local cuisine.",
+      "title": "洱海漁業文化",
+      "content": "漁業は洱海の生活にとって数世紀にわたり中心的な役割を果たしてきました。伝統的な漁法には鸕鶿（う）を使用するものがあります。一部の漁村では、今でもこれらの方法を実践しています。魚料理は地元の食卓の主食です。",
       "importance": "medium"
     },
     {
       "category": "dialect",
-      "title": "Bai Language",
-      "content": "The Bai language (白语) is tonal and completely different from Mandarin. Many locals speak both Bai and Mandarin. Learning a few Bai phrases like 'Ni hao' (hello) and ' Xie xie' (thank you) in Bai will be appreciated.",
+      "title": "白族語",
+      "content": "白語（バイ語）は普通話とは完全に異なる声調言語です。多くの現地人は白語と北京語の両方を話します。「ニーハオ」（こんにちは）や「シエシエ」（ありがとう）などの白語フレーズを覚えると、評価されます。",
       "importance": "low"
     },
     {
       "category": "photography",
-      "title": "Photography Tips",
-      "content": "Dali offers excellent photography opportunities: sunrise at Erhai Lake, the pink wall in Xizhou, Cangshan Mountain reflections, and Bai people in traditional clothing. The best light is early morning and late afternoon. Bring a tripod for night shots of the Three Pagodas.",
+      "title": "写真撮影のポイント",
+      "content": "ダリーは優れた写真スポットがあります：’erhai’湖の日の出、西州のピンクの壁、’苍山’山の反射、伝統衣装を着たバイ族の人々。最適な光は朝早くと夕暮れ時です。三塔の夜景撮影には三脚を持っていくと良いでしょう。",
       "importance": "medium"
     },
     {
       "category": "shopping",
-      "title": "Dali Shopping",
-      "content": "Dali is famous for tie-dye products, silver jewelry, tea (especially Pu'er), and marble. The best shopping is at the morning market in Xizhou and Zhoucheng for tie-dye, and the Foreigners Street in Dali Old Town for silver and souvenirs. Bargaining is expected in markets.",
+      "title": "ダリショッピング",
+      "content": "大理は藍染製品、銀細工、お茶（特に普洱茶）、大理石で有名です。最高の買い物は喜洲の朝市と周城の藍染、そして大理旧市街の外国人通りで銀製品やお土産を購入できます。市場では値切りが一般的です。",
       "importance": "medium"
     },
     {
       "category": "health",
-      "title": "Altitude and Health",
-      "content": "Dali sits at about 1972m elevation. Some visitors may experience mild altitude sickness. Stay hydrated, avoid strenuous activity on arrival, and eat lightly. The medical facilities in Dali are adequate for basic health issues.",
+      "title": "高度と健康",
+      "content": "ダリーは海拔約1972mに位置しています。一部の訪問者は軽度の高山病を経験する可能性があります。到着後は水分を取り、過度な活動を避け、軽めの食事を取りましょう。ダリーの医療施設は基本的な健康問題に対応可能です。",
       "importance": "medium"
     },
     {
       "category": "language",
-      "title": "English in Dali",
-      "content": "English is limited in Dali outside tourist areas. Learning a few Mandarin phrases helps. Many young people in Dali Old Town and Shuanglang speak basic English. Translation apps are helpful for communicating with older locals.",
+      "title": "ダリでの英語",
+      "content": "ダリーでは観光地以外では英語が通じません。Mandarin のフレーズを覚えると役立ちます。ダリー旧市街と双廊の若者は基本的な英語を話します。翻訳アプリ старший локальныеとのコミュニケーションに役立ちます。",
       "importance": "medium"
     },
     {
       "category": "sustainability",
-      "title": "Environmental Awareness",
-      "content": "Erhai Lake's ecosystem is fragile. Avoid single-use plastics, don't swim in restricted areas, and use eco-friendly transportation. Several initiatives promote lake protection. Be a responsible tourist.",
+      "title": "環境意識",
+      "content": "洱海の生態系は脆弱です。使い捨てプラスチックを避け、立ち入り禁止区域では泳がないでください。環境に優しい移動手段を利用し、湖の保護活動に参加しましょう。責任ある旅行者になりましょう。",
       "importance": "high"
     },
     {
       "category": "nanzhao",
-      "title": "Nanzhao Kingdom Heritage",
-      "content": "Dali was the capital of the Nanzhao Kingdom (738-902 AD), one of the longest-ruling dynasties in Chinese history. The Three Pagodas, Nanzhao Island, and Weishan Ancient Town reflect this heritage. Understanding this history enriches the visit.",
+      "title": "南詔王国遺産",
+      "content": "大理は南詔国（738-902年）の首都でした。中国史上最も長く続いた王朝の一つです。三塔、南詔島、巍山古城はこの遺産を反映しています。歴史を理解すると訪問がより豊かなものになります。",
       "importance": "medium"
     },
     {
       "category": "coffee",
-      "title": "Yunnan Coffee Culture",
-      "content": "Yunnan produces some of China's best coffee. Dali has several specialty coffee shops using locally grown beans. Try the Yunnan pour-over at cafes on Foreigners Street. Coffee plantations are nearby and offer tours.",
+      "title": "雲南コーヒー文化",
+      "content": "雲南省は中国で最高品質のコーヒーを生産しています。大理には地元産の豆を使ったスペシャルティコーヒーショップがいくつかあります。外国人通りのカフェで雲南式のハンドドリップを試してみましょう。近くにはコーヒー農園もあり、見学ツアーを提供しています。",
       "importance": "low"
     },
     {
       "category": "gay-friendly",
-      "title": "LGBTQ+ Friendly Destination",
-      "content": "Dali has a reputation as one of China's more LGBTQ+ friendly destinations, with a relatively open atmosphere and welcoming vibe. Several bars and cafes cater to the community. The laid-back atmosphere is generally accepting.",
+      "title": "LGBTQ+フレンドリーな旅行先",
+      "content": "ダリーは中国でも比較的LGBTQ+に優しい目的地として知られており、比較的オープンな雰囲気と歓迎的な雰囲気があります。いくつかのバーやカフェがこのコミュニティ向けです。リラックスした雰囲気は一般的に受け入れられています。",
       "importance": "medium"
     },
     {
       "category": "digital-nomad",
-      "title": "Digital Nomad Hub",
-      "content": "Dali has become a popular base for digital nomads and remote workers. Many cafes offer fast WiFi and quiet workspaces. Monthly apartment rentals are affordable. Coworking spaces are available in Dali Old Town.",
+      "title": "デジタルノマドハブ",
+      "content": "大理はデジタルノマドやリモートワーカーの人気の拠点になっています。多くのカフェが高速WiFiと静かな作業スペースを提供しています。月額のアパート賃料は手頃です。コワーキングスペースは大理旧市街で利用できます。",
       "importance": "medium"
     },
     {
       "category": "nightlife",
-      "title": "Dali Nightlife",
-      "content": "Dali has a vibrant nightlife scene around Foreigners Street with bars, live music, and clubs. Shuanglang has a more relaxed evening atmosphere with lake-view bars. Most nightlife closes by midnight on weekdays.",
+      "title": "大理のナイトライフ",
+      "content": "ダリーは外国人通りを中心とした活気のあるナイトライフシーンを持ち、バー、ライブ音楽、クラブがあります。双廊は湖を眺められるバーなど、よりリラックスした雰囲気の夕べがあります。ほとんどのナイトライフは平日は深夜0時前に閉店します。",
       "importance": "low"
     },
     {
       "category": "weather",
-      "title": "Best Time to Visit",
-      "content": "The best times to visit Dali are March-May (spring flower season) and September-November (clear skies, autumn colors). Summer (June-August) is rainy but green. Winter is dry and sunny but cold. Avoid Chinese holidays when tourist sites are crowded.",
+      "title": "最佳訪問時期",
+      "content": "ダリーへの最適な訪問時期は3月-5月（春の花の季節）と9月-11月（快晴、秋の紅葉）です。夏（6月-8月）は雨が比較的多いですが緑豊かです。冬は乾燥して晴れていますが寒いです。中国の祝日は観光地が混雑するため避けましょう。",
       "importance": "high"
     }
   ],
@@ -2195,612 +2195,626 @@
     {
       "type": "ambulance",
       "name": "大理急救中心",
-      "nameEn": "Dali Emergency Center",
+      "nameEn": "在広州シンガポール総領事館",
       "phone": "120",
-      "notes": "Dali People's Hospital has English interpreters"
+      "notes": "大理市人民医院には英語通訳がいます",
+      "nameJa": "大理急救中心"
     },
     {
       "type": "police",
       "name": "大理市公安局",
       "nameEn": "Dali Public Security Bureau",
       "phone": "110",
-      "notes": "Tourist police in Dali Old Town"
+      "notes": "大理古城の観光警察",
+      "nameJa": "大理市公安局"
     },
     {
       "type": "hospital",
       "name": "大理市第一人民医院",
       "nameEn": "Dali First People's Hospital",
       "phone": "+86 872 212 5465",
-      "address": "Yeyou Road, Dali City",
+      "address": "葉友路、大理市",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
       },
-      "notes": "Main hospital in Dali"
+      "notes": "大理の主要病院",
+      "nameJa": "大理市第一人民医院"
     },
     {
       "type": "embassy",
-      "name": "美国驻昆明总领事馆",
+      "name": "米国駐昆明総領事館",
       "nameEn": "US Consulate General Kunming",
       "phone": "+86 871 6364 1057",
-      "address": "Kunming (nearest US consular services)",
-      "notes": "For US citizens in Dali region"
+      "address": "昆明（最寄りの米国領事サービス）",
+      "notes": "大理地域の米国国民向け",
+      "nameJa": "米国駐昆明総領事館"
     },
     {
       "type": "hospital",
       "name": "大理州人民医院",
       "nameEn": "Dali Prefecture People's Hospital",
       "phone": "+86 872 212 5075",
-      "address": "Yeyou Road, Dali City",
+      "address": "葉友路、大理市",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
       },
-      "notes": "Another major hospital with emergency services"
+      "notes": "救急サービスを備えたもう一つの主要病院",
+      "nameJa": "大理州人民医院"
     },
     {
       "type": "tourist-police",
-      "name": "大理旅游警察",
+      "name": "大理観光警察",
       "nameEn": "Dali Tourist Police",
       "phone": "+86 872 267 4110",
-      "notes": "Tourist police station in Dali Old Town"
+      "notes": "大理古城の観光警察署",
+      "nameJa": "大理観光警察"
     },
     {
       "type": "fire",
       "name": "大理消防",
       "nameEn": "Dali Fire Department",
       "phone": "119",
-      "notes": "Fire and rescue services"
+      "notes": "消防・救助サービス",
+      "nameJa": "大理消防"
     },
     {
       "type": "embassy",
-      "name": "英国驻昆明总领事馆",
+      "name": "英国駐昆明総領事館",
       "nameEn": "UK Consulate Kunming",
       "phone": "+86 871 6564 6689",
-      "address": "Kunming",
-      "notes": "For UK citizens in Dali region"
+      "address": "昆明",
+      "notes": "大理地域の英国国民向け",
+      "nameJa": "英国駐昆明総領事館"
     },
     {
       "type": "embassy",
-      "name": "澳大利亚驻昆明总领事馆",
+      "name": "オーストラリア駐昆明総領事館",
       "nameEn": "Australia Consulate Kunming",
       "phone": "+86 871 6856 2100",
-      "address": "Kunming",
-      "notes": "For Australian citizens in Dali region"
+      "address": "昆明",
+      "notes": "大理地域のオーストラリア国民向け",
+      "nameJa": "オーストラリア駐昆明総領事館"
     },
     {
       "type": "embassy",
-      "name": "日本驻昆明总领事馆",
+      "name": "在昆明日本国総領事館",
       "nameEn": "Japan Consulate Kunming",
       "phone": "+86 871 6314 8288",
-      "address": "Kunming",
-      "notes": "For Japanese citizens in Dali region"
+      "address": "昆明",
+      "notes": "大理地域の日本国民向け",
+      "nameJa": "在昆明日本国総領事館"
     },
     {
       "type": "embassy",
-      "name": "法国驻昆明总领事馆",
+      "name": "フランス駐昆明総領事館",
       "nameEn": "France Consulate Kunming",
       "phone": "+86 871 6331 5889",
-      "address": "Kunming",
-      "notes": "For French citizens in Dali region"
+      "address": "昆明",
+      "notes": "大理地域のフランス国民向け",
+      "nameJa": "フランス駐昆明総領事館"
     },
     {
       "type": "embassy",
-      "name": "德国驻昆明总领事馆",
+      "name": "ドイツ駐昆明総領事館",
       "nameEn": "Germany Consulate Kunming",
       "phone": "+86 871 6312 5555",
-      "address": "Kunming",
-      "notes": "For German citizens in Dali region"
+      "address": "昆明",
+      "notes": "大理地域のドイツ人旅行者向け",
+      "nameJa": "ドイツ駐昆明総領事館"
     },
     {
       "type": "embassy",
-      "name": "加拿大驻广州总领事馆",
+      "name": "カナダ駐広州総領事館",
       "nameEn": "Canada Consulate Guangzhou",
       "phone": "+86 20 3888 0400",
-      "address": "Guangzhou",
-      "notes": "For Canadian citizens in Dali region"
+      "address": "広州",
+      "notes": "大理地域のカナダ人旅行者向け",
+      "nameJa": "カナダ駐広州総領事館"
     },
     {
       "type": "embassy",
-      "name": "韩国驻昆明总领事馆",
+      "name": "在昆明韓国総領事館",
       "nameEn": "South Korea Consulate Kunming",
       "phone": "+86 871 6566 2115",
-      "address": "Kunming",
-      "notes": "For Korean citizens in Dali region"
+      "address": "昆明",
+      "notes": "大理地域の韓国人旅行者向け",
+      "nameJa": "在昆明韓国総領事館"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese, Bai dialect in local areas",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Bottled water recommended; tap water safe after boiling"
+    "language": "中国語（マンダリン）",
+    "currency": "人民元 (CNY/RMB)",
+    "visa": "ほとんどの国籍でビザが必要です。対象者は空港で72時間トランジットビザを取得できます。",
+    "timeZone": "UTC+8 (中国標準時)",
+    "electricity": "220V/50Hz、A/I タイププラグ",
+    "water": "水道水は飲めますが、ペットボトル推奨"
   },
   "attractions": [
     {
       "id": "erhai-lake",
       "name": "洱海",
-      "nameEn": "Erhai Lake",
+      "nameEn": "洱海",
       "category": "natural",
-      "description": "A beautiful highland lake often called 'Sea of Clouds' offering scenic cycling paths, traditional fishing villages, and stunning mountain backdrops.",
-      "address": "Erhai Lake, Dali Bai Autonomous Prefecture",
+      "description": "中国第五の淡水湖で、面積は2339平方キロメートル。モンゴル語で「海のような湖」を意味する。",
+      "address": "フルンボイル市新バルグ右旗",
       "coordinates": {
         "lat": 25.7522,
         "lng": 100.1872
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free (some scenic spots may charge)",
-      "recommendedVisitTime": "Half to full day",
+      "openingHours": "全天",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
-        "Cycling path around lake",
-        "Fisherman's village",
-        "Shuanglang village",
-        "Wutai Lake view"
+        "湖光山色",
+        "渡り鳥",
+        "日落",
+        "洱海（五台山）展望"
       ],
-      "tips": "Rent a bicycle (40-80¥/day) to circle the lake. Start early to avoid tour buses. Best light for photos in early morning.",
+      "tips": "夏が最適で、全魚宴（全魚料理）を味わえます。",
       "image": "/img/ext/6faaa02aad08.webp",
       "phone": "+86 087 2 8699 3091"
     },
     {
       "id": "three-pagodas",
       "name": "大理三塔",
-      "nameEn": "Three Pagodas of Dali",
+      "nameEn": "大理三塔",
       "category": "cultural",
-      "description": "Iconic trio of ancient Buddhist pagodas dating back to the 9th century, symbol of Dali's historic Nanzhao Kingdom.",
-      "address": "1 Hongshan Road, Dali City",
+      "description": "9世紀に遡る古代仏教塔の象徴的な三塔群で、大理の歴史的な南詔王国の象徴です。",
+      "address": "大理市紅山路1号",
       "coordinates": {
         "lat": 25.6722,
         "lng": 100.1572
       },
       "openingHours": "07:00-19:00",
       "ticketPrice": "75¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Three Pagodas main temple",
-        "Butterfly spring nearby",
-        "Ancient Buddhist artifacts"
+        "三塔本体",
+        "近くの蝴蝶泉",
+        "古代仏教美術品"
       ],
-      "tips": "Visit in morning to avoid tour crowds. Combine with nearby Butterfly Spring in spring. Good photo opportunities from temple courtyard.",
+      "tips": "朝の時間帯に訪問して団体の客を避ける建議します。春には近くの蝴蝶泉との組み合わせが最適です。寺院の中庭から良い写真撮影のポイントがあります。",
       "image": "/img/ext/1869dc714dd1.webp",
       "phone": "+86 087 2 7534 3361"
     },
     {
       "id": "dali-old-town",
       "name": "大理古城",
-      "nameEn": "Dali Old Town",
+      "nameEn": "大理古城",
       "category": "cultural",
-      "description": "A beautifully preserved ancient town with traditional Bai architecture, cobblestone streets, and lively local culture.",
-      "address": "Dali Old Town, Dali City",
+      "description": "伝統的な白族建築、趣のある石畳の道、生き生きとした地元文化が美しく保存された古代の町です。",
+      "address": "大理市大理古城",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free (某些景点需要门票)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料（一部の景点は入場券が必要）",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Foreigners Street",
-        "Five Phoenix Pagoda",
-        "Dali University area",
-        "Bai tie-dye workshops"
+        "外国人通り",
+        "五鳳塔",
+        "大理大学エリア",
+        "バイ族藍染工作室"
       ],
-      "tips": "Stay overnight to experience night atmosphere. Early morning before shops open for photos. Explore side alleys for authentic Bai life.",
+      "tips": "夜の雰囲気を体験するために宿泊しましょう。お店が開く前の早朝は写真撮影に最適です。路地裏を探検して本物の白族の暮らしを体験してください。",
       "image": "/img/ext/a6e176e9ca1c.webp",
       "phone": "+86 872 267 1545"
     },
     {
       "id": "xizhou-market",
       "name": "喜洲古镇",
-      "nameEn": "Xizhou Ancient Town",
+      "nameEn": "喜洲古鎮",
       "category": "cultural",
-      "description": "Well-preserved Bai ethnic town famous for its architecture, local markets, and authentic Bai way of life.",
-      "address": "Xizhou Town, Dali County",
+      "description": "建築、地元市場、本物のバイ族の生活を送りで有名な、保存状態の良いバイ族の町。",
+      "address": "大理県喜洲鎮",
       "coordinates": {
         "lat": 25.7622,
         "lng": 100.1272
       },
-      "openingHours": "Open 24 hours (market 08:00-18:00)",
-      "ticketPrice": "Free (Zhou's compound 60¥)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24時間営業（市場は08:00-18:00）",
+      "ticketPrice": "無料（周氏邸宅60¥）",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Zhou's Residence",
-        "Bai Tie-dye workshops",
-        "Friday market",
-        "Bai costume photos"
+        "周氏邸宅",
+        "云南扎染ワークショップ",
+        "金曜市",
+        "民族衣装写真"
       ],
-      "tips": "Visit on market day (Friday, Saturday) for authentic experience. Try Baba (Bai flatbread) from vendors. Zhou's compound is worth entrance fee.",
+      "tips": "市場日（金曜日、土曜日）に訪問して本格的な体験を。露店からのババ（バイ族のフラットブレッド）をお試しください。周氏邸宅は入場料価値あり。",
       "image": "/img/ext/af97d8cb4b05.webp",
       "phone": "+86 087 2 3514 2224"
     },
     {
       "id": "shuanglang",
       "name": "双廊",
-      "nameEn": "Shuanglang",
+      "nameEn": "シュアンラン（双廊）",
       "category": "natural",
-      "description": "A serene lakeside village on Erhai Lake's eastern shore, known for scenic beauty, boutique hotels, and photography spots.",
-      "address": "Shuanglang Town, Dali County",
+      "description": "洱海東岸の静かな湖畔の村。景観、ブティックホテル、写真スポットで有名。",
+      "address": "大理県シュアンラン鎮",
       "coordinates": {
         "lat": 25.8822,
         "lng": 100.1572
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-4 hours",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2〜4時間",
       "highlights": [
-        "Nantian photographer point",
-        "Small fishing villages",
-        "Lakeside cafes",
-        "Yoga retreats"
+        "南天写真スポット",
+        "小さな漁村",
+        "湖畔カフェ",
+        "ヨガリトリート"
       ],
-      "tips": "Stay overnight at boutique lakeside hotels. Best sunset views from Nantian. Rent electric bike to explore coastline.",
+      "tips": "湖畔ブティックホテルに泊まる。南天からの夕日がおすすめ。電動自行車を借りて海岸線を探索。",
       "image": "/img/ext/39e307f398db.webp",
       "phone": "+86 087 2 0104 3559"
     },
     {
       "id": "cangshan-mountain",
       "name": "苍山",
-      "nameEn": "Cangshan Mountain",
+      "nameEn": "蒼山",
       "category": "natural",
-      "description": "A dramatic mountain range behind Dali with hiking trails, ancient temples, and panoramic views of Erhai Lake.",
-      "address": "Cangshan Mountain, west of Dali",
+      "description": "大理の奥にある麗大な山脈で、登山道、古寺、洱海のパノ라마ビューがあります",
+      "address": "蒼山、雲南省大理の西方",
       "coordinates": {
         "lat": 25.6722,
         "lng": 100.1072
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "40¥ (cable car extra)",
-      "recommendedVisitTime": "Half to full day",
+      "ticketPrice": "40元（ゴンドラ別途）",
+      "recommendedVisitTime": "半天から一日",
       "highlights": [
-        "Giant's Head with 18 peaks",
-        "Jade Belt Road",
-        "Qiliang Temple",
-        "Alpine meadows"
+        "十八峰を持つ巨人峰",
+        "玉帯路",
+        "淇梁寺",
+        "高山草地"
       ],
-      "tips": "Take the cable car up for easier hiking. Weather changes quickly - bring layers and rain gear. Hiking trail is well marked but steep.",
+      "tips": "登頂しやすくするためにゴンドラを利用しましょう。天候は急速に変わるので、レイヤーウェアと雨具を持ってください。登山道はよく整備されていますが、急勾配です",
       "image": "/img/ext/38f44f1e4171.webp",
       "phone": "+86 087 2 5125 6111"
     },
     {
       "id": "weibao-mountain",
       "name": "巍宝山",
-      "nameEn": "Weibao Mountain",
+      "nameEn": "巍宝山",
       "category": "cultural",
-      "description": "A sacred Taoist mountain with ancient temples, hiking trails, and panoramic views of the Dali valley.",
-      "address": "Weibao Mountain, Weishan County",
+      "description": "聖なる道教の山で、古寺、登山道、大理盆地のパノラマビューがあります",
+      "address": "巍宝山、巍山県",
       "coordinates": {
         "lat": 25.2322,
         "lng": 100.3372
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "40¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4時間",
       "highlights": [
-        "Ancient Taoist temples",
-        "Mountain scenery",
-        "Less crowded",
-        "Authentic experience"
+        "古代道教寺院",
+        "山の景色",
+        "人が少ない",
+        "本格的な体験"
       ],
-      "tips": "Less visited than Cangshan. Good for hikers seeking solitude. Bring water and snacks. Start in morning.",
+      "tips": "蒼山より訪問者が少ないです。静寂を求めるハイカーーに適しています。水と軽食を持ってきてください。 朝から出発してください。",
       "image": "/img/ext/54c1ad3edb17.webp",
       "phone": "+86 087 2 1045 2098"
     },
     {
       "id": "butterfly-spring",
       "name": "蝴蝶泉",
-      "nameEn": "Butterfly Spring",
+      "nameEn": "蝶泉",
       "category": "natural",
-      "description": "A legendary spring surrounded by ancient trees, traditionally associated with butterfly mating season in spring.",
-      "address": "Butterfly Spring Park, 20km north of Dali",
+      "description": "古代の木々に囲まれた伝説の泉で、春の蝶の繁殖期と伝統的に関連付けられています。",
+      "address": "蝶泉公園、大理から北へ20km",
       "coordinates": {
         "lat": 25.8522,
         "lng": 100.1272
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Legendary spring",
-        "Butterfly exhibition",
-        "Bai performance",
-        "Ancient trees"
+        "伝説の泉",
+        "蝶展示",
+        "白族パフォーマンス",
+        "古木"
       ],
-      "tips": "Best in April-May when actual butterflies appear. Combine with Xizhou and Erhai Lake cycling. Performance times: 9:30, 11:00, 14:00, 15:30.",
+      "tips": "実際の蝶が現れる4月ーが最佳です。喜州と洱海湖のサイクリングと組み合わせてください。公演時間：9:30、11:00、14:00、15:30。",
       "image": "/img/ext/fd780ef70830.webp",
       "phone": "+86 087 2 5910 4245"
     },
     {
       "id": "zhoucheng-tiedye",
       "name": "周城扎染",
-      "nameEn": "Zhoucheng Tie-dye Village",
+      "nameEn": "周城藍染村",
       "category": "cultural",
-      "description": "The largest Bai ethnic village famous for traditional tie-dye crafts. Over 90% of residents are involved in tie-dye production.",
-      "address": "Zhoucheng Village, Dali County",
+      "description": "伝統的な藍染りで有名な最大規模の白族の村。住民の90%以上が藍染生産に関わっています。",
+      "address": "周城村、大理県",
       "coordinates": {
         "lat": 25.8022,
         "lng": 100.0872
       },
       "openingHours": "08:00-19:00",
-      "ticketPrice": "Free (workshops extra)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "無料（ワークショップ別）",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Tie-dye workshops",
-        "Bai folk performances",
-        "Ancient architecture",
-        "Miao-Hua marriage market"
+        "藍染ワークショップ",
+        "白族民俗パフォーマンス",
+        "古代建築",
+        "ミャオ族の花 결혼 시장"
       ],
-      "tips": "Visit morning market on weekends. Try DIY tie-dye experience. Best light for photos in early morning.",
+      "tips": "週末の朝市を訪れましょう。藍染めのDIY体験をしてみましょう。写真は早朝がベストです。",
       "image": "/img/ext/b2c1f8758015.webp",
       "phone": "+86 087 2 3245 9401"
     },
     {
       "id": "weishan-ancient",
       "name": "巍山古城",
-      "nameEn": "Weishan Ancient Town",
+      "nameEn": "巍山古城",
       "category": "cultural",
-      "description": "A perfectly preserved ancient city and the birthplace of the Nanzhao Kingdom. Less touristy than Dali Old Town with authentic local life.",
-      "address": "Weishan County, Dali",
+      "description": "完全に保存された古城で、南詔王国の出生地。大理古城より観光客が少なく、地元の生活があります。",
+      "address": "巍山県、大理",
       "coordinates": {
         "lat": 25.2322,
         "lng": 100.3072
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free (巍山文庙 20¥)",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料（巍山文廟 20¥）",
+      "recommendedVisitTime": "3-4時間",
       "highlights": [
-        "Nanzhao culture",
-        "Ancient city walls",
-        "Tuojiang Temple",
-        "Weishan snacks"
+        "南詔文化",
+        "古城壁",
+        "沱江寺",
+        "巍山の軽食"
       ],
-      "tips": "Come for the torch festival (July-August). Try Weishan's famous Nanjiang rice noodles. Start from the south gate.",
+      "tips": "七月八月のに参加してください。巍山名物の南江米線を食べてください。南ゲートから始めてください。",
       "image": "/img/ext/8f7f83c1713d.webp",
       "phone": "+86 087 2 8222 9967"
     },
     {
       "id": "nanzhao-island",
-      "name": "南诏风情岛",
-      "nameEn": "Nanzhao Fengqing Island",
+      "name": "南詔風情島",
+      "nameEn": "南詔風情島",
       "category": "cultural",
-      "description": "A small island in Erhai Lake showcasing Nanzhao Kingdom culture with statues, temples, and traditional Bai architecture.",
-      "address": "Erhai Lake, near Shuanglang",
+      "description": "洱海にある小さな島で、像、寺、伝統的な白族建築で南詔王国文化を紹介します。",
+      "address": "洱海、双廊附近",
       "coordinates": {
         "lat": 25.8722,
         "lng": 100.1672
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "50¥ (includes boat)",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "50元（船込み）",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Nanzhao King statue",
-        "Bai architecture",
-        "Buddhist temple",
-        "Lake views"
+        "南詔王像",
+        "白族建築",
+        "仏教寺院",
+        "湖の景色"
       ],
-      "tips": "Combine with Shuanglang visit. Take the boat to the island. Best visited in morning.",
+      "tips": "双廊訪問と組み合わせてください。島へ船で行ってください。午前中の訪問が最佳です。",
       "image": "/img/ext/b6efc229d6e8.webp",
       "phone": "+86 087 2 8131 4614"
     },
     {
       "id": "xiaoputuo",
       "name": "小普陀",
-      "nameEn": "Xiaoputuo",
+      "nameEn": "小普陀",
       "category": "cultural",
-      "description": "A tiny island temple in Erhai Lake with a small pagoda, one of the most photographed spots in Dali.",
-      "address": "Erhai Lake, eastern shore",
+      "description": "洱海にある小さな島の寺で、小塔があり、大理で最も撮影される場所のつです。",
+      "address": "洱海、東海岸",
       "coordinates": {
         "lat": 25.9022,
         "lng": 100.1772
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "30¥ (boat extra)",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "30元（船別）",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "Island pagoda",
-        "Fisherman's temple",
-        "Sunrise views",
-        "Boat ride"
+        "島の塔",
+        "漁師寺",
+        "日の出の景色",
+        "乗船体験"
       ],
-      "tips": "Best at sunrise for photography. Can feed seagulls from the boat. Combine with cycling the eastern shore.",
+      "tips": "写真には日の出が最適です。船からカモメに餌を与えられます。東海岸サイクリングと組み合わせてください。",
       "image": "/img/ext/9711badd781a.webp",
       "phone": "+86 087 2 4828 0338"
     },
     {
       "id": "ximatian",
-      "name": "洗马潭",
-      "nameEn": "Ximatian",
+      "name": "洗馬潭",
+      "nameEn": "キシマティアン",
       "category": "natural",
-      "description": "A high-altitude alpine meadow and marsh at Cangshan Mountain, accessible by cable car with stunning views.",
-      "address": "Cangshan Mountain, highest point",
+      "description": "蒼山にある高所の高山草原と湿原で、ケーブルカーでアクセスでき、素晴らしい景色が広がります。",
+      "address": "蒼山、頂上地点",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.0872
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "100¥ (cable car included)",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "100元（ケーブルカー込み）",
+      "recommendedVisitTime": "3-4時間",
       "highlights": [
-        "Alpine meadow",
-        "Mountain marsh",
-        "Panoramic views",
-        "Wildflowers"
+        "高山草原",
+        "山岳湿原",
+        "パノラマ眺望",
+        "野の花"
       ],
-      "tips": "Take the cable car up. Weather changes rapidly - bring warm layers. Best visited in summer for wildflowers.",
+      "tips": "ケーブルカーで上山してください。天候が急変しやすいので、防寒着をお持ちください。夏の花見的最佳です。",
       "image": "/img/ext/ea71a28d01bf.webp",
       "phone": "+86 087 2 5758 2816"
     },
     {
       "id": "tianlongcave",
-      "name": "天龙洞",
-      "nameEn": "Tianlong Cave",
+      "name": "天龍洞",
+      "nameEn": "天龍洞",
       "category": "cultural",
-      "description": "Ancient Buddhist cave temple with colorful statues and carvings dating back to the Nanzhao Kingdom period.",
-      "address": "Cangshan Mountain, lower slope",
+      "description": "色鮮やかな像や彫刻を持つ古代の仏教洞窟寺院で、南詔国時代に遡ります。",
+      "address": "蒼山、麓",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1172
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Buddhist statues",
-        "Ancient carvings",
-        "Cave exploration",
-        "Mountain scenery"
+        "仏像",
+        "古代の彫刻",
+        "洞窟探検",
+        "山の景色"
       ],
-      "tips": "Combine with Cangshan hike. The cave is smaller than it looks from outside. Good for shelter if raining.",
+      "tips": "蒼山ハイキングと合わせることを推奨します。洞窟は外観より狭いです。雨宿りに適しています。",
       "image": "/img/ext/67e7a64c5119.webp",
       "phone": "+86 087 2 5973 6910"
     },
     {
       "id": "erhai-westlake",
       "name": "洱源西湖",
-      "nameEn": "Erhai West Lake",
+      "nameEn": "エルハイ・ウェストレイク",
       "category": "natural",
-      "description": "A beautiful lake area with wetland scenery, lotus fields, and traditional Bai fishing villages. Less crowded than Erhai Lake.",
-      "address": "Eryuan County, Dali",
+      "description": "湿地風景蓮田伝統的なバイ族の漁村がある美しい湖エリア。エルハイ湖より混雑していません。",
+      "address": "大理市、洱源県",
       "coordinates": {
         "lat": 26.0522,
         "lng": 100.0872
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free (boat tours extra)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料（ボートツアーは別料金）",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Lotus fields",
-        "Wetland scenery",
-        "Fishing villages",
-        "Bird watching"
+        "蓮畑",
+        "湿地風景",
+        "漁村",
+        "バードウォッチング"
       ],
-      "tips": "Best in summer for lotus. Take a boat tour through the waterways. Good for cycling combined with nearby temples.",
+      "tips": "夏蓮が最適です。水路を巡るボートツアーに参加してください。周辺の寺院とサイクリングに最適です。",
       "image": "/img/ext/a23362069697.webp",
       "phone": "+86 087 2 8790 6120"
     },
     {
       "id": "xizhou-haishe",
-      "name": "喜洲海舌生态公园",
-      "nameEn": "Xizhou Haishe Eco Park",
+      "name": "喜洲海舌生態公園",
+      "nameEn": "喜洲海岸生態公園",
       "category": "natural",
-      "description": "A peninsula extending into Erhai Lake, offering 180-degree views of the lake and Cangshan Mountains.",
-      "address": "Near Xizhou Ancient Town",
+      "description": "洱海に突出した半島で、洱海と蒼山の180度の眺望を提供します。",
+      "address": "喜洲古鎮近く",
       "coordinates": {
         "lat": 25.7722,
         "lng": 100.1172
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Peninsula viewpoint",
-        "Lake and mountain views",
-        "Photography spot",
-        "Shoreline walks"
+        "半島展望台",
+        "湖と山の景色",
+        "写真スポット",
+        "湖畔ウォーク"
       ],
-      "tips": "Best at sunrise or sunset. Very crowded on weekends. Combine with Xizhou Baba tour.",
+      "tips": "日の出と日没がベストです。週末は非常に混雑します。喜洲ツアーと組み合わせましょう。",
       "image": "/img/ext/d379551d93fd.webp",
       "phone": "+86 087 2 0943 4484"
     },
     {
       "id": "dali-museum",
-      "name": "大理州博物馆",
-      "nameEn": "Dali Prefecture Museum",
+      "name": "大理州博物館",
+      "nameEn": "大理州博物館",
       "category": "cultural",
-      "description": "A modern museum showcasing Dali's history from Nanzhao Kingdom to present, with artifacts and interactive exhibits.",
-      "address": "Dali City, near Erhai Lake",
+      "description": "南詔国から現在に至る大理の歴史を示す最新の博物館で、遺物とインタラクティブ展示があります。",
+      "address": "大理市、洱海近く",
       "coordinates": {
         "lat": 25.6622,
         "lng": 100.1772
       },
-      "openingHours": "09:00-17:00 (closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "09:00-17:00（月曜日休館）",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Nanzhao Kingdom artifacts",
-        "Bai ethnic culture",
-        "Buddhist art",
-        "Interactive exhibits"
+        "南詔国の遺物",
+        "大理族文化",
+        "仏教芸術",
+        "インタラクティブ展示"
       ],
-      "tips": "Good for rainy days. English descriptions available. Combine with nearby Erhai Lake walk.",
+      "tips": "雨の日に的良好です。英語の説明があります。近くの洱海ウォークと組み合わせてください。",
       "image": "/img/ext/a6b2943394e9.webp",
       "phone": "+86 087 2 8842 9002"
     },
     {
       "id": "jizhao-temple",
       "name": "寂照庵",
-      "nameEn": "Jizhao Temple",
+      "nameEn": "慈照寺",
       "category": "cultural",
-      "description": "A serene Buddhist temple famous for its thousands of potted flowers and peaceful atmosphere.",
-      "address": "Cangshan Mountain slope",
+      "description": "多数の盆栽の花と静かな氛囲で知られる静かな仏教寺院です。",
+      "address": "蒼山の斜面",
       "coordinates": {
         "lat": 25.6722,
         "lng": 100.1272
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "Free (donations welcome)",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "無料（寄付は歓迎）",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Flower gardens",
-        "Zen atmosphere",
-        "Vegetarian tea",
-        "Mountain location"
+        "花園",
+        "禅の雰囲気",
+        "お茶の試飲",
+        "山立地"
       ],
-      "tips": "Try the vegetarian food. Very peaceful. Wear comfortable shoes for the walk up. Bring cash for donations.",
+      "tips": "精進料理を試してくださいとても静かです。登拝には動きやすい靴をお持ちください。寄付金用に現金を用意してください。",
       "image": "/img/ext/e1e1c86881fa.webp",
       "phone": "+86 087 2 5922 4379"
     },
     {
       "id": "zhang-garden",
-      "name": "张家花园",
-      "nameEn": "Zhang's Garden",
+      "name": "張家花園",
+      "nameEn": "張氏庭園",
       "category": "cultural",
-      "description": "A restored Bai courtyard garden showcasing traditional Bai architecture, with tea tasting and cultural performances.",
-      "address": "Near Dali Old Town",
+      "description": "伝統的な白族建築を見せる修復された白族の中庭庭園で、お茶の試飲と文化公演をお楽しみください。",
+      "address": "大理古城付近",
       "coordinates": {
         "lat": 25.7022,
         "lng": 100.1572
       },
       "openingHours": "08:30-18:00",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Bai architecture",
-        "Garden scenery",
-        "Tea ceremony",
-        "Cultural shows"
+        "白族建築",
+        "庭園の景色",
+        "茶道",
+        "文化表演"
       ],
-      "tips": "Book tickets online for discounts. Combine tea tasting and performance. Good for learning about Bai culture.",
+      "tips": "オンラインでチケットを購入すると割引があります。お茶の試飲と公演を組み合わせると、白族文化について学ぶのに的最佳です。",
       "image": "/img/ext/f9028ee51d31.webp",
       "phone": "+86 087 2 4590 5982"
     },
     {
       "id": "lover-dam",
-      "name": "大理学院情人坝",
-      "nameEn": "Dali University Lover's Dam",
+      "name": "大理学院情人壩",
+      "nameEn": "大理大学恋人のダム",
       "category": "natural",
-      "description": "A scenic embankment near Dali University popular with students and couples, offering beautiful Erhai Lake views.",
-      "address": "Near Dali University",
+      "description": "学生やカップルが人気の大理大学近くの景色の良い堤防で、美しい洱海の眺めが広がります。",
+      "address": "大理大学付近",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1872
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "Sunset views",
-        "Local atmosphere",
+        "夕日ビュー",
+        "地元の雰囲気",
         "湖の景色",
         "学生カフェ"
       ],
-      "tips": "Best at sunset. Nearby small restaurants and cafes. Popular with local students.",
+      "tips": "夕暮れ時が最も美しく，近周辺の小さなレストランやカフェ、地元学生に人気があります。",
       "image": "/img/ext/a2786969763d.webp",
       "phone": "+86 087 2 4466 2930"
     },
     {
       "id": "luwo-mountain",
       "name": "鹿卧山",
-      "nameEn": "Luwo Mountain",
+      "nameEn": "ルウォ山",
       "category": "natural",
       "description": "大理古城と洱海の間にある丘の展望地で、両方の美しい景色を楽しむことができます。",
       "address": "大理古城と洱海の間に位置",
@@ -2823,34 +2837,34 @@
     },
     {
       "id": "wulongba",
-      "name": "乌龙坝草甸",
-      "nameEn": "Wulongba Grassland",
+      "name": "烏龍壩草甸",
+      "nameEn": "ウーロンバ草原",
       "category": "natural",
       "description": "風車のある高原の草原地域で、素晴らしい景色と写真撮影の機会を提供します。",
-      "address": "North of Dali",
+      "address": "大理の北",
       "coordinates": {
         "lat": 25.9022,
         "lng": 100.0672
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Grassland views",
-        "Windmills",
-        "Photography",
-        "Off-the-beaten-path"
+        "草原の景色",
+        "風車",
+        "写真",
+        "穴場"
       ],
-      "tips": "Less visited, great for escaping crowds. Bring food and water. Best in spring and summer.",
+      "tips": "あまり訪れる人がいない場所で、人混みを避けるのに最適です。食べ物と飲み物を持参してください。春と夏がベストシーズンです。",
       "image": "/img/ext/d9e1e34b36a1.webp",
       "phone": "+86 087 2 5832 6210"
     },
     {
       "id": "dali-chongsheng-temple",
-      "name": "崇圣寺",
-      "nameEn": "Chongsheng Temple",
+      "name": "崇聖寺",
+      "nameEn": "崇聖寺",
       "category": "temple",
-      "description": "崇圣寺是大理国时期的皇家寺院，与三塔为一体，是大理最宏伟的佛教建筑群，寺内殿宇辉煌，佛像庄严，展现了南诏大理国时期的佛教文化。",
+      "description": "崇聖寺は大理国時代の皇家寺院で、三塔と一体となり、大理で最も壮大な仏教建築群です。寺内は殿宇が輝き、仏像は荘厳で、南詔・大理国時代の仏教文化を示しています。",
       "address": "大理市古城北1.5公里",
       "coordinates": {
         "lat": 25.7167,
@@ -2858,14 +2872,14 @@
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "75元（含三塔）",
-      "recommendedVisitTime": "2-3時間",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
         "観音殿",
         "大雄宝殿",
         "雨銅観音",
         "三塔倒影"
       ],
-      "tips": "建议和三塔一起游览，寺内有素斋供应。下午去可以看三塔倒影。",
+      "tips": "三塔と一緒に観光することをおすすめします。寺内では精進料理が提供されています。午後に行くと三塔の逆さ影を見ることができます。",
       "image": "/img/ext/278489282e41.webp",
       "phone": "+86 872 266 6256"
     },
@@ -2874,7 +2888,7 @@
       "name": "洋人街",
       "nameEn": "外国人通り",
       "category": "street",
-      "description": "外国人通りは大理古城内で最も有名な歩行者天国で、かつて多くの外国人観光客が集まったことからその名が付けられました。道の両側にはカフェ、バー、工芸品店などが立ち並び、大理のリラックスタイムを象徴しています。",
+      "description": "洋人街は大理古城で最も有名な歩行者天国で、かつて多くの外国人観光客が集まったことから名付けられました。通り沿いには商店が立ち並び、カフェ、バー、工芸品店が軒を連ね、大理のレジャーライフの縮図となっています。",
       "address": "大理市古城護国路",
       "coordinates": {
         "lat": 25.6944,
@@ -2882,71 +2896,71 @@
       },
       "openingHours": "終日開放",
       "ticketPrice": "無料",
-      "recommendedVisitTime": "1-2時間",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
         "特色あるカフェ",
-        "手作りの工芸品",
-        "ストリートパフォーマー",
+        "手工艺品",
+        "街头艺人",
         "美食小吃"
       ],
-      "tips": "夜が最も賑やかで、多くのライブ音楽パフォーマンスが行われます。大理の名物料理、例えば乳扇のグリルを味わうことができます。",
+      "tips": "夜が最も賑わい、多くの生演奏が行われます。大理の名物小吃である烤乳扇（焼き乳扇）などを味わうことができます。",
       "image": "/img/ext/c26dfdad61d2.webp",
       "phone": "+86 087 2 2294 6761"
     },
     {
       "id": "dali-wuhua-building",
-      "name": "五华楼",
-      "nameEn": "Wuhua Building",
+      "name": "五華楼",
+      "nameEn": "五華楼",
       "category": "landmark",
-      "description": "五华楼是大理古城的标志性建筑，始建于南诏时期，是南诏国的国宾馆，现在的建筑是重建的，登楼可俯瞰大理古城全景，远眺苍山洱海。",
+      "description": "五華楼は大理古城のシンボル的な建物で、南詔時代に建てられ、南詔国の迎賓館でした。現在の建物は再建されたもので、楼に登ると大理古城の全景を一望でき、遠くに蒼山と洱海を望むことができます。",
       "address": "大理市古城内",
       "coordinates": {
         "lat": 25.6944,
         "lng": 100.1556
       },
       "openingHours": "08:00-22:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "30分钟-1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "30分～1時間",
       "highlights": [
         "古城全景",
         "苍山远眺",
-        "夜景灯光",
+        "夜景のライトアップ",
         "历史建筑"
       ],
-      "tips": "傍晚登楼最美，可以看夕阳和古城夜景。楼内有展览可以参观。",
+      "tips": "夕方に登楼するのが最も美しく、夕日と古城の夜景を楽しめます。楼内には展示があり、見学することができます。",
       "image": "/img/ext/d1e79d410463.webp",
       "phone": "+86 087 2 6045 1438"
     },
     {
       "id": "dali-city-wall",
       "name": "大理古城墙",
-      "nameEn": "Dali Ancient City Wall",
+      "nameEn": "大理古城壁",
       "category": "landmark",
-      "description": "大理古城墙始建于明代，是大理古城的重要防御设施，城墙保存较为完好，设有南北城门，城墙上的城楼是观赏古城风光的好地方。",
+      "description": "大理古城壁は明代に築かれ、大理古城の重要な防御施設でした。城壁は比較的良好に保存されており、南北の城門が設けられ、城壁の上の城楼は古城の風光を観賞するのに最適な場所です。",
       "address": "大理市古城",
       "coordinates": {
         "lat": 25.6944,
         "lng": 100.1556
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "openingHours": "終日開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "南城门",
-        "北城门",
+        "南城門",
+        "北城門",
         "城墙漫步",
-        "古城风光"
+        "古い城の風情"
       ],
-      "tips": "可以从南门走到北门，沿途欣赏古城风光。城墙上适合拍照。",
+      "tips": "南門から北門まで歩け、途中で古城の風情を楽しめます。城壁の上は写真撮影に適しています。",
       "image": "/img/ext/8db70aae509d.webp",
       "phone": "+86 872 267 1545"
     },
     {
       "id": "dali-nanzhao-island-detail",
-      "name": "南诏风情岛",
-      "nameEn": "Nanzhao Style Island",
+      "name": "南詔風情島",
+      "nameEn": "南詔風情島",
       "category": "landmark",
-      "description": "南诏风情岛是洱海中最大的岛屿，岛上建有南诏行宫、本主文化广场等，展示了南诏国的历史和白族文化，是了解大理历史的重要景点。",
+      "description": "南詔風情島は洱海で最も大きな島で、島には南詔行宮や本主文化広場などが建てられ、南詔国の歴史と白族の文化を展示しており、大理の歴史を理解するための重要な観光スポットです。",
       "address": "大理市双廊镇洱海中",
       "coordinates": {
         "lat": 25.9667,
@@ -2954,143 +2968,143 @@
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "50元（含船票）",
-      "recommendedVisitTime": "2-3小时",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
-        "南诏行宫",
+        "南詔行宮",
         "本主文化",
-        "洱海风光",
+        "洱海の風景",
         "白族建筑"
       ],
-      "tips": "需要乘船上岛，建议提前查看天气。岛上风景优美，适合拍照。",
+      "tips": "船で島に渡る必要があります。事前に天気を確認することをお勧めします。島の景色は美しく、写真撮影に適しています。",
       "image": "/img/ext/5ea30ac5d1db.webp",
       "phone": "+86 087 2 6255 2130"
     },
     {
       "id": "dali-bai-tie-dye-museum",
-      "name": "白族扎染博物馆",
-      "nameEn": "Bai Tie-dye Museum",
+      "name": "白族扎染博物館",
+      "nameEn": "白族絞り染め博物館",
       "category": "museum",
-      "description": "白族扎染博物馆展示了大理白族传统的扎染工艺，这项国家级非物质文化遗产已有上千年历史，游客可以了解扎染的制作过程并亲手体验。",
+      "description": "白族扎染博物館は、大理白族の伝統的な扎染技術を展示しています。この国家級無形文化遺産は千年以上の歴史があり、訪れた人は扎染の制作過程を学び、実際に体験することができます。",
       "address": "大理市喜洲镇周城村",
       "coordinates": {
         "lat": 25.85,
         "lng": 100.1167
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1-2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
         "扎染工艺展示",
-        "亲手体验",
+        "実際に体験する",
         "白族民居",
-        "购买扎染制品"
+        "扎染製品の購入"
       ],
-      "tips": "可以亲手体验扎染，制作自己的作品带回家。周城村是扎染专业村。",
+      "tips": "実際に手作りで扎染を体験でき、自分だけの作品を作って持ち帰ることができます。周城村は扎染の専門村です。",
       "image": "/img/ext/328f27e8dc57.webp",
       "phone": "+86 087 2 9133 7437"
     },
     {
       "id": "dali-xizhou-ancient-town",
       "name": "喜洲古镇",
-      "nameEn": "Xizhou Ancient Town",
+      "nameEn": "喜洲古鎮",
       "category": "landmark",
-      "description": "喜洲古镇是大理白族文化的代表，保留了大量白族传统民居建筑，其中严家大院是最著名的白族建筑群，古镇还以喜洲粑粑闻名遐迩。",
+      "description": "喜洲古鎮は大理白族文化の代表であり、白族の伝統的な民居建築が数多く保存されています。中でも厳家大院は最も有名な白族建築群で、古鎮は喜洲粑粑（シーチョウパパ）でも広く知られています。",
       "address": "大理市喜洲镇",
       "coordinates": {
         "lat": 25.85,
         "lng": 100.1167
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费（严家大院25元）",
-      "recommendedVisitTime": "2-3小时",
+      "openingHours": "終日開放",
+      "ticketPrice": "無料（厳家大院25元）",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
         "严家大院",
         "喜洲粑粑",
         "白族三坊一照壁",
         "四方街"
       ],
-      "tips": "一定要尝尝现烤的喜洲粑粑，有甜咸两种口味。上午去可以看到当地人的生活场景。",
+      "tips": "ぜひ焼きたての喜洲粑粑を味わってください。甘い味と塩味の2種類があります。午前中に行くと地元の人々の生活の様子を見ることができます。",
       "image": "/img/ext/16c963546a25.webp",
       "phone": "+86 087 2 7279 7972"
     },
     {
       "id": "dali-cangshan-cableway",
       "name": "苍山索道",
-      "nameEn": "Cangshan Cableway",
+      "nameEn": "蒼山ロープウェイ",
       "category": "nature",
-      "description": "苍山索道是游览苍山最便捷的方式，乘坐索道可以直达苍山半山腰，沿途可以欣赏苍山的壮丽景色，到达山顶后可以俯瞰整个洱海和大理古城。",
+      "description": "蒼山索道は蒼山を観光するのに最も便利な方法で、索道に乗ると蒼山の中腹まで直接行くことができ、途中で蒼山の壮大な景色を楽しめます。山頂に着くと洱海と大理古城を一望できます。",
       "address": "大理市苍山景区",
       "coordinates": {
         "lat": 25.6833,
         "lng": 100.1333
       },
       "openingHours": "08:30-17:00",
-      "ticketPrice": "150元（含索道和门票）",
-      "recommendedVisitTime": "3-4小时",
+      "ticketPrice": "150元（索道と入場券含む）",
+      "recommendedVisitTime": "3〜4時間",
       "highlights": [
-        "苍山风光",
+        "蒼山の風光",
         "洱海全景",
-        "洗马潭",
-        "七龙女池"
+        "洗馬潭",
+        "七龍女池"
       ],
-      "tips": "山顶气温较低，建议带外套。天气不好时索道可能停运，提前查看天气。",
+      "tips": "山頂は気温が低いので、上着を持参することをおすすめします。天気が悪いと索道が運休する可能性があるので、事前に天気を確認してください。",
       "image": "/img/ext/df1b43d3d97c.webp",
       "phone": "+86 087 2 9621 0449"
     },
     {
       "id": "dali-cangshan-waterfall",
       "name": "苍山瀑布",
-      "nameEn": "Cangshan Waterfall",
+      "nameEn": "蒼山水の滝",
       "category": "nature",
-      "description": "苍山瀑布群是苍山的重要景观，其中最著名的是清碧溪和七龙女池，瀑布从苍山高处飞流直下，水花四溅，与苍山的绿色植被形成美丽的画卷。",
+      "description": "蒼山瀑布群は蒼山の重要な景観で、その中で最も有名なのは清碧溪と七龍女池です。滝は蒼山の高い所から流れ落ち、水しぶきが上がり、蒼山の緑の植生と美しい絵巻を形成しています。",
       "address": "大理市苍山景区内",
       "coordinates": {
         "lat": 25.6667,
         "lng": 100.1333
       },
       "openingHours": "08:30-17:00",
-      "ticketPrice": "含在苍山门票内",
-      "recommendedVisitTime": "2-3小时",
+      "ticketPrice": "蒼山の入場料に含まれています",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
         "清碧溪",
-        "七龙女池",
+        "七龍女池",
         "高山瀑布",
         "原始森林"
       ],
-      "tips": "雨季（6-9月）瀑布最壮观。建议穿防滑鞋，山路较陡。",
+      "tips": "雨季（6〜9月）は滝が最も壮観です。滑りにくい靴の着用をおすすめします。山道は急です。",
       "image": "/img/ext/5be933e1e45b.webp",
       "phone": "+86 087 2 3557 3641"
     },
     {
       "id": "dali-rose-meadow",
       "name": "大理玫瑰花田",
-      "nameEn": "Dali Rose Meadow",
+      "nameEn": "大理バラの牧草地",
       "category": "nature",
-      "description": "大理的玫瑰花田是近年来新兴的旅游景点，大片的玫瑰花在苍山脚下绽放，与远处的苍山洱海形成绝美的画面，是拍照打卡的热门地点。",
-      "address": "大理市银桥镇等地",
+      "description": "大理のバラ園は近年新しくできた観光スポットで、広大なバラの花が蒼山の麓に咲き誇り、遠くの蒼山・洱海と美しい景色を織りなす、写真撮影に人気の場所です。",
+      "address": "大理市銀橋鎮など",
       "coordinates": {
         "lat": 25.6833,
         "lng": 100.1333
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "30-50元",
-      "recommendedVisitTime": "1-2小时",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
         "玫瑰花海",
         "苍山背景",
         "拍照打卡",
         "玫瑰产品"
       ],
-      "tips": "4-6月是玫瑰花盛开的季节，建议下午去光线最好。可以购买玫瑰酱等特产。",
+      "tips": "4月から6月がバラの開花シーズンで、午後が光の加減が最も良いのでおすすめです。バラジャムなどの特産品も購入できます。",
       "image": "/img/ext/39e3474608c6.webp",
       "phone": "+86 087 2 6326 9944"
     },
     {
       "id": "dali-yan-family-house",
       "name": "严家大院",
-      "nameEn": "Yan Family House",
+      "nameEn": "厳家大院",
       "category": "landmark",
-      "description": "严家大院是喜洲古镇最著名的白族民居建筑群，建于清末民初，由多个'三坊一照壁'和'四合五天井'组成，是白族建筑艺术的杰出代表。",
+      "description": "厳家大院は喜洲古鎮で最も有名な白族の民居建築群で、清末民初に建てられ、多くの「三坊一照壁」と「四合五天井」から成り、白族建築芸術の傑出した代表です。",
       "address": "大理市喜洲镇四方街",
       "coordinates": {
         "lat": 25.85,
@@ -3098,23 +3112,23 @@
       },
       "openingHours": "08:30-17:30",
       "ticketPrice": "25元",
-      "recommendedVisitTime": "1-2小时",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
         "三坊一照壁",
         "四合五天井",
         "白族建筑",
         "喜洲粑粑"
       ],
-      "tips": "建议请导游讲解白族建筑的特点和文化内涵。院内有白族三道茶表演。",
+      "tips": "ガイドに白族建築の特徴や文化的な意味を解説してもらうことをおすすめします。敷地内では白族の三道茶のパフォーマンスがあります。",
       "image": "/img/ext/b31cc42be7a9.webp",
       "phone": "+86 087 2 2869 0487"
     },
     {
       "id": "dali-shibao-mountain",
       "name": "石宝山",
-      "nameEn": "Shibao Mountain",
+      "nameEn": "石宝山",
       "category": "nature",
-      "description": "石宝山位于剑川县，以石窟和丹霞地貌闻名，山上有大量南诏大理国时期的石窟造像，被誉为'南方的敦煌'，是研究南诏历史的珍贵资料。",
+      "description": "石宝山は剣川県に位置し、石窟と丹霞地貌で有名で、山には南詔・大理国時代の石窟像が数多くあり、「南方の敦煌」と称され、南詔の歴史を研究する上で貴重な資料です。",
       "address": "大理州剑川县石宝山",
       "coordinates": {
         "lat": 26.5333,
@@ -3122,263 +3136,263 @@
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "50元",
-      "recommendedVisitTime": "3-4小时",
+      "recommendedVisitTime": "3〜4時間",
       "highlights": [
-        "石钟山石窟",
+        "石鐘山石窟",
         "丹霞地貌",
         "南诏造像",
         "宝相寺"
       ],
-      "tips": "距离大理市区较远，建议自驾或包车前往。山路较陡，穿舒适的鞋子。",
+      "tips": "大理市街からかなり離れているため、レンタカーやチャーター車での訪問をおすすめします。山道は急なので、歩きやすい靴を履いてください。",
       "image": "/img/ext/c01857a28b69.webp",
       "phone": "+86 087 2 2386 2994"
     },
     {
       "id": "dali-fengyu-ancient-town",
-      "name": "凤羽古镇",
-      "nameEn": "Fengyu Ancient Town",
+      "name": "鳳羽古鎮",
+      "nameEn": "鳳羽古城",
       "category": "landmark",
-      "description": "凤羽古镇是大理州洱源县的一个白族古镇，被誉为'白族建筑博物馆'，古镇保存了大量明清时期的白族民居，环境清幽，远离城市喧嚣。",
-      "address": "大理州洱源县凤羽镇",
+      "description": "鳳羽古鎮は大理州洱源県にある白族の古鎮で、「白族建築博物館」と称され、古鎮には明清時代の白族民居が数多く保存され、環境は静かで、都会の喧騒から離れています。",
+      "address": "大理州洱源県鳳羽鎮",
       "coordinates": {
         "lat": 26.1,
         "lng": 99.95
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "openingHours": "終日開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
         "白族民居",
         "古戏台",
-        "田园风光",
+        "田園風景",
         "白族文化"
       ],
-      "tips": "游客较少，可以体验原汁原味的白族生活。建议自驾前往。",
+      "tips": "観光客が少なく、本場の白族の生活を体験できます。レンタカーでの訪問をおすすめします。",
       "image": "/img/ext/63c14eb8f8df.webp",
       "phone": "+86 087 2 8265 9291"
     },
     {
       "id": "dali-nuodeng-village",
-      "name": "诺邓古村",
-      "nameEn": "Nuodeng Ancient Village",
+      "name": "諾鄧古村",
+      "nameEn": "諾鄧古村",
       "category": "landmark",
-      "description": "诺邓古村是滇西北地区年代最久远的村落，以产盐闻名，村内保留了大量明清时期的建筑，包括盐井、庙宇和民居，是体验滇西古村文化的好去处。",
-      "address": "大理州云龙县诺邓镇",
+      "description": "諾鄧古村は滇西北地域で最も歴史のある村で、塩の産地として知られています。村内には明・清時代の建築物が数多く残されており、塩井、廟宇、民居などがあり、滇西の古村文化を体験するのに最適な場所です。",
+      "address": "大理州雲龍県諾鄧鎮",
       "coordinates": {
         "lat": 25.9,
         "lng": 99.3667
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "openingHours": "終日開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
-        "千年盐井",
+        "千年塩井",
         "明清建筑",
-        "诺邓火腿",
-        "古盐文化"
+        "諾鄧ハム",
+        "古塩文化"
       ],
-      "tips": "诺邓火腿非常有名，一定要品尝。村子建在山坡上，步行较多，穿舒适的鞋子。",
+      "tips": "諾鄧ハムは非常に有名で、ぜひ味わってください。村は山の斜面に建っているため、歩くことが多いので、歩きやすい靴を履いてください。",
       "image": "/img/ext/e7b07db4941f.webp",
       "phone": "+86 087 2 0280 2653"
     },
     {
       "id": "dali-haidong-art-village",
-      "name": "海东艺术村",
-      "nameEn": "Haidong Art Village",
+      "name": "海東芸術村",
+      "nameEn": "海東芸術村",
       "category": "landmark",
-      "description": "海东艺术村位于洱海东岸，是大理新兴的艺术聚集地，吸引了很多艺术家和文艺青年在此定居创作，村内有各种艺术工作室、咖啡馆和民宿。",
-      "address": "大理市海东镇",
+      "description": "海東芸術村は洱海の東岸に位置し、大理で新興の芸術集積地です。多くの芸術家や文芸青年がここに移り住み創作活動を行っており、村内にはさまざまなアトリエ、カフェ、民宿があります。",
+      "address": "大理市海東鎮",
       "coordinates": {
         "lat": 25.7,
         "lng": 100.2167
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "openingHours": "終日開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
         "艺术工作室",
-        "海景咖啡馆",
+        "海景カフェ",
         "洱海日落",
-        "文艺氛围"
+        "文芸的な雰囲気"
       ],
-      "tips": "傍晚可以在洱海边看日落，非常美。适合文艺青年打卡。",
+      "tips": "夕方には洱海のほとりで夕日を眺めることができ、とても美しいです。文芸青年の訪れるスポットとして最適です。",
       "image": "/img/ext/417f5981b4ff.webp",
       "phone": "+86 087 2 4608 9687"
     },
     {
       "id": "dali-caicun-wharf",
-      "name": "才村码头",
-      "nameEn": "Caicun Wharf",
+      "name": "才村埠頭",
+      "nameEn": "才村埠頭",
       "category": "landmark",
-      "description": "才村码头是大理古城最近的洱海游船码头，从这里可以乘船游览洱海，码头周边有很多海景民宿和咖啡馆，是欣赏洱海风光的好地方。",
+      "description": "才村埠頭は大理古城から最も近い洱海の遊覧船埠頭で、ここから船に乗って洱海を巡ることができます。埠頭周辺には海景民宿やカフェが多くあり、洱海の風光を楽しむのに良い場所です。",
       "address": "大理市才村",
       "coordinates": {
         "lat": 25.7,
         "lng": 100.1667
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费（游船另收费）",
-      "recommendedVisitTime": "1-2小时",
+      "openingHours": "終日開放",
+      "ticketPrice": "無料（遊覧船は別料金）",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
         "洱海游船",
         "海景民宿",
         "日落美景",
         "白族村落"
       ],
-      "tips": "傍晚的才村码头最美，可以看到洱海日落。可以乘坐游船游览洱海。",
+      "tips": "夕方の才村埠頭が最も美しく、洱海の夕日を眺めることができます。遊覧船に乗って洱海を巡ることもできます。",
       "image": "/img/ext/49e511e61303.webp",
       "phone": "+86 087 2 9808 5774"
     },
     {
       "id": "dali-sea-view-terrace",
-      "name": "洱海观景台",
-      "nameEn": "Erhai Viewing Terrace",
+      "name": "洱海展望台",
+      "nameEn": "洱海展望テラス",
       "category": "nature",
-      "description": "洱海观景台位于洱海东岸的高处，是俯瞰洱海全景的最佳地点，站在这里可以看到洱海的全貌，苍山十九峰倒映在湖面上，景色壮观。",
-      "address": "大理市环海东路",
+      "description": "洱海展望台は洱海東岸の高台に位置し、洱海の全景を一望できる最高のスポットです。ここに立つと洱海の全貌が見え、蒼山十九峰が湖面に映り、景色は壮観です。",
+      "address": "大理市環海東路",
       "coordinates": {
         "lat": 25.7333,
         "lng": 100.2167
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "30分钟-1小时",
+      "openingHours": "終日開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "30分～1時間",
       "highlights": [
         "洱海全景",
         "苍山倒影",
         "日出日落",
-        "拍照圣地"
+        "写真撮影の聖地"
       ],
-      "tips": "日出和日落时分最美。建议自驾前往，可以沿环海东路骑行。",
+      "tips": "日の出と日没の時間帯が最も美しいです。自家用車での訪問をおすすめします。環海東路に沿ってサイクリングもできます。",
       "image": "/img/ext/cbe0c24536db.webp",
       "phone": "+86 087 2 9025 4139"
     },
     {
       "id": "dali-xizhou-babashow",
       "name": "喜洲粑粑",
-      "nameEn": "Xizhou Baba",
+      "nameEn": "西州ババ",
       "category": "market",
-      "description": "喜洲粑粑是大理最著名的特色小吃，用炭火烤制，外酥里嫩，有甜咸两种口味，喜洲古镇上有多家制作喜洲粑粑的店铺，游客可以现场观看制作过程。",
+      "description": "喜洲粑粑（シーチョウパパ）は大理で最も有名な名物軽食です。炭火で焼き上げ、外はサクサク、中はふんわりとしており、甘味と塩味の2種類があります。喜洲古鎮には喜洲粑粑を作る店が多くあり、観光客は作り方をその場で見学できます。",
       "address": "大理市喜洲镇四方街",
       "coordinates": {
         "lat": 25.85,
         "lng": 100.1167
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "10-15元/个",
-      "recommendedVisitTime": "30分钟",
+      "ticketPrice": "10-15元/個",
+      "recommendedVisitTime": "30分",
       "highlights": [
-        "现烤粑粑",
+        "焼きたての粑粑",
         "甜咸口味",
-        "制作过程",
+        "製作工程",
         "白族美食"
       ],
-      "tips": "一定要趁热吃，刚出炉的最好吃。推荐四方街上的老字号店铺。",
+      "tips": "必ず熱いうちに食べてください。焼きたてが一番おいしいです。四方街にある老舗店をおすすめします。",
       "image": "/img/ext/1fc3772483a4.webp",
       "phone": "+86 087 2 5998 5182"
     },
     {
       "id": "dali-batik-village",
       "name": "周城扎染村",
-      "nameEn": "Zhoucheng Batik Village",
+      "nameEn": "周城ろうけつ染め村",
       "category": "landmark",
-      "description": "周城村是大理白族扎染的发源地，被誉为'白族扎染之乡'，村内几乎家家户户都从事扎染制作，游客可以参观扎染工坊并亲手体验扎染工艺。",
+      "description": "周城村は大理白族扎染（さらし染め）の発祥地で、「白族扎染の里」と称されています。村ではほぼ全ての家が扎染作りに従事しており、観光客は扎染工房を見学し、実際に扎染体験をすることができます。",
       "address": "大理市喜洲镇周城村",
       "coordinates": {
         "lat": 25.8667,
         "lng": 100.1167
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "免费（体验另收费）",
-      "recommendedVisitTime": "1-2小时",
+      "ticketPrice": "無料（体験は別料金）",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
         "扎染工坊",
-        "亲手体验",
-        "购买扎染",
+        "実際に体験する",
+        "扎染を購入",
         "白族文化"
       ],
-      "tips": "可以亲手制作扎染作品，价格约50-100元。建议上午去，可以看到完整的制作过程。",
+      "tips": "扎染作品を手作りで体験でき、料金は約50〜100元です。午前中に行くことをおすすめします。制作過程をすべて見ることができます。",
       "image": "/img/ext/4d581b89b175.webp",
       "phone": "+86 087 2 2767 4241"
     },
     {
       "id": "dali-shuanglang-art",
       "name": "双廊艺术区",
-      "nameEn": "Shuanglang Art District",
+      "nameEn": "双廊芸術地区",
       "category": "landmark",
-      "description": "双廊是洱海边的一个艺术小镇，聚集了大量的艺术家和文艺青年，镇上有各种艺术工作室、画廊和特色小店，是大理文艺气息最浓的地方。",
+      "description": "双廊は洱海のほとりにあるアートの町で、多くの芸術家やアート好きの若者が集まっています。町にはさまざまなアトリエやギャラリー、個性的な小店があり、大理で最も芸術的な雰囲気が濃い場所です。",
       "address": "大理市双廊镇",
       "coordinates": {
         "lat": 25.9667,
         "lng": 100.1833
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "openingHours": "終日開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
         "艺术工作室",
-        "洱海风光",
+        "洱海の風景",
         "特色小店",
         "海景咖啡"
       ],
-      "tips": "建议住一晚，可以看洱海日出。镇上有很多特色民宿和咖啡馆。",
+      "tips": "一泊することをおすすめします。洱海の日の出が見られます。町には個性的な民宿やカフェがたくさんあります。",
       "image": "/img/ext/7c6a8ea6e7ee.webp",
       "phone": "+86 087 2 8620 8972"
     },
     {
       "id": "dali-erhai-cycling",
-      "name": "洱海骑行",
-      "nameEn": "Erhai Lake Cycling",
+      "name": "洱海サイクリング",
+      "nameEn": "洱海サイクリング",
       "category": "nature",
-      "description": "环洱海骑行是大理最受欢迎的旅游活动之一，全程约130公里，沿途可以欣赏洱海的湖光山色、白族村落和田园风光，是深度体验大理的最佳方式。",
-      "address": "大理市环洱海公路",
+      "description": "洱海を一周するサイクリングは、大理で最も人気のある観光アクティビティの一つです。全長は約130キロで、途中で洱海の湖と山の景色、白族の村々、田園風景を楽しむことができ、大理を深く体験するのに最適な方法です。",
+      "address": "大理市環洱海公路",
       "coordinates": {
         "lat": 25.7,
         "lng": 100.1833
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "租车约50-100元/天",
+      "openingHours": "終日開放",
+      "ticketPrice": "レンタカー約50-100元/日",
       "recommendedVisitTime": "1-2天",
       "highlights": [
-        "环湖骑行",
+        "湖一周サイクリング",
         "白族村落",
         "湖光山色",
-        "田园风光"
+        "田園風景"
       ],
-      "tips": "建议顺时针骑行，全程约需2天。沿途有多个补给点。注意防晒和补水。",
+      "tips": "時計回りにサイクリングすることをおすすめします。全体で約2日かかります。途中に補給ポイントが複数あります。日焼け止めと水分補給に注意してください。",
       "image": "/img/ext/90268c028f48.webp",
       "phone": "+86 087 2 6110 3015"
     },
     {
       "id": "dali-three-pagodas-reflection",
       "name": "三塔倒影",
-      "nameEn": "Three Pagodas Reflection",
+      "nameEn": "三塔倒映",
       "category": "landmark",
-      "description": "三塔倒影是大理最著名的景观之一，在三塔前的水池中，三塔的倒影清晰可见，与真实的三塔相映成趣，尤其是在清晨和傍晚时分，景色格外迷人。",
-      "address": "大理市崇圣寺三塔景区内",
+      "description": "三塔の逆さ影は大理で最も有名な景観の一つです。三塔の前の池に、三塔の逆さ影がはっきりと映り、実物の三塔と相まって趣があります。特に早朝と夕方の景色は格別に美しいです。",
+      "address": "大理市崇聖寺三塔景区内",
       "coordinates": {
         "lat": 25.7167,
         "lng": 100.15
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "75元",
-      "recommendedVisitTime": "30分钟-1小时",
+      "recommendedVisitTime": "30分～1時間",
       "highlights": [
         "三塔倒影",
         "水池镜面",
-        "清晨雾气",
+        "早朝の霧",
         "傍晚霞光"
       ],
-      "tips": "清晨有雾气时最美，水面平静时倒影最清晰。建议早上去。",
+      "tips": "早朝に霧があるときが最も美しく、水面が静かなときに逆さ影が最もはっきり見えます。午前中に行くことをおすすめします。",
       "image": "/img/ext/aa5f655f6577.webp",
       "phone": "+86 087 2 6350 1142"
     },
     {
       "id": "dali-nanzhao-dreamland",
-      "name": "南诏风情岛",
-      "nameEn": "Nanzhao Dreamland",
+      "name": "南詔風情島",
+      "nameEn": "南詔夢幻郷",
       "category": "landmark",
-      "description": "南诏风情岛是洱海上的一个重要旅游景点，岛上有南诏行宫、白族本主文化广场等，展示了南诏国的历史和文化，是了解大理历史的重要窗口。",
+      "description": "南詔風情島は洱海にある重要な観光スポットで、島には南詔行宮や白族本主文化広場などがあり、南詔国の歴史と文化を展示しており、大理の歴史を理解する重要な窓口となっている。",
       "address": "大理市双廊镇洱海中",
       "coordinates": {
         "lat": 25.9667,
@@ -3386,47 +3400,47 @@
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "50元",
-      "recommendedVisitTime": "2-3小时",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
-        "南诏行宫",
+        "南詔行宮",
         "本主文化",
-        "洱海风光",
+        "洱海の風景",
         "白族歌舞"
       ],
-      "tips": "需要乘船上岛，建议提前查看天气。岛上有白族歌舞表演。",
+      "tips": "船で島に渡る必要があるため、事前に天気を確認することをおすすめする。島では白族の歌舞公演が行われる。",
       "image": "/img/ext/d633a45193ca.webp",
       "phone": "+86 087 2 2254 3782"
     },
     {
       "id": "dali-wase-market",
       "name": "挖色集市",
-      "nameEn": "Wase Market",
+      "nameEn": "湾瀬市場",
       "category": "market",
-      "description": "挖色集市是洱海东岸的一个传统白族集市，每逢赶集日，周边村民会聚集在此交易农产品和手工艺品，是体验白族乡村生活的好去处。",
+      "description": "挖色集市は洱海東岸にある伝統的な白族の市で、市が立つ日には周辺の村民が集まり、農産物や工芸品を取引する。白族の田舎暮らしを体験するのに良い場所である。",
       "address": "大理市挖色镇",
       "coordinates": {
         "lat": 25.85,
         "lng": 100.2
       },
-      "openingHours": "赶集日（逢5、10日）",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1-2小时",
+      "openingHours": "市が立つ日（5日・10日）",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
         "白族集市",
         "当地特产",
         "乡村生活",
-        "传统交易"
+        "伝統的な取引"
       ],
-      "tips": "赶集日最热闹，可以看到各种当地特产和手工艺品。建议早上去。",
+      "tips": "市が立つ日が最も賑わい、様々な地元の特産品や工芸品を見ることができる。午前中に行くことをおすすめする。",
       "image": "/img/ext/42a3c8afb44d.webp",
       "phone": "+86 087 2 2025 4860"
     },
     {
       "id": "dali-shimenshan",
-      "name": "石门关",
-      "nameEn": "Shimen Pass",
+      "name": "石門関",
+      "nameEn": "石門関",
       "category": "nature",
-      "description": "石门关是苍山西坡的一个天然峡谷，两壁陡峭如门，谷底溪流潺潺，是大理少有的峡谷景观，也是徒步爱好者的天堂。",
+      "description": "石門関は蒼山の西麓にある天然の峡谷で、両壁は門のように切り立ち、谷底には小川がさらさらと流れる。大理では珍しい峡谷景観であり、ハイキング愛好家の楽園でもある。",
       "address": "大理市苍山西坡",
       "coordinates": {
         "lat": 25.6667,
@@ -3434,82 +3448,82 @@
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "30元",
-      "recommendedVisitTime": "2-3小时",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
-        "峡谷风光",
+        "峡谷の風光",
         "溪流瀑布",
-        "徒步路线",
+        "ハイキングコース",
         "原始森林"
       ],
-      "tips": "建议穿防滑鞋，峡谷内较凉爽。雨季注意安全。",
+      "tips": "滑りにくい靴を履くことをおすすめする。峡谷内は比較的涼しい。雨季は安全に注意が必要。",
       "image": "/img/ext/2337bb6a1765.webp",
       "phone": "+86 087 2 4614 9265"
     },
     {
       "id": "dali-linghui-temple",
-      "name": "无为寺",
-      "nameEn": "Wuwei Temple",
+      "name": "無為寺",
+      "nameEn": "無為寺",
       "category": "temple",
-      "description": "无为寺位于苍山兰峰东麓，始建于唐代，是大理著名的佛教寺院，寺内环境清幽，古木参天，有多株千年古茶花树，是大理人修身养性的好去处。",
-      "address": "大理市苍山兰峰东麓",
+      "description": "無為寺は蒼山蘭峰の東麓に位置し、唐代に創建された大理の有名な仏教寺院である。寺内は静かで、古木が空にそびえ、数本の千年古茶花の木があり、大理の人々が心身を修養するのに良い場所である。",
+      "address": "大理市蒼山蘭峰東麓",
       "coordinates": {
         "lat": 25.7,
         "lng": 100.1167
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1-2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
         "千年古茶花",
         "佛教文化",
-        "苍山风光",
-        "清幽环境"
+        "蒼山の風光",
+        "清幽な環境"
       ],
-      "tips": "春季（1-3月）茶花盛开时最美。寺内有素斋供应。",
+      "tips": "春（1〜3月）に茶花が満開の頃が最も美しい。寺内では精進料理が提供されている。",
       "image": "/img/ext/72fae33bcfbf.webp",
       "phone": "+86 087 2 2076 3640"
     },
     {
       "id": "xizhou-ancient",
       "name": "喜洲古镇",
-      "nameEn": "Xizhou Ancient Town",
+      "nameEn": "喜洲古鎮",
       "category": "street",
-      "description": "白族建筑保存最完好的古镇，有严家大院等代表性建筑。",
+      "description": "白族の建築が最もよく保存されている古鎮で、厳家大院などの代表的な建物があります。",
       "address": "大理市喜洲镇",
       "coordinates": {
         "lat": 25.82,
         "lng": 100.1
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
         "白族建筑",
         "喜洲粑粑"
       ],
-      "tips": "品尝喜洲粑粑。",
+      "tips": "喜洲粑粑を味わえます。",
       "image": "/img/ext/309f30e43563.webp",
       "phone": "+86 087 2 2411 6325"
     },
     {
       "id": "dali-night",
       "name": "大理古城夜景",
-      "nameEn": "Dali Ancient City Night View",
+      "nameEn": "大理古城夜景",
       "category": "street",
-      "description": "大理古城的夜景，人民路和洋人街灯火通明。",
+      "description": "大理古城の夜景で、人民路と洋人街は明かりが灯って賑やかです。",
       "address": "大理市古城区",
       "coordinates": {
         "lat": 25.69,
         "lng": 100.16
       },
-      "openingHours": "夜间",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "openingHours": "夜間",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
         "夜景",
         "酒吧街"
       ],
-      "tips": "体验大理夜生活。",
+      "tips": "大理のナイトライフを体験する。",
       "image": "/img/ext/23f765d89a0f.webp",
       "phone": "+86 872 267 1545"
     }

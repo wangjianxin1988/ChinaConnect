@@ -1,15 +1,18 @@
 // @ts-nocheck
 import { CULTURAL_WARNINGS, IMPORTANCE_STYLES, REGION_TRIGGERS } from "@/data/cultural-warnings";
 import React, { useState, useEffect } from "react";
+import { jaText, Bi } from "./guide-i18n";
 
 interface CulturalWarningPopupProps {
   currentLocation?: string;
   className?: string;
+  lang?: string;
 }
 
 export function CulturalWarningPopup({
   currentLocation = "",
   className = "",
+  lang = "en",
 }: CulturalWarningPopupProps) {
   const [isVisible, setIsVisible] = useState(false);
   const [currentWarning, setCurrentWarning] = useState<(typeof CULTURAL_WARNINGS)[0] | null>(null);
@@ -68,7 +71,7 @@ export function CulturalWarningPopup({
         >
           <div className="flex items-center gap-2">
             <span className="text-xl">{currentWarning.icon}</span>
-            <span className="font-bold">{style.labelCn} Cultural Alert</span>
+            <span className="font-bold">{jaText(style.labelCn, lang)} Cultural Alert</span>
           </div>
           <button
             onClick={dismiss}
@@ -81,9 +84,9 @@ export function CulturalWarningPopup({
         {/* Content */}
         <div className="p-4">
           <h3 className="font-bold text-lg mb-1">{currentWarning.title}</h3>
-          <p className="text-sm opacity-80 mb-2">{currentWarning.titleCn}</p>
+          <p className="text-sm opacity-80 mb-2">{jaText(currentWarning.titleCn, lang)}</p>
           <p className="text-sm">{currentWarning.description}</p>
-          <p className="text-sm opacity-70 mt-1">{currentWarning.descriptionCn}</p>
+          <p className="text-sm opacity-70 mt-1">{jaText(currentWarning.descriptionCn, lang)}</p>
         </div>
 
         {/* Actions */}
@@ -94,9 +97,7 @@ export function CulturalWarningPopup({
           <button
             onClick={dismiss}
             className={`px-4 py-1.5 rounded-lg text-sm font-medium ${style.text} bg-black/10 hover:bg-black/20 transition-colors`}
-          >
-            Got it / 知道了
-          </button>
+          ><Bi en="Got it" zh="知道了" lang={lang} /></button>
         </div>
       </div>
     </div>

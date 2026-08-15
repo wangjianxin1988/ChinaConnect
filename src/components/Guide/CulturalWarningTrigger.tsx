@@ -6,8 +6,10 @@
 
 import { CULTURAL_WARNINGS, IMPORTANCE_STYLES, REGION_TRIGGERS } from "@/data/cultural-warnings";
 import React, { useState, useEffect, useCallback } from "react";
+import { jaText } from "./guide-i18n";
 
 interface CulturalWarningTriggerProps {
+  lang?: string;
   currentCity?: string;
   currentPage?: string;
   autoShow?: boolean;
@@ -49,6 +51,7 @@ function saveLastShownTime(): void {
 }
 
 export function CulturalWarningTrigger({
+  lang = "en",
   currentCity = "",
   currentPage = "",
   autoShow = true,
@@ -201,7 +204,7 @@ export function CulturalWarningTrigger({
           <div className="flex items-center gap-2">
             <span className="text-2xl">{warning.icon}</span>
             <div>
-              <span className="font-bold text-sm">{style.labelCn} Cultural Alert</span>
+              <span className="font-bold text-sm">{jaText(style.labelCn, lang)} Cultural Alert</span>
               {progress && <span className="text-xs ml-2 opacity-60">({progress})</span>}
             </div>
           </div>
@@ -220,12 +223,12 @@ export function CulturalWarningTrigger({
         {/* Content */}
         <div className="p-4">
           <h3 className="font-bold text-base mb-0.5">{warning.title}</h3>
-          <p className="text-sm opacity-80 mb-2">{warning.titleCn}</p>
+          <p className="text-sm opacity-80 mb-2">{jaText(warning.titleCn, lang)}</p>
           <p className="text-sm">{warning.description}</p>
-          <p className="text-sm opacity-70 mt-1">{warning.descriptionCn}</p>
+          <p className="text-sm opacity-70 mt-1">{jaText(warning.descriptionCn, lang)}</p>
           {warning.region && (
             <div className="mt-2 text-xs opacity-60">
-              📍 {warning.region} ({warning.regionCn})
+              📍 {warning.region} ({jaText(warning.regionCn, lang)})
             </div>
           )}
         </div>

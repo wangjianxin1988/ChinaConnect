@@ -1,4 +1,4 @@
-﻿import { readdirSync, readFileSync, statSync, writeFileSync, mkdirSync, existsSync } from 'fs';
+import { readdirSync, readFileSync, statSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 
 const LANGS = ['ja', 'ko', 'th', 'vi', 'ru', 'fr', 'de', 'ar', 'fa', 'zh-CN', 'zh-TW'];
@@ -12,6 +12,36 @@ function walk(dir) {
     else if (e.endsWith('.json')) out.push(p);
   }
   return out;
+}
+
+// Deep merge: existing (per-language file) wins over base for fields it has;
+// base supplies new/added fields. Arrays are merged positionally; when both
+// sides have objects with matching "id", they are merged recursively.
+function deepMerge(base, existing) {
+  if (Array.isArray(base) && Array.isArray(existing)) {
+    return existing.map((ev, i) => {
+      const bv = base[i];
+      if (ev && bv && typeof ev === 'object' && typeof bv === 'object') {
+        if (ev.id !== undefined && bv.id !== undefined && ev.id !== bv.id) return ev;
+        return deepMerge(bv, ev);
+      }
+      return ev !== undefined ? ev : bv;
+    });
+  }
+  if (base && existing && typeof base === 'object' && typeof existing === 'object') {
+    const out = {};
+    for (const k of new Set([...Object.keys(base), ...Object.keys(existing)])) {
+      if (k in base && k in existing && base[k] && existing[k] && typeof base[k] === 'object' && typeof existing[k] === 'object') {
+        out[k] = deepMerge(base[k], existing[k]);
+      } else if (k in existing) {
+        out[k] = existing[k];
+      } else {
+        out[k] = base[k];
+      }
+    }
+    return out;
+  }
+  return existing !== undefined ? existing : base;
 }
 
 const srcDir = 'src/data/cities';
@@ -30,39 +60,56 @@ for (const lang of LANGS) {
   for (const f of files) {
     const d = JSON.parse(readFileSync(f, 'utf8'));
     const slug = d.slug;
-    const merged = JSON.parse(JSON.stringify(d));
+    // Preserve existing per-language translations: merge base onto the current
+    // lang file so already-translated values are never reverted to the base
+    // (Chinese/English) source by a rebuild.
+    const existingFile = join(langDir, slug + '.json');
+    let base = d;
+    if (existsSync(existingFile)) {
+      try { base = JSON.parse(readFileSync(existingFile, 'utf8')); } catch {}
+    }
+    const merged = deepMerge(d, base);
 
-    // City-level
-    if (merged.description) {
-      const v = tr[`city.${slug}.description`];
+    // City-level — tr values only fill fields still holding the base value.
+    if (merged.description && merged.description === d.description) {
+      const v = tr['city.' + slug + '.description'];
       if (v) merged.description = v;
     }
     if (merged.culturalTips) {
       merged.culturalTips = merged.culturalTips.map((t, i) => {
-        const translatedContent = tr[`city.${slug}.culturalTip.${i}`];
-        if (translatedContent && typeof t === 'object') {
-          return { ...t, content: translatedContent };
-        }
-        return t;
+        const m = { ...t };
+        const b = d.culturalTips ? d.culturalTips[i] : undefined;
+        const translatedContent = tr['city.' + slug + '.culturalTip.' + i];
+        if (translatedContent && m.content === (b ? b.content : undefined)) m.content = translatedContent;
+        const translatedTitle = tr['city.' + slug + '.culturalTip.' + i + '.title'];
+        if (translatedTitle && m.title === (b ? b.title : undefined)) m.title = translatedTitle;
+        return m;
       });
     }
     if (merged.highlights) {
-      merged.highlights = merged.highlights.map((t, i) => tr[`city.${slug}.highlight.${i}`] || t);
+      merged.highlights = merged.highlights.map((t, i) => (t === d.highlights[i] ? (tr['city.' + slug + '.highlight.' + i] || t) : t));
     }
     if (merged.climate) {
-      if (merged.climate.tips) {
-        const v = tr[`city.${slug}.climate.tips`];
+      if (merged.climate.tips && merged.climate.tips === d.climate.tips) {
+        const v = tr['city.' + slug + '.climate.tips'];
         if (v) merged.climate.tips = v;
       }
-      if (merged.climate.type) {
-        const v = tr[`city.${slug}.climate.type`];
+      if (merged.climate.type && merged.climate.type === d.climate.type) {
+        const v = tr['city.' + slug + '.climate.type'];
         if (v) merged.climate.type = v;
       }
+      if (Array.isArray(merged.climate.bestMonths)) {
+        merged.climate.bestMonths = merged.climate.bestMonths.map((t, i) => (t === d.climate.bestMonths[i] ? (tr['city.' + slug + '.climate.bestMonths.' + i] || t) : t));
+      }
+    }
+    if (merged.population && merged.population === d.population) {
+      const v = tr['city.' + slug + '.population'];
+      if (v) merged.population = v;
     }
     if (merged.quickFacts) {
       for (const k of Object.keys(merged.quickFacts)) {
-        if (typeof merged.quickFacts[k] === 'string') {
-          const v = tr[`city.${slug}.fact.${k}`];
+        if (typeof merged.quickFacts[k] === 'string' && merged.quickFacts[k] === (d.quickFacts ? d.quickFacts[k] : undefined)) {
+          const v = tr['city.' + slug + '.fact.' + k];
           if (v) merged.quickFacts[k] = v;
         }
       }
@@ -72,14 +119,16 @@ for (const lang of LANGS) {
     if (merged.attractions) {
       merged.attractions = merged.attractions.map(a => {
         const m = { ...a };
+        const baseAttr = (d.attractions || []).find((x) => x.id === a.id);
         for (const k of ['nameEn', 'description', 'address', 'openingHours', 'ticketPrice', 'tips', 'recommendedVisitTime', 'name', 'category']) {
-          if (m[k]) {
-            const v = tr[`attr.${a.id}.${k}`];
+          if (m[k] && (!baseAttr || m[k] === baseAttr[k])) {
+            const v = tr['attr.' + a.id + '.' + k];
             if (v) m[k] = v;
           }
         }
-        if (m.highlights) {
-          m.highlights = m.highlights.map((h, i) => tr[`attr.${a.id}.highlight.${i}`] || h);
+        if (m.highlights && baseAttr) {
+          const baseHighlights = baseAttr.highlights || baseAttr.highopts || [];
+          m.highlights = m.highlights.map((h, i) => (h === baseHighlights[i] ? (tr['attr.' + a.id + '.highlight.' + i] || h) : h));
         }
         return m;
       });
@@ -89,17 +138,18 @@ for (const lang of LANGS) {
     if (merged.restaurants) {
       merged.restaurants = merged.restaurants.map(r => {
         const m = { ...r };
+        const baseRest = (d.restaurants || []).find((x) => x.id === r.id);
         for (const k of ['nameEn', 'name', 'cuisine', 'address', 'hours', 'description', 'type']) {
-          if (m[k]) {
-            const v = tr[`rest.${r.id}.${k}`];
+          if (m[k] && (!baseRest || m[k] === baseRest[k])) {
+            const v = tr['rest.' + r.id + '.' + k];
             if (v) m[k] = v;
           }
         }
-        if (m.dishHighlights) {
-          m.dishHighlights = m.dishHighlights.map((h, i) => tr[`rest.${r.id}.dish.${i}`] || h);
+        if (m.dishHighlights && baseRest) {
+          m.dishHighlights = m.dishHighlights.map((h, i) => (h === baseRest.dishHighlights[i] ? (tr['rest.' + r.id + '.dish.' + i] || h) : h));
         }
-        if (m.tags) {
-          m.tags = m.tags.map((t, i) => tr[`rest.${r.id}.tag.${i}`] || t);
+        if (m.tags && baseRest) {
+          m.tags = m.tags.map((t, i) => (t === baseRest.tags[i] ? (tr['rest.' + r.id + '.tag.' + i] || t) : t));
         }
         return m;
       });
@@ -110,9 +160,10 @@ for (const lang of LANGS) {
       merged.emergencyContacts = merged.emergencyContacts.map(e => {
         const m = { ...e };
         const eid = e.name ? e.name.toLowerCase().replace(/[^a-z0-9]+/g, '_') : e.phone;
+        const baseEmer = (d.emergencyContacts || []).find((x) => (x.name ? x.name.toLowerCase().replace(/[^a-z0-9]+/g, '_') : x.phone) === eid);
         for (const k of ['nameEn', 'address', 'notes', 'name']) {
-          if (m[k]) {
-            const v = tr[`emergency.${eid}.${k}`];
+          if (m[k] && (!baseEmer || m[k] === baseEmer[k])) {
+            const v = tr['emergency.' + eid + '.' + k];
             if (v) m[k] = v;
           }
         }

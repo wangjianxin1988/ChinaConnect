@@ -69,14 +69,34 @@ export function applyTranslations(lang: Language): void {
     }
 
     if (typeof value === "string") {
-      // Handle template variables like {city}
+      // Replace template variables like {city}, {count}, {price} etc.
+      // Read from data-i18n-vars JSON attribute first, then fall back to data-city-* attrs, then any text.
+      let vars: Record<string, string | number> = {};
+      const varsAttr = el.getAttribute("data-i18n-vars");
+      if (varsAttr) {
+        try { vars = JSON.parse(varsAttr); } catch {}
+      }
+      if (!("city" in vars)) {
+        const cn = el.getAttribute("data-city-name") || el.closest("[data-city-name]")?.getAttribute("data-city-name");
+        if (cn) vars.city = cn;
+      }
+      if (!("count" in vars)) {
+        const cn = el.getAttribute("data-count");
+        if (cn) vars.count = cn;
+      }
       const html = el.innerHTML;
       if (html.includes("{")) {
-        // Preserve HTML structure but update text
-        el.textContent = value;
-      } else {
-        el.textContent = value;
+        // The element already renders its own variable values via SSR (Astro JSX), so do not overwrite.
+        return;
       }
+      // If value contains unresolved placeholders (e.g. {count} with no count in vars),
+      // do not overwrite the SSR-rendered text — the page would otherwise show literal {count}.
+      const placeholderMatch = value.match(/\{(\w+)\}/);
+      if (placeholderMatch && !(placeholderMatch[1] in vars)) {
+        return;
+      }
+      const replaced = value.replace(/\{(\w+)\}/g, (m, k) => (k in vars ? String(vars[k]) : ""));
+      el.textContent = replaced;
     }
   });
 

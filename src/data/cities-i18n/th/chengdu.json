@@ -3,30 +3,30 @@
   "name": "成都",
   "nameEn": "Chengdu",
   "country": "China",
-  "population": "21.24 million",
+  "population": "21.24 ล้าน",
   "coordinates": {
     "lat": 30.6587,
     "lng": 104.0658
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Chengdu, the capital of Sichuan province, is known as the 'City of Revelry' for its laid-back lifestyle, spicy cuisine, and the giant pandas. Home to ancient Shu culture, it offers relaxing tea houses, spicy hot pot, the historic Jinli Street, and proximity to the scenic Jiuzhaigou and Leshan Giant Buddha.",
+  "description": "เฉิงตู เมืองหลวงของมณฑลเสฉวน ขึ้นชื่อในฐานะ 'เมืองแห่งความสุข' เนื่องจากวิถีชีวิตที่ผ่อนคลาย อาหารรสเผ็ด และหมีแพนด้ายักษ์ เป็นบ้านของวัฒนธรรมซูโบราณ มีบ้านน้ำชาที่ผ่อนคลาย หม้อไฟรสเผ็ด ถนนจินลี่ที่มีประวัติศาสตร์ และใกล้กับภูเขาจิวจาของและพระพุทธรูปยักษ์เล่อซาน",
   "coverImage": "/img/ext/ee9d4784d80e.webp",
   "highlights": [
-    "Giant Panda Base - Home to adorable pandas",
-    "Jinli Street - Ancient Shu culture and snacks",
-    "People's Park - Tea houses and pandas",
-    "Mount Emei - Buddhist mountain retreat",
-    "Sichuan Opera - Traditional face-changing show"
+    "ฐานหมีแพนด้ายักษ์ - บ้านของหมีแพนด้าน่ารัก",
+    "ถนนจิ้นลี่ - วัฒนธรรมโบราณของราชวงศ์ซูและอาหารว่าง",
+    "สวนประชาชน - บ้านชาและแพนด้า",
+    "ยอดเขาเอเม่ย์ - สถานที่พักผ่อนทางพุทธศาสนา",
+    "ละครเสวียน - การแสดงเปลี่ยนหน้าดั้งเดิม"
   ],
   "climate": {
-    "type": "Subtropical humid",
+    "type": "ภูมิอากาศกึ่งเขตร้อนชื้น",
     "bestMonths": [
-      "March",
-      "April",
-      "May",
-      "September",
-      "October",
-      "November"
+      "มีนาคม",
+      "เมษายน",
+      "พฤษภาคม",
+      "กันยายน",
+      "ตุลาคม",
+      "พฤศจิกายน"
     ],
     "avgSummerTemp": "26C (79F)",
     "avgWinterTemp": "6C (43F)",
@@ -36,702 +36,702 @@
     {
       "id": "panda-base",
       "name": "成都大熊猫繁育研究基地",
-      "nameEn": "Chengdu Research Base of Giant Panda Breeding",
+      "nameEn": "ฐานวิจัยและเพาะเลี้ยงแพนด้าใหญ่เฉิงตู",
       "category": "cultural",
-      "description": "The world's largest giant panda breeding center with over 80 pandas in natural habitat settings.",
+      "description": "ศูนย์เพาะพันธุ์หมีแพนด้ายักษ์ที่ใหญ่ที่สุดในโลกมีหมีแพนด้ามากกว่า 80 ตัวในสภาพแวดล้อมที่เป็นธรรมชาติ",
       "image": "/img/ext/287ca77bedf7.webp",
-      "address": "26 Panda Road, Chenghua District",
+      "address": "26 ถนนหมีแพนด้า เขตเฉิงหัว",
       "coordinates": {
         "lat": 30.7385,
         "lng": 104.1445
       },
-      "openingHours": "07:30-18:00 (Summer), 08:00-17:30 (Winter)",
+      "openingHours": "07:30-18:00 (ฤดูร้อน), 08:00-17:30 (ฤดูหนาว)",
       "ticketPrice": "55¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4 ชั่วโมง",
       "highlights": [
-        "Baby panda nursery",
-        "Red panda area",
-        "Panda theater",
-        "Release training center"
+        "โรงเลี้ยงลูกหมีแพนด้า",
+        "พื้นที่หมีแพนด้าแดง",
+        "โรงละครหมีแพนด้า",
+        "ศูนย์ฝึกปล่อยสู่ธรรมชาติ"
       ],
-      "tips": "Arrive at opening to catch pandas most active in morning. Visit in summer for cubs. Allow 3+ hours for full visit. Shuttle bus from Tianfu Square.",
+      "tips": "มาถึงตอนเปิดเพื่อเห็นหมีแพนด้าที่กระฉับกระเฉงที่สุดในตอนเช้า มาเยี่ยมชมในฤดูร้อนเพื่อดูลูกหมีแพนด้า ใช้เวลา 3+ ชั่วโมงสำหรับการเยี่ยมชมเต็มรูปแบบ รถรับส่งจากจัตุรัสเทียนฟู่",
       "phone": "+86 028  1293 9913"
     },
     {
       "id": "jinli-street",
       "name": "锦里古街",
-      "nameEn": "Jinli Ancient Street",
+      "nameEn": "ถนนจินหลี่โบราณ",
       "category": "cultural",
-      "description": "A reconstructed ancient street showcasing Shu culture with traditional architecture, street food, tea houses, and shops.",
+      "description": "ถนนโบราณที่สร้างขึ้นใหม่แสดงวัฒนธรรมซู พร้อมสถาปัตยกรรมแบบดั้งเดิม อาหารข้างทาง ร้านน้ำชา และร้านค้า",
       "image": "/img/ext/95dfd9d7b442.png",
-      "address": "Near Wuhou Temple, Wuhou District",
+      "address": "ใกล้วัดอู่โหว อำเภออู่โหว",
       "coordinates": {
         "lat": 30.6515,
         "lng": 104.0555
       },
-      "openingHours": "Open 24 hours (shops 09:00-23:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "เปิด 24 ชั่วโมง (ร้านค้า 09:00-23:00)",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Traditional snacks",
-        "Sichuan opera masks",
-        "Traditional crafts",
-        "Red lanterns at night"
+        "อาหารว่างดั้งเดิม",
+        "หน้ากากโอเปราเสฉวน",
+        "หัตถกรรมแบบดั้งเดิม",
+        "โคมไฟแดงในตอนกลางคืน"
       ],
-      "tips": "Best in evening when lit. Try stinky tofu and sugar paintings. Combine with Wuhou Temple nearby.",
+      "tips": "ดีที่สุดในตอนเย็นเมื่อมีไฟส่อง ลองเต้าหู้เหม็นและภาพน้ำตาล รวมกับวัดอู่โหวใกล้เคียง",
       "phone": "+86 028  8586 7440"
     },
     {
       "id": "wuhou-temple",
       "name": "武侯祠",
-      "nameEn": "Wuhou Temple",
+      "nameEn": "วูฮอว์ เท็มเพิล",
       "category": "historical",
-      "description": "China's most famous memorial temple dedicated to Liu Bei and Zhuge Liang of the Three Kingdoms period.",
+      "description": "วัดอนุสรณ์ที่มีชื่อเสียงที่สุดในจีนอุทิศแด่หลิวเป๋ยและจูเกอเหลียงแห่งยุคสามก๊ก",
       "image": "/img/ext/60f61a603031.webp",
-      "address": "231 Wuhou Temple St, Wuhou District",
+      "address": "231 ถนนวัดอู่โหว อำเภออู่โหว",
       "coordinates": {
         "lat": 30.6525,
         "lng": 104.0565
       },
-      "openingHours": "08:00-20:00 (Mar-Oct), 08:00-18:30 (Nov-Feb)",
+      "openingHours": "08:00-20:00 (มี.ค.-ต.ค.), 08:00-18:30 (พ.ย.-ก.พ.)",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "2 hours",
+      "recommendedVisitTime": "2 ชั่วโมง",
       "highlights": [
-        "Sanhui Hall",
-        "Six-Chariot Pavilion",
-        "Romance of Three Kingdoms theme"
+        "หอซานฮุย",
+        "หอเก้าพระรถ",
+        "หัวข้อเรื่องสามก๊ก"
       ],
-      "tips": "Combined ticket with Jinli Street available. Morning visits cooler. Combine with Jinli Street.",
+      "tips": "ตั๋วรวมพร้อมกับ Jinli Street มีให้บริการ การเยี่ยมชมในตอนเช้าจะเย็นสบาย รวมกับ Jinli Street",
       "phone": "+86 28 8555 2397"
     },
     {
       "id": "dujiangyan",
       "name": "都江堰",
-      "nameEn": "Dujiangyan Irrigation System",
+      "nameEn": "ระบบชลประทานตู้เจียงหยาน",
       "category": "cultural",
-      "description": "UNESCO World Heritage site - the world's oldest functional irrigation system still in use today, built in 256 BC.",
+      "description": "มรดกโลก UNESCO - เป็นระบบชลประทานที่ใช้งานได้อยู่จนปัจจุบันที่เก่าแก่ที่สุดในโลก สร้างขึ้นในปี 256 ก่อนคริสตกาล",
       "image": "/img/ext/a621ecf68c20.webp",
-      "address": "Dujiangyan City, 50km from Chengdu",
+      "address": "เมืองดูเจียงยัน ห่างจากเฉิงตู 50 กิโลเมตร",
       "coordinates": {
         "lat": 30.9965,
         "lng": 103.6105
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "80¥",
-      "recommendedVisitTime": "Half day",
+      "recommendedVisitTime": "ครึ่งวัน",
       "highlights": [
-        "Fish Mouth Levee",
-        "Baopeng Tower",
-        "Anlan Bridge",
-        "Mountain views"
+        "เขื่อนปากปลา",
+        "หอบัวเพิง",
+        "สะพานอันหลัน",
+        "วิวภูเขา"
       ],
-      "tips": "Combine with nearby Qingcheng Mountain day trip. Take early bus from Chengdu for full day.",
+      "tips": "ให้รวมกับทริปวันหนึ่งไปยังภูเขาเชิงเขาหวิงเฉิงใกล้เคียง ขึ้นรถเมล์เช้าจากเฉิงตูเพื่อใช้เวลาทั้งวัน",
       "phone": "+86 28 7288 0126"
     },
     {
       "id": "sichuan-opera",
       "name": "川剧变脸秀",
-      "nameEn": "Sichuan Opera",
+      "nameEn": "ละครเซินจวน",
       "category": "cultural",
-      "description": "Traditional Sichuan opera featuring the famous face-changing (bianlian) technique where actors change masks in seconds.",
+      "description": "ละครเซินจวนดั้งเดิมที่มีการแสดงเทคนิคการเปลี่ยนหน้า (bianlian) ที่มีชื่อเสียง โดยนักแสดงสามารถเปลี่ยนหน้ากากได้ภายในเวลาไม่กี่วินาที",
       "image": "/img/ext/35e005ee8e2a.webp",
-      "address": "Various venues including Shufeng Yayun",
+      "address": "สถานที่ต่างๆ รวมถึงซูเฟิงยายุน",
       "coordinates": {
         "lat": 30.6585,
         "lng": 104.0425
       },
-      "openingHours": "Shows at 20:00 daily",
+      "openingHours": "การแสดงทุกวันเวลา 20:00",
       "ticketPrice": "200-400¥",
-      "recommendedVisitTime": "1.5 hours",
+      "recommendedVisitTime": "1.5 ชั่วโมง",
       "highlights": [
-        "Face changing",
-        "Fire breathing",
-        "Teapot juggling",
-        "Earring pulling"
+        "การเปลี่ยนหน้า",
+        "การพ่นไฟ",
+        "การเล่นตุ๊กตาถ้วยชา",
+        "การดึงจี้หู"
       ],
-      "tips": "Book through hotel concierge. Tea included in price. Photography restricted during show. Best experience of traditional art.",
+      "tips": "จองผ่านพนักงานต้อนรับโรงแรม ชามีราคารวมในตั๋ว การถ่ายภาพถูกจำกัดระหว่างการแสดง ประสบการณ์ที่ดีที่สุดของศิลปะดั้งเดิม",
       "phone": "+86 028  5199 8999"
     },
     {
       "id": "qingchengshan",
       "name": "青城山",
-      "nameEn": "Qingchengshan (Mount Qingcheng)",
+      "nameEn": "เขาหยิงเฉิง (ภูเขาหยิงเฉิง)",
       "category": "cultural",
-      "description": "A Taoist mountain with ancient temples, forest trails, and the birthplace of China's Taoist culture. UNESCO World Heritage.",
+      "description": "ภูเขาทางศาสนาเต๋าที่มีวัดโบราณ ทางเดินผ่านป่า และเป็นสถานที่กำเนิดวัฒนธรรมเต๋าของประเทศจีน มรดกโลกของยูเนสโก",
       "image": "/img/ext/f250a90ab85e.webp",
-      "address": "Qingchengshan Town, Dujiangyan, 70km from Chengdu",
+      "address": "ตำบลเชิงเขาชิงเจิ้ง, อำเภอตูเจียนยัน, ห่างจากเฉิงตู 70 กิโลเมตร",
       "coordinates": {
         "lat": 30.8975,
         "lng": 103.5335
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "60¥ (front mountain), 20¥ (back mountain)",
-      "recommendedVisitTime": "4-6 hours",
+      "ticketPrice": "60¥ (ภูเขาหน้า), 20¥ (ภูเขาหลัง)",
+      "recommendedVisitTime": "4-6 ชั่วโมง",
       "highlights": [
-        "Tian师祖洞",
-        "Shangqing Temple",
-        "Natural oxygen forest",
-        "Taoist tea houses"
+        "ถ้ำเทียนซือจู",
+        "วัดซังชิง",
+        "ป่าออกซิเจนธรรมชาติ",
+        "ร้านน้ำชาเต๋า"
       ],
-      "tips": "Combine with Dujiangyan. Take high-speed train from Chengdu. Wear hiking shoes. Take cable car up, walk down.",
+      "tips": "ให้รวมกับดูเจียงยัน ขึ้นรถไฟความเร็วสูงจากเฉิงตู สวมรองเท้าเดินป่า ขึ้นรถลิฟท์ขึ้น เดินลงมา",
       "phone": "+86 028  1664 6603"
     },
     {
       "id": "peoples-park",
       "name": "人民公园",
-      "nameEn": "People's Park",
+      "nameEn": "สวนสาธารณะผู้คน",
       "category": "cultural",
-      "description": "The heart of Chengdu's tea house culture with traditional teahouses, matchmaking corner, and tai chi areas.",
+      "description": "ใจกลางวัฒนธรรมร้านน้ำชาเฉิงตูพร้อมร้านน้ำชาแบบดั้งเดิม มุมจับคู่ และพื้นที่ไทเก็ค",
       "image": "/img/ext/690be6b1d9ea.webp",
-      "address": "12 Remin Rd, Qingyang District",
+      "address": "12 ถนนเหรินหมิน อำเภอชิงหยาง",
       "coordinates": {
         "lat": 30.6575,
         "lng": 104.0665
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Classic tea houses",
-        "Matchmaking corner (相亲角)",
-        "Golf putting green",
-        "People's Massacre Memorial"
+        "ร้านชาแบบดั้งเดิม",
+        "มุมหาคู่ (相亲角)",
+        "สนามกอล์ฟปั่น",
+        "อนุสรณ์สถานการสังหารประชาชน"
       ],
-      "tips": "Try a traditional tea ceremony. The park comes alive on weekends. Best to experience authentic Chengdu lifestyle.",
+      "tips": "ลองพิธีชงชาแบบดั้งเดิม สวนคึกคักในวันหยุด ดีที่สุดในการสัมผัสวิถีชีวิตเฉิงตูแท้จริง",
       "phone": "+86 028  1165 3973"
     },
     {
       "id": "jinsha",
       "name": "金沙遗址博物馆",
-      "nameEn": "Jinsha Site Museum",
+      "nameEn": "พิพิธภัณฑ์สถานที่ขุดค้นจินซา",
       "category": "historical",
-      "description": "A major archaeological site dating to the Shu Kingdom (1250-650 BC) with a modern museum showcasing gold relics.",
+      "description": "แหล่งโบราณคดีสำคัญที่มีอายุตั้งแต่สมัยอาณาจักรชู (1250-650 ปีก่อนคริสตกาล) พร้อมพิพิธภัณฑ์สมัยใหม่ที่จัดแสดงเครื่องประดับทองคำ",
       "image": "/img/ext/8652e6198486.webp",
-      "address": "227 Qingyayi Rd, Qingyang District",
+      "address": "227 ถนน หิงยายี, เขต ชิงยัง",
       "coordinates": {
         "lat": 30.6915,
         "lng": 104.0445
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "70¥",
-      "recommendedVisitTime": "2 hours",
+      "recommendedVisitTime": "2 ชั่วโมง",
       "highlights": [
-        "Gold Sun and Moon emblem",
-        "Ivory relics",
-        "Jade artifacts",
-        "Ancient Shu civilization"
+        "สัญลักษณ์ดวงอาทิตย์และดวงจันทร์ทองคำ",
+        "พรรณาการที่ทำจากงาช้าง",
+        "สิ่งของหยก",
+        "อารยธรรม Shu โบราณ"
       ],
-      "tips": "Less crowded than other museums. Audio guide essential for context. Combine with nearby Temple of Marquis.",
+      "tips": "น้อยคนกว่าพิพิธภัณฑ์อื่นๆ ต้องใช้เครื่องช่วยฟังเสียงเพื่อความเข้าใจ รวมกับวัดมาร์ควิสใกล้เคียง",
       "phone": "+86 028  5137 3494"
     },
     {
       "id": "leshan-giant-buddha",
       "name": "乐山大佛",
-      "nameEn": "Leshan Giant Buddha",
+      "nameEn": "พระพุทธรูปยักษ์เล่อซาน",
       "category": "historical",
-      "description": "The world's largest stone Buddha statue (71m tall) carved into a cliff at the confluence of three rivers.",
+      "description": "พระพุทธรูปหินที่ใหญ่ที่สุดในโลก (สูง 71 เมตร) สลักเข้าไปในหน้าผาที่จุดบรรจบของแม่น้ำสามสาย",
       "image": "/img/ext/dbab57e89617.png",
-      "address": "Leshan City, 150km from Chengdu",
+      "address": "เมืองเล่อซาน ห่างจากเฉิงตู 150 กม.",
       "coordinates": {
         "lat": 29.5465,
         "lng": 103.7675
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "80¥ (peak season), 10¥ (off-peak, boat only)",
-      "recommendedVisitTime": "Half day to full day",
+      "ticketPrice": "80¥ (ฤดูกาลสูง), 10¥ (นอกฤดูกาล เรือเท่านั้น)",
+      "recommendedVisitTime": "ครึ่งวันถึงเต็มวัน",
       "highlights": [
-        "71m Buddha head carved into cliff",
-        "Linggang Platform views",
-        "Thousand Buddha Cliff",
-        "Baidu River cruise"
+        "หัวพระพุทธรูปสูง 71 เมตรแกะสลักบนหน้าผา",
+        "วิวจากลิงกังแพลตฟอร์ม",
+        "หน้าผาพันพระพุทธรูป",
+        "ล่องเรือแม่น้ำไป๋ตู"
       ],
-      "tips": "Day trip from Chengdu recommended. Book a tour or take high-speed train. Best viewed from boat for full perspective.",
+      "tips": "แนะนำทริปเดินทางชั่วคราวจากเฉิงตู จองทัวร์หรือนั่งรถไฟความเร็วสูง ชมวิวที่สวยที่สุดจากเรือ",
       "phone": "+86 028  5202 4505"
     },
     {
       "id": "tianfu-square",
       "name": "天府广场",
-      "nameEn": "Tianfu Square",
+      "nameEn": "จัตุรัสเทียนฟู",
       "category": "modern",
-      "description": "Chengdu's central square and transportation hub with the iconic Sichuan Museum and philosophy statues.",
+      "description": "จัตุรัสกลางและศูนย์กลางการคมนาคมของเฉิงตู พร้อมพิพิธภัณฑ์เสฉวนที่โดดเด่นและรูปปั้นปรัชญา",
       "image": "/img/ext/04dcca25a669.webp",
-      "address": "Tianfu Square, Jinjiang District",
+      "address": "จัตุรัส Tianfu เขตจินเจียง",
       "coordinates": {
         "lat": 30.6615,
         "lng": 104.0665
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "1 ชั่วโมง",
       "highlights": [
-        "Sichuan Museum",
-        "Mao Zedong statue",
-        "City hub for metro",
-        "Philosophy pillars"
+        "พิพิธภัณฑ์เสฉวน",
+        "อนุสรณ์สถานเหมาเจตอุง",
+        "ศูนย์กลางรถไฟฟ้าใต้ดินของเมือง",
+        "เสาแห่งปรัชญา"
       ],
-      "tips": "Good starting point for city exploration. Metro lines 1 and 2 connect here. Sichuan Museum free entry with ID.",
+      "tips": "จุดเริ่มต้นที่ดีสำหรับสำรวจเมือง รถไฟฟ้าใต้ดินสาย 1 และ 2 เชื่อมต่อที่นี่ พิพิธภัณฑ์เสฉวนเข้าชมฟรีโดยแสดงบัตรประจำตัว",
       "phone": "+86 028  8200 2088"
     },
     {
       "id": "sanxingdui",
       "name": "三星堆博物馆",
-      "nameEn": "Sanxingdui Museum",
+      "nameEn": "พิพิธภัณฑ์ซานซิงตุย",
       "category": "historical",
-      "description": "A mysterious ancient civilization site with extraordinary bronze masks and gold artifacts predating the Han dynasty.",
+      "description": "แหล่งอารยธรรมโบราณที่ลึกลับพร้อมหน้ากากสำริดและโบราณวัตถุทองคำที่ยอดเยี่ยม มีอายุก่อนราชวงศ์ฮั่น",
       "image": "/img/ext/8652e6198486.webp",
-      "address": "Sanxingdui Town, Guanghan, 40km from Chengdu",
+      "address": "เมืองซานซิงตุย กวงฮัน ห่างจากเฉิงตู 40 กม.",
       "coordinates": {
         "lat": 30.9875,
         "lng": 104.2045
       },
       "openingHours": "08:30-18:00",
       "ticketPrice": "72¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4 ชั่วโมง",
       "highlights": [
-        "Bronze mask with protruding eyes",
-        "Golden scepter",
-        "Standing bronze figure (2.6m)",
-        "Jade artifacts"
+        "หน้ากากสำริดตาโปน",
+        "คทาทองคำ",
+        "รูปบรอนซ์ยืน (2.6 เมตร)",
+        "สิ่งของหยก"
       ],
-      "tips": "One of China's greatest archaeological discoveries. Audio guide highly recommended. Take bus from Chengdu's east station.",
+      "tips": "หนึ่งในค้นพบทางโบราณคดีที่ยิ่งใหญ่ที่สุดของจีน ขอแนะนำให้เช่าหูฟังบรรยาย นั่งรถบัสจากสถานีตะวันออกของเฉิงตู",
       "phone": "+86 028  4391 2769"
     },
     {
       "id": "kuanzhai-alley",
       "name": "宽窄巷子",
-      "nameEn": "Kuanzhai Alleys",
+      "nameEn": "ตรอกคววนไช",
       "category": "cultural",
-      "description": "Historic alley district with Qing dynasty architecture, now a trendy area for snacks, tea houses, and Sichuan craft shops.",
+      "description": "ย่านตรอกประวัติศาสตร์ที่มีสถาปัตยกรรมราชวงศ์ชิง ปัจจุบันเป็นพื้นที่แห่งแฟชั่นสำหรับอาหารว่าง ร้านน้ำชา และร้านหัตถกรรมเสฉวน",
       "image": "/img/ext/95dfd9d7b442.png",
-      "address": "Kuanzhai Alley, Qingyang District",
+      "address": "ตรอกคววนไช เขตชิงหยาง",
       "coordinates": {
         "lat": 30.6595,
         "lng": 104.0525
       },
-      "openingHours": "Open 24 hours (shops 09:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "เปิด 24 ชั่วโมง (ร้านค้า 09:00-22:00)",
+      "ticketPrice": "เข้าชมฟรี",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Traditional courtyard houses",
-        "Local snacks",
-        "Craft workshops",
-        "Night atmosphere"
+        "บ้านเรือนลานแบบดั้งเดิม",
+        "อาหารว่างท้องถิ่น",
+        "โรงหัตถกรรม",
+        "บรรยากาศยามค่ำคืน"
       ],
-      "tips": "Try Dingding candy and sugar paintings. Best visited in evening for lantern lights. Compare with Jinli Street.",
+      "tips": "ลองทานลูกกวาดติงติงและภาพน้ำตาล เยี่ยมชมในตอนเย็นเพื่อชมแสงโคมไฟ เปรียบเทียบกับถนนจินลี่",
       "phone": "+86 28 8663 9939"
     },
     {
       "id": "dufu-thatched-cottage",
       "name": "杜甫草堂",
-      "nameEn": "Du Fu's Thatched Cottage",
+      "nameEn": "กระท่อมมุงจากของตู้ฟู่",
       "category": "historical",
-      "description": "The former residence of Tang dynasty poet Du Fu, a peaceful garden with pavilions and poetry inscriptions.",
+      "description": "ที่ประทับเดิมของกวีราชวงศ์ถังตู้ฟู่ สวนที่สงบเงียบพร้อมศาลาและจารึกบทกวี",
       "image": "/img/ext/b0874195abdf.webp",
-      "address": "37 Qinghua Rd, Qingyang District",
+      "address": "37 ถนนชิงหัว เขตชิงหยาง",
       "coordinates": {
         "lat": 30.6815,
         "lng": 104.0265
       },
-      "openingHours": "08:00-20:00 (Summer), 08:00-18:00 (Winter)",
+      "openingHours": "08:00-20:00 (ฤดูร้อน), 08:00-18:00 (ฤดูหนาว)",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "2 hours",
+      "recommendedVisitTime": "2 ชั่วโมง",
       "highlights": [
-        "Du Fu's original cottage",
-        "Poetry garden",
-        "Millennium old banyan tree",
-        "Museum of poetry"
+        "กระท่อมต้นแบบของตู้ฟู่",
+        "สวนบทกวี",
+        "ต้นโพธิ์อายุพันปี",
+        "พิพิธภัณฑ์บทกวี"
       ],
-      "tips": "Visit in spring for plum blossoms. Audio guide recommended for poetry appreciation. Combine with nearby Jinsha.",
+      "tips": "ควรไปเยี่ยมชมในฤดูใบไม้ผลิเพื่อชมดอกไม้ทุ่ง ควรใช้คู่มือเสียงเพื่อเข้าใจบทกวีมากขึ้น รวมกับการเยี่ยมชมจินซ่าที่อยู่ใกล้เคียง",
       "phone": "+86 28 6892 1800"
     },
     {
       "id": "339-tv-tower",
       "name": "成都339电视塔",
-      "nameEn": "Chengdu 339 Tower",
+      "nameEn": "หอคอยเฉิงตู 339",
       "category": "modern",
-      "description": "Chengdu's iconic TV tower with a rotating observation deck and sky bar offering panoramic city views.",
+      "description": "หอคอยโทรทัศน์ที่เป็นสัญลักษณ์ของเฉิงตู พร้อมชั้นชมวิวที่หมุนได้และบาร์บนฟ้า ซึ่งมองเห็นวิวเมืองได้รอบทิศทาง",
       "image": "/img/ext/a0f0ef5bc7ae.webp",
-      "address": "339 Xiaotong Alley, Chenghua District",
+      "address": "339 ตรอกเซียวทง เขตเฉิงหัว",
       "coordinates": {
         "lat": 30.6615,
         "lng": 104.1025
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "50¥ (observation deck)",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "50¥ (ชั้นชมวิว)",
+      "recommendedVisitTime": "1-2 ชั่วโมง",
       "highlights": [
-        "Sky bar at 208m",
-        "Rotating restaurant",
-        "Bungee jump platform",
-        "Night views"
+        "สกายบาร์ที่ระดับ 208 เมตร",
+        "ภัตตาคารหมุน",
+        "แพลตฟอร์มบันจี้จัมป์",
+        "ทัศนียภาพในยามกลางคืน"
       ],
-      "tips": "Go at sunset for best views. The bungee jump is popular for thrill-seekers. Combined with nearby猛追湾 swimming area.",
+      "tips": "ควรไปตอนพระอาทิตย์ตกเพื่อชมวิวที่สวยที่สุด การกระโดดบันจี้จัมเป็นที่นิยมสำหรับผู้ที่ชอบความตื่นเต้น รวมกับบริเวณว่ายน้ำเมิงจุ้ยวังที่อยู่ใกล้เคียง",
       "phone": "+86 028  8447 0744"
     },
     {
       "id": "eastern-creative-memory",
       "name": "东郊记忆",
-      "nameEn": "Eastern Creative Memory",
+      "nameEn": "ความทรงจำสร้างสรรค์ตะวันออก",
       "category": "cultural",
-      "description": "A repurposed industrial complex turned creative arts district with music venues, cafes, and art installations.",
+      "description": "ศูนย์อุตสาหกรรมเก่าที่ได้รับการดัดแปลงเป็นเขตศิลปะสร้างสรรค์ พร้อมสถานที่แสดงดนตรี คาเฟ่ และงานศิลปะ",
       "image": "/img/ext/63ed66139449.webp",
-      "address": "298 Xiaojia River Rd, Chenghua District",
+      "address": "298 ถนนเซี่ยวเจียริเวอร์ เขตเฉิงหัว",
       "coordinates": {
         "lat": 30.6895,
         "lng": 104.1275
       },
-      "openingHours": "Open 24 hours (shops 10:00-21:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "เปิด 24 ชั่วโมง (ร้านค้า 10:00-21:00)",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Former factory buildings",
-        "Music venue",
-        "Art exhibitions",
-        "Street performances"
+        "อาคารโรงงานเก่า",
+        "สถานที่แสดงดนตรี",
+        "นิทรรศการศิลปะ",
+        "การแสดงบนท้องถนน"
       ],
-      "tips": "Check event schedule for live music. Great for photography. Industrial chic atmosphere.",
+      "tips": "ตรวจสอบกำหนดการแสดงสด สถานที่ถ่ายรูปสวย บรรยากาศอุตสาหกรรมแบบชิค",
       "phone": "+86 028  7418 8998"
     },
     {
       "id": "qintai-road",
       "name": "琴台路",
-      "nameEn": "Qintai Road",
+      "nameEn": "ถนนชินไท",
       "category": "cultural",
-      "description": "A cultural street famous for its Han dynasty architectural style, named after the legendary pianist Sima Xiangru and his wife Zhuo Wenjun.",
+      "description": "ถนนวัฒนธรรมที่มีชื่อเสียงจากสถาปัตยกรรมแบบราชวงศ์ฮั่น ตั้งชื่อตามนักดนตรีในตำนานซือหม่าเซียงรูกับภรรยาโจวเว่นจวิน",
       "image": "/img/ext/25a26f7e674a.webp",
-      "address": "Qintai Road, Qingyang District",
+      "address": "ถนนฉินไท่ เขตชิงหยาง",
       "coordinates": {
         "lat": 30.6615,
         "lng": 104.0465
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "1-2 ชั่วโมง",
       "highlights": [
-        "Han dynasty style architecture",
-        "Phoenix sculpture",
-        "Pearl River view",
-        "Cultural shops"
+        "สถาปัตยกรรมแบบราชวงศ์ฮั่น",
+        "ประติมากรรมนกฟีนิกซ์",
+        "วิวแม่น้ำเปิร์ล",
+        "ร้านค้าวัฒนธรรม"
       ],
-      "tips": "Best at night with lighting. Close to People's Park and Provincial Museum. Try local snacks along the street.",
+      "tips": "ที่สวยที่สุดในเวลากลางคืนมีไฟส่อง ใกล้กับสวนประชาชนและพิพิธภัณฑ์แห่งจังหวัด ลองอาหารว่างท้องถิ่นตามถนน",
       "phone": "+86 028  4969 8497"
     },
     {
       "id": "wenshu-monastery",
       "name": "文殊院",
-      "nameEn": "Wenshu Monastery",
+      "nameEn": "วัดเวินซู",
       "category": "cultural",
-      "description": "A well-preserved Buddhist temple complex known for its serene gardens, vegetarian cuisine, and cultural activities.",
+      "description": "วัดพุทธที่ได้รับการอนุรักษ์ไว้อย่างดี มีชื่อเสียงจากสวนที่เงียบสงบ อาหารมังสวิรัติ และกิจกรรมทางวัฒนธรรม",
       "image": "/img/ext/60f61a603031.webp",
-      "address": "6 Wenshu Lane, Qingyang District",
+      "address": "6 ตรอกเวินซู เขตชิงหยาง",
       "coordinates": {
         "lat": 30.6695,
         "lng": 104.0815
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1.5-2 hours",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "1.5-2 ชั่วโมง",
       "highlights": [
-        "Tang dynasty architecture",
-        "Gardens and ponds",
-        "Calligraphy museum",
-        "Vegetarian restaurant"
+        "สถาปัตยกรรมแบบราชวงศ์ถัง",
+        "สวนและบ่อน้ำ",
+        "พิพิธภัณฑ์จิตรกรรม",
+        "ร้านอาหารมังสวิรัติ"
       ],
-      "tips": "Try the vegetarian meals at the temple. Experience morning incense and worship rituals. Popular with locals.",
+      "tips": "ลองอาหารมังสวิรัติที่วัด สัมผัสธูปเช้าและพิธีสวดมนต์ เป็นที่นิยมของคนท้องถิ่น",
       "phone": "+86 028  4756 6757"
     },
     {
       "id": "daci-temple",
       "name": "大慈寺",
-      "nameEn": "Da Ci Temple",
+      "nameEn": "วัดต้าซื่อ",
       "category": "cultural",
-      "description": "An ancient Buddhist temple founded in the Tang dynasty, known for its large Buddha statues and peaceful atmosphere in the city center.",
+      "description": "วัดพุทธโบราณที่ก่อตั้งในราชวงศ์ถัง ขึ้นชื่อเรื่องพระพุทธรูปขนาดใหญ่และบรรยากาศสงบใจกลางเมือง",
       "image": "/img/ext/60f61a603031.webp",
-      "address": "23 Dacisi Rd, Jinjiang District",
+      "address": "ถนนดาซี่เซี่ย 23 เขตจินเจียง",
       "coordinates": {
         "lat": 30.6555,
         "lng": 104.0725
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "เข้าชมฟรี",
+      "recommendedVisitTime": "1 ชั่วโมง",
       "highlights": [
-        "Giant Buddha statue",
-        "Ancient Buddhist hall",
-        "Tea house within temple",
-        "Peaceful retreat"
+        "พระพุทธรูปยักษ์",
+        "พระอุโบสถโบราณ",
+        "ร้านน้ำชาภายในวัด",
+        "สถานที่พักผ่อนใจ"
       ],
-      "tips": "Located near Taikoo Li. The tea house inside is popular. One of the few temples with monks still in residence.",
+      "tips": "ตั้งอยู่ใกล้ไท่กู่หลี ร้านน้ำชาภายในวัดเป็นที่นิยม หนึ่งในวัดไม่กี่แห่งที่ยังมีพระภิกษุสงฆ์จำพรรษา",
       "phone": "+86 028  5551 2316"
     },
     {
       "id": "chunxi-road",
       "name": "春熙路",
-      "nameEn": "Chunxi Road",
+      "nameEn": "ถนนชุนซี",
       "category": "modern",
-      "description": "Chengdu's premier shopping district with luxury malls, international brands, and diverse dining options.",
+      "description": "ย่านช้อปปิ้งชั้นนำของเมืองเฉิงตู มีห้างสรรพสินค้าระดับหรู แบรนด์ระดับสากล และร้านอาหารหลากหลาย",
       "image": "/img/ext/25a26f7e674a.webp",
-      "address": "Chunxi Road, Jinjiang District",
+      "address": "ถนนชุนซี เขตจินเจียง",
       "coordinates": {
         "lat": 30.6575,
         "lng": 104.0745
       },
-      "openingHours": "Open 24 hours (shops 10:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-4 hours",
+      "openingHours": "เปิด 24 ชั่วโมง (ร้านค้า 10:00-22:00 น.)",
+      "ticketPrice": "เข้าชมฟรี",
+      "recommendedVisitTime": "2-4 ชั่วโมง",
       "highlights": [
-        "IFS shopping center",
-        "Taikoo Li",
-        "Sunjoy monument",
-        "Street fashion"
+        "ศูนย์การค้า IFS",
+        "ไท่คู่ ลี่",
+        "อนุสรณ์สถานซันจอย",
+        "แฟชั่นถนน"
       ],
-      "tips": "The giant panda sculpture on IFS roof is iconic. Great for shopping and food. Take metro line 2.",
+      "tips": "รูปปั้นหมีแพนด้ายักษ์บนหลังคา IFS เป็นสัญลักษณ์ที่โดดเด่น เหมาะสำหรับช้อปปิ้งและอาหาร ขึ้นรถไฟฟ้าใต้ดินสาย 2",
       "phone": "+86 028  2998 2775"
     },
     {
       "id": "sichuan-university",
       "name": "四川大学望江校区",
-      "nameEn": "Sichuan University (Wangjiang Campus)",
+      "nameEn": "มหาวิทยาลัยเสฉวน (วังเจียง)",
       "category": "cultural",
-      "description": "One of China's oldest universities with beautiful traditional architecture, lotus ponds, and historic buildings.",
+      "description": "หนึ่งในมหาวิทยาลัยเก่าแก่ที่สุดของจีน มีสถาปัตยกรรมแบบดั้งเดิมที่สวยงาม สระบัว และอาคารประวัติศาสตร์",
       "image": "/img/ext/131086015c23.webp",
-      "address": "24 South Section 3, Ring Rd, Wuhou District",
+      "address": "24 ตอนใต้ส่วนที่ 3 ถนนวงแหวน เขตอู่โจว",
       "coordinates": {
         "lat": 30.6315,
         "lng": 104.0845
       },
-      "openingHours": "Open to public",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "เปิดให้สาธารณะเข้าชม",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "1-2 ชั่วโมง",
       "highlights": [
-        "Historic buildings",
-        "Lotus pond",
-        "Cherry blossom avenue",
-        "Campus cafes"
+        "อาคารประวัติศาสตร์",
+        "สระบัว",
+        "ถนนดอกซากุระบาน",
+        "ร้านกาแฟในมหาวิทยาลัย"
       ],
-      "tips": "Best in spring for flowers. The old campus has unique architecture. Walk along the river is relaxing.",
+      "tips": "ฤดูใบไม้ผลิเป็นช่วงเวลาที่ดีที่สุดสำหรับดอกไม้ วิทยาเขตเก่ามีสถาปัตยกรรมที่โดดเด่น เดินเล่นริมแม่น้ำให้ความรู้สึกผ่อนคลาย",
       "phone": "+86 028  4839 7187"
     },
     {
       "id": "jietai-temple",
       "name": "石经寺",
-      "nameEn": "Jietai Temple",
+      "nameEn": "วัดเจี้ยนไท",
       "category": "historical",
-      "description": "A thousand-year-old Buddhist temple known for its Guanyin statue and peaceful mountain location.",
+      "description": "วัดพุทธอายุพันปีที่มีชื่อเสียงจากพระพุทธรูปกวนอิมและทำเลที่ตั้งบนภูเขาที่สงบเงียบ",
       "image": "/img/ext/60f61a603031.webp",
-      "address": "Jietai Town, Longquanyi District, 35km from Chengdu",
+      "address": "เมืองเจี้ยนไท เขตหลงชวนอี้ ห่างจากเฉิงตู 35 กิโลเมตร",
       "coordinates": {
         "lat": 30.5815,
         "lng": 104.2185
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "เข้าชมฟรี",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Thousand-year-old trees",
-        "Guanyin statue",
-        "Mountain scenery",
-        "Temple gardens"
+        "ต้นไม้อายุพันปี",
+        "พระพุทธรูปกวนอิม",
+        "วิวภูเขา",
+        "สวนวัด"
       ],
-      "tips": "Take a taxi or bus from Chengdu. Popular with locals for weekend outings. Try vegetarian food at temple.",
+      "tips": "นั่งแท็กซี่หรือรถบัสจากเฉิงตู เป็นที่นิยมของคนท้องถิ่นสำหรับการท่องเที่ยววันหยุด ลองอาหารมังสวิรัติที่วัด",
       "phone": "+86 028  6978 9433"
     },
     {
       "id": "baiyun-temple",
       "name": "白云观",
-      "nameEn": "Baiyun Guan (White Cloud Temple)",
+      "nameEn": "ไปหยุนกวน (วัดเมฆขาว)",
       "category": "cultural",
-      "description": "A Taoist temple on scenic Wuhuang Mountain, known for Taoist culture and beautiful natural scenery.",
+      "description": "วัดเต้าเจี่ยนตั้งอยู่บนภูเขาวูหวงที่มีวิวสวยงาม มีชื่อเสียงในด้านวัฒนธรรมเต้าเจี่ยนและทัศนียภาพธรรมชาติที่งดงาม",
       "image": "/img/ext/85389545bfc3.webp",
-      "address": "Wuhuang Mountain, Xinjin District, 40km from Chengdu",
+      "address": "ภูเวิ้งหยวน เขตซินจิน ห่างจากเฉิงตู 40 กิโลเมตร",
       "coordinates": {
         "lat": 30.2215,
         "lng": 103.8985
       },
       "openingHours": "08:00-17:30",
       "ticketPrice": "10¥",
-      "recommendedVisitTime": "Half day",
+      "recommendedVisitTime": "ครึ่งวัน",
       "highlights": [
-        "Taoist temple complex",
-        "Mountain trails",
-        "Ancient banyan trees",
-        "Scenic overlooks"
+        "วัดเต๋าหรือศาสนสถานเต๋า",
+        "เส้นทางเดินป่าเขา",
+        "ต้นโพธิ์โบราณ",
+        "จุดชมวิวทิวทัศน์"
       ],
-      "tips": "Combine with nearby Huanglongxi ancient town. Wear comfortable shoes for hiking. Taoist culture experience.",
+      "tips": "รวมกับเมืองโบราณฮวงหลงซีที่ใกล้เคียง สวมรองเท้าที่สบายสำหรับเดินป่า สัมผัสวัฒนธรรมเต้า",
       "phone": "+86 028  3247 4082"
     },
     {
       "id": "tianfu-new-area",
       "name": "天府新区",
-      "nameEn": "Tianfu New Area",
+      "nameEn": "ทินฟู นิวแอเรีย",
       "category": "modern",
-      "description": "Chengdu's futuristic district featuring cutting-edge architecture, themed parks, and modern amenities.",
+      "description": "เขตอนาคตของเฉิงตูที่มีสถาปัตยกรรมทันสมัย สวนธีม และสิ่งอำนวยความสะดวกสมัยใหม่",
       "image": "/img/ext/04dcca25a669.webp",
-      "address": "Tianfu New Area, High-Tech Zone",
+      "address": "ทินฟู นิวแอเรีย เขตไฮเทค",
       "coordinates": {
         "lat": 30.4515,
         "lng": 104.4485
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Varies by attraction",
-      "recommendedVisitTime": "3-5 hours",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ราคาตั๋วแตกต่างกันไปตามแต่ละสถานที่",
+      "recommendedVisitTime": "3-5 ชั่วโมง",
       "highlights": [
-        "Chengdu环球中心",
-        "Sky Heartland",
-        "Modern architecture",
-        "Science museum"
+        "เฉิงตู โกลบอลเซ็นเตอร์",
+        "สกาย ฮาร์ตแลนด์",
+        "สถาปัตยกรรมสมัยใหม่",
+        "พิพิธภัณฑ์วิทยาศาสตร์"
       ],
-      "tips": "Rent a bike to explore. The largest building in the world (Global Center) is here. Great for architecture enthusiasts.",
+      "tips": "เช่าจักรยานสำรวจ อาคารที่ใหญ่ที่สุดในโลก (Global Center) อยู่ที่นี่ เหมาะสำหรับผู้ที่ชอบสถาปัตยกรรม",
       "phone": "+86 028  6837 0293"
     },
     {
       "id": "huanglongxi",
       "name": "黄龙溪古镇",
-      "nameEn": "Huanglongxi Ancient Town",
+      "nameEn": "เมืองโบราณหวงหลงซี",
       "category": "cultural",
-      "description": "A 2,000-year-old water town with preserved Ming and Qing dynasty architecture, famous for its ancient streets and traditional customs.",
+      "description": "เมืองน้ำอายุ 2,000 ปีที่มีสถาปัตยกรรมราชวงศ์หมิงและชิงอย่างอนุรักษ์ไว้ ขึ้นชื่อเรื่องถนนโบราณและประเพณีดั้งเดิม",
       "image": "/img/ext/835ad54fddf0.webp",
-      "address": "Huanglongxi Town,，双流区，40km from Chengdu",
+      "address": "เมืองหวงหลงซี อำเภอซวงหลิว ห่างจากเฉิงตู 40 กม.",
       "coordinates": {
         "lat": 30.2315,
         "lng": 104.1385
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "เข้าชมฟรี",
+      "recommendedVisitTime": "3-4 ชั่วโมง",
       "highlights": [
-        "Ancient water town",
-        "Fire dragon performance",
-        "Traditional temples",
-        "Streetside snacks"
+        "เมืองน้ำโบราณ",
+        "การแสดงมังกรไฟ",
+        "วัดแบบดั้งเดิม",
+        "อาหารว่างริมถนน"
       ],
-      "tips": "Best in summer for cooling off. Try '古镇豆花' and '一根面'. Watch fire dragon dance at night.",
+      "tips": "ดีที่สุดในช่วงฤดูร้อนเพื่อรับความเย็นสดชื่น ลองชิม '古镇豆花' และ '一根面' ชมการแสดงมังกรไฟในเวลากลางคืน",
       "phone": "+86 028  9659 8903"
     },
     {
       "id": "anji-new-village",
       "name": "安仁古镇",
-      "nameEn": "Anren Ancient Town",
+      "nameEn": "เมืองโบราณอันเรน",
       "category": "cultural",
-      "description": "A historic town famous for its collections of 1940s architecture and unique museum clusters including the Liu Manor Museum.",
+      "description": "เมืองประวัติศาสตร์ที่มีชื่อเสียงจากการสะสมสถาปัตยกรรมยุคทศวรรษ 1940 และกลุ่มพิพิธภัณฑ์ที่มีเอกลักษณ์ รวมถึงพิพิธภัณฑ์คฤหาสน์หลิว",
       "image": "/img/ext/251ea33a3e15.webp",
-      "address": "Anren Town, Daying County, 40km from Chengdu",
+      "address": "เมืองอันเรน, อำเภอต้ายิง, ห่างจากเฉิงตู 40 กม.",
       "coordinates": {
         "lat": 30.4585,
         "lng": 103.6085
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free (individual museums ticket)",
-      "recommendedVisitTime": "4-5 hours",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "เข้าชมฟรี (บัตรพิพิธภัณฑ์แต่ละแห่ง)",
+      "recommendedVisitTime": "4-5 ชั่วโมง",
       "highlights": [
-        "Liu Manor Museum",
-        "1940s street",
-        "Footprint Museum",
-        "Chinese Opera Museum"
+        "พิพิธภัณฑ์คฤหาสน์หลิว",
+        "ถนนยุคทศวรรษ 1940",
+        "พิพิธภัณฑ์รอยเท้า",
+        "พิพิธภัณฑ์ออเปราะจีน"
       ],
-      "tips": "Buy combined ticket for all museums. Watch 'Happy Farm' TV show filming location. Book accommodation for night tour.",
+      "tips": "ซื้อบัตรรวมสำหรับพิพิธภัณฑ์ทั้งหมด ชมสถานที่ถ่ายทำรายการ 'Happy Farm' จองที่พักสำหรับชมเมืองในเวลากลางคืน",
       "phone": "+86 028  1997 7710"
     },
     {
       "id": "xianqiong-city",
       "name": "西羌古城",
-      "nameEn": "Xianqiong Ancient City",
+      "nameEn": "เมืองโบราณเซียนชง",
       "category": "cultural",
-      "description": "An ancient Qiang ethnic village with 2000-year history, featuring stone houses and terraced fields.",
+      "description": "หมู่บ้านชาติพันธุ์เชียงโบราณอายุ 2000 ปี มีบ้านหินและนาขั้นบันได",
       "image": "/img/ext/835ad54fddf0.webp",
-      "address": "Xianqiong Township, Pengzhou, 90km from Chengdu",
+      "address": "ตำบลเซียนชง เมืองเปินโจว ห่างจากนครเฉิงตู 90 กม.",
       "coordinates": {
         "lat": 31.0285,
         "lng": 103.8385
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "30¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4 ชั่วโมง",
       "highlights": [
-        "Ancient stone houses",
-        "Qiang culture",
-        "Mountain views",
-        "Traditional crafts"
+        "บ้านหินโบราณ",
+        "วัฒนธรรมเชียง",
+        "ทัศนียภาพภูเขา",
+        "หัตถกรรมดั้งเดิม"
       ],
-      "tips": "Combine with nearby Panda Valley. Watch Qiang dance performances. Try Qiang handicrafts.",
+      "tips": "รวมทริปกับหุบเขาแพนดาใกล้เคียง ชมการแสดงนาวเชียง ลองทำหัตถกรรมเชียง",
       "phone": "+86 028  9970 3376"
     },
     {
       "id": "yuecheng-lake",
       "name": "月城湖",
-      "nameEn": "Yuecheng Lake",
+      "nameEn": "ทะเลสาบเซียนเชิง",
       "category": "natural",
-      "description": "A scenic lake at the foot of Mount Emei with crystal clear water surrounded by mountains and ancient temples.",
+      "description": "ทะเลสาบทิวทัศน์ที่เชิงเขาเอมี่ มีน้ำใสราวคริสตัล ล้อมรอบด้วยภูเขาและวัดโบราณ",
       "image": "/img/ext/6ca40af7315e.webp",
-      "address": "Mount Emei Scenic Area, Leshan",
+      "address": "เขตทิวทัศน์เขาเอมี่, เมืองเลซาน",
       "coordinates": {
         "lat": 29.5985,
         "lng": 103.4285
       },
       "openingHours": "06:30-18:00",
-      "ticketPrice": "20¥ (included in Emei ticket)",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "20¥ (รวมในตั๋วเขาเอมี่)",
+      "recommendedVisitTime": "1-2 ชั่วโมง",
       "highlights": [
-        "Mountain lake scenery",
-        "Boating experience",
-        "Temple reflections",
-        "Quiet atmosphere"
+        "ทิวทัศน์ทะเลสาบบนภูเขา",
+        "ประสบการณ์พายเรือ",
+        "เงาสะท้อนของวัด",
+        "บรรยากาศสงบ"
       ],
-      "tips": "Best in morning when mist rises. Take cable car for panoramic views. Combine with Baoguo Temple nearby.",
+      "tips": "ช่วงเช้าตรู่ที่หมอกลอยขึ้นเป็นช่วงที่ดีที่สุด นั่งกระเช้าขึ้นเขาเพื่อชมวิวทิวทัศน์ที่กว้าง ควรไปวัดเปากัวด้วย",
       "phone": "+86 028  7216 6510"
     },
     {
       "id": "chuanbai-ecological",
       "name": "川西竹海景区",
-      "nameEn": "Chuanxi Bamboo Sea",
+      "nameEn": "ทะเลไม้ไผ่ชวนซี",
       "category": "natural",
-      "description": "A vast bamboo forest on Mount Pingling with hiking trails, glass bridge, and natural scenery.",
+      "description": "ป่าไม้ไผ่อันกว้างใหญ่บนเขาปิงหลิง มีเส้นทางเดินป่า สะพานแก้ว และทิวทัศน์ธรรมชาติ",
       "image": "/img/ext/f559500ee99e.webp",
-      "address": "Pingling Mountain, Xinjin District, 40km from Chengdu",
+      "address": "เขาปิงหลิง, เขตซินจิน, 40 กม. จากเมืองเฉิงตู",
       "coordinates": {
         "lat": 30.3785,
         "lng": 103.8285
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4 ชั่วโมง",
       "highlights": [
-        "Bamboo forest",
-        "Glass bridge",
-        "Waterfall",
-        "Sky trail"
+        "ป่าไผ่",
+        "สะพานกระจก",
+        "น้ำตก",
+        "เส้นทางบนท้องฟ้า"
       ],
-      "tips": "Wear comfortable shoes. The glass skywalk is thrilling. Bring mosquito repellent in summer.",
+      "tips": "สวมรองเท้าที่สบาย ทางเดินกระจกบนท้องฟ้าน่าตื่นเต้น นำยากันยุงในช่วงฤดูร้อน",
       "phone": "+86 028  6688 7637"
     },
     {
       "id": "tianfu-presley",
       "name": "成都博物馆",
-      "nameEn": "Chengdu Museum",
+      "nameEn": "พิพิธภัณฑ์เฉิงตู",
       "category": "cultural",
-      "description": "Chengdu's largest museum featuring Sichuan's history from ancient Shu to modern era with over 300,000 artifacts.",
+      "description": "พิพิธภัณฑ์ที่ใหญ่ที่สุดของเมืองเฉิงตู จัดแสดงประวัติศาสตร์ของเสฉวนตั้งแต่ยุคซูโบราณถึงยุคปัจจุบัน มีสิ่งของโบราณกว่า 300,000 ชิ้น",
       "image": "/img/ext/8652e6198486.webp",
-      "address": "1 Huaxin Middle Rd, Qingyang District",
+      "address": "1 ถนนหัวซินกลาง เขตชิงหยาง",
       "coordinates": {
         "lat": 30.6655,
         "lng": 104.0415
       },
-      "openingHours": "09:00-20:00 (Mon closed)",
-      "ticketPrice": "Free (ID required)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "09:00-20:00 (ปิดวันจันทร์)",
+      "ticketPrice": "ฟรี (ต้องมีบัตรประจำตัว)",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Shu civilization artifacts",
-        "Sichuan opera masks",
-        "Ancient calligraphy",
-        "Temporary exhibitions"
+        "สิ่งของโบราณของอารยธรรมซู",
+        "หน้ากากโอเปราเสฉวน",
+        "อักษรศิลป์โบราณ",
+        "นิทรรศการชั่วคราว"
       ],
-      "tips": "Free audio guide available. Best to visit on weekday mornings. Combine with nearby People's Park.",
+      "tips": "มีเครื่องนำเที่ยวเสียงฟรี ควรไปช่วงเช้าวันธรรมดา รวมกับสวนประชาชนใกล้ๆ",
       "phone": "+86 028  8030 9880"
     },
     {
       "id": "giant-panda",
       "name": "成都大熊猫繁育研究基地",
-      "nameEn": "Chengdu Research Base of Giant Panda Breeding",
+      "nameEn": "ฐานวิจัยและเพาะเลี้ยงแพนด้าใหญ่เฉิงตู",
       "category": "nature",
       "description": "世界最大的大熊猫人工繁育基地，可近距离观看大熊猫。",
       "address": "成都市成华区",
@@ -754,7 +754,7 @@
     {
       "id": "qingcheng-mountain",
       "name": "青城山",
-      "nameEn": "Mount Qingcheng",
+      "nameEn": "ภูเชิงชิง",
       "category": "nature",
       "description": "道教名山，有青城天下幽之称。",
       "address": "成都市都江堰市",
@@ -777,7 +777,7 @@
     {
       "id": "du-fu-thatched",
       "name": "杜甫草堂",
-      "nameEn": "Du Fu Thatched Cottage",
+      "nameEn": "กระท่อมหลังคาฟางของตู้ฟู",
       "category": "landmark",
       "description": "唐代诗人杜甫流寓成都时的故居。",
       "address": "成都市青羊区",
@@ -800,29 +800,29 @@
     {
       "id": "people-park",
       "name": "人民公园",
-      "nameEn": "People's Park",
+      "nameEn": "สวนสาธารณะผู้คน",
       "category": "park",
-      "description": "成都最古老的公园，有鹤鸣茶社。",
-      "address": "成都市青羊区",
+      "description": "สวนสาธารณะในใจเมืองที่มีร้านน้ำชา สวน และอนุสรณ์สถานทางประวัติศาสตร์ เป็นที่นิยมของคนท้องถิ่น",
+      "address": "เขตยูจง",
       "coordinates": {
         "lat": 30.67,
         "lng": 104.05
       },
-      "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "openingHours": "เวลาเปิดบริการ 06:00-22:00",
+      "ticketPrice": "เข้าชมฟรี",
+      "recommendedVisitTime": "1-2 ชั่วโมง",
       "highlights": [
-        "茶馆",
-        "市民生活"
+        "ไท้ชียามเช้า",
+        "ร้านน้ำชา"
       ],
-      "tips": "喝盖碗茶。",
+      "tips": "เวลาที่ดีที่สุดในตอนเช้าตรู่เพื่อชมชาวบ้านฝึกไท้ชี มีบริการชาดั้งเดิม",
       "image": "/img/ext/690be6b1d9ea.webp",
       "phone": "+86 028  4276 3445"
     },
     {
       "id": "sichuan-museum",
       "name": "四川博物院",
-      "nameEn": "Sichuan Provincial Museum",
+      "nameEn": "พิพิธภัณฑ์มณฑลเสฉวน",
       "category": "museum",
       "description": "馆藏文物30万件，以张大千临摹敦煌壁画最著名。",
       "address": "成都市青羊区",
@@ -844,7 +844,7 @@
     {
       "id": "wenshu-temple",
       "name": "文殊院",
-      "nameEn": "Wenshu Temple",
+      "nameEn": "วัดเวินซู",
       "category": "temple",
       "description": "成都最大的佛教寺院，有1000多年历史。",
       "address": "成都市青羊区",
@@ -866,7 +866,7 @@
     {
       "id": "jinsha-site",
       "name": "金沙遗址博物馆",
-      "nameEn": "Jinsha Site Museum",
+      "nameEn": "พิพิธภัณฑ์สถานที่ขุดค้นจินซา",
       "category": "museum",
       "description": "展示古蜀文明的博物馆，有太阳神鸟金饰。",
       "address": "成都市青羊区",
@@ -888,7 +888,7 @@
     {
       "id": "chengdu-food",
       "name": "成都美食",
-      "nameEn": "Chengdu Food",
+      "nameEn": "อาหารเฉิงตู",
       "category": "street",
       "description": "联合国教科文组织评定的美食之都。",
       "address": "成都市",
@@ -911,7 +911,7 @@
     {
       "id": "luodai-ancient",
       "name": "洛带古镇",
-      "nameEn": "Luodai Ancient Town",
+      "nameEn": "เมืองโบราณหลัวไต",
       "category": "street",
       "description": "中国西部最大的客家古镇。",
       "address": "成都市龙泉驿区",
@@ -933,7 +933,7 @@
     {
       "id": "chengdu-panda-base",
       "name": "都江堰熊猫谷",
-      "nameEn": "Dujiangyan Panda Valley",
+      "nameEn": "หุบเขาแพนด้าตู้เจียน",
       "category": "nature",
       "description": "大熊猫野化训练基地，可近距离观看。",
       "address": "成都市都江堰市",
@@ -955,7 +955,7 @@
     {
       "id": "taikoo-li",
       "name": "太古里",
-      "nameEn": "Taikoo Li",
+      "nameEn": "ไท่คู่ ลี่",
       "category": "street",
       "description": "成都最时尚的商业街区，融合传统与现代。",
       "address": "成都市锦江区",
@@ -978,7 +978,7 @@
     {
       "id": "chengdu-night",
       "name": "成都夜景",
-      "nameEn": "Chengdu Night View",
+      "nameEn": "ทิวทัศน์กลางคืนเฉิงตู",
       "category": "landmark",
       "description": "锦里和宽窄巷子的夜景灯光秀。",
       "address": "成都市",
@@ -1000,7 +1000,7 @@
     {
       "id": "wenshu-fang",
       "name": "文殊坊",
-      "nameEn": "Wenshufang",
+      "nameEn": "เวินซูฟาง",
       "category": "street",
       "description": "文殊院周边的文化街区，有各种小吃和手工艺品。",
       "address": "成都市青羊区",
@@ -1022,7 +1022,7 @@
     {
       "id": "chengdu-brewery",
       "name": "成都啤酒",
-      "nameEn": "Chengdu Beer",
+      "nameEn": "เบียร์เฉิงตู",
       "category": "street",
       "description": "成都本地啤酒文化。",
       "address": "成都市",
@@ -1043,7 +1043,7 @@
     {
       "id": "chengdu-center",
       "name": "天府广场",
-      "nameEn": "Tianfu Square",
+      "nameEn": "จัตุรัสเทียนฟู",
       "category": "landmark",
       "description": "成都的城市中心广场，有毛泽东雕像。",
       "address": "成都市青羊区",
@@ -1065,7 +1065,7 @@
     {
       "id": "jinjiang-river",
       "name": "锦江",
-      "nameEn": "Jinjiang River",
+      "nameEn": "แม่น้ำจินเจียง",
       "category": "nature",
       "description": "穿城而过的河流，两岸有绿道。",
       "address": "成都市",
@@ -1087,7 +1087,7 @@
     {
       "id": "chengdu-tower",
       "name": "成都339",
-      "nameEn": "Chengdu 339",
+      "nameEn": "เฉิงตู 339",
       "category": "landmark",
       "description": "成都电视塔，高339米，可俯瞰城市。",
       "address": "成都市成华区",
@@ -1109,7 +1109,7 @@
     {
       "id": "xinglong-lake",
       "name": "兴隆湖",
-      "nameEn": "Xinglong Lake",
+      "nameEn": "ทะเลสาบซิงหลง",
       "category": "nature",
       "description": "天府新区的人工湖，有环湖绿道。",
       "address": "成都市天府新区",
@@ -1131,7 +1131,7 @@
     {
       "id": "luodai-water",
       "name": "洛带长城",
-      "nameEn": "Luodai Great Wall",
+      "nameEn": "กำแพงเมืองหลัวไต",
       "category": "landmark",
       "description": "洛带古镇附近的仿长城建筑。",
       "address": "成都市龙泉驿区",
@@ -1152,7 +1152,7 @@
     {
       "id": "chengdu-wetland",
       "name": "白鹭湾湿地公园",
-      "nameEn": "Bailuwan Wetland Park",
+      "nameEn": "สวนพื้นที่ชุ่มน้ำไป่หลู่วั่น",
       "category": "nature",
       "description": "成都东部的湿地公园，有丰富的鸟类。",
       "address": "成都市锦江区",
@@ -1174,7 +1174,7 @@
     {
       "id": "chengdu-art",
       "name": "成都市美术馆",
-      "nameEn": "Chengdu Art Museum",
+      "nameEn": "พิพิธภัณฑ์ศิลปะเฉิงตู",
       "category": "museum",
       "description": "展示中外美术作品。",
       "address": "成都市青羊区",
@@ -1197,29 +1197,29 @@
     {
       "id": "chengdu-1",
       "name": "松云泽",
-      "nameEn": "Song Yun Ze",
-      "type": "michelin",
+      "nameEn": "ซง ยุน เซ",
+      "type": "มิชลิน",
       "star": 2,
-      "cuisine": "Sichuan",
+      "cuisine": "เสฉวน",
       "avgPrice": 800,
       "rating": 4.9,
-      "address": "6-7 Jinli West First Rd, Wuhou District",
+      "address": "6-7 ถนนจินลีเวสต์ ตรอกที่ 1 เขตอู่โ Houhou",
       "coordinates": {
         "lat": 30.6505,
         "lng": 104.0545
       },
       "phone": "+86 28 8611 9888",
       "hours": "11:30-14:00, 17:30-21:00",
-      "description": "Two Michelin star Sichuan cuisine restaurant showcasing authentic flavors with modern presentation.",
+      "description": "ร้านอาหารเสฉวนระดับดาวมิชลินสองดาวที่นำเสนอรสชาติแท้จริงในรูปแบบสมัยใหม่",
       "dishHighlights": [
-        "Water-boiled fish",
-        "Mapo tofu",
-        "Spicy chicken"
+        "ปลาน้ำเดือด",
+        "เต้าหู้มาปา",
+        "ไก่รสเผ็ด"
       ],
       "tags": [
-        "fine-dining",
-        "sichuan",
-        "business"
+        "ร้านอาหารหรู",
+        "ซิ่วอัน",
+        "ธุรกิจ"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/1beaa4ec0924.webp",
@@ -1228,29 +1228,29 @@
     {
       "id": "chengdu-2",
       "name": "廊桥遗风",
-      "nameEn": "Langqiao Yifeng",
-      "type": "michelin",
+      "nameEn": "หลังเชียว อี้เฟิง",
+      "type": "มิชลิน",
       "star": 1,
-      "cuisine": "Sichuan",
+      "cuisine": "เสฉวน",
       "avgPrice": 600,
       "rating": 4.8,
-      "address": "No. 9 Jiangnan Rd, Chengdu",
+      "address": "เลขที่ 9 ถนนเจียงหนาน เฉengดู",
       "coordinates": {
         "lat": 30.6485,
         "lng": 104.0735
       },
       "phone": "+86 28 8553 9999",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "One Michelin star restaurant with stunning river views and refined Sichuan cuisine.",
+      "description": "ร้านอาหารระดับดาวมิชลินหนึ่งดาวพร้อมวิวแม่น้ำที่งดงามและอาหารเสฉวนชั้นเลิศ",
       "dishHighlights": [
-        "Yu Xiang pork",
-        "Dan Dan noodles",
-        "Sichuan cold noodles"
+        "หมูยี่จาง",
+        "บะหมี่ตานตาน",
+        "บะหมี่เสฉวนเย็น"
       ],
       "tags": [
-        "fine-dining",
-        "sichuan",
-        "scenic"
+        "ร้านอาหารหรู",
+        "ซิ่วอัน",
+        "วิวสวย"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/740f856d57ab.webp",
@@ -1259,26 +1259,26 @@
     {
       "id": "chengdu-3",
       "name": "大妙火锅",
-      "nameEn": "Da Miao Hotpot",
-      "type": "local",
-      "cuisine": "Sichuan hot pot",
+      "nameEn": "ต้าเหมียาหม้อไฟ",
+      "type": "ท้องถิ่น",
+      "cuisine": "หม้อไฟเสฉวน",
       "avgPrice": 150,
       "rating": 4.7,
-      "address": "Various locations including near Jinli",
+      "address": "สาขาหลายแห่งรวมถึงใกล้ถนนจินลี",
       "coordinates": {
         "lat": 30.6515,
         "lng": 104.0555
       },
-      "description": "Famous hot pot chain with excellent dipping sauces and quality ingredients.",
+      "description": "เชนหม้อไฟชื่อดังที่มีซอสจุ่มอร่อยและวัตถุดิบคุณภาพ",
       "dishHighlights": [
-        "Spicy and mild broths",
-        "Beef slices",
-        "Mushrooms"
+        "น้ำซุปเผ็ดและน้ำซุปอ่อน",
+        "เนื้อวัวหั่นบาง",
+        "เห็ด"
       ],
       "tags": [
-        "local",
-        "hotpot",
-        "sichuan"
+        "ท้องถิ่น",
+        "หม้อไฟ",
+        "ซิ่วอัน"
       ],
       "star": 0,
       "diamond": 0,
@@ -1290,26 +1290,26 @@
     {
       "id": "chengdu-4",
       "name": "蜀大侠",
-      "nameEn": "Shu Daxia",
-      "type": "local",
-      "cuisine": "Sichuan hot pot",
+      "nameEn": "ซู ตาเซีย",
+      "type": "ท้องถิ่น",
+      "cuisine": "หม้อไฟเสฉวน",
       "avgPrice": 100,
       "rating": 4.6,
-      "address": "Multiple locations",
+      "address": "หลายสถานที่",
       "coordinates": {
         "lat": 30.6595,
         "lng": 104.0615
       },
-      "description": "Popular hot pot chain known for quality meat and reasonable prices.",
+      "description": "เชนหม้อไฟยอดนิยมที่ขึ้นชื่อเรื่องเนื้อสัตว์คุณภาพและราคาที่เหมาะสม",
       "dishHighlights": [
-        "Tianlu duck blood",
-        "Green vegetables",
-        "Hand-cut beef"
+        "เลือดเป็ดเทียนหลู",
+        "ผักสด",
+        "เนื้อวัวหั่นมือ"
       ],
       "tags": [
-        "local",
-        "hotpot",
-        "casual"
+        "ท้องถิ่น",
+        "หม้อไฟ",
+        "ไม่เป็นทางการ"
       ],
       "star": 0,
       "diamond": 0,
@@ -1321,26 +1321,26 @@
     {
       "id": "chengdu-5",
       "name": "龙抄手",
-      "nameEn": "Long Chaoshou",
-      "type": "local",
-      "cuisine": "Sichuan",
+      "nameEn": "หลง เชาโซว",
+      "type": "ท้องถิ่น",
+      "cuisine": "เสฉวน",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "Near Chunxi Road",
+      "address": "ใกล้ถนนชุนซี",
       "coordinates": {
         "lat": 30.6635,
         "lng": 104.0765
       },
-      "description": "Legendary restaurant specializing in wontons (chaoshou) and Sichuan snacks.",
+      "description": "ร้านอาหารตำนานที่เชี่ยวชาญด้านเกี๊ยวซ่า (เชาโซว) และของว่างเสฉวน",
       "dishHighlights": [
-        "Red oil wontons",
-        "Sichuan noodles",
-        "Sweet and sour duck"
+        "เกี๊ยวซ่าน้ำมันแดง",
+        "ก๋วยเตี๋ยวเสฉวน",
+        "เป็ดหวานเปรี้ยว"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "historic"
+        "ท้องถิ่น",
+        "ขนม",
+        "ประวัติศาสตร์"
       ],
       "star": 0,
       "diamond": 0,
@@ -1352,27 +1352,27 @@
     {
       "id": "chengdu-6",
       "name": "玉林串串香",
-      "nameEn": "Yulin Chuan Chuan Xiang",
-      "type": "local",
-      "cuisine": "Sichuan",
+      "nameEn": "ยูหลิน ชวนชวนเซียง",
+      "type": "ท้องถิ่น",
+      "cuisine": "เสฉวน",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Yulin Area, Wuhou District",
+      "address": "ย่านยูหลิน เขตอู่โจว",
       "coordinates": {
         "lat": 30.6435,
         "lng": 104.0585
       },
-      "description": "The legendary inventor of chuan chuan (skewer hot pot), still the most famous branch.",
+      "description": "ผู้สร้างตำนานชาวชวน (ฮอตพอตปิ้งไม้) ยังคงเป็นสาขาที่มีชื่อเสียงที่สุด",
       "dishHighlights": [
-        "Various skewers in broth",
-        "Spicy and mild options",
-        "Affordable"
+        "ไม้เสียบต่างๆ ในซุป",
+        "ตัวเลือกเผ็ดและไม่เผ็ด",
+        "ราคาย่อมเยา"
       ],
       "tags": [
-        "local",
-        "chuan-chuan",
-        "casual",
-        "invented-here"
+        "ท้องถิ่น",
+        "ชาอันชั่วน์",
+        "ไม่เป็นทางการ",
+        "ประดิษฐ์ขึ้นที่นี่"
       ],
       "star": 0,
       "diamond": 0,
@@ -1384,28 +1384,28 @@
     {
       "id": "chengdu-7",
       "name": "夫妻肺片",
-      "nameEn": "Fu Qi Fei Pian",
-      "type": "local",
-      "cuisine": "Sichuan cold dishes",
+      "nameEn": "ฟู ฉี เฟย เปี้ยน",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารเสฉวนเย็น",
       "avgPrice": 60,
       "rating": 4.6,
-      "address": "2 Xihuashi St, Qingyang District",
+      "address": "ถนนซีหูซา 2 เขตชิงหยาง",
       "coordinates": {
         "lat": 30.6535,
         "lng": 104.0545
       },
       "hours": "08:30-20:00",
-      "description": "Legendary restaurant famous for its namesake dish - husband and wife lung slices (cold beef offal in chili oil).",
+      "description": "ร้านอาหารตำนานที่มีชื่อเสียงเรื่องจานเด่นคือฟูฉีเฟยเปี้ยน (เนื้อวัวเครื่องในเย็นในน้ำมันพริก)",
       "dishHighlights": [
-        "Fu Qi Fei Pian (cold beef offal)",
-        "Spicy cucumber",
-        "Sichuan cold noodles"
+        "ฟูฉีเฟยเปี้ยน (เนื้อวัวเครื่องในเย็น)",
+        "แตงกวาเผ็ด",
+        "บะหมี่เสฉวนเย็น"
       ],
       "tags": [
-        "local",
-        "historic",
-        "cold-dishes",
-        "must-try"
+        "ท้องถิ่น",
+        "ประวัติศาสตร์",
+        "อาหารเย็น",
+        "ต้องลอง"
       ],
       "star": 0,
       "diamond": 0,
@@ -1416,27 +1416,27 @@
     {
       "id": "chengdu-8",
       "name": "鹤鸣茶社",
-      "nameEn": "He Ming Tea House",
-      "type": "local",
-      "cuisine": "Sichuan tea",
+      "nameEn": "เฮอหมิงทีฮาส์",
+      "type": "ท้องถิ่น",
+      "cuisine": "ชาซิ่วชวน",
       "avgPrice": 30,
       "rating": 4.5,
-      "address": "People's Park, Qingyang District",
+      "address": "สวนสาธารณะผู้คน เขตชิงหยาง",
       "coordinates": {
         "lat": 30.6575,
         "lng": 104.0665
       },
-      "description": "Chengdu's most famous traditional tea house in People's Park, operating since 1923.",
+      "description": "ร้านน้ำชาดั้งเดิมที่มีชื่อเสียงที่สุดของเมืองเฉิงตู ตั้งอยู่ในสวนสาธารณะผู้คน ดำเนินกิจการมาตั้งแต่ปี ค.ศ. 1923",
       "dishHighlights": [
-        "Traditional tea ceremony",
-        "Ear cleaning service",
-        "Mahjong available"
+        "พิธีชงชาดั้งเดิม",
+        "บริการทำความสะอาดหู",
+        "มีมาจองให้เล่น"
       ],
       "tags": [
-        "local",
-        "tea-house",
-        "traditional",
-        "culture"
+        "ท้องถิ่น",
+        "ร้านชา",
+        "ดั้งเดิม",
+        "วัฒนธรรม"
       ],
       "star": 0,
       "diamond": 0,
@@ -1448,30 +1448,30 @@
     {
       "id": "chengdu-9",
       "name": "马旺子川小馆",
-      "nameEn": "Ma Wang Zi",
-      "type": "blackpearl",
+      "nameEn": "มาหวังจื้อ",
+      "type": "แบล็กเพิร์ล",
       "diamond": 1,
-      "cuisine": "Sichuan",
+      "cuisine": "เสฉวน",
       "avgPrice": 120,
       "rating": 4.7,
-      "address": "No. 2 Gaopeng Rd, Chengdu",
+      "address": "ถนนกาวเพิง ซ.2 เมืองเฉิงตู",
       "coordinates": {
         "lat": 30.6525,
         "lng": 104.0705
       },
       "phone": "+86 28 8535 1888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "One diamond Black Pearl restaurant serving refined Sichuan home-style dishes in a beautiful courtyard setting.",
+      "description": "ร้านอาหาร Black Pearl ระดับหนึ่งเพชร ที่เสิร์ฟอาหารเสฉวนแบบบ้านๆ คุณภาพสูงในบรรยากาศสวนที่สวยงาม",
       "dishHighlights": [
-        "Braised pork in soy sauce",
-        "Spicy sliced beef",
-        "Sichuan classics"
+        "หมูตุ๋นซีอิ๊ว",
+        "เนื้อวัวหั่นเผ็ด",
+        "เมนูคลาสสิกเสฉวน"
       ],
       "tags": [
-        "black-pearl",
-        "sichuan",
-        "courtyard",
-        "quality"
+        "แบล็กเพิร์ล",
+        "ซิ่วอัน",
+        "ลานบ้าน",
+        "คุณภาพ"
       ],
       "star": 0,
       "imageUrl": "/img/ext/072f317a8797.webp",
@@ -1480,27 +1480,27 @@
     {
       "id": "chengdu-10",
       "name": "听香餐馆",
-      "nameEn": "Ting Xiang",
-      "type": "local",
-      "cuisine": "Sichuan",
+      "nameEn": "ติงเซียง",
+      "type": "ท้องถิ่น",
+      "cuisine": "เสฉวน",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "2nd Floor, 8 Hongzhuan Rd, Chengdu",
+      "address": "ชั้น 2 ถนนหงจวน ซ.8 เมืองเฉิงตู",
       "coordinates": {
         "lat": 30.6545,
         "lng": 104.0765
       },
-      "description": "Popular upscale casual spot known for innovative Sichuan dishes without losing traditional soul.",
+      "description": "สถานที่ยอดนิยมระดับสูงแบบแคชชวล ที่ขึ้นชื่อเรื่องอาหารเสฉวนนวัตกรรมโดยไม่ทิ้งรากเหง้าดั้งเดิม",
       "dishHighlights": [
-        "Braised eggplant",
-        "Mouth-watering chicken",
-        "Refined mapo tofu"
+        "มะเขือย่าง",
+        "ไก่น่ารับประทาน",
+        "เต้าหู้หม้อไฟชั้นเลิศ"
       ],
       "tags": [
-        "local",
-        "sichuan",
-        "casual",
-        "popular"
+        "ท้องถิ่น",
+        "ซิ่วอัน",
+        "ไม่เป็นทางการ",
+        "ยอดนิยม"
       ],
       "star": 0,
       "diamond": 0,
@@ -1512,27 +1512,27 @@
     {
       "id": "chengdu-11",
       "name": "小龙坎老火锅",
-      "nameEn": "Xiao Long Kan",
-      "type": "local",
-      "cuisine": "Sichuan hot pot",
+      "nameEn": "เซี่ยวหลงคัน",
+      "type": "ท้องถิ่น",
+      "cuisine": "หม้อไฟเสฉวน",
       "avgPrice": 120,
       "rating": 4.7,
-      "address": "Various locations including Taikoo Li",
+      "address": "สาขาหลายแห่งรวมถึงไท่กู่หลี่",
       "coordinates": {
         "lat": 30.6585,
         "lng": 104.0715
       },
-      "description": "One of Chengdu's most famous hot pot chains with authentic mala flavor and premium beef.",
+      "description": "หนึ่งในเครือร้านฮอตพอตที่มีชื่อเสียงที่สุดในเฉิงตู รสชาติมาล่าต้นตำรับ และเนื้อวัวชั้นเลิศ",
       "dishHighlights": [
-        "Spicy beef tripe",
-        "Fresh lamb slices",
-        "Lotus root"
+        "กระเพาะวัวร้อน",
+        "เนื้อแกะสด",
+        "รากบัว"
       ],
       "tags": [
-        "hotpot",
-        "sichuan",
-        "popular",
-        "chain"
+        "หม้อไฟ",
+        "ซิ่วอัน",
+        "ยอดนิยม",
+        "เครือข่ายร้านอาหาร"
       ],
       "star": 0,
       "diamond": 0,
@@ -1544,27 +1544,27 @@
     {
       "id": "chengdu-12",
       "name": "海底捞火锅",
-      "nameEn": "Haidilao Hot Pot",
-      "type": "local",
-      "cuisine": "Sichuan hot pot",
+      "nameEn": "ฮายดิลาว โฮตโป๊ะ",
+      "type": "ท้องถิ่น",
+      "cuisine": "หม้อไฟเสฉวน",
       "avgPrice": 180,
       "rating": 4.8,
-      "address": "Multiple locations citywide",
+      "address": "สาขาทั่วเมือง",
       "coordinates": {
         "lat": 30.6605,
         "lng": 104.0735
       },
-      "description": "Famous chain known for exceptional service, free manicures, and entertainment while waiting.",
+      "description": "เครือข่ายที่มีชื่อเสียงเรื่องการบริการที่ยอดเยี่ยม การทำมือสะอาดฟรี และการบันเทิงระหว่างรอ",
       "dishHighlights": [
-        "Free DIY yogurt",
-        "Instant boiled beef",
-        "Spicy broth"
+        "โยเกิร์ตสร้างเองฟรี",
+        "เนื้องวงด้วยน้ำซุปทันที",
+        "น้ำซุปเผ็ด"
       ],
       "tags": [
-        "hotpot",
-        "service",
-        "chain",
-        "entertainment"
+        "หม้อไฟ",
+        "บริการ",
+        "เครือข่ายร้านอาหาร",
+        "บันเทิง"
       ],
       "star": 0,
       "diamond": 0,
@@ -1576,26 +1576,26 @@
     {
       "id": "chengdu-13",
       "name": "蜀九香火锅",
-      "nameEn": "Shu Jiu Xiang",
-      "type": "local",
-      "cuisine": "Sichuan hot pot",
+      "nameEn": "ซูจิวเซียง",
+      "type": "ท้องถิ่น",
+      "cuisine": "หม้อไฟเสฉวน",
       "avgPrice": 130,
       "rating": 4.6,
-      "address": "1-2 Gaopeng Rd, High-Tech Zone",
+      "address": "1-2 ถนน Gaopeng, เขตเทคโนโลยีสูง",
       "coordinates": {
         "lat": 30.6475,
         "lng": 104.0665
       },
-      "description": "Upscale hot pot restaurant with elegant environment and premium ingredients.",
+      "description": "ภัตตาคารฮอทพอตระดับสูงที่มีบรรยากาศที่สง่างามและวัตถุดิบชั้นเลิศ",
       "dishHighlights": [
-        "Aged beef",
-        "Hand-made meatballs",
-        "Mushroom platter"
+        "เนื้องวงที่อายุหนึ่ง",
+        "ลูกชิ้นทำเอง",
+        "จานเห็ด"
       ],
       "tags": [
-        "hotpot",
-        "upscale",
-        "sichuan"
+        "หม้อไฟ",
+        "ระดับสูง",
+        "ซิ่วอัน"
       ],
       "star": 0,
       "diamond": 0,
@@ -1607,27 +1607,27 @@
     {
       "id": "chengdu-14",
       "name": "钢管厂五区小郡肝串串香",
-      "nameEn": "Guan Gang Chang",
-      "type": "local",
-      "cuisine": "Chuan chuan xiang",
+      "nameEn": "กวงกางชาง",
+      "type": "ท้องถิ่น",
+      "cuisine": "ชวนชวนเซียง",
       "avgPrice": 70,
       "rating": 4.7,
-      "address": "4 Tongcai Lane, Jinjiang District",
+      "address": "ตรอกทงไช่ เขตจิ้นเจียง",
       "coordinates": {
         "lat": 30.6625,
         "lng": 104.0795
       },
-      "description": "Legendary chuan chuan xiang spot with the best small intestine (xiaojinggan) skewers.",
+      "description": "ร้านชวนชวนเซียงตำนานที่มีไส้กรอกลำไส้เล็ก (เซี่ยวจิ้งกัน) อร่อยที่สุด",
       "dishHighlights": [
-        "Small intestine skewers",
-        "Beef skewers",
-        "Vegetables"
+        "ไส้กรอกลำไส้เล็ก",
+        "ไส้กรอกเนื้อวัว",
+        "ผัก"
       ],
       "tags": [
-        "chuan-chuan",
-        "local",
-        "legendary",
-        "casual"
+        "ชวนชวน",
+        "ท้องถิ่น",
+        "ตำนาน",
+        "ไม่เป็นทางการ"
       ],
       "star": 0,
       "diamond": 0,
@@ -1639,27 +1639,27 @@
     {
       "id": "chengdu-15",
       "name": "袁记串串香",
-      "nameEn": "Yuan Ji Chuan Chuan Xiang",
-      "type": "local",
-      "cuisine": "Chuan chuan xiang",
+      "nameEn": "ยวนจี ชวนชวนเซียง",
+      "type": "ท้องถิ่น",
+      "cuisine": "ชวนชวนเซียง",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Multiple locations",
+      "address": "หลายสถานที่",
       "coordinates": {
         "lat": 30.6565,
         "lng": 104.0685
       },
-      "description": "Popular chain chuan chuan xiang with self-service selection and fresh ingredients.",
+      "description": "ร้านชาอันชั่วน์ชั้นนำที่มีบริการเลือกวัตถุดิบด้วยตัวเองและสดใหม่",
       "dishHighlights": [
-        "Pork skewers",
-        "Seafood options",
-        "DIY dipping sauce"
+        "ไส้กรอกหมู",
+        "ทางเลือกอาหารทะเล",
+        "น้ำจุ่มทำเอง"
       ],
       "tags": [
-        "chuan-chuan",
-        "chain",
-        "self-service",
-        "casual"
+        "ชาอันชั่วน์",
+        "เครือข่ายร้าน",
+        "บริการตัวเอง",
+        "ไม่เป็นทางการ"
       ],
       "star": 0,
       "diamond": 0,
@@ -1671,27 +1671,27 @@
     {
       "id": "chengdu-16",
       "name": "冒椒火辣",
-      "nameEn": "Mao Jiao Huo La",
-      "type": "local",
-      "cuisine": "Mao cai (冒菜)",
+      "nameEn": "เหมาเจี้ยวฮัวล่า",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารเมาไถ (冒菜)",
       "avgPrice": 50,
       "rating": 4.8,
-      "address": "39 Kuixing Street, Wuhou District",
+      "address": "ถนนกุ้ยซิง เขตอู่โจว",
       "coordinates": {
         "lat": 30.6475,
         "lng": 104.0535
       },
-      "description": "The most famous mao cai restaurant in Chengdu with intense spicy flavor and tender ingredients.",
+      "description": "ร้านเมาไถที่มีชื่อมากที่สุดในเฉิงตู รสชาติเผ็ดแรงและวัตถุดิบนุ่มละมุน",
       "dishHighlights": [
-        "Mao dai (instant noodles in broth)",
-        "Beef offal",
-        "Lotus root"
+        "Mao dai (บะหมี่กึ่งสำเร็จในซุป)",
+        "เครื่องในวัว",
+        "รากบัว"
       ],
       "tags": [
-        "mao-cai",
-        "spicy",
-        "local",
-        "popular"
+        "เมาไช่",
+        "เผ็ด",
+        "ท้องถิ่น",
+        "ยอดนิยม"
       ],
       "star": 0,
       "diamond": 0,
@@ -1703,27 +1703,27 @@
     {
       "id": "chengdu-17",
       "name": "冒菜老店",
-      "nameEn": "Mao Cai Lao Dian",
-      "type": "local",
-      "cuisine": "Mao cai (冒菜)",
+      "nameEn": "เหมาไช่เลาดเตี๋ยน",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารเมาไถ (冒菜)",
       "avgPrice": 40,
       "rating": 4.6,
-      "address": "Near People's Park, Qingyang District",
+      "address": "ใกล้สวนสาธารณะ People's Park เขต Qingyang",
       "coordinates": {
         "lat": 30.6595,
         "lng": 104.0645
       },
-      "description": "Local favorite mao cai spot with rich broth and affordable prices.",
+      "description": "ร้านมาไค่ยอดนิยมของคนท้องถิ่น ซุปเข้มข้นและราคาถูก",
       "dishHighlights": [
-        "Tofu skin",
-        "Potatoes",
-        "Spicy broth"
+        "เต้าหู้ขาว",
+        "มันฝรั่ง",
+        "ซุปเผ็ด"
       ],
       "tags": [
-        "mao-cai",
-        "affordable",
-        "local",
-        "casual"
+        "เมาไช่",
+        "ราคาประหยัด",
+        "ท้องถิ่น",
+        "ไม่เป็นทางการ"
       ],
       "star": 0,
       "diamond": 0,
@@ -1735,27 +1735,27 @@
     {
       "id": "chengdu-18",
       "name": "巴蜀大宅门",
-      "nameEn": "Ba Shu Da Zhai Men",
-      "type": "local",
-      "cuisine": "Sichuan",
+      "nameEn": "บาซูดาจั้นเมน",
+      "type": "ท้องถิ่น",
+      "cuisine": "เสฉวน",
       "avgPrice": 90,
       "rating": 4.7,
-      "address": "88 West Yiguan Rd, Qingyang District",
+      "address": "88 ถนน Yiguan ตะวันตก, เขต Qingyang",
       "coordinates": {
         "lat": 30.6715,
         "lng": 104.0395
       },
-      "description": "Upscale Sichuan restaurant in a traditional courtyard with classic dishes and modern presentation.",
+      "description": "ภัตตาคารสี่เส้นระดับสูงในลานบ้านดั้งเดิมที่มีอาหารดั้งเดิมและการเสิร์ฟแบบทันสมัย",
       "dishHighlights": [
-        "Twice-cooked pork",
-        "Kung Pao chicken",
-        "Fish fragrant eggplant"
+        "หมูผัดสองครั้ง",
+        "ไก่กุ้งเป่าพาว",
+        "มะเขือเทศรสปลาหมึก"
       ],
       "tags": [
-        "sichuan",
-        "courtyard",
-        "upscale",
-        "classic"
+        "ซิ่วอัน",
+        "ลานบ้าน",
+        "ระดับสูง",
+        "คลาสสิก"
       ],
       "star": 0,
       "diamond": 0,
@@ -1767,27 +1767,27 @@
     {
       "id": "chengdu-19",
       "name": "红杏酒家",
-      "nameEn": "Hong Xing Jiu Jia",
-      "type": "local",
-      "cuisine": "Sichuan",
+      "nameEn": "ฮงซิงจิ่วเจี๋ย",
+      "type": "ท้องถิ่น",
+      "cuisine": "เสฉวน",
       "avgPrice": 100,
       "rating": 4.6,
-      "address": "6 Linjiang Rd, Wuhou District",
+      "address": "ถนนหลินเจียง ซอย 6 เขตอู่ฮั่ว",
       "coordinates": {
         "lat": 30.6345,
         "lng": 104.0485
       },
-      "description": "Popular chain restaurant with consistent quality and elegant dining rooms.",
+      "description": "ร้านอาหารเชนที่มีชื่อเสียง มีคุณภาพอาหารที่สม่ำเสมอและห้องอาหารที่สวยงาม",
       "dishHighlights": [
-        "Cold knife sliced beef",
-        "Braised pork belly",
-        "Sichuan spicy chicken"
+        "เนื้อวัวสับเย็น",
+        "หมูสามชั้นตุ๋น",
+        "ไก่พริกเสี่ยวชวนรสเผ็ด"
       ],
       "tags": [
-        "sichuan",
-        "chain",
-        "reliable",
-        "family"
+        "ซิ่วอัน",
+        "เครือข่ายร้านอาหาร",
+        "น่าเชื่อถือ",
+        "ครอบครัว"
       ],
       "star": 0,
       "diamond": 0,
@@ -1799,27 +1799,27 @@
     {
       "id": "chengdu-20",
       "name": "转转会",
-      "nameEn": "Zhuan Zhuan Hui",
-      "type": "local",
-      "cuisine": "Sichuan",
+      "nameEn": "ชวนชวนฮุย",
+      "type": "ท้องถิ่น",
+      "cuisine": "เสฉวน",
       "avgPrice": 120,
       "rating": 4.8,
-      "address": "8 Shuangqing Rd, Wuhou District",
+      "address": "ถนนชวงชิ่ง ซอย 8 เขตอู่ฮั่ว",
       "coordinates": {
         "lat": 30.6375,
         "lng": 104.0565
       },
-      "description": "Upscale restaurant in a historic villa known for refined Sichuan cuisine and garden views.",
+      "description": "ร้านอาหารระดับสูงในวิลล่าประวัติศาสตร์ที่มีชื่อเสียงในการปรุงอาหารสี่เชวนที่ละเอียดอ่อนและมีวิวสวนสวยงาม",
       "dishHighlights": [
-        "Crystal ice lily",
-        "Phoenix tail shrimp",
-        "Sichuan classics"
+        "ลิลลี่คริสตัลน้ำแข็ง",
+        "กุ้งหางฟีนิกซ์",
+        "เมนูคลาสสิกเสฉวน"
       ],
       "tags": [
-        "sichuan",
-        "upscale",
-        "villa",
-        "garden"
+        "ซิ่วอัน",
+        "ระดับสูง",
+        "วิลล่า",
+        "สวน"
       ],
       "star": 0,
       "diamond": 0,
@@ -1831,27 +1831,27 @@
     {
       "id": "chengdu-21",
       "name": "成都映象",
-      "nameEn": "Chengdu Ying Xiang",
-      "type": "local",
-      "cuisine": "Sichuan",
+      "nameEn": "เฉิงตูยิงเซียง",
+      "type": "ท้องถิ่น",
+      "cuisine": "เสฉวน",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "No. 8 Kuanzhai Alley, Qingyang District",
+      "address": "ซอยกว้างไกล หมายเลข 8, เขตชิงยาง",
       "coordinates": {
         "lat": 30.6605,
         "lng": 104.0515
       },
-      "description": "Restaurant in Kuanzhai Alley serving traditional Sichuan dishes in a heritage building.",
+      "description": "ร้านอาหารในซอยกว้างไกลที่เสิร์ฟอาหารเซินจวงดั้งเดิมในอาคารมรดก",
       "dishHighlights": [
-        "Mapo tofu",
-        "Dan dan noodles",
-        "Sichuan snacks"
+        "เต้าหู้มาปา",
+        "บะหมี่ตานตาน",
+        "อาหารว่างเซินจวง"
       ],
       "tags": [
-        "sichuan",
-        "traditional",
-        "kuanzhai",
-        "heritage"
+        "ซิ่วอัน",
+        "ดั้งเดิม",
+        "กว้างไกล",
+        "มรดก"
       ],
       "star": 0,
       "diamond": 0,
@@ -1863,27 +1863,27 @@
     {
       "id": "chengdu-22",
       "name": "午餐钱",
-      "nameEn": "Wu Can Qian",
-      "type": "local",
-      "cuisine": "Sichuan",
+      "nameEn": "อู่ซานเชียน",
+      "type": "ท้องถิ่น",
+      "cuisine": "เสฉวน",
       "avgPrice": 60,
       "rating": 4.4,
-      "address": "Near Sichuan University",
+      "address": "ใกล้มหาวิทยาลัยเซินจวง",
       "coordinates": {
         "lat": 30.6295,
         "lng": 104.0835
       },
-      "description": "Popular student-area restaurant known for generous portions and authentic local flavors.",
+      "description": "ร้านอาหารในพื้นที่ที่มีนักศึกษามาก ที่มีชื่อเสียงในเรื่องของจานใหญ่และรสชาติพื้นบ้านที่แท้จริง",
       "dishHighlights": [
-        "Spicy fish",
-        "Hot and sour noodles",
-        "Affordable classics"
+        "ปลาพริก",
+        "ราเมงร้อนเปรี้ยว",
+        "อาหารคลาสสิกราคาถูก"
       ],
       "tags": [
-        "sichuan",
-        "student-area",
-        "affordable",
-        "local"
+        "ซิ่วอัน",
+        "ย่านนักศึกษา",
+        "ราคาประหยัด",
+        "ท้องถิ่น"
       ],
       "star": 0,
       "diamond": 0,
@@ -1895,27 +1895,27 @@
     {
       "id": "chengdu-23",
       "name": "蜀绣宴",
-      "nameEn": "Shuxiu Yan",
-      "type": "local",
-      "cuisine": "Sichuan",
+      "nameEn": "ซูซิวยาน",
+      "type": "ท้องถิ่น",
+      "cuisine": "เสฉวน",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "66 Xianqiao Rd, Wuhou District",
+      "address": "ถนนเซียนเฉียว 66, เขตอู่เห่า",
       "coordinates": {
         "lat": 30.6415,
         "lng": 104.0515
       },
-      "description": "Upscale restaurant showcasing Sichuan embroidery culture with refined local cuisine.",
+      "description": "ร้านอาหารระดับสูงที่สร้างสรรค์อาหารเซินจวงที่ปรับปรุงแล้วพร้อมกับการแสดงออกถึงวัฒนธรรมการเย็บปักถักร้อยเซินจวง",
       "dishHighlights": [
-        "Sichuan embroidery theme dishes",
-        "Spicy crab",
-        "Bamboo shoot specialties"
+        "อาหารที่มีธีมการเย็บปักถักร้อยเซินจวง",
+        "ปูรสเผ็ด",
+        "อาหารพิเศษสาหร่ายไผ่"
       ],
       "tags": [
-        "sichuan",
-        "upscale",
-        "culture",
-        "innovation"
+        "ซิ่วอัน",
+        "ระดับสูง",
+        "วัฒนธรรม",
+        "นวัตกรรม"
       ],
       "star": 0,
       "diamond": 0,
@@ -1927,27 +1927,27 @@
     {
       "id": "chengdu-24",
       "name": "老房子水岸",
-      "nameEn": "Lao Fang Zi",
-      "type": "local",
-      "cuisine": "Sichuan",
+      "nameEn": "เลาฟังจื้อ",
+      "type": "ท้องถิ่น",
+      "cuisine": "เสฉวน",
       "avgPrice": 120,
       "rating": 4.5,
-      "address": "88 Jinjiang East Rd, Jinjiang District",
+      "address": "ถนนจินเจียงตะวันออก 88, เขตจินเจียง",
       "coordinates": {
         "lat": 30.6525,
         "lng": 104.0915
       },
-      "description": "Restaurant in a historic villa by the river, known for romantic atmosphere and classic Sichuan dishes.",
+      "description": "ร้านอาหารในวิลล่าประวัติศาสตร์ริมแม่น้ำ ที่มีชื่อเสียงในด้านบรรยากาศโรแมนติกและอาหารเสิร์ฟแบบสี่จังหวัด",
       "dishHighlights": [
-        "River view dining",
-        "Spicy boiled fish",
-        "Classic Sichuan classics"
+        "รับประทานอาหารพร้อมวิวแม่น้ำ",
+        "ปลาทูน่าพริกเผา",
+        "อาหารเสิร์ฟแบบสี่จังหวัดแบบดั้งเดิม"
       ],
       "tags": [
-        "sichuan",
-        "romantic",
-        "river-view",
-        "historic"
+        "ซิ่วอัน",
+        "โรแมนติก",
+        "วิวแม่น้ำ",
+        "ประวัติศาสตร์"
       ],
       "star": 0,
       "diamond": 0,
@@ -1959,27 +1959,27 @@
     {
       "id": "chengdu-25",
       "name": "蜀九香火锅",
-      "nameEn": "Shu Jiu Xiang Hotpot",
-      "type": "local",
-      "cuisine": "Sichuan hot pot",
+      "nameEn": "ซูจิวเซียงฮอตพอต",
+      "type": "ท้องถิ่น",
+      "cuisine": "หม้อไฟเสฉวน",
       "avgPrice": 140,
       "rating": 4.6,
-      "address": "88 First Section of Yizhou Rd, High-Tech Zone",
+      "address": "ถนนอีโจว ส่วนที่ 1 88, เขตเทคโนโลยีสูง",
       "coordinates": {
         "lat": 30.6415,
         "lng": 104.0615
       },
-      "description": "Popular upscale hot pot chain with elegant environment and premium quality ingredients.",
+      "description": "เครือข่ายฮอทพอตระดับสูงที่ได้รับความนิยม มีบรรยากาศที่สวยงามและวัตถุดิบคุณภาพเยี่ยม",
       "dishHighlights": [
-        "Handmade beef balls",
-        "Premium lamb",
-        "Seasonal vegetables"
+        "ลูกวัวทำเอง",
+        "เนื้อแกะพรีเมี่ยม",
+        "ผักตามฤดูกาล"
       ],
       "tags": [
-        "hotpot",
-        "upscale",
-        "sichuan",
-        "quality"
+        "หม้อไฟ",
+        "ระดับสูง",
+        "ซิ่วอัน",
+        "คุณภาพ"
       ],
       "star": 0,
       "diamond": 0,
@@ -1991,27 +1991,27 @@
     {
       "id": "chengdu-26",
       "name": "锦城印象",
-      "nameEn": "Jincheng Yinxiang",
-      "type": "local",
-      "cuisine": "Sichuan",
+      "nameEn": "จินเฉิงยิงเซียง",
+      "type": "ท้องถิ่น",
+      "cuisine": "เสฉวน",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "99 West Yiguan Rd, Qingyang District",
+      "address": "ถนนยีกวนตะวันตก 99, เขตชิงยัง",
       "coordinates": {
         "lat": 30.6715,
         "lng": 104.0385
       },
-      "description": "Elegant restaurant with traditional Sichuan courtyard style, known for authentic flavors.",
+      "description": "ร้านอาหารที่สวยงามในสไตล์ลานบ้านเฉินตู้ดั้งเดิม มีชื่อเสียงในด้านรสชาติที่แท้จริง",
       "dishHighlights": [
-        "Dan Dan noodles",
-        "Mapo tofu",
-        "Sichuan cold dishes"
+        "บะหมี่ตานตาน",
+        "เต้าหู้มาปา",
+        "อาหารเสฉวนเย็น"
       ],
       "tags": [
-        "sichuan",
-        "courtyard",
-        "traditional",
-        "authentic"
+        "ซิ่วอัน",
+        "ลานบ้าน",
+        "ดั้งเดิม",
+        "ของแท้"
       ],
       "star": 0,
       "diamond": 0,
@@ -2023,27 +2023,27 @@
     {
       "id": "chengdu-27",
       "name": "玉林串串香总店",
-      "nameEn": "Yulin Chuan Chuan Xiang HQ",
-      "type": "local",
-      "cuisine": "Chuan chuan xiang",
+      "nameEn": "สำนักงานใหญ่ยูหลินชวนชวนเซียง",
+      "type": "ท้องถิ่น",
+      "cuisine": "ชวนชวนเซียง",
       "avgPrice": 80,
       "rating": 4.7,
-      "address": "18 Yulin East Rd, Wuhou District",
+      "address": "ถนนยูหลินตะวันออก 18, เขตอู่เห่า",
       "coordinates": {
         "lat": 30.6425,
         "lng": 104.0565
       },
-      "description": "The original and most famous branch of Yulin Chuan Chuan Xiang, birthplace of skewer hot pot.",
+      "description": "สาขาต้นแบบและที่มีชื่อเสียงที่สุดของ Yulin Chuan Chuan Xiang เป็นสถานที่กำเนิดของฮอตพอตสไตล์อาหารปากกา",
       "dishHighlights": [
-        "Various skewers",
-        "Spicy dipping",
-        "Refrigerated options"
+        "อาหารปากกาหลากหลาย",
+        "ซอสรสเผ็ด",
+        "ตัวเลือกในตู้เย็น"
       ],
       "tags": [
-        "chuan-chuan",
-        "legendary",
-        "local",
-        "invented-here"
+        "ชาอันชั่วน์",
+        "ตำนาน",
+        "ท้องถิ่น",
+        "ประดิษฐ์ขึ้นที่นี่"
       ],
       "star": 0,
       "diamond": 0,
@@ -2055,30 +2055,30 @@
     {
       "id": "chengdu-28",
       "name": "蜀绣香",
-      "nameEn": "Shuxiu Xiang",
-      "type": "blackpearl",
+      "nameEn": "ซูซิวเซียง",
+      "type": "แบล็กเพิร์ล",
       "diamond": 1,
-      "cuisine": "Sichuan",
+      "cuisine": "เสฉวน",
       "avgPrice": 180,
       "rating": 4.7,
-      "address": "6 Jinli West First Rd, Wuhou District",
+      "address": "ถนนจิ้นลีตะวันตกสายแรก 6, เขตอู่เห่า",
       "coordinates": {
         "lat": 30.6505,
         "lng": 104.0535
       },
       "phone": "+86 28 8553 8888",
       "hours": "11:30-14:00, 17:30-21:00",
-      "description": "One diamond Black Pearl restaurant featuring elegant Sichuan cuisine with artful presentation.",
+      "description": "ร้านอาหารดำบัลลังก์ดอกไม้ดำที่มีอาหารสไตล์เฉินตู้ที่สวยงามและมีการเสิร์ฟอย่างช่ำชอง",
       "dishHighlights": [
-        "Water-boiled fish",
-        "Sichuan spicy shrimp",
-        "Braised pork"
+        "ปลาน้ำเดือด",
+        "กุ้งเผ็ดสไตล์เฉินตู้",
+        "หมูตุ๋น"
       ],
       "tags": [
-        "black-pearl",
-        "sichuan",
-        "artful",
-        "elegant"
+        "แบล็กเพิร์ล",
+        "ซิ่วอัน",
+        "ช่ำชอง",
+        "หรูหรา"
       ],
       "star": 0,
       "imageUrl": "/img/ext/da8c0f5339a0.png",
@@ -2088,7 +2088,7 @@
       "id": "chengdu-29",
       "name": "阿婆回锅肉",
       "nameEn": "阿婆回锅肉 (回锅肉)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "回锅肉",
       "avgPrice": 90,
       "rating": 4.5,
@@ -2118,7 +2118,7 @@
       "id": "chengdu-31",
       "name": "老成都串串香",
       "nameEn": "老成都串串香 (串串香)",
-      "type": "street",
+      "type": "ร้านอาหารข้างทาง",
       "cuisine": "串串香",
       "avgPrice": 26,
       "rating": 4.7,
@@ -2148,7 +2148,7 @@
       "id": "chengdu-33",
       "name": "街边回锅肉",
       "nameEn": "街边回锅肉 (回锅肉)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "回锅肉",
       "avgPrice": 108,
       "rating": 4.4,
@@ -2178,7 +2178,7 @@
       "id": "chengdu-35",
       "name": "正宗回锅肉",
       "nameEn": "正宗回锅肉 (回锅肉)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "回锅肉",
       "avgPrice": 103,
       "rating": 4.2,
@@ -2208,7 +2208,7 @@
       "id": "chengdu-37",
       "name": "地道担担面",
       "nameEn": "地道担担面 (担担面)",
-      "type": "street",
+      "type": "ร้านอาหารข้างทาง",
       "cuisine": "担担面",
       "avgPrice": 59,
       "rating": 4.8,
@@ -2238,7 +2238,7 @@
       "id": "chengdu-39",
       "name": "传统串串香",
       "nameEn": "传统串串香 (串串香)",
-      "type": "cafe",
+      "type": "คาเฟ่",
       "cuisine": "串串香",
       "avgPrice": 28,
       "rating": 4,
@@ -2268,7 +2268,7 @@
       "id": "chengdu-41",
       "name": "正宗火锅",
       "nameEn": "正宗火锅 (火锅)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "火锅",
       "avgPrice": 119,
       "rating": 4,
@@ -2298,7 +2298,7 @@
       "id": "chengdu-43",
       "name": "阿婆串串香",
       "nameEn": "阿婆串串香 (串串香)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "串串香",
       "avgPrice": 34,
       "rating": 4.4,
@@ -2328,7 +2328,7 @@
       "id": "chengdu-45",
       "name": "巷子龙抄手",
       "nameEn": "巷子龙抄手 (龙抄手)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "龙抄手",
       "avgPrice": 56,
       "rating": 4,
@@ -2358,7 +2358,7 @@
       "id": "chengdu-47",
       "name": "巷子串串香",
       "nameEn": "巷子串串香 (串串香)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "串串香",
       "avgPrice": 57,
       "rating": 4.6,
@@ -2372,13 +2372,13 @@
       "description": "成都本地人推荐的串串香店，味道正宗，价格实惠",
       "dishHighlights": [
         "龙抄手",
-        "บะหมี่ตานตาน",
-        "ชั่วชั่วเซียง"
+        "担担面",
+        "串串香"
       ],
       "tags": [
-        "ร้านคิวยาว",
-        "ร้านเก่าแก่",
-        "ร้านในชุมชน"
+        "排队王",
+        "老字号",
+        "社区老店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/0f05a8dee674.webp",
@@ -2387,28 +2387,28 @@
     {
       "id": "chengdu-49",
       "name": "正宗火锅",
-      "nameEn": "ฮุ่ยกัว (ฮุ่ยกัว)",
-      "type": "local",
-      "cuisine": "ฮุ่ยกัว",
+      "nameEn": "正宗火锅 (火锅)",
+      "type": "ท้องถิ่น",
+      "cuisine": "火锅",
       "avgPrice": 74,
       "rating": 4,
-      "address": "ถนนอาหาร เขตอู่โ Hou เมืองเฉิงตู หมายเลข 178",
+      "address": "成都市武侯区美食街178号",
       "coordinates": {
         "lat": 30.5987,
         "lng": 104.0323
       },
       "phone": "+86 028 69039130",
       "hours": "06:00-14:00",
-      "description": "ร้านฮุ่ยกัวที่ชาวเฉิงตูแนะนำ รสชาติแท้จริง ราคาย่อมเยา",
+      "description": "成都本地人推荐的火锅店，味道正宗，价格实惠",
       "dishHighlights": [
-        "ฮุ่ยกัว",
-        "ชั่วชั่วเซียง",
-        "หยาวเชาโซว์"
+        "火锅",
+        "串串香",
+        "龙抄手"
       ],
       "tags": [
-        "ร้านอาหารซ่อนเร้น",
-        "ร้านในชุมชน",
-        "ร้านยอดนิยมที่ต้องต่อคิว"
+        "隐藏美食",
+        "社区老店",
+        "排队王"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/4f471abcbf01.webp",
@@ -2417,28 +2417,28 @@
     {
       "id": "chengdu-51",
       "name": "阿婆担担面",
-      "nameEn": "ร้านอาหารอาป่าตานตานเหมี่ยน (ตานตานเหมี่ยน)",
-      "type": "cafe",
-      "cuisine": "ตานตานเหมี่ยน",
+      "nameEn": "阿婆担担面 (担担面)",
+      "type": "คาเฟ่",
+      "cuisine": "担担面",
       "avgPrice": 76,
       "rating": 4.8,
-      "address": "ถนนอาหารเฉิงหว่าหลวง เขตเฉิงหว่า เมืองเฉิงตู",
+      "address": "成都市成华区美食街191号",
       "coordinates": {
         "lat": 30.5341,
         "lng": 104.04
       },
       "phone": "+86 028 41695753",
       "hours": "10:00-22:00",
-      "description": "ร้านตานตานเหมี่ยนที่ชาวเมืองเฉิงตูแนะนำ รสชาติต้นตำรับ ราคาย่อมเยา",
+      "description": "成都本地人推荐的担担面店，味道正宗，价格实惠",
       "dishHighlights": [
-        "หม้อไฟ",
-        "หมูกลับผัด",
-        "ซวี่ซวี่เซียง"
+        "火锅",
+        "回锅肉",
+        "串串香"
       ],
       "tags": [
-        "กาแฟ",
-        "บรรยากาศศิลปะ",
-        "อาหารว่างบ่าย"
+        "咖啡",
+        "文艺",
+        "下午茶"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/bfe09723ed7e.webp",
@@ -2447,28 +2447,28 @@
     {
       "id": "chengdu-53",
       "name": "地道麻婆豆腐",
-      "nameEn": "ร้านมาปอทาฟูเยาแบบดั้งเดิม (มาปอทาฟูเยา)",
-      "type": "local",
-      "cuisine": "มาปอทาฟูเยา",
+      "nameEn": "地道麻婆豆腐 (麻婆豆腐)",
+      "type": "ท้องถิ่น",
+      "cuisine": "麻婆豆腐",
       "avgPrice": 49,
       "rating": 4.8,
-      "address": "ถนนอาหารเขตชิงหยาง เมืองเฉิงตู หมายเลข 99",
+      "address": "成都市青羊区美食街99号",
       "coordinates": {
         "lat": 30.55,
         "lng": 104.0976
       },
       "phone": "+86 028 12736923",
       "hours": "10:00-22:00",
-      "description": "ร้านเต้าฟูชูที่ชาวเมืองเฉิงตูแนะนำ รสชาติแท้จริง ราคาย่อมเยา",
+      "description": "成都本地人推荐的麻婆豆腐店，味道正宗，价格实惠",
       "dishHighlights": [
-        "หลงเชาโซว์",
-        "ตันตันเมียน",
-        "ฮุ่ยกัวโร้ว"
+        "龙抄手",
+        "担担面",
+        "回锅肉"
       ],
       "tags": [
-        "ร้านยอดนิยมของคนท้องถิ่น",
-        "ร้านที่ต้องต่อคิว",
-        "ร้านเก่าแก่ในชุมชน"
+        "本地人爱去",
+        "排队王",
+        "社区老店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/589e339c6833.webp",
@@ -2478,21 +2478,21 @@
       "id": "chengdu-55",
       "name": "街边担担面",
       "nameEn": "街边担担面 (担担面)",
-      "type": "local",
-      "cuisine": "ตันตันเมียน",
+      "type": "ท้องถิ่น",
+      "cuisine": "担担面",
       "avgPrice": 93,
       "rating": 4.4,
-      "address": "ที่อยู่ 157 ถนนอาหาร เขตจินนิว เมืองเฉิงตู",
+      "address": "成都市金牛区美食街157号",
       "coordinates": {
         "lat": 30.5795,
         "lng": 104.0314
       },
       "phone": "+86 028 25128872",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "ร้านตันตันเมียนที่ชาวเมืองเฉิงตูแนะนำ รสชาติแท้จริง ราคาย่อมเยา",
+      "description": "成都本地人推荐的担担面店，味道正宗，价格实惠",
       "dishHighlights": [
-        "ชวนชวนเซียง",
-        "ฮุ้ยกัว",
+        "串串香",
+        "火锅",
         "回锅肉"
       ],
       "tags": [
@@ -2508,7 +2508,7 @@
       "id": "chengdu-57",
       "name": "成都味回锅肉",
       "nameEn": "成都味回锅肉 (回锅肉)",
-      "type": "street",
+      "type": "ร้านอาหารข้างทาง",
       "cuisine": "回锅肉",
       "avgPrice": 39,
       "rating": 4.3,
@@ -2538,7 +2538,7 @@
       "id": "chengdu-59",
       "name": "正宗龙抄手",
       "nameEn": "正宗龙抄手 (龙抄手)",
-      "type": "cafe",
+      "type": "คาเฟ่",
       "cuisine": "龙抄手",
       "avgPrice": 54,
       "rating": 4.6,
@@ -2568,7 +2568,7 @@
       "id": "chengdu-61",
       "name": "巷子串串香",
       "nameEn": "巷子串串香 (串串香)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "串串香",
       "avgPrice": 95,
       "rating": 4.1,
@@ -2598,7 +2598,7 @@
       "id": "chengdu-63",
       "name": "老字号串串香",
       "nameEn": "老字号串串香 (串串香)",
-      "type": "cafe",
+      "type": "คาเฟ่",
       "cuisine": "串串香",
       "avgPrice": 68,
       "rating": 4.3,
@@ -2628,7 +2628,7 @@
       "id": "chengdu-65",
       "name": "阿婆回锅肉",
       "nameEn": "阿婆回锅肉 (回锅肉)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "回锅肉",
       "avgPrice": 81,
       "rating": 4.2,
@@ -2658,7 +2658,7 @@
       "id": "chengdu-67",
       "name": "成都味麻婆豆腐",
       "nameEn": "成都味麻婆豆腐 (麻婆豆腐)",
-      "type": "street",
+      "type": "ร้านอาหารข้างทาง",
       "cuisine": "麻婆豆腐",
       "avgPrice": 30,
       "rating": 4.1,
@@ -2688,7 +2688,7 @@
       "id": "chengdu-69",
       "name": "成都味回锅肉",
       "nameEn": "成都味回锅肉 (回锅肉)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "回锅肉",
       "avgPrice": 106,
       "rating": 4.7,
@@ -2718,7 +2718,7 @@
       "id": "chengdu-71",
       "name": "正宗串串香",
       "nameEn": "正宗串串香 (串串香)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "串串香",
       "avgPrice": 141,
       "rating": 4.3,
@@ -3108,194 +3108,194 @@
   "culturalTips": [
     {
       "category": "lifestyle",
-      "title": "Chengdu Lifestyle",
-      "content": "Chengdu people are known for laid-back lifestyle (mafan). Teahouse culture is important - people spend hours drinking tea and playing mahjong. Spicy food and chill vibe define the city.",
+      "title": "วิถีชีวิตเฉิงตู",
+      "content": "ชาวเฉิงตูมีชื่อเสียงในด้านวิถีชีวิตที่ผ่อนคลาย (มาฟาน) วัฒนธรรมบ้านน้ำชามีความสำคัญ - ผู้คนใช้เวลาหลายชั่วโมงในการดื่มชาและเล่นมาจอง อาหารรสเผ็ดและบรรยากาศผ่อนคลายเป็นสัญลักษณ์ของเมือง",
       "importance": "high"
     },
     {
       "category": "food",
-      "title": "Sichuan Cuisine",
-      "content": "Sichuan cuisine (川菜) known for numbing spice (ma la). Key dishes: hot pot, mapo tofu, dan dan noodles. Tea with food is common for digestion of spice.",
+      "title": "อาหารเสฉวน",
+      "content": "อาหารเสฉวน (川菜) ขึ้นชื่อเรื่องรสชาติหนึ่งแสบอีกดอก (มาล่า) อาหารจานเด่น: หม้อไฟ, ทาฟูหมูแดง, บะหมี่แดงเดนแดน การดื่มชากับอาหารเป็นเรื่องปกติเพื่อช่วยย่อยรสเผ็ด",
       "importance": "high"
     },
     {
       "category": "pandas",
-      "title": "Panda Conservation",
-      "content": "Giant pandas are endangered species and national treasure. Chengdu's Panda Base is leading conservation efforts. Respect the animals' welfare guidelines.",
+      "title": "การอนุรักษ์แพนด้า",
+      "content": "หมีแพนด้ายักษ์เป็นสัตว์ใกล้สูญพันธุ์และเป็นสมบัติชาติ ฐานหมีแพนด้าเชงตู้เป็นผู้นำในความพยายามอนุรักษ์ โปรดเคารพแนวทางสวัสดิภาพสัตว์",
       "importance": "medium"
     },
     {
       "category": "tea",
-      "title": "Tea Culture",
-      "content": "Chengdu is famous for its tea houses. Try a traditional bamboo-chair tea session in People Park. The city consumes more tea than any other city in China. Sichuan opera shows are also a must-see evening entertainment.",
+      "title": "วัฒนธรรมชา",
+      "content": "เชงตู้มีชื่อเสียงเรื่องบ้านชาอย่างมาก ลองนั่งชาดั้งเดิมในเก้าอี้ไม้ไผ่ที่สวนสาธารณะผีเอ๋อร์ ปริมาณการบริโภคชาของเมืองนี้มากกว่าเมืองอื่นใดในจีน การแสดงโอเปราเสฉวนในตอนเย็นก็เป็นสิ่งที่ต้องไปชม",
       "importance": "medium"
     },
     {
       "category": "tea-house",
-      "title": "Chengdu Tea House Culture",
-      "content": "Chengdu has over 10,000 tea houses. People sit in bamboo chairs (yaozi) for hours drinking tea, reading newspapers, and socializing. Traditional tea houses offer ear cleaning (掏耳朵) and mahjong. The most famous are He Ming Tea House in People's Park and Shu Kefang.",
+      "title": "วัฒนธรรมชาเฉิงตู",
+      "content": "เชงตู้มีบ้านชามากกว่า 10,000 แห่ง ผู้คนนั่งในเก้าอี้ไม้ไผ่ (ยาโอซื่อ) เป็นเวลาหลายชั่วโมงดื่มชาอ่านหนังสือพิมพ์และเข้าสังคม บ้านชาดั้งเดิมมีบริการทำความสะอาดหู (掏耳朵) และมาจอง ที่มีชื่อเสียงที่สุดคือบ้านชาเฮอหมิงในสวนสาธารณะผีเอ๋อร์และซูเคอฟาง",
       "importance": "high"
     },
     {
       "category": "mahjong",
-      "title": "Mahjong Culture",
-      "content": "Mahjong (麻将) is Chengdu's favorite pastime. You can find people playing in tea houses, parks, and homes at any time. The game is deeply social - it's how business deals are made and friendships are maintained. Visitors can join a game if invited.",
+      "title": "วัฒนธรรมมาจอง",
+      "content": "มาจอง (麻将) เป็นงานอดิเรกยอดนิยมของเชงตู้ คุณสามารถพบผู้คนเล่นในบ้านชาสวนสาธารณะและบ้านได้ตลอดเวลา เกมนี้เป็นเรื่องทางสังคมอย่างมาก - เป็นวิธีทำธุรกิจและรักษามิตรภาพ ผู้เยี่ยมชมสามารถเข้าร่วมเกมได้หากได้รับเชิญ",
       "importance": "high"
     },
     {
       "category": "spicy-food",
-      "title": "Mala (Numbing Spicy) Culture",
-      "content": "Sichuan cuisine is famous for 'ma la' (麻辣) - the unique combination of numbing peppercorn and spicy chili. This creates a tingling, almost electric sensation. Visitors should start with mild dishes and work up to the authentic experience.",
+      "title": "วัฒนธรรมมาล่า (รสหนึ่งชาและเผ็ด)",
+      "content": "อาหารเสฉวนมีชื่อเสียงเรื่อง 'มาล่า' (麻辣) - การผสมผสานเฉพาะตัวระหว่างพริกไทยที่ทำให้ชาบูและพริกป่น สิ่งนี้สร้างความรู้สึกเหมือนถูกไฟฟ้าเล็กน้อย ผู้เยี่ยมชมควรเริ่มจากอาหารที่ไม่เผ็ดมากแล้วค่อยๆ เพิ่มขึ้นเพื่อสัมผัสประสบการณ์ที่แท้จริง",
       "importance": "high"
     },
     {
       "category": "hotpot",
-      "title": "Hotpot Social Dining",
-      "content": "Hotpot (火锅) is a communal dining experience where a boiling broth is shared at the table. You cook ingredients yourself in the pot. It's social, interactive, and considered a bonding activity. Eating hotpot together is how friendships and business relationships are strengthened.",
+      "title": "วัฒนธรรมการกินฮอตพอตแบบสังคม",
+      "content": "หม้อไฟ (火锅) เป็นประสบการณ์การกินร่วมกันที่น้ำซุปเดือดถูกแบ่งปันที่โต๊ะ คุณปิ้งส่วนผสมด้วยตัวเองในหม้อ มันเป็นเรื่องทางสังคม มีปฏิสัมพันธ์ และถือเป็นกิจกรรมสร้างความผูกพัน การกินหม้อไฟด้วยกันเป็นวิธีเสริมสร้างมิตรภาพและความสัมพันธ์ทางธุรกิจ",
       "importance": "high"
     },
     {
       "category": "slow-paced",
-      "title": "Slow-Paced Living",
-      "content": "Chengdu is called 'the city where time slows down' (慢生活之都). Locals believe in enjoying life rather than rushing. You might see people playing chess in parks at noon on a Tuesday. This philosophy extends to business - meetings may start late and relationships matter more than schedules.",
+      "title": "การใช้ชีวิตแบบช้าๆ",
+      "content": "เชงตู้ถูกเรียกว่า 'เมืองแห่งการชะลอตัวของเวลา' (慢生活之都) คนท้องถิ่นเชื่อในการเพลิดเพลินกับชีวิตมากกว่าการรีบเร่ง คุณอาจเห็นผู้คนเล่นหมากรุกในสวนสาธารณะตอนเที่ยงวันวันอังคาร ปรัชญานี้ขยายไปสู่ธุรกิจ - การประชุมอาจเริ่มต้นช้าและความสัมพันธ์สำคัญกว่าตารางเวลา",
       "importance": "medium"
     },
     {
       "category": "sichuan-opera",
-      "title": "Sichuan Opera Face-Changing",
-      "content": "Sichuan Opera (川剧) is famous worldwide for 'bianlian' (变脸) - the lightning-fast mask changes. Actors change multiple masks in seconds, each representing a different emotion. Other skills include 'huo wei' (fire breathing) and 'chuilong' (ear pull). Shows are best experienced at Shufeng Yayun.",
+      "title": "ศิลปะโอเปร่าซิชวนการเปลี่ยนหน้า",
+      "content": "โอเปราเสฉวน (川剧) มีชื่อเสียงระดับโลกเรื่อง 'เปี้ยนเลี่ยน' (变脸) - การเปลี่ยนหน้ากากอย่างรวดเร็ว นักแสดงเปลี่ยนหน้ากากหลายใบในไม่กี่วินาที แต่ละใบแทนอารมณ์ที่แตกต่างกัน ทักษะอื่นๆ ได้แก่ 'ฮัวเว่ย์' (fire breathing) และ 'ฉุยหลง' (ear pull) การแสดงที่ดีที่สุดคือที่ซูเฟิงยายุน",
       "importance": "medium"
     },
     {
       "category": "three-kingdoms",
-      "title": "Three Kingdoms Heritage",
-      "content": "Chengdu is the heart of Three Kingdoms (三国) culture. Zhuge Liang (the Sleeping Dragon) was the Prime Minister of Shu here. Wuhou Temple is dedicated to him. The city takes great pride in this era - you'll see Three Kingdoms themes everywhere from street names to restaurants.",
+      "title": "มรดกสามก๊ก",
+      "content": "เฉิงตูเป็นศูนย์กลางของวัฒนธรรมสามก๊ก (三国). จูเกอ ลิอาง (จูเกอ ลิอาง หรือ มังกรหลับ) เคยดำรงตำแหน่งนายกรัฐมนตรีของราชอาณาจักรซู (Shu) ที่นี่ วิหารอู่ห่อ (Wuhou Temple) ถูกสร้างขึ้นเพื่อเป็นเกียรติแก่เขา ชาวเมืองภาคใต้ยึดถือยุคสมัยนี้เป็นอย่างมาก - คุณจะเห็นธีมเรื่องสามก๊กอยู่ทั่วไปตั้งแต่ชื่อถนนจนถึงร้านอาหาร",
       "importance": "medium"
     },
     {
       "category": "bamboo",
-      "title": "Bamboo Culture",
-      "content": "Giant pandas eat bamboo, but Chengdu's relationship with bamboo goes deeper. Bamboo furniture, bamboo poles for tea service, bamboo shoots in cuisine. The Bifengxia Panda Base is named after a bamboo canyon. Bamboo symbolizes resilience and flexibility in local culture.",
+      "title": "วัฒนธรรมไม้ไผ่",
+      "content": "แพนด้าใหญ่กินไผ่ แต่ความสัมพันธ์ของเฉิงตูกับไผ่ลึกซึ้งกว่านั้น อาทิเช่น เฟอร์นิเจอร์ไผ่ ตะขอไผ่สำหรับเสิร์ฟชา และหน่อไผ่ในอาหาร ฐานพันธุ์แพนด้าบิเฟิงเซียถูกตั้งชื่อตามหุบเขาไผ่ ซึ่งไผ่เป็นสัญลักษณ์ของความแข็งแกร่งและความยืดหยุ่นในวัฒนธรรมท้องถิ่น",
       "importance": "low"
     },
     {
       "category": "foot-massage",
-      "title": "Foot Massage Culture",
-      "content": "Chengdu has countless foot massage (足疗) shops. After spicy food and mahjong, locals relax with a foot massage. It's not just luxury - it's a social activity where friends gather. High-quality places have private rooms for groups.",
+      "title": "วัฒนธรรมนวดเท้า",
+      "content": "เฉิงตูมีร้านนวดเท้ามากมาย (足疗). หลังจากรับประทานอาหารเผ็ดและเล่นม่าจี้ เฉิงตูชาวบ้านจะผ่อนคลายด้วยการนวดเท้า นี่ไม่ใช่แค่การใช้จ่ายสำหรับความหรูหรา - แต่เป็นกิจกรรมทางสังคมที่เพื่อนๆ มารวมตัวกัน สถานที่ที่มีคุณภาพสูงมีห้องส่วนตัวสำหรับกลุ่มคน",
       "importance": "low"
     },
     {
       "category": "spicy-snacks",
-      "title": "Street Snacks Culture",
-      "content": "Chengdu's street snacks (小吃) are legendary. Try stinky tofu (臭豆腐), sugar paintings (糖画), Dingding candy (丁丁糖), and fried rice cakes (糍粑). Night markets at Jinli and Kuanzhai offer the best variety. Each snack has centuries of history.",
+      "title": "วัฒนธรรมอาหารข้างถนน",
+      "content": "ขนมข้างถนนในเฉิงตู (小吃) เป็นที่มีชื่อเสียง ลองชิม ถั่วเหลืองที่มีกลิ่นแรง (臭豆腐), ภาพที่ทำจากน้ำตาล (糖画), ลูกอมดิ้งดิ้ง (丁丁糖), และข้าวเหนียวทอด (糍粑) ตลาดกลางคืนที่จิ้นลี่ (Jinli) และควานไจ (Kuanzhai) เป็นตลาดที่มีความหลากหลายมากที่สุด ทุกขนมมีประวัติศาสตร์หลายศตวรรษ",
       "importance": "medium"
     },
     {
       "category": "sichuanese-dialect",
-      "title": "Sichuan Dialect",
-      "content": "Sichuan dialect (四川话) is different from Mandarin. It uses unique words and a distinctive tone that makes Chinese from other regions smile. Locals often add '撒' (sa) at sentence end and use '好多' (好多) instead of '多少'. Learning a few phrases will delight locals.",
+      "title": "ภาษาถิ่นเสฉวน",
+      "content": "ภาษาสือเจียน (四川话) แตกต่างจากภาษามานดาริน ซึ่งใช้คำพิเศษและเสียงที่แตกต่างทำให้คนจีนจากที่อื่นยิ้ม ชาวบ้านมักจะเติมคำว่า '撒' (sa) ที่ท้ายประโยคและใช้ '好多' (好多) แทน '多少' การเรียนรู้ประโยคสองสามประโยคจะทำให้ชาวบ้านยินดี",
       "importance": "low"
     },
     {
       "category": "nightlife",
-      "title": "Chengdu Nightlife",
-      "content": "Chengdu comes alive at night. 339 TV Tower has sky bars, Taikoo Li has late-night cafes, and酒吧一条街 (Bar Street) near Jinli stays open until 3am. The city has a vibrant club scene with both Chinese and Western-style venues.",
+      "title": "ชีวิตยามค่ำคืนในเฉิงตู",
+      "content": "เชิงตู้สดชีวิตตอนกลางคืน 339 ทาวเวอร์มีบาร์ชั้นสูง ทากู่ลี่มีคาเฟ่เปิดให้บริการตลอดดึก และถนนบาร์ (酒吧一条街) ใกล้จิ้นลี่เปิดจนถึงตีสาม เมืองนี้มีสถานที่ร็อคอินทั้งรูปแบบจีนและตะวันตกที่มีชีวิตชีวา",
       "importance": "medium"
     },
     {
       "category": "giant-panda",
-      "title": "Panda as National Treasure",
-      "content": "Giant pandas (大熊猫) are China's national treasure and Chengdu's biggest attraction. They're endangered with only about 1,800 left in the wild. Chengdu has multiple panda bases - the original Research Base and the newer Bifengxia location where you can sometimes see cubs.",
+      "title": "แพนด้าในฐานะสมบัติประจำชาติ",
+      "content": "แมวแพนด้าใหญ่ (大熊猫) เป็นที่รักของประเทศจีนและเป็นที่น่าสนใจที่สุดของเฉิงตู่ พวกมันเป็นสัตว์ที่ใกล้สูญพันธุ์และมีเพียงประมาณ 1,800 ตัวที่ยังอยู่ในธรรมชาติ ที่เฉิงตู่มีหลายฐานที่เลี้ยงแมวแพนด้า - ฐานวิจัยเดิมและสถานที่ใหม่ที่ Bifengxia ที่คุณอาจเห็นลูกแพนด้าบางครั้ง",
       "importance": "high"
     },
     {
       "category": "ancient-shu",
-      "title": "Ancient Shu Civilization",
-      "content": "Chengdu was the capital of the ancient Shu Kingdom (古蜀国) over 3,000 years ago. The Sanxingdui and Jinsha archaeological sites reveal a mysterious civilization with unique bronze masks and gold artifacts. This heritage is a source of local pride.",
+      "title": "อารยธรรมซูโบราณ",
+      "content": "เมืองเฉิงตูเคยเป็นเมืองหลวงของอาณาจักรโบราณซู (古蜀国) มากกว่า 3,000 ปีที่แล้ว แหล่งโบราณคดีซานซิงดูยิ (Sanxingdui) และจิ้นชา (Jinsha) เปิดเผยอารยธรรมที่ลึกลับพร้อมหน้ากากโลหะและเครื่องประดับทองคำที่มีเอกลักษณ์เฉพาะตัว มรดกทางวัฒนธรรมนี้เป็นที่ภาคภูมิใจของชาวท้องถิ่น",
       "importance": "medium"
     },
     {
       "category": "flower-and-bird",
-      "title": "Flower and Bird Markets",
-      "content": "Chengdu has traditional flower and bird markets (花鸟市场) where locals buy pets, plants, and crafts. The most famous is the Flower Bird Market near People's Park. It's a sensory experience with vendors, birds singing, and flowers blooming.",
+      "title": "ตลาดดอกไม้และนก",
+      "content": "เฉิงตูมีตลาดดอกไม้และนก (花鸟市场) แบบดั้งเดิมที่ชาวบ้านซื้อสัตว์เลี้ยง ไม้ดอก และงานฝีมือ ตลาดที่มีชื่อเสียงที่สุดคือตลาดดอกไม้และนกใกล้ People's Park มันเป็นประสบการณ์ทางประสาทสัมผัสที่มีพ่อค้า สัตว์เลี้ยงร้องเพลง และดอกไม้บาน",
       "importance": "low"
     },
     {
       "category": "dialect-hospitality",
-      "title": "Sichuan Hospitality",
-      "content": "Sichuan people are known for warmth and generosity (热情好客). If you show interest in local culture, locals might invite you for tea or a meal. Saying '巴适' (bashi - meaning comfortable/great) will make locals happy. Refusing hospitality repeatedly is considered impolite.",
+      "title": "มิตรไมตรีของเสฉวน",
+      "content": "คนในเขตเสฉวนมีชื่อเสียงในเรื่องความอบอุ่นและใจกว้าง (热情好客) หากคุณแสดงความสนใจในวัฒนธรรมท้องถิ่น ชาวบ้านอาจเชิญคุณไปดื่มชา หรือรับประทานอาหารด้วยกัน การพูดว่า '巴适' (bashi - หมายถึงสบาย/ยอดเยี่ยม) จะทำให้ชาวบ้านมีความสุข การปฏิเสธความอารีของชาวบ้านซ้ำแล้วซ้ำอีกจะถือว่าไม่สุภาพ",
       "importance": "medium"
     },
     {
       "category": "sichuanese-dialect",
-      "title": "Sichuan Teahouse Social Code",
-      "content": "Chengdu's tea houses follow unwritten rules: entering a tea house means you're open to conversation with strangers. Locals often share tables with solo visitors. The tea server (茶博士) is respected for their pouring skills - watch the water stream never break.",
+      "title": "มารยาทในร้านชาซินชวน",
+      "content": "ร้านน้ำชาในเฉิงตูมีกฎที่ไม่เป็นทางการ: เมื่อคุณเข้าไปในร้านน้ำชาหมายความว่าคุณเปิดใจที่จะคุยกับคนแปลกหน้า ชาวเมืองท้องถิ่นมักจะแบ่งโต๊ะกับนักท่องเที่ยวที่เดินทางคนเดียว บริกรน้ำชา (ชาโบซี) เป็นที่เคารพในทักษะการเทน้ำ - สังเกตการไหลของน้ำที่ไม่เคยขาด",
       "importance": "medium"
     },
     {
       "category": "spicy-tolerance",
-      "title": "Building Spice Tolerance",
-      "content": "Start with '微辣' (slightly spicy) or '中辣' (medium). Ask for '清汤' (plain) if needed. Sichuan peppercorns create a 'ma' (numbing) sensation - this is the authentic experience, not just heat. Drink tea or rice water to cool down.",
+      "title": "การสร้างความอดทนต่อเผ็ด",
+      "content": "เริ่มด้วย '微辣' (เผ็ดเล็กน้อย) หรือ '中辣' (ระดับกลาง) หากจำเป็น ให้ขอ '清汤' (ซุปใส) พริก Sichuan จะทำให้เกิดความรู้สึก '麻' (ชา) - นี่คือประสบการณ์ที่แท้จริง ไม่ใช่แค่ความเผ็ด แนะนำดื่มชา หรือน้ำข้าวเพื่อลดความร้อนในร่างกาย",
       "importance": "high"
     },
     {
       "category": "foot-massage-culture",
-      "title": "Chengdu Foot Massage Etiquette",
-      "content": "Foot massage (足疗) shops are everywhere and socially acceptable. Tips of 10-20% expected. For first-timers, '中式按摩' (Chinese style) is less intense. Popular chains include '良子' and '金色印象'. Going with friends is common.",
+      "title": "มารยาทนวดเท้าเฉิงตู",
+      "content": "ร้านนวดเท้า (足疗) มีทั่วทุกแห่งและเป็นที่ยอมรับในสังคม คาดว่าจะให้ทิป 10-20% ในการเข้าใช้บริการครั้งแรก '中式按摩' (รูปแบบจีน) จะไม่แรงมากนัก ช่องทางที่ได้รับความนิยมได้แก่ '良子' และ '金色印象' การไปกับเพื่อนเป็นเรื่องปกติ",
       "importance": "medium"
     },
     {
       "category": "sichuan-opera-ticket",
-      "title": "Sichuan Opera Show Guide",
-      "content": "Shufeng Yayun (蜀风雅韵) is the most authentic venue. Book via hotel concierge or travel app. Shows include face changing, ear pulling, and tea pouring. Photography prohibited during acts. Dress code not strict but smart casual recommended.",
+      "title": "คู่มือชมออเปราเสฉวน",
+      "content": "Shufeng Yayun (蜀风雅韵) เป็นสถานที่ที่มีเอกลักษณ์ที่สุด สามารถจองผ่านเลขานุการโรงแรมหรือแอปพลิเคชันการท่องเที่ยวได้ โชว์รวมถึงการเปลี่ยนหน้า การดึงหู และการเทชา การถ่ายรูปถูกห้ามในระหว่างการแสดง ไม่มีกฎอาภรณ์ที่เข้มงวด แต่แนะนำให้สวมใส่แบบสุภาพและสบายๆ",
       "importance": "medium"
     },
     {
       "category": "panda-volunteer",
-      "title": "Panda Volunteer Program",
-      "content": "Chengdu Panda Base and Bifengxia offer volunteer programs where you can clean enclosures, prepare food, and learn about panda conservation. Book 2+ months ahead. Minimum age 12. Cost around 1000¥/day. Bring comfortable clothes.",
+      "title": "โปรแกรมอาสาสมัครแพนดา",
+      "content": "ฐานหมีแพนด้าเชงตู้และบิเฟิงเซียเปิดโปรแกรมอาสาสมัครที่คุณสามารถทำความสะอาดคอก เตรียมอาหาร และเรียนรู้เกี่ยวกับการอนุรักษ์หมีแพนด้า จองล่วงหน้า 2+ เดือน อายุขั้นต่ำ 12 ปี ค่าใช้จ่ายประมาณ 1000¥/วัน นำเสื้อผ้าที่สบายมาด้วย",
       "importance": "medium"
     },
     {
       "category": "hotpot-dining-etiquette",
-      "title": "Hotpot Dining Etiquette",
-      "content": "Use shared chopsticks (公筷) for raw meat. Don't stir continuously - ingredients cook quickly. Dip in oil sauce (油碟) for cooling. '七上八下' - quick dips for beef. Don't drink soup from pot - it's too oily. Split the bill with 'AA制' (AA).",
+      "title": "มารยาทการกินหม้อไฟ",
+      "content": "ใช้ตะเกียบร่วม (公筷) สำหรับเนื้อดิบ อย่าคนต่อเนื่อง - ส่วนผสมจะสุกเร็ว ดองในซอสน้ำมัน (油碟) เพื่อให้เย็น '七上八下' - ดองสั้นๆ สำหรับเนื้อวัว อย่าดื่มซุปจากหม้อ - มันจะมีน้ำมันมากเกินไป แบ่งบิลด้วย 'AA制' (AA)",
       "importance": "high"
     },
     {
       "category": "chuan-chuan-slang",
-      "title": "Chuan Chuan Slang Guide",
-      "content": "Chuan chuan xiang has its own vocabulary: '签签' (qiānqiān) for skewers, '数签签' (shǔ qiānqiān) to count skewers at end, '鸳鸯锅' (yuānyāngguō) for half spicy/half mild. Take your time - eating 2-3 hours is normal. Go for second round if still hungry.",
+      "title": "คู่มือภาษาฉวนฉวน",
+      "content": "ชวนชวนเซียง (Chuan chuan xiang) มีศัพท์เฉพาะตัวของตัวเอง: '签签' (qiānqiān) สำหรับสเปียร์, '数签签' (shǔ qiānqiān) ในการนับสเปียร์ตอนท้าย, '鸳鸯锅' (yuānyāngguō) สำหรับก้นหอยครึ่งเผ็ดครึ่งเบา รับประทานอย่างช้าๆ - การรับประทาน 2-3 ชั่วโมงเป็นเรื่องปกติ หากยังหิวอยู่ให้ไปรอบที่ 2",
       "importance": "low"
     },
     {
       "category": "ancient-shu-language",
-      "title": "Ancient Shu Writing",
-      "content": "The Shu people developed their own writing system before Chinese unification. Some characters are still visible on artifacts at Sanxingdui and Jinsha museums. The '太阳鸟' (Sun Bird) and '太阳神' (Sun God) motifs appear throughout Chengdu's modern design.",
+      "title": "อักษรซูโบราณ",
+      "content": "ชาวซู (Shu) ได้พัฒนาระบบการเขียนของตนเองก่อนการรวมเข้ากับจีนโดยมีตัวอักษรบางตัวยังมองเห็นได้บนโลหะประดิษฐ์ที่พิพิธภัณฑ์ซานซิงดุย (Sanxingdui) และจินชา (Jinsha) มีลวดลาย 'ต้า หยาง เหนียว' (Sun Bird) และ 'ต้า หยาง เสิน' (Sun God) ปรากฏทั่วไปในการออกแบบสมัยใหม่ของเฉิงดู (Chengdu)",
       "importance": "low"
     },
     {
       "category": "weekend-escape",
-      "title": "Weekend Escape Culture",
-      "content": "Chengdu locals love weekend trips (周末游) to nearby areas: Dujiangyan for summer cool, Leshan for Buddha, Jiuzhaigou for scenery. '农家乐' (farm stays) popular for families. Friday night traffic jams indicate everyone leaving the city.",
+      "title": "วัฒนธรรมพักผ่อนสุดสัปดาห์",
+      "content": "ชาวเมืองเฉิงตูชื่นชอบการเดินทางไปในวันหยุดสุดสัปดาห์ (周末游) ไปยังพื้นที่ใกล้เคียง: ดูเจียงยันสำหรับความเย็นในฤดูร้อน เล่าแซนสำหรับพระพุทธรูป เจี้วจาเกาเพื่อทิวทัศน์ การพักผ่อนในชนบท ('农家乐') เป็นที่นิยมสำหรับครอบครัว การติดขัดจราจรในคืนวันศุกร์บ่งบอกถึงการออกจากเมืองของทุกคน",
       "importance": "medium"
     },
     {
       "category": "sichuan-tea-varieties",
-      "title": "Sichuan Tea Varieties",
-      "content": "Chengdu tea culture centers on '三花茶' (San Hua Cha - third grade tea), '碧潭飘雪' (Bitan Piao Xue - jasmine green tea), and '竹叶青' (Zhuye Qing - bamboo leaf tea). Tea is brewed Gongfu style with small cups and a 'cha hai' (公道杯).",
+      "title": "พันธุ์ชาเสฉวน",
+      "content": "วัฒนธรรมชาเชงตู้มุ่งเน้นที่ 'ซานฮัวชา' (三花茶 - ชาชั้นสาม), 'บิตันเพียวเซว' (碧潭飘雪 - ชาเขียวมะลิ) และ 'จูเยชิง' (竹叶青 - ใบไผ่เขียว) ชาชงวิธีกงฟูด้วยถ้วยเล็กๆ และ 'ชาไห่' (公道杯)",
       "importance": "medium"
     },
     {
       "category": "panda-protection",
-      "title": "Panda Conservation Awareness",
-      "content": "Giant pandas are '伞物种' (umbrella species) - protecting them protects their entire habitat. The 67 nature reserves for pandas also protect 8000+ other species. Don't use flash photography with pandas. Follow '安静参观' (quiet参观) rules.",
+      "title": "การอนุรักษ์แพนด้า",
+      "content": "แพนด้ายักษ์เป็น 'สิ่งมีชีวิตปกป้อง' (umbrella species) - การปกป้องพวกมันจะปกป้องทั้งพื้นที่ที่อาศัยของมัน ที่พักอาศัยธรรมชาติ 67 แห่งสำหรับแพนด้ายักษ์ยังปกป้องสิ่งมีชีวิตชนิดอื่น ๆ กว่า 8000 ชนิด ห้ามใช้แฟลชกับแพนด้ายักษ์ ปฏิบัติตามกฎ 'เยี่ยมชมอย่างเงียบ' (quiet visit)",
       "importance": "medium"
     },
     {
       "category": "chess-park-culture",
-      "title": "Park Chess Culture",
-      "content": "Chess players in People's Park are serious - some have played for decades. '象棋' (Chinese chess) more popular than international chess. Standing behind a player and offering advice is acceptable - called '支招'. It's also a form of gambling for some.",
+      "title": "วัฒนธรรมหมากรุกในสวน",
+      "content": "ผู้เล่นหมากรุกในสวนสาธารณะผีเอ๋อร์เครียดจริง - บางคนเล่นมาหลายทศวรรษ 'เซียงฉี' (象棋 - หมากรุกจีน) ได้รับความนิยมมากกว่าหมากรุกสากล ยืนหลังผู้เล่นและให้คำแนะนำเป็นสิ่งที่ยอมรับได้ - เรียกว่า 'จือจาо' นอกจากนี้ยังเป็นรูปแบบการพนันสำหรับบางคน",
       "importance": "low"
     }
   ],
@@ -3303,127 +3303,127 @@
     {
       "type": "ambulance",
       "name": "成都急救中心",
-      "nameEn": "Chengdu Emergency Center",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "120",
-      "address": "Citywide coverage"
+      "address": "กว่างโจว"
     },
     {
       "type": "police",
       "name": "成都市公安局",
-      "nameEn": "Chengdu Public Security Bureau",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "110",
-      "address": "Various locations"
+      "address": "กว่างโจว"
     },
     {
       "type": "hospital",
       "name": "成都新世纪妇女儿童医院",
-      "nameEn": "Chengdu New Century Women & Children's Hospital",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 28 6533 1666",
-      "address": "99 Xiandong Rd, Chengdu",
+      "address": "กว่างโจว",
       "coordinates": {
         "lat": 30.6455,
         "lng": 104.0565
       },
-      "notes": "English-speaking, accepts international insurance"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "hospital",
       "name": "四川大学华西医院",
-      "nameEn": "West China Hospital, Sichuan University",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 28 8542 2114",
-      "address": "37 Guo Xue Xiang, Wuhou District",
+      "address": "กว่างโจว",
       "coordinates": {
         "lat": 30.6385,
         "lng": 104.0745
       },
-      "notes": "Best public hospital in western China, excellent for complex cases"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "embassy",
       "name": "美国驻成都总领事馆",
-      "nameEn": "US Consulate General Chengdu",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 28 8558 3992",
-      "address": "IFS Tower 2, 1 Middle Section of Hong Kong Rd, Jinjiang",
+      "address": "กว่างโจว",
       "coordinates": {
         "lat": 30.6545,
         "lng": 104.0705
       },
-      "notes": "Emergency: +86 28 8558 3992"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "embassy",
       "name": "英国驻重庆总领事馆",
-      "nameEn": "British Consulate General Chongqing",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 23 6369 1488",
-      "address": "Chongqing (nearest for Chengdu)",
-      "notes": "Nearest consular services for British citizens"
+      "address": "กว่างโจว",
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "embassy",
       "name": "德国驻成都总领事馆",
-      "nameEn": "German Consulate General Chengdu",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 28 8458 8031",
-      "address": "28th Floor, Tower 1, Central Plaza, 19 Hong Kong Rd, Jinjiang District",
+      "address": "กว่างโจว",
       "coordinates": {
         "lat": 30.6545,
         "lng": 104.0725
       },
-      "notes": "German consular services for southwest China"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "embassy",
       "name": "日本驻成都总领事馆",
-      "nameEn": "Japanese Consulate General Chengdu",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 28 8558 6391",
-      "address": "IFS Tower 1, 1 Middle Section of Hong Kong Rd, Jinjiang District",
+      "address": "กว่างโจว",
       "coordinates": {
         "lat": 30.6545,
         "lng": 104.0715
       },
-      "notes": "Japanese consular services"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "fire",
       "name": "成都消防支队",
-      "nameEn": "Chengdu Fire Brigade",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "119",
-      "address": "Citywide coverage"
+      "address": "กว่างโจว"
     },
     {
       "type": "tourist-police",
       "name": "成都旅游警察",
-      "nameEn": "Chengdu Tourist Police",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 28 8640 7711",
-      "address": "Various tourist areas",
-      "notes": "English speaking tourist police in popular areas"
+      "address": "กว่างโจว",
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "tourist-complaint",
       "name": "成都旅游投诉热线",
-      "nameEn": "Chengdu Tourism Complaint Hotline",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "12301",
-      "address": "Citywide",
-      "notes": "For tourism complaints and emergencies"
+      "address": "กว่างโจว",
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "embassy",
       "name": "法国驻成都总领事馆",
-      "nameEn": "French Consulate General Chengdu",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 28 8447 7031",
-      "address": "19th Floor, Qingyang Century Center, 88 Qingjiang Rd, Wuhou District",
+      "address": "กว่างโจว",
       "coordinates": {
         "lat": 30.6485,
         "lng": 104.0495
       },
-      "notes": "French consular services"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese + Sichuan dialect",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa. 144h transit visa available at airport for eligible nationalities.",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Tap water safe but use bottled water"
+    "language": "ภาษาจีน (แมนดาริน)",
+    "currency": "หยวนจีน (CNY/RMB)",
+    "visa": "ส่วนใหญ่ต้องมีวีซ่า นักเดินทางที่มีคุณสมบัติสามารถขอวีซ่าแวนผ่าน 72 ชั่วโมงที่สนามบิน",
+    "timeZone": "UTC+8 (เวลามาตรฐานจีน)",
+    "electricity": "220V/50Hz, ปลั๊กประเภท A/I",
+    "water": "น้ำประปาดื่มได้ แต่แนะนำให้ดื่มน้ำขวด"
   }
 }

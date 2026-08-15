@@ -8,9 +8,10 @@ interface RestaurantsSectionProps {
   restaurants: RestaurantCardData[];
   citySlug: string;
   cityName: string;
+  lang?: string;
 }
 
-export function RestaurantsSection({ restaurants, citySlug, cityName }: RestaurantsSectionProps) {
+export function RestaurantsSection({ restaurants, citySlug, cityName, lang = "en" }: RestaurantsSectionProps) {
   return (
     <div>
       <div className="mb-6">
@@ -36,7 +37,7 @@ export function RestaurantsSection({ restaurants, citySlug, cityName }: Restaura
         loadMoreCount={10}
         className="grid grid-cols-1 md:grid-cols-2 gap-6"
         renderItem={(restaurant, _index) => (
-          <RestaurantCard key={restaurant.id} restaurant={restaurant} />
+          <RestaurantCard key={restaurant.id} restaurant={restaurant} lang={lang} />
         )}
       />
     </div>

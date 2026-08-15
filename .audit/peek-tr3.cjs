@@ -1,0 +1,10 @@
+const fs = require("fs");
+const s = fs.readFileSync("src/i18n/translations.ts", "utf8");
+const idx = s.indexOf("ja: {");
+const ja = s.slice(idx, idx + 300000);
+const m = ja.match(/city\.beijing[^\n]{0,60}/);
+console.log(m ? m[0] : "no city.beijing key");
+const m2 = ja.match(/cityList[^\n]{0,120}/);
+console.log(m2 ? m2[0] : "no cityList");
+const m3 = ja.match(/city\.name[^\n]{0,80}/);
+console.log(m3 ? m3[0] : "no city.name");

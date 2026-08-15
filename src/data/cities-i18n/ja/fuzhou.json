@@ -1,664 +1,664 @@
 {
   "slug": "fuzhou",
   "name": "福州",
-  "nameEn": "Fuzhou",
+  "nameEn": "福州",
   "country": "China",
-  "population": "8.3 million",
+  "population": "830万人",
   "coordinates": {
     "lat": 26.0753,
     "lng": 119.2965
   },
-  "timezone": "UTC+8 (China Standard Time)",
-  "description": "Fuzhou, capital of Fujian Province, is a historic city with 2200 years of history. Known for its traditional榕树 (banyan) trees, Fuzhou-style architecture, and as gateway to Taiwan. Features cultural sites like 三坊七巷 (Three Lanes and Seven Alleys) and Buddhist圣地 (sacred) Mount Putuo.",
+  "timezone": "UTC+8（中国標準時）",
+  "description": "福建省の首都である福州は、2200年の歴史を持つ歴史的な都市です。伝統的な榕樹（ガジュマルの木）、福州様式の建築、そして台湾への玄関口として知られています。三坊七巷（三つの路と七つの路地）や仏教の聖地である普陀山などの文化的な名所があります。",
   "coverImage": "/img/ext/eb9c77e8f6de.webp",
   "highlights": [
-    "Three Lanes and Seven Alleys - Historic districts",
-    "Mount Putuo - Buddhist sacred mountain",
-    "Fuzhou National Forest Park - Urban nature",
-    "Drum Mountain - Scenic area with temples",
-    "Hot spring culture - Local tradition"
+    "三坊七巷 - 歴史的地区",
+    "普陀山 - 仏教の聖山",
+    "福州国家森林公園 - 都市の自然",
+    "鼓山 - 寺院のある景勝地",
+    "温泉文化 - 地元伝統"
   ],
   "climate": {
-    "type": "Subtropical monsoon",
+    "type": "亜熱帯季風気候",
     "bestMonths": [
-      "March",
-      "April",
-      "May",
-      "October",
-      "November"
+      "3月",
+      "4月",
+      "5月",
+      "10月",
+      "11月"
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "12C (54F)",
-    "tips": "Best in spring and autumn. Summers hot and humid with typhoons. Winter mild but rainy. Hot springs popular year-round."
+    "tips": "春と秋がベスト。夏は蒸し暑く台風が多い。冬は穏やかだが雨が多い。温泉は年間を通して人気。"
   },
   "attractions": [
     {
       "id": "fuzhou-1",
       "name": "三坊七巷",
-      "nameEn": "Three Lanes and Seven Alleys",
+      "nameEn": "三坊七巷",
       "category": "cultural",
       "image": "/img/ext/551f80837879.webp",
-      "description": "Historic district with traditional Ming/Qing architecture, cultural museums, and local crafts.",
-      "address": "Gulou District",
+      "description": "明・清時代の伝統的な建築、文化博物館、地元の工芸品がある歴史地区。",
+      "address": "鼓楼区",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
-      "openingHours": "Open 24 hours (shops 09:00-22:00)",
-      "ticketPrice": "Free (some attractions charge)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24時間営業（店舗09:00-22:00）",
+      "ticketPrice": "無料（一部の観光地は有料）",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Traditional architecture",
-        "Local crafts",
-        "Street food",
-        "Night lighting"
+        "伝統的な建築",
+        "地元工芸品",
+        "屋台料理",
+        "夜間照明"
       ],
-      "tips": "Best evening with lighting. Try local snacks. Less crowded early morning.",
+      "tips": "ライトアップされる夜が最適。地元の軽食を試してみてください。朝方は人が少ないです。",
       "phone": "+86 059 1 1151 1278"
     },
     {
       "id": "fuzhou-2",
       "name": "鼓山",
-      "nameEn": "Drum Mountain",
+      "nameEn": "鼓山",
       "category": "natural",
       "image": "/img/ext/20ba084c3257.webp",
-      "description": "Scenic mountain with ancient temples, hiking trails, and panoramic city views.",
-      "address": "Jin'an District",
+      "description": "古代の寺院、ハイキングコース、市内を一望できるパノラマビューがある景勝地の山。",
+      "address": "晋安区",
       "coordinates": {
         "lat": 26.0853,
         "lng": 119.3265
       },
       "openingHours": "06:00-18:00",
-      "ticketPrice": "Free (temple 40¥)",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "無料（寺院は40¥）",
+      "recommendedVisitTime": "3-4時間",
       "highlights": [
-        "Ancient temples",
-        "Mountain views",
-        "Hiking",
-        "Cable car"
+        "古代の寺院",
+        "山の景色",
+        "ハイキング",
+        "ケーブルカー"
       ],
-      "tips": "Take cable car up. Visit Hannya Temple. Great for sunrise.",
+      "tips": "ケーブルカーで上ってください。般若寺を訪れてください。日の出を見るのに最適です。",
       "phone": "+86 059 1 2973 5540"
     },
     {
       "id": "fuzhou-3",
-      "name": "福州国家森林公园",
-      "nameEn": "Fuzhou National Forest Park",
+      "name": "福州国家森林公園",
+      "nameEn": "福州国家森林公園",
       "category": "natural",
       "image": "/img/ext/03b8d3c0dd93.webp",
-      "description": "Large urban forest park with banyan trees, hiking trails, and bird watching.",
-      "address": "Jin'an District",
+      "description": "バンヤンの木、ハイキングコース、バードウォッチングができる大規模な都市型森林公園。",
+      "address": "晋安区",
       "coordinates": {
         "lat": 26.1353,
         "lng": 119.3165
       },
       "openingHours": "06:00-18:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Banyan trees",
-        "Hiking",
-        "Bird watching",
-        "Nature escape"
+        "バンヤンの木々",
+        "ハイキング",
+        "バードウォッチング",
+        "自然体験"
       ],
-      "tips": "Morning visits best for birds. The big banyan is iconic.",
+      "tips": "鳥を見るには朝の訪問が最適です。大きなバンヤンの木は象徴的です。",
       "phone": "+86 059 1 8650 3500"
     },
     {
       "id": "fuzhou-4",
       "name": "福州西湖",
-      "nameEn": "Fuzhou West Lake",
+      "nameEn": "福州西湖",
       "category": "natural",
       "image": "/img/ext/b1a91de242ab.webp",
-      "description": "Historic urban lake with gardens, pavilions, and traditional Chinese landscaping.",
-      "address": "Gulou District",
+      "description": "庭園、パビリオン、中国の伝統的な造園がある歴史的な都市の湖。",
+      "address": "鼓楼区",
       "coordinates": {
         "lat": 26.0653,
         "lng": 119.2865
       },
       "openingHours": "05:30-22:30",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Lake views",
-        "Historic pavilions",
-        "Morning tai chi",
-        "Lotus"
+        "湖の景色",
+        "歴史的なパビリオン",
+        "朝の太極拳",
+        "蓮"
       ],
-      "tips": "Best morning for tai chi. Beautiful lotus in summer.",
+      "tips": "太極拳をするには朝が最適。夏は美しい蓮の花が楽しめます。",
       "phone": "+86 059 1 7547 0466"
     },
     {
       "id": "fuzhou-5",
-      "name": "林则徐纪念馆",
-      "nameEn": "Lin Zexu Memorial Hall",
+      "name": "林則徐記念館",
+      "nameEn": "林則徐記念館",
       "category": "historical",
       "image": "/img/ext/9fcdee7a2b2e.webp",
-      "description": "Memorial to Lin Zexu, the famous Qing Dynasty official who fought opium trade.",
-      "address": "Three Lanes area, Gulou District",
+      "description": "アヘン貿易と戦った有名な清朝の役人、林則徐の記念館。",
+      "address": "鼓楼区の三坊七巷エリア",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "Historical exhibits",
-        "Lin Zexu artifacts",
-        "Cultural heritage",
-        "Courtyard"
+        "歴史的展示",
+        "林則徐の遺物",
+        "文化遺産",
+        "中庭"
       ],
-      "tips": "Combine with Three Lanes visit. Important historical figure.",
+      "tips": "三坊七巷の訪問と組み合わせてください。重要な歴史上の人物です。",
       "phone": "+86 059 1 5128 2972"
     },
     {
       "id": "fuzhou-6",
       "name": "福州白塔",
-      "nameEn": "White Pagoda",
+      "nameEn": "白い仏塔",
       "category": "cultural",
       "image": "/img/ext/0df1b413372e.webp",
-      "description": "Ancient five-story pagoda dating to Tang Dynasty, offering city views.",
-      "address": "Gulou District",
+      "description": "唐時代にさかのぼる古代の五重の塔で、市内の景色を提供しています。",
+      "address": "鼓楼区",
       "coordinates": {
         "lat": 26.0653,
         "lng": 119.3065
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "30¥",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "Tang Dynasty architecture",
-        "City views",
-        "Buddhist culture",
-        "Photography"
+        "唐代の建築",
+        "街の景色",
+        "仏教文化",
+        "写真"
       ],
-      "tips": "Combine with nearby Yongquan Temple. Best at sunset.",
+      "tips": "近くの湧泉寺と組み合わせてください。夕日が最適です。",
       "phone": "+86 059 1 0387 3169"
     },
     {
       "id": "fuzhou-7",
-      "name": "于山风景区",
-      "nameEn": "Yu Mountain",
+      "name": "于山風景区",
+      "nameEn": "于山",
       "category": "natural",
       "image": "/img/ext/90c2f10df87a.webp",
-      "description": "Historic mountain in city center with ancient pavilions, temples, and banyan trees.",
-      "address": "Gulou District",
+      "description": "市の中心部にある歴史的な山で、古代のパビリオン、寺院、バンヤンの木々があります。",
+      "address": "鼓楼区",
       "coordinates": {
         "lat": 26.0653,
         "lng": 119.3065
       },
       "openingHours": "06:00-18:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "City views",
-        "Ancient pavilions",
-        "Banyan trees",
-        "Local culture"
+        "街の景色",
+        "古代のパビリオン",
+        "バンヤンの木々",
+        "地元文化"
       ],
-      "tips": "Morning visits popular with locals. Great for quick hike.",
+      "tips": "地元の人に人気の朝の訪問です。短いハイキングに最適です。",
       "phone": "+86 059 1 2457 1602"
     },
     {
       "id": "fuzhou-8",
       "name": "福州温泉",
-      "nameEn": "Fuzhou Hot Springs",
+      "nameEn": "福州温泉",
       "category": "natural",
       "image": "/img/ext/dfe728ad795d.webp",
-      "description": "Fuzhou is famous for hot springs, a local tradition for relaxation and health.",
-      "address": "Jin'an District",
+      "description": "福州は温泉で有名で、リラックスと健康のための伝統的な行事です",
+      "address": "晋安区",
       "coordinates": {
         "lat": 26.1153,
         "lng": 119.3065
       },
       "openingHours": "09:00-23:00",
       "ticketPrice": "100-300¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Natural hot springs",
-        "Outdoor pools",
-        "Spa treatments",
-        "Local tradition"
+        "自然の温泉",
+        "屋外プール",
+        "スパトリートメント",
+        "地元伝統"
       ],
-      "tips": "Must-try experience. Evening visits popular. Try spring water eggs.",
+      "tips": "必体験。夕方の訪問が人気。温泉たまごを試してみましょう",
       "phone": "+86 059 1 3380 5894"
     },
     {
       "id": "fuzhou-9",
-      "name": "马尾船政文化景区",
-      "nameEn": "Mawei Shipyard Cultural Zone",
+      "name": "馬尾船政文化景区",
+      "nameEn": "福州馬尾造船所文化ゾーン",
       "category": "historical",
       "image": "/img/ext/29f8a9cb371b.webp",
-      "description": "Historic shipyard and naval base from Qing Dynasty, China's modern shipbuilding birthplace.",
-      "address": "Mawei District",
+      "description": "歴史的な造船所と海軍基地。清朝時代に中国最初の現代造船所として誕生。",
+      "address": "馬尾区",
       "coordinates": {
         "lat": 25.9853,
         "lng": 119.4565
       },
       "openingHours": "08:30-17:30",
       "ticketPrice": "80¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Naval history",
-        "Shipyard exhibits",
-        "Famous workshops",
-        "Cultural heritage"
+        "海軍の歴史",
+        "造船所展示",
+        "有名な作業場",
+        "文化遗产"
       ],
-      "tips": "Day trip. Important for Chinese naval history.",
+      "tips": "日帰り。中国の海軍史上重要な場所。",
       "phone": "+86 059 1 3664 6419"
     },
     {
       "id": "fuzhou-10",
       "name": "福州烟台山",
-      "nameEn": "Fuzhou Yantai Mountain",
+      "nameEn": "福州烟台山",
       "category": "cultural",
       "image": "/img/ext/cd8bcddf7142.webp",
-      "description": "Historic hill with colonial architecture, churches, and panoramic views.",
-      "address": "Cangshan District",
+      "description": "歴史的な丘で、植民地時代の建築、教会、素晴らしい眺望が広がります",
+      "address": "倉山区",
       "coordinates": {
         "lat": 26.0553,
         "lng": 119.2865
       },
       "openingHours": "06:00-18:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Colonial buildings",
-        "Church",
-        "Walking trails",
-        "Views"
+        "植民地時代の建築",
+        "教会",
+        "遊歩道",
+        "眺望"
       ],
-      "tips": "Less known attraction. Best in morning. Great for photos.",
+      "tips": "穴場の観光地です。朝が最もおすすめで、写真撮影に最適です。",
       "phone": "+86 059 1 2591 4665"
     },
     {
       "id": "fuzhou-11",
       "name": "福州熊猫世界",
-      "nameEn": "Fuzhou Panda World",
+      "nameEn": "福州パンダワールド",
       "category": "cultural",
       "image": "/img/ext/f859e856792b.webp",
-      "description": "Panda research center with giant pandas and educational exhibits.",
-      "address": "Jin'an District",
+      "description": "ジャイアントパンダと教育展示のあるパンダ研究センター",
+      "address": "晋安区",
       "coordinates": {
         "lat": 26.1253,
         "lng": 119.3065
       },
       "openingHours": "08:30-17:30",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "2 hours",
+      "recommendedVisitTime": "2時間",
       "highlights": [
-        "Giant pandas",
-        "Red pandas",
-        "Educational",
-        "Family friendly"
+        "ジャイアントパンダ",
+        "レッサーパンダ",
+        "教育的内容",
+        "ファミリー向け"
       ],
-      "tips": "Great for families. Morning visits best for active pandas.",
+      "tips": "ファミリーに最適。パンダが活発な朝の訪問がベストです。",
       "phone": "+86 059 1 7277 3057"
     },
     {
       "id": "fuzhou-12",
-      "name": "福州博物馆",
-      "nameEn": "Fuzhou Museum",
+      "name": "福州博物館",
+      "nameEn": "福州博物館",
       "category": "cultural",
       "image": "/img/ext/bbdf0fd81494.webp",
-      "description": "Regional museum with collections showcasing Fuzhou's history and Min culture.",
-      "address": "Fuzhou Cultural Center, Jin'an District",
+      "description": "福州の歴史と閩文化を示すコレクションを持つ地域博物館。",
+      "address": "福州文化センター、晋安区",
       "coordinates": {
         "lat": 26.0953,
         "lng": 119.2865
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "09:00-17:00（月曜休館）",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1-2時間",
       "highlights": [
-        "Min culture",
-        "Historical artifacts",
-        "Interactive exhibits",
-        "Architecture"
+        "閩文化",
+        "歴史的工芸品",
+        "インタラクティブな展示",
+        "建築"
       ],
-      "tips": "Good for rainy days. Combine with nearby cultural center.",
+      "tips": "雨の日にもおすすめ。近くの文化センターと併せて訪れるのが良いでしょう。",
       "phone": "+86 059 1 9872 4134"
     },
     {
       "id": "fuzhou-13",
       "name": "上下杭",
-      "nameEn": "Shangxia Hang",
+      "nameEn": "上行下行",
       "category": "cultural",
       "image": "/img/ext/cfca65ea6339.webp",
-      "description": "Historic commercial district with traditional shops, temples, and riverside views.",
-      "address": "Taijiang District",
+      "description": "伝統的な商店、寺院、川沿いの景色がある歴史的な商業地区",
+      "address": "台江区",
       "coordinates": {
         "lat": 26.0553,
         "lng": 119.3065
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24時間開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Historic commerce",
-        "Traditional shops",
-        "Riverside",
-        "Architecture"
+        "歴史的な商業",
+        "伝統的な商店",
+        "川沿い",
+        "建築"
       ],
-      "tips": "Best evening. Traditional atmosphere preserved.",
+      "tips": "夕方最好。伝統的な雰囲気を保つ。",
       "phone": "+86 059 1 6469 2147"
     },
     {
       "id": "fuzhou-14",
-      "name": "福州西湖公园",
-      "nameEn": "West Lake Park",
+      "name": "福州西湖公園",
+      "nameEn": "西湖公園",
       "category": "natural",
       "image": "/img/ext/f50bff55f552.webp",
-      "description": "Beautiful park around the lake with gardens, amusement rides, and food stalls.",
-      "address": "Gulou District",
+      "description": "庭園、遊戯施設、屋台がある美しい湖畔公園",
+      "address": "鼓楼区",
       "coordinates": {
         "lat": 26.0653,
         "lng": 119.2865
       },
       "openingHours": "05:30-22:30",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
-        "Amusement area",
-        "Food stalls",
-        "Lake views",
-        "Local life"
+        "遊戯エリア",
+        "屋台",
+        "湖の景色",
+        "地元の人々の生活"
       ],
-      "tips": "Popular with families. Evening dragon dance performances.",
+      "tips": "家族連れに人気。夜の舞龍パフォーマンス。",
       "phone": "+86 059 1 7642 8164"
     },
     {
       "id": "fuzhou-15",
-      "name": "琅岐岛",
-      "nameEn": "Langqi Island",
+      "name": "琅岐島",
+      "nameEn": "琅岐島",
       "category": "natural",
       "image": "/img/ext/74ef5bc26540.webp",
-      "description": "River island with beaches, seafood, and laid-back island atmosphere.",
-      "address": "Mawei District",
+      "description": "ビーチ、海鮮、リラックスした島の雰囲気を持つ川の中洲。",
+      "address": "馬尾区",
       "coordinates": {
         "lat": 26.0653,
         "lng": 119.4565
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "24時間開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "3-4時間",
       "highlights": [
-        "Island scenery",
-        "Beaches",
-        "Seafood",
-        "Quiet"
+        "島の風景",
+        "ビーチ",
+        "海産物",
+        "静か"
       ],
-      "tips": "Day trip. Fresh seafood. Less touristy.",
+      "tips": "日帰り旅行。新鮮な海鮮。観光地化されていない。",
       "phone": "+86 059 1 4350 0025"
     },
     {
       "id": "fuzhou-16",
-      "name": "福州动物园",
-      "nameEn": "Fuzhou Zoo",
+      "name": "福州動物園",
+      "nameEn": "福州動物園",
       "category": "cultural",
       "image": "/img/ext/07d68fc8c01d.webp",
-      "description": "Large zoo with diverse animals and conservation programs.",
-      "address": "Jin'an District",
+      "description": "様々な動物と保全プログラムを持つ大きな動物園",
+      "address": "晋安区",
       "coordinates": {
         "lat": 26.1353,
         "lng": 119.3165
       },
       "openingHours": "07:00-17:30",
-      "ticketPrice": "30¥",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "3-4時間",
       "highlights": [
-        "Giant panda",
-        "Rare animals",
-        "Family friendly",
-        "Nature"
+        "ジャイアントパンダ",
+        "希少動物",
+        "ファミリー向け",
+        "自然"
       ],
-      "tips": "Great for families. Morning visits best.",
+      "tips": "ファミリーに最適。朝の訪問が最佳",
       "phone": "+86 059 1 6806 4204"
     },
     {
       "id": "fuzhou-17",
-      "name": "左海公园",
-      "nameEn": "Zuohai Park",
+      "name": "左海公園",
+      "nameEn": "左海公園",
       "category": "natural",
       "image": "/img/ext/c09fcbe63c84.webp",
-      "description": "Large park with lake, gardens, and theme areas for families.",
-      "address": "Gulou District",
+      "description": "湖、庭園、家族向けテーマエリアのある大きな公園",
+      "address": "鼓楼区",
       "coordinates": {
         "lat": 26.0553,
         "lng": 119.2765
       },
       "openingHours": "06:00-22:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Large lake",
-        "Gardens",
-        "Amusement rides",
-        "Family activities"
+        "大きな湖",
+        "庭園",
+        "アトラクション",
+        "家族向けアクティビティ"
       ],
-      "tips": "Combine with West Lake. Great for families.",
+      "tips": "西湖と組み合わせると良いでしょう。家族連れに最適",
       "phone": "+86 059 1 5746 7856"
     },
     {
       "id": "fuzhou-18",
       "name": "福州大学城",
-      "nameEn": "Fuzhou University Town",
+      "nameEn": "福州大学城",
       "category": "cultural",
       "image": "/img/ext/c51a2344626b.webp",
-      "description": "Area with several universities, youthful atmosphere, and affordable dining.",
-      "address": "Fuzhou University Town, Minhou County",
+      "description": "複数の大学が集積し、若者価格で食事が楽しめるエリア",
+      "address": "福建省福州市閩侯県福州大学城",
       "coordinates": {
         "lat": 26.0453,
         "lng": 119.2265
       },
-      "openingHours": "Open to public",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "公開",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "University campuses",
-        "Youth culture",
-        "Affordable food",
-        "Libraries"
+        "大学キャンパス",
+        "ユースカルチャー",
+        "手の届きやすい食事",
+        "図書館"
       ],
-      "tips": "Great for budget travelers. Cafes and cheap eats.",
+      "tips": "予算重視の旅行者に最適。カフェや安食堂が多い",
       "phone": "+86 059 1 8840 9368"
     },
     {
       "id": "fuzhou-19",
       "name": "乌塔",
-      "nameEn": "Black Pagoda",
+      "nameEn": "黒塔",
       "category": "cultural",
       "image": "/img/ext/1e5050d84f70.webp",
-      "description": "Tang Dynasty stone pagoda, one of Fuzhou's oldest structures.",
-      "address": "Near White Pagoda, Gulou District",
+      "description": "唐代の石塔で、福州最古の建造物の一つ",
+      "address": "鼓楼区、白塔の近く",
       "coordinates": {
         "lat": 26.0653,
         "lng": 119.3065
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "30¥",
-      "recommendedVisitTime": "30 min",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "30分",
       "highlights": [
-        "Tang architecture",
-        "City views",
-        "Ancient stone",
-        "Photography"
+        "唐代の建築",
+        "街の景色",
+        "古代の石",
+        "写真"
       ],
-      "tips": "Combine with White Pagoda visit.",
+      "tips": "白塔との同時訪問をお勧めします",
       "phone": "+86 059 1 7296 7275"
     },
     {
       "id": "fuzhou-20",
-      "name": "闽江夜游",
-      "nameEn": "Min River Night Cruise",
+      "name": "閩江夜遊",
+      "nameEn": "閩江ナイトクルーズ",
       "category": "natural",
       "image": "/img/ext/66a5257eeb95.webp",
-      "description": "Night boat cruise on Min River with illuminated city skyline.",
-      "address": "Min River",
+      "description": "点灯した都市のスカイラインを見ながら、閩江を夜に船で巡航します。",
+      "address": "閩江",
       "coordinates": {
         "lat": 26.0653,
         "lng": 119.3165
       },
       "openingHours": "19:00-22:00",
       "ticketPrice": "120¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Night views",
-        "City skyline",
-        "River breeze",
-        "Photo opportunities"
+        "夜景",
+        "都市のスカイライン",
+        "川のそよ風",
+        "フォトスポット"
       ],
-      "tips": "Best night activity. Arrive early for good seats.",
+      "tips": "最高のナイトアクティビティ。良い席を確保するには早く到着してください。",
       "phone": "+86 059 1 1187 3450"
     },
     {
       "id": "fuzhou-21",
       "name": "福州海底世界",
-      "nameEn": "Fuzhou Underwater World",
+      "nameEn": "福州アンダーウォーターワールド",
       "category": "cultural",
       "image": "/img/ext/bd26b0b6e478.webp",
-      "description": "Aquarium with marine life, seal shows, and underwater tunnel.",
-      "address": "Jin'an District",
+      "description": "海洋生物、アザラシショー、水中トンネルがある水族館。",
+      "address": "晋安区",
       "coordinates": {
         "lat": 26.1353,
         "lng": 119.3165
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "120¥",
-      "recommendedVisitTime": "3 hours",
+      "recommendedVisitTime": "3時間",
       "highlights": [
-        "Underwater tunnel",
-        "Dolphin shows",
-        "Seal shows",
-        "Marine life"
+        "水中トンネル",
+        "イルカのショー",
+        "アザラシショー",
+        "海洋生物"
       ],
-      "tips": "Great for families. Check show schedule.",
+      "tips": "ファミリーに最適。ショースケジュールを確認してください。",
       "phone": "+86 059 1 3758 1784"
     },
     {
       "id": "fuzhou-22",
-      "name": "永泰云顶",
-      "nameEn": "Yongtai Cloud Top",
+      "name": "永泰雲頂",
+      "nameEn": "永泰クラウドトップ",
       "category": "natural",
       "image": "/img/ext/d9e1e34b36a1.webp",
-      "description": "Mountain scenic area with grass slopes, flower fields, and cloud sea views.",
-      "address": "永泰县 Yongtai County",
+      "description": "芝生の斜面、花畑、雲海眺望がある山岳景勝地。",
+      "address": "永泰県",
       "coordinates": {
         "lat": 25.8753,
         "lng": 118.9565
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "130¥",
-      "recommendedVisitTime": "4-5 hours",
+      "recommendedVisitTime": "4-5時間",
       "highlights": [
-        "Cloud sea",
-        "Grass slopes",
-        "Flower fields",
-        "Cable car"
+        "雲海",
+        "芝生の斜面",
+        "花畑",
+        "ケーブルカー"
       ],
-      "tips": "Day trip. Best in fine weather. Bring jacket.",
+      "tips": "日帰り旅行。晴天時が最も良い。ジャケットをお持ちください。",
       "phone": "+86 059 1 0412 0626"
     },
     {
       "id": "fuzhou-23",
-      "name": "福州烈士陵园",
-      "nameEn": "Fuzhou Martyrs Cemetery",
+      "name": "福州烈士陵園",
+      "nameEn": "福州烈士陵園",
       "category": "historical",
       "image": "/img/ext/998eb40307b9.webp",
-      "description": "Memorial to revolutionary martyrs with panoramic city views.",
-      "address": "Jin'an District",
+      "description": "革命烈士の記念碑で、眼前に広がる都市の全景が広がる",
+      "address": "晋安区",
       "coordinates": {
         "lat": 26.1053,
         "lng": 119.3065
       },
       "openingHours": "06:00-18:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "Memorial",
-        "City views",
-        "Respectful atmosphere",
-        "Gardens"
+        "記念碑",
+        "街の眺望",
+        "厳かな雰囲気",
+        "庭園"
       ],
-      "tips": "Morning visits solemn. Great city views from top.",
+      "tips": "朝の訪問は厳かで、頂上からの素晴らしい街の眺望",
       "phone": "+86 059 1 9100 3525"
     },
     {
       "id": "fuzhou-24",
-      "name": "福州开元寺",
-      "nameEn": "Kaiyuan Temple",
+      "name": "福州開元寺",
+      "nameEn": "開元寺",
       "category": "cultural",
       "image": "/img/ext/08288e954d45.webp",
-      "description": "One of Fuzhou's oldest Buddhist temples, dating to Tang Dynasty.",
-      "address": "Gulou District",
+      "description": "福州最古の仏教寺院の一つで、唐時代に遡る",
+      "address": "鼓楼区",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.3065
       },
       "openingHours": "07:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "Tang architecture",
-        "Ancient temple",
-        "Buddhist culture",
-        "Quiet"
+        "唐代の建築",
+        "古代寺院",
+        "仏教文化",
+        "静か"
       ],
-      "tips": "One of Fuzhou's oldest temples. Peaceful atmosphere.",
+      "tips": "福州最古の寺院の一つ。静かな雰囲気。",
       "phone": "+86 595 2238 3285"
     },
     {
       "id": "fuzhou-25",
-      "name": "福州茉莉花茶园",
-      "nameEn": "Fuzhou Jasmine Tea Garden",
+      "name": "福州茉莉花茶園",
+      "nameEn": "福州ジャスミン茶園",
       "category": "cultural",
       "image": "/img/ext/63b615140a06.webp",
-      "description": "Tea plantation and processing facility for famous Fuzhou jasmine tea.",
-      "address": "Liangyuan, Fuzhou",
+      "description": "有名な福州ジャスミン茶的お茶の栽培・加工施設。",
+      "address": "福州、梁園",
       "coordinates": {
         "lat": 26.0153,
         "lng": 119.2765
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "50¥ (includes tea tasting)",
-      "recommendedVisitTime": "2 hours",
+      "ticketPrice": "50元（お茶テイスティング付き）",
+      "recommendedVisitTime": "2時間",
       "highlights": [
-        "Tea plantation",
-        "Tea processing",
-        "Jasmine tea tasting",
-        "Cultural"
+        "茶園",
+        "茶葉加工",
+        "ジャスミン茶試飲",
+        "文化"
       ],
-      "tips": "Must-visit for tea lovers. Jasmine tea is famous.",
+      "tips": "お茶愛好家必訪。ジャスミン茶が有名。",
       "phone": "+86 059 1 6401 0539"
     },
     {
       "id": "three-lanes",
       "name": "三坊七巷",
-      "nameEn": "Three Lanes and Seven Alleys",
+      "nameEn": "三坊七巷",
       "category": "street",
-      "description": "中国十大历史文化名街，有大量明清古建筑。",
+      "description": "中国十大歴史文化街の一つで、明・清時代の古建築が数多く残っています。",
       "address": "福州市鼓楼区",
       "coordinates": {
         "lat": 26.08,
         "lng": 119.3
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
-        "古建築",
-        "名人家屋",
-        "軽食"
+        "古建筑",
+        "名人故居",
+        "小吃"
       ],
-      "tips": "了解福州历史。",
+      "tips": "福州の歴史を学べます。",
       "image": "/img/ext/309f30e43563.webp",
       "phone": "+86 059 1 1864 3684"
     },
     {
       "id": "yushan",
       "name": "于山",
-      "nameEn": "Yushan",
+      "nameEn": "于山",
       "category": "nature",
       "description": "福州三山の一つで、白塔と戚公祠があります。",
       "address": "福州市鼓楼区",
@@ -666,21 +666,21 @@
         "lat": 26.08,
         "lng": 119.3
       },
-      "openingHours": "終日",
+      "openingHours": "全天",
       "ticketPrice": "無料",
       "recommendedVisitTime": "1.5時間",
       "highlights": [
         "白塔",
         "戚公祠"
       ],
-      "tips": "福州の歴史を学びましょう。",
+      "tips": "福州の歴史を学べます。",
       "image": "/img/ext/c981cfc25201.webp",
       "phone": "+86 059 1 4698 3576"
     },
     {
       "id": "wushan",
       "name": "乌山",
-      "nameEn": "Wushan",
+      "nameEn": "烏山",
       "category": "nature",
       "description": "福州三山の一つで、烏塔と摩崖石刻があります。",
       "address": "福州市鼓楼区",
@@ -688,35 +688,35 @@
         "lat": 26.08,
         "lng": 119.3
       },
-      "openingHours": "終日",
+      "openingHours": "全天",
       "ticketPrice": "無料",
       "recommendedVisitTime": "1.5時間",
       "highlights": [
-        "烏塔",
+        "乌塔",
         "摩崖石刻"
       ],
-      "tips": "福州の文化を理解する。",
+      "tips": "福州の文化を学べます。",
       "image": "/img/ext/964003d607ed.webp",
       "phone": "+86 059 1 2515 7393"
     },
     {
       "id": "pingshan",
       "name": "屏山",
-      "nameEn": "Pingshan",
+      "nameEn": "平山",
       "category": "nature",
-      "description": "福州三山の一つで、鎮海楼がある。",
+      "description": "福州三山の一つで、鎮海楼があります。",
       "address": "福州市鼓楼区",
       "coordinates": {
         "lat": 26.1,
         "lng": 119.3
       },
-      "openingHours": "終日",
+      "openingHours": "全天",
       "ticketPrice": "無料",
       "recommendedVisitTime": "1時間",
       "highlights": [
-        "鎮海楼"
+        "镇海楼"
       ],
-      "tips": "高いところから景色を眺める。",
+      "tips": "高台に登って遠くを眺められます。",
       "image": "/img/ext/6f510d67b9cb.webp",
       "phone": "+86 059 1 7511 8181"
     },
@@ -725,73 +725,73 @@
       "name": "福建博物院",
       "nameEn": "福建省博物館",
       "category": "museum",
-      "description": "展示福建历史文化的博物馆。",
+      "description": "展示福建歴史文化の博物館。",
       "address": "福州市鼓楼区",
       "coordinates": {
         "lat": 26.08,
         "lng": 119.3
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
         "福建文化",
         "历史"
       ],
-      "tips": "了解福建文化。",
+      "tips": "福建の文化を学べます。",
       "image": "/img/ext/6dc1f2dbb576.webp",
       "phone": "+86 059 1 4046 6515"
     },
     {
       "id": "west-lake-park",
-      "name": "西湖公园",
-      "nameEn": "West Lake Park",
+      "name": "西湖公園",
+      "nameEn": "西湖公園",
       "category": "park",
-      "description": "福州最古老的公园，有1700多年历史。",
+      "description": "福州で最も古い公園で、1700年以上の歴史があります。",
       "address": "福州市鼓楼区",
       "coordinates": {
         "lat": 26.08,
         "lng": 119.28
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
         "湖泊",
-        "园林"
+        "庭園"
       ],
-      "tips": "休闲好去处。",
+      "tips": "くつろぎに最適な場所です。",
       "image": "/img/ext/579ed98a3f6f.webp",
       "phone": "+86 059 1 6788 5115"
     },
     {
       "id": "mawei-port",
-      "name": "马尾船政",
-      "nameEn": "Mawei Shipyard",
+      "name": "馬尾船政",
+      "nameEn": "馬尾造船所",
       "category": "landmark",
-      "description": "中国近代海军的摇篮，有船政文化博物馆。",
-      "address": "福州市马尾区",
+      "description": "中国近代海軍の揺籃であり、船政文化博物館がある。",
+      "address": "福州市馬尾区",
       "coordinates": {
         "lat": 25.98,
         "lng": 119.45
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
         "船政文化",
         "海军历史"
       ],
-      "tips": "了解近代海军。",
+      "tips": "近代海軍について学べます。",
       "image": "/img/ext/c3274355fd82.webp",
       "phone": "+86 059 1 5255 0809"
     },
     {
       "id": "fuzhou-hot-spring",
       "name": "福州温泉",
-      "nameEn": "Fuzhou Hot Spring",
+      "nameEn": "福州温泉",
       "category": "nature",
-      "description": "中国三大温泉城市之一，有丰富的温泉资源。",
+      "description": "中国三大温泉都市の一つで、豊富な温泉資源がある。",
       "address": "福州市鼓楼区",
       "coordinates": {
         "lat": 26.08,
@@ -809,96 +809,96 @@
     },
     {
       "id": "kaiyuan-temple",
-      "name": "开元寺",
-      "nameEn": "Kaiyuan Temple",
+      "name": "開元寺",
+      "nameEn": "開元寺",
       "category": "temple",
-      "description": "福州最古老的佛教寺院，始建于南朝。",
+      "description": "福州最古の仏教寺院で、南朝に創建されました。",
       "address": "福州市鼓楼区",
       "coordinates": {
         "lat": 26.08,
         "lng": 119.3
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
         "古寺",
-        "铁佛"
+        "鉄仏"
       ],
-      "tips": "了解佛教文化。",
+      "tips": "仏教文化を学べます。",
       "image": "/img/ext/29817c07c733.webp",
       "phone": "+86 595 2238 3285"
     },
     {
       "id": "fujian-customs",
-      "name": "闽海关",
-      "nameEn": "Min Customs",
+      "name": "閩海関",
+      "nameEn": "閩海関",
       "category": "landmark",
-      "description": "中国最早的海关之一。",
+      "description": "中国最古の税関の一つ。",
       "address": "福州市台江区",
       "coordinates": {
         "lat": 26.05,
         "lng": 119.3
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "30分钟",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "30分",
       "highlights": [
-        "海关历史"
+        "税関の歴史"
       ],
-      "tips": "了解福州贸易史。",
+      "tips": "福州の貿易史を理解する。",
       "image": "/img/ext/aaf8d7df2768.webp",
       "phone": "+86 059 1 4233 4878"
     },
     {
       "id": "fuzhou-street",
       "name": "南后街",
-      "nameEn": "Nanhou Street",
+      "nameEn": "南後街",
       "category": "street",
-      "description": "三坊七巷的主街，有各种小吃和特产。",
+      "description": "三坊七巷の目抜き通りで、各種の軽食や特産品があります。",
       "address": "福州市鼓楼区",
       "coordinates": {
         "lat": 26.08,
         "lng": 119.3
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
         "小吃",
         "特产"
       ],
-      "tips": "品尝福州小吃。",
+      "tips": "福州の軽食を味わえます。",
       "image": "/img/ext/a91b35dfab30.webp",
       "phone": "+86 059 1 2165 3195"
     },
     {
       "id": "chating-park",
-      "name": "茶亭公园",
-      "nameEn": "Chating Park",
+      "name": "茶亭公園",
+      "nameEn": "茶亭公園",
       "category": "park",
-      "description": "福州市中心的公园，有茶文化展示。",
+      "description": "福州市中心部にある公園で、茶文化の展示があります。",
       "address": "福州市台江区",
       "coordinates": {
         "lat": 26.05,
         "lng": 119.3
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
         "茶文化"
       ],
-      "tips": "了解福州茶文化。",
+      "tips": "福州の茶文化を学べます。",
       "image": "/img/ext/f16110dc58ab.webp",
       "phone": "+86 059 1 7464 9616"
     },
     {
       "id": "fuzhou-zoo",
-      "name": "福州动物园",
-      "nameEn": "Fuzhou Zoo",
+      "name": "福州動物園",
+      "nameEn": "福州動物園",
       "category": "nature",
-      "description": "福州最大的动物园。",
+      "description": "福州最大の動物園。",
       "address": "福州市晋安区",
       "coordinates": {
         "lat": 26.1,
@@ -910,102 +910,102 @@
       "highlights": [
         "动物"
       ],
-      "tips": "适合亲子游。",
+      "tips": "家族連れに最適。",
       "image": "/img/ext/593d3122d14b.webp",
       "phone": "+86 059 1 1314 9176"
     },
     {
       "id": "minjiang-river",
-      "name": "闽江",
-      "nameEn": "Minjiang River",
+      "name": "閩江",
+      "nameEn": "閩江",
       "category": "nature",
-      "description": "福州的母亲河，穿城而过。",
+      "description": "福州の母なる川で、市街を貫いて流れる。",
       "address": "福州市",
       "coordinates": {
         "lat": 26.05,
         "lng": 119.3
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "河流风光"
+        "河川の風景"
       ],
-      "tips": "傍晚散步。",
+      "tips": "夕方の散歩に最適です。",
       "image": "/img/ext/b557760624b0.webp",
       "phone": "+86 059 1 2604 0860"
     },
     {
       "id": "fuzhou-university",
       "name": "福州大学",
-      "nameEn": "Fuzhou University",
+      "nameEn": "福州大学",
       "category": "landmark",
-      "description": "福州最著名的高等学府之一。",
-      "address": "福州市闽侯县",
+      "description": "福州で最も有名な高等教育機関の一つです。",
+      "address": "福州市閩侯県",
       "coordinates": {
         "lat": 26.08,
         "lng": 119.2
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "校园风光"
+        "キャンパス風景"
       ],
-      "tips": "了解福州教育。",
+      "tips": "福州の教育について学べます。",
       "image": "/img/ext/e72a766d86d1.webp",
       "phone": "+86 059 1 8925 0392"
     },
     {
       "id": "fuzhou-night",
       "name": "福州夜景",
-      "nameEn": "Fuzhou Night View",
+      "nameEn": "福州の夜景",
       "category": "landmark",
-      "description": "闽江两岸的夜景灯光秀。",
+      "description": "閩江両岸の夜景ライトショー。",
       "address": "福州市",
       "coordinates": {
         "lat": 26.05,
         "lng": 119.3
       },
-      "openingHours": "夜间",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "openingHours": "夜間",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "灯光秀",
+        "ライトショー",
         "夜景"
       ],
-      "tips": "夏季夜间最美。",
+      "tips": "夏の夜が最も美しい。",
       "image": "/img/ext/88b3e14de916.webp",
       "phone": "+86 059 1 8869 3484"
     },
     {
       "id": "fuzhou-tea",
       "name": "茉莉花茶",
-      "nameEn": "Jasmine Tea",
+      "nameEn": "ジャスミン茶",
       "category": "street",
-      "description": "福州特产茉莉花茶，有千年历史。",
+      "description": "福州特産のジャスミン茶で、千年以上の歴史があります。",
       "address": "福州市",
       "coordinates": {
         "lat": 26.08,
         "lng": 119.3
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
         "茉莉花茶",
         "茶文化"
       ],
-      "tips": "品尝福州茶。",
+      "tips": "福州の茶を味わえます。",
       "image": "/img/ext/c8c74e71183e.webp",
       "phone": "+86 059 1 3613 7296"
     },
     {
       "id": "fuzhou-snack",
       "name": "福州小吃",
-      "nameEn": "Fuzhou Snacks",
+      "nameEn": "福州スナック",
       "category": "street",
-      "description": "福州传统小吃，有鱼丸、肉燕、光饼等。",
+      "description": "福州の伝統的な小吃で、魚丸、肉燕、光餅などがある。",
       "address": "福州市",
       "coordinates": {
         "lat": 26.08,
@@ -1013,166 +1013,166 @@
       },
       "openingHours": "全天",
       "ticketPrice": "人均30元",
-      "recommendedVisitTime": "1小时",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "鱼丸",
+        "魚丸",
         "肉燕",
         "光饼"
       ],
-      "tips": "品尝福州小吃。",
+      "tips": "福州の軽食を味わえます。",
       "image": "/img/ext/62f97dacfb03.webp",
       "phone": "+86 059 1 4245 9611"
     },
     {
       "id": "fuzhou-temple",
-      "name": "华林寺",
-      "nameEn": "Hualin Temple",
+      "name": "華林寺",
+      "nameEn": "華林寺",
       "category": "temple",
-      "description": "福州最古老的木结构建筑，有1000多年历史。",
+      "description": "福州で最も古い木造建築で、1000年以上の歴史がある。",
       "address": "福州市鼓楼区",
       "coordinates": {
         "lat": 26.08,
         "lng": 119.3
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
         "古建筑",
         "佛教文化"
       ],
-      "tips": "了解福州宗教。",
+      "tips": "福州の宗教について学べます。",
       "image": "/img/ext/4b7d98e8743f.webp",
       "phone": "+86 059 1 2117 0612"
     },
     {
       "id": "fuzhou-park",
-      "name": "左海公园",
-      "nameEn": "Zuohai Park",
+      "name": "左海公園",
+      "nameEn": "左海公園",
       "category": "park",
-      "description": "福州最大的公园之一，有湖泊和花园。",
+      "description": "福州最大の公園の一つで、湖と庭園があります。",
       "address": "福州市鼓楼区",
       "coordinates": {
         "lat": 26.1,
         "lng": 119.28
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
         "湖泊",
-        "花园"
+        "花園"
       ],
-      "tips": "休闲好去处。",
+      "tips": "くつろぎに最適な場所です。",
       "image": "/img/ext/b6ac81297eea.webp",
       "phone": "+86 059 1 3850 1829"
     },
     {
       "id": "fuzhou-museum",
-      "name": "福州市博物馆",
-      "nameEn": "Fuzhou Municipal Museum",
+      "name": "福州市博物館",
+      "nameEn": "福州市博物館",
       "category": "museum",
-      "description": "展示福州历史的博物馆。",
+      "description": "福州の歴史を展示する博物館。",
       "address": "福州市鼓楼区",
       "coordinates": {
         "lat": 26.08,
         "lng": 119.3
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
         "福州历史"
       ],
-      "tips": "了解福州文化。",
+      "tips": "福州の文化を学べます。",
       "image": "/img/ext/c95f1ec618c2.webp",
       "phone": "+86 059 1 7858 2341"
     },
     {
       "id": "fuzhou-bridge",
       "name": "解放大桥",
-      "nameEn": "Jiefang Bridge",
+      "nameEn": "解放橋",
       "category": "landmark",
-      "description": "横跨闽江的大桥，是福州的标志之一。",
+      "description": "閩江に架かる大橋で、福州のシンボルの一つ。",
       "address": "福州市台江区",
       "coordinates": {
         "lat": 26.05,
         "lng": 119.3
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "30分钟",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "30分",
       "highlights": [
-        "闽江",
+        "閩江",
         "大桥"
       ],
-      "tips": "看闽江风光。",
+      "tips": "閩江の景色を楽しむ。",
       "image": "/img/ext/f19f85dd1a0e.webp",
       "phone": "+86 059 1 2866 6780"
     },
     {
       "id": "fuzhou-bay",
       "name": "罗源湾",
-      "nameEn": "Luoyuan Bay",
+      "nameEn": "羅源湾",
       "category": "nature",
-      "description": "福州北部的海湾，有美丽的海滩。",
+      "description": "福州北部の湾で、美しいビーチがある。",
       "address": "福州市罗源县",
       "coordinates": {
         "lat": 26.48,
         "lng": 119.55
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
+      "ticketPrice": "無料",
       "recommendedVisitTime": "半天",
       "highlights": [
         "海滩",
         "海湾"
       ],
-      "tips": "夏季最佳。",
+      "tips": "夏がベストシーズンです。",
       "image": "/img/ext/d44ea66e09aa.webp",
       "phone": "+86 059 1 2522 4814"
     },
     {
       "id": "fuzhou-mountain",
       "name": "鼓山",
-      "nameEn": "Gushan",
+      "nameEn": "鼓山",
       "category": "nature",
-      "description": "福州最著名的山，有涌泉寺和摩崖石刻。",
+      "description": "福州で最も有名な山で、涌泉寺や摩崖石刻があります。",
       "address": "福州市晋安区",
       "coordinates": {
         "lat": 26.08,
         "lng": 119.37
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
+      "ticketPrice": "無料",
       "recommendedVisitTime": "半天",
       "highlights": [
         "涌泉寺",
         "摩崖石刻"
       ],
-      "tips": "登高望远。",
+      "tips": "高台に登って遠くを眺められます。",
       "image": "/img/ext/4acc03305258.webp",
       "phone": "+86 059 1 6172 8970"
     },
     {
       "id": "fuzhou-hotspring",
-      "name": "温泉公园",
-      "nameEn": "Hot Spring Park",
+      "name": "温泉公園",
+      "nameEn": "温泉公園",
       "category": "park",
-      "description": "以温泉为主题的公园。",
+      "description": "温泉をテーマにした公園。",
       "address": "福州市鼓楼区",
       "coordinates": {
         "lat": 26.08,
         "lng": 119.3
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
         "温泉",
-        "公园"
+        "公園"
       ],
-      "tips": "了解福州温泉。",
+      "tips": "福州の温泉について学べます。",
       "image": "/img/ext/bf99cae8fce5.webp",
       "phone": "+86 059 1 2245 2705"
     }
@@ -1180,62 +1180,62 @@
   "restaurants": [
     {
       "id": "fuzhou-1",
-      "name": "聚春园",
-      "nameEn": "Juchun Garden",
-      "type": "blackpearl",
+      "name": "聚春園",
+      "nameEn": "聚春園",
+      "type": "黒真珠",
       "diamond": 1,
-      "cuisine": "Fujian",
+      "cuisine": "福建料理",
       "avgPrice": 250,
       "rating": 4.8,
-      "address": "7 Yang桥 Street, Gulou District",
+      "address": "鼓楼区楊橋通り7号",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
       "phone": "+86 591 8753 2589",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "One-diamond Black Pearl restaurant specializing in authentic Fujian cuisine with imperial heritage.",
+      "description": "一味ダイヤモンドの黒真珠レストランで、皇帝の伝統を継承した本格的な福建料理を提供いたします。",
       "dishHighlights": [
-        "Buddha jumps over wall",
-        "Drunken prawns",
-        "Oyster omelette",
-        "Fujian cuisine"
+        "佛跳墙（ブッダ・ジャンプス・オバー・ウォール）",
+        "醉蝦（シュイシャ）",
+        "牡蠣の卵焼き",
+        "福建料理"
       ],
       "tags": [
-        "fine-dining",
-        "fujian-cuisine",
-        "luxury",
-        "special-occasion"
+        "高級レストラン",
+        "福建料理",
+        "奢侈",
+        "特別な機会"
       ],
       "imageUrl": "/img/ext/e924f66c48c8.webp"
     },
     {
       "id": "fuzhou-2",
-      "name": "福州鱼丸",
-      "nameEn": "Fuzhou Fish Balls",
-      "type": "local",
-      "cuisine": "Fuzhou Snacks",
+      "name": "福州魚丸（フージョウユーワン）",
+      "nameEn": "福州魚丸子",
+      "type": "ローカル",
+      "cuisine": "福州スナック",
       "avgPrice": 30,
       "rating": 4.8,
-      "address": "Various locations including Three Lanes",
+      "address": "三坊七巷含む様々な場所",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
       "hours": "07:00-20:00",
-      "description": "Iconic Fuzhou snack - tender fish balls in rich fish broth.",
+      "description": "福州の代表的軽食 - 旨味豊かな魚出汁柔らかな魚丸子。",
       "dishHighlights": [
-        "Fish balls",
-        "Fish broth",
-        "Ponzu sauce",
-        "Elbow jelly"
+        "魚丸子",
+        "魚出汁",
+        "ポン酢",
+        "肘子ゼリー"
       ],
       "tags": [
-        "local",
-        "famous",
-        "snacks",
-        "must-try",
-        "budget"
+        "ローカル",
+        "有名",
+        "軽食",
+        "必食",
+        "格安"
       ],
       "imageUrl": "/img/ext/0035c7b9518d.webp",
       "phone": "+86 059 1 9217 4588"
@@ -1243,30 +1243,30 @@
     {
       "id": "fuzhou-3",
       "name": "肉燕",
-      "nameEn": "Rou Yan",
-      "type": "local",
-      "cuisine": "Fuzhou Snacks",
+      "nameEn": "肉燕（ロウエン）",
+      "type": "ローカル",
+      "cuisine": "福州スナック",
       "avgPrice": 25,
       "rating": 4.7,
-      "address": "Near Three Lanes",
+      "address": "三坊七巷付近",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
       "hours": "07:00-19:00",
-      "description": "Famous Fuzhou snack - meat dumplings with translucent wrapper.",
+      "description": "福州の有名な軽食 - 透き通った皮の肉餃子。",
       "dishHighlights": [
-        "Meat dumplings",
-        "Pork filling",
-        "Delicate wrapper",
-        "Soup"
+        "肉餃子",
+        "豚餡",
+        "繊細な皮",
+        "出汁"
       ],
       "tags": [
-        "local",
-        "famous",
-        "snacks",
-        "must-try",
-        "budget"
+        "ローカル",
+        "有名",
+        "軽食",
+        "必食",
+        "格安"
       ],
       "imageUrl": "/img/ext/05d6b87d4f46.webp",
       "phone": "+86 059 1 6291 7554"
@@ -1274,60 +1274,60 @@
     {
       "id": "fuzhou-4",
       "name": "佛跳墙",
-      "nameEn": "Buddha Jumps Over Wall",
-      "type": "local",
-      "cuisine": "Fujian",
+      "nameEn": "佛跳墙（ブッダ・ジャンプス・オバー・ウォール）",
+      "type": "ローカル",
+      "cuisine": "福建料理",
       "avgPrice": 200,
       "rating": 4.7,
-      "address": "聚春园 etc.",
+      "address": "聚春園他",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Legendary Fujian dish - rich stew with seafood, chicken, and herbs.",
+      "description": "福建の伝説料理 - 海鮮、鶏肉、ハーブを使用した旨味豊かな煮込み料理。",
       "dishHighlights": [
-        "Buddha jumps over wall",
-        "Shark fin",
-        "Sea cucumber",
-        "Airlift ham"
+        "佛跳墙（ブッダ・ジャンプス・オバー・ウォール）",
+        "フカヒレ",
+        "ナマコ",
+        "エーリフトハム"
       ],
       "tags": [
-        "local",
-        "fujian-cuisine",
-        "famous",
-        "luxury",
-        "must-try"
+        "ローカル",
+        "福建料理",
+        "有名",
+        "奢侈",
+        "必食"
       ],
       "imageUrl": "/img/ext/32558b89af09.webp",
       "phone": "+86 059 1 3816 4312"
     },
     {
       "id": "fuzhou-5",
-      "name": "福州海鲜",
-      "nameEn": "Fuzhou Seafood",
-      "type": "local",
-      "cuisine": "Fujian Seafood",
+      "name": "福州海鮮",
+      "nameEn": "福州シーフード",
+      "type": "ローカル",
+      "cuisine": "福建シーフード",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "Seafood Street, Taijiang",
+      "address": "台江区シーフード通り",
       "coordinates": {
         "lat": 26.0553,
         "lng": 119.3065
       },
       "hours": "10:00-23:00",
-      "description": "Fresh seafood restaurant near fishing port with daily catches.",
+      "description": "漁港近くの新鮮なシーフードレストラン。毎日水揚げされる魚介類を提供しています。",
       "dishHighlights": [
-        "Steamed fish",
-        "Fresh prawns",
-        "Crab",
-        "Clams"
+        "蒸魚",
+        "新鮮なエビ",
+        "カニ",
+        "ハマグリ"
       ],
       "tags": [
-        "local",
-        "seafood",
-        "fresh",
-        "popular"
+        "ローカル",
+        "シーフード",
+        "新鮮",
+        "人気"
       ],
       "imageUrl": "/img/ext/d0b5c3bc0cb6.webp",
       "phone": "+86 059 1 6654 8171"
@@ -1335,30 +1335,30 @@
     {
       "id": "fuzhou-6",
       "name": "福州捞化",
-      "nameEn": "Fuzhou Noodles",
-      "type": "local",
-      "cuisine": "Fuzhou Noodles",
+      "nameEn": "福州麺",
+      "type": "ローカル",
+      "cuisine": "福州麺",
       "avgPrice": 25,
       "rating": 4.6,
-      "address": "Various locations",
+      "address": "各地",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
       "hours": "06:00-14:00",
-      "description": "Local breakfast - thin rice noodles in savory broth with various toppings.",
+      "description": "地元の朝食 - 薄い米粉麺をさまざまなトッピングと一緒に旨味のあるスープでいただきます。",
       "dishHighlights": [
-        "Rice noodles",
-        "Pork organs",
-        "Seaweed",
-        "Flour rolls"
+        "米粉",
+        "豚の内臓",
+        "海藻",
+        "小麦粉ロール"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "breakfast",
-        "budget",
-        "must-try"
+        "ローカル",
+        "麺類",
+        "朝ごはん",
+        "格安",
+        "必食"
       ],
       "imageUrl": "/img/ext/75cc963484f4.webp",
       "phone": "+86 059 1 9858 3663"
@@ -1366,29 +1366,29 @@
     {
       "id": "fuzhou-7",
       "name": "福州炖罐",
-      "nameEn": "Fuzhou Steamed Pot",
-      "type": "local",
-      "cuisine": "Fuzhou",
+      "nameEn": "福州蒸し鍋",
+      "type": "ローカル",
+      "cuisine": "福州料理",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "Various locations",
+      "address": "各地",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
       "hours": "10:00-22:00",
-      "description": "Traditional Fuzhou steamed soup pots with various ingredients.",
+      "description": "伝統的な福州の蒸しスープ鍋。さまざまな具材が入っています。",
       "dishHighlights": [
-        "Steamed soup",
-        "Herbal chicken",
-        "Pork ribs",
-        "Seafood"
+        "蒸しスープ",
+        "薬膳鶏",
+        "豚スペアリブ",
+        "海産物"
       ],
       "tags": [
-        "local",
-        "traditional",
-        "soup",
-        "healthy"
+        "ローカル",
+        "伝統的",
+        "スープ",
+        "健康"
       ],
       "imageUrl": "/img/ext/a19a669656f6.webp",
       "phone": "+86 059 1 4974 1386"
@@ -1396,59 +1396,59 @@
     {
       "id": "fuzhou-8",
       "name": "沙茶面",
-      "nameEn": "Satay Noodles",
-      "type": "local",
-      "cuisine": "Fujian",
+      "nameEn": "サテヌードル",
+      "type": "ローカル",
+      "cuisine": "福建料理",
       "avgPrice": 30,
       "rating": 4.6,
-      "address": "Near West Lake",
+      "address": "西湖付近",
       "coordinates": {
         "lat": 26.0653,
         "lng": 119.2865
       },
       "hours": "07:00-20:00",
-      "description": "Popular noodle dish with satay sauce, a Fuzhou breakfast staple.",
+      "description": "サテソースを使った人気の麺料理で、福州の朝食には欠かせない一品です。",
       "dishHighlights": [
-        "Satay noodles",
-        "Tofu skin",
-        "Pork belly",
-        "Vegetables"
+        "サテヌードル",
+        "湯葉",
+        "豚バラ肉",
+        "野菜"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "breakfast",
-        "budget"
+        "ローカル",
+        "麺類",
+        "朝ごはん",
+        "格安"
       ],
       "imageUrl": "/img/ext/47aacbf2c083.webp",
       "phone": "+86 059 1 4826 8954"
     },
     {
       "id": "fuzhou-9",
-      "name": "蚵仔煎",
-      "nameEn": "Oyster Omelette",
-      "type": "local",
-      "cuisine": "Fujian",
+      "name": "蚵仔煎（カキのお好み焼き）",
+      "nameEn": "牡蠣オムレツ",
+      "type": "ローカル",
+      "cuisine": "福建料理",
       "avgPrice": 35,
       "rating": 4.7,
-      "address": "Night markets",
+      "address": "ナイトマーケット",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
       "hours": "17:00-02:00",
-      "description": "Famous Fujian street food - crispy omelette with fresh oysters.",
+      "description": "有名な福建のストリートフード - 新鮮な牡蠣を使ったカリカリのオムレツ。",
       "dishHighlights": [
-        "Oyster omelette",
-        "Sweet sauce",
-        "Crispy edge",
-        "Fresh oysters"
+        "牡蠣の卵焼き",
+        "甘いソース",
+        "カリカリのエッジ",
+        "新鮮な牡蠣"
       ],
       "tags": [
-        "local",
-        "famous",
-        "street-food",
-        "must-try"
+        "ローカル",
+        "有名",
+        "屋台料理",
+        "必食"
       ],
       "imageUrl": "/img/ext/db4d76d3e916.webp",
       "phone": "+86 059 1 3933 1595"
@@ -1456,29 +1456,29 @@
     {
       "id": "fuzhou-10",
       "name": "鼎泰丰",
-      "nameEn": "Din Tai Fung",
-      "type": "chain",
-      "cuisine": "Taiwanese",
+      "nameEn": "ディンタイフォン",
+      "type": "チェーン店",
+      "cuisine": "台湾料理",
       "avgPrice": 120,
       "rating": 4.6,
-      "address": "Emax Mall, Jin'an",
+      "address": "金山エマックスモール",
       "coordinates": {
         "lat": 26.0953,
         "lng": 119.2965
       },
       "hours": "10:00-21:30",
-      "description": "World-famous dumpling chain with excellent xiaolongbao.",
+      "description": "世界的に有名な餃子チェーンで、絶品の小籠包が楽しめます。",
       "dishHighlights": [
-        "Xiaolongbao",
-        "Fried rice",
-        "Noodles",
-        "Desserts"
+        "小籠包",
+        "チャーハン",
+        "ラーメン",
+        "デザート"
       ],
       "tags": [
-        "chain",
-        "taiwanese",
-        "dumplings",
-        "quality"
+        "チェーン店",
+        "台湾料理",
+        "餃子",
+        "品質"
       ],
       "imageUrl": "/img/ext/f38720936e10.webp",
       "phone": "+86 059 1 9891 9379"
@@ -1486,59 +1486,59 @@
     {
       "id": "fuzhou-11",
       "name": "海底捞",
-      "nameEn": "Haidilao Hotpot",
-      "type": "chain",
-      "cuisine": "Hotpot",
+      "nameEn": "海底撈火鍋",
+      "type": "チェーン店",
+      "cuisine": "火鍋",
       "avgPrice": 150,
       "rating": 4.8,
-      "address": "Wangcheng Plaza, Jin'an",
+      "address": "金山ワンシンチェプラザ",
       "coordinates": {
         "lat": 26.0953,
         "lng": 119.2865
       },
       "phone": "+86 591 8808 9999",
-      "hours": "24 hours",
-      "description": "Famous hotpot chain with exceptional service.",
+      "hours": "24時間営業",
+      "description": "有名な火鍋チェーンで、素晴らしいサービスが受けられます。",
       "dishHighlights": [
-        "Spicy broth",
-        "Fresh beef",
-        "Hand-pulled noodles",
-        "Free dessert"
+        "辛い鍋底",
+        "新鮮な牛肉",
+        "手引ラーメン",
+        "無料のデザート"
       ],
       "tags": [
-        "chain",
-        "hotpot",
-        "service",
-        "late-night"
+        "チェーン店",
+        "火鍋",
+        "サービス",
+        "深夜"
       ],
       "imageUrl": "/img/ext/1beaa4ec0924.webp"
     },
     {
       "id": "fuzhou-12",
-      "name": "永和鱼丸",
-      "nameEn": "Yonghe Fish Balls",
-      "type": "local",
-      "cuisine": "Fuzhou Snacks",
+      "name": "永和魚丸（ヨンホー魚団子）",
+      "nameEn": "永和魚丸",
+      "type": "ローカル",
+      "cuisine": "福州スナック",
       "avgPrice": 30,
       "rating": 4.7,
-      "address": "Multiple locations",
+      "address": "市内複数箇所",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
       "hours": "07:00-20:00",
-      "description": "Famous chain for fish balls with authentic Fuzhou taste.",
+      "description": "福州の本格的な味わいの魚丸で知られる有名なチェーン店。",
       "dishHighlights": [
-        "Fish balls",
-        "Fish soup",
-        "Shrimp wontons",
-        "Small wontons"
+        "魚丸子",
+        "魚汁",
+        "エビワンタン",
+        "小ワンタン"
       ],
       "tags": [
-        "local",
-        "famous",
-        "snacks",
-        "chain"
+        "ローカル",
+        "有名",
+        "軽食",
+        "チェーン店"
       ],
       "imageUrl": "/img/ext/1b3180783f6a.webp",
       "phone": "+86 059 1 5761 3294"
@@ -1546,29 +1546,29 @@
     {
       "id": "fuzhou-13",
       "name": "老福州",
-      "nameEn": "Old Fuzhou",
-      "type": "local",
-      "cuisine": "Fuzhou",
+      "nameEn": "古福州",
+      "type": "ローカル",
+      "cuisine": "福州料理",
       "avgPrice": 100,
       "rating": 4.6,
-      "address": "Three Lanes area",
+      "address": "三坊七巷エリア",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
       "hours": "10:30-21:30",
-      "description": "Restaurant serving traditional Fuzhou dishes in historic setting.",
+      "description": "歴史的な環境で伝統的な福州料理を提供するレストラン。",
       "dishHighlights": [
-        "Traditional dishes",
-        "Lychee pork",
-        "Drunken chicken",
-        "Seasonal menu"
+        "伝統的な料理",
+        "ライチポーク",
+        "酔詰め鶏",
+        "季節メニュー"
       ],
       "tags": [
-        "local",
-        "traditional",
-        "historic",
-        "reliable"
+        "ローカル",
+        "伝統的",
+        "歴史的",
+        "信頼できる"
       ],
       "imageUrl": "/img/ext/c9fcd8b95c6d.webp",
       "phone": "+86 059 1 9368 5789"
@@ -1576,89 +1576,89 @@
     {
       "id": "fuzhou-14",
       "name": "达道牛肉",
-      "nameEn": "Dadao Beef",
-      "type": "local",
-      "cuisine": "Fuzhou",
+      "nameEn": "大道牛肉",
+      "type": "ローカル",
+      "cuisine": "福州料理",
       "avgPrice": 60,
       "rating": 4.6,
-      "address": "Da Dao Street",
+      "address": "大道通り",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
       "hours": "07:00-20:00",
-      "description": "Famous for beef dishes, especially beef offal soup.",
+      "description": "牛肉料理、特に牛モツスープで有名です。",
       "dishHighlights": [
-        "Beef offal soup",
-        "Braised beef",
-        "Beef noodles",
-        "Rice with beef"
+        "牛モツスープ",
+        "煮込み牛肉",
+        "牛肉麺",
+        "牛肉入りご飯"
       ],
       "tags": [
-        "local",
-        "famous",
-        "beef",
-        "breakfast"
+        "ローカル",
+        "有名",
+        "牛肉",
+        "朝ごはん"
       ],
       "imageUrl": "/img/ext/70f1ed58065d.webp",
       "phone": "+86 059 1 4142 0701"
     },
     {
       "id": "fuzhou-15",
-      "name": "韩式料理",
-      "nameEn": "Korean Restaurant",
-      "type": "local",
-      "cuisine": "Korean",
+      "name": "韓国料理",
+      "nameEn": "韓国料理店",
+      "type": "ローカル",
+      "cuisine": "韓国料理",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "University Town",
+      "address": "大学都市",
       "coordinates": {
         "lat": 26.0453,
         "lng": 119.2265
       },
       "hours": "11:00-23:00",
-      "description": "Korean restaurant near universities with authentic food.",
+      "description": "大学近くにある本格的な韓国料理店。",
       "dishHighlights": [
-        "Korean BBQ",
-        "Kimchi jjigae",
-        "Bibimbap",
-        "Korean fried chicken"
+        "韓国焼肉",
+        "キムチチゲ",
+        "ビビンバ",
+        "韓国風フライドチキン"
       ],
       "tags": [
-        "local",
-        "korean",
-        "authentic",
-        "value"
+        "ローカル",
+        "韓国",
+        "本場",
+        "コストパフォーマンス"
       ],
       "imageUrl": "/img/ext/8d89c015103d.webp",
       "phone": "+86 059 1 3761 1518"
     },
     {
       "id": "fuzhou-16",
-      "name": "红糖馒头",
-      "nameEn": "Brown Sugar Steamed Buns",
-      "type": "local",
-      "cuisine": "Fuzhou Snacks",
+      "name": "紅糖饅頭（黒糖まんじゅう）",
+      "nameEn": "黒糖蒸しパン",
+      "type": "ローカル",
+      "cuisine": "福州スナック",
       "avgPrice": 10,
       "rating": 4.5,
-      "address": "Various locations",
+      "address": "各地",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
       "hours": "06:00-12:00",
-      "description": "Popular breakfast snack - fluffy steamed buns with brown sugar.",
+      "description": "人気の朝食スナック - ふわふわの黒糖蒸しパン。",
       "dishHighlights": [
-        "Brown sugar buns",
-        "Steamed fresh",
-        "Sweet",
-        "Quick breakfast"
+        "黒糖蒸しパン",
+        "蒸し立て",
+        "甘い",
+        "クイック朝食"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "breakfast",
-        "budget"
+        "ローカル",
+        "軽食",
+        "朝ごはん",
+        "格安"
       ],
       "imageUrl": "/img/ext/ff1d05539a86.webp",
       "phone": "+86 059 1 6619 7410"
@@ -1666,60 +1666,60 @@
     {
       "id": "fuzhou-17",
       "name": "福州粥",
-      "nameEn": "Fuzhou Congee",
-      "type": "local",
-      "cuisine": "Fuzhou Breakfast",
+      "nameEn": "福州粥",
+      "type": "ローカル",
+      "cuisine": "福州朝食",
       "avgPrice": 20,
       "rating": 4.5,
-      "address": "Near West Lake",
+      "address": "西湖付近",
       "coordinates": {
         "lat": 26.0653,
         "lng": 119.2865
       },
       "hours": "06:00-10:00",
-      "description": "Congee shop serving various savory and sweet congees.",
+      "description": "お粥を提供するお店で、さまざまな塩味と甘味のお粥を提供しています。",
       "dishHighlights": [
-        "Pork congee",
-        "Century egg congee",
-        "Fried dough sticks",
-        "Steamed buns"
+        "豚肉の粥",
+        "ピータン粥",
+        "揚げパン",
+        "蒸しパン"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "healthy",
-        "budget"
+        "ローカル",
+        "朝ごはん",
+        "健康",
+        "格安"
       ],
       "imageUrl": "/img/ext/75cc963484f4.webp",
       "phone": "+86 059 1 3309 6242"
     },
     {
       "id": "fuzhou-18",
-      "name": "锅边糊",
-      "nameEn": "Guobian Hu",
-      "type": "local",
-      "cuisine": "Fuzhou Snacks",
+      "name": "鍋辺糊（グオビエンフー）",
+      "nameEn": "果辺湖",
+      "type": "ローカル",
+      "cuisine": "福州スナック",
       "avgPrice": 20,
       "rating": 4.6,
-      "address": "Night markets",
+      "address": "ナイトマーケット",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
       "hours": "17:00-02:00",
-      "description": "Famous Fuzhou night snack - rice batter around pot edge.",
+      "description": "有名な福州の屋台料理 - 鍋の縁に米生地を貼り付けて焼きます。",
       "dishHighlights": [
-        "Rice batter",
-        "Seafood topping",
-        "Night market",
-        "Must-try"
+        "米生地",
+        "海鮮トッピング",
+        "ナイトマーケット",
+        "必食"
       ],
       "tags": [
-        "local",
-        "famous",
-        "street-food",
-        "night",
-        "must-try"
+        "ローカル",
+        "有名",
+        "屋台料理",
+        "夜",
+        "必食"
       ],
       "imageUrl": "/img/ext/42709ea23cc6.webp",
       "phone": "+86 059 1 0694 1958"
@@ -1727,59 +1727,59 @@
     {
       "id": "fuzhou-19",
       "name": "春伦茉莉花茶",
-      "nameEn": "Chunlun Jasmine Tea House",
-      "type": "cafe",
-      "cuisine": "Tea House",
+      "nameEn": "春倫ジャスミンティーハウス",
+      "type": "カフェ",
+      "cuisine": "茶屋",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Three Lanes area",
+      "address": "三坊七巷エリア",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
       "hours": "09:00-22:00",
-      "description": "Famous tea house serving authentic Fuzhou jasmine tea.",
+      "description": "本格的な福州ジャスミン茶を提供する有名な茶館です。",
       "dishHighlights": [
-        "Jasmine tea",
-        "Tea tasting",
-        "Traditional atmosphere",
-        "Teapot ceremony"
+        "ジャスミン茶",
+        "茶葉の試飲",
+        "伝統的な雰囲気",
+        "茶器セレモニー"
       ],
       "tags": [
-        "cafe",
-        "tea",
-        "traditional",
-        "cultural"
+        "カフェ",
+        "茶",
+        "伝統的",
+        "文化"
       ],
       "imageUrl": "/img/ext/92861b2f3e96.webp",
       "phone": "+86 059 1 1021 3883"
     },
     {
       "id": "fuzhou-20",
-      "name": "广东酒家",
-      "nameEn": "Guangdong Restaurant",
-      "type": "local",
-      "cuisine": "Cantonese",
+      "name": "広東酒家",
+      "nameEn": "広東レストラン",
+      "type": "ローカル",
+      "cuisine": "広東料理",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "Jin'an District",
+      "address": "晋安区",
       "coordinates": {
         "lat": 26.0953,
         "lng": 119.2965
       },
       "hours": "10:30-21:30",
-      "description": "Cantonese restaurant with dim sum and seafood.",
+      "description": "点心と海鮮を提供する広東料理レストラン",
       "dishHighlights": [
-        "Dim sum",
-        "Steamed fish",
-        "Roast duck",
-        "Fresh seafood"
+        "点心",
+        "蒸し魚",
+        "焼き鴨",
+        "新鮮な海鮮"
       ],
       "tags": [
-        "local",
-        "cantonese",
-        "dim-sum",
-        "seafood"
+        "地元",
+        "広東",
+        "点心",
+        "シーフード"
       ],
       "imageUrl": "/img/ext/2d142cbbae4e.webp",
       "phone": "+86 059 1 2546 2921"
@@ -1788,7 +1788,7 @@
       "id": "fuzhou-21",
       "name": "巷子佛跳墙",
       "nameEn": "巷子佛跳墙 (佛跳墙)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "佛跳墙",
       "avgPrice": 83,
       "rating": 4.6,
@@ -1799,16 +1799,16 @@
       },
       "phone": "+86 010 64973189",
       "hours": "09:00-21:00",
-      "description": "福州本地人推荐的佛跳墙店，味道正宗，价格实惠",
+      "description": "福州の地元民おすすめの佛跳墙店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "佛跳墙",
-        "锅边糊",
-        "鱼丸"
+        "鍋辺糊（グオビエンフー）",
+        "魚丸"
       ],
       "tags": [
-        "社区老店",
-        "老字号",
-        "排队王"
+        "地元の老舗",
+        "老舗",
+        "行列のできる店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/907f94d3406e.webp"
@@ -1817,7 +1817,7 @@
       "id": "fuzhou-23",
       "name": "老字号荔枝肉",
       "nameEn": "老字号荔枝肉 (荔枝肉)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "荔枝肉",
       "avgPrice": 130,
       "rating": 4.1,
@@ -1828,26 +1828,26 @@
       },
       "phone": "+86 010 45492974",
       "hours": "06:00-14:00",
-      "description": "福州本地人推荐的荔枝肉店，味道正宗，价格实惠",
+      "description": "福州の地元民おすすめの荔枝肉店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
-        "锅边糊",
+        "鍋辺糊（グオビエンフー）",
         "佛跳墙",
         "荔枝肉"
       ],
       "tags": [
-        "性价比高",
-        "隐藏美食",
-        "社区老店"
+        "コスパ最高",
+        "隠れた名店",
+        "地元の老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/3fb561a694cc.webp"
     },
     {
       "id": "fuzhou-25",
-      "name": "老福州鱼丸",
-      "nameEn": "老福州鱼丸 (鱼丸)",
-      "type": "cafe",
-      "cuisine": "鱼丸",
+      "name": "老福州魚丸（老福州の魚団子）",
+      "nameEn": "老福州魚丸（魚団子）",
+      "type": "カフェ",
+      "cuisine": "魚丸",
       "avgPrice": 36,
       "rating": 4,
       "address": "福州市市中心区美食街147号",
@@ -1857,16 +1857,16 @@
       },
       "phone": "+86 010 18298571",
       "hours": "17:00-02:00",
-      "description": "福州本地人推荐的鱼丸店，味道正宗，价格实惠",
+      "description": "福州の地元民がおすすめする魚丸店で、味は本格的で価格も手頃。",
       "dishHighlights": [
-        "锅边糊",
+        "鍋辺糊（グオビエンフー）",
         "佛跳墙",
         "肉燕"
       ],
       "tags": [
         "咖啡",
-        "下午茶",
-        "安静"
+        "アフタヌーンティー",
+        "落ち着いた"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/2e003f884167.webp"
@@ -1875,7 +1875,7 @@
       "id": "fuzhou-27",
       "name": "老街荔枝肉",
       "nameEn": "老街荔枝肉 (荔枝肉)",
-      "type": "cafe",
+      "type": "カフェ",
       "cuisine": "荔枝肉",
       "avgPrice": 28,
       "rating": 4.2,
@@ -1886,15 +1886,15 @@
       },
       "phone": "+86 010 60451389",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "福州本地人推荐的荔枝肉店，味道正宗，价格实惠",
+      "description": "福州の地元民おすすめの荔枝肉店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
-        "锅边糊",
-        "鱼丸",
+        "鍋辺糊（グオビエンフー）",
+        "魚丸",
         "佛跳墙"
       ],
       "tags": [
-        "文艺",
-        "下午茶",
+        "おしゃれ",
+        "アフタヌーンティー",
         "咖啡"
       ],
       "diamond": 0,
@@ -1904,7 +1904,7 @@
       "id": "fuzhou-29",
       "name": "老字号佛跳墙",
       "nameEn": "老字号佛跳墙 (佛跳墙)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "佛跳墙",
       "avgPrice": 43,
       "rating": 4.7,
@@ -1915,16 +1915,16 @@
       },
       "phone": "+86 010 48779265",
       "hours": "09:00-21:00",
-      "description": "福州本地人推荐的佛跳墙店，味道正宗，价格实惠",
+      "description": "福州の地元民おすすめの佛跳墙店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "荔枝肉",
         "佛跳墙",
-        "鱼丸"
+        "魚丸"
       ],
       "tags": [
-        "家常菜",
-        "隐藏美食",
-        "本地人爱去"
+        "家庭料理",
+        "隠れた名店",
+        "地元の人に人気"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/8fc233665908.webp"
@@ -1933,7 +1933,7 @@
       "id": "fuzhou-31",
       "name": "老街佛跳墙",
       "nameEn": "老街佛跳墙 (佛跳墙)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "佛跳墙",
       "avgPrice": 149,
       "rating": 4.2,
@@ -1944,26 +1944,26 @@
       },
       "phone": "+86 010 66637329",
       "hours": "06:00-14:00",
-      "description": "福州本地人推荐的佛跳墙店，味道正宗，价格实惠",
+      "description": "福州の地元民おすすめの佛跳墙店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
-        "锅边糊",
-        "鱼丸",
+        "鍋辺糊（グオビエンフー）",
+        "魚丸",
         "肉燕"
       ],
       "tags": [
-        "社区老店",
-        "性价比高",
-        "老字号"
+        "地元の老舗",
+        "コスパ最高",
+        "老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/9f5e89990289.webp"
     },
     {
       "id": "fuzhou-33",
-      "name": "正宗锅边糊",
-      "nameEn": "正宗锅边糊 (锅边糊)",
-      "type": "local",
-      "cuisine": "锅边糊",
+      "name": "正宗鍋辺糊（本場のグオビエンフー）",
+      "nameEn": "正宗鍋辺糊（グオビエンフー）",
+      "type": "ローカル",
+      "cuisine": "鍋辺糊（グオビエンフー）",
       "avgPrice": 144,
       "rating": 4.8,
       "address": "福州市老城区美食街96号",
@@ -1973,26 +1973,26 @@
       },
       "phone": "+86 010 83895724",
       "hours": "10:00-22:00",
-      "description": "福州本地人推荐的锅边糊店，味道正宗，价格实惠",
+      "description": "福州の地元民がおすすめする鍋辺糊店で、味は本格的で価格も手頃。",
       "dishHighlights": [
-        "锅边糊",
+        "鍋辺糊（グオビエンフー）",
         "荔枝肉",
-        "鱼丸"
+        "魚丸"
       ],
       "tags": [
-        "社区老店",
-        "家常菜",
-        "隐藏美食"
+        "地元の老舗",
+        "家庭料理",
+        "隠れた名店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ba4a2372f2c7.webp"
     },
     {
       "id": "fuzhou-35",
-      "name": "阿婆鱼丸",
-      "nameEn": "阿婆鱼丸 (鱼丸)",
-      "type": "street",
-      "cuisine": "鱼丸",
+      "name": "阿婆魚丸（アポーの魚団子）",
+      "nameEn": "阿婆魚丸（魚団子）",
+      "type": "ストリート",
+      "cuisine": "魚丸",
       "avgPrice": 58,
       "rating": 4.5,
       "address": "福州市市中心区美食街138号",
@@ -2002,14 +2002,14 @@
       },
       "phone": "+86 010 91746746",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "福州本地人推荐的鱼丸店，味道正宗，价格实惠",
+      "description": "福州の地元民がおすすめする魚丸店で、味は本格的で価格も手頃。",
       "dishHighlights": [
         "肉燕",
-        "鱼丸",
+        "魚丸",
         "荔枝肉"
       ],
       "tags": [
-        "网红打卡",
+        "インスタ映えスポット",
         "夜市",
         "小吃"
       ],
@@ -2018,10 +2018,10 @@
     },
     {
       "id": "fuzhou-37",
-      "name": "老字号鱼丸",
-      "nameEn": "老字号鱼丸 (鱼丸)",
-      "type": "local",
-      "cuisine": "鱼丸",
+      "name": "老舗の魚団子",
+      "nameEn": "老舗の魚団子（魚団子）",
+      "type": "ローカル",
+      "cuisine": "魚丸",
       "avgPrice": 33,
       "rating": 4.7,
       "address": "福州市市中心区美食街14号",
@@ -2031,16 +2031,16 @@
       },
       "phone": "+86 010 42415883",
       "hours": "10:00-22:00",
-      "description": "福州本地人推荐的鱼丸店，味道正宗，价格实惠",
+      "description": "福州の地元民がおすすめする魚丸店で、味は本格的で価格も手頃。",
       "dishHighlights": [
         "佛跳墙",
-        "鱼丸",
+        "魚丸",
         "肉燕"
       ],
       "tags": [
-        "排队王",
-        "社区老店",
-        "老字号"
+        "行列のできる店",
+        "地元の老舗",
+        "老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/be543f38b269.webp"
@@ -2049,7 +2049,7 @@
       "id": "fuzhou-39",
       "name": "正宗荔枝肉",
       "nameEn": "正宗荔枝肉 (荔枝肉)",
-      "type": "street",
+      "type": "ストリート",
       "cuisine": "荔枝肉",
       "avgPrice": 53,
       "rating": 4.3,
@@ -2060,26 +2060,26 @@
       },
       "phone": "+86 010 30625622",
       "hours": "10:00-22:00",
-      "description": "福州本地人推荐的荔枝肉店，味道正宗，价格实惠",
+      "description": "福州の地元民おすすめの荔枝肉店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
-        "锅边糊",
+        "鍋辺糊（グオビエンフー）",
         "荔枝肉",
-        "鱼丸"
+        "魚丸"
       ],
       "tags": [
         "小吃",
         "夜市",
-        "网红打卡"
+        "インスタ映えスポット"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/db319a1caee9.webp"
     },
     {
       "id": "fuzhou-41",
-      "name": "传统鱼丸",
-      "nameEn": "传统鱼丸 (鱼丸)",
-      "type": "local",
-      "cuisine": "鱼丸",
+      "name": "伝統の魚団子",
+      "nameEn": "伝統の魚団子（魚団子）",
+      "type": "ローカル",
+      "cuisine": "魚丸",
       "avgPrice": 104,
       "rating": 4.1,
       "address": "福州市新城区美食街44号",
@@ -2089,26 +2089,26 @@
       },
       "phone": "+86 010 81869954",
       "hours": "17:00-02:00",
-      "description": "福州本地人推荐的鱼丸店，味道正宗，价格实惠",
+      "description": "福州の地元民がおすすめする魚丸店で、味は本格的で価格も手頃。",
       "dishHighlights": [
-        "鱼丸",
+        "魚丸",
         "肉燕",
         "佛跳墙"
       ],
       "tags": [
-        "社区老店",
-        "家常菜",
-        "性价比高"
+        "地元の老舗",
+        "家庭料理",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ff1d05539a86.webp"
     },
     {
       "id": "fuzhou-43",
-      "name": "巷子锅边糊",
-      "nameEn": "巷子锅边糊 (锅边糊)",
-      "type": "cafe",
-      "cuisine": "锅边糊",
+      "name": "路地の鍋辺糊（グオビエンフー）",
+      "nameEn": "路地の鍋辺糊（グオビエンフー）",
+      "type": "カフェ",
+      "cuisine": "鍋辺糊（グオビエンフー）",
       "avgPrice": 65,
       "rating": 4.1,
       "address": "福州市市中心区美食街27号",
@@ -2118,26 +2118,26 @@
       },
       "phone": "+86 010 88062753",
       "hours": "10:00-22:00",
-      "description": "福州本地人推荐的锅边糊店，味道正宗，价格实惠",
+      "description": "福州の地元民がおすすめする鍋辺糊店で、味は本格的で価格も手頃。",
       "dishHighlights": [
         "肉燕",
-        "锅边糊",
+        "鍋辺糊（グオビエンフー）",
         "佛跳墙"
       ],
       "tags": [
         "咖啡",
-        "文艺",
-        "下午茶"
+        "おしゃれ",
+        "アフタヌーンティー"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/63783b5ace17.webp"
     },
     {
       "id": "fuzhou-45",
-      "name": "老福州锅边糊",
-      "nameEn": "老福州锅边糊 (锅边糊)",
-      "type": "cafe",
-      "cuisine": "锅边糊",
+      "name": "老福州の鍋辺糊（グオビエンフー）",
+      "nameEn": "老福州の鍋辺糊（グオビエンフー）",
+      "type": "カフェ",
+      "cuisine": "鍋辺糊（グオビエンフー）",
       "avgPrice": 35,
       "rating": 4.4,
       "address": "福州市老城区美食街188号",
@@ -2147,16 +2147,16 @@
       },
       "phone": "+86 010 95972935",
       "hours": "09:00-21:00",
-      "description": "福州本地人推荐的锅边糊店，味道正宗，价格实惠",
+      "description": "福州の地元民がおすすめする鍋辺糊店で、味は本格的で価格も手頃。",
       "dishHighlights": [
         "荔枝肉",
         "佛跳墙",
         "肉燕"
       ],
       "tags": [
-        "下午茶",
+        "アフタヌーンティー",
         "咖啡",
-        "文艺"
+        "おしゃれ"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/4c18e6b1ef14.webp"
@@ -2165,7 +2165,7 @@
       "id": "fuzhou-47",
       "name": "巷子荔枝肉",
       "nameEn": "巷子荔枝肉 (荔枝肉)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "荔枝肉",
       "avgPrice": 57,
       "rating": 4.4,
@@ -2176,16 +2176,16 @@
       },
       "phone": "+86 010 81658630",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "福州本地人推荐的荔枝肉店，味道正宗，价格实惠",
+      "description": "福州の地元民おすすめの荔枝肉店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "荔枝肉",
         "肉燕",
-        "鱼丸"
+        "魚丸"
       ],
       "tags": [
-        "排队王",
-        "本地人爱去",
-        "性价比高"
+        "行列のできる店",
+        "地元の人に人気",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/79693685ad8b.webp"
@@ -2194,7 +2194,7 @@
       "id": "fuzhou-49",
       "name": "老字号荔枝肉",
       "nameEn": "老字号荔枝肉 (荔枝肉)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "荔枝肉",
       "avgPrice": 140,
       "rating": 4.6,
@@ -2205,16 +2205,16 @@
       },
       "phone": "+86 010 47142664",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "福州本地人推荐的荔枝肉店，味道正宗，价格实惠",
+      "description": "福州の地元民おすすめの荔枝肉店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "荔枝肉",
-        "鱼丸",
-        "锅边糊"
+        "魚丸",
+        "鍋辺糊（グオビエンフー）"
       ],
       "tags": [
-        "家常菜",
-        "性价比高",
-        "老字号"
+        "家庭料理",
+        "コスパ最高",
+        "老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/c370b3ede680.webp"
@@ -2223,7 +2223,7 @@
       "id": "fuzhou-51",
       "name": "地道荔枝肉",
       "nameEn": "地道荔枝肉 (荔枝肉)",
-      "type": "street",
+      "type": "ストリート",
       "cuisine": "荔枝肉",
       "avgPrice": 27,
       "rating": 4.3,
@@ -2234,16 +2234,16 @@
       },
       "phone": "+86 010 32925857",
       "hours": "06:00-14:00",
-      "description": "福州本地人推荐的荔枝肉店，味道正宗，价格实惠",
+      "description": "福州の地元民おすすめの荔枝肉店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "佛跳墙",
-        "锅边糊",
-        "鱼丸"
+        "鍋辺糊（グオビエンフー）",
+        "魚丸"
       ],
       "tags": [
         "夜市",
-        "深夜美食",
-        "路边摊"
+        "深夜グルメ",
+        "屋台"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/e30115120a05.webp"
@@ -2252,7 +2252,7 @@
       "id": "fuzhou-53",
       "name": "老字号荔枝肉",
       "nameEn": "老字号荔枝肉 (荔枝肉)",
-      "type": "cafe",
+      "type": "カフェ",
       "cuisine": "荔枝肉",
       "avgPrice": 76,
       "rating": 4.6,
@@ -2263,15 +2263,15 @@
       },
       "phone": "+86 010 35541223",
       "hours": "09:00-21:00",
-      "description": "福州本地人推荐的荔枝肉店，味道正宗，价格实惠",
+      "description": "福州の地元民おすすめの荔枝肉店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "佛跳墙",
-        "锅边糊",
-        "鱼丸"
+        "鍋辺糊（グオビエンフー）",
+        "魚丸"
       ],
       "tags": [
-        "下午茶",
-        "文艺",
+        "アフタヌーンティー",
+        "おしゃれ",
         "咖啡"
       ],
       "diamond": 0,
@@ -2281,7 +2281,7 @@
       "id": "fuzhou-55",
       "name": "巷子肉燕",
       "nameEn": "巷子肉燕 (肉燕)",
-      "type": "street",
+      "type": "ストリート",
       "cuisine": "肉燕",
       "avgPrice": 31,
       "rating": 4.4,
@@ -2292,15 +2292,15 @@
       },
       "phone": "+86 010 74098244",
       "hours": "09:00-21:00",
-      "description": "福州本地人推荐的肉燕店，味道正宗，价格实惠",
+      "description": "福州の地元民おすすめの肉燕店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "佛跳墙",
-        "鱼丸",
+        "魚丸",
         "荔枝肉"
       ],
       "tags": [
-        "深夜美食",
-        "路边摊",
+        "深夜グルメ",
+        "屋台",
         "夜市"
       ],
       "diamond": 0,
@@ -2308,10 +2308,10 @@
     },
     {
       "id": "fuzhou-57",
-      "name": "阿婆锅边糊",
-      "nameEn": "阿婆锅边糊 (锅边糊)",
-      "type": "street",
-      "cuisine": "锅边糊",
+      "name": "阿婆鍋辺糊（アポー・グオビエンフー）",
+      "nameEn": "阿婆鍋辺糊（鍋辺糊）",
+      "type": "ストリート",
+      "cuisine": "鍋辺糊（グオビエンフー）",
       "avgPrice": 14,
       "rating": 4.1,
       "address": "福州市新城区美食街118号",
@@ -2321,16 +2321,16 @@
       },
       "phone": "+86 010 72832389",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "福州本地人推荐的锅边糊店，味道正宗，价格实惠",
+      "description": "福州の地元民がおすすめする鍋辺糊店で、味は本格的で価格も手頃。",
       "dishHighlights": [
         "肉燕",
         "佛跳墙",
-        "锅边糊"
+        "鍋辺糊（グオビエンフー）"
       ],
       "tags": [
         "夜市",
-        "深夜美食",
-        "网红打卡"
+        "深夜グルメ",
+        "インスタ映えスポット"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/a017ffcb552c.webp"
@@ -2339,7 +2339,7 @@
       "id": "fuzhou-59",
       "name": "地道荔枝肉",
       "nameEn": "地道荔枝肉 (荔枝肉)",
-      "type": "street",
+      "type": "ストリート",
       "cuisine": "荔枝肉",
       "avgPrice": 13,
       "rating": 4.9,
@@ -2350,15 +2350,15 @@
       },
       "phone": "+86 010 36459050",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "福州本地人推荐的荔枝肉店，味道正宗，价格实惠",
+      "description": "福州の地元民おすすめの荔枝肉店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "荔枝肉",
-        "锅边糊",
-        "鱼丸"
+        "鍋辺糊（グオビエンフー）",
+        "魚丸"
       ],
       "tags": [
-        "网红打卡",
-        "深夜美食",
+        "インスタ映えスポット",
+        "深夜グルメ",
         "小吃"
       ],
       "diamond": 0,
@@ -2366,10 +2366,10 @@
     },
     {
       "id": "fuzhou-61",
-      "name": "老福州锅边糊",
-      "nameEn": "老福州锅边糊 (锅边糊)",
-      "type": "local",
-      "cuisine": "锅边糊",
+      "name": "老福州の鍋辺糊（グオビエンフー）",
+      "nameEn": "老福州の鍋辺糊（グオビエンフー）",
+      "type": "ローカル",
+      "cuisine": "鍋辺糊（グオビエンフー）",
       "avgPrice": 138,
       "rating": 4.7,
       "address": "福州市新城区美食街187号",
@@ -2379,26 +2379,26 @@
       },
       "phone": "+86 010 45185104",
       "hours": "10:00-22:00",
-      "description": "福州本地人推荐的锅边糊店，味道正宗，价格实惠",
+      "description": "福州の地元民がおすすめする鍋辺糊店で、味は本格的で価格も手頃。",
       "dishHighlights": [
-        "锅边糊",
+        "鍋辺糊（グオビエンフー）",
         "荔枝肉",
         "肉燕"
       ],
       "tags": [
-        "家常菜",
-        "本地人爱去",
-        "性价比高"
+        "家庭料理",
+        "地元の人に人気",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/6c1bc90892d1.webp"
     },
     {
       "id": "fuzhou-63",
-      "name": "老街鱼丸",
-      "nameEn": "老街鱼丸 (鱼丸)",
-      "type": "street",
-      "cuisine": "鱼丸",
+      "name": "老街魚丸（ラオジエ・ユーワン）",
+      "nameEn": "老街魚丸（魚丸）",
+      "type": "ストリート",
+      "cuisine": "魚丸",
       "avgPrice": 52,
       "rating": 4.4,
       "address": "福州市市中心区美食街37号",
@@ -2408,15 +2408,15 @@
       },
       "phone": "+86 010 54022217",
       "hours": "06:00-14:00",
-      "description": "福州本地人推荐的鱼丸店，味道正宗，价格实惠",
+      "description": "福州の地元民がおすすめする魚丸店で、味は本格的で価格も手頃。",
       "dishHighlights": [
-        "锅边糊",
+        "鍋辺糊（グオビエンフー）",
         "肉燕",
         "佛跳墙"
       ],
       "tags": [
         "夜市",
-        "深夜美食",
+        "深夜グルメ",
         "小吃"
       ],
       "diamond": 0,
@@ -2424,10 +2424,10 @@
     },
     {
       "id": "fuzhou-65",
-      "name": "街边锅边糊",
-      "nameEn": "街边锅边糊 (锅边糊)",
-      "type": "local",
-      "cuisine": "锅边糊",
+      "name": "街辺鍋辺糊（ガイビエン・グオビエンフー）",
+      "nameEn": "街辺鍋辺糊（鍋辺糊）",
+      "type": "ローカル",
+      "cuisine": "鍋辺糊（グオビエンフー）",
       "avgPrice": 81,
       "rating": 4.6,
       "address": "福州市老城区美食街54号",
@@ -2437,16 +2437,16 @@
       },
       "phone": "+86 010 70753446",
       "hours": "17:00-02:00",
-      "description": "福州本地人推荐的锅边糊店，味道正宗，价格实惠",
+      "description": "福州の地元民がおすすめする鍋辺糊店で、味は本格的で価格も手頃。",
       "dishHighlights": [
-        "鱼丸",
+        "魚丸",
         "荔枝肉",
-        "锅边糊"
+        "鍋辺糊（グオビエンフー）"
       ],
       "tags": [
-        "老字号",
-        "社区老店",
-        "家常菜"
+        "老舗",
+        "地元の老舗",
+        "家庭料理"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/71ec619f47f6.webp"
@@ -2455,7 +2455,7 @@
       "id": "fuzhou-67",
       "name": "老街肉燕",
       "nameEn": "老街肉燕 (肉燕)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "肉燕",
       "avgPrice": 65,
       "rating": 4.3,
@@ -2466,26 +2466,26 @@
       },
       "phone": "+86 010 71045520",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "福州本地人推荐的肉燕店，味道正宗，价格实惠",
+      "description": "福州の地元民おすすめの肉燕店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
-        "鱼丸",
-        "锅边糊",
+        "魚丸",
+        "鍋辺糊（グオビエンフー）",
         "肉燕"
       ],
       "tags": [
-        "社区老店",
-        "家常菜",
-        "性价比高"
+        "地元の老舗",
+        "家庭料理",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/420ba20fbd88.webp"
     },
     {
       "id": "fuzhou-69",
-      "name": "阿婆鱼丸",
-      "nameEn": "阿婆鱼丸 (鱼丸)",
-      "type": "street",
-      "cuisine": "鱼丸",
+      "name": "阿婆魚丸（アポーの魚団子）",
+      "nameEn": "阿婆魚丸（魚団子）",
+      "type": "ストリート",
+      "cuisine": "魚丸",
       "avgPrice": 23,
       "rating": 4.5,
       "address": "福州市市中心区美食街36号",
@@ -2495,16 +2495,16 @@
       },
       "phone": "+86 010 86245999",
       "hours": "17:00-02:00",
-      "description": "福州本地人推荐的鱼丸店，味道正宗，价格实惠",
+      "description": "福州の地元民がおすすめする魚丸店で、味は本格的で価格も手頃。",
       "dishHighlights": [
         "肉燕",
         "佛跳墙",
         "荔枝肉"
       ],
       "tags": [
-        "网红打卡",
+        "インスタ映えスポット",
         "小吃",
-        "路边摊"
+        "屋台"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/3876a641f74a.png"
@@ -2513,7 +2513,7 @@
       "id": "fuzhou-71",
       "name": "老街荔枝肉",
       "nameEn": "老街荔枝肉 (荔枝肉)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "荔枝肉",
       "avgPrice": 105,
       "rating": 4.4,
@@ -2524,16 +2524,16 @@
       },
       "phone": "+86 010 79421066",
       "hours": "17:00-02:00",
-      "description": "福州本地人推荐的荔枝肉店，味道正宗，价格实惠",
+      "description": "福州の地元民おすすめの荔枝肉店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "肉燕",
-        "锅边糊",
+        "鍋辺糊（グオビエンフー）",
         "佛跳墙"
       ],
       "tags": [
-        "本地人爱去",
-        "老字号",
-        "性价比高"
+        "地元の人に人気",
+        "老舗",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/5620d1659cff.webp"
@@ -2542,7 +2542,7 @@
       "id": "fuzhou-73",
       "name": "巷子肉燕",
       "nameEn": "巷子肉燕 (肉燕)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "肉燕",
       "avgPrice": 96,
       "rating": 4.4,
@@ -2553,16 +2553,16 @@
       },
       "phone": "+86 010 62155530",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "福州本地人推荐的肉燕店，味道正宗，价格实惠",
+      "description": "福州の地元民おすすめの肉燕店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "荔枝肉",
         "佛跳墙",
-        "锅边糊"
+        "鍋辺糊（グオビエンフー）"
       ],
       "tags": [
-        "性价比高",
-        "家常菜",
-        "本地人爱去"
+        "コスパ最高",
+        "家庭料理",
+        "地元の人に人気"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/e57da0c86443.webp"
@@ -2571,7 +2571,7 @@
       "id": "fuzhou-75",
       "name": "老街肉燕",
       "nameEn": "老街肉燕 (肉燕)",
-      "type": "street",
+      "type": "ストリート",
       "cuisine": "肉燕",
       "avgPrice": 34,
       "rating": 4.8,
@@ -2582,15 +2582,15 @@
       },
       "phone": "+86 010 85931086",
       "hours": "17:00-02:00",
-      "description": "福州本地人推荐的肉燕店，味道正宗，价格实惠",
+      "description": "福州の地元民おすすめの肉燕店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
-        "锅边糊",
+        "鍋辺糊（グオビエンフー）",
         "肉燕",
         "荔枝肉"
       ],
       "tags": [
-        "深夜美食",
-        "网红打卡",
+        "深夜グルメ",
+        "インスタ映えスポット",
         "夜市"
       ],
       "diamond": 0,
@@ -2598,10 +2598,10 @@
     },
     {
       "id": "fuzhou-77",
-      "name": "街边鱼丸",
-      "nameEn": "街边鱼丸 (鱼丸)",
-      "type": "cafe",
-      "cuisine": "鱼丸",
+      "name": "街辺魚丸（ガイビエン・ユーワン）",
+      "nameEn": "街辺魚丸（魚丸）",
+      "type": "カフェ",
+      "cuisine": "魚丸",
       "avgPrice": 36,
       "rating": 4.1,
       "address": "福州市老城区美食街167号",
@@ -2611,26 +2611,26 @@
       },
       "phone": "+86 010 82232630",
       "hours": "09:00-21:00",
-      "description": "福州本地人推荐的鱼丸店，味道正宗，价格实惠",
+      "description": "福州の地元民がおすすめする魚丸店で、味は本格的で価格も手頃。",
       "dishHighlights": [
         "荔枝肉",
         "佛跳墙",
         "肉燕"
       ],
       "tags": [
-        "文艺",
+        "おしゃれ",
         "咖啡",
-        "下午茶"
+        "アフタヌーンティー"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/bb8230fbc1f5.webp"
     },
     {
       "id": "fuzhou-79",
-      "name": "正宗锅边糊",
-      "nameEn": "正宗锅边糊 (锅边糊)",
-      "type": "local",
-      "cuisine": "锅边糊",
+      "name": "正宗鍋辺糊（本場のグオビエンフー）",
+      "nameEn": "正宗鍋辺糊（グオビエンフー）",
+      "type": "ローカル",
+      "cuisine": "鍋辺糊（グオビエンフー）",
       "avgPrice": 55,
       "rating": 4.6,
       "address": "福州市老城区美食街24号",
@@ -2640,16 +2640,16 @@
       },
       "phone": "+86 010 66171612",
       "hours": "09:00-21:00",
-      "description": "福州本地人推荐的锅边糊店，味道正宗，价格实惠",
+      "description": "福州の地元民がおすすめする鍋辺糊店で、味は本格的で価格も手頃。",
       "dishHighlights": [
-        "锅边糊",
+        "鍋辺糊（グオビエンフー）",
         "佛跳墙",
-        "鱼丸"
+        "魚丸"
       ],
       "tags": [
-        "老字号",
-        "家常菜",
-        "隐藏美食"
+        "老舗",
+        "家庭料理",
+        "隠れた名店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/bb8230fbc1f5.webp"
@@ -2659,47 +2659,47 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major Chinese cities",
-        "to": "Fuzhou Changle International Airport (FOC)",
-        "duration": "Varies (1.5h from Beijing, 2h from Shanghai)",
+        "from": "中国の主要都市",
+        "to": "福州長楽国際空港 (FOC)",
+        "duration": "所要時間は異なる（北京から1.5時間、上海から2時間）",
         "price": "500-2000¥",
-        "frequency": "Daily flights",
-        "tips": "Airport 50km from city center. Airport bus (25¥) or taxi (180¥). Metro Line 1 connects."
+        "frequency": "毎日運航",
+        "tips": "市内中心部から50kmの空港。空港バス（25元）またはタクシー（180元）。地下鉄1号線が接続。"
       },
       {
         "type": "train",
-        "from": "Xiamen (1.5h), Shanghai (4h), Beijing (8h)",
-        "to": "Fuzhou Railway Station / Fuzhou South Station",
-        "duration": "1.5-8 hours",
+        "from": "厦門（1.5時間）、上海（4時間）、北京（8時間）",
+        "to": "福州駅 / 福州南駅",
+        "duration": "1.5〜8時間",
         "price": "150-800¥",
-        "frequency": "Multiple daily",
-        "tips": "Fuzhou South for high-speed. Fuzhou Station for regular. Both have metro."
+        "frequency": "1日複数",
+        "tips": "高速列車は福州南駅、普通列車は福州駅。両方に地下鉄が接続。"
       }
     ],
     "local": {
       "metro": [
-        "3 lines operational",
-        "Single ride: 2-7¥",
-        "Connects major areas",
-        "Lines 1, 2 most useful for tourists"
+        "3路線運行中",
+        "1回の乗車：2〜7¥",
+        "主要エリアを接続",
+        "1号線・2号線が観光客に最も便利"
       ],
       "bus": [
-        "Extensive network",
-        "Single ride: 2¥",
-        "Tourist areas connected",
-        "Use apps"
+        "広範なネットワーク",
+        "1回の乗車：2¥",
+        "観光エリアに接続",
+        "アプリを利用"
       ],
       "taxi": [
-        "Starting fare: 10¥ (first 3km)",
-        "Night surcharge: 20%",
-        "Most attractions 15-50¥",
-        "Didi recommended"
+        "初乗り運賃：10¥（最初の3km）",
+        "夜間割増：20%",
+        "ほとんどの観光地は15〜50¥",
+        "Didiを推奨"
       ],
       "bike": [
-        "Mobike, Meituan bikes available",
-        "Unlock: 1¥",
-        "Great for city center",
-        "Three Lanes area perfect for cycling"
+        "Mobike、Meituanの自転車が利用可能",
+        "ロック解除：1¥",
+        "市内中心部に最適",
+        "三坊七巷エリアは自転車に最適"
       ]
     }
   },
@@ -2708,159 +2708,159 @@
       "name": "福州香格里拉大酒店",
       "nameEn": "Shangri-La Hotel Fuzhou",
       "budget": "luxury",
-      "priceRange": "¥1200-2500/night",
-      "address": "88 Gutian Road, Jin'an District",
+      "priceRange": "1泊1200〜2500元",
+      "address": "晋安区古田路88号",
       "coordinates": {
         "lat": 26.0953,
         "lng": 119.2865
       },
       "rating": 4.7,
       "highlights": [
-        "River views",
-        "Luxury facilities",
-        "Central location",
-        "Multiple dining"
+        "川の眺望",
+        "高級設備",
+        "中心部に好立地",
+        "複数のダイニング"
       ],
-      "bookingTips": "Best location. Book river view rooms."
+      "bookingTips": "最高のロケーション。川側の客室を予約してください。"
     },
     {
       "name": "福州万达威斯汀酒店",
       "nameEn": "The Westin Fuzhou",
       "budget": "luxury",
-      "priceRange": "¥1000-2000/night",
-      "address": "100 Liuyi South Road, Jin'an District",
+      "priceRange": "1泊1000〜2000元",
+      "address": "晋安区六一南路100号",
       "coordinates": {
         "lat": 26.0853,
         "lng": 119.2965
       },
       "rating": 4.6,
       "highlights": [
-        "Modern luxury",
-        "City views",
-        "High-rise",
-        "Good service"
+        "モダンな高級感",
+        "市街地の眺望",
+        "高層",
+        "サービス良好"
       ],
-      "bookingTips": "Newer property. Great for business."
+      "bookingTips": "新しい物件。ビジネスに最適。"
     },
     {
-      "name": "福州洲际酒店",
+      "name": "福州洲際酒店",
       "nameEn": "InterContinental Fuzhou",
       "budget": "luxury",
-      "priceRange": "¥800-1800/night",
-      "address": "108 Gutian Road, Jin'an District",
+      "priceRange": "1泊800〜1800元",
+      "address": "晋安区古田路108号",
       "coordinates": {
         "lat": 26.0953,
         "lng": 119.2865
       },
       "rating": 4.6,
       "highlights": [
-        "River location",
-        "Luxury",
-        "City views",
-        "Multiple restaurants"
+        "川沿いの立地",
+        "高級",
+        "市街地の眺望",
+        "複数のレストラン"
       ],
-      "bookingTips": "Great views. Near Min River."
+      "bookingTips": "眺望良好。閩江の近く。"
     },
     {
-      "name": "福州温泉五四路亚朵酒店",
+      "name": "福州温泉五四路亜朵酒店",
       "nameEn": "Atour Hotel Fuzhou Hot Spring",
       "budget": "mid",
-      "priceRange": "¥400-700/night",
-      "address": "88 Wusi Road, Jin'an District",
+      "priceRange": "1泊400〜700元",
+      "address": "晋安区五四路88号",
       "coordinates": {
         "lat": 26.1053,
         "lng": 119.2865
       },
       "rating": 4.5,
       "highlights": [
-        "Near hot springs",
-        "Modern",
-        "Library theme",
-        "Free breakfast"
+        "温泉付近",
+        "モダン",
+        "図書館テーマ",
+        "朝食無料"
       ],
-      "bookingTips": "Good for hot spring tourists. Popular Chinese brand."
+      "bookingTips": "温泉観光客に好適。人気の中国ブランド。"
     },
     {
       "name": "如家酒店福州三坊七巷店",
       "nameEn": "Home Inn Fuzhou Three Lanes",
       "budget": "budget",
-      "priceRange": "¥150-300/night",
-      "address": "88 Yang桥 Street, Gulou District",
+      "priceRange": "1泊150〜300元",
+      "address": "鼓楼区楊橋路88号",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
       "rating": 4.2,
       "highlights": [
-        "Near Three Lanes",
-        "Budget-friendly",
-        "Clean",
-        "Central"
+        "三坊七巷付近",
+        "リーズナブルな価格",
+        "清潔",
+        "中心部"
       ],
-      "bookingTips": "Best budget near attractions."
+      "bookingTips": "観光スポット付近で最安値の宿。"
     },
     {
-      "name": "7天连锁酒店福州五一广场店",
+      "name": "7天連鎖酒店 福州五一広場店",
       "nameEn": "7 Days Inn Fuzhou Wuyi Square",
       "budget": "budget",
-      "priceRange": "¥120-250/night",
-      "address": "168 Wuyi Road, Gulou District",
+      "priceRange": "1泊120〜250元",
+      "address": "鼓楼区五一路168号",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
       "rating": 4.1,
       "highlights": [
-        "Budget",
-        "Central location",
-        "Simple",
-        "Clean"
+        "予算",
+        "中心部に好立地",
+        "シンプル",
+        "清潔"
       ],
-      "bookingTips": "Reliable budget option."
+      "bookingTips": "信頼できる格安オプション。"
     },
     {
       "name": "福州三坊七巷民宿",
       "nameEn": "Fuzhou Three Lanes Boutique Homestay",
       "budget": "budget",
-      "priceRange": "¥200-500/night",
-      "address": "Three Lanes area, Gulou District",
+      "priceRange": "1泊200〜500元",
+      "address": "鼓楼区三坊七巷エリア",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
       "rating": 4.4,
       "highlights": [
-        "Traditional courtyard",
-        "Central location",
-        "Local experience",
-        "Authentic"
+        "伝統的な中庭",
+        "中心部に好立地",
+        "地元体験",
+        "本格的"
       ],
-      "bookingTips": "Experience traditional Fuzhou living."
+      "bookingTips": "伝統的な福州の暮らしを体験。"
     },
     {
-      "name": "福州悦华酒店",
+      "name": "福州悦華酒店",
       "nameEn": "Yuehua Hotel Fuzhou",
       "budget": "mid",
-      "priceRange": "¥350-600/night",
-      "address": "128 Wuyi Road, Gulou District",
+      "priceRange": "1泊350〜600元",
+      "address": "鼓楼区五一路128号",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
       "rating": 4.5,
       "highlights": [
-        "Central location",
-        "Modern facilities",
-        "Good service",
-        "Free WiFi"
+        "中心部に好立地",
+        "近代的な設備",
+        "サービス良好",
+        "無料Wi-Fi"
       ],
-      "bookingTips": "Good for sightseeing. Book during off-peak."
+      "bookingTips": "観光に最適です。オフピーク時に予約してください。"
     },
     {
       "name": "福州西湖大酒店",
       "nameEn": "Fuzhou West Lake Hotel",
       "budget": "luxury",
-      "priceRange": "¥600-1200/night",
+      "priceRange": "1泊600〜1200元",
       "address": "88湖头路",
       "coordinates": {
         "lat": 26.0653,
@@ -2868,258 +2868,258 @@
       },
       "rating": 4.6,
       "highlights": [
-        "Near West Lake",
-        "Lake views",
-        "Central location",
-        "Multiple dining"
+        "西湖付近",
+        "湖の景色",
+        "中心部に好立地",
+        "複数のダイニング"
       ],
-      "bookingTips": "Great lake views. Book lake view rooms."
+      "bookingTips": "湖の眺めが素晴らしい。湖側の客室を予約。"
     },
     {
-      "name": "福州温泉大饭店",
+      "name": "福州温泉大飯店",
       "nameEn": "Fuzhou Hot Spring Hotel",
       "budget": "luxury",
-      "priceRange": "¥800-1500/night",
-      "address": "188 Jin'an District",
+      "priceRange": "1泊800〜1500元",
+      "address": "晋安区188号",
       "coordinates": {
         "lat": 26.1153,
         "lng": 119.3065
       },
       "rating": 4.6,
       "highlights": [
-        "Hot spring access",
-        "Spa facilities",
-        "Luxury",
-        "Relaxation"
+        "温泉利用可",
+        "スパ施設",
+        "高級",
+        "リラクゼーション"
       ],
-      "bookingTips": "Perfect for hot spring experience. Book spa packages."
+      "bookingTips": "温泉体験に最適です。スパパッケージを予約してください。"
     },
     {
-      "name": "福州外贸中心酒店",
+      "name": "福州外貿中心酒店",
       "nameEn": "Fuzhou Trade Center Hotel",
       "budget": "mid",
-      "priceRange": "¥400-700/night",
-      "address": "68 Wuyi Road",
+      "priceRange": "1泊400〜700元",
+      "address": "五一路68号",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
       "rating": 4.4,
       "highlights": [
-        "Central location",
-        "Business facilities",
-        "Good breakfast",
-        "Value"
+        "中心部に好立地",
+        "ビジネス施設",
+        "朝食が良い",
+        "価値"
       ],
-      "bookingTips": "Good for business travelers."
+      "bookingTips": "ビジネス旅行者に最適。"
     },
     {
-      "name": "福州大学城花园酒店",
+      "name": "福州大学城花園酒店",
       "nameEn": "Fuzhou University Town Garden Hotel",
       "budget": "mid",
-      "priceRange": "¥250-450/night",
-      "address": "University Town, Minhou County",
+      "priceRange": "1泊250〜450元",
+      "address": "閩侯県大学城",
       "coordinates": {
         "lat": 26.0453,
         "lng": 119.2265
       },
       "rating": 4.4,
       "highlights": [
-        "Near universities",
-        "Garden setting",
-        "Quiet area",
-        "Affordable"
+        "大学付近",
+        "庭園環境",
+        "静かなエリア",
+        "手頃な価格"
       ],
-      "bookingTips": "Great for budget travelers and families."
+      "bookingTips": "格安旅行者や家族連れに最適。"
     },
     {
       "name": "福州鼓山度假酒店",
       "nameEn": "Fuzhou Drum Mountain Resort Hotel",
       "budget": "mid",
-      "priceRange": "¥300-550/night",
-      "address": "Near Drum Mountain",
+      "priceRange": "1泊300〜550元",
+      "address": "鼓山付近",
       "coordinates": {
         "lat": 26.0853,
         "lng": 119.3265
       },
       "rating": 4.5,
       "highlights": [
-        "Near Drum Mountain",
-        "Mountain views",
-        "Hiking access",
-        "Fresh air"
+        "鼓山付近",
+        "山の景色",
+        "ハイキングアクセス",
+        "新鮮な空気"
       ],
-      "bookingTips": "Perfect for hikers. Book during off-peak."
+      "bookingTips": "ハイカーに最適です。オフピーク時に予約してください。"
     },
     {
-      "name": "福州闽江世纪金源大酒店",
+      "name": "福州閩江世紀金源大酒店",
       "nameEn": "Minjiang Century Golden Hotel",
       "budget": "luxury",
-      "priceRange": "¥500-1000/night",
-      "address": "88 Minjiang Road",
+      "priceRange": "1泊500〜1000元",
+      "address": "閩江路88号",
       "coordinates": {
         "lat": 26.0553,
         "lng": 119.3165
       },
       "rating": 4.5,
       "highlights": [
-        "River views",
-        "Modern luxury",
-        "Central location",
-        "Good service"
+        "川の眺望",
+        "モダンな高級感",
+        "中心部に好立地",
+        "サービス良好"
       ],
-      "bookingTips": "Book river view rooms."
+      "bookingTips": "川側の客室を予約できます。"
     },
     {
       "name": "福州茉莉花温泉度假酒店",
       "nameEn": "Fuzhou Jasmine Hot Spring Resort",
       "budget": "luxury",
-      "priceRange": "¥700-1400/night",
-      "address": "Jin'an District hot spring area",
+      "priceRange": "1泊700〜1400元",
+      "address": "晋安区温泉エリア",
       "coordinates": {
         "lat": 26.1153,
         "lng": 119.3065
       },
       "rating": 4.6,
       "highlights": [
-        "Hot springs",
-        "Jasmine theme",
+        "温泉",
+        "ジャスミンをテーマにした",
         "Spa",
-        "Garden"
+        "庭園"
       ],
-      "bookingTips": "Unique jasmine-themed hot spring experience."
+      "bookingTips": "ユニークなジャスミンをテーマにした温泉体験。"
     }
   ],
   "payment": [
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Universal in Fuzhou",
+      "description": "福州で広く利用可能",
       "howToUse": [
-        "Download before arrival",
-        "Link card"
+        "到着前にダウンロード",
+        "カードを連携"
       ],
       "tips": [
-        "Works at all merchants",
-        "English available"
+        "すべての加盟店で利用可能",
+        "英語対応可能"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Accepted everywhere",
+      "description": "どこでも受け入れられる",
       "howToUse": [
-        "WeChat required",
-        "International cards accepted"
+        "WeChatが必要",
+        "国際カード対応"
       ],
       "tips": [
-        "Set to English mode",
-        "Needed for shared bikes"
+        "英語モードに設定",
+        "シェア自転車に必要"
       ]
     },
     {
       "method": "Cash",
       "icon": "cash",
-      "description": "Useful at traditional markets",
+      "description": "伝統的な市場で便利",
       "howToUse": [
-        "ATM everywhere",
-        "Banks along main streets"
+        "ATMはどこにでもある",
+        "大通りの銀行"
       ],
       "tips": [
-        "Keep 200¥ for markets",
-        "Most restaurants accept cards"
+        "市場用に200元を用意してください",
+        "ほとんどのレストランでカード利用可"
       ]
     }
   ],
   "culturalTips": [
     {
       "category": "food",
-      "title": "Fujian Cuisine",
-      "content": "Fujian cuisine is one of China's Eight Great Cuisines, known for seafood, soups, and delicate flavors. Signature dishes include Buddha Jumps Over Wall, oyster omelette, and fish balls.",
+      "title": "福建料理",
+      "content": "福建料理は中国八大料理の一つで、シーフード、スープ、そして繊細な味が特徴です。代表的な料理には、佛跳牆（仏陀が塀を飛び越える）、牡蠣のオムレツ、魚団子などがあります。",
       "importance": "high"
     },
     {
       "category": "tea",
-      "title": "Jasmine Tea Culture",
-      "content": "Fuzhou is famous for jasmine tea, made by scenting green tea with fresh jasmine flowers. Tea houses are central to local culture, and visiting one is a must-do experience.",
+      "title": "ジャスミン茶文化",
+      "content": "福州はジャスミン茶で有名です。緑茶に新鮮なジャスミンの花を香り付けして作られています。茶館は地元の文化の中心であり、茶館を訪れることは必須の体験です。",
       "importance": "high"
     },
     {
       "category": "history",
-      "title": "Min Culture",
-      "content": "Fuzhou has unique Min culture distinct from other Chinese regions. The local dialect (Min Chinese), architecture, and customs differ significantly from Mandarin-speaking areas.",
+      "title": "閩文化",
+      "content": "福州には他の中国地域とは異なる独特のミン文化があります。地元の言葉（ミン語）、建築、そして習慣は北京語圏の地域とは大きく異なります。",
       "importance": "high"
     },
     {
       "category": "hot-spring",
-      "title": "Hot Spring Tradition",
-      "content": "Fuzhou has famous hot spring culture dating back to Tang Dynasty. Locals believe hot springs have healing properties. Visiting a hot spring resort is a local tradition.",
+      "title": "温泉の伝統",
+      "content": "福州には唐の時代から続く有名な温泉文化があります。地元の人々は温泉が癒しの力を持っていると信じています。温泉リゾートを訪れることは地元の伝統です。",
       "importance": "medium"
     },
     {
       "category": "dialect",
-      "title": "Fuzhou Dialect",
-      "content": "Fuzhou dialect is part of Min Chinese family, completely unintelligible with Mandarin. Locals appreciate visitors trying a few phrases in local dialect.",
+      "title": "福州方言",
+      "content": "福州語はミン語ファミリーの一部であり、北京語とは全く通じません。地元の人々は訪問者が地元の言葉でいくつかのフレーズを試みることを感謝します。",
       "importance": "low"
     },
     {
       "category": "colonial",
-      "title": "Colonial Heritage",
-      "content": "Fuzhou had foreign concessions in the 19th-20th century, leaving colonial architecture especially around Yantai Mountain area.",
+      "title": "植民地時代の遺産",
+      "content": "福州は19世紀から20世紀にかけて外国の租界地があり、烟台山エリアを中心に植民地建築が残っています。",
       "importance": "medium"
     },
     {
       "category": "timing",
-      "title": "Best Time",
-      "content": "Spring (March-May) and autumn (October-November) are best. Summer hot and humid with typhoons. Winter mild but rainy. Hot springs pleasant year-round.",
+      "title": "ベストシーズン",
+      "content": "春（3月から5月）と秋（10月から11月）が最適です。夏の暑さと湿気、そして台風があります。冬は穏やかですが雨が多いです。温泉は年間を通じて快適です。",
       "importance": "medium"
     },
     {
       "category": "food",
-      "title": "Must-Try Snacks",
-      "content": "Fuzhou snacks are famous: fish balls (鱼丸), meat dumplings (肉燕), oyster omelette (蚵仔煎), rice noodles (捞化), and pot edge paste (锅边糊).",
+      "title": "必食の小吃",
+      "content": "福州の軽食は有名です：魚団子（魚丸）、肉団子（肉燕）、牡蠣のオムレツ（蚵仔煎）、米粉（ラオファー）、鍋の縁のペースト（グオビエンフー）など。",
       "importance": "high"
     },
     {
       "category": "maritime",
-      "title": "Maritime History",
-      "content": "Fuzhou was a major port in ancient China and is the departure point for voyages to Taiwan. The Mawei Shipyard is where China's modern naval industry began.",
+      "title": "海事歴史",
+      "content": "福州は古代中国の大港湾であり、台湾への航海の出発点でした。馬尾造船所は中国の近代海軍産業が始まった場所です。",
       "importance": "medium"
     },
     {
       "category": "banyan",
-      "title": "Banyan Trees",
-      "content": "Fuzhou is famous for its ancient banyan trees, which are protected and considered city symbols. The largest banyan in Fuzhou National Forest Park is over 1,000 years old.",
+      "title": "ガジュマル",
+      "content": "福州は古代のガジュマルの木で有名です。これらは保護されており、市の象徴と見なされています。福州国家森林公園にある最大のガジュマルは1000年以上前のものです。",
       "importance": "low"
     },
     {
       "category": "opera",
-      "title": "Fujian Opera",
-      "content": "Fujian opera is a traditional performing art with over 400 years of history. Performances feature unique singing styles and elaborate costumes.",
+      "title": "福建オペラ",
+      "content": "福建オペラは400年以上の歴史を持つ伝統的な芸能芸術です。公演では独特の歌唱スタイルと精巧な衣装が特徴です。",
       "importance": "low"
     },
     {
       "category": "tea",
-      "title": "Tea Ceremony",
-      "content": "Fuzhou people take tea ceremony seriously. Visit a traditional tea house to experience the proper way to brew and serve jasmine tea.",
+      "title": "茶道",
+      "content": "福州の人々は茶の儀式を真剣に考えています。伝統的な茶館を訪れて、ジャスミン茶を淹れ、提供する正しい方法を知ることができます。",
       "importance": "medium"
     },
     {
       "category": "geography",
-      "title": "Mountain and River",
-      "content": "Fuzhou is surrounded by mountains on three sides with the Min River flowing through. This geography creates pleasant summer temperatures compared to other southern cities.",
+      "title": "山河",
+      "content": "福州は三方を山に囲まれ、閩江が流れています。この地理的条件により、他の南部都市に比べて夏の気温が穏やかです。",
       "importance": "low"
     },
     {
       "category": "lifestyle",
-      "title": "Relaxed Lifestyle",
-      "content": "Fuzhou has a relaxed pace of life. Locals enjoy morning tea, evening walks by the river, and weekend visits to hot springs.",
+      "title": "リラックスしたライフスタイル",
+      "content": "福州の生活ペースはのんびりしています。地元の人々は朝の茶、夕方の川辺の散歩、そして週末の温泉訪問を楽しんでいます。",
       "importance": "low"
     },
     {
       "category": "architecture",
-      "title": "Three Lanes and Seven Alleys",
-      "content": "The Three Lanes and Seven Alleys (三坊七巷) is a preserved historic district with traditional闽南 (Min) architecture. It dates to the Tang Dynasty.",
+      "title": "三坊七巷",
+      "content": "三坊七巷（三つの路と七つの路地）は、保存された歴史的地区で、伝統的な閩南建築があります。唐の時代にさかのぼります。",
       "importance": "high"
     }
   ],
@@ -3127,83 +3127,93 @@
     {
       "type": "ambulance",
       "name": "福州急救中心",
-      "nameEn": "Fuzhou Emergency Center",
+      "nameEn": "在広州シンガポール総領事館",
       "phone": "120",
-      "notes": "Major hospitals have English"
+      "notes": "主要病院では英語対応あり",
+      "nameJa": "福州急救中心"
     },
     {
       "type": "police",
       "name": "福州市公安局",
       "nameEn": "Fuzhou Public Security Bureau",
       "phone": "110",
-      "notes": "Tourist police available"
+      "notes": "観光警察が利用可能",
+      "nameJa": "福州市公安局"
     },
     {
       "type": "hospital",
-      "name": "福建医科大学附属第一医院",
+      "name": "福建医科大学付属第一医院",
       "nameEn": "Fujian Medical University Union Hospital",
       "phone": "+86 591 8798 3911",
-      "address": "88 Jiebin Road, Jin'an District",
-      "notes": "English-speaking staff"
+      "address": "晋安区捷賓路88号",
+      "notes": "英語を話すスタッフ",
+      "nameJa": "福建医科大学付属第一医院"
     },
     {
       "type": "hospital",
       "name": "福建省立医院",
       "nameEn": "Fujian Provincial Hospital",
       "phone": "+86 591 8755 1632",
-      "address": "68 Dongda Road, Jin'an District",
-      "notes": "Another major hospital"
+      "address": "晋安区東大路68号",
+      "notes": "もう一つの主要病院",
+      "nameJa": "福建省立医院"
     },
     {
       "type": "fire",
       "name": "福州消防",
       "nameEn": "Fuzhou Fire Department",
-      "phone": "119"
+      "phone": "119",
+      "nameJa": "福州消防"
     },
     {
       "type": "embassy",
-      "name": "美国驻广州总领事馆",
-      "nameEn": "US Consulate General Guangzhou",
-      "phone": "+86 20 3814 0100",
-      "notes": "Serves Fuzhou region"
-    },
-    {
-      "type": "embassy",
-      "name": "日本驻广州总领事馆",
-      "nameEn": "Japan Consulate General Guangzhou",
-      "phone": "+86 20 3814 0100",
-      "notes": "For Japanese citizens"
-    },
-    {
-      "type": "embassy",
-      "name": "韩国驻广州总领事馆",
+      "name": "米国駐広州総領事館",
       "nameEn": "South Korea Consulate General Guangzhou",
       "phone": "+86 20 3814 0100",
-      "notes": "For Korean citizens"
+      "notes": "韓国人向け",
+      "nameJa": "米国駐広州総領事館"
+    },
+    {
+      "type": "embassy",
+      "name": "日本駐広州総領事館",
+      "nameEn": "South Korea Consulate General Guangzhou",
+      "phone": "+86 20 3814 0100",
+      "notes": "韓国人向け",
+      "nameJa": "日本駐広州総領事館"
+    },
+    {
+      "type": "embassy",
+      "name": "韓国駐広州総領事館",
+      "nameEn": "South Korea Consulate General Guangzhou",
+      "phone": "+86 20 3814 0100",
+      "notes": "韓国人向け",
+      "nameJa": "韓国駐広州総領事館"
     },
     {
       "type": "hospital",
       "name": "福州市第一医院",
       "nameEn": "Fuzhou First Hospital",
       "phone": "+86 591 8321 3920",
-      "address": "79 Dagpu Road, Gulou District",
-      "notes": "24-hour emergency"
+      "address": "鼓楼区大浦路79号",
+      "notes": "24時間緊急対応",
+      "nameJa": "福州市第一医院"
     },
     {
       "type": "pharmacy",
-      "name": "福州大药房",
+      "name": "福州大薬房",
       "nameEn": "Fuzhou Pharmacy Chain",
       "phone": "+86 591 8333 8888",
-      "address": "Multiple locations",
-      "notes": "24-hour pharmacy available"
+      "address": "複数の場所",
+      "notes": "24時間営業の薬局あり",
+      "nameJa": "福州大薬房"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese, Fuzhou dialect (Min)",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Tap water safe after boiling; bottled water recommended"
+    "language": "中国語（マンダリン）",
+    "currency": "人民元 (CNY/RMB)",
+    "visa": "ほとんどの国籍でビザが必要です。対象者は空港で72時間トランジットビザを取得できます。",
+    "timeZone": "UTC+8 (中国標準時)",
+    "electricity": "220V/50Hz、A/I タイププラグ",
+    "water": "水道水は飲めますが、ペットボトル推奨"
   }
 }

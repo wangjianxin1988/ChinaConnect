@@ -67,6 +67,7 @@ interface CityMapProps {
   activeTab?: "overview" | "attractions" | "food" | "emergency";
   height?: string;
   showControls?: boolean;
+  lang?: string;
 }
 
 export function CityMap({
@@ -74,6 +75,7 @@ export function CityMap({
   activeTab = "overview",
   height = "350px",
   showControls = true,
+  lang = "en",
 }: CityMapProps) {
   const [selectedMarker, setSelectedMarker] = useState<MapMarker | null>(null);
 
@@ -187,22 +189,22 @@ export function CityMap({
     <div className="space-y-3">
       {/* Map Legend */}
       <div className="flex flex-wrap items-center gap-3 text-xs text-gray-500">
-        <span className="font-medium">Legend:</span>
+        <span className="font-medium">{lang === "ja" ? "凡例：" : "Legend:"}</span>
         <div className="flex items-center gap-1">
           <span className="w-3 h-3 rounded-full bg-amber-500 inline-block" />
-          <span>Attractions</span>
+          <span>{lang === "ja" ? "観光スポット" : "Attractions"}</span>
         </div>
         <div className="flex items-center gap-1">
           <span className="w-3 h-3 rounded-full bg-red-500 inline-block" />
-          <span>Restaurants</span>
+          <span>{lang === "ja" ? "レストラン" : "Restaurants"}</span>
         </div>
         <div className="flex items-center gap-1">
           <span className="w-3 h-3 rounded-full bg-emerald-500 inline-block" />
-          <span>Transport</span>
+          <span>{lang === "ja" ? "交通" : "Transport"}</span>
         </div>
         <div className="flex items-center gap-1">
           <span className="w-3 h-3 rounded-full bg-red-600 inline-block" />
-          <span>Emergency</span>
+          <span>{lang === "ja" ? "緊急" : "Emergency"}</span>
         </div>
       </div>
 

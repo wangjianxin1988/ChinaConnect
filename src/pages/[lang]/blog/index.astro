@@ -1,0 +1,107 @@
+﻿---
+export function getStaticPaths() {
+  const langs = ["ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"];
+  return langs.map((lang) => ({ params: { lang } }));
+}
+
+import { getPosts, getFeaturedPosts } from "@/data/blog";
+import { translations } from "@/i18n/translations";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { generateCollectionPageSchema, generateJsonLdScript, generateBreadcrumbSchema } from "@/lib/seo/schema-org";
+
+const lang = (Astro.params.lang as string) || "en";
+const t = translations[lang] || translations.en;
+const b = t.blog || translations.en.blog;
+
+const posts = getPosts(lang);
+const featured = getFeaturedPosts(lang, 3);
+
+const title = b.title || "Travel Blog";
+const description = b.subtitle || "Stories, tips, and guides from across China";
+
+const schemas = [
+  generateCollectionPageSchema({
+    name: title,
+    description,
+    url: `https://chinaengage.org/${lang}/blog`,
+    numberOfItems: posts.length,
+  }),
+  generateBreadcrumbSchema([
+    { name: t.nav?.home || "Home", url: `https://chinaengage.org/${lang}` },
+    { name: title, url: `https://chinaengage.org/${lang}/blog` },
+  ]),
+];
+---
+
+<BaseLayout title={`${title} - ChinaConnect`} description={description} lang={lang}>
+  <script type="application/ld+json" set:html={generateJsonLdScript(schemas)} />
+
+  <main class="container mx-auto px-4 py-8 max-w-6xl">
+    <header class="mb-10">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-3">{title}</h1>
+      <p class="text-lg text-gray-600 max-w-2xl">{description}</p>
+    </header>
+
+    {featured.length > 0 && (
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">
+          {b.featuredPosts || "Featured Posts"}
+        </h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          {featured.map((post) => (
+            <a
+              href={`/${lang}/blog/${post.slug}`}
+              class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow border border-gray-100"
+            >
+              <div class="aspect-video bg-gradient-to-br from-blue-500 to-purple-600 relative">
+                {post.coverImage && (
+                  <img src={post.coverImage} alt={post.title} class="w-full h-full object-cover" loading="lazy" />
+                )}
+              </div>
+              <div class="p-5">
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="text-xs px-2 py-1 bg-blue-50 text-blue-700 rounded-full font-medium">{post.category}</span>
+                  <span class="text-xs text-gray-500">{(b.readingTime || "{n} min read").replace("{n}", String(post.readingTime))}</span>
+                </div>
+                <h3 class="font-bold text-lg mb-2 group-hover:text-blue-600 transition-colors line-clamp-2">{post.title}</h3>
+                <p class="text-sm text-gray-600 line-clamp-3">{post.description}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <section>
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">{b.allPosts || "All Posts"}</h2>
+      {posts.length === 0 ? (
+        <p class="text-gray-500 py-12 text-center">{b.noPosts || "No posts yet"}</p>
+      ) : (
+        <div class="grid md:grid-cols-2 gap-6">
+          {posts.map((post) => (
+            <a
+              href={`/${lang}/blog/${post.slug}`}
+              class="group flex gap-4 p-4 bg-white rounded-xl border border-gray-100 hover:border-blue-300 hover:shadow-md transition-all"
+            >
+              <div class="shrink-0 w-32 h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg overflow-hidden">
+                {post.coverImage && (
+                  <img src={post.coverImage} alt={post.title} class="w-full h-full object-cover" loading="lazy" />
+                )}
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="text-xs px-2 py-0.5 bg-gray-100 text-gray-700 rounded-full">{post.category}</span>
+                  <span class="text-xs text-gray-500">
+                    {new Date(post.publishedAt).toLocaleDateString(lang === "zh-CN" ? "zh-CN" : lang === "en" ? "en-US" : lang)}
+                  </span>
+                </div>
+                <h3 class="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2 mb-1">{post.title}</h3>
+                <p class="text-sm text-gray-600 line-clamp-2">{post.description}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      )}
+    </section>
+  </main>
+</BaseLayout>

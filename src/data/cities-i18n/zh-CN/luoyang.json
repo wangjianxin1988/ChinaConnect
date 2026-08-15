@@ -3,28 +3,28 @@
   "name": "洛阳",
   "nameEn": "Luoyang",
   "country": "China",
-  "population": "5.2 million",
+  "population": "520万",
   "coordinates": {
     "lat": 34.6197,
     "lng": 112.454
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Luoyang, one of China's ancient capitals, is famous for the Longmen Grottoes (UNESCO), the Shaolin Temple, and peony flowers. A cradle of Chinese civilization with over 5,000 years of history, it served as capital for thirteen dynasties.",
+  "description": "洛阳是中国古都之一，以龙门石窟（联合国教科文组织世界遗产）、少林寺和牡丹花闻名。作为中华文明的发源地，洛阳拥有超过5000年的悠久历史，曾是十三个朝代的都城。",
   "coverImage": "/img/ext/1633beb663fe.webp",
   "highlights": [
-    "Longmen Grottoes - UNESCO World Heritage",
-    "Shaolin Temple - Birthplace of Kung Fu",
-    "White Horse Temple - First Buddhist temple in China",
-    "Luoyang Museum - Ancient capital artifacts",
-    "Peony flowers"
+    "龙门石窟 - 联合国教科文组织世界遗产",
+    "少林寺 - 功夫的发源地",
+    "白马寺 - 中国第一座佛教寺院",
+    "洛阳博物馆 - 古都文物",
+    "牡丹花"
   ],
   "climate": {
-    "type": "Continental monsoon climate",
+    "type": "大陆性季风气候",
     "bestMonths": [
-      "April",
-      "May",
-      "September",
-      "October"
+      "四月",
+      "五月",
+      "九月",
+      "十月"
     ],
     "avgSummerTemp": "27°C (81°F)",
     "avgWinterTemp": "2°C (36°F)",
@@ -34,456 +34,456 @@
     {
       "id": "luoyang-1",
       "name": "龙门石窟",
-      "nameEn": "Longmen Grottoes",
+      "nameEn": "龙门石窟",
       "category": "historical",
-      "description": "UNESCO World Heritage - massive Buddhist cave complex with 100,000+ sculptures.",
-      "address": "Longmen Grottoes, Yanshi District",
+      "description": "联合国教科文组织世界遗产 - 大型佛教石窟群，拥有超过10万尊雕像。",
+      "address": "龙门石窟，偃师区",
       "coordinates": {
         "lat": 34.4522,
         "lng": 112.4722
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "90¥ (high season), 70¥ (low season)",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "90元（旺季），70元（淡季）",
+      "recommendedVisitTime": "3-4小时",
       "highlights": [
-        "Buddhist sculptures",
-        "Fengxian Temple",
-        "Lotus Flower Cave",
-        "Thousands of figures"
+        "佛教雕塑",
+        "奉先寺",
+        "莲花洞",
+        "千佛洞"
       ],
-      "tips": "Arrive early to avoid crowds. Take boat ride for different view. Wear comfortable shoes.",
+      "tips": "建议早到以避开人流。可乘船游览，欣赏不同景色。请穿舒适的鞋子。",
       "image": "/img/ext/055ca5f59703.webp",
       "phone": "+86 037 9 8653 0071"
     },
     {
       "id": "luoyang-2",
       "name": "少林寺",
-      "nameEn": "Shaolin Temple",
+      "nameEn": "少林寺",
       "category": "cultural",
-      "description": "Birthplace of Chinese martial arts and Zen Buddhism, with famous kung fu performances.",
-      "address": "Songshan, Dengfeng County",
+      "description": "中国武术和禅宗的发源地，以精彩的功夫表演著称。",
+      "address": "嵩山，登封县",
       "coordinates": {
         "lat": 34.5022,
         "lng": 112.9322
       },
       "openingHours": "07:00-18:00",
-      "ticketPrice": "100¥ (temple), 280¥ (including performance)",
-      "recommendedVisitTime": "4-5 hours",
+      "ticketPrice": "100元（寺院），280元（含表演）",
+      "recommendedVisitTime": "4-5小时",
       "highlights": [
-        "Kung fu performances",
-        "Martial arts training",
-        "Pagoda Forest",
-        "Bodhi tree"
+        "功夫表演",
+        "武术训练",
+        "塔林",
+        "菩提树"
       ],
-      "tips": "Watch the kung fu show. Arrive early. Combine with Songshan hiking.",
+      "tips": "观看功夫表演。建议早到。可与嵩山徒步相结合。",
       "image": "/img/ext/0df1b413372e.webp",
       "phone": "+86 037 9 1775 2653"
     },
     {
       "id": "luoyang-3",
       "name": "白马寺",
-      "nameEn": "White Horse Temple",
+      "nameEn": "白马寺",
       "category": "cultural",
-      "description": "China's first Buddhist temple, founded in 68 AD, with contributions from India and Southeast Asia.",
-      "address": "White Horse Temple, Laocheng District",
+      "description": "中国第一座佛教寺庙，建于公元68年，受印度和东南亚影响。",
+      "address": "白马寺，老城区",
       "coordinates": {
         "lat": 34.7122,
         "lng": 112.5622
       },
       "openingHours": "07:00-19:00",
       "ticketPrice": "35¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "First Buddhist temple",
-        "Indian temple",
-        "Thai temple",
-        "Ancient history"
+        "第一座佛教寺庙",
+        "印度寺庙",
+        "泰国寺庙",
+        "古老历史"
       ],
-      "tips": "The birthplace of Chinese Buddhism. Combine with Luoyang old town.",
+      "tips": "中国佛教的发源地。建议与洛阳老城一起游览。",
       "image": "/img/ext/e1e1c86881fa.webp",
       "phone": "+86 037 9 5395 4077"
     },
     {
       "id": "luoyang-4",
       "name": "洛阳博物馆",
-      "nameEn": "Luoyang Museum",
+      "nameEn": "洛阳博物馆",
       "category": "cultural",
-      "description": "Excellent museum showcasing ancient capital history with over 40,000 artifacts.",
-      "address": "Garden of Luoyang, Laocheng District",
+      "description": "优秀博物馆，展示古都历史，藏品超过4万件。",
+      "address": "洛阳园，老城区",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4422
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "09:00-17:00（周一闭馆）",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "Ancient artifacts",
-        "Tang dynasty treasures",
-        "Tri-color pottery",
-        "Local history"
+        "古代文物",
+        "唐代珍宝",
+        "三彩陶",
+        "当地历史"
       ],
-      "tips": "Allow 2-3 hours. Audio guide available. Don't miss the tri-color pottery.",
+      "tips": "建议游览2-3小时。有语音导览。不要错过三彩陶。",
       "image": "/img/ext/f0932ce3da75.webp",
       "phone": "+86 037 9 9581 3863"
     },
     {
       "id": "luoyang-5",
       "name": "关林",
-      "nameEn": "Guanlin Temple",
+      "nameEn": "关林寺",
       "category": "cultural",
-      "description": "Temple dedicated to Guan Yu, where his remains are buried, largest such temple in China.",
-      "address": "Guanlin Temple, Laocheng District",
+      "description": "供奉关羽的寺庙，其埋葬于此，是中国最大的此类寺庙。",
+      "address": "关林寺，老城区",
       "coordinates": {
         "lat": 34.6522,
         "lng": 112.5822
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "40¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "Guan Yu temple",
-        "Ancient cypress trees",
-        "Bell tower",
-        "Cultural significance"
+        "关羽寺庙",
+        "古老的柏树",
+        "钟楼",
+        "文化意义"
       ],
-      "tips": "Learn about Guan Yu's legendary stories. The ancient trees are impressive.",
+      "tips": "了解关羽的传奇故事。古树令人印象深刻。",
       "image": "/img/ext/ccf86d5ffa74.webp",
       "phone": "+86 037 9 1833 8957"
     },
     {
       "id": "luoyang-6",
       "name": "老城十字街",
-      "nameEn": "Luoyang Old City",
+      "nameEn": "洛阳老城",
       "category": "cultural",
-      "description": "Historic streets with traditional architecture, lanterns and local snacks.",
-      "address": "Old City, Laocheng District",
+      "description": "具有传统建筑、灯笼和当地小吃的历史街区。",
+      "address": "老城区",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
-      "openingHours": "Open 24 hours (shops 09:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "全天开放（店铺营业时间09:00-22:00）",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "Traditional streets",
-        "Red lanterns",
-        "Night scene",
-        "Local snacks"
+        "传统街区",
+        "红灯笼",
+        "夜景",
+        "当地小吃"
       ],
-      "tips": "Best at night when illuminated. Try local snacks. Buy souvenirs.",
+      "tips": "夜间照明时最佳。品尝当地小吃。购买纪念品。",
       "image": "/img/ext/bfba15538474.webp",
       "phone": "+86 037 9 4591 3190"
     },
     {
       "id": "luoyang-7",
       "name": "丽景门",
-      "nameEn": "Lijing Gate",
+      "nameEn": "丽景门",
       "category": "historical",
-      "description": "Iconic gate of Luoyang with well-preserved city wall section.",
-      "address": "Lijing Gate, Old City",
+      "description": "洛阳标志性城门，保存完好的城墙段落。",
+      "address": "丽景门，老城",
       "coordinates": {
         "lat": 34.6722,
         "lng": 112.4422
       },
       "openingHours": "08:00-22:00",
-      "ticketPrice": "45¥ (including city wall)",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "45¥（含城墙）",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "Ancient gate",
-        "City wall walk",
-        "Night views",
-        "Photo opportunities"
+        "古城门",
+        "城墙漫步",
+        "夜景",
+        "拍照绝佳地点"
       ],
-      "tips": "Walk the city wall at sunset. Best at night with lighting.",
+      "tips": "日落时漫步城墙。夜间灯光下最佳。",
       "image": "/img/ext/d9e1e34b36a1.webp",
       "phone": "+86 037 9 8661 0160"
     },
     {
       "id": "luoyang-8",
       "name": "天堂明堂",
-      "nameEn": "Tian Tang Ming Tang",
+      "nameEn": "天堂明堂",
       "category": "historical",
-      "description": " reconstructed Tang Dynasty palaces with large rotating stage show.",
-      "address": "Zhouli Avenue, Laocheng District",
+      "description": "重建的唐代宫殿，拥有大型旋转舞台表演。",
+      "address": "老城区周公路",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4422
       },
       "openingHours": "09:00-22:00",
       "ticketPrice": "120¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "Tang palace",
-        "Rotating stage",
-        "Light show",
-        "History performance"
+        "唐代宫殿",
+        "旋转舞台",
+        "灯光秀",
+        "历史表演"
       ],
-      "tips": "Watch the evening performance. Arrive before show time. Great photo opportunities.",
+      "tips": "观看晚间表演。请在演出开始前到达。绝佳的拍照机会。",
       "image": "/img/ext/f5e115604d3c.webp",
       "phone": "+86 037 9 4295 7743"
     },
     {
       "id": "luoyang-9",
       "name": "洛阳国家牡丹园",
-      "nameEn": "Luoyang National Peony Garden",
+      "nameEn": "洛阳国家牡丹园",
       "category": "natural",
-      "description": "Largest peony garden in China with 400+ varieties of the city flower.",
-      "address": "National Peony Garden, Laocheng District",
+      "description": "中国最大的牡丹园，拥有400多个品种的市花。",
+      "address": "老城区国家牡丹园",
       "coordinates": {
         "lat": 34.6822,
         "lng": 112.6022
       },
-      "openingHours": "06:00-19:00 (April peak season)",
-      "ticketPrice": "30¥ (peak 50¥)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "06:00-19:00（4月旺季）",
+      "ticketPrice": "30¥（旺季50¥）",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "Peony flowers",
-        "Rare varieties",
-        "Spring scenery",
-        "Photography"
+        "牡丹花",
+        "稀有品种",
+        "春景",
+        "摄影"
       ],
-      "tips": "Visit during Peony Festival (April-May). The flowers are spectacular.",
+      "tips": "建议在牡丹花会期间（4月至5月）参观。花朵非常壮观。",
       "image": "/img/ext/ac85b473e165.webp",
       "phone": "+86 037 9 8683 7756"
     },
     {
       "id": "luoyang-10",
       "name": "古墓博物馆",
-      "nameEn": "Ancient Tomb Museum",
+      "nameEn": "古代墓葬博物馆",
       "category": "cultural",
-      "description": "Unique museum with underground ancient tombs you can walk through.",
-      "address": "Baiwan Village, Laocheng District",
+      "description": "独特的博物馆，内有可步行穿过的地下古墓。",
+      "address": "老城区白湾村",
       "coordinates": {
         "lat": 34.6922,
         "lng": 112.5222
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "09:00-17:00（周一闭馆）",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
       "highlights": [
-        "Underground tombs",
-        "Ancient burial customs",
-        "Historical artifacts",
-        "Unique experience"
+        "地下古墓",
+        "古代丧葬习俗",
+        "历史文物",
+        "独特体验"
       ],
-      "tips": "Walk through actual tombs underground. Learn about ancient burial practices.",
+      "tips": "步行穿越真实的地下古墓，了解古代丧葬习俗。",
       "image": "/img/ext/c74d7faf7bb9.webp",
       "phone": "+86 037 9 3194 9945"
     },
     {
       "id": "luoyang-11",
       "name": "周公庙",
-      "nameEn": "Duke of Zhou Temple",
+      "nameEn": "周公庙",
       "category": "cultural",
-      "description": "Temple dedicated to the Duke of Zhou, founder of the Zhou Dynasty.",
-      "address": "Old City",
+      "description": "供奉周朝开国君主周公的寺庙。",
+      "address": "老城",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "25¥",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "25元",
+      "recommendedVisitTime": "1小时",
       "highlights": [
-        "Zhou dynasty",
-        "Ancient temple",
-        "Historical significance",
-        "Quiet atmosphere"
+        "周朝",
+        "古寺",
+        "历史意义",
+        "宁静氛围"
       ],
-      "tips": "For history enthusiasts. Quiet compared to other temples.",
+      "tips": "适合历史爱好者。与其他寺庙相比更为安静。",
       "image": "/img/ext/8ef439572497.webp",
       "phone": "+86 037 9 3369 4589"
     },
     {
       "id": "luoyang-12",
       "name": "上清宫",
-      "nameEn": "Shangqing Temple",
+      "nameEn": "上清宫",
       "category": "cultural",
-      "description": "Taoist temple on a hilltop with panoramic views of Luoyang.",
-      "address": "Sanjie Town",
+      "description": "位于山顶的道教寺庙，可俯瞰洛阳全景。",
+      "address": "三街镇",
       "coordinates": {
         "lat": 34.6422,
         "lng": 112.4722
       },
       "openingHours": "07:00-18:00",
       "ticketPrice": "20¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "Taoist temple",
-        "Hilltop views",
-        "Ancient architecture",
-        "Peaceful"
+        "道教寺庙",
+        "山顶景观",
+        "古建筑",
+        "宁静"
       ],
-      "tips": "Great views of the city. Combine with nearby sites. Peaceful atmosphere.",
+      "tips": "可欣赏城市美景。可与附近景点一同游览。氛围宁静。",
       "image": "/img/ext/a35256bc74dd.webp",
       "phone": "+86 037 9 9290 0237"
     },
     {
       "id": "luoyang-13",
       "name": "应天门",
-      "nameEn": "Yingtian Gate",
+      "nameEn": "应天门",
       "category": "historical",
-      "description": "Reconstructed Tang Dynasty gate with impressive scale and evening light show.",
-      "address": "Yingtian Gate, Laocheng District",
+      "description": "重建的唐代城门，规模宏大，夜间有灯光秀。",
+      "address": "应天门，老城区",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4422
       },
       "openingHours": "09:00-22:00",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "Tang dynasty gate",
-        "Light show",
-        "Night photography",
-        "Historical recreation"
+        "唐代城门",
+        "灯光秀",
+        "夜景摄影",
+        "历史重现"
       ],
-      "tips": "Best at night. Watch the light show. Great photo opportunities.",
+      "tips": "最佳观赏时间是晚上。观看灯光秀。绝佳的拍照机会。",
       "image": "/img/ext/9d6d8d62d4bd.webp",
       "phone": "+86 037 9 6112 8693"
     },
     {
       "id": "luoyang-14",
       "name": "嵩山",
-      "nameEn": "Songshan (Mount Song)",
+      "nameEn": "嵩山",
       "category": "natural",
-      "description": "One of the Sacred Mountains of China with Shaolin Temple and stunning scenery.",
-      "address": "Dengfeng County",
+      "description": "中国五大名山之一，拥有少林寺和壮丽的自然景观。",
+      "address": "登封县",
       "coordinates": {
         "lat": 34.5022,
         "lng": 112.9322
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "80¥ (park only)",
-      "recommendedVisitTime": "1-2 days",
+      "openingHours": "24小时开放",
+      "ticketPrice": "80¥（仅公园）",
+      "recommendedVisitTime": "1-2天",
       "highlights": [
-        "Sacred mountain",
-        "Shaolin Temple",
-        "Hiking trails",
-        "Temples"
+        "圣山",
+        "少林寺",
+        "徒步道",
+        "寺庙"
       ],
-      "tips": "Combine with Shaolin Temple. Allow 2 days for full experience. Hiking required.",
+      "tips": "与少林寺结合游览。建议预留2天时间以充分体验。需要徒步。",
       "image": "/img/ext/309f30e43563.webp",
       "phone": "+86 037 9 7716 7616"
     },
     {
       "id": "luoyang-15",
       "name": "神州牡丹园",
-      "nameEn": "Shenzhou Peony Garden",
+      "nameEn": "神州牡丹园",
       "category": "natural",
-      "description": "Large peony garden with many rare varieties and beautiful scenery.",
-      "address": "National Peony Garden area",
+      "description": "大型牡丹园，拥有许多珍稀品种和美丽的风景。",
+      "address": "国家牡丹园区域",
       "coordinates": {
         "lat": 34.6822,
         "lng": 112.6022
       },
       "openingHours": "06:00-19:00",
-      "ticketPrice": "30¥",
-      "recommendedVisitTime": "2 hours",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "2小时",
       "highlights": [
-        "Rare peonies",
-        "Beautiful gardens",
-        "Spring flowers",
-        "Photography"
+        "稀有牡丹",
+        "美丽的花园",
+        "春季花卉",
+        "摄影"
       ],
-      "tips": "Best in April-May. Different varieties bloom at different times.",
+      "tips": "最佳游览时间为4月至5月。不同品种的花在不同时间开放。",
       "image": "/img/ext/c09fcbe63c84.webp",
       "phone": "+86 037 9 7904 4273"
     },
     {
       "id": "luoyang-16",
       "name": "洛浦公园",
-      "nameEn": "Luopu Park",
+      "nameEn": "洛浦公园",
       "category": "natural",
-      "description": "Large riverside park along the Luo River with gardens and walking paths.",
-      "address": "Along Luo River",
+      "description": "沿着洛河的大型河滨公园，拥有花园和步道。",
+      "address": "洛河沿岸",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4422
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24小时开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "River walks",
-        "Gardens",
-        "Local life",
-        "Sunset views"
+        "河边漫步",
+        "花园",
+        "当地生活",
+        "日落景观"
       ],
-      "tips": "Great for evening walks. Beautiful sunset over the river.",
+      "tips": "非常适合傍晚散步。河上日落美景令人陶醉。",
       "image": "/img/ext/87b70ba60ba4.webp",
       "phone": "+86 037 9 4910 0779"
     },
     {
       "id": "luoyang-17",
       "name": "中岳庙",
-      "nameEn": "Zhongyue Temple",
+      "nameEn": "中岳庙",
       "category": "cultural",
-      "description": "Main temple on Songshan dedicated to the mountain itself.",
-      "address": "Dengfeng County",
+      "description": "位于嵩山的主要寺庙，供奉嵩山山神。",
+      "address": "登封县",
       "coordinates": {
         "lat": 34.5022,
         "lng": 112.9322
       },
       "openingHours": "07:00-18:00",
-      "ticketPrice": "30¥",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "Mountain worship",
-        "Ancient architecture",
-        "Taoist culture",
-        "Historical significance"
+        "山岳崇拜",
+        "古建筑",
+        "道教文化",
+        "历史意义"
       ],
-      "tips": "Combine with Songshan hike. Ancient and atmospheric.",
+      "tips": "可与嵩山徒步结合。历史悠久，环境古朴。",
       "image": "/img/ext/caf86c2817ea.webp",
       "phone": "+86 037 9 6352 5445"
     },
     {
       "id": "luoyang-18",
       "name": "永泰寺",
-      "nameEn": "Yongtai Temple",
+      "nameEn": "永泰寺",
       "category": "cultural",
-      "description": "Ancient Buddhist nunnery on Songshan with over 1,500-year history.",
-      "address": "Songshan, Dengfeng County",
+      "description": "嵩山上一座拥有1500多年历史的古老佛教尼姑庵。",
+      "address": "嵩山，登封县",
       "coordinates": {
         "lat": 34.5122,
         "lng": 112.9222
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "25¥",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "25元",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "Buddhist nunnery",
-        "Ancient trees",
-        "Peaceful setting",
-        "Female monastery"
+        "佛教尼姑庵",
+        "古树",
+        "宁静的环境",
+        "尼姑庵"
       ],
-      "tips": "Atmospheric and peaceful. Meet the nuns. Unique experience.",
+      "tips": "环境幽静祥和。可以与尼姑交流，是独特的体验。",
       "image": "/img/ext/c46ceaaedd4a.webp",
       "phone": "+86 037 9 5728 1492"
     },
     {
       "id": "luoyang-19",
       "name": "塔林",
-      "nameEn": "Pagoda Forest",
+      "nameEn": "塔林",
       "category": "historical",
-      "description": "Over 240 ancient Buddhist pagodas at Shaolin Temple, second largest in China.",
-      "address": "Shaolin Temple",
+      "description": "少林寺内有240多座古佛塔，中国第二大。",
+      "address": "少林寺",
       "coordinates": {
         "lat": 34.5022,
         "lng": 112.9322
       },
       "openingHours": "07:00-18:00",
-      "ticketPrice": "Included in Shaolin ticket",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "含于少林寺门票",
+      "recommendedVisitTime": "1小时",
       "highlights": [
-        "Ancient pagodas",
-        "Martial arts history",
-        "Buddhist heritage",
-        "Photography"
+        "古塔",
+        "武术历史",
+        "佛教遗产",
+        "摄影"
       ],
-      "tips": "The pagodas date from Tang to Qing dynasties. Impressive number.",
+      "tips": "这些塔可追溯到唐至清代，数量惊人。",
       "image": "/img/ext/63c40bfc596a.webp",
       "phone": "+86 037 9 0588 1027"
     },
@@ -633,7 +633,7 @@
     {
       "id": "white-horse-temple",
       "name": "白马寺",
-      "nameEn": "White Horse Temple",
+      "nameEn": "白马寺",
       "category": "temple",
       "description": "中国第一古刹，佛教传入中国后兴建的第一座官办寺院。",
       "address": "洛阳市洛龙区",
@@ -656,7 +656,7 @@
     {
       "id": "laojun-mountain",
       "name": "老君山",
-      "nameEn": "Laojun Mountain",
+      "nameEn": "老君山",
       "category": "nature",
       "description": "道教名山，有金顶道观群，被誉为天下无双圣境。",
       "address": "洛阳市栾川县",
@@ -679,7 +679,7 @@
     {
       "id": "luoyang-museum",
       "name": "洛阳博物馆",
-      "nameEn": "Luoyang Museum",
+      "nameEn": "洛阳博物馆",
       "category": "museum",
       "description": "展示洛阳十三朝古都历史的博物馆。",
       "address": "洛阳市洛龙区",
@@ -702,7 +702,7 @@
     {
       "id": "lijing-gate",
       "name": "丽景门",
-      "nameEn": "Lijing Gate",
+      "nameEn": "丽景门",
       "category": "landmark",
       "description": "洛阳古城的标志性建筑，始建于隋代。",
       "address": "洛阳市老城区",
@@ -724,7 +724,7 @@
     {
       "id": "luoyang-old-street",
       "name": "洛阳老街",
-      "nameEn": "Luoyang Old Street",
+      "nameEn": "洛阳老街",
       "category": "street",
       "description": "洛阳最古老的商业街，有各种小吃和特产。",
       "address": "洛阳市老城区",
@@ -746,7 +746,7 @@
     {
       "id": "guanlin-temple",
       "name": "关林",
-      "nameEn": "Guanlin Temple",
+      "nameEn": "关林寺",
       "category": "temple",
       "description": "中国唯一的冢、庙、林三祀合一的古建筑群，埋葬关羽首级。",
       "address": "洛阳市洛龙区",
@@ -768,7 +768,7 @@
     {
       "id": "tianzi-jialiu",
       "name": "天子驾六博物馆",
-      "nameEn": "Tianzi Jialiu Museum",
+      "nameEn": "天子驾六博物馆",
       "category": "museum",
       "description": "展示东周天子驾六车马坑的博物馆。",
       "address": "洛阳市西工区",
@@ -790,7 +790,7 @@
     {
       "id": "wangcheng-park",
       "name": "王城公园",
-      "nameEn": "Wangcheng Park",
+      "nameEn": "王城公园",
       "category": "park",
       "description": "洛阳最大的公园，有牡丹园和动物园。",
       "address": "洛阳市西工区",
@@ -812,7 +812,7 @@
     {
       "id": "luoyang-peony",
       "name": "中国国花园",
-      "nameEn": "China National Flower Garden",
+      "nameEn": "中国国花园",
       "category": "park",
       "description": "中国最大的牡丹观赏园，有1000多个品种。",
       "address": "洛阳市洛龙区",
@@ -834,7 +834,7 @@
     {
       "id": "shaolin-temple",
       "name": "少林寺",
-      "nameEn": "Shaolin Temple",
+      "nameEn": "少林寺",
       "category": "temple",
       "description": "中国佛教禅宗祖庭，少林武术发源地。",
       "address": "郑州市登封市",
@@ -857,7 +857,7 @@
     {
       "id": "songshan-mountain",
       "name": "嵩山",
-      "nameEn": "Mount Song",
+      "nameEn": "嵩山",
       "category": "nature",
       "description": "五岳之中岳，有少林寺和嵩阳书院。",
       "address": "郑州市登封市",
@@ -880,7 +880,7 @@
     {
       "id": "yuntai-mountain",
       "name": "云台山",
-      "nameEn": "Yuntai Mountain",
+      "nameEn": "云台山",
       "category": "nature",
       "description": "世界地质公园，有红石峡和潭瀑峡。",
       "address": "焦作市修武县",
@@ -903,7 +903,7 @@
     {
       "id": "baiyun-mountain",
       "name": "白云山",
-      "nameEn": "Baiyun Mountain",
+      "nameEn": "白云山",
       "category": "nature",
       "description": "国家级森林公园，有玉皇顶和白云湖。",
       "address": "洛阳市嵩县",
@@ -926,7 +926,7 @@
     {
       "id": "jigong-mountain",
       "name": "鸡公山",
-      "nameEn": "Jigong Mountain",
+      "nameEn": "鸡公山",
       "category": "nature",
       "description": "中国四大避暑胜地之一，有万国建筑博览之称。",
       "address": "信阳市浉河区",
@@ -948,7 +948,7 @@
     {
       "id": "longtan-grand-canyon",
       "name": "龙潭大峡谷",
-      "nameEn": "Longtan Grand Canyon",
+      "nameEn": "龙潭大峡谷",
       "category": "nature",
       "description": "世界地质公园，有罕见的水蚀地貌。",
       "address": "洛阳市新安县",
@@ -970,7 +970,7 @@
     {
       "id": "luoyang-water",
       "name": "洛阳水席",
-      "nameEn": "Luoyang Water Banquet",
+      "nameEn": "洛阳水席",
       "category": "street",
       "description": "洛阳传统名宴，有24道菜，以汤水为主。",
       "address": "洛阳市老城区",
@@ -992,7 +992,7 @@
     {
       "id": "baiyuan-mountain",
       "name": "白云山国家森林公园",
-      "nameEn": "Baiyunshan National Forest Park",
+      "nameEn": "白云山国家森林公园",
       "category": "nature",
       "description": "洛阳南部的天然氧吧。",
       "address": "洛阳市嵩县",
@@ -1014,7 +1014,7 @@
     {
       "id": "mang-mountain",
       "name": "邙山",
-      "nameEn": "Mang Mountain",
+      "nameEn": "芒山",
       "category": "nature",
       "description": "洛阳北部的山脉，有大量古墓群。",
       "address": "洛阳市孟津区",
@@ -1036,7 +1036,7 @@
     {
       "id": "luoyang-night",
       "name": "洛阳夜景",
-      "nameEn": "Luoyang Night View",
+      "nameEn": "洛阳夜景",
       "category": "landmark",
       "description": "丽景门和洛邑古城的夜景灯光秀。",
       "address": "洛阳市老城区",
@@ -1058,7 +1058,7 @@
     {
       "id": "yanshi-ancient",
       "name": "偃师商城遗址",
-      "nameEn": "Yanshi Shang City Ruins",
+      "nameEn": "偃师商城遗址",
       "category": "museum",
       "description": "商代早期都城遗址。",
       "address": "洛阳市偃师区",
@@ -1079,7 +1079,7 @@
     {
       "id": "luoyang-ancient-city",
       "name": "洛邑古城",
-      "nameEn": "Luoyi Ancient City",
+      "nameEn": "洛阳古都",
       "category": "street",
       "description": "洛阳新开发的历史文化街区。",
       "address": "洛阳市老城区",
@@ -1103,27 +1103,27 @@
       "name": "嵩阳书院",
       "nameEn": "嵩阳书院",
       "category": "landmark",
-      "description": "中国四大书院之一，拥有4500年历史的古柏树。",
-      "address": "河南省郑州市登封市",
+      "description": "中国四大书院之一，有4500年历史的古柏树。",
+      "address": "郑州市登封市",
       "coordinates": {
         "lat": 34.5,
         "lng": 112.93
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "门票30元",
-      "recommendedVisitTime": "建议游览时间1.5小时",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "1.5小时",
       "highlights": [
-        "千年古柏",
-        "书院文化体验"
+        "古柏",
+        "书院文化"
       ],
-      "tips": "深入了解古代教育文化。",
+      "tips": "了解古代教育。",
       "image": "/img/ext/0891fec41e00.webp",
       "phone": "+86 037 9 8873 9321"
     },
     {
       "id": "zhongyue-temple",
       "name": "中岳庙",
-      "nameEn": "Zhongyue Temple",
+      "nameEn": "中岳庙",
       "category": "temple",
       "description": "五岳之中岳的主庙，有2000多年历史。",
       "address": "郑州市登封市",
@@ -1145,7 +1145,7 @@
     {
       "id": "luoyang-tomb",
       "name": "古墓博物馆",
-      "nameEn": "Luoyang Ancient Tomb Museum",
+      "nameEn": "洛阳古墓博物馆",
       "category": "museum",
       "description": "中国最大的古墓博物馆，搬迁复原了25座古墓。",
       "address": "洛阳市老城区",
@@ -1167,7 +1167,7 @@
     {
       "id": "hebo-mountain",
       "name": "黄河小浪底",
-      "nameEn": "Yellow River Xiaolangdi",
+      "nameEn": "黄河小浪底风景区",
       "category": "nature",
       "description": "黄河上的大型水利枢纽，可观赏泄洪壮观景象。",
       "address": "洛阳市孟津区",
@@ -1192,29 +1192,29 @@
     {
       "id": "luoyang-1",
       "name": "真不同",
-      "nameEn": "Zhen Bu Tong",
-      "type": "local",
-      "cuisine": "Luoyang",
+      "nameEn": "真不同",
+      "type": "本地",
+      "cuisine": "洛阳菜",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Near Lijing Gate, Old City",
+      "address": "老城丽景门附近",
       "coordinates": {
         "lat": 34.6722,
         "lng": 112.4422
       },
       "hours": "10:00-22:00",
-      "description": "Famous restaurant serving traditional Luoyang water banquet dishes.",
+      "description": "著名的洛阳水席菜餐厅。",
       "dishHighlights": [
-        "Water banquet",
-        "Yanru noodles",
-        "Luoyang soup",
-        "Traditional dishes"
+        "水席",
+        "燕肉面条",
+        "洛阳汤",
+        "传统菜肴"
       ],
       "tags": [
-        "local",
-        "famous",
-        "traditional",
-        "must-try"
+        "本地",
+        "著名",
+        "传统",
+        "必尝"
       ],
       "imageUrl": "/img/ext/524211fc2c9f.webp",
       "phone": "+86 037 9 8493 9976"
@@ -1222,59 +1222,59 @@
     {
       "id": "luoyang-2",
       "name": "洛阳水席园",
-      "nameEn": "Luoyang Water Banquet Garden",
-      "type": "local",
-      "cuisine": "Luoyang",
+      "nameEn": "洛阳水席园",
+      "type": "本地",
+      "cuisine": "洛阳",
       "avgPrice": 100,
       "rating": 4.6,
-      "address": "Old City area",
+      "address": "老城区",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "phone": "+86 379 6330 8888",
       "hours": "10:00-22:00",
-      "description": "Best place for authentic Luoyang water banquet.",
+      "description": "品尝正宗洛阳水席的最佳去处。",
       "dishHighlights": [
-        "Full water banquet",
-        "24 dishes",
-        "Traditional recipes",
-        "Cultural experience"
+        "全套水席",
+        "24道菜",
+        "传统配方",
+        "文化体验"
       ],
       "tags": [
-        "local",
-        "water-banquet",
-        "traditional",
-        "famous"
+        "本地",
+        "水席",
+        "传统",
+        "著名"
       ],
       "imageUrl": "/img/ext/d1fc4c0cfd3b.webp"
     },
     {
       "id": "luoyang-3",
       "name": "十字街夜市",
-      "nameEn": "Cross Street Night Market",
-      "type": "local",
-      "cuisine": "Various",
+      "nameEn": "十字街夜市",
+      "type": "本地",
+      "cuisine": "多种风味",
       "avgPrice": 30,
       "rating": 4.4,
-      "address": "Old City Cross Street",
+      "address": "老城十字街",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "17:00-23:00",
-      "description": "Famous night market with variety of local and international food.",
+      "description": "著名的夜市，提供各种本地和国际美食。",
       "dishHighlights": [
-        "Grilled skewers",
-        "Spicy hotpot",
-        "Fried rice",
-        "Local snacks"
+        "烤串",
+        "麻辣火锅",
+        "炒饭",
+        "当地小吃"
       ],
       "tags": [
-        "local",
-        "night-market",
-        "street-food",
-        "atmosphere"
+        "本地",
+        "夜市",
+        "街头小吃",
+        "氛围"
       ],
       "imageUrl": "/img/ext/6636e42ed315.webp",
       "phone": "+86 037 9 7500 8337"
@@ -1282,29 +1282,29 @@
     {
       "id": "luoyang-4",
       "name": "南关杂肝汤",
-      "nameEn": "Nanguan Mixed Organ Soup",
-      "type": "local",
-      "cuisine": "Luoyang Snacks",
+      "nameEn": "南关杂碎汤",
+      "type": "本地",
+      "cuisine": "洛阳小吃",
       "avgPrice": 20,
       "rating": 4.6,
-      "address": "Old City",
+      "address": "老城区",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "06:00-14:00",
-      "description": "Famous breakfast soup shop, local institution since 1920s.",
+      "description": "著名的早餐汤店，自1920年代起就是当地老字号",
       "dishHighlights": [
-        "Mixed organ soup",
-        "Pork liver",
-        "Lamb soup",
-        "Flatbread"
+        "杂肝汤",
+        "猪肝",
+        "羊肉汤",
+        "烧饼"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "famous",
-        "soup"
+        "本地",
+        "早餐",
+        "著名",
+        "汤"
       ],
       "imageUrl": "/img/ext/4022d2ee25dd.webp",
       "phone": "+86 037 9 1638 9894"
@@ -1312,29 +1312,29 @@
     {
       "id": "luoyang-5",
       "name": "管记水席",
-      "nameEn": "Guan Ji Water Banquet",
-      "type": "local",
-      "cuisine": "Luoyang",
+      "nameEn": "官记水席",
+      "type": "本地",
+      "cuisine": "洛阳菜",
       "avgPrice": 80,
       "rating": 4.7,
-      "address": "Old City",
+      "address": "老城区",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "10:00-22:00",
-      "description": "Authentic water banquet in family-run restaurant.",
+      "description": "家庭式餐厅的正宗水席",
       "dishHighlights": [
-        "Traditional water banquet",
-        "Family recipes",
-        "Authentic taste",
-        "Cultural"
+        "传统水席",
+        "家族食谱",
+        "正宗口味",
+        "文化"
       ],
       "tags": [
-        "local",
-        "water-banquet",
-        "family-run",
-        "traditional"
+        "本地",
+        "水席",
+        "家庭式",
+        "传统"
       ],
       "imageUrl": "/img/ext/5604ea0e5fb8.webp",
       "phone": "+86 037 9 8490 6314"
@@ -1342,28 +1342,28 @@
     {
       "id": "luoyang-6",
       "name": "东关周记",
-      "nameEn": "Dongguan Zhou Ji",
-      "type": "local",
-      "cuisine": "Luoyang",
+      "nameEn": "东关周记",
+      "type": "本地",
+      "cuisine": "洛阳",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "East Gate area",
+      "address": "东门地区",
       "coordinates": {
         "lat": 34.6722,
         "lng": 112.4622
       },
       "hours": "07:00-20:00",
-      "description": "Popular for traditional Luoyang noodles and soup.",
+      "description": "以传统洛阳面条和汤品著称",
       "dishHighlights": [
-        "Yanru noodles",
-        "Hot and sour noodles",
-        "Noodles with toppings"
+        "燕肉面条",
+        "酸辣面",
+        "盖浇面"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "traditional",
-        "popular"
+        "本地",
+        "面食",
+        "传统",
+        "热门"
       ],
       "imageUrl": "/img/ext/ff1d05539a86.webp",
       "phone": "+86 037 9 5397 2759"
@@ -1371,28 +1371,28 @@
     {
       "id": "luoyang-7",
       "name": "牡丹燕菜",
-      "nameEn": "Peony Yan Cai",
-      "type": "local",
-      "cuisine": "Luoyang",
+      "nameEn": "牡丹燕菜",
+      "type": "本地",
+      "cuisine": "洛阳",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Various restaurants",
+      "address": "多家餐厅",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "10:00-22:00",
-      "description": "Famous Luoyang dish made from taro and local ingredients.",
+      "description": "以芋头和当地食材制作的洛阳名菜。",
       "dishHighlights": [
-        "Peony yan cai",
-        "Taro dish",
-        "Traditional recipe"
+        "牡丹燕菜",
+        "芋头菜",
+        "传统配方"
       ],
       "tags": [
-        "local",
-        "famous",
-        "traditional",
-        "luoyang-specialty"
+        "本地",
+        "著名",
+        "传统",
+        "洛阳特色"
       ],
       "imageUrl": "/img/ext/42709ea23cc6.webp",
       "phone": "+86 037 9 6915 7644"
@@ -1400,29 +1400,29 @@
     {
       "id": "luoyang-8",
       "name": "牛肉汤",
-      "nameEn": "Beef Soup",
-      "type": "local",
-      "cuisine": "Luoyang Snacks",
+      "nameEn": "牛肉汤",
+      "type": "本地",
+      "cuisine": "洛阳小吃",
       "avgPrice": 20,
       "rating": 4.5,
-      "address": "Street vendors",
+      "address": "街边小摊",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "06:00-14:00",
-      "description": "Rich beef soup - popular breakfast in Luoyang.",
+      "description": "浓郁的牛肉汤——洛阳流行早餐。",
       "dishHighlights": [
-        "Beef soup",
-        "Beef brisket",
-        "Flatbread",
-        "Cilantro"
+        "牛肉汤",
+        "牛腩",
+        "烧饼",
+        "香菜"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "soup",
-        "popular"
+        "本地",
+        "早餐",
+        "汤",
+        "热门"
       ],
       "imageUrl": "/img/ext/e9c9230f54bb.webp",
       "phone": "+86 037 9 1553 8323"
@@ -1430,28 +1430,28 @@
     {
       "id": "luoyang-9",
       "name": "烫面角",
-      "nameEn": "Tang Mian Jiao",
-      "type": "local",
-      "cuisine": "Luoyang Snacks",
+      "nameEn": "唐面饺",
+      "type": "本地",
+      "cuisine": "洛阳小吃",
       "avgPrice": 25,
       "rating": 4.5,
-      "address": "Old City",
+      "address": "老城",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "07:00-19:00",
-      "description": "Steamed dumplings with hot filling - Luoyang specialty.",
+      "description": "热气腾腾的包子-洛阳特色",
       "dishHighlights": [
-        "Hot filling dumplings",
-        "Pork filling",
-        "Vegetable filling"
+        "汤包",
+        "猪肉馅",
+        "素馅"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "famous",
-        "dumplings"
+        "本地",
+        "小吃",
+        "著名",
+        "饺子"
       ],
       "imageUrl": "/img/ext/9f805a172bcb.webp",
       "phone": "+86 037 9 0215 5434"
@@ -1459,58 +1459,58 @@
     {
       "id": "luoyang-10",
       "name": "洛阳酒家",
-      "nameEn": "Luoyang Restaurant",
-      "type": "fine",
-      "cuisine": "Luoyang",
+      "nameEn": "洛阳酒家",
+      "type": "精致餐饮",
+      "cuisine": "洛阳",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "City center",
+      "address": "市中心",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "phone": "+86 379 6330 8888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "High-end restaurant serving refined Luoyang cuisine.",
+      "description": "提供精致洛阳菜的高档餐厅",
       "dishHighlights": [
-        "Refined water banquet",
-        "Peony dishes",
-        "Traditional recipes",
-        "Elegant"
+        "精致水席",
+        "牡丹菜",
+        "传统配方",
+        "雅致"
       ],
       "tags": [
-        "fine-dining",
-        "luoyang-cuisine",
-        "elegant",
-        "special-occasion"
+        "精致餐饮",
+        "洛阳菜",
+        "雅致",
+        "特殊场合"
       ],
       "imageUrl": "/img/ext/3876a641f74a.png"
     },
     {
       "id": "luoyang-11",
       "name": "少林素饼",
-      "nameEn": "Shaolin Vegetarian pastries",
-      "type": "local",
-      "cuisine": "Snacks",
+      "nameEn": "少林素饼",
+      "type": "本地",
+      "cuisine": "小吃",
       "avgPrice": 20,
       "rating": 4.4,
-      "address": "Near Shaolin Temple",
+      "address": "少林寺附近",
       "coordinates": {
         "lat": 34.5022,
         "lng": 112.9322
       },
       "hours": "08:00-18:00",
-      "description": "Famous vegetarian pastries from Shaolin area.",
+      "description": "少林地区著名的素饼",
       "dishHighlights": [
-        "Vegetarian pastries",
-        "Various flavors",
-        "Temple area"
+        "素饼",
+        "多种口味",
+        "寺院区域"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "souvenir",
-        "shaolin"
+        "本地",
+        "小吃",
+        "纪念品",
+        "少林"
       ],
       "imageUrl": "/img/ext/75cc963484f4.webp",
       "phone": "+86 037 9 7697 8443"
@@ -1518,29 +1518,29 @@
     {
       "id": "luoyang-12",
       "name": "嵩山土菜",
-      "nameEn": "Songshan Local Dishes",
-      "type": "local",
-      "cuisine": "Local",
+      "nameEn": "嵩山本地菜",
+      "type": "本地",
+      "cuisine": "本地菜",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Near Songshan",
+      "address": "嵩山附近",
       "coordinates": {
         "lat": 34.5022,
         "lng": 112.9322
       },
       "hours": "10:00-22:00",
-      "description": "Mountain village restaurant with local dishes.",
+      "description": "山间村落餐厅，提供本地菜肴",
       "dishHighlights": [
-        "Forest mushrooms",
-        "Wild vegetables",
-        "Mountain lamb",
-        "Local rice"
+        "森林蘑菇",
+        "野菜",
+        "山羊肉",
+        "本地米饭"
       ],
       "tags": [
-        "local",
-        "mountain",
-        "home-style",
-        "fresh"
+        "本地",
+        "山",
+        "家常菜",
+        "新鲜"
       ],
       "imageUrl": "/img/ext/76c4426392c8.webp",
       "phone": "+86 037 9 3784 2208"
@@ -1548,29 +1548,29 @@
     {
       "id": "luoyang-13",
       "name": "羊肉汤",
-      "nameEn": "Lamb Soup",
-      "type": "local",
-      "cuisine": "Luoyang Snacks",
+      "nameEn": "羊肉汤",
+      "type": "本地",
+      "cuisine": "洛阳小吃",
       "avgPrice": 25,
       "rating": 4.5,
-      "address": "Various locations",
+      "address": "多处地址",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "06:00-14:00",
-      "description": "Rich lamb soup - another popular breakfast option.",
+      "description": "浓郁的羊肉汤——另一道受欢迎的早餐选择。",
       "dishHighlights": [
-        "Lamb soup",
-        "Lamb ribs",
-        "Flatbread",
-        "Herbs"
+        "羊肉汤",
+        "羊排",
+        "烧饼",
+        "香草"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "soup",
-        "popular"
+        "本地",
+        "早餐",
+        "汤",
+        "热门"
       ],
       "imageUrl": "/img/ext/3b6c1cce4284.webp",
       "phone": "+86 037 9 0215 5671"
@@ -1578,29 +1578,29 @@
     {
       "id": "luoyang-14",
       "name": "糊涂面",
-      "nameEn": "Muddy Noodles",
-      "type": "local",
-      "cuisine": "Luoyang Snacks",
+      "nameEn": "糊面",
+      "type": "本地",
+      "cuisine": "洛阳小吃",
       "avgPrice": 15,
       "rating": 4.4,
-      "address": "Old City vendors",
+      "address": "老城小吃摊",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "全天",
-      "description": "Thick noodles with vegetables - simple local dish.",
+      "description": "蔬菜配粗面条——简单的地方菜。",
       "dishHighlights": [
-        "Thick noodles",
-        "Vegetables",
-        "Peanut sauce",
-        "Simple"
+        "粗面条",
+        "蔬菜",
+        "花生酱",
+        "清淡"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "budget",
-        "simple"
+        "本地",
+        "小吃",
+        "经济实惠",
+        "简单"
       ],
       "imageUrl": "/img/ext/437d6161db32.webp",
       "phone": "+86 037 9 8362 4980"
@@ -1608,29 +1608,29 @@
     {
       "id": "luoyang-15",
       "name": "洛阳汤面",
-      "nameEn": "Luoyang Noodle Soup",
-      "type": "local",
-      "cuisine": "Noodles",
+      "nameEn": "洛阳汤面",
+      "type": "本地",
+      "cuisine": "面条",
       "avgPrice": 20,
       "rating": 4.5,
-      "address": "Various locations",
+      "address": "多处地址",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "06:00-20:00",
-      "description": "Various noodle soups specific to Luoyang.",
+      "description": "洛阳特有的各种汤面。",
       "dishHighlights": [
-        "Noodle soup",
-        "Various toppings",
-        "Hot and sour",
-        "Spicy"
+        "汤面",
+        "多种配料",
+        "酸辣",
+        "辣"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "soup",
-        "popular"
+        "本地",
+        "面食",
+        "汤",
+        "热门"
       ],
       "imageUrl": "/img/ext/ac60f6389624.webp",
       "phone": "+86 037 9 6649 5105"
@@ -1638,29 +1638,29 @@
     {
       "id": "luoyang-16",
       "name": "锅贴",
-      "nameEn": "Guo Tie (Pan-fried Dumplings)",
-      "type": "local",
-      "cuisine": "Luoyang Snacks",
+      "nameEn": "锅贴（煎饺）",
+      "type": "本地",
+      "cuisine": "洛阳小吃",
       "avgPrice": 25,
       "rating": 4.5,
-      "address": "Night market",
+      "address": "夜市",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "17:00-23:00",
-      "description": "Pan-fried dumplings - popular street food.",
+      "description": "煎饺——受欢迎的街头小吃。",
       "dishHighlights": [
-        "Pan-fried dumplings",
-        "Crispy bottom",
-        "Pork filling",
-        "Vegetables"
+        "煎饺",
+        "脆底",
+        "猪肉馅",
+        "蔬菜"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "street-food",
-        "popular"
+        "本地",
+        "小吃",
+        "街头小吃",
+        "人气"
       ],
       "imageUrl": "/img/ext/1b3180783f6a.webp",
       "phone": "+86 037 9 2876 3541"
@@ -1668,29 +1668,29 @@
     {
       "id": "luoyang-17",
       "name": "炒凉粉",
-      "nameEn": "Stir-fried Liangfen",
-      "type": "local",
-      "cuisine": "Luoyang Snacks",
+      "nameEn": "炒凉粉",
+      "type": "本地",
+      "cuisine": "洛阳小吃",
       "avgPrice": 15,
       "rating": 4.4,
-      "address": "Night market",
+      "address": "夜市",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "17:00-23:00",
-      "description": "Stir-fried rice jelly - famous Luoyang street snack.",
+      "description": "炒凉粉 - 著名的洛阳街头小吃。",
       "dishHighlights": [
-        "Stir-fried rice jelly",
-        "Soy sauce",
-        "Spicy",
-        "Crispy"
+        "炒凉粉",
+        "酱油",
+        "辣",
+        "酥脆"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "street-food",
-        "famous"
+        "本地",
+        "小吃",
+        "街头小吃",
+        "著名"
       ],
       "imageUrl": "/img/ext/20d74101f810.webp",
       "phone": "+86 037 9 0655 2189"
@@ -1698,29 +1698,29 @@
     {
       "id": "luoyang-18",
       "name": "不翻汤",
-      "nameEn": "Bu Fan Tang",
-      "type": "local",
-      "cuisine": "Luoyang Snacks",
+      "nameEn": "不翻堂",
+      "type": "本地",
+      "cuisine": "洛阳小吃",
       "avgPrice": 20,
       "rating": 4.5,
-      "address": "Old City",
+      "address": "老城区",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "10:00-22:00",
-      "description": "Pancake and soup combination - traditional Luoyang snack.",
+      "description": "传统洛阳小吃，饼与汤的组合",
       "dishHighlights": [
-        "Pancake in soup",
-        "Special sauce",
-        "Lung and tofu skin",
-        "Traditional"
+        "汤饼",
+        "特色酱料",
+        "牛肺和豆皮",
+        "传统"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "traditional",
-        "luoyang-specialty"
+        "本地",
+        "小吃",
+        "传统",
+        "洛阳特色"
       ],
       "imageUrl": "/img/ext/0035c7b9518d.webp",
       "phone": "+86 037 9 2070 4044"
@@ -1728,59 +1728,59 @@
     {
       "id": "luoyang-19",
       "name": "鲤鱼跃龙门",
-      "nameEn": "Carp Jumping Dragon Gate",
-      "type": "local",
-      "cuisine": "Luoyang",
+      "nameEn": "鲤鱼跳龙门",
+      "type": "本地",
+      "cuisine": "洛阳菜",
       "avgPrice": 120,
       "rating": 4.6,
-      "address": "Near Longmen Grottoes",
+      "address": "龙门石窟附近",
       "coordinates": {
         "lat": 34.4522,
         "lng": 112.4722
       },
       "phone": "+86 379 6590 8888",
       "hours": "10:00-22:00",
-      "description": "Famous dish of carp prepared in traditional style.",
+      "description": "传统方式烹制的著名鲤鱼菜肴",
       "dishHighlights": [
-        "Carp dish",
-        "Traditional recipe",
-        "Named after legend",
-        "Local fish"
+        "鲤鱼菜肴",
+        "传统配方",
+        "因传说而得名",
+        "本地鱼"
       ],
       "tags": [
-        "local",
-        "famous",
-        "fish",
-        "special-occasion"
+        "本地",
+        "著名",
+        "鱼",
+        "特殊场合"
       ],
       "imageUrl": "/img/ext/bb8230fbc1f5.webp"
     },
     {
       "id": "luoyang-20",
       "name": "豆腐汤",
-      "nameEn": "Tofu Soup",
-      "type": "local",
-      "cuisine": "Luoyang Snacks",
+      "nameEn": "豆腐汤",
+      "type": "本地",
+      "cuisine": "洛阳小吃",
       "avgPrice": 15,
       "rating": 4.4,
-      "address": "Street vendors",
+      "address": "街头摊贩",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "06:00-14:00",
-      "description": "Light tofu soup - popular breakfast.",
+      "description": "清淡豆腐汤 - 受欢迎的早餐。",
       "dishHighlights": [
-        "Tofu soup",
-        "Vegetable soup",
-        "Light",
-        "Healthy"
+        "豆腐汤",
+        "蔬菜汤",
+        "清淡",
+        "健康"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "soup",
-        "vegetarian"
+        "本地",
+        "早餐",
+        "汤",
+        "素食"
       ],
       "imageUrl": "/img/ext/981918437087.webp",
       "phone": "+86 037 9 6648 7685"
@@ -1788,29 +1788,29 @@
     {
       "id": "luoyang-21",
       "name": "炸麻球",
-      "nameEn": "Fried Sesame Balls",
-      "type": "local",
-      "cuisine": "Dessert",
+      "nameEn": "油炸芝麻球",
+      "type": "本地",
+      "cuisine": "甜品",
       "avgPrice": 10,
       "rating": 4.3,
-      "address": "Street vendors",
+      "address": "街边小摊",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "全天",
-      "description": "Crispy sesame ball dessert - common snack.",
+      "description": "酥脆芝麻球甜点 - 常见小吃。",
       "dishHighlights": [
-        "Sesame balls",
-        "Sweet filling",
-        "Crispy",
-        "Traditional"
+        "芝麻球",
+        "甜馅",
+        "酥脆",
+        "传统"
       ],
       "tags": [
-        "local",
-        "dessert",
-        "snacks",
-        "traditional"
+        "本地",
+        "甜点",
+        "小吃",
+        "传统"
       ],
       "imageUrl": "/img/ext/58d532e5bd77.webp",
       "phone": "+86 037 9 9388 2894"
@@ -1818,29 +1818,29 @@
     {
       "id": "luoyang-22",
       "name": "蜜汁糖藕",
-      "nameEn": "Honey Glazed Lotus Root",
-      "type": "local",
-      "cuisine": "Dessert",
+      "nameEn": "蜜汁莲藕",
+      "type": "本地",
+      "cuisine": "甜点",
       "avgPrice": 20,
       "rating": 4.5,
-      "address": "Old City",
+      "address": "老城",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "09:00-21:00",
-      "description": "Sweet lotus root - traditional dessert.",
+      "description": "甜莲藕-传统甜点",
       "dishHighlights": [
-        "Glazed lotus root",
-        "Sweet",
-        "Honey",
-        "Traditional"
+        "蜜汁莲藕",
+        "甜",
+        "蜂蜜",
+        "传统"
       ],
       "tags": [
-        "local",
-        "dessert",
-        "sweet",
-        "traditional"
+        "本地",
+        "甜点",
+        "甜",
+        "传统"
       ],
       "imageUrl": "/img/ext/6a7d5eb76c1d.webp",
       "phone": "+86 037 9 3545 8486"
@@ -1848,29 +1848,29 @@
     {
       "id": "luoyang-23",
       "name": "灌汤包",
-      "nameEn": "Soup Dumplings",
-      "type": "local",
-      "cuisine": "Luoyang",
+      "nameEn": "汤包",
+      "type": "本地",
+      "cuisine": "洛阳",
       "avgPrice": 40,
       "rating": 4.6,
-      "address": "Various locations",
+      "address": "多处地址",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "07:00-20:00",
-      "description": "Juicy soup dumplings - popular throughout China.",
+      "description": "多汁的汤包 - 在中国很受欢迎。",
       "dishHighlights": [
-        "Soup dumplings",
-        "Pork filling",
-        "Hot broth",
-        "Delicate"
+        "汤包",
+        "猪肉馅",
+        "热汤",
+        "精致"
       ],
       "tags": [
-        "local",
-        "dumplings",
-        "popular",
-        "soup"
+        "本地",
+        "饺子",
+        "热门",
+        "汤"
       ],
       "imageUrl": "/img/ext/abe41a7612d1.webp",
       "phone": "+86 037 9 4141 7542"
@@ -1878,29 +1878,29 @@
     {
       "id": "luoyang-24",
       "name": "老城饺子",
-      "nameEn": "Old City Dumplings",
-      "type": "local",
-      "cuisine": "Dumplings",
+      "nameEn": "老城饺子",
+      "type": "本地",
+      "cuisine": "饺子",
       "avgPrice": 40,
       "rating": 4.5,
-      "address": "Old City",
+      "address": "老城",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "10:00-22:00",
-      "description": "Handmade dumplings with various traditional fillings.",
+      "description": "手工制作的各种传统馅料饺子。",
       "dishHighlights": [
-        "Handmade dumplings",
-        "Various fillings",
-        "Traditional",
-        "Fresh"
+        "手工水饺",
+        "多种馅料",
+        "传统",
+        "新鲜"
       ],
       "tags": [
-        "local",
-        "dumplings",
-        "handmade",
-        "traditional"
+        "本地",
+        "饺子",
+        "手工",
+        "传统"
       ],
       "imageUrl": "/img/ext/3a727a953eca.webp",
       "phone": "+86 037 9 4596 1338"
@@ -1908,29 +1908,29 @@
     {
       "id": "luoyang-25",
       "name": "洛阳大排档",
-      "nameEn": "Luoyang Night Food Stalls",
-      "type": "local",
-      "cuisine": "Various",
+      "nameEn": "洛阳夜市摊位",
+      "type": "本地",
+      "cuisine": "多种风味",
       "avgPrice": 40,
       "rating": 4.3,
-      "address": "Night market areas",
+      "address": "夜市区",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "17:00-02:00",
-      "description": "Various food stalls open late at night.",
+      "description": "各种小吃摊深夜营业",
       "dishHighlights": [
-        "Late night food",
-        "Various options",
-        "Atmosphere",
-        "Social"
+        "夜宵",
+        "多种选择",
+        "氛围",
+        "社交"
       ],
       "tags": [
-        "local",
-        "night-market",
-        "late-night",
-        "variety"
+        "本地",
+        "夜市",
+        "深夜",
+        "多样"
       ],
       "imageUrl": "/img/ext/d48e7dcd448f.webp",
       "phone": "+86 037 9 2618 5649"
@@ -1939,7 +1939,7 @@
       "id": "luoyang-26",
       "name": "老街锅贴",
       "nameEn": "老街锅贴 (锅贴)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "锅贴",
       "avgPrice": 94,
       "rating": 4.4,
@@ -1968,7 +1968,7 @@
       "id": "luoyang-28",
       "name": "老街浆面条",
       "nameEn": "老街浆面条 (浆面条)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "浆面条",
       "avgPrice": 148,
       "rating": 4,
@@ -1997,7 +1997,7 @@
       "id": "luoyang-30",
       "name": "老字号水席",
       "nameEn": "老字号水席 (水席)",
-      "type": "street",
+      "type": "街边",
       "cuisine": "水席",
       "avgPrice": 55,
       "rating": 4.6,
@@ -2026,7 +2026,7 @@
       "id": "luoyang-32",
       "name": "巷子锅贴",
       "nameEn": "巷子锅贴 (锅贴)",
-      "type": "street",
+      "type": "街边",
       "cuisine": "锅贴",
       "avgPrice": 60,
       "rating": 4.6,
@@ -2055,7 +2055,7 @@
       "id": "luoyang-34",
       "name": "地道不翻汤",
       "nameEn": "地道不翻汤 (不翻汤)",
-      "type": "street",
+      "type": "街边",
       "cuisine": "不翻汤",
       "avgPrice": 41,
       "rating": 4.5,
@@ -2084,7 +2084,7 @@
       "id": "luoyang-36",
       "name": "地道牛肉汤",
       "nameEn": "地道牛肉汤 (牛肉汤)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "牛肉汤",
       "avgPrice": 106,
       "rating": 4.6,
@@ -2113,7 +2113,7 @@
       "id": "luoyang-38",
       "name": "正宗牛肉汤",
       "nameEn": "正宗牛肉汤 (牛肉汤)",
-      "type": "cafe",
+      "type": "咖啡馆",
       "cuisine": "牛肉汤",
       "avgPrice": 77,
       "rating": 4.2,
@@ -2142,7 +2142,7 @@
       "id": "luoyang-40",
       "name": "街边水席",
       "nameEn": "街边水席 (水席)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "水席",
       "avgPrice": 105,
       "rating": 4.1,
@@ -2171,7 +2171,7 @@
       "id": "luoyang-42",
       "name": "老洛阳锅贴",
       "nameEn": "老洛阳锅贴 (锅贴)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "锅贴",
       "avgPrice": 102,
       "rating": 4.3,
@@ -2200,7 +2200,7 @@
       "id": "luoyang-44",
       "name": "地道不翻汤",
       "nameEn": "地道不翻汤 (不翻汤)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "不翻汤",
       "avgPrice": 149,
       "rating": 4,
@@ -2229,7 +2229,7 @@
       "id": "luoyang-46",
       "name": "地道牛肉汤",
       "nameEn": "地道牛肉汤 (牛肉汤)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "牛肉汤",
       "avgPrice": 100,
       "rating": 4.9,
@@ -2258,7 +2258,7 @@
       "id": "luoyang-48",
       "name": "洛阳味浆面条",
       "nameEn": "洛阳味浆面条 (浆面条)",
-      "type": "street",
+      "type": "街边",
       "cuisine": "浆面条",
       "avgPrice": 32,
       "rating": 4.4,
@@ -2287,7 +2287,7 @@
       "id": "luoyang-50",
       "name": "老字号水席",
       "nameEn": "老字号水席 (水席)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "水席",
       "avgPrice": 95,
       "rating": 4.4,
@@ -2316,7 +2316,7 @@
       "id": "luoyang-52",
       "name": "正宗浆面条",
       "nameEn": "正宗浆面条 (浆面条)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "浆面条",
       "avgPrice": 90,
       "rating": 4.8,
@@ -2345,7 +2345,7 @@
       "id": "luoyang-54",
       "name": "老街牛肉汤",
       "nameEn": "老街牛肉汤 (牛肉汤)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "牛肉汤",
       "avgPrice": 133,
       "rating": 4,
@@ -2374,7 +2374,7 @@
       "id": "luoyang-56",
       "name": "老洛阳不翻汤",
       "nameEn": "老洛阳不翻汤 (不翻汤)",
-      "type": "street",
+      "type": "街边",
       "cuisine": "不翻汤",
       "avgPrice": 35,
       "rating": 4.4,
@@ -2403,7 +2403,7 @@
       "id": "luoyang-58",
       "name": "老洛阳锅贴",
       "nameEn": "老洛阳锅贴 (锅贴)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "锅贴",
       "avgPrice": 64,
       "rating": 4.1,
@@ -2432,7 +2432,7 @@
       "id": "luoyang-60",
       "name": "阿婆水席",
       "nameEn": "阿婆水席 (水席)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "水席",
       "avgPrice": 120,
       "rating": 4.2,
@@ -2461,7 +2461,7 @@
       "id": "luoyang-62",
       "name": "巷子水席",
       "nameEn": "巷子水席 (水席)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "水席",
       "avgPrice": 54,
       "rating": 4.5,
@@ -2490,7 +2490,7 @@
       "id": "luoyang-64",
       "name": "传统水席",
       "nameEn": "传统水席 (水席)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "水席",
       "avgPrice": 122,
       "rating": 4.6,
@@ -2519,7 +2519,7 @@
       "id": "luoyang-66",
       "name": "街边不翻汤",
       "nameEn": "街边不翻汤 (不翻汤)",
-      "type": "cafe",
+      "type": "咖啡馆",
       "cuisine": "不翻汤",
       "avgPrice": 79,
       "rating": 4.7,
@@ -2548,7 +2548,7 @@
       "id": "luoyang-68",
       "name": "巷子锅贴",
       "nameEn": "巷子锅贴 (锅贴)",
-      "type": "street",
+      "type": "街边",
       "cuisine": "锅贴",
       "avgPrice": 41,
       "rating": 4.2,
@@ -2577,7 +2577,7 @@
       "id": "luoyang-70",
       "name": "老洛阳不翻汤",
       "nameEn": "老洛阳不翻汤 (不翻汤)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "不翻汤",
       "avgPrice": 80,
       "rating": 4.5,
@@ -2606,7 +2606,7 @@
       "id": "luoyang-72",
       "name": "老洛阳浆面条",
       "nameEn": "老洛阳浆面条 (浆面条)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "浆面条",
       "avgPrice": 115,
       "rating": 4.7,
@@ -2635,7 +2635,7 @@
       "id": "luoyang-74",
       "name": "老洛阳不翻汤",
       "nameEn": "老洛阳不翻汤 (不翻汤)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "不翻汤",
       "avgPrice": 44,
       "rating": 4.3,
@@ -3033,92 +3033,92 @@
   "culturalTips": [
     {
       "category": "history",
-      "title": "Ancient Capital",
-      "content": "Luoyang served as capital for 13 dynasties over 5,000 years, making it one of China's most historically significant cities. The Longmen Grottoes and White Horse Temple are remnants of this glorious past.",
+      "title": "古都",
+      "content": "洛阳在5000多年历史中曾作为13个朝代的都城，是中国最具历史意义的城市之一。龙门石窟和白马寺是这一辉煌历史的见证。",
       "importance": "high"
     },
     {
       "category": "buddhism",
-      "title": "Birthplace of Chinese Buddhism",
-      "content": "White Horse Temple is China's first Buddhist temple, established in 68 AD when Buddhism entered China. Luoyang became the center of Chinese Buddhism.",
+      "title": "中国佛教发源地",
+      "content": "白马寺是中国第一座佛教寺庙，公元68年佛教传入中国时建立。洛阳成为中国佛教的中心。",
       "importance": "high"
     },
     {
       "category": "martial",
-      "title": "Kung Fu Birthplace",
-      "content": "The Shaolin Temple is recognized as the birthplace of Chinese martial arts (kung fu). Monks have practiced martial arts here for over 1,500 years.",
+      "title": "功夫发源地",
+      "content": "少林寺被认为是中国武术（功夫）的发源地。僧人们在此习武已有1500多年的历史。",
       "importance": "high"
     },
     {
       "category": "food",
-      "title": "Luoyang Water Banquet",
-      "content": "The famous 'water banquet' (水席) consists of 24 dishes served in sequence, each with broth or soup as the main component. Must-try for visitors.",
+      "title": "洛阳水席",
+      "content": "著名的「水席」由24道菜依次上桌，每道菜都以汤或羹为主。游客必尝的美食。",
       "importance": "high"
     },
     {
       "category": "flower",
-      "title": "City Flower",
-      "content": "Luoyang is famous for peonies. The Peony Festival in April-May draws millions of visitors. The flowers are considered symbols of wealth and honor.",
+      "title": "市花",
+      "content": "洛阳以牡丹闻名。四月至五月的牡丹节吸引数百万游客。牡丹被视为财富和荣誉的象征。",
       "importance": "medium"
     },
     {
       "category": "art",
-      "title": "Longmen Grottoes",
-      "content": "The Longmen Grottoes contain over 100,000 Buddhist statues carved into mountainside cliffs. The largest is 17 meters tall. A UNESCO World Heritage Site.",
+      "title": "龙门石窟",
+      "content": "龙门石窟包含超过10万尊佛教雕像，雕刻在山崖岩壁上。最大的雕像高17米。联合国教科文组织世界遗产。",
       "importance": "high"
     },
     {
       "category": "dynasty",
-      "title": "Tang Dynasty Legacy",
-      "content": "Luoyang was a major capital during the Tang Dynasty, China's golden age. The Tang period saw great cultural flourishing in art, poetry and religion.",
+      "title": "大唐遗风",
+      "content": "洛阳在唐代是中国的主要都城，是中国历史上的黄金时代。唐代在艺术、诗歌和宗教方面取得了伟大的文化繁荣。",
       "importance": "medium"
     },
     {
       "category": "warriors",
-      "title": "Terracotta Warriors Connection",
-      "content": "Luoyang's connection to the Longmen Grottoes and ancient capitals makes it a complement to Xi'an's Terracotta Warriors. Both cities showcase China's imperial history.",
+      "title": "兵马俑关联",
+      "content": "洛阳与龙门石窟和古都的联系，使其成为西安兵马俑的补充。两座城市都展示了中国帝国的历史。",
       "importance": "medium"
     },
     {
       "category": "martial",
-      "title": "Shaolin Kung Fu School",
-      "content": "Many international visitors come to Luoyang specifically to train at Shaolin Temple. Kung fu schools offer programs ranging from a few days to several months.",
+      "title": "少林功夫学校",
+      "content": "许多国际游客专程来洛阳在少林寺学习功夫。功夫学校提供从几天到几个月的课程。",
       "importance": "high"
     },
     {
       "category": "food",
-      "title": "Peony Flower Dish",
-      "content": "Peony yan cai (牡丹燕菜) is Luoyang's signature dish, made from taro and named after the city flower. It's a must-try at traditional restaurants.",
+      "title": "洛阳牡丹宴",
+      "content": "牡丹燕菜是洛阳的招牌菜，由芋头制成，因市花而命名。在传统餐厅必尝。",
       "importance": "medium"
     },
     {
       "category": "etiquette",
-      "title": "Temple Visit Etiquette",
-      "content": "When visiting Buddhist temples, remove hats, dress modestly, and avoid loud conversations. Photography may be restricted in some areas.",
+      "title": "寺庙参访礼仪",
+      "content": "参观佛教寺庙时，请摘下帽子，穿着得体，避免大声交谈。某些区域可能禁止拍照。",
       "importance": "medium"
     },
     {
       "category": "history",
-      "title": "Dragon Gate Grottoes",
-      "content": "The Longmen Grottoes were carved over 400 years during the Northern Wei and Tang dynasties. They represent the pinnacle of Chinese stone carving art.",
+      "title": "龙门石窟",
+      "content": "龙门石窟在北魏和唐代期间历时400多年雕刻而成。代表了中国石雕艺术的巅峰。",
       "importance": "high"
     },
     {
       "category": "architecture",
-      "title": "Ancient City Walls",
-      "content": "Luoyang's old city walls and gates like Lizheng Gate and Yingtian Gate offer glimpses into the city's imperial past.",
+      "title": "古城墙",
+      "content": "洛阳的老城墙和城门，如丽正门和应天门，让人们一窥城市帝都的过去。",
       "importance": "low"
     },
     {
       "category": "legend",
-      "title": "Legend of Baimen",
-      "content": "The legend of the White Horse carrying Buddhist scriptures from India to China gave White Horse Temple its name and marked Buddhism's official entry into China.",
+      "title": "白门传说",
+      "content": "白马驮着佛经从印度来到中国的传说，使白马寺得名，并标志着佛教正式传入中国。",
       "importance": "medium"
     },
     {
       "category": "crafts",
-      "title": "Luoyang Tri-color Pottery",
-      "content": "Tang tri-color glazed pottery (唐三彩) is famous from the Tang Dynasty. These ceramic pieces typically feature vibrant glazes in brown, yellow, and green.",
+      "title": "洛阳三彩陶",
+      "content": "唐三彩在唐代闻名。这些陶瓷作品通常采用棕色、黄色和绿色的鲜艳釉色。",
       "importance": "medium"
     }
   ],
@@ -3126,92 +3126,92 @@
     {
       "type": "ambulance",
       "name": "洛阳急救中心",
-      "nameEn": "Luoyang Emergency Center",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "120",
-      "notes": "Major hospitals have English interpretation"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "police",
       "name": "洛阳市公安局",
-      "nameEn": "Luoyang Public Security Bureau",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "110",
-      "notes": "Tourist police at major attractions"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "hospital",
       "name": "河南科技大学第一附属医院",
-      "nameEn": "First Affiliated Hospital of Henan University of Science and Technology",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "+86 379 6483 0666",
-      "address": "24 Jinglu Road",
+      "address": "广州",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
-      "notes": "English-speaking staff available"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "hospital",
       "name": "洛阳正骨医院",
-      "nameEn": "Luoyang Orthopedic Hospital",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "+86 379 6355 2123",
-      "address": "99 Xinhua Road",
-      "notes": "Famous for traditional bone-setting"
+      "address": "广州",
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "fire",
       "name": "洛阳消防",
-      "nameEn": "Luoyang Fire Department",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "119",
-      "notes": "Fire and rescue services"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "tourist-police",
       "name": "洛阳旅游警察",
-      "nameEn": "Luoyang Tourist Police",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "+86 379 6330 8110",
-      "notes": "English-speaking tourist police"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "hospital",
       "name": "洛阳市中心医院",
-      "nameEn": "Luoyang Central Hospital",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "+86 379 6389 2123",
-      "address": "288 Zhongzhou Road",
+      "address": "广州",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
-      "notes": "24-hour emergency services"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "pharmacy",
       "name": "洛阳大药房",
-      "nameEn": "Luoyang Pharmacy",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "+86 379 6333 8888",
-      "address": "Main street area",
-      "notes": "24-hour pharmacy"
+      "address": "广州",
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "traffic",
       "name": "洛阳交通服务",
-      "nameEn": "Luoyang Traffic Police",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "122",
-      "notes": "Traffic accidents and road assistance"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "consumer-rights",
       "name": "洛阳消费者投诉热线",
-      "nameEn": "Luoyang Consumer Rights Hotline",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "12315",
-      "notes": "Consumer protection and complaints"
+      "notes": "适用于新加坡公民"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese, Luoyang dialect",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Bottled water recommended"
+    "language": "普通话（中文）",
+    "currency": "人民币 (CNY/RMB)",
+    "visa": "大多数国籍需要签证。符合条件的旅客可在机场办理 72 小时过境签证。",
+    "timeZone": "UTC+8 (北京时间)",
+    "electricity": "220V/50Hz，A 型/I 型插头",
+    "water": "自来水可饮用但建议使用瓶装水"
   }
 }

@@ -10,12 +10,13 @@ const lang = (Astro.params.lang as string) || "en";
 
 import CompanyRegistrationClient from "@/components/Guide/CompanyRegistrationClient";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { translations } from "@/i18n/translations";
 import { getLangFromUrl } from '@/i18n/utils';
 ---
 
 <BaseLayout
-  title="China Company Registration Guide - ChinaConnect"
-  description="Step-by-step guide to registering a WFOE, Representative Office, or other entity in China as a foreign investor. Complete timeline and document checklist."
+  title={(translations[lang] || translations.en).businessGuidePage?.registrationTitle || "China Company Registration Guide - ChinaConnect"}
+  description={(translations[lang] || translations.en).businessGuidePage?.registrationDescription || "Step-by-step guide to registering a WFOE, Representative Office, or other entity in China as a foreign investor. Complete timeline and document checklist."}
   meta={{
     keywords: ['register company China', 'WFOE registration', 'foreign-owned enterprise', 'China business entity setup', 'company registration China'],
   }}
@@ -35,10 +36,8 @@ import { getLangFromUrl } from '@/i18n/utils';
           <p class="text-muted-foreground text-lg">工商注册指南</p>
         </div>
       </div>
-      <p class="text-muted-foreground max-w-2xl">
-        Comprehensive guide to registering a business entity in China as a foreign investor.
-        Choose between WFOE, Representative Office, and other structures.
-      </p>
+      <p class="text-muted-foreground max-w-2xl" data-i18n="businessGuidePage.registrationDescription">Comprehensive guide to registering a business entity in China as a foreign investor.
+        Choose between WFOE, Representative Office, and other structures.</p>
     </div>
 
     <CompanyRegistrationClient client:load lang={lang} />

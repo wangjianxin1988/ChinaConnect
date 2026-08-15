@@ -10,12 +10,13 @@ const lang = (Astro.params.lang as string) || "en";
 
 import InvitationLetterClient from "@/components/Guide/InvitationLetterClient";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { translations } from "@/i18n/translations";
 import { getLangFromUrl } from '@/i18n/utils';
 ---
 
 <BaseLayout
-  title="Business Invitation Letter Templates - ChinaConnect"
-  description="Download ready-to-use bilingual invitation letter templates for China visa applications and business visits. Fill in the fields and download instantly."
+  title={(translations[lang] || translations.en).businessGuidePage?.invitationTitle || "Business Invitation Letter Templates - ChinaConnect"}
+  description={(translations[lang] || translations.en).businessGuidePage?.invitationDescription || "Download ready-to-use bilingual invitation letter templates for China visa applications and business visits. Fill in the fields and download instantly."}
   meta={{
     keywords: ['China business visa invitation letter', 'Chinese invitation letter template', 'Business Invitation Letters', 'visa invitation China'],
   }}
@@ -35,10 +36,8 @@ import { getLangFromUrl } from '@/i18n/utils';
           <p class="text-muted-foreground text-lg" data-i18n="businessGuidePage.invitationSubtitle">Business Invitation Letters</p>
         </div>
       </div>
-      <p class="text-muted-foreground max-w-2xl">
-        Ready-to-use invitation letter templates for visa applications, trade visits, and business meetings.
-        Available in bilingual, English-only, and simplified formats.
-      </p>
+      <p class="text-muted-foreground max-w-2xl" data-i18n="businessGuidePage.invitationDescription">Ready-to-use invitation letter templates for visa applications, trade visits, and business meetings.
+        Available in bilingual, English-only, and simplified formats.</p>
     </div>
 
     <InvitationLetterClient client:load lang={lang} />

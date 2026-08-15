@@ -31,9 +31,11 @@ if (!city) {
   return Astro.redirect("/404");
 }
 
-const hotels = getHotelsByCity(slug as string);
-const categoryCounts = getHotelCategoryCounts(slug as string);
-const totalCount = getHotelCount(slug as string);
+const hotels = getHotelsByCity(slug as string, lang);
+const categoryCounts = getHotelCategoryCounts(slug as string, lang);
+const totalCount = getHotelCount(slug as string, lang);
+const localCityName = translations[lang]?.["city." + city.slug + ".name"] ?? translations.en?.["city." + city.slug + ".name"] ?? city.name;
+
 
 // Read ?category= from URL so users landing from a category card on the city
 // home page land on the matching filtered view.
@@ -50,12 +52,13 @@ const initialHotels = initialCategory
   : hotels;
 
 const pageTitle = initialCategory
-  ? `${city.nameEn} ${HOTEL_CATEGORY_CONFIG[initialCategory].labelZh} Hotels | ChinaConnect`
-  : `${city.nameEn} Hotels - All Categories | ChinaConnect`;
+  ? (lang === "ja" ? `${localCityName}の${HOTEL_CATEGORY_CONFIG[initialCategory].labels && HOTEL_CATEGORY_CONFIG[initialCategory].labels.ja || HOTEL_CATEGORY_CONFIG[initialCategory].labelEn}ホテル | ChinaConnect` : `${city.nameEn} ${HOTEL_CATEGORY_CONFIG[initialCategory].labelEn} Hotels | ChinaConnect`)
+  : (lang === "ja" ? `${localCityName}のホテル - 全カテゴリー | ChinaConnect` : `${city.nameEn} Hotels - All Categories | ChinaConnect`);
 const totalFiltered = initialHotels.length;
 const pageDescription = initialCategory
-  ? `Browse ${totalFiltered} ${HOTEL_CATEGORY_CONFIG[initialCategory].labelEn} hotels in ${city.nameEn}. Open in map app, tap to call.`
-  : `Find the perfect hotel in ${city.nameEn}. Browse luxury, mid-range, budget, hostels, love hotels, and esports hotels. ${hotels.length} options available.`;
+  ? (lang === "ja" ? `${localCityName}の${HOTEL_CATEGORY_CONFIG[initialCategory].labels && HOTEL_CATEGORY_CONFIG[initialCategory].labels.ja || HOTEL_CATEGORY_CONFIG[initialCategory].labelEn}ホテル${totalFiltered}軒を閲覧。地図APPで開く、tapで電話予約。` : `Browse ${totalFiltered} ${HOTEL_CATEGORY_CONFIG[initialCategory].labelEn} hotels in ${city.nameEn}. Open in map app, tap to call.`)
+  : (lang === "ja" ? `${localCityName}で理想的なホテルを見つけよう。ラグジュアリー、ミッドレンジ、バジェット、ホステル、ラブホテル、eスポーツホテルなど全カテゴリー。${hotels.length}件のオプション.` : `Find the perfect hotel in ${city.nameEn}. Browse luxury, mid-range, budget, hostels, and esports hotels. ${hotels.length} options available.`);
+import { ct } from "@/i18n/components-strings";
 ---
 
 <BaseLayout
@@ -76,15 +79,15 @@ const pageDescription = initialCategory
       <nav class="mb-4">
         <a href="/" class="text-teal-200 hover:text-white transition-colors" data-i18n="cityPage.home">Home</a>
         <span class="text-teal-300 mx-2">/</span>
-        <a href={`/city/${city.slug}`} class="text-teal-200 hover:text-white transition-colors">{city.nameEn}</a>
+        <a href={`/city/${city.slug}`} class="text-teal-200 hover:text-white transition-colors">{localCityName}</a>
         <span class="text-teal-300 mx-2">/</span>
         <span class="text-white" data-i18n="cityPage.hotelsHeading">Hotels</span>
       </nav>
 
       <h1 class="text-3xl md:text-4xl font-bold text-white mb-2 flex items-center gap-3">
-        <span>🏨</span> {city.nameEn} Hotels
+        <span>🏨</span> {localCityName} {ct(lang, "hotelsHeading", "Hotels")}
       </h1>
-      <p class="text-teal-100">{totalCount} hotels across {Object.keys(categoryCounts).length} categories</p>
+      <p class="text-teal-100">{totalCount} {ct(lang,"hotels_count_unit","hotels")} {ct(lang,"hotels_across_label","across")} {Object.keys(categoryCounts).length} {ct(lang,"hotels_categories_label","categories")}</p>
     </div>
   </section>
 
@@ -96,7 +99,7 @@ const pageDescription = initialCategory
           <div class="flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-lg shrink-0">
             <span class="text-lg">{config.icon}</span>
             <div>
-              <div class="text-xs text-gray-500">{config.labelZh}</div>
+              <div class="text-xs text-gray-500">{((config.labels && config.labels[lang]) || config.labelEn)}</div>
               <div class="font-bold text-gray-900">{categoryCounts[key as HotelCategory] || 0}</div>
             </div>
           </div>
@@ -112,6 +115,7 @@ const pageDescription = initialCategory
       <HotelCategoryFilter
         activeCategory={initialCategory}
         categoryCounts={categoryCounts}
+        lang={lang}
         client:visible
       />
     </div>

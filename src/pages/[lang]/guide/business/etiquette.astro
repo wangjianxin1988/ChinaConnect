@@ -10,12 +10,13 @@ const lang = (Astro.params.lang as string) || "en";
 
 import EtiquetteClient from "@/components/Guide/EtiquetteClient";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { translations } from "@/i18n/translations";
 import { getLangFromUrl } from '@/i18n/utils';
 ---
 
 <BaseLayout
-  title="Chinese Business Etiquette Guide - ChinaConnect"
-  description="Master Chinese business etiquette including business card exchange, dining, meetings, and gift giving. Practical do's and don'ts for foreign business professionals."
+  title={(translations[lang] || translations.en).businessGuidePage?.etiquetteTitle || "Chinese Business Etiquette Guide - ChinaConnect"}
+  description={(translations[lang] || translations.en).businessGuidePage?.etiquetteDescription || "Master Chinese business etiquette including business card exchange, dining, meetings, and gift giving. Practical do's and don'ts for foreign business professionals."}
   meta={{
     keywords: ['Chinese business etiquette', 'China business etiquette', 'business card exchange China', 'Chinese dining etiquette', 'Business Etiquette Essentials'],
   }}
@@ -35,10 +36,8 @@ import { getLangFromUrl } from '@/i18n/utils';
           <p class="text-muted-foreground text-lg" data-i18n="businessGuidePage.etiquetteSubtitle">Business Etiquette Essentials</p>
         </div>
       </div>
-      <p class="text-muted-foreground max-w-2xl">
-        Master the unwritten rules of Chinese business culture. From business card exchange to dining etiquette —
-        practical guidance to help you earn respect and build lasting relationships.
-      </p>
+      <p class="text-muted-foreground max-w-2xl" data-i18n="businessGuidePage.etiquetteDescription">Master the unwritten rules of Chinese business culture. From business card exchange to dining etiquette —
+        practical guidance to help you earn respect and build lasting relationships.</p>
     </div>
 
     <EtiquetteClient client:load lang={lang} />

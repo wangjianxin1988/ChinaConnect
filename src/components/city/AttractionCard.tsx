@@ -1,3 +1,4 @@
+import { ct } from "@/i18n/components-strings";
 import React from "react";
 import { MapDirectionsLink } from "@/components/ui/MapDirectionsLink";
 
@@ -22,23 +23,41 @@ interface AttractionCardProps {
   attraction: AttractionData;
   index?: number;
   onSelectMapMarker?: (coords: { lat: number; lng: number }) => void;
+  lang?: string;
 }
 
-const CATEGORY_STYLES: Record<AttractionData["category"], { label: string; className: string }> = {
-  historical: { label: "Historical", className: "bg-amber-100 text-amber-700 border-amber-200" },
-  cultural: { label: "Cultural", className: "bg-purple-100 text-purple-700 border-purple-200" },
-  natural: { label: "Natural", className: "bg-green-100 text-green-700 border-green-200" },
-  modern: { label: "Modern", className: "bg-blue-100 text-blue-700 border-blue-200" },
-};
+function getCategoryStyles(lang: string = "en"): Record<AttractionData["category"], { label: string; className: string }> {
+  return {
+    historical: { label: ct(lang, "cat_historical", "Historical"), className: "bg-amber-100 text-amber-700 border-amber-200" },
+    cultural: { label: ct(lang, "cat_cultural", "Cultural"), className: "bg-purple-100 text-purple-700 border-purple-200" },
+    natural: { label: ct(lang, "cat_natural", "Natural"), className: "bg-green-100 text-green-700 border-green-200" },
+    modern: { label: ct(lang, "cat_modern", "Modern"), className: "bg-blue-100 text-blue-700 border-blue-200" },
+  };
+}
 
-const DEFAULT_CATEGORY_STYLE = {
-  label: "Other",
-  className: "bg-gray-100 text-gray-700 border-gray-200",
-};
+function getDefaultCategoryStyle(lang: string = "en") {
+  return {
+    label: ct(lang, "cat_other", "Other"),
+    className: "bg-gray-100 text-gray-700 border-gray-200",
+  };
+}
 
-export function AttractionCard({ attraction, index, onSelectMapMarker }: AttractionCardProps) {
-  const catStyle = CATEGORY_STYLES[attraction.category] || DEFAULT_CATEGORY_STYLE;
-
+export function AttractionCard({ attraction, index, onSelectMapMarker, lang = "en" }: AttractionCardProps) {
+  const catStyle = getCategoryStyles(lang)[attraction.category] || getDefaultCategoryStyle(lang);
+  // Display-name selection logic:
+  //   zh-CN / zh-TW  -> attraction.name (Chinese original)
+  //   ja / ko         -> prefers attraction.nameJa / nameKo from cities-i18n/<lang>/<slug>.json
+  //                       (falls back to nameEn so users see 汉字/가나 instead of 中文)
+  //   fr / de / ru / vi / th / ar / fa / en -> attraction.nameEn
+  const localKey = (lang === "ja") ? "nameJa"
+                  : (lang === "ko") ? "nameKo"
+                  : null;
+  const localised = localKey ? (attraction as any)[localKey] : undefined;
+  const isCJK = lang === "zh-CN" || lang === "zh-TW";
+  const displayName = isCJK && attraction.name
+    ? attraction.name
+    : (localised || attraction.nameEn || attraction.name);
+  const secondaryName = (displayName === attraction.nameEn) ? attraction.name : attraction.nameEn;
   return (
     <div className="bg-white border border-gray-100 rounded-xl overflow-hidden card-hover">
       {/* Image */}
@@ -71,7 +90,7 @@ export function AttractionCard({ attraction, index, onSelectMapMarker }: Attract
             <div className="min-w-0 flex-1">
               <div className="flex items-center gap-2 mb-1">
                 <h3 className="text-lg font-bold text-gray-900 leading-tight">
-                  {attraction.nameEn}
+                  {displayName}
                 </h3>
                 <span
                   className={`shrink-0 px-2 py-0.5 rounded-full text-xs font-semibold border ${catStyle.className}`}
@@ -79,14 +98,16 @@ export function AttractionCard({ attraction, index, onSelectMapMarker }: Attract
                   {catStyle.label}
                 </span>
               </div>
-              <p className="text-gray-500 text-sm">{attraction.name}</p>
+              {secondaryName && secondaryName !== displayName && (
+                <p className="text-gray-500 text-sm">{secondaryName}</p>
+              )}
             </div>
 
             {attraction.coordinates && (
               <button
                 onClick={() => onSelectMapMarker?.(attraction.coordinates!)}
                 className="shrink-0 p-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
-                title="Show on map"
+                title={ct(lang, "show_on_map", "Show on map")}
                 aria-label={`Show ${attraction.nameEn} on map`}
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -188,7 +209,7 @@ export function AttractionCard({ attraction, index, onSelectMapMarker }: Attract
                     name={attraction.nameEn}
                     className="text-blue-600 hover:text-blue-700 text-xs font-medium hover:underline"
                   >
-                    Get Directions →
+                    {ct(lang, "get_directions", "Get Directions")} →
                   </MapDirectionsLink>
                 )}
               </div>

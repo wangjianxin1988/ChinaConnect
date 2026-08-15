@@ -16,8 +16,8 @@ import { generateBreadcrumbSchema, generateFAQSchema, generateHowToSchema, gener
 import { getLangFromUrl } from '@/i18n/utils';
 
 // Payment Guide page SEO
-const pageTitle = translations.en.guidePage?.paymentTitle || "Payment Guide - ChinaConnect";
-const pageDescription = translations.en.guidePage?.paymentDescription || "Complete payment guide for China travel. Alipay, WeChat Pay, cash, bank cards, tax refunds, and shopping tips with practical instructions for international visitors.";
+const pageTitle = (translations[lang] || translations.en).guidePage?.paymentTitle || "Payment Guide - ChinaConnect";
+const pageDescription = (translations[lang] || translations.en).guidePage?.paymentDescription || "Complete payment guide for China travel. Alipay, WeChat Pay, cash, bank cards, tax refunds, and shopping tips with practical instructions for international visitors.";
 
 // Schema.org JSON-LD for Payment Guide (HowTo + FAQ for AI crawlers)
 const paymentSchemas = [
@@ -112,9 +112,10 @@ const paymentSchemas = [
     <section class="mt-12">
       <EmbeddedAppRecommendation
         client:visible
+        lang={lang}
         categories={["payment"]}
-        title="Payment Apps You Need"
-        subtitle="Download and set up these apps before arriving in China"
+        title={lang === "ja" ? "おすすめ決済アプリ" : "Payment Apps You Need"}
+        subtitle={lang === "ja" ? "中国に到着する前にダウンロードして設定しておきましょう" : "Download and set up these apps before arriving in China"}
         essentialOnly={true}
       />
     </section>

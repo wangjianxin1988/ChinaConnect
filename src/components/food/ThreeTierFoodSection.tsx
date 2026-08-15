@@ -360,7 +360,7 @@ function FoodItemCard({ restaurant }: { restaurant: FoodItemData }) {
             lng={restaurant.coordinates.lng}
             name={restaurant.nameEn || restaurant.name}
             className="flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"
-          />
+           lang="lang"/>
         )}
         {restaurant.address && (
           <span

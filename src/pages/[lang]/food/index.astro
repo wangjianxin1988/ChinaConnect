@@ -9,6 +9,7 @@ import "@/styles/global.css";
 import EmbeddedAppRecommendation from "@/components/apps/EmbeddedAppRecommendation";
 import { APP_RECOMMENDATIONS } from "@/data/apps/app-recommendations";
 import { cities, citiesMeta } from "@/data/cities/index";
+import { getCityData } from "@/data/cities-i18n";
 import type { Restaurant } from "@/data/cities/types";
 import { getLangFromUrl } from "@/i18n/utils";
 import { translations } from "@/i18n/translations";
@@ -16,6 +17,8 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import { generateBreadcrumbSchema, generateCollectionPageSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
 
 const lang = (Astro.params.lang as string) || "en";
+const cityNameFor = (slug: string): string =>
+  (lang === "en" ? null : getCityData(slug, lang)?.name) || citiesMeta.find((m) => m.slug === slug)?.nameEn || slug;
 const showTitleCn = lang === 'zh-CN' || lang === 'zh-TW';
 
 // Unified category system shared with city/[slug]/food.astro
@@ -193,7 +196,7 @@ const foodSchemas = [
       <div id="city-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {citiesWithFoodStats.map((city) => (
           <a
-            href={`/city/${city.slug}/food`}
+            href={`/${lang}/city/${city.slug}/food`}
             data-categories={JSON.stringify(city.categoryCounts)}
             data-total={city.totalRestaurants}
             class="group block bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 city-card"
@@ -203,7 +206,7 @@ const foodSchemas = [
               {city.coverImage ? (
                 <img
                   src={city.coverImage}
-                  alt={city.nameZh}
+                  alt={cityNameFor(city.slug)}
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               ) : (
@@ -215,7 +218,7 @@ const foodSchemas = [
               <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <!-- City name on image -->
               <div class="absolute bottom-3 left-4 text-white">
-                <h3 class="text-xl font-bold">{city.nameZh}</h3>
+                <h3 class="text-xl font-bold">{cityNameFor(city.slug)}</h3>
                 <p class="text-sm opacity-90">{city.nameEn}</p>
               </div>
             </div>
@@ -276,7 +279,7 @@ const foodSchemas = [
       <h2 class="text-2xl font-bold text-gray-900 mb-4" data-i18n="foodPage.noCityTitle">Can't find the city you want?</h2>
       <p class="text-gray-600 mb-6" data-i18n="foodPage.bottomCtaDesc">Browse our city list and explore more destinations in China.</p>
       <a
-        href="/city/shanghai"
+        href={`/${lang}/city/shanghai`}
         class="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 text-white rounded-xl font-semibold hover:bg-orange-600 transition-colors"
       >
         <span data-i18n="foodPage.emptyCta">Start from Shanghai</span>
@@ -287,25 +290,26 @@ const foodSchemas = [
     <!-- Food Apps Section -->
     <section class="mt-16 bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8">
       <h2 class="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-3">
-        <span>🍜</span> Essential Food Apps
+        <span>🍜</span> <span data-i18n="foodPage.essentialFoodApps">Essential Food Apps</span>
       </h2>
       <p class="text-gray-600 mb-6" data-i18n="foodPage.essentialFoodAppsDesc">Download these apps to order food delivery and discover local restaurants with English menus.</p>
 
       <EmbeddedAppRecommendation
         client:visible
+        lang={lang}
         categories={["food"]}
         essentialOnly={true}
       />
 
       <div class="mt-6 bg-white rounded-xl p-4 border border-orange-100">
         <h3 class="font-semibold text-gray-800 mb-2 flex items-center gap-2">
-          <span>💡</span> Pro Tips for Food Apps
+          <span>💡</span> <span data-i18n="foodPage.proTipsFoodApps">Pro Tips for Food Apps</span>
         </h3>
         <ul class="text-sm text-gray-600 space-y-1">
-          <li>• <strong>Meituan</strong> has English menu translation for many restaurants</li>
-          <li>• <strong>Dianping</strong> is great for finding local favorites with English reviews</li>
-          <li>• <strong>Ele.me</strong> offers the widest delivery coverage but may default to Chinese</li>
-          <li>• Link your foreign card to Alipay/WeChat Pay before ordering</li>
+          <li>• <strong>Meituan</strong> <span data-i18n="foodPage.tipMeituan">has English menu translation for many restaurants</span></li>
+          <li>• <strong>Dianping</strong> <span data-i18n="foodPage.tipDianping">is great for finding local favorites with English reviews</span></li>
+          <li>• <strong>Ele.me</strong> <span data-i18n="foodPage.tipEleme">offers the widest delivery coverage but may default to Chinese</span></li>
+          <li>• <span data-i18n="foodPage.tipLinkCard">Link your foreign card to Alipay/WeChat Pay before ordering</span></li>
         </ul>
       </div>
     </section>

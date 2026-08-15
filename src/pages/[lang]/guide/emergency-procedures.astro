@@ -13,8 +13,8 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import { translations } from "@/i18n/translations";
 import { getLangFromUrl } from '@/i18n/utils';
 
-const pageTitle = translations.en.guidePage?.emergencyTitle || "Emergency Procedures - ChinaConnect";
-const pageDescription = translations.en.guidePage?.emergencyDescription || "Complete emergency guide for China travel. Lost passport, medical emergency, theft, scams, embassy contacts, and important phone numbers.";
+const pageTitle = (translations[lang] || translations.en).guidePage?.emergencyTitle || "Emergency Procedures - ChinaConnect";
+const pageDescription = (translations[lang] || translations.en).guidePage?.emergencyDescription || "Complete emergency guide for China travel. Lost passport, medical emergency, theft, scams, embassy contacts, and important phone numbers.";
 ---
 
 <BaseLayout

@@ -9,15 +9,15 @@
     "lng": 120.3826
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Qingdao, a beautiful coastal city in Shandong Province, is renowned for its Tsingtao Brewery, stunning German colonial architecture, and scenic beaches. Nestled between hills and the Yellow Sea, it offers a unique blend of European charm and Chinese culture. The city hosts the annual Qingdao International Beer Festival and features world-class attractions like Zhanqiao Pier, Badaguan Scenic Area, and Laoshan Mountain.",
+  "description": "Qingdao, eine wunderschöne Küstenstadt in der Provinz Shandong, ist bekannt für seine Tsingtao-Brauerei, die beeindruckende deutsche Kolonialarchitektur und die malerischen Strände. Eingebettet zwischen Hügeln und dem Gelben Meer bietet sie eine einzigartige Mischung aus europäischem Charme und chinesischer Kultur. Die Stadt veranstaltet das jährliche Qingdao International Beer Festival und beherbergt Weltklasse-Attraktionen wie die Zhanqiao-Promenade, das Badaguan-Viertel und den Laoshan-Berg.",
   "coverImage": "/img/ext/08de0cfed56a.webp",
   "highlights": [
-    "Zhanqiao Pier - Iconic waterfront landmark",
-    "Badaguan Scenic Area - European-style architecture",
-    "Laoshan Mountain - Taoist sacred mountain",
-    "Tsingtao Brewery - World-famous beer heritage",
-    "五四广场 - Modern waterfront district",
-    "金沙滩 - Premier beach destination"
+    "Zhanqiao-Promenade - Ikonisches Wahrzeichen am Wasser",
+    "Badaguan-Viertel - Europäische Architektur",
+    "Laoshan-Berg - Taoistischer heiliger Berg",
+    "Tsingtao-Brauerei - Weltberühmte Biertradition",
+    "五四广场 - Moderner Uferbezirk",
+    "金沙滩 - Erste Stranddestination"
   ],
   "climate": {
     "type": "温带海洋性气候",
@@ -83,7 +83,7 @@
     {
       "id": "laoshan-mountain",
       "name": "崂山风景区",
-      "nameEn": "Laoshan Mountain",
+      "nameEn": "Laoshan-Gebirge",
       "category": "nature",
       "description": "中国著名的道教名山，海拔1132.7米，三面环海，集山、海、林、泉、瀑于一体。自古有海上第一名山之称。",
       "address": "青岛市崂山区崂山路",
@@ -107,7 +107,7 @@
     {
       "id": "tsingtao-brewery",
       "name": "青岛啤酒厂",
-      "nameEn": "Tsingtao Brewery",
+      "nameEn": "Tsingtao-Brauerei",
       "category": "cultural",
       "description": "青岛啤酒厂是中国最古老的啤酒品牌之一，建于1903年。游客可以参观百年历史的酿造车间，品尝正宗的青岛原浆啤酒。",
       "address": "青岛市市北区登州路56号",
@@ -131,7 +131,7 @@
     {
       "id": "wusongguangchang",
       "name": "五四广场",
-      "nameEn": "May Fourth Square",
+      "nameEn": "Platz des 4. Mai",
       "category": "landmark",
       "description": "为纪念五四运动而建的广场，标志性雕塑五月的风高达30米，以螺旋上升的造型象征五四运动的革命火焰。",
       "address": "青岛市市南区东海西路",
@@ -155,7 +155,7 @@
     {
       "id": "aofan-center",
       "name": "奥帆中心",
-      "nameEn": "Olympic Sailing Center",
+      "nameEn": "Segelzentrum Olympische Spiele",
       "category": "landmark",
       "description": "2008年北京奥运会帆船比赛举办地，是目前亚洲最大的帆船中心。拥有专业的码头设施和独特的海上运动设施。",
       "address": "青岛市市南区新会路",
@@ -179,7 +179,7 @@
     {
       "id": "st-michael-cathedral",
       "name": "圣弥厄尔大教堂",
-      "nameEn": "St. Michael's Cathedral",
+      "nameEn": "St. Michaelskathedrale",
       "category": "cultural",
       "description": "青岛最大的天主教堂，由德国设计师建造于1934年，哥特式建筑风格。教堂高60米，是青岛的地标性建筑。",
       "address": "青岛市市南区浙江路15号",
@@ -491,24 +491,24 @@
     {
       "id": "qingdao-museum",
       "name": "青岛市博物馆",
-      "nameEn": "Qingdao Museum",
+      "nameEn": "Qingdao Municipal Museum",
       "category": "cultural",
-      "description": "展示青岛历史文化和山东地区文物的大型综合性博物馆，馆藏丰富，包括古代青铜器、陶瓷、书画等珍贵文物。",
-      "address": "青岛市崂山区梅岭东路51号",
+      "description": "综合性博物馆，馆藏文物16万余件。",
+      "address": "青岛市崂山区梅岭路27号",
       "coordinates": {
         "lat": 36.1022,
         "lng": 120.4822
       },
-      "openingHours": "09:00-17:00（周一闭馆）",
+      "openingHours": "09:00-17:00",
       "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "recommendedVisitTime": "2小时",
       "highlights": [
-        "古代青铜器",
-        "明清瓷器",
+        "历史文物",
+        "青岛历史",
         "青岛历史展区",
         "临时特展"
       ],
-      "tips": "建议参加免费讲解服务。周一闭馆，注意安排时间。馆内有咖啡厅可以休息。适合了解青岛历史文化。",
+      "tips": "周一闭馆，需提前预约。",
       "image": "/img/ext/a7fe95eeaa13.webp",
       "phone": "+86 053 2 5874 7385"
     },
@@ -653,7 +653,7 @@
     {
       "id": "golden-sand",
       "name": "金沙滩",
-      "nameEn": "Golden Sand Beach",
+      "nameEn": "Goldener Sandstrand",
       "category": "beach",
       "description": "全长3500米，宽300米，是中国沙质最细、面积最大的沙滩之一。",
       "address": "青岛市黄岛区金沙滩路",
@@ -918,22 +918,22 @@
     {
       "id": "zhongshan-park",
       "name": "中山公园",
-      "nameEn": "Zhongshan Park",
+      "nameEn": "Zhongshan-Park",
       "category": "park",
-      "description": "青岛最大的综合性公园，每年春天樱花盛开时举办樱花会。",
-      "address": "青岛市市南区文登路28号",
+      "description": "Ein großer städtischer Park im Zentrum von Hankou mit Seen, Gärten, Fahrgeschäften und dem historischen Zhongshan-Turm. Ein beliebtes Erholungsgebiet der Einheimischen.",
+      "address": "解放大道696号, 江汉区",
       "coordinates": {
         "lat": 36.0611,
         "lng": 120.3472
       },
-      "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "openingHours": "06:00-22:00",
+      "ticketPrice": "Kostenlos (Fahrgeschäfte erfordern separate Tickets)",
+      "recommendedVisitTime": "2-3 Stunden",
       "highlights": [
-        "樱花大道",
-        "动物园"
+        "Zentraler See",
+        "Historische Pagode"
       ],
-      "tips": "4月樱花季最美，与动物园相邻。",
+      "tips": "Schließen Sie sich den morgendlichen Tai-Chi-Gruppen für ein lokales Erlebnis an. Der Park verwandelt sich nachts mit Beleuchtung. Gut geeignet für Familien mit Kindern. In der Nähe des Wuhan International Convention Center.",
       "image": "/img/ext/76b7723fb988.webp",
       "phone": "+86 053 2 9085 3260"
     },
@@ -1199,9 +1199,9 @@
         "德式香肠"
       ],
       "tags": [
-        "local"
+        "lokal"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
       "cuisine": "Tsingtao Beer Street",
@@ -1235,9 +1235,9 @@
         "烤鱼丸"
       ],
       "tags": [
-        "local"
+        "lokal"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
       "cuisine": "Picigin Food Street",
@@ -1271,9 +1271,9 @@
         "清蒸鲈鱼"
       ],
       "tags": [
-        "local"
+        "lokal"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
       "cuisine": "Yunxianglou",
@@ -1307,9 +1307,9 @@
         "特色下酒菜"
       ],
       "tags": [
-        "local"
+        "lokal"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
       "cuisine": "Laoshan Mineral Water Beer",
@@ -1343,9 +1343,9 @@
         "辣炒蛤蜊"
       ],
       "tags": [
-        "seafood"
+        "Meeresfrüchte"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
       "cuisine": "Jinshatan Seafood",
@@ -1379,9 +1379,9 @@
         "海鲜拼盘"
       ],
       "tags": [
-        "seafood"
+        "Meeresfrüchte"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
       "cuisine": "Hongda Seafood Restaurant",
@@ -1415,9 +1415,9 @@
         "山野菜"
       ],
       "tags": [
-        "local"
+        "lokal"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
       "cuisine": "Laoshan Tofu Feast",
@@ -1435,7 +1435,7 @@
       "id": "shandong-restaurant",
       "name": "山东老家",
       "nameEn": "Shandong Homeland",
-      "description": "Spezialisiert auf traditionelle Shandong-Heimgerichte, günstige Preise, authentischer Geschmack, ein guter Ort, um die Shandong-Esskultur zu erleben.",
+      "description": "主打山东传统家常菜，价格亲民，味道正宗，是体验山东饮食文化的好去处。",
       "address": "青岛市市北区台东三路",
       "priceRange": "人均50-80¥",
       "highlights": [
@@ -1446,14 +1446,14 @@
       ],
       "tips": "性价比很高，适合大众消费。分量足，建议少点一些。饭点需要等位。",
       "dishHighlights": [
-        "Jianbing mit Frühlingszwiebeln",
-        "Dezhou gepflücktes Hühnchen",
-        "Neunfach gedrehte Schweinedärme"
+        "煎饼卷大葱",
+        "德州扒鸡",
+        "九转大肠"
       ],
       "tags": [
         "lokal"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
       "cuisine": "Shandong Homeland",
@@ -1470,9 +1470,9 @@
     {
       "id": "wangdama",
       "name": "王大妈海鲜坊",
-      "nameEn": "Wang Dama Seafood House",
-      "description": "Beliebtes Meeresfrüchterestaurant, bekannt für übergroße Portionen und frische Zutaten, sowohl bei Einheimischen als auch Touristen beliebt.",
-      "address": "Yingkou Road, Shibei District, Qingdao",
+      "nameEn": "Wang Dama Meeresfrüchterestaurant",
+      "description": "网红海鲜餐厅，以超大份量和新鲜食材著称，本地人和游客都爱去。",
+      "address": "青岛市市北区营口路",
       "priceRange": "人均100-150¥",
       "highlights": [
         "蒸汽海鲜锅",
@@ -1482,14 +1482,14 @@
       ],
       "tips": "分量很大，建议少点。可以自带酒水。排队时间长，建议提前去。适合多人聚餐。",
       "dishHighlights": [
-        "Dampfgar-Topf mit Meeresfrüchten",
-        "Scharf gebratene Muscheln",
-        "Gegrillte Riesengarnelen"
+        "蒸汽海鲜锅",
+        "辣炒蛤蜊",
+        "烤大虾"
       ],
       "tags": [
         "Meeresfrüchte"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
       "cuisine": "Wang Dama Meeresfrüchterestaurant",
@@ -1506,8 +1506,8 @@
     {
       "id": "chuanrestaurant",
       "name": "川蜀老火锅",
-      "nameEn": "Sichuan Hotpot",
-      "description": "Authentische Sichuan-Küche, Sie können in Qingdao auch echte scharfe Hotpot-Gerichte genießen - eine großartige Wahl für Geschmacksveränderungen.",
+      "nameEn": "Sichuan-Hotpot",
+      "description": "正宗的四川火锅，在青岛也能吃到地道的麻辣火锅，是改变口味的好选择。",
       "address": "青岛市市南区香港中路",
       "priceRange": "人均100-150¥",
       "highlights": [
@@ -1518,14 +1518,14 @@
       ],
       "tips": "辣度可以调整。食材新鲜，服务不错。环境有四川特色。适合冬季用餐。",
       "dishHighlights": [
-        "麻婆锅底",
-        "Frische Rinderkutteln",
-        "Zartes Rinderfilet"
+        "麻辣锅底",
+        "鲜毛肚",
+        "嫩牛肉"
       ],
       "tags": [
-        "hotpot"
+        "Hotpot"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
       "cuisine": "Sichuan-Hotpot",
@@ -1543,7 +1543,7 @@
       "id": "shandong-cuisine-minglu",
       "name": "明炉鲁菜",
       "nameEn": "Minglu Shandong-Küche",
-      "description": "Gehobenes Shandong-Gericht, private Atmosphäre, raffinierte Gerichte - die erste Wahl für Geschäftsessen.",
+      "description": "高端鲁菜餐厅，环境私密，菜品精致，是商务宴请的首选。",
       "address": "青岛市市南区海天中心",
       "priceRange": "人均300-500¥",
       "highlights": [
@@ -1554,14 +1554,14 @@
       ],
       "tips": "需要提前预订。服务费另计。菜品艺术感强。适合重要场合。",
       "dishHighlights": [
-        "Gedünsteter Seeigel mit Lauch",
-        "Geschmorter Fisch in fermentierter Soße",
-        "Neunfach gedrehte Schweinedärme"
+        "葱烧海参",
+        "糟熘鱼片",
+        "九转大肠"
       ],
       "tags": [
         "Lokal"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
       "cuisine": "Minglu Shandong-Küche",
@@ -1579,8 +1579,8 @@
       "id": "beach-barbecue",
       "name": "海边烧烤",
       "nameEn": "Strand-Grillplatz",
-      "description": "Strand-Grillen am Meer, mit Meeresbrise und Grillen - Qingdaos einzigartige Art, den Abend zu genießen.",
-      "address": "Umgebung des Shilao Ren Strandes, Qingdao",
+      "description": "海边沙滩烧烤，吹着海风吃着烧烤，是青岛独特的夜生活方式。",
+      "address": "青岛市石老人海水浴场周边",
       "priceRange": "人均80-120¥",
       "highlights": [
         "烤海鲜串",
@@ -1590,14 +1590,14 @@
       ],
       "tips": "晚上氛围很好，但要注意防蚊虫。价格比市区略贵。音乐和海边风景是加分项。",
       "dishHighlights": [
-        "Gegrillte Meeresfrüchte-Spieße",
-        "Gegrillte Austern",
-        "Qingdao Bier"
+        "烤海鲜串",
+        "烤生蚝",
+        "青岛啤酒"
       ],
       "tags": [
         "Grillen"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
       "cuisine": "Strand-Grillplatz",
@@ -1616,7 +1616,7 @@
       "name": "小餐馆",
       "nameEn": "Kleines Restaurant",
       "description": "藏在小巷里的地道小馆子，味道正宗，价格实惠，是本地人的食堂。",
-      "address": "Daxue Road, Stadtbezirk Shinan, Qingdao",
+      "address": "青岛市市南区大学路",
       "priceRange": "人均30-60¥",
       "highlights": [
         "鲅鱼饺子",
@@ -1631,9 +1631,9 @@
         "海鲜面"
       ],
       "tags": [
-        "local"
+        "lokal"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
       "cuisine": "Kleines Restaurant",
@@ -1667,9 +1667,9 @@
         "蒸饺"
       ],
       "tags": [
-        "seafood"
+        "Meeresfrüchte"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
       "cuisine": "Baohailou",
@@ -1703,9 +1703,9 @@
         "鲍鱼"
       ],
       "tags": [
-        "luxury"
+        "Luxus"
       ],
-      "type": "blackpearl",
+      "type": "Schwarze Perle",
       "star": 0,
       "diamond": 0,
       "cuisine": "Xinbailey International Club",
@@ -1722,7 +1722,7 @@
     {
       "id": "guangzhou-seafood",
       "name": "粤菜坊",
-      "nameEn": "Cantonese Seafood",
+      "nameEn": "Kantonesische Küche",
       "description": "主打粤式海鲜料理，口味清淡健康，适合不吃辣的游客。",
       "address": "青岛市市南区香港中路",
       "priceRange": "人均150-250¥",
@@ -1739,12 +1739,12 @@
         "烧鹅"
       ],
       "tags": [
-        "cantonese"
+        "kantonesisch"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
-      "cuisine": "Cantonese Seafood",
+      "cuisine": "Kantonesische Küche",
       "rating": 4,
       "avgPrice": 150,
       "coordinates": {
@@ -1758,7 +1758,7 @@
     {
       "id": "korean-restaurant",
       "name": "韩式烤肉",
-      "nameEn": "Korean BBQ",
+      "nameEn": "Koreanisches BBQ",
       "description": "青岛靠近韩国，境内有很多正宗韩式烤肉店，价格比韩国本地还实惠。",
       "address": "青岛市市北区台东",
       "priceRange": "人均80-120¥",
@@ -1775,12 +1775,12 @@
         "韩式小菜"
       ],
       "tags": [
-        "korean"
+        "koreanisch"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
-      "cuisine": "Korean BBQ",
+      "cuisine": "Koreanisches BBQ",
       "rating": 4,
       "avgPrice": 80,
       "coordinates": {
@@ -1811,9 +1811,9 @@
         "特色饮品"
       ],
       "tags": [
-        "local"
+        "lokal"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
       "cuisine": "Xiao Ma Dun",
@@ -1847,9 +1847,9 @@
         "烤鸭"
       ],
       "tags": [
-        "seafood"
+        "Meeresfrüchte"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
       "cuisine": "Xinyayuan Seafood City",
@@ -1883,9 +1883,9 @@
         "跑山鸡"
       ],
       "tags": [
-        "local"
+        "lokal"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
       "cuisine": "Laoshan Organic Farm Food",
@@ -1919,9 +1919,9 @@
         "糖醋里脊"
       ],
       "tags": [
-        "local"
+        "lokal"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
       "cuisine": "Heng Yi",
@@ -1955,9 +1955,9 @@
         "糖醋鲤鱼"
       ],
       "tags": [
-        "local"
+        "lokal"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
       "cuisine": "Yu Xiang Lou",
@@ -1991,9 +1991,9 @@
         "石斑鱼"
       ],
       "tags": [
-        "seafood"
+        "Meeresfrüchte"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
       "cuisine": "Jiao Yuan Yu Gang",
@@ -2027,9 +2027,9 @@
         "辣炒蛤蜊"
       ],
       "tags": [
-        "seafood"
+        "Meeresfrüchte"
       ],
-      "type": "local",
+      "type": "lokal",
       "star": 0,
       "diamond": 0,
       "cuisine": "Hai Zheng",
@@ -2047,7 +2047,7 @@
       "id": "qingdao-25",
       "name": "正宗辣炒蛤蜊",
       "nameEn": "正宗辣炒蛤蜊 (辣炒蛤蜊)",
-      "type": "cafe",
+      "type": "Café",
       "cuisine": "辣炒蛤蜊",
       "avgPrice": 60,
       "rating": 4.1,
@@ -2076,7 +2076,7 @@
       "id": "qingdao-27",
       "name": "街边辣炒蛤蜊",
       "nameEn": "街边辣炒蛤蜊 (辣炒蛤蜊)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "辣炒蛤蜊",
       "avgPrice": 49,
       "rating": 4.3,
@@ -2105,7 +2105,7 @@
       "id": "qingdao-29",
       "name": "老街烤鱿鱼",
       "nameEn": "老街烤鱿鱼 (烤鱿鱼)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "烤鱿鱼",
       "avgPrice": 132,
       "rating": 4.2,
@@ -2134,7 +2134,7 @@
       "id": "qingdao-31",
       "name": "传统鲅鱼饺子",
       "nameEn": "传统鲅鱼饺子 (鲅鱼饺子)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "鲅鱼饺子",
       "avgPrice": 78,
       "rating": 4.1,
@@ -2163,7 +2163,7 @@
       "id": "qingdao-33",
       "name": "老字号啤酒",
       "nameEn": "老字号啤酒 (啤酒)",
-      "type": "street",
+      "type": "Straßenessen",
       "cuisine": "啤酒",
       "avgPrice": 45,
       "rating": 4.2,
@@ -2192,7 +2192,7 @@
       "id": "qingdao-35",
       "name": "正宗辣炒蛤蜊",
       "nameEn": "正宗辣炒蛤蜊 (辣炒蛤蜊)",
-      "type": "street",
+      "type": "Straßenessen",
       "cuisine": "辣炒蛤蜊",
       "avgPrice": 56,
       "rating": 4.3,
@@ -2221,7 +2221,7 @@
       "id": "qingdao-37",
       "name": "传统烤鱿鱼",
       "nameEn": "传统烤鱿鱼 (烤鱿鱼)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "烤鱿鱼",
       "avgPrice": 37,
       "rating": 4.4,
@@ -2250,7 +2250,7 @@
       "id": "qingdao-39",
       "name": "地道辣炒蛤蜊",
       "nameEn": "地道辣炒蛤蜊 (辣炒蛤蜊)",
-      "type": "street",
+      "type": "Straßenessen",
       "cuisine": "辣炒蛤蜊",
       "avgPrice": 24,
       "rating": 4.4,
@@ -2279,7 +2279,7 @@
       "id": "qingdao-41",
       "name": "巷子啤酒",
       "nameEn": "巷子啤酒 (啤酒)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "啤酒",
       "avgPrice": 77,
       "rating": 4.4,
@@ -2308,7 +2308,7 @@
       "id": "qingdao-43",
       "name": "街边鲅鱼饺子",
       "nameEn": "街边鲅鱼饺子 (鲅鱼饺子)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "鲅鱼饺子",
       "avgPrice": 58,
       "rating": 4.4,
@@ -2337,7 +2337,7 @@
       "id": "qingdao-45",
       "name": "街边海鲜",
       "nameEn": "街边海鲜 (海鲜)",
-      "type": "street",
+      "type": "Straßenessen",
       "cuisine": "海鲜",
       "avgPrice": 54,
       "rating": 4.3,
@@ -2366,7 +2366,7 @@
       "id": "qingdao-47",
       "name": "街边辣炒蛤蜊",
       "nameEn": "街边辣炒蛤蜊 (辣炒蛤蜊)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "辣炒蛤蜊",
       "avgPrice": 121,
       "rating": 4.8,
@@ -2395,7 +2395,7 @@
       "id": "qingdao-49",
       "name": "青岛味烤鱿鱼",
       "nameEn": "青岛味烤鱿鱼 (烤鱿鱼)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "烤鱿鱼",
       "avgPrice": 93,
       "rating": 4,
@@ -2424,7 +2424,7 @@
       "id": "qingdao-51",
       "name": "老街烤鱿鱼",
       "nameEn": "老街烤鱿鱼 (烤鱿鱼)",
-      "type": "street",
+      "type": "Straßenessen",
       "cuisine": "烤鱿鱼",
       "avgPrice": 58,
       "rating": 4.2,
@@ -2453,7 +2453,7 @@
       "id": "qingdao-53",
       "name": "正宗烤鱿鱼",
       "nameEn": "正宗烤鱿鱼 (烤鱿鱼)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "烤鱿鱼",
       "avgPrice": 48,
       "rating": 4.4,
@@ -2482,7 +2482,7 @@
       "id": "qingdao-55",
       "name": "正宗烤鱿鱼",
       "nameEn": "正宗烤鱿鱼 (烤鱿鱼)",
-      "type": "street",
+      "type": "Straßenessen",
       "cuisine": "烤鱿鱼",
       "avgPrice": 25,
       "rating": 4.7,
@@ -2511,7 +2511,7 @@
       "id": "qingdao-57",
       "name": "青岛味辣炒蛤蜊",
       "nameEn": "青岛味辣炒蛤蜊 (辣炒蛤蜊)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "辣炒蛤蜊",
       "avgPrice": 97,
       "rating": 4.3,
@@ -2540,7 +2540,7 @@
       "id": "qingdao-59",
       "name": "老字号啤酒",
       "nameEn": "老字号啤酒 (啤酒)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "啤酒",
       "avgPrice": 41,
       "rating": 4.3,
@@ -2569,7 +2569,7 @@
       "id": "qingdao-61",
       "name": "老街鲅鱼饺子",
       "nameEn": "老街鲅鱼饺子 (鲅鱼饺子)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "鲅鱼饺子",
       "avgPrice": 61,
       "rating": 4.8,
@@ -2598,7 +2598,7 @@
       "id": "qingdao-63",
       "name": "巷子海鲜",
       "nameEn": "巷子海鲜 (海鲜)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "海鲜",
       "avgPrice": 66,
       "rating": 4.1,
@@ -2627,7 +2627,7 @@
       "id": "qingdao-65",
       "name": "老字号海鲜",
       "nameEn": "老字号海鲜 (海鲜)",
-      "type": "street",
+      "type": "Straßenessen",
       "cuisine": "海鲜",
       "avgPrice": 37,
       "rating": 4.8,
@@ -2656,7 +2656,7 @@
       "id": "qingdao-67",
       "name": "阿婆海鲜",
       "nameEn": "阿婆海鲜 (海鲜)",
-      "type": "cafe",
+      "type": "Café",
       "cuisine": "海鲜",
       "avgPrice": 71,
       "rating": 4.2,
@@ -2685,7 +2685,7 @@
       "id": "qingdao-69",
       "name": "阿婆鲅鱼饺子",
       "nameEn": "阿婆鲅鱼饺子 (鲅鱼饺子)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "鲅鱼饺子",
       "avgPrice": 147,
       "rating": 4.4,
@@ -2714,7 +2714,7 @@
       "id": "qingdao-71",
       "name": "传统鲅鱼饺子",
       "nameEn": "传统鲅鱼饺子 (鲅鱼饺子)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "鲅鱼饺子",
       "avgPrice": 139,
       "rating": 4.3,
@@ -2743,7 +2743,7 @@
       "id": "qingdao-73",
       "name": "青岛味烤鱿鱼",
       "nameEn": "青岛味烤鱿鱼 (烤鱿鱼)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "烤鱿鱼",
       "avgPrice": 36,
       "rating": 4.6,
@@ -2772,7 +2772,7 @@
       "id": "qingdao-75",
       "name": "地道海鲜",
       "nameEn": "地道海鲜 (海鲜)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "海鲜",
       "avgPrice": 57,
       "rating": 4.1,
@@ -3076,7 +3076,7 @@
     {
       "id": "police",
       "name": "青岛市公安局",
-      "nameEn": "Qingdao Police Bureau",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "110",
       "description": "报警电话",
       "type": "police"
@@ -3084,7 +3084,7 @@
     {
       "id": "ambulance",
       "name": "青岛市急救中心",
-      "nameEn": "Qingdao Emergency Center",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "120",
       "description": "医疗急救",
       "type": "ambulance"
@@ -3092,7 +3092,7 @@
     {
       "id": "fire",
       "name": "青岛市消防支队",
-      "nameEn": "Qingdao Fire Brigade",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "119",
       "description": "火灾报警",
       "type": "fire"
@@ -3100,7 +3100,7 @@
     {
       "id": "tourism-complaint",
       "name": "青岛市旅游投诉热线",
-      "nameEn": "Qingdao Tourism Complaint Hotline",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "12345",
       "description": "旅游投诉和咨询",
       "type": "tourism-complaint"
@@ -3108,7 +3108,7 @@
     {
       "id": "coast-guard",
       "name": "海上搜救中心",
-      "nameEn": "Maritime Search and Rescue",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "12395",
       "description": "海上紧急救援",
       "type": "coast-guard"
@@ -3116,7 +3116,7 @@
     {
       "id": "consumer-complaint",
       "name": "消费者投诉热线",
-      "nameEn": "Consumer Complaint Hotline",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "12315",
       "description": "消费维权投诉",
       "type": "consumer-complaint"
@@ -3124,7 +3124,7 @@
     {
       "id": "weather",
       "name": "青岛市气象局",
-      "nameEn": "Qingdao Meteorological Bureau",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "12121",
       "description": "天气预报查询",
       "type": "weather"
@@ -3132,7 +3132,7 @@
     {
       "id": "traffic-police",
       "name": "青岛交警",
-      "nameEn": "Qingdao Traffic Police",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "122",
       "description": "交通事故报警",
       "type": "traffic-police"
@@ -3140,7 +3140,7 @@
     {
       "id": "electricity",
       "name": "青岛供电公司",
-      "nameEn": "Qingdao Power Supply",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "95598",
       "description": "电力故障报修",
       "type": "electricity"
@@ -3148,7 +3148,7 @@
     {
       "id": "gas",
       "name": "青岛燃气公司",
-      "nameEn": "Qingdao Gas Company",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "96556",
       "description": "燃气故障报修",
       "type": "gas"
@@ -3156,7 +3156,7 @@
     {
       "id": "water",
       "name": "青岛水务集团",
-      "nameEn": "Qingdao Water Group",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "96111",
       "description": "水务故障报修",
       "type": "water"
@@ -3164,7 +3164,7 @@
     {
       "id": "foreign-affairs",
       "name": "青岛市外事办",
-      "nameEn": "Qingdao Foreign Affairs Office",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "+86 532 8088 0008",
       "description": "外国人服务热线",
       "type": "foreign-affairs"
@@ -3172,7 +3172,7 @@
     {
       "id": "qingdao-hospital-1",
       "name": "青岛大学附属医院",
-      "nameEn": "Affiliated Hospital of Qingdao University",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "+86 532 8291 1222",
       "description": "三甲医院，24小时急诊，拥有优秀医疗团队",
       "type": "hospital"
@@ -3180,7 +3180,7 @@
     {
       "id": "qingdao-hospital-2",
       "name": "青岛市市立医院",
-      "nameEn": "Qingdao Municipal Hospital",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "+86 532 8278 9121",
       "description": "三甲医院，综合性医院，位于市中心，交通便利",
       "type": "hospital"
@@ -3188,7 +3188,7 @@
     {
       "id": "qingdao-embassy",
       "name": "大韩民国驻青岛总领事馆",
-      "nameEn": "Consulate-General of the Republic of Korea in Qingdao",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "+86 532 8090 0028",
       "description": "为韩国公民提供领事服务",
       "type": "embassy"
@@ -3196,7 +3196,7 @@
     {
       "id": "qingdao-tourist-police",
       "name": "青岛市旅游警察",
-      "nameEn": "Qingdao Tourist Police",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "+86 532 8801 0110",
       "description": "专门处理游客投诉和求助，保护游客权益",
       "type": "tourist-police"
@@ -3452,11 +3452,11 @@
     }
   },
   "quickFacts": {
-    "language": "Mandarin Chinese (Simplified)",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa (L-tourist, M-business)",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Tap water is boiled before drinking; bottled water widely available"
+    "language": "Mandarin (Chinesisch)",
+    "currency": "Chinesischer Yuan (CNY/RMB)",
+    "visa": "Für die meisten Nationalitäten ist ein Visum erforderlich. Ein 72-Stunden-Transitvisum steht am Flughafen für berechtigte Staatsangehörige zur Verfügung.",
+    "timeZone": "UTC+8 (Chinesische Standardzeit)",
+    "electricity": "220V/50Hz, Steckdosen Typ A/I",
+    "water": "Leitungswasser ist trinkbar, aber Flaschenwasser wird empfohlen"
   }
 }

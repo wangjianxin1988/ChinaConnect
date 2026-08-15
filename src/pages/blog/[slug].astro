@@ -1,0 +1,106 @@
+﻿---
+import { getPost, getAllPostSlugs } from "@/data/blog";
+import { translations } from "@/i18n/translations";
+import { getLangFromUrl } from "@/i18n/utils";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+export function getStaticPaths() {
+  return getAllPostSlugs().map((slug) => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const lang = (Astro.locals?.lang as string) || getLangFromUrl(Astro.url);
+const t = translations[lang] || translations.en;
+const b = t.blog || translations.en.blog;
+const post = getPost(slug as string, lang);
+
+if (!post) {
+  return Astro.redirect("/404");
+}
+
+// Render Markdown to HTML (simple approach: render as preformatted for now)
+const htmlContent = post.content
+  .split("\n")
+  .map((line) => {
+    if (line.startsWith("# ")) return `<h1 class="text-4xl font-bold mt-8 mb-4">${line.slice(2)}</h1>`;
+    if (line.startsWith("## ")) return `<h2 class="text-2xl font-bold mt-6 mb-3">${line.slice(3)}</h2>`;
+    if (line.startsWith("### ")) return `<h3 class="text-xl font-semibold mt-4 mb-2">${line.slice(4)}</h3>`;
+    if (line.startsWith("- ")) return `<li class="ml-6 list-disc">${line.slice(2)}</li>`;
+    if (line.match(/^\d+\. /)) return `<li class="ml-6 list-decimal">${line.replace(/^\d+\. /, "")}</li>`;
+    if (line.startsWith("---")) return `<hr class="my-8 border-gray-200" />`;
+    if (line.trim() === "") return "";
+    if (line.startsWith("*") && line.endsWith("*")) return `<p class="text-gray-600 italic my-4">${line.slice(1, -1)}</p>`;
+    // Inline markdown: **bold**, [text](url)
+    let processed = line
+      .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-blue-600 hover:underline">$1</a>');
+    return `<p class="my-3 text-gray-800 leading-relaxed">${processed}</p>`;
+  })
+  .join("\n");
+---
+
+<BaseLayout
+  title={`${post.title} - ChinaConnect`}
+  description={post.description}
+  lang={lang}
+  meta={{
+    keywords: post.tags,
+    canonicalUrl: lang === "en" ? `https://chinaengage.org/blog/${post.slug}` : `https://chinaengage.org/${lang}/blog/${post.slug}`,
+    ogType: "article",
+    articleMeta: {
+      publishedTime: post.publishedAt,
+      author: post.author,
+      tags: post.tags,
+    },
+  }}
+>
+  <main class="container mx-auto px-4 py-8 max-w-3xl">
+    <nav class="mb-6 text-sm">
+      <a href={lang === "en" ? "/blog" : `/${lang}/blog`} class="text-blue-600 hover:underline">
+        ← {b.backToList || "Back to Blog"}
+      </a>
+    </nav>
+
+    <article>
+      <header class="mb-8">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-xs px-2 py-1 bg-blue-50 text-blue-700 rounded-full font-medium">
+            {post.category}
+          </span>
+          <span class="text-sm text-gray-500">
+            {(b.readingTime || "{n} min read").replace("{n}", String(post.readingTime))}
+          </span>
+          <span class="text-sm text-gray-500">·</span>
+          <span class="text-sm text-gray-500">
+            {new Date(post.publishedAt).toLocaleDateString(lang === "zh-CN" ? "zh-CN" : lang === "en" ? "en-US" : lang, { year: "numeric", month: "long", day: "numeric" })}
+          </span>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-3 leading-tight">
+          {post.title}
+        </h1>
+        <p class="text-lg text-gray-600">{post.description}</p>
+        {(b.author || "By {name}").replace("{name}", post.author)}
+      </header>
+
+      {post.coverImage && (
+        <div class="aspect-video rounded-2xl overflow-hidden mb-8 bg-gradient-to-br from-blue-500 to-purple-600">
+          <img src={post.coverImage} alt={post.title} class="w-full h-full object-cover" />
+        </div>
+      )}
+
+      <div class="prose prose-lg max-w-none" set:html={htmlContent}></div>
+
+      {post.tags && post.tags.length > 0 && (
+        <footer class="mt-12 pt-6 border-t border-gray-200">
+          <div class="flex flex-wrap gap-2">
+            {post.tags.map((tag) => (
+              <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">
+                #{tag}
+              </span>
+            ))}
+          </div>
+        </footer>
+      )}
+    </article>
+  </main>
+</BaseLayout>

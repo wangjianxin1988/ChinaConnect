@@ -1,4 +1,5 @@
 import React, { useCallback } from "react";
+import { SOS_STRINGS, useClientLang } from "./sos-strings";
 
 interface EmergencyContact {
   name: string;
@@ -58,6 +59,10 @@ const BG_COLOR_MAP: Record<string, string> = {
 };
 
 export function QuickDial({ compact = false, onCall }: QuickDialProps) {
+  const lang = useClientLang();
+  const s = SOS_STRINGS[lang] || SOS_STRINGS.en;
+  const names: Record<string, string> = { Police: s.police, Ambulance: s.ambulance, Fire: s.fire, Traffic: s.traffic };
+  const localized = EMERGENCY_NUMBERS.map((c) => ({ ...c, name: names[c.name] || c.name, nameCn: names[c.name] || c.nameCn, label: (names[c.name] || c.name) + " - " + (names[c.name] || c.name) }));
   const handleCall = useCallback(
     (number: string) => {
       if (onCall) {
@@ -73,7 +78,7 @@ export function QuickDial({ compact = false, onCall }: QuickDialProps) {
     // Compact list for expanded menu
     return (
       <div className="space-y-1">
-        {EMERGENCY_NUMBERS.map((contact) => (
+        {localized.map((contact) => (
           <button
             key={contact.number}
             onClick={() => handleCall(contact.number)}
@@ -84,9 +89,9 @@ export function QuickDial({ compact = false, onCall }: QuickDialProps) {
             <span className="text-xl">{contact.icon}</span>
             <div className="text-left flex-1">
               <div className="font-bold text-lg">{contact.number}</div>
-              <div className="text-xs opacity-90">{contact.nameCn}</div>
+              <div className="text-xs opacity-90">{contact.name}</div>
             </div>
-            <span className="text-sm opacity-80">Tap to call</span>
+            <span className="text-sm opacity-80">{s.tapToCall}</span>
           </button>
         ))}
       </div>
@@ -96,7 +101,7 @@ export function QuickDial({ compact = false, onCall }: QuickDialProps) {
   // Full grid layout for emergency page
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-      {EMERGENCY_NUMBERS.map((contact) => (
+      {localized.map((contact) => (
         <button
           key={contact.number}
           onClick={() => handleCall(contact.number)}
@@ -106,7 +111,6 @@ export function QuickDial({ compact = false, onCall }: QuickDialProps) {
           <div className="text-4xl mb-3">{contact.icon}</div>
           <div className="font-bold text-xl">{contact.number}</div>
           <div className="text-white/90 text-sm mt-1">{contact.name}</div>
-          <div className="text-white/70 text-xs">{contact.nameCn}</div>
         </button>
       ))}
     </div>

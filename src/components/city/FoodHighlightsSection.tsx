@@ -1,3 +1,4 @@
+import { ct } from "@/i18n/components-strings";
 import type { Restaurant, RestaurantHighlightTag } from "@/data/cities/types";
 import React from "react";
 
@@ -5,6 +6,7 @@ interface FoodHighlightsSectionProps {
   restaurants: Restaurant[];
   citySlug: string;
   cityName: string;
+  lang?: string;
 }
 
 const LOCAL_RECOMMEND_THRESHOLD = 150; // avgPrice below this + local type = local recommend
@@ -63,18 +65,31 @@ function getBadgeClass(type: Restaurant["type"]) {
   return "badge-local";
 }
 
-function getBadgeLabel(type: Restaurant["type"]) {
-  if (type === "michelin") return "Michelin";
-  if (type === "blackpearl") return "Black Pearl";
-  return "Local Favorite";
+function getBadgeLabel(type: Restaurant["type"], lang?: string) {
+  if (type === "michelin") return ct(lang, "hl_michelin", "Michelin");
+  if (type === "blackpearl") return ct(lang, "hl_black_pearl", "Black Pearl");
+  return ct(lang, "hl_local_favorite", "Local Favorite");
 }
 
 interface HighlightCardProps {
   restaurant: Restaurant;
   highlightTag: RestaurantHighlightTag;
+  lang?: string;
 }
 
-function HighlightCard({ restaurant, highlightTag }: HighlightCardProps) {
+function getHlKey(tag: RestaurantHighlightTag): string {
+  if (tag === "local_recommend") return "hl_local_recommend";
+  if (tag === "affordable") return "hl_affordable";
+  if (tag === "street_food") return "hl_street_food";
+  return "hl_local_recommend";
+}
+
+function HighlightCard({ restaurant, highlightTag, lang = "en" }: HighlightCardProps) {
+  const isCJK = lang === "zh-CN" || lang === "zh-TW" || lang === "ja" || lang === "ko";
+  const displayName = (isCJK && restaurant.name && restaurant.name !== restaurant.nameEn)
+    ? restaurant.name
+    : (restaurant.nameEn || restaurant.name);
+  const secondaryName = (displayName === restaurant.nameEn) ? restaurant.name : restaurant.nameEn;
   const config = HIGHLIGHT_CONFIG[highlightTag];
 
   return (
@@ -86,15 +101,17 @@ function HighlightCard({ restaurant, highlightTag }: HighlightCardProps) {
       <div className="flex items-start justify-between gap-2 mb-2">
         <div className="flex-1 min-w-0">
           <h4 className="text-base font-semibold text-gray-900 leading-tight group-hover:text-blue-600 transition-colors truncate">
-            {restaurant.nameEn}
+            {displayName}
           </h4>
-          <p className="text-gray-500 text-xs truncate">{restaurant.name}</p>
+          {secondaryName && secondaryName !== displayName && (
+            <p className="text-gray-500 text-xs truncate">{secondaryName}</p>
+          )}
         </div>
         {/* Highlight badge - prominent */}
         <span
           className={`shrink-0 px-2 py-0.5 rounded-full text-xs font-semibold border ${config.badgeClass}`}
         >
-          {config.icon} {config.labelZh}
+          {config.icon} {ct(lang, getHlKey(highlightTag), config.label)}
         </span>
       </div>
 
@@ -103,9 +120,9 @@ function HighlightCard({ restaurant, highlightTag }: HighlightCardProps) {
         <span
           className={`px-2 py-0.5 rounded-full text-xs font-medium border ${getBadgeClass(restaurant.type)}`}
         >
-          {getBadgeLabel(restaurant.type)}
+          {getBadgeLabel(restaurant.type, lang)}
           {restaurant.type === "michelin" && restaurant.star ? `${restaurant.star}星` : ""}
-          {restaurant.type === "blackpearl" && restaurant.diamond ? `${restaurant.diamond}钻` : ""}
+          {restaurant.type === "blackpearl" && restaurant.diamond ? `${restaurant.diamond}${lang === "ja" ? "ダイヤ" : "钻"}` : ""}
         </span>
         <span className="text-gray-400 text-xs">{restaurant.cuisine}</span>
       </div>
@@ -148,6 +165,7 @@ export function FoodHighlightsSection({
   restaurants,
   citySlug,
   cityName,
+  lang = "en",
 }: FoodHighlightsSectionProps) {
   // Categorize restaurants
   const categorized: Record<RestaurantHighlightTag, Restaurant[]> = {
@@ -176,8 +194,8 @@ export function FoodHighlightsSection({
       {/* Section Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h3 className="text-xl font-bold text-gray-900">本地美食亮点</h3>
-          <p className="text-sm text-gray-500 mt-0.5">{cityName}本地人真心推荐</p>
+          <h3 className="text-xl font-bold text-gray-900">{ct(lang, "hl_section_title", "Local Food Highlights")}</h3>
+          <p className="text-sm text-gray-500 mt-0.5">{ct(lang, "hl_section_desc", "Hand-picked local dining picks in {city}").replace("{city}", cityName)}</p>
         </div>
         <a
           href={`/city/${citySlug}/food`}
@@ -195,14 +213,14 @@ export function FoodHighlightsSection({
           <div className="space-y-3">
             <div className="flex items-center gap-2">
               <span className="text-red-500 font-bold text-lg">❤️</span>
-              <h4 className="font-semibold text-red-700">本地人推荐</h4>
+              <h4 className="font-semibold text-red-700">{ct(lang, "hl_local_recommend", "本地人推荐")}</h4>
               <span className="text-xs text-gray-400 ml-auto">
-                {categorized.local_recommend.length}家
+                {categorized.local_recommend.length} {ct(lang, "hl_count_unit", "家")}
               </span>
             </div>
             <div className="space-y-2">
               {categorized.local_recommend.slice(0, 3).map((r) => (
-                <HighlightCard key={r.id} restaurant={r} highlightTag="local_recommend" />
+                <HighlightCard key={r.id} restaurant={r} highlightTag="local_recommend" lang={lang} />
               ))}
             </div>
             {categorized.local_recommend.length > 3 && (
@@ -210,7 +228,7 @@ export function FoodHighlightsSection({
                 href={`/city/${citySlug}/food?filter=local_recommend`}
                 className="block text-center text-sm text-red-600 hover:text-red-700 font-medium py-2 border border-dashed border-red-200 rounded-lg hover:bg-red-50 transition-colors"
               >
-                查看全部{categorized.local_recommend.length}家 →
+                {ct(lang, "hl_view_all_count", "查看全部 {count} 家").replace("{count}", String(categorized.local_recommend.length))}
               </a>
             )}
           </div>
@@ -221,14 +239,14 @@ export function FoodHighlightsSection({
           <div className="space-y-3">
             <div className="flex items-center gap-2">
               <span className="text-blue-500 font-bold text-lg">💙</span>
-              <h4 className="font-semibold text-blue-700">平价美食</h4>
+              <h4 className="font-semibold text-blue-700">{ct(lang, "hl_affordable", "平价美食")}</h4>
               <span className="text-xs text-gray-400 ml-auto">
-                {categorized.affordable.length}家
+                {categorized.affordable.length} {ct(lang, "hl_count_unit", "家")}
               </span>
             </div>
             <div className="space-y-2">
               {categorized.affordable.slice(0, 3).map((r) => (
-                <HighlightCard key={r.id} restaurant={r} highlightTag="affordable" />
+                <HighlightCard key={r.id} restaurant={r} highlightTag="affordable" lang={lang} />
               ))}
             </div>
             {categorized.affordable.length > 3 && (
@@ -236,7 +254,7 @@ export function FoodHighlightsSection({
                 href={`/city/${citySlug}/food?filter=affordable`}
                 className="block text-center text-sm text-blue-600 hover:text-blue-700 font-medium py-2 border border-dashed border-blue-200 rounded-lg hover:bg-blue-50 transition-colors"
               >
-                查看全部{categorized.affordable.length}家 →
+                {ct(lang, "hl_view_all_count", "查看全部 {count} 家").replace("{count}", String(categorized.affordable.length))}
               </a>
             )}
           </div>
@@ -247,14 +265,14 @@ export function FoodHighlightsSection({
           <div className="space-y-3">
             <div className="flex items-center gap-2">
               <span className="text-orange-500 font-bold text-lg">🔥</span>
-              <h4 className="font-semibold text-orange-700">苍蝇馆子</h4>
+              <h4 className="font-semibold text-orange-700">{ct(lang, "hl_street_food", "苍蝇馆子")}</h4>
               <span className="text-xs text-gray-400 ml-auto">
-                {categorized.street_food.length}家
+                {categorized.street_food.length} {ct(lang, "hl_count_unit", "家")}
               </span>
             </div>
             <div className="space-y-2">
               {categorized.street_food.slice(0, 3).map((r) => (
-                <HighlightCard key={r.id} restaurant={r} highlightTag="street_food" />
+                <HighlightCard key={r.id} restaurant={r} highlightTag="street_food" lang={lang} />
               ))}
             </div>
             {categorized.street_food.length > 3 && (
@@ -262,7 +280,7 @@ export function FoodHighlightsSection({
                 href={`/city/${citySlug}/food?filter=street_food`}
                 className="block text-center text-sm text-orange-600 hover:text-orange-700 font-medium py-2 border border-dashed border-orange-200 rounded-lg hover:bg-orange-50 transition-colors"
               >
-                查看全部{categorized.street_food.length}家 →
+                {ct(lang, "hl_view_all_count", "查看全部 {count} 家").replace("{count}", String(categorized.street_food.length))}
               </a>
             )}
           </div>
@@ -274,15 +292,15 @@ export function FoodHighlightsSection({
         <div className="flex items-center justify-between gap-4">
           <div>
             <h4 className="font-semibold text-gray-800 flex items-center gap-2">
-              <span>🍜</span> 探索{cityName}全部美食
+              <span>🍜</span> {ct(lang, "food_explore_all", "探索{city}全部美食").replace("{city}", cityName)}
             </h4>
-            <p className="text-sm text-gray-600 mt-0.5">米其林、黑珍珠、本地推荐 — 三层筛选</p>
+            <p className="text-sm text-gray-600 mt-0.5">{ct(lang, "food_filter_layers", "米其林、黑珍珠、本地推荐 - 三层筛选")}</p>
           </div>
           <a
             href={`/city/${citySlug}/food`}
             className="shrink-0 px-5 py-2.5 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl font-semibold text-sm hover:from-orange-600 hover:to-red-600 transition-all shadow-md hover:shadow-lg flex items-center gap-2"
           >
-            美食地图
+            {ct(lang, "food_map_cta", "美食地图")}
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <title>Navigate to food map</title>
               <path

@@ -9,14 +9,14 @@
     "lng": 118.7969
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Nanjing, ancient capital of six dynasties and capital of the Republic of China, is a city of profound historical significance. Home to the Sun Yat-sen Mausoleum, Ming Xiaoling Tomb (UNESCO), and theMemorial Hall of the Victims in Nanjing Massacre. A cultural crossroads between north and south China.",
+  "description": "نانجینگ، پایتخت باستانی شش سلسله و پایتخت جمهوری چین، شهری با اهمیت تاریخی عمیق است. این شهر میزبان آرامگاه سون یات‌سن، مقبره مینگ شیائولینگ (یونسکو) و سالن یادبود قربانیان قتل عام نانجینگ است. یک گذرگاه فرهنگی بین شمال و جنوب چین.",
   "coverImage": "/img/ext/17c2c1bef18d.webp",
   "highlights": [
-    "Sun Yat-sen Mausoleum - Purple Mountain",
-    "Ming Xiaoling Tomb - UNESCO World Heritage",
-    "Nanjing Massacre Memorial Hall",
-    "Presidential Palace - ROC history",
-    "Fuzi Temple - Ancient commerce district"
+    "مقبره سون یات‌سن - کوه بنفش",
+    "مقبره شاه مینگ - میراث جهانی یونesco",
+    "یادبود کشتار نانجینگ",
+    "کاخ ریاست‌جمهوری - تاریخ جمهوری چین",
+    "معبد فوزی - محله تجاری باستانی"
   ],
   "climate": {
     "type": "Subtropical monsoon",
@@ -36,65 +36,65 @@
     {
       "id": "sun-yat-sen-mausoleum",
       "name": "中山陵",
-      "nameEn": "Sun Yat-sen Mausoleum",
+      "nameEn": "آرامگاه سان یات‌سن",
       "category": "historical",
-      "description": "Magnificent mausoleum honoring Dr. Sun Yat-sen, founder of the Republic of China, on Purple Mountain with 392 steps.",
-      "address": "Zhongshan Mountain, Purple Mountain",
+      "description": "آرامگاه باشکوه دکتر سان یات‌سن، بنیانگذار جمهوری چین، در کوه پورپل با ۳۹۲ پله.",
+      "address": "کوه زونگشان، کوه پورپل",
       "coordinates": {
         "lat": 32.0622,
         "lng": 118.8572
       },
       "openingHours": "08:30-17:30",
-      "ticketPrice": "Free (park 70¥)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "رایگان (پارک ۷۰ یوآن)",
+      "recommendedVisitTime": "۲-۳ ساعت",
       "highlights": [
         "392 steps climb",
         "Blue tile roof",
-        "Panoramic views",
+        "چشم‌اندازهای پانورامیک",
         "Bai Chong"
       ],
-      "tips": "Arrive early to avoid crowds. Wear comfortable shoes. Combine with Ming Xiaoling Tomb nearby.",
+      "tips": "زودتر برسید تا از ازدحام جلوگیری کنید. کفش راحت بپوشید. با آرامگاه مینگ شیائولینگ در نزدیکی ترکیب کنید.",
       "image": "/img/ext/16dc871f0e76.webp",
       "phone": "+86 25 8443 1991"
     },
     {
       "id": "ming-xiaoling",
       "name": "明孝陵",
-      "nameEn": "Ming Xiaoling Tomb",
+      "nameEn": "آرامگاه مینگ شیائولینگ",
       "category": "historical",
-      "description": "UNESCO World Heritage site - the tomb of Emperor Hongwu, founder of the Ming Dynasty, with spectacular Avenue of Stone Animals.",
-      "address": "Ming Xiaoling, Purple Mountain",
+      "description": "میراث جهانی یونیسکو - آرامگاه امپراتور هونگ‌وو، بنیانگذار سلسله مینگ، با خیابان حیوانات سنگی خیره‌کننده.",
+      "address": "مینگ شیالینگ، کوه بنفش",
       "coordinates": {
         "lat": 32.0722,
         "lng": 118.8472
       },
       "openingHours": "06:30-18:30",
-      "ticketPrice": "70¥ (includes Ming Xiaoling and Music Square)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "۷۰ یوان (شامل مینگ شیالینگ و میدان موسیقی)",
+      "recommendedVisitTime": "۲-۳ ساعت",
       "highlights": [
-        "Avenue of Stone Animals",
-        "Ming palace ruins",
-        "Wenwu Temple",
-        "Autumn colors"
+        "خیابان حیوانات سنگی",
+        "ویرانه‌های کاخ مینگ",
+        "معبد ون‌وو",
+        "رنگ‌های پاییزی"
       ],
-      "tips": "Walk the 600-year-old avenue at sunrise for magical light. Best in autumn for golden gingko. Combine with nearby Purple Mountain.",
+      "tips": "در طول رودخانه ۶۰۰ ساله در طلوع آفتاب برای نور جادویی قدم بزنید. بهترین زمان پاییز برای درختان طلایی گینکو. با کوه بنفش مجاور ترکیب کنید.",
       "image": "/img/ext/f8f0e4ba3acb.webp",
       "phone": "+86 25 8576 9051"
     },
     {
       "id": "nanjing-massacre",
       "name": "南京大屠杀纪念馆",
-      "nameEn": "Memorial Hall of the Victims in Nanjing Massacre",
+      "nameEn": "تالار یادبود قربانیان کشتار نانجینگ",
       "category": "historical",
-      "description": "A powerful memorial to the 300,000 victims of the 1937 Nanjing Massacre, with exhibits and pilgrimage hall.",
-      "address": "418 Shuige Road, Jianye District",
+      "description": "یادبود قدرتمند ۳۰۰,۰۰۰ قربانی کشتار نانجینگ در سال ۱۹۳۷، با نمایشگاه‌ها و تالار زیارت.",
+      "address": "۴۱۸ جاده شویگه، منطقه جیانیه",
       "coordinates": {
         "lat": 32.0422,
         "lng": 118.7472
       },
-      "openingHours": "08:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "۰۸:۰۰-۱۷:۰۰ (دوشنبه‌ها بسته)",
+      "ticketPrice": "رایگان",
+      "recommendedVisitTime": "2-3 ساعت",
       "highlights": [
         "Memorial Hall",
         "Exhibition halls",
@@ -118,7 +118,7 @@
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "40¥",
-      "recommendedVisitTime": "2 hours",
+      "recommendedVisitTime": "2 ساعت",
       "highlights": [
         "Zhonghua Gate",
         "Office buildings",
@@ -141,13 +141,13 @@
         "lng": 118.7872
       },
       "openingHours": "09:00-21:00 (some areas open later)",
-      "ticketPrice": "Free (some attractions charge)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "رایگان (برخی جاذبه‌ها هزینه دارند)",
+      "recommendedVisitTime": "2-3 ساعت",
       "highlights": [
-        "Confucius Temple",
+        "معبد کنفسیوس",
         "Qinhuai River boats",
-        "Night lighting",
-        "Street food"
+        "روشنایی شب",
+        "غذای خیابانی"
       ],
       "tips": "Best at night when illuminated. Try local snacks from vendors. Take boat ride on river.",
       "image": "/img/ext/13d2a7142882.webp",
@@ -164,11 +164,11 @@
         "lat": 32.0822,
         "lng": 118.8272
       },
-      "openingHours": "Open 24 hours (attractions vary)",
+      "openingHours": "باز 24 ساعته (جاذبه‌ها متفاوت است)",
       "ticketPrice": "Free (individual attractions charge)",
-      "recommendedVisitTime": "Half to full day",
+      "recommendedVisitTime": "نیم روز تا یک روز کامل",
       "highlights": [
-        "Sun Yat-sen Mausoleum",
+        "آرامگاه سان یات‌سن",
         "Ming Xiaoling",
         "Music台",
         "Peak views"
@@ -188,9 +188,9 @@
         "lat": 32.0822,
         "lng": 118.7772
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "شبانه‌روزی باز",
+      "ticketPrice": "رایگان",
+      "recommendedVisitTime": "1-2 ساعت",
       "highlights": [
         "Lake cycling",
         "Five islands",
@@ -212,14 +212,14 @@
         "lat": 32.0122,
         "lng": 118.7972
       },
-      "openingHours": "Open 24 hours (shops 10:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "۲۴ ساعته باز (فروشگاه‌ها ۱۰:۰۰-۲۲:۰۰)",
+      "ticketPrice": "رایگان",
+      "recommendedVisitTime": "1-2 ساعت",
       "highlights": [
-        "Traditional architecture",
-        "Handcraft shops",
+        "معماری سنتی",
+        "فروشگاه‌های صنایع دستی",
         "Nanjing snacks",
-        "Photography"
+        "عکاسی"
       ],
       "tips": "Best evening with lighting. Try duck blood soup and small sesame balls. Less crowded than Fuzi Temple area.",
       "image": "/img/ext/998eb40307b9.webp",
@@ -237,8 +237,8 @@
         "lng": 118.8572
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "رایگان",
+      "recommendedVisitTime": "1-2 ساعت",
       "highlights": [
         "Memorial Hall",
         "Stone sculptures",
@@ -262,7 +262,7 @@
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 ساعت",
       "highlights": [
         "Giant gate complex",
         "藏兵洞",
@@ -286,7 +286,7 @@
       },
       "openingHours": "06:30-18:00",
       "ticketPrice": "35¥ (includes Linggu Temple and Music Square)",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 ساعت",
       "highopts": [
         "银杏林",
         "Dagoba of Pilgrims",
@@ -310,14 +310,14 @@
       },
       "openingHours": "Boat rides 09:00-22:00",
       "ticketPrice": "Free (boat ride 80-120¥)",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 ساعت",
       "highlights": [
         "Night boat ride",
         "Illuminated banks",
-        "Ancient architecture",
-        "Street food"
+        "معماری باستانی",
+        "غذای خیابانی"
       ],
-      "tips": "Take evening boat for best views. Combine with Fuzi Temple and Laochengli. The riverbank is great for walking.",
+      "tips": "برای بهترین مناظر، قایق شبانه برگزینید. با معبد فوزی و لاوچنگلی ترکیب کنید. ساحل رودخانه برای پیادهروی عالی است.",
       "image": "/img/ext/b557760624b0.webp",
       "phone": "+86 025  6576 7199"
     },
@@ -326,7 +326,7 @@
       "name": "紫金山天文台",
       "nameEn": "Purple Mountain Observatory",
       "category": "cultural",
-      "description": "Historic astronomical observatory on Purple Mountain, home to ancient telescopes and stellar artifacts.",
+      "description": " رصدخانه تاریخی در کوه بنفش، محل تلسکوپ‌های باستانی و آثار ستاره‌شناسی.",
       "address": "Purple Mountain, Xuanwu District",
       "coordinates": {
         "lat": 32.0922,
@@ -334,14 +334,14 @@
       },
       "openingHours": "8:30-16:30",
       "ticketPrice": "15¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 ساعت",
       "highlights": [
         "Ancient telescopes",
         "Star observatory",
-        "Mountain views",
+        "منظره کوه‌ها",
         "Space artifacts"
       ],
-      "tips": "Combine with Purple Mountain hike. Take cable car to save energy. Clear nights best for stargazing.",
+      "tips": "با پیاده‌روی در کوه بنفش ترکیب کنید. از کابل‌کار برای صرفه‌جویی در انرژی استفاده کنید. شب‌های صاف برای رصد ستارگان بهترین هستند.",
       "image": "/img/ext/1b3a09b8ec59.webp",
       "phone": "+86 025  9171 9081"
     },
@@ -358,11 +358,11 @@
       },
       "openingHours": "06:30-18:30",
       "ticketPrice": "Included in Ming Xiaoling ticket (70¥)",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1 ساعت",
       "highlights": [
         "Plum blossoms",
-        "Mountain views",
-        "Photography",
+        "منظره کوه‌ها",
+        "عکاسی",
         "Winter scenery"
       ],
       "tips": "Visit during plum blossom season (February-March). The fragrance is amazing. Less crowded on weekdays.",
@@ -372,10 +372,10 @@
     {
       "id": "xiaoling-winter",
       "name": "石象路",
-      "nameEn": "Stone Elephant Road",
+      "nameEn": "جاده فیل سنگی",
       "category": "historical",
       "description": "The iconic 600-meter avenue lined with massive stone animals leading to Ming Xiaoling Tomb.",
-      "address": "Ming Xiaoling, Purple Mountain",
+      "address": "مینگ شیالینگ، کوه بنفش",
       "coordinates": {
         "lat": 32.0722,
         "lng": 118.8472
@@ -385,8 +385,8 @@
       "recommendedVisitTime": "30 min - 1 hour",
       "highlights": [
         "Stone animals",
-        "Autumn foliage",
-        "Photography",
+        "برگ‌های پاییزی",
+        "عکاسی",
         "Imperial avenue"
       ],
       "tips": "Visit at sunrise for magical light. Autumn for golden gingko. The most photographed spot in Nanjing.",
@@ -406,11 +406,11 @@
       },
       "openingHours": "09:00-17:00",
       "ticketPrice": "25¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1 ساعت",
       "highlights": [
         "Ming architecture",
         "Exhibitions",
-        "Courtyards",
+        "حیاط‌ها",
         "Cultural artifacts"
       ],
       "tips": "Good for understanding Ming ritual culture. The architecture is impressive. Combine with nearby Fuzi Temple.",
@@ -420,7 +420,7 @@
     {
       "id": "zjnu",
       "name": "南京大学",
-      "nameEn": "Nanjing University",
+      "nameEn": "دانشگاه نانجینگ",
       "category": "cultural",
       "description": "Prestigious historic university with beautiful Qing Dynasty architecture and tree-lined campus.",
       "address": "22 Han Kou Road, Gulou District",
@@ -428,14 +428,14 @@
         "lat": 32.0522,
         "lng": 118.7672
       },
-      "openingHours": "Open to public",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "برای عموم باز است",
+      "ticketPrice": "رایگان",
+      "recommendedVisitTime": "1-2 ساعت",
       "highlights": [
-        "Historic buildings",
+        "ساختمان‌های تاریخی",
         "Coral tree",
         "Pattinson Hall",
-        "Campus gardens"
+        "باغ‌های دانشگاهی"
       ],
       "tips": "Visit in spring for coral trees. The main building is beautiful. Great for architecture enthusiasts.",
       "image": "/img/ext/4733ff48dc8a.webp",
@@ -444,24 +444,24 @@
     {
       "id": "yongle-temple",
       "name": "大报恩寺",
-      "nameEn": "Dabaoen Temple (Yongle Temple)",
+      "nameEn": "معبد دابائوئن (معبد یونگلِ)",
       "category": "historical",
       "description": "Rebuilt on site of historic Ming Dynasty temple, known for its modern glass exhibitions and tall pagoda.",
-      "address": "1 Baocheng Road, Qinhuai District",
+      "address": "خیابان باچنگ، منطقه چینهوآی، شماره ۱",
       "coordinates": {
         "lat": 32.0322,
         "lng": 118.8072
       },
       "openingHours": "09:00-17:30",
       "ticketPrice": "80¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3 ساعت",
       "highlights": [
-        "Glass walkway",
-        "Ancient ruins",
-        "Modern art",
+        "پل شیشهای",
+        "تخریبهای باستانی",
+        "هنر مدرن",
         "Pagoda views"
       ],
-      "tips": "Modern temple with interesting exhibitions. The glass walkway is impressive. Arrive early to avoid crowds.",
+      "tips": "معبد مدرن با نمایشگاه‌های جالب. پیاده‌روی شیشه‌ای بسیار چشم‌گیر است. زودتر به آنجا بروید تا از شلوغی جلوگیری کنید.",
       "image": "/img/ext/996418ec9603.webp",
       "phone": "+86 025  6987 7624"
     },
@@ -476,14 +476,14 @@
         "lat": 32.0822,
         "lng": 118.7772
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "شبانه‌روزی باز",
+      "ticketPrice": "رایگان",
+      "recommendedVisitTime": "2-3 ساعت",
       "highlights": [
         "Five islands",
         "Cycling path",
         "Cherry blossoms",
-        "Sunset views"
+        "منظره غروب آفتاب"
       ],
       "tips": "Rent bikes (15¥/hour) to tour the lake. Best at sunset. The cherry blossoms in March are spectacular.",
       "image": "/img/ext/7504bb87ad9c.webp",
@@ -500,16 +500,16 @@
         "lat": 32.0122,
         "lng": 118.7872
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
+      "openingHours": "شبانه‌روزی باز",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "30 min - 1 hour",
       "highlights": [
-        "Classical poetry",
-        "Riverside views",
-        "Traditional shops",
-        "Romantic atmosphere"
+        "شعر کلاسیک",
+        "مناظر رودخانه",
+        "مغازه‌های سنتی",
+        "جوی روح‌بخش و عاشقانه"
       ],
-      "tips": "Best at night with lights. Named after poet's love story. Great for photos. Combine with boat ride.",
+      "tips": "در شب با روشنایی بهترین است. به افسانه عاشقانه شاعر نامگذاری شده است. برای عکاسی عالی است. با سفری در قایق ترکیب کنید.",
       "image": "/img/ext/309f30e43563.webp",
       "phone": "+86 025  7326 4220"
     },
@@ -526,12 +526,12 @@
       },
       "openingHours": "07:00-17:00",
       "ticketPrice": "10¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 ساعت",
       "highlights": [
         "Plum blossom garden",
-        "Thousand Buddha Hall",
+        "سالن هزار بودا",
         "City wall views",
-        "Bamboo forest"
+        "جنگل بامبو"
       ],
       "tips": "Best in February for plum blossoms. Combine with Purple Mountain walk. The vegetarian noodles nearby are famous.",
       "image": "/img/ext/114a5c92c35d.webp",
@@ -550,11 +550,11 @@
       },
       "openingHours": "08:00-17:30",
       "ticketPrice": "40¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 ساعت",
       "highlights": [
         "Yangtze River views",
         "Jingting observation deck",
-        "Ming dynasty architecture",
+        "معماری دوره مینگ",
         "Historical documents"
       ],
       "tips": "Best at sunset for river views. Combined ticket available with Zhonghua Gate. Take photos at the Lion Head.",
@@ -574,7 +574,7 @@
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "40¥ (attractions extra)",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "۳-۴ ساعت",
       "highlights": [
         "Natural spring",
         "Hot spring resort",
@@ -588,24 +588,24 @@
     {
       "id": "nanjing-24",
       "name": "牛首山文化旅游区",
-      "nameEn": "Niushou Mountain Cultural Tourism Zone",
+      "nameEn": "منطقه گردشگری فرهنگی کوه نیوشو",
       "category": "cultural",
-      "description": "Modern Buddhist cultural park featuring the stunning Palace of Bliss temple built into a former mining pit.",
-      "address": "Niushou Mountain, Yuhuatai District",
+      "description": "پارک فرهنگی بودایی مدرن با معبد زیبای «قصر خوشبختی» که در یک معدن سابق ساخته شده است.",
+      "address": "کوه نیوشو، منطقه یوهواتای",
       "coordinates": {
         "lat": 31.9422,
         "lng": 118.8072
       },
       "openingHours": "09:00-17:30",
       "ticketPrice": "98¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "۳-۴ ساعت",
       "highlights": [
-        "Palace of Bliss",
+        "کاخ خوشبختی",
         "Mountain top temple",
         "Underground palace",
-        "Buddhist art"
+        "هنر بودایی"
       ],
-      "tips": "One of Nanjing's newest attractions. The underground palace is spectacular. Book tickets online. Arrive early for fewer crowds.",
+      "tips": "یکی از جدیدترین جاذبه‌های نانجینگ. کاخ زیرزمینی فوق‌العاده است. بلیت‌ها را آنلاین رزرو کنید. زودتر برای کاهش ازدحام به آنجا بروید.",
       "image": "/img/ext/bf99cae8fce5.webp",
       "phone": "+86 025  9655 1896"
     },
@@ -622,12 +622,12 @@
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "45¥ (partial), 65¥ (full)",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3 ساعت",
       "highlights": [
         "Plant collections",
-        "Cherry blossom avenue",
+        "خیابان گیلاس",
         "Greenhouse",
-        "Nature trails"
+        "مسیرهای طبیعی"
       ],
       "tips": "Best in spring for cherry blossoms and autumn for foliage. The azalea garden is stunning in April. Great for nature photography.",
       "image": "/img/ext/533e4da8695b.webp",
@@ -638,29 +638,29 @@
       "name": "燕雀湖",
       "nameEn": "Yanqe Lake",
       "category": "natural",
-      "description": "Picturesque lake near Ming Xiaoling famous for its lotus flowers and reflection views of Purple Mountain.",
-      "address": "Ming Xiaoling, Purple Mountain",
+      "description": "دریاچه‌ای زیبا در نزدیکی مقبره مینگ شیاولینگ که به دلیل گل‌های نیلوفر آبی و مناظر انعکاسی کوه ارغوانی معروف است.",
+      "address": "مینگ شیالینگ، کوه بنفش",
       "coordinates": {
         "lat": 32.0622,
         "lng": 118.8472
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
+      "openingHours": "شبانه‌روزی باز",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "30 min - 1 hour",
       "highlights": [
         "Lotus flowers",
-        "Mountain reflection",
-        "Photography spot",
+        "انعکاس کوه",
+        "محل عکاسی",
         "Peaceful atmosphere"
       ],
-      "tips": "Best in summer for lotus. The reflection of Purple Mountain is famous. Combine with Ming Xiaoling visit. Morning light is magical.",
+      "tips": "در تابستان برای لوتوس بهترین است. انعکاس کوه ارغوانی معروف است. با بازدید از آرامگاه مینگ شیاولینگ ترکیب کنید. نور صبحگاهی سحرآمیز است.",
       "image": "/img/ext/f40cca09aac0.webp",
       "phone": "+86 025  5411 2435"
     },
     {
       "id": "sun-yat-sen",
       "name": "中山陵",
-      "nameEn": "Sun Yat-sen Mausoleum",
+      "nameEn": "آرامگاه سان یات‌سن",
       "category": "landmark",
       "description": "孙中山先生的陵墓，有392级台阶。",
       "address": "南京市玄武区",
@@ -682,7 +682,7 @@
     {
       "id": "confucius-temple",
       "name": "夫子庙",
-      "nameEn": "Confucius Temple",
+      "nameEn": "معبد کنفسیوس",
       "category": "street",
       "description": "南京最著名的文化街区，有秦淮河和各种小吃。",
       "address": "南京市秦淮区",
@@ -705,7 +705,7 @@
     {
       "id": "nanjing-museum",
       "name": "南京博物院",
-      "nameEn": "Nanjing Museum",
+      "nameEn": "موزه نانجینگ",
       "category": "museum",
       "description": "中国三大博物馆之一，馆藏文物42万件。",
       "address": "南京市玄武区",
@@ -727,7 +727,7 @@
     {
       "id": "nanjing-food",
       "name": "南京美食",
-      "nameEn": "Nanjing Food",
+      "nameEn": "غذاهای نانجینگ",
       "category": "street",
       "description": "南京有鸭血粉丝汤和各种小吃。",
       "address": "南京市",
@@ -749,7 +749,7 @@
     {
       "id": "nanjing-night",
       "name": "南京夜景",
-      "nameEn": "Nanjing Night View",
+      "nameEn": "منظره شب نانجینگ",
       "category": "landmark",
       "description": "秦淮河和夫子庙的夜景灯光秀。",
       "address": "南京市秦淮区",
@@ -946,7 +946,7 @@
     {
       "id": "nanjing-university",
       "name": "南京大学",
-      "nameEn": "Nanjing University",
+      "nameEn": "دانشگاه نانجینگ",
       "category": "landmark",
       "description": "中国最著名的高等学府之一。",
       "address": "南京市鼓楼区",
@@ -967,7 +967,7 @@
     {
       "id": "nanjing-street2",
       "name": "颐和路",
-      "nameEn": "Yihe Road",
+      "nameEn": "خیابان ییهه",
       "category": "street",
       "description": "南京最美的街道之一，有大量民国建筑。",
       "address": "南京市鼓楼区",
@@ -988,7 +988,7 @@
     {
       "id": "nanjing-museum2",
       "name": "南京科技馆",
-      "nameEn": "Nanjing Science Museum",
+      "nameEn": "موزه علمی نانجینگ",
       "category": "museum",
       "description": "展示科技知识的博物馆。",
       "address": "南京市建邺区",
@@ -1009,7 +1009,7 @@
     {
       "id": "nanjing-park2",
       "name": "雨花台",
-      "nameEn": "Yuhuatai",
+      "nameEn": "یوهواتای",
       "category": "landmark",
       "description": "纪念革命先烈的纪念地。",
       "address": "南京市雨花台区",
@@ -1186,8 +1186,8 @@
       "id": "nanjing-1",
       "name": "南京大牌档",
       "nameEn": "Nanjing Da Pai Dang",
-      "type": "local",
-      "cuisine": "Nanjing",
+      "type": "محلی",
+      "cuisine": "نانجینگ",
       "avgPrice": 80,
       "rating": 4.6,
       "address": "Multiple locations including Xuanwu and Fuzi Temple",
@@ -1199,16 +1199,16 @@
       "hours": "11:00-22:00",
       "description": "Popular chain serving authentic Nanjing and Jiangsu cuisine in traditional atmosphere.",
       "dishHighlights": [
-        "Duck blood soup",
+        "سوپ خون اردک",
         "Salt Duck",
-        "Steamed dumplings",
-        "Qinhuai snacks"
+        "کوفته‌های بخارپز",
+        "تنقلات چین‌هوایی"
       ],
       "tags": [
-        "local",
-        "nanjing-cuisine",
-        "traditional",
-        "chain"
+        "محلی",
+        "آشپزی نانجینگ",
+        "سنتی",
+        "زنجیره‌ای"
       ],
       "star": 0,
       "diamond": 0,
@@ -1218,9 +1218,9 @@
       "id": "nanjing-2",
       "name": "狮子桥",
       "nameEn": "Shizi Qiao",
-      "type": "blackpearl",
+      "type": "بلک‌پرل",
       "diamond": 1,
-      "cuisine": "Jiangsu",
+      "cuisine": "آشپزی جیانگ‌سو",
       "avgPrice": 150,
       "rating": 4.5,
       "address": "73 Guangdong Road, Gulou District",
@@ -1233,13 +1233,13 @@
       "description": "One-diamond Black Pearl restaurant known for refined Jiangsu cuisine and elegant dining.",
       "dishHighlights": [
         "Steamed mantou with crab roe",
-        "Braised pork belly",
+        "خوک شکمی آب‌پز",
         "Sweet and sour mandarin fish"
       ],
       "tags": [
-        "fine-dining",
-        "jiangsu-cuisine",
-        "elegant"
+        "رستوران لوکس",
+        "غذای جیانگ‌سو",
+        "شیک"
       ],
       "star": 0,
       "imageUrl": "/img/ext/2b02a2d279a0.webp"
@@ -1248,8 +1248,8 @@
       "id": "nanjing-3",
       "name": "尹氏鸡汁汤包",
       "nameEn": "Yin Shi Chicken Soup Dumplings",
-      "type": "local",
-      "cuisine": "Nanjing Snacks",
+      "type": "محلی",
+      "cuisine": "تنقلات نانگینگ",
       "avgPrice": 40,
       "rating": 4.9,
       "address": "28 Zhuangyuan Kitchen (near Fuzi Temple)",
@@ -1261,12 +1261,12 @@
       "description": "Legendary tiny soup dumplings in rich chicken broth, a Nanjing institution since 1920s.",
       "dishHighlights": [
         "Chicken soup dumplings",
-        "Duck blood soup",
-        "Fried rice noodles"
+        "سوپ خون اردک",
+        "نودل برنجی سرخ‌شده"
       ],
       "tags": [
-        "local",
-        "famous",
+        "محلی",
+        "مشهور",
         "تنقلات",
         "حتماً امتحان کنید"
       ],
@@ -1279,7 +1279,7 @@
       "id": "nanjing-4",
       "name": "回味鸭血粉丝汤",
       "nameEn": "هویوی سوپ خون اردک با رشته فرنگی",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "نانجینگ",
       "avgPrice": 35,
       "rating": 4.7,
@@ -1311,7 +1311,7 @@
       "id": "nanjing-5",
       "name": "咸亨酒店",
       "nameEn": "هتل شیان هنگ",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "غذای شائوکسینگ/نانکینگ",
       "avgPrice": 100,
       "rating": 4.5,
@@ -1320,7 +1320,7 @@
         "lat": 32.0122,
         "lng": 118.7872
       },
-      "hours": "۱۰:۰۰-۲۲:۰۰",
+      "hours": "10:00-22:00",
       "description": "رستوران تاریخی الهام‌گرفته از اثر مشهور لوشون، با سرو شراب شائوکسینگ و غذاهای سنتی.",
       "dishHighlights": [
         "مرغ مست",
@@ -1342,7 +1342,7 @@
       "id": "nanjing-6",
       "name": "绿柳居",
       "nameEn": "لو لیو جو",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "گیاه‌خواری نانکینگ",
       "avgPrice": 60,
       "rating": 4.5,
@@ -1373,7 +1373,7 @@
       "id": "nanjing-7",
       "name": "小笼包店",
       "nameEn": "نانگینگ سواپ دامپلینگز",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "تنقلات نانگینگ",
       "avgPrice": 30,
       "rating": 4.6,
@@ -1386,14 +1386,14 @@
       "description": "صبحانه‌فروشی‌های محلی که سرو کننده‌های سوپ نانگینگ و حریره برنج.",
       "dishHighlights": [
         "کوفته‌های سوپ‌دار",
-        "Congee",
-        "Fried dough sticks"
+        "فرنی",
+        "چوبه خمیر سرخ شده"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "budget",
-        "snacks"
+        "محلی",
+        "صبحانه",
+        "اقتصادی",
+        "میان‌وعده"
       ],
       "star": 0,
       "diamond": 0,
@@ -1404,8 +1404,8 @@
       "id": "nanjing-8",
       "name": "秦淮人家",
       "nameEn": "Qinhuai Renjia",
-      "type": "local",
-      "cuisine": "Nanjing",
+      "type": "محلی",
+      "cuisine": "نانجینگ",
       "avgPrice": 120,
       "rating": 4.6,
       "address": "Near Qinhuai River, Fuzi Temple",
@@ -1418,15 +1418,15 @@
       "description": "Riverside restaurant serving quality Nanjing cuisine with evening boat ride option.",
       "dishHighlights": [
         "Nanjing salt duck",
-        "Steamed fish",
-        "Qinhuai snacks",
-        "River views"
+        "ماهی بخارپز",
+        "تنقلات چین‌هوایی",
+        "منظره رود"
       ],
       "tags": [
-        "local",
-        "scenic",
-        "nanjing-cuisine",
-        "romantic"
+        "محلی",
+        "طبیعی",
+        "آشپزی نانجینگ",
+        "رمانتیک"
       ],
       "star": 0,
       "diamond": 0,
@@ -1436,7 +1436,7 @@
       "id": "nanjing-9",
       "name": "韩复兴",
       "nameEn": "Han Fu Xing",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "Nanjing Salted Duck",
       "avgPrice": 60,
       "rating": 4.7,
@@ -1453,10 +1453,10 @@
         "Duck neck"
       ],
       "tags": [
-        "local",
-        "famous",
-        "souvenir",
-        "must-try"
+        "محلی",
+        "مشهور",
+        "سوغات",
+        "حتما امتحان کنید"
       ],
       "star": 0,
       "diamond": 0,
@@ -1467,11 +1467,11 @@
       "id": "nanjing-10",
       "name": "奇芳阁",
       "nameEn": "Qi Fang Ge",
-      "type": "local",
-      "cuisine": "Nanjing Snacks",
+      "type": "محلی",
+      "cuisine": "تنقلات نانگینگ",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "Near Fuzi Temple",
+      "address": "نزدیک معبد فوزی",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
@@ -1479,16 +1479,16 @@
       "hours": "07:00-19:00",
       "description": "Historic snack restaurant known for traditional Nanjing breakfast and local delicacies.",
       "dishHighlights": [
-        "Duck blood soup",
-        "Fried dough sticks",
-        "Rice rolls",
-        "Congee"
+        "سوپ خون اردک",
+        "چوبه خمیر سرخ شده",
+        "رول برنج",
+        "فرنی"
       ],
       "tags": [
-        "local",
-        "historic",
-        "breakfast",
-        "snacks"
+        "محلی",
+        "تاریخی",
+        "صبحانه",
+        "میان‌وعده"
       ],
       "star": 0,
       "diamond": 0,
@@ -1499,11 +1499,11 @@
       "id": "nanjing-11",
       "name": "永和园",
       "nameEn": "Yong He Yuan",
-      "type": "local",
-      "cuisine": "Nanjing Snacks",
+      "type": "محلی",
+      "cuisine": "تنقلات نانگینگ",
       "avgPrice": 40,
       "rating": 4.6,
-      "address": "Near Fuzi Temple",
+      "address": "نزدیک معبد فوزی",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
@@ -1511,15 +1511,15 @@
       "hours": "06:30-19:00",
       "description": "Long-standing snack shop famous for wontons and crab roe dumplings.",
       "dishHighlights": [
-        "Wontons",
+        "وانتون",
         "Crab roe dumplings",
-        "Noodles"
+        "نودل"
       ],
       "tags": [
-        "local",
-        "historic",
-        "breakfast",
-        "value"
+        "محلی",
+        "تاریخی",
+        "صبحانه",
+        "ارزش"
       ],
       "star": 0,
       "diamond": 0,
@@ -1530,11 +1530,11 @@
       "id": "nanjing-12",
       "name": "六朝面馆",
       "nameEn": "Liu Chao Noodles",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "Nanjing Noodles",
       "avgPrice": 35,
       "rating": 4.5,
-      "address": "Near Fuzi Temple",
+      "address": "نزدیک معبد فوزی",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
@@ -1543,14 +1543,14 @@
       "description": "Popular noodle shop serving traditional Nanjing-style noodles with various toppings.",
       "dishHighlights": [
         "Duck liver noodles",
-        "Beef noodles",
-        "Vegetable noodles"
+        "نودل گوشت گاو",
+        "نودل سبزیجات"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "quick",
-        "value"
+        "محلی",
+        "نودل",
+        "سریع",
+        "ارزش"
       ],
       "star": 0,
       "diamond": 0,
@@ -1561,8 +1561,8 @@
       "id": "nanjing-13",
       "name": "鸡鸣寺素面",
       "nameEn": "Jiming Temple Vegetarian Noodles",
-      "type": "local",
-      "cuisine": "Buddhist Vegetarian",
+      "type": "محلی",
+      "cuisine": "گیاهی بودایی",
       "avgPrice": 45,
       "rating": 4.6,
       "address": "Near Jiming Temple",
@@ -1574,13 +1574,13 @@
       "description": "Vegetarian noodles near Jiming Temple, known for Buddhist cuisine and peaceful atmosphere.",
       "dishHighlights": [
         "Vegetarian noodles",
-        "Buddhist vegetables",
+        "سبزیجات بودایی",
         "Tofu skin rolls"
       ],
       "tags": [
-        "local",
-        "vegetarian",
-        "buddhist",
+        "محلی",
+        "وگان",
+        "بودایی",
         "peaceful"
       ],
       "star": 0,
@@ -1591,30 +1591,30 @@
     {
       "id": "nanjing-14",
       "name": "南京精菜馆",
-      "nameEn": "Nanjing Fine Cuisine",
-      "type": "blackpearl",
+      "nameEn": "آشپزی ظریف نانجینگ",
+      "type": "بلک‌پرل",
       "diamond": 1,
-      "cuisine": "Jiangsu",
+      "cuisine": "آشپزی جیانگ‌سو",
       "avgPrice": 200,
       "rating": 4.7,
-      "address": "188 Guangzhou Road, Gulou District",
+      "address": "خیابان گوانگژو ۱۸۸، منطقه گولو",
       "coordinates": {
         "lat": 32.0422,
         "lng": 118.7772
       },
       "phone": "+86 25 8332 0888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "One-diamond Black Pearl restaurant offering refined Jiangsu cuisine with elegant presentation.",
+      "description": "رستوران یک الماسی بلک پرل که غذاهای اصلاح شده جیانگ سو را با ارائه زیبا ارائه می دهد.",
       "dishHighlights": [
-        "Steamed Jiangsu fish",
-        "Braised pork belly",
-        "Seasonal vegetables"
+        "ماهی بخاری جیانگ سو",
+        "خوک شکمی آب‌پز",
+        "سبزیجات فصلی"
       ],
       "tags": [
-        "fine-dining",
-        "jiangsu-cuisine",
-        "elegant",
-        "special-occasion"
+        "رستوران لوکس",
+        "غذای جیانگ‌سو",
+        "شیک",
+        "مناسبت خاص"
       ],
       "star": 0,
       "imageUrl": "/img/ext/a4d996ef9d67.webp"
@@ -1622,30 +1622,30 @@
     {
       "id": "nanjing-15",
       "name": "金陵饭店梅苑",
-      "nameEn": "Plum Garden - Jinling Hotel",
-      "type": "fine",
-      "cuisine": "Jiangsu",
+      "nameEn": "باغ سنجد - هتل جینلینگ",
+      "type": "فوق‌العاده",
+      "cuisine": "آشپزی جیانگ‌سو",
       "avgPrice": 300,
       "rating": 4.8,
-      "address": "2 Hanzhong Road, Xuanwu District (Jinling Hotel)",
+      "address": "خیابان هانژونگ، شماره ۲، منطقه شوان وو (هتل جینلینگ)",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7872
       },
       "phone": "+86 25 8471 1888",
       "hours": "11:30-14:00, 17:30-21:30",
-      "description": "High-end restaurant in Jinling Hotel serving premium Jiangsu cuisine with imperial heritage.",
+      "description": "رستوران مجلل در هتل جینلینگ که غذاهای پیشرفته استان جیانگسو را با میراث امپراتوری ارائه می‌دهد.",
       "dishHighlights": [
         "Imperial Jinling cuisine",
-        "Abalone",
-        "Bird's nest soup",
-        "Premium seafood"
+        "حلزون صدف‌دار",
+        "سوپ آشیانه پرنده",
+        "دریایی ممتاز"
       ],
       "tags": [
-        "fine-dining",
-        "luxury",
-        "imperial",
-        "special-occasion"
+        "رستوران لوکس",
+        "لوکس",
+        "سلطنتی",
+        "مناسبت خاص"
       ],
       "star": 0,
       "diamond": 0,
@@ -1655,8 +1655,8 @@
       "id": "nanjing-16",
       "name": "清真马祥兴",
       "nameEn": "Ma Xiang Xing Halal",
-      "type": "local",
-      "cuisine": "Halal Nanjing",
+      "type": "محلی",
+      "cuisine": "غذای حلال نانجینگ",
       "avgPrice": 50,
       "rating": 4.5,
       "address": "76 Guangzhou Road, Gulou District",
@@ -1667,15 +1667,15 @@
       "hours": "10:00-22:00",
       "description": "Historic Muslim restaurant known for beef dishes and traditional Halal Nanjing cuisine.",
       "dishHighlights": [
-        "Beef noodles",
-        "Lamb skewers",
-        "Hand-pulled noodles"
+        "نودل گوشت گاو",
+        "سیخ‌های بره",
+        "نودل‌های دستی کشیده"
       ],
       "tags": [
-        "local",
-        "halal",
-        "muslim",
-        "historic"
+        "محلی",
+        "حلال",
+        "مسلمان",
+        "تاریخی"
       ],
       "star": 0,
       "diamond": 0,
@@ -1686,8 +1686,8 @@
       "id": "nanjing-17",
       "name": "夫子庙小吃广场",
       "nameEn": "Fuzi Temple Snack Street",
-      "type": "local",
-      "cuisine": "Nanjing Snacks",
+      "type": "محلی",
+      "cuisine": "تنقلات نانگینگ",
       "avgPrice": 30,
       "rating": 4.3,
       "address": "Fuzi Temple area",
@@ -1698,16 +1698,16 @@
       "hours": "10:00-22:00",
       "description": "Open-air snack market with dozens of vendors serving local Nanjing snacks and street food.",
       "dishHighlights": [
-        "Duck blood soup",
-        "Stinky tofu",
-        "Grilled squid",
+        "سوپ خون اردک",
+        "تofu بدبو",
+        "ماهی مرکب کبابی",
         "Tangbao"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "street-food",
-        "night-market"
+        "محلی",
+        "میان‌وعده",
+        "غذای خیابانی",
+        "بازار شبانه"
       ],
       "star": 0,
       "diamond": 0,
@@ -1718,11 +1718,11 @@
       "id": "nanjing-18",
       "name": "金陵小红枣",
       "nameEn": "Jinling Red Dates",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "Nanjing Desserts",
       "avgPrice": 25,
       "rating": 4.4,
-      "address": "Near Fuzi Temple",
+      "address": "نزدیک معبد فوزی",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
@@ -1732,14 +1732,14 @@
       "dishHighlights": [
         "Red date soup",
         "Taro soup",
-        "Sweet rice balls",
-        "Osmanthus cake"
+        "برنجک‌های شیرین",
+        "کیک گل زیتون"
       ],
       "tags": [
-        "local",
-        "dessert",
-        "traditional",
-        "sweet"
+        "محلی",
+        "دسر",
+        "سنتی",
+        "شیرین"
       ],
       "star": 0,
       "diamond": 0,
@@ -1750,27 +1750,27 @@
       "id": "nanjing-19",
       "name": "东南大学老食堂",
       "nameEn": "SEU Old Canteen",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "University食堂",
       "avgPrice": 20,
       "rating": 4.2,
-      "address": "Southeast University, Sipailou",
+      "address": "دانشگاه جنوب شرقی، سیپایلو",
       "coordinates": {
         "lat": 32.0522,
         "lng": 118.7872
       },
       "hours": "06:30-20:00",
-      "description": "University cafeteria open to visitors, serving authentic and cheap local dishes.",
+      "description": "کافه‌تریای دانشگاه که برای بازدیدکنندگان باز است و غذاهای محلی واقعی و ارزان را سرو می‌کند.",
       "dishHighlights": [
-        "Rice with dishes",
-        "Noodles",
-        "Dumplings"
+        "برنج با غذاهای مختلف",
+        "نودل",
+        "کوفته"
       ],
       "tags": [
-        "local",
-        "budget",
-        "authentic",
-        "student-life"
+        "محلی",
+        "اقتصادی",
+        "اصیل",
+        "زندگی دانشجویی"
       ],
       "star": 0,
       "diamond": 0,
@@ -1781,8 +1781,8 @@
       "id": "nanjing-20",
       "name": "明瓦廊美食街",
       "nameEn": "Mingwa Lang Food Street",
-      "type": "local",
-      "cuisine": "Various",
+      "type": "محلی",
+      "cuisine": "متنوع",
       "avgPrice": 40,
       "rating": 4.4,
       "address": "Mingwa Lang, Xinadie",
@@ -1793,16 +1793,16 @@
       "hours": "17:00-02:00",
       "description": "Famous evening food street with variety of local snacks and international cuisine.",
       "dishHighlights": [
-        "Grilled skewers",
-        "Spicy crayfish",
+        "کباب‌های گریل شده",
+        "خرچنگ تند",
         "Lamb noodles",
         "Beer"
       ],
       "tags": [
-        "local",
-        "night-market",
-        "street-food",
-        "late-night"
+        "محلی",
+        "بازار شبانه",
+        "غذای خیابانی",
+        "شبانه"
       ],
       "star": 0,
       "diamond": 0,
@@ -1812,9 +1812,9 @@
     {
       "id": "nanjing-21",
       "name": "海底捞火锅",
-      "nameEn": "Haidilao Hotpot",
-      "type": "chain",
-      "cuisine": "Hotpot",
+      "nameEn": "های دیلایو هات‌پات",
+      "type": "زنجیره‌ای",
+      "cuisine": "هات پات",
       "avgPrice": 150,
       "rating": 4.7,
       "address": "Deji Plaza, 18 Zhongshan Road",
@@ -1823,19 +1823,19 @@
         "lng": 118.7972
       },
       "phone": "+86 25 8471 9999",
-      "hours": "24 hours",
+      "hours": "24 ساعته",
       "description": "Famous chain hotpot restaurant with exceptional service. Known for manicotti, freebies, and entertainment while waiting.",
       "dishHighlights": [
-        "Spicy hotpot",
-        "Fresh beef",
-        "Hand-pulled noodles",
-        "Free snacks"
+        "هات‌پات تند",
+        "گوشت تازه گاو",
+        "نودل‌های دستی کشیده",
+        "تنقلات رایگان"
       ],
       "tags": [
-        "chain",
-        "hotpot",
-        "service",
-        "entertainment"
+        "زنجیره‌ای",
+        "خورشت چینی",
+        "خدمات",
+        "سرگرمی"
       ],
       "star": 0,
       "diamond": 0,
@@ -1845,11 +1845,11 @@
       "id": "nanjing-22",
       "name": "全聚德",
       "nameEn": "Quanjude Peking Duck",
-      "type": "fine",
-      "cuisine": "Peking Duck",
+      "type": "فوق‌العاده",
+      "cuisine": "اردک پکن",
       "avgPrice": 200,
       "rating": 4.5,
-      "address": "188 Guangzhou Road, Gulou District",
+      "address": "خیابان گوانگژو ۱۸۸، منطقه گولو",
       "coordinates": {
         "lat": 32.0422,
         "lng": 118.7772
@@ -1858,16 +1858,16 @@
       "hours": "11:00-14:00, 17:00-21:00",
       "description": "Legendary Peking duck restaurant with crispy skin and traditional preparation methods.",
       "dishHighlights": [
-        "Peking duck",
-        "Pancakes",
+        "اردک پکن",
+        "پنکیک",
         "Cucumber and scallion",
-        "Duck soup"
+        "سوپ اردک"
       ],
       "tags": [
-        "fine-dining",
-        "peking-duck",
-        "traditional",
-        "famous"
+        "رستوران لوکس",
+        "اردک پکن",
+        "سنتی",
+        "مشهور"
       ],
       "star": 0,
       "diamond": 0,
@@ -1876,29 +1876,29 @@
     {
       "id": "nanjing-23",
       "name": "小厨娘",
-      "nameEn": "Xiao Chu Niang",
-      "type": "local",
-      "cuisine": "Jiangsu Home Style",
+      "nameEn": "شیائو چو نیانگ",
+      "type": "محلی",
+      "cuisine": "سبک خانگی جیانگسو",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Multiple locations",
+      "address": "چندین مکان",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7872
       },
       "hours": "10:30-21:30",
-      "description": "Popular home-style Jiangsu cuisine restaurant with comfortable dining atmosphere.",
+      "description": "رستوران محبوب با غذاهای خانگی استان جیانگ سو با فضای آرام و دلپذیر برای ناهار و شام.",
       "dishHighlights": [
-        "Braised pork belly",
-        "Steamed fish",
-        "Vegetables in garlic sauce",
-        "Rice with toppings"
+        "خوک شکمی آب‌پز",
+        "ماهی بخارپز",
+        "سبزیجات در سس سیر",
+        "برنج با تزئینات"
       ],
       "tags": [
-        "local",
-        "home-style",
-        "jiangsu-cuisine",
-        "value"
+        "محلی",
+        "خانگی",
+        "غذای جیانگ‌سو",
+        "ارزش"
       ],
       "star": 0,
       "diamond": 0,
@@ -1908,9 +1908,9 @@
     {
       "id": "nanjing-24",
       "name": "外婆家",
-      "nameEn": "Grandma's House",
-      "type": "chain",
-      "cuisine": "Zhejiang Style",
+      "nameEn": "خانهی مادربزرگ",
+      "type": "زنجیره‌ای",
+      "cuisine": "سبک غذایی استان ژجیانگ",
       "avgPrice": 60,
       "rating": 4.5,
       "address": "Multiple locations including Xinbailai",
@@ -1921,16 +1921,16 @@
       "hours": "10:30-22:00",
       "description": "Popular chain serving flavorful Zhejiang-style dishes at reasonable prices.",
       "dishHighlights": [
-        "Braised fish head",
-        "West Lake vinegar fish",
-        "Dongpo pork",
-        "Vegetables"
+        "سر ماهی کبابی",
+        "ماهی سرکه‌ای دریاچه غربی",
+        "گوشت خوک دونگپو",
+        "سبزیجات"
       ],
       "tags": [
-        "chain",
-        "zhejiang",
-        "value",
-        "popular"
+        "زنجیره‌ای",
+        "چجیانگ",
+        "ارزش",
+        "محبوب"
       ],
       "star": 0,
       "diamond": 0,
@@ -1941,11 +1941,11 @@
       "id": "nanjing-25",
       "name": "南京大牌档",
       "nameEn": "Nanjing Da Pai Dang",
-      "type": "local",
-      "cuisine": "Nanjing Snacks",
+      "type": "محلی",
+      "cuisine": "تنقلات نانگینگ",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Multiple locations including Deji and Xuanwu",
+      "address": "مکان‌های متعدد شامل دِجی و شوان‌وو",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7972
@@ -1954,16 +1954,16 @@
       "hours": "11:00-22:00",
       "description": "Popular chain serving authentic Nanjing and Jiangsu cuisine in traditional atmosphere.",
       "dishHighlights": [
-        "Duck blood soup",
-        "Salt duck",
-        "Steamed dumplings",
-        "Qinhuai snacks"
+        "سوپ خون اردک",
+        "اردک نمک‌سود",
+        "کوفته بخارپز",
+        "تنقلات چین‌هوایی"
       ],
       "tags": [
-        "local",
-        "nanjing-cuisine",
-        "traditional",
-        "chain"
+        "محلی",
+        "آشپزی نانجینگ",
+        "سنتی",
+        "زنجیره‌ای"
       ],
       "star": 0,
       "diamond": 0,
@@ -1972,30 +1972,30 @@
     {
       "id": "nanjing-26",
       "name": "民国红公馆",
-      "nameEn": "Republic of China Red Mansion",
-      "type": "fine",
-      "cuisine": "Republic Era Cuisine",
+      "nameEn": "ویلای قرمز جمهوری چین",
+      "type": "فوق‌العاده",
+      "cuisine": "آشپزی دوره جمهوری چین",
       "avgPrice": 250,
       "rating": 4.8,
-      "address": "Laochengli District, Qinhuai",
+      "address": "محله لائوچنگلی، چین‌هوا",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7972
       },
       "phone": "+86 25 5220 9999",
       "hours": "11:30-14:00, 17:30-21:30",
-      "description": "High-end restaurant serving dishes inspired by Republic of China era cuisine with elegant atmosphere.",
+      "description": "رستوران لوکس با سرو غذاهای الهام‌بخش از آشپزی دوره جمهوری چین و فضایی elegant",
       "dishHighlights": [
-        "Imperial cuisine",
-        "Republic era dishes",
-        "Seasonal menu",
-        "Historical atmosphere"
+        "آشپزی سلطنتی",
+        "غذاهای دوره جمهوری",
+        "منوی فصلی",
+        "فضای تاریخی"
       ],
       "tags": [
-        "fine-dining",
-        "historical",
-        "republic-era",
-        "special-occasion"
+        "غذای لوکس",
+        "تاریخی",
+        "دوره جمهوری",
+        "مناسبت خاص"
       ],
       "star": 0,
       "diamond": 0,
@@ -2004,29 +2004,29 @@
     {
       "id": "nanjing-27",
       "name": "李记清真馆",
-      "nameEn": "Li Ji Halal",
-      "type": "local",
-      "cuisine": "Halal Nanjing",
+      "nameEn": "لی جی حلال",
+      "type": "محلی",
+      "cuisine": "غذای حلال نانجینگ",
       "avgPrice": 50,
       "rating": 4.7,
-      "address": "100 Zhanqi Lane, Qinhuai District",
+      "address": "خیابان زانکی ۱۰۰، منطقه کینهوآی",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "06:30-19:30",
-      "description": "Famous halal restaurant known for beef products and traditional Muslim cuisine.",
+      "description": "رستوران حلال مشهور که به محصولات گوشت گاو و غذاهای سنتی مسلمانان معروف است.",
       "dishHighlights": [
-        "Beef noodle soup",
-        "Lamb skewers",
-        "Beef dumplings",
-        "Hand-pulled noodles"
+        "سوپ رشته با گوشت گاو",
+        "سیخ‌های بره",
+        "کوفته گوشت گاو",
+        "رشته دست‌کشیده"
       ],
       "tags": [
-        "local",
-        "halal",
-        "beef",
-        "traditional"
+        "محلی",
+        "حلال",
+        "گوشت",
+        "سنتی"
       ],
       "star": 0,
       "diamond": 0,
@@ -2036,8 +2036,8 @@
     {
       "id": "nanjing-28",
       "name": "莲湖糕团店",
-      "nameEn": "Lianhu Gaotang Shop",
-      "type": "local",
+      "nameEn": "فروشگاه لیانهو گائوتانگ",
+      "type": "محلی",
       "cuisine": "Nanjing Desserts",
       "avgPrice": 25,
       "rating": 4.5,
@@ -2047,18 +2047,18 @@
         "lng": 118.7872
       },
       "hours": "08:00-20:00",
-      "description": "Famous snack shop specializing in traditional Nanjing rice cakes and sweet pastries.",
+      "description": "فروشگاه معروف تنقلات که در تهیه کیک‌های برنجی سنتی نانجینگ و شیرینی‌های شیرین تخصص دارد.",
       "dishHighlights": [
-        "Rice cake soup",
-        "Osmanthus cake",
-        "Sweet dumplings",
-        "Glutinous rice balls"
+        "سوپ کیک برنجی",
+        "کیک گل زیتون",
+        "کوفته های شیرین",
+        "برنج‌های چسبناک گرد"
       ],
       "tags": [
-        "local",
-        "dessert",
-        "traditional",
-        "famous"
+        "محلی",
+        "دسر",
+        "سنتی",
+        "مشهور"
       ],
       "star": 0,
       "diamond": 0,
@@ -2069,7 +2069,7 @@
       "id": "nanjing-29",
       "name": "传统赤豆元宵",
       "nameEn": "传统赤豆元宵 (赤豆元宵)",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "赤豆元宵",
       "avgPrice": 57,
       "rating": 4.6,
@@ -2098,7 +2098,7 @@
       "id": "nanjing-31",
       "name": "巷子牛肉锅贴",
       "nameEn": "巷子牛肉锅贴 (牛肉锅贴)",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "牛肉锅贴",
       "avgPrice": 133,
       "rating": 4.1,
@@ -2127,7 +2127,7 @@
       "id": "nanjing-33",
       "name": "南京味盐水鸭",
       "nameEn": "南京味盐水鸭 (盐水鸭)",
-      "type": "street",
+      "type": "خیابانی",
       "cuisine": "盐水鸭",
       "avgPrice": 29,
       "rating": 4.7,
@@ -2156,7 +2156,7 @@
       "id": "nanjing-35",
       "name": "街边盐水鸭",
       "nameEn": "街边盐水鸭 (盐水鸭)",
-      "type": "cafe",
+      "type": "کافه",
       "cuisine": "盐水鸭",
       "avgPrice": 80,
       "rating": 4.2,
@@ -2185,7 +2185,7 @@
       "id": "nanjing-37",
       "name": "地道鸭血粉丝汤",
       "nameEn": "地道鸭血粉丝汤 (鸭血粉丝汤)",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "鸭血粉丝汤",
       "avgPrice": 72,
       "rating": 4,
@@ -2214,7 +2214,7 @@
       "id": "nanjing-39",
       "name": "街边小笼包",
       "nameEn": "街边小笼包 (小笼包)",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "小笼包",
       "avgPrice": 87,
       "rating": 4.3,
@@ -2243,7 +2243,7 @@
       "id": "nanjing-41",
       "name": "老南京赤豆元宵",
       "nameEn": "老南京赤豆元宵 (赤豆元宵)",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "赤豆元宵",
       "avgPrice": 35,
       "rating": 4.5,
@@ -2272,7 +2272,7 @@
       "id": "nanjing-43",
       "name": "阿婆小笼包",
       "nameEn": "阿婆小笼包 (小笼包)",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "小笼包",
       "avgPrice": 90,
       "rating": 4.4,
@@ -2301,7 +2301,7 @@
       "id": "nanjing-45",
       "name": "阿婆鸭血粉丝汤",
       "nameEn": "阿婆鸭血粉丝汤 (鸭血粉丝汤)",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "鸭血粉丝汤",
       "avgPrice": 50,
       "rating": 4.3,
@@ -2330,7 +2330,7 @@
       "id": "nanjing-47",
       "name": "南京味牛肉锅贴",
       "nameEn": "南京味牛肉锅贴 (牛肉锅贴)",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "牛肉锅贴",
       "avgPrice": 55,
       "rating": 4,
@@ -2359,7 +2359,7 @@
       "id": "nanjing-49",
       "name": "老街鸭血粉丝汤",
       "nameEn": "老街鸭血粉丝汤 (鸭血粉丝汤)",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "鸭血粉丝汤",
       "avgPrice": 58,
       "rating": 4,
@@ -2388,7 +2388,7 @@
       "id": "nanjing-51",
       "name": "街边赤豆元宵",
       "nameEn": "街边赤豆元宵 (赤豆元宵)",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "赤豆元宵",
       "avgPrice": 85,
       "rating": 4.2,
@@ -2417,7 +2417,7 @@
       "id": "nanjing-53",
       "name": "南京味小笼包",
       "nameEn": "南京味小笼包 (小笼包)",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "小笼包",
       "avgPrice": 52,
       "rating": 4.3,
@@ -2446,7 +2446,7 @@
       "id": "nanjing-55",
       "name": "传统盐水鸭",
       "nameEn": "传统盐水鸭 (盐水鸭)",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "盐水鸭",
       "avgPrice": 56,
       "rating": 4.8,
@@ -2475,7 +2475,7 @@
       "id": "nanjing-57",
       "name": "老街赤豆元宵",
       "nameEn": "老街赤豆元宵 (赤豆元宵)",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "赤豆元宵",
       "avgPrice": 147,
       "rating": 4.2,
@@ -2504,7 +2504,7 @@
       "id": "nanjing-59",
       "name": "地道盐水鸭",
       "nameEn": "地道盐水鸭 (盐水鸭)",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "盐水鸭",
       "avgPrice": 108,
       "rating": 4.7,
@@ -2533,7 +2533,7 @@
       "id": "nanjing-61",
       "name": "传统牛肉锅贴",
       "nameEn": "传统牛肉锅贴 (牛肉锅贴)",
-      "type": "cafe",
+      "type": "کافه",
       "cuisine": "牛肉锅贴",
       "avgPrice": 31,
       "rating": 4.8,
@@ -2562,7 +2562,7 @@
       "id": "nanjing-63",
       "name": "老街鸭血粉丝汤",
       "nameEn": "老街鸭血粉丝汤 (鸭血粉丝汤)",
-      "type": "street",
+      "type": "خیابانی",
       "cuisine": "鸭血粉丝汤",
       "avgPrice": 16,
       "rating": 4.4,
@@ -2591,7 +2591,7 @@
       "id": "nanjing-65",
       "name": "南京味小笼包",
       "nameEn": "南京味小笼包 (小笼包)",
-      "type": "cafe",
+      "type": "کافه",
       "cuisine": "小笼包",
       "avgPrice": 51,
       "rating": 4.7,
@@ -2620,7 +2620,7 @@
       "id": "nanjing-67",
       "name": "南京味小笼包",
       "nameEn": "南京味小笼包 (小笼包)",
-      "type": "street",
+      "type": "خیابانی",
       "cuisine": "小笼包",
       "avgPrice": 58,
       "rating": 4.2,
@@ -2649,7 +2649,7 @@
       "id": "nanjing-69",
       "name": "传统盐水鸭",
       "nameEn": "传统盐水鸭 (盐水鸭)",
-      "type": "street",
+      "type": "خیابانی",
       "cuisine": "盐水鸭",
       "avgPrice": 24,
       "rating": 4.3,
@@ -2678,7 +2678,7 @@
       "id": "nanjing-71",
       "name": "巷子鸭血粉丝汤",
       "nameEn": "巷子鸭血粉丝汤 (鸭血粉丝汤)",
-      "type": "local",
+      "type": "محلی",
       "cuisine": "鸭血粉丝汤",
       "avgPrice": 149,
       "rating": 4.4,
@@ -3096,79 +3096,79 @@
     {
       "category": "timing",
       "title": "Avoiding Crowds",
-      "content": "Nanjing's attractions can be very crowded. Visit Sun Yat-sen Mausoleum and Ming Xiaoling early morning. Fuzi Temple is best at night. Weekdays are quieter.",
+      "content": "جاذبه‌های نانجینگ می‌توانند بسیار شلوغ باشند. مقبره سون یات‌سن و مقبره مینگ شیائولین را صبح زود بازدید کنید. معبد فوزی شب‌ها بهترین زمان است. روزهای هفته آرام‌تر هستند.",
       "importance": "medium"
     },
     {
       "category": "gingko",
       "title": "Seasonal Highlights",
-      "content": "Nanjing's gingko trees are legendary. The turn color in mid-November along银杏大道. Cherry blossoms at Xuanwu Lake in spring. Plum blossoms in winter.",
+      "content": "درختان گینکو نانجینگ افسانه‌ای هستند. در اواسط نوامبر در امتداد جاده گینگو تغییر رنگ می‌دهند. شکوفه‌های گیلاس دریاچه شوان‌و در بهار. شکوه‌های آلو در زمستان.",
       "importance": "medium"
     },
     {
       "category": "culture",
       "title": "Six Dynasties Heritage",
-      "content": "Nanjing was capital during Six Dynasties period (220-589 AD). Visit the Nanjing Museum for artifacts from this era. The Zonghua Gate reflects military architecture of that time. Ling Guo Temple is a surviving Buddhist site.",
+      "content": "نانجینگ در دوران شش دودمان (۲۲۰-۵۸۹ میلادی) پایتخت بود. موزه نانجینگ را برای آثار باستانی از این دوره بازدید کنید. دروازه زونگ‌هوا معماری نظامی آن زمان را منعکس می‌کند. معبد لین‌گو یکی از معابد بودایی باقی‌مانده است.",
       "importance": "medium"
     },
     {
       "category": "literature",
       "title": "Literary Legacy",
-      "content": "Nanjing inspired many famous writers including Cao Xueqin (Dream of Red Chamber), Li Yu, and modern writer Ye Shengtao. The Nanjing Museum has an excellent collection of historical documents and calligraphy.",
+      "content": "نانجینگ الهام‌بخش نویسندگان مشهوری از جمله تسائو شوه‌چین (رویای عمارت سرخ)، لی یو و نویسنده معاصر یه شنگ‌تائو بود. موزه نانجینگ مجموعه برجسته‌ای از اسناد تاریخی و خوشنویسی دارد.",
       "importance": "medium"
     },
     {
       "category": "food",
       "title": "Nanjing Snacks Culture",
-      "content": "Nanjing is famous for street snacks: duck blood soup (鸭血粉丝汤), small sesame balls (雨花石汤圆), and beef offal. The Fuzi Temple night market and Laochengli are best areas for snack exploration.",
+      "content": "نانجینگ به غذاهای خیابانی معروف است: سوپ خون اردک، توال‌های کوچک کنجدی و احشای گوشت گاو. بازار شبانه معبد فوزی و لائوچنگ‌لی بهترین مناطق برای کشف غذاهای خیابانی هستند.",
       "importance": "high"
     },
     {
       "category": "dialect",
       "title": "Nanjing Dialect",
-      "content": "Nanjing dialect is one of the oldest Mandarin dialects, preserving many elements from Ming Dynasty imperial speech. It's known for being more 'down to earth' than Beijing dialect. Locals appreciate visitors trying a few phrases.",
+      "content": "گویش نانجینگ یکی از قدیمی‌ترین لهجه‌های ماندارین است که بسیاری از عناصر گفتار امپراتوری دودمان مینگ را حفظ کرده است. به خوبی زمینی‌تر از لهجه پکن شناخته می‌شود. محلی‌ها از بازدیدکنندگانی که چند عبارتی سعی می‌کنند قدردانی می‌کنند.",
       "importance": "low"
     },
     {
       "category": "crafts",
       "title": "Nanjing Crafts",
-      "content": "Nanjing is famous for Yuhua stones (雨花石), silk products, and Nanjing brocade (云锦). The Nanjing Yuhua Stone Garden in Zhonghua Gate area showcases these colorful stones. Nanjing brocade is a UNESCO intangible heritage.",
+      "content": "نانجینگ به سنگ‌های یوهوا، محصولات ابریشمی و ابریشم نانجینگ (یون‌جین) معروف است. باغ سنگ‌های یوهوا نانجینگ در منطقه دروازه زونگ‌هوا این سنگ‌های رنگی را به نمایش می‌گذارد. ابریشم نانجینگ میراث معنوی یونesco است.",
       "importance": "medium"
     },
     {
       "category": "tea",
       "title": "Nanjing Tea Culture",
-      "content": "Nanjing has unique tea culture featuring Qimen black tea from nearby Huangshan. The famous 'First Spring Tea' is picked in March. Tea houses along Xuanwu Lake offer pleasant afternoon tea experiences.",
+      "content": "نانجینگ فرهنگ چای منحصربه‌فردی دارد که چای سیاه کیمن از هوانگ‌شان نزدیک را شامل می‌شود. چای معروف «بهار اول» در فروردین چیده می‌شود. خانه‌های چای در امتداد دریاچه شوان‌و تجربیات عصرانه دلپذیری ارائه می‌دهند.",
       "importance": "medium"
     },
     {
       "category": "gardens",
       "title": "Nanjing Gardens",
-      "content": "Like Suzhou, Nanjing has historic private gardens. The Xuanwu Lake area has many traditional pavilions. The Presidential Palace has beautiful garden areas. The old Ming palace ruins include ancient garden elements.",
+      "content": "مانند سوژو، نانجینگ باغ‌های خصوصی تاریخی دارد. منطقه دریاچه شوان‌و بسیاری از باغ‌های سنتی دارد. کاخ ریاست‌جمهوری مناطق باغ زیبایی دارد. ویرانه‌های کاخ قدیمی مینگ شامل عناصر باغ باستانی هستند.",
       "importance": "medium"
     },
     {
       "category": "riverside",
       "title": "Yangtze River Culture",
-      "content": "Nanjing sits on the Yangtze River, historically crucial for trade and defense. The river wall offers walking paths. The historic Xiaguan area was once the main port. Yuejiang Tower offers panoramic river views.",
+      "content": "نانجینگ بر روی رود یانگ‌تسه واقع شده که از نظر تاریخی برای تجارت و دفاع حیاتی بوده است. دیوار رود مسیرهای پیاده‌روی ارائه می‌دهد. منطقه تاریخی شیاقوان یک بار مهم‌ترین بندر بوده است. برج یوئه‌جیانگ منظره پانورامی از رود ارائه می‌دهد.",
       "importance": "medium"
     },
     {
       "category": "education",
       "title": "Academic Heritage",
-      "content": "Nanjing has been an education center for centuries. Nanjing University and Southeast University are prestigious institutions. The old campus buildings are architecturally significant and open to visitors.",
+      "content": "نانجینگ قرن‌ها مرکز آموزش بوده است. دانشگاه نانجینگ و دانشگاه جنوب‌شرقی مؤسسات معتبری هستند. ساختمان‌های محوطه قدیمی از نظر معماری قابل توجه هستند و برای بازدیدکنندگان باز هستند.",
       "importance": "medium"
     },
     {
       "category": "music",
       "title": "Jiangnan Music",
-      "content": "Nanjing is part of Jiangnan region known for traditional music. The Qinhuai River area has historical connections to folk music and opera. The local opera style influenced many Chinese performing arts.",
+      "content": "نانجینگ بخشی از منطقه جیانگنان است که به موسیقی سنتی معروف است. منطقه رودخانه کین‌هوایی ارتباطات تاریخی با موسیقی فولک و اپرا دارد. سبک اپرای محلی بسیاری از هنرهای نمایشی چینی را تحت تأثیر قرار داده است.",
       "importance": "low"
     },
     {
       "category": "nightlife",
       "title": "Modern Nanjing",
-      "content": "Nanjing has vibrant modern nightlife in Xinjiekou and Jianye districts.1912 bar street near Presidential Palace has many restaurants and bars. The Qinhuai River area offers evening boat rides with city views.",
+      "content": "نانجینگ زندگی شبانه مدرن پرجنب‌وجوشی در محله‌های شین‌جیکوو و جیان‌یه دارد. خیابان بار ۱۹۱۲ در نزدیکی کاخ ریاست‌جمهوری رستوران‌ها و بارهای زیادی دارد. منطقه رودخانه کین‌هوایی قایق‌سواری شبانه با منظره شهر ارائه می‌دهد.",
       "importance": "low"
     }
   ],
@@ -3176,134 +3176,134 @@
     {
       "type": "ambulance",
       "name": "南京急救中心",
-      "nameEn": "Nanjing Emergency Center",
+      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
       "phone": "120",
-      "notes": "Major hospitals have English interpretation"
+      "notes": "برای شهروندان سنگاپور"
     },
     {
       "type": "police",
       "name": "南京市公安局",
-      "nameEn": "Nanjing Public Security Bureau",
+      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
       "phone": "110",
-      "notes": "Tourist police at major attractions"
+      "notes": "برای شهروندان سنگاپور"
     },
     {
       "type": "hospital",
       "name": "南京鼓楼医院",
-      "nameEn": "Nanjing Drum Tower Hospital",
+      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
       "phone": "+86 25 8310 6666",
-      "address": "321 Zhongshan Road",
+      "address": "گوانگ‌ژو",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7872
       },
-      "notes": "English-speaking staff available"
+      "notes": "برای شهروندان سنگاپور"
     },
     {
       "type": "embassy",
       "name": "美国驻上海总领事馆",
-      "nameEn": "US Consulate General Shanghai",
+      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
       "phone": "+86 21 8011 2400",
-      "address": "Shanghai (nearest US consular services)",
-      "notes": "For US citizens in Nanjing region"
+      "address": "گوانگ‌ژو",
+      "notes": "برای شهروندان سنگاپور"
     },
     {
       "type": "hospital",
       "name": "南京军区总医院",
-      "nameEn": "Nanjing Military General Hospital",
+      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
       "phone": "+86 25 8086 1155",
-      "address": "32 Changjiang Road, Xuanwu District",
+      "address": "گوانگ‌ژو",
       "coordinates": {
         "lat": 32.0422,
         "lng": 118.7972
       },
-      "notes": "Another major hospital with English staff"
+      "notes": "برای شهروندان سنگاپور"
     },
     {
       "type": "tourist-police",
       "name": "南京旅游警察",
-      "nameEn": "Nanjing Tourist Police",
+      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
       "phone": "+86 25 8442 9901",
-      "notes": "English-speaking tourist police at major attractions"
+      "notes": "برای شهروندان سنگاپور"
     },
     {
       "type": "fire",
       "name": "南京消防",
-      "nameEn": "Nanjing Fire Department",
+      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
       "phone": "119",
-      "notes": "Fire and rescue services"
+      "notes": "برای شهروندان سنگاپور"
     },
     {
       "type": "embassy",
       "name": "英国驻上海总领事馆",
-      "nameEn": "UK Consulate General Shanghai",
+      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
       "phone": "+86 21 6179 8300",
-      "address": "Shanghai",
-      "notes": "For UK citizens in Nanjing region"
+      "address": "گوانگ‌ژو",
+      "notes": "برای شهروندان سنگاپور"
     },
     {
       "type": "embassy",
       "name": "日本驻上海总领事馆",
-      "nameEn": "Japan Consulate General Shanghai",
+      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
       "phone": "+86 21 5257 4788",
-      "address": "Shanghai",
-      "notes": "For Japanese citizens in Nanjing region"
+      "address": "گوانگ‌ژو",
+      "notes": "برای شهروندان سنگاپور"
     },
     {
       "type": "embassy",
       "name": "德国驻上海总领事馆",
-      "nameEn": "Germany Consulate General Shanghai",
+      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
       "phone": "+86 21 6101 2000",
-      "address": "Shanghai",
-      "notes": "For German citizens in Nanjing region"
+      "address": "گوانگ‌ژو",
+      "notes": "برای شهروندان سنگاپور"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻上海总领事馆",
-      "nameEn": "Australia Consulate General Shanghai",
+      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
       "phone": "+86 21 5292 9000",
-      "address": "Shanghai",
-      "notes": "For Australian citizens in Nanjing region"
+      "address": "گوانگ‌ژو",
+      "notes": "برای شهروندان سنگاپور"
     },
     {
       "type": "embassy",
       "name": "法国驻上海总领事馆",
-      "nameEn": "France Consulate General Shanghai",
+      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
       "phone": "+86 21 6103 2200",
-      "address": "Shanghai",
-      "notes": "For French citizens in Nanjing region"
+      "address": "گوانگ‌ژو",
+      "notes": "برای شهروندان سنگاپور"
     },
     {
       "type": "embassy",
       "name": "加拿大驻上海总领事馆",
-      "nameEn": "Canada Consulate General Shanghai",
+      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
       "phone": "+86 21 3279 2800",
-      "address": "Shanghai",
-      "notes": "For Canadian citizens in Nanjing region"
+      "address": "گوانگ‌ژو",
+      "notes": "برای شهروندان سنگاپور"
     },
     {
       "type": "embassy",
       "name": "韩国驻上海总领事馆",
-      "nameEn": "South Korea Consulate General Shanghai",
+      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
       "phone": "+86 21 5108 0700",
-      "address": "Shanghai",
-      "notes": "For Korean citizens in Nanjing region"
+      "address": "گوانگ‌ژو",
+      "notes": "برای شهروندان سنگاپور"
     },
     {
       "type": "embassy",
       "name": "新加坡驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Shanghai",
+      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
       "phone": "+86 21 6295 3800",
-      "address": "Shanghai",
-      "notes": "For Singapore citizens in Nanjing region"
+      "address": "گوانگ‌ژو",
+      "notes": "برای شهروندان سنگاپور"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese, Nanjing dialect",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Tap water safe after boiling; bottled water recommended"
+    "language": "ماندارین (چینی)",
+    "currency": "یوان چین (CNY/RMB)",
+    "visa": "اکثریت شهروندان به ویزا نیاز دارند. ویزای ترانزیت 72 ساعته در فرودگاه برای شهروندان واجد شرایط موجود است.",
+    "timeZone": "UTC+8 (ساعت استاندارد چین)",
+    "electricity": "220 ولت/50 هرتز، دوشاخه‌های نوع A/I",
+    "water": "آب لوله‌کشی قابل شرب است اما بهتر است از آب بطری استفاده شود"
   }
 }

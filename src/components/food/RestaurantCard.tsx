@@ -162,7 +162,7 @@ export default function RestaurantCard({ restaurant, onClick }: RestaurantCardPr
             name={restaurant.name}
             address={restaurant.address}
             className="flex items-center gap-1.5 px-3 py-2 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium hover:bg-blue-100 transition-colors touch-manipulation"
-          />
+           lang="lang"/>
           {restaurant.phone && (
             <a
               href={`tel:${restaurant.phone.replace(/\s/g, "")}`}

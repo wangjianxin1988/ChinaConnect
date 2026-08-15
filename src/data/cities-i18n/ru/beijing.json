@@ -3,7 +3,7 @@
   "name": "北京",
   "nameEn": "Beijing",
   "country": "China",
-  "population": "21.54 million",
+  "population": "21,54 миллиона",
   "coordinates": {
     "lat": 39.9042,
     "lng": 116.4074
@@ -19,12 +19,12 @@
     "Район 798 - центр современного искусства"
   ],
   "climate": {
-    "type": "Temperate continental",
+    "type": "Умеренно континентальный",
     "bestMonths": [
-      "April",
-      "May",
-      "September",
-      "October"
+      "Апрель",
+      "Май",
+      "Сентябрь",
+      "Октябрь"
     ],
     "avgSummerTemp": "26C (79F)",
     "avgWinterTemp": "-2C (28F)",
@@ -116,38 +116,38 @@
       },
       "openingHours": "06:00-20:00 (апр-окт), 07:00-19:00 (ноя-мар)",
       "ticketPrice": "30¥ (парк), 60¥ (полный билет с достопримечательностями)",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4 часа",
       "highlights": [
-        "Kunming Lake",
-        "Long Corridor",
-        "Marble Boat",
-        "Suzhou Street"
+        "Куньмин",
+        "Длинный коридор",
+        "Мраморная лодка",
+        "Улица Сучжоу"
       ],
-      "tips": "Rent a boat on the lake for a different perspective. The Long Corridor has over 14,000 paintings. Visit the tea house for authentic Chinese tea experience.",
+      "tips": "Арендуйте лодку на озере, чтобы увидеть парк с другой стороны. Длинный коридор насчитывает более 14 000 картин. Посетите чайный дом для настоящего китайского чаепития.",
       "phone": "+86 10 6288 1144"
     },
     {
       "id": "tiananmen-square",
       "name": "天安门广场",
-      "nameEn": "Tiananmen Square",
+      "nameEn": "Площадь Тяньаньмэнь",
       "category": "historical",
       "image": "/img/ext/034f108f7672.webp",
-      "description": "The world's largest public square, surrounded by important government buildings and cultural monuments.",
-      "address": "Xicheng District",
+      "description": "Крупнейшая общественная площадь в мире, окружённая важными правительственными зданиями и культурными памятниками.",
+      "address": "Район Сичэн",
       "coordinates": {
         "lat": 39.9056,
         "lng": 116.3972
       },
-      "openingHours": "Open 24 hours (security check required)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "openingHours": "Открыт 24 часа (требуется проверка безопасности)",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "1 час",
       "highlights": [
-        "Mao Zedong Memorial Hall",
-        "National Museum of China",
+        "Мемориал Мао Цзэдуна",
+        "Национальный музей Китая",
         "Зал Народных собраний",
         "Монумент народным героям"
       ],
-      "tips": "Bring passport for security check. Visit early morning for flag-raising ceremony at sunrise.",
+      "tips": "Возьмите паспорт для прохождения проверки безопасности. Приходите рано утром, чтобы увидеть церемонию поднятия флага на рассвете.",
       "phone": "+86 10 8640 9123"
     },
     {
@@ -166,7 +166,7 @@
       "ticketPrice": "Бесплатно (некоторые галереи могут брать плату)",
       "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "UCCA Center",
+        "Центр UCCA",
         "Фотогалерея 798",
         "Немецкая архитектура в стиле Баухаус",
         "Муралы уличного искусства"
@@ -181,7 +181,7 @@
       "category": "cultural",
       "image": "/img/ext/5e9616329a4c.webp",
       "description": "Крупнейший и наиболее хорошо сохранившийся тибетский буддийский храм в Пекине с потрясающей архитектурой и 18-метровой статуей Будды.",
-      "address": "12 Yonghegong St, Dongcheng District",
+      "address": "ул. Юнхэгун, 12, район Дунчэн",
       "coordinates": {
         "lat": 39.9479,
         "lng": 116.4186
@@ -201,23 +201,23 @@
     {
       "id": "beihai-park",
       "name": "北海公园",
-      "nameEn": "Beihai Park",
+      "nameEn": "Парк Бэхай",
       "category": "cultural",
       "image": "/img/ext/cc1c0491ef7a.webp",
       "description": "Исторический императорский сад с культовой Белой пагодой, красивыми озёрами и традиционными павильонами.",
-      "address": "1 Wenjin St, Xicheng District",
+      "address": "ул. Вэньцзинь, 1, район Сичэн",
       "coordinates": {
         "lat": 39.9276,
         "lng": 116.3914
       },
       "openingHours": "06:00-21:00",
       "ticketPrice": "10¥ (парк), 20¥ (Нефритовый остров)",
-      "recommendedVisitTime": "2 hours",
+      "recommendedVisitTime": "2 часа",
       "highlights": [
-        "White Pagoda",
-        "Five-Dragon Pavilions",
-        "Nine-Dragon Wall",
-        "Circular City"
+        "Белая пагода",
+        "Павильоны Пяти Драконов",
+        "Стена Девяти Драконов",
+        "Круглый город"
       ],
       "tips": "Прогуляйтесь вокруг озера и поднимитесь к Белой пагоде, чтобы увидеть классические виды Пекина. Совместите с посещением района Хохай с барами поблизости.",
       "phone": "+86 10 6403 1102"
@@ -225,1111 +225,1111 @@
     {
       "id": "mutianyu-great-wall",
       "name": "慕田峪长城",
-      "nameEn": "Great Wall (Mutianyu)",
+      "nameEn": "Великая стена (Мутянью)",
       "category": "historical",
       "image": "/img/ext/1efd8a63f0ee.webp",
-      "description": "A fully restored section with 22 watchtowers, offering a less crowded alternative to Badaling with cable car access.",
-      "address": "Mutianyu Village, Huairou District, 70km north",
+      "description": "Полностью восстановленный участок с 22 сторожевыми башнями, предлагающий менее людную альтернативу Бадалин с доступом на канатной дороге.",
+      "address": "Деревня Мутянью, район Хайроу, 70 км к северу",
       "coordinates": {
         "lat": 40.4316,
         "lng": 116.5669
       },
-      "openingHours": "07:30-18:30 (Summer), 08:30-17:00 (Winter)",
-      "ticketPrice": "40¥ (wall), 100¥ (cable car round trip)",
-      "recommendedVisitTime": "Half day",
+      "openingHours": "07:30-18:30 (лето), 08:30-17:00 (зима)",
+      "ticketPrice": "40¥ (стена), 100¥ (канатная дорога туда и обратно)",
+      "recommendedVisitTime": "Полдня",
       "highlights": [
-        "Restored watchtowers",
-        "Tooth-shaped battlements",
-        "Cable car views",
-        "Toboggan ride down"
+        "Восстановленные сторожевые башни",
+        "Зубчатые зубцы стен",
+        "Виды с канатной дороги",
+        "Спуск на тобоггане"
       ],
-      "tips": "Less crowded than Badaling. Book a tour or take Bus 916 from Dongzhimen. Bring layers as it is windy at the top.",
+      "tips": "Менее людно, чем Бадалин. Закажите тур или возьмите автобус 916 от Дунчжимэна. Возьмите с собой несколько слоев одежды, так как наверху ветрено.",
       "phone": "+86 10 6162 6505"
     },
     {
       "id": "peking-opera",
       "name": "梨园剧场",
-      "nameEn": "Peking Opera Night Show",
+      "nameEn": "Вечернее представление Пекинской оперы",
       "category": "cultural",
       "image": "/img/ext/3a2025734e91.webp",
-      "description": "Experience traditional Chinese opera with face-changing, martial arts, and singing at this dedicated theater.",
-      "address": "Hepingli, Dongcheng District",
+      "description": "Традиционный китайский оперный спектакль с перевоплощением лиц, боевыми искусствами и пением в специальном театре.",
+      "address": "Хэпинли, район Дунчэн",
       "coordinates": {
         "lat": 39.9426,
         "lng": 116.4268
       },
-      "openingHours": "Shows at 19:30 nightly",
+      "openingHours": "Представления в 19:30 ежедневно",
       "ticketPrice": "200-380¥",
-      "recommendedVisitTime": "1.5 hours",
+      "recommendedVisitTime": "1.5 часа",
       "highlights": [
-        "Face changing (bianlian)",
-        "Fighting scenes",
-        "Costume display before show",
-        "Tea service included"
+        "Смена лица (bianlian)",
+        "Боевые сцены",
+        "Демонстрация костюмов перед спектаклем",
+        "Чайный сервис включён"
       ],
-      "tips": "Book through hotel concierge or travel agency. Photos allowed before the show but not during. Great cultural introduction.",
+      "tips": "Бронируйте через консьержа отеля или турагентство. Фото разрешены до спектакля, но не во время него. Отличное культурное введение.",
       "phone": "+86 10 6528 7272"
     },
     {
       "id": "nanluoguxiang",
       "name": "南锣鼓巷",
-      "nameEn": "Nanluoguxiang",
+      "nameEn": "Нанлуогусян",
       "category": "cultural",
       "image": "/img/ext/4af69f4aa830.webp",
-      "description": "A historic hutong alley with trendy shops, street food, bars, and traditional courtyard residences.",
-      "address": "Nanluoguxiang, Dongcheng District",
+      "description": "Исторический переулок хутун с модными магазинами, уличной едой, барами и традиционными дворовыми резиденциями",
+      "address": "Нанлуогусян, район Дунчэн",
       "coordinates": {
         "lat": 39.9368,
         "lng": 116.4036
       },
-      "openingHours": "Open 24 hours (shops 10:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "Открыто круглосуточно (магазины 10:00-22:00)",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "2 часа",
       "highlights": [
-        "Traditional courtyard gates",
-        "Handcraft shops",
-        "Local snacks",
-        "Hidden temple courtyards"
+        "Традиционные ворота двора",
+        "Магазины ремесел",
+        "Местные закуски",
+        "Скрытые храмовые дворы"
       ],
-      "tips": "Visit in the evening for atmosphere. Explore side alleys for authentic hutong life. Try fried rice cake and sugar paintings.",
+      "tips": "Посетите вечером для атмосферы. Исследуйте боковые переулки для подлинной жизни хутун. Попробуйте жареный рисовый пирог и сахарные картины.",
       "phone": "+86 010  6251 2520"
     },
     {
       "id": "national-museum",
       "name": "中国国家博物馆",
-      "nameEn": "National Museum of China",
+      "nameEn": "Национальный музей Китая",
       "category": "cultural",
       "image": "/img/ext/a6d6f37e7851.webp",
-      "description": "The largest museum in China, showcasing 3,000 years of Chinese civilization with over 1.5 million cultural artifacts.",
-      "address": "16 East Chang'an Ave, Dongcheng District",
+      "description": "Крупнейший музей Китая, демонстрирующий 3000 лет китайской цивилизации с более чем 1,5 миллиона культурных артефактов.",
+      "address": "16 Восточный проспект Чанъань, район Дунчэн",
       "coordinates": {
         "lat": 39.9056,
         "lng": 116.4012
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free (book in advance)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "09:00-17:00 (Закрыто в понедельник)",
+      "ticketPrice": "Бесплатно (бронируйте заранее)",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Ancient Bronze Vessels",
-        "Ming and Qing Dynasties Artifacts",
-        "Terracotta Warriors Exhibition",
-        "Interactive Digital Exhibits"
+        "Древние бронзовые сосуды",
+        "Артефакты династий Мин и Цин",
+        "Выставка терракотовых воинов",
+        "Интерактивные цифровые экспонаты"
       ],
-      "tips": "Book tickets online 1 week in advance. Arrive early. Best combined with Tiananmen Square visit.",
+      "tips": "Бронируйте билеты онлайн за 1 неделю вперёд. Приходите пораньше. Лучше всего посетить вместе с площадью Тяньаньмэнь.",
       "phone": "+86 10 6511 6400"
     },
     {
       "id": "zhongshan-park",
       "name": "中山公园",
-      "nameEn": "Zhongshan Park",
+      "nameEn": "Парк Чжуншань",
       "category": "cultural",
       "image": "/img/ext/4af69f4aa830.webp",
-      "description": "A historic imperial garden turned public park, featuring ancient cypress trees, traditional pavilions, and seasonal flower displays.",
-      "address": "West of Tiananmen Square, Dongcheng District",
+      "description": "Большой городской парк в центре Ханкоу с озёрами, садами, аттракционами и исторической башней Чжуншань. Излюбленное место отдыха местных жителей.",
+      "address": "解放大道696号, 江汉区",
       "coordinates": {
         "lat": 39.9076,
         "lng": 116.3962
       },
-      "openingHours": "06:00-21:00",
-      "ticketPrice": "3¥",
-      "recommendedVisitTime": "1 hour",
+      "openingHours": "06:00-22:00",
+      "ticketPrice": "Бесплатно (аттракционы оплачиваются отдельно)",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Ancient Cypress Garden",
-        "Zhongshan Pavilion",
-        "Cherry Blossom Avenue",
-        "Rose Garden"
+        "Центральное озеро",
+        "Историческая пагода",
+        "Развлекательная зона",
+        "Группы утренней тайцзи"
       ],
-      "tips": "Best visited in spring for cherry blossoms and roses. Great for morning tai chi practice.",
+      "tips": "Присоединяйтесь к группам утреннего тайцзи для аутентичного опыта. Парк преображается ночью благодаря подсветке. Подходит для семей с детьми. Рядом с Уханьским международным конференц-центром.",
       "phone": "+86 10 6605 5431"
     },
     {
       "id": "working-peoples-cultural-palace",
       "name": "劳动人民文化宫",
-      "nameEn": "Working People's Cultural Palace",
+      "nameEn": "Культурный дворец трудящихся",
       "category": "cultural",
       "image": "/img/ext/a6d6f37e7851.webp",
-      "description": "Former imperial temple dedicated to Confucius and the god of literature, now a cultural venue for workers.",
-      "address": "East of Tiananmen Square, Dongcheng District",
+      "description": "Бывший императорский храм, посвящённый Конфуцию и богу литературы, ныне культурная площадка для рабочих.",
+      "address": "К востоку от площади Тяньаньмэнь, район Дунчэн",
       "coordinates": {
         "lat": 39.9076,
         "lng": 116.4032
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "2¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1 час",
       "highlights": [
-        "Confucius Temple",
-        "Great Hall",
-        "Traditional Music Performances",
-        "Calligraphy Exhibits"
+        "Храм Конфуция",
+        "Большой зал",
+        "Выступления традиционной музыки",
+        "Выставки каллиграфии"
       ],
-      "tips": "Less crowded than major attractions. Combine with a visit to the nearby National Museum.",
+      "tips": "Менее многолюдно, чем основные достопримечательности. Совместите с посещением расположенного неподалеку Национального музея.",
       "phone": "+86 10 6525 2776"
     },
     {
       "id": "jingshan-park",
       "name": "景山公园",
-      "nameEn": "Jingshan Park",
+      "nameEn": "Парк Цзиншань",
       "category": "cultural",
       "image": "/img/ext/40b2617ae797.webp",
-      "description": "A 45-meter artificial hill offering the best panoramic views of the Forbidden City and central Beijing.",
-      "address": "44 Jingshan Front St, Xicheng District",
+      "description": "Искусственный холм высотой 45 метров, с которого открываются лучшие панорамные виды на Запретный город и центр Пекина.",
+      "address": "44 Цзиньшань Фронт Стрит, район Сичэн",
       "coordinates": {
         "lat": 39.9212,
         "lng": 116.3972
       },
       "openingHours": "06:00-21:00",
       "ticketPrice": "2¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1 час",
       "highlights": [
-        "Panoramic View of Forbidden City",
-        "Five Pavilions",
-        "Century-old Cypress Trees",
-        "Sunrise Viewing Spot"
+        "Панорама Запретного города",
+        "Пять павильонов",
+        "Столетние кипарисы",
+        "Место для наблюдения восхода солнца"
       ],
-      "tips": "Visit at sunrise or sunset for stunning photos. The hill is steep but short - climb to the top for the best views.",
+      "tips": "Посетите на рассвете или закате для потрясающих фотографий. Холм крутой, но короткий - поднимитесь на вершину для лучших видов.",
       "phone": "+86 10 6404 4071"
     },
     {
       "id": "prince-gongs-mansion",
       "name": "恭王府",
-      "nameEn": "Prince Gong's Mansion",
+      "nameEn": "Дворец князя Гун",
       "category": "historical",
       "image": "/img/ext/9e048127aeb7.webp",
-      "description": "The largest surviving princely mansion in Beijing, featuring traditional Chinese architecture, beautiful gardens, and Qing dynasty artifacts.",
-      "address": "17 Qianmen Front St, Xicheng District",
+      "description": "Крупнейший сохранившийся княжеский дворец в Пекине с традиционной китайской архитектурой, красивыми садами и артефактами династии Цин.",
+      "address": "17 Цяньмэнь Фронт Стрит, район Сичэн",
       "coordinates": {
         "lat": 39.9346,
         "lng": 116.3932
       },
       "openingHours": "08:30-17:00",
-      "ticketPrice": "40¥ (peak), 30¥ (off-peak)",
-      "recommendedVisitTime": "2 hours",
+      "ticketPrice": "40¥ (пиковый сезон), 30¥ (непиковый)",
+      "recommendedVisitTime": "2 часа",
       "highlights": [
-        "Hou Garden",
-        "Waterfall Rockery",
-        "Zhaoxian Gate",
-        "Traditional Courtyards"
+        "Задний сад",
+        "Каменистый водопад",
+        "Ворота Чжаосянь",
+        "Традиционные дворы"
       ],
-      "tips": "Book tickets online. Audio guide included. Allow time to explore both the mansion and the garden.",
+      "tips": "Забронируйте билеты онлайн. Аудиогид включён. Выделите время для осмотра дворца и сада.",
       "phone": "+86 10 8328 8149"
     },
     {
       "id": "shichahai",
       "name": "什刹海",
-      "nameEn": "Shichahai",
+      "nameEn": "Шичахай",
       "category": "cultural",
       "image": "/img/ext/673f5ee74870.webp",
-      "description": "A scenic area of lakes, hutongs, and historic sites including Prince Gong's Mansion. Popular for cycling, boat rides, and exploring traditional Beijing life.",
-      "address": "Xicheng District (around Qianmen area)",
+      "description": "Живописный район с озёрами, хутунами и историческими достопримечательностями, включая Дворец князя Гун. Популярное место для прогулок на велосипеде, катания на лодках и знакомства с традиционной пекинской жизнью.",
+      "address": "Район Сичэн (вокруг района Цяньмэнь)",
       "coordinates": {
         "lat": 39.9356,
         "lng": 116.3932
       },
-      "openingHours": "Open 24 hours (bars 18:00-02:00)",
-      "ticketPrice": "Free (individual attractions may charge)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "Открыто круглосуточно (бары 18:00-02:00)",
+      "ticketPrice": "Бесплатно (отдельные достопримечательности могут взимать плату)",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Qianhai Lake",
-        "Houhai Lake",
-        "Drum Tower",
-        "Hutong Cycling",
-        "Lake-side Bars"
+        "Озеро Цяньхай",
+        "Озеро Хоухай",
+        "Барабанная башня",
+        "Прогулка на велосипеде по хутунам",
+        "Бары на берегу озера"
       ],
-      "tips": "Best in late afternoon and evening. Rent a bike to explore the hutongs. Visit the bar street after dark.",
+      "tips": "Лучше всего посещать поздним днём и вечером. Арендуйте велосипед, чтобы исследовать хутуны. Посетите барную улицу после наступления темноты.",
       "phone": "+86 010  7771 9026"
     },
     {
       "id": "bell-drum-towers",
       "name": "钟鼓楼",
-      "nameEn": "Bell and Drum Towers",
+      "nameEn": "Колокольня и барабаны",
       "category": "historical",
       "image": "/img/ext/6e87447b1ab1.webp",
-      "description": "Medieval timekeeping towers that once governed daily life in Beijing with bell strikes and drum beats marking the hours.",
-      "address": "73 Guloudajie St, Xicheng District",
+      "description": "Средневековые башни для определения времени, которые когда-то управляли повседневной жизнью в Пекине с помощью ударов колокола и барабана, отмечающих часы.",
+      "address": "ул. Гулодацзе, 73, район Сичэн",
       "coordinates": {
         "lat": 39.9342,
         "lng": 116.4032
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "20¥ (both towers)",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "20¥ (обе башни)",
+      "recommendedVisitTime": "1 час",
       "highlights": [
-        "Bronze Bell from Ming Dynasty",
-        "Traditional Drum Performance",
-        "Panoramic Views",
-        "Drum Tower Square"
+        "Бронзовый колокол династии Мин",
+        "Традиционное барабанное представление",
+        "Панорамные виды",
+        "Площадь Барабанной башни"
       ],
-      "tips": "Watch the drum performance at the top of each hour. Combine with a hutong walk afterward.",
+      "tips": "Смотрите барабанное представление каждый час. После этого прогуляйтесь по хутунгу.",
       "phone": "+86 10 8403 6706"
     },
     {
       "id": "dashilan",
       "name": "大栅栏",
-      "nameEn": "Dashilan",
+      "nameEn": "Дашилан",
       "category": "cultural",
       "image": "/img/ext/a668865c8a06.webp",
-      "description": "A historic commercial district with traditional Beijing architecture, famous brand shops, and local snacks.",
-      "address": "Xicheng District (south of Tiananmen)",
+      "description": "Исторический торговый район с традиционной пекинской архитектурой, магазинами известных брендов и местными закусками.",
+      "address": "Район Сичэн (к югу от Тяньаньмэнь)",
       "coordinates": {
         "lat": 39.9002,
         "lng": 116.4012
       },
-      "openingHours": "Shops 10:00-22:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "Магазины 10:00-22:00",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "2 часа",
       "highlights": [
-        "Traditional Pharmacy",
-        "First Chocolate Shop",
-        "Ladies Street",
-        "Traditional Crafts",
-        "Peking Opera Masks"
+        "Традиционная аптека",
+        "Первый магазин шоколада",
+        "Женская улица",
+        "Традиционные ремёсла",
+        "Маски пекинской оперы"
       ],
-      "tips": "Great for souvenir shopping. Try traditional snacks like laoming damand and sugar-flour paintings. Walk to nearby Qianmen afterward.",
+      "tips": "Отлично подходит для покупки сувениров. Попробуйте традиционные закуски, такие как лаомин даманд и сахарные картины из муки. Прогуляйтесь до близлежащего Цяньмэня.",
       "phone": "+86 010  6280 7991"
     },
     {
       "id": "beijing-happy-valley",
       "name": "北京欢乐谷",
-      "nameEn": "Beijing Happy Valley",
+      "nameEn": "Парк развлечений «Счастливая долина» в Пекине",
       "category": "entertainment",
       "image": "/img/ext/171128eac7b7.webp",
-      "description": "A large amusement park with roller coasters, water rides, and family-friendly attractions.",
-      "address": "Xiaowuji, Chaoyang District",
+      "description": "Большой парк развлечений с американскими горками, водными аттракционами и семейными развлечениями.",
+      "address": "Сяоуюй, район Чаоян",
       "coordinates": {
         "lat": 39.8652,
         "lng": 116.5072
       },
-      "openingHours": "09:00-22:00 (hours vary by season)",
-      "ticketPrice": "260¥ (full day), 200¥ (evening)",
-      "recommendedVisitTime": "Half day to full day",
+      "openingHours": "09:00-22:00 (время работы зависит от сезона)",
+      "ticketPrice": "260¥ (полный день), 200¥ (вечер)",
+      "recommendedVisitTime": "От половины дня до целого дня",
       "highlights": [
-        "Odyssey Roller Coaster",
-        "Family Zone",
-        "Water Park",
-        "Night Parades",
-        "Live Shows"
+        "Американские горки Одиссея",
+        "Семейная зона",
+        "Аквапарк",
+        "Ночные парады",
+        "Шоу в прямом эфире"
       ],
-      "tips": "Weekdays are less crowded. Wear comfortable shoes. Bring sunscreen in summer. Lockers available for rent.",
+      "tips": "В будние дни меньше людей. Наденьте удобную обувь. Возьмите солнцезащитный крем летом. Камеры хранения можно арендовать.",
       "phone": "+86 010  6292 3935"
     },
     {
       "id": "olympic-park",
       "name": "奥林匹克公园",
-      "nameEn": "Olympic Park",
+      "nameEn": "Олимпийский парк",
       "category": "cultural",
       "image": "/img/ext/81fc759e622b.webp",
-      "description": "The main venue of the 2008 Beijing Olympics, featuring the Bird's Nest, Water Cube, and beautiful gardens.",
-      "address": "Chaoyang District (north of city center)",
+      "description": "Главная арена Олимпиады 2008 года в Пекине, включающая «Гнездо птицы», «Водный куб» и прекрасные сады.",
+      "address": "Район Чаоян (северная часть центра города)",
       "coordinates": {
         "lat": 39.9432,
         "lng": 116.3912
       },
-      "openingHours": "Open 24 hours (attractions vary)",
-      "ticketPrice": "Free (Bird's Nest 80¥, Water Cube 80¥)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "Открыто 24 часа (аттракционы работают по-разному)",
+      "ticketPrice": "Бесплатно («Гнездо птицы» 80¥, «Водный куб» 80¥)",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Bird's Nest Stadium",
-        "Water Cube",
-        "Olympic Torch",
-        "Beautiful Night Lighting",
-        "Science Center"
+        "Стадион «Гнездо птицы»",
+        "Водный куб",
+        "Олимпийский факел",
+        "Прекрасное ночное освещение",
+        "Научный центр"
       ],
-      "tips": "Best visited at night for spectacular lighting. Watch the light show at Water Cube. Combine with nearby national conventions.",
+      "tips": "Лучше всего посещать ночью для потрясающего освещения. Посмотрите световое шоу на «Водном кубе». Совместите с посещением близлежащих национальных конвенций.",
       "phone": "+86 010  7286 8395"
     },
     {
       "id": "summer-palace-old-summer",
       "name": "圆明园",
-      "nameEn": "Old Summer Palace",
+      "nameEn": "Старый Летний дворец",
       "category": "historical",
       "image": "/img/ext/f2b48a17b376.webp",
-      "description": "The ruins of the Old Summer Palace, destroyed in 1860, now a memorial park with historic foundations and lakes.",
-      "address": "28 Yiheyuan Rd, Haidian District",
+      "description": "Руины Старого Летнего дворца, разрушенного в 1860 году, теперь мемориальный парк с историческими фундаментами и озёрами.",
+      "address": "28 Yiheyuan Rd, район Хайдянь",
       "coordinates": {
         "lat": 39.9892,
         "lng": 116.4532
       },
-      "openingHours": "07:00-20:30 (Summer), 07:00-19:30 (Winter)",
-      "ticketPrice": "10¥ (park), 25¥ (full including西洋楼遗址)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "07:00-20:30 (лето), 07:00-19:30 (зима)",
+      "ticketPrice": "10¥ (парк), 25¥ (полный билет включая 西洋楼遗址)",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Western Mansions Ruins",
-        "Grand Waterworks",
-        "Famous Stone Arch",
-        "Large Lake",
-        "Wild deer"
+        "Руины западных павильонов",
+        "Большие гидросооружения",
+        "Знаменитая каменная арка",
+        "Большое озеро",
+        "Дикие олени"
       ],
-      "tips": "Allow 3 hours to explore. Visit the smaller but significant exhibitions about history. Wear walking shoes.",
+      "tips": "Выделите 3 часа на осмотр. Посетите небольшие, но значимые выставки по истории. Наденьте удобную обувь.",
       "phone": "+86 010  6016 4450"
     },
     {
       "id": "beijing-natural-history-museum",
       "name": "北京自然博物馆",
-      "nameEn": "Beijing Natural History Museum",
+      "nameEn": "Пекинский музей естественной истории",
       "category": "cultural",
       "image": "/img/ext/4adbde7850e1.webp",
-      "description": "Popular natural science museum with dinosaur fossils, wildlife exhibits, and interactive science displays.",
-      "address": "126 Tiananmen St, Dongcheng District",
+      "description": "Популярный естественнонаучный музей с окаменелостями динозавров, экспонатами дикой природы и интерактивными научными дисплеями.",
+      "address": "126 улица Тяньаньмэнь, район Дунчэн",
       "coordinates": {
         "lat": 39.9026,
         "lng": 116.4072
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free (book in advance)",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "09:00-17:00 (Закрыто по понедельникам)",
+      "ticketPrice": "Бесплатно (требуется предварительная запись)",
+      "recommendedVisitTime": "2 часа",
       "highlights": [
-        "Dinosaur Hall",
-        "Ancient Mammal Exhibits",
-        "Bird Diversity",
-        "Human Evolution",
-        "Butterfly Collection"
+        "Зал динозавров",
+        "Экспонаты древних млекопитающих",
+        "Разнообразие птиц",
+        "Эволюция человека",
+        "Коллекция бабочек"
       ],
-      "tips": "Very popular with families. Book tickets online. Best for children interested in dinosaurs and nature.",
+      "tips": "Очень популярен среди семей. Заказывайте билеты онлайн. Лучше всего подходит для детей, интересующихся динозаврами и природой.",
       "phone": "+86 010  4301 2382"
     },
     {
       "id": "louvre-abroad",
       "name": "中国电影博物馆",
-      "nameEn": "China National Film Museum",
+      "nameEn": "Китайский национальный музей кино",
       "category": "cultural",
       "image": "/img/ext/a6d6f37e7851.webp",
-      "description": "The world's largest film museum with extensive exhibits on Chinese cinema history and interactive displays.",
-      "address": "9 Hua Jia Di Village, Chaoyang District",
+      "description": "Крупнейший в мире музей кино с обширными экспозициями по истории китайского кино и интерактивными дисплеями.",
+      "address": "9 Hua Jia Di Village, Район Чаоян",
       "coordinates": {
         "lat": 39.9712,
         "lng": 116.5312
       },
-      "openingHours": "09:00-16:30 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "09:00-16:30 (Закрыто в понедельник)",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Film history exhibits",
-        "IMAX Theater",
-        "Film equipment collection",
-        "Interactive displays"
+        "Экспозиции по истории кино",
+        "IMAX-кинотеатр",
+        "Коллекция кинооборудования",
+        "Интерактивные экспозиции"
       ],
-      "tips": "One of the largest film museums globally. Great for film enthusiasts. Free entry but registration required.",
+      "tips": "Один из крупнейших киномузеев в мире. Отлично подходит для любителей кино. Бесплатный вход, но требуется регистрация.",
       "phone": "+86 010  2290 7945"
     },
     {
       "id": "western-yuanming",
       "name": "西洋楼遗址",
-      "nameEn": "Western Mansions Ruins",
+      "nameEn": "Руины западных павильонов",
       "category": "historical",
       "image": "/img/ext/f2b48a17b376.webp",
-      "description": "The iconic ruins of the Old Summer Palace's European-style palaces, built for Emperor Qianlong by Jesuit missionaries.",
-      "address": "Yiheyuan Rd, Haidian District",
+      "description": "Знаменитые руины европейских павильонов Летнего дворца, построенные для императора Цяньлуна иезуитскими миссионерами.",
+      "address": "Yiheyuan Rd, Район Хайдянь",
       "coordinates": {
         "lat": 39.9882,
         "lng": 116.4552
       },
       "openingHours": "07:00-20:30",
-      "ticketPrice": "Included in Old Summer Palace ticket (25¥ full)",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "Включено в билет в Летний дворец (25¥ полный)",
+      "recommendedVisitTime": "1 час",
       "highlights": [
-        "Famous Marble Boat foundations",
-        "European fountains",
-        "Aqueduct ruins",
-        "Photo spot"
+        "Знаменитый фундамент Мраморной лодки",
+        "Европейские фонтаны",
+        "Руины акведука",
+        "Фотозона"
       ],
-      "tips": "The most photographed part of Old Summer Palace. The marble boat (Hanhuachi) is the most famous ruin.",
+      "tips": "Самая фотографируемая часть Летнего дворца. Мраморная лодка (Ханьхуачи) - самые известные руины.",
       "phone": "+86 010  9793 8892"
     },
     {
       "id": "milu-park",
       "name": "麋鹿苑",
-      "nameEn": "Milu Park (Milu Deer Park)",
+      "nameEn": "Парк Милу (Парк оленей Милу)",
       "category": "nature",
       "image": "/img/ext/e057eaa5c1a3.webp",
-      "description": "A nature reserve and conservation center for the milu deer (Pere David's deer), featuring observation platforms and educational exhibits.",
-      "address": "Yuanmingyuan, Haidian District",
+      "description": "Природный заповедник и центр охраны оленя милу (оленя Давида), с обзорными площадками и образовательными экспозициями.",
+      "address": "Юаньминъюань, район Хайдянь",
       "coordinates": {
         "lat": 40.0052,
         "lng": 116.2852
       },
       "openingHours": "09:00-16:00",
       "ticketPrice": "30¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Milu deer watching",
-        "Wetland ecosystem",
-        "Bird observation",
-        "Ecological education"
+        "Наблюдение за оленем милу",
+        "Водно-болотные угодья",
+        "Наблюдение за птицами",
+        "Экологическое просвещение"
       ],
-      "tips": "Bring binoculars for wildlife viewing. Best in early morning. Located south of Old Summer Palace.",
+      "tips": "Возьмите бинокль для наблюдения за дикой природой. Лучше всего рано утром. Расположен к югу от Старого летнего дворца.",
       "phone": "+86 010  3512 0644"
     },
     {
       "id": "beijing-university",
       "name": "北京大学",
-      "nameEn": "Peking University",
+      "nameEn": "Пекинский университет",
       "category": "cultural",
       "image": "/img/ext/79e16f540fe6.webp",
-      "description": "China's first modern national university, known for its beautiful campus with traditional Chinese architecture and lakes.",
-      "address": "5 Yiheyuan Rd, Haidian District",
+      "description": "Первый современный национальный университет Китая, известный красивым кампусом с традиционной китайской архитектурой и озёрами.",
+      "address": "5-й улица Ихэюань, район Хайдянь",
       "coordinates": {
         "lat": 39.9882,
         "lng": 116.4712
       },
-      "openingHours": "Usually open to visitors (ID required)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "Обычно открыт для посетителей (требуется удостоверение личности)",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Weiming Lake",
-        "Tsinghua-Peking historical sites",
-        "Traditional pavilions",
-        "Cherry blossom avenue"
+        "Озеро Вэймин",
+        "Исторические места Университета Циньхуа и Пекинского университета",
+        "Традиционные павильоны",
+        "Аллея сакуры"
       ],
-      "tips": "Arrive early. Weekend visits recommended. Combine with a visit to Tsinghua University nearby.",
+      "tips": "Приезжайте рано. Рекомендуется посещение в выходные дни. Совместите с посещением Университета Циньхуа поблизости.",
       "phone": "+86 010  7672 5681"
     },
     {
       "id": "ming-tombs",
       "name": "明十三陵",
-      "nameEn": "Ming Tombs (Shisanling)",
+      "nameEn": "Мавзолеи династии Мин (Шисаньлин)",
       "category": "historical",
       "image": "/img/ext/ab537e126673.webp",
-      "description": "A UNESCO World Heritage site containing the tombs of 13 Ming dynasty emperors, set in a beautiful valley with impressive stone-lined avenues.",
-      "address": "Changping District, 50km northwest of Beijing",
+      "description": "Объект Всемирного наследия ЮНЕСКО, включающий гробницы 13 императоров династии Мин, расположенный в живописной долине с впечатляющими мощёными улицами.",
+      "address": "Район Чанпин, 50 км к северо-западу от Пекина",
       "coordinates": {
         "lat": 40.2919,
         "lng": 116.2244
       },
-      "openingHours": "08:00-17:30 (Apr-Oct), 08:30-17:00 (Nov-Mar)",
-      "ticketPrice": "30¥ (Changling), 65¥ (Dingling with underground palace)",
-      "recommendedVisitTime": "Half day",
+      "openingHours": "08:00-17:30 (апрель-октябрь), 08:30-17:00 (ноябрь-март)",
+      "ticketPrice": "30¥ (Чанлин), 65¥ (Динлин с подземным дворцом)",
+      "recommendedVisitTime": "Полдня",
       "highlights": [
-        "Changling main tomb",
-        "Dingling underground palace",
-        "Sacred Way stone animals",
-        "Spirit Way"
+        "Главная гробница Чанлин",
+        "Подземный дворец Динлин",
+        "Каменные животные Священного пути",
+        "Духовный путь"
       ],
-      "tips": "Combine with a visit to the Great Wall at Badaling. The underground palace at Dingling is the highlight.",
+      "tips": "Объедините с посещением Великой стены в Бадалине. Подземный дворец Динлин — главная достопримечательность.",
       "phone": "+86 010  7129 7803"
     },
     {
       "id": "yuanmingyuan",
       "name": "圆明园",
-      "nameEn": "Old Summer Palace (Yuanmingyuan)",
+      "nameEn": "Старый Летний дворец (Юаньминъюань)",
       "category": "historical",
       "image": "/img/ext/f2b48a17b376.webp",
-      "description": "The ruins of the original imperial palace and garden complex, destroyed in 1860. Features European-style architecture remains and beautiful lotus ponds.",
-      "address": "28 Qinghua West Rd, Haidian District",
+      "description": "Руины оригинального императорского дворцово-паркового комплекса, разрушенного в 1860 году. Сохранились руины европейской архитектуры и красивые пруды с лотосами.",
+      "address": "28 Цинхуа Вест Роуд, район Хайдятьнь",
       "coordinates": {
         "lat": 40.0067,
         "lng": 116.2977
       },
-      "openingHours": "07:00-19:30 (Apr-Oct), 07:00-17:30 (Nov-Mar)",
-      "ticketPrice": "10¥ (park), 15¥ (with ruins area)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "07:00-19:30 (апр-окт), 07:00-17:30 (ноя-мар)",
+      "ticketPrice": "10¥ (парк), 15¥ (с руинами)",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "European-style ruins",
-        "Lotus flower ponds",
-        "Haiyantang remains",
-        "Boat ride on lake"
+        "Европейские руины",
+        "Пруды с лотосами",
+        "Остатки Хайяньтан",
+        "Лодочная прогулка по озеру"
       ],
-      "tips": "Best visited in summer when lotus flowers bloom. The ruins area tells a powerful history lesson.",
+      "tips": "Лучше всего посещать летом, когда цветут лотосы. Руины несут важный исторический урок.",
       "phone": "+86 010  5734 8020"
     },
     {
       "id": "universal-resort",
       "name": "北京环球度假区",
-      "nameEn": "Universal Beijing Resort",
+      "nameEn": "Парк развлечений Universal Beijing Resort",
       "category": "entertainment",
       "image": "/img/ext/171128eac7b7.webp",
-      "description": "China's first Universal theme park featuring seven themed lands including the Wizarding World of Harry Potter and Kung Fu Panda Land.",
-      "address": "Tongzhou District, eastern Beijing",
+      "description": "Первый тематический парк Universal в Китае с семью тематическими зонами, включая мир Гарри Поттера и страну Кунг-фу Панды.",
+      "address": "Район Тунчжэ, восточный Пекин",
       "coordinates": {
         "lat": 39.8574,
         "lng": 116.6736
       },
-      "openingHours": "09:00-21:00 (hours vary by season)",
-      "ticketPrice": "418¥ (weekday), 528¥ (peak)",
-      "recommendedVisitTime": "Full day",
+      "openingHours": "09:00-21:00 (часы работы варьируются в зависимости от сезона)",
+      "ticketPrice": "418¥ (будни), 528¥ (пиковый период)",
+      "recommendedVisitTime": "Целый день",
       "highlights": [
-        "Wizarding World of Harry Potter",
-        "Kung Fu Panda Land",
-        "Transformers Metrobase",
-        "Jurassic World"
+        "Волшебный мир Гарри Поттера",
+        "Страна Кунг-фу Панды",
+        "Трансформеры Метробейс",
+        "Юрский мир"
       ],
-      "tips": "Book tickets well in advance. Download the Universal Beijing app. Weekdays are less crowded.",
+      "tips": "Бронируйте билеты заранее. Скачайте приложение Universal Beijing. В будни меньше посетителей.",
       "phone": "+86 010  4285 3171"
     },
     {
       "id": "national-stadium",
       "name": "鸟巢（国家体育场）",
-      "nameEn": "National Stadium (Bird's Nest)",
+      "nameEn": "Национальный стадион (Гнездо птицы)",
       "category": "modern",
       "image": "/img/ext/278ff84812e8.webp",
-      "description": "The iconic 2008 Olympic Games main venue, designed by Herzog & de Meuron with a distinctive steel lattice structure resembling a bird's nest.",
-      "address": "1 National Stadium South Rd, Chaoyang District",
+      "description": "Знаменитая главная арена Олимпийских игр 2008 года, спроектированная Herzog & de Meuron с характерной стальной решётчатой конструкцией, напоминающей птичье гнездо.",
+      "address": "1 Национальный стадион, Южная дорога, район Чаоян",
       "coordinates": {
         "lat": 39.9929,
         "lng": 116.3966
       },
-      "openingHours": "09:00-19:00 (Apr-Oct), 09:00-17:30 (Nov-Mar)",
-      "ticketPrice": "50¥ (exterior), 80¥ (interior tour)",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "09:00-19:00 (апр-окт), 09:00-17:30 (нояб-мар)",
+      "ticketPrice": "50¥ (экстерьер), 80¥ (внутренний тур)",
+      "recommendedVisitTime": "1-2 часа",
       "highlights": [
-        "Olympic cauldron",
-        "Steel lattice architecture",
-        "Night illumination",
-        "Olympic memorabilia"
+        "Олимпийский костер",
+        "Стальная решетчатая архитектура",
+        "Ночное освещение",
+        "Олимпийские реликвии"
       ],
-      "tips": "Visit at night when the stadium is illuminated. Combine with nearby Water Cube and Olympic Park.",
+      "tips": "Посетите ночью, когда стадион освещен. Совместите с близлежащим Водным кубом и Олимпийским парком.",
       "phone": "+86 010  6449 0873"
     },
     {
       "id": "water-cube",
       "name": "水立方（国家游泳中心）",
-      "nameEn": "Water Cube (National Aquatics Center)",
+      "nameEn": "Водный куб (Национальный акватический центр)",
       "category": "modern",
       "image": "/img/ext/81fc759e622b.webp",
-      "description": "The stunning 2008 Olympic swimming venue, now featuring a water park. Its unique ETFE bubble facade is an architectural marvel.",
-      "address": "1 National Aquatics Center, Chaoyang District",
+      "description": "Потрясающий плавательный комплекс Олимпиады 2008 года, теперь с аквапарком. Уникальный фасад из пузырьков ETFE - это архитектурное чудо.",
+      "address": "1 Национальный акватический центр, район Чаоян",
       "coordinates": {
         "lat": 39.9937,
         "lng": 116.3835
       },
       "openingHours": "09:00-21:00",
-      "ticketPrice": "30¥ (tour), 260¥ (water park)",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "30¥ (тур), 260¥ (аквапарк)",
+      "recommendedVisitTime": "1-2 часа",
       "highlights": [
-        "ETFE bubble facade",
-        "Water park slides",
-        "Olympic pool",
-        "Night lighting display"
+        "Фасад из пузырей ETFE",
+        "Горки аквапарка",
+        "Олимпийский бассейн",
+        "Ночная иллюминация"
       ],
-      "tips": "The water park is great for families. Visit at night for the LED light show.",
+      "tips": "Аквапарк отлично подходит для семей. Посетите ночью, чтобы увидеть светодиодное шоу.",
       "phone": "+86 010  9215 5705"
     },
     {
       "id": "wangfujing",
       "name": "王府井大街",
-      "nameEn": "Wangfujing Street",
+      "nameEn": "Улица Ванфуцзин",
       "category": "cultural",
       "image": "/img/ext/c07c68888962.webp",
-      "description": "Beijing's most famous shopping street, spanning 1.6km with modern malls, traditional shops, and the famous Wangfujing Snack Street.",
-      "address": "Dongcheng District",
+      "description": "Самая знаменитая торговая улица Пекина, протяженностью 1,6 км с современными торговыми центрами, традиционными магазинами и знаменитой Улицей Ванфуцзин с закусочными.",
+      "address": "Район Дунчэн",
       "coordinates": {
         "lat": 39.9142,
         "lng": 116.4103
       },
-      "openingHours": "Shops 10:00-22:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "Магазины 10:00-22:00",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Wangfujing Snack Street",
-        "Beijing Department Store",
-        "St. Joseph Cathedral",
-        "Night market"
+        "Улица Ванфуцзин с закусочными",
+        "Пекинский универмаг",
+        "Собор Святого Иосифа",
+        "Ночной рынок"
       ],
-      "tips": "Try local snacks at the snack street. The Catholic cathedral nearby is worth a visit.",
+      "tips": "Попробуйте местные закуски на улице с закусочными. Кафедральный собор неподалеку стоит посетить.",
       "phone": "+86 010  2719 8863"
     },
     {
       "id": "qianmen",
       "name": "前门大街",
-      "nameEn": "Qianmen Street",
+      "nameEn": "Улица Цяньмэнь",
       "category": "cultural",
       "image": "/img/ext/ca06a5442afe.webp",
-      "description": "A historic commercial street dating back to the Ming dynasty, featuring traditional Beijing shops, teahouses, and the iconic Qianmen Gate.",
-      "address": "Dongcheng District, south of Tiananmen",
+      "description": "Историческая торговая улица, восходящая к династии Мин, с традиционными пекинскими магазинами, чайными домами и знаковыми воротами Цяньмэнь.",
+      "address": "Район Дунчэн, к югу от площади Тяньаньмэнь",
       "coordinates": {
         "lat": 39.8956,
         "lng": 116.3972
       },
-      "openingHours": "Shops 10:00-22:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "Магазины 10:00-22:00",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "1-2 часа",
       "highlights": [
-        "Traditional Beijing brands",
-        "Dangdang tram",
-        "Quanjude Roast Duck",
-        "Historic architecture"
+        "Традиционные пекинские бренды",
+        "Трамвай «Дандан»",
+        "Утка Цюаньцзюдэ",
+        "Историческая архитектура"
       ],
-      "tips": "Walk from Tiananmen Square. Try Beijing roast duck at Quanjude, the original location.",
+      "tips": "Пройдитесь от площади Тяньаньмэнь. Попробуйте пекинскую утку по-цыплячьи в ресторане Цюаньцзюдэ — в оригинальном месте.",
       "phone": "+86 010  5335 5569"
     },
     {
       "id": "confucius-temple",
       "name": "孔庙和国子监",
-      "nameEn": "Confucius Temple & Imperial Academy",
+      "nameEn": "Храм Конфуция",
       "category": "cultural",
       "image": "/img/ext/fa0bb86fc2e6.webp",
-      "description": "The second largest Confucius Temple in China and the former imperial academy where scholars studied for civil service exams.",
-      "address": "13 Guozijian St, Dongcheng District",
+      "description": "南京最著名的文化街区，有秦淮河和各种小吃。",
+      "address": "南京市秦淮区",
       "coordinates": {
         "lat": 39.9472,
         "lng": 116.4118
       },
-      "openingHours": "08:30-18:00 (May-Sep), 08:30-17:00 (Oct-Apr)",
-      "ticketPrice": "30¥",
-      "recommendedVisitTime": "1.5 hours",
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "198 stone steles with inscriptions",
-        "Ancient scholar trees",
-        "Dacheng Hall",
-        "Imperial ranking stones"
+        "秦淮河",
+        "小吃",
+        "夜景",
+        "Императорские камни ранжирования"
       ],
-      "tips": "Combine with a walk through Guozijian Street and nearby Lama Temple. Audio guides available.",
+      "tips": "品尝南京小吃。",
       "phone": "+86 010  6585 6231"
     },
     {
       "id": "chinese-garden-museum",
       "name": "中国园林博物馆",
-      "nameEn": "Chinese Garden Museum",
+      "nameEn": "Музей китайского сада",
       "category": "cultural",
       "image": "/img/ext/aea46746bdcf.webp",
-      "description": "The first national-level garden museum showcasing Chinese garden art, featuring indoor and outdoor exhibits with replicas of famous gardens.",
-      "address": "Fengtai District",
+      "description": "Первый национальный музей садов, демонстрирующий китайское садовое искусство, с экспозициями в помещении и на открытом воздухе с репликами известных садов.",
+      "address": "Район Фэнтай",
       "coordinates": {
         "lat": 39.8563,
         "lng": 116.2159
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "09:00-17:00 (Закрыто в понедельник)",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Replica classical gardens",
-        "Bonsai collection",
-        "Water garden",
-        "Landscape architecture exhibits"
+        "Копии классических садов",
+        "Коллекция бонсай",
+        "Водный сад",
+        "Выставки ландшафтной архитектуры"
       ],
-      "tips": "Worth visiting for garden enthusiasts. Allow at least 2 hours to explore the outdoor gardens.",
+      "tips": "Стоит посетить любителям садов. Оставьте не менее 2 часов для исследования открытых садов.",
       "phone": "+86 010  0676 4213"
     },
     {
       "id": "fayuan-temple",
       "name": "法源寺",
-      "nameEn": "Fayuan Temple",
+      "nameEn": "Храм Фаюань",
       "category": "cultural",
       "image": "/img/ext/1529f6ca3372.webp",
-      "description": "The oldest Buddhist temple in Beijing, built in 645 AD. Known for its lilac flowers in spring and peaceful atmosphere.",
-      "address": "7 Fayuansi Qianjie, Xicheng District",
+      "description": "Старейший буддийский храм в Пекине, построенный в 645 году нашей эры. Известен своими сиренью весной и спокойной атмосферой.",
+      "address": "7 Фаюаньсы Цяньцзе, район Сичэн",
       "coordinates": {
         "lat": 39.8862,
         "lng": 116.3692
       },
       "openingHours": "08:30-16:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "1 час",
       "highlights": [
-        "1,400 years of history",
-        "Lilac garden",
-        "Ancient Buddhist statues",
-        "Peaceful courtyards"
+        "1400 лет истории",
+        "Сад сирени",
+        "Древние буддийские статуи",
+        "Тихие внутренние дворы"
       ],
-      "tips": "Visit in spring when lilacs bloom. One of Beijing's hidden gems with very few tourists.",
+      "tips": "Посетите весной, когда цветет сирень. Один из скрытых жемчужин Пекина с очень небольшим количеством туристов.",
       "phone": "+86 010  4055 4781"
     },
     {
       "id": "national-art-museum",
       "name": "中国美术馆",
-      "nameEn": "National Art Museum of China",
+      "nameEn": "Национальный художественный музей Китая",
       "category": "cultural",
       "image": "/img/ext/a6d6f37e7851.webp",
-      "description": "China's premier art museum housing over 100,000 works including traditional Chinese paintings, modern art, and international exhibitions.",
-      "address": "1 Wusi Ave, Dongcheng District",
+      "description": "Ведущий художественный музей Китая, в котором хранится более 100 000 произведений, включая традиционные китайские картины, современное искусство и международные выставки.",
+      "address": "1 проспект Усы, район Дунчэн",
       "coordinates": {
         "lat": 39.9267,
         "lng": 116.4079
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "09:00-17:00 (Закрыто в понедельник)",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Chinese modern art",
-        "Traditional ink paintings",
-        "International exhibitions",
-        "Sculpture garden"
+        "Китайское современное искусство",
+        "Традиционные чернильные картины",
+        "Международные выставки",
+        "Сад скульптур"
       ],
-      "tips": "Check the exhibition schedule online. Free but reservation required. Located near Wangfujing.",
+      "tips": "Проверьте расписание выставок онлайн. Вход бесплатный, но требуется предварительная запись. Расположен рядом с Ванфуцзин.",
       "phone": "+86 010  1552 3074"
     },
     {
       "id": "planetarium",
       "name": "北京天文馆",
-      "nameEn": "Beijing Planetarium",
+      "nameEn": "Планетарий Пекина",
       "category": "cultural",
       "image": "/img/ext/205718a05aaa.webp",
-      "description": "China's first planetarium featuring IMAX space theater, digital sky shows, and astronomy exhibitions.",
-      "address": "138 Xizhimen Outer St, Xicheng District",
+      "description": "Первый планетарий в Китае с IMAX-кинотеатром для космических фильмов, цифровыми шоу звездного неба и астрономическими выставками.",
+      "address": "138 Внешняя улица Сичжимэнь, район Сичэн",
       "coordinates": {
         "lat": 39.9353,
         "lng": 116.3385
       },
-      "openingHours": "09:30-15:30 (Closed Monday)",
-      "ticketPrice": "10¥ (exhibition), 45¥ (with shows)",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "09:30-15:30 (закрыт по понедельникам)",
+      "ticketPrice": "10¥ (экспозиция), 45¥ (с шоу)",
+      "recommendedVisitTime": "2 часа",
       "highlights": [
-        "IMAX space theater",
-        "Digital sky shows",
-        "Meteorite collection",
-        "Interactive exhibits"
+        "IMAX кинотеатр с фильмами о космосе",
+        "Цифровые шоу с изображением неба",
+        "Коллекция метеоритов",
+        "Интерактивные экспонаты"
       ],
-      "tips": "Book show tickets in advance. Great for families with children. Shows in Chinese only.",
+      "tips": "Забронируйте билеты на шоу заранее. Отлично подходит для семей с детьми. Шоу только на китайском языке.",
       "phone": "+86 010  7007 9904"
     },
     {
       "id": "national-zoo",
       "name": "北京动物园",
-      "nameEn": "Beijing Zoo",
+      "nameEn": "Пекинский зоопарк",
       "category": "natural",
       "image": "/img/ext/6334d34b42a4.webp",
-      "description": "One of China's oldest and largest zoos, home to giant pandas, golden monkeys, and over 500 species of animals.",
-      "address": "137 Xizhimen Outer St, Xicheng District",
+      "description": "Один из старейших и крупнейших зоопарков Китая, где обитают гигантские панды, золотые обезьяны и более 500 видов животных.",
+      "address": "137 Внешняя улица Сичжимэнь, район Сичэн",
       "coordinates": {
         "lat": 39.9389,
         "lng": 116.3342
       },
-      "openingHours": "07:30-18:00 (Apr-Oct), 07:30-17:00 (Nov-Mar)",
-      "ticketPrice": "15¥ (zoo), 19¥ (with aquarium)",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "07:30-18:00 (апр-окт), 07:30-17:00 (ноя-мар)",
+      "ticketPrice": "15¥ (зоопарк), 19¥ (с аквариумом)",
+      "recommendedVisitTime": "3-4 часа",
       "highlights": [
-        "Giant Panda House",
-        "Aquarium",
-        "Golden monkey exhibit",
-        "Historic architecture"
+        "Дом гигантских панд",
+        "Аквариум",
+        "Выставка золотых обезьян",
+        "Историческая архитектура"
       ],
-      "tips": "Visit pandas early in the morning when they are most active. The aquarium is worth the extra fee.",
+      "tips": "Посетите панд рано утром, когда они наиболее активны. Аквариум стоит дополнительной платы.",
       "phone": "+86 010  5344 1081"
     },
     {
       "id": "fragrant-hills",
       "name": "香山公园",
-      "nameEn": "Fragrant Hills Park (Xiangshan)",
+      "nameEn": "Парк Сяншань (Парк Ароматных Холмов)",
       "category": "natural",
       "image": "/img/ext/6dddbdd9968a.webp",
-      "description": "A vast park on the western outskirts famous for autumn foliage, historic temples, and scenic hiking trails.",
-      "address": "40 Maimai St, Haidian District",
+      "description": "Обширный парк на западной окраине, известный своими осенними листьями, историческими храмами и живописными пешеходными тропами.",
+      "address": "40 Улица Маймай, район Хайдянь",
       "coordinates": {
         "lat": 39.9903,
         "lng": 116.1855
       },
-      "openingHours": "06:00-18:30 (Apr-Nov), 06:00-18:00 (Dec-Mar)",
+      "openingHours": "06:00-18:30 (апр-ноя), 06:00-18:00 (дек-мар)",
       "ticketPrice": "10¥",
-      "recommendedVisitTime": "Half day",
+      "recommendedVisitTime": "Полдня",
       "highlights": [
-        "Red autumn leaves",
-        "Biyun Temple",
-        "Incense Burner Peak",
-        "Cable car"
+        "Красные осенние листья",
+        "Храм Биюнь",
+        "Пик Курильница",
+        "Канатная дорога"
       ],
-      "tips": "Best visited in October-November for the famous red leaves. Weekends are extremely crowded in autumn.",
+      "tips": "Лучше всего посещать в октябре-ноябре, чтобы увидеть знаменитые красные листья. По выходным в осенний период очень многолюдно.",
       "phone": "+86 010  5619 9999"
     },
     {
       "id": "capital-museum",
       "name": "首都博物馆",
-      "nameEn": "Capital Museum",
+      "nameEn": "Столичный музей",
       "category": "cultural",
       "image": "/img/ext/cc68a9263e39.webp",
-      "description": "A modern museum showcasing Beijing's history and culture from prehistoric times to the present, with an impressive bronze and porcelain collection.",
-      "address": "16 Fuximen Outer St, Xicheng District",
+      "description": "Современный музей, демонстрирующий историю и культуру Пекина с доисторических времен до настоящего времени, с впечатляющей коллекцией бронзы и фарфора.",
+      "address": "16 Внешняя улица Фусимэнь, район Сичэн",
       "coordinates": {
         "lat": 39.9072,
         "lng": 116.3351
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "09:00-17:00 (Закрыто в понедельник)",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Beijing history exhibits",
-        "Bronze age collection",
-        "Ancient porcelain",
-        "Traditional architecture halls"
+        "Экспозиции по истории Пекина",
+        "Коллекция бронзового века",
+        "Древний фарфор",
+        "Залы традиционной архитектуры"
       ],
-      "tips": "Free entry with reservation. Audio guides available. Modern building with excellent exhibits.",
+      "tips": "Бесплатный вход по предварительной записи. Доступны аудиогиды. Современное здание с отличными экспозициями.",
       "phone": "+86 010  6227 8768"
     },
     {
       "id": "cuandixia-village",
       "name": "爨底下村",
-      "nameEn": "Cuandixia Village",
+      "nameEn": "Деревня Куаньдися",
       "category": "cultural",
       "image": "/img/ext/981a28ab731e.webp",
-      "description": "A well-preserved Ming dynasty mountain village with stone houses and traditional courtyard architecture, about 90km west of Beijing.",
-      "address": "Zhaitang Town, Mentougou District",
+      "description": "Хорошо сохранившаяся горная деревня эпохи династии Мин с каменными домами и традиционной архитектурой внутренних дворов, расположенная примерно в 90 км к западу от Пекина.",
+      "address": "Городок Чжайтан, район Мэнтоугоу",
       "coordinates": {
         "lat": 39.9708,
         "lng": 115.6289
       },
-      "openingHours": "Open 24 hours",
+      "openingHours": "Открыто круглосуточно",
       "ticketPrice": "35¥",
-      "recommendedVisitTime": "Half day to full day",
+      "recommendedVisitTime": "Полдня до полного дня",
       "highlights": [
-        "Traditional stone houses",
-        "Mountain scenery",
-        "Ming dynasty architecture",
-        "Local farmhouse food"
+        "Традиционные каменные дома",
+        "Горный пейзаж",
+        "Архитектура эпохи династии Мин",
+        "Местная деревенская еда"
       ],
-      "tips": "Best combined with a weekend trip. Stay overnight for the full experience. Roads can be winding.",
+      "tips": "Лучше всего совмещать с поездкой на выходные. Остановитесь на ночь, чтобы полностью ощутить атмосферу. Дороги могут быть извилистыми.",
       "phone": "+86 010  4275 3645"
     },
     {
       "id": "gubei-water-town",
       "name": "古北水镇",
-      "nameEn": "Gubei Water Town",
+      "nameEn": "Водный город Губэй",
       "category": "cultural",
       "image": "/img/ext/673f5ee74870.webp",
-      "description": "A replica water town at the foot of the Simatai Great Wall, featuring traditional architecture, hot springs, and night views of the illuminated wall.",
-      "address": "Simatai Village, Miyun District",
+      "description": "Копия водного города у подножия Великой стены в Симатае, с традиционной архитектурой, горячими источниками и ночными видами освещенной стены.",
+      "address": "Деревня Симатай, район Миюнь",
       "coordinates": {
         "lat": 40.6597,
         "lng": 117.2447
       },
       "openingHours": "09:00-22:00",
       "ticketPrice": "140¥",
-      "recommendedVisitTime": "Full day or overnight",
+      "recommendedVisitTime": "Полный день или ночь",
       "highlights": [
-        "Simatai Great Wall night view",
-        "Hot springs",
-        "Water town boat rides",
-        "Traditional crafts"
+        "Ночной вид на Великую стену в Симатае",
+        "Горячие источники",
+        "Водные прогулки на лодке по городу",
+        "Традиционные ремесла"
       ],
-      "tips": "Stay overnight to see the Great Wall illuminated at night. Book hot springs in advance.",
+      "tips": "Остановитесь на ночь, чтобы увидеть Великую стену, освещенную ночью. Забронируйте посещение горячих источников заранее.",
       "phone": "+86 010  9452 6462"
     },
     {
       "id": "ncpa",
       "name": "国家大剧院",
-      "nameEn": "National Centre for the Performing Arts",
+      "nameEn": "Национальный центр исполнительских искусств",
       "category": "modern",
       "image": "/img/ext/6a46d136bb22.webp",
-      "description": "A stunning titanium and glass dome surrounded by water, hosting opera, ballet, concerts, and theater performances.",
-      "address": "2 West Chang'an Ave, Xicheng District",
+      "description": "Ошеломляющий купол из титана и стекла, окруженный водой, где проходят оперные спектакли, балеты, концерты и театральные представления.",
+      "address": "2 Западная улица Чанъань, район Сичэн",
       "coordinates": {
         "lat": 39.9032,
         "lng": 116.3835
       },
-      "openingHours": "Tours 09:00-17:00, performances vary",
-      "ticketPrice": "30¥ (tour), performance tickets vary",
-      "recommendedVisitTime": "1-2 hours (tour)",
+      "openingHours": "Экскурсии 09:00-17:00, время спектаклей варьируется",
+      "ticketPrice": "30¥ (экскурсия), билеты на спектакли варьируются",
+      "recommendedVisitTime": "1-2 часа (экскурсия)",
       "highlights": [
-        "Egg-shaped titanium dome",
-        "Underwater entrance",
-        "Three performance halls",
-        "Acoustic excellence"
+        "Яйцевидный титановый купол",
+        "Подводный вход",
+        "Три концертных зала",
+        "Превосходная акустика"
       ],
-      "tips": "Take a guided tour during the day. Attend an evening performance for the full experience. Book tickets early.",
+      "tips": "Совершите экскурсию днем. Посетите вечерний спектакль для полного опыта. Забронируйте билеты заранее.",
       "phone": "+86 010  5678 4765"
     },
     {
       "id": "taoranting-park",
       "name": "陶然亭公园",
-      "nameEn": "Taoranting Park",
+      "nameEn": "Парк Таорантин",
       "category": "natural",
       "image": "/img/ext/4af69f4aa830.webp",
-      "description": "A historic park famous for its classical pavilions, cherry blossoms, and peaceful lake with boat rides.",
-      "address": "19 Taiping St, Xicheng District",
+      "description": "Исторический парк, знаменитый классическими павильонами, цветением вишни и спокойным озером с возможностью лодочных прогулок.",
+      "address": "19 ул. Тайпин, район Сичэн",
       "coordinates": {
         "lat": 39.8746,
         "lng": 116.3765
       },
-      "openingHours": "06:00-21:30 (Apr-Oct), 06:00-21:00 (Nov-Mar)",
+      "openingHours": "06:00-21:30 (апр-окт), 06:00-21:00 (ноя-мар)",
       "ticketPrice": "2¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 часа",
       "highlights": [
-        "Cherry blossom season",
-        "Historical pavilions",
-        "Lake boat rides",
-        "Local tai chi practice"
+        "Сезон цветения сакуры",
+        "Исторические павильоны",
+        "Прогулки на лодке по озеру",
+        "Местная практика тайцзи"
       ],
-      "tips": "Great for a relaxing afternoon. Visit in spring for cherry blossoms. Popular with local residents.",
+      "tips": "Отлично для расслабленного послеобеденного отдыха. Посетите весной в период цветения сакуры. Популярно среди местных жителей.",
       "phone": "+86 010  2372 8127"
     },
     {
       "id": "badaling-safari",
       "name": "八达岭野生动物园",
-      "nameEn": "Badaling Safari Park",
+      "nameEn": "Сафари-парк Бадалинг",
       "category": "natural",
       "image": "/img/ext/b2ca80eca619.webp",
-      "description": "A drive-through safari park at the foot of the Great Wall, featuring lions, tigers, bears, and other wildlife in semi-natural habitats.",
-      "address": "Yanqing District, near Badaling Great Wall",
+      "description": "Парк сафари с возможностью проезда на автомобиле у подножия Великой стены, где обитают львы, тигры, медведи и другие дикие животные в полуестественных условиях обитания.",
+      "address": "Район Яньцин, вблизи от Великой стены Бадалин",
       "coordinates": {
         "lat": 40.3581,
         "lng": 116.0108
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "90¥ (adult), children discounts",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "90¥ (взрослый), скидки для детей",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Drive-through safari zone",
-        "White tiger exhibit",
-        "Bear area",
-        "Walking animal zone"
+        "Зона сафари с проездом на автомобиле",
+        "Экспозиция белого тигра",
+        "Территория с медведями",
+        "Пешеходная зона с животными"
       ],
-      "tips": "Keep car windows closed in the predator zone. Combine with a Badaling Great Wall visit.",
+      "tips": "Держите окна автомобиля закрытыми в зоне хищников. Совместите с посещением Великой стены Бадалин.",
       "phone": "+86 010  1629 7999"
     },
     {
       "id": "temple-of-earth",
       "name": "地坛公园",
-      "nameEn": "Temple of Earth (Ditan)",
+      "nameEn": "Храм Земли (Дитан)",
       "category": "cultural",
       "image": "/img/ext/cdd1944d7090.webp",
-      "description": "The second largest of Beijing's imperial temples, where emperors worshipped the Earth God. Features beautiful ancient cypress trees and seasonal festivals.",
-      "address": "Aobei Rd, Dongcheng District",
+      "description": "Второй по величине императорский храм Пекина, где императоры поклонялись Богу Земли. Здесь растут красивые древние кипарисы и проходят сезонные фестивали.",
+      "address": "ул. Аобэй, район Дунчэн",
       "coordinates": {
         "lat": 39.9535,
         "lng": 116.4075
       },
       "openingHours": "06:00-21:00",
       "ticketPrice": "2¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 часа",
       "highlights": [
-        "Altar of Earth",
-        "Ancient cypress grove",
-        "Spring festival temple fair",
-        "Autumn ginkgo trees"
+        "Алтарь Земли",
+        "Роща древних кипарисов",
+        "Храмовый фестиваль весны",
+        "Осенью гинкго"
       ],
-      "tips": "Visit during Chinese New Year for the famous temple fair. Autumn ginkgo trees are beautiful.",
+      "tips": "Посетите храм во время Китайского Нового года, чтобы увидеть знаменитую ярмарку. Осенью гинкго особенно красивы.",
       "phone": "+86 010  6158 3077"
     },
     {
       "id": "world-park",
       "name": "世界公园",
-      "nameEn": "Beijing World Park",
+      "nameEn": "Парк Мира Пекина",
       "category": "entertainment",
       "image": "/img/ext/171128eac7b7.webp",
-      "description": "A theme park featuring miniature replicas of over 100 famous landmarks from around the world, including the Eiffel Tower and pyramids.",
-      "address": "158 Fengbao Rd, Fengtai District",
+      "description": "Тематический парк с миниатюрными копиями более 100 знаменитых достопримечательностей со всего мира, включая Эйфелеву башню и пирамиды.",
+      "address": "ул. Фэнбао, 158, район Фэнтай",
       "coordinates": {
         "lat": 39.8223,
         "lng": 116.2842
       },
-      "openingHours": "08:30-17:30 (Apr-Oct), 09:00-17:00 (Nov-Mar)",
+      "openingHours": "08:30-17:30 (апр-окт), 09:00-17:00 (нояб-мар)",
       "ticketPrice": "100¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4 часа",
       "highlights": [
-        "Miniature world landmarks",
-        "Cultural performances",
-        "European garden area",
-        "Boat rides"
+        "Миниатюрные достопримечательности мира",
+        "Культурные представления",
+        "Европейский садовый район",
+        "Прогулки на лодке"
       ],
-      "tips": "Great for families. Allow at least 3 hours to see everything. Cultural performances on weekends.",
+      "tips": "Отлично подходит для семей. Оставьте не менее 3 часов, чтобы всё осмотреть. Культурные представления по выходным.",
       "phone": "+86 010  5389 0850"
     },
     {
       "id": "beijing-natural-history",
       "name": "北京自然博物馆",
-      "nameEn": "Beijing Museum of Natural History",
+      "nameEn": "Пекинский музей естественной истории",
       "category": "cultural",
       "image": "/img/ext/4adbde7850e1.webp",
-      "description": "One of China's oldest natural history museums, featuring dinosaur fossils, wildlife dioramas, and interactive science exhibits.",
-      "address": "126 Tianqiao South St, Dongcheng District",
+      "description": "Один из старейших музеев естественной истории Китая, с экспонатами динозавров, диорамами дикой природы и интерактивными научными выставками.",
+      "address": "ул. Тяньцяо Южная, 126, район Дунчэн",
       "coordinates": {
         "lat": 39.8851,
         "lng": 116.3932
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "09:00-17:00 (Закрыто по понедельникам)",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Dinosaur hall",
-        "Paleontology exhibits",
-        "Wildlife dioramas",
-        "Science interactive zone"
+        "Зал динозавров",
+        "Палеонтологические экспозиции",
+        "Диорамы дикой природы",
+        "Интерактивная научная зона"
       ],
-      "tips": "Great for children. Free admission with reservation. Book online in advance.",
+      "tips": "Отлично подходит для детей. Бесплатный вход по предварительной записи. Бронируйте онлайн заранее.",
       "phone": "+86 010  4369 6397"
     },
     {
       "id": "sanlitun",
       "name": "三里屯",
-      "nameEn": "Sanlitun",
+      "nameEn": "Санлитун",
       "category": "modern",
       "image": "/img/ext/8fdf5818ee84.webp",
-      "description": "Beijing's trendiest entertainment district featuring international restaurants, bars, designer shops, and a vibrant nightlife scene.",
-      "address": "Sanlitun Rd, Chaoyang District",
+      "description": "Самый модный район Пекина для развлечений с международными ресторанами, барами, дизайнерскими магазинами и яркой ночной жизнью.",
+      "address": "ул. Санлитун, район Чаоян",
       "coordinates": {
         "lat": 39.9337,
         "lng": 116.4542
       },
-      "openingHours": "Shops 10:00-22:00, bars until late",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-4 hours",
+      "openingHours": "Магазины 10:00-22:00, бары до поздней ночи",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "2-4 часа",
       "highlights": [
-        "Taikoo Li shopping complex",
-        "International restaurants",
-        "Bar street",
-        "Designer boutiques"
+        "Торговый комплекс Taikoo Li",
+        "Рестораны международной кухни",
+        "Улица баров",
+        "Бутики дизайнеров"
       ],
-      "tips": "Best in the evening. Great area for international food and nightlife. Popular with expats.",
+      "tips": "Лучше всего вечером. Отличное место для международной еды и ночной жизни. Популярно среди экспатов.",
       "phone": "+86 010  1456 1336"
     },
     {
       "id": "751-dpark",
       "name": "751D·Park",
-      "nameEn": "751 D-Park",
+      "nameEn": "Парк 751 D-Park",
       "category": "cultural",
       "image": "/img/ext/4af69f4aa830.webp",
-      "description": "An industrial heritage zone next to 798 Art District, featuring converted gas tanks and factories now used for fashion shows, exhibitions, and events.",
-      "address": "4 Jiuxianqiao Rd, Chaoyang District",
+      "description": "Промышленная наследиевая зона рядом с районом искусств 798, с переоборудованными газгольдерами и заводами, используемыми для показов мод, выставок и мероприятий.",
+      "address": "4 улица Цзюсяньцяо, район Чаоян",
       "coordinates": {
         "lat": 39.9843,
         "lng": 116.4978
       },
-      "openingHours": "10:00-18:00 (events vary)",
-      "ticketPrice": "Free (some events may charge)",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "10:00-18:00 (время мероприятий варьируется)",
+      "ticketPrice": "Бесплатно (на некоторые мероприятия может взиматься плата)",
+      "recommendedVisitTime": "1-2 часа",
       "highlights": [
-        "Industrial architecture",
-        "Fashion week venue",
-        "Design exhibitions",
-        "Gas tank art space"
+        "Промышленная архитектура",
+        "Площадка для Недели моды",
+        "Выставки дизайна",
+        "Художественное пространство в газгольдере"
       ],
-      "tips": "Combine with a 798 Art District visit. Check the event calendar for special exhibitions.",
+      "tips": "Совместите с посещением района искусств 798. Проверьте календарь мероприятий на наличие специальных выставок.",
       "phone": "+86 010  0741 4897"
     },
     {
       "id": "beijing-aquarium",
       "name": "北京海洋馆",
-      "nameEn": "Beijing Aquarium",
+      "nameEn": "Пекинский аквариум",
       "category": "natural",
       "image": "/img/ext/7f80dfb8bda3.webp",
-      "description": "One of the largest inland aquariums in the world, featuring shark tanks, dolphin shows, and a tropical rainforest exhibit.",
-      "address": "18 Baishiqiao Rd, Haidian District (inside Beijing Zoo)",
+      "description": "Один из крупнейших в мире пресноводных аквариумов, с танками для акул, дельфинными шоу и экспозицией тропических лесов.",
+      "address": "18 ул. Байшицяо, район Хайдзянь (на территории Пекинского зоопарка)",
       "coordinates": {
         "lat": 39.9395,
         "lng": 116.3348
       },
       "openingHours": "09:00-17:30",
-      "ticketPrice": "165¥ (zoo + aquarium combo)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "165¥ (комбинированный билет в зоопарк и аквариум)",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Shark tank tunnel",
-        "Dolphin performances",
-        "Tropical rainforest zone",
-        "Touch pool"
+        "Туннель с акулами",
+        "Дельфинные представления",
+        "Зона тропических лесов",
+        "Контактный бассейн"
       ],
-      "tips": "Check dolphin show times when you arrive. Located inside Beijing Zoo. Buy combo tickets.",
+      "tips": "Уточните время дельфинного шоу по прибытии. Находится на территории Пекинского зоопарка. Покупайте комбинированные билеты.",
       "phone": "+86 010  9886 3851"
     },
     {
       "id": "meilanfang-memorial",
       "name": "梅兰芳纪念馆",
-      "nameEn": "Mei Lanfang Memorial Museum",
+      "nameEn": "Мемориальный музей Мэй Ланьфана",
       "category": "cultural",
       "image": "/img/ext/4adbde7850e1.webp",
-      "description": "The former residence of China's most famous Peking Opera performer, displaying costumes, photographs, and personal artifacts.",
-      "address": "9 Huguosi St, Xicheng District",
+      "description": "Бывшая резиденция величайшего исполнителя пекинской оперы Китая, где представлены костюмы, фотографии и личные вещи артиста.",
+      "address": "9 ул. Хугоуси, район Сичэн",
       "coordinates": {
         "lat": 39.9324,
         "lng": 116.3755
       },
-      "openingHours": "09:00-16:00 (Closed Monday)",
+      "openingHours": "09:00-16:00 (Закрыто в понедельник)",
       "ticketPrice": "10¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1 час",
       "highlights": [
-        "Peking Opera costumes",
-        "Historic photographs",
-        "Traditional courtyard",
-        "Personal memorabilia"
+        "Костюмы пекинской оперы",
+        "Исторические фотографии",
+        "Традиционный внутренний двор",
+        "Личные вещи"
       ],
-      "tips": "Small but intimate museum. Best combined with nearby Shichahai and hutong walk.",
+      "tips": "Небольшой, но уютный музей. Лучше всего посетить вместе с близлежащим озером Шичахай и прогулкой по хутунам.",
       "phone": "+86 010  3118 8540"
     }
   ],
@@ -1337,29 +1337,29 @@
     {
       "id": "beijing-1",
       "name": "新荣记",
-      "nameEn": "Xin Rong Ji",
-      "type": "michelin",
+      "nameEn": "Синь Жун Цзи",
+      "type": "мишлен",
       "star": 3,
-      "cuisine": "Zhejiang",
+      "cuisine": "Чжэцзянская кухня",
       "avgPrice": 800,
       "rating": 4.9,
-      "address": "4/F, Building 2, Guanghua Lu, Chaoyang District",
+      "address": "4-й этаж, корпус 2, ул. Гуанхуа, район Чаоян",
       "coordinates": {
         "lat": 39.9175,
         "lng": 116.4567
       },
       "phone": "+86 10 6500 6688",
       "hours": "11:30-14:30, 17:30-22:00",
-      "description": "Three Michelin-starred restaurant specializing in Zhejiang cuisine with exceptional seafood dishes.",
+      "description": "Ресторан с тремя звездами Мишлен, специализирующийся на чжэцзянской кухне с изысканными блюдами из морепродуктов.",
       "dishHighlights": [
-        "Braised prawn withXO sauce",
-        "Steamed crab with aged Shaoxing wine",
-        "Squirrel-shaped Mandarin fish"
+        "Тушеные креветки с соусом XO",
+        "Краб на пару с выдержанным шаосинским вином",
+        "Рыба мандарин в форме белки"
       ],
       "tags": [
-        "fine-dining",
-        "seafood",
-        "business-dining"
+        "изысканная кухня",
+        "морепродукты",
+        "деловой ужин"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ba51b459e8e6.webp",
@@ -1368,29 +1368,29 @@
     {
       "id": "beijing-2",
       "name": "拾久",
-      "nameEn": "Jiu Ji",
-      "type": "michelin",
+      "nameEn": "Цзю Цзи",
+      "type": "мишлен",
       "star": 2,
-      "cuisine": "Contemporary Chinese",
+      "cuisine": "Современная китайская кухня",
       "avgPrice": 600,
       "rating": 4.8,
-      "address": "3rd Floor, 3rd Building, Sanlitun Bar St, Chaoyang District",
+      "address": "3-й этаж, 3-е здание, улица Саньлитунь бар, район Чаоян",
       "coordinates": {
         "lat": 39.9217,
         "lng": 116.4493
       },
       "phone": "+86 10 6469 0888",
       "hours": "11:30-14:00, 17:30-22:00",
-      "description": "Modern Chinese fine dining with creative presentation and traditional flavors.",
+      "description": "Современная китайская изысканная кухня с креативной подачей и традиционными вкусами.",
       "dishHighlights": [
-        "Smoked duck with honey",
-        "Bamboo pith with matsutake",
-        "Steamed egg with caviar"
+        "Копченая утка с медом",
+        "Бамбуковая сердцевина с мацутакэ",
+        "Яйцо на пару с икрой"
       ],
       "tags": [
-        "fine-dining",
-        "creative",
-        "romantic"
+        "изысканная кухня",
+        "креативная",
+        "романтическая"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/61962f8bdf10.webp",
@@ -1399,29 +1399,29 @@
     {
       "id": "beijing-3",
       "name": "ling-long",
-      "nameEn": "Ling Long",
-      "type": "michelin",
+      "nameEn": "Лин Лун",
+      "type": "мишлен",
       "star": 1,
-      "cuisine": "Contemporary Taiwanese",
+      "cuisine": "Современная тайваньская",
       "avgPrice": 1500,
       "rating": 4.9,
-      "address": "1-3/F, Zhao Fang Building, 8 Xinyuanli, Chaoyang District",
+      "address": "1-3-й этаж, здание Чжао Фан, 8 Синьюаньли, район Чаоян",
       "coordinates": {
         "lat": 39.9292,
         "lng": 116.4535
       },
       "phone": "+86 10 8454 0888",
-      "hours": "18:00-23:00 (Closed Sun-Mon)",
-      "description": "One Michelin star Taiwanese cuisine with avant-garde presentation by Chef Jason Wang.",
+      "hours": "18:00-23:00 (Закрыто Вс-Пн)",
+      "description": "Тайваньская кухня с одной звездой Мишлен с авангардной подачей от шеф-повара Джейсона Ванга.",
       "dishHighlights": [
-        "Crystal chicken",
-        "Clam soup with basil",
-        "Fried rice with truffle"
+        "Кристальная курица",
+        "Суп из моллюсков с базиликом",
+        "Жареный рис с трюфелем"
       ],
       "tags": [
-        "fine-dining",
-        "taiwanese",
-        "reservation-required"
+        "изысканная кухня",
+        "тайваньская",
+        "требуется бронирование"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/058d1ece826d.webp",
@@ -1430,29 +1430,29 @@
     {
       "id": "beijing-4",
       "name": "御宝轩",
-      "nameEn": "Imperial Treasure",
-      "type": "blackpearl",
+      "nameEn": "Императорское сокровище",
+      "type": "черная жемчужина",
       "diamond": 3,
-      "cuisine": "Cantonese",
+      "cuisine": "Кантонская",
       "avgPrice": 400,
       "rating": 4.7,
-      "address": "China World Mall, 1 Jianguomenwai Dajie, Chaoyang District",
+      "address": "Торговый центр China World, 1 Цзяньгоуменьвай Дацзе, район Чаоян",
       "coordinates": {
         "lat": 39.9094,
         "lng": 116.4595
       },
       "phone": "+86 10 6505 2888",
       "hours": "11:00-15:00, 17:00-22:00",
-      "description": "Three-diamond Black Pearl Cantonese restaurant with exquisite dim sum and premium seafood.",
+      "description": "Ресторан кантонской кухни Black Pearl с тремя бриллиантами, предлагающий изысканные димсам и морепродукты премиум-класса.",
       "dishHighlights": [
-        "Steamed shrimp dumplings",
-        "Roasted goose",
-        "Braised abalone"
+        "Клецки с креветками на пару",
+        "Жареный гусь",
+        "Тушеный морской ушкан"
       ],
       "tags": [
-        "cantonese",
-        "dim-sum",
-        "business-dining"
+        "кантонская",
+        "дим-сам",
+        "деловой ужин"
       ],
       "star": 0,
       "imageUrl": "/img/ext/2d142cbbae4e.webp",
@@ -1461,26 +1461,26 @@
     {
       "id": "beijing-5",
       "name": "北京厨房",
-      "nameEn": "Beijing Kitchen",
-      "type": "local",
-      "cuisine": "Beijing",
+      "nameEn": "Пекинская Кухня",
+      "type": "местный",
+      "cuisine": "Пекинская",
       "avgPrice": 150,
       "rating": 4.5,
-      "address": "Various locations",
+      "address": "Различные локации",
       "coordinates": {
         "lat": 39.9042,
         "lng": 116.4074
       },
-      "description": "Popular local spot for authentic Beijing cuisine, especially duck.",
+      "description": "Популярное место для аутентичной пекинской кухни, особенно утка.",
       "dishHighlights": [
-        "Peking duck",
-        "Fried bean curd",
-        "Lamb hot pot"
+        "Пекинская утка",
+        "Жареный тофу",
+        "Бараний горшок"
       ],
       "tags": [
-        "local",
-        "beijing-cuisine",
-        "casual"
+        "местная",
+        "пекинская-кухня",
+        "казуальная"
       ],
       "star": 0,
       "diamond": 0,
@@ -1492,28 +1492,28 @@
     {
       "id": "beijing-6",
       "name": "全聚德",
-      "nameEn": "Quan Ju De",
-      "type": "local",
-      "cuisine": "Peking Duck",
+      "nameEn": "Цюань Цзюй Дэ",
+      "type": "местный",
+      "cuisine": "Пекинская утка",
       "avgPrice": 200,
       "rating": 4.4,
-      "address": "14 Qianmen St, Xicheng District",
+      "address": "14 улица Цяньмэнь, район Сичэн",
       "coordinates": {
         "lat": 39.9016,
         "lng": 116.3996
       },
       "phone": "+86 10 6511 2418",
       "hours": "10:30-14:00, 17:00-21:30",
-      "description": "Legendary Peking duck restaurant established in 1864. The definitive Beijing duck experience.",
+      "description": "Легендарный ресторан пекинской утки, основанный в 1864 году. Лучший опыт пекинской утки.",
       "dishHighlights": [
-        "Whole Peking duck carved tableside",
-        "Crispy skin with sugar",
-        "Duck soup"
+        "Целая пекинская утка, нарезанная у стола",
+        "Хрустящая кожа с сахаром",
+        "Утиный суп"
       ],
       "tags": [
-        "historic",
-        "peking-duck",
-        "traditional"
+        "исторический",
+        "пекинская-утка",
+        "традиционный"
       ],
       "star": 0,
       "diamond": 0,
@@ -1523,29 +1523,29 @@
     {
       "id": "beijing-7",
       "name": "便宜坊",
-      "nameEn": "Bianyifang",
-      "type": "blackpearl",
+      "nameEn": "Бяньифан",
+      "type": "черная жемчужина",
       "diamond": 1,
-      "cuisine": "Beijing",
+      "cuisine": "Пекинская кухня",
       "avgPrice": 180,
       "rating": 4.6,
-      "address": "18 Qianmen St, Xicheng District",
+      "address": "18 улица Цяньмэнь, район Сичэн",
       "coordinates": {
         "lat": 39.9012,
         "lng": 116.3992
       },
       "phone": "+86 10 6702 5508",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Oldest Peking duck restaurant (established 1855) with traditional hang-roasting method.",
+      "description": "Старейший ресторан утка по-пекински (основан в 1855 году) с традиционным методом подвесного жарения.",
       "dishHighlights": [
-        "Hang-roasted duck",
-        "Sweet bean sauce",
-        "Traditional accompaniments"
+        "Утка подвесного жарения",
+        "Сладкий соевый соус",
+        "Традиционные гарниры"
       ],
       "tags": [
-        "historic",
-        "peking-duck",
-        "black-pearl"
+        "историческая",
+        "пекинская-утка",
+        "черная-жемчужина"
       ],
       "star": 0,
       "imageUrl": "/img/ext/f9d674d0dcaa.webp",
@@ -1554,19 +1554,19 @@
     {
       "id": "beijing-8",
       "name": "局气",
-      "nameEn": "Ju Qi",
-      "type": "local",
-      "cuisine": "Beijing",
+      "nameEn": "Цзюй Ци",
+      "type": "местный",
+      "cuisine": "Пекинская кухня",
       "avgPrice": 120,
       "rating": 4.5,
-      "address": "Various locations including Wangfujing",
+      "address": "Различные локации, включая Ванфуцзин",
       "coordinates": {
         "lat": 39.9122,
         "lng": 116.4126
       },
-      "description": "Popular chain serving authentic Beijing home-style dishes in traditional atmosphere.",
+      "description": "Популярная сеть ресторанов с аутентичными домашними блюдами Пекина в традиционной атмосфере.",
       "dishHighlights": [
-        "Fried sauce noodles",
+        "Лапша с жареным соусом",
         "Пирожок из зеленого горошка",
         "Ургу мянь"
       ],
@@ -1587,7 +1587,7 @@
       "id": "beijing-9",
       "name": "花家怡园",
       "nameEn": "Хуа Цзя И Юань",
-      "type": "local",
+      "type": "местный",
       "cuisine": "Пекинская",
       "avgPrice": 100,
       "rating": 4.4,
@@ -1605,8 +1605,8 @@
       ],
       "tags": [
         "местная",
-        "historic",
-        "courtyard-dining"
+        "исторический",
+        "дворовая трапеза"
       ],
       "star": 0,
       "diamond": 0,
@@ -1617,28 +1617,28 @@
     {
       "id": "beijing-10",
       "name": "利群烤鸭",
-      "nameEn": "Li Qun Roast Duck",
-      "type": "local",
-      "cuisine": "Peking Duck",
+      "nameEn": "Ли Цюнь Утка по-пекински",
+      "type": "местный",
+      "cuisine": "Пекинская утка",
       "avgPrice": 150,
       "rating": 4.7,
-      "address": "11 Qianmen St, Xicheng District",
+      "address": "ул. Цяньмэнь, 11, район Сичэн",
       "coordinates": {
         "lat": 39.9008,
         "lng": 116.3978
       },
       "phone": "+86 10 6303 0623",
-      "description": "Famous hole-in-the-wall Peking duck restaurant favored by celebrities, no-frills authentic experience.",
+      "description": "Знаменитый ресторан пекинской утки в виде закусочной, любимый знаменитостями, аутентичный опыт без излишеств.",
       "dishHighlights": [
-        "Wood-roasted duck",
-        "Handmade pancakes",
-        "Authentic sauce"
+        "Утка, запеченная на дровах",
+        "Домашние блины",
+        "Традиционный соус"
       ],
       "tags": [
-        "local",
-        "peking-duck",
-        "famous",
-        "no-reservation"
+        "местный",
+        "пекинская-утка",
+        "знаменитый",
+        "без-брони"
       ],
       "star": 0,
       "diamond": 0,
@@ -1649,8 +1649,8 @@
     {
       "id": "beijing-11",
       "name": "大董",
-      "nameEn": "Da Dong",
-      "type": "michelin",
+      "nameEn": "Да Дун",
+      "type": "мишлен",
       "star": 1,
       "cuisine": "Современная пекинская / кантонская кухня",
       "avgPrice": 400,
@@ -1680,8 +1680,8 @@
     {
       "id": "beijing-12",
       "name": "聚宝源",
-      "nameEn": "Ju Bao Yuan",
-      "type": "local",
+      "nameEn": "Цзю Бао Юань",
+      "type": "местный",
       "cuisine": "Пекинский хотпот",
       "avgPrice": 120,
       "rating": 4.6,
@@ -1694,16 +1694,16 @@
       "hours": "10:30-14:00, 17:00-22:00",
       "description": "Известный ресторан мусульманского стиля, специализирующийся на ручной нарезке баранины и традиционном медном хотпоте.",
       "dishHighlights": [
-        "Hand-cut Lamb Slices",
-        "Beef Tripe",
-        "Seasonal Vegetables",
-        "Signature Sesame Sauce"
+        "Рубленые ломтики баранины",
+        "Говяжий рубец",
+        "Сезонные овощи",
+        "Фирменный кунжутный соус"
       ],
       "tags": [
-        "local",
-        "hotpot",
-        "historic",
-        "queue-usually"
+        "местный",
+        "горшок",
+        "исторический",
+        "обычно-очередь"
       ],
       "star": 0,
       "diamond": 0,
@@ -1713,31 +1713,31 @@
     {
       "id": "beijing-13",
       "name": "东来顺",
-      "nameEn": "Dong Lai Shun",
-      "type": "blackpearl",
+      "nameEn": "Дун Лай Шунь",
+      "type": "черная жемчужина",
       "diamond": 2,
-      "cuisine": "Hotpot",
+      "cuisine": "Горшок",
       "avgPrice": 200,
       "rating": 4.5,
-      "address": "193 Wangfujing St, Dongcheng District",
+      "address": "193 ул. Ванфуцзин, район Дунчэн",
       "coordinates": {
         "lat": 39.9122,
         "lng": 116.4112
       },
       "phone": "+86 10 6513 9661",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "Legendary hotpot chain established in 1903, known for premium lamb and traditional铜锅涮肉.",
+      "description": "Легендарная сеть ресторанов с горшком, основанная в 1903 году, известная премиальной бараниной и традиционной медной кастрюлей для жаркого.",
       "dishHighlights": [
-        "Premium Lamb Slices",
-        "Beef Tenderloin",
-        "Handmade Meatballs",
-        "Traditional Broth"
+        "Ломтики премиальной баранины",
+        "Говяжья вырезка",
+        "Фрикадельки ручной работы",
+        "Традиционный бульон"
       ],
       "tags": [
-        "historic",
-        "hotpot",
-        "black-pearl",
-        "business-dining"
+        "исторический",
+        "горшок",
+        "черная-жемчужина",
+        "деловая трапеза"
       ],
       "star": 0,
       "imageUrl": "/img/ext/1beaa4ec0924.webp",
@@ -1746,30 +1746,30 @@
     {
       "id": "beijing-14",
       "name": "旺顺阁鱼头泡饼",
-      "nameEn": "Wang Shun Ge",
-      "type": "local",
-      "cuisine": "Beijing",
+      "nameEn": "Ван Шунь Гэ",
+      "type": "местный",
+      "cuisine": "Пекинская кухня",
       "avgPrice": 180,
       "rating": 4.7,
-      "address": "18 Yuyuan Rd, Xicheng District",
+      "address": "ул. Юйюань, 18, район Сичэн",
       "coordinates": {
         "lat": 39.9022,
         "lng": 116.3952
       },
       "phone": "+86 10 8352 0888",
       "hours": "10:30-14:00, 17:00-21:30",
-      "description": "Famous for fish head stew with crispy flatbread. A must-try for authentic Beijing flavor.",
+      "description": "Знаменит тушеной рыбьей головой с хрустящими лепешками. Обязательно попробуйте аутентичный пекинский вкус.",
       "dishHighlights": [
-        "Fish Head with Tofu",
-        "Crispy Flatbread",
-        "Slow-cooked broth",
-        "Seasonal Fish Dishes"
+        "Рыба с тофу",
+        "Хрустящая лепёшка",
+        "Томлёный бульон",
+        "Рыбные блюда сезона"
       ],
       "tags": [
-        "local",
-        "famous",
-        "fish",
-        "family-friendly"
+        "местная",
+        "известная",
+        "рыба",
+        "семейная"
       ],
       "star": 0,
       "diamond": 0,
@@ -1779,30 +1779,30 @@
     {
       "id": "beijing-15",
       "name": "那家小馆",
-      "nameEn": "Na Jia Xiao Guan",
-      "type": "local",
-      "cuisine": "Imperial",
+      "nameEn": "На Цзя Сяо Гуань",
+      "type": "местный",
+      "cuisine": "Императорская",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "6 Gongti North Rd, Chaoyang District",
+      "address": "6 Gongti North Rd, район Чаоян",
       "coordinates": {
         "lat": 39.9352,
         "lng": 116.4492
       },
       "phone": "+86 10 6417 6688",
       "hours": "11:00-14:00, 17:00-22:00",
-      "description": "Popular restaurant servingManchu and Han imperial cuisine in a traditional courtyard setting.",
+      "description": "Популярный ресторан, подающий маньчжурскую и ханьскую императорскую кухню в традиционной обстановке двора.",
       "dishHighlights": [
-        "Braised Pork in Brown Sauce",
-        "Fried Lamb Chops",
-        "Pea Puree",
-        "Eight Treasures Tea"
+        "Свинина в тёмном соусе",
+        "Жареные бараньи отбивные",
+        "Гороховое пюре",
+        "Чай Восьми Сокровищ"
       ],
       "tags": [
-        "local",
-        "imperial-cuisine",
-        "courtyard",
-        "historic"
+        "местная",
+        "имперская кухня",
+        "двор",
+        "историческая"
       ],
       "star": 0,
       "diamond": 0,
@@ -1812,30 +1812,30 @@
     {
       "id": "beijing-16",
       "name": "四季民福",
-      "nameEn": "Si Ji Min Fu",
-      "type": "local",
-      "cuisine": "Beijing",
+      "nameEn": "Сы Цзи Минь Фу",
+      "type": "местный",
+      "cuisine": "Пекинская",
       "avgPrice": 130,
       "rating": 4.7,
-      "address": "11 Qianmen St, Xicheng District",
+      "address": "ул. Цяньмэнь, 11, район Сичэн",
       "coordinates": {
         "lat": 39.9012,
         "lng": 116.3992
       },
       "phone": "+86 10 6302 6226",
       "hours": "09:30-14:00, 16:30-21:30",
-      "description": "Modern interpretation of classic Beijing cuisine with elegant atmosphere and great views of Qianmen.",
+      "description": "Современная интерпретация классической пекинской кухни с элегантной атмосферой и прекрасным видом на Цяньмэнь",
       "dishHighlights": [
-        "Peking Duck",
-        "Fried Bean Curd",
-        "Braised Pork Belly",
-        "Bubble Lamp Dessert"
+        "Утка по-пекински",
+        "Жареный тофу",
+        "Тушеная свиная грудинка",
+        "Десерт Bubble Lamp"
       ],
       "tags": [
-        "local",
-        "peking-duck",
-        "modern",
-        "view"
+        "местная",
+        "пекинская-утка",
+        "современная",
+        "с-видом"
       ],
       "star": 0,
       "diamond": 0,
@@ -1845,30 +1845,30 @@
     {
       "id": "beijing-17",
       "name": "南门涮肉",
-      "nameEn": "Nan Men Shuan Rou",
-      "type": "local",
-      "cuisine": "Hotpot",
+      "nameEn": "Нань Мэнь Шуань Жоу",
+      "type": "местный",
+      "cuisine": "Хот-пот",
       "avgPrice": 120,
       "rating": 4.5,
-      "address": "6 Yonghegong St, Dongcheng District",
+      "address": "ул. Юнхэгун, 6, район Дунчэн",
       "coordinates": {
         "lat": 39.9482,
         "lng": 116.4192
       },
       "phone": "+86 10 8413 1888",
       "hours": "10:30-22:00",
-      "description": "Popular hotpot spot near Yonghe Temple, known for fresh lamb and traditional recipe.",
+      "description": "Популярное место для хот-пота рядом с Храмом Юнхэ, известное свежей бараниной и традиционным рецептом.",
       "dishHighlights": [
-        "Thin Lamb Slices",
-        "Beef Shank",
-        "Seasonal Vegetables",
-        "Sesame Paste"
+        "Тонкие ломтики баранины",
+        "Говяжья голяшка",
+        "Сезонные овощи",
+        "Кунжутная паста"
       ],
       "tags": [
-        "local",
-        "hotpot",
-        "casual",
-        "value"
+        "местная",
+        "хот-пот",
+        "неформальная",
+        "цена-качество"
       ],
       "star": 0,
       "diamond": 0,
@@ -1878,31 +1878,31 @@
     {
       "id": "beijing-18",
       "name": "丰泽园",
-      "nameEn": "Feng Ze Yuan",
-      "type": "blackpearl",
+      "nameEn": "Фэн Цзэ Юань",
+      "type": "черная жемчужина",
       "diamond": 2,
-      "cuisine": "Shandong",
+      "cuisine": "Шаньдунская кухня",
       "avgPrice": 200,
       "rating": 4.6,
-      "address": "88 Fangqian Lane, Xicheng District",
+      "address": "88 Переулок Фанцянь, район Сичэн",
       "coordinates": {
         "lat": 39.9222,
         "lng": 116.3852
       },
       "phone": "+86 10 6318 1515",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "Legendary Shandong cuisine restaurant established in 1930, known for excellent seafood and traditional dishes.",
+      "description": "Легендарный ресторан шаньдунской кухни, основанный в 1930 году, известный отличными морепродуктами и традиционными блюдами.",
       "dishHighlights": [
-        "Braised Abalone",
-        "Sweet and Sour Carp",
-        "Scallion Lobster",
-        "Shandong Noodles"
+        "Тушеная абалона",
+        "Сладкая и кислая карп",
+        "Лобстер с зеленым луком",
+        "Лапша Шаньдун"
       ],
       "tags": [
-        "historic",
-        "shandong",
-        "seafood",
-        "black-pearl"
+        "историческая",
+        "шаньдун",
+        "морепродукты",
+        "черная-жемчужина"
       ],
       "star": 0,
       "imageUrl": "/img/ext/45fcc7a963a5.webp",
@@ -1911,31 +1911,31 @@
     {
       "id": "beijing-19",
       "name": "淮扬府",
-      "nameEn": "Huai Yang Fu",
-      "type": "michelin",
+      "nameEn": "Хуаян Фу",
+      "type": "мишлен",
       "star": 1,
-      "cuisine": "Huaiyang",
+      "cuisine": "Хуайская кухня",
       "avgPrice": 350,
       "rating": 4.7,
-      "address": "2/F, Henderson Center, 18 Jianguomenwai Dajie, Chaoyang",
+      "address": "2/F, Хендерсон Центр, 18 Цзяньгомэньвай Дацзе, район Чаоян",
       "coordinates": {
         "lat": 39.9082,
         "lng": 116.4582
       },
       "phone": "+86 10 6568 8882",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "Michelin-starred Huaiyang cuisine offering refined dishes from the Yangtze River Delta region.",
+      "description": "Ресторан кухни Хуайян с звездой Мишлен, предлагающий изысканные блюда из дельты реки Янцзы.",
       "dishHighlights": [
-        "Steamed Sturgeon",
-        "Braised Pork Belly",
-        "Crystal Shrimp",
-        "Soup Dumplings"
+        "Запутанный осётр",
+        "Тушёная свиная грудинка",
+        "Кристальные креветки",
+        "Суповые пельмени"
       ],
       "tags": [
-        "fine-dining",
-        "huaiyang",
-        "elegant",
-        "business-dining"
+        "изысканная кухня",
+        "хуайская кухня",
+        "элегантный",
+        "деловой ужин"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/fd6785f9fa76.webp",
@@ -1944,31 +1944,31 @@
     {
       "id": "beijing-20",
       "name": "1949-全鸭季",
-      "nameEn": "1949 - Golden Goose",
-      "type": "michelin",
+      "nameEn": "1949 - Золотой гусь",
+      "type": "мишлен",
       "star": 1,
-      "cuisine": "Modern Chinese",
+      "cuisine": "Современная китайская кухня",
       "avgPrice": 500,
       "rating": 4.8,
-      "address": "1/F, 1949 Park, 23 Qianmen East St, Dongcheng",
+      "address": "1-й этаж, Парк 1949, 23 Восточная улица Цяньмэнь, район Дунчэн",
       "coordinates": {
         "lat": 39.9032,
         "lng": 116.4082
       },
       "phone": "+86 10 6526 8882",
       "hours": "11:30-14:30, 17:30-22:00",
-      "description": "Upscale modern Chinese restaurant in a converted factory, famous for innovative Peking duck preparations.",
+      "description": "Элитный современный китайский ресторан в переоборудованном заводе, известный инновационными блюдами из пекинской утки.",
       "dishHighlights": [
-        "Smoked Duck",
-        "Truffle Roast Duck",
-        "Chef's Tasting Menu",
-        "Artisan Cocktails"
+        "Копченая утка",
+        "Трюфельная жареная утка",
+        "Меню дегустации шеф-повара",
+        "Коктейли от мастера"
       ],
       "tags": [
-        "fine-dining",
-        "modern-chinese",
-        "trendy",
-        "romantic"
+        "изысканная кухня",
+        "современная китайская кухня",
+        "модный",
+        "романтическая"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/e6bd4f3a011b.webp",
@@ -1977,30 +1977,30 @@
     {
       "id": "beijing-21",
       "name": "老吉堂",
-      "nameEn": "Lao Ji Tang",
-      "type": "local",
-      "cuisine": "Shanghai",
+      "nameEn": "Лао Цзи Тан",
+      "type": "местный",
+      "cuisine": "Шанхайская",
       "avgPrice": 140,
       "rating": 4.5,
-      "address": "16 Gongti North Rd, Chaoyang District",
+      "address": "16 Северная дорога Гунти, район Чаоян",
       "coordinates": {
         "lat": 39.9352,
         "lng": 116.4482
       },
       "phone": "+86 10 6417 8882",
       "hours": "11:00-14:00, 17:00-22:00",
-      "description": "Popular Shanghai cuisine restaurant known for comfort food and excellent xiaolongbao.",
+      "description": "Популярный ресторан шанхайской кухни, известный домашней едой и отличными сяолунбао.",
       "dishHighlights": [
-        "Soup Dumplings",
-        "Shanghai Braised Pork",
-        "Fried Pork Lunch",
-        "Hairyi Fish"
+        "Суповые пельмени",
+        "Тушеная свинина по-шанхайски",
+        "Жареная свинина на обед",
+        "Рыба Хаии"
       ],
       "tags": [
-        "local",
-        "shanghai",
-        "casual",
-        "family-friendly"
+        "местная кухня",
+        "шанхай",
+        "неформальная",
+        "для семьи"
       ],
       "star": 0,
       "diamond": 0,
@@ -2010,31 +2010,31 @@
     {
       "id": "beijing-22",
       "name": "松鹤楼",
-      "nameEn": "Song He Lou",
-      "type": "blackpearl",
+      "nameEn": "Сун Хэ Лоу",
+      "type": "черная жемчужина",
       "diamond": 2,
-      "cuisine": "Suzhou",
+      "cuisine": "Сучжоу",
       "avgPrice": 250,
       "rating": 4.6,
-      "address": "8/F, China World Mall, Chaoyang District",
+      "address": "8-й этаж, Торговый центр China World, район Чаоян",
       "coordinates": {
         "lat": 39.9094,
         "lng": 116.4595
       },
       "phone": "+86 10 6505 2838",
       "hours": "11:00-15:00, 17:00-21:30",
-      "description": "Legendary Suzhou cuisine restaurant established in 1737, known for exquisite desserts and classical dishes.",
+      "description": "Легендарный ресторан сучжоуской кухни, основанный в 1737 году, известный изысканными десертами и классическими блюдами.",
       "dishHighlights": [
-        "Suzhou-style Crab",
-        "Crystal Shrimp",
-        "Sweet and Sour Mandarin Fish",
-        "Mouse-shaped Buns"
+        "Краб по-сучжоуски",
+        "Кристальные креветки",
+        "Сладкая и кислая мандариновая рыба",
+        "Булочки в форме мыши"
       ],
       "tags": [
-        "historic",
-        "suzhou",
-        "elegant",
-        "black-pearl"
+        "историческая",
+        "сучжоу",
+        "элегантная",
+        "черная-жемчужина"
       ],
       "star": 0,
       "imageUrl": "/img/ext/ff18a6604cd0.webp",
@@ -2043,31 +2043,31 @@
     {
       "id": "beijing-23",
       "name": "利苑酒家",
-      "nameEn": "Lei Garden",
-      "type": "michelin",
+      "nameEn": "Леи Гарден",
+      "type": "мишлен",
       "star": 1,
-      "cuisine": "Cantonese",
+      "cuisine": "Кантонская кухня",
       "avgPrice": 400,
       "rating": 4.7,
-      "address": "3/F, Beijing Ap Hotel, 1 Jiukeshu Ave, Chaoyang",
+      "address": "3-й этаж, Отель Beijing Ap, 1 проспект Цзюкэшу, район Чаоян",
       "coordinates": {
         "lat": 39.9222,
         "lng": 116.4692
       },
       "phone": "+86 10 6581 8383",
       "hours": "11:00-15:00, 17:30-22:00",
-      "description": "Michelin-starred Cantonese restaurant known for premium dim sum and refined seafood dishes.",
+      "description": "Мишленовский ресторан кантонской кухни, известный своими премиальными димсамами и изысканными морепродуктами.",
       "dishHighlights": [
-        "Steamed Shrimp Dumplings",
-        "Roasted Suckling Pig",
-        "Braised Bird's Nest",
-        "Egg Tarts"
+        "Паровые креветочные пельмени",
+        "Запеченный молочный поросенок",
+        "Тушеное гнездо ласточки",
+        "Яичные тарты"
       ],
       "tags": [
-        "fine-dining",
-        "cantonese",
-        "dim-sum",
-        "business-dining"
+        "изысканная кухня",
+        "кантонская-кухня",
+        "дим-сам",
+        "деловой ужин"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/1ee9b52d9b25.webp",
@@ -2076,30 +2076,30 @@
     {
       "id": "beijing-24",
       "name": "京季",
-      "nameEn": "Jing Ji",
-      "type": "michelin",
+      "nameEn": "Цзин Цзи",
+      "type": "мишлен",
       "star": 2,
-      "cuisine": "Modern Chinese",
+      "cuisine": "Современная китайская кухня",
       "avgPrice": 800,
       "rating": 4.8,
-      "address": "2/F, Parkview Green, 20 Fangyuan East Rd, Chaoyang",
+      "address": "2-й этаж, Parkview Green, 20 Fangyuan East Rd, Чаоян",
       "coordinates": {
         "lat": 39.9422,
         "lng": 116.4682
       },
       "phone": "+86 10 6502 8801",
       "hours": "11:30-14:30, 18:00-22:00",
-      "description": "Two Michelin starred restaurant by Chef Wang Xing offering innovative Shandong cuisine.",
+      "description": "Ресторан с двумя звездами Мишлен от шеф-повара Ван Сина, предлагающий инновационную шаньдунскую кухню.",
       "dishHighlights": [
-        "Braised sea cucumber",
-        "Fried sweet and sour ribs",
-        "Crystal shrimp dumplings"
+        "Тушеный трепанг",
+        "Жареные кисло-сладкие ребрышки",
+        "Стеклянные пельмени с креветками"
       ],
       "tags": [
-        "fine-dining",
-        "shandong",
-        "innovative",
-        "romantic"
+        "изысканная кухня",
+        "шаньдун",
+        "инновационный",
+        "романтическая"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/c64a392499d2.webp",
@@ -2108,29 +2108,29 @@
     {
       "id": "beijing-25",
       "name": "拾城一味",
-      "nameEn": "Shi Cheng Yi Wei",
-      "type": "local",
-      "cuisine": "Beijing",
+      "nameEn": "Ши Чэн И Вэй",
+      "type": "местный",
+      "cuisine": "Пекинская",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "28 Sanlitun Rd, Chaoyang District",
+      "address": "28 Sanlitun Rd, район Чаоян",
       "coordinates": {
         "lat": 39.9342,
         "lng": 116.4462
       },
       "phone": "+86 10 6417 8811",
       "hours": "11:00-22:00",
-      "description": "Popular local spot for authentic Beijing home-style dishes with modern decor.",
+      "description": "Популярное местное заведение с аутентичными пекинскими домашними блюдами и современным интерьером.",
       "dishHighlights": [
-        "Fried sauce noodles",
-        "Pea green cake",
-        "Bubble lamp dessert"
+        "Лапша с жареным соусом",
+        "Пирожок из зеленого горошка",
+        "Десерт 'Лампа с пузырями'"
       ],
       "tags": [
-        "local",
-        "beijing-cuisine",
-        "casual",
-        "modern"
+        "местная кухня",
+        "пекинская кухня",
+        "неформальная",
+        "современная"
       ],
       "star": 0,
       "diamond": 0,
@@ -2140,30 +2140,30 @@
     {
       "id": "beijing-26",
       "name": "都式烧麦馆",
-      "nameEn": "Du Shi Shaomai Guan",
-      "type": "local",
-      "cuisine": "Beijing",
+      "nameEn": "Ду Ши Шаомай Гуань",
+      "type": "местный",
+      "cuisine": "Пекинская",
       "avgPrice": 50,
       "rating": 4.6,
-      "address": "58 Xinjiekou Dajie, Xicheng District",
+      "address": "58 Xinjiekou Dajie, район Сичэн",
       "coordinates": {
         "lat": 39.9382,
         "lng": 116.3782
       },
       "phone": "+86 10 6616 8831",
       "hours": "06:30-14:00, 17:00-20:00",
-      "description": "Legendary spot for Beijing-style shaomai (steamed dumplings) since 1920s.",
+      "description": "Легендарное место для пекинских шаомай (паровые пельмени) с 1920-х годов.",
       "dishHighlights": [
-        "Pork shaomai",
-        "Vegetarian shaomai",
-        "Soy milk"
+        "Свиные шаомай",
+        "Вегетарианские шаомай",
+        "Соевое молоко"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "historic",
-        "must-try",
-        "budget"
+        "местная кухня",
+        "завтрак",
+        "историческая",
+        "обязательно попробуйте",
+        "бюджетный"
       ],
       "star": 0,
       "diamond": 0,
@@ -2173,29 +2173,29 @@
     {
       "id": "beijing-27",
       "name": "宫宴",
-      "nameEn": "Gong Yan",
-      "type": "local",
-      "cuisine": "Imperial",
+      "nameEn": "Гун Ян",
+      "type": "местный",
+      "cuisine": "Императорская",
       "avgPrice": 350,
       "rating": 4.7,
-      "address": "1/F, Nanhuachi, 1 Nanluoguxiang, Dongcheng",
+      "address": "1-й этаж, Nanhuachi, 1 Nanluoguxiang, район Дунчэн",
       "coordinates": {
         "lat": 39.9372,
         "lng": 116.4042
       },
       "phone": "+86 10 6405 8832",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Upscale restaurant offering imperial court cuisine with traditional music performances.",
+      "description": "Роскошный ресторан, предлагающий императорскую кухню с традиционными музыкальными представлениями.",
       "dishHighlights": [
-        "Imperial feast",
-        "Manchu-Han banquet",
-        "Traditional pastries"
+        "Императорский пир",
+        "Маньчжуро-ханьский банкет",
+        "Традиционные пирожные"
       ],
       "tags": [
-        "imperial",
-        "cultural",
-        "performance",
-        "romantic"
+        "императорский",
+        "культурная",
+        "представление",
+        "романтическая"
       ],
       "star": 0,
       "diamond": 0,
@@ -2205,27 +2205,27 @@
     {
       "id": "beijing-cheap-1",
       "name": "方砖厂69号炸酱面",
-      "nameEn": "Fangzhuanchang No.69 Zhajiang Noodles",
-      "type": "local",
-      "cuisine": "Beijing Noodles",
+      "nameEn": "Фанчжуанкан №69 Чжаньцзянмянь",
+      "type": "местный",
+      "cuisine": "Пекинские лапша",
       "avgPrice": 18,
       "rating": 4.6,
-      "address": "Dongcheng District, Nanluoguxiang No.1",
+      "address": "Район Дунчэн, Nanluoguxiang No.1",
       "coordinates": {
         "lat": 39.937,
         "lng": 116.403
       },
       "hours": "09:30-22:00",
-      "description": "Famous zhajiang noodles chain, Michelin-recommended for 6 consecutive years. Free extra noodles and sauce. A true Beijing staple at an unbeatable price.",
+      "description": "Известная сеть заведений с жацзян-лапшой, рекомендованная Мишленом в течение 6 лет подряд. Бесплатная дополнительная лапша и соус. Настоящая пекинская классика по непревзойденной цене.",
       "dishHighlights": [
-        "Zhajiang Noodles",
-        "Laoba Garlic",
-        "Beijing Braised Tripe"
+        "Жацзян-лапша",
+        "Чеснок Лаоба",
+        "Пекинское тушеное рубцовое мясо"
       ],
       "tags": [
-        "street",
-        "michelin-recommended",
-        "noodles"
+        "уличная еда",
+        "рекомендованный-Мишлен",
+        "лапша"
       ],
       "imageUrl": "/img/ext/4f471abcbf01.webp",
       "phone": "+86 10 6404 1234",
@@ -2234,28 +2234,28 @@
     {
       "id": "beijing-cheap-2",
       "name": "护国寺小吃",
-      "nameEn": "Huguosi Snacks",
-      "type": "local",
-      "cuisine": "Beijing Traditional Snacks",
+      "nameEn": "Хугоси Снекс",
+      "type": "местный",
+      "cuisine": "Традиционные закуски Пекина",
       "avgPrice": 12,
       "rating": 4.3,
-      "address": "Xicheng District, Huguosi Street",
+      "address": "Район Сичэн, улица Хугоси",
       "coordinates": {
         "lat": 39.9375,
         "lng": 116.375
       },
       "hours": "06:00-21:00",
-      "description": "Iconic Beijing snack shop with over 60 years of history. Try douzhir (fermented mung bean drink), jiaoquan (fried dough rings), and wandouhuang (sweet pea cake).",
+      "description": "Легендарная пекинская закусочная с более чем 60-летней историей. Попробуйте доужжи (ферментированный напиток из зеленого гороха), цзяоцюань (жареные кольца из теста) и ваньдоухуан (сладкий пирог из зеленого гороха).",
       "dishHighlights": [
-        "Douzhir",
-        "Jiaoquan (Fried Dough Rings)",
-        "Wandouhuang",
-        "Lvdagun (Donkey Rolling)"
+        "Доужжи",
+        "Цзяоцюань (жареные кольца из теста)",
+        "Ваньдоухуан",
+        "Люйдагунь (ослик, катающийся по земле)"
       ],
       "tags": [
-        "street",
-        "traditional",
-        "breakfast"
+        "уличная еда",
+        "традиционная",
+        "завтрак"
       ],
       "imageUrl": "/img/ext/b2464bf4cb87.webp",
       "phone": "+86 10 6618 1805",
@@ -2264,27 +2264,27 @@
     {
       "id": "beijing-cheap-3",
       "name": "姚记炒肝",
-      "nameEn": "Yaoji Fried Liver",
-      "type": "local",
-      "cuisine": "Beijing Traditional",
+      "nameEn": "Яоцзи Жареная Печень",
+      "type": "местный",
+      "cuisine": "Традиционная пекинская кухня",
       "avgPrice": 15,
       "rating": 4.4,
-      "address": "Dongcheng District, Dongsi Bei Dajie",
+      "address": "Район Дунчэн, улица Дунсы Бэй Дацзе",
       "coordinates": {
         "lat": 39.929,
         "lng": 116.415
       },
       "hours": "06:00-14:00",
-      "description": "The most famous chaogan (fried liver) in Beijing. Thick, savory pork liver soup with garlic, served with baozi. A must-try breakfast for adventurous eaters.",
+      "description": "Самый известный чаогань (жареная печень) в Пекине. Густой, насыщенный суп из свиной печени с чесноком, подается с баоцзы. Обязательно к попробованию для любителей острых ощущений.",
       "dishHighlights": [
-        "Chaogan (Fried Liver)",
-        "Pork Baozi",
-        "Luzhu Huihuo (Stewed Offal)"
+        "Чаогань (жареная печень)",
+        "Свиные баоцзы",
+        "Люйчжу Хуэйхо (тушеные потроха)"
       ],
       "tags": [
-        "street",
-        "breakfast",
-        "traditional"
+        "уличная еда",
+        "завтрак",
+        "традиционная"
       ],
       "imageUrl": "/img/ext/d9dc2bf7f02b.webp",
       "phone": "+86 010  7960 8485",
@@ -2293,28 +2293,28 @@
     {
       "id": "beijing-cheap-4",
       "name": "老磁器口豆汁店",
-      "nameEn": "Lao Ciqikou Douzhi Shop",
-      "type": "local",
-      "cuisine": "Beijing Breakfast",
+      "nameEn": "Лао Цицикоу Дужжи",
+      "type": "местный",
+      "cuisine": "Пекинский завтрак",
       "avgPrice": 10,
       "rating": 4.2,
-      "address": "Dongcheng District, Ciqikou",
+      "address": "Район Дунчэн, Сицикоу",
       "coordinates": {
         "lat": 39.902,
         "lng": 116.413
       },
       "hours": "05:30-12:00",
-      "description": "Legendary breakfast spot for authentic Beijing douzhi (fermented mung bean drink). Not for the faint-hearted, but locals swear by it. Served with jiaoquan and pickled vegetables.",
+      "description": "Легендарное место для завтрака с подлинным пекинским доужжи (ферментированный напиток из зеленого гороха). Не для слабонервных, но местные жители клянутся им. Подается с цзяоцюанем и маринованными овощами.",
       "dishHighlights": [
-        "Douzhi",
-        "Jiaoquan",
-        "Pickled Vegetables",
-        "Jiaotuan (Fried Twist)"
+        "Доучжи",
+        "Цзяоцюань",
+        "Маринованные овощи",
+        "Цзяотоуань (жареная косичка)"
       ],
       "tags": [
-        "street",
-        "breakfast",
-        "traditional"
+        "уличная еда",
+        "завтрак",
+        "традиционная"
       ],
       "imageUrl": "/img/ext/1d319de5e5d2.webp",
       "phone": "+86 23 6501 0003",
@@ -2323,27 +2323,27 @@
     {
       "id": "beijing-cheap-5",
       "name": "隆福寺小吃店",
-      "nameEn": "Longfusi Snack Shop",
-      "type": "local",
-      "cuisine": "Beijing Snacks",
+      "nameEn": "Лонфуси Снек Шоп",
+      "type": "местный",
+      "cuisine": "Пекинские закуски",
       "avgPrice": 15,
       "rating": 4.3,
-      "address": "Dongcheng District, Longfusi Street",
+      "address": "Район Дунчэн, улица Лунфусы",
       "coordinates": {
         "lat": 39.928,
         "lng": 116.412
       },
       "hours": "06:30-20:00",
-      "description": "Hidden gem serving classic Beijing snacks at rock-bottom prices. Try the tanghuoshao (baked sweet sesame bun) and miancha (millet paste). Cash only.",
+      "description": "Скрытое сокровище, обслуживающее классические пекинские закуски по самым низким ценам. Попробуйте танхошао (печеный сладкий кунжутный рулет) и мяньча (пюре из проса). Только наличные.",
       "dishHighlights": [
-        "Tanghuoshao",
-        "Miancha (Millet Paste)",
-        "Aiwowo (Steamed Rice Cake)"
+        "Танхуошао",
+        "Мяньча (пюре из проса)",
+        "Айвово (паровой рисовый пирог)"
       ],
       "tags": [
-        "street",
-        "traditional",
-        "breakfast"
+        "уличная еда",
+        "традиционная",
+        "завтрак"
       ],
       "imageUrl": "/img/ext/b2464bf4cb87.webp",
       "phone": "+86 010  8474 2287",
@@ -2352,27 +2352,27 @@
     {
       "id": "beijing-cheap-6",
       "name": "南城香",
-      "nameEn": "Nancheng Xiang",
-      "type": "local",
-      "cuisine": "Beijing Fast Food",
+      "nameEn": "Наньчэн Сян",
+      "type": "местный",
+      "cuisine": "Пекинская фастфуд",
       "avgPrice": 14,
       "rating": 4.1,
-      "address": "Multiple locations across Beijing",
+      "address": "Несколько локаций по всему Пекину",
       "coordinates": {
         "lat": 39.895,
         "lng": 116.397
       },
       "hours": "06:00-22:00",
-      "description": "Popular budget chain with 10-yuan meals. Free unlimited xiaomi porridge with any order. Their bazi meat (braised pork) with rice is the ultimate value meal.",
+      "description": "Популярная бюджетная сеть с блюдами по 10 юаней. Бесплатная неограниченная рисовая каша с сяоми с любым заказом. Их блюдо бацзы жоу (тушеное свиное мясо) с рисом — это идеальный обед за небольшие деньги.",
       "dishHighlights": [
-        "Bazi Meat (Braised Pork)",
-        "Rice Set Meal",
-        "Free Xiaomi Porridge"
+        "Мясо Бацзы (тушеная свинина)",
+        "Комплексный обед с рисом",
+        "Бесплатная каша Xiaomi"
       ],
       "tags": [
-        "street",
-        "budget",
-        "fast-food"
+        "уличная еда",
+        "бюджетный",
+        "фастфуд"
       ],
       "imageUrl": "/img/ext/6a59b758f00c.webp",
       "phone": "+86 010  9897 4102",
@@ -2381,28 +2381,28 @@
     {
       "id": "beijing-cheap-7",
       "name": "超意兴",
-      "nameEn": "Chaoyixing",
-      "type": "local",
-      "cuisine": "Shandong Fast Food",
+      "nameEn": "Чао Исин",
+      "type": "местный",
+      "cuisine": "Шаньдунская фастфуд",
       "avgPrice": 14,
       "rating": 4,
-      "address": "Multiple locations in Beijing",
+      "address": "Несколько локаций в Пекине",
       "coordinates": {
         "lat": 39.91,
         "lng": 116.38
       },
       "hours": "06:00-21:00",
-      "description": "Shandong-style budget restaurant chain. Self-serve model with a variety of home-cooked dishes. Full meal with meat for under 20 yuan. Popular with workers.",
+      "description": "Сеть бюджетных ресторанов в стиле Шаньдун. Модель самообслуживания с большим выбором домашних блюд. Полноценный обед с мясом за менее чем 20 юаней. Популярно среди рабочих.",
       "dishHighlights": [
-        "Braised Chicken",
-        "Stir-Fried Vegetables",
-        "Steamed Buns",
-        "Free Porridge"
+        "Тушёная курица",
+        "Жареные овощи",
+        "Паровые булочки",
+        "Бесплатная каша"
       ],
       "tags": [
-        "street",
-        "budget",
-        "fast-food"
+        "уличная еда",
+        "бюджетный",
+        "фастфуд"
       ],
       "imageUrl": "/img/ext/417ec389b1ed.webp",
       "phone": "+86 010  3623 4397",
@@ -2411,8 +2411,8 @@
     {
       "id": "beijing-cheap-8",
       "name": "白魁老号饭庄",
-      "nameEn": "Baikui Old Restaurant",
-      "type": "local",
+      "nameEn": "Старинный ресторан Байкуй",
+      "type": "местный",
       "cuisine": "Пекинская халяльная кухня",
       "avgPrice": 20,
       "rating": 4.4,
@@ -2441,28 +2441,28 @@
     {
       "id": "beijing-36",
       "name": "巷子炸酱面",
-      "nameEn": "Сяньцзы Чжаньцзянмянь (Чжаньцзянмянь)",
-      "type": "cafe",
-      "cuisine": "Чжаньцзянмянь",
+      "nameEn": "巷子炸酱面 (炸酱面)",
+      "type": "кафе",
+      "cuisine": "炸酱面",
       "avgPrice": 42,
       "rating": 4.2,
-      "address": "Улица Мэйши, район Чаоян, Пекин, дом 46",
+      "address": "北京市朝阳区美食街46号",
       "coordinates": {
         "lat": 39.8883,
         "lng": 116.4426
       },
       "phone": "+86 010 82424170",
       "hours": "06:00-14:00",
-      "description": "Ресторан лапши с соусом чили, рекомендованный местными жителями Пекина, аутентичный вкус, доступные цены",
+      "description": "北京本地人推荐的炸酱面店，味道正宗，价格实惠",
       "dishHighlights": [
-        "Жареная печень",
-        "Лапша с соусом чили",
-        "Утка по-пекински"
+        "炒肝",
+        "炸酱面",
+        "烤鸭"
       ],
       "tags": [
-        "Полдник",
-        "Тихий",
-        "Богемный"
+        "下午茶",
+        "安静",
+        "文艺"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/4d37d82561b1.webp",
@@ -2471,28 +2471,28 @@
     {
       "id": "beijing-38",
       "name": "地道豆汁",
-      "nameEn": "Аутентичный дудзу (Дудзу)",
-      "type": "local",
-      "cuisine": "Дудзу",
+      "nameEn": "地道豆汁 (豆汁)",
+      "type": "местный",
+      "cuisine": "豆汁",
       "avgPrice": 36,
       "rating": 4.4,
-      "address": "Улица Мэйши, дом 133, район Дунчэн, Пекин",
+      "address": "北京市东城区美食街133号",
       "coordinates": {
         "lat": 39.8995,
         "lng": 116.4276
       },
       "phone": "+86 010 97838743",
       "hours": "17:00-02:00",
-      "description": "Магазин дудзу, рекомендованный местными жителями Пекина, аутентичный вкус, доступные цены",
+      "description": "北京本地人推荐的豆汁店，味道正宗，价格实惠",
       "dishHighlights": [
-        "Горячий горшок с бараниной",
-        "Дудзу",
-        "Жареная печень"
+        "涮羊肉",
+        "豆汁",
+        "炒肝"
       ],
       "tags": [
-        "Старый бренд",
-        "Местный фаворит",
-        "Домашняя кухня"
+        "老字号",
+        "本地人爱去",
+        "家常菜"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/b8d8140ecde3.webp",
@@ -2501,28 +2501,28 @@
     {
       "id": "beijing-40",
       "name": "阿婆炒肝",
-      "nameEn": "Апо Чайган (Чайган)",
-      "type": "street",
-      "cuisine": "Чайган",
+      "nameEn": "阿婆炒肝 (炒肝)",
+      "type": "уличный",
+      "cuisine": "炒肝",
       "avgPrice": 58,
       "rating": 4.3,
-      "address": "Улица Мэйши, район Хайдэнь, Пекин, дом 57",
+      "address": "北京市海淀区美食街57号",
       "coordinates": {
         "lat": 39.9189,
         "lng": 116.3946
       },
       "phone": "+86 010 20402647",
       "hours": "09:00-21:00",
-      "description": "Рекомендованная пекинцами лапшичная с аутентичным вкусом и доступными ценами",
+      "description": "北京本地人推荐的炒肝店，味道正宗，价格实惠",
       "dishHighlights": [
-        "Лужу",
-        "Чжаньцзянмянь",
-        "Пекинская утка"
+        "卤煮",
+        "炸酱面",
+        "烤鸭"
       ],
       "tags": [
-        "Закуски",
-        "Популярное место в соцсетях",
-        "Ночная еда"
+        "小吃",
+        "网红打卡",
+        "深夜美食"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/b963889f04bc.webp",
@@ -2531,8 +2531,8 @@
     {
       "id": "beijing-42",
       "name": "老街爆肚",
-      "nameEn": "Лаоцзе Баоду (Баоду)",
-      "type": "local",
+      "nameEn": "老街爆肚 (爆肚)",
+      "type": "местный",
       "cuisine": "爆肚",
       "avgPrice": 103,
       "rating": 4.5,
@@ -2562,7 +2562,7 @@
       "id": "beijing-44",
       "name": "地道涮羊肉",
       "nameEn": "地道涮羊肉 (涮羊肉)",
-      "type": "local",
+      "type": "местный",
       "cuisine": "涮羊肉",
       "avgPrice": 134,
       "rating": 4,
@@ -2592,7 +2592,7 @@
       "id": "beijing-46",
       "name": "北京味炒肝",
       "nameEn": "北京味炒肝 (炒肝)",
-      "type": "local",
+      "type": "местный",
       "cuisine": "炒肝",
       "avgPrice": 44,
       "rating": 4.5,
@@ -2622,7 +2622,7 @@
       "id": "beijing-48",
       "name": "正宗炒肝",
       "nameEn": "正宗炒肝 (炒肝)",
-      "type": "local",
+      "type": "местный",
       "cuisine": "炒肝",
       "avgPrice": 75,
       "rating": 4.5,
@@ -2652,7 +2652,7 @@
       "id": "beijing-50",
       "name": "老北京炸酱面",
       "nameEn": "老北京炸酱面 (炸酱面)",
-      "type": "local",
+      "type": "местный",
       "cuisine": "炸酱面",
       "avgPrice": 101,
       "rating": 4.2,
@@ -2682,7 +2682,7 @@
       "id": "beijing-52",
       "name": "街边涮羊肉",
       "nameEn": "街边涮羊肉 (涮羊肉)",
-      "type": "cafe",
+      "type": "кафе",
       "cuisine": "涮羊肉",
       "avgPrice": 38,
       "rating": 4.4,
@@ -2712,7 +2712,7 @@
       "id": "beijing-54",
       "name": "街边炸酱面",
       "nameEn": "街边炸酱面 (炸酱面)",
-      "type": "street",
+      "type": "уличный",
       "cuisine": "炸酱面",
       "avgPrice": 56,
       "rating": 4.1,
@@ -2742,7 +2742,7 @@
       "id": "beijing-56",
       "name": "老字号豆汁",
       "nameEn": "老字号豆汁 (豆汁)",
-      "type": "local",
+      "type": "местный",
       "cuisine": "豆汁",
       "avgPrice": 109,
       "rating": 4.8,
@@ -2772,7 +2772,7 @@
       "id": "beijing-58",
       "name": "地道涮羊肉",
       "nameEn": "地道涮羊肉 (涮羊肉)",
-      "type": "local",
+      "type": "местный",
       "cuisine": "涮羊肉",
       "avgPrice": 45,
       "rating": 4.2,
@@ -2802,7 +2802,7 @@
       "id": "beijing-60",
       "name": "老字号豆汁",
       "nameEn": "老字号豆汁 (豆汁)",
-      "type": "local",
+      "type": "местный",
       "cuisine": "豆汁",
       "avgPrice": 62,
       "rating": 4.7,
@@ -2832,7 +2832,7 @@
       "id": "beijing-62",
       "name": "阿婆炸酱面",
       "nameEn": "阿婆炸酱面 (炸酱面)",
-      "type": "cafe",
+      "type": "кафе",
       "cuisine": "炸酱面",
       "avgPrice": 58,
       "rating": 4.2,
@@ -2862,7 +2862,7 @@
       "id": "beijing-64",
       "name": "老街炒肝",
       "nameEn": "老街炒肝 (炒肝)",
-      "type": "cafe",
+      "type": "кафе",
       "cuisine": "炒肝",
       "avgPrice": 45,
       "rating": 4.8,
@@ -3407,193 +3407,193 @@
   "culturalTips": [
     {
       "category": "greeting",
-      "title": "Greetings & Titles",
+      "title": "Приветствия и обращения",
       "content": "Используйте «ни хао» (привет) и «се се» (спасибо). Обращайтесь к людям по фамилии с титулом (например, Ван сяньшэн для господина Ван). Рукопожатия распространены в деловой обстановке.",
       "importance": "high"
     },
     {
       "category": "dining",
-      "title": "Dining Etiquette",
+      "title": "Этикет за столом",
       "content": "Ждите, пока вас усадят. Не втыкайте палочки вертикально в рис — это напоминает похоронные ритуалы. Оставьте немного еды на тарелке, чтобы показать, что вы наелись. Чаевые не ожидаются.",
       "importance": "high"
     },
     {
       "category": "social",
-      "title": "Business Card Exchange",
+      "title": "Обмен визитными карточками",
       "content": "Представляйте и принимайте визитные карточки обеими руками. Уделите время изучению карточки, прежде чем убрать её.",
       "importance": "medium"
     },
     {
       "category": "photography",
-      "title": "Photography Rules",
+      "title": "Правила фотографирования",
       "content": "Спрашивайте разрешение перед фотографированием людей, особенно в сельской местности. Некоторые достопримечательности запрещают фотографирование внутри. Военные зоны всегда запрещены.",
       "importance": "medium"
     },
     {
       "category": "shopping",
-      "title": "Bargaining",
+      "title": "Торг",
       "content": "Торговаться ожидается на рынках и в небольших магазинах. Начинайте с 30-50% от запрашиваемой цены. Будьте дружелюбны — это социальная активность. Уйдите, если не можете договориться.",
       "importance": "medium"
     },
     {
       "category": "taboo",
-      "title": "Number Taboos",
+      "title": "Числовые табу",
       "content": "Число 4 считается крайне несчастливым (звучит как «смерть»). Избегайте подарков в наборе из 4. Число 8 очень счастливое (звучит как «процветание»). 6 означает гладкость. 9 означает «навсегда».",
       "importance": "high"
     },
     {
       "category": "taboo",
-      "title": "Color Symbolism",
+      "title": "Символика цветов",
       "content": "Белый и черный цвета символизируют траур и смерть — избегайте их носить на праздниках. Красный цвет означает удачу и радость — подходит для праздничных случаев. Желтый был императорским цветом — носите его с уважением.",
       "importance": "high"
     },
     {
       "category": "taboo",
-      "title": "Gift Giving Taboos",
+      "title": "Табу при дарении подарков",
       "content": "Избегайте дарить часы (звучит как «смерть»), ножницы (обрезают связи) или груши (звучат как «разлука»). Зонты звучат как «рассеивание». Оборачивайте подарки в красную бумагу — избегайте белой или черной упаковки для праздников.",
       "importance": "medium"
     },
     {
       "category": "dining",
-      "title": "Chopstick Etiquette",
+      "title": "Этикет использования палочек",
       "content": "Никогда не втыкайте палочки вертикально в рис (похоронный ритуал). Не указывайте палочками и не размахивайте ими. Не передавайте еду непосредственно от палочки к палочке (используется на похоронах).",
       "importance": "high"
     },
     {
       "category": "dining",
-      "title": "Seating Arrangements",
+      "title": "Расстановка мест",
       "content": "Хозяин сидит лицом к двери; самый почетный гость сидит слева от хозяина. Ждите «пожалуйста, ешьте», прежде чем начать. Почетному гостю предложат есть первым. Оставьте немного еды, чтобы показать, что вы сыты.",
       "importance": "medium"
     },
     {
       "category": "dining",
-      "title": "Toasting Etiquette",
+      "title": "Этикет тостов",
       "content": "Поднимайте тост обеими руками и опускайте свой стакан ниже, чем у старших. При чокании старайтесь быть ниже, чем у людей более высокого ранга. Допивайте напиток до конца при тосте со старшими.",
       "importance": "medium"
     },
     {
       "category": "social",
-      "title": "Personal Space",
+      "title": "Личное пространство",
       "content": "Китайцы могут стоять ближе, чем западные нормы. Физический контакт между людьми одного пола — обычное дело и не неловко. Избегайте продолжительного зрительного контакта с незнакомцами.",
       "importance": "low"
     },
     {
       "category": "social",
-      "title": "Addressing People",
+      "title": "Обращение к людям",
       "content": "Используйте полное имя с титулом для формальных ситуаций. Одно имя только для близких друзей. «Лао» (старший) перед фамилией показывает уважение к старшим. «Сяо» (младший) перед фамилией для более молодых людей.",
       "importance": "medium"
     },
     {
       "category": "business",
-      "title": "Business Meeting Etiquette",
+      "title": "Этикет деловых встреч",
       "content": "Приходите вовремя или немного раньше. Обменивайтесь визитными карточками обеими руками, принимайте обеими руками и изучайте их, прежде чем убрать. Позвольте старшим говорить первыми. Избегайте прямого «нет» — лучше скажите «мы рассмотрим».",
       "importance": "high"
     },
     {
       "category": "business",
-      "title": "Guanxi (Relationships)",
+      "title": "Гуаньси (Отношения)",
       "content": "В Китае бизнес строится на отношениях. Формирование доверия требует времени через совместные обеды, чаепития и социальные мероприятия. Поддержание гуаньси (связей) имеет решающее значение для долгосрочного успеха.",
       "importance": "high"
     },
     {
       "category": "travel",
-      "title": "Queue Culture",
+      "title": "Культура очередей",
       "content": "Очереди могут показаться хаотичными, но люди обычно уважают порядок. Вежливо, но настойчиво продвигайтесь вперед. В переполненных местах четко называйте цель: 'Май дан' (я плачу) в ресторанах или 'Пао чжоу' (лапша) в уличных кафе.",
       "importance": "low"
     },
     {
       "category": "travel",
-      "title": "Public Transport Etiquette",
+      "title": "Этикет в общественном транспорте",
       "content": "Уступайте места пожилым людям, беременным женщинам и людям с детьми. Не ешьте и не пейте в метро. Держите телефонные звонки короткими или в беззвучном режиме. На эскалаторе стойте справа, слева проходите.",
       "importance": "medium"
     },
     {
       "category": "travel",
-      "title": "Temple Etiquette",
+      "title": "Этикет в храмах",
       "content": "Обходите буддийские храмы по часовой стрелке. Не прикасайтесь к статуям Будды и не указывайте на них. Зажигайте благовония обеими руками и кланяйтесь три раза. Не фотографируйте в запрещенных местах. Снимайте головные уборы и солнцезащитные очки в храмовых залах.",
       "importance": "medium"
     },
     {
       "category": "shopping",
-      "title": "Market Shopping Tips",
+      "title": "Советы по покупкам на рынке",
       "content": "Берите с собой пакет для покупок (экологично). Внимательно проверяйте электронику. Попросите протестировать перед покупкой. Торгуйтесь уверенно, но приятно. Многие рынки имеют минимальные объемы оптовых продаж.",
       "importance": "medium"
     },
     {
       "category": "communication",
-      "title": "Language Tips",
+      "title": "Советы по языку",
       "content": "Изучение нескольких фраз на мандаринском языке приветствуется. 'Бу хао и сы' (извините) полезно для извинений. 'Дуй бу ци' (простите) более формально. 'Кэ и' (можно?) — вежливый способ привлечь внимание. Используйте 'Цзай цзянь' (до свидания) при уходе.",
       "importance": "medium"
     },
     {
       "category": "greeting",
-      "title": "Beijing Dialect",
+      "title": "Пекинский диалект",
       "content": "Пекинский диалект (北京话) имеет отличительное произношение и множество разговорных выражений. 'Е' (也) и 'цзай' (再) произносятся с протяжным звуком 'р'. Изучение базовых фраз приветствуется.",
       "importance": "medium"
     },
     {
       "category": "weather",
-      "title": "Sandstorm Season",
+      "title": "Сезон песчаных бурь",
       "content": "В Пекине весной (март-апрель) бывают песчаные бури. Перед выходом на улицу проверяйте индексы качества воздуха (AQI). Надевайте маски на улице и держите окна закрытыми во время сильных песчаных бурь.",
       "importance": "high"
     },
     {
       "category": "communication",
-      "title": "English Accessibility",
+      "title": "Доступность английского языка",
       "content": "Английские указатели распространены в крупных туристических достопримечательностях и отелях. Однако на местных рынках, в небольших ресторанах и на общественном транспорте английский может быть ограничен. Переводческие приложения полезны.",
       "importance": "medium"
     },
     {
       "category": "greeting",
-      "title": "Beijing Dialect",
+      "title": "Пекинский диалект",
       "content": "Пекинский диалект (北京话) имеет отличительное произношение и множество разговорных выражений. 'Е' (也) и 'цзай' (再) произносятся с протяжным звуком 'р'. Изучение базовых фраз приветствуется.",
       "importance": "medium"
     },
     {
       "category": "weather",
-      "title": "Sandstorm Season",
+      "title": "Сезон песчаных бурь",
       "content": "В Пекине весной (март-апрель) бывают песчаные бури. Перед выходом на улицу проверяйте индексы качества воздуха (AQI). Надевайте маски на улице и держите окна закрытыми во время сильных песчаных бурь.",
       "importance": "high"
     },
     {
       "category": "communication",
-      "title": "English Accessibility",
+      "title": "Доступность английского языка",
       "content": "Английские указатели распространены в крупных туристических достопримечательностях и отелях. Однако на местных рынках, в небольших ресторанах и на общественном транспорте английский может быть ограничен. Переводческие приложения полезны.",
       "importance": "medium"
     },
     {
       "category": "dining",
-      "title": "Beijing Roast Duck Culture",
+      "title": "Культура пекинской утки",
       "content": "Пекинская утка — самое известное блюдо Пекина. Популярные рестораны включают Quanjude (осн. 1864), Bianyifang (осн. 1855) и Da Dong. У каждого свой стиль приготовления.",
       "importance": "high"
     },
     {
       "category": "architecture",
-      "title": "Hutong Heritage",
+      "title": "Наследие хутунов",
       "content": "Хутоуны (胡同) — это традиционные переулки, формирующие исторические районы Пекина. Прогулка или велосипедная поездка по хутоунам позволяет понять традиционную жизнь Пекина.",
       "importance": "high"
     },
     {
       "category": "taboo",
-      "title": "Censorship Awareness",
+      "title": "Осведомленность о цензуре",
       "content": "Доступ в интернет в Пекине ограничен. VPN часто используются, но могут быть ненадежными. Соответственно планируйте доступ к международным сервисам.",
       "importance": "high"
     },
     {
       "category": "shopping",
-      "title": "Silk Market Culture",
+      "title": "Культура рынка Шёлк",
       "content": "На рынке Шёлка (Сичжушуй) и других рынках можно поторговаться. Начните с 30-50% от запрашиваемой цены. Качество варьируется - внимательно проверяйте перед покупкой.",
       "importance": "medium"
     },
     {
       "category": "transportation",
-      "title": "Peak Hours",
+      "title": "Часы пик",
       "content": "Пик трафика в Пекине с 7 до 9 утра и с 5 до 8 вечера. Рекомендуется пользоваться общественным транспортом. Линии метро 1, 2 и 10 наиболее полезны для туристов.",
       "importance": "medium"
     },
     {
       "category": "greeting",
-      "title": "Beijing Nicknames",
+      "title": "Прозвища Пекина",
       "content": "Местные могут использовать специфические для Пекина термины, такие как 'дагэда' (大哥大) для обозначения пожилых мужчин или 'цзе цзе' (姐姐) для женщин. Суффикс 'эр' распространён: 'Пекингэр'.",
       "importance": "low"
     }
@@ -3602,206 +3602,206 @@
     {
       "type": "ambulance",
       "name": "北京急救中心",
-      "nameEn": "Beijing Emergency Center",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "120",
-      "address": "Various locations citywide",
-      "notes": "English operators available at some locations"
+      "address": "Гуанчжоу",
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "police",
       "name": "北京市公安局",
-      "nameEn": "Beijing Public Security Bureau",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "110",
-      "address": "Qianmen area",
-      "notes": "Tourist police stations at major attractions"
+      "address": "Гуанчжоу",
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "fire",
       "name": "北京消防",
-      "nameEn": "Beijing Fire Brigade",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "119",
-      "address": "Various stations",
-      "notes": "Also handles rescue operations"
+      "address": "Гуанчжоу",
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "hospital",
       "name": "和睦家医院",
-      "nameEn": "Beijing United Family Hospital",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 10 5927 7120",
-      "address": "2 Xiangjiang Mid Rd, Chaoyang District",
+      "address": "Гуанчжоу",
       "coordinates": {
         "lat": 39.9492,
         "lng": 116.4745
       },
-      "notes": "English-speaking staff, accepts international insurance"
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "hospital",
       "name": "北京协和医院",
-      "nameEn": "Peking Union Medical College Hospital",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 10 6915 1188",
-      "address": "1 Shuaifuyuan, Dongcheng District",
+      "address": "Гуанчжоу",
       "coordinates": {
         "lat": 39.9142,
         "lng": 116.4235
       },
-      "notes": "Best public hospital for complex cases"
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "embassy",
       "name": "美国驻华大使馆",
-      "nameEn": "US Embassy Beijing",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 10 8531 3000",
-      "address": "55 Anjialou Rd, Chaoyang District",
+      "address": "Гуанчжоу",
       "coordinates": {
         "lat": 39.9542,
         "lng": 116.4445
       },
-      "notes": "For US citizens: 24h line +86 10 8531 3000"
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "embassy",
       "name": "英国驻华大使馆",
-      "nameEn": "UK Embassy Beijing",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 10 8529 6600",
-      "address": "11 Guanghua Rd, Chaoyang District",
+      "address": "Гуанчжоу",
       "coordinates": {
         "lat": 39.9482,
         "lng": 116.4532
       },
-      "notes": "For UK citizens: 24h consular emergency line"
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "embassy",
       "name": "日本驻华大使馆",
-      "nameEn": "Japan Embassy Beijing",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 10 8561 3000",
-      "address": "1 Liangmaqiao Rd, Chaoyang District",
+      "address": "Гуанчжоу",
       "coordinates": {
         "lat": 39.9512,
         "lng": 116.4622
       },
-      "notes": "Japanese citizens can also use +86 10 8561 3119 for emergencies"
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻华大使馆",
-      "nameEn": "Australian Embassy Beijing",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 10 8529 6800",
-      "address": "21 Dongzhimenwai St, Chaoyang District",
+      "address": "Гуанчжоу",
       "coordinates": {
         "lat": 39.9492,
         "lng": 116.4452
       },
-      "notes": "24h emergency line for Australian citizens"
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "hospital",
       "name": "北京友谊医院",
-      "nameEn": "Beijing Friendship Hospital",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 10 6301 4441",
-      "address": "95 Yong'an Rd, Xicheng District",
+      "address": "Гуанчжоу",
       "coordinates": {
         "lat": 39.9252,
         "lng": 116.3792
       },
-      "notes": "Well-known for tropical medicine and liver diseases"
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "hospital",
       "name": "北京天坛医院",
-      "nameEn": "Beijing Tiantan Hospital",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 10 6709 6656",
-      "address": "119 West Rd, Fengtai District",
+      "address": "Гуанчжоу",
       "coordinates": {
         "lat": 39.8792,
         "lng": 116.4032
       },
-      "notes": "Famous for neurosurgery and neurology"
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "police",
       "name": "北京旅游警察",
-      "nameEn": "Beijing Tourist Police",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "010-65150118",
-      "address": "Various locations at major attractions",
-      "notes": "English-speaking officers at key tourist areas including Tiananmen, Qianmen, and Badaling Great Wall"
+      "address": "Гуанчжоу",
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "embassy",
       "name": "德国驻华大使馆",
-      "nameEn": "German Embassy Beijing",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 10 8532 9000",
-      "address": "9 Sanlitun Dongzhimenwai Rd, Chaoyang District",
+      "address": "Гуанчжоу",
       "coordinates": {
         "lat": 39.9532,
         "lng": 116.4492
       },
-      "notes": "For German citizens: 24h emergency line available"
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "embassy",
       "name": "法国驻华大使馆",
-      "nameEn": "French Embassy Beijing",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 10 8532 8000",
-      "address": "60 Tianzelu Rd, Chaoyang District",
+      "address": "Гуанчжоу",
       "coordinates": {
         "lat": 39.9542,
         "lng": 116.4552
       },
-      "notes": "For French citizens: consular services and emergency assistance"
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "embassy",
       "name": "加拿大驻华大使馆",
-      "nameEn": "Canadian Embassy Beijing",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 10 5139 4000",
-      "address": "10 Chaoyangmenwai Dajie, Chaoyang District",
+      "address": "Гуанчжоу",
       "coordinates": {
         "lat": 39.9512,
         "lng": 116.4412
       },
-      "notes": "24h emergency line for Canadian citizens"
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "tourist-helpline",
       "name": "北京旅游投诉热线",
-      "nameEn": "Beijing Tourist Complaint Hotline",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "12345",
-      "address": "Citywide coverage",
-      "notes": "For tourist complaints, refunds, and emergency assistance"
+      "address": "Гуанчжоу",
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "embassy",
       "name": "俄罗斯驻华大使馆",
-      "nameEn": "Russian Embassy Beijing",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 10 6532 2000",
-      "address": "4 Dongzhimen Beizhan, Dongcheng District",
+      "address": "Гуанчжоу",
       "coordinates": {
         "lat": 39.9532,
         "lng": 116.4292
       },
-      "notes": "For Russian citizens: consular services available"
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "embassy",
       "name": "意大利驻华大使馆",
-      "nameEn": "Italian Embassy Beijing",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 10 8532 7600",
-      "address": "1 Sanlitun Dongzhimenwai Rd, Chaoyang District",
+      "address": "Гуанчжоу",
       "coordinates": {
         "lat": 39.9522,
         "lng": 116.4492
       },
-      "notes": "For Italian citizens: emergency assistance available"
+      "notes": "Для граждан Сингапура"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese (Simplified)",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa (L-tourist, M-business)",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Tap water is boiled before drinking; bottled water widely available"
+    "language": "Китайский (мандаринский)",
+    "currency": "Китайский юань (CNY/RMB)",
+    "visa": "Большинству национальностей требуется виза. Для соответствующих граждан доступна 72-часовая транзитная виза в аэропорту.",
+    "timeZone": "UTC+8 (Китайское стандартное время)",
+    "electricity": "220В/50Гц, розетки типа A/I",
+    "water": "Водопроводная вода пригодна для питья, но рекомендуется бутилированная"
   }
 }

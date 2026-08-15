@@ -1,5 +1,6 @@
 import React from "react";
 import { MapDirectionsLink } from "@/components/ui/MapDirectionsLink";
+import { ct } from "@/i18n/components-strings";
 
 export interface RestaurantCardData {
   id: string;
@@ -24,24 +25,25 @@ export interface RestaurantCardData {
 interface RestaurantCardProps {
   restaurant: RestaurantCardData;
   compact?: boolean;
+  lang?: string;
 }
 
-function getBadgeConfig(type: RestaurantCardData["type"]) {
+function getBadgeConfig(type: RestaurantCardData["type"], lang: string = "en") {
   if (type === "michelin")
     return {
       class: "bg-amber-500 text-white shadow-lg shadow-amber-200",
-      label: "米其林 Michelin",
+      label: ct(lang, "badge_michelin", "Michelin"),
       icon: "⭐",
     };
   if (type === "blackpearl")
     return {
       class: "bg-slate-800 text-white shadow-lg shadow-slate-300",
-      label: "黑珍珠 Black Pearl",
+      label: ct(lang, "badge_blackpearl", "Black Pearl"),
       icon: "💎",
     };
   return {
     class: "bg-orange-500 text-white shadow-lg shadow-orange-200",
-    label: "本地推荐 Local",
+    label: ct(lang, "badge_local", "Local Favorite"),
     icon: "🔥",
   };
 }
@@ -54,10 +56,23 @@ function getPriceLevel(avgPrice: number): { label: string; color: string } {
   return { label: "¥¥¥¥¥", color: "text-red-500" };
 }
 
-export function RestaurantCard({ restaurant, compact = false }: RestaurantCardProps) {
-  const badge = getBadgeConfig(restaurant.type);
+export function RestaurantCard({ restaurant, compact = false, lang = "en" }: RestaurantCardProps) {
+  const badge = getBadgeConfig(restaurant.type, lang);
   const priceLevel = getPriceLevel(restaurant.avgPrice);
-
+  // Display-name selection logic:
+  //   zh-CN / zh-TW  -> restaurant.name (Chinese original)
+  //   ja / ko         -> prefers restaurant.nameJa / nameKo from cities-i18n/<lang>/<slug>.json
+  //                       (falls back to nameEn so users see 汉字/가나 instead of 中文)
+  //   fr / de / ru / vi / th / ar / fa / en -> restaurant.nameEn
+  const localKey = (lang === "ja") ? "nameJa"
+                  : (lang === "ko") ? "nameKo"
+                  : null;
+  const localised = localKey ? (restaurant as any)[localKey] : undefined;
+  const isCJK = lang === "zh-CN" || lang === "zh-TW";
+  const displayName = isCJK && restaurant.name
+    ? restaurant.name
+    : (localised || restaurant.nameEn || restaurant.name);
+  const secondaryName = (displayName === restaurant.nameEn) ? restaurant.name : restaurant.nameEn;
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 flex flex-col">
       {/* Hero Image / Placeholder */}
@@ -127,13 +142,15 @@ export function RestaurantCard({ restaurant, compact = false }: RestaurantCardPr
       {/* Info Section */}
       <div className="p-5 flex flex-col flex-1">
         {/* Name */}
-        <h3 className="text-lg font-bold text-gray-900 leading-tight">{restaurant.nameEn}</h3>
-        <p className="text-gray-500 text-sm mb-3">{restaurant.name}</p>
+        <h3 className="text-lg font-bold text-gray-900 leading-tight">{displayName}</h3>
+        {secondaryName && secondaryName !== displayName && (
+          <p className="text-gray-500 text-sm mb-3">{secondaryName}</p>
+        )}
 
         {/* Price & Rating - Prominent */}
         <div className="flex items-end gap-3 mb-3">
           <div>
-            <span className="text-xs text-gray-400 uppercase tracking-wider">人均 Avg</span>
+            <span className="text-xs text-gray-400 uppercase tracking-wider">{ct(lang, "avg_per_person", "Avg")}</span>
             <div className="flex items-baseline gap-0.5">
               <span className="text-2xl font-extrabold text-gray-900">¥{restaurant.avgPrice}</span>
             </div>
@@ -172,7 +189,7 @@ export function RestaurantCard({ restaurant, compact = false }: RestaurantCardPr
         {restaurant.dishHighlights && restaurant.dishHighlights.length > 0 && !compact && (
           <div className="mb-3">
             <h4 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">
-              招牌菜 Signature Dishes
+              {ct(lang, "signature_dishes", "Signature Dishes")}
             </h4>
             <div className="flex flex-wrap gap-1.5">
               {restaurant.dishHighlights.map((dish, i) => (
@@ -209,7 +226,7 @@ export function RestaurantCard({ restaurant, compact = false }: RestaurantCardPr
               className="flex items-center gap-1.5 px-3 py-2 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium hover:bg-blue-100 transition-colors touch-manipulation"
             >
               <span>📞</span>
-              <span>Call</span>
+              <span>{ct(lang, "call_button", "Call")}</span>
             </a>
           )}
           {(restaurant.coordinates || restaurant.address) && (
@@ -219,7 +236,7 @@ export function RestaurantCard({ restaurant, compact = false }: RestaurantCardPr
               name={restaurant.nameEn}
               address={restaurant.address}
               className="flex items-center gap-1.5 px-3 py-2 bg-gray-50 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors touch-manipulation"
-            />
+             lang="lang"/>
           )}
           {restaurant.address && (
             <span

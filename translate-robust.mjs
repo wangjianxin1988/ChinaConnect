@@ -3,9 +3,9 @@
 // Usage: node translate-robust.mjs <lang1> [lang2] [...]
 //        node translate-robust.mjs all
 import fs from "fs";
+import { getMiniMaxConfig } from "./scripts/lib/minimax-config.mjs";
 
-const KEY = "REDACTED_MINIMAX_KEY";
-const HOST = "https://api.minimax.io";
+const { apiKey: KEY, baseUrl: HOST } = getMiniMaxConfig();
 const MODEL = "MiniMax-Text-01";
 const PARALLEL = 2;        // low to avoid rate limit
 const BATCH = 4;            // small batch for quality

@@ -7,6 +7,7 @@ import {
 } from "@/data/guide/accommodation";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
+import { jaText } from "./guide-i18n";
 
 export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = {}) { const t = translations[lang] || translations.en; const tg = (t.accommodationGuide || translations.en.accommodationGuide || {}) as Record<string, string>;
   const [activeTab, setActiveTab] = useState("types");
@@ -48,29 +49,29 @@ export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = 
                 <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-4 border-b flex items-center gap-4">
                   <span className="text-4xl">{hotel.icon}</span>
                   <div className="flex-1">
-                    <h3 className="font-semibold text-lg">{hotel.type}</h3>
-                    <p className="text-primary font-medium">{hotel.priceRange}</p>
-                    <p className="text-xs text-muted-foreground">{hotel.priceRangeCn}</p>
+                    <h3 className="font-semibold text-lg">{lang === "ja" ? jaText(hotel.type, lang) : hotel.type}</h3>
+                    <p className="text-primary font-medium">{jaText(hotel.priceRange, lang)}</p>
+                    <p className="text-xs text-muted-foreground">{jaText(hotel.priceRangeCn, lang)}</p>
                   </div>
                 </div>
                 <div className="p-4 space-y-4">
-                  <p className="text-sm text-foreground">{hotel.description}</p>
-                  <p className="text-sm text-muted-foreground">{hotel.descriptionCn}</p>
+                  {lang !== "ja" && <p className="text-sm text-foreground">{hotel.description}</p>}
+                  <p className="text-sm text-muted-foreground">{jaText(hotel.descriptionCn, lang)}</p>
 
                   {/* Features */}
                   <div className="bg-slate-50 rounded-lg p-3">
-                    <h4 className="font-medium text-sm mb-2">Features:</h4>
+                    <h4 className="font-medium text-sm mb-2">{lang === "ja" ? "設備：" : "Features:"}</h4>
                     <div className="flex flex-wrap gap-1">
                       {hotel.features.map((f, i) => (
                         <span key={i} className="text-xs bg-white px-2 py-1 rounded border">
-                          {f}
+                          {jaText(f, lang)}
                         </span>
                       ))}
                     </div>
                     <div className="flex flex-wrap gap-1 mt-2">
                       {hotel.featuresCn.map((f, i) => (
                         <span key={i} className="text-xs text-muted-foreground">
-                          {f}
+                          {jaText(f, lang)}
                         </span>
                       ))}
                     </div>
@@ -78,14 +79,14 @@ export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = 
 
                   {/* Recommended For */}
                   <div className="bg-green-50 rounded-lg p-3">
-                    <h4 className="font-medium text-sm mb-2">Best For:</h4>
+                    <h4 className="font-medium text-sm mb-2">{lang === "ja" ? "こんな人におすすめ：" : "Best For:"}</h4>
                     <div className="flex flex-wrap gap-1">
                       {hotel.recommendedFor.map((r, i) => (
                         <span
                           key={i}
                           className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded"
                         >
-                          {r}
+                          {jaText(r, lang)}
                         </span>
                       ))}
                     </div>
@@ -98,31 +99,31 @@ export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = 
           {/* Booking Platforms */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h3 className="font-semibold text-lg">Recommended Booking Platforms</h3>
+              <h3 className="font-semibold text-lg">{lang === "ja" ? "おすすめの予約プラットフォーム" : "Recommended Booking Platforms"}</h3>
             </div>
             <div className="divide-y">
               <div className="p-4">
                 <h4 className="font-medium">Trip.com (Ctrip International)</h4>
                 <p className="text-sm text-muted-foreground">
-                  Best English interface, reliable customer service, wide selection
+                  {lang === "ja" ? "英語インターフェースが最良、信頼できるカスタマーサービス、豊富な選択肢" : "Best English interface, reliable customer service, wide selection"}
                 </p>
               </div>
               <div className="p-4">
                 <h4 className="font-medium">Booking.com</h4>
                 <p className="text-sm text-muted-foreground">
-                  Good international support, often has best price guarantees
+                  {lang === "ja" ? "国際的なサポートが充実、価格保証も充実" : "Good international support, often has best price guarantees"}
                 </p>
               </div>
               <div className="p-4">
                 <h4 className="font-medium">Hotels.com</h4>
                 <p className="text-sm text-muted-foreground">
-                  Rewards program good for frequent travelers
+                  {lang === "ja" ? "頻繁に旅行する人に嬉しいリワードプログラム" : "Rewards program good for frequent travelers"}
                 </p>
               </div>
               <div className="p-4">
                 <h4 className="font-medium">Agoda</h4>
                 <p className="text-sm text-muted-foreground">
-                  Often has lowest prices for Asian destinations
+                  {lang === "ja" ? "アジアの目的地で最安値が多い" : "Often has lowest prices for Asian destinations"}
                 </p>
               </div>
             </div>
@@ -140,14 +141,14 @@ export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = 
                   <span className="text-2xl">{tip.icon}</span>
                   <h3 className="font-semibold">{tip.category}</h3>
                 </div>
-                <p className="text-sm text-foreground">{tip.tip}</p>
-                <p className="text-sm text-muted-foreground mt-2">{tip.tipCn}</p>
+                {lang !== "ja" && <p className="text-sm text-foreground">{tip.tip}</p>}
+                <p className="text-sm text-muted-foreground mt-2">{jaText(tip.tipCn, lang)}</p>
                 {tip.warning && (
                   <div className="mt-3 p-2 bg-amber-50 rounded-lg">
                     <p className="text-sm">
                       <span className="font-medium text-amber-700">Warning:</span> {tip.warning}
                     </p>
-                    <p className="text-sm text-muted-foreground">{tip.warningCn}</p>
+                    <p className="text-sm text-muted-foreground">{jaText(tip.warningCn, lang)}</p>
                   </div>
                 )}
               </div>
@@ -181,27 +182,27 @@ export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = 
                   {step.step}
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg">{step.title}</h3>
-                  <p className="text-sm text-muted-foreground">{step.titleCn}</p>
+                  <h3 className="font-semibold text-lg">{lang === "ja" ? jaText(step.titleCn, lang) : step.title}</h3>
+                  {lang !== "ja" && <p className="text-sm text-muted-foreground">{jaText(step.titleCn, lang)}</p>}
                 </div>
               </div>
               <div className="p-4">
-                <p className="text-foreground mb-4">{step.description}</p>
-                <p className="text-sm text-muted-foreground mb-4">{step.descriptionCn}</p>
+                <p className="text-foreground mb-4">{lang === "ja" ? jaText(step.descriptionCn, lang) : step.description}</p>
+                {lang !== "ja" && <p className="text-sm text-muted-foreground mb-4">{jaText(step.descriptionCn, lang)}</p>}
                 <div className="bg-slate-50 rounded-lg p-4">
                   <h4 className="font-medium mb-2">Details:</h4>
                   <ul className="space-y-2">
                     {step.details.map((detail, i) => (
                       <li key={i} className="flex items-start gap-2 text-sm">
                         <span className="text-blue-500">{i + 1}.</span>
-                        <span>{detail}</span>
+                        <span>{jaText(detail, lang)}</span>
                       </li>
                     ))}
                   </ul>
                   <div className="mt-4 pt-4 border-t space-y-1">
                     {step.detailsCn.map((detail, i) => (
                       <p key={i} className="text-sm text-muted-foreground">
-                        {detail}
+                        {jaText(detail, lang)}
                       </p>
                     ))}
                   </div>

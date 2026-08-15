@@ -5,9 +5,9 @@
 //   node gen-missing.mjs all              # all 11 non-en languages
 //   node gen-missing.mjs en ja zh-CN      # explicit list
 import fs from "fs";
+import { getMiniMaxConfig } from "./scripts/lib/minimax-config.mjs";
 
-const KEY = "REDACTED_MINIMAX_KEY";
-const HOST = "https://api.minimax.io";
+const { apiKey: KEY, baseUrl: HOST } = getMiniMaxConfig();
 const MODEL = "MiniMax-Text-01";
 const BATCH = 60;
 

@@ -5,6 +5,7 @@
  * Prioritizes apps with English support.
  */
 
+import { ct } from "@/i18n/components-strings";
 import {
   APP_RECOMMENDATIONS,
   type AppCategory,
@@ -28,6 +29,7 @@ interface EmbeddedAppRecommendationProps {
   compact?: boolean;
   /** Additional CSS classes */
   className?: string;
+  lang?: string;
 }
 
 type Platform = "ios" | "android" | "unknown";
@@ -52,10 +54,10 @@ function getDownloadUrl(app: AppRecommendation, platform: Platform): string | nu
   return app.appStoreUrl || app.androidUrl || null;
 }
 
-function getPlatformLabel(platform: Platform): string {
-  if (platform === "ios") return "App Store";
-  if (platform === "android") return "Google Play";
-  return "Download";
+function getPlatformLabel(platform: Platform, lang: string = "en"): string {
+  if (platform === "ios") return ct(lang, "platform_app_store", "App Store");
+  if (platform === "android") return ct(lang, "platform_google_play", "Google Play");
+  return ct(lang, "platform_download", "Download");
 }
 
 function PlatformIcon({ platform }: { platform: Platform }) {
@@ -81,7 +83,7 @@ function PlatformIcon({ platform }: { platform: Platform }) {
 }
 
 /** Single app card for embedded display */
-function AppCard({ app, platform }: { app: AppRecommendation; platform: Platform }) {
+function AppCard({ app, platform, lang }: { app: AppRecommendation; platform: Platform; lang: string }) {
   const downloadUrl = getDownloadUrl(app, platform);
 
   return (
@@ -99,13 +101,13 @@ function AppCard({ app, platform }: { app: AppRecommendation; platform: Platform
             </span>
           )}
           {app.isEssential && (
-            <span className="px-1.5 py-0.5 bg-amber-100 text-amber-700 text-[10px] font-medium rounded">
-              Essential
+<span className="px-1.5 py-0.5 bg-amber-100 text-amber-700 text-[10px] font-medium rounded">
+              {ct(lang, "badge_essential", "Essential")}
             </span>
           )}
         </div>
         <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
-          {app.descriptionEn || app.description}
+          {lang === "ja" && app.descriptionJa ? app.descriptionJa : app.descriptionEn || app.description}
         </p>
       </div>
 
@@ -116,10 +118,10 @@ function AppCard({ app, platform }: { app: AppRecommendation; platform: Platform
           target="_blank"
           rel="noopener noreferrer"
           className="shrink-0 flex items-center gap-1.5 px-3 py-2 bg-blue-600 text-white text-xs font-medium rounded-lg hover:bg-blue-700 transition-colors"
-          title={`Download ${app.name} on ${getPlatformLabel(platform)}`}
+          title={`Download ${app.name} on ${getPlatformLabel(platform, lang)}`}
         >
           <PlatformIcon platform={platform} />
-          <span>{getPlatformLabel(platform)}</span>
+          <span>{getPlatformLabel(platform, lang)}</span>
         </a>
       )}
     </div>
@@ -150,6 +152,7 @@ export default function EmbeddedAppRecommendation({
   essentialOnly = false,
   compact = false,
   className = "",
+  lang = "en",
 }: EmbeddedAppRecommendationProps) {
   const [platform, setPlatform] = useState<Platform>("unknown");
 
@@ -180,20 +183,10 @@ export default function EmbeddedAppRecommendation({
 
   if (apps.length === 0) return null;
 
-  const categoryLabels: Record<AppCategory, string> = {
-    payment: "Payment",
-    transport: "Transport",
-    social: "Social",
-    travel: "Travel",
-    food: "Food & Delivery",
-    utilities: "Utilities",
-    language: "Language & Translation",
-    maps: "Maps & Navigation",
-    connectivity: "Connectivity",
-  };
+  // categoryLabels now use ct() helper at render time
 
   const displayTitle =
-    title || `Recommended ${categories.map((c) => categoryLabels[c] || c).join(" & ")} Apps`;
+    title || `${ct(lang || "en", "apps_recommended_title", "Recommended Apps")}: ${categories.map((c) => ct(lang || "en", "app_cat_" + c, c)).join(" & ")}`;
 
   if (compact) {
     return (
@@ -235,10 +228,10 @@ export default function EmbeddedAppRecommendation({
         {subtitle && <p className="text-xs text-gray-500 mt-0.5">{subtitle}</p>}
         <div className="flex items-center gap-2 mt-1.5">
           <span className="text-[10px] px-2 py-0.5 bg-white rounded-full text-green-600 font-medium">
-            {apps.filter((a) => a.hasEnglish).length} with English
+            {apps.filter((a) => a.hasEnglish).length} {ct(lang || "en", "apps_with_english", "with English")}
           </span>
           <span className="text-[10px] px-2 py-0.5 bg-white rounded-full text-amber-600 font-medium">
-            {apps.filter((a) => a.isEssential).length} Essential
+            {apps.filter((a) => a.isEssential).length} {ct(lang || "en", "apps_essential_label", "Essential")}
           </span>
         </div>
       </div>
@@ -246,14 +239,14 @@ export default function EmbeddedAppRecommendation({
       {/* App List */}
       <div className="space-y-2">
         {apps.map((app) => (
-          <AppCard key={app.id} app={app} platform={platform} />
+          <AppCard key={app.id} app={app} platform={platform} lang={lang} />
         ))}
       </div>
 
       {/* Tip */}
       <p className="text-[11px] text-gray-400 mt-3 flex items-center gap-1">
         <span>💡</span>
-        <span>Download before arriving in China — app stores may be restricted.</span>
+        <span>{ct(lang || "en", "apps_download_tip", "Download before arriving in China — app stores may be restricted.")}</span>
       </p>
     </div>
   );

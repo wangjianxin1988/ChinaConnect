@@ -1,4 +1,4 @@
-/**
+﻿/**
  * WeatherWidget - Displays current weather and forecast for a city
  * Supports Celsius/Fahrenheit toggle and falls back to mock data
  */
@@ -17,9 +17,58 @@ interface WeatherWidgetProps {
   lat?: number;
   lng?: number;
   className?: string;
+  lang?: string;
+  i18n?: Record<string, any>;
 }
 
-export function WeatherWidget({ city, lat, lng, className = "" }: WeatherWidgetProps) {
+export function WeatherWidget({ city, lat, lng, className = "", lang = "en", i18n = {} }: WeatherWidgetProps) {
+  const t = (key: string, fallback: string): string => {
+    if (lang === "en" || !i18n) return fallback;
+    const parts = key.split(".");
+    let cur: any = i18n;
+    for (const p of parts) {
+      if (cur && typeof cur === "object" && p in cur) cur = cur[p];
+      else return fallback;
+    }
+    return typeof cur === "string" ? cur : fallback;
+  };
+
+  const JA_DESC: Record<string, string> = {
+    "clear sky": "快晴",
+    "few clouds": "晴れ時々曇り",
+    "scattered clouds": "晴れ時々曇り",
+    "broken clouds": "曇り",
+    "overcast clouds": "曇り",
+    "partly cloudy": "晴れ時々曇り",
+    "light rain": "小雨",
+    "moderate rain": "雨",
+    "heavy rain": "大雨",
+    "thunderstorm": "雷雨",
+    "snow": "雪",
+    "light snow": "小雪",
+    "fog": "霧",
+    "haze": "もや",
+    "mist": "靄",
+    "drizzle": "霧雨",
+    "light drizzle": "霧雨",
+    "moderate drizzle": "霧雨",
+    "dense drizzle": "霧雨",
+    "light intensity drizzle": "弱い霧雨",
+    "shower drizzle": "霧雨",
+  };
+  const localizedDesc = (d: string): string => {
+    if (lang === "ja") return JA_DESC[d.toLowerCase()] || d;
+    return d;
+  };
+  const localizedDay = (date: string): string => {
+    if (lang === "ja") {
+      try { return new Date(date + "T00:00:00").toLocaleDateString("ja-JP", { weekday: "short" }); }
+      catch { return date; }
+    }
+    return date;
+  };
+
+
   const [weather, setWeather] = useState<import("@/services/weather-api").WeatherData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -27,11 +76,9 @@ export function WeatherWidget({ city, lat, lng, className = "" }: WeatherWidgetP
 
   useEffect(() => {
     if (!city) return;
-
     let cancelled = false;
     setLoading(true);
     setError(null);
-
     fetchWeather(city, lat, lng)
       .then((data) => {
         if (!cancelled) {
@@ -41,11 +88,10 @@ export function WeatherWidget({ city, lat, lng, className = "" }: WeatherWidgetP
       })
       .catch((err) => {
         if (!cancelled) {
-          setError(err instanceof Error ? err.message : "Failed to load weather");
+          setError(err instanceof Error ? err.message : t("cityPage.weatherNA", "Weather N/A"));
           setLoading(false);
         }
       });
-
     return () => {
       cancelled = true;
     };
@@ -75,9 +121,7 @@ export function WeatherWidget({ city, lat, lng, className = "" }: WeatherWidgetP
     );
   }
 
-  if (error || !weather) {
-    return null;
-  }
+  if (error || !weather) return null;
 
   const { current, forecast } = weather;
   const displayTemp = (c: number) => (unit === "celsius" ? `${c}°C` : `${toFahrenheit(c)}°F`);
@@ -86,12 +130,11 @@ export function WeatherWidget({ city, lat, lng, className = "" }: WeatherWidgetP
     <div
       className={`bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-100 dark:border-gray-700 ${className}`}
     >
-      {/* Header with unit toggle */}
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-2">
           <img
             src={getWeatherIconUrl(current.icon, 2)}
-            alt={current.description}
+            alt={localizedDesc(current.description)}
             className="w-12 h-12"
             onError={(e) => {
               (e.target as HTMLImageElement).style.display = "none";
@@ -99,44 +142,43 @@ export function WeatherWidget({ city, lat, lng, className = "" }: WeatherWidgetP
           />
           <div>
             <div className="text-2xl font-bold">{displayTemp(current.temp)}</div>
-            <div className="text-xs text-gray-500 capitalize">{current.description}</div>
+            <div className="text-xs text-gray-500 capitalize">{localizedDesc(current.description)}</div>
           </div>
         </div>
 
-        {/* Unit toggle */}
         <button
           onClick={() => setUnit((u) => (u === "celsius" ? "fahrenheit" : "celsius"))}
           className="flex items-center gap-1 text-xs bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-full px-2 py-1 transition-colors"
-          title="Toggle temperature unit"
+          title={t("weather.toggleUnit", "Toggle temperature unit")}
         >
           <span className={unit === "celsius" ? "font-bold text-blue-600" : "text-gray-400"}>
-            °C
+            {t("weather.toggleUnitCelsius", "°C")}
           </span>
           <span className="text-gray-300">/</span>
           <span className={unit === "fahrenheit" ? "font-bold text-orange-600" : "text-gray-400"}>
-            °F
+            {t("weather.toggleUnitFahrenheit", "°F")}
           </span>
         </button>
       </div>
 
-      {/* Current conditions */}
       <div className="grid grid-cols-3 gap-2 text-center text-xs mb-3">
-        <ConditionItem icon="💧" label="Humidity" value={`${current.humidity}%`} />
-        <ConditionItem icon="💨" label="Wind" value={`${current.windSpeed} m/s`} />
-        <ConditionItem icon="🌡️" label="Feels" value={displayTemp(current.feelsLike)} />
+        <ConditionItem icon="💧" label={t("cityPage.weatherHumidity", "Humidity")} value={`${current.humidity}%`} />
+        <ConditionItem icon="💨" label={t("cityPage.weatherWind", "Wind")} value={`${current.windSpeed} m/s`} />
+        <ConditionItem icon="🌡️" label={t("cityPage.weatherFeels", "Feels")} value={displayTemp(current.feelsLike)} />
       </div>
 
-      {/* 3-day forecast */}
       {forecast.length > 0 && (
         <div>
-          <div className="text-xs font-medium text-gray-500 mb-2">3-Day Forecast</div>
+          <div className="text-xs font-medium text-gray-500 mb-2">
+            {t("cityPage.weatherForecast", "3-Day Forecast")}
+          </div>
           <div className="flex gap-2">
             {forecast.slice(0, 3).map((day) => (
               <div
                 key={day.date}
                 className="flex-1 bg-gray-50 dark:bg-gray-700/50 rounded-lg p-2 text-center"
               >
-                <div className="text-xs font-medium mb-1">{day.dayName}</div>
+                <div className="text-xs font-medium mb-1">{localizedDay(day.date)}</div>
                 <div className="text-lg">{getWeatherEmoji(day.icon)}</div>
                 <div className="text-xs mt-1">
                   <span className="font-semibold">{displayTemp(day.tempMax)}</span>
@@ -145,7 +187,7 @@ export function WeatherWidget({ city, lat, lng, className = "" }: WeatherWidgetP
                 </div>
                 {day.pop > 0 && (
                   <div className="text-xs text-blue-500 mt-0.5">
-                    {Math.round(day.pop * 100)}% rain
+                    {Math.round(day.pop * 100)}% {t("weather.rainProbability", "rain").replace("{n}", "")}
                   </div>
                 )}
               </div>
@@ -154,10 +196,12 @@ export function WeatherWidget({ city, lat, lng, className = "" }: WeatherWidgetP
         </div>
       )}
 
-      {/* Source badge */}
       {weather.source === "mock" && (
         <div className="text-center text-xs text-gray-400 mt-2">
-          Demo data - set PUBLIC_OWM_API_KEY for live weather
+          {t(
+            "cityPage.weatherDemo",
+            "Demo data - set PUBLIC_OWM_API_KEY for live weather",
+          )}
         </div>
       )}
     </div>

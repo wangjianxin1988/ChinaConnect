@@ -13,10 +13,11 @@ interface DynamicMapProps {
   showLayerControls?: boolean;
   onMarkerClick?: (marker: MapMarker) => void;
   className?: string;
+  lang?: string;
 }
 
 // Loading skeleton component
-function MapSkeleton({ height }: { height?: string }) {
+function MapSkeleton({ height, lang = "en" }: { height?: string; lang?: string }) {
   return (
     <div
       className="w-full bg-slate-100 flex items-center justify-center animate-pulse"
@@ -24,7 +25,7 @@ function MapSkeleton({ height }: { height?: string }) {
     >
       <div className="text-center">
         <div className="text-gray-300 text-5xl mb-3">🗺️</div>
-        <p className="text-sm text-gray-400">Loading map...</p>
+        <p className="text-sm text-gray-400">{lang === "ja" ? "地図を読み込み中..." : "Loading map..."}</p>
       </div>
     </div>
   );
@@ -32,6 +33,7 @@ function MapSkeleton({ height }: { height?: string }) {
 
 // The actual map component (only loaded client-side via dynamic import)
 export function DynamicMap(props: DynamicMapProps) {
+  const { lang } = props;
   const [isMounted, setIsMounted] = useState(false);
   const [MapComponent, setMapComponent] = useState<React.ComponentType<DynamicMapProps> | null>(
     null,

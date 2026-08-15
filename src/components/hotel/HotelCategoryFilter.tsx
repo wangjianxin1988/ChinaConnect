@@ -11,6 +11,7 @@ import { HOTEL_CATEGORY_CONFIG, type HotelCategory } from "./HotelCard";
 // ─── Props ───────────────────────────────────────────────────────
 
 interface HotelCategoryFilterProps {
+  lang?: string;
   /** Currently active category, null = "全部" */
   activeCategory: HotelCategory | null;
   /** Callback when category changes */
@@ -24,6 +25,7 @@ interface HotelCategoryFilterProps {
 const ALL_CONFIG = {
   label: "全部",
   labelEn: "All",
+  labels: { en: "All", ja: "すべて", ko: "전체", "zh-CN": "全部", "zh-TW": "全部", th: "ทั้งหมด", vi: "Tất cả", ru: "Все", fr: "Tous", de: "Alle", ar: "الكل", fa: "همه" },
   icon: "🏨",
 };
 
@@ -33,6 +35,7 @@ export function HotelCategoryFilter({
   activeCategory,
   onChange,
   counts,
+  lang = "en",
 }: HotelCategoryFilterProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -46,11 +49,12 @@ export function HotelCategoryFilter({
   );
 
   // Build button list: "All" + each category
+  const langKey = (lang || "en") as keyof typeof ALL_CONFIG.labels;
   const categories: Array<{ key: HotelCategory | null; label: string; icon: string }> = [
-    { key: null, label: ALL_CONFIG.label, icon: ALL_CONFIG.icon },
+    { key: null, label: ALL_CONFIG.labels[langKey] || ALL_CONFIG.labelEn, icon: ALL_CONFIG.icon },
     ...Object.entries(HOTEL_CATEGORY_CONFIG).map(([key, cfg]) => ({
       key: key as HotelCategory,
-      label: cfg.label,
+      label: (cfg.labels && cfg.labels[langKey]) || cfg.labelEn,
       icon: cfg.icon,
     })),
   ];

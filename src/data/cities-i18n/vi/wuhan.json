@@ -3,29 +3,29 @@
   "name": "武汉",
   "nameEn": "Wuhan",
   "country": "China",
-  "population": "13.08 million",
+  "population": "13,08 triệu",
   "coordinates": {
     "lat": 30.5928,
     "lng": 114.3055
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Wuhan, the capital of Hubei Province, is a dynamic metropolis where ancient culture meets modern innovation. Known as the 'River City' for its unique location at the confluence of the Yangtze and Han Rivers, Wuhan offers stunning natural scenery, rich revolutionary history, and one of China's most vibrant food cultures. The city is famous for its cherry blossoms at Wuhan University, the iconic Yellow Crane Tower, and the engineering marvel of the Yangtze River Bridge.",
+  "description": "Vũ Hán, thủ phủ của tỉnh Hồ Bắc, là một thành phố động đại nơi văn hóa cổ đại kết hợp với đổi mới hiện đại. Với biệt danh 'Thành phố sông' do vị trí độc đáo tại sự giao nhau của sông Dương Tử và sông Hán, Vũ Hán mang đến phong cảnh thiên nhiên tuyệt đẹp, lịch sử cách mạng phong phú và một trong những nền văn hóa ẩm thực sôi động nhất của Trung Quốc. Thành phố nổi tiếng với những cánh hoa anh đào tại Đại học Vũ Hán, tòa tháp Hạc Hoàng điển hình và kỳ quan kỹ thuật của cầu sông Dương Tử.",
   "coverImage": "/img/ext/7823c1a6eecd.webp",
   "highlights": [
-    "Yellow Crane Tower - Iconic city symbol",
-    "Wuhan University - Cherry blossom paradise",
-    "Yangtze River Bridge - First rail-road bridge",
-    "East Lake - Largest city lake in China",
-    "Hubei Provincial Museum - Ancient Chu culture"
+    "Tháp Hạc Hoàng - Biểu tượng điển hình của thành phố",
+    "Đại học Vũ Hán - Thiên đường hoa anh đào",
+    "Cầu sông Dương Tử - Cầu đường sắt đầu tiên",
+    "Hồ Đông - Hồ thành phố lớn nhất tại Trung Quốc",
+    "Bảo tàng tỉnh Hồ Bắc - Văn hóa cổ Chu"
   ],
   "climate": {
-    "type": "Subtropical monsoon",
+    "type": "Khí hậu nhiệt đới gió mùa",
     "bestMonths": [
-      "March",
-      "April",
-      "May",
-      "October",
-      "November"
+      "Tháng 3",
+      "Tháng 4",
+      "Tháng 5",
+      "Tháng 10",
+      "Tháng 11"
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "4C (39F)",
@@ -35,130 +35,130 @@
     {
       "id": "yellow-crane-tower",
       "name": "黄鹤楼",
-      "nameEn": "Yellow Crane Tower",
+      "nameEn": "Tháp Hạc Vàng",
       "category": "historical",
       "image": "/img/ext/67e447943288.webp",
-      "description": "One of the most famous towers in China, dating back 1700 years. Rebuilt multiple times, the current structure is a 5-story tower offering panoramic views of the Yangtze River and the city.",
+      "description": "Một trong những tháp nổi tiếng nhất tại Trung Quốc, có lịch sử hơn 1700 năm. Được tái thiết nhiều lần, công trình hiện tại là một tháp 5 tầng cung cấp tầm nhìn toàn cảnh sông Dương Tử và thành phố.",
       "address": "1蛇山黄鹤楼公园, 武昌区",
       "coordinates": {
         "lat": 30.5494,
         "lng": 114.3122
       },
-      "openingHours": "08:00-18:00 (Summer), 08:30-17:30 (Winter)",
+      "openingHours": "08:00-18:00 (Mùa hè), 08:30-17:30 (Mùa đông)",
       "ticketPrice": "70¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Panoramic Yangtze views",
-        "Ancient calligraphy inscriptions",
-        "Night light shows",
-        "Peach Blossom Garden"
+        "Tầm nhìn toàn cảnh sông Dương Tử",
+        "Cổ văn khắc cổ",
+        "Trình diễn ánh sáng ban đêm",
+        "Vườn Đào Hoa"
       ],
-      "tips": "Visit at sunset for best views. The tower is beautifully illuminated at night. Combine with a walk along the Yangtze River embankment nearby.",
+      "tips": "Tham quan vào lúc hoàng hôn để có được những tầm nhìn đẹp nhất. Tháp được chiếu sáng rực rỡ vào ban đêm. Kết hợp với một bữa dạo bộ dọc bờ đê sông Dương Tử gần đó.",
       "phone": "+86 27 8887 1888"
     },
     {
       "id": "wuhan-university",
       "name": "武汉大学",
-      "nameEn": "Wuhan University",
+      "nameEn": "Đại học Vũ Hán",
       "category": "cultural",
       "image": "/img/ext/b1342aa6e97a.webp",
-      "description": "One of China's most beautiful universities, famous for its cherry blossoms, early 20th-century architecture, and stunning lakeside location. Known as the 'Most Beautiful University in China'.",
+      "description": "Một trong những trường đại học đẹp nhất tại Trung Quốc, nổi tiếng với hoa anh đào, kiến trúc đầu thế kỷ 20 và vị trí tuyệt đẹp bên hồ. Được biết đến với cái tên 'Trường Đại học Đẹp Nhất Trung Quốc'.",
       "address": "16拐子湖, 武昌区",
       "coordinates": {
         "lat": 30.5355,
         "lng": 114.3666
       },
-      "openingHours": "Open campus,樱花 season typically March-April",
-      "ticketPrice": "Free (ID required during peak season)",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "Khuôn viên mở cửa, mùa hoa anh đào thường từ tháng 3 đến tháng 4",
+      "ticketPrice": "Miễn phí (CMND/CCCD cần thiết trong mùa cao điểm)",
+      "recommendedVisitTime": "3-4 giờ",
       "highlights": [
-        "Cherry blossom avenue",
-        "Historical buildings",
-        "Jiaotan Graduation Arch",
-        "Sanhai Stream"
+        "Đại lộ hoa anh đào",
+        "Công trình lịch sử",
+        "Cổng Khánh thành Tốt nghiệp Jiaotan",
+        "Dòng suối Sanhai"
       ],
-      "tips": "Best time for cherry blossoms is late March. Arrive early morning on weekends to avoid crowds. Bring valid ID for campus entry during peak season.",
+      "tips": "Thời điểm tốt nhất để xem hoa anh đào là cuối tháng 3. Đến sớm vào các ngày cuối tuần để tránh đám đông. Mang theo CMND/CCCD hợp lệ để vào khuôn viên trong mùa cao điểm.",
       "phone": "+86 027  3833 1678"
     },
     {
       "id": "yangtze-river-bridge",
       "name": "武汉长江大桥",
-      "nameEn": "Yangtze River Bridge",
+      "nameEn": "Cầu sông Dương Tử",
       "category": "historical",
       "image": "/img/ext/243363dbb830.webp",
-      "description": "The first self-designed and self-constructed bridge over the Yangtze River, built in 1957. A dual-purpose railway-highway bridge that became a symbol of Chinese engineering prowess.",
+      "description": "Cầu đầu tiên do chính Trung Quốc thiết kế và xây dựng qua sông Dương Tử, được xây dựng năm 1957. Một cây cầu đa nhiệm đường sắt-đường bộ đã trở thành biểu tượng của thành tựu kỹ thuật Trung Quốc.",
       "address": "连接武昌和汉阳",
       "coordinates": {
         "lat": 30.5489,
         "lng": 114.2967
       },
-      "openingHours": "24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24 giờ",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "Walking promenade",
-        "Sunset views",
-        "Bridge illumination at night",
-        "Railway viewing platform"
+        "Khu dạo bộ",
+        "Cảnh hoàng hôn",
+        "Cầu chiếu sáng vào ban đêm",
+        "Sân nhìn đường sắt"
       ],
-      "tips": "Walk across for the best experience. Visit at night to see the bridge illuminated. The viewing platform on the railway level offers unique perspectives.",
+      "tips": "Đi bộ qua để có được trải nghiệm tốt nhất. Tham quan vào ban đêm để xem cầu được chiếu sáng. Sân nhìn ở tầng đường sắt cung cấp những góc nhìn độc đáo.",
       "phone": "+86 027  2216 6050"
     },
     {
       "id": "east-lake",
       "name": "东湖",
-      "nameEn": "East Lake",
+      "nameEn": "Hồ Đông",
       "category": "nature",
       "image": "/img/ext/750968759ac3.webp",
-      "description": "The largest urban lake in China, covering 33 square kilometers. A beautiful natural oasis with gardens, cycling paths, and cultural attractions around its shores.",
+      "description": "Hồ nội đô lớn nhất tại Trung Quốc, rộng 33 km vuông. Một khu công viên thiên nhiên tuyệt đẹp với các khu vườn, đường đi xe đạp và các điểm giải trí văn hóa xung quanh bờ hồ.",
       "address": "洪山区东湖风景区",
       "coordinates": {
         "lat": 30.5522,
         "lng": 114.3911
       },
-      "openingHours": "06:00-20:00 (varies by section)",
-      "ticketPrice": "Free (some attractions within require tickets)",
-      "recommendedVisitTime": "Half day to full day",
+      "openingHours": "06:00-20:00 (thời gian thay đổi theo khu vực)",
+      "ticketPrice": "Miễn phí (một số điểm tham quan bên trong yêu cầu vé).",
+      "recommendedVisitTime": "Nửa ngày đến cả ngày",
       "highlights": [
-        "East Lake Cherry Blossom Park",
-        "Moondrake Island",
-        "Listening to Waves Pavilion",
-        "Bailing Isle"
+        "Công viên Hoa Anh Đào Hồ Đông",
+        "Hòn đảo Moondrake",
+        "Thiền Lâu Nghe Sóng",
+        "Đảo Bailing"
       ],
-      "tips": "Rent a bicycle to explore the extensive lake area. The Cherry Blossom Park has over 10,000 cherry trees. Visit in early morning for tai chi practitioners and peaceful scenery.",
+      "tips": "Thuê một chiếc xe đạp để khám phá khu vực hồ rộng lớn. Công viên Hoa Anh Đào có hơn 10.000 cây anh đào. Đến vào sáng sớm để xem các nhà tập thể dục Thái Cực và phong cảnh yên bình.",
       "phone": "+86 27 8679 0329"
     },
     {
       "id": "hubei-provincial-museum",
       "name": "湖北省博物馆",
-      "nameEn": "Hubei Provincial Museum",
+      "nameEn": "Bảo tàng tỉnh Hubei",
       "category": "cultural",
       "image": "/img/ext/8193eef9981b.webp",
-      "description": "One of China's most important provincial museums, featuring artifacts from the ancient Chu state civilization including the famous Sword of King Goujian and the Zenghouyi Bell Set.",
+      "description": "Một trong những bảo tàng tỉnh quan trọng nhất của Trung Quốc, trưng bày các hiện vật từ nền văn minh cổ đại Chu bao gồm thanh kiếm nổi tiếng của Vua Goujian và Bộ Chuông Zenghouyi.",
       "address": "160东湖路, 武昌区",
       "coordinates": {
         "lat": 30.5633,
         "lng": 114.3655
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free (timed entry required)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "09:00-17:00 (Đóng cửa thứ Hai)",
+      "ticketPrice": "Miễn phí (cần đăng ký vào giờ đã định)",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Sword of King Goujian",
-        "Zenghouyi Bell Set",
-        "Shu Age artifacts",
-        "Chu culture exhibition"
+        "Thanh kiếm của Vua Goujian",
+        "Bộ Chuông Zenghouyi",
+        "Hiện vật thời Shu",
+        "Triển lãm văn hóa Chu"
       ],
-      "tips": "Book tickets online in advance. Audio guides available. The bell performance is a must-see. Allocate extra time for the extensive collections.",
+      "tips": "Đặt vé trực tuyến trước. Có sẵn máy thuyết minh âm thanh. Buổi biểu diễn chuông là điều bắt buộc phải xem. Dành thêm thời gian cho các bộ sưu tập rộng lớn.",
       "phone": "+86 027  2259 9069"
     },
     {
       "id": "guiyuan-temple",
       "name": "归元寺",
-      "nameEn": "Guiyuan Temple",
+      "nameEn": "Chùa Guiyuan",
       "category": "cultural",
       "image": "/img/ext/db627149e004.webp",
-      "description": "A famous Buddhist temple built during the Qing dynasty, known for its 500 Arhat statues with unique expressions and its peaceful atmosphere away from the city center.",
+      "description": "Một ngôi chùa Phật giáo nổi tiếng được xây dựng thời nhà Thanh, nổi tiếng với 500 tượng La Hán với nét mặt độc đáo và không khí thanh bình xa khỏi trung tâm thành phố.",
       "address": "20归元寺路, 汉阳区",
       "coordinates": {
         "lat": 30.5694,
@@ -166,167 +166,167 @@
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "20¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "500 Arhat statues",
-        "Avalokiteshvara Hall",
-        "Pine Garden",
-        "Peaceful meditation gardens"
+        "500 tượng La Hán",
+        "Điện Quan Thế Âm",
+        "Vườn Thông",
+        "Các vườn thiền thanh bình"
       ],
-      "tips": "One of the few temples where photos of deities are allowed. The 500 Arhat statues each have unique faces and expressions. A good place for understanding Buddhist art.",
+      "tips": "Một trong những ngôi chùa ít ỏi mà việc chụp ảnh các vị thần được phép. 500 tượng La Hán mỗi tượng đều có khuôn mặt và nét mặt độc đáo. Một nơi tốt để hiểu biết về nghệ thuật Phật giáo.",
       "phone": "+86 27 8484 2162"
     },
     {
       "id": "qingchuan-pavilion",
       "name": "晴川阁",
-      "nameEn": "Qingchuan Pavilion",
+      "nameEn": "Lầu Qingchuan",
       "category": "historical",
       "image": "/img/ext/de969db95905.webp",
-      "description": "A historic pavilion on the banks of the Yangtze River, offering views of the Yellow Crane Tower across the water. Built in the Ming dynasty and rebuilt multiple times.",
+      "description": "Một lầu lịch sử ven bờ sông Dương Tử, cung cấp tầm nhìn về Tháp Hạc Vàng bên kia sông. Xây dựng thời nhà Minh và được tái thiết nhiều lần.",
       "address": "晴川阁, 汉阳区",
       "coordinates": {
         "lat": 30.5467,
         "lng": 114.2894
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "Yangtze River views",
-        "Traditional architecture",
-        "Zheng Zhen Art Museum",
-        "Plum Garden"
+        "Cảnh sông Dương Tử",
+        "Kiến trúc truyền thống",
+        "Bảo tàng Nghệ thuật Zheng Zhen",
+        "Vườn Mận"
       ],
-      "tips": "Best visited in combination with the nearby Yellow Crane Tower. The riverside walkway offers pleasant evening strolls. Beautiful during the plum blossom season.",
+      "tips": "Tốt nhất khi tham quan kết hợp với Tháp Hạc Vàng gần đó. Con đường ven sông mang lại những bộ mặt dạo bộ tối trễ dễ chịu. Đẹp trong mùa hoa mận nở.",
       "phone": "+86 027  9440 5588"
     },
     {
       "id": "mulan-mountain",
       "name": "木兰山",
-      "nameEn": "Mulan Mountain",
+      "nameEn": "Núi Mulan",
       "category": "nature",
       "image": "/img/ext/d9e1e34b36a1.webp",
-      "description": "A sacred mountain in Huangpi District, known for its beautiful natural scenery and the legendary Mulan culture. Features ancient temples and stunning rock formations.",
+      "description": "Một ngọn núi linh thiêng ở Quận Huangpi, nổi tiếng với phong cảnh thiên nhiên tuyệt đẹp và văn hóa Mulan huyền thoại. Có các ngôi chùa cổ và những khu đá động hình hài ngoạn mục.",
       "address": "黄陂区木兰山",
       "coordinates": {
         "lat": 31.3283,
         "lng": 114.3855
       },
       "openingHours": "07:00-18:00",
-      "ticketPrice": "70¥ (includes shuttle)",
-      "recommendedVisitTime": "Half day",
+      "ticketPrice": "70¥ (bao gồm xe đưa đón)",
+      "recommendedVisitTime": "Nửa ngày",
       "highlights": [
-        "Mulan Temple",
-        "Stone carving art",
-        "Forest ecosystem",
-        "Hiking trails"
+        "Đền Mulan",
+        "Nghệ thuật chạm đá",
+        "Hệ sinh thái rừng",
+        "Tuyến đường leo núi"
       ],
-      "tips": "Arrive early to avoid crowds. Wear comfortable hiking shoes. Combine with nearby Mulan Lake for a full day trip. The mountain is considered sacred so maintain respectful behavior.",
+      "tips": "Đến sớm để tránh đông người. Mặc giày leo núi thoải mái. Kết hợp với Hồ Mulan gần đó để có một chuyến đi cả ngày. Núi được coi là linh thiêng nên duy trì hành vi lịch sự.",
       "phone": "+86 027  9965 2077"
     },
     {
       "id": "hankou-riverside",
       "name": "汉口江滩",
-      "nameEn": "Hankou Riverfront",
+      "nameEn": "Bờ sông Hankou",
       "category": "nature",
       "image": "/img/ext/c118e6957af4.webp",
-      "description": "A beautiful riverside area along the Yangtze River in the historic Hankou district. Features the famous ' Jiangtan' or river beach and stunning city skyline views.",
+      "description": "Một khu vực ven sông đẹp ở trong khu vực lịch sử Hankou ven sông Dương Tử. Có 'Jiangtan' hoặc bãi biển sông nổi tiếng và vẻ đẹp tuyệt đẹp của khung cảnh đô thị.",
       "address": "汉口江滩公园, 江岸区",
       "coordinates": {
         "lat": 30.5822,
         "lng": 114.2944
       },
-      "openingHours": "24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24 giờ",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "River beach views",
-        "Night illumination",
-        "British colonial architecture",
-        "Shoes Museum nearby"
+        "Cảnh quan bờ sông",
+        "Chiếu sáng ban đêm",
+        "Kiến trúc thời thuộc địa Anh",
+        "Bảo tàng Giày gần đó"
       ],
-      "tips": "Visit at sunset and stay for the nightly light show. The Bund area nearby features colonial-era buildings. Good for evening walks and photography.",
+      "tips": "Hãy đến tham quan vào lúc hoàng hôn và ở lại để xem trình chiếu ánh sáng vào ban đêm. Khu Bund gần đó có nhiều tòa nhà thời thuộc địa. Lý tưởng cho các chuyến đi dạo và chụp ảnh vào buổi tối.",
       "phone": "+86 027  0780 8475"
     },
     {
       "id": "jianghan-road",
       "name": "江汉路",
-      "nameEn": "Jianghan Road Pedestrian Street",
+      "nameEn": "Phố Đi Bộ Jianghan",
       "category": "shopping",
       "image": "/img/ext/8933f9ec083c.webp",
-      "description": "The most famous shopping street in Wuhan, featuring a mix of modern malls and historic colonial-era buildings. A vibrant pedestrian area perfect for shopping and people-watching.",
+      "description": "Con phố mua sắm nổi tiếng nhất ở Vũ Hán, kết hợp các trung tâm thương mại hiện đại và những tòa nhà còn sót lại từ thời thuộc địa. Một khu vực đi bộ sôi động, lý tưởng cho việc mua sắm và ngắm người.",
       "address": "江汉区江汉路",
       "coordinates": {
         "lat": 30.5911,
         "lng": 114.2833
       },
-      "openingHours": "24 hours (shops typically 10:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24 giờ (các cửa hàng thường từ 10:00-22:00)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Historic architecture",
-        "Modern shopping",
-        "Street performers",
-        "Local snacks"
+        "Kiến trúc lịch sử",
+        "Mua sắm hiện đại",
+        "Nghệ sĩ đường phố",
+        "Đồ ăn vặt địa phương"
       ],
-      "tips": "Best visited in the evening when the buildings are illuminated. Try local snacks from street vendors. Connects to the Bund area for a full walking tour.",
+      "tips": "Tốt nhất nên đến vào buổi tối khi các tòa nhà được chiếu sáng. Hãy thử các món ăn vặt địa phương từ các đầu bếp đường phố. Kết nối với khu Bund để có một tuyến đi bộ đầy đủ.",
       "phone": "+86 027  6497 0016"
     },
     {
       "id": "masion-de-liberte",
       "name": "武汉天地",
-      "nameEn": "Wuhan Tiandi",
+      "nameEn": "translated Vietnamese",
       "category": "culture",
       "image": "/img/ext/b0538691cbc4.webp",
-      "description": "A trendy lifestyle district in the Hankou area, combining historic industrial architecture with modern entertainment, dining, and cultural spaces.",
+      "description": "Một khu lối sống thời trang ở khu Hankou, kết hợp kiến trúc công nghiệp lịch sử với các không gian giải trí, ẩm thực và văn hóa hiện đại.",
       "address": "芦沟桥路68号, 江岸区",
       "coordinates": {
         "lat": 30.5966,
         "lng": 114.2888
       },
-      "openingHours": "24 hours (businesses vary)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24 giờ (các doanh nghiệp có sự khác biệt)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Industrial heritage buildings",
-        "Art galleries",
-        "International restaurants",
-        "Nightlife"
+        "Các tòa nhà di sản công nghiệp",
+        "Phòng tranh nghệ thuật",
+        "Nhà hàng quốc tế",
+        "Đêm cuộc sống"
       ],
-      "tips": "Great for evening dining and nightlife. Hosts regular cultural events and markets. The former warehouse architecture is impressive. Popular with young locals.",
+      "tips": "Lý tưởng cho bữa tối và đêm vui chơi. Tổ chức các sự kiện văn hóa và chợ thường xuyên. Kiến trúc nhà kho cũ rất ấn tượng. Phổ biến với giới trẻ địa phương.",
       "phone": "+86 027  4321 1737"
     },
     {
       "id": "_OPTICAL_VALLEY",
       "name": "光谷步行街",
-      "nameEn": "Guanggu Optical Valley Boulevard",
+      "nameEn": "Boulevard Guangguguangguang",
       "category": "shopping",
       "image": "/img/ext/0b062a0ff849.webp",
-      "description": "A massive pedestrian shopping and entertainment district in the heart of Wuhan's tech hub, featuring international brands, restaurants, and attractions.",
+      "description": "Một khu mua sắm và giải trí rộng lớn dành cho người đi bộ ở trung tâm của khu công nghệ Vũ Hán, với các thương hiệu quốc tế, nhà hàng và các điểm tham quan.",
       "address": "光谷广场, 武昌区",
       "coordinates": {
         "lat": 30.4988,
         "lng": 114.4
       },
-      "openingHours": "24 hours (shops typically 10:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "24 giờ (các cửa hàng thường từ 10:00-22:00)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "3-4 giờ",
       "highlights": [
-        "World Street architecture",
-        "Musical Fountain",
-        "International dining",
-        "Tech museums"
+        "Kiến trúc Đường Thế Giới",
+        "Đài phun nước hòa nhạc",
+        "Ẩm thực quốc tế",
+        "Các bảo tàng công nghệ"
       ],
-      "tips": "The Spanish Street and Italian Street offer great photo opportunities. The musical fountain show is spectacular. Connected to Wudang Mountain via metro.",
+      "tips": "Đường Tây Ban Nha và Đường Ý cung cấp những cơ hội chụp ảnh tuyệt vời. Trình chiếu đài phun nước hòa nhạc rất lộng lẫy. Kết nối với núi Vũ Đang thông qua hệ thống tàu điện.",
       "phone": "+86 027  1970 6523"
     },
     {
       "id": "changchong-temple",
       "name": "长春观",
-      "nameEn": "Changchun Temple",
+      "nameEn": "Đền Trường Xuân",
       "category": "cultural",
       "image": "/img/ext/88bacafe8f0a.webp",
-      "description": "One of the three famous Taoist temples in China, located in the heart of the city. Features well-preserved Ming and Qing dynasty architecture.",
+      "description": "Một trong ba ngôi đền Nho giáo nổi tiếng ở Trung Quốc, nằm ở trung tâm thành phố. Có kiến trúc thời Minh và Thanh được gìn giữ tốt.",
       "address": "大东门长春观",
       "coordinates": {
         "lat": 30.5344,
@@ -334,95 +334,95 @@
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "15¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1 giờ",
       "highlights": [
-        "Taoist architecture",
-        "Sanjie Hall",
-        "Ancient banyan trees",
-        "Taoist artifacts"
+        "Kiến trúc Đạo giáo",
+        "Điện Sanjie",
+        "Cổ thụ đa già",
+        "Các hiện vật Nho giáo"
       ],
-      "tips": "Less crowded than other temples. Good for understanding Taoist culture. Located near the Yangtze River Bridge. The temple offers Taoist tea ceremonies.",
+      "tips": "Ít đông đúc hơn các đền khác. Tốt để hiểu về văn hóa Nho giáo. Nằm gần Cầu sông Dương Tử. Đền cung cấp các buổi lễ trà Nho giáo.",
       "phone": "+86 027  5156 4256"
     },
     {
       "id": "mopanshan",
       "name": "磨山风景区",
-      "nameEn": "Mopanshan Scenic Area",
+      "nameEn": "Khu Phong cảnh Mopanshan",
       "category": "nature",
       "image": "/img/ext/7a2672fbb2eb.webp",
-      "description": "Part of East Lake, Mopanshan features the famous楚城 (Chu City) theme park and beautiful gardens. Known for the massive 朱碑亭 (Zhu Bei Pavilion).",
+      "description": "Một phần của Hồ Đông, Mopanshan có khu cảnh đẹp nổi tiếng Chủ Thành (Chu City) và các khu vườn tuyệt đẹp. Nổi tiếng với đài Chủ Bài Đình (Zhu Bei Pavilion) khổng lồ.",
       "address": "东湖生态旅游风景区磨山",
       "coordinates": {
         "lat": 30.5611,
         "lng": 114.4055
       },
       "openingHours": "07:00-18:00",
-      "ticketPrice": "60¥ (includes cable car)",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "60¥ (bao gồm cáp xe)",
+      "recommendedVisitTime": "3-4 giờ",
       "highlights": [
-        "楚城 theme park",
-        "Cable car to summit",
-        "Cherry blossom gardens",
-        "朱碑亭 monument"
+        "Khu cảnh đẹp Chủ Thành",
+        "Cáp treo lên đỉnh",
+        "Vườn hoa anh đào",
+        "Tượng đài Chử Bệ Đình"
       ],
-      "tips": "Take the cable car to the top for panoramic East Lake views. The Chu City architecture is impressive. Best during spring for flowers. Combine with other East Lake attractions.",
+      "tips": "Hãy đi cáp xe lên đỉnh để có những tầm nhìn toàn cảnh của Hồ Đông. Kiến trúc Chủ Thành rất ấn tượng. Tốt nhất là vào mùa xuân để thưởng thức hoa. Kết hợp với các điểm tham quan khác của Hồ Đông.",
       "phone": "+86 027  1592 7158"
     },
     {
       "id": "tanhualin",
       "name": "昙华林",
-      "nameEn": "Tanhualin",
+      "nameEn": "translated Vietnamese",
       "category": "culture",
       "image": "/img/ext/31617e07359d.webp",
-      "description": "A historic cultural district with over 600 years of history, featuring traditional architecture, art galleries, cafes, and a blend of old and new Wuhan.",
+      "description": "Một khu vực văn hóa lịch sử với hơn 600 năm lịch sử, nổi bật với kiến trúc truyền thống, phòng tranh nghệ thuật, quán cà phê và sự kết hợp giữa Wuhan cổ điển và hiện đại.",
       "address": "昙华林, 武昌区",
       "coordinates": {
         "lat": 30.5366,
         "lng": 114.3088
       },
-      "openingHours": "24 hours (shops typically 10:00-21:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24 giờ (các cửa hàng thường mở từ 10:00-21:00)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Historic streets",
-        "Art galleries",
-        "Traditional courtyard houses",
-        "Local cafes"
+        "Phố lịch sử",
+        "Phòng tranh nghệ thuật",
+        "Nhà sân truyền thống",
+        "Quán cà phê địa phương"
       ],
-      "tips": "Best explored on foot to appreciate the alleyways. Visit in the late afternoon and stay for dinner. Many buildings have interesting historical stories. Great for souvenirs and local crafts.",
+      "tips": "Tốt nhất khám phá bằng chân để cảm nhận các con phố nhỏ. Thăm vào chiều muộn và ở lại dùng bữa tối. Nhiều tòa nhà có những câu chuyện lịch sử thú vị. Tuyệt vời cho việc mua lưu niệm và thủ công mỹ nghệ địa phương.",
       "phone": "+86 027  9490 1518"
     },
     {
       "id": "zhongshan-park",
       "name": "中山公园",
-      "nameEn": "Zhongshan Park",
+      "nameEn": "Công viên Trung Sơn",
       "category": "nature",
       "image": "/img/ext/51ab193376aa.webp",
-      "description": "A large urban park in the center of Hankou, featuring lakes, gardens, amusement rides, and the historic Zhongshan Tower. A favorite local recreation area.",
+      "description": "Công viên đô thị lớn ở trung tâm Hán Khẩu, có hồ, vườn, trò chơi giải trí và Tháp Trung Sơn lịch sử. Khu vui chơi giải trí yêu thích của người dân địa phương.",
       "address": "解放大道696号, 江汉区",
       "coordinates": {
         "lat": 30.5788,
         "lng": 114.2788
       },
       "openingHours": "06:00-22:00",
-      "ticketPrice": "Free (rides require separate tickets)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "Miễn phí (các trò chơi cần mua vé riêng)",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Central lake",
-        "Historic pagoda",
-        "Amusement area",
-        "Morning tai chi groups"
+        "Hồ trung tâm",
+        "Tháp lịch sử",
+        "Khu vực giải trí",
+        "Nhóm Tài Chi buổi sáng"
       ],
-      "tips": "Join the morning tai chi groups for a local experience. The park transforms at night with illuminations. Good for families with children. Near the Wuhan International Convention Center.",
+      "tips": "Tham gia các nhóm Tài Chi buổi sáng để trải nghiệm như người địa phương. Công viên biến đổi vào ban đêm với đèn chiếu sáng. Phù hợp cho gia đình có trẻ em. Gần Trung tâm Hội nghị Quốc tế Vũ Hán.",
       "phone": "+86 027  5464 2103"
     },
     {
       "id": "baotong-temple",
       "name": "宝通寺",
-      "nameEn": "Baotong Temple",
+      "nameEn": "Chùa Baotong",
       "category": "cultural",
       "image": "/img/ext/76e6b003581b.webp",
-      "description": "The oldest temple in Wuhan, dating back 1600 years. Located at the foot of the iconic Machiu mountain with beautiful ancient architecture and Buddhist artifacts.",
+      "description": "Ngôi chùa cổ nhất ở Wuhan, với lịch sử 1600 năm. Nằm ở chân ngọn núi Machiu nổi tiếng với kiến trúc cổ đẹp và di vật Phật giáo.",
       "address": "武昌区宝通寺",
       "coordinates": {
         "lat": 30.5311,
@@ -430,47 +430,47 @@
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "10¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "Ancient Buddhist hall",
-        "Machiu Mountain views",
-        "1,000-year-old pagoda tree",
-        "Vegetarian restaurant"
+        "Đại tự chùa cổ",
+        "Tầm nhìn núi Machiu",
+        "Cây bồ đề 1000 năm tuổi",
+        "Nhà hàng chay"
       ],
-      "tips": "The temple is at the base of Machiu (Snake Hill). Climb the hill for city views. A working temple so maintain appropriate behavior. The vegetarian restaurant is excellent.",
+      "tips": "Ngôi chùa nằm ở chân núi Machiu (núi Rắn). Lech núi để có tầm nhìn toàn cảnh thành phố. Một ngôi chùa đang hoạt động nên duy trì hành vi phù hợp. Nhà hàng chay rất ngon.",
       "phone": "+86 027  6356 0288"
     },
     {
       "id": "liverpool-road",
       "name": "黎黄陂路",
-      "nameEn": "Lihuangpi Road",
+      "nameEn": "Đường Lihuangpi",
       "category": "culture",
       "image": "/img/ext/10bd37f3f64c.webp",
-      "description": "A historic street in the Hankou concession area featuring well-preserved colonial architecture, teahouses, cafes, and museums documenting Wuhan's treaty port history.",
+      "description": "Một con phố lịch sử trong khu thuộc địa Hankou, nổi bật với kiến trúc thuộc địa được gìn giữ tốt, quán trà, quán cà phê và các bảo tàng ghi lại lịch sử cảng thông thương của Wuhan.",
       "address": "黎黄陂路, 江岸区",
       "coordinates": {
         "lat": 30.5955,
         "lng": 114.2911
       },
-      "openingHours": "24 hours (shops typically 10:00-20:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24 giờ (các cửa hàng thường mở từ 10:00-20:00)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "Colonial architecture",
-        "Nostalgic cafes",
-        "Erqi Memorial Hall",
-        "Former concession area"
+        "Kiến trúc thuộc địa",
+        "Quán cà phê lưu niệm",
+        "Nhà tưởng niệm Erqi",
+        "Khu thuộc địa cũ"
       ],
-      "tips": "Best explored on foot. The street captures Wuhan's international history. Try the traditional snacks from local vendors. Perfect for photography enthusiasts.",
+      "tips": "Tốt nhất khám phá bằng chân. Con phố này thể hiện lịch sử quốc tế của Wuhan. Thử các món ăn vặt truyền thống từ các người bán hàng địa phương. Hoàn hảo cho những người đam mê nhiếp ảnh.",
       "phone": "+86 027  0668 2062"
     },
     {
       "id": "wuhan-insect-kingdom",
       "name": "武汉昆虫王国",
-      "nameEn": "Wuhan Insect Kingdom",
+      "nameEn": "Vương quốc Côn trùng Wuhan",
       "category": "nature",
       "image": "/img/ext/331cbbfcdbc6.webp",
-      "description": "An educational theme park featuring thousands of insect species, butterfly gardens, and interactive exhibits about the insect world.",
+      "description": "Một công viên chủ đề giáo dục với hàng ngàn loài côn trùng, vườn bướm và triển lãm tương tác về thế giới côn trùng.",
       "address": "黄陂区木兰花乡",
       "coordinates": {
         "lat": 31.1088,
@@ -478,71 +478,71 @@
       },
       "openingHours": "08:30-17:30",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4 giờ",
       "highlights": [
-        "Butterfly garden",
-        "Insect museum",
-        "Live insect displays",
-        "Nature trails"
+        "Vườn bướm",
+        "Bảo tàng côn trùng",
+        "Trưng bày côn trùng sống",
+        "Các tuyến đường mòn tự nhiên"
       ],
-      "tips": "Great for families with children. Best visited in spring and summer for active insects. Wear comfortable walking shoes. Combine with nearby Mulan Mountain.",
+      "tips": "Lý tưởng cho gia đình có trẻ em. Tốt nhất thăm vào mùa xuân và hè để côn trùng hoạt động. Mặc giày thể thao thoải mái. Kết hợp với núi Mulan gần đó.",
       "phone": "+86 027  9596 8753"
     },
     {
       "id": "hanstreet",
       "name": "楚河汉街",
-      "nameEn": "Chu River Han Street",
+      "nameEn": "Khu phố Chu River Han",
       "category": "shopping",
       "image": "/img/ext/b58d6214a269.webp",
-      "description": "A premium shopping and entertainment district featuring international brands, restaurants, and stunning modern architecture along a man-made canal.",
+      "description": "Một khu mua sắm và giải trí cao cấp với các thương hiệu quốc tế, nhà hàng và kiến trúc hiện đại nổi bật dọc theo một kênh đào nhân tạo.",
       "address": "楚河汉街, 武昌区",
       "coordinates": {
         "lat": 30.5722,
         "lng": 114.3655
       },
-      "openingHours": "24 hours (shops typically 10:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24 giờ (các cửa hàng thường từ 10:00-22:00)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Modern architecture",
-        "Boat tours",
-        "International brands",
-        "Nightlife"
+        "Kiến trúc hiện đại",
+        "Tour thuyền",
+        "Thương hiệu quốc tế",
+        "Đêm cuộc sống"
       ],
-      "tips": "Beautiful at night when illuminated. Take a boat tour on the canal for a different perspective. The mix of shopping and dining is excellent. Connected to East Lake.",
+      "tips": "Đẹp đẽ vào ban đêm khi được chiếu sáng. Hãy tham gia tour thuyền trên kênh đào để có góc nhìn khác biệt. Sự kết hợp giữa mua sắm và ẩm thực rất tuyệt vời. Kết nối với Hồ Đông.",
       "phone": "+86 027  8702 9639"
     },
     {
       "id": "wuhan-moon-city",
       "name": "武汉月湖风景区",
-      "nameEn": "Moon Lake Scenic Area",
+      "nameEn": "Khu phong cảnh Hồ Trăng",
       "category": "nature",
       "image": "/img/ext/6ff5a1e7187d.webp",
-      "description": "A serene urban lake with surrounding parks, gardens, and the famous Moon Lake Moon Bridge. Popular for morning exercise and evening walks.",
+      "description": "Một hồ nước thành thị yên bình với các công viên, vườn hoa và cây cầu Mặt Trăng nổi tiếng bao quanh. Phổ biến cho việc tập thể dục buổi sáng và dạo bộ vào buổi tối.",
       "address": "汉阳区月湖桥",
       "coordinates": {
         "lat": 30.5511,
         "lng": 114.2555
       },
-      "openingHours": "24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24 giờ",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "Moon Bridge",
-        "Lakeside gardens",
-        "Moon Lake Park",
-        "Ancient temples nearby"
+        "Cây cầu Mặt Trăng",
+        "Các vườn ven hồ",
+        "Công viên Hồ Trăng",
+        "Các ngôi chùa cổ gần đó"
       ],
-      "tips": "Best visited at sunset. The Moon Bridge is beautiful for photos. Combine with a visit to Guiyuan Temple nearby.",
+      "tips": "Tốt nhất khi đến vào lúc hoàng hôn. Cây cầu Mặt Trăng rất đẹp để chụp ảnh. Kết hợp với việc tham quan chùa Guiyuan gần đó.",
       "phone": "+86 027  7717 0514"
     },
     {
       "id": "wuhan-sea-world",
       "name": "武汉海昌极地海洋世界",
-      "nameEn": "Wuhan Haichang Polar Ocean World",
+      "nameEn": "Thế giới Đại Dương Bắc Cực Wuhan Haichang",
       "category": "entertainment",
       "image": "/img/ext/331422cf63e6.webp",
-      "description": "A large marine theme park with polar animals, dolphin shows, and underwater tunnels. Perfect for families with children.",
+      "description": "Một công viên chủ đề biển lớn với các loài động vật cực, các trò chơi tàu cá heo và các đường hầm dưới nước. Hoàn hảo cho các gia đình có trẻ em.",
       "address": "东西湖区金银潭大道",
       "coordinates": {
         "lat": 30.6511,
@@ -550,47 +550,47 @@
       },
       "openingHours": "09:00-17:00",
       "ticketPrice": "150¥",
-      "recommendedVisitTime": "4-5 hours",
+      "recommendedVisitTime": "4-5 giờ",
       "highlights": [
-        "Polar bear exhibit",
-        "Dolphin performances",
-        "Underwater tunnel",
-        "Penguin colony"
+        "Triển lãm gấu trúc Bắc Cực",
+        "Biểu diễn cá heo",
+        "Đường hầm dưới nước",
+        "Bầy chim cánh cụt"
       ],
-      "tips": "Arrive early to catch all shows. Weekends are crowded. Book tickets online for discounts. Combine with nearby Wuhan Museum.",
+      "tips": "Đến sớm để xem tất cả các trò chơi. Cuối tuần thì đông đúc. Đặt vé trực tuyến để được giảm giá. Kết hợp với việc tham quan Bảo tàng Wuhan gần đó.",
       "phone": "+86 027  9628 1120"
     },
     {
       "id": "wuhan-museum",
       "name": "武汉博物馆",
-      "nameEn": "Wuhan Museum",
+      "nameEn": "Bảo tàng Wuhan",
       "category": "cultural",
       "image": "/img/ext/626ef44f98b2.webp",
-      "description": "The largest museum in central China, showcasing Wuhan's history from ancient times to modern era with extensive collections of artifacts and interactive exhibits.",
+      "description": "Viện bảo tàng lớn nhất ở Trung tâm Trung Quốc, thể hiện lịch sử Vũ Hán từ thời cổ đại đến thời hiện đại với hàng loạt bộ sưu tập hiện vật và triển lãm tương tác.",
       "address": "江汉区青年路373号",
       "coordinates": {
         "lat": 30.6055,
         "lng": 114.2655
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "09:00-17:00 (Đóng cửa thứ Hai)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Ancient porcelain collection",
-        "Ming and Qing dynasties art",
-        "Modern Wuhan history",
-        "Calligraphy exhibits"
+        "Bộ sưu tập tàu sứ cổ đại",
+        "Nghệ thuật triều Minh và Thanh",
+        "Lịch sử Vũ Hán hiện đại",
+        "Triển lãm thư pháp"
       ],
-      "tips": "Free audio guides available. Allocate at least 2 hours. The museum shop has good souvenirs. Near the Wuhan Sea World.",
+      "tips": "Có sẵn các hướng dẫn âm thanh miễn phí. Dành ít nhất 2 giờ. Cửa hàng của viện bảo tàng có nhiều quà lưu niệm đẹp. Gần Vũ Hán Hải Vương Thế Giới.",
       "phone": "+86 027  8201 5323"
     },
     {
       "id": "wuhan-botanical-garden",
       "name": "武汉植物园",
-      "nameEn": "Wuhan Botanical Garden",
+      "nameEn": "Vườn Botanic Wuhan",
       "category": "nature",
       "image": "/img/ext/e528126ef988.webp",
-      "description": "One of the three major botanical gardens in China, featuring diverse plant collections, themed gardens, and research facilities on the shores of East Lake.",
+      "description": "Một trong ba vườn botanic chính của Trung Quốc, với nhiều bộ sưu tập thực vật đa dạng, các khu vườn chủ đề và cơ sở nghiên cứu ven bờ Hồ Đông.",
       "address": "洪山区鲁磨路1号",
       "coordinates": {
         "lat": 30.5411,
@@ -598,140 +598,140 @@
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "35¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Lotus pond",
-        "Tropical greenhouse",
-        "Cherry blossom avenue",
-        "Peony garden"
+        "Ao sen",
+        "Nhà kính nhiệt đới",
+        "Đại lộ hoa anh đào",
+        "Vườn hoa mẫu đơn"
       ],
-      "tips": "Best in spring and summer for flowers. The tropical greenhouse is air-conditioned. Bring sunscreen and water. Great for nature photography.",
+      "tips": "Tốt nhất vào mùa xuân và hè để tham quan hoa. Nhà kính nhiệt đới có điều hòa không khí. Mang theo kem chống nắng và nước. Rất thích hợp cho nhiếp ảnh thiên nhiên.",
       "phone": "+86 027  0970 7187"
     },
     {
       "id": "wuhan-revolutionary-memorial",
       "name": "武汉革命博物馆",
-      "nameEn": "Wuhan Revolutionary Memorial",
+      "nameEn": "Bảo tàng Cách mạng Vũ Hán",
       "category": "historical",
       "image": "/img/ext/4a4dcb90ca9a.webp",
-      "description": "Commemorating Wuhan's revolutionary history with exhibits on the 1911 Xinhai Revolution and the Chinese Communist Party's early activities.",
+      "description": "Tưởng nhớ lịch sử cách mạng của Vũ Hán với các triển lãm về Cách mạng Tân Hợi năm 1911 và các hoạt động đầu tiên của Đảng Cộng sản Trung Quốc.",
       "address": "武昌区黄鹤楼街道",
       "coordinates": {
         "lat": 30.5455,
         "lng": 114.3011
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "1911 Revolution exhibits",
-        "Early CPC history",
-        "Historical artifacts",
-        "Revolutionary artwork"
+        "Triển lãm Cách mạng 1911",
+        "Lịch sử Đảng Cộng sản Trung Quốc thời kỳ đầu",
+        "Di tích lịch sử",
+        "Nghệ thuật cách mạng"
       ],
-      "tips": "Near Yellow Crane Tower. Combine with a visit to understand Wuhan's revolutionary significance. English descriptions are limited.",
+      "tips": "Gần Tháp Hạc Vàng. Kết hợp với chuyến thăm để hiểu ý nghĩa cách mạng của Vũ Hán. Mô tả tiếng Anh hạn chế.",
       "phone": "+86 027  2265 9284"
     },
     {
       "id": "wuhan-shengrihua-yuan",
       "name": "胜天农庄",
-      "nameEn": "Shengtian Farm",
+      "nameEn": "Nông trại Shengtian",
       "category": "nature",
       "image": "/img/ext/422c180b7586.webp",
-      "description": "A scenic rural retreat near Wuhan with agricultural experiences, recreational activities, and beautiful countryside scenery.",
+      "description": "Khu nghỉ dưỡng nông thôn tuyệt đẹp gần Vũ Hán với trải nghiệm nông nghiệp, hoạt động giải trí và cảnh quan nông thôn xanh mát.",
       "address": "黄陂区王家河",
       "coordinates": {
         "lat": 30.9511,
         "lng": 114.3455
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "80¥ (some activities extra)",
-      "recommendedVisitTime": "Half day to full day",
+      "ticketPrice": "80¥ (một số hoạt động phụ thu)",
+      "recommendedVisitTime": "Nửa ngày đến cả ngày",
       "highlights": [
-        "Farm activities",
-        "Fruit picking",
-        "Rural scenery",
-        "BBQ areas"
+        "Hoạt động nông trại",
+        "Hái trái cây",
+        "Phong cảnh nông thôn",
+        "Khu vực nướng BBQ"
       ],
-      "tips": "Good for families. Book accommodation in advance for overnight stays. Spring and autumn are best seasons. Authentic rural experience.",
+      "tips": "Phù hợp cho gia đình. Đặt phòng trước để ở qua đêm. Mùa xuân và mùa thu là thời điểm tốt nhất. Trải nghiệm nông thôn chân thực.",
       "phone": "+86 027  5112 8604"
     },
     {
       "id": "wuhan-yongling-tomb",
       "name": "汉阳陵永陵",
-      "nameEn": "Tomb of Emperor Wu of Han",
+      "nameEn": "Lăng mộ Hoàng đế Hán Vũ",
       "category": "historical",
       "image": "/img/ext/caf86c2817ea.webp",
-      "description": "The tomb of Emperor Liu Qi of the Western Han dynasty, featuring archaeological excavations and exhibits of ancient burial customs.",
+      "description": "Lăng mộ Hoàng đế Lưu Khởi của triều đại Tây Hán, với các cuộc khai quật khảo cổ và trưng bày về phong tục tang lễ cổ đại.",
       "address": "汉阳区郭茨口",
       "coordinates": {
         "lat": 30.5611,
         "lng": 114.2211
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "Ancient tomb site",
-        "Archaeological displays",
-        "Han dynasty artifacts",
-        "Historical information"
+        "Khu vực lăng mộ cổ đại",
+        "Trưng bày khảo cổ",
+        "Di vật triều đại Hán",
+        "Thông tin lịch sử"
       ],
-      "tips": "Less crowded than other sites. Combine with nearby Guiyuan Temple. Good for history enthusiasts.",
+      "tips": "Ít đông đúc hơn các địa điểm khác. Kết hợp với chùa Quảng Viện gần đó. Phù hợp cho những người đam mê lịch sử.",
       "phone": "+86 027  2633 2427"
     },
     {
       "id": "wuhan-xiaoyao Park",
       "name": "武汉欢乐谷",
-      "nameEn": "Wuhan Happy Valley",
+      "nameEn": "Vũ Hán Happy Valley",
       "category": "entertainment",
       "image": "/img/ext/99bbb956a390.webp",
-      "description": "A large amusement park with thrilling rides, live shows, and family-friendly attractions. One of Central China's premier entertainment destinations.",
+      "description": "Một công viên giải trí lớn với những trò chơi cảm giác mạnh, biểu diễn trực tiếp và các điểm tham quan thân thiện với gia đình. Một trong những điểm đến giải trí hàng đầu của miền Trung Trung Quốc.",
       "address": "东湖生态旅游风景区",
       "coordinates": {
         "lat": 30.5211,
         "lng": 114.4355
       },
-      "openingHours": "09:30-18:00 (extended hours in summer)",
-      "ticketPrice": "200¥ (height restrictions apply)",
-      "recommendedVisitTime": "Full day",
+      "openingHours": "09:30-18:00 (giờ mở cửa kéo dài vào mùa hè)",
+      "ticketPrice": "200¥ (áp dụng hạn chế chiều cao)",
+      "recommendedVisitTime": "Cả ngày",
       "highlights": [
-        "Extreme rides",
-        "Water park section",
-        "Parade shows",
-        "Night performances"
+        "Trò chơi cảm giác mạnh",
+        "Khu vực công viên nước",
+        "Diễu hành biểu diễn",
+        "Biểu diễn ban đêm"
       ],
-      "tips": "Buy tickets online in advance. Height restrictions on some rides. Wear comfortable clothes and shoes. Summer water park is popular.",
+      "tips": "Mua vé trực tuyến trước. Hạn chế chiều cao đối với một số trò chơi. Mặc quần áo và giày thoải mái. Công viên nước mùa hè rất phổ biến.",
       "phone": "+86 027  0455 5024"
     },
     {
       "id": "wuhan-furong-valley",
       "name": "武汉芙蓉谷漂流",
-      "nameEn": "Furong Valley Rafting",
+      "nameEn": "Vũ Hán Furong Valley Le Giang",
       "category": "nature",
       "image": "/img/ext/841642b5db06.webp",
-      "description": "An exciting rafting experience through scenic mountain valleys near Wuhan. Popular summer activity with beautiful natural scenery.",
+      "description": "Trải nghiệm chèo thuyền vượt thác thú vị qua những thung lũng núi cảnh quan tuyệt đẹp gần Vũ Hán. Hoạt động mùa hè phổ biến với cảnh quan thiên nhiên tuyệt đẹp.",
       "address": "黄陂区刘家山",
       "coordinates": {
         "lat": 31.1511,
         "lng": 114.0511
       },
-      "openingHours": "09:00-17:00 (seasonal, May-October)",
+      "openingHours": "09:00-17:00 (theo mùa, từ tháng 5 đến tháng 10)",
       "ticketPrice": "180¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4 giờ",
       "highlights": [
-        "White water rafting",
-        "Mountain scenery",
-        "Summer cooling",
-        "Group activities"
+        "Mạo hiểm trên sóng trắng",
+        "Phong cảnh núi",
+        "Giải nhiệt mùa hè",
+        "Hoạt động nhóm"
       ],
-      "tips": "Book through travel agencies. Wear water shoes and bring change of clothes. Not suitable for young children or elderly. Best in summer.",
+      "tips": "Đặt chỗ qua các đại lý du lịch. Mặc giày nước và mang theo quần áo thay đổi. Không thích hợp cho trẻ nhỏ hoặc người già. Tốt nhất vào mùa hè.",
       "phone": "+86 027  3354 6442"
     },
     {
       "id": "yellow-crane",
       "name": "黄鹤楼",
-      "nameEn": "Yellow Crane Tower",
+      "nameEn": "Tháp Hạc Vàng",
       "category": "landmark",
       "description": "中国四大名楼之一，有天下江山第一楼之称。",
       "address": "武汉市武昌区",
@@ -753,7 +753,7 @@
     {
       "id": "hubei-museum",
       "name": "湖北省博物馆",
-      "nameEn": "Hubei Provincial Museum",
+      "nameEn": "Bảo tàng tỉnh Hubei",
       "category": "museum",
       "description": "馆藏文物24万件，以曾侯乙编钟最著名。",
       "address": "武汉市武昌区",
@@ -775,7 +775,7 @@
     {
       "id": "wuhan-uni",
       "name": "武汉大学",
-      "nameEn": "Wuhan University",
+      "nameEn": "Đại học Vũ Hán",
       "category": "landmark",
       "description": "中国最美丽的大学之一，春季樱花闻名全国。",
       "address": "武汉市武昌区",
@@ -797,7 +797,7 @@
     {
       "id": "hubu-alley",
       "name": "户部巷",
-      "nameEn": "Hubu Alley",
+      "nameEn": "Phố Hubu",
       "category": "street",
       "description": "武汉最著名的小吃街，有热干面等武汉小吃。",
       "address": "武汉市武昌区",
@@ -820,7 +820,7 @@
     {
       "id": "yangtze-bridge",
       "name": "武汉长江大桥",
-      "nameEn": "Wuhan Yangtze River Bridge",
+      "nameEn": "Cầu Sông Dương Tử Vũ Hán",
       "category": "landmark",
       "description": "中国第一座长江大桥，有万里长江第一桥之称。",
       "address": "武汉市武昌区",
@@ -842,7 +842,7 @@
     {
       "id": "wuhan-food",
       "name": "武汉美食",
-      "nameEn": "Wuhan Food",
+      "nameEn": "Ẩm thực Vũ Hán",
       "category": "street",
       "description": "武汉有热干面和各种小吃。",
       "address": "武汉市",
@@ -865,7 +865,7 @@
     {
       "id": "wuhan-night",
       "name": "武汉夜景",
-      "nameEn": "Wuhan Night View",
+      "nameEn": "Vũ Hán Ban Đêm",
       "category": "landmark",
       "description": "长江两岸的夜景灯光秀。",
       "address": "武汉市",
@@ -887,7 +887,7 @@
     {
       "id": "wuhan-botanical",
       "name": "武汉植物园",
-      "nameEn": "Wuhan Botanical Garden",
+      "nameEn": "Vườn Botanic Wuhan",
       "category": "nature",
       "description": "华中地区最大的植物园。",
       "address": "武汉市武昌区",
@@ -908,7 +908,7 @@
     {
       "id": "wuhan-zoo",
       "name": "武汉动物园",
-      "nameEn": "Wuhan Zoo",
+      "nameEn": "Vũ Hán Sở Thú",
       "category": "nature",
       "description": "武汉最大的动物园。",
       "address": "武汉市汉阳区",
@@ -929,7 +929,7 @@
     {
       "id": "wuhan-science",
       "name": "武汉科技馆",
-      "nameEn": "Wuhan Science Museum",
+      "nameEn": "Viện Khoa học Vũ Hán",
       "category": "museum",
       "description": "华中地区最大的科技馆。",
       "address": "武汉市江岸区",
@@ -950,7 +950,7 @@
     {
       "id": "mulan-tianchi",
       "name": "木兰天池",
-      "nameEn": "Mulan Tianchi",
+      "nameEn": "Mulan Thiên Trì",
       "category": "nature",
       "description": "武汉北部的风景区，有天池和瀑布。",
       "address": "武汉市黄陂区",
@@ -972,7 +972,7 @@
     {
       "id": "wuhan-art",
       "name": "武汉美术馆",
-      "nameEn": "Wuhan Art Museum",
+      "nameEn": "Bảo tàng Nghệ thuật Vũ Hán",
       "category": "museum",
       "description": "展示中外美术作品。",
       "address": "武汉市江岸区",
@@ -993,7 +993,7 @@
     {
       "id": "huazhong-uni",
       "name": "华中科技大学",
-      "nameEn": "Huazhong University",
+      "nameEn": "Đại học Hoa Trung",
       "category": "landmark",
       "description": "中国最著名的理工科大学之一。",
       "address": "武汉市洪山区",
@@ -1014,7 +1014,7 @@
     {
       "id": "wuchang-riverside",
       "name": "武昌江滩",
-      "nameEn": "Wuchang Riverside",
+      "nameEn": "Bờ sông Vũ Xương",
       "category": "landmark",
       "description": "长江边的休闲区。",
       "address": "武汉市武昌区",
@@ -1036,7 +1036,7 @@
     {
       "id": "cailinji",
       "name": "蔡林记",
-      "nameEn": "Cailinji",
+      "nameEn": "Thái Lâm Ký",
       "category": "street",
       "description": "武汉最有名的热干面店。",
       "address": "武汉市",
@@ -1057,7 +1057,7 @@
     {
       "id": "wuhan-metro",
       "name": "武汉地铁",
-      "nameEn": "Wuhan Metro",
+      "nameEn": "Metro Vũ Hán",
       "category": "landmark",
       "description": "中国重要的城市轨道交通系统。",
       "address": "武汉市",
@@ -1079,7 +1079,7 @@
     {
       "id": "wuhan-park",
       "name": "解放公园",
-      "nameEn": "Jiefang Park",
+      "nameEn": "Công viên Giải Phóng",
       "category": "park",
       "description": "武汉最大的公园之一。",
       "address": "武汉市江岸区",
@@ -1101,7 +1101,7 @@
     {
       "id": "wh-bridge2",
       "name": "武汉长江二桥",
-      "nameEn": "Wuhan Second Yangtze Bridge",
+      "nameEn": "Cầu Thượng Hải thứ hai ở Vũ Hán",
       "category": "landmark",
       "description": "横跨长江的第二座大桥。",
       "address": "武汉市",
@@ -1123,7 +1123,7 @@
     {
       "id": "wh-street",
       "name": "江汉路",
-      "nameEn": "Jianghan Road",
+      "nameEn": "Đường Giang Hán",
       "category": "street",
       "description": "武汉最繁华的商业步行街。",
       "address": "武汉市江汉区",
@@ -1145,7 +1145,7 @@
     {
       "id": "wh-hankou",
       "name": "汉口老租界",
-      "nameEn": "Hankou Old Concession",
+      "nameEn": "Khu cũ Hạ Khẩu",
       "category": "street",
       "description": "保留了大量欧式建筑的历史街区。",
       "address": "武汉市江岸区",
@@ -1167,7 +1167,7 @@
     {
       "id": "wh-garden",
       "name": "中山公园",
-      "nameEn": "Zhongshan Park",
+      "nameEn": "Công viên Trung Sơn",
       "category": "park",
       "description": "武汉最大的公园之一。",
       "address": "武汉市江汉区",
@@ -1190,9 +1190,9 @@
     {
       "id": "wuhan-1",
       "name": "亢龙太子花园酒店",
-      "nameEn": "Kanglong Taizi Garden Hotel",
-      "type": "local",
-      "cuisine": "Hubei",
+      "nameEn": "Khách sạn Khu vườn Hoàng Tử Kang Long",
+      "type": "địa phương",
+      "cuisine": "Ẩm thực Hồ Bắc",
       "avgPrice": 200,
       "rating": 4.6,
       "address": "徐东大街428号, 武昌区",
@@ -1202,16 +1202,16 @@
       },
       "phone": "+86 27 8884 8888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Famous for authentic Hubei cuisine with elegant garden setting.",
+      "description": "Nổi tiếng với ẩm thực Hubei nguyên chất với không gian vườn thanh lịch.",
       "dishHighlights": [
-        "Hot dry noodles",
-        "Steamed Wuchang fish",
-        "Three steamed dishes"
+        "Mì khô nóng",
+        "Cá Wuchang hấp",
+        "Ba món hấp"
       ],
       "tags": [
-        "local",
-        "hubie-cuisine",
-        "elegant"
+        "địa phương",
+        "ẩm thực Hubei",
+        "tinh tế"
       ],
       "star": 0,
       "diamond": 0,
@@ -1220,9 +1220,9 @@
     {
       "id": "wuhan-2",
       "name": "湖锦酒楼",
-      "nameEn": "Hujin Restaurant",
-      "type": "local",
-      "cuisine": "Hubei",
+      "nameEn": "Nhà hàng Hujin",
+      "type": "địa phương",
+      "cuisine": "Ẩm thực Hồ Bắc",
       "avgPrice": 150,
       "rating": 4.5,
       "address": "解放大道1130号, 江汉区",
@@ -1232,16 +1232,16 @@
       },
       "phone": "+86 27 8377 7777",
       "hours": "10:30-14:00, 16:30-21:00",
-      "description": "Traditional Hubei restaurant known for local specialties.",
+      "description": "Nhà hàng truyền thống Hubei nổi tiếng với các món đặc sản địa phương.",
       "dishHighlights": [
-        "Crispy duck",
-        "Braised pork belly",
-        "Wuhan-style snacks"
+        "Vịt giòn",
+        "Thịt ba chỉ rim",
+        "Đồ ăn vặt kiểu Wuhan"
       ],
       "tags": [
-        "local",
-        "hubie-cuisine",
-        "family"
+        "địa phương",
+        "ẩm thực Hubei",
+        "gia đình"
       ],
       "star": 0,
       "diamond": 0,
@@ -1250,9 +1250,9 @@
     {
       "id": "wuhan-3",
       "name": "户部巷",
-      "nameEn": "Hubu Lane",
-      "type": "local",
-      "cuisine": "Street Food",
+      "nameEn": "Làng Hubu",
+      "type": "địa phương",
+      "cuisine": "Đồ ăn vặt",
       "avgPrice": 50,
       "rating": 4.7,
       "address": "户部巷, 武昌区",
@@ -1262,17 +1262,17 @@
       },
       "phone": "N/A",
       "hours": "06:00-22:00",
-      "description": "The most famous street food alley in Wuhan with over 100 stalls.",
+      "description": "Hẻm ăn vặt nổi tiếng nhất ở Vũ Hán với hơn 100 quán.",
       "dishHighlights": [
-        "Hot dry noodles",
-        "Doupi (stuffed skin)",
-        "Duck blood soup",
-        "Steamed buns"
+        "Mì khô nóng",
+        "Doupi (da nhồi)",
+        "Súp máu vịt",
+        "Bánh bao"
       ],
       "tags": [
-        "street-food",
-        "local",
-        "must-visit"
+        "đồ ăn đường phố",
+        "địa phương",
+        "nhất định phải đến"
       ],
       "star": 0,
       "diamond": 0,
@@ -1281,9 +1281,9 @@
     {
       "id": "wuhan-4",
       "name": "蔡林记",
-      "nameEn": "Cailinji",
-      "type": "local",
-      "cuisine": "Wuhan Noodles",
+      "nameEn": "Thái Lâm Ký",
+      "type": "địa phương",
+      "cuisine": "Mì Vũ Hán",
       "avgPrice": 30,
       "rating": 4.5,
       "address": "多家分店",
@@ -1293,16 +1293,16 @@
       },
       "phone": "+86 27 8282 8282",
       "hours": "06:30-20:00",
-      "description": "Most famous chain for authentic Wuhan hot dry noodles.",
+      "description": "Chuỗi nổi tiếng nhất về mì Vũ Hán khô nóng chuẩn vị.",
       "dishHighlights": [
-        "Hot dry noodles",
-        "Sesame paste noodles",
-        "Sauce noodles"
+        "Mì khô nóng",
+        "Mì với bơ lạc",
+        "Mì với nước sốt"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "iconic"
+        "địa phương",
+        "mì",
+        "đặc trưng"
       ],
       "star": 0,
       "diamond": 0,
@@ -1311,9 +1311,9 @@
     {
       "id": "wuhan-5",
       "name": "四季美",
-      "nameEn": "Siji Mei",
-      "type": "local",
-      "cuisine": "Dumplings",
+      "nameEn": "Tứ Quý",
+      "type": "địa phương",
+      "cuisine": "Bánh bao",
       "avgPrice": 40,
       "rating": 4.6,
       "address": "吉庆街33号, 江岸区",
@@ -1323,16 +1323,16 @@
       },
       "phone": "+86 27 8282 6666",
       "hours": "07:00-20:00",
-      "description": "Legendary dumpling restaurant serving Wuhan-style dumplings for over 100 years.",
+      "description": "Nhà hàng bánh bao truyền thống nổi tiếng, phục vụ bánh bao kiểu Vũ Hán hơn 100 năm qua.",
       "dishHighlights": [
-        "Soup dumplings",
-        "Fried dumplings",
-        "Crystal dumplings"
+        "Bánh bao nước",
+        "Bánh bao chiên",
+        "Bánh bao thủy tinh"
       ],
       "tags": [
-        "local",
-        "dumplings",
-        "historic"
+        "địa phương",
+        "bánh bao",
+        "lịch sử"
       ],
       "star": 0,
       "diamond": 0,
@@ -1341,9 +1341,9 @@
     {
       "id": "wuhan-6",
       "name": "小桃园",
-      "nameEn": "Xiaotaoyuan",
-      "type": "local",
-      "cuisine": "Wuhan Breakfast",
+      "nameEn": "Tiểu Đào Nguyên",
+      "type": "địa phương",
+      "cuisine": "Điểm tâm Wuhan",
       "avgPrice": 30,
       "rating": 4.4,
       "address": "多家分店",
@@ -1353,16 +1353,16 @@
       },
       "phone": "+86 27 8579 8579",
       "hours": "06:00-12:00",
-      "description": "Famous for traditional Wuhan breakfast items.",
+      "description": "Nổi tiếng với các món ăn sáng truyền thống của Vũ Hán.",
       "dishHighlights": [
-        "Rice pancake",
-        "Steamed dumplings",
-        "Tofu pudding"
+        "Bánh đa",
+        "Sủi cảo hấp",
+        "Đậu phụ pudding"
       ],
       "tags": [
-        "breakfast",
-        "local",
-        "traditional"
+        "bữa sáng",
+        "địa phương",
+        "truyền thống"
       ],
       "star": 0,
       "diamond": 0,
@@ -1371,9 +1371,9 @@
     {
       "id": "wuhan-7",
       "name": "老通城",
-      "nameEn": "Laotongcheng",
-      "type": "local",
-      "cuisine": "Hubei",
+      "nameEn": "Lao Tống Thành",
+      "type": "địa phương",
+      "cuisine": "Ẩm thực Hồ Bắc",
       "avgPrice": 100,
       "rating": 4.5,
       "address": "吉庆街28号, 江岸区",
@@ -1383,16 +1383,16 @@
       },
       "phone": "+86 27 8280 8888",
       "hours": "11:00-21:00",
-      "description": "Historic restaurant known for豆皮 (doupi) and traditional Hubei dishes.",
+      "description": "Nhà hàng lịch sử nổi tiếng với đậu bì (doupi) và các món ăn truyền thống của Hồ Bắc.",
       "dishHighlights": [
-        "Doupi (stuffed skin)",
-        "Wuchang fish",
-        "Braised pork"
+        "Doupi (da nhồi)",
+        "Cá Wuchang",
+        "Thịt kho tộ"
       ],
       "tags": [
-        "historic",
-        "hubie-cuisine",
-        "must-try"
+        "lịch sử",
+        "ẩm thực Hubei",
+        "phải thử"
       ],
       "star": 0,
       "diamond": 0,
@@ -1401,9 +1401,9 @@
     {
       "id": "wuhan-8",
       "name": "太子酒轩",
-      "nameEn": "Taizi Jiuxuan",
-      "type": "local",
-      "cuisine": "Hubei",
+      "nameEn": "Hoàng Tử Tửu Huyền",
+      "type": "địa phương",
+      "cuisine": "Ẩm thực Hồ Bắc",
       "avgPrice": 180,
       "rating": 4.6,
       "address": "建设大道587号, 江汉区",
@@ -1413,16 +1413,16 @@
       },
       "phone": "+86 27 8555 5555",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Upscale Hubei cuisine restaurant with elegant atmosphere.",
+      "description": "Nhà hàng ẩm thực Hubei cao cấp với không khí sang trọng.",
       "dishHighlights": [
-        "Steamed Wuchang fish",
-        "Braised abalone",
-        "Phoenix tail prawns"
+        "Cá Wuchang hấp",
+        "Hầm sò điệp",
+        "Tôm đuôi phượng hoàng"
       ],
       "tags": [
-        "upscale",
-        "hubie-cuisine",
-        "business"
+        "Sang trọng",
+        "ẩm thực Hubei",
+        "kinh doanh"
       ],
       "star": 0,
       "diamond": 0,
@@ -1431,9 +1431,9 @@
     {
       "id": "wuhan-9",
       "name": "香钭轩",
-      "nameEn": "Xiangduoxuan",
-      "type": "local",
-      "cuisine": "Vegetarian",
+      "nameEn": "Tương Đa Hiền",
+      "type": "địa phương",
+      "cuisine": "Chay",
       "avgPrice": 80,
       "rating": 4.4,
       "address": "归元寺路1号, 汉阳区",
@@ -1443,16 +1443,16 @@
       },
       "phone": "+86 27 8484 8484",
       "hours": "10:30-14:00, 17:00-20:30",
-      "description": "Vegetarian restaurant near Guiyuan Temple with Buddhist-style dishes.",
+      "description": "Nhà hàng chay gần chùa Guiyuan với các món ăn theo phong cách Phật giáo.",
       "dishHighlights": [
-        "Vegetarian duck",
-        "Buddhist dishes",
-        "Tofu specialties"
+        "Vịt chay",
+        "Món ăn Phật giáo",
+        "Các món đặc biệt từ đậu hũ"
       ],
       "tags": [
-        "vegetarian",
-        "buddhist",
-        "peaceful"
+        "chay",
+        "Phật giáo",
+        "yên bình"
       ],
       "star": 0,
       "diamond": 0,
@@ -1461,9 +1461,9 @@
     {
       "id": "wuhan-10",
       "name": "巴蜀烤鱼",
-      "nameEn": "Basu Grilled Fish",
-      "type": "local",
-      "cuisine": "Sichuan",
+      "nameEn": "Basu Nướng Cá",
+      "type": "địa phương",
+      "cuisine": "Tứ Xuyên",
       "avgPrice": 80,
       "rating": 4.3,
       "address": "光谷世界城步行街, 武昌区",
@@ -1473,16 +1473,16 @@
       },
       "phone": "+86 27 8755 8755",
       "hours": "11:00-23:00",
-      "description": "Popular grilled fish restaurant with Sichuan-style spices.",
+      "description": "Nhà hàng cá nướng phổ biến với gia vị kiểu Tứ Xuyên.",
       "dishHighlights": [
-        "Grilled fish",
-        "Spicy chicken",
-        "Chongqing noodles"
+        "Cá nướng",
+        "Gà cay",
+        "Mì Chongqing"
       ],
       "tags": [
-        "spicy",
-        "grilled-fish",
-        "casual"
+        "cay",
+        "cá nướng",
+        "bình dân"
       ],
       "star": 0,
       "diamond": 0,
@@ -1491,9 +1491,9 @@
     {
       "id": "wuhan-11",
       "name": "靓靓蒸虾",
-      "nameEn": "Liangliang Steamed Shrimp",
-      "type": "local",
-      "cuisine": "Crayfish",
+      "nameEn": "Tôm hấp Liangliang",
+      "type": "địa phương",
+      "cuisine": "Tôm hùm",
       "avgPrice": 150,
       "rating": 4.7,
       "address": "多家分店",
@@ -1503,16 +1503,16 @@
       },
       "phone": "+86 27 8788 8788",
       "hours": "16:00-02:00",
-      "description": "Legendary crayfish restaurant, a Wuhan summer institution.",
+      "description": "Nhà hàng tôm hùm huyền thoại, một thể chế mùa hè ở Vũ Hán.",
       "dishHighlights": [
-        "Steamed crayfish",
-        "Spicy crayfish",
-        "Crayfish noodles"
+        "Tôm hùm hấp",
+        "Tôm hùm cay",
+        "Mì tôm hùm"
       ],
       "tags": [
-        "crayfish",
-        "summer",
-        "iconic"
+        "tôm hùm",
+        "mùa hè",
+        "đặc trưng"
       ],
       "star": 0,
       "diamond": 0,
@@ -1521,9 +1521,9 @@
     {
       "id": "wuhan-12",
       "name": "外婆家",
-      "nameEn": "Waipojia",
-      "type": "local",
-      "cuisine": "Home Style",
+      "nameEn": "Wai Po Jia",
+      "type": "địa phương",
+      "cuisine": "Phong cách gia đình",
       "avgPrice": 60,
       "rating": 4.4,
       "address": "多家分店",
@@ -1533,16 +1533,16 @@
       },
       "phone": "+86 400 888 8888",
       "hours": "10:30-21:30",
-      "description": "Popular chain restaurant serving home-style Hubei dishes.",
+      "description": "Nhà hàng chuỗi phổ biến phục vụ các món ăn kiểu gia đình Hubei.",
       "dishHighlights": [
-        "Braised pork",
-        "Fish in vinegar",
-        "Steamed eggs"
+        "Thịt kho tộ",
+        "Cá nướng chua ngọt",
+        "Trứng hấp"
       ],
       "tags": [
-        "home-style",
-        "affordable",
-        "chain"
+        "kiểu gia đình",
+        "giá rẻ",
+        "chuỗi"
       ],
       "star": 0,
       "diamond": 0,
@@ -1551,9 +1551,9 @@
     {
       "id": "wuhan-13",
       "name": "刘胖子家常菜",
-      "nameEn": "Liu Pangzi Home Kitchen",
-      "type": "local",
-      "cuisine": "Home Style",
+      "nameEn": "Nhà bếp gia đình Liu Pangzi",
+      "type": "địa phương",
+      "cuisine": "Phong cách gia đình",
       "avgPrice": 50,
       "rating": 4.5,
       "address": "汉阳大道扁担山公墓旁",
@@ -1563,16 +1563,16 @@
       },
       "phone": "+86 27 8488 6666",
       "hours": "10:00-21:00",
-      "description": "Beloved local restaurant known for generous portions and authentic taste.",
+      "description": "Nhà hàng nổi tiếng địa phương được yêu thích vì khẩu phần ăn dồi dào và hương vị chân chính.",
       "dishHighlights": [
-        "Spare ribs",
-        "Braised fish",
-        "Potato dishes"
+        "Sườn heo",
+        "Cá kho",
+        "Món khoai tây"
       ],
       "tags": [
-        "local",
-        "home-style",
-        "generous"
+        "địa phương",
+        "kiểu gia đình",
+        "dồi dào"
       ],
       "star": 0,
       "diamond": 0,
@@ -1581,9 +1581,9 @@
     {
       "id": "wuhan-14",
       "name": "竹味坊",
-      "nameEn": "Zhuweifang",
-      "type": "local",
-      "cuisine": "Bamboo Cuisine",
+      "nameEn": "Trang vi chợ",
+      "type": "địa phương",
+      "cuisine": "Ẩm thực Tre",
       "avgPrice": 120,
       "rating": 4.5,
       "address": "东湖风景区绿道",
@@ -1593,16 +1593,16 @@
       },
       "phone": "+86 27 8755 7777",
       "hours": "10:00-20:00",
-      "description": "Unique restaurant in East Lake area specializing in bamboo-themed dishes.",
+      "description": "Nhà hàng độc đáo trong khu vực Hồ Đông chuyên về các món ăn có chủ đề tre.",
       "dishHighlights": [
-        "Bamboo rice",
-        "Bamboo shoots",
-        "Forest chicken"
+        "Cơm tre",
+        "Măng tre",
+        "Gà rừng"
       ],
       "tags": [
-        "scenic",
-        "bamboo",
-        "healthy"
+        "phong cảnh",
+        "tre",
+        "lành mạnh"
       ],
       "star": 0,
       "diamond": 0,
@@ -1611,9 +1611,9 @@
     {
       "id": "wuhan-15",
       "name": "阿香婆",
-      "nameEn": "A Xiang Po",
-      "type": "local",
-      "cuisine": "Hot Pot",
+      "nameEn": "A Xiang Po in Vietnamese",
+      "type": "địa phương",
+      "cuisine": "Lẩu",
       "avgPrice": 100,
       "rating": 4.4,
       "address": "多家分店",
@@ -1623,16 +1623,16 @@
       },
       "phone": "+86 27 8777 8777",
       "hours": "11:00-23:00",
-      "description": "Popular hot pot chain with flavorful broths and fresh ingredients.",
+      "description": "Chuỗi nhà hàng lẩu phổ biến với nước dùng ngon và nguyên liệu tươi ngon.",
       "dishHighlights": [
-        "Spicy hot pot",
-        "Mushroom hot pot",
-        "Lamb slices"
+        "Lẩu cay",
+        "Lẩu nấm",
+        "Thịt cừu thái lát"
       ],
       "tags": [
-        "hot-pot",
-        "group-dining",
-        "chain"
+        "lẩu",
+        "ăn nhóm",
+        "chuỗi"
       ],
       "star": 0,
       "diamond": 0,
@@ -1641,9 +1641,9 @@
     {
       "id": "wuhan-16",
       "name": "韩式炸鸡",
-      "nameEn": "Korean Fried Chicken",
-      "type": "international",
-      "cuisine": "Korean",
+      "nameEn": "Gà Rán Hàn Quốc",
+      "type": "quốc tế",
+      "cuisine": "Hàn Quốc",
       "avgPrice": 70,
       "rating": 4.3,
       "address": "光谷西班牙街",
@@ -1653,16 +1653,16 @@
       },
       "phone": "+86 27 8777 6666",
       "hours": "11:00-23:00",
-      "description": "Popular Korean fried chicken chain with crispy and spicy options.",
+      "description": "Chuỗi gà chiên Hàn Quốc phổ biến với các lựa chọn giòn và cay.",
       "dishHighlights": [
-        "Original fried chicken",
-        "Spicy fried chicken",
-        "Cheese fries"
+        "Gà rán nguyên bộ",
+        "Gà rán cay",
+        "Khoai tây chiên phô mai"
       ],
       "tags": [
-        "korean",
-        "fast-food",
-        "casual"
+        "Hàn Quốc",
+        "thức ăn nhanh",
+        "bình dân"
       ],
       "star": 0,
       "diamond": 0,
@@ -1671,9 +1671,9 @@
     {
       "id": "wuhan-17",
       "name": "日式烤肉",
-      "nameEn": "Japanese Yakiniku",
-      "type": "international",
-      "cuisine": "Japanese",
+      "nameEn": "Nhật Bản Yakiniku",
+      "type": "quốc tế",
+      "cuisine": "Nhật Bản",
       "avgPrice": 200,
       "rating": 4.5,
       "address": "武汉天地6号楼",
@@ -1683,16 +1683,16 @@
       },
       "phone": "+86 27 8282 9999",
       "hours": "11:30-14:00, 17:00-22:00",
-      "description": "Premium Japanese BBQ restaurant with high-quality meats.",
+      "description": "Nhà hàng BBQ Nhật Bản cao cấp với thịt chất lượng cao.",
       "dishHighlights": [
-        "Wagyu beef",
-        "Lamb chops",
-        "Beef tongue"
+        "Thịt bò Wagyu",
+        "Sườn cừu",
+        "Lưỡi bò"
       ],
       "tags": [
-        "japanese",
-        "bbq",
-        "premium"
+        "nhật bản",
+        "nướng",
+        "cao cấp"
       ],
       "star": 0,
       "diamond": 0,
@@ -1701,9 +1701,9 @@
     {
       "id": "wuhan-18",
       "name": "意式披萨",
-      "nameEn": "Italian Pizza",
-      "type": "international",
-      "cuisine": "Italian",
+      "nameEn": "Pizza Ý",
+      "type": "quốc tế",
+      "cuisine": "Ý",
       "avgPrice": 100,
       "rating": 4.3,
       "address": "楚河汉街",
@@ -1713,16 +1713,16 @@
       },
       "phone": "+86 27 8888 6666",
       "hours": "10:00-22:00",
-      "description": "Authentic Italian pizzeria with wood-fired ovens.",
+      "description": "Quán pizza Ý nguyên chất với lò nướng gỗ.",
       "dishHighlights": [
-        "Margherita pizza",
-        "Truffle pasta",
+        "Pizza Margherita",
+        "Mì truffle",
         "Tiramisu"
       ],
       "tags": [
-        "italian",
-        "pizza",
-        "cafe"
+        "ý",
+        "bánh pizza",
+        "quán cà phê"
       ],
       "star": 0,
       "diamond": 0,
@@ -1731,9 +1731,9 @@
     {
       "id": "wuhan-19",
       "name": "泰国厨房",
-      "nameEn": "Thai Kitchen",
-      "type": "international",
-      "cuisine": "Thai",
+      "nameEn": "Nhà bếp Thái Lan",
+      "type": "quốc tế",
+      "cuisine": "Thái",
       "avgPrice": 120,
       "rating": 4.4,
       "address": "花园道商业街",
@@ -1743,16 +1743,16 @@
       },
       "phone": "+86 27 8555 8888",
       "hours": "11:00-21:30",
-      "description": "Popular Thai restaurant with authentic flavors and beautiful presentation.",
+      "description": "Nhà hàng Thái Lan phổ biến với hương vị đích thực và trình bày đẹp mắt.",
       "dishHighlights": [
-        "Green curry",
-        "Tom Yum soup",
-        "Pad Thai"
+        "Cà ri xanh",
+        "Canh Tom Yum",
+        "Mì Pad Thai"
       ],
       "tags": [
-        "thai",
-        "curry",
-        "aromatic"
+        "thái",
+        "cà ri",
+        "thơm"
       ],
       "star": 0,
       "diamond": 0,
@@ -1761,9 +1761,9 @@
     {
       "id": "wuhan-20",
       "name": "海底捞火锅",
-      "nameEn": "Haidilao Hot Pot",
-      "type": "chain",
-      "cuisine": "Hot Pot",
+      "nameEn": "Haidilao Lẩu",
+      "type": "chuỗi",
+      "cuisine": "Lẩu",
       "avgPrice": 150,
       "rating": 4.8,
       "address": "多家分店",
@@ -1772,17 +1772,17 @@
         "lng": 114.3055
       },
       "phone": "95027",
-      "hours": "24 hours",
-      "description": "World-famous hot pot chain known for exceptional service.",
+      "hours": "24 giờ",
+      "description": "Chuỗi nhà hàng lẩu nổi tiếng toàn cầu, nổi bật với dịch vụ tuyệt vời.",
       "dishHighlights": [
-        "Self-service hot pot",
-        "Hand-pulled noodles",
-        "Free manicure"
+        "Lẩu tự phục vụ",
+        "Mì kéo tay",
+        "Móng tay miễn phí"
       ],
       "tags": [
-        "hot-pot",
-        "service",
-        "chain"
+        "lẩu",
+        "phục vụ",
+        "chuỗi"
       ],
       "star": 0,
       "diamond": 0,
@@ -1792,8 +1792,8 @@
       "id": "wuhan-21",
       "name": "麦当劳",
       "nameEn": "McDonald's",
-      "type": "fastfood",
-      "cuisine": "Fast Food",
+      "type": "đồ ăn nhanh",
+      "cuisine": "Đồ ăn nhanh",
       "avgPrice": 40,
       "rating": 4.2,
       "address": "多家分店",
@@ -1803,16 +1803,16 @@
       },
       "phone": "N/A",
       "hours": "07:00-23:00",
-      "description": "International fast food chain with consistent quality.",
+      "description": "Chuỗi thức ăn nhanh quốc tế với chất lượng nhất quán.",
       "dishHighlights": [
-        "Big Mac",
+        "Bánh mì Big Mac",
         "McNuggets",
         "McFlurry"
       ],
       "tags": [
-        "fast-food",
-        "chain",
-        "reliable"
+        "thức ăn nhanh",
+        "chuỗi",
+        "đáng tin cậy"
       ],
       "star": 0,
       "diamond": 0,
@@ -1822,8 +1822,8 @@
       "id": "wuhan-22",
       "name": "星巴克",
       "nameEn": "Starbucks",
-      "type": "cafe",
-      "cuisine": "Coffee",
+      "type": "quán cà phê",
+      "cuisine": "Cà phê",
       "avgPrice": 45,
       "rating": 4.3,
       "address": "多家分店",
@@ -1833,16 +1833,16 @@
       },
       "phone": "N/A",
       "hours": "07:00-22:00",
-      "description": "International coffee chain with comfortable seating for work.",
+      "description": "Chuỗi cà phê quốc tế với ghế ngồi thoải mái phù hợp cho việc làm việc.",
       "dishHighlights": [
-        "Caramel macchiato",
-        "Matcha latte",
-        "Cold brew"
+        "Caramel Macchiato",
+        "Trà xanh latte",
+        "Cà phê pha lạnh"
       ],
       "tags": [
-        "coffee",
-        "cafe",
-        "workspace"
+        "cà phê",
+        "quán cà phê",
+        "không gian làm việc"
       ],
       "star": 0,
       "diamond": 0,
@@ -1851,9 +1851,9 @@
     {
       "id": "wuhan-23",
       "name": "三环路边烤串",
-      "nameEn": "Sanhuan Road Grilled Skewers",
-      "type": "local",
-      "cuisine": "Wuhan BBQ",
+      "nameEn": "Sanhuan Road Nướng xiên",
+      "type": "địa phương",
+      "cuisine": "BBQ Vũ Hán",
       "avgPrice": 60,
       "rating": 4.5,
       "address": "武昌区三环线",
@@ -1863,16 +1863,16 @@
       },
       "phone": "+86 27 8788 9999",
       "hours": "17:00-02:00",
-      "description": "Popular late-night grilled skewer spot popular with locals and students.",
+      "description": "Địa điểm nổi tiếng về xúc xích nướng ban đêm, được đông đảo người dân và sinh viên ưa thích.",
       "dishHighlights": [
-        "Lamb kebabs",
-        "Grilled corn",
-        "Spicy skewers"
+        "Xiên thịt cừu",
+        "Ngô nướng",
+        "Xiên cay"
       ],
       "tags": [
-        "bbq",
-        "late-night",
-        "student"
+        "nướng",
+        "đêm khuya",
+        "sinh viên"
       ],
       "star": 0,
       "diamond": 0,
@@ -1881,9 +1881,9 @@
     {
       "id": "wuhan-24",
       "name": "鹿鸣春",
-      "nameEn": "Lumingchun",
-      "type": "local",
-      "cuisine": "Hubei",
+      "nameEn": "...",
+      "type": "địa phương",
+      "cuisine": "Ẩm thực Hồ Bắc",
       "avgPrice": 120,
       "rating": 4.6,
       "address": "江汉区万松园",
@@ -1893,16 +1893,16 @@
       },
       "phone": "+86 27 8577 7777",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Upscale Hubei cuisine restaurant with elegant atmosphere and private dining rooms.",
+      "description": "Nhà hàng ẩm thực Hubei cao cấp với không khí sang trọng và các phòng ăn riêng tư.",
       "dishHighlights": [
-        "Steamed Wuchang fish",
-        "Braised pork belly",
-        "Seasonal vegetables"
+        "Cá Wuchang hấp",
+        "Thịt ba chỉ rim",
+        "Rau theo mùa"
       ],
       "tags": [
-        "upscale",
-        "hubie-cuisine",
-        "private-rooms"
+        "Sang trọng",
+        "ẩm thực Hubei",
+        "phòng ăn riêng tư"
       ],
       "star": 0,
       "diamond": 0,
@@ -1911,9 +1911,9 @@
     {
       "id": "wuhan-25",
       "name": "五谷渔粉",
-      "nameEn": "Wugu Fish Noodles",
-      "type": "local",
-      "cuisine": "Noodles",
+      "nameEn": "Wugu Bún cá",
+      "type": "địa phương",
+      "cuisine": "Mì",
       "avgPrice": 35,
       "rating": 4.4,
       "address": "武昌区多家分店",
@@ -1923,7 +1923,7 @@
       },
       "phone": "N/A",
       "hours": "07:00-20:00",
-      "description": "Popular chain serving rice noodles in rich fish broth with various toppings.",
+      "description": "Chuỗi phổ biến phục vụ bún gạo trong nước dùng cá giàu đạm với nhiều lựa chọn đi kèm.",
       "dishHighlights": [
         "Mì canh cá",
         "Mì cá cay",
@@ -1942,11 +1942,11 @@
       "id": "wuhan-26",
       "name": "小龙坎火锅",
       "nameEn": "Lẩu Xiêu Long Khản",
-      "type": "chain",
+      "type": "chuỗi",
       "cuisine": "Lẩu",
       "avgPrice": 120,
       "rating": 4.5,
-      "address": "Nhiều chi nhánh",
+      "address": "多家分店",
       "coordinates": {
         "lat": 30.5928,
         "lng": 114.3055
@@ -1961,8 +1961,8 @@
       ],
       "tags": [
         "lẩu",
-        "sichuan",
-        "chain"
+        "tứ xuyên",
+        "chuỗi"
       ],
       "star": 0,
       "diamond": 0,
@@ -1971,9 +1971,9 @@
     {
       "id": "wuhan-27",
       "name": "青瓦炭韩式烤肉",
-      "nameEn": "Qingwatan Korean BBQ",
-      "type": "international",
-      "cuisine": "Korean",
+      "nameEn": "Qingwatan BBQ Hàn Quốc",
+      "type": "quốc tế",
+      "cuisine": "Hàn Quốc",
       "avgPrice": 150,
       "rating": 4.5,
       "address": "光谷世界城",
@@ -1983,16 +1983,16 @@
       },
       "phone": "+86 27 8788 7777",
       "hours": "11:30-14:00, 17:00-22:00",
-      "description": "Popular Korean BBQ restaurant with all-you-can-eat options and quality meats.",
+      "description": "Nhà hàng BBQ Hàn Quốc phổ biến với các lựa chọn ăn buffet và thịt chất lượng.",
       "dishHighlights": [
-        "Beef short ribs",
-        "Pork belly",
-        "Korean BBQ set"
+        "Sườn bò ngắn",
+        "Thịt ba chỉ",
+        "Bộ BBQ Hàn Quốc"
       ],
       "tags": [
-        "korean",
-        "bbq",
-        "buffet"
+        "Hàn Quốc",
+        "nướng",
+        "tự chọn"
       ],
       "star": 0,
       "diamond": 0,
@@ -2001,9 +2001,9 @@
     {
       "id": "wuhan-28",
       "name": "江汉路夜市小吃",
-      "nameEn": "Jianghan Road Night Market",
-      "type": "local",
-      "cuisine": "Street Food",
+      "nameEn": "Chợ đêm Đường Jianghan",
+      "type": "địa phương",
+      "cuisine": "Đồ ăn vặt",
       "avgPrice": 40,
       "rating": 4.3,
       "address": "江汉区江汉路步行街",
@@ -2013,16 +2013,16 @@
       },
       "phone": "N/A",
       "hours": "18:00-23:00",
-      "description": "The most famous night market in Wuhan with hundreds of food stalls.",
+      "description": "Chợ đêm nổi tiếng nhất ở Vũ Hán với hàng trăm quầy ăn.",
       "dishHighlights": [
-        "Grilled skewers",
-        "Stir-fried noodles",
-        "Fried rice balls"
+        "Thịt nướng xiên",
+        "Mì xào",
+        "Bánh chiên viên cơm"
       ],
       "tags": [
-        "night-market",
-        "street-food",
-        "affordable"
+        "chợ đêm",
+        "đồ ăn đường phố",
+        "giá rẻ"
       ],
       "star": 0,
       "diamond": 0,
@@ -2032,7 +2032,7 @@
       "id": "wuhan-29",
       "name": "武汉味武昌鱼",
       "nameEn": "武汉味武昌鱼 (武昌鱼)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "武昌鱼",
       "avgPrice": 80,
       "rating": 4.1,
@@ -2046,13 +2046,13 @@
       "description": "武汉本地人推荐的武昌鱼店，味道正宗，价格实惠",
       "dishHighlights": [
         "面窝",
-        "Súp xương hầm củ sen",
-        "Cá Vũ Xương"
+        "排骨藕汤",
+        "武昌鱼"
       ],
       "tags": [
-        "Cửa hàng lâu đời",
-        "Giá cả hợp lý",
-        "Món ăn gia đình"
+        "老字号",
+        "性价比高",
+        "家常菜"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/98165ac73638.webp"
@@ -2060,28 +2060,28 @@
     {
       "id": "wuhan-31",
       "name": "老街豆皮",
-      "nameEn": "Lão Gai Đậu Phụ (Đậu Phụ)",
-      "type": "local",
-      "cuisine": "Đậu Phụ",
+      "nameEn": "老街豆皮 (豆皮)",
+      "type": "địa phương",
+      "cuisine": "豆皮",
       "avgPrice": 123,
       "rating": 4.9,
-      "address": "Số 151, Phố Ẩm Thực, Khu Mới Thành phố Vũ Hán",
+      "address": "武汉市新城区美食街151号",
       "coordinates": {
         "lat": 30.5609,
         "lng": 114.2846
       },
       "phone": "+86 027 17143901",
       "hours": "10:00-22:00",
-      "description": "Quán đậu phụ được người địa phương Vũ Hán giới thiệu, hương vị chính hiệu, giá cả phải chăng",
+      "description": "武汉本地人推荐的豆皮店，味道正宗，价格实惠",
       "dishHighlights": [
-        "Đậu phụ",
-        "Mianwo",
-        "Hồ Tang Phén"
+        "豆皮",
+        "面窝",
+        "糊汤粉"
       ],
       "tags": [
-        "Cửa hàng lâu năm trong cộng đồng",
-        "Giá cả hợp lý",
-        "Ẩm thực ẩn danh"
+        "社区老店",
+        "性价比高",
+        "隐藏美食"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ee74efed9a9c.webp"
@@ -2089,28 +2089,28 @@
     {
       "id": "wuhan-33",
       "name": "传统豆皮",
-      "nameEn": "Đậu Phụ Truyền Thống (Đậu Phụ)",
-      "type": "local",
-      "cuisine": "Đậu Phụ",
+      "nameEn": "传统豆皮 (豆皮)",
+      "type": "địa phương",
+      "cuisine": "豆皮",
       "avgPrice": 114,
       "rating": 4.9,
-      "address": "Số 18, Phố Ẩm Thực, Khu Đô Thị Mới, Thành Phố Vũ Hán",
+      "address": "武汉市新城区美食街18号",
       "coordinates": {
         "lat": 30.5705,
         "lng": 114.2701
       },
       "phone": "+86 027 38913838",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "Quán đậu phụ được người dân địa phương Vũ Hán giới thiệu, hương vị chính hiệu, giá cả phải chăng",
+      "description": "武汉本地人推荐的豆皮店，味道正宗，价格实惠",
       "dishHighlights": [
-        "Đậu phụ",
-        "Mì Wō",
-        "Cá Vũ Xương"
+        "豆皮",
+        "面窝",
+        "武昌鱼"
       ],
       "tags": [
-        "Ẩm thực ẩn danh",
-        "Giá trị cao",
-        "Cơ sở lâu đời"
+        "隐藏美食",
+        "性价比高",
+        "老字号"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/8d759f6d2bdb.webp"
@@ -2118,28 +2118,28 @@
     {
       "id": "wuhan-35",
       "name": "老字号热干面",
-      "nameEn": "Mì Ngan Khô Truyền Thống (Mì Ngan Khô)",
-      "type": "local",
-      "cuisine": "Mì Ngan Khô",
+      "nameEn": "老字号热干面 (热干面)",
+      "type": "địa phương",
+      "cuisine": "热干面",
       "avgPrice": 96,
       "rating": 4.3,
-      "address": "Số 159, Phố Ẩm Thực, Khu Trung Tâm Thành Phố Vũ Hán",
+      "address": "武汉市市中心区美食街159号",
       "coordinates": {
         "lat": 30.5799,
         "lng": 114.3205
       },
       "phone": "+86 027 72316839",
       "hours": "06:00-14:00",
-      "description": "Quán mì khô nổi tiếng được người địa phương Vũ Hán giới thiệu, hương vị chính hãng, giá cả phải chăng",
+      "description": "武汉本地人推荐的热干面店，味道正宗，价格实惠",
       "dishHighlights": [
-        "Mì wō",
-        "Hú táng fěn",
-        "Đậu bì"
+        "面窝",
+        "糊汤粉",
+        "豆皮"
       ],
       "tags": [
-        "Giá cả hợp lý",
-        "Quán lâu đời trong cộng đồng",
-        "Quán nổi tiếng đông khách"
+        "性价比高",
+        "社区老店",
+        "排队王"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/4d37d82561b1.webp"
@@ -2147,22 +2147,22 @@
     {
       "id": "wuhan-37",
       "name": "阿婆豆皮",
-      "nameEn": "A Pó Đậu Bì (Đậu Bì)",
-      "type": "local",
-      "cuisine": "Đậu Bì",
+      "nameEn": "阿婆豆皮 (豆皮)",
+      "type": "địa phương",
+      "cuisine": "豆皮",
       "avgPrice": 72,
       "rating": 4.5,
-      "address": "Số 17, Phố Ẩm Thực, Khu Trung Tâm Thành Phố Vũ Hán",
+      "address": "武汉市市中心区美食街17号",
       "coordinates": {
         "lat": 30.6076,
         "lng": 114.3434
       },
       "phone": "+86 027 27012809",
       "hours": "06:00-14:00",
-      "description": "Quán Đậu Bì được người địa phương Vũ Hán giới thiệu, hương vị chính hãng, giá cả phải chăng",
+      "description": "武汉本地人推荐的豆皮店，味道正宗，价格实惠",
       "dishHighlights": [
-        "Mì khô Vũ Hán",
-        "Hú táng fěn",
+        "热干面",
+        "糊汤粉",
         "武昌鱼"
       ],
       "tags": [
@@ -2177,7 +2177,7 @@
       "id": "wuhan-39",
       "name": "正宗排骨藕汤",
       "nameEn": "正宗排骨藕汤 (排骨藕汤)",
-      "type": "street",
+      "type": "đường phố",
       "cuisine": "排骨藕汤",
       "avgPrice": 23,
       "rating": 4.5,
@@ -2206,7 +2206,7 @@
       "id": "wuhan-41",
       "name": "武汉味豆皮",
       "nameEn": "武汉味豆皮 (豆皮)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "豆皮",
       "avgPrice": 54,
       "rating": 4.3,
@@ -2235,7 +2235,7 @@
       "id": "wuhan-43",
       "name": "老武汉武昌鱼",
       "nameEn": "老武汉武昌鱼 (武昌鱼)",
-      "type": "cafe",
+      "type": "quán cà phê",
       "cuisine": "武昌鱼",
       "avgPrice": 60,
       "rating": 4.3,
@@ -2264,7 +2264,7 @@
       "id": "wuhan-45",
       "name": "传统热干面",
       "nameEn": "传统热干面 (热干面)",
-      "type": "street",
+      "type": "đường phố",
       "cuisine": "热干面",
       "avgPrice": 22,
       "rating": 4.4,
@@ -2293,7 +2293,7 @@
       "id": "wuhan-47",
       "name": "正宗排骨藕汤",
       "nameEn": "正宗排骨藕汤 (排骨藕汤)",
-      "type": "cafe",
+      "type": "quán cà phê",
       "cuisine": "排骨藕汤",
       "avgPrice": 38,
       "rating": 4.8,
@@ -2322,7 +2322,7 @@
       "id": "wuhan-49",
       "name": "阿婆武昌鱼",
       "nameEn": "阿婆武昌鱼 (武昌鱼)",
-      "type": "street",
+      "type": "đường phố",
       "cuisine": "武昌鱼",
       "avgPrice": 40,
       "rating": 4.8,
@@ -2351,7 +2351,7 @@
       "id": "wuhan-51",
       "name": "地道排骨藕汤",
       "nameEn": "地道排骨藕汤 (排骨藕汤)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "排骨藕汤",
       "avgPrice": 55,
       "rating": 4.1,
@@ -2380,7 +2380,7 @@
       "id": "wuhan-53",
       "name": "正宗豆皮",
       "nameEn": "正宗豆皮 (豆皮)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "豆皮",
       "avgPrice": 75,
       "rating": 4.7,
@@ -2409,7 +2409,7 @@
       "id": "wuhan-55",
       "name": "巷子武昌鱼",
       "nameEn": "巷子武昌鱼 (武昌鱼)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "武昌鱼",
       "avgPrice": 41,
       "rating": 4.8,
@@ -2438,7 +2438,7 @@
       "id": "wuhan-57",
       "name": "老字号武昌鱼",
       "nameEn": "老字号武昌鱼 (武昌鱼)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "武昌鱼",
       "avgPrice": 55,
       "rating": 4.2,
@@ -2467,7 +2467,7 @@
       "id": "wuhan-59",
       "name": "武汉味武昌鱼",
       "nameEn": "武汉味武昌鱼 (武昌鱼)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "武昌鱼",
       "avgPrice": 94,
       "rating": 4.7,
@@ -2496,7 +2496,7 @@
       "id": "wuhan-61",
       "name": "老武汉糊汤粉",
       "nameEn": "老武汉糊汤粉 (糊汤粉)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "糊汤粉",
       "avgPrice": 61,
       "rating": 4.8,
@@ -2525,7 +2525,7 @@
       "id": "wuhan-63",
       "name": "老街糊汤粉",
       "nameEn": "老街糊汤粉 (糊汤粉)",
-      "type": "cafe",
+      "type": "quán cà phê",
       "cuisine": "糊汤粉",
       "avgPrice": 60,
       "rating": 4.8,
@@ -2554,7 +2554,7 @@
       "id": "wuhan-65",
       "name": "阿婆武昌鱼",
       "nameEn": "阿婆武昌鱼 (武昌鱼)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "武昌鱼",
       "avgPrice": 92,
       "rating": 4.1,
@@ -2583,7 +2583,7 @@
       "id": "wuhan-67",
       "name": "老街热干面",
       "nameEn": "老街热干面 (热干面)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "热干面",
       "avgPrice": 105,
       "rating": 4.1,
@@ -2612,7 +2612,7 @@
       "id": "wuhan-69",
       "name": "街边武昌鱼",
       "nameEn": "街边武昌鱼 (武昌鱼)",
-      "type": "street",
+      "type": "đường phố",
       "cuisine": "武昌鱼",
       "avgPrice": 15,
       "rating": 4.1,
@@ -2641,7 +2641,7 @@
       "id": "wuhan-71",
       "name": "地道面窝",
       "nameEn": "地道面窝 (面窝)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "面窝",
       "avgPrice": 56,
       "rating": 4.5,
@@ -3158,134 +3158,134 @@
   "culturalTips": [
     {
       "category": "language",
-      "title": "Dialect Note",
-      "content": "Wuhan dialect (武汉话) is known for its direct and forceful tone. It's part of the Southwestern Mandarin group. locals appreciate when visitors try simple phrases like '吃了没' (have you eaten).",
+      "title": "Lưu ý về phương ngữ",
+      "content": "Tiếng địa phương Vũ Hán (武汉话) nổi tiếng với giọng điệu trực tiếp và mạnh mẽ. Nó là một phần của nhóm Tứ Nam Bắc Phạn. Người dân địa phương rất thích khi du khách thử những câu đơn giản như '吃了没' (bạn đã ăn chưa).",
       "importance": "medium"
     },
     {
       "category": "dining",
-      "title": "Wuhan Food Culture",
-      "content": "Wuhan is famous for过早 (guozao) - breakfast culture. locals take breakfast very seriously with numerous street food options. The phrase '过早了没' is a common morning greeting.",
+      "title": "Văn hóa ẩm thực Vũ Hán",
+      "content": "Vũ Hán nổi tiếng với 过早 (guozao) - văn hóa bữa sáng. Người dân coi trọng bữa sáng với nhiều lựa chọn đồ ăn đường phố. Câu nói '过早了没' là lời chào thông thường vào buổi sáng.",
       "importance": "high"
     },
     {
       "category": "dining",
-      "title": "Hot Dry Noodles",
-      "content": "热干面 (hot dry noodles) is Wuhan's iconic dish. The芝麻酱 (sesame paste) coating can be an acquired taste - start with a small portion to try.",
+      "title": "Mì khô cay",
+      "content": "热干面 (mì khô nóng) là món ăn đặc trưng của Vũ Hán. Lớp 芝麻酱 (bột hạt tiêu) có thể là một khẩu vị phải quen dần - hãy bắt đầu với một phần nhỏ để thử.",
       "importance": "high"
     },
     {
       "category": "dining",
-      "title": "Doupi (Stuffed Skin)",
-      "content": "豆皮 (doupi) is a savory pancake filled with sticky rice and meat. Head to Lao Tong Cheng or Hubu Lane for the best examples.",
+      "title": "Doupi (Bánh da nhím)",
+      "content": "豆皮 (bánh xèo ngọt) là một loại bánh kếp đầy gạo nếp và thịt. Hãy đến Lao Tong Cheng hoặc Hubu Lane để tìm những mẫu tốt nhất.",
       "importance": "high"
     },
     {
       "category": "seasonal",
-      "title": "Crayfish Season",
-      "content": "夏天吃虾 (summer crayfish) is a Wuhan tradition. From May to September, crayfish restaurants pack out. 靓靓蒸虾 and 复地等都是热门选择.",
+      "title": "Mùa tôm hùm đất",
+      "content": "夏天吃虾 (tôm hùm mùa hè) là truyền thống của Vũ Hán. Từ tháng 5 đến tháng 9, các nhà hàng tôm hùm đông nghịt. 靓靓蒸虾 và 复地等 là những lựa chọn phổ biến.",
       "importance": "medium"
     },
     {
       "category": "greeting",
-      "title": "Local Greetings",
-      "content": "Wuhan people are known as direct. '吃了没' (have you eaten?) is a casual greeting. '劳慰' (thank you in Wuhan dialect) shows local flavor.",
+      "title": "Lời chào địa phương",
+      "content": "Người dân Vũ Hán nổi tiếng với tính trực tiếp. '吃了没' (bạn đã ăn chưa) là lời chào thân mật. '劳慰' (cảm ơn bằng tiếng địa phương Vũ Hán) thể hiện phong cách địa phương.",
       "importance": "low"
     },
     {
       "category": "travel",
-      "title": "Yangtze River Safety",
-      "content": "The Yangtze River is wide and dangerous. Swimming is prohibited in most areas. The river beaches (江滩) are for walking and viewing only.",
+      "title": "An toàn sông Trường Giang",
+      "content": "Sông Dương Tử rộng và nguy hiểm. Bơi lội bị cấm ở hầu hết các khu vực. Bãi biển sông (江滩) chỉ dành cho đi bộ và ngắm cảnh.",
       "importance": "high"
     },
     {
       "category": "travel",
-      "title": "Cherry Blossom Etiquette",
-      "content": "During Wuhan University cherry blossom season (typically late March), visitors should stay on paths, not touch trees, and avoid weekends if possible.",
+      "title": "Phép xã giao mùa hoa anh đào",
+      "content": "Trong mùa hoa anh đào của Đại học Vũ Hán (thường là cuối tháng 3), du khách nên ở trên các lối đi, không chạm vào cây cối và tránh cuối tuần nếu có thể.",
       "importance": "medium"
     },
     {
       "category": "dining",
-      "title": "Teahouse Culture",
-      "content": "Wuhan has a traditional teahouse culture. 老通城等老字号茶馆体验武汉的茶文化.",
+      "title": "Văn hóa quán trà",
+      "content": "Vũ Hán có nền truyền thống của các trà quán cổ truyền. 老通城等老字号茶馆体验武汉的茶文化 (Lão Thông Thành và các trà quán cổ lão hiệu khác để trải nghiệm văn hóa trà Vũ Hán).",
       "importance": "medium"
     },
     {
       "category": "shopping",
-      "title": "Shopping Districts",
-      "content": "江汉路 and 光谷 are major shopping areas. 汉街 offers premium brands. 户部巷 is for souvenirs and local snacks.",
+      "title": "Khu vực mua sắm",
+      "content": "江汉路 và Quang Cốc là những khu vực mua sắm chính. Hán Tiệm cung cấp các thương hiệu cao cấp. Hộ Bộ Hẻm là nơi dành cho đồ lưu niệm và đồ ăn vặt địa phương.",
       "importance": "medium"
     },
     {
       "category": "social",
-      "title": "Hankou History",
-      "content": "The Hankou district has a rich international history as a treaty port. 黎黄陂路 and 武汉天地 showcase this colonial heritage.",
+      "title": "Lịch sử Hán Khẩu",
+      "content": "Khu vực Hán Khẩu có lịch sử quốc tế phong phú với tư cách là cảng ký kết hiệp ước. Lê Hoàng Bình Lộ và Vũ Hán Thiên Địa thể hiện di sản thuộc địa này.",
       "importance": "low"
     },
     {
       "category": "taboo",
-      "title": "Number Taboos",
-      "content": "The number 4 is considered unlucky. The number 8 is very lucky and often used in business. Phone numbers with multiple 8s can be valuable.",
+      "title": "Kiêng kỵ về con số",
+      "content": "Con số 4 được coi là không may mắn. Con số 8 rất may mắn và thường được sử dụng trong kinh doanh. Các số điện thoại có nhiều con số 8 có thể có giá trị.",
       "importance": "medium"
     },
     {
       "category": "dining",
-      "title": "Chopstick Etiquette",
-      "content": "Never stick chopsticks vertically in rice or food. This resembles funeral incense and is considered very unlucky.",
+      "title": "Phong tục dùng đũa",
+      "content": "Không bao giờ đặt đũa thẳng vào gạo hoặc thức ăn. Điều này gợi nhớ đến nhang hỏa quan và được coi là rất không may mắn.",
       "importance": "medium"
     },
     {
       "category": "travel",
-      "title": "Metro Etiquette",
-      "content": "Give seats to elderly, pregnant women, and people with children. Don't eat or drink on metro. Keep phone calls brief.",
+      "title": "Văn hóa đi tàu điện ngầm",
+      "content": "Nhường chỗ ngồi cho người già, phụ nữ mang thai và người có trẻ con. Không ăn uống trên tàu điện ngầm. Giữ cuộc gọi điện thoại ngắn gọn.",
       "importance": "medium"
     },
     {
       "category": "cultural",
-      "title": "Chu Culture",
-      "content": "Wuhan was the capital of the ancient Chu state. Hubei Provincial Museum showcases this rich cultural heritage with the famous Sword of King Goujian.",
+      "title": "Văn hóa Sở",
+      "content": "Vũ Hán từng là thủ đô của vương quốc cổ Chu. Bảo tàng tỉnh Hồ Bắc thể hiện di sản văn hóa phong phú này với thanh gươm nổi tiếng của vua Goujian.",
       "importance": "medium"
     },
     {
       "category": "weather",
-      "title": "Summer Heat",
-      "content": "Wuhan summers are extremely hot and humid (38C+). Stay hydrated, use sun protection, and take breaks in air-conditioned spaces.",
+      "title": "Nắng nóng mùa hè",
+      "content": "Mùa hè ở Vũ Hán rất nóng và ẩm (38C+). Hãy giữ ẩm, sử dụng chống nắng và nghỉ ngơi ở những khu vực có điều hòa.",
       "importance": "high"
     },
     {
       "category": "weather",
-      "title": "Winter Cold",
-      "content": "Wuhan winters are damp and cold (0-10C) with no central heating in most buildings. Dress in layers and expect indoor temperatures similar to outdoors.",
+      "title": "Cái lạnh mùa đông",
+      "content": "Mùa đông ở Vũ Hán ẩm và lạnh (0-10C) với không có lò sưởi trung tâm ở hầu hết các tòa nhà. Hãy mặc đồ tầng và mong đợi nhiệt độ trong nhà tương tự như ngoài trời.",
       "importance": "medium"
     },
     {
       "category": "cultural",
-      "title": "River City Culture",
-      "content": "Wuhan is known as the 'River City' for its unique location at the confluence of the Yangtze and Han Rivers. The rivers have shaped Wuhan's culture, cuisine, and identity for centuries.",
+      "title": "Văn hóa thành phố sông",
+      "content": "Vũ Hán được biết đến với biệt danh 'Thành phố sông' do vị trí độc đáo tại sự giao nhau của sông Dương Tử và sông Hán. Các con sông đã định hình văn hóa, ẩm thực và bản sắc Vũ Hán trong nhiều thế kỷ.",
       "importance": "low"
     },
     {
       "category": "dining",
-      "title": "Wuhan Breakfast (过早)",
-      "content": "过早 (guozao) is Wuhan's famous breakfast culture. The saying '早餐要吃好' (breakfast should be good) is taken seriously here. Try the breakfast street near Hubu Lane for authentic morning treats.",
+      "title": "Bữa sáng Vũ Hán (过早)",
+      "content": "过早 (guozao) là nổi tiếng với văn hóa bữa sáng của Vũ Hán. Câu nói '早餐要吃好' (bữa sáng cần ăn tốt) được coi trọng ở đây. Hãy thử khu đường ăn sáng gần Hộ Bộ Hẻm để có những món ăn sáng thực sự.",
       "importance": "high"
     },
     {
       "category": "seasonal",
-      "title": "Spring Cherry Blossoms",
-      "content": "Wuhan University's cherry blossom season (late March to early April) attracts visitors from across China. The 樱花大道 (Cherry Blossom Avenue) is particularly stunning. Weekdays are less crowded.",
+      "title": "Hoa anh đào mùa xuân",
+      "content": "Mùa hoa anh đào của Đại học Vũ Hán (từ cuối tháng 3 đến đầu tháng 4) thu hút du khách từ khắp Trung Quốc. Đại lộ Hoa Anh Đào (樱花大道) đặc biệt nổi bật. Các ngày trong tuần kém đông hơn.",
       "importance": "medium"
     },
     {
       "category": "nightlife",
-      "title": "Wuhan Nightlife",
-      "content": "Wuhan comes alive at night. 光谷 and 武汉天地 are popular nightlife districts. 黎黄陂路 has charming colonial-era cafes and bars. Summer nights are perfect for riverside walks.",
+      "title": "Đời sống về đêm Vũ Hán",
+      "content": "Vũ Hán tỉnh lại vào ban đêm. Quang Cốc và Vũ Hán Thiên Địa là những khu vực giải trí phổ biến. Lê Hoàng Bình Lộ có những quán cà phê và quán bar có phong cách thuộc địa. Những đêm hè là lý tưởng cho những bước đi ven sông.",
       "importance": "medium"
     },
     {
       "category": "transportation",
-      "title": "Three Towns Culture",
-      "content": "Wuhan consists of three historic towns: Wuchang (cultural), Hankou (commercial), and Hanyang (industrial). Each has its own character and specialties. Metro Line 2 connects all three.",
+      "title": "Văn hóa Tam Thành",
+      "content": "Vũ Hán bao gồm ba thành phố cổ: Vũ Xương (văn hóa), Hán Khẩu (thương mại) và Hán Dương (công nghiệp). Mỗi thành phố đều có bản sắc và đặc thù riêng. Đường metro tuyến 2 nối tất cả ba thành phố.",
       "importance": "medium"
     }
   ],
@@ -3293,174 +3293,174 @@
     {
       "type": "ambulance",
       "name": "武汉急救中心",
-      "nameEn": "Wuhan Emergency Center",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "120",
-      "address": "Various locations citywide",
-      "notes": "English operators may be limited"
+      "address": "Quảng Châu",
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "police",
       "name": "武汉市公安局",
-      "nameEn": "Wuhan Public Security Bureau",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "110",
-      "address": "Jiang'an District",
-      "notes": "Tourist police available at major attractions"
+      "address": "Quảng Châu",
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "fire",
       "name": "武汉消防",
-      "nameEn": "Wuhan Fire Brigade",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "119",
-      "address": "Various stations",
-      "notes": "Also handles rescue operations"
+      "address": "Quảng Châu",
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "hospital",
       "name": "武汉协和医院",
-      "nameEn": "Wuhan Union Hospital",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 27 8572 6114",
-      "address": "1277 Jiefang Ave, Wuhan",
+      "address": "Quảng Châu",
       "coordinates": {
         "lat": 30.5733,
         "lng": 114.2911
       },
-      "notes": "One of Wuhan's best hospitals, English-speaking staff available"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "hospital",
       "name": "武汉大学人民医院",
-      "nameEn": "Renmin Hospital of Wuhan University",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 27 8804 1911",
-      "address": "238 Liberation Rd, Wuchang",
+      "address": "Quảng Châu",
       "coordinates": {
         "lat": 30.5388,
         "lng": 114.3155
       },
-      "notes": "Large general hospital in Wuchang district"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "hospital",
       "name": "同济医院",
-      "nameEn": "Tongji Hospital",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 27 8366 2665",
-      "address": "1095 Jiefang Ave, Hankou",
+      "address": "Quảng Châu",
       "coordinates": {
         "lat": 30.5988,
         "lng": 114.2788
       },
-      "notes": "Another top hospital with international patient services"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "embassy",
       "name": "美国驻武汉总领事馆",
-      "nameEn": "US Consulate General Wuhan",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 27 8555 7791",
-      "address": "No. 568 Jianshe Ave, Wuhan",
+      "address": "Quảng Châu",
       "coordinates": {
         "lat": 30.5911,
         "lng": 114.2788
       },
-      "notes": "For US citizens in central China"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "embassy",
       "name": "英国驻武汉总领事馆",
-      "nameEn": "UK Consulate General Wuhan",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 27 8270 3600",
-      "address": "No. 408 Jianshe Ave, Wuhan",
+      "address": "Quảng Châu",
       "coordinates": {
         "lat": 30.5894,
         "lng": 114.2766
       },
-      "notes": "For UK citizens in central China"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "embassy",
       "name": "法国驻武汉总领事馆",
-      "nameEn": "French Consulate Wuhan",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 27 6579 7900",
-      "address": "No. 85 Xudong Ave, Wuhan",
+      "address": "Quảng Châu",
       "coordinates": {
         "lat": 30.5788,
         "lng": 114.2866
       },
-      "notes": "French citizens can use this consulate"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "embassy",
       "name": "日本驻武汉总领事馆",
-      "nameEn": "Japan Consulate General Wuhan",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 27 8579 0800",
-      "address": "No. 588 Jianshe Ave, Wuhan",
+      "address": "Quảng Châu",
       "coordinates": {
         "lat": 30.5922,
         "lng": 114.2794
       },
-      "notes": "For Japanese citizens in central China"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "tourist",
       "name": "武汉旅游投诉热线",
-      "nameEn": "Wuhan Tourist Complaint Hotline",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 27 8284 7777",
-      "address": "Citywide",
-      "notes": "For tourist complaints and assistance"
+      "address": "Quảng Châu",
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "embassy",
       "name": "韩国驻武汉总领事馆",
-      "nameEn": "Republic of Korea Consulate General Wuhan",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 27 8531 0700",
-      "address": "No. 396 Jianshe Ave, Wuhan",
+      "address": "Quảng Châu",
       "coordinates": {
         "lat": 30.5855,
         "lng": 114.2755
       },
-      "notes": "For Korean citizens in central China"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "hospital",
       "name": "武汉市第一医院",
-      "nameEn": "Wuhan No.1 Hospital",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 27 8585 5992",
-      "address": "215 Zhongshan Ave, Wuhan",
+      "address": "Quảng Châu",
       "coordinates": {
         "lat": 30.5755,
         "lng": 114.2855
       },
-      "notes": "Another major hospital with 24-hour emergency services"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "emergency",
       "name": "武汉市自来水公司",
-      "nameEn": "Wuhan Water Company",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "96510",
-      "address": "Citywide",
-      "notes": "For water supply emergencies and leaks"
+      "address": "Quảng Châu",
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "emergency",
       "name": "武汉燃气集团",
-      "nameEn": "Wuhan Gas Group",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "95007",
-      "address": "Citywide",
-      "notes": "For gas leaks and emergencies (24-hour)"
+      "address": "Quảng Châu",
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "emergency",
       "name": "国家电网武汉供电公司",
-      "nameEn": "State Grid Wuhan Power Supply",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "95598",
-      "address": "Citywide",
-      "notes": "For power outages and electrical emergencies"
+      "address": "Quảng Châu",
+      "notes": "Dành cho công dân Singapore"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese (Simplified)",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa (L-tourist, M-business)",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Tap water is boiled before drinking; bottled water widely available"
+    "language": "Tiếng Trung (Quan thoại)",
+    "currency": "Nhân dân tệ (CNY/RMB)",
+    "visa": "Hầu hết các quốc tịch đều cần thị thực. Thị thực quá cảnh 72 giờ có sẵn tại sân bay cho các quốc tịch đủ điều kiện.",
+    "timeZone": "UTC+8 (Giờ chuẩn Trung Quốc)",
+    "electricity": "220V/50Hz, phích cắm loại A/I",
+    "water": "Nước máy uống được nhưng nên dùng nước đóng chai"
   }
 }

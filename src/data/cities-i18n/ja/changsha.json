@@ -1,44 +1,44 @@
 {
   "slug": "changsha",
-  "name": "长沙",
-  "nameEn": "Changsha",
+  "name": "長沙",
+  "nameEn": "長沙",
   "country": "China",
-  "population": "10.4 million",
+  "population": "1,040万人",
   "coordinates": {
     "lat": 28.2282,
     "lng": 112.9388
   },
-  "timezone": "UTC+8 (China Standard Time)",
-  "description": "Changsha, the capital of Hunan Province, is a vibrant city where ancient history meets modern dynamism. Known as the 'Xiang River City' for its location on the banks of the湘江, Changsha is famous for its spicy Hunan cuisine, revolutionary heritage, and thriving entertainment scene. The city offers a unique blend of traditional culture, natural scenery, and contemporary youth culture, making it one of China's most lively provincial capitals.",
+  "timezone": "UTC+8（中国標準時）",
+  "description": "長沙は湖南省の省都であり、古代の歴史と現代のダイナミズムが出会う活気に満ちた都市です。湘江沿いの立地から「湘江の都市」として知られ、長沙は辛い湖南料理、革命的な遺産、そして活気あるエンターテインメントシーンで有名です。この街は、伝統的な文化、自然の風景、そして現代的なユースカルチャーのユニークな融合を提供し、中国で最も活気のある地方都市の一つです。",
   "coverImage": "/img/ext/77497afc84d8.webp",
   "highlights": [
-    "Yuelu Mountain - Scenic mountain with ancient academy",
-    "Orange Island - Xiang River island with Chairman Mao statue",
-    "Hunan Provincial Museum - Ancient treasures and Mawangdui",
-    "Tianxin Pavilion - Historic city landmark",
-    "Huangxing Road步行街 - Bustling shopping district"
+    "岳麓山 - 古い書院がある景勝地",
+    "橘洲 - 毛沢東主席像がある湘江の島",
+    "湖南省博物館 - 古代の宝物と馬王堆漢墓",
+    "天心閣 - 歴史的な市のランドマーク",
+    "黄興路歩行街 - にぎやかな商業地区"
   ],
   "climate": {
-    "type": "Subtropical monsoon",
+    "type": "亜熱帯季風気候",
     "bestMonths": [
-      "March",
-      "April",
-      "May",
-      "September",
-      "October",
-      "November"
+      "3月",
+      "4月",
+      "5月",
+      "9月",
+      "10月",
+      "11月"
     ],
     "avgSummerTemp": "29C (84F)",
     "avgWinterTemp": "5C (41F)",
-    "tips": "Summers are hot and humid with temperatures often exceeding 35C. Winters are cold and damp. Spring and autumn offer the most pleasant weather. Summer is also the season for spicy crayfish. Pack layers for variable temperatures."
+    "tips": "夏は高温多湿で、気温が35℃を超えることもよくあります。冬は寒くて湿気があります。春と秋は最も過ごしやすい気候です。夏は辛いザリガニの季節でもあります。気温の変化に備えて、重ね着できる服装を用意してください。"
   },
   "attractions": [
     {
       "id": "yuelu-mountain",
       "name": "岳麓山",
-      "nameEn": "Yuelu Mountain",
+      "nameEn": "岳麓山",
       "category": "nature",
-      "description": "A scenic mountain on the west bank of Xiang River, home to the famous Yuelu Academy and numerous historical sites. One of Changsha's most beloved natural and cultural attractions.",
+      "description": "湘江の西岸にある景勝地で、有名な岳麓山学院と多くの歴史的な観光スポットがあります。長沙で最も愛される自然と文化観光スポットの一つです。",
       "image": "/img/ext/9bb7c7d0e1a6.webp",
       "address": "岳麓区岳麓山",
       "coordinates": {
@@ -46,15 +46,15 @@
         "lng": 112.9444
       },
       "openingHours": "06:00-23:00",
-      "ticketPrice": "Free (some attractions within require tickets)",
-      "recommendedVisitTime": "Half day",
+      "ticketPrice": "無料（一部の観光地は入場券が必要）",
+      "recommendedVisitTime": "半日",
       "highlights": [
-        "Yuelu Academy",
-        "Ancient telegrap tower",
+        "岳麓書院",
+        "古代電信塔",
         "アラハト祠",
         "雲台"
       ],
-      "tips": "Take the scenic cable car to the top for panoramic views. Best visited in early morning. Combine with a walk along Yuelu Academy's grounds.",
+      "tips": "頂上までは景色の良いケーブルカーに乗りましょう。朝の訪問が最適です。岳麓書院の敷地を散歩するのがおすすめ。",
       "phone": "+86 731 8882 5011"
     },
     {
@@ -64,19 +64,19 @@
       "category": "cultural",
       "description": "中国四大名書院の一つであり、976年に創立されました。伝統的な中国建築と学術遺産の見事な例です。",
       "image": "/img/ext/0891fec41e00.webp",
-      "address": "湖南省長沙市岳麓区麓山路38号",
+      "address": "岳麓区麓山路38号",
       "coordinates": {
         "lat": 28.2018,
         "lng": 112.9388
       },
       "openingHours": "07:30-18:00（夏）、08:00-17:30（冬）",
-      "ticketPrice": "50元",
+      "ticketPrice": "50¥",
       "recommendedVisitTime": "1-2時間",
       "highlights": [
         "講堂",
         "書庫",
         "周辺の山",
-        "古い木兰"
+        "古い木蘭"
       ],
       "tips": "団体客を避けて早めに到着してください。オーディオガイドが利用可能です。隣接する岳麓山は繋がっており、一緒に観光できます。",
       "phone": "+86 731 8882 2352"
@@ -86,7 +86,7 @@
       "name": "橘子洲",
       "nameEn": "橘子洲",
       "category": "nature",
-      "description": "湘江の中洲にある大きな島で、毛沢東主席の巨大な像と美しい景色で有名。长沙と革命歴史の象徴。",
+      "description": "湘江の中洲にある大きな島で、毛沢東主席の巨大な像と美しい景色で有名。長沙と革命歴史の象徴。",
       "image": "/img/ext/8733f465de74.webp",
       "address": "岳麓区橘子洲头",
       "coordinates": {
@@ -94,47 +94,47 @@
         "lng": 112.9511
       },
       "openingHours": "07:00-22:00",
-      "ticketPrice": "Free (metro train 20¥)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "無料（地下鉄20円）",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
-        "Chairman Mao statue",
-        "Orange orchards",
-        "River views",
-        "Night fountain show"
+        "毛沢東像",
+        "オレンジ果樹園",
+        "川景色",
+        "夜間噴水ショー"
       ],
-      "tips": "Take the scenic train to explore the island. Best at sunset for photos. The fountain show on weekends is spectacular. Wear comfortable walking shoes.",
+      "tips": "島内を巡る景色の良い列車を利用しましょう。夕暮れ時の撮影に最適。週末の噴水ショーは素晴らしい。歩きやすい靴を履いてください。",
       "phone": "+86 731 8888 2501"
     },
     {
       "id": "hunan-provincial-museum",
-      "name": "湖南省博物馆",
-      "nameEn": "Hunan Provincial Museum",
+      "name": "湖南省博物館",
+      "nameEn": "湖南省博物館",
       "category": "cultural",
-      "description": "One of China's finest provincial museums, featuring the famous Mawangdui Han Dynasty tombs and artifacts. Home to the best preserved ancient corpses in China.",
+      "description": "中国で最も優れた省級博物館の1つで、有名な馬王堆漢代墓の出土品や遺物を展示。中国で最も保存状態の良い古代遺体を展示。",
       "image": "/img/ext/638bc08b3f60.webp",
-      "address": "开福区东风路50号",
+      "address": "開福区東風路50号",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9855
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free (timed entry required)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "09:00-17:00（月曜日は休館）",
+      "ticketPrice": "無料（日時指定券が必要）",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
-        "Mawangdui Han Tombs",
-        "Ancient silk artifacts",
-        "Bronze ware collection",
-        "Xiang River civilization"
+        "馬王堆漢墓",
+        "古代シルク製品",
+        "青銅器コレクション",
+        "湘江文明"
       ],
-      "tips": "Book tickets online days in advance as they sell out quickly. The museum is often fully booked during holidays. Allocate at least 3 hours.",
+      "tips": "事前にオンラインチケットを購入してください。売り切れになりがちです。休日期は予約が埋まりやすくなります。最低3時間は確保してください。",
       "phone": "+86 073 1 3923 2563"
     },
     {
       "id": "tianxin-pavilion",
-      "name": "天心阁",
-      "nameEn": "Tianxin Pavilion",
+      "name": "天心閣",
+      "nameEn": "天心閣",
       "category": "historical",
-      "description": "An iconic historical landmark in the center of Changsha, offering views of the ancient city walls and modern city skyline. One of the few remaining ancient pavilions in Hunan.",
+      "description": "長沙の中心にある象徴的な歴史的名所。古代城壁と近代的な都市のスカイラインを一望できます。湖南の数少ない現存する古代の楼閣の一つです。",
       "image": "/img/ext/d10b28c637ef.webp",
       "address": "天心区天心路17号",
       "coordinates": {
@@ -143,46 +143,46 @@
       },
       "openingHours": "08:00-17:30",
       "ticketPrice": "32¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Ancient city wall",
-        "Pavilion architecture",
-        "Ginkgo trees",
-        "City views"
+        "古城壁",
+        "樓閣建築",
+        "イチョウの木",
+        "街の景色"
       ],
-      "tips": "Best visited in autumn when the ginkgo trees turn golden. The surrounding Tianxin Park is free to enter. Nice evening walk along the ancient walls.",
+      "tips": "銀杏が黄金色に染まる秋が最佳です。隣接する天心公園は無料で入場可能。古代城壁沿いの夕涼しが気持ち 좋습니다。",
       "phone": "+86 731 8515 5379"
     },
     {
       "id": "huangxing-road",
-      "name": "黄兴路步行街",
-      "nameEn": "Huangxing Road Pedestrian Street",
+      "name": "黄興路歩行街",
+      "nameEn": "黄興路歩行者天国",
       "category": "shopping",
-      "description": "Changsha's most famous shopping and entertainment district, featuring a mix of modern malls, traditional shops, and local street food. A vibrant pedestrian area full of energy.",
+      "description": "長沙で最も有名なショッピング・エンターテイメント地区で、モダンなショッピングセンター、伝統商店、地元屋台料理が混在しています。活気に満ちた歩行者天国です。",
       "image": "/img/ext/ee54122c9170.webp",
-      "address": "芙蓉区黄兴路",
+      "address": "芙蓉区黄興路",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
       },
-      "openingHours": "24 hours (shops typically 10:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24時間（ショップは通常10:00-22:00）",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Street food stalls",
-        "Historic shops",
-        "潮流购物",
-        "Architecture mix"
+        "屋台料理",
+        "歴史的な商店",
+        "トレンドショッピング",
+        "建築のミックス"
       ],
-      "tips": "Best visited in the evening when illuminated. Try local snacks from street vendors. Connected to other shopping areas nearby.",
+      "tips": "夜間照明時に訪問するのがベスト。屋台で地元スナックを試しましょう。周辺のショッピングエリアとも接続しています。",
       "phone": "+86 073 1 8309 4750"
     },
     {
       "id": "huogong-temple",
-      "name": "火宫殿",
-      "nameEn": "Huogong Temple",
+      "name": "火宮殿",
+      "nameEn": "火宮殿",
       "category": "culture",
-      "description": "A historic temple dedicated to the fire god and now a famous food complex serving authentic Hunan cuisine. A must-visit for understanding Changsha's food culture.",
+      "description": "火神を祀る歴史的な寺院で、現在は本格的な湖南料理の有名なフードコンプレックス。長沙の食文化を理解するためにぜひ訪れたい場所です。",
       "image": "/img/ext/15630de9f39c.webp",
       "address": "天心区坡子街127号",
       "coordinates": {
@@ -190,143 +190,143 @@
         "lng": 112.9677
       },
       "openingHours": "10:00-21:00",
-      "ticketPrice": "Free (food separate)",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "無料（飲食は別）",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Fire god temple",
-        "Hunan snacks",
-        "Traditional performances",
-        "Ancient architecture"
+        "火神神社",
+        "湖南スナック",
+        "伝統公演",
+        "古代建築"
       ],
-      "tips": "Come hungry to sample the many Hunan snacks. The temple itself is interesting but the food is the main attraction. Try the stinky tofu here.",
+      "tips": "多くの湖南スナックを試すために空腹で来店しましょう。寺院自体も興味深いますがメインは食事です。ここで臭豆腐を試してください。",
       "phone": "+86 073 1 2238 4920"
     },
     {
       "id": "taiping-street",
       "name": "太平街",
-      "nameEn": "Taiping Street",
+      "nameEn": "太平街",
       "category": "culture",
-      "description": "A historic street preserving traditional architecture with modern shops and cafes. One of Changsha's most charming cultural districts with preserved Ming-Qing style buildings.",
+      "description": "伝統的な建築を保存し、モダンなショップやカフェが入る歴史的な通り。明清様式の建物を保存した、長沙で最も魅力的な文化地区の一つです。",
       "image": "/img/ext/cffd90307863.webp",
       "address": "天心区太平街",
       "coordinates": {
         "lat": 28.2266,
         "lng": 112.9655
       },
-      "openingHours": "24 hours (shops typically 10:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24時間（ショップは通常10:00-22:00）",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Traditional architecture",
-        "Local crafts",
-        "Cafes and bars",
-        "Jiangliang ancestral hall"
+        "伝統的な建築",
+        "地元工芸品",
+        "カフェやバー",
+        "江良宗祠"
       ],
-      "tips": "Best explored on foot to appreciate the preserved buildings. Visit in late afternoon and stay for evening ambiance. Good for souvenirs and local crafts.",
+      "tips": "保存された建物を味わうために徒歩で探索するのがベスト。午後の遅い時間に訪れ、夜の雰囲気を満喫しましょう。お土産や地元工芸品に最適です。",
       "phone": "+86 073 1 2155 5931"
     },
     {
       "id": "pozijie",
       "name": "坡子街",
-      "nameEn": "Pozi Street",
+      "nameEn": "坡子街",
       "category": "culture",
-      "description": "One of Changsha's oldest streets, famous for traditional Hunan food and local snacks. The street has over 300 years of history and is a food lover's paradise.",
+      "description": "長沙で最も古い通りの一つで、伝統的な湖南料理や地元のおやつで有名。300年以上の歴史を持ち、フードラバーのパラダイスです。",
       "image": "/img/ext/c21b3ef841bb.webp",
       "address": "天心区坡子街",
       "coordinates": {
         "lat": 28.225,
         "lng": 112.9677
       },
-      "openingHours": "24 hours (shops typically 10:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24時間（ショップは通常10:00-22:00）",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Old street atmosphere",
-        "Food stalls",
-        "Traditional medicine shops",
-        "Fire god temple nearby"
+        "古い通りの雰囲気",
+        "屋台",
+        "伝統的な薬屋",
+        "近くの火神廟"
       ],
-      "tips": "Join the locals for evening food tours. Try 老字号 shops for authentic taste. Connected to Taiping Street and Huogong Temple.",
+      "tips": "地元の人々と夜のフードツアーへの参加をおすすめします。本格的な味を体験するには老字号的店へ。太平街や火宮殿につながります。",
       "phone": "+86 073 1 0497 3000"
     },
     {
       "id": "mawangdui",
-      "name": "马王堆汉墓",
-      "nameEn": "Mawangdui Han Tombs",
+      "name": "馬王堆漢墓",
+      "nameEn": "馬王堆漢墓",
       "category": "historical",
-      "description": "The archaeological site of Mawangdui, where three Han dynasty tombs were discovered with incredibly well-preserved artifacts including the world's oldest silk map and the Lady of Dai.",
+      "description": "馬王堆の考古学サイトで、3つの漢時代の墓が発見され、世界最古の絹地図や戴夫人を含む信じられないほど保存状態の良い遺物が発見されました。",
       "image": "/img/ext/9f722738cae7.webp",
-      "address": "芙蓉区古汉路89号",
+      "address": "芙蓉区古漢路89号",
       "coordinates": {
         "lat": 28.2133,
         "lng": 112.9855
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "Free (included with Provincial Museum ticket)",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "無料（省博物館のチケットに含まれる）",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Ancient tomb site",
-        "Well-preserved artifacts",
-        "Silk artifacts",
-        "Ancient medical texts"
+        "古代の墓址",
+        "保存状態の良い遺物",
+        "絹織物",
+        "古代の医学書"
       ],
-      "tips": "Often visited together with Hunan Provincial Museum. The tomb pits are fascinating. The site shows what archaeological work looks like.",
+      "tips": "湖南省博物館と一緒に訪れることが多い。墓穴は魅力的。考古学的な作業の現場を見ることができる。",
       "phone": "+86 073 1 1897 4653"
     },
     {
       "id": "hanjiang possibility",
-      "name": "汉墓遗址",
-      "nameEn": "Mawangdui Archaeological Site",
+      "name": "漢墓遺跡",
+      "nameEn": "馬王堆考古学サイト",
       "category": "historical",
-      "description": "The excavation site of the Mawangdui tombs, offering insight into Han dynasty burial practices and the lives of the aristocracy over 2,000 years ago.",
+      "description": "馬王堆墓の発掘現場であり、2000年以上前の漢時代の埋葬慣習と貴族の生活に洞察を提供します。",
       "image": "/img/ext/3810eb812d12.webp",
-      "address": "芙蓉区古汉路",
+      "address": "芙蓉区古漢路",
       "coordinates": {
         "lat": 28.2133,
         "lng": 112.9855
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "Tomb number 1, 2, 3",
-        "Excavation site",
-        "Ancient artifacts display",
-        "Educational exhibits"
+        "第1、2、3号墓",
+        "発掘現場",
+        "古代遺物展示",
+        "教育展示"
       ],
-      "tips": "Visit after the Provincial Museum for a complete picture. The tomb pits are open for viewing. Excellent for history enthusiasts.",
+      "tips": "省博物館を訪問した後に訪れると、完全な姿を理解できる。墓穴は公開されている。歴史愛好家に最適。",
       "phone": "+86 073 1 8133 7979"
     },
     {
       "id": "meitan lake",
       "name": "梅溪湖",
-      "nameEn": "Meitan Lake",
+      "nameEn": "美丹湖",
       "category": "nature",
-      "description": "A beautiful artificial lake in the Yuelu district with surrounding parks, art centers, and the famous Meitan Lake Grand Theatre. A modern cultural and recreational area.",
+      "description": "岳麓区に位置する美しい人造湖で、周囲には公園、芸術センター、そして有名な美丹湖大劇場があります。現代的な文化・レクリエーションエリアです。",
       "image": "/img/ext/210f5c0ab0a9.webp",
       "address": "岳麓区梅溪湖",
       "coordinates": {
         "lat": 28.1818,
         "lng": 112.9111
       },
-      "openingHours": "24 hours (buildings vary)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24時間（建物は異なる）",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Grand Theatre",
-        "Musical fountain",
-        "Island attractions",
-        "Art galleries"
+        "大劇場",
+        "音楽噴水",
+        "島のアトラクション",
+        "ギャラリー"
       ],
-      "tips": "Best visited in the evening for the fountain show. The walking path around the lake is pleasant. Combine with nearby Yuelu Mountain.",
+      "tips": "噴水のショーを楽しむなら夕方が最佳。湖畔の遊歩道は気持ちが良い。近くの岳麓山と組み合わせると良い。",
       "phone": "+86 073 1 1327 2622"
     },
     {
       "id": "dufu-pavilion",
-      "name": "杜甫江阁",
-      "nameEn": "Du Fu Pavilion",
+      "name": "杜甫江閣",
+      "nameEn": "杜甫閣",
       "category": "historical",
-      "description": "A pavilion built in memory of the famous Tang dynasty poet Du Fu, who lived in Changsha. Offers beautiful views of Xiang River and the city skyline.",
+      "description": "長沙に住んでいた有名な唐王朝の詩人杜甫を偲んで建立された閣。湘江と市のスカイライン、美しい景色が楽しめる。",
       "image": "/img/ext/a6e176e9ca1c.webp",
       "address": "天心区白沙路",
       "coordinates": {
@@ -335,22 +335,22 @@
       },
       "openingHours": "09:00-21:00",
       "ticketPrice": "15¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "Poetry inscriptions",
-        "River views",
-        "Du Fu history",
-        "Night illumination"
+        "詩碑",
+        "川 전망",
+        "杜甫の歴史",
+        "夜間照明"
       ],
-      "tips": "Best visited at sunset or at night when illuminated. The surrounding area has good walking paths along the river. Nice for photography.",
+      "tips": "夕暮れや夜間（ライトアップ時）に訪問するのが最佳。周辺には河沿いの良い遊歩道がある。写真撮影に良い。",
       "phone": "+86 073 1 0821 4822"
     },
     {
       "id": "yunong-guzhen",
       "name": "云拢古村",
-      "nameEn": "Yunong Ancient Village",
+      "nameEn": "雲農古鎮",
       "category": "culture",
-      "description": "A well-preserved ancient village near Changsha with traditional architecture, folk customs, and rural scenery. Offers an escape from the modern city.",
+      "description": "長沙近郊にある、保存状態の良い伝統建築、民俗習慣、田園風景を持つ古代の村。現代都市からの逃避に最適です。",
       "image": "/img/ext/e7b07db4941f.webp",
       "address": "望城区云拢镇",
       "coordinates": {
@@ -359,30 +359,30 @@
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "Half day",
+      "recommendedVisitTime": "半日",
       "highlights": [
-        "Ancient architecture",
-        "Folk performances",
-        "Rural scenery",
-        "Traditional crafts"
+        "古代建築",
+        "民俗パフォーマンス",
+        "田園風景",
+        "伝統的な工芸品"
       ],
-      "tips": "Good for a day trip from the city. Arrive early for folk performances. Wear comfortable shoes for walking on uneven paths.",
+      "tips": "市内からの日帰り旅行に最佳。民俗パフォーマンスには早く到着する。歩きやすい靴を履いて、不均一な道を歩く。",
       "phone": "+86 073 1 3846 2839"
     },
     {
       "id": "shijin-hutong",
       "name": "石井胡同",
-      "nameEn": "Shijing Hutong",
+      "nameEn": "石井胡同",
       "category": "culture",
-      "description": "A restored historic hutong (alley) area showcasing traditional Changsha architecture and lifestyle. Now houses boutique shops and cafes.",
+      "description": "修復された歴史的な胡同（北京の路地）地域で、伝統的な長沙の建築と生活様式を紹介。現在ではブティックショップとカフェが点在している。",
       "image": "/img/ext/5d73650c917a.webp",
       "address": "天心区",
       "coordinates": {
         "lat": 28.2255,
         "lng": 112.9694
       },
-      "openingHours": "24 hours (shops vary)",
-      "ticketPrice": "Free",
+      "openingHours": "24時間（ショップにより異なる）",
+      "ticketPrice": "無料",
       "recommendedVisitTime": "1-2時間",
       "highlights": [
         "伝統的な建築",
@@ -390,13 +390,13 @@
         "地元の芸術",
         "写真撮影の機会"
       ],
-      "tips": "Best for photography enthusiasts. The restored buildings are beautiful. Visit in good weather for best photos.",
+      "tips": "写真愛好家に最適。復元された 건물は美しい。最好的写真を撮るには良い天気の時に訪れてください。",
       "phone": "+86 073 1 5509 6382"
     },
     {
       "id": "changsha-aquarium",
-      "name": "长沙海底世界",
-      "nameEn": "长沙水族館",
+      "name": "長沙海底世界",
+      "nameEn": "長沙水族館",
       "category": "entertainment",
       "description": "多様な海洋生物、イルカのショー、インタラクティブな展示がある大型水族館。家族連れや子供に人気です。",
       "image": "/img/ext/e31ec5f25b12.webp",
@@ -412,7 +412,7 @@
         "イルカのショー",
         "サメの水槽",
         "サンゴ礁トンネル",
-        "Seal performances"
+        "アシカの演技"
       ],
       "tips": "到着到着時間を確認してください。週末は混み合います。近くの芙蓉古城と組み合わせて訪れることをお勧めします。",
       "phone": "+86 073 1 7488 2637"
@@ -420,129 +420,129 @@
     {
       "id": "furong-ancient-town",
       "name": "芙蓉古镇",
-      "nameEn": "Furong Ancient Town",
+      "nameEn": "芙蓉古鎮",
       "category": "culture",
-      "description": "A scenic ancient town built around a waterfall, known as the '挂在瀑布上的千年古镇'. Famous for its unique architecture and Hakka culture.",
+      "description": "瀑布を中心に建設された景色の良い古鎮で、「挂在瀑布上の千年古镇」として知られている。独特の建築と客家文化で有名です。",
       "image": "/img/ext/91174fa8f3eb.webp",
-      "address": "永定区 (near Changsha)",
+      "address": "永定区（長沙近郊）",
       "coordinates": {
         "lat": 28.5511,
         "lng": 112.8811
       },
       "openingHours": "全天",
       "ticketPrice": "100¥",
-      "recommendedVisitTime": "Half day to full day",
+      "recommendedVisitTime": "半日〜1日",
       "highlights": [
-        "Waterfall through town",
-        "Hakka architecture",
-        "Traditional performances",
-        "Night views"
+        "町中を流れる瀑布",
+        "客家建築",
+        "伝統公演",
+        "夜景"
       ],
-      "tips": "About 2 hours from Changsha. Stay overnight for the illuminated waterfall. Try local Hakka dishes. Best in dry season (autumn).",
+      "tips": "長沙から約2時間。ライトアップされた瀑布を見て泊まるのがおすすめ。現地の客家料理を試そう。乾季（秋）が最佳。",
       "phone": "+86 073 1 7835 4427"
     },
     {
       "id": "hunan-martyrs-park",
-      "name": "湖南烈士公园",
-      "nameEn": "Hunan Martyrs Park",
+      "name": "湖南烈士公園",
+      "nameEn": "湖南烈士公園",
       "category": "nature",
-      "description": "Changsha's largest park featuring a memorial tower, beautiful gardens, and a large lake. A peaceful retreat in the heart of the city.",
+      "description": "霊塔、美しい庭園、大きな池を備えた長沙最大の公園。街中にある静かな憩いの場です。",
       "image": "/img/ext/efec80f61420.webp",
-      "address": "开福区营盘东路",
+      "address": "開福区営盤東路",
       "coordinates": {
         "lat": 28.2355,
         "lng": 112.9755
       },
       "openingHours": "06:00-22:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
-        "Martyrs Tower",
-        "Peony garden",
-        "Lake boating",
-        "Morning tai chi"
+        "罹難者記念塔",
+        "牡丹園",
+        "湖面遊覧",
+        "朝の太极拳"
       ],
-      "tips": "Join locals doing tai chi in the early morning. The memorial tower is impressive. Great for a morning walk or afternoon relaxation.",
+      "tips": "朝の太極拳に参加しましょう。霊塔は圧巻です。朝の散歩や午後のリラクゼーションに最適です。",
       "phone": "+86 073 1 3102 6543"
     },
     {
       "id": "xihu Scenic",
-      "name": "西湖公园",
-      "nameEn": "Xihu Park",
+      "name": "西湖公園",
+      "nameEn": "西湖公園",
       "category": "nature",
-      "description": "A scenic urban park with beautiful lake, gardens, and modern amenities. Popular with locals for morning exercise and evening strolls.",
+      "description": "美しい湖と庭園、近代的な設備を備えた都市公園です。朝の運動や夕方の散歩に地元の人々に人気があります。",
       "image": "/img/ext/2393a80aa04e.webp",
-      "address": "岳麓区西湖公园",
+      "address": "岳麓区西湖公園",
       "coordinates": {
         "lat": 28.2188,
         "lng": 112.9255
       },
       "openingHours": "06:00-22:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1-2時間",
       "highlights": [
-        "Lake views",
-        "Garden landscapes",
-        "Fountain show",
-        "Cafes nearby"
+        "湖の眺望",
+        "庭園の風景",
+        "噴水ショー",
+        "近隣のカフェ"
       ],
-      "tips": "Good for a quiet morning or evening walk. The surrounding area has good cafes. Less crowded than Martyrs Park.",
+      "tips": "静かな朝の散歩や夕方の散歩に最適です。周辺には美味しいカフェがあります。罹難者記念公園より人が少ないです。",
       "phone": "+86 073 1 3249 8268"
     },
     {
       "id": "lushan-national-forest",
-      "name": "芦山国家森林公园",
-      "nameEn": "Lushan National Forest Park",
+      "name": "蘆山国家森林公園",
+      "nameEn": "廬山森林公園",
       "category": "nature",
-      "description": "A scenic forest area near Changsha with hiking trails, ancient temples, and beautiful natural scenery. Good for day trips and outdoor activities.",
+      "description": "長沙近くの景勝地としての森林地帯で、ハイキングコース、古寺、美しい自然風景があります。日帰り旅行やアウトドアクティビティに最適です。",
       "image": "/img/ext/de8344d0ae00.webp",
-      "address": "长沙县江背镇",
+      "address": "長沙県江背鎮",
       "coordinates": {
         "lat": 28.3511,
         "lng": 113.0511
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "Half day",
+      "recommendedVisitTime": "半日",
       "highlights": [
-        "Forest trails",
-        "Ancient temple",
-        "Fresh air",
-        "Wildlife"
+        "森林トレイル",
+        "古代寺院",
+        "新鮮な空気",
+        "野生動物"
       ],
-      "tips": "Wear hiking shoes. Bring water and snacks. Best visited in spring for flowers or autumn for foliage.",
+      "tips": "ハイキングシューズ着用。水とスナックをお持ちください。春のの花や秋の紅葉時期に訪れるのが最適です。",
       "phone": "+86 073 1 0474 1299"
     },
     {
       "id": "changsha-window-world",
-      "name": "长沙世界之窗",
-      "nameEn": "Changsha Window of the World",
+      "name": "長沙世界の窓",
+      "nameEn": "長沙ワールド・ウィンドウ",
       "category": "entertainment",
-      "description": "A theme park featuring miniature world landmarks, thrilling rides, and cultural performances. Popular family entertainment destination.",
+      "description": "ミニチュアの世界のランドマーク、スリル満点のアトラクション、文化パフォーマンスが特徴のテーマパーク。人気の家族向けエンターテイメントスポットです。",
       "image": "/img/ext/a7c6252a19c7.webp",
-      "address": "开福区三一大道485号",
+      "address": "開福区三一大道485号",
       "coordinates": {
         "lat": 28.2511,
         "lng": 112.9455
       },
-      "openingHours": "09:00-22:00 (seasonal)",
+      "openingHours": "09:00-22:00（季節により）",
       "ticketPrice": "130¥",
-      "recommendedVisitTime": "Full day",
+      "recommendedVisitTime": "終日",
       "highlights": [
-        "Miniature world landmarks",
-        "Thrilling rides",
-        "Evening shows",
-        "Water park"
+        "ミニチュアのランドマーク",
+        "スリリングなアトラクション",
+        "夜のショー",
+        "ウォーターパーク"
       ],
-      "tips": "Book tickets online. Best visited in spring and autumn. Evening shows are spectacular. Combine with nearby Hunan Martyrs Park.",
+      "tips": "オンラインでチケットを購入してください。春秋の訪問が最も 좋습니다。夜のショーは圧巻です。近くにある湖南烈士公園と併せて訪れると効果的です。",
       "phone": "+86 073 1 9217 1931"
     },
     {
       "id": "changsha-yuelu-shan-science",
       "name": "岳麓山索道",
-      "nameEn": "Yuelu Mountain Cable Car",
+      "nameEn": "岳麓山ケーブルカー",
       "category": "nature",
-      "description": "Scenic cable car ride offering panoramic views of Changsha and Yuelu Mountain. A popular way to reach the mountain summit.",
+      "description": "長沙と岳麓山の全景を楽しむことができる景勝地のケーブルカー。山頂へのアクセスとして人気の方法です。",
       "image": "/img/ext/3efdb161d46b.webp",
       "address": "岳麓区岳麓山",
       "coordinates": {
@@ -550,71 +550,71 @@
         "lng": 112.9444
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "30¥ (one way), 50¥ (round trip)",
-      "recommendedVisitTime": "30 minutes",
+      "ticketPrice": "30¥（片道）、50¥（往復）",
+      "recommendedVisitTime": "30分",
       "highlights": [
-        "Panoramic views",
-        "Aerial scenery",
-        "Mountain summit access",
-        "Photo opportunities"
+        "パノラマ眺め",
+        "空中風景",
+        "山頂へのアクセス",
+        "フォトスポット"
       ],
-      "tips": "Combine with Yuelu Mountain visit. Best on clear days. Morning rides have less fog. Can walk down for different views.",
+      "tips": "岳麓山の訪問と併せてお楽しみください。快晴の日がベストです。朝の運行は霧が少なくなりえます。下山時に異なる景色を楽しむことができます。",
       "phone": "+86 731 8882 5011"
     },
     {
       "id": "changsha-bamboo-lake",
       "name": "湘江竹江",
-      "nameEn": "Xiang River Bamboo Grove",
+      "nameEn": "湘江の竹林",
       "category": "nature",
-      "description": "A scenic riverside area with bamboo groves along the Xiang River, offering peaceful walking paths and beautiful river views.",
+      "description": "湘江沿いの竹林を含む景勝지로、静かな遊歩道をカールし、美しい川景色を提供します。",
       "image": "/img/ext/90ffa0b7fcde.webp",
       "address": "岳麓区潇湘大道",
       "coordinates": {
         "lat": 28.2111,
         "lng": 112.9511
       },
-      "openingHours": "24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24時間",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Bamboo paths",
-        "River views",
-        "Sunset scenery",
-        "Quiet atmosphere"
+        "竹林の小道",
+        "川景色",
+        "夕暮れの景色",
+        "静かな雰囲気"
       ],
-      "tips": "Best at sunset. The bamboo grove creates a peaceful atmosphere. Good for photography and morning walks. Connected to Yuelu Mountain area.",
+      "tips": "夕暮れ時に最適です。竹林が静かな雰囲気を生み出します。写真と朝の散歩に適しています。岳麓山エリアと接続しています。",
       "phone": "+86 073 1 7161 0293"
     },
     {
       "id": "changsha-cultural-art",
-      "name": "谢子龙影像艺术馆",
-      "nameEn": "Xie Zilong Photography Museum",
+      "name": "謝子龍影像芸術館",
+      "nameEn": "謝子龍写真館",
       "category": "cultural",
-      "description": "A modern photography museum showcasing Chinese photography history and contemporary works. The building itself is architecturally significant.",
+      "description": "中国の写真史と現代作品を展示する近代的な写真博物館。建物自体も建築的に重要である。",
       "image": "/img/ext/644539ba9bec.webp",
       "address": "岳麓区潇湘南路",
       "coordinates": {
         "lat": 28.1811,
         "lng": 112.9088
       },
-      "openingHours": "10:00-18:00 (Closed Monday)",
-      "ticketPrice": "80¥ (exhibitions vary)",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "10:00-18:00（月曜休館）",
+      "ticketPrice": "80元（展示により異なる）",
+      "recommendedVisitTime": "1-2時間",
       "highlights": [
-        "Photography exhibitions",
-        "Modern architecture",
-        "Art books cafe",
-        "Photography archives"
+        "写真展示",
+        "近代建築",
+        "アートブックカフェ",
+        "写真アーカイブ"
       ],
-      "tips": "Check exhibition schedule online. The exterior is great for photos. Near Meitan Lake. Combine with Meitan Lake Grand Theatre.",
+      "tips": "ウェブサイトで展示スケジュールを確認。外装は写真に最適。美蘭湖近く。美蘭湖大劇場と組み合わせると良い。",
       "phone": "+86 073 1 3208 1703"
     },
     {
       "id": "changsha-ifc-tower",
-      "name": "长沙IFS国金中心",
-      "nameEn": "Changsha IFS Tower",
+      "name": "長沙IFS国金中心",
+      "nameEn": "長沙IFSタワー",
       "category": "shopping",
-      "description": "Changsha's tallest building and premier luxury shopping destination with international brands, rooftop observation deck, and art installations.",
+      "description": "長沙で最も高いビルで、国際ブランドが入った最高級ショッピング目的地屋上展望台、アートインスタレーションがある。",
       "image": "/img/ext/8fc80514ea39.webp",
       "address": "芙蓉区解放西路",
       "coordinates": {
@@ -622,47 +622,47 @@
         "lng": 112.9388
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "Free (observation deck 100¥)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "無料（展望台100¥）",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Observation deck views",
-        "Luxury brands",
-        "KAWS art installation",
-        "Rooftop bar"
+        "展望台からの眺望",
+        "ラグジュアリーブ랜드",
+        "KAWSのアートインスタレーション",
+        "屋上バー"
       ],
-      "tips": "Book observation deck tickets online. The KAWS statue on the roof is iconic. Best at sunset or night. Great for luxury shopping.",
+      "tips": "展望台のチケットはオンラインで予約してください。屋上のKAWS像は象徴的です。夕暮れや夜がベスト。高級ブランドのショッピングに最適です。",
       "phone": "+86 073 1 7920 2492"
     },
     {
       "id": "changsha-grand-theatre",
       "name": "梅溪湖大剧院",
-      "nameEn": "Meitan Lake Grand Theatre",
+      "nameEn": "梅潭湖大剧院",
       "category": "cultural",
-      "description": "A stunning architectural landmark designed by Zaha Hadid, hosting world-class performances and cultural events.",
+      "description": "ザハ・ハディドによる設計された見事な建築記念碑で、世界クラスの公演や文化イベントが開催されています。",
       "image": "/img/ext/b7de30e86f3f.webp",
       "address": "岳麓区梅溪湖",
       "coordinates": {
         "lat": 28.1818,
         "lng": 112.9111
       },
-      "openingHours": "09:00-20:00 (performances vary)",
-      "ticketPrice": "Performance tickets vary (100-500¥)",
-      "recommendedVisitTime": "2-3 hours (for performance)",
+      "openingHours": "09:00-20:00（公演により異なる）",
+      "ticketPrice": "公演チケットは異なります（100-500¥）",
+      "recommendedVisitTime": "2-3時間（公演の場合）",
       "highlights": [
-        "Zaha Hadid architecture",
-        "World-class performances",
-        "Musical fountain",
-        "Evening lighting"
+        "ザハ・ハディドの建築",
+        "世界クラスの公演",
+        "音楽噴水",
+        "夜間照明"
       ],
-      "tips": "Book tickets in advance for popular shows. The building is impressive even without attending a performance. Combine with Meitan Lake walk.",
+      "tips": "人気公演のチケットは事前予約をお勧めします。公演がなくても建物自体が印象的です。梅潭湖の散歩と組み合わせてください。",
       "phone": "+86 073 1 5960 7397"
     },
     {
       "id": "changsha-wangcheng",
       "name": "望城古镇",
-      "nameEn": "Wangcheng Ancient Town",
+      "nameEn": "王城古鎮",
       "category": "culture",
-      "description": "A historic town with well-preserved Qing dynasty architecture, traditional crafts, and authentic Hunan rural culture.",
+      "description": "保存状態のよい清代建築、伝統工芸、本場の湖南農村文化が楽しめる歴史的な町です。",
       "image": "/img/ext/33ffc82d9d5b.webp",
       "address": "望城区靖港镇",
       "coordinates": {
@@ -671,200 +671,200 @@
       },
       "openingHours": "08:30-17:30",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "Half day",
+      "recommendedVisitTime": "半日",
       "highlights": [
-        "Ancient architecture",
-        "Traditional crafts",
-        "Local snacks",
-        "River views"
+        "古代建築",
+        "伝統的な工芸品",
+        "ローカルスナック",
+        "川 전망"
       ],
-      "tips": "About 1 hour from Changsha city. Try local snacks. Best on weekdays. Combine with nearby Tongguan for a full day trip.",
+      "tips": "長沙市中心部からバスで約1時間。地元の小吃を試すのがおすすめ。平日が最適。近くの通関と合わせて日帰り観光ができる。",
       "phone": "+86 073 1 2959 5891"
     },
     {
       "id": "changsha-baisha-shuyuan",
       "name": "白沙古井",
-      "nameEn": "Baisha Ancient Well",
+      "nameEn": "白沙古井",
       "category": "cultural",
-      "description": "A historic well that has been providing water to Changsha for over 1000 years, surrounded by traditional temples and tea houses.",
+      "description": "1000年以上にわたり長沙に水を供給してきた歴史的な井戸で、周囲には伝統的な寺院や茶屋が立ち並ぶ。",
       "image": "/img/ext/714c29b2696b.webp",
       "address": "天心区白沙路",
       "coordinates": {
         "lat": 28.2311,
         "lng": 112.9555
       },
-      "openingHours": "24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "30 minutes",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "30分",
       "highlights": [
-        "Ancient well",
-        "Traditional temples",
-        "Tea houses",
-        "Local residents"
+        "古井戸",
+        "伝統的な寺院",
+        "お茶販売店",
+        "地元の人々"
       ],
-      "tips": "Part of local daily life - locals still collect water here. Near Du Fu Pavilion. Good for cultural immersion. Best in morning.",
+      "tips": "地元の人々の日常生活の一部です。今でもここに水を汲みに来る人が見られます。杜甫亭が近くにあります。文化体験に最適。朝がベスト。",
       "phone": "+86 073 1 8655 0650"
     },
     {
       "id": "tianxin-ge",
-      "name": "天心阁",
-      "nameEn": "Tianxin Pavilion",
+      "name": "天心閣",
+      "nameEn": "天心閣",
       "category": "landmark",
-      "description": "长沙古城墙上的阁楼，有2000多年历史。",
-      "address": "长沙市天心区",
+      "description": "長沙古城壁の上の楼閣で、2000年以上の歴史がある。",
+      "address": "長沙市天心区",
       "coordinates": {
         "lat": 28.18,
         "lng": 112.98
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "32元",
-      "recommendedVisitTime": "1小时",
+      "recommendedVisitTime": "1時間",
       "highlights": [
         "古城墙",
-        "阁楼"
+        "楼閣"
       ],
-      "tips": "了解长沙历史。",
+      "tips": "長沙の歴史を学ぶ。",
       "image": "/img/ext/d1e79d410463.webp",
       "phone": "+86 731 8515 5379"
     },
     {
       "id": "he-long-stadium",
-      "name": "贺龙体育场",
-      "nameEn": "He Long Stadium",
+      "name": "賀龍体育場",
+      "nameEn": "賀龍体育館",
       "category": "landmark",
-      "description": "长沙的标志性建筑之一。",
-      "address": "长沙市天心区",
+      "description": "長沙のシンボル的建築の一つ。",
+      "address": "長沙市天心区",
       "coordinates": {
         "lat": 28.18,
         "lng": 112.98
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "30分钟",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "30分",
       "highlights": [
-        "体育场馆"
+        "スポーツ施設"
       ],
-      "tips": "了解长沙体育文化。",
+      "tips": "長沙のスポーツ文化を学ぶ。",
       "image": "/img/ext/d65dc6a9e66a.webp",
       "phone": "+86 073 1 7024 3194"
     },
     {
       "id": "jiefang-road",
       "name": "解放西路",
-      "nameEn": "Jiefang West Road",
+      "nameEn": "解放西路",
       "category": "street",
-      "description": "长沙最繁华的商业街，有酒吧一条街。",
-      "address": "长沙市芙蓉区",
+      "description": "長沙で最も繁華な商業街で、バー通りがある。",
+      "address": "長沙市芙蓉区",
       "coordinates": {
         "lat": 28.2,
         "lng": 112.98
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
         "酒吧",
         "夜生活"
       ],
-      "tips": "体验长沙夜生活。",
+      "tips": "長沙のナイトライフを体験する。",
       "image": "/img/ext/8e26cf3307ff.webp",
       "phone": "+86 073 1 1153 5191"
     },
     {
       "id": "wuyi-square",
-      "name": "五一广场",
-      "nameEn": "Wuyi Square",
+      "name": "五一広場",
+      "nameEn": "五一広場",
       "category": "landmark",
-      "description": "长沙的城市中心广场。",
-      "address": "长沙市芙蓉区",
+      "description": "長沙の市中心広場。",
+      "address": "長沙市芙蓉区",
       "coordinates": {
         "lat": 28.2,
         "lng": 112.98
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "30分钟",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "30分",
       "highlights": [
         "城市中心"
       ],
-      "tips": "感受长沙繁华。",
+      "tips": "長沙の繁華を感じる。",
       "image": "/img/ext/2c8c7b5058ba.webp",
       "phone": "+86 073 1 0990 1221"
     },
     {
       "id": "hunan-museum",
-      "name": "湖南省博物馆",
-      "nameEn": "Hunan Provincial Museum",
+      "name": "湖南省博物館",
+      "nameEn": "湖南省博物館",
       "category": "museum",
-      "description": "馆藏文物18万件，以马王堆汉墓出土文物最著名。",
-      "address": "长沙市开福区",
+      "description": "館蔵文物18万点、馬王堆漢墓出土文物が最も有名である。",
+      "address": "長沙市開福区",
       "coordinates": {
         "lat": 28.22,
         "lng": 112.98
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
-        "马王堆",
+        "馬王堆",
         "辛追夫人",
-        "素纱禅衣"
+        "素紗禅衣"
       ],
-      "tips": "必看马王堆文物。",
+      "tips": "必見の馬王堆文物。",
       "image": "/img/ext/06bf68a1ddc8.webp",
       "phone": "+86 731 8451 4630"
     },
     {
       "id": "pozi-street",
       "name": "坡子街",
-      "nameEn": "Pozi Street",
+      "nameEn": "坡子街",
       "category": "street",
-      "description": "长沙最古老的商业街，汇集各种长沙小吃。",
-      "address": "长沙市天心区",
+      "description": "長沙で最も古い商業街で、各種の長沙小吃が集まる。",
+      "address": "長沙市天心区",
       "coordinates": {
         "lat": 28.18,
         "lng": 112.98
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
         "臭豆腐",
         "糖油粑粑"
       ],
-      "tips": "品尝长沙小吃。",
+      "tips": "長沙小吃を味わう。",
       "image": "/img/ext/6c4904acefaa.webp",
       "phone": "+86 073 1 5899 6884"
     },
     {
       "id": "meixi-lake",
       "name": "梅溪湖",
-      "nameEn": "Meixi Lake",
+      "nameEn": "梅西湖",
       "category": "nature",
-      "description": "长沙新城区的人工湖，有国际文化艺术中心。",
-      "address": "长沙市岳麓区",
+      "description": "長沙新城区の人工湖で、国際文化芸術センターがある。",
+      "address": "長沙市岳麓区",
       "coordinates": {
         "lat": 28.2,
         "lng": 112.88
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
         "湖泊",
         "文化艺术中心"
       ],
-      "tips": "傍晚散步。",
+      "tips": "夕方の散歩に最適です。",
       "image": "/img/ext/794ce6cb9752.webp",
       "phone": "+86 073 1 7734 5301"
     },
     {
       "id": "window-of-world",
-      "name": "长沙世界之窗",
-      "nameEn": "Changsha Window of the World",
+      "name": "長沙世界の窓",
+      "nameEn": "長沙ワールド・ウィンドウ",
       "category": "landmark",
-      "description": "大型主题公园，有世界著名建筑的微缩景观。",
-      "address": "长沙市开福区",
+      "description": "大型テーマパークで、世界の有名建築のミニチュア景観がある。",
+      "address": "長沙市開福区",
       "coordinates": {
         "lat": 28.22,
         "lng": 112.98
@@ -873,20 +873,20 @@
       "ticketPrice": "150元",
       "recommendedVisitTime": "半天",
       "highlights": [
-        "微缩景观",
-        "游乐设施"
+        "ミニチュア景観",
+        "遊楽施設"
       ],
-      "tips": "适合亲子游。",
+      "tips": "家族連れに最適。",
       "image": "/img/ext/5942171fa005.webp",
       "phone": "+86 073 1 7011 7926"
     },
     {
       "id": "changsha-zoo",
-      "name": "长沙生态动物园",
-      "nameEn": "Changsha Ecological Zoo",
+      "name": "長沙生態動物園",
+      "nameEn": "長沙生態動物園",
       "category": "nature",
-      "description": "长沙最大的动物园，有400多种动物。",
-      "address": "长沙市天心区",
+      "description": "長沙最大の動物園で、400種以上の動物がいる。",
+      "address": "長沙市天心区",
       "coordinates": {
         "lat": 28.13,
         "lng": 112.93
@@ -896,290 +896,290 @@
       "recommendedVisitTime": "半天",
       "highlights": [
         "大熊猫",
-        "东北虎"
+        "東北虎（シベリアトラ）"
       ],
-      "tips": "适合亲子游。",
+      "tips": "家族連れに最適。",
       "image": "/img/ext/2612840ba7f8.webp",
       "phone": "+86 073 1 2867 8017"
     },
     {
       "id": "jia-yi",
-      "name": "贾谊故居",
-      "nameEn": "Jia Yi's Former Residence",
+      "name": "賈誼故居",
+      "nameEn": "賈誼故居",
       "category": "landmark",
-      "description": "西汉贾谊的故居，有2000多年历史。",
-      "address": "长沙市天心区",
+      "description": "前漢の賈誼の故居で、2000年以上の歴史がある。",
+      "address": "長沙市天心区",
       "coordinates": {
         "lat": 28.18,
         "lng": 112.98
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
         "古代文人故居"
       ],
-      "tips": "了解汉代文化。",
+      "tips": "漢代の文化を理解する。",
       "image": "/img/ext/1960b6e633c8.webp",
       "phone": "+86 073 1 7126 5743"
     },
     {
       "id": "du-fu-pavilion",
-      "name": "杜甫江阁",
-      "nameEn": "Du Fu Pavilion",
+      "name": "杜甫江閣",
+      "nameEn": "杜甫閣",
       "category": "landmark",
-      "description": "纪念杜甫的阁楼，位于湘江边。",
-      "address": "长沙市天心区",
+      "description": "杜甫を記念した閣楼で、湘江のほとりに位置する。",
+      "address": "長沙市天心区",
       "coordinates": {
         "lat": 28.18,
         "lng": 112.97
       },
       "openingHours": "09:00-21:00",
       "ticketPrice": "12元",
-      "recommendedVisitTime": "1小时",
+      "recommendedVisitTime": "1時間",
       "highlights": [
         "杜甫文化",
-        "湘江风光"
+        "湘江の風光"
       ],
-      "tips": "了解唐代文化。",
+      "tips": "唐代の文化を学べます。",
       "image": "/img/ext/71bf7f5a68e9.webp",
       "phone": "+86 073 1 5671 6582"
     },
     {
       "id": "yanghu-wetland",
-      "name": "洋湖湿地公园",
-      "nameEn": "Yanghu Wetland Park",
+      "name": "洋湖湿地公園",
+      "nameEn": "洋湖湿地公園",
       "category": "nature",
-      "description": "长沙最大的湿地公园，有丰富的鸟类。",
-      "address": "长沙市岳麓区",
+      "description": "長沙最大の湿地公園で、鳥類が豊富。",
+      "address": "長沙市岳麓区",
       "coordinates": {
         "lat": 28.13,
         "lng": 112.9
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
         "湿地",
-        "鸟类"
+        "鳥類"
       ],
-      "tips": "观鸟好去处。",
+      "tips": "バードウォッチングに最適な場所。",
       "image": "/img/ext/b6ac81297eea.webp",
       "phone": "+86 073 1 7657 2530"
     },
     {
       "id": "kaifu-temple",
-      "name": "开福寺",
-      "nameEn": "Kaifu Temple",
+      "name": "開福寺",
+      "nameEn": "開福寺",
       "category": "temple",
-      "description": "长沙最古老的佛教寺院，始建于五代。",
-      "address": "长沙市开福区",
+      "description": "長沙最古の仏教寺院で、五代に創建された。",
+      "address": "長沙市開福区",
       "coordinates": {
         "lat": 28.22,
         "lng": 112.98
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "10元",
-      "recommendedVisitTime": "1小时",
+      "recommendedVisitTime": "1時間",
       "highlights": [
         "佛教文化",
         "古建筑"
       ],
-      "tips": "了解长沙宗教文化。",
+      "tips": "長沙の宗教文化を学ぶことができる。",
       "image": "/img/ext/37a2995553f8.webp",
       "phone": "+86 073 1 9772 6621"
     },
     {
       "id": "changsha-museum",
-      "name": "长沙博物馆",
-      "nameEn": "Changsha Museum",
+      "name": "長沙博物館",
+      "nameEn": "長沙博物館",
       "category": "museum",
-      "description": "展示长沙历史文化的博物馆。",
-      "address": "长沙市开福区",
+      "description": "長沙の歴史文化を展示する博物館。",
+      "address": "長沙市開福区",
       "coordinates": {
         "lat": 28.22,
         "lng": 112.98
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
-        "长沙历史"
+        "長沙の歴史"
       ],
-      "tips": "了解长沙文化。",
+      "tips": "長沙の文化について学べます。",
       "image": "/img/ext/222cd5568898.webp",
       "phone": "+86 073 1 0917 5219"
     },
     {
       "id": "moon-island",
-      "name": "月亮岛",
-      "nameEn": "Moon Island",
+      "name": "月島",
+      "nameEn": "ムーン・アイランド",
       "category": "nature",
-      "description": "湘江中的小岛，是休闲度假的好去处。",
-      "address": "长沙市望城区",
+      "description": "湘江の中の小島で、レジャーや休暇に最適な場所です。",
+      "address": "長沙市望城区",
       "coordinates": {
         "lat": 28.28,
         "lng": 112.93
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
+      "ticketPrice": "無料",
       "recommendedVisitTime": "半天",
       "highlights": [
-        "江岛",
-        "休闲"
+        "江島",
+        "レジャー"
       ],
-      "tips": "夏季避暑。",
+      "tips": "夏の避暑に最適です。",
       "image": "/img/ext/d633a45193ca.webp",
       "phone": "+86 073 1 6770 3206"
     },
     {
       "id": "hanwang-tomb",
-      "name": "马王堆汉墓",
-      "nameEn": "Mawangdui Han Tombs",
+      "name": "馬王堆漢墓",
+      "nameEn": "馬王堆漢墓",
       "category": "museum",
-      "description": "西汉长沙国丞相利苍家族墓地，出土了大量珍贵文物。",
-      "address": "长沙市芙蓉区",
+      "description": "前漢の長沙国丞相・利蒼の家族墓地で、多くの貴重な文物が出土しました。",
+      "address": "長沙市芙蓉区",
       "coordinates": {
         "lat": 28.2,
         "lng": 113.02
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
-        "汉墓",
+        "漢墓",
         "出土文物"
       ],
-      "tips": "必看辛追夫人。",
+      "tips": "必見の辛追夫人。",
       "image": "/img/ext/a7dbece61631.webp",
       "phone": "+86 073 1 5091 6180"
     },
     {
       "id": "meiling-geopolitical",
-      "name": "梅岭国际",
-      "nameEn": "Meiling International",
+      "name": "梅嶺国際",
+      "nameEn": "メーリング・インターナショナル",
       "category": "landmark",
-      "description": "长沙新城区的高端商业区。",
-      "address": "长沙市岳麓区",
+      "description": "長沙の新市街地にある高級商業エリア。",
+      "address": "長沙市岳麓区",
       "coordinates": {
         "lat": 28.2,
         "lng": 112.88
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
-        "购物",
+        "ショッピング",
         "美食"
       ],
-      "tips": "购物好去处。",
+      "tips": "買い物に最適な場所。",
       "image": "/img/ext/203096e22ad8.webp",
       "phone": "+86 073 1 8906 1319"
     },
     {
       "id": "juzizhou-firework",
       "name": "橘子洲焰火",
-      "nameEn": "Orange Island Fireworks",
+      "nameEn": "オレンジ・アイランド花火",
       "category": "landmark",
-      "description": "每周六晚在橘子洲举行的焰火表演。",
-      "address": "长沙市岳麓区",
+      "description": "毎週土曜日の夜に橘子洲で行われる花火ショー。",
+      "address": "長沙市岳麓区",
       "coordinates": {
         "lat": 28.2,
         "lng": 112.95
       },
       "openingHours": "周六20:30",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "30分钟",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "30分",
       "highlights": [
         "焰火",
         "湘江夜景"
       ],
-      "tips": "周六必看。",
+      "tips": "土曜日は必見です。",
       "image": "/img/ext/6b7a7c79012f.webp",
       "phone": "+86 731 8888 2152"
     },
     {
       "id": "yuelu-temple",
       "name": "麓山寺",
-      "nameEn": "Lushan Temple",
+      "nameEn": "廬山寺",
       "category": "temple",
-      "description": "长沙最古老的佛教寺院，始建于西晋。",
-      "address": "长沙市岳麓区",
+      "description": "長沙で最も古い仏教寺院で、西晋の時代に創建されました。",
+      "address": "長沙市岳麓区",
       "coordinates": {
         "lat": 28.2,
         "lng": 112.93
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
         "古寺",
         "佛教文化"
       ],
-      "tips": "与岳麓山一起游览。",
+      "tips": "岳麓山と一緒に観光するのがおすすめです。",
       "image": "/img/ext/050d0aee091f.webp",
       "phone": "+86 073 1 1214 7992"
     },
     {
       "id": "changsha-window",
-      "name": "长沙城市规划展览馆",
-      "nameEn": "Changsha Planning Exhibition Hall",
+      "name": "長沙都市計画展示館",
+      "nameEn": "長沙計画展示ホール",
       "category": "museum",
-      "description": "展示长沙城市发展规划。",
-      "address": "长沙市岳麓区",
+      "description": "長沙の都市発展計画を紹介しています。",
+      "address": "長沙市岳麓区",
       "coordinates": {
         "lat": 28.2,
         "lng": 112.93
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "城市规划"
+        "都市計画"
       ],
-      "tips": "了解长沙发展。",
+      "tips": "長沙の発展について学ぶことができます。",
       "image": "/img/ext/ce9f60cdeb03.webp",
       "phone": "+86 073 1 5123 9944"
     },
     {
       "id": "xingsha",
       "name": "星沙",
-      "nameEn": "Xingsha",
+      "nameEn": "星沙",
       "category": "landmark",
-      "description": "长沙县新城区，有现代化商业区。",
-      "address": "长沙县",
+      "description": "長沙県の新城区には、現代的な商業地区がある。",
+      "address": "長沙県",
       "coordinates": {
         "lat": 28.23,
         "lng": 113.08
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "现代商业"
+        "現代商業"
       ],
-      "tips": "购物好去处。",
+      "tips": "買い物に最適な場所。",
       "image": "/img/ext/9e6e42572a92.webp",
       "phone": "+86 073 1 1766 2250"
     },
     {
       "id": "wangcheng",
       "name": "望城",
-      "nameEn": "Wangcheng",
+      "nameEn": "望城",
       "category": "landmark",
-      "description": "长沙新城区，有靖港古镇等景点。",
-      "address": "长沙市望城区",
+      "description": "長沙新城区には、靖港古鎮などの観光スポットがある。",
+      "address": "長沙市望城区",
       "coordinates": {
         "lat": 28.28,
         "lng": 112.93
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
+      "ticketPrice": "無料",
       "recommendedVisitTime": "半天",
       "highlights": [
         "靖港古镇"
       ],
-      "tips": "了解长沙历史。",
+      "tips": "長沙の歴史を学ぶ。",
       "image": "/img/ext/090128e7da19.webp",
       "phone": "+86 073 1 0078 7242"
     }
@@ -1187,10 +1187,10 @@
   "restaurants": [
     {
       "id": "changsha-1",
-      "name": "火宫殿",
-      "nameEn": "Huogong Temple",
-      "type": "local",
-      "cuisine": "Hunan",
+      "name": "火宮殿",
+      "nameEn": "火宮殿",
+      "type": "ローカル",
+      "cuisine": "湖南",
       "avgPrice": 80,
       "rating": 4.5,
       "address": "坡子街127号, 天心区",
@@ -1200,16 +1200,16 @@
       },
       "phone": "+86 731 8581 8528",
       "hours": "10:00-21:00",
-      "description": "The most famous Hunan cuisine restaurant complex in Changsha.",
+      "description": "長沙で最も有名な湘菜レストラン複合施設",
       "dishHighlights": [
-        "Stinky tofu",
-        "Spicy fried rice",
-        "Chairman Mao's favorite red-braised pork"
+        "臭豆腐",
+        "香辣炒飯",
+        "紅焼肉（毛沢東の大好物）"
       ],
       "tags": [
-        "hunan",
-        "iconic",
-        "must-visit"
+        "湖南料理",
+        "象徴的",
+        "必訪"
       ],
       "star": 0,
       "diamond": 0,
@@ -1217,13 +1217,13 @@
     },
     {
       "id": "changsha-2",
-      "name": "老许家肉炒肉",
+      "name": "老許家肉炒肉（老許家の肉炒め）",
       "nameEn": "ラオシュージャー肉炒め",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "湖南料理",
       "avgPrice": 60,
       "rating": 4.7,
-      "address": "複数の店舗あり",
+      "address": "市内に複数店舗",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
@@ -1237,9 +1237,9 @@
         "家庭料理"
       ],
       "tags": [
-        "local",
-        "pork",
-        "popular"
+        "ローカル",
+        "豚肉",
+        "人気"
       ],
       "star": 0,
       "diamond": 0,
@@ -1247,29 +1247,29 @@
     },
     {
       "id": "changsha-3",
-      "name": "一盏灯",
-      "nameEn": "Yi Deng Deng",
-      "type": "local",
-      "cuisine": "Hunan",
+      "name": "一盞灯（イージャン・デン）",
+      "nameEn": "イデンカン",
+      "type": "ローカル",
+      "cuisine": "湖南",
       "avgPrice": 70,
       "rating": 4.6,
-      "address": "多家分店",
+      "address": "市内に複数店舗",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
       },
       "phone": "+86 731 8888 8888",
       "hours": "11:00-21:00",
-      "description": "Popular Hunan restaurant chain known for authentic spicy dishes.",
+      "description": "本格辛い料理で知られる湖南料理のチェーン店",
       "dishHighlights": [
-        "Spicy chicken",
-        "Buddha jumps over the wall",
-        "Mao's braised pork"
+        "辛いチキン",
+        "佛跳牆",
+        "毛式の豚肉の煮込み"
       ],
       "tags": [
-        "hunan",
-        "spicy",
-        "chain"
+        "湖南料理",
+        "辛い",
+        "チェーン店"
       ],
       "star": 0,
       "diamond": 0,
@@ -1277,10 +1277,10 @@
     },
     {
       "id": "changsha-4",
-      "name": "黑色经典",
-      "nameEn": "Black Classic",
-      "type": "local",
-      "cuisine": "Hunan Snacks",
+      "name": "黒色経典（ブラッククラシック）",
+      "nameEn": "ブラッククラシック",
+      "type": "ローカル",
+      "cuisine": "湖南スナック",
       "avgPrice": 30,
       "rating": 4.5,
       "address": "坡子街店, 天心区",
@@ -1290,16 +1290,16 @@
       },
       "phone": "N/A",
       "hours": "10:00-22:00",
-      "description": "Famous for stinky tofu and traditional Hunan snacks.",
+      "description": "臭豆腐と伝統的な湖南スナックで有名",
       "dishHighlights": [
-        "Stinky tofu",
-        "Fried rice noodles",
-        "Glutinous rice balls"
+        "臭豆腐",
+        "チャーハン",
+        "餅"
       ],
       "tags": [
-        "street-food",
-        "snacks",
-        "local"
+        "屋台料理",
+        "軽食",
+        "ローカル"
       ],
       "star": 0,
       "diamond": 0,
@@ -1307,29 +1307,29 @@
     },
     {
       "id": "changsha-5",
-      "name": "茶颜悦色",
-      "nameEn": "Sexy Tea",
-      "type": "local",
-      "cuisine": "Milk Tea",
+      "name": "茶顔悦色（チャーイエン・ユエスー）",
+      "nameEn": "セクシーティー",
+      "type": "ローカル",
+      "cuisine": "ミルクトゥー",
       "avgPrice": 25,
       "rating": 4.8,
-      "address": "多家分店",
+      "address": "市内に複数店舗",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
       },
       "phone": "N/A",
       "hours": "10:00-22:00",
-      "description": "Changsha's beloved local milk tea chain with Chinese styling.",
+      "description": "長沙で愛される地元のミルクティーチェーンで、中国風のスタイルが特徴です。",
       "dishHighlights": [
-        "，声声乌龙",
-        "幽兰拿铁",
-        "筝筝纸鸢"
+        "、声声烏龍",
+        "幽蘭拿鉄",
+        "筝筝紙鳶"
       ],
       "tags": [
-        "milk-tea",
-        "local",
-        "iconic"
+        "ミルクティー",
+        "ローカル",
+        "象徴的"
       ],
       "star": 0,
       "diamond": 0,
@@ -1338,28 +1338,28 @@
     {
       "id": "changsha-6",
       "name": "文和友",
-      "nameEn": "Wenheyou",
-      "type": "local",
-      "cuisine": "Hunan Fast Food",
+      "nameEn": "文和友",
+      "type": "ローカル",
+      "cuisine": "湖南ファストフード",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "多家分店",
+      "address": "市内に複数店舗",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
       },
       "phone": "+86 731 8888 8888",
       "hours": "11:00-03:00",
-      "description": "Popular chain with retro Changsha atmosphere and local snacks.",
+      "description": "レトロな長沙の雰囲気と地元の軽食で人気のチェーン店です。",
       "dishHighlights": [
-        "Big oil-stained shrimp",
-        "Stinky tofu",
-        "Chili crabs"
+        "大きな油で揚げたエビ",
+        "臭豆腐",
+        "唐辛子蟹"
       ],
       "tags": [
-        "retro",
-        "local",
-        "popular"
+        "レトロ",
+        "ローカル",
+        "人気"
       ],
       "star": 0,
       "diamond": 0,
@@ -1368,28 +1368,28 @@
     {
       "id": "changsha-7",
       "name": "盟重烧烤",
-      "nameEn": "Mengzhong BBQ",
-      "type": "local",
-      "cuisine": "Hunan BBQ",
+      "nameEn": "孟重BAR-B-Q",
+      "type": "ローカル",
+      "cuisine": "湖南バーベキュー",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "多条分店",
+      "address": "市内に複数店舗",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
       },
       "phone": "+86 731 8555 8888",
       "hours": "17:00-02:00",
-      "description": "Famous grilled skewer restaurant popular with locals.",
+      "description": "地元の人々に人気の有名な串焼きレストラン。",
       "dishHighlights": [
-        "Grilled skewers",
-        "Spicy octopus",
-        "Lamb kebabs"
+        "焼き串",
+        "辛いタコ",
+        "ラム肉のケバブ"
       ],
       "tags": [
-        "bbq",
-        "nightlife",
-        "local"
+        "焼肉",
+        "ナイトライフ",
+        "ローカル"
       ],
       "star": 0,
       "diamond": 0,
@@ -1398,28 +1398,28 @@
     {
       "id": "changsha-8",
       "name": "辣椒炒肉",
-      "nameEn": "Chili and Pork",
-      "type": "local",
-      "cuisine": "Hunan Home Style",
+      "nameEn": "チリとポーク",
+      "type": "ローカル",
+      "cuisine": "湖南家庭料理",
       "avgPrice": 50,
       "rating": 4.4,
-      "address": "多家分店",
+      "address": "市内に複数店舗",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
       },
       "phone": "+86 731 8585 8585",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Simple but beloved local chain for authentic home-style cooking.",
+      "description": "本格的な家庭料理で愛される地元のシンプルなチェーン店",
       "dishHighlights": [
-        "Chili stir-fried pork",
-        "Egg dishes",
-        "Vegetable dishes"
+        "唐辛子炒め肉",
+        "卵料理",
+        "野菜料理"
       ],
       "tags": [
-        "home-style",
-        "affordable",
-        "chain"
+        "家庭料理",
+        "お手頃",
+        "チェーン店"
       ],
       "star": 0,
       "diamond": 0,
@@ -1427,29 +1427,29 @@
     },
     {
       "id": "changsha-9",
-      "name": "徐记虾尾",
-      "nameEn": "Xuji Shrimp",
-      "type": "local",
-      "cuisine": "Crayfish",
+      "name": "徐記蝦尾（シュー・ジー・シャーウェイ）",
+      "nameEn": "徐記海老",
+      "type": "ローカル",
+      "cuisine": "ザリエビ",
       "avgPrice": 120,
       "rating": 4.7,
-      "address": "多家分店",
+      "address": "市内に複数店舗",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
       },
       "phone": "+86 731 8888 6666",
       "hours": "16:00-02:00",
-      "description": "Premium crayfish restaurant famous in Changsha.",
+      "description": "長沙で有名な高級ザリエビレストラン",
       "dishHighlights": [
-        "Spicy crayfish",
-        "Crayfish noodles",
-        "Garlic crayfish"
+        "スパイシークレイフィッシュ",
+        "ザリエビ麺",
+        "ガーリックザリエビ"
       ],
       "tags": [
-        "crayfish",
-        "summer",
-        "premium"
+        "ザリエビ",
+        "夏",
+        "プレミアム"
       ],
       "star": 0,
       "diamond": 0,
@@ -1458,9 +1458,9 @@
     {
       "id": "changsha-10",
       "name": "桂林路卤味",
-      "nameEn": "Guilin Road Braised Food",
-      "type": "local",
-      "cuisine": "Braised Snacks",
+      "nameEn": "桂林路煮込み料理",
+      "type": "ローカル",
+      "cuisine": "煮込みスナック",
       "avgPrice": 30,
       "rating": 4.5,
       "address": "天心区桂林路",
@@ -1470,16 +1470,16 @@
       },
       "phone": "N/A",
       "hours": "全天",
-      "description": "Legendary late-night braised food stall.",
+      "description": "伝説的な夜更けの煮込み屋台",
       "dishHighlights": [
-        "Braised chicken feet",
-        "Braised tofu",
-        "Spicy octopus"
+        "煮込み鶏足",
+        "煮豆腐",
+        "辛いタコ"
       ],
       "tags": [
-        "late-night",
-        "braised",
-        "street-food"
+        "深夜",
+        "煮込み",
+        "屋台料理"
       ],
       "star": 0,
       "diamond": 0,
@@ -1487,29 +1487,29 @@
     },
     {
       "id": "changsha-11",
-      "name": "龙颜家",
-      "nameEn": "Longyanjia",
-      "type": "local",
-      "cuisine": "Hunan",
+      "name": "龍顔家",
+      "nameEn": "龍顔家",
+      "type": "ローカル",
+      "cuisine": "湖南",
       "avgPrice": 70,
       "rating": 4.5,
-      "address": "多家分店",
+      "address": "市内に複数店舗",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
       },
       "phone": "+86 731 8585 8585",
       "hours": "11:00-21:30",
-      "description": "Popular chain restaurant with consistently good Hunan food.",
+      "description": "有名なチェーンレストランで、常に美味しい湖南料理を提供しています。",
       "dishHighlights": [
-        "Spicy crab",
-        "Fish head with pickled cabbage",
-        "Spicy chicken"
+        "辛いカニ",
+        "白菜の漬物と一緒にいただく魚の頭",
+        "辛いチキン"
       ],
       "tags": [
-        "hunan",
-        "chain",
-        "reliable"
+        "湖南料理",
+        "チェーン店",
+        "信頼できる"
       ],
       "star": 0,
       "diamond": 0,
@@ -1517,29 +1517,29 @@
     },
     {
       "id": "changsha-12",
-      "name": "渔湘汇",
-      "nameEn": "Yuxiang Hui",
-      "type": "local",
-      "cuisine": "Hunan Seafood",
+      "name": "漁湘匯",
+      "nameEn": "魚香会",
+      "type": "ローカル",
+      "cuisine": "湖南シーフード",
       "avgPrice": 100,
       "rating": 4.4,
-      "address": "开福区湘江中路",
+      "address": "開福区湘江中路",
       "coordinates": {
         "lat": 28.2311,
         "lng": 112.9611
       },
       "phone": "+86 731 8988 8888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Popular seafood restaurant with Xiang River views.",
+      "description": "湘江の景色を楽しめる人気のシーフードレストラン。",
       "dishHighlights": [
-        "Spicy lobster",
-        "Steamed fish",
-        "Crab dishes"
+        "辛いロブスター",
+        "蒸魚",
+        "蟹料理"
       ],
       "tags": [
-        "seafood",
-        "river-view",
-        "upscale"
+        "シーフード",
+        "川の眺め",
+        "高級"
       ],
       "star": 0,
       "diamond": 0,
@@ -1548,28 +1548,28 @@
     {
       "id": "changsha-13",
       "name": "壹德壹",
-      "nameEn": "Yideyi",
-      "type": "local",
-      "cuisine": "Rice Noodles",
+      "nameEn": "イーデイーイー",
+      "type": "ローカル",
+      "cuisine": "米粉",
       "avgPrice": 25,
       "rating": 4.6,
-      "address": "多家分店",
+      "address": "市内に複数店舗",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
       },
       "phone": "+86 731 8555 8888",
       "hours": "06:00-20:00",
-      "description": "Famous for rice noodles and Hunan breakfast items.",
+      "description": "米粉と湖南の朝食メニューで有名です。",
       "dishHighlights": [
-        "Rice noodles",
-        "Steamed dumplings",
-        "Soy milk"
+        "米粉",
+        "蒸し餃子",
+        "豆乳"
       ],
       "tags": [
-        "breakfast",
-        "noodles",
-        "local"
+        "朝ごはん",
+        "麺類",
+        "ローカル"
       ],
       "star": 0,
       "diamond": 0,
@@ -1578,9 +1578,9 @@
     {
       "id": "changsha-14",
       "name": "米粉研究所",
-      "nameEn": "Rice Noodle Research Institute",
-      "type": "local",
-      "cuisine": "Rice Noodles",
+      "nameEn": "米粉研究所",
+      "type": "ローカル",
+      "cuisine": "米粉",
       "avgPrice": 35,
       "rating": 4.5,
       "address": "岳麓区麓山南路",
@@ -1590,16 +1590,16 @@
       },
       "phone": "N/A",
       "hours": "07:00-20:00",
-      "description": "Trendy rice noodle restaurant popular with students.",
+      "description": "学生に人気のトレンドな米粉レストランです。",
       "dishHighlights": [
-        "Signature rice noodles",
-        "Spicy beef noodles",
-        "Clear soup noodles"
+        "看板メニューの米粉",
+        "辛い牛肉麺",
+        "清湯麺"
       ],
       "tags": [
-        "noodles",
-        "trendy",
-        "student"
+        "麺類",
+        "トレンディ",
+        "学生"
       ],
       "star": 0,
       "diamond": 0,
@@ -1608,28 +1608,28 @@
     {
       "id": "changsha-15",
       "name": "昱匠",
-      "nameEn": "Yujiang",
-      "type": "local",
-      "cuisine": "Japanese",
+      "nameEn": "渝江",
+      "type": "ローカル",
+      "cuisine": "日本料理",
       "avgPrice": 300,
       "rating": 4.7,
-      "address": "IFS国金中心",
+      "address": "IFS国金センター",
       "coordinates": {
         "lat": 28.2255,
         "lng": 112.9388
       },
       "phone": "+86 731 8888 9999",
       "hours": "11:30-14:00, 17:30-22:00",
-      "description": "High-end Japanese sushi restaurant in the IFC mall.",
+      "description": "IFSモール内にある高級日本寿司レストラン。",
       "dishHighlights": [
-        "Omakase course",
-        "Fresh sashimi",
-        "Wagyu beef"
+        "おまかせコース",
+        "新鮮な刺身",
+        "和牛"
       ],
       "tags": [
-        "japanese",
-        "sushi",
-        "premium"
+        "日本料理",
+        "寿司",
+        "プレミアム"
       ],
       "star": 0,
       "diamond": 0,
@@ -1638,28 +1638,28 @@
     {
       "id": "changsha-16",
       "name": "王品牛排",
-      "nameEn": "Wang Steak",
-      "type": "international",
-      "cuisine": "Western Steakhouse",
+      "nameEn": "Wangステーキ",
+      "type": "国際料理",
+      "cuisine": "西洋ステーキハウス",
       "avgPrice": 250,
       "rating": 4.5,
-      "address": "多家分店",
+      "address": "市内に複数店舗",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
       },
       "phone": "+86 400 888 8888",
       "hours": "11:00-22:00",
-      "description": "Popular steakhouse chain with consistent quality.",
+      "description": "品質が安定した人気のステーキハウスチェーン。",
       "dishHighlights": [
-        "Grilled ribeye",
-        "Seafood platter",
-        "Tiramisu"
+        "グリルリブアイ",
+        "シーフードプラッター",
+        "ティラミス"
       ],
       "tags": [
-        "steakhouse",
-        "western",
-        "chain"
+        "ステーキハウス",
+        "西洋風",
+        "チェーン店"
       ],
       "star": 0,
       "diamond": 0,
@@ -1667,30 +1667,30 @@
     },
     {
       "id": "changsha-17",
-      "name": "亚马逊海鲜自助",
-      "nameEn": "Amazon Seafood Buffet",
-      "type": "international",
-      "cuisine": "Seafood Buffet",
+      "name": "アマゾンシーフードバイキング",
+      "nameEn": "アマゾンシーフードビュッフェ",
+      "type": "国際料理",
+      "cuisine": "シーフードバイキング",
       "avgPrice": 200,
       "rating": 4.3,
-      "address": "多家分店",
+      "address": "市内に複数店舗",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
       },
       "phone": "+86 731 8585 8585",
       "hours": "11:00-15:00, 17:00-21:00",
-      "description": "Popular all-you-can-eat seafood buffet.",
+      "description": "人気の魚介類吃到飽ブッフェ",
       "dishHighlights": [
-        "Crab legs",
-        "Shrimp",
-        "Sushi",
-        "Desserts"
+        "カニ腳",
+        "エビ",
+        "寿司",
+        "デザート"
       ],
       "tags": [
-        "buffet",
-        "seafood",
-        "family"
+        "ビュッフェ",
+        "シーフード",
+        "ファミリー"
       ],
       "star": 0,
       "diamond": 0,
@@ -1698,28 +1698,28 @@
     },
     {
       "id": "changsha-18",
-      "name": "海底捞火锅",
-      "nameEn": "Haidilao Hot Pot",
-      "type": "chain",
-      "cuisine": "Hot Pot",
+      "name": "海底撈火鍋",
+      "nameEn": "海底撈火鍋",
+      "type": "チェーン店",
+      "cuisine": "火鍋",
       "avgPrice": 150,
       "rating": 4.8,
-      "address": "多家分店",
+      "address": "市内に複数店舗",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
       },
       "phone": "95027",
-      "hours": "24 hours",
-      "description": "World-famous hot pot chain with exceptional service.",
+      "hours": "24時間営業",
+      "description": "卓越したサービスで世界的に有名な火鍋チェーン店。",
       "dishHighlights": [
-        "Self-service hot pot",
-        "Hand-pulled noodles",
-        "Free manicure"
+        "セルフサービス火鍋",
+        "手引ラーメン",
+        "無料マニキュア"
       ],
       "tags": [
-        "hot-pot",
-        "service",
+        "ホットプット",
+        "サービス",
         "チェーン店"
       ],
       "star": 0,
@@ -1728,13 +1728,13 @@
     },
     {
       "id": "changsha-19",
-      "name": "炊烟时代",
+      "name": "炊煙時代",
       "nameEn": "Chuiyan Era（チュイヤン・エラ）",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "湖南料理",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "複数店舗あり",
+      "address": "市内に複数店舗",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
@@ -1758,29 +1758,29 @@
     },
     {
       "id": "changsha-20",
-      "name": "鲁重酒店",
-      "nameEn": "Luzhong Hotel",
-      "type": "local",
-      "cuisine": "Hunan",
+      "name": "魯重酒店",
+      "nameEn": "魯中ホテル",
+      "type": "ローカル",
+      "cuisine": "湖南",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "开福区湘江中路112号",
+      "address": "開福区湘江中路112号",
       "coordinates": {
         "lat": 28.2355,
         "lng": 112.9588
       },
       "phone": "+86 731 8888 8888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "High-end Hunan restaurant with elegant atmosphere.",
+      "description": "優雅な雰囲気を備えた高端湖南レストラン",
       "dishHighlights": [
-        "Braised shark fin",
-        "Bird's nest",
-        "Premium seafood"
+        "煮込みフカヒレ",
+        "ツバメの巣",
+        "プレミアムシーフード"
       ],
       "tags": [
-        "upscale",
-        "hunan",
-        "business"
+        "高級",
+        "湖南料理",
+        "ビジネス"
       ],
       "star": 0,
       "diamond": 0,
@@ -1788,29 +1788,29 @@
     },
     {
       "id": "changsha-21",
-      "name": "披萨马上诺",
-      "nameEn": "Pizza Marano",
-      "type": "international",
-      "cuisine": "Italian",
+      "name": "ピザ・マルコ・ポーロ",
+      "nameEn": "ピッツァ・マラノ",
+      "type": "国際料理",
+      "cuisine": "イタリアン",
       "avgPrice": 100,
       "rating": 4.4,
-      "address": "多家分店",
+      "address": "市内に複数店舗",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
       },
       "phone": "+86 400 888 8888",
       "hours": "10:00-22:00",
-      "description": "Popular Italian pizzeria chain.",
+      "description": "人気のイタリアンピザチェーン店",
       "dishHighlights": [
-        "Wood-fired pizza",
-        "Pasta",
-        "Tiramisu"
+        "薪火焼きピッツァ",
+        "パスタ",
+        "ティラミス"
       ],
       "tags": [
-        "italian",
-        "pizza",
-        "chain"
+        "イタリアン",
+        "ピザ",
+        "チェーン店"
       ],
       "star": 0,
       "diamond": 0,
@@ -1819,28 +1819,28 @@
     {
       "id": "changsha-22",
       "name": "星巴克",
-      "nameEn": "Starbucks",
-      "type": "cafe",
-      "cuisine": "Coffee",
+      "nameEn": "スターバックス",
+      "type": "カフェ",
+      "cuisine": "コーヒー",
       "avgPrice": 45,
       "rating": 4.2,
-      "address": "多家分店",
+      "address": "市内に複数店舗",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
       },
       "phone": "N/A",
       "hours": "07:00-22:00",
-      "description": "International coffee chain with comfortable seating.",
+      "description": "居心地の良い座席を提供する国際的なコーヒーチェーン。",
       "dishHighlights": [
-        "Caramel macchiato",
-        "Matcha latte",
-        "Cold brew"
+        "キャラメルマキアート",
+        "抹茶ラテ",
+        "コールドブリュウ"
       ],
       "tags": [
-        "coffee",
-        "cafe",
-        "workspace"
+        "コーヒー",
+        "カフェ",
+        "ワークスペース"
       ],
       "star": 0,
       "diamond": 0,
@@ -1849,9 +1849,9 @@
     {
       "id": "changsha-23",
       "name": "客串出品",
-      "nameEn": "Kechuan Products",
-      "type": "local",
-      "cuisine": "Hunan BBQ",
+      "nameEn": "克川商品",
+      "type": "ローカル",
+      "cuisine": "湖南バーベキュー",
       "avgPrice": 80,
       "rating": 4.5,
       "address": "天心区太平街",
@@ -1861,16 +1861,16 @@
       },
       "phone": "+86 731 8222 8888",
       "hours": "17:00-02:00",
-      "description": "Popular grilled skewer restaurant with retro Changsha atmosphere.",
+      "description": "レトロな長沙の雰囲気を有する人気の串焼きレストラン。",
       "dishHighlights": [
-        "Lamb kebabs",
-        "Grilled squid",
-        "Spicy skewers"
+        "ラム肉のケバブ",
+        "焼きイカ",
+        "辛い串"
       ],
       "tags": [
-        "bbq",
-        "late-night",
-        "local"
+        "焼肉",
+        "深夜",
+        "ローカル"
       ],
       "star": 0,
       "diamond": 0,
@@ -1879,28 +1879,28 @@
     {
       "id": "changsha-24",
       "name": "德仁聚",
-      "nameEn": "Derenju",
-      "type": "local",
-      "cuisine": "Hunan",
+      "nameEn": "得仁聚",
+      "type": "ローカル",
+      "cuisine": "湖南",
       "avgPrice": 70,
       "rating": 4.4,
-      "address": "开福区湘江中路",
+      "address": "開福区湘江中路",
       "coordinates": {
         "lat": 28.2311,
         "lng": 112.9588
       },
       "phone": "+86 731 8988 6666",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Popular riverside restaurant with authentic Hunan home-style dishes.",
+      "description": "本格的な湖南家庭料理を提供する人気の河畔レストラン。",
       "dishHighlights": [
-        "Chairman Mao's pork",
-        "Spicy fish head",
-        "Braised pork"
+        "毛沢東主席の豚肉の煮込み",
+        "辛い魚頭",
+        "紅焼肉"
       ],
       "tags": [
-        "hunan",
-        "home-style",
-        "river-view"
+        "湖南料理",
+        "家庭料理",
+        "川の眺め"
       ],
       "star": 0,
       "diamond": 0,
@@ -1909,28 +1909,28 @@
     {
       "id": "changsha-25",
       "name": "壹德壹粉店",
-      "nameEn": "Yideyi Rice Noodles",
-      "type": "local",
-      "cuisine": "Rice Noodles",
+      "nameEn": "伊徳意米粉",
+      "type": "ローカル",
+      "cuisine": "米粉",
       "avgPrice": 25,
       "rating": 4.6,
-      "address": "多家分店",
+      "address": "市内に複数店舗",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
       },
       "phone": "+86 731 8555 8888",
       "hours": "06:00-20:00",
-      "description": "Famous rice noodle chain with authentic Hunan-style breakfast.",
+      "description": "本格的な湖南風朝食を提供する有名な米粉チェーン店。",
       "dishHighlights": [
-        "Steamed rice noodles",
-        "Spicy beef noodles",
-        "Soy milk"
+        "蒸し米粉",
+        "辛い牛肉麺",
+        "豆乳"
       ],
       "tags": [
-        "breakfast",
-        "noodles",
-        "local"
+        "朝ごはん",
+        "麺類",
+        "ローカル"
       ],
       "star": 0,
       "diamond": 0,
@@ -1938,29 +1938,29 @@
     },
     {
       "id": "changsha-26",
-      "name": "坛宗剁椒鱼头",
-      "nameEn": "Tanzong Chopped Chili Fish Head",
-      "type": "local",
-      "cuisine": "Hunan",
+      "name": "壇宗剁椒魚頭",
+      "nameEn": "壇宗辣子魚頭",
+      "type": "ローカル",
+      "cuisine": "湖南",
       "avgPrice": 150,
       "rating": 4.7,
-      "address": "开福区泊富国际",
+      "address": "開福区泊富国際",
       "coordinates": {
         "lat": 28.2311,
         "lng": 112.9711
       },
       "phone": "+86 731 8992 9999",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Famous for their signature chopped chili fish head, a must-try Hunan dish.",
+      "description": "名物の辣子魚頭で知られる必食，湖南料理のレストラン。",
       "dishHighlights": [
-        "Chopped chili fish head",
-        "Spicy shrimp",
-        "Steamed fish"
+        "刻み唐辛子魚頭",
+        "辛いエビ",
+        "蒸魚"
       ],
       "tags": [
-        "hunan",
-        "signature-dish",
-        "famous"
+        "湖南料理",
+        "看板料理",
+        "有名"
       ],
       "star": 0,
       "diamond": 0,
@@ -1968,29 +1968,29 @@
     },
     {
       "id": "changsha-27",
-      "name": "费大厨辣椒炒肉",
-      "nameEn": "Fei Da Chu Chili Pork",
-      "type": "local",
-      "cuisine": "Hunan",
+      "name": "費大厨辣椒炒肉",
+      "nameEn": "フェイダチュチリポーク",
+      "type": "ローカル",
+      "cuisine": "湖南",
       "avgPrice": 60,
       "rating": 4.8,
-      "address": "多家分店",
+      "address": "市内に複数店舗",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
       },
       "phone": "+86 731 8555 5555",
       "hours": "11:00-21:00",
-      "description": "Most popular Hunan chain known for their iconic chili pork dish.",
+      "description": "湖南料理チェーンで代表的ないちご料理で知られています。",
       "dishHighlights": [
-        "Chili stir-fried pork",
-        "Chairman Mao's pork",
-        "Steamed fish"
+        "唐辛子炒め肉",
+        "毛沢東主席の豚肉の煮込み",
+        "蒸魚"
       ],
       "tags": [
-        "hunan",
-        "chain",
-        "popular"
+        "湖南料理",
+        "チェーン",
+        "人気"
       ],
       "star": 0,
       "diamond": 0,
@@ -1999,28 +1999,28 @@
     {
       "id": "changsha-28",
       "name": "蛙来哒",
-      "nameEn": "Wulaida",
-      "type": "local",
-      "cuisine": "Frog Hot Pot",
+      "nameEn": "ウライダ",
+      "type": "ローカル",
+      "cuisine": "蛙鍋",
       "avgPrice": 90,
       "rating": 4.5,
-      "address": "多家分店",
+      "address": "市内に複数店舗",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
       },
       "phone": "+86 731 8222 8888",
       "hours": "11:00-23:00",
-      "description": "Popular frog hot pot chain with various flavor options.",
+      "description": "さまざまな味の数々を提供する人気の蛙鍋チェーン。",
       "dishHighlights": [
-        "Spicy frog hot pot",
-        "Sichuan style frog",
-        "Clear soup frog"
+        "辛い蛙鍋",
+        "四川風蛙",
+        "澄まし汁の蛙"
       ],
       "tags": [
-        "frog",
-        "hot-pot",
-        "chain"
+        "蛙",
+        "鍋",
+        "チェーン"
       ],
       "star": 0,
       "diamond": 0,
@@ -2029,9 +2029,9 @@
     {
       "id": "changsha-29",
       "name": "北二楼大碗先生",
-      "nameEn": "Beier Lou Dawansheng",
-      "type": "local",
-      "cuisine": "Hunan Home Style",
+      "nameEn": "ベイルーダーワンション",
+      "type": "ローカル",
+      "cuisine": "湖南家庭料理",
       "avgPrice": 50,
       "rating": 4.5,
       "address": "岳麓区麓山南路",
@@ -2041,16 +2041,16 @@
       },
       "phone": "+86 731 8888 5555",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Popular student-friendly restaurant with generous portions and great value.",
+      "description": "学生に人気のレストランで、ボリューム満点で、コストパフォーマンスが高い。",
       "dishHighlights": [
-        "Big bowl rice dishes",
-        "Spicy chicken",
-        "Home-style vegetables"
+        "大きな碗のご飯料理",
+        "辛いチキン",
+        "家庭菜の野菜"
       ],
       "tags": [
-        "student",
-        "affordable",
-        "home-style"
+        "学生",
+        "リーズナブル",
+        "家庭料理風"
       ],
       "star": 0,
       "diamond": 0,
@@ -2058,29 +2058,29 @@
     },
     {
       "id": "changsha-30",
-      "name": "味上湘菜馆",
-      "nameEn": "Weishang Hunan",
-      "type": "local",
-      "cuisine": "Hunan",
+      "name": "味上湘菜館",
+      "nameEn": "ウェイサン・湖南",
+      "type": "ローカル",
+      "cuisine": "湖南",
       "avgPrice": 70,
       "rating": 4.4,
-      "address": "多家分店",
+      "address": "市内に複数店舗",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
       },
       "phone": "+86 731 8998 8888",
       "hours": "11:00-21:00",
-      "description": "Reliable Hunan chain restaurant with consistent quality and good service.",
+      "description": "品質とおサービスが安定した信頼できる湖南料理のチェーン店。",
       "dishHighlights": [
-        "Spicy crab",
-        "Braised pork",
-        "Steamed fish"
+        "辛いカニ",
+        "煮豚",
+        "蒸し魚"
       ],
       "tags": [
-        "hunan",
-        "chain",
-        "reliable"
+        "湖南料理",
+        "チェーン店",
+        "信頼できる"
       ],
       "star": 0,
       "diamond": 0,
@@ -2088,232 +2088,232 @@
     },
     {
       "id": "changsha-31",
-      "name": "巷子小龙虾",
-      "nameEn": "巷子小龙虾 (小龙虾)",
-      "type": "local",
-      "cuisine": "小龙虾",
+      "name": "巷子小龍蝦",
+      "nameEn": "巷子小龍蝦（小龍蝦）",
+      "type": "ローカル",
+      "cuisine": "小龍蝦（ザリガニ）",
       "avgPrice": 61,
       "rating": 4.3,
-      "address": "长沙市老城区美食街200号",
+      "address": "長沙市旧市街グルメ街200号",
       "coordinates": {
         "lat": 28.2631,
         "lng": 112.9668
       },
       "phone": "+86 0731 39884902",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "长沙本地人推荐的小龙虾店，味道正宗，价格实惠",
+      "description": "長沙の地元民おすすめのザリガニ店。味は本格的で、価格もお手頃",
       "dishHighlights": [
         "臭豆腐",
-        "口味虾",
-        "小龙虾"
+        "口味蝦",
+        "小龍蝦（ザリガニ）"
       ],
       "tags": [
-        "隐藏美食",
-        "本地人爱去",
-        "性价比高"
+        "隠れた名店",
+        "地元の人に人気",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ea5d9bc88be9.webp"
     },
     {
       "id": "changsha-33",
-      "name": "老长沙小龙虾",
-      "nameEn": "老长沙小龙虾 (小龙虾)",
-      "type": "cafe",
-      "cuisine": "小龙虾",
+      "name": "老長沙小龍蝦",
+      "nameEn": "老長沙小龍蝦（小龍蝦）",
+      "type": "カフェ",
+      "cuisine": "小龍蝦（ザリガニ）",
       "avgPrice": 32,
       "rating": 4.7,
-      "address": "长沙市市中心区美食街19号",
+      "address": "長沙市中心部グルメ街19号",
       "coordinates": {
         "lat": 28.19,
         "lng": 112.94
       },
       "phone": "+86 0731 38159070",
       "hours": "10:00-22:00",
-      "description": "长沙本地人推荐的小龙虾店，味道正宗，价格实惠",
+      "description": "長沙の地元民おすすめのザリガニ店。味は本格的で、価格もお手頃",
       "dishHighlights": [
         "臭豆腐",
-        "口味虾",
-        "剁椒鱼头"
+        "口味蝦",
+        "剁椒魚頭（トウガラシ蒸し魚頭）"
       ],
       "tags": [
         "咖啡",
-        "下午茶",
-        "文艺"
+        "アフタヌーンティー",
+        "おしゃれ"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/01e0cc14c349.webp"
     },
     {
       "id": "changsha-35",
-      "name": "老长沙剁椒鱼头",
-      "nameEn": "老长沙剁椒鱼头 (剁椒鱼头)",
-      "type": "local",
-      "cuisine": "剁椒鱼头",
+      "name": "老長沙剁椒魚頭",
+      "nameEn": "老長沙剁椒魚頭（剁椒魚頭）",
+      "type": "ローカル",
+      "cuisine": "剁椒魚頭（トウガラシ蒸し魚頭）",
       "avgPrice": 42,
       "rating": 4.9,
-      "address": "长沙市新城区美食街183号",
+      "address": "長沙市新市街グルメ街183号",
       "coordinates": {
         "lat": 28.1882,
         "lng": 112.9068
       },
       "phone": "+86 0731 91118387",
       "hours": "06:00-14:00",
-      "description": "长沙本地人推荐的剁椒鱼头店，味道正宗，价格实惠",
+      "description": "長沙の地元民おすすめの剁椒魚頭店。味は本格的で、価格もお手頃",
       "dishHighlights": [
         "糖油粑粑",
-        "剁椒鱼头",
-        "口味虾"
+        "剁椒魚頭（トウガラシ蒸し魚頭）",
+        "口味蝦"
       ],
       "tags": [
-        "排队王",
-        "家常菜",
-        "本地人爱去"
+        "行列のできる店",
+        "家庭料理",
+        "地元の人に人気"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/1f85fa451837.webp"
     },
     {
       "id": "changsha-37",
-      "name": "街边口味虾",
-      "nameEn": "街边口味虾 (口味虾)",
-      "type": "local",
-      "cuisine": "口味虾",
+      "name": "街辺口味蝦",
+      "nameEn": "街辺口味蝦（口味蝦）",
+      "type": "ローカル",
+      "cuisine": "口味蝦",
       "avgPrice": 96,
       "rating": 4.5,
-      "address": "长沙市新城区美食街90号",
+      "address": "長沙市新市街グルメ街90号",
       "coordinates": {
         "lat": 28.1982,
         "lng": 112.9448
       },
       "phone": "+86 0731 26998080",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "长沙本地人推荐的口味虾店，味道正宗，价格实惠",
+      "description": "長沙の地元民おすすめの口味蝦店。味は本格的で、価格もお手頃",
       "dishHighlights": [
         "臭豆腐",
-        "口味虾",
-        "剁椒鱼头"
+        "口味蝦",
+        "剁椒魚頭（トウガラシ蒸し魚頭）"
       ],
       "tags": [
-        "排队王",
-        "老字号",
-        "社区老店"
+        "行列のできる店",
+        "老舗",
+        "地元の老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ea5d9bc88be9.webp"
     },
     {
       "id": "changsha-39",
-      "name": "传统口味虾",
-      "nameEn": "传统口味虾 (口味虾)",
-      "type": "local",
-      "cuisine": "口味虾",
+      "name": "伝統口味蝦（ロウウェイシャー）",
+      "nameEn": "伝統口味蝦（ロウウェイシャー）",
+      "type": "ローカル",
+      "cuisine": "口味蝦",
       "avgPrice": 62,
       "rating": 4.1,
-      "address": "长沙市老城区美食街163号",
+      "address": "長沙市旧市街グルメ街163号",
       "coordinates": {
         "lat": 28.2437,
         "lng": 112.9507
       },
       "phone": "+86 0731 74504251",
       "hours": "06:00-14:00",
-      "description": "长沙本地人推荐的口味虾店，味道正宗，价格实惠",
+      "description": "長沙の地元民おすすめの口味蝦店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "小龙虾",
-        "口味虾",
+        "小龍蝦（ザリガニ）",
+        "口味蝦",
         "糖油粑粑"
       ],
       "tags": [
-        "家常菜",
-        "社区老店",
-        "本地人爱去"
+        "家庭料理",
+        "地元の老舗",
+        "地元の人に人気"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/8e3cd61ecb7d.webp"
     },
     {
       "id": "changsha-41",
-      "name": "巷子剁椒鱼头",
-      "nameEn": "巷子剁椒鱼头 (剁椒鱼头)",
-      "type": "local",
-      "cuisine": "剁椒鱼头",
+      "name": "路地の剁椒魚頭（トーチャオユートウ）",
+      "nameEn": "路地の剁椒魚頭（トーチャオユートウ）",
+      "type": "ローカル",
+      "cuisine": "剁椒魚頭（トウガラシ蒸し魚頭）",
       "avgPrice": 63,
       "rating": 4,
-      "address": "长沙市市中心区美食街164号",
+      "address": "長沙市市中心区美食街164号",
       "coordinates": {
         "lat": 28.2624,
         "lng": 112.9638
       },
       "phone": "+86 0731 52973431",
       "hours": "10:00-22:00",
-      "description": "长沙本地人推荐的剁椒鱼头店，味道正宗，价格实惠",
+      "description": "長沙の地元民おすすめの剁椒魚頭店。味は本格的で、価格もお手頃",
       "dishHighlights": [
         "臭豆腐",
-        "剁椒鱼头",
-        "小龙虾"
+        "剁椒魚頭（トウガラシ蒸し魚頭）",
+        "小龍蝦（ザリガニ）"
       ],
       "tags": [
-        "家常菜",
-        "性价比高",
-        "社区老店"
+        "家庭料理",
+        "コスパ最高",
+        "地元の老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/530ea13611fe.webp"
     },
     {
       "id": "changsha-43",
-      "name": "老长沙小龙虾",
-      "nameEn": "老长沙小龙虾 (小龙虾)",
-      "type": "local",
-      "cuisine": "小龙虾",
+      "name": "老長沙小龍蝦",
+      "nameEn": "老長沙小龍蝦（小龍蝦）",
+      "type": "ローカル",
+      "cuisine": "小龍蝦（ザリガニ）",
       "avgPrice": 76,
       "rating": 4.8,
-      "address": "长沙市市中心区美食街82号",
+      "address": "長沙市市中心区美食街82号",
       "coordinates": {
         "lat": 28.2055,
         "lng": 112.9537
       },
       "phone": "+86 0731 71889562",
       "hours": "09:00-21:00",
-      "description": "长沙本地人推荐的小龙虾店，味道正宗，价格实惠",
+      "description": "長沙の地元民おすすめのザリガニ店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "小龙虾",
-        "剁椒鱼头",
+        "小龍蝦（ザリガニ）",
+        "剁椒魚頭（トウガラシ蒸し魚頭）",
         "糖油粑粑"
       ],
       "tags": [
-        "家常菜",
-        "排队王",
-        "老字号"
+        "家庭料理",
+        "行列のできる店",
+        "老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/fa44b8ad2ce1.webp"
     },
     {
       "id": "changsha-45",
-      "name": "传统臭豆腐",
-      "nameEn": "传统臭豆腐 (臭豆腐)",
-      "type": "local",
+      "name": "伝統臭豆腐（チョウドウフ）",
+      "nameEn": "伝統臭豆腐（チョウドウフ）",
+      "type": "ローカル",
       "cuisine": "臭豆腐",
       "avgPrice": 117,
       "rating": 4.5,
-      "address": "长沙市市中心区美食街60号",
+      "address": "長沙市市中心区美食街60号",
       "coordinates": {
         "lat": 28.2084,
         "lng": 112.9408
       },
       "phone": "+86 0731 90746936",
       "hours": "17:00-02:00",
-      "description": "长沙本地人推荐的臭豆腐店，味道正宗，价格实惠",
+      "description": "長沙地元民おすすめの臭豆腐店、味は本格的で価格もお手頃",
       "dishHighlights": [
         "糖油粑粑",
         "臭豆腐",
-        "口味虾"
+        "口味蝦"
       ],
       "tags": [
-        "社区老店",
-        "家常菜",
-        "性价比高"
+        "地元の老舗",
+        "家庭料理",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/db77b0b2b9de.webp"
@@ -2322,56 +2322,56 @@
       "id": "changsha-47",
       "name": "老街糖油粑粑",
       "nameEn": "老街糖油粑粑 (糖油粑粑)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "糖油粑粑",
       "avgPrice": 40,
       "rating": 4.9,
-      "address": "长沙市市中心区美食街34号",
+      "address": "長沙市市中心区美食街34号",
       "coordinates": {
         "lat": 28.2254,
         "lng": 112.9088
       },
       "phone": "+86 0731 25353860",
       "hours": "10:00-22:00",
-      "description": "长沙本地人推荐的糖油粑粑店，味道正宗，价格实惠",
+      "description": "長沙地元民おすすめの糖油粑粑店、味は本格的で価格もお手頃",
       "dishHighlights": [
-        "剁椒鱼头",
-        "小龙虾",
+        "剁椒魚頭（トウガラシ蒸し魚頭）",
+        "小龍蝦（ザリガニ）",
         "臭豆腐"
       ],
       "tags": [
-        "本地人爱去",
-        "老字号",
-        "社区老店"
+        "地元の人に人気",
+        "老舗",
+        "地元の老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/3e8607ae7dc8.webp"
     },
     {
       "id": "changsha-49",
-      "name": "街边糖油粑粑",
-      "nameEn": "街边糖油粑粑 (糖油粑粑)",
-      "type": "local",
+      "name": "街角の糖油粑粑（タンヨウバーバー）",
+      "nameEn": "街角の糖油粑粑（タンヨウバーバー）",
+      "type": "ローカル",
       "cuisine": "糖油粑粑",
       "avgPrice": 112,
       "rating": 4.1,
-      "address": "长沙市新城区美食街125号",
+      "address": "長沙市新城区美食街125号",
       "coordinates": {
         "lat": 28.269,
         "lng": 112.9347
       },
       "phone": "+86 0731 48859712",
       "hours": "10:00-22:00",
-      "description": "长沙本地人推荐的糖油粑粑店，味道正宗，价格实惠",
+      "description": "長沙地元民おすすめの糖油粑粑店、味は本格的で価格もお手頃",
       "dishHighlights": [
         "臭豆腐",
-        "口味虾",
-        "小龙虾"
+        "口味蝦",
+        "小龍蝦（ザリガニ）"
       ],
       "tags": [
-        "性价比高",
-        "排队王",
-        "本地人爱去"
+        "コスパ最高",
+        "行列のできる店",
+        "地元の人に人気"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/90e00d91942f.webp"
@@ -2380,84 +2380,84 @@
       "id": "changsha-51",
       "name": "老字号糖油粑粑",
       "nameEn": "老字号糖油粑粑 (糖油粑粑)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "糖油粑粑",
       "avgPrice": 119,
       "rating": 4.3,
-      "address": "长沙市市中心区美食街127号",
+      "address": "長沙市市中心区美食街127号",
       "coordinates": {
         "lat": 28.2165,
         "lng": 112.9234
       },
       "phone": "+86 0731 75569128",
       "hours": "09:00-21:00",
-      "description": "长沙本地人推荐的糖油粑粑店，味道正宗，价格实惠",
+      "description": "長沙地元民おすすめの糖油粑粑店、味は本格的で価格もお手頃",
       "dishHighlights": [
         "糖油粑粑",
-        "剁椒鱼头",
-        "口味虾"
+        "剁椒魚頭（トウガラシ蒸し魚頭）",
+        "口味蝦"
       ],
       "tags": [
-        "老字号",
-        "家常菜",
-        "性价比高"
+        "老舗",
+        "家庭料理",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/abc96b05b6cc.webp"
     },
     {
       "id": "changsha-53",
-      "name": "街边糖油粑粑",
-      "nameEn": "街边糖油粑粑 (糖油粑粑)",
-      "type": "cafe",
+      "name": "街角の糖油粑粑（タンヨウバーバー）",
+      "nameEn": "街角の糖油粑粑（タンヨウバーバー）",
+      "type": "カフェ",
       "cuisine": "糖油粑粑",
       "avgPrice": 32,
       "rating": 4.1,
-      "address": "长沙市老城区美食街24号",
+      "address": "長沙市旧城区美食街24号",
       "coordinates": {
         "lat": 28.2597,
         "lng": 112.9494
       },
       "phone": "+86 0731 37437141",
       "hours": "06:00-14:00",
-      "description": "长沙本地人推荐的糖油粑粑店，味道正宗，价格实惠",
+      "description": "長沙地元民おすすめの糖油粑粑店、味は本格的で価格もお手頃",
       "dishHighlights": [
-        "小龙虾",
+        "小龍蝦（ザリガニ）",
         "糖油粑粑",
-        "口味虾"
+        "口味蝦"
       ],
       "tags": [
-        "安静",
+        "落ち着いた",
         "咖啡",
-        "文艺"
+        "おしゃれ"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/c007aa1f0c85.png"
     },
     {
       "id": "changsha-55",
-      "name": "街边口味虾",
-      "nameEn": "街边口味虾 (口味虾)",
-      "type": "street",
-      "cuisine": "口味虾",
+      "name": "街辺口味蝦",
+      "nameEn": "街辺口味蝦（口味蝦）",
+      "type": "ストリート",
+      "cuisine": "口味蝦",
       "avgPrice": 27,
       "rating": 4.1,
-      "address": "长沙市市中心区美食街182号",
+      "address": "長沙市市中心区美食街182号",
       "coordinates": {
         "lat": 28.2305,
         "lng": 112.9205
       },
       "phone": "+86 0731 48109980",
       "hours": "10:00-22:00",
-      "description": "长沙本地人推荐的口味虾店，味道正宗，价格实惠",
+      "description": "長沙の地元民おすすめの口味蝦店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "剁椒鱼头",
-        "口味虾",
-        "小龙虾"
+        "剁椒魚頭（トウガラシ蒸し魚頭）",
+        "口味蝦",
+        "小龍蝦（ザリガニ）"
       ],
       "tags": [
-        "路边摊",
-        "网红打卡",
+        "屋台",
+        "インスタ映えスポット",
         "小吃"
       ],
       "diamond": 0,
@@ -2465,29 +2465,29 @@
     },
     {
       "id": "changsha-57",
-      "name": "传统小龙虾",
-      "nameEn": "传统小龙虾 (小龙虾)",
-      "type": "local",
-      "cuisine": "小龙虾",
+      "name": "伝統小龍蝦（ザリガニ）",
+      "nameEn": "伝統小龍蝦（ザリガニ）",
+      "type": "ローカル",
+      "cuisine": "小龍蝦（ザリガニ）",
       "avgPrice": 110,
       "rating": 4.6,
-      "address": "长沙市市中心区美食街168号",
+      "address": "長沙市市中心区美食街168号",
       "coordinates": {
         "lat": 28.1852,
         "lng": 112.9847
       },
       "phone": "+86 0731 67509492",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "长沙本地人推荐的小龙虾店，味道正宗，价格实惠",
+      "description": "長沙の地元民おすすめのザリガニ店。味は本格的で、価格もお手頃",
       "dishHighlights": [
         "糖油粑粑",
         "臭豆腐",
-        "剁椒鱼头"
+        "剁椒魚頭（トウガラシ蒸し魚頭）"
       ],
       "tags": [
-        "本地人爱去",
-        "家常菜",
-        "排队王"
+        "地元の人に人気",
+        "家庭料理",
+        "行列のできる店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/261f7929261c.webp"
@@ -2496,172 +2496,172 @@
       "id": "changsha-59",
       "name": "阿婆臭豆腐",
       "nameEn": "阿婆臭豆腐 (臭豆腐)",
-      "type": "street",
+      "type": "ストリート",
       "cuisine": "臭豆腐",
       "avgPrice": 35,
       "rating": 4.7,
-      "address": "长沙市老城区美食街83号",
+      "address": "長沙市旧城区美食街83号",
       "coordinates": {
         "lat": 28.1818,
         "lng": 112.9421
       },
       "phone": "+86 0731 26712692",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "长沙本地人推荐的臭豆腐店，味道正宗，价格实惠",
+      "description": "長沙地元民おすすめの臭豆腐店、味は本格的で価格もお手頃",
       "dishHighlights": [
-        "小龙虾",
+        "小龍蝦（ザリガニ）",
         "臭豆腐",
-        "口味虾"
+        "口味蝦"
       ],
       "tags": [
-        "深夜美食",
-        "路边摊",
-        "网红打卡"
+        "深夜グルメ",
+        "屋台",
+        "インスタ映えスポット"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/f5e5dd87dd00.webp"
     },
     {
       "id": "changsha-61",
-      "name": "老街口味虾",
-      "nameEn": "老街口味虾 (口味虾)",
-      "type": "cafe",
-      "cuisine": "口味虾",
+      "name": "老街口味蝦",
+      "nameEn": "老街口味蝦（口味蝦）",
+      "type": "カフェ",
+      "cuisine": "口味蝦",
       "avgPrice": 72,
       "rating": 4.5,
-      "address": "长沙市老城区美食街110号",
+      "address": "長沙市旧城区美食街110号",
       "coordinates": {
         "lat": 28.2119,
         "lng": 112.9545
       },
       "phone": "+86 0731 57348359",
       "hours": "17:00-02:00",
-      "description": "长沙本地人推荐的口味虾店，味道正宗，价格实惠",
+      "description": "長沙の地元民おすすめの口味蝦店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "口味虾",
+        "口味蝦",
         "臭豆腐",
-        "小龙虾"
+        "小龍蝦（ザリガニ）"
       ],
       "tags": [
         "咖啡",
-        "文艺",
-        "下午茶"
+        "おしゃれ",
+        "アフタヌーンティー"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/01e0cc14c349.webp"
     },
     {
       "id": "changsha-63",
-      "name": "长沙味臭豆腐",
-      "nameEn": "长沙味臭豆腐 (臭豆腐)",
-      "type": "local",
+      "name": "長沙風臭豆腐",
+      "nameEn": "長沙風臭豆腐（臭豆腐）",
+      "type": "ローカル",
       "cuisine": "臭豆腐",
       "avgPrice": 128,
       "rating": 4.2,
-      "address": "长沙市市中心区美食街68号",
+      "address": "長沙市市中心区美食街68号",
       "coordinates": {
         "lat": 28.2153,
         "lng": 112.9758
       },
       "phone": "+86 0731 80981147",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "长沙本地人推荐的臭豆腐店，味道正宗，价格实惠",
+      "description": "長沙地元民おすすめの臭豆腐店、味は本格的で価格もお手頃",
       "dishHighlights": [
         "糖油粑粑",
-        "剁椒鱼头",
+        "剁椒魚頭（トウガラシ蒸し魚頭）",
         "臭豆腐"
       ],
       "tags": [
-        "老字号",
-        "社区老店",
-        "性价比高"
+        "老舗",
+        "地元の老舗",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/9f77d5b3c74e.webp"
     },
     {
       "id": "changsha-65",
-      "name": "街边糖油粑粑",
-      "nameEn": "街边糖油粑粑 (糖油粑粑)",
-      "type": "local",
+      "name": "街角の糖油粑粑（タンヨウバーバー）",
+      "nameEn": "街角の糖油粑粑（タンヨウバーバー）",
+      "type": "ローカル",
       "cuisine": "糖油粑粑",
       "avgPrice": 43,
       "rating": 4.9,
-      "address": "长沙市市中心区美食街146号",
+      "address": "長沙市市中心区美食街146号",
       "coordinates": {
         "lat": 28.1837,
         "lng": 112.9828
       },
       "phone": "+86 0731 40565249",
       "hours": "17:00-02:00",
-      "description": "长沙本地人推荐的糖油粑粑店，味道正宗，价格实惠",
+      "description": "長沙地元民おすすめの糖油粑粑店、味は本格的で価格もお手頃",
       "dishHighlights": [
-        "小龙虾",
+        "小龍蝦（ザリガニ）",
         "糖油粑粑",
-        "口味虾"
+        "口味蝦"
       ],
       "tags": [
-        "性价比高",
-        "排队王",
-        "社区老店"
+        "コスパ最高",
+        "行列のできる店",
+        "地元の老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/5435d30b3752.webp"
     },
     {
       "id": "changsha-67",
-      "name": "老长沙糖油粑粑",
-      "nameEn": "老长沙糖油粑粑 (糖油粑粑)",
-      "type": "street",
+      "name": "老長沙糖油粑粑（タンヨウバーバー）",
+      "nameEn": "老長沙糖油粑粑（糖油粑粑）",
+      "type": "ストリート",
       "cuisine": "糖油粑粑",
       "avgPrice": 57,
       "rating": 4.1,
-      "address": "长沙市新城区美食街25号",
+      "address": "長沙市新城区美食街25号",
       "coordinates": {
         "lat": 28.2408,
         "lng": 112.9442
       },
       "phone": "+86 0731 43067785",
       "hours": "10:00-22:00",
-      "description": "长沙本地人推荐的糖油粑粑店，味道正宗，价格实惠",
+      "description": "長沙地元民おすすめの糖油粑粑店、味は本格的で価格もお手頃",
       "dishHighlights": [
         "糖油粑粑",
         "臭豆腐",
-        "口味虾"
+        "口味蝦"
       ],
       "tags": [
-        "网红打卡",
-        "深夜美食",
-        "路边摊"
+        "インスタ映えスポット",
+        "深夜グルメ",
+        "屋台"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/580ee8936f81.webp"
     },
     {
       "id": "changsha-69",
-      "name": "地道口味虾",
-      "nameEn": "地道口味虾 (口味虾)",
-      "type": "local",
-      "cuisine": "口味虾",
+      "name": "本場の口味蝦",
+      "nameEn": "本場の口味蝦（口味蝦）",
+      "type": "ローカル",
+      "cuisine": "口味蝦",
       "avgPrice": 57,
       "rating": 4.6,
-      "address": "长沙市老城区美食街54号",
+      "address": "長沙市旧城区美食街54号",
       "coordinates": {
         "lat": 28.2052,
         "lng": 112.9621
       },
       "phone": "+86 0731 56699655",
       "hours": "10:00-22:00",
-      "description": "长沙本地人推荐的口味虾店，味道正宗，价格实惠",
+      "description": "長沙の地元民おすすめの口味蝦店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "小龙虾",
+        "小龍蝦（ザリガニ）",
         "臭豆腐",
         "糖油粑粑"
       ],
       "tags": [
-        "排队王",
-        "隐藏美食",
-        "性价比高"
+        "行列のできる店",
+        "隠れた名店",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/2f245a588d65.webp"
@@ -2669,29 +2669,29 @@
   ],
   "hotels": [
     {
-      "name": "长沙瑞吉酒店",
+      "name": "長沙瑞吉酒店（セントレジス長沙）",
       "nameEn": "The St. Regis Changsha",
       "budget": "luxury",
-      "priceRange": "¥1800-4000/night",
-      "address": "开福区湘江北路308号",
+      "priceRange": "1泊1800〜4000元",
+      "address": "開福区湘江北路308号",
       "coordinates": {
         "lat": 28.2355,
         "lng": 112.9555
       },
       "rating": 4.8,
       "highlights": [
-        "Xiang River views",
-        "Luxurious spa",
-        "Multiple restaurants",
-        "Butler service"
+        "湘江の眺望",
+        "高級スパ",
+        "複数のレストラン",
+        "バトラーサービス"
       ],
-      "bookingTips": "Request river-view rooms for best scenery. The St. Regis Butler service is excellent."
+      "bookingTips": "景色を楽しむには川側の客室をリクエストしてください。セントレジスのバトラーサービスは素晴らしいです。"
     },
     {
-      "name": "长沙尼依格罗酒店",
+      "name": "長沙ニコーロホテル",
       "nameEn": "Niccolo Changsha",
       "budget": "luxury",
-      "priceRange": "¥1500-3000/night",
+      "priceRange": "1泊1500〜3000元",
       "address": "芙蓉区IFS国金中心",
       "coordinates": {
         "lat": 28.2255,
@@ -2699,37 +2699,37 @@
       },
       "rating": 4.7,
       "highlights": [
-        "Top of IFS building",
-        "Panoramic city views",
-        "Modern luxury",
-        "Fashion location"
+        "IFSビルの最上階",
+        "パノラマの街並みの眺望",
+        "モダンな高級感",
+        "ファッション性の高いロケーション"
       ],
-      "bookingTips": "Highest hotel in Changsha with best views. Book sky lobby rooms for experience."
+      "bookingTips": "長沙で最も高いホテルで、眺望は最高。スカイロビー客室を予約して体験を。"
     },
     {
-      "name": "长沙万达文华酒店",
+      "name": "長沙万達文華酒店",
       "nameEn": "Wanda Vista Changsha",
       "budget": "luxury",
-      "priceRange": "¥1200-2500/night",
-      "address": "开福区湘江中路300号",
+      "priceRange": "1泊1200〜2500元",
+      "address": "開福区湘江中路300号",
       "coordinates": {
         "lat": 28.2311,
         "lng": 112.9588
       },
       "rating": 4.6,
       "highlights": [
-        "Riverfront location",
-        "Elegant decor",
-        "Good breakfast",
-        "Central location"
+        "川沿いのロケーション",
+        "上品なインテリア",
+        "朝食が良い",
+        "中心部に好立地"
       ],
-      "bookingTips": "Great location for exploring the riverfront. Good for both business and leisure."
+      "bookingTips": "川沿いを探索するのに最適なロケーション。ビジネスにもレジャーにも最適。"
     },
     {
-      "name": "长沙香格里拉大酒店",
+      "name": "長沙香格里拉大酒店",
       "nameEn": "Shangri-La Hotel Changsha",
       "budget": "luxury",
-      "priceRange": "¥1000-2000/night",
+      "priceRange": "1泊1000〜2000元",
       "address": "雨花区韶山中路",
       "coordinates": {
         "lat": 28.2255,
@@ -2737,56 +2737,56 @@
       },
       "rating": 4.5,
       "highlights": [
-        "Central location",
-        "Famous Sunday brunch",
-        "Large pool",
-        "Executive lounge"
+        "中心部に好立地",
+        "有名な日曜ブランチ",
+        "大型プール",
+        "エグゼクティブラウンジ"
       ],
-      "bookingTips": "Shangri-La会员 gets better rates. Weekend brunch is famous citywide."
+      "bookingTips": "シャングリ・ラ会員はより良い料金で利用できます。週末ブランチは市内で有名です。"
     },
     {
-      "name": "长沙北辰洲际酒店",
+      "name": "長沙北辰洲際酒店",
       "nameEn": "InterContinental Changsha",
       "budget": "luxury",
-      "priceRange": "¥900-1800/night",
-      "address": "开福区北辰三角洲",
+      "priceRange": "1泊900〜1800元",
+      "address": "開福区北辰デルタ",
       "coordinates": {
         "lat": 28.2511,
         "lng": 112.9388
       },
       "rating": 4.5,
       "highlights": [
-        "Near Xiang River",
-        "Modern facilities",
-        "Good for business",
-        "Multiple restaurants"
+        "湘江付近",
+        "近代的な設備",
+        "ビジネスに便利",
+        "複数のレストラン"
       ],
-      "bookingTips": "Newer hotel with modern amenities. Good for riverfront walks."
+      "bookingTips": "新しいホテルでモダンな設備。川沿いの散歩に最適。"
     },
     {
-      "name": "长沙华天大酒店",
+      "name": "長沙華天大酒店",
       "nameEn": "Huatian Hotel Changsha",
       "budget": "mid",
-      "priceRange": "¥500-1000/night",
-      "address": "芙蓉区解放东路",
+      "priceRange": "1泊500〜1000元",
+      "address": "芙蓉区解放東路",
       "coordinates": {
         "lat": 28.2311,
         "lng": 112.9255
       },
       "rating": 4.4,
       "highlights": [
-        "Central location",
-        "Long history",
-        "Good service",
-        "Reliable quality"
+        "中心部に好立地",
+        "長い歴史",
+        "サービス良好",
+        "信頼できる品質"
       ],
-      "bookingTips": "Long-standing Changsha brand. Weekend rates often lower."
+      "bookingTips": "長沙の老舗ブランド。週末の料金はしばしば割安。"
     },
     {
-      "name": "长沙通程国际大酒店",
+      "name": "長沙通程国際大酒店",
       "nameEn": "Tongcheng International Hotel",
       "budget": "mid",
-      "priceRange": "¥500-900/night",
+      "priceRange": "1泊500〜900元",
       "address": "芙蓉区韶山北路",
       "coordinates": {
         "lat": 28.2288,
@@ -2794,56 +2794,56 @@
       },
       "rating": 4.3,
       "highlights": [
-        "Near railway station",
-        "Business facilities",
-        "Good breakfast",
-        "Spacious rooms"
+        "鉄道駅付近",
+        "ビジネス施設",
+        "朝食が良い",
+        "広々とした客室"
       ],
-      "bookingTips": "Convenient for train travelers. Good value for the location."
+      "bookingTips": "鉄道利用者に便利。立地の割にコストパフォーマンスが良い。"
     },
     {
-      "name": "长沙世纪金源大酒店",
+      "name": "長沙世紀金源大酒店",
       "nameEn": "Millennium Hotel Changsha",
       "budget": "mid",
-      "priceRange": "¥450-800/night",
-      "address": "开福区金霞区",
+      "priceRange": "1泊450〜800元",
+      "address": "開福区金霞区",
       "coordinates": {
         "lat": 28.2455,
         "lng": 112.9188
       },
       "rating": 4.3,
       "highlights": [
-        "Near railway",
-        "Large property",
-        "Good facilities",
-        "Value for money"
+        "鉄道駅付近",
+        "広い敷地",
+        "設備が充実",
+        "コストパフォーマンスが良い"
       ],
-      "bookingTips": "Good for train station access. Often has weekend discounts."
+      "bookingTips": "駅へのアクセスが良好。週末割引がよくある。"
     },
     {
-      "name": "长沙觅你酒店",
+      "name": "長沙ミニホテル",
       "nameEn": "Mínǐ Hotel",
       "budget": "budget",
-      "priceRange": "¥250-450/night",
-      "address": "天心区黄兴路",
+      "priceRange": "1泊250〜450元",
+      "address": "天心区黄興路",
       "coordinates": {
         "lat": 28.2255,
         "lng": 112.9411
       },
       "rating": 4.4,
       "highlights": [
-        "Central location",
-        "Boutique style",
-        "Near shopping",
-        "Modern decor"
+        "中心部に好立地",
+        "ブティックスタイル",
+        "ショッピングに便利",
+        "モダンな内装"
       ],
-      "bookingTips": "Perfect location for shopping and food. Book early for best rates."
+      "bookingTips": "ショッピングや食事に最適なロケーション。お得な料金は早めの予約がおすすめ。"
     },
     {
-      "name": "长沙凡响酒店",
+      "name": "長沙凡響ホテル",
       "nameEn": "FANXiang Hotel",
       "budget": "budget",
-      "priceRange": "¥200-400/night",
+      "priceRange": "1泊200〜400元",
       "address": "岳麓区麓山南路",
       "coordinates": {
         "lat": 28.2018,
@@ -2851,18 +2851,18 @@
       },
       "rating": 4.2,
       "highlights": [
-        "Near Yuelu Mountain",
-        "University area",
-        "Good value",
-        "Helpful staff"
+        "岳麓山付近",
+        "大学エリア",
+        "コストパフォーマンスが良い",
+        "スタッフが親切"
       ],
-      "bookingTips": "Great for exploring Yuelu Mountain and Yuelu Academy. Student-friendly area."
+      "bookingTips": "岳麓山と岳麓書院の観光に最適。学生に優しいエリア。"
     },
     {
-      "name": "长沙神农大酒店",
+      "name": "長沙神農大酒店",
       "nameEn": "Shennong Hotel",
       "budget": "mid",
-      "priceRange": "¥400-700/night",
+      "priceRange": "1泊400〜700元",
       "address": "雨花区芙蓉中路",
       "coordinates": {
         "lat": 28.2255,
@@ -2870,18 +2870,18 @@
       },
       "rating": 4.3,
       "highlights": [
-        "Central business district",
-        "Good breakfast",
-        "Reliable service",
-        "Convenient transport"
+        "中心業務地区",
+        "朝食が良い",
+        "信頼できるサービス",
+        "交通に便利"
       ],
-      "bookingTips": "Good balance of price and location. Near metro station."
+      "bookingTips": "料金と立地のバランスが良い。地下鉄駅に近い。"
     },
     {
-      "name": "长沙异风印象酒店",
+      "name": "長沙異風印象酒店",
       "nameEn": "Yifeng Impression Hotel",
       "budget": "budget",
-      "priceRange": "¥200-350/night",
+      "priceRange": "1泊200〜350元",
       "address": "天心区太平街",
       "coordinates": {
         "lat": 28.2266,
@@ -2889,94 +2889,94 @@
       },
       "rating": 4.4,
       "highlights": [
-        "Historic area",
-        "Boutique decor",
-        "Near attractions",
-        "Good service"
+        "歴史的地区",
+        "ブティック風の内装",
+        "観光スポットに近い",
+        "サービス良好"
       ],
-      "bookingTips": "Perfect for exploring Taiping Street and Pozi Street. Great location."
+      "bookingTips": "太平街と坡子街の散策に最適。立地が良い。"
     },
     {
-      "name": "长沙延年酒店",
+      "name": "長沙延年酒店",
       "nameEn": "Yannian Hotel",
       "budget": "mid",
-      "priceRange": "¥350-600/night",
-      "address": "开福区营盘东路",
+      "priceRange": "1泊350〜600元",
+      "address": "開福区営盤東路",
       "coordinates": {
         "lat": 28.2355,
         "lng": 112.9755
       },
       "rating": 4.3,
       "highlights": [
-        "Near Martyrs Park",
-        "Quiet location",
-        "Good rooms",
-        "Affordable"
+        "烈士公園に近い",
+        "静かな立地",
+        "部屋が良い",
+        "手頃な価格"
       ],
-      "bookingTips": "Good for morning walks in Martyrs Park. Quieter area of the city."
+      "bookingTips": "烈士公園での朝の散歩に最適。市内でも静かなエリア。"
     },
     {
-      "name": "长沙雅致酒店",
+      "name": "長沙雅致酒店",
       "nameEn": "Yazhi Hotel",
       "budget": "budget",
-      "priceRange": "¥200-400/night",
-      "address": "多家分店",
+      "priceRange": "1泊200〜400元",
+      "address": "市内に複数店舗",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
       },
       "rating": 4.2,
       "highlights": [
-        "Multiple locations",
-        "Clean and modern",
-        "Affordable",
-        "Consistent quality"
+        "複数の場所",
+        "清潔でモダン",
+        "手頃な価格",
+        "安定した品質"
       ],
-      "bookingTips": "Reliable budget option. Many locations near metro stations."
+      "bookingTips": "信頼できるリーズナブルな選択肢。地下鉄駅近くに多数の店舗があります。"
     },
     {
-      "name": "长沙如家快捷酒店",
+      "name": "長沙如家快捷酒店",
       "nameEn": "Home Inn Changsha",
       "budget": "budget",
-      "priceRange": "¥120-250/night",
-      "address": "多家分店",
+      "priceRange": "1泊120〜250元",
+      "address": "市内に複数店舗",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
       },
       "rating": 4,
       "highlights": [
-        "Extensive locations",
-        "Consistent quality",
-        "Basic amenities",
-        "Affordable"
+        "多数の店舗展開",
+        "安定した品質",
+        "基本的な設備",
+        "手頃な価格"
       ],
-      "bookingTips": "Reliable budget option. Many locations near metro stations."
+      "bookingTips": "信頼できるリーズナブルな選択肢。地下鉄駅近くに多数の店舗があります。"
     },
     {
-      "name": "长沙茉莉花国际酒店",
+      "name": "長沙茉莉花国際酒店",
       "nameEn": "Jasmin Garden International Hotel",
       "budget": "luxury",
-      "priceRange": "¥800-1500/night",
-      "address": "开福区湘江中路",
+      "priceRange": "1泊800〜1500元",
+      "address": "開福区湘江中路",
       "coordinates": {
         "lat": 28.2311,
         "lng": 112.9588
       },
       "rating": 4.5,
       "highlights": [
-        "Riverside location",
-        "Modern facilities",
-        "Multiple restaurants",
-        "Spa services"
+        "川沿いのロケーション",
+        "近代的な設備",
+        "複数のレストラン",
+        "スパサービス"
       ],
-      "bookingTips": "Request river-view rooms for best scenery. Great location for exploring riverfront attractions."
+      "bookingTips": "川側の客室をリクエストすると景色が最高です。川沿いの観光スポットを巡るのに絶好のロケーションです。"
     },
     {
-      "name": "长沙皇冠假日酒店",
+      "name": "長沙皇冠假日酒店",
       "nameEn": "Crowne Plaza Changsha",
       "budget": "mid",
-      "priceRange": "¥600-1000/night",
+      "priceRange": "¥600〜1000/泊",
       "address": "芙蓉区五一大道",
       "coordinates": {
         "lat": 28.2255,
@@ -2984,86 +2984,86 @@
       },
       "rating": 4.4,
       "highlights": [
-        "Central location",
-        "Business facilities",
-        "Good breakfast",
-        "Reliable service"
+        "中心部に好立地",
+        "ビジネス施設",
+        "朝食が良い",
+        "信頼できるサービス"
       ],
-      "bookingTips": "Excellent location near major shopping areas. Weekend rates often lower. Good for both business and leisure."
+      "bookingTips": "主要なショッピングエリアに近く、立地は抜群です。週末の料金は割安になることが多いです。ビジネスにもレジャーにも最適です。"
     }
   ],
   "transport": {
     "arrival": [
       {
         "type": "air",
-        "from": "Major international airports via Beijing, Shanghai, Guangzhou",
-        "to": "Changsha Huanghua International Airport (CSX)",
-        "duration": "Varies by origin (1.5-3 hours from major Chinese cities)",
+        "from": "北京、上海、広州経由の主要国際空港",
+        "to": "長沙黄花国際空港（CSX）",
+        "duration": "出発地により異なります（中国の主要都市から1.5〜3時間）",
         "price": "400-2500¥",
-        "frequency": "Multiple daily flights",
-        "tips": "Airport is 25km from city center. Metro Line 6 connects to city (5-7¥, 45 minutes). Airport express bus also available."
+        "frequency": "1日複数便",
+        "tips": "空港は市内中心部から25km。地下鉄6号線で市内へ（5〜7元、45分）。空港バスも利用可能。"
       },
       {
         "type": "train",
-        "from": "Shanghai (4h), Beijing (5.5h), Guangzhou (2.5h), Shenzhen (3h), Wuhan (1.5h)",
-        "to": "Changsha Station / Changsha South Station / Changsha East Station",
-        "duration": "1.5-6 hours depending on origin",
+        "from": "上海（4時間）、北京（5.5時間）、広州（2.5時間）、深圳（3時間）、武漢（1.5時間）",
+        "to": "長沙駅／長沙南駅／長沙東駅",
+        "duration": "出発地により1.5〜6時間",
         "price": "200-800¥",
-        "frequency": "Multiple daily high-speed departures",
-        "tips": "Changsha South Station is for high-speed trains. Changsha Station is for regular trains. All stations have metro connections."
+        "frequency": "1日複数の高速列車が出発",
+        "tips": "長沙南駅は高速鉄道用です。長沙駅は一般列車用です。全駅で地下鉄に接続しています。"
       }
     ],
     "local": {
       "metro": [
-        "6 lines covering major districts",
-        "Single ride: 2-7¥ depending on distance",
-        "Peak hours: 07:30-09:00, 17:30-19:00 - expect crowds",
-        "Metro maps in English via app",
-        "Line 1 (north-south): Connects railway stations",
-        "Line 2 (main east-west): Major tourist areas",
-        "Line 4 (scenic): Connects to Yuelu Mountain area",
-        "Airport Line: Line 6 to Huanghua Airport",
-        "First train: 06:30, Last train: 23:00 (varies by line)",
-        "Women-only cars available on some lines during peak"
+        "主要エリアをカバーする6路線",
+        "1回乗車：距離に応じて2〜7¥",
+        "ラッシュ時：07:30-09:00、17:30-19:00 - 混雑が予想されます",
+        "アプリで英語の地下鉄マップを確認可能",
+        "1号線（南北方向）：鉄道駅を結ぶ",
+        "2号線（東西の主要路線）：主要観光エリア",
+        "4号線（景観路線）：岳麓山エリアに接続",
+        "空港線：6号線で黄花空港へ",
+        "初電：06:30、終電：23:00（路線により異なる）",
+        "一部路線ではラッシュ時に女性専用車両あり"
       ],
       "bus": [
-        "Extensive network covering all areas",
-        "Single ride: 2¥ (regular buses)",
-        "Air-conditioned buses: 2-3¥",
-        "BRT (Bus Rapid Transit): Available on major routes",
-        "Night buses: Limited but available on key routes",
-        "Download Changsha Transit app for real-time info",
-        "Tips: Have exact change ready, or use transit card"
+        "全エリアをカバーする広範なネットワーク",
+        "1回乗車：2¥（一般バス）",
+        "冷房バス：2-3¥",
+        "BRT（高速バス輸送）：主要路線で利用可能",
+        "夜行バス：限られているが主要路線で運行",
+        "長沙交通アプリをダウンロードしてリアルタイム情報を確認",
+        "ヒント：正確な金額を用意するか、交通カードを使用"
       ],
       "taxi": [
-        "Starting fare: 8¥ (first 2km)",
-        "Waiting: 0.5¥ per minute",
-        "Night surcharge: 20% extra (22:00-06:00)",
-        "Always insist on meter use",
-        "Didi app highly recommended (English interface available)",
-        "Long distance trips: 1.8¥ per km after 10km",
-        "Airport to city center: 80-120¥ by taxi"
+        "初乗り運賃：8¥（最初の2km）",
+        "待機：1分あたり0.5¥",
+        "夜間割増：20%増（22:00-06:00）",
+        "必ずメーター使用を主張",
+        "Didiアプリを強く推奨（英語インターフェース対応）",
+        "長距離移動：10km以降は1.8¥/km",
+        "空港から市内中心部まで：タクシーで80〜120¥"
       ],
       "bike": [
-        "Mobike, Hello bikes, and Meituan bikes widely available",
-        "Unlock: 1-2¥, then 0.5-1¥ per 15 minutes",
-        "Bike lanes on major roads",
-        "Designated parking zones for shared bikes",
-        "Electric bikes available (check license requirements)",
-        "Caution: Traffic can be chaotic, stay alert",
-        "Great for short trips between shopping areas"
+        "Mobike、Helloバイク、Meituanバイクが広く利用可能",
+        "ロック解除：1〜2元、その後15分ごとに0.5〜1元",
+        "主要道路に自転車レーンあり",
+        "シェア自転車専用の駐輪エリアあり",
+        "電動自転車あり（ライセンス要件を確認）",
+        "注意：交通は混乱しがち、常に警戒を怠らないこと",
+        "ショッピングエリア間の短距離移動に最適"
       ],
       "walking": [
-        "Central Changsha is walkable between attractions",
-        "Huangxing Road, Taiping Street, and Pozi Street are pedestrian-friendly",
-        "Use underground passages at major intersections",
-        "Walk on right side of sidewalks",
-        "Cross at designated crosswalks"
+        "長沙中心部は観光スポット間を徒歩で移動可能",
+        "黄興路、太平街、坡子街は歩行者に優しい",
+        "主要交差点では地下道を利用すること",
+        "歩道では右側を歩くこと",
+        "指定の横断歩道を渡る"
       ],
       "rental": [
-        "Electric scooters: Require helmet and license by law",
-        "Car rental: International license accepted with translation",
-        "Driver with car: Popular option for day trips to nearby attractions"
+        "電動スクーター：法律でヘルメットとライセンスが必要",
+        "レンタカー：国際免許証は翻訳文付きで利用可能",
+        "運転手付き車：近隣観光地への日帰り旅行に人気のオプション"
       ]
     }
   },
@@ -3071,400 +3071,416 @@
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Most widely accepted mobile payment in Changsha",
+      "description": "長沙で最も広く使われているモバイル決済",
       "howToUse": [
-        "Download Alipay app before arrival",
-        "Link international credit card",
-        "QR code payment at most merchants"
+        "到着前にAlipayアプリをダウンロード",
+        "国際クレジットカードを連携",
+        "ほとんどの店舗でQRコード決済が可能"
       ],
       "tips": [
-        "Most vendors use Alipay exclusively",
-        "Download before arrival",
-        "Keep some cash as backup"
+        "ほとんどの店舗はAlipayのみ対応",
+        "到着前にダウンロード",
+        "予備に現金を少し持っておく"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Second most popular payment method in Changsha",
+      "description": "長沙で2番目に普及している決済方法",
       "howToUse": [
-        "WeChat app required",
-        "Link international card through WeChat Pay",
-        "Scan QR code to pay"
+        "WeChatアプリが必要",
+        "WeChat Payで国際カードを連携する",
+        "QRコードをスキャンして支払う"
       ],
       "tips": [
-        "Essential for local services",
-        "Many vendors prefer WeChat"
+        "現地サービスに必須",
+        "多くの店舗がWeChatを好む"
       ]
     },
     {
       "method": "Cash (RMB)",
       "icon": "cash",
-      "description": "Still accepted everywhere, essential for street vendors",
+      "description": "どこでもまだ使え、屋台には必須",
       "howToUse": [
-        "Exchange at airport or bank",
-        "ATMs widely available",
-        "100¥ notes most common"
+        "空港または銀行で両替する",
+        "ATMは広く利用可能",
+        "100元札が最も一般的"
       ],
       "tips": [
-        "Keep small bills for small purchases",
-        "Bank of China and ICBC ATMs accept foreign cards"
+        "小さな買い物用に小銭を用意",
+        "中国銀行とICBCのATMは外国カードに対応"
       ]
     },
     {
       "method": "International Credit Cards",
       "icon": "card",
-      "description": "Accepted at hotels, large restaurants, and international chains",
+      "description": "ホテル、大型レストラン、国際チェーンで利用可能",
       "howToUse": [
-        "Visa and Mastercard widely accepted at upscale venues",
-        "May require passport verification"
+        "VisaとMastercardは高級店で広く利用可能",
+        "パスポートの提示が必要な場合があります"
       ],
       "tips": [
-        "Call your bank to enable international transactions",
-        "Some places add foreign transaction fees"
+        "銀行に連絡して国際取引を有効にしてください",
+        "一部の店舗では海外取引手数料が加算されます"
       ]
     },
     {
       "method": "Changsha Tong Card",
       "icon": "card",
-      "description": "Stored-value card for metro and bus rides",
+      "description": "地下鉄とバス用のプリペイドカード",
       "howToUse": [
-        "Purchase at any metro station",
-        "Top up at stations or convenience stores",
-        "Tap to pay on metro and buses"
+        "どの地下鉄駅でも購入可能",
+        "駅やコンビニでチャージ可能",
+        "地下鉄とバスでタップして支払い"
       ],
       "tips": [
-        "Saves time buying metro tickets",
-        "Discount on bus fares",
-        "Refundable deposit"
+        "地下鉄の切符を買う時間を節約",
+        "バス運賃の割引",
+        "返金可能なデポジット"
       ]
     },
     {
       "method": "UnionPay",
       "icon": "unionpay",
-      "description": "China's domestic card network, widely accepted",
+      "description": "中国の国内カードネットワークで、広く受け入れられている",
       "howToUse": [
-        "ATMs accepting UnionPay are widely available",
-        "Many POS terminals accept UnionPay cards"
+        "銀聯カードが使えるATMが広く利用可能",
+        "多くのPOS端末が銀聯カードに対応"
       ],
       "tips": [
-        "Works at most ATMs in China",
-        "Some international cards may work as UnionPay"
+        "中国のほとんどのATMで利用可能",
+        "一部の国際カードは銀聯として使える場合がある"
       ]
     }
   ],
   "culturalTips": [
     {
       "category": "language",
-      "title": "Xiang Dialect",
-      "content": "The Changsha dialect (长沙话) is part of the Xiang dialect group. locals appreciate visitors who try simple phrases. '吃了没' (have you eaten?) is a common casual greeting.",
+      "title": "湖南方言",
+      "content": "長沙方言（長沙語）は湘方言グループの一部です。地元の人々は、訪問者が簡単なフレーズを試みることを評価します。「吃了没」（ご飯食べた？）は一般的なカジュアルな挨拶です。",
       "importance": "medium"
     },
     {
       "category": "dining",
-      "title": "Hunan Spice Culture",
-      "content": "Hunan cuisine is famous for its use of chili peppers - '辣' (spicy) is the defining characteristic. The phrase '不怕辣，辣不怕，怕不辣' captures the Hunan relationship with spice.",
+      "title": "湖南スパイス文化",
+      "content": "湖南料理は唐辛子の使用で有名です。「辣」（辛い）はその決定的な特徴です。「不怕辣，辣不怕，怕不辣」というフレーズは、湖南と辛さの関係性を捉えています。",
       "importance": "high"
     },
     {
       "category": "dining",
-      "title": "Stinky Tofu",
-      "content": "臭豆腐 (stinky tofu) is Changsha's iconic street food. The fermented tofu has a strong smell but delicious taste when deep-fried. Try it at Huogong Temple or street vendors.",
+      "title": "臭豆腐",
+      "content": "臭豆腐（しゅうどうふ）は長沙の象徴的なストリートフードです。発酵させた豆腐は強い匂いがありますが、揚げると美味しいです。火宮殿や屋台で試してみてください。",
       "importance": "high"
     },
     {
       "category": "dining",
-      "title": "Tea Culture",
-      "content": "Changsha has a strong tea culture. 茶颜悦色 (Sexy Tea) is the beloved local milk tea chain. Traditional teahouses also offer authentic Hunan tea experiences.",
+      "title": "茶文化",
+      "content": "長沙はお茶の文化が盛んです。茶顔悦色（Sexy Tea）は地元で人気のミルクティーチェーン店です。伝統的な茶屋では本格的な湖南茶を体験できます。",
       "importance": "medium"
     },
     {
       "category": "seasonal",
-      "title": "Summer Crayfish",
-      "content": "夏天吃虾 (summer crayfish) is a major Changsha tradition. From May to September, crayfish restaurants are packed. '口味虾' (spicy crayfish) is the local favorite.",
+      "title": "夏の小龍蝦",
+      "content": "夏のザリガニは長沙の重要な伝統です。5月から9月まで、ザリガニ料理店は人で賑わいます。「口味蝦」（スパイシーザリガニ）が地元の人気です。",
       "importance": "medium"
     },
     {
       "category": "greeting",
-      "title": "Local Greetings",
-      "content": "Changsha people are known for their directness. '吃了没' is a common greeting. '要得不' (is that ok?) is frequently used. The phrase '哦岳' is a common expression.",
+      "title": "地元の人あいさつの習慣",
+      "content": "長沙人はことで知られる親しみやすい性格です。「吃了没」（食べた？）が一般的な挨拶です。「要得不」（いいかね？）もしょっちゅう使われます。「哦岳」が一般的な表現です。",
       "importance": "low"
     },
     {
       "category": "revolutionary",
-      "title": "Revolutionary Heritage",
-      "content": "Changsha was Chairman Mao's hometown province and a center of revolutionary activity. The Orange Island statue and various museums commemorate this history.",
+      "title": "革命遺産",
+      "content": "長沙は毛沢東主席の故郷の省であり、革命活動の中心地でした。橘洲の像や様々な博物館がこの歴史を偲んでいます。",
       "importance": "medium"
     },
     {
       "category": "dining",
-      "title": "Rice Noodles Culture",
-      "content": "米粉（rice noodles）は长沙の朝食の基本です。壹德壹や米粉研究所は人気の店です。这里的米粉は一般的に丸くて澄んだ汁提供服务されます。",
+      "title": "米粉文化",
+      "content": "米粉（ライスヌードル）は長沙の朝食の基本です。壹德壹や米粉研究所は人気の店です。ここの米粉は一般的に丸くて澄んだ汁で提供されます。",
       "importance": "medium"
     },
     {
       "category": "shopping",
-      "title": "Shopping Districts",
-      "content": "黄興路と坡子街は主要な買い物と饮食エリアです。太平街はお土産や手工芸品向けです。IFSはブランド品向けです。これらのエリアはすべて徒歩で移動できます。",
+      "title": "ショッピングエリア",
+      "content": "黄興路と坡子街は主要な買い物と飲食エリアです。太平街はお土産や手工芸品向けです。IFSはブランド品向けです。これらのエリアはすべて徒歩で移動できます。",
       "importance": "medium"
     },
     {
       "category": "taboo",
-      "title": "Number Taboos",
+      "title": "数字に関するタブー",
       "content": "数字の4は不吉（死に聞こえる）です。数字の8は非常に縁起が良いです。電話番号や車のナンバープレートに複数の8が多いと価値が高まる場合があります。",
       "importance": "medium"
     },
     {
       "category": "dining",
-      "title": "Chopstick Etiquette",
+      "title": "箸のマナー",
       "content": "箸を米に垂直に刺さないでください。これは供物を彷彿とさせます。また、箸で指したり、食事中に振ったりしないでください。",
       "importance": "medium"
     },
     {
       "category": "travel",
-      "title": "Metro Etiquette",
+      "title": "地下鉄エチケット",
       "content": "高齢者、妊婦、子連れの人に席を譲ってください。地下鉄で飲食しないでください。電話は短くしてください。",
       "importance": "medium"
     },
     {
       "category": "cultural",
-      "title": "Xiang River Culture",
-      "content": "湘江（Xiang River）は长沙のアイデンティティの中心です。川は市の多くの場所から видимостьがあり、オレンジアイランドがその中間にあります。",
+      "title": "湘江文化",
+      "content": "湘江は長沙のアイデンティティの中心です。川は市内の多くの場所から見え、橘洲（オレンジアイランド）がその中間にあります。",
       "importance": "low"
     },
     {
       "category": "weather",
-      "title": "Summer Heat",
-      "content": "长沙の夏は極めて暑く湿度が高い（多くの場合35°C以上）。水分補給르고、日焼け対策しエアコンの効いた場所で休憩してください。",
+      "title": "夏の暑さ",
+      "content": "長沙の夏は極めて暑く湿度が高い（多くの場合35°C以上）。水分補給をし、日焼け対策をし、エアコンの効いた場所で休憩してください。",
       "importance": "high"
     },
     {
       "category": "weather",
-      "title": "Winter Cold",
-      "content": "长沙の冬は湿って寒い（0-10°C）でセントラルヒーティングはありません。重ね着をして、屋内外 同様の室内温度を想定してください。",
+      "title": "冬の寒さ",
+      "content": "長沙の冬は湿って寒い（0-10°C）でセントラルヒーティングはありません。重ね着をして、屋内外の温度差を想定してください。",
       "importance": "medium"
     },
     {
       "category": "entertainment",
-      "title": "Nightlife Culture",
-      "content": "长沙には盟重烧烤や文和友が人気の深夜スポットなど活気のあるナイトライフがあります。街は暗くなると生きてきます。",
+      "title": "ナイトライフ文化",
+      "content": "長沙には盟重焼烤や文和友が人気の深夜スポットなど活気のあるナイトライフがあります。街は暗くなると活気づきます。",
       "importance": "medium"
     },
     {
       "category": "cultural",
-      "title": "Mawangdui Legacy",
+      "title": "馬王堆の遺産",
       "content": "近くの馬王堆漢墓からは古代シルクや世界最古の保存チーズを含む信じられないほどの出土品が発見されました。湖南省博物館がこれらの宝物を所蔵しています。",
       "importance": "medium"
     },
     {
       "category": "entertainment",
-      "title": "Changsha Entertainment Industry",
-      "content": "长沙は多くのテレビ番組が撮影される中国の「エンターテインメント首都」として知られています。テレビ局地区とエンターテインメント企業は地元文化の一部です。ファンは町で有名人に会うことがあります。",
+      "title": "長沙エンターテインメント産業",
+      "content": "長沙は多くのテレビ番組が撮影される中国の「エンターテインメント首都」として知られています。テレビ局地区とエンターテインメント企業は地元文化の一部です。ファンは町で有名人に会うことがあります。",
       "importance": "low"
     },
     {
       "category": "dining",
-      "title": "Spicy Food Culture",
-      "content": "长沙料理は「一辣到底」（雰囲に辛い）で知られています。米粉のような朝食メニューにも唐辛子がが入っています。辛さに慣れない訪問者は「微辣」（控えめ）或いは「不辣」（辛さなし）をリクエストしてください。",
+      "title": "辛い食べ物文化",
+      "content": "長沙料理は「一辣到底」（徹底的に辛い）で知られています。米粉のような朝食メニューにも唐辛子が入っています。辛さに慣れない訪問者は「微辣」（控えめ）または「不辣」（辛さなし）をリクエストしてください。",
       "importance": "high"
     },
     {
       "category": "cultural",
-      "title": "Xiang River (湘江) Culture",
-      "content": "湘江（Xiang River）は长沙のアイデンティティの中心です。川は市の多くの場所から видимостьがあり、オレンジアイランドがその中間にあります。川沿いの夕暮れの散步は地元のおすすめです。",
+      "title": "湘江文化",
+      "content": "湘江は長沙のアイデンティティの中心です。川は市内の多くの場所から見え、橘洲（オレンジアイランド）がその中間にあります。川沿いの夕暮れの散歩は地元でもおすすめです。",
       "importance": "medium"
     },
     {
       "category": "seasonal",
-      "title": "Summer Heat and Humidity",
-      "content": "长沙の夏は極めて暑く湿度が高い（多くの場合35°C以上）。「火炉城市」（ furnace city）というあだ名は伊達じゃありません。水分補給르고、日焼け対策しエアコンの効いた場所を探してください。",
+      "title": "夏の暑さと湿度",
+      "content": "長沙の夏は極めて暑く湿度が高い（多くの場合35°C以上）。「火炉都市」というあだ名は伊達じゃありません。水分補給をし、日焼け対策をし、エアコンの効いた場所を探してください。",
       "importance": "high"
     },
     {
       "category": "shopping",
-      "title": "IFS and Luxury Shopping",
-      "content": "长沙IFS（International Finance Square）は国际ブランドを持つ长沙初の高级ショッピング目的地です。屋上にある有名なKAWS彫刻は人気の写真スポットです。",
+      "title": "IFSと高級ショッピング",
+      "content": "長沙IFSは国際ブランドが揃う長沙初の高級ショッピングスポットです。屋上にある有名なKAWSの彫刻は人気の写真スポットです。",
       "importance": "medium"
     },
     {
       "category": "cultural",
-      "title": "Modern Art Scene",
-      "content": "The Meitan Lake area has become Changsha's cultural hub with the Grand Theatre, Photography Museum, and Art Gallery. The area showcases Changsha's modern cultural ambitions.",
+      "title": "モダンアートシーン",
+      "content": "梅渓湖エリアは、大劇場、写真博物館、美術館を擁し、長沙の文化的中心地となっています。このエリアは長沙の現代的な文化への野心を示しています。",
       "importance": "low"
     }
   ],
   "emergencyContacts": [
     {
       "type": "ambulance",
-      "name": "长沙急救中心",
-      "nameEn": "Changsha Emergency Center",
+      "name": "長沙救急センター",
+      "nameEn": "在広州シンガポール総領事館",
       "phone": "120",
-      "address": "Various locations citywide",
-      "notes": "English operators may be limited"
+      "address": "市内各地にあり",
+      "notes": "英語対応のオペレーターが限られる場合があります",
+      "nameJa": "長沙救急センター"
     },
     {
       "type": "police",
-      "name": "长沙市公安局",
+      "name": "長沙市公安局",
       "nameEn": "Changsha Public Security Bureau",
       "phone": "110",
-      "address": "Police headquarters in Yuhua District",
-      "notes": "Tourist police at major attractions"
+      "address": "雨花区にある警察本部",
+      "notes": "主要観光地に観光警察が配置されています",
+      "nameJa": "長沙市公安局"
     },
     {
       "type": "fire",
-      "name": "长沙消防",
+      "name": "長沙消防",
       "nameEn": "Changsha Fire Brigade",
       "phone": "119",
-      "address": "Various stations",
-      "notes": "Also handles rescue operations"
+      "address": "各駅",
+      "notes": "救助活動も担当している",
+      "nameJa": "長沙消防"
     },
     {
       "type": "hospital",
       "name": "中南大学湘雅医院",
       "nameEn": "Xiangya Hospital",
       "phone": "+86 731 8432 8888",
-      "address": "88 Xiangya Rd, Changsha",
+      "address": "長沙市湘雅路88号",
       "coordinates": {
         "lat": 28.2188,
         "lng": 112.9311
       },
-      "notes": "One of China's top hospitals, English-speaking staff available"
+      "notes": "中国のトップクラスの病院の一つで、英語対応スタッフがいます",
+      "nameJa": "中南大学湘雅医院"
     },
     {
       "type": "hospital",
       "name": "湖南省人民医院",
       "nameEn": "Hunan Provincial People's Hospital",
       "phone": "+86 731 8227 8000",
-      "address": "89 Wangfujing Rd, Changsha",
+      "address": "長沙市王府井路89号",
       "coordinates": {
         "lat": 28.2288,
         "lng": 112.9488
       },
-      "notes": "Large general hospital with international patient services"
+      "notes": "国際患者サービスを提供する大規模総合病院",
+      "nameJa": "湖南省人民医院"
     },
     {
       "type": "hospital",
-      "name": "长沙市中心医院",
+      "name": "長沙市中心医院",
       "nameEn": "Changsha Central Hospital",
       "phone": "+86 731 8566 7952",
-      "address": "Sanyi Rd, Tianxin District",
+      "address": "天心区三一路",
       "coordinates": {
         "lat": 28.2255,
         "lng": 112.9611
       },
-      "notes": "Another top hospital in the city center"
+      "notes": "国際患者サービスを提供するもう一つのトップ病院",
+      "nameJa": "長沙市中心医院"
     },
     {
       "type": "embassy",
-      "name": "美国驻广州总领事馆",
+      "name": "米国駐広州総領事館",
       "nameEn": "US Consulate General Guangzhou",
       "phone": "+86 20 3814 5775",
-      "address": "Guangzhou (closest US consulate)",
+      "address": "広州（最寄りの米国領事館）",
       "coordinates": {
         "lat": 23.1291,
         "lng": 113.2644
       },
-      "notes": "For US citizens in Hunan - nearest consulate is Guangzhou"
+      "notes": "湖南省在住の米国市民の方へ：最寄りの領事館は広州です",
+      "nameJa": "米国駐広州総領事館"
     },
     {
       "type": "embassy",
-      "name": "英国驻广州总领事馆",
+      "name": "英国駐広州総領事館",
       "nameEn": "UK Consulate General Guangzhou",
       "phone": "+86 20 8314 2368",
-      "address": "Guangzhou (nearest UK consulate)",
+      "address": "広州（最寄りの英国領事館）",
       "coordinates": {
         "lat": 23.1291,
         "lng": 113.2644
       },
-      "notes": "For UK citizens - nearest consulate is Guangzhou"
+      "notes": "英国市民の方へ：最寄りの領事館は広州です",
+      "nameJa": "英国駐広州総領事館"
     },
     {
       "type": "embassy",
-      "name": "日本驻广州总领事馆",
+      "name": "日本駐広州総領事館",
       "nameEn": "Japan Consulate General Guangzhou",
       "phone": "+86 20 8334 3009",
-      "address": "Guangzhou",
+      "address": "広州",
       "coordinates": {
         "lat": 23.1291,
         "lng": 113.2644
       },
-      "notes": "For Japanese citizens in Hunan - nearest consulate is Guangzhou"
+      "notes": "湖南省在住の日本国民の方へ：最寄りの領事館は広州です",
+      "nameJa": "日本駐広州総領事館"
     },
     {
       "type": "tourist",
-      "name": "长沙旅游投诉热线",
+      "name": "長沙観光苦情ホットライン",
       "nameEn": "Changsha Tourist Complaint Hotline",
       "phone": "+86 731 8581 0101",
-      "address": "Citywide",
-      "notes": "For tourist complaints and assistance"
+      "address": "市内全域",
+      "notes": "観光客の苦情や支援について",
+      "nameJa": "長沙観光苦情ホットライン"
     },
     {
       "type": "embassy",
-      "name": "法国驻广州总领事馆",
+      "name": "フランス駐広州総領事館",
       "nameEn": "French Consulate Guangzhou",
       "phone": "+86 20 2829 2000",
-      "address": "Guangzhou",
+      "address": "広州",
       "coordinates": {
         "lat": 23.1291,
         "lng": 113.2644
       },
-      "notes": "For French citizens - nearest consulate is Guangzhou"
+      "notes": "フランス市民の方へ：最寄りの領事館は広州です",
+      "nameJa": "フランス駐広州総領事館"
     },
     {
       "type": "hospital",
-      "name": "长沙市第一医院",
+      "name": "長沙市第一医院",
       "nameEn": "Changsha First Hospital",
       "phone": "+86 731 8466 7635",
-      "address": "1st Section, Wangfujing Rd, Changsha",
+      "address": "長沙市王府井路一区",
       "coordinates": {
         "lat": 28.2311,
         "lng": 112.9455
       },
-      "notes": "Major hospital with 24-hour emergency services"
+      "notes": "24時間救急サービスを備えた主要病院",
+      "nameJa": "長沙市第一医院"
     },
     {
       "type": "hospital",
-      "name": "长沙市中心医院",
+      "name": "長沙市中心医院",
       "nameEn": "Changsha Central Hospital",
       "phone": "+86 731 8566 7952",
-      "address": "Sanyi Rd, Tianxin District",
+      "address": "天心区三一路",
       "coordinates": {
         "lat": 28.2255,
         "lng": 112.9611
       },
-      "notes": "Another top hospital with international patient services"
+      "notes": "国際患者サービスを提供するもう一つのトップ病院",
+      "nameJa": "長沙市中心医院"
     },
     {
       "type": "emergency",
-      "name": "长沙市自来水公司",
+      "name": "長沙市自來水公司",
       "nameEn": "Changsha Water Company",
       "phone": "96510",
-      "address": "Citywide",
-      "notes": "For water supply emergencies"
+      "address": "市内全域",
+      "notes": "水道の緊急時はこちら",
+      "nameJa": "長沙市自來水公司"
     },
     {
       "type": "emergency",
-      "name": "长沙燃气公司",
+      "name": "長沙ガス公司",
       "nameEn": "Changsha Gas Company",
       "phone": "95007",
-      "address": "Citywide",
-      "notes": "For gas leaks and emergencies (24-hour)"
+      "address": "市内全域",
+      "notes": "ガス漏れ・緊急時（24時間）",
+      "nameJa": "長沙ガス公司"
     },
     {
       "type": "emergency",
-      "name": "国家电网长沙供电公司",
+      "name": "国家電網長沙供電公司",
       "nameEn": "State Grid Changsha Power Supply",
       "phone": "95598",
-      "address": "Citywide",
-      "notes": "For power outages and electrical emergencies"
+      "address": "市内全域",
+      "notes": "停電・電気の緊急時はこちら",
+      "nameJa": "国家電網長沙供電公司"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese (Simplified)",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa (L-tourist, M-business)",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Tap water is boiled before drinking; bottled water widely available"
+    "language": "中国語（マンダリン）",
+    "currency": "人民元 (CNY/RMB)",
+    "visa": "ほとんどの国籍でビザが必要です。対象者は空港で72時間トランジットビザを取得できます。",
+    "timeZone": "UTC+8 (中国標準時)",
+    "electricity": "220V/50Hz、A/I タイププラグ",
+    "water": "水道水は飲めますが、ペットボトル推奨"
   }
 }

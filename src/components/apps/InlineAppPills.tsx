@@ -15,9 +15,10 @@ import React, { useEffect, useState } from "react";
 
 interface InlineAppPillProps {
   app: (typeof APP_RECOMMENDATIONS)[number];
+  lang?: string;
 }
 
-export function InlineAppPill({ app }: InlineAppPillProps) {
+export function InlineAppPill({ app, lang = "en" }: InlineAppPillProps) {
   const [os, setOs] = useState<"ios" | "android" | "other">("other");
   useEffect(() => {
     setOs(detectMobileOS());
@@ -50,7 +51,7 @@ export function InlineAppPill({ app }: InlineAppPillProps) {
             <span className="px-1 py-0.5 bg-green-100 text-green-700 text-xs rounded">EN</span>
           )}
         </div>
-        <span className="text-xs text-gray-500 line-clamp-1">{app.descriptionEn}</span>
+        <span className="text-xs text-gray-500 line-clamp-1">{lang === "ja" ? app.descriptionJa || app.description : lang === "en" ? app.descriptionEn : app.description}</span>
       </div>
       {app.appStoreUrl && (
         <a
@@ -81,15 +82,16 @@ export function InlineAppPill({ app }: InlineAppPillProps) {
 interface InlineAppPillsGroupProps {
   apps: typeof APP_RECOMMENDATIONS;
   title?: string;
+  lang?: string;
 }
 
-export function InlineAppPillsGroup({ apps, title }: InlineAppPillsGroupProps) {
+export function InlineAppPillsGroup({ apps, title, lang = "en" }: InlineAppPillsGroupProps) {
   return (
     <div className="my-4">
       {title && <h4 className="text-sm font-semibold text-gray-700 mb-2">{title}</h4>}
       <div className="flex flex-wrap gap-2">
         {apps.map((app) => (
-          <InlineAppPill key={app.id} app={app} />
+          <InlineAppPill key={app.id} app={app} lang={lang} />
         ))}
       </div>
     </div>

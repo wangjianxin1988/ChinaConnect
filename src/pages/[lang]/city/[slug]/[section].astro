@@ -1,0 +1,36 @@
+---
+import { citySlugs } from "@/data/cities/index";
+
+export function getStaticPaths() {
+  const langs = ["en", "ja", "ko", "zh-CN", "zh-TW", "th", "vi", "ru", "fr", "de", "ar", "fa"];
+  const sections: Array<{ section: string; anchor: string }> = [
+    { section: "transport", anchor: "transport" },
+    { section: "payment", anchor: "payment" },
+    { section: "sim", anchor: "connectivity" },
+    { section: "apps", anchor: "apps" },
+    { section: "culture", anchor: "culture" },
+    { section: "emergency", anchor: "emergency" },
+  ];
+  const out: Array<{ params: { lang: string; slug: string; section: string } }> = [];
+  for (const lang of langs) {
+    for (const slug of citySlugs) {
+      for (const s of sections) {
+        out.push({ params: { lang, slug, section: s.section } });
+      }
+    }
+  }
+  return out;
+}
+
+const { lang, slug, section } = Astro.params;
+const ANCHOR_MAP: Record<string, string> = {
+  transport: "transport",
+  payment: "payment",
+  sim: "connectivity",
+  apps: "apps",
+  culture: "culture",
+  emergency: "emergency",
+};
+const anchor = ANCHOR_MAP[section as string] || "";
+return Astro.redirect("/" + lang + "/city/" + slug + (anchor ? "/#" + anchor : "/"), 301);
+---

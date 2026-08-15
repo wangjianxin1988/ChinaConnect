@@ -24,6 +24,16 @@ const pageDescription = (translations[lang] || translations.en).cityAttractions?
 
 // Get unique categories
 const categories = [...new Set(city.attractions.map((a: any) => a.category))].sort();
+
+const _lookup = (key) => {
+  const parts = key.split(".");
+  let cur = (typeof t !== 'undefined' ? t : (typeof _t !== 'undefined' ? _t : (translations[lang] || translations.en)));
+  for (const p of parts) {
+    if (cur && typeof cur === "object" && p in cur) cur = cur[p];
+    else return key;
+  }
+  return typeof cur === "string" ? cur : key;
+};
 ---
 
 <BaseLayout
@@ -42,17 +52,17 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
     <div class="container-custom relative h-full flex flex-col justify-end pb-8">
       <!-- Breadcrumb -->
       <nav class="mb-4">
-        <a href="/" class="text-purple-200 hover:text-white transition-colors" data-i18n="cityPage.home">Home</a>
+        <a href="/" class="text-purple-200 hover:text-white transition-colors" data-i18n="cityPage.home">{_lookup("cityPage.home")}</a>
         <span class="text-purple-300 mx-2">/</span>
         <a href={`/city/${city.slug}`} class="text-purple-200 hover:text-white transition-colors">{city.nameEn}</a>
         <span class="text-purple-300 mx-2">/</span>
-        <span class="text-white" data-i18n="cityPage.attractionsHeading">Attractions</span>
+        <span class="text-white" data-i18n="cityPage.attractionsHeading" data-i18n-vars='{"city": city.nameEn}'>{_lookup("cityPage.attractionsHeading")}</span>
       </nav>
 
       <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">
-        🏛️Attractions in {city.nameEn}
+        🏛️{_lookup("cityPage.attractionsHeading")} in {city.nameEn}
       </h1>
-      <p class="text-xl text-purple-200" data-i18n="cityPage.attractionsExploreCount">{city.name} — {city.attractions.length} places to explore</p>
+      <p class="text-xl text-purple-200" data-i18n="cityPage.attractionsExploreCount">{_lookup("cityPage.attractionsExploreCount")}</p>
     </div>
   </section>
 
@@ -154,7 +164,7 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
 
             <div class="space-y-2 mb-4">
               <div class="flex items-center gap-2 text-sm text-gray-600">
-                <span class="text-gray-400" data-i18n="cityPage.phoneIcon">📞</span>
+                <span class="text-gray-400" data-i18n="cityPage.phoneIcon" data-i18n-vars='{"city": city.nameEn}'>{_lookup("cityPage.phoneIcon")}</span>
                 <span>{attraction.openingHours}</span>
               </div>
               {attraction.address && (
@@ -190,8 +200,8 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
     <!-- No results message -->
     <div id="no-results" class="hidden text-center py-16">
       <div class="text-6xl mb-4">🔍</div>
-      <h3 class="text-xl font-semibold text-gray-700 mb-2" data-i18n="cityPage.noResults">No attractions found</h3>
-      <p class="text-gray-500" data-i18n="cityPage.noResultsDesc">Try a different search term or category</p>
+      <h3 class="text-xl font-semibold text-gray-700 mb-2" data-i18n="cityPage.noResults">{_lookup("cityPage.noResults")}</h3>
+      <p class="text-gray-500" data-i18n="cityPage.noResultsDesc">{_lookup("cityPage.noResultsDesc")}</p>
     </div>
   </section>
 
@@ -259,17 +269,17 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
   <!-- Authoritative Data Sources -->
   <section class="container-custom py-8 mt-8 border-t border-gray-200">
     <div class="max-w-3xl mx-auto">
-      <h2 class="text-lg font-semibold text-gray-700 mb-3" data-i18n="cityPage.dataSourcesHeading">Data Sources & References</h2>
+      <h2 class="text-lg font-semibold text-gray-700 mb-3" data-i18n="cityPage.dataSourcesHeading">{_lookup("cityPage.dataSourcesHeading")}</h2>
       <div class="bg-gray-50 rounded-xl p-5 text-sm text-gray-600 space-y-2">
-        <p data-i18n="cityPage.dataSourcesDesc">Attraction data compiled from authoritative sources. Verify details before visiting:</p>
+        <p data-i18n="cityPage.dataSourcesDesc">{_lookup("cityPage.dataSourcesDesc")}</p>
         <ul class="list-disc list-inside space-y-1 ml-2">
-          <li><a href="https://www.mafengwo.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Mafengwo (马蜂窝)</a>  — <span data-i18n="cityAttractions.mafengwoDesc">China's largest travel community</span></li>
-          <li><a href="https://www.ctrip.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Ctrip / Trip.com</a>  — <span data-i18n="cityAttractions.ctripDesc">Attraction reviews & booking</span></li>
-          <li><a href="https://www.tripadvisor.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">TripAdvisor</a>  — <span data-i18n="cityAttractions.tripadvisorDesc">International attraction reviews</span></li>
-          <li><a href="https://www.chinanews.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">China News (新华网)</a>  — <span data-i18n="cityAttractions.chinanewsDesc">Official tourism information</span></li>
-          <li><a href="https://www.mct.gov.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline"Ministry of Culture & Tourismm)</a>  — <span data-i18n="cityAttractions.mctDesc">Government tourism data</span></li>
+          <li><a href="https://www.mafengwo.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Mafengwo (马蜂窝)</a>  — <span data-i18n="cityAttractions.mafengwoDesc" data-i18n-vars='{"city": city.nameEn}'>{_lookup("cityAttractions.mafengwoDesc")}</span></li>
+          <li><a href="https://www.ctrip.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Ctrip / Trip.com</a>  — <span data-i18n="cityAttractions.ctripDesc" data-i18n-vars='{"city": city.nameEn}'>{_lookup("cityAttractions.ctripDesc")}</span></li>
+          <li><a href="https://www.tripadvisor.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">TripAdvisor</a>  — <span data-i18n="cityAttractions.tripadvisorDesc" data-i18n-vars='{"city": city.nameEn}'>{_lookup("cityAttractions.tripadvisorDesc")}</span></li>
+          <li><a href="https://www.chinanews.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">China News (新华网)</a>  — <span data-i18n="cityAttractions.chinanewsDesc" data-i18n-vars='{"city": city.nameEn}'>{_lookup("cityAttractions.chinanewsDesc")}</span></li>
+          <li><a href="https://www.mct.gov.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline"Ministry of Culture & Tourismm)</a>  — <span data-i18n="cityAttractions.mctDesc" data-i18n-vars='{"city": city.nameEn}'>{_lookup("cityAttractions.mctDesc")}</span></li>
         </ul>
-        <p class="text-xs text-gray-400 mt-3">data-i18n="cityAttractions.disclaimer"<span data-i18n="cityAttractions.disclaimer">Opening hours, ticket prices, and phone numbers may change. We recommend verifying via the attraction's official website or calling ahead.</span></p>
+        <p class="text-xs text-gray-400 mt-3"><span data-i18n="cityAttractions.disclaimer" data-i18n-vars='{"city": city.nameEn}'>{_lookup("cityAttractions.disclaimer")}</span></p>
       </div>
     </div>
   </section>

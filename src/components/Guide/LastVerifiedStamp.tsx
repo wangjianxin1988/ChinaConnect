@@ -1,11 +1,14 @@
 import React from "react";
 import { BUSINESS_DATA_META } from "@/data/guide/business/_meta";
+import { jaText } from "./guide-i18n";
 
 interface Props {
   /** Data file key, e.g. "expo-calendar" */
   dataKey: keyof typeof BUSINESS_DATA_META;
   /** Optional override label */
   label?: string;
+  /** Language code */
+  lang?: string;
 }
 
 /**
@@ -13,7 +16,7 @@ interface Props {
  * Reads from BUSINESS_DATA_META so the verify-business-data.mjs script
  * has a single source of truth for the date.
  */
-export const LastVerifiedStamp: React.FC<Props> = ({ dataKey, label }) => {
+export const LastVerifiedStamp: React.FC<Props> = ({ dataKey, label, lang = "en" }) => {
   const meta = BUSINESS_DATA_META[dataKey];
   if (!meta) return null;
   return (
@@ -27,7 +30,7 @@ export const LastVerifiedStamp: React.FC<Props> = ({ dataKey, label }) => {
         />
       </svg>
       <span>
-        {label ?? "Last verified"}: {meta.lastVerified}
+        {label ?? (lang === "ja" ? "最終確認日" : "Last verified")}: {meta.lastVerified}
       </span>
       <span className="text-white/50">|</span>
       <a
@@ -36,7 +39,7 @@ export const LastVerifiedStamp: React.FC<Props> = ({ dataKey, label }) => {
         rel="noopener noreferrer"
         className="underline underline-offset-2 hover:text-white"
       >
-        {meta.sourceLabel}
+        {jaText(meta.sourceLabel, lang)}
       </a>
     </div>
   );

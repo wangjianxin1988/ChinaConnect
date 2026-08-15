@@ -3,30 +3,30 @@
   "name": "南京",
   "nameEn": "Nanjing",
   "country": "China",
-  "population": "8.5 million",
+  "population": "8,5 миллиона",
   "coordinates": {
     "lat": 32.0603,
     "lng": 118.7969
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Nanjing, ancient capital of six dynasties and capital of the Republic of China, is a city of profound historical significance. Home to the Sun Yat-sen Mausoleum, Ming Xiaoling Tomb (UNESCO), and theMemorial Hall of the Victims in Nanjing Massacre. A cultural crossroads between north and south China.",
+  "description": "Нанкин, древняя столица шести династий и столица Китайской Республики, — город с глубоким историческим значением. Здесь находятся Мавзолей Сунь Ятсена, Гробница Мин Сяолин (ЮНЕСКО) и Мемориальный зал жертв Нанкинской резни. Культурный перекрёсток между севером и югом Китая.",
   "coverImage": "/img/ext/17c2c1bef18d.webp",
   "highlights": [
-    "Sun Yat-sen Mausoleum - Purple Mountain",
-    "Ming Xiaoling Tomb - UNESCO World Heritage",
-    "Nanjing Massacre Memorial Hall",
-    "Presidential Palace - ROC history",
-    "Fuzi Temple - Ancient commerce district"
+    "Мавзолей Сунь Ят-сена — Пурпурная гора",
+    "Гробница Мин Сяолин — объект Всемирного наследия ЮНЕСКО",
+    "Мемориал Нанкинской резни",
+    "Дворец Президента — история Китайской Республики",
+    "Храм Фуцзы — древний торговый район"
   ],
   "climate": {
-    "type": "Subtropical monsoon",
+    "type": "Субтропический муссонный",
     "bestMonths": [
-      "March",
-      "April",
-      "May",
-      "September",
-      "October",
-      "November"
+      "Март",
+      "Апрель",
+      "Май",
+      "Сентябрь",
+      "Октябрь",
+      "Ноябрь"
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "4C (39F)",
@@ -36,631 +36,631 @@
     {
       "id": "sun-yat-sen-mausoleum",
       "name": "中山陵",
-      "nameEn": "Sun Yat-sen Mausoleum",
+      "nameEn": "Мавзолей Сунь Ят-сена",
       "category": "historical",
-      "description": "Magnificent mausoleum honoring Dr. Sun Yat-sen, founder of the Republic of China, on Purple Mountain with 392 steps.",
-      "address": "Zhongshan Mountain, Purple Mountain",
+      "description": "Величественный мавзолей доктора Сунь Ят-сена, основателя Китайской Республики, на Пурпурной горе с 392 ступенями.",
+      "address": "Чжуншаньшань, Пурпурная гора",
       "coordinates": {
         "lat": 32.0622,
         "lng": 118.8572
       },
       "openingHours": "08:30-17:30",
-      "ticketPrice": "Free (park 70¥)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "Бесплатно (парк 70¥)",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "392 steps climb",
-        "Blue tile roof",
-        "Panoramic views",
-        "Bai Chong"
+        "Подъём по 392 ступеням",
+        "Крыша из синей черепицы",
+        "Панорамные виды",
+        "Бай Чун"
       ],
-      "tips": "Arrive early to avoid crowds. Wear comfortable shoes. Combine with Ming Xiaoling Tomb nearby.",
+      "tips": "Приходите пораньше, чтобы избежать толп. Наденьте удобную обувь. Совместите с посещением гробницы Мин Сяолин поблизости.",
       "image": "/img/ext/16dc871f0e76.webp",
       "phone": "+86 25 8443 1991"
     },
     {
       "id": "ming-xiaoling",
       "name": "明孝陵",
-      "nameEn": "Ming Xiaoling Tomb",
+      "nameEn": "Гробница Мин Сяолин",
       "category": "historical",
-      "description": "UNESCO World Heritage site - the tomb of Emperor Hongwu, founder of the Ming Dynasty, with spectacular Avenue of Stone Animals.",
-      "address": "Ming Xiaoling, Purple Mountain",
+      "description": "Объект Всемирного наследия ЮНЕСКО — гробница императора Хунъу, основателя династии Мин, с великолепной Аллеей каменных животных.",
+      "address": "Мин Сяолин, Пурпурная Гора",
       "coordinates": {
         "lat": 32.0722,
         "lng": 118.8472
       },
       "openingHours": "06:30-18:30",
-      "ticketPrice": "70¥ (includes Ming Xiaoling and Music Square)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "70¥ (включает Мин Сяолин и Музыкальную площадь)",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Avenue of Stone Animals",
-        "Ming palace ruins",
-        "Wenwu Temple",
-        "Autumn colors"
+        "Аллея каменных животных",
+        "Руины дворца династии Мин",
+        "Храм Вэньу",
+        "Осенние краски"
       ],
-      "tips": "Walk the 600-year-old avenue at sunrise for magical light. Best in autumn for golden gingko. Combine with nearby Purple Mountain.",
+      "tips": "Прогуляйтесь по 600-летней аллее на рассвете для волшебного освещения. Лучшее время — осень для золотых гинкго. Совместите с посещением Пурпурной горы поблизости.",
       "image": "/img/ext/f8f0e4ba3acb.webp",
       "phone": "+86 25 8576 9051"
     },
     {
       "id": "nanjing-massacre",
       "name": "南京大屠杀纪念馆",
-      "nameEn": "Memorial Hall of the Victims in Nanjing Massacre",
+      "nameEn": "Мемориальный зал жертв Нанкинской резни",
       "category": "historical",
-      "description": "A powerful memorial to the 300,000 victims of the 1937 Nanjing Massacre, with exhibits and pilgrimage hall.",
-      "address": "418 Shuige Road, Jianye District",
+      "description": "Мемориал в память о 300 000 жертв Нанкинской резни 1937 года, с экспозициями и паломническим залом.",
+      "address": "418 Шуйгэ Роад, район Цзянье",
       "coordinates": {
         "lat": 32.0422,
         "lng": 118.7472
       },
-      "openingHours": "08:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "08:00-17:00 (Закрыто в понедельник)",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Memorial Hall",
-        "Exhibition halls",
-        "Peace plaza",
-        "Historical documents"
+        "Мемориальный зал",
+        "Выставочные залы",
+        "Площадь Мира",
+        "Исторические документы"
       ],
-      "tips": "Bring tissues. Audio guide available. Allow time for reflection. Combine with nearby Fuzi Temple.",
+      "tips": "Возьмите салфетки. Аудиогид доступен. Оставьте время для размышлений. Посетите также расположенный неподалеку храм Фучжэнь.",
       "image": "/img/ext/6107387aee36.webp",
       "phone": "+86 025  7040 7097"
     },
     {
       "id": "presidential-palace",
       "name": "总统府",
-      "nameEn": "Presidential Palace",
+      "nameEn": "Президентский дворец",
       "category": "historical",
-      "description": "The presidential office of Sun Yat-sen and later Chiang Kai-shek, now a museum showcasing 600 years of history.",
-      "address": "292 Changjiang Road, Xuanwu District",
+      "description": "Президентская резиденция Сунь Ятсена и позднее Чан Кайши, теперь музей, демонстрирующий 600-летнюю историю.",
+      "address": "292 Чанцзян Роад, район Сюаньву",
       "coordinates": {
         "lat": 32.0322,
         "lng": 118.7972
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "40¥",
-      "recommendedVisitTime": "2 hours",
+      "recommendedVisitTime": "2 часа",
       "highlights": [
-        "Zhonghua Gate",
-        "Office buildings",
-        "Garden",
-        "Exhibitions"
+        "Ворота Чжунхуа",
+        "Административные здания",
+        "Сад",
+        "Выставки"
       ],
-      "tips": "Good audio guide. Large complex with much history. Morning visits recommended.",
+      "tips": "Хороший аудиогид. Большой комплекс с богатой историей. Рекомендуется посещение утром.",
       "image": "/img/ext/8ac32b8fefe6.webp",
       "phone": "+86 25 8457 8888"
     },
     {
       "id": "fuzi-temple",
       "name": "夫子庙",
-      "nameEn": "Confucius Temple (Fuzi Temple)",
+      "nameEn": "Храм Конфуция (Храм Фуцзы)",
       "category": "cultural",
-      "description": "Ancient temple complex with traditional architecture, markets, and boat rides on the Qinhuai River.",
-      "address": "Fuzi Temple, Qinhuai District",
+      "description": "Древний храмовый комплекс с традиционной архитектурой, рынками и прогулками на лодках по реке Циньхуай.",
+      "address": "Храм Фуцзы, район Циньхуай",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
-      "openingHours": "09:00-21:00 (some areas open later)",
-      "ticketPrice": "Free (some attractions charge)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "09:00-21:00 (некоторые территории открываются позже)",
+      "ticketPrice": "Бесплатно (некоторые аттракционы платные)",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Confucius Temple",
-        "Qinhuai River boats",
-        "Night lighting",
-        "Street food"
+        "Храм Конфуция",
+        "Лодки на реке Циньхуай",
+        "Ночная подсветка",
+        "Уличная еда"
       ],
-      "tips": "Best at night when illuminated. Try local snacks from vendors. Take boat ride on river.",
+      "tips": "Лучше всего ночью, когда храм освещён. Попробуйте местные закуски у торговцев. Прокатитесь на лодке по реке.",
       "image": "/img/ext/13d2a7142882.webp",
       "phone": "+86 25 5220 9788"
     },
     {
       "id": "purple-mountain",
       "name": "紫金山",
-      "nameEn": "Purple Mountain",
+      "nameEn": "Пурпурная гора",
       "category": "natural",
-      "description": "A 450-meter mountain south of the Ming Xiaoling with hiking trails, ancient temples, and panoramic city views.",
-      "address": "Purple Mountain, Xuanwu District",
+      "description": "Гора высотой 450 метров к югу от Мин Сяолин с пешеходными маршрутами, древними храмами и панорамными видами на город.",
+      "address": "Пурпурная гора, район Сюаньву",
       "coordinates": {
         "lat": 32.0822,
         "lng": 118.8272
       },
-      "openingHours": "Open 24 hours (attractions vary)",
-      "ticketPrice": "Free (individual attractions charge)",
-      "recommendedVisitTime": "Half to full day",
+      "openingHours": "Открыто 24 часа (аттракционы работают по-разному)",
+      "ticketPrice": "Бесплатно (отдельные достопримечательности платные)",
+      "recommendedVisitTime": "Полдня или целый день",
       "highlights": [
-        "Sun Yat-sen Mausoleum",
-        "Ming Xiaoling",
-        "Music台",
-        "Peak views"
+        "Мавзолей Сунь Ят-сена",
+        "Мин Сяолин",
+        "Музыкальная терраса",
+        "Виды с вершины"
       ],
-      "tips": "Plan full day to cover major sites. Take cable car up, walk down. Combine multiple attractions.",
+      "tips": "Запланируйте полный день для посещения основных достопримечательностей. Поднимитесь на канатной дороге, спуститесь пешком. Объедините несколько мест.",
       "image": "/img/ext/8992f50f6b3f.webp",
       "phone": "+86 025  4736 5848"
     },
     {
       "id": "xuanwu-lake",
       "name": "玄武湖",
-      "nameEn": "Xuanwu Lake",
+      "nameEn": "Озеро Сюаньву",
       "category": "natural",
-      "description": "A beautiful urban lake with parks, gardens, and the ancient Ming city wall views, perfect for cycling and walking.",
-      "address": "Xuanwu Lake, Xuanwu District",
+      "description": "Прекрасное городское озеро с парками, садами и видами на древнюю городскую стену династии Мин, идеально подходит для велосипедных и пеших прогулок.",
+      "address": "Озеро Сюаньву, район Сюаньву",
       "coordinates": {
         "lat": 32.0822,
         "lng": 118.7772
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "Открыто круглосуточно",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "1-2 часа",
       "highlights": [
-        "Lake cycling",
-        "Five islands",
-        "City wall views",
-        "Cherry blossoms"
+        "Велосипедная прогулка по озеру",
+        "Пять островов",
+        "Виды на городскую стену",
+        "Цветение сакуры"
       ],
-      "tips": "Rent bikes around the lake. Combine with nearby Purple Mountain. Beautiful at sunset.",
+      "tips": "Арендуйте велосипеды вокруг озера. Объедините с посещением Пурпурной горы. Красиво на закате.",
       "image": "/img/ext/915c27010cfe.webp",
       "phone": "+86 25 8361 4286"
     },
     {
       "id": "laochengli",
       "name": "老门东",
-      "nameEn": "Laochengli",
+      "nameEn": "Лаочэнли",
       "category": "cultural",
-      "description": "Restored historic district near Fuzi Temple with traditional architecture, crafts, and local snacks.",
-      "address": "Laochengli, Qinhuai District",
+      "description": "Восстановленный исторический район недалеко от храма Фуцзы с традиционной архитектурой, ремеслами и местными закусками.",
+      "address": "Лаочэнли, район Циньхай",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7972
       },
-      "openingHours": "Open 24 hours (shops 10:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "Открыто 24 часа (магазины 10:00-22:00)",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "1-2 часа",
       "highlights": [
-        "Traditional architecture",
-        "Handcraft shops",
-        "Nanjing snacks",
-        "Photography"
+        "Традиционная архитектура",
+        "Мастерские ремесленных изделий",
+        "Нанкинские закуски",
+        "Фотография"
       ],
-      "tips": "Best evening with lighting. Try duck blood soup and small sesame balls. Less crowded than Fuzi Temple area.",
+      "tips": "Лучше всего вечером с подсветкой. Попробуйте суп из утиной крови и маленькие кунжутные шарики. Менее людно, чем район храма Фуцзы.",
       "image": "/img/ext/998eb40307b9.webp",
       "phone": "+86 025  2132 5191"
     },
     {
       "id": "yuhuata",
       "name": "雨花台",
-      "nameEn": "Yuhuata",
+      "nameEn": "Юйхуата",
       "category": "historical",
-      "description": "Memorial park and former execution site during Taiping Rebellion era, now a peaceful public park with solemn memorials.",
-      "address": "Yuhuata Road,，雨花台区",
+      "description": "Мемориальный парк и место казни времен восстания тайпинов, теперь это спокойный общественный парк с торжественными мемориалами.",
+      "address": "Улица Юйхуата, район Юйхуата",
       "coordinates": {
         "lat": 32.0022,
         "lng": 118.8572
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "1-2 часа",
       "highlights": [
-        "Memorial Hall",
-        "Stone sculptures",
-        "Water features",
-        "Forest atmosphere"
+        "Мемориальный зал",
+        "Каменные скульптуры",
+        "Водные элементы",
+        "Атмосфера леса"
       ],
-      "tips": "Arrive in morning for peaceful atmosphere. The memorial hall is very moving. Combine with nearby Nanjing South Station.",
+      "tips": "Приезжайте утром, чтобы насладиться спокойной атмосферой. Мемориальный зал очень трогательный. Совместите с посещением близлежащего Южного вокзала Нанкина.",
       "image": "/img/ext/c037209a6c80.webp",
       "phone": "+86 025  0047 6323"
     },
     {
       "id": "zhonghuamen",
       "name": "中华门城堡",
-      "nameEn": "Zhonghua Gate Castle",
+      "nameEn": "Замок Чжунхуа",
       "category": "historical",
-      "description": "Ming Dynasty city gate and fortifications, one of the best-preserved Chinese castle walls with unique brick structure.",
-      "address": "1 Zhonghua Road, Qinhuai District",
+      "description": "Ворота и укрепления эпохи династии Мин, одни из наиболее хорошо сохранившихся китайских крепостных стен с уникальной кирпичной структурой.",
+      "address": "1 Чжунхуа Лу, район Циньхуай",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.8272
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 часа",
       "highlights": [
-        "Giant gate complex",
+        "Гигантский комплекс ворот",
         "藏兵洞",
-        "City wall views",
-        "Military history"
+        "Виды на городскую стену",
+        "Военная история"
       ],
-      "tips": "Walk along the wall for panoramic views. The underground chambers are fascinating. Less crowded than other attractions.",
+      "tips": "Прогуляйтесь вдоль стены, чтобы насладиться панорамными видами. Подземные камеры вызывают восхищение. Менее многолюдно, чем в других достопримечательностях.",
       "image": "/img/ext/9f32b9507fe6.webp",
       "phone": "+86 025  9533 2520"
     },
     {
       "id": "linggu-temple",
       "name": "灵谷寺",
-      "nameEn": "Linggu Temple",
+      "nameEn": "Храм Лингу",
       "category": "cultural",
-      "description": "Ancient Buddhist temple in Purple Mountain area, famous for银杏树林 and the resonant Dagoba.",
-      "address": "Linggu Temple, Purple Mountain",
+      "description": "Древний буддийский храм в районе Лилового холма, известный своими лесами гинкго и резонирующей пагодой.",
+      "address": "Храм Лингу, Лиловый холм",
       "coordinates": {
         "lat": 32.0722,
         "lng": 118.8172
       },
       "openingHours": "06:30-18:00",
-      "ticketPrice": "35¥ (includes Linggu Temple and Music Square)",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "35¥ (включает вход в Лингу и Музыкальную площадь)",
+      "recommendedVisitTime": "1-2 часа",
       "highopts": [
         "银杏林",
         "Dagoba of Pilgrims",
         "Wuxing Bridge",
         "Bamboo forest"
       ],
-      "tips": "Best in autumn for golden ginkgo. The pagoda offers great views. Very peaceful in early morning.",
+      "tips": "Лучше всего посещать осенью, когда гинкго приобретают золотистый цвет. Пагода предлагает великолепные виды. Очень спокойно ранним утром.",
       "image": "/img/ext/6f510d67b9cb.webp",
       "phone": "+86 025  5582 1418"
     },
     {
       "id": "qinhuai-river",
       "name": "秦淮河",
-      "nameEn": "Qinhuai River",
+      "nameEn": "Река Циньхуай",
       "category": "natural",
-      "description": "Historic river flowing through Nanjing's old city, famous for its illuminated boat rides and Riverside views.",
-      "address": "Qinhuai River, Qinhuai District",
+      "description": "Историческая река, протекающая через старый город Нанкина, известная своими увеселительными прогулками на освещенных лодках и видами на речной берег.",
+      "address": "Река Циньхуай, район Циньхуай",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
-      "openingHours": "Boat rides 09:00-22:00",
-      "ticketPrice": "Free (boat ride 80-120¥)",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "Прогулки на лодках 09:00-22:00",
+      "ticketPrice": "Бесплатно (прогулка на лодке 80-120¥)",
+      "recommendedVisitTime": "1-2 часа",
       "highlights": [
-        "Night boat ride",
-        "Illuminated banks",
-        "Ancient architecture",
-        "Street food"
+        "Прогулка на ночном корабле",
+        "Подсвеченные берега",
+        "Древняя архитектура",
+        "Уличная еда"
       ],
-      "tips": "Take evening boat for best views. Combine with Fuzi Temple and Laochengli. The riverbank is great for walking.",
+      "tips": "Лучше всего посещать вечером для лучших видов. Совместите с храмом Фуцзы и Лаочэнли. Берег реки отлично подходит для прогулок.",
       "image": "/img/ext/b557760624b0.webp",
       "phone": "+86 025  6576 7199"
     },
     {
       "id": "purple-mountain-observatory",
       "name": "紫金山天文台",
-      "nameEn": "Purple Mountain Observatory",
+      "nameEn": "Обсерватория на Пурпурной горе",
       "category": "cultural",
-      "description": "Historic astronomical observatory on Purple Mountain, home to ancient telescopes and stellar artifacts.",
-      "address": "Purple Mountain, Xuanwu District",
+      "description": "Историческая астрономическая обсерватория на Пурпурной горе, где находятся древние телескопы и звездные артефакты.",
+      "address": "Пурпурная гора, район Сюаньву",
       "coordinates": {
         "lat": 32.0922,
         "lng": 118.8372
       },
       "openingHours": "8:30-16:30",
       "ticketPrice": "15¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 часа",
       "highlights": [
-        "Ancient telescopes",
-        "Star observatory",
-        "Mountain views",
-        "Space artifacts"
+        "Древние телескопы",
+        "Звездная обсерватория",
+        "Виды на горы",
+        "Космические артефакты"
       ],
-      "tips": "Combine with Purple Mountain hike. Take cable car to save energy. Clear nights best for stargazing.",
+      "tips": "Совместите с прогулкой по Пурпурной горе. Используйте канатную дорогу, чтобы сэкономить энергию. Ясные ночи лучше всего подходят для наблюдения за звездами.",
       "image": "/img/ext/1b3a09b8ec59.webp",
       "phone": "+86 025  9171 9081"
     },
     {
       "id": "meihua-mountain",
       "name": "梅花山",
-      "nameEn": "Meihua Mountain (Plum Blossom Mountain)",
+      "nameEn": "Гора Мэйхуа (Гора Цветущей Сливы)",
       "category": "natural",
-      "description": "Famous for thousands of plum blossom trees, offering stunning pink and white blooms in winter and early spring.",
-      "address": "Ming Xiaoling Tomb, Purple Mountain",
+      "description": "Известна тысячами деревьев цветущей сливы, предлагая потрясающие розовые и белые цветы зимой и ранней весной.",
+      "address": "Мавзолей Мин Сяолин, Пурпурная гора",
       "coordinates": {
         "lat": 32.0722,
         "lng": 118.8472
       },
       "openingHours": "06:30-18:30",
-      "ticketPrice": "Included in Ming Xiaoling ticket (70¥)",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "Включено в билет на Мавзолей Мин Сяолин (70¥)",
+      "recommendedVisitTime": "1 час",
       "highlights": [
-        "Plum blossoms",
-        "Mountain views",
-        "Photography",
-        "Winter scenery"
+        "Цветущая слива",
+        "Виды на горы",
+        "Фотография",
+        "Зимний пейзаж"
       ],
-      "tips": "Visit during plum blossom season (February-March). The fragrance is amazing. Less crowded on weekdays.",
+      "tips": "Посетите в сезон цветения сливы (февраль-март). Аромат изумительный. В будние дни меньше людей.",
       "image": "/img/ext/48b1d43ad8b8.webp",
       "phone": "+86 025  3155 0515"
     },
     {
       "id": "xiaoling-winter",
       "name": "石象路",
-      "nameEn": "Stone Elephant Road",
+      "nameEn": "Каменная слоновая дорога",
       "category": "historical",
-      "description": "The iconic 600-meter avenue lined with massive stone animals leading to Ming Xiaoling Tomb.",
-      "address": "Ming Xiaoling, Purple Mountain",
+      "description": "Знаменитая 600-метровая аллея, обсаженная массивными каменными животными, ведущая к Минской усыпальнице Сяолин.",
+      "address": "Мин Сяолин, Пурпурная Гора",
       "coordinates": {
         "lat": 32.0722,
         "lng": 118.8472
       },
       "openingHours": "06:30-18:30",
-      "ticketPrice": "Included in Ming Xiaoling ticket (70¥)",
-      "recommendedVisitTime": "30 min - 1 hour",
+      "ticketPrice": "Включено в билет на Мавзолей Мин Сяолин (70¥)",
+      "recommendedVisitTime": "30 мин - 1 час",
       "highlights": [
-        "Stone animals",
-        "Autumn foliage",
-        "Photography",
-        "Imperial avenue"
+        "Каменные животные",
+        "Осенняя листва",
+        "Фотография",
+        "Императорская аллея"
       ],
-      "tips": "Visit at sunrise for magical light. Autumn for golden gingko. The most photographed spot in Nanjing.",
+      "tips": "Посетите на рассвете, чтобы увидеть волшебный свет. Осенью здесь можно увидеть золотые гинкго. Самое фотографируемое место в Нанкине.",
       "image": "/img/ext/ec6bda6c85d6.webp",
       "phone": "+86 025  7811 0943"
     },
     {
       "id": "chaotiangong",
       "name": "朝天宫",
-      "nameEn": "Chaotiangong Palace",
+      "nameEn": "Дворец Чаотянгун",
       "category": "historical",
-      "description": "Ming Dynasty imperial palace for worshiping ancestors, now a museum showcasing ancient architecture.",
-      "address": "171 Bai Xia Road,秦淮区",
+      "description": "Императорский дворец династии Мин для поклонения предкам, теперь музей, демонстрирующий древнюю архитектуру.",
+      "address": "171 Бай Ся Лу, район Циньхуай",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.8072
       },
       "openingHours": "09:00-17:00",
       "ticketPrice": "25¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1 час",
       "highlights": [
-        "Ming architecture",
-        "Exhibitions",
-        "Courtyards",
-        "Cultural artifacts"
+        "Архитектура династии Мин",
+        "Выставки",
+        "Дворы",
+        "Культурные артефакты"
       ],
-      "tips": "Good for understanding Ming ritual culture. The architecture is impressive. Combine with nearby Fuzi Temple.",
+      "tips": "Хорошо для понимания культуры ритуалов династии Мин. Архитектура впечатляет. Совмещайте с посещением близлежащего храма Фуцзы.",
       "image": "/img/ext/0075f0e909c2.webp",
       "phone": "+86 025  6239 0484"
     },
     {
       "id": "zjnu",
       "name": "南京大学",
-      "nameEn": "Nanjing University",
+      "nameEn": "Нанкинский университет",
       "category": "cultural",
-      "description": "Prestigious historic university with beautiful Qing Dynasty architecture and tree-lined campus.",
-      "address": "22 Han Kou Road, Gulou District",
+      "description": "Престижный исторический университет с красивой архитектурой эпохи династии Цин и парковой территорией, обсаженной деревьями.",
+      "address": "22 Ханькоу-роуд, район Гулоу",
       "coordinates": {
         "lat": 32.0522,
         "lng": 118.7672
       },
-      "openingHours": "Open to public",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "Открыто для публики",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "1-2 часа",
       "highlights": [
-        "Historic buildings",
-        "Coral tree",
-        "Pattinson Hall",
-        "Campus gardens"
+        "Исторические здания",
+        "Коралловое дерево",
+        "Зал Паттинсона",
+        "Университетские сады"
       ],
-      "tips": "Visit in spring for coral trees. The main building is beautiful. Great for architecture enthusiasts.",
+      "tips": "Посетите весной, чтобы увидеть коралловые деревья. Главное здание прекрасно. Отличное место для любителей архитектуры.",
       "image": "/img/ext/4733ff48dc8a.webp",
       "phone": "+86 025  7752 0644"
     },
     {
       "id": "yongle-temple",
       "name": "大报恩寺",
-      "nameEn": "Dabaoen Temple (Yongle Temple)",
+      "nameEn": "Храм Дабаоэнь (Храм Юнлэ)",
       "category": "historical",
-      "description": "Rebuilt on site of historic Ming Dynasty temple, known for its modern glass exhibitions and tall pagoda.",
-      "address": "1 Baocheng Road, Qinhuai District",
+      "description": "Отреставрирован на месте исторического храма династии Мин, известен своими современными стеклянными выставками и высокой пагодой.",
+      "address": "1 дорога Баочэн, район Циньхуай",
       "coordinates": {
         "lat": 32.0322,
         "lng": 118.8072
       },
       "openingHours": "09:00-17:30",
       "ticketPrice": "80¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Glass walkway",
-        "Ancient ruins",
-        "Modern art",
-        "Pagoda views"
+        "Стеклянная дорожка",
+        "Древние руины",
+        "Современное искусство",
+        "Виды на пагоду"
       ],
-      "tips": "Modern temple with interesting exhibitions. The glass walkway is impressive. Arrive early to avoid crowds.",
+      "tips": "Современный храм с интересными выставками. Стеклянная дорожка впечатляет. Приезжайте пораньше, чтобы избежать толпы.",
       "image": "/img/ext/996418ec9603.webp",
       "phone": "+86 025  6987 7624"
     },
     {
       "id": "xjpm",
       "name": "玄武湖公园",
-      "nameEn": "Xuanwu Lake Park",
+      "nameEn": "Парк озера Сюаньу",
       "category": "natural",
-      "description": "Large urban lake park with five islands, cycling paths, cherry blossoms, and ancient city wall views.",
-      "address": "Xuanwu Lake, Xuanwu District",
+      "description": "Большой городской парк с озером, пятью островами, велосипедными дорожками, сакурой и видами на древнюю городскую стену.",
+      "address": "Озеро Сюаньву, район Сюаньву",
       "coordinates": {
         "lat": 32.0822,
         "lng": 118.7772
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "Открыто круглосуточно",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Five islands",
-        "Cycling path",
-        "Cherry blossoms",
-        "Sunset views"
+        "Пять островов",
+        "Велосипедная дорожка",
+        "Цветение сакуры",
+        "Виды на закат"
       ],
-      "tips": "Rent bikes (15¥/hour) to tour the lake. Best at sunset. The cherry blossoms in March are spectacular.",
+      "tips": "Арендуйте велосипеды (15¥/час), чтобы объехать озеро. Лучше всего посещать на закате. Сакура в марте просто великолепна.",
       "image": "/img/ext/7504bb87ad9c.webp",
       "phone": "+86 025  6453 4549"
     },
     {
       "id": "taocheng",
       "name": "桃叶渡",
-      "nameEn": "Taoye Ferry",
+      "nameEn": "Паром Тао Е",
       "category": "cultural",
-      "description": "Historic riverside spot famous in classical poetry, now a charming area with traditional shops.",
-      "address": "Qinhuai River, near Fuzi Temple",
+      "description": "Историческое место на берегу реки, известное в классической поэзии, теперь это очаровательный район с традиционными магазинами.",
+      "address": "Река Циньхуай, рядом с храмом Фуцзы",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "30 min - 1 hour",
+      "openingHours": "Открыто круглосуточно",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "30 мин - 1 час",
       "highlights": [
-        "Classical poetry",
-        "Riverside views",
-        "Traditional shops",
-        "Romantic atmosphere"
+        "Классическая поэзия",
+        "Виды на реку",
+        "Традиционные магазины",
+        "Романтическая атмосфера"
       ],
-      "tips": "Best at night with lights. Named after poet's love story. Great for photos. Combine with boat ride.",
+      "tips": "Лучше всего посещать вечером при освещении. Названо в честь любовной истории поэта. Отличное место для фотографий. Совместите с прогулкой на лодке.",
       "image": "/img/ext/309f30e43563.webp",
       "phone": "+86 025  7326 4220"
     },
     {
       "id": "nanjing-21",
       "name": "鸡鸣寺",
-      "nameEn": "Jiming Temple",
+      "nameEn": "Храм Цзимин",
       "category": "cultural",
-      "description": "Ancient Buddhist temple on Purple Mountain, known for its beautiful plum blossoms in winter and peaceful atmosphere.",
-      "address": "1 Jiming Temple Road, Xuanwu District",
+      "description": "Древний буддийский храм на горе Цзыцзиньшань, известный своими прекрасными цветками сливы зимой и спокойной атмосферой.",
+      "address": "Улица Цзимин, 1, район Сюаньу",
       "coordinates": {
         "lat": 32.0622,
         "lng": 118.7872
       },
       "openingHours": "07:00-17:00",
       "ticketPrice": "10¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 часа",
       "highlights": [
-        "Plum blossom garden",
-        "Thousand Buddha Hall",
-        "City wall views",
-        "Bamboo forest"
+        "Сад с цветущей сливой",
+        "Зал Тысячи Будд",
+        "Виды на городскую стену",
+        "Бамбуковый лес"
       ],
-      "tips": "Best in February for plum blossoms. Combine with Purple Mountain walk. The vegetarian noodles nearby are famous.",
+      "tips": "Лучше всего посещать в феврале для цветения сливы. Совместите с прогулкой по горе Цзыцзиньшань. Вегетарианские лапша поблизости знамениты.",
       "image": "/img/ext/114a5c92c35d.webp",
       "phone": "+86 025  3089 0965"
     },
     {
       "id": "nanjing-22",
       "name": "阅江楼",
-      "nameEn": "Yuejiang Tower",
+      "nameEn": "Башня Юэцзян",
       "category": "cultural",
-      "description": "Historic tower on Lion Hill offering panoramic views of the Yangtze River and Nanjing skyline.",
-      "address": "Lion Hill, Huaihai Road, Xiaguan District",
+      "description": "Историческая башня на Львиной горе, предлагающая панорамные виды на реку Янцзы и панораму Нанкина.",
+      "address": "Львиная гора, Хуайхай-роуд, район Сигуань",
       "coordinates": {
         "lat": 32.1022,
         "lng": 118.7372
       },
       "openingHours": "08:00-17:30",
       "ticketPrice": "40¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 часа",
       "highlights": [
-        "Yangtze River views",
-        "Jingting observation deck",
-        "Ming dynasty architecture",
-        "Historical documents"
+        "Виды на реку Янцзы",
+        "Смотровая площадка Цзинтин",
+        "Архитектура эпохи династии Мин",
+        "Исторические документы"
       ],
-      "tips": "Best at sunset for river views. Combined ticket available with Zhonghua Gate. Take photos at the Lion Head.",
+      "tips": "Лучше всего посещать на закате для видов на реку. Комбинированный билет доступен с воротами Чжунхуа. Делайте фотографии у Львиной головы.",
       "image": "/img/ext/c74d7faf7bb9.webp",
       "phone": "+86 025  2805 5772"
     },
     {
       "id": "nanjing-23",
       "name": "珍珠泉",
-      "nameEn": "Pearl Spring",
+      "nameEn": "Жемчужный источник",
       "category": "natural",
-      "description": "Beautiful spring area with natural hot springs, ideal for family outings with playground and amusement rides.",
-      "address": "1 Peiliao Road, Pukou District",
+      "description": "Красивый весенний район с природными горячими источниками, идеальное место для семейного отдыха с детской площадкой и аттракционами.",
+      "address": "1 улица Пэйляо, район Пукоу",
       "coordinates": {
         "lat": 32.1422,
         "lng": 118.7072
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "40¥ (attractions extra)",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "40¥ (аттракционы за дополнительную плату)",
+      "recommendedVisitTime": "3-4 часа",
       "highlights": [
-        "Natural spring",
-        "Hot spring resort",
-        "Wild animal show",
-        "Family activities"
+        "Природный источник",
+        "Курорт с горячими источниками",
+        "Шоу с дикими животными",
+        "Семейные развлечения"
       ],
-      "tips": "Great for families. Come early for animal shows. The hot spring is excellent in winter. Combine with Pukou scenic area.",
+      "tips": "Отличное место для семей. Приходите пораньше на представления с животными. Горячий источник великолепен зимой. Совместите с посещением живописного района Пукоу.",
       "image": "/img/ext/2d161606e770.webp",
       "phone": "+86 025  5235 2514"
     },
     {
       "id": "nanjing-24",
       "name": "牛首山文化旅游区",
-      "nameEn": "Niushou Mountain Cultural Tourism Zone",
+      "nameEn": "Культурно-туристическая зона горы Нюшань",
       "category": "cultural",
-      "description": "Modern Buddhist cultural park featuring the stunning Palace of Bliss temple built into a former mining pit.",
-      "address": "Niushou Mountain, Yuhuatai District",
+      "description": "Современный буддийский культурный парк с потрясающим храмом Дворца Блаженства, построенным на месте бывшего карьера.",
+      "address": "Гора Нюшоу, район Юхуатай",
       "coordinates": {
         "lat": 31.9422,
         "lng": 118.8072
       },
       "openingHours": "09:00-17:30",
       "ticketPrice": "98¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4 часа",
       "highlights": [
-        "Palace of Bliss",
-        "Mountain top temple",
-        "Underground palace",
-        "Buddhist art"
+        "Дворец Блаженства",
+        "Храм на вершине горы",
+        "Подземный дворец",
+        "Буддийское искусство"
       ],
-      "tips": "One of Nanjing's newest attractions. The underground palace is spectacular. Book tickets online. Arrive early for fewer crowds.",
+      "tips": "Одна из новейших достопримечательностей Нанкина. Подземный дворец великолепен. Билеты лучше бронировать онлайн. Приходите пораньше, чтобы избежать толп.",
       "image": "/img/ext/bf99cae8fce5.webp",
       "phone": "+86 025  9655 1896"
     },
     {
       "id": "nanjing-25",
       "name": "中山植物园",
-      "nameEn": "Zhongshan Botanical Garden",
+      "nameEn": "Ботанический сад Чжуншань",
       "category": "natural",
-      "description": "Historic botanical garden at the foot of Purple Mountain, featuring diverse plant collections and peaceful walking paths.",
-      "address": "Ling Road, Xuanwu District",
+      "description": "Исторический ботанический сад у подножия горы Пурпурной, с разнообразными коллекциями растений и живописными пешеходными дорожками.",
+      "address": "Дорога Лин, район Сюаньу",
       "coordinates": {
         "lat": 32.0522,
         "lng": 118.8372
       },
       "openingHours": "08:30-17:00",
-      "ticketPrice": "45¥ (partial), 65¥ (full)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "45¥ (частичный), 65¥ (полный)",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Plant collections",
-        "Cherry blossom avenue",
-        "Greenhouse",
-        "Nature trails"
+        "Коллекции растений",
+        "Аллея сакуры",
+        "Оранжерея",
+        "Природные тропы"
       ],
-      "tips": "Best in spring for cherry blossoms and autumn for foliage. The azalea garden is stunning in April. Great for nature photography.",
+      "tips": "Лучшее время - весна для цветения сакуры и осень для листвы. Рододендроны великолепны в апреле. Отлично подходит для фотосъемки природы.",
       "image": "/img/ext/533e4da8695b.webp",
       "phone": "+86 025  7063 3121"
     },
     {
       "id": "nanjing-26",
       "name": "燕雀湖",
-      "nameEn": "Yanqe Lake",
+      "nameEn": "Озеро Яньце",
       "category": "natural",
-      "description": "Picturesque lake near Ming Xiaoling famous for its lotus flowers and reflection views of Purple Mountain.",
-      "address": "Ming Xiaoling, Purple Mountain",
+      "description": "Живописное озеро недалеко от могилы Мин Сяолин, известное своими цветами лотоса и видами на гору Пурпурную.",
+      "address": "Мин Сяолин, Пурпурная Гора",
       "coordinates": {
         "lat": 32.0622,
         "lng": 118.8472
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "30 min - 1 hour",
+      "openingHours": "Открыто круглосуточно",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "30 мин - 1 час",
       "highlights": [
-        "Lotus flowers",
-        "Mountain reflection",
-        "Photography spot",
-        "Peaceful atmosphere"
+        "Цветы лотоса",
+        "Отражение горы",
+        "Место для фото",
+        "Спокойная атмосфера"
       ],
-      "tips": "Best in summer for lotus. The reflection of Purple Mountain is famous. Combine with Ming Xiaoling visit. Morning light is magical.",
+      "tips": "Лучше всего летом для лотоса. Отражение Пурпурной горы знаменито. Посетите вместе с гробницами династии Мин. Утренний свет волшебен.",
       "image": "/img/ext/f40cca09aac0.webp",
       "phone": "+86 025  5411 2435"
     },
     {
       "id": "sun-yat-sen",
       "name": "中山陵",
-      "nameEn": "Sun Yat-sen Mausoleum",
+      "nameEn": "Мавзолей Сунь Ят-сена",
       "category": "landmark",
       "description": "孙中山先生的陵墓，有392级台阶。",
       "address": "南京市玄武区",
@@ -682,7 +682,7 @@
     {
       "id": "confucius-temple",
       "name": "夫子庙",
-      "nameEn": "Confucius Temple",
+      "nameEn": "Храм Конфуция",
       "category": "street",
       "description": "南京最著名的文化街区，有秦淮河和各种小吃。",
       "address": "南京市秦淮区",
@@ -705,7 +705,7 @@
     {
       "id": "nanjing-museum",
       "name": "南京博物院",
-      "nameEn": "Nanjing Museum",
+      "nameEn": "Нанкинский музей",
       "category": "museum",
       "description": "中国三大博物馆之一，馆藏文物42万件。",
       "address": "南京市玄武区",
@@ -714,20 +714,20 @@
         "lng": 118.82
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "Бесплатно",
+      "ticketPrice": "免费",
       "recommendedVisitTime": "2-3小时",
       "highlights": [
         "文物",
         "历史"
       ],
-      "tips": "Узнайте больше о культуре Нанкина.",
+      "tips": "了解南京文化。",
       "image": "/img/ext/d14fc46ea4eb.webp",
       "phone": "+86 25 8480 2119"
     },
     {
       "id": "nanjing-food",
       "name": "南京美食",
-      "nameEn": "Nanjing Food",
+      "nameEn": "Кухня Нанкина",
       "category": "street",
       "description": "南京有鸭血粉丝汤和各种小吃。",
       "address": "南京市",
@@ -749,10 +749,10 @@
     {
       "id": "nanjing-night",
       "name": "南京夜景",
-      "nameEn": "Nanjing Night View",
+      "nameEn": "Нанкин ночью",
       "category": "landmark",
-      "description": "Шоу световых инсталляций на реке Циньхуай и в районе храма Фуцзымяо.",
-      "address": "Район Циньхуай, город Нанкин",
+      "description": "秦淮河和夫子庙的夜景灯光秀。",
+      "address": "南京市秦淮区",
       "coordinates": {
         "lat": 32.02,
         "lng": 118.78
@@ -761,8 +761,8 @@
       "ticketPrice": "免费",
       "recommendedVisitTime": "1小时",
       "highlights": [
-        "Световое шоу",
-        "Ночной вид"
+        "灯光秀",
+        "夜景"
       ],
       "tips": "夏季夜间最美。",
       "image": "/img/ext/5f712fd43b4f.webp",
@@ -771,7 +771,7 @@
     {
       "id": "nanjing-wall",
       "name": "南京城墙",
-      "nameEn": "Nanjing City Wall",
+      "nameEn": "Городская стена Нанкина",
       "category": "landmark",
       "description": "中国保存最完好的古城墙之一。",
       "address": "南京市",
@@ -793,7 +793,7 @@
     {
       "id": "nanjing-temple",
       "name": "灵谷寺",
-      "nameEn": "Linggu Temple",
+      "nameEn": "Храм Лингу",
       "category": "temple",
       "description": "南京最古老的佛教寺院之一。",
       "address": "南京市玄武区",
@@ -815,7 +815,7 @@
     {
       "id": "nanjing-park",
       "name": "莫愁湖公园",
-      "nameEn": "Mochou Lake Park",
+      "nameEn": "Парк у озера Мочоу",
       "category": "park",
       "description": "南京最美的公园之一，有莫愁湖。",
       "address": "南京市建邺区",
@@ -837,7 +837,7 @@
     {
       "id": "nanjing-bridge",
       "name": "南京长江大桥",
-      "nameEn": "Nanjing Yangtze River Bridge",
+      "nameEn": "Мост Нанкин через реку Янцзы",
       "category": "landmark",
       "description": "中国自行设计建造的第一座长江大桥。",
       "address": "南京市",
@@ -859,7 +859,7 @@
     {
       "id": "nanjing-street",
       "name": "老门东",
-      "nameEn": "Laomengdong",
+      "nameEn": "Лаомэндун",
       "category": "street",
       "description": "南京新开发的历史文化街区。",
       "address": "南京市秦淮区",
@@ -869,43 +869,43 @@
       },
       "openingHours": "全天",
       "ticketPrice": "免费",
-      "recommendedVisitTime": "1,5 часа",
+      "recommendedVisitTime": "1.5小时",
       "highlights": [
-        "Исторический район",
-        "Уличная еда"
+        "历史街区",
+        "小吃"
       ],
-      "tips": "Узнайте культуру Нанкина.",
+      "tips": "了解南京文化。",
       "image": "/img/ext/0de1ce3b6ea8.webp",
       "phone": "+86 025  4042 8631"
     },
     {
       "id": "nanjing-mountain",
       "name": "紫金山",
-      "nameEn": "Purple Mountain",
+      "nameEn": "Пурпурная гора",
       "category": "nature",
-      "description": "Самая известная гора Нанкина с мавзолеем Сунь Ятсена и минским мавзолеем.",
-      "address": "Район Сюаньву, Нанкин",
+      "description": "南京最著名的山，有中山陵和明孝陵。",
+      "address": "南京市玄武区",
       "coordinates": {
         "lat": 32.05,
         "lng": 118.85
       },
-      "openingHours": "Круглосуточно",
-      "ticketPrice": "Бесплатно",
-      "recommendedVisitTime": "Полдня",
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
       "highlights": [
-        "Мавзолей Сунь Ятсена",
-        "Минский мавзолей"
+        "中山陵",
+        "明孝陵"
       ],
-      "tips": "Поднимитесь на гору, чтобы насладиться видами.",
+      "tips": "登高望远。",
       "image": "/img/ext/f237a626b719.webp",
       "phone": "+86 025  6506 0248"
     },
     {
       "id": "nanjing-temple2",
       "name": "栖霞寺",
-      "nameEn": "Qixia Temple",
+      "nameEn": "Храм Цися",
       "category": "temple",
-      "description": "Древнейший буддийский монастырь Нанкина с пагодой Шари.",
+      "description": "南京最古老的佛教寺院，有舍利塔。",
       "address": "南京市栖霞区",
       "coordinates": {
         "lat": 32.15,
@@ -913,75 +913,75 @@
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "25元",
-      "recommendedVisitTime": "1.5 часа",
+      "recommendedVisitTime": "1.5小时",
       "highlights": [
-        "Пагода Шари",
-        "Буддийская культура"
+        "舍利塔",
+        "佛教文化"
       ],
-      "tips": "Осенью листья становятся красными и особенно красивы.",
+      "tips": "秋季红叶最美。",
       "image": "/img/ext/5970ef10e804.webp",
       "phone": "+86 025  9010 0102"
     },
     {
       "id": "nanjing-lake",
       "name": "百家湖",
-      "nameEn": "Baijia Lake",
+      "nameEn": "Озеро Байцзя",
       "category": "nature",
-      "description": "Искусственное озеро в районе Цзяннин.",
+      "description": "江宁区的人工湖。",
       "address": "南京市江宁区",
       "coordinates": {
         "lat": 31.95,
         "lng": 118.83
       },
-      "openingHours": "Круглосуточно",
-      "ticketPrice": "Бесплатно",
-      "recommendedVisitTime": "1 час",
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
       "highlights": [
-        "Озеро"
+        "湖泊"
       ],
-      "tips": "Отличное место для отдыха.",
+      "tips": "休闲好去处。",
       "image": "/img/ext/c09fcbe63c84.webp",
       "phone": "+86 025  2246 3728"
     },
     {
       "id": "nanjing-university",
       "name": "南京大学",
-      "nameEn": "Nanjing University",
+      "nameEn": "Нанкинский университет",
       "category": "landmark",
-      "description": "Один из самых известных высших учебных заведений Китая.",
-      "address": "Район Гулоу, Нанкин",
+      "description": "中国最著名的高等学府之一。",
+      "address": "南京市鼓楼区",
       "coordinates": {
         "lat": 32.05,
         "lng": 118.78
       },
-      "openingHours": "Круглосуточно",
-      "ticketPrice": "Бесплатно",
-      "recommendedVisitTime": "1 час",
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
       "highlights": [
-        "Живописный кампус"
+        "校园风光"
       ],
-      "tips": "Узнайте об образовании в Нанкине.",
+      "tips": "了解南京教育。",
       "image": "/img/ext/ad6ba92d18a2.webp",
       "phone": "+86 025  9147 4909"
     },
     {
       "id": "nanjing-street2",
       "name": "颐和路",
-      "nameEn": "Yihe Road",
+      "nameEn": "Дорога Ихэ",
       "category": "street",
-      "description": "Одна из самых красивых улиц Нанкина с большим количеством зданий эпохи Китайской Республики.",
-      "address": "Район Гулоу, Нанкин",
+      "description": "南京最美的街道之一，有大量民国建筑。",
+      "address": "南京市鼓楼区",
       "coordinates": {
         "lat": 32.05,
         "lng": 118.78
       },
-      "openingHours": "Круглосуточно",
-      "ticketPrice": "Бесплатно",
-      "recommendedVisitTime": "1 час",
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
       "highlights": [
         "民国建筑"
       ],
-      "tips": "Узнайте историю эпохи Китайской Республики.",
+      "tips": "了解民国历史。",
       "image": "/img/ext/d0f816918f00.webp",
       "phone": "+86 025  7481 9175"
     },
@@ -990,26 +990,26 @@
       "name": "南京科技馆",
       "nameEn": "Научный музей Нанкина",
       "category": "museum",
-      "description": "Музей, демонстрирующий знания в области технологий.",
-      "address": "Цзянье-дистрикт, город Нанкин",
+      "description": "展示科技知识的博物馆。",
+      "address": "南京市建邺区",
       "coordinates": {
         "lat": 32.02,
         "lng": 118.75
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "Бесплатно",
-      "recommendedVisitTime": "1,5 часа",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
       "highlights": [
-        "Технологическая выставка"
+        "科技展览"
       ],
-      "tips": "Идеально для семейного отдыха с детьми.",
+      "tips": "适合亲子游。",
       "image": "/img/ext/e7d8c6cced83.webp",
       "phone": "+86 025  0102 9199"
     },
     {
       "id": "nanjing-park2",
       "name": "雨花台",
-      "nameEn": "Yuhuatai",
+      "nameEn": "Юйхуатай",
       "category": "landmark",
       "description": "纪念革命先烈的纪念地。",
       "address": "南京市雨花台区",
@@ -1030,7 +1030,7 @@
     {
       "id": "nanjing-food2",
       "name": "南京大排档",
-      "nameEn": "Nanjing Dapaidang",
+      "nameEn": "Нанкин Да Пайдан",
       "category": "street",
       "description": "南京最有名的餐厅，有各种南京传统菜。",
       "address": "南京市",
@@ -1052,7 +1052,7 @@
     {
       "id": "nanjing-temple3",
       "name": "鸡鸣寺",
-      "nameEn": "Jiming Temple",
+      "nameEn": "Храм Цзимин",
       "category": "temple",
       "description": "南京最古老的佛教寺院，有1700多年历史。",
       "address": "南京市玄武区",
@@ -1074,7 +1074,7 @@
     {
       "id": "nanjing-lake2",
       "name": "前湖",
-      "nameEn": "Qianhu Lake",
+      "nameEn": "Озеро Цяньху",
       "category": "nature",
       "description": "玄武湖的一部分。",
       "address": "南京市玄武区",
@@ -1095,7 +1095,7 @@
     {
       "id": "nj-park3",
       "name": "玄武湖公园",
-      "nameEn": "Xuanwu Lake Park",
+      "nameEn": "Парк озера Сюаньу",
       "category": "park",
       "description": "南京最大的城市公园。",
       "address": "南京市玄武区",
@@ -1117,7 +1117,7 @@
     {
       "id": "nj-street3",
       "name": "新街口",
-      "nameEn": "Xinjiekou",
+      "nameEn": "Синьцзекоу",
       "category": "street",
       "description": "南京最繁华的商业中心。",
       "address": "南京市鼓楼区",
@@ -1139,7 +1139,7 @@
     {
       "id": "nj-temple4",
       "name": "牛首山",
-      "nameEn": "Niushou Mountain",
+      "nameEn": "Гора Нюшоу",
       "category": "nature",
       "description": "南京南部的山，有佛顶宫。",
       "address": "南京市江宁区",
@@ -1161,7 +1161,7 @@
     {
       "id": "nj-lake3",
       "name": "紫霞湖",
-      "nameEn": "Zixia Lake",
+      "nameEn": "Озеро Цзыся",
       "category": "nature",
       "description": "紫金山中的湖泊。",
       "address": "南京市玄武区",
@@ -1185,30 +1185,30 @@
     {
       "id": "nanjing-1",
       "name": "南京大牌档",
-      "nameEn": "Nanjing Da Pai Dang",
-      "type": "local",
-      "cuisine": "Nanjing",
+      "nameEn": "Нанкин Да Пайдан",
+      "type": "местный",
+      "cuisine": "Нанкинская кухня",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Multiple locations including Xuanwu and Fuzi Temple",
+      "address": "Несколько локаций, включая районы Сюаньву и Храм Фуцзы",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7972
       },
       "phone": "+86 25 5226 8888",
       "hours": "11:00-22:00",
-      "description": "Popular chain serving authentic Nanjing and Jiangsu cuisine in traditional atmosphere.",
+      "description": "Популярная сеть ресторанов, предлагающая аутентичную кухню Нанкина и Цзянсу в традиционной атмосфере.",
       "dishHighlights": [
-        "Duck blood soup",
-        "Salt Duck",
-        "Steamed dumplings",
-        "Qinhuai snacks"
+        "Суп из утиной крови",
+        "Солёная утка",
+        "Пельмени на пару",
+        "Циньхуайские закуски"
       ],
       "tags": [
-        "local",
-        "nanjing-cuisine",
-        "traditional",
-        "chain"
+        "местная кухня",
+        "кухня Нанкина",
+        "традиционная",
+        "сеть"
       ],
       "star": 0,
       "diamond": 0,
@@ -1217,29 +1217,29 @@
     {
       "id": "nanjing-2",
       "name": "狮子桥",
-      "nameEn": "Shizi Qiao",
-      "type": "blackpearl",
+      "nameEn": "Шицзы Цяо",
+      "type": "черная жемчужина",
       "diamond": 1,
-      "cuisine": "Jiangsu",
+      "cuisine": "Цзянсу",
       "avgPrice": 150,
       "rating": 4.5,
-      "address": "73 Guangdong Road, Gulou District",
+      "address": "73 Гуандун Роуд, район Гулоу",
       "coordinates": {
         "lat": 32.0422,
         "lng": 118.7772
       },
       "phone": "+86 25 8330 0888",
       "hours": "10:30-21:30",
-      "description": "One-diamond Black Pearl restaurant known for refined Jiangsu cuisine and elegant dining.",
+      "description": "Ресторан «Чёрная жемчужина» с одной звездой, известный утончённой кухней Цзянсу и элегантной обстановкой.",
       "dishHighlights": [
-        "Steamed mantou with crab roe",
-        "Braised pork belly",
-        "Sweet and sour mandarin fish"
+        "Парные манту с икрой краба",
+        "Тушёная свиная грудинка",
+        "Кисло-сладкий мандариновый рыб"
       ],
       "tags": [
-        "fine-dining",
-        "jiangsu-cuisine",
-        "elegant"
+        "изысканная кухня",
+        "кухня провинции Цзянсу",
+        "элегантная"
       ],
       "star": 0,
       "imageUrl": "/img/ext/2b02a2d279a0.webp"
@@ -1247,28 +1247,28 @@
     {
       "id": "nanjing-3",
       "name": "尹氏鸡汁汤包",
-      "nameEn": "Yin Shi Chicken Soup Dumplings",
-      "type": "local",
-      "cuisine": "Nanjing Snacks",
+      "nameEn": "Инь Ши цзяоцзы с куриным бульоном",
+      "type": "местный",
+      "cuisine": "Закуски Нанкина",
       "avgPrice": 40,
       "rating": 4.9,
-      "address": "28 Zhuangyuan Kitchen (near Fuzi Temple)",
+      "address": "28 Чжуанъюань Китчен (рядом с храмом Фузы)",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "07:00-19:00",
-      "description": "Legendary tiny soup dumplings in rich chicken broth, a Nanjing institution since 1920s.",
+      "description": "Легендарные маленькие паровые пельмени в насыщенном курином бульоне, гастрономическая достопримечательность Нанкина с 1920-х годов.",
       "dishHighlights": [
-        "Chicken soup dumplings",
-        "Duck blood soup",
-        "Fried rice noodles"
+        "Пельмени с куриным бульоном",
+        "Суп из утиной крови",
+        "Жареная рисовая лапша"
       ],
       "tags": [
-        "local",
-        "famous",
-        "snacks",
-        "must-try"
+        "местная кухня",
+        "известное",
+        "закуски",
+        "обязательно попробуйте"
       ],
       "star": 0,
       "diamond": 0,
@@ -1278,29 +1278,29 @@
     {
       "id": "nanjing-4",
       "name": "回味鸭血粉丝汤",
-      "nameEn": "Huiwei Duck Blood Noodle Soup",
-      "type": "local",
-      "cuisine": "Nanjing",
+      "nameEn": "Хуэйвэй лапша с утиной кровью",
+      "type": "местный",
+      "cuisine": "Нанкинская кухня",
       "avgPrice": 35,
       "rating": 4.7,
-      "address": "Multiple locations",
+      "address": "Несколько адресов",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7972
       },
       "hours": "06:00-22:00",
-      "description": "Popular chain famous for duck blood noodle soup, a quintessential Nanjing breakfast.",
+      "description": "Популярная сеть, известная лапшой с утиной кровью, классический завтрак в Нанкине.",
       "dishHighlights": [
-        "Duck blood soup",
-        "Duck liver",
-        "Tofu knots",
-        "Fried dough sticks"
+        "Суп из утиной крови",
+        "Утиная печень",
+        "Тофу узлы",
+        "Жареные палочки из теста"
       ],
       "tags": [
-        "local",
-        "nanjing-cuisine",
-        "breakfast",
-        "value"
+        "местная кухня",
+        "кухня Нанкина",
+        "завтрак",
+        "цена-качество"
       ],
       "star": 0,
       "diamond": 0,
@@ -1310,28 +1310,28 @@
     {
       "id": "nanjing-5",
       "name": "咸亨酒店",
-      "nameEn": "Xian Heng Hotel",
-      "type": "local",
-      "cuisine": "Shaoxing/Nanjing",
+      "nameEn": "Отель Сянь Хэн",
+      "type": "местный",
+      "cuisine": "Шаосин/Нанкин",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "Near Fuzi Temple",
+      "address": "Рядом с храмом Фузы",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "10:00-22:00",
-      "description": "Historic restaurant inspired by Lu Xun's famous work, serving Shaoxing wine and traditional dishes.",
+      "description": "Исторический ресторан, вдохновлённый знаменитым произведением Лу Сюня, подающий шаосинское вино и традиционные блюда.",
       "dishHighlights": [
-        "Drunken chicken",
-        "Braised pork belly",
-        "Stinky tofu"
+        "Пьяная курица",
+        "Тушёная свиная грудинка",
+        "Вонючий тофу"
       ],
       "tags": [
-        "historic",
-        "lu-xun",
-        "traditional",
-        "cultural"
+        "историческая",
+        "Лу Синь",
+        "традиционная",
+        "культурная"
       ],
       "star": 0,
       "diamond": 0,
@@ -1341,28 +1341,28 @@
     {
       "id": "nanjing-6",
       "name": "绿柳居",
-      "nameEn": "Lv Liu Ju",
-      "type": "local",
-      "cuisine": "Nanjing Vegetarian",
+      "nameEn": "Лю Лю Джу",
+      "type": "местный",
+      "cuisine": "Нанкинская вегетарианская кухня",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Near Fuzi Temple",
+      "address": "Рядом с храмом Фузы",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "07:00-20:00",
-      "description": "Famous vegetarian restaurant established 1912, known for meat substitutes and Buddhist cuisine.",
+      "description": "Знаменитый вегетарианский ресторан, основанный в 1912 году, известный заменителями мяса и буддийской кухней.",
       "dishHighlights": [
-        "Vegetarian duck",
-        "Buddhist vegetables",
-        "Rice rolls"
+        "Вегетарианская утка",
+        "Буддийские овощи",
+        "Рисовые рулетики"
       ],
       "tags": [
-        "local",
-        "vegetarian",
-        "historic",
-        "buddhist"
+        "местная кухня",
+        "вегетарианское",
+        "историческая",
+        "буддийский"
       ],
       "star": 0,
       "diamond": 0,
@@ -1372,28 +1372,28 @@
     {
       "id": "nanjing-7",
       "name": "小笼包店",
-      "nameEn": "Nanjing Soup Dumplings",
-      "type": "local",
-      "cuisine": "Nanjing Snacks",
+      "nameEn": "Нанкинские суповые пельмени",
+      "type": "местный",
+      "cuisine": "Закуски Нанкина",
       "avgPrice": 30,
       "rating": 4.6,
-      "address": "Various locations",
+      "address": "Различные места",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7872
       },
       "hours": "06:00-14:00",
-      "description": "Local breakfast spots serving Nanjing-style soup dumplings and congee.",
+      "description": "Местные места для завтрака, подающие нанкинские суповые пельмени и рисовую кашу.",
       "dishHighlights": [
-        "Soup dumplings",
-        "Congee",
-        "Fried dough sticks"
+        "Суповые пельмени",
+        "Рисовая каша",
+        "Жареные палочки из теста"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "budget",
-        "snacks"
+        "местная кухня",
+        "завтрак",
+        "бюджетный",
+        "закуски"
       ],
       "star": 0,
       "diamond": 0,
@@ -1403,30 +1403,30 @@
     {
       "id": "nanjing-8",
       "name": "秦淮人家",
-      "nameEn": "Qinhuai Renjia",
-      "type": "local",
-      "cuisine": "Nanjing",
+      "nameEn": "Циньхай Жэньцзя",
+      "type": "местный",
+      "cuisine": "Нанкинская кухня",
       "avgPrice": 120,
       "rating": 4.6,
-      "address": "Near Qinhuai River, Fuzi Temple",
+      "address": "Рядом с рекой Циньхай, храм Фуцзы",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "phone": "+86 25 5220 8888",
       "hours": "11:00-21:30",
-      "description": "Riverside restaurant serving quality Nanjing cuisine with evening boat ride option.",
+      "description": "Ресторан на берегу реки с качественной нанкинской кухней и возможностью вечерней прогулки на лодке.",
       "dishHighlights": [
-        "Nanjing salt duck",
-        "Steamed fish",
-        "Qinhuai snacks",
-        "River views"
+        "Нанкинская соленая утка",
+        "Паровая рыба",
+        "Циньхуайские закуски",
+        "Виды на реку"
       ],
       "tags": [
-        "local",
-        "scenic",
-        "nanjing-cuisine",
-        "romantic"
+        "местная кухня",
+        "живописная",
+        "кухня Нанкина",
+        "романтическая"
       ],
       "star": 0,
       "diamond": 0,
@@ -1435,28 +1435,28 @@
     {
       "id": "nanjing-9",
       "name": "韩复兴",
-      "nameEn": "Han Fu Xing",
-      "type": "local",
-      "cuisine": "Nanjing Salted Duck",
+      "nameEn": "Хань Фу Син",
+      "type": "местный",
+      "cuisine": "Нанкинская соленая утка",
       "avgPrice": 60,
       "rating": 4.7,
-      "address": "Multiple locations including Zhuangyuan Kitchen",
+      "address": "Несколько локаций, включая Кухню Чжуанъюань",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "08:00-20:00",
-      "description": "Famous for authentic Nanjing salted duck, a must-buy for visitors to take home.",
+      "description": "Знаменит аутентичной нанкинской соленой уткой — обязательная покупка для туристов, чтобы увезти домой.",
       "dishHighlights": [
-        "Nanjing salted duck",
-        "Duck wings",
-        "Duck neck"
+        "Нанкинская соленая утка",
+        "Утиные крылышки",
+        "Утиная шейка"
       ],
       "tags": [
-        "local",
-        "famous",
-        "souvenir",
-        "must-try"
+        "местная кухня",
+        "известное",
+        "сувениры",
+        "обязательно попробуйте"
       ],
       "star": 0,
       "diamond": 0,
@@ -1466,29 +1466,29 @@
     {
       "id": "nanjing-10",
       "name": "奇芳阁",
-      "nameEn": "Qi Fang Ge",
-      "type": "local",
-      "cuisine": "Nanjing Snacks",
+      "nameEn": "Ци Фан Гэ",
+      "type": "местный",
+      "cuisine": "Закуски Нанкина",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "Near Fuzi Temple",
+      "address": "Рядом с храмом Фузы",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "07:00-19:00",
-      "description": "Historic snack restaurant known for traditional Nanjing breakfast and local delicacies.",
+      "description": "Исторический ресторанчик, известный традиционными завтраками Нанкина и местными деликатесами.",
       "dishHighlights": [
-        "Duck blood soup",
-        "Fried dough sticks",
-        "Rice rolls",
-        "Congee"
+        "Суп из утиной крови",
+        "Жареные палочки из теста",
+        "Рисовые рулетики",
+        "Рисовая каша"
       ],
       "tags": [
-        "local",
-        "historic",
-        "breakfast",
-        "snacks"
+        "местная кухня",
+        "историческая",
+        "завтрак",
+        "закуски"
       ],
       "star": 0,
       "diamond": 0,
@@ -1498,28 +1498,28 @@
     {
       "id": "nanjing-11",
       "name": "永和园",
-      "nameEn": "Yong He Yuan",
-      "type": "local",
-      "cuisine": "Nanjing Snacks",
+      "nameEn": "Юн Хэ Юань",
+      "type": "местный",
+      "cuisine": "Закуски Нанкина",
       "avgPrice": 40,
       "rating": 4.6,
-      "address": "Near Fuzi Temple",
+      "address": "Рядом с храмом Фузы",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "06:30-19:00",
-      "description": "Long-standing snack shop famous for wontons and crab roe dumplings.",
+      "description": "Давний ресторанчик, знаменитый вонтонами и дампелями с икрой краба.",
       "dishHighlights": [
-        "Wontons",
-        "Crab roe dumplings",
-        "Noodles"
+        "пельмени вонтоны",
+        "Дампели с икрой краба",
+        "Лапша"
       ],
       "tags": [
-        "local",
-        "historic",
-        "breakfast",
-        "value"
+        "местная кухня",
+        "историческая",
+        "завтрак",
+        "цена-качество"
       ],
       "star": 0,
       "diamond": 0,
@@ -1529,28 +1529,28 @@
     {
       "id": "nanjing-12",
       "name": "六朝面馆",
-      "nameEn": "Liu Chao Noodles",
-      "type": "local",
-      "cuisine": "Nanjing Noodles",
+      "nameEn": "Лапша Лю Чао",
+      "type": "местный",
+      "cuisine": "Нанкинская лапша",
       "avgPrice": 35,
       "rating": 4.5,
-      "address": "Near Fuzi Temple",
+      "address": "Рядом с храмом Фузы",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "10:00-22:00",
-      "description": "Popular noodle shop serving traditional Nanjing-style noodles with various toppings.",
+      "description": "Популярная лапшечная, подающая традиционную нанкинскую лапшу с различными начинками.",
       "dishHighlights": [
-        "Duck liver noodles",
-        "Beef noodles",
-        "Vegetable noodles"
+        "Лапша с печенью утки",
+        "Говяжья лапша",
+        "Овощные лапша"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "quick",
-        "value"
+        "местная кухня",
+        "лапша",
+        "быстрый",
+        "цена-качество"
       ],
       "star": 0,
       "diamond": 0,
@@ -1560,28 +1560,28 @@
     {
       "id": "nanjing-13",
       "name": "鸡鸣寺素面",
-      "nameEn": "Jiming Temple Vegetarian Noodles",
-      "type": "local",
-      "cuisine": "Buddhist Vegetarian",
+      "nameEn": "Вегетарианская лапша храма Цзимин",
+      "type": "местный",
+      "cuisine": "Буддийская вегетарианская кухня",
       "avgPrice": 45,
       "rating": 4.6,
-      "address": "Near Jiming Temple",
+      "address": "Рядом с храмом Цзимин",
       "coordinates": {
         "lat": 32.0622,
         "lng": 118.7872
       },
       "hours": "10:00-19:00",
-      "description": "Vegetarian noodles near Jiming Temple, known for Buddhist cuisine and peaceful atmosphere.",
+      "description": "Вегетарианская лапша рядом с храмом Цзимин, известная буддийской кухней и спокойной атмосферой.",
       "dishHighlights": [
-        "Vegetarian noodles",
-        "Buddhist vegetables",
-        "Tofu skin rolls"
+        "Вегетарианская лапша",
+        "Буддийские овощи",
+        "Роллы из тофу"
       ],
       "tags": [
-        "local",
-        "vegetarian",
-        "buddhist",
-        "peaceful"
+        "местная кухня",
+        "вегетарианское",
+        "буддийский",
+        "спокойный"
       ],
       "star": 0,
       "diamond": 0,
@@ -1591,30 +1591,30 @@
     {
       "id": "nanjing-14",
       "name": "南京精菜馆",
-      "nameEn": "Nanjing Fine Cuisine",
-      "type": "blackpearl",
+      "nameEn": "Ресторан изысканной кухни Нанкина",
+      "type": "черная жемчужина",
       "diamond": 1,
-      "cuisine": "Jiangsu",
+      "cuisine": "Цзянсу",
       "avgPrice": 200,
       "rating": 4.7,
-      "address": "188 Guangzhou Road, Gulou District",
+      "address": "188 Гуанчжоу Роуд, район Гулоу",
       "coordinates": {
         "lat": 32.0422,
         "lng": 118.7772
       },
       "phone": "+86 25 8332 0888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "One-diamond Black Pearl restaurant offering refined Jiangsu cuisine with elegant presentation.",
+      "description": "Ресторан категории «Чёрная жемчужина» (одна звезда), предлагающий изысканную цзянсускую кухню с элегантной подачей.",
       "dishHighlights": [
-        "Steamed Jiangsu fish",
-        "Braised pork belly",
-        "Seasonal vegetables"
+        "На пару цзянсуская рыба",
+        "Тушёная свиная грудинка",
+        "Сезонные овощи"
       ],
       "tags": [
-        "fine-dining",
-        "jiangsu-cuisine",
-        "elegant",
-        "special-occasion"
+        "изысканная кухня",
+        "кухня провинции Цзянсу",
+        "элегантная",
+        "праздничный"
       ],
       "star": 0,
       "imageUrl": "/img/ext/a4d996ef9d67.webp"
@@ -1622,30 +1622,30 @@
     {
       "id": "nanjing-15",
       "name": "金陵饭店梅苑",
-      "nameEn": "Plum Garden - Jinling Hotel",
-      "type": "fine",
-      "cuisine": "Jiangsu",
+      "nameEn": "Сливовый сад - Отель Цзиньлин",
+      "type": "изысканный",
+      "cuisine": "Цзянсу",
       "avgPrice": 300,
       "rating": 4.8,
-      "address": "2 Hanzhong Road, Xuanwu District (Jinling Hotel)",
+      "address": "2 Ханьчжун Роуд, район Сюаньу (Отель Цзиньлин)",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7872
       },
       "phone": "+86 25 8471 1888",
       "hours": "11:30-14:00, 17:30-21:30",
-      "description": "High-end restaurant in Jinling Hotel serving premium Jiangsu cuisine with imperial heritage.",
+      "description": "Элитный ресторан в отеле Jinling, предлагающий изысканную кухню Цзянсу с императорским наследием.",
       "dishHighlights": [
-        "Imperial Jinling cuisine",
-        "Abalone",
-        "Bird's nest soup",
-        "Premium seafood"
+        "Императорская кухня Jinling",
+        "Морское ушко",
+        "Суп из ласточкиных гнезд",
+        "Морепродукты премиум-класса"
       ],
       "tags": [
-        "fine-dining",
-        "luxury",
-        "imperial",
-        "special-occasion"
+        "изысканная кухня",
+        "люкс",
+        "императорский",
+        "праздничный"
       ],
       "star": 0,
       "diamond": 0,
@@ -1654,28 +1654,28 @@
     {
       "id": "nanjing-16",
       "name": "清真马祥兴",
-      "nameEn": "Ma Xiang Xing Halal",
-      "type": "local",
-      "cuisine": "Halal Nanjing",
+      "nameEn": "Ма Сян Син Халяль",
+      "type": "местный",
+      "cuisine": "Халяльная кухня Нанкина",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "76 Guangzhou Road, Gulou District",
+      "address": "76 Гуанчжоу Роуд, район Гулоу",
       "coordinates": {
         "lat": 32.0422,
         "lng": 118.7772
       },
       "hours": "10:00-22:00",
-      "description": "Historic Muslim restaurant known for beef dishes and traditional Halal Nanjing cuisine.",
+      "description": "Исторический мусульманский ресторан, известный блюдами из говядины и традиционной халяльной кухней Нанкина.",
       "dishHighlights": [
-        "Beef noodles",
-        "Lamb skewers",
-        "Hand-pulled noodles"
+        "Говяжья лапша",
+        "Шашлык из баранины",
+        "Ручная лапша"
       ],
       "tags": [
-        "local",
-        "halal",
-        "muslim",
-        "historic"
+        "местная кухня",
+        "халяль",
+        "мусульманская",
+        "историческая"
       ],
       "star": 0,
       "diamond": 0,
@@ -1685,29 +1685,29 @@
     {
       "id": "nanjing-17",
       "name": "夫子庙小吃广场",
-      "nameEn": "Fuzi Temple Snack Street",
-      "type": "local",
-      "cuisine": "Nanjing Snacks",
+      "nameEn": "Улица закусок Храма Фуцзы",
+      "type": "местный",
+      "cuisine": "Закуски Нанкина",
       "avgPrice": 30,
       "rating": 4.3,
-      "address": "Fuzi Temple area",
+      "address": "Район храма Фуцзы",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "10:00-22:00",
-      "description": "Open-air snack market with dozens of vendors serving local Nanjing snacks and street food.",
+      "description": "Открытый рынок закусок с десятками торговцев, предлагающих местные нанкинские закуски и уличную еду.",
       "dishHighlights": [
-        "Duck blood soup",
-        "Stinky tofu",
-        "Grilled squid",
-        "Tangbao"
+        "Суп из утиной крови",
+        "Вонючий тофу",
+        "Жареный кальмар",
+        "Танбао"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "street-food",
-        "night-market"
+        "местная кухня",
+        "закуски",
+        "уличная еда",
+        "ночной-рынок"
       ],
       "star": 0,
       "diamond": 0,
@@ -1717,29 +1717,29 @@
     {
       "id": "nanjing-18",
       "name": "金陵小红枣",
-      "nameEn": "Jinling Red Dates",
-      "type": "local",
-      "cuisine": "Nanjing Desserts",
+      "nameEn": "Красные финики Цзиньлин",
+      "type": "местный",
+      "cuisine": "Десерты Нанкина",
       "avgPrice": 25,
       "rating": 4.4,
-      "address": "Near Fuzi Temple",
+      "address": "Рядом с храмом Фузы",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "09:00-21:00",
-      "description": "Local dessert shop famous for red date soup and traditional Nanjing sweet soups.",
+      "description": "Местная кондитерская, знаменитая супом из красных фиников и традиционными сладкими супами Нанкина.",
       "dishHighlights": [
-        "Red date soup",
-        "Taro soup",
-        "Sweet rice balls",
-        "Osmanthus cake"
+        "Суп из красных фиников",
+        "Суп из таро",
+        "Сладкие рисовые шарики",
+        "Пирог с османтусом"
       ],
       "tags": [
-        "local",
-        "dessert",
-        "traditional",
-        "sweet"
+        "местная кухня",
+        "десерт",
+        "традиционная",
+        "сладкий"
       ],
       "star": 0,
       "diamond": 0,
@@ -1749,28 +1749,28 @@
     {
       "id": "nanjing-19",
       "name": "东南大学老食堂",
-      "nameEn": "SEU Old Canteen",
-      "type": "local",
-      "cuisine": "University食堂",
+      "nameEn": "Старая столовая Юго-Восточного университета",
+      "type": "местный",
+      "cuisine": "Университетская столовая",
       "avgPrice": 20,
       "rating": 4.2,
-      "address": "Southeast University, Sipailou",
+      "address": "Юго-Восточный университет, Сипайлоу",
       "coordinates": {
         "lat": 32.0522,
         "lng": 118.7872
       },
       "hours": "06:30-20:00",
-      "description": "University cafeteria open to visitors, serving authentic and cheap local dishes.",
+      "description": "Университетская столовая, открытая для посетителей, предлагающая аутентичные и недорогие местные блюда.",
       "dishHighlights": [
-        "Rice with dishes",
-        "Noodles",
-        "Dumplings"
+        "Рис с блюдами",
+        "Лапша",
+        "Пельмени"
       ],
       "tags": [
-        "local",
-        "budget",
-        "authentic",
-        "student-life"
+        "местная кухня",
+        "бюджетный",
+        "аутентичный",
+        "студенческая жизнь"
       ],
       "star": 0,
       "diamond": 0,
@@ -1780,29 +1780,29 @@
     {
       "id": "nanjing-20",
       "name": "明瓦廊美食街",
-      "nameEn": "Mingwa Lang Food Street",
-      "type": "local",
-      "cuisine": "Various",
+      "nameEn": "Улица еды Минва Лан",
+      "type": "местный",
+      "cuisine": "Различные",
       "avgPrice": 40,
       "rating": 4.4,
-      "address": "Mingwa Lang, Xinadie",
+      "address": "Минва Лан, Синьади",
       "coordinates": {
         "lat": 32.0322,
         "lng": 118.7972
       },
       "hours": "17:00-02:00",
-      "description": "Famous evening food street with variety of local snacks and international cuisine.",
+      "description": "Знаменитая вечерняя продовольственная улица с разнообразными местными закусками и международной кухней.",
       "dishHighlights": [
-        "Grilled skewers",
-        "Spicy crayfish",
-        "Lamb noodles",
-        "Beer"
+        "Шашлыки на гриле",
+        "Острые раки",
+        "Баранина лапша",
+        "Пиво"
       ],
       "tags": [
-        "local",
-        "night-market",
-        "street-food",
-        "late-night"
+        "местная кухня",
+        "ночной-рынок",
+        "уличная еда",
+        "поздний ужин"
       ],
       "star": 0,
       "diamond": 0,
@@ -1812,30 +1812,30 @@
     {
       "id": "nanjing-21",
       "name": "海底捞火锅",
-      "nameEn": "Haidilao Hotpot",
-      "type": "chain",
-      "cuisine": "Hotpot",
+      "nameEn": "Хайдилао Хотпот",
+      "type": "сетевой",
+      "cuisine": "Хот-пот",
       "avgPrice": 150,
       "rating": 4.7,
-      "address": "Deji Plaza, 18 Zhongshan Road",
+      "address": "Площадь Децзи, 18 Чжуншань Роуд",
       "coordinates": {
         "lat": 32.0322,
         "lng": 118.7972
       },
       "phone": "+86 25 8471 9999",
-      "hours": "24 hours",
-      "description": "Famous chain hotpot restaurant with exceptional service. Known for manicotti, freebies, and entertainment while waiting.",
+      "hours": "Круглосуточно",
+      "description": "Знаменитая сетевая ресторан хот-пот с исключительным обслуживанием. Известен маникотти, подарками и развлечениями во время ожидания.",
       "dishHighlights": [
-        "Spicy hotpot",
-        "Fresh beef",
-        "Hand-pulled noodles",
-        "Free snacks"
+        "Острый хотпот",
+        "Свежая говядина",
+        "Ручная лапша",
+        "Бесплатные закуски"
       ],
       "tags": [
-        "chain",
-        "hotpot",
-        "service",
-        "entertainment"
+        "сеть",
+        "горячий котелок",
+        "сервис",
+        "развлечения"
       ],
       "star": 0,
       "diamond": 0,
@@ -1844,30 +1844,30 @@
     {
       "id": "nanjing-22",
       "name": "全聚德",
-      "nameEn": "Quanjude Peking Duck",
-      "type": "fine",
-      "cuisine": "Peking Duck",
+      "nameEn": "Цюаньцзюдэ Пекинская утка",
+      "type": "изысканный",
+      "cuisine": "Утка по-пекински",
       "avgPrice": 200,
       "rating": 4.5,
-      "address": "188 Guangzhou Road, Gulou District",
+      "address": "188 Гуанчжоу Роуд, район Гулоу",
       "coordinates": {
         "lat": 32.0422,
         "lng": 118.7772
       },
       "phone": "+86 25 8332 8888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Legendary Peking duck restaurant with crispy skin and traditional preparation methods.",
+      "description": "Легендарный ресторан утки по-пекински с хрустящей кожей и традиционными методами приготовления.",
       "dishHighlights": [
-        "Peking duck",
-        "Pancakes",
-        "Cucumber and scallion",
-        "Duck soup"
+        "Пекинская утка",
+        "Блины",
+        "Огурец и зеленый лук",
+        "Утиный суп"
       ],
       "tags": [
-        "fine-dining",
-        "peking-duck",
-        "traditional",
-        "famous"
+        "изысканная кухня",
+        "пекинская-утка",
+        "традиционная",
+        "известное"
       ],
       "star": 0,
       "diamond": 0,
@@ -1876,29 +1876,29 @@
     {
       "id": "nanjing-23",
       "name": "小厨娘",
-      "nameEn": "Xiao Chu Niang",
-      "type": "local",
-      "cuisine": "Jiangsu Home Style",
+      "nameEn": "Сяо Чу Нян",
+      "type": "местный",
+      "cuisine": "Домашний стиль Цзянсу",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Multiple locations",
+      "address": "Несколько адресов",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7872
       },
       "hours": "10:30-21:30",
-      "description": "Popular home-style Jiangsu cuisine restaurant with comfortable dining atmosphere.",
+      "description": "Популярный ресторан домашней кухни Цзянсу с комфортной обеденной атмосферой.",
       "dishHighlights": [
-        "Braised pork belly",
-        "Steamed fish",
-        "Vegetables in garlic sauce",
-        "Rice with toppings"
+        "Тушёная свиная грудинка",
+        "Паровая рыба",
+        "Овощи в чесночном соусе",
+        "Рис с начинкой"
       ],
       "tags": [
-        "local",
-        "home-style",
-        "jiangsu-cuisine",
-        "value"
+        "местная кухня",
+        "домашняя",
+        "кухня провинции Цзянсу",
+        "цена-качество"
       ],
       "star": 0,
       "diamond": 0,
@@ -1908,29 +1908,29 @@
     {
       "id": "nanjing-24",
       "name": "外婆家",
-      "nameEn": "Grandma's House",
-      "type": "chain",
-      "cuisine": "Zhejiang Style",
+      "nameEn": "Бабушкин дом",
+      "type": "сетевой",
+      "cuisine": "Чжэцзянский стиль",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Multiple locations including Xinbailai",
+      "address": "Несколько локаций, включая Xinbailai",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7872
       },
       "hours": "10:30-22:00",
-      "description": "Popular chain serving flavorful Zhejiang-style dishes at reasonable prices.",
+      "description": "Популярная сеть, подающая вкусные блюда в чжэцзянском стиле по разумным ценам.",
       "dishHighlights": [
-        "Braised fish head",
-        "West Lake vinegar fish",
-        "Dongpo pork",
-        "Vegetables"
+        "Тушеная рыба (голова)",
+        "Рыба в уксусе с Западного озера",
+        "Свинина Дунпо",
+        "Овощи"
       ],
       "tags": [
-        "chain",
-        "zhejiang",
-        "value",
-        "popular"
+        "сеть",
+        "Чжэцзян",
+        "цена-качество",
+        "популярная"
       ],
       "star": 0,
       "diamond": 0,
@@ -1940,30 +1940,30 @@
     {
       "id": "nanjing-25",
       "name": "南京大牌档",
-      "nameEn": "Nanjing Da Pai Dang",
-      "type": "local",
-      "cuisine": "Nanjing Snacks",
+      "nameEn": "Нанкин Да Пайдан",
+      "type": "местный",
+      "cuisine": "Закуски Нанкина",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Multiple locations including Deji and Xuanwu",
+      "address": "Несколько локаций, включая Децзи и Сюаньву",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7972
       },
       "phone": "+86 25 5226 8888",
       "hours": "11:00-22:00",
-      "description": "Popular chain serving authentic Nanjing and Jiangsu cuisine in traditional atmosphere.",
+      "description": "Популярная сеть ресторанов, предлагающая аутентичную кухню Нанкина и Цзянсу в традиционной атмосфере.",
       "dishHighlights": [
-        "Duck blood soup",
-        "Salt duck",
-        "Steamed dumplings",
-        "Qinhuai snacks"
+        "Суп из утиной крови",
+        "Соленая утка",
+        "Пельмени на пару",
+        "Циньхуайские закуски"
       ],
       "tags": [
-        "local",
-        "nanjing-cuisine",
-        "traditional",
-        "chain"
+        "местная кухня",
+        "кухня Нанкина",
+        "традиционная",
+        "сеть"
       ],
       "star": 0,
       "diamond": 0,
@@ -1972,30 +1972,30 @@
     {
       "id": "nanjing-26",
       "name": "民国红公馆",
-      "nameEn": "Republic of China Red Mansion",
-      "type": "fine",
-      "cuisine": "Republic Era Cuisine",
+      "nameEn": "Красный особняк Китайской Республики",
+      "type": "изысканный",
+      "cuisine": "Кухня эпохи Китайской Республики",
       "avgPrice": 250,
       "rating": 4.8,
-      "address": "Laochengli District, Qinhuai",
+      "address": "Район Лаочэнли, Циньхай",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7972
       },
       "phone": "+86 25 5220 9999",
       "hours": "11:30-14:00, 17:30-21:30",
-      "description": "High-end restaurant serving dishes inspired by Republic of China era cuisine with elegant atmosphere.",
+      "description": "Элитный ресторан, предлагающий блюда в стиле кухни эпохи Китайской Республики с элегантной атмосферой.",
       "dishHighlights": [
-        "Imperial cuisine",
-        "Republic era dishes",
-        "Seasonal menu",
-        "Historical atmosphere"
+        "Имперская кухня",
+        "Блюда эпохи Китайской Республики",
+        "Сезонное меню",
+        "Историческая атмосфера"
       ],
       "tags": [
-        "fine-dining",
-        "historical",
-        "republic-era",
-        "special-occasion"
+        "изысканная кухня",
+        "историческое",
+        "Эпоха Республики",
+        "праздничный"
       ],
       "star": 0,
       "diamond": 0,
@@ -2004,29 +2004,29 @@
     {
       "id": "nanjing-27",
       "name": "李记清真馆",
-      "nameEn": "Li Ji Halal",
-      "type": "local",
-      "cuisine": "Halal Nanjing",
+      "nameEn": "Ли Цзи Халяль",
+      "type": "местный",
+      "cuisine": "Халяльная кухня Нанкина",
       "avgPrice": 50,
       "rating": 4.7,
-      "address": "100 Zhanqi Lane, Qinhuai District",
+      "address": "Улица Чжаньци, 100, район Циньхай",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "06:30-19:30",
-      "description": "Famous halal restaurant known for beef products and traditional Muslim cuisine.",
+      "description": "Известный халяль-ресторан, известный говядиной и традиционной мусульманской кухней.",
       "dishHighlights": [
-        "Beef noodle soup",
-        "Lamb skewers",
-        "Beef dumplings",
-        "Hand-pulled noodles"
+        "Говяжий лапша-суп",
+        "Шашлык из баранины",
+        "Говяжьи пельмени",
+        "Ручная лапша"
       ],
       "tags": [
-        "local",
-        "halal",
-        "beef",
-        "traditional"
+        "местная кухня",
+        "халяль",
+        "говядина",
+        "традиционная"
       ],
       "star": 0,
       "diamond": 0,
@@ -2036,29 +2036,29 @@
     {
       "id": "nanjing-28",
       "name": "莲湖糕团店",
-      "nameEn": "Lianhu Gaotang Shop",
-      "type": "local",
-      "cuisine": "Nanjing Desserts",
+      "nameEn": "Магазин Lianhu Gaotang",
+      "type": "местный",
+      "cuisine": "Десерты Нанкина",
       "avgPrice": 25,
       "rating": 4.5,
-      "address": "Fuzi Temple area",
+      "address": "Район храма Фуцзы",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "08:00-20:00",
-      "description": "Famous snack shop specializing in traditional Nanjing rice cakes and sweet pastries.",
+      "description": "Известная закусочная, специализирующаяся на традиционных наньцзинских рисовых лепешках и сладких выпечках.",
       "dishHighlights": [
-        "Rice cake soup",
-        "Osmanthus cake",
-        "Sweet dumplings",
-        "Glutinous rice balls"
+        "Суп с рисовыми лепешками",
+        "Пирог с османтусом",
+        "Сладкие пельмени",
+        "Клейкий рисовый шарик"
       ],
       "tags": [
-        "local",
-        "dessert",
-        "traditional",
-        "famous"
+        "местная кухня",
+        "десерт",
+        "традиционная",
+        "известное"
       ],
       "star": 0,
       "diamond": 0,
@@ -2069,7 +2069,7 @@
       "id": "nanjing-29",
       "name": "传统赤豆元宵",
       "nameEn": "传统赤豆元宵 (赤豆元宵)",
-      "type": "local",
+      "type": "местный",
       "cuisine": "赤豆元宵",
       "avgPrice": 57,
       "rating": 4.6,
@@ -2098,7 +2098,7 @@
       "id": "nanjing-31",
       "name": "巷子牛肉锅贴",
       "nameEn": "巷子牛肉锅贴 (牛肉锅贴)",
-      "type": "local",
+      "type": "местный",
       "cuisine": "牛肉锅贴",
       "avgPrice": 133,
       "rating": 4.1,
@@ -2127,7 +2127,7 @@
       "id": "nanjing-33",
       "name": "南京味盐水鸭",
       "nameEn": "南京味盐水鸭 (盐水鸭)",
-      "type": "street",
+      "type": "уличный",
       "cuisine": "盐水鸭",
       "avgPrice": 29,
       "rating": 4.7,
@@ -2156,7 +2156,7 @@
       "id": "nanjing-35",
       "name": "街边盐水鸭",
       "nameEn": "街边盐水鸭 (盐水鸭)",
-      "type": "cafe",
+      "type": "кафе",
       "cuisine": "盐水鸭",
       "avgPrice": 80,
       "rating": 4.2,
@@ -2185,7 +2185,7 @@
       "id": "nanjing-37",
       "name": "地道鸭血粉丝汤",
       "nameEn": "地道鸭血粉丝汤 (鸭血粉丝汤)",
-      "type": "local",
+      "type": "местный",
       "cuisine": "鸭血粉丝汤",
       "avgPrice": 72,
       "rating": 4,
@@ -2214,7 +2214,7 @@
       "id": "nanjing-39",
       "name": "街边小笼包",
       "nameEn": "街边小笼包 (小笼包)",
-      "type": "local",
+      "type": "местный",
       "cuisine": "小笼包",
       "avgPrice": 87,
       "rating": 4.3,
@@ -2243,7 +2243,7 @@
       "id": "nanjing-41",
       "name": "老南京赤豆元宵",
       "nameEn": "老南京赤豆元宵 (赤豆元宵)",
-      "type": "local",
+      "type": "местный",
       "cuisine": "赤豆元宵",
       "avgPrice": 35,
       "rating": 4.5,
@@ -2272,7 +2272,7 @@
       "id": "nanjing-43",
       "name": "阿婆小笼包",
       "nameEn": "阿婆小笼包 (小笼包)",
-      "type": "local",
+      "type": "местный",
       "cuisine": "小笼包",
       "avgPrice": 90,
       "rating": 4.4,
@@ -2301,7 +2301,7 @@
       "id": "nanjing-45",
       "name": "阿婆鸭血粉丝汤",
       "nameEn": "阿婆鸭血粉丝汤 (鸭血粉丝汤)",
-      "type": "local",
+      "type": "местный",
       "cuisine": "鸭血粉丝汤",
       "avgPrice": 50,
       "rating": 4.3,
@@ -2330,7 +2330,7 @@
       "id": "nanjing-47",
       "name": "南京味牛肉锅贴",
       "nameEn": "南京味牛肉锅贴 (牛肉锅贴)",
-      "type": "local",
+      "type": "местный",
       "cuisine": "牛肉锅贴",
       "avgPrice": 55,
       "rating": 4,
@@ -2359,7 +2359,7 @@
       "id": "nanjing-49",
       "name": "老街鸭血粉丝汤",
       "nameEn": "老街鸭血粉丝汤 (鸭血粉丝汤)",
-      "type": "local",
+      "type": "местный",
       "cuisine": "鸭血粉丝汤",
       "avgPrice": 58,
       "rating": 4,
@@ -2388,7 +2388,7 @@
       "id": "nanjing-51",
       "name": "街边赤豆元宵",
       "nameEn": "街边赤豆元宵 (赤豆元宵)",
-      "type": "local",
+      "type": "местный",
       "cuisine": "赤豆元宵",
       "avgPrice": 85,
       "rating": 4.2,
@@ -2417,7 +2417,7 @@
       "id": "nanjing-53",
       "name": "南京味小笼包",
       "nameEn": "南京味小笼包 (小笼包)",
-      "type": "local",
+      "type": "местный",
       "cuisine": "小笼包",
       "avgPrice": 52,
       "rating": 4.3,
@@ -2446,7 +2446,7 @@
       "id": "nanjing-55",
       "name": "传统盐水鸭",
       "nameEn": "传统盐水鸭 (盐水鸭)",
-      "type": "local",
+      "type": "местный",
       "cuisine": "盐水鸭",
       "avgPrice": 56,
       "rating": 4.8,
@@ -2475,7 +2475,7 @@
       "id": "nanjing-57",
       "name": "老街赤豆元宵",
       "nameEn": "老街赤豆元宵 (赤豆元宵)",
-      "type": "local",
+      "type": "местный",
       "cuisine": "赤豆元宵",
       "avgPrice": 147,
       "rating": 4.2,
@@ -2504,7 +2504,7 @@
       "id": "nanjing-59",
       "name": "地道盐水鸭",
       "nameEn": "地道盐水鸭 (盐水鸭)",
-      "type": "local",
+      "type": "местный",
       "cuisine": "盐水鸭",
       "avgPrice": 108,
       "rating": 4.7,
@@ -2533,7 +2533,7 @@
       "id": "nanjing-61",
       "name": "传统牛肉锅贴",
       "nameEn": "传统牛肉锅贴 (牛肉锅贴)",
-      "type": "cafe",
+      "type": "кафе",
       "cuisine": "牛肉锅贴",
       "avgPrice": 31,
       "rating": 4.8,
@@ -2562,7 +2562,7 @@
       "id": "nanjing-63",
       "name": "老街鸭血粉丝汤",
       "nameEn": "老街鸭血粉丝汤 (鸭血粉丝汤)",
-      "type": "street",
+      "type": "уличный",
       "cuisine": "鸭血粉丝汤",
       "avgPrice": 16,
       "rating": 4.4,
@@ -2591,7 +2591,7 @@
       "id": "nanjing-65",
       "name": "南京味小笼包",
       "nameEn": "南京味小笼包 (小笼包)",
-      "type": "cafe",
+      "type": "кафе",
       "cuisine": "小笼包",
       "avgPrice": 51,
       "rating": 4.7,
@@ -2620,7 +2620,7 @@
       "id": "nanjing-67",
       "name": "南京味小笼包",
       "nameEn": "南京味小笼包 (小笼包)",
-      "type": "street",
+      "type": "уличный",
       "cuisine": "小笼包",
       "avgPrice": 58,
       "rating": 4.2,
@@ -2649,7 +2649,7 @@
       "id": "nanjing-69",
       "name": "传统盐水鸭",
       "nameEn": "传统盐水鸭 (盐水鸭)",
-      "type": "street",
+      "type": "уличный",
       "cuisine": "盐水鸭",
       "avgPrice": 24,
       "rating": 4.3,
@@ -2678,7 +2678,7 @@
       "id": "nanjing-71",
       "name": "巷子鸭血粉丝汤",
       "nameEn": "巷子鸭血粉丝汤 (鸭血粉丝汤)",
-      "type": "local",
+      "type": "местный",
       "cuisine": "鸭血粉丝汤",
       "avgPrice": 149,
       "rating": 4.4,
@@ -3083,92 +3083,92 @@
   "culturalTips": [
     {
       "category": "history",
-      "title": "Memorial Culture",
-      "content": "Nanjing is deeply connected to Chinese modern history. Visit the Massacre Memorial Hall for reflection. The Sun Yat-sen Mausoleum represents founding of modern China. Presidential Palace shows ROC era.",
+      "title": "Мемориальная культура",
+      "content": "Нанкин глубоко связан с современной историей Китая. Посетите Мемориал резни для размышлений. Мавзолей Сунь Ятсена символизирует основание современного Китая. Президентский дворец показывает эпоху Китайской Республики.",
       "importance": "high"
     },
     {
       "category": "food",
-      "title": "Nanjing Cuisine",
-      "content": "Nanjing food is savory and slightly oily. Must-try: duck blood soup, salt duck, soup dumplings. The city's cuisine reflects its position as 'the home of Jinling cuisine'.",
+      "title": "Нанкинская кухня",
+      "content": "Нанкинская кухня пикантная и немного жирная. Обязательно попробуйте: суп из утиной крови, солёную утку, суп с димсамом. Кухня города отражает его положение как «родины цзиньлинской кухни».",
       "importance": "high"
     },
     {
       "category": "timing",
-      "title": "Avoiding Crowds",
-      "content": "Nanjing's attractions can be very crowded. Visit Sun Yat-sen Mausoleum and Ming Xiaoling early morning. Fuzi Temple is best at night. Weekdays are quieter.",
+      "title": "Избегание толп",
+      "content": "Достопримечательности Нанкина могут быть очень многолюдными. Посетите Мавзолей Сунь Ятсена и Гробницу Мин Сяолин рано утром. Храм Фуцзы лучше посещать вечером. В будние дни народу меньше.",
       "importance": "medium"
     },
     {
       "category": "gingko",
-      "title": "Seasonal Highlights",
-      "content": "Nanjing's gingko trees are legendary. The turn color in mid-November along银杏大道. Cherry blossoms at Xuanwu Lake in spring. Plum blossoms in winter.",
+      "title": "Сезонные достопримечательности",
+      "content": "Гинкго Нанкина легендарны. Они меняют цвет в середине ноября вдоль Аллеи Гинкго. Вишнёвые цветы у озера Сюаньу весной. Сливовые цветы зимой.",
       "importance": "medium"
     },
     {
       "category": "culture",
-      "title": "Six Dynasties Heritage",
-      "content": "Nanjing was capital during Six Dynasties period (220-589 AD). Visit the Nanjing Museum for artifacts from this era. The Zonghua Gate reflects military architecture of that time. Ling Guo Temple is a surviving Buddhist site.",
+      "title": "Наследие шести династий",
+      "content": "Нанкин был столицей в период шести династий (220-589 н.э.). Посетите Нанкинский музей для знакомства с артефактами той эпохи. Ворота Цзунхуа отражают военную архитектуру того времени. Храм Линго — сохранившийся буддийский сайт.",
       "importance": "medium"
     },
     {
       "category": "literature",
-      "title": "Literary Legacy",
-      "content": "Nanjing inspired many famous writers including Cao Xueqin (Dream of Red Chamber), Li Yu, and modern writer Ye Shengtao. The Nanjing Museum has an excellent collection of historical documents and calligraphy.",
+      "title": "Литературное наследие",
+      "content": "Нанкин вдохновил многих известных писателей, включая Цао Сюэциня («Сон в красном тереме»), Ли Ю и современного писателя Е Шэнтао. В Нанкинском музее отличная коллекция исторических документов и каллиграфии.",
       "importance": "medium"
     },
     {
       "category": "food",
-      "title": "Nanjing Snacks Culture",
-      "content": "Nanjing is famous for street snacks: duck blood soup (鸭血粉丝汤), small sesame balls (雨花石汤圆), and beef offal. The Fuzi Temple night market and Laochengli are best areas for snack exploration.",
+      "title": "Культура нанкинских закусок",
+      "content": "Нанкин знаменит уличными закусками: суп из утиной крови (鸭血粉丝汤), маленькие кунжутные шарики (雨花石汤圆) и говяжьи субпродукты. Ночной рынок храма Фуцзи и Лаочэнли — лучшие места для исследования закусок.",
       "importance": "high"
     },
     {
       "category": "dialect",
-      "title": "Nanjing Dialect",
-      "content": "Nanjing dialect is one of the oldest Mandarin dialects, preserving many elements from Ming Dynasty imperial speech. It's known for being more 'down to earth' than Beijing dialect. Locals appreciate visitors trying a few phrases.",
+      "title": "Нанкинский диалект",
+      "content": "Нанкинский диалект — один из древнейших диалектов мандаринского языка, сохраняющий многие элементы имперской речи династии Мин. Известен как более «земной» по сравнению с пекинским диалектом. Местные ценят, когда гости пытаются произнести несколько фраз.",
       "importance": "low"
     },
     {
       "category": "crafts",
-      "title": "Nanjing Crafts",
-      "content": "Nanjing is famous for Yuhua stones (雨花石), silk products, and Nanjing brocade (云锦). The Nanjing Yuhua Stone Garden in Zhonghua Gate area showcases these colorful stones. Nanjing brocade is a UNESCO intangible heritage.",
+      "title": "Нанкинские ремёсла",
+      "content": "Нанкин знаменит камнями Юйхуа (雨花石), шёлковыми изделиями и Нанкинским парчовым шёлком (云锦). Сад камней Юйхуа в районе Ворот Чжунхуа демонстрирует эти разноцветные камни. Нанкинский парчовый шёлк — нематериальное наследие ЮНЕСКО.",
       "importance": "medium"
     },
     {
       "category": "tea",
-      "title": "Nanjing Tea Culture",
-      "content": "Nanjing has unique tea culture featuring Qimen black tea from nearby Huangshan. The famous 'First Spring Tea' is picked in March. Tea houses along Xuanwu Lake offer pleasant afternoon tea experiences.",
+      "title": "Нанкинская чайная культура",
+      "content": "Нанкин обладает уникальной чайной культурой с использованием цимэньского чёрного чая из близлежащего Хуаншаня. Знаменитый «Первый весенний чай» собирают в марте. Чайные дома вдоль озера Сюаньу предлагают приятные послеобеденные чаепития.",
       "importance": "medium"
     },
     {
       "category": "gardens",
-      "title": "Nanjing Gardens",
-      "content": "Like Suzhou, Nanjing has historic private gardens. The Xuanwu Lake area has many traditional pavilions. The Presidential Palace has beautiful garden areas. The old Ming palace ruins include ancient garden elements.",
+      "title": "Нанкинские сады",
+      "content": "Как и Сучжоу, Нанкин имеет исторические частные сады. Район озера Сюаньву содержит множество традиционных павильонов. Дворец Президента имеет красивые садовые территории. Руины старого минского дворца включают элементы древних садов.",
       "importance": "medium"
     },
     {
       "category": "riverside",
-      "title": "Yangtze River Culture",
-      "content": "Nanjing sits on the Yangtze River, historically crucial for trade and defense. The river wall offers walking paths. The historic Xiaguan area was once the main port. Yuejiang Tower offers panoramic river views.",
+      "title": "Культура реки Янцзы",
+      "content": "Нанкин расположен на реке Янцзы, которая исторически имела решающее значение для торговли и обороны. Набережная реки предлагает пешеходные маршруты. Исторический район Сягуань был когда-то главным портом. Павильон Юэцзян предлагает панорамный вид на реку.",
       "importance": "medium"
     },
     {
       "category": "education",
-      "title": "Academic Heritage",
-      "content": "Nanjing has been an education center for centuries. Nanjing University and Southeast University are prestigious institutions. The old campus buildings are architecturally significant and open to visitors.",
+      "title": "Академическое наследие",
+      "content": "Нанкин на протяжении веков является образовательным центром. Нанкинский университет и Университет Юго-Востока — престижные учебные заведения. Старые корпуса университета представляют архитектурную ценность и открыты для посетителей.",
       "importance": "medium"
     },
     {
       "category": "music",
-      "title": "Jiangnan Music",
-      "content": "Nanjing is part of Jiangnan region known for traditional music. The Qinhuai River area has historical connections to folk music and opera. The local opera style influenced many Chinese performing arts.",
+      "title": "Музыка Цзяннань",
+      "content": "Нанкин входит в регион Цзяннань, известный традиционной музыкой. Район реки Циньхай имеет исторические связи с народной музыкой и оперой. Местный оперный стиль оказал влияние на многие китайские исполнительские искусства.",
       "importance": "low"
     },
     {
       "category": "nightlife",
-      "title": "Modern Nanjing",
-      "content": "Nanjing has vibrant modern nightlife in Xinjiekou and Jianye districts.1912 bar street near Presidential Palace has many restaurants and bars. The Qinhuai River area offers evening boat rides with city views.",
+      "title": "Современный Нанкин",
+      "content": "В Нанкине оживлённая современная ночная жизнь в районах Синьцзекоу и Цзянье. Улица баров 1912 недалеко от Дворца Президента предлагает множество ресторанов и баров. Район реки Циньхай предлагает вечерние прогулки на лодке с видом на город.",
       "importance": "low"
     }
   ],
@@ -3176,134 +3176,134 @@
     {
       "type": "ambulance",
       "name": "南京急救中心",
-      "nameEn": "Nanjing Emergency Center",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "120",
-      "notes": "Major hospitals have English interpretation"
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "police",
       "name": "南京市公安局",
-      "nameEn": "Nanjing Public Security Bureau",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "110",
-      "notes": "Tourist police at major attractions"
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "hospital",
       "name": "南京鼓楼医院",
-      "nameEn": "Nanjing Drum Tower Hospital",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 25 8310 6666",
-      "address": "321 Zhongshan Road",
+      "address": "Гуанчжоу",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7872
       },
-      "notes": "English-speaking staff available"
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "embassy",
       "name": "美国驻上海总领事馆",
-      "nameEn": "US Consulate General Shanghai",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 21 8011 2400",
-      "address": "Shanghai (nearest US consular services)",
-      "notes": "For US citizens in Nanjing region"
+      "address": "Гуанчжоу",
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "hospital",
       "name": "南京军区总医院",
-      "nameEn": "Nanjing Military General Hospital",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 25 8086 1155",
-      "address": "32 Changjiang Road, Xuanwu District",
+      "address": "Гуанчжоу",
       "coordinates": {
         "lat": 32.0422,
         "lng": 118.7972
       },
-      "notes": "Another major hospital with English staff"
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "tourist-police",
       "name": "南京旅游警察",
-      "nameEn": "Nanjing Tourist Police",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 25 8442 9901",
-      "notes": "English-speaking tourist police at major attractions"
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "fire",
       "name": "南京消防",
-      "nameEn": "Nanjing Fire Department",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "119",
-      "notes": "Fire and rescue services"
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "embassy",
       "name": "英国驻上海总领事馆",
-      "nameEn": "UK Consulate General Shanghai",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 21 6179 8300",
-      "address": "Shanghai",
-      "notes": "For UK citizens in Nanjing region"
+      "address": "Гуанчжоу",
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "embassy",
       "name": "日本驻上海总领事馆",
-      "nameEn": "Japan Consulate General Shanghai",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 21 5257 4788",
-      "address": "Shanghai",
-      "notes": "For Japanese citizens in Nanjing region"
+      "address": "Гуанчжоу",
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "embassy",
       "name": "德国驻上海总领事馆",
-      "nameEn": "Germany Consulate General Shanghai",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 21 6101 2000",
-      "address": "Shanghai",
-      "notes": "For German citizens in Nanjing region"
+      "address": "Гуанчжоу",
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻上海总领事馆",
-      "nameEn": "Australia Consulate General Shanghai",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 21 5292 9000",
-      "address": "Shanghai",
-      "notes": "For Australian citizens in Nanjing region"
+      "address": "Гуанчжоу",
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "embassy",
       "name": "法国驻上海总领事馆",
-      "nameEn": "France Consulate General Shanghai",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 21 6103 2200",
-      "address": "Shanghai",
-      "notes": "For French citizens in Nanjing region"
+      "address": "Гуанчжоу",
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "embassy",
       "name": "加拿大驻上海总领事馆",
-      "nameEn": "Canada Consulate General Shanghai",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 21 3279 2800",
-      "address": "Shanghai",
-      "notes": "For Canadian citizens in Nanjing region"
+      "address": "Гуанчжоу",
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "embassy",
       "name": "韩国驻上海总领事馆",
-      "nameEn": "South Korea Consulate General Shanghai",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 21 5108 0700",
-      "address": "Shanghai",
-      "notes": "For Korean citizens in Nanjing region"
+      "address": "Гуанчжоу",
+      "notes": "Для граждан Сингапура"
     },
     {
       "type": "embassy",
       "name": "新加坡驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Shanghai",
+      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
       "phone": "+86 21 6295 3800",
-      "address": "Shanghai",
-      "notes": "For Singapore citizens in Nanjing region"
+      "address": "Гуанчжоу",
+      "notes": "Для граждан Сингапура"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese, Nanjing dialect",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Tap water safe after boiling; bottled water recommended"
+    "language": "Китайский (мандаринский)",
+    "currency": "Китайский юань (CNY/RMB)",
+    "visa": "Большинству национальностей требуется виза. Для соответствующих граждан доступна 72-часовая транзитная виза в аэропорту.",
+    "timeZone": "UTC+8 (Китайское стандартное время)",
+    "electricity": "220В/50Гц, розетки типа A/I",
+    "water": "Водопроводная вода пригодна для питья, но рекомендуется бутилированная"
   }
 }

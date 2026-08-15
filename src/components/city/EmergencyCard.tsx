@@ -1,3 +1,4 @@
+import { ct } from "@/i18n/components-strings";
 import React from "react";
 
 export interface EmergencyContact {
@@ -13,6 +14,7 @@ export interface EmergencyContact {
 interface EmergencyCardProps {
   contact: EmergencyContact;
   compact?: boolean;
+  lang?: string;
 }
 
 function getTypeIcon(type: EmergencyContact["type"]) {
@@ -51,7 +53,21 @@ function getPhoneHref(phone: string) {
   return `tel:${digits}`;
 }
 
-export function EmergencyCard({ contact, compact = false }: EmergencyCardProps) {
+export function EmergencyCard({ contact, compact = false, lang = "en" }: EmergencyCardProps) {
+  // Display-name selection logic:
+  //   zh-CN / zh-TW  -> contact.name (Chinese original)
+  //   ja / ko         -> prefers contact.nameJa / nameKo from cities-i18n/<lang>/<slug>.json
+  //   fr / de / ru / vi / th / ar / fa / en -> contact.nameEn
+  const localKey = (lang === "ja") ? "nameJa"
+                  : (lang === "ko") ? "nameKo"
+                  : null;
+  const localised = localKey ? (contact as any)[localKey] : undefined;
+  const isCJK = lang === "zh-CN" || lang === "zh-TW";
+  const displayName = isCJK && contact.name
+    ? contact.name
+    : (localised || contact.nameEn || contact.name);
+  const secondaryName = (displayName === contact.nameEn) ? contact.name : contact.nameEn;
+
   return (
     <div className="bg-white border border-gray-100 rounded-xl p-4 hover:shadow-md transition-shadow">
       <div className="flex items-start justify-between gap-3">
@@ -62,8 +78,10 @@ export function EmergencyCard({ contact, compact = false }: EmergencyCardProps) 
             {getTypeIcon(contact.type)}
           </div>
           <div className="min-w-0 flex-1">
-            <h3 className="font-semibold text-gray-900 text-sm leading-tight">{contact.nameEn}</h3>
-            <p className="text-gray-500 text-xs">{contact.name}</p>
+            <h3 className="font-semibold text-gray-900 text-sm leading-tight">{displayName}</h3>
+            {secondaryName && secondaryName !== displayName && (
+              <p className="text-gray-500 text-xs">{secondaryName}</p>
+            )}
             {contact.address && !compact && (
               <p className="text-gray-500 text-xs mt-1 leading-relaxed">{contact.address}</p>
             )}
@@ -76,7 +94,7 @@ export function EmergencyCard({ contact, compact = false }: EmergencyCardProps) 
         <a
           href={getPhoneHref(contact.phone)}
           className="shrink-0 flex flex-col items-center gap-1 px-4 py-2.5 bg-red-600 text-white rounded-xl font-bold hover:bg-red-700 transition-colors shadow-sm group"
-          aria-label={`Call ${contact.nameEn} at ${contact.phone}`}
+          aria-label={`Call ${displayName} at ${contact.phone}`}
         >
           <span className="text-base group-hover:scale-110 transition-transform">📞</span>
           <span className="text-sm leading-tight text-center">{contact.phone}</span>
@@ -91,6 +109,7 @@ interface QuickDialProps {
   showPolice?: boolean;
   showFire?: boolean;
   showTraffic?: boolean;
+  lang?: string;
 }
 
 export function QuickDialGrid({
@@ -98,19 +117,20 @@ export function QuickDialGrid({
   showPolice = true,
   showFire = true,
   showTraffic = false,
+  lang = "en",
 }: QuickDialProps) {
   const items = [
     ...(showAmbulance
-      ? [{ phone: "120", label: "Ambulance", icon: "🚑", bg: "bg-red-600 hover:bg-red-700" }]
+      ? [{ phone: "120", label: ct(lang, "qd_ambulance", "Ambulance"), icon: "🚑", bg: "bg-red-600 hover:bg-red-700" }]
       : []),
     ...(showPolice
-      ? [{ phone: "110", label: "Police", icon: "👮", bg: "bg-blue-600 hover:bg-blue-700" }]
+      ? [{ phone: "110", label: ct(lang, "qd_police", "Police"), icon: "👮", bg: "bg-blue-600 hover:bg-blue-700" }]
       : []),
     ...(showFire
-      ? [{ phone: "119", label: "Fire", icon: "🔥", bg: "bg-orange-600 hover:bg-orange-700" }]
+      ? [{ phone: "119", label: ct(lang, "qd_fire", "Fire"), icon: "🔥", bg: "bg-orange-600 hover:bg-orange-700" }]
       : []),
     ...(showTraffic
-      ? [{ phone: "122", label: "Traffic", icon: "🚗", bg: "bg-green-600 hover:bg-green-700" }]
+      ? [{ phone: "122", label: ct(lang, "qd_traffic", "Traffic"), icon: "🚗", bg: "bg-green-600 hover:bg-green-700" }]
       : []),
   ];
 

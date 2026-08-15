@@ -1,333 +1,339 @@
 {
   "slug": "nanjing",
   "name": "南京",
-  "nameEn": "Nanjing",
+  "nameEn": "南京",
   "country": "China",
-  "population": "8.5 million",
+  "population": "850万人",
   "coordinates": {
     "lat": 32.0603,
     "lng": 118.7969
   },
-  "timezone": "UTC+8 (China Standard Time)",
-  "description": "Nanjing, ancient capital of six dynasties and capital of the Republic of China, is a city of profound historical significance. Home to the Sun Yat-sen Mausoleum, Ming Xiaoling Tomb (UNESCO), and theMemorial Hall of the Victims in Nanjing Massacre. A cultural crossroads between north and south China.",
+  "timezone": "UTC+8（中国標準時）",
+  "description": "南京は6王朝の古都であり、中華民国の首都でもありました。深い歴史的重要性を持つ都市です。孫中山陵、明孝陵（ユネスコ）、南京大虐殺記念館があります。中国南北の文化の交差点です。",
   "coverImage": "/img/ext/17c2c1bef18d.webp",
   "highlights": [
-    "Sun Yat-sen Mausoleum - Purple Mountain",
-    "Ming Xiaoling Tomb - UNESCO World Heritage",
-    "Nanjing Massacre Memorial Hall",
-    "Presidential Palace - ROC history",
-    "Fuzi Temple - Ancient commerce district"
+    "中山陵 - 紫金山",
+    "明孝陵 - ユネスコ世界遺産",
+    "南京大虐殺紀念館",
+    "大統領府 - 中華民国歴史",
+    "夫子廟 - 古代商業地区"
   ],
   "climate": {
-    "type": "Subtropical monsoon",
+    "type": "亜熱帯季風気候",
     "bestMonths": [
-      "March",
-      "April",
-      "May",
-      "September",
-      "October",
-      "November"
+      "3月",
+      "4月",
+      "5月",
+      "9月",
+      "10月",
+      "11月"
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "4C (39F)",
-    "tips": "Best in spring for flowers or autumn for foliage. Summers hot and humid. Winters cold with occasional snow. Spring plum blossoms and fall gingko are spectacular."
+    "tips": "春は花、秋は紅葉が最高。夏は暑く湿気が多い。冬は寒く、時折雪が降る。春の梅の花と秋のイチョウは見事。"
   },
   "attractions": [
     {
       "id": "sun-yat-sen-mausoleum",
       "name": "中山陵",
-      "nameEn": "Sun Yat-sen Mausoleum",
+      "nameEn": "中山陵",
       "category": "historical",
-      "description": "Magnificent mausoleum honoring Dr. Sun Yat-sen, founder of the Republic of China, on Purple Mountain with 392 steps.",
-      "address": "Zhongshan Mountain, Purple Mountain",
+      "description": "中華民国建国者・孫逸仙博士を称える壮大な陵墓。紫金山に位置し、392段の階段を上る。",
+      "address": "中山山、紫金山",
       "coordinates": {
         "lat": 32.0622,
         "lng": 118.8572
       },
       "openingHours": "08:30-17:30",
-      "ticketPrice": "Free (park 70¥)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "無料（駐車場70¥）",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "392 steps climb",
-        "Blue tile roof",
-        "Panoramic views",
-        "Bai Chong"
+        "392段の階段登頂",
+        "青い瓦屋根",
+        "パノラマ眺望",
+        "白崇禧"
       ],
-      "tips": "Arrive early to avoid crowds. Wear comfortable shoes. Combine with Ming Xiaoling Tomb nearby.",
+      "tips": "早い時間に来て混雑を避けましょう。歩きやすい靴を履いてください。近くの明孝陵と組み合わせると良いでしょう。",
       "image": "/img/ext/16dc871f0e76.webp",
       "phone": "+86 25 8443 1991"
     },
     {
       "id": "ming-xiaoling",
       "name": "明孝陵",
-      "nameEn": "Ming Xiaoling Tomb",
+      "nameEn": "明孝陵",
       "category": "historical",
-      "description": "UNESCO World Heritage site - the tomb of Emperor Hongwu, founder of the Ming Dynasty, with spectacular Avenue of Stone Animals.",
-      "address": "Ming Xiaoling, Purple Mountain",
+      "description": "ユネスコ世界遺産 - 明の初代皇帝である洪武帝の陵墓で、石獣の並木道が壮観です。",
+      "address": "紫金山・明孝陵",
       "coordinates": {
         "lat": 32.0722,
         "lng": 118.8472
       },
       "openingHours": "06:30-18:30",
-      "ticketPrice": "70¥ (includes Ming Xiaoling and Music Square)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "70¥ (明孝陵とミュージックスクエアが含まれています)",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Avenue of Stone Animals",
-        "Ming palace ruins",
-        "Wenwu Temple",
-        "Autumn colors"
+        "石獣の並木道",
+        "明代の宮殿跡",
+        "文武廟",
+        "紅葉"
       ],
-      "tips": "Walk the 600-year-old avenue at sunrise for magical light. Best in autumn for golden gingko. Combine with nearby Purple Mountain.",
+      "tips": "600年の歴史を持つ並木道を朝日とともに歩くと幻想的な光が素晴らしい。秋は黄金色のイチョウが最も美しい。近くの紫金山と併せて巡ると良いでしょう。",
       "image": "/img/ext/f8f0e4ba3acb.webp",
       "phone": "+86 25 8576 9051"
     },
     {
       "id": "nanjing-massacre",
-      "name": "南京大屠杀纪念馆",
-      "nameEn": "Memorial Hall of the Victims in Nanjing Massacre",
+      "name": "南京大虐殺記念館",
+      "nameEn": "南京大虐殺記念館",
       "category": "historical",
       "description": "1937年の南京大虐殺の30万人の犠牲者を追悼する力強い記念館で、展示物や巡礼ホールがあります。",
-      "address": "南京市建邺区水阁路418号",
+      "address": "南京市建鄴区水閣路418号",
       "coordinates": {
         "lat": 32.0422,
         "lng": 118.7472
       },
-      "openingHours": "08:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "08:00-17:00（月曜休館）",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Memorial Hall",
-        "Exhibition halls",
-        "Peace plaza",
-        "Historical documents"
+        "記念館",
+        "展示ホール",
+        "平和広場",
+        "歴史資料"
       ],
-      "tips": "Bring tissues. Audio guide available. Allow time for reflection. Combine with nearby Fuzi Temple.",
+      "tips": "ティッシュを持参してください。音声ガイドがあります。瞑想の時間を取ってください。近くの夫子廟と組み合わせてください。",
       "image": "/img/ext/6107387aee36.webp",
       "phone": "+86 025  7040 7097"
     },
     {
       "id": "presidential-palace",
-      "name": "总统府",
-      "nameEn": "Presidential Palace",
+      "name": "総統府",
+      "nameEn": "総統府",
       "category": "historical",
-      "description": "The presidential office of Sun Yat-sen and later Chiang Kai-shek, now a museum showcasing 600 years of history.",
-      "address": "292 Changjiang Road, Xuanwu District",
+      "description": "孫文と後に蒋介石の大統領執務室であり、現在は600年の歴史を紹介する博物館です。",
+      "address": "玄武区長江路292号",
       "coordinates": {
         "lat": 32.0322,
         "lng": 118.7972
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "40¥",
-      "recommendedVisitTime": "2 hours",
+      "recommendedVisitTime": "2時間",
       "highlights": [
-        "Zhonghua Gate",
-        "Office buildings",
-        "Garden",
-        "Exhibitions"
+        "中華門",
+        "オフィスビル",
+        "庭園",
+        "展示会"
       ],
-      "tips": "Good audio guide. Large complex with much history. Morning visits recommended.",
+      "tips": "優れた音声ガイドがあります。多くの歴史を持つ広大な複合施設です。午前中の訪問をお勧めします。",
       "image": "/img/ext/8ac32b8fefe6.webp",
       "phone": "+86 25 8457 8888"
     },
     {
       "id": "fuzi-temple",
-      "name": "夫子庙",
-      "nameEn": "Confucius Temple (Fuzi Temple)",
+      "name": "夫子廟",
+      "nameEn": "孔子廟（夫子廟）",
       "category": "cultural",
-      "description": "Ancient temple complex with traditional architecture, markets, and boat rides on the Qinhuai River.",
-      "address": "Fuzi Temple, Qinhuai District",
+      "description": "伝統的な建築、市場、秦淮川でのボートライドがある古代の寺院複合施設。",
+      "address": "夫子廟、秦淮区",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
-      "openingHours": "09:00-21:00 (some areas open later)",
-      "ticketPrice": "Free (some attractions charge)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "09:00-21:00（一部のエリアはそれ以降もオープン）",
+      "ticketPrice": "無料（一部の観光地は有料）",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Confucius Temple",
-        "Qinhuai River boats",
-        "Night lighting",
-        "Street food"
+        "孔子廟",
+        "秦淮川のボート",
+        "夜間照明",
+        "屋台料理"
       ],
-      "tips": "Best at night when illuminated. Try local snacks from vendors. Take boat ride on river.",
+      "tips": "夜にライトアップされたときに訪れるのがベスト。屋台で地元の軽食を試してみてください。川でボートに乗ってみてください。",
       "image": "/img/ext/13d2a7142882.webp",
       "phone": "+86 25 5220 9788"
     },
     {
       "id": "purple-mountain",
       "name": "紫金山",
-      "nameEn": "Purple Mountain",
+      "nameEn": "紫金山",
       "category": "natural",
-      "description": "A 450-meter mountain south of the Ming Xiaoling with hiking trails, ancient temples, and panoramic city views.",
-      "address": "Purple Mountain, Xuanwu District",
+      "description": "明孝陵の南に位置する高さ450メートルの山で、ハイキングコース、古代の寺院、そして街の全景を見渡すことができます。",
+      "address": "紫金山、玄武区",
       "coordinates": {
         "lat": 32.0822,
         "lng": 118.8272
       },
-      "openingHours": "Open 24 hours (attractions vary)",
-      "ticketPrice": "Free (individual attractions charge)",
-      "recommendedVisitTime": "Half to full day",
+      "openingHours": "24時間開放（アトラクションにより異なる）",
+      "ticketPrice": "無料（個々のアトラクションは有料）",
+      "recommendedVisitTime": "半日〜1日",
       "highlights": [
-        "Sun Yat-sen Mausoleum",
-        "Ming Xiaoling",
-        "Music台",
-        "Peak views"
+        "中山陵",
+        "明孝陵",
+        "音楽台",
+        "頂上の景色"
       ],
-      "tips": "Plan full day to cover major sites. Take cable car up, walk down. Combine multiple attractions.",
+      "tips": "主要な観光スポットを回るには丸一日計画を立ててください。ケーブルカーで上り、歩いて下りてください。複数のアトラクションを組み合わせてください。",
       "image": "/img/ext/8992f50f6b3f.webp",
       "phone": "+86 025  4736 5848"
     },
     {
       "id": "xuanwu-lake",
       "name": "玄武湖",
-      "nameEn": "Xuanwu Lake",
+      "nameEn": "玄武湖",
       "category": "natural",
-      "description": "A beautiful urban lake with parks, gardens, and the ancient Ming city wall views, perfect for cycling and walking.",
-      "address": "Xuanwu Lake, Xuanwu District",
+      "description": "美しい都市の湖で、公園、庭園、そして明代の古い城壁の景色が広がり、自転車や散歩に最適です。",
+      "address": "玄武区玄武湖",
       "coordinates": {
         "lat": 32.0822,
         "lng": 118.7772
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Lake cycling",
-        "Five islands",
-        "City wall views",
-        "Cherry blossoms"
+        "湖畔サイクリング",
+        "五つの島々",
+        "城壁の景色",
+        "桜"
       ],
-      "tips": "Rent bikes around the lake. Combine with nearby Purple Mountain. Beautiful at sunset.",
+      "tips": "湖の周りで自転車をレンタルしましょう。近くの紫金山と組み合わせると良いでしょう。日没時の景色はとても美しいです。",
       "image": "/img/ext/915c27010cfe.webp",
       "phone": "+86 25 8361 4286"
     },
     {
       "id": "laochengli",
-      "name": "老门东",
-      "nameEn": "Laochengli",
+      "name": "老門東",
+      "nameEn": "老門東",
       "category": "cultural",
-      "description": "Restored historic district near Fuzi Temple with traditional architecture, crafts, and local snacks.",
-      "address": "Laochengli, Qinhuai District",
+      "description": "夫子廟の近くにある修復された歴史地区で、伝統的な建築、工芸品、地元の軽食が楽しめます。",
+      "address": "秦淮区老門東",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7972
       },
-      "openingHours": "Open 24 hours (shops 10:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24時間営業（店舗10:00-22:00）",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Traditional architecture",
-        "Handcraft shops",
-        "Nanjing snacks",
-        "Photography"
+        "伝統的な建築",
+        "手芸品店",
+        "南京の軽食",
+        "写真"
       ],
-      "tips": "Best evening with lighting. Try duck blood soup and small sesame balls. Less crowded than Fuzi Temple area.",
+      "tips": "ライトアップされた夜の時間帯が最もおすすめです。アヒルの血のスープや小さな胡麻団子をぜひお試しください。夫子廟エリアよりも混雑が少ないです。",
       "image": "/img/ext/998eb40307b9.webp",
       "phone": "+86 025  2132 5191"
     },
     {
       "id": "yuhuata",
       "name": "雨花台",
-      "nameEn": "Yuhuata",
+      "nameEn": "雨花台",
       "category": "historical",
-      "description": "Memorial park and former execution site during Taiping Rebellion era, now a peaceful public park with solemn memorials.",
-      "address": "Yuhuata Road,，雨花台区",
+      "description": "太平天国時代の処刑場だった記念公園で、現在は静かで荘厳な記念館のある公共公園となっています。",
+      "address": "雨花台区雨花台路",
       "coordinates": {
         "lat": 32.0022,
         "lng": 118.8572
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Memorial Hall",
-        "Stone sculptures",
-        "Water features",
-        "Forest atmosphere"
+        "記念館",
+        "石彫刻",
+        "水景施設",
+        "森林の雰囲気"
       ],
-      "tips": "Arrive in morning for peaceful atmosphere. The memorial hall is very moving. Combine with nearby Nanjing South Station.",
+      "tips": "朝の時間帯に到着すると、落ち着いた雰囲気を味わえます。記念館は非常に感動的です。近くの南京南駅と組み合わせて訪れると良いでしょう。",
       "image": "/img/ext/c037209a6c80.webp",
       "phone": "+86 025  0047 6323"
     },
     {
       "id": "zhonghuamen",
-      "name": "中华门城堡",
-      "nameEn": "Zhonghua Gate Castle",
+      "name": "中華門城壁",
+      "nameEn": "中華門城塞",
       "category": "historical",
-      "description": "Ming Dynasty city gate and fortifications, one of the best-preserved Chinese castle walls with unique brick structure.",
-      "address": "1 Zhonghua Road, Qinhuai District",
+      "description": "明代都市門と防御施設。中国で最も保存状態の良い城壁の一つであり、独特のレンガ構造を持つ。",
+      "address": "秦淮区中華路1号",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.8272
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Giant gate complex",
+        "巨大な門複合施設",
         "藏兵洞",
-        "City wall views",
-        "Military history"
+        "城壁の景色",
+        "軍事史"
       ],
-      "tips": "Walk along the wall for panoramic views. The underground chambers are fascinating. Less crowded than other attractions.",
+      "tips": "城壁沿いを歩いてパノラマビューを楽しみましょう。地下の部屋も魅力的です。他の観光地よりも混雑が少ないです。",
       "image": "/img/ext/9f32b9507fe6.webp",
       "phone": "+86 025  9533 2520"
     },
     {
       "id": "linggu-temple",
       "name": "灵谷寺",
-      "nameEn": "Linggu Temple",
+      "nameEn": "霊谷寺",
       "category": "cultural",
-      "description": "Ancient Buddhist temple in Purple Mountain area, famous for银杏树林 and the resonant Dagoba.",
-      "address": "Linggu Temple, Purple Mountain",
+      "description": "紫金山エリアにある古代の仏教寺院で、銀杏並木と響き渡る多宝塔で有名です。",
+      "address": "紫金山霊谷寺",
       "coordinates": {
         "lat": 32.0722,
         "lng": 118.8172
       },
       "openingHours": "06:30-18:00",
-      "ticketPrice": "35¥ (includes Linggu Temple and Music Square)",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "35¥（霊谷寺と音楽広場を含む）",
+      "recommendedVisitTime": "1〜2時間",
       "highopts": [
         "银杏林",
         "Dagoba of Pilgrims",
         "Wuxing Bridge",
         "Bamboo forest"
       ],
-      "tips": "Best in autumn for golden ginkgo. The pagoda offers great views. Very peaceful in early morning.",
+      "tips": "秋には黄金の銀杏を楽しむのに最適です。多宝塔からは素晴らしい景色が見えます。早朝は非常に静かです。",
       "image": "/img/ext/6f510d67b9cb.webp",
-      "phone": "+86 025  5582 1418"
+      "phone": "+86 025  5582 1418",
+      "highlights": [
+        "銀杏林",
+        "巡礼者の舎利塔",
+        "五星橋",
+        "竹林"
+      ]
     },
     {
       "id": "qinhuai-river",
       "name": "秦淮河",
-      "nameEn": "Qinhuai River",
+      "nameEn": "秦淮河",
       "category": "natural",
-      "description": "Historic river flowing through Nanjing's old city, famous for its illuminated boat rides and Riverside views.",
-      "address": "Qinhuai River, Qinhuai District",
+      "description": "南京の旧市街を流れる歴史的な川で、ライトアップされたボート遊覧と川辺の景色で有名です。",
+      "address": "秦淮区秦淮河",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
-      "openingHours": "Boat rides 09:00-22:00",
-      "ticketPrice": "Free (boat ride 80-120¥)",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "ボート遊覧 09:00-22:00",
+      "ticketPrice": "無料（ボート遊覧 80-120¥）",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Night boat ride",
-        "Illuminated banks",
-        "Ancient architecture",
-        "Street food"
+        "夜のボート遊覧",
+        "ライトアップされた川岸",
+        "古代建築",
+        "屋台料理"
       ],
-      "tips": "Take evening boat for best views. Combine with Fuzi Temple and Laochengli. The riverbank is great for walking.",
+      "tips": "夜景を楽しむには夜のボートが最適です。夫子廟や老門東と組み合わせて訪れると良いでしょう。川沿いは散策に最適です。",
       "image": "/img/ext/b557760624b0.webp",
       "phone": "+86 025  6576 7199"
     },
     {
       "id": "purple-mountain-observatory",
       "name": "紫金山天文台",
-      "nameEn": "Purple Mountain Observatory",
+      "nameEn": "紫金山天文台",
       "category": "cultural",
-      "description": "Historic astronomical observatory on Purple Mountain, home to ancient telescopes and stellar artifacts.",
-      "address": "Purple Mountain, Xuanwu District",
+      "description": "紫金山にある歴史的な天文台で、古代の望遠鏡や星に関する遺物が展示されています。",
+      "address": "紫金山、玄武区",
       "coordinates": {
         "lat": 32.0922,
         "lng": 118.8372
@@ -372,7 +378,7 @@
     {
       "id": "xiaoling-winter",
       "name": "石象路",
-      "nameEn": "Stone Elephant Road",
+      "nameEn": "石象路",
       "category": "historical",
       "description": "明孝陵へと続く巨大な石像が並んだ象徴的な600メートルの並木道。",
       "address": "紫金山・明孝陵",
@@ -395,8 +401,8 @@
     },
     {
       "id": "chaotiangong",
-      "name": "朝天宫",
-      "nameEn": "Chaotiangong Palace",
+      "name": "朝天宮",
+      "nameEn": "朝天宮",
       "category": "historical",
       "description": "明朝の皇帝の祖霊を祀る宮殿で、現在は古代建築を展示する博物館。",
       "address": "171白下路、秦淮区",
@@ -405,13 +411,13 @@
         "lng": 118.8072
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "25¥",
+      "ticketPrice": "25元",
       "recommendedVisitTime": "1時間",
       "highlights": [
-        "Ming architecture",
-        "Exhibitions",
-        "Courtyards",
-        "Cultural artifacts"
+        "明代建築",
+        "展示会",
+        "中庭",
+        "文化的な遺物"
       ],
       "tips": "明朝の儀礼文化を理解するのに最適。建築は印象的。近隣の夫子廟と組み合わせると良い。",
       "image": "/img/ext/0075f0e909c2.webp",
@@ -458,8 +464,8 @@
       "highlights": [
         "ガラスウォークウェイ",
         "古代の遗迹",
-        "Modern art",
-        "Pagoda views"
+        "現代アート",
+        "塔の景色"
       ],
       "tips": "興味深い展示がある現代的な寺廟です。ガラスウォークウェイは印象的です。混雑を避けるために早目に到着してください。",
       "image": "/img/ext/996418ec9603.webp",
@@ -467,269 +473,269 @@
     },
     {
       "id": "xjpm",
-      "name": "玄武湖公园",
-      "nameEn": "Xuanwu Lake Park",
+      "name": "玄武湖公園",
+      "nameEn": "玄武湖公園",
       "category": "natural",
-      "description": "Large urban lake park with five islands, cycling paths, cherry blossoms, and ancient city wall views.",
-      "address": "Xuanwu Lake, Xuanwu District",
+      "description": "大きな都市型の湖公園で、5つの島、自転車道、桜並木、そして古代の城壁の景色を楽しむことができます。",
+      "address": "玄武区玄武湖",
       "coordinates": {
         "lat": 32.0822,
         "lng": 118.7772
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Five islands",
-        "Cycling path",
-        "Cherry blossoms",
-        "Sunset views"
+        "五つの島々",
+        "サイクリングロード",
+        "桜",
+        "夕日ビュー"
       ],
-      "tips": "Rent bikes (15¥/hour) to tour the lake. Best at sunset. The cherry blossoms in March are spectacular.",
+      "tips": "自転車（1時間15¥）を借りて湖を一周するのがおすすめです。日没時に訪れると特に美しいです。3月の桜は壮観です。",
       "image": "/img/ext/7504bb87ad9c.webp",
       "phone": "+86 025  6453 4549"
     },
     {
       "id": "taocheng",
       "name": "桃叶渡",
-      "nameEn": "Taoye Ferry",
+      "nameEn": "陶葉渡",
       "category": "cultural",
-      "description": "Historic riverside spot famous in classical poetry, now a charming area with traditional shops.",
-      "address": "Qinhuai River, near Fuzi Temple",
+      "description": "古典詩歌に名高い歴史ある川辺のスポットで、現在は伝統的なお店が並ぶ魅力的なエリアです。",
+      "address": "秦淮河、夫子廟付近",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "30 min - 1 hour",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "30分〜1時間",
       "highlights": [
-        "Classical poetry",
-        "Riverside views",
-        "Traditional shops",
-        "Romantic atmosphere"
+        "古典詩歌",
+        "川辺の景色",
+        "伝統的な商店",
+        "ロマンチックな雰囲気"
       ],
-      "tips": "Best at night with lights. Named after poet's love story. Great for photos. Combine with boat ride.",
+      "tips": "夜のライトアップ時が最も美しいです。詩人の恋愛物語にちなんで名付けられました。写真撮影に最適です。ボート乗りと組み合わせると良いでしょう。",
       "image": "/img/ext/309f30e43563.webp",
       "phone": "+86 025  7326 4220"
     },
     {
       "id": "nanjing-21",
-      "name": "鸡鸣寺",
-      "nameEn": "Jiming Temple",
+      "name": "鶏鳴寺",
+      "nameEn": "鶏鳴寺",
       "category": "cultural",
-      "description": "Ancient Buddhist temple on Purple Mountain, known for its beautiful plum blossoms in winter and peaceful atmosphere.",
-      "address": "1 Jiming Temple Road, Xuanwu District",
+      "description": "紫金山にある古代の仏教寺院で、冬の美しい梅の花と静かな雰囲気で知られています。",
+      "address": "玄武区鶏鳴寺路1号",
       "coordinates": {
         "lat": 32.0622,
         "lng": 118.7872
       },
       "openingHours": "07:00-17:00",
       "ticketPrice": "10¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Plum blossom garden",
-        "Thousand Buddha Hall",
-        "City wall views",
-        "Bamboo forest"
+        "梅の花園",
+        "千仏堂",
+        "城壁の景色",
+        "竹林"
       ],
-      "tips": "Best in February for plum blossoms. Combine with Purple Mountain walk. The vegetarian noodles nearby are famous.",
+      "tips": "2月の梅の花の時期に訪れるのが最適です。紫金山散策と組み合わせると良いでしょう。近くにある精進うどんの店は有名です。",
       "image": "/img/ext/114a5c92c35d.webp",
       "phone": "+86 025  3089 0965"
     },
     {
       "id": "nanjing-22",
-      "name": "阅江楼",
-      "nameEn": "Yuejiang Tower",
+      "name": "閲江楼",
+      "nameEn": "閲江楼",
       "category": "cultural",
-      "description": "Historic tower on Lion Hill offering panoramic views of the Yangtze River and Nanjing skyline.",
-      "address": "Lion Hill, Huaihai Road, Xiaguan District",
+      "description": "獅子山にある歴史的な楼閣で、長江と南京のスカイラインの壮大な景色を一望できます。",
+      "address": "南京市下関区淮海路獅子山",
       "coordinates": {
         "lat": 32.1022,
         "lng": 118.7372
       },
       "openingHours": "08:00-17:30",
       "ticketPrice": "40¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Yangtze River views",
-        "Jingting observation deck",
-        "Ming dynasty architecture",
-        "Historical documents"
+        "揚子江の眺望",
+        "金頂展望台",
+        "明代建築",
+        "歴史資料"
       ],
-      "tips": "Best at sunset for river views. Combined ticket available with Zhonghua Gate. Take photos at the Lion Head.",
+      "tips": "夕暮れ時の川眺めが素晴らしい。中華門との共通チケットがある。獅子頭で写真を撮影してください。",
       "image": "/img/ext/c74d7faf7bb9.webp",
       "phone": "+86 025  2805 5772"
     },
     {
       "id": "nanjing-23",
       "name": "珍珠泉",
-      "nameEn": "Pearl Spring",
+      "nameEn": "珍珠泉",
       "category": "natural",
-      "description": "Beautiful spring area with natural hot springs, ideal for family outings with playground and amusement rides.",
-      "address": "1 Peiliao Road, Pukou District",
+      "description": "自然の温泉、美しい春のエリア。遊び場やアトラクションがあり、家族の外出に最適な場所。",
+      "address": "南京市浦口区培廖路1号",
       "coordinates": {
         "lat": 32.1422,
         "lng": 118.7072
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "40¥ (attractions extra)",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "40元（アトラクション別）",
+      "recommendedVisitTime": "3-4時間",
       "highlights": [
-        "Natural spring",
-        "Hot spring resort",
-        "Wild animal show",
-        "Family activities"
+        "天然温泉",
+        "温泉保養地",
+        "野生動物ショー",
+        "家族向けアクティビティ"
       ],
-      "tips": "Great for families. Come early for animal shows. The hot spring is excellent in winter. Combine with Pukou scenic area.",
+      "tips": "家族に最適です。早い時間に来て動物ショーを観覧してください。冬は温泉が最高です。浦口風景区と併せてお楽しみください。",
       "image": "/img/ext/2d161606e770.webp",
       "phone": "+86 025  5235 2514"
     },
     {
       "id": "nanjing-24",
       "name": "牛首山文化旅游区",
-      "nameEn": "Niushou Mountain Cultural Tourism Zone",
+      "nameEn": "牛首山文化旅游区",
       "category": "cultural",
-      "description": "Modern Buddhist cultural park featuring the stunning Palace of Bliss temple built into a former mining pit.",
-      "address": "Niushou Mountain, Yuhuatai District",
+      "description": "以前の鉱山跡に建てられた見事な幸福宮殿を特徴とする現代の佛教文化公園。",
+      "address": "牛首山、雨花台区",
       "coordinates": {
         "lat": 31.9422,
         "lng": 118.8072
       },
       "openingHours": "09:00-17:30",
       "ticketPrice": "98¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4時間",
       "highlights": [
-        "Palace of Bliss",
-        "Mountain top temple",
-        "Underground palace",
-        "Buddhist art"
+        "幸福宮殿",
+        "山頂の寺",
+        "地下宮殿",
+        "仏教芸術"
       ],
-      "tips": "One of Nanjing's newest attractions. The underground palace is spectacular. Book tickets online. Arrive early for fewer crowds.",
+      "tips": "南京の最新のアトラクションの1つ。地下宮殿は壮観です。オンラインでチケットを購入してください。早めに到着すると混雑を避けられます。",
       "image": "/img/ext/bf99cae8fce5.webp",
       "phone": "+86 025  9655 1896"
     },
     {
       "id": "nanjing-25",
-      "name": "中山植物园",
-      "nameEn": "Zhongshan Botanical Garden",
+      "name": "中山植物園",
+      "nameEn": "中山植物園",
       "category": "natural",
-      "description": "Historic botanical garden at the foot of Purple Mountain, featuring diverse plant collections and peaceful walking paths.",
-      "address": "Ling Road, Xuanwu District",
+      "description": "紫金山麓の歴史的な植物園で、多様な植物コレクションと静かな遊歩道を特徴とします。",
+      "address": "霊路、玄武区",
       "coordinates": {
         "lat": 32.0522,
         "lng": 118.8372
       },
       "openingHours": "08:30-17:00",
-      "ticketPrice": "45¥ (partial), 65¥ (full)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "45円（一部）、65円（全面）",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Plant collections",
-        "Cherry blossom avenue",
-        "Greenhouse",
-        "Nature trails"
+        "植物コレクション",
+        "桜並木",
+        "温室",
+        "自然遊歩路"
       ],
-      "tips": "Best in spring for cherry blossoms and autumn for foliage. The azalea garden is stunning in April. Great for nature photography.",
+      "tips": "春は桜、秋は紅葉が最美。ツツジ庭園は4月に見逃せません。自然写真に最適。",
       "image": "/img/ext/533e4da8695b.webp",
       "phone": "+86 025  7063 3121"
     },
     {
       "id": "nanjing-26",
       "name": "燕雀湖",
-      "nameEn": "Yanqe Lake",
+      "nameEn": "燕子湖",
       "category": "natural",
-      "description": "Picturesque lake near Ming Xiaoling famous for its lotus flowers and reflection views of Purple Mountain.",
-      "address": "Ming Xiaoling, Purple Mountain",
+      "description": "明孝陵近くにある絵のように美しい湖で、蓮の花と紫金山が湖面に映る景色で有名です。",
+      "address": "紫金山・明孝陵",
       "coordinates": {
         "lat": 32.0622,
         "lng": 118.8472
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "30 min - 1 hour",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "30分〜1時間",
       "highlights": [
-        "Lotus flowers",
-        "Mountain reflection",
-        "Photography spot",
-        "Peaceful atmosphere"
+        "蓮の花",
+        "山の反映",
+        "写真スポット",
+        "静かな雰囲気"
       ],
-      "tips": "Best in summer for lotus. The reflection of Purple Mountain is famous. Combine with Ming Xiaoling visit. Morning light is magical.",
+      "tips": "蓮最美の夏。紫金山の反射は有名。明孝陵との併用おすすめ。朝の光は神秘的です。",
       "image": "/img/ext/f40cca09aac0.webp",
       "phone": "+86 025  5411 2435"
     },
     {
       "id": "sun-yat-sen",
       "name": "中山陵",
-      "nameEn": "Sun Yat-sen Mausoleum",
+      "nameEn": "中山陵",
       "category": "landmark",
-      "description": "孙中山先生的陵墓，有392级台阶。",
+      "description": "孫文先生の陵墓で、392段の階段があります。",
       "address": "南京市玄武区",
       "coordinates": {
         "lat": 32.05,
         "lng": 118.85
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
-        "392级台阶",
+        "392段の階段",
         "孙中山"
       ],
-      "tips": "了解民国历史。",
+      "tips": "民国の歴史を学べます。",
       "image": "/img/ext/79aa26f365b8.webp",
       "phone": "+86 25 8443 3582"
     },
     {
       "id": "confucius-temple",
-      "name": "夫子庙",
-      "nameEn": "Confucius Temple",
+      "name": "夫子廟",
+      "nameEn": "孔子廟",
       "category": "street",
-      "description": "南京最著名的文化街区，有秦淮河和各种小吃。",
+      "description": "南京で最も有名な文化街区で、秦淮河や様々な屋台があります。",
       "address": "南京市秦淮区",
       "coordinates": {
         "lat": 32.02,
         "lng": 118.78
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
         "秦淮河",
         "小吃",
         "夜景"
       ],
-      "tips": "品尝南京小吃。",
+      "tips": "南京の軽食を味わえます。",
       "image": "/img/ext/e1e1c86881fa.webp",
       "phone": "+86 25 5221 1264"
     },
     {
       "id": "nanjing-museum",
       "name": "南京博物院",
-      "nameEn": "Nanjing Museum",
+      "nameEn": "南京博物院",
       "category": "museum",
-      "description": "中国三大博物馆之一，馆藏文物42万件。",
+      "description": "中国三大博物館の一つで、所蔵文物は42万点。",
       "address": "南京市玄武区",
       "coordinates": {
         "lat": 32.05,
         "lng": 118.82
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
         "文物",
         "历史"
       ],
-      "tips": "了解南京文化。",
+      "tips": "南京の文化を学べます。",
       "image": "/img/ext/d14fc46ea4eb.webp",
       "phone": "+86 25 8480 2119"
     },
     {
       "id": "nanjing-food",
       "name": "南京美食",
-      "nameEn": "Nanjing Food",
+      "nameEn": "南京料理",
       "category": "street",
-      "description": "南京有鸭血粉丝汤和各种小吃。",
+      "description": "南京には鴨血粉絲湯（アヒルの血入り春雨スープ）や各種小吃（軽食）があります。",
       "address": "南京市",
       "coordinates": {
         "lat": 32.05,
@@ -739,41 +745,41 @@
       "ticketPrice": "人均50元",
       "recommendedVisitTime": "全天",
       "highlights": [
-        "鸭血粉丝汤",
-        "盐水鸭"
+        "鴨血粉絲湯（アヒルの血入り春雨スープ）",
+        "塩水鴨（塩漬けアヒル）"
       ],
-      "tips": "品尝南京美食。",
+      "tips": "南京の美食を味わえます。",
       "image": "/img/ext/6aa09c4a41a8.webp",
       "phone": "+86 025  8143 5020"
     },
     {
       "id": "nanjing-night",
       "name": "南京夜景",
-      "nameEn": "Nanjing Night View",
+      "nameEn": "南京夜景",
       "category": "landmark",
-      "description": "秦淮河和夫子庙的夜景灯光秀。",
+      "description": "秦淮河と夫子廟の夜景ライトアップ。",
       "address": "南京市秦淮区",
       "coordinates": {
         "lat": 32.02,
         "lng": 118.78
       },
-      "openingHours": "夜间",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "openingHours": "夜間",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "灯光秀",
+        "ライトショー",
         "夜景"
       ],
-      "tips": "夏季夜间最美。",
+      "tips": "夏の夜が最も美しい。",
       "image": "/img/ext/5f712fd43b4f.webp",
       "phone": "+86 025  8270 6240"
     },
     {
       "id": "nanjing-wall",
       "name": "南京城墙",
-      "nameEn": "Nanjing City Wall",
+      "nameEn": "南京城壁",
       "category": "landmark",
-      "description": "中国保存最完好的古城墙之一。",
+      "description": "中国で最も保存状態の良い古城壁の一つです。",
       "address": "南京市",
       "coordinates": {
         "lat": 32.05,
@@ -781,21 +787,21 @@
       },
       "openingHours": "08:00-20:00",
       "ticketPrice": "50元",
-      "recommendedVisitTime": "2小时",
+      "recommendedVisitTime": "2時間",
       "highlights": [
         "城墙",
         "历史"
       ],
-      "tips": "了解南京历史。",
+      "tips": "南京の歴史を学べます。",
       "image": "/img/ext/3a1520886bcb.webp",
       "phone": "+86 025  1719 3680"
     },
     {
       "id": "nanjing-temple",
       "name": "灵谷寺",
-      "nameEn": "Linggu Temple",
+      "nameEn": "霊谷寺",
       "category": "temple",
-      "description": "南京最古老的佛教寺院之一。",
+      "description": "南京最古の仏教寺院の一つです。",
       "address": "南京市玄武区",
       "coordinates": {
         "lat": 32.05,
@@ -803,109 +809,109 @@
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "35元",
-      "recommendedVisitTime": "1.5小时",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
         "佛教文化",
-        "无梁殿"
+        "無梁殿（むりょうでん）"
       ],
-      "tips": "了解佛教文化。",
+      "tips": "仏教文化を学べます。",
       "image": "/img/ext/0a2058402a03.webp",
       "phone": "+86 025  9164 2574"
     },
     {
       "id": "nanjing-park",
-      "name": "莫愁湖公园",
-      "nameEn": "Mochou Lake Park",
+      "name": "莫愁湖公園",
+      "nameEn": "莫愁湖公園",
       "category": "park",
-      "description": "南京最美的公园之一，有莫愁湖。",
+      "description": "南京で最も美しい公園の一つで、莫愁湖がある。",
       "address": "南京市建邺区",
       "coordinates": {
         "lat": 32.02,
         "lng": 118.75
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
         "湖泊",
-        "花园"
+        "花園"
       ],
-      "tips": "休闲好去处。",
+      "tips": "くつろぎに最適な場所です。",
       "image": "/img/ext/a2fca1de8f2c.webp",
       "phone": "+86 025  1041 8939"
     },
     {
       "id": "nanjing-bridge",
-      "name": "南京长江大桥",
-      "nameEn": "Nanjing Yangtze River Bridge",
+      "name": "南京長江大橋",
+      "nameEn": "南京長江大橋",
       "category": "landmark",
-      "description": "中国自行设计建造的第一座长江大桥。",
+      "description": "中国が自ら設計・建設した初の長江大橋。",
       "address": "南京市",
       "coordinates": {
         "lat": 32.08,
         "lng": 118.75
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "30分钟",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "30分",
       "highlights": [
         "大桥",
-        "长江"
+        "長江"
       ],
-      "tips": "了解中国桥梁史。",
+      "tips": "中国の橋梁史を学べます。",
       "image": "/img/ext/2517ff271563.webp",
       "phone": "+86 025  5478 0540"
     },
     {
       "id": "nanjing-street",
-      "name": "老门东",
-      "nameEn": "Laomengdong",
+      "name": "老門東",
+      "nameEn": "老門東",
       "category": "street",
-      "description": "南京新开发的历史文化街区。",
+      "description": "南京に新しく開発された歴史文化エリア。",
       "address": "南京市秦淮区",
       "coordinates": {
         "lat": 32.02,
         "lng": 118.78
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
         "历史街区",
         "小吃"
       ],
-      "tips": "了解南京文化。",
+      "tips": "南京の文化を学べます。",
       "image": "/img/ext/0de1ce3b6ea8.webp",
       "phone": "+86 025  4042 8631"
     },
     {
       "id": "nanjing-mountain",
       "name": "紫金山",
-      "nameEn": "Purple Mountain",
+      "nameEn": "紫金山",
       "category": "nature",
-      "description": "南京最著名的山，有中山陵和明孝陵。",
+      "description": "南京で最も有名な山で、中山陵と明孝陵があります。",
       "address": "南京市玄武区",
       "coordinates": {
         "lat": 32.05,
         "lng": 118.85
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
+      "ticketPrice": "無料",
       "recommendedVisitTime": "半天",
       "highlights": [
         "中山陵",
         "明孝陵"
       ],
-      "tips": "登高望远。",
+      "tips": "高台に登って遠くを眺められます。",
       "image": "/img/ext/f237a626b719.webp",
       "phone": "+86 025  6506 0248"
     },
     {
       "id": "nanjing-temple2",
       "name": "栖霞寺",
-      "nameEn": "Qixia Temple",
+      "nameEn": "栖霞寺",
       "category": "temple",
-      "description": "南京最古老的佛教寺院，有舍利塔。",
+      "description": "南京最古の仏教寺院で、舎利塔があります。",
       "address": "南京市栖霞区",
       "coordinates": {
         "lat": 32.15,
@@ -913,12 +919,12 @@
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "25元",
-      "recommendedVisitTime": "1.5小时",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
         "舍利塔",
         "佛教文化"
       ],
-      "tips": "秋季红叶最美。",
+      "tips": "秋の紅葉が最も美しい。",
       "image": "/img/ext/5970ef10e804.webp",
       "phone": "+86 025  9010 0102"
     },
@@ -927,112 +933,112 @@
       "name": "百家湖",
       "nameEn": "白家湖",
       "category": "nature",
-      "description": "江宁区的人工湖。",
+      "description": "江寧区にある人造湖です。",
       "address": "南京市江宁区",
       "coordinates": {
         "lat": 31.95,
         "lng": 118.83
       },
-      "openingHours": "00:00-24:00",
+      "openingHours": "全天",
       "ticketPrice": "無料",
       "recommendedVisitTime": "1時間",
       "highlights": [
         "湖泊"
       ],
-      "tips": "リラックスするのに最適な場所です。",
+      "tips": "くつろぎに最適な場所です。",
       "image": "/img/ext/c09fcbe63c84.webp",
       "phone": "+86 025  2246 3728"
     },
     {
       "id": "nanjing-university",
       "name": "南京大学",
-      "nameEn": "Nanjing University",
+      "nameEn": "南京大学",
       "category": "landmark",
-      "description": "中国最著名的高等学府之一。",
+      "description": "中国で最も有名な高等教育機関の一つ。",
       "address": "南京市鼓楼区",
       "coordinates": {
         "lat": 32.05,
         "lng": 118.78
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "校园风光"
+        "キャンパス風景"
       ],
-      "tips": "了解南京教育。",
+      "tips": "南京の教育を学べます。",
       "image": "/img/ext/ad6ba92d18a2.webp",
       "phone": "+86 025  9147 4909"
     },
     {
       "id": "nanjing-street2",
       "name": "颐和路",
-      "nameEn": "Yihe Road",
+      "nameEn": "頤和路",
       "category": "street",
-      "description": "南京最美的街道之一，有大量民国建筑。",
+      "description": "南京で最も美しい通りの一つで、多くの民国時代の建築があります。",
       "address": "南京市鼓楼区",
       "coordinates": {
         "lat": 32.05,
         "lng": 118.78
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
         "民国建筑"
       ],
-      "tips": "了解民国历史。",
+      "tips": "民国の歴史を学べます。",
       "image": "/img/ext/d0f816918f00.webp",
       "phone": "+86 025  7481 9175"
     },
     {
       "id": "nanjing-museum2",
-      "name": "南京科技馆",
-      "nameEn": "Nanjing Science Museum",
+      "name": "南京科技館",
+      "nameEn": "南京科学博物館",
       "category": "museum",
-      "description": "展示科技知识的博物馆。",
+      "description": "科学技術の知識を展示する博物館。",
       "address": "南京市建邺区",
       "coordinates": {
         "lat": 32.02,
         "lng": 118.75
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
-        "科技展览"
+        "科学技術展覧会"
       ],
-      "tips": "适合亲子游。",
+      "tips": "家族連れに最適。",
       "image": "/img/ext/e7d8c6cced83.webp",
       "phone": "+86 025  0102 9199"
     },
     {
       "id": "nanjing-park2",
       "name": "雨花台",
-      "nameEn": "Yuhuatai",
+      "nameEn": "雨花台",
       "category": "landmark",
-      "description": "纪念革命先烈的纪念地。",
+      "description": "革命の先烈を記念する場所。",
       "address": "南京市雨花台区",
       "coordinates": {
         "lat": 32,
         "lng": 118.78
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
         "革命历史"
       ],
-      "tips": "了解革命历史。",
+      "tips": "革命の歴史を学べます。",
       "image": "/img/ext/f811ab872f1e.webp",
       "phone": "+86 025  7726 7413"
     },
     {
       "id": "nanjing-food2",
       "name": "南京大排档",
-      "nameEn": "Nanjing Dapaidang",
+      "nameEn": "南京大排档",
       "category": "street",
-      "description": "南京最有名的餐厅，有各种南京传统菜。",
+      "description": "南京で最も有名なレストランで、様々な南京の伝統料理がある。",
       "address": "南京市",
       "coordinates": {
         "lat": 32.05,
@@ -1040,21 +1046,21 @@
       },
       "openingHours": "全天",
       "ticketPrice": "人均80元",
-      "recommendedVisitTime": "1.5小时",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
         "南京菜",
-        "盐水鸭"
+        "塩水鴨（塩漬けアヒル）"
       ],
-      "tips": "品尝南京菜。",
+      "tips": "南京料理を味わえます。",
       "image": "/img/ext/72e9d04a7c8f.webp",
       "phone": "+86 025  8917 2582"
     },
     {
       "id": "nanjing-temple3",
-      "name": "鸡鸣寺",
-      "nameEn": "Jiming Temple",
+      "name": "鶏鳴寺",
+      "nameEn": "鶏鳴寺",
       "category": "temple",
-      "description": "南京最古老的佛教寺院，有1700多年历史。",
+      "description": "南京最古の仏教寺院で、1700年以上の歴史があります。",
       "address": "南京市玄武区",
       "coordinates": {
         "lat": 32.05,
@@ -1062,19 +1068,19 @@
       },
       "openingHours": "07:00-17:00",
       "ticketPrice": "10元",
-      "recommendedVisitTime": "1小时",
+      "recommendedVisitTime": "1時間",
       "highlights": [
         "古寺",
         "樱花"
       ],
-      "tips": "春季樱花最美。",
+      "tips": "春の桜が最も美しいです。",
       "image": "/img/ext/dea318134a5d.webp",
       "phone": "+86 025  9510 7593"
     },
     {
       "id": "nanjing-lake2",
       "name": "前湖",
-      "nameEn": "Qianhu Lake",
+      "nameEn": "千胡湖",
       "category": "nature",
       "description": "玄武湖の一部です。",
       "address": "南京市玄武区",
@@ -1082,66 +1088,66 @@
         "lat": 32.08,
         "lng": 118.78
       },
-      "openingHours": "終日開放",
+      "openingHours": "全天",
       "ticketPrice": "無料",
       "recommendedVisitTime": "30分",
       "highlights": [
-        "湖"
+        "湖泊"
       ],
-      "tips": "リラックスするのに最適な場所です。",
+      "tips": "くつろぎに最適な場所です。",
       "image": "/img/ext/464ba01d8b2d.webp",
       "phone": "+86 025  2400 4315"
     },
     {
       "id": "nj-park3",
-      "name": "玄武湖公园",
-      "nameEn": "Xuanwu Lake Park",
+      "name": "玄武湖公園",
+      "nameEn": "玄武湖公園",
       "category": "park",
-      "description": "南京最大的城市公园。",
+      "description": "南京最大の都市公園。",
       "address": "南京市玄武区",
       "coordinates": {
         "lat": 32.08,
         "lng": 118.78
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
         "湖泊",
-        "公园"
+        "公園"
       ],
-      "tips": "休闲好去处。",
+      "tips": "くつろぎに最適な場所です。",
       "image": "/img/ext/7d0289f89b56.webp",
       "phone": "+86 025  4466 2502"
     },
     {
       "id": "nj-street3",
       "name": "新街口",
-      "nameEn": "Xinjiekou",
+      "nameEn": "新街口",
       "category": "street",
-      "description": "南京最繁华的商业中心。",
+      "description": "南京で最も繁華な商業中心地。",
       "address": "南京市鼓楼区",
       "coordinates": {
         "lat": 32.05,
         "lng": 118.78
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
-        "购物",
+        "ショッピング",
         "美食"
       ],
-      "tips": "购物好去处。",
+      "tips": "買い物に最適な場所。",
       "image": "/img/ext/8d2255e3da70.webp",
       "phone": "+86 025  6800 7355"
     },
     {
       "id": "nj-temple4",
       "name": "牛首山",
-      "nameEn": "Niushou Mountain",
+      "nameEn": "牛首山",
       "category": "nature",
-      "description": "南京南部的山，有佛顶宫。",
+      "description": "南京南部の山で、仏頂宮がある。",
       "address": "南京市江宁区",
       "coordinates": {
         "lat": 31.93,
@@ -1151,32 +1157,32 @@
       "ticketPrice": "98元",
       "recommendedVisitTime": "半天",
       "highlights": [
-        "佛顶宫",
+        "仏頂宮",
         "佛教文化"
       ],
-      "tips": "了解佛教文化。",
+      "tips": "仏教文化を学べます。",
       "image": "/img/ext/6e0168a28ab2.webp",
       "phone": "+86 025  2772 6424"
     },
     {
       "id": "nj-lake3",
       "name": "紫霞湖",
-      "nameEn": "Zixia Lake",
+      "nameEn": "紫霞湖",
       "category": "nature",
-      "description": "紫金山中的湖泊。",
+      "description": "紫金山の中にある湖です。",
       "address": "南京市玄武区",
       "coordinates": {
         "lat": 32.05,
         "lng": 118.85
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
         "湖泊",
         "森林"
       ],
-      "tips": "休闲好去处。",
+      "tips": "くつろぎに最適な場所です。",
       "image": "/img/ext/8fc80514ea39.webp",
       "phone": "+86 025  1725 6780"
     }
@@ -1185,30 +1191,30 @@
     {
       "id": "nanjing-1",
       "name": "南京大牌档",
-      "nameEn": "Nanjing Da Pai Dang",
-      "type": "local",
-      "cuisine": "Nanjing",
+      "nameEn": "南京大排档",
+      "type": "ローカル",
+      "cuisine": "南京料理",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Multiple locations including Xuanwu and Fuzi Temple",
+      "address": "複数店舗（玄武湖・夫子廟附近）",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7972
       },
       "phone": "+86 25 5226 8888",
       "hours": "11:00-22:00",
-      "description": "Popular chain serving authentic Nanjing and Jiangsu cuisine in traditional atmosphere.",
+      "description": "伝統的な雰囲気の中で本格的な南京・江蘇料理を提供する人気チェーン店",
       "dishHighlights": [
-        "Duck blood soup",
-        "Salt Duck",
-        "Steamed dumplings",
-        "Qinhuai snacks"
+        "血鴨汁",
+        "塩鴨",
+        "蒸し餃子",
+        "秦淮屋台料理"
       ],
       "tags": [
-        "local",
-        "nanjing-cuisine",
-        "traditional",
-        "chain"
+        "ローカル",
+        "南京料理",
+        "伝統的",
+        "チェーン店"
       ],
       "star": 0,
       "diamond": 0,
@@ -1217,58 +1223,58 @@
     {
       "id": "nanjing-2",
       "name": "狮子桥",
-      "nameEn": "Shizi Qiao",
-      "type": "blackpearl",
+      "nameEn": "獅子橋",
+      "type": "黒真珠",
       "diamond": 1,
-      "cuisine": "Jiangsu",
+      "cuisine": "江蘇料理",
       "avgPrice": 150,
       "rating": 4.5,
-      "address": "73 Guangdong Road, Gulou District",
+      "address": "鼓楼区広東路73号",
       "coordinates": {
         "lat": 32.0422,
         "lng": 118.7772
       },
       "phone": "+86 25 8330 0888",
       "hours": "10:30-21:30",
-      "description": "One-diamond Black Pearl restaurant known for refined Jiangsu cuisine and elegant dining.",
+      "description": "洗練された江蘇料理と上品なダイニングで知られる一ツ星ブラックパールレストラン",
       "dishHighlights": [
-        "Steamed mantou with crab roe",
-        "Braised pork belly",
-        "Sweet and sour mandarin fish"
+        "蟹味噌蒸し饅頭",
+        "豚バラ肉の煮込み",
+        "甘酸っぱいスズキの唐揚"
       ],
       "tags": [
-        "fine-dining",
-        "jiangsu-cuisine",
-        "elegant"
+        "高級レストラン",
+        "江蘇料理",
+        "上品"
       ],
       "star": 0,
       "imageUrl": "/img/ext/2b02a2d279a0.webp"
     },
     {
       "id": "nanjing-3",
-      "name": "尹氏鸡汁汤包",
-      "nameEn": "Yin Shi Chicken Soup Dumplings",
-      "type": "local",
-      "cuisine": "Nanjing Snacks",
+      "name": "尹氏鶏汁湯包（インシーチージータンバオ）",
+      "nameEn": "銀世（チュー）チキンスープ餃子（餃子）",
+      "type": "ローカル",
+      "cuisine": "南京小吃",
       "avgPrice": 40,
       "rating": 4.9,
-      "address": "28 Zhuangyuan Kitchen (near Fuzi Temple)",
+      "address": "28号 状元厨房（夫子廟近く）",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "07:00-19:00",
-      "description": "Legendary tiny soup dumplings in rich chicken broth, a Nanjing institution since 1920s.",
+      "description": "1920年代からの南京名物。旨みの深い鶏ガラスープに包まれた極小サイズのワンタン。",
       "dishHighlights": [
-        "Chicken soup dumplings",
-        "Duck blood soup",
-        "Fried rice noodles"
+        "チキンスープ餃子",
+        "鴨血湯",
+        "チャーハン"
       ],
       "tags": [
-        "local",
-        "famous",
-        "snacks",
-        "must-try"
+        "地元っ子向け",
+        "有名",
+        "小吃",
+        "必食"
       ],
       "star": 0,
       "diamond": 0,
@@ -1277,30 +1283,30 @@
     },
     {
       "id": "nanjing-4",
-      "name": "回味鸭血粉丝汤",
-      "nameEn": "Huiwei Duck Blood Noodle Soup",
-      "type": "local",
-      "cuisine": "Nanjing",
+      "name": "回味鴨血粉絲湯（回味のアヒル血春雨スープ）",
+      "nameEn": "回味鴨血ラーメン",
+      "type": "ローカル",
+      "cuisine": "南京料理",
       "avgPrice": 35,
       "rating": 4.7,
-      "address": "Multiple locations",
+      "address": "複数の店舗",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7972
       },
       "hours": "06:00-22:00",
-      "description": "Popular chain famous for duck blood noodle soup, a quintessential Nanjing breakfast.",
+      "description": "南京の代表的な朝食として知られる血鴨汁麺で 유명な人気チェーン店",
       "dishHighlights": [
-        "Duck blood soup",
-        "Duck liver",
-        "Tofu knots",
-        "Fried dough sticks"
+        "血鴨汁",
+        "鴨レバー",
+        "結び豆腐",
+        "油条"
       ],
       "tags": [
-        "local",
-        "nanjing-cuisine",
-        "breakfast",
-        "value"
+        "ローカル",
+        "南京料理",
+        "朝ごはん",
+        "価格重視"
       ],
       "star": 0,
       "diamond": 0,
@@ -1310,28 +1316,28 @@
     {
       "id": "nanjing-5",
       "name": "咸亨酒店",
-      "nameEn": "Xian Heng Hotel",
-      "type": "local",
-      "cuisine": "Shaoxing/Nanjing",
+      "nameEn": "咸亨酒店",
+      "type": "ローカル",
+      "cuisine": "紹興/南京",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "Near Fuzi Temple",
+      "address": "夫子廟近く",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "10:00-22:00",
-      "description": "Historic restaurant inspired by Lu Xun's famous work, serving Shaoxing wine and traditional dishes.",
+      "description": "魯迅の名作にインスパイアされた歴史的なレストランで、紹興酒と伝統的な料理を提供します",
       "dishHighlights": [
-        "Drunken chicken",
-        "Braised pork belly",
-        "Stinky tofu"
+        "酔詰め鶏",
+        "豚バラ肉の煮込み",
+        "臭豆腐"
       ],
       "tags": [
-        "historic",
-        "lu-xun",
-        "traditional",
-        "cultural"
+        "歴史的",
+        "魯迅",
+        "伝統的",
+        "文化"
       ],
       "star": 0,
       "diamond": 0,
@@ -1340,29 +1346,29 @@
     },
     {
       "id": "nanjing-6",
-      "name": "绿柳居",
-      "nameEn": "Lv Liu Ju",
-      "type": "local",
-      "cuisine": "Nanjing Vegetarian",
+      "name": "緑柳居（リュウリュウジュ）",
+      "nameEn": "緑柳居",
+      "type": "ローカル",
+      "cuisine": "南京ベジタリアン",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Near Fuzi Temple",
+      "address": "夫子廟附近",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "07:00-20:00",
-      "description": "Famous vegetarian restaurant established 1912, known for meat substitutes and Buddhist cuisine.",
+      "description": "1912年に創業した有名なベジタリアンレストランで、肉の代替品と精進料理で知られています",
       "dishHighlights": [
-        "Vegetarian duck",
-        "Buddhist vegetables",
-        "Rice rolls"
+        "ベジタリアン鴨",
+        "精進野菜",
+        "米粉ロール"
       ],
       "tags": [
-        "local",
-        "vegetarian",
-        "historic",
-        "buddhist"
+        "ローカル",
+        "ベジタリアン",
+        "歴史ある",
+        "仏教"
       ],
       "star": 0,
       "diamond": 0,
@@ -1372,28 +1378,28 @@
     {
       "id": "nanjing-7",
       "name": "小笼包店",
-      "nameEn": "Nanjing Soup Dumplings",
-      "type": "local",
-      "cuisine": "Nanjing Snacks",
+      "nameEn": "南京小籠包",
+      "type": "ローカル",
+      "cuisine": "南京小吃",
       "avgPrice": 30,
       "rating": 4.6,
-      "address": "Various locations",
+      "address": "様々な場所",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7872
       },
       "hours": "06:00-14:00",
-      "description": "Local breakfast spots serving Nanjing-style soup dumplings and congee.",
+      "description": "南京風の小籠包とお粥を提供する地元の朝食スポット",
       "dishHighlights": [
-        "Soup dumplings",
-        "Congee",
-        "Fried dough sticks"
+        "小籠包",
+        "お粥",
+        "揚げパン"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "budget",
-        "snacks"
+        "ローカル",
+        "朝食",
+        "格安",
+        "軽食"
       ],
       "star": 0,
       "diamond": 0,
@@ -1403,30 +1409,30 @@
     {
       "id": "nanjing-8",
       "name": "秦淮人家",
-      "nameEn": "Qinhuai Renjia",
-      "type": "local",
-      "cuisine": "Nanjing",
+      "nameEn": "秦淮人家",
+      "type": "ローカル",
+      "cuisine": "南京料理",
       "avgPrice": 120,
       "rating": 4.6,
-      "address": "Near Qinhuai River, Fuzi Temple",
+      "address": "秦淮河方面、夫子廟近く",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "phone": "+86 25 5220 8888",
       "hours": "11:00-21:30",
-      "description": "Riverside restaurant serving quality Nanjing cuisine with evening boat ride option.",
+      "description": "秦淮河沿いのレストラン。質の高い南京料理を提供し、夕方の舟遊覧オプションあり。",
       "dishHighlights": [
-        "Nanjing salt duck",
-        "Steamed fish",
-        "Qinhuai snacks",
-        "River views"
+        "南京塩鴨",
+        "スチーム",
+        "秦淮屋台料理",
+        "川 전망"
       ],
       "tags": [
-        "local",
-        "scenic",
-        "nanjing-cuisine",
-        "romantic"
+        "地元",
+        "景勝地",
+        "南京料理",
+        "ロマンチック"
       ],
       "star": 0,
       "diamond": 0,
@@ -1434,29 +1440,29 @@
     },
     {
       "id": "nanjing-9",
-      "name": "韩复兴",
-      "nameEn": "Han Fu Xing",
-      "type": "local",
-      "cuisine": "Nanjing Salted Duck",
+      "name": "韓復興（ハンフーシン）",
+      "nameEn": "韓福星",
+      "type": "ローカル",
+      "cuisine": "南京塩水鴨",
       "avgPrice": 60,
       "rating": 4.7,
-      "address": "Multiple locations including Zhuangyuan Kitchen",
+      "address": "荘園厨房を含む複数店舗",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "08:00-20:00",
-      "description": "Famous for authentic Nanjing salted duck, a must-buy for visitors to take home.",
+      "description": "本格的な南京塩水鴨で有名で、持ち込み必携のお土産です。",
       "dishHighlights": [
-        "Nanjing salted duck",
-        "Duck wings",
-        "Duck neck"
+        "南京塩水鴨",
+        "鴨の手羽先",
+        "鴨の首"
       ],
       "tags": [
-        "local",
-        "famous",
-        "souvenir",
-        "must-try"
+        "地元",
+        "有名",
+        "お土産",
+        "必食"
       ],
       "star": 0,
       "diamond": 0,
@@ -1465,30 +1471,30 @@
     },
     {
       "id": "nanjing-10",
-      "name": "奇芳阁",
-      "nameEn": "Qi Fang Ge",
-      "type": "local",
-      "cuisine": "Nanjing Snacks",
+      "name": "奇芳閣（チーファンゴー）",
+      "nameEn": "戚方閣",
+      "type": "ローカル",
+      "cuisine": "南京スナック",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "Near Fuzi Temple",
+      "address": "夫子廟の近く",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "07:00-19:00",
-      "description": "Historic snack restaurant known for traditional Nanjing breakfast and local delicacies.",
+      "description": "伝統的な南京の朝食と地元の珍味で知られる歴史的なスナックレストラン",
       "dishHighlights": [
-        "Duck blood soup",
-        "Fried dough sticks",
-        "Rice rolls",
-        "Congee"
+        "血鴨汁",
+        "揚げパン",
+        "腸粉",
+        "おかゆ"
       ],
       "tags": [
-        "local",
-        "historic",
-        "breakfast",
-        "snacks"
+        "ローカル",
+        "歴史的",
+        "朝ごはん",
+        "軽食"
       ],
       "star": 0,
       "diamond": 0,
@@ -1497,29 +1503,29 @@
     },
     {
       "id": "nanjing-11",
-      "name": "永和园",
-      "nameEn": "Yong He Yuan",
-      "type": "local",
-      "cuisine": "Nanjing Snacks",
+      "name": "永和園",
+      "nameEn": "永和園",
+      "type": "ローカル",
+      "cuisine": "南京スナック",
       "avgPrice": 40,
       "rating": 4.6,
-      "address": "Near Fuzi Temple",
+      "address": "夫子廟の近く",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "06:30-19:00",
-      "description": "Long-standing snack shop famous for wontons and crab roe dumplings.",
+      "description": "ワンタンと蟹味噌餃子で有名な古参のスナック店",
       "dishHighlights": [
-        "Wontons",
-        "Crab roe dumplings",
-        "Noodles"
+        "ワンタン",
+        "蟹味噌餃子",
+        "ラーメン"
       ],
       "tags": [
-        "local",
-        "historic",
-        "breakfast",
-        "value"
+        "ローカル",
+        "歴史的",
+        "朝ごはん",
+        "コストパフォーマンス"
       ],
       "star": 0,
       "diamond": 0,
@@ -1528,29 +1534,29 @@
     },
     {
       "id": "nanjing-12",
-      "name": "六朝面馆",
-      "nameEn": "Liu Chao Noodles",
-      "type": "local",
-      "cuisine": "Nanjing Noodles",
+      "name": "六朝麺館（リウチャオメングアン）",
+      "nameEn": "劉超麺条",
+      "type": "ローカル",
+      "cuisine": "南京ラーメン",
       "avgPrice": 35,
       "rating": 4.5,
-      "address": "Near Fuzi Temple",
+      "address": "夫子廟の近く",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "10:00-22:00",
-      "description": "Popular noodle shop serving traditional Nanjing-style noodles with various toppings.",
+      "description": "様々なトッピングを提供する伝統的な南京風ラーメンで人気のラーメン店",
       "dishHighlights": [
-        "Duck liver noodles",
-        "Beef noodles",
-        "Vegetable noodles"
+        "鴨レバーラーメン",
+        "牛肉麺",
+        "野菜ラーメン"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "quick",
-        "value"
+        "ローカル",
+        "麺類",
+        "クイック",
+        "コストパフォーマンス"
       ],
       "star": 0,
       "diamond": 0,
@@ -1559,29 +1565,29 @@
     },
     {
       "id": "nanjing-13",
-      "name": "鸡鸣寺素面",
-      "nameEn": "Jiming Temple Vegetarian Noodles",
-      "type": "local",
-      "cuisine": "Buddhist Vegetarian",
+      "name": "鶏鳴寺素麺（ケイメイジそば）",
+      "nameEn": "鶏鳴寺ベジタリアンラーメン",
+      "type": "ローカル",
+      "cuisine": "精進料理",
       "avgPrice": 45,
       "rating": 4.6,
-      "address": "Near Jiming Temple",
+      "address": "鶏鳴寺近く",
       "coordinates": {
         "lat": 32.0622,
         "lng": 118.7872
       },
       "hours": "10:00-19:00",
-      "description": "Vegetarian noodles near Jiming Temple, known for Buddhist cuisine and peaceful atmosphere.",
+      "description": "鶏鳴寺近くのベジタリアンラーメンで、仏教料理と静かな環境で知られる",
       "dishHighlights": [
-        "Vegetarian noodles",
-        "Buddhist vegetables",
-        "Tofu skin rolls"
+        "ベジタリアンラーメン",
+        "精進野菜",
+        "湯葉巻き"
       ],
       "tags": [
-        "local",
-        "vegetarian",
-        "buddhist",
-        "peaceful"
+        "ローカル",
+        "ベジタリアン",
+        "仏教",
+        "静か"
       ],
       "star": 0,
       "diamond": 0,
@@ -1590,62 +1596,62 @@
     },
     {
       "id": "nanjing-14",
-      "name": "南京精菜馆",
-      "nameEn": "Nanjing Fine Cuisine",
-      "type": "blackpearl",
+      "name": "南京精菜館（ナンキンせいさいかん）",
+      "nameEn": "南京料理",
+      "type": "黒真珠",
       "diamond": 1,
-      "cuisine": "Jiangsu",
+      "cuisine": "江蘇料理",
       "avgPrice": 200,
       "rating": 4.7,
-      "address": "188 Guangzhou Road, Gulou District",
+      "address": "鼓楼区広州路188号",
       "coordinates": {
         "lat": 32.0422,
         "lng": 118.7772
       },
       "phone": "+86 25 8332 0888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "One-diamond Black Pearl restaurant offering refined Jiangsu cuisine with elegant presentation.",
+      "description": "一つ星的黑真珠レストランで、繊細な江苏料理をエレガントなプレゼンテーションで提供します。",
       "dishHighlights": [
-        "Steamed Jiangsu fish",
-        "Braised pork belly",
-        "Seasonal vegetables"
+        "蒸し江苏魚",
+        "豚バラ肉の煮込み",
+        "季節の野菜"
       ],
       "tags": [
-        "fine-dining",
-        "jiangsu-cuisine",
-        "elegant",
-        "special-occasion"
+        "高級レストラン",
+        "江蘇料理",
+        "上品",
+        "特別な機会"
       ],
       "star": 0,
       "imageUrl": "/img/ext/a4d996ef9d67.webp"
     },
     {
       "id": "nanjing-15",
-      "name": "金陵饭店梅苑",
-      "nameEn": "Plum Garden - Jinling Hotel",
-      "type": "fine",
-      "cuisine": "Jiangsu",
+      "name": "金陵飯店梅苑（キンリンハンテンばいえん）",
+      "nameEn": "梅花園 - 金陵ホテル",
+      "type": "本格的",
+      "cuisine": "江蘇料理",
       "avgPrice": 300,
       "rating": 4.8,
-      "address": "2 Hanzhong Road, Xuanwu District (Jinling Hotel)",
+      "address": "漢中路2号、玄武湖区（金陵ホテル内）",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7872
       },
       "phone": "+86 25 8471 1888",
       "hours": "11:30-14:00, 17:30-21:30",
-      "description": "High-end restaurant in Jinling Hotel serving premium Jiangsu cuisine with imperial heritage.",
+      "description": "金陵ホテル内にある高級レストランで、王室の歴史を持つプレミアム江蘇料理を提供します。",
       "dishHighlights": [
-        "Imperial Jinling cuisine",
-        "Abalone",
-        "Bird's nest soup",
-        "Premium seafood"
+        "皇室金陵料理",
+        "アワビ",
+        "燕窩",
+        "プレミアムシーフード"
       ],
       "tags": [
-        "fine-dining",
-        "luxury",
-        "imperial",
-        "special-occasion"
+        "高級レストラン",
+        "奢侈",
+        "宮廷",
+        "特別な機会"
       ],
       "star": 0,
       "diamond": 0,
@@ -1653,29 +1659,29 @@
     },
     {
       "id": "nanjing-16",
-      "name": "清真马祥兴",
-      "nameEn": "Ma Xiang Xing Halal",
-      "type": "local",
-      "cuisine": "Halal Nanjing",
+      "name": "清真馬祥興（チンジェンマーシャンシン）",
+      "nameEn": "馬行興ハラール",
+      "type": "ローカル",
+      "cuisine": "ハラール南京",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "76 Guangzhou Road, Gulou District",
+      "address": "鼓楼区広州路76号",
       "coordinates": {
         "lat": 32.0422,
         "lng": 118.7772
       },
       "hours": "10:00-22:00",
-      "description": "Historic Muslim restaurant known for beef dishes and traditional Halal Nanjing cuisine.",
+      "description": "牛肉料理と伝統的なハラール南京料理で知られる歴史的なムスリレストランです。",
       "dishHighlights": [
-        "Beef noodles",
-        "Lamb skewers",
-        "Hand-pulled noodles"
+        "牛肉麺",
+        "羊肉串",
+        "手引ラーメン"
       ],
       "tags": [
-        "local",
-        "halal",
-        "muslim",
-        "historic"
+        "ローカル",
+        "ハラール",
+        "イスラム料理",
+        "歴史的"
       ],
       "star": 0,
       "diamond": 0,
@@ -1684,30 +1690,30 @@
     },
     {
       "id": "nanjing-17",
-      "name": "夫子庙小吃广场",
-      "nameEn": "Fuzi Temple Snack Street",
-      "type": "local",
-      "cuisine": "Nanjing Snacks",
+      "name": "夫子廟小吃広場",
+      "nameEn": "夫子廟小吃街",
+      "type": "ローカル",
+      "cuisine": "南京スナック",
       "avgPrice": 30,
       "rating": 4.3,
-      "address": "Fuzi Temple area",
+      "address": "夫子廟エリア",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "10:00-22:00",
-      "description": "Open-air snack market with dozens of vendors serving local Nanjing snacks and street food.",
+      "description": "数十の屋台が地元の南京スナックとストリートフードを提供する屋外スナック市場。",
       "dishHighlights": [
-        "Duck blood soup",
-        "Stinky tofu",
-        "Grilled squid",
-        "Tangbao"
+        "血鴨汁",
+        "臭豆腐",
+        "焼きイカ",
+        "湯包"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "street-food",
-        "night-market"
+        "ローカル",
+        "軽食",
+        "屋台料理",
+        "夜市"
       ],
       "star": 0,
       "diamond": 0,
@@ -1716,30 +1722,30 @@
     },
     {
       "id": "nanjing-18",
-      "name": "金陵小红枣",
-      "nameEn": "Jinling Red Dates",
-      "type": "local",
-      "cuisine": "Nanjing Desserts",
+      "name": "金陵小紅棗",
+      "nameEn": "金陵紅枣",
+      "type": "ローカル",
+      "cuisine": "南京デザート",
       "avgPrice": 25,
       "rating": 4.4,
-      "address": "Near Fuzi Temple",
+      "address": "夫子廟の近く",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "09:00-21:00",
-      "description": "Local dessert shop famous for red date soup and traditional Nanjing sweet soups.",
+      "description": "紅枣スープと伝統的な南京甘みで有名な地元のデザートショップ。",
       "dishHighlights": [
-        "Red date soup",
-        "Taro soup",
-        "Sweet rice balls",
-        "Osmanthus cake"
+        "紅枣スープ",
+        "タロイモスープ",
+        "甘い湯円",
+        "桂花糕"
       ],
       "tags": [
-        "local",
-        "dessert",
-        "traditional",
-        "sweet"
+        "ローカル",
+        "デザート",
+        "伝統的",
+        "甘い"
       ],
       "star": 0,
       "diamond": 0,
@@ -1748,29 +1754,29 @@
     },
     {
       "id": "nanjing-19",
-      "name": "东南大学老食堂",
-      "nameEn": "SEU Old Canteen",
-      "type": "local",
-      "cuisine": "University食堂",
+      "name": "東南大学旧食堂",
+      "nameEn": "SEU旧食堂",
+      "type": "ローカル",
+      "cuisine": "大学食堂",
       "avgPrice": 20,
       "rating": 4.2,
-      "address": "Southeast University, Sipailou",
+      "address": "東南大学、四牌楼",
       "coordinates": {
         "lat": 32.0522,
         "lng": 118.7872
       },
       "hours": "06:30-20:00",
-      "description": "University cafeteria open to visitors, serving authentic and cheap local dishes.",
+      "description": "地元料理を提供する学生食堂。安くて本格的な味が楽しめる。",
       "dishHighlights": [
-        "Rice with dishes",
-        "Noodles",
-        "Dumplings"
+        "定食",
+        "ラーメン",
+        "餃子"
       ],
       "tags": [
-        "local",
-        "budget",
-        "authentic",
-        "student-life"
+        "ローカル",
+        "格安",
+        "本場",
+        "学生生活"
       ],
       "star": 0,
       "diamond": 0,
@@ -1780,29 +1786,29 @@
     {
       "id": "nanjing-20",
       "name": "明瓦廊美食街",
-      "nameEn": "Mingwa Lang Food Street",
-      "type": "local",
-      "cuisine": "Various",
+      "nameEn": "明瓦廊美食街",
+      "type": "ローカル",
+      "cuisine": "多種多様",
       "avgPrice": 40,
       "rating": 4.4,
-      "address": "Mingwa Lang, Xinadie",
+      "address": "明瓦廊、新街口",
       "coordinates": {
         "lat": 32.0322,
         "lng": 118.7972
       },
       "hours": "17:00-02:00",
-      "description": "Famous evening food street with variety of local snacks and international cuisine.",
+      "description": "地元のスナックや国際料理が豊富な有名な夜市。",
       "dishHighlights": [
-        "Grilled skewers",
-        "Spicy crayfish",
-        "Lamb noodles",
-        "Beer"
+        "焼き串",
+        "スパイシークレイフィッシュ",
+        "羊肉麺",
+        "ビール"
       ],
       "tags": [
-        "local",
-        "night-market",
-        "street-food",
-        "late-night"
+        "ローカル",
+        "夜市",
+        "屋台料理",
+        "深夜"
       ],
       "star": 0,
       "diamond": 0,
@@ -1811,31 +1817,31 @@
     },
     {
       "id": "nanjing-21",
-      "name": "海底捞火锅",
-      "nameEn": "Haidilao Hotpot",
-      "type": "chain",
-      "cuisine": "Hotpot",
+      "name": "海底撈火鍋",
+      "nameEn": "海底撈火鍋",
+      "type": "チェーン店",
+      "cuisine": "火鍋",
       "avgPrice": 150,
       "rating": 4.7,
-      "address": "Deji Plaza, 18 Zhongshan Road",
+      "address": "デジプラザ、中山路18号",
       "coordinates": {
         "lat": 32.0322,
         "lng": 118.7972
       },
       "phone": "+86 25 8471 9999",
-      "hours": "24 hours",
-      "description": "Famous chain hotpot restaurant with exceptional service. Known for manicotti, freebies, and entertainment while waiting.",
+      "hours": "24時間営業",
+      "description": "サービスで有名なチェーン火鍋店。マニア向けの景品や娯楽施設が有名なレストラン。",
       "dishHighlights": [
-        "Spicy hotpot",
-        "Fresh beef",
-        "Hand-pulled noodles",
-        "Free snacks"
+        "辛い火鍋（スパイシーなスープが特徴の鍋料理）",
+        "新鮮な牛肉",
+        "手引ラーメン",
+        "無料スナック"
       ],
       "tags": [
-        "chain",
-        "hotpot",
-        "service",
-        "entertainment"
+        "チェーン店",
+        "火鍋",
+        "サービス",
+        "エンターテイメント"
       ],
       "star": 0,
       "diamond": 0,
@@ -1844,30 +1850,30 @@
     {
       "id": "nanjing-22",
       "name": "全聚德",
-      "nameEn": "Quanjude Peking Duck",
-      "type": "fine",
-      "cuisine": "Peking Duck",
+      "nameEn": "全聚徳北京ダック",
+      "type": "本格的",
+      "cuisine": "北京ダック",
       "avgPrice": 200,
       "rating": 4.5,
-      "address": "188 Guangzhou Road, Gulou District",
+      "address": "鼓楼区広州路188号",
       "coordinates": {
         "lat": 32.0422,
         "lng": 118.7772
       },
       "phone": "+86 25 8332 8888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Legendary Peking duck restaurant with crispy skin and traditional preparation methods.",
+      "description": "皮がカリカリした伝統的な北京ダック専門レストラン。",
       "dishHighlights": [
-        "Peking duck",
-        "Pancakes",
-        "Cucumber and scallion",
-        "Duck soup"
+        "北京ダック",
+        "パンケーキ",
+        "キュウリとネギ",
+        "ダックスープ"
       ],
       "tags": [
-        "fine-dining",
-        "peking-duck",
-        "traditional",
-        "famous"
+        "高級レストラン",
+        "北京ダック",
+        "伝統的",
+        "有名"
       ],
       "star": 0,
       "diamond": 0,
@@ -1876,29 +1882,29 @@
     {
       "id": "nanjing-23",
       "name": "小厨娘",
-      "nameEn": "Xiao Chu Niang",
-      "type": "local",
-      "cuisine": "Jiangsu Home Style",
+      "nameEn": "小廚娘",
+      "type": "ローカル",
+      "cuisine": "江蘇家庭料理",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Multiple locations",
+      "address": "市内複数箇所",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7872
       },
       "hours": "10:30-21:30",
-      "description": "Popular home-style Jiangsu cuisine restaurant with comfortable dining atmosphere.",
+      "description": "江苏家庭料理レストランとして雰囲気の良い人気店。",
       "dishHighlights": [
-        "Braised pork belly",
-        "Steamed fish",
-        "Vegetables in garlic sauce",
-        "Rice with toppings"
+        "豚バラ肉の煮込み",
+        "蒸魚",
+        "ニンニクソース野菜",
+        "トッピングご飯"
       ],
       "tags": [
-        "local",
-        "home-style",
-        "jiangsu-cuisine",
-        "value"
+        "ローカル",
+        "家庭料理",
+        "江蘇料理",
+        "コストパフォーマンス"
       ],
       "star": 0,
       "diamond": 0,
@@ -1908,29 +1914,29 @@
     {
       "id": "nanjing-24",
       "name": "外婆家",
-      "nameEn": "Grandma's House",
-      "type": "chain",
-      "cuisine": "Zhejiang Style",
+      "nameEn": "お婆ちゃんの家",
+      "type": "チェーン店",
+      "cuisine": "浙江料理",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Multiple locations including Xinbailai",
+      "address": "新百来を含む複数の店舗",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7872
       },
       "hours": "10:30-22:00",
-      "description": "Popular chain serving flavorful Zhejiang-style dishes at reasonable prices.",
+      "description": "美味しい浙江料理を手頃な価格で提供する人気のチェーン店",
       "dishHighlights": [
-        "Braised fish head",
-        "West Lake vinegar fish",
-        "Dongpo pork",
-        "Vegetables"
+        "煮魚頭",
+        "西湖の酢魚",
+        "東坡肉",
+        "野菜"
       ],
       "tags": [
-        "chain",
-        "zhejiang",
-        "value",
-        "popular"
+        "チェーン店",
+        "浙江",
+        "コストパフォーマンス",
+        "人気"
       ],
       "star": 0,
       "diamond": 0,
@@ -1940,30 +1946,30 @@
     {
       "id": "nanjing-25",
       "name": "南京大牌档",
-      "nameEn": "Nanjing Da Pai Dang",
-      "type": "local",
-      "cuisine": "Nanjing Snacks",
+      "nameEn": "南京大排档",
+      "type": "ローカル",
+      "cuisine": "南京スナック",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Multiple locations including Deji and Xuanwu",
+      "address": "徳路と玄武を含む複数の店舗",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7972
       },
       "phone": "+86 25 5226 8888",
       "hours": "11:00-22:00",
-      "description": "Popular chain serving authentic Nanjing and Jiangsu cuisine in traditional atmosphere.",
+      "description": "伝統的な雰囲気の中で本格的な南京・江蘇料理を提供する人気チェーン店",
       "dishHighlights": [
-        "Duck blood soup",
-        "Salt duck",
-        "Steamed dumplings",
-        "Qinhuai snacks"
+        "血鴨汁",
+        "塩漬けアヒル",
+        "蒸し餃子",
+        "秦淮屋台料理"
       ],
       "tags": [
-        "local",
-        "nanjing-cuisine",
-        "traditional",
-        "chain"
+        "ローカル",
+        "南京料理",
+        "伝統的",
+        "チェーン店"
       ],
       "star": 0,
       "diamond": 0,
@@ -1971,31 +1977,31 @@
     },
     {
       "id": "nanjing-26",
-      "name": "民国红公馆",
-      "nameEn": "Republic of China Red Mansion",
-      "type": "fine",
-      "cuisine": "Republic Era Cuisine",
+      "name": "民国紅公館",
+      "nameEn": "中華民国紅楼",
+      "type": "本格的",
+      "cuisine": "中華民国時代料理",
       "avgPrice": 250,
       "rating": 4.8,
-      "address": "Laochengli District, Qinhuai",
+      "address": "秦淮区老城地区",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7972
       },
       "phone": "+86 25 5220 9999",
       "hours": "11:30-14:00, 17:30-21:30",
-      "description": "High-end restaurant serving dishes inspired by Republic of China era cuisine with elegant atmosphere.",
+      "description": "中華民国時代の料理にインスピレーションを受けた料理と典雅な雰囲気を兼ね備えた高級レストラン",
       "dishHighlights": [
-        "Imperial cuisine",
-        "Republic era dishes",
-        "Seasonal menu",
-        "Historical atmosphere"
+        "宮廷料理",
+        "中華民国時代の料理",
+        "季節メニュー",
+        "歴史的な雰囲気"
       ],
       "tags": [
-        "fine-dining",
-        "historical",
-        "republic-era",
-        "special-occasion"
+        "高級レストラン",
+        "歴史的",
+        "中華民国時代",
+        "特別な機会"
       ],
       "star": 0,
       "diamond": 0,
@@ -2003,30 +2009,30 @@
     },
     {
       "id": "nanjing-27",
-      "name": "李记清真馆",
-      "nameEn": "Li Ji Halal",
-      "type": "local",
-      "cuisine": "Halal Nanjing",
+      "name": "李記清真館",
+      "nameEn": "李記ハラール",
+      "type": "ローカル",
+      "cuisine": "ハラール南京",
       "avgPrice": 50,
       "rating": 4.7,
-      "address": "100 Zhanqi Lane, Qinhuai District",
+      "address": "秦淮区占祺路100号",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "06:30-19:30",
-      "description": "Famous halal restaurant known for beef products and traditional Muslim cuisine.",
+      "description": "牛肉製品と伝統的なイスラム料理で知られる有名なハラールレストラン",
       "dishHighlights": [
-        "Beef noodle soup",
-        "Lamb skewers",
-        "Beef dumplings",
-        "Hand-pulled noodles"
+        "牛肉ラーメン",
+        "羊肉串",
+        "牛肉餃子",
+        "手引ラーメン"
       ],
       "tags": [
-        "local",
-        "halal",
-        "beef",
-        "traditional"
+        "ローカル",
+        "ハラール",
+        "牛肉",
+        "伝統的"
       ],
       "star": 0,
       "diamond": 0,
@@ -2035,30 +2041,30 @@
     },
     {
       "id": "nanjing-28",
-      "name": "莲湖糕团店",
-      "nameEn": "Lianhu Gaotang Shop",
-      "type": "local",
-      "cuisine": "Nanjing Desserts",
+      "name": "蓮湖糕団店",
+      "nameEn": "蓮花高湯店",
+      "type": "ローカル",
+      "cuisine": "南京デザート",
       "avgPrice": 25,
       "rating": 4.5,
-      "address": "Fuzi Temple area",
+      "address": "夫子廟エリア",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "08:00-20:00",
-      "description": "Famous snack shop specializing in traditional Nanjing rice cakes and sweet pastries.",
+      "description": "伝統的な南京餅や甘果子を専門とする有名な軽食店。",
       "dishHighlights": [
-        "Rice cake soup",
-        "Osmanthus cake",
-        "Sweet dumplings",
-        "Glutinous rice balls"
+        "餅汁",
+        "桂花糕",
+        "白玉団子",
+        "餅"
       ],
       "tags": [
-        "local",
-        "dessert",
-        "traditional",
-        "famous"
+        "ローカル",
+        "デザート",
+        "伝統的",
+        "有名"
       ],
       "star": 0,
       "diamond": 0,
@@ -2067,9 +2073,9 @@
     },
     {
       "id": "nanjing-29",
-      "name": "传统赤豆元宵",
-      "nameEn": "传统赤豆元宵 (赤豆元宵)",
-      "type": "local",
+      "name": "伝統的な小豆の団子",
+      "nameEn": "伝統的な小豆の団子（赤豆元宵）",
+      "type": "ローカル",
       "cuisine": "赤豆元宵",
       "avgPrice": 57,
       "rating": 4.6,
@@ -2080,26 +2086,26 @@
       },
       "phone": "+86 025 81851442",
       "hours": "09:00-21:00",
-      "description": "南京本地人推荐的赤豆元宵店，味道正宗，价格实惠",
+      "description": "南京の地元民おすすめの赤豆元宵店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "小笼包",
-        "牛肉锅贴",
+        "牛肉鍋貼",
         "赤豆元宵"
       ],
       "tags": [
-        "家常菜",
-        "本地人爱去",
-        "隐藏美食"
+        "家庭料理",
+        "地元の人に人気",
+        "隠れた名店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/d0a1afcdec30.webp"
     },
     {
       "id": "nanjing-31",
-      "name": "巷子牛肉锅贴",
-      "nameEn": "巷子牛肉锅贴 (牛肉锅贴)",
-      "type": "local",
-      "cuisine": "牛肉锅贴",
+      "name": "路地の牛肉鍋貼",
+      "nameEn": "路地の牛肉鍋貼（牛肉鍋貼）",
+      "type": "ローカル",
+      "cuisine": "牛肉鍋貼",
       "avgPrice": 133,
       "rating": 4.1,
       "address": "南京市市中心区美食街161号",
@@ -2109,26 +2115,26 @@
       },
       "phone": "+86 025 33698328",
       "hours": "06:00-14:00",
-      "description": "南京本地人推荐的牛肉锅贴店，味道正宗，价格实惠",
+      "description": "南京の地元民おすすめの牛肉鍋貼店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "鸭血粉丝汤",
+        "鴨血粉絲湯（アヒルの血入り春雨スープ）",
         "小笼包",
-        "盐水鸭"
+        "塩水鴨（塩漬けアヒル）"
       ],
       "tags": [
-        "家常菜",
-        "老字号",
-        "隐藏美食"
+        "家庭料理",
+        "老舗",
+        "隠れた名店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/e89eded3fbcc.webp"
     },
     {
       "id": "nanjing-33",
-      "name": "南京味盐水鸭",
-      "nameEn": "南京味盐水鸭 (盐水鸭)",
-      "type": "street",
-      "cuisine": "盐水鸭",
+      "name": "南京風塩水鴨",
+      "nameEn": "南京風塩水鴨（塩水鴨）",
+      "type": "ストリート",
+      "cuisine": "塩水鴨（塩漬けアヒル）",
       "avgPrice": 29,
       "rating": 4.7,
       "address": "南京市老城区美食街97号",
@@ -2138,15 +2144,15 @@
       },
       "phone": "+86 025 44717633",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "南京本地人推荐的盐水鸭店，味道正宗，价格实惠",
+      "description": "南京の地元民おすすめの塩水鴨店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "鸭血粉丝汤",
+        "鴨血粉絲湯（アヒルの血入り春雨スープ）",
         "小笼包",
-        "盐水鸭"
+        "塩水鴨（塩漬けアヒル）"
       ],
       "tags": [
-        "网红打卡",
-        "路边摊",
+        "インスタ映えスポット",
+        "屋台",
         "小吃"
       ],
       "diamond": 0,
@@ -2154,10 +2160,10 @@
     },
     {
       "id": "nanjing-35",
-      "name": "街边盐水鸭",
-      "nameEn": "街边盐水鸭 (盐水鸭)",
-      "type": "cafe",
-      "cuisine": "盐水鸭",
+      "name": "街角の塩水鴨",
+      "nameEn": "街角の塩水鴨（塩水鴨）",
+      "type": "カフェ",
+      "cuisine": "塩水鴨（塩漬けアヒル）",
       "avgPrice": 80,
       "rating": 4.2,
       "address": "南京市新城区美食街38号",
@@ -2167,26 +2173,26 @@
       },
       "phone": "+86 025 28301892",
       "hours": "10:00-22:00",
-      "description": "南京本地人推荐的盐水鸭店，味道正宗，价格实惠",
+      "description": "南京の地元民おすすめの塩水鴨店。味は本格的で、価格もお手頃",
       "dishHighlights": [
         "小笼包",
-        "牛肉锅贴",
-        "鸭血粉丝汤"
+        "牛肉鍋貼",
+        "鴨血粉絲湯（アヒルの血入り春雨スープ）"
       ],
       "tags": [
-        "下午茶",
+        "アフタヌーンティー",
         "咖啡",
-        "安静"
+        "落ち着いた"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/4d03ae8efacc.webp"
     },
     {
       "id": "nanjing-37",
-      "name": "地道鸭血粉丝汤",
-      "nameEn": "地道鸭血粉丝汤 (鸭血粉丝汤)",
-      "type": "local",
-      "cuisine": "鸭血粉丝汤",
+      "name": "本場の鴨血粉絲湯",
+      "nameEn": "本場の鴨血粉絲湯（鴨血粉絲湯）",
+      "type": "ローカル",
+      "cuisine": "鴨血粉絲湯（アヒルの血入り春雨スープ）",
       "avgPrice": 72,
       "rating": 4,
       "address": "南京市老城区美食街178号",
@@ -2196,25 +2202,25 @@
       },
       "phone": "+86 025 29943931",
       "hours": "06:00-14:00",
-      "description": "南京本地人推荐的鸭血粉丝汤店，味道正宗，价格实惠",
+      "description": "南京の地元民おすすめの鴨血粉絲湯のお店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "鸭血粉丝汤",
-        "牛肉锅贴",
-        "盐水鸭"
+        "鴨血粉絲湯（アヒルの血入り春雨スープ）",
+        "牛肉鍋貼",
+        "塩水鴨（塩漬けアヒル）"
       ],
       "tags": [
-        "老字号",
-        "排队王",
-        "社区老店"
+        "老舗",
+        "行列のできる店",
+        "地元の老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/2b8b871b136e.webp"
     },
     {
       "id": "nanjing-39",
-      "name": "街边小笼包",
-      "nameEn": "街边小笼包 (小笼包)",
-      "type": "local",
+      "name": "街角の小籠包",
+      "nameEn": "街角の小籠包（小籠包）",
+      "type": "ローカル",
       "cuisine": "小笼包",
       "avgPrice": 87,
       "rating": 4.3,
@@ -2225,16 +2231,16 @@
       },
       "phone": "+86 025 61834002",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "南京本地人推荐的小笼包店，味道正宗，价格实惠",
+      "description": "南京の地元民おすすめの小笼包店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
-        "牛肉锅贴",
+        "牛肉鍋貼",
         "赤豆元宵",
-        "盐水鸭"
+        "塩水鴨（塩漬けアヒル）"
       ],
       "tags": [
-        "社区老店",
-        "老字号",
-        "排队王"
+        "地元の老舗",
+        "老舗",
+        "行列のできる店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/e6344a7abf72.webp"
@@ -2243,7 +2249,7 @@
       "id": "nanjing-41",
       "name": "老南京赤豆元宵",
       "nameEn": "老南京赤豆元宵 (赤豆元宵)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "赤豆元宵",
       "avgPrice": 35,
       "rating": 4.5,
@@ -2254,16 +2260,16 @@
       },
       "phone": "+86 025 60381115",
       "hours": "10:00-22:00",
-      "description": "南京本地人推荐的赤豆元宵店，味道正宗，价格实惠",
+      "description": "南京の地元民おすすめの赤豆元宵店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "小笼包",
-        "牛肉锅贴",
-        "盐水鸭"
+        "牛肉鍋貼",
+        "塩水鴨（塩漬けアヒル）"
       ],
       "tags": [
-        "隐藏美食",
-        "家常菜",
-        "排队王"
+        "隠れた名店",
+        "家庭料理",
+        "行列のできる店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/73b7cea08bde.webp"
@@ -2272,7 +2278,7 @@
       "id": "nanjing-43",
       "name": "阿婆小笼包",
       "nameEn": "阿婆小笼包 (小笼包)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "小笼包",
       "avgPrice": 90,
       "rating": 4.4,
@@ -2283,26 +2289,26 @@
       },
       "phone": "+86 025 50716939",
       "hours": "09:00-21:00",
-      "description": "南京本地人推荐的小笼包店，味道正宗，价格实惠",
+      "description": "南京の地元民おすすめの小笼包店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "赤豆元宵",
-        "鸭血粉丝汤",
+        "鴨血粉絲湯（アヒルの血入り春雨スープ）",
         "小笼包"
       ],
       "tags": [
-        "老字号",
-        "本地人爱去",
-        "性价比高"
+        "老舗",
+        "地元の人に人気",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/f69b4f6bc06b.webp"
     },
     {
       "id": "nanjing-45",
-      "name": "阿婆鸭血粉丝汤",
-      "nameEn": "阿婆鸭血粉丝汤 (鸭血粉丝汤)",
-      "type": "local",
-      "cuisine": "鸭血粉丝汤",
+      "name": "おばあちゃんの鴨血粉絲湯",
+      "nameEn": "おばあちゃんの鴨血粉絲湯（鴨血粉絲湯）",
+      "type": "ローカル",
+      "cuisine": "鴨血粉絲湯（アヒルの血入り春雨スープ）",
       "avgPrice": 50,
       "rating": 4.3,
       "address": "南京市市中心区美食街9号",
@@ -2312,26 +2318,26 @@
       },
       "phone": "+86 025 52345635",
       "hours": "06:00-14:00",
-      "description": "南京本地人推荐的鸭血粉丝汤店，味道正宗，价格实惠",
+      "description": "南京の地元民おすすめの鴨血粉絲湯のお店。味は本格的で、価格もお手頃",
       "dishHighlights": [
         "赤豆元宵",
-        "盐水鸭",
-        "牛肉锅贴"
+        "塩水鴨（塩漬けアヒル）",
+        "牛肉鍋貼"
       ],
       "tags": [
-        "社区老店",
-        "隐藏美食",
-        "老字号"
+        "地元の老舗",
+        "隠れた名店",
+        "老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/18939903253a.webp"
     },
     {
       "id": "nanjing-47",
-      "name": "南京味牛肉锅贴",
-      "nameEn": "南京味牛肉锅贴 (牛肉锅贴)",
-      "type": "local",
-      "cuisine": "牛肉锅贴",
+      "name": "南京風牛肉鍋貼",
+      "nameEn": "南京味牛肉鍋貼（牛肉鍋貼）",
+      "type": "ローカル",
+      "cuisine": "牛肉鍋貼",
       "avgPrice": 55,
       "rating": 4,
       "address": "南京市老城区美食街200号",
@@ -2341,26 +2347,26 @@
       },
       "phone": "+86 025 78476058",
       "hours": "09:00-21:00",
-      "description": "南京本地人推荐的牛肉锅贴店，味道正宗，价格实惠",
+      "description": "南京の地元民おすすめの牛肉鍋貼店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "鸭血粉丝汤",
+        "鴨血粉絲湯（アヒルの血入り春雨スープ）",
         "赤豆元宵",
-        "牛肉锅贴"
+        "牛肉鍋貼"
       ],
       "tags": [
-        "性价比高",
-        "本地人爱去",
-        "家常菜"
+        "コスパ最高",
+        "地元の人に人気",
+        "家庭料理"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/1c4d6ce48b2f.png"
     },
     {
       "id": "nanjing-49",
-      "name": "老街鸭血粉丝汤",
-      "nameEn": "老街鸭血粉丝汤 (鸭血粉丝汤)",
-      "type": "local",
-      "cuisine": "鸭血粉丝汤",
+      "name": "老街鴨血粉絲湯",
+      "nameEn": "老街鴨血粉絲湯（鴨血粉絲湯）",
+      "type": "ローカル",
+      "cuisine": "鴨血粉絲湯（アヒルの血入り春雨スープ）",
       "avgPrice": 58,
       "rating": 4,
       "address": "南京市市中心区美食街150号",
@@ -2370,25 +2376,25 @@
       },
       "phone": "+86 025 11703052",
       "hours": "17:00-02:00",
-      "description": "南京本地人推荐的鸭血粉丝汤店，味道正宗，价格实惠",
+      "description": "南京の地元民おすすめの鴨血粉絲湯のお店。味は本格的で、価格もお手頃",
       "dishHighlights": [
         "赤豆元宵",
-        "鸭血粉丝汤",
+        "鴨血粉絲湯（アヒルの血入り春雨スープ）",
         "小笼包"
       ],
       "tags": [
-        "本地人爱去",
-        "家常菜",
-        "排队王"
+        "地元の人に人気",
+        "家庭料理",
+        "行列のできる店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/e0b27d392b7d.webp"
     },
     {
       "id": "nanjing-51",
-      "name": "街边赤豆元宵",
-      "nameEn": "街边赤豆元宵 (赤豆元宵)",
-      "type": "local",
+      "name": "街角の赤豆元宵",
+      "nameEn": "街角の赤豆元宵（赤豆元宵）",
+      "type": "ローカル",
       "cuisine": "赤豆元宵",
       "avgPrice": 85,
       "rating": 4.2,
@@ -2399,16 +2405,16 @@
       },
       "phone": "+86 025 39892119",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "南京本地人推荐的赤豆元宵店，味道正宗，价格实惠",
+      "description": "南京の地元民おすすめの赤豆元宵店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "小笼包",
         "赤豆元宵",
-        "鸭血粉丝汤"
+        "鴨血粉絲湯（アヒルの血入り春雨スープ）"
       ],
       "tags": [
-        "隐藏美食",
-        "社区老店",
-        "本地人爱去"
+        "隠れた名店",
+        "地元の老舗",
+        "地元の人に人気"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/382f009f4c37.webp"
@@ -2417,7 +2423,7 @@
       "id": "nanjing-53",
       "name": "南京味小笼包",
       "nameEn": "南京味小笼包 (小笼包)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "小笼包",
       "avgPrice": 52,
       "rating": 4.3,
@@ -2428,26 +2434,26 @@
       },
       "phone": "+86 025 55778452",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "南京本地人推荐的小笼包店，味道正宗，价格实惠",
+      "description": "南京の地元民おすすめの小笼包店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "小笼包",
         "赤豆元宵",
-        "盐水鸭"
+        "塩水鴨（塩漬けアヒル）"
       ],
       "tags": [
-        "排队王",
-        "本地人爱去",
-        "家常菜"
+        "行列のできる店",
+        "地元の人に人気",
+        "家庭料理"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/fa567ade5072.webp"
     },
     {
       "id": "nanjing-55",
-      "name": "传统盐水鸭",
-      "nameEn": "传统盐水鸭 (盐水鸭)",
-      "type": "local",
-      "cuisine": "盐水鸭",
+      "name": "伝統の塩水鴨",
+      "nameEn": "伝統の塩水鴨（塩水鴨）",
+      "type": "ローカル",
+      "cuisine": "塩水鴨（塩漬けアヒル）",
       "avgPrice": 56,
       "rating": 4.8,
       "address": "南京市老城区美食街116号",
@@ -2457,16 +2463,16 @@
       },
       "phone": "+86 025 14825341",
       "hours": "09:00-21:00",
-      "description": "南京本地人推荐的盐水鸭店，味道正宗，价格实惠",
+      "description": "南京の地元民おすすめの塩水鴨店。味は本格的で、価格もお手頃",
       "dishHighlights": [
         "赤豆元宵",
-        "鸭血粉丝汤",
-        "牛肉锅贴"
+        "鴨血粉絲湯（アヒルの血入り春雨スープ）",
+        "牛肉鍋貼"
       ],
       "tags": [
-        "社区老店",
-        "家常菜",
-        "性价比高"
+        "地元の老舗",
+        "家庭料理",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/2f6ef398eb36.webp"
@@ -2475,7 +2481,7 @@
       "id": "nanjing-57",
       "name": "老街赤豆元宵",
       "nameEn": "老街赤豆元宵 (赤豆元宵)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "赤豆元宵",
       "avgPrice": 147,
       "rating": 4.2,
@@ -2486,26 +2492,26 @@
       },
       "phone": "+86 025 59069946",
       "hours": "09:00-21:00",
-      "description": "南京本地人推荐的赤豆元宵店，味道正宗，价格实惠",
+      "description": "南京の地元民おすすめの赤豆元宵店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
-        "盐水鸭",
+        "塩水鴨（塩漬けアヒル）",
         "小笼包",
-        "鸭血粉丝汤"
+        "鴨血粉絲湯（アヒルの血入り春雨スープ）"
       ],
       "tags": [
-        "性价比高",
-        "排队王",
-        "社区老店"
+        "コスパ最高",
+        "行列のできる店",
+        "地元の老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ff1d05539a86.webp"
     },
     {
       "id": "nanjing-59",
-      "name": "地道盐水鸭",
-      "nameEn": "地道盐水鸭 (盐水鸭)",
-      "type": "local",
-      "cuisine": "盐水鸭",
+      "name": "本場の塩水鴨",
+      "nameEn": "本場の塩水鴨（塩水鴨）",
+      "type": "ローカル",
+      "cuisine": "塩水鴨（塩漬けアヒル）",
       "avgPrice": 108,
       "rating": 4.7,
       "address": "南京市老城区美食街191号",
@@ -2515,26 +2521,26 @@
       },
       "phone": "+86 025 57854365",
       "hours": "17:00-02:00",
-      "description": "南京本地人推荐的盐水鸭店，味道正宗，价格实惠",
+      "description": "南京の地元民おすすめの塩水鴨店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "盐水鸭",
-        "牛肉锅贴",
-        "鸭血粉丝汤"
+        "塩水鴨（塩漬けアヒル）",
+        "牛肉鍋貼",
+        "鴨血粉絲湯（アヒルの血入り春雨スープ）"
       ],
       "tags": [
-        "本地人爱去",
-        "家常菜",
-        "社区老店"
+        "地元の人に人気",
+        "家庭料理",
+        "地元の老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ff1d05539a86.webp"
     },
     {
       "id": "nanjing-61",
-      "name": "传统牛肉锅贴",
-      "nameEn": "传统牛肉锅贴 (牛肉锅贴)",
-      "type": "cafe",
-      "cuisine": "牛肉锅贴",
+      "name": "伝統の牛肉鍋貼",
+      "nameEn": "伝統牛肉鍋貼（牛肉鍋貼）",
+      "type": "カフェ",
+      "cuisine": "牛肉鍋貼",
       "avgPrice": 31,
       "rating": 4.8,
       "address": "南京市新城区美食街72号",
@@ -2544,15 +2550,15 @@
       },
       "phone": "+86 025 48941957",
       "hours": "09:00-21:00",
-      "description": "南京本地人推荐的牛肉锅贴店，味道正宗，价格实惠",
+      "description": "南京の地元民おすすめの牛肉鍋貼店。味は本格的で、価格もお手頃",
       "dishHighlights": [
         "小笼包",
-        "鸭血粉丝汤",
+        "鴨血粉絲湯（アヒルの血入り春雨スープ）",
         "赤豆元宵"
       ],
       "tags": [
-        "下午茶",
-        "文艺",
+        "アフタヌーンティー",
+        "おしゃれ",
         "咖啡"
       ],
       "diamond": 0,
@@ -2560,10 +2566,10 @@
     },
     {
       "id": "nanjing-63",
-      "name": "老街鸭血粉丝汤",
-      "nameEn": "老街鸭血粉丝汤 (鸭血粉丝汤)",
-      "type": "street",
-      "cuisine": "鸭血粉丝汤",
+      "name": "老街鴨血粉絲湯",
+      "nameEn": "老街鴨血粉絲湯（鴨血粉絲湯）",
+      "type": "ストリート",
+      "cuisine": "鴨血粉絲湯（アヒルの血入り春雨スープ）",
       "avgPrice": 16,
       "rating": 4.4,
       "address": "南京市新城区美食街174号",
@@ -2573,16 +2579,16 @@
       },
       "phone": "+86 025 47811554",
       "hours": "06:00-14:00",
-      "description": "南京本地人推荐的鸭血粉丝汤店，味道正宗，价格实惠",
+      "description": "南京の地元民おすすめの鴨血粉絲湯のお店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "盐水鸭",
+        "塩水鴨（塩漬けアヒル）",
         "赤豆元宵",
-        "鸭血粉丝汤"
+        "鴨血粉絲湯（アヒルの血入り春雨スープ）"
       ],
       "tags": [
-        "网红打卡",
-        "深夜美食",
-        "路边摊"
+        "インスタ映えスポット",
+        "深夜グルメ",
+        "屋台"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ff1d05539a86.webp"
@@ -2591,7 +2597,7 @@
       "id": "nanjing-65",
       "name": "南京味小笼包",
       "nameEn": "南京味小笼包 (小笼包)",
-      "type": "cafe",
+      "type": "カフェ",
       "cuisine": "小笼包",
       "avgPrice": 51,
       "rating": 4.7,
@@ -2602,16 +2608,16 @@
       },
       "phone": "+86 025 96249277",
       "hours": "10:00-22:00",
-      "description": "南京本地人推荐的小笼包店，味道正宗，价格实惠",
+      "description": "南京の地元民おすすめの小笼包店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "赤豆元宵",
-        "盐水鸭",
+        "塩水鴨（塩漬けアヒル）",
         "小笼包"
       ],
       "tags": [
-        "安静",
-        "下午茶",
-        "文艺"
+        "落ち着いた",
+        "アフタヌーンティー",
+        "おしゃれ"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ff1d05539a86.webp"
@@ -2620,7 +2626,7 @@
       "id": "nanjing-67",
       "name": "南京味小笼包",
       "nameEn": "南京味小笼包 (小笼包)",
-      "type": "street",
+      "type": "ストリート",
       "cuisine": "小笼包",
       "avgPrice": 58,
       "rating": 4.2,
@@ -2631,26 +2637,26 @@
       },
       "phone": "+86 025 65904378",
       "hours": "17:00-02:00",
-      "description": "南京本地人推荐的小笼包店，味道正宗，价格实惠",
+      "description": "南京の地元民おすすめの小笼包店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
-        "鸭血粉丝汤",
-        "盐水鸭",
-        "牛肉锅贴"
+        "鴨血粉絲湯（アヒルの血入り春雨スープ）",
+        "塩水鴨（塩漬けアヒル）",
+        "牛肉鍋貼"
       ],
       "tags": [
-        "路边摊",
-        "深夜美食",
-        "网红打卡"
+        "屋台",
+        "深夜グルメ",
+        "インスタ映えスポット"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/42709ea23cc6.webp"
     },
     {
       "id": "nanjing-69",
-      "name": "传统盐水鸭",
-      "nameEn": "传统盐水鸭 (盐水鸭)",
-      "type": "street",
-      "cuisine": "盐水鸭",
+      "name": "伝統の塩水鴨",
+      "nameEn": "伝統の塩水鴨（塩水鴨）",
+      "type": "ストリート",
+      "cuisine": "塩水鴨（塩漬けアヒル）",
       "avgPrice": 24,
       "rating": 4.3,
       "address": "南京市老城区美食街196号",
@@ -2660,15 +2666,15 @@
       },
       "phone": "+86 025 36213004",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "南京本地人推荐的盐水鸭店，味道正宗，价格实惠",
+      "description": "南京の地元民おすすめの塩水鴨店。味は本格的で、価格もお手頃",
       "dishHighlights": [
         "赤豆元宵",
-        "牛肉锅贴",
+        "牛肉鍋貼",
         "小笼包"
       ],
       "tags": [
-        "网红打卡",
-        "深夜美食",
+        "インスタ映えスポット",
+        "深夜グルメ",
         "小吃"
       ],
       "diamond": 0,
@@ -2676,10 +2682,10 @@
     },
     {
       "id": "nanjing-71",
-      "name": "巷子鸭血粉丝汤",
-      "nameEn": "巷子鸭血粉丝汤 (鸭血粉丝汤)",
-      "type": "local",
-      "cuisine": "鸭血粉丝汤",
+      "name": "路地の鴨血粉絲湯",
+      "nameEn": "路地の鴨血粉絲湯（鴨血粉絲湯）",
+      "type": "ローカル",
+      "cuisine": "鴨血粉絲湯（アヒルの血入り春雨スープ）",
       "avgPrice": 149,
       "rating": 4.4,
       "address": "南京市新城区美食街135号",
@@ -2689,16 +2695,16 @@
       },
       "phone": "+86 025 63319388",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "南京本地人推荐的鸭血粉丝汤店，味道正宗，价格实惠",
+      "description": "南京の地元民おすすめの鴨血粉絲湯のお店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "牛肉锅贴",
-        "鸭血粉丝汤",
+        "牛肉鍋貼",
+        "鴨血粉絲湯（アヒルの血入り春雨スープ）",
         "赤豆元宵"
       ],
       "tags": [
-        "性价比高",
-        "老字号",
-        "隐藏美食"
+        "コスパ最高",
+        "老舗",
+        "隠れた名店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/42709ea23cc6.webp"
@@ -2708,467 +2714,467 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major Chinese cities",
-        "to": "Nanjing Lukou International Airport (NKG)",
-        "duration": "Varies (1.5h from Beijing, 2h from Guangzhou)",
+        "from": "中国の主要都市",
+        "to": "南京禄口国際空港 (NKG)",
+        "duration": "所要時間は異なる（北京から1.5時間、広州から2時間）",
         "price": "600-2000¥",
-        "frequency": "Daily flights from major cities",
-        "tips": "Airport 40km from city center. Airport bus to city (5¥) or taxi (150¥). Metro LineS1 to downtown."
+        "frequency": "主要都市から毎日運航",
+        "tips": "市内中心部から40kmの空港。市内への空港バス（5元）またはタクシー（150元）。地下鉄S1線で都心へ。"
       },
       {
         "type": "train",
-        "from": "Shanghai (1h), Beijing (3.5h), Hangzhou (2.5h)",
-        "to": "Nanjing Railway Station / Nanjing South Station",
-        "duration": "1-3.5 hours",
+        "from": "上海（1時間）、北京（3.5時間）、杭州（2.5時間）",
+        "to": "南京駅 / 南京南駅",
+        "duration": "1〜3.5時間",
         "price": "150-800¥",
-        "frequency": "Multiple high-speed trains daily",
-        "tips": "Nanjing South for high-speed from Shanghai/Hangzhou. Nanjing Station for Beijing/Shanghai slow trains. Both have metro."
+        "frequency": "1日複数の高速列車",
+        "tips": "上海・杭州からの高速鉄道は南京南駅。北京・上海方面の鈍行は南京駅。どちらも地下鉄が利用可能。"
       }
     ],
     "local": {
       "metro": [
-        "12 lines operational",
-        "Single ride: 2-8¥",
-        "Line 1, 2 for most tourist sites",
-        "Connects to both stations and airport"
+        "12路線運行中",
+        "1回乗車：2〜8¥",
+        "観光地の多くは1号線・2号線でアクセス可能",
+        "両駅と空港に接続"
       ],
       "bus": [
-        "Extensive network",
-        "Single ride: 2¥",
-        "Tourist areas well connected",
-        "Google Maps works for routes"
+        "広範なネットワーク",
+        "1回の乗車：2¥",
+        "観光エリアへのアクセス良好",
+        "Googleマップで経路検索が可能"
       ],
       "taxi": [
-        "Starting fare: 11¥ (first 3km)",
-        "Night surcharge: 20% extra",
-        "Most attractions 20-50¥",
-        "Didi recommended for English"
+        "初乗り運賃：11¥（最初の3km）",
+        "夜間割増：20%追加",
+        "多くの観光地は20〜50元",
+        "英語対応にはDidiがおすすめ"
       ],
       "bike": [
-        "Mobike, Meituan bikes abundant",
-        "Unlock: 1¥, then 0.5-1¥ per 30 min",
-        "Great for Xuanwu Lake area",
-        "Lake path perfect for cycling"
+        "Mobike、Meituanの自転車が豊富",
+        "ロック解除：1円、その後30分ごとに0.5〜1円",
+        "玄武湖エリアに最適",
+        "湖畔の道はサイクリングに最適"
       ]
     }
   },
   "hotels": [
     {
-      "name": "南京金陵饭店",
+      "name": "南京金陵飯店",
       "nameEn": "Jinling Hotel Nanjing",
       "budget": "luxury",
-      "priceRange": "¥1200-2500/night",
-      "address": "2 Hanzhong Road, Xuanwu",
+      "priceRange": "1泊1200〜2500元",
+      "address": "玄武区漢中路2号",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7872
       },
       "rating": 4.6,
       "highlights": [
-        "Central location",
-        "Historic luxury",
-        "Xuanwu Lake views",
-        "Multiple dining"
+        "中心部に好立地",
+        "歴史ある高級感",
+        "玄武湖の眺望",
+        "複数のダイニング"
       ],
-      "bookingTips": "Book well ahead. The original 5-star in Nanjing. Sunday brunch is famous."
+      "bookingTips": "早めの予約必須。南京で最初の5つ星ホテル。日曜ブランチが有名。"
     },
     {
       "name": "南京香格里拉大酒店",
       "nameEn": "Shangri-La Hotel Nanjing",
       "budget": "luxury",
-      "priceRange": "¥1500-3000/night",
-      "address": "329 Guangzhou Road, Gulou",
+      "priceRange": "1泊1500〜3000元",
+      "address": "鼓楼区広州路329号",
       "coordinates": {
         "lat": 32.0422,
         "lng": 118.7772
       },
       "rating": 4.7,
       "highlights": [
-        "Near Purple Mountain",
-        "Luxury facilities",
-        "Great service",
-        "Central location"
+        "紫金山付近",
+        "高級設備",
+        "サービスが素晴らしい",
+        "中心部に好立地"
       ],
-      "bookingTips": "Best for first-time visitors. Book river view rooms."
+      "bookingTips": "初めての訪問者に最適。川側の客室を予約しましょう。"
     },
     {
-      "name": "南京绿地洲际酒店",
+      "name": "南京緑地洲際酒店",
       "nameEn": "InterContinental Nanjing",
       "budget": "luxury",
-      "priceRange": "¥1000-2200/night",
-      "address": "1 Yingtian Street, Jianye",
+      "priceRange": "1泊1000〜2200元",
+      "address": "建鄴区応天街1号",
       "coordinates": {
         "lat": 32.0422,
         "lng": 118.7572
       },
       "rating": 4.6,
       "highlights": [
-        "Modern luxury",
-        "Qinhuai River views",
-        "High-rise",
-        "Excellent dining"
+        "モダンな高級感",
+        "秦淮河の眺望",
+        "高層",
+        "食事が素晴らしい"
       ],
-      "bookingTips": "Newer property with best views. Great for business travelers."
+      "bookingTips": "新しく、眺めが最高の物件。ビジネス旅行者に最適。"
     },
     {
       "name": "状元楼酒店",
       "nameEn": "Zhuangyuan Lou Hotel",
       "budget": "mid",
-      "priceRange": "¥500-1000/night",
-      "address": "Near Fuzi Temple",
+      "priceRange": "1泊500〜1000元",
+      "address": "夫子廟の近く",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "rating": 4.4,
       "highlights": [
-        "Near Fuzi Temple",
-        "Historic building",
-        "Good location",
-        "Value"
+        "夫子廟の近く",
+        "歴史的建造物",
+        "立地良好",
+        "価値"
       ],
-      "bookingTips": "Best for sightseeing. Book during off-peak season."
+      "bookingTips": "観光に最適。オフシーズンに予約するのがおすすめ。"
     },
     {
-      "name": "南京国际青年旅舍",
+      "name": "南京国際青年旅舎",
       "nameEn": "Nanjing International Youth Hostel",
       "budget": "budget",
-      "priceRange": "¥100-300/night",
-      "address": "Near Xuanwu Lake",
+      "priceRange": "1泊100〜300元",
+      "address": "玄武湖の近く",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7672
       },
       "rating": 4.3,
       "highlights": [
-        "Lake location",
-        "Budget-friendly",
-        "Social atmosphere",
-        "Bike rental"
+        "湖畔のロケーション",
+        "リーズナブルな価格",
+        "社交的な雰囲気",
+        "レンタサイクル"
       ],
-      "bookingTips": "Great for backpackers. English speaking staff."
+      "bookingTips": "バックパッカーに最適。英語が通じるスタッフ。"
     },
     {
-      "name": "南京苏宁诺富特酒店",
+      "name": "ノボテル南京セントラル",
       "nameEn": "Novotel Nanjing Central",
       "budget": "mid",
-      "priceRange": "¥500-900/night",
-      "address": "88 Shanghai Road, Xuanwu District",
+      "priceRange": "1泊500〜900元",
+      "address": "玄武区上海路88号",
       "coordinates": {
         "lat": 32.0322,
         "lng": 118.7872
       },
       "rating": 4.5,
       "highlights": [
-        "Central location",
-        "Modern facilities",
-        "Metro access",
-        "Business center"
+        "中心部に好立地",
+        "近代的な設備",
+        "地下鉄アクセス",
+        "ビジネスセンター"
       ],
-      "bookingTips": "Good for business travelers. Near metro Line 1."
+      "bookingTips": "ビジネス旅行者に好適。地下鉄1号線に近い。"
     },
     {
-      "name": "南京华泰万丽酒店",
+      "name": "南京華泰万麗酒店",
       "nameEn": "Renaissance Nanjing",
       "budget": "luxury",
-      "priceRange": "¥800-1500/night",
-      "address": "9 Guanghua Road, Jianye District",
+      "priceRange": "1泊800〜1500元",
+      "address": "建鄴区光華路9号",
       "coordinates": {
         "lat": 32.0422,
         "lng": 118.7572
       },
       "rating": 4.6,
       "highlights": [
-        "Modern luxury",
-        "River views",
-        "Central location",
-        "Multiple restaurants"
+        "モダンな高級感",
+        "川の眺望",
+        "中心部に好立地",
+        "複数のレストラン"
       ],
-      "bookingTips": "Good for both business and leisure. Book river view rooms."
+      "bookingTips": "ビジネスにもレジャーにも最適。川側の客室を予約しましょう。"
     },
     {
-      "name": "南京玄武饭店",
+      "name": "南京玄武飯店",
       "nameEn": "Nanjing Xuanwu Hotel",
       "budget": "mid",
-      "priceRange": "¥400-800/night",
-      "address": "199 Guangzhou Road, Gulou District",
+      "priceRange": "1泊400〜800元",
+      "address": "鼓楼区広州路199号",
       "coordinates": {
         "lat": 32.0422,
         "lng": 118.7772
       },
       "rating": 4.4,
       "highlights": [
-        "Near Purple Mountain",
-        "Good location",
-        "Comfortable rooms",
-        "Value"
+        "紫金山付近",
+        "立地良好",
+        "快適な客室",
+        "価値"
       ],
-      "bookingTips": "Good alternative to luxury hotels. Book during off-peak."
+      "bookingTips": "高級ホテルの代替として良い選択肢。オフピーク時に予約しましょう。"
     },
     {
       "name": "南京水游城假日酒店",
       "nameEn": "Holiday Inn Nanjing Aqua City",
       "budget": "mid",
-      "priceRange": "¥450-800/night",
-      "address": "6 Yanghe Road, Qinhuai District",
+      "priceRange": "1泊450〜800元",
+      "address": "秦淮区楊河路6号",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7872
       },
       "rating": 4.5,
       "highlights": [
-        "Shopping mall location",
-        "Metro access",
-        "Modern rooms",
-        "Good breakfast"
+        "ショッピングモール内の立地",
+        "地下鉄アクセス",
+        "モダンな客室",
+        "朝食が良い"
       ],
-      "bookingTips": "Great for shoppers. Connected to Aqua City mall."
+      "bookingTips": "ショッピングに最適。Aqua Cityモールに直結。"
     },
     {
-      "name": "南京瑞金路亚朵酒店",
+      "name": "南京瑞金路亜朶酒店",
       "nameEn": "Atour Hotel Nanjing Ruijin Road",
       "budget": "mid",
-      "priceRange": "¥300-600/night",
-      "address": "688 Ruijin Road, Xuanwu District",
+      "priceRange": "1泊300〜600元",
+      "address": "玄武区瑞金路688号",
       "coordinates": {
         "lat": 32.0522,
         "lng": 118.7972
       },
       "rating": 4.6,
       "highlights": [
-        "Library theme",
-        "Reading area",
-        "Comfortable beds",
-        "Free breakfast"
+        "図書館テーマ",
+        "読書エリア",
+        "快適なベッド",
+        "朝食無料"
       ],
-      "bookingTips": "Popular Chinese boutique hotel chain. Great value."
+      "bookingTips": "人気の中国ブティックホテルチェーン。コストパフォーマンス抜群。"
     },
     {
       "name": "南京新街口如家酒店",
       "nameEn": "Home Inn Nanjing Xinjiekou",
       "budget": "budget",
-      "priceRange": "¥150-300/night",
-      "address": "218 Zhongshan Road, Xuanwu District",
+      "priceRange": "1泊150〜300元",
+      "address": "玄武区中山路218号",
       "coordinates": {
         "lat": 32.0322,
         "lng": 118.7872
       },
       "rating": 4.2,
       "highlights": [
-        "Central location",
-        "Budget-friendly",
-        "Metro access",
-        "Clean"
+        "中心部に好立地",
+        "リーズナブルな価格",
+        "地下鉄アクセス",
+        "清潔"
       ],
-      "bookingTips": "Best budget option near Xinjiekou. Simple but reliable."
+      "bookingTips": "新街口付近で最安の選択肢。シンプルだが信頼できる。"
     },
     {
-      "name": "南京夫子庙青年旅舍",
+      "name": "南京夫子廟青年旅舎",
       "nameEn": "Nanjing Fuzi Temple Youth Hostel",
       "budget": "budget",
-      "priceRange": "¥80-200/night",
-      "address": "Near Fuzi Temple, Qinhuai District",
+      "priceRange": "1泊80〜200元",
+      "address": "秦淮区夫子廟付近",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "rating": 4.3,
       "highlights": [
-        "Near Fuzi Temple",
-        "Riverside location",
-        "Social atmosphere",
-        "Value"
+        "夫子廟の近く",
+        "川沿いのロケーション",
+        "社交的な雰囲気",
+        "価値"
       ],
-      "bookingTips": "Great location for night market and river walks."
+      "bookingTips": "ナイトマーケットや川沿いの散策に最適なロケーション。"
     },
     {
       "name": "南京紫金山庄",
       "nameEn": "Nanjing Purple Mountain Villa",
       "budget": "luxury",
-      "priceRange": "¥1200-2500/night",
-      "address": "8 Zhongling Road, Xuanwu District",
+      "priceRange": "1泊1200〜2500元",
+      "address": "玄武区中霊路8号",
       "coordinates": {
         "lat": 32.0622,
         "lng": 118.8372
       },
       "rating": 4.7,
       "highlights": [
-        "Mountain location",
-        "Peaceful setting",
-        "Nature views",
-        "Spa facilities"
+        "山岳ロケーション",
+        "静かな環境",
+        "自然の眺め",
+        "スパ施設"
       ],
-      "bookingTips": "Best for relaxation. Surrounded by Purple Mountain scenery."
+      "bookingTips": "リラックスに最適。紫金山の景色に囲まれている。"
     },
     {
-      "name": "南京奥体中心亚朵酒店",
+      "name": "南京奥体中心亜朶酒店",
       "nameEn": "Atour Hotel Nanjing Olympic Center",
       "budget": "mid",
-      "priceRange": "¥350-650/night",
-      "address": "168 Huanqing Road, Jianye District",
+      "priceRange": "1泊350〜650元",
+      "address": "建鄴区環慶路168号",
       "coordinates": {
         "lat": 32.0322,
         "lng": 118.7472
       },
       "rating": 4.5,
       "highlights": [
-        "Near Olympic Stadium",
-        "Modern rooms",
-        "Quiet area",
-        "Good service"
+        "オリンピックスタジアム付近",
+        "モダンな客室",
+        "静かなエリア",
+        "サービス良好"
       ],
-      "bookingTips": "Good for sports fans. Near Nanjing Olympic Sports Center."
+      "bookingTips": "スポーツファンに最適。南京オリンピックスポーツセンターの近く。"
     },
     {
-      "name": "南京夫子庙民宿",
+      "name": "南京夫子廟民宿",
       "nameEn": "Nanjing Fuzi Temple Boutique Homestay",
       "budget": "budget",
-      "priceRange": "¥200-500/night",
-      "address": "Laochengli area, Qinhuai District",
+      "priceRange": "1泊200〜500元",
+      "address": "秦淮区老城隍廟エリア",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7972
       },
       "rating": 4.4,
       "highlights": [
-        "Traditional courtyard",
-        "Central location",
-        "Local experience",
-        "Authentic decor"
+        "伝統的な中庭",
+        "中心部に好立地",
+        "地元体験",
+        "本格的な装飾"
       ],
-      "bookingTips": "Experience traditional Nanjing living. Book well ahead."
+      "bookingTips": "伝統的な南京の暮らしを体験。早めの予約必須。"
     }
   ],
   "payment": [
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Universal in Nanjing",
+      "description": "南京のユニバーサル",
       "howToUse": [
-        "Download before arrival",
-        "Link card"
+        "到着前にダウンロード",
+        "カードを連携"
       ],
       "tips": [
-        "Works at all merchants",
-        "English available"
+        "すべての加盟店で利用可能",
+        "英語対応可能"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Accepted everywhere",
+      "description": "どこでも受け入れられる",
       "howToUse": [
-        "WeChat required",
-        "International cards accepted"
+        "WeChatが必要",
+        "国際カード対応"
       ],
       "tips": [
-        "Set to English mode",
-        "Needed for shared bikes"
+        "英語モードに設定",
+        "シェア自転車に必要"
       ]
     },
     {
       "method": "Cash",
       "icon": "cash",
-      "description": "Useful at traditional markets",
+      "description": "伝統的な市場で便利",
       "howToUse": [
-        "ATM everywhere",
-        "Banks along main streets"
+        "ATMはどこにでもある",
+        "大通りの銀行"
       ],
       "tips": [
-        "Keep 200¥ for markets",
-        "Most restaurants accept cards"
+        "市場用に200元を用意してください",
+        "ほとんどのレストランでカード利用可"
       ]
     }
   ],
   "culturalTips": [
     {
       "category": "history",
-      "title": "Memorial Culture",
-      "content": "Nanjing is deeply connected to Chinese modern history. Visit the Massacre Memorial Hall for reflection. The Sun Yat-sen Mausoleum represents founding of modern China. Presidential Palace shows ROC era.",
+      "title": "記念文化",
+      "content": "南京は中国の近現代史と深く結びついています。南京大虐殺記念館を訪れて、深く思いを巡らせましょう。孫文の陵墓は近代中国の成立を象徴しています。また、国民党総統府は中華民国時代の様子を示しています。",
       "importance": "high"
     },
     {
       "category": "food",
-      "title": "Nanjing Cuisine",
-      "content": "Nanjing food is savory and slightly oily. Must-try: duck blood soup, salt duck, soup dumplings. The city's cuisine reflects its position as 'the home of Jinling cuisine'.",
+      "title": "南京料理",
+      "content": "南京の料理は風味豊かでやや脂っこいです。必ず試すべきもの：鴨血スープ、塩漬けの鴨、小籠包。この街の料理は「金陵料理の故郷」としての位置を反映しています。",
       "importance": "high"
     },
     {
       "category": "timing",
-      "title": "Avoiding Crowds",
-      "content": "Nanjing's attractions can be very crowded. Visit Sun Yat-sen Mausoleum and Ming Xiaoling early morning. Fuzi Temple is best at night. Weekdays are quieter.",
+      "title": "混雑を避ける",
+      "content": "南京の観光スポットは非常に混雑することがあります。孫文陵墓と明孝陵は早朝に訪れることをお勧めします。夫子廟は夜が最も良い時間帯です。平日は比較的静かです。",
       "importance": "medium"
     },
     {
       "category": "gingko",
-      "title": "Seasonal Highlights",
-      "content": "Nanjing's gingko trees are legendary. The turn color in mid-November along银杏大道. Cherry blossoms at Xuanwu Lake in spring. Plum blossoms in winter.",
+      "title": "季節の見所",
+      "content": "南京のイチョウの木は伝説です。11月中旬に銀杏大道で色づきます。春季には玄武湖の桜、冬の梅の花が知られています。",
       "importance": "medium"
     },
     {
       "category": "culture",
-      "title": "Six Dynasties Heritage",
-      "content": "Nanjing was capital during Six Dynasties period (220-589 AD). Visit the Nanjing Museum for artifacts from this era. The Zonghua Gate reflects military architecture of that time. Ling Guo Temple is a surviving Buddhist site.",
+      "title": "六朝の遺産",
+      "content": "南京は六朝時代（220-589年）の都でした。この時代の遺物を展示している南京博物館を訪れてみてください。中華門は当時の軍事建築を反映しています。霊谷寺は現存する仏教の聖地です。",
       "importance": "medium"
     },
     {
       "category": "literature",
-      "title": "Literary Legacy",
-      "content": "Nanjing inspired many famous writers including Cao Xueqin (Dream of Red Chamber), Li Yu, and modern writer Ye Shengtao. The Nanjing Museum has an excellent collection of historical documents and calligraphy.",
+      "title": "文学遺産",
+      "content": "南京は多くの有名な作家にインスピレーションを与えました。曹雪芹（『紅楼夢』）、李漁、そして現代作家の葉聖陶もその中に含まれます。南京博物館には、歴史的文書や書道作品の見事なコレクションがあります。",
       "importance": "medium"
     },
     {
       "category": "food",
-      "title": "Nanjing Snacks Culture",
-      "content": "Nanjing is famous for street snacks: duck blood soup (鸭血粉丝汤), small sesame balls (雨花石汤圆), and beef offal. The Fuzi Temple night market and Laochengli are best areas for snack exploration.",
+      "title": "南京小吃文化",
+      "content": "南京は屋台料理で有名で、鴨血粉絲湯、雨花石湯円、牛的内臓などが有名です。夫子廟ナイトマーケットと老城리가屋台探索に最佳です。",
       "importance": "high"
     },
     {
       "category": "dialect",
-      "title": "Nanjing Dialect",
-      "content": "Nanjing dialect is one of the oldest Mandarin dialects, preserving many elements from Ming Dynasty imperial speech. It's known for being more 'down to earth' than Beijing dialect. Locals appreciate visitors trying a few phrases.",
+      "title": "南京の方言",
+      "content": "南京方は最も古い中国語方言の一つで、明王朝の官話很多要素を保存しています。北京方言より「庶民的」と評されます。訪問者がいくつかのフレーズを試みることを現地人は評価します。",
       "importance": "low"
     },
     {
       "category": "crafts",
-      "title": "Nanjing Crafts",
-      "content": "Nanjing is famous for Yuhua stones (雨花石), silk products, and Nanjing brocade (云锦). The Nanjing Yuhua Stone Garden in Zhonghua Gate area showcases these colorful stones. Nanjing brocade is a UNESCO intangible heritage.",
+      "title": "南京の工芸",
+      "content": "南京は雨花石、絹製品、南京雲錦で有名です。中華門地域の南京雨花石園ではこれらの鮮やかな石を展示しています。南京雲錦はユネスコの無形文化遺産です。",
       "importance": "medium"
     },
     {
       "category": "tea",
-      "title": "Nanjing Tea Culture",
-      "content": "Nanjing has unique tea culture featuring Qimen black tea from nearby Huangshan. The famous 'First Spring Tea' is picked in March. Tea houses along Xuanwu Lake offer pleasant afternoon tea experiences.",
+      "title": "南京の茶文化",
+      "content": "南京は近隣の黄山からの祁門紅茶を中心とした独特の茶文化があります。有名な「第一春茶」は3月に摘み取られます。玄武湖沿いの茶屋ではんびょな午後のティー体験ができます。",
       "importance": "medium"
     },
     {
       "category": "gardens",
-      "title": "Nanjing Gardens",
-      "content": "Like Suzhou, Nanjing has historic private gardens. The Xuanwu Lake area has many traditional pavilions. The Presidential Palace has beautiful garden areas. The old Ming palace ruins include ancient garden elements.",
+      "title": "南京の庭園",
+      "content": "蘇州のように、南京には歴史的な私邸庭園があります。玄武湖区域には多くの伝統的パビリオンがあります。大総統府には美しい庭園区域があります。明宮殿跡には古代庭園要素が含まれています。",
       "importance": "medium"
     },
     {
       "category": "riverside",
-      "title": "Yangtze River Culture",
-      "content": "Nanjing sits on the Yangtze River, historically crucial for trade and defense. The river wall offers walking paths. The historic Xiaguan area was once the main port. Yuejiang Tower offers panoramic river views.",
+      "title": "揚子江文化",
+      "content": "南京は長江沿いに位置し、歴史的に貿易と防衛の要衝でした。川沿いの城壁には遊歩道があります。歴史的な下関エリアはかつて主要な港でした。閲江楼からは長江のパノラマビューが楽しめます。",
       "importance": "medium"
     },
     {
       "category": "education",
-      "title": "Academic Heritage",
-      "content": "Nanjing has been an education center for centuries. Nanjing University and Southeast University are prestigious institutions. The old campus buildings are architecturally significant and open to visitors.",
+      "title": "学術遺産",
+      "content": "南京は何世紀にもわたって教育の中心地です。南京大学と東南大学は権威のある大学です。古いキャンパス建造物は建築的に重要で、公開されています。",
       "importance": "medium"
     },
     {
       "category": "music",
-      "title": "Jiangnan Music",
-      "content": "Nanjing is part of Jiangnan region known for traditional music. The Qinhuai River area has historical connections to folk music and opera. The local opera style influenced many Chinese performing arts.",
+      "title": "江南音楽",
+      "content": "南京は伝統的な音楽で知られる江南地方の一部です。秦淮河地区は民謡やオペラと歴史的に関係しています。地元オペラ様式は多くの中国舞台芸術に影響を与えました。",
       "importance": "low"
     },
     {
       "category": "nightlife",
-      "title": "Modern Nanjing",
-      "content": "Nanjing has vibrant modern nightlife in Xinjiekou and Jianye districts.1912 bar street near Presidential Palace has many restaurants and bars. The Qinhuai River area offers evening boat rides with city views.",
+      "title": "近代南京",
+      "content": "南京は新街口と建鄴地区で活気のある近代的なナイトライフを楽しめます。大統領府近くの1912バー通りには多くのレストランとバーがあります。秦淮河地区では夜景を楽しむ夕方の船遊びができます。",
       "importance": "low"
     }
   ],
@@ -3176,134 +3182,149 @@
     {
       "type": "ambulance",
       "name": "南京急救中心",
-      "nameEn": "Nanjing Emergency Center",
+      "nameEn": "在広州シンガポール総領事館",
       "phone": "120",
-      "notes": "Major hospitals have English interpretation"
+      "notes": "主要病院では英語通訳が利用可能",
+      "nameJa": "南京急救中心"
     },
     {
       "type": "police",
       "name": "南京市公安局",
       "nameEn": "Nanjing Public Security Bureau",
       "phone": "110",
-      "notes": "Tourist police at major attractions"
+      "notes": "主要観光地に観光警察が配置されています",
+      "nameJa": "南京市公安局"
     },
     {
       "type": "hospital",
       "name": "南京鼓楼医院",
       "nameEn": "Nanjing Drum Tower Hospital",
       "phone": "+86 25 8310 6666",
-      "address": "321 Zhongshan Road",
+      "address": "中山路321号",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7872
       },
-      "notes": "English-speaking staff available"
+      "notes": "英語対応スタッフあり",
+      "nameJa": "南京鼓楼医院"
     },
     {
       "type": "embassy",
-      "name": "美国驻上海总领事馆",
+      "name": "在上海米国総領事館",
       "nameEn": "US Consulate General Shanghai",
       "phone": "+86 21 8011 2400",
-      "address": "Shanghai (nearest US consular services)",
-      "notes": "For US citizens in Nanjing region"
+      "address": "上海（最寄りの米国領事サービス）",
+      "notes": "南京地域在住の米国市民向け",
+      "nameJa": "在上海米国総領事館"
     },
     {
       "type": "hospital",
-      "name": "南京军区总医院",
+      "name": "南京軍区総医院",
       "nameEn": "Nanjing Military General Hospital",
       "phone": "+86 25 8086 1155",
-      "address": "32 Changjiang Road, Xuanwu District",
+      "address": "玄武区長江路32号",
       "coordinates": {
         "lat": 32.0422,
         "lng": 118.7972
       },
-      "notes": "Another major hospital with English staff"
+      "notes": "英語対応スタッフがいるもう一つの主要病院",
+      "nameJa": "南京軍区総医院"
     },
     {
       "type": "tourist-police",
-      "name": "南京旅游警察",
+      "name": "南京観光警察",
       "nameEn": "Nanjing Tourist Police",
       "phone": "+86 25 8442 9901",
-      "notes": "English-speaking tourist police at major attractions"
+      "notes": "主要観光地の英語対応観光警察",
+      "nameJa": "南京観光警察"
     },
     {
       "type": "fire",
       "name": "南京消防",
       "nameEn": "Nanjing Fire Department",
       "phone": "119",
-      "notes": "Fire and rescue services"
+      "notes": "消防・救助サービス",
+      "nameJa": "南京消防"
     },
     {
       "type": "embassy",
-      "name": "英国驻上海总领事馆",
+      "name": "在上海英国総領事館",
       "nameEn": "UK Consulate General Shanghai",
       "phone": "+86 21 6179 8300",
-      "address": "Shanghai",
-      "notes": "For UK citizens in Nanjing region"
+      "address": "上海",
+      "notes": "南京地域在住の英国市民向け",
+      "nameJa": "在上海英国総領事館"
     },
     {
       "type": "embassy",
-      "name": "日本驻上海总领事馆",
+      "name": "在上海日本総領事館",
       "nameEn": "Japan Consulate General Shanghai",
       "phone": "+86 21 5257 4788",
-      "address": "Shanghai",
-      "notes": "For Japanese citizens in Nanjing region"
+      "address": "上海",
+      "notes": "南京地域在住の日本国民向け",
+      "nameJa": "在上海日本総領事館"
     },
     {
       "type": "embassy",
-      "name": "德国驻上海总领事馆",
+      "name": "在上海ドイツ総領事館",
       "nameEn": "Germany Consulate General Shanghai",
       "phone": "+86 21 6101 2000",
-      "address": "Shanghai",
-      "notes": "For German citizens in Nanjing region"
+      "address": "上海",
+      "notes": "南京地域在住のドイツ市民向け",
+      "nameJa": "在上海ドイツ総領事館"
     },
     {
       "type": "embassy",
-      "name": "澳大利亚驻上海总领事馆",
+      "name": "在上海オーストラリア総領事館",
       "nameEn": "Australia Consulate General Shanghai",
       "phone": "+86 21 5292 9000",
-      "address": "Shanghai",
-      "notes": "For Australian citizens in Nanjing region"
+      "address": "上海",
+      "notes": "南京地域在住のオーストラリア市民向け",
+      "nameJa": "在上海オーストラリア総領事館"
     },
     {
       "type": "embassy",
-      "name": "法国驻上海总领事馆",
+      "name": "在上海フランス総領事館",
       "nameEn": "France Consulate General Shanghai",
       "phone": "+86 21 6103 2200",
-      "address": "Shanghai",
-      "notes": "For French citizens in Nanjing region"
+      "address": "上海",
+      "notes": "南京地域在住のフランス市民向け",
+      "nameJa": "在上海フランス総領事館"
     },
     {
       "type": "embassy",
-      "name": "加拿大驻上海总领事馆",
+      "name": "在上海カナダ総領事館",
       "nameEn": "Canada Consulate General Shanghai",
       "phone": "+86 21 3279 2800",
-      "address": "Shanghai",
-      "notes": "For Canadian citizens in Nanjing region"
+      "address": "上海",
+      "notes": "南京地域在住のカナダ市民向け",
+      "nameJa": "在上海カナダ総領事館"
     },
     {
       "type": "embassy",
-      "name": "韩国驻上海总领事馆",
+      "name": "在上海韓国総領事館",
       "nameEn": "South Korea Consulate General Shanghai",
       "phone": "+86 21 5108 0700",
-      "address": "Shanghai",
-      "notes": "For Korean citizens in Nanjing region"
+      "address": "上海",
+      "notes": "南京地域在住の韓国市民向け",
+      "nameJa": "在上海韓国総領事館"
     },
     {
       "type": "embassy",
-      "name": "新加坡驻上海总领事馆",
+      "name": "在上海シンガポール総領事館",
       "nameEn": "Singapore Consulate General Shanghai",
       "phone": "+86 21 6295 3800",
-      "address": "Shanghai",
-      "notes": "For Singapore citizens in Nanjing region"
+      "address": "上海",
+      "notes": "南京地域在住のシンガポール市民向け",
+      "nameJa": "在上海シンガポール総領事館"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese, Nanjing dialect",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Tap water safe after boiling; bottled water recommended"
+    "language": "中国語（マンダリン）",
+    "currency": "人民元 (CNY/RMB)",
+    "visa": "ほとんどの国籍でビザが必要です。対象者は空港で72時間トランジットビザを取得できます。",
+    "timeZone": "UTC+8 (中国標準時)",
+    "electricity": "220V/50Hz、A/I タイププラグ",
+    "water": "水道水は飲めますが、ペットボトル推奨"
   }
 }

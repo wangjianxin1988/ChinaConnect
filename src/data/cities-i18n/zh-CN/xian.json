@@ -3,30 +3,30 @@
   "name": "西安",
   "nameEn": "Xi'an",
   "country": "China",
-  "population": "13 million",
+  "population": "1300万",
   "coordinates": {
     "lat": 34.3416,
     "lng": 108.9398
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Xi'an, the ancient capital of China and starting point of the Silk Road, is home to one of the world's greatest archaeological finds - the Terracotta Army. With 3,100 years of history, it offers ancient city walls, the Muslim Quarter's vibrant street food, the Big Wild Goose Pagoda, and access to the western region's stunning landscapes.",
+  "description": "西安，中国古都和丝绸之路的起点，拥有世界上最伟大的考古发现之一——兵马俑。拥有3100年的历史，这里有古城墙、回民街热闹的街头美食、大雁塔，以及通往西部壮丽景观的通道。",
   "coverImage": "/img/ext/7128ba3c0e88.webp",
   "highlights": [
-    "Terracotta Army - 2,000 year old warriors",
-    "Ancient City Wall - Best preserved in China",
-    "Big Wild Goose Pagoda - Tang dynasty landmark",
-    "Muslim Quarter - Street food paradise",
-    "Shaanxi History Museum - National treasures"
+    "兵马俑 - 拥有2000年历史的战士",
+    "古城墙 - 中国保存最完好的古城墙",
+    "大雁塔 - 唐朝地标",
+    "回民街 - 街头美食天堂",
+    "陕西历史博物馆 - 国家珍宝"
   ],
   "climate": {
-    "type": "Semi-arid continental",
+    "type": "半干旱大陆性气候",
     "bestMonths": [
-      "March",
-      "April",
-      "May",
-      "September",
-      "October",
-      "November"
+      "三月",
+      "四月",
+      "五月",
+      "九月",
+      "十月",
+      "十一月"
     ],
     "avgSummerTemp": "26C (79F)",
     "avgWinterTemp": "1C (34F)",
@@ -36,346 +36,346 @@
     {
       "id": "terracotta-army",
       "name": "秦始皇兵马俑",
-      "nameEn": "Terracotta Army",
+      "nameEn": "兵马俑",
       "image": "/img/ext/52306fca3964.webp",
       "category": "historical",
-      "description": "The massive underground army of over 8,000 life-sized terracotta warriors buried to protect China's first emperor in his afterlife.",
-      "address": "Lintong District, 35km east of Xi'an",
+      "description": "这支庞大的地下军队有超过8000尊真人大小的兵马俑陶俑，埋藏于此是为了保护中国第一位皇帝在来世的安宁。",
+      "address": "临潼区，西安以东35公里",
       "coordinates": {
         "lat": 34.3847,
         "lng": 109.2785
       },
-      "openingHours": "08:30-18:30 (Mar-Nov), 08:00-18:00 (Dec-Feb)",
-      "ticketPrice": "120¥ (peak), 80¥ (off-peak)",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "08:30-18:30（3月至11月），08:00-18:00（12月至2月）",
+      "ticketPrice": "120元（旺季），80元（淡季）",
+      "recommendedVisitTime": "3-4小时",
       "highlights": [
-        "Pit 1 - largest army display",
-        "Pit 2 - complex formations",
-        "Pit 3 - command center",
-        "Bronze chariots exhibition"
+        "一号坑 - 规模最大的军队陈列",
+        "二号坑 - 复杂的军阵排列",
+        "三号坑 - 指挥部",
+        "青铜马车展览"
       ],
-      "tips": "Arrive early to avoid crowds. Take official shuttle bus from train station. Audio guide essential for history. Combine with Huaqing Hot Springs.",
+      "tips": "建议早到以避开人流。乘坐火车站的官方摆渡车。语音导览对了解历史必不可少。可与华清池一并游览。",
       "phone": "+86 29 8139 9127"
     },
     {
       "id": "city-wall",
       "name": "西安城墙",
-      "nameEn": "Xi'an City Wall",
+      "nameEn": "西安城墙",
       "image": "/img/ext/cb0d9cc63128.webp",
       "category": "historical",
-      "description": "The most complete ancient city wall in China, dating from the Ming dynasty. Walk or bike the full 14km circuit.",
-      "address": "South Gate, Xi'an",
+      "description": "中国最完整的明代古城墙。可步行或骑自行车完整游览14公里。",
+      "address": "西安南门",
       "coordinates": {
         "lat": 34.2655,
         "lng": 108.9485
       },
-      "openingHours": "08:00-22:00 (South Gate section)",
-      "ticketPrice": "54¥ (walking), 100¥ (bike rental)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "08:00-22:00（南门段）",
+      "ticketPrice": "54元（步行），100元（自行车租赁）",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "South Gate gatehouse",
-        "North Gate tower",
-        "City views",
-        "Watchtower museums"
+        "南门城楼",
+        "北门城楼",
+        "城市景观",
+        "城楼博物馆"
       ],
-      "tips": "Bike rental at multiple gates. Start from South Gate for best photos. Best at sunset for city views.",
+      "tips": "多个城门可租赁自行车。建议从南门开始以获得最佳拍摄效果。傍晚时分欣赏城市全景最佳。",
       "phone": "+86 29 8727 2792"
     },
     {
       "id": "big-wild-goose-pagoda",
       "name": "大雁塔",
-      "nameEn": "Big Wild Goose Pagoda",
+      "nameEn": "大雁塔",
       "image": "/img/ext/cdf84d51c448.webp",
       "category": "cultural",
-      "description": "The iconic Buddhist pagoda built in 652 AD to hold Buddhist scriptures brought from India by the monk Xuanzang.",
-      "address": "Near Southern University, Yanta District",
+      "description": "著名的佛教塔，建于公元652年，用于存放唐代高僧玄奘从印度带回的佛经。",
+      "address": "位于雁塔区，靠近南方大学",
       "coordinates": {
         "lat": 34.2185,
         "lng": 108.9595
       },
-      "openingHours": "08:00-18:30 (Mar-Nov), 08:00-18:00 (Dec-Feb)",
-      "ticketPrice": "25¥ (entrance), 40¥ (climbing)",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "08:00-18:30（3月-11月），08:00-18:00（12月-2月）",
+      "ticketPrice": "25元（门票），40元（登塔）",
+      "recommendedVisitTime": "2小时",
       "highlights": [
-        "Seven-story pagoda",
-        "Da Ci'en Temple",
-        "Musical fountain show",
-        "Tang Dynasty architecture"
+        "七层塔",
+        "大慈恩寺",
+        "音乐喷泉表演",
+        "唐代建筑"
       ],
-      "tips": "Evening fountain shows spectacular (20:30). Combined with nearby Qinling Mountains day trip.",
+      "tips": "晚间喷泉表演精彩（20:30）。可与附近的秦岭一日游相结合。",
       "phone": "+86 29 8552 7958"
     },
     {
       "id": "muslim-quarter",
       "name": "回民街",
-      "nameEn": "Xi'an Muslim Quarter",
+      "nameEn": "西安回民街",
       "image": "/img/ext/fa0720a50c62.webp",
       "category": "cultural",
-      "description": "A vibrant neighborhood of Hui Muslims featuring ancient mosques, traditional architecture, and famous street food.",
-      "address": "North of Bell Tower, Xi'an",
+      "description": "一个充满活力的回族穆斯林社区，拥有古老的清真寺、传统建筑和著名的街头美食。",
+      "address": "西安钟楼以北",
       "coordinates": {
         "lat": 34.2615,
         "lng": 108.9435
       },
-      "openingHours": "Open 24 hours, shops 09:00-23:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "全天开放，商店营业时间09:00-23:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "Great Mosque of Xi'an",
-        "Bai Ta Si food street",
-        "Hui architecture",
-        "Silver jewelry markets"
+        "西安大清真寺",
+        "白塔寺美食街",
+        "回族建筑",
+        "银饰市场"
       ],
-      "tips": "Try biangbiang面, roujiamo, and persimmon cakes. Walk through early morning or evening. Cameras welcome except in mosque.",
+      "tips": "品尝biangbiang面、肉夹馍和柿饼。建议清晨或傍晚游览。除清真寺外均可拍照。",
       "phone": "+86 029  0974 1229"
     },
     {
       "id": "shaanxi-museum",
       "name": "陕西历史博物馆",
-      "nameEn": "Shaanxi History Museum",
+      "nameEn": "陕西历史博物馆",
       "image": "/img/ext/475dd9f0ea1f.webp",
       "category": "cultural",
-      "description": "One of China's best provincial museums housing artifacts from the Zhou to Tang dynasties, including the earliest Chinese civilization finds.",
-      "address": "91 Xiaozhai Rd, Yanta District",
+      "description": "中国最优秀的省级博物馆之一，馆藏从周到唐代的文物，包括中国最早文明的发现。",
+      "address": "雁塔区小寨路91号",
       "coordinates": {
         "lat": 34.2295,
         "lng": 108.9585
       },
-      "openingHours": "08:30-18:00 (Closed Monday)",
-      "ticketPrice": "Free (requires reservation)",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "08:30-18:00（周一闭馆）",
+      "ticketPrice": "免费（需预约）",
+      "recommendedVisitTime": "3-4小时",
       "highlights": [
-        "Zhou dynasty bronzes",
-        "Tang dynasty gold artifacts",
-        "Ming dynasty porcelain",
-        "Mongolian artifacts"
+        "周代青铜器",
+        "唐代金器",
+        "明代瓷器",
+        "蒙古文物"
       ],
-      "tips": "Reserve tickets weeks ahead on official app. Free audio guides limited. Morning visits better.",
+      "tips": "请在官方APP提前数周预约门票。免费语音导览数量有限。上午参观最佳。",
       "phone": "+86 029  2111 9563"
     },
     {
       "id": "huaqing-hot-springs",
       "name": "华清池",
-      "nameEn": "Huaqing Hot Springs",
+      "nameEn": "华清池",
       "image": "/img/ext/b1a91de242ab.webp",
       "category": "historical",
-      "description": "An imperial hot spring resort famous for the love story of Emperor Xuanzong and Yang Guifei, with Tang dynasty palace ruins.",
-      "address": "Huaqing Rd, Lintong District, 30km from Xi'an",
+      "description": "著名的皇家温泉度假胜地，以唐玄宗和杨贵妃的爱情故事闻名，拥有唐代宫殿遗址。",
+      "address": "临潼区华清路，距西安30公里",
       "coordinates": {
         "lat": 34.3585,
         "lng": 109.2095
       },
       "openingHours": "07:30-19:00",
-      "ticketPrice": "120¥ (includes Emperor's Pool)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "120元（含御池）",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "Nine Dragon Spring",
-        "Tang dynasty palace ruins",
-        "Emperor's personal pool",
-        "The Romance of Two Emperors show"
+        "九龙泉",
+        "唐代宫殿遗址",
+        "御池",
+        "《两帝情》演出"
       ],
-      "tips": "Combine with Terracotta Army day trip. Evening 'The Long Song' show spectacular. Best in spring.",
+      "tips": "建议与兵马俑一日游结合。晚间《长恨歌》演出非常精彩。最佳游览季节为春季。",
       "phone": "+86 029  6358 7033"
     },
     {
       "id": "bell-tower",
       "name": "钟楼",
-      "nameEn": "Xi'an Bell Tower",
+      "nameEn": "西安钟楼",
       "image": "/img/ext/c74d7faf7bb9.webp",
       "category": "historical",
-      "description": "The largest and most intact bell tower in China, built in 1384 during the Ming dynasty.",
-      "address": "West Avenue, Xincheng District",
+      "description": "中国最大最完整的钟楼，建于1384年明代。",
+      "address": "新城区西大街",
       "coordinates": {
         "lat": 34.2625,
         "lng": 108.9445
       },
       "openingHours": "08:30-20:00",
-      "ticketPrice": "35¥ (tower only), 50¥ (combined with Drum Tower)",
-      "recommendedVisitTime": "45 minutes",
+      "ticketPrice": "35元（仅钟楼），50元（钟楼+鼓楼联票）",
+      "recommendedVisitTime": "45分钟",
       "highlights": [
-        "Zhongyue Temple Bell",
-        "Panoramic city views",
-        "Traditional architectural details",
-        "Night illuminations"
+        "终南钟",
+        "全城全景",
+        "传统建筑细节",
+        "夜间灯光"
       ],
-      "tips": "Best viewed from outside at night. Combined ticket with Drum Tower saves money. Metro access convenient.",
+      "tips": "最佳夜景外观。鼓楼联票更省钱。地铁直达交通便利。",
       "phone": "+86 29 8727 2792"
     },
     {
       "id": "small-wild-goose-pagoda",
       "name": "小雁塔",
-      "nameEn": "Small Wild Goose Pagoda",
+      "nameEn": "小雁塔",
       "image": "/img/ext/2b32c6d81b86.webp",
       "category": "historical",
-      "description": "A 15-story Tang dynasty pagoda built in 706 AD, surviving multiple earthquakes. Adjacent to the Xi'an Museum.",
-      "address": "72 Youyi Rd, Beilin District",
+      "description": "建于706年的唐代15层宝塔，历经多次地震保存至今。紧邻西安博物馆。",
+      "address": "西安市碑林区友谊东路72号",
       "coordinates": {
         "lat": 34.2315,
         "lng": 108.9355
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "Free with Xi'an Museum reservation",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "西安博物馆预约免费入场",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "15-story pagoda",
-        "Ancient zhouzhi well",
-        "Xi'an Museum",
-        "Peaceful temple grounds"
+        "15层宝塔",
+        "古代周至井",
+        "西安博物馆",
+        "宁静的寺庙环境"
       ],
-      "tips": "Less crowded than Big Wild Goose Pagoda. Great photos from the courtyard. Free entry with museum reservation.",
+      "tips": "比大雁塔人少。庭院里拍照效果好。博物馆预约免费入场。",
       "phone": "+86 029  4582 5296"
     },
     {
       "id": "tomb-of-emperor-jingdi",
       "name": "汉阳陵",
-      "nameEn": "Tomb of Emperor Jingdi",
+      "nameEn": "汉景帝陵",
       "image": "/img/ext/68fb6a7f2cea.webp",
       "category": "historical",
-      "description": "The tomb complex of Emperor Jingdi of the Han dynasty with remarkable underground museum displaying hundreds of figurines.",
-      "address": "Xianyang, 20km north of Xi'an",
+      "description": "汉景帝陵墓群，配有展示数百个陶俑的地下博物馆。",
+      "address": "咸阳市，西安以北约20公里",
       "coordinates": {
         "lat": 34.4355,
         "lng": 108.9435
       },
       "openingHours": "08:30-18:30",
       "ticketPrice": "90¥",
-      "recommendedVisitTime": "2 hours",
+      "recommendedVisitTime": "2小时",
       "highlights": [
-        "Underground excavation museum",
-        "Terracotta servants without armor",
-        "Han dynasty artifacts",
-        "Narrow gauge railway"
+        "地下发掘博物馆",
+        "无甲胄陶俑",
+        "汉代文物",
+        "窄轨铁路"
       ],
-      "tips": "Less famous than Terracotta Army but equally impressive. Take bus 4 from Xi'an. Great for understanding Han dynasty.",
+      "tips": "不如兵马俑著名但同样精彩。西安乘坐4路公交车。了解汉代历史的绝佳选择。",
       "phone": "+86 029  3880 1648"
     },
     {
       "id": "drum-tower",
       "name": "鼓楼",
-      "nameEn": "Xi'an Drum Tower",
+      "nameEn": "西安鼓楼",
       "image": "/img/ext/388ea3ed8aa2.webp",
       "category": "historical",
-      "description": "The historic drum tower opposite the Bell Tower, marking the center of the old city with nightly percussion performances.",
-      "address": "West Avenue, Xincheng District",
+      "description": "历史悠久的鼓楼，与钟楼相对，标记古城中心，每日有夜间击鼓表演。",
+      "address": "新城区西大街",
       "coordinates": {
         "lat": 34.2615,
         "lng": 108.9415
       },
       "openingHours": "08:30-20:00",
-      "ticketPrice": "35¥ (tower only), 50¥ (combined with Bell Tower)",
-      "recommendedVisitTime": "45 minutes",
+      "ticketPrice": "35元（仅鼓楼），50元（钟鼓楼联票）",
+      "recommendedVisitTime": "45分钟",
       "highlights": [
-        "Giant water drum",
-        "Night performance shows",
-        "City views",
-        "Traditional drum museum"
+        "巨型水鼓",
+        "夜间表演秀",
+        "城市景观",
+        "传统鼓博物馆"
       ],
-      "tips": "Combined ticket with Bell Tower recommended. Evening drum show at 20:30. Great location near Muslim Quarter.",
+      "tips": "建议购买钟鼓楼联票。20:30有夜间鼓表演。紧邻回民街，位置优越。",
       "phone": "+86 29 8727 2792"
     },
     {
       "id": "Mount-hua",
       "name": "华山",
-      "nameEn": "Mount Hua",
+      "nameEn": "华山",
       "image": "/img/ext/994bfae9b723.webp",
       "category": "natural",
-      "description": "One of China's Five Great Mountains, famous for its dangerous plank walk along narrow ledges and dramatic peaks. A test of courage.",
-      "address": "Huashan County, 120km east of Xi'an",
+      "description": "中国五岳之一，以其危险的狭窄岩壁木板路和险峻山峰而闻名。勇气考验。",
+      "address": "华山县，西安以东120公里",
       "coordinates": {
         "lat": 34.4805,
         "lng": 110.0815
       },
-      "openingHours": "07:00-19:00 (hours vary by season)",
-      "ticketPrice": "160¥ (peak), 100¥ (off-peak) + cable cars extra",
-      "recommendedVisitTime": "1-2 days",
+      "openingHours": "07:00-19:00（开放时间随季节变化）",
+      "ticketPrice": "160¥（旺季），100¥（淡季）+ 缆车另计",
+      "recommendedVisitTime": "1-2天",
       "highlights": [
-        "Plank walk (Changmen)",
-        "Five peaks of the mountain",
-        "Sunrise from East Peak",
-        "North Peak cable car"
+        "木板路（长空栈道）",
+        "华山五峰",
+        "东峰日出",
+        "北峰缆车"
       ],
-      "tips": "Take high-speed train from Xi'an North Station. Stay overnight for sunrise. Physical fitness required. Arrive early.",
+      "tips": "乘坐西安北站高铁。住宿看日出。需要良好体力。尽早到达。",
       "phone": "+86 029  9976 5111"
     },
     {
       "id": "tang-paradise",
       "name": "大唐芙蓉园",
-      "nameEn": "Tang Paradise",
+      "nameEn": "唐乐宫",
       "image": "/img/ext/9f32b9507fe6.webp",
       "category": "cultural",
-      "description": "The largest Tang dynasty cultural theme park in China, featuring traditional gardens, performances, and imperial architecture.",
+      "description": "中国最大的唐代文化主题公园，展示传统园林、表演和皇家建筑。",
       "address": "曲江新区大唐芙蓉园",
       "coordinates": {
         "lat": 34.2195,
         "lng": 108.9745
       },
       "openingHours": "09:00-22:00",
-      "ticketPrice": "120¥ (peak), 90¥ (off-peak)",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "120¥（旺季），90¥（淡季）",
+      "recommendedVisitTime": "3-4小时",
       "highlights": [
-        "Imperial garden tours",
-        "Tang dynasty evening show",
-        "Laser water screen show",
-        "Traditional boat rides"
+        "皇家园林游览",
+        "唐代晚间演出",
+        "激光水幕秀",
+        "传统泛舟体验"
       ],
-      "tips": "Best visited in evening for light shows. Book show tickets separately. Spring and autumn ideal.",
+      "tips": "最佳傍晚游览观赏灯光秀。演出票需另订。春秋季节最佳。",
       "phone": "+86 029  5490 0339"
     },
     {
       "id": "daming-palace",
       "name": "大明宫国家遗址公园",
-      "nameEn": "Daming Palace National Heritage Site",
+      "nameEn": "大明宫国家遗址公园",
       "image": "/img/ext/d9e1e34b36a1.webp",
       "category": "historical",
-      "description": "The former imperial palace complex of the Tang dynasty, now a vast archaeological park with reconstructed palaces and museum.",
+      "description": "唐朝皇宫遗址，现为大型考古公园，内有重建宫殿和博物馆。",
       "address": "丹凤门内侧, 新城区自强东路",
       "coordinates": {
         "lat": 34.2935,
         "lng": 108.9685
       },
       "openingHours": "09:00-18:00",
-      "ticketPrice": "60¥ (park), 90¥ (museum included)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "60¥（公园），90¥（含博物馆）",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "Danfeng Gate reconstruction",
-        "Hanyuan Palace foundations",
-        "Interactive museum",
-        "Aerial photography platforms"
+        "丹凤门重建",
+        "含元殿遗址",
+        "互动博物馆",
+        "航拍平台"
       ],
-      "tips": "Rent electric cart for large area. Evening light show at 20:30. Best with audio guide.",
+      "tips": "建议租用电瓶车游览大面积区域。夜间灯光秀20:30开始。强烈建议使用音频导览。",
       "phone": "+86 029  0512 0813"
     },
     {
       "id": "yongxing-fang",
       "name": "永兴坊",
-      "nameEn": "Yongxing Fang",
+      "nameEn": "永兴坊",
       "image": "/img/ext/e24182d97762.webp",
       "category": "cultural",
-      "description": "A revitalized historical block famous for traditional Shaanxi snacks and intangible cultural heritage workshops.",
+      "description": "翻新的历史街区，以传统陕西小吃和非遗体验工坊闻名。",
       "address": "新城区中山门内",
       "coordinates": {
         "lat": 34.2685,
         "lng": 108.9565
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "Shaanxi snack street",
-        "Traditional crafts workshops",
-        "Night markets",
-        "Cultural performances"
+        "陕西小吃街",
+        "传统手工艺工作坊",
+        "夜市",
+        "文化演出"
       ],
-      "tips": "Come hungry to try many snacks. Best after 18:00 when lit up. Great for souvenirs.",
+      "tips": "空腹前往品尝各种小吃。18:00后亮灯时最佳。是购买纪念品的好地方。",
       "phone": "+86 029  5821 4313"
     },
     {
       "id": "hanyao",
       "name": "寒窑",
-      "nameEn": "Han Yao",
+      "nameEn": "寒窑",
       "image": "/img/ext/d0f816918f00.webp",
       "category": "cultural",
-      "description": "A legendary cave dwelling where the love story of Wang Baochuan and Xue Pinggui unfolded, now a scenic area.",
+      "description": "传说中的窑洞，王宝钏与薛平贵爱情故事的发生地，现为景区。",
       "address": "曲江新区寒窑路",
       "coordinates": {
         "lat": 34.2115,
@@ -383,119 +383,119 @@
       },
       "openingHours": "09:00-18:00",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "Legendary cave residence",
-        "Wang Baochuan's temple",
-        "Romantic rose garden",
-        "Traditional wedding performances"
+        "传奇窑洞故居",
+        "王宝钏祠",
+        "浪漫玫瑰园",
+        "传统婚俗表演"
       ],
-      "tips": "Good for couples. Valentine's Day special events. Combined with Tang Paradise nearby.",
+      "tips": "适合情侣游览。情人节有特别活动。可与附近大唐芙蓉园结合游玩。",
       "phone": "+86 029  2401 4891"
     },
     {
       "id": "qinling-zoo",
       "name": "秦岭野生动物园",
-      "nameEn": "Qinling Wildlife Zoo",
+      "nameEn": "秦岭野生动物园",
       "image": "/img/ext/b0325eefc49b.webp",
       "category": "natural",
-      "description": "A large zoo in the foothills of Qinling Mountains housing rare animals from Shaanxi province and beyond.",
+      "description": "秦岭脚下的大型动物园，饲养着陕西省乃至全国的珍稀动物。",
       "address": "长安区滦镇",
       "coordinates": {
         "lat": 34.0585,
         "lng": 108.8945
       },
       "openingHours": "09:00-18:00",
-      "ticketPrice": "100¥ (includes train)",
-      "recommendedVisitTime": "4-5 hours",
+      "ticketPrice": "100元（含小火车）",
+      "recommendedVisitTime": "4-5小时",
       "highlights": [
-        "Animal safari train",
-        "Giant panda breeding center",
-        "Sichuan golden snub-nosed monkeys",
-        "Rare wild animal rescue"
+        "动物Safari小火车",
+        "大熊猫繁育中心",
+        "川金丝猴",
+        "珍稀野生动物救助"
       ],
-      "tips": "Take the safari train early. Half-day trip combined with Qinling Mountains. Bring sunscreen.",
+      "tips": "建议乘坐Safari小火车早出发。建议与秦岭山脉半日游结合。需带防晒霜。",
       "phone": "+86 029  0263 0652"
     },
     {
       "id": "lehua-town",
       "name": "乐华城",
-      "nameEn": "Lehua Town",
+      "nameEn": "乐华城",
       "image": "/img/ext/6e96687388d5.webp",
       "category": "entertainment",
-      "description": "A large theme park complex with roller coasters, water rides, and family attractions.",
+      "description": "大型主题公园综合园区，包含过山车、水上项目及家庭游乐设施。",
       "address": "西咸新区泾河新城",
       "coordinates": {
         "lat": 34.4415,
         "lng": 108.8285
       },
-      "openingHours": "10:00-18:00 (seasonal)",
-      "ticketPrice": "230¥ (single park), 380¥ (combo)",
-      "recommendedVisitTime": "1-2 days",
+      "openingHours": "10:00-18:00（分季节）",
+      "ticketPrice": "230元（单园），380元（联票）",
+      "recommendedVisitTime": "1-2天",
       "highlights": [
-        "Thunder Dragon coaster",
-        "Water park section",
-        "Musical fountain",
-        "International performances"
+        "雷龙过山车",
+        "水上乐园区域",
+        "音乐喷泉",
+        "国际表演"
       ],
-      "tips": "Book online for discounts. Summer water park popular. One day each park minimum.",
+      "tips": "建议网上预订可享优惠。夏季水上公园人气高。每个园区至少安排一天。",
       "phone": "+86 029  2110 1051"
     },
     {
       "id": "famen-temple",
       "name": "法门寺",
-      "nameEn": "Famen Temple",
+      "nameEn": "法门寺",
       "image": "/img/ext/13eb656e0bad.webp",
       "category": "historical",
-      "description": "Home to a finger bone relic of Buddha, one of the most sacred Buddhist sites in China with Tang dynasty architecture.",
+      "description": "供奉佛指骨舍利的佛教圣地，中国最神圣的佛教场所之一，拥有唐代建筑风格。",
       "address": "宝鸡市扶风县法门镇",
       "coordinates": {
         "lat": 34.5555,
         "lng": 107.0195
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "100¥ (peak), 90¥ (off-peak) + 30¥ for treasure hall",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "100元（旺季），90元（淡季）+ 珍宝馆30元",
+      "recommendedVisitTime": "3-4小时",
       "highlights": [
-        "Buddha's finger bone relic",
-        "Pagoda of Heavenly Blessing",
-        "Tang dynasty treasure hall",
-        "Archaeological museum"
+        "佛指骨舍利",
+        "合十舍利塔",
+        "唐代藏宝殿",
+        "考古博物馆"
       ],
-      "tips": "About 120km from Xi'an - go early. Wear comfortable shoes. Buddhist vegetarian restaurant on site.",
+      "tips": "距西安约120公里，建议早去。穿着舒适的鞋子。寺内有佛教素菜馆。",
       "phone": "+86 029  0982 3737"
     },
     {
       "id": "beilin-museum",
       "name": "西安碑林博物馆",
-      "nameEn": "Xi'an Beilin Museum",
+      "nameEn": "西安碑林博物馆",
       "image": "/img/ext/65efc8264cfc.webp",
       "category": "cultural",
-      "description": "The oldest stone inscription museum in China, housing famous calligraphy works and ancient steles.",
+      "description": "中国最古老的石刻博物馆，收藏著名书法作品和古代碑刻。",
       "address": "碑林区三学街15号",
       "coordinates": {
         "lat": 34.2655,
         "lng": 108.9555
       },
-      "openingHours": "08:00-18:00 (summer), 08:00-17:30 (winter)",
+      "openingHours": "08:00-18:00（夏季），08:00-17:30（冬季）",
       "ticketPrice": "65¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "Classic of Thousand Character calligraphy",
-        "Dawang Ji inscription",
-        "Nine Classics carved stones",
-        "Stele of Tang dynasty calligraphy"
+        "千字文书法经典",
+        "大旺吉碑刻",
+        "九经刻石",
+        "唐代书法碑刻"
       ],
-      "tips": "Essential for calligraphy enthusiasts. Audio guide recommended. Combine with City Wall walk.",
+      "tips": "书法爱好者必去。建议使用导览器。建议与城墙步行结合游览。",
       "phone": "+86 029  0135 3507"
     },
     {
       "id": "qujiang-aquarium",
       "name": "曲江海洋馆",
-      "nameEn": "Qujiang Aquarium",
+      "nameEn": "曲江海洋馆",
       "image": "/img/ext/9116f853256b.webp",
       "category": "entertainment",
-      "description": "A large aquarium with marine performances, tropical fish exhibits, and a small theme park.",
+      "description": "一个大型海洋馆，有海洋动物表演、热带鱼展览和一个小主题公园。",
       "address": "曲江新区雁塔南路",
       "coordinates": {
         "lat": 34.2155,
@@ -503,95 +503,95 @@
       },
       "openingHours": "09:00-17:30",
       "ticketPrice": "180¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4小时",
       "highlights": [
-        "Shark tank tunnel",
-        "Dolphin and sea lion shows",
-        "Amazon rainforest zone",
-        "Mermaid performances"
+        "鲨鱼隧道",
+        "海豚和海狮表演",
+        "亚马逊热带雨林区",
+        "美人鱼表演"
       ],
-      "tips": "Check show schedules on arrival. Good for rainy days. Combine with Tang Paradise in same area.",
+      "tips": "到达后查看表演时间表。适合雨天游览。可与同区域的唐芙蓉园一起游玩。",
       "phone": "+86 029  4893 7785"
     },
     {
       "id": "zhongnan-mountain",
       "name": "终南山",
-      "nameEn": "Zhongnan Mountain",
+      "nameEn": "终南山",
       "image": "/img/ext/20ba084c3257.webp",
       "category": "natural",
-      "description": "The sacred Taoist mountain known as the 'Divine Mountain', featuring ancient temples and stunning peaks.",
+      "description": "作为神圣的'神山'，这座道教名山拥有古老的寺庙和壮丽的山峰。",
       "address": "长安区南五台镇",
       "coordinates": {
         "lat": 34.0625,
         "lng": 108.9345
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "25¥",
-      "recommendedVisitTime": "4-6 hours",
+      "ticketPrice": "25元",
+      "recommendedVisitTime": "4-6小时",
       "highlights": [
-        "South Gate of Heaven",
-        "Ancient Taoist temples",
-        "Cloud sea views",
-        "Monk meditation caves"
+        "南天门",
+        "古老道观",
+        "云海景观",
+        "僧人禅修洞"
       ],
-      "tips": "Take cable car up, hike down. Physical fitness required for summit. Best in autumn.",
+      "tips": "乘坐缆车上山，徒步下山。登顶需要良好的体力。最佳游览季节为秋季。",
       "phone": "+86 029  8578 9681"
     },
     {
       "id": "daxingshan-temple",
       "name": "大兴善寺",
-      "nameEn": "Daxingshan Temple",
+      "nameEn": "大兴善寺",
       "image": "/img/ext/7595c7c20aa3.webp",
       "category": "cultural",
-      "description": "One of the oldest and most significant Buddhist temples in China, originally built during the Sui dynasty.",
+      "description": "中国最古老、最重要的佛教寺庙之一，始建于隋朝。",
       "address": "雁塔区小寨兴善寺西街",
       "coordinates": {
         "lat": 34.2255,
         "lng": 108.9485
       },
       "openingHours": "07:00-18:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "Ancient bronze Buddha statue",
-        "Peony garden",
-        "Esoteric Buddhism artifacts",
-        "Peaceful temple grounds"
+        "古代青铜佛像",
+        "牡丹园",
+        "密宗文物",
+        "宁静的寺庙环境"
       ],
-      "tips": "Very peaceful, less touristy. Peonies in April spectacular. Good for meditation.",
+      "tips": "非常宁静，游客较少。四月牡丹盛开非常壮观。适合禅修。",
       "phone": "+86 029  4488 0852"
     },
     {
       "id": "lishan-forest",
       "name": "骊山国家森林公园",
-      "nameEn": "Lishan National Forest Park",
+      "nameEn": "骊山国家森林公园",
       "image": "/img/ext/c09fcbe63c84.webp",
       "category": "natural",
-      "description": "The scenic mountain near Huaqing Palace, famous for its terraces, pavilions, and panoramic views of Xi'an.",
+      "description": "华清宫附近的风景名山，以其梯田、亭子和西安全景闻名。",
       "address": "临潼区骊山",
       "coordinates": {
         "lat": 34.3835,
         "lng": 109.2445
       },
       "openingHours": "07:00-19:00",
-      "ticketPrice": "150¥ (includes Huaqing)",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "150¥（含华清宫）",
+      "recommendedVisitTime": "3-4小时",
       "highlights": [
-        "Emperor's Terrace viewpoints",
-        "Old Lixian's Pavilion",
-        "Stone ART carved tunnels",
-        "Sunset over Wei River"
+        "皇帝台观景点",
+        "老骊仙阁",
+        "石刻艺术隧道",
+        "渭河夕阳"
       ],
-      "tips": "Combine with Huaqing Hot Springs. Take cable car. Sunset visits spectacular. Spring for flowers.",
+      "tips": "与华清温泉结合游览。乘坐缆车。夕阳时分景色壮观。春季赏花。",
       "phone": "+86 029  4426 1816"
     },
     {
       "id": "hanling-garden",
       "name": "寒舍遗址公园",
-      "nameEn": "Hanling Garden Ruins Park",
+      "nameEn": "汉陵陵园遗址公园",
       "image": "/img/ext/2197d082103b.webp",
       "category": "cultural",
-      "description": "A park recreating the legendary love story setting with gardens, sculptures, and performances.",
+      "description": "一个重现传奇爱情故事场景的公园，有花园、雕塑和表演。",
       "address": "曲江新区寒窑路1号",
       "coordinates": {
         "lat": 34.2105,
@@ -599,119 +599,119 @@
       },
       "openingHours": "09:00-18:00",
       "ticketPrice": "45¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "Romantic sculptures",
-        "Traditional performances",
-        "Rose garden",
-        "Cave exploration"
+        "浪漫雕塑",
+        "传统表演",
+        "玫瑰园",
+        "洞穴探秘"
       ],
-      "tips": "Good for couples. Combine with Han Yao scenic area. Evening lighting beautiful.",
+      "tips": "适合情侣游览。与汉武帝陵景区结合游览。夜间灯光美丽。",
       "phone": "+86 029  5083 1941"
     },
     {
       "id": "xianyang-huaiyang",
       "name": "咸阳湖",
-      "nameEn": "Xianyang Lake",
+      "nameEn": "咸阳湖",
       "image": "/img/ext/90c2f10df87a.webp",
       "category": "natural",
-      "description": "A scenic lake area with gardens, walking paths, and the historic Liumin Bridge.",
+      "description": "一个风景秀丽的湖泊区域，拥有花园、步行道和历史悠久的刘敏桥。",
       "address": "咸阳市渭阳路",
       "coordinates": {
         "lat": 34.3315,
         "lng": 108.7085
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "24小时开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
       "highlights": [
-        "Liumin Bridge",
-        "Sunset views",
-        "Walking paths",
-        "Cultural sculptures"
+        "刘敏桥",
+        "日落景观",
+        "步行道",
+        "文化雕塑"
       ],
-      "tips": "Best at sunset. Combine with nearby museums. Great for evening strolls.",
+      "tips": "日落时分最佳。可与附近的博物馆结合游览。非常适合傍晚散步。",
       "phone": "+86 029  9445 2668"
     },
     {
       "id": "baqiao-tomb",
       "name": "霸陵",
-      "nameEn": "Baling (Emperor Wen of Han's Tomb)",
+      "nameEn": "霸陵（汉文帝陵墓）",
       "image": "/img/ext/c7a0a0d13b1c.webp",
       "category": "historical",
-      "description": "The tomb of Emperor Wen of Han, known for his benevolent rule and simple burial customs.",
+      "description": "汉文帝的陵墓，以其仁慈的统治和简朴的丧葬习俗而闻名。",
       "address": "灞桥区",
       "coordinates": {
         "lat": 34.2985,
         "lng": 109.0485
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "25¥",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "25元",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "Tomb mound",
-        "Han dynasty artifacts",
-        "Memorial hall",
-        "Peaceful grounds"
+        "墓冢",
+        "汉代文物",
+        "纪念馆",
+        "宁静的园区"
       ],
-      "tips": "Less visited than other tombs. Good for history enthusiasts. Combine with nearby Baqiao.",
+      "tips": "比其他陵墓游客较少。非常适合历史爱好者。可与附近的霸陵结合游览。",
       "phone": "+86 029  3723 3267"
     },
     {
       "id": "qinling-mountains",
       "name": "秦岭分水岭",
-      "nameEn": "Qinling Water Divide",
+      "nameEn": "秦岭分水岭",
       "image": "/img/ext/5a266d59a49f.webp",
       "category": "natural",
-      "description": "The natural boundary between north and south China, with stunning mountain scenery and forests.",
+      "description": "中国南北方的自然分界线，拥有壮丽的山景和森林。",
       "address": "长安区秦岭",
       "coordinates": {
         "lat": 33.9885,
         "lng": 108.9485
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free (specific areas may charge)",
-      "recommendedVisitTime": "4-6 hours",
+      "openingHours": "24小时开放",
+      "ticketPrice": "免费（特定区域可能收费）",
+      "recommendedVisitTime": "4-6小时",
       "highlights": [
-        "North-south China divide",
-        "Alpine scenery",
-        "Forest trails",
-        "Rare birds"
+        "中国南北分界线",
+        "高山景观",
+        "森林步道",
+        "珍稀鸟类"
       ],
-      "tips": "Take guided tour for safety. Best in summer for escape from heat. Bring layers for high altitude.",
+      "tips": "建议参加导览 tour 以确保安全。夏季避暑最佳。高海拔地区请携带保暖衣物。",
       "phone": "+86 029  0188 4479"
     },
     {
       "id": "xianyang-museum",
       "name": "咸阳博物馆",
-      "nameEn": "Xianyang Museum",
+      "nameEn": "咸阳博物馆",
       "image": "/img/ext/c2bc1cb1cd7d.webp",
       "category": "cultural",
-      "description": "Museum showcasing the history of the Qin's capital and Han dynasty imperial artifacts.",
+      "description": "展示秦朝都城历史和汉代皇家文物的博物馆。",
       "address": "咸阳市渭阳东路",
       "coordinates": {
         "lat": 34.3295,
         "lng": 108.7085
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "09:00-17:00（周一闭馆）",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "Qin dynasty bronzes",
-        "Imperial seal replicas",
-        "Terracotta warrior fragments",
-        "Historical dioramas"
+        "秦代青铜器",
+        "皇家印章复制品",
+        "兵马俑碎片",
+        "历史立体模型"
       ],
-      "tips": "Combine with visit to Xianyang Lake. Good for understanding Qin history before Terracotta Army.",
+      "tips": "可与咸阳湖参观结合游览。有助于在参观兵马俑之前了解秦朝历史。",
       "phone": "+86 029  2649 1326"
     },
     {
       "id": "luoyang-longmen",
       "name": "洛阳龙门石窟",
-      "nameEn": "Longmen Grottoes",
+      "nameEn": "龙门石窟",
       "image": "/img/ext/e77c57e7fdf6.webp",
       "category": "historical",
-      "description": "One of China's three greatest Buddhist grotto complexes with thousands of carved figures.",
+      "description": "中国三大佛教石窟群之一，拥有数千尊雕刻佛像。",
       "address": "洛阳市龙门镇",
       "coordinates": {
         "lat": 34.4685,
@@ -719,20 +719,20 @@
       },
       "openingHours": "08:00-18:30",
       "ticketPrice": "90¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4小时",
       "highlights": [
-        "Fengxian Temple giant Buddha",
-        "Ten thousand Buddha Cave",
-        "Ancient inscriptions",
-        "Yi River views"
+        "奉先寺大佛",
+        "万佛洞",
+        "古代碑刻",
+        "伊河风光"
       ],
-      "tips": "About 250km from Xi'an - best as overnight trip. Morning visits best for photos. Comfortable shoes essential.",
+      "tips": "距西安约250公里，适合过夜游。早晨参观最适合拍照。务必穿舒适的鞋子。",
       "phone": "+86 029  4588 9449"
     },
     {
       "id": "terracotta",
       "name": "兵马俑",
-      "nameEn": "Terracotta Warriors",
+      "nameEn": "兵马俑",
       "category": "museum",
       "description": "世界第八大奇迹，秦始皇陵的陪葬坑。",
       "address": "西安市临潼区",
@@ -754,7 +754,7 @@
     {
       "id": "big-wild-goose",
       "name": "大雁塔",
-      "nameEn": "Big Wild Goose Pagoda",
+      "nameEn": "大雁塔",
       "category": "temple",
       "description": "唐代高僧玄奘为保存佛经而建的佛塔。",
       "address": "西安市雁塔区",
@@ -776,7 +776,7 @@
     {
       "id": "huangqing",
       "name": "华清池",
-      "nameEn": "Huaqing Pool",
+      "nameEn": "华清池",
       "category": "nature",
       "description": "唐代皇家温泉行宫，杨贵妃沐浴之地。",
       "address": "西安市临潼区",
@@ -798,7 +798,7 @@
     {
       "id": "xian-food",
       "name": "西安美食",
-      "nameEn": "Xi'an Food",
+      "nameEn": "西安美食",
       "category": "street",
       "description": "西安是中国美食之都，有各种小吃。",
       "address": "西安市",
@@ -820,7 +820,7 @@
     {
       "id": "xian-night",
       "name": "西安夜景",
-      "nameEn": "Xi'an Night View",
+      "nameEn": "西安夜景",
       "category": "landmark",
       "description": "钟鼓楼和大雁塔的夜景灯光秀。",
       "address": "西安市",
@@ -842,7 +842,7 @@
     {
       "id": "xian-museum",
       "name": "西安博物院",
-      "nameEn": "Xi'an Museum",
+      "nameEn": "西安博物馆",
       "category": "museum",
       "description": "展示西安历史的博物馆。",
       "address": "西安市碑林区",
@@ -863,7 +863,7 @@
     {
       "id": "xian-park",
       "name": "兴庆宫公园",
-      "nameEn": "Xingqing Palace Park",
+      "nameEn": "兴庆宫公园",
       "category": "park",
       "description": "唐代兴庆宫遗址上的公园。",
       "address": "西安市碑林区",
@@ -885,7 +885,7 @@
     {
       "id": "xian-temple",
       "name": "大慈恩寺",
-      "nameEn": "Da Ci'en Temple",
+      "nameEn": "大慈恩寺",
       "category": "temple",
       "description": "大雁塔所在的寺院，唐代皇家寺院。",
       "address": "西安市雁塔区",
@@ -907,7 +907,7 @@
     {
       "id": "xian-street",
       "name": "书院门",
-      "nameEn": "Shuyuan Gate",
+      "nameEn": "书苑门",
       "category": "street",
       "description": "西安最古老的文化街，有各种书画和文房四宝。",
       "address": "西安市碑林区",
@@ -929,7 +929,7 @@
     {
       "id": "xian-banpo",
       "name": "半坡博物馆",
-      "nameEn": "Banpo Museum",
+      "nameEn": "半坡博物馆",
       "category": "museum",
       "description": "展示6000年前仰韶文化遗址的博物馆。",
       "address": "西安市灞桥区",
@@ -951,7 +951,7 @@
     {
       "id": "xian-forest",
       "name": "碑林",
-      "nameEn": "Forest of Steles",
+      "nameEn": "碑林",
       "category": "museum",
       "description": "中国最大的石刻博物馆，有大量碑刻。",
       "address": "西安市碑林区",
@@ -973,7 +973,7 @@
     {
       "id": "xian-mosque",
       "name": "大清真寺",
-      "nameEn": "Great Mosque",
+      "nameEn": "大清真寺",
       "category": "temple",
       "description": "中国四大清真寺之一，有1200多年历史。",
       "address": "西安市莲湖区",
@@ -995,7 +995,7 @@
     {
       "id": "xian-bridge",
       "name": "灞桥",
-      "nameEn": "Ba Bridge",
+      "nameEn": "坝桥",
       "category": "landmark",
       "description": "西安东部的古桥，有2000多年历史。",
       "address": "西安市灞桥区",
@@ -1017,7 +1017,7 @@
     {
       "id": "xian-wei",
       "name": "渭河",
-      "nameEn": "Wei River",
+      "nameEn": "渭河",
       "category": "nature",
       "description": "黄河最大的支流，穿城而过。",
       "address": "西安市",
@@ -1038,7 +1038,7 @@
     {
       "id": "xian-mountain",
       "name": "骊山",
-      "nameEn": "Lishan Mountain",
+      "nameEn": "骊山",
       "category": "nature",
       "description": "华清池后面的山，有烽火台和兵谏亭。",
       "address": "西安市临潼区",
@@ -1060,7 +1060,7 @@
     {
       "id": "xian-famen",
       "name": "法门寺",
-      "nameEn": "Famen Temple",
+      "nameEn": "法门寺",
       "category": "temple",
       "description": "供奉佛祖释迦牟尼真身舍利的寺院。",
       "address": "宝鸡市扶风县",
@@ -1082,7 +1082,7 @@
     {
       "id": "xian-huashan",
       "name": "华山",
-      "nameEn": "Mount Hua",
+      "nameEn": "华山",
       "category": "nature",
       "description": "五岳之西岳，以险峻著称。",
       "address": "渭南市华阴市",
@@ -1105,7 +1105,7 @@
     {
       "id": "xian-forest2",
       "name": "小雁塔",
-      "nameEn": "Small Wild Goose Pagoda",
+      "nameEn": "小雁塔",
       "category": "temple",
       "description": "唐代佛塔，与大雁塔齐名。",
       "address": "西安市碑林区",
@@ -1127,7 +1127,7 @@
     {
       "id": "xian-street2",
       "name": "永兴坊",
-      "nameEn": "Yongxing Fang",
+      "nameEn": "永兴坊",
       "category": "street",
       "description": "西安新开发的美食街区。",
       "address": "西安市碑林区",
@@ -1149,7 +1149,7 @@
     {
       "id": "xian-temple2",
       "name": "青龙寺",
-      "nameEn": "Qinglong Temple",
+      "nameEn": "青龙寺",
       "category": "temple",
       "description": "唐代佛教寺院，有空海纪念碑。",
       "address": "西安市雁塔区",
@@ -1171,7 +1171,7 @@
     {
       "id": "xian-park2",
       "name": "大唐芙蓉园",
-      "nameEn": "Tang Paradise",
+      "nameEn": "唐乐宫",
       "category": "park",
       "description": "以唐代文化为主题的大型公园。",
       "address": "西安市雁塔区",
@@ -1195,29 +1195,29 @@
     {
       "id": "xian-1",
       "name": "长安大牌档",
-      "nameEn": "Chang'an Pai Tang",
-      "type": "michelin",
+      "nameEn": "长安派堂",
+      "type": "米其林",
       "star": 1,
-      "cuisine": "Shaanxi",
+      "cuisine": "陕西菜",
       "avgPrice": 150,
       "rating": 4.7,
-      "address": "Various locations including Wanda Plaza",
+      "address": "多个地点，包括万达广场",
       "coordinates": {
         "lat": 34.2315,
         "lng": 108.8935
       },
       "phone": "+86 29 6568 9666",
       "hours": "11:00-22:00",
-      "description": "One Michelin star restaurant serving excellent Shaanxi cuisine with traditional atmosphere and folk performances.",
+      "description": "一家米其林星级餐厅，提供美味的陕西菜，拥有传统氛围和民间表演。",
       "dishHighlights": [
-        "Biangbiang面",
-        "Lamb paomo",
-        "Qin cuisine platters"
+        "biangbiang面",
+        "羊肉泡馍",
+        "秦菜拼盘"
       ],
       "tags": [
-        "michelin",
-        "shaanxi-cuisine",
-        "cultural"
+        "米其林",
+        "陕西菜",
+        "文化"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/10d3f25923d6.webp"
@@ -1225,27 +1225,27 @@
     {
       "id": "xian-2",
       "name": "遇见长安",
-      "nameEn": "Meet Chang'an",
-      "type": "local",
-      "cuisine": "Shaanxi",
+      "nameEn": "遇见长安",
+      "type": "本地",
+      "cuisine": "陕西菜",
       "avgPrice": 100,
       "rating": 4.6,
-      "address": "Xiaozai Junction, Yanta District",
+      "address": "雁塔区小寨十字路口",
       "coordinates": {
         "lat": 34.2255,
         "lng": 108.9535
       },
       "hours": "10:30-21:30",
-      "description": "Highly-rated Shaanxi restaurant with authentic flavors and local specialties.",
+      "description": "一家广受好评的陕西餐厅，提供地道的风味和当地特色美食。",
       "dishHighlights": [
-        "Cold noodles",
-        "Sauted noodles",
-        "Dumplings"
+        "凉面",
+        "炒面",
+        "饺子"
       ],
       "tags": [
-        "local",
-        "shaanxi-cuisine",
-        "popular"
+        "本地",
+        "陕西菜",
+        "热门"
       ],
       "star": 0,
       "diamond": 0,
@@ -1255,26 +1255,26 @@
     {
       "id": "xian-3",
       "name": "老孙家",
-      "nameEn": "Lao Sun Jia",
-      "type": "local",
-      "cuisine": "Hui Muslim",
+      "nameEn": "老孙家",
+      "type": "本地",
+      "cuisine": "回族清真",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Near Bell Tower",
+      "address": "钟楼附近",
       "coordinates": {
         "lat": 34.2635,
         "lng": 108.9455
       },
-      "description": "Legendary Muslim restaurant known for excellent lamb dishes and roujiamo.",
+      "description": "传奇的清真餐厅，以美味的羊肉菜肴和肉夹馍闻名。",
       "dishHighlights": [
-        "Roujiamo (Chinese hamburger)",
-        "Lamb skewers",
-        "Biangbiang面"
+        "肉夹馍（中国汉堡）",
+        "羊肉串",
+        "biangbiang面"
       ],
       "tags": [
-        "local",
-        "muslim-cuisine",
-        "historic"
+        "本地",
+        "清真菜",
+        "历史"
       ],
       "star": 0,
       "diamond": 0,
@@ -1285,26 +1285,26 @@
     {
       "id": "xian-4",
       "name": "德发长",
-      "nameEn": "De Fa Chang",
-      "type": "local",
-      "cuisine": "Dumplings",
+      "nameEn": "德发长",
+      "type": "本地",
+      "cuisine": "饺子",
       "avgPrice": 80,
       "rating": 4.4,
-      "address": "Sanjin Street, Beilin District",
+      "address": "碑林区三金街",
       "coordinates": {
         "lat": 34.2585,
         "lng": 108.9425
       },
-      "description": "Famous for making over 100 varieties of dumplings for centuries.",
+      "description": "几个世纪以来以制作100多种饺子而闻名。",
       "dishHighlights": [
-        "Dumpling varieties",
-        "Crystal shrimp dumplings",
-        "Vegetable dumplings"
+        "饺子种类",
+        "水晶虾饺",
+        "素菜饺子"
       ],
       "tags": [
-        "local",
-        "dumplings",
-        "historic"
+        "本地",
+        "饺子",
+        "历史"
       ],
       "star": 0,
       "diamond": 0,
@@ -1315,26 +1315,26 @@
     {
       "id": "xian-5",
       "name": "春发生",
-      "nameEn": "Chun Fa Sheng",
-      "type": "local",
-      "cuisine": "Shaanxi",
+      "nameEn": "春发盛",
+      "type": "本地",
+      "cuisine": "陕西菜",
       "avgPrice": 40,
       "rating": 4.3,
-      "address": "Near Drum Tower",
+      "address": "靠近鼓楼",
       "coordinates": {
         "lat": 34.2625,
         "lng": 108.9415
       },
-      "description": "Historic restaurant serving traditional Xi'an breakfast and offal dishes.",
+      "description": "历史悠久的餐厅，提供传统的西安早餐和内脏菜肴。",
       "dishHighlights": [
-        "Lamb soup with pancakes",
-        "Blood sausage",
-        "Traditional breakfast"
+        "羊肉汤配煎饼",
+        "血肠",
+        "传统早餐"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "traditional"
+        "本地",
+        "早餐",
+        "传统"
       ],
       "star": 0,
       "diamond": 0,
@@ -1345,8 +1345,8 @@
     {
       "id": "xian-6",
       "name": "花腰崽",
-      "nameEn": "Hua Yao Zai",
-      "type": "blackpearl",
+      "nameEn": "华耀再",
+      "type": "黑珍珠",
       "diamond": 1,
       "cuisine": "陕西菜",
       "avgPrice": 120,
@@ -1376,7 +1376,7 @@
       "id": "xian-7",
       "name": "贾三清真灌汤包",
       "nameEn": "贾三清真汤包",
-      "type": "local",
+      "type": "本地",
       "cuisine": "回族",
       "avgPrice": 40,
       "rating": 4.6,
@@ -1407,7 +1407,7 @@
       "id": "xian-8",
       "name": "老刘家泡馍",
       "nameEn": "老刘家泡馍",
-      "type": "local",
+      "type": "本地",
       "cuisine": "回族清真",
       "avgPrice": 50,
       "rating": 4.6,
@@ -1436,9 +1436,9 @@
     },
     {
       "id": "xian-9",
-      "name": "biangbiang面",
+      "name": "Biangbiang面",
       "nameEn": "中大Biangbiang面",
-      "type": "local",
+      "type": "本地",
       "cuisine": "陕西",
       "avgPrice": 25,
       "rating": 4.5,
@@ -1457,7 +1457,7 @@
         "本地",
         "面食",
         "实惠",
-        "student-area"
+        "学生区"
       ],
       "star": 0,
       "diamond": 0,
@@ -1469,7 +1469,7 @@
       "id": "xian-10",
       "name": "东南亚甑糕",
       "nameEn": "东南亚京糕",
-      "type": "local",
+      "type": "本地",
       "cuisine": "陕西甜品",
       "avgPrice": 15,
       "rating": 4.6,
@@ -1500,7 +1500,7 @@
       "id": "xian-11",
       "name": "同盛祥",
       "nameEn": "同盛祥",
-      "type": "local",
+      "type": "本地",
       "cuisine": "回族",
       "avgPrice": 55,
       "rating": 4.5,
@@ -1530,8 +1530,8 @@
     {
       "id": "xian-12",
       "name": "海荣锅贴",
-      "nameEn": "Hairong Guotie",
-      "type": "local",
+      "nameEn": "海荣锅贴",
+      "type": "本地",
       "cuisine": "陕西",
       "avgPrice": 45,
       "rating": 4.4,
@@ -1562,7 +1562,7 @@
       "id": "xian-13",
       "name": "魏家凉皮",
       "nameEn": "魏家凉皮",
-      "type": "local",
+      "type": "本地",
       "cuisine": "陕西",
       "avgPrice": 20,
       "rating": 4.6,
@@ -1579,11 +1579,11 @@
         "黄瓜豆芽"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "cold",
-        "spicy",
-        "budget"
+        "本地",
+        "面食",
+        "冷食",
+        "麻辣",
+        "经济实惠"
       ],
       "star": 0,
       "diamond": 0,
@@ -1593,9 +1593,9 @@
     {
       "id": "xian-14",
       "name": "子午路肉夹馍",
-      "nameEn": "Ziwu Road Roujiamo",
-      "type": "local",
-      "cuisine": "Shaanxi",
+      "nameEn": "子午路肉夹馍",
+      "type": "本地",
+      "cuisine": "陕西菜",
       "avgPrice": 15,
       "rating": 4.7,
       "address": "子午路",
@@ -1604,18 +1604,18 @@
         "lng": 108.9355
       },
       "hours": "07:00-20:00",
-      "description": "Legendary roujiamo shop with perfectly braised pork in crispy buns, a Xi'an must-try breakfast.",
+      "description": "传奇肉夹馍店，以酥脆的馍夹着完美炖煮的猪肉而闻名，是西安必尝的早餐。",
       "dishHighlights": [
-        "Classic roujiamo",
-        "Tendon roujiamo",
-        "Pork belly roujiamo"
+        "经典肉夹馍",
+        "腱子肉夹馍",
+        "猪肉腊汁肉夹馍"
       ],
       "tags": [
-        "local",
-        "roujiamo",
-        "breakfast",
-        "budget",
-        "famous"
+        "本地",
+        "肉夹馍",
+        "早餐",
+        "经济实惠",
+        "著名"
       ],
       "star": 0,
       "diamond": 0,
@@ -1625,9 +1625,9 @@
     {
       "id": "xian-15",
       "name": "张记肉夹馍",
-      "nameEn": "Zhang Ji Roujiamo",
-      "type": "local",
-      "cuisine": "Shaanxi",
+      "nameEn": "张记肉夹馍",
+      "type": "本地",
+      "cuisine": "陕西菜",
       "avgPrice": 15,
       "rating": 4.5,
       "address": "东大街",
@@ -1636,17 +1636,17 @@
         "lng": 108.9555
       },
       "hours": "07:30-20:00",
-      "description": "Another famous roujiamo spot known for generous portions of braised pork and fresh-baked buns.",
+      "description": "另一家著名的肉夹馍店，以分量充足的卤肉和新鲜出炉的馍饼而闻名。",
       "dishHighlights": [
-        "Standard roujiamo",
-        "Extra meat roujiamo",
-        "Lamb roujiamo"
+        "标准肉夹馍",
+        "加肉肉夹馍",
+        "羊肉肉夹馍"
       ],
       "tags": [
-        "local",
-        "roujiamo",
-        "breakfast",
-        "budget"
+        "本地",
+        "肉夹馍",
+        "早餐",
+        "经济实惠"
       ],
       "star": 0,
       "diamond": 0,
@@ -1656,9 +1656,9 @@
     {
       "id": "xian-16",
       "name": "马虎面",
-      "nameEn": "Ma Hu Mian",
-      "type": "local",
-      "cuisine": "Shaanxi",
+      "nameEn": "马虎面",
+      "type": "本地",
+      "cuisine": "陕西菜",
       "avgPrice": 30,
       "rating": 4.6,
       "address": "西七路",
@@ -1667,18 +1667,18 @@
         "lng": 108.9385
       },
       "hours": "06:30-14:00",
-      "description": "Legendary breakfast spot famous for hand-pulled noodles and crispy roujiamo, closes early.",
+      "description": "传奇早餐店，以手工拉面和香脆肉夹馍闻名，关门时间较早。",
       "dishHighlights": [
-        "Hand-pulled noodles",
-        "Sauerkraut noodles",
-        "Roujiamo"
+        "手拉面",
+        "酸菜面",
+        "肉夹馍"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "breakfast",
-        "early-close",
-        "famous"
+        "本地",
+        "面食",
+        "早餐",
+        "提前打烊",
+        "著名"
       ],
       "star": 0,
       "diamond": 0,
@@ -1688,9 +1688,9 @@
     {
       "id": "xian-17",
       "name": "柳巷面",
-      "nameEn": "Liu Xiang Mian",
-      "type": "local",
-      "cuisine": "Shaanxi",
+      "nameEn": "刘翔面馆",
+      "type": "本地",
+      "cuisine": "陕西菜",
       "avgPrice": 28,
       "rating": 4.5,
       "address": "案板街",
@@ -1699,17 +1699,17 @@
         "lng": 108.9495
       },
       "hours": "11:00-21:00",
-      "description": "Famous for knife-cut noodles with rich tomato egg sauce, a local favorite for decades.",
+      "description": "以浓郁的番茄鸡蛋酱刀削面而闻名，是当地人几十年来最爱的美食。",
       "dishHighlights": [
-        "Knife-cut noodles",
-        "Tomato egg noodles",
-        "Spicy noodles"
+        "刀削面",
+        "西红柿鸡蛋面",
+        "麻辣小面"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "shaanxi-cuisine",
-        "popular"
+        "本地",
+        "面食",
+        "陕西菜",
+        "热门"
       ],
       "star": 0,
       "diamond": 0,
@@ -1718,10 +1718,10 @@
     },
     {
       "id": "xian-18",
-      "name": "郑大妈biangbiang面",
-      "nameEn": "Zheng Mama Biangbiang Mian",
-      "type": "local",
-      "cuisine": "Shaanxi",
+      "name": "郑大妈Biangbiang面",
+      "nameEn": "郑妈妈biangbiang面",
+      "type": "本地",
+      "cuisine": "陕西菜",
       "avgPrice": 25,
       "rating": 4.7,
       "address": "长安路小寨",
@@ -1730,17 +1730,17 @@
         "lng": 108.9515
       },
       "hours": "10:00-22:00",
-      "description": "Highly-rated spot for the famous wide belt noodles with mixed toppings and spicy oil.",
+      "description": "以著名的宽面和混合配料以及辣油而备受好评的餐厅。",
       "dishHighlights": [
-        "Three toppings biangbiang面",
-        "Meat sauce biangbiang面",
-        "Vegetable biangbiang面"
+        "三合一面条",
+        "肉酱biangbiang面",
+        "蔬菜biangbiang面"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "biangbiang",
-        "popular"
+        "本地",
+        "面食",
+        "油泼扯面",
+        "热门"
       ],
       "star": 0,
       "diamond": 0,
@@ -1750,9 +1750,9 @@
     {
       "id": "xian-19",
       "name": "定家小酥肉",
-      "nameEn": "Ding Jia Xiao Su Rou",
-      "type": "local",
-      "cuisine": "Hui Muslim",
+      "nameEn": "定家小酥肉",
+      "type": "本地",
+      "cuisine": "回族清真",
       "avgPrice": 50,
       "rating": 4.6,
       "address": "回民街西羊市",
@@ -1761,17 +1761,17 @@
         "lng": 108.9405
       },
       "hours": "10:00-22:00",
-      "description": "Iconic Muslim Quarter restaurant known for crispy fried lamb ribs and rice dishes.",
+      "description": "著名的回民街餐厅，以香脆炸羊排和米饭菜肴闻名",
       "dishHighlights": [
-        "Crispy fried lamb ribs",
-        "Lamb rice bowl",
-        "Lamb skewers"
+        "香脆炸羊排",
+        "羊肉泡馍",
+        "羊肉串"
       ],
       "tags": [
-        "local",
-        "muslim-cuisine",
-        "lamb",
-        "famous"
+        "本地",
+        "清真菜",
+        "羊肉",
+        "著名"
       ],
       "star": 0,
       "diamond": 0,
@@ -1781,9 +1781,9 @@
     {
       "id": "xian-20",
       "name": "稀稀锅盔",
-      "nameEn": "Xi Xi Guo Kui",
-      "type": "local",
-      "cuisine": "Shaanxi",
+      "nameEn": "西西锅盔",
+      "type": "本地",
+      "cuisine": "陕西",
       "avgPrice": 10,
       "rating": 4.3,
       "address": "南门外",
@@ -1792,18 +1792,18 @@
         "lng": 108.9495
       },
       "hours": "08:00-18:00",
-      "description": "Traditional bakery famous for giant crispy flatbread (guokui), perfect with lamb soup.",
+      "description": "传统面包店，招牌是巨大的香脆锅盔，配羊肉汤绝佳",
       "dishHighlights": [
-        "Plain guokui",
-        "Sesame guokui",
-        "Crispy bread"
+        "原味锅盔",
+        "芝麻锅盔",
+        "脆饼"
       ],
       "tags": [
-        "local",
-        "snack",
-        "bread",
-        "budget",
-        "traditional"
+        "本地",
+        "小吃",
+        "面食",
+        "实惠",
+        "传统"
       ],
       "star": 0,
       "diamond": 0,
@@ -1813,9 +1813,9 @@
     {
       "id": "xian-21",
       "name": "陕十三",
-      "nameEn": "Shaan 13",
-      "type": "blackpearl",
-      "cuisine": "Shaanxi",
+      "nameEn": "陕十三",
+      "type": "黑珍珠",
+      "cuisine": "陕西菜",
       "avgPrice": 100,
       "rating": 4.6,
       "address": "曲江新区",
@@ -1825,17 +1825,17 @@
       },
       "phone": "+86 29 8932 8888",
       "hours": "11:00-21:30",
-      "description": "Black Pearl restaurant offering modern takes on traditional Shaanxi dishes in elegant setting.",
+      "description": "优雅环境中提供现代风味传统陕西菜的餐厅",
       "dishHighlights": [
-        "Mini roujiamo tasting",
-        "Deconstructed liangpi",
-        "Artistic dessert"
+        "迷你肉夹馍品尝",
+        "改良版凉皮",
+        "艺术甜点"
       ],
       "tags": [
-        "black-pearl",
-        "shaanxi-cuisine",
-        "modern",
-        "creative"
+        "黑珍珠",
+        "陕西菜",
+        "现代",
+        "创意"
       ],
       "star": 0,
       "diamond": 0,
@@ -1844,9 +1844,9 @@
     {
       "id": "xian-22",
       "name": "长安大排档",
-      "nameEn": "Chang'an Da Pai Dang",
-      "type": "local",
-      "cuisine": "Shaanxi",
+      "nameEn": "长安大排档",
+      "type": "本地",
+      "cuisine": "陕西",
       "avgPrice": 80,
       "rating": 4.5,
       "address": "小寨赛格",
@@ -1855,17 +1855,17 @@
         "lng": 108.9455
       },
       "hours": "10:00-22:00",
-      "description": "Popular chain offering variety of Shaanxi small dishes in lively dapai档 atmosphere.",
+      "description": "受欢迎连锁店，在热闹的大排档氛围中提供各种陕西小吃",
       "dishHighlights": [
-        "Mixed appetizer platter",
-        "Biangbiang面",
-        "Qin cuisine sampler"
+        "混合开胃菜拼盘",
+        "biangbiang面",
+        "秦菜精选"
       ],
       "tags": [
-        "local",
-        "shaanxi-cuisine",
-        "variety",
-        "lively"
+        "本地",
+        "陕西菜",
+        "多样",
+        "热闹"
       ],
       "star": 0,
       "diamond": 0,
@@ -1875,9 +1875,9 @@
     {
       "id": "xian-new-23",
       "name": "西安饭庄",
-      "nameEn": "Xi'an Restaurant",
-      "type": "local",
-      "cuisine": "Shaanxi",
+      "nameEn": "西安饭店",
+      "type": "本地",
+      "cuisine": "陕西",
       "avgPrice": 90,
       "rating": 4.4,
       "address": "东大街",
@@ -1886,17 +1886,17 @@
         "lng": 108.9535
       },
       "hours": "10:00-22:00",
-      "description": "Historic Shaanxi restaurant established in 1929, famous for traditional dishes.",
+      "description": "创建于1929年的老字号陕西餐厅，以传统菜肴闻名。",
       "dishHighlights": [
-        "Braised pork belly",
-        "Sauted noodles",
-        "Traditional dumplings"
+        "红烧肉",
+        "炒面",
+        "传统饺子"
       ],
       "tags": [
-        "local",
-        "shaanxi-cuisine",
-        "historic",
-        "traditional"
+        "本地",
+        "陕菜",
+        "历史",
+        "传统"
       ],
       "star": 0,
       "diamond": 0,
@@ -1906,9 +1906,9 @@
     {
       "id": "xian-new-24",
       "name": "老味道",
-      "nameEn": "Old Flavor",
-      "type": "local",
-      "cuisine": "Shaanxi",
+      "nameEn": "老味道",
+      "type": "本地",
+      "cuisine": "陕西菜",
       "avgPrice": 70,
       "rating": 4.5,
       "address": "碑林区",
@@ -1917,17 +1917,17 @@
         "lng": 108.9535
       },
       "hours": "11:00-21:00",
-      "description": "Restaurant specializing in traditional Shaanxi home-style dishes.",
+      "description": "餐厅主打传统陕西家常菜",
       "dishHighlights": [
-        "Braised chicken",
-        "Potato slices",
-        "Cold noodles"
+        "红烧鸡",
+        "土豆片",
+        "凉面"
       ],
       "tags": [
-        "local",
-        "shaanxi-cuisine",
-        "home-cooking",
-        "authentic"
+        "本地",
+        "陕菜",
+        "家常菜",
+        "地道"
       ],
       "star": 0,
       "diamond": 0,
@@ -1937,9 +1937,9 @@
     {
       "id": "xian-new-25",
       "name": "天下第一面",
-      "nameEn": "First Noodles Under Heaven",
-      "type": "local",
-      "cuisine": "Shaanxi",
+      "nameEn": "天下第一面",
+      "type": "本地",
+      "cuisine": "陕西菜",
       "avgPrice": 40,
       "rating": 4.4,
       "address": "雁塔区",
@@ -1948,17 +1948,17 @@
         "lng": 108.9485
       },
       "hours": "10:00-22:00",
-      "description": "Popular for variety of traditional Shaanxi noodles in generous portions.",
+      "description": "以分量十足的各色传统陕西面条闻名",
       "dishHighlights": [
-        "Mixed noodles",
-        "Hot and sour noodles",
-        "Seitan noodles"
+        "混合面条",
+        "酸辣面",
+        "凉面条"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "shaanxi-cuisine",
-        "popular"
+        "本地",
+        "面条",
+        "陕西菜",
+        "热门"
       ],
       "star": 0,
       "diamond": 0,
@@ -1968,9 +1968,9 @@
     {
       "id": "xian-new-26",
       "name": "小杨烤肉",
-      "nameEn": "Xiao Yang BBQ",
-      "type": "local",
-      "cuisine": "Hui Muslim",
+      "nameEn": "小杨烧烤",
+      "type": "本地",
+      "cuisine": "回族清真",
       "avgPrice": 80,
       "rating": 4.6,
       "address": "回民街",
@@ -1979,17 +1979,17 @@
         "lng": 108.9415
       },
       "hours": "11:00-23:00",
-      "description": "Popular Muslim Quarter BBQ restaurant with fresh lamb and traditional marinades.",
+      "description": "备受欢迎的清真街区烧烤餐厅，提供新鲜羊肉和传统腌制配料",
       "dishHighlights": [
-        "Lamb skewers",
-        "Lamb spine",
-        "Grilled flatbread"
+        "羊肉串",
+        "羊蝎子",
+        "烤饼"
       ],
       "tags": [
-        "local",
-        "muslim-cuisine",
-        "bbq",
-        "popular"
+        "本地",
+        "清真菜",
+        "烧烤",
+        "热门"
       ],
       "star": 0,
       "diamond": 0,
@@ -1999,9 +1999,9 @@
     {
       "id": "xian-new-27",
       "name": "大厨小馆",
-      "nameEn": "Chef's Kitchen",
-      "type": "local",
-      "cuisine": "Shaanxi",
+      "nameEn": "厨师的厨房",
+      "type": "本地",
+      "cuisine": "陕西菜",
       "avgPrice": 85,
       "rating": 4.5,
       "address": "曲江新区",
@@ -2010,17 +2010,17 @@
         "lng": 108.9695
       },
       "hours": "11:00-21:30",
-      "description": "Restaurant offering refined Shaanxi cuisine with artistic presentation.",
+      "description": "提供精致陕西菜并以艺术形式呈现的餐厅。",
       "dishHighlights": [
-        "Steamed dumplings",
-        "Braised pork",
-        "Vegetables"
+        "小笼包",
+        "红烧肉",
+        "蔬菜"
       ],
       "tags": [
-        "local",
-        "shaanxi-cuisine",
-        "refined",
-        "elegant"
+        "本地",
+        "陕西菜",
+        "精致",
+        "雅致"
       ],
       "star": 0,
       "diamond": 0,
@@ -2030,9 +2030,9 @@
     {
       "id": "xian-new-28",
       "name": "西北饭庄",
-      "nameEn": "Northwest Restaurant",
-      "type": "local",
-      "cuisine": "Northwestern",
+      "nameEn": "西北餐厅",
+      "type": "本地",
+      "cuisine": "西北菜",
       "avgPrice": 75,
       "rating": 4.4,
       "address": "新城区",
@@ -2041,17 +2041,17 @@
         "lng": 108.9485
       },
       "hours": "10:00-22:00",
-      "description": "Popular for northwestern Chinese cuisine with large portions.",
+      "description": "以提供西北风味中餐和大份量菜品而广受欢迎。",
       "dishHighlights": [
-        "Hand-grabbed noodles",
-        "Lamb stew",
-        "Flatbread"
+        "手抓面",
+        "羊肉炖菜",
+        "烧饼"
       ],
       "tags": [
-        "local",
-        "northwestern",
-        "noodles",
-        "generous"
+        "本地",
+        "西北部",
+        "面食",
+        "慷慨的"
       ],
       "star": 0,
       "diamond": 0,
@@ -2061,9 +2061,9 @@
     {
       "id": "xian-new-29",
       "name": "醉西安",
-      "nameEn": "Drunken Xi'an",
-      "type": "local",
-      "cuisine": "Shaanxi fusion",
+      "nameEn": "醉长安",
+      "type": "本地",
+      "cuisine": "陕西融合菜",
       "avgPrice": 110,
       "rating": 4.6,
       "address": "雁塔区",
@@ -2072,17 +2072,17 @@
         "lng": 108.9545
       },
       "hours": "11:00-22:00",
-      "description": "Modern restaurant with creative Shaanxi dishes and craft beer.",
+      "description": "现代化的餐厅，提供创意陕西菜和精酿啤酒。",
       "dishHighlights": [
-        "Deconstructed roujiamo",
-        "Craft beer pairings",
-        "Modern liangpi"
+        "解构版肉夹馍",
+        "精酿啤酒搭配",
+        "现代凉皮"
       ],
       "tags": [
-        "local",
-        "shaanxi-cuisine",
-        "modern",
-        "creative"
+        "本地",
+        "陕西菜",
+        "现代",
+        "创意"
       ],
       "star": 0,
       "diamond": 0,
@@ -2092,9 +2092,9 @@
     {
       "id": "xian-new-30",
       "name": "粉巷13号",
-      "nameEn": "Fenxiang No. 13",
-      "type": "local",
-      "cuisine": "Shaanxi",
+      "nameEn": "分香13号",
+      "type": "本地",
+      "cuisine": "陕西菜",
       "avgPrice": 60,
       "rating": 4.5,
       "address": "碑林区粉巷",
@@ -2103,17 +2103,17 @@
         "lng": 108.9545
       },
       "hours": "10:00-22:00",
-      "description": "Popular spot for traditional Shaanxi breakfast and snacks.",
+      "description": "广受欢迎的陕西传统早餐和小吃店。",
       "dishHighlights": [
-        "Beancurd sheets",
-        "Steamed buns",
-        "Soy milk"
+        "豆腐皮",
+        "馒头",
+        "豆浆"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "shaanxi-cuisine",
-        "budget"
+        "本地",
+        "早餐",
+        "陕西菜",
+        "经济实惠"
       ],
       "star": 0,
       "diamond": 0,
@@ -2123,9 +2123,9 @@
     {
       "id": "xian-31",
       "name": "老字号biangbiang面",
-      "nameEn": "老字号biangbiang面 (biangbiang面)",
-      "type": "street",
-      "cuisine": "biangbiang面",
+      "nameEn": "老字号油泼扯面",
+      "type": "街边",
+      "cuisine": "油泼扯面",
       "avgPrice": 22,
       "rating": 4.2,
       "address": "西安市雁塔区美食街14号",
@@ -2135,9 +2135,9 @@
       },
       "phone": "+86 029 50116398",
       "hours": "17:00-02:00",
-      "description": "西安本地人推荐的biangbiang面店，味道正宗，价格实惠",
+      "description": "西安本地人推荐的油泼扯面店，味道正宗，价格实惠",
       "dishHighlights": [
-        "biangbiang面",
+        "油泼扯面",
         "肉夹馍",
         "灌汤包"
       ],
@@ -2153,7 +2153,7 @@
       "id": "xian-33",
       "name": "街边灌汤包",
       "nameEn": "街边灌汤包 (灌汤包)",
-      "type": "street",
+      "type": "街边",
       "cuisine": "灌汤包",
       "avgPrice": 53,
       "rating": 4.8,
@@ -2182,7 +2182,7 @@
       "id": "xian-35",
       "name": "老街凉皮",
       "nameEn": "老街凉皮 (凉皮)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "凉皮",
       "avgPrice": 119,
       "rating": 4.6,
@@ -2210,9 +2210,9 @@
     {
       "id": "xian-37",
       "name": "老西安biangbiang面",
-      "nameEn": "老西安biangbiang面 (biangbiang面)",
-      "type": "cafe",
-      "cuisine": "biangbiang面",
+      "nameEn": "老西安油泼扯面",
+      "type": "咖啡馆",
+      "cuisine": "油泼扯面",
       "avgPrice": 55,
       "rating": 4.9,
       "address": "西安市未央区美食街188号",
@@ -2222,7 +2222,7 @@
       },
       "phone": "+86 029 39629315",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "西安本地人推荐的biangbiang面店，味道正宗，价格实惠",
+      "description": "西安本地人推荐的油泼扯面店，味道正宗，价格实惠",
       "dishHighlights": [
         "灌汤包",
         "凉皮",
@@ -2240,7 +2240,7 @@
       "id": "xian-39",
       "name": "地道羊肉泡馍",
       "nameEn": "地道羊肉泡馍 (羊肉泡馍)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "羊肉泡馍",
       "avgPrice": 82,
       "rating": 4,
@@ -2255,7 +2255,7 @@
       "dishHighlights": [
         "肉夹馍",
         "羊肉泡馍",
-        "biangbiang面"
+        "油泼扯面"
       ],
       "tags": [
         "家常菜",
@@ -2268,9 +2268,9 @@
     {
       "id": "xian-41",
       "name": "巷子biangbiang面",
-      "nameEn": "巷子biangbiang面 (biangbiang面)",
-      "type": "street",
-      "cuisine": "biangbiang面",
+      "nameEn": "巷子油泼扯面",
+      "type": "街边",
+      "cuisine": "油泼扯面",
       "avgPrice": 54,
       "rating": 4.8,
       "address": "西安市莲湖区美食街1号",
@@ -2280,7 +2280,7 @@
       },
       "phone": "+86 029 56507439",
       "hours": "10:00-22:00",
-      "description": "西安本地人推荐的biangbiang面店，味道正宗，价格实惠",
+      "description": "西安本地人推荐的油泼扯面店，味道正宗，价格实惠",
       "dishHighlights": [
         "肉夹馍",
         "羊肉泡馍",
@@ -2297,9 +2297,9 @@
     {
       "id": "xian-43",
       "name": "老西安biangbiang面",
-      "nameEn": "老西安biangbiang面 (biangbiang面)",
-      "type": "local",
-      "cuisine": "biangbiang面",
+      "nameEn": "老西安油泼扯面",
+      "type": "本地",
+      "cuisine": "油泼扯面",
       "avgPrice": 115,
       "rating": 4.7,
       "address": "西安市莲湖区美食街165号",
@@ -2309,7 +2309,7 @@
       },
       "phone": "+86 029 87457332",
       "hours": "17:00-02:00",
-      "description": "西安本地人推荐的biangbiang面店，味道正宗，价格实惠",
+      "description": "西安本地人推荐的油泼扯面店，味道正宗，价格实惠",
       "dishHighlights": [
         "羊肉泡馍",
         "凉皮",
@@ -2327,7 +2327,7 @@
       "id": "xian-45",
       "name": "阿婆肉夹馍",
       "nameEn": "阿婆肉夹馍 (肉夹馍)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "肉夹馍",
       "avgPrice": 86,
       "rating": 4.8,
@@ -2341,7 +2341,7 @@
       "description": "西安本地人推荐的肉夹馍店，味道正宗，价格实惠",
       "dishHighlights": [
         "灌汤包",
-        "biangbiang面",
+        "油泼扯面",
         "凉皮"
       ],
       "tags": [
@@ -2356,7 +2356,7 @@
       "id": "xian-47",
       "name": "街边凉皮",
       "nameEn": "街边凉皮 (凉皮)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "凉皮",
       "avgPrice": 148,
       "rating": 4.8,
@@ -2371,7 +2371,7 @@
       "dishHighlights": [
         "灌汤包",
         "凉皮",
-        "biangbiang面"
+        "油泼扯面"
       ],
       "tags": [
         "本地人爱去",
@@ -2384,9 +2384,9 @@
     {
       "id": "xian-49",
       "name": "街边biangbiang面",
-      "nameEn": "街边biangbiang面 (biangbiang面)",
-      "type": "local",
-      "cuisine": "biangbiang面",
+      "nameEn": "街边油泼扯面",
+      "type": "本地",
+      "cuisine": "油泼扯面",
       "avgPrice": 75,
       "rating": 4.9,
       "address": "西安市未央区美食街129号",
@@ -2396,7 +2396,7 @@
       },
       "phone": "+86 029 60744774",
       "hours": "17:00-02:00",
-      "description": "西安本地人推荐的biangbiang面店，味道正宗，价格实惠",
+      "description": "西安本地人推荐的油泼扯面店，味道正宗，价格实惠",
       "dishHighlights": [
         "灌汤包",
         "肉夹馍",
@@ -2414,7 +2414,7 @@
       "id": "xian-51",
       "name": "老字号羊肉泡馍",
       "nameEn": "老字号羊肉泡馍 (羊肉泡馍)",
-      "type": "cafe",
+      "type": "咖啡馆",
       "cuisine": "羊肉泡馍",
       "avgPrice": 77,
       "rating": 4.8,
@@ -2443,7 +2443,7 @@
       "id": "xian-53",
       "name": "老字号凉皮",
       "nameEn": "老字号凉皮 (凉皮)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "凉皮",
       "avgPrice": 42,
       "rating": 4.8,
@@ -2456,7 +2456,7 @@
       "hours": "06:00-14:00",
       "description": "西安本地人推荐的凉皮店，味道正宗，价格实惠",
       "dishHighlights": [
-        "biangbiang面",
+        "油泼扯面",
         "肉夹馍",
         "凉皮"
       ],
@@ -2472,7 +2472,7 @@
       "id": "xian-55",
       "name": "西安味凉皮",
       "nameEn": "西安味凉皮 (凉皮)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "凉皮",
       "avgPrice": 114,
       "rating": 4.4,
@@ -2486,7 +2486,7 @@
       "description": "西安本地人推荐的凉皮店，味道正宗，价格实惠",
       "dishHighlights": [
         "肉夹馍",
-        "biangbiang面",
+        "油泼扯面",
         "灌汤包"
       ],
       "tags": [
@@ -2500,9 +2500,9 @@
     {
       "id": "xian-57",
       "name": "巷子biangbiang面",
-      "nameEn": "巷子biangbiang面 (biangbiang面)",
-      "type": "street",
-      "cuisine": "biangbiang面",
+      "nameEn": "巷子油泼扯面",
+      "type": "街边",
+      "cuisine": "油泼扯面",
       "avgPrice": 28,
       "rating": 4.2,
       "address": "西安市碑林区美食街57号",
@@ -2512,7 +2512,7 @@
       },
       "phone": "+86 029 33343920",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "西安本地人推荐的biangbiang面店，味道正宗，价格实惠",
+      "description": "西安本地人推荐的油泼扯面店，味道正宗，价格实惠",
       "dishHighlights": [
         "灌汤包",
         "凉皮",
@@ -2530,7 +2530,7 @@
       "id": "xian-59",
       "name": "传统羊肉泡馍",
       "nameEn": "传统羊肉泡馍 (羊肉泡馍)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "羊肉泡馍",
       "avgPrice": 103,
       "rating": 4.4,
@@ -2558,9 +2558,9 @@
     {
       "id": "xian-61",
       "name": "街边biangbiang面",
-      "nameEn": "街边biangbiang面 (biangbiang面)",
-      "type": "local",
-      "cuisine": "biangbiang面",
+      "nameEn": "街边油泼扯面",
+      "type": "本地",
+      "cuisine": "油泼扯面",
       "avgPrice": 76,
       "rating": 4.6,
       "address": "西安市莲湖区美食街38号",
@@ -2570,9 +2570,9 @@
       },
       "phone": "+86 029 80023727",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "西安本地人推荐的biangbiang面店，味道正宗，价格实惠",
+      "description": "西安本地人推荐的油泼扯面店，味道正宗，价格实惠",
       "dishHighlights": [
-        "biangbiang面",
+        "油泼扯面",
         "肉夹馍",
         "灌汤包"
       ],
@@ -2588,7 +2588,7 @@
       "id": "xian-63",
       "name": "传统肉夹馍",
       "nameEn": "传统肉夹馍 (肉夹馍)",
-      "type": "street",
+      "type": "街边",
       "cuisine": "肉夹馍",
       "avgPrice": 33,
       "rating": 4,
@@ -2617,7 +2617,7 @@
       "id": "xian-65",
       "name": "老字号灌汤包",
       "nameEn": "老字号灌汤包 (灌汤包)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "灌汤包",
       "avgPrice": 134,
       "rating": 4.6,
@@ -2646,7 +2646,7 @@
       "id": "xian-67",
       "name": "老街肉夹馍",
       "nameEn": "老街肉夹馍 (肉夹馍)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "肉夹馍",
       "avgPrice": 97,
       "rating": 4.1,
@@ -2659,7 +2659,7 @@
       "hours": "10:30-14:00, 16:30-22:00",
       "description": "西安本地人推荐的肉夹馍店，味道正宗，价格实惠",
       "dishHighlights": [
-        "biangbiang面",
+        "油泼扯面",
         "羊肉泡馍",
         "灌汤包"
       ],
@@ -2675,7 +2675,7 @@
       "id": "xian-69",
       "name": "老街灌汤包",
       "nameEn": "老街灌汤包 (灌汤包)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "灌汤包",
       "avgPrice": 148,
       "rating": 4.7,
@@ -3118,128 +3118,128 @@
   "culturalTips": [
     {
       "category": "food",
-      "title": "Shaanxi Cuisine",
-      "content": "Xi'an is the birthplace of many famous Chinese foods including biangbiang面, roujiamo, and lamb paomo. Muslim Quarter offers unique Hui (Chinese Muslim) cuisine.",
+      "title": "陕西菜",
+      "content": "西安是许多著名中国美食的发源地，包括biangbiang面、肉夹馍和羊肉泡馍。回民街提供独特的回族（华裔穆斯林）美食。",
       "importance": "high"
     },
     {
       "category": "dress",
-      "title": "Modest Dress for Relics",
-      "content": "When visiting religious sites and Terracotta Army, dress modestly and respectfully. Shoulders and knees covered.",
+      "title": "参观古迹的得体着装",
+      "content": "参观宗教场所和兵马俑时，请着装端庄得体。遮盖肩膀和膝盖。",
       "importance": "medium"
     },
     {
       "category": "history",
-      "title": "Historical Context Matters",
-      "content": "Xi'an has been capital of multiple dynasties. Understanding Chinese history enhances the experience. Audio guides recommended.",
+      "title": "了解历史背景很重要",
+      "content": "西安曾是多个朝代的首都。了解中国历史能增强游览体验。建议使用语音导览。",
       "importance": "medium"
     },
     {
       "category": "nightlife",
-      "title": "Night at the Wall",
-      "content": "Xian's city wall is spectacular at night with the giant music fountain show at the South Gate. The nearby Muslim Quarter comes alive in the evening with hundreds of food stalls selling roujiamo, lamb skewers, and biangbiang noodles.",
+      "title": "夜晚的城墙",
+      "content": "西安城墙在夜间壮丽无比，南门有大型音乐喷泉表演。附近的回民街傍晚时分热闹非凡，数百个摊位出售肉夹馍、羊肉串和biangbiang面。",
       "importance": "medium"
     },
     {
       "category": "silk-road",
-      "title": "Silk Road Heritage",
-      "content": "Xi'an was the eastern terminus of the ancient Silk Road. The Grand Mosque of Xi'an reflects the city's historical connections with Central Asia and the Islamic world.",
+      "title": "丝绸之路遗产",
+      "content": "西安是古代丝绸之路的东端终点。西安大清真寺反映了该市与中亚和伊斯兰世界的历史联系。",
       "importance": "medium"
     },
     {
       "category": "terracotta",
-      "title": "Terracotta Army Significance",
-      "content": "The Terracotta Army represents Emperor Qin Shi Huang's quest for immortality. Each warrior has unique facial features - no two are exactly alike.",
+      "title": "兵马俑的意义",
+      "content": "兵马俑代表了秦始皇对永生的追求。每个兵马俑都有独特的面部特征——没有两个是完全相同的。",
       "importance": "high"
     },
     {
       "category": "muslim-culture",
-      "title": "Hui Muslim Culture",
-      "content": "The Muslim Quarter (Huimin Jie) is home to Xi'an's Hui Muslim community who have lived here for over 1,000 years. They follow Islamic dietary laws - no pork.",
+      "title": "回族穆斯林文化",
+      "content": "回民街是西安回族穆斯林社区的聚居地，他们在这里生活了1000多年。他们遵守伊斯兰饮食法规——不吃猪肉。",
       "importance": "high"
     },
     {
       "category": "noodle-culture",
-      "title": "Noodle Culture",
-      "content": "Shaanxi people take noodles very seriously. Biangbiang面 (belt noodles) are a local specialty - the character for 'biang' is one of the most complex Chinese characters.",
+      "title": "面食文化",
+      "content": "陕西人对面条非常讲究。Biangbiang面（裤带面）是当地特色——\"biang\"字是笔画最复杂的中文字之一。",
       "importance": "medium"
     },
     {
       "category": "qin-dynasty",
-      "title": "Qin Dynasty Legacy",
-      "content": "Xi'an (as Chang'an) was the capital of the Qin dynasty that first unified China. The Terracotta Army, city walls, and historical sites reflect this legacy.",
+      "title": "秦朝遗产",
+      "content": "西安（古称长安）是统一中国的秦朝首都。兵马俑、城墙和历史遗迹反映了这一传承。",
       "importance": "medium"
     },
     {
       "category": "tang-dynasty",
-      "title": "Tang Dynasty Golden Age",
-      "content": "The Tang dynasty (618-907 AD) is considered China's golden age. Xi'an was the largest city in the world, with cosmopolitan culture influences from the Silk Road.",
+      "title": "唐朝黄金时代",
+      "content": "唐朝（618-907年）被认为是中国的黄金时代。西安是当时世界上最大的城市，具有来自丝绸之路的多元文化影响。",
       "importance": "medium"
     },
     {
       "category": "biking-culture",
-      "title": "Cycling the City Wall",
-      "content": "Cycling the 14km City Wall circuit is a Xi'an tradition. Rent bikes at South Gate or other gates. Best done at sunset for city views.",
+      "title": "骑自行车游城墙",
+      "content": "骑行14公里的城墙环线是西安的传统。在南门或其他城门租自行车。日落时分骑行最佳，可欣赏城市景观。",
       "importance": "medium"
     },
     {
       "category": "language",
-      "title": "Local Dialect",
-      "content": "Xi'an dialect has its own characteristics, including the suffix 'de' (嘚) at sentence end. Many locals still use traditional pronunciation for certain characters.",
+      "title": "地方方言",
+      "content": "西安方言有其独特之处，包括句尾的语气词\"嘚\"。许多当地人仍使用某些字词的传统发音。",
       "importance": "low"
     },
     {
       "category": "dumpling-culture",
-      "title": "Dumpling Banquet",
-      "content": "Xi'an is famous for dumpling (jiaozi) restaurants. Try the dumpling banquet at De Fa Chang - a single meal can include 100+ varieties.",
+      "title": "饺子宴",
+      "content": "西安以饺子馆闻名。试试德发常的饺子宴——一餐可提供100多种饺子。",
       "importance": "medium"
     },
     {
       "category": "tea-culture",
-      "title": "Tea Culture",
-      "content": "While not as tea-centric as southern China, Xi'an has its own tea traditions. Locals enjoy herbal teas and the famous Faban lotus leaf tea.",
+      "title": "茶文化",
+      "content": "虽然没有南方那么多茶文化，但西安也有自己的茶传统。当地人喜欢花草茶以及著名的发瓣荷叶茶。",
       "importance": "low"
     },
     {
       "category": "foot-massage",
-      "title": "Foot Massage Culture",
-      "content": "Like many Chinese cities, Xi'an has many foot massage shops. After a day of walking the Terracotta Army or City Wall, a foot massage is welcome relief.",
+      "title": "足疗文化",
+      "content": "和许多中国城市一样，西安有很多足底按摩店。游览完兵马俑或城墙后，足底按摩是受欢迎的放松方式。",
       "importance": "low"
     },
     {
       "category": "superstitions",
-      "title": "Historical Superstitions",
-      "content": "Traditional beliefs about spirits and ancestors are still present. Don't point at the moon (disrespectful to Moon God), and avoid cutting hair on certain festival days.",
+      "title": "历史迷信",
+      "content": "传统信仰中仍然保留着对神灵和祖先的敬畏。不要用手指月亮（对月神不敬），避免在某些节日当天理发。",
       "importance": "low"
     },
     {
       "category": "festivals",
-      "title": "Local Festivals",
-      "content": "During Chinese New Year, Xi'an's Muslim Quarter has special foods. The Drums and Bells Festival celebrates ancient music traditions.",
+      "title": "地方节日",
+      "content": "春节期间，西安回民街有特色美食。大鼓钟乐节庆祝古老的音乐传统。",
       "importance": "medium"
     },
     {
       "category": "architecture",
-      "title": "Ancient Architecture",
-      "content": "Xi'an's architecture reflects multiple dynasties. The Bell and Drum Towers (Ming dynasty) are iconic. Han and Tang dynasties left their mark on palace ruins.",
+      "title": "古建筑",
+      "content": "西安的建筑反映了多个朝代。钟楼和鼓楼（明代）是标志性建筑。汉代和唐代在宫殿遗址上留下了印记。",
       "importance": "medium"
     },
     {
       "category": "hot-springs",
-      "title": "Hot Spring Culture",
-      "content": "华清池 (Huaqing Hot Springs) has been a resort since Tang dynasty. Emperor Xuanzong built a palace here for his favorite consort Yang Guifei.",
+      "title": "温泉文化",
+      "content": "华清池自唐代以来就是度假胜地。唐玄宗在这里为他的宠妃杨贵妃修建了宫殿。",
       "importance": "medium"
     },
     {
       "category": "handicrafts",
-      "title": "Traditional Handicrafts",
-      "content": "Xi'an is known for traditional crafts including shadow puppets, paper cutting, and glazed pottery. The Tang Dynasty crafts make unique souvenirs.",
+      "title": "传统手工艺",
+      "content": "西安以传统手工艺闻名，包括皮影戏、剪纸和釉面陶。唐代工艺品是独特的纪念品。",
       "importance": "medium"
     },
     {
       "category": "emperor-tombs",
-      "title": "Imperial Tomb Culture",
-      "content": "Xi'an is surrounded by imperial tombs from multiple dynasties. The area northwest of the city has 9 of the 73 Tang dynasty imperial tombs.",
+      "title": "帝王陵文化",
+      "content": "西安周围环绕着多个朝代的皇家陵墓。城市西北部有73座唐代皇家陵墓中的9座。",
       "importance": "low"
     }
   ],
@@ -3247,159 +3247,159 @@
     {
       "type": "ambulance",
       "name": "西安急救中心",
-      "nameEn": "Xi'an Emergency Center",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "120",
-      "address": "Citywide coverage"
+      "address": "广州"
     },
     {
       "type": "police",
       "name": "西安市公安局",
-      "nameEn": "Xi'an Public Security Bureau",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "110",
-      "address": "Various locations"
+      "address": "广州"
     },
     {
       "type": "hospital",
       "name": "西安国际医学中心",
-      "nameEn": "Xi'an International Medical Center",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "+86 29 969 99",
-      "address": "Gaoxin District",
+      "address": "广州",
       "coordinates": {
         "lat": 34.2245,
         "lng": 108.8845
       },
-      "notes": "English-speaking staff, modern facilities"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "hospital",
       "name": "西安交通大学第一附属医院",
-      "nameEn": "First Affiliated Hospital of Xi'an Jiaotong University",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "+86 29 8532 3314",
-      "address": "277 Yanta West Rd, Yanta District",
+      "address": "广州",
       "coordinates": {
         "lat": 34.2395,
         "lng": 108.9345
       },
-      "notes": "Top public hospital, excellent for complex cases"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "embassy",
       "name": "美国驻西安总领事馆",
-      "nameEn": "US Consulate General Xi'an",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "+86 29 8723 0666",
-      "address": "1st Floor, Sheraton Xi'an Hotel, 12 Feng Hao Rd",
+      "address": "广州",
       "coordinates": {
         "lat": 34.2665,
         "lng": 108.9395
       },
-      "notes": "Limited consular services - may need to travel to Beijing or Shanghai"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "fire",
       "name": "西安消防支队",
-      "nameEn": "Xi'an Fire Department",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "119",
-      "address": "Citywide coverage"
+      "address": "广州"
     },
     {
       "type": "hospital",
       "name": "陕西省人民医院",
-      "nameEn": "Shaanxi Provincial People's Hospital",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "+86 29 8525 1331",
-      "address": "256 Youyi Rd, Beilin District",
+      "address": "广州",
       "coordinates": {
         "lat": 34.2395,
         "lng": 108.9385
       },
-      "notes": "Major public hospital, 24h emergency"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "hospital",
       "name": "西京医院",
-      "nameEn": "Xijing Hospital",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "+86 29 8477 1454",
-      "address": "169 Changle West Rd, Xincheng District",
+      "address": "广州",
       "coordinates": {
         "lat": 34.2635,
         "lng": 108.9245
       },
-      "notes": "Top military hospital, excellent specialties"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "embassy",
       "name": "英国驻西安总领事馆",
-      "nameEn": "British Consulate General Xi'an",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "+86 29 8722 0949",
-      "address": "4th Floor, Xin Hua Hotel, 115 South Second Ring Rd",
+      "address": "广州",
       "coordinates": {
         "lat": 34.2355,
         "lng": 108.9515
       },
-      "notes": "Limited consular services"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "embassy",
       "name": "法国驻西安总领事馆",
-      "nameEn": "French Consulate General Xi'an",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "+86 29 8767 2686",
-      "address": "2nd Floor, Gaoxing Building, 18 Xiashaotong Lane",
+      "address": "广州",
       "coordinates": {
         "lat": 34.2515,
         "lng": 108.9495
       },
-      "notes": "Limited consular services"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "embassy",
       "name": "德国驻西安总领事馆",
-      "nameEn": "German Consulate General Xi'an",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "+86 29 8769 9626",
-      "address": "2nd Floor, Jinhua Hotel, 555 Youyi Rd",
+      "address": "广州",
       "coordinates": {
         "lat": 34.2395,
         "lng": 108.9365
       },
-      "notes": "Limited consular services"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "embassy",
       "name": "日本驻西安总领事馆",
-      "nameEn": "Japanese Consulate General Xi'an",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "+86 29 8832 3000",
-      "address": "1st Floor, Xi'an Credit Hotel, 88 South Guangji Rd",
+      "address": "广州",
       "coordinates": {
         "lat": 34.2315,
         "lng": 108.9465
       },
-      "notes": "Visa and consular services available"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "embassy",
       "name": "韩国驻西安总领事馆",
-      "nameEn": "Korean Consulate General Xi'an",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "+86 29 8832 3800",
-      "address": "2nd Floor, Xinkai Building, 10 Xiashaotong Lane",
+      "address": "广州",
       "coordinates": {
         "lat": 34.2515,
         "lng": 108.9485
       },
-      "notes": "Visa and consular services"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "tourist-complaint",
       "name": "西安旅游投诉热线",
-      "nameEn": "Xi'an Tourism Complaint Hotline",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "+86 29 8726 2626",
-      "address": "Citywide",
-      "notes": "Report issues with tour guides, attractions, or services"
+      "address": "广州",
+      "notes": "适用于新加坡公民"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa. 72h transit visa available at airport for eligible nationalities.",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Tap water safe but use bottled for taste"
+    "language": "普通话（中文）",
+    "currency": "人民币 (CNY/RMB)",
+    "visa": "大多数国籍需要签证。符合条件的旅客可在机场办理 72 小时过境签证。",
+    "timeZone": "UTC+8 (北京时间)",
+    "electricity": "220V/50Hz，A 型/I 型插头",
+    "water": "自来水可饮用但建议使用瓶装水"
   }
 }

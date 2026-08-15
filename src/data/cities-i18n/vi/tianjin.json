@@ -3,28 +3,28 @@
   "name": "天津",
   "nameEn": "Tianjin",
   "country": "China",
-  "population": "13.9 million",
+  "population": "13,9 triệu",
   "coordinates": {
     "lat": 39.3434,
     "lng": 117.3616
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Tianjin, a bustling port city near Beijing, blends European colonial architecture with traditional Chinese culture. Famous for the Ancient Culture Street, food culture featuring Mahua and Goubuli baozi, and the impressive Tianjin Eye Ferris wheel.",
+  "description": "Thành phố cảng đông đúc Tianjin, nằm gần Bắc Kinh, kết hợp kiến trúc thuộc địa châu Âu với văn hóa Trung Quốc truyền thống. Nổi tiếng với Phố Văn hóa Cổ, văn hóa ẩm thực với món Mahua và bánh bao Goubuli, và vòng quay ấn tượng Tianjin Eye.",
   "coverImage": "/img/ext/3c81c7331bd2.webp",
   "highlights": [
-    "Tianjin Eye - Giant Ferris wheel",
-    "Ancient Culture Street - Traditional architecture",
-    "Five Great Avenues - European architecture",
-    "Tianjin Ancient Cultural Street",
-    "Haihe River waterfront"
+    "Tianjin Eye - Vòng quay khổng lồ",
+    "Phố Văn Hóa Cổ - Kiến trúc truyền thống",
+    "Năm Đại Đường - Kiến trúc châu Âu",
+    "Phố Văn Hóa Cổ Thượng Hải",
+    "Bờ sông Hải Hà"
   ],
   "climate": {
-    "type": "Humid continental climate",
+    "type": "Khí hậu lục địa ẩm",
     "bestMonths": [
-      "April",
-      "May",
-      "September",
-      "October"
+      "Tháng 4",
+      "Tháng 5",
+      "Tháng 9",
+      "Tháng 10"
     ],
     "avgSummerTemp": "26°C (79°F)",
     "avgWinterTemp": "-2°C (28°F)",
@@ -34,583 +34,583 @@
     {
       "id": "tianjin-eye",
       "name": "天津之眼",
-      "nameEn": "Tianjin Eye",
+      "nameEn": "Con Mắt Tianjin",
       "category": "landmark",
-      "description": "Giant 120-meter Ferris wheel on the Haihe River, offering panoramic city views.",
-      "address": "Tianjin Eye, Hebei District",
+      "description": "Vòng quay khổng lồ cao 120 mét trên sông Hải Hà, cung cấp toàn cảnh thành phố.",
+      "address": "Tianjin Eye, Quận Hà Bắc",
       "coordinates": {
         "lat": 39.3622,
         "lng": 117.1822
       },
       "openingHours": "09:30-21:30",
       "ticketPrice": "70¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1 giờ",
       "highlights": [
-        "Haihe River views",
-        "City panorama",
-        "Night lighting",
-        "Photo opportunities"
+        "Quan cảnh sông Hải Hà",
+        "Toàn cảnh thành phố",
+        "Thiết kế chiếu sáng ban đêm",
+        "Cơ hội chụp ảnh"
       ],
-      "tips": "Book tickets online. Best at sunset or night. Avoid holidays when crowded.",
+      "tips": "Đặt vé trực tuyến. Tốt nhất vào lúc hoàng hôn hoặc ban đêm. Tránh các ngày lễ khi đông người.",
       "image": "/img/ext/5be0c2903af2.webp",
       "phone": "+86 22 2628 8888"
     },
     {
       "id": "ancient-culture-street",
       "name": "古文化街",
-      "nameEn": "Ancient Culture Street",
+      "nameEn": "Phố Văn Hóa Cổ",
       "category": "cultural",
-      "description": "Historic street with traditional architecture, temples, and local crafts.",
-      "address": "Ancient Culture Street, Heping District",
+      "description": "Đường phố lịch sử với kiến trúc truyền thống, chùa chiền và nghề thủ công địa phương.",
+      "address": "Đường Văn hóa cổ, Quận Heping",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.2022
       },
-      "openingHours": "Open 24 hours (shops 09:00-21:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "Mở cửa 24 giờ (cửa hàng 09:00-21:00)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Tianhou Temple",
-        "Traditional shops",
-        "Cantonese opera",
-        "Local snacks"
+        "Đền Thiên Hậu",
+        "Cửa hàng truyền thống",
+        "Hát Quảng Đông",
+        "Đồ ăn vặt địa phương"
       ],
-      "tips": "Best in morning for atmosphere. Try mahua and tea. Take boat ride on Haihe.",
+      "tips": "Tốt nhất vào buổi sáng để cảm nhận không khí. Thử món mahua và trà. Đi chuyến thuyền trên sông Haihe.",
       "image": "/img/ext/f5e115604d3c.webp",
       "phone": "+86 022  9903 5780"
     },
     {
       "id": "five-great-avenues",
       "name": "五大道",
-      "nameEn": "Five Great Avenues",
+      "nameEn": "Năm Đại Đại Lộ",
       "category": "historical",
-      "description": "Area with colonial European architecture from early 20th century, featuring buildings from various countries.",
-      "address": "Five Great Avenues, Heping District",
+      "description": "Khu vực với kiến trúc châu Âu thuộc địa từ đầu thế kỷ 20, với các tòa nhà mang phong cách của nhiều quốc gia.",
+      "address": "Five Great Avenues, Quận Heping",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2122
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "Mở cửa 24 giờ",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Colonial mansions",
-        "British, French, Italian architecture",
-        "Tree-lined streets",
-        "Horse carriage tours"
+        "Biệt thự thuộc địa",
+        "Kiến trúc Anh, Pháp, Ý",
+        "Đường phố cây xanh",
+        "Tour xe ngựa"
       ],
-      "tips": "Rent a bicycle or take a horse carriage tour. Best in autumn. Many buildings now house cafes.",
+      "tips": "Thuê một chiếc xe đạp hoặc tham gia tour xe ngựa. Tốt nhất vào mùa thu. Nhiều tòa nhà hiện nay chứa các quán cà phê.",
       "image": "/img/ext/12f36429ae32.webp",
       "phone": "+86 022  2108 0433"
     },
     {
       "id": "tianjin-ancient-cultural-street",
       "name": "天津古文化街",
-      "nameEn": "Tianjin Ancient Cultural Street",
+      "nameEn": "Phố Văn Hóa Cổ Thượng Hải",
       "category": "cultural",
-      "description": "Replica of ancient street with traditional buildings, handicraft shops and food vendors.",
-      "address": "Nanshi Gate, Hebei District",
+      "description": "Bản sao của đường phố cổ với các tòa nhà truyền thống, cửa hàng nghề thủ công và các gian hàng ăn uống.",
+      "address": "Cổng Nanshi, Quận Hebei",
       "coordinates": {
         "lat": 39.1522,
         "lng": 117.1922
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2 hours",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2 giờ",
       "highlights": [
-        "Nanshi Gate",
-        "Traditional crafts",
-        "Folk performances",
-        "Local specialties"
+        "Cổng Namshi",
+        "Thủ công truyền thống",
+        "Biểu diễn dân gian",
+        "đặc sản địa phương"
       ],
-      "tips": "Great for souvenirs. Watch for traditional art demonstrations. Combine with Haihe River walk.",
+      "tips": "Tuyệt vời cho các món quà lưu niệm. Chú ý các buổi trình diễn nghệ thuật truyền thống. Kết hợp với cuộc dạo chơi bên bờ sông Haihe.",
       "image": "/img/ext/de3cd0f08bdf.webp",
       "phone": "+86 022  1470 0942"
     },
     {
       "id": "haihe-river",
       "name": "海河",
-      "nameEn": "Haihe River",
+      "nameEn": "Sông Haihe",
       "category": "natural",
-      "description": "Central river flowing through Tianjin with historic bridges and riverside parks.",
-      "address": "Haihe River, central Tianjin",
+      "description": "Con sông chính chảy qua Thẩm Dương với các cây cầu lịch sử và công viên ven sông.",
+      "address": "Sông Haihe, trung tâm Thẩm Dương",
       "coordinates": {
         "lat": 39.1422,
         "lng": 117.2022
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free (boat rides extra)",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "Mở cửa 24 giờ",
+      "ticketPrice": "Miễn phí (chèo thuyền phụ thu)",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "Night cruise",
-        "Historic bridges",
-        "Riverside walks",
-        "Tianjin Eye views"
+        "Chuyến đi thuyền ban đêm",
+        "Các cây cầu lịch sử",
+        "Các cuộc dạo chơi ven sông",
+        "Nhìn từ Thẩm Dương Eye"
       ],
-      "tips": "Take evening boat cruise for best views. Walk across the Friendship Pavilion Bridge.",
+      "tips": "Hãy tham gia chuyến đi thuyền chiều tối để có được những góc nhìn đẹp nhất. Đi bộ qua Cầu Lương Kỳ.",
       "image": "/img/ext/7fecf108b380.webp",
       "phone": "+86 022  2546 0179"
     },
     {
       "id": "shibin-dagou",
       "name": "石版画狗",
-      "nameEn": "Stone Art Gallery",
+      "nameEn": "Viện Nghệ thuật Đá",
       "category": "cultural",
-      "description": "Famous for folk art and traditional Tianjing paintings.",
-      "address": "Yangliuqing, Xiqing District",
+      "description": "Nổi tiếng với nghệ thuật dân gian và tranh Thiên Tân truyền thống.",
+      "address": "Dương Liễu Thanh, Quận Tây Thanh",
       "coordinates": {
         "lat": 39.0522,
         "lng": 117.3022
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "30¥",
-      "recommendedVisitTime": "2 hours",
+      "recommendedVisitTime": "2 giờ",
       "highlights": [
-        "New Year paintings",
-        "Folk art",
-        "Traditional workshops",
-        "Cultural exhibits"
+        "Tranh Tết",
+        "Nghệ thuật dân gian",
+        "Xưởng thủ công truyền thống",
+        "Triển lãm văn hóa"
       ],
-      "tips": "Buy authentic New Year paintings as souvenirs. Watch artists at work.",
+      "tips": "Mua tranh Tết chính hãng làm kỷ niệm. Xem các nghệ nhân làm việc.",
       "image": "/img/ext/4905e0a1ab21.webp",
       "phone": "+86 022  7862 1625"
     },
     {
       "id": "tianjin-library",
       "name": "天津图书馆",
-      "nameEn": "Tianjin Library",
+      "nameEn": "Thư viện Thẩm Dương",
       "category": "cultural",
-      "description": "Modern library with impressive architecture and vast collection of books.",
-      "address": "TEDA, Hexi District",
+      "description": "Thư viện hiện đại với kiến trúc ấn tượng và bộ sưu tập sách khổng lồ.",
+      "address": "Khu TEDA, Quận Hexi",
       "coordinates": {
         "lat": 39.0222,
         "lng": 117.2222
       },
       "openingHours": "09:00-21:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "Modern architecture",
-        "Reading rooms",
-        "Vast collection",
-        "Digital resources"
+        "Kiến trúc hiện đại",
+        "Phòng đọc sách",
+        "Bộ sưu tập khổng lồ",
+        "Tài nguyên kỹ thuật số"
       ],
-      "tips": "Great for book lovers. The architecture is impressive. Quiet atmosphere.",
+      "tips": "Lý tưởng cho những người yêu sách. Kiến trúc thật ấn tượng. Không khí yên tĩnh.",
       "image": "/img/ext/6eb08dbad99e.webp",
       "phone": "+86 022  0082 4509"
     },
     {
       "id": "tianjin-water-park",
       "name": "水上公园",
-      "nameEn": "Water Park",
+      "nameEn": "Công viên nước",
       "category": "natural",
-      "description": "Large urban park with lakes, pavilions and amusement rides.",
-      "address": "Nankai District",
+      "description": "Công viên đô thị lớn với hồ, đình và các trò chơi giải trí.",
+      "address": "Quận Nankai",
       "coordinates": {
         "lat": 39.0922,
         "lng": 117.2122
       },
       "openingHours": "06:00-22:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Lake activities",
-        "Amusement rides",
-        "Cherry blossoms",
-        "Tea houses"
+        "Hoạt động trên hồ",
+        "Công viên giải trí",
+        "Hoa anh đào",
+        "Nhà trà"
       ],
-      "tips": "Best in spring for cherry blossoms. Great for families. Boat rentals available.",
+      "tips": "Tốt nhất vào mùa xuân để ngắm hoa anh đào. Lý tưởng cho gia đình. Có thể thuê thuyền.",
       "image": "/img/ext/47421538665b.webp",
       "phone": "+86 022  6949 0917"
     },
     {
       "id": "tianjin-economy-technological",
       "name": "天津经济技术开发区",
-      "nameEn": "Tianjin Economic-Technological Development Area",
+      "nameEn": "Khu Phát triển Kinh tế-Kỹ thuật Tianjin",
       "category": "modern",
-      "description": "Modern industrial zone with technology companies and entertainment facilities.",
-      "address": "TEDA, Binhai New Area",
+      "description": "Khu công nghiệp hiện đại với các công ty công nghệ và cơ sở giải trí.",
+      "address": "Khu TEDA, Khu đô thị mới Binhai",
       "coordinates": {
         "lat": 39.0022,
         "lng": 117.7022
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "Mở cửa 24 giờ",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "3-4 giờ",
       "highlights": [
-        "Modern architecture",
-        "Theme parks",
-        "Haihe River estuary",
-        "Industrial tours"
+        "Kiến trúc hiện đại",
+        "Công viên giải trí",
+        "Cửa sông Haihe",
+        "Tour công nghiệp"
       ],
-      "tips": "Home to several theme parks. The Ferris wheel area is popular.",
+      "tips": "Trụ sở của một số công viên chủ đề. Khu vực vòng quay Ferris rất phổ biến.",
       "image": "/img/ext/9f10c875db11.webp",
       "phone": "+86 022  1649 5328"
     },
     {
       "id": "huangyaguan",
       "name": "黄崖关长城",
-      "nameEn": "Huangyaguan Great Wall",
+      "nameEn": "Tường Trấn Hoàng Yá Quan",
       "category": "historical",
-      "description": "Section of the Great Wall with steep climbs and scenic mountain views.",
-      "address": "Ji County, Tianjin",
+      "description": "Một đoạn của Vạn Lý Trường Thành với những con dốc dựng đứng và phong cảnh núi đẹp.",
+      "address": "Huyện Jixian, Thành phố Tianjin",
       "coordinates": {
         "lat": 40.2522,
         "lng": 117.4022
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "65¥",
-      "recommendedVisitTime": "4-5 hours",
+      "recommendedVisitTime": "4-5 giờ",
       "highlights": [
-        "Great Wall section",
-        "Mountain scenery",
-        "Hiking trails",
-        "Historical fortifications"
+        "Đoạn Vạn Lý Trường Thành",
+        "Phong cảnh núi",
+        "Tuyến đường leo núi",
+        "Các công sự lịch sử"
       ],
-      "tips": "Less crowded than Beijing sections. Wear hiking shoes. Bring water and snacks.",
+      "tips": "Ít đông hơn các đoạn ở Bắc Kinh. Mặc giày leo núi. Mang theo nước và đồ ăn nhẹ.",
       "image": "/img/ext/d9e1e34b36a1.webp",
       "phone": "+86 022  7172 6870"
     },
     {
       "id": "panlong-shuiwu",
       "name": "盘龙水利风景区",
-      "nameEn": "Panlong Lake Scenic Area",
+      "nameEn": "Khu phong cảnh hồ Panlong",
       "category": "natural",
-      "description": "Lake with traditional Chinese gardens and water activities.",
-      "address": "Xiqing District",
+      "description": "Hồ với các khu vườn truyền thống Trung Quốc và các hoạt động thủy văn.",
+      "address": "Quận Tây Thanh",
       "coordinates": {
         "lat": 39.0622,
         "lng": 117.2522
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "40¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Lake views",
-        "Traditional pavilions",
-        "Boating",
-        "Photography"
+        "Quang cảnh hồ",
+        "Những lâu đài truyền thống",
+        "Chèo thuyền",
+        "Chụp ảnh"
       ],
-      "tips": "Beautiful at sunset. Less crowded than Water Park. Great for traditional Chinese photos.",
+      "tips": "Đẹp nhất vào lúc hoàng hôn. Ít đông hơn Công viên nước. Rất thích hợp cho các bức ảnh truyền thống Trung Quốc.",
       "image": "/img/ext/d379551d93fd.webp",
       "phone": "+86 022  2404 0336"
     },
     {
       "id": "tianjin-temple",
       "name": "天后宫",
-      "nameEn": "Tianhou Temple",
+      "nameEn": "Đền Thiên Hậu",
       "category": "cultural",
-      "description": "Historic temple dedicated to the sea goddess, one of the three famous Tianhou temples in China.",
-      "address": "Ancient Culture Street, Heping District",
+      "description": "Ngôi chùa lịch sử được dành riêng cho nữ thần biển, một trong ba ngôi chùa Thiên Hậu nổi tiếng ở Trung Quốc.",
+      "address": "Đường Văn hóa cổ, Quận Heping",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.2022
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "10¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1 giờ",
       "highlights": [
-        "Sea goddess temple",
-        "Ancient architecture",
-        "Cultural artifacts",
-        "Folk customs"
+        "Ngôi chùa nữ thần biển",
+        "Kiến trúc cổ",
+        "Di vật văn hóa",
+        "Phong tục dân gian"
       ],
-      "tips": "One of the oldest temples in Tianjin. Visit during festivals for traditional performances.",
+      "tips": "Một trong những ngôi chùa cổ nhất ở Tianjin. Tham quan vào dịp lễ hội để xem các biểu diễn truyền thống.",
       "image": "/img/ext/ccae5add8138.webp",
       "phone": "+86 022  4267 2607"
     },
     {
       "id": "beidadehua",
       "name": "蓟县大碱厂",
-      "nameEn": "Dajianshan Factory",
+      "nameEn": "Nhà máy Dajianshan",
       "category": "cultural",
-      "description": "Historic salt refinery showcasing industrial heritage.",
-      "address": "Jixian County",
+      "description": "Nhà máy lọc muối lịch sử thể hiện di sản công nghiệp.",
+      "address": "Huyện Jixian",
       "coordinates": {
         "lat": 40.0522,
         "lng": 117.4022
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "30¥",
-      "recommendedVisitTime": "2 hours",
+      "recommendedVisitTime": "2 giờ",
       "highlights": [
-        "Industrial heritage",
-        "Salt making",
-        "Traditional methods",
-        "Museum exhibits"
+        "Di sản công nghiệp",
+        "Làm muối",
+        "Phương pháp truyền thống",
+        "Triển lãm bảo tàng"
       ],
-      "tips": "Learn about Tianjin's salt industry history. Combine with nearby mountain trips.",
+      "tips": "Tìm hiểu về lịch sử ngành công nghiệp muối của Tianjin. Kết hợp với các chuyến đi núi gần đó.",
       "image": "/img/ext/7b494038a7eb.webp",
       "phone": "+86 022  8202 2377"
     },
     {
       "id": "tianjin-geography-museum",
       "name": "天津自然博物馆",
-      "nameEn": "Tianjin Natural History Museum",
+      "nameEn": "Bảo tàng Lịch sử Tự nhiên Tianjin",
       "category": "cultural",
-      "description": "Modern museum with exhibits on paleontology, dinosaurs and local ecosystems.",
-      "address": "Heping District",
+      "description": "Bảo tàng hiện đại với các triển lãm về cổ sinh vật học, khủng long và các hệ sinh thái địa phương.",
+      "address": "Quận Heping",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2122
       },
-      "openingHours": "09:00-16:30 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "09:00-16:30 (Đóng cửa thứ Hai)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Dinosaur fossils",
-        "Ancient civilizations",
-        "Local wildlife",
-        "Interactive exhibits"
+        "Hóa thạch khủng long",
+        "Các nền văn minh cổ đại",
+        "Động vật hoang dã địa phương",
+        "Triển lãm tương tác"
       ],
-      "tips": "Great for families. Allow 2-3 hours. Combine with nearby cultural attractions.",
+      "tips": "Rất thích hợp cho gia đình. Dành khoảng 2-3 giờ. Kết hợp với các điểm tham quan văn hóa gần đó.",
       "image": "/img/ext/c74d7faf7bb9.webp",
       "phone": "+86 022  1376 5470"
     },
     {
       "id": "tianjin-music-hall",
       "name": "天津音乐厅",
-      "nameEn": "Tianjin Concert Hall",
+      "nameEn": "Nhà hát Hòa nhạc Tianjin",
       "category": "cultural",
-      "description": "Elegant colonial-era concert hall hosting classical performances.",
-      "address": "Hexi District",
+      "description": "Nhà hát cổ điển thời kỳ thuộc địa sang trọng tổ chức các buổi biểu diễn âm nhạc cổ điển.",
+      "address": "Quận Hạ Hà",
       "coordinates": {
         "lat": 39.1022,
         "lng": 117.2222
       },
-      "openingHours": "Performance hours vary",
-      "ticketPrice": "Performance dependent",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "Giờ biểu diễn thay đổi theo lịch",
+      "ticketPrice": "Tùy thuộc vào buổi biểu diễn",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Classical music",
-        "European architecture",
-        "Acoustic excellence",
-        "Cultural performances"
+        "Nhạc cổ điển",
+        "Kiến trúc châu Âu",
+        "Chất lượng âm thanh xuất sắc",
+        "Biểu diễn văn hóa"
       ],
-      "tips": "Book tickets in advance for popular performances. Dress appropriately.",
+      "tips": "Đặt vé trước cho các buổi biểu diễn phổ biến. Mặc quần áo thích hợp.",
       "image": "/img/ext/f2829573ba5f.webp",
       "phone": "+86 022  4189 5689"
     },
     {
       "id": "binhai-new-area",
       "name": "滨海新区",
-      "nameEn": "Binhai New Area",
+      "nameEn": "Khu vực mới Binhai",
       "category": "modern",
-      "description": "Modern development zone with contemporary architecture and entertainment.",
-      "address": "Binhai New Area",
+      "description": "Khu phát triển hiện đại với kiến trúc đương đại và giải trí.",
+      "address": "Khu vực mới Binhai",
       "coordinates": {
         "lat": 38.9922,
         "lng": 117.7022
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "Mở cửa 24 giờ",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "3-4 giờ",
       "highlights": [
-        "Modern skyline",
-        "Harbor views",
-        "Cultural center",
-        "Shopping malls"
+        "Đường chân trời hiện đại",
+        "Cảnh quan cảng",
+        "Trung tâm văn hóa",
+        "Trung tâm mua sắm"
       ],
-      "tips": "Explore the modern side of Tianjin. The National Museum of China Seafaring is here.",
+      "tips": "Khám phá mặt hiện đại của Tianjin. Đây là nơi tọa lạc của Bảo tàng Hàng hải Trung Quốc.",
       "image": "/img/ext/9b5f1087da38.webp",
       "phone": "+86 022  1581 7961"
     },
     {
       "id": "tianjin-drum-tower",
       "name": "天津古楼",
-      "nameEn": "Ancient Drum Tower",
+      "nameEn": "Tháp Trống Cổ",
       "category": "historical",
-      "description": "Historic drum tower marking the center of old Tianjin.",
-      "address": "Nankai District",
+      "description": "Tháp trống lịch sử đánh dấu trung tâm của Tianjin cổ.",
+      "address": "Quận Nankai",
       "coordinates": {
         "lat": 39.1422,
         "lng": 117.1922
       },
       "openingHours": "09:00-17:00",
       "ticketPrice": "25¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1 giờ",
       "highlights": [
-        "Drum performances",
-        "Old city views",
-        "Traditional architecture",
-        "Cultural exhibits"
+        "Biểu diễn trống",
+        "Cảnh quan thành cổ",
+        "Kiến trúc truyền thống",
+        "Triển lãm văn hóa"
       ],
-      "tips": "Watch the daily drum performances. The surrounding area has traditional shops.",
+      "tips": "Xem các buổi biểu diễn trống hàng ngày. Khu vực xung quanh có các cửa hàng truyền thống.",
       "image": "/img/ext/c3274355fd82.webp",
       "phone": "+86 022  6452 0133"
     },
     {
       "id": "tianjin-polar-ocean-world",
       "name": "天津海昌极地海洋世界",
-      "nameEn": "Tianjin Haichang Polar Ocean World",
+      "nameEn": "Thế giới Đại dương Cực Tianjin",
       "category": "entertainment",
-      "description": "Large aquarium with polar animals and marine life shows.",
-      "address": "Binhai New Area",
+      "description": "Thủy cung lớn với động vật vùng cực và các show biển.",
+      "address": "Khu vực mới Binhai",
       "coordinates": {
         "lat": 38.9822,
         "lng": 117.7122
       },
       "openingHours": "09:00-17:00",
       "ticketPrice": "180¥",
-      "recommendedVisitTime": "4-5 hours",
+      "recommendedVisitTime": "4-5 giờ",
       "highlights": [
-        "Polar bears",
-        "Penguins",
-        "Dolphin shows",
-        "Underwater tunnel"
+        "Gấu Bắc Cực",
+        "Chim Cánh Cụt",
+        "Show cá heo",
+        "Đường hầm dưới nước"
       ],
-      "tips": "Full day attraction. Arrive early for shows. Buy tickets online.",
+      "tips": "Điểm tham quan cả ngày. Đến sớm để xem show. Mua vé trực tuyến.",
       "image": "/img/ext/2d979b12449c.webp",
       "phone": "+86 022  3273 8170"
     },
     {
       "id": "tianjin-mingzhu",
       "name": "天津劝业场",
-      "nameEn": "Tianjin Quanyechang",
+      "nameEn": "Thánh Địa Thiên Tân",
       "category": "shopping",
-      "description": "Historic department store and shopping district.",
-      "address": "Heping District",
+      "description": "Cửa hàng bách hóa lịch sử và khu mua sắm.",
+      "address": "Quận Heping",
       "coordinates": {
         "lat": 39.1222,
         "lng": 117.2022
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Art Deco building",
-        "Shopping",
-        "Historic architecture",
-        "Local brands"
+        "Tòa nhà phong cách Art Deco",
+        "Mua sắm",
+        "Kiến trúc lịch sử",
+        "Thương hiệu địa phương"
       ],
-      "tips": "Shop like a local. The building is beautiful. Explore nearby streets.",
+      "tips": "Mua sắm như người địa phương. Tòa nhà rất đẹp. Khám phá các con phố lân cận.",
       "image": "/img/ext/8e20ca0b1fca.webp",
       "phone": "+86 022  0730 9404"
     },
     {
       "id": "tianjin-world-joy",
       "name": "欢乐谷",
-      "nameEn": "Tianjin World Joy",
+      "nameEn": "Thế Giới Vui Vẻ Thiên Tân",
       "category": "entertainment",
-      "description": "Large theme park with roller coasters and family rides.",
-      "address": "Beichen District",
+      "description": "Công viên chủ đề lớn với tàu lượn siêu tốc và các trò chơi gia đình.",
+      "address": "Quận Bắc Trần",
       "coordinates": {
         "lat": 39.2222,
         "lng": 117.1622
       },
       "openingHours": "09:00-18:00",
       "ticketPrice": "200¥",
-      "recommendedVisitTime": "Full day",
+      "recommendedVisitTime": "Cả ngày",
       "highlights": [
-        "Roller coasters",
-        "Water rides",
-        "Live shows",
-        "Family attractions"
+        "Tàu lượn siêu tốc",
+        "Trò chơi trên nước",
+        "Biểu diễn trực tiếp",
+        "Điểm tham quan gia đình"
       ],
-      "tips": "Arrive early. Wear comfortable shoes. Bring sunscreen and water.",
+      "tips": "Đến sớm. Mang giày thoải mái. Mang theo kem chống nắng và nước.",
       "image": "/img/ext/2e1ba66bbe1b.webp",
       "phone": "+86 022  4822 7489"
     },
     {
       "id": "tianjin-art-museum",
       "name": "天津美术馆",
-      "nameEn": "Tianjin Art Museum",
+      "nameEn": "Bảo tàng Nghệ thuật Thiên Tân",
       "category": "cultural",
-      "description": "Modern art museum with Chinese and international exhibitions.",
-      "address": "Hexi District",
+      "description": "Bảo tàng nghệ thuật hiện đại với các triển lãm Trung Quốc và quốc tế.",
+      "address": "Quận Hạ Hà",
       "coordinates": {
         "lat": 39.1022,
         "lng": 117.2222
       },
-      "openingHours": "09:00-16:30 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "09:00-16:30 (Đóng cửa thứ Hai)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2 giờ",
       "highlights": [
-        "Contemporary art",
-        "Chinese paintings",
-        "Rotating exhibitions",
-        "Art lectures"
+        "Nghệ thuật đương đại",
+        "Hội họa Trung Quốc",
+        "Triển lãm luân phiên",
+        "Bài giảng nghệ thuật"
       ],
-      "tips": "Check schedule for special exhibitions. Great for art enthusiasts.",
+      "tips": "Kiểm tra lịch trình cho các triển lãm đặc biệt. Tuyệt vời cho những người yêu nghệ thuật.",
       "image": "/img/ext/bb1e59b31c2f.webp",
       "phone": "+86 022  0345 6451"
     },
     {
       "id": "tianjin-zhengyuan",
       "name": "天津之眼摩天轮",
-      "nameEn": "Tianjin Eye at Night",
+      "nameEn": "Mắt Thiên Tân Về Đêm",
       "category": "landmark",
-      "description": "Spectacular night views of the illuminated Ferris wheel and river.",
-      "address": "Hebei District",
+      "description": "Cảnh quan đêm ngoạn mục của vòng xoay Ferris được thắp sáng và sông.",
+      "address": "Quận Hà Bắc",
       "coordinates": {
         "lat": 39.3622,
         "lng": 117.1822
       },
       "openingHours": "09:30-22:00",
       "ticketPrice": "70¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1 giờ",
       "highlights": [
-        "Night photography",
-        "Illuminated bridge",
-        "River views",
-        "Romantic atmosphere"
+        "Nhiếp ảnh ban đêm",
+        "Cầu chiếu sáng",
+        "Quang cảnh sông",
+        "Không khí lãng mạn"
       ],
-      "tips": "Best after dark. Bring tripod for photos. Combine with evening river cruise.",
+      "tips": "Tốt nhất sau khi trời tối. Mang theo chân máy để chụp ảnh. Kết hợp với du thuyền trên sông buổi tối.",
       "image": "/img/ext/b29f136b0869.webp",
       "phone": "+86 022  4967 8480"
     },
     {
       "id": "tianjin-hometown",
       "name": "杨柳青年画馆",
-      "nameEn": "Yangliuqing New Year Painting Hall",
+      "nameEn": "Phòng Tranh Tranh Năm Mới Dương Lưu Khánh",
       "category": "cultural",
-      "description": "Exhibition hall for traditional Chinese New Year paintings.",
-      "address": "Xiqing District",
+      "description": "Phòng triển lãm tranh truyền thống năm mới Trung Quốc.",
+      "address": "Quận Tây Thanh",
       "coordinates": {
         "lat": 39.0522,
         "lng": 117.3022
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "20¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "New Year paintings",
-        "Traditional art",
-        "Woodblock printing",
-        "Cultural workshops"
+        "Tranh Tết",
+        "Nghệ thuật truyền thống",
+        "In khắc gỗ",
+        "Các xưởng văn hóa"
       ],
-      "tips": "Buy authentic paintings as souvenirs. Watch the creation process.",
+      "tips": "Mua tranh chính hãng làm quà lưu niệm. Xem quá trình sáng tạo.",
       "image": "/img/ext/998eb40307b9.webp",
       "phone": "+86 022  1028 2822"
     },
     {
       "id": "tianjin-zhufeng",
       "name": "天津朱成功纪念馆",
-      "nameEn": "Zhu Cheng Gong Memorial Hall",
+      "nameEn": "Đền tưởng niệm Chu Thành Công",
       "category": "historical",
-      "description": "Memorial hall for Ming Dynasty general Zhu Cheng Gong.",
-      "address": "Jixian County",
+      "description": "Đền tưởng niệm tướng nhà Minh Chu Thành Công.",
+      "address": "Huyện Jixian",
       "coordinates": {
         "lat": 40.0022,
         "lng": 117.5022
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "25¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "Ming history",
-        "Military artifacts",
-        "Traditional architecture",
-        "Cultural exhibits"
+        "Lịch sử nhà Minh",
+        "Di vật quân sự",
+        "Kiến trúc truyền thống",
+        "Triển lãm văn hóa"
       ],
-      "tips": "Learn about local hero. Combine with Huangyaguan Great Wall trip.",
+      "tips": "Tìm hiểu về anh hùng địa phương. Kết hợp với chuyến đi Vạn Lý Trường Thành Hoàng Yá.",
       "image": "/img/ext/cdcbe4576919.webp",
       "phone": "+86 022  3076 1095"
     },
     {
       "id": "italian-quarter",
       "name": "意式风情区",
-      "nameEn": "Italian Style District",
+      "nameEn": "Khu Phong Cách Ý",
       "category": "street",
       "description": "中国唯一的意大利风情建筑群，保存了100余栋意式建筑，梁启超等名人故居在此。",
       "address": "天津市河北区自由道",
@@ -633,7 +633,7 @@
     {
       "id": "five-avenues",
       "name": "五大道",
-      "nameEn": "Five Great Avenues",
+      "nameEn": "Năm Đại Đại Lộ",
       "category": "street",
       "description": "中国保存最完整的洋楼建筑群，有2000余栋欧式建筑，被称为万国建筑博览会。",
       "address": "天津市和平区",
@@ -656,7 +656,7 @@
     {
       "id": "porcelain-house",
       "name": "瓷房子",
-      "nameEn": "Porcelain House",
+      "nameEn": "Ngôi Nhà Sứ",
       "category": "landmark",
       "description": "用4亿多片古瓷片装饰的法式建筑，被誉为全球最疯狂的建筑之一。",
       "address": "天津市和平区赤峰道72号",
@@ -679,7 +679,7 @@
     {
       "id": "tianjin-museum",
       "name": "天津博物馆",
-      "nameEn": "Tianjin Museum",
+      "nameEn": "Bảo tàng Thiên Tân",
       "category": "museum",
       "description": "综合性博物馆，馆藏20万件文物，以甲骨文和瓷器收藏著称。",
       "address": "天津市河西区平江道62号",
@@ -702,7 +702,7 @@
     {
       "id": "hahyuan",
       "name": "天津海昌极地海洋世界",
-      "nameEn": "Tianjin Haichang Polar Ocean World",
+      "nameEn": "Thế giới Đại dương Cực Tianjin",
       "category": "museum",
       "description": "华北地区最大的极地海洋馆，有白鲸、海豚、企鹅等极地动物。",
       "address": "天津市滨海新区响螺湾商务区",
@@ -725,7 +725,7 @@
     {
       "id": "tianjin-food-street",
       "name": "南市食品街",
-      "nameEn": "Nanshi Food Street",
+      "nameEn": "Đường Ăn Uống Nanshi",
       "category": "street",
       "description": "天津最大的美食集中地，汇集了狗不理包子、耳朵眼炸糕等天津名小吃。",
       "address": "天津市和平区南市",
@@ -748,7 +748,7 @@
     {
       "id": "tianjin-radio",
       "name": "天津广播电视塔",
-      "nameEn": "Tianjin Radio and TV Tower",
+      "nameEn": "Tháp Radio và Truyền hình Thiên Tân",
       "category": "landmark",
       "description": "高415.2米，是天津的地标建筑之一，塔上有旋转餐厅和观光层。",
       "address": "天津市河西区卫津南路1号",
@@ -771,7 +771,7 @@
     {
       "id": "dabeiyuan",
       "name": "大悲禅院",
-      "nameEn": "Dabei Temple",
+      "nameEn": "Chùa Dabei",
       "category": "temple",
       "description": "天津最大的佛教寺院，始建于清初，寺内有释迦牟尼佛真身舍利。",
       "address": "天津市河北区天纬路40号",
@@ -794,7 +794,7 @@
     {
       "id": "binjiang-road",
       "name": "滨江道",
-      "nameEn": "Binjiang Road",
+      "nameEn": "Đường Binjiang",
       "category": "street",
       "description": "天津最繁华的商业街，全长2094米，汇集各大商场和品牌。",
       "address": "天津市和平区滨江道",
@@ -817,7 +817,7 @@
     {
       "id": "tianjin-zoo",
       "name": "天津动物园",
-      "nameEn": "Tianjin Zoo",
+      "nameEn": "Sở thú Thiên Tân",
       "category": "nature",
       "description": "华北地区最大的动物园之一，有300多种动物，大熊猫馆最受欢迎。",
       "address": "天津市南开区水上公园东路",
@@ -840,7 +840,7 @@
     {
       "id": "water-park",
       "name": "水上公园",
-      "nameEn": "Water Park",
+      "nameEn": "Công viên nước",
       "category": "park",
       "description": "天津最大的公园，面积164公顷，以湖泊和园林著称。",
       "address": "天津市南开区水上公园路",
@@ -863,7 +863,7 @@
     {
       "id": "yangliuqing",
       "name": "杨柳青古镇",
-      "nameEn": "Yangliuqing Ancient Town",
+      "nameEn": "Làng Cổ Yangliuqing",
       "category": "street",
       "description": "中国年画之乡，杨柳青年画是中国四大木版年画之一。",
       "address": "天津市西青区杨柳青镇",
@@ -886,7 +886,7 @@
     {
       "id": "shijia-dayuan",
       "name": "石家大院",
-      "nameEn": "Shi Family Courtyard",
+      "nameEn": "Sân Trại Gia Đình Shi",
       "category": "landmark",
       "description": "清末民初建筑，华北第一宅，有156间房屋，展示了天津商贾文化。",
       "address": "天津市西青区杨柳青镇",
@@ -909,7 +909,7 @@
     {
       "id": "tianjin-forest-zoo",
       "name": "天津森林动物园",
-      "nameEn": "Tianjin Forest Zoo",
+      "nameEn": "Sở thú Rừng Thiên Tân",
       "category": "nature",
       "description": "位于滨海新区，以散养方式展示动物，占地5000亩。",
       "address": "天津市滨海新区",
@@ -932,7 +932,7 @@
     {
       "id": "tianjin-grand-theatre",
       "name": "天津大剧院",
-      "nameEn": "Tianjin Grand Theatre",
+      "nameEn": "Nhà hát Lớn Thiên Tân",
       "category": "landmark",
       "description": "天津文化中心核心建筑，设计灵感来自湖中之石，是天津文化新地标。",
       "address": "天津市河西区平江道",
@@ -955,7 +955,7 @@
     {
       "id": "panpan-temple",
       "name": "盘山风景区",
-      "nameEn": "Panshan Scenic Area",
+      "nameEn": "Khu Phong Cảnh Panshan",
       "category": "nature",
       "description": "天津后花园，有京东第一山之称，集自然风光和佛教文化于一体。",
       "address": "天津市蓟州区官庄镇",
@@ -978,7 +978,7 @@
     {
       "id": "bicycle-museum",
       "name": "天津自行车博物馆",
-      "nameEn": "Tianjin Bicycle Museum",
+      "nameEn": "Bảo tàng Xe Đạp Thiên Tân",
       "category": "museum",
       "description": "中国唯一的自行车专题博物馆，展示了自行车200年发展历史。",
       "address": "天津市武清区",
@@ -1001,7 +1001,7 @@
     {
       "id": "jinmen-bridge",
       "name": "金汤桥",
-      "nameEn": "Jintang Bridge",
+      "nameEn": "Cầu Jintang",
       "category": "landmark",
       "description": "天津解放会师地，始建于1906年，是天津现存最早的开启式铁桥。",
       "address": "天津市河北区",
@@ -1023,7 +1023,7 @@
     {
       "id": "wanghailou",
       "name": "望海楼教堂",
-      "nameEn": "Wanghailou Cathedral",
+      "nameEn": "Nhà thờ Chính tòa Wanghailou",
       "category": "landmark",
       "description": "中国近代史上著名的教堂，1869年建成，哥特式建筑风格。",
       "address": "天津市河北区狮子林大街292号",
@@ -1045,7 +1045,7 @@
     {
       "id": "tianjin-planetarium",
       "name": "天津科技馆",
-      "nameEn": "Tianjin Science and Technology Museum",
+      "nameEn": "Bảo tàng Khoa học và Công nghệ Thiên Tân",
       "category": "museum",
       "description": "华北地区最大的科技馆，有400多件互动展品。",
       "address": "天津市河西区隆昌路94号",
@@ -1068,7 +1068,7 @@
     {
       "id": "nankai-university",
       "name": "南开大学",
-      "nameEn": "Nankai University",
+      "nameEn": "Đại học Nankai",
       "category": "landmark",
       "description": "中国著名高等学府，周恩来总理母校，校园环境优美。",
       "address": "天津市南开区卫津路94号",
@@ -1091,7 +1091,7 @@
     {
       "id": "tianjin-university",
       "name": "天津大学",
-      "nameEn": "Tianjin University",
+      "nameEn": "Đại học Thiên Tân",
       "category": "landmark",
       "description": "中国第一所现代大学，始建于1895年，前身为北洋大学。",
       "address": "天津市南开区卫津路92号",
@@ -1114,7 +1114,7 @@
     {
       "id": "dagukou",
       "name": "大沽口炮台",
-      "nameEn": "Dagu Fort",
+      "nameEn": "Thành Dagu",
       "category": "landmark",
       "description": "中国近代史上重要的海防要塞，见证了鸦片战争和八国联军侵华。",
       "address": "天津市滨海新区大沽口",
@@ -1136,9 +1136,9 @@
     {
       "id": "binhai-library",
       "name": "滨海图书馆",
-      "nameEn": "Binhai Library",
+      "nameEn": "Thư viện Binhai",
       "category": "landmark",
-      "description": "由MVRDV设计，内部有34层白色阶梯式书架，被称为最美图书馆。",
+      "description": "Thiết kế bởi MVRDV, nội thất có 34 tầng giá sách trắng theo kiểu thang, được mệnh danh là thư viện đẹp nhất.",
       "address": "天津市滨海新区中心图书馆",
       "coordinates": {
         "lat": 39.0167,
@@ -1159,7 +1159,7 @@
     {
       "id": "tianjin-wetland",
       "name": "天津七里海湿地",
-      "nameEn": "Qilihai Wetland",
+      "nameEn": "Đầm lầy Qilihai",
       "category": "nature",
       "description": "中国最大的古海岸与湿地国家级自然保护区，面积95平方公里。",
       "address": "天津市宁河区",
@@ -1182,7 +1182,7 @@
     {
       "id": "tianjin-teahouse",
       "name": "名流茶馆",
-      "nameEn": "Mingliu Teahouse",
+      "nameEn": "Quán Trà Mingliu",
       "category": "street",
       "description": "天津最有名的相声茶馆，可体验天津传统曲艺文化。",
       "address": "天津市和平区新华路177号",
@@ -1207,57 +1207,57 @@
     {
       "id": "tianjin-1",
       "name": "狗不理包子",
-      "nameEn": "Goubuli Baozi",
-      "type": "local",
-      "cuisine": "Tianjin",
+      "nameEn": "Goubuli Bao Tử",
+      "type": "địa phương",
+      "cuisine": "Ẩm thực Thiên Tân",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Multiple locations including Shandong Road",
+      "address": "Nhiều địa điểm bao gồm cả Đường Shandong",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.2022
       },
       "phone": "+86 22 2735 2535",
       "hours": "06:00-20:00",
-      "description": "Legendary baozi restaurant famous since 1858. Known for thin-skinned, juicy dumplings.",
+      "description": "Nhà hàng bán baozi nổi tiếng từ năm 1858. Nổi tiếng với bánh bao mỏng, nhân nước.",
       "dishHighlights": [
-        "Pork baozi",
-        "Seafood baozi",
-        "Vegetable baozi"
+        "Bánh bao heo",
+        "Bánh bao hải sản",
+        "Bánh bao rau"
       ],
       "tags": [
-        "local",
-        "famous",
-        "baozi",
-        "historic"
+        "địa phương",
+        "nổi tiếng",
+        "bánh bao",
+        "lịch sử"
       ],
       "imageUrl": "/img/ext/0773a0c21fd5.webp"
     },
     {
       "id": "tianjin-2",
       "name": "耳朵眼炸糕",
-      "nameEn": "Erduoyan Fried Cake",
-      "type": "local",
-      "cuisine": "Tianjin Snacks",
+      "nameEn": "Bánh rán đậu đỏ Erduoyan",
+      "type": "địa phương",
+      "cuisine": "Đặc sản Tianjin",
       "avgPrice": 20,
       "rating": 4.6,
-      "address": "2 Nanshi Gate, Hebei District",
+      "address": "2 Cổng Nam Thị, Quận Hà Bắc",
       "coordinates": {
         "lat": 39.1522,
         "lng": 117.1922
       },
       "hours": "08:00-20:00",
-      "description": "Famous for crispy red bean fried cakes, a Tianjin specialty since 1905.",
+      "description": "Nổi tiếng với bánh rán đậu đỏ giòn tan, một đặc sản của Thượng Hải kể từ năm 1905.",
       "dishHighlights": [
-        "Red bean fried cake",
-        "Sweet rice cake",
-        "Osmanthus cake"
+        "Bánh rán đậu đỏ",
+        "Bánh gạo ngọt",
+        "Bánh hoa hoè"
       ],
       "tags": [
-        "local",
-        "famous",
-        "snacks",
-        "dessert"
+        "địa phương",
+        "nổi tiếng",
+        "đồ ăn vặt",
+        "tráng miệng"
       ],
       "imageUrl": "/img/ext/b0db14180b5e.webp",
       "phone": "+86 022  7819 7799"
@@ -1265,8 +1265,8 @@
     {
       "id": "tianjin-3",
       "name": "十八街麻花",
-      "nameEn": "Shibajie Mahua",
-      "type": "local",
+      "nameEn": "Bánh mật Shihajie",
+      "type": "địa phương",
       "cuisine": "Đặc sản Tianjin",
       "avgPrice": 40,
       "rating": 4.7,
@@ -1294,85 +1294,85 @@
     {
       "id": "tianjin-4",
       "name": "津菜典藏",
-      "nameEn": "Jin Cuisine Classic",
-      "type": "fine",
-      "cuisine": "Tianjin",
+      "nameEn": "Ẩm thực kinh điển Thượng Hải",
+      "type": "cao cấp",
+      "cuisine": "Ẩm thực Thiên Tân",
       "avgPrice": 200,
       "rating": 4.6,
-      "address": "68 Nanjing Road, Heping District",
+      "address": "68 Đường Nanking, Quận Hòa Bình",
       "coordinates": {
         "lat": 39.1222,
         "lng": 117.2122
       },
       "phone": "+86 22 2339 8888",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "High-end restaurant serving refined Tianjin cuisine with elegant atmosphere.",
+      "description": "Nhà hàng cao cấp phục vụ ẩm thực Thượng Hải tinh tế với không khí sang trọng.",
       "dishHighlights": [
-        "Braised prawns",
-        "Whole steamed fish",
-        "Tianjin-style squid"
+        "Tôm hấp xào",
+        "Cá hấp toàn bộ",
+        "Mực kiểu Thượng Hải"
       ],
       "tags": [
-        "fine-dining",
-        "tianjin-cuisine",
-        "special-occasion"
+        "nhà hàng cao cấp",
+        "ẩm thực-thượng-hải",
+        "dịp đặc biệt"
       ],
       "imageUrl": "/img/ext/2ad92b97c0ec.webp"
     },
     {
       "id": "tianjin-5",
       "name": "红旗饭庄",
-      "nameEn": "Hongqi Restaurant",
-      "type": "local",
-      "cuisine": "Tianjin",
+      "nameEn": "Nhà hàng Hồng Kỳ",
+      "type": "địa phương",
+      "cuisine": "Ẩm thực Thiên Tân",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "158 Weining Road, Hexi District",
+      "address": "158 Đường Weining, Quận Hà Tây",
       "coordinates": {
         "lat": 39.1022,
         "lng": 117.2222
       },
       "phone": "+86 22 2835 8888",
       "hours": "10:30-21:30",
-      "description": "Historic Tianjin restaurant known for traditional local dishes.",
+      "description": "Nhà hàng lịch sử nổi tiếng với các món ăn truyền thống địa phương.",
       "dishHighlights": [
-        "Eight-delight chicken",
-        "Braised pork belly",
-        "Fried dough twists"
+        "Gà tám món",
+        "Thịt ba chỉ rim",
+        "Bánh quy giòn"
       ],
       "tags": [
-        "local",
-        "tianjin-cuisine",
-        "historic",
-        "traditional"
+        "địa phương",
+        "ẩm thực-thượng-hải",
+        "lịch sử",
+        "truyền thống"
       ],
       "imageUrl": "/img/ext/8bc02f8b0151.webp"
     },
     {
       "id": "tianjin-6",
       "name": "盛锡福",
-      "nameEn": "Sheng Xifu Hat Shop",
-      "type": "local",
-      "cuisine": "Tianjin",
+      "nameEn": "Cửa hàng mũ Thịnh Hựu Phú",
+      "type": "địa phương",
+      "cuisine": "Ẩm thực Thiên Tân",
       "avgPrice": 60,
       "rating": 4.4,
-      "address": "Nanshi Gate, Hebei District",
+      "address": "Cổng Nanshi, Quận Hebei",
       "coordinates": {
         "lat": 39.1522,
         "lng": 117.1922
       },
       "hours": "09:00-18:00",
-      "description": "Traditional restaurant with famous hat-shaped pastries.",
+      "description": "Nhà hàng truyền thống nổi tiếng với bánh ngọt hình mũ.",
       "dishHighlights": [
-        "Hat-shaped pastries",
-        "Traditional Tianjin snacks",
-        "Congee"
+        "Bánh ngọt hình mũ",
+        "Đồ ăn vặt truyền thống Thượng Hải",
+        "Cháo"
       ],
       "tags": [
-        "local",
-        "historic",
-        "snacks",
-        "famous"
+        "địa phương",
+        "lịch sử",
+        "đồ ăn vặt",
+        "nổi tiếng"
       ],
       "imageUrl": "/img/ext/51976567dbfc.webp",
       "phone": "+86 022  4322 6576"
@@ -1380,28 +1380,28 @@
     {
       "id": "tianjin-7",
       "name": "石头门坎",
-      "nameEn": "Shitou Menkan",
-      "type": "local",
-      "cuisine": "Tianjin Vegetarian",
+      "nameEn": "Thạch Đầu Môn",
+      "type": "địa phương",
+      "cuisine": "Thực đơn chay Thượng Hải",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "Near Tianhou Temple, Ancient Culture Street",
+      "address": "Gần đền Thiên Hậu, Phố Văn hóa cổ",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.2022
       },
       "hours": "10:00-20:00",
-      "description": "Famous vegetarian restaurant near the temple, known for meat-substitute dishes.",
+      "description": "Nhà hàng chay nổi tiếng gần đền, nổi tiếng với các món ăn thay thế thịt.",
       "dishHighlights": [
-        "Vegetarian meat",
-        "Buddhist cuisine",
-        "Vegetable rolls"
+        "Thịt chay",
+        "Ẩm thực Phật giáo",
+        "Cuốn rau"
       ],
       "tags": [
-        "local",
-        "vegetarian",
-        "buddhist",
-        "temple-area"
+        "địa phương",
+        "chay",
+        "Phật giáo",
+        "khu-vực-đền"
       ],
       "imageUrl": "/img/ext/4594fef09610.webp",
       "phone": "+86 022  8846 0434"
@@ -1409,85 +1409,85 @@
     {
       "id": "tianjin-8",
       "name": "天津烤鸭店",
-      "nameEn": "Tianjin Roast Duck",
-      "type": "fine",
-      "cuisine": "Peking Duck",
+      "nameEn": "Vịt quay Thượng Hải",
+      "type": "cao cấp",
+      "cuisine": "Vịt quay Bắc Kinh",
       "avgPrice": 180,
       "rating": 4.6,
-      "address": "89 Nanjing Road, Heping District",
+      "address": "89 Đường Nanking, Quận Hòa Bình",
       "coordinates": {
         "lat": 39.1222,
         "lng": 117.2122
       },
       "phone": "+86 22 2339 6666",
       "hours": "10:30-13:30, 17:00-20:30",
-      "description": "Quality Peking duck restaurant with crispy skin and traditional service.",
+      "description": "Nhà hàng vịt quay chất lượng với da giòn và phục vụ truyền thống.",
       "dishHighlights": [
-        "Roast duck",
-        "Pancakes",
-        "Cucumber and scallion"
+        "Vịt quay",
+        "Bánh xèo",
+        "Dưa leo và hành lá"
       ],
       "tags": [
-        "fine-dining",
-        "peking-duck",
-        "traditional"
+        "nhà hàng cao cấp",
+        "vịt quay Bắc Kinh",
+        "truyền thống"
       ],
       "imageUrl": "/img/ext/bea876190f29.webp"
     },
     {
       "id": "tianjin-9",
       "name": "起士林",
-      "nameEn": "Shiqilin",
-      "type": "fine",
-      "cuisine": "Russian/Tianjin Fusion",
+      "nameEn": "Thất Thạch Lâm",
+      "type": "cao cấp",
+      "cuisine": "Kết hợp Nga/Thượng Hải",
       "avgPrice": 150,
       "rating": 4.5,
-      "address": "33 Yunnan Road, Heping District",
+      "address": "33 đường Vân Nam, Quận Heping",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2122
       },
       "phone": "+86 22 2333 1888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Historic restaurant with Russian influence, serving fusion cuisine.",
+      "description": "Nhà hàng lịch sử với ảnh hưởng Nga, phục vụ ẩm thực kết hợp.",
       "dishHighlights": [
-        "Russian-style dishes",
-        "Western pastries",
-        "Tianjin classics"
+        "Món ăn kiểu Nga",
+        "Bánh ngọt phương Tây",
+        "Món đặc trưng của Thượng Hải"
       ],
       "tags": [
-        "fine-dining",
-        "russian",
-        "fusion",
-        "historic"
+        "nhà hàng cao cấp",
+        "Nga",
+        "lai ghép",
+        "lịch sử"
       ],
       "imageUrl": "/img/ext/1f4e8a98b685.webp"
     },
     {
       "id": "tianjin-10",
       "name": "崩豆张",
-      "nameEn": "Bengdou Zhang",
-      "type": "local",
-      "cuisine": "Tianjin Snacks",
+      "nameEn": "Bengdou Trương",
+      "type": "địa phương",
+      "cuisine": "Đặc sản Tianjin",
       "avgPrice": 30,
       "rating": 4.4,
-      "address": "Nanshi Gate area",
+      "address": "Khu vực cổng Nam Thành",
       "coordinates": {
         "lat": 39.1522,
         "lng": 117.1922
       },
       "hours": "09:00-19:00",
-      "description": "Famous for crispy soybeans and nuts, a traditional Tianjin snack.",
+      "description": "Nổi tiếng với đậu nành giòn và hạt, một món ăn vặt truyền thống của Thượng Hải.",
       "dishHighlights": [
-        "Crispy soybeans",
-        "Fried beans",
-        "Mixed nuts"
+        "Đậu nành giòn",
+        "Đậu chiên",
+        "Hỗn hợp hạt (Mixed nuts)"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "famous",
-        "souvenir"
+        "địa phương",
+        "đồ ăn vặt",
+        "nổi tiếng",
+        "quà tặng"
       ],
       "imageUrl": "/img/ext/552745aa80da.png",
       "phone": "+86 022  1555 7897"
@@ -1495,41 +1495,41 @@
     {
       "id": "tianjin-11",
       "name": "老北京涮羊肉",
-      "nameEn": "Beijing-style Lamb Hotpot",
-      "type": "local",
-      "cuisine": "Hotpot",
+      "nameEn": "Lẩu cừu kiểu Bắc Kinh",
+      "type": "địa phương",
+      "cuisine": "Lẩu",
       "avgPrice": 120,
       "rating": 4.6,
-      "address": "68 Changde Road, Heping District",
+      "address": "68 đường Thường Đức, Quận Heping",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2022
       },
       "phone": "+86 22 2781 8888",
       "hours": "11:00-22:00",
-      "description": "Popular lamb hotpot with traditional Mongolian style.",
+      "description": "Lẩu cừu phổ biến với phong cách truyền thống Mông Cổ.",
       "dishHighlights": [
-        "Lamb slices",
-        "Vegetables",
-        "Sesame paste"
+        "Thịt cừu thái lát",
+        "Rau",
+        "Bột hạt lanh"
       ],
       "tags": [
-        "local",
-        "hotpot",
-        "winter",
-        "traditional"
+        "địa phương",
+        "lẩu",
+        "mùa đông",
+        "truyền thống"
       ],
       "imageUrl": "/img/ext/1beaa4ec0924.webp"
     },
     {
       "id": "tianjin-12",
       "name": "宴宾楼",
-      "nameEn": "Yanbin Lou",
-      "type": "fine",
-      "cuisine": "Tianjin",
+      "nameEn": "Yanbin Lâu",
+      "type": "cao cấp",
+      "cuisine": "Ẩm thực Thiên Tân",
       "avgPrice": 250,
       "rating": 4.7,
-      "address": "69 Guiyang Road, Hexi District",
+      "address": "69 đường Quý Dương, Quận Hà Tây",
       "coordinates": {
         "lat": 39.1022,
         "lng": 117.2322
@@ -1543,7 +1543,7 @@
         "Tổ yến"
       ],
       "tags": [
-        "fine-dining",
+        "nhà hàng cao cấp",
         "sang trọng",
         "hoàng gia",
         "dịp đặc biệt"
@@ -1554,7 +1554,7 @@
       "id": "tianjin-13",
       "name": "街边小吃",
       "nameEn": "Quán Ăn Đường Phố",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "Đa dạng",
       "avgPrice": 30,
       "rating": 4.3,
@@ -1583,7 +1583,7 @@
       "id": "tianjin-14",
       "name": "天津海鲜坊",
       "nameEn": "Nhà hàng Hải sản Thiên Tân",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "Hải sản",
       "avgPrice": 200,
       "rating": 4.5,
@@ -1602,37 +1602,37 @@
       ],
       "tags": [
         "địa phương",
-        "seafood",
-        "fresh",
-        "local-catch"
+        "hải sản",
+        "tươi",
+        "hải sản địa phương"
       ],
       "imageUrl": "/img/ext/b6df8acd446d.webp"
     },
     {
       "id": "tianjin-15",
       "name": "百饺圆",
-      "nameEn": "Bai jiao Yuan",
-      "type": "local",
-      "cuisine": "Dumplings",
+      "nameEn": "Bai jiao Nguyên",
+      "type": "địa phương",
+      "cuisine": "Bánh bao",
       "avgPrice": 60,
       "rating": 4.6,
-      "address": "Multiple locations",
+      "address": "Nhiều địa điểm",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2122
       },
       "hours": "10:00-22:00",
-      "description": "Popular for variety of delicious dumplings with unique fillings.",
+      "description": "Nổi tiếng với nhiều loại bánh bao có nhân độc đáo.",
       "dishHighlights": [
-        "Shrimp dumplings",
-        "Pork dumplings",
-        "Vegetable dumplings"
+        "Bánh bao tôm",
+        "Bánh bao thịt heo",
+        "Bánh bao rau"
       ],
       "tags": [
-        "local",
-        "dumplings",
-        "variety",
-        "popular"
+        "địa phương",
+        "bánh bao",
+        "đa dạng",
+        "phổ biến"
       ],
       "imageUrl": "/img/ext/3a727a953eca.webp",
       "phone": "+86 022  5158 2967"
@@ -1640,28 +1640,28 @@
     {
       "id": "tianjin-16",
       "name": "砂锅李",
-      "nameEn": "Sandpot Li",
-      "type": "local",
-      "cuisine": "Tianjin",
+      "nameEn": "Sandpot Lý",
+      "type": "địa phương",
+      "cuisine": "Ẩm thực Thiên Tân",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Nanshi Gate area",
+      "address": "Khu vực cổng Nam Thành",
       "coordinates": {
         "lat": 39.1522,
         "lng": 117.1922
       },
       "hours": "11:00-21:00",
-      "description": "Famous for sandpot cooking and rich broth dishes.",
+      "description": "Nổi tiếng với món nấu chảo đất sét và các món súp giàu đặc biệt.",
       "dishHighlights": [
-        "Sandpot chicken",
-        "Braised meatballs",
-        "Hot and sour soup"
+        "Gà nấu chảo đất sét",
+        "Thịt viên nấu sữa",
+        "Súp chua cay"
       ],
       "tags": [
-        "local",
-        "tianjin-cuisine",
-        "traditional",
-        "soup"
+        "địa phương",
+        "ẩm thực-thượng-hải",
+        "truyền thống",
+        "súp"
       ],
       "imageUrl": "/img/ext/ac60f6389624.webp",
       "phone": "+86 022  3037 4685"
@@ -1669,28 +1669,28 @@
     {
       "id": "tianjin-17",
       "name": "桂园餐厅",
-      "nameEn": "Guiyuan Restaurant",
-      "type": "local",
-      "cuisine": "Tianjin",
+      "nameEn": "Nhà hàng Guiyuan",
+      "type": "địa phương",
+      "cuisine": "Ẩm thực Thiên Tân",
       "avgPrice": 90,
       "rating": 4.5,
-      "address": "42 Guangchuan Road, Heping District",
+      "address": "42 đường Quảng Xuân, Quận Heping",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2022
       },
       "hours": "10:30-21:30",
-      "description": "Local favorite known for home-style Tianjin dishes.",
+      "description": "Địa điểm ưa thích của người địa phương, nổi tiếng với các món ăn gia đình đặc trưng của Thượng Hải.",
       "dishHighlights": [
-        "Braised pork belly",
-        "Fried fish",
-        " Stir-fried vegetables"
+        "Thịt ba chỉ rim",
+        "Cá chiên",
+        "Rau xào"
       ],
       "tags": [
-        "local",
-        "home-style",
-        "tianjin-cuisine",
-        "value"
+        "địa phương",
+        "kiểu gia đình",
+        "ẩm thực-thượng-hải",
+        "giá trị"
       ],
       "imageUrl": "/img/ext/51b76c1605be.webp",
       "phone": "+86 022  2138 4201"
@@ -1698,28 +1698,28 @@
     {
       "id": "tianjin-18",
       "name": "南市食品街",
-      "nameEn": "Nanshi Food Street",
-      "type": "local",
-      "cuisine": "Various",
+      "nameEn": "Đường Ăn Uống Nanshi",
+      "type": "địa phương",
+      "cuisine": "Đa dạng",
       "avgPrice": 50,
       "rating": 4.3,
-      "address": "Nanshi Gate, Hebei District",
+      "address": "Cổng Nanshi, Quận Hebei",
       "coordinates": {
         "lat": 39.1522,
         "lng": 117.1922
       },
       "hours": "09:00-22:00",
-      "description": "Historic food street with multiple restaurants and snack shops.",
+      "description": "Khu ẩm thực lịch sử với nhiều nhà hàng và cửa hàng đồ ăn vặt.",
       "dishHighlights": [
-        "Various dumplings",
-        "Tianjin snacks",
-        "Local dishes"
+        "Nhiều loại bánh bao",
+        "Đồ ăn vặt Tianjin",
+        "Các món ăn địa phương"
       ],
       "tags": [
-        "local",
-        "food-street",
-        "snacks",
-        "variety"
+        "địa phương",
+        "đường ẩm thực",
+        "đồ ăn vặt",
+        "đa dạng"
       ],
       "imageUrl": "/img/ext/d48e7dcd448f.webp",
       "phone": "+86 022  1842 6039"
@@ -1727,115 +1727,115 @@
     {
       "id": "tianjin-19",
       "name": "老天津卫",
-      "nameEn": "Old Tianjin Wei",
-      "type": "local",
-      "cuisine": "Tianjin",
+      "nameEn": "Cổ Tianjin Wei",
+      "type": "địa phương",
+      "cuisine": "Ẩm thực Thiên Tân",
       "avgPrice": 100,
       "rating": 4.6,
-      "address": "Near Ancient Culture Street",
+      "address": "Gần Đường Văn hóa Cổ",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.2022
       },
       "phone": "+86 22 2736 8888",
       "hours": "11:00-22:00",
-      "description": "Restaurant serving traditional Tianjin cuisine with vintage decor.",
+      "description": "Nhà hàng phục vụ ẩm thực truyền thống Tianjin với trang trí cổ điển.",
       "dishHighlights": [
-        "Goubuli baozi",
-        "Fried dough twists",
-        "Tianjin classics"
+        "Bánh bao Goubuli",
+        "Bánh quy giòn",
+        "Món đặc trưng của Thượng Hải"
       ],
       "tags": [
-        "local",
-        "tianjin-cuisine",
-        "traditional",
-        "historic"
+        "địa phương",
+        "ẩm thực-thượng-hải",
+        "truyền thống",
+        "lịch sử"
       ],
       "imageUrl": "/img/ext/cdfceae14ebf.webp"
     },
     {
       "id": "tianjin-20",
       "name": "利顺德大饭店",
-      "nameEn": "Astor Hotel",
-      "type": "fine",
-      "cuisine": "Western/Tianjin Fusion",
+      "nameEn": "Khách sạn Astor",
+      "type": "cao cấp",
+      "cuisine": "Phương Tây/Hỗn hợp Tianjin",
       "avgPrice": 300,
       "rating": 4.7,
-      "address": "33 Tangji Road, Heping District",
+      "address": "33 Đường Tangji, Quận Heping",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2122
       },
       "phone": "+86 22 2333 1888",
       "hours": "06:30-22:00",
-      "description": "Historic luxury hotel restaurant with colonial atmosphere and quality food.",
+      "description": "Nhà hàng khách sạn sang trọng lịch sử với khung cảnh thuộc địa và chất lượng thức ăn cao.",
       "dishHighlights": [
-        "Western breakfast",
-        "Tianjin afternoon tea",
-        "International cuisine"
+        "Bữa sáng phương Tây",
+        "Trà chiều Tianjin",
+        "Ẩm thực quốc tế"
       ],
       "tags": [
-        "fine-dining",
-        "luxury",
-        "historic",
-        "western"
+        "nhà hàng cao cấp",
+        "sang trọng",
+        "lịch sử",
+        "phương-tây"
       ],
       "imageUrl": "/img/ext/552745aa80da.png"
     },
     {
       "id": "tianjin-21",
       "name": "海底捞火锅",
-      "nameEn": "Haidilao Hotpot",
-      "type": "chain",
-      "cuisine": "Hotpot",
+      "nameEn": "Lẩu Haidilao",
+      "type": "chuỗi",
+      "cuisine": "Lẩu",
       "avgPrice": 150,
       "rating": 4.7,
-      "address": "Joy City Mall, 166 Nanjing Road",
+      "address": "Trung tâm thương mại Joy City, 166 Đường Nanjing",
       "coordinates": {
         "lat": 39.1222,
         "lng": 117.2122
       },
       "phone": "+86 22 5871 8888",
-      "hours": "24 hours",
-      "description": "Famous chain hotpot with excellent service and entertainment.",
+      "hours": "24 giờ",
+      "description": "Chuỗi lẩu nổi tiếng với dịch vụ tuyệt vời và giải trí.",
       "dishHighlights": [
-        "Spicy hotpot",
-        "Fresh beef",
-        "Hand-pulled noodles"
+        "Lẩu cay",
+        "Thịt bò tươi",
+        "Mì kéo tay"
       ],
       "tags": [
-        "chain",
-        "hotpot",
-        "service",
-        "entertainment"
+        "chuỗi",
+        "lẩu",
+        "phục vụ",
+        "giải trí"
       ],
       "imageUrl": "/img/ext/3a00829b84b4.webp"
     },
     {
       "id": "tianjin-22",
       "name": "潮汕砂锅粥",
-      "nameEn": "Chaoshan Congee",
-      "type": "local",
-      "cuisine": "Chaoshan",
+      "nameEn": "Cháo Chaoshan",
+      "type": "địa phương",
+      "cuisine": "Ẩm thực Triều Châu",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Weining Road, Hexi District",
+      "address": "Đường Weining, Quận Hexi",
       "coordinates": {
         "lat": 39.1022,
         "lng": 117.2222
       },
       "hours": "17:00-03:00",
-      "description": "Popular for seafood congee and late-night dining.",
+      "description": "Nổi tiếng với cháo hải sản và ăn tối muộn.",
       "dishHighlights": [
-        "Seafood congee",
-        "Steamed ribs",
-        "Chaoshan dishes"
+        "Cháo hải sản",
+        "Xương sườn hấp",
+        "Món ăn Chaoshan"
       ],
       "tags": [
-        "local",
-        "congee",
-        "late-night",
-        "seafood"
+        "địa phương",
+        "cháo",
+        "đêm khuya",
+        "hải sản"
       ],
       "imageUrl": "/img/ext/32c350c99a70.webp",
       "phone": "+86 022  1023 8604"
@@ -1843,28 +1843,28 @@
     {
       "id": "tianjin-23",
       "name": "粥世家",
-      "nameEn": "Congee Family",
-      "type": "local",
-      "cuisine": "Congee",
+      "nameEn": "Nhà hàng Cháo Gia Đình",
+      "type": "địa phương",
+      "cuisine": "Cháo",
       "avgPrice": 50,
       "rating": 4.4,
-      "address": "Multiple locations",
+      "address": "Nhiều địa điểm",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2022
       },
       "hours": "06:00-14:00, 17:00-21:00",
-      "description": "Morning congee shop popular with locals for breakfast.",
+      "description": "Quán cháo sáng phổ biến với người dân địa phương để ăn sáng.",
       "dishHighlights": [
-        "Pork congee",
-        "Egg drop congee",
-        "Fried dough sticks"
+        "Cháo thịt heo",
+        "Cháo trứng",
+        "Bánh quẩy"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "congee",
-        "budget"
+        "địa phương",
+        "bữa sáng",
+        "cháo",
+        "tiết kiệm"
       ],
       "imageUrl": "/img/ext/2bb55ee76f1d.webp",
       "phone": "+86 022  1067 5516"
@@ -1872,28 +1872,28 @@
     {
       "id": "tianjin-24",
       "name": "鲜又多",
-      "nameEn": "Xian You Duo",
-      "type": "local",
-      "cuisine": "Hotpot",
+      "nameEn": "Tiên Hữu Đa",
+      "type": "địa phương",
+      "cuisine": "Lẩu",
       "avgPrice": 100,
       "rating": 4.4,
-      "address": "Hebei District",
+      "address": "Quận Hà Bắc",
       "coordinates": {
         "lat": 39.1422,
         "lng": 117.1922
       },
       "hours": "10:00-23:00",
-      "description": "Local hotpot chain with fresh ingredients and reasonable prices.",
+      "description": "Chuỗi lẩu địa phương với nguyên liệu tươi và giá cả hợp lý.",
       "dishHighlights": [
-        "Lamb hotpot",
-        "Beef slices",
-        "Vegetables"
+        "Lẩu thịt cừu",
+        "Thịt bò thái",
+        "Rau"
       ],
       "tags": [
-        "local",
-        "hotpot",
-        "fresh",
-        "value"
+        "địa phương",
+        "lẩu",
+        "tươi",
+        "giá trị"
       ],
       "imageUrl": "/img/ext/2098f10f69ca.webp",
       "phone": "+86 022  8419 6681"
@@ -1901,28 +1901,28 @@
     {
       "id": "tianjin-25",
       "name": "北塘海鲜",
-      "nameEn": "Beitang Seafood",
-      "type": "local",
-      "cuisine": "Seafood",
+      "nameEn": "Hải sản Beitang",
+      "type": "địa phương",
+      "cuisine": "Hải sản",
       "avgPrice": 200,
       "rating": 4.6,
-      "address": "Beitang, Binhai New Area",
+      "address": "Beitang, Khu vực mới Binhai",
       "coordinates": {
         "lat": 39.0522,
         "lng": 117.7022
       },
       "hours": "10:00-22:00",
-      "description": "Famous for fresh catches from Beitang fishing village.",
+      "description": "Nổi tiếng với những loại hải sản tươi sống từ làng chài Beitang.",
       "dishHighlights": [
-        "Steamed crab",
-        "Salt and pepper shrimp",
-        "Fried fish"
+        "Cua hấp",
+        "Tôm rang muối tiêu",
+        "Cá chiên"
       ],
       "tags": [
-        "local",
-        "seafood",
-        "fresh",
-        "village-style"
+        "địa phương",
+        "hải sản",
+        "tươi",
+        "phong cách làng quê"
       ],
       "imageUrl": "/img/ext/9a4e85e8d9f7.webp",
       "phone": "+86 022  9534 0372"
@@ -1931,7 +1931,7 @@
       "id": "tianjin-26",
       "name": "老天津麻花",
       "nameEn": "老天津麻花 (麻花)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "麻花",
       "avgPrice": 106,
       "rating": 4.3,
@@ -1959,8 +1959,8 @@
     {
       "id": "tianjin-28",
       "name": "传统麻花",
-      "nameEn": "Quẩy Truyền Thống (Quẩy)",
-      "type": "street",
+      "nameEn": "传统麻花 (麻花)",
+      "type": "đường phố",
       "cuisine": "麻花",
       "avgPrice": 31,
       "rating": 4.6,
@@ -1975,12 +1975,12 @@
       "dishHighlights": [
         "狗不理包子",
         "煎饼果子",
-        "Quẩy (Món bánh chiên dòn có hình xoắn)"
+        "麻花"
       ],
       "tags": [
-        "Điểm check-in nổi tiếng",
-        "Đồ ăn vặt",
-        "Quán ăn ven đường"
+        "网红打卡",
+        "小吃",
+        "路边摊"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/e6bd4f3a011b.webp"
@@ -1989,11 +1989,11 @@
       "id": "tianjin-30",
       "name": "老天津麻花",
       "nameEn": "老天津麻花 (麻花)",
-      "type": "cafe",
-      "cuisine": "bánh que (món bánh quy giòn có hình xoắn)",
+      "type": "quán cà phê",
+      "cuisine": "麻花",
       "avgPrice": 63,
       "rating": 4.7,
-      "address": "Số 200, Phố Ẩm Thực, Khu Thương Mại Mới, Thành phố Thiên Tân",
+      "address": "天津市新城区美食街200号",
       "coordinates": {
         "lat": 39.1107,
         "lng": 117.2288
@@ -2018,7 +2018,7 @@
       "id": "tianjin-32",
       "name": "街边耳朵眼炸糕",
       "nameEn": "街边耳朵眼炸糕 (耳朵眼炸糕)",
-      "type": "street",
+      "type": "đường phố",
       "cuisine": "耳朵眼炸糕",
       "avgPrice": 45,
       "rating": 4.1,
@@ -2047,7 +2047,7 @@
       "id": "tianjin-34",
       "name": "老字号耳朵眼炸糕",
       "nameEn": "老字号耳朵眼炸糕 (耳朵眼炸糕)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "耳朵眼炸糕",
       "avgPrice": 43,
       "rating": 4.6,
@@ -2076,7 +2076,7 @@
       "id": "tianjin-36",
       "name": "老街煎饼果子",
       "nameEn": "老街煎饼果子 (煎饼果子)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "煎饼果子",
       "avgPrice": 145,
       "rating": 4.8,
@@ -2105,7 +2105,7 @@
       "id": "tianjin-38",
       "name": "巷子锅巴菜",
       "nameEn": "巷子锅巴菜 (锅巴菜)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "锅巴菜",
       "avgPrice": 101,
       "rating": 4.3,
@@ -2134,7 +2134,7 @@
       "id": "tianjin-40",
       "name": "正宗耳朵眼炸糕",
       "nameEn": "正宗耳朵眼炸糕 (耳朵眼炸糕)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "耳朵眼炸糕",
       "avgPrice": 36,
       "rating": 4.2,
@@ -2163,7 +2163,7 @@
       "id": "tianjin-42",
       "name": "老街煎饼果子",
       "nameEn": "老街煎饼果子 (煎饼果子)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "煎饼果子",
       "avgPrice": 142,
       "rating": 4.1,
@@ -2192,7 +2192,7 @@
       "id": "tianjin-44",
       "name": "阿婆锅巴菜",
       "nameEn": "阿婆锅巴菜 (锅巴菜)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "锅巴菜",
       "avgPrice": 142,
       "rating": 4.9,
@@ -2221,7 +2221,7 @@
       "id": "tianjin-46",
       "name": "传统狗不理包子",
       "nameEn": "传统狗不理包子 (狗不理包子)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "狗不理包子",
       "avgPrice": 114,
       "rating": 4.6,
@@ -2250,7 +2250,7 @@
       "id": "tianjin-48",
       "name": "老街锅巴菜",
       "nameEn": "老街锅巴菜 (锅巴菜)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "锅巴菜",
       "avgPrice": 55,
       "rating": 4,
@@ -2279,7 +2279,7 @@
       "id": "tianjin-50",
       "name": "街边狗不理包子",
       "nameEn": "街边狗不理包子 (狗不理包子)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "狗不理包子",
       "avgPrice": 139,
       "rating": 4,
@@ -2308,7 +2308,7 @@
       "id": "tianjin-52",
       "name": "老天津煎饼果子",
       "nameEn": "老天津煎饼果子 (煎饼果子)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "煎饼果子",
       "avgPrice": 96,
       "rating": 4.1,
@@ -2337,7 +2337,7 @@
       "id": "tianjin-54",
       "name": "阿婆锅巴菜",
       "nameEn": "阿婆锅巴菜 (锅巴菜)",
-      "type": "cafe",
+      "type": "quán cà phê",
       "cuisine": "锅巴菜",
       "avgPrice": 28,
       "rating": 4.6,
@@ -2366,7 +2366,7 @@
       "id": "tianjin-56",
       "name": "巷子耳朵眼炸糕",
       "nameEn": "巷子耳朵眼炸糕 (耳朵眼炸糕)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "耳朵眼炸糕",
       "avgPrice": 138,
       "rating": 4.1,
@@ -2395,7 +2395,7 @@
       "id": "tianjin-58",
       "name": "传统麻花",
       "nameEn": "传统麻花 (麻花)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "麻花",
       "avgPrice": 69,
       "rating": 4.6,
@@ -2424,7 +2424,7 @@
       "id": "tianjin-60",
       "name": "地道煎饼果子",
       "nameEn": "地道煎饼果子 (煎饼果子)",
-      "type": "street",
+      "type": "đường phố",
       "cuisine": "煎饼果子",
       "avgPrice": 52,
       "rating": 4.3,
@@ -2453,7 +2453,7 @@
       "id": "tianjin-62",
       "name": "老天津狗不理包子",
       "nameEn": "老天津狗不理包子 (狗不理包子)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "狗不理包子",
       "avgPrice": 34,
       "rating": 4,
@@ -2482,7 +2482,7 @@
       "id": "tianjin-64",
       "name": "地道狗不理包子",
       "nameEn": "地道狗不理包子 (狗不理包子)",
-      "type": "cafe",
+      "type": "quán cà phê",
       "cuisine": "狗不理包子",
       "avgPrice": 65,
       "rating": 4.1,
@@ -2511,7 +2511,7 @@
       "id": "tianjin-66",
       "name": "老天津锅巴菜",
       "nameEn": "老天津锅巴菜 (锅巴菜)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "锅巴菜",
       "avgPrice": 57,
       "rating": 4.5,
@@ -2540,7 +2540,7 @@
       "id": "tianjin-68",
       "name": "巷子耳朵眼炸糕",
       "nameEn": "巷子耳朵眼炸糕 (耳朵眼炸糕)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "耳朵眼炸糕",
       "avgPrice": 39,
       "rating": 4.9,
@@ -2569,7 +2569,7 @@
       "id": "tianjin-70",
       "name": "巷子煎饼果子",
       "nameEn": "巷子煎饼果子 (煎饼果子)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "煎饼果子",
       "avgPrice": 76,
       "rating": 4.4,
@@ -2598,7 +2598,7 @@
       "id": "tianjin-72",
       "name": "街边麻花",
       "nameEn": "街边麻花 (麻花)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "麻花",
       "avgPrice": 46,
       "rating": 4.9,
@@ -2627,7 +2627,7 @@
       "id": "tianjin-74",
       "name": "传统锅巴菜",
       "nameEn": "传统锅巴菜 (锅巴菜)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "锅巴菜",
       "avgPrice": 124,
       "rating": 4.8,
@@ -3032,98 +3032,98 @@
   "culturalTips": [
     {
       "category": "food",
-      "title": "Tianjin Snacks",
-      "content": "Tianjin is famous for 'three treasures': Goubuli baozi, Erduoyan fried cake, and Shibajie mahua. These are must-try snacks available throughout the city.",
+      "title": "Các món ăn vặt Thiên Tân",
+      "content": "Tianjin nổi tiếng với 'ba đặc sản': bánh bao Goubuli, bánh rán Erduoyan và món Mahua ở Shibajie. Đây là những món ăn vặt bắt buộc phải thử, có sẵn khắp thành phố.",
       "importance": "high"
     },
     {
       "category": "history",
-      "title": "Colonial Heritage",
-      "content": "Tianjin has nine foreign concession areas with European architecture. The Five Great Avenues area showcases Italian, French, British and other colonial buildings from the early 1900s.",
+      "title": "Di sản Thuộc địa",
+      "content": "Tianjin có chín khu thuộc địa nước ngoài với kiến trúc châu Âu. Khu Five Great Avenues thể hiện các tòa nhà thuộc địa Ý, Pháp, Anh và các nước khác từ đầu những năm 1900.",
       "importance": "high"
     },
     {
       "category": "arts",
-      "title": "Traditional Crafts",
-      "content": "Tianjin is known for Yangliuqing New Year paintings, clay figurines, and kites. Visit the crafts shops in Ancient Culture Street for authentic souvenirs.",
+      "title": "Thủ Công Truyền Thống",
+      "content": "Tianjin nổi tiếng với tranh Tết Dương Liễu Thanh, búp bê đất sét và diều. Hãy đến các cửa hàng nghề thủ công ở Phố Văn hóa Cổ để mua quà lưu niệm chính hiệu.",
       "importance": "medium"
     },
     {
       "category": "dialect",
-      "title": "Tianjin Dialect",
-      "content": "Tianjin dialect is known for its humor and directness. Locals are proud of their unique accent which differs significantly from Beijing dialect.",
+      "title": "Phương ngữ Thiên Tân",
+      "content": "Tiếng địa phương Tianjin nổi tiếng với sự hài hước và thẳng thắn. Người dân rất tự hào về giọng nói độc đáo của mình, khác rất nhiều với giọng Bắc Kinh.",
       "importance": "low"
     },
     {
       "category": "cuisine",
-      "title": "Tianjin Cuisine",
-      "content": "Tianjin cuisine is known for its seafood, especially clams and river fish. The city also has famous braised dishes and rich broth soups.",
+      "title": "Ẩm thực Thiên Tân",
+      "content": "Ẩm thực Tianjin nổi tiếng với hải sản, đặc biệt là ngao và cá sông. Thành phố cũng có các món hầm nổi tiếng và súp nước dùng giàu đạm.",
       "importance": "high"
     },
     {
       "category": "architecture",
-      "title": "European Architecture",
-      "content": "Walking through Five Great Avenues feels like being in Europe. The area has over 200 colonial buildings from 10 countries, now mostly housing cafes and boutiques.",
+      "title": "Kiến trúc châu Âu",
+      "content": "Đi dạo qua Five Great Avenues cảm giác như đang ở châu Âu. Khu vực có hơn 200 tòa nhà thuộc địa của 10 nước, hiện nay chủ yếu là các quán cà phê và cửa hàng thời trang.",
       "importance": "medium"
     },
     {
       "category": "water",
-      "title": "Haihe River Culture",
-      "content": "The Haihe River is central to Tianjin's identity, with historic bridges and riverside walks. Evening cruises offer beautiful views of the city skyline.",
+      "title": "Văn hóa sông Hải Hà",
+      "content": "Con sông Haihe là trung tâm của bản sắc Tianjin, với các cây cầu lịch sử và đường dạo ven sông. Chuyến vượt sông buổi tối mang đến những góc nhìn đẹp về đường chân trời thành phố.",
       "importance": "medium"
     },
     {
       "category": "opera",
-      "title": "Tianjin Opera",
-      "content": "Tianjin is known for its traditional Peking opera performances. The Tianjin Drama票价 is worth visiting for authentic shows.",
+      "title": "Nghệ thuật Kịch cải lương Thiên Tân",
+      "content": "Tianjin nổi tiếng với các buổi biểu diễn nghệ thuật cổ truyền Bắc Kinh. Đại nhạc trường Tianjin là địa điểm đáng đến để xem các buổi biểu diễn chính hiệu.",
       "importance": "medium"
     },
     {
       "category": "food",
-      "title": "Mahua Culture",
-      "content": "Tianjin mahua (fried dough twists) is a famous snack with crispy texture. It's often bought as a souvenir to take home.",
+      "title": "Văn hóa Mahua",
+      "content": "Món Mahua (bánh rán) Tianjin là một món ăn vặt nổi tiếng với độ giòn. Nó thường được mua làm quà lưu niệm mang về nhà.",
       "importance": "medium"
     },
     {
       "category": "history",
-      "title": "Revolutionary History",
-      "content": "Tianjin played a role in modern Chinese history, with various revolutionary activities. The Memorial Hall offers insights into this period.",
+      "title": "Lịch sử Cách mạng",
+      "content": "Tianjin đã đóng một vai trò quan trọng trong lịch sử Trung Quốc hiện đại, với nhiều hoạt động cách mạng. Trung tâm Lưu niệm cung cấp cái nhìn sâu sắc về thời kỳ này.",
       "importance": "medium"
     },
     {
       "category": "location",
-      "title": "Proximity to Beijing",
-      "content": "Tianjin is only 30 minutes from Beijing by high-speed train, making it an easy day trip or weekend destination from the capital.",
+      "title": "Vị trí gần Bắc Kinh",
+      "content": "Tianjin chỉ mất 30 phút từ Bắc Kinh bằng tàu cao tốc, là một chuyến đi ngày hoặc đi nghỉ cuối tuần dễ dàng từ thủ đô.",
       "importance": "high"
     },
     {
       "category": "port",
-      "title": "Port City Heritage",
-      "content": "As a major port, Tianjin has international influences in its food and culture. The port area offers views of modern shipping operations.",
+      "title": "Di sản Thành phố Cảng",
+      "content": "Là một cảng lớn, Thượng Hải mang đậm ảnh hưởng quốc tế trong ẩm thực và văn hóa. Khu cảng cung cấp những góc nhìn về hoạt động vận tải hiện đại.",
       "importance": "medium"
     },
     {
       "category": "folk",
-      "title": "Folk Performances",
-      "content": "Traditional folk performances including acrobatics and Chinese opera can be seen at various venues. Tianjin is famous for its folk arts.",
+      "title": "Biểu diễn dân gian",
+      "content": "Các buổi biểu diễn dân gian truyền thống bao gồm xiếc và hát tuồng Trung Quốc có thể được xem tại nhiều địa điểm. Thượng Hải nổi tiếng với nghệ thuật dân gian của mình.",
       "importance": "medium"
     },
     {
       "category": "shopping",
-      "title": "Traditional Shopping",
-      "content": "Nanshi Gate and Ancient Culture Street offer traditional Chinese goods, crafts, and local snacks. Bargaining is expected at markets.",
+      "title": "Mua sắm truyền thống",
+      "content": "Cổng Nam Thị và Phố Văn Hóa Cổ cung cấp hàng hóa, thủ công mỹ nghệ và đồ ăn vặt địa phương truyền thống. Việc mặc cả là điều được mong đợi tại các chợ.",
       "importance": "medium"
     },
     {
       "category": "transport",
-      "title": "Getting Around",
-      "content": "Tianjin has a modern metro system connecting major attractions. The city is walkable in central areas with Haihe River providing a scenic walking route.",
+      "title": "Di chuyển",
+      "content": "Thượng Hải có hệ thống tàu điện ngầm hiện đại kết nối các điểm tham quan chính. Thành phố có thể đi bộ ở các khu vực trung tâm với sông Hải Hà cung cấp tuyến đường đi bộ mang phong cảnh.",
       "importance": "medium"
     },
     {
       "category": "cuisine",
-      "title": "Bai jiao Yuan",
-      "content": "Tianjin is famous for dumplings - over 100 varieties. The city takes dumpling making to an art form with unique shapes and fillings.",
+      "title": "Bai Jiao Yuan",
+      "content": "Thượng Hải nổi tiếng với bánh bao nhân thịt - hơn 100 loại. Thành phố đã biến việc làm bánh bao thành một nghệ thuật với những hình dạng và nhân độc đáo.",
       "importance": "medium"
     }
   ],
@@ -3131,98 +3131,98 @@
     {
       "type": "ambulance",
       "name": "天津急救中心",
-      "nameEn": "Tianjin Emergency Center",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "120",
-      "notes": "Major hospitals have English interpretation"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "police",
       "name": "天津市公安局",
-      "nameEn": "Tianjin Public Security Bureau",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "110",
-      "notes": "Tourist police at major attractions"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "hospital",
       "name": "天津医科大学总医院",
-      "nameEn": "Tianjin Medical University General Hospital",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 22 6036 2222",
-      "address": "154 Anshan Road, Heping District",
+      "address": "Quảng Châu",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2022
       },
-      "notes": "English-speaking staff available"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "hospital",
       "name": "天津市第一中心医院",
-      "nameEn": "Tianjin First Central Hospital",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 22 2362 6600",
-      "address": "24 Fukang Road, Nankai District",
+      "address": "Quảng Châu",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.1922
       },
-      "notes": "Another major hospital with English staff"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "tourist-police",
       "name": "天津旅游警察",
-      "nameEn": "Tianjin Tourist Police",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 22 2303 1710",
-      "notes": "English-speaking tourist police"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "fire",
       "name": "天津消防",
-      "nameEn": "Tianjin Fire Department",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "119",
-      "notes": "Fire and rescue services"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "embassy",
       "name": "美国驻天津总领事馆",
-      "nameEn": "US Consulate General Tianjin",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 22 2318 8888",
-      "address": "No. 46 Nanjing Road, Heping District",
+      "address": "Quảng Châu",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2122
       },
-      "notes": "Located in Tianjin's main tourist area"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "embassy",
       "name": "英国驻天津总领事馆",
-      "nameEn": "UK Consulate General Tianjin",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 22 2318 9000",
-      "address": "Silver Tower, 56 Nanjing Road",
-      "notes": "For UK citizens in Tianjin region"
+      "address": "Quảng Châu",
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "embassy",
       "name": "法国驻天津总领事馆",
-      "nameEn": "France Consulate General Tianjin",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 22 2312 3000",
-      "address": "5th Floor, Friendship Pavilion",
-      "notes": "For French citizens in Tianjin region"
+      "address": "Quảng Châu",
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "embassy",
       "name": "日本驻天津总领事馆",
-      "nameEn": "Japan Consulate General Tianjin",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 22 2313 0015",
-      "address": "Jiangmen Road, Heping District",
-      "notes": "For Japanese citizens in Tianjin region"
+      "address": "Quảng Châu",
+      "notes": "Dành cho công dân Singapore"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese, Tianjin dialect",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Tap water safe after boiling; bottled water recommended"
+    "language": "Tiếng Trung (Quan thoại)",
+    "currency": "Nhân dân tệ (CNY/RMB)",
+    "visa": "Hầu hết các quốc tịch đều cần thị thực. Thị thực quá cảnh 72 giờ có sẵn tại sân bay cho các quốc tịch đủ điều kiện.",
+    "timeZone": "UTC+8 (Giờ chuẩn Trung Quốc)",
+    "electricity": "220V/50Hz, phích cắm loại A/I",
+    "water": "Nước máy uống được nhưng nên dùng nước đóng chai"
   }
 }

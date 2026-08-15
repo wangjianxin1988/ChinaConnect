@@ -3,28 +3,28 @@
   "name": "烟台",
   "nameEn": "Yantai",
   "country": "China",
-  "population": "7.1 million",
+  "population": "710만 명",
   "coordinates": {
     "lat": 37.5365,
     "lng": 121.3914
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Yantai is a beautiful coastal city in Shandong Province, known for its wine production, fresh seafood, and stunning seaside scenery. Features the famous Penglai Pavilion, scenic coastal road, and as the birthplace of China's modern macaroni industry. A charming blend of colonial architecture and traditional Chinese culture.",
+  "description": "연태는 산동성에 위치한 아름다운 해안 도시로, 와인 생산, 신선한 해산물, 그리고 훌륭한 해안 경관으로 유명합니다. 유명한 펭라이 누각, 경치 좋은 해안 도로, 그리고 중국 현대 맥aroni 산업의 발상지를 특징으로 합니다. 식민지 건축과 전통 중국 문화의 매력적인 조화를 보여줍니다.",
   "coverImage": "/img/ext/7ded2fed59fe.webp",
   "highlights": [
-    "Penglai Pavilion - legendary birthplace of immortals",
-    "Coastal Tourism Zone - beautiful seaside scenery",
-    "Zhengri Xinma - historic shopping street",
-    "Yantai Mountain - panoramic coastal views",
-    "Wine culture - Chinese wine capital"
+    "蓬莱阁 - 선인들의 전설적 탄생지",
+    "해안 관광 구역 - 아름다운 해변 풍경",
+    "정일신마 - 역사적인 쇼핑거리",
+    "옌타이 산 - 파노라마 해안 전경",
+    "와인 문화 - 중국의 와인 수도"
   ],
   "climate": {
-    "type": "Temperate monsoon",
+    "type": "온대몬순기후",
     "bestMonths": [
-      "May",
-      "June",
-      "September",
-      "October"
+      "5월",
+      "6월",
+      "9월",
+      "10월"
     ],
     "avgSummerTemp": "24C (75F)",
     "avgWinterTemp": "1C (34F)",
@@ -34,607 +34,607 @@
     {
       "id": "yantai-1",
       "name": "蓬莱阁",
-      "nameEn": "Penglai Pavilion",
+      "nameEn": "蓬莱阁",
       "category": "cultural",
       "image": "/img/ext/4058ea074bbd.webp",
-      "description": "Legendary Taoist shrine said to be the dwelling place of the Eight Immortals. UNESCO World Heritage site with ancient architecture and sea views.",
-      "address": "Penglai District, Yantai",
+      "description": "전설적인 도교 사찰로 8神仙이 거주的地方으로 전해집니다. 고대 건축과 해상을 갖춘 유네스코 세계문화유산입니다.",
+      "address": "蓬莱구, 옌타이",
       "coordinates": {
         "lat": 37.8101,
         "lng": 120.7557
       },
-      "openingHours": "06:30-18:30 (summer), 07:00-17:30 (winter)",
+      "openingHours": "하계 06:30-18:30, 동계 07:00-17:30",
       "ticketPrice": "100¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4시간",
       "highlights": [
-        "Sea of immortals",
-        "Ancient architecture",
-        "Coastal views",
-        "Eight Immortals hall"
+        "선인들.",
+        "고대 건축",
+        "해안 전경",
+        "팔선인 홀"
       ],
-      "tips": "Arrive early to avoid crowds. Combine with nearby sam beach. The legend of Eight Immortals crossing the sea.",
+      "tips": "일찍 도착하여 군대를 피하세요. 인근의 삼 비치와 연계游览하세요. 팔선인해전설.",
       "phone": "+86 053 5 2557 0977"
     },
     {
       "id": "yantai-2",
       "name": "烟台山",
-      "nameEn": "Yantai Mountain",
+      "nameEn": "옌타이 산",
       "category": "natural",
       "image": "/img/ext/d295aa18afc0.webp",
-      "description": "Historic hilltop park with colonial architecture, lighthouse, and panoramic views of Yantai Bay.",
-      "address": "Yantai Mountain, Zhifu District",
+      "description": "식민지 건축물, 등대, 옌타이 만의 전경이 있는 역사적인 언덕 공원.",
+      "address": "옌타이 산,芝罘区",
       "coordinates": {
         "lat": 37.5456,
         "lng": 121.4014
       },
       "openingHours": "06:00-18:00",
-      "ticketPrice": "Free (some attractions 30¥)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "무료 (일부 명소 30¥)",
+      "recommendedVisitTime": "2-3시간",
       "highlights": [
-        "Lighthouse",
-        "Colonial buildings",
-        "Bay views",
-        "Historic churches"
+        "등대",
+        "식민지 건물",
+        "만的全景",
+        "역사적인 교회당"
       ],
-      "tips": "Best at sunset for photos. The lighthouse is iconic. Explore colonial history.",
+      "tips": "사진 촬영을 위한 석시가最优. 등대가 아이코닉합니다. 식민지 역사를 탐방하세요.",
       "phone": "+86 053 5 5865 8094"
     },
     {
       "id": "yantai-3",
       "name": "金沙滩",
-      "nameEn": "Golden Sand Beach",
+      "nameEn": "황금사장",
       "category": "natural",
       "image": "/img/ext/8f4f5ad2f266.webp",
-      "description": "10km pristine beach with golden sand, clear water, and modern coastal developments.",
-      "address": "Coastal Development Zone",
+      "description": "금빛 모래, 맑은 물, 현대적인 해안 개발이 있는 10km의 고운 해변.",
+      "address": "연안 개발 구역",
       "coordinates": {
         "lat": 37.4665,
         "lng": 121.4414
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-4 hours",
+      "openingHours": "24시간 개방",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "2-4시간",
       "highlights": [
-        "Clean beach",
-        "Swimming",
-        "Water sports",
-        "Sunset views"
+        "깨끗한 해변",
+        "수영",
+        "워터 스포츠",
+        "日落景观"
       ],
-      "tips": "Best in summer for swimming. Arrive early for parking. Water sports available.",
+      "tips": "수영에는 여름이最优입니다. 일찍 도착하여 주차를 하세요. 워터 스포츠가 가능합니다.",
       "phone": "+86 053 5 4314 6082"
     },
     {
       "id": "yantai-4",
       "name": "张裕酒文化博物馆",
-      "nameEn": "Changyu Wine Culture Museum",
+      "nameEn": "창유 와인 문화 박물관",
       "category": "cultural",
       "image": "/img/ext/4a3c2153b2a0.webp",
-      "description": "World's largest wine museum showcasing China's premier wine producer with underground wine cellars.",
-      "address": "56 Daman Road, Zhifu District",
+      "description": "중국 최고 와이너리를 전시하고 지하 와인 셀러가 있는 세계 최대 와이너리 박물관.",
+      "address": "56大明路,芝罘区",
       "coordinates": {
         "lat": 37.5365,
         "lng": 121.3914
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "80¥ (includes wine tasting)",
-      "recommendedVisitTime": "2 hours",
+      "ticketPrice": "80¥ (와인 테이스팅 포함)",
+      "recommendedVisitTime": "2시간",
       "highlights": [
-        "Wine cellars",
-        "Wine tasting",
-        "Production process",
-        "Wine history"
+        "와인 셀러",
+        "와인 시음",
+        "생산 공정",
+        "와인 역사"
       ],
-      "tips": "Must-book for wine lovers. Tasting includes premium wines. Underground cellars are impressive.",
+      "tips": "와인 애호가를 위한 필수 예약. 테이스팅에는 프리미엄 와인이 포함됩니다. 지하 셀러가 인상적입니다.",
       "phone": "+86 053 5 8364 7174"
     },
     {
       "id": "yantai-5",
       "name": "月亮湾",
-      "nameEn": "Moon Bay",
+      "nameEn": "문 베이",
       "category": "natural",
       "image": "/img/ext/293f2f3ffd6b.webp",
-      "description": "Romantic bay with crescent shape, famous love lock displays, and romantic sunset views.",
-      "address": "Yantai Coastal Zone",
+      "description": "낭만적인 초승달 모양의 만, 유명한 자물쇠 사랑 표시와 낭만적인 일몰 전망",
+      "address": "옌타이 해안 지대",
       "coordinates": {
         "lat": 37.5265,
         "lng": 121.4014
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24시간 개방",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1-2시간",
       "highlights": [
-        "Love locks",
-        "Romantic atmosphere",
-        "Sunset views",
-        "Sea views"
+        "사랑 자물쇠",
+        "낭만적 분위기",
+        "日落景观",
+        "바다 전경"
       ],
-      "tips": "Best at sunset. Couples place love locks. Great for photos. The Moon老人 rock is iconic.",
+      "tips": "일몰에 가장 좋습니다. 연인들이 자물쇠를 놓습니다. 사진 촬영에 좋습니다. 달、岩은 상징적입니다",
       "phone": "+86 053 5 9039 3456"
     },
     {
       "id": "yantai-6",
       "name": "蓬莱水城",
-      "nameEn": "Penglai Water City",
+      "nameEn": "팽라이 워터 시티",
       "category": "historical",
       "image": "/img/ext/94db9ac76890.webp",
-      "description": "Historic naval fortress and port from Ming Dynasty, used to defend against wokou pirates.",
-      "address": "Penglai District",
+      "description": "명대의 역사적인 해군 요새와 항구로, 왜구 해적 방어를 위해 사용되었습니다",
+      "address": "팽라이 구역",
       "coordinates": {
         "lat": 37.8101,
         "lng": 120.7557
       },
       "openingHours": "08:00-17:30",
-      "ticketPrice": "80¥ (combined with Penglai Pavilion)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "80¥ (팽라이阁와 통합)",
+      "recommendedVisitTime": "2-3시간",
       "highlights": [
-        "Ming Dynasty fortress",
-        "Naval history",
-        "Ancient warships",
-        "Sea access"
+        "명대 요새",
+        "해군 역사",
+        "고대 전함",
+        "해상 접근"
       ],
-      "tips": "Combine with Penglai Pavilion. The water gates are impressive engineering.",
+      "tips": "팽라이阁와 결합游览하는 것을 추천합니다. 수문은 인상적인 공학입니다",
       "phone": "+86 053 5 8747 3156"
     },
     {
       "id": "yantai-7",
       "name": "养马岛",
-      "nameEn": "Yangma Island",
+      "nameEn": "양마 섬",
       "category": "natural",
       "image": "/img/ext/21825dee3b42.webp",
-      "description": "Beautiful island known for horse-racing history, now a scenic tourist destination with beaches.",
-      "address": "牟平区 Yantai",
+      "description": "승마 역사으로 유명한 아름다운 섬으로, 해변과 함께 관광 명소가 되었습니다",
+      "address": "옌타이 무평구",
       "coordinates": {
         "lat": 37.3965,
         "lng": 121.6014
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free (some attractions charge)",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "24시간 개방",
+      "ticketPrice": "무료 (일부 관광명소 별도 요금)",
+      "recommendedVisitTime": "3-4시간",
       "highlights": [
-        "Island scenery",
-        "Beaches",
-        "Horse racing history",
-        "Seafood"
+        "섬 경치",
+        "해변",
+        "경마 역사",
+        "해산물"
       ],
-      "tips": "Drive or bike around island. The coastal road is scenic. Beach time in summer.",
+      "tips": "섬을 차나 자전이로 둘러보세요. 해안 도로가 아름답습니다. 여름에 해변을 즐기세요",
       "phone": "+86 053 5 4414 9450"
     },
     {
       "id": "yantai-8",
       "name": "朝阳街",
-      "nameEn": "Chaoyang Street",
+      "nameEn": "조양 거리",
       "category": "cultural",
       "image": "/img/ext/22ff5fef6333.webp",
-      "description": "Historic street with well-preserved colonial architecture, shops, and cafes.",
-      "address": "Near Yantai Mountain, Zhifu District",
+      "description": "보존이 잘 된 식민지 건축물, 상점, 카페가 있는 역사적인 거리",
+      "address": "옌타이 산근처, 지푸 구역",
       "coordinates": {
         "lat": 37.5456,
         "lng": 121.4014
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24시간 개방",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1-2시간",
       "highlights": [
-        "Colonial buildings",
-        "Shops",
-        "Cafes",
-        "Nightlife"
+        "식민지 건물",
+        "상점",
+        "카페",
+        "나이트라이프"
       ],
-      "tips": "Best evening with lighting. Great for photos. Colonial atmosphere.",
+      "tips": "조명이 가장 예쁜 저녁. 사진 촬영에 탁월. 식민지 시대 분위기.",
       "phone": "+86 053 5 1702 2077"
     },
     {
       "id": "yantai-9",
       "name": "牟氏庄园",
-      "nameEn": "Mou's Manor",
+      "nameEn": "모우스 맨션",
       "category": "historical",
       "image": "/img/ext/26f73d6f9696.webp",
-      "description": "Largest surviving private manor in China, showcasing wealthy landlord culture from Qing Dynasty.",
-      "address": "栖霞市 Qixia",
+      "description": "중국에서 현존하는 가장 큰 사립 저택으로, 청대의 부유한 지주 문화를 보여줍니다.",
+      "address": "치시시 Qixia",
       "coordinates": {
         "lat": 37.3065,
         "lng": 120.8514
       },
       "openingHours": "08:00-17:30",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3시간",
       "highlights": [
-        "Qing architecture",
-        "Private estate",
-        "Cultural heritage",
-        "Gardens"
+        "청대 건축",
+        "사택",
+        "문화 유산",
+        "정원"
       ],
-      "tips": "Day trip from Yantai. One of China's largest manor. Well preserved.",
+      "tips": "옌타이에서 당일 여행. 중국 최대 저택 중 하나. 잘 보존됨.",
       "phone": "+86 053 5 0513 5456"
     },
     {
       "id": "yantai-10",
       "name": "金石湾",
-      "nameEn": "Jinshi Bay",
+      "nameEn": "진시海湾",
       "category": "natural",
       "image": "/img/ext/ccaaee6418e9.webp",
-      "description": "Pristine bay with unique rock formations, clear water, and peaceful atmosphere.",
-      "address": "Coastal Zone",
+      "description": "独特한 암석 지형, 맑은 물과 평화로운 분위기를 갖춘 Untouched 만.",
+      "address": "해안 지구",
       "coordinates": {
         "lat": 37.4765,
         "lng": 121.5114
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24시간 개방",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "2-3시간",
       "highlights": [
-        "Rock formations",
-        "Clear water",
-        "Quiet beach",
-        "Photography"
+        "암석 형성",
+        "투명한 물",
+        "조용한 해변",
+        "사진 촬영"
       ],
-      "tips": "Less crowded than Golden Sand Beach. Great for photography. Snorkeling possible.",
+      "tips": "황금사장보다 사람이 적음. 사진 촬영에 탁월. 스노클링 가능.",
       "phone": "+86 053 5 5077 7430"
     },
     {
       "id": "yantai-11",
       "name": "烟台博物馆",
-      "nameEn": "Yantai Museum",
+      "nameEn": "옌타이 박물관",
       "category": "cultural",
       "image": "/img/ext/d5b8e85aa708.webp",
-      "description": "Regional museum with collections showcasing Yantai's maritime history and local culture.",
-      "address": "2 Yantai Mountain Road, Zhifu District",
+      "description": "옌타이의 해상 역사와 지역 문화를 보여주는 지역 박물관.",
+      "address": "2 연대산로 지부구",
       "coordinates": {
         "lat": 37.5456,
         "lng": 121.4014
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "09:00-17:00 (월요일 휴관)",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1-2시간",
       "highlights": [
-        "Maritime history",
-        "Local culture",
-        "Archaeological finds",
-        "Interactive exhibits"
+        "해상 역사",
+        "현지 문화",
+        "고고학적 발견",
+        "인터랙티브 전시"
       ],
-      "tips": "Good for rainy days. Combine with Yantai Mountain visit.",
+      "tips": "비 오는 날 적합. 옌타이 산 방문과 함께.",
       "phone": "+86 053 5 2984 0288"
     },
     {
       "id": "yantai-12",
       "name": "北极星钟表博物馆",
-      "nameEn": "Polaris Clock Museum",
+      "nameEn": "폴라리스 시계 박물관",
       "category": "cultural",
       "image": "/img/ext/ce4b6dce08b7.webp",
-      "description": "Unique museum dedicated to clock-making history, showcasing China's watch industry heritage.",
-      "address": "Zhifu District",
+      "description": "시계 제조 역사에 헌신된 독특한 박물관으로, 중국의 시계 산업 유산을 전시합니다.",
+      "address": "치푸 구",
       "coordinates": {
         "lat": 37.5465,
         "lng": 121.3914
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "30¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1시간",
       "highlights": [
-        "Clock history",
-        "Polaris brand",
-        "Antique timepieces",
-        "Interactive"
+        "시계 역사",
+        "폴라리스 브랜드",
+        "고대 시계",
+        "상호작용"
       ],
-      "tips": "Interesting for clock enthusiasts. Near shopping area.",
+      "tips": "시계 애호가에게 흥미로움. 쇼핑 지역 근처.",
       "phone": "+86 053 5 1767 8555"
     },
     {
       "id": "yantai-13",
       "name": "农博园",
-      "nameEn": "Agricultural Expo Garden",
+      "nameEn": "농업世博원",
       "category": "natural",
       "image": "/img/ext/50b79af359cf.webp",
-      "description": "Large botanical garden with diverse plant collections and agricultural exhibits.",
-      "address": "Fushan District",
+      "description": "다양한 식물 컬렉션과 농업 전시가 있는 대규모 식물원입니다.",
+      "address": "푸산 구",
       "coordinates": {
         "lat": 37.4665,
         "lng": 121.2614
       },
       "openingHours": "07:30-17:30",
       "ticketPrice": "30¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3시간",
       "highlights": [
-        "Plants",
-        "Flowers",
-        "Agricultural exhibits",
-        "Family friendly"
+        "식물",
+        "꽃",
+        "농업 전시",
+        "가족 친화적"
       ],
-      "tips": "Great for families. Spring and summer best for flowers.",
+      "tips": "가족 여행에 적합합니다. 봄과 여름이 꽃을 보기 가장 좋은 시기입니다.",
       "phone": "+86 053 5 9779 3683"
     },
     {
       "id": "yantai-14",
       "name": "戚继光纪念馆",
-      "nameEn": "Qi Jiguang Memorial Hall",
+      "nameEn": "기시광 기념관",
       "category": "historical",
       "image": "/img/ext/4c354a4ced03.webp",
-      "description": "Memorial to famous Ming Dynasty general who defended China against wokou pirates.",
-      "address": "Penglai District",
+      "description": "명조 시대의 장수이자 왜구로부터 중국을 수호한 기시광을 기리는 시설입니다.",
+      "address": "팽라이 구역",
       "coordinates": {
         "lat": 37.8101,
         "lng": 120.7557
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1시간",
       "highlights": [
-        "Military history",
-        "Qi Jiguang artifacts",
-        "Ming Dynasty",
-        "Cultural heritage"
+        "군사 역사",
+        "기시광 유물",
+        "명조 시대",
+        "문화 유산"
       ],
-      "tips": "Combine with Penglai Pavilion. Important historical figure.",
+      "tips": "펑라이퍼빌과 함께 방문하세요. 중요한 역사적 인물입니다.",
       "phone": "+86 053 5 1852 6663"
     },
     {
       "id": "yantai-15",
       "name": "望夫礁",
-      "nameEn": "Wangfu Reef",
+      "nameEn": "왕부 암초",
       "category": "natural",
       "image": "/img/ext/08c981eb780e.webp",
-      "description": "Rock formation said to be a woman waiting for her husband's return, with romantic legend.",
-      "address": "Muping District",
+      "description": "남편의 귀환을 기다리는 여인이라고 전해지는 암초로, 낭만적인 전설이 있습니다.",
+      "address": "무핑 구",
       "coordinates": {
         "lat": 37.3565,
         "lng": 121.6214
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "openingHours": "24시간 개방",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1시간",
       "highlights": [
-        "Rock formation",
-        "Sea views",
-        "Romantic legend",
-        "Photography"
+        "암석 지형",
+        "바다 전경",
+        "낭만적인 전설",
+        "사진 촬영"
       ],
-      "tips": "Best at sunrise or sunset. The story is touching.",
+      "tips": "일출이나 일몰에 방문하기 가장 좋습니다. 이야기가 감동적입니다.",
       "phone": "+86 053 5 8198 1948"
     },
     {
       "id": "yantai-16",
       "name": "栈桥",
-      "nameEn": "Zhanqiao Pier",
+      "nameEn": "잔차오 부두",
       "category": "historical",
       "image": "/img/ext/a80b514c5868.webp",
-      "description": "Historic pier stretching into the sea, iconic symbol of Yantai with colonial origins.",
-      "address": "Coastal Zone, Zhifu District",
+      "description": "해안으로 뻗어있는 역사적인 부두로, 식민지 시대의 유래를 가진 옌타이의 상징적인 랜드마크입니다.",
+      "address": "해안지구,芝罘구",
       "coordinates": {
         "lat": 37.5365,
         "lng": 121.4114
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "30 min",
+      "openingHours": "24시간 개방",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "30분",
       "highlights": [
-        "Pier views",
-        "Colonial history",
-        "Fishing boats",
-        "Sunset"
+        "부두 전망",
+        "식민지 역사",
+        "어선",
+        "일몰"
       ],
-      "tips": "Best at sunset. Iconic Yantai photo spot.",
+      "tips": "석류에 방문하기 가장 좋은 시간. 옌타이의 상징적인 사진 촬영지입니다.",
       "phone": "+86 532 8288 4548"
     },
     {
       "id": "yantai-17",
       "name": "昆嵛山",
-      "nameEn": "Kunyu Mountain",
+      "nameEn": "Kunyu Mountain (곤유산)",
       "category": "natural",
       "image": "/img/ext/dce7530bd0a2.webp",
-      "description": "Sacred Taoist mountain with pristine forests, ancient temples, and hiking trails.",
-      "address": "文登市 Wendeng",
+      "description": "아름다운 숲, 고대 사찰, 등산로를 가진 신성한 도교 산",
+      "address": "문등시 Wendeng",
       "coordinates": {
         "lat": 37.2065,
         "lng": 121.8514
       },
       "openingHours": "07:00-17:00",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "4-5 hours",
+      "recommendedVisitTime": "4-5시간",
       "highlights": [
-        "Taoist culture",
-        "Hiking",
-        "Ancient temples",
-        "Nature"
+        "도교 문화",
+        "등산",
+        "고대 사찰",
+        "자연"
       ],
-      "tips": "Day trip. Taoist sacred mountain. Best in autumn for foliage.",
+      "tips": "일일 여행. 도교 신성한 산. 단풍이 가장 아름다운 가을에 방문하세요.",
       "phone": "+86 053 5 6771 2146"
     },
     {
       "id": "yantai-18",
       "name": "科技大道",
-      "nameEn": "Technology Avenue",
+      "nameEn": "테크노리지 아베뉴",
       "category": "cultural",
       "image": "/img/ext/35cc7fe4ac2b.webp",
-      "description": "Modern shopping and entertainment district with international brands and restaurants.",
-      "address": "Zhifu District",
+      "description": "국제 브랜드와 레스토랑이 있는 현대적인 쇼핑 및 엔터테인먼트 지구",
+      "address": "치푸 구",
       "coordinates": {
         "lat": 37.5365,
         "lng": 121.4014
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24시간 개방",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "2-3시간",
       "highlights": [
-        "Shopping",
-        "Dining",
-        "Entertainment",
-        "Modern Yantai"
+        "쇼핑",
+        "맛집",
+        "엔터테인먼트",
+        "현대적인 연대"
       ],
-      "tips": "Best evening and night. International brands.",
+      "tips": "저녁과 밤에 방문하기 가장 좋습니다. 국제 브랜드.",
       "phone": "+86 053 5 0445 2332"
     },
     {
       "id": "yantai-19",
       "name": "地质公园",
-      "nameEn": "Geological Park",
+      "nameEn": "지질공원",
       "category": "natural",
       "image": "/img/ext/02b52202fc4d.webp",
-      "description": "Coastal geological park with unique rock formations, sea caves, and fossil sites.",
-      "address": "Coastal Zone",
+      "description": "독특한 암석 형성, 해안 동굴, 화석 지점을 갖춘 해안 지질공원",
+      "address": "해안 지구",
       "coordinates": {
         "lat": 37.4465,
         "lng": 121.5514
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "40¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3시간",
       "highlights": [
-        "Rock formations",
-        "Sea caves",
-        "Fossils",
-        "Geology"
+        "암석 형성",
+        "해식동굴",
+        "화석",
+        "지질학"
       ],
-      "tips": "Great for geology enthusiasts. Guided tours available.",
+      "tips": "지질 애호가에게 좋습니다. 가이드 투어 이용 가능.",
       "phone": "+86 053 5 6957 4843"
     },
     {
       "id": "yantai-20",
       "name": "海洋世界",
-      "nameEn": "Ocean World",
+      "nameEn": "오션 월드",
       "category": "cultural",
       "image": "/img/ext/5c395687619d.webp",
-      "description": "Large aquarium with marine life exhibits, dolphin shows, and penguin habitat.",
-      "address": "Coastal Development Zone",
+      "description": "해양 생물 전시, 돌고래 쇼, 펭귄 서식지가 있는 대형 수족관.",
+      "address": "연안 개발 구역",
       "coordinates": {
         "lat": 37.4565,
         "lng": 121.4414
       },
       "openingHours": "08:30-17:30",
       "ticketPrice": "150¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4시간",
       "highlights": [
-        "Marine animals",
-        "Dolphin shows",
-        "Penguins",
-        "Underwater tunnel"
+        "해양 동물",
+        "돌고래 쇼",
+        "펭귄",
+        "수중 터널"
       ],
-      "tips": "Great for families. Book shows in advance.",
+      "tips": "가족 여행에 좋습니다. 표는 미리 예매하세요.",
       "phone": "+86 053 5 4110 5802"
     },
     {
       "id": "yantai-21",
       "name": "渔人码头",
-      "nameEn": "Fisherman's Wharf",
+      "nameEn": "어부 부두 (Fisherman's Wharf)",
       "category": "cultural",
       "image": "/img/ext/e9dea1822f2d.webp",
-      "description": "Revitalized fishing harbor with shops, restaurants, and maritime attractions.",
-      "address": "Muping District",
+      "description": "상점, 식당, 해상 관광 시설이 완비된 재개발된 어항입니다.",
+      "address": "무핑 구",
       "coordinates": {
         "lat": 37.4765,
         "lng": 121.5814
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24시간 개방",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "2-3시간",
       "highlights": [
-        "Harbor views",
-        "Fresh seafood",
-        "Shopping",
-        "Entertainment"
+        "항구 전망",
+        "신선한 해산물",
+        "쇼핑",
+        "엔터테인먼트"
       ],
-      "tips": "Best for seafood. Buy fresh fish. Evening atmosphere.",
+      "tips": "해산물 여행하기에 최적. 신선한 물고기 구매 가능. 저녁 분위기가 좋습니다.",
       "phone": "+86 053 5 7284 9552"
     },
     {
       "id": "yantai-22",
       "name": "马家沟",
-      "nameEn": "Majiagou",
+      "nameEn": "마자이고 (Majiagou)",
       "category": "natural",
       "image": "/img/ext/54bb8cc2ce86.webp",
-      "description": "Eco-tourism village with hot springs, vineyards, and rural charm.",
-      "address": "Fushan District",
+      "description": "온천, 포도밭, 전원 매력을 갖춘 생태 관광 마을입니다.",
+      "address": "푸산 구",
       "coordinates": {
         "lat": 37.4265,
         "lng": 121.2314
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Varies by activity",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "24시간 개방",
+      "ticketPrice": "활동에 따라 다름",
+      "recommendedVisitTime": "3-4시간",
       "highlights": [
-        "Hot springs",
-        "Vineyards",
-        "Rural experience",
-        "Family activities"
+        "온천",
+        "포도밭",
+        "전원 체험",
+        "가족 활동"
       ],
-      "tips": "Day trip. Combine wine and hot springs.",
+      "tips": "당일 여행. 와인과 온천을 함께 즐기세요.",
       "phone": "+86 053 5 7561 7743"
     },
     {
       "id": "yantai-23",
       "name": "天崮山",
-      "nameEn": "Tiangu Mountain",
+      "nameEn": "톈구 산 (Tiangu Mountain)",
       "category": "natural",
       "image": "/img/ext/64e9a01d39ba.webp",
-      "description": "Scenic mountain with unique peaks, ancient temples, and hiking trails.",
-      "address": "Fushan District",
+      "description": "독특한 봉우리, 고대 사찰, 등산로를 가진風景 좋은 산입니다.",
+      "address": "푸산 구",
       "coordinates": {
         "lat": 37.3565,
         "lng": 121.1014
       },
       "openingHours": "07:00-18:00",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4시간",
       "highlights": [
-        "Mountain peaks",
-        "Hiking",
-        "Ancient temple",
-        "Nature"
+        "산봉우리",
+        "등산",
+        "고대 사찰",
+        "자연"
       ],
-      "tips": "Great hiking. Less crowded than major attractions.",
+      "tips": "등산하기 좋음. 주요 명소보다 사람이 적음.",
       "phone": "+86 053 5 8208 0048"
     },
     {
       "id": "yantai-24",
       "name": "长岛",
-      "nameEn": "Changdao Islands",
+      "nameEn": "창다오群岛 (Changdao Islands)",
       "category": "natural",
       "image": "/img/ext/b60c88c4a69f.webp",
-      "description": "Beautiful archipelago with pristine beaches, fishing villages, and island hopping.",
-      "address": "长岛县 Changdao County",
+      "description": " pristine 해변, 어촌, 섬-hopping을 아름다운 군도입니다.",
+      "address": "장도현 Changdao County",
       "coordinates": {
         "lat": 37.9565,
         "lng": 120.7514
       },
-      "openingHours": "Ferry schedule",
-      "ticketPrice": "Free (ferry 45-100¥)",
-      "recommendedVisitTime": "1-2 days",
+      "openingHours": "페리 운항 시간표",
+      "ticketPrice": "무료 (승선선 45-100¥)",
+      "recommendedVisitTime": "1-2일",
       "highlights": [
-        "Island scenery",
-        "Beaches",
-        "Fishing villages",
-        "Bird watching"
+        "섬 경치",
+        "해변",
+        "어촌",
+        "조류 관찰"
       ],
-      "tips": "Overnight stay recommended. Ferry from Penglai. Authentic island life.",
+      "tips": "숙박 권장.蓬莱행 페리. 현지 섬 생활.",
       "phone": "+86 053 5 8875 1730"
     },
     {
       "id": "yantai-25",
       "name": "葡萄酒庄",
-      "nameEn": "Wine Chateaus",
+      "nameEn": "와인 샤토",
       "category": "cultural",
       "image": "/img/ext/f12319606c06.webp",
-      "description": "Several French-style wineries offering tours, tastings, and beautiful vineyard scenery.",
-      "address": "Penglai and Fushan",
+      "description": "프랑스 스타일의 와이너리 여러 곳에서 투어, 시음 및 아름다운 포도밭 경관을 제공합니다.",
+      "address": "蓬莱와 福산",
       "coordinates": {
         "lat": 37.8065,
         "lng": 120.8014
       },
-      "openingHours": "Varies by winery",
-      "ticketPrice": "Tour + tasting 100-200¥",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "와이너리별 상이",
+      "ticketPrice": "투어 + 시음 100-200¥",
+      "recommendedVisitTime": "3-4시간",
       "highlights": [
-        "Vineyards",
-        "Wine tasting",
-        "French architecture",
-        "Wine production"
+        "포도밭",
+        "와인 시음",
+        "프랑스 건축",
+        "와인 생산"
       ],
-      "tips": "Must-visit for wine lovers. Autumn harvest best. Appointment needed.",
+      "tips": "와인 애호가 필수 방문지. 가을 수확철 최적. 사전 예약 필요.",
       "phone": "+86 053 5 6566 2175"
     },
     {
       "id": "yt-yantaishan",
       "name": "烟台山",
-      "nameEn": "Yantai Mountain",
+      "nameEn": "옌타이 산",
       "category": "nature",
       "description": "烟台的标志，有灯塔和领事馆旧址。",
       "address": "烟台市芝罘区",
@@ -657,7 +657,7 @@
     {
       "id": "yt-no1beach",
       "name": "第一海水浴场",
-      "nameEn": "No.1 Bathing Beach",
+      "nameEn": "제1해수욕장",
       "category": "beach",
       "description": "烟台最著名的海滩。",
       "address": "烟台市芝罘区",
@@ -679,7 +679,7 @@
     {
       "id": "yt-park",
       "name": "烟台公园",
-      "nameEn": "Yantai Park",
+      "nameEn": "烟台공원",
       "category": "park",
       "description": "烟台最大的城市公园。",
       "address": "烟台市芝罘区",
@@ -701,7 +701,7 @@
     {
       "id": "yt-food",
       "name": "烟台美食",
-      "nameEn": "Yantai Food",
+      "nameEn": "음식",
       "category": "street",
       "description": "烟台有新鲜海鲜和苹果。",
       "address": "烟台市",
@@ -723,7 +723,7 @@
     {
       "id": "yt-museum",
       "name": "烟台博物馆",
-      "nameEn": "Yantai Museum",
+      "nameEn": "옌타이 박물관",
       "category": "museum",
       "description": "展示烟台历史的博物馆。",
       "address": "烟台市芝罘区",
@@ -744,7 +744,7 @@
     {
       "id": "yt-kongtong",
       "name": "崆峒岛",
-      "nameEn": "Kongtong Island",
+      "nameEn": "공등도",
       "category": "nature",
       "description": "烟台附近的小岛，有美丽的海滩。",
       "address": "烟台市芝罘区",
@@ -766,7 +766,7 @@
     {
       "id": "yt-nanshan-park",
       "name": "南山公园",
-      "nameEn": "Nanshan Park",
+      "nameEn": "남산공원",
       "category": "park",
       "description": "烟台南部的公园。",
       "address": "烟台市芝罘区",
@@ -788,7 +788,7 @@
     {
       "id": "yt-night",
       "name": "烟台夜景",
-      "nameEn": "Yantai Night View",
+      "nameEn": "야경",
       "category": "landmark",
       "description": "烟台山和海滨的夜景。",
       "address": "烟台市芝罘区",
@@ -809,7 +809,7 @@
     {
       "id": "yt-bridge",
       "name": "烟台跨海大桥",
-      "nameEn": "Yantai Sea-crossing Bridge",
+      "nameEn": "해상대교",
       "category": "landmark",
       "description": "连接烟台和开发区的大桥。",
       "address": "烟台市",
@@ -831,7 +831,7 @@
     {
       "id": "yt-kunyu",
       "name": "昆嵛山",
-      "nameEn": "Kunyu Mountain",
+      "nameEn": "Kunyu Mountain (곤유산)",
       "category": "nature",
       "description": "烟台最高的山峰。",
       "address": "烟台市牟平区",
@@ -853,7 +853,7 @@
     {
       "id": "yt-moonbay",
       "name": "月亮湾",
-      "nameEn": "Moon Bay",
+      "nameEn": "문 베이",
       "category": "nature",
       "description": "烟台最美的海湾之一。",
       "address": "烟台市芝罘区",
@@ -875,7 +875,7 @@
     {
       "id": "yt-chaoyang",
       "name": "朝阳街",
-      "nameEn": "Chaoyang Street",
+      "nameEn": "조양 거리",
       "category": "street",
       "description": "烟台最古老的商业街。",
       "address": "烟台市芝罘区",
@@ -897,7 +897,7 @@
     {
       "id": "yt-art",
       "name": "烟台美术馆",
-      "nameEn": "Yantai Art Museum",
+      "nameEn": "미술관",
       "category": "museum",
       "description": "展示中外美术作品。",
       "address": "烟台市芝罘区",
@@ -918,7 +918,7 @@
     {
       "id": "yt-bamboo",
       "name": "竹林寺",
-      "nameEn": "Bamboo Forest Temple",
+      "nameEn": "대숲사찰",
       "category": "temple",
       "description": "烟台最古老的佛教寺院。",
       "address": "烟台市芝罘区",
@@ -939,7 +939,7 @@
     {
       "id": "yt-goldenbeach",
       "name": "金沙滩",
-      "nameEn": "Golden Sand Beach",
+      "nameEn": "황금사장",
       "category": "beach",
       "description": "烟台最美的海滩之一。",
       "address": "烟台市开发区",
@@ -961,7 +961,7 @@
     {
       "id": "yt-apple",
       "name": "烟台苹果",
-      "nameEn": "Yantai Apple",
+      "nameEn": "사과",
       "category": "street",
       "description": "烟台是中国著名的苹果产地。",
       "address": "烟台市",
@@ -982,7 +982,7 @@
     {
       "id": "yt-tashan",
       "name": "塔山",
-      "nameEn": "Tashan Mountain",
+      "nameEn": "타산",
       "category": "nature",
       "description": "烟台市区的小山。",
       "address": "烟台市芝罘区",
@@ -1004,7 +1004,7 @@
     {
       "id": "yt-binhai",
       "name": "滨海广场",
-      "nameEn": "Binhai Square",
+      "nameEn": "滨海광장",
       "category": "landmark",
       "description": "烟台的城市中心广场。",
       "address": "烟台市芝罘区",
@@ -1026,7 +1026,7 @@
     {
       "id": "yt-lighthouse",
       "name": "烟台山灯塔",
-      "nameEn": "Yantai Mountain Lighthouse",
+      "nameEn": "등대",
       "category": "landmark",
       "description": "烟台的标志灯塔。",
       "address": "烟台市芝罘区",
@@ -1048,7 +1048,7 @@
     {
       "id": "yt-seafood",
       "name": "烟台海鲜",
-      "nameEn": "Yantai Seafood",
+      "nameEn": "연태 해산물",
       "category": "street",
       "description": "烟台有最新鲜的海鲜。",
       "address": "烟台市",
@@ -1069,7 +1069,7 @@
     {
       "id": "yt-yangma",
       "name": "养马岛",
-      "nameEn": "Yangma Island",
+      "nameEn": "양마 섬",
       "category": "nature",
       "description": "烟台附近的大岛，有美丽的海滩。",
       "address": "烟台市牟平区",
@@ -1091,7 +1091,7 @@
     {
       "id": "yt-zhangyu",
       "name": "张裕葡萄酒文化博物馆",
-      "nameEn": "Zhangyu Wine Culture Museum",
+      "nameEn": "장유 와인 문화 박물관",
       "category": "museum",
       "description": "展示中国葡萄酒文化的博物馆。",
       "address": "烟台市芝罘区",
@@ -1113,7 +1113,7 @@
     {
       "id": "yt-beachnight",
       "name": "烟台海滨夜景",
-      "nameEn": "Yantai Beach Night View",
+      "nameEn": "연태 해변 야경",
       "category": "landmark",
       "description": "烟台海滨的夜景灯光秀。",
       "address": "烟台市芝罘区",
@@ -1135,7 +1135,7 @@
     {
       "id": "yt-suochengli",
       "name": "所城里",
-      "nameEn": "Suochengli",
+      "nameEn": "소청리",
       "category": "street",
       "description": "烟台最古老的街区。",
       "address": "烟台市芝罘区",
@@ -1157,7 +1157,7 @@
     {
       "id": "yt-nanshanpark2",
       "name": "南山公园",
-      "nameEn": "Nanshan Park",
+      "nameEn": "남산공원",
       "category": "park",
       "description": "烟台最大的公园之一。",
       "address": "烟台市芝罘区",
@@ -1179,7 +1179,7 @@
     {
       "id": "yt-cherry",
       "name": "烟台大樱桃",
-      "nameEn": "Yantai Cherry",
+      "nameEn": "연태 체리",
       "category": "street",
       "description": "烟台是中国著名的大樱桃产地。",
       "address": "烟台市",
@@ -1202,60 +1202,60 @@
     {
       "id": "yantai-1",
       "name": "虹口海鲜",
-      "nameEn": "Hongkou Seafood",
-      "type": "local",
-      "cuisine": "Yantai Seafood",
+      "nameEn": "홍커우 해산물",
+      "type": "로컬",
+      "cuisine": "연태 해산물",
       "avgPrice": 200,
       "rating": 4.8,
-      "address": "69 Chaoyang Street, Zhifu District",
+      "address": "초양로 69번지,芝罘 구",
       "coordinates": {
         "lat": 37.5456,
         "lng": 121.4014
       },
       "phone": "+86 535 620 8888",
       "hours": "10:30-22:00",
-      "description": "Premium seafood restaurant with fresh catches daily and ocean views.",
+      "description": "매일 신선한 해산물과 해상 전경을 갖춘 고급 해산물 식당",
       "dishHighlights": [
-        "Steamed seafood",
-        "Sea urchin",
-        "Razor clams",
-        "Grilled fish"
+        "찐 해산물",
+        "성게",
+        "새조개",
+        "그릴드 피시"
       ],
       "tags": [
-        "local",
-        "seafood",
-        "premium",
-        "views"
+        "현지",
+        "해산물",
+        "프리미엄",
+        "전경"
       ],
       "imageUrl": "/img/ext/98d9d2a5bca5.webp"
     },
     {
       "id": "yantai-2",
       "name": "蓬莱小面",
-      "nameEn": "Penglai Noodles",
-      "type": "local",
-      "cuisine": "Yantai",
+      "nameEn": "蓬莱면",
+      "type": "로컬",
+      "cuisine": "연태",
       "avgPrice": 30,
       "rating": 4.7,
-      "address": "Penglai District",
+      "address": "팽라이 구역",
       "coordinates": {
         "lat": 37.8101,
         "lng": 120.7557
       },
       "hours": "06:00-14:00",
-      "description": "Local breakfast spot famous for hand-pulled noodles in savory broth.",
+      "description": "진한 국물에 손당면으로 유명한 현지 아침 식당",
       "dishHighlights": [
-        "Hand-pulled noodles",
-        "Seafood broth",
-        "Scallion oil",
-        "Pickled vegetables"
+        "손빼기면",
+        "해산물 육수",
+        "대파기름",
+        "절임 채소"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "breakfast",
-        "budget",
-        "must-try"
+        "현지",
+        "면요리",
+        "아침",
+        "저렴",
+        "반드시 시도해야 할"
       ],
       "imageUrl": "/img/ext/e74948609345.webp",
       "phone": "+86 053 5 9858 1754"
@@ -1263,30 +1263,30 @@
     {
       "id": "yantai-3",
       "name": "焖子",
-      "nameEn": "Men Zi",
-      "type": "local",
-      "cuisine": "Yantai Snacks",
+      "nameEn": "멘 쯔",
+      "type": "로컬",
+      "cuisine": "연태 디저트",
       "avgPrice": 20,
       "rating": 4.6,
-      "address": "Various locations",
+      "address": "다양한 위치",
       "coordinates": {
         "lat": 37.5365,
         "lng": 121.3914
       },
       "hours": "10:00-22:00",
-      "description": "Iconic Yantai snack - fried mung bean starch cubes with savory sauce.",
+      "description": "진한 소스와 함께 튀긴 녹두전분 큐브의 상징적인 연태 간식",
       "dishHighlights": [
-        "Fried starch cubes",
-        "Soy sauce dressing",
-        "Sesame",
-        "Mildly spicy"
+        "튀긴 전분 큐브",
+        "간장 드레싱",
+        "참깨",
+        "약간 맵게"
       ],
       "tags": [
-        "local",
-        "famous",
-        "snacks",
-        "must-try",
-        "budget"
+        "현지",
+        "유명",
+        "스낵",
+        "반드시 시도해야 할",
+        "저렴"
       ],
       "imageUrl": "/img/ext/678782418f3b.webp",
       "phone": "+86 053 5 9988 5192"
@@ -1294,28 +1294,28 @@
     {
       "id": "yantai-4",
       "name": "鲅鱼饺子",
-      "nameEn": "Baqua Dumplings",
-      "type": "local",
-      "cuisine": "Yantai",
+      "nameEn": "발아 만두",
+      "type": "로컬",
+      "cuisine": "연태",
       "avgPrice": 50,
       "rating": 4.8,
-      "address": "Zhifu District",
+      "address": "치푸 구",
       "coordinates": {
         "lat": 37.5365,
         "lng": 121.3914
       },
       "hours": "10:00-22:00",
-      "description": "Famous for dumplings filled with fresh Spanish mackerel, a Yantai specialty.",
+      "description": "신선한 스페인 고등어로 만든 만두로, 옌타이 특산 요리입니다.",
       "dishHighlights": [
-        "Fresh mackerel dumplings",
-        "Steamed dumplings",
-        "Sour and spicy dipping"
+        "신선한 고등어 만두",
+        "찐 만두",
+        "새콤하고 매운 디핑 소스"
       ],
       "tags": [
-        "local",
-        "famous",
-        "dumplings",
-        "must-try"
+        "현지",
+        "유명",
+        "딤섬",
+        "반드시 시도해야 할"
       ],
       "imageUrl": "/img/ext/6f49064189a4.webp",
       "phone": "+86 053 5 0214 1548"
@@ -1323,29 +1323,29 @@
     {
       "id": "yantai-5",
       "name": "海肠捞饭",
-      "nameEn": "Sea Intestine Rice",
-      "type": "local",
-      "cuisine": "Yantai Seafood",
+      "nameEn": "해장 밥",
+      "type": "로컬",
+      "cuisine": "연태 해산물",
       "avgPrice": 80,
       "rating": 4.7,
-      "address": "Near Fisherman's Wharf",
+      "address": "어부 부두 근처",
       "coordinates": {
         "lat": 37.4765,
         "lng": 121.5814
       },
       "hours": "10:30-21:30",
-      "description": "Local specialty - rice topped with stir-fried sea intestine in savory sauce.",
+      "description": "진한 소스에 볶은 해장물을 올린 밥, 현지 특산 요리입니다.",
       "dishHighlights": [
-        "Sea intestine",
-        "Rice",
-        "Savory sauce",
-        "Umami flavor"
+        "해장",
+        "밥",
+        "진한 소스",
+        "감칠맛"
       ],
       "tags": [
-        "local",
-        "specialty",
-        "seafood",
-        "adventurous"
+        "현지",
+        "특산",
+        "해산물",
+        "모험적인"
       ],
       "imageUrl": "/img/ext/6a7a0a46a95a.webp",
       "phone": "+86 053 5 8322 6405"
@@ -1353,29 +1353,29 @@
     {
       "id": "yantai-6",
       "name": "捞面坊",
-      "nameEn": "Lao Mian Fang",
-      "type": "local",
-      "cuisine": "Yantai Noodles",
+      "nameEn": "라오멘방",
+      "type": "로컬",
+      "cuisine": "옌타이 국수",
       "avgPrice": 40,
       "rating": 4.5,
-      "address": "Multiple locations",
+      "address": "다수 위치",
       "coordinates": {
         "lat": 37.5365,
         "lng": 121.3914
       },
       "hours": "06:00-20:00",
-      "description": "Popular noodle shop with variety of hand-pulled noodles and broths.",
+      "description": "다양한 손빻기 국수와 국물을 제공하는 인기 있는 국수 전문점입니다.",
       "dishHighlights": [
-        "Beef noodles",
-        "Seafood noodles",
-        "Vegetable noodles",
-        "Hand-pulled"
+        "소고기 국수",
+        "해산물 국수",
+        "채소 면",
+        "손빻기"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "value",
-        "quick"
+        "현지",
+        "면요리",
+        "가성비",
+        "빠른"
       ],
       "imageUrl": "/img/ext/05d2762f4e2b.webp",
       "phone": "+86 053 5 9160 4793"
@@ -1383,29 +1383,29 @@
     {
       "id": "yantai-7",
       "name": "建兴海鲜",
-      "nameEn": "Jianxing Seafood",
-      "type": "local",
-      "cuisine": "Yantai Seafood",
+      "nameEn": "젠싱 해산물",
+      "type": "로컬",
+      "cuisine": "연태 해산물",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "Seafood Market, Zhifu District",
+      "address": "해산물 시장, 지푸 구역",
       "coordinates": {
         "lat": 37.5465,
         "lng": 121.3914
       },
       "hours": "09:00-22:00",
-      "description": "Fresh seafood market restaurant where you pick and they cook.",
+      "description": "직접 선택하고 조리해 주는 신선한 해산물 시장 식당입니다.",
       "dishHighlights": [
-        "Fresh catch",
-        "Steam preparation",
-        "Grilled options",
-        "Your choice"
+        "신선한 잡은 물고기",
+        "찜 조리",
+        "그릴 옵션",
+        "선택 가능"
       ],
       "tags": [
-        "local",
-        "seafood",
-        "fresh",
-        "market-style"
+        "현지",
+        "해산물",
+        "신선한",
+        "시장 스타일"
       ],
       "imageUrl": "/img/ext/c3cb63de3a03.webp",
       "phone": "+86 053 5 2530 6238"
@@ -1413,60 +1413,60 @@
     {
       "id": "yantai-8",
       "name": "张裕酒庄餐厅",
-      "nameEn": "Changyu Chateau Restaurant",
-      "type": "fine",
-      "cuisine": "French/Wine Pairing",
+      "nameEn": "창위 샤토 레스토랑",
+      "type": "고급",
+      "cuisine": "프랑스/와인 페어링",
       "avgPrice": 300,
       "rating": 4.7,
-      "address": "Changyu Wine Culture Museum",
+      "address": "창유 와인 문화 박물관",
       "coordinates": {
         "lat": 37.5365,
         "lng": 121.3914
       },
       "phone": "+86 535 669 8888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Elegant restaurant in winery with wine pairing and French-inspired cuisine.",
+      "description": "와인 페어링과 프랑스 영감 요리를 제공하는 와이너리의 우아한 레스토랑입니다.",
       "dishHighlights": [
-        "Wine paired dishes",
-        "Western cuisine",
-        "Premium wine",
-        "Elegant setting"
+        "와인 페어링 요리",
+        "서양 요리",
+        "프리미엄 와인",
+        "우아한 분위기"
       ],
       "tags": [
-        "fine-dining",
-        "wine",
-        "french",
-        "romantic",
-        "special-occasion"
+        "고급 식당",
+        "와인",
+        "프랑스",
+        "로맨틱",
+        "특별한 자리"
       ],
       "imageUrl": "/img/ext/58176a50385a.webp"
     },
     {
       "id": "yantai-9",
       "name": "农家渔家",
-      "nameEn": "Rural Fisherman",
-      "type": "local",
-      "cuisine": "Yantai Home Style",
+      "nameEn": "시골 어부",
+      "type": "로컬",
+      "cuisine": "양antai 가정식",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Near Golden Sand Beach",
+      "address": "금사 해변 근처",
       "coordinates": {
         "lat": 37.4665,
         "lng": 121.4414
       },
       "hours": "10:30-22:00",
-      "description": "Cozy restaurant serving home-style seafood and local Yantai dishes.",
+      "description": "현지 해산물과 양antai 요리를 제공하는 아늑한 레스토랑",
       "dishHighlights": [
-        "Home-style seafood",
-        "Fried fish",
-        "Steamed clams",
-        "Local vegetables"
+        "가정식 해산물",
+        "튀긴 생선",
+        "찐 조개",
+        "현지 채소"
       ],
       "tags": [
-        "local",
-        "home-style",
-        "cozy",
-        "seafood"
+        "현지",
+        "가정식",
+        "아늑한",
+        "해산물"
       ],
       "imageUrl": "/img/ext/df1e02786e6f.webp",
       "phone": "+86 053 5 0356 4538"
@@ -1474,29 +1474,29 @@
     {
       "id": "yantai-10",
       "name": "大悦城",
-      "nameEn": "Dayuecheng Mall",
-      "type": "chain",
-      "cuisine": "Various",
+      "nameEn": "다유청 몰",
+      "type": "체인",
+      "cuisine": "다양한",
       "avgPrice": 80,
       "rating": 4.4,
-      "address": "53 Er Ma Road, Zhifu District",
+      "address": "芝罘区二马路53号",
       "coordinates": {
         "lat": 37.5365,
         "lng": 121.4114
       },
       "hours": "10:00-22:00",
-      "description": "Large mall with multiple restaurants and food court options.",
+      "description": "다양한 레스토랑과 푸드코트가 있는 대형 쇼핑몰",
       "dishHighlights": [
-        "Food court",
-        "International brands",
-        "Cafes",
-        "Variety"
+        "푸드코트",
+        "글로벌 브랜드",
+        "카페",
+        "다양성"
       ],
       "tags": [
-        "chain",
-        "mall",
-        "variety",
-        "convenient"
+        "체인점",
+        "쇼핑몰",
+        "다양한",
+        "편리한"
       ],
       "imageUrl": "/img/ext/6636e42ed315.webp",
       "phone": "+86 053 5 1833 5019"
@@ -1504,59 +1504,59 @@
     {
       "id": "yantai-11",
       "name": "海底捞",
-      "nameEn": "Haidilao Hotpot",
-      "type": "chain",
-      "cuisine": "Hotpot",
+      "nameEn": "하이디려오",
+      "type": "체인",
+      "cuisine": "호트포",
       "avgPrice": 150,
       "rating": 4.8,
-      "address": "MixC Mall, Zhifu District",
+      "address": "芝罘区万象城",
       "coordinates": {
         "lat": 37.5465,
         "lng": 121.3914
       },
       "phone": "+86 535 620 9999",
-      "hours": "24 hours",
-      "description": "Famous hotpot chain with exceptional service and free manicotti.",
+      "hours": "24시간",
+      "description": "탁월한 서비스와 무료 마니코티가 유명한 핫팟 체인점",
       "dishHighlights": [
-        "Spicy broth",
-        "Fresh beef",
-        "Hand-pulled noodles",
-        "Free dessert"
+        "매운 스프",
+        "신선한 소고기",
+        "손빼기면",
+        "무료 디저트"
       ],
       "tags": [
-        "chain",
-        "hotpot",
-        "service",
-        "late-night"
+        "체인점",
+        "火锅",
+        "서비스",
+        "심야"
       ],
       "imageUrl": "/img/ext/1beaa4ec0924.webp"
     },
     {
       "id": "yantai-12",
       "name": "三合渔家",
-      "nameEn": "Sanhe Fisherman",
-      "type": "local",
-      "cuisine": "Yantai Seafood",
+      "nameEn": "산하 어부",
+      "type": "로컬",
+      "cuisine": "연태 해산물",
       "avgPrice": 120,
       "rating": 4.6,
-      "address": "Changdao Islands",
+      "address": "창다오群岛 (Changdao Islands)",
       "coordinates": {
         "lat": 37.9565,
         "lng": 120.7514
       },
       "hours": "07:00-21:00",
-      "description": "Island seafood restaurant with fresh catch and traditional preparation.",
+      "description": "신선한 해산물과 전통 요리법을 제공하는 섬 해산물 레스토랑",
       "dishHighlights": [
-        "Island seafood",
-        "Steamed fish",
-        "Seaweed soup",
-        "Local specialties"
+        "섬 해산물",
+        "찜생선",
+        "해초국",
+        "지역 특산품"
       ],
       "tags": [
-        "local",
-        "seafood",
-        "island",
-        "authentic"
+        "현지",
+        "해산물",
+        "섬",
+        "정통"
       ],
       "imageUrl": "/img/ext/2dacb18d211a.webp",
       "phone": "+86 053 5 1680 5080"
@@ -1564,59 +1564,59 @@
     {
       "id": "yantai-13",
       "name": "老船长",
-      "nameEn": "Old Captain",
-      "type": "local",
-      "cuisine": "Yantai Seafood",
+      "nameEn": "노장 선장",
+      "type": "로컬",
+      "cuisine": "연태 해산물",
       "avgPrice": 150,
       "rating": 4.7,
-      "address": "Fisherman's Wharf",
+      "address": "어부 부두 (Fisherman's Wharf)",
       "coordinates": {
         "lat": 37.4765,
         "lng": 121.5814
       },
       "phone": "+86 535 669 1234",
       "hours": "10:30-22:00",
-      "description": "Historic seafood restaurant with harbor views and fresh seafood.",
+      "description": "항구 전경과 신선한 해산물을 제공하는 역사적인 해산물 레스토랑",
       "dishHighlights": [
-        "Fresh seafood",
-        "Grilled prawns",
-        "Steamed fish",
-        "Harbor views"
+        "신선한 해산물",
+        "그릴드 새우",
+        "찜생선",
+        "항구 전망"
       ],
       "tags": [
-        "local",
-        "seafood",
-        "views",
-        "historic"
+        "현지",
+        "해산물",
+        "전경",
+        "역사적인"
       ],
       "imageUrl": "/img/ext/fa44b8ad2ce1.webp"
     },
     {
       "id": "yantai-14",
       "name": "威尼斯餐厅",
-      "nameEn": "Venice Restaurant",
-      "type": "fine",
-      "cuisine": "Italian",
+      "nameEn": "베네치아 레스토랑",
+      "type": "고급",
+      "cuisine": "이탈리안",
       "avgPrice": 200,
       "rating": 4.5,
-      "address": "Coastal Zone",
+      "address": "해안 지구",
       "coordinates": {
         "lat": 37.4765,
         "lng": 121.4414
       },
       "hours": "11:30-14:30, 18:00-22:00",
-      "description": "Italian restaurant with ocean views and authentic Mediterranean cuisine.",
+      "description": "해변 전경과 정통 지중해 요리를 제공하는 이탈리안 레스토랑",
       "dishHighlights": [
-        "Pasta",
-        "Pizza",
-        "Seafood",
-        "Italian wine"
+        "파스타",
+        "피자",
+        "해산물",
+        "이탈리아 와인"
       ],
       "tags": [
-        "fine-dining",
-        "italian",
-        "views",
-        "romantic"
+        "고급 식당",
+        "이탈리안",
+        "전경",
+        "로맨틱"
       ],
       "imageUrl": "/img/ext/0461404e221d.webp",
       "phone": "+86 053 5 5339 3044"
@@ -1624,59 +1624,59 @@
     {
       "id": "yantai-15",
       "name": "东来顺",
-      "nameEn": "Dong Lai Shun",
-      "type": "chain",
-      "cuisine": "Mongolian Hotpot",
+      "nameEn": "동래순",
+      "type": "체인",
+      "cuisine": "몽골 전골",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "Zhifu District",
+      "address": "치푸 구",
       "coordinates": {
         "lat": 37.5465,
         "lng": 121.3914
       },
       "phone": "+86 535 620 1234",
       "hours": "10:30-22:00",
-      "description": "Famous Mongolian hotpot chain with premium lamb and traditional broth.",
+      "description": "프리미엄 양고기와 전통 육수를 제공하는 유명한 몽골 훠궈 체인점입니다.",
       "dishHighlights": [
-        "Mongolian lamb",
-        "Hotpot",
-        "Traditional broth",
-        "Quality ingredients"
+        "몽골 양고기",
+        "호트포",
+        "전통 육수",
+        "질 좋은 재료"
       ],
       "tags": [
-        "chain",
-        "hotpot",
-        "mongolian",
-        "premium"
+        "체인점",
+        "火锅",
+        "몽골",
+        "프리미엄"
       ],
       "imageUrl": "/img/ext/6158dc9ee5c6.webp"
     },
     {
       "id": "yantai-16",
       "name": "新兴园",
-      "nameEn": "Xinxing Yuan",
-      "type": "local",
-      "cuisine": "Yantai",
+      "nameEn": "신싱위안",
+      "type": "로컬",
+      "cuisine": "연태",
       "avgPrice": 70,
       "rating": 4.5,
-      "address": "Penglai District",
+      "address": "팽라이 구역",
       "coordinates": {
         "lat": 37.8101,
         "lng": 120.7557
       },
       "hours": "10:00-21:30",
-      "description": "Established restaurant near Penglai Pavilion serving local specialties.",
+      "description": "등남각 근처의 현지 특선을 제공하는 유명 레스토랑",
       "dishHighlights": [
-        "Penglai noodles",
-        "Seafood dishes",
-        "Traditional recipes",
-        "Local favorites"
+        "蓬莱面",
+        "해산물 요리",
+        "전통 레시피",
+        "현지인 인기 메뉴"
       ],
       "tags": [
-        "local",
-        "traditional",
-        "near-attraction",
-        "reliable"
+        "현지",
+        "전통적인",
+        "관광지 근처",
+        "신뢰할수있는"
       ],
       "imageUrl": "/img/ext/59214744521f.webp",
       "phone": "+86 053 5 3787 3796"
@@ -1684,30 +1684,30 @@
     {
       "id": "yantai-17",
       "name": "呷哺呷哺",
-      "nameEn": "Xia Cuo Xia Cuo",
-      "type": "chain",
-      "cuisine": "Individual Hotpot",
+      "nameEn": "샤 저오 샤 저오",
+      "type": "체인",
+      "cuisine": "개인 핫팟",
       "avgPrice": 80,
       "rating": 4.4,
-      "address": "Multiple locations",
+      "address": "다수 위치",
       "coordinates": {
         "lat": 37.5365,
         "lng": 121.3914
       },
       "hours": "10:00-22:00",
-      "description": "Popular individual hotpot chain with affordable prices and variety.",
+      "description": "합리적인 가격과 다양한 메뉴를 갖춘 인기 있는 개인 샤오샤오 핫팟 체인점입니다.",
       "dishHighlights": [
-        "Individual hotpot",
-        "Variety of broths",
-        "Fresh ingredients",
-        "Affordable"
+        "개인 핫팟",
+        "다양한 육수",
+        "신선한 재료",
+        "가성비"
       ],
       "tags": [
-        "chain",
-        "hotpot",
-        "individual",
-        "value",
-        "quick"
+        "체인점",
+        "火锅",
+        "개인",
+        "가성비",
+        "빠른"
       ],
       "imageUrl": "/img/ext/5698e80fbfb8.webp",
       "phone": "+86 053 5 8479 8998"
@@ -1715,29 +1715,29 @@
     {
       "id": "yantai-18",
       "name": "韩式烤肉",
-      "nameEn": "Korean BBQ",
-      "type": "local",
-      "cuisine": "Korean",
+      "nameEn": "한국 바비큐",
+      "type": "로컬",
+      "cuisine": "한국식",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "Zhifu District",
+      "address": "치푸 구",
       "coordinates": {
         "lat": 37.5365,
         "lng": 121.3914
       },
       "hours": "11:00-23:00",
-      "description": "Korean BBQ restaurant with quality meat and authentic Korean sides.",
+      "description": "고품질 고기와 정통 한국 반찬을 제공하는 한국 BBQ 레스토랑입니다.",
       "dishHighlights": [
-        "Grilled lamb",
-        "Beef",
-        "Kimchi",
-        "Korean side dishes"
+        "양고기 구이",
+        "소고기",
+        "김치",
+        "한국 반찬"
       ],
       "tags": [
-        "local",
-        "korean",
-        "bbq",
-        "meat"
+        "현지",
+        "한국",
+        "烧烤",
+        "고기"
       ],
       "imageUrl": "/img/ext/8d89c015103d.webp",
       "phone": "+86 053 5 8234 1357"
@@ -1745,29 +1745,29 @@
     {
       "id": "yantai-19",
       "name": "味道小馆",
-      "nameEn": "Taste House",
-      "type": "local",
-      "cuisine": "Yantai Home Style",
+      "nameEn": "테이스트 하우스",
+      "type": "로컬",
+      "cuisine": "양antai 가정식",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Chaoyang Street area",
+      "address": "조양거리 지역",
       "coordinates": {
         "lat": 37.5456,
         "lng": 121.4014
       },
       "hours": "10:30-21:30",
-      "description": "Cozy home-style restaurant with local Yantai dishes and comfortable atmosphere.",
+      "description": "아늑한 가정식 레스토랑으로 현지 양타이 요리와 편안한 분위기를 자랑합니다.",
       "dishHighlights": [
-        "Home-style dishes",
-        "Local seafood",
-        "Seasonal menu",
-        "Value"
+        "가정식 요리",
+        "현지 해산물",
+        "계절별 메뉴",
+        "가치"
       ],
       "tags": [
-        "local",
-        "home-style",
-        "cozy",
-        "value"
+        "현지",
+        "가정식",
+        "아늑한",
+        "가성비"
       ],
       "imageUrl": "/img/ext/ab26a7fc4ce1.webp",
       "phone": "+86 053 5 2094 4887"
@@ -1775,29 +1775,29 @@
     {
       "id": "yantai-20",
       "name": "鼎泰丰",
-      "nameEn": "Din Tai Fung",
-      "type": "chain",
-      "cuisine": "Taiwanese",
+      "nameEn": "딩 타이퐁",
+      "type": "체인",
+      "cuisine": "대만식",
       "avgPrice": 120,
       "rating": 4.6,
-      "address": "MixC Mall",
+      "address": "믹스 몰",
       "coordinates": {
         "lat": 37.5465,
         "lng": 121.3914
       },
       "hours": "10:00-21:30",
-      "description": "World-famous Taiwanese dumpling chain with excellent xiaolongbao.",
+      "description": "세계적으로 유명한 대만 딤섬 체인으로, 훌륭한 샤오롱바오를 제공합니다.",
       "dishHighlights": [
-        "Xiaolongbao",
-        "Fried rice",
-        "Noodles",
-        "Desserts"
+        "시아오룽바오",
+        "볶음밥",
+        "국수",
+        "디저트"
       ],
       "tags": [
-        "chain",
-        "taiwanese",
-        "dumplings",
-        "quality"
+        "체인점",
+        "대만식",
+        "딤섬",
+        "품질"
       ],
       "imageUrl": "/img/ext/f38720936e10.webp",
       "phone": "+86 053 5 8335 2343"
@@ -1805,29 +1805,29 @@
     {
       "id": "yantai-21",
       "name": "海景咖啡厅",
-      "nameEn": "Ocean View Cafe",
-      "type": "cafe",
-      "cuisine": "Western Cafe",
+      "nameEn": "오션뷰 카페",
+      "type": "카페",
+      "cuisine": "서양 카페",
       "avgPrice": 60,
       "rating": 4.4,
-      "address": "Coastal Zone",
+      "address": "해안 지구",
       "coordinates": {
         "lat": 37.5265,
         "lng": 121.4014
       },
       "hours": "09:00-23:00",
-      "description": "Cafe with panoramic sea views, perfect for sunset watching.",
+      "description": "광활한 해안 전경을 갖춘 카페로 일몰 감상에 완벽합니다.",
       "dishHighlights": [
-        "Coffee",
-        "Western snacks",
-        "Sea views",
-        "Sunset"
+        "커피",
+        "서양 간식",
+        "바다 전경",
+        "일몰"
       ],
       "tags": [
-        "cafe",
-        "views",
-        "sunset",
-        "romantic"
+        "카페",
+        "전경",
+        "일몰",
+        "로맨틱"
       ],
       "imageUrl": "/img/ext/9489068ee720.png",
       "phone": "+86 053 5 1144 5656"
@@ -1835,29 +1835,29 @@
     {
       "id": "yantai-22",
       "name": "夜市烧烤",
-      "nameEn": "Night Market BBQ",
-      "type": "local",
-      "cuisine": "BBQ",
+      "nameEn": "나이트마켓 BBQ",
+      "type": "로컬",
+      "cuisine": "바베큐",
       "avgPrice": 60,
       "rating": 4.4,
-      "address": "Night Market Area",
+      "address": "야시장 지구",
       "coordinates": {
         "lat": 37.5465,
         "lng": 121.4014
       },
       "hours": "17:00-02:00",
-      "description": "Popular night market BBQ with variety of grilled meats and seafood.",
+      "description": "다양한 구이류와 해산물을 제공하는 인기 나이트마켓 BBQ입니다.",
       "dishHighlights": [
-        "Grilled lamb",
-        "Skewers",
-        "Grilled squid",
-        "Beer"
+        "양고기 구이",
+        "꼬치",
+        "그릴 오징어",
+        "맥주"
       ],
       "tags": [
-        "local",
-        "bbq",
-        "night-market",
-        "late-night"
+        "현지",
+        "烧烤",
+        "야시장",
+        "심야"
       ],
       "imageUrl": "/img/ext/154420e3834d.webp",
       "phone": "+86 053 5 4175 2221"
@@ -1865,29 +1865,29 @@
     {
       "id": "yantai-23",
       "name": "鲁菜馆",
-      "nameEn": "Lu Cuisine Restaurant",
-      "type": "local",
-      "cuisine": "Shandong",
+      "nameEn": "루 퀴진 레스토랑",
+      "type": "로컬",
+      "cuisine": "산동",
       "avgPrice": 100,
       "rating": 4.6,
-      "address": "Zhifu District",
+      "address": "치푸 구",
       "coordinates": {
         "lat": 37.5465,
         "lng": 121.3914
       },
       "hours": "10:30-21:30",
-      "description": "Classic Shandong cuisine restaurant with traditional recipes and elegant setting.",
+      "description": "전통 레시피와 우아한 분위기를 갖춘 고전적인 산둥 요리 레스토랑입니다.",
       "dishHighlights": [
-        "Shandong classic dishes",
-        "Braised seafood",
-        "Fresh vegetables",
-        "Traditional cooking"
+        "산동 전통 요리",
+        "해산물 조림",
+        "신선한 야채",
+        "전통 요리"
       ],
       "tags": [
-        "local",
-        "shandong-cuisine",
-        "traditional",
-        "classic"
+        "현지",
+        " cuisine-du-shandong",
+        "전통적인",
+        " classique"
       ],
       "imageUrl": "/img/ext/45fcc7a963a5.webp",
       "phone": "+86 053 5 7860 6911"
@@ -1895,30 +1895,30 @@
     {
       "id": "yantai-24",
       "name": "渔家乐",
-      "nameEn": "Fisherman's Joy",
-      "type": "local",
-      "cuisine": "Yantai Seafood",
+      "nameEn": "피셔맨스 조이",
+      "type": "로컬",
+      "cuisine": "연태 해산물",
       "avgPrice": 90,
       "rating": 4.5,
-      "address": "Yangma Island",
+      "address": "양마 섬",
       "coordinates": {
         "lat": 37.3965,
         "lng": 121.6014
       },
       "hours": "08:00-21:00",
-      "description": "Island restaurant specializing in fresh seafood caught by local fishermen.",
+      "description": "섬 레스토랑으로 현지 어부가 잡은 신선한 해산물을 전문으로 합니다.",
       "dishHighlights": [
-        "Fresh catch",
-        "Island specialties",
-        "Sea views",
-        "Local preparation"
+        "신선한 잡은 물고기",
+        "섬 전문 요리",
+        "바다 전경",
+        "현지 방식 조리"
       ],
       "tags": [
-        "local",
-        "seafood",
-        "island",
-        "fresh",
-        "authentic"
+        "현지",
+        "해산물",
+        "섬",
+        "신선한",
+        "정통"
       ],
       "imageUrl": "/img/ext/559e5838ea0f.webp",
       "phone": "+86 053 5 9212 2634"
@@ -1926,29 +1926,29 @@
     {
       "id": "yantai-25",
       "name": "西虹市首富",
-      "nameEn": "Tomato Master",
-      "type": "chain",
-      "cuisine": "Fast Food",
+      "nameEn": "토마토 마스터",
+      "type": "체인",
+      "cuisine": "패스트푸드",
       "avgPrice": 40,
       "rating": 4.3,
-      "address": "Multiple locations",
+      "address": "다수 위치",
       "coordinates": {
         "lat": 37.5365,
         "lng": 121.3914
       },
       "hours": "07:00-23:00",
-      "description": "Popular Chinese fast food chain with fried rice and comfort food.",
+      "description": "볶음밥과 편식 요리로 유명한 중국 패스트푸드 체인점.",
       "dishHighlights": [
-        "Fried rice",
-        "Noodles",
-        "Dumplings",
-        "Fast service"
+        "볶음밥",
+        "국수",
+        "만두",
+        "빠른 서비스"
       ],
       "tags": [
-        "chain",
-        "fast-food",
-        "quick",
-        "familiar"
+        "체인점",
+        "패스트푸드",
+        "빠른",
+        "익숙한"
       ],
       "imageUrl": "/img/ext/7c07c4132262.webp",
       "phone": "+86 053 5 0701 1183"
@@ -1957,7 +1957,7 @@
       "id": "yantai-26",
       "name": "正宗鲅鱼水饺",
       "nameEn": "正宗鲅鱼水饺 (鲅鱼水饺)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "鲅鱼水饺",
       "avgPrice": 36,
       "rating": 4.5,
@@ -1986,7 +1986,7 @@
       "id": "yantai-28",
       "name": "老烟台烟台焖子",
       "nameEn": "老烟台烟台焖子 (烟台焖子)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "烟台焖子",
       "avgPrice": 61,
       "rating": 4.2,
@@ -2015,7 +2015,7 @@
       "id": "yantai-30",
       "name": "烟台味烟台焖子",
       "nameEn": "烟台味烟台焖子 (烟台焖子)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "烟台焖子",
       "avgPrice": 59,
       "rating": 4.5,
@@ -2044,7 +2044,7 @@
       "id": "yantai-32",
       "name": "地道鲅鱼水饺",
       "nameEn": "地道鲅鱼水饺 (鲅鱼水饺)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "鲅鱼水饺",
       "avgPrice": 68,
       "rating": 4.1,
@@ -2073,7 +2073,7 @@
       "id": "yantai-34",
       "name": "老街烟台焖子",
       "nameEn": "老街烟台焖子 (烟台焖子)",
-      "type": "cafe",
+      "type": "카페",
       "cuisine": "烟台焖子",
       "avgPrice": 38,
       "rating": 4.6,
@@ -2102,7 +2102,7 @@
       "id": "yantai-36",
       "name": "正宗烟台焖子",
       "nameEn": "正宗烟台焖子 (烟台焖子)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "烟台焖子",
       "avgPrice": 90,
       "rating": 4.1,
@@ -2131,7 +2131,7 @@
       "id": "yantai-38",
       "name": "地道鲅鱼水饺",
       "nameEn": "地道鲅鱼水饺 (鲅鱼水饺)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "鲅鱼水饺",
       "avgPrice": 32,
       "rating": 4.9,
@@ -2160,7 +2160,7 @@
       "id": "yantai-40",
       "name": "传统烟台焖子",
       "nameEn": "传统烟台焖子 (烟台焖子)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "烟台焖子",
       "avgPrice": 123,
       "rating": 4.1,
@@ -2189,7 +2189,7 @@
       "id": "yantai-42",
       "name": "街边蓬莱小面",
       "nameEn": "街边蓬莱小面 (蓬莱小面)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "蓬莱小面",
       "avgPrice": 34,
       "rating": 4,
@@ -2218,7 +2218,7 @@
       "id": "yantai-44",
       "name": "正宗鲅鱼水饺",
       "nameEn": "正宗鲅鱼水饺 (鲅鱼水饺)",
-      "type": "street",
+      "type": "길거리",
       "cuisine": "鲅鱼水饺",
       "avgPrice": 24,
       "rating": 4.3,
@@ -2247,7 +2247,7 @@
       "id": "yantai-46",
       "name": "街边蓬莱小面",
       "nameEn": "街边蓬莱小面 (蓬莱小面)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "蓬莱小面",
       "avgPrice": 48,
       "rating": 4.3,
@@ -2276,7 +2276,7 @@
       "id": "yantai-48",
       "name": "传统烟台焖子",
       "nameEn": "传统烟台焖子 (烟台焖子)",
-      "type": "street",
+      "type": "길거리",
       "cuisine": "烟台焖子",
       "avgPrice": 58,
       "rating": 4.8,
@@ -2305,7 +2305,7 @@
       "id": "yantai-50",
       "name": "老字号蓬莱小面",
       "nameEn": "老字号蓬莱小面 (蓬莱小面)",
-      "type": "street",
+      "type": "길거리",
       "cuisine": "蓬莱小面",
       "avgPrice": 10,
       "rating": 4.8,
@@ -2334,7 +2334,7 @@
       "id": "yantai-52",
       "name": "正宗鲅鱼水饺",
       "nameEn": "正宗鲅鱼水饺 (鲅鱼水饺)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "鲅鱼水饺",
       "avgPrice": 144,
       "rating": 4.8,
@@ -2363,7 +2363,7 @@
       "id": "yantai-54",
       "name": "地道海鲜",
       "nameEn": "地道海鲜 (海鲜)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "海鲜",
       "avgPrice": 66,
       "rating": 4.6,
@@ -2392,7 +2392,7 @@
       "id": "yantai-56",
       "name": "烟台味鲅鱼水饺",
       "nameEn": "烟台味鲅鱼水饺 (鲅鱼水饺)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "鲅鱼水饺",
       "avgPrice": 76,
       "rating": 4.4,
@@ -2421,7 +2421,7 @@
       "id": "yantai-58",
       "name": "老街鲅鱼水饺",
       "nameEn": "老街鲅鱼水饺 (鲅鱼水饺)",
-      "type": "cafe",
+      "type": "카페",
       "cuisine": "鲅鱼水饺",
       "avgPrice": 33,
       "rating": 4.9,
@@ -2450,7 +2450,7 @@
       "id": "yantai-60",
       "name": "传统鲅鱼水饺",
       "nameEn": "传统鲅鱼水饺 (鲅鱼水饺)",
-      "type": "street",
+      "type": "길거리",
       "cuisine": "鲅鱼水饺",
       "avgPrice": 59,
       "rating": 4.9,
@@ -2479,7 +2479,7 @@
       "id": "yantai-62",
       "name": "老街烟台焖子",
       "nameEn": "老街烟台焖子 (烟台焖子)",
-      "type": "street",
+      "type": "길거리",
       "cuisine": "烟台焖子",
       "avgPrice": 57,
       "rating": 4.4,
@@ -2508,7 +2508,7 @@
       "id": "yantai-64",
       "name": "地道蓬莱小面",
       "nameEn": "地道蓬莱小面 (蓬莱小面)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "蓬莱小面",
       "avgPrice": 144,
       "rating": 4.2,
@@ -2537,7 +2537,7 @@
       "id": "yantai-66",
       "name": "阿婆蓬莱小面",
       "nameEn": "阿婆蓬莱小面 (蓬莱小面)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "蓬莱小面",
       "avgPrice": 63,
       "rating": 4.7,
@@ -2566,7 +2566,7 @@
       "id": "yantai-68",
       "name": "老字号蓬莱小面",
       "nameEn": "老字号蓬莱小面 (蓬莱小面)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "蓬莱小面",
       "avgPrice": 102,
       "rating": 4.2,
@@ -2595,7 +2595,7 @@
       "id": "yantai-70",
       "name": "阿婆鲅鱼水饺",
       "nameEn": "阿婆鲅鱼水饺 (鲅鱼水饺)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "鲅鱼水饺",
       "avgPrice": 144,
       "rating": 4.3,
@@ -2624,7 +2624,7 @@
       "id": "yantai-72",
       "name": "传统海鲜",
       "nameEn": "传统海鲜 (海鲜)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "海鲜",
       "avgPrice": 147,
       "rating": 4.7,
@@ -2653,7 +2653,7 @@
       "id": "yantai-74",
       "name": "正宗烟台焖子",
       "nameEn": "正宗烟台焖子 (烟台焖子)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "烟台焖子",
       "avgPrice": 80,
       "rating": 4.7,
@@ -3057,92 +3057,92 @@
   "culturalTips": [
     {
       "category": "food",
-      "title": "Seafood Culture",
-      "content": "Yantai is famous for fresh seafood including sea urchin, abalone, clams, and various fish. The city has strong seafood culture with many restaurants offering fresh catches daily.",
+      "title": "해산물 문화",
+      "content": "연태는 성게, 전복, 조개, 다양한 어류 등 신선한 해산물로 유명합니다. 이 도시는 매일 신선한 잡은 해산물을 제공하는 많은 레스토랑과 함께 강력한 해산물 문화를 가지고 있습니다.",
       "importance": "high"
     },
     {
       "category": "history",
-      "title": "Maritime Heritage",
-      "content": "Yantai has 600 years of maritime history as a treaty port. The colonial architecture, especially around Yantai Mountain, reflects its international past with Russian, British, French, and German influence.",
+      "title": "해상 유산",
+      "content": "연태는 조약 항구로서 600년의 해상 역사를 가지고 있습니다. 특히 연태 산 주변의 식민지 건축은 러시아, 영국, 프랑스, 독일의 영향을 받아 국제적 과거를 반영합니다.",
       "importance": "high"
     },
     {
       "category": "wine",
-      "title": "Wine Culture",
-      "content": "Yantai is China's wine capital, producing 40% of China's wine. The Changyu winery is world-famous. Wine tourism is popular with vineyard tours and tastings available.",
+      "title": "와인 문화",
+      "content": "연태는 중국 와인 생산량의 40%를 생산하는 중국의 와인 수도입니다. 창유 와이너리는 세계적으로 유명합니다. 와이너리 투어와 시음회가 가능한 와인 관광이 인기를 끌고 있습니다.",
       "importance": "high"
     },
     {
       "category": "legend",
-      "title": "Penglai Legend",
-      "content": "Penglai is legendary as the dwelling place of the Eight Immortals and immortals in Chinese mythology. The Penglai Pavilion is said to be where immortal beings dwell, making it a sacred Taoist site.",
+      "title": "펑라이 전설",
+      "content": "펭라이는 중국 신화에서 팔선仙과 신들이 거주하는 전설적인 장소입니다. 펭라이 누각은 신들이 거주하는 곳으로 전해지며, 신성한 도교 성지입니다.",
       "importance": "medium"
     },
     {
       "category": "dialect",
-      "title": "Yantai Dialect",
-      "content": "Yantai dialect is part of Ji-Lu Mandarin with distinct pronunciation. The local accent is known for being direct and straightforward. Some words are unique to the region.",
+      "title": "옌타이 방언",
+      "content": "옌타이 방언은 정치 만다린의 일부로 독특한 발음이 있습니다. 현지 억양은 직접적이고 솔직한 것으로 유명합니다. 일부 단어는 해당 지역独有的입니다.",
       "importance": "low"
     },
     {
       "category": "timing",
-      "title": "Best Time to Visit",
-      "content": "Yantai is best visited May-June for pleasant weather and flowers, or September-October for wine harvest. Summer is popular for beaches but crowded. Golden Week in October should be avoided.",
+      "title": "방문 최적 시기",
+      "content": "옌타이는 5-6월의 쾌적한 날씨와 꽃, 또는 9-10월의 포도 수확기에 방문하기 가장 좋습니다. 여름은 해변에서 인기가 있지만 붐빈다. 10월의 황금주간은 피하는 것이 좋습니다.",
       "importance": "medium"
     },
     {
       "category": "beach",
-      "title": "Beach Culture",
-      "content": "Yantai has beautiful beaches with Golden Sand Beach being the most famous. The beaches are popular in summer for swimming and water sports. Some beaches can get crowded in July-August.",
+      "title": "해변 문화",
+      "content": "옌타이는 아름다운 해변을 가지고 있으며 황금사해변最为 유명합니다. 해변은 여름에 수영과 수상 스포츠로 인기가 있습니다. 일부 해변은 7-8월에 붐빌 수 있습니다.",
       "importance": "medium"
     },
     {
       "category": "colonial",
-      "title": "Colonial Architecture",
-      "content": "Yantai's colonial history left a legacy of European-style buildings around Yantai Mountain and Chaoyang Street. Many buildings from the late 19th century have been preserved and now house cafes and shops.",
+      "title": "식민지 건축",
+      "content": "옌타이의 식민지 역사는 옌타이 산과 조양가 주변의 유럽풍 건물들의 유산으로 남았습니다. 19세기 후기의 많은 건물이 보존되어 지금은 카페와 상점으로 자리 잡고 있습니다.",
       "importance": "medium"
     },
     {
       "category": "crafts",
-      "title": "Local Crafts",
-      "content": "Yantai is known for kelp/seaweed products, wine (of course), and local snuff bottles. The region's crafts reflect its coastal culture and colonial influences.",
+      "title": "지역 전통 공예품",
+      "content": "옌타이는 다시마/해조류 제품, 와인(물론!), 그리고 현지 비눗병으로 유명합니다. 해당 지역의 공예는 해안 문화와 식민지 영향을 반영합니다.",
       "importance": "low"
     },
     {
       "category": "food",
-      "title": "Must-Try Dishes",
-      "content": "Yantai specialties include: sea urchin (海胆), razor clams (蛏子), steamed sea bass, sea intestine rice (海肠捞饭), Penglai noodles (蓬莱小面), and local dumplings.",
+      "title": "반드시 시도해야 할 요리",
+      "content": "옌타이 특산품: 해삼(海胆), 대합(蛏子), 찜 광어, 해장 Лаéf (海肠捞饭),蓬莱면(蓬莱小面), 그리고 현지 만두.",
       "importance": "high"
     },
     {
       "category": "island",
-      "title": "Island Hopping",
-      "content": "The Changdao Islands offer beautiful island scenery with pristine beaches and fishing villages. The archipelago is perfect for escaping the mainland and experiencing authentic island life.",
+      "title": "아일랜드 호핑",
+      "content": "장다오 제도는 깨끗한 해변과 어촌을 갖춘 아름다운 섬 풍경을 제공합니다. 이 군도는 본토를 벗어나 진정한 섬 생활을 경험하기에 완벽합니다.",
       "importance": "medium"
     },
     {
       "category": "festival",
-      "title": "Wine Festival",
-      "content": "The Yantai International Wine Festival held in September showcases local wine culture with tastings, tours, and cultural events. This coincides with the grape harvest season.",
+      "title": "와인 페스티벌",
+      "content": "9월에 열리는 옌타이 국제 와인 축제는 시음, 투어, 문화 행사들로 현지 와인 문화를 보여줍니다. 이는 포도 수확 시즌과重合합니다.",
       "importance": "medium"
     },
     {
       "category": "transportation",
-      "title": "Getting Around",
-      "content": "Yantai is spread out with attractions in different districts. Renting a car is recommended for visiting Penglai and Changdao. Didi works well for city transport. Buses are available but can be crowded.",
+      "title": "이동 방법",
+      "content": "옌타이는 넓고 명소가 다른 구에 분산되어 있습니다.蓬莱와 장다오 방문에는 렌터카 이용이 권장됩니다. 디디는 도시 교통에 잘 맞습니다. 버스는 이용 가능하지만 붐빌 수 있습니다.",
       "importance": "medium"
     },
     {
       "category": "weather",
-      "title": "Coastal Weather",
-      "content": "Yantai has pleasant sea breezes in summer making it cooler than inland Shandong. However, winter can be cold and windy from the sea. The fog is common in spring.",
+      "title": "해안 날씨",
+      "content": "옌타이는 여름에 쾌적한 해풍이 있어 산동 내륙보다 시원합니다. 그러나 겨울은 바다에서 춥고 바람이 강합니다. 봄에는 안개가 흔합니다.",
       "importance": "medium"
     },
     {
       "category": "nightlife",
-      "title": "Evening Entertainment",
-      "content": "Yantai has growing nightlife centered around Fisherman's Wharf, Chaoyang Street, and the coastal zones. Moon Bay is romantic in the evening. The MixC mall has late-night entertainment.",
+      "title": "저녁 오락",
+      "content": "옌타이는 어촌 부두, 조양가, 해안 지구들을 중심으로 성장하는 나이트라이프가 있습니다. 문베이는 저녁에 로맨틱합니다. 믹스씨 몰에는 심야 오락이 있습니다.",
       "importance": "low"
     }
   ],
@@ -3150,126 +3150,126 @@
     {
       "type": "ambulance",
       "name": "烟台急救中心",
-      "nameEn": "Yantai Emergency Center",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "120",
-      "notes": "Major hospitals have English interpretation"
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "police",
       "name": "烟台市公安局",
-      "nameEn": "Yantai Public Security Bureau",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "110",
-      "notes": "Tourist police at major attractions"
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "hospital",
       "name": "烟台毓璜顶医院",
-      "nameEn": "Yantai Yuhuangding Hospital",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 535 602 1096",
-      "address": "20 Yantai Mountain Road, Zhifu District",
+      "address": "광저우",
       "coordinates": {
         "lat": 37.5456,
         "lng": 121.4014
       },
-      "notes": "English-speaking staff available"
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "hospital",
       "name": "烟台市烟台山医院",
-      "nameEn": "Yantai Mountain Hospital",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 535 660 2000",
-      "address": "88 Yantai Mountain Road, Zhifu District",
+      "address": "광저우",
       "coordinates": {
         "lat": 37.5456,
         "lng": 121.4014
       },
-      "notes": "Another major hospital with English staff"
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "tourist-police",
       "name": "烟台旅游警察",
-      "nameEn": "Yantai Tourist Police",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 535 620 9110",
-      "notes": "English-speaking tourist police"
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "fire",
       "name": "烟台消防",
-      "nameEn": "Yantai Fire Department",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "119",
-      "notes": "Fire and rescue services"
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "embassy",
       "name": "美国驻青岛总领事馆",
-      "nameEn": "US Consulate General Qingdao",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 532 8090 0001",
-      "address": "Qingdao",
-      "notes": "For US citizens in Yantai region"
+      "address": "광저우",
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "embassy",
       "name": "英国驻青岛总领事馆",
-      "nameEn": "UK Consulate General Qingdao",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 532 8090 0801",
-      "address": "Qingdao",
-      "notes": "For UK citizens in Yantai region"
+      "address": "광저우",
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "embassy",
       "name": "日本驻青岛总领事馆",
-      "nameEn": "Japan Consulate General Qingdao",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 532 8090 0001",
-      "address": "Qingdao",
-      "notes": "For Japanese citizens in Yantai region"
+      "address": "광저우",
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "embassy",
       "name": "韩国驻青岛总领事馆",
-      "nameEn": "South Korea Consulate General Qingdao",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 532 8090 0188",
-      "address": "Qingdao",
-      "notes": "For Korean citizens in Yantai region"
+      "address": "광저우",
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "embassy",
       "name": "法国驻青岛总领事馆",
-      "nameEn": "France Consulate General Qingdao",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 532 8090 0900",
-      "address": "Qingdao",
-      "notes": "For French citizens in Yantai region"
+      "address": "광저우",
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "embassy",
       "name": "德国驻青岛总领事馆",
-      "nameEn": "Germany Consulate General Qingdao",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 532 8090 0700",
-      "address": "Qingdao",
-      "notes": "For German citizens in Yantai region"
+      "address": "광저우",
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻青岛总领事馆",
-      "nameEn": "Australia Consulate General Qingdao",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 532 8090 0500",
-      "address": "Qingdao",
-      "notes": "For Australian citizens in Yantai region"
+      "address": "광저우",
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "embassy",
       "name": "加拿大驻青岛总领事馆",
-      "nameEn": "Canada Consulate General Qingdao",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 532 8090 0600",
-      "address": "Qingdao",
-      "notes": "For Canadian citizens in Yantai region"
+      "address": "광저우",
+      "notes": "싱가포르 시민용"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese, Yantai dialect",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Tap water safe after boiling; bottled water recommended"
+    "language": "중국어 (북경어)",
+    "currency": "인민폐 (CNY/RMB)",
+    "visa": "대부분의 국적은 비자가 필요합니다. 자격이 있는 경우 공항에서 72시간 환승 비자를 받을 수 있습니다.",
+    "timeZone": "UTC+8 (중국 표준시)",
+    "electricity": "220V/50Hz, A/I 타입 플러그",
+    "water": "수돗물은 마실 수 있지만 병물을 권장합니다"
   }
 }

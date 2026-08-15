@@ -15,8 +15,8 @@ import { getLangFromUrl } from '@/i18n/utils';
 ---
 
 <BaseLayout
-  title={translations.en.businessGuidePage?.translationTitle || "Translation & Interpreting Services - ChinaConnect"}
-  description={translations.en.businessGuidePage?.translationDescription || "Book vetted interpreters and translators for meetings, conferences, and negotiations in China."}
+  title={(translations[lang] || translations.en).businessGuidePage?.translationTitle || "Translation & Interpreting Services - ChinaConnect"}
+  description={(translations[lang] || translations.en).businessGuidePage?.translationDescription || "Book vetted interpreters and translators for meetings, conferences, and negotiations in China."}
   meta={{
     keywords: ['interpreter China', 'Chinese translation services', 'Chinese translator booking', 'consecutive interpreting China', 'simultaneous interpreting'],
   }}
@@ -36,10 +36,8 @@ import { getLangFromUrl } from '@/i18n/utils';
           <p class="text-muted-foreground text-lg" data-i18n="businessGuidePage.translationSubtitle">Translation & Interpreting</p>
         </div>
       </div>
-      <p class="text-muted-foreground max-w-2xl">
-        Book professional interpreters and translators for your business visits in China.
-        From consecutive interpreting at meetings to certified document translation for visa applications.
-      </p>
+      <p class="text-muted-foreground max-w-2xl" data-i18n="businessGuidePage.translationDescription">Book professional interpreters and translators for your business visits in China.
+        From consecutive interpreting at meetings to certified document translation for visa applications.</p>
     </div>
 
     <TranslationServiceClient client:load lang={lang} />

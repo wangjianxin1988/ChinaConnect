@@ -20,13 +20,50 @@ for (const f of files) {
   const slug = d.slug;
   // City-level strings (always string)
   if (d.description) { out[`city.${slug}.description`] = d.description; count++; }
-  // Climate is an object - keep English-only for sub-fields (temps, months)
-  // Cultural tips
-  if (d.culturalTips) for (let i = 0; i < d.culturalTips.length; i++) if (d.culturalTips[i]) { const tipContent = d.culturalTips[i].content || d.culturalTips[i]; out[`city.${slug}.culturalTip.${i}`] = typeof tipContent === "string" ? tipContent : JSON.stringify(tipContent); count++; }
+  // Climate is an object - translate type label; keep months/temps as English-only
+  if (d.climate) {
+    if (d.climate.type && typeof d.climate.type === 'string') {
+      out['city.' + slug + '.climate.type'] = d.climate.type; count++;
+    }
+    if (Array.isArray(d.climate.bestMonths)) {
+      for (let i = 0; i < d.climate.bestMonths.length; i++) {
+        if (d.climate.bestMonths[i]) {
+          out['city.' + slug + '.climate.bestMonths.' + i] = d.climate.bestMonths[i]; count++;
+        }
+      }
+    }
+  }
+  // Population
+  if (d.population && typeof d.population === 'string') {
+    out['city.' + slug + '.population'] = d.population; count++;
+  }
+  // Cultural tips (both title and content)
+  if (d.culturalTips) for (let i = 0; i < d.culturalTips.length; i++) {
+    const tip = d.culturalTips[i];
+    if (!tip) continue;
+    if (typeof tip === "string") { out[`city.${slug}.culturalTip.${i}`] = tip; count++; }
+    else if (typeof tip === "object") {
+      if (tip.content) { out[`city.${slug}.culturalTip.${i}`] = tip.content; count++; }
+      if (tip.title) { out[`city.${slug}.culturalTip.${i}.title`] = tip.title; count++; }
+    }
+  }
   // Highlights
   if (d.highlights) for (let i = 0; i < d.highlights.length; i++) if (d.highlights[i]) { out[`city.${slug}.highlight.${i}`] = d.highlights[i]; count++; }
   // Quick facts (label only)
-  if (d.quickFacts && Array.isArray(d.quickFacts)) for (const f2 of d.quickFacts) if (f2 && f2.label) { out[`city.${slug}.fact.${f2.label.toLowerCase().replace(/[^a-z0-9]+/g, "_")}`] = f2.label + "|" + (f2.value || ""); count++; }
+  if (d.quickFacts) {
+    if (Array.isArray(d.quickFacts)) {
+      for (const f2 of d.quickFacts) if (f2 && f2.label) { out[`city.${slug}.fact.${f2.label.toLowerCase().replace(/[^a-z0-9]+/g, "_")}`] = f2.label + "|" + (f2.value || ""); count++; }
+    } else if (typeof d.quickFacts === 'object') {
+      // object form: { language: '...', currency: '...', visa: '...', timeZone: '...', electricity: '...', water: '...' }
+      for (const k of Object.keys(d.quickFacts)) {
+        const v = d.quickFacts[k];
+        if (typeof v === 'string' && v.length > 0) {
+          out[`city.${slug}.fact.${k}`] = v;
+          count++;
+        }
+      }
+    }
+  }
   // Attractions
   for (const a of d.attractions || []) {
     const aid = a.id;
@@ -38,7 +75,7 @@ for (const f of files) {
   // Restaurants
   for (const r of d.restaurants || []) {
     const rid = r.id;
-    for (const k of ['nameEn', 'cuisine', 'address', 'hours', 'description']) {
+    for (const k of ['nameEn', 'name', 'cuisine', 'address', 'hours', 'description', 'type']) {
       if (r[k] && typeof r[k] === 'string') { out[`rest.${rid}.${k}`] = r[k]; count++; }
     }
     if (r.dishHighlights) for (let i = 0; i < r.dishHighlights.length; i++) if (r.dishHighlights[i]) { out[`rest.${rid}.dish.${i}`] = r.dishHighlights[i]; count++; }

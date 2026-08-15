@@ -1,8 +1,8 @@
 // Translate content-en.json to per-language files. Resumable.
 import fs from "fs";
+import { getMiniMaxConfig } from "./scripts/lib/minimax-config.mjs";
 
-const KEY = "REDACTED_MINIMAX_KEY";
-const HOST = "https://api.minimax.io";
+const { apiKey: KEY, baseUrl: HOST } = getMiniMaxConfig();
 const MODEL = "MiniMax-Text-01";
 const PARALLEL = 4;
 const BATCH = 5; // smaller batch = better distinctness

@@ -27,6 +27,7 @@ interface AppRecommendationsSectionProps {
   showCategoryFilter?: boolean;
   compact?: boolean;
   className?: string;
+  lang?: string;
 }
 
 export function AppRecommendationsSection({
@@ -36,6 +37,7 @@ export function AppRecommendationsSection({
   showCategoryFilter = true,
   compact = false,
   className = "",
+  lang = "en",
 }: AppRecommendationsSectionProps) {
   const essentialApps = getEssentialApps();
   const englishApps = getEnglishFriendlyApps();
@@ -108,7 +110,7 @@ export function AppRecommendationsSection({
             <div key={category} className="bg-white rounded-xl p-4 shadow-sm">
               <h3 className="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2">
                 <span>{catInfo.icon}</span>
-                <span>{catInfo.labelZh}</span>
+                <span>{lang === "ja" ? (JA_CAT[category] || catInfo.label) : catInfo.labelZh}</span>
                 <span className="text-gray-400 text-sm font-normal">/ {catInfo.label}</span>
               </h3>
 
@@ -141,7 +143,7 @@ export function AppRecommendationsSection({
                             </span>
                           )}
                         </div>
-                        <p className="text-sm text-gray-600 mt-0.5">{app.descriptionEn}</p>
+                        <p className="text-sm text-gray-600 mt-0.5">{lang === "ja" && app.descriptionJa ? app.descriptionJa : app.descriptionEn}</p>
 
                         {webUrl && (
                           <div className="flex items-center gap-2 mt-2">
@@ -246,7 +248,7 @@ export function AppCard({ app, showDownload = true }: AppCardProps) {
             </span>
           )}
         </div>
-        <p className="text-xs text-gray-500 truncate">{app.descriptionEn}</p>
+        <p className="text-xs text-gray-500 truncate">{lang === "ja" && app.descriptionJa ? app.descriptionJa : app.descriptionEn}</p>
       </div>
       {showDownload && app.appStoreUrl && (
         <a

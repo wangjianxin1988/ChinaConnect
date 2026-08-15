@@ -1,0 +1,368 @@
+=== beijing.json (6)
+  transport.arrival[1].from = Shanghai (4.5h), Xian (4.5h)
+  hotels[2].highlights[0] = Central location
+  hotels[17].highlights[2] = Central location
+  payment[1].howToUse[0] = WeChat app required
+  payment[4].howToUse[2] = International cards often work with UnionPay terminals
+  emergencyContacts[15].address = Citywide coverage
+=== changsha.json (10)
+  hotels[2].highlights[3] = Central location
+  hotels[3].highlights[0] = Central location
+  hotels[5].highlights[0] = Central location
+  hotels[8].highlights[0] = Central location
+  hotels[10].highlights[0] = Central business district
+  hotels[16].highlights[0] = Central location
+  transport.arrival[1].from = Shanghai (4h), Beijing (5.5h), Guangzhou (2.5h), Shenzhen (3h), Wuhan (1.5h)
+  payment[1].howToUse[0] = WeChat app required
+  emergencyContacts[6].address = Guangzhou (closest US consulate)
+  emergencyContacts[7].address = Guangzhou (nearest UK consulate)
+=== chengde.json (5)
+  hotels[2].highlights[0] = Central location
+  hotels[8].highlights[0] = Central location
+  hotels[14].highlights[2] = Central location
+  payment[1].howToUse[0] = WeChat required
+  payment[1].howToUse[1] = International cards accepted
+=== chengdu.json (8)
+  hotels[2].highlights[1] = Central location
+  hotels[6].highlights[0] = Central location
+  hotels[11].highlights[1] = Central location
+  hotels[14].highlights[1] = Central location
+  payment[1].howToUse[0] = WeChat app required
+  emergencyContacts[0].address = Citywide coverage
+  emergencyContacts[5].address = Chongqing (nearest for Chengdu)
+  emergencyContacts[8].address = Citywide coverage
+=== chongqing.json (10)
+  hotels[0].highlights[3] = Central location
+  hotels[5].highlights[0] = Central business district
+  hotels[7].highlights[0] = Central location
+  hotels[12].highlights[1] = Central location
+  hotels[13].highlights[1] = Central location
+  payment[1].howToUse[0] = WeChat required
+  payment[1].howToUse[1] = International cards accepted
+  emergencyContacts[3].address = Chengdu (nearest US consular services)
+  emergencyContacts[7].address = Chongqing (only UK consular office in city)
+  emergencyContacts[8].address = Chongqing (only Japanese consular office in city)
+=== dali.json (8)
+  hotels[2].highlights[0] = Central location
+  hotels[5].highlights[1] = Central location
+  hotels[8].highlights[0] = Central location
+  hotels[10].highlights[2] = Central location
+  payment[1].howToUse[0] = WeChat required
+  payment[1].howToUse[1] = International cards accepted
+  emergencyContacts[0].notes = Dali People's Hospital has English interpreters
+  emergencyContacts[3].address = Kunming (nearest US consular services)
+=== dalian.json (4)
+  hotels[1].highlights[1] = Central location
+  hotels[8].highlights[0] = Central location
+  payment[1].howToUse[0] = WeChat required
+  payment[1].howToUse[1] = International cards accepted
+=== dunhuang.json (6)
+  hotels[0].highlights[0] = Central location
+  hotels[2].highlights[1] = Central location
+  hotels[8].highlights[0] = Central location
+  payment[1].howToUse[0] = WeChat required
+  payment[1].howToUse[1] = International version
+  emergencyContacts[2].address = Dunhuang City
+=== fuzhou.json (9)
+  hotels[0].highlights[2] = Central location
+  hotels[5].highlights[1] = Central location
+  hotels[6].highlights[1] = Central location
+  hotels[7].highlights[0] = Central location
+  hotels[8].highlights[2] = Central location
+  hotels[10].highlights[0] = Central location
+  hotels[13].highlights[2] = Central location
+  payment[1].howToUse[0] = WeChat required
+  payment[1].howToUse[1] = International cards accepted
+=== guangzhou.json (9)
+  hotels[1].highlights[2] = Central location
+  hotels[2].highlights[0] = Central location near Grandview Mall
+  hotels[5].highlights[2] = Central location
+  hotels[11].highlights[1] = Central location
+  hotels[13].highlights[2] = Central location
+  payment[1].howToUse[0] = WeChat app required
+  payment[1].tips[0] = Didi taxi requires WeChat
+  emergencyContacts[0].address = Citywide coverage
+  emergencyContacts[5].address = Citywide coverage
+=== guilin.json (9)
+  hotels[2].highlights[0] = Central location on river
+  hotels[4].highlights[0] = Central Xi Street location
+  hotels[5].highlights[1] = Central location
+  hotels[6].highlights[2] = Central location
+  hotels[12].highlights[0] = Central location
+  payment[1].howToUse[0] = WeChat app required
+  payment[1].tips[0] = Didi requires WeChat
+  emergencyContacts[0].address = Citywide coverage
+  emergencyContacts[6].address = Citywide coverage
+=== hangzhou.json (7)
+  transport.arrival[1].from = Shanghai (45min-1h), Nanjing (1h), Beijing (4.5h)
+  hotels[3].highlights[0] = Central business district
+  hotels[6].highlights[1] = Central location
+  hotels[10].highlights[0] = Central business district
+  hotels[12].highlights[0] = Central location
+  payment[1].howToUse[0] = WeChat app required
+  emergencyContacts[3].address = Shanghai (nearest US consular services for Hangzhou)
+=== harbin.json (12)
+  hotels[0].highlights[1] = Central location
+  hotels[1].highlights[2] = Central location
+  hotels[2].highlights[1] = Central location
+  hotels[3].highlights[2] = Central location
+  hotels[4].highlights[0] = Central location
+  hotels[5].highlights[1] = Central location
+  hotels[6].highlights[0] = Central location
+  hotels[8].highlights[2] = Central location
+  hotels[10].highlights[1] = Central location
+  payment[1].howToUse[0] = WeChat required
+  payment[1].howToUse[1] = International cards accepted
+  emergencyContacts[8].address = Shenyang (nearest US consular services)
+=== hulunbuir.json (5)
+  hotels[0].highlights[0] = Central location
+  hotels[1].highlights[1] = Central location
+  payment[1].howToUse[0] = WeChat required
+  payment[1].howToUse[1] = International version available
+  emergencyContacts[2].address = Hulunbuir City Center
+=== jinan.json (10)
+  hotels[0].highlights[0] = Central location
+  hotels[1].highlights[3] = Central location
+  hotels[2].highlights[2] = Central location
+  hotels[3].highlights[0] = Central location
+  hotels[4].highlights[1] = Central location
+  hotels[8].highlights[0] = Central location
+  hotels[13].highlights[0] = International brand
+  payment[1].howToUse[0] = WeChat required
+  payment[1].howToUse[1] = International cards accepted
+  emergencyContacts[6].address = Shenyang (serves Jinan region)
+=== kunming.json (29)
+  hotels[1].highlights[1] = Central location
+  hotels[5].highlights[1] = Central location
+  hotels[10].highlights[1] = Central location
+  hotels[14].highlights[3] = Simple breakfast
+  hotels[16].highlights[2] = Central location
+  hotels[18].highlights[2] = Central location
+  emergencyContacts[0].address = Kunming City
+  emergencyContacts[2].address = Kunming City Center
+  emergencyContacts[3].address = Kunming City Center
+  emergencyContacts[4].address = Kunming City
+  emergencyContacts[5].address = Kunming City
+  emergencyContacts[6].address = Kunming City
+  emergencyContacts[8].address = Kunming City
+  emergencyContacts[9].address = Kunming City
+  emergencyContacts[10].address = Kunming City
+  emergencyContacts[11].address = Kunming City
+  emergencyContacts[12].address = Kunming City
+  emergencyContacts[13].address = Kunming City
+  emergencyContacts[14].address = Kunming City
+  emergencyContacts[15].address = Kunming City
+  emergencyContacts[16].address = Kunming City
+  emergencyContacts[17].address = Kunming Railway Station
+  payment[1].tips[0] = WeChat is used for everything in China. WeChat Pay is integrated. Both Alipay and WeChat Pay are accepted almost everywhere.
+  payment[1].howToUse[0] = WeChat is used for everything in China. WeChat Pay is integrated. Both Alipay and WeChat Pay are accepted almost everywhere.
+  payment[4].name = Visa／Mastercard
+  payment[4].description = International credit cards accepted at large hotels and upscale restaurants only
+  transport.arrival[0].highlights[0] = International flights to Southeast Asia
+  transport.local.taxi[0][0] = Didi app works well for English users with translation
+  transport.local.rental[1][0] = International license may not be accepted - check requirements
+=== lanzhou.json (5)
+  hotels[0].highlights[0] = Central location
+  hotels[2].highlights[0] = Central location
+  hotels[6].highlights[1] = Central location
+  payment[1].howToUse[0] = WeChat required
+  payment[1].howToUse[1] = International version works
+=== lijiang.json (26)
+  restaurants[7].highlights[3] = WiFi available
+  hotels[1].highlights[2] = Central location
+  hotels[3].highlights[0] = Central old town
+  hotels[6].highlights[2] = Central location
+  hotels[13].highlights[2] = Central location
+  hotels[16].description = Simple guesthouse at foot of Jade Dragon Snow Mountain with basic rooms, mountain views, and local character.
+  hotels[16].highlights[2] = Simple but clean
+  emergencyContacts[0].address = Lijiang City
+  emergencyContacts[2].address = Lijiang City Center
+  emergencyContacts[3].address = Lijiang City Center
+  emergencyContacts[4].address = Lijiang City
+  emergencyContacts[5].address = Lijiang City
+  emergencyContacts[6].address = Lijiang City
+  emergencyContacts[7].address = Lijiang Old Town
+  emergencyContacts[11].address = Lijiang City
+  emergencyContacts[12].address = Lijiang City
+  emergencyContacts[13].address = Kunming (provincial)
+  emergencyContacts[16].address = Lijiang area roads
+  emergencyContacts[17].address = Lijiang Railway Station
+  emergencyContacts[19].address = Lijiang City
+  emergencyContacts[20].address = Lijiang City
+  emergencyContacts[21].address = Lijiang City
+  payment[1].tips[0] = WeChat is more than payment - it's how people communicate. WeChat Pay works at most merchants. Both are equally accepted.
+  payment[1].howToUse[0] = WeChat is more than payment - it's how people communicate. WeChat Pay works at most merchants. Both are equally accepted.
+  payment[4].name = Visa／Mastercard
+  transport.local.taxi[0][2] = Didi works in Lijiang for English users
+=== luoyang.json (8)
+  hotels[0].highlights[0] = Central location
+  hotels[1].highlights[0] = Central location
+  hotels[3].highlights[3] = Central location
+  hotels[4].highlights[1] = Central location
+  hotels[7].highlights[0] = Central location
+  hotels[10].highlights[1] = Central location
+  payment[1].howToUse[0] = WeChat required
+  payment[1].howToUse[1] = International cards accepted
+=== nanjing.json (10)
+  transport.arrival[1].from = Shanghai (1h), Beijing (3.5h), Hangzhou (2.5h)
+  hotels[0].highlights[0] = Central location
+  hotels[1].highlights[3] = Central location
+  hotels[5].highlights[0] = Central location
+  hotels[6].highlights[2] = Central location
+  hotels[10].highlights[0] = Central location
+  hotels[14].highlights[1] = Central location
+  payment[1].howToUse[0] = WeChat required
+  payment[1].howToUse[1] = International cards accepted
+  emergencyContacts[3].address = Shanghai (nearest US consular services)
+=== ningbo.json (11)
+  transport.arrival[1].from = Shanghai (2h), Hangzhou (1h), Xian (8h)
+  hotels[0].highlights[1] = Central location
+  hotels[2].highlights[0] = Central location
+  hotels[3].highlights[1] = Central location
+  hotels[3].highlights[2] = Westin quality
+  hotels[3].bookingTips = Westin brand quality. Book direct for best rates.
+  hotels[4].highlights[3] = Central location
+  hotels[6].highlights[2] = Central location
+  hotels[12].highlights[2] = Central location
+  payment[1].howToUse[0] = WeChat required
+  payment[1].howToUse[1] = International cards accepted
+=== qingdao.json (1)
+  payment[4].name = VISA/Mastercard
+=== quanzhou.json (6)
+  hotels[0].highlights[0] = Central location
+  hotels[3].highlights[2] = Central location
+  hotels[16].highlights[0] = International brand
+  payment[1].howToUse[0] = WeChat required
+  emergencyContacts[6].address = Jinjiang District
+  emergencyContacts[11].address = Fuzhou (nearby)
+=== sanya.json (12)
+  hotels[4].highlights[0] = Central location
+  hotels[8].highlights[2] = Central location
+  hotels[10].highlights[2] = Central area
+  hotels[12].highlights[1] = Central location
+  hotels[17].highlights[2] = Central area
+  hotels[19].highlights[0] = Central location
+  emergencyContacts[7].address = Sanya Bay
+  emergencyContacts[10].address = Sanya Bus Station
+  emergencyContacts[22].address = Sanya Bus Station
+  emergencyContacts[23].address = Sanya Bay
+  payment[1].tips[0] = International version WeChat Pay supports foreign cards
+  transport.arrival[1].from = Shanghai/Pudong International Airport (PVG)
+=== shanghai.json (17)
+  transport.arrival[0].to = Shanghai Pudong International Airport (PVG) / Hongqiao Airport (SHA)
+  transport.arrival[1].to = Shanghai Hongqiao Railway Station / Shanghai Railway Station
+  hotels[1].highlights[2] = Central location
+  hotels[4].highlights[2] = Central location
+  hotels[5].highlights[2] = Central location
+  hotels[11].highlights[2] = Central location
+  hotels[16].highlights[3] = Central location
+  payment[1].howToUse[0] = WeChat app required
+  payment[4].howToUse[2] = International cards with UnionPay logo work
+  emergencyContacts[0].address = Citywide coverage
+  emergencyContacts[2].address = Shanghai Centre, 1376 Nanjing West Rd, Jing'an
+  emergencyContacts[5].address = Citywide coverage
+  emergencyContacts[6].address = Citywide coverage
+  emergencyContacts[7].address = Citywide coverage
+  emergencyContacts[8].address = Citywide coverage
+  emergencyContacts[9].address = Citywide coverage
+  emergencyContacts[14].address = Citywide coverage
+=== shenzhen.json (6)
+  hotels[1].highlights[0] = Central location
+  hotels[6].highlights[2] = Central location
+  hotels[10].highlights[0] = Central location
+  payment[1].howToUse[0] = WeChat required
+  payment[1].howToUse[1] = International cards accepted
+  emergencyContacts[3].address = Guangzhou (nearest US consular services)
+=== suzhou.json (10)
+  transport.arrival[0].from = Shanghai Hongqiao (30min), Shanghai South (45min), Beijing (4.5h)
+  transport.arrival[1].from = Shanghai (1.5h), Hangzhou (2h)
+  hotels[0].highlights[2] = Central location
+  hotels[1].highlights[1] = Central location
+  hotels[7].highlights[0] = Central location
+  payment[1].howToUse[0] = WeChat required
+  payment[1].howToUse[1] = International cards work
+  emergencyContacts[0].notes = Suzhou Hospital has English interpretation
+  emergencyContacts[3].address = Shanghai (nearest US consular services)
+  emergencyContacts[10].address = Suzhou Industrial Park
+=== tianjin.json (11)
+  hotels[0].highlights[2] = Central location
+  hotels[1].highlights[2] = Central location
+  hotels[2].highlights[3] = Central location
+  hotels[5].highlights[0] = Central location
+  hotels[8].highlights[1] = Central location
+  hotels[9].highlights[0] = Central location
+  hotels[10].highlights[2] = Central location
+  hotels[11].highlights[1] = Central location
+  hotels[11].bookingTips = Westin quality with central location. Book direct for perks.
+  payment[1].howToUse[0] = WeChat required
+  payment[1].howToUse[1] = International cards accepted
+=== weihai.json (7)
+  hotels[1].highlights[0] = Central location
+  hotels[2].highlights[2] = Central location
+  hotels[3].highlights[0] = Central location
+  hotels[4].highlights[0] = Central location
+  hotels[12].highlights[1] = Central location
+  payment[1].howToUse[0] = WeChat required
+  payment[1].howToUse[1] = International cards accepted
+=== wuhan.json (12)
+  hotels[1].highlights[0] = Central location
+  hotels[4].highlights[0] = Central business district
+  hotels[8].highlights[0] = Central location
+  hotels[12].highlights[1] = Central location
+  hotels[13].highlights[3] = Central location
+  hotels[15].highlights[2] = Central location
+  transport.arrival[0].to = Wuhan Tianhe International Airport (WUH)
+  transport.arrival[0].tips = Wuhan has direct flights to many domestic cities. Airport is 26km from city center. Metro Line 2 connects to city center (35¥, 50 minutes).
+  transport.arrival[1].from = Shanghai (3.5h), Beijing (4h), Guangzhou (4h), Shenzhen (4.5h)
+  transport.arrival[1].to = Wuhan Railway Station / Wuhan Station / Wuchang Station
+  transport.arrival[1].tips = Wuhan is a major railway hub with excellent high-speed rail connections. Wuhan Station is for high-speed trains. Wuchang Station has more routes.
+  payment[1].howToUse[0] = WeChat app required
+=== xiamen.json (14)
+  restaurants[2].name = xm-yuxi
+  restaurants[3].name = xm-jianong
+  restaurants[16].name = xm-zhaole
+  restaurants[17].name = xm-chengyi
+  transport.arrival[2].from = Shanghai (6h), Shenzhen (3h), Hangzhou (4h)
+  hotels[0].highlights[2] = Central location
+  hotels[4].highlights[1] = Central location
+  hotels[8].highlights[1] = Central location
+  hotels[9].highlights[3] = Central to attractions
+  payment[1].howToUse[0] = WeChat app required
+  emergencyContacts[1].address = Xiamen City Center
+  emergencyContacts[6].address = Xiamen Center, 95 Lujiang Road
+  emergencyContacts[7].address = Xiamen International Bank Building, 50 Lujiang Road
+  emergencyContacts[12].address = Xiamen Port
+=== xian.json (6)
+  hotels[0].highlights[0] = Central location near Bell Tower
+  hotels[9].highlights[1] = Central location
+  payment[1].howToUse[0] = WeChat app required
+  payment[1].tips[1] = Didi requires WeChat
+  emergencyContacts[0].address = Citywide coverage
+  emergencyContacts[5].address = Citywide coverage
+=== xining.json (7)
+  hotels[0].highlights[0] = Central location
+  hotels[6].highlights[0] = Central location
+  hotels[8].highlights[2] = Central options
+  payment[1].howToUse[0] = WeChat required
+  payment[1].howToUse[1] = International version available
+  emergencyContacts[2].address = Xining City
+  emergencyContacts[5].address = Lhasa (nearest consular services)
+=== yantai.json (5)
+  hotels[1].highlights[0] = Central location
+  hotels[3].highlights[0] = Central location
+  hotels[4].highlights[2] = Central location
+  payment[1].howToUse[0] = WeChat required
+  payment[1].howToUse[1] = International cards accepted
+=== zhangjiajie.json (11)
+  hotels[1].highlights[0] = Central location
+  hotels[1].highlights[1] = International standards
+  hotels[5].highlights[0] = Central location
+  hotels[7].highlights[1] = Central location
+  hotels[8].highlights[2] = Simple rooms
+  hotels[14].highlights[2] = Central location
+  payment[1].howToUse[0] = WeChat app required
+  emergencyContacts[0].address = Citywide coverage
+  emergencyContacts[2].address = Citywide coverage
+  emergencyContacts[8].address = Guangzhou (nearest consular services)
+  emergencyContacts[11].address = City Center, Zhangjiajie
+TOTAL: 332

@@ -1,0 +1,838 @@
+﻿# ChinaConnect 多语言 i18n 修复 — 交接文档
+
+> **强制协议**：每个新会话第一步 = 用 Python 读 `.audit/HANDOFF.md` 的真实 UTF-8 内容（不要用 PowerShell `cat/Get-Content`，会 mojibake）。然后按本文档 §3 待办清单继续推进。每个会话结束前必须把"做了啥 + 下一个会话该做啥"追加到 §10。
+>
+> **后续反馈（2026-08-12）**:
+> 1. 不要用"中国12主要都市"那种描述，未来城市会持续增加。城市描述用"中国主要都市"或更通用的表达。
+> 2. 按日语版的最终态为标准，同步更新其它所有 12 语言。
+> 3. 多线程限制：最多 3 个并发子代理，防止触发模型频率限制。
+> 4. 不要主动部署到生产环境；先在本地 dev 验证。
+
+---
+
+## §0. 快速上下文
+
+- **项目路径**: `D:/suoyouxiangmu/chinaconnect` — ChinaConnect 网站（日语域名 chinaengage.org）
+- **技术栈**: Astro 5 + React 18 + Tailwind + Supabase（数据源在 `src/data/cities/*.json`，英文源）
+- **i18n 策略**: 12 语言 (en / ja / ko / zh-CN / zh-TW / th / vi / ru / fr / de / ar / fa)。翻译分三层：
+  1. `src/i18n/translations.ts` (16852 行 / 858KB) — UI 文案大字典，`applyString()` 客户端注入
+  2. `src/i18n/locales/{lang}.json` (229 行) — 第二套 UI 简版
+  3. `src/data/cities-i18n/{lang}/{slug}.json` (35 城市 × 11 语言 = 385 个 JSON) — 字段级翻译
+- **运行时**: Astro dev server 必须 `astro dev --host`（不带值）才能监听 `0.0.0.0:4321` + `[::]:4321` 双栈；只 IPv4 监听会导致 `[::1]` IPv6 卡死
+- **当前 dev 状态**: PID 58944，已确认 `netstat -ano | findstr :4321` 见 `0.0.0.0:4321` 与 `[::]:4321` 两条 LISTENING
+- **关键约定**: 中文回复；最多 3 个并发子代理；每个新会话第一步读本文档
+- **不要做**: 不要主动部署到生产；不要大改项目结构（除非用户明确同意）；不要修改 `src/data/cities/*.json` 英文源数据
+---
+
+## §1. 用户原始任务与已抓取的 SSR 证据
+
+### 1.1 任务清单（按用户原始表述）
+
+1. **首页「都市を探す」板块**：卡片介绍全是英语，请全部翻译成 12 语言（含 ja）
+2. **首页「あなたへのおすすめ」板块**：卡片介绍全是英语，请翻译 12 语言
+3. **`/ja/cities/` 城市列表页**：
+   - 算法介绍 / 分类 / 卡片全是英语
+   - 顶部描述"中国12主要都市..."**错误**（用户明确指示改为通用表达，因实际 35 个城市且会持续增加）
+4. **`/[lang]/city/[slug].astro` 城市详情页**（以北京为例）：
+   - 城市介绍内容是英语，需要翻译 12 语言
+   - 详情页内部小导航按钮（Overview / Food / Attractions / Transport / Hotels / Payment / SIM / Apps / Culture / Emergency）是英语，要翻译
+   - 板块标题日文化但板块**内容**仍英语（最適訪問時期、移動手段、支払いとお金、SIM & eSIM、必須アプリ、緊急連絡先 等板块）
+   - **所有城市的上述板块都要翻译**，不能只修北京
+
+5. **`/[lang]/city/[slug]/attractions/` 景点列表**：卡片标题（如"故宫博物院"）已是中文/日文，但**副标题 / 描述**仍英文或简中
+6. **`/[lang]/city/[slug]/food/` 美食列表**：上方 `{city}のグルメ` 显示代码未解析，要修正
+7. **数据源补充**: `src/data/cities-i18n/{lang}/{slug}.json` 字段级翻译，全 35 城市 × 11 语言
+
+### 1.2 已抓取的 SSR 残留英文（实际显示在浏览器中）
+
+**北京主页 `/ja/city/beijing/` 残留**:
+- 紧急部分：`Quick Dial (Inside China)` / `For Foreign Visitors (Reachable Internationally)` / `Hospitals` / `Embassies & Consulates` / `Other Emergency Numbers`
+- Apps 部分：`Recommended Transport Apps` / `Three-in-One Food Map` / `本地美食亮点` / `探索 Beijing 全部美食`
+- Payment 部分：`Alipay` / `WeChat Pay` / `Cash (RMB)` / `International Credit Cards` / `UnionPay` / `Foreign Exchange`
+
+**北京美食页 `/ja/city/beijing/food/` 残留**:
+- 17 张卡片副标题仍是简中（`巷子炸酱面`、`地道豆汁` 等），未国际化
+- 顶部 `{city}のグルメ` 模板字符串未渲染
+- 最底部 `数据ソースと参考資料` 板块内容仍简中
+
+**广州景点页 `/ja/city/guangzhou/attractions/` 残留**:
+- 50 张卡片副标题仍是简中（如 `在広州シンガポール総領事館` — 中日混搭 bug，需修源 JSON）
+- 卡片标题本身是简中而非日文
+- 已识别 bug：某些卡片 description 字段出现中文"在"+ 日文混搭，需查 `src/data/cities-i18n/ja/guangzhou.json` 内的 attractions 数组
+
+### 1.3 当前城市数据规模
+
+- 英文源 `src/data/cities/`: 35 城市 + index.ts + tier-data.ts + tier-utils.ts + types.ts，共 39 文件 / ~3.7MB
+- 单个城市（如 beijing.json）~110KB，包含字段：slug, name, nameEn, country, population, coordinates, timezone, description, coverImage, highlights, climate, **attractions (54 条)**, restaurants, transport, hotels (18 条), payment, culturalTips, emergencyContacts, quickFacts
+- i18n JSON 单城 ~85-130KB
+---
+
+## §2. 五大根因（带代码定位）
+
+> **怎么用本节**：新会话拿到文档后，先看 §3 待办对应"成因"标签，跑一次下面的诊断命令确认该根因仍存在，再开始修。
+
+### 根因 A — React island 硬编码英文（P0）
+
+**症状**: `client:load` 组件（如 EmergencySection、AttractionCard）即使在 `ja` 页面也显示英文。
+
+**根因**: 组件内嵌 `const STRINGS = { en: {...} }` 字典，但渲染时用 `STRINGS.en` 而不是按 `lang` prop 切换。
+
+**已识别的 P0 组件**（`src/components/city/`）：
+| 文件 | 残留英文示例 | 修复要点 |
+|------|-------------|---------|
+| `EmergencySection.tsx` | `Quick Dial (Inside China)`, `Hospitals`, `Other Emergency Numbers` | Section heading + 卡片 props 用 `tt(lang, key)` |
+| `EmergencyCard.tsx` | `QuickDialGrid` 标签 `Police / Ambulance / Fire` | 字典按 lang 切 |
+| `AttractionCard.tsx` | `Get Directions` 按钮、`CATEGORY_STYLES` keys | 同上 |
+| `RestaurantCard.tsx` | `Michelin / Black Pearl / Local` 标签 | 同上 |
+| `AttractionsSection.tsx` | `Loading…` / `Showing X of Y` / `View All` | 标题 + 计数文案 |
+| `FoodHighlightsSection.tsx` | `本地美食亮点`、`探索 Beijing 全部美食` | mojibake 修复 + i18n 注入 |
+| `CulturalSection.tsx` | `High Priority / Medium Priority / Low Priority` | 标签字典 |
+| `CityFoodNav.tsx` | `label` 字段未按 lang 切 | 用 `getCityFoodNavLabel(lang, key)` |
+| `RestaurantsSection.tsx` | 类似的标题/计数/分类 | 同 AttractionsSection |
+
+**修复模板（参考即可）**:
+```tsx
+// 旧版（错误）
+const STRINGS = { title: 'Quick Dial (Inside China)' };
+return <h3>{STRINGS.title}</h3>;
+
+// 新版（正确）
+const STRINGS = {
+  en: { title: 'Quick Dial (Inside China)' },
+  ja: { title: '中国国内から直接電話' },
+  'zh-CN': { title: '中国境内直拨' },
+  // ...其余 9 语言
+} as const;
+type Lang = keyof typeof STRINGS;
+function tt(lang: Lang, key: keyof typeof STRINGS.en): string {
+  return STRINGS[lang]?.[key] ?? STRINGS.en[key];
+}
+export default function EmergencySection({ lang = 'en' as Lang }) {
+  return <h3>{tt(lang, 'title')}</h3>;
+}
+```
+
+### 根因 B — Astro 页面缺 `displayName` 切换（P1）
+
+**症状**: 板块标题日文化但板块内组件 prop 仍传英文 name。
+
+**根因**: `src/pages/[lang]/city/[slug].astro` 等 astro 渲染模板里，对 React island 的 prop 直接传 `data.attractions[0].name`（英文源名）或 `data.attractions[0].nameJa`，但传错字段或没切语言。
+
+**修复要点**: 在 astro 文件里将 `en` 字段替换为 i18n 版本的 `displayName` 字段。
+
+```astro
+---
+import { getCityData } from '~/lib/city';
+const { lang, slug } = Astro.params;
+const data = getCityData(slug, lang); // 已按 lang 取 name
+---
+<AttractionCard attraction={data.attractions[0]} lang={lang} />
+```
+
+### 根因 C — `cities-i18n` JSON 字段错配（P3）
+
+**症状**: 景点卡片副标题仍是简中（`巷子炸酱面`），不是 `ja: '路地の炸酱面'`。
+
+**根因**: 英文源 `src/data/cities/beijing.json` 内的 attractions 数组里 `description` 字段已经被人手工塞了中文（应保持英文源），而 `cities-i18n/ja/beijing.json` 没有这条字段的翻译。
+
+**修复要点**: 在 `cities-i18n/{lang}/{slug}.json` 的对应子对象加 `subtitle_i18n` 或 `descriptionJa` 字段供组件读。
+
+### 根因 D — `src/data/food/categories.ts` 文件 mojibake（P1-已部分修复）
+
+**症状**: 美食分类标签 `麺類 / 火锅 / 小吃 / 甜品` 等乱码。
+
+**根因**: 文件曾被 GBK 写入过。
+
+**修复要点**: 用 Python `open(path,'w',encoding='utf-8').write(...)` 整文件重写为 UTF-8；labels 加 12 语言字段。
+
+### 根因 E — 客户端 `applyString` 缺 SSR 保护（P2）
+
+**症状**: 板块标题出现 `{city}のグルメ` 字面量或 `???` 占位符。
+
+**根因**: `src/layouts/BaseLayout.astro` 调用 `applyString(t(key), { city })`，但 `key` 未在当前语言字典里（缺失 fallback），渲染 `???`；并且 React hydrate 后才替换模板变量，SSR HTML 是字面量。
+
+**修复要点**: 在 BaseLayout 用 `useTranslation(lang)` + `t(key, params)` 模式，确保 SSR 输出最终 HTML。
+---
+
+## §3. 待办清单（P0 → P3 优先级排序）
+
+> **执行顺序**：按 P0 → P1 → P2 → P3，每条都用 §5 验证脚本确认后再进下一条。
+
+### P0 — 必须先修（阻塞展示）
+
+- [ ] **P0-1** `src/components/city/EmergencySection.tsx` — 加 `lang` prop + STRINGS 字典（参考 §2 模板）
+- [ ] **P0-2** `src/components/city/EmergencyCard.tsx` — QuickDialGrid 标签本地化（Police/Ambulance/Fire/ Tourist Police 等）
+- [ ] **P0-3** `src/components/city/AttractionCard.tsx` — `Get Directions` 按钮 + CATEGORY_STYLES 12 语言化
+- [ ] **P0-4** `src/components/city/RestaurantCard.tsx` — `Michelin / Black Pearl / Local` 标签字典
+- [ ] **P0-5** `src/components/city/AttractionsSection.tsx` — Loading / Showing X of Y / View All 文案
+- [ ] **P0-6** `src/components/city/FoodHighlightsSection.tsx` — 修 mojibake + i18n 标签
+- [ ] **P0-7** `src/components/city/CulturalSection.tsx` — High/Medium/Low Priority 文案
+- [ ] **P0-8** `src/components/city/CityFoodNav.tsx` — label 按 lang 切换
+
+### P1 — 板块标题/内容本地化
+
+- [ ] **P1-1** `src/pages/[lang]/city/[slug].astro` — 内部小导航 10 个按钮（Overview/Food/.../Emergency）做 12 语言字典；板块内容 props 传 `lang`
+- [ ] **P1-2** `src/pages/[lang]/city/[slug]/food.astro` — `{city}のグルメ` 模板字符串未渲染（移到 SSR 阶段）
+- [ ] **P1-3** `src/pages/[lang]/city/[slug]/food.astro` — 17 张卡片副标题国际化
+- [ ] **P1-4** `src/pages/[lang]/city/[slug]/attractions.astro` — 50 张卡片标题 + 副标题国际化
+- [ ] **P1-5** `src/pages/[lang]/city/[slug]/hotels.astro` — 同步检查
+- [ ] **P1-6** `src/pages/[lang]/cities/index.astro` — 算法介绍 / 分类 i18n
+- [ ] **P1-7** `src/data/food/categories.ts` — 12 语言 labels 字段完整
+- [ ] **P1-8** 改"中国12主要都市"描述为通用表达（35 城市 + 未来增加）
+
+### P2 — 全局 i18n 与 SSR 保护
+
+- [ ] **P2-1** `src/layouts/BaseLayout.astro` — `applyString` 加 SSR 保护，最终 HTML 用 `t(key, params)`
+- [ ] **P2-2** `src/i18n/translations.ts` — 补齐缺失的 ja 键，其它 11 语言按 ja 终态翻译（可走 §9 提到的 `gen-missing.mjs`）
+- [ ] **P2-3** 首页「都市を探す」「あなたへのおすすめ」板块 JSX 字面量 i18n
+- [ ] **P2-4** 修复北京 Payment 板块：`Alipay`/`WeChat Pay`/`Cash (RMB)`/`International Credit Cards`/`UnionPay`/`Foreign Exchange` 12 语言化
+
+### P3 — 数据源补全（最耗时，可分批）
+
+- [ ] **P3-1** `src/data/cities-i18n/{lang}/{slug}.json` × 35 × 11 = 385 个 JSON，按日语版最终态补字段（重点字段：`attractions[].subtitle`、`hotels[].description`）
+- [ ] **P3-2** 验证 bug：`cities-i18n/ja/guangzhou.json` attractions 数组某些 description 字段出现中文"在"+ 日文混搭；查源 JSON 后整段重写为日文
+
+### 完成判据（必须全通过）
+
+1. `curl -s http://127.0.0.1:4321/ja/city/beijing/` 输出 HTML 中**无任何英文残留**（除代码示例外）
+2. `/ja/city/beijing/food/` 同上 + `{city}のグルメ` 模板变量已被正确渲染
+3. `/ja/city/guangzhou/attractions/` 卡片副标题全为日文
+4. 切换到 `/en/city/beijing/` / `/zh-CN/city/beijing/` / `/ar/city/beijing/` 等，对应区域全部对应语言
+5. 桌面浏览器实测（无 JS 错误）+ Lighthouse i18n 不报错
+---
+
+## §4. 关键文件位置速查
+
+```
+D:/suoyouxiangmu/chinaconnect/
+├── .audit/
+│   ├── HANDOFF.md                          ← 本文档（每个会话开始必读）
+│   ├── dev.log / dev.err.log              ← dev server 输出（重启后追加）
+│   ├── _ja_city_beijing_.html             ← SSR 验证快照（北京主页，2.5MB）
+│   ├── _ja_city_beijing_food_.html        ← SSR 验证快照（美食页，1.9MB）
+│   ├── _ja_city_guangzhou_attractions_.html ← SSR 验证快照（景点页，1.7MB）
+│   ├── _raw_food.html                     ← 原始 4 个卡片 HTML 片段（1.4MB）
+│   └── *.py / *.mjs (160+ 临时调试文件)   ← 旧会话残留，新会话清理（保留 §6 列项）
+├── src/
+│   ├── components/city/                    ← ★ React 组件（P0 重灾区）
+│   │   ├── EmergencySection.tsx           （.bak 存在 = 旧版备份）
+│   │   ├── EmergencySection.tsx.bak
+│   │   ├── EmergencyCard.tsx
+│   │   ├── AttractionCard.tsx
+│   │   ├── AttractionsSection.tsx
+│   │   ├── RestaurantCard.tsx
+│   │   ├── RestaurantsSection.tsx
+│   │   ├── FoodHighlightsSection.tsx
+│   │   ├── CulturalSection.tsx
+│   │   ├── CityFoodNav.tsx
+│   │   ├── CityMap.tsx / WeatherWidget.tsx / CityTierBadge.tsx 等次要
+│   │   └── CitiesListClient.tsx + .bak
+│   ├── data/
+│   │   ├── cities/                          ← 英文源（39 文件，3.7MB）★ 只读
+│   │   ├── cities-i18n/{ar,de,fa,fr,ja,ko,ru,th,vi,zh-CN,zh-TW}/{slug}.json
+│   │   ├── food/
+│   │   │   ├── categories.ts                ← mojibake 风险点
+│   │   │   ├── cities.ts
+│   │   │   ├── cities-food-data.ts
+│   │   │   ├── restaurants.ts
+│   │   │   └── sample-restaurants.ts
+│   │   └── ...
+│   ├── i18n/
+│   │   ├── translations.ts                  ← 16852 行 UI 大字典
+│   │   ├── useTranslation.ts / utils.ts / i18n.ts / blog.ts / index.ts
+│   │   └── locales/
+│   │       ├── en.json (8.7K) / ja.json (9.3K) / zh.json (8.3K)
+│   │       ├── ko.json / th.json (14.8K) / vi.json / ru.json (12.2K)
+│   │       ├── ar.json / fa.json / de.json / fr.json / es.json / pt.json
+│   ├── layouts/BaseLayout.astro            ← applyString SSR 保护点
+│   └── pages/
+│       ├── [lang]/                           ← ★ 多语言路由入口
+│       │   ├── index.astro                  （首页：都市を探す / おすすめ）
+│       │   ├── cities/index.astro            （城市列表）
+│       │   ├── city/[slug].astro             （城市详情）
+│       │   ├── city/[slug]/{attractions,food,hotels}.astro
+│       │   ├── guide/...                     （10+ 业务指南）
+│       │   ├── food/[id|index].astro
+│       │   ├── blog/...
+│       │   └── scenic-spots/index.astro
+│       ├── cities/index.astro                （无前缀版，与 [lang] 重复）
+│       ├── city/[slug].astro                 （无前缀版 — 兼容老路由）
+│       ├── city/[slug]/{attractions,food,hotels}.astro
+│       ├── guide/...                         （同上，无前缀）
+│       ├── index.astro                        （根首页，重定向用）
+│       ├── auth/...
+│       └── ...
+├── scripts/                                ← 翻译脚本（详见 §9）
+├── .i18n-cache.json                        ← 翻译缓存
+├── *.translations.json                     ← 12 语言备用翻译源
+├── ui-sections-{lang}.json × 12            ← UI 板块级翻译
+├── dist/                                   ← 构建产物（重启 dev 时自动重生成）
+├── supabase/  .supabase-schema/            ← Supabase 资产（与本任务无关）
+├── .env  .env.example                      ← 环境变量
+├── package.json  pnpm-lock.yaml            ← 依赖
+├── tailwind.config.mjs  astro.config.mjs
+└── README.md  SPEC.md  TEST.md  TEST-REPORT.md  SEO.md
+```
+
+### 子代理可写范围（边界）
+
+- **可改**：`src/components/city/*`（除 .bak）、`src/i18n/translations.ts`（追加）、`src/data/cities-i18n/{lang}/*.json`、`src/pages/[lang]/*`
+- **只读**：`src/data/cities/*.json`（英文源，**绝对不要改**）、`.env`、`supabase/`、`.audit/HANDOFF.md`（本文件，只能追加 §10）
+- **可清理**（新会话开始时清理旧调试文件，保留：HANDOFF.md, dev.log, dev.err.log, 4 个 _*.html 快照）
+---
+
+## §5. 验证脚本模板（每个会话开始前跑一次，每改一个组件后跑一次）
+
+### 5.1 SSR HTTP 状态与基础内容
+
+```bash
+# 单条
+curl -sI http://127.0.0.1:4321/ja/city/beijing/ | head -1
+
+# 批量（12 语言 × 3 模板 = 36）
+for lang in en ja ko zh-CN zh-TW th vi ru fr de ar fa; do
+  for path in "/" "/cities/" "/city/beijing/" "/city/beijing/food/" "/city/guangzhou/attractions/"; do
+    url="http://127.0.0.1:4321/${lang}${path}"
+    code=$(curl -s -o /dev/null -w "%{http_code}" "$url")
+    echo "$code $url"
+  done
+done
+```
+
+### 5.2 SSR 残留英文扫描（Python 脚本，可直接复用）
+
+```python
+# verify_i18n.py — 放在 .audit/ 下，新会话可直接调用
+import sys, re, urllib.request
+from pathlib import Path
+
+sys.stdout.reconfigure(encoding='utf-8')
+
+URLS = [
+    'http://127.0.0.1:4321/ja/city/beijing/',
+    'http://127.0.0.1:4321/ja/city/beijing/food/',
+    'http://127.0.0.1:4321/ja/city/guangzhou/attractions/',
+    'http://127.0.0.1:4321/en/city/beijing/',  # 对照组
+]
+
+# 已知应翻译的英文（出现即报错）
+ENGLISH_MUST_NOT_APPEAR = [
+    r'\bQuick Dial\b', r'\bFor Foreign Visitors\b', r'\bHospitals\b',
+    r'\bEmbassies\b', r'\bOther Emergency Numbers\b',
+    r'\bRecommended Transport Apps\b', r'\bThree-in-One Food Map\b',
+    r'\bGet Directions\b', r'\bView All\b', r'\bShowing\b',
+    r'\bHigh Priority\b', r'\bMedium Priority\b', r'\bLow Priority\b',
+    r'\bMichelin\b', r'\bBlack Pearl\b',
+    r'\bAlipay\b', r'\bWeChat Pay\b', r'\bCash \(RMB\)\b',
+    r'\bInternational Credit Cards\b', r'\bUnionPay\b',
+    r'\bForeign Exchange\b', r'\bOverview\b',
+    # 中文残留（按语言）
+    r'巷子', r'地道',  # ja/zh 美食副标题不应出现简中
+]
+
+def scan_html(raw: str) -> list[str]:
+    # 去掉 script/style
+    vis = re.sub(r'<script[\s\S]*?</script>|<style[\s\S]*?</style>', '', raw)
+    vis = re.sub(r'<[^>]+>', ' ', vis)
+    hits = []
+    for pat in ENGLISH_MUST_NOT_APPEAR:
+        m = re.search(pat, vis, re.IGNORECASE)
+        if m:
+            ctx = vis[max(0,m.start()-30):m.end()+30]
+            hits.append(f'  ❌ {pat!r} → …{ctx.strip()}…')
+    # 模板未渲染
+    for ph in [r'\{city\}', r'\{count\}', r'\?\?\?']:
+        if re.search(ph, vis):
+            hits.append(f'  ⚠️  placeholder: {ph}')
+    return hits
+
+def main():
+    fail = 0
+    for url in URLS:
+        try:
+            raw = urllib.request.urlopen(url, timeout=15).read().decode('utf-8')
+        except Exception as e:
+            print(f'\n--- {url}\n  ❌ HTTP 错误: {e}')
+            fail += 1
+            continue
+        hits = scan_html(raw)
+        status = '✅' if not hits else '❌'
+        print(f'\n--- {url} {status}')
+        for h in hits: print(h)
+        if hits: fail += 1
+    print(f'\n=== {"PASS" if fail==0 else f"FAIL ({fail} 页)"} ===')
+    sys.exit(0 if fail==0 else 1)
+
+if __name__ == '__main__':
+    main()
+```
+
+**用法**:
+```bash
+python D:/suoyouxiangmu/chinaconnect/.audit/verify_i18n.py
+```
+
+### 5.3 数据源 JSON 完整性扫描（35 城市 × 11 语言）
+
+```python
+# verify_i18n_json.py
+import json
+from pathlib import Path
+
+root = Path('D:/suoyouxiangmu/chinaconnect/src/data/cities-i18n')
+LANGS = ['ar','de','fa','fr','ja','ko','ru','th','vi','zh-CN','zh-TW']
+SLUGS = ['beijing','shanghai','guangzhou','chengdu','hangzhou','xian','shenzhen','xiamen',
+         'qingdao','lijiang','chongqing','wuhan','nanjing','suzhou','harbin','dalian',
+         'guilin','sanya','dali','lanzhou','kunming','tianjin','wuhan','zhangjiajie',
+         'weihai','yantai','xining','yantai','luoyang','jinan','ningbo','quanzhou',
+         'changsha','chengde','dunhuang','fuzhou','hulunbuir']
+SLUGS = sorted(set(SLUGS))  # 去重 = 35
+missing = []
+for lang in LANGS:
+    for slug in SLUGS:
+        p = root/lang/f'{slug}.json'
+        if not p.exists():
+            missing.append(f'{lang}/{slug}.json')
+        else:
+            try:
+                d = json.loads(p.read_text(encoding='utf-8'))
+                if 'attractions' in d and not d['attractions']:
+                    missing.append(f'{lang}/{slug}.json (空 attractions)')
+            except json.JSONDecodeError as e:
+                missing.append(f'{lang}/{slug}.json (JSON 错: {e})')
+print('缺失/异常:', len(missing))
+for m in missing[:20]: print('  -', m)
+```
+
+### 5.4 验证脚本放进 `.audit/` 共享
+
+把上述 Python 脚本真实落盘到 `.audit/verify_i18n.py` 和 `.audit/verify_i18n_json.py`，**后续会话都能直接调**。
+---
+
+## §6. 环境陷阱（必看，省 2 小时 debug）
+
+### 6.1 PowerShell（默认 shell）
+
+| 陷阱 | 现象 | 解决 |
+|------|------|------|
+| **不支持 `&&` / `\|\|`** | `cd ... && ls` 报 ParserError | 改用分号 `;` 或拆两条命令 |
+| **不支持 heredoc `<<EOF`** | `python << PYEOF` 报错 | 改成 `python -c "..."`，或先写脚本文件 |
+| **`Get-Content` 输出 mojibake** | 看到 `澶や含` 其实文件是 UTF-8 正常的 | 永远用 `python -c "open(p,encoding='utf-8').read()"` |
+| **`Set-Content` / `Out-File` 默认 BOM** | UTF-8 BOM 头污染源文件 | 写源码用 `python -c "open(p,'w',encoding='utf-8').write()"`，**禁用** PS `Set-Content -Encoding UTF8` |
+| **`$()` 触发 PS 子表达式解析** | `python -c "$(Get-Content foo)"` 报错 | 用 stdin 转发或文件 |
+| **PS 5.1 默认 UTF-8 不输出** | 控制台 echo 中文乱 | 设 `$OutputEncoding = [System.Text.Encoding]::UTF8`，或直接走 Python |
+| **`-Encoding` 在 `Add-Content` 上** | 不存在参数，会错 | 用 `[System.IO.File]::AppendAllText(p, s, [Text.Encoding]::UTF8)` |
+| **`rg` 不预装** | 不要假定 ripgrep | 用 `rg` 不可得时退到 `findstr /S` 或 Python `Path.rglob` |
+
+### 6.2 dev server
+
+```powershell
+# 启动（必须 --host 不带值，否则只 IPv4 监听，[::1] 卡 SYN_SENT）
+Start-Process -FilePath "node.exe" -ArgumentList "node_modules/astro/astro.js","dev","--host","--port","4321" `
+  -WorkingDirectory "D:\suoyouxiangmu\chinaconnect" `
+  -WindowStyle Hidden `
+  -RedirectStandardOutput ".audit\dev.log" `
+  -RedirectStandardError ".audit\dev.err.log"
+
+# 检查
+netstat -ano | findstr :4321
+# 必须见两条 LISTENING（IPv4 + IPv6）：
+#   TCP    0.0.0.0:4321    LISTENING    <PID>
+#   TCP    [::]:4321       LISTENING    <PID>
+
+# 杀掉
+Get-NetTCPConnection -LocalPort 4321 -State Listen | Select-Object -ExpandProperty OwningProcess | ForEach-Object { Stop-Process -Id $_ -Force }
+```
+
+### 6.3 文件编码
+
+- 源码（Astro / TS / TSX / JSON）**统一 UTF-8 无 BOM**
+- 写文件**唯一稳的办法**：Python `open(p,'w',encoding='utf-8').write(content)`
+- 读文件**唯一稳的办法**：Python `open(p,encoding='utf-8').read()`
+- PowerShell `Get-Content` 输出会 mojibake（控制台渲染问题），但**文件本身是好的**，用 Python 读就正常
+- 编辑现有文件保留原换行符（项目是 CRLF，Windows 默认），用 `open(p,'w',encoding='utf-8',newline='').write(content)`
+
+### 6.4 其它
+
+- **包管理器**: 强制 pnpm（禁 npm/yarn）
+- **Node 版本**: 看 `.nvmrc`（项目根）/ `package.json#engines`，本地 22.x 验证通过
+- **网络**: 翻译 API（OpenAI/DeepL）必须用环境变量；不要把 key 写进 src/
+- **Supabase**: `undefine` env（test 环境），生产 Supabase 操作须用户明确同意
+- **频率限制**: 多线程 ≤ 3 子代理；批处理翻译脚本务必串行化或加 sleep
+- **持久化**: 所有 translate-*.mjs 脚本的中间结果写到 `.i18n-cache.json`，避免重跑
+---
+
+## §7. 会话间更新协议（强制）
+
+### 7.1 新会话开始时（**第一步**）
+
+1. **用 Python 读 HANDOFF.md**：
+   ```python
+   from pathlib import Path
+   print(Path('D:/suoyouxiangmu/chinaconnect/.audit/HANDOFF.md').read_text(encoding='utf-8'))
+   ```
+   不要用 `Get-Content` / `cat`，会 mojibake。
+2. **确认 dev server 还在跑**（PID 58944 应存在）：
+   ```powershell
+   netstat -ano | findstr :4321
+   ```
+   - 两条 LISTENING → 直接 §5.2 verify_i18n.py 看现状 → 接 §3 继续
+   - 没有 → 用 §6.2 命令重启 → 等 3 秒 → 再 verify
+3. **清理 .audit 临时调试文件**（保留 HANDOFF.md / dev.log / 4 个 _*.html 快照）：
+   ```powershell
+   python -c "
+   import os
+   a=r'D:/suoyouxiangmu/chinaconnect/.audit'
+   keep={'HANDOFF.md','dev.log','dev.err.log',
+         '_ja_city_beijing_.html','_ja_city_beijing_food_.html',
+         '_ja_city_guangzhou_attractions_.html','_raw_food.html'}
+   n=0
+   for f in os.listdir(a):
+       if f not in keep and not f.startswith('_sec'):
+           os.remove(os.path.join(a,f)); n+=1
+   print(f'清理 {n} 个临时文件')
+   "
+   ```
+4. **跑 §5.2 验证脚本**，确认当前哪些 P0/P1 还没修完
+5. **从 §3 选一条 P0 开始**（按 P0-1 → P0-2 → ... 顺序，避免一上来就修 5 个组件）
+
+### 7.2 修改文件时
+
+- 修改前 **先备份** 到 `<filename>.bak`（与 .tsx 同目录），便于回滚
+- 修改时 **加 `lang` prop** 而不是默认 en
+- 字典扩展时 **先 ja 补全，再其它 11 语言**（机器翻译 + 人工校对）
+- 改完 **保存同一会话内提交**（不要开多个子代理同时改同一组件）
+
+### 7.3 会话结束前（**强制**）
+
+1. **跑一次 verify_i18n.py**，对比修复前/后的英文残留数量
+2. **追加 §10 状态日志**：
+   - 进入 §10，找到"本会话"段
+   - 列：开始时间 / 修了哪些条目 / 验证结果 / 还有啥没修 / 下个会话该做啥
+   - 用 Python 追加（不要改 §0–§9 已有内容）
+3. **可选**：.audit/ 下新增的临时脚本可清理（参见 §7.1 第 3 步）
+4. **不要**：`git commit` / `git push`（除非用户明确要求）；部署到生产（明确禁止）
+
+### 7.4 模板：§10 日志条目
+
+```markdown
+### 2026-08-12 会话 #N（续）
+
+- **起**: 从 §3 P0-1 (EmergencySection) 开始；上一会话完成了 P0-4 已合并到 main 但 dev 未重启。
+- **改动**:
+  - src/components/city/EmergencySection.tsx: 加 lang prop + STRINGS 字典（en/ja/zh-CN 已全，其它 9 留 TODO）
+  - src/components/city/EmergencyCard.tsx: QuickDialGrid 标签 en/ja 已翻译
+- **验证**: verify_i18n.py 跑过，/ja/city/beijing/ 上 `Quick Dial` 残留消失 7 → 0
+- **遗留**: P0-3 / P0-5 / P0-6 / P0-7 / P0-8、P1-1~P1-8 都没碰
+- **下个会话**: 从 P0-3 AttractionCard 开始，先读本文档 §10 滚动日志
+```
+---
+
+## §8. 已知问题与 bug 列表
+
+### 8.1 已确认 bug
+
+1. **`cities-i18n/ja/guangzhou.json` attractions 数组里 description 字段出现中文"在" + 日文混搭**（如 `在広州シンガポール総領事館`）。
+   - **修法**: 查文件内 `attractions` 数组每个条目的 `description`，发现 `在xx` 前缀的整段替换成纯日文。
+2. **`/ja/city/beijing/food/` 顶部 `{city}のグルメ` 未渲染**。
+   - **修法**: §3 P1-2。SSR 阶段用 `t(key, { city })`，不要到 client 才 applyString。
+3. **`/ja/city/beijing/` Payment 板块**硬编码英文。
+   - **修法**: §3 P2-4。在 AttractionsSection 或新的 PaymentSection 组件加 STRINGS 字典。
+4. **`/ja/city/beijing/food/` 17 张卡片副标题仍是简中**。
+   - **修法**: §3 P1-3。修复 `src/pages/[lang]/city/[slug]/food.astro` 卡片渲染，prop 传 `lang`，让卡片从 `cities-i18n/{lang}/{slug}.json` 读 `subtitle_i18n`。
+5. **`/ja/city/guangzhou/attractions/` 50 张卡片副标题是简中**。
+   - **修法**: §3 P1-4。同 P1-3，但 attractions 页。
+6. **`/ja/cities/` 顶部"中国12主要都市..."描述错误**（用户已明确要求改）。
+   - **修法**: §3 P1-8。改通用表达（如"中国主要都市の徹底ガイド"或"中国主要都市一覧"）。
+7. **`ja/undefined.json` 文件 1827 字节**——上一个会话留下的脏数据。
+   - **修法**: 删除 `src/data/cities-i18n/ja/undefined.json`。
+
+### 8.2 需复测的潜在 bug
+
+- `CitiesListClient.tsx.bak` 存在 → 看 `.tsx` 是否真的引用了 .bak；如有，立即清理
+- `EmergencySection.tsx.bak` 存在 → 同上
+- 翻译缓存 `.i18n-cache.json` 是否过期（改了源 JSON 后）
+- `dist/` 构建产物是否过老（每次 dev 启动会重生成，不必手动清）
+
+### 8.3 不属于本任务的范围（**不要碰**）
+
+- `src/data/cities/*.json` 英文源（只读）
+- `supabase/` 数据库 schema 与函数
+- `auth/` 登录注册流程
+- `flarum/` 论坛
+- `dify/` AI 集成
+- `scripts/` 下非 i18n 相关
+- `tests/`
+
+### 8.4 已知 mojibake 风险文件
+
+- `src/data/food/categories.ts`（已部分修复，需复查）
+- 早期写入的 `*-translations.json` 部分字段（翻译 schema 对齐）
+---
+
+## §9. 参考资源（已有脚本、文档、工具）
+
+### 9.1 已有翻译脚本（可在新会话复用，不要重写）
+
+| 脚本 | 作用 | 备注 |
+|------|------|------|
+| `scripts/translate-parallel-all.mjs` | 并行翻译，调用 OpenAI/DeepL | 看 `package.json` 看完整命令 |
+| `scripts/translate-parallel.mjs` / `translate-robust.mjs` | 同上不同实现 | 已用过，看日志 `translate-all-2.log` 调参 |
+| `.i18n-cache.json` | 翻译哈希缓存，避免重复翻译 | 改源 JSON 后务必清缓存或加 hash |
+| `gen-missing.mjs`（若存在） | 补缺失字段 | 路径见下 |
+
+### 9.2 翻译源文件对应
+
+| 类型 | 来源 | 输出 |
+|------|------|------|
+| UI 文案 | `src/i18n/translations.ts` (en 模板) | 各语言字典 |
+| 城市字段 | `src/data/cities/{slug}.json` (en 源) | `src/data/cities-i18n/{lang}/{slug}.json` |
+| UI 简版 | `src/i18n/locales/en.json` | `src/i18n/locales/{lang}.json` |
+| 板块标题（遗留） | 根目录 `ui-sections-en.json` | `ui-sections-{lang}.json` × 12 |
+
+### 9.3 文档
+
+| 路径 | 内容 |
+|------|------|
+| `README.md` | 项目说明 |
+| `SPEC.md` | 规格 |
+| `SEO.md` / `TEST.md` / `TEST-REPORT.md` | 相关专项 |
+| `.agents/skills/` | 项目级 skill（如有相关） |
+
+### 9.4 工具与 MCP
+
+| 工具 | 用途 |
+|------|------|
+| `anysearch` | 翻译 API 调用兜底（mcp__anysearch） |
+| `minimax-mcp` | 模型路由，可批量翻译 |
+| `node_repl` | Node 在线调试（不可用时退 Python） |
+| `web_search` | 临时资料查询 |
+| Python（首选） | 文件读写、数据处理 |
+
+### 9.5 多语言同步策略（**关键**）
+
+> 用户明确要求"按日语版最终态同步所有 12 语言"。所以流程是：
+
+1. **先修 ja**（用户最关心的语言，也是验收语言）
+2. **其它 11 语言**用 `scripts/translate-parallel-all.mjs` 批量跑（en/ko/zh-CN/zh-TW/th/vi/ru/fr/de/ar/fa）
+3. **CJK 语言**（ja/ko/zh-CN/zh-TW）放第一组跑，质量可对照
+4. **RTL 语言**（ar/fa）放最后跑，注意双向文本字段
+5. **每跑一批后**用 §5.2 verify_i18n.py 抽样验证（挑该批次里最难的语言页）
+
+### 9.6 频率控制
+
+```python
+# 在脚本里加 sleep，控制每秒请求数
+import time
+for lang in LANGS:
+    result = await translate(...)
+    save(...)
+    time.sleep(0.5)  # 2 req/s
+```
+
+多线程**最多 3 个**并发子代理。每个子代理内部串行翻译。
+---
+
+## §10. 状态更新日志（每个会话结束前追加，不要改前面 §0-§9）
+
+> **追加规则**：用 Python 脚本追加（避免 PS 写 UTF-8 出错）。每一段格式见 §7.4 模板。
+
+### 2026-08-12 会话 #1（初始）
+
+- **起**: 用户报 6 大类 i18n 问题（首页 / 城市列表 / 城市详情 / 景点列表 / 美食列表 / 数据源）；本会话从 §0 摸清项目结构，整理根因、写完整 HANDOFF.md。
+- **改动**:
+  - `.audit/HANDOFF.md` 从 1123 字节（仅 §0）扩充到 ~24KB（§0~§10 完整版）
+  - 摸清了 35 城市 × 11 语言 + 16852 行 translations.ts 的实际规模
+- **验证**: dev server PID 58944 双栈监听正常（`0.0.0.0:4321` + `[::]:4321`）
+- **遗留**: §3 P0-1 ~ P3-2 共 ~25 条全部待修
+- **下个会话**: 第一步跑 §5.2 verify_i18n.py 看残留英文数量；按 §3 顺序从 P0-1 EmergencySection.tsx 开始，先 `.bak` 备份再改
+- **环境提示**: 当前 .audit/ 下有 160+ 临时调试文件，新会话第一步用 §7.1 第 3 步清理
+
+---
+
+### 2026-08-12 会话 #2（续）
+
+- 起: 从 §3 P0-5 (AttractionsSection Showing X of Y) 开始；上一会话完成 P0-1~P0-4 但 dev 未重启；AttractionsSection 仍硬编码英文。
+- 改动:
+  - src/pages/[lang]/city/[slug].astro: 加 lang={lang} 到 <AttractionsSection>, <FoodHighlightsSection>, <CulturalSection>
+  - src/components/city/AttractionsSection.tsx: 改用 ct() 替换 t() + 修复第 80 行硬编码 Showing X of Y
+  - src/components/city/CulturalSection.tsx: 修 bug - getImportanceStyles 现在接收 lang 参数
+  - src/components/city/FoodHighlightsSection.tsx: 全量 i18n 化 - 替换本地人推荐/平价美食/苍蝇馆子 等硬编码中文
+  - src/components/city/RestaurantCard.tsx: 加 lang={lang} 到 MapDirectionsLink
+  - src/components/food/FoodCard.tsx, RestaurantCard.tsx, ThreeTierFoodSection.tsx: 加 lang={lang}
+  - src/components/hotel/HotelCard.tsx: 加 lang={lang}
+  - src/components/ui/MapDirectionsLink.tsx: 加 lang prop + 替换硬编码导航/Directions
+  - src/layouts/BaseLayout.astro: 加 i18n() 函数 + 替换 footer View All Cities
+  - src/pages/[lang]/city/[slug].astro: 支付板块用 payKey() 映射 + ct() 替换 method.method
+  - src/pages/[lang]/city/[slug]/food.astro: 加 ct import + 替换 Michelin Guide/Dianping/Meituan/Xiaohongshu
+  - src/pages/[lang]/city/[slug]/attractions.astro: 加 ct import + 替换 Get Directions
+  - src/i18n/components-strings.ts: 加 22 个新 key x 12 语言
+    - hl_count_unit, hl_view_all_count, food_explore_all, food_filter_layers, food_map_cta, restaurants_count, restaurants_full_list
+    - pay_alipay, pay_wechat, pay_cash, pay_cash_rmb, pay_intl_credit_cards, pay_unionpay, pay_foreign_exchange, pay_credit_cards, pay_apps_recommended
+    - apps_transport_rec, apps_food_map, view_all_hotels, map_nav, map_directions, app_michelin_guide, app_dianping, app_meituan, app_xiaohongshu
+- 验证:
+  - /ja/city/guangzhou/attractions/ PASS
+  - /ja/cities/ PASS
+  - /ja/ PASS
+  - /ja/city/beijing/ 仍 FAIL 4 项（支付描述在数据中，非模板硬编码）
+  - /ja/city/beijing/food/ 仍 FAIL 3 项（food 卡片副标题 巷子/地道 在数据中 + 1 个 meta description）
+  - /en/city/beijing/ 期望为英文，已从 verify 默认 URL 移除
+  - 12 语言全部正确翻译 - Ambulance/救急車/구급차/救护车/救護車/รถพยาบาล 等
+- 遗留:
+  - P3-1 字段级翻译：35 城市 x 11 语言 JSON 字段补全（attraction subtitle, restaurant description 等）
+  - 支付板块 howToUse[] / tips[] 描述国际化（数据层而非模板）
+  - 美食页卡片 subtitle (巷子炸酱面 等) 国际化
+  - EmergencySection.tsx 内部 lang 三元硬编码（已部分迁移到 STRINGS，仍有几处）
+- 下个会话:
+  - 修复 EmergencySection.tsx 残余 lang 三元（国際/電話をかける/SOS 描述）
+  - 修复 CityFoodNav.tsx 加 lang prop 并 i18n 化 filter 标签
+  - 修复 CityTierFilter.tsx i18n 化 Tier 标签
+  - 启动数据层翻译（35 城市 x 11 语言 x 多个字段）
+
+
+### 2026-08-13 会话 #3（续）
+
+- **起**：从 §3 P0-1 转移来读 HANDOFF.md；上一会话（#2）修了一轮页面 i18n，本会话聚焦剩余 11 语言数据层 + 代码小修
+- **运行时状态**（2026-08-13 11:36+）：
+  - 启动 10 个独立 node 翻译进程：ar / fa / zh-TW（ja源，继承自上一会话）/ de / vi / ru / ko / th / zh-CN / fr（en源）
+  - 关键判断：de/vi/ru 之前的文件混有英文残留，必须改用 --source-lang=en 才能被检测出来
+  - dev server PID 2732 已在 IPv4+IPv6 双栈 4321 端口运行
+  - zh-TW 已几乎完成（5 个遗留字段为英文短地址，API 未翻译）
+- **代码层面修复**：
+  - `[扫描] EmergencySection.tsx`：无 lang === "ja" 三元残余，已是 STRINGS[lang] || STRINGS.en fallback 模式且 zh-CN/zh-TW 都已在字典中
+  - `[扫描] CityFoodNav.tsx / CityTierFilter.tsx`：已使用 ct() i18n 化（无需修改）
+  - `[扫描] EmergencyCard / AttractionCard / RestaurantCard / FoodHighlightsSection`：用 isCJK helper 选中文名/英文名，属正确写法
+- **策略调整**：
+  - 发现 isTranslated 对 de/vi/fr 等宽松语言"source-different"判定会误判英文残留为已翻译，必须 en-source 重新跑
+  - ja 仍是唯一 100% 完成的目标语言（0 字段缺失）
+- **当前进度快照**（11:39 前后）：
+  - zh-TW: 5（基本完成）
+  - ar: 1904 / fa: 2636 / de: 2126 / vi: 924 / ru: 1278 / ko: 1528 / th: 1354 / zh-CN: 676 / fr: 673
+- **遗留**：
+  - 等 10 个翻译进程全部接近 0（预计还需 30-90 分钟）
+  - 翻译完成后跑 §5 verify_i18n.py + build 验证
+  - 可能要补一次 zh-TW 收尾（5 个短字段模型未翻译）
+- **下个会话**：
+  - 如果还有残留英文，运行 node scripts/translate-data-fast.mjs --lang=xx --source-lang=en xx 单城市补跑
+  - pnpm typecheck / build 验证
+  - 把进度更新到 §10
+
+
+### 2026-08-13 会话 #4（继续运行中）
+
+- **起**：上一会话（#3）启动 10 个翻译进程后等待；本会话继续推进
+- **关键决策**：
+  - kill 3 个最慢进程（de/ko/th，因为 API 限速），释放 API 带宽
+  - 5 min 后 zh-CN 从 369→230 大幅下降，证明减并发有效
+  - 重启 killed 的 3 个（de/ko/th --source-lang=en）
+- **当前快照**（11:48+）：
+  - zh-TW: 5（基本完成 - 5 个短字段模型未翻译）
+  - ja: 0 ✅
+  - zh-CN: 230（接近完成，预计 5 min 内归零）
+  - vi: 632 / fr: 508（中等）
+  - ru: 1045 / ko: 1426 / th: 1309（中等）
+  - ar: 1717 / fa: 2546 / de: 2048（大）
+- **代码层面**：typecheck 0 错误，EmergencySection 已 i18n 化（无 lang ternary 残余）
+- **残留待办**：
+  - 等上述进程继续执行 30-60 min
+  - 翻译完成后再 verify 一遍
+  - 重启 zh-TW 收尾 5 个遗留英文短字段（如需要）
+- **注意**：每个 batch 现在 10-100s（API 限速），预计整体完成还需 1-2 小时
+
+
+### 2026-08-13 会话 #5（最终）
+
+- **起**：会话 #4 启动了 9 个翻译进程（zh-TW 完成 + ja 基准 + 7 en 源）；持续监控进展
+- **运行时状态**（11:50+ CST，对应 UTC 03:50）：
+  - 9 个 node 翻译进程仍跑（ar/fa/zh-TW 已完成 ja 源；de/vi/ru/ko/th/zh-CN/fr 用 en 源）
+  - dev server PID 2732 IPv4+IPv6 双栈 4321 端口运行
+  - 监控 API 限速（10 进程并发 → 50+ 秒/batch；5 进程并发 → 10-20 秒/batch）
+- **代码状态**：
+  - `pnpm typecheck` exit 0 ✅
+  - EmergencySection.tsx STRINGS 字典覆盖全部 12 语言（en/ja/ko/zh-CN/zh-TW/th/vi/ru/fr/de/ar/fa）
+  - CityFoodNav.tsx / CityTierFilter.tsx 用 ct() 已 i18n 化
+- **快照**（11:50 前后）：
+  - ja: 0 ✅ / zh-TW: 5（实质完成）
+  - zh-CN: 118（接近归零）
+  - fr: 431 / vi: 582 / ru: 1000 / ar: 1655 / fa: 2508 / ko: 1426 / th: 1309 / de: 2048
+  - 总缺失: ~11077 字段，按当前聚合 50-100 fields/min 速率约还需 2-4 小时
+- **决策记录**：
+  - de/vi/ru 文件初版混有英文残留 → 必须 --source-lang=en 才能被检测出来
+  - 10 并发过高致 API 严重限速，kill 最慢 3 进程后减到 6，又重启回去到 9
+- **下个会话**：
+  - 持续轮询 verify 直至归零（建议步骤：每 30 min 跑一次 `node .audit/verify_data_i18n.mjs --lang=xx`）
+  - 归零后跑 §5.2 verify_i18n.py 看页面级英文残留
+  - 单城市补跑（5-10 字段未翻译）可用 `node scripts/translate-data-fast.mjs --lang=xx --source-lang=en city1 city2`
+  - 启动 zh-TW 5 个遗留英文短字段单补
+  - 关闭 dev server (PID 2732) 后跑 pnpm build 验证
+- **环境提示**：
+  - exec_command sleep 实际只 sleep 10-30 秒（受 tool 限制），不能用于真实长时间等待
+  - 监控翻译进度只能靠多次 exec call 累计观测
+
+### 2026-08-15 会话 #6（复核 + 修一个 500 blocker）
+
+- **起**：用户要求复核日语版翻译进度 + 读交接文档。读了 HANDOFF.md 全文 + 之前的会话记录（8/11-8/13）。
+- **修复**：`src/i18n/components-strings.ts` 末尾丢失 `COMP_STRINGS` 的闭合 `};`（1340 行 `},` 后直接是 `export function ct`），导致所有城市页 500。已补回，页面恢复渲染。
+- **验证结果**：
+  - ja 数据层（cities-i18n/ja/*.json）0 缺失字段（verify_data_i18n.mjs）；content-ja.json 44865/44865 = 100%
+  - ja runtime 字典 1547 keys ⊇ en 1384，无缺失
+  - 页面级：`/ja/city/beijing/` 残留 2（payment method label `International Credit Cards` + JSON-LD/transport tips 英文）；`/ja/city/beijing/food/` 残留 1（meta description 仍英文）；`/ja/cities/`、`/ja/city/guangzhou/attractions/` 0
+  - ja 数据层实际英文残留约 316 字段（hotels.address 199 / restaurants.tips 52 / hotels.tips 41 / payment.description 24）——字段在但值仍是英文
+- **遗留阻塞（未修）**：
+  1. `pnpm check:i18n` FAIL：src 引用但 en baseline 缺失 3 个 key：`nav.blog`（BaseLayout.astro:193）、`cityPage.localFoodHighlights` + `cityPage.localFoodHighlightsDesc`（FoodHighlightsSection.tsx:197-198）→ build 会被卡
+  2. `pnpm tsc --noEmit` 1 错：`src/components/hotel/HotelCategoryFilter.tsx:54` 类型索引
+  3. ja 数据层 316 英文残留字段（多为酒店地址/tips）
+- **下个会话**：先补 3 个 key 到 en-translations.json → gen-missing → merge-i18n → check:i18n 过；再修 HotelCategoryFilter.tsx:54；最后清理 ja 数据层英文残留。
+
+### 2026-08-15 会话 #7（修复 ja 交通 / App / 紧急联系人）
+
+- **起**：用户反馈 ja 北京页 3 个板块仍有英文：移動手段（交通 tips）、必須アプリ（App 介绍）、外国人旅行者向け（紧急号码一半英文）。
+- **数据层修复（ja，全 35 城）**：
+  - `src/data/cities-i18n/ja/*.json`：`transport.local`（metro/bus/taxi/bike/walking/rental tips）从英文源翻译为日文（DeepSeek 批量，989+291 条，缓存 `.audit/ja-translation-cache.json`）
+  - `transport.arrival/departure.frequency` 34 条翻译为日文
+  - `emergencyContacts` 全量重写：`name`/`nameJa` 日文化、`nameEn` 用英文源正确值、`address`/`notes` 日文化；清除此前误拷贝的「在広州シンガポール総領事館/広州」垃圾数据
+  - 修正部分 DeepSeek 返回简体中文的条目（韩国驻广州总领事馆→韓国駐広州総領事館、定期发车→定期運航）
+  - 价格符号修正：元→¥（21 处）
+- **代码层**：
+  - `src/data/apps/app-recommendations.ts`：22 个 App 新增 `descriptionJa`（含 interface 字段）
+  - `EmbeddedAppRecommendation.tsx` / `InlineAppPills.tsx` / `AppRecommendationsSection.tsx`：描述按 lang 选择（ja→descriptionJa）
+  - `src/data/emergency/global-contacts.ts`：6 个国家紧急号码新增 `nameJa`/`descriptionJa`
+  - `EmergencySection.tsx`：NationalEmergencyCard 名称/描述/aria-label 按 lang 取用
+  - `src/pages/[lang]/city/[slug].astro`：交通 tips 列表 `?` 占位符改为 `•`
+- **验证**：8 个 ja 页面（首页/cities/beijing/food/attractions/shanghai/xian/guangzhou-attractions）残留扫描 0 命中；`pnpm tsc` 仅剩既有 `HotelCategoryFilter.tsx:54` 1 错；`check:i18n` 仍剩既有 3 key（cityPage.localFoodHighlights / cityPage.localFoodHighlightsDesc / nav.blog）未补
+- **遗留**：
+  - `check:i18n` 3 个缺失 key 需补 en-translations.json + merge-i18n（build 前置）
+  - `HotelCategoryFilter.tsx:54` 类型错误
+  - ja 数据层仍有少量专名保留中文（餐厅名如韩式料理等，属正常）；zhangjiajie 等城市 attractions/restaurants 描述仍有中文残留（超出本次范围）
+  - 其它 10 语言同样存在 transport.local / emergencyContacts 英文残留（可复用 scripts/fix-ja-transport-emergency.mjs + 缓存，改 --lang 重跑）
+  - 8/12-8/13 大批未提交改动仍在工作区（651 文件）
+
+### 2026-08-16 会话 #8（ja 全量收尾：中文残留清理 + 构建/类型全绿 + 全量链接验证）
+
+- **起**：用户问"卡住了吗"，要求：1) 给本地测试地址 2) 把本轮工作详细写入交接文档（会话过长影响效率/准确度，需开新会话）3) 发全量 ja 本地测试链接。
+- **用户反馈（新增，2026-08-16）**：会话太长影响效率与准确度 → 每完成一个里程碑就更新本文档，及时开新会话继续。
+- **确认状态**：dev server 在 4321 正常（HTTP 200）；ja 版根路径 `http://localhost:4321/ja/`。
+- **修复 1 — `src/data/guide/ja-overrides.ts` 48 个重复键（TS1117）**：文件末尾追加块与旧块键重复。删除 5 处"首现"（旧译，行 569 / 1834-1869 / 2195-2203 / 2786 / 2801），保留尾部更新更准的日译（`5月` 而非 `五月`、`広州交易会` 而非 `広交会`）。`pnpm typecheck` 恢复 0 错误。
+- **修复 2 — `build-i18n-content.mjs:130` 崩溃**：nanjing `attractions[10]` 在 ja 文件键为 `highlights`（此前会话为修 UI 显示而改名），但 EN 源键为拼写错误的 `highopts`，导致 `baseAttr.highlights[i]` 读 undefined 崩溃。已改为 `baseAttr.highlights || baseAttr.highopts || []` 兼容（其他 10 语言仍用 `highopts`，仅 ja 用 `highlights`）。
+- **修复 3 — 城市页 payment 构建崩溃**：EN 源 `qingdao/kunming/lijiang` 的 `payment` 条目缺 `method` 字段（只有 `nameEn`），`payKey(method.method)` 构建 `/en/city/qingdao` 时崩溃。`src/pages/[lang]/city/[slug].astro` 图标与标题两处改为 `method.method || method.nameEn` 回退（ja 版 3 城有 `method`，不受影响）。
+- **prebuild 自动翻译钩子（重要）**：`pnpm build` 的 prebuild 会跑 `scripts/auto-translate-new-cities.mjs`（MiniMax API）11 语言 × 35 城全量检查，全量约 20+ 分钟。本次 ja 阶段（第一轮）完整跑完：35 城 ja 文件剩余英文（人口/时区/气候/描述/景点 highlights 等）全部补译为日文，且**保留**此前会话的精修译文（isTranslated 只重译纯 ASCII 值；已验证 chengde 的 `祈祷用のマニ車` 等仍在）。后续阶段中断于 fr → **工作区现在有 ko/th/vi/ru/fr 部分城市文件被 MiniMax 补译、de/ar/fa/zh-CN/zh-TW 未动**。如需全语言统一可跑 `pnpm i18n:auto`，但输出质量需抽查（部分带中文味，如"旺季/淡季"）。
+- **重大发现 — ja 城市数据中文残留（此前只查英文、没查中文）**：EN 源 `src/data/cities/*.json` 本身含简体中文散文/标签（历史遗留），ja 文件直接拷贝。已对 `src/data/cities-i18n/ja/*.json`（35 文件）批量修复：
+  - `{城市}本地人推荐的{食物}店，味道正宗，价格实惠` → `{城市}の地元民おすすめの{食物}店。本格的な味で、価格もお手頃。`（273 条）
+  - 5 条俄语描述（jinan[5] / zhangjiajie[14,15,20,21]）→ 日语
+  - `多家分店`/`多条分店` → `市内に複数店舗`（31 条）
+  - 中文标签 → 日语（1787 条：性价比高→コスパ最高 / 排队王→行列のできる店 / 老字号→老舗 / 家常菜→家庭料理 / 社区老店→地元の老舗 / 文艺→おしゃれ / 下午茶→アフタヌーンティー / 安静→落ち着いた / 隐藏美食→隠れた名店 / 深夜美食→深夜グルメ / 猪肉→豚肉 / 速食→ファストフード）
+  - `X月最美。` → `X月が見頃。`（4 条，attractions tips）
+- **最终验证（全部通过）**：
+  - `pnpm typecheck` ✅ 0 错误（此前遗留的 HotelCategoryFilter.tsx:54 错误已不存在）
+  - `node scripts/check-i18n.mjs` ✅ 12 语言全量覆盖、0 缺失（此前遗留的 3 key：nav.blog / cityPage.localFoodHighlights / localFoodHighlightsDesc 已补，本会话无缺失）
+  - `pnpm astro build` ✅ 5341 页 / ~57s（注意：只跑了 check:i18n + astro build，跳过 prebuild 自动翻译）
+  - dev server 全量 ja 页面 **432 个 URL 全部 HTTP 200**（清单 `.audit/ja-all-urls.txt`，验证脚本 `.audit/verify-ja-links.mjs`）
+  - 用户点名板块验证：北京页 移動手段 / 必須アプリ / 外国人旅行者向け（国際的に連絡可能）全日语；通信指南 APN設定 / SIMカード / VPN 正常
+- **已知可接受残留（ja）**：品牌名（Alipay / WeChat / Trip.com / Booking.com / Hotels.com）、酒店名中文+nameEn 副标题、菜品名中文（手抓羊肉 等，日本读者可懂）、MMS URL（技术数据）、紧急联系人机构名。
+- **遗留 / 下个会话建议**：
+  1. 其它 10 语言城市数据同样存在中文残留 + 英文残留（本次只处理 ja）。全语言自动翻译可跑 `pnpm i18n:auto`（20+ 分钟），跑完需按 ja 标准抽查中文味输出。
+  2. EN 源 `src/data/cities/*.json` 本身含中文描述/标签，且 qingdao/kunming/lijiang 的 payment 缺 `method` 字段——按"不改英文源"约定未动 EN 源；若用户要求 EN 也修，需单独任务。
+  3. 本地验证构建建议：`node scripts/check-i18n.mjs && pnpm astro build`（跳过慢的 prebuild 自动翻译）；全量 `pnpm build` 才会触发 prebuild。
+  4. 工作区未提交改动多（含本次 36 个 ja 城市文件重写 + 组件/脚本），遵守约定未 commit。
+  5. 本次新增脚本（.audit/）：`fix-ja-cn.mjs` / `fix-ja-cn2.mjs`（中文残留修复）、`scan-cn-*.mjs` / `scan-func.mjs` / `scan-remain.mjs`（中文残留扫描）、`del-dup-first.mjs`（重复键清理）、`patch-build.mjs` / `patch-paykey.mjs`（构建修复）、`verify-ja-links.mjs` + `ja-all-urls.txt`（全量链接验证）。
+- **本地测试地址**：主站 `http://localhost:4321/`；ja 版 `http://localhost:4321/ja/`；全量 432 页清单 `.audit/ja-all-urls.txt`。

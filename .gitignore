@@ -95,3 +95,12 @@ ui-sections-*.json
 .i18n-cache.json
 _*.json
 
+# Local debug/temp files
+.tmp-*
+*.err
+build-output.txt
+
+# .audit debug artifacts (keep HANDOFF.md + verification scripts in git)
+.audit/*.html
+.audit/*.json
+*.bak*

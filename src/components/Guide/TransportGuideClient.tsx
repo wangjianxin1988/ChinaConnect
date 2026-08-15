@@ -9,6 +9,7 @@ import {
 } from "@/data/guide/transport";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
+import { jaText } from "./guide-i18n";
 
 interface TransportGuideClientProps {
   lang?: Language;
@@ -64,15 +65,16 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                   {step.step}
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg">{step.title}</h3>
-                  <p className="text-sm text-muted-foreground">{step.titleCn}</p>
+                  <h3 className="font-semibold text-lg">{lang === "ja" ? jaText(step.titleCn, lang) : step.title}</h3>
+                  {lang !== "ja" && <p className="text-sm text-muted-foreground">{jaText(step.titleCn, lang)}</p>}
                 </div>
                 <span className="text-3xl ml-auto">{step.icon}</span>
               </div>
               <div className="p-4">
-                <p className="text-foreground mb-4">{step.description}</p>
-                <p className="text-sm text-muted-foreground mb-4">{step.descriptionCn}</p>
+                <p className="text-foreground mb-4">{lang === "ja" ? jaText(step.descriptionCn, lang) : step.description}</p>
+                {lang !== "ja" && <p className="text-sm text-muted-foreground mb-4">{jaText(step.descriptionCn, lang)}</p>}
                 <div className="grid md:grid-cols-2 gap-4">
+                  {lang !== "ja" && (
                   <div className="bg-slate-50 rounded-lg p-4">
                     <h4 className="font-medium mb-2 flex items-center gap-2">
                       <span>📋</span> Steps
@@ -81,19 +83,20 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                       {step.details.map((detail, i) => (
                         <li key={i} className="flex items-start gap-2 text-sm">
                           <span className="text-blue-500">{i + 1}.</span>
-                          <span>{detail}</span>
+                          <span>{jaText(detail, lang)}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
+                  )}
                   <div className="bg-slate-50 rounded-lg p-4">
                     <h4 className="font-medium mb-2 flex items-center gap-2">
-                      <span>📋</span> 步骤
+                      <span>📋</span> {lang === "ja" ? "手順" : "步骤"}
                     </h4>
                     <ul className="space-y-2">
                       {step.detailsCn.map((detail, i) => (
                         <li key={i} className="text-sm text-muted-foreground">
-                          {detail}
+                          {jaText(detail, lang)}
                         </li>
                       ))}
                     </ul>
@@ -106,20 +109,20 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
           {/* Quick Reference */}
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
             <h3 className="font-semibold flex items-center gap-2">
-              <span>💡</span> Pro Tips
+              <span>💡</span> {lang === "ja" ? "プロのヒント" : "Pro Tips"}
             </h3>
             <ul className="mt-2 space-y-2 text-sm">
               <li className="flex items-start gap-2">
                 <span className="text-amber-600">•</span>
-                <span>{tg.keepArrivalCardSafe || "Keep arrival card safe - you'll need it for emigration"}</span>
+                <span>{tg.arrivalTip || "Keep arrival card safe - you'll need it for emigration"}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-amber-600">•</span>
-                <span>{tg.useDidiTip || "Use Didi app for airport pickup - cheaper than taxi queue"}</span>
+                <span>{tg.didiTip || "Use Didi app for airport pickup - cheaper than taxi queue"}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-amber-600">•</span>
-                <span>{tg.airportWifiTip || "Airport WiFi usually available - connect before buying SIM"}</span>
+                <span>{tg.airportWifi || "Airport WiFi usually available - connect before buying SIM"}</span>
               </li>
             </ul>
           </div>
@@ -168,25 +171,25 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                   </div>
                   <div className="p-6 space-y-6">
                     <p className="text-foreground">{currentMode.description}</p>
-                    <p className="text-sm text-muted-foreground">{currentMode.descriptionCn}</p>
+                    <p className="text-sm text-muted-foreground">{jaText(currentMode.descriptionCn, lang)}</p>
 
                     {/* How to Use */}
                     <div className="bg-slate-50 rounded-lg p-4">
                       <h3 className="font-semibold mb-3 flex items-center gap-2">
-                        <span>📖</span> How to Use
+                        <span>📖</span> {lang === "ja" ? "使い方" : "How to Use"}
                       </h3>
                       <ol className="space-y-2">
                         {currentMode.howToUse.map((step, i) => (
                           <li key={i} className="flex items-start gap-2">
                             <span className="text-blue-500 font-bold">{i + 1}.</span>
-                            <span>{step}</span>
+                            <span>{jaText(step, lang)}</span>
                           </li>
                         ))}
                       </ol>
                       <div className="mt-4 pt-4 border-t space-y-1">
                         {currentMode.howToUseCn.map((step, i) => (
                           <p key={i} className="text-sm text-muted-foreground">
-                            {step}
+                            {jaText(step, lang)}
                           </p>
                         ))}
                       </div>
@@ -195,20 +198,20 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                     {/* Tips */}
                     <div className="bg-green-50 rounded-lg p-4">
                       <h3 className="font-semibold mb-3 flex items-center gap-2">
-                        <span>💡</span> Pro Tips
+                        <span>💡</span> {lang === "ja" ? "プロのヒント" : "Pro Tips"}
                       </h3>
                       <ul className="space-y-2">
                         {currentMode.tips.map((tip, i) => (
                           <li key={i} className="flex items-start gap-2 text-sm">
                             <span className="text-green-500">✓</span>
-                            <span>{tip}</span>
+                            <span>{jaText(tip, lang)}</span>
                           </li>
                         ))}
                       </ul>
                       <div className="mt-4 pt-4 border-t space-y-1">
                         {currentMode.tipsCn.map((tip, i) => (
                           <p key={i} className="text-sm text-muted-foreground">
-                            {tip}
+                            {jaText(tip, lang)}
                           </p>
                         ))}
                       </div>
@@ -218,9 +221,9 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
               ) : (
                 <div className="bg-card rounded-xl border p-12 text-center">
                   <span className="text-6xl mb-4 block">🚇</span>
-                  <h3 className="text-xl font-semibold mb-2">{tg.selectModePrompt || "Select a Transport Mode"}</h3>
+                  <h3 className="text-xl font-semibold mb-2">{tg.selectMode || "Select a Transport Mode"}</h3>
                   <p className="text-muted-foreground">
-                    Click on a transport option to see detailed guide
+                    {lang === "ja" ? "交通手段をクリックすると詳細ガイドが表示されます" : "Click on a transport option to see detailed guide"}
                   </p>
                 </div>
               )}
@@ -244,27 +247,27 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                 </div>
                 <div className="p-4 space-y-4">
                   <p className="text-sm text-foreground">{mode.description}</p>
-                  <p className="text-sm text-muted-foreground">{mode.descriptionCn}</p>
+                  <p className="text-sm text-muted-foreground">{jaText(mode.descriptionCn, lang)}</p>
 
                   <div className="bg-slate-50 rounded-lg p-3">
-                    <h4 className="font-medium text-sm mb-2">{tg.howToUseLabel || "How to Use:"}</h4>
+                    <h4 className="font-medium text-sm mb-2">{tg.howToUse || "How to Use:"}</h4>
                     <ul className="space-y-1">
                       {mode.howToUse.map((step, i) => (
                         <li key={i} className="text-sm flex items-start gap-2">
                           <span className="text-purple-500">{i + 1}.</span>
-                          <span>{step}</span>
+                          <span>{jaText(step, lang)}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
 
                   <div className="bg-green-50 rounded-lg p-3">
-                    <h4 className="font-medium text-sm mb-2">{tg.proTipsLabel || "Pro Tips:"}</h4>
+                    <h4 className="font-medium text-sm mb-2">{tg.proTips || "Pro Tips:"}</h4>
                     <ul className="space-y-1">
                       {mode.tips.map((tip, i) => (
                         <li key={i} className="text-sm flex items-start gap-2">
                           <span className="text-green-500">✓</span>
-                          <span>{tip}</span>
+                          <span>{jaText(tip, lang)}</span>
                         </li>
                       ))}
                     </ul>
@@ -277,25 +280,25 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
           {/* Booking Platforms */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h3 className="font-semibold text-lg">{tg.bookingPlatformsHeading || "Booking Platforms"}</h3>
+              <h3 className="font-semibold text-lg">{tg.bookingPlatforms || "Booking Platforms"}</h3>
             </div>
             <div className="divide-y">
               <div className="p-4">
                 <h4 className="font-medium">12306</h4>
                 <p className="text-sm text-muted-foreground">
-                  Official train booking (English version available)
+                  {lang === "ja" ? "公式の列車予約（英語版あり）" : "Official train booking (English version available)"}
                 </p>
               </div>
               <div className="p-4">
-                <h4 className="font-medium">{tg.tripcomLabel || "Trip.com / Ctrip"}</h4>
+                <h4 className="font-medium">{tg.tripCta || "Trip.com / Ctrip"}</h4>
                 <p className="text-sm text-muted-foreground">
-                  All transport types with English interface
+                  {lang === "ja" ? "英語インターフェースで全交通手段を予約可能" : "All transport types with English interface"}
                 </p>
               </div>
               <div className="p-4">
                 <h4 className="font-medium">Didi</h4>
                 <p className="text-sm text-muted-foreground">
-                  Ride-hailing for local transport and airport trips
+                  {lang === "ja" ? "市内交通と空港送迎のライドシェア" : "Ride-hailing for local transport and airport trips"}
                 </p>
               </div>
             </div>
@@ -308,7 +311,7 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
         <div className="space-y-4">
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-blue-50 px-6 py-4 border-b">
-              <h2 className="font-semibold text-xl">{tg.usefulPhrasesHeading || "Useful Transport Phrases"}</h2>
+              <h2 className="font-semibold text-xl">{tg.usefulPhrases || "Useful Transport Phrases"}</h2>
             </div>
             <div className="divide-y">
               {TRANSPORT_HELPERS.usefulPhrases.map((phrase, idx) => (
@@ -325,19 +328,19 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
           {/* Important Numbers */}
           <div className="bg-red-50 border border-red-200 rounded-xl p-4">
             <h3 className="font-semibold flex items-center gap-2">
-              <span>🚨</span> Emergency Transport Numbers
+              <span>🚨</span> {lang === "ja" ? "緊急時の交通連絡先" : "Emergency Transport Numbers"}
             </h3>
             <ul className="mt-2 space-y-2 text-sm">
               <li className="flex items-center gap-2">
-                <span className="font-medium">Police:</span>
+                <span className="font-medium">{lang === "ja" ? "警察：" : "Police:"}</span>
                 <span>110</span>
               </li>
               <li className="flex items-center gap-2">
-                <span className="font-medium">Ambulance:</span>
+                <span className="font-medium">{lang === "ja" ? "救急車：" : "Ambulance:"}</span>
                 <span>120</span>
               </li>
               <li className="flex items-center gap-2">
-                <span className="font-medium">Fire:</span>
+                <span className="font-medium">{lang === "ja" ? "消防：" : "Fire:"}</span>
                 <span>119</span>
               </li>
             </ul>
@@ -369,7 +372,7 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                       {type.tips.map((tip, i) => (
                         <li key={i} className="text-sm flex items-start gap-2">
                           <span className="text-blue-500">•</span>
-                          <span>{tip}</span>
+                          <span>{jaText(tip, lang)}</span>
                         </li>
                       ))}
                     </ul>

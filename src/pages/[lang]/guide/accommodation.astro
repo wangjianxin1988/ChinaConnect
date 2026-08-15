@@ -15,8 +15,8 @@ import { generateBreadcrumbSchema, generateHowToSchema, generateJsonLdScript } f
 import { getLangFromUrl } from '@/i18n/utils';
 
 // Accommodation Guide page SEO
-const pageTitle = translations.en.guidePage?.accommodationTitle || "Accommodation Guide - ChinaConnect";
-const pageDescription = translations.en.guidePage?.accommodationDescription || "Complete accommodation guide for China travel. Hotel types, booking tips, check-in process, and useful phrases for your stay.";
+const pageTitle = (translations[lang] || translations.en).guidePage?.accommodationTitle || "Accommodation Guide - ChinaConnect";
+const pageDescription = (translations[lang] || translations.en).guidePage?.accommodationDescription || "Complete accommodation guide for China travel. Hotel types, booking tips, check-in process, and useful phrases for your stay.";
 
 // Schema.org JSON-LD for Accommodation Guide
 const accommodationSchemas = [

@@ -1,0 +1,16 @@
+import { chromium } from "playwright";
+const b = await chromium.launch({ headless: true });
+const ctx = await b.newContext();
+await ctx.addInitScript(() => { try { localStorage.setItem("chinaconnect_language", "ja"); } catch (e) {} });
+const page = await ctx.newPage();
+await page.goto("http://localhost:4321/ja/guide/visa", { waitUntil: "domcontentloaded", timeout: 60000 });
+await page.waitForLoadState("networkidle", { timeout: 20000 }).catch(() => {});
+await page.waitForTimeout(1500);
+const text = await page.evaluate(() => document.body.innerText);
+const lines = text.split("\n").map((l) => l.trim()).filter(Boolean);
+const interesting = lines.filter((l) => /観光ビザ|数次入国|アメリカ|イギリス|営業日|DS-160|査証|ビザ/.test(l));
+console.log("--- interesting lines ---");
+interesting.slice(0, 25).forEach((l) => console.log(l));
+console.log("--- first 30 lines ---");
+lines.slice(0, 30).forEach((l) => console.log(l));
+await b.close();

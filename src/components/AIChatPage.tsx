@@ -366,8 +366,7 @@ export default function AIChatPage() {
           <div className="text-center mb-8">
             <h1 className="text-4xl md:text-5xl font-black text-gray-900 mb-3">ChinaGuide AI</h1>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Your personal China travel intelligence — itineraries, local insights, and real-time
-              guidance.
+              {aiT("heroSubtitle", "Your personal China travel intelligence — itineraries, local insights, and real-time guidance.")}
             </p>
           </div>
           <AuthGate />

@@ -12,21 +12,21 @@
   "description": "敦煌是塔克拉玛干沙漠边缘的绿洲城市，是古丝绸之路的门户。这里有壮观的莫高窟（联合国教科文组织世界遗产）、鸣沙山的鸣沙和古老的玉门关。佛教艺术、沙漠探险和繁星满天的夜空在此奇妙交融。",
   "coverImage": "/img/ext/4267a852dcbd.webp",
   "highlights": [
-    "Mogao Caves - 1,000-year Buddhist art treasury",
-    "Mingsha Mountain - Singing sand dunes",
-    "Yumenguan Pass - Ancient Silk Road fortress",
-    "Crescent Spring - Desert oasis",
-    "Yadan Landforms - Spectacular desert geology"
+    "莫高窟——千年佛教艺术宝库",
+    "鸣沙山 - 鸣沙作响的沙丘",
+    "玉门关 - 古丝绸之路的要塞",
+    "月牙泉 - 沙漠绿洲",
+    "雅丹地貌 - 壮观的沙漠地质"
   ],
   "climate": {
-    "type": "Temperate desert",
+    "type": "温带沙漠气候",
     "bestMonths": [
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October"
+      "五月",
+      "六月",
+      "七月",
+      "八月",
+      "九月",
+      "十月"
     ],
     "avgSummerTemp": "25°C (77°F)",
     "avgWinterTemp": "-10°C (14°F)",
@@ -36,28 +36,28 @@
     {
       "id": "dunhuang-1",
       "name": "沙洲客根",
-      "nameEn": "Shazhou Restaurant",
-      "type": "local",
-      "cuisine": "Dunhuang Local",
+      "nameEn": "沙州餐厅",
+      "type": "本地",
+      "cuisine": "敦煌本地菜",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Dunhuang City Center",
+      "address": "敦煌市中心",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "10:00-22:00",
-      "description": "Popular restaurant serving local Dunhuang cuisine including lamb dishes and desert specialties.",
+      "description": "人气餐厅，提供当地敦煌特色美食，包括羊肉菜肴和沙漠特色菜。",
       "dishHighlights": [
-        "Desert lamb",
-        "Yellow river fish",
-        "Donkey meat"
+        "沙漠羊肉",
+        "黄河鱼",
+        "驴肉"
       ],
       "tags": [
-        "local",
-        "dunhuang",
-        "traditional",
-        "popular"
+        "本地",
+        "敦煌",
+        "传统",
+        "热门"
       ],
       "star": 0,
       "diamond": 0,
@@ -67,28 +67,28 @@
     {
       "id": "dunhuang-2",
       "name": "敦煌夜市小吃",
-      "nameEn": "Dunhuang Night Market Snacks",
-      "type": "local",
-      "cuisine": "Various Snacks",
+      "nameEn": "敦煌夜市小吃",
+      "type": "本地",
+      "cuisine": "各种小吃",
       "avgPrice": 30,
       "rating": 4.4,
-      "address": "Shazhou Night Market",
+      "address": "沙洲夜市",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "18:00-24:00",
-      "description": "Night market with various local snacks, grilled meats, and refreshing drinks.",
+      "description": "夜市提供各种当地小吃、烤肉和清爽饮品。",
       "dishHighlights": [
-        "Lamb skewers",
-        "Apricot juice",
-        "Grilled squid"
+        "羊肉串",
+        "杏汁",
+        "烤鱿鱼"
       ],
       "tags": [
-        "night-market",
-        "street-food",
-        "variety",
-        "local"
+        "夜市",
+        "街头小吃",
+        "多样",
+        "本地"
       ],
       "star": 0,
       "diamond": 0,
@@ -98,28 +98,28 @@
     {
       "id": "dunhuang-3",
       "name": "驴肉黄面",
-      "nameEn": "Donkey Meat Yellow Noodles",
-      "type": "local",
-      "cuisine": "Dunhuang Specialty",
+      "nameEn": "驴肉黄面",
+      "type": "本地",
+      "cuisine": "敦煌特色菜",
       "avgPrice": 40,
       "rating": 4.7,
-      "address": "Dunhuang City",
+      "address": "敦煌市",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "08:00-20:00",
-      "description": "Legendary Dunhuang dish - donkey meat served with yellow noodles, unique local specialty.",
+      "description": "传说中的敦煌美食 - 驴肉黄面，独特的当地特色菜。",
       "dishHighlights": [
-        "Donkey meat",
-        "Yellow noodles",
-        "Special sauce"
+        "驴肉",
+        "黄面",
+        "特色酱料"
       ],
       "tags": [
-        "local",
-        "must-try",
-        "famous",
-        "dunhuang-specialty"
+        "本地",
+        "必尝",
+        "著名",
+        "敦煌特色"
       ],
       "star": 0,
       "diamond": 0,
@@ -129,28 +129,28 @@
     {
       "id": "dunhuang-4",
       "name": "羊肉粉汤",
-      "nameEn": "Lamb and Rice Noodle Soup",
-      "type": "local",
-      "cuisine": "Gansu",
+      "nameEn": "羊肉米粉汤",
+      "type": "本地",
+      "cuisine": "甘肃",
       "avgPrice": 35,
       "rating": 4.5,
-      "address": "Dunhuang City",
+      "address": "敦煌市",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "07:00-14:00",
-      "description": "Warming lamb and rice noodle soup, perfect breakfast before desert exploration.",
+      "description": "温热的羊肉米粉汤，是探索沙漠前完美的早餐选择。",
       "dishHighlights": [
-        "Lamb soup",
-        "Rice noodles",
-        "Herbs"
+        "羊肉汤",
+        "米粉",
+        "香草"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "soup",
-        "warming"
+        "本地",
+        "早餐",
+        "汤",
+        "暖身"
       ],
       "star": 0,
       "diamond": 0,
@@ -160,28 +160,28 @@
     {
       "id": "dunhuang-5",
       "name": "杏皮水",
-      "nameEn": "Apricot Peel Drink",
-      "type": "local",
-      "cuisine": "Dunhuang Drinks",
+      "nameEn": "杏皮水",
+      "type": "本地",
+      "cuisine": "敦煌饮品",
       "avgPrice": 10,
       "rating": 4.6,
-      "address": "Everywhere",
+      "address": "随处可见",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "全天",
-      "description": "Signature Dunhuang sweet-sour drink made from dried apricots, refreshing and unique taste.",
+      "description": "敦煌特色酸甜饮品，由杏干制成，口感清爽独特。",
       "dishHighlights": [
-        "Apricot drink",
-        "Sweet and sour",
-        "Refreshing"
+        "杏汁饮品",
+        "酸甜口味",
+        "清爽怡人"
       ],
       "tags": [
-        "local",
-        "drinks",
-        "must-try",
-        "refreshing"
+        "本地",
+        "饮品",
+        "必尝",
+        "清爽"
       ],
       "star": 0,
       "diamond": 0,
@@ -191,28 +191,28 @@
     {
       "id": "dunhuang-6",
       "name": "烤肉串",
-      "nameEn": "Dunhuang BBQ",
-      "type": "local",
-      "cuisine": "BBQ",
+      "nameEn": "敦煌烧烤",
+      "type": "本地",
+      "cuisine": "烧烤",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "Night Market",
+      "address": "夜市",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "18:00-03:00",
-      "description": "Grilled lamb and beef skewers at night market, addictive street food.",
+      "description": "夜市上的烤羊肉和牛肉串，令人上瘾的街头美食。",
       "dishHighlights": [
-        "Lamb skewers",
-        "Beef skewers",
-        "Lamb chops"
+        "羊肉串",
+        "牛肉串",
+        "羊排"
       ],
       "tags": [
-        "local",
-        "bbq",
-        "night-market",
-        "street-food"
+        "本地",
+        "烧烤",
+        "夜市",
+        "街头小吃"
       ],
       "star": 0,
       "diamond": 0,
@@ -222,28 +222,28 @@
     {
       "id": "dunhuang-7",
       "name": "泡儿油糕",
-      "nameEn": "Paoer Yougao",
-      "type": "local",
-      "cuisine": "Dunhuang Desserts",
+      "nameEn": "泡儿油糕",
+      "type": "本地",
+      "cuisine": "敦煌甜点",
       "avgPrice": 15,
       "rating": 4.4,
-      "address": "Street Vendors",
+      "address": "街头摊贩",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "全天",
-      "description": "Traditional Dunhuang fried pastry with sweet filling, crispy outside and soft inside.",
+      "description": "传统的敦煌油炸糕点，外皮酥脆，内馅香甜软糯。",
       "dishHighlights": [
-        "Fried pastry",
-        "Sweet filling",
-        "Crispy"
+        "油炸糕点",
+        "甜馅",
+        "酥脆"
       ],
       "tags": [
-        "local",
-        "dessert",
-        "traditional",
-        "street-food"
+        "本地",
+        "甜品",
+        "传统",
+        "街头小吃"
       ],
       "star": 0,
       "diamond": 0,
@@ -253,28 +253,28 @@
     {
       "id": "dunhuang-8",
       "name": "羊肉垫卷",
-      "nameEn": "Lamb Rolls",
-      "type": "local",
-      "cuisine": "Gansu Lamb",
+      "nameEn": "羊肉卷",
+      "type": "本地",
+      "cuisine": "甘肃羊肉",
       "avgPrice": 70,
       "rating": 4.6,
-      "address": "Dunhuang",
+      "address": "敦煌",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "10:00-22:00",
-      "description": "Tender lamb cooked with flatbread rolls, hearty Gansu dish, sharing friendly.",
+      "description": "嫩羊肉与薄饼卷一起烹制，是一道丰盛的甘肃菜，适合分享。",
       "dishHighlights": [
-        "Lamb stew",
-        "Flatbread",
-        "Rich sauce"
+        "羊肉炖菜",
+        "烧饼",
+        "浓郁酱汁"
       ],
       "tags": [
-        "local",
-        "lamb",
-        "sharing",
-        "filling"
+        "本地",
+        "羊肉",
+        "分享",
+        "管饱"
       ],
       "star": 0,
       "diamond": 0,
@@ -284,28 +284,28 @@
     {
       "id": "dunhuang-9",
       "name": "拉条子",
-      "nameEn": "Lazt noodles",
-      "type": "local",
-      "cuisine": "Gansu Noodles",
+      "nameEn": "拉兹特面条",
+      "type": "本地",
+      "cuisine": "甘肃面条",
       "avgPrice": 25,
       "rating": 4.5,
-      "address": "Dunhuang",
+      "address": "敦煌",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "08:00-20:00",
-      "description": "Hand-pulled noodles with various toppings, staple food in Gansu province.",
+      "description": "手工拉面，配以各种浇头，是甘肃省的主食。",
       "dishHighlights": [
-        "Hand-pulled noodles",
-        "Lamb topping",
-        "Vegetable topping"
+        "手拉面",
+        "羊肉浇头",
+        "蔬菜浇头"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "budget",
-        "filling"
+        "本地",
+        "面食",
+        "经济实惠",
+        "管饱"
       ],
       "star": 0,
       "diamond": 0,
@@ -315,28 +315,28 @@
     {
       "id": "dunhuang-10",
       "name": "桃符",
-      "nameEn": "Peach Symbol",
-      "type": "local",
-      "cuisine": "Dunhuang Fruit",
+      "nameEn": "桃符",
+      "type": "本地",
+      "cuisine": "敦煌水果",
       "avgPrice": 20,
       "rating": 4.3,
-      "address": "Fruit Markets",
+      "address": "水果市场",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "全天",
-      "description": "Local Dunhuang apricots and peaches, sweet and juicy from desert oasis cultivation.",
+      "description": "当地敦煌的杏子和桃子，因在沙漠绿洲种植而甜美多汁。",
       "dishHighlights": [
-        "Fresh apricots",
-        "Local peaches",
-        "Dried fruits"
+        "新鲜的杏子",
+        "当地桃子",
+        "干果"
       ],
       "tags": [
-        "local",
-        "fruit",
-        "healthy",
-        "seasonal"
+        "本地",
+        "水果",
+        "健康",
+        "时令"
       ],
       "star": 0,
       "diamond": 0,
@@ -346,28 +346,28 @@
     {
       "id": "dunhuang-11",
       "name": "沙漠枸杞",
-      "nameEn": "Desert Goji Berries",
-      "type": "local",
-      "cuisine": "Dunhuang Specialties",
+      "nameEn": "沙漠枸杞",
+      "type": "本地",
+      "cuisine": "敦煌特色菜",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "Markets",
+      "address": "市场",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "全天",
-      "description": "High-quality goji berries from desert oases, famous Dunhuang souvenir and health product.",
+      "description": "来自沙漠绿洲的高品质枸杞，著名的敦煌纪念品和保健品。",
       "dishHighlights": [
-        "Fresh goji",
-        "Dried goji",
-        "Goji wine"
+        "新鲜枸杞",
+        "枸杞干",
+        "枸杞酒"
       ],
       "tags": [
-        "local",
-        "souvenir",
-        "healthy",
-        "gift"
+        "本地",
+        "纪念品",
+        "健康",
+        "礼品"
       ],
       "star": 0,
       "diamond": 0,
@@ -377,28 +377,28 @@
     {
       "id": "dunhuang-12",
       "name": "雪山驼掌",
-      "nameEn": "Camel Paw",
-      "type": "local",
-      "cuisine": "Desert Specialty",
+      "nameEn": "驼掌",
+      "type": "本地",
+      "cuisine": "沙漠特色菜",
       "avgPrice": 100,
       "rating": 4.4,
-      "address": "Dunhuang",
+      "address": "敦煌",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "10:00-22:00",
-      "description": "Exotic desert specialty - camel paw cooked in various styles, unique local delicacy.",
+      "description": "异域沙漠特色美食 - 骆驼掌以多种方式烹制，是独特的当地美味佳肴。",
       "dishHighlights": [
-        "Camel paw hotpot",
-        "Camel meat",
-        "Desert herbs"
+        "骆驼掌火锅",
+        "骆驼肉",
+        "沙漠草药"
       ],
       "tags": [
-        "local",
-        "exotic",
-        "specialty",
-        "adventurous"
+        "本地",
+        "异域风情",
+        "特色",
+        "勇于尝试"
       ],
       "star": 0,
       "diamond": 0,
@@ -408,28 +408,28 @@
     {
       "id": "dunhuang-13",
       "name": "羊肉面",
-      "nameEn": "Lamb Noodles",
-      "type": "local",
-      "cuisine": "Gansu Noodles",
+      "nameEn": "羊肉面",
+      "type": "本地",
+      "cuisine": "甘肃面条",
       "avgPrice": 30,
       "rating": 4.6,
-      "address": "Dunhuang City",
+      "address": "敦煌市",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "06:00-14:00",
-      "description": "Simple but flavorful lamb broth with hand-pulled noodles, local breakfast tradition.",
+      "description": "简单但味道浓郁的羊肉汤配手工拉面，是当地的传统早餐。",
       "dishHighlights": [
-        "Lamb broth",
-        "Hand-pulled noodles",
-        "Cilantro"
+        "羊肉汤",
+        "手拉面",
+        "香菜"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "noodles",
-        "simple"
+        "本地",
+        "早餐",
+        "面食",
+        "简单"
       ],
       "star": 0,
       "diamond": 0,
@@ -439,28 +439,28 @@
     {
       "id": "dunhuang-14",
       "name": "李广杏",
-      "nameEn": "Li Guang Apricots",
-      "type": "local",
-      "cuisine": "Dunhuang Fruit",
+      "nameEn": "李广杏",
+      "type": "本地",
+      "cuisine": "敦煌水果",
       "avgPrice": 30,
       "rating": 4.7,
-      "address": "Orchards",
+      "address": "果园",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
-      "hours": "Seasonal (June-July)",
-      "description": "Famous Dunhuang apricots named after legendary general Li Guang, sweet and aromatic.",
+      "hours": "季节性开放（六月-七月）",
+      "description": "以传奇将军李广命名的著名敦煌杏，甜美芳香。",
       "dishHighlights": [
-        "Fresh apricots",
-        "Apricot products",
-        "Orchard visit"
+        "新鲜的杏子",
+        "杏制品",
+        "果园参观"
       ],
       "tags": [
-        "local",
-        "seasonal",
-        "fruit",
-        "famous"
+        "本地",
+        "时令",
+        "水果",
+        "著名"
       ],
       "star": 0,
       "diamond": 0,
@@ -470,28 +470,28 @@
     {
       "id": "dunhuang-15",
       "name": "黄面",
-      "nameEn": "Yellow Noodles",
-      "type": "local",
-      "cuisine": "Dunhuang Specialty",
+      "nameEn": "黄面",
+      "type": "本地",
+      "cuisine": "敦煌特色菜",
       "avgPrice": 25,
       "rating": 4.5,
-      "address": "Dunhuang",
+      "address": "敦煌",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "08:00-18:00",
-      "description": "Dunhuang's famous yellow noodles with various toppings, colorful and flavorful dish.",
+      "description": "敦煌特色黄面，配以各种浇头，色彩丰富且味道鲜美。",
       "dishHighlights": [
-        "Yellow noodles",
-        "Vegetable toppings",
-        "Special sauce"
+        "黄面",
+        "蔬菜配料",
+        "特色酱料"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "colorful",
-        "traditional"
+        "本地",
+        "面食",
+        "色彩丰富",
+        "传统"
       ],
       "star": 0,
       "diamond": 0,
@@ -501,28 +501,28 @@
     {
       "id": "dunhuang-16",
       "name": "沙葱",
-      "nameEn": "Desert Chives",
-      "type": "local",
-      "cuisine": "Desert Vegetables",
+      "nameEn": "沙漠韭菜",
+      "type": "本地",
+      "cuisine": "沙漠蔬菜",
       "avgPrice": 30,
       "rating": 4.4,
-      "address": "Dunhuang Restaurants",
+      "address": "敦煌餐厅",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "10:00-22:00",
-      "description": "Wild chives grown in desert areas, unique flavor and prized local vegetable.",
+      "description": "生长在沙漠地区的野生韭菜，具有独特的风味，是当地珍贵的蔬菜。",
       "dishHighlights": [
-        "Stir-fried chives",
-        "Chive eggs",
-        "Chive dumplings"
+        "炒韭菜",
+        "韭菜鸡蛋",
+        "韭菜饺子"
       ],
       "tags": [
-        "local",
-        "vegetables",
-        "desert",
-        "unique"
+        "本地",
+        "蔬菜",
+        "沙漠",
+        "特色"
       ],
       "star": 0,
       "diamond": 0,
@@ -532,28 +532,28 @@
     {
       "id": "dunhuang-17",
       "name": "手抓饭",
-      "nameEn": "Hand-Grabbable Rice",
-      "type": "local",
-      "cuisine": "Uighur Style",
+      "nameEn": "手抓饭",
+      "type": "本地",
+      "cuisine": "新疆风味",
       "avgPrice": 40,
       "rating": 4.5,
-      "address": "Near Night Market",
+      "address": "夜市附近",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "10:00-22:00",
-      "description": "Rice with lamb, carrots, and raisins eaten with hands, Uighur-style pilaf.",
+      "description": "手抓饭，新疆风味的抓饭，配有羊肉、胡萝卜和葡萄干。",
       "dishHighlights": [
-        "Lamb rice",
-        "Carrots",
-        "Raisins"
+        "羊肉饭",
+        "胡萝卜",
+        "葡萄干"
       ],
       "tags": [
-        "local",
-        "uighur",
-        "sharing",
-        "flavorful"
+        "当地",
+        "维吾尔",
+        "分享",
+        "美味"
       ],
       "star": 0,
       "diamond": 0,
@@ -563,28 +563,28 @@
     {
       "id": "dunhuang-18",
       "name": "烤全羊",
-      "nameEn": "Whole Roasted Lamb",
-      "type": "fine",
-      "cuisine": "Gansu Lamb",
+      "nameEn": "烤全羊",
+      "type": "精致餐饮",
+      "cuisine": "甘肃羊肉",
       "avgPrice": 2000,
       "rating": 4.9,
-      "address": "Desert Resort",
+      "address": "沙漠度假村",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
-      "hours": "By reservation",
-      "description": "Whole lamb roasted in desert pit, ceremonial dish for special occasions, requires advance order.",
+      "hours": "需要预约",
+      "description": "沙漠坑烤全羊，节日庆典佳肴，需提前预订。",
       "dishHighlights": [
-        "Whole lamb",
-        "Pit roasted",
-        "Ceremonial"
+        "烤全羊",
+        "坑烤",
+        "庆典"
       ],
       "tags": [
-        "special-occasion",
-        "premium",
-        "ceremonial",
-        "lamb"
+        "特殊场合",
+        "高端",
+        "庆典",
+        "羊肉"
       ],
       "star": 0,
       "diamond": 0,
@@ -594,28 +594,28 @@
     {
       "id": "dunhuang-19",
       "name": "葡萄酒",
-      "nameEn": "Dunhuang Wine",
-      "type": "local",
-      "cuisine": "Dunhuang Drinks",
+      "nameEn": "敦煌酒",
+      "type": "本地",
+      "cuisine": "敦煌饮品",
       "avgPrice": 80,
       "rating": 4.4,
-      "address": "Dunhuang",
+      "address": "敦煌",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "全天",
-      "description": "Local wine from desert grapes, historical connection to Silk Road wine trade.",
+      "description": "来自沙漠葡萄的当地葡萄酒，与丝绸之路葡萄酒贸易有历史渊源。",
       "dishHighlights": [
-        "Local wine",
-        "Grape wine",
-        "Silk Road heritage"
+        "当地葡萄酒",
+        "葡萄酒",
+        "丝绸之路遗产"
       ],
       "tags": [
-        "local",
-        "drinks",
-        "souvenir",
-        "historical"
+        "本地",
+        "饮品",
+        "纪念品",
+        "历史"
       ],
       "star": 0,
       "diamond": 0,
@@ -625,28 +625,28 @@
     {
       "id": "dunhuang-20",
       "name": "清真拉面",
-      "nameEn": "Halal Noodles",
-      "type": "local",
-      "cuisine": "Halal",
+      "nameEn": "清真面馆",
+      "type": "本地",
+      "cuisine": "清真",
       "avgPrice": 25,
       "rating": 4.5,
-      "address": "Muslim Quarter",
+      "address": "穆斯林区",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "06:00-20:00",
-      "description": "Halal noodle shops in Muslim quarter serving beef and lamb noodles.",
+      "description": "穆斯林区的清真面馆，提供牛肉面和羊肉面。",
       "dishHighlights": [
-        "Beef noodles",
-        "Lamb noodles",
-        "Flatbread"
+        "牛肉面",
+        "羊肉面",
+        "馕"
       ],
       "tags": [
-        "local",
-        "halal",
-        "budget",
-        "noodles"
+        "当地",
+        "清真",
+        "实惠",
+        "面食"
       ],
       "star": 0,
       "diamond": 0,
@@ -656,28 +656,28 @@
     {
       "id": "dunhuang-21",
       "name": "大盘鸡",
-      "nameEn": "Big Plate Chicken",
-      "type": "local",
-      "cuisine": "Xinjiang Style",
+      "nameEn": "大盘鸡",
+      "type": "本地",
+      "cuisine": "新疆风味",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Dunhuang",
+      "address": "敦煌",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "10:00-22:00",
-      "description": "Large plate of chicken with potatoes and noodles, shared dish popular in Gansu/Xinjiang region.",
+      "description": "大份鸡肉配土豆和面条，是甘肃/新疆地区流行的共享菜肴。",
       "dishHighlights": [
-        "Chicken",
-        "Potatoes",
+        "鸡肉",
+        "土豆",
         "宽面条"
       ],
       "tags": [
-        "local",
-        "sharing",
-        "filling",
-        "popular"
+        "本地",
+        "分享",
+        "饱腹",
+        "人气"
       ],
       "star": 0,
       "diamond": 0,
@@ -687,28 +687,28 @@
     {
       "id": "dunhuang-22",
       "name": "凉皮",
-      "nameEn": "Liangpi Cold Noodles",
-      "type": "local",
-      "cuisine": "Gansu Snacks",
+      "nameEn": "凉皮凉面",
+      "type": "本地",
+      "cuisine": "甘肃小吃",
       "avgPrice": 15,
       "rating": 4.4,
-      "address": "Night Market",
+      "address": "夜市",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "17:00-24:00",
-      "description": "Cold rice noodles with spicy sauce, refreshing summer street snack.",
+      "description": "凉米线配辣酱，清爽的夏季街头小吃",
       "dishHighlights": [
-        "Cold noodles",
-        "Spicy sauce",
-        "Cucumber"
+        "凉面",
+        "辣酱",
+        "黄瓜"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "cold",
-        "summer"
+        "本地",
+        "小吃",
+        "冷食",
+        "夏季"
       ],
       "star": 0,
       "diamond": 0,
@@ -718,28 +718,28 @@
     {
       "id": "dunhuang-23",
       "name": "葡萄干",
-      "nameEn": "Dunhuang Raisins",
-      "type": "local",
-      "cuisine": "Local Snacks",
+      "nameEn": "敦煌葡萄干",
+      "type": "本地",
+      "cuisine": "地方小吃",
       "avgPrice": 30,
       "rating": 4.5,
-      "address": "Markets",
+      "address": "市场",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "全天",
-      "description": "Sweet raisins from Dunhuang's desert vineyards, popular snack and souvenir.",
+      "description": "敦煌沙漠葡萄园种植的甜葡萄干，是受欢迎的小吃和纪念品",
       "dishHighlights": [
-        "Fresh raisins",
-        "Dried grapes",
-        "Various sizes"
+        "鲜葡萄干",
+        "葡萄干",
+        "各种规格"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "souvenir",
-        "sweet"
+        "本地",
+        "小吃",
+        "纪念品",
+        "甜"
       ],
       "star": 0,
       "diamond": 0,
@@ -749,28 +749,28 @@
     {
       "id": "dunhuang-24",
       "name": "羊肉泡馍",
-      "nameEn": "Lamb Flatbread Soup",
-      "type": "local",
-      "cuisine": "Gansu",
+      "nameEn": "羊肉泡馍",
+      "type": "本地",
+      "cuisine": "甘肃",
       "avgPrice": 40,
       "rating": 4.5,
-      "address": "Dunhuang",
+      "address": "敦煌",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "08:00-20:00",
-      "description": "Crispy flatbread pieces in lamb broth, hearty Muslim dish.",
+      "description": "酥脆的饼块配上羊肉汤，丰盛的穆斯林菜肴。",
       "dishHighlights": [
-        "Flatbread",
-        "Lamb soup",
-        "Lamb slices"
+        "馍",
+        "羊肉汤",
+        "羊肉片"
       ],
       "tags": [
-        "local",
-        "muslim",
-        "soup",
-        "filling"
+        "本地",
+        "穆斯林",
+        "汤",
+        "管饱"
       ],
       "star": 0,
       "diamond": 0,
@@ -780,28 +780,28 @@
     {
       "id": "dunhuang-25",
       "name": "冰糖雪梨",
-      "nameEn": "Rock Sugar Pear",
-      "type": "local",
-      "cuisine": "Dunhuang Desserts",
+      "nameEn": "冰糖雪梨",
+      "type": "本地",
+      "cuisine": "敦煌甜点",
       "avgPrice": 15,
       "rating": 4.4,
-      "address": "Street Vendors",
+      "address": "街头摊贩",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "hours": "全天",
-      "description": "Sweet pear drink with rock sugar, soothing for dry desert throat.",
+      "description": "甘甜梨饮配冰糖，舒缓干燥沙漠喉咙",
       "dishHighlights": [
-        "Pear drink",
-        "Rock sugar",
-        "Soothing"
+        "梨饮",
+        "冰糖",
+        "舒缓"
       ],
       "tags": [
-        "local",
-        "dessert",
-        "drinks",
-        "soothing"
+        "本地",
+        "甜品",
+        "饮品",
+        "舒缓"
       ],
       "star": 0,
       "diamond": 0,
@@ -812,7 +812,7 @@
       "id": "dunhuang-26",
       "name": "正宗胡羊焖饼",
       "nameEn": "正宗胡羊焖饼 (胡羊焖饼)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "胡羊焖饼",
       "avgPrice": 118,
       "rating": 4.7,
@@ -841,7 +841,7 @@
       "id": "dunhuang-28",
       "name": "敦煌味胡羊焖饼",
       "nameEn": "敦煌味胡羊焖饼 (胡羊焖饼)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "胡羊焖饼",
       "avgPrice": 144,
       "rating": 4.7,
@@ -870,7 +870,7 @@
       "id": "dunhuang-30",
       "name": "传统驴肉黄面",
       "nameEn": "传统驴肉黄面 (驴肉黄面)",
-      "type": "street",
+      "type": "街边",
       "cuisine": "驴肉黄面",
       "avgPrice": 36,
       "rating": 4.8,
@@ -899,7 +899,7 @@
       "id": "dunhuang-32",
       "name": "敦煌味驴肉黄面",
       "nameEn": "敦煌味驴肉黄面 (驴肉黄面)",
-      "type": "street",
+      "type": "街边",
       "cuisine": "驴肉黄面",
       "avgPrice": 14,
       "rating": 4.9,
@@ -928,7 +928,7 @@
       "id": "dunhuang-34",
       "name": "敦煌味羊肉粉汤",
       "nameEn": "敦煌味羊肉粉汤 (羊肉粉汤)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "羊肉粉汤",
       "avgPrice": 33,
       "rating": 4.6,
@@ -957,7 +957,7 @@
       "id": "dunhuang-36",
       "name": "老街羊肉粉汤",
       "nameEn": "老街羊肉粉汤 (羊肉粉汤)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "羊肉粉汤",
       "avgPrice": 60,
       "rating": 4.2,
@@ -986,7 +986,7 @@
       "id": "dunhuang-38",
       "name": "老敦煌胡羊焖饼",
       "nameEn": "老敦煌胡羊焖饼 (胡羊焖饼)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "胡羊焖饼",
       "avgPrice": 60,
       "rating": 4.3,
@@ -1015,7 +1015,7 @@
       "id": "dunhuang-40",
       "name": "敦煌味羊肉粉汤",
       "nameEn": "敦煌味羊肉粉汤 (羊肉粉汤)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "羊肉粉汤",
       "avgPrice": 134,
       "rating": 4.4,
@@ -1044,7 +1044,7 @@
       "id": "dunhuang-42",
       "name": "街边羊肉粉汤",
       "nameEn": "街边羊肉粉汤 (羊肉粉汤)",
-      "type": "street",
+      "type": "街边",
       "cuisine": "羊肉粉汤",
       "avgPrice": 51,
       "rating": 4.5,
@@ -1073,7 +1073,7 @@
       "id": "dunhuang-44",
       "name": "敦煌味羊肉粉汤",
       "nameEn": "敦煌味羊肉粉汤 (羊肉粉汤)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "羊肉粉汤",
       "avgPrice": 58,
       "rating": 4.2,
@@ -1102,7 +1102,7 @@
       "id": "dunhuang-46",
       "name": "地道羊肉粉汤",
       "nameEn": "地道羊肉粉汤 (羊肉粉汤)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "羊肉粉汤",
       "avgPrice": 71,
       "rating": 4.1,
@@ -1131,7 +1131,7 @@
       "id": "dunhuang-48",
       "name": "传统羊肉粉汤",
       "nameEn": "传统羊肉粉汤 (羊肉粉汤)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "羊肉粉汤",
       "avgPrice": 78,
       "rating": 4.5,
@@ -1160,7 +1160,7 @@
       "id": "dunhuang-50",
       "name": "敦煌味杏皮水",
       "nameEn": "敦煌味杏皮水 (杏皮水)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "杏皮水",
       "avgPrice": 70,
       "rating": 4.3,
@@ -1189,7 +1189,7 @@
       "id": "dunhuang-52",
       "name": "老街驴肉黄面",
       "nameEn": "老街驴肉黄面 (驴肉黄面)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "驴肉黄面",
       "avgPrice": 73,
       "rating": 4.2,
@@ -1218,7 +1218,7 @@
       "id": "dunhuang-54",
       "name": "老字号杏皮水",
       "nameEn": "老字号杏皮水 (杏皮水)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "杏皮水",
       "avgPrice": 33,
       "rating": 4.1,
@@ -1247,7 +1247,7 @@
       "id": "dunhuang-56",
       "name": "正宗羊肉粉汤",
       "nameEn": "正宗羊肉粉汤 (羊肉粉汤)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "羊肉粉汤",
       "avgPrice": 31,
       "rating": 4.6,
@@ -1276,7 +1276,7 @@
       "id": "dunhuang-58",
       "name": "巷子杏皮水",
       "nameEn": "巷子杏皮水 (杏皮水)",
-      "type": "street",
+      "type": "街边",
       "cuisine": "杏皮水",
       "avgPrice": 21,
       "rating": 4.7,
@@ -1305,7 +1305,7 @@
       "id": "dunhuang-60",
       "name": "传统羊肉粉汤",
       "nameEn": "传统羊肉粉汤 (羊肉粉汤)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "羊肉粉汤",
       "avgPrice": 83,
       "rating": 4.6,
@@ -1334,7 +1334,7 @@
       "id": "dunhuang-62",
       "name": "敦煌味杏皮水",
       "nameEn": "敦煌味杏皮水 (杏皮水)",
-      "type": "street",
+      "type": "街边",
       "cuisine": "杏皮水",
       "avgPrice": 37,
       "rating": 4.1,
@@ -1363,7 +1363,7 @@
       "id": "dunhuang-64",
       "name": "老街羊肉粉汤",
       "nameEn": "老街羊肉粉汤 (羊肉粉汤)",
-      "type": "street",
+      "type": "街边",
       "cuisine": "羊肉粉汤",
       "avgPrice": 32,
       "rating": 4.7,
@@ -1392,7 +1392,7 @@
       "id": "dunhuang-66",
       "name": "地道羊肉粉汤",
       "nameEn": "地道羊肉粉汤 (羊肉粉汤)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "羊肉粉汤",
       "avgPrice": 147,
       "rating": 4.2,
@@ -1421,7 +1421,7 @@
       "id": "dunhuang-68",
       "name": "老敦煌胡羊焖饼",
       "nameEn": "老敦煌胡羊焖饼 (胡羊焖饼)",
-      "type": "street",
+      "type": "街边",
       "cuisine": "胡羊焖饼",
       "avgPrice": 42,
       "rating": 4.6,
@@ -1450,7 +1450,7 @@
       "id": "dunhuang-70",
       "name": "巷子驴肉黄面",
       "nameEn": "巷子驴肉黄面 (驴肉黄面)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "驴肉黄面",
       "avgPrice": 138,
       "rating": 4.5,
@@ -1479,7 +1479,7 @@
       "id": "dunhuang-72",
       "name": "老字号胡羊焖饼",
       "nameEn": "老字号胡羊焖饼 (胡羊焖饼)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "胡羊焖饼",
       "avgPrice": 62,
       "rating": 4.4,
@@ -1508,7 +1508,7 @@
       "id": "dunhuang-74",
       "name": "敦煌味杏皮水",
       "nameEn": "敦煌味杏皮水 (杏皮水)",
-      "type": "local",
+      "type": "本地",
       "cuisine": "杏皮水",
       "avgPrice": 145,
       "rating": 4.9,
@@ -1906,92 +1906,92 @@
   "culturalTips": [
     {
       "category": "culture",
-      "title": "Mogao Caves Respect",
+      "title": "莫高窟参观礼仪",
       "content": "莫高窟是神圣的佛教圣地。洞穴内请勿拍照，请勿触摸壁画，说话要轻声。这些是拥有千年历史的珍宝。",
       "importance": "high"
     },
     {
       "category": "culture",
-      "title": "Desert Environment",
+      "title": "沙漠环境",
       "content": "敦煌位于塔克拉玛干沙漠边缘。环境非常脆弱。请走指定路线，不要打扰沙漠野生动物，并将所有垃圾带走。",
       "importance": "high"
     },
     {
       "category": "food",
-      "title": "Dunhuang Cuisine",
+      "title": "敦煌美食",
       "content": "敦煌美食融合了甘肃和丝绸之路的影响。必尝：驴肉黄面、杏皮水、羊肉串和沙漠韭菜。",
       "importance": "high"
     },
     {
       "category": "timing",
-      "title": "Book Mogao Early",
-      "content": "Mogao Caves tickets sell out fast, especially in peak season (May-October). Book online weeks in advance or join morning queue very early.",
+      "title": "提前预订莫高窟",
+      "content": "莫高窟门票销售很快，尤其是在旺季（五月至十月）。请提前数周在线预订或很早去排队。",
       "importance": "high"
     },
     {
       "category": "culture",
-      "title": "Islamic Culture",
-      "content": "Dunhuang has a significant Muslim community. Respect Islamic customs. The night market has excellent halal food options.",
+      "title": "伊斯兰文化",
+      "content": "敦煌有大量的穆斯林社区。请尊重伊斯兰习俗。夜市有很好的清真食品选择。",
       "importance": "medium"
     },
     {
       "category": "weather",
-      "title": "Desert Climate",
-      "content": "Desert temperatures vary greatly - hot daytime, cold nights. Even summer nights need warm layers. Bring sunscreen and water. Sandstorms can occur in spring.",
+      "title": "沙漠气候",
+      "content": "沙漠温度变化很大——白天炎热，夜晚寒冷。即使是夏天的夜晚也需要保暖。携带防晒霜和水。春季可能会有沙尘暴。",
       "importance": "high"
     },
     {
       "category": "culture",
-      "title": "Silk Road History",
-      "content": "Dunhuang was a major Silk Road oasis where Buddhism, trade, and cultures met. The Mogao Caves were created by monks, merchants, and rulers over 1,000 years.",
+      "title": "丝绸之路历史",
+      "content": "敦煌是丝绸之路上的主要绿洲，佛教、贸易和文化在这里交汇。莫高窟是由僧侣、商人和统治者在1000多年间创建的。",
       "importance": "medium"
     },
     {
       "category": "food",
-      "title": "Night Market Culture",
-      "content": "Shazhou Night Market is the heart of Dunhuang evening life. Try local snacks, buy souvenirs, and enjoy the atmosphere. The apricot juice is a must-try.",
+      "title": "夜市文化",
+      "content": "沙州夜市是敦煌夜生活的核心。品尝当地小吃，购买纪念品，享受氛围。杏汁是必尝的。",
       "importance": "medium"
     },
     {
       "category": "culture",
-      "title": "Photography Etiquette",
-      "content": "Photography is prohibited inside Mogao Caves but allowed outside. At sand dunes, remove shoes before climbing. Respect signs at archaeological sites.",
+      "title": "拍照礼仪",
+      "content": "莫高窟内禁止拍照，但窟外允许。在沙丘上攀爬前请脱鞋。在考古遗址请尊重指示牌。",
       "importance": "medium"
     },
     {
       "category": "etiquette",
-      "title": "Visiting Temples",
-      "content": "When visiting Buddhist sites like Leiyin Temple, walk clockwise around statues, speak softly, and make offerings if invited by monks.",
+      "title": "寺庙参观",
+      "content": "参观佛教圣地如雷音寺时，应顺时针绕佛像行走，交谈时轻声细语，如遇僧人邀请，可进行供奉。",
       "importance": "medium"
     },
     {
       "category": "culture",
-      "title": "Starry Night",
-      "content": "Dunhuang has minimal light pollution, especially at desert camps. The Milky Way is visible on clear nights. Bring a telescope or just lie back and enjoy.",
+      "title": "星空之夜",
+      "content": "敦煌的光污染很少，尤其是在沙漠营地。在晴朗的夜晚可以看到银河。可以带上望远镜，或者只是躺在地上享受美景。",
       "importance": "medium"
     },
     {
       "category": "shopping",
-      "title": "Dunhuang Souvenirs",
-      "content": "Look for goji berries, dried apricots, desert poplar crafts, and Buddhist art reproductions. The night market has good bargaining opportunities.",
+      "title": "敦煌纪念品",
+      "content": "寻找枸杞、干杏子、沙漠杨木工艺品和佛教艺术复制品。夜市有很好的讨价还价机会。",
       "importance": "low"
     },
     {
       "category": "dialect",
-      "title": "Local Language",
-      "content": "Mandarin is universal. Some Muslim vendors speak local dialect. Basic Mandarin phrases appreciated. Hand signals help in markets.",
+      "title": "当地方言",
+      "content": "普通话是通用的。一些穆斯林商贩会说当地方言。基本的普通话短语会受到欢迎。在市场上，手势交流很有帮助。",
       "importance": "low"
     },
     {
       "category": "etiquette",
-      "title": "Desert Activities",
-      "content": "When riding camels, follow handler instructions. Don't feed the animals. For sand sliding, protect electronics from sand. Wear goggles on windy days.",
+      "title": "沙漠活动",
+      "content": "骑骆驼时，请遵循驯驼师的指示。不要喂食动物。滑沙时，保护电子产品免受沙子侵袭。刮风天请戴护目镜。",
       "importance": "medium"
     },
     {
       "category": "culture",
-      "title": "Ancient Passes",
-      "content": "Yumenguan and Yangguan passes were Silk Road fortresses. Visiting these lonely ruins with historical context creates a powerful experience of ancient travelers.",
+      "title": "古代关口",
+      "content": "阳关和玉门关是丝绸之路的堡垒。参观这些孤独的遗址，结合历史背景，能让您深刻体验古代旅行者的感受。",
       "importance": "medium"
     }
   ],
@@ -1999,223 +1999,223 @@
     {
       "type": "ambulance",
       "name": "敦煌急救中心",
-      "nameEn": "Dunhuang Emergency Center",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "120",
-      "notes": "Hospital has basic English"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "police",
       "name": "敦煌市公安局",
-      "nameEn": "Dunhuang Public Security Bureau",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "110",
-      "notes": "Tourist police at major sites"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "hospital",
       "name": "敦煌市医院",
-      "nameEn": "Dunhuang Hospital",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "+86 937 882 2567",
-      "address": "Dunhuang City",
+      "address": "广州",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
-      "notes": "Basic medical care available"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "fire",
       "name": "消防",
-      "nameEn": "Fire Department",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "119",
-      "notes": "Desert fire risk - be careful"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "tourist-police",
       "name": "敦煌旅游警察",
-      "nameEn": "Dunhuang Tourist Police",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "+86 937 882 9900",
-      "notes": "English-speaking tourist police"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "embassy",
       "name": "巴基斯坦驻乌鲁木齐总领事馆",
-      "nameEn": "Pakistan Consulate General Urumqi",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "+86 991 881 4083",
-      "address": "Urumqi",
-      "notes": "For Pakistani citizens"
+      "address": "广州",
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "desert",
       "name": "沙漠救援",
-      "nameEn": "Desert Rescue",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "139 9371 2110",
-      "notes": "For desert emergencies"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "weather",
       "name": "敦煌气象服务",
-      "nameEn": "Dunhuang Weather Service",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "12121",
-      "notes": "Check before desert trips"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "forest",
       "name": "甘肃森林防火",
-      "nameEn": "Gansu Forest Fire",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "12119",
-      "notes": "Desert fire prevention"
+      "notes": "适用于新加坡公民"
     },
     {
       "type": "road",
       "name": "甘肃路政",
-      "nameEn": "Gansu Road Administration",
+      "nameEn": "新加坡驻广州总领事馆",
       "phone": "12328",
-      "notes": "For road conditions"
+      "notes": "适用于新加坡公民"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese, Gansu dialect",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Tap water safe after boiling; bottled water essential in desert"
+    "language": "普通话（中文）",
+    "currency": "人民币 (CNY/RMB)",
+    "visa": "大多数国籍需要签证。符合条件的旅客可在机场办理 72 小时过境签证。",
+    "timeZone": "UTC+8 (北京时间)",
+    "electricity": "220V/50Hz，A 型/I 型插头",
+    "water": "自来水可饮用但建议使用瓶装水"
   },
   "attractions": [
     {
       "id": "mogao",
       "name": "莫高窟",
-      "nameEn": "Mogao Caves",
+      "nameEn": "莫高窟",
       "category": "historical",
       "image": "/img/ext/8a755aaa730a.webp",
-      "description": "UNESCO World Heritage site with 492 caves filled with 1,000 years of Buddhist art, including the largest Buddha statue at 35m tall.",
-      "address": "Mogao Caves, 25km from Dunhuang",
+      "description": "联合国教科文组织世界遗产，拥有492个洞窟，内含1000年历史的佛教艺术，包括高达35米的最大佛像。",
+      "address": "莫高窟，距敦煌25公里",
       "coordinates": {
         "lat": 40.0421,
         "lng": 94.7618
       },
-      "openingHours": "08:00-18:00 (Limited access)",
-      "ticketPrice": "旺季238¥ (includes digital center + cave visit)",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "08:00-18:00（限流进入）",
+      "ticketPrice": "旺季238¥（含数字展示中心+洞窟参观）",
+      "recommendedVisitTime": "3-4小时",
       "highlights": [
-        "Buddhist cave art",
-        "35m Buddha statue",
-        "Colorful murals",
-        "Thousand Buddhas"
+        "佛教洞窟艺术",
+        "35米高佛像",
+        "彩色壁画",
+        "千佛洞"
       ],
-      "tips": "Book tickets online weeks in advance. Only 8 caves open per visit (varies). Morning visits better. Photography prohibited inside caves.",
+      "tips": "请提前数周在线预订门票。每次参观仅开放8个洞窟（会有变化）。建议上午参观。洞内禁止拍照。",
       "phone": "+86 937 886 9999"
     },
     {
       "id": "mingsha",
       "name": "鸣沙山",
-      "nameEn": "Mingsha Mountain (Singing Sands)",
+      "nameEn": "鸣沙山（ singing sands）",
       "category": "natural",
       "image": "/img/ext/20ba084c3257.webp",
-      "description": "Spectacular sand dunes that emit singing sounds when the wind blows, with camel rides, sand sliding, and desert camping.",
-      "address": "Mingsha Mountain, 5km from Dunhuang",
+      "description": "壮观的沙丘，当风吹过时会产生歌声般的声响，有骑骆驼、滑沙和沙漠露营等项目。",
+      "address": "鸣沙山，距敦煌5公里",
       "coordinates": {
         "lat": 40.0921,
         "lng": 94.7618
       },
       "openingHours": "07:00-19:00",
-      "ticketPrice": "110¥ (3-day pass available)",
-      "recommendedVisitTime": "4-5 hours",
+      "ticketPrice": "110元（三日通票）",
+      "recommendedVisitTime": "4-5小时",
       "highlights": [
-        "Singing sand dunes",
-        "Camel rides",
-        "Desert views",
-        "Sunset"
+        "鸣沙山",
+        "骆驼骑行",
+        "沙漠风光",
+        "日落"
       ],
-      "tips": "Best at sunset for golden dunes. Wear sandals for sand. Camel ride is touristy but scenic. Book overnight desert camping for stars.",
+      "tips": "日落时金沙最美。穿凉鞋便于踩沙。骑骆驼很有画面感。推荐预订沙漠露营观星。",
       "phone": "+86 937 888 2074"
     },
     {
       "id": "crescent-spring",
       "name": "月牙泉",
-      "nameEn": "Crescent Spring",
+      "nameEn": "月牙泉",
       "category": "natural",
       "image": "/img/ext/b1a91de242ab.webp",
-      "description": "Ancient oasis in the desert with a crescent-shaped pond, surrounded by sand dunes, magical desert scenery.",
-      "address": "Mingsha Mountain Park",
+      "description": "沙漠中的古老绿洲，月牙形泉池被沙山环抱，神奇的沙漠景观。",
+      "address": "鸣沙山公园",
       "coordinates": {
         "lat": 40.0921,
         "lng": 94.7618
       },
       "openingHours": "07:00-19:00",
-      "ticketPrice": "Included in Mingsha Mountain ticket (110¥)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "含在鸣沙山门票中（110元）",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "Desert oasis",
-        "Crescent-shaped pond",
-        "Ancient pagoda",
-        "Sand dunes"
+        "沙漠绿洲",
+        "月牙形泉池",
+        "古塔",
+        "沙山"
       ],
-      "tips": "Walk around the pond for photos. The ancient pagoda is photogenic. Best light in late afternoon. Climb dunes for panoramic views.",
+      "tips": "绕泉池漫步拍照。古塔很出片。下午晚些时候光线最佳。爬沙山可俯瞰全景。",
       "phone": "+86 937 888 2074"
     },
     {
       "id": "yumenguan",
       "name": "玉门关",
-      "nameEn": "Yumenguan Pass",
+      "nameEn": "玉门关",
       "category": "historical",
       "image": "/img/ext/95e687f9d954.webp",
-      "description": "Ancient fortress guarding the Silk Road, built during Han Dynasty, now solitary ruins in the desert.",
-      "address": "90km from Dunhuang",
+      "description": "守护丝绸之路的古要塞，建于汉代，如今孤独地矗立在沙漠中。",
+      "address": "敦煌往南90公里",
       "coordinates": {
         "lat": 40.4921,
         "lng": 93.5618
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "40¥ (combined with Han Great Wall)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "40元（与汉长城联票）",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "Ancient fortress",
-        "Han Dynasty history",
-        "Desolate beauty",
-        "Silk Road"
+        "古代堡垒",
+        "汉朝历史",
+        "沙漠之美",
+        "丝绸之路"
       ],
-      "tips": "Combine with Han Dynasty Great Wall visit. The isolation is moving. Bring sun protection. Drive is scenic through desert.",
+      "tips": "建议与汉长城一起游览。荒凉感令人动容。做好防晒。沿途沙漠风光很美。",
       "phone": "+86 093 7 5512 8159"
     },
     {
       "id": "han-great-wall",
       "name": "汉长城遗址",
-      "nameEn": "Han Dynasty Great Wall",
+      "nameEn": "汉代长城",
       "category": "historical",
       "image": "/img/ext/2bc4af3d95ff.webp",
-      "description": "Remnants of the Han Dynasty earthen wall that once protected the Silk Road, atmospheric ruins in desert.",
-      "address": "Near Yumenguan",
+      "description": "汉代土筑城墙遗址，曾保护丝绸之路，沙漠中氛围独特的遗迹",
+      "address": "玉门关附近",
       "coordinates": {
         "lat": 40.5121,
         "lng": 93.5618
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "Included with Yumenguan ticket",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "包含在玉门关门票中",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "Ancient earthwork",
-        "Han Dynasty",
-        "Desert setting",
-        "Historical significance"
+        "古代土筑工程",
+        "汉代",
+        "沙漠景观",
+        "历史意义"
       ],
-      "tips": "Combine with Yumenguan Pass. The ruins are fragile - don't climb on them. The desert scenery is stunning.",
+      "tips": "与玉门关结合游览。遗址脆弱，请勿攀爬。沙漠风光非常壮观。",
       "phone": "+86 093 7 3150 8080"
     },
     {
       "id": "yadan",
       "name": "雅丹国家地质公园",
-      "nameEn": "Yadan Landform National Geopark",
+      "nameEn": "雅丹地貌国家地质公园",
       "category": "natural",
       "image": "/img/ext/1a53cf9646e4.webp",
-      "description": "UNESCO-listed geological park with dramatic wind-carved rock formations called Yadan, resembling ancient cities.",
-      "address": "180km from Dunhuang",
+      "description": "联合国教科文组织认证的地质公园，拥有壮观的雅丹风蚀岩地貌，形态如同古代城市",
+      "address": "敦煌以南180公里",
       "coordinates": {
         "lat": 40.5421,
         "lng": 93.0618
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "120¥ (includes bus tour)",
+      "ticketPrice": "120元（含观光巴士）",
       "recommendedVisitTime": "3-4小时",
       "highlights": [
         "风蚀岩石",
@@ -2397,7 +2397,7 @@
     {
       "id": "dunhuang-research",
       "name": "敦煌研究院",
-      "nameEn": "Dunhuang Academy",
+      "nameEn": "敦煌研究院",
       "category": "cultural",
       "image": "/img/ext/309f30e43563.webp",
       "description": "研究机构兼展览馆，展示莫高窟艺术的高质量复制品以及正在进行的修复工作。",
@@ -2410,10 +2410,10 @@
       "ticketPrice": "包含在莫高窟门票中",
       "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "Cave replicas",
-        "Restoration展示",
-        "Scholarly exhibits",
-        "Digital displays"
+        "洞穴复制品",
+        "修复展示",
+        "学术展览",
+        "数字展示"
       ],
       "tips": "参观完莫高窟后再来此处，有助于理解所看到的内容。数字复原作品非常精美。对艺术爱好者来说不容错过。",
       "phone": "+86 093 7 8453 3968"
@@ -2421,175 +2421,175 @@
     {
       "id": "qinghai",
       "name": "党河",
-      "nameEn": "Danghe River",
+      "nameEn": "党河",
       "category": "natural",
       "image": "/img/ext/6ff5a1e7187d.webp",
-      "description": "Lifeline river flowing through Dunhuang, creating green corridor through the desert with poplar forests.",
-      "address": "Dunhuang",
+      "description": "流经敦煌的生命之河，在沙漠中形成绿色走廊，两岸分布着杨树林",
+      "address": "敦煌",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24小时开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "Desert oasis",
-        "Poplar forests",
-        "Sunset views",
-        "Local life"
+        "沙漠绿洲",
+        "杨树林",
+        "日落景观",
+        "当地生活"
       ],
-      "tips": "Beautiful at sunset with desert backdrop. The poplar trees turn golden in fall. Great for morning walks.",
+      "tips": "日落时在沙漠背景映衬下格外美丽。秋季杨树变成金色，非常适合晨间散步",
       "phone": "+86 093 7 9805 5492"
     },
     {
       "id": "lebb",
       "name": "雷音寺",
-      "nameEn": "Leiyin Temple",
+      "nameEn": "雷音寺",
       "category": "cultural",
       "image": "/img/ext/0df1b413372e.webp",
-      "description": "Ancient Buddhist temple with beautiful architecture, peaceful atmosphere away from crowds.",
-      "address": "Dunhuang",
+      "description": "古老的佛教寺庙，建筑优美，氛围宁静，远离人群。",
+      "address": "敦煌",
       "coordinates": {
         "lat": 40.1521,
         "lng": 94.6618
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
       "highlights": [
-        "Buddhist temple",
-        "Peaceful",
-        "Ancient architecture",
-        "Quiet"
+        "佛教寺庙",
+        "宁静",
+        "古建筑",
+        "安静"
       ],
-      "tips": "Good alternative if Mogao fully booked. The temple is beautiful and peaceful. Morning visits best.",
+      "tips": "如果莫高窟已订满，这是一个很好的替代选择。寺庙宁静优美。最佳参观时间为早晨。",
       "phone": "+86 093 7 8389 4930"
     },
     {
       "id": "dune-buggy",
       "name": "沙漠越野",
-      "nameEn": "Desert Buggy Adventure",
+      "nameEn": "沙漠卡丁车冒险",
       "category": "adventure",
       "image": "/img/ext/994bfae9b723.webp",
-      "description": "Thrilling desert buggy rides through the sand dunes, popular adventure activity in Dunhuang.",
-      "address": "Mingsha Mountain",
+      "description": "穿越沙丘的刺激沙漠卡丁车骑行，是敦煌热门冒险活动。",
+      "address": "鸣沙山",
       "coordinates": {
         "lat": 40.0921,
         "lng": 94.7618
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "200-400¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "Desert buggies",
-        "Dune driving",
-        "Adventure",
-        "Thrills"
+        "沙漠卡丁车",
+        "沙丘驾驶",
+        "冒险",
+        "刺激"
       ],
-      "tips": "Book through hotel or tour operator. Safety briefing important. Not for those with back problems. Exciting experience.",
+      "tips": "通过酒店或旅行社预订。安全说明很重要。不适合有背椎问题的人。令人兴奋的体验。",
       "phone": "+86 093 7 4598 8691"
     },
     {
       "id": "silk-road-unesco",
       "name": "悬泉汉简",
-      "nameEn": "Xuanquan Han Dynasty Records",
+      "nameEn": "悬泉汉简",
       "category": "historical",
       "image": "/img/ext/9f32b9507fe6.webp",
-      "description": "Archaeological site where 35,000 Han Dynasty bamboo slips were discovered, documenting Silk Road communications.",
-      "address": "Xuanquan",
+      "description": "考古遗址，出土了35000枚汉代竹简，记录了丝绸之路的交流情况。",
+      "address": "悬泉",
       "coordinates": {
         "lat": 40.2421,
         "lng": 94.6618
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "20¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "Han Dynasty records",
-        "Archaeological site",
-        "Silk Road history",
-        "Ancient documents"
+        "汉代竹简",
+        "考古遗址",
+        "丝绸之路历史",
+        "古代文献"
       ],
-      "tips": "For history enthusiasts. The bamboo slips are fascinating. The setting in desert is atmospheric. Combine with Western Thousand Buddhas.",
+      "tips": "适合历史爱好者。竹简非常有趣。沙漠环境氛围浓厚。建议与西千佛洞结合游览。",
       "phone": "+86 093 7 3480 8170"
     },
     {
       "id": "sand-dune-museum",
       "name": "敦煌沙漠博物馆",
-      "nameEn": "Dunhuang Desert Museum",
+      "nameEn": "敦煌沙漠博物馆",
       "category": "cultural",
       "image": "/img/ext/c74d7faf7bb9.webp",
-      "description": "Museum about desert ecology, Sand Road history, and Dunhuang's unique environment.",
-      "address": "Dunhuang",
+      "description": "关于沙漠生态、丝路历史和敦煌独特环境的博物馆。",
+      "address": "敦煌",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
       "openingHours": "08:30-17:30",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
       "highlights": [
-        "Desert ecology",
-        "Sand Road history",
-        "Camel exhibits",
-        "Local culture"
+        "沙漠生态",
+        "丝路历史",
+        "骆驼展览",
+        "当地文化"
       ],
-      "tips": "Good for understanding desert environment. Free and informative. Combine with morning visit before desert trip.",
+      "tips": "有助于了解沙漠环境。免费且内容丰富。建议早晨参观后再去沙漠。",
       "phone": "+86 093 7 1846 7552"
     },
     {
       "id": "waterfall",
       "name": "渥洼池",
-      "nameEn": "Wawapi",
+      "nameEn": "瓦瓦皮",
       "category": "natural",
       "image": "/img/ext/31f8d74eeab1.webp",
-      "description": "Desert oasis with lotus flowers and water birds, serene spot for nature photography.",
-      "address": "Near Dunhuang",
+      "description": "沙漠绿洲，有荷花和水鸟，是自然摄影的宁静之地",
+      "address": "敦煌附近",
       "coordinates": {
         "lat": 40.1921,
         "lng": 94.7618
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24小时开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "Desert oasis",
-        "Lotus flowers",
-        "Bird watching",
-        "Peaceful"
+        "沙漠绿洲",
+        "荷花",
+        "观鸟",
+        "宁静"
       ],
-      "tips": "Less known than Crescent Spring. Great for bird watching. Morning light is best for photos. Combine with Western Thousand Buddhas.",
+      "tips": "比月泉湖知名度低。是观鸟的好地方。早晨光线最适合拍照。建议与西千佛洞一起游览",
       "phone": "+86 093 7 5282 2249"
     },
     {
       "id": "populus",
       "name": "胡杨林",
-      "nameEn": "Desert Poplar Forest",
+      "nameEn": "沙漠胡杨林",
       "category": "natural",
       "image": "/img/ext/c09fcbe63c84.webp",
-      "description": "Ancient desert poplar trees, some over 1,000 years old, with beautiful autumn foliage.",
-      "address": "Near Dunhuang",
+      "description": "古老的沙漠胡杨树，部分树龄超过1000年，秋季树叶色彩美丽",
+      "address": "敦煌附近",
       "coordinates": {
         "lat": 40.2921,
         "lng": 94.7618
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24小时开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "Ancient trees",
-        "Autumn colors",
-        "Desert scenery",
-        "Photography"
+        "古树",
+        "秋色",
+        "沙漠风光",
+        "摄影"
       ],
-      "tips": "Best in October for golden leaves. The trees are surreal in fall. Less crowded than other sites. Great for photography.",
+      "tips": "十月最佳，金色树叶美景如画。秋季树木如梦似幻。比其他景点人少，非常适合摄影。",
       "phone": "+86 093 7 3617 3910"
     },
     {
       "id": "yangguan",
       "name": "阳关遗址",
-      "nameEn": "Yangguan Pass",
+      "nameEn": "阳关",
       "category": "landmark",
       "description": "阳关是古代丝绸之路的重要关隘，与玉门关齐名，因王维'西出阳关无故人'诗句而闻名天下，如今遗址上保留了烽火台和部分城墙遗迹。",
       "address": "敦煌市阳关镇",
@@ -2613,7 +2613,7 @@
     {
       "id": "dunhuang-museum",
       "name": "敦煌博物馆",
-      "nameEn": "Dunhuang Museum",
+      "nameEn": "敦煌博物馆",
       "category": "museum",
       "description": "敦煌博物馆收藏了大量敦煌地区出土的文物，包括汉简、丝织品、佛教造像等，是了解敦煌历史和丝绸之路文化的重要场所。",
       "address": "敦煌市鸣山路",
@@ -2637,7 +2637,7 @@
     {
       "id": "dunhuang-night-market",
       "name": "敦煌夜市",
-      "nameEn": "Dunhuang Night Market",
+      "nameEn": "敦煌夜市",
       "category": "market",
       "description": "敦煌夜市是敦煌最热闹的夜生活场所，汇集了各种西北特色美食和手工艺品，游客可以品尝到正宗的驴肉黄面、杏皮水等敦煌特色小吃。",
       "address": "敦煌市沙洲夜市",
@@ -2661,7 +2661,7 @@
     {
       "id": "dunhuang-camel-ride",
       "name": "鸣沙山骑骆驼",
-      "nameEn": "Mingsha Mountain Camel Ride",
+      "nameEn": "鸣沙山骑骆驼",
       "category": "nature",
       "description": "在鸣沙山骑骆驼是敦煌最经典的旅游体验之一，骆驼队沿着沙漠行进，重现了古丝绸之路上的商队场景，是感受丝路文化的绝佳方式。",
       "address": "敦煌市鸣沙山月牙泉景区",
@@ -2685,7 +2685,7 @@
     {
       "id": "dunhuang-sand-dune-sunset",
       "name": "鸣沙山日落",
-      "nameEn": "Mingsha Mountain Sunset",
+      "nameEn": "鸣沙山日落",
       "category": "nature",
       "description": "鸣沙山的日落是敦煌最壮观的自然景观之一，夕阳将金色的沙丘染成橙红色，光影变幻莫测，是摄影爱好者的天堂，也是情侣们浪漫的约会地点。",
       "address": "敦煌市鸣沙山月牙泉景区",
@@ -2709,7 +2709,7 @@
     {
       "id": "dunhuang-mogao-art",
       "name": "莫高窟艺术馆",
-      "nameEn": "Mogao Caves Art Center",
+      "nameEn": "莫高窟艺术中心",
       "category": "museum",
       "description": "莫高窟艺术馆是莫高窟的数字展示中心，通过高清球幕电影和数字化展览，让游客在参观实体洞窟前先了解莫高窟的历史和艺术价值，是莫高窟参观的重要组成部分。",
       "address": "敦煌市莫高窟数字展示中心",
@@ -2733,7 +2733,7 @@
     {
       "id": "dunhuang-silk-road-museum",
       "name": "丝绸之路博物馆",
-      "nameEn": "Silk Road Museum",
+      "nameEn": "丝绸之路博物馆",
       "category": "museum",
       "description": "丝绸之路博物馆展示了丝绸之路的历史和文化，馆内收藏了大量丝路沿线出土的文物，包括丝绸、陶瓷、金银器等，是了解丝绸之路的重要窗口。",
       "address": "敦煌市",
@@ -2757,7 +2757,7 @@
     {
       "id": "dunhuang-echoing-sand",
       "name": "鸣沙山",
-      "nameEn": "Echoing Sand Mountain",
+      "nameEn": "鸣沙山",
       "category": "nature",
       "description": "鸣沙山因风吹沙动会发出声响而得名，沙山东西绵延40公里，南北宽约20公里，是敦煌最著名的自然景观，与月牙泉共同构成了沙漠奇观。",
       "address": "敦煌市鸣沙山月牙泉景区",
@@ -2781,7 +2781,7 @@
     {
       "id": "dunhuang-painting-art",
       "name": "敦煌壁画艺术",
-      "nameEn": "Dunhuang Mural Art",
+      "nameEn": "敦煌壁画艺术",
       "category": "museum",
       "description": "敦煌壁画是中国古代艺术的瑰宝，莫高窟内保存了从十六国到元代的壁画约45000平方米，内容包括佛教故事、神话传说、社会生活等，是世界艺术史上的奇迹。",
       "address": "敦煌市莫高窟景区内",
@@ -2805,7 +2805,7 @@
     {
       "id": "dunhuang-ghost-city",
       "name": "雅丹魔鬼城",
-      "nameEn": "Yadan Ghost City",
+      "nameEn": "雅丹魔鬼城",
       "category": "nature",
       "description": "雅丹魔鬼城是雅丹国家地质公园的核心景区，因风蚀作用形成了各种奇特的地貌造型，夜晚风声呼啸如鬼哭狼嚎，故名魔鬼城，是敦煌最震撼的自然奇观。",
       "address": "敦煌市雅丹国家地质公园",
@@ -2829,7 +2829,7 @@
     {
       "id": "dunhuang-thousand-buddha",
       "name": "千佛洞",
-      "nameEn": "Thousand Buddha Caves",
+      "nameEn": "千佛洞",
       "category": "temple",
       "description": "千佛洞是莫高窟的别称，因洞窟内有大量的佛像和壁画而得名，现存洞窟735个，壁画4.5万平方米，彩塑2415尊，是世界上现存规模最大的佛教艺术宝库。",
       "address": "敦煌市莫高窟景区",
@@ -2838,7 +2838,7 @@
         "lng": 94.8056
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "A类238元/B类100元",
+      "ticketPrice": "translated_value",
       "recommendedVisitTime": "3-4小时",
       "highlights": [
         "735个洞窟",
@@ -2846,14 +2846,14 @@
         "2415尊彩塑",
         "九层楼"
       ],
-      "tips": "A类票可以参观8个实体洞窟+数字中心，B类票只能参观4个实体洞窟。必须提前预约。",
+      "tips": "A类票可以参观8个实体洞窟+数字中心，B类票只能参观4个实体洞窟。必须提前预约",
       "image": "/img/ext/bec5c5aa545b.webp",
       "phone": "+86 093 7 9812 1621"
     },
     {
       "id": "dunhuang-solar-power",
       "name": "敦煌光热电站",
-      "nameEn": "Dunhuang Solar Power Tower",
+      "nameEn": "敦煌太阳能发电塔",
       "category": "landmark",
       "description": "敦煌光热电站是中国首座大规模光热发电站，巨大的镜面阵列和中央高塔构成了壮观的现代工业景观，被誉为'戈壁上的太阳花'，是科技与自然结合的典范。",
       "address": "敦煌市光电产业园区",
@@ -2877,7 +2877,7 @@
     {
       "id": "dunhuang-gobi-desert",
       "name": "戈壁滩",
-      "nameEn": "Gobi Desert",
+      "nameEn": "戈壁滩",
       "category": "nature",
       "description": "敦煌周边的戈壁滩是典型的荒漠地貌，一望无际的砾石和沙漠构成了苍凉壮美的景观，是自驾游和探险旅行的绝佳目的地，也是拍摄西部片的理想场景。",
       "address": "敦煌市周边",
@@ -2901,7 +2901,7 @@
     {
       "id": "dunhuang-ancient-beacon",
       "name": "汉代烽火台",
-      "nameEn": "Han Dynasty Beacon Tower",
+      "nameEn": "汉代烽火台",
       "category": "landmark",
       "description": "敦煌周边保留了大量汉代烽火台遗址，这些烽火台是古代军事防御体系的重要组成部分，用于传递军情，如今是研究汉代军事和丝绸之路的重要实物资料。",
       "address": "敦煌市周边（阳关、玉门关附近）",
@@ -2925,7 +2925,7 @@
     {
       "id": "dunhuang-moonlit-desert",
       "name": "月牙泉夜景",
-      "nameEn": "Crescent Moon Spring Night View",
+      "nameEn": "月泉夜景",
       "category": "nature",
       "description": "月牙泉在月光下呈现出与白天截然不同的神秘美感，泉水映着月光，四周沙山环绕，寂静而壮美，是敦煌最浪漫的夜景之一。",
       "address": "敦煌市鸣沙山月牙泉景区",
@@ -2949,7 +2949,7 @@
     {
       "id": "dunhuang-han-camp",
       "name": "敦煌古城",
-      "nameEn": "Dunhuang Ancient City",
+      "nameEn": "敦煌古城",
       "category": "landmark",
       "description": "敦煌古城是仿照古代敦煌城池建造的影视基地，再现了古代敦煌的繁华景象，城内有各种古代建筑和商铺，是拍摄古装电影和电视剧的热门取景地。",
       "address": "敦煌市敦煌古城",
@@ -2973,7 +2973,7 @@
     {
       "id": "dunhuang-silk-road-camel",
       "name": "丝路骆驼",
-      "nameEn": "Silk Road Camel Caravan",
+      "nameEn": "丝绸之路驼队",
       "category": "landmark",
       "description": "丝绸之路上的骆驼商队是古代东西方贸易的主要运输方式，如今在敦煌可以体验骆驼骑行，重温丝绸之路的历史风情，感受古代商旅的艰辛与浪漫。",
       "address": "敦煌市鸣沙山月牙泉景区",
@@ -2997,7 +2997,7 @@
     {
       "id": "dunhuang-mogao-caves-mural",
       "name": "莫高窟壁画",
-      "nameEn": "Mogao Caves Murals",
+      "nameEn": "莫高窟壁画",
       "category": "museum",
       "description": "莫高窟壁画是敦煌艺术的精华，内容涵盖佛教故事、神话传说、社会生活等方方面面，色彩绚丽，线条流畅，是中国古代绘画艺术的巅峰之作。",
       "address": "敦煌市莫高窟景区内",
@@ -3021,7 +3021,7 @@
     {
       "id": "dunhuang-singing-sand",
       "name": "鸣沙山月牙泉",
-      "nameEn": "Singing Sand Mountain & Crescent Spring",
+      "nameEn": "鸣沙山月牙泉",
       "category": "nature",
       "description": "鸣沙山月牙泉是敦煌最著名的景点，沙泉共存的奇观已有数千年历史，月牙泉形如弯月，被沙山环抱而不被掩埋，被誉为'沙漠第一泉'。",
       "address": "敦煌市鸣沙山月牙泉景区",
@@ -3045,7 +3045,7 @@
     {
       "id": "dunhuang-buddhist-art",
       "name": "敦煌佛教艺术",
-      "nameEn": "Dunhuang Buddhist Art",
+      "nameEn": "敦煌佛教艺术",
       "category": "museum",
       "description": "敦煌佛教艺术是中国佛教艺术的集大成者，从莫高窟到榆林窟，从壁画到彩塑，展现了中国佛教艺术从十六国到元代的发展历程，是世界文化遗产的重要组成部分。",
       "address": "敦煌市莫高窟等景区",
@@ -3069,7 +3069,7 @@
     {
       "id": "dunhuang-gobi-adventure",
       "name": "戈壁探险",
-      "nameEn": "Gobi Desert Adventure",
+      "nameEn": "戈壁探险",
       "category": "nature",
       "description": "敦煌周边的戈壁滩是户外探险的天堂，可以进行沙漠越野、徒步穿越、星空露营等活动，感受大漠孤烟直的壮美意境，是追求刺激和冒险的旅行者的理想目的地。",
       "address": "敦煌市周边戈壁",
@@ -3093,7 +3093,7 @@
     {
       "id": "dunhuang-landscape-park",
       "name": "敦煌公园",
-      "nameEn": "Dunhuang Park",
+      "nameEn": "敦煌公园",
       "category": "park",
       "description": "敦煌公园是敦煌市区内最大的公园，园内有湖泊、亭台和各种沙漠植物，是市民休闲娱乐的好去处，也是游客了解敦煌本地生活的好地方。",
       "address": "敦煌市市区",
@@ -3117,7 +3117,7 @@
     {
       "id": "dunhuang-bei-liang-grottoes",
       "name": "北凉石窟",
-      "nameEn": "Beiliang Grottoes",
+      "nameEn": "北梁石窟",
       "category": "temple",
       "description": "北凉石窟是敦煌地区最早的佛教石窟之一，开凿于北凉时期（约公元400年），比莫高窟还要早，是研究中国早期佛教艺术的重要遗址。",
       "address": "敦煌市附近",
@@ -3141,7 +3141,7 @@
     {
       "id": "dunhuang-wu-tai-mountain",
       "name": "三危山",
-      "nameEn": "Sanwei Mountain",
+      "nameEn": "三危山",
       "category": "nature",
       "description": "三危山位于莫高窟对面，是敦煌的神山，据传说乐僔和尚看到三危山上的金光而开凿了莫高窟，山上有古代寺庙遗址和观景台，可以俯瞰莫高窟全景。",
       "address": "敦煌市莫高窟对面",
@@ -3165,7 +3165,7 @@
     {
       "id": "dunhuang-leisure-park",
       "name": "敦煌党河风情线",
-      "nameEn": "Danghe River Scenic Line",
+      "nameEn": "党河风景区",
       "category": "park",
       "description": "党河风情线是敦煌市区沿党河建设的景观带，两岸绿树成荫，河水清澈，是市民休闲散步的好去处，也是游客在敦煌市区休闲的好地方。",
       "address": "敦煌市党河两岸",
@@ -3189,7 +3189,7 @@
     {
       "id": "dunhuang-dunhuang-heritage",
       "name": "敦煌文化遗产",
-      "nameEn": "Dunhuang Cultural Heritage",
+      "nameEn": "敦煌文化遗产",
       "category": "museum",
       "description": "敦煌是丝绸之路上最重要的文化遗产地之一，拥有莫高窟、玉门关、阳关等多处世界文化遗产，是中华文明与世界文明交流互鉴的重要见证。",
       "address": "敦煌市各遗产点",
@@ -3213,7 +3213,7 @@
     {
       "id": "dunhuang-sand-dune-activity",
       "name": "鸣沙山沙漠活动",
-      "nameEn": "Mingsha Sand Dune Activities",
+      "nameEn": "鸣沙山滑沙活动",
       "category": "nature",
       "description": "鸣沙山提供各种沙漠活动，包括滑沙、沙漠摩托、沙漠越野等，是体验沙漠乐趣的最佳去处，适合各个年龄段的游客参与。",
       "address": "敦煌市鸣沙山月牙泉景区",
@@ -3237,7 +3237,7 @@
     {
       "id": "mingsha-mountain",
       "name": "鸣沙山",
-      "nameEn": "Mingsha Mountain",
+      "nameEn": "鸣沙山",
       "category": "nature",
       "description": "敦煌城南的沙山，因风吹沙动有声而得名。",
       "address": "敦煌市",
@@ -3259,7 +3259,7 @@
     {
       "id": "yarlung-river",
       "name": "党河",
-      "nameEn": "Dang River",
+      "nameEn": "党河",
       "category": "nature",
       "description": "敦煌的母亲河，穿城而过。",
       "address": "敦煌市",

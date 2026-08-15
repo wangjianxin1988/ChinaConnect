@@ -3,29 +3,29 @@
   "name": "上海",
   "nameEn": "Shanghai",
   "country": "China",
-  "population": "24.87 million",
+  "population": "24,87 triệu",
   "coordinates": {
     "lat": 31.2304,
     "lng": 121.4737
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Shanghai, China's economic powerhouse, is a dazzling metropolis where Art Deco architecture meets futuristic skyscrapers. Known as the 'Pearl of the Orient', it offers world-class dining, shopping on Nanjing Road, the historic Bund waterfront, and a vibrant nightlife scene. The city seamlessly blends Eastern and Western influences, creating a unique cosmopolitan atmosphere.",
+  "description": "Thượng Hải, trung tâm kinh tế của Trung Quốc, là một đô thị rực rỡ nơi kiến trúc Art Deco kết hợp với những tòa nhà chọc trời tương lai. Được biết đến với cái tên 'Hồng Châu Đông', thành phố này cung cấp những trải nghiệm ẩm thực, mua sắm trên Đường Nanking, khu vực ven sông Bund lịch sử và một không gian với đầy đủ sự sống động về đêm. Thành phố này kết hợp hoàn hảo ảnh hưởng của phương Đông và phương Tây, tạo nên một khí chất đô thị độc đáo.",
   "coverImage": "/img/ext/2284bd75905e.webp",
   "highlights": [
-    "The Bund - Historic waterfront boulevard",
-    "Oriental Pearl Tower - Iconic skyline landmark",
-    "Yu Garden - Classical Chinese garden",
-    "Nanjing Road - Premier shopping street",
-    "Xintiandi - Historic shikumen houses"
+    "Bến Thượng Hải (The Bund) - Đại lộ lịch sử dọc bến cảng",
+    "Tháp Ngọc Trai Phương Đông - Điểm đánh dấu biểu tượng của thành phố",
+    "Vườn Ngọc (Yu Garden) - Vườn cổ điển Trung Quốc",
+    "Đường Nam Kinh - Phố mua sắm cao cấp",
+    "Tân Thiên Địa (Xintiandi) - Nhà shikumen lịch sử"
   ],
   "climate": {
-    "type": "Humid subtropical",
+    "type": "Cận nhiệt đới ẩm",
     "bestMonths": [
-      "March",
-      "April",
-      "May",
-      "October",
-      "November"
+      "Tháng 3",
+      "Tháng 4",
+      "Tháng 5",
+      "Tháng 10",
+      "Tháng 11"
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "4C (39F)",
@@ -35,289 +35,289 @@
     {
       "id": "the-bund",
       "name": "外滩",
-      "nameEn": "The Bund",
+      "nameEn": "Bến Thượng Hải",
       "category": "historical",
-      "description": "Shanghai's most iconic waterfront boulevard lined with 52 Gothic, Renaissance, and Art Deco buildings from the colonial era.",
-      "address": "Zhongshan East One Rd, Huangpu District",
+      "description": "Con đường ven sông mang tính biểu tượng nhất của Thượng Hải, được bao phủ bởi 52 tòa nhà theo phong cách Gothic, Phục hưng và Art Deco từ thời thuộc địa.",
+      "address": "Đường Zhongshan East One, Quận Huangpu",
       "image": "/img/ext/802212f225a6.webp",
       "coordinates": {
         "lat": 31.2408,
         "lng": 121.49
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "Mở cửa 24 giờ",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "Huangpu River views",
-        "Peace Hotel",
-        "Customs House clock tower",
-        "Night illuminations"
+        "Cảnh sông Hoàng Phổ",
+        "Khách sạn Peace",
+        "Tháp đồng hồ Hải quan",
+        "Đèn chiếu sáng ban đêm"
       ],
-      "tips": "Best visited at sunset for golden hour photos. Walk from the Bund to Nanjing Road pedestrian street. Evening light show on the river.",
+      "tips": "Thời điểm tốt nhất để tham quan là lúc hoàng hôn để chụp ảnh giờ vàng. Đi bộ từ Bund đến phố đi bộ Nam Kinh. Chương trình chiếu sáng vào buổi tối trên sông.",
       "phone": "+86 21 6321 6006"
     },
     {
       "id": "nanjing-road",
       "name": "南京路步行街",
-      "nameEn": "Nanjing Road Pedestrian Street",
+      "nameEn": "Phố đi bộ Nam Kinh",
       "category": "modern",
-      "description": "The world's busiest shopping street, stretching 1.3km from People's Square to the Bund.",
+      "description": "Phố mua sắm đông đúc nhất thế giới, trải dài 1,3km từ Quảng trường Nhân dân đến Bund.",
       "image": "/img/ext/bd0590b519ef.webp",
-      "address": "Nanjing East Rd, Huangpu District",
+      "address": "Đường Nam Kinh Đông, Quận Huangpu",
       "coordinates": {
         "lat": 31.235,
         "lng": 121.478
       },
-      "openingHours": "Open 24 hours (shops 10:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "Mở cửa 24 giờ (cửa hàng 10:00-22:00)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Modern shopping malls",
-        "Historic shops",
-        "Century-old brands",
-        "Street performers"
+        "Trung tâm thương mại hiện đại",
+        "Cửa hàng lịch sử",
+        "Thương hiệu hàng thế kỷ",
+        "Nghệ sĩ đường phố"
       ],
-      "tips": "Start at People's Square and walk to the Bund. Look for Century 21 and Shein flagship stores.",
+      "tips": "Bắt đầu từ Quảng trường Nhân dân và đi bộ đến Bến Thượng Hải. Tìm cửa hàng Century 21 và cửa hàng flagship Shein.",
       "phone": "+86 021  6597 2573"
     },
     {
       "id": "yu-garden",
       "name": "豫园",
-      "nameEn": "Yu Garden (Yuyuan)",
+      "nameEn": "Vườn Du (Yuyuan)",
       "category": "cultural",
-      "description": "A classical Chinese garden dating from the Ming dynasty with pavilions, halls, rockeries, and ponds.",
+      "description": "Một vườn cổ điển Trung Quốc có từ thời nhà Minh với các đình, đại sảnh, núi đá và ao.",
       "image": "/img/ext/818dcc90b011.webp",
-      "address": "218 Anren St, Huangpu District",
+      "address": "218 phố Anren, quận Huangpu",
       "coordinates": {
         "lat": 31.2277,
         "lng": 121.4858
       },
-      "openingHours": "09:00-17:00 (Garden), shops until 22:00",
-      "ticketPrice": "30¥ (garden only), 50¥ (with City God Temple)",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "09:00-17:00 (Vườn), cửa hàng đến 22:00",
+      "ticketPrice": "30¥ (chỉ vườn), 50¥ (bao gồm Đền Thành Hoàng)",
+      "recommendedVisitTime": "2 giờ",
       "highlights": [
-        "Grand Rockery",
-        "Huge Jade Stone",
-        "Moon-viewing Pavilion",
-        "Old City God Temple"
+        "Núi đá lớn",
+        "Đá Ngọc Khổng Lồ",
+        "Đài ngắm trăng",
+        "Đền Thành Hoàng Cũ"
       ],
-      "tips": "Arrive early to avoid crowds. The surrounding Yuyuan Bazaar is great for souvenirs and local snacks.",
+      "tips": "Đến sớm để tránh đông đúc. Khu chợ Yuyuan xung quanh rất tuyệt vời để mua quà lưu niệm và đặc sản địa phương.",
       "phone": "+86 21 6326 0830"
     },
     {
       "id": "shanghai-tower",
       "name": "上海中心大厦",
-      "nameEn": "Shanghai Tower",
+      "nameEn": "Tháp Thượng Hải",
       "category": "modern",
-      "description": "China's tallest building and the world's second tallest, with a 118th floor observation deck offering panoramic city views.",
+      "description": "Tòa nhà cao nhất của Trung Quốc và thứ hai cao nhất thế giới, với đài quan sát tầng 118 cung cấp toàn cảnh thành phố.",
       "image": "/img/ext/540e4f60a065.webp",
-      "address": "501 Yincheng Middle Rd, Pudong",
+      "address": "501 đường Yincheng Trung ương, Pudong",
       "coordinates": {
         "lat": 31.235,
         "lng": 121.5018
       },
       "openingHours": "08:30-22:00",
-      "ticketPrice": "180¥ (upper floors), 120¥ (94F)",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "180¥ (tầng trên cùng), 120¥ (tầng 94)",
+      "recommendedVisitTime": "1 giờ",
       "highlights": [
-        "Seated cable cars inside",
-        "Sky Lobby",
-        "360 city views",
-        "Cloud technology exhibition"
+        "Xe cáp ngồi bên trong",
+        "Sảnh trên cao",
+        "Toàn cảnh thành phố 360°",
+        "Triển lãm công nghệ đám mây"
       ],
-      "tips": "Book online to avoid queues. Best time is sunset. Combine with visit to nearby Shanghai World Financial Center.",
+      "tips": "Đặt vé trực tuyến để tránh xếp hàng. Thời gian tốt nhất là lúc hoàng hôn. Kết hợp với tham quan Trung tâm Tài chính Thế giới Thượng Hải.",
       "phone": "+86 21 2065 6999"
     },
     {
       "id": "xintiandi",
       "name": "新天地",
-      "nameEn": "Xintiandi",
+      "nameEn": "Tân Thiên Địa",
       "category": "cultural",
-      "description": "A trendy entertainment district featuring restored shikumen (stone gate) houses, upscale restaurants, bars, and boutique shops.",
+      "description": "Một khu giải trí thời trang với những ngôi nhà Shikumen (cổng đá) được cải tạo, các nhà hàng sang trọng, quán bar và các cửa hàng độc đáo.",
       "image": "/img/ext/fb6f123d2e62.webp",
-      "address": "Xintiandi, Huangpi District",
+      "address": "Xintiandi, Quận Hoàng Bì",
       "coordinates": {
         "lat": 31.223,
         "lng": 121.4725
       },
-      "openingHours": "Shops and restaurants 10:00-02:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "Các cửa hàng và nhà hàng 10:00-02:00",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Shikumen architecture",
-        "International restaurants",
-        "Nightlife",
-        "Shanghai Shikumen Museum"
+        "Kiến trúc Shikumen",
+        "Nhà hàng quốc tế",
+        "Đêm cuộc sống",
+        "Bảo tàng Shikumen Thượng Hải"
       ],
-      "tips": "Great for evening dining. The area has both upscale and casual options. Photogenic for sunset shots.",
+      "tips": "Lý tưởng cho bữa tối buổi tối. Khu vực có cả các lựa chọn sang trọng và thoải mái. Thích hợp cho những tấm ảnh hoàng hôn.",
       "phone": "+86 21 3307 0098"
     },
     {
       "id": "oriental-pearl",
       "name": "东方明珠塔",
-      "nameEn": "Oriental Pearl Tower",
+      "nameEn": "Tháp Ngọc Đông Phương",
       "category": "modern",
-      "description": "Shanghai's most recognizable landmark with observation decks, a rotating restaurant, and glass-bottomed skywalk.",
+      "description": "Biểu tượng nổi tiếng nhất của Thượng Hải với các sàn quan sát, nhà hàng quay và lối đi kính trên cao.",
       "image": "/img/ext/0f22197252fb.webp",
-      "address": "1 Century Ave, Pudong",
+      "address": "1 Đại lộ Thế kỷ, Phống Đông",
       "coordinates": {
         "lat": 31.2397,
         "lng": 121.4999
       },
       "openingHours": "08:00-22:00",
-      "ticketPrice": "220¥ (all decks), 180¥ (upper spheres)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "220¥ (tất cả các sàn), 180¥ (các khối trên)",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "351m observation deck",
-        "Space Module glass floor",
-        "Rotating restaurant",
-        "Shanghai history museum"
+        "Sàn quan sát 351m",
+        "Sàn kính Module Vũ trụ",
+        "Nhà hàng xoay",
+        "Bảo tàng lịch sử Thượng Hải"
       ],
-      "tips": "Evening tickets for best city lights. Combine with walk along the Bund for iconic skyline photos.",
+      "tips": "Vé tối để chiêm ngưỡng ánh đèn thành phố. Kết hợp với bộ đi dọc theo Bund để chụp ảnh quang cảnh nổi bật.",
       "phone": "+86 021  3891 5481"
     },
     {
       "id": "french-concession",
       "name": "徐家汇/法租界",
-      "nameEn": "Former French Concession",
+      "nameEn": "Khu tập thể Pháp cũ",
       "category": "cultural",
-      "description": "Tree-lined streets, historic European architecture, trendy cafes, and boutiques in the former French settlement.",
+      "description": "Những con phố cây xanh, kiến trúc châu Âu lịch sử, quán cà phê và cửa hàng thời trang theo xu hướng trong khu định cư cũ của người Pháp.",
       "image": "/img/ext/faa2a592a9dc.webp",
-      "address": "Former French Concession area, Xuhui District",
+      "address": "Khu cũ Khu tập thể Pháp, Quận Xuhui",
       "coordinates": {
         "lat": 31.213,
         "lng": 121.443
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "Mở cửa 24 giờ",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "3-4 giờ",
       "highlights": [
-        "Wukang Rd historic buildings",
-        "Café culture",
-        "Boutique shopping",
-        "Tree-lined boulevards"
+        "Các tòa nhà lịch sử trên đường Wukang",
+        "Văn hóa quán cà phê",
+        "Mua sắm thời trang",
+        "Những đại lộ cây xanh"
       ],
-      "tips": "Best explored on foot or by bike. Visit on weekends for the Sunday brunch culture. Great area for photography.",
+      "tips": "Tốt nhất khi khám phá bằng chân hoặc xe đạp. Thăm vào cuối tuần để trải nghiệm văn hóa bữa sáng cuối tuần. Khu tuyệt vời để chụp ảnh.",
       "phone": "+86 021  2857 9607"
     },
     {
       "id": "shanghai-museum",
       "name": "上海博物馆",
-      "nameEn": "Shanghai Museum",
+      "nameEn": "Bảo tàng Thượng Hải",
       "category": "cultural",
-      "description": "One of China's best museums with a world-class collection of ancient Chinese art, including bronzes, ceramics, and calligraphy.",
+      "description": "Một trong những bảo tàng xuất sắc nhất của Trung Quốc với một bộ sưu tập hàng đầu thế giới về nghệ thuật cổ đại Trung Quốc, bao gồm đồ đồng, gốm sứ và thư pháp.",
       "image": "/img/ext/e3b01cfae9b2.webp",
-      "address": "201 Renmin Ave, Huangpu District",
+      "address": "201 Đại lộ Nhân dân, Quận Hoàng Phố",
       "coordinates": {
         "lat": 31.2303,
         "lng": 121.4736
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free (ID required)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "09:00-17:00 (Đóng cửa thứ Hai)",
+      "ticketPrice": "Miễn phí (cần CMND)",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Ancient bronze collections",
-        "Ming and Qing ceramics",
-        "Chinese calligraphy",
-        "Jade exhibits"
+        "Bộ sưu tập đồ đồng cổ",
+        "Gốm sứ Minh và Thanh",
+        "Thư pháp Trung Quốc",
+        "Triển lãm ngọc bích"
       ],
-      "tips": "Arrive early. Audio guides available. Combine with People's Square. Free entry but donation box welcomed.",
+      "tips": "Đến sớm. Các máy thuyết minh âm thanh có sẵn. Kết hợp với Quảng trường Nhân dân. Vào cửa miễn phí nhưng hộp quyên góp được chào đón.",
       "phone": "+86 21 6372 3500"
     },
     {
       "id": "disneyland",
       "name": "上海迪士尼乐园",
-      "nameEn": "Shanghai Disneyland",
+      "nameEn": "Thượng Hải Disneyland",
       "category": "modern",
-      "description": "China's first Disney park with the world's largest castle, innovative rides, and Chinese-themed attractions.",
+      "description": "Công viên Disney đầu tiên của Trung Quốc với lâu đài lớn nhất thế giới, các trò chơi độc đáo và các điểm tham quan mang chủ đề Trung Quốc.",
       "image": "/img/ext/9daf9149f23d.webp",
-      "address": "Disney Resort Rd, Pudong",
+      "address": "Đường Khu nghỉ dưỡng Disneyland, Phống Đông",
       "coordinates": {
         "lat": 31.1412,
         "lng": 121.657
       },
-      "openingHours": "09:00-21:00 (varies by season)",
-      "ticketPrice": "435¥ (weekday), 545¥ (weekend/holiday)",
-      "recommendedVisitTime": "Full day",
+      "openingHours": "09:00-21:00 (thay đổi theo mùa)",
+      "ticketPrice": "435¥ (ngày trong tuần), 545¥ (cuối tuần/ngày lễ)",
+      "recommendedVisitTime": "Cả ngày",
       "highlights": [
-        "Treasure Cove",
+        "Vịnh Kỳ Bảo",
         "TRON Lightcycle Power Run",
-        "Seven Dwarfs Mine Train",
-        "Evening fireworks"
+        "Tàu Mỏ Công Chúa Bảy Chú Lùn",
+        "Pháo hoa tối"
       ],
-      "tips": "Download the Shanghai Disneyland app. Arrive 30 min before opening. Buy Quick Pass for popular rides. Wear comfortable shoes.",
+      "tips": "Tải ứng dụng Shanghai Disneyland. Đến trước 30 phút khi mở cửa. Mua Vé Nhanh cho các trò chơi phổ biến. Mặc giày thoải mái.",
       "phone": "+86 021  6047 3493"
     },
     {
       "id": "maglev",
       "name": "磁悬浮列车",
-      "nameEn": "Maglev Train Experience",
+      "nameEn": "Trải nghiệm Tàu Maglev",
       "category": "modern",
-      "description": "The world's fastest commercial magnetic levitation train, reaching 431 km/h on the 30km airport link.",
+      "description": "Tàu từ trường có tốc độ cao nhất thế giới với tốc độ 431 km/h trên tuyến đường sân bay 30km.",
       "image": "/img/ext/e2b9f97085b8.webp",
-      "address": "Longyang Rd Station, Pudong",
+      "address": "Ga Longyang, Quận Pudong",
       "coordinates": {
         "lat": 31.2068,
         "lng": 121.558
       },
       "openingHours": "06:45-21:40",
-      "ticketPrice": "50¥ (single ride), 80¥ (round trip including metro)",
-      "recommendedVisitTime": "15 minutes",
+      "ticketPrice": "50¥ (một chiều), 80¥ (khứ hồi bao gồm vé metro)",
+      "recommendedVisitTime": "15 phút",
       "highlights": [
-        "431 km/h top speed",
-        "Sleek futuristic design",
-        "Airport connection",
-        "Science exhibit at station"
+        "Tốc độ tối đa 431 km/h",
+        "Thiết kế hiện đại thanh lịch",
+        "Kết nối sân bay",
+        "Triển lãm khoa học tại ga"
       ],
-      "tips": "Worth taking just for the experience even if not going to the airport. The 8-minute ride is thrilling.",
+      "tips": "Đáng để thử ngay cả khi không đi sân bay. Chuyến đi 8 phút rất thú vị.",
       "phone": "+86 021  8843 5657"
     },
     {
       "id": "china-science",
       "name": "上海科技馆",
-      "nameEn": "Shanghai Science and Technology Museum",
+      "nameEn": "Bảo tàng Khoa học và Công nghệ Thượng Hải",
       "category": "cultural",
-      "description": "A massive interactive science museum with IMAX Dome Theater and hands-on exhibits for all ages.",
+      "description": "Một bảo tàng khoa học tương tác khổng lồ với Rạp Chiếu IMAX và các triển lãm thực hành dành cho mọi lứa tuổi.",
       "image": "/img/ext/bac2969d62dd.webp",
-      "address": "2000 Century Ave, Pudong",
+      "address": "2000 Đại lộ Thế kỷ, Quận Pudong",
       "coordinates": {
         "lat": 31.218,
         "lng": 121.543
       },
-      "openingHours": "09:00-17:15 (Closed Monday)",
-      "ticketPrice": "45¥ (basic), 120¥ (with IMAX)",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "09:00-17:15 (Đóng cửa thứ Hai)",
+      "ticketPrice": "45¥ (cơ bản), 120¥ (bao gồm IMAX)",
+      "recommendedVisitTime": "3-4 giờ",
       "highlights": [
-        "IMAX Dome Theater",
-        "Human Body exhibition",
-        "Robotics zone",
-        "Space exploration"
+        "Rạp Chiếu IMAX",
+        "Triển lãm Cơ thể người",
+        "Khu vực Robot học",
+        "Khám phá vũ trụ"
       ],
-      "tips": "Great for families. Allow at least 3 hours. IMAX show highly recommended. Book tickets online.",
+      "tips": "Thích hợp cho gia đình. Dành ít nhất 3 giờ. Buổi chiếu IMAX được đề xuất cao. Đặt vé trực tuyến.",
       "phone": "+86 021  0565 8466"
     },
     {
       "id": "jinguan-temple",
       "name": "静安寺",
-      "nameEn": "Jing'an Temple",
+      "nameEn": "Chùa Tĩnh An",
       "category": "cultural",
-      "description": "One of Shanghai's most important Buddhist temples, located in the heart of the city with a golden facade.",
+      "description": "Một trong những ngôi chùa Phật giáo quan trọng nhất của Thượng Hải, nằm ở trung tâm thành phố với bề mặt vàng.",
       "image": "/img/ext/c8db03c48237.webp",
-      "address": "1686 Nanjing West Rd, Jing'an District",
+      "address": "1686 Đại lộ Nanjin Tây, Quận Tĩnh An",
       "coordinates": {
         "lat": 31.2238,
         "lng": 121.4455
       },
       "openingHours": "07:00-17:00",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "Golden Buddhist statues",
-        "Huge bell tower",
-        "Central city location",
-        "Bamboo Garden"
+        "Tượng Phật vàng",
+        "Chuông lớn khổng lồ",
+        "Vị trí trung tâm thành phố",
+        "Vườn Tre"
       ],
-      "tips": "One of the few temples that charges entry. Audio guides available. Nearby Jing'an Kerry Centre for shopping.",
+      "tips": "Một trong ít chùa tính phí vào cửa. Có sẵn thuyết minh âm thanh. Gần Trung tâm mua sắm Kerry Tĩnh An.",
       "phone": "+86 021  2208 7926"
     },
     {
@@ -325,959 +325,959 @@
       "name": "田子坊",
       "nameEn": "Tianzifang",
       "category": "cultural",
-      "description": "A maze of narrow alleyways filled with boutique shops, art studios, cafes, and bars in a historic shikumen neighborhood.",
+      "description": "Một mê cung những con phố hẹp đầy những cửa hàng nghệ thuật, xưởng tranh, quán cà phê và quán bar trong khu phố lịch sử mang phong cách shikumen.",
       "image": "/img/ext/df2aa5046a0f.webp",
-      "address": "210 Taikang Rd, Huangpu District",
+      "address": "210 đường Taikang, Quận Huangpu",
       "coordinates": {
         "lat": 31.218,
         "lng": 121.47
       },
       "openingHours": "10:00-23:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Boutique art galleries",
-        "Local crafts",
-        "Café culture",
-        "Hidden courtyards"
+        "Những gian tranh nghệ thuật độc đáo",
+        "Thủ công địa phương",
+        "Văn hóa quán cà phê",
+        "Những sân trong khuất"
       ],
-      "tips": "Get lost in the alleys. Best visited on weekdays. Great for finding unique souvenirs. Many shops close by 9pm.",
+      "tips": "Lạc vào những con phố hẹp. Tốt nhất đến vào các ngày trong tuần. Tuyệt vời cho việc tìm kiếm những món quà lưu niệm độc đáo. Nhiều cửa hàng đóng cửa vào lúc 9 giờ tối.",
       "phone": "+86 021  5460 2808"
     },
     {
       "id": "natural-history-museum",
       "name": "上海自然博物馆",
-      "nameEn": "Shanghai Natural History Museum",
+      "nameEn": "Bảo tàng Khoa học Tự nhiên Thượng Hải",
       "category": "cultural",
-      "description": "A stunning modern museum housing over 30,000 specimens including dinosaur fossils, whale skeletons, and interactive exhibits.",
+      "description": "Một bảo tàng hiện đại ngoạn mục với hơn 30.000 mẫu vật bao gồm các hóa thạch khủng long, bộ xương cá voi và các triển lãm tương tác.",
       "image": "/img/ext/b1bfd393fa9b.webp",
-      "address": "1 Shiji Ave, Pudong",
+      "address": "1 Đại lộ Thế kỷ, Phống",
       "coordinates": {
         "lat": 31.2197,
         "lng": 121.5535
       },
-      "openingHours": "09:00-17:15 (Closed Monday)",
+      "openingHours": "09:00-17:15 (Đóng cửa thứ Hai)",
       "ticketPrice": "30¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Massive dinosaur skeletons",
-        "Evolution of life exhibits",
-        "Whale gallery",
-        "Interactive displays"
+        "Những bộ xương khủng long khổng lồ",
+        "Triển lãm sự tiến hóa của sự sống",
+        "Phòng trưng bày cá voi",
+        "Trưng bày tương tác"
       ],
-      "tips": "Buy tickets online in advance. Located near Shanghai Science and Technology Museum. Great for children.",
+      "tips": "Mua vé trước trên mạng. Nằm gần Bảo tàng Khoa học và Công nghệ Thượng Hải. Lý tưởng cho trẻ em.",
       "phone": "+86 021  1218 7252"
     },
     {
       "id": "urban-planning-exhibition",
       "name": "上海城市规划展示馆",
-      "nameEn": "Shanghai Urban Planning Exhibition Center",
+      "nameEn": "Trung tâm Triển lãm Quy hoạch Đô thị Thượng Hải",
       "category": "cultural",
-      "description": "A museum showcasing Shanghai's past, present, and future urban development with detailed scale models of the city.",
+      "description": "Một bảo tàng thể hiện quá khứ, hiện tại và tương lai phát triển đô thị của Thượng Hải với các mô hình địa hình chi tiết của thành phố.",
       "image": "/img/ext/99f2ca00ce08.webp",
-      "address": "100 People's Ave, Huangpu District",
+      "address": "100 Đại lộ Nhân dân, Quận Huangpu",
       "coordinates": {
         "lat": 31.2295,
         "lng": 121.4745
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
+      "openingHours": "09:00-17:00 (Đóng cửa thứ Hai)",
       "ticketPrice": "30¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "Massive Shanghai model",
-        "Future city visions",
-        "Historical photographs",
-        "Architecture displays"
+        "Mô hình Thượng Hải khổng lồ",
+        "Tương lai triển vọng của thành phố",
+        "Ảnh lịch sử",
+        "Trưng bày kiến trúc"
       ],
-      "tips": "The third floor model of Shanghai is impressive. Located near People's Square metro station.",
+      "tips": "Mô hình Thượng Hải ở tầng 3 thật ấn tượng. Nằm gần ga tàu điện ngầm Nhân dân.",
       "phone": "+86 021  7942 1204"
     },
     {
       "id": "happy-valley",
       "name": "上海欢乐谷",
-      "nameEn": "Happy Valley Shanghai",
+      "nameEn": "Công viên Vui vẻ Thâm Quyến",
       "category": "modern",
-      "description": "A large amusement park with roller coasters, water rides, and family attractions for all ages.",
+      "description": "Công viên giải trí lớn với tàu lượn siêu tốc, trò chơi nước và biểu diễn cho mọi lứa tuổi.",
       "image": "/img/ext/827fb49a486e.webp",
-      "address": "888 Linhu Rd, Songjiang District",
+      "address": "Overseas Chinese Town, Quận Nanshan",
       "coordinates": {
         "lat": 31.0585,
         "lng": 121.2155
       },
-      "openingHours": "09:00-17:30 (longer on weekends)",
-      "ticketPrice": "200¥",
-      "recommendedVisitTime": "Full day",
+      "openingHours": "09:30-22:00 (thay đổi theo mùa)",
+      "ticketPrice": "260¥ (cả ngày)",
+      "recommendedVisitTime": "4-5 giờ",
       "highlights": [
-        "Golden Samba coaster",
-        "Forest leap water ride",
-        "Family entertainment",
-        "Evening performances"
+        "Tàu lượn bay trên núi",
+        "Đu quay lắc",
+        "Cầu trượt nước",
+        "Suất diễn buổi tối"
       ],
-      "tips": "Arrive early. Wear comfortable shoes. Single-day passport available. Take metro line 9 to Songjiang direction.",
+      "tips": "Nên đến vào ngày trong tuần để tránh đông đúc. Có giới hạn chiều cao khi chơi. Được phép vào lại với dấu tay.",
       "phone": "+86 021  1586 6706"
     },
     {
       "id": "china-art-museum",
       "name": "中华艺术宫",
-      "nameEn": "China Art Museum",
+      "nameEn": "Bảo tàng Nghệ thuật Trung Quốc",
       "category": "cultural",
-      "description": "The largest museum of art in China, housed in the former Expo 2010 China Pavilion with massive displays of Chinese art.",
+      "description": "Bảo tàng nghệ thuật lớn nhất ở Trung Quốc, được đặt trong Tòa nhà Trung Quốc cũ của Triển lãm Thế giới 2010 với các triển lãm lớn về nghệ thuật Trung Quốc.",
       "image": "/img/ext/65a4404bbc7b.webp",
-      "address": "205 Shangnan Rd, Pudong",
+      "address": "205 đường Shangnan, Phống",
       "coordinates": {
         "lat": 31.1845,
         "lng": 121.539
       },
-      "openingHours": "10:00-18:00 (Closed Monday)",
-      "ticketPrice": "Free (special exhibitions may charge)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "10:00-18:00 (Đóng cửa thứ Hai)",
+      "ticketPrice": "Miễn phí (các triển lãm đặc biệt có thể tính phí)",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Massive oil paintings",
-        "Chinese calligraphy",
-        "Sculpture garden",
-        "Expo legacy art"
+        "Những bức tranh sơn dầu khổng lồ",
+        "Thư pháp Trung Quốc",
+        "Vườn điêu khắc",
+        "Triển lãm nghệ thuật di sản"
       ],
-      "tips": "Free entry but need to reserve online. The building itself is impressive. Combine with Expo Park walk.",
+      "tips": "Vào cửa miễn phí nhưng cần đặt vé trước trên mạng. Tòa nhà này thật ấn tượng. Kết hợp với cuộc dạo chơi trong Công viên Triển lãm.",
       "phone": "+86 021  0477 8575"
     },
     {
       "id": "m50-creative-park",
       "name": "M50创意园",
-      "nameEn": "M50 Creative Park",
+      "nameEn": "Khu Công viên Sáng tạo M50",
       "category": "cultural",
-      "description": "A former factory complex turned into an art district featuring galleries, studios, and creative boutiques.",
+      "description": "Một khu cũ của nhà máy đã được chuyển đổi thành một khu nghệ thuật với các phòng trưng bày, xưởng vẽ và các cửa hàng thời trang sáng tạo.",
       "image": "/img/ext/eb688f69c226.webp",
-      "address": "50 Moganshan Rd, Putuo District",
+      "address": "50 đường Moganshan, Quận Putuo",
       "coordinates": {
         "lat": 31.251,
         "lng": 121.435
       },
-      "openingHours": "10:00-18:00 (galleries vary)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "10:00-18:00 (giờ mở cửa của các phòng trưng bày có thể khác nhau)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Contemporary art galleries",
-        "Artist studios",
-        "Creative workshops",
-        "Industrial architecture"
+        "Phòng trưng bày nghệ thuật hiện đại",
+        "Xưởng vẽ của các nghệ sĩ",
+        "Các xưởng sáng tạo",
+        "Kiến trúc công nghiệp"
       ],
-      "tips": "Many galleries close on Mondays. Great for modern Chinese art. Nearby Suzhou Creek area has cafes.",
+      "tips": "Nhiều phòng trưng bày đóng cửa vào thứ Hai. Rất phù hợp cho nghệ thuật Trung Quốc hiện đại. Khu vực gần đó với dòng sông Suzhou có các quán cà phê.",
       "phone": "+86 021  5558 7993"
     },
     {
       "id": "huangpu-river-cruise",
       "name": "黄浦江游览",
-      "nameEn": "Huangpu River Cruise",
+      "nameEn": "Chuyến tham quan sông Hoàng Phố",
       "category": "modern",
-      "description": "A scenic boat tour along the Huangpu River offering the best views of both the historic Bund and modern Pudong skyline.",
+      "description": "Một chuyến du ngoạn bằng thuyền dọc theo sông Hoàng Phố, cung cấp những góc nhìn tuyệt đẹp về cả khu vực Bund lịch sử và khung cảnh hiện đại của Pudong.",
       "image": "/img/ext/6873a52c8f7d.webp",
-      "address": "Ferry Terminals at Bund and Pudong",
+      "address": "Các bến phà tại Bund và Pudong",
       "coordinates": {
         "lat": 31.235,
         "lng": 121.49
       },
-      "openingHours": "11:00-21:30 (multiple departures)",
+      "openingHours": "11:00-21:30 (nhiều lần khởi hành)",
       "ticketPrice": "120-180¥",
-      "recommendedVisitTime": "45-60 minutes",
+      "recommendedVisitTime": "45-60 phút",
       "highlights": [
-        "Bund architecture views",
-        "Pudong skyline at night",
-        "Historical commentary",
-        "Photo opportunities"
+        "Nhìn nhận kiến trúc tại Bund",
+        "Khung cảnh ban đêm tại Pudong",
+        "Lời bình luận lịch sử",
+        "Cơ hội chụp ảnh"
       ],
-      "tips": "Book evening cruise for illuminated skyline. Bring jacket as it's cold on the water. Combine with Bund walk.",
+      "tips": "Đặt vé chuyến tối để thưởng thức khung cảnh sáng rực rỡ. Mang theo áo khoác vì trên sông thường lạnh. Kết hợp với cuộc dạo bộ tại Bund.",
       "phone": "+86 021  9891 4327"
     },
     {
       "id": "1933-old-millfun",
       "name": "1933老场坊",
-      "nameEn": "1933 Old Mill Fun",
+      "nameEn": "1933 Cổ Khu Máy Xay Cũ",
       "category": "cultural",
-      "description": "A historic slaughterhouse turned creative space with unique spiral staircases, bridges, and European architecture.",
+      "description": "Một nhà máy lòng sữa cũ được chuyển đổi thành không gian sáng tạo với những cầu thang xoắn ốc, cầu vượt và kiến trúc châu Âu độc đáo.",
       "image": "/img/ext/dab0c1147239.webp",
-      "address": "10 Shajing Rd, Hongkou District",
+      "address": "10 đường Shajing, Quận Hongkou",
       "coordinates": {
         "lat": 31.258,
         "lng": 121.4865
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "Spiral staircases",
-        "European industrial design",
-        "Film location history",
-        "Creative retail"
+        "Cầu thang xoắn ốc",
+        "Thiết kế công nghiệp châu Âu",
+        "Lịch sử địa điểm làm phim",
+        "Bán lẻ sáng tạo"
       ],
-      "tips": "The architecture is the main draw. Great for photography. Nearby Duolun Road for more art galleries.",
+      "tips": "Kiến trúc là điểm hấp dẫn chính. Rất phù hợp cho việc chụp ảnh. Khu vực gần đó với đường Duolun có thêm các phòng trưng bày nghệ thuật.",
       "phone": "+86 021  7412 0078"
     },
     {
       "id": "hengshan-road",
       "name": "衡山路",
-      "nameEn": "Hengshan Road",
+      "nameEn": "Đường Hengshan",
       "category": "cultural",
-      "description": "A tree-lined boulevard in the former French Concession with historic villas, bars, and restaurants.",
+      "description": "Một đại lộ cây cối trong khu cũ của Tòa Đại sứ Pháp với các biệt thự lịch sử, quán bar và nhà hàng.",
       "image": "/img/ext/ad6743ab7f57.webp",
-      "address": "Hengshan Rd, Xuhui District",
+      "address": "Đường Hengshan, Quận Xuhui",
       "coordinates": {
         "lat": 31.208,
         "lng": 121.455
       },
-      "openingHours": "Open 24 hours (venues vary)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "Mở cửa 24 giờ (các địa điểm có thể khác nhau)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Tree-lined boulevard",
-        "Historic villas",
-        "Cocktail bars",
-        "Nightlife scene"
+        "Đại lộ cây xanh",
+        "Biệt thự lịch sử",
+        "Quán bar cocktail",
+        "Không khí về đêm"
       ],
-      "tips": "Great for evening stroll. Many bars and restaurants open late. Connected to Wukang Rd area.",
+      "tips": "Rất phù hợp cho cuộc dạo bộ buổi tối. Nhiều quán bar và nhà hàng mở cửa đến khuya. Kết nối với khu vực đường Wukang.",
       "phone": "+86 021  5206 0091"
     },
     {
       "id": "world-expo-museum",
       "name": "世博会博物馆",
-      "nameEn": "World Expo Museum",
+      "nameEn": "Bảo tàng Hội chợ Triển lãm Thế giới",
       "category": "cultural",
-      "description": "The only museum in the world dedicated to the World Expo, showcasing the history and legacy of world's fairs.",
+      "description": "Bảo tàng duy nhất trên thế giới dành riêng cho Hội chợ Triển lãm Thế giới, thể hiện lịch sử và di sản của các hội chợ triển lãm thế giới.",
       "image": "/img/ext/bac2969d62dd.webp",
-      "address": "1918 Panlong Rd, Changning District",
+      "address": "1918 Đường Panlong, Quận Changning",
       "coordinates": {
         "lat": 31.194,
         "lng": 121.3985
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "09:00-17:00 (Đóng cửa thứ Hai)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2 giờ",
       "highlights": [
-        "Expo history displays",
-        "Interactive exhibits",
-        "2010 Shanghai Expo artifacts",
-        "International pavilions"
+        "Trưng bày lịch sử Hội chợ Triển lãm",
+        "Triển lãm tương tác",
+        "Hiện vật Hội chợ Triển lãm Thượng Hải 2010",
+        "Công viên quốc tế"
       ],
-      "tips": "Free entry with reservation. Nearby Hongqiao area. Great for understanding Shanghai's development.",
+      "tips": "Vào cửa miễn phí với đặt chỗ trước. Khu vực gần Hongqiao. Tuyệt vời để hiểu về sự phát triển của Thượng Hải.",
       "phone": "+86 021  8684 1072"
     },
     {
       "id": "qibao-ancient",
       "name": "七宝古镇",
-      "nameEn": "Qibao Ancient Town",
+      "nameEn": "Khu phố cổ Qibao",
       "category": "cultural",
-      "description": "A historic water town with traditional architecture, street food, and crafts just 30 minutes from central Shanghai.",
+      "description": "Một khu phố cổ lịch sử với kiến trúc truyền thống, đồ ăn đường phố và thủ công mỹ nghệ chỉ cách trung tâm Thượng Hải 30 phút.",
       "image": "/img/ext/94641c0f7da6.webp",
-      "address": "Qibao Town, Minhang District",
+      "address": "Khu phố Qibao, Quận Minhang",
       "coordinates": {
         "lat": 31.168,
         "lng": 121.3445
       },
-      "openingHours": "全天 ( shops 09:00-21:00)",
-      "ticketPrice": "Free (some attractions may charge)",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "Cả ngày (các cửa hàng 09:00-21:00)",
+      "ticketPrice": "Miễn phí (một số điểm tham quan có thể thu phí)",
+      "recommendedVisitTime": "3-4 giờ",
       "highlights": [
-        "Historic streets",
-        "Qibao noodles",
-        "Traditional crafts",
-        "Waterfront views"
+        "Phố lịch sử",
+        "Mì Qibao",
+        "Thủ công truyền thống",
+        "Cảnh quan ven sông"
       ],
-      "tips": "Take Metro Line 9 to Qibao. Famous for Qibao noodles and traditional snacks. Great for a half-day trip.",
+      "tips": "Đi tàu điện ngầm tuyến 9 đến Qibao. Nổi tiếng với mì Qibao và các món ăn vặt truyền thống. Tuyệt vời cho một chuyến đi nửa ngày.",
       "phone": "+86 021  7733 5661"
     },
     {
       "id": "shanghai-oceanarium",
       "name": "上海海洋水族馆",
-      "nameEn": "Shanghai Ocean Aquarium",
+      "nameEn": "Bể bơi sinh vật biển Thượng Hải",
       "category": "cultural",
-      "description": "One of the largest aquariums in the world with over 400 species of marine life and a 155-meter underwater tunnel.",
+      "description": "Một trong những bể bơi lớn nhất thế giới với hơn 400 loài sinh vật biển và một đường hầm dưới nước dài 155 mét.",
       "image": "/img/ext/2a5927658a02.webp",
-      "address": "1388 Yincheng Middle Rd, Pudong",
+      "address": "1388 Đường Yincheng Trung, Quận Pudong",
       "coordinates": {
         "lat": 31.2412,
         "lng": 121.5435
       },
       "openingHours": "09:00-17:30",
       "ticketPrice": "180¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Underwater tunnel",
-        "Amazon exhibit",
-        "Beluga whale viewing",
-        "Jellyfish gallery"
+        "Đường hầm dưới nước",
+        "Trưng bày vùng Amazon",
+        "Các chú cá voi bạc",
+        "Phòng trưng bày sứa"
       ],
-      "tips": "Located next to Oriental Pearl Tower. Great for families. Book tickets online for discounts.",
+      "tips": "Nằm cạnh Tháp Ngọc Phương Đông. Tuyệt vời cho gia đình. Đặt vé trực tuyến để được giảm giá.",
       "phone": "+86 021  2979 9123"
     },
     {
       "id": "waigaoqiao-free",
       "name": "外高桥自由贸易试验区",
-      "nameEn": "Waigaoqiao Free Trade Zone",
+      "nameEn": "Khu chế nhập tự do Waigaoqiao",
       "category": "modern",
-      "description": "China's first free trade zone with international shopping centers and import goods at duty-free prices.",
+      "description": "Khu chế nhập tự do đầu tiên của Trung Quốc với các trung tâm mua sắm quốc tế và hàng nhập khẩu với giá miễn thuế.",
       "image": "/img/ext/5ae093a83506.webp",
-      "address": "Waigaoqiao, Pudong",
+      "address": "Waigaoqiao, Quận Pudong",
       "coordinates": {
         "lat": 31.3185,
         "lng": 121.5785
       },
-      "openingHours": "Shops 09:00-20:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "Các cửa hàng 09:00-20:00",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Imported goods",
-        "Electronics shopping",
-        "Wine and cosmetics",
-        "Duty-free prices"
+        "Hàng nhập khẩu",
+        "Mua sắm điện tử",
+        "Rượu vang và mỹ phẩm",
+        "Giá miễn thuế"
       ],
-      "tips": "Take Metro Line 6 to Waigaoqiao South. Good for electronics and imported goods. Bring passport.",
+      "tips": "Đi tàu điện ngầm tuyến 6 đến Waigaoqiao Nam. Tốt cho đồ điện tử và hàng nhập khẩu. Mang theo hộ chiếu.",
       "phone": "+86 021  5565 1354"
     },
     {
       "id": "changning-longhua",
       "name": "龙华古寺",
-      "nameEn": "Longhua Temple",
+      "nameEn": "Chùa Longhua",
       "category": "cultural",
-      "description": "Shanghai's largest and most authentic Buddhist temple, dating back to the Three Kingdoms period.",
+      "description": "Ngôi chùa Phật giáo lớn nhất và đẹp nhất ở Thượng Hải, có từ thời Tam Quốc.",
       "image": "/img/ext/a0a1d61b8275.webp",
-      "address": "2853 Longhua Rd, Xuhui District",
+      "address": "2853 Đường Longhua, Quận Xuhui",
       "coordinates": {
         "lat": 31.1825,
         "lng": 121.4485
       },
       "openingHours": "07:00-17:00",
       "ticketPrice": "10¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "Five-story pagoda",
-        "2,000 Buddhist statues",
-        "Bamboo grove",
-        "Bonsai garden"
+        "Tháp năm tầng",
+        "2.000 bức tượng Phật",
+        "Khu vườn trúc",
+        "Vườn cảnh cổ"
       ],
-      "tips": "One of Shanghai's oldest temples. Metro Line 11 to Longhua station. Beautiful at cherry blossom season.",
+      "tips": "Một trong những ngôi chùa cổ nhất của Thượng Hải. Đi tàu điện ngầm tuyến 11 đến ga Longhua. Rất đẹp vào mùa hoa anh đào.",
       "phone": "+86 021  8745 8623"
     },
     {
       "id": "lujiazui",
       "name": "陆家嘴",
-      "nameEn": "Lujiazui Finance & Trade Zone",
+      "nameEn": "Khu Thương mại & Tài chính Lujiazui",
       "category": "modern",
       "image": "/img/ext/33bc84d764a8.webp",
-      "description": "Shanghai's iconic financial district featuring the three super-tall skyscrapers: Shanghai Tower, Shanghai World Financial Center, and Jin Mao Tower.",
-      "address": "Pudong New Area",
+      "description": "Khu tài chính nổi tiếng của Thượng Hải với ba tòa nhà chọc trời: Tháp Thượng Hải, Trung tâm Tài chính Thế giới Thượng Hải và Tháp Kim Mão.",
+      "address": "Khu Pudong mới",
       "coordinates": {
         "lat": 31.2355,
         "lng": 121.4998
       },
-      "openingHours": "Open 24 hours (buildings vary)",
-      "ticketPrice": "Free (observation decks charge separately)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "Mở cửa 24 giờ (các tòa nhà có thể khác nhau)",
+      "ticketPrice": "Miễn phí (sân thượng quan sát thu phí riêng)",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Shanghai Tower observation deck",
-        "IFC Mall",
-        "Oriental Pearl Tower",
-        "Night skyline views"
+        "Sân thượng quan sát Tháp Thượng Hải",
+        "Trung tâm mua sắm IFC",
+        "Tháp Ngọc Đông Phương",
+        "Toàn cảnh thành phố về đêm"
       ],
-      "tips": "Visit at night for the best views from the Bund. The three towers are best photographed from across the river.",
+      "tips": "Tham quan vào ban đêm để có chân dung đẹp nhất từ bờ sông Bund. Ba tháp nên được chụp ảnh từ bờ sông bên kia.",
       "phone": "+86 021  9488 8835"
     },
     {
       "id": "jinmao-tower",
       "name": "金茂大厦",
-      "nameEn": "Jin Mao Tower",
+      "nameEn": "Tháp Kim Mão",
       "category": "modern",
       "image": "/img/ext/17d9118338e5.webp",
-      "description": "A 421-meter skyscraper with a unique pagoda-inspired design, featuring an 88th-floor observation deck with glass-bottomed skywalk.",
-      "address": "88 Century Ave, Pudong",
+      "description": "Tòa nhà chọc trời cao 421 mét với thiết kế độc đáo dựa trên kiến trúc tháp chùa, với sân thượng quan sát tầng 88 có sàn kính.",
+      "address": "88 Đại lộ Thế kỷ, Pudong",
       "coordinates": {
         "lat": 31.2355,
         "lng": 121.5012
       },
       "openingHours": "08:30-21:30",
-      "ticketPrice": "120¥ (88th floor observation deck)",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "120¥ (sân thượng quan sát tầng 88)",
+      "recommendedVisitTime": "1 giờ",
       "highlights": [
-        "88th floor skywalk",
-        "Glass-bottomed walkway",
-        "Pagoda-inspired design",
-        "Grand Hyatt atrium"
+        "Sàn kính tầng 88",
+        "Lối đi sàn kính",
+        "Thiết kế dựa trên kiến trúc tháp chùa",
+        "Sảnh Hyatt lớn"
       ],
-      "tips": "The glass skywalk is thrilling. Less crowded than Shanghai Tower. Great for photos.",
+      "tips": "Sàn kính thật thú vị. Ít đông hơn so với Tháp Thượng Hải. Rất tốt cho việc chụp ảnh.",
       "phone": "+86 021  0914 4668"
     },
     {
       "id": "global-harbour",
       "name": "上海环球港",
-      "nameEn": "Global Harbour",
+      "nameEn": "Công viên Thương mại Toàn cầu",
       "category": "modern",
       "image": "/img/ext/2be2a0d5d1cc.webp",
-      "description": "One of the largest shopping malls in Asia, featuring over 400 shops, a rooftop garden, and European-style interior architecture.",
-      "address": "3300 Zhongshan North Rd, Putuo District",
+      "description": "Một trong những trung tâm mua sắm lớn nhất châu Á, với hơn 400 cửa hàng, một khu vườn trên mái nhà và kiến trúc nội thất kiểu Âu.",
+      "address": "3300 Trung Sơn Bắc, Quận Putuo",
       "coordinates": {
         "lat": 31.2437,
         "lng": 121.4061
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "3-4 giờ",
       "highlights": [
-        "European-style interior",
-        "Rooftop garden",
-        "400+ shops",
-        "IMAX cinema"
+        "Nội thất kiểu Âu",
+        "Vườn trên mái",
+        "Hơn 400 cửa hàng",
+        "Rạp chiếu phim IMAX"
       ],
-      "tips": "Easily accessible by metro. Great for rainy days. The architecture is impressive even if you are not shopping.",
+      "tips": "Dễ tiếp cận bằng tàu điện ngầm. Rất tốt cho những ngày mưa. Kiến trúc thật ấn tượng ngay cả khi bạn không đi đến mua sắm.",
       "phone": "+86 021  6605 9808"
     },
     {
       "id": "people-square",
       "name": "人民广场",
-      "nameEn": "People's Square",
+      "nameEn": "Quảng trường Nhân dân",
       "category": "cultural",
       "image": "/img/ext/a8b621959b0f.webp",
-      "description": "The central square of Shanghai, surrounded by major cultural institutions including Shanghai Museum, Grand Theatre, and the Urban Planning Exhibition Center.",
-      "address": "Huangpu District",
+      "description": "Quảng trường trung tâm của Thượng Hải, được bao quanh bởi các cơ quan văn hóa lớn gồm Bảo tàng Thượng Hải, Nhà hát Lớn và Trung tâm Triển lãm Quy hoạch Đô thị.",
+      "address": "Quận Hoàng Phố",
       "coordinates": {
         "lat": 31.2303,
         "lng": 121.4737
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "Mở cửa 24 giờ",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "Shanghai Museum",
-        "Grand Theatre",
-        "Underground shopping",
-        "Pigeons and fountains"
+        "Bảo tàng Thượng Hải",
+        "Nhà hát lớn",
+        "Khu mua sắm ngầm",
+        "Bồ câu và các đài phun nước"
       ],
-      "tips": "Central hub connecting multiple metro lines. Great starting point for exploring Shanghai.",
+      "tips": "Trung tâm kết nối nhiều tuyến đường metro. Điểm khởi đầu tuyệt vời để khám phá Thượng Hải.",
       "phone": "+86 021  3804 5372"
     },
     {
       "id": "shanghai-wildlife-park",
       "name": "上海野生动物园",
-      "nameEn": "Shanghai Wildlife Park",
+      "nameEn": "Thượng Hải Vườn Động Vật Hoang Dã",
       "category": "natural",
       "image": "/img/ext/a0ff023dd3dc.webp",
-      "description": "A large wildlife park featuring over 200 species from around the world, including drive-through safari zones and animal performances.",
-      "address": "178 Nanliu Rd, Pudong",
+      "description": "Một vườn động vật hoang dã lớn với hơn 200 loài động vật từ khắp nơi trên thế giới, bao gồm các khu safari lái xe và biểu diễn động vật.",
+      "address": "Đường Nanliu 178, Quận Pudong",
       "coordinates": {
         "lat": 31.0527,
         "lng": 121.7242
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "130¥",
-      "recommendedVisitTime": "Full day",
+      "recommendedVisitTime": "Cả ngày",
       "highlights": [
-        "Safari bus ride",
-        "Giant panda exhibit",
-        "Animal shows",
-        "Feeding experiences"
+        "Chuyến xe buýt safari",
+        "Trương bày gấu trúc khổng lồ",
+        "Biểu diễn động vật",
+        "Trải nghiệm cho ăn"
       ],
-      "tips": "Arrive early. Take the safari bus first. Great for families with children. Bring snacks.",
+      "tips": "Đến sớm. Lấy xe buýt safari trước. Lý tưởng cho gia đình có trẻ em. Mang theo đồ ăn nhẹ.",
       "phone": "+86 021  7135 0290"
     },
     {
       "id": "shanghai-ocean-aquarium",
       "name": "上海海洋水族馆",
-      "nameEn": "Shanghai Ocean Aquarium",
+      "nameEn": "Bể bơi sinh vật biển Thượng Hải",
       "category": "natural",
       "image": "/img/ext/2a5927658a02.webp",
-      "description": "One of the largest aquariums in Asia, featuring a 155-meter underwater tunnel and exhibits from five continents.",
-      "address": "1388 Lujiazui Ring Rd, Pudong",
+      "description": "Một trong những hồ cá lớn nhất châu Á, với một đường hầm dưới nước dài 155 mét và các triển lãm từ năm châu lục.",
+      "address": "Đường Lujiazui Ring 1388, Quận Pudong",
       "coordinates": {
         "lat": 31.2397,
         "lng": 121.4978
       },
       "openingHours": "09:00-18:00",
-      "ticketPrice": "160¥ (adult), 110¥ (child)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "160¥ (người lớn), 110¥ (trẻ em)",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "155m underwater tunnel",
-        "Jellyfish exhibit",
-        "Penguin zone",
-        "Coral reef display"
+        "Đường hầm dưới nước 155m",
+        "Trương bày sứa",
+        "Khu cánh cụt",
+        "Trương bày rặng san hô"
       ],
-      "tips": "Located near the Oriental Pearl Tower. Combine with Lujiazui area exploration. Book online for discounts.",
+      "tips": "Nằm gần Tháp Châu Ngọc Phương Đông. Kết hợp với việc khám phá khu vực Lujiazui. Đặt vé trực tuyến để được giảm giá.",
       "phone": "+86 021  2340 9120"
     },
     {
       "id": "duolun-road",
       "name": "多伦路文化名人街",
-      "nameEn": "Duolun Road Cultural Street",
+      "nameEn": "Đường Văn hóa Duolun",
       "category": "cultural",
       "image": "/img/ext/9ca1708065fe.webp",
-      "description": "A short but historically rich street where many famous Chinese writers and intellectuals lived in the 1920s-30s, now featuring bookstores and art galleries.",
-      "address": "Duolun Rd, Hongkou District",
+      "description": "Một con đường ngắn nhưng giàu lịch sử nơi nhiều nhà văn và trí thức nổi tiếng của Trung Quốc sống vào những năm 1920-30, nay có các hiệu sách và phòng tranh.",
+      "address": "Đường Duolun, Quận Hongkou",
       "coordinates": {
         "lat": 31.2557,
         "lng": 121.4823
       },
-      "openingHours": "Open 24 hours (shops vary)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "Mở cửa 24 giờ (cửa hàng thay đổi)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "Lu Xun's former residence",
-        "Historic bookshops",
-        "Art galleries",
-        "European-style villas"
+        "Nhà cũ của Lỗ Tấn",
+        "Các hiệu sách lịch sử",
+        "Phòng tranh nghệ thuật",
+        "Biệt thự kiểu châu Âu"
       ],
-      "tips": "Combine with nearby 1933 Old Mill Fun and Lu Xun Park. Great for literature enthusiasts.",
+      "tips": "Kết hợp với 1933 Old Mill Fun và Công viên Lỗ Tấn gần đó. Rất phù hợp cho những người yêu thích văn học.",
       "phone": "+86 021  2045 6478"
     },
     {
       "id": "longhua-temple",
       "name": "龙华寺",
-      "nameEn": "Longhua Temple",
+      "nameEn": "Chùa Longhua",
       "category": "cultural",
       "image": "/img/ext/a0a1d61b8275.webp",
-      "description": "The largest and oldest Buddhist temple in Shanghai, dating back to 242 AD, featuring a seven-story pagoda and beautiful gardens.",
-      "address": "2853 Longhua Rd, Xuhui District",
+      "description": "Ngôi chùa Phật giáo lớn nhất và cổ nhất ở Thượng Hải, có từ năm 242 SCN, với tháp bảy tầng và những khu vườn xinh đẹp.",
+      "address": "2853 Đường Longhua, Quận Xuhui",
       "coordinates": {
         "lat": 31.1728,
         "lng": 121.4516
       },
       "openingHours": "07:00-16:30",
       "ticketPrice": "10¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "Seven-story pagoda",
-        "Ancient bell tower",
-        "Buddhist prayer halls",
-        "Cherry blossom garden"
+        "Tháp bảy tầng",
+        "Tháp chuông cổ",
+        "Nhà lễ Phật",
+        "Vườn hoa anh đào"
       ],
-      "tips": "Visit during Chinese New Year for the famous bell-ringing ceremony. The pagoda is the highlight.",
+      "tips": "Hãy đến vào dịp Tết Nguyên Đán để tham gia lễ đánh chuông nổi tiếng. Tháp bảy tầng là điểm nhấn chính.",
       "phone": "+86 021  7958 0191"
     },
     {
       "id": "columbia-circle",
       "name": "哥伦比亚公园",
-      "nameEn": "Columbia Circle",
+      "nameEn": "Vòng xoay Columbia",
       "category": "cultural",
       "image": "/img/ext/827fb49a486e.webp",
-      "description": "A historic compound from the 1920s-30s American settlement era, now a trendy lifestyle hub with restaurants, shops, and co-working spaces.",
-      "address": "1262 Yan'an West Rd, Changning District",
+      "description": "Một khu phức hợp lịch sử từ thời kỳ thuộc địa Mỹ từ những năm 1920-30, nay là một trung tâm lối sống hiện đại với các nhà hàng, cửa hàng và không gian làm việc cùng.",
+      "address": "1262 Đường Yan'an Tây, Quận Changning",
       "coordinates": {
         "lat": 31.2148,
         "lng": 121.4147
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "Colonial-era architecture",
-        "Trendy cafes",
-        "Design shops",
-        "Lush garden setting"
+        "Kiến trúc thời thuộc địa",
+        "Quán cà phê thời thượng",
+        "Cửa hàng thiết kế",
+        "Không gian vườn xanh"
       ],
-      "tips": "Great for afternoon tea or brunch. The architecture is the main draw. Popular with young locals.",
+      "tips": "Rất phù hợp cho trà chiều hoặc bữa sáng muộn. Kiến trúc là điểm hấp dẫn chính. Phổ biến với giới trẻ địa phương.",
       "phone": "+86 021  8769 5264"
     },
     {
       "id": "shanghai-bund-history-museum",
       "name": "上海市历史博物馆",
-      "nameEn": "Shanghai History Museum",
+      "nameEn": "Bảo tàng Lịch sử Thượng Hải",
       "category": "cultural",
       "image": "/img/ext/b1bfd393fa9b.webp",
-      "description": "Housed in the former Shanghai Race Club building, this museum chronicles Shanghai's evolution from a small fishing village to a global metropolis.",
-      "address": "325 Nanjing West Rd, Huangpu District",
+      "description": "Tọa lạc tại tòa nhà cũ của Shanghai Race Club, bảo tàng này lưu trữ sự tiến hóa của Thượng Hải từ một làng chài nhỏ đến một thành phố toàn cầu.",
+      "address": "325 Đại lộ Tây Nam Nanking, Quận Hoàng Phố",
       "coordinates": {
         "lat": 31.2328,
         "lng": 121.4717
       },
-      "openingHours": "09:00-16:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "09:00-16:00 (Đóng cửa vào thứ Hai)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2 giờ",
       "highlights": [
-        "Old Shanghai artifacts",
-        "Colonial-era exhibits",
-        "Rooftop city views",
-        "Interactive displays"
+        "Hiện vật cũ của Thượng Hải",
+        "Triển lãm thời kỳ thuộc địa",
+        "Tầm nhìn từ mái nhà về thành phố",
+        "Trưng bày tương tác"
       ],
-      "tips": "Free admission. Located near People's Square. The rooftop view of the city is a hidden gem.",
+      "tips": "Miễn phí. Nằm gần Quảng trường Nhân dân. Tầm nhìn từ mái nhà về thành phố là một viên ngọc còn chưa được khám phá.",
       "phone": "+86 021  8156 7930"
     },
     {
       "id": "shanghai-astronomical-museum",
       "name": "上海天文馆",
-      "nameEn": "Shanghai Astronomical Museum",
+      "nameEn": "Bảo tàng Thiên văn Thượng Hải",
       "category": "cultural",
       "image": "/img/ext/0818c50f4626.webp",
-      "description": "The world's largest astronomical museum, featuring immersive planetarium shows, space exhibitions, and a solar telescope.",
-      "address": "380 Lingang Ave, Pudong",
+      "description": "Bảo tàng thiên văn lớn nhất thế giới, với các chương trình thiên văn viện sống động, triển lãm vũ trụ và kính thiên văn mặt trời.",
+      "address": "380 Đại lộ Lingang, Phố Pudong",
       "coordinates": {
         "lat": 30.9112,
         "lng": 121.9375
       },
-      "openingHours": "09:30-16:00 (Closed Monday)",
+      "openingHours": "09:30-16:00 (Đóng cửa vào thứ Hai)",
       "ticketPrice": "40¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4 giờ",
       "highlights": [
-        "Immersive planetarium",
-        "Mars exhibition",
-        "Solar telescope",
-        "Interactive space zone"
+        "Viện thiên văn sống động",
+        "Triển lãm về Sao Hỏa",
+        "Kính thiên văn mặt trời",
+        "Khu không gian tương tác"
       ],
-      "tips": "Book tickets well in advance - it is very popular. Located in Lingang, about 1.5 hours from city center.",
+      "tips": "Đặt vé trước - bảo tàng rất được ưa chuộng. Nằm ở Lingang, cách trung tâm thành phố khoảng 1,5 giờ.",
       "phone": "+86 021  3860 5598"
     },
     {
       "id": "shanghai-bund-sources",
       "name": "外滩源",
-      "nameEn": "Bund Source (Waitanyuan)",
+      "nameEn": "Nguồn Bund (Waitanyuan)",
       "category": "cultural",
       "image": "/img/ext/802212f225a6.webp",
-      "description": "The northern extension of the Bund featuring beautifully restored heritage buildings, upscale dining, and the Peninsula Hotel.",
-      "address": "Near Yuanmingyuan Rd, Huangpu District",
+      "description": "Phần mở rộng phía bắc của Bund, với những tòa nhà di sản được cải tạo lại đẹp mắt, các nhà hàng sang trọng và khách sạn Peninsula.",
+      "address": "Gần đường Yuanmingyuan, Quận Hoàng Phố",
       "coordinates": {
         "lat": 31.2428,
         "lng": 121.4888
       },
-      "openingHours": "Open 24 hours (venues vary)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "Mở cửa 24 giờ (các địa điểm có thể khác nhau)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "Heritage architecture",
-        "Rockbund Art Museum",
-        "Fine dining",
-        "Riverside promenade"
+        "Kiến trúc di sản",
+        "Viện Bảo tàng Nghệ thuật Rockbund",
+        "Ẩm thực cao cấp",
+        "Bờ sông dạo bộ"
       ],
-      "tips": "Less crowded than the main Bund area. Great for photography. Combine with a Bund walk.",
+      "tips": "Ít đông hơn khu Bund chính. Tuyệt vời cho việc chụp ảnh. Kết hợp với một chuyến dạo bộ trên Bund.",
       "phone": "+86 021  9751 6582"
     },
     {
       "id": "china-maritime-museum",
       "name": "中国航海博物馆",
-      "nameEn": "China Maritime Museum",
+      "nameEn": "Viện Bảo tàng Hàng hải Trung Quốc",
       "category": "cultural",
       "image": "/img/ext/edd412a5b9dc.webp",
-      "description": "A comprehensive museum dedicated to China's maritime history, featuring ship models, navigation instruments, and a full-size replica ancient ship.",
-      "address": "1 Shugang Rd, Pudong (Lingang)",
+      "description": "Một bảo tàng đa dạng dành riêng cho lịch sử hàng hải của Trung Quốc, với các mô hình tàu thuyền, các dụng cụ định hướng và một bản sao tàu cổ đại đầy kích thước.",
+      "address": "1 đường Shugang, Phống Đông (Lingang)",
       "coordinates": {
         "lat": 30.8892,
         "lng": 121.9291
       },
-      "openingHours": "09:30-16:00 (Closed Monday)",
+      "openingHours": "09:30-16:00 (Đóng cửa vào thứ Hai)",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Full-size ancient ship replica",
-        "Navigation instruments",
-        "Maritime artifacts",
-        "Interactive exhibits"
+        "Bản sao tàu cổ đại đầy kích thước",
+        "Dụng cụ định hướng",
+        "Các di vật hàng hải",
+        "Triển lãm tương tác"
       ],
-      "tips": "Located in Lingang area. Combine with the Astronomical Museum nearby for a full day trip.",
+      "tips": "Nằm trong khu vực Lingang. Kết hợp với Bảo tàng Thiên văn học gần đó để có một chuyến đi trọn vẹn trong một ngày.",
       "phone": "+86 021  6124 6912"
     },
     {
       "id": "shanghai-greenhouse-garden",
       "name": "上海温室花园",
-      "nameEn": "Shanghai Greenhouse Garden",
+      "nameEn": "Vườn Nhà Kính Thượng Hải",
       "category": "natural",
       "image": "/img/ext/f8c110af1512.webp",
-      "description": "A stunning modern greenhouse complex featuring tropical plants, desert landscapes, and a cloud forest in a futuristic architectural setting.",
-      "address": "Near Expo Park, Pudong",
+      "description": "Một khu nhà kính hiện đại ngoạn mục với các loài thực vật nhiệt đới, cảnh quan sa mạc và rừng mây trong một bối cảnh kiến trúc tương lai.",
+      "address": "Gần Công viên Triển lãm Thế giới, Quận Pudong",
       "coordinates": {
         "lat": 31.1855,
         "lng": 121.4912
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
+      "openingHours": "09:00-17:00 (Đóng cửa thứ Hai)",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "2 hours",
+      "recommendedVisitTime": "2 giờ",
       "highlights": [
-        "Cloud forest zone",
-        "Desert plant garden",
-        "Tropical greenhouse",
-        "Modern architecture"
+        "Khu rừng mây",
+        "Vườn thực vật sa mạc",
+        "Nhà kính nhiệt đới",
+        "Kiến trúc hiện đại"
       ],
-      "tips": "A newer attraction. Great for plant lovers and photography. Combine with Expo Park area.",
+      "tips": "Một điểm đến mới. Lý tưởng cho những người yêu thích thực vật và nhiếp ảnh. Kết hợp với khu vực Công viên Triển lãm Thế giới.",
       "phone": "+86 021  9406 3492"
     },
     {
       "id": "shanghai-jewish-refugees-museum",
       "name": "上海犹太难民纪念馆",
-      "nameEn": "Shanghai Jewish Refugees Museum",
+      "nameEn": "Bảo tàng Tị nạn Do Thái Thượng Hải",
       "category": "cultural",
       "image": "/img/ext/0818c50f4626.webp",
-      "description": "A museum documenting the history of Jewish refugees who fled to Shanghai during WWII, housed in the former Ohel Moishe Synagogue.",
-      "address": "62 Changyang Rd, Hongkou District",
+      "description": "Một bảo tàng ghi lại lịch sử những người tị nạn Do Thái đã chạy trốn đến Thượng Hải trong Chiến tranh Thế giới thứ II, được đặt tại ngôi nhà cũ của Hiệp hội Ohel Moishe.",
+      "address": "62 đường Changyang, Quận Hongkou",
       "coordinates": {
         "lat": 31.2565,
         "lng": 121.5065
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "09:00-17:00 (Đóng cửa thứ Hai)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "Ohel Moishe Synagogue",
-        "Personal refugee stories",
-        "Historical photographs",
-        "Survivor testimonies"
+        "Hiệp hội Ohel Moishe",
+        "Các câu chuyện cá nhân về người tị nạn",
+        "Ảnh lịch sử",
+        "Lời khai của người sống sót"
       ],
-      "tips": "Moving and important museum. Allow time for the video presentations. Free admission.",
+      "tips": "Một bảo tàng đầy cảm động và quan trọng. Dành thời gian cho các buổi trình chiếu video. Miễn phí tham quan.",
       "phone": "+86 021  3380 1785"
     },
     {
       "id": "shanghai-chopsticks-museum",
       "name": "上海筷子博物馆",
-      "nameEn": "Shanghai Chopsticks Museum",
+      "nameEn": "Bảo tàng Đũa ăn Thượng Hải",
       "category": "cultural",
       "image": "/img/ext/e3b01cfae9b2.webp",
-      "description": "A quirky private museum housing over 2,000 pairs of chopsticks from various dynasties and countries, the only chopstick museum in the world.",
-      "address": "36 Lianyun Rd, Huangpu District",
+      "description": "Một bảo tàng kỳ lạ tư nhân chứa hơn 2.000 đôi đũa từ các triều đại và quốc gia khác nhau, là bảo tàng đũa duy nhất trên thế giới.",
+      "address": "36 đường Lianyun, Quận Hoàng Phố",
       "coordinates": {
         "lat": 31.2285,
         "lng": 121.4865
       },
-      "openingHours": "10:00-18:00 (by appointment)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "30 minutes",
+      "openingHours": "10:00-18:00 (theo đặt lịch trước)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "30 phút",
       "highlights": [
-        "2,000+ chopstick pairs",
-        "Ancient dynasty chopsticks",
-        "Ivory and jade chopsticks",
-        "Chopstick culture history"
+        "Hơn 2.000 đôi đũa",
+        "Đũa thời các triều đại cổ đại",
+        "Đũa bằng ngà và ngọc",
+        "Lịch sử văn hóa đũa"
       ],
-      "tips": "Call ahead to confirm opening. Small but unique museum. Great conversation starter.",
+      "tips": "Gọi điện trước để xác nhận giờ mở cửa. Bảo tàng nhỏ nhưng độc đáo. Tạo đề tài nói chuyện tuyệt vời.",
       "phone": "+86 021  7382 5791"
     },
     {
       "id": "jing-an-sculpture-park",
       "name": "静安雕塑公园",
-      "nameEn": "Jing'an Sculpture Park",
+      "nameEn": "Công viên Điêu khắc Jingan",
       "category": "modern",
       "image": "/img/ext/3eedb153f298.webp",
-      "description": "A beautiful urban park featuring contemporary sculpture installations, cherry blossoms, and the Shanghai Natural History Museum.",
-      "address": "500 Beijing West Rd, Jing'an District",
+      "description": "Một công viên đô thị tuyệt đẹp với các tác phẩm điêu khắc hiện đại, hoa anh đào, và Bảo tàng Khoa học Tự nhiên Thượng Hải.",
+      "address": "500 đường Tây Bắc Hà Nội, Quận Jingan",
       "coordinates": {
         "lat": 31.2285,
         "lng": 121.4567
       },
       "openingHours": "06:00-21:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "1 giờ",
       "highlights": [
-        "Contemporary sculptures",
-        "Cherry blossom avenue",
-        "Shanghai Natural History Museum",
-        "Urban green space"
+        "Điêu khắc hiện đại",
+        "Đại lộ hoa anh đào",
+        "Bảo tàng Khoa học Tự nhiên Thượng Hải",
+        "Khu vực xanh đô thị"
       ],
-      "tips": "Free park. Visit in spring for cherry blossoms. Combine with the Natural History Museum.",
+      "tips": "Công viên miễn phí. Đến thăm vào mùa xuân để xem hoa anh đào. Kết hợp với Bảo tàng Khoa học Tự nhiên.",
       "phone": "+86 021  3160 9014"
     },
     {
       "id": "shanghai-bund-finance-center",
       "name": "外滩金融中心",
-      "nameEn": "Bund Finance Center (BFC)",
+      "nameEn": "Trung tâm Tài chính Bờ Sông Thượng Hải (BFC)",
       "category": "modern",
       "image": "/img/ext/181533e5bea3.webp",
-      "description": "A mixed-use development at the southern end of the Bund featuring the Fosun Foundation art center with a moving facade veil.",
-      "address": "600 Zhongshan East 2nd Rd, Huangpu District",
+      "description": "Một khu phát triển đa năng ở phía nam của Bund, nổi bật với Trung tâm nghệ thuật Fosun Foundation với mặt tiền di động.",
+      "address": "600 Zhongshan East 2nd Rd, Quận Huangpu",
       "coordinates": {
         "lat": 31.2335,
         "lng": 121.4945
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "Free (exhibitions may charge)",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "Miễn phí (triển lãm có thể tính phí)",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "Moving facade veil",
-        "Fosun Foundation exhibitions",
-        "Bund river views",
-        "Luxury shopping"
+        "Mặt tiền di động",
+        "Triển lãm Fosun Foundation",
+        "Quang cảnh sông Bund",
+        "Mua sắm cao cấp"
       ],
-      "tips": "Check the Fosun Foundation exhibition schedule. The moving veil is best viewed from outside.",
+      "tips": "Kiểm tra lịch triển lãm của Fosun Foundation. Mặt tiền di động được xem tốt nhất từ bên ngoài.",
       "phone": "+86 021  3622 7554"
     },
     {
       "id": "shanghai-le-golf",
       "name": "上海汽车博物馆",
-      "nameEn": "Shanghai Auto Museum",
+      "nameEn": "Bảo tàng Ô tô Thượng Hải",
       "category": "cultural",
       "image": "/img/ext/0818c50f4626.webp",
-      "description": "China's first auto museum featuring over 100 vintage and classic cars from the 19th century to the present.",
-      "address": "7565 Boyuan Rd, Jiading District",
+      "description": "Bảo tàng ô tô đầu tiên của Trung Quốc với hơn 100 chiếc ô tô cổ và kinh điển từ thế kỷ 19 đến nay.",
+      "address": "7565 Boyuan Rd, Quận Jiading",
       "coordinates": {
         "lat": 31.2955,
         "lng": 121.2702
       },
-      "openingHours": "09:30-16:30 (Closed Monday)",
+      "openingHours": "09:30-16:30 (Đóng cửa thứ Hai)",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "2 hours",
+      "recommendedVisitTime": "2 giờ",
       "highlights": [
-        "Vintage car collection",
-        "Retro designs",
-        "Automobile history",
-        "Interactive displays"
+        "Bộ sưu tập ô tô cổ",
+        "Thiết kế cổ điển",
+        "Lịch sử ô tô",
+        "Trưng bày tương tác"
       ],
-      "tips": "Located in Jiading district. Good for car enthusiasts. Combine with Jiading Old Town.",
+      "tips": "Nằm ở quận Jiading. Phù hợp cho những người yêu ô tô. Kết hợp với Khu phố cổ Jiading.",
       "phone": "+86 021  5430 9874"
     },
     {
       "id": "shanghai-film-museum",
       "name": "上海电影博物馆",
-      "nameEn": "Shanghai Film Museum",
+      "nameEn": "Bảo tàng Điện ảnh Thượng Hải",
       "category": "cultural",
       "image": "/img/ext/e3b01cfae9b2.webp",
-      "description": "A museum celebrating 100 years of Chinese cinema, featuring vintage film equipment, costumes, and interactive exhibits.",
-      "address": "595 Caoxi North Rd, Xuhui District",
+      "description": "Một bảo tàng kỷ niệm 100 năm điện ảnh Trung Quốc, với các thiết bị điện ảnh cổ, trang phục và các triển lãm tương tác.",
+      "address": "Đường Caoxi Bắc 595, Quận Xuhui",
       "coordinates": {
         "lat": 31.1823,
         "lng": 121.4356
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
+      "openingHours": "09:00-17:00 (Đóng cửa thứ Hai)",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "2 hours",
+      "recommendedVisitTime": "2 giờ",
       "highlights": [
-        "Vintage film equipment",
-        "Chinese cinema history",
-        "Costume exhibits",
-        "4D cinema experience"
+        "Thiết bị phim cổ",
+        "Lịch sử điện ảnh Trung Quốc",
+        "Triển lãm trang phục",
+        "Trải nghiệm rạp chiếu 4D"
       ],
-      "tips": "Great for film enthusiasts. Interactive exhibits are fun. Located near Shanghai Film Studio.",
+      "tips": "Rất phù hợp cho những người yêu thích điện ảnh. Các triển lãm tương tác rất thú vị. Nằm gần Trung tâm Sản xuất Phim Thượng Hải.",
       "phone": "+86 021  9347 8744"
     },
     {
       "id": "zhujiajiao",
       "name": "朱家角古镇",
-      "nameEn": "Zhujiajiao Water Town",
+      "nameEn": "Khu phố nước Zhujiajiao",
       "category": "cultural",
       "image": "/img/ext/10a3b673e437.webp",
-      "description": "A 1,700-year-old water town with canals, stone bridges, traditional houses, and local food specialties, just 48km from Shanghai.",
-      "address": "Zhujiajiao Town, Qingpu District",
+      "description": "Một khu phố nước truyền thống 1.700 năm tuổi với các kênh, cầu đá, nhà cổ và đặc sản ẩm thực địa phương, cách Thượng Hải 48km.",
+      "address": "Thị trấn Zhujiajiao, Quận Qingpu",
       "coordinates": {
         "lat": 31.1089,
         "lng": 121.0526
       },
-      "openingHours": "Open 24 hours (attractions 08:30-16:30)",
-      "ticketPrice": "Free (combo ticket 80¥ for attractions)",
-      "recommendedVisitTime": "Half day to full day",
+      "openingHours": "Mở cửa 24 giờ (các điểm tham quan 08:30-16:30)",
+      "ticketPrice": "Miễn phí (vé kết hợp 80¥ cho các điểm tham quan)",
+      "recommendedVisitTime": "Nửa ngày đến cả ngày",
       "highlights": [
-        "Fangsheng Bridge",
-        "Canal boat rides",
-        "Traditional rice wine",
-        "Local zongzi dumplings"
+        "Cầu Fangsheng",
+        "Chuyến đi thuyền kênh",
+        "Rượu gạo truyền thống",
+        "Bánh bột gạo địa phương"
       ],
-      "tips": "Take the bus from Pu'an Rd. Arrive early to avoid crowds. Try the local zongzi (rice dumplings).",
+      "tips": "Đi xe buýt từ đường Pu'an. Đến sớm để tránh đông đúc. Thử bánh zongzi (bánh bột gạo) địa phương.",
       "phone": "+86 021  8700 4077"
     },
     {
       "id": "qibao-old-town",
       "name": "七宝老街",
-      "nameEn": "Qibao Old Town",
+      "nameEn": "Khu phố cổ Qibao",
       "category": "cultural",
       "image": "/img/ext/94641c0f7da6.webp",
-      "description": "A charming ancient water town within Shanghai, featuring traditional architecture, local snacks, and a cricket museum.",
-      "address": "Qibao Town, Minhang District",
+      "description": "Một khu phố cổ đáng yêu trong Thượng Hải, với kiến trúc truyền thống, đồ ăn vặt địa phương và một bảo tàng dế.",
+      "address": "Khu phố Qibao, Quận Minhang",
       "coordinates": {
         "lat": 31.1617,
         "lng": 121.3528
       },
-      "openingHours": "Open 24 hours (shops 09:00-18:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "Mở cửa 24 giờ (các cửa hàng 09:00-18:00)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Local snack street",
-        "Cricket museum",
-        "Canal views",
-        "Traditional handicrafts"
+        "Đường ăn vặt địa phương",
+        "Bảo tàng dế",
+        "Cảnh đẹp kênh",
+        "Thủ công truyền thống"
       ],
-      "tips": "Easily accessible by metro. Great for a half-day trip. The snack street is the main attraction.",
+      "tips": "Dễ tiếp cận bằng tàu điện ngầm. Rất phù hợp cho một chuyến đi nửa ngày. Đường ăn vặt là điểm thu hút chính.",
       "phone": "+86 021  1936 7237"
     },
     {
       "id": "nanxiang-old-town",
       "name": "南翔古镇",
-      "nameEn": "Nanxiang Old Town",
+      "nameEn": "Khu phố cổ Nanxiang",
       "category": "cultural",
       "image": "/img/ext/94641c0f7da6.webp",
-      "description": "The birthplace of xiaolongbao (soup dumplings), featuring ancient temples, gardens, and the famous Nanxiang Steamed Bun Restaurant.",
-      "address": "Nanxiang Town, Jiading District",
+      "description": "Quê hương của xiaolongbao (bánh bao hấp chứa nước dùng), với các ngôi chùa cổ, vườn và nhà hàng bán bánh bao hấp nổi tiếng Nanxiang.",
+      "address": "Thị trấn Nanxiang, Quận Jiading",
       "coordinates": {
         "lat": 31.2921,
         "lng": 121.3149
       },
-      "openingHours": "Open 24 hours (restaurants vary)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "Mở cửa 24 giờ (các nhà hàng có giờ mở cửa khác nhau)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Original xiaolongbao",
-        "Guyi Garden",
-        "Temples",
-        "Traditional architecture"
+        "Xiaolongbao gốc",
+        "Vườn Guyi",
+        "Chùa chiền",
+        "Kiến trúc truyền thống"
       ],
-      "tips": "Must-try: original Nanxiang xiaolongbao at the old restaurant. Guyi Garden is worth visiting.",
+      "tips": "Phải thử: xiaolongbao gốc tại nhà hàng cổ. Vườn Guyi đáng để đến thăm.",
       "phone": "+86 021  1536 4365"
     },
     {
       "id": "shanghai-chongming-island",
       "name": "崇明岛",
-      "nameEn": "Chongming Island",
+      "nameEn": "Đảo Chongming",
       "category": "natural",
       "image": "/img/ext/5b265ce8c74a.webp",
-      "description": "The third largest island in China at the mouth of the Yangtze River, known for wetlands, bird watching, and eco-tourism.",
-      "address": "Chongming District, northeast of Shanghai",
+      "description": "Đảo lớn thứ ba của Trung Quốc nằm ở cửa sông Dương Tử, nổi tiếng với đầm lầy, quan sát chim và du lịch sinh thái.",
+      "address": "Quận Chongming, phía đông bắc Thượng Hải",
       "coordinates": {
         "lat": 31.6285,
         "lng": 121.3975
       },
-      "openingHours": "Open 24 hours (parks vary)",
-      "ticketPrice": "Free (parks may charge)",
-      "recommendedVisitTime": "Full day or overnight",
+      "openingHours": "Mở cửa 24 giờ (các công viên có thể khác nhau)",
+      "ticketPrice": "Miễn phí (các công viên có thể tính phí)",
+      "recommendedVisitTime": "Cả ngày hoặc qua đêm",
       "highlights": [
-        "Dongtan wetland reserve",
-        "Bird watching",
-        "Organic farms",
-        "Cycling routes"
+        "Khu bảo tồn đầm lầy Đông Tần",
+        "Quan sát chim",
+        "Những trang trại hữu cơ",
+        "Các tuyến đường đạp xe"
       ],
-      "tips": "Take a bus or drive from the city. Best for nature lovers. Stay overnight to explore fully.",
+      "tips": "Đi xe buýt hoặc lái xe từ trung tâm thành phố. Lý tưởng cho những người yêu thiên nhiên. Nên ở lại qua đêm để khám phá đầy đủ.",
       "phone": "+86 021  7376 1618"
     },
     {
       "id": "shanghai-pest-control-memorial",
       "name": "上海四行仓库抗战纪念馆",
-      "nameEn": "Sihang Warehouse Battle Memorial",
+      "nameEn": "Bảo tàng chiến khu Sihang",
       "category": "cultural",
       "image": "/img/ext/f200ed5748e2.webp",
-      "description": "A WWII memorial at the site of the famous 1937 defense battle, featuring exhibits about the 425 Chinese soldiers who held the warehouse against Japanese forces.",
-      "address": "1 Sihang Warehouse, Jing'an District",
+      "description": "Khu tưởng niệm Thế chiến II tại địa điểm của trận phòng thủ nổi tiếng năm 1937, với các triển lãm về 425 binh sĩ Trung Quốc đã cầm cự trước lực lượng Nhật Bản tại kho xưởng.",
+      "address": "Kho xưởng Sihang, số 1, Quận Jing'an",
       "coordinates": {
         "lat": 31.2437,
         "lng": 121.4737
       },
-      "openingHours": "09:00-16:30 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "09:00-16:30 (Đóng cửa thứ Hai)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "1-2 giờ",
       "highlights": [
-        "Battle-scarred walls",
-        "War artifacts",
-        "Documentary screenings",
-        "Memorial hall"
+        "Những bức tường đầy vết chiến tranh",
+        "Các di vật chiến tranh",
+        "Chiếu phim tài liệu",
+        "Đền tưởng niệm"
       ],
-      "tips": "Moving and educational. Free admission. The bullet holes in the wall are still visible.",
+      "tips": "Tráng lệ và mang tính giáo dục. Vào cửa miễn phí. Những lỗ đạn trên tường vẫn còn nhìn thấy.",
       "phone": "+86 021  9495 2330"
     },
     {
       "id": "shanghai-dmuseum",
       "name": "上海当代艺术博物馆",
-      "nameEn": "Power Station of Art (PSA)",
+      "nameEn": "Nhà máy năng lượng nghệ thuật (PSA)",
       "category": "cultural",
       "image": "/img/ext/546c23e9922d.webp",
-      "description": "China's first state-run contemporary art museum, housed in a converted power station with rotating international exhibitions.",
-      "address": "678 Miaojiang Rd, Huangpu District",
+      "description": "Viện bảo tàng nghệ thuật hiện đại đầu tiên của Trung Quốc do nhà nước điều hành, được đặt trong một nhà máy năng lượng cũ với các triển lãm quốc tế luân chuyển.",
+      "address": "Đường Miaojiang, số 678, Quận Hoàng Phố",
       "coordinates": {
         "lat": 31.2025,
         "lng": 121.4912
       },
-      "openingHours": "11:00-19:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "11:00-19:00 (Thứ Hai đóng cửa)",
+      "ticketPrice": "Miễn phí",
+      "recommendedVisitTime": "2-3 giờ",
       "highlights": [
-        "Contemporary art exhibitions",
-        "Industrial architecture",
-        "Shanghai Biennale venue",
-        "Rooftop views"
+        "Triển lãm nghệ thuật hiện đại",
+        "Kiến trúc công nghiệp",
+        "Địa điểm Triển lãm Biên niên thu Thượng Hải",
+        "Các tầm nhìn từ mái nhà"
       ],
-      "tips": "Free admission. Check the current exhibition schedule. The building itself is impressive.",
+      "tips": "Vào cửa miễn phí. Kiểm tra lịch triển lãm hiện tại. Tòa nhà này rất ấn tượng.",
       "phone": "+86 021  5998 6683"
     }
   ],
@@ -1285,29 +1285,29 @@
     {
       "id": "shanghai-1",
       "name": "Ultraviolet by Paul Pairet",
-      "nameEn": "Ultraviolet",
-      "type": "michelin",
+      "nameEn": "?",
+      "type": "Michelin",
       "star": 3,
-      "cuisine": "Avant-garde French",
+      "cuisine": "Pháp tiên phong",
       "avgPrice": 6000,
       "rating": 4.9,
-      "address": "6th Floor, 20 Huangpu Rd, near Bund",
+      "address": "Tầng 6, 20 đường Hoàng Phố, gần Bund",
       "coordinates": {
         "lat": 31.238,
         "lng": 121.4895
       },
       "phone": "+86 21 6328 9897",
-      "hours": "Only dinner, by reservation",
-      "description": "Three Michelin star immersive dining experience by Chef Paul Pairet. 20 courses over 4 hours in a multi-sensory room.",
+      "hours": "Chỉ có bữa tối, theo đặt chỗ",
+      "description": "Trải nghiệm ẩm thực 3 sao Michelin toàn cảm giác của đầu bếp Paul Pairet. 20 món ăn trong 4 giờ tại một phòng đa giác quan.",
       "dishHighlights": [
-        "A la候爵的鹅肝",
-        "Sensory dessert",
-        "The olive"
+        "Gan oca của hầu tước",
+        "Món tráng miệng đầy cảm xúc",
+        "Quả ô liu"
       ],
       "tags": [
-        "fine-dining",
-        "unique-experience",
-        "reservation-months-ahead"
+        "nhà hàng cao cấp",
+        "trải-nghiệm-độc-đáo",
+        "đặt-chỗ-trước-một-tháng"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/3801e23294a3.webp",
@@ -1316,29 +1316,29 @@
     {
       "id": "shanghai-2",
       "name": "唐阁",
-      "nameEn": "Tong Court",
-      "type": "michelin",
+      "nameEn": "?",
+      "type": "Michelin",
       "star": 2,
-      "cuisine": "Cantonese",
+      "cuisine": "Quảng Đông",
       "avgPrice": 800,
       "rating": 4.8,
-      "address": "New Hastings Hotel, 88 East Nanjing Rd, Huangpu",
+      "address": "Khách sạn New Hastings, 88 Đường Nanking Đông, Quận Hoàng Phố",
       "coordinates": {
         "lat": 31.234,
         "lng": 121.4775
       },
       "phone": "+86 21 6323 7788",
       "hours": "11:30-14:30, 18:00-22:00",
-      "description": "Two Michelin star Cantonese restaurant with impeccable dim sum and refined Shanghai cuisine.",
+      "description": "Nhà hàng ẩm thực Quảng Đông hai sao Michelin với bánh dim sum hoàn hảo và ẩm thực Thượng Hải tinh tế.",
       "dishHighlights": [
-        "Steamed spotted garoupa",
-        "Braised abalone with mushroom",
-        "Egg white with crab roe"
+        "Cá bơn hấp",
+        "Bào ngư nấu với nấm",
+        "Lòng đỏ trứng với nhân tôm hùm"
       ],
       "tags": [
-        "cantonese",
-        "fine-dining",
-        "business-dining"
+        "Quảng Đông",
+        "nhà hàng cao cấp",
+        "doanh-nghiệp"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/2d142cbbae4e.webp",
@@ -1347,29 +1347,29 @@
     {
       "id": "shanghai-3",
       "name": "吉品轩",
-      "nameEn": "Ji Pin Xuan",
-      "type": "michelin",
+      "nameEn": "Gi Pin Xuan",
+      "type": "Michelin",
       "star": 2,
-      "cuisine": "Modern Chinese",
+      "cuisine": "Trung Quốc Hiện đại",
       "avgPrice": 1500,
       "rating": 4.8,
-      "address": "6th Floor, 182 Wukang Rd, Xuhui",
+      "address": "Tầng 6, 182 Đường Wukang, Quận Xuhui",
       "coordinates": {
         "lat": 31.217,
         "lng": 121.4505
       },
       "phone": "+86 21 3330 0888",
       "hours": "12:00-14:00, 18:00-21:00",
-      "description": "Two Michelin star modern Chinese restaurant by Chef Eric Wang, showcasing creative fusion of regional cuisines.",
+      "description": "Nhà hàng ẩm thực Trung Quốc hiện đại hai sao Michelin của đầu bếp Eric Wang, thể hiện sự kết hợp sáng tạo của các món ăn địa phương.",
       "dishHighlights": [
-        "Salted egg yolk chicken",
-        "Squirrel fish",
-        "Red-braised pork"
+        "Thịt gà với trứng vịt muối",
+        "Cá sóc",
+        "Thịt heo kho đỏ"
       ],
       "tags": [
-        "fine-dining",
-        "modern-chinese",
-        "romantic"
+        "nhà hàng cao cấp",
+        "trung-hoa-hiện-đại",
+        "lãng mạn"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/e6bd4f3a011b.webp",
@@ -1378,29 +1378,29 @@
     {
       "id": "shanghai-4",
       "name": "御宝轩",
-      "nameEn": "Imperial Treasure",
-      "type": "blackpearl",
+      "nameEn": "Bảo Khảm",
+      "type": "Black Pearl",
       "diamond": 3,
-      "cuisine": "Cantonese",
+      "cuisine": "Quảng Đông",
       "avgPrice": 500,
       "rating": 4.7,
-      "address": "ifc Mall, 8 Century Ave, Pudong",
+      "address": "Trung tâm thương mại ifc, 8 Đại lộ Thế Kỷ, Quận Pudong",
       "coordinates": {
         "lat": 31.238,
         "lng": 121.5005
       },
       "phone": "+86 21 5012 0668",
       "hours": "11:00-15:00, 18:00-22:00",
-      "description": "Three diamond Black Pearl Cantonese restaurant with exceptional dim sum and premium seafood.",
+      "description": "Nhà hàng ẩm thực Quảng Đông ba kim cương Black Pearl với bánh dim sum tuyệt vời và hải sản cao cấp.",
       "dishHighlights": [
-        "Crispy suckling pig",
-        "Steamed dim sum",
-        "Braised seafood"
+        "Heo con giòn",
+        "Bánh dim sum hấp",
+        "Hải sản kho"
       ],
       "tags": [
-        "cantonese",
-        "dim-sum",
-        "luxury"
+        "Quảng Đông",
+        "đim sum",
+        "sang trọng"
       ],
       "star": 0,
       "imageUrl": "/img/ext/1ee9b52d9b25.webp",
@@ -1409,26 +1409,26 @@
     {
       "id": "shanghai-5",
       "name": "上海老饭店",
-      "nameEn": "Shanghai Lao Fan Dian",
-      "type": "local",
-      "cuisine": "Shanghainese",
+      "nameEn": "Thượng Hải Lao Fan Dian",
+      "type": "địa phương",
+      "cuisine": "Ẩm thực Thượng Hải",
       "avgPrice": 120,
       "rating": 4.5,
-      "address": "Near Yuyuan Garden",
+      "address": "Gần Vườn Yuyuan",
       "coordinates": {
         "lat": 31.2267,
         "lng": 121.4848
       },
-      "description": "Legendary restaurant serving authentic Shanghainese cuisine for over 40 years.",
+      "description": "Nhà hàng huyền thoại phục vụ ẩm thực Thượng Hải chính hiệu hơn 40 năm.",
       "dishHighlights": [
-        "Braised pork belly",
-        "Wonton soup",
-        "Braised pork belly with brown sauce"
+        "Thịt ba chỉ rim",
+        "Canh hoành thánh",
+        "Thịt ba chỉ nấu với nước sốt nâu"
       ],
       "tags": [
-        "local",
-        "shanghai-cuisine",
-        "traditional"
+        "địa phương",
+        "ẩm-thực-Thượng-Hải",
+        "truyền thống"
       ],
       "star": 0,
       "diamond": 0,
@@ -1440,28 +1440,28 @@
     {
       "id": "shanghai-6",
       "name": "南翔小笼",
-      "nameEn": "Nanxiang Steamed Bun Restaurant",
-      "type": "local",
-      "cuisine": "Shanghainese",
+      "nameEn": "Nhà hàng Bánh bao hấp Nanxiang",
+      "type": "địa phương",
+      "cuisine": "Ẩm thực Thượng Hải",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Yuyuan Bazaar, 88 Anren St, Huangpu",
+      "address": "Khu chợ Yuyuan, 88 Đường Anren, Quận Hoàng Phố",
       "coordinates": {
         "lat": 31.2273,
         "lng": 121.4853
       },
       "hours": "10:00-21:00",
-      "description": "Famous for authentic nanxiang xiaolongbao (steamed soup dumplings) in business since 1900.",
+      "description": "Nổi tiếng với bánh bao nhân xá xíu (bánh bao hấp có nước) Nanxiang, hoạt động từ năm 1900.",
       "dishHighlights": [
-        "Soup dumplings (xiaolongbao)",
-        "Crab roe xiaolongbao",
-        "Pan-fried buns"
+        "Bánh bao hấp có nước (xiaolongbao)",
+        "Bánh bao nhân tôm hùm",
+        "Bánh bao chiên"
       ],
       "tags": [
-        "local",
-        "dim-sum",
-        "historic",
-        "must-try"
+        "địa phương",
+        "đim sum",
+        "lịch sử",
+        "phải thử"
       ],
       "star": 0,
       "diamond": 0,
@@ -1472,29 +1472,29 @@
     {
       "id": "shanghai-7",
       "name": "绿波廊",
-      "nameEn": "Lu Bo Lang",
-      "type": "local",
-      "cuisine": "Shanghai",
+      "nameEn": "Lục Bổ Lãng",
+      "type": "địa phương",
+      "cuisine": "Thượng Hải",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "Yuyuan Bazaar, 59 Anren St, Huangpu",
+      "address": "Khu chợ Yuyuan, 59 Đường Anren, Quận Hoàng Phố",
       "coordinates": {
         "lat": 31.227,
         "lng": 121.4845
       },
       "phone": "+86 21 6328 0602",
       "hours": "11:00-13:30, 17:00-20:30",
-      "description": "Historic restaurant in Yuyuan since 1940s, known for refined Shanghai snacks and Empress Dowager's favorite dishes.",
+      "description": "Nhà hàng lịch sử tại Yuyuan kể từ những năm 1940, nổi tiếng với các món ăn vặt tinh tế của Thượng Hải và các món ăn yêu thích của Hoàng Hậu Dowager.",
       "dishHighlights": [
-        "Sweet and sour spare ribs",
-        "Yam paste with egg white",
-        "Delicate pastries"
+        "Sườn ngọt chua",
+        "Bột khoai lang với lòng trắng trứng",
+        "Bánh ngọt tinh tế"
       ],
       "tags": [
-        "local",
-        "historic",
-        "shanghai-cuisine",
-        "location"
+        "địa phương",
+        "lịch sử",
+        "ẩm-thực-Thượng-Hải",
+        "vị trí"
       ],
       "star": 0,
       "diamond": 0,
@@ -1504,27 +1504,27 @@
     {
       "id": "shanghai-8",
       "name": "光明邨大酒家",
-      "nameEn": "Guangming Village",
-      "type": "local",
-      "cuisine": "Shanghai",
+      "nameEn": "Làng Quang Minh",
+      "type": "địa phương",
+      "cuisine": "Thượng Hải",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "22 Chengdu North Rd, Huangpu",
+      "address": "22 đường Bắc Thành Đô, Hoàng Phố",
       "coordinates": {
         "lat": 31.2355,
         "lng": 121.473
       },
-      "description": "Popular local spot always packed with locals for authentic Shanghai dishes and legendary fresh mooncakes.",
+      "description": "Địa điểm nổi tiếng địa phương luôn đông nghẹt người dân địa phương với các món ăn Thượng Hải chính hiệu và bánh trung thu tươi nổi tiếng.",
       "dishHighlights": [
-        "Fresh mooncakes",
-        "Braised pork belly",
-        "Steamed fish head"
+        "Bánh trung thu tươi",
+        "Thịt ba chỉ rim",
+        "Đầu cá hấp"
       ],
       "tags": [
-        "local",
-        "shanghai-cuisine",
-        "popular",
-        "no-reservation"
+        "địa phương",
+        "ẩm-thực-Thượng-Hải",
+        "phổ biến",
+        "không-đặt-trước"
       ],
       "star": 0,
       "diamond": 0,
@@ -1536,30 +1536,30 @@
     {
       "id": "shanghai-9",
       "name": "新天地朗廷酒店唐阁",
-      "nameEn": "Tin Lung Heen",
-      "type": "michelin",
+      "nameEn": "Thiên Long Hiên",
+      "type": "Michelin",
       "star": 2,
-      "cuisine": "Cantonese",
+      "cuisine": "Quảng Đông",
       "avgPrice": 1000,
       "rating": 4.8,
-      "address": "Langham Hotel, 99 Madang Rd, Huangpu",
+      "address": "Khách sạn Langham, 99 đường Madang, Hoàng Phố",
       "coordinates": {
         "lat": 31.2225,
         "lng": 121.4725
       },
       "phone": "+86 21 6888 3888",
       "hours": "11:30-14:30, 18:00-22:00",
-      "description": "Two Michelin star Cantonese restaurant with stunning Bund views and exquisite dim sum.",
+      "description": "Nhà hàng Quảng Đông hai sao Michelin với tầm nhìn tuyệt đẹp ra Bund và dim sum tinh tế.",
       "dishHighlights": [
-        "Abalone with dried scallop",
-        "Wagyu beef with black pepper",
-        "Bird's nest dessert"
+        "Bào ngư với nhân sâm khô",
+        "Thịt bò Wagyu với hạt tiêu đen",
+        "Tráng miệng tổ yến"
       ],
       "tags": [
-        "fine-dining",
-        "cantonese",
-        "bund-views",
-        "business"
+        "nhà hàng cao cấp",
+        "Quảng Đông",
+        "tầm nhìn-bund",
+        "kinh doanh"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/e2987486c5c3.webp",
@@ -1568,30 +1568,30 @@
     {
       "id": "shanghai-10",
       "name": "夜上海",
-      "nameEn": "Yi Long Court",
-      "type": "michelin",
+      "nameEn": "Vi Long Viện",
+      "type": "Michelin",
       "star": 1,
-      "cuisine": "Shanghai",
+      "cuisine": "Thượng Hải",
       "avgPrice": 800,
       "rating": 4.8,
-      "address": "Waldorf Astoria Shanghai, 20 Wuchang Rd, Huangpu",
+      "address": "Waldorf Astoria Shanghai, 20 đường Wuchang, Hoàng Phố",
       "coordinates": {
         "lat": 31.2358,
         "lng": 121.4835
       },
       "phone": "+86 21 6328 9898",
       "hours": "11:30-14:00, 18:00-21:30",
-      "description": "One Michelin star restaurant serving refined Shanghai cuisine in the historic Waldorf Astoria building.",
+      "description": "Nhà hàng một sao Michelin phục vụ ẩm thực Thượng Hải tinh xảo tại tòa nhà lịch sử Waldorf Astoria.",
       "dishHighlights": [
-        "Steamed crab with egg white",
-        "Braised hairy crab",
-        "Red wine braised short rib"
+        "Cua hấp với lòng trắng trứng",
+        "Cua lông nấu sữa",
+        "Sườn nấu rượu vang đỏ"
       ],
       "tags": [
-        "fine-dining",
-        "shanghai-cuisine",
-        "historic",
-        "romantic"
+        "nhà hàng cao cấp",
+        "ẩm-thực-Thượng-Hải",
+        "lịch sử",
+        "lãng mạn"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/f91478d91722.webp",
@@ -1600,29 +1600,29 @@
     {
       "id": "shanghai-11",
       "name": "老吉士酒家",
-      "nameEn": "Lao Ji Shi",
-      "type": "local",
-      "cuisine": "Shanghai",
+      "nameEn": "Lão Kỷ Thực",
+      "type": "địa phương",
+      "cuisine": "Thượng Hải",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "45 Tianzifang, Taikang Rd, Huangpu",
+      "address": "45 Tianzifang, đường Taikang, Hoàng Phố",
       "coordinates": {
         "lat": 31.2175,
         "lng": 121.4695
       },
       "phone": "+86 21 6308 5138",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "A beloved local institution famous for authentic Shanghai home-style cooking in a cozy atmosphere.",
+      "description": "Một tổ chức địa phương được yêu thích, nổi tiếng với các món ăn gia đình Thượng Hải chính hiệu trong không khí ấm cúng.",
       "dishHighlights": [
-        "Red-braised pork",
-        "Steamed fish",
-        "Shanghai-style crabs"
+        "Thịt heo kho đỏ",
+        "Cá hấp",
+        "Cua kiểu Thượng Hải"
       ],
       "tags": [
-        "local",
-        "shanghai-cuisine",
-        "cozy",
-        "popular"
+        "địa phương",
+        "ẩm-thực-Thượng-Hải",
+        "ấm-cúng",
+        "phổ biến"
       ],
       "star": 0,
       "diamond": 0,
@@ -1632,30 +1632,30 @@
     {
       "id": "shanghai-12",
       "name": "苏浙总会",
-      "nameEn": "Su Zhe Hui",
-      "type": "blackpearl",
+      "nameEn": "Tổng Hội Tô Châu",
+      "type": "Black Pearl",
       "diamond": 3,
-      "cuisine": "Jiangzhe",
+      "cuisine": "Giang Triết",
       "avgPrice": 400,
       "rating": 4.7,
-      "address": "Bund Center, 500 Nanjing East Rd, Huangpu",
+      "address": "Trung tâm Bund, 500 đường Đông Nam Cống, Hoàng Phố",
       "coordinates": {
         "lat": 31.237,
         "lng": 121.4815
       },
       "phone": "+86 21 6329 0818",
       "hours": "11:00-14:30, 17:00-22:00",
-      "description": "Three diamond Black Pearl restaurant serving refined Jiangsu and Zhejiang cuisine with excellent seafood.",
+      "description": "Nhà hàng ba viên kim cương Black Pearl phục vụ ẩm thực Tô Châu và Triết Giang tinh xảo với hải sản tuyệt vời.",
       "dishHighlights": [
-        "Braised pork belly",
-        "Squirrel fish",
-        "Yangzhou fried rice"
+        "Thịt ba chỉ rim",
+        "Cá sóc",
+        "Cơm chiên Dương Châu"
       ],
       "tags": [
-        "fine-dining",
-        "jiangzhe-cuisine",
-        "bund-area",
-        "business"
+        "nhà hàng cao cấp",
+        "ẩm thực Giang Triết",
+        "khu vực Bến Đội",
+        "kinh doanh"
       ],
       "star": 0,
       "imageUrl": "/img/ext/75cc963484f4.webp",
@@ -1664,30 +1664,30 @@
     {
       "id": "shanghai-13",
       "name": "大壶春",
-      "nameEn": "Da Hu Chun",
-      "type": "local",
-      "cuisine": "Shanghai",
+      "nameEn": "Đại Hồ Xuân",
+      "type": "địa phương",
+      "cuisine": "Thượng Hải",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "17 Jiangning Rd, Jing'an",
+      "address": "17 Đường Giang Ninh, Quận Jing'an",
       "coordinates": {
         "lat": 31.229,
         "lng": 121.465
       },
       "phone": "+86 21 6253 5069",
       "hours": "06:30-19:30",
-      "description": "Legendary spot for Shanghai's finest Shengjian bao (pan-fried pork soup dumplings) since 1937.",
+      "description": "Địa điểm huyền thoại với bánh bao chiên dầu (bánh bao xá xíu hấp chiên) ngon nhất Thượng Hải kể từ năm 1937.",
       "dishHighlights": [
-        "Shengjian bao",
-        "Congee",
-        "Soy milk"
+        "Bánh bao chiên dầu",
+        "Cháo",
+        "Sữa đậu nành"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "historic",
-        "must-try",
-        "budget"
+        "địa phương",
+        "bữa sáng",
+        "lịch sử",
+        "phải thử",
+        "tiết kiệm"
       ],
       "star": 0,
       "diamond": 0,
@@ -1697,29 +1697,29 @@
     {
       "id": "shanghai-14",
       "name": "功德林",
-      "nameEn": "Gong De Lin",
-      "type": "local",
-      "cuisine": "Vegetarian",
+      "nameEn": "Công Đức Lâm",
+      "type": "địa phương",
+      "cuisine": "Chay",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "169 Nanjing West Rd, Huangpu",
+      "address": "169 Đường Nam Kinh Tây, Quận Hoàng Phố",
       "coordinates": {
         "lat": 31.233,
         "lng": 121.469
       },
       "phone": "+86 21 6327 0222",
       "hours": "10:30-21:30",
-      "description": "Famous Buddhist vegetarian restaurant serving plant-based versions of traditional Shanghai dishes since 1922.",
+      "description": "Nhà hàng chay Phật giáo nổi tiếng phục vụ các phiên bản ăn chay của các món ăn truyền thống Thượng Hải kể từ năm 1922.",
       "dishHighlights": [
-        "Vegetarian xiaolongbao",
-        "Buddhist chicken",
-        "Meat analogs"
+        "Bánh bao xá xíu chay",
+        "Gà Phật giáo",
+        "Thực phẩm thay thế thịt"
       ],
       "tags": [
-        "vegetarian",
-        "historic",
-        "shanghai-cuisine",
-        "unique"
+        "chay",
+        "lịch sử",
+        "ẩm-thực-Thượng-Hải",
+        "độc đáo"
       ],
       "star": 0,
       "diamond": 0,
@@ -1729,29 +1729,29 @@
     {
       "id": "shanghai-15",
       "name": "王家沙点心",
-      "nameEn": "Wangjia Sha",
-      "type": "local",
-      "cuisine": "Shanghai",
+      "nameEn": "Vương Gia Sạ",
+      "type": "địa phương",
+      "cuisine": "Thượng Hải",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "445 Nanjing West Rd, Jing'an",
+      "address": "445 Đường Nam Kinh Tây, Quận Jing'an",
       "coordinates": {
         "lat": 31.237,
         "lng": 121.455
       },
       "phone": "+86 21 6258 0165",
       "hours": "07:00-20:00",
-      "description": "Popular century-old restaurant known for authentic Shanghai snacks and traditional pastries.",
+      "description": "Nhà hàng trăm năm tuổi phổ biến nổi tiếng với các đồ ăn vặt chính hiệu Thượng Hải và bánh trái truyền thống.",
       "dishHighlights": [
-        "Sara noodles",
-        "Steamed soup dumplings",
-        "Moon cakes"
+        "Mì Sara",
+        "Bánh bao hấp xá xíu",
+        "Bánh trung thu"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "historic",
-        "traditional"
+        "địa phương",
+        "đồ ăn vặt",
+        "lịch sử",
+        "truyền thống"
       ],
       "star": 0,
       "diamond": 0,
@@ -1761,29 +1761,29 @@
     {
       "id": "shanghai-16",
       "name": "鲜墙房",
-      "nameEn": "Xian Qiang Fang",
-      "type": "local",
-      "cuisine": "Shanghai",
+      "nameEn": "Hiển Cường Phương",
+      "type": "địa phương",
+      "cuisine": "Thượng Hải",
       "avgPrice": 200,
       "rating": 4.7,
-      "address": "396 Changle Rd, Xuhui",
+      "address": "396 Đường Trường Lạc, Quận Từ Huy",
       "coordinates": {
         "lat": 31.212,
         "lng": 121.451
       },
       "phone": "+86 21 6472 5218",
       "hours": "11:00-14:00, 17:00-22:00",
-      "description": "Upscale local restaurant in a historic villa serving refined Shanghai cuisine with modern touches.",
+      "description": "Nhà hàng địa phương sang trọng tọa lạc trong một biệt thự lịch sử, phục vụ ẩm thực Thượng Hải tinh tế với phong cách hiện đại.",
       "dishHighlights": [
-        "Braised pork belly",
-        "Steamed fish",
-        "Hairyi crab"
+        "Thịt ba chỉ rim",
+        "Cá hấp",
+        "Cua Hairyi"
       ],
       "tags": [
-        "local",
-        "shanghai-cuisine",
-        "historic-villa",
-        "romantic"
+        "địa phương",
+        "ẩm-thực-Thượng-Hải",
+        "biệt thự lịch sử",
+        "lãng mạn"
       ],
       "star": 0,
       "diamond": 0,
@@ -1793,30 +1793,30 @@
     {
       "id": "shanghai-17",
       "name": "外滩18号",
-      "nameEn": "Bund 18",
-      "type": "michelin",
+      "nameEn": "Bến Đội 18",
+      "type": "Michelin",
       "star": 1,
-      "cuisine": "French",
+      "cuisine": "Pháp",
       "avgPrice": 600,
       "rating": 4.7,
-      "address": "18 Zhongshan Dong Yi Rd, Huangpu",
+      "address": "18 Đường Trung Sơn Đông Nhất, Quận Hoàng Phố",
       "coordinates": {
         "lat": 31.2385,
         "lng": 121.488
       },
       "phone": "+86 21 6323 9898",
       "hours": "11:30-14:30, 18:00-23:00",
-      "description": "One Michelin star French restaurant in a restored colonial building with stunning Bund views.",
+      "description": "Nhà hàng Pháp 1 sao Michelin tọa lạc trong một tòa nhà thuộc địa cải tạo với lợi thế nhìn ra Bến Đội tuyệt đẹp.",
       "dishHighlights": [
-        "French tasting menu",
-        "Wine pairing",
-        "Dessert trolley"
+        "Thực đơn thử nghiệm Pháp",
+        "Phối trộn rượu vang",
+        "Xe tráng bánh ngọt"
       ],
       "tags": [
-        "fine-dining",
-        "french",
-        "bund-views",
-        "historic"
+        "nhà hàng cao cấp",
+        "Pháp",
+        "tầm nhìn-bund",
+        "lịch sử"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/5037d00deaad.webp",
@@ -1825,30 +1825,30 @@
     {
       "id": "shanghai-18",
       "name": "新荣记",
-      "nameEn": "Xin Rong Ji",
-      "type": "blackpearl",
+      "nameEn": "Tân Vinh Ký",
+      "type": "Black Pearl",
       "diamond": 3,
-      "cuisine": "Tailand-inspired Chinese",
+      "cuisine": "Ẩm thực Trung Quốc có cảm hứng từ Thái Lan",
       "avgPrice": 600,
       "rating": 4.8,
-      "address": "98 Huaihai Middle Rd, Xuhui",
+      "address": "98 đường Huaihai Trung, Quận Xuhui",
       "coordinates": {
         "lat": 31.218,
         "lng": 121.461
       },
       "phone": "+86 21 3330 3330",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "Three diamond Black Pearl restaurant famous for high-quality ingredients and refined cooking.",
+      "description": "Nhà hàng Black Pearl ba kim cương nổi tiếng với nguyên liệu chất lượng cao và nấu ăn tinh tế.",
       "dishHighlights": [
-        "Braised seafood",
-        "Premium crab dishes",
-        "Signature tofu"
+        "Hải sản kho",
+        "Món cua cao cấp",
+        "Đậu hủ đặc biệt"
       ],
       "tags": [
-        "fine-dining",
-        "seafood",
-        "quality-ingredients",
-        "popular"
+        "nhà hàng cao cấp",
+        "hải sản",
+        "nguyên liệu chất lượng",
+        "phổ biến"
       ],
       "star": 0,
       "imageUrl": "/img/ext/75cc963484f4.webp",
@@ -1857,29 +1857,29 @@
     {
       "id": "shanghai-19",
       "name": "上海1号私房菜",
-      "nameEn": "Shanghai No.1 Private Kitchen",
-      "type": "local",
-      "cuisine": "Shanghainese",
+      "nameEn": "Nhà Bếp Riêng Thượng Hải Số 1",
+      "type": "địa phương",
+      "cuisine": "Ẩm thực Thượng Hải",
       "avgPrice": 300,
       "rating": 4.6,
-      "address": "99 Changsha Rd, Huangpu",
+      "address": "99 Chàng Sa, Hoàng Phố",
       "coordinates": {
         "lat": 31.222,
         "lng": 121.482
       },
       "phone": "+86 21 6311 1919",
       "hours": "11:00-14:00, 17:00-22:00",
-      "description": "Hidden gem serving home-style Shanghainese dishes in a traditional setting without pretension.",
+      "description": "Viên ngọc ẩn phục vụ các món ăn Thượng Hải theo phong cách gia đình trong không gian truyền thống không cầu kỳ.",
       "dishHighlights": [
-        "Braised pork belly",
-        "Wonton soup",
-        "Sweet and sour ribs"
+        "Thịt ba chỉ rim",
+        "Canh hoành thánh",
+        "Sườn chua ngọt"
       ],
       "tags": [
-        "local",
-        "shanghai-cuisine",
-        "hidden-gem",
-        "cozy"
+        "địa phương",
+        "ẩm thực Thượng Hải",
+        "viên ngọc ẩn",
+        "ấm cúng"
       ],
       "star": 0,
       "diamond": 0,
@@ -1889,29 +1889,29 @@
     {
       "id": "shanghai-20",
       "name": "福1088",
-      "nameEn": "Fu 1088",
-      "type": "local",
-      "cuisine": "Shanghai",
+      "nameEn": "Phú 1088",
+      "type": "địa phương",
+      "cuisine": "Thượng Hải",
       "avgPrice": 250,
       "rating": 4.7,
-      "address": "1088 Changle Rd, Xuhui",
+      "address": "1088 Đường Changle, Xuhui",
       "coordinates": {
         "lat": 31.208,
         "lng": 121.448
       },
       "phone": "+86 21 6472 0888",
       "hours": "11:00-14:00, 17:00-22:00",
-      "description": "Popular local restaurant in a lovely garden setting serving classic Shanghai comfort food.",
+      "description": "Nhà hàng địa phương nổi tiếng với không gian vườn xanh mát, phục vụ các món ăn đặc trưng Thượng Hải mang đến cảm giác ấm cúng.",
       "dishHighlights": [
-        "Red-braised pork",
-        "Fried rice",
-        "Seasonal vegetables"
+        "Thịt heo kho đỏ",
+        "Cơm chiên",
+        "Rau theo mùa"
       ],
       "tags": [
-        "local",
-        "shanghai-cuisine",
-        "garden-setting",
-        "cozy"
+        "địa phương",
+        "ẩm-thực-Thượng-Hải",
+        "không-gian-vườn",
+        "ấm-cúng"
       ],
       "star": 0,
       "diamond": 0,
@@ -1921,29 +1921,29 @@
     {
       "id": "shanghai-21",
       "name": "失重餐厅",
-      "nameEn": "Space Loss Restaurant",
-      "type": "modern",
-      "cuisine": "International",
+      "nameEn": "Nhà hàng Space Loss",
+      "type": "hiện đại",
+      "cuisine": "Quốc tế",
       "avgPrice": 200,
       "rating": 4.5,
-      "address": "116 Dadu Rd, Jing'an",
+      "address": "116 Đường Dadu, Jing'an",
       "coordinates": {
         "lat": 31.231,
         "lng": 121.452
       },
       "phone": "+86 21 6288 6118",
       "hours": "11:00-23:00",
-      "description": "Futuristic restaurant where food arrives via flying trays on rail system, fun for families.",
+      "description": "Nhà hàng tương lai nơi thức ăn được mang đến bằng khay bay trên hệ thống ray, vui vẻ cho các gia đình.",
       "dishHighlights": [
-        "Flying food delivery system",
-        "Burgers",
-        "Pasta"
+        "Hệ thống giao thức ăn bay",
+        "Bánh burger",
+        "Mì ống"
       ],
       "tags": [
-        "family",
-        "fun",
-        "modern",
-        "international"
+        "gia đình",
+        "vui vẻ",
+        "hiện đại",
+        "quốc tế"
       ],
       "star": 0,
       "diamond": 0,
@@ -1953,29 +1953,29 @@
     {
       "id": "shanghai-22",
       "name": "荷唐·铜锣湾",
-      "nameEn": "He Tang Tong Luo Wan",
-      "type": "local",
-      "cuisine": "Cantonese",
+      "nameEn": "Hà Đường Thông Lạc Vạn",
+      "type": "địa phương",
+      "cuisine": "Quảng Đông",
       "avgPrice": 200,
       "rating": 4.6,
-      "address": "66 Changle Rd, Xuhui District",
+      "address": "66 đường Changle, Quận Xuhui",
       "coordinates": {
         "lat": 31.213,
         "lng": 121.452
       },
       "phone": "+86 21 6433 5577",
       "hours": "11:00-14:30, 17:00-22:00",
-      "description": "Popular spot serving authentic Cantonese dim sum and seafood in a modern setting.",
+      "description": "Địa điểm phổ biến phục vụ dim sum và hải sản Cantonese chính hãng trong không gian hiện đại.",
       "dishHighlights": [
-        "Steamed dumplings",
-        "Egg tarts",
-        "Shark fin soup"
+        "Sủi cảo hấp",
+        "Bánh tart trứng",
+        "súp vây cá mập"
       ],
       "tags": [
-        "cantonese",
-        "dim-sum",
-        "casual",
-        "popular"
+        "Quảng Đông",
+        "đim sum",
+        "bình dân",
+        "phổ biến"
       ],
       "star": 0,
       "diamond": 0,
@@ -1985,30 +1985,30 @@
     {
       "id": "shanghai-23",
       "name": "阿娘面馆",
-      "nameEn": "A Niang Noodles",
-      "type": "local",
-      "cuisine": "Shanghai",
+      "nameEn": "A Niang Mì",
+      "type": "địa phương",
+      "cuisine": "Thượng Hải",
       "avgPrice": 40,
       "rating": 4.6,
-      "address": "137 Huangpu Rd, Huangpu District",
+      "address": "137 đường Huangpu, Quận Huangpu",
       "coordinates": {
         "lat": 31.233,
         "lng": 121.482
       },
       "phone": "+86 21 6320 4428",
       "hours": "11:00-20:00",
-      "description": "Legendary hole-in-the-wall spot for Shanghai-style large intestines stew noodles since 1970s.",
+      "description": "Địa điểm nổi tiếng trong ngõ hẻm với món mì nước dạ dày lớn kiểu Thượng Hải từ những năm 1970.",
       "dishHighlights": [
-        "Large intestines stew noodles",
-        "Fried noodles",
-        "Soy braised pork"
+        "Mì nước dạ dày lớn",
+        "Mì chiên",
+        "Thịt heo nấu với nước tương"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "historic",
-        "must-try",
-        "budget"
+        "địa phương",
+        "mì",
+        "lịch sử",
+        "phải thử",
+        "tiết kiệm"
       ],
       "star": 0,
       "diamond": 0,
@@ -2018,29 +2018,29 @@
     {
       "id": "shanghai-24",
       "name": "上海老站",
-      "nameEn": "Shanghai Lao Zhan",
-      "type": "local",
-      "cuisine": "Shanghai",
+      "nameEn": "Quán Lão Chiến Thượng Hải",
+      "type": "địa phương",
+      "cuisine": "Thượng Hải",
       "avgPrice": 150,
       "rating": 4.7,
-      "address": "560 Yangzhou Rd, Hongkou District",
+      "address": "560 đường Yangzhou, Quận Hongkou",
       "coordinates": {
         "lat": 31.258,
         "lng": 121.469
       },
       "phone": "+86 21 6543 2978",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Historic rotary restaurant in a converted train station serving authentic Shanghai cuisine.",
+      "description": "Nhà hàng quay lịch sử trong một nhà ga tàu đã được chuyển đổi, phục vụ ẩm thực Thượng Hải đích thực.",
       "dishHighlights": [
-        "Braised pork belly",
-        "Steamed fish",
-        "Red wine chicken"
+        "Thịt ba chỉ rim",
+        "Cá hấp",
+        "Gà nấu với rượu vang đỏ"
       ],
       "tags": [
-        "local",
-        "shanghai-cuisine",
-        "historic",
-        "unique"
+        "địa phương",
+        "ẩm-thực-Thượng-Hải",
+        "lịch sử",
+        "độc đáo"
       ],
       "star": 0,
       "diamond": 0,
@@ -2050,30 +2050,30 @@
     {
       "id": "shanghai-25",
       "name": "福和慧",
-      "nameEn": "Fu He Hui",
-      "type": "michelin",
+      "nameEn": "Phú Hòa Huệ",
+      "type": "Michelin",
       "star": 1,
-      "cuisine": "Vegetarian",
+      "cuisine": "Chay",
       "avgPrice": 600,
       "rating": 4.8,
-      "address": "1 Y，立兴大楼, 172 Fuxing Middle Rd, Xuhui",
+      "address": "1 Y, Tòa nhà Lixing, 172 đường Fuxing Trung, Quận Xuhui",
       "coordinates": {
         "lat": 31.215,
         "lng": 121.447
       },
       "phone": "+86 21 6073 2220",
       "hours": "11:00-14:00, 18:00-21:00",
-      "description": "One Michelin star vegetarian restaurant offering creative plant-based fine dining.",
+      "description": "Nhà hàng chay một sao Michelin cung cấp những món ăn tinh tế dựa trên thực vật sáng tạo.",
       "dishHighlights": [
-        "Seasonal vegetable tasting menu",
-        "Buddhist cuisine",
-        "Artful presentations"
+        "Thực đơn thử nghiệm rau định kỳ",
+        "Ẩm thực Phật giáo",
+        "Trình bày tài tình"
       ],
       "tags": [
-        "fine-dining",
-        "vegetarian",
-        "creative",
-        "healthy"
+        "nhà hàng cao cấp",
+        "chay",
+        "sáng tạo",
+        "lành mạnh"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/a133c8232071.webp",
@@ -2082,12 +2082,12 @@
     {
       "id": "shanghai-cheap-1",
       "name": "小杨生煎",
-      "nameEn": "Xiaoyang Shengjian",
-      "type": "local",
-      "cuisine": "Shanghai Snacks",
+      "nameEn": "Tiểu Dương Sinh Kiện",
+      "type": "địa phương",
+      "cuisine": "Đồ ăn vặt Thượng Hải",
       "avgPrice": 15,
       "rating": 4.5,
-      "address": "Multiple locations across Shanghai",
+      "address": "Nhiều địa điểm trên khắp Thượng Hải",
       "coordinates": {
         "lat": 31.2304,
         "lng": 121.4737
@@ -2096,7 +2096,7 @@
       "description": "Chuỗi nhà hàng shengjianbao (bánh bao chiên giòn) nổi tiếng nhất tại Thượng Hải. Đáy giòn, nhân đậm đà, và có giá chỉ bằng một phần nhỏ so với các nhà hàng ngồi tại chỗ.",
       "dishHighlights": [
         "Shengjianbao (Bánh bao chiên giòn)",
-        "Xiaolongbao",
+        "Sủi dìn",
         "Súp Mì Vằn Thắn"
       ],
       "tags": [
@@ -2111,8 +2111,8 @@
     {
       "id": "shanghai-cheap-2",
       "name": "大壶春",
-      "nameEn": "Da Hu Chun",
-      "type": "local",
+      "nameEn": "Đại Hồ Xuân",
+      "type": "địa phương",
       "cuisine": "Ẩm thực Thượng Hải Truyền thống",
       "avgPrice": 12,
       "rating": 4.4,
@@ -2124,9 +2124,9 @@
       "hours": "06:30-19:00",
       "description": "Cửa hàng shengjianbao di sản từ năm 1932. Vỏ dày hơn Xiaoyang nhưng cùng độ ngon. Trải nghiệm bánh bao chiên giòn Thượng Hải đích thực.",
       "dishHighlights": [
-        "Shengjianbao",
+        "Sinh Kiện Bão",
         "Xianrou Baozi (Bánh bao thịt)",
-        "Xiaolongbao"
+        "Sủi dìn"
       ],
       "tags": [
         "đường phố",
@@ -2141,7 +2141,7 @@
       "id": "shanghai-cheap-3",
       "name": "阿大葱油饼",
       "nameEn": "A Da Cống Dĩu Bánh",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "Đồ ăn đường phố Thượng Hải",
       "avgPrice": 10,
       "rating": 4.3,
@@ -2168,8 +2168,8 @@
     {
       "id": "shanghai-cheap-4",
       "name": "阿娘面馆",
-      "nameEn": "A Niang Mian Guan",
-      "type": "local",
+      "nameEn": "A Niang Quán Mì",
+      "type": "địa phương",
       "cuisine": "Mì Thượng Hải",
       "avgPrice": 18,
       "rating": 4.5,
@@ -2198,7 +2198,7 @@
       "id": "shanghai-cheap-5",
       "name": "光明郑大酒家",
       "nameEn": "Nhà hàng Guangmingcun",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "Đồ ăn vặt Thượng Hải",
       "avgPrice": 15,
       "rating": 4.3,
@@ -2211,13 +2211,13 @@
       "description": "Quán đồ ăn vặt huyền thoại trên Đường Huaihai. Nổi tiếng với bánh vỏ cua (xiekehuang) và bánh trung thu nhân thịt tươi. Luôn có hàng đợi, luôn xứng đáng.",
       "dishHighlights": [
         "Bánh Vỏ Cua (Xiekehuang)",
-        "Fresh Meat Mooncake",
-        "Qingtuan (Green Rice Ball)"
+        "Bánh nướng nhân thịt tươi",
+        "Qingtuan (Bánh gạo xanh)"
       ],
       "tags": [
-        "street",
-        "snacks",
-        "heritage"
+        "đường phố",
+        "đồ ăn vặt",
+        "di sản"
       ],
       "imageUrl": "/img/ext/bea5e585553a.webp",
       "phone": "+86 021  4469 6283",
@@ -2226,27 +2226,27 @@
     {
       "id": "shanghai-cheap-6",
       "name": "鲜得来排骨年糕",
-      "nameEn": "Xiandelai Pai Nian Gao",
-      "type": "local",
-      "cuisine": "Shanghai Traditional",
+      "nameEn": "Tiên Đức Lai Bài Niên Gao",
+      "type": "địa phương",
+      "cuisine": "Ẩm thực Thượng Hải Truyền thống",
       "avgPrice": 18,
       "rating": 4.4,
-      "address": "Huangpu District, Yunnan South Road No.69",
+      "address": "Quận Hoàng Phố, số 69 đường Nam Dương, Vân Nam",
       "coordinates": {
         "lat": 31.226,
         "lng": 121.478
       },
       "hours": "07:00-20:00",
-      "description": "The go-to spot for paigu niangao (pork chop with rice cakes). Sweet sauce, tender pork, chewy rice cakes - a classic Shanghai combination since 1920s.",
+      "description": "Địa điểm nổi tiếng với món paigu niangao (cơm bánh tét với sườn heo). Nước sốt ngọt, thịt heo mềm, bánh tét dai - một sự kết hợp kinh điển của Thượng Hải kể từ những năm 1920.",
       "dishHighlights": [
-        "Paigu Niangao (Pork Chop Rice Cake)",
-        "Nian Gao Stir-Fry",
-        "Sweet Sauce Chicken"
+        "Paigu Niangao (Cơm bánh tét với sườn heo)",
+        "Xào bánh tét",
+        "Gà nước sốt ngọt"
       ],
       "tags": [
-        "street",
-        "traditional",
-        "heritage"
+        "đường phố",
+        "truyền thống",
+        "di sản"
       ],
       "imageUrl": "/img/ext/b04ee855db3a.png",
       "phone": "+86 021  4198 8035",
@@ -2255,27 +2255,27 @@
     {
       "id": "shanghai-cheap-7",
       "name": "蘑心餐厅",
-      "nameEn": "Lan Xin Restaurant",
-      "type": "local",
-      "cuisine": "Shanghai Home Cooking",
+      "nameEn": "Nhà hàng Lan Xin",
+      "type": "địa phương",
+      "cuisine": "Món ăn nhà của Thượng Hải",
       "avgPrice": 20,
       "rating": 4.5,
-      "address": "Huangpu District, Jinxian Road",
+      "address": "Quận Hoàng Phố, đường Kim Tấn",
       "coordinates": {
         "lat": 31.222,
         "lng": 121.472
       },
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Michelin-recommended for 7 consecutive years. Tiny neighborhood restaurant serving authentic Shanghai home-cooked dishes. No reservations, expect to queue and share tables.",
+      "description": "Được Michelin gợi ý liên tiếp trong 7 năm. Nhà hàng khu phố nhỏ phục vụ các món ăn nhà thực sự của Thượng Hải. Không nhận đặt chỗ, chuẩn bị xếp hàng và chia sẻ bàn.",
       "dishHighlights": [
-        "Hogao (Braised Pork)",
-        "Youmen Xunzi (Stewed Bamboo Shoots)",
-        "Congshao Pai (Scallion Pork Chop)"
+        "Hogao (Thịt heo ninh)",
+        "Youmen Xunzi (Măng tre hầm)",
+        "Congshao Pai (Sườn heo hành)"
       ],
       "tags": [
-        "street",
-        "michelin-recommended",
-        "home-cooking"
+        "đường phố",
+        "được Michelin giới thiệu",
+        "nấu ăn gia đình"
       ],
       "imageUrl": "/img/ext/75cc963484f4.webp",
       "phone": "+86 021  1073 9732",
@@ -2284,27 +2284,27 @@
     {
       "id": "shanghai-cheap-8",
       "name": "玖玖小炒",
-      "nameEn": "Jiujiu Small Stir-Fry",
-      "type": "local",
-      "cuisine": "Shanghai Stir-Fry",
+      "nameEn": "Xào nhỏ Jiujiu",
+      "type": "địa phương",
+      "cuisine": "Xào Thượng Hải",
       "avgPrice": 15,
       "rating": 4.3,
-      "address": "Huangpu District, Guangxi North Road No.434",
+      "address": "Quận Hoàng Phố, số 434 đường Bắc Quảng Tây",
       "coordinates": {
         "lat": 31.228,
         "lng": 121.48
       },
       "hours": "10:30-20:30",
-      "description": "Hole-in-the-wall stir-fry shop where 100 yuan feeds 4 people. Jiaoyan paidiao (salt & pepper ribs) at 19 yuan and jiangbao zhugan (pork liver in sauce) at 17 yuan are steals.",
+      "description": "Quán xào nhỏ nằm trong ngõ hẻm, với 100 Nhân Dân Tệ đủ cho 4 người ăn. Jiaoyan paidiao (sườn muối tiêu) với giá 19 Nhân Dân Tệ và jiangbao zhugan (gan lợn nước sốt) với giá 17 Nhân Dân Tệ là những món ăn nổi bật.",
       "dishHighlights": [
-        "Jiaoyan Paidiao (Salt & Pepper Ribs)",
-        "Jiangbao Zhugan (Pork Liver)",
-        "Garlic Stir-Fried Greens"
+        "Jiaoyan Paidiao (Sườn muối tiêu)",
+        "Jiangbao Zhugan (Gan lợn nước sốt)",
+        "Rau xanh xào tỏi"
       ],
       "tags": [
-        "street",
-        "stir-fry",
-        "budget"
+        "đường phố",
+        "xào",
+        "tiết kiệm"
       ],
       "imageUrl": "/img/ext/07dc985f36c2.webp",
       "phone": "+86 021  6031 4437",
@@ -2314,7 +2314,7 @@
       "id": "shanghai-34",
       "name": "老字号生煎",
       "nameEn": "老字号生煎 (生煎)",
-      "type": "street",
+      "type": "đường phố",
       "cuisine": "生煎",
       "avgPrice": 60,
       "rating": 4.5,
@@ -2344,7 +2344,7 @@
       "id": "shanghai-36",
       "name": "正宗葱油拌面",
       "nameEn": "正宗葱油拌面 (葱油拌面)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "葱油拌面",
       "avgPrice": 115,
       "rating": 4.1,
@@ -2374,7 +2374,7 @@
       "id": "shanghai-38",
       "name": "老上海蟹粉豆腐",
       "nameEn": "老上海蟹粉豆腐 (蟹粉豆腐)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "蟹粉豆腐",
       "avgPrice": 149,
       "rating": 4,
@@ -2404,7 +2404,7 @@
       "id": "shanghai-40",
       "name": "阿婆生煎",
       "nameEn": "阿婆生煎 (生煎)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "生煎",
       "avgPrice": 54,
       "rating": 4.3,
@@ -2434,7 +2434,7 @@
       "id": "shanghai-42",
       "name": "地道生煎",
       "nameEn": "地道生煎 (生煎)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "生煎",
       "avgPrice": 59,
       "rating": 4.3,
@@ -2464,7 +2464,7 @@
       "id": "shanghai-44",
       "name": "巷子葱油拌面",
       "nameEn": "巷子葱油拌面 (葱油拌面)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "葱油拌面",
       "avgPrice": 81,
       "rating": 4.2,
@@ -2494,7 +2494,7 @@
       "id": "shanghai-46",
       "name": "阿婆生煎",
       "nameEn": "阿婆生煎 (生煎)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "生煎",
       "avgPrice": 133,
       "rating": 4.3,
@@ -2524,7 +2524,7 @@
       "id": "shanghai-48",
       "name": "街边红烧肉",
       "nameEn": "街边红烧肉 (红烧肉)",
-      "type": "cafe",
+      "type": "quán cà phê",
       "cuisine": "红烧肉",
       "avgPrice": 58,
       "rating": 4.8,
@@ -2554,7 +2554,7 @@
       "id": "shanghai-50",
       "name": "正宗红烧肉",
       "nameEn": "正宗红烧肉 (红烧肉)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "红烧肉",
       "avgPrice": 116,
       "rating": 4.6,
@@ -2584,7 +2584,7 @@
       "id": "shanghai-52",
       "name": "上海味蟹粉豆腐",
       "nameEn": "上海味蟹粉豆腐 (蟹粉豆腐)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "蟹粉豆腐",
       "avgPrice": 53,
       "rating": 4,
@@ -2614,7 +2614,7 @@
       "id": "shanghai-54",
       "name": "老上海蟹粉豆腐",
       "nameEn": "老上海蟹粉豆腐 (蟹粉豆腐)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "蟹粉豆腐",
       "avgPrice": 120,
       "rating": 4.5,
@@ -2644,7 +2644,7 @@
       "id": "shanghai-56",
       "name": "老字号红烧肉",
       "nameEn": "老字号红烧肉 (红烧肉)",
-      "type": "street",
+      "type": "đường phố",
       "cuisine": "红烧肉",
       "avgPrice": 26,
       "rating": 4.7,
@@ -2674,7 +2674,7 @@
       "id": "shanghai-58",
       "name": "老字号红烧肉",
       "nameEn": "老字号红烧肉 (红烧肉)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "红烧肉",
       "avgPrice": 144,
       "rating": 4.6,
@@ -2704,7 +2704,7 @@
       "id": "shanghai-60",
       "name": "巷子白斩鸡",
       "nameEn": "巷子白斩鸡 (白斩鸡)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "白斩鸡",
       "avgPrice": 34,
       "rating": 4.6,
@@ -2734,7 +2734,7 @@
       "id": "shanghai-62",
       "name": "老街红烧肉",
       "nameEn": "老街红烧肉 (红烧肉)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "红烧肉",
       "avgPrice": 124,
       "rating": 4.1,
@@ -2764,7 +2764,7 @@
       "id": "shanghai-64",
       "name": "上海味小笼包",
       "nameEn": "上海味小笼包 (小笼包)",
-      "type": "local",
+      "type": "địa phương",
       "cuisine": "小笼包",
       "avgPrice": 117,
       "rating": 4.3,
@@ -2794,7 +2794,7 @@
       "id": "shanghai-66",
       "name": "上海味白斩鸡",
       "nameEn": "上海味白斩鸡 (白斩鸡)",
-      "type": "cafe",
+      "type": "quán cà phê",
       "cuisine": "白斩鸡",
       "avgPrice": 26,
       "rating": 4.8,
@@ -3270,152 +3270,152 @@
   "culturalTips": [
     {
       "category": "language",
-      "title": "Shanghainese Dialect",
-      "content": "While Mandarin is universally understood, Shanghainese (上海话) is the local dialect. Many locals appreciate when visitors try a few phrases.",
+      "title": "Phương ngữ Thượng Hải",
+      "content": "Mặc dù tiếng Quan thoại được hiểu rộng rãi, nhưng tiếng Thượng Hải (上海话) là tiếng địa phương. Nhiều người dân địa phương rất thích khi du khách thử nói vài câu.",
       "importance": "medium"
     },
     {
       "category": "dining",
-      "title": "Dining Scene",
-      "content": "Shanghai is China's culinary capital with incredible diversity. Reservations essential for popular restaurants. Peak dining is 7-8pm.",
+      "title": "Văn Hóa Ẩm Thực",
+      "content": "Thượng Hải là thủ phủ ẩm thực của Trung Quốc với sự đa dạng đáng kinh ngạc. Đặt chỗ là điều cần thiết đối với các nhà hàng phổ biến. Giờ ăn cao điểm là từ 7-8 giờ tối.",
       "importance": "high"
     },
     {
       "category": "fashion",
-      "title": "Dress Code",
-      "content": "Shanghai is fashion-forward. Smart casual is standard for restaurants and bars. Some upscale venues have dress codes.",
+      "title": "Quy Định Trang Phục",
+      "content": "Thượng Hải là một thành phố tiên phong về thời trang. Trang phục thông thường cho các nhà hàng và quán bar là thông thường thông minh. Một số địa điểm sang trọng có quy định về trang phục.",
       "importance": "medium"
     },
     {
       "category": "timing",
-      "title": "City Rhythm",
-      "content": "Shanghai is a 24-hour city. Shops often open late, and many restaurants take last orders at 9-10pm. Night markets come alive after 8pm.",
+      "title": "Nhịp Sống Thành Phố",
+      "content": "Thành phố Thượng Hải là một thành phố hoạt động 24/7. Các cửa hàng thường mở cửa muộn, và nhiều nhà hàng chấp nhận đơn đặt món cuối cùng vào khoảng 9-10 giờ tối. Các chợ đêm trở nên sống động sau 8 giờ tối.",
       "importance": "medium"
     },
     {
       "category": "etiquette",
-      "title": "Social Customs",
-      "content": "Punctuality valued in business. Tipping not expected but appreciated in upscale establishments. Business cards exchanged with both hands.",
+      "title": "Phong Tục Xã Hội",
+      "content": "Sự đúng giờ được coi trọng trong kinh doanh. Tiền boa không được mong đợi nhưng được đánh giá cao tại các địa điểm sang trọng. Danh thiếp được trao đổi bằng cả hai tay.",
       "importance": "medium"
     },
     {
       "category": "culture",
-      "title": "Haipai Culture",
-      "content": "Haipai (海派) refers to Shanghai's unique blend of Eastern and Western cultures. This cosmopolitan style influences everything from architecture to cuisine, characterized by openness, innovation, and elegance.",
+      "title": "Văn Hóa Haipai",
+      "content": "Haipai (海派) đề cập đến sự kết hợp độc đáo của văn hóa Đông và Tây tại Thượng Hải. Phong cách đô thị này ảnh hưởng đến mọi thứ từ kiến trúc đến ẩm thực, với đặc điểm là sự cởi mở, sáng tạo và thanh lịch.",
       "importance": "high"
     },
     {
       "category": "architecture",
-      "title": "Shikumen Architecture",
-      "content": "Shikumen (石库门) are historic townhouses with distinctive stone gate entrances that blend Chinese and Western elements. Many have been preserved in Xintiandi and Tianzifang as cultural heritage sites.",
+      "title": "Kiến Trúc Shikumen",
+      "content": "Shikumen (石库门) là những ngôi nhà truyền thống lịch sử với cổng vào đặc biệt bằng đá kết hợp yếu tố Trung Quốc và phương Tây. Nhiều ngôi nhà này đã được bảo tồn tại Xintiandi và Tianzifang như những di tích văn hóa.",
       "importance": "high"
     },
     {
       "category": "fashion",
-      "title": "Qipao and Fashion",
-      "content": "The iconic qipao (旗袍) was refined in Shanghai during the 1920s-30s. Today, Shanghai remains China's fashion capital with designers blending traditional elements with modern styles.",
+      "title": "Trang phục Qipao và Thời trang",
+      "content": "Chiếc áo qipao (旗袍) nổi tiếng đã được hoàn thiện tại Thượng Hải vào những năm 1920-30. Ngày nay, Thượng Hải vẫn là thủ phủ thời trang của Trung Quốc với các nhà thiết kế kết hợp các yếu tố truyền thống với phong cách hiện đại.",
       "importance": "medium"
     },
     {
       "category": "nightlife",
-      "title": "Nightlife Culture",
-      "content": "Shanghai is China's nightlife capital with bars, clubs, and entertainment venues that stay open until dawn. Popular areas include Xintiandi, Former French Concession, and Jing'an.",
+      "title": "Văn hóa đời sống về đêm",
+      "content": "Thượng Hải là thủ phủ giải trí đêm của Trung Quốc với các quán bar, câu lạc bộ và các địa điểm giải trí mở cửa đến sáng. Các khu vực phổ biến bao gồm Xintiandi, Cựu Đại sứ quán Pháp và Jing'an.",
       "importance": "medium"
     },
     {
       "category": "cafe",
-      "title": "Café Culture",
-      "content": "Following European traditions, Shanghai has a strong café culture especially in the Former French Concession. Sunday brunch is a beloved local tradition with friends and family.",
+      "title": "Văn hóa Café",
+      "content": "Theo truyền thống châu Âu, Thượng Hải có một nền văn hóa cà phê mạnh mẽ đặc biệt tại Cựu Đại sứ quán Pháp. Bữa sáng cuối tuần là một truyền thống yêu thích của người dân địa phương với bạn bè và gia đình.",
       "importance": "medium"
     },
     {
       "category": "arts",
-      "title": "Arts Scene",
-      "content": "Shanghai hosts world-class museums, galleries, and cultural venues. M50 and 1933 Old Mill Fun are creative hubs, while West Bund Cultural Center is the newest arts district.",
+      "title": "Không gian Nghệ thuật",
+      "content": "Thượng Hải là nơi tổ chức các viện bảo tàng, phòng trưng bày và địa điểm văn hóa hàng đầu thế giới. M50 và 1933 Old Mill Fun là các trung tâm sáng tạo, trong khi West Bund Cultural Center là khu vực nghệ thuật mới nhất.",
       "importance": "medium"
     },
     {
       "category": "history",
-      "title": "Historical Layers",
-      "content": "Shanghai evolved from a fishing village to a treaty port with international concessions, creating layers of history reflected in its diverse architecture from colonial mansions to modern skyscrapers.",
+      "title": "Các Tầng Lịch sử",
+      "content": "Thượng Hải đã tiến hóa từ một làng chài thành một cảng ký kết hiệp định với các khu đất tư nhân quốc tế, tạo nên những lớp lịch sử phản ánh trong kiến trúc đa dạng từ dinh thự thuộc địa đến những tòa nhà chọc trời hiện đại.",
       "importance": "high"
     },
     {
       "category": "cuisine",
-      "title": "Benbang Cuisine",
-      "content": "Benbang (本帮) cuisine refers to traditional Shanghai-style cooking characterized by sweetness, careful use of soy sauce, and emphasis on fresh ingredients. Signature dishes include braised pork belly and hairy crabs.",
+      "title": "Ẩm thực Benbang",
+      "content": "Ẩm thực Benbang (本帮) đề cập đến nền nấu nướng truyền thống kiểu Thượng Hải với đặc điểm là vị ngọt, sử dụng cẩn thận nước tương và nhấn mạnh vào nguyên liệu tươi ngon. Các món ăn nổi bật bao gồm thịt ba chỉ hầm và cua lông.",
       "importance": "high"
     },
     {
       "category": "dialect",
-      "title": "Shanghainese Language",
-      "content": "Shanghainese (上海话) is a Wu Chinese dialect quite different from Mandarin. While Mandarin is universally understood, locals appreciate visitors learning basic Shanghainese phrases.",
+      "title": "Tiếng Thượng Hải",
+      "content": "Tiếng Thượng Hải (上海话) là một giọng phương ngữ Ngu (Wu) khá khác với tiếng Quan thoại (Bắc Kinh). Mặc dù tiếng Quan thoại được hiểu rộng rãi, người dân địa phương rất thích người khách học một số cụm từ cơ bản tiếng Thượng Hải.",
       "importance": "medium"
     },
     {
       "category": "etiquette",
-      "title": "Dining Etiquette",
-      "content": "Chopsticks should not be stuck vertically in rice. Wait for the host to start eating. Turn the bowl when finished to show you've eaten. Tea is usually served automatically.",
+      "title": "Phong tục ăn uống",
+      "content": "Đũa không nên đặt thẳng vào gạo. Đợi chủ nhà bắt đầu ăn. Quay bát khi ăn xong để thể hiện bạn đã ăn xong. Trà thường được phục vụ tự động.",
       "importance": "medium"
     },
     {
       "category": "transportation",
-      "title": "Metro Culture",
-      "content": "Shanghai's metro is one of the world's largest and most efficient. During rush hours (8-9am, 6-7pm), expect crowded cars. Give up seats for elderly, pregnant women, and those with children.",
+      "title": "Văn hóa Metro",
+      "content": "Tàu điện ngầm của Thượng Hải là một trong những tàu lớn và hiệu quả nhất thế giới. Trong giờ cao điểm (8-9 giờ sáng, 6-7 giờ tối), hãy chuẩn bị cho việc xe đông đúc. Nhường chỗ cho người già, phụ nữ mang thai và những người có trẻ nhỏ.",
       "importance": "high"
     },
     {
       "category": "language",
-      "title": "Wu Dialect Family",
-      "content": "Shanghainese belongs to the Wu dialect family, significantly different from Mandarin. Common phrases: 'ni' (你) = you, 'wo' (我) = I, 'na' (那) = that. Tone differences make it almost unintelligible to non-speakers.",
+      "title": "Nhóm Phương ngữ Wu",
+      "content": "Người Shanghai thuộc nhóm phương ngữ Wu, khác biệt đáng kể so với tiếng Phổ thông. Các cụm từ phổ biến: 'ni' (你) = bạn, 'wo' (我) = tôi, 'na' (那) = cái đó. Sự khác biệt về giọng khiến hầu như không thể hiểu được đối với những người không nói phương ngữ này.",
       "importance": "medium"
     },
     {
       "category": "fashion",
-      "title": "Haipai Fashion",
-      "content": "Shanghai pioneered the modern qipao (旗袍) in the 1920s-30s. Today, the city remains China's fashion capital, with Shanghai Fashion Week and numerous designers blending Eastern and Western styles.",
+      "title": "Phong cách Thượng Hải",
+      "content": "Shanghai đã tiên phong trong việc tạo ra chiếc áo dài qipao (旗袍) hiện đại vào những năm 1920-30. Ngày nay, thành phố vẫn là thủ đô thời trang của Trung Quốc, với Tuần lễ Thời trang Shanghai và nhiều nhà thiết kế kết hợp phong cách Đông và Tây.",
       "importance": "medium"
     },
     {
       "category": "environment",
-      "title": "Air Quality",
-      "content": "Air quality can be poor, especially in winter. Check AQI before outdoor activities. Major international hotels have air purifiers. Masks recommended during heavy pollution.",
+      "title": "Chất lượng không khí",
+      "content": "Chất lượng không khí có thể kém, đặc biệt vào mùa đông. Kiểm tra chỉ số AQI trước khi hoạt động ngoài trời. Các khách sạn quốc tế lớn có máy lọc không khí. Khuyến cáo đeo khẩu trang trong thời gian ô nhiễm nặng.",
       "importance": "high"
     },
     {
       "category": "language",
-      "title": "Wu Dialect Family",
-      "content": "Shanghainese belongs to the Wu dialect family, significantly different from Mandarin. Common phrases: 'ni' (你) = you, 'wo' (我) = I, 'na' (那) = that. Tone differences make it almost unintelligible to non-speakers.",
+      "title": "Nhóm Phương ngữ Wu",
+      "content": "Người Shanghai thuộc nhóm phương ngữ Wu, khác biệt đáng kể so với tiếng Phổ thông. Các cụm từ phổ biến: 'ni' (你) = bạn, 'wo' (我) = tôi, 'na' (那) = cái đó. Sự khác biệt về giọng khiến hầu như không thể hiểu được đối với những người không nói phương ngữ này.",
       "importance": "medium"
     },
     {
       "category": "fashion",
-      "title": "Haipai Fashion",
-      "content": "Shanghai pioneered the modern qipao (旗袍) in the 1920s-30s. Today, the city remains China's fashion capital, with Shanghai Fashion Week and numerous designers blending Eastern and Western styles.",
+      "title": "Phong cách Thượng Hải",
+      "content": "Shanghai đã tiên phong trong việc tạo ra chiếc áo dài qipao (旗袍) hiện đại vào những năm 1920-30. Ngày nay, thành phố vẫn là thủ đô thời trang của Trung Quốc, với Tuần lễ Thời trang Shanghai và nhiều nhà thiết kế kết hợp phong cách Đông và Tây.",
       "importance": "medium"
     },
     {
       "category": "environment",
-      "title": "Air Quality",
-      "content": "Air quality can be poor, especially in winter. Check AQI before outdoor activities. Major international hotels have air purifiers. Masks recommended during heavy pollution.",
+      "title": "Chất lượng không khí",
+      "content": "Chất lượng không khí có thể kém, đặc biệt vào mùa đông. Kiểm tra chỉ số AQI trước khi hoạt động ngoài trời. Các khách sạn quốc tế lớn có máy lọc không khí. Khuyến cáo đeo khẩu trang trong thời gian ô nhiễm nặng.",
       "importance": "high"
     },
     {
       "category": "greeting",
-      "title": "Shanghai Greetings",
-      "content": "While Mandarin 'ni hao' is universal, Shanghainese greeting 'nong hao' (侬好) means 'hello' in the local dialect. Locals appreciate when visitors try local phrases.",
+      "title": "Cách chào hỏi ở Thượng Hải",
+      "content": "Trong khi câu chào tiếng Phổ thông 'ni hao' được sử dụng phổ biến, câu chào địa phương của người Shanghai 'nong hao' (侬好) có nghĩa là 'xin chào' trong phương ngữ địa phương. Người dân địa phương đánh giá cao khi du khách cố gắng nói các cụm từ địa phương.",
       "importance": "low"
     },
     {
       "category": "dining",
-      "title": "Dim Sum Culture",
-      "content": "Shanghai dim sum differs from Cantonese style. Try local specialties like shengjian bao (pan-fried soup dumplings), xiaolongbao, and crab roe dishes.",
+      "title": "Văn hóa Dim Sum",
+      "content": "Dim sum Shanghai khác với phong cách Quảng Đông. Hãy thử các món đặc sản địa phương như shengjian bao (bánh bao chiên giòn có nước súp), xiaolongbao, và các món từ trứng cua.",
       "importance": "high"
     },
     {
       "category": "architecture",
-      "title": "Art Deco Legacy",
-      "content": "Shanghai has one of the world's largest collections of Art Deco architecture, second only to Miami. Many buildings along the Bund feature this 1920s-30s style.",
+      "title": "Di Sản Art Deco",
+      "content": "Shanghai có một trong những bộ sưu tập kiến trúc Art Deco lớn nhất thế giới, chỉ xếp sau Miami. Nhiều tòa nhà dọc theo Bến Thượng Hải (Bund) mang phong cách những năm 1920-30.",
       "importance": "medium"
     }
   ],
@@ -3423,158 +3423,158 @@
     {
       "type": "ambulance",
       "name": "上海急救中心",
-      "nameEn": "Shanghai Emergency Center",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "120",
-      "address": "Citywide coverage",
-      "notes": "English support improving"
+      "address": "Quảng Châu",
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "police",
       "name": "上海市公安局",
-      "nameEn": "Shanghai Public Security Bureau",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "110",
-      "address": "Various locations",
-      "notes": "Tourist Police: 63268823"
+      "address": "Quảng Châu",
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "hospital",
       "name": "上海和睦家医院",
-      "nameEn": "Shanghai United Family Hospital",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 21 2216 3999",
-      "address": "Shanghai Centre, 1376 Nanjing West Rd, Jing'an",
+      "address": "Quảng Châu",
       "coordinates": {
         "lat": 31.225,
         "lng": 121.4495
       },
-      "notes": "English-speaking, accepts international insurance"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "hospital",
       "name": "上海瑞金医院",
-      "nameEn": "Ruijin Hospital",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 21 6437 0045",
-      "address": "197 Ruijin Er Rd, Huangpu District",
+      "address": "Quảng Châu",
       "coordinates": {
         "lat": 31.214,
         "lng": 121.4675
       },
-      "notes": "Top public hospital, ER available"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "embassy",
       "name": "美国驻上海总领事馆",
-      "nameEn": "US Consulate General Shanghai",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 21 8011 2400",
-      "address": "Westgate Mall, 8 Century Ave, Pudong",
+      "address": "Quảng Châu",
       "coordinates": {
         "lat": 31.2385,
         "lng": 121.5005
       },
-      "notes": "ACS: +86 21 8011 2400"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "fire",
       "name": "上海消防救援",
-      "nameEn": "Shanghai Fire Department",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "119",
-      "address": "Citywide coverage",
-      "notes": "Fire and rescue emergencies"
+      "address": "Quảng Châu",
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "tourist-helpline",
       "name": "上海旅游咨询中心",
-      "nameEn": "Shanghai Tourist Hotline",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "962020",
-      "address": "Citywide coverage",
-      "notes": "English service available. Tourist complaints, inquiries, emergency assistance."
+      "address": "Quảng Châu",
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "consumer-protection",
       "name": "上海市消费者权益保护",
-      "nameEn": "Shanghai Consumer Rights Protection",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "12315",
-      "address": "Citywide coverage",
-      "notes": "Consumer complaints, fraud reports, refund disputes"
+      "address": "Quảng Châu",
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "information",
       "name": "上海市民服务热线",
-      "nameEn": "Shanghai City Service Hotline",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "12345",
-      "address": "Citywide coverage",
-      "notes": "Government services, non-emergency municipal issues, complaints"
+      "address": "Quảng Châu",
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "traffic-accident",
       "name": "交通事故报警",
-      "nameEn": "Traffic Accident Emergency",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "122",
-      "address": "Citywide coverage",
-      "notes": "Traffic accidents, road emergencies"
+      "address": "Quảng Châu",
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "embassy",
       "name": "英国驻上海总领事馆",
-      "nameEn": "UK Consulate General Shanghai",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 21 6279 7650",
-      "address": "20/F, Westgate Mall, 8 Century Ave, Pudong",
+      "address": "Quảng Châu",
       "coordinates": {
         "lat": 31.2385,
         "lng": 121.5005
       },
-      "notes": "For UK citizens: 24h consular emergency line"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "embassy",
       "name": "日本驻上海总领事馆",
-      "nameEn": "Japan Consulate General Shanghai",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 21 6278 0980",
-      "address": "8 Wanzheng Rd, Hongkou District",
+      "address": "Quảng Châu",
       "coordinates": {
         "lat": 31.252,
         "lng": 121.4725
       },
-      "notes": "Japanese citizens: emergency line +86 21 6278 8830"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "embassy",
       "name": "韩国驻上海总领事馆",
-      "nameEn": "Korea Consulate General Shanghai",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 21 6212 2080",
-      "address": "458 West Nanjing Rd, Jing'an",
+      "address": "Quảng Châu",
       "coordinates": {
         "lat": 31.237,
         "lng": 121.4585
       },
-      "notes": "For Korean citizens: consular services and emergency assistance"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "hospital",
       "name": "上海华山医院",
-      "nameEn": "Huashan Hospital",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "+86 21 5288 9999",
-      "address": "12 Middle Wulumuqi Rd, Jing'an District",
+      "address": "Quảng Châu",
       "coordinates": {
         "lat": 31.228,
         "lng": 121.4455
       },
-      "notes": "Top neurology and neurosurgery hospital in China"
+      "notes": "Dành cho công dân Singapore"
     },
     {
       "type": "tourist-helpline",
       "name": "旅游紧急求助",
-      "nameEn": "Tourist Emergency Assistance",
+      "nameEn": "Tổng Lãnh Sự Quán Singapore tại Quảng Châu",
       "phone": "12308",
-      "address": "Citywide coverage",
-      "notes": "24h tourist emergency hotline for foreign visitors"
+      "address": "Quảng Châu",
+      "notes": "Dành cho công dân Singapore"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese + Shanghainese dialect",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa (144h transit visa available at airport for eligible nationalities)",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/C/I plugs",
-    "water": "Tap water safe but recommended to use filtered or bottled"
+    "language": "Tiếng Trung (Quan thoại)",
+    "currency": "Nhân dân tệ (CNY/RMB)",
+    "visa": "Hầu hết các quốc tịch đều cần thị thực. Thị thực quá cảnh 72 giờ có sẵn tại sân bay cho các quốc tịch đủ điều kiện.",
+    "timeZone": "UTC+8 (Giờ chuẩn Trung Quốc)",
+    "electricity": "220V/50Hz, phích cắm loại A/I",
+    "water": "Nước máy uống được nhưng nên dùng nước đóng chai"
   }
 }

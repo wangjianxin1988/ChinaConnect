@@ -10,6 +10,7 @@ import {
 } from "@/data/guide/dining";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
+import { jaText, Bi } from "./guide-i18n";
 
 interface DiningGuideClientProps {
   lang?: Language;
@@ -59,28 +60,28 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
                 <div className="bg-gradient-to-r from-orange-50 to-red-50 p-4 border-b flex items-center gap-4">
                   <span className="text-4xl">{cuisine.icon}</span>
                   <div className="flex-1">
-                    <h3 className="font-semibold text-lg">{cuisine.cuisine}</h3>
-                    <p className="text-sm text-muted-foreground">{cuisine.priceRangeCn}</p>
+                    <h3 className="font-semibold text-lg">{lang === "ja" ? jaText(cuisine.cuisine, lang) : cuisine.cuisine}</h3>
+                    <p className="text-sm text-muted-foreground">{jaText(cuisine.priceRangeCn, lang)}</p>
                   </div>
                 </div>
                 <div className="p-4 space-y-4">
-                  <p className="text-sm text-foreground">{cuisine.description}</p>
-                  <p className="text-sm text-muted-foreground">{cuisine.descriptionCn}</p>
+                  {lang !== "ja" && <p className="text-sm text-foreground">{cuisine.description}</p>}
+                  <p className="text-sm text-muted-foreground">{lang === "ja" ? jaText(cuisine.descriptionCn, lang) : jaText(cuisine.descriptionCn, lang)}</p>
 
                   {/* Popular Dishes */}
                   <div className="bg-slate-50 rounded-lg p-3">
                     <h4 className="font-medium text-sm mb-2">{tg.popularDishesHeading || "Popular Dishes:"}</h4>
                     <div className="flex flex-wrap gap-2">
-                      {cuisine.popularDishes.map((dish, i) => (
+                      {lang !== "ja" && cuisine.popularDishes.map((dish, i) => (
                         <span key={i} className="text-xs bg-white px-2 py-1 rounded border">
-                          {dish}
+                          {jaText(dish, lang)}
                         </span>
                       ))}
                     </div>
                     <div className="flex flex-wrap gap-2 mt-1">
                       {cuisine.popularDishesCn.map((dish, i) => (
                         <span key={i} className="text-xs text-muted-foreground">
-                          {dish}
+                          {jaText(dish, lang)}
                         </span>
                       ))}
                     </div>
@@ -88,19 +89,19 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
 
                   {/* Tips */}
                   <div className="bg-green-50 rounded-lg p-3">
-                    <h4 className="font-medium text-sm mb-2">{tg.proTipsLabel || "Pro Tips:"}</h4>
+                    <h4 className="font-medium text-sm mb-2">{tg.proTips || "Pro Tips:"}</h4>
                     <ul className="space-y-1">
-                      {cuisine.tips.map((tip, i) => (
+                      {lang !== "ja" && cuisine.tips.map((tip, i) => (
                         <li key={i} className="text-sm flex items-start gap-2">
                           <span className="text-green-500">✓</span>
-                          <span>{tip}</span>
+                          <span>{jaText(tip, lang)}</span>
                         </li>
                       ))}
                     </ul>
                     <div className="mt-2 pt-2 border-t space-y-1">
                       {cuisine.tipsCn.map((tip, i) => (
                         <p key={i} className="text-xs text-muted-foreground">
-                          {tip}
+                          {jaText(tip, lang)}
                         </p>
                       ))}
                     </div>
@@ -113,24 +114,24 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
           {/* Price Ranges */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h3 className="font-semibold text-lg">{tg.budgetGuideHeading || "Budget Guide (Per Person)"}</h3>
+              <h3 className="font-semibold text-lg">{tg.budgetHeading || "Budget Guide (Per Person)"}</h3>
             </div>
             <div className="grid md:grid-cols-4 gap-4 p-6">
               <div className="text-center">
                 <div className="text-lg font-bold text-green-600">20-50 CNY</div>
-                <div className="text-sm text-muted-foreground">{tg.streetFoodLabel || "Street Food"}</div>
+                <div className="text-sm text-muted-foreground">{tg.streetFood || "Street Food"}</div>
               </div>
               <div className="text-center">
                 <div className="text-lg font-bold text-blue-600">50-150 CNY</div>
-                <div className="text-sm text-muted-foreground">{tg.casualRestaurantLabel || "Casual Restaurant"}</div>
+                <div className="text-sm text-muted-foreground">{tg.casual || "Casual Restaurant"}</div>
               </div>
               <div className="text-center">
                 <div className="text-lg font-bold text-purple-600">100-300 CNY</div>
-                <div className="text-sm text-muted-foreground">Mid-range</div>
+                <div className="text-sm text-muted-foreground">{tg.midRange || "Mid-range"}</div>
               </div>
               <div className="text-center">
                 <div className="text-lg font-bold text-orange-600">500+ CNY</div>
-                <div className="text-sm text-muted-foreground">High-end</div>
+                <div className="text-sm text-muted-foreground">{tg.highEnd || "High-end"}</div>
               </div>
             </div>
           </div>
@@ -148,13 +149,13 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
                   <h3 className="font-semibold">{tip.category}</h3>
                 </div>
                 <p className="text-sm text-foreground">{tip.tip}</p>
-                <p className="text-sm text-muted-foreground mt-2">{tip.tipCn}</p>
+                <p className="text-sm text-muted-foreground mt-2">{jaText(tip.tipCn, lang)}</p>
                 {tip.warning && (
                   <div className="mt-3 p-2 bg-amber-50 rounded-lg">
                     <p className="text-sm">
                       <span className="font-medium text-amber-700">Warning:</span> {tip.warning}
                     </p>
-                    <p className="text-sm text-muted-foreground">{tip.warningCn}</p>
+                    <p className="text-sm text-muted-foreground">{jaText(tip.warningCn, lang)}</p>
                   </div>
                 )}
               </div>
@@ -164,7 +165,7 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
           {/* Etiquette */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-purple-50 px-6 py-4 border-b">
-              <h3 className="font-semibold text-lg">{tg.diningEtiquetteHeading || "Dining Etiquette"}</h3>
+              <h3 className="font-semibold text-lg">{tg.diningEtiquette || "Dining Etiquette"}</h3>
             </div>
             <div className="divide-y">
               <div className="p-4">
@@ -216,7 +217,7 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
         <div className="space-y-4">
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-blue-50 px-6 py-4 border-b">
-              <h3 className="font-semibold text-lg">{tg.orderingPhrasesHeading || "Ordering Phrases"}</h3>
+              <h3 className="font-semibold text-lg">{tg.orderingPhrases || "Ordering Phrases"}</h3>
             </div>
             <div className="divide-y">
               {ORDERING_HELPERS.map((phrase, idx) => (
@@ -239,11 +240,11 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
           {/* Dietary Restrictions */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-green-50 px-6 py-4 border-b">
-              <h3 className="font-semibold text-lg">{tg.dietaryRestrictionsHeading || "Dietary Restrictions"}</h3>
+              <h3 className="font-semibold text-lg">{tg.dietary || "Dietary Restrictions"}</h3>
             </div>
             <div className="p-4 grid md:grid-cols-2 gap-4">
               <div>
-                <h4 className="font-medium mb-2">{tg.chinesePhrasesLabel || "Chinese Phrases:"}</h4>
+                <h4 className="font-medium mb-2">{tg.chinesePhrases || "Chinese Phrases:"}</h4>
                 <ul className="space-y-2 text-sm">
                   <li>
                     <span className="font-medium">不要辣</span> = No spicy
@@ -266,7 +267,7 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
                 </ul>
               </div>
               <div>
-                <h4 className="font-medium mb-2">{tg.commonAllergiesLabel || "Common Allergies:"}</h4>
+                <h4 className="font-medium mb-2">{tg.commonAllergies || "Common Allergies:"}</h4>
                 <ul className="space-y-2 text-sm">
                   <li>
                     <span className="font-medium">过敏海鲜</span> = Seafood allergy
@@ -297,9 +298,9 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
                   <span className="text-2xl">{item.icon}</span>
                   <h3 className="font-semibold">{item.title}</h3>
                 </div>
-                <p className="text-sm text-muted-foreground">{item.titleCn}</p>
+                <p className="text-sm text-muted-foreground">{jaText(item.titleCn, lang)}</p>
                 <p className="text-sm text-foreground mt-2">{item.tip}</p>
-                <p className="text-sm text-muted-foreground mt-1">{item.tipCn}</p>
+                <p className="text-sm text-muted-foreground mt-1">{jaText(item.tipCn, lang)}</p>
               </div>
             ))}
           </div>
@@ -307,7 +308,7 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
           {/* FAQs */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h3 className="font-semibold text-lg">{tg.faqHeading || "Frequently Asked Questions"}</h3>
+              <h3 className="font-semibold text-lg">{tg.faqsHeading || "Frequently Asked Questions"}</h3>
             </div>
             <div className="divide-y">
               {DINING_FAQS.map((faq, idx) => (
@@ -341,7 +342,7 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
                   <span className="text-4xl">{diet.icon}</span>
                   <div>
                     <h3 className="font-semibold text-lg">{diet.type}</h3>
-                    <p className="text-sm text-muted-foreground">{diet.typeCn}</p>
+                    <p className="text-sm text-muted-foreground">{jaText(diet.typeCn, lang)}</p>
                   </div>
                 </div>
                 <div className="p-4 space-y-4">
@@ -352,10 +353,10 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
                     <p className="text-xs text-muted-foreground mt-1">{diet.pronunciation}</p>
                   </div>
                   <p className="text-sm">{diet.explanation}</p>
-                  <p className="text-sm text-muted-foreground">{diet.explanationCn}</p>
+                  <p className="text-sm text-muted-foreground">{jaText(diet.explanationCn, lang)}</p>
                   {diet.exampleDishes && (
                     <div className="bg-green-50 rounded-lg p-3">
-                      <h4 className="font-medium text-sm mb-2">{tg.safeOptionsLabel || "Safe Options:"}</h4>
+                      <h4 className="font-medium text-sm mb-2">{tg.safeOptions || "Safe Options:"}</h4>
                       <div className="space-y-1">
                         {diet.exampleDishes.map((d, i) => (
                           <p key={i} className="text-sm">
@@ -374,7 +375,7 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
           </div>
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-blue-50 px-6 py-4 border-b">
-              <h2 className="font-semibold text-xl">{tg.popularCategoriesHeading || "Popular Food Categories"}</h2>
+              <h2 className="font-semibold text-xl">{tg.categoriesHeading || "Popular Food Categories"}</h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
               {POPULAR_FOOD_CATEGORIES.map((cat, idx) => (
@@ -398,7 +399,7 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
             <div className="flex items-start gap-3">
               <span className="text-2xl">⚠️</span>
               <div>
-                <h3 className="font-semibold text-red-800">{tg.allergyInfoHeading || "Important Allergy Information"}</h3>
+                <h3 className="font-semibold text-red-800">{tg.importantAllergyInfo || "Important Allergy Information"}</h3>
                 <p className="text-sm text-red-700 mt-1">
                   Allergen labeling is not mandatory in China. Always communicate your allergies
                   clearly using the Chinese phrases below.
@@ -413,7 +414,7 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
                   <span className="text-4xl">{card.icon}</span>
                   <div>
                     <h3 className="font-semibold">{card.allergen}</h3>
-                    <p className="text-sm text-muted-foreground">{card.allergenCn}</p>
+                    <p className="text-sm text-muted-foreground">{jaText(card.allergenCn, lang)}</p>
                   </div>
                 </div>
                 <div className="p-4 space-y-3">
@@ -427,7 +428,7 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
                     <p className="text-sm">
                       <span className="font-medium">Note:</span> {card.note}
                     </p>
-                    <p className="text-sm text-muted-foreground mt-1">{card.noteCn}</p>
+                    <p className="text-sm text-muted-foreground mt-1">{jaText(card.noteCn, lang)}</p>
                   </div>
                 </div>
               </div>
@@ -435,7 +436,7 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
           </div>
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h2 className="font-semibold text-xl">{tg.allergenCardHeading || "Allergen Translation Card"}</h2>
+              <h2 className="font-semibold text-xl">{tg.allergenCard || "Allergen Translation Card"}</h2>
             </div>
             <div className="p-6 bg-white">
               <div className="border-2 border-red-300 rounded-xl p-6 max-w-md mx-auto bg-red-50">
@@ -454,16 +455,14 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
                       <span className="text-xl">{card.icon}</span>
                       <div>
                         <p className="font-medium text-sm">
-                          {card.allergen} / {card.allergenCn}
+                          {card.allergen} / {jaText(card.allergenCn, lang)}
                         </p>
                         <p className="text-xs font-mono">{card.chinesePhrase}</p>
                       </div>
                     </div>
                   ))}
                 </div>
-                <p className="text-center text-xs mt-4 text-muted-foreground">
-                  Thank you / 谢谢您的帮助
-                </p>
+                <p className="text-center text-xs mt-4 text-muted-foreground"><Bi en="Thank you" zh="谢谢您的帮助" lang={lang} /></p>
               </div>
             </div>
           </div>

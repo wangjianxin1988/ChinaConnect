@@ -14,8 +14,8 @@ import { generateBreadcrumbSchema, generateFAQSchema, generateHowToSchema, gener
 const lang = (Astro.params.lang as string) || "en";
 
 // Visa Guide page SEO
-const pageTitle = translations.en.guidePage?.visaTitle || "Visa Guide - ChinaConnect";
-const pageDescription = translations.en.guidePage?.visaDescription || "Complete visa application guide for China travel. Requirements by country, application process, required documents, and tips for tourists.";
+const pageTitle = (translations[lang] || translations.en).guidePage?.visaTitle || "Visa Guide - ChinaConnect";
+const pageDescription = (translations[lang] || translations.en).guidePage?.visaDescription || "Complete visa application guide for China travel. Requirements by country, application process, required documents, and tips for tourists.";
 
 // Schema.org JSON-LD for Visa Guide
 const visaSchemas = [

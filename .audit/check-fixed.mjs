@@ -1,0 +1,10 @@
+const r = await fetch("http://localhost:4321/ja/blog/");
+const t = await r.text();
+console.log("blog status:", r.status, "title:", (t.match(/<title>([^<]*)<\/title>/) || [])[1]);
+const r2 = await fetch("http://localhost:4321/ja/city/beijing/");
+const t2 = await r2.text();
+console.log("city status:", r2.status, "title:", (t2.match(/<title>([^<]*)<\/title>/) || [])[1]);
+console.log("city has closing html:", t2.trim().endsWith("</html>"));
+const r3 = await fetch("http://localhost:4321/ja/city/kunming/");
+const t3 = await r3.text();
+console.log("kunming status:", r3.status, "title:", (t3.match(/<title>([^<]*)<\/title>/) || [])[1]);

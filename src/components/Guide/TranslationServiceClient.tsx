@@ -1,8 +1,9 @@
 import { TRANSLATION_FAQS, TRANSLATION_SERVICES } from "@/data/guide/business/translation";
 import { LastVerifiedStamp } from "./LastVerifiedStamp";
 import React, { useState } from "react";
+import { jaText, Bi } from "./guide-i18n";
 
-export function TranslationServiceClient() {
+export function TranslationServiceClient({ lang = "en" }: { lang?: string }) {
   const [selectedService, setSelectedService] = useState<string>(TRANSLATION_SERVICES[0].id);
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
 
@@ -16,12 +17,11 @@ export function TranslationServiceClient() {
         <div className="flex items-start gap-4">
           <span className="text-5xl">🌍</span>
           <div>
-            <h2 className="text-2xl font-bold mb-2">Translation Services in China</h2>
+            <h2 className="text-2xl font-bold mb-2">{lang === "ja" ? "中国の翻訳・通訳サービス" : "Translation Services in China"}</h2>
             <p className="text-violet-100 max-w-2xl">
-              Book professional interpreters and translators for your business visits. From
-              consecutive interpreting at dinners to certified document translation for visas.
+              {lang === "ja" ? "出張時にプロの通訳者・翻訳者を手配できます。夕食会での逐次通訳から、ビザ用の公認文書翻訳まで対応。" : "Book professional interpreters and translators for your business visits. From consecutive interpreting at dinners to certified document translation for visas."}
             </p>
-            <LastVerifiedStamp dataKey="translation" />
+            <LastVerifiedStamp dataKey="translation" lang={lang} />
           </div>
         </div>
       </div>
@@ -40,8 +40,8 @@ export function TranslationServiceClient() {
           >
             <span className="text-2xl">{getServiceIcon(svc.category)}</span>
             <div className="text-left">
-              <div className="font-semibold text-sm">{svc.name}</div>
-              <div className="text-xs opacity-80">{svc.nameCn}</div>
+              <div className="font-semibold text-sm">{lang === "ja" ? jaText(svc.nameCn, lang) : svc.name}</div>
+              {lang !== "ja" && <div className="text-xs opacity-80">{jaText(svc.nameCn, lang)}</div>}
             </div>
           </button>
         ))}
@@ -53,53 +53,53 @@ export function TranslationServiceClient() {
           <div className="flex items-center gap-3">
             <span className="text-4xl">{getServiceIcon(currentService.category)}</span>
             <div>
-              <h3 className="text-xl font-bold">{currentService.name}</h3>
-              <p className="text-primary font-medium">{currentService.nameCn}</p>
+              <h3 className="text-xl font-bold">{lang === "ja" ? jaText(currentService.nameCn, lang) : currentService.name}</h3>
+              {lang !== "ja" && <p className="text-primary font-medium">{jaText(currentService.nameCn, lang)}</p>}
               <div className="text-2xl font-bold text-violet-700 mt-1">
-                {currentService.priceRange}
+                {jaText(currentService.priceRange, lang)}
               </div>
-              <p className="text-sm text-muted-foreground">{currentService.priceRangeCn}</p>
+              <p className="text-sm text-muted-foreground">{jaText(currentService.priceRangeCn, lang)}</p>
             </div>
           </div>
         </div>
 
         <div className="p-6 grid md:grid-cols-2 gap-6">
           <div>
-            <h4 className="font-semibold mb-3">📝 Description</h4>
-            <p className="text-sm text-foreground">{currentService.description}</p>
-            <p className="text-sm text-muted-foreground mt-2">{currentService.descriptionCn}</p>
+            <h4 className="font-semibold mb-3">📝 {lang === "ja" ? "説明" : "Description"}</h4>
+            <p className="text-sm text-foreground">{lang === "ja" ? jaText(currentService.descriptionCn, lang) : currentService.description}</p>
+            {lang !== "ja" && <p className="text-sm text-muted-foreground mt-2">{jaText(currentService.descriptionCn, lang)}</p>}
           </div>
 
           <div className="space-y-4">
             <div>
-              <h4 className="font-semibold mb-2">🗣️ Languages</h4>
+              <h4 className="font-semibold mb-2">🗣️ {lang === "ja" ? "対応言語" : "Languages"}</h4>
               <div className="flex flex-wrap gap-2">
-                {currentService.languages.map((lang) => (
+                {currentService.languages.map((pair) => (
                   <span
-                    key={lang}
+                    key={pair}
                     className="bg-violet-100 text-violet-700 px-2 py-1 rounded text-sm font-medium"
                   >
-                    {lang}
+                    {lang === "ja" ? jaText(pair, lang) : pair}
                   </span>
                 ))}
               </div>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-2">⏱️ Delivery</h4>
-              <p className="text-sm text-foreground">{currentService.delivery}</p>
-              <p className="text-sm text-muted-foreground">{currentService.deliveryCn}</p>
+              <h4 className="font-semibold mb-2">⏱️ {lang === "ja" ? "納期" : "Delivery"}</h4>
+              <p className="text-sm text-foreground">{lang === "ja" ? jaText(currentService.delivery, lang) : currentService.delivery}</p>
+              <p className="text-sm text-muted-foreground">{jaText(currentService.deliveryCn, lang)}</p>
             </div>
           </div>
         </div>
 
         <div className="px-6 pb-6">
-          <h4 className="font-semibold mb-3">✅ What&apos;s Included</h4>
+          <h4 className="font-semibold mb-3">✅ {lang === "ja" ? "含まれる内容" : "What&apos;s Included"}</h4>
           <div className="grid md:grid-cols-2 gap-3">
             {currentService.features.map((feat, idx) => (
               <div key={idx} className="flex items-start gap-2">
                 <span className="text-green-500 mt-0.5">✓</span>
-                <span className="text-sm text-foreground">{feat}</span>
+                <span className="text-sm text-foreground">{jaText(feat, lang)}</span>
               </div>
             ))}
           </div>
@@ -107,7 +107,7 @@ export function TranslationServiceClient() {
             {currentService.featuresCn.map((feat, idx) => (
               <div key={idx} className="flex items-start gap-2">
                 <span className="text-green-400 mt-0.5">✓</span>
-                <span className="text-sm text-muted-foreground">{feat}</span>
+                <span className="text-sm text-muted-foreground">{jaText(feat, lang)}</span>
               </div>
             ))}
           </div>
@@ -116,15 +116,15 @@ export function TranslationServiceClient() {
 
       {/* All Services Grid */}
       <div>
-        <h3 className="text-lg font-semibold mb-4">All Services at a Glance / 服务总览</h3>
+        <h3 className="text-lg font-semibold mb-4"><Bi en="All Services at a Glance" zh="服务总览" lang={lang} /></h3>
         <div className="overflow-x-auto">
           <table className="w-full text-sm border-collapse">
             <thead>
               <tr className="bg-slate-100">
-                <th className="text-left p-3 border">Service</th>
-                <th className="text-left p-3 border">Price Range</th>
-                <th className="text-left p-3 border">Turnaround</th>
-                <th className="text-left p-3 border">Best For</th>
+                <th className="text-left p-3 border">{lang === "ja" ? "サービス" : "Service"}</th>
+                <th className="text-left p-3 border">{lang === "ja" ? "料金" : "Price Range"}</th>
+                <th className="text-left p-3 border">{lang === "ja" ? "納期" : "Turnaround"}</th>
+                <th className="text-left p-3 border">{lang === "ja" ? "おすすめ用途" : "Best For"}</th>
               </tr>
             </thead>
             <tbody>
@@ -135,13 +135,13 @@ export function TranslationServiceClient() {
                   onClick={() => setSelectedService(svc.id)}
                 >
                   <td className="p-3 border">
-                    <div className="font-medium">{svc.name}</div>
-                    <div className="text-xs text-muted-foreground">{svc.nameCn}</div>
+                    <div className="font-medium">{lang === "ja" ? jaText(svc.nameCn, lang) : svc.name}</div>
+                    {lang !== "ja" && <div className="text-xs text-muted-foreground">{jaText(svc.nameCn, lang)}</div>}
                   </td>
-                  <td className="p-3 border font-medium text-violet-700">{svc.priceRange}</td>
-                  <td className="p-3 border text-muted-foreground">{svc.delivery}</td>
+                  <td className="p-3 border font-medium text-violet-700">{jaText(svc.priceRange, lang)}</td>
+                  <td className="p-3 border text-muted-foreground">{jaText(svc.delivery, lang)}</td>
                   <td className="p-3 border text-muted-foreground">
-                    {svc.description.split(".")[0]}.
+                    {lang === "ja" ? (jaText(svc.descriptionCn, lang).split("。")[0] + "。") : (svc.description.split(".")[0] + ".")}
                   </td>
                 </tr>
               ))}
@@ -152,7 +152,7 @@ export function TranslationServiceClient() {
 
       {/* FAQ */}
       <div>
-        <h3 className="text-lg font-semibold mb-4">Frequently Asked Questions / 常见问题</h3>
+        <h3 className="text-lg font-semibold mb-4"><Bi en="Frequently Asked Questions" zh="常见问题" lang={lang} /></h3>
         <div className="space-y-3">
           {TRANSLATION_FAQS.map((faq, idx) => (
             <div key={idx} className="bg-card rounded-xl border overflow-hidden">
@@ -161,8 +161,8 @@ export function TranslationServiceClient() {
                 className="w-full flex items-center justify-between p-4 text-left hover:bg-slate-50 transition-colors"
               >
                 <div>
-                  <p className="font-medium">{faq.q}</p>
-                  <p className="text-sm text-primary">{faq.qCn}</p>
+                  <p className="font-medium">{lang === "ja" ? jaText(faq.qCn, lang) : faq.q}</p>
+                  {lang !== "ja" && <p className="text-sm text-primary">{jaText(faq.qCn, lang)}</p>}
                 </div>
                 <span className="text-muted-foreground shrink-0 ml-2">
                   {expandedFAQ === idx ? "▲" : "▼"}
@@ -170,8 +170,8 @@ export function TranslationServiceClient() {
               </button>
               {expandedFAQ === idx && (
                 <div className="border-t px-4 pb-4">
-                  <p className="text-sm text-foreground">{faq.a}</p>
-                  <p className="text-sm text-muted-foreground mt-2">{faq.aCn}</p>
+                  <p className="text-sm text-foreground">{lang === "ja" ? jaText(faq.aCn, lang) : faq.a}</p>
+                  {lang !== "ja" && <p className="text-sm text-muted-foreground mt-2">{jaText(faq.aCn, lang)}</p>}
                 </div>
               )}
             </div>
@@ -182,22 +182,29 @@ export function TranslationServiceClient() {
       {/* Booking Tips */}
       <div className="bg-violet-50 border border-violet-200 rounded-xl p-5">
         <h4 className="font-semibold text-violet-900 mb-3 flex items-center gap-2">
-          <span>📋</span> Booking Tips
+          <span>📋</span> {lang === "ja" ? "予約のコツ" : "Booking Tips"}
         </h4>
         <ul className="space-y-2 text-sm text-violet-800">
-          <li>
+          {lang === "ja" && (<>
+            <li>• 逐次通訳は少なくとも<strong>3〜5日前</strong>までに予約</li>
+            <li>• 同時通訳は少なくとも<strong>1〜2週間前</strong>までに予約（機材準備が必要）</li>
+            <li>• 公認法務翻訳の場合、認証に<strong>3〜5日</strong>追加</li>
+            <li>• 通訳者確定前に履歴書や実績ポートフォリオを必ず確認</li>
+            <li>• 交通費・宿泊費が見積もりに含まれるか確認</li>
+          </>)}
+          {lang !== "ja" && <li>
             • Book consecutive interpreters at least <strong>3–5 days in advance</strong>
-          </li>
-          <li>
+          </li>}
+          {lang !== "ja" && <li>
             • Book simultaneous interpreters at least <strong>1–2 weeks in advance</strong>{" "}
             (equipment prep required)
-          </li>
-          <li>
+          </li>}
+          {lang !== "ja" && <li>
             • For certified legal translation, <strong>add 3–5 days</strong> for notarization if
             needed
-          </li>
-          <li>• Always request a CV or portfolio before confirming an interpreter</li>
-          <li>• Confirm if transportation and accommodation are included in the quote</li>
+          </li>}
+          {lang !== "ja" && <li>• Always request a CV or portfolio before confirming an interpreter</li>}
+          {lang !== "ja" && <li>• Confirm if transportation and accommodation are included in the quote</li>}
         </ul>
       </div>
     </div>

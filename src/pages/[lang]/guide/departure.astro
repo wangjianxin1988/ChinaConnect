@@ -13,8 +13,8 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import { translations } from "@/i18n/translations";
 import { getLangFromUrl } from '@/i18n/utils';
 
-const pageTitle = translations.en.guidePage?.departureTitle || "Departure Guide - ChinaConnect";
-const pageDescription = translations.en.guidePage?.departureDescription || "Complete departure guide for leaving China. Tax refunds, airport transport, duty-free shopping, and departure checklist.";
+const pageTitle = (translations[lang] || translations.en).guidePage?.departureTitle || "Departure Guide - ChinaConnect";
+const pageDescription = (translations[lang] || translations.en).guidePage?.departureDescription || "Complete departure guide for leaving China. Tax refunds, airport transport, duty-free shopping, and departure checklist.";
 ---
 
 <BaseLayout

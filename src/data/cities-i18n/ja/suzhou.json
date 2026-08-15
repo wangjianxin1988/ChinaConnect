@@ -1,573 +1,573 @@
 {
   "slug": "suzhou",
   "name": "苏州",
-  "nameEn": "Suzhou",
+  "nameEn": "蘇州",
   "country": "China",
-  "population": "10.7 million",
+  "population": "1070万人",
   "coordinates": {
     "lat": 31.2989,
     "lng": 120.5853
   },
-  "timezone": "UTC+8 (China Standard Time)",
-  "description": "Suzhou is a paradise of elegant gardens, silk production, and classical Chinese culture. Known as 'Venice of the East' for its canals and water towns. Home to UNESCO World Heritage classical gardens, intricate silk embroidery, and 2,500 years of history. A cultural gem between Shanghai and Nanjing.",
+  "timezone": "UTC+8（中国標準時）",
+  "description": "蘇州は優雅な庭園、絹の生産、中国の古典文化のパラダイスです。「東洋のベニス」と呼ばれる運河と水郷で知られています。ユネスコの世界遺産に登録されている古典庭園、複雑な絹の刺繍、2500年の歴史を持つ文化の宝石です。上海と南京の間に位置しています。",
   "coverImage": "/img/ext/bb437a1b3f23.webp",
   "highlights": [
-    "Humble Administrator's Garden - UNESCO",
-    "Lingering Garden - Ming dynasty masterpiece",
-    "Tiger Hill - Ancient pagoda and hill",
-    "Shantang Street - Classic canal street",
-    "Zhouzhuang - Water town Venice"
+    "拙政園 - ユネスコ",
+    "留園 - 明朝の傑作",
+    "虎丘 - 古代の塔と丘",
+    "山塘街 - 伝統的な運河通り",
+    "周庄 - 水の都ベ尼斯"
   ],
   "climate": {
-    "type": "Subtropical monsoon",
+    "type": "亜熱帯季風気候",
     "bestMonths": [
-      "April",
-      "May",
-      "September",
-      "October",
-      "November"
+      "4月",
+      "5月",
+      "9月",
+      "10月",
+      "11月"
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "5C (41F)",
-    "tips": "Best in spring (April-May) for garden flowers or autumn (Sept-Nov) for pleasant weather. Summer is hot and humid. Winter is cold but gardens are beautiful in snow. Plum blossoms in winter."
+    "tips": "ベストシーズンは春（4月〜5月）の庭園の花、または秋（9月〜11月）の過ごしやすい気候です。夏は暑くて湿度が高いです。冬は寒いですが、庭園は雪景色が美しいです。冬には梅の花も見られます。"
   },
   "attractions": [
     {
       "id": "humble-administrator",
-      "name": "拙政园",
-      "nameEn": "Humble Administrator's Garden",
+      "name": "拙政園",
+      "nameEn": "拙政園",
       "image": "/img/ext/617f187be6ed.webp",
       "category": "cultural",
-      "description": "The largest and most famous classical Chinese garden, a UNESCO World Heritage site representing garden art at its peak.",
-      "address": "178 Northeast Street, Gusu District",
+      "description": "最大かつ最も有名な中国古典庭園。ユネスコ世界遺産であり、庭園芸術の頂点を代表する。",
+      "address": "姑蘇区東北大街178号",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
       },
-      "openingHours": "07:30-17:30 (Summer), 08:00-17:00 (Winter)",
-      "ticketPrice": "70¥ (peak), 50¥ (off-peak)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "07:30-17:30（夏）、08:00-17:00（冬）",
+      "ticketPrice": "70元（繁忙期）、50元（閑散期）",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Peony garden",
-        "Lotus pond",
-        "Hall of Distingushed Fishing",
-        "Autumn colors"
+        "牡丹園",
+        "蓮の池",
+        "遠香堂（香りを遠くへ贈るホール）",
+        "紅葉"
       ],
-      "tips": "Arrive before 8am to avoid tour groups. Audio guide essential. Combine with nearby Suzhou Museum. Best in early morning or late afternoon.",
+      "tips": "8時前に到着して団体を避けましょう。音声ガイドは必須。近くの蘇州博物館と組み合わせると良い。朝早くか夕方がベストです。",
       "phone": "+86 051 2 4994 0148"
     },
     {
       "id": "lingering-garden",
-      "name": "留园",
-      "nameEn": "Lingering Garden",
+      "name": "留園",
+      "nameEn": "留園",
       "image": "/img/ext/2bf9c9919c9e.webp",
       "category": "cultural",
-      "description": "A masterpiece of Ming dynasty garden design, UNESCO World Heritage site known for its sophisticated architecture and layout.",
-      "address": "338 Lingering Garden Lane, Gusu District",
+      "description": "明代の庭園設計の傑作であり、洗練された建築とレイアウトで知られるユネスコ世界遺産。",
+      "address": "蘇州市姑蘇区留園巷338号",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
       },
       "openingHours": "07:30-17:30",
       "ticketPrice": "45¥",
-      "recommendedVisitTime": "1.5-2 hours",
+      "recommendedVisitTime": "1.5-2時間",
       "highlights": [
-        "Peak Hall",
-        "Lion Grove",
-        "Eight-patterned walkway",
-        "Magnificent pavilion"
+        "ピークホール",
+        "獅子林",
+        "八角形の小道",
+        "壮大な楼閣"
       ],
-      "tips": "Smaller than Humble Administrator but considered more refined. Morning visits best for light. Excellent details in rock arrangements.",
+      "tips": "拙政園より小さいが、より洗練された庭園と見なされています。朝方は光線が美しく、岩の配置に優れたディテールがあります。",
       "phone": "+86 512 6533 7903"
     },
     {
       "id": "tiger-hill",
       "name": "虎丘",
-      "nameEn": "Tiger Hill",
+      "nameEn": "タイガー・ヒル",
       "image": "/img/ext/20ba084c3257.webp",
       "category": "cultural",
-      "description": "An ancient hilltop with the famous Leaning Pagoda, historic temples, and legendary tombs dating back 2,500 years.",
-      "address": "88 Tiger Hill Road, Suzhou",
+      "description": "有名な傾斜塔、歴史ある寺院、そして2,500年前の伝説の墓がある古代の丘。",
+      "address": "蘇州市虎丘路88号",
       "coordinates": {
         "lat": 31.3322,
         "lng": 120.5872
       },
       "openingHours": "07:30-17:30",
       "ticketPrice": "80¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Leaning Pagoda (Yunyan Pagoda)",
-        "Sword Pool",
-        "Crouching Tiger Temple",
-        "Thousand-man Rock"
+        "傾斜塔（雲岩寺塔）",
+        "剣池",
+        "臥虎寺",
+        "千人石"
       ],
-      "tips": "Legend says buried treasures under the pagoda. Walk to the top for views. Spring for flowers. Can be combined with Shantang Street.",
+      "tips": "伝説によると塔の下に埋蔵された宝物があります。頂上まで歩いて景色をお楽しみください。春には花が咲き誇ります。シャンタン通りと一緒に訪れることができます。",
       "phone": "+86 512 6532 3488"
     },
     {
       "id": "shantang-street",
       "name": "山塘街",
-      "nameEn": "Shantang Street",
+      "nameEn": "山塘街",
       "image": "/img/ext/f5e115604d3c.webp",
       "category": "cultural",
-      "description": "A classic 1,200-year-old canal street with traditional shops, teahouses, and beautiful night views.",
-      "address": "Shantang Street, Gusu District",
+      "description": "1,200年の歴史を持つ伝統的な運河沿いの通りで、伝統的な商店、茶館、美しい夜景が楽しめます。",
+      "address": "姑蘇区山塘街",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6072
       },
-      "openingHours": "Open 24 hours (shops 09:00-22:00)",
-      "ticketPrice": "Free (some attractions charge)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24時間営業（店舗09:00-22:00）",
+      "ticketPrice": "無料（一部の観光地は有料）",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Canal boat rides",
-        "Night lighting",
-        "Traditional snacks",
-        "Ancient bridges"
+        "運河遊覧船",
+        "夜間照明",
+        "伝統的な軽食",
+        "古橋"
       ],
-      "tips": "Best at night when illuminated. Take a boat ride. Try local snacks. Less crowded than Pingjiang Road.",
+      "tips": "夜間のライトアップ時が最も美しいです。ボートに乗ってみましょう。地元の軽食を試しましょう。平江路ほど混雑していません。",
       "phone": "+86 051 2 6529 7281"
     },
     {
       "id": "pingjiang-road",
       "name": "平江路",
-      "nameEn": "Pingjiang Road",
+      "nameEn": "平江路",
       "image": "/img/ext/d9e1e34b36a1.webp",
       "category": "cultural",
-      "description": "A preserved historic district with canal views, traditional residences, and charming shops along 1.6km of waterways.",
-      "address": "Pingjiang Road, Gusu District",
+      "description": "保存された歴史地区で、運河沿いに1.6kmにわたって伝統的な住宅や魅力的なショップが立ち並ぶ景色が楽しめます。",
+      "address": "平江路、姑蘇区",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
       },
-      "openingHours": "Open 24 hours (shops 10:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24時間営業（店舗10:00-22:00）",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Canal-side walking",
-        "Traditional architecture",
-        "Handcraft shops",
-        "Local snacks"
+        "運河沿いの散策",
+        "伝統的な建築",
+        "手芸品店",
+        "ローカルスナック"
       ],
-      "tips": "Less commercialized than Shantang. Combine with nearby Humble Administrator's Garden. Morning for photography, evening for atmosphere.",
+      "tips": "山塘街よりも商業化が進んでいません。近くにある拙政園と組み合わせて訪れるのがおすすめです。写真撮影には午前中、雰囲気を楽しむには夜が最適です。",
       "phone": "+86 051 2 7003 6882"
     },
     {
       "id": "suzhou-museum",
-      "name": "苏州博物馆",
-      "nameEn": "Suzhou Museum",
+      "name": "蘇州博物館",
+      "nameEn": "蘇州博物館",
       "image": "/img/ext/5d794881e15f.webp",
       "category": "cultural",
-      "description": "A modern architectural masterpiece by I.M. Pei showcasing Suzhou's 2,500-year history and culture.",
-      "address": "204 Northeast Street, Gusu District",
+      "description": "I.M.ペイによる現代建築の傑作で、蘇州の2,500年の歴史と文化を紹介しています。",
+      "address": "江蘇省蘇州市姑蘇区東北街204号",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1.5-2 hours",
+      "openingHours": "09:00-17:00（月曜日は休館）",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1.5-2時間",
       "highlights": [
-        "IM Pei architecture",
-        "Ancient artifacts",
-        " calligraphy exhibition",
-        "Garden setting"
+        "IMペイの建築",
+        "古代の遺物",
+        "書道展覧会",
+        "庭園の環境"
       ],
-      "tips": "Free but need to book online. Book 2+ days ahead on official WeChat. Combine with Humble Administrator's Garden which is across the street.",
+      "tips": "無料ですが、オンラインで予約が必要です。公式WeChatで2日以上前に予約してください。道路を挟んで向かい側にある拙政園と組み合わせて訪れることをお勧めします。",
       "phone": "+86 512 6757 5666"
     },
     {
       "id": "zhouzhuang",
       "name": "周庄",
-      "nameEn": "Zhouzhuang",
+      "nameEn": "周庄",
       "image": "/img/ext/7d5cc733347e.webp",
       "category": "cultural",
-      "description": "A famous water town with 900 years of history, featuring ancient bridges, canal boat rides, and preserved Ming/Qing architecture.",
-      "address": "Zhouzhuang Town, 30km from Suzhou",
+      "description": "900年の歴史を持つ有名な水郷。古代の橋、運河のボートツアー、保存状態の良い明・清時代の建築が特徴です。",
+      "address": "周庄鎮、蘇州から30km",
       "coordinates": {
         "lat": 31.1122,
         "lng": 120.8472
       },
-      "openingHours": "08:00-16:00 (夜游 available)",
-      "ticketPrice": "100¥ (day), 80¥ (night)",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "08:00-16:00（夜遊可能）",
+      "ticketPrice": "100¥（日中）、80¥（夜間）",
+      "recommendedVisitTime": "3-4時間",
       "highlights": [
-        "Twin Bridges",
-        "Former residence",
-        "Canal boat ride",
-        "Night views"
+        "双橋",
+        "旧居",
+        "運河ボートライド",
+        "夜景"
       ],
-      "tips": "Visit early morning before tour buses. Stay for night lighting. Buy tickets at tourism center. Combine with Tongli water town.",
+      "tips": "観光バスが来る前の早朝に訪れることをお勧めします。夜間のライトアップもご覧ください。チケットは観光センターで購入してください。同里水郷と組み合わせて訪れると良いでしょう。",
       "phone": "+86 051 2 3118 0005"
     },
     {
       "id": "tongli",
       "name": "同里",
-      "nameEn": "Tongli",
+      "nameEn": "トンリ",
       "image": "/img/ext/998eb40307b9.webp",
       "category": "cultural",
-      "description": "A peaceful water town with 15 canals, 49 ancient bridges, and 67 heritage gardens and residences.",
-      "address": "Tongli Town, 30km from Suzhou",
+      "description": "静かで美しい水の都。15の運河、49の古代の橋、そして67の歴史ある庭園と邸宅があります。",
+      "address": "蘇州市から30km離れた同里町",
       "coordinates": {
         "lat": 31.1522,
         "lng": 120.7172
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "100¥ (includes attractions)",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "100¥（観光スポット込み）",
+      "recommendedVisitTime": "3-4時間",
       "highlights": [
-        "Tuisi Garden",
-        "Ancient bridges",
-        "Ming residences",
-        "Water views"
+        "退思園",
+        "古橋",
+        "明代の邸宅",
+        "水の景色"
       ],
-      "tips": "Less crowded than Zhouzhuang. Start at Tuisi Garden. Evening is peaceful. Can cycle between water towns.",
+      "tips": "周荘より混雑が少ない。退思園から始めるのがおすすめ。夜は静か。水郷の間をサイクリングできる。",
       "phone": "+86 051 2 7298 7834"
     },
     {
       "id": "guanqian-street",
-      "name": "观前街",
-      "nameEn": "Guanqian Street",
+      "name": "観前街",
+      "nameEn": "観前街",
       "image": "/img/ext/ec6bda6c85d6.webp",
       "category": "cultural",
-      "description": "Suzhou main pedestrian shopping street with century-old shops and temples.",
-      "address": "Guanqian Street, Gusu District",
+      "description": "蘇州最大の歩行者天国ショッピングストリートで、100年以上続く店舗や寺院があります。",
+      "address": "観前街（かんぜんがい）、姑蘇区（こそく）",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
       },
-      "openingHours": "Shops 10:00-22:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "店舗 10:00-22:00",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
-        "Shopping",
-        "Teahouses",
-        "Temple"
+        "ショッピング",
+        "茶屋",
+        "寺院"
       ],
-      "tips": "Try local snacks along the street.",
+      "tips": "通り沿いで地元の軽食を試してみてください。",
       "phone": "+86 051 2 5554 1889"
     },
     {
       "id": "lingyin-temple",
       "name": "灵岩山寺",
-      "nameEn": "Lingyin Temple",
+      "nameEn": "霊隠寺",
       "image": "/img/ext/0df1b413372e.webp",
       "category": "cultural",
-      "description": "Ancient Buddhist temple on a scenic hill with beautiful gardens.",
-      "address": "Lingyin Temple, Suzhou",
+      "description": "美しい庭園を持つ古い佛教寺院で、景勝な丘の上に位置しています。",
+      "address": "霊隠寺、蘇州",
       "coordinates": {
         "lat": 31.3422,
         "lng": 120.5672
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "45¥",
-      "recommendedVisitTime": "2 hours",
+      "recommendedVisitTime": "2時間",
       "highlights": [
-        "Temple",
-        "Gardens",
-        "Pagodas"
+        "寺院",
+        "庭園",
+        "塔"
       ],
-      "tips": "Climb the hill for views.",
+      "tips": "丘に登って景色をお楽しみください。",
       "phone": "+86 051 2 9220 6735"
     },
     {
       "id": "wangshi-yuan",
-      "name": "网师园",
-      "nameEn": "Master of the Nets Garden",
+      "name": "網師園",
+      "nameEn": "網師園",
       "image": "/img/ext/2197d082103b.webp",
       "category": "cultural",
-      "description": "UNESCO World Heritage garden known for its intimate scale and elegant design.",
-      "address": "70 Wangshi Lane",
+      "description": "ユネスコ世界遺産に登録されている庭園で、その親密な規模と優雅なデザインで知られています。",
+      "address": "汪氏胡同70号",
       "coordinates": {
         "lat": 31.3022,
         "lng": 120.6472
       },
       "openingHours": "07:30-17:30",
       "ticketPrice": "40¥",
-      "recommendedVisitTime": "1.5 hours",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
-        "Small garden",
-        "Night tour"
+        "小さな庭園",
+        "ナイトツアー"
       ],
-      "tips": "Famous for night performances.",
+      "tips": "夜間のパフォーマンスで有名です。",
       "phone": "+86 051 2 8104 5160"
     },
     {
       "id": "qianlong-emperor-garden",
-      "name": "乾隆皇帝花园",
-      "nameEn": "Emperor's Garden",
+      "name": "乾隆皇帝の庭園",
+      "nameEn": "皇帝の庭園",
       "image": "/img/ext/1670b85b2588.webp",
       "category": "cultural",
-      "description": "Riverside garden with imperial connections and scenic views.",
-      "address": "Qianlong Emperor Garden",
+      "description": "皇室ゆかりの川沿いの庭園と美景",
+      "address": "乾隆帝庭園",
       "coordinates": {
         "lat": 31.3522,
         "lng": 120.5772
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "1.5 hours",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
-        "Imperial history",
-        "River views"
+        "帝国時代の歴史",
+        "川 전망"
       ],
-      "tips": "Less crowded than major gardens.",
+      "tips": "主要な庭園よりも混雑が少ないです。",
       "phone": "+86 051 2 5476 3878"
     },
     {
       "id": "luxu-ancient-village",
       "name": "陆巷古村",
-      "nameEn": "Luxu Ancient Village",
+      "nameEn": "瀘上古村",
       "image": "/img/ext/e7b07db4941f.webp",
       "category": "cultural",
-      "description": "Well-preserved Ming dynasty village on Dongting Lake.",
-      "address": "Luxu Village, Suzhou",
+      "description": "洞庭湖にある保存状態の良い明代の村。",
+      "address": "蘇州市の魯墟村",
       "coordinates": {
         "lat": 31.1522,
         "lng": 120.5672
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "65¥",
-      "recommendedVisitTime": "3 hours",
+      "recommendedVisitTime": "3時間",
       "highlights": [
-        "Ancient architecture",
-        "Lake views"
+        "古代建築",
+        "湖の景色"
       ],
-      "tips": "Combine with Dongting Lake visit.",
+      "tips": "洞庭湖の訪問と組み合わせてください。",
       "phone": "+86 051 2 8493 6747"
     },
     {
       "id": "suzhou-opera",
-      "name": "苏州戏曲博物馆",
-      "nameEn": "Suzhou Opera Museum",
+      "name": "蘇州戯曲博物館",
+      "nameEn": "蘇州戯曲博物館",
       "image": "/img/ext/c74d7faf7bb9.webp",
       "category": "cultural",
-      "description": "Museum showcasing Kunqu opera, UNESCO intangible heritage.",
-      "address": "Su Opera Museum",
+      "description": "昆劇（昆曲）を展示する博物館、ユネスコ無形文化遺産。",
+      "address": "蘇州崑劇院",
       "coordinates": {
         "lat": 31.3332,
         "lng": 120.6272
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "Kunqu opera",
-        "Costumes"
+        "崑劇",
+        "衣装"
       ],
-      "tips": "Watch a performance if possible.",
+      "tips": "可能であれば公演を観覧してください。",
       "phone": "+86 051 2 0243 7669"
     },
     {
       "id": "panmen-gate",
-      "name": "盘门景区",
-      "nameEn": "Panmen Scenic Area",
+      "name": "盤門景区",
+      "nameEn": "盤門風景区",
       "image": "/img/ext/9390fdd1db87.webp",
       "category": "historical",
-      "description": "Ancient city gate and water gate from the Song dynasty.",
-      "address": "18 Panmen Road",
+      "description": "宋代の古代の城門と水門。",
+      "address": "盤門路18号",
       "coordinates": {
         "lat": 31.2922,
         "lng": 120.6172
       },
       "openingHours": "07:30-17:30",
       "ticketPrice": "55¥",
-      "recommendedVisitTime": "2 hours",
+      "recommendedVisitTime": "2時間",
       "highlights": [
-        "City wall",
-        "Ruyuan Lake"
+        "城壁",
+        "如意湖"
       ],
-      "tips": "Beautiful at sunset.",
+      "tips": "日没時に美しいです。",
       "phone": "+86 051 2 1111 0061"
     },
     {
       "id": "xuanmiao-holly",
-      "name": "玄妙观",
-      "nameEn": "Xuanmiao Temple",
+      "name": "玄妙観",
+      "nameEn": "玄妙観",
       "image": "/img/ext/88bacafe8f0a.webp",
       "category": "cultural",
-      "description": "Taoist temple in the heart of Suzhou with bustling market.",
-      "address": "Xuanmiao Temple",
+      "description": "蘇州の賑やかな市場の中にある道教寺院。",
+      "address": "玄妙観",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6472
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "Temple",
-        "Markets"
+        "寺院",
+        "市場"
       ],
-      "tips": "Good for souvenir shopping.",
+      "tips": "お土産を買うのに最適です。",
       "phone": "+86 051 2 2213 0239"
     },
     {
       "id": "hanshan-temple",
       "name": "寒山寺",
-      "nameEn": "Hanshan Temple",
+      "nameEn": "寒山寺",
       "image": "/img/ext/4ce1f2cca7ce.webp",
       "category": "cultural",
-      "description": "Famous Tang dynasty temple known for the poem Mooring at Maple Bridge.",
-      "address": "Hanshan Temple",
+      "description": "名詩「楓橋夜泊」で有名な唐代の寺",
+      "address": "寒山寺",
       "coordinates": {
         "lat": 31.2822,
         "lng": 120.5772
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "20¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "Bell tower",
-        "Poetry"
+        "鐘楼",
+        "詩"
       ],
-      "tips": "Visit on New Year for bell ringing.",
+      "tips": "除夜詣りで鐘撞きを体験",
       "phone": "+86 051 2 9336 6663"
     },
     {
       "id": "silk-museum",
-      "name": "苏州丝绸博物馆",
-      "nameEn": "Suzhou Silk Museum",
+      "name": "蘇州シルク博物館",
+      "nameEn": "蘇州絹博物館",
       "image": "/img/ext/a1437454d0aa.webp",
       "category": "cultural",
-      "description": "Museum showcasing Suzhou 5000-year silk history and production.",
-      "address": "Suzhou Silk Museum",
+      "description": "絹織物の歴史と生産を紹介する5000年の蘇州の絹の歴史と生産を紹介する博物館。",
+      "address": "蘇州絹博物館",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6572
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "Silk history",
-        "Weaving demos"
+        "絹の歴史",
+        "織りの実演"
       ],
-      "tips": "Buy silk products nearby.",
+      "tips": "近くの店で絹製品を購入してください。",
       "phone": "+86 512 6523 2269"
     },
     {
       "id": "garden-museum",
-      "name": "苏州园林博物馆",
-      "nameEn": "Suzhou Garden Museum",
+      "name": "蘇州庭園博物館",
+      "nameEn": "蘇州庭園博物館",
       "image": "/img/ext/715f62b712ce.webp",
       "category": "cultural",
-      "description": "First museum dedicated to classical Chinese gardens in China.",
-      "address": "Suzhou Garden Museum",
+      "description": "中国初の古典中国庭園専門の博物館。",
+      "address": "蘇州庭園博物館",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
       },
       "openingHours": "09:00-16:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "45 min",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "45分",
       "highlights": [
-        "Garden models",
-        "History"
+        "庭園模型",
+        "歴史"
       ],
-      "tips": "Good introduction before garden visits.",
+      "tips": "庭園訪問前の良い紹介です。",
       "phone": "+86 051 2 5790 4857"
     },
     {
       "id": "yuanlin-wang",
-      "name": "园林之路",
-      "nameEn": "Garden Art",
+      "name": "庭園の道",
+      "nameEn": "園林王",
       "image": "/img/ext/fe4ed812b34e.webp",
       "category": "cultural",
-      "description": "Scenic route connecting major classical gardens of Suzhou.",
-      "address": "Old Town Suzhou",
+      "description": "蘇州の古典庭園を結ぶ景勝ルート",
+      "address": "蘇州旧市街",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
       },
-      "openingHours": "24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "Half day",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "半日",
       "highlights": [
-        "Multiple gardens",
-        "Canal views"
+        "複数の庭園",
+        "運河の眺め"
       ],
-      "tips": "Buy garden pass for savings.",
+      "tips": "庭園パスケットを購入して節約",
       "phone": "+86 051 2 1426 0885"
     },
     {
       "id": "lion-grove-garden",
       "name": "狮子林",
-      "nameEn": "Lion Grove Garden",
+      "nameEn": "獅子林",
       "category": "park",
-      "description": "元代古典园林，以假山著称，园内太湖石峰林立，形似狮子，故名狮子林。乾隆皇帝曾六次游览并仿建于颐和园。",
-      "address": "苏州市姑苏区园林路23号",
+      "description": "元代の古典庭園で、築山（かり山）で有名です。園内には太湖石の峰が立ち並び、獅子の形に似ていることから獅子林と名付けられました。乾隆帝は六度訪れ、頤和園に模して造らせました。",
+      "address": "蘇州市姑蘇区園林路23号",
       "coordinates": {
         "lat": 31.3229,
         "lng": 120.6323
       },
       "openingHours": "07:30-17:30",
       "ticketPrice": "40元",
-      "recommendedVisitTime": "1-2小时",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
         "太湖石假山群",
-        "迷宫式假山",
+        "迷路式の築山",
         "乾隆御笔",
         "燕誉堂"
       ],
-      "tips": "假山群像迷宫一样，建议慢慢探索。和拙政园距离很近，可以一起游览。",
+      "tips": "築山群は迷路のようで、ゆっくり探索することをおすすめします。拙政園と非常に近いので、一緒に回ることができます。",
       "image": "/img/ext/309f30e43563.webp",
       "phone": "+86 051 2 2061 0705"
     },
     {
       "id": "suzhou-center",
       "name": "苏州中心",
-      "nameEn": "Suzhou Center",
+      "nameEn": "蘇州センター",
       "category": "landmark",
-      "description": "苏州工业园区的地标性建筑群，拥有华东地区最大的购物中心之一。建筑设计现代时尚，屋顶花园可俯瞰金鸡湖全景。",
-      "address": "苏州市工业园区星港街",
+      "description": "蘇州工業園区のランドマーク的な建築群で、華東地区最大級のショッピングモールの一つを有する。建築デザインは現代的でスタイリッシュ、屋上庭園からは金鶏湖の全景を一望できる。",
+      "address": "蘇州市工業園区星港街",
       "coordinates": {
         "lat": 31.3189,
         "lng": 120.6853
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
-        "金鸡湖全景",
-        "屋顶花园",
-        "现代建筑",
-        "购物美食"
+        "金鶏湖の全景",
+        "屋上庭園",
+        "現代建築",
+        "ショッピングとグルメ"
       ],
-      "tips": "傍晚时分可以欣赏金鸡湖日落和音乐喷泉。",
+      "tips": "夕方には金鶏湖の夕日と音楽噴水を楽しめます。",
       "image": "/img/ext/344b981b06fd.webp",
       "phone": "+86 051 2 8669 3375"
     },
     {
       "id": "jinji-lake",
-      "name": "金鸡湖",
-      "nameEn": "Jinji Lake",
+      "name": "金鶏湖",
+      "nameEn": "金池湖",
       "category": "nature",
-      "description": "苏州工业园区内的人工湖，是全国最大的城市内湖之一。湖畔有文化艺术中心、摩天轮、月光码头等景点，是苏州现代休闲的代表。",
-      "address": "苏州市工业园区金鸡湖景区",
+      "description": "蘇州工業園区内にある人工湖で、全国最大級の都市内湖の一つ。湖畔には文化芸術センター、観覧車、月光埠頭などの見どころがあり、蘇州の現代的レジャーの代表格。",
+      "address": "蘇州市工業園区金鶏湖景区",
       "coordinates": {
         "lat": 31.3089,
         "lng": 120.6953
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "openingHours": "終日開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
-        "音乐喷泉",
-        "月光码头",
-        "摩天轮",
+        "音楽噴水",
+        "月光桟橋",
+        "観覧車",
         "李公堤"
       ],
-      "tips": "周五和周末晚上有音乐喷泉表演。环湖骑行非常惬意。",
+      "tips": "金曜日と週末の夜には音楽噴水のショーがあります。湖周辺のサイクリングはとても気持ちいいです。",
       "image": "/img/ext/c09fcbe63c84.webp",
       "phone": "+86 051 2 5775 8915"
     },
     {
       "id": "canglang-pavilion",
       "name": "沧浪亭",
-      "nameEn": "Canglang Pavilion",
+      "nameEn": "蒼浪亭",
       "category": "park",
-      "description": "苏州最古老的园林，始建于北宋，是世界文化遗产。以假山为中心，园内古木参天，复廊漏窗精美，是文人雅士的精神家园。",
+      "description": "蘇州最古の庭園で、北宋時代に創建され、世界文化遺産に登録されている。假山を中心に、園内には古木が空を覆い、回廊や漏窓の彫刻が美しく、文人雅士の精神的な故郷とされる。",
       "address": "苏州市姑苏区沧浪亭街3号",
       "coordinates": {
         "lat": 31.2889,
@@ -575,23 +575,23 @@
       },
       "openingHours": "07:30-17:30",
       "ticketPrice": "20元",
-      "recommendedVisitTime": "1-1.5小时",
+      "recommendedVisitTime": "1〜1.5時間",
       "highlights": [
-        "复廊漏窗",
+        "回廊の透かし窓",
         "假山",
-        "五百名贤祠",
+        "五百名賢祠",
         "看山楼"
       ],
-      "tips": "游客比其他园林少，可以安静欣赏。与可园相邻，可以一起游览。",
+      "tips": "他の庭園に比べて観光客が少なく、静かに鑑賞できる。可園と隣接しているので、合わせて訪れることができる。",
       "image": "/img/ext/8ef439572497.webp",
       "phone": "+86 051 2 1332 5147"
     },
     {
       "id": "couple-retreat-garden",
-      "name": "耦园",
-      "nameEn": "Couple's Retreat Garden",
+      "name": "耦園",
+      "nameEn": "夫妻去吧（カップル・リトリート・ガーデン）",
       "category": "park",
-      "description": "世界文化遗产园林，因住宅居中、东西各有一花园而得名。布局对称独特，寓意夫妻恩爱，是苏州园林中爱情主题的代表。",
+      "description": "世界文化遺産の庭園で、住宅が中央にあり、東西にそれぞれ庭園があることから名付けられた。左右対称の独特な配置で、夫婦の愛情を象徴し、蘇州庭園の中でも恋愛をテーマにした代表格。",
       "address": "苏州市姑苏区小新桥巷6号",
       "coordinates": {
         "lat": 31.3229,
@@ -599,72 +599,72 @@
       },
       "openingHours": "07:30-17:30",
       "ticketPrice": "25元",
-      "recommendedVisitTime": "1小时",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "东西双园",
-        "对称布局",
+        "東西二つの庭園",
+        "対称的な配置",
         "城曲草堂",
         "听橹楼"
       ],
-      "tips": "适合情侣游览。游客较少，拍照不用排队。",
+      "tips": "カップルでの観光に最適。観光客が少なく、写真撮影も並ばずにできます。",
       "image": "/img/ext/f9028ee51d31.webp",
       "phone": "+86 051 2 6532 5800"
     },
     {
       "id": "master-of-nets-garden",
-      "name": "网师园夜花园",
-      "nameEn": "Master of Nets Garden Night Show",
+      "name": "網師園夜の庭園",
+      "nameEn": "網師園ナイトショー",
       "category": "cultural",
-      "description": "网师园夜间开放的特色文化体验，园内各厅堂分别上演评弹、昆曲、古筝等传统艺术表演，游客在月色下赏园听曲，别有韵味。",
-      "address": "苏州市姑苏区阔家头巷11号",
+      "description": "網師園が夜間限定で開催する特色ある文化体験。園内の各ホールでは、評弾、崑曲、古筝などの伝統芸能が披露され、月明かりの下で庭園を鑑賞しながら音楽を楽しむ、風情あるひとときを過ごせる。",
+      "address": "蘇州市姑蘇区闊家頭巷11号",
       "coordinates": {
         "lat": 31.2989,
         "lng": 120.6283
       },
       "openingHours": "19:30-22:00（4-10月）",
       "ticketPrice": "100元",
-      "recommendedVisitTime": "1.5小时",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
-        "夜游园林",
+        "夜の庭園めぐり",
         "昆曲表演",
-        "评弹",
+        "評弾（ピンタン）",
         "古筝演奏"
       ],
-      "tips": "只在4-10月开放，建议提前购票。体验苏州传统文化的绝佳方式。",
+      "tips": "4月から10月のみ開園。事前のチケット購入を推奨。蘇州の伝統文化を体験する絶好の機会。",
       "image": "/img/ext/551422735e8b.webp",
       "phone": "+86 051 2 0065 1116"
     },
     {
       "id": "tongli-retreat-and-reflection",
-      "name": "退思园",
-      "nameEn": "Retreat and Reflection Garden",
+      "name": "退思園",
+      "nameEn": "退思園",
       "category": "park",
-      "description": "同里古鎮にある世界文化遺産の庭園で、清朝光绪年に建立されました。布局はコンパクトで精美、水面に近づけて建設されており、末期清朝庭園芸術の傑出した作品です。",
-      "address": "蘇州市呉江区同里古鎮",
+      "description": "同里古鎮にある世界文化遺産の庭園で、清の光緒年間に建てられた。配置はコンパクトで精巧、水に寄り添うように建てられ、晩清庭園芸術の傑作とされる。",
+      "address": "苏州市吴江区同里古镇",
       "coordinates": {
         "lat": 31.1589,
         "lng": 120.7253
       },
       "openingHours": "07:30-17:30",
-      "ticketPrice": "同里古鎮共通券100元に含まれる",
+      "ticketPrice": "同里古鎮の共通チケット100元に含まれています",
       "recommendedVisitTime": "1時間",
       "highlights": [
-        "貼水庭園",
+        "水面に映る庭園",
         "退思草堂",
-        "眠雲亭",
+        "眠云亭",
         "水香榭"
       ],
-      "tips": "同里古鎮共通券を購入することをお勧めします。朝の方は観光客が少なく、写真撮影に最適です。",
+      "tips": "同里古鎮の共通チケットの購入をおすすめします。早朝は観光客が少なく、写真撮影に最適です。",
       "image": "/img/ext/fd80373afa36.webp",
       "phone": "+86 051 2 2139 0099"
     },
     {
       "id": "suzhou-industrial-park",
-      "name": "苏州工业园区",
-      "nameEn": "Suzhou Industrial Park",
+      "name": "蘇州工業園区",
+      "nameEn": "蘇州工業パーク",
       "category": "landmark",
-      "description": "中国とシンガポールが合作で開発した現代的な工業団地であり、多くの世界トップ500企業が進出しています。先進的な計画と美しい環境を持ち蘇州の現代的な発展を示す代表例です。",
-      "address": "蘇州市工業団地",
+      "description": "中国とシンガポールの協力で建設された近代的な園区で、多くのフォーチュン500企業が進出している。計画的な都市設計と美しい環境を備え、蘇州の現代的な発展を象徴している。",
+      "address": "蘇州市工業園区",
       "coordinates": {
         "lat": 31.3189,
         "lng": 120.6853
@@ -673,22 +673,22 @@
       "ticketPrice": "無料",
       "recommendedVisitTime": "2〜3時間",
       "highlights": [
-        "近代建築",
-        "金鳴湖",
+        "現代建築",
+        "金鶏湖",
         "都市計画展示",
-        "ハイテク企業"
+        "科技企业"
       ],
-      "tips": "都市計画展示館を訪れて、工業園区の発展历程を学ぶことができます。",
+      "tips": "都市計画展示館を見学して、園区の発展の歴史を学ぶことができます。",
       "image": "/img/ext/bf345450bd78.webp",
       "phone": "+86 051 2 2403 5031"
     },
     {
       "id": "liujia-ancient-village",
       "name": "陆巷古村",
-      "nameEn": "Luxu Ancient Village",
+      "nameEn": "瀘上古村",
       "category": "street",
-      "description": "太湖東山半島にある千年、歴史を持つ古村で、明朝の宰相王鏊の故郷です。村には明清時代の古建築が多く保存されており、鵠卵石の路地が縦横に走り、質素で静かな雰囲気をしていますか？",
-      "address": "蘇州市呉中区東山镇陸巷村",
+      "description": "太湖東山半島にある千年の歴史を持つ古村で、明代の宰相・王鏊の故郷。村内には明・清時代の古建築が数多く残り、玉石の小道が縦横に走り、古風で静かな雰囲気を醸し出している。",
+      "address": "蘇州市呉中区東山鎮陸巷村",
       "coordinates": {
         "lat": 31.0889,
         "lng": 120.3953
@@ -697,36 +697,36 @@
       "ticketPrice": "50元",
       "recommendedVisitTime": "2〜3時間",
       "highlights": [
-        "明清時代の古建築",
+        "明清古建筑",
         "王鏊故居",
-        "小石積み小路",
-        "太湖の景色"
+        "玉石の小道",
+        "太湖の風景"
       ],
-      "tips": "東山景区と一緒に観光することをお勧めします。春には碧螺春茶を摘むことができます。",
+      "tips": "東山景区と合わせて観光することをおすすめします。春には碧螺春の茶葉摘みが楽しめます。",
       "image": "/img/ext/987f4403cc3b.webp",
       "phone": "+86 051 2 8206 9154"
     },
     {
       "id": "baima-jian-longchi",
-      "name": "白马涧龙池",
+      "name": "白馬澗龍池",
       "nameEn": "白馬澗龍池",
       "category": "nature",
-      "description": "蘇州西部の自然生態景区で、龍池や鳳潭などの天然の水たまりがあり、周囲を山々に囲まれ、植被が豊かです。蘇州市民が週末に登山や水遊びを楽しむ人気のスポットです。",
-      "address": "蘇州市虎丘区楓橋街道",
+      "description": "蘇州西部の自然生態景区で、龍池や鳳潭などの天然の水潭があり、周囲は群山に囲まれ、植生が茂っている。蘇州市民が週末に山登りや水辺の散策を楽しむのに最適な場所。",
+      "address": "苏州市虎丘区枫桥街道",
       "coordinates": {
         "lat": 31.3089,
         "lng": 120.5153
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "50元",
-      "recommendedVisitTime": "3-4時間",
+      "recommendedVisitTime": "3〜4時間",
       "highlights": [
         "龍池",
-        "登山トレイル",
-        "森林 кислородный бар (森林酸素バー)",
-        "瀑布と渓流"
+        "登山步道",
+        "森林氧吧",
+        "瀑布溪流"
       ],
-      "tips": "夏は水遊びができます。運動靴的建议と十分な飲み物の持参をお勧めします。",
+      "tips": "夏は水遊びができます。運動靴を履き、十分な飲料水を持参することをおすすめします。",
       "image": "/img/ext/303daf834305.webp",
       "phone": "+86 051 2 0713 5830"
     },
@@ -735,31 +735,31 @@
       "name": "威尼斯小镇",
       "nameEn": "蘇州ベニス町",
       "category": "street",
-      "description": "蘇州工業園区内にヴェネツィア風に建設された商業街区で、小さな橋、川、ゴンドラ船、ヨーロッパ風の建築があります。写真撮影やショッピング、休闲逛街的好去處です。",
-      "address": "苏州市工业园区圆融时代广场",
+      "description": "蘇州工業園区内にある、ヴェネツィア風に造られた商業エリア。小橋や流れる水、ゴンドラ遊覧船、ヨーロッパ風の建物がある。写真撮影やショッピング、レジャーに最適なスポット。",
+      "address": "蘇州市工業園区円融時代広場",
       "coordinates": {
         "lat": 31.3289,
         "lng": 120.6953
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1-2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
         "欧式建筑",
-        "贡多拉游船",
-        "购物美食",
-        "夜景灯光"
+        "ゴンドラ遊覧船",
+        "ショッピングとグルメ",
+        "夜景のライトアップ"
       ],
-      "tips": "傍晚灯光亮起后最有氛围。可以和金鸡湖一起游览。",
+      "tips": "夕方にライトが灯ると最も雰囲気があります。金鶏湖と合わせて観光できます。",
       "image": "/img/ext/e43072948b66.webp",
       "phone": "+86 051 2 4899 5449"
     },
     {
       "id": "tianping-mountain",
       "name": "天平山",
-      "nameEn": "Tianping Mountain",
+      "nameEn": "天平山",
       "category": "nature",
-      "description": "苏州著名的赏红叶胜地，秋天枫叶如火，与北京香山、南京栖霞山、长沙岳麓山并称中国四大赏枫胜地。",
+      "description": "蘇州で有名な紅葉の名所。秋にはカエデが炎のように赤く染まり、北京の香山、南京の棲霞山、長沙の岳麓山と並び、中国四大紅葉名所と称される。",
       "address": "苏州市吴中区木渎镇",
       "coordinates": {
         "lat": 31.2589,
@@ -767,48 +767,48 @@
       },
       "openingHours": "07:30-17:00",
       "ticketPrice": "30元",
-      "recommendedVisitTime": "3-4小时",
+      "recommendedVisitTime": "3〜4時間",
       "highlights": [
-        "红叶",
+        "紅葉",
         "天平山泉水",
-        "范仲淹纪念馆",
-        "高义园"
+        "范仲淹記念館",
+        "高義園"
       ],
-      "tips": "11月中旬至12月初是最佳赏枫期。周末人非常多，建议工作日前往。",
+      "tips": "11月中旬から12月初めが紅葉のベストシーズン。週末は非常に混雑するため、平日の訪問を推奨。",
       "image": "/img/ext/791afb36b95f.webp",
       "phone": "+86 051 2 2183 6760"
     },
     {
       "id": "mudu-ancient-town",
       "name": "木渎古镇",
-      "nameEn": "Mudu Ancient Town",
+      "nameEn": "木渎古鎮",
       "category": "street",
-      "description": "有2500多年历史的江南水乡古镇，乾隆六次到访之地。镇上有严家花园、虹饮山房等名园，还有古戏台和传统手工艺。",
+      "description": "2500年以上の歴史を持つ江南の水郷古鎮で、乾隆帝が6度訪れた地。鎮内には厳家花園や虹飲山房などの名園があり、古い舞台や伝統工芸も見られる。",
       "address": "苏州市吴中区木渎镇",
       "coordinates": {
         "lat": 31.2589,
         "lng": 120.5153
       },
       "openingHours": "08:30-17:00",
-      "ticketPrice": "78元（联票）",
-      "recommendedVisitTime": "3-4小时",
+      "ticketPrice": "78元（共通チケット）",
+      "recommendedVisitTime": "3〜4時間",
       "highlights": [
-        "严家花园",
-        "虹饮山房",
+        "厳家花園",
+        "虹飲山房",
         "古戏台",
         "山塘老街"
       ],
-      "tips": "可以乘坐游船游览香溪。和天平山、灵岩山可以一日联游。",
+      "tips": "遊覧船に乗って香渓を巡ることができる。天平山や霊岩山と合わせて1日で巡ることも可能。",
       "image": "/img/ext/0f9846260ac0.webp",
       "phone": "+86 051 2 1286 8240"
     },
     {
       "id": "suzhou-amusement-park",
-      "name": "苏州乐园",
-      "nameEn": "Suzhou Amusement Park",
+      "name": "蘇州楽園",
+      "nameEn": "蘇州遊園地",
       "category": "park",
-      "description": "苏州老牌主题乐园，有各种游乐设施和表演。近年来进行了升级改造，增加了水上乐园和夜间灯光秀。",
-      "address": "苏州市虎丘区长江路",
+      "description": "蘇州の老舗テーマパークで、各種アトラクションやショーがある。近年リニューアルされ、ウォーターパークや夜間のライトショーが追加された。",
+      "address": "蘇州市虎丘区長江路",
       "coordinates": {
         "lat": 31.3089,
         "lng": 120.5353
@@ -817,21 +817,21 @@
       "ticketPrice": "160元",
       "recommendedVisitTime": "1天",
       "highlights": [
-        "过山车",
-        "水上乐园",
-        "花车巡游",
-        "夜间灯光秀"
+        "ジェットコースター",
+        "ウォーターパーク",
+        "花車パレード",
+        "夜間ライトショー"
       ],
-      "tips": "夏天水上乐园开放。周末和节假日人多，建议提前购票。",
+      "tips": "夏はウォーターパークがオープン。週末や祝日は混雑するため、事前のチケット購入を推奨。",
       "image": "/img/ext/41e5039d2be0.webp",
       "phone": "+86 051 2 2749 0608"
     },
     {
       "id": "beisi-pagoda",
       "name": "北寺塔",
-      "nameEn": "North Temple Pagoda",
+      "nameEn": "北寺塔",
       "category": "landmark",
-      "description": "苏州古城的标志性建筑，始建于南朝梁代，塔高76米，是苏州最高的古塔。登塔可俯瞰苏州古城全景，远眺园区现代天际线。",
+      "description": "蘇州古城のシンボル的建造物で、南朝梁の時代に建てられた。塔の高さは76メートルで、蘇州で最も高い古塔。登ると蘇州古城の全景を一望でき、遠くには園区の現代的なスカイラインも望める。",
       "address": "苏州市姑苏区人民路1918号",
       "coordinates": {
         "lat": 31.3289,
@@ -839,95 +839,95 @@
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "25元",
-      "recommendedVisitTime": "1小时",
+      "recommendedVisitTime": "1時間",
       "highlights": [
         "登塔远眺",
         "古城全景",
         "古塔建筑",
-        "观音殿"
+        "観音殿"
       ],
-      "tips": "塔内楼梯较陡，注意安全。与苏州博物馆距离不远。",
+      "tips": "塔内の階段は急ですので、ご注意ください。蘇州博物館からはそれほど遠くありません。",
       "image": "/img/ext/b9663457e140.webp",
       "phone": "+86 051 2 4778 9057"
     },
     {
       "id": "liqiao-ancient-town",
       "name": "黎里古镇",
-      "nameEn": "Lili Ancient Town",
+      "nameEn": "黎里古鎮",
       "category": "street",
-      "description": "吴江区保存最完好的古镇之一，有近千年历史。镇上廊棚连绵、河道纵横，保存有大量明清建筑，比周庄同里更为宁静。",
+      "description": "呉江区で最も保存状態の良い古鎮の一つで、約千年の歴史を持つ。町には屋根付きの回廊が連なり、水路が縦横に走り、明・清時代の建築が数多く保存されている。周荘や同里よりも静かである。",
       "address": "苏州市吴江区黎里镇",
       "coordinates": {
         "lat": 30.9589,
         "lng": 120.6753
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "openingHours": "終日開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
         "廊棚",
         "古桥",
-        "柳亚子故居",
-        "传统小吃"
+        "柳亜子故居",
+        "伝統的な軽食"
       ],
-      "tips": "游客较少，适合喜欢安静古镇的旅行者。从苏州市区可乘公交到达。",
+      "tips": "観光客が少なく、静かな古鎮を好む旅行者に適しています。蘇州市街地からバスでアクセスできます。",
       "image": "/img/ext/16712377f854.webp",
       "phone": "+86 051 2 6505 1845"
     },
     {
       "id": "xukou-ancient-town",
-      "name": "浒墅关古镇",
-      "nameEn": "Xushuguan Ancient Town",
+      "name": "浒墅関古鎮",
+      "nameEn": "胥口古鎮",
       "category": "street",
-      "description": "京杭大运河畔的千年古镇，历史上是重要的商贸关口。镇上保存有古运河码头、老街和传统民居，是了解运河文化的好去处。",
-      "address": "苏州市虎丘区浒墅关镇",
+      "description": "京杭大運河のほとりに位置する千年の古鎮で、歴史的には重要な貿易の関所でした。町には古い運河の埠頭、旧市街、伝統的な民居が保存されており、運河文化を理解するのに最適な場所です。",
+      "address": "蘇州市虎丘区浒墅関鎮",
       "coordinates": {
         "lat": 31.3389,
         "lng": 120.5253
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1-2小时",
+      "openingHours": "終日開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
         "古运河",
-        "老码头",
-        "传统民居",
+        "老碼頭",
+        "伝統民居",
         "运河文化"
       ],
-      "tips": "可以沿运河散步，感受运河两岸的生活气息。",
+      "tips": "運河沿いを散歩しながら、両岸の暮らしの雰囲気を感じることができます。",
       "image": "/img/ext/87b70ba60ba4.webp",
       "phone": "+86 051 2 1916 7202"
     },
     {
       "id": "yushan-mountain",
       "name": "虞山",
-      "nameEn": "Yushan Mountain",
+      "nameEn": "虞山",
       "category": "nature",
-      "description": "常熟市的标志性山脉，海拔263米，山上有言子墓、仲雍墓等古迹。登顶可俯瞰常熟全城和尚湖，是常熟最著名的自然景观。",
+      "description": "常熟市のシンボル的な山脈で、標高263メートル。山には言子墓、仲雍墓などの史跡があります。頂上からは常熟市街と尚湖を一望でき、常熟で最も有名な自然景観です。",
       "address": "苏州市常熟市虞山镇",
       "coordinates": {
         "lat": 31.6489,
         "lng": 120.7353
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "3-4小时",
+      "openingHours": "終日開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "3〜4時間",
       "highlights": [
         "言子墓",
-        "剑门",
-        "维摩山庄",
+        "剣門",
+        "維摩山荘",
         "尚湖全景"
       ],
-      "tips": "可以和尚湖景区一起游览。秋天红叶很美。",
+      "tips": "尚湖景区と一緒に観光できます。秋の紅葉がとても美しいです。",
       "image": "/img/ext/e77c57e7fdf6.webp",
       "phone": "+86 051 2 5211 8143"
     },
     {
       "id": "shanghu-lake",
       "name": "尚湖",
-      "nameEn": "Shanghu Lake",
+      "nameEn": "尚湖",
       "category": "nature",
-      "description": "常熟市的天然湖泊，湖面广阔、水质清澈。湖畔有尚湖公园，春天牡丹盛开时是华东地区最大的牡丹观赏地。",
+      "description": "常熟市の天然湖で、湖面は広く、水質は清らかです。湖畔には尚湖公園があり、春に牡丹が満開になると、華東地域最大の牡丹の観賞地となります。",
       "address": "苏州市常熟市尚湖镇",
       "coordinates": {
         "lat": 31.6289,
@@ -935,14 +935,14 @@
       },
       "openingHours": "08:00-16:30",
       "ticketPrice": "45元",
-      "recommendedVisitTime": "3-4小时",
+      "recommendedVisitTime": "3〜4時間",
       "highlights": [
         "牡丹花会",
         "湖光山色",
-        "湿地公园",
-        "尚湖飞瀑"
+        "湿地公園",
+        "尚湖飛瀑"
       ],
-      "tips": "4-5月牡丹花会期间最值得游览。可以和虞山一起安排。",
+      "tips": "4月から5月の牡丹の花の時期が最も訪れる価値があります。虞山と合わせて計画するのがおすすめです。",
       "image": "/img/ext/144351955061.webp",
       "phone": "+86 051 2 4341 2104"
     },
@@ -951,31 +951,31 @@
       "name": "沙溪古镇",
       "nameEn": "沙溪古鎮",
       "category": "street",
-      "description": "太倉市に保存完好的な古鎮で、1300年以上の歴史があります。町の古い通りは保存状態が良好で、水辺の建築、古橋、寺院が典型的な江南の水郷風景を構成しており、観光客が非常に少なく静かです。",
-      "address": "蘇州市太倉市沙溪鎮",
+      "description": "太倉市に保存状態の良い古い町並みがあり、1300年以上の歴史があります。町の老街はよく保存され、水辺の建物、古い橋、寺院が典型的な江南の水郷の景観を形成しており、観光客が少なくとても静かです。",
+      "address": "苏州市太仓市沙溪镇",
       "coordinates": {
         "lat": 31.5689,
         "lng": 121.0953
       },
       "openingHours": "終日開放",
       "ticketPrice": "無料",
-      "recommendedVisitTime": "2-3時間",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
-        "水辺の古い通り",
-        "古橋群",
-        "伝統的な手工芸",
+        "临水老街",
+        "古桥群",
+        "伝統工芸",
         "静かな雰囲気"
       ],
-      "tips": "観光客が非常に少なく、古鎮をゆっくりとめぐることができます。太倉市中心部からバスでアクセス可能です。",
+      "tips": "観光客が非常に少なく、ゆっくりと古い町を散策できます。太倉市内からバスでアクセスできます。",
       "image": "/img/ext/9f32b9507fe6.webp",
       "phone": "+86 051 2 5192 9177"
     },
     {
       "id": "suzhou-botanical-garden",
-      "name": "苏州植物园",
-      "nameEn": "Suzhou Botanical Garden",
+      "name": "蘇州植物園",
+      "nameEn": "蘇州植物園",
       "category": "nature",
-      "description": "位于上方山脚下的大型植物园，收集有各类植物2000余种。园内有月季园、杜鹃园、竹园等专类园区，是市民休闲和科普教育的好去处。",
+      "description": "上方山の麓に位置する大型植物園で、2000余種の植物を収集しています。園内にはバラ園、ツツジ園、竹園などの専門エリアがあり、市民のレジャーや科学教育の場として最適です。",
       "address": "苏州市虎丘区吴越路",
       "coordinates": {
         "lat": 31.2589,
@@ -983,23 +983,23 @@
       },
       "openingHours": "07:30-17:00",
       "ticketPrice": "40元",
-      "recommendedVisitTime": "2-3小时",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
-        "月季园",
-        "杜鹃园",
-        "竹园",
-        "温室展览"
+        "月季園",
+        "ツツジ園",
+        "竹園",
+        "温室展覧"
       ],
-      "tips": "春天花季最美。可以和上方山国家森林公园一起游览。",
+      "tips": "春の花の季節が最も美しい。上方山国家森林公園と一緒に見学できる。",
       "image": "/img/ext/9aff5315a5f7.webp",
       "phone": "+86 051 2 7125 8915"
     },
     {
       "id": "shangfang-mountain",
-      "name": "上方山国家森林公园",
-      "nameEn": "Shangfangshan National Forest Park",
+      "name": "上方山国家森林公園",
+      "nameEn": "上方山国家森林公園",
       "category": "nature",
-      "description": "苏州城西的天然氧吧，山上有楞伽寺塔等古迹。春天樱花和梨花盛开，秋天红叶满山，是苏州人周末登山的好去处。",
+      "description": "蘇州城西の天然のオアシスで、山には楞伽寺塔などの史跡があります。春には桜と梨の花が咲き誇り、秋には紅葉が山を彩り、蘇州の人々の週末のハイキングスポットです。",
       "address": "苏州市虎丘区横塘街道",
       "coordinates": {
         "lat": 31.2489,
@@ -1007,96 +1007,96 @@
       },
       "openingHours": "07:30-17:00",
       "ticketPrice": "40元",
-      "recommendedVisitTime": "3-4小时",
+      "recommendedVisitTime": "3〜4時間",
       "highlights": [
         "楞伽寺塔",
         "樱花",
-        "红叶",
+        "紅葉",
         "登山步道"
       ],
-      "tips": "3-4月樱花季最美。建议穿登山鞋，带足饮用水。",
+      "tips": "3〜4月の桜の季節が最も美しい。登山靴を履き、十分な飲用水を持参することをおすすめする。",
       "image": "/img/ext/695b810fea8c.webp",
       "phone": "+86 051 2 1002 1451"
     },
     {
       "id": "suzhou-wine-museum",
-      "name": "苏州酒文化博物馆",
-      "nameEn": "Suzhou Wine Culture Museum",
+      "name": "蘇州酒文化博物館",
+      "nameEn": "蘇州酒文化博物館",
       "category": "museum",
-      "description": "展示苏州悠久酿酒历史的主题博物馆，可以了解桂花酒、黄酒等苏州传统酒类的酿造工艺，还能免费品尝各种美酒。",
+      "description": "蘇州の長い醸造の歴史を紹介するテーマ博物館で、桂花酒や黄酒などの蘇州伝統酒類の醸造工程を学べるほか、各種のお酒を無料で試飲できます。",
       "address": "苏州市姑苏区山塘街",
       "coordinates": {
         "lat": 31.3189,
         "lng": 120.6083
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
         "酿酒工艺展示",
-        "免费品酒",
+        "無料試飲",
         "桂花酒",
         "历史文物"
       ],
-      "tips": "可以买到正宗的苏州桂花酒作为伴手礼。",
+      "tips": "本場の蘇州桂花酒をお土産として購入できる。",
       "image": "/img/ext/0cdf6fe09b9b.webp",
       "phone": "+86 051 2 0108 3431"
     },
     {
       "id": "shishan-park",
-      "name": "狮山公园",
-      "nameEn": "Shishan Park",
+      "name": "獅山公園",
+      "nameEn": "獅子山公園",
       "category": "park",
-      "description": "苏州高新区的大型市民公园，以狮山湖为中心。园内有樱花大道、儿童乐园和健身步道，是周边居民休闲的主要场所。",
+      "description": "蘇州高新区の大型市民公園で、獅山湖を中心にしています。園内には桜並木の道、子供向け遊園地、フィットネス用遊歩道があり、周辺住民の主要なレジャースポットです。",
       "address": "苏州市虎丘区狮山路",
       "coordinates": {
         "lat": 31.2989,
         "lng": 120.5453
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1-2小时",
+      "openingHours": "終日開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
         "狮山湖",
         "樱花大道",
-        "儿童乐园",
+        "キッズパーク",
         "健身步道"
       ],
-      "tips": "3-4月樱花季最美。晚上灯光效果很好。",
+      "tips": "3〜4月の桜の季節が最も美しい。夜のライトアップ効果がとても良い。",
       "image": "/img/ext/8fa14d695eac.webp",
       "phone": "+86 051 2 2480 8428"
     },
     {
       "id": "xitang-ancient-town",
       "name": "西塘古镇",
-      "nameEn": "Xitang Ancient Town",
+      "nameEn": "西塘古鎮",
       "category": "street",
-      "description": "位于吴江区的千年古镇，以烟雨长廊和古弄堂闻名。是电影《碟中谍3》取景地，夜景尤为迷人，酒吧街热闹非凡。",
+      "description": "呉江区に位置する千年の古鎮で、煙雨の長廊と古い路地で有名。映画『ミッション：インポッシブル3』のロケ地でもあり、夜景が特に魅力的で、バー街はとても賑やか。",
       "address": "苏州市吴江区西塘镇",
       "coordinates": {
         "lat": 30.9489,
         "lng": 120.8853
       },
-      "openingHours": "全天开放",
+      "openingHours": "終日開放",
       "ticketPrice": "100元",
       "recommendedVisitTime": "1天",
       "highlights": [
-        "烟雨长廊",
+        "煙雨長廊",
         "古弄堂",
         "夜景",
         "酒吧街"
       ],
-      "tips": "建议住一晚体验夜景和清晨的宁静。避开节假日人流高峰。",
+      "tips": "一泊して夜景と早朝の静けさを体験することをおすすめ。祝日や連休の人のピークを避けること。",
       "image": "/img/ext/86833e2da2b5.webp",
       "phone": "+86 051 2 3354 7753"
     },
     {
       "id": "suzhou-forest-park",
-      "name": "大阳山国家森林公园",
-      "nameEn": "Dayangshan National Forest Park",
+      "name": "大陽山国家森林公園",
+      "nameEn": "大洋山国家森林公園",
       "category": "nature",
-      "description": "苏州最大的国家级森林公园，植被覆盖率高，空气清新。有植物园、文殊寺等景点，是城市近郊的天然氧吧。",
-      "address": "苏州市虎丘区阳山环路",
+      "description": "蘇州最大の国家級森林公園で、植生の被覆率が高く、空気が清々しい。植物園や文殊寺などの見どころがあり、市街地近郊の天然のオアシス。",
+      "address": "蘇州市虎丘区陽山環路",
       "coordinates": {
         "lat": 31.3689,
         "lng": 120.4953
@@ -1106,68 +1106,68 @@
       "recommendedVisitTime": "半天-1天",
       "highlights": [
         "文殊寺",
-        "植物园",
+        "植物園",
         "登山步道",
         "森林氧吧"
       ],
-      "tips": "适合全家出游。建议穿运动鞋，带足水和食物。",
+      "tips": "家族連れに最適。運動靴を履き、十分な水と食料を持参することをおすすめする。",
       "image": "/img/ext/52306fca3964.webp",
       "phone": "+86 051 2 1792 7955"
     },
     {
       "id": "suzhou-bingjiang-park",
-      "name": "苏州滨江公园",
-      "nameEn": "Suzhou Riverside Park",
+      "name": "蘇州浜江公園",
+      "nameEn": "蘇州川沿い公園",
       "category": "park",
-      "description": "沿太湖岸线建设的湿地公园，有观鸟台、亲水平台和骑行绿道。是观赏太湖日落和湿地生态的好地方。",
+      "description": "太湖の岸線に沿って整備された湿地公園で、バードウォッチング台、親水テラス、サイクリングロードがある。太湖の夕日と湿地生態を観賞するのに最適な場所。",
       "address": "苏州市吴中区太湖新城",
       "coordinates": {
         "lat": 31.1689,
         "lng": 120.3953
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "openingHours": "終日開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
         "太湖日落",
         "湿地生态",
-        "观鸟台",
-        "骑行绿道"
+        "バードウォッチング台",
+        "サイクリングロード"
       ],
-      "tips": "傍晚日落最美。骑行爱好者的好去处。",
+      "tips": "夕方の日没が最も美しい。サイクリング愛好家にはおすすめのスポット。",
       "image": "/img/ext/08512a8d2401.webp",
       "phone": "+86 051 2 3350 6218"
     },
     {
       "id": "suzhou-chongyuan-temple",
       "name": "重元寺",
-      "nameEn": "Chongyuan Temple",
+      "nameEn": "崇元寺",
       "category": "temple",
-      "description": "阳澄湖畔的大型佛教寺院，有水上观音阁，供奉33米高观音像。寺院建筑宏伟，环境清幽，是苏州最大的佛教道场之一。",
-      "address": "苏州市工业园区阳澄岛",
+      "description": "陽澄湖畔にある大規模な仏教寺院で、水上観音閣があり、33メートルの高さの観音像が祀られている。寺院の建築は壮大で、環境は静かで、蘇州最大の仏教道場の一つ。",
+      "address": "蘇州市工業園区陽澄島",
       "coordinates": {
         "lat": 31.4089,
         "lng": 120.7753
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "20元",
-      "recommendedVisitTime": "1.5-2小时",
+      "recommendedVisitTime": "1.5〜2時間",
       "highlights": [
-        "水上观音阁",
-        "33米观音像",
-        "阳澄湖风光",
+        "水上観音閣",
+        "33メートル観音像",
+        "陽澄湖の風景",
         "佛教文化"
       ],
-      "tips": "可以和阳澄湖大闸蟹美食结合。秋冬季节阳澄湖风光最美。",
+      "tips": "陽澄湖の大閘蟹グルメと組み合わせることができる。秋冬の季節は陽澄湖の風景が最も美しい。",
       "image": "/img/ext/e1e1c86881fa.webp",
       "phone": "+86 051 2 5118 6289"
     },
     {
       "id": "suzhou-bay-wetland",
-      "name": "太湖湿地公园",
-      "nameEn": "Taihu Lake Wetland Park",
+      "name": "太湖湿地公園",
+      "nameEn": "太湖湿地公園",
       "category": "nature",
-      "description": "太湖边的大型湿地公园，有水上森林、芦苇荡和观鸟区。乘坐游船穿梭于湿地水道之间，可以近距离观察各种水鸟。",
+      "description": "太湖のほとりにある大規模な湿地公園で、水上森林、ヨシ原、バードウォッチングエリアがある。遊覧船で湿地の水路を巡りながら、様々な水鳥を間近で観察できる。",
       "address": "苏州市虎丘区镇湖街道",
       "coordinates": {
         "lat": 31.2389,
@@ -1175,23 +1175,23 @@
       },
       "openingHours": "08:30-16:30",
       "ticketPrice": "60元",
-      "recommendedVisitTime": "2-3小时",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
         "水上森林",
         "芦苇荡",
-        "观鸟",
+        "バードウォッチング",
         "游船"
       ],
-      "tips": "秋冬季节候鸟最多。建议乘坐游船游览。",
+      "tips": "秋冬の季節は渡り鳥が最も多い。遊覧船での観覧をおすすめします。",
       "image": "/img/ext/f33c121058b2.webp",
       "phone": "+86 051 2 4566 9765"
     },
     {
       "id": "kezhang-garden",
-      "name": "可园",
-      "nameEn": "Ke Garden",
+      "name": "可園",
+      "nameEn": "カーガーデン",
       "category": "park",
-      "description": "苏州唯一的书院式园林，始建于清代，园内有学古堂、浩歌亭等建筑。与沧浪亭隔街相望，小巧精致，是文人读书讲学之所。",
+      "description": "蘇州唯一の書院式庭園で、清代に創建され、園内には学古堂、浩歌亭などの建物がある。滄浪亭と道を挟んで向かい合い、こぢんまりとして精巧で、文人が読書や講学を行った場所。",
       "address": "苏州市姑苏区沧浪亭街",
       "coordinates": {
         "lat": 31.2889,
@@ -1199,14 +1199,14 @@
       },
       "openingHours": "07:30-17:30",
       "ticketPrice": "25元",
-      "recommendedVisitTime": "1小时",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "书院式园林",
+        "書院式庭園",
         "学古堂",
         "古树名木",
-        "沧浪亭对景"
+        "滄浪亭の対景"
       ],
-      "tips": "游客很少，可以安静欣赏。建议和沧浪亭一起游览。",
+      "tips": "観光客が少なく、静かに鑑賞できる。滄浪亭と一緒に巡ることをおすすめします。",
       "image": "/img/ext/80b03dbfe9f9.webp",
       "phone": "+86 051 2 5016 4850"
     }
@@ -1215,89 +1215,89 @@
     {
       "id": "suzhou-1",
       "name": "得月楼",
-      "nameEn": "Deyue Lou",
-      "type": "blackpearl",
+      "nameEn": "得月楼",
+      "type": "黒真珠",
       "diamond": 2,
-      "cuisine": "Suzhou",
+      "cuisine": "蘇州料理",
       "avgPrice": 200,
       "rating": 4.6,
-      "address": "197 Guanqian Street, Gusu District",
+      "address": "姑蘇区関前街197号",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
       },
       "phone": "+86 512 6727 8588",
       "hours": "11:00-13:30, 17:00-20:30",
-      "description": "Legendary restaurant established 1779 serving authentic Suzhou cuisine with classic dishes.",
+      "description": "1779年創業の伝説的なレストランで、本場蘇州料理とクラシックな料理を提供します。",
       "dishHighlights": [
-        "Song Shu (Squirrel-shaped mandarin fish)",
-        "Wusong duck",
-        "Suzhou-style pork"
+        "松鼠魚（リス形のマンダリンフィッシュ）",
+        "烏蘇鴨",
+        "蘇州風豚肉の煮込み"
       ],
       "tags": [
-        "historic",
-        "suzhou-cuisine",
-        "fine-dining"
+        "歴史的",
+        "蘇州料理",
+        "高級レストラン"
       ],
       "star": 0,
       "imageUrl": "/img/ext/ff18a6604cd0.webp"
     },
     {
       "id": "suzhou-2",
-      "name": "松鹤楼",
-      "nameEn": "Songhelou",
-      "type": "blackpearl",
+      "name": "松鶴楼",
+      "nameEn": "松鶴楼",
+      "type": "黒真珠",
       "diamond": 2,
-      "cuisine": "Suzhou",
+      "cuisine": "蘇州料理",
       "avgPrice": 180,
       "rating": 4.5,
-      "address": "88 Shantang Street, Gusu District",
+      "address": "蘇州市姑蘇区山塘街88号",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6072
       },
       "phone": "+86 512 6728 0093",
       "hours": "11:00-13:30, 17:00-20:30",
-      "description": "Historic restaurant established 1871, famous for traditional Suzhou cuisine and cooking demonstrations.",
+      "description": "1871年創業の歴史あるレストランで、伝統的な蘇州料理と料理の実演で有名です。",
       "dishHighlights": [
-        "Song Shu (Squirrel-shaped mandarin fish)",
-        "Steamed shad",
-        "Crab dishes"
+        "松鼠魚（リス形のマンダリンフィッシュ）",
+        "蒸しシラウオ",
+        "蟹料理"
       ],
       "tags": [
-        "historic",
-        "suzhou-cuisine",
-        "scenic"
+        "歴史的",
+        "蘇州料理",
+        "景勝地"
       ],
       "star": 0,
       "imageUrl": "/img/ext/599a5e53e1ff.webp"
     },
     {
       "id": "suzhou-3",
-      "name": "协和菜馆",
-      "nameEn": "Xiehe Restaurant",
-      "type": "local",
-      "cuisine": "Suzhou Home-style",
+      "name": "協和菜館",
+      "nameEn": "協和飯店",
+      "type": "ローカル",
+      "cuisine": "蘇州家庭料理",
       "avgPrice": 80,
       "rating": 4.7,
-      "address": "160 Xiao Xiang Lane, Pingjiang Road",
+      "address": "平江路小湘巷160号",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
       },
       "phone": "+86 512 6728 0883",
       "hours": "10:30-14:00, 16:30-20:00",
-      "description": "Local favorite for authentic Suzhou home cooking in traditional courtyard setting.",
+      "description": "伝統的な中庭の雰囲気の中で本格的な蘇州家庭料理を提供する地元の人気店です。",
       "dishHighlights": [
-        "Sweet and sour mandarin fish",
-        "Braised pork belly",
-        "Wonton soup"
+        "甘酸っぱいスズキの唐揚",
+        "豚バラ肉の煮込み",
+        "ワンタン汁"
       ],
       "tags": [
-        "local",
-        "home-style",
-        "courtyard",
-        "value"
+        "ローカル",
+        "家庭料理",
+        "庭院",
+        "コストパフォーマンス"
       ],
       "star": 0,
       "diamond": 0,
@@ -1306,29 +1306,29 @@
     {
       "id": "suzhou-4",
       "name": "老苏州茶楼",
-      "nameEn": "Old Suzhou Teahouse",
-      "type": "local",
-      "cuisine": "Suzhou Snacks",
+      "nameEn": "旧蘇州茶館",
+      "type": "ローカル",
+      "cuisine": "蘇州軽食",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "Pingjiang Road",
+      "address": "平江路",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
       },
       "hours": "08:00-22:00",
-      "description": "Traditional teahouse serving authentic Suzhou breakfast snacks and local tea in classic setting.",
+      "description": "クラシックな雰囲気の中で本格的な蘇州の朝食軽食と地元のお茶を提供する伝統的な茶館です。",
       "dishHighlights": [
-        "Suzhou-style dim sum",
-        "Wonton",
-        "Ginger tea",
-        "Green tea"
+        "蘇州風点心",
+        "ワンタン",
+        "生姜茶",
+        "緑茶"
       ],
       "tags": [
-        "local",
-        "teahouse",
-        "breakfast",
-        "traditional"
+        "ローカル",
+        "茶屋",
+        "朝ごはん",
+        "伝統的"
       ],
       "star": 0,
       "diamond": 0,
@@ -1337,29 +1337,29 @@
     },
     {
       "id": "suzhou-5",
-      "name": "同得兴",
-      "nameEn": "Tong De Xing",
-      "type": "local",
-      "cuisine": "Suzhou Noodles",
+      "name": "同得興",
+      "nameEn": "同徳興",
+      "type": "ローカル",
+      "cuisine": "蘇州麺",
       "avgPrice": 40,
       "rating": 4.8,
-      "address": "72 Shantang Street",
+      "address": "山塘街72号",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6072
       },
       "hours": "06:00-14:00",
-      "description": "Legendary noodle shop serving classic Suzhou-style noodles with fresh ingredients.",
+      "description": "新鮮な食材を使ったクラシックな蘇州風麺を提供する伝説的な麺店です。",
       "dishHighlights": [
-        "Clear soup noodles",
-        "Fried shrimp noodles",
-        "Pork liver noodles"
+        "清湯麺",
+        "エビの揚げ麺",
+        "豚レバーの麺"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "breakfast",
-        "famous"
+        "ローカル",
+        "麺類",
+        "朝ごはん",
+        "有名"
       ],
       "star": 0,
       "diamond": 0,
@@ -1368,29 +1368,29 @@
     },
     {
       "id": "suzhou-6",
-      "name": "绿杨馄饨",
-      "nameEn": "Lv Yang Wonton",
-      "type": "local",
-      "cuisine": "Suzhou Snacks",
+      "name": "緑楊餛飩",
+      "nameEn": "呂楊ワンタン",
+      "type": "ローカル",
+      "cuisine": "蘇州軽食",
       "avgPrice": 30,
       "rating": 4.6,
-      "address": "Multiple locations",
+      "address": "市内複数箇所",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
       },
       "hours": "06:00-19:00",
-      "description": "Famous for delicate Suzhou-style wonton dumplings in light broth, a local institution.",
+      "description": "軽やかなスープに入った繊細な蘇州風ワンタンで知られる地元の名店です。",
       "dishHighlights": [
-        "Wonton soup",
-        "Fried wontons",
-        "Pork buns"
+        "ワンタン汁",
+        "揚げワンタン",
+        "豚まん"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "breakfast",
-        "budget"
+        "ローカル",
+        "軽食",
+        "朝ごはん",
+        "格安"
       ],
       "star": 0,
       "diamond": 0,
@@ -1400,28 +1400,28 @@
     {
       "id": "suzhou-7",
       "name": "平江路小吃",
-      "nameEn": "Pingjiang Road Snacks",
-      "type": "local",
-      "cuisine": "Street Food",
+      "nameEn": "平江路軽食",
+      "type": "ローカル",
+      "cuisine": "屋台料理",
       "avgPrice": 40,
       "rating": 4.4,
-      "address": "Pingjiang Road",
+      "address": "平江路",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
       },
       "hours": "10:00-22:00",
-      "description": "Various street food vendors along historic Pingjiang Road serving local snacks and treats.",
+      "description": "歴史的な平江路沿いに並ぶさまざまな屋台で、地元の軽食やおやつを提供します。",
       "dishHighlights": [
-        "Sugar-coated hawthorn",
-        "Traditional pastries",
-        "Fried rice cakes"
+        "飴がけのサンザシ",
+        "伝統銘菓",
+        "揚げ餅"
       ],
       "tags": [
-        "local",
-        "street-food",
-        "snacks",
-        "budget"
+        "ローカル",
+        "屋台料理",
+        "軽食",
+        "格安"
       ],
       "star": 0,
       "diamond": 0,
@@ -1430,29 +1430,29 @@
     },
     {
       "id": "suzhou-8",
-      "name": "悬慈巷蟹粉小笼",
-      "nameEn": "Xuanci Lane Crab Soup Dumplings",
-      "type": "local",
-      "cuisine": "Jiangnan Dim Sum",
+      "name": "懸慈巷蟹粉小籠",
+      "nameEn": "Xuanci Lane蟹スープ小籠包",
+      "type": "ローカル",
+      "cuisine": "江南点心",
       "avgPrice": 60,
       "rating": 4.7,
-      "address": "Near Shantang Street",
+      "address": "山塘街近く",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6072
       },
       "hours": "07:00-14:00",
-      "description": "Popular local spot famous for crab roe xiaolongbao and authentic Suzhou dim sum.",
+      "description": "地元の人気店で、カニミソの小籠包と本格的な蘇州点心で有名です。",
       "dishHighlights": [
-        "Crab roe xiaolongbao",
-        "Shrimp dumplings",
-        "Suzhou-style cakes"
+        "蟹味噌小籠包",
+        "海老蒸し餃子",
+        "蘇州風ケーキ"
       ],
       "tags": [
-        "local",
-        "dim-sum",
-        "famous",
-        "breakfast"
+        "ローカル",
+        "点心",
+        "有名",
+        "朝ごはん"
       ],
       "star": 0,
       "diamond": 0,
@@ -1462,26 +1462,26 @@
     {
       "id": "suzhou-9",
       "name": "老庆台",
-      "nameEn": "Laoqingtai",
-      "type": "local",
-      "cuisine": "Suzhou",
+      "nameEn": "老慶泰",
+      "type": "ローカル",
+      "cuisine": "蘇州料理",
       "avgPrice": 150,
       "rating": 4.5,
-      "address": "Guanqian Street",
+      "address": "観前街",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
       },
       "phone": "+86 512 6727 1234",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Famous for authentic Suzhou cuisine with valley views.",
+      "description": "本格的な蘇州料理と谷の景色で有名です。",
       "dishHighlights": [
-        "Braised pork belly",
-        "River fish"
+        "豚バラ肉の煮込み",
+        "川魚"
       ],
       "tags": [
-        "local",
-        "scenic"
+        "ローカル",
+        "景勝地"
       ],
       "star": 0,
       "diamond": 0,
@@ -1490,26 +1490,26 @@
     {
       "id": "suzhou-10",
       "name": "水乡人家",
-      "nameEn": "Water Town Restaurant",
-      "type": "local",
-      "cuisine": "Jiangnan",
+      "nameEn": "水郷レストラン",
+      "type": "ローカル",
+      "cuisine": "江南料理",
       "avgPrice": 100,
       "rating": 4.6,
-      "address": "Pingjiang Road",
+      "address": "平江路",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
       },
       "phone": "+86 512 6728 2345",
       "hours": "10:30-14:00, 17:00-21:00",
-      "description": "Local favorite with canal views and traditional dishes.",
+      "description": "運河の景色と伝統的な料理で地元の人々に愛されるレストランです。",
       "dishHighlights": [
-        "Steamed fish",
-        "Egg dishes"
+        "蒸魚",
+        "卵料理"
       ],
       "tags": [
-        "local",
-        "scenic"
+        "ローカル",
+        "景勝地"
       ],
       "star": 0,
       "diamond": 0,
@@ -1518,27 +1518,27 @@
     {
       "id": "suzhou-11",
       "name": "苏州酒家",
-      "nameEn": "Suzhou Restaurant",
-      "type": "blackpearl",
+      "nameEn": "蘇州レストラン",
+      "type": "黒真珠",
       "diamond": 1,
-      "cuisine": "Suzhou",
+      "cuisine": "蘇州料理",
       "avgPrice": 200,
       "rating": 4.4,
-      "address": "Shantang Street",
+      "address": "山塘街",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6072
       },
       "phone": "+86 512 6727 3456",
       "hours": "11:00-13:30, 17:00-20:30",
-      "description": "Historic restaurant with traditional atmosphere.",
+      "description": "伝統的な雰囲気の歴史あるレストランです。",
       "dishHighlights": [
-        "Squirrel fish",
-        "Bamboo shoot"
+        "リスの魚",
+        "竹の子"
       ],
       "tags": [
-        "historic",
-        "suzhou-cuisine"
+        "歴史的",
+        "蘇州料理"
       ],
       "star": 0,
       "imageUrl": "/img/ext/273dda184180.webp"
@@ -1546,26 +1546,26 @@
     {
       "id": "suzhou-12",
       "name": "江南名厨",
-      "nameEn": "Jiangnan Chef",
-      "type": "local",
-      "cuisine": "Jiangnan",
+      "nameEn": "江南シェフ",
+      "type": "ローカル",
+      "cuisine": "江南料理",
       "avgPrice": 120,
       "rating": 4.7,
-      "address": "Guanqian Street",
+      "address": "観前街",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
       },
       "phone": "+86 512 6728 4567",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Modern take on traditional Jiangnan cuisine.",
+      "description": "伝統的な江南料理に現代的なアレンジを加えた料理です。",
       "dishHighlights": [
-        "Crispy duck",
-        "Lotus leaf rice"
+        "クリスピーチキン",
+        "蓮葉ご飯"
       ],
       "tags": [
-        "modern",
-        "jiangnan"
+        "モダン",
+        "江南"
       ],
       "star": 0,
       "diamond": 0,
@@ -1574,26 +1574,26 @@
     {
       "id": "suzhou-13",
       "name": "太湖三白",
-      "nameEn": "Taihu Delights",
-      "type": "local",
-      "cuisine": "Taihu",
+      "nameEn": "太湖の味",
+      "type": "ローカル",
+      "cuisine": "太湖料理",
       "avgPrice": 180,
       "rating": 4.5,
-      "address": "Lake Tai area",
+      "address": "太湖エリア",
       "coordinates": {
         "lat": 31.2422,
         "lng": 120.4772
       },
       "phone": "+86 512 6728 5678",
       "hours": "10:00-21:00",
-      "description": "Fresh seafood from Tai Lake including white shrimp.",
+      "description": "太湖の新鮮なシーフード、特に白エビを提供しています。",
       "dishHighlights": [
-        "Taihu white shrimp",
-        "Crab"
+        "太湖白エビ",
+        "カニ"
       ],
       "tags": [
-        "seafood",
-        "lake"
+        "シーフード",
+        "湖"
       ],
       "star": 0,
       "diamond": 0,
@@ -1601,27 +1601,27 @@
     },
     {
       "id": "suzhou-14",
-      "name": "苏帮菜馆",
-      "nameEn": "Su Cuisine",
-      "type": "local",
-      "cuisine": "Suzhou",
+      "name": "蘇幫菜館",
+      "nameEn": "蘇州料理",
+      "type": "ローカル",
+      "cuisine": "蘇州料理",
       "avgPrice": 90,
       "rating": 4.3,
-      "address": "Xuanmiao Temple area",
+      "address": "玄妙観エリア",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6472
       },
       "phone": "+86 512 6727 6789",
       "hours": "11:00-14:00, 17:00-20:30",
-      "description": "Traditional Su cuisine in classic courtyard.",
+      "description": "伝統的な蘇州料理が味わえるクラシックな中庭です。",
       "dishHighlights": [
-        "Steamed dumplings",
-        "Soy sauce pork"
+        "蒸し餃子",
+        "醤油煮豚"
       ],
       "tags": [
-        "local",
-        "traditional"
+        "ローカル",
+        "伝統的"
       ],
       "star": 0,
       "diamond": 0,
@@ -1629,27 +1629,27 @@
     },
     {
       "id": "suzhou-15",
-      "name": "观前素菜馆",
-      "nameEn": "Guanqian Vegetarian",
-      "type": "local",
-      "cuisine": "Vegetarian",
+      "name": "観前素菜館",
+      "nameEn": "観前ベジタリアン",
+      "type": "ローカル",
+      "cuisine": "ベジタリアン",
       "avgPrice": 60,
       "rating": 4.4,
-      "address": "Guanqian Street",
+      "address": "観前街",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
       },
       "phone": "+86 512 6728 7890",
       "hours": "10:30-20:30",
-      "description": "Buddhist vegetarian cuisine near temple.",
+      "description": "寺院近くの仏教ベジタリアン料理です。",
       "dishHighlights": [
-        "Vegetable roasts",
-        "Mock meat"
+        "野菜ロースト",
+        "もどき肉"
       ],
       "tags": [
-        "vegetarian",
-        "temple"
+        "ベジタリアン",
+        "寺院"
       ],
       "star": 0,
       "diamond": 0,
@@ -1657,27 +1657,27 @@
     },
     {
       "id": "suzhou-16",
-      "name": "糖粥铺子",
-      "nameEn": "Sweet Porridge Shop",
-      "type": "local",
-      "cuisine": "Desserts",
+      "name": "糖粥舗子",
+      "nameEn": "スウィート・ポレッジ・ショップ",
+      "type": "ローカル",
+      "cuisine": "デザート",
       "avgPrice": 30,
       "rating": 4.8,
-      "address": "Pingjiang Road",
+      "address": "平江路",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
       },
       "hours": "08:00-18:00",
-      "description": "Famous for Suzhou-style sweet porridge and desserts.",
+      "description": "蘇州風の甘いおかゆとデザートで有名",
       "dishHighlights": [
-        "Sweet red bean porridge",
-        "Osmanthus cake"
+        "小豆粥",
+        "桂花糕"
       ],
       "tags": [
-        "dessert",
-        "local",
-        "famous"
+        "デザート",
+        "地元",
+        "有名"
       ],
       "star": 0,
       "diamond": 0,
@@ -1687,26 +1687,26 @@
     {
       "id": "suzhou-17",
       "name": "老北京涮肉",
-      "nameEn": "Beijing Hotpot",
-      "type": "local",
-      "cuisine": "Hotpot",
+      "nameEn": "北京火鍋",
+      "type": "ローカル",
+      "cuisine": "火鍋",
       "avgPrice": 100,
       "rating": 4.2,
-      "address": "Shantang Street",
+      "address": "山塘街",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6072
       },
       "phone": "+86 512 6727 8901",
       "hours": "11:00-22:00",
-      "description": "Northern style lamb hotpot popular with locals.",
+      "description": "地元で人気の北方風羊肉火鍋",
       "dishHighlights": [
-        "Lamb slices",
-        "Vegetable plate"
+        "羊肉スライス",
+        "野菜盛り合わせ"
       ],
       "tags": [
-        "hotpot",
-        "local"
+        "火鍋",
+        "地元"
       ],
       "star": 0,
       "diamond": 0,
@@ -1715,26 +1715,26 @@
     {
       "id": "suzhou-18",
       "name": "状元楼",
-      "nameEn": "Zhuangyuan Lou",
-      "type": "local",
-      "cuisine": "Suzhou",
+      "nameEn": "状元楼",
+      "type": "ローカル",
+      "cuisine": "蘇州料理",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "Guanqian Street",
+      "address": "観前街",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
       },
       "phone": "+86 512 6728 9012",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Historical restaurant with scholar theme.",
+      "description": "学者テーマの歴史的なレストラン",
       "dishHighlights": [
-        "Braised pork",
-        "Steamed fish"
+        "紅焼肉",
+        "蒸魚"
       ],
       "tags": [
-        "historic",
-        "suzhou"
+        "歴史的",
+        "蘇州"
       ],
       "star": 0,
       "diamond": 0,
@@ -1743,28 +1743,28 @@
     {
       "id": "suzhou-19",
       "name": "太湖船菜",
-      "nameEn": "Taihu Boat Restaurant",
-      "type": "local",
-      "cuisine": "Taihu",
+      "nameEn": "太湖船レストラン",
+      "type": "ローカル",
+      "cuisine": "太湖料理",
       "avgPrice": 200,
       "rating": 4.5,
-      "address": "Lake Tai area",
+      "address": "太湖エリア",
       "coordinates": {
         "lat": 31.2522,
         "lng": 120.4772
       },
       "phone": "+86 512 6728 1111",
       "hours": "10:00-21:00",
-      "description": "Dining on a boat on Tai Lake with fresh seafood.",
+      "description": "太湖の船上で新鮮なシーフードを楽しむ",
       "dishHighlights": [
-        "Fresh lake fish",
-        "Shrimp",
-        "Crab"
+        "新鮮なの太湖の魚",
+        "エビ",
+        "カニ"
       ],
       "tags": [
-        "seafood",
-        "boat",
-        "scenic"
+        "シーフード",
+        "ボート",
+        "景勝地"
       ],
       "star": 0,
       "diamond": 0,
@@ -1772,27 +1772,27 @@
     },
     {
       "id": "suzhou-20",
-      "name": "拙政园茶室",
-      "nameEn": "Humble Garden Teahouse",
-      "type": "local",
-      "cuisine": "Tea House",
+      "name": "拙政園茶室",
+      "nameEn": "ハンブル・ガーデン・ティーハウス",
+      "type": "ローカル",
+      "cuisine": "茶屋",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Near Humble Administrators Garden",
+      "address": "拙政園近く",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
       },
       "phone": "+86 512 6728 2222",
       "hours": "08:00-17:00",
-      "description": "Traditional teahouse with garden views.",
+      "description": "庭園の眺めを楽しめる伝統的な茶屋。",
       "dishHighlights": [
-        "Dragon Well tea",
-        "Suzhou snacks"
+        "龍井茶",
+        "蘇州スナック"
       ],
       "tags": [
-        "teahouse",
-        "traditional"
+        "茶屋",
+        "伝統的"
       ],
       "star": 0,
       "diamond": 0,
@@ -1801,26 +1801,26 @@
     {
       "id": "suzhou-21",
       "name": "山塘街小笼",
-      "nameEn": "Shantang Street Xiaolong",
-      "type": "local",
-      "cuisine": "Dim Sum",
+      "nameEn": "シャンタン・ストリート・シャオロンバオ",
+      "type": "ローカル",
+      "cuisine": "点心",
       "avgPrice": 40,
       "rating": 4.7,
-      "address": "Shantang Street",
+      "address": "山塘街",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6072
       },
       "hours": "07:00-14:00",
-      "description": "Local spot for authentic Suzhou xiaolongbao.",
+      "description": "蘇州の本格的な小籠包が味わえる地元のスポット。",
       "dishHighlights": [
-        "Soup dumplings",
-        "Pork buns"
+        "小籠包",
+        "豚まん"
       ],
       "tags": [
-        "dim-sum",
-        "local",
-        "famous"
+        "点心",
+        "ローカル",
+        "有名"
       ],
       "star": 0,
       "diamond": 0,
@@ -1829,27 +1829,27 @@
     },
     {
       "id": "suzhou-22",
-      "name": "桃花源记",
-      "nameEn": "Peach Blossom Spring",
-      "type": "local",
-      "cuisine": "Jiangnan",
+      "name": "桃花源記",
+      "nameEn": "桃源春",
+      "type": "ローカル",
+      "cuisine": "江南料理",
       "avgPrice": 120,
       "rating": 4.5,
-      "address": "Pingjiang Road",
+      "address": "平江路",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
       },
       "phone": "+86 512 6728 3333",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Upscale Jiangnan cuisine in poetic setting.",
+      "description": "詩的な雰囲気の中で味わう高級江南料理。",
       "dishHighlights": [
-        "Bamboo shoots",
-        "River shrimps"
+        "タケノコ",
+        "川エビ"
       ],
       "tags": [
-        "upscale",
-        "poetic"
+        "高級",
+        "詩的"
       ],
       "star": 0,
       "diamond": 0,
@@ -1858,26 +1858,26 @@
     {
       "id": "suzhou-23",
       "name": "狮子林素面",
-      "nameEn": "Lion Grove Vegetarian Noodles",
-      "type": "local",
-      "cuisine": "Vegetarian",
+      "nameEn": "ライオン・グローブ・ベジタリアン・ヌードル",
+      "type": "ローカル",
+      "cuisine": "ベジタリアン",
       "avgPrice": 35,
       "rating": 4.4,
-      "address": "Near Lion Grove Garden",
+      "address": "獅子林庭園近く",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
       },
       "hours": "06:00-14:00",
-      "description": "Famous noodle shop near the garden.",
+      "description": "庭園近くの有名な麺店。",
       "dishHighlights": [
-        "Vegetable noodles",
-        "Soy milk"
+        "野菜ラーメン",
+        "豆乳"
       ],
       "tags": [
-        "noodles",
-        "vegetarian",
-        "budget"
+        "麺類",
+        "ベジタリアン",
+        "格安"
       ],
       "star": 0,
       "diamond": 0,
@@ -1886,10 +1886,10 @@
     },
     {
       "id": "suzhou-24",
-      "name": "老苏州蟹黄汤包",
-      "nameEn": "老苏州蟹黄汤包 (蟹黄汤包)",
-      "type": "local",
-      "cuisine": "蟹黄汤包",
+      "name": "老蘇州蟹黄湯包",
+      "nameEn": "老蘇州蟹黄湯包（蟹黄湯包）",
+      "type": "ローカル",
+      "cuisine": "蟹黄湯包",
       "avgPrice": 140,
       "rating": 4.2,
       "address": "苏州市老城区美食街174号",
@@ -1899,26 +1899,26 @@
       },
       "phone": "+86 0512 71498866",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "苏州本地人推荐的蟹黄汤包店，味道正宗，价格实惠",
+      "description": "蘇州の地元民がおすすめする蟹黄湯包のお店で、味は本格的で、価格も手頃です",
       "dishHighlights": [
-        "松鼠桂鱼",
-        "响油鳝糊",
+        "松鼠桂魚（松鼠桂魚）",
+        "響油鱔糊（あぶらかけうなぎのあんかけ）",
         "生煎"
       ],
       "tags": [
-        "老字号",
-        "本地人爱去",
-        "性价比高"
+        "老舗",
+        "地元の人に人気",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/f17c4a7a8b8f.webp"
     },
     {
       "id": "suzhou-26",
-      "name": "街边响油鳝糊",
-      "nameEn": "街边响油鳝糊 (响油鳝糊)",
-      "type": "street",
-      "cuisine": "响油鳝糊",
+      "name": "街角の響油鱔糊（あぶらかけうなぎのあんかけ）",
+      "nameEn": "街角の響油鱔糊（あぶらかけうなぎのあんかけ）",
+      "type": "ストリート",
+      "cuisine": "響油鱔糊（あぶらかけうなぎのあんかけ）",
       "avgPrice": 52,
       "rating": 4.6,
       "address": "苏州市新城区美食街158号",
@@ -1928,26 +1928,26 @@
       },
       "phone": "+86 0512 42646749",
       "hours": "09:00-21:00",
-      "description": "苏州本地人推荐的响油鳝糊店，味道正宗，价格实惠",
+      "description": "蘇州の地元民おすすめの響油鱔糊店。味は本格的で、価格もお手頃。",
       "dishHighlights": [
         "生煎",
-        "蟹黄汤包",
-        "松鼠桂鱼"
+        "蟹黄湯包",
+        "松鼠桂魚（松鼠桂魚）"
       ],
       "tags": [
-        "深夜美食",
+        "深夜グルメ",
         "夜市",
-        "网红打卡"
+        "インスタ映えスポット"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/774e3eae27bc.webp"
     },
     {
       "id": "suzhou-28",
-      "name": "传统松鼠桂鱼",
-      "nameEn": "传统松鼠桂鱼 (松鼠桂鱼)",
-      "type": "local",
-      "cuisine": "松鼠桂鱼",
+      "name": "伝統の松鼠桂魚（松鼠桂魚）",
+      "nameEn": "伝統の松鼠桂魚（松鼠桂魚）",
+      "type": "ローカル",
+      "cuisine": "松鼠桂魚（松鼠桂魚）",
       "avgPrice": 38,
       "rating": 4.8,
       "address": "苏州市新城区美食街140号",
@@ -1957,16 +1957,16 @@
       },
       "phone": "+86 0512 66437593",
       "hours": "09:00-21:00",
-      "description": "苏州本地人推荐的松鼠桂鱼店，味道正宗，价格实惠",
+      "description": "蘇州の地元民おすすめの松鼠桂魚店。味は本格的で、価格もお手頃。",
       "dishHighlights": [
         "生煎",
-        "松鼠桂鱼",
-        "蟹黄汤包"
+        "松鼠桂魚（松鼠桂魚）",
+        "蟹黄湯包"
       ],
       "tags": [
-        "排队王",
-        "隐藏美食",
-        "家常菜"
+        "行列のできる店",
+        "隠れた名店",
+        "家庭料理"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/7d5f6793388b.webp"
@@ -1975,7 +1975,7 @@
       "id": "suzhou-30",
       "name": "阿婆生煎",
       "nameEn": "阿婆生煎 (生煎)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "生煎",
       "avgPrice": 71,
       "rating": 4.1,
@@ -1986,16 +1986,16 @@
       },
       "phone": "+86 0512 76163012",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "苏州本地人推荐的生煎店，味道正宗，价格实惠",
+      "description": "苏州の地元民おすすめの生煎店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "生煎",
-        "响油鳝糊",
-        "松鼠桂鱼"
+        "響油鱔糊（あぶらかけうなぎのあんかけ）",
+        "松鼠桂魚（松鼠桂魚）"
       ],
       "tags": [
-        "排队王",
-        "本地人爱去",
-        "老字号"
+        "行列のできる店",
+        "地元の人に人気",
+        "老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/03c1e1f8d53d.webp"
@@ -2004,7 +2004,7 @@
       "id": "suzhou-32",
       "name": "正宗苏式面",
       "nameEn": "正宗苏式面 (苏式面)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "苏式面",
       "avgPrice": 93,
       "rating": 4.7,
@@ -2015,26 +2015,26 @@
       },
       "phone": "+86 0512 81069058",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "苏州本地人推荐的苏式面店，味道正宗，价格实惠",
+      "description": "苏州の地元民おすすめの苏式面店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "苏式面",
         "生煎",
-        "蟹黄汤包"
+        "蟹黄湯包"
       ],
       "tags": [
-        "性价比高",
-        "老字号",
-        "隐藏美食"
+        "コスパ最高",
+        "老舗",
+        "隠れた名店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/4d37d82561b1.webp"
     },
     {
       "id": "suzhou-34",
-      "name": "苏州味响油鳝糊",
-      "nameEn": "苏州味响油鳝糊 (响油鳝糊)",
-      "type": "street",
-      "cuisine": "响油鳝糊",
+      "name": "蘇州味 響油鱔糊",
+      "nameEn": "蘇州味 響油鱔糊（響油鱔糊）",
+      "type": "ストリート",
+      "cuisine": "響油鱔糊（あぶらかけうなぎのあんかけ）",
       "avgPrice": 60,
       "rating": 4.3,
       "address": "苏州市新城区美食街127号",
@@ -2044,15 +2044,15 @@
       },
       "phone": "+86 0512 80158850",
       "hours": "10:00-22:00",
-      "description": "苏州本地人推荐的响油鳝糊店，味道正宗，价格实惠",
+      "description": "蘇州の地元民おすすめの響油鱔糊店。味は本格的で、価格もお手頃。",
       "dishHighlights": [
-        "蟹黄汤包",
+        "蟹黄湯包",
         "苏式面",
         "生煎"
       ],
       "tags": [
-        "深夜美食",
-        "路边摊",
+        "深夜グルメ",
+        "屋台",
         "小吃"
       ],
       "diamond": 0,
@@ -2060,10 +2060,10 @@
     },
     {
       "id": "suzhou-36",
-      "name": "老街蟹黄汤包",
-      "nameEn": "老街蟹黄汤包 (蟹黄汤包)",
-      "type": "local",
-      "cuisine": "蟹黄汤包",
+      "name": "老街蟹黄湯包",
+      "nameEn": "老街蟹黄湯包（蟹黄湯包）",
+      "type": "ローカル",
+      "cuisine": "蟹黄湯包",
       "avgPrice": 31,
       "rating": 4,
       "address": "苏州市市中心区美食街48号",
@@ -2073,26 +2073,26 @@
       },
       "phone": "+86 0512 69694907",
       "hours": "06:00-14:00",
-      "description": "苏州本地人推荐的蟹黄汤包店，味道正宗，价格实惠",
+      "description": "蘇州の地元民がおすすめする蟹黄湯包のお店で、味は本格的で、価格も手頃です",
       "dishHighlights": [
         "生煎",
-        "松鼠桂鱼",
+        "松鼠桂魚（松鼠桂魚）",
         "苏式面"
       ],
       "tags": [
-        "排队王",
-        "家常菜",
-        "性价比高"
+        "行列のできる店",
+        "家庭料理",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/__missing.svg"
     },
     {
       "id": "suzhou-38",
-      "name": "老街松鼠桂鱼",
-      "nameEn": "老街松鼠桂鱼 (松鼠桂鱼)",
-      "type": "local",
-      "cuisine": "松鼠桂鱼",
+      "name": "老街 松鼠桂魚",
+      "nameEn": "老街 松鼠桂魚（松鼠桂魚）",
+      "type": "ローカル",
+      "cuisine": "松鼠桂魚（松鼠桂魚）",
       "avgPrice": 139,
       "rating": 4,
       "address": "苏州市市中心区美食街25号",
@@ -2102,16 +2102,16 @@
       },
       "phone": "+86 0512 95068892",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "苏州本地人推荐的松鼠桂鱼店，味道正宗，价格实惠",
+      "description": "蘇州の地元民おすすめの松鼠桂魚店。味は本格的で、価格もお手頃。",
       "dishHighlights": [
-        "松鼠桂鱼",
-        "蟹黄汤包",
-        "响油鳝糊"
+        "松鼠桂魚（松鼠桂魚）",
+        "蟹黄湯包",
+        "響油鱔糊（あぶらかけうなぎのあんかけ）"
       ],
       "tags": [
-        "家常菜",
-        "隐藏美食",
-        "排队王"
+        "家庭料理",
+        "隠れた名店",
+        "行列のできる店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/a6a2b0783059.webp"
@@ -2120,7 +2120,7 @@
       "id": "suzhou-40",
       "name": "地道苏式面",
       "nameEn": "地道苏式面 (苏式面)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "苏式面",
       "avgPrice": 125,
       "rating": 4.5,
@@ -2131,26 +2131,26 @@
       },
       "phone": "+86 0512 44131511",
       "hours": "17:00-02:00",
-      "description": "苏州本地人推荐的苏式面店，味道正宗，价格实惠",
+      "description": "苏州の地元民おすすめの苏式面店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
-        "响油鳝糊",
-        "蟹黄汤包",
-        "松鼠桂鱼"
+        "響油鱔糊（あぶらかけうなぎのあんかけ）",
+        "蟹黄湯包",
+        "松鼠桂魚（松鼠桂魚）"
       ],
       "tags": [
-        "社区老店",
-        "性价比高",
-        "排队王"
+        "地元の老舗",
+        "コスパ最高",
+        "行列のできる店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/89eb7459a07d.webp"
     },
     {
       "id": "suzhou-42",
-      "name": "阿婆蟹黄汤包",
-      "nameEn": "阿婆蟹黄汤包 (蟹黄汤包)",
-      "type": "local",
-      "cuisine": "蟹黄汤包",
+      "name": "阿婆蟹黄湯包",
+      "nameEn": "阿婆蟹黄湯包（蟹黄湯包）",
+      "type": "ローカル",
+      "cuisine": "蟹黄湯包",
       "avgPrice": 81,
       "rating": 4.7,
       "address": "苏州市市中心区美食街138号",
@@ -2160,26 +2160,26 @@
       },
       "phone": "+86 0512 21096409",
       "hours": "10:00-22:00",
-      "description": "苏州本地人推荐的蟹黄汤包店，味道正宗，价格实惠",
+      "description": "蘇州の地元民がおすすめする蟹黄湯包のお店で、味は本格的で、価格も手頃です",
       "dishHighlights": [
-        "松鼠桂鱼",
-        "蟹黄汤包",
+        "松鼠桂魚（松鼠桂魚）",
+        "蟹黄湯包",
         "生煎"
       ],
       "tags": [
-        "老字号",
-        "性价比高",
-        "家常菜"
+        "老舗",
+        "コスパ最高",
+        "家庭料理"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/37878a07e997.webp"
     },
     {
       "id": "suzhou-44",
-      "name": "地道松鼠桂鱼",
-      "nameEn": "地道松鼠桂鱼 (松鼠桂鱼)",
-      "type": "local",
-      "cuisine": "松鼠桂鱼",
+      "name": "地道 松鼠桂魚",
+      "nameEn": "地道 松鼠桂魚（松鼠桂魚）",
+      "type": "ローカル",
+      "cuisine": "松鼠桂魚（松鼠桂魚）",
       "avgPrice": 136,
       "rating": 4.5,
       "address": "苏州市老城区美食街2号",
@@ -2189,26 +2189,26 @@
       },
       "phone": "+86 0512 21757595",
       "hours": "09:00-21:00",
-      "description": "苏州本地人推荐的松鼠桂鱼店，味道正宗，价格实惠",
+      "description": "蘇州の地元民おすすめの松鼠桂魚店。味は本格的で、価格もお手頃。",
       "dishHighlights": [
-        "松鼠桂鱼",
+        "松鼠桂魚（松鼠桂魚）",
         "苏式面",
         "生煎"
       ],
       "tags": [
-        "社区老店",
-        "家常菜",
-        "性价比高"
+        "地元の老舗",
+        "家庭料理",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/a73e51a13573.webp"
     },
     {
       "id": "suzhou-46",
-      "name": "苏州味响油鳝糊",
-      "nameEn": "苏州味响油鳝糊 (响油鳝糊)",
-      "type": "street",
-      "cuisine": "响油鳝糊",
+      "name": "蘇州味 響油鱔糊",
+      "nameEn": "蘇州味 響油鱔糊（響油鱔糊）",
+      "type": "ストリート",
+      "cuisine": "響油鱔糊（あぶらかけうなぎのあんかけ）",
       "avgPrice": 39,
       "rating": 4.2,
       "address": "苏州市新城区美食街73号",
@@ -2218,26 +2218,26 @@
       },
       "phone": "+86 0512 17765699",
       "hours": "09:00-21:00",
-      "description": "苏州本地人推荐的响油鳝糊店，味道正宗，价格实惠",
+      "description": "蘇州の地元民おすすめの響油鱔糊店。味は本格的で、価格もお手頃。",
       "dishHighlights": [
-        "响油鳝糊",
-        "蟹黄汤包",
+        "響油鱔糊（あぶらかけうなぎのあんかけ）",
+        "蟹黄湯包",
         "生煎"
       ],
       "tags": [
-        "网红打卡",
+        "インスタ映えスポット",
         "小吃",
-        "深夜美食"
+        "深夜グルメ"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/0f149d064f44.webp"
     },
     {
       "id": "suzhou-48",
-      "name": "苏州味松鼠桂鱼",
-      "nameEn": "苏州味松鼠桂鱼 (松鼠桂鱼)",
-      "type": "local",
-      "cuisine": "松鼠桂鱼",
+      "name": "蘇州味 松鼠桂魚",
+      "nameEn": "蘇州味 松鼠桂魚（松鼠桂魚）",
+      "type": "ローカル",
+      "cuisine": "松鼠桂魚（松鼠桂魚）",
       "avgPrice": 79,
       "rating": 4.5,
       "address": "苏州市老城区美食街20号",
@@ -2247,16 +2247,16 @@
       },
       "phone": "+86 0512 97205308",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "苏州本地人推荐的松鼠桂鱼店，味道正宗，价格实惠",
+      "description": "蘇州の地元民おすすめの松鼠桂魚店。味は本格的で、価格もお手頃。",
       "dishHighlights": [
-        "松鼠桂鱼",
-        "响油鳝糊",
+        "松鼠桂魚（松鼠桂魚）",
+        "響油鱔糊（あぶらかけうなぎのあんかけ）",
         "生煎"
       ],
       "tags": [
-        "隐藏美食",
-        "性价比高",
-        "社区老店"
+        "隠れた名店",
+        "コスパ最高",
+        "地元の老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/8df6491d5381.webp"
@@ -2265,7 +2265,7 @@
       "id": "suzhou-50",
       "name": "地道苏式面",
       "nameEn": "地道苏式面 (苏式面)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "苏式面",
       "avgPrice": 81,
       "rating": 4.2,
@@ -2276,16 +2276,16 @@
       },
       "phone": "+86 0512 23133793",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "苏州本地人推荐的苏式面店，味道正宗，价格实惠",
+      "description": "苏州の地元民おすすめの苏式面店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "生煎",
         "苏式面",
-        "松鼠桂鱼"
+        "松鼠桂魚（松鼠桂魚）"
       ],
       "tags": [
-        "本地人爱去",
-        "排队王",
-        "性价比高"
+        "地元の人に人気",
+        "行列のできる店",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/09c2e0ca4d0b.webp"
@@ -2294,7 +2294,7 @@
       "id": "suzhou-52",
       "name": "巷子苏式面",
       "nameEn": "巷子苏式面 (苏式面)",
-      "type": "street",
+      "type": "ストリート",
       "cuisine": "苏式面",
       "avgPrice": 39,
       "rating": 4.8,
@@ -2305,15 +2305,15 @@
       },
       "phone": "+86 0512 43912558",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "苏州本地人推荐的苏式面店，味道正宗，价格实惠",
+      "description": "苏州の地元民おすすめの苏式面店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
-        "松鼠桂鱼",
-        "响油鳝糊",
+        "松鼠桂魚（松鼠桂魚）",
+        "響油鱔糊（あぶらかけうなぎのあんかけ）",
         "生煎"
       ],
       "tags": [
         "小吃",
-        "深夜美食",
+        "深夜グルメ",
         "夜市"
       ],
       "diamond": 0,
@@ -2321,9 +2321,9 @@
     },
     {
       "id": "suzhou-54",
-      "name": "传统生煎",
-      "nameEn": "传统生煎 (生煎)",
-      "type": "local",
+      "name": "伝統生煎",
+      "nameEn": "伝統生煎（生煎）",
+      "type": "ローカル",
       "cuisine": "生煎",
       "avgPrice": 74,
       "rating": 4.8,
@@ -2334,16 +2334,16 @@
       },
       "phone": "+86 0512 31166662",
       "hours": "09:00-21:00",
-      "description": "苏州本地人推荐的生煎店，味道正宗，价格实惠",
+      "description": "苏州の地元民おすすめの生煎店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
-        "响油鳝糊",
-        "松鼠桂鱼",
-        "蟹黄汤包"
+        "響油鱔糊（あぶらかけうなぎのあんかけ）",
+        "松鼠桂魚（松鼠桂魚）",
+        "蟹黄湯包"
       ],
       "tags": [
-        "家常菜",
-        "隐藏美食",
-        "本地人爱去"
+        "家庭料理",
+        "隠れた名店",
+        "地元の人に人気"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/251d8af39d72.webp"
@@ -2352,7 +2352,7 @@
       "id": "suzhou-56",
       "name": "老字号苏式面",
       "nameEn": "老字号苏式面 (苏式面)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "苏式面",
       "avgPrice": 134,
       "rating": 4.2,
@@ -2363,26 +2363,26 @@
       },
       "phone": "+86 0512 58023751",
       "hours": "17:00-02:00",
-      "description": "苏州本地人推荐的苏式面店，味道正宗，价格实惠",
+      "description": "苏州の地元民おすすめの苏式面店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
         "苏式面",
-        "松鼠桂鱼",
-        "响油鳝糊"
+        "松鼠桂魚（松鼠桂魚）",
+        "響油鱔糊（あぶらかけうなぎのあんかけ）"
       ],
       "tags": [
-        "老字号",
-        "隐藏美食",
-        "排队王"
+        "老舗",
+        "隠れた名店",
+        "行列のできる店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/9ea869215e0e.webp"
     },
     {
       "id": "suzhou-58",
-      "name": "老字号蟹黄汤包",
-      "nameEn": "老字号蟹黄汤包 (蟹黄汤包)",
-      "type": "street",
-      "cuisine": "蟹黄汤包",
+      "name": "老舗蟹黄湯包",
+      "nameEn": "老舗蟹黄湯包（蟹黄湯包）",
+      "type": "ストリート",
+      "cuisine": "蟹黄湯包",
       "avgPrice": 36,
       "rating": 4.6,
       "address": "苏州市市中心区美食街56号",
@@ -2392,26 +2392,26 @@
       },
       "phone": "+86 0512 94834032",
       "hours": "17:00-02:00",
-      "description": "苏州本地人推荐的蟹黄汤包店，味道正宗，价格实惠",
+      "description": "蘇州の地元民がおすすめする蟹黄湯包のお店で、味は本格的で、価格も手頃です",
       "dishHighlights": [
-        "松鼠桂鱼",
-        "响油鳝糊",
+        "松鼠桂魚（松鼠桂魚）",
+        "響油鱔糊（あぶらかけうなぎのあんかけ）",
         "苏式面"
       ],
       "tags": [
         "夜市",
         "小吃",
-        "深夜美食"
+        "深夜グルメ"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/4594fef09610.webp"
     },
     {
       "id": "suzhou-60",
-      "name": "街边蟹黄汤包",
-      "nameEn": "街边蟹黄汤包 (蟹黄汤包)",
-      "type": "local",
-      "cuisine": "蟹黄汤包",
+      "name": "街角の蟹黄湯包",
+      "nameEn": "街角の蟹黄湯包（蟹黄湯包）",
+      "type": "ローカル",
+      "cuisine": "蟹黄湯包",
       "avgPrice": 104,
       "rating": 4.6,
       "address": "苏州市新城区美食街83号",
@@ -2421,16 +2421,16 @@
       },
       "phone": "+86 0512 66345479",
       "hours": "09:00-21:00",
-      "description": "苏州本地人推荐的蟹黄汤包店，味道正宗，价格实惠",
+      "description": "蘇州の地元民がおすすめする蟹黄湯包のお店で、味は本格的で、価格も手頃です",
       "dishHighlights": [
-        "松鼠桂鱼",
+        "松鼠桂魚（松鼠桂魚）",
         "生煎",
-        "响油鳝糊"
+        "響油鱔糊（あぶらかけうなぎのあんかけ）"
       ],
       "tags": [
-        "老字号",
-        "排队王",
-        "社区老店"
+        "老舗",
+        "行列のできる店",
+        "地元の老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/be543f38b269.webp"
@@ -2439,7 +2439,7 @@
       "id": "suzhou-62",
       "name": "苏州味苏式面",
       "nameEn": "苏州味苏式面 (苏式面)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "苏式面",
       "avgPrice": 34,
       "rating": 4.9,
@@ -2450,26 +2450,26 @@
       },
       "phone": "+86 0512 18474025",
       "hours": "17:00-02:00",
-      "description": "苏州本地人推荐的苏式面店，味道正宗，价格实惠",
+      "description": "苏州の地元民おすすめの苏式面店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
-        "松鼠桂鱼",
+        "松鼠桂魚（松鼠桂魚）",
         "生煎",
         "苏式面"
       ],
       "tags": [
-        "社区老店",
-        "隐藏美食",
-        "性价比高"
+        "地元の老舗",
+        "隠れた名店",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/1beaa4ec0924.webp"
     },
     {
       "id": "suzhou-64",
-      "name": "苏州味蟹黄汤包",
-      "nameEn": "苏州味蟹黄汤包 (蟹黄汤包)",
-      "type": "local",
-      "cuisine": "蟹黄汤包",
+      "name": "蘇州味蟹黄湯包",
+      "nameEn": "蘇州味蟹黄湯包（蟹黄湯包）",
+      "type": "ローカル",
+      "cuisine": "蟹黄湯包",
       "avgPrice": 38,
       "rating": 4.5,
       "address": "苏州市老城区美食街9号",
@@ -2479,26 +2479,26 @@
       },
       "phone": "+86 0512 78539782",
       "hours": "17:00-02:00",
-      "description": "苏州本地人推荐的蟹黄汤包店，味道正宗，价格实惠",
+      "description": "蘇州の地元民がおすすめする蟹黄湯包のお店で、味は本格的で、価格も手頃です",
       "dishHighlights": [
-        "松鼠桂鱼",
-        "蟹黄汤包",
+        "松鼠桂魚（松鼠桂魚）",
+        "蟹黄湯包",
         "苏式面"
       ],
       "tags": [
-        "排队王",
-        "老字号",
-        "本地人爱去"
+        "行列のできる店",
+        "老舗",
+        "地元の人に人気"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/3a00829b84b4.webp"
     },
     {
       "id": "suzhou-66",
-      "name": "老字号松鼠桂鱼",
-      "nameEn": "老字号松鼠桂鱼 (松鼠桂鱼)",
-      "type": "local",
-      "cuisine": "松鼠桂鱼",
+      "name": "老舗の松鼠桂魚",
+      "nameEn": "老舗の松鼠桂魚（松鼠桂魚）",
+      "type": "ローカル",
+      "cuisine": "松鼠桂魚（松鼠桂魚）",
       "avgPrice": 89,
       "rating": 4.4,
       "address": "苏州市新城区美食街116号",
@@ -2508,26 +2508,26 @@
       },
       "phone": "+86 0512 16407307",
       "hours": "10:00-22:00",
-      "description": "苏州本地人推荐的松鼠桂鱼店，味道正宗，价格实惠",
+      "description": "蘇州の地元民おすすめの松鼠桂魚店。味は本格的で、価格もお手頃。",
       "dishHighlights": [
-        "响油鳝糊",
-        "蟹黄汤包",
+        "響油鱔糊（あぶらかけうなぎのあんかけ）",
+        "蟹黄湯包",
         "苏式面"
       ],
       "tags": [
-        "性价比高",
-        "社区老店",
-        "老字号"
+        "コスパ最高",
+        "地元の老舗",
+        "老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/3a00829b84b4.webp"
     },
     {
       "id": "suzhou-68",
-      "name": "巷子松鼠桂鱼",
-      "nameEn": "巷子松鼠桂鱼 (松鼠桂鱼)",
-      "type": "cafe",
-      "cuisine": "松鼠桂鱼",
+      "name": "路地の松鼠桂魚",
+      "nameEn": "路地の松鼠桂魚（松鼠桂魚）",
+      "type": "カフェ",
+      "cuisine": "松鼠桂魚（松鼠桂魚）",
       "avgPrice": 60,
       "rating": 4,
       "address": "苏州市新城区美食街119号",
@@ -2537,26 +2537,26 @@
       },
       "phone": "+86 0512 89338507",
       "hours": "10:00-22:00",
-      "description": "苏州本地人推荐的松鼠桂鱼店，味道正宗，价格实惠",
+      "description": "蘇州の地元民おすすめの松鼠桂魚店。味は本格的で、価格もお手頃。",
       "dishHighlights": [
         "生煎",
-        "响油鳝糊",
+        "響油鱔糊（あぶらかけうなぎのあんかけ）",
         "苏式面"
       ],
       "tags": [
         "咖啡",
-        "安静",
-        "文艺"
+        "落ち着いた",
+        "おしゃれ"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/508ac032bcf0.webp"
     },
     {
       "id": "suzhou-70",
-      "name": "阿婆松鼠桂鱼",
-      "nameEn": "阿婆松鼠桂鱼 (松鼠桂鱼)",
-      "type": "local",
-      "cuisine": "松鼠桂鱼",
+      "name": "おばあちゃんの松鼠桂魚",
+      "nameEn": "おばあちゃんの松鼠桂魚（松鼠桂魚）",
+      "type": "ローカル",
+      "cuisine": "松鼠桂魚（松鼠桂魚）",
       "avgPrice": 95,
       "rating": 4,
       "address": "苏州市老城区美食街121号",
@@ -2566,26 +2566,26 @@
       },
       "phone": "+86 0512 80978076",
       "hours": "06:00-14:00",
-      "description": "苏州本地人推荐的松鼠桂鱼店，味道正宗，价格实惠",
+      "description": "蘇州の地元民おすすめの松鼠桂魚店。味は本格的で、価格もお手頃。",
       "dishHighlights": [
         "生煎",
-        "蟹黄汤包",
-        "松鼠桂鱼"
+        "蟹黄湯包",
+        "松鼠桂魚（松鼠桂魚）"
       ],
       "tags": [
-        "老字号",
-        "性价比高",
-        "家常菜"
+        "老舗",
+        "コスパ最高",
+        "家庭料理"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/4f471abcbf01.webp"
     },
     {
       "id": "suzhou-72",
-      "name": "地道松鼠桂鱼",
-      "nameEn": "地道松鼠桂鱼 (松鼠桂鱼)",
-      "type": "local",
-      "cuisine": "松鼠桂鱼",
+      "name": "地道 松鼠桂魚",
+      "nameEn": "地道 松鼠桂魚（松鼠桂魚）",
+      "type": "ローカル",
+      "cuisine": "松鼠桂魚（松鼠桂魚）",
       "avgPrice": 71,
       "rating": 4.2,
       "address": "苏州市市中心区美食街44号",
@@ -2595,25 +2595,25 @@
       },
       "phone": "+86 0512 26205726",
       "hours": "09:00-21:00",
-      "description": "苏州本地人推荐的松鼠桂鱼店，味道正宗，价格实惠",
+      "description": "蘇州の地元民おすすめの松鼠桂魚店。味は本格的で、価格もお手頃。",
       "dishHighlights": [
-        "蟹黄汤包",
-        "响油鳝糊",
+        "蟹黄湯包",
+        "響油鱔糊（あぶらかけうなぎのあんかけ）",
         "生煎"
       ],
       "tags": [
-        "性价比高",
-        "隐藏美食",
-        "本地人爱去"
+        "コスパ最高",
+        "隠れた名店",
+        "地元の人に人気"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/4d03ae8efacc.webp"
     },
     {
       "id": "suzhou-74",
-      "name": "传统苏式面",
-      "nameEn": "传统苏式面 (苏式面)",
-      "type": "street",
+      "name": "伝統的な蘇州式麺",
+      "nameEn": "伝統的な蘇州式麺（蘇州式麺）",
+      "type": "ストリート",
       "cuisine": "苏式面",
       "avgPrice": 40,
       "rating": 4.4,
@@ -2624,15 +2624,15 @@
       },
       "phone": "+86 0512 53099300",
       "hours": "17:00-02:00",
-      "description": "苏州本地人推荐的苏式面店，味道正宗，价格实惠",
+      "description": "苏州の地元民おすすめの苏式面店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
-        "松鼠桂鱼",
-        "响油鳝糊",
-        "蟹黄汤包"
+        "松鼠桂魚（松鼠桂魚）",
+        "響油鱔糊（あぶらかけうなぎのあんかけ）",
+        "蟹黄湯包"
       ],
       "tags": [
-        "网红打卡",
-        "深夜美食",
+        "インスタ映えスポット",
+        "深夜グルメ",
         "小吃"
       ],
       "diamond": 0,
@@ -2642,7 +2642,7 @@
       "id": "suzhou-76",
       "name": "苏州味生煎",
       "nameEn": "苏州味生煎 (生煎)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "生煎",
       "avgPrice": 46,
       "rating": 4.9,
@@ -2653,16 +2653,16 @@
       },
       "phone": "+86 0512 12048396",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "苏州本地人推荐的生煎店，味道正宗，价格实惠",
+      "description": "苏州の地元民おすすめの生煎店。本格的な味で、価格もお手頃。",
       "dishHighlights": [
-        "松鼠桂鱼",
+        "松鼠桂魚（松鼠桂魚）",
         "生煎",
-        "蟹黄汤包"
+        "蟹黄湯包"
       ],
       "tags": [
-        "老字号",
-        "社区老店",
-        "家常菜"
+        "老舗",
+        "地元の老舗",
+        "家庭料理"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/764a308fa6f2.webp"
@@ -2672,594 +2672,608 @@
     "arrival": [
       {
         "type": "train",
-        "from": "Shanghai Hongqiao (30min), Shanghai South (45min), Beijing (4.5h)",
-        "to": "Suzhou Railway Station / Suzhou North Station / Suzhou Park Station",
-        "duration": "25min-4.5h depending on origin",
+        "from": "上海虹橋（30分）、上海南（45分）、北京（4.5時間）",
+        "to": "蘇州駅 / 蘇州北駅 / 蘇州園区駅",
+        "duration": "出発地により25分～4.5時間",
         "price": "50-600¥",
-        "frequency": "Multiple high-speed trains daily",
-        "tips": "High-speed from Shanghai is fastest. Suzhou Station is closest to old town. Suzhou North is for some high-speed trains."
+        "frequency": "1日複数の高速列車",
+        "tips": "上海からの高速鉄道が最速です。蘇州駅が旧市街に最も近く、一部の高速鉄道は蘇州北駅を利用します。"
       },
       {
         "type": "bus",
-        "from": "Shanghai (1.5h), Hangzhou (2h)",
-        "to": "Suzhou Bus Station",
-        "duration": "1.5-2 hours",
+        "from": "上海（1.5時間）、杭州（2時間）",
+        "to": "蘇州バスターミナル",
+        "duration": "1.5～2時間",
         "price": "50-80¥",
-        "frequency": "Frequent buses from major cities",
-        "tips": "Buses from Shanghai's Hongqiao and Puma are comfortable. Bus Station is near old town."
+        "frequency": "主要都市から頻繁なバス",
+        "tips": "上海の虹橋とプーマからのバスは快適です。バスターミナルは旧市街の近くにあります。"
       }
     ],
     "local": {
       "metro": [
-        "5 lines operational",
-        "Single ride: 2-8¥",
-        "Line 1, 2 for tourist areas",
-        "Connects to railway stations"
+        "5路線運行中",
+        "1回乗車：2〜8¥",
+        "観光エリアには1号線・2号線",
+        "鉄道駅に接続"
       ],
       "bus": [
-        "Extensive city network",
-        "Single ride: 2¥",
-        "Tourist areas well served",
-        "Google Maps works for navigation"
+        "広範な市内ネットワーク",
+        "1回の乗車：2¥",
+        "観光エリアへのアクセス良好",
+        "Googleマップはナビゲーションに使えます"
       ],
       "taxi": [
-        "Starting fare: 14¥ (first 3km)",
-        "Night surcharge: 20% extra",
-        "Within old town: 20-40¥",
-        "Didi recommended for English"
+        "初乗り運賃：14¥（最初の3km）",
+        "夜間割増：20%追加",
+        "旧市街内：20〜40元",
+        "英語対応にはDidiがおすすめ"
       ],
       "boat": [
-        "Shantang Street boat: 50-120¥",
-        "Canal tours available",
-        "Pingjiang Road boat rides",
-        "Good way to see water towns"
+        "山塘街の船：50〜120元",
+        "運河ツアーあり",
+        "平江路の船遊び",
+        "水郷を見るのに良い方法"
       ],
       "bike": [
-        "Shared bikes widely available",
-        "Mobike, Ofo, and Hello Bike apps work",
-        "Flat terrain ideal for cycling"
+        "シェア自転車が広く利用可能",
+        "Mobike、Ofo、Hello Bikeのアプリが使えます",
+        "平坦な地形でサイクリングに最適"
       ]
     }
   },
   "hotels": [
     {
-      "name": "苏州老城墙饭店",
+      "name": "蘇州老城壁飯店",
       "nameEn": "Suzhou Old City Wall Hotel",
       "budget": "luxury",
-      "priceRange": "¥800-2000/night",
-      "address": "88 Pingjiang Road",
+      "priceRange": "1泊800〜2000元",
+      "address": "平江路88号",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
       },
       "rating": 4.7,
       "highlights": [
-        "Canal location",
-        "Traditional architecture",
-        "Central location",
-        "Garden views"
+        "運河沿いのロケーション",
+        "伝統的な建築",
+        "中心部に好立地",
+        "庭園の眺め"
       ],
-      "bookingTips": "Book well ahead. Request canal view room."
+      "bookingTips": "早めに予約しましょう。運河側の部屋をリクエストしてください。"
     },
     {
       "name": "苏州香格里拉大酒店",
       "nameEn": "Shangri-La Hotel Suzhou",
       "budget": "luxury",
-      "priceRange": "¥1200-2500/night",
-      "address": "168 Tao River Road",
+      "priceRange": "1泊1200〜2500元",
+      "address": "桃河路168号",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6172
       },
       "rating": 4.6,
       "highlights": [
-        "Canal views",
-        "Central location",
-        "Multiple restaurants",
-        "Luxury facilities"
+        "運河の眺め",
+        "中心部に好立地",
+        "複数のレストラン",
+        "高級設備"
       ],
-      "bookingTips": "Best location for first-time visitors. Check weekend rates."
+      "bookingTips": "初めての訪問者に最適なロケーション。週末料金を確認してください。"
     },
     {
-      "name": "苏州南园宾馆",
+      "name": "蘇州南園賓館",
       "nameEn": "Suzhou Nan Yuan Hotel",
       "budget": "mid",
-      "priceRange": "¥500-1200/night",
-      "address": "343 Xiangmen Road",
+      "priceRange": "1泊500〜1200元",
+      "address": "相門路343号",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6272
       },
       "rating": 4.5,
       "highlights": [
-        "Garden setting",
-        "Near museum",
-        "Traditional atmosphere",
-        "Good value"
+        "庭園環境",
+        "博物館付近",
+        "伝統的な雰囲気",
+        "コストパフォーマンスが良い"
       ],
-      "bookingTips": "Former residence of Chiang Kai-shek. Book garden view rooms."
+      "bookingTips": "蒋介石の旧邸宅。庭園側の部屋を予約してください。"
     },
     {
       "name": "平江府酒店",
       "nameEn": "Pingjiang Fu Hotel",
       "budget": "luxury",
-      "priceRange": "¥1000-2500/night",
-      "address": "77 Pingjiang Road",
+      "priceRange": "1泊1,000〜2,500元",
+      "address": "平江路77号",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
       },
       "rating": 4.7,
       "highlights": [
-        "Canal location",
-        "Boutique luxury",
-        "Traditional courtyard",
-        "Prime location"
+        "運河沿いのロケーション",
+        "ブティック高級",
+        "伝統的な中庭",
+        "一等地"
       ],
-      "bookingTips": "Renovated historical building. Best for romantic getaways."
+      "bookingTips": "改装された歴史的建造物。ロマンチックな滞在に最適。"
     },
     {
-      "name": "观前街酒店",
+      "name": "観前街酒店",
       "nameEn": "Guanqian Street Hotel",
       "budget": "budget",
-      "priceRange": "¥200-500/night",
-      "address": "Guanqian Street area",
+      "priceRange": "1泊200〜500元",
+      "address": "観前街エリア",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
       },
       "rating": 4.2,
       "highlights": [
-        "Shopping location",
-        "Metro access",
-        "Budget-friendly",
-        "Central"
+        "ショッピングに便利な立地",
+        "地下鉄アクセス",
+        "リーズナブルな価格",
+        "中心部"
       ],
-      "bookingTips": "Great for shoppers. Many chain hotels available."
+      "bookingTips": "買い物客に最適。多くのチェーンホテルがあります。"
     },
     {
       "name": "苏州W酒店",
       "nameEn": "W Suzhou",
       "budget": "luxury",
-      "priceRange": "¥1500-3500/night",
-      "address": "Suzhou Center",
+      "priceRange": "1泊1500〜3500元",
+      "address": "蘇州センター",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
       },
       "rating": 4.6,
       "highlights": [
-        "Modern design",
-        "Sky bar",
+        "モダンなデザイン",
+        "スカイバー",
         "Spa"
       ],
-      "bookingTips": "Best views of city."
+      "bookingTips": "市内の最高の眺め。"
     },
     {
-      "name": "苏州希尔顿",
+      "name": "蘇州ヒルトン",
       "nameEn": "Hilton Suzhou",
       "budget": "luxury",
-      "priceRange": "¥1000-2000/night",
-      "address": "Suzhou Industrial Park",
+      "priceRange": "1泊1000〜2000元",
+      "address": "蘇州工業園区",
       "coordinates": {
         "lat": 31.3422,
         "lng": 120.6772
       },
       "rating": 4.5,
       "highlights": [
-        "Lake views",
-        "Pool",
-        "Multiple restaurants"
+        "湖の景色",
+        "プール",
+        "複数のレストラン"
       ],
-      "bookingTips": "Good for business travelers."
+      "bookingTips": "ビジネス旅行者に最適。"
     },
     {
       "name": "苏州凯悦",
       "nameEn": "Hyatt Regency Suzhou",
       "budget": "luxury",
-      "priceRange": "¥1200-2500/night",
-      "address": "Suzhou Center",
+      "priceRange": "1泊1200〜2500元",
+      "address": "蘇州センター",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6472
       },
       "rating": 4.6,
       "highlights": [
-        "Central location",
-        "Luxury amenities"
+        "中心部に好立地",
+        "高級アメニティ"
       ],
-      "bookingTips": "Book canal view."
+      "bookingTips": "運河の景色を予約。"
     },
     {
       "name": "苏州福朋喜来登",
       "nameEn": "Four Points Suzhou",
       "budget": "mid",
-      "priceRange": "¥600-1200/night",
-      "address": "Guanqian Area",
+      "priceRange": "1泊600〜1200元",
+      "address": "観前エリア",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6372
       },
       "rating": 4.4,
       "highlights": [
-        "Central",
-        "Comfortable",
-        "Value"
+        "中心部",
+        "快適",
+        "価値"
       ],
-      "bookingTips": "Good location for sightseeing."
+      "bookingTips": "観光に便利なロケーション。"
     },
     {
       "name": "苏州万怡",
       "nameEn": "Courtyard Suzhou",
       "budget": "mid",
-      "priceRange": "¥500-1000/night",
-      "address": "Near Jinji Lake",
+      "priceRange": "1泊500〜1000元",
+      "address": "金鶏湖付近",
       "coordinates": {
         "lat": 31.3522,
         "lng": 120.6972
       },
       "rating": 4.3,
       "highlights": [
-        "Lake location",
-        "Modern",
-        "Value"
+        "湖畔のロケーション",
+        "モダン",
+        "価値"
       ],
-      "bookingTips": "Great for lakeside walks."
+      "bookingTips": "湖畔の散歩に最適。"
     },
     {
-      "name": "苏州亚朵酒店",
+      "name": "蘇州亜朵酒店",
       "nameEn": "Atour Suzhou",
       "budget": "mid",
-      "priceRange": "¥400-800/night",
-      "address": "Multiple locations",
+      "priceRange": "1泊400〜800元",
+      "address": "複数の場所",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
       },
       "rating": 4.5,
       "highlights": [
-        "Book corner",
-        "Reading room",
-        "Chinese style"
+        "ブックコーナー",
+        "読書室",
+        "中国風"
       ],
-      "bookingTips": "Book themed rooms."
+      "bookingTips": "本をテーマにした客室。"
     },
     {
       "name": "苏州如家",
       "nameEn": "Home Inn Suzhou",
       "budget": "budget",
-      "priceRange": "¥150-300/night",
-      "address": "Multiple locations",
+      "priceRange": "1泊150〜300元",
+      "address": "複数の場所",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6372
       },
       "rating": 4,
       "highlights": [
-        "Affordable",
-        "Consistent",
-        "Central"
+        "手頃な価格",
+        "一貫性がある",
+        "中心部"
       ],
-      "bookingTips": "Budget travelers."
+      "bookingTips": "予算重視の旅行者向け。"
     },
     {
-      "name": "苏州汉庭",
+      "name": "蘇州漢庭",
       "nameEn": "Hanting Suzhou",
       "budget": "budget",
-      "priceRange": "¥120-250/night",
-      "address": "Multiple locations",
+      "priceRange": "1泊120〜250元",
+      "address": "複数の場所",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
       },
       "rating": 4.1,
       "highlights": [
-        "Budget-friendly",
-        "Clean",
-        "Metro access"
+        "リーズナブルな価格",
+        "清潔",
+        "地下鉄アクセス"
       ],
-      "bookingTips": "Check location before booking."
+      "bookingTips": "予約前に立地を確認。"
     },
     {
       "name": "苏州桔子水晶",
       "nameEn": "Crystal Orange Suzhou",
       "budget": "budget",
-      "priceRange": "¥200-400/night",
-      "address": "Near Guanqian",
+      "priceRange": "1泊200〜400元",
+      "address": "観前街付近",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
       },
       "rating": 4.3,
       "highlights": [
-        "Modern design",
-        "Good shower",
-        "Value"
+        "モダンなデザイン",
+        "シャワー良好",
+        "価値"
       ],
-      "bookingTips": "Design-conscious budget."
+      "bookingTips": "デザイン重視のリーズナブルな価格。"
     },
     {
       "name": "平江路民宿",
       "nameEn": "Pingjiang Lane Homestay",
       "budget": "mid",
-      "priceRange": "¥300-600/night",
-      "address": "Pingjiang Road",
+      "priceRange": "1泊300〜600元",
+      "address": "平江路",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
       },
       "rating": 4.7,
       "highlights": [
-        "Canal views",
-        "Traditional",
-        "Central"
+        "運河の眺め",
+        "伝統的",
+        "中心部"
       ],
-      "bookingTips": "Book well ahead for best rooms."
+      "bookingTips": "良い部屋を確保するには早めの予約が必須。"
     }
   ],
   "payment": [
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Universal in Suzhou",
+      "description": "蘇州のユニバーサル",
       "howToUse": [
-        "Download before arrival",
-        "Link card or account"
+        "到着前にダウンロード",
+        "カードまたは口座を連携"
       ],
       "tips": [
-        "Works at all restaurants and shops",
-        "English available"
+        "すべてのレストランやショップで利用可能",
+        "英語対応可能"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Accepted everywhere",
+      "description": "どこでも受け入れられる",
       "howToUse": [
-        "WeChat required",
-        "International cards work"
+        "WeChatが必要",
+        "国際カード対応"
       ],
       "tips": [
-        "Set to English",
-        "Required for small vendors"
+        "英語に設定",
+        "小規模店舗に必須"
       ]
     },
     {
       "method": "Cash",
       "icon": "cash",
-      "description": "Useful at traditional markets",
+      "description": "伝統的な市場で便利",
       "howToUse": [
-        "ATM widely available",
-        "Banks in city"
+        "ATMは広く利用可能",
+        "市内の銀行"
       ],
       "tips": [
-        "Keep 200¥ for markets",
-        "Most restaurants accept cards"
+        "市場用に200元を用意してください",
+        "ほとんどのレストランでカード利用可"
       ]
     }
   ],
   "culturalTips": [
     {
       "category": "gardens",
-      "title": "Garden Etiquette",
-      "content": "Suzhou's classical gardens are UNESCO sites. Walk quietly, don't touch plants. Morning visits offer best photos and fewer crowds. Each garden tells a philosophical story.",
+      "title": "庭園のマナー",
+      "content": "蘇州の古典庭園はユネスコ世界遺産です。静かに歩き、植物に触れないでください。朝の訪問は最高の写真と少ない人混みを提供します。各庭園は哲学的な物語を語っています。",
       "importance": "high"
     },
     {
       "category": "silk",
-      "title": "Silk Culture",
-      "content": "Suzhou is famous for silk production. Visit silk factory to see weaving demonstrations. Real silk costs more - bargain at markets. Embroidery is another famous craft.",
+      "title": "絹文化",
+      "content": "蘇州は絹生産で有名です。織り実演を見るために絹工場を訪問してください。本物の絹はより高額です。市場で値切りましょう。刺しゅう作品は別の有名な工芸です。",
       "importance": "medium"
     },
     {
       "category": "food",
-      "title": "Suzhou Cuisine",
-      "content": "Suzhou food is lighter and sweeter than Shanghai. Must-try: Song Shu (squirrel-shaped mandarin fish), Wusong duck, and crab dishes in season. Eat breakfast at traditional teahouses.",
+      "title": "蘇州料理",
+      "content": "蘇州の食べ物は上海より軽く甘いです。必食：松鼠魚（リス型タラ）、烏鬆鴨、季節の蟹料理。伝統的な茶屋で朝食をお楽しみください。",
       "importance": "high"
     },
     {
       "category": "water-towns",
-      "title": "Water Town Visits",
-      "content": "Zhouzhuang and Tongli are the main water towns. Zhouzhuang is more famous but crowded. Tongli is quieter. Go early morning. Combine two in one day is rushed.",
+      "title": "水鎮訪問",
+      "content": "周庄と同里が主な水郷です。周庄は有名ですが混雑しています。同里は静かです。朝の早い時間に行ってください。2つを1日で回るのは急ぎすぎます。",
       "importance": "medium"
     },
     {
       "category": "etiquette",
-      "title": "Greeting Etiquette",
-      "content": "Greet with both hands pressed together slightly鞠躬 is traditional. Handshakes also acceptable. Address people by title and surname.",
+      "title": "挨拶のマナー",
+      "content": "軽く両手を合わせてお辞儀するのは伝統です。握手も問題ありません。肩書きと姓で人を呼びましょう。",
       "importance": "medium"
     },
     {
       "category": "dining",
-      "title": "Dining Customs",
-      "content": "Wait for host to start eating. Leave some food on plate to show you are full. Tapping chopsticks is considered rude.",
+      "title": "食事のマナー",
+      "content": "主催者が食べ始めるのを待ってください。皿に少し食物を残して満腹であることを示してください。箸を叩くことは失礼とされています。",
       "importance": "high"
     },
     {
       "category": "dress",
-      "title": "Dress Code",
-      "content": "Smart casual for restaurants. Remove shoes when entering homes and some traditional buildings. Cover shoulders at temples.",
+      "title": "服装コード",
+      "content": "レストランではスマートカジュアル。住宅や一部の伝統的建造物に入る時は靴を脱いでください。寺院では肩を覆ってください。",
       "importance": "low"
     },
     {
       "category": "bargaining",
-      "title": "Shopping and Bargaining",
-      "content": "Bargaining expected at markets. Start at 30-40% of asking price. Be friendly but firm. Most fixed-price shops have reasonable prices.",
+      "title": "ショッピングと値切り",
+      "content": "市場では値切りが当然です。提示価格の30〜40%から交渉を始めましょう。親しみやすく、しかししっかりと交渉しましょう。ほとんどの定価店は手頃な価格です。",
       "importance": "medium"
     },
     {
       "category": "language",
-      "title": "Language Tips",
-      "content": "Mandarin is official. Suzhou dialect is soft and melodic. Learn basic phrases: 你好 (hello), 谢谢 (thank you), 请问 (excuse me).",
+      "title": "言語のヒント",
+      "content": "普通話は公用語です。蘇州方言は穏やかで旋律。基本フレーズを学びましょう：「ニーハオ」(こんにちは)、「シエシエ」(ありがとう)、「チンウェン」(すみません)。",
       "importance": "medium"
     },
     {
       "category": "transport",
-      "title": "Getting Around",
-      "content": "Suzhou is bike-friendly with flat terrain. Metro is efficient. Didi works well. Walking in old town reveals hidden gems.",
+      "title": "観光の回り方",
+      "content": "蘇州は平坦で自転車に適しています。地下鉄は効率的です。ディディ也很好。旧市街を歩くと隠れた宝物が見つかるでしょう。",
       "importance": "low"
     },
     {
       "category": "photography",
-      "title": "Photography Ethics",
-      "content": "Ask permission before photographing people. Some temples prohibit photography inside. Flash may damage ancient artifacts.",
+      "title": "撮影のマナー",
+      "content": "人を撮影する前に許可を求めてください。一部の寺院では館内撮影が禁止されています。フラッシュは古代の美術品に損傷を与える可能性があります。",
       "importance": "low"
     },
     {
       "category": "silk",
-      "title": "Silk Shopping Guide",
-      "content": "Real silk costs more. Check for certification. Silk fabric is sold by the meter. Haggle at markets but not at branded stores.",
+      "title": "絹製品ショッピングガイド",
+      "content": "本物の絹は高価です。認証を確認してください。絹生地はメートル単位で販売されています。市場で値切りましょうが、ブランド店ではしないでください。",
       "importance": "medium"
     },
     {
       "category": "garden",
-      "title": "Garden Visitation",
-      "content": "Arrive early (7:30-8:00) to avoid tour groups. Humble Administrator and Lingering are most famous. Garden pass saves money.",
+      "title": "庭園巡り",
+      "content": "団体を避けるために早く到着してください（7:30-8:00）。拙政園と留園が最も有名です。庭園パスでお金を節約できます。",
       "importance": "medium"
     },
     {
       "category": "seasonal",
-      "title": "Best Seasons",
-      "content": "Spring (April-May) for flowers and pleasant weather. Autumn (Sept-Nov) for chrysanthemums and cool evenings. Summer is hot and humid.",
+      "title": "最適な季節",
+      "content": "春（4月-5月）は花と心地よい天気。秋（9月-11月）は菊と涼しい夕べ。夏は暑く湿っています。",
       "importance": "low"
     },
     {
       "category": "tea",
-      "title": "Tea Culture",
-      "content": "Suzhou is famous for Biluochun tea. Visit tea houses for authentic experience. Best tea shops are near the gardens.",
+      "title": "茶文化",
+      "content": "蘇州は碧螺春茶で有名です。本格的な体験のためにお茶屋を訪問してください。最好のお茶屋は庭園の近くにあります。",
       "importance": "medium"
     },
     {
       "category": "arts",
-      "title": "Kunqu Opera",
-      "content": "Kunqu opera is Suzhou most famous performing art. Watch a performance at the Kunqu Museum or in gardens at night.",
+      "title": "昆曲",
+      "content": "昆曲は蘇州で最も有名な表演芸術です。昆曲博物館で、または夜の庭園で公演をお楽しみください。",
       "importance": "low"
     },
     {
       "category": "water",
-      "title": "Water Town Etiquette",
-      "content": "When visiting water towns like Zhouzhuang, be respectful of local residents. Do not block doorways or photograph interiors without permission.",
+      "title": "水郷のエチケット",
+      "content": "周庄のような水郷を訪問する際は、地元住民を尊重してください。玄関を塞いだり、許可なく室内を撮影しないでください。",
       "importance": "low"
     }
   ],
   "emergencyContacts": [
     {
       "type": "ambulance",
-      "name": "苏州急救中心",
-      "nameEn": "Suzhou Emergency Center",
+      "name": "蘇州救急センター",
+      "nameEn": "在広州シンガポール総領事館",
       "phone": "120",
-      "notes": "Suzhou Hospital has English interpretation"
+      "notes": "蘇州病院には英語通訳があります",
+      "nameJa": "蘇州救急センター"
     },
     {
       "type": "police",
-      "name": "苏州市公安局",
+      "name": "蘇州市公安局",
       "nameEn": "Suzhou Public Security Bureau",
       "phone": "110",
-      "notes": "Tourist police at major attractions"
+      "notes": "主要観光地に観光警察が配置されています",
+      "nameJa": "蘇州市公安局"
     },
     {
       "type": "hospital",
-      "name": "苏州大学附属第一医院",
+      "name": "蘇州大学付属第一病院",
       "nameEn": "First Affiliated Hospital of Soochow University",
       "phone": "+86 512 6522 3637",
-      "address": "188 Shantang Street",
+      "address": "山塘街188号",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6072
       },
-      "notes": "English-speaking staff available"
+      "notes": "英語対応スタッフあり",
+      "nameJa": "蘇州大学付属第一病院"
     },
     {
       "type": "embassy",
-      "name": "美国驻上海总领事馆",
+      "name": "在上海米国総領事館",
       "nameEn": "US Consulate General Shanghai",
       "phone": "+86 21 8011 2400",
-      "address": "Shanghai (nearest US consular services)",
-      "notes": "For US citizens in Suzhou region"
+      "address": "上海（最寄りの米国領事サービス）",
+      "notes": "蘇州地域の米国市民向け",
+      "nameJa": "在上海米国総領事館"
     },
     {
       "type": "tourist",
-      "name": "苏州旅游投诉",
+      "name": "蘇州観光苦情",
       "nameEn": "Suzhou Tourism Complaint",
       "phone": "12345",
-      "notes": "Tourism complaints and information"
+      "notes": "観光苦情・情報案内",
+      "nameJa": "蘇州観光苦情"
     },
     {
       "type": "fire",
-      "name": "苏州消防",
+      "name": "蘇州消防",
       "nameEn": "Suzhou Fire Department",
       "phone": "119",
-      "notes": "Fire emergencies"
+      "notes": "火災緊急",
+      "nameJa": "蘇州消防"
     },
     {
       "type": "embassy",
-      "name": "英国驻上海总领事馆",
+      "name": "在上海英国総領事館",
       "nameEn": "UK Consulate Shanghai",
       "phone": "+86 21 6010 9200",
-      "address": "Shanghai",
-      "notes": "For UK citizens in Suzhou"
+      "address": "上海",
+      "notes": "蘇州の英国市民向け",
+      "nameJa": "在上海英国総領事館"
     },
     {
       "type": "embassy",
-      "name": "德国驻上海总领事馆",
+      "name": "在上海ドイツ総領事館",
       "nameEn": "Germany Consulate Shanghai",
       "phone": "+86 21 6010 8800",
-      "address": "Shanghai",
-      "notes": "For German citizens in Suzhou"
+      "address": "上海",
+      "notes": "蘇州のドイツ市民向け",
+      "nameJa": "在上海ドイツ総領事館"
     },
     {
       "type": "embassy",
-      "name": "日本驻上海总领事馆",
+      "name": "在上海日本総領事館",
       "nameEn": "Japan Consulate Shanghai",
       "phone": "+86 21 6010 8500",
-      "address": "Shanghai",
-      "notes": "For Japanese citizens in Suzhou"
+      "address": "上海",
+      "notes": "蘇州の日本市民向け",
+      "nameJa": "在上海日本総領事館"
     },
     {
       "type": "embassy",
-      "name": "法国驻上海总领事馆",
+      "name": "在上海フランス総領事館",
       "nameEn": "France Consulate Shanghai",
       "phone": "+86 21 6010 8900",
-      "address": "Shanghai",
-      "notes": "For French citizens in Suzhou"
+      "address": "上海",
+      "notes": "蘇州のフランス市民向け",
+      "nameJa": "在上海フランス総領事館"
     },
     {
       "type": "hospital",
-      "name": "苏州九龙医院",
+      "name": "蘇州九龍医院",
       "nameEn": "Suzhou Kowloon Hospital",
       "phone": "+86 512 6262 6262",
-      "address": "Suzhou Industrial Park",
-      "notes": "Private hospital with English staff"
+      "address": "蘇州工業園区",
+      "notes": "英語スタッフがいる私立病院",
+      "nameJa": "蘇州九龍医院"
     },
     {
       "type": "hospital",
-      "name": "苏州市立医院",
+      "name": "蘇州市立医院",
       "nameEn": "Suzhou Municipal Hospital",
       "phone": "+86 512 6236 2222",
-      "address": "Suzhou",
-      "notes": "Public hospital, general services"
+      "address": "蘇州",
+      "notes": "公立病院、一般診療",
+      "nameJa": "蘇州市立医院"
     },
     {
       "type": "other",
-      "name": "苏州市民服务热线",
+      "name": "蘇州市民サービスホットライン",
       "nameEn": "Suzhou Citizen Hotline",
       "phone": "12345",
-      "notes": "General inquiries and assistance"
+      "notes": "一般的な問い合わせ・サポート",
+      "nameJa": "蘇州市民サービスホットライン"
     },
     {
       "type": "other",
-      "name": "时间标准服务",
+      "name": "時間標準サービス",
       "nameEn": "Time Standard Service",
       "phone": "12117",
-      "notes": "Time synchronization and standard frequency"
+      "notes": "時刻同期および標準周波数",
+      "nameJa": "時間標準サービス"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese, Suzhou dialect (soft)",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Tap water safe after boiling; bottled water recommended"
+    "language": "中国語（マンダリン）",
+    "currency": "人民元 (CNY/RMB)",
+    "visa": "ほとんどの国籍でビザが必要です。対象者は空港で72時間トランジットビザを取得できます。",
+    "timeZone": "UTC+8 (中国標準時)",
+    "electricity": "220V/50Hz、A/I タイププラグ",
+    "water": "水道水は飲めますが、ペットボトル推奨"
   }
 }

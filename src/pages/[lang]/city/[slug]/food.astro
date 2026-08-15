@@ -4,6 +4,7 @@ import "@/styles/global.css";
 import { citySlugs, getAdjacentCities, getCityBySlug } from "@/data/cities/index";
 import { getCityData } from "@/data/cities-i18n";
 import type { Restaurant } from "@/data/cities/types";
+import { ct } from "@/i18n/components-strings";
 import { translations } from "@/i18n/translations";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
@@ -22,6 +23,7 @@ if (!city) {
 
 const { prev, next } = getAdjacentCities(slug as string);
 const localCityName = translations[lang]?.["city." + city.slug + ".name"] ?? translations.en?.["city." + city.slug + ".name"] ?? city.nameEn;
+const isJapanese = lang === "ja";
 
 // Three-level filter from URL param
 const filterParam = Astro.url.searchParams.get("filter") || "all";
@@ -35,7 +37,9 @@ const filterGroups: FilterGroup[] = buildFilterGroups(allRestaurants);
 const currentFilter = filterGroups.find(g => g.id === filterParam) || filterGroups[0];
 
 const pageTitle = (translations[lang] || translations.en).cityFood?.title?.replace("{city}", localCityName) + " - ChinaConnect" ?? "Restaurants in " + localCityName + " - ChinaConnect";
-const pageDescription = `${city.nameEn} (${city.name}) Food Guide: complete Michelin, Black Pearl, and local picks`;
+const pageDescription = lang === "ja"
+  ? `${localCityName}のグルメガイド：ミシュラン、ブラックパール、地元の人気店を網羅`
+  : `${city.nameEn} (${city.name}) Food Guide: complete Michelin, Black Pearl, and local picks`;
 
 function getBadgeClass(type: Restaurant["type"]) {
   if (type === "michelin") return "badge-michelin";
@@ -43,7 +47,12 @@ function getBadgeClass(type: Restaurant["type"]) {
   return "badge-local";
 }
 
-function getBadgeLabel(type: Restaurant["type"]) {
+function getBadgeLabel(type: Restaurant["type"], lang: string) {
+  if (lang === "ja") {
+    if (type === "michelin") return "ミシュラン";
+    if (type === "blackpearl") return "ブラックパール";
+    return "地元のおすすめ";
+  }
   if (type === "michelin") return "Michelin";
   if (type === "blackpearl") return "Black Pearl";
   return "Local Favorite";
@@ -74,9 +83,9 @@ function getBadgeLabel(type: Restaurant["type"]) {
       </nav>
 
       <h1 class="text-3xl md:text-4xl font-bold text-white mb-2 flex items-center gap-3">
-        <span>🍜</span> <span data-i18n="foodPage.heroCityFood">{city.nameEn} Food</span>
+        <span>🍜</span> <span>{isJapanese ? `${localCityName}のグルメ` : `${city.nameEn} Food`}</span>
       </h1>
-      <p class="text-orange-100" data-i18n="foodPage.cityEmptySubtitle">Discover Michelin, Black Pearl, and locally loved picks</p>
+      <p class="text-orange-100" data-i18n="foodPage.cityEmptySubtitle">{isJapanese ? `ミシュラン、黒真珠、地元の人気店など選りすぐり` : `Discover Michelin, Black Pearl, and locally loved picks`}</p>
 
       <!-- Quick stats (dynamic from filterGroups) -->
       <div class="flex flex-wrap items-center gap-4 mt-4 text-sm text-orange-100">
@@ -168,9 +177,9 @@ function getBadgeLabel(type: Restaurant["type"]) {
               <div class="flex items-start justify-between gap-2">
                 <div class="flex-1 min-w-0">
                   <h3 class="text-lg font-semibold text-gray-900 leading-tight group-hover:text-blue-600 transition-colors">
-                    {restaurant.nameEn}
+                    {lang === "ja" ? restaurant.name : restaurant.nameEn}
                   </h3>
-                  <p class="text-gray-500 text-sm truncate">{restaurant.name}</p>
+                  <p class="text-gray-500 text-sm truncate">{lang === "ja" ? restaurant.nameEn : restaurant.name}</p>
                 </div>
                 {/* Highlight badges */}
                 <div class="shrink-0 flex flex-col gap-1 items-end">
@@ -195,9 +204,9 @@ function getBadgeLabel(type: Restaurant["type"]) {
             {/* Type badge */}
             <div class="flex flex-wrap items-center gap-2 mb-3">
               <span class={`px-2.5 py-0.5 rounded-full text-xs font-semibold border ${getBadgeClass(restaurant.type)}`}>
-                {getBadgeLabel(restaurant.type)}
-                {restaurant.type === "michelin" && restaurant.star ? `${restaurant.star}-star` : ""}
-                {restaurant.type === "blackpearl" && restaurant.diamond ? `${restaurant.diamond}-diamond` : ""}
+                {getBadgeLabel(restaurant.type, lang)}
+                {restaurant.type === "michelin" && restaurant.star ? (lang === "ja" ? `${restaurant.star}つ星` : `${restaurant.star}-star`) : ""}
+                {restaurant.type === "blackpearl" && restaurant.diamond ? (lang === "ja" ? `${restaurant.diamond}ダイヤ` : `${restaurant.diamond}-diamond`) : ""}
               </span>
               <span class="text-gray-500 text-sm">{restaurant.cuisine}</span>
               {restaurant.hours && (
@@ -329,28 +338,28 @@ function getBadgeLabel(type: Restaurant["type"]) {
         <a href="https://www.dianping.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200 hover:border-orange-300 hover:shadow-sm transition-all">
           <span class="text-xl">🔍</span>
           <div>
-            <div class="font-medium text-gray-900 text-sm">Dianping</div>
+            <div class="font-medium text-gray-900 text-sm">{ct(lang, "app_dianping", "Dianping")}</div>
             <div class="text-xs text-gray-500" data-i18n="cityFood.dianpingDesc">China's largest local-life service platform</div>
           </div>
         </a>
         <a href="https://www.meituan.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200 hover:border-orange-300 hover:shadow-sm transition-all">
           <span class="text-xl">🛵</span>
           <div>
-            <div class="font-medium text-gray-900 text-sm">Meituan</div>
+            <div class="font-medium text-gray-900 text-sm">{ct(lang, "app_meituan", "Meituan")}</div>
             <div class="text-xs text-gray-500" data-i18n="cityFood.meituanDesc">Food delivery & reviews platform</div>
           </div>
         </a>
         <a href="https://www.xiaohongshu.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200 hover:border-orange-300 hover:shadow-sm transition-all">
           <span class="text-xl">📕</span>
           <div>
-            <div class="font-medium text-gray-900 text-sm">Xiaohongshu</div>
+            <div class="font-medium text-gray-900 text-sm">{ct(lang, "app_xiaohongshu", "Xiaohongshu")}</div>
             <div class="text-xs text-gray-500" data-i18n="cityFood.xiaohongshuDesc">Local food exploration guides</div>
           </div>
         </a>
         <a href="https://guide.michelin.com/cn/zh_CN/restaurants" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200 hover:border-orange-300 hover:shadow-sm transition-all">
           <span class="text-xl">⭐</span>
           <div>
-            <div class="font-medium text-gray-900 text-sm">Michelin Guide</div>
+            <div class="font-medium text-gray-900 text-sm">{ct(lang, "app_michelin_guide", "Michelin Guide")}</div>
             <div class="text-xs text-gray-500" data-i18n="cityFood.michelinDesc">International authoritative restaurant ratings</div>
           </div>
         </a>
@@ -488,17 +497,17 @@ function getBadgeLabel(type: Restaurant["type"]) {
   <!-- Authoritative Data Sources -->
   <section class="container-custom py-8 mt-8 border-t border-gray-200">
     <div class="max-w-3xl mx-auto">
-      <h2 class="text-lg font-semibold text-gray-700 mb-3" data-i18n="cityFood.dataSourcesHeading">📊 Data Sources & References</h2>
+      <h2 class="text-lg font-semibold text-gray-700 mb-3"><span aria-hidden="true">📊</span> <span data-i18n="cityFood.dataSourcesHeading">データソース＆参考文献</span></h2>
       <div class="bg-gray-50 rounded-xl p-5 text-sm text-gray-600 space-y-2">
-        <p><span data-i18n="cityFood.dataSourcesDesc">Restaurant data compiled from authoritative sources. Verify details before visiting:</span></p>
+        <p><span data-i18n="cityFood.dataSourcesDesc">レストランデータは権威ある情報源から編集されています。訪問前に詳細を確認することをお勧めします：</span></p>
         <ul class="list-disc list-inside space-y-1 ml-2">
-          <li><a href="https://www.dianping.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Dianping (���ڵ���)</a> — China's largest restaurant review platform</li>
-          <li><a href="https://www.michelin.com/en/restaurant-and-hotel/" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Michelin Guide</a> — Official Michelin star ratings</li>
-          <li><a href="https://www.meishij.net" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Meishij (��ʳ��)</a> — Chinese cuisine database</li>
-          <li><a href="https://www.ctrip.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Ctrip / Trip.com (Я��)</a> — Travel & dining reviews</li>
-          <li><a href="https://www.mafengwo.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Mafengwo (马蜂窝)</a> — Travel community reviews</li>
+          <li><a href="https://www.dianping.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">ダイアンピン (大众点评 Dianping)</a> — 中国最大のレストランレビュープラットフォーム</li>
+          <li><a href="https://www.michelin.com/en/restaurant-and-hotel/" target="_blank" rel="noopener" class="text-blue-600 hover:underline">ミシュランガイド Michelin Guide</a> — ミシュランの公式評価</li>
+          <li><a href="https://www.meishij.net" target="_blank" rel="noopener" class="text-blue-600 hover:underline">メイシイ (美食杰 Meishij)</a> — 中華料理レシピデータベース</li>
+          <li><a href="https://www.ctrip.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">シートリップ (携程 Ctrip) / Trip.com</a> — 旅行とダイニングレビュー</li>
+          <li><a href="https://www.mafengwo.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">マーフェンウォ (马蜂窝 Mafengwo)</a> — 旅行コミュニティレビュー</li>
         </ul>
-        <p class="text-xs text-gray-400 mt-3">data-i18n="cityFood.disclaimer"Phone numbers and addresses may change. We recommend verifying via the restaurant's official channels or calling ahead.</p>
+        <p class="text-xs text-gray-400 mt-3"><span data-i18n="cityFood.disclaimer">電話番号と住所は変更される場合があります。公式チャンネルで確認するか、事前に電話で確認することをお勧めします。</span></p>
       </div>
     </div>
   </section>

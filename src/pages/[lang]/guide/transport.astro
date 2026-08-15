@@ -16,8 +16,8 @@ import { generateBreadcrumbSchema, generateHowToSchema, generateJsonLdScript } f
 import { getLangFromUrl } from '@/i18n/utils';
 
 // Transport Guide page SEO
-const pageTitle = translations.en.guidePage?.transportTitle || "Transport Guide - ChinaConnect";
-const pageDescription = translations.en.guidePage?.transportDescription || "Complete transport guide for traveling in China. Airport arrival, metro, bus, taxi, high-speed rail, and inter-city transport with step-by-step instructions.";
+const pageTitle = (translations[lang] || translations.en).guidePage?.transportTitle || "Transport Guide - ChinaConnect";
+const pageDescription = (translations[lang] || translations.en).guidePage?.transportDescription || "Complete transport guide for traveling in China. Airport arrival, metro, bus, taxi, high-speed rail, and inter-city transport with step-by-step instructions.";
 
 // Schema.org JSON-LD for Transport Guide
 const transportSchemas = [
@@ -90,9 +90,10 @@ const transportSchemas = [
     <section class="mt-12">
       <EmbeddedAppRecommendation
         client:visible
+        lang={lang}
         categories={["transport", "maps"]}
-        title="Transport & Navigation Apps"
-        subtitle="Essential apps for getting around China"
+        title={lang === "ja" ? "交通・ナビゲーションアプリ" : "Transport & Navigation Apps"}
+        subtitle={lang === "ja" ? "中国国内の移動に必須のアプリ" : "Essential apps for getting around China"}
       />
     </section>
   </main>

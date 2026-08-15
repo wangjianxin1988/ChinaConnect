@@ -9,14 +9,14 @@
     "lng": 120.1551
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Hangzhou, the capital of Zhejiang Province, is famous for its natural beauty and historical culture. Home to West Lake, a UNESCO World Heritage site, and the ancient water town ambiance of the Grand Canal. Known as 'Paradise on Earth' for its mild climate, lush greenery, and elegant gardens. A leading tech hub as headquarters of Alibaba.",
+  "description": "Hangzhou, capitale de la province du Zhejiang, est célèbre pour sa beauté naturelle et sa culture historique. Abritant le Lac de l'Ouest, site du patrimoine mondial de l'UNESCO, et l'ambiance ancienne de ville d'eau du Grand Canal. Connue comme le 'Paradis sur Terre' pour son climat doux, sa végétation luxuriante et ses jardins élégants. Un hub technologique majeur car siège d'Alibaba.",
   "coverImage": "/img/ext/c71341b19c1d.webp",
   "highlights": [
-    "West Lake - UNESCO World Heritage",
-    "Xianghu Lake - New scenic area",
-    "Hefang Street - Historic shopping street",
-    "Lingyin Temple - Ancient Buddhist temple",
-    "Xixi Wetland - Largest urban wetland"
+    "Lac Ouest - Patrimoine mondial de l'UNESCO",
+    "Lac Xianghu - Nouvelle zone pittoresque",
+    "Rue Hefang - Rue commerçante historique",
+    "Temple de Lingyin - Temple bouddhique ancien",
+    "Marais de Xixi - Plus grand marais urbain"
   ],
   "climate": {
     "type": "Subtropical monsoon",
@@ -35,36 +35,36 @@
     {
       "id": "west-lake",
       "name": "西湖",
-      "nameEn": "West Lake",
+      "nameEn": "Lac Ouest",
       "image": "/img/ext/4dc42d2df4a3.webp",
       "category": "natural",
-      "description": "A UNESCO World Heritage site and the iconic heart of Hangzhou. A freshwater lake with surrounding gardens, pagodas, and causeways creating stunning landscapes.",
-      "address": "West Lake Scenic Area, Xihu District",
+      "description": "Un site du patrimoine mondial de l'UNESCO et le cœur emblématique de Hangzhou. Un lac d'eau douce avec des jardins environnants, des pagodes et des digues créant des paysages à couper le souffle.",
+      "address": "Zone pittoresque du Lac Ouest, district de Xihu",
       "coordinates": {
         "lat": 30.2468,
         "lng": 120.1488
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free (some attractions within require tickets)",
-      "recommendedVisitTime": "Half to full day",
+      "openingHours": "Ouvert 24 heures",
+      "ticketPrice": "Gratuit (certaines attractions a l'interieur necessitent un billet)",
+      "recommendedVisitTime": "Demi-journée à une journée",
       "highlights": [
-        "Leifeng Pagoda",
-        "Three Pools Mirroring the Moon",
-        "Broken Bridge",
-        "Su Causeway",
-        "Lingyin Temple nearby"
+        "Pagode de Leifeng",
+        "Les Trois Étangs reflétant la Lune",
+        "Pont Brisé",
+        "Digues de Su",
+        "Temple de Lingyin à proximité"
       ],
-      "tips": "Rent a bike to circle the lake. Take a boat ride to see the Three Pools. Visit Leifeng Pagoda at sunset. Spring for peach blossoms, autumn for lotus.",
+      "tips": "Louez un vélo pour faire le tour du lac. Faites une promenade en bateau pour voir les Trois Étangs. Visitez la pagode de Leifeng au coucher du soleil. Le printemps pour les fleurs de pêcher, l'automne pour les lotus.",
       "phone": "+86 571 8717 9617"
     },
     {
       "id": "xixi-wetland",
       "name": "西溪国家湿地公园",
-      "nameEn": "Xixi National Wetland Park",
+      "nameEn": "Parc national des zones humides de Xixi",
       "image": "/img/ext/48b4b129bd4f.webp",
       "category": "natural",
-      "description": "The largest urban wetland in China with unique ecosystem, traditional fishing villages, and serene natural beauty.",
-      "address": "Xixi National Wetland Park, Xihu District",
+      "description": "Le plus grand marais urbain de Chine avec un écosystème unique, des villages de pêche traditionnels et une beauté naturelle sereine.",
+      "address": "Parc national des zones humides de Xixi, district de Xihu",
       "coordinates": {
         "lat": 30.3028,
         "lng": 120.0652
@@ -78,7 +78,7 @@
         "Lac Magua",
         "Chaumière de Luo Yang"
       ],
-      "tips": "Take the boat tour for best experience. Visit in early morning for fewer crowds. Combine with nearby West Lake.",
+      "tips": "Faites la visite en bateau pour une meilleure expérience. Visitez tôt le matin pour éviter les foules. Combinez avec le lac de l'Ouest à proximité.",
       "phone": "+86 057 1 0249 0241"
     },
     {
@@ -93,11 +93,11 @@
         "lat": 30.2372,
         "lng": 120.1022
       },
-      "openingHours": "06:30-17:30 (Summer), 07:00-17:30 (Winter)",
-      "ticketPrice": "45¥ (temple), additional 55¥ for Feilai Feng peak",
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "45¥",
       "recommendedVisitTime": "2 heures",
       "highlights": [
-        "Feilai Feng peak",
+        "Temple",
         "Jardins",
         "Pagodes",
         "Grotte des 500 Arhats"
@@ -132,7 +132,7 @@
     {
       "id": "grand-canal",
       "name": "京杭大运河",
-      "nameEn": "Grand Canal",
+      "nameEn": "Canal de Hangzhou",
       "image": "/img/ext/f90432ef02d5.webp",
       "category": "historical",
       "description": "Le plus long canal antique au monde, s'étendant sur 1794 km de Beijing à Hangzhou. La section de Hangzhou propose des promenades en bateau à travers des villages historiques au bord de l'eau.",
@@ -156,7 +156,7 @@
     {
       "id": "songcheng",
       "name": "宋城",
-      "nameEn": "Songcheng",
+      "nameEn": "Ville des Song",
       "image": "/img/ext/bf345450bd78.webp",
       "category": "cultural",
       "description": "Un parc a theme recreant la culture de la dynastie Song avec des representations, une architecture traditionnelle et des experiences interactives.",
@@ -266,8 +266,8 @@
       "highlights": [
         "Six ponts",
         "Saules",
-        "Spring plum blossoms",
-        "Bird watching"
+        "Fleurs de pruniers printanières",
+        "Observation des oiseaux"
       ],
       "tips": "Promenez-vous ou faites du vélo sur la digue au printemps. Chaque pont a un nom et une vue uniques. Commencez à Hua Gang et terminez au pic Nan. Idéal en début de matinée.",
       "phone": "+86 057 1 7541 5353"
@@ -275,35 +275,35 @@
     {
       "id": "quyuan-fenghe",
       "name": "曲院风荷",
-      "nameEn": "Lotus in the Breeze at Quyuan Garden",
+      "nameEn": "Lotus dans la brise au jardin Quyuan",
       "image": "/img/ext/ffb75e0b0bd5.webp",
       "category": "natural",
-      "description": "One of the Ten Views of West Lake. A classic garden famous for lotus flowers and lotus root viewing in summer.",
-      "address": "Northwest of West Lake, Xihu District",
+      "description": "L'un des Dix Points de vue du lac de l'Ouest. Un jardin classique célèbre pour les fleurs de lotus et la racine de lotus en été.",
+      "address": "Nord-ouest du lac de l'Ouest, district de Xihu",
       "coordinates": {
         "lat": 30.2522,
         "lng": 120.1312
       },
       "openingHours": "07:00-17:30",
-      "ticketPrice": "Free (garden), 15¥ for lotus viewing area",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "Gratuit (jardin), 15¥ pour la zone de visionnage des lotus",
+      "recommendedVisitTime": "1 heure",
       "highlights": [
-        "Lotus pond",
-        "Wind-resistant bamboo",
-        "Hexagonal pavilion",
-        "Bai Juyi statue"
+        "Étang de lotus",
+        "Bambous résistant au vent",
+        "Pavillon hexagonal",
+        "Statue de Bai Juyi"
       ],
-      "tips": "Peak lotus season is July-August. Come early morning for fewer crowds and better photos. The bamboo grove is refreshing in summer.",
+      "tips": "La saison maximale des lotus est juillet-août. Venez tôt le matin pour moins de foules et de meilleures photos. La bambouseraie est rafraîchissante en été.",
       "phone": "+86 057 1 3155 2121"
     },
     {
       "id": "pinghu-qiuyue",
       "name": "平湖秋月",
-      "nameEn": "Autumn Moon over the Calm Lake",
+      "nameEn": " Lune d'automne sur le lac calme",
       "image": "/img/ext/f40cca09aac0.webp",
       "category": "natural",
-      "description": "One of the Ten Views of West Lake. A garden pavilion offering the best view of the full moon reflecting on West Lake.",
-      "address": "Guanghua Temple, Xihu District",
+      "description": "L'un des Dix Points de vue du lac de l'Ouest. Un jardin-pavillon offrant la meilleure vue de la lune pleine se reflétant sur le lac de l'Ouest.",
+      "address": "Temple Guanghua, district de Xihu",
       "coordinates": {
         "lat": 30.2542,
         "lng": 120.1488
@@ -312,449 +312,449 @@
       "ticketPrice": "15¥",
       "recommendedVisitTime": "45 minutes",
       "highlights": [
-        "Moon viewing pavilion",
-        "Ancient cypress trees",
-        "Reflections on water"
+        "Pavillon d'observation de la lune",
+        "Cyprès anciens",
+        "Reflets sur l'eau"
       ],
-      "tips": "Best visited during Mid-Autumn Festival. The garden transforms with lanterns at night. Classic Chinese garden architecture.",
+      "tips": "最好在中秋节期间参观。花园在夜间因灯笼而变换。经典的中国园林建筑。",
       "phone": "+86 057 1 4876 6196"
     },
     {
       "id": "huagang-guanyu",
       "name": "花港观鱼",
-      "nameEn": "Flowery Harbor Watching Fish",
+      "nameEn": "Port fleuri observant les poissons",
       "image": "/img/ext/9f32b9507fe6.webp",
       "category": "natural",
-      "description": "One of the Ten Views of West Lake. A garden famous for colorful carp in a pond fed by water from Nanhu Peak.",
-      "address": "Southwest of West Lake, Xihu District",
+      "description": "L'un des Dix Points de vue du Lac de l'Ouest. Un jardin célèbre pour ses carpes colorées dans un étang alimenté par l'eau du pic Nanhu.",
+      "address": "Sud-ouest du Lac de l'Ouest, quartier de Xihu",
       "coordinates": {
         "lat": 30.2382,
         "lng": 120.1322
       },
       "openingHours": "07:00-17:30",
-      "ticketPrice": "Free",
+      "ticketPrice": "Gratuit",
       "recommendedVisitTime": "45 minutes",
       "highlights": [
-        "Red fish pond",
-        "Peony garden",
-        "Kangshan Bridge",
-        "Hongxiang Pavilion"
+        "Étang aux poissons rouges",
+        "Jardin des pivoines",
+        "Pont de Kangshan",
+        "Pavillon Hongxiang"
       ],
-      "tips": "The carp are especially active around 10am when fed. Peak peony season is April. The park connects to Su Causeway.",
+      "tips": "Les carpes sont particulièrement actives vers 10h lors du nourrissage. La pleine saison des pivoines est en avril. Le parc est relié à la digue Su.",
       "phone": "+86 057 1 5131 0682"
     },
     {
       "id": "liulang-wenying",
       "name": "柳浪闻莺",
-      "nameEn": "Willow Waves and Orioles",
+      "nameEn": "Vagues de saules et loriots",
       "image": "/img/ext/72e9d04a7c8f.webp",
       "category": "natural",
-      "description": "One of the Ten Views of West Lake. A garden with thousands of willow trees and oriole birds singing in spring.",
-      "address": "South shore of West Lake, Xihu District",
+      "description": "L'un des Dix Points de vue du Lac de l'Ouest. Un jardin avec des milliers de saules et des loriots chantant au printemps.",
+      "address": "Rive sud du Lac de l'Ouest, quartier de Xihu",
       "coordinates": {
         "lat": 30.2362,
         "lng": 120.1522
       },
       "openingHours": "07:00-17:30",
-      "ticketPrice": "Free",
+      "ticketPrice": "Gratuit",
       "recommendedVisitTime": "45 minutes",
       "highlights": [
-        "Nanshan Road",
-        "Oriole singing",
-        "Spring willows",
-        "Qinglin Pavilion"
+        "Route de Nanshan",
+        "Chant des loriots",
+        "Saules printaniers",
+        "Pavilion Qinglin"
       ],
-      "tips": "Best in early spring when willows turn green. The orioles are most vocal in April-May. Great for morning walks.",
+      "tips": "Idéal au début du printemps lorsque les saules verdisent. Les loriots sont les plus chantants en avril-mai. Idéal pour les promenades matinales.",
       "phone": "+86 057 1 8660 2052"
     },
     {
       "id": "santan-yinyue",
       "name": "三潭印月",
-      "nameEn": "Three Pools Mirroring the Moon",
+      "nameEn": "Les Trois Étangs reflétant la Lune",
       "image": "/img/ext/309f30e43563.webp",
       "category": "natural",
-      "description": "One of the Ten Views of West Lake. A small island with three stone pagodas, iconic symbol of West Lake appearing on the 1 yuan note.",
-      "address": "West Lake, accessible by boat",
+      "description": "L'un des Dix Points de vue du Lac de l'Ouest. Une petite île avec trois pagodes de pierre, symbole emblématique du Lac de l'Ouest apparaissant sur le billet de 1 yuan.",
+      "address": "Lac de l'Ouest, accessible en bateau",
       "coordinates": {
         "lat": 30.2388,
         "lng": 120.1442
       },
-      "openingHours": "Boat tours: 07:30-16:00",
-      "ticketPrice": "55¥ (includes island and return boat)",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "Visites en bateau : 07h30-16h00",
+      "ticketPrice": "55¥ (inclut l'île et le billet de retour en bateau)",
+      "recommendedVisitTime": "1-2 heures",
       "highlights": [
-        "Three stone pagodas",
-        "Lotus flowers",
-        "Nine-curve bridge",
-        "Bronze ox statue"
+        "Trois pagodes de pierre",
+        "Fleurs de lotus",
+        "Pont aux neuf courbes",
+        "Statue de bronze du bœuf"
       ],
-      "tips": "Take a traditional wooden boat for best experience. At night during Mid-Autumn, 33 moons reflect (one real + 32 from candle light). The island has a excellent tea house.",
+      "tips": "Prenez un bateau en bois traditionnel pour une meilleure expérience. La nuit pendant la fête de la Lune, 33 lunes se reflètent (une vraie + 32 provenant de la lumière des bougies). L'île possède une excellente maison de thé.",
       "phone": "+86 057 1 2656 2321"
     },
     {
       "id": "leifeng-pagoda",
       "name": "雷峰塔",
-      "nameEn": "Leifeng Pagoda",
+      "nameEn": "Pagode de Leifeng",
       "image": "/img/ext/61504a895ed8.webp",
       "category": "cultural",
-      "description": "A five-story octagonal pagoda on Sunset Hill, rebuilt in 2002 after the original collapsed in 1924. Famous from Legend of White Snake.",
-      "address": "15 Nanshan Road, Xihu District",
+      "description": "Une pagode octogonale à cinq étages sur la colline du Coucher de Soleil, reconstruite en 2002 après l'effondrement de l'originale en 1924. Célèbre grâce à la Légende du Serpent Blanc.",
+      "address": "15 route de Nanshan, district de Xihu",
       "coordinates": {
         "lat": 30.2312,
         "lng": 120.1482
       },
-      "openingHours": "08:00-17:30 (summer until 18:00)",
+      "openingHours": "08h00-17h30 (été jusqu'à 18h00)",
       "ticketPrice": "40¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 heures",
       "highlights": [
-        "View of West Lake from top",
-        "White Snake legend exhibition",
-        "Ancient pagoda foundations",
-        "Sunset views"
+        "Vue sur le lac de l'Ouest depuis le sommet",
+        "Exposition de la légende du Serpent Blanc",
+        "Fondations anciennes de la pagode",
+        "Vues sur le coucher du soleil"
       ],
-      "tips": "Take the escalator to top for panoramic views. Visit at sunset for golden hour photos. The reconstructed pagoda houses archaeological finds.",
+      "tips": "Prenez l'escalator jusqu'au sommet pour une vue panoramique. Visitez au coucher du soleil pour des photos à l'heure dorée. La pagode reconstruite abrite des découvertes archéologiques.",
       "phone": "+86 571 8717 9617"
     },
     {
       "id": "qiandao-lake",
       "name": "千岛湖",
-      "nameEn": "Qiandao Lake (Thousand Islands)",
+      "nameEn": "Lac Qiandao (Mille Îles)",
       "image": "/img/ext/c8dfc88e4bbb.webp",
       "category": "natural",
-      "description": "A massive reservoir with over 1,000 islands, known for crystal clear water, seafood, and vacation resorts. About 2 hours from Hangzhou.",
-      "address": "Qiandao Lake, Chun'an County",
+      "description": "Un immense réservoir avec plus de 1000 îles, connu pour son eau cristalline, ses fruits de mer et ses stations de vacances. À environ 2 heures de Hangzhou.",
+      "address": "Lac Qiandao, district de Chun'an",
       "coordinates": {
         "lat": 29.6152,
         "lng": 119.0122
       },
-      "openingHours": "Open 24 hours (boat tours 08:00-16:00)",
-      "ticketPrice": "130¥ (boat tour), island hopping extra",
-      "recommendedVisitTime": "Full day",
+      "openingHours": "Ouvert 24h (visites en bateau 08h00-16h00)",
+      "ticketPrice": "130¥ (visite en bateau), supplément pour sauter d'île en île",
+      "recommendedVisitTime": "Journée entière",
       "highlights": [
-        "Thousand Islands view",
-        "Fresh fish meals",
-        "Water activities",
-        "Island hopping"
+        "Vue des Mille Îles",
+        "Repas de poisson frais",
+        "Activités nautiques",
+        "Saut d'île en île"
       ],
-      "tips": "Stay overnight at lakeside resort for better experience. Best fresh fish in autumn. The water is clearest in autumn. Ferry between islands is scenic.",
+      "tips": "Séjournez une nuit dans un complexe au bord du lac pour une meilleure expérience. Le meilleur poisson frais en automne. L'eau est la plus claire en automne. Le ferry entre les îles offre des paysages pittoresques.",
       "phone": "+86 057 1 8445 2837"
     },
     {
       "id": "jiuxi-eighteen",
       "name": "九溪十八涧",
-      "nameEn": "Nine Creeks and Eighteen Gullies",
+      "nameEn": "Neuf ruisseaux et dix-huit ravins",
       "image": "/img/ext/f5e115604d3c.webp",
       "category": "natural",
-      "description": "A scenic hiking area through bamboo forests, tea plantations, and mountain streams connecting Longjing tea area to West Lake.",
-      "address": "Jiuxi, Xihu District",
+      "description": "Une zone de randonnée pittoresque à travers des forêts de bambous, des plantations de thé et des ruisseaux de montagne reliant la zone théicole de Longjing au Lac de l'Ouest.",
+      "address": "Jiuxi, district de Xihu",
       "coordinates": {
         "lat": 30.1822,
         "lng": 120.0822
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "Ouvert 24 heures",
+      "ticketPrice": "Gratuit",
+      "recommendedVisitTime": "3-4 heures",
       "highlights": [
-        "Bamboo forest",
-        "Stream walking",
-        "Tea plantations",
-        "Jiuxi Village"
+        "Forêt de bambous",
+        "Marche dans les ruisseaux",
+        "Plantations de thé",
+        "Village de Jiuxi"
       ],
-      "tips": "Wear water shoes for stream crossing (5-10 times). Summer is cool retreat from city heat. Best in spring for azaleas. The full hike takes 3-4 hours.",
+      "tips": "Portez des chaussures étanches pour traverser les ruisseaux (5-10 fois). L'été offre une fraîcheur pour fuir la chaleur de la ville. Le printemps est idéal pour les azalées. La randonnée complète dure 3-4 heures.",
       "phone": "+86 057 1 5422 5540"
     },
     {
       "id": "canal-square",
       "name": "运河广场",
-      "nameEn": "Canal Square",
+      "nameEn": "Place du Canal",
       "image": "/img/ext/6aff39cf893f.webp",
       "category": "cultural",
-      "description": "A riverside plaza at the southern end of the Grand Canal in Hangzhou, with historical displays and shopping areas.",
-      "address": "Canal Square, Gongshu District",
+      "description": "Une plaza riverside à l'extrémité sud du Grand Canal à Hangzhou, avec des expositions historiques et des zones commerciales.",
+      "address": "Canal Square, district de Gongshu",
       "coordinates": {
         "lat": 30.2852,
         "lng": 120.1422
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "Ouvert 24 heures",
+      "ticketPrice": "Gratuit",
+      "recommendedVisitTime": "1-2 heures",
       "highlights": [
-        "Water clock tower",
-        "Canal Museum",
-        "Night market",
-        "Riverside park"
+        "Tour d'horloge hydraulique",
+        "Musée du Canal",
+        "Marché de nuit",
+        "Parc fluvial"
       ],
-      "tips": "Evening is best when fountain show and lighting are on. The Canal Museum is excellent and free. Connect with boat tour of canal.",
+      "tips": "Le soir est idéal lorsque le spectacle de fontaine et l'éclairage sont allumés. Le Musée du Canal est excellent et gratuit. Combinez avec une visite en bateau du canal.",
       "phone": "+86 057 1 1394 2316"
     },
     {
       "id": "song-imperial-street",
       "name": "南宋御街",
-      "nameEn": "Southern Song Imperial Street",
+      "nameEn": "Rue Impériale du Sud des Song",
       "image": "/img/ext/ec6bda6c85d6.webp",
       "category": "historical",
-      "description": "The main street of ancient capital during Southern Song Dynasty, now a pedestrian walkway with historical buildings and shops.",
-      "address": "Zhongshan Middle Road, Shangcheng District",
+      "description": "La rue principale de l'ancienne capitale sous la dynastie Song du Sud, aujourd'hui une rue piétonne avec des bâtiments historiques et des boutiques.",
+      "address": "Route Zhongshan Middle, district de Shangcheng",
       "coordinates": {
         "lat": 30.2482,
         "lng": 120.1682
       },
-      "openingHours": "Open 24 hours (shops 10:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "Ouvert 24h/24 (boutiques 10h00-22h00)",
+      "ticketPrice": "Gratuit",
+      "recommendedVisitTime": "1-2 heures",
       "highlights": [
-        "Medieval architecture",
-        "Traditional shops",
-        "Dazhang Lane",
-        "Historical markers"
+        "Architecture médiévale",
+        "Magasins traditionnels",
+        "Allée Dazhang",
+        "Marqueurs historiques"
       ],
-      "tips": "Start from Nanpeng (Southern Bridge) and walk north. Try local snacks along the way. The street connects to Hefang Street area.",
+      "tips": "Commencez à Nanpeng (Pont du Sud) et marchez vers le nord. Goûtez les en-cas locaux en chemin. La rue relie le quartier de la rue Hefang.",
       "phone": "+86 057 1 8774 1384"
     },
     {
       "id": "qinghefang",
       "name": "清河坊",
-      "nameEn": "Qinghefang Historical Block",
+      "nameEn": "Quartier historique de Qinghefang",
       "image": "/img/ext/ca7ec0831bf7.webp",
       "category": "cultural",
-      "description": "One of the best preserved historical streets in Hangzhou with traditional Hangzhou architecture, shops and traditional crafts.",
-      "address": "Qinghefang, Shangcheng District",
+      "description": "L'une des rues historiques les mieux préservées de Hangzhou avec une architecture traditionnelle de Hangzhou, des boutiques et des artisanats traditionnels.",
+      "address": "Qinghefang, district de Shangcheng",
       "coordinates": {
         "lat": 30.2472,
         "lng": 120.1672
       },
-      "openingHours": "Open 24 hours (shops 09:00-21:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "Ouvert 24h/24 (magasins 09:00-21:00)",
+      "ticketPrice": "Gratuit",
+      "recommendedVisitTime": "1-2 heures",
       "highlights": [
-        "Traditional medicine halls",
-        "Craft workshops",
-        "Historical statues",
-        "Local snacks"
+        " Pharmacies traditionnelles chinoises",
+        "Ateliers d'artisanat",
+        "Statues historiques",
+        "Snacks locaux"
       ],
-      "tips": "Visit in evening for atmosphere. The Wang Yongquan (herbal medicine) shop is famous. Don't miss the traditional Chinese pastry shops.",
+      "tips": "Visitez-le le soir pour l'atmosphère. La boutique Wang Yongquan (médecine chinoise) est célèbre. Ne manquez pas les boulangeries traditionnelles chinoises.",
       "phone": "+86 057 1 4107 2603"
     },
     {
       "id": "liangzhu-ancient-city",
       "name": "良渚古城遗址",
-      "nameEn": "Liangzhu Ancient City Site",
+      "nameEn": "Site archéologique de l'ancienne ville de Liangzhu",
       "image": "/img/ext/a237ca8ba2e4.webp",
       "category": "historical",
-      "description": "A UNESCO World Heritage site dating back 5,000 years, representing one of China's earliest civilizations with advanced jade culture.",
-      "address": "Liangzhu Cultural Museum, Yuhang District",
+      "description": "Un site du patrimoine mondial de l'UNESCO remontant à 5 000 ans, représentant l'une des premières civilisations chinoises avec une culture du jade avancée.",
+      "address": "Musée culturel de Liangzhu, district de Yuhang",
       "coordinates": {
         "lat": 30.3822,
         "lng": 120.0122
       },
-      "openingHours": "09:00-17:00 (closed Monday)",
-      "ticketPrice": "Free (museum), 60¥ for archaeological site",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "09:00-17:00 (fermé le lundi)",
+      "ticketPrice": "Gratuit (musée), 60¥ pour le site archéologique",
+      "recommendedVisitTime": "3-4 heures",
       "highlights": [
-        "Liangzhu Museum",
-        "Ancient jade artifacts",
-        "City walls",
-        "Archaeological excavation"
+        "Musée de Liangzhu",
+        "Anciens artefacts en jade",
+        "Murs de la ville",
+        "Fouilles archéologiques"
       ],
-      "tips": "Start at the museum for background. The site is outdoors, bring sun protection. Book tickets online. Allow half day to fully explore.",
+      "tips": "Commencez par le musée pour le contexte. Le site est en plein air, protégez-vous du soleil. Réservez vos billets en ligne. Prévoyez une demi-journée pour explorer pleinement.",
       "phone": "+86 057 1 6229 1392"
     },
     {
       "id": "chaoshan-mountain",
       "name": "超山",
-      "nameEn": "Chaoshan Mountain",
+      "nameEn": "Montagne Chaoshan",
       "image": "/img/ext/1b3a09b8ec59.webp",
       "category": "natural",
-      "description": "A scenic mountain famous for plum blossoms in winter and spring, with ancient temples and unique rock formations.",
-      "address": "Chaoshan,临平区",
+      "description": "Une montagne pittoresque célèbre pour ses fleurs de prunier en hiver et au printemps, avec des temples anciens et des formations rocheuses uniques.",
+      "address": "Chaoshan, district de Linping",
       "coordinates": {
         "lat": 30.4522,
         "lng": 120.1522
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3 heures",
       "highlights": [
-        "Plum blossom sea",
-        "Ancient Tang dynasty plum trees",
-        "Chaoshan Temple",
-        "Sea of flowers"
+        "Mer de fleurs de prunier",
+        "Anciens pruniers de la dynastie Tang",
+        "Temple de Chaoshan",
+        "Mer de fleurs"
       ],
-      "tips": "Peak plum blossom season is February-March. The ancient plum trees near the temple are most impressive. Great for photography.",
+      "tips": "La saison maximale des fleurs de prunier est février-mars. Les anciens pruniers près du temple sont les plus impressionnants. Ideal pour la photographie.",
       "phone": "+86 057 1 0521 3461"
     },
     {
       "id": "qianjiang-century-city",
       "name": "钱江新城",
-      "nameEn": "Qianjiang New CBD",
+      "nameEn": "Nouveau quartier d'affaires de Qianjiang",
       "image": "/img/ext/c85ae78643d5.webp",
       "category": "modern",
-      "description": "Modern business district with iconic architecture including Hangzhou's transformation into a global city. The Hangzhou Olympic Sports Center and Qianjiang Century City feature impressive modern buildings.",
-      "address": "Qianjiang New Town, Hangzhou",
+      "description": "Quartier d'affaires moderne avec une architecture emblématique illustrant la transformation de Hangzhou en ville mondiale. Le Centre sportif Olympique de Hangzhou et Qianjiang Century City abritent des bâtiments modernes impressionnants.",
+      "address": "Nouveau quartier de Qianjiang, Hangzhou",
       "coordinates": {
         "lat": 30.2322,
         "lng": 120.2122
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "Ouvert 24 heures",
+      "ticketPrice": "Gratuit",
+      "recommendedVisitTime": "1-2 heures",
       "highlights": [
-        "Night lighting show",
-        "Qianjiang Century City",
-        "Hangzhou Grand Theatre",
-        "City skyline"
+        "Spectacle lumineux nocturne",
+        "Cité du Siècle de Qianjiang",
+        "Grand Théâtre de Hangzhou",
+        "Silhouette de la ville"
       ],
-      "tips": "Best visited at night for the spectacular lighting show. The sunset views over Qiantang River are impressive. Take metro Line 4.",
+      "tips": "À visiter de préférence le soir pour le spectacle lumineux spectaculaire. Les couchers de soleil sur la rivière Qiantang sont impressionnants. Prenez la ligne 4 du métro.",
       "phone": "+86 057 1 8999 6179"
     },
     {
       "id": "xueguan-road",
       "name": "学宫路历史街区",
-      "nameEn": "Xueguan Road Historical Area",
+      "nameEn": "Zone historique de la rue Xueguan",
       "image": "/img/ext/1c0362a2316d.webp",
       "category": "cultural",
-      "description": "Historic area featuring traditional Chinese architecture, old style streets, and cultural landmarks of the Qing Dynasty.",
-      "address": "Xueguan Road, Shangcheng District",
+      "description": "Quartier historique présentant une architecture traditionnelle chinoise, des rues de style ancien et des monuments culturels de la dynastie Qing.",
+      "address": "Rue Xueguan, quartier de Shangcheng",
       "coordinates": {
         "lat": 30.2622,
         "lng": 120.1822
       },
-      "openingHours": "Open 24 hours (shops 09:00-21:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "Ouvert 24h/24 (magasins 09:00-21:00)",
+      "ticketPrice": "Gratuit",
+      "recommendedVisitTime": "1-2 heures",
       "highlights": [
-        "Qing Dynasty architecture",
-        "Traditional shops",
-        "Local snacks",
-        "Historic residences"
+        "Architecture de la dynastie Qing",
+        "Magasins traditionnels",
+        "Snacks locaux",
+        "Résidences historiques"
       ],
-      "tips": "Walk in the morning for authentic atmosphere. Try local breakfast spots. Combine with visit to nearby areas.",
+      "tips": "Promenez-vous le matin pour une atmosphère authentique. Essayez les restaurants de petit-déjeuner locaux. Combinez avec une visite des zones voisines.",
       "phone": "+86 057 1 2421 0248"
     },
     {
       "id": "xiangshan-park",
       "name": "香山公园",
-      "nameEn": "Xiangshan Park",
+      "nameEn": "Parc Xiangshan",
       "image": "/img/ext/f50bff55f552.webp",
       "category": "natural",
-      "description": "Beautiful hillside park known for its ancient plum trees, camellia gardens, and panoramic views of West Lake area.",
-      "address": "Xihu District, near Lingyin",
+      "description": "Magnifique parc sur colline connu pour ses anciens pruniers, ses jardins de camélias et ses vues panoramiques sur la région du lac de l'Ouest.",
+      "address": "District de Xihu, près de Lingyin",
       "coordinates": {
         "lat": 30.2422,
         "lng": 120.0922
       },
       "openingHours": "06:00-18:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2 hours",
+      "ticketPrice": "Gratuit",
+      "recommendedVisitTime": "2 heures",
       "highlights": [
-        "Ancient plum trees",
-        "Camellia gardens",
-        "Mountain paths",
-        "Tea plantations"
+        "Anciens pruniers",
+        "Jardins de camélias",
+        "Sentiers de montagne",
+        "Plantations de thé"
       ],
-      "tips": "Best in late winter for plum blossoms (January-February). Cooler temperature due to elevation. Good hiking trails.",
+      "tips": "Idéal en fin d'hiver pour les fleurs de prunier (janvier-février). Température plus fraîche en raison de l'altitude. Bonnes pistes de randonnée.",
       "phone": "+86 057 1 0101 1036"
     },
     {
       "id": "fenghuang-dajing",
       "name": "凤凰景宫",
-      "nameEn": "Phoenix Palace",
+      "nameEn": "Palais du Phénix",
       "image": "/img/ext/44669b7d40d3.webp",
       "category": "cultural",
-      "description": "Historic palace complex featuring traditional Chinese gardens, imperial architecture, and cultural exhibitions.",
-      "address": "Nanshan Road, Xihu District",
+      "description": "Ensemble palatial historique présentant des jardins traditionnels chinois, une architecture impériale et des expositions culturelles.",
+      "address": "Route Nanshan, quartier de Xihu",
       "coordinates": {
         "lat": 30.2322,
         "lng": 120.1482
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "30¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 heures",
       "highlights": [
-        "Traditional gardens",
-        "Imperial architecture",
-        "Cultural exhibits",
-        "Scenic views"
+        "Jardins traditionnels",
+        "Architecture impériale",
+        "Expositions culturelles",
+        "Vues panoramiques"
       ],
-      "tips": "Combine with nearby Leifeng Pagoda. Great photography location. Less crowded than main attractions.",
+      "tips": "Combinez avec la Pagode de Leifeng à proximité. Excellent endroit pour la照片. Moins fréquenté que les principales attractions.",
       "phone": "+86 057 1 6019 6255"
     },
     {
       "id": "yuhuang-shan",
       "name": "玉皇山",
-      "nameEn": "Yuhuangshan Mountain",
+      "nameEn": "Mont Yuhuangshan",
       "image": "/img/ext/8e894df8e003.webp",
       "category": "natural",
-      "description": "Hilltop temple offering panoramic views of West Lake and the surrounding area. Features Taoist temple and scenic trails.",
-      "address": "Yuhuangshan, Xihu District",
+      "description": "Temple en hauteur offrant des vues panoramiques sur le lac de l'Ouest et les environs. Dispose d'un temple taoïste et de sentiers pittoresques.",
+      "address": "Yuhuangshan, district de Xihu",
       "coordinates": {
         "lat": 30.2322,
         "lng": 120.1382
       },
       "openingHours": "06:00-18:00",
       "ticketPrice": "10¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3 heures",
       "highlights": [
-        "Yuhuang Temple",
-        "Dragon Well tea",
-        "Panoramic views",
-        "Bamboo paths"
+        "Temple Yuhuang",
+        "Thé du Puit du Dragon",
+        "Vues panoramiques",
+        "Sentiers de bambou"
       ],
-      "tips": "Best during sunrise. Combine with Longjing tea village walk. Moderate hiking difficulty. Clear days offer best views.",
+      "tips": "Idéal au lever du soleil. À combiner avec une promenade au village de thé de Longjing. Difficulté de randonnée modérée. Les journées claires offrent les meilleures vues.",
       "phone": "+86 057 1 5397 3170"
     },
     {
       "id": "hangzhou-opera",
       "name": "杭州剧院",
-      "nameEn": "Hangzhou Grand Theatre",
+      "nameEn": "Grand Théâtre de Hangzhou",
       "image": "/img/ext/400fa9805693.webp",
       "category": "cultural",
-      "description": "Modern performing arts venue hosting world-class opera, ballet, and theatrical performances. Architectural landmark in Qianjiang.",
-      "address": "Qianjiang New Town, Hangzhou",
+      "description": "Salle de spectacle moderne accueillant des représentations d'opéra, de ballet et de théâtre de classe mondiale. Point architectural emblématique à Qianjiang.",
+      "address": "Nouveau quartier de Qianjiang, Hangzhou",
       "coordinates": {
         "lat": 30.2322,
         "lng": 120.2122
       },
-      "openingHours": "Varies by performance",
+      "openingHours": "Varie selon la représentation",
       "ticketPrice": "150-800¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3 heures",
       "highlights": [
-        "Opera performances",
-        "Ballet shows",
-        "Modern architecture",
-        "Cultural events"
+        "Représentations d'opéra",
+        "Spectacles de ballet",
+        "Architecture moderne",
+        "Événements culturels"
       ],
-      "tips": "Book tickets online in advance. Dress code for performances. Take metro Line 4. Good to combine with Qianjiang night view.",
+      "tips": "Réservez vos billets en ligne à l'avance. Code vestimentaire pour les représentations. Prenez la ligne 4 du métro. À combiner avec la vue nocturne de Qianjiang.",
       "phone": "+86 057 1 7331 4202"
     },
     {
       "id": "leifeng-zhouya",
       "name": "雷峰夕照",
-      "nameEn": "Leifeng Pagoda Sunset View",
+      "nameEn": "Vue coucher de soleil de la pagode Leifeng",
       "image": "/img/ext/0de1ce3b6ea8.webp",
       "category": "natural",
-      "description": "One of the Ten Views of West Lake featuring the sunset view from Leifeng Pagoda. The golden pagoda against sunset is iconic.",
-      "address": "15 Nanshan Road, Xihu District",
+      "description": "L'une des Dix vues du lac de l'Ouest avec la vue du coucher de soleil depuis la pagode Leifeng. La pagode dorée au coucher du soleil est emblématique.",
+      "address": "15 route de Nanshan, district de Xihu",
       "coordinates": {
         "lat": 30.2312,
         "lng": 120.1482
       },
-      "openingHours": "08:00-17:30 (summer until 18:00)",
+      "openingHours": "08h00-17h30 (été jusqu'à 18h00)",
       "ticketPrice": "40¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 heures",
       "highlights": [
-        "Sunset views",
-        "West Lake panorama",
-        "White Snake legend",
-        "Photography spot"
+        "Vues sur le coucher du soleil",
+        "Panorama du lac de l'Ouest",
+        "Légende du Serpent blanc",
+        "Spot photographique"
       ],
-      "tips": "Arrive 30 minutes before sunset for best photos. The golden light on the pagoda is magical. Combine with evening walk around the lake.",
+      "tips": "Arrivez 30 minutes avant le coucher du soleil pour les meilleures photos. La lumière dorée sur la pagode est magique. À combiner avec une promenade autour du lac en soirée.",
       "phone": "+86 057 1 2028 9106"
     },
     {
       "id": "broken-bridge",
       "name": "断桥",
-      "nameEn": "Broken Bridge",
+      "nameEn": "Pont Brisé",
       "category": "landmark",
       "description": "西湖十景之断桥残雪，白娘子与许仙相遇地。",
       "address": "杭州市西湖区",
@@ -776,7 +776,7 @@
     {
       "id": "longjing-village",
       "name": "龙井村",
-      "nameEn": "Longjing Village",
+      "nameEn": "Village de Longjing",
       "category": "street",
       "description": "中国最著名的龙井茶产地，可品尝正宗龙井茶。",
       "address": "杭州市西湖区",
@@ -799,7 +799,7 @@
     {
       "id": "xihu-museum",
       "name": "浙江省博物馆",
-      "nameEn": "Zhejiang Provincial Museum",
+      "nameEn": "Musée provincial du Zhejiang",
       "category": "museum",
       "description": "馆藏文物10万余件，以良渚文化玉器最著名。",
       "address": "杭州市西湖区",
@@ -807,7 +807,7 @@
         "lat": 30.25,
         "lng": 120.15
       },
-      "openingHours": "09:00-17:00",
+      "openingHours": "09h00-17h00",
       "ticketPrice": "免费",
       "recommendedVisitTime": "2小时",
       "highlights": [
@@ -821,7 +821,7 @@
     {
       "id": "qianjiang-new",
       "name": "钱江新城",
-      "nameEn": "Qianjiang New City",
+      "nameEn": "Nouvelle Ville de Qianjiang",
       "category": "landmark",
       "description": "杭州新城区，有现代化建筑群。",
       "address": "杭州市江干区",
@@ -842,7 +842,7 @@
     {
       "id": "song-cheng",
       "name": "宋城",
-      "nameEn": "Song Dynasty Town",
+      "nameEn": "Village de l'Époque des Song",
       "category": "landmark",
       "description": "以宋代文化为主题的大型公园，有《宋城千古情》演出。",
       "address": "杭州市西湖区",
@@ -864,7 +864,7 @@
     {
       "id": "nine-creeks",
       "name": "九溪烟树",
-      "nameEn": "Nine Creeks",
+      "nameEn": "Les Neuf Ruisseaux",
       "category": "nature",
       "description": "西湖西部的溪流景区，有九溪十八涧。",
       "address": "杭州市西湖区",
@@ -886,7 +886,7 @@
     {
       "id": "hangzhou-tea",
       "name": "茶文化",
-      "nameEn": "Hangzhou Tea Culture",
+      "nameEn": "Culture du Thé de Hangzhou",
       "category": "street",
       "description": "杭州是中国茶都，有龙井茶和茶文化。",
       "address": "杭州市西湖区",
@@ -908,7 +908,7 @@
     {
       "id": "hangzhou-food",
       "name": "杭帮菜",
-      "nameEn": "Hangbang Cuisine",
+      "nameEn": "Cuisine Hangbang",
       "category": "street",
       "description": "杭州传统菜系，有西湖醋鱼、东坡肉等。",
       "address": "杭州市",
@@ -930,7 +930,7 @@
     {
       "id": "hangzhou-night",
       "name": "杭州夜景",
-      "nameEn": "Hangzhou Night View",
+      "nameEn": "Vue Nocturne de Hangzhou",
       "category": "landmark",
       "description": "西湖和钱塘江的夜景灯光秀。",
       "address": "杭州市",
@@ -952,7 +952,7 @@
     {
       "id": "hangzhou-museum",
       "name": "杭州博物馆",
-      "nameEn": "Hangzhou Museum",
+      "nameEn": "Musée de Hangzhou",
       "category": "museum",
       "description": "展示杭州历史的博物馆。",
       "address": "杭州市上城区",
@@ -960,7 +960,7 @@
         "lat": 30.23,
         "lng": 120.17
       },
-      "openingHours": "09:00-17:00",
+      "openingHours": "09h00-17h00",
       "ticketPrice": "免费",
       "recommendedVisitTime": "1.5小时",
       "highlights": [
@@ -973,7 +973,7 @@
     {
       "id": "hangzhou-university",
       "name": "浙江大学",
-      "nameEn": "Zhejiang University",
+      "nameEn": "Université du Zhejiang",
       "category": "landmark",
       "description": "中国最著名的高等学府之一。",
       "address": "杭州市西湖区",
@@ -994,7 +994,7 @@
     {
       "id": "hangzhou-bay",
       "name": "杭州湾",
-      "nameEn": "Hangzhou Bay",
+      "nameEn": "Baie de Hangzhou",
       "category": "nature",
       "description": "钱塘江入海口，有著名的钱塘潮。",
       "address": "杭州市",
@@ -1015,7 +1015,7 @@
     {
       "id": "hangzhou-bridge",
       "name": "钱塘江大桥",
-      "nameEn": "Qiantang River Bridge",
+      "nameEn": "Pont de la Rivière Qiantang",
       "category": "landmark",
       "description": "中国第一座自行设计的公路铁路两用桥。",
       "address": "杭州市",
@@ -1037,7 +1037,7 @@
     {
       "id": "hangzhou-silk",
       "name": "丝绸博物馆",
-      "nameEn": "Silk Museum",
+      "nameEn": "Musée de la Soie",
       "category": "museum",
       "description": "展示中国丝绸文化的博物馆。",
       "address": "杭州市西湖区",
@@ -1045,7 +1045,7 @@
         "lat": 30.23,
         "lng": 120.17
       },
-      "openingHours": "09:00-17:00",
+      "openingHours": "09h00-17h00",
       "ticketPrice": "免费",
       "recommendedVisitTime": "1.5小时",
       "highlights": [
@@ -1058,7 +1058,7 @@
     {
       "id": "hangzhou-park",
       "name": "太子湾公园",
-      "nameEn": "Prince Bay Park",
+      "nameEn": "Parc de la Baie du Prince",
       "category": "park",
       "description": "杭州最美的公园之一，春季郁金香盛开。",
       "address": "杭州市西湖区",
@@ -1080,7 +1080,7 @@
     {
       "id": "hz-botanical",
       "name": "杭州植物园",
-      "nameEn": "Hangzhou Botanical Garden",
+      "nameEn": "Jardin Botanique de Hangzhou",
       "category": "nature",
       "description": "西湖边的植物园。",
       "address": "杭州市西湖区",
@@ -1101,7 +1101,7 @@
     {
       "id": "hz-zoo",
       "name": "杭州动物园",
-      "nameEn": "Hangzhou Zoo",
+      "nameEn": "Zoo de Hangzhou",
       "category": "nature",
       "description": "杭州最大的动物园。",
       "address": "杭州市西湖区",
@@ -1122,7 +1122,7 @@
     {
       "id": "jingci",
       "name": "净慈寺",
-      "nameEn": "Jingci Temple",
+      "nameEn": "Temple Jingci",
       "category": "temple",
       "description": "西湖四大名刹之一。",
       "address": "杭州市西湖区",
@@ -1143,7 +1143,7 @@
     {
       "id": "baoshi",
       "name": "宝石山",
-      "nameEn": "Baoshi Mountain",
+      "nameEn": "Montagne Baoshi",
       "category": "nature",
       "description": "西湖边的小山，有保俶塔。",
       "address": "杭州市西湖区",
@@ -1165,7 +1165,7 @@
     {
       "id": "xiang-lake",
       "name": "湘湖",
-      "nameEn": "Xiang Lake",
+      "nameEn": "Lac Xiang",
       "category": "nature",
       "description": "萧山区的湖泊。",
       "address": "杭州市萧山区",
@@ -1188,29 +1188,29 @@
     {
       "id": "hangzhou-1",
       "name": "金沙厅",
-      "nameEn": "Jin Sha Ting",
-      "type": "michelin",
+      "nameEn": "Pavillon du Sable Doré (Jin Sha Ting)",
+      "type": "Michelin",
       "star": 1,
-      "cuisine": "Zhejiang",
+      "cuisine": "Cuisine du Zhejiang",
       "avgPrice": 600,
       "rating": 4.8,
-      "address": "4/F, Four Seasons Hotel Hangzhou, 5 Lingjia Lane, Hubin Road",
+      "address": "4e étage, Four Seasons Hotel Hangzhou, 5 Lingjia Lane, Hubin Road",
       "coordinates": {
         "lat": 30.2422,
         "lng": 120.1522
       },
       "phone": "+86 571 8689 0123",
       "hours": "11:30-14:30, 17:30-22:00",
-      "description": "One Michelin-starred Zhejiang cuisine with stunning West Lake views. Exceptional seafood and traditional Hangzhou dishes.",
+      "description": "Cuisine du Zhejiang une étoile Michelin avec une vue imprenable sur le Lac de l'Ouest. Fruits de mer exceptionnels et plats traditionnels de Hangzhou.",
       "dishHighlights": [
-        "Braised abalone with goose oil",
-        "Steamed Hangzhou crab",
-        "West Lake gold fish in soup"
+        "Abalone braisé à l'huile d'oie",
+        "Crabe de Hangzhou vapeur",
+        "Poisson doré du Lac de l'Ouest en soupe"
       ],
       "tags": [
-        "fine-dining",
-        "lake-view",
-        "zhejiang-cuisine"
+        "haute-cuisine",
+        "vue-sur-le-lac",
+        "cuisine du Zhejiang"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ba51b459e8e6.webp"
@@ -1218,29 +1218,29 @@
     {
       "id": "hangzhou-2",
       "name": "外婆家",
-      "nameEn": "Waipo Jia",
-      "type": "local",
-      "cuisine": "Zhejiang Home-style",
+      "nameEn": "Maison de la Grand-mère",
+      "type": "Cuisine locale",
+      "cuisine": "Cuisine familiale du Zhejiang",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Multiple locations including Hangzhou Tower",
+      "address": "Plusieurs emplacements dont la Hangzhou Tower",
       "coordinates": {
         "lat": 30.2522,
         "lng": 120.1622
       },
       "phone": "+86 571 8500 1234",
       "hours": "10:30-21:30",
-      "description": "Popular chain serving authentic Zhejiang home-style dishes at affordable prices. Great for trying local favorites.",
+      "description": "Chaîne populaire servant des plats authentiques du Zhejiang à prix abordables. Idéal pour découvrir les spécialités locales.",
       "dishHighlights": [
-        "Dongpo pork",
-        "West Lake vinegar fish",
-        "Braised pork belly"
+        "Porc Dongpo",
+        "Poisson au vinaigre du Lac de l'Ouest",
+        "Poitrine de porc braisée"
       ],
       "tags": [
-        "local",
-        "casual",
-        "family-friendly",
-        "value"
+        "cuisine locale",
+        "décontracté",
+        "adapté aux familles",
+        "rapport qualité-prix"
       ],
       "star": 0,
       "diamond": 0,
@@ -1249,29 +1249,29 @@
     {
       "id": "hangzhou-3",
       "name": "知味观",
-      "nameEn": "Zhi Wei Guan",
-      "type": "blackpearl",
+      "nameEn": "Pavillon des Saveurs",
+      "type": "Black Pearl",
       "diamond": 1,
-      "cuisine": "Hangzhou",
+      "cuisine": "Cuisine de Hangzhou",
       "avgPrice": 120,
       "rating": 4.6,
-      "address": "2 Gaoyin Road, Shangcheng District",
+      "address": "2 Rue Gaoyin, Quartier Shangcheng",
       "coordinates": {
         "lat": 30.2482,
         "lng": 120.1722
       },
       "phone": "+86 571 8706 5523",
       "hours": "07:00-21:00",
-      "description": "Historic restaurant established in 1913, famous for Hangzhou cuisine and traditional dim sum.",
+      "description": "Restaurant historique fondé en 1913, célèbre pour sa cuisine de Hangzhou et ses dim sum traditionnels.",
       "dishHighlights": [
-        "Lion head meatballs",
-        "Hangzhou-style noodles",
-        "Sweet vinegar pork ribs"
+        "Boulettes de viande tête de lion",
+        "Nouilles style Hangzhou",
+        "Côtelettes de porc au vinaigre sucré"
       ],
       "tags": [
-        "historic",
-        "hangzhou-cuisine",
-        "dim-sum"
+        "historique",
+        "cuisine-de-hangzhou",
+        "dim sum"
       ],
       "star": 0,
       "imageUrl": "/img/ext/ca498219a204.webp"
@@ -1279,27 +1279,27 @@
     {
       "id": "hangzhou-4",
       "name": "绿茶餐厅",
-      "nameEn": "Green Tea Restaurant",
-      "type": "local",
-      "cuisine": "Zhejiang",
+      "nameEn": "Restaurant Thé Vert",
+      "type": "Cuisine locale",
+      "cuisine": "Cuisine du Zhejiang",
       "avgPrice": 100,
       "rating": 4.4,
-      "address": "Multiple locations",
+      "address": "Plusieurs emplacements",
       "coordinates": {
         "lat": 30.2522,
         "lng": 120.1552
       },
       "hours": "10:30-22:00",
-      "description": "Trendy restaurant chain known for fresh ingredients and creative Zhejiang dishes in modern atmosphere.",
+      "description": "Chaîne de restaurants tendance connue pour ses ingrédients frais et ses plats créatifs du Zhejiang dans une atmosphère moderne.",
       "dishHighlights": [
-        "Green tea flour ball",
-        "Braised chicken",
-        "Fresh vegetables"
+        "Boule de farine au thé vert",
+        "Poulet braisé",
+        "Légumes frais"
       ],
       "tags": [
-        "local",
-        "modern",
-        "casual"
+        "cuisine locale",
+        "moderne",
+        "décontracté"
       ],
       "star": 0,
       "diamond": 0,
@@ -1309,29 +1309,29 @@
     {
       "id": "hangzhou-5",
       "name": "奎元馆",
-      "nameEn": "Kui Yuan Guan",
-      "type": "local",
-      "cuisine": "Hangzhou Noodles",
+      "nameEn": "...",
+      "type": "Cuisine locale",
+      "cuisine": "Noodles de Hangzhou",
       "avgPrice": 50,
       "rating": 4.7,
-      "address": "86 Gaoyin Road, Shangcheng District",
+      "address": "86 Gaoyin Road, quartier Shangcheng",
       "coordinates": {
         "lat": 30.2482,
         "lng": 120.1732
       },
       "phone": "+86 571 8780 0788",
       "hours": "06:30-20:00",
-      "description": "Legendary noodle house established in 1867, serving authentic Hangzhou style noodles with rich broth.",
+      "description": "Maison de nouilles légendaire établie en 1867, servant des nouilles authentiques de style Hangzhou avec un riche bouillon.",
       "dishHighlights": [
-        "Shrimp noodles",
-        "Vegetable and mushroom noodles",
-        "Red-braised pork noodles"
+        "Noodles aux crevettes",
+        "Noodles aux légumes et champignons",
+        "Noodles au porc braisé rouge"
       ],
       "tags": [
-        "historic",
-        "noodles",
-        "local",
-        "breakfast"
+        "historique",
+        "nouilles",
+        "cuisine locale",
+        "petit-déjeuner"
       ],
       "star": 0,
       "diamond": 0,
@@ -1340,29 +1340,29 @@
     {
       "id": "hangzhou-6",
       "name": "楼外楼",
-      "nameEn": "Lou Wai Lou",
-      "type": "blackpearl",
+      "nameEn": "Maison Lou Wai Lou",
+      "type": "Black Pearl",
       "diamond": 2,
-      "cuisine": "Hangzhou",
+      "cuisine": "Cuisine de Hangzhou",
       "avgPrice": 200,
       "rating": 4.5,
-      "address": "No. 30, Gushan Road, Xihu District",
+      "address": "No. 30, Gushan Road, quartier Xihu",
       "coordinates": {
         "lat": 30.2422,
         "lng": 120.1488
       },
       "phone": "+86 571 8796 9082",
       "hours": "10:30-21:00",
-      "description": "Historic restaurant on the shore of West Lake, established 1848. Famous for view dining and traditional dishes.",
+      "description": "Restaurant historique au bord du Lac de l'Ouest, établi en 1848. Célèbre pour le dîner avec vue et les plats traditionnels.",
       "dishHighlights": [
-        "West Lake fish in vinegar sauce",
-        "Beggar's chicken",
-        "Lion head meatballs"
+        "Poisson du Lac de l'Ouest en sauce vinaigrée",
+        "Poulet du mendiant",
+        "Boulettes de viande tête de lion"
       ],
       "tags": [
-        "historic",
-        "lake-view",
-        "hangzhou-cuisine"
+        "historique",
+        "vue-sur-le-lac",
+        "cuisine-de-hangzhou"
       ],
       "star": 0,
       "imageUrl": "/img/ext/de5e2bf04e0d.webp"
@@ -1370,28 +1370,28 @@
     {
       "id": "hangzhou-7",
       "name": "龙井菜馆",
-      "nameEn": "Longjing Caiguan",
-      "type": "local",
-      "cuisine": "Tea Cuisine",
+      "nameEn": "Maison de Thé Longjing",
+      "type": "Cuisine locale",
+      "cuisine": "Cuisine au thé",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "Longjing Village, Xihu District",
+      "address": "Village de Longjing, District de Xihu",
       "coordinates": {
         "lat": 30.2022,
         "lng": 120.0922
       },
       "phone": "+86 571 8797 1234",
       "hours": "10:00-22:00",
-      "description": "Traditional restaurant in tea country specializing in Longjing tea-infused dishes and organic local ingredients.",
+      "description": "Restaurant traditionnel au pays du thé spécialisé dans les plats infusés au thé Longjing et aux ingrédients locaux biologiques.",
       "dishHighlights": [
-        "Longjing shrimp",
-        "Tea-smoked duck",
-        "Dragon well tea fried rice"
+        "Crevettes Longjing",
+        "Canard fumé au thé",
+        "Riz frit au thé Dragon Well"
       ],
       "tags": [
-        "local",
-        "tea-cuisine",
-        "scenic"
+        "cuisine locale",
+        "cuisine-au-the",
+        "pittoresque"
       ],
       "star": 0,
       "diamond": 0,
@@ -1401,26 +1401,26 @@
       "id": "hangzhou-8",
       "name": "弄堂里",
       "nameEn": "Long Tang Li",
-      "type": "local",
-      "cuisine": "Zhejiang Home-style",
+      "type": "Cuisine locale",
+      "cuisine": "Cuisine familiale du Zhejiang",
       "avgPrice": 70,
       "rating": 4.5,
-      "address": "Multiple locations",
+      "address": "Plusieurs emplacements",
       "coordinates": {
         "lat": 30.2622,
         "lng": 120.1722
       },
       "hours": "10:00-22:00",
-      "description": "Popular local chain known for authentic Zhejiang home cooking and comfortable dining environment.",
+      "description": "Chaîne locale populaire connue pour sa cuisine familiale authentique du Zhejiang et son environnement de restauration confortable.",
       "dishHighlights": [
-        "Fried sweet rice cake",
-        "Braised pork with taro",
-        "Hangzhou style cold noodles"
+        "Gâteau de riz sucré frit",
+        "Porc braisé au taro",
+        "Nouilles froides style Hangzhou"
       ],
       "tags": [
-        "local",
-        "casual",
-        "family-friendly"
+        "cuisine locale",
+        "décontracté",
+        "adapté aux familles"
       ],
       "star": 0,
       "diamond": 0,
@@ -1430,29 +1430,29 @@
     {
       "id": "hangzhou-9",
       "name": "龙井茶餐厅",
-      "nameEn": "Longjing Tea Restaurant",
-      "type": "local",
-      "cuisine": "Tea Cuisine",
+      "nameEn": "Restaurant de thé Longjing",
+      "type": "Cuisine locale",
+      "cuisine": "Cuisine au thé",
       "avgPrice": 120,
       "rating": 4.5,
-      "address": "Longjing Village, Xihu District",
+      "address": "Village de Longjing, District de Xihu",
       "coordinates": {
         "lat": 30.2012,
         "lng": 120.0912
       },
       "phone": "+86 571 8797 8888",
       "hours": "09:00-21:00",
-      "description": "Scenic restaurant surrounded by tea gardens serving authentic Longjing tea cuisine and local Hangzhou dishes.",
+      "description": "Restaurant pittoresque entouré de plantations de thé servant une cuisine authentique au thé Longjing et des plats locaux de Hangzhou.",
       "dishHighlights": [
-        "Longjing tea chicken",
-        "Tea leaves scrambled eggs",
-        "Steamed fish with tea"
+        "Poulet au thé Longjing",
+        "Œufs brouillés aux feuilles de thé",
+        "Poisson vapeur au thé"
       ],
       "tags": [
-        "local",
-        "tea-cuisine",
-        "scenic",
-        "garden-view"
+        "cuisine locale",
+        "cuisine-au-the",
+        "paysager",
+        "vue-sur-jardin"
       ],
       "star": 0,
       "diamond": 0,
@@ -1461,28 +1461,28 @@
     {
       "id": "hangzhou-10",
       "name": "杭帮菜馆",
-      "nameEn": "Hangbang Cuisine Restaurant",
-      "type": "local",
-      "cuisine": "Hangzhou",
+      "nameEn": "Restaurant Hangbang Cuisine",
+      "type": "Cuisine locale",
+      "cuisine": "Cuisine de Hangzhou",
       "avgPrice": 100,
       "rating": 4.4,
-      "address": "156 Shuguang Road, Xihu District",
+      "address": "156 Rue Shuguang, District de Xihu",
       "coordinates": {
         "lat": 30.2622,
         "lng": 120.1422
       },
       "phone": "+86 571 8797 6543",
       "hours": "10:30-21:00",
-      "description": "Traditional restaurant specializing in authentic Hangzhou cuisine with focus on classic recipes passed down generations.",
+      "description": "Restaurant traditionnel spécialisé dans la cuisine authentique de Hangzhou, axé sur les recettes classiques transmises de génération en génération.",
       "dishHighlights": [
-        "Hangzhou roast duck",
-        "West Lake vinegar fish",
-        "Dongpo pork"
+        "Canard rôti de Hangzhou",
+        "Poisson au vinaigre du Lac de l'Ouest",
+        "Porc Dongpo"
       ],
       "tags": [
-        "local",
-        "hangzhou-cuisine",
-        "traditional"
+        "cuisine locale",
+        "cuisine-de-hangzhou",
+        "traditionnel"
       ],
       "star": 0,
       "diamond": 0,
@@ -1492,28 +1492,28 @@
       "id": "hangzhou-11",
       "name": "御街宴",
       "nameEn": "Yujie Yan",
-      "type": "local",
-      "cuisine": "Zhejiang",
+      "type": "Cuisine locale",
+      "cuisine": "Cuisine du Zhejiang",
       "avgPrice": 180,
       "rating": 4.6,
-      "address": "88 Zhongshan Middle Road, Shangcheng District",
+      "address": "88 Zhongshan Middle Road, district de Shangcheng",
       "coordinates": {
         "lat": 30.2492,
         "lng": 120.1682
       },
       "phone": "+86 571 8770 1234",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Upscale restaurant near Southern Song Imperial Street serving refined Zhejiang dishes in elegant traditional setting.",
+      "description": "Restaurant elegant pres de la rue imperiale des Song du Sud servant des plats raffines du Zhejiang dans un cadre traditionnel",
       "dishHighlights": [
-        "Braised pork belly with tea leaf",
-        "Steamed bass with scallion",
-        "Hangzhou wontons"
+        "Poitrine de porc braisee aux feuilles de the",
+        "Bar vapeur a l'oignon vert",
+        "Boulettes de Hangzhou"
       ],
       "tags": [
-        "local",
-        "upscale",
-        "traditional",
-        "historic-area"
+        "cuisine locale",
+        "haut de gamme",
+        "traditionnel",
+        "zone historique"
       ],
       "star": 0,
       "diamond": 0,
@@ -1522,29 +1522,29 @@
     {
       "id": "hangzhou-12",
       "name": "湖畔大学堂",
-      "nameEn": "Lakeview Dining Hall",
-      "type": "local",
-      "cuisine": "Zhejiang",
+      "nameEn": "Salle à manger Lakeview",
+      "type": "Cuisine locale",
+      "cuisine": "Cuisine du Zhejiang",
       "avgPrice": 250,
       "rating": 4.7,
-      "address": "28 Gushe Road, Xihu District",
+      "address": "28 Gushe Road, district de Xihu",
       "coordinates": {
         "lat": 30.2432,
         "lng": 120.1502
       },
       "phone": "+86 571 8796 2345",
       "hours": "10:30-22:00",
-      "description": "Elegant lakeside restaurant with beautiful West Lake views, known for traditional Hangzhou dishes and imperial style cooking.",
+      "description": "Restaurant élégant au bord du lac avec de belles vues sur le lac de l'Ouest, connu pour ses plats traditionnels de Hangzhou et sa cuisine de style impérial.",
       "dishHighlights": [
-        "Imperial style shrimp",
-        "Lotus leaf rice",
-        "Crystal pork ribs"
+        "Crevettes style impérial",
+        "Riz aux feuilles de lotus",
+        "Côtelettes de porc cristallisées"
       ],
       "tags": [
-        "local",
-        "lake-view",
-        "upscale",
-        "hangzhou-cuisine"
+        "cuisine locale",
+        "vue-sur-le-lac",
+        "haut-de-gamme",
+        "cuisine-de-hangzhou"
       ],
       "star": 0,
       "diamond": 0,
@@ -1553,29 +1553,29 @@
     {
       "id": "hangzhou-13",
       "name": "香格里拉中餐厅",
-      "nameEn": "Shangri-La Chinese Restaurant",
-      "type": "luxury",
-      "cuisine": "Cantonese and Zhejiang",
+      "nameEn": "Restaurant chinois Shangri-La",
+      "type": "luxe",
+      "cuisine": "Cantonaise et Zhejiang",
       "avgPrice": 400,
       "rating": 4.6,
-      "address": "Shangri-La Hotel, 78 Beishan Road",
+      "address": "Hôtel Shangri-La, 78 rue Beishan",
       "coordinates": {
         "lat": 30.2622,
         "lng": 120.1482
       },
       "phone": "+86 571 8797 7890",
       "hours": "11:30-14:30, 17:30-22:00",
-      "description": "High-end restaurant in Shangri-La hotel serving premium Cantonese and Zhejiang cuisine with professional service.",
+      "description": "Restaurant haut de gamme de l'hôtel Shangri-La servant une cuisine premium cantonaise et Zhejiang avec un service professionnel.",
       "dishHighlights": [
-        "Bird's nest soup",
-        "Abalone with seasonal vegetables",
-        "Premium dim sum"
+        "Soupe de nid d'hirondelle",
+        "Abalone aux légumes de saison",
+        "Dim sum premium"
       ],
       "tags": [
-        "luxury",
-        "hotel",
-        "cantonese",
-        "zhejiang-cuisine"
+        "luxe",
+        "hôtel",
+        "cantonais",
+        "cuisine du Zhejiang"
       ],
       "star": 0,
       "diamond": 0,
@@ -1584,29 +1584,29 @@
     {
       "id": "hangzhou-14",
       "name": "老头儿油爆虾",
-      "nameEn": "Lao Tou Er Oil Explosion Shrimp",
-      "type": "local",
-      "cuisine": "Hangzhou",
+      "nameEn": "Crevette Lao Tou Er à l'explosion d'huile",
+      "type": "Cuisine locale",
+      "cuisine": "Cuisine de Hangzhou",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Multiple locations",
+      "address": "Plusieurs emplacements",
       "coordinates": {
         "lat": 30.2522,
         "lng": 120.1582
       },
       "phone": "+86 571 8500 5678",
       "hours": "10:30-21:30",
-      "description": "Popular local chain famous for oil explosion shrimp and authentic Hangzhou home-style dishes at reasonable prices.",
+      "description": "Chain locale populaire célèbre pour ses crevettes frites à l'huile et ses plats authentiques de cuisine familiale de Hangzhou à des prix razonables.",
       "dishHighlights": [
-        "Oil explosion shrimp",
-        "Braised pork with brown sauce",
-        "Scrambled eggs with tomato"
+        "Crevettes frites à l'huile",
+        "Porc braisé à la sauce brune",
+        "Œufs brouillés aux tomates"
       ],
       "tags": [
-        "local",
-        "casual",
-        "family-friendly",
-        "value"
+        "cuisine locale",
+        "décontracté",
+        "adapté aux familles",
+        "rapport qualité-prix"
       ],
       "star": 0,
       "diamond": 0,
@@ -1615,29 +1615,29 @@
     {
       "id": "hangzhou-15",
       "name": "粤浙会",
-      "nameEn": "Yue Zhe Hui",
-      "type": "local",
-      "cuisine": "Cantonese and Zhejiang Fusion",
+      "nameEn": "Société du Clair de Lune",
+      "type": "Cuisine locale",
+      "cuisine": "Cuisine cantonaise et du Zhejiang",
       "avgPrice": 200,
       "rating": 4.6,
-      "address": "199 Jiaogong Road, Xihu District",
+      "address": "199 Rue Jiaogong, District de Xihu",
       "coordinates": {
         "lat": 30.2722,
         "lng": 120.1422
       },
       "phone": "+86 571 8798 4321",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Upscale restaurant blending Cantonese and Zhejiang cuisines, known for fresh seafood and refined cooking techniques.",
+      "description": "Restaurant haut de gamme mêlant cuisine cantonaise et du Zhejiang, connu pour ses fruits de mer frais et ses techniques culinaires raffinées.",
       "dishHighlights": [
-        "Steamed crab with aged wine",
-        "Braised abalone",
-        "Cantonese roast duck"
+        "Crabe vapeur au vin vieilli",
+        "Abalone braisée",
+        "Canard rôti cantonais"
       ],
       "tags": [
-        "local",
-        "upscale",
+        "cuisine locale",
+        "haut-de-gamme",
         "fusion",
-        "seafood"
+        "fruits de mer"
       ],
       "star": 0,
       "diamond": 0,
@@ -1646,29 +1646,29 @@
     {
       "id": "hangzhou-16",
       "name": "太子楼",
-      "nameEn": "Tai Zi Lou",
-      "type": "local",
-      "cuisine": "Hangzhou",
+      "nameEn": "Palais du Prince",
+      "type": "Cuisine locale",
+      "cuisine": "Cuisine de Hangzhou",
       "avgPrice": 150,
       "rating": 4.5,
-      "address": "18 Lingyin Road, Xihu District",
+      "address": "18 Rue Lingyin, District de Xihu",
       "coordinates": {
         "lat": 30.2382,
         "lng": 120.1032
       },
       "phone": "+86 571 8796 8765",
       "hours": "10:00-22:00",
-      "description": "Historic restaurant near Lingyin Temple serving Buddhist vegetarian cuisine and traditional Hangzhou dishes.",
+      "description": "Restaurant historique près du temple de Lingyin proposant une cuisine végétarienne bouddhiste et des plats traditionnels de Hangzhou.",
       "dishHighlights": [
-        "Buddhist vegetarian hotpot",
-        "Lotus seed soup",
-        "Seasonal vegetables"
+        "Hotpot végétarien bouddhiste",
+        "Soupe aux graines de lotus",
+        "Légumes de saison"
       ],
       "tags": [
-        "local",
-        "vegetarian",
-        "historic",
-        "near-temple"
+        "cuisine locale",
+        "végétarien",
+        "historique",
+        "près-du-temple"
       ],
       "star": 0,
       "diamond": 0,
@@ -1677,29 +1677,29 @@
     {
       "id": "hangzhou-17",
       "name": "运河私房菜",
-      "nameEn": "Canal Private Kitchen",
-      "type": "local",
-      "cuisine": "Zhejiang Home-style",
+      "nameEn": "Cuisine privée du Canal",
+      "type": "Cuisine locale",
+      "cuisine": "Cuisine familiale du Zhejiang",
       "avgPrice": 120,
       "rating": 4.4,
-      "address": "56 Canal Road, Gongshu District",
+      "address": "56 Rue du Canal, District de Gongshu",
       "coordinates": {
         "lat": 30.3022,
         "lng": 120.1352
       },
       "phone": "+86 571 8829 1234",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Hidden gem along the Grand Canal serving secret family recipes of traditional Zhejiang home cooking.",
+      "description": "Perle cachée le long du Grand Canal servant des recettes de famille secrètes de cuisine traditionnelle domestique du Zhejiang.",
       "dishHighlights": [
-        "Grandma's braised pork",
-        "Canal style fish",
-        "Handmade dumplings"
+        "Porc braisé de grand-mère",
+        "Poisson style canal",
+        "Boulettes incontournees faites main"
       ],
       "tags": [
-        "local",
-        "hidden-gem",
-        "home-style",
-        "canal-view"
+        "cuisine locale",
+        "perle-cachée",
+        "cuisine maison",
+        "vue-sur-le-canal"
       ],
       "star": 0,
       "diamond": 0,
@@ -1708,29 +1708,29 @@
     {
       "id": "hangzhou-18",
       "name": "南舍私房菜",
-      "nameEn": "Nan She Private Kitchen",
-      "type": "local",
-      "cuisine": "Creative Zhejiang",
+      "nameEn": "Nan She Cuisine Privée",
+      "type": "Cuisine locale",
+      "cuisine": "Cuisine créative du Zhejiang",
       "avgPrice": 280,
       "rating": 4.7,
-      "address": "88 Nanshan Road, Xihu District",
+      "address": "88 Nanshan Road, district de Xihu",
       "coordinates": {
         "lat": 30.2322,
         "lng": 120.1482
       },
       "phone": "+86 571 8797 3456",
-      "hours": "17:30-22:00 (closed Monday)",
-      "description": "Exclusive private kitchen with only 8 tables, serving innovative Zhejiang cuisine with seasonal ingredients.",
+      "hours": "17h30-22h00 (fermé le lundi)",
+      "description": "Cuisine privée exclusive avec seulement 8 tables, servant une cuisine innovante du Zhejiang avec des ingrédients de saison.",
       "dishHighlights": [
-        "Seasonal tasting menu",
-        "Tea infused dishes",
-        "Artisan desserts"
+        "Menu tasting saisonnier",
+        "Plats infusés au thé",
+        "Desserts artisanaux"
       ],
       "tags": [
-        "local",
-        "private-kitchen",
-        "upscale",
-        "creative"
+        "cuisine locale",
+        "cuisine-privée",
+        "haut-de-gamme",
+        "créatif"
       ],
       "star": 0,
       "diamond": 0,
@@ -1739,29 +1739,29 @@
     {
       "id": "hangzhou-19",
       "name": "西子湖四季中餐厅",
-      "nameEn": "Four Seasons Resort Chinese Restaurant",
-      "type": "luxury",
-      "cuisine": "Zhejiang",
+      "nameEn": "Four Seasons Resort Restaurant Chinois",
+      "type": "luxe",
+      "cuisine": "Cuisine du Zhejiang",
       "avgPrice": 800,
       "rating": 4.9,
-      "address": "Four Seasons Resort Hangzhou, 5 Xinghua Road",
+      "address": "French translation",
       "coordinates": {
         "lat": 30.2522,
         "lng": 120.1382
       },
       "phone": "+86 571 8829 8888",
       "hours": "11:30-14:30, 17:30-22:00",
-      "description": "Michelin-level dining at Four Seasons Resort with garden and lake views, featuring the finest Zhejiang cuisine.",
+      "description": "Repas de niveau Michelin au Four Seasons Resort avec vue sur le jardin et le lac, proposant la meilleure cuisine du Zhejiang.",
       "dishHighlights": [
-        "Imperial banquet",
-        "Seasonal tasting menu",
-        "West Lake view dining"
+        "Banquet impérial",
+        "Menu tasting saisonnier",
+        "Repas avec vue sur le lac West Lake"
       ],
       "tags": [
-        "luxury",
-        "resort",
-        "fine-dining",
-        "lake-view"
+        "luxe",
+        "French translation",
+        "haute-cuisine",
+        "vue-sur-le-lac"
       ],
       "star": 0,
       "diamond": 0,
@@ -1770,29 +1770,29 @@
     {
       "id": "hangzhou-20",
       "name": "杭州酒家",
-      "nameEn": "Hang Zhou Jia",
-      "type": "local",
-      "cuisine": "Hangzhou",
+      "nameEn": "French translation",
+      "type": "Cuisine locale",
+      "cuisine": "Cuisine de Hangzhou",
       "avgPrice": 90,
       "rating": 4.5,
-      "address": "23 Hubin Road, Shangcheng District",
+      "address": "23 Hubin Road, district de Shangcheng",
       "coordinates": {
         "lat": 30.2522,
         "lng": 120.1622
       },
       "phone": "+86 571 8708 9999",
       "hours": "10:00-22:00",
-      "description": "Classic Hangzhou restaurant since 1920s, famous for traditional recipes and authentic local flavors.",
+      "description": "Restaurant classique de Hangzhou depuis les années 1920, célèbre pour ses recettes traditionnelles et ses saveurs locales authentiques.",
       "dishHighlights": [
-        "Hangzhou style spare ribs",
-        "Steamed carp",
-        "Longjing tea shrimp"
+        "Côtes de porc façon Hangzhou",
+        "Carpe vapeur",
+        "Crevettes au thé Longjing"
       ],
       "tags": [
-        "local",
-        "historic",
-        "hangzhou-cuisine",
-        "traditional"
+        "cuisine locale",
+        "historique",
+        "cuisine-de-hangzhou",
+        "traditionnel"
       ],
       "star": 0,
       "diamond": 0,
@@ -1802,7 +1802,7 @@
       "id": "hangzhou-21",
       "name": "杭州味东坡肉",
       "nameEn": "杭州味东坡肉 (东坡肉)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "东坡肉",
       "avgPrice": 114,
       "rating": 4.6,
@@ -1831,7 +1831,7 @@
       "id": "hangzhou-23",
       "name": "正宗东坡肉",
       "nameEn": "正宗东坡肉 (东坡肉)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "东坡肉",
       "avgPrice": 39,
       "rating": 4.6,
@@ -1860,7 +1860,7 @@
       "id": "hangzhou-25",
       "name": "杭州味龙井虾仁",
       "nameEn": "杭州味龙井虾仁 (龙井虾仁)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "龙井虾仁",
       "avgPrice": 124,
       "rating": 4.3,
@@ -1889,7 +1889,7 @@
       "id": "hangzhou-27",
       "name": "老杭州龙井虾仁",
       "nameEn": "老杭州龙井虾仁 (龙井虾仁)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "龙井虾仁",
       "avgPrice": 49,
       "rating": 4.7,
@@ -1918,7 +1918,7 @@
       "id": "hangzhou-29",
       "name": "老街龙井虾仁",
       "nameEn": "老街龙井虾仁 (龙井虾仁)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "龙井虾仁",
       "avgPrice": 114,
       "rating": 4.7,
@@ -1947,7 +1947,7 @@
       "id": "hangzhou-31",
       "name": "街边西湖醋鱼",
       "nameEn": "街边西湖醋鱼 (西湖醋鱼)",
-      "type": "cafe",
+      "type": "café",
       "cuisine": "西湖醋鱼",
       "avgPrice": 51,
       "rating": 4.2,
@@ -1976,7 +1976,7 @@
       "id": "hangzhou-33",
       "name": "地道片儿川",
       "nameEn": "地道片儿川 (片儿川)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "片儿川",
       "avgPrice": 134,
       "rating": 4.8,
@@ -2005,7 +2005,7 @@
       "id": "hangzhou-35",
       "name": "街边东坡肉",
       "nameEn": "街边东坡肉 (东坡肉)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "东坡肉",
       "avgPrice": 110,
       "rating": 4.5,
@@ -2034,7 +2034,7 @@
       "id": "hangzhou-37",
       "name": "老字号东坡肉",
       "nameEn": "老字号东坡肉 (东坡肉)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "东坡肉",
       "avgPrice": 72,
       "rating": 4.6,
@@ -2063,7 +2063,7 @@
       "id": "hangzhou-39",
       "name": "老字号龙井虾仁",
       "nameEn": "老字号龙井虾仁 (龙井虾仁)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "龙井虾仁",
       "avgPrice": 61,
       "rating": 4.5,
@@ -2092,7 +2092,7 @@
       "id": "hangzhou-41",
       "name": "老杭州知味小笼",
       "nameEn": "老杭州知味小笼 (知味小笼)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "知味小笼",
       "avgPrice": 123,
       "rating": 4.4,
@@ -2121,7 +2121,7 @@
       "id": "hangzhou-43",
       "name": "地道片儿川",
       "nameEn": "地道片儿川 (片儿川)",
-      "type": "cafe",
+      "type": "café",
       "cuisine": "片儿川",
       "avgPrice": 77,
       "rating": 4.6,
@@ -2150,7 +2150,7 @@
       "id": "hangzhou-45",
       "name": "正宗东坡肉",
       "nameEn": "正宗东坡肉 (东坡肉)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "东坡肉",
       "avgPrice": 143,
       "rating": 4.6,
@@ -2179,7 +2179,7 @@
       "id": "hangzhou-47",
       "name": "杭州味知味小笼",
       "nameEn": "杭州味知味小笼 (知味小笼)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "知味小笼",
       "avgPrice": 132,
       "rating": 4.1,
@@ -2208,7 +2208,7 @@
       "id": "hangzhou-49",
       "name": "杭州味知味小笼",
       "nameEn": "杭州味知味小笼 (知味小笼)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "知味小笼",
       "avgPrice": 146,
       "rating": 4.7,
@@ -2237,7 +2237,7 @@
       "id": "hangzhou-51",
       "name": "巷子片儿川",
       "nameEn": "巷子片儿川 (片儿川)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "片儿川",
       "avgPrice": 150,
       "rating": 4.1,
@@ -2266,7 +2266,7 @@
       "id": "hangzhou-53",
       "name": "杭州味龙井虾仁",
       "nameEn": "杭州味龙井虾仁 (龙井虾仁)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "龙井虾仁",
       "avgPrice": 142,
       "rating": 4.5,
@@ -2295,7 +2295,7 @@
       "id": "hangzhou-55",
       "name": "杭州味东坡肉",
       "nameEn": "杭州味东坡肉 (东坡肉)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "东坡肉",
       "avgPrice": 115,
       "rating": 4.3,
@@ -2324,7 +2324,7 @@
       "id": "hangzhou-57",
       "name": "巷子知味小笼",
       "nameEn": "巷子知味小笼 (知味小笼)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "知味小笼",
       "avgPrice": 57,
       "rating": 4.4,
@@ -2353,7 +2353,7 @@
       "id": "hangzhou-59",
       "name": "阿婆东坡肉",
       "nameEn": "阿婆东坡肉 (东坡肉)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "东坡肉",
       "avgPrice": 34,
       "rating": 4.7,
@@ -2382,7 +2382,7 @@
       "id": "hangzhou-61",
       "name": "老字号龙井虾仁",
       "nameEn": "老字号龙井虾仁 (龙井虾仁)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "龙井虾仁",
       "avgPrice": 128,
       "rating": 4.4,
@@ -2411,7 +2411,7 @@
       "id": "hangzhou-63",
       "name": "老街龙井虾仁",
       "nameEn": "老街龙井虾仁 (龙井虾仁)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "龙井虾仁",
       "avgPrice": 114,
       "rating": 4.3,
@@ -2440,7 +2440,7 @@
       "id": "hangzhou-65",
       "name": "街边东坡肉",
       "nameEn": "街边东坡肉 (东坡肉)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "东坡肉",
       "avgPrice": 122,
       "rating": 4.8,
@@ -2469,7 +2469,7 @@
       "id": "hangzhou-67",
       "name": "老街东坡肉",
       "nameEn": "老街东坡肉 (东坡肉)",
-      "type": "cafe",
+      "type": "café",
       "cuisine": "东坡肉",
       "avgPrice": 77,
       "rating": 4.1,
@@ -2498,7 +2498,7 @@
       "id": "hangzhou-69",
       "name": "老字号东坡肉",
       "nameEn": "老字号东坡肉 (东坡肉)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "东坡肉",
       "avgPrice": 79,
       "rating": 4.5,
@@ -2527,7 +2527,7 @@
       "id": "hangzhou-71",
       "name": "传统知味小笼",
       "nameEn": "传统知味小笼 (知味小笼)",
-      "type": "local",
+      "type": "Cuisine locale",
       "cuisine": "知味小笼",
       "avgPrice": 128,
       "rating": 4.4,
@@ -2547,7 +2547,7 @@
       "tags": [
         "性价比高",
         "家常菜",
-        "commerce historique du quartier"
+        "社区老店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/42709ea23cc6.webp"
@@ -2555,28 +2555,28 @@
     {
       "id": "hangzhou-73",
       "name": "正宗西湖醋鱼",
-      "nameEn": "Poisson au vinaigre du Lac de l'Ouest authentique (Xi Hu Cu Yu)",
-      "type": "street",
-      "cuisine": "Poisson au vinaigre du Lac de l'Ouest",
+      "nameEn": "正宗西湖醋鱼 (西湖醋鱼)",
+      "type": "rue",
+      "cuisine": "西湖醋鱼",
       "avgPrice": 44,
       "rating": 4.3,
-      "address": "98 Rue de la Gastronomie, Vieille ville de Hangzhou",
+      "address": "杭州市老城区美食街98号",
       "coordinates": {
         "lat": 30.259,
         "lng": 120.1227
       },
       "phone": "+86 0571 83519668",
       "hours": "09:00-21:00",
-      "description": "Restaurant de poisson au vinaigre du Lac de l'Ouest recommandé par les habitants de Hangzhou, goût authentique et prix abordable",
+      "description": "杭州本地人推荐的西湖醋鱼店，味道正宗，价格实惠",
       "dishHighlights": [
-        "Xiaolongbao Zhi Wei",
-        "Poisson au vinaigre du Lac de l'Ouest",
-        "Crevettes au thé Longjing"
+        "知味小笼",
+        "西湖醋鱼",
+        "龙井虾仁"
       ],
       "tags": [
-        "Lieu tendance pour Instagram",
-        "Marché de nuit",
-        "Stand de rue"
+        "网红打卡",
+        "夜市",
+        "路边摊"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/7ec3fc78f978.webp"
@@ -2584,28 +2584,28 @@
     {
       "id": "hangzhou-75",
       "name": "老杭州片儿川",
-      "nameEn": "Pie er chuan de Hangzhou historique (Pie er chuan)",
-      "type": "local",
-      "cuisine": "Pie er chuan",
+      "nameEn": "老杭州片儿川 (片儿川)",
+      "type": "Cuisine locale",
+      "cuisine": "片儿川",
       "avgPrice": 60,
       "rating": 4.9,
-      "address": "134 Rue de la Gastronomie, Centre-ville de Hangzhou",
+      "address": "杭州市市中心区美食街134号",
       "coordinates": {
         "lat": 30.225,
         "lng": 120.1209
       },
       "phone": "+86 0571 49959733",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "Un restaurant de pian'er chuan recommandé par les habitants de Hangzhou, saveurs authentiques et prix abordables",
+      "description": "杭州本地人推荐的片儿川店，味道正宗，价格实惠",
       "dishHighlights": [
-        "Pian'er chuan",
-        "Poisson du Lac de l'Ouest au vinaigre",
-        "Crevettes au thé Longjing"
+        "片儿川",
+        "西湖醋鱼",
+        "龙井虾仁"
       ],
       "tags": [
-        "Cuisine familiale",
-        "Roi de la file d'attente",
-        "Établissement historique"
+        "家常菜",
+        "排队王",
+        "老字号"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ff1d05539a86.webp"
@@ -2613,28 +2613,28 @@
     {
       "id": "hangzhou-77",
       "name": "正宗片儿川",
-      "nameEn": "Pian'er chuan authentique (pian'er chuan)",
-      "type": "local",
-      "cuisine": "Pian'er chuan",
+      "nameEn": "正宗片儿川 (片儿川)",
+      "type": "Cuisine locale",
+      "cuisine": "片儿川",
       "avgPrice": 65,
       "rating": 4.8,
-      "address": "35, rue gastronomique du centre-ville de Hangzhou",
+      "address": "杭州市市中心区美食街35号",
       "coordinates": {
         "lat": 30.282,
         "lng": 120.1373
       },
       "phone": "+86 0571 18166803",
       "hours": "09:00-21:00",
-      "description": "Un restaurant de pian'er chuan recommandé par les habitants de Hangzhou, saveurs authentiques et prix abordables",
+      "description": "杭州本地人推荐的片儿川店，味道正宗，价格实惠",
       "dishHighlights": [
-        "Porc Dongpo",
-        "Pian'er chuan",
-        "Zhiwei Xiaolong"
+        "东坡肉",
+        "片儿川",
+        "知味小笼"
       ],
       "tags": [
-        "Apprécié des habitants",
-        "Établissement historique",
-        "Cuisine familiale"
+        "本地人爱去",
+        "老字号",
+        "家常菜"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/42709ea23cc6.webp"
@@ -2643,27 +2643,27 @@
       "id": "hangzhou-79",
       "name": "街边知味小笼",
       "nameEn": "街边知味小笼 (知味小笼)",
-      "type": "local",
-      "cuisine": "Zhiwei Xiaolong",
+      "type": "Cuisine locale",
+      "cuisine": "知味小笼",
       "avgPrice": 49,
       "rating": 4.7,
-      "address": "8 Rue de la Rue Gastronomique, Centre-ville de Hangzhou",
+      "address": "杭州市市中心区美食街8号",
       "coordinates": {
         "lat": 30.2794,
         "lng": 120.1825
       },
       "phone": "+86 0571 87689795",
       "hours": "10:00-22:00",
-      "description": "Restaurant de Xiaolong recommandé par les habitants de Hangzhou, goût authentique, prix abordables",
+      "description": "杭州本地人推荐的知味小笼店，味道正宗，价格实惠",
       "dishHighlights": [
-        "Pian'er Chuan",
-        "Poisson au vinaigre du Lac Ouest",
-        "Poitrine de porc de Dongpo"
+        "片儿川",
+        "西湖醋鱼",
+        "东坡肉"
       ],
       "tags": [
-        "Perle cachée",
-        "Apprécié des habitants",
-        "Excellent rapport qualité-prix"
+        "隐藏美食",
+        "本地人爱去",
+        "性价比高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/3876a641f74a.png"
@@ -3048,92 +3048,92 @@
   "culturalTips": [
     {
       "category": "tea",
-      "title": "Tea Culture",
-      "content": "Hangzhou is famous for Longjing (Dragon Well) tea. Visit a tea house for authentic tea ceremony. Spring tea picking (April) is a special experience.",
+      "title": "Culture du thé",
+      "content": "Hangzhou est célèbre pour le thé Longjing (Puits du Dragon). Visitéz une maison de thé pour une cérémonie authentique. La cueillette du thé de printemps (avril) est une expérience particulière.",
       "importance": "high"
     },
     {
       "category": "dining",
-      "title": "Dining Etiquette",
-      "content": "West Lake vinegar fish and Dongpo pork are local specialties. Tipping is not expected. Restaurant service may be casual.",
+      "title": "Étiquette à table",
+      "content": "Le poisson vinaigré du Lac de l'Ouest et le porc Dongpo sont des spécialités locales. Les pourboires ne sont pas attendus. Le service en restaurant peut être décontracté.",
       "importance": "high"
     },
     {
       "category": "dressing",
-      "title": "Clothing",
-      "content": "Comfortable walking shoes essential for West Lake. Dress modestly for temple visits. Light layers for variable weather.",
+      "title": "Vêtements",
+      "content": "Des chaussures de marche confortables sont essentielles pour le Lac de l'Ouest. Habillez-vous modestement pour les visites de temples. Des couches légères pour la météo variable.",
       "importance": "medium"
     },
     {
       "category": "timing",
-      "title": "Best Times",
-      "content": "Visit West Lake early morning or late evening to avoid crowds. Weekdays are less crowded than weekends. Spring (April-May) for flowers, autumn for foliage.",
+      "title": "Meilleures périodes",
+      "content": "Visitéz le Lac de l'Ouest tôt le matin ou tard le soir pour éviter les foules. Les jours de semaine sont moins fréquentés que les week-ends. Le printemps (avril-mai) pour les fleurs, l'automne pour le feuillage.",
       "importance": "medium"
     },
     {
       "category": "silk-culture",
-      "title": "Silk Heritage",
-      "content": "Hangzhou has been China's silk capital for over 2,000 years. Visit the China Silk Museum or silk factories for authentic products. '杭州丝绸' is a premium brand recognized worldwide.",
+      "title": "Héritage de la soie",
+      "content": "Hangzhou est la capitale de la soie chinoise depuis plus de 2 000 ans. Visitéz le Musée de la Soie de Chine ou les fabriques de soie pour des produits authentiques. '杭州丝绸' est une marque premium reconnue dans le monde entier.",
       "importance": "medium"
     },
     {
       "category": "lotus-culture",
-      "title": "Lotus and Water Lily Culture",
-      "content": "Lotus flowers are symbolic in Hangzhou's culture, representing purity and elegance. West Lake's lotus gardens bloom in summer (June-August). The '曲院风荷' view is one of the Ten Views of West Lake.",
+      "title": "Culture du lotus et des nénuphars",
+      "content": "Les fleurs de lotus sont symboles dans la culture de Hangzhou, représentant la pureté et l'élégance. Les jardins de lotus du Lac de l'Ouest fleurissent en été (juin-août). La vue '曲院风荷' est l'une des Dix Vues du Lac de l'Ouest.",
       "importance": "medium"
     },
     {
       "category": "imperial-history",
-      "title": "Imperial Heritage",
-      "content": "Hangzhou served as capital during Southern Song Dynasty (1127-1279). The city's layout, gardens, and cuisine reflect this imperial period. Emperor Gaozong chose Hangzhou for its 'paradise' scenery.",
+      "title": "Héritage impérial",
+      "content": "Hangzhou a servi de capitale pendant la dynastie Song du Sud (1127-1279). La disposition de la ville, les jardins et la cuisine reflètent cette période impériale. L'empereur Gaozong a choisi Hangzhou pour ses paysages de 'paradis'.",
       "importance": "medium"
     },
     {
       "category": "poetry-culture",
-      "title": "Literary and Poetry Heritage",
-      "content": "West Lake inspired countless poets including Su Dongpo, Bai Juyi, and Li Bai. Many famous poems describe West Lake scenes. The '三潭印月' and '断桥残雪' are classic poetic themes.",
+      "title": "Héritage littéraire et poétique",
+      "content": "Le Lac de l'Ouest a inspiré d'innombrables poetaes dont Su Dongpo, Bai Juyi et Li Bai. De nombreux poemaes célèbres décrivent les scènes du Lac de l'Ouest. '三潭印月' et '断桥残雪' sont des thèmes poétiques classiques.",
       "importance": "medium"
     },
     {
       "category": "tea-harvest",
-      "title": "Longjing Tea Harvest Season",
-      "content": "The first flush of Longjing tea (明前龙井) in early April is the most prized. Tea picking season brings visitors to Longjing Village. Fresh tea from this period commands premium prices.",
+      "title": "Saison de récolte du thé Longjing",
+      "content": "La première récolte du thé Longjing (明前龙井) début avril est la plus prisée. La saison de cueillette du thé attire les visiteurs au village de Longjing. Le thé frais de cette période atteint des prix premium.",
       "importance": "high"
     },
     {
       "category": "west-lake-legends",
-      "title": "Legend of White Snake",
-      "content": "The Legend of White Snake (白蛇传) is Hangzhou's most famous folk tale. Leifeng Pagoda is where the story's heroine was imprisoned. This romantic legend has been adapted into opera, film, and television.",
+      "title": "Légende du Serpent Blanc",
+      "content": "La Légende du Serpent Blanc (白蛇传) est le conte populaire le plus célèbre de Hangzhou. La pagode de Leifeng est où l'héroïne de l'histoire était emprisonnée. Cette légende romantique a été adaptée en opéra, film et télévision.",
       "importance": "medium"
     },
     {
       "category": "water-town",
-      "title": "Water Town Atmosphere",
-      "content": "Hangzhou's connection to water includes the Grand Canal, West Lake, and surrounding waterways. Traditional water town architecture can still be seen along canal banks. Boat tours offer glimpses of this heritage.",
+      "title": "Ambiance de ville d'eau",
+      "content": "La connexion de Hangzhou avec l'eau inclut le Grand Canal, le Lac de l'Ouest et les voies navigables environnantes. L'architecture traditionnelle des villes d'eau peut encore être vue le long des berges du canal. Les tours en bateau offrent un aperçu de ce patrimoine.",
       "importance": "medium"
     },
     {
       "category": "festival-traditions",
-      "title": "Festival Celebrations",
-      "content": "Hangzhou celebrates festivals with unique traditions. Mid-Autumn Festival at West Lake features moon viewing and boat rides. Qingming Festival brings visitors to tea gardens and historical sites.",
+      "title": "Festivals et célébrations",
+      "content": "Hangzhou célèbre ses fêtes avec des traditions uniques. La fête de la Mi-Automne au Lac de l'Ouest comprend l'observation de la lune et des promenades en bateau. La fête de Qingming attire les visiteurs dans les jardins de thé et les sites historiques.",
       "importance": "medium"
     },
     {
       "category": "gardens",
-      "title": "Classical Chinese Gardens",
-      "content": "Hangzhou's classical gardens showcase Chinese landscape design principles. Guo Wang's Garden and Lianhua Chi are excellent examples. Gardens feature pavilions, rock arrangements, and water features.",
+      "title": "Jardins classiques chinois",
+      "content": "Les jardins classiques de Hangzhou mettent en valeur les principes chinois d'aménagement paysager. Le Jardin de Guo Wang et Lianhua Chi sont d'excellents exemples. Les jardins comportent des pavillons, des arrangements de rochers et des éléments d'eau.",
       "importance": "medium"
     },
     {
       "category": "crafts",
-      "title": "Traditional Crafts",
-      "content": "Hangzhou preserves traditional crafts including silk weaving, fan making, and bamboo carving. Workshops in Hefang Street demonstrate these skills. Authentic products make meaningful souvenirs.",
+      "title": "Artisanat traditionnel",
+      "content": "Hangzhou préserve les métiers traditionnels incluant la tissage de la soie, la fabrication d'éventails et la sculpture sur bambou. Les ateliers de la rue Hefang démontrent ces compétences. Les produits authentiques font des souvenirs significatifs.",
       "importance": "medium"
     },
     {
       "category": "tech-innovation",
-      "title": "Tech Hub Culture",
-      "content": "Hangzhou is home to Alibaba and China's tech industry. The city blends traditional culture with innovation. '梦想小镇' (Dream Town) showcases Hangzhou's entrepreneurial spirit.",
+      "title": "Culture technologique",
+      "content": "Hangzhou est le siège d'Alibaba et de l'industrie technologique chinoise. La ville mêle culture traditionnelle et innovation. '梦想小镇' (Dream Town) montre l'esprit entrepreneurial de Hangzhou.",
       "importance": "low"
     }
   ],
@@ -3141,118 +3141,118 @@
     {
       "type": "ambulance",
       "name": "杭州急救中心",
-      "nameEn": "Hangzhou Emergency Center",
+      "nameEn": "Consulat général de Singapour à Canton",
       "phone": "120",
-      "notes": "English interpretation available at major hospitals"
+      "notes": "Pour les citoyens singapouriens"
     },
     {
       "type": "police",
       "name": "杭州市公安局",
-      "nameEn": "Hangzhou Public Security Bureau",
+      "nameEn": "Consulat général de Singapour à Canton",
       "phone": "110",
-      "notes": "Tourist police at West Lake area"
+      "notes": "Pour les citoyens singapouriens"
     },
     {
       "type": "hospital",
       "name": "浙江大学医学院附属第一医院",
-      "nameEn": "First Affiliated Hospital of Zhejiang University",
+      "nameEn": "Consulat général de Singapour à Canton",
       "phone": "+86 571 8723 6000",
-      "address": "79 Qingchun Road",
+      "address": "Canton",
       "coordinates": {
         "lat": 30.2522,
         "lng": 120.1922
       },
-      "notes": "English-speaking staff, accepts international insurance"
+      "notes": "Pour les citoyens singapouriens"
     },
     {
       "type": "embassy",
       "name": "美国驻上海总领事馆",
-      "nameEn": "US Consulate General Shanghai",
+      "nameEn": "Consulat général de Singapour à Canton",
       "phone": "+86 21 8011 2400",
-      "address": "Shanghai (nearest US consular services for Hangzhou)",
-      "notes": "For US citizens in Hangzhou region"
+      "address": "Canton",
+      "notes": "Pour les citoyens singapouriens"
     },
     {
       "type": "fire",
       "name": "杭州市消防救援支队",
-      "nameEn": "Hangzhou Fire Department",
+      "nameEn": "Consulat général de Singapour à Canton",
       "phone": "119",
-      "notes": "For fire emergencies and rescue operations"
+      "notes": "Pour les citoyens singapouriens"
     },
     {
       "type": "tourist-info",
       "name": "杭州旅游咨询服务中心",
-      "nameEn": "Hangzhou Tourist Information Center",
+      "nameEn": "Consulat général de Singapour à Canton",
       "phone": "0571-96123",
-      "address": "West Lake Scenic Area",
-      "notes": "Tourist complaints and information service"
+      "address": "Canton",
+      "notes": "Pour les citoyens singapouriens"
     },
     {
       "type": "police-special",
       "name": "杭州旅游警察",
-      "nameEn": "Hangzhou Tourist Police",
+      "nameEn": "Consulat général de Singapour à Canton",
       "phone": "+86 571 8502 6110",
-      "address": "West Lake Police Station, Xihu District",
-      "notes": "24-hour tourist police service"
+      "address": "Canton",
+      "notes": "Pour les citoyens singapouriens"
     },
     {
       "type": "embassy",
       "name": "英国驻上海总领事馆",
-      "nameEn": "British Consulate General Shanghai",
+      "nameEn": "Consulat général de Singapour à Canton",
       "phone": "+86 21 6179 2000",
-      "address": "Shanghai",
-      "notes": "For UK citizens in Hangzhou region"
+      "address": "Canton",
+      "notes": "Pour les citoyens singapouriens"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻上海总领事馆",
-      "nameEn": "Australian Consulate General Shanghai",
+      "nameEn": "Consulat général de Singapour à Canton",
       "phone": "+86 21 5292 8000",
-      "address": "Shanghai",
-      "notes": "For Australian citizens in Hangzhou region"
+      "address": "Canton",
+      "notes": "Pour les citoyens singapouriens"
     },
     {
       "type": "embassy",
       "name": "德国驻上海总领事馆",
-      "nameEn": "German Consulate General Shanghai",
+      "nameEn": "Consulat général de Singapour à Canton",
       "phone": "+86 21 6101 2000",
-      "address": "Shanghai",
-      "notes": "For German citizens in Hangzhou region"
+      "address": "Canton",
+      "notes": "Pour les citoyens singapouriens"
     },
     {
       "type": "embassy",
       "name": "日本驻上海总领事馆",
-      "nameEn": "Japanese Consulate General Shanghai",
+      "nameEn": "Consulat général de Singapour à Canton",
       "phone": "+86 21 6218 0021",
-      "address": "Shanghai",
-      "notes": "For Japanese citizens in Hangzhou region"
+      "address": "Canton",
+      "notes": "Pour les citoyens singapouriens"
     },
     {
       "type": "hospital",
       "name": "邵逸夫医院",
-      "nameEn": "Sir Run Run Shaw Hospital",
+      "nameEn": "Consulat général de Singapour à Canton",
       "phone": "+86 571 8609 0088",
-      "address": "3 East Qingchun Road",
+      "address": "Canton",
       "coordinates": {
         "lat": 30.2722,
         "lng": 120.1922
       },
-      "notes": "Quality international medical services"
+      "notes": "Pour les citoyens singapouriens"
     },
     {
       "type": "hotel-booking",
       "name": "杭州旅游投诉热线",
-      "nameEn": "Hangzhou Tourism Complaint Hotline",
+      "nameEn": "Consulat général de Singapour à Canton",
       "phone": "0571-12345",
-      "notes": "For complaints about tourism services"
+      "notes": "Pour les citoyens singapouriens"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese (Simplified)",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Tap water safe after boiling; bottled water recommended"
+    "language": "Chinois mandarin (simplifié)",
+    "currency": "Yuan chinois (CNY/RMB)",
+    "visa": "La plupart des nationalités nécessitent un visa",
+    "timeZone": "UTC+8 (heure normale de la Chine)",
+    "electricity": "220V/50Hz, prises de type A/I",
+    "water": "Eau du robinet thérapeut après ébullition ; eau en bouteille recommandée"
   }
 }

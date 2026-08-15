@@ -32,10 +32,10 @@
     "tips": "Sanya enjoys warm weather year-round. Best visited from November to March when temperatures are pleasant and rainfall is low. Summer (June-August) is hot and humid with occasional typhoons. Pack sunscreen, sunglasses, and light clothing regardless of season."
   },
   "quickFacts": {
-    "language": "Mandarin Chinese (Hainan dialect also spoken)",
-    "currency": "Chinese Yuan (CNY)",
-    "visa": "Visa-free for many countries, 30-day stay for tourism",
-    "electricity": "220V/50Hz (Type A, C, F plugs)"
+    "language": "Mandarin (Chinesisch)",
+    "currency": "Chinesischer Yuan (CNY/RMB)",
+    "visa": "Für die meisten Nationalitäten ist ein Visum erforderlich. Ein 72-Stunden-Transitvisum steht am Flughafen für berechtigte Staatsangehörige zur Verfügung.",
+    "electricity": "220V/50Hz, Steckdosen Typ A/I"
   },
   "attractions": [
     {
@@ -52,10 +52,10 @@
       },
       "openingHours": "07:30-18:30",
       "ticketPrice": "81¥ (includes sightseeing bus)",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4 Stunden",
       "highlights": [
         "Heart-shaped rocks",
-        "Sunset views",
+        "Sonnenuntergangsblick",
         "Ancient wedding ceremonies",
         "Sea gazebo"
       ],
@@ -75,7 +75,7 @@
       },
       "openingHours": "Open 24 hours (beach access)",
       "ticketPrice": "Free (some attractions within)",
-      "recommendedVisitTime": "4-6 hours",
+      "recommendedVisitTime": "4-6 Stunden",
       "highlights": [
         "Pristine white sand beach",
         "Snorkeling",
@@ -97,12 +97,12 @@
         "lat": 18.2082,
         "lng": 109.5208
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24 Stunden geöffnet",
+      "ticketPrice": "Kostenlos",
+      "recommendedVisitTime": "2-3 Stunden",
       "highlights": [
         "City beach convenience",
-        "Sunset views",
+        "Sonnenuntergangsblick",
         "Beach bars",
         "Night market nearby"
       ],
@@ -113,7 +113,7 @@
     {
       "id": "nanshan-culture",
       "name": "南山文化旅游区",
-      "nameEn": "Nanshan Cultural Tourism Zone",
+      "nameEn": "Nanshan-Kulturzone",
       "category": "cultural",
       "description": "A massive Buddhist cultural complex featuring the iconic 108-meter tall Guanyin statue standing in the sea. Combines Buddhist art, traditional architecture, and ocean views.",
       "address": "Nanshan Road, Yalong Bay Area",
@@ -123,12 +123,12 @@
       },
       "openingHours": "08:00-17:30",
       "ticketPrice": "121¥ (includes entrance and bus)",
-      "recommendedVisitTime": "4-5 hours",
+      "recommendedVisitTime": "4-5 Stunden",
       "highlights": [
         "108m Guanyin statue",
         "Nanshan Temple",
         "Garden of Buddhism",
-        "Ocean views"
+        "Meeresblick"
       ],
       "tips": "Allow full morning or afternoon for this large complex. Wear comfortable walking shoes. Respect Buddhist customs - dress modestly. Don't miss the vegetarian restaurant.",
       "image": "/img/ext/464ba01d8b2d.webp",
@@ -147,7 +147,7 @@
       },
       "openingHours": "08:00-16:30 (first ferry)",
       "ticketPrice": "144¥ (includes round-trip ferry)",
-      "recommendedVisitTime": "Full day",
+      "recommendedVisitTime": "Ganzer Tag",
       "highlights": [
         "Scuba diving",
         "Snorkeling",
@@ -171,7 +171,7 @@
       },
       "openingHours": "06:00-22:30",
       "ticketPrice": "41¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3 Stunden",
       "highlights": [
         "Deer and hunter statue",
         "Panoramic bay views",
@@ -195,12 +195,12 @@
       },
       "openingHours": "08:30-17:30",
       "ticketPrice": "75¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4 Stunden",
       "highlights": [
         "Ancient Taoist temple",
         "Sea caves",
-        "Banyan trees",
-        "Rock formations"
+        "Banyanbäume",
+        "Felsformationen"
       ],
       "tips": "Less crowded than Tianya Haijiao. Best for photography and nature lovers. Combine with Nanshan for a full day cultural tour.",
       "image": "/img/ext/994bfae9b723.webp",
@@ -219,12 +219,12 @@
       },
       "openingHours": "08:00-17:30",
       "ticketPrice": "100¥ (park only), 170¥ (with cable car and waterfall)",
-      "recommendedVisitTime": "4-5 hours",
+      "recommendedVisitTime": "4-5 Stunden",
       "highlights": [
-        "Rainforest hiking",
-        "Waterfall climbing",
-        " Ethnic village",
-        "Canopy walkway"
+        "Regenwaldwanderung",
+        "Wasserfallklettern",
+        "Ethnisches Dorf",
+        "Kronenweg"
       ],
       "tips": "Bring rain gear regardless of weather - rainforest is humid. Wear non-slip shoes for waterfall trails. Book a guide for better cultural insights. Best visited in morning.",
       "image": "/img/ext/ba2ccd425eb0.webp",
@@ -233,24 +233,24 @@
     {
       "id": "binglanggu",
       "name": "槟榔谷",
-      "nameEn": "Binglanggu Li and Miao Cultural Park",
+      "nameEn": "Binglanggu Li- und Miao-Kulturpark",
       "category": "cultural",
-      "description": "A cultural heritage park showcasing the traditional lifestyles of Hainan's Li and Miao ethnic minorities. Features original villages, handicraft workshops, and cultural performances.",
-      "address": "Baoting County, 28km north of Sanya",
+      "description": "Ein Kulturdenkmal-Park, der die traditionellen Lebensweisen der ethnischen Minderheiten der Li und Miao in Hainan zeigt. Zu den Attraktionen gehören ursprüngliche Dörfer, Handwerkswerkstätten und kulturelle Aufführungen.",
+      "address": "Landkreis Baoting, 28 km nördlich von Sanya",
       "coordinates": {
         "lat": 18.3568,
         "lng": 109.5823
       },
       "openingHours": "08:30-17:30",
-      "ticketPrice": "96¥ (cultural show included)",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "96 ¥ (inklusive Kulturvorführung)",
+      "recommendedVisitTime": "3-4 Stunden",
       "highlights": [
-        "Li village tour",
+        "Li-Dorf-Tour",
         "Traditional weaving",
-        "Bamboo pole dancing",
-        "Local cuisine"
+        "Bambusstabtanz",
+        "Lokale Küche"
       ],
-      "tips": "Book through travel agencies for better prices. Watch the afternoon cultural show. Learn basic phrases in Li language. Respect local customs and photography restrictions.",
+      "tips": "Buchen Sie über Reisebüros für bessere Preise. Sehen Sie sich die nachmittägliche Kulturvorführung an. Lernen Sie grundlegende Sätze in der Li-Sprache. Respektieren Sie lokale Bräuche und Fotografierbeschränkungen.",
       "image": "/img/ext/90927b8db3c9.webp",
       "phone": "+86 089 8 5602 5514"
     },
@@ -259,22 +259,22 @@
       "name": "三亚湾",
       "nameEn": "Sanya Bay",
       "category": "beach",
-      "description": "The longest beach in Sanya, stretching 22km along the city coastline. Famous for its coconut groves, sunset views, and the iconic 'Crystal Princess' sculpture.",
-      "address": "Sanya Bay, Sanya City",
+      "description": "Der längste Strand in Sanya, der sich über 22 km entlang der Stadtlinie erstreckt. Berühmt für seine Kokosnusshaine, Sonnenuntergangsaussichten und die ikonische 'Crystal Princess'-Skulptur.",
+      "address": "Sanya Bay, Sanya Stadt",
       "coordinates": {
         "lat": 18.2689,
         "lng": 109.4885
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24 Stunden geöffnet",
+      "ticketPrice": "Kostenlos",
+      "recommendedVisitTime": "2-3 Stunden",
       "highlights": [
         "22 km Küstenlinie",
         "Kokospalmenallee",
         "Sonnenuntergangsblick",
         "Lokales Freizeitgebiet"
       ],
-      "tips": "Best at sunset for golden hour photos. Less touristy than Yalong Bay. Great for early morning tai chi. Popular with locals on weekends.",
+      "tips": "Am besten bei Sonnenuntergang für Fotos in der goldenen Stunde. Weniger touristisch als Yalong Bay. Großartig für Tai Chi am frühen Morgen. Beliebt bei Einheimischen an Wochenenden.",
       "image": "/img/ext/90c2f10df87a.webp",
       "phone": "+86 089 8 8980 6131"
     },
@@ -332,7 +332,7 @@
       "nameEn": "Nanshan Temple",
       "category": "cultural",
       "description": "Ein prachtvoller buddhistischer Tempel im Nanshan-Kulturgebiet mit traditioneller chinesischer buddhistischer Architektur, schönen Gärten und der imposanten Guanyin-Statue.",
-      "address": "Nanshan Cultural Tourism Zone",
+      "address": "Nanshan-Kulturzone",
       "coordinates": {
         "lat": 18.3398,
         "lng": 109.6789
@@ -366,9 +366,9 @@
       "recommendedVisitTime": "1-2 Stunden",
       "highlights": [
         "108m Höhe",
-        "Three perspectives of Guanyin",
-        "Bridge to statue",
-        "Ocean backdrop"
+        "Drei Perspektiven von Guanyin",
+        "Brücke zur Statue",
+        "Ozean-Hintergrund"
       ],
       "tips": "Beste Fotomöglichkeiten von der Brücke. Für verschiedene Ansichten umhergehen. Der Blitzableger bei Sturm ist markant. Mit der gesamten Nanshan-Zone kombinieren.",
       "image": "/img/ext/0e19826d36c7.webp",
@@ -377,24 +377,24 @@
     {
       "id": "sanya-dadong",
       "name": "大东海",
-      "nameEn": "Dadonghai (Eastern Sea)",
+      "nameEn": "Dadonghai (Östliches Meer)",
       "category": "beach",
-      "description": "The most popular beach in Sanya city area with gentle waves suitable for swimming. Backed by hotels, restaurants, and bars with easy access from downtown.",
-      "address": "Dadonghai District, Sanya",
+      "description": "Der beliebteste Strand im Stadtgebiet von Sanya mit sanften Wellen, die sich zum Schwimmen eignen. Umgeben von Hotels, Restaurants und Bars mit einfachem Zugang vom Stadtzentrum.",
+      "address": "Dadonghai-Distrikt, Sanya",
       "coordinates": {
         "lat": 18.2112,
         "lng": 109.5234
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-4 hours",
+      "openingHours": "24 Stunden geöffnet",
+      "ticketPrice": "Kostenlos",
+      "recommendedVisitTime": "2-4 Stunden",
       "highlights": [
-        "Swimming beach",
-        "Beach volleyball",
+        "Strand zum Schwimmen",
+        "Beachvolleyball",
         "Night markets",
         "Water sports"
       ],
-      "tips": "Swim between lifeguard flags. Rent jet skis on beach. Evening beach bars and fire dancing shows. Negotiate prices for water activities.",
+      "tips": "Schwimmen Sie zwischen den Rettungsschwimmer-Flaggen. Vermietung von Jetskis am Strand. Abends Beachbars und Feuertanzshows. Verhandeln Sie Preise für Wassersportarten.",
       "image": "/img/ext/f40cca09aac0.webp",
       "phone": "+86 089 8 0495 7751"
     },
@@ -403,22 +403,22 @@
       "name": "小洞天",
       "nameEn": "Xiao Dongtian",
       "category": "natural",
-      "description": "Part of the larger Daxiao Dongtian scenic area featuring smaller coastal caves and rock formations with Taoist significance. Less crowded than main area.",
-      "address": "Near Daxiao Dongtian, Nanshan",
+      "description": "Teil des größeren Daxiao Dongtian-Szenengebiets mit kleineren Küstenhöhlen und Felsformationen von taoistischer Bedeutung. Weniger überlaufen als das Hauptgebiet.",
+      "address": "In der Nähe von Daxiao Dongtian, Nanshan",
       "coordinates": {
         "lat": 18.2934,
         "lng": 109.4089
       },
       "openingHours": "08:30-17:30",
-      "ticketPrice": "Included in Daxiao Dongtian ticket (75¥)",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "Im Preis für Daxiao Dongtian inbegriffen (75¥)",
+      "recommendedVisitTime": "1-2 Stunden",
       "highlights": [
-        "Ancient cave inscriptions",
-        "Taoist carvings",
-        "Coastal rocks",
-        "Secluded spots"
+        "Alte Höhleninschriften",
+        "Taoistische Schnitzereien",
+        "Küstengestein",
+        "Abgelegene Orte"
       ],
-      "tips": "Often combined with Daxiao Dongtian visit. Good for photography. Peaceful atmosphere. Bring hiking shoes for rocky paths.",
+      "tips": "Wird oft mit einem Besuch von Daxiao Dongtian kombiniert. Ideal für Fotografie. Ruhige Atmosphäre. Tragen Sie Wanderschuhe für die felsigen Wege.",
       "image": "/img/ext/7dba917e5c58.webp",
       "phone": "+86 089 8 9066 8332"
     },
@@ -427,7 +427,7 @@
       "name": "万寿 Dongtian",
       "nameEn": "Wanshou Dongtian",
       "category": "cultural",
-      "description": "An ancient Taoist cultivation site with stone inscriptions dating back to the Song Dynasty. Features unique rock formations and peaceful mountain trails.",
+      "description": "Ein antiker taoistischer Kultivierungsort mit steinernen Inschriften, die bis zur Song-Dynastie zurückreichen. Bietet einzigartige Felsformationen und friedliche Bergpfade.",
       "address": "Xiangshui Town, Yalong Bay",
       "coordinates": {
         "lat": 18.2456,
@@ -435,14 +435,14 @@
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3 Stunden",
       "highlights": [
-        "Song Dynasty inscriptions",
-        "Taoist culture",
-        "Mountain streams",
-        "Ancient banyans"
+        "Song-Dynastie-Inschriften",
+        "Taoistische Kultur",
+        "Bergbäche",
+        "Uralte Banyanbäume"
       ],
-      "tips": "Combine with nearby attractions. Wear comfortable shoes for hiking. Less known by tourists - peaceful experience. Bring water and snacks.",
+      "tips": "Kombinieren Sie mit nahegelegenen Attraktionen. Tragen Sie bequeme Schuhe für Wanderungen. Weniger bekannt bei Touristen - ein ruhiges Erlebnis. Bringen Sie Wasser und Snacks mit.",
       "image": "/img/ext/5e60c73b6f0f.webp",
       "phone": "+86 089 8 0745 6891"
     },
@@ -451,22 +451,22 @@
       "name": "凤凰岭公园",
       "nameEn": "Phoenix Observation Deck",
       "category": "natural",
-      "description": "The highest observation point in Sanya offering 360-degree panoramic views of the entire bay area. Features crystal viewing platform and sunset views.",
+      "description": "Der höchste Aussichtspunkt in Sanya bietet 360-Grad-Panoramablicke auf die gesamte Bucht. Bietet Kristall-Aussichtsplattform und Sonnenuntergangsbilder.",
       "address": "Phoenix Mountain, Sanya",
       "coordinates": {
         "lat": 18.2834,
         "lng": 109.5456
       },
       "openingHours": "07:30-22:00",
-      "ticketPrice": "96¥ (includes cable car)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "96¥ (inklusive Seilbahn)",
+      "recommendedVisitTime": "2-3 Stunden",
       "highlights": [
-        "360 panoramic views",
-        "Crystal deck",
-        "Sunset views",
-        "Night city lights"
+        "360-Grad-Panoramablicke",
+        "Kristall-Deck",
+        "Sonnenuntergangsblick",
+        "Lichter der Stadt bei Nacht"
       ],
-      "tips": "Best visited at sunset for dramatic views. Take cable car both ways to save energy. Bring jacket as it can be windy at top. Night view of Sanya is spectacular.",
+      "tips": "Am besten bei Sonnenuntergang besuchen für dramatische Ausblicke. Nehmen Sie die Seilbahn in beide Richtungen, um Energie zu sparen. Bringen Sie eine Jacke mit, da es auf dem Gipfel windig sein kann. Der Nachtblick auf Sanya ist spektakulär.",
       "image": "/img/ext/76d8ce3dced1.webp",
       "phone": "+86 089 8 5024 6004"
     },
@@ -475,22 +475,22 @@
       "name": "中免三亚国际免税城",
       "nameEn": "CDF Sanya International Duty Free",
       "category": "shopping",
-      "description": "The world's largest duty-free shopping complex with luxury brands, cosmetics, electronics, and designer goods. Up to 30% savings on international brands.",
+      "description": "Das weltweit größte zollfreie Einkaufszentrum mit Luxusmarken, Kosmetik, Elektronik und Designerartikeln. Bis zu 30% Ersparnis bei internationalen Marken.",
       "address": "Haitang Bay, Sanya",
       "coordinates": {
         "lat": 18.3634,
         "lng": 109.7589
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "Free entry",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "Kostenloser Eintritt",
+      "recommendedVisitTime": "3-4 Stunden",
       "highlights": [
-        "Luxury brands",
-        "Cosmetics heaven",
-        "Electronics",
-        "Duty-free prices"
+        "Luxusmarken",
+        "Kosmetik-Himmel",
+        "Elektronik",
+        "Zollfreie Preise"
       ],
-      "tips": "Bring passport for duty-free shopping. Download CDF app for exclusive deals. Plan visit during sales events. Don't forget to pick up your purchases at airport.",
+      "tips": "Reisepass für zollfreies Einkaufen mitbringen. CDF-App für exklusive Angebote herunterladen. Besuch während der Verkaufsveranstaltungen planen. Vergessen Sie nicht, Ihre Einkäufe am Flughafen abzuholen.",
       "image": "/img/ext/a237ca8ba2e4.webp",
       "phone": "+86 089 8 2102 4240"
     },
@@ -499,116 +499,116 @@
       "name": "珠江南田温泉",
       "nameEn": "Zhujiang Nantian Hot Springs",
       "category": "wellness",
-      "description": "A premier hot spring resort with over 50 mineral-rich pools set in tropical gardens. Features various themed pools, spa treatments, and relaxation facilities.",
-      "address": "Haitang Bay Area, 30km from Sanya",
+      "description": "Ein erstklassiges Thermalresort mit über 50 mineralreichen Pools in tropischen Gärten. Es bietet verschiedene thematische Pools, Spa-Behandlungen und Entspannungseinrichtungen.",
+      "address": "Haitang Bay Gebiet, 30 km von Sanya entfernt",
       "coordinates": {
         "lat": 18.3734,
         "lng": 109.7234
       },
       "openingHours": "08:30-23:00",
-      "ticketPrice": "198¥ (weekdays), 238¥ (weekends)",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "198¥ (Werktage), 238¥ (Wochenenden)",
+      "recommendedVisitTime": "3-4 Stunden",
       "highlights": [
-        "Hot spring pools",
+        "Thermalpools",
         "Spa treatments",
-        "Tropical gardens",
-        "Fish foot massage"
+        "Tropische Gärten",
+        "Fischfußmassage"
       ],
-      "tips": "Book evening slot for romantic atmosphere. Try fish foot massage first. Bring swimsuit and flip-flops. Many pools are outdoors - sunscreen essential.",
+      "tips": "Buchen Sie einen Abendtermin für eine romantische Atmosphäre. Probieren Sie zuerst die Fischfußmassage. Badeanzug und Flip-Flops mitbringen. Viele Pools sind im Freien - Sonnencreme ist unerlässlich.",
       "image": "/img/ext/c09fcbe63c84.webp",
       "phone": "+86 089 8 8163 6737"
     },
     {
       "id": "tianya-fisherman",
       "name": "天涯海角婚庆节",
-      "nameEn": "Tianya Wedding Festival",
+      "nameEn": "Tianya Hochzeitsfestival",
       "category": "cultural",
-      "description": "The famous romantic destination where couples declare their love at the edge of the world. Known for wedding ceremonies, love locks, and romantic traditions.",
-      "address": "Tianya Haijiao Scenic Area",
+      "description": "Das berühmte romantische Ziel, an dem Paare ihre Liebe am Ende der Welt erklären. Bekannt für Hochzeitszeremonien, Liebesschlösser und romantische Traditionen.",
+      "address": "Tianya Haijiao Aussichtsbereich",
       "coordinates": {
         "lat": 18.2912,
         "lng": 109.3589
       },
       "openingHours": "07:30-18:30",
-      "ticketPrice": "Included in Tianya ticket (81¥)",
-      "recommendedVisitTime": "1-2 hours (part of Tianya visit)",
+      "ticketPrice": "Im Tianya-Ticket inbegriffen (81¥)",
+      "recommendedVisitTime": "1-2 Stunden (Teil des Tianya-Besuchs)",
       "highlights": [
-        "Love declaration",
-        "Couple rituals",
-        "Romantic sunsets",
-        "Photo opportunities"
+        "Liebeserklärung",
+        "Paarrituale",
+        "Romantische Sonnenuntergänge",
+        "Fotomöglichkeiten"
       ],
-      "tips": "Popular with couples - romantic experience. Watch traditional wedding ceremonies at 10:00 and 15:00. Lock love padlocks on fence. Sunset proposal spot.",
+      "tips": "Beliebt bei Paaren - ein romantisches Erlebnis. Sehen Sie sich traditionelle Hochzeitszeremonien um 10:00 und 15:00 Uhr an. Hängen Sie Liebesschlösser an den Zaun. Sonnenuntergang als Heiratsantragsort.",
       "image": "/img/ext/bae25496c440.webp",
       "phone": "+86 898 8891 0131"
     },
     {
       "id": "sanya-observation-mountain",
       "name": "落笔洞",
-      "nameEn": "Luobi Cave",
+      "nameEn": "Luobi-Höhle",
       "category": "natural",
-      "description": "An ancient limestone cave with stalactites and inscriptions dating back thousands of years. One of the oldest caves in Hainan.",
-      "address": "Yulin Bay Area",
+      "description": "Eine alte Kalksteinhöhle mit Stalaktiten und Inschriften, die Tausende von Jahren zurückreichen. Eine der ältesten Höhlen in Hainan.",
+      "address": "Yulin Bay Gebiet",
       "coordinates": {
         "lat": 18.2834,
         "lng": 109.6734
       },
       "openingHours": "08:00-17:30",
       "ticketPrice": "20¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 Stunden",
       "highlights": [
-        "Ancient inscriptions",
-        "Stalactite formations",
-        "Historical significance",
-        "Quiet location"
+        "Antike Inschriften",
+        "Stalagmitformationen",
+        "Historische Bedeutung",
+        "Ruhige Lage"
       ],
-      "tips": "Less crowded than other attractions. Combine with nearby Yanuo Rainforest.",
+      "tips": "Weniger überlaufen als andere Attraktionen. Kombinieren Sie mit dem nahegelegenen Yanuo-Regenwald.",
       "image": "/img/ext/309f30e43563.webp",
       "phone": "+86 089 8 4492 0843"
     },
     {
       "id": "sanya-mangrove",
       "name": "红树林自然保护区",
-      "nameEn": "Mangrove Natural Reserve",
+      "nameEn": "Mangroven-Naturschutzgebiet",
       "category": "natural",
-      "description": "Protected mangrove ecosystem offering eco-tours and bird watching. Home to diverse marine and bird species.",
-      "address": "Sanya River Delta",
+      "description": "Geschütztes Mangroven-Ökosystem, das Ökotouren und Vogelbeobachtung bietet. Zuhause für diverse Meeres- und Vogelarten.",
+      "address": "Sanya-Delta",
       "coordinates": {
         "lat": 18.2612,
         "lng": 109.5434
       },
       "openingHours": "08:00-17:30",
       "ticketPrice": "40¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3 Stunden",
       "highlights": [
-        "Boat tours through mangroves",
-        "Bird watching",
-        "Ecological education",
-        "Nature photography"
+        "Bootsrundfahrten durch die Mangroven",
+        "Vogelbeobachtung",
+        "Ökologische Bildung",
+        "Naturfotografie"
       ],
-      "tips": "Best visited in morning for wildlife. Bring binoculars for bird watching.",
+      "tips": "Am besten morgens für Wildtiere besuchen. Fernglas für Vogelbeobachtung mitbringen.",
       "image": "/img/ext/bb8e1a98e04e.webp",
       "phone": "+86 089 8 9811 0311"
     },
     {
       "id": "sanya-fisherman-wharf",
       "name": "鸿港渔港",
-      "nameEn": "Honggang Fishing Port",
+      "nameEn": "Honggang Fischereihafen",
       "category": "cultural",
-      "description": "Working fishing port where you can watch daily fish auctions and buy the freshest catch directly from fishermen.",
-      "address": "Hedong District",
+      "description": "Ein aktiver Fischereihafen, an dem Sie tägliche Fischauktionen beobachten und den frischesten Fang direkt von den Fischern kaufen können.",
+      "address": "Hedong-Distrikt",
       "coordinates": {
         "lat": 18.2634,
         "lng": 109.5345
       },
       "openingHours": "05:00-10:00 (best time)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "Kostenlos",
+      "recommendedVisitTime": "1-2 Stunden",
       "highlights": [
         "Fresh seafood market",
         "Local fishing culture",
-        "Photo opportunities",
-        "Authentic atmosphere"
+        "Fotomöglichkeiten",
+        "Authentische Atmosphäre"
       ],
       "tips": "Visit early morning for the busiest auction. Bring camera for colorful scenes. Bargain for prices.",
       "image": "/img/ext/20ba084c3257.webp",
@@ -617,20 +617,20 @@
     {
       "id": "sanya-tropical-paradise",
       "name": "热带天堂森林公园",
-      "nameEn": "Tropical Paradise Forest Park",
+      "nameEn": "Tropenparadies-Waldpark",
       "category": "natural",
-      "description": "Famous as the filming location for TV drama 'Love in the City'. Offers rainforest hiking and panoramic views from the non-free-fall zone.",
-      "address": "Yulin Bay, 50km north of Sanya",
+      "description": "Berühmt als Drehort für die Fernsehserie 'Liebe in der Stadt'. Bietet Regenwaldwanderungen und Panoramablicke von der Nicht-Fallzone.",
+      "address": "Yulin Bay, 50 km nördlich von Sanya",
       "coordinates": {
         "lat": 18.3934,
         "lng": 109.6534
       },
       "openingHours": "07:30-17:00",
       "ticketPrice": "158¥ (includes cable car)",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4 Stunden",
       "highlights": [
         "Non-free-fall zone",
-        "Rainforest hiking",
+        "Regenwaldwanderung",
         "Panoramic bay views",
         "Film location"
       ],
@@ -651,12 +651,12 @@
       },
       "openingHours": "12:00-22:00",
       "ticketPrice": "Free entry (rides separate)",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4 Stunden",
       "highlights": [
         "Giant Ferris wheel",
-        "Evening shows",
+        "Abendshows",
         "Theme rides",
-        "Street performances"
+        "Straßenaufführungen"
       ],
       "tips": "Best in the evening. Ferris wheel has best sunset views. Shows start at 19:00.",
       "image": "/img/ext/400fa9805693.webp",
@@ -673,14 +673,14 @@
         "lat": 18.2212,
         "lng": 109.5134
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24 Stunden geöffnet",
+      "ticketPrice": "Kostenlos",
+      "recommendedVisitTime": "1-2 Stunden",
       "highlights": [
         "Beachfront walkway",
         "Palm trees",
         "Street performers",
-        "Sunset views"
+        "Sonnenuntergangsblick"
       ],
       "tips": "Best for evening strolls. Find local food stalls along the way. Great for photos.",
       "image": "/img/ext/f2ba27818a58.webp",
@@ -692,17 +692,17 @@
       "nameEn": "Linchun Ridge Forest Park",
       "category": "natural",
       "description": "A hilltop park with hiking trails and observation deck offering views of Sanya Bay and city skyline.",
-      "address": "City Center",
+      "address": "Stadtzentrum",
       "coordinates": {
         "lat": 18.2434,
         "lng": 109.5234
       },
       "openingHours": "06:00-21:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "Kostenlos",
+      "recommendedVisitTime": "2-3 Stunden",
       "highlights": [
         "Mountain hiking",
-        "City views",
+        "Stadtblick",
         "Early morning tai chi",
         "Nature escape in city"
       ],
@@ -780,7 +780,7 @@
     {
       "id": "sy-nanshan",
       "name": "南山文化旅游区",
-      "nameEn": "Nanshan Cultural Tourism Zone",
+      "nameEn": "Nanshan-Kulturzone",
       "category": "temple",
       "description": "有108米高的海上观音像。",
       "address": "三亚市崖州区",
@@ -956,7 +956,7 @@
     {
       "id": "sy-tropical",
       "name": "热带天堂森林公园",
-      "nameEn": "Tropical Paradise Forest Park",
+      "nameEn": "Tropenparadies-Waldpark",
       "category": "nature",
       "description": "三亚的热带雨林公园。",
       "address": "三亚市吉阳区",
@@ -1200,8 +1200,8 @@
       "id": "sanya-seafood-1",
       "name": "第一市场海鲜",
       "nameEn": "First Market Seafood",
-      "type": "local",
-      "cuisine": "Seafood",
+      "type": "lokal",
+      "cuisine": "Meeresfrüchte",
       "avgPrice": 150,
       "rating": 4.5,
       "address": "First Market, Fengxiang Road",
@@ -1214,15 +1214,15 @@
       "description": "The most famous seafood market in Sanya. Buy fresh seafood from vendors and have it cooked at neighboring restaurants for a small fee.",
       "dishHighlights": [
         "Grilled lobster",
-        "Steamed crab",
+        "Gedämpfter Krebs",
         "Garlic clams",
         "Spicy mantis shrimp"
       ],
       "tags": [
-        "seafood",
-        "market",
-        "local",
-        "value"
+        "Meeresfrüchte",
+        "Markt",
+        "lokal",
+        "preiswert"
       ],
       "star": 0,
       "diamond": 0,
@@ -1232,7 +1232,7 @@
       "id": "sanya-seafood-2",
       "name": "大悦洋海鲜",
       "nameEn": "Da Yue Yang Seafood",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "Seafood Hotpot",
       "avgPrice": 200,
       "rating": 4.6,
@@ -1246,15 +1246,15 @@
       "description": "Popular seafood hotpot restaurant with fresh catch. Known for their ocean hotpot and all-you-can-eat seafood options.",
       "dishHighlights": [
         "Seafood hotpot",
-        "Fresh sashimi",
+        "Frischer Sashimi",
         "Grilled prawns",
         "Abalone"
       ],
       "tags": [
-        "seafood",
-        "hotpot",
-        "buffet",
-        "popular"
+        "Meeresfrüchte",
+        "Hotpot",
+        "Buffet",
+        "beliebt"
       ],
       "star": 0,
       "diamond": 0,
@@ -1264,8 +1264,8 @@
       "id": "sanya-coconut-chicken-1",
       "name": "椰子鸡",
       "nameEn": "Coconut Chicken",
-      "type": "local",
-      "cuisine": "Hainanese",
+      "type": "lokal",
+      "cuisine": "Hainanesisch",
       "avgPrice": 120,
       "rating": 4.4,
       "address": "Sanya Bay Road",
@@ -1282,9 +1282,9 @@
         "Fresh coconut juice"
       ],
       "tags": [
-        "local",
-        "hainanese",
-        "healthy",
+        "lokal",
+        "hainanesisch",
+        "gesund",
         "signature"
       ],
       "star": 0,
@@ -1295,7 +1295,7 @@
       "id": "sanya-boluo-1",
       "name": "抱罗粉",
       "nameEn": "Bao Luo Fen",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "Hainan Noodles",
       "avgPrice": 25,
       "rating": 4.3,
@@ -1311,12 +1311,12 @@
         "Bao luo fen (regular)",
         "Bao luo fen (sour)",
         "Pork belly",
-        "Pickled vegetables"
+        "Eingelegtes Gemüse"
       ],
       "tags": [
-        "breakfast",
-        "noodles",
-        "local",
+        "Frühstück",
+        "Nudeln",
+        "lokal",
         "cheap-eats"
       ],
       "star": 0,
@@ -1327,7 +1327,7 @@
       "id": "sanya-qingbuliang-1",
       "name": "清补凉",
       "nameEn": "Qing Bu Liang",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "Dessert",
       "avgPrice": 15,
       "rating": 4.5,
@@ -1346,10 +1346,10 @@
         "Fruit toppings"
       ],
       "tags": [
-        "dessert",
-        "local",
+        "Nachspeise",
+        "lokal",
         "refreshing",
-        "vegetarian"
+        "Vegetarisch"
       ],
       "star": 0,
       "diamond": 0,
@@ -1359,8 +1359,8 @@
       "id": "sanya-hainan-chicken-1",
       "name": "海南鸡饭",
       "nameEn": "Hainan Chicken Rice",
-      "type": "local",
-      "cuisine": "Hainanese",
+      "type": "lokal",
+      "cuisine": "Hainanesisch",
       "avgPrice": 40,
       "rating": 4.4,
       "address": "Fengxiang Road",
@@ -1378,10 +1378,10 @@
         "Ginger paste"
       ],
       "tags": [
-        "local",
-        "hainanese",
+        "lokal",
+        "hainanesisch",
         "signature",
-        "value"
+        "preiswert"
       ],
       "star": 0,
       "diamond": 0,
@@ -1390,9 +1390,9 @@
     {
       "id": "sanya-seafood-buffet-1",
       "name": "海鲜自助",
-      "nameEn": "Seafood Buffet",
-      "type": "buffet",
-      "cuisine": "Seafood",
+      "nameEn": "Meeresfrüchte-Buffet",
+      "type": "Buffet",
+      "cuisine": "Meeresfrüchte",
       "avgPrice": 300,
       "rating": 4.5,
       "address": "Dadonghai Area",
@@ -1406,14 +1406,14 @@
       "dishHighlights": [
         "Fresh lobster",
         "Grilled abalone",
-        "Crab legs",
+        "Krabbenbeine",
         "Shrimp sashimi"
       ],
       "tags": [
-        "buffet",
-        "seafood",
+        "Buffet",
+        "Meeresfrüchte",
         "dinner",
-        "value"
+        "preiswert"
       ],
       "star": 0,
       "diamond": 0,
@@ -1423,7 +1423,7 @@
       "id": "sanya-tropical-fruit-1",
       "name": "热带水果",
       "nameEn": "Tropical Fruit Market",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "Fruit",
       "avgPrice": 30,
       "rating": 4.2,
@@ -1443,7 +1443,7 @@
       ],
       "tags": [
         "fruit",
-        "local",
+        "lokal",
         "cheap-eats",
         "gift"
       ],
@@ -1455,7 +1455,7 @@
       "id": "sanya-hotpot-1",
       "name": "糟粕醋火锅",
       "nameEn": "Zaopo Cu Hotpot",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "Hainan Hotpot",
       "avgPrice": 100,
       "rating": 4.4,
@@ -1471,13 +1471,13 @@
         "Fermented rice soup",
         "Seafood combo",
         "Beef slices",
-        "Tofu skin"
+        "Tofuhaut"
       ],
       "tags": [
-        "hotpot",
-        "local",
+        "Hotpot",
+        "lokal",
         "sour-spicy",
-        "healthy"
+        "gesund"
       ],
       "star": 0,
       "diamond": 0,
@@ -1487,7 +1487,7 @@
       "id": "sanya-migration-1",
       "name": "陵水酸粉",
       "nameEn": "Lingshui Sour Noodles",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "Hainan Noodles",
       "avgPrice": 20,
       "rating": 4.3,
@@ -1501,15 +1501,15 @@
       "description": "Famous sour noodles from Lingshui County featuring fine rice noodles in sour broth with special toppings.",
       "dishHighlights": [
         "Sour rice noodles",
-        "Beef offal",
+        "Rinderinnereien",
         "Seaworm",
         "Pickled mustard"
       ],
       "tags": [
-        "noodles",
+        "Nudeln",
         "sour",
-        "breakfast",
-        "local"
+        "Frühstück",
+        "lokal"
       ],
       "star": 0,
       "diamond": 0,
@@ -1532,16 +1532,16 @@
       "hours": "18:00-23:00",
       "description": "Michelin-starred French fine dining at Atlantis with ocean views and exceptional service. Perfect for special occasions.",
       "dishHighlights": [
-        "Wagyu beef",
+        "Wagyu-Rindfleisch",
         "Lobster thermidor",
         "Fine wines",
         "Tasting menu"
       ],
       "tags": [
-        "fine-dining",
+        "Feinschmecker-Restaurant",
         "french",
-        "luxury",
-        "romantic"
+        "Luxus",
+        "romantisch"
       ],
       "star": 0,
       "diamond": 0,
@@ -1552,7 +1552,7 @@
       "name": "鮨樱",
       "nameEn": "Sakura Japanese",
       "type": "fine-dining",
-      "cuisine": "Japanese",
+      "cuisine": "Japanisch",
       "avgPrice": 500,
       "rating": 4.6,
       "address": "Yalong Bay Resort Area",
@@ -1565,14 +1565,14 @@
       "description": "Premium Japanese restaurant with fresh Hainan seafood prepared in traditional Japanese style. Omakase menu available.",
       "dishHighlights": [
         "Sashimi platter",
-        "Omakase set",
-        "Grilled eel",
-        "Miso soup"
+        "Omakase-Set",
+        "Gegrillter Aal",
+        "Misosuppe"
       ],
       "tags": [
-        "japanese",
+        "japanisch",
         "sashimi",
-        "luxury",
+        "Luxus",
         "omakase"
       ],
       "star": 0,
@@ -1583,29 +1583,29 @@
       "id": "sanya-seafood-3",
       "name": "火车头万人海鲜广场",
       "nameEn": "Train Station Seafood Plaza",
-      "type": "local",
-      "cuisine": "Seafood",
+      "type": "lokal",
+      "cuisine": "Meeresfrüchte",
       "avgPrice": 180,
       "rating": 4.4,
-      "address": "Jiyang District, near Train Station",
+      "address": "Bezirk Jiyang, in der Nähe des Bahnhofs",
       "coordinates": {
         "lat": 18.2989,
         "lng": 109.4534
       },
       "phone": "+86 898 8867 8901",
       "hours": "10:00-22:00",
-      "description": "Large seafood plaza with many vendors and cooking stations. Fresh selection with transparent pricing.",
+      "description": "Großer Fischmarkt mit vielen Ständen und Kochstationen. Frische Auswahl mit transparenten Preisen.",
       "dishHighlights": [
         "Grilled lobster",
-        "Steamed fish",
-        "Spicy crab",
+        "Gedämpfter Fisch",
+        "Würzige Krabbe",
         "Clam soup"
       ],
       "tags": [
-        "seafood",
-        "market",
-        "large-scale",
-        "variety"
+        "Meeresfrüchte",
+        "Markt",
+        "großflächig",
+        "Vielfalt"
       ],
       "star": 0,
       "diamond": 0,
@@ -1615,29 +1615,29 @@
       "id": "sanya-hainanese-1",
       "name": "利思酒家",
       "nameEn": "Li Si Restaurant",
-      "type": "local",
-      "cuisine": "Hainanese",
+      "type": "lokal",
+      "cuisine": "Hainanesisch",
       "avgPrice": 150,
       "rating": 4.5,
-      "address": "Hedong District",
+      "address": "Hedong-Distrikt",
       "coordinates": {
         "lat": 18.2634,
         "lng": 109.5289
       },
       "phone": "+86 898 8823 6789",
       "hours": "11:00-21:30",
-      "description": "Established Hainan restaurant serving traditional local dishes with quality ingredients and authentic recipes.",
+      "description": "Etablierter Hainan-Restaurant, das traditionelle lokale Gerichte mit hochwertigen Zutaten und authentischen Rezepten serviert.",
       "dishHighlights": [
-        "Wenchang chicken",
-        "Hainanese pork",
-        "Braised duck",
-        "Mountain vegetables"
+        "Wenchang-Hähnchen",
+        "Schweinefleisch nach Hainan-Art",
+        "Geschmortes Entenfleisch",
+        "Berggemüse"
       ],
       "tags": [
-        "hainanese",
-        "traditional",
-        "historic",
-        "family"
+        "hainanesisch",
+        "traditionell",
+        "historisch",
+        "Familie"
       ],
       "star": 0,
       "diamond": 0,
@@ -1651,25 +1651,25 @@
       "cuisine": "International",
       "avgPrice": 400,
       "rating": 4.6,
-      "address": "Ritz-Carlton Sanya, Yalong Bay",
+      "address": "Ritz-Carlton Sanya, Yalong-Bucht",
       "coordinates": {
         "lat": 18.1767,
         "lng": 109.6545
       },
       "phone": "+86 898 8856 8888",
       "hours": "06:30-22:30",
-      "description": "Beachfront fine dining at the Ritz-Carlton offering international cuisine with stunning ocean views.",
+      "description": "Feinschmeckerrestaurant am Strand im Ritz-Carlton mit internationaler Küche und atemberaubenden Meerblicken.",
       "dishHighlights": [
-        "Beachfront dining",
-        "International buffet",
-        "Seafood BBQ",
-        "Sunset views"
+        "Strandnahes Speisen",
+        "Internationales Büfett",
+        "Meeresfrüchte-Grill",
+        "Sonnenuntergangsblick"
       ],
       "tags": [
-        "fine-dining",
+        "Feinschmecker-Restaurant",
         "international",
-        "beachfront",
-        "luxury"
+        "strandnah",
+        "Luxus"
       ],
       "star": 0,
       "diamond": 0,
@@ -1679,8 +1679,8 @@
       "id": "sanya-bbq-1",
       "name": "海边烧烤",
       "nameEn": "Beach BBQ",
-      "type": "local",
-      "cuisine": "BBQ",
+      "type": "lokal",
+      "cuisine": "Grillgerichte",
       "avgPrice": 100,
       "rating": 4.3,
       "address": "Dadonghai Beach",
@@ -1690,17 +1690,17 @@
       },
       "phone": "+86 898 8834 5678",
       "hours": "18:00-24:00",
-      "description": "Beachside BBQ stalls offering grilled seafood and meats. Casual atmosphere with sand between your toes.",
+      "description": "Grillstände am Strand mit gegrillten Meeresfrüchten und Fleisch. Lockeres Ambiente mit Sand zwischen den Zehen.",
       "dishHighlights": [
-        "Grilled fish",
-        "Lamb skewers",
+        "Gegrillter Fisch",
+        "Lamm-Spieße",
         "Coconut shrimp",
-        "Local beer"
+        "Regionales Bier"
       ],
       "tags": [
-        "bbq",
+        "Grillgerichte",
         "beach",
-        "casual",
+        "locker",
         "evening"
       ],
       "star": 0,
@@ -1711,11 +1711,11 @@
       "id": "sanya-vegetarian-1",
       "name": "南山素斋",
       "nameEn": "Nanshan Vegetarian Restaurant",
-      "type": "local",
-      "cuisine": "Buddhist Vegetarian",
+      "type": "lokal",
+      "cuisine": "Buddhistisch Vegetarisch",
       "avgPrice": 80,
       "rating": 4.4,
-      "address": "Nanshan Cultural Tourism Zone",
+      "address": "Nanshan-Kulturzone",
       "coordinates": {
         "lat": 18.3389,
         "lng": 109.6798
@@ -1724,16 +1724,16 @@
       "hours": "11:00-14:00, 17:00-20:00",
       "description": "Vegetarian restaurant within Nanshan offering Buddhist-style meat alternatives made from tofu and vegetables.",
       "dishHighlights": [
-        "Buddha-style dishes",
-        "Tofu meat",
+        "Buddha-Art-Gerichte",
+        "Tofu-Fleisch",
         "Vegetable rolls",
-        "Herbal tea"
+        "Kräutertee"
       ],
       "tags": [
-        "vegetarian",
-        "buddhist",
-        "cultural",
-        "healthy"
+        "Vegetarisch",
+        "buddhistisch",
+        "kulturell",
+        "gesund"
       ],
       "star": 0,
       "diamond": 0,
@@ -1742,30 +1742,30 @@
     {
       "id": "sanya-impression-1",
       "name": "印象半山",
-      "nameEn": "Impression Mountain",
-      "type": "local",
+      "nameEn": "Impression Berg",
+      "type": "lokal",
       "cuisine": "Hainan Fusion",
       "avgPrice": 200,
       "rating": 4.5,
-      "address": "Luhuitou Mountain Area",
+      "address": "Luhuitou Bergregion",
       "coordinates": {
         "lat": 18.2234,
         "lng": 109.5056
       },
       "phone": "+86 898 8823 4567",
       "hours": "11:00-22:00",
-      "description": "Upscale Hainan fusion restaurant on the mountain with panoramic bay views. Known for creative local dishes.",
+      "description": "Hochklassiges Hainan-Fusion-Restaurant auf dem Berg mit Panoramablick auf die Bucht. Bekannt für kreative lokale Gerichte.",
       "dishHighlights": [
-        "Hainan fusion",
-        "Panoramic views",
-        "Lobster dishes",
-        "Premium seafood"
+        "Hainan-Fusion",
+        "Panoramablick",
+        "Hummergerichte",
+        "Premium-Meeresfrüchte"
       ],
       "tags": [
         "fusion",
-        "view",
-        "romantic",
-        "special-occasion"
+        "Ausblick",
+        "romantisch",
+        "besonderer-anlass"
       ],
       "star": 0,
       "diamond": 0,
@@ -1774,9 +1774,9 @@
     {
       "id": "sanya-dongshan-1",
       "name": "东山羊",
-      "nameEn": "Dongshan Lamb",
-      "type": "local",
-      "cuisine": "Hainan Lamb",
+      "nameEn": "Dongshan-Lamm",
+      "type": "lokal",
+      "cuisine": "Hainan-Lamm",
       "avgPrice": 150,
       "rating": 4.4,
       "address": "Near Yalong Bay",
@@ -1790,14 +1790,14 @@
       "dishHighlights": [
         "Braised lamb",
         "Lamb hotpot",
-        "Grilled lamb chops",
-        "Lamb soup"
+        "Gegrillte Lammkoteletts",
+        "Lammbrühe"
       ],
       "tags": [
-        "lamb",
-        "local",
+        "Lamm",
+        "lokal",
         "signature",
-        "specialty"
+        "Spezialität"
       ],
       "star": 0,
       "diamond": 0,
@@ -1807,11 +1807,11 @@
       "id": "sanya-shan-1",
       "name": "疍家渔排",
       "nameEn": "Dan Jia Fishing Raft",
-      "type": "local",
-      "cuisine": "Seafood",
+      "type": "lokal",
+      "cuisine": "Meeresfrüchte",
       "avgPrice": 200,
       "rating": 4.6,
-      "address": "Sanya River Delta",
+      "address": "Sanya-Delta",
       "coordinates": {
         "lat": 18.2512,
         "lng": 109.5234
@@ -1821,15 +1821,15 @@
       "description": "Unique dining experience on floating fishing rafts. Fresh seafood directly from the net to your table.",
       "dishHighlights": [
         "Fresh catch",
-        "Grilled fish",
+        "Gegrillter Fisch",
         "Shrimp noodles",
-        "Crab congee"
+        "Krabben-Reisbrei"
       ],
       "tags": [
-        "seafood",
-        "unique",
-        "local",
-        "experience"
+        "Meeresfrüchte",
+        "einzigartig",
+        "lokal",
+        "erlebnis"
       ],
       "star": 0,
       "diamond": 0,
@@ -1839,8 +1839,8 @@
       "id": "sanya-jimei-1",
       "name": "吉姆餐厅",
       "nameEn": "Jimmy's Kitchen",
-      "type": "local",
-      "cuisine": "Hainanese",
+      "type": "lokal",
+      "cuisine": "Hainanesisch",
       "avgPrice": 120,
       "rating": 4.4,
       "address": "Dadonghai Area",
@@ -1852,14 +1852,14 @@
       "hours": "11:00-22:00",
       "description": "Popular family restaurant serving local Hainan dishes with generous portions.",
       "dishHighlights": [
-        "Wenchang chicken",
-        "Seafood hot pot",
-        "Fried rice"
+        "Wenchang-Hähnchen",
+        "Meeresfrüchte-Hotpot",
+        "Gebratener Reis"
       ],
       "tags": [
-        "local",
-        "family-friendly",
-        "value"
+        "lokal",
+        "familienfreundlich",
+        "preiswert"
       ],
       "star": 0,
       "diamond": 0,
@@ -1869,27 +1869,27 @@
       "id": "sanya-bell-1",
       "name": "钟楼老字号",
       "nameEn": "Bell Tower Old Restaurant",
-      "type": "local",
-      "cuisine": "Hainanese",
+      "type": "lokal",
+      "cuisine": "Hainanesisch",
       "avgPrice": 80,
       "rating": 4.3,
-      "address": "Near Bell Tower, City Center",
+      "address": "In der Nähe des Glockenturms, Stadtzentrum",
       "coordinates": {
         "lat": 18.2523,
         "lng": 109.5134
       },
       "phone": "+86 898 8821 2345",
       "hours": "10:00-21:00",
-      "description": "Established local restaurant near the famous bell tower. Known for traditional recipes.",
+      "description": "Etabliertes Lokalrestaurant in der Nähe des berühmten Glockenturms. Bekannt für traditionelle Rezepte.",
       "dishHighlights": [
-        "Traditional Hainanese dishes",
-        "Seafood",
-        "Home-style cooking"
+        "Traditionelle Hainan-Gerichte",
+        "Meeresfrüchte",
+        "Hausmannskost"
       ],
       "tags": [
-        "local",
-        "historic",
-        "traditional"
+        "lokal",
+        "historisch",
+        "traditionell"
       ],
       "star": 0,
       "diamond": 0,
@@ -1899,8 +1899,8 @@
       "id": "sanya-yue-1",
       "name": "粤菜馆",
       "nameEn": "Cantonese Restaurant",
-      "type": "local",
-      "cuisine": "Cantonese",
+      "type": "lokal",
+      "cuisine": "Kantonesisch",
       "avgPrice": 150,
       "rating": 4.5,
       "address": "Yalong Bay",
@@ -1913,13 +1913,13 @@
       "description": "Fine Cantonese cuisine near Yalong Bay resorts. Premium dim sum and fresh seafood.",
       "dishHighlights": [
         "Dim sum brunch",
-        "Steamed fish",
+        "Gedämpfter Fisch",
         "Cantonese BBQ"
       ],
       "tags": [
-        "cantonese",
-        "fine-dining",
-        "dim-sum"
+        "kantonesisch",
+        "Feinschmecker-Restaurant",
+        "Dim Sum"
       ],
       "star": 0,
       "diamond": 0,
@@ -1929,7 +1929,7 @@
       "id": "sanya-noodle-1",
       "name": "后安粉汤",
       "nameEn": "Houan Rice Noodle Soup",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "Hainan Noodles",
       "avgPrice": 25,
       "rating": 4.4,
@@ -1943,13 +1943,13 @@
       "description": "Famous local breakfast spot serving Houan rice noodles in rich pork bone broth.",
       "dishHighlights": [
         "Houan rice noodles",
-        "Pork organ soup",
-        "Pork hocks"
+        "Schweineorgan-Suppe",
+        "Schweinshaxen"
       ],
       "tags": [
-        "breakfast",
-        "local",
-        "famous"
+        "Frühstück",
+        "lokal",
+        "berühmt"
       ],
       "star": 0,
       "diamond": 0,
@@ -1958,27 +1958,27 @@
     {
       "id": "sanya-oyster-1",
       "name": "生蚝烧烤",
-      "nameEn": "Oyster BBQ",
-      "type": "local",
-      "cuisine": "BBQ",
+      "nameEn": "Auster-Grill",
+      "type": "lokal",
+      "cuisine": "Grillgerichte",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Sanya Bay Night Market",
+      "address": "Sanya Bay Nachtmarkt",
       "coordinates": {
         "lat": 18.2689,
         "lng": 109.489
       },
       "hours": "18:00-02:00",
-      "description": "Famous oyster and seafood BBQ stall at Sanya Bay night market.",
+      "description": "Berühmte Austern- und Meeresfrüchte-Grillbude auf dem Sanya Bay Nachtmarkt.",
       "dishHighlights": [
-        "Grilled oysters",
-        "Garlic shrimp",
-        "Seafood skewers"
+        "Gegrillte Austern",
+        "Knoblauch-Garnelen",
+        "Meeresfrüchte-Spieße"
       ],
       "tags": [
-        "bbq",
-        "night-market",
-        "seafood"
+        "Grillgerichte",
+        "nachtmarkt",
+        "meeresfrüchte"
       ],
       "star": 0,
       "diamond": 0,
@@ -1989,27 +1989,27 @@
       "id": "sanya-shrimp-1",
       "name": "和乐蟹",
       "nameEn": "Hele Crab Restaurant",
-      "type": "local",
-      "cuisine": "Seafood",
+      "type": "lokal",
+      "cuisine": "Meeresfrüchte",
       "avgPrice": 180,
       "rating": 4.6,
-      "address": "Near Houan",
+      "address": "In der Nähe von Houan",
       "coordinates": {
         "lat": 18.2734,
         "lng": 109.5634
       },
       "phone": "+86 898 8867 1234",
       "hours": "10:00-22:00",
-      "description": "Specializing in Wanning Hele Crab - one of Hainan's most prized seafood.",
+      "description": "Spezialisiert auf Wanning Hele Crab - einer der begehrtesten Meeresfrüchte Hainans",
       "dishHighlights": [
-        "Steamed Hele crab",
-        "Chili crab",
-        "Crab congee"
+        "Gedünsteter Hele Crab",
+        "Chili-Krabbe",
+        "Krabben-Reisbrei"
       ],
       "tags": [
-        "seafood",
-        "specialty",
-        "crab"
+        "Meeresfrüchte",
+        "Spezialität",
+        "Krabbe"
       ],
       "star": 0,
       "diamond": 0,
@@ -2018,27 +2018,27 @@
     {
       "id": "sanya-soup-1",
       "name": "文昌鸡饭店",
-      "nameEn": "Wenchang Chicken Rice Shop",
-      "type": "local",
-      "cuisine": "Hainanese",
+      "nameEn": "Wenchang Hühner-Reis-Restaurant",
+      "type": "lokal",
+      "cuisine": "Hainanesisch",
       "avgPrice": 35,
       "rating": 4.3,
-      "address": "Multiple locations",
+      "address": "Mehrere Standorte",
       "coordinates": {
         "lat": 18.2589,
         "lng": 109.5145
       },
       "hours": "07:00-20:00",
-      "description": "Budget-friendly Wenchang chicken rice from famous Hainan chicken chain.",
+      "description": "Budget-freundliches Wenchang Hühner-Reis von der berühmten Hainan-Hühner-Kette",
       "dishHighlights": [
-        "Wenchang chicken rice",
-        "Chicken soup",
-        "Soy sauce chicken"
+        "Wenchang Hühner-Reis",
+        "Hühnersuppe",
+        "Huhn in Sojasauce"
       ],
       "tags": [
-        "budget",
-        "hainanese",
-        "chain"
+        "günstig",
+        "hainanesisch",
+        "Restaurantkette"
       ],
       "star": 0,
       "diamond": 0,
@@ -2050,7 +2050,7 @@
       "name": "首尔烤肉",
       "nameEn": "Seoul Korean BBQ",
       "type": "international",
-      "cuisine": "Korean",
+      "cuisine": "Koreanisch",
       "avgPrice": 150,
       "rating": 4.4,
       "address": "Dadonghai",
@@ -2060,16 +2060,16 @@
       },
       "phone": "+86 898 8823 7890",
       "hours": "11:00-22:00",
-      "description": "Popular Korean BBQ restaurant with all-you-can-eat options.",
+      "description": "Beliebtes koreanisches BBQ-Restaurant mit All-you-can-eat-Optionen.",
       "dishHighlights": [
-        "Korean BBQ",
+        "Koreanisches BBQ",
         "Kimchi",
         "Bibimbap"
       ],
       "tags": [
-        "korean",
-        "bbq",
-        "buffet"
+        "koreanisch",
+        "Grillgerichte",
+        "Buffet"
       ],
       "star": 0,
       "diamond": 0,
@@ -2079,8 +2079,8 @@
       "id": "sanya-seafood-market-1",
       "name": "鸿港市场海鲜",
       "nameEn": "Honggang Market Seafood",
-      "type": "local",
-      "cuisine": "Seafood",
+      "type": "lokal",
+      "cuisine": "Meeresfrüchte",
       "avgPrice": 120,
       "rating": 4.4,
       "address": "Honggang Market",
@@ -2092,15 +2092,15 @@
       "hours": "06:00-12:00",
       "description": "Local market seafood - buy fish and have it cooked at adjacent restaurants.",
       "dishHighlights": [
-        "Fresh fish",
-        "Shrimp",
-        "Crab",
-        "Shellfish"
+        "Frischer Fisch",
+        "Garnele",
+        "Krebs",
+        "Schalentiere"
       ],
       "tags": [
-        "seafood",
-        "market",
-        "fresh"
+        "Meeresfrüchte",
+        "Markt",
+        "frisch"
       ],
       "star": 0,
       "diamond": 0,
@@ -2109,28 +2109,28 @@
     {
       "id": "sanya-lu-1",
       "name": "鹿回头黎家菜",
-      "nameEn": "Luhuitou Li Ethnic Cuisine",
-      "type": "local",
-      "cuisine": "Li Ethnic",
+      "nameEn": "Luhuitou Li-Ethnische Küche",
+      "type": "lokal",
+      "cuisine": "Li-Ethnisch",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "Luhuitou Area",
+      "address": "Luhuitou-Gebiet",
       "coordinates": {
         "lat": 18.2256,
         "lng": 109.5075
       },
       "phone": "+86 898 8834 5678",
       "hours": "10:30-22:00",
-      "description": "Authentic Li ethnic cuisine with wild vegetables and traditional cooking methods.",
+      "description": "Authentische Li-ethnische Küche mit Wildkräutern und traditionellen Garmethoden.",
       "dishHighlights": [
-        "Li ethnic dishes",
-        "Wild vegetables",
-        "Mountain chicken"
+        "Li-ethnische Gerichte",
+        "Wildkräuter",
+        "Berghuhn"
       ],
       "tags": [
-        "ethnic",
+        "ethnisch",
         "li-cuisine",
-        "traditional"
+        "traditionell"
       ],
       "star": 0,
       "diamond": 0,
@@ -2141,7 +2141,7 @@
       "name": "阳光西餐厅",
       "nameEn": "Sunny Western Restaurant",
       "type": "international",
-      "cuisine": "Western",
+      "cuisine": "Westlich",
       "avgPrice": 200,
       "rating": 4.3,
       "address": "Yalong Bay Resort Area",
@@ -2151,16 +2151,16 @@
       },
       "phone": "+86 898 8856 9999",
       "hours": "07:00-22:00",
-      "description": "Beachfront Western restaurant at luxury resort serving international cuisine.",
+      "description": "Strandnahes westliches Restaurant in einem Luxusresort mit internationaler Küche.",
       "dishHighlights": [
-        "International breakfast",
+        "Internationales Frühstück",
         "Steaks",
         "Pasta"
       ],
       "tags": [
-        "western",
+        "westlich",
         "resort",
-        "beachfront"
+        "strandnah"
       ],
       "star": 0,
       "diamond": 0,
@@ -2170,7 +2170,7 @@
       "id": "sanya-32",
       "name": "老街椰子鸡",
       "nameEn": "老街椰子鸡 (椰子鸡)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "椰子鸡",
       "avgPrice": 47,
       "rating": 4.1,
@@ -2199,7 +2199,7 @@
       "id": "sanya-34",
       "name": "三亚味海鲜",
       "nameEn": "三亚味海鲜 (海鲜)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "海鲜",
       "avgPrice": 134,
       "rating": 4.7,
@@ -2228,7 +2228,7 @@
       "id": "sanya-36",
       "name": "老字号海鲜",
       "nameEn": "老字号海鲜 (海鲜)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "海鲜",
       "avgPrice": 70,
       "rating": 4.5,
@@ -2257,7 +2257,7 @@
       "id": "sanya-38",
       "name": "三亚味海鲜",
       "nameEn": "三亚味海鲜 (海鲜)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "海鲜",
       "avgPrice": 89,
       "rating": 4.4,
@@ -2286,7 +2286,7 @@
       "id": "sanya-40",
       "name": "老三亚文昌鸡",
       "nameEn": "老三亚文昌鸡 (文昌鸡)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "文昌鸡",
       "avgPrice": 49,
       "rating": 4.2,
@@ -2315,7 +2315,7 @@
       "id": "sanya-42",
       "name": "老街抱罗粉",
       "nameEn": "老街抱罗粉 (抱罗粉)",
-      "type": "street",
+      "type": "Straßenessen",
       "cuisine": "抱罗粉",
       "avgPrice": 34,
       "rating": 4.1,
@@ -2344,7 +2344,7 @@
       "id": "sanya-44",
       "name": "地道文昌鸡",
       "nameEn": "地道文昌鸡 (文昌鸡)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "文昌鸡",
       "avgPrice": 86,
       "rating": 4.7,
@@ -2373,7 +2373,7 @@
       "id": "sanya-46",
       "name": "巷子清补凉",
       "nameEn": "巷子清补凉 (清补凉)",
-      "type": "street",
+      "type": "Straßenessen",
       "cuisine": "清补凉",
       "avgPrice": 54,
       "rating": 4.5,
@@ -2402,7 +2402,7 @@
       "id": "sanya-48",
       "name": "老街抱罗粉",
       "nameEn": "老街抱罗粉 (抱罗粉)",
-      "type": "street",
+      "type": "Straßenessen",
       "cuisine": "抱罗粉",
       "avgPrice": 24,
       "rating": 4.2,
@@ -2431,7 +2431,7 @@
       "id": "sanya-50",
       "name": "老字号清补凉",
       "nameEn": "老字号清补凉 (清补凉)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "清补凉",
       "avgPrice": 96,
       "rating": 4.8,
@@ -2460,7 +2460,7 @@
       "id": "sanya-52",
       "name": "街边椰子鸡",
       "nameEn": "街边椰子鸡 (椰子鸡)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "椰子鸡",
       "avgPrice": 56,
       "rating": 4.8,
@@ -2489,7 +2489,7 @@
       "id": "sanya-54",
       "name": "阿婆抱罗粉",
       "nameEn": "阿婆抱罗粉 (抱罗粉)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "抱罗粉",
       "avgPrice": 89,
       "rating": 4.5,
@@ -2518,7 +2518,7 @@
       "id": "sanya-56",
       "name": "三亚味抱罗粉",
       "nameEn": "三亚味抱罗粉 (抱罗粉)",
-      "type": "cafe",
+      "type": "Café",
       "cuisine": "抱罗粉",
       "avgPrice": 57,
       "rating": 4.2,
@@ -2547,7 +2547,7 @@
       "id": "sanya-58",
       "name": "地道椰子鸡",
       "nameEn": "地道椰子鸡 (椰子鸡)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "椰子鸡",
       "avgPrice": 107,
       "rating": 4.1,
@@ -2576,7 +2576,7 @@
       "id": "sanya-60",
       "name": "老三亚清补凉",
       "nameEn": "老三亚清补凉 (清补凉)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "清补凉",
       "avgPrice": 118,
       "rating": 4.5,
@@ -2605,7 +2605,7 @@
       "id": "sanya-62",
       "name": "老三亚清补凉",
       "nameEn": "老三亚清补凉 (清补凉)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "清补凉",
       "avgPrice": 53,
       "rating": 4.1,
@@ -2634,7 +2634,7 @@
       "id": "sanya-64",
       "name": "正宗海鲜",
       "nameEn": "正宗海鲜 (海鲜)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "海鲜",
       "avgPrice": 39,
       "rating": 4.8,
@@ -2663,7 +2663,7 @@
       "id": "sanya-66",
       "name": "老字号椰子鸡",
       "nameEn": "老字号椰子鸡 (椰子鸡)",
-      "type": "local",
+      "type": "lokal",
       "cuisine": "椰子鸡",
       "avgPrice": 77,
       "rating": 4.1,
@@ -2692,7 +2692,7 @@
       "id": "sanya-68",
       "name": "传统椰子鸡",
       "nameEn": "传统椰子鸡 (椰子鸡)",
-      "type": "street",
+      "type": "Straßenessen",
       "cuisine": "椰子鸡",
       "avgPrice": 54,
       "rating": 4.6,
@@ -3039,209 +3039,209 @@
     {
       "type": "police",
       "name": "三亚市公安局",
-      "nameEn": "Sanya Public Security Bureau",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "110",
-      "notes": "Tourist police available at major attractions"
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "police",
       "name": "三亚市公安局",
-      "nameEn": "Sanya Public Security Bureau",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "+86 898 88868110",
-      "address": "Jiefang Road, Sanya",
-      "notes": "24-hour service. English interpretation may be limited."
+      "address": "Guangzhou",
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "medical",
       "name": "三亚市人民医院",
-      "nameEn": "Sanya People's Hospital",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "+86 898 88257801",
-      "address": "Jiefang路 45号",
+      "address": "Guangzhou",
       "coordinates": {
         "lat": 18.2523,
         "lng": 109.5123
       },
-      "notes": "24-hour emergency. Has English-speaking staff."
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "medical",
       "name": "解放军总医院海南分院",
-      "nameEn": "PLA General Hospital Sanya Branch",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "+86 898 37331000",
-      "address": "Haitang Bay",
+      "address": "Guangzhou",
       "coordinates": {
         "lat": 18.3612,
         "lng": 109.7589
       },
-      "notes": "24-hour emergency. High-quality medical care."
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "fire",
       "name": "消防救援",
-      "nameEn": "Fire Department",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "119",
-      "address": "Citywide",
-      "notes": "Fire and rescue emergency."
+      "address": "Guangzhou",
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "ambulance",
       "name": "急救中心",
-      "nameEn": "Emergency Medical Services",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "120",
-      "address": "Citywide",
-      "notes": "24-hour ambulance and medical emergency."
+      "address": "Guangzhou",
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "tourism",
       "name": "三亚旅游投诉热线",
-      "nameEn": "Sanya Tourism Complaint Hotline",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "+86 898 88392211",
-      "address": "Citywide",
-      "notes": "Tourism complaints and emergency assistance."
+      "address": "Guangzhou",
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "coastguard",
       "name": "海上救援",
-      "nameEn": "Coast Guard Emergency",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "12395",
-      "address": "Sanya Bay",
-      "notes": "Marine emergency and rescue."
+      "address": "Guangzhou",
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "traffic",
       "name": "交通事故报警",
-      "nameEn": "Traffic Police",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "122",
-      "address": "Citywide",
-      "notes": "Traffic accidents and road emergencies."
+      "address": "Guangzhou",
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "consular",
       "name": "中国外交部领事保护",
-      "nameEn": "China MFA Consular Protection",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "+86 10 12308",
-      "address": "Nationwide",
-      "notes": "24-hour consular protection for Chinese citizens abroad or foreigners in China."
+      "address": "Guangzhou",
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "info",
       "name": "三亚旅游信息咨询",
-      "nameEn": "Sanya Tourist Information Center",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "+86 898 88295300",
-      "address": "Sanya Bus Station",
-      "notes": "Tourist information, maps, and assistance. English available."
+      "address": "Guangzhou",
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "taxi",
       "name": "出租车失物招领",
-      "nameEn": "Taxi Lost and Found",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "+86 898 88696888",
-      "address": "Citywide",
-      "notes": "Report lost items in taxis."
+      "address": "Guangzhou",
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻广州总领事馆",
-      "nameEn": "Australian Consulate General Guangzhou",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "+86 20 3814 0128",
       "address": "Guangzhou",
-      "notes": "For Australian citizens"
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "embassy",
       "name": "英国驻广州总领事馆",
-      "nameEn": "British Consulate General Guangzhou",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "+86 20 8314 3000",
       "address": "Guangzhou",
-      "notes": "For British citizens"
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "embassy",
       "name": "美国驻广州总领事馆",
-      "nameEn": "U.S. Consulate General Guangzhou",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "+86 20 3814 5775",
       "address": "Guangzhou",
-      "notes": "For U.S. citizens"
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "embassy",
       "name": "德国驻广州总领事馆",
-      "nameEn": "German Consulate General Guangzhou",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "+86 20 8313 0000",
       "address": "Guangzhou",
-      "notes": "For German citizens"
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "embassy",
       "name": "法国驻广州总领事馆",
-      "nameEn": "French Consulate General Guangzhou",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "+86 20 2829 2000",
       "address": "Guangzhou",
-      "notes": "For French citizens"
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "embassy",
       "name": "日本驻广州总领事馆",
-      "nameEn": "Japanese Consulate General Guangzhou",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "+86 20 8334 3009",
       "address": "Guangzhou",
-      "notes": "For Japanese citizens"
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "embassy",
       "name": "韩国驻广州总领事馆",
-      "nameEn": "South Korean Consulate General Guangzhou",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "+86 20 3885 0993",
       "address": "Guangzhou",
-      "notes": "For South Korean citizens"
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "embassy",
       "name": "加拿大驻广州总领事馆",
-      "nameEn": "Canadian Consulate General Guangzhou",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "+86 20 8611 6100",
       "address": "Guangzhou",
-      "notes": "For Canadian citizens"
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "embassy",
       "name": "新加坡驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "+86 20 3892 2125",
       "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "tourist",
       "name": "海南省旅游投诉热线",
-      "nameEn": "Hainan Province Tourism Complaint Hotline",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "12301",
-      "address": "Provincewide",
-      "notes": "24-hour tourism complaints and emergency assistance"
+      "address": "Guangzhou",
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "tourist",
       "name": "三亚旅游信息咨询中心",
-      "nameEn": "Sanya Tourist Information Center",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "+86 898 88295300",
-      "address": "Sanya Bus Station",
-      "notes": "Tourist information, maps, and assistance. English available."
+      "address": "Guangzhou",
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "water-rescue",
       "name": "海上救援",
-      "nameEn": "Water Rescue Service",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "12395",
-      "address": "Sanya Bay",
-      "notes": "Beach and water emergency rescue."
+      "address": "Guangzhou",
+      "notes": "Für Staatsbürger Singapurs"
     },
     {
       "type": "info",
       "name": "消费者投诉热线",
-      "nameEn": "Consumer Rights Hotline",
+      "nameEn": "Singapore Generalkonsulat Guangzhou",
       "phone": "12315",
-      "address": "Citywide",
-      "notes": "Consumer rights protection and complaints."
+      "address": "Guangzhou",
+      "notes": "Für Staatsbürger Singapurs"
     }
   ],
   "culturalTips": [

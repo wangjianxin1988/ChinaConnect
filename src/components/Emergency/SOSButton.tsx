@@ -5,6 +5,7 @@ import { EmergencyCard } from "./EmergencyCard";
 import { GPSLocator } from "./GPSLocator";
 import { PresetContacts } from "./PresetContacts";
 import { QuickDial } from "./QuickDial";
+import { SOS_STRINGS, useClientLang } from "./sos-strings";
 
 interface SOSButtonProps {
   className?: string;
@@ -13,6 +14,8 @@ interface SOSButtonProps {
 type MenuTab = "main" | "translation" | "location" | "embassy" | "contacts" | "cultural";
 
 export function SOSButton({ className = "" }: SOSButtonProps) {
+  const lang = useClientLang();
+  const s = SOS_STRINGS[lang] || SOS_STRINGS.en;
   const [isExpanded, setIsExpanded] = useState(false);
   const [activeTab, setActiveTab] = useState<MenuTab>("main");
   const [showFlash, setShowFlash] = useState(false);
@@ -106,7 +109,7 @@ export function SOSButton({ className = "" }: SOSButtonProps) {
               }`}
             >
               <span className="block">🚨</span>
-              <span className="hidden sm:inline">SOS</span>
+              <span className="hidden sm:inline">{s.sos}</span>
             </button>
             <button
               onClick={() => handleTabChange("translation")}
@@ -117,7 +120,7 @@ export function SOSButton({ className = "" }: SOSButtonProps) {
               }`}
             >
               <span className="block">📋</span>
-              <span className="hidden sm:inline">Translate</span>
+              <span className="hidden sm:inline">{s.translate}</span>
             </button>
             <button
               onClick={() => handleTabChange("location")}
@@ -128,7 +131,7 @@ export function SOSButton({ className = "" }: SOSButtonProps) {
               }`}
             >
               <span className="block">📍</span>
-              <span className="hidden sm:inline">GPS</span>
+              <span className="hidden sm:inline">{s.gps}</span>
             </button>
             <button
               onClick={() => handleTabChange("embassy")}
@@ -139,7 +142,7 @@ export function SOSButton({ className = "" }: SOSButtonProps) {
               }`}
             >
               <span className="block">🏛️</span>
-              <span className="hidden sm:inline">Embassy</span>
+              <span className="hidden sm:inline">{s.embassy}</span>
             </button>
             <button
               onClick={() => handleTabChange("contacts")}
@@ -150,7 +153,7 @@ export function SOSButton({ className = "" }: SOSButtonProps) {
               }`}
             >
               <span className="block">👥</span>
-              <span className="hidden sm:inline">Contacts</span>
+              <span className="hidden sm:inline">{s.contacts}</span>
             </button>
             <button
               onClick={() => handleTabChange("cultural")}
@@ -161,7 +164,7 @@ export function SOSButton({ className = "" }: SOSButtonProps) {
               }`}
             >
               <span className="block">⚠️</span>
-              <span className="hidden sm:inline">Culture</span>
+              <span className="hidden sm:inline">{s.culture}</span>
             </button>
           </div>
 
@@ -171,7 +174,7 @@ export function SOSButton({ className = "" }: SOSButtonProps) {
               <div className="p-4 space-y-4">
                 {/* Quick Dial */}
                 <div>
-                  <h3 className="text-sm font-semibold text-gray-700 mb-2">Emergency Numbers</h3>
+                  <h3 className="text-sm font-semibold text-gray-700 mb-2">{s.emergencyNumbers}</h3>
                   <div className="space-y-2">
                     <QuickDial compact onCall={callEmergency} />
                   </div>
@@ -184,21 +187,21 @@ export function SOSButton({ className = "" }: SOSButtonProps) {
                     className="flex items-center gap-2 px-3 py-2 bg-purple-50 text-purple-700 rounded-lg text-sm hover:bg-purple-100 transition-colors"
                   >
                     <span>📋</span>
-                    <span>Translate</span>
+                    <span>{s.translate}</span>
                   </button>
                   <button
                     onClick={() => handleTabChange("location")}
                     className="flex items-center gap-2 px-3 py-2 bg-green-50 text-green-700 rounded-lg text-sm hover:bg-green-100 transition-colors"
                   >
                     <span>📍</span>
-                    <span>Location</span>
+                    <span>{s.location}</span>
                   </button>
                   <button
                     onClick={() => handleTabChange("cultural")}
                     className="flex items-center gap-2 px-3 py-2 bg-amber-50 text-amber-700 rounded-lg text-sm hover:bg-amber-100 transition-colors"
                   >
                     <span>⚠️</span>
-                    <span>Culture</span>
+                    <span>{s.culture}</span>
                   </button>
                 </div>
               </div>
@@ -237,9 +240,9 @@ export function SOSButton({ className = "" }: SOSButtonProps) {
               <div className="p-4 space-y-4">
                 <div className="text-center">
                   <span className="text-4xl block mb-2">🏮</span>
-                  <h3 className="text-sm font-semibold text-gray-800 mb-1">Cultural Tips</h3>
+                  <h3 className="text-sm font-semibold text-gray-800 mb-1">{s.culturalTips}</h3>
                   <p className="text-xs text-gray-500 mb-4">
-                    Important cultural awareness and local customs for your visit
+                    {s.culturalSub}
                   </p>
                 </div>
                 <button
@@ -250,20 +253,20 @@ export function SOSButton({ className = "" }: SOSButtonProps) {
                   className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-amber-50 text-amber-700 rounded-lg text-sm font-medium hover:bg-amber-100 transition-colors border border-amber-200"
                 >
                   <span>⚠️</span>
-                  <span>View Cultural Warnings & Tips</span>
+                  <span>{s.viewWarnings}</span>
                 </button>
                 <div className="space-y-2 text-xs text-gray-500">
                   <div className="flex items-start gap-2">
                     <span>🏯</span>
-                    <span>Respect local customs and traditions</span>
+                    <span>{s.tip1}</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <span>🤝</span>
-                    <span>Learn basic etiquette for temples and public spaces</span>
+                    <span>{s.tip2}</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <span>📱</span>
-                    <span>Stay aware of regional regulations</span>
+                    <span>{s.tip3}</span>
                   </div>
                 </div>
               </div>
@@ -298,7 +301,7 @@ export function SOSButton({ className = "" }: SOSButtonProps) {
             flex items-center justify-center text-xl
             ${isExpanded ? "rotate-90" : ""}
           `}
-          aria-label={isExpanded ? "Close emergency menu" : "Open emergency menu"}
+          aria-label={isExpanded ? s.closeMenu : s.openMenu}
         >
           {isExpanded ? "✕" : "☰"}
         </button>
@@ -313,7 +316,7 @@ export function SOSButton({ className = "" }: SOSButtonProps) {
             flex items-center justify-center
             ${showFlash ? "ring-8 ring-red-300" : ""}
           `}
-          aria-label="SOS Emergency - Tap to call police"
+          aria-label={s.sosAria}
         >
           {/* Pulse ring */}
           <span className="absolute inset-0 rounded-full bg-red-400 animate-ping opacity-30" />
@@ -334,11 +337,11 @@ export function SOSButton({ className = "" }: SOSButtonProps) {
         }`}
       >
         <div className="bg-gray-900 text-white text-sm px-4 py-3 rounded-xl shadow-lg max-w-[240px]">
-          <div className="font-semibold text-red-400 mb-1">🆘 Emergency SOS</div>
+          <div className="font-semibold text-red-400 mb-1">🆘 {s.tooltipTitle}</div>
           <div className="text-gray-300 text-xs space-y-1">
-            <div>• Tap: Call Police (110)</div>
-            <div>• Menu: Translation, GPS, Embassy, Culture</div>
-            <div className="pt-1 text-gray-400">Works offline</div>
+            <div>{s.tooltipTap}</div>
+            <div>{s.tooltipMenu}</div>
+            <div className="pt-1 text-gray-400">{s.tooltipOffline}</div>
           </div>
         </div>
       </div>

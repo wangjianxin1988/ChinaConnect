@@ -1,0 +1,18 @@
+import { chromium } from "playwright";
+const browser = await chromium.launch({ headless: true });
+const ctx = await browser.newContext();
+await ctx.addInitScript(() => { try { localStorage.setItem("chinaconnect_language", "ja"); } catch (e) {} });
+const page = await ctx.newPage();
+await page.goto("http://localhost:4321/ja/city/beijing/", { waitUntil: "networkidle", timeout: 30000 });
+await page.waitForTimeout(2000);
+const nav = await page.evaluate(() => [...document.querySelectorAll("nav a, header a")].slice(0, 12).map(a => a.textContent.trim()));
+const h1 = await page.evaluate(() => document.querySelector("h1")?.textContent?.trim());
+const hasDataI18n = await page.evaluate(() => document.querySelectorAll("[data-i18n]").length);
+console.log("nav:", JSON.stringify(nav));
+console.log("h1:", h1);
+console.log("data-i18n elements:", hasDataI18n);
+const errs = [];
+page.on("console", (m) => { if (m.type() === "error") errs.push(m.text().slice(0, 200)); });
+await page.waitForTimeout(500);
+console.log("console errors:", JSON.stringify(errs.slice(0, 5)));
+await browser.close();

@@ -1,0 +1,10 @@
+const fs = require("fs");
+const src = fs.readFileSync("src/pages/[lang]/city/[slug]/food.astro", "utf8");
+const i1 = src.indexOf("text-lg font-semibold text-gray-900 leading-tight");
+console.log(JSON.stringify(src.slice(i1 - 100, i1 + 300)));
+const i2 = src.indexOf("getBadgeLabel");
+console.log("--- badge fn ---");
+console.log(JSON.stringify(src.slice(i2, i2 + 260)));
+const i3 = src.indexOf("-star");
+console.log("--- star suffix ---");
+console.log(JSON.stringify(src.slice(i3 - 200, i3 + 120)));

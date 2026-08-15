@@ -3,28 +3,28 @@
   "name": "洛阳",
   "nameEn": "Luoyang",
   "country": "China",
-  "population": "5.2 million",
+  "population": "520만 명",
   "coordinates": {
     "lat": 34.6197,
     "lng": 112.454
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Luoyang, one of China's ancient capitals, is famous for the Longmen Grottoes (UNESCO), the Shaolin Temple, and peony flowers. A cradle of Chinese civilization with over 5,000 years of history, it served as capital for thirteen dynasties.",
+  "description": "중국의 고대 수도 중 하나인 뤼양은 룽먼굴(UNESCO), 사림사 및 모란화로 유명합니다. 5,000년 이상의 역사를 가진 중국 문명의 요람으로 13개 왕조의 수도였습니다.",
   "coverImage": "/img/ext/1633beb663fe.webp",
   "highlights": [
-    "Longmen Grottoes - UNESCO World Heritage",
-    "Shaolin Temple - Birthplace of Kung Fu",
-    "White Horse Temple - First Buddhist temple in China",
-    "Luoyang Museum - Ancient capital artifacts",
-    "Peony flowers"
+    "龙门石窟 - 유네스코 세계문화유산",
+    "少林寺 -功伕의 요람",
+    "백마사 - 중국 최초의 불교 사원",
+    "뤄양 박물관 - 고대 수도 유물",
+    "모란꽃"
   ],
   "climate": {
-    "type": "Continental monsoon climate",
+    "type": "대륙성 계절풍 기후",
     "bestMonths": [
-      "April",
-      "May",
-      "September",
-      "October"
+      "4월",
+      "5월",
+      "9월",
+      "10월"
     ],
     "avgSummerTemp": "27°C (81°F)",
     "avgWinterTemp": "2°C (36°F)",
@@ -34,583 +34,583 @@
     {
       "id": "luoyang-1",
       "name": "龙门石窟",
-      "nameEn": "Longmen Grottoes",
+      "nameEn": "룽먼 석굴",
       "category": "historical",
-      "description": "UNESCO World Heritage - massive Buddhist cave complex with 100,000+ sculptures.",
-      "address": "Longmen Grottoes, Yanshi District",
+      "description": "유네스코 세계문화유산 - 100,000개 이상의 조각상이 있는 거대한 불교 동굴 단지.",
+      "address": "용문석굴, 옌시구",
       "coordinates": {
         "lat": 34.4522,
         "lng": 112.4722
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "90¥ (high season), 70¥ (low season)",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "90위안(성수기), 70위안(비수기)",
+      "recommendedVisitTime": "3-4시간",
       "highlights": [
-        "Buddhist sculptures",
-        "Fengxian Temple",
-        "Lotus Flower Cave",
-        "Thousands of figures"
+        "불상 조각",
+        "봉현사",
+        "연꽃동굴",
+        "수천 개의 조상들"
       ],
-      "tips": "Arrive early to avoid crowds. Take boat ride for different view. Wear comfortable shoes.",
+      "tips": "인파를 피하기 위해 일찍 도착하세요. 배를 타면 다른 풍경을 감상할 수 있습니다. 편안한 신발을 착용하세요.",
       "image": "/img/ext/055ca5f59703.webp",
       "phone": "+86 037 9 8653 0071"
     },
     {
       "id": "luoyang-2",
       "name": "少林寺",
-      "nameEn": "Shaolin Temple",
+      "nameEn": "少林寺",
       "category": "cultural",
-      "description": "Birthplace of Chinese martial arts and Zen Buddhism, with famous kung fu performances.",
-      "address": "Songshan, Dengfeng County",
+      "description": "중국 무술과 선불교의 요람으로 유명한功伕 시범이 있는 곳입니다.",
+      "address": "송산, 등정현",
       "coordinates": {
         "lat": 34.5022,
         "lng": 112.9322
       },
       "openingHours": "07:00-18:00",
-      "ticketPrice": "100¥ (temple), 280¥ (including performance)",
-      "recommendedVisitTime": "4-5 hours",
+      "ticketPrice": "100¥ (사찰), 280¥ (공연 포함)",
+      "recommendedVisitTime": "4-5시간",
       "highlights": [
-        "Kung fu performances",
-        "Martial arts training",
-        "Pagoda Forest",
-        "Bodhi tree"
+        "쿤푸 공연",
+        "무술 훈련",
+        "탑림(塔林)",
+        "보리수"
       ],
-      "tips": "Watch the kung fu show. Arrive early. Combine with Songshan hiking.",
+      "tips": "쿤푸 공연을 보세요. 일찍 도착하세요. 송산 등반과 함께하세요.",
       "image": "/img/ext/0df1b413372e.webp",
       "phone": "+86 037 9 1775 2653"
     },
     {
       "id": "luoyang-3",
       "name": "白马寺",
-      "nameEn": "White Horse Temple",
+      "nameEn": "백마사(白馬寺)",
       "category": "cultural",
-      "description": "China's first Buddhist temple, founded in 68 AD, with contributions from India and Southeast Asia.",
-      "address": "White Horse Temple, Laocheng District",
+      "description": "기원후 68년에 건립된 중국 최초의 불교 사찰로 인도와 동남아시아의 기여가 있습니다.",
+      "address": "백마사, 라오청 구",
       "coordinates": {
         "lat": 34.7122,
         "lng": 112.5622
       },
       "openingHours": "07:00-19:00",
       "ticketPrice": "35¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3시간",
       "highlights": [
-        "First Buddhist temple",
-        "Indian temple",
-        "Thai temple",
-        "Ancient history"
+        "최초의 불교 사찰",
+        "인도 사찰",
+        "태국 사찰",
+        "고대 역사"
       ],
-      "tips": "The birthplace of Chinese Buddhism. Combine with Luoyang old town.",
+      "tips": "중국 불교의 탄생지입니다. 루양 구시가지와 함께 방문하세요.",
       "image": "/img/ext/e1e1c86881fa.webp",
       "phone": "+86 037 9 5395 4077"
     },
     {
       "id": "luoyang-4",
       "name": "洛阳博物馆",
-      "nameEn": "Luoyang Museum",
+      "nameEn": "루양 박물관",
       "category": "cultural",
-      "description": "Excellent museum showcasing ancient capital history with over 40,000 artifacts.",
-      "address": "Garden of Luoyang, Laocheng District",
+      "description": "4만 점 이상의 유물을 전시하는 고대 수도를 보여주는 훌륭한 박물관입니다.",
+      "address": "루양 정원, 라오청 구",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4422
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "09:00-17:00 (월요일 휴관)",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "2-3시간",
       "highlights": [
-        "Ancient artifacts",
-        "Tang dynasty treasures",
-        "Tri-color pottery",
-        "Local history"
+        "고대 유물",
+        "당 왕조 보물",
+        "삼채 도자기",
+        "현지 역사"
       ],
-      "tips": "Allow 2-3 hours. Audio guide available. Don't miss the tri-color pottery.",
+      "tips": "2-3시간을 걸어보세요. 오디오 가이드가 있습니다. 삼채 도기사를 놓치지 마세요.",
       "image": "/img/ext/f0932ce3da75.webp",
       "phone": "+86 037 9 9581 3863"
     },
     {
       "id": "luoyang-5",
       "name": "关林",
-      "nameEn": "Guanlin Temple",
+      "nameEn": "관림사",
       "category": "cultural",
-      "description": "Temple dedicated to Guan Yu, where his remains are buried, largest such temple in China.",
-      "address": "Guanlin Temple, Laocheng District",
+      "description": "관우를 모신 사찰로 그의 유골이 안장된 곳이며 중국에서 가장 큰 관우 사찰입니다.",
+      "address": "관림사, 라오청 구",
       "coordinates": {
         "lat": 34.6522,
         "lng": 112.5822
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "40¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2시간",
       "highlights": [
-        "Guan Yu temple",
-        "Ancient cypress trees",
-        "Bell tower",
-        "Cultural significance"
+        "관우 사찰",
+        "고대 측백나무",
+        "종루",
+        "문화적 중요성"
       ],
-      "tips": "Learn about Guan Yu's legendary stories. The ancient trees are impressive.",
+      "tips": "관우의 전설적인 이야기를 알아보세요. 고목이 인상적입니다.",
       "image": "/img/ext/ccf86d5ffa74.webp",
       "phone": "+86 037 9 1833 8957"
     },
     {
       "id": "luoyang-6",
       "name": "老城十字街",
-      "nameEn": "Luoyang Old City",
+      "nameEn": "로양 구시가지",
       "category": "cultural",
-      "description": "Historic streets with traditional architecture, lanterns and local snacks.",
-      "address": "Old City, Laocheng District",
+      "description": "전통 건축물과 등불, 현지小吃가 있는 역사적인 거리입니다.",
+      "address": "구시가지, 라오청 구",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
-      "openingHours": "Open 24 hours (shops 09:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24시간 개방 (상점 09:00-22:00)",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "2-3시간",
       "highlights": [
-        "Traditional streets",
-        "Red lanterns",
-        "Night scene",
-        "Local snacks"
+        "전통 거리",
+        "빨간 등불",
+        "야경",
+        "현지 간식"
       ],
-      "tips": "Best at night when illuminated. Try local snacks. Buy souvenirs.",
+      "tips": "밤에 불灯이 켜졌을 때 가장 아름답습니다. 현지小吃를 맛보고 기념품을 사세요.",
       "image": "/img/ext/bfba15538474.webp",
       "phone": "+86 037 9 4591 3190"
     },
     {
       "id": "luoyang-7",
       "name": "丽景门",
-      "nameEn": "Lijing Gate",
+      "nameEn": "리징 Gate",
       "category": "historical",
-      "description": "Iconic gate of Luoyang with well-preserved city wall section.",
-      "address": "Lijing Gate, Old City",
+      "description": "보존 상태가 좋은 성과 함께 로양의 상징적인城门입니다.",
+      "address": "리징문, 구시가지",
       "coordinates": {
         "lat": 34.6722,
         "lng": 112.4422
       },
       "openingHours": "08:00-22:00",
-      "ticketPrice": "45¥ (including city wall)",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "45¥ (성 포함)",
+      "recommendedVisitTime": "1-2시간",
       "highlights": [
-        "Ancient gate",
-        "City wall walk",
-        "Night views",
-        "Photo opportunities"
+        "고대 성문",
+        "성城墙 탐방",
+        "야경",
+        "사진 촬영 포인트"
       ],
-      "tips": "Walk the city wall at sunset. Best at night with lighting.",
+      "tips": "해질녘에 성을 걸으세요. 야간 조명이 켜졌을 때 가장 좋습니다.",
       "image": "/img/ext/d9e1e34b36a1.webp",
       "phone": "+86 037 9 8661 0160"
     },
     {
       "id": "luoyang-8",
       "name": "天堂明堂",
-      "nameEn": "Tian Tang Ming Tang",
+      "nameEn": "천당 명당",
       "category": "historical",
-      "description": " reconstructed Tang Dynasty palaces with large rotating stage show.",
-      "address": "Zhouli Avenue, Laocheng District",
+      "description": "대형 회전 무대가 있는 재건된 당대宫殿입니다.",
+      "address": "들로로, 라오청 구",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4422
       },
       "openingHours": "09:00-22:00",
       "ticketPrice": "120¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3시간",
       "highlights": [
-        "Tang palace",
-        "Rotating stage",
-        "Light show",
-        "History performance"
+        "당 왕조 궁전",
+        "회전 무대",
+        "조명 쇼",
+        "역사 공연"
       ],
-      "tips": "Watch the evening performance. Arrive before show time. Great photo opportunities.",
+      "tips": "저녁 공연을 관람하세요. 공연 시간 전에 도착하세요. 훌륭한 사진 촬영 기회를 놓치지 마세요.",
       "image": "/img/ext/f5e115604d3c.webp",
       "phone": "+86 037 9 4295 7743"
     },
     {
       "id": "luoyang-9",
       "name": "洛阳国家牡丹园",
-      "nameEn": "Luoyang National Peony Garden",
+      "nameEn": "로양국화원",
       "category": "natural",
-      "description": "Largest peony garden in China with 400+ varieties of the city flower.",
-      "address": "National Peony Garden, Laocheng District",
+      "description": "중국 최대 국화원으로 도시화인 400가지 이상의 품종을 보유하고 있습니다.",
+      "address": "국화원, 라오청 구",
       "coordinates": {
         "lat": 34.6822,
         "lng": 112.6022
       },
-      "openingHours": "06:00-19:00 (April peak season)",
-      "ticketPrice": "30¥ (peak 50¥)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "06:00-19:00 (4월 성수기)",
+      "ticketPrice": "30¥ (성수기 50¥)",
+      "recommendedVisitTime": "2-3시간",
       "highlights": [
-        "Peony flowers",
-        "Rare varieties",
-        "Spring scenery",
-        "Photography"
+        "모란꽃",
+        "희귀 품종",
+        "봄 풍경",
+        "사진 촬영"
       ],
-      "tips": "Visit during Peony Festival (April-May). The flowers are spectacular.",
+      "tips": "국화 축제 기간(4-5월)에 방문하세요. 꽃이 정말 장관입니다.",
       "image": "/img/ext/ac85b473e165.webp",
       "phone": "+86 037 9 8683 7756"
     },
     {
       "id": "luoyang-10",
       "name": "古墓博物馆",
-      "nameEn": "Ancient Tomb Museum",
+      "nameEn": "고대 무덤 박물관",
       "category": "cultural",
-      "description": "Unique museum with underground ancient tombs you can walk through.",
-      "address": "Baiwan Village, Laocheng District",
+      "description": "지하 고대 무덤을 걸을 수 있는 독특한 박물관입니다.",
+      "address": "백만 마을, 라오청 구",
       "coordinates": {
         "lat": 34.6922,
         "lng": 112.5222
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "09:00-17:00 (월요일 휴관)",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "2시간",
       "highlights": [
-        "Underground tombs",
-        "Ancient burial customs",
-        "Historical artifacts",
-        "Unique experience"
+        "지하 무덤",
+        "고대 장례 습속",
+        "역사적 유물",
+        "특별한 경험"
       ],
-      "tips": "Walk through actual tombs underground. Learn about ancient burial practices.",
+      "tips": "지하의 실제 무덤을 걸어 지나가세요. 고대 장례 습속에 대해 알아보세요.",
       "image": "/img/ext/c74d7faf7bb9.webp",
       "phone": "+86 037 9 3194 9945"
     },
     {
       "id": "luoyang-11",
       "name": "周公庙",
-      "nameEn": "Duke of Zhou Temple",
+      "nameEn": "주공 사당",
       "category": "cultural",
-      "description": "Temple dedicated to the Duke of Zhou, founder of the Zhou Dynasty.",
-      "address": "Old City",
+      "description": "주 왕조의创始자인 주공을 기리는 사당.",
+      "address": "올드 시티",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "25¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1시간",
       "highlights": [
-        "Zhou dynasty",
-        "Ancient temple",
-        "Historical significance",
-        "Quiet atmosphere"
+        "주 왕조",
+        "고대 사찰",
+        "역사적 중요성",
+        "조용한 분위기"
       ],
-      "tips": "For history enthusiasts. Quiet compared to other temples.",
+      "tips": "역사 애호가에게 적합. 다른 사당에 비해 조용함.",
       "image": "/img/ext/8ef439572497.webp",
       "phone": "+86 037 9 3369 4589"
     },
     {
       "id": "luoyang-12",
       "name": "上清宫",
-      "nameEn": "Shangqing Temple",
+      "nameEn": "상청사",
       "category": "cultural",
-      "description": "Taoist temple on a hilltop with panoramic views of Luoyang.",
-      "address": "Sanjie Town",
+      "description": "루양의 전경이 내려다 보이는 언덕上面的 도교 사당.",
+      "address": "산제 타운",
       "coordinates": {
         "lat": 34.6422,
         "lng": 112.4722
       },
       "openingHours": "07:00-18:00",
       "ticketPrice": "20¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2시간",
       "highlights": [
-        "Taoist temple",
-        "Hilltop views",
-        "Ancient architecture",
-        "Peaceful"
+        "도교 사당",
+        "언덕 전경",
+        "고대 건축",
+        "평온함"
       ],
-      "tips": "Great views of the city. Combine with nearby sites. Peaceful atmosphere.",
+      "tips": "도시의 좋은 전경. 인근 명소와 함께 방문하세요. 평화로운 분위기.",
       "image": "/img/ext/a35256bc74dd.webp",
       "phone": "+86 037 9 9290 0237"
     },
     {
       "id": "luoyang-13",
       "name": "应天门",
-      "nameEn": "Yingtian Gate",
+      "nameEn": "영천문",
       "category": "historical",
-      "description": "Reconstructed Tang Dynasty gate with impressive scale and evening light show.",
-      "address": "Yingtian Gate, Laocheng District",
+      "description": "규모감과 저녁灯光쇼가 인상적인 재건된 당 왕조城门.",
+      "address": "영천문, 라오청 구",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4422
       },
       "openingHours": "09:00-22:00",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2시간",
       "highlights": [
-        "Tang dynasty gate",
-        "Light show",
-        "Night photography",
-        "Historical recreation"
+        "당 왕조城门",
+        "조명 쇼",
+        "야간 사진 촬영",
+        "역사적 재현"
       ],
-      "tips": "Best at night. Watch the light show. Great photo opportunities.",
+      "tips": "밤에 방문하기最佳.灯光쇼를 감상하세요. 사진 촬영하기 좋은 장소.",
       "image": "/img/ext/9d6d8d62d4bd.webp",
       "phone": "+86 037 9 6112 8693"
     },
     {
       "id": "luoyang-14",
       "name": "嵩山",
-      "nameEn": "Songshan (Mount Song)",
+      "nameEn": "송산 (속산)",
       "category": "natural",
-      "description": "One of the Sacred Mountains of China with Shaolin Temple and stunning scenery.",
-      "address": "Dengfeng County",
+      "description": "소림사와놀라운 경치를 갖춘 중국 신성한 산之一.",
+      "address": "등봉 현",
       "coordinates": {
         "lat": 34.5022,
         "lng": 112.9322
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "80¥ (park only)",
-      "recommendedVisitTime": "1-2 days",
+      "openingHours": "24시간 개방",
+      "ticketPrice": "80¥ (파크 입장권만)",
+      "recommendedVisitTime": "1-2일",
       "highlights": [
-        "Sacred mountain",
-        "Shaolin Temple",
-        "Hiking trails",
-        "Temples"
+        "신성한 산",
+        "少林寺",
+        "하이킹 트레일",
+        "사찰"
       ],
-      "tips": "Combine with Shaolin Temple. Allow 2 days for full experience. Hiking required.",
+      "tips": "소림사와 함께 방문하세요. كامل 체험을 위해 2일 필요. 등반 필수.",
       "image": "/img/ext/309f30e43563.webp",
       "phone": "+86 037 9 7716 7616"
     },
     {
       "id": "luoyang-15",
       "name": "神州牡丹园",
-      "nameEn": "Shenzhou Peony Garden",
+      "nameEn": "신저우 모란원",
       "category": "natural",
-      "description": "Large peony garden with many rare varieties and beautiful scenery.",
-      "address": "National Peony Garden area",
+      "description": "희귀 품종이 많고 아름다운 경치가 펼쳐지는 대규모 모란원입니다.",
+      "address": "국가 모란원 지구",
       "coordinates": {
         "lat": 34.6822,
         "lng": 112.6022
       },
       "openingHours": "06:00-19:00",
       "ticketPrice": "30¥",
-      "recommendedVisitTime": "2 hours",
+      "recommendedVisitTime": "2시간",
       "highlights": [
-        "Rare peonies",
-        "Beautiful gardens",
-        "Spring flowers",
-        "Photography"
+        "희귀 모란",
+        "아름다운 정원",
+        "봄꽃",
+        "사진 촬영"
       ],
-      "tips": "Best in April-May. Different varieties bloom at different times.",
+      "tips": "4월~5월에 가장 아름답습니다. 품종마다 개화 시기가 다릅니다.",
       "image": "/img/ext/c09fcbe63c84.webp",
       "phone": "+86 037 9 7904 4273"
     },
     {
       "id": "luoyang-16",
       "name": "洛浦公园",
-      "nameEn": "Luopu Park",
+      "nameEn": "로푸 공원",
       "category": "natural",
-      "description": "Large riverside park along the Luo River with gardens and walking paths.",
-      "address": "Along Luo River",
+      "description": "정원과 산책로가 있는 로강을 따라 위치한 대규모 강변 공원입니다.",
+      "address": "로강변",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4422
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24시간 개방",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1-2시간",
       "highlights": [
-        "River walks",
-        "Gardens",
-        "Local life",
-        "Sunset views"
+        "강변 산책",
+        "정원",
+        "현지 생활",
+        "日落景观"
       ],
-      "tips": "Great for evening walks. Beautiful sunset over the river.",
+      "tips": "저녁 산책하기 좋습니다. 강에서 아름다운 일몰을 볼 수 있습니다.",
       "image": "/img/ext/87b70ba60ba4.webp",
       "phone": "+86 037 9 4910 0779"
     },
     {
       "id": "luoyang-17",
       "name": "中岳庙",
-      "nameEn": "Zhongyue Temple",
+      "nameEn": "중악사",
       "category": "cultural",
-      "description": "Main temple on Songshan dedicated to the mountain itself.",
-      "address": "Dengfeng County",
+      "description": "성산을 모시는 성산의 주사찰입니다.",
+      "address": "등봉 현",
       "coordinates": {
         "lat": 34.5022,
         "lng": 112.9322
       },
       "openingHours": "07:00-18:00",
       "ticketPrice": "30¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2시간",
       "highlights": [
-        "Mountain worship",
-        "Ancient architecture",
-        "Taoist culture",
-        "Historical significance"
+        "산신",
+        "고대 건축",
+        "도교 문화",
+        "역사적 중요성"
       ],
-      "tips": "Combine with Songshan hike. Ancient and atmospheric.",
+      "tips": "성산 등반과 함께 방문하세요. 고풍스럽고 분위기가 좋습니다.",
       "image": "/img/ext/caf86c2817ea.webp",
       "phone": "+86 037 9 6352 5445"
     },
     {
       "id": "luoyang-18",
       "name": "永泰寺",
-      "nameEn": "Yongtai Temple",
+      "nameEn": "용태사",
       "category": "cultural",
-      "description": "Ancient Buddhist nunnery on Songshan with over 1,500-year history.",
-      "address": "Songshan, Dengfeng County",
+      "description": "1500년 이상의 역사를 가진 성산의 고대 불교 여성 수도원입니다.",
+      "address": "송산, 등정현",
       "coordinates": {
         "lat": 34.5122,
         "lng": 112.9222
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "25¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2시간",
       "highlights": [
-        "Buddhist nunnery",
-        "Ancient trees",
-        "Peaceful setting",
-        "Female monastery"
+        "불교 수녀원",
+        "고목",
+        "평화로운 환경",
+        "여성 수도원"
       ],
-      "tips": "Atmospheric and peaceful. Meet the nuns. Unique experience.",
+      "tips": "분위기가 평화롭고 좋습니다. 수도녀를 만날 수 있는 특별한 경험입니다.",
       "image": "/img/ext/c46ceaaedd4a.webp",
       "phone": "+86 037 9 5728 1492"
     },
     {
       "id": "luoyang-19",
       "name": "塔林",
-      "nameEn": "Pagoda Forest",
+      "nameEn": "탑림(塔林)",
       "category": "historical",
-      "description": "Over 240 ancient Buddhist pagodas at Shaolin Temple, second largest in China.",
-      "address": "Shaolin Temple",
+      "description": "Shaolin Temple에 240개 이상의 고대 불교 탑이 있으며 중국에서 두 번째로 큰 곳입니다.",
+      "address": "少林寺",
       "coordinates": {
         "lat": 34.5022,
         "lng": 112.9322
       },
       "openingHours": "07:00-18:00",
-      "ticketPrice": "Included in Shaolin ticket",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "Shaolin 티켓에 포함",
+      "recommendedVisitTime": "1시간",
       "highlights": [
-        "Ancient pagodas",
-        "Martial arts history",
-        "Buddhist heritage",
-        "Photography"
+        "고대 탑",
+        "무술 역사",
+        "불교 유산",
+        "사진 촬영"
       ],
-      "tips": "The pagodas date from Tang to Qing dynasties. Impressive number.",
+      "tips": "이 탑들은 당~청 왕조 시대에 지어졌습니다. 인상적인 수입니다.",
       "image": "/img/ext/63c40bfc596a.webp",
       "phone": "+86 037 9 0588 1027"
     },
     {
       "id": "luoyang-20",
       "name": "香山寺",
-      "nameEn": "Xiangshan Temple",
+      "nameEn": "향산사",
       "category": "cultural",
-      "description": "Beautiful hilltop Buddhist temple near Longmen Grottoes.",
-      "address": "Near Longmen Grottoes",
+      "description": "용문굴 근처의 아름다운 산꼭대기 불교寺院",
+      "address": "용문굴 근처",
       "coordinates": {
         "lat": 34.4522,
         "lng": 112.4722
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "Included in Longmen ticket",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "용문 티켓에 포함",
+      "recommendedVisitTime": "1-2시간",
       "highlights": [
-        "Hilltop views",
-        "Ancient temple",
-        "Peaceful",
-        "Longmen views"
+        "언덕 전경",
+        "고대 사찰",
+        "평온함",
+        "용문 전경"
       ],
-      "tips": "Great views of Longmen. Combine with grottoes visit. Peaceful.",
+      "tips": "용문의 좋은 전경. 굴 방문과 결합 추천. 평화롭습니다.",
       "image": "/img/ext/5efbc751ae6c.webp",
       "phone": "+86 037 9 5481 6602"
     },
     {
       "id": "luoyang-21",
       "name": "二里头遗址",
-      "nameEn": "Erlitou Site",
+      "nameEn": "이리투 유적",
       "category": "historical",
-      "description": "Ruins of the earliest Chinese civilization capital, over 3,800 years old.",
-      "address": "Yanshi County",
+      "description": "3,800년 이상의 역사를 가진 가장 오래된 중국 문명 수도의 유적",
+      "address": "연시현",
       "coordinates": {
         "lat": 34.7022,
         "lng": 112.7022
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2 hours",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "2시간",
       "highlights": [
-        "Ancient civilization",
-        "Bronze artifacts",
-        "Early China",
-        "Archaeological site"
+        "고대 문명",
+        "청동기 유물",
+        "고대 중국",
+        "고고학 유적"
       ],
-      "tips": "For history enthusiasts. Learn about China's earliest capitals.",
+      "tips": "역사 애호가를 위한 곳. 중국에서 가장 오래된 수도를 배울 수 있습니다.",
       "image": "/img/ext/a7dbece61631.webp",
       "phone": "+86 037 9 8187 8034"
     },
     {
       "id": "luoyang-22",
       "name": "天子驾六博物馆",
-      "nameEn": "Son of Heaven's Chariots Museum",
+      "nameEn": "천자 마차 박물관",
       "category": "cultural",
-      "description": "Museum housing ancient chariot burial pits from Eastern Zhou period.",
-      "address": "Zhouli Avenue",
+      "description": "동주 시대의 고대 마차 매장 구덩이를 전시한 박물관입니다.",
+      "address": "주리대로",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4422
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "openingHours": "09:00-17:00 (월요일 휴관)",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1시간",
       "highlights": [
-        "Chariot pits",
-        "Zhou dynasty",
-        "Ancient burial",
-        "Unique exhibits"
+        "마차 구덩이",
+        "주 왕조",
+        "고대 무덤",
+        "독특한 전시품"
       ],
-      "tips": "See actual chariot remains. Small but interesting.",
+      "tips": "실제 마차 유물을 볼 수 있습니다. 작지만 흥미로운 전시입니다.",
       "image": "/img/ext/c2bc1cb1cd7d.webp",
       "phone": "+86 037 9 2848 1093"
     },
     {
       "id": "luoyang-23",
       "name": "龙潭大峡谷",
-      "nameEn": "Longtan Grand Canyon",
+      "nameEn": "용탄 대협곡",
       "category": "natural",
-      "description": "Scenic canyon with waterfalls, pools and dramatic rock formations.",
-      "address": "Yanshi County",
+      "description": "폭포, 연못, 장엄한 암석 지형을 가진 경치 좋은 협곡입니다.",
+      "address": "연시현",
       "coordinates": {
         "lat": 34.5022,
         "lng": 112.4122
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "80¥",
-      "recommendedVisitTime": "4-5 hours",
+      "recommendedVisitTime": "4-5시간",
       "highlights": [
-        "Waterfalls",
-        "Canyon scenery",
-        "Hiking",
-        "Nature"
+        "폭포",
+        "협곡 경치",
+        "등산",
+        "자연"
       ],
-      "tips": "Full day trip from Luoyang. Wear hiking shoes. Great scenery.",
+      "tips": "로양에서 종일 여정입니다. 등산화 착용을 권장합니다. 훌륭한 풍경입니다.",
       "image": "/img/ext/20ba084c3257.webp",
       "phone": "+86 037 9 4689 7810"
     },
     {
       "id": "luoyang-24",
       "name": "西霞山",
-      "nameEn": "Xixia Mountain",
+      "nameEn": "서하산",
       "category": "natural",
-      "description": "Scenic mountain area with waterfalls and hiking trails.",
-      "address": "Mengjin County",
+      "description": "폭포와 등산로가 있는 경치 좋은 산악 지역입니다.",
+      "address": "孟津郡",
       "coordinates": {
         "lat": 34.8022,
         "lng": 112.6022
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "4-5 hours",
+      "recommendedVisitTime": "4-5시간",
       "highlights": [
-        "Mountain scenery",
-        "Waterfalls",
-        "Hiking",
-        "Nature"
+        "산경치",
+        "폭포",
+        "등산",
+        "자연"
       ],
-      "tips": "Great for nature lovers. Full day trip. Bring water and snacks.",
+      "tips": "자연 애호가에게 적합합니다. 종일 여정입니다. 물과 간식을 가져가세요.",
       "image": "/img/ext/90c2f10df87a.webp",
       "phone": "+86 037 9 8895 4680"
     },
     {
       "id": "longmen-grottoes",
       "name": "龙门石窟",
-      "nameEn": "Longmen Grottoes",
+      "nameEn": "룽먼 석굴",
       "category": "temple",
       "description": "世界文化遗产，中国四大石窟之一，有10万余尊佛像。",
       "address": "洛阳市洛龙区",
@@ -633,7 +633,7 @@
     {
       "id": "white-horse-temple",
       "name": "白马寺",
-      "nameEn": "White Horse Temple",
+      "nameEn": "백마사(白馬寺)",
       "category": "temple",
       "description": "中国第一古刹，佛教传入中国后兴建的第一座官办寺院。",
       "address": "洛阳市洛龙区",
@@ -656,7 +656,7 @@
     {
       "id": "laojun-mountain",
       "name": "老君山",
-      "nameEn": "Laojun Mountain",
+      "nameEn": "라오쥔 산",
       "category": "nature",
       "description": "道教名山，有金顶道观群，被誉为天下无双圣境。",
       "address": "洛阳市栾川县",
@@ -679,7 +679,7 @@
     {
       "id": "luoyang-museum",
       "name": "洛阳博物馆",
-      "nameEn": "Luoyang Museum",
+      "nameEn": "루양 박물관",
       "category": "museum",
       "description": "展示洛阳十三朝古都历史的博物馆。",
       "address": "洛阳市洛龙区",
@@ -702,7 +702,7 @@
     {
       "id": "lijing-gate",
       "name": "丽景门",
-      "nameEn": "Lijing Gate",
+      "nameEn": "리징 Gate",
       "category": "landmark",
       "description": "洛阳古城的标志性建筑，始建于隋代。",
       "address": "洛阳市老城区",
@@ -724,7 +724,7 @@
     {
       "id": "luoyang-old-street",
       "name": "洛阳老街",
-      "nameEn": "Luoyang Old Street",
+      "nameEn": "로양 고가 거리",
       "category": "street",
       "description": "洛阳最古老的商业街，有各种小吃和特产。",
       "address": "洛阳市老城区",
@@ -746,7 +746,7 @@
     {
       "id": "guanlin-temple",
       "name": "关林",
-      "nameEn": "Guanlin Temple",
+      "nameEn": "관림사",
       "category": "temple",
       "description": "中国唯一的冢、庙、林三祀合一的古建筑群，埋葬关羽首级。",
       "address": "洛阳市洛龙区",
@@ -768,7 +768,7 @@
     {
       "id": "tianzi-jialiu",
       "name": "天子驾六博物馆",
-      "nameEn": "Tianzi Jialiu Museum",
+      "nameEn": "천자 가류 박물관",
       "category": "museum",
       "description": "展示东周天子驾六车马坑的博物馆。",
       "address": "洛阳市西工区",
@@ -790,7 +790,7 @@
     {
       "id": "wangcheng-park",
       "name": "王城公园",
-      "nameEn": "Wangcheng Park",
+      "nameEn": "왕성 공원",
       "category": "park",
       "description": "洛阳最大的公园，有牡丹园和动物园。",
       "address": "洛阳市西工区",
@@ -812,7 +812,7 @@
     {
       "id": "luoyang-peony",
       "name": "中国国花园",
-      "nameEn": "China National Flower Garden",
+      "nameEn": "중국국화원",
       "category": "park",
       "description": "中国最大的牡丹观赏园，有1000多个品种。",
       "address": "洛阳市洛龙区",
@@ -834,7 +834,7 @@
     {
       "id": "shaolin-temple",
       "name": "少林寺",
-      "nameEn": "Shaolin Temple",
+      "nameEn": "少林寺",
       "category": "temple",
       "description": "中国佛教禅宗祖庭，少林武术发源地。",
       "address": "郑州市登封市",
@@ -857,7 +857,7 @@
     {
       "id": "songshan-mountain",
       "name": "嵩山",
-      "nameEn": "Mount Song",
+      "nameEn": "숭산",
       "category": "nature",
       "description": "五岳之中岳，有少林寺和嵩阳书院。",
       "address": "郑州市登封市",
@@ -880,7 +880,7 @@
     {
       "id": "yuntai-mountain",
       "name": "云台山",
-      "nameEn": "Yuntai Mountain",
+      "nameEn": "운대산",
       "category": "nature",
       "description": "世界地质公园，有红石峡和潭瀑峡。",
       "address": "焦作市修武县",
@@ -903,7 +903,7 @@
     {
       "id": "baiyun-mountain",
       "name": "白云山",
-      "nameEn": "Baiyun Mountain",
+      "nameEn": "백운산",
       "category": "nature",
       "description": "国家级森林公园，有玉皇顶和白云湖。",
       "address": "洛阳市嵩县",
@@ -926,7 +926,7 @@
     {
       "id": "jigong-mountain",
       "name": "鸡公山",
-      "nameEn": "Jigong Mountain",
+      "nameEn": "지공산",
       "category": "nature",
       "description": "中国四大避暑胜地之一，有万国建筑博览之称。",
       "address": "信阳市浉河区",
@@ -948,7 +948,7 @@
     {
       "id": "longtan-grand-canyon",
       "name": "龙潭大峡谷",
-      "nameEn": "Longtan Grand Canyon",
+      "nameEn": "용탄 대협곡",
       "category": "nature",
       "description": "世界地质公园，有罕见的水蚀地貌。",
       "address": "洛阳市新安县",
@@ -970,7 +970,7 @@
     {
       "id": "luoyang-water",
       "name": "洛阳水席",
-      "nameEn": "Luoyang Water Banquet",
+      "nameEn": "뤼양 수연회",
       "category": "street",
       "description": "洛阳传统名宴，有24道菜，以汤水为主。",
       "address": "洛阳市老城区",
@@ -992,7 +992,7 @@
     {
       "id": "baiyuan-mountain",
       "name": "白云山国家森林公园",
-      "nameEn": "Baiyunshan National Forest Park",
+      "nameEn": "백운산 국립삼림공원",
       "category": "nature",
       "description": "洛阳南部的天然氧吧。",
       "address": "洛阳市嵩县",
@@ -1014,7 +1014,7 @@
     {
       "id": "mang-mountain",
       "name": "邙山",
-      "nameEn": "Mang Mountain",
+      "nameEn": "맹산",
       "category": "nature",
       "description": "洛阳北部的山脉，有大量古墓群。",
       "address": "洛阳市孟津区",
@@ -1036,7 +1036,7 @@
     {
       "id": "luoyang-night",
       "name": "洛阳夜景",
-      "nameEn": "Luoyang Night View",
+      "nameEn": "루오양 야경",
       "category": "landmark",
       "description": "丽景门和洛邑古城的夜景灯光秀。",
       "address": "洛阳市老城区",
@@ -1058,7 +1058,7 @@
     {
       "id": "yanshi-ancient",
       "name": "偃师商城遗址",
-      "nameEn": "Yanshi Shang City Ruins",
+      "nameEn": "옌시 상왕성 유적",
       "category": "museum",
       "description": "商代早期都城遗址。",
       "address": "洛阳市偃师区",
@@ -1079,7 +1079,7 @@
     {
       "id": "luoyang-ancient-city",
       "name": "洛邑古城",
-      "nameEn": "Luoyi Ancient City",
+      "nameEn": "뤼이 고대도시",
       "category": "street",
       "description": "洛阳新开发的历史文化街区。",
       "address": "洛阳市老城区",
@@ -1101,7 +1101,7 @@
     {
       "id": "songyang-academy",
       "name": "嵩阳书院",
-      "nameEn": "Songyang Academy",
+      "nameEn": "송양학원",
       "category": "landmark",
       "description": "中国四大书院之一，有4500年历史的古柏树。",
       "address": "郑州市登封市",
@@ -1123,7 +1123,7 @@
     {
       "id": "zhongyue-temple",
       "name": "中岳庙",
-      "nameEn": "Zhongyue Temple",
+      "nameEn": "중악사",
       "category": "temple",
       "description": "五岳之中岳的主庙，有2000多年历史。",
       "address": "郑州市登封市",
@@ -1145,7 +1145,7 @@
     {
       "id": "luoyang-tomb",
       "name": "古墓博物馆",
-      "nameEn": "Luoyang Ancient Tomb Museum",
+      "nameEn": "뤼양 고대분묘 박물관",
       "category": "museum",
       "description": "中国最大的古墓博物馆，搬迁复原了25座古墓。",
       "address": "洛阳市老城区",
@@ -1167,23 +1167,23 @@
     {
       "id": "hebo-mountain",
       "name": "黄河小浪底",
-      "nameEn": "Yellow River Xiaolangdi",
+      "nameEn": "황허샤오랑디",
       "category": "nature",
-      "description": "황하 강에 위치한 대형 수리 시설로, 홍수가 방출되는 장엄한 광경을 감상할 수 있습니다.",
-      "address": "뤄양시 멍진구",
+      "description": "黄河上的大型水利枢纽，可观赏泄洪壮观景象。",
+      "address": "洛阳市孟津区",
       "coordinates": {
         "lat": 34.83,
         "lng": 112.33
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "40위안",
-      "recommendedVisitTime": "반나절",
+      "ticketPrice": "40元",
+      "recommendedVisitTime": "半天",
       "highlights": [
-        "수리 공학",
-        "홍수 조절",
-        "황하의 아름다운 경치"
+        "水利工程",
+        "泄洪",
+        "黄河风光"
       ],
-      "tips": "6월에서 7월의 홍수 배출 기간에 가장 장관을 이룹니다.",
+      "tips": "泄洪期6-7月最壮观。",
       "image": "/img/ext/a3c570f07eb5.webp",
       "phone": "+86 037 9 3024 2147"
     }
@@ -1192,29 +1192,29 @@
     {
       "id": "luoyang-1",
       "name": "真不同",
-      "nameEn": "Zhen Bu Tong",
-      "type": "local",
-      "cuisine": "Luoyang",
+      "nameEn": "전부통",
+      "type": "로컬",
+      "cuisine": "뤼양",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Near Lijing Gate, Old City",
+      "address": "구성 가까이 리징문",
       "coordinates": {
         "lat": 34.6722,
         "lng": 112.4422
       },
       "hours": "10:00-22:00",
-      "description": "Famous restaurant serving traditional Luoyang water banquet dishes.",
+      "description": "전통적인 뤼양 수연회 요리를 제공하는 유명한 식당",
       "dishHighlights": [
-        "Water banquet",
-        "Yanru noodles",
-        "Luoyang soup",
-        "Traditional dishes"
+        "수연회",
+        "연루면",
+        "뤼양탕",
+        "전통 요리"
       ],
       "tags": [
-        "local",
-        "famous",
-        "traditional",
-        "must-try"
+        "현지",
+        "유명",
+        "전통적인",
+        "반드시 시도해야 할"
       ],
       "imageUrl": "/img/ext/524211fc2c9f.webp",
       "phone": "+86 037 9 8493 9976"
@@ -1222,30 +1222,30 @@
     {
       "id": "luoyang-2",
       "name": "洛阳水席园",
-      "nameEn": "Luoyang Water Banquet Garden",
-      "type": "local",
-      "cuisine": "Luoyang",
+      "nameEn": "뤼양 수연회 정원",
+      "type": "로컬",
+      "cuisine": "뤼양",
       "avgPrice": 100,
       "rating": 4.6,
-      "address": "Old City area",
+      "address": "구성 지역",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "phone": "+86 379 6330 8888",
       "hours": "10:00-22:00",
-      "description": "Best place for authentic Luoyang water banquet.",
+      "description": "정통 뤼양 수宴(물 연회)을 맛볼 수 있는 최고의 장소입니다.",
       "dishHighlights": [
-        "Full water banquet",
-        "24 dishes",
-        "Traditional recipes",
-        "Cultural experience"
+        "정통 수宴(물 연회)",
+        "24가지 요리",
+        "전통 레시피",
+        "문화 체험"
       ],
       "tags": [
-        "local",
-        "water-banquet",
-        "traditional",
-        "famous"
+        "현지",
+        "수宴(물 연회)",
+        "전통적인",
+        "유명"
       ],
       "imageUrl": "/img/ext/d1fc4c0cfd3b.webp"
     },
@@ -1253,28 +1253,28 @@
       "id": "luoyang-3",
       "name": "十字街夜市",
       "nameEn": "크로스 스트리트 야시장",
-      "type": "local",
-      "cuisine": "Various",
+      "type": "로컬",
+      "cuisine": "다양한",
       "avgPrice": 30,
       "rating": 4.4,
-      "address": "Old City Cross Street",
+      "address": "구시가지 교차로",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "17:00-23:00",
-      "description": "Famous night market with variety of local and international food.",
+      "description": "다양한 현지 음식과 국제 음식으로 유명한 야시장입니다.",
       "dishHighlights": [
-        "Grilled skewers",
-        "Spicy hotpot",
-        "Fried rice",
-        "Local snacks"
+        "꼬치",
+        "매운 호트포",
+        "볶음밥",
+        "현지 간식"
       ],
       "tags": [
         "지역",
         "야시장",
         "길거리 음식",
-        "atmosphere"
+        "분위기"
       ],
       "imageUrl": "/img/ext/6636e42ed315.webp",
       "phone": "+86 037 9 7500 8337"
@@ -1282,29 +1282,29 @@
     {
       "id": "luoyang-4",
       "name": "南关杂肝汤",
-      "nameEn": "Nanguan Mixed Organ Soup",
-      "type": "local",
-      "cuisine": "Luoyang Snacks",
+      "nameEn": "남관 혼합 내장탕",
+      "type": "로컬",
+      "cuisine": "로양 스낵",
       "avgPrice": 20,
       "rating": 4.6,
-      "address": "Old City",
+      "address": "올드 시티",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "06:00-14:00",
-      "description": "Famous breakfast soup shop, local institution since 1920s.",
+      "description": "1920년대부터 이어져 온 유명한 아침 국수 가게입니다.",
       "dishHighlights": [
-        "Mixed organ soup",
-        "Pork liver",
-        "Lamb soup",
-        "Flatbread"
+        "혼합 내장탕",
+        "돼지 간",
+        "양고기 수프",
+        "플랫빵"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "famous",
-        "soup"
+        "현지",
+        "아침",
+        "유명",
+        "수프"
       ],
       "imageUrl": "/img/ext/4022d2ee25dd.webp",
       "phone": "+86 037 9 1638 9894"
@@ -1312,29 +1312,29 @@
     {
       "id": "luoyang-5",
       "name": "管记水席",
-      "nameEn": "Guan Ji Water Banquet",
-      "type": "local",
-      "cuisine": "Luoyang",
+      "nameEn": "관지 수宴",
+      "type": "로컬",
+      "cuisine": "뤼양",
       "avgPrice": 80,
       "rating": 4.7,
-      "address": "Old City",
+      "address": "올드 시티",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "10:00-22:00",
-      "description": "Authentic water banquet in family-run restaurant.",
+      "description": "가정식 레스토랑에서 제공하는 정통 수宴(물 연회)입니다.",
       "dishHighlights": [
-        "Traditional water banquet",
-        "Family recipes",
-        "Authentic taste",
-        "Cultural"
+        "전통 수宴(물 연회)",
+        "가정 레시피",
+        "정통 맛",
+        "문화"
       ],
       "tags": [
-        "local",
-        "water-banquet",
-        "family-run",
-        "traditional"
+        "현지",
+        "수宴(물 연회)",
+        "가족 경영",
+        "전통적인"
       ],
       "imageUrl": "/img/ext/5604ea0e5fb8.webp",
       "phone": "+86 037 9 8490 6314"
@@ -1342,28 +1342,28 @@
     {
       "id": "luoyang-6",
       "name": "东关周记",
-      "nameEn": "Dongguan Zhou Ji",
-      "type": "local",
-      "cuisine": "Luoyang",
+      "nameEn": "둥관저우지 (동관 주씨)",
+      "type": "로컬",
+      "cuisine": "뤼양",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "East Gate area",
+      "address": "동문 지구",
       "coordinates": {
         "lat": 34.6722,
         "lng": 112.4622
       },
       "hours": "07:00-20:00",
-      "description": "Popular for traditional Luoyang noodles and soup.",
+      "description": "전통 뤼양 면 요리와 국수로 유명합니다.",
       "dishHighlights": [
-        "Yanru noodles",
-        "Hot and sour noodles",
-        "Noodles with toppings"
+        "연루면",
+        "매운酸한면",
+        "토핑이 들어간 면"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "traditional",
-        "popular"
+        "현지",
+        "면요리",
+        "전통적인",
+        "인기"
       ],
       "imageUrl": "/img/ext/ff1d05539a86.webp",
       "phone": "+86 037 9 5397 2759"
@@ -1371,28 +1371,28 @@
     {
       "id": "luoyang-7",
       "name": "牡丹燕菜",
-      "nameEn": "Peony Yan Cai",
-      "type": "local",
-      "cuisine": "Luoyang",
+      "nameEn": "모란연채",
+      "type": "로컬",
+      "cuisine": "뤼양",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Various restaurants",
+      "address": "각종 레스토랑",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "10:00-22:00",
-      "description": "Famous Luoyang dish made from taro and local ingredients.",
+      "description": "토란과 현지 재료로 만든 유명한 뤼양 요리",
       "dishHighlights": [
-        "Peony yan cai",
-        "Taro dish",
-        "Traditional recipe"
+        "모란연채",
+        "토란 요리",
+        "전통 레시피"
       ],
       "tags": [
-        "local",
-        "famous",
-        "traditional",
-        "luoyang-specialty"
+        "현지",
+        "유명",
+        "전통적인",
+        "뤼양 전문"
       ],
       "imageUrl": "/img/ext/42709ea23cc6.webp",
       "phone": "+86 037 9 6915 7644"
@@ -1400,29 +1400,29 @@
     {
       "id": "luoyang-8",
       "name": "牛肉汤",
-      "nameEn": "Beef Soup",
-      "type": "local",
-      "cuisine": "Luoyang Snacks",
+      "nameEn": "소고기탕",
+      "type": "로컬",
+      "cuisine": "로양 스낵",
       "avgPrice": 20,
       "rating": 4.5,
-      "address": "Street vendors",
+      "address": "길거리 노점",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "06:00-14:00",
-      "description": "Rich beef soup - popular breakfast in Luoyang.",
+      "description": "진한 소고기 수프 - 뤼양에서 인기있는 아침 식사",
       "dishHighlights": [
-        "Beef soup",
-        "Beef brisket",
-        "Flatbread",
-        "Cilantro"
+        "소고기탕",
+        "소고기 안심",
+        "플랫빵",
+        "고수"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "soup",
-        "popular"
+        "현지",
+        "아침",
+        "수프",
+        "인기"
       ],
       "imageUrl": "/img/ext/e9c9230f54bb.webp",
       "phone": "+86 037 9 1553 8323"
@@ -1430,28 +1430,28 @@
     {
       "id": "luoyang-9",
       "name": "烫面角",
-      "nameEn": "Tang Mian Jiao",
-      "type": "local",
-      "cuisine": "Luoyang Snacks",
+      "nameEn": "탕면교자",
+      "type": "로컬",
+      "cuisine": "로양 스낵",
       "avgPrice": 25,
       "rating": 4.5,
-      "address": "Old City",
+      "address": "올드 시티",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "07:00-19:00",
-      "description": "Steamed dumplings with hot filling - Luoyang specialty.",
+      "description": "뜨거운馅이 들어간 찐 만두 - 뤼양 전문",
       "dishHighlights": [
-        "Hot filling dumplings",
-        "Pork filling",
-        "Vegetable filling"
+        "뜨거운馅 만두",
+        "돼지고기馅",
+        "채소馅"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "famous",
-        "dumplings"
+        "현지",
+        "스낵",
+        "유명",
+        "딤섬"
       ],
       "imageUrl": "/img/ext/9f805a172bcb.webp",
       "phone": "+86 037 9 0215 5434"
@@ -1459,58 +1459,58 @@
     {
       "id": "luoyang-10",
       "name": "洛阳酒家",
-      "nameEn": "Luoyang Restaurant",
-      "type": "fine",
-      "cuisine": "Luoyang",
+      "nameEn": "뤼양 레스토랑",
+      "type": "고급",
+      "cuisine": "뤼양",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "City center",
+      "address": "시내 중심가",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "phone": "+86 379 6330 8888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "High-end restaurant serving refined Luoyang cuisine.",
+      "description": "정교한 뤼양 요리를 제공하는 고급 레스토랑",
       "dishHighlights": [
-        "Refined water banquet",
-        "Peony dishes",
-        "Traditional recipes",
-        "Elegant"
+        "정교한 수향 연회",
+        "모란 요리",
+        "전통 레시피",
+        "우아한"
       ],
       "tags": [
-        "fine-dining",
-        "luoyang-cuisine",
-        "elegant",
-        "special-occasion"
+        "고급 식당",
+        "루오양 요리",
+        "우아한",
+        "특별한 날"
       ],
       "imageUrl": "/img/ext/3876a641f74a.png"
     },
     {
       "id": "luoyang-11",
       "name": "少林素饼",
-      "nameEn": "Shaolin Vegetarian pastries",
-      "type": "local",
-      "cuisine": "Snacks",
+      "nameEn": "소림 채소 페이스트리",
+      "type": "로컬",
+      "cuisine": "간식",
       "avgPrice": 20,
       "rating": 4.4,
-      "address": "Near Shaolin Temple",
+      "address": "소림사 근처",
       "coordinates": {
         "lat": 34.5022,
         "lng": 112.9322
       },
       "hours": "08:00-18:00",
-      "description": "Famous vegetarian pastries from Shaolin area.",
+      "description": "소림 지역에서 유명한 채소 페이스트리.",
       "dishHighlights": [
-        "Vegetarian pastries",
-        "Various flavors",
-        "Temple area"
+        "채소 페이스트리",
+        "다양한 맛",
+        "사찰 지역"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "souvenir",
-        "shaolin"
+        "현지",
+        "간식",
+        "기념품",
+        "소림"
       ],
       "imageUrl": "/img/ext/75cc963484f4.webp",
       "phone": "+86 037 9 7697 8443"
@@ -1518,29 +1518,29 @@
     {
       "id": "luoyang-12",
       "name": "嵩山土菜",
-      "nameEn": "Songshan Local Dishes",
-      "type": "local",
-      "cuisine": "Local",
+      "nameEn": "송산 현지 요리",
+      "type": "로컬",
+      "cuisine": "현지",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Near Songshan",
+      "address": "송산 근처",
       "coordinates": {
         "lat": 34.5022,
         "lng": 112.9322
       },
       "hours": "10:00-22:00",
-      "description": "Mountain village restaurant with local dishes.",
+      "description": "현지 요리가 있는 산골 마을 식당",
       "dishHighlights": [
-        "Forest mushrooms",
-        "Wild vegetables",
-        "Mountain lamb",
-        "Local rice"
+        "숲 버섯",
+        "야생 채소",
+        "산양",
+        "현지 쌀"
       ],
       "tags": [
-        "local",
-        "mountain",
-        "home-style",
-        "fresh"
+        "현지",
+        "산",
+        "가정식",
+        "신선"
       ],
       "imageUrl": "/img/ext/76c4426392c8.webp",
       "phone": "+86 037 9 3784 2208"
@@ -1548,29 +1548,29 @@
     {
       "id": "luoyang-13",
       "name": "羊肉汤",
-      "nameEn": "Lamb Soup",
-      "type": "local",
-      "cuisine": "Luoyang Snacks",
+      "nameEn": "양고기탕",
+      "type": "로컬",
+      "cuisine": "료양 스낵",
       "avgPrice": 25,
       "rating": 4.5,
-      "address": "Various locations",
+      "address": "다양한 위치",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "06:00-14:00",
-      "description": "Rich lamb soup - another popular breakfast option.",
+      "description": "진한 양고기 수프 - 인기 있는 또 다른 아침 옵션",
       "dishHighlights": [
-        "Lamb soup",
-        "Lamb ribs",
-        "Flatbread",
-        "Herbs"
+        "양고기 수프",
+        "양갈비",
+        "플랫빵",
+        "허브"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "soup",
-        "popular"
+        "로컬",
+        "아침",
+        "수프",
+        "인기"
       ],
       "imageUrl": "/img/ext/3b6c1cce4284.webp",
       "phone": "+86 037 9 0215 5671"
@@ -1578,29 +1578,29 @@
     {
       "id": "luoyang-14",
       "name": "糊涂面",
-      "nameEn": "Muddy Noodles",
-      "type": "local",
-      "cuisine": "Luoyang Snacks",
+      "nameEn": "머디 누들스",
+      "type": "로컬",
+      "cuisine": "로양 스낵",
       "avgPrice": 15,
       "rating": 4.4,
-      "address": "Old City vendors",
+      "address": "구시가지 노점",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "全天",
-      "description": "Thick noodles with vegetables - simple local dish.",
+      "description": "채소가 들어간 두꺼운 면 - 간단한 현지 요리",
       "dishHighlights": [
-        "Thick noodles",
-        "Vegetables",
-        "Peanut sauce",
-        "Simple"
+        "두꺼운 면",
+        "야채",
+        "땅콩 소스",
+        "심플"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "budget",
-        "simple"
+        "현지",
+        "스낵",
+        "저렴",
+        "간단한"
       ],
       "imageUrl": "/img/ext/437d6161db32.webp",
       "phone": "+86 037 9 8362 4980"
@@ -1608,29 +1608,29 @@
     {
       "id": "luoyang-15",
       "name": "洛阳汤面",
-      "nameEn": "Luoyang Noodle Soup",
-      "type": "local",
-      "cuisine": "Noodles",
+      "nameEn": "루오양 국수",
+      "type": "로컬",
+      "cuisine": "국수",
       "avgPrice": 20,
       "rating": 4.5,
-      "address": "Various locations",
+      "address": "다양한 위치",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "06:00-20:00",
-      "description": "Various noodle soups specific to Luoyang.",
+      "description": "루오양 특유의 다양한 국수 요리",
       "dishHighlights": [
-        "Noodle soup",
-        "Various toppings",
-        "Hot and sour",
-        "Spicy"
+        "국수",
+        "다양한 토핑",
+        "신辣",
+        "매운"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "soup",
-        "popular"
+        "현지",
+        "면요리",
+        "수프",
+        "인기"
       ],
       "imageUrl": "/img/ext/ac60f6389624.webp",
       "phone": "+86 037 9 6649 5105"
@@ -1638,29 +1638,29 @@
     {
       "id": "luoyang-16",
       "name": "锅贴",
-      "nameEn": "Guo Tie (Pan-fried Dumplings)",
-      "type": "local",
-      "cuisine": "Luoyang Snacks",
+      "nameEn": "구오톈 (반전 만두)",
+      "type": "로컬",
+      "cuisine": "로양 스낵",
       "avgPrice": 25,
       "rating": 4.5,
-      "address": "Night market",
+      "address": "야시장",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "17:00-23:00",
-      "description": "Pan-fried dumplings - popular street food.",
+      "description": "반전 만두 - 인기 있는 길거리 음식",
       "dishHighlights": [
-        "Pan-fried dumplings",
-        "Crispy bottom",
-        "Pork filling",
-        "Vegetables"
+        "팬이 구운 만두",
+        "바삭한 바닥",
+        "돼지고기馅",
+        "야채"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "street-food",
-        "popular"
+        "현지",
+        "스낵",
+        "스트리트푸드",
+        "인기"
       ],
       "imageUrl": "/img/ext/1b3180783f6a.webp",
       "phone": "+86 037 9 2876 3541"
@@ -1668,29 +1668,29 @@
     {
       "id": "luoyang-17",
       "name": "炒凉粉",
-      "nameEn": "Stir-fried Liangfen",
-      "type": "local",
-      "cuisine": "Luoyang Snacks",
+      "nameEn": "소奋 린분",
+      "type": "로컬",
+      "cuisine": "로양 스낵",
       "avgPrice": 15,
       "rating": 4.4,
-      "address": "Night market",
+      "address": "야시장",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "17:00-23:00",
-      "description": "Stir-fried rice jelly - famous Luoyang street snack.",
+      "description": "볶음 린분 - 유명한 루오양 길거리 간식",
       "dishHighlights": [
-        "Stir-fried rice jelly",
-        "Soy sauce",
-        "Spicy",
-        "Crispy"
+        "볶음 린분",
+        "간장",
+        "매운",
+        "바삭한"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "street-food",
-        "famous"
+        "현지",
+        "스낵",
+        "스트리트푸드",
+        "유명"
       ],
       "imageUrl": "/img/ext/20d74101f810.webp",
       "phone": "+86 037 9 0655 2189"
@@ -1698,29 +1698,29 @@
     {
       "id": "luoyang-18",
       "name": "不翻汤",
-      "nameEn": "Bu Fan Tang",
-      "type": "local",
-      "cuisine": "Luoyang Snacks",
+      "nameEn": "부반탕",
+      "type": "로컬",
+      "cuisine": "로양 스낵",
       "avgPrice": 20,
       "rating": 4.5,
-      "address": "Old City",
+      "address": "올드 시티",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "10:00-22:00",
-      "description": "Pancake and soup combination - traditional Luoyang snack.",
+      "description": "펜케이크와 국수 조합 - 전통적인 루오양 간식",
       "dishHighlights": [
-        "Pancake in soup",
-        "Special sauce",
-        "Lung and tofu skin",
-        "Traditional"
+        "국수에 펜케이크",
+        "특제 소스",
+        "폐와 두부 피",
+        "전통"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "traditional",
-        "luoyang-specialty"
+        "현지",
+        "스낵",
+        "전통적인",
+        "뤼양 전문"
       ],
       "imageUrl": "/img/ext/0035c7b9518d.webp",
       "phone": "+86 037 9 2070 4044"
@@ -1728,59 +1728,59 @@
     {
       "id": "luoyang-19",
       "name": "鲤鱼跃龙门",
-      "nameEn": "Carp Jumping Dragon Gate",
-      "type": "local",
-      "cuisine": "Luoyang",
+      "nameEn": "용문호를 뛰어넘는 잉어",
+      "type": "로컬",
+      "cuisine": "뤼양",
       "avgPrice": 120,
       "rating": 4.6,
-      "address": "Near Longmen Grottoes",
+      "address": "용문굴 근처",
       "coordinates": {
         "lat": 34.4522,
         "lng": 112.4722
       },
       "phone": "+86 379 6590 8888",
       "hours": "10:00-22:00",
-      "description": "Famous dish of carp prepared in traditional style.",
+      "description": "전통 방식으로 조리한 유명한 잉어 요리",
       "dishHighlights": [
-        "Carp dish",
-        "Traditional recipe",
-        "Named after legend",
-        "Local fish"
+        "잉어 요리",
+        "전통 레시피",
+        "전설에서 유래",
+        "현지 생선"
       ],
       "tags": [
-        "local",
-        "famous",
-        "fish",
-        "special-occasion"
+        "현지",
+        "유명",
+        "생선",
+        "특별한 자리"
       ],
       "imageUrl": "/img/ext/bb8230fbc1f5.webp"
     },
     {
       "id": "luoyang-20",
       "name": "豆腐汤",
-      "nameEn": "Tofu Soup",
-      "type": "local",
-      "cuisine": "Luoyang Snacks",
+      "nameEn": "두부국",
+      "type": "로컬",
+      "cuisine": "로양 스낵",
       "avgPrice": 15,
       "rating": 4.4,
-      "address": "Street vendors",
+      "address": "길거리 노점",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "06:00-14:00",
-      "description": "Light tofu soup - popular breakfast.",
+      "description": "가벼운 두부국 - 인기있는 아침 식사.",
       "dishHighlights": [
-        "Tofu soup",
-        "Vegetable soup",
-        "Light",
-        "Healthy"
+        "두부국",
+        "채소 수프",
+        "가벼운",
+        "건강한"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "soup",
-        "vegetarian"
+        "현지",
+        "아침",
+        "수프",
+        "채식"
       ],
       "imageUrl": "/img/ext/981918437087.webp",
       "phone": "+86 037 9 6648 7685"
@@ -1788,29 +1788,29 @@
     {
       "id": "luoyang-21",
       "name": "炸麻球",
-      "nameEn": "Fried Sesame Balls",
-      "type": "local",
-      "cuisine": "Dessert",
+      "nameEn": "튀긴 참깨丸子",
+      "type": "로컬",
+      "cuisine": "디저트",
       "avgPrice": 10,
       "rating": 4.3,
-      "address": "Street vendors",
+      "address": "길거리 노점",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "全天",
-      "description": "Crispy sesame ball dessert - common snack.",
+      "description": "바삭한 참깨丸子 디저트 - 흔한 간식.",
       "dishHighlights": [
-        "Sesame balls",
-        "Sweet filling",
-        "Crispy",
-        "Traditional"
+        "참깨丸子",
+        "달콤한馅",
+        "바삭한",
+        "전통"
       ],
       "tags": [
-        "local",
-        "dessert",
-        "snacks",
-        "traditional"
+        "현지",
+        "디저트",
+        "스낵",
+        "전통적인"
       ],
       "imageUrl": "/img/ext/58d532e5bd77.webp",
       "phone": "+86 037 9 9388 2894"
@@ -1818,29 +1818,29 @@
     {
       "id": "luoyang-22",
       "name": "蜜汁糖藕",
-      "nameEn": "Honey Glazed Lotus Root",
-      "type": "local",
-      "cuisine": "Dessert",
+      "nameEn": "꿀절임 연근",
+      "type": "로컬",
+      "cuisine": "디저트",
       "avgPrice": 20,
       "rating": 4.5,
-      "address": "Old City",
+      "address": "올드 시티",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "09:00-21:00",
-      "description": "Sweet lotus root - traditional dessert.",
+      "description": "단연근 - 전통 디저트.",
       "dishHighlights": [
-        "Glazed lotus root",
-        "Sweet",
-        "Honey",
-        "Traditional"
+        "절임 연근",
+        "단",
+        "꿀",
+        "전통"
       ],
       "tags": [
-        "local",
-        "dessert",
-        "sweet",
-        "traditional"
+        "현지",
+        "디저트",
+        "달콤",
+        "전통적인"
       ],
       "imageUrl": "/img/ext/6a7d5eb76c1d.webp",
       "phone": "+86 037 9 3545 8486"
@@ -1848,29 +1848,29 @@
     {
       "id": "luoyang-23",
       "name": "灌汤包",
-      "nameEn": "Soup Dumplings",
-      "type": "local",
-      "cuisine": "Luoyang",
+      "nameEn": "만두 수프",
+      "type": "로컬",
+      "cuisine": "뤼양",
       "avgPrice": 40,
       "rating": 4.6,
-      "address": "Various locations",
+      "address": "다양한 위치",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "07:00-20:00",
-      "description": "Juicy soup dumplings - popular throughout China.",
+      "description": "육즙이 풍부한 만두 - 중국 전역에서 인기.",
       "dishHighlights": [
-        "Soup dumplings",
-        "Pork filling",
-        "Hot broth",
-        "Delicate"
+        "수육만두",
+        "돼지고기馅",
+        "뜨거운 육수",
+        "정교한"
       ],
       "tags": [
-        "local",
-        "dumplings",
-        "popular",
-        "soup"
+        "현지",
+        "딤섬",
+        "인기",
+        "수프"
       ],
       "imageUrl": "/img/ext/abe41a7612d1.webp",
       "phone": "+86 037 9 4141 7542"
@@ -1878,29 +1878,29 @@
     {
       "id": "luoyang-24",
       "name": "老城饺子",
-      "nameEn": "Old City Dumplings",
-      "type": "local",
-      "cuisine": "Dumplings",
+      "nameEn": "고성 만두",
+      "type": "로컬",
+      "cuisine": "만두",
       "avgPrice": 40,
       "rating": 4.5,
-      "address": "Old City",
+      "address": "올드 시티",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "10:00-22:00",
-      "description": "Handmade dumplings with various traditional fillings.",
+      "description": "다양한 전통陷落을 넣은 수제 만두.",
       "dishHighlights": [
-        "Handmade dumplings",
-        "Various fillings",
-        "Traditional",
-        "Fresh"
+        "수제 만두",
+        "다양한陷落",
+        "전통",
+        "신선한"
       ],
       "tags": [
-        "local",
-        "dumplings",
-        "handmade",
-        "traditional"
+        "현지",
+        "딤섬",
+        "수제",
+        "전통적인"
       ],
       "imageUrl": "/img/ext/3a727a953eca.webp",
       "phone": "+86 037 9 4596 1338"
@@ -1908,29 +1908,29 @@
     {
       "id": "luoyang-25",
       "name": "洛阳大排档",
-      "nameEn": "Luoyang Night Food Stalls",
-      "type": "local",
-      "cuisine": "Various",
+      "nameEn": "로양 야시장",
+      "type": "로컬",
+      "cuisine": "다양한",
       "avgPrice": 40,
       "rating": 4.3,
-      "address": "Night market areas",
+      "address": "야시장 지역",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "17:00-02:00",
-      "description": "Various food stalls open late at night.",
+      "description": "심야에 운영하는 다양한 음식 포장마차",
       "dishHighlights": [
-        "Late night food",
-        "Various options",
-        "Atmosphere",
-        "Social"
+        "야식",
+        "다양한 선택",
+        "분위기",
+        "사교"
       ],
       "tags": [
-        "local",
-        "night-market",
-        "late-night",
-        "variety"
+        "현지",
+        "야시장",
+        "심야",
+        "다양한"
       ],
       "imageUrl": "/img/ext/d48e7dcd448f.webp",
       "phone": "+86 037 9 2618 5649"
@@ -1939,7 +1939,7 @@
       "id": "luoyang-26",
       "name": "老街锅贴",
       "nameEn": "老街锅贴 (锅贴)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "锅贴",
       "avgPrice": 94,
       "rating": 4.4,
@@ -1968,7 +1968,7 @@
       "id": "luoyang-28",
       "name": "老街浆面条",
       "nameEn": "老街浆面条 (浆面条)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "浆面条",
       "avgPrice": 148,
       "rating": 4,
@@ -1996,8 +1996,8 @@
     {
       "id": "luoyang-30",
       "name": "老字号水席",
-      "nameEn": "노자오하오 수席 (루양 전통 물 요리 전문점)",
-      "type": "street",
+      "nameEn": "老字号水席 (水席)",
+      "type": "길거리",
       "cuisine": "水席",
       "avgPrice": 55,
       "rating": 4.6,
@@ -2011,13 +2011,13 @@
       "description": "洛阳本地人推荐的水席店，味道正宗，价格实惠",
       "dishHighlights": [
         "锅贴",
-        "소고기탕 (쇠고기로 만든 국물 요리)",
-        "수席 (루양 전통의 물 요리 코스)"
+        "牛肉汤",
+        "水席"
       ],
       "tags": [
-        "야시장",
-        "인기 포토 스팟",
-        "분식"
+        "夜市",
+        "网红打卡",
+        "小吃"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/9782cd5b317b.webp"
@@ -2026,18 +2026,18 @@
       "id": "luoyang-32",
       "name": "巷子锅贴",
       "nameEn": "巷子锅贴 (锅贴)",
-      "type": "street",
-      "cuisine": "궈티에 (중국식 군만두)",
+      "type": "길거리",
+      "cuisine": "锅贴",
       "avgPrice": 60,
       "rating": 4.6,
-      "address": "뤄양시 신성구 미식거리 87호",
+      "address": "洛阳市新城区美食街87号",
       "coordinates": {
         "lat": 34.67,
         "lng": 112.4636
       },
       "phone": "+86 010 94539714",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "뤄양 현지인이 추천하는 궈티에 전문점으로, 전통적인 맛을 자랑하며 가격도 저렴합니다.",
+      "description": "洛阳本地人推荐的锅贴店，味道正宗，价格实惠",
       "dishHighlights": [
         "水席",
         "浆面条",
@@ -2055,7 +2055,7 @@
       "id": "luoyang-34",
       "name": "地道不翻汤",
       "nameEn": "地道不翻汤 (不翻汤)",
-      "type": "street",
+      "type": "길거리",
       "cuisine": "不翻汤",
       "avgPrice": 41,
       "rating": 4.5,
@@ -2066,16 +2066,16 @@
       },
       "phone": "+86 010 47461563",
       "hours": "09:00-21:00",
-      "description": "로양 현지인 추천의 부판탕 전문점, 정통 맛, 합리적 가격",
+      "description": "洛阳本地人推荐的不翻汤店，味道正宗，价格实惠",
       "dishHighlights": [
-        "장면떡",
-        "고贴",
-        "부판탕"
+        "浆面条",
+        "锅贴",
+        "不翻汤"
       ],
       "tags": [
-        "노변 식품 판매점",
-        "인스타그램 명소",
-        "야시장"
+        "路边摊",
+        "网红打卡",
+        "夜市"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/185f9864bcf6.webp"
@@ -2083,9 +2083,9 @@
     {
       "id": "luoyang-36",
       "name": "地道牛肉汤",
-      "nameEn": "정통 소고기탕 (牛肉湯)",
-      "type": "local",
-      "cuisine": "소고기탕",
+      "nameEn": "地道牛肉汤 (牛肉汤)",
+      "type": "로컬",
+      "cuisine": "牛肉汤",
       "avgPrice": 106,
       "rating": 4.6,
       "address": "洛阳市老城区美食街164号",
@@ -2095,16 +2095,16 @@
       },
       "phone": "+86 010 73976922",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "로양 현지인 추천의 소고기탕 전문점, 정통 맛, 합리적 가격",
+      "description": "洛阳本地人推荐的牛肉汤店，味道正宗，价格实惠",
       "dishHighlights": [
-        "소고기탕",
-        "장면条",
-        "부반탕"
+        "牛肉汤",
+        "浆面条",
+        "不翻汤"
       ],
       "tags": [
-        "히든 푸드",
-        "현지인Favorite",
-        "가성비 Good"
+        "隐藏美食",
+        "本地人爱去",
+        "性价比高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/74eefa5b9737.webp"
@@ -2112,28 +2112,28 @@
     {
       "id": "luoyang-38",
       "name": "正宗牛肉汤",
-      "nameEn": "정통 소고기탕 (牛肉汤)",
-      "type": "cafe",
-      "cuisine": "소고기탕",
+      "nameEn": "正宗牛肉汤 (牛肉汤)",
+      "type": "카페",
+      "cuisine": "牛肉汤",
       "avgPrice": 77,
       "rating": 4.2,
-      "address": "로양시 라오청구 메이시거리 124번지",
+      "address": "洛阳市老城区美食街124号",
       "coordinates": {
         "lat": 34.6662,
         "lng": 112.4255
       },
       "phone": "+86 010 69098178",
       "hours": "09:00-21:00",
-      "description": "로양 현지인이 추천하는 소고기탕집, 맛이 정통이고 가격이 착함",
+      "description": "洛阳本地人推荐的牛肉汤店，味道正宗，价格实惠",
       "dishHighlights": [
-        "수시(물 찌개)",
-        "고추전(锅贴)",
-        "부반탕"
+        "水席",
+        "锅贴",
+        "不翻汤"
       ],
       "tags": [
-        "커피",
-        "아티스틱",
-        "조용한"
+        "咖啡",
+        "文艺",
+        "安静"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/1ef7f7b9c73d.webp"
@@ -2141,28 +2141,28 @@
     {
       "id": "luoyang-40",
       "name": "街边水席",
-      "nameEn": "가변수席 (수석)",
-      "type": "local",
-      "cuisine": "수석",
+      "nameEn": "街边水席 (水席)",
+      "type": "로컬",
+      "cuisine": "水席",
       "avgPrice": 105,
       "rating": 4.1,
-      "address": "로양시 시심부구 미식거리 113번지",
+      "address": "洛阳市市中心区美食街113号",
       "coordinates": {
         "lat": 34.6627,
         "lng": 112.4404
       },
       "phone": "+86 010 67521067",
       "hours": "17:00-02:00",
-      "description": "로양 현지인이 추천하는 수석 전문점, 맛이authentic하고 가격이 합리적",
+      "description": "洛阳本地人推荐的水席店，味道正宗，价格实惠",
       "dishHighlights": [
-        "장면배",
-        "소고기탕",
-        "고추"
+        "浆面条",
+        "牛肉汤",
+        "锅贴"
       ],
       "tags": [
-        "가정식",
-        "숨겨진 미식",
-        "동네 전통 가게"
+        "家常菜",
+        "隐藏美食",
+        "社区老店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/881a36a46c10.webp"
@@ -2170,28 +2170,28 @@
     {
       "id": "luoyang-42",
       "name": "老洛阳锅贴",
-      "nameEn": "로양 고추 (고추)",
-      "type": "local",
-      "cuisine": "고추",
+      "nameEn": "老洛阳锅贴 (锅贴)",
+      "type": "로컬",
+      "cuisine": "锅贴",
       "avgPrice": 102,
       "rating": 4.3,
-      "address": "로양시 신성구 미식거리 55번지",
+      "address": "洛阳市新城区美食街55号",
       "coordinates": {
         "lat": 34.6705,
         "lng": 112.4554
       },
       "phone": "+86 010 89625120",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "루오양 현지인이 추천하는 군침이 도는 요구르트 튀김 가게, 얼큰한 맛, 합리적인 가격",
+      "description": "洛阳本地人推荐的锅贴店，味道正宗，价格实惠",
       "dishHighlights": [
-        "수시(물고기 요리)",
-        "부판탕(밀가루 반죽국)",
-        "군침이 도는 요구르트 튀김"
+        "水席",
+        "不翻汤",
+        "锅贴"
       ],
       "tags": [
-        "현지인 사랑",
-        "가정식 요리",
-        "유명 가게"
+        "本地人爱去",
+        "家常菜",
+        "老字号"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/696fe2932275.webp"
@@ -2199,27 +2199,27 @@
     {
       "id": "luoyang-44",
       "name": "地道不翻汤",
-      "nameEn": "진정한 부판탕 (부판탕)",
-      "type": "local",
-      "cuisine": "부판탕",
+      "nameEn": "地道不翻汤 (不翻汤)",
+      "type": "로컬",
+      "cuisine": "不翻汤",
       "avgPrice": 149,
       "rating": 4,
-      "address": "루오양시 시심부구 미식거리 4번지",
+      "address": "洛阳市市中心区美食街4号",
       "coordinates": {
         "lat": 34.698,
         "lng": 112.4955
       },
       "phone": "+86 010 68276546",
       "hours": "10:00-22:00",
-      "description": "루오양 현지인이 추천하는 부판탕 가게, 얼큰한 맛, 합리적인 가격",
+      "description": "洛阳本地人推荐的不翻汤店，味道正宗，价格实惠",
       "dishHighlights": [
-        "군침이 도는 요구르트 튀김",
-        "부판탕",
-        "쇠고기탕"
+        "锅贴",
+        "不翻汤",
+        "牛肉汤"
       ],
       "tags": [
-        "유명 브랜드",
-        "가성비 좋음",
+        "老字号",
+        "性价比高",
         "家常菜"
       ],
       "diamond": 0,
@@ -2228,28 +2228,28 @@
     {
       "id": "luoyang-46",
       "name": "地道牛肉汤",
-      "nameEn": "현지风味牛肉汤 (牛肉汤)",
-      "type": "local",
-      "cuisine": "쇠고기탕",
+      "nameEn": "地道牛肉汤 (牛肉汤)",
+      "type": "로컬",
+      "cuisine": "牛肉汤",
       "avgPrice": 100,
       "rating": 4.9,
-      "address": "로양시 신청구 미식거리 105번지",
+      "address": "洛阳市新城区美食街105号",
       "coordinates": {
         "lat": 34.6382,
         "lng": 112.4946
       },
       "phone": "+86 010 57852959",
       "hours": "06:00-14:00",
-      "description": "로양 현지인이 추천하는 쇠고기탕 집, 맛이 진짜이고 가격이 합리적입니다",
+      "description": "洛阳本地人推荐的牛肉汤店，味道正宗，价格实惠",
       "dishHighlights": [
-        "부반탕",
-        "쇠고기탕",
-        "짱면티아오"
+        "不翻汤",
+        "牛肉汤",
+        "浆面条"
       ],
       "tags": [
-        "동네 오래된 가게",
-        "가성비 좋음",
-        "유명 브랜드"
+        "社区老店",
+        "性价比高",
+        "老字号"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/2b8b871b136e.webp"
@@ -2258,8 +2258,8 @@
       "id": "luoyang-48",
       "name": "洛阳味浆面条",
       "nameEn": "洛阳味浆面条 (浆面条)",
-      "type": "street",
-      "cuisine": "쟝밍투오면",
+      "type": "길거리",
+      "cuisine": "浆面条",
       "avgPrice": 32,
       "rating": 4.4,
       "address": "洛阳市新城区美食街25号",
@@ -2269,16 +2269,16 @@
       },
       "phone": "+86 010 80378031",
       "hours": "06:00-14:00",
-      "description": "로양 현지인들이 추천하는 쟝밍투오면 가게로, 진정한 맛과 합리적인 가격이 특징입니다",
+      "description": "洛阳本地人推荐的浆面条店，味道正宗，价格实惠",
       "dishHighlights": [
-        "군때",
-        "우육탕",
-        "부반탕"
+        "锅贴",
+        "牛肉汤",
+        "不翻汤"
       ],
       "tags": [
-        "인스타그램 감성",
-        "야시",
-        "분식"
+        "网红打卡",
+        "夜市",
+        "小吃"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/05d2762f4e2b.webp"
@@ -2287,8 +2287,8 @@
       "id": "luoyang-50",
       "name": "老字号水席",
       "nameEn": "老字号水席 (水席)",
-      "type": "local",
-      "cuisine": "수시",
+      "type": "로컬",
+      "cuisine": "水席",
       "avgPrice": 95,
       "rating": 4.4,
       "address": "洛阳市市中心区美食街58号",
@@ -2316,7 +2316,7 @@
       "id": "luoyang-52",
       "name": "正宗浆面条",
       "nameEn": "正宗浆面条 (浆面条)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "浆面条",
       "avgPrice": 90,
       "rating": 4.8,
@@ -2345,7 +2345,7 @@
       "id": "luoyang-54",
       "name": "老街牛肉汤",
       "nameEn": "老街牛肉汤 (牛肉汤)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "牛肉汤",
       "avgPrice": 133,
       "rating": 4,
@@ -2374,7 +2374,7 @@
       "id": "luoyang-56",
       "name": "老洛阳不翻汤",
       "nameEn": "老洛阳不翻汤 (不翻汤)",
-      "type": "street",
+      "type": "길거리",
       "cuisine": "不翻汤",
       "avgPrice": 35,
       "rating": 4.4,
@@ -2403,7 +2403,7 @@
       "id": "luoyang-58",
       "name": "老洛阳锅贴",
       "nameEn": "老洛阳锅贴 (锅贴)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "锅贴",
       "avgPrice": 64,
       "rating": 4.1,
@@ -2432,7 +2432,7 @@
       "id": "luoyang-60",
       "name": "阿婆水席",
       "nameEn": "阿婆水席 (水席)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "水席",
       "avgPrice": 120,
       "rating": 4.2,
@@ -2461,7 +2461,7 @@
       "id": "luoyang-62",
       "name": "巷子水席",
       "nameEn": "巷子水席 (水席)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "水席",
       "avgPrice": 54,
       "rating": 4.5,
@@ -2490,7 +2490,7 @@
       "id": "luoyang-64",
       "name": "传统水席",
       "nameEn": "传统水席 (水席)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "水席",
       "avgPrice": 122,
       "rating": 4.6,
@@ -2519,7 +2519,7 @@
       "id": "luoyang-66",
       "name": "街边不翻汤",
       "nameEn": "街边不翻汤 (不翻汤)",
-      "type": "cafe",
+      "type": "카페",
       "cuisine": "不翻汤",
       "avgPrice": 79,
       "rating": 4.7,
@@ -2548,7 +2548,7 @@
       "id": "luoyang-68",
       "name": "巷子锅贴",
       "nameEn": "巷子锅贴 (锅贴)",
-      "type": "street",
+      "type": "길거리",
       "cuisine": "锅贴",
       "avgPrice": 41,
       "rating": 4.2,
@@ -2577,7 +2577,7 @@
       "id": "luoyang-70",
       "name": "老洛阳不翻汤",
       "nameEn": "老洛阳不翻汤 (不翻汤)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "不翻汤",
       "avgPrice": 80,
       "rating": 4.5,
@@ -2606,7 +2606,7 @@
       "id": "luoyang-72",
       "name": "老洛阳浆面条",
       "nameEn": "老洛阳浆面条 (浆面条)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "浆面条",
       "avgPrice": 115,
       "rating": 4.7,
@@ -2635,7 +2635,7 @@
       "id": "luoyang-74",
       "name": "老洛阳不翻汤",
       "nameEn": "老洛阳不翻汤 (不翻汤)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "不翻汤",
       "avgPrice": 44,
       "rating": 4.3,
@@ -3033,92 +3033,92 @@
   "culturalTips": [
     {
       "category": "history",
-      "title": "Ancient Capital",
-      "content": "Luoyang served as capital for 13 dynasties over 5,000 years, making it one of China's most historically significant cities. The Longmen Grottoes and White Horse Temple are remnants of this glorious past.",
+      "title": "고대 수도",
+      "content": "뤼양은 5,000년 동안 13개 왕조의 수도로 사용되어 중국에서 가장 역사적으로 중요한 도시 중 하나입니다. 룽먼굴과 백마사는 이 화려한 과거의 유물입니다.",
       "importance": "high"
     },
     {
       "category": "buddhism",
-      "title": "Birthplace of Chinese Buddhism",
-      "content": "White Horse Temple is China's first Buddhist temple, established in 68 AD when Buddhism entered China. Luoyang became the center of Chinese Buddhism.",
+      "title": "중국 불교의 요람",
+      "content": "백마사는 중국 최초의 불교 사찰로, 불교가 중국에 들어온 68년 AD에 건립되었습니다. 뤼양은 중국 불교의 중심지가 되었습니다.",
       "importance": "high"
     },
     {
       "category": "martial",
-      "title": "Kung Fu Birthplace",
-      "content": "The Shaolin Temple is recognized as the birthplace of Chinese martial arts (kung fu). Monks have practiced martial arts here for over 1,500 years.",
+      "title": "쿵푸의 요람",
+      "content": "사림사는 중국 무술(쿵푸)의 발상지로 인정받고 있습니다. 스님들은 1,500년 이상 이곳에서 무술을 연습해왔습니다.",
       "importance": "high"
     },
     {
       "category": "food",
-      "title": "Luoyang Water Banquet",
-      "content": "The famous 'water banquet' (水席) consists of 24 dishes served in sequence, each with broth or soup as the main component. Must-try for visitors.",
+      "title": "뤼양 수연",
+      "content": "유명한 '물 연회'(水席)는 24개 요리가 순서대로 제공되며, 각각的主성분이 국물이나 수프로 구성되어 있습니다. 방문객들은 반드시 시도해 보아야 합니다.",
       "importance": "high"
     },
     {
       "category": "flower",
-      "title": "City Flower",
-      "content": "Luoyang is famous for peonies. The Peony Festival in April-May draws millions of visitors. The flowers are considered symbols of wealth and honor.",
+      "title": "시화",
+      "content": "洛阳以牡丹闻名。4월에서 5월까지의 꽃잎제는 수백만 명의 관광객이 찾습니다. 꽃은 부와 명예의 상징으로 여겨집니다.",
       "importance": "medium"
     },
     {
       "category": "art",
-      "title": "Longmen Grottoes",
-      "content": "The Longmen Grottoes contain over 100,000 Buddhist statues carved into mountainside cliffs. The largest is 17 meters tall. A UNESCO World Heritage Site.",
+      "title": "룽먼굴",
+      "content": "龙门石窟에는 10만 개 이상의 불상상이 산벽에 조각되어 있습니다. 가장 큰 상은 높이가 17미터입니다. 유네스코 세계문화유산입니다.",
       "importance": "high"
     },
     {
       "category": "dynasty",
-      "title": "Tang Dynasty Legacy",
-      "content": "Luoyang was a major capital during the Tang Dynasty, China's golden age. The Tang period saw great cultural flourishing in art, poetry and religion.",
+      "title": "당 왕조 유산",
+      "content": "洛阳은 중국의 황금 시대인 당대의 주요 수도였습니다. 당대에는 예술, 시와 종교에서伟大的 문화 전성이 있었습니다.",
       "importance": "medium"
     },
     {
       "category": "warriors",
-      "title": "Terracotta Warriors Connection",
-      "content": "Luoyang's connection to the Longmen Grottoes and ancient capitals makes it a complement to Xi'an's Terracotta Warriors. Both cities showcase China's imperial history.",
+      "title": "진시황 병마용 연결",
+      "content": "洛阳의龙门石窟과 고대 수도와의 연계는西安의 병마용을 보완합니다. 두 도시는 중국의 제국 역사를 보여줍니다.",
       "importance": "medium"
     },
     {
       "category": "martial",
-      "title": "Shaolin Kung Fu School",
-      "content": "Many international visitors come to Luoyang specifically to train at Shaolin Temple. Kung fu schools offer programs ranging from a few days to several months.",
+      "title": "소림 쿤후 학교",
+      "content": "많은 해외 관광객들이 특히少林寺에서 수련하기 위해洛阳을 방문합니다.功伕 학교는 며칠부터 몇 달까지 다양한 프로그램을 제공합니다.",
       "importance": "high"
     },
     {
       "category": "food",
-      "title": "Peony Flower Dish",
-      "content": "Peony yan cai (牡丹燕菜) is Luoyang's signature dish, made from taro and named after the city flower. It's a must-try at traditional restaurants.",
+      "title": "모란 요리",
+      "content": "洛阳의 대표 요리인牡丹燕菜는芋，头做成하며 도시의 꽃에서 이름이 붙었습니다. 전통 식당에서 반드시 시도해야 합니다.",
       "importance": "medium"
     },
     {
       "category": "etiquette",
-      "title": "Temple Visit Etiquette",
-      "content": "When visiting Buddhist temples, remove hats, dress modestly, and avoid loud conversations. Photography may be restricted in some areas.",
+      "title": "사찰 방문 예절",
+      "content": "불교寺庙를 방문할 때 모자를 벗고 검소한 복장을 하며 큰 소리로 대화하지 마세요. 일부地区에서는 촬영이 제한될 수 있습니다.",
       "importance": "medium"
     },
     {
       "category": "history",
-      "title": "Dragon Gate Grottoes",
-      "content": "The Longmen Grottoes were carved over 400 years during the Northern Wei and Tang dynasties. They represent the pinnacle of Chinese stone carving art.",
+      "title": "용문굴",
+      "content": "龙门石窟은 북위와 당대에 400년 이상에 걸쳐 조각되었습니다. 이들은 중국 석조 예술의 정점을 나타냅니다.",
       "importance": "high"
     },
     {
       "category": "architecture",
-      "title": "Ancient City Walls",
-      "content": "Luoyang's old city walls and gates like Lizheng Gate and Yingtian Gate offer glimpses into the city's imperial past.",
+      "title": "고대 성벽",
+      "content": "洛阳의 고대 성과城门인 정문과영문과 같은 문은 도시의 제국 과거를 엿볼 수 있게 합니다.",
       "importance": "low"
     },
     {
       "category": "legend",
-      "title": "Legend of Baimen",
-      "content": "The legend of the White Horse carrying Buddhist scriptures from India to China gave White Horse Temple its name and marked Buddhism's official entry into China.",
+      "title": "백문의 전설",
+      "content": "백마가 중국으로 불경을 실어 가져왔다는 전설은白云寺의 이름이 되어 불교의 공식적인 중국 진입을 표시했습니다.",
       "importance": "medium"
     },
     {
       "category": "crafts",
-      "title": "Luoyang Tri-color Pottery",
-      "content": "Tang tri-color glazed pottery (唐三彩) is famous from the Tang Dynasty. These ceramic pieces typically feature vibrant glazes in brown, yellow, and green.",
+      "title": "로양 삼채",
+      "content": "당 삼색 유약 도기(唐三彩)는 당대에서 유명합니다. 이 도자기 작품들은 일반적으로 갈색, 노란색, 녹색의 선명한 유약을 특징으로 합니다.",
       "importance": "medium"
     }
   ],
@@ -3126,92 +3126,92 @@
     {
       "type": "ambulance",
       "name": "洛阳急救中心",
-      "nameEn": "Luoyang Emergency Center",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "120",
-      "notes": "Major hospitals have English interpretation"
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "police",
       "name": "洛阳市公安局",
-      "nameEn": "Luoyang Public Security Bureau",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "110",
-      "notes": "Tourist police at major attractions"
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "hospital",
       "name": "河南科技大学第一附属医院",
-      "nameEn": "First Affiliated Hospital of Henan University of Science and Technology",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 379 6483 0666",
-      "address": "24 Jinglu Road",
+      "address": "광저우",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
-      "notes": "English-speaking staff available"
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "hospital",
       "name": "洛阳正骨医院",
-      "nameEn": "Luoyang Orthopedic Hospital",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 379 6355 2123",
-      "address": "99 Xinhua Road",
-      "notes": "Famous for traditional bone-setting"
+      "address": "광저우",
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "fire",
       "name": "洛阳消防",
-      "nameEn": "Luoyang Fire Department",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "119",
-      "notes": "Fire and rescue services"
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "tourist-police",
       "name": "洛阳旅游警察",
-      "nameEn": "Luoyang Tourist Police",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 379 6330 8110",
-      "notes": "English-speaking tourist police"
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "hospital",
       "name": "洛阳市中心医院",
-      "nameEn": "Luoyang Central Hospital",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 379 6389 2123",
-      "address": "288 Zhongzhou Road",
+      "address": "광저우",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
-      "notes": "24-hour emergency services"
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "pharmacy",
       "name": "洛阳大药房",
-      "nameEn": "Luoyang Pharmacy",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 379 6333 8888",
-      "address": "Main street area",
-      "notes": "24-hour pharmacy"
+      "address": "광저우",
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "traffic",
       "name": "洛阳交通服务",
-      "nameEn": "Luoyang Traffic Police",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "122",
-      "notes": "Traffic accidents and road assistance"
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "consumer-rights",
       "name": "洛阳消费者投诉热线",
-      "nameEn": "Luoyang Consumer Rights Hotline",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "12315",
-      "notes": "Consumer protection and complaints"
+      "notes": "싱가포르 시민용"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese, Luoyang dialect",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Bottled water recommended"
+    "language": "중국어 (북경어)",
+    "currency": "인민폐 (CNY/RMB)",
+    "visa": "대부분의 국적은 비자가 필요합니다. 자격이 있는 경우 공항에서 72시간 환승 비자를 받을 수 있습니다.",
+    "timeZone": "UTC+8 (중국 표준시)",
+    "electricity": "220V/50Hz, A/I 타입 플러그",
+    "water": "수돗물은 마실 수 있지만 병물을 권장합니다"
   }
 }

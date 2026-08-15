@@ -1,0 +1,474 @@
+---
+import { cities, citiesMeta } from "@/data/cities/index";
+import { getCities } from "@/data/cities-i18n";
+import { getLangFromUrl } from "@/i18n/utils";
+import { translations } from "@/i18n/translations";
+import type { Language } from "@/i18n/translations";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { generateBreadcrumbSchema, generateJsonLdScript, generateOrganizationSchema, generateWebsiteSchema } from "@/lib/seo/schema-org";
+
+export function getStaticPaths() {
+  const langs = ["ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"];
+  return langs.map((lang) => ({ params: { lang } }));
+}
+
+const pathname = Astro.url.pathname;
+const lang = (Astro.params.lang as string) || getLangFromUrl(Astro.url);
+
+const t = translations[lang] || translations.en;
+const pageTitle = t.home?.pageTitle ?? translations.en.home.pageTitle;
+const pageDescription = t.home?.pageDescription ?? translations.en.home.pageDescription;
+const pageKeywords = [
+  "China travel guide",
+  "China AI assistant",
+  "China city guide",
+  "Michelin restaurants China",
+  "Black Pearl restaurants China",
+  "China travel tips",
+  "Beijing guide",
+  "Shanghai guide",
+  "Guangzhou guide",
+  "Xi'an guide",
+  "Chengdu guide",
+  "Guilin guide",
+  "China food guide",
+  "China restaurants",
+  "China attractions",
+  "China emergency contacts",
+  "explore China with AI",
+];
+
+
+// Use localized city data so cards show descriptions in the user's language
+const localizedCitiesData = (lang && lang !== "en") ? getCities(cities.map(c => c.slug), lang) : cities;
+const localizedCitiesMeta = localizedCitiesData.map(c => ({
+  slug: c.slug,
+  name: c.nameEn || c.name,
+  nameZh: c.name,
+  description: c.description || "",
+  coverImage: c.coverImage,
+}));
+
+const homeSchemas = [
+  generateWebsiteSchema(),
+  generateOrganizationSchema(),
+  generateBreadcrumbSchema([
+    { name: "Home", url: `https://chinaengage.org/` + (lang === "en" ? "" : lang + "/") },
+  ]),
+];
+
+const _t_lang = translations[lang] || translations.en;
+const _lookup = (key) => {
+  const parts = key.split(".");
+  let cur = _t_lang;
+  for (const p of parts) {
+    if (cur && typeof cur === "object" && p in cur) cur = cur[p];
+    else return key;
+  }
+  return typeof cur === "string" ? cur : key;
+};
+---
+
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  meta={{
+    keywords: pageKeywords,
+  }}
+>
+  <!-- Schema.org JSON-LD for SEO/GEO -->
+  <script type="application/ld+json" set:html={generateJsonLdScript(homeSchemas)} />
+  <!-- Onboarding Modal (first-time users) -->
+  <div id="onboarding-root"></div>
+
+  <script is:inline>
+    // Check if first-time user and show onboarding
+    if (!navigator.webdriver && !localStorage.getItem('chinaconnect_onboarding_complete')) {
+      var root = document.getElementById('onboarding-root');
+      if (root) {
+        root.innerHTML = '<div id="onboarding-overlay" style="position:fixed;inset:0;background:rgba(0,0,0,0.6);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;z-index:1000;padding:1rem;"><div style="background:white;border-radius:1.5rem;max-width:28rem;width:100%;overflow:hidden;box-shadow:0 25px 50px -12px rgba(0,0,0,0.25);animation:slideUp 0.3s ease"><style>@keyframes slideUp{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}</style><div style="display:flex;justify-content:flex-end;padding:1rem 1rem 0;"><button id="onboarding-skip" style="padding:0.375rem 0.75rem;background:transparent;color:#6b7280;border:none;border-radius:0.375rem;font-size:0.875rem;cursor:pointer;" data-i18n="home.onboardingSkip">Skip</button></div><div style="padding:1.5rem 2rem 2rem;text-align:center;"><div id="onboarding-icon" style="width:5rem;height:5rem;margin:0 auto 1.5rem;border-radius:50%;background:linear-gradient(135deg,#3b82f6,#8b5cf6);display:flex;align-items:center;justify-content:center;color:white;"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width:2.5rem;height:2.5rem;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"/></svg></div><h2 id="onboarding-title" style="font-size:1.5rem;font-weight:700;color:#111827;margin:0 0 0.75rem;" data-i18n="home.onboarding1Title">Discover Great Food</h2><p id="onboarding-desc" style="font-size:1rem;color:#6b7280;line-height:1.6;margin:0;" data-i18n="home.onboarding1Desc">Find Michelin-starred and Black Pearl restaurants in 12 Chinese cities.</p></div><div style="padding:1.5rem 2rem;border-top:1px solid #e5e7eb;display:flex;align-items:center;justify-content:space-between;"><div id="onboarding-dots" style="display:flex;gap:0.5rem;"><button id="dot0" style="width:1.5rem;height:0.5rem;border-radius:9999px;background:#3b82f6;border:none;padding:0;cursor:pointer;"></button><button id="dot1" style="width:0.5rem;height:0.5rem;border-radius:50%;background:#d1d5db;border:none;padding:0;cursor:pointer;"></button><button id="dot2" style="width:0.5rem;height:0.5rem;border-radius:50%;background:#d1d5db;border:none;padding:0;cursor:pointer;"></button></div><button id="onboarding-next" style="display:flex;align-items:center;gap:0.5rem;padding:0.625rem 1.25rem;background:#3b82f6;color:white;border:none;border-radius:0.5rem;font-size:0.875rem;font-weight:600;cursor:pointer;"><span data-i18n="home.onboardingNext">Next</span> <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width:1.25rem;height:1.25rem;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button></div></div></div>';
+
+        var i18nT = function(key) {
+          try {
+            var w = window;
+            var lang = document.documentElement.lang || 'en';
+            var translations = (w.__I18N__ && w.__I18N__.translations) || {};
+            var dict = translations[lang] || translations.en || {};
+            var parts = key.split('.');
+            var cur = dict;
+            for (var i = 0; i < parts.length; i++) { if (cur && typeof cur === 'object' && parts[i] in cur) cur = cur[parts[i]]; else return key; }
+            return typeof cur === 'string' ? cur : key;
+          } catch (e) { return key; }
+        };
+        var steps = [
+          { titleKey: 'home.onboarding1Title', descKey: 'home.onboarding1Desc' },
+          { titleKey: 'home.onboarding2Title', descKey: 'home.onboarding2Desc' },
+          { titleKey: 'home.onboarding3Title', descKey: 'home.onboarding3Desc' },
+        ];
+        var currentStep = 0;
+
+        window.goToStep = function(idx) {
+          currentStep = idx;
+          for (var i = 0; i < 3; i++) {
+            var dot = document.getElementById('dot' + i);
+            if (i === idx) {
+              dot.style.width = '1.5rem';
+              dot.style.borderRadius = '9999px';
+              dot.style.background = '#3b82f6';
+            } else {
+              dot.style.width = '0.5rem';
+              dot.style.borderRadius = '50%';
+              dot.style.background = '#d1d5db';
+            }
+          }
+          document.getElementById('onboarding-title').textContent = i18nT(steps[idx].titleKey);
+          document.getElementById('onboarding-desc').textContent = i18nT(steps[idx].descKey);
+          var nextLabel = idx === 2 ? i18nT('home.onboardingFinish') : i18nT('home.onboardingNext');
+          var nextIcon = idx === 2
+            ? '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width:1.25rem;height:1.25rem;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>'
+            : '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width:1.25rem;height:1.25rem;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>';
+          document.getElementById('onboarding-next').innerHTML = nextLabel + ' ' + nextIcon;
+        };
+
+        document.getElementById('onboarding-next').onclick = function() {
+          if (currentStep < 2) { currentStep++; window.goToStep(currentStep); }
+          else { completeOnboarding(); }
+        };
+        document.getElementById('onboarding-skip').onclick = completeOnboarding;
+        document.getElementById('dot1').onclick = function() { window.goToStep(1); };
+        document.getElementById('dot2').onclick = function() { window.goToStep(2); };
+
+        function completeOnboarding() {
+          localStorage.setItem('chinaconnect_onboarding_complete', 'true');
+          document.getElementById('onboarding-overlay').remove();
+        }
+      }
+    }
+  </script>
+
+  <!-- Hero Section -->
+  <section class="hero-gradient text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="container-custom py-16 md:py-24 relative z-10">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6" data-i18n="home.heroTitle">{_lookup("home.heroTitle")}</h1>
+        <p class="text-xl md:text-2xl text-blue-100 mb-4" data-i18n="home.heroSubtitle">{_lookup("home.heroSubtitle")}</p>
+        <p class="text-lg text-blue-200 mb-10 max-w-2xl mx-auto" data-i18n="home.heroDesc">{_lookup("home.heroDesc")}</p>
+
+        <!-- AI Chat CTA -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+          <a href={`/${lang}/ai`} class="flex items-center gap-3 bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+            </svg>
+            <span data-i18n="home.heroCTA" data-i18n-vars='{"city": city.nameEn}'>{_lookup("home.heroCTA")}</span>
+          </a>
+          <a href="#cities" class="flex items-center gap-2 border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition-all">
+            <span data-i18n="home.exploreCities" data-i18n-vars='{"city": city.nameEn}'>{_lookup("home.exploreCities")}</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-all">
+            <div class="text-3xl font-bold mb-1">35</div>
+            <div class="text-sm text-blue-200" data-i18n="home.statsCities">{_lookup("home.statsCities")}</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-all">
+            <div class="text-3xl font-bold mb-1">30+</div>
+            <div class="text-sm text-blue-200" data-i18n="home.statsRestaurants">{_lookup("home.statsRestaurants")}</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-all">
+            <div class="text-3xl font-bold mb-1">100+</div>
+            <div class="text-sm text-blue-200" data-i18n="home.statsAttractions">{_lookup("home.statsAttractions")}</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-all">
+            <div class="text-3xl font-bold mb-1">24/7</div>
+            <div class="text-sm text-blue-200" data-i18n="home.statsAI">{_lookup("home.statsAI")}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recently Viewed / Recommended Section -->
+  <section id="recents-section" class="py-8 border-b border-gray-100" style="display:none;">
+    <div class="container-custom">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-lg font-semibold text-gray-900" data-i18n="home.recentlyViewed">{_lookup("home.recentlyViewed")}</h2>
+        <button id="clear-recents" class="text-sm text-gray-500 hover:text-gray-700 transition-colors" data-i18n="home.clearHistory">{_lookup("home.clearHistory")}</button>
+      </div>
+      <div id="recents-grid" class="flex gap-3 overflow-x-auto pb-2 -mx-2 px-2">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Cities Grid -->
+  <section id="cities" class="py-16">
+    <div class="container-custom">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4" data-i18n="home.citiesTitle">{_lookup("home.citiesTitle")}</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto" data-i18n="home.citiesSubtitle">{_lookup("home.citiesSubtitle")}</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {localizedCitiesMeta.slice(0, 11).map((city, index) => (
+          <a
+            href={`/${lang}/city/${city.slug}`}
+            class={`group relative overflow-hidden rounded-2xl card-hover ${
+              index === 0 ? 'md:col-span-2 lg:col-span-1 lg:row-span-2' : ''
+            }`}
+          >
+            <div class={`bg-gradient-to-br ${
+              index === 0 ? 'from-blue-500 to-purple-600' :
+              index === 1 ? 'from-purple-500 to-pink-600' :
+              index === 2 ? 'from-orange-500 to-red-600' :
+              index === 3 ? 'from-green-500 to-teal-600' :
+              index === 4 ? 'from-red-500 to-orange-600' :
+              index === 5 ? 'from-teal-500 to-blue-600' :
+              index === 6 ? 'from-pink-500 to-purple-600' :
+              index === 7 ? 'from-yellow-500 to-orange-600' :
+              index === 8 ? 'from-cyan-500 to-blue-600' :
+              index === 9 ? 'from-indigo-500 to-purple-600' :
+              'from-emerald-500 to-teal-600'
+            } ${index === 0 ? 'h-80 lg:h-full min-h-[320px]' : 'h-48'} flex items-center justify-center bg-cover bg-center`}
+              style={city.coverImage ? `background-image: url('${city.coverImage}')` : undefined}>
+              <span class="text-white/30 text-9xl font-bold">{city.name[0]}</span>
+            </div>
+
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6">
+              <div class="mb-2">
+                <span class="text-blue-300 text-sm font-medium">{city.nameZh}</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors">
+                {city.name}
+              </h3>
+              <p class="text-gray-300 text-sm mb-4 line-clamp-2">
+                {city.description}
+              </p>
+              <div class="flex items-center text-white text-sm font-medium">
+                <span data-i18n="home.exploreGuide" data-i18n-vars='{"city": city.nameEn}'>{_lookup("home.exploreGuide")}</span>
+                <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+      {localizedCitiesMeta.length > 8 && (
+        <div class="text-center mt-8">
+          <a href={`/${lang}/cities`} class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-semibold transition-colors">
+            <span data-i18n="home.viewAllCities" data-i18n-vars='{"city": city.nameEn}'>{_lookup("home.viewAllCities")}</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16 bg-gray-50">
+    <div class="container-custom">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4" data-i18n="home.featuresTitle">{_lookup("home.featuresTitle")}</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto" data-i18n="home.featuresSubtitle">{_lookup("home.featuresSubtitle")}</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <a href={`/${lang}/food`} class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow block">
+          <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2" data-i18n="features.restaurantGuide">{_lookup("features.restaurantGuide")}</h3>
+          <p class="text-gray-600 text-sm" data-i18n="features.restaurantGuideDesc">{_lookup("features.restaurantGuideDesc")}</p>
+        </a>
+
+        <a href={`/${lang}/guide/attractions`} class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow block">
+          <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2" data-i18n="features.attractions">{_lookup("features.attractions")}</h3>
+          <p class="text-gray-600 text-sm" data-i18n="features.attractionsDesc">{_lookup("features.attractionsDesc")}</p>
+        </a>
+
+        <a href={`/${lang}/guide/transport`} class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow block">
+          <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2" data-i18n="features.transport">{_lookup("features.transport")}</h3>
+          <p class="text-gray-600 text-sm" data-i18n="features.transportDesc">{_lookup("features.transportDesc")}</p>
+        </a>
+
+        <a href={`/${lang}/emergency`} class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow block">
+          <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2" data-i18n="features.emergency">{_lookup("features.emergency")}</h3>
+          <p class="text-gray-600 text-sm" data-i18n="features.emergencyDesc">{_lookup("features.emergencyDesc")}</p>
+        </a>
+
+        <a href={`/${lang}/guide/payment`} class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow block">
+          <div class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2" data-i18n="features.payment">{_lookup("features.payment")}</h3>
+          <p class="text-gray-600 text-sm" data-i18n="features.paymentDesc">{_lookup("features.paymentDesc")}</p>
+        </a>
+
+        <a href={`/${lang}/guide/accommodation`} class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow block">
+          <div class="w-12 h-12 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2" data-i18n="features.accommodation">{_lookup("features.accommodation")}</h3>
+          <p class="text-gray-600 text-sm" data-i18n="features.accommodationDesc">{_lookup("features.accommodationDesc")}</p>
+        </a>
+
+        <a href={`/${lang}/guide/cultural-warnings`} class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow block">
+          <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m13-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2" data-i18n="features.culturalTips">{_lookup("features.culturalTips")}</h3>
+          <p class="text-gray-600 text-sm" data-i18n="features.culturalTipsDesc">{_lookup("features.culturalTipsDesc")}</p>
+        </a>
+
+        <a href={`/${lang}/ai`} class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow block">
+          <div class="w-12 h-12 bg-pink-100 text-pink-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2" data-i18n="features.aiAssistant">{_lookup("features.aiAssistant")}</h3>
+          <p class="text-gray-600 text-sm" data-i18n="features.aiAssistantDesc">{_lookup("features.aiAssistantDesc")}</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommended for You -->
+  <section id="recommended-section" class="py-12">
+    <div class="container-custom">
+      <div class="text-center mb-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2" data-i18n="home.recommendedForYou">{_lookup("home.recommendedForYou")}</h2>
+        <p class="text-gray-600" data-i18n="index.featuredDestinations">{_lookup("index.featuredDestinations")}</p>
+      </div>
+      <div id="recommended-grid" class="grid md:grid-cols-3 gap-6" data-cities={JSON.stringify(localizedCitiesMeta.map(c => ({ slug: c.slug, name: c.name, nameZh: c.nameZh, description: c.description, coverImage: c.coverImage })))}>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16">
+    <div class="container-custom">
+      <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 md:p-12 text-center text-white">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" data-i18n="home.ctaTitle">{_lookup("home.ctaTitle")}</h2>
+        <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto" data-i18n="home.ctaSubtitle">{_lookup("home.ctaSubtitle")}</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href={`/${lang}/city/beijing`} class="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-blue-50 transition-all">
+            <span data-i18n="home.exploreBeijing" data-i18n-vars='{"city": city.nameEn}'>{_lookup("home.exploreBeijing")}</span>
+          </a>
+          <a href={`/${lang}/ai`} class="flex items-center gap-2 border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition-all">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+            </svg>
+            <span data-i18n="home.chatWithAI" data-i18n-vars='{"city": city.nameEn}'>{_lookup("home.chatWithAI")}</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    // Recently Viewed functionality
+    (function() {
+      var STORAGE_KEY = 'chinaconnect_recent_views';
+      var recents = [];
+      try {
+        recents = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+      } catch(e) { recents = []; }
+
+      var section = document.getElementById('recents-section');
+      var grid = document.getElementById('recents-grid');
+      var clearBtn = document.getElementById('clear-recents');
+
+      if (section && grid && recents.length > 0) {
+        section.style.display = 'block';
+        var lang = document.documentElement.lang || 'en';
+        recents.slice(0, 6).forEach(function(item) {
+          var div = document.createElement('a');
+          div.href = item.type === 'city' ? `/${lang}/city/${'$'}{item.id}` : `/${'$'}{lang}/food#${'$'}{item.id}`;
+          div.className = 'flex-shrink-0 flex flex-col items-center gap-2 p-3 rounded-xl hover:bg-gray-50 transition-colors min-w-[5rem]';
+          var langNorm = (lang || "en").toLowerCase().split("-")[0]; var initial = langNorm === "zh" ? item.name[0] : (item.nameEn ? item.nameEn[0] : item.name[0]);
+          var bgColors = ['from-blue-400 to-blue-600','from-purple-400 to-purple-600','from-pink-400 to-pink-600','from-green-400 to-green-600','from-orange-400 to-orange-600'];
+          var color = bgColors[item.id.charCodeAt(0) % bgColors.length];
+          div.innerHTML = '<div class="w-14 h-14 rounded-xl bg-gradient-to-br ' + color + ' flex items-center justify-center text-white font-bold text-xl">' + initial + '</div><span class="text-xs text-gray-600 text-center">' + (langNorm === "zh" ? item.name : item.nameEn || item.name) + '</span>';
+          grid.appendChild(div);
+        });
+
+        clearBtn.onclick = function() {
+          localStorage.removeItem(STORAGE_KEY);
+          section.style.display = 'none';
+        };
+      }
+
+      // Recommended for You (popular cities from real data)
+      var recGrid = document.getElementById('recommended-grid');
+      if (recGrid) {
+        // Get real city data from the data attribute
+        var allCities = [];
+        try {
+          allCities = JSON.parse(recGrid.getAttribute('data-cities') || '[]');
+        } catch(e) { allCities = []; }
+
+        // Pick 3 featured cities
+        var featuredSlugs = ['shanghai', 'chengdu', 'xian'];
+        var recommended = allCities.filter(function(c) {
+          return featuredSlugs.indexOf(c.slug) !== -1;
+        });
+        // If we couldn't find featured cities, fall back to first 3
+        if (recommended.length < 3) {
+          recommended = allCities.slice(0, 3);
+        }
+
+        var lang2 = (document.documentElement.lang || "en").toLowerCase().split("-")[0];
+        recommended.forEach(function(city) {
+          var div = document.createElement('a');
+          div.href = '/city/' + city.slug;
+          div.className = 'group relative overflow-hidden rounded-2xl card-hover block';
+          var bgStyle = city.coverImage
+            ? 'background-image: url(\'' + city.coverImage + '\'); background-size: cover; background-position: center;'
+            : '';
+          var displayName = lang2 === "zh" ? (city.nameZh || city.name) : (city.name || city.nameZh);
+          div.innerHTML = '<div class="bg-gradient-to-br from-blue-500 to-purple-600 h-48 flex items-center justify-center" style="' + bgStyle + '"><span class="text-white/30 text-8xl font-bold">' + displayName[0] + '</span></div><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-5"><h3 class="text-xl font-bold text-white mb-1 group-hover:text-blue-300 transition-colors">' + displayName + '</h3><p class="text-gray-300 text-sm">' + city.description + '</p></div>';
+          recGrid.appendChild(div);
+        });
+      }
+    })();
+  </script>
+</BaseLayout>

@@ -7,6 +7,9 @@ import {
 } from "@/data/guide/emergency";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
+import { jaText, Bi } from "./guide-i18n";
+
+const SEVERITY_JA: Record<string, string> = { critical: "重大", high: "高", medium: "中", low: "低" };
 
 export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) { const t = translations[lang] || translations.en; const tg = (t.emergencyGuide || translations.en.emergencyGuide || {}) as Record<string, string>;
   const [activeTab, setActiveTab] = useState("overview");
@@ -91,8 +94,8 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                   <div className="flex items-center gap-3">
                     <span className="text-2xl">{emergency.icon}</span>
                     <div className="flex-1">
-                      <div className="font-medium">{emergency.type}</div>
-                      <div className="text-sm text-muted-foreground">{emergency.descriptionCn}</div>
+                      <div className="font-medium">{jaText(emergency.type, lang)}</div>
+                      <div className="text-sm text-muted-foreground">{jaText(emergency.descriptionCn, lang)}</div>
                     </div>
                     <span
                       className={`px-2 py-0.5 rounded text-xs font-medium ${
@@ -103,7 +106,7 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                             : "bg-blue-100 text-blue-800"
                       }`}
                     >
-                      {emergency.severity}
+                      {lang === "ja" ? SEVERITY_JA[emergency.severity] || emergency.severity : emergency.severity}
                     </span>
                   </div>
                 </button>
@@ -125,8 +128,8 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                     <div className="flex items-center gap-4">
                       <span className="text-5xl">{currentEmergency.icon}</span>
                       <div>
-                        <h2 className="text-2xl font-bold">{currentEmergency.type}</h2>
-                        <p className="text-muted-foreground">{currentEmergency.descriptionCn}</p>
+                        <h2 className="text-2xl font-bold">{jaText(currentEmergency.type, lang)}</h2>
+                        <p className="text-muted-foreground">{jaText(currentEmergency.descriptionCn, lang)}</p>
                         <span
                           className={`inline-block mt-2 px-3 py-1 rounded text-sm font-medium ${
                             currentEmergency.severity === "critical"
@@ -136,31 +139,30 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                                 : "bg-blue-100 text-blue-800"
                           }`}
                         >
-                          {currentEmergency.severity} severity
+                          {lang === "ja" ? (SEVERITY_JA[currentEmergency.severity] || currentEmergency.severity) + "（重大度）" : currentEmergency.severity + " severity"}
                         </span>
                       </div>
                     </div>
                   </div>
                   <div className="p-6 space-y-6">
-                    <p className="text-foreground">{currentEmergency.description}</p>
+                    {lang !== "ja" && <p className="text-foreground">{currentEmergency.description}</p>}
 
                     {/* Immediate Actions */}
                     <div className="bg-red-50 rounded-lg p-4">
                       <h3 className="font-semibold mb-3 flex items-center gap-2">
-                        <span>🚨</span> Immediate Actions / 立即行动
-                      </h3>
+                        <span>🚨</span><Bi en="Immediate Actions" zh="立即行动" lang={lang} /></h3>
                       <ol className="space-y-2">
                         {currentEmergency.immediateActions.map((action, i) => (
                           <li key={i} className="flex items-start gap-2 text-sm">
                             <span className="text-red-500 font-bold">{i + 1}.</span>
-                            <span>{action}</span>
+                            {lang !== "ja" && <span>{jaText(action, lang)}</span>}
                           </li>
                         ))}
                       </ol>
                       <div className="mt-3 pt-3 border-t space-y-1">
                         {currentEmergency.immediateActionsCn.map((action, i) => (
                           <p key={i} className="text-sm text-muted-foreground">
-                            {action}
+                            {jaText(action, lang)}
                           </p>
                         ))}
                       </div>
@@ -169,20 +171,19 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                     {/* Prevention */}
                     <div className="bg-green-50 rounded-lg p-4">
                       <h3 className="font-semibold mb-3 flex items-center gap-2">
-                        <span>🛡️</span> Prevention / 预防措施
-                      </h3>
+                        <span>🛡️</span><Bi en="Prevention" zh="预防措施" lang={lang} /></h3>
                       <ul className="space-y-2">
                         {currentEmergency.prevention.map((tip, i) => (
                           <li key={i} className="flex items-start gap-2 text-sm">
                             <span className="text-green-500">✓</span>
-                            <span>{tip}</span>
+                            {lang !== "ja" && <span>{jaText(tip, lang)}</span>}
                           </li>
                         ))}
                       </ul>
                       <div className="mt-3 pt-3 border-t space-y-1">
                         {currentEmergency.preventionCn.map((tip, i) => (
                           <p key={i} className="text-sm text-muted-foreground">
-                            {tip}
+                            {jaText(tip, lang)}
                           </p>
                         ))}
                       </div>
@@ -190,19 +191,19 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
 
                     {/* Useful Phrases */}
                     <div className="bg-blue-50 rounded-lg p-4">
-                      <h3 className="font-semibold mb-3">Useful Phrases / 有用短语</h3>
+                      <h3 className="font-semibold mb-3"><Bi en="Useful Phrases" zh="有用短语" lang={lang} /></h3>
                       <div className="grid md:grid-cols-2 gap-2">
                         {currentEmergency.usefulPhrases.map((phrase, i) => (
                           <div key={i} className="flex items-center gap-2 text-sm">
                             <span className="text-blue-500">•</span>
-                            <span>{phrase}</span>
+                            {lang !== "ja" && <span>{jaText(phrase, lang)}</span>}
                           </div>
                         ))}
                       </div>
                       <div className="mt-3 pt-3 border-t space-y-1">
                         {currentEmergency.usefulPhrasesCn.map((phrase, i) => (
                           <p key={i} className="text-sm text-muted-foreground">
-                            {phrase}
+                            {jaText(phrase, lang)}
                           </p>
                         ))}
                       </div>
@@ -212,9 +213,9 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
               ) : (
                 <div className="bg-card rounded-xl border p-12 text-center">
                   <span className="text-6xl mb-4 block">🚨</span>
-                  <h3 className="text-xl font-semibold mb-2">Select an Emergency Type</h3>
+                  <h3 className="text-xl font-semibold mb-2">{lang === "ja" ? "緊急事態の種類を選択" : "Select an Emergency Type"}</h3>
                   <p className="text-muted-foreground">
-                    Click on an emergency type to see detailed guidance
+                    {lang === "ja" ? "緊急事態の種類をクリックすると詳細なガイダンスが表示されます" : "Click on an emergency type to see detailed guidance"}
                   </p>
                 </div>
               )}
@@ -232,9 +233,9 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                 <span className="text-4xl">{contact.icon}</span>
                 <h3 className="font-semibold text-lg mt-2">{contact.service}</h3>
                 <div className="text-3xl font-bold text-primary my-3">{contact.number}</div>
-                <p className="text-sm text-muted-foreground">{contact.descriptionCn}</p>
+                <p className="text-sm text-muted-foreground">{jaText(contact.descriptionCn, lang)}</p>
                 <span className="inline-block mt-2 px-3 py-1 rounded bg-green-100 text-green-800 text-xs">
-                  {contact.availability} / {contact.availabilityCn}
+                  {lang === "ja" ? jaText(contact.availabilityCn, lang) : <>{contact.availability} / {jaText(contact.availabilityCn, lang)}</>}
                 </span>
               </div>
             ))}
@@ -291,7 +292,7 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                 <div className="p-4 space-y-3 text-sm">
                   <div>
                     <span className="text-muted-foreground">Address:</span>
-                    <p>{embassy.addressCn}</p>
+                    <p>{jaText(embassy.addressCn, lang)}</p>
                     <p className="text-muted-foreground">{embassy.address}</p>
                   </div>
                   <div className="flex items-center gap-4">
@@ -323,12 +324,10 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
           {/* Important Note */}
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
             <h3 className="font-semibold flex items-center gap-2">
-              <span>📝</span> Important Note
+              <span>📝</span> {lang === "ja" ? "重要な注意" : "Important Note"}
             </h3>
             <p className="text-sm text-muted-foreground mt-1">
-              Save your embassy&apos;s emergency number before travel. Most embassies have 24/7
-              emergency lines for citizens abroad. In serious emergencies (lost passport, detention,
-              hospitalization), contact your embassy immediately.
+              {lang === "ja" ? "旅行前に大使館の緊急連絡先を保存しておきましょう。多くの大使館は在外国民向けの24時間緊急回線を設置しています。重大な緊急時（パスポート紛失、拘留、入院）はすぐに大使館へ連絡してください。" : "Save your embassy&apos;s emergency number before travel. Most embassies have 24/7 emergency lines for citizens abroad. In serious emergencies (lost passport, detention, hospitalization), contact your embassy immediately."}
             </p>
           </div>
         </div>
@@ -339,7 +338,7 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
         <div className="space-y-4">
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-red-50 px-6 py-4 border-b">
-              <h2 className="font-semibold text-xl">Essential Emergency Phrases</h2>
+              <h2 className="font-semibold text-xl">{lang === "ja" ? "緊急時に役立つフレーズ" : "Essential Emergency Phrases"}</h2>
             </div>
             <div className="divide-y">
               {EMERGENCY_HELPERS.essentialPhrases.map((phrase, idx) => (
@@ -354,7 +353,7 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
           {/* FAQ Section */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h3 className="font-semibold text-lg">Frequently Asked Questions</h3>
+              <h3 className="font-semibold text-lg">{lang === "ja" ? "よくある質問" : "Frequently Asked Questions"}</h3>
             </div>
             <div className="divide-y">
               {EMERGENCY_FAQS.map((faq, idx) => (
@@ -363,12 +362,12 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                     onClick={() => setExpandedFaq(expandedFaq === idx ? null : idx)}
                     className="w-full flex items-center justify-between p-4 hover:bg-slate-50 transition-colors"
                   >
-                    <span className="font-medium text-left pr-4">{faq.question}</span>
+                    <span className="font-medium text-left pr-4">{lang === "ja" ? jaText(faq.question, lang) : faq.question}</span>
                     <span className="text-muted-foreground">{expandedFaq === idx ? "▲" : "▼"}</span>
                   </button>
                   {expandedFaq === idx && (
                     <div className="px-4 pb-4">
-                      <p className="text-foreground">{faq.answer}</p>
+                      <p className="text-foreground">{lang === "ja" ? jaText(faq.answer, lang) : faq.answer}</p>
                     </div>
                   )}
                 </div>
@@ -379,16 +378,16 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
           {/* Prevention Tips */}
           <div className="bg-green-50 border border-green-200 rounded-xl p-4">
             <h3 className="font-semibold flex items-center gap-2">
-              <span>🛡️</span> General Prevention Tips
+              <span>🛡️</span> {lang === "ja" ? "一般的な予防のヒント" : "General Prevention Tips"}
             </h3>
             <ul className="mt-2 space-y-2 text-sm">
               <li className="flex items-start gap-2">
                 <span className="text-green-500">•</span>
-                <span>Keep digital copies of all important documents in cloud storage</span>
+                <span>{lang === "ja" ? "重要な書類はすべてクラウドにデジタルコピーを保存" : "Keep digital copies of all important documents in cloud storage"}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-500">•</span>
-                <span>Share your travel itinerary with family/friends back home</span>
+                <span>{lang === "ja" ? "旅行日程を家族や友人と共有" : "Share your travel itinerary with family/friends back home"}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-500">•</span>

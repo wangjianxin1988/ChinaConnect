@@ -14,6 +14,7 @@
  * - 响应式设计
  */
 
+import { ct } from "@/i18n/components-strings";
 import { MapDirectionsLink } from "@/components/ui/MapDirectionsLink";
 import React from "react";
 
@@ -36,7 +37,7 @@ export const HOTEL_CATEGORY_CONFIG: Record<
   luxury: {
     label: "豪华",
     labelEn: "Luxury",
-    labels: { ja: "ラクジャリー", ko: "루첌리", "zh-CN": "豪华", "zh-TW": "豪華", th: "หรูหรา", vi: "Sang trong", ru: "Роскошный", fr: "Luxe", de: "Luxus", ar: "فاخر", fa: "لوکس" },
+    labels: { ja: "ラグジュアリー", ko: "루첌리", "zh-CN": "豪华", "zh-TW": "豪華", th: "หรูหรา", vi: "Sang trong", ru: "Роскошный", fr: "Luxe", de: "Luxus", ar: "فاخر", fa: "لوکس" },
     color: "text-purple-700",
     bg: "bg-purple-100",
     icon: "👑",
@@ -237,7 +238,7 @@ export function HotelCard({ hotel, onClick, compact = false, lang = "en" }: Hote
         {(compact || !hotel.imageUrl) && priceDisplay && (
           <div className="mt-2">
             <span className="text-lg font-bold text-orange-600">{priceDisplay}</span>
-            <span className="text-xs text-gray-400 ml-1">/晚</span>
+            <span className="text-xs text-gray-400 ml-1">{ct(lang, "hotel_per_night", "/night")}</span>
           </div>
         )}
 
@@ -275,7 +276,7 @@ export function HotelCard({ hotel, onClick, compact = false, lang = "en" }: Hote
               <span className="w-5 h-5 bg-orange-200 rounded-full flex items-center justify-center text-[10px] font-bold text-orange-700">
                 {hotel.bloggerName.charAt(0)}
               </span>
-              <span className="text-xs font-semibold text-gray-700">{hotel.bloggerName} 推荐</span>
+              <span className="text-xs font-semibold text-gray-700">{hotel.bloggerName} {ct(lang, "hotel_recommended", "Recommended")}</span>
             </div>
             {hotel.bloggerReason && (
               <p className="text-xs text-gray-600 leading-relaxed">{hotel.bloggerReason}</p>
@@ -293,7 +294,7 @@ export function HotelCard({ hotel, onClick, compact = false, lang = "en" }: Hote
               name={hotel.name}
               address={hotel.address}
               className="flex items-center gap-1.5 px-3 py-2 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium hover:bg-blue-100 transition-colors touch-manipulation"
-            />
+             lang="lang"/>
           )}
 
           {/* Phone */}
@@ -305,7 +306,7 @@ export function HotelCard({ hotel, onClick, compact = false, lang = "en" }: Hote
             >
               <span>📞</span>
               <span className="hidden sm:inline">{hotel.phone}</span>
-              <span className="sm:hidden">拨打</span>
+              {ct(lang, "hotel_call", "Call")}
             </a>
           )}
         </div>

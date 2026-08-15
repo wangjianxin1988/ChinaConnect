@@ -9,14 +9,14 @@
     "lng": 112.9388
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Changsha, the capital of Hunan Province, is a vibrant city where ancient history meets modern dynamism. Known as the 'Xiang River City' for its location on the banks of the湘江, Changsha is famous for its spicy Hunan cuisine, revolutionary heritage, and thriving entertainment scene. The city offers a unique blend of traditional culture, natural scenery, and contemporary youth culture, making it one of China's most lively provincial capitals.",
+  "description": "تشانغشا، عاصمة مقاطعة هونان، هي مدينة نابضة بالحياة حيث يلتقي التاريخ القديم بالحيوية الحديثة. تُعرف باسم مدينة نهر شيانغ لوقوعها على ضفاف نهر شيانغ، وتشتهر بمطبخ هونان الحار، والتراث الثوري، وازدهار مشهد الترفيه. تقدم المدينة مزيجاً فريداً من الثقافة التقليدية والمناظر الطبيعية وثقافة الشباب المعاصرة، مما يجعلها واحدة من أكثر عواصم المقاطعات الصينية حياةً.",
   "coverImage": "/img/ext/77497afc84d8.webp",
   "highlights": [
-    "Yuelu Mountain - Scenic mountain with ancient academy",
-    "Orange Island - Xiang River island with Chairman Mao statue",
-    "Hunan Provincial Museum - Ancient treasures and Mawangdui",
-    "Tianxin Pavilion - Historic city landmark",
-    "Huangxing Road步行街 - Bustling shopping district"
+    "جبل يويلو - جبل خلاب مع أكاديمية قديمة",
+    "جزيرة البرتقال - جزيرة نهر شيانغ مع تمثال ماو تسي تونغ",
+    "متحف مقاطعة هونان - الكنوز القديمة وموقع مافانغدوي",
+    "برج تيانشين - معلم تاريخي في المدينة",
+    "شارع هوانغشينغ - منطقة تسوق مزدحمة"
   ],
   "climate": {
     "type": "Subtropical monsoon",
@@ -36,9 +36,9 @@
     {
       "id": "yuelu-mountain",
       "name": "岳麓山",
-      "nameEn": "Yuelu Mountain",
+      "nameEn": "جبل يويلو",
       "category": "nature",
-      "description": "A scenic mountain on the west bank of Xiang River, home to the famous Yuelu Academy and numerous historical sites. One of Changsha's most beloved natural and cultural attractions.",
+      "description": "جبل جميل على الضفة الغربية لنهر شيانغ، موطن أكاديمية يويلو الشهيرة والعديد من المواقع التاريخية. يعتبر من أكثر المعالم الطبيعية والثقافية المحبوبة في تشانغشا.",
       "image": "/img/ext/9bb7c7d0e1a6.webp",
       "address": "岳麓区岳麓山",
       "coordinates": {
@@ -46,47 +46,47 @@
         "lng": 112.9444
       },
       "openingHours": "06:00-23:00",
-      "ticketPrice": "Free (some attractions within require tickets)",
-      "recommendedVisitTime": "Half day",
+      "ticketPrice": "مجاني (بعض المعالم داخله تتطلب تذاكر)",
+      "recommendedVisitTime": "نصف يوم",
       "highlights": [
-        "Yuelu Academy",
-        "Ancient telegrap tower",
-        "Arhat Temple",
-        "Cloud Platform"
+        "أكاديمية يويلو",
+        "برج التلغراف القديم",
+        "معبد أرهات",
+        "منصة السحب"
       ],
-      "tips": "Take the scenic cable car to the top for panoramic views. Best visited in early morning. Combine with a walk along Yuelu Academy's grounds.",
+      "tips": "استقل التلفريك الجميل إلى الأعلى للاستمتاع بإطلالات بانورامية. يفضل زيارته في الصباح الباكر. يمكن الجمع بين الزيارة مع نزهة في أراضي أكاديمية يويلو.",
       "phone": "+86 731 8882 5011"
     },
     {
       "id": "yuelu-academy",
       "name": "岳麓书院",
-      "nameEn": "Yuelu Academy",
+      "nameEn": "أكاديمية يويلو",
       "category": "cultural",
-      "description": "One of China's four most famous ancient academies, founded in 976 AD. A stunning example of traditional Chinese architecture and academic heritage.",
+      "description": "واحدة من أقدم وأشهر الأكاديميات في الصين، تأسست في عام 976 ميلاديًا. مثال رائع للهندسة المعمارية الصينية التقليدية والتراث الأكاديمي.",
       "image": "/img/ext/0891fec41e00.webp",
       "address": "岳麓区麓山路38号",
       "coordinates": {
         "lat": 28.2018,
         "lng": 112.9388
       },
-      "openingHours": "07:30-18:00 (Summer), 08:00-17:30 (Winter)",
+      "openingHours": "07:30-18:00 (الصيف)، 08:00-17:30 (الشتاء)",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 ساعة",
       "highlights": [
-        "Teaching Hall",
-        "Book Collection Pavilion",
-        "Surrounding mountains",
-        "Ancient magnolia tree"
+        "قاعة التدريس",
+        "جناح مجموعة الكتب",
+        "الجبال المحيطة",
+        "شجرة المغنوليا القديمة"
       ],
-      "tips": "Arrive early to avoid tour groups. Audio guides available. The nearby Yuelu Mountain is connected and can be explored together.",
+      "tips": "توجه باكرًا لتجنب مجموعات السياح. تتوفر أدلة صوتية. يمكن زيارة جبل يويلو القريب معًا.",
       "phone": "+86 731 8882 2352"
     },
     {
       "id": "orange-island",
       "name": "橘子洲",
-      "nameEn": "Orange Island",
+      "nameEn": "جزيرة البرتقال",
       "category": "nature",
-      "description": "A large island in the middle of Xiang River, famous for the massive statue of Chairman Mao and beautiful scenery. A symbol of Changsha and revolutionary history.",
+      "description": "جزيرة كبيرة في وسط نهر شيانغ، مشهورة بالمنحوتة الضخمة للرئيس ماو والمناظر الطبيعية الجميلة. رمز لتشانغشا والتاريخ الثوري.",
       "image": "/img/ext/8733f465de74.webp",
       "address": "岳麓区橘子洲头",
       "coordinates": {
@@ -94,47 +94,47 @@
         "lng": 112.9511
       },
       "openingHours": "07:00-22:00",
-      "ticketPrice": "Free (metro train 20¥)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "مجانية (تذكرة المترو 20¥)",
+      "recommendedVisitTime": "2-3 ساعات",
       "highlights": [
-        "Chairman Mao statue",
-        "Orange orchards",
-        "River views",
-        "Night fountain show"
+        "تمثال الرئيس ماو",
+        "بساتين البرتقال",
+        "مشاهد النهر",
+        "عرض النافورة الليلي"
       ],
-      "tips": "Take the scenic train to explore the island. Best at sunset for photos. The fountain show on weekends is spectacular. Wear comfortable walking shoes.",
+      "tips": "استقل القطار السياحي لاستكشاف الجزيرة. أفضل وقت للزيارة هو عند غروب الشمس لالتقاط الصور. عرض النافورة في عطلات نهاية الأسبوع مذهل. ارتدِ أحذية مريحة للمشي.",
       "phone": "+86 731 8888 2501"
     },
     {
       "id": "hunan-provincial-museum",
       "name": "湖南省博物馆",
-      "nameEn": "Hunan Provincial Museum",
+      "nameEn": "متحف مقاطعة هونان",
       "category": "cultural",
-      "description": "One of China's finest provincial museums, featuring the famous Mawangdui Han Dynasty tombs and artifacts. Home to the best preserved ancient corpses in China.",
+      "description": "واحدة من أفضل المتاحف الإقليمية في الصين، تعرض مقابر هان الإمبراطورية في ماوانغدوي والآثار المرتبطة بها. موطن لأفضل الجثث المحنطة المحفوظة في الصين.",
       "image": "/img/ext/638bc08b3f60.webp",
       "address": "开福区东风路50号",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9855
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free (timed entry required)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "09:00-17:00 (مغلق يوم الاثنين)",
+      "ticketPrice": "مجاني (يتطلب حجز موعد مسبق)",
+      "recommendedVisitTime": "2-3 ساعات",
       "highlights": [
-        "Mawangdui Han Tombs",
-        "Ancient silk artifacts",
-        "Bronze ware collection",
-        "Xiang River civilization"
+        "مقابر هان ماوانغدوي",
+        "قطع حريرية قديمة",
+        "مجموعة الأدوات البرونزية",
+        "حضارة نهر شيانغ"
       ],
-      "tips": "Book tickets online days in advance as they sell out quickly. The museum is often fully booked during holidays. Allocate at least 3 hours.",
+      "tips": "احجز التذاكر عبر الإنترنت قبل عدة أيام لأنها تنفد بسرعة. غالباً ما يكون المتحف محجوزاً بالكامل خلال العطلات. خصص ما لا يقل عن 3 ساعات.",
       "phone": "+86 073 1 3923 2563"
     },
     {
       "id": "tianxin-pavilion",
       "name": "天心阁",
-      "nameEn": "Tianxin Pavilion",
+      "nameEn": "برج تيانشين",
       "category": "historical",
-      "description": "An iconic historical landmark in the center of Changsha, offering views of the ancient city walls and modern city skyline. One of the few remaining ancient pavilions in Hunan.",
+      "description": "معلم تاريخي أيقوني في وسط تشانغشا يوفر إطلالات على أسوار المدينة القديمة وأفق المدينة الحديث. أحد أقدم الأجنحة المتبقية في هونان.",
       "image": "/img/ext/d10b28c637ef.webp",
       "address": "天心区天心路17号",
       "coordinates": {
@@ -143,46 +143,46 @@
       },
       "openingHours": "08:00-17:30",
       "ticketPrice": "32¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 ساعة",
       "highlights": [
-        "Ancient city wall",
-        "Pavilion architecture",
-        "Ginkgo trees",
-        "City views"
+        "جدار المدينة القديم",
+        "هندسة الجناح",
+        "أشجار الجنكة",
+        "مناظر المدينة"
       ],
-      "tips": "Best visited in autumn when the ginkgo trees turn golden. The surrounding Tianxin Park is free to enter. Nice evening walk along the ancient walls.",
+      "tips": "أفضل زيارة في الخريف عندما يتحول أشجار الجنكة إلى اللون الذهبي. حديقة تيانسين المحيطة مجانية للدخول. نزهة جميلة沿着 along the ancient walls.",
       "phone": "+86 731 8515 5379"
     },
     {
       "id": "huangxing-road",
       "name": "黄兴路步行街",
-      "nameEn": "Huangxing Road Pedestrian Street",
+      "nameEn": "شارع هوانغ شينغ للمشاة",
       "category": "shopping",
-      "description": "Changsha's most famous shopping and entertainment district, featuring a mix of modern malls, traditional shops, and local street food. A vibrant pedestrian area full of energy.",
+      "description": "أشهر منطقة تسوق وترفيه في تشانغشا، تتميز بمزيج من المراكز التجارية الحديثة والمتاجر التقليدية والطعام الشعبي المحلي. منطقة مشاة نابضة بالحياة.",
       "image": "/img/ext/ee54122c9170.webp",
       "address": "芙蓉区黄兴路",
       "coordinates": {
         "lat": 28.2282,
         "lng": 112.9388
       },
-      "openingHours": "24 hours (shops typically 10:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24 ساعة (عادة المحلات 10:00-22:00)",
+      "ticketPrice": "مجاني",
+      "recommendedVisitTime": "2-3 ساعات",
       "highlights": [
-        "Street food stalls",
-        "Historic shops",
+        "مأكولات الباعة المتجولين",
+        "متاجر تاريخية",
         "潮流购物",
-        "Architecture mix"
+        "تنوع في الهندسة المعمارية"
       ],
-      "tips": "Best visited in the evening when illuminated. Try local snacks from street vendors. Connected to other shopping areas nearby.",
+      "tips": "يُفضل الزيارة في المساء عند الإضاءة. جرب المأكولات المحلية من الباعة المتجولين. متصل بمناطق التسوق الأخرى القريبة.",
       "phone": "+86 073 1 8309 4750"
     },
     {
       "id": "huogong-temple",
       "name": "火宫殿",
-      "nameEn": "Huogong Temple",
+      "nameEn": "معبد هوو قونغ",
       "category": "culture",
-      "description": "A historic temple dedicated to the fire god and now a famous food complex serving authentic Hunan cuisine. A must-visit for understanding Changsha's food culture.",
+      "description": "معبد تاريخي مكرس لإله النار، وأصبح مجمعًا غذائيًا مشهورًا يقدم المطبخ الهوناني الأصيل. زيارة ضرورية لفهم ثقافة الطعام في تشانغشا.",
       "image": "/img/ext/15630de9f39c.webp",
       "address": "天心区坡子街127号",
       "coordinates": {
@@ -190,71 +190,71 @@
         "lng": 112.9677
       },
       "openingHours": "10:00-21:00",
-      "ticketPrice": "Free (food separate)",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "مجاني (الطعام منفصل)",
+      "recommendedVisitTime": "1-2 ساعة",
       "highlights": [
-        "Fire god temple",
-        "Hunan snacks",
-        "Traditional performances",
-        "Ancient architecture"
+        "معبد إله النار",
+        "وجبات خفيفة هونانية",
+        "عروض تقليدية",
+        "عمارة قديمة"
       ],
-      "tips": "Come hungry to sample the many Hunan snacks. The temple itself is interesting but the food is the main attraction. Try the stinky tofu here.",
+      "tips": "تعال جائعًا لتذوق العديد من الوجبات الخفيفة الهونانية. المعبد نفسه مثير للاهتمام لكن الطعام هو الجاذبية الرئيسية. جرب السمك التوفو الكريه هنا.",
       "phone": "+86 073 1 2238 4920"
     },
     {
       "id": "taiping-street",
       "name": "太平街",
-      "nameEn": "Taiping Street",
+      "nameEn": "شارع تايبينغ",
       "category": "culture",
-      "description": "A historic street preserving traditional architecture with modern shops and cafes. One of Changsha's most charming cultural districts with preserved Ming-Qing style buildings.",
+      "description": "شارع تاريخي يحافظ على العمارة التقليدية مع متاجر ومقاهي حديثة. أحد أكثر الأحياء الثقافية سحرًا في تشانغشا مع مباني محفوظة على الطراز مينغ-تشينغ.",
       "image": "/img/ext/cffd90307863.webp",
       "address": "天心区太平街",
       "coordinates": {
         "lat": 28.2266,
         "lng": 112.9655
       },
-      "openingHours": "24 hours (shops typically 10:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24 ساعة (المتاجر عادة 10:00-22:00)",
+      "ticketPrice": "مجاني",
+      "recommendedVisitTime": "1-2 ساعة",
       "highlights": [
-        "Traditional architecture",
-        "Local crafts",
-        "Cafes and bars",
-        "Jiangliang ancestral hall"
+        "العمارة التقليدية",
+        "الحرف اليدوية المحلية",
+        "المقاهي والحانات",
+        "قاعة جيانغليانغ الأثرية"
       ],
-      "tips": "Best explored on foot to appreciate the preserved buildings. Visit in late afternoon and stay for evening ambiance. Good for souvenirs and local crafts.",
+      "tips": "أفضل طريقة لاستكشافها هي سيرًا على الأقدام للاستمتاع بالمباني المحفوظة. قم بزيارتها في وقت متأخر بعد الظهر وابقَ للاستمتاع بالأجواء المسائية. جيدة للتذكارات والحرف اليدوية المحلية.",
       "phone": "+86 073 1 2155 5931"
     },
     {
       "id": "pozijie",
       "name": "坡子街",
-      "nameEn": "Pozi Street",
+      "nameEn": "شارع بوزي",
       "category": "culture",
-      "description": "One of Changsha's oldest streets, famous for traditional Hunan food and local snacks. The street has over 300 years of history and is a food lover's paradise.",
+      "description": "واحدة من أقدم شوارع تشانغشا، مشهورة بالمأكولات الهونانية التقليدية والوجبات الخفيفة المحلية. عمر الشارع أكثر من 300 عام وهو جنة لعشاق الطعام.",
       "image": "/img/ext/c21b3ef841bb.webp",
       "address": "天心区坡子街",
       "coordinates": {
         "lat": 28.225,
         "lng": 112.9677
       },
-      "openingHours": "24 hours (shops typically 10:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24 ساعة (المتاجر عادة 10:00-22:00)",
+      "ticketPrice": "مجاني",
+      "recommendedVisitTime": "1-2 ساعة",
       "highlights": [
-        "Old street atmosphere",
-        "Food stalls",
-        "Traditional medicine shops",
-        "Fire god temple nearby"
+        "جو الشارع القديم",
+        "أكشاك الطعام",
+        "محلات الطب التقليدي",
+        "معبد إله النار القريب"
       ],
-      "tips": "Join the locals for evening food tours. Try 老字号 shops for authentic taste. Connected to Taiping Street and Huogong Temple.",
+      "tips": "انضم إلى السكان المحليين في جولات الطعام المسائية. جرب متاجر 老字号 للحصول على الطعم الأصيل. متصلة بسوق تايبيينغ و معبد هوو غونغ.",
       "phone": "+86 073 1 0497 3000"
     },
     {
       "id": "mawangdui",
       "name": "马王堆汉墓",
-      "nameEn": "Mawangdui Han Tombs",
+      "nameEn": "مقابر هان ماوانغدوي",
       "category": "historical",
-      "description": "The archaeological site of Mawangdui, where three Han dynasty tombs were discovered with incredibly well-preserved artifacts including the world's oldest silk map and the Lady of Dai.",
+      "description": "موقع ماوانغدوي الأثري، حيث تم اكتشاف ثلاثة مقابر من عهد أسرة هان مع آثار محفوظة بشكل مذهل بما في ذلك أقدم خريطة حريرية في العالم وسيدة داي.",
       "image": "/img/ext/9f722738cae7.webp",
       "address": "芙蓉区古汉路89号",
       "coordinates": {
@@ -262,23 +262,23 @@
         "lng": 112.9855
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "Free (included with Provincial Museum ticket)",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "مجانية (تتضمنها تذكرة المتحف الإقليمي)",
+      "recommendedVisitTime": "1-2 ساعة",
       "highlights": [
-        "Ancient tomb site",
-        "Well-preserved artifacts",
-        "Silk artifacts",
-        "Ancient medical texts"
+        "موقع المقبرة القديمة",
+        "قطع أثرية محفوظة بشكل جيد",
+        "قطع أثرية حريرية",
+        "نصوص طبية قديمة"
       ],
-      "tips": "Often visited together with Hunan Provincial Museum. The tomb pits are fascinating. The site shows what archaeological work looks like.",
+      "tips": "غالبًا ما تتم زيارتها مع متحف هونان الإقليمي. حفر القبور مثيرة للاهتمام. الموقع يظهر ما تبدو عليه أعمال التنقيب الأثري.",
       "phone": "+86 073 1 1897 4653"
     },
     {
       "id": "hanjiang possibility",
       "name": "汉墓遗址",
-      "nameEn": "Mawangdui Archaeological Site",
+      "nameEn": "الموقع الأثري ماوانغدوي",
       "category": "historical",
-      "description": "The excavation site of the Mawangdui tombs, offering insight into Han dynasty burial practices and the lives of the aristocracy over 2,000 years ago.",
+      "description": "موقع حفر قبور ماوانغدوي، الذي يقدم نظرة على ممارسات الدفن في عهد أسرة هان وحياة النبلاء منذ أكثر من 2000 عام.",
       "image": "/img/ext/3810eb812d12.webp",
       "address": "芙蓉区古汉路",
       "coordinates": {
@@ -286,47 +286,47 @@
         "lng": 112.9855
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "مجاني",
+      "recommendedVisitTime": "ساعة واحدة",
       "highlights": [
-        "Tomb number 1, 2, 3",
-        "Excavation site",
-        "Ancient artifacts display",
-        "Educational exhibits"
+        "قبور رقم 1، 2، 3",
+        "موقع الحفر",
+        "عرض القطع الأثرية القديمة",
+        "معروضات تعليمية"
       ],
-      "tips": "Visit after the Provincial Museum for a complete picture. The tomb pits are open for viewing. Excellent for history enthusiasts.",
+      "tips": "قم بزيارة المتحف المقامي أولاً للحصول على صورة كاملة. حفر القبور مفتوحة للعرض. مثالي لعشاق التاريخ.",
       "phone": "+86 073 1 8133 7979"
     },
     {
       "id": "meitan lake",
       "name": "梅溪湖",
-      "nameEn": "Meitan Lake",
+      "nameEn": "بحيرة ميتان",
       "category": "nature",
-      "description": "A beautiful artificial lake in the Yuelu district with surrounding parks, art centers, and the famous Meitan Lake Grand Theatre. A modern cultural and recreational area.",
+      "description": "بحيرة اصطناعية جميلة في منطقة يويلو مع حدائق محيطة ومراكز فنية ومسرح ميتان الكبير الشهير. منطقة حديثة للترفيه والثقافة.",
       "image": "/img/ext/210f5c0ab0a9.webp",
       "address": "岳麓区梅溪湖",
       "coordinates": {
         "lat": 28.1818,
         "lng": 112.9111
       },
-      "openingHours": "24 hours (buildings vary)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24 ساعة (المباني تختلف)",
+      "ticketPrice": "مجاني",
+      "recommendedVisitTime": "2-3 ساعات",
       "highlights": [
-        "Grand Theatre",
-        "Musical fountain",
-        "Island attractions",
-        "Art galleries"
+        "المسرح الكبير",
+        "نافورة موسيقية",
+        "الجزر الجاذبة",
+        "المعارض الفنية"
       ],
-      "tips": "Best visited in the evening for the fountain show. The walking path around the lake is pleasant. Combine with nearby Yuelu Mountain.",
+      "tips": "أفضل وقت للزيارة هو في المساء لمشاهدة عرض النافورة. المسار حول البحيرة ممتع. يمكن الجمع بينها وبين زيارة جبل يويلو القريب.",
       "phone": "+86 073 1 1327 2622"
     },
     {
       "id": "dufu-pavilion",
       "name": "杜甫江阁",
-      "nameEn": "Du Fu Pavilion",
+      "nameEn": "جناح دو فو",
       "category": "historical",
-      "description": "A pavilion built in memory of the famous Tang dynasty poet Du Fu, who lived in Changsha. Offers beautiful views of Xiang River and the city skyline.",
+      "description": "جناح بُني تخليداً لذكرى الشاعر الشهير دو فو من أسرة تانغ، الذي عاش في تشانغشا. يوفر إطلالات جميلة على نهر شيانغ ومدينة أفق.",
       "image": "/img/ext/a6e176e9ca1c.webp",
       "address": "天心区白沙路",
       "coordinates": {
@@ -335,22 +335,22 @@
       },
       "openingHours": "09:00-21:00",
       "ticketPrice": "15¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "ساعة واحدة",
       "highlights": [
-        "Poetry inscriptions",
-        "River views",
-        "Du Fu history",
-        "Night illumination"
+        "النقوش الشعرية",
+        "مشاهد النهر",
+        "تاريخ دو فو",
+        "الإضاءة الليلية"
       ],
-      "tips": "Best visited at sunset or at night when illuminated. The surrounding area has good walking paths along the river. Nice for photography.",
+      "tips": "أفضل وقت للزيارة هو عند غروب الشمس أو في الليل عندما يكون مضاءً. المنطقة المحيطة بها مسارات جيدة للمشي على طول النهر. مناسبة للتصوير.",
       "phone": "+86 073 1 0821 4822"
     },
     {
       "id": "yunong-guzhen",
       "name": "云拢古村",
-      "nameEn": "Yunong Ancient Village",
+      "nameEn": "قرية يونونغ القديمة",
       "category": "culture",
-      "description": "A well-preserved ancient village near Changsha with traditional architecture, folk customs, and rural scenery. Offers an escape from the modern city.",
+      "description": "قرية قديمة محفوظة جيداً بالقرب من تشانغشا مع العمارة التقليدية والعادات الشعبية والمناظر الريفية. تقدم هروباً من المدينة الحديثة.",
       "image": "/img/ext/e7b07db4941f.webp",
       "address": "望城区云拢镇",
       "coordinates": {
@@ -359,46 +359,46 @@
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "Half day",
+      "recommendedVisitTime": "نصف يوم",
       "highlights": [
-        "Ancient architecture",
-        "Folk performances",
-        "Rural scenery",
-        "Traditional crafts"
+        "العمارة القديمة",
+        "العروض الشعبية",
+        "المناظر الريفية",
+        "الحرف التقليدية"
       ],
-      "tips": "Good for a day trip from the city. Arrive early for folk performances. Wear comfortable shoes for walking on uneven paths.",
+      "tips": "مناسبة لرحلة ليوم واحد من المدينة. الوصول مبكراً لمشاهدة العروض الشعبية. ارتدِ أحذية مريحة للمشي على المسارات غير المستوية.",
       "phone": "+86 073 1 3846 2839"
     },
     {
       "id": "shijin-hutong",
       "name": "石井胡同",
-      "nameEn": "Shijing Hutong",
+      "nameEn": "حي شيجين هوتونغ",
       "category": "culture",
-      "description": "A restored historic hutong (alley) area showcasing traditional Changsha architecture and lifestyle. Now houses boutique shops and cafes.",
+      "description": "منطقة هوتونغ (زقاق) تاريخية أعيد ترميمها تعرض العمارة التقليدية وأسلوب الحياة في تشانغشا. الآن تحتوي على متاجر صغيرة ومقاهي.",
       "image": "/img/ext/5d73650c917a.webp",
       "address": "天心区",
       "coordinates": {
         "lat": 28.2255,
         "lng": 112.9694
       },
-      "openingHours": "24 hours (shops vary)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24 ساعة (المتاجر تختلف)",
+      "ticketPrice": "مجاني",
+      "recommendedVisitTime": "1-2 ساعة",
       "highlights": [
-        "Traditional architecture",
-        "Boutique shops",
-        "Local art",
-        "Photo opportunities"
+        "العمارة التقليدية",
+        "محلات تجارية boutique",
+        "فنون محلية",
+        "فرص للتصوير الفوتوغرافي"
       ],
-      "tips": "Best for photography enthusiasts. The restored buildings are beautiful. Visit in good weather for best photos.",
+      "tips": "أفضل للمهتمين بالتصوير. المباني المعاد ترميمها جميلة. زيارة في طقس جيد للحصول على أفضل الصور.",
       "phone": "+86 073 1 5509 6382"
     },
     {
       "id": "changsha-aquarium",
       "name": "长沙海底世界",
-      "nameEn": "Changsha Aquarium",
+      "nameEn": "حوض تشانغشا للأحياء المائية",
       "category": "entertainment",
-      "description": "A large aquarium with diverse marine life, dolphin shows, and interactive exhibits. Popular with families and children.",
+      "description": "حوض كبير للأحياء المائية يضم تنوعًا غنيًا من الحياة البحرية وعروض الدلافين ومعروضات تفاعلية. شعبي بين العائلات والأطفال.",
       "image": "/img/ext/e31ec5f25b12.webp",
       "address": "开福区319国道",
       "coordinates": {
@@ -407,46 +407,46 @@
       },
       "openingHours": "08:30-17:30",
       "ticketPrice": "150¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4 ساعات",
       "highlights": [
-        "Dolphin shows",
-        "Shark tanks",
-        "Reef tunnel",
-        "Seal performances"
+        "عروض الدلافين",
+        "أحواض القرش",
+        "نفق الحيد المرجاني",
+        "عروض الفقمات"
       ],
-      "tips": "Check show times when you arrive. Weekends are crowded. Combine with nearby Furong Ancient Town.",
+      "tips": "تحقق من مواعيد العروض عند وصولك. تكون عطلات نهاية الأسبوع مزدحمة. يمكنك دمجها مع البلدة القديمة فورونغ القريبة.",
       "phone": "+86 073 1 7488 2637"
     },
     {
       "id": "furong-ancient-town",
       "name": "芙蓉古镇",
-      "nameEn": "Furong Ancient Town",
+      "nameEn": "البلدة القديمة فورونغ",
       "category": "culture",
-      "description": "A scenic ancient town built around a waterfall, known as the '挂在瀑布上的千年古镇'. Famous for its unique architecture and Hakka culture.",
+      "description": "بلدة قديمة ساحرة مبنية حول شلال، تُعرف باسم 'بلدة الألفية المعلقة على الشلال'. مشهورة بهندستها الفريدة وثقافة الهكا.",
       "image": "/img/ext/91174fa8f3eb.webp",
-      "address": "永定区 (near Changsha)",
+      "address": "永定区 (قرب تشانغشا)",
       "coordinates": {
         "lat": 28.5511,
         "lng": 112.8811
       },
       "openingHours": "全天",
       "ticketPrice": "100¥",
-      "recommendedVisitTime": "Half day to full day",
+      "recommendedVisitTime": "نصف يوم إلى يوم كامل",
       "highlights": [
-        "Waterfall through town",
-        "Hakka architecture",
-        "Traditional performances",
-        "Night views"
+        "شلال يعبر البلدة",
+        "عمارة هاكا",
+        "عروض تقليدية",
+        "المناظر الليلية"
       ],
-      "tips": "About 2 hours from Changsha. Stay overnight for the illuminated waterfall. Try local Hakka dishes. Best in dry season (autumn).",
+      "tips": "حوالي ساعتين من تشانغشا. الإقامة الليلية لمشاهدة الشلال المضيء. جرب الأطباق المحلية من ثقافة هاكا. الأفضل في موسم الجفاف (الخريف).",
       "phone": "+86 073 1 7835 4427"
     },
     {
       "id": "hunan-martyrs-park",
       "name": "湖南烈士公园",
-      "nameEn": "Hunan Martyrs Park",
+      "nameEn": "حديقة شهداء هونان",
       "category": "nature",
-      "description": "Changsha's largest park featuring a memorial tower, beautiful gardens, and a large lake. A peaceful retreat in the heart of the city.",
+      "description": "أكبر حديقة في تشانغشا تتميز ببرج التذكار وحدائق جميلة وبحيرة كبيرة. ملاذ هادئ في قلب المدينة.",
       "image": "/img/ext/efec80f61420.webp",
       "address": "开福区营盘东路",
       "coordinates": {
@@ -454,23 +454,23 @@
         "lng": 112.9755
       },
       "openingHours": "06:00-22:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "مجاني",
+      "recommendedVisitTime": "2-3 ساعات",
       "highlights": [
-        "Martyrs Tower",
-        "Peony garden",
-        "Lake boating",
-        "Morning tai chi"
+        "برج الشهداء",
+        "حديقة الفاوانيا",
+        "التجديف في البحيرة",
+        "التشايو الصباحي"
       ],
-      "tips": "Join locals doing tai chi in the early morning. The memorial tower is impressive. Great for a morning walk or afternoon relaxation.",
+      "tips": "انضم إلى السكان المحليين لممارسة التاي تشي في الصباح الباكر. برج التذكار مثير للإعجاب. رائع للمشي الصباحي أو الاسترخاء بعد الظهر.",
       "phone": "+86 073 1 3102 6543"
     },
     {
       "id": "xihu Scenic",
       "name": "西湖公园",
-      "nameEn": "Xihu Park",
+      "nameEn": "حديقة شيهو",
       "category": "nature",
-      "description": "A scenic urban park with beautiful lake, gardens, and modern amenities. Popular with locals for morning exercise and evening strolls.",
+      "description": "حديقة حضرية خلابة مع بحيرة جميلة وحدائق ومرافق حديثة. تحظى بشعبية بين السكان المحليين للتمارين الصباحية والمساء.",
       "image": "/img/ext/2393a80aa04e.webp",
       "address": "岳麓区西湖公园",
       "coordinates": {
@@ -478,23 +478,23 @@
         "lng": 112.9255
       },
       "openingHours": "06:00-22:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "مجاني",
+      "recommendedVisitTime": "1-2 ساعة",
       "highlights": [
-        "Lake views",
-        "Garden landscapes",
-        "Fountain show",
-        "Cafes nearby"
+        "إطلالات على البحيرة",
+        "مناظر الحدائق",
+        "عرض النافورة",
+        "مقاهٍ قريبة"
       ],
-      "tips": "Good for a quiet morning or evening walk. The surrounding area has good cafes. Less crowded than Martyrs Park.",
+      "tips": "جيد للمشي الهادئ في الصباح أو المساء. المنطقة المحيطة بها مقاهٍ جيدة. أقل ازدحامًا من حديقة الشهيد.",
       "phone": "+86 073 1 3249 8268"
     },
     {
       "id": "lushan-national-forest",
       "name": "芦山国家森林公园",
-      "nameEn": "Lushan National Forest Park",
+      "nameEn": "منتزه لوشان الوطني للغابات",
       "category": "nature",
-      "description": "A scenic forest area near Changsha with hiking trails, ancient temples, and beautiful natural scenery. Good for day trips and outdoor activities.",
+      "description": "منطقة غابية خلابة بالقرب من تشانغشا مع مسارات المشي ومعابد قديمة ومناظر طبيعية جميلة. مناسب للرحلات اليومية والأنشطة الخارجية.",
       "image": "/img/ext/de8344d0ae00.webp",
       "address": "长沙县江背镇",
       "coordinates": {
@@ -503,46 +503,46 @@
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "Half day",
+      "recommendedVisitTime": "نصف يوم",
       "highlights": [
-        "Forest trails",
-        "Ancient temple",
-        "Fresh air",
-        "Wildlife"
+        "مسارات الغابة",
+        "معبد قديم",
+        "هواء نقي",
+        "الحياة البرية"
       ],
-      "tips": "Wear hiking shoes. Bring water and snacks. Best visited in spring for flowers or autumn for foliage.",
+      "tips": "ارتدِ أحذية المشي. أحضر الماء والوجبات الخفيفة. يُفضل الزيارة في الربيع لمشاهدة الأزهار أو في الخريف لألوان أوراق الشجر.",
       "phone": "+86 073 1 0474 1299"
     },
     {
       "id": "changsha-window-world",
       "name": "长沙世界之窗",
-      "nameEn": "Changsha Window of the World",
+      "nameEn": "تشانغشا ويند أوف ذا وورلد",
       "category": "entertainment",
-      "description": "A theme park featuring miniature world landmarks, thrilling rides, and cultural performances. Popular family entertainment destination.",
+      "description": "منتزه ترفيهي يضم معالم عالمية مصغرة، ألعاب مثيرة وعروض ثقافية. وجهة ترفيهية عائلية شهيرة.",
       "image": "/img/ext/a7c6252a19c7.webp",
       "address": "开福区三一大道485号",
       "coordinates": {
         "lat": 28.2511,
         "lng": 112.9455
       },
-      "openingHours": "09:00-22:00 (seasonal)",
+      "openingHours": "09:00-22:00 (موسمي)",
       "ticketPrice": "130¥",
-      "recommendedVisitTime": "Full day",
+      "recommendedVisitTime": "يوم كامل",
       "highlights": [
-        "Miniature world landmarks",
-        "Thrilling rides",
-        "Evening shows",
-        "Water park"
+        "معالم عالمية مصغرة",
+        "ألعاب مثيرة",
+        "عروض مسائية",
+        "منتزه مائي"
       ],
-      "tips": "Book tickets online. Best visited in spring and autumn. Evening shows are spectacular. Combine with nearby Hunan Martyrs Park.",
+      "tips": "احجز التذاكر إلكترونياً. يُفضل الزيارة في الربيع والخريف. العروض المسائية مذهلة. تجمعها مع زيارة حديقة شهداء خونان القريبة.",
       "phone": "+86 073 1 9217 1931"
     },
     {
       "id": "changsha-yuelu-shan-science",
       "name": "岳麓山索道",
-      "nameEn": "Yuelu Mountain Cable Car",
+      "nameEn": "تلفريك جبل ييلو",
       "category": "nature",
-      "description": "Scenic cable car ride offering panoramic views of Changsha and Yuelu Mountain. A popular way to reach the mountain summit.",
+      "description": "رحلة تلفريك ساحرة توفر إطلالات بانورامية على مدينة تشانغشا وجبل ييلو. طريقة شائعة للوصول إلى قمة الجبل.",
       "image": "/img/ext/3efdb161d46b.webp",
       "address": "岳麓区岳麓山",
       "coordinates": {
@@ -550,71 +550,71 @@
         "lng": 112.9444
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "30¥ (one way), 50¥ (round trip)",
-      "recommendedVisitTime": "30 minutes",
+      "ticketPrice": "30¥ (ذهاب فقط)، 50¥ (ذهاب وعودة)",
+      "recommendedVisitTime": "30 دقيقة",
       "highlights": [
-        "Panoramic views",
-        "Aerial scenery",
-        "Mountain summit access",
-        "Photo opportunities"
+        "إطلالات بانورامية",
+        "منظر جوي",
+        "الوصول إلى قمة الجبل",
+        "فرص للتصوير الفوتوغرافي"
       ],
-      "tips": "Combine with Yuelu Mountain visit. Best on clear days. Morning rides have less fog. Can walk down for different views.",
+      "tips": "قم بدمجها مع زيارة جبل يويلو. الأفضل في الأيام الصافية. تقلل الرحلات الصباحية من الضباب. يمكنك المشي للأسفل لمشاهدة مناظر مختلفة.",
       "phone": "+86 731 8882 5011"
     },
     {
       "id": "changsha-bamboo-lake",
       "name": "湘江竹江",
-      "nameEn": "Xiang River Bamboo Grove",
+      "nameEn": "غابة الخيزران على نهر شيانغ",
       "category": "nature",
-      "description": "A scenic riverside area with bamboo groves along the Xiang River, offering peaceful walking paths and beautiful river views.",
+      "description": "منطقة ساحلية خلابة على ضفاف النهر مع غابات خيزران على طول نهر شيانغ، توفر مسارات مشي هادئة ومناظر نهرية جميلة.",
       "image": "/img/ext/90ffa0b7fcde.webp",
       "address": "岳麓区潇湘大道",
       "coordinates": {
         "lat": 28.2111,
         "lng": 112.9511
       },
-      "openingHours": "24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24 ساعة",
+      "ticketPrice": "مجاني",
+      "recommendedVisitTime": "1-2 ساعة",
       "highlights": [
-        "Bamboo paths",
-        "River views",
-        "Sunset scenery",
-        "Quiet atmosphere"
+        "ممرات الخيزران",
+        "مشاهد النهر",
+        "مناظر الغروب",
+        "جو هادئ"
       ],
-      "tips": "Best at sunset. The bamboo grove creates a peaceful atmosphere. Good for photography and morning walks. Connected to Yuelu Mountain area.",
+      "tips": "الأفضل عند غروب الشمس. تخلق غابة الخيزران أجواء هادئة. جيدة للتصوير والمشي الصباحي. متصلة بمنطقة جبل يويلو.",
       "phone": "+86 073 1 7161 0293"
     },
     {
       "id": "changsha-cultural-art",
       "name": "谢子龙影像艺术馆",
-      "nameEn": "Xie Zilong Photography Museum",
+      "nameEn": "متحف شيه زيلونغ للتصوير الفوتوغرافي",
       "category": "cultural",
-      "description": "A modern photography museum showcasing Chinese photography history and contemporary works. The building itself is architecturally significant.",
+      "description": "متحف حديث للتصوير الفوتوغرافي يعرض تاريخ التصوير الفوتوغرافي الصيني والأعمال المعاصرة. المبنى نفسه ذو أهمية معمارية.",
       "image": "/img/ext/644539ba9bec.webp",
       "address": "岳麓区潇湘南路",
       "coordinates": {
         "lat": 28.1811,
         "lng": 112.9088
       },
-      "openingHours": "10:00-18:00 (Closed Monday)",
-      "ticketPrice": "80¥ (exhibitions vary)",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "10:00-18:00 (مغلق يوم الاثنين)",
+      "ticketPrice": "80¥ (تختلف المعارض)",
+      "recommendedVisitTime": "1-2 ساعة",
       "highlights": [
-        "Photography exhibitions",
-        "Modern architecture",
-        "Art books cafe",
-        "Photography archives"
+        "معارض التصوير الفوتوغرافي",
+        "هندسة معمارية حديثة",
+        "مقهى الكتب الفنية",
+        "أرشيفات التصوير الفوتوغرافي"
       ],
-      "tips": "Check exhibition schedule online. The exterior is great for photos. Near Meitan Lake. Combine with Meitan Lake Grand Theatre.",
+      "tips": "تحقق من جدول المعارض عبر الإنترنت. الواجهة مثالية للتصوير الفوتوغرافي. بالقرب من بحيرة ميتان. اجمعه مع مسرح بحيرة ميتان الكبير.",
       "phone": "+86 073 1 3208 1703"
     },
     {
       "id": "changsha-ifc-tower",
       "name": "长沙IFS国金中心",
-      "nameEn": "Changsha IFS Tower",
+      "nameEn": "برج تشانغشا IFS",
       "category": "shopping",
-      "description": "Changsha's tallest building and premier luxury shopping destination with international brands, rooftop observation deck, and art installations.",
+      "description": "أطول مبنى في تشانغشا ووجهة التسوق الفاخر الأولى التي تضم علامات تجارية دولية، إضافة إلى مرصد السطح وتركيبات فنية.",
       "image": "/img/ext/8fc80514ea39.webp",
       "address": "芙蓉区解放西路",
       "coordinates": {
@@ -622,47 +622,47 @@
         "lng": 112.9388
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "Free (observation deck 100¥)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "مجاني (منصة المراقبة 100 يوان)",
+      "recommendedVisitTime": "2-3 ساعات",
       "highlights": [
-        "Observation deck views",
-        "Luxury brands",
-        "KAWS art installation",
-        "Rooftop bar"
+        "إطلالات من منصة المراقبة",
+        "علامات تجارية فاخرة",
+        "تركيب فني لـ KAWS",
+        "بار على السطح"
       ],
-      "tips": "Book observation deck tickets online. The KAWS statue on the roof is iconic. Best at sunset or night. Great for luxury shopping.",
+      "tips": "احجز تذاكر منصة المراقبة عبر الإنترنت. تمثال KAWS على السطح أيقوني. الأفضل عند الغروب أو الليل. رائع للتسوق الفاخر.",
       "phone": "+86 073 1 7920 2492"
     },
     {
       "id": "changsha-grand-theatre",
       "name": "梅溪湖大剧院",
-      "nameEn": "Meitan Lake Grand Theatre",
+      "nameEn": "مسرح بحيرة ميتان الكبير",
       "category": "cultural",
-      "description": "A stunning architectural landmark designed by Zaha Hadid, hosting world-class performances and cultural events.",
+      "description": "معلم معماري مذهل صممته زها حديد، يستضيف عروضاً عالمية المستوى وفعاليات ثقافية.",
       "image": "/img/ext/b7de30e86f3f.webp",
       "address": "岳麓区梅溪湖",
       "coordinates": {
         "lat": 28.1818,
         "lng": 112.9111
       },
-      "openingHours": "09:00-20:00 (performances vary)",
-      "ticketPrice": "Performance tickets vary (100-500¥)",
-      "recommendedVisitTime": "2-3 hours (for performance)",
+      "openingHours": "09:00-20:00 (تختلف العروض)",
+      "ticketPrice": "تختلف أسعار التذاكر (100-500¥)",
+      "recommendedVisitTime": "2-3 ساعات (للعرض)",
       "highlights": [
-        "Zaha Hadid architecture",
-        "World-class performances",
-        "Musical fountain",
-        "Evening lighting"
+        "هندسة زها حديد",
+        "عروض عالمية المستوى",
+        "نافورة موسيقية",
+        "إضاءة الليل"
       ],
-      "tips": "Book tickets in advance for popular shows. The building is impressive even without attending a performance. Combine with Meitan Lake walk.",
+      "tips": "احجز تذاكرك مسبقاً للعروض الشعبية. المبنى مذهل حتى بدون حضور عرض. امزجه مع نزهة حول بحيرة ميتان.",
       "phone": "+86 073 1 5960 7397"
     },
     {
       "id": "changsha-wangcheng",
       "name": "望城古镇",
-      "nameEn": "Wangcheng Ancient Town",
+      "nameEn": "وانغ تشانغ القديمة",
       "category": "culture",
-      "description": "A historic town with well-preserved Qing dynasty architecture, traditional crafts, and authentic Hunan rural culture.",
+      "description": "بلدية تاريخية تتميز بهندسة أسرة تشينغ المحفوظة جيداً والحرف التقليدية وثقافة هو نان الريفية الأصيلة",
       "image": "/img/ext/33ffc82d9d5b.webp",
       "address": "望城区靖港镇",
       "coordinates": {
@@ -671,44 +671,44 @@
       },
       "openingHours": "08:30-17:30",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "Half day",
+      "recommendedVisitTime": "نصف يوم",
       "highlights": [
-        "Ancient architecture",
-        "Traditional crafts",
-        "Local snacks",
-        "River views"
+        "هندسة قديمة",
+        "حرف تقليدية",
+        "وجبات خفيفة محلية",
+        "مناظر النهر"
       ],
-      "tips": "About 1 hour from Changsha city. Try local snacks. Best on weekdays. Combine with nearby Tongguan for a full day trip.",
+      "tips": "حوالي ساعة واحدة من مدينة تشانغشا. جرب الوجبات الخفيفة المحلية. الأفضل في أيام الأسبوع. اجمعها مع تونغغوان المجاورة ليوم كامل.",
       "phone": "+86 073 1 2959 5891"
     },
     {
       "id": "changsha-baisha-shuyuan",
       "name": "白沙古井",
-      "nameEn": "Baisha Ancient Well",
+      "nameEn": "بايشا بئر قديم",
       "category": "cultural",
-      "description": "A historic well that has been providing water to Changsha for over 1000 years, surrounded by traditional temples and tea houses.",
+      "description": "بئر تاريخي يوفر المياه لمدينة تشانغشا منذ أكثر من 1000 عام، محاط بمعابد تقليدية ومنازل شاي.",
       "image": "/img/ext/714c29b2696b.webp",
       "address": "天心区白沙路",
       "coordinates": {
         "lat": 28.2311,
         "lng": 112.9555
       },
-      "openingHours": "24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "30 minutes",
+      "openingHours": "24 ساعة",
+      "ticketPrice": "مجاني",
+      "recommendedVisitTime": "30 دقيقة",
       "highlights": [
-        "Ancient well",
-        "Traditional temples",
-        "Tea houses",
-        "Local residents"
+        "بئر قديم",
+        "معابد تقليدية",
+        "منازل شاي",
+        "المقيمون المحليون"
       ],
-      "tips": "Part of local daily life - locals still collect water here. Near Du Fu Pavilion. Good for cultural immersion. Best in morning.",
+      "tips": "جزء من الحياة اليومية المحلية - لا يزال السكان المحليون يجلبون الماء من هنا. بالقرب من كوخ دوفو. جيد للانغماس الثقافي. الأفضل في الصباح.",
       "phone": "+86 073 1 8655 0650"
     },
     {
       "id": "tianxin-ge",
       "name": "天心阁",
-      "nameEn": "Tianxin Pavilion",
+      "nameEn": "برج تيانشين",
       "category": "landmark",
       "description": "长沙古城墙上的阁楼，有2000多年历史。",
       "address": "长沙市天心区",
@@ -730,7 +730,7 @@
     {
       "id": "he-long-stadium",
       "name": "贺龙体育场",
-      "nameEn": "He Long Stadium",
+      "nameEn": "ملعب هي لونغ",
       "category": "landmark",
       "description": "长沙的标志性建筑之一。",
       "address": "长沙市天心区",
@@ -751,7 +751,7 @@
     {
       "id": "jiefang-road",
       "name": "解放西路",
-      "nameEn": "Jiefang West Road",
+      "nameEn": "طريق جيفانغ الغربي",
       "category": "street",
       "description": "长沙最繁华的商业街，有酒吧一条街。",
       "address": "长沙市芙蓉区",
@@ -773,7 +773,7 @@
     {
       "id": "wuyi-square",
       "name": "五一广场",
-      "nameEn": "Wuyi Square",
+      "nameEn": "ساحة ويوي",
       "category": "landmark",
       "description": "长沙的城市中心广场。",
       "address": "长沙市芙蓉区",
@@ -794,7 +794,7 @@
     {
       "id": "hunan-museum",
       "name": "湖南省博物馆",
-      "nameEn": "Hunan Provincial Museum",
+      "nameEn": "متحف مقاطعة هونان",
       "category": "museum",
       "description": "馆藏文物18万件，以马王堆汉墓出土文物最著名。",
       "address": "长沙市开福区",
@@ -817,7 +817,7 @@
     {
       "id": "pozi-street",
       "name": "坡子街",
-      "nameEn": "Pozi Street",
+      "nameEn": "شارع بوزي",
       "category": "street",
       "description": "长沙最古老的商业街，汇集各种长沙小吃。",
       "address": "长沙市天心区",
@@ -839,7 +839,7 @@
     {
       "id": "meixi-lake",
       "name": "梅溪湖",
-      "nameEn": "Meixi Lake",
+      "nameEn": "بحيرة ميكسي",
       "category": "nature",
       "description": "长沙新城区的人工湖，有国际文化艺术中心。",
       "address": "长沙市岳麓区",
@@ -861,7 +861,7 @@
     {
       "id": "window-of-world",
       "name": "长沙世界之窗",
-      "nameEn": "Changsha Window of the World",
+      "nameEn": "تشانغشا ويند أوف ذا وورلد",
       "category": "landmark",
       "description": "大型主题公园，有世界著名建筑的微缩景观。",
       "address": "长沙市开福区",
@@ -883,7 +883,7 @@
     {
       "id": "changsha-zoo",
       "name": "长沙生态动物园",
-      "nameEn": "Changsha Ecological Zoo",
+      "nameEn": "حديقة حيوانات تشانغشا البيئية",
       "category": "nature",
       "description": "长沙最大的动物园，有400多种动物。",
       "address": "长沙市天心区",
@@ -905,7 +905,7 @@
     {
       "id": "jia-yi",
       "name": "贾谊故居",
-      "nameEn": "Jia Yi's Former Residence",
+      "nameEn": "مسكن جيا يي السابق",
       "category": "landmark",
       "description": "西汉贾谊的故居，有2000多年历史。",
       "address": "长沙市天心区",
@@ -926,7 +926,7 @@
     {
       "id": "du-fu-pavilion",
       "name": "杜甫江阁",
-      "nameEn": "Du Fu Pavilion",
+      "nameEn": "جناح دو فو",
       "category": "landmark",
       "description": "纪念杜甫的阁楼，位于湘江边。",
       "address": "长沙市天心区",
@@ -948,7 +948,7 @@
     {
       "id": "yanghu-wetland",
       "name": "洋湖湿地公园",
-      "nameEn": "Yanghu Wetland Park",
+      "nameEn": "منتزه يانغهو للمستنقعات",
       "category": "nature",
       "description": "长沙最大的湿地公园，有丰富的鸟类。",
       "address": "长沙市岳麓区",
@@ -970,7 +970,7 @@
     {
       "id": "kaifu-temple",
       "name": "开福寺",
-      "nameEn": "Kaifu Temple",
+      "nameEn": "معبد كاي فو",
       "category": "temple",
       "description": "长沙最古老的佛教寺院，始建于五代。",
       "address": "长沙市开福区",
@@ -992,7 +992,7 @@
     {
       "id": "changsha-museum",
       "name": "长沙博物馆",
-      "nameEn": "Changsha Museum",
+      "nameEn": "متحف تشانغشا",
       "category": "museum",
       "description": "展示长沙历史文化的博物馆。",
       "address": "长沙市开福区",
@@ -1013,7 +1013,7 @@
     {
       "id": "moon-island",
       "name": "月亮岛",
-      "nameEn": "Moon Island",
+      "nameEn": "جزيرة القمر",
       "category": "nature",
       "description": "湘江中的小岛，是休闲度假的好去处。",
       "address": "长沙市望城区",
@@ -1035,7 +1035,7 @@
     {
       "id": "hanwang-tomb",
       "name": "马王堆汉墓",
-      "nameEn": "Mawangdui Han Tombs",
+      "nameEn": "مقابر هان ماوانغدوي",
       "category": "museum",
       "description": "西汉长沙国丞相利苍家族墓地，出土了大量珍贵文物。",
       "address": "长沙市芙蓉区",
@@ -1057,7 +1057,7 @@
     {
       "id": "meiling-geopolitical",
       "name": "梅岭国际",
-      "nameEn": "Meiling International",
+      "nameEn": "مطار ميليغ الدولي",
       "category": "landmark",
       "description": "长沙新城区的高端商业区。",
       "address": "长沙市岳麓区",
@@ -1079,7 +1079,7 @@
     {
       "id": "juzizhou-firework",
       "name": "橘子洲焰火",
-      "nameEn": "Orange Island Fireworks",
+      "nameEn": "أورانج آيلاند فيروركس",
       "category": "landmark",
       "description": "每周六晚在橘子洲举行的焰火表演。",
       "address": "长沙市岳麓区",
@@ -1101,7 +1101,7 @@
     {
       "id": "yuelu-temple",
       "name": "麓山寺",
-      "nameEn": "Lushan Temple",
+      "nameEn": "معبد لوشان",
       "category": "temple",
       "description": "长沙最古老的佛教寺院，始建于西晋。",
       "address": "长沙市岳麓区",
@@ -1123,7 +1123,7 @@
     {
       "id": "changsha-window",
       "name": "长沙城市规划展览馆",
-      "nameEn": "Changsha Planning Exhibition Hall",
+      "nameEn": "قاعة تشانغشا للمعارض التخطيطية",
       "category": "museum",
       "description": "展示长沙城市发展规划。",
       "address": "长沙市岳麓区",
@@ -1144,7 +1144,7 @@
     {
       "id": "xingsha",
       "name": "星沙",
-      "nameEn": "Xingsha",
+      "nameEn": "شينغشا",
       "category": "landmark",
       "description": "长沙县新城区，有现代化商业区。",
       "address": "长沙县",
@@ -1165,7 +1165,7 @@
     {
       "id": "wangcheng",
       "name": "望城",
-      "nameEn": "Wangcheng",
+      "nameEn": "وانغتشنغ",
       "category": "landmark",
       "description": "长沙新城区，有靖港古镇等景点。",
       "address": "长沙市望城区",
@@ -1188,9 +1188,9 @@
     {
       "id": "changsha-1",
       "name": "火宫殿",
-      "nameEn": "Huogong Temple",
-      "type": "local",
-      "cuisine": "Hunan",
+      "nameEn": "معبد هوو قونغ",
+      "type": "محلي",
+      "cuisine": "هوانان",
       "avgPrice": 80,
       "rating": 4.5,
       "address": "坡子街127号, 天心区",
@@ -1200,16 +1200,16 @@
       },
       "phone": "+86 731 8581 8528",
       "hours": "10:00-21:00",
-      "description": "The most famous Hunan cuisine restaurant complex in Changsha.",
+      "description": "المجمع الأكثر شهرة للمأكولات الهونانية في تشانغشا.",
       "dishHighlights": [
-        "Stinky tofu",
-        "Spicy fried rice",
-        "Chairman Mao's favorite red-braised pork"
+        "التوفو النتن",
+        "أرز مقلي حار",
+        "لحم الخنزير المحمر المفضل لدى الرئيس ماو"
       ],
       "tags": [
-        "hunan",
-        "iconic",
-        "must-visit"
+        "هوانان",
+        "رمزي",
+        "زيارة ضرورية"
       ],
       "star": 0,
       "diamond": 0,
@@ -1218,9 +1218,9 @@
     {
       "id": "changsha-2",
       "name": "老许家肉炒肉",
-      "nameEn": "Lao Xujia Meat Stir-fry",
-      "type": "local",
-      "cuisine": "Hunan",
+      "nameEn": "لأو شوجيا - قلي اللحوم",
+      "type": "محلي",
+      "cuisine": "هوانان",
       "avgPrice": 60,
       "rating": 4.7,
       "address": "多家分店",
@@ -1230,16 +1230,16 @@
       },
       "phone": "+86 731 8555 5555",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Legendary restaurant famous for its pork dishes.",
+      "description": "مطعم أسطوري مشهور بأطباق لحم الخنزير.",
       "dishHighlights": [
-        "Meat stir-fried with meat",
-        "Spicy pork",
-        "Home-style dishes"
+        "لحم مطهو مع لحم",
+        "لحم خنزير حار",
+        "أطباق منزلية"
       ],
       "tags": [
-        "local",
-        "pork",
-        "popular"
+        "محلي",
+        "لحم خنزير",
+        "مشهور"
       ],
       "star": 0,
       "diamond": 0,
@@ -1248,9 +1248,9 @@
     {
       "id": "changsha-3",
       "name": "一盏灯",
-      "nameEn": "Yi Deng Deng",
-      "type": "local",
-      "cuisine": "Hunan",
+      "nameEn": "يي دينغ دينغ",
+      "type": "محلي",
+      "cuisine": "هوانان",
       "avgPrice": 70,
       "rating": 4.6,
       "address": "多家分店",
@@ -1260,16 +1260,16 @@
       },
       "phone": "+86 731 8888 8888",
       "hours": "11:00-21:00",
-      "description": "Popular Hunan restaurant chain known for authentic spicy dishes.",
+      "description": "سلسلة مطاعم خونان الشهيرة بأطباقها الحارة الأصيلة",
       "dishHighlights": [
-        "Spicy chicken",
-        "Buddha jumps over the wall",
-        "Mao's braised pork"
+        "دجاج حار",
+        "قفز بوذا فوق الجدار",
+        "لحم الخنزير المشوي على طريقة ماو"
       ],
       "tags": [
-        "hunan",
-        "spicy",
-        "chain"
+        "هوانان",
+        "حار",
+        "سلسلة"
       ],
       "star": 0,
       "diamond": 0,
@@ -1278,9 +1278,9 @@
     {
       "id": "changsha-4",
       "name": "黑色经典",
-      "nameEn": "Black Classic",
-      "type": "local",
-      "cuisine": "Hunan Snacks",
+      "nameEn": "الكلاسيكي الأسود",
+      "type": "محلي",
+      "cuisine": "وجبات خفيفة من خونان",
       "avgPrice": 30,
       "rating": 4.5,
       "address": "坡子街店, 天心区",
@@ -1290,16 +1290,16 @@
       },
       "phone": "N/A",
       "hours": "10:00-22:00",
-      "description": "Famous for stinky tofu and traditional Hunan snacks.",
+      "description": "تشتهر بالتوفو الكريه الرائحة والمقبلات التقليدية من خونان",
       "dishHighlights": [
-        "Stinky tofu",
-        "Fried rice noodles",
-        "Glutinous rice balls"
+        "التوفو النتن",
+        "نودلز الأرز المقلي",
+        "كرات الأرز اللزج"
       ],
       "tags": [
-        "street-food",
-        "snacks",
-        "local"
+        "طعام الشوارع",
+        "وجبات خفيفة",
+        "محلي"
       ],
       "star": 0,
       "diamond": 0,
@@ -1308,9 +1308,9 @@
     {
       "id": "changsha-5",
       "name": "茶颜悦色",
-      "nameEn": "Sexy Tea",
-      "type": "local",
-      "cuisine": "Milk Tea",
+      "nameEn": "سيكسي تيا",
+      "type": "محلي",
+      "cuisine": "شاي بالحليب",
       "avgPrice": 25,
       "rating": 4.8,
       "address": "多家分店",
@@ -1320,16 +1320,16 @@
       },
       "phone": "N/A",
       "hours": "10:00-22:00",
-      "description": "Changsha's beloved local milk tea chain with Chinese styling.",
+      "description": "شاي بالحليب المحلي المفضل في تشانغشا بأسلوب صيني",
       "dishHighlights": [
         "，声声乌龙",
         "幽兰拿铁",
         "筝筝纸鸢"
       ],
       "tags": [
-        "milk-tea",
-        "local",
-        "iconic"
+        "شاي-بالحليب",
+        "محلي",
+        "رمزي"
       ],
       "star": 0,
       "diamond": 0,
@@ -1338,9 +1338,9 @@
     {
       "id": "changsha-6",
       "name": "文和友",
-      "nameEn": "Wenheyou",
-      "type": "local",
-      "cuisine": "Hunan Fast Food",
+      "nameEn": "ونهييو",
+      "type": "محلي",
+      "cuisine": "طعام خفيف من خونان",
       "avgPrice": 80,
       "rating": 4.6,
       "address": "多家分店",
@@ -1350,16 +1350,16 @@
       },
       "phone": "+86 731 8888 8888",
       "hours": "11:00-03:00",
-      "description": "Popular chain with retro Changsha atmosphere and local snacks.",
+      "description": "سلسلة شهيرة بأجواء تشانغشا العتيقة والوجبات الخفيفة المحلية",
       "dishHighlights": [
-        "Big oil-stained shrimp",
-        "Stinky tofu",
-        "Chili crabs"
+        "روبيان كبير بالزيت",
+        "التوفو النتن",
+        "سلطعون بالفليفلة الحارة"
       ],
       "tags": [
-        "retro",
-        "local",
-        "popular"
+        "عتيق",
+        "محلي",
+        "مشهور"
       ],
       "star": 0,
       "diamond": 0,
@@ -1368,9 +1368,9 @@
     {
       "id": "changsha-7",
       "name": "盟重烧烤",
-      "nameEn": "Mengzhong BBQ",
-      "type": "local",
-      "cuisine": "Hunan BBQ",
+      "nameEn": "شواء منغ تشونغ",
+      "type": "محلي",
+      "cuisine": "شواء هونان",
       "avgPrice": 80,
       "rating": 4.5,
       "address": "多条分店",
@@ -1380,16 +1380,16 @@
       },
       "phone": "+86 731 8555 8888",
       "hours": "17:00-02:00",
-      "description": "Famous grilled skewer restaurant popular with locals.",
+      "description": "مطعم مشهور بالمشويات على الأسياخ يحظى بشعبية كبيرة بين السكان المحليين.",
       "dishHighlights": [
-        "Grilled skewers",
-        "Spicy octopus",
-        "Lamb kebabs"
+        "أسياخ مشوية",
+        "أخطبوط حار",
+        "أسياد الضأن"
       ],
       "tags": [
-        "bbq",
-        "nightlife",
-        "local"
+        "مشويات",
+        "الحياة الليلية",
+        "محلي"
       ],
       "star": 0,
       "diamond": 0,
@@ -1398,9 +1398,9 @@
     {
       "id": "changsha-8",
       "name": "辣椒炒肉",
-      "nameEn": "Chili and Pork",
-      "type": "local",
-      "cuisine": "Hunan Home Style",
+      "nameEn": "فلفل حار ولحم خنزير",
+      "type": "محلي",
+      "cuisine": "أسلوب المنزل في مقاطعة هونان",
       "avgPrice": 50,
       "rating": 4.4,
       "address": "多家分店",
@@ -1410,16 +1410,16 @@
       },
       "phone": "+86 731 8585 8585",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Simple but beloved local chain for authentic home-style cooking.",
+      "description": "سلسلة محلية بسيطة لكنها محبوبة تقدم طعامًا منزليًا أصليًا.",
       "dishHighlights": [
-        "Chili stir-fried pork",
-        "Egg dishes",
-        "Vegetable dishes"
+        "لحم الخنزير المقلي بالفلفل الحار",
+        "أطباق البيض",
+        "أطباق الخضار"
       ],
       "tags": [
-        "home-style",
-        "affordable",
-        "chain"
+        "أسلوب-منزلي",
+        "ميسور التكلفة",
+        "سلسلة"
       ],
       "star": 0,
       "diamond": 0,
@@ -1428,9 +1428,9 @@
     {
       "id": "changsha-9",
       "name": "徐记虾尾",
-      "nameEn": "Xuji Shrimp",
-      "type": "local",
-      "cuisine": "Crayfish",
+      "nameEn": "جمبري شوشي",
+      "type": "محلي",
+      "cuisine": "جراد البحر",
       "avgPrice": 120,
       "rating": 4.7,
       "address": "多家分店",
@@ -1440,16 +1440,16 @@
       },
       "phone": "+86 731 8888 6666",
       "hours": "16:00-02:00",
-      "description": "Premium crayfish restaurant famous in Changsha.",
+      "description": "مطعم جراد البحر المتميز المشهور في تشانغشا",
       "dishHighlights": [
-        "Spicy crayfish",
-        "Crayfish noodles",
-        "Garlic crayfish"
+        "جراد البحر الحار",
+        "شعيرية جراد البحر",
+        "جراد البحر بالثوم"
       ],
       "tags": [
-        "crayfish",
-        "summer",
-        "premium"
+        "جراد البحر",
+        "الصيف",
+        "فاخر"
       ],
       "star": 0,
       "diamond": 0,
@@ -1458,9 +1458,9 @@
     {
       "id": "changsha-10",
       "name": "桂林路卤味",
-      "nameEn": "Guilin Road Braised Food",
-      "type": "local",
-      "cuisine": "Braised Snacks",
+      "nameEn": "طريق غويلين للطعام المسلوق",
+      "type": "محلي",
+      "cuisine": "مأكولات مسلوقة",
       "avgPrice": 30,
       "rating": 4.5,
       "address": "天心区桂林路",
@@ -1470,16 +1470,16 @@
       },
       "phone": "N/A",
       "hours": "全天",
-      "description": "Legendary late-night braised food stall.",
+      "description": "بسطة طعام مسلوق أسطورية ليلية",
       "dishHighlights": [
-        "Braised chicken feet",
-        "Braised tofu",
-        "Spicy octopus"
+        "أقدام الدجاج المسلوقة",
+        "توفو مطهو على نار هادئة",
+        "أخطبوط حار"
       ],
       "tags": [
-        "late-night",
-        "braised",
-        "street-food"
+        "متأخر-في-الليل",
+        "مطهو على نار هادئة",
+        "طعام الشوارع"
       ],
       "star": 0,
       "diamond": 0,
@@ -1488,9 +1488,9 @@
     {
       "id": "changsha-11",
       "name": "龙颜家",
-      "nameEn": "Longyanjia",
-      "type": "local",
-      "cuisine": "Hunan",
+      "nameEn": "لونغ يان جيا",
+      "type": "محلي",
+      "cuisine": "هوانان",
       "avgPrice": 70,
       "rating": 4.5,
       "address": "多家分店",
@@ -1500,16 +1500,16 @@
       },
       "phone": "+86 731 8585 8585",
       "hours": "11:00-21:30",
-      "description": "Popular chain restaurant with consistently good Hunan food.",
+      "description": "سلسلة مطاعم شهيرة تقدم طعام خونان اللذيذ بشكل متسق",
       "dishHighlights": [
-        "Spicy crab",
-        "Fish head with pickled cabbage",
-        "Spicy chicken"
+        "السلطعون الحار",
+        "رأس السمك مع الملفوف المخلل",
+        "دجاج حار"
       ],
       "tags": [
-        "hunan",
-        "chain",
-        "reliable"
+        "هونان",
+        "سلسلة",
+        "موثوق"
       ],
       "star": 0,
       "diamond": 0,
@@ -1518,9 +1518,9 @@
     {
       "id": "changsha-12",
       "name": "渔湘汇",
-      "nameEn": "Yuxiang Hui",
-      "type": "local",
-      "cuisine": "Hunan Seafood",
+      "nameEn": "يو شيانغ هوي",
+      "type": "محلي",
+      "cuisine": "مأكولات بحرية هونانية",
       "avgPrice": 100,
       "rating": 4.4,
       "address": "开福区湘江中路",
@@ -1530,16 +1530,16 @@
       },
       "phone": "+86 731 8988 8888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Popular seafood restaurant with Xiang River views.",
+      "description": "مطعم مأكولات بحرية شهير مع إطلالة على نهر شيانغ",
       "dishHighlights": [
-        "Spicy lobster",
-        "Steamed fish",
-        "Crab dishes"
+        "جراد البحر الحار",
+        "سمك مطهو على البخار",
+        "أطباق سرطان البحر"
       ],
       "tags": [
-        "seafood",
-        "river-view",
-        "upscale"
+        "مأكولات بحرية",
+        "إطلالة على النهر",
+        "فاخر"
       ],
       "star": 0,
       "diamond": 0,
@@ -1548,9 +1548,9 @@
     {
       "id": "changsha-13",
       "name": "壹德壹",
-      "nameEn": "Yideyi",
-      "type": "local",
-      "cuisine": "Rice Noodles",
+      "nameEn": "ييدي",
+      "type": "محلي",
+      "cuisine": "أرز المعكرونة",
       "avgPrice": 25,
       "rating": 4.6,
       "address": "多家分店",
@@ -1560,16 +1560,16 @@
       },
       "phone": "+86 731 8555 8888",
       "hours": "06:00-20:00",
-      "description": "Famous for rice noodles and Hunan breakfast items.",
+      "description": "مشهور بأرز المعكرونة ووجبات الإفطار من خونان",
       "dishHighlights": [
-        "Rice noodles",
-        "Steamed dumplings",
-        "Soy milk"
+        "أرز المعكرونة",
+        "زلابية بالبخار",
+        "حليب الصويا"
       ],
       "tags": [
-        "breakfast",
-        "noodles",
-        "local"
+        "إفطار",
+        "معكرونة",
+        "محلي"
       ],
       "star": 0,
       "diamond": 0,
@@ -1578,9 +1578,9 @@
     {
       "id": "changsha-14",
       "name": "米粉研究所",
-      "nameEn": "Rice Noodle Research Institute",
-      "type": "local",
-      "cuisine": "Rice Noodles",
+      "nameEn": "معهد أبحاث أرز المعكرونة",
+      "type": "محلي",
+      "cuisine": "أرز المعكرونة",
       "avgPrice": 35,
       "rating": 4.5,
       "address": "岳麓区麓山南路",
@@ -1590,16 +1590,16 @@
       },
       "phone": "N/A",
       "hours": "07:00-20:00",
-      "description": "Trendy rice noodle restaurant popular with students.",
+      "description": "مطعم معكرونة عصري شعبي بين الطلاب",
       "dishHighlights": [
-        "Signature rice noodles",
-        "Spicy beef noodles",
-        "Clear soup noodles"
+        "معكرونة أرزignature",
+        "معكرونة اللحم البقري الحارة",
+        "معكرونة في شوربة شفافة"
       ],
       "tags": [
-        "noodles",
-        "trendy",
-        "student"
+        "معكرونة",
+        "عصري",
+        "للطلاب"
       ],
       "star": 0,
       "diamond": 0,
@@ -1608,9 +1608,9 @@
     {
       "id": "changsha-15",
       "name": "昱匠",
-      "nameEn": "Yujiang",
-      "type": "local",
-      "cuisine": "Japanese",
+      "nameEn": "يوجيانغ",
+      "type": "محلي",
+      "cuisine": "ياباني",
       "avgPrice": 300,
       "rating": 4.7,
       "address": "IFS国金中心",
@@ -1620,16 +1620,16 @@
       },
       "phone": "+86 731 8888 9999",
       "hours": "11:30-14:00, 17:30-22:00",
-      "description": "High-end Japanese sushi restaurant in the IFC mall.",
+      "description": "مطعم سوشي ياباني راقٍ في مركز آي إف سي التجاري",
       "dishHighlights": [
-        "Omakase course",
-        "Fresh sashimi",
-        "Wagyu beef"
+        "تشكيلة أوماكاسي",
+        "ساشيمي طازج",
+        "لحم واغيو"
       ],
       "tags": [
-        "japanese",
-        "sushi",
-        "premium"
+        "ياباني",
+        "سوشي",
+        "متميز"
       ],
       "star": 0,
       "diamond": 0,
@@ -1638,9 +1638,9 @@
     {
       "id": "changsha-16",
       "name": "王品牛排",
-      "nameEn": "Wang Steak",
-      "type": "international",
-      "cuisine": "Western Steakhouse",
+      "nameEn": "وانغ ستيك",
+      "type": "دولي",
+      "cuisine": "ستيك هاوس غربي",
       "avgPrice": 250,
       "rating": 4.5,
       "address": "多家分店",
@@ -1650,16 +1650,16 @@
       },
       "phone": "+86 400 888 8888",
       "hours": "11:00-22:00",
-      "description": "Popular steakhouse chain with consistent quality.",
+      "description": "سلسلة ستيك هاوس مشهورة بجودة متسقة",
       "dishHighlights": [
-        "Grilled ribeye",
-        "Seafood platter",
-        "Tiramisu"
+        "ريبياي مشوي",
+        "طبق المأكولات البحرية",
+        "تيراميسو"
       ],
       "tags": [
-        "steakhouse",
-        "western",
-        "chain"
+        "ستيك هاوس",
+        "غربي",
+        "سلسلة"
       ],
       "star": 0,
       "diamond": 0,
@@ -1668,9 +1668,9 @@
     {
       "id": "changsha-17",
       "name": "亚马逊海鲜自助",
-      "nameEn": "Amazon Seafood Buffet",
-      "type": "international",
-      "cuisine": "Seafood Buffet",
+      "nameEn": "بوفيه أمازون للمأكولات البحرية",
+      "type": "دولي",
+      "cuisine": "بوفيه المأكولات البحرية",
       "avgPrice": 200,
       "rating": 4.3,
       "address": "多家分店",
@@ -1680,17 +1680,17 @@
       },
       "phone": "+86 731 8585 8585",
       "hours": "11:00-15:00, 17:00-21:00",
-      "description": "Popular all-you-can-eat seafood buffet.",
+      "description": "بوفية مأكولات بحرية شهير غير محدود.",
       "dishHighlights": [
-        "Crab legs",
-        "Shrimp",
-        "Sushi",
-        "Desserts"
+        "أرجل سرطان البحر",
+        "روبيان",
+        "سوشي",
+        "حلويات"
       ],
       "tags": [
-        "buffet",
-        "seafood",
-        "family"
+        "بوفيه",
+        "مأكولات بحرية",
+        "عائلي"
       ],
       "star": 0,
       "diamond": 0,
@@ -1699,9 +1699,9 @@
     {
       "id": "changsha-18",
       "name": "海底捞火锅",
-      "nameEn": "Haidilao Hot Pot",
-      "type": "chain",
-      "cuisine": "Hot Pot",
+      "nameEn": "هاي ديلاو هوت بوت",
+      "type": "سلسلة",
+      "cuisine": "هوت بوت",
       "avgPrice": 150,
       "rating": 4.8,
       "address": "多家分店",
@@ -1710,17 +1710,17 @@
         "lng": 112.9388
       },
       "phone": "95027",
-      "hours": "24 hours",
-      "description": "World-famous hot pot chain with exceptional service.",
+      "hours": "24 ساعة",
+      "description": "سلسلة هوت بوت عالمية الشهرة بخدمتها الاستثنائية.",
       "dishHighlights": [
-        "Self-service hot pot",
-        "Hand-pulled noodles",
-        "Free manicure"
+        "بوت شواء ذاتي الخدمة",
+        "معكرونة معدوية تقليدية",
+        "مانيكير مجاني"
       ],
       "tags": [
-        "hot-pot",
-        "service",
-        "chain"
+        "بوت شواء",
+        "خدمة",
+        "سلسلة"
       ],
       "star": 0,
       "diamond": 0,
@@ -1729,9 +1729,9 @@
     {
       "id": "changsha-19",
       "name": "炊烟时代",
-      "nameEn": "Chuiyan Era",
-      "type": "local",
-      "cuisine": "Hunan",
+      "nameEn": "تشوي يان إيرا",
+      "type": "محلي",
+      "cuisine": "خونانية",
       "avgPrice": 60,
       "rating": 4.5,
       "address": "多家分店",
@@ -1741,16 +1741,16 @@
       },
       "phone": "+86 731 8555 6666",
       "hours": "11:00-21:00",
-      "description": "Popular Hunan chain known for classic dishes.",
+      "description": "سلسلة خونانية شهيرة مشهورة بأطباقها الكلاسيكية",
       "dishHighlights": [
-        "Braised pork with preserved vegetables",
-        "Spicy lotus root",
-        "Chairman Mao's pork"
+        "لحم خنزير مطهو مع الخضار المخللة",
+        "جذور اللوتس الحارة",
+        "لحم خنزير الرئيس ماو"
       ],
       "tags": [
-        "hunan",
-        "chain",
-        "classic"
+        "خونان",
+        "سلسلة",
+        "كلاسيكي"
       ],
       "star": 0,
       "diamond": 0,
@@ -1759,9 +1759,9 @@
     {
       "id": "changsha-20",
       "name": "鲁重酒店",
-      "nameEn": "Luzhong Hotel",
-      "type": "local",
-      "cuisine": "Hunan",
+      "nameEn": "فندق لوتشونغ",
+      "type": "محلي",
+      "cuisine": "هونانية",
       "avgPrice": 150,
       "rating": 4.6,
       "address": "开福区湘江中路112号",
@@ -1771,16 +1771,16 @@
       },
       "phone": "+86 731 8888 8888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "High-end Hunan restaurant with elegant atmosphere.",
+      "description": "مطعم هوناني فاخر ذو جو أنيق.",
       "dishHighlights": [
-        "Braised shark fin",
-        "Bird's nest",
-        "Premium seafood"
+        "زعانف القرش المطهوة ببطء",
+        "عش طائر",
+        "مأكولات بحرية فاخرة"
       ],
       "tags": [
-        "upscale",
-        "hunan",
-        "business"
+        "راقٍ",
+        "هوناني",
+        "أعمال"
       ],
       "star": 0,
       "diamond": 0,
@@ -1789,9 +1789,9 @@
     {
       "id": "changsha-21",
       "name": "披萨马上诺",
-      "nameEn": "Pizza Marano",
-      "type": "international",
-      "cuisine": "Italian",
+      "nameEn": "بيتزا مارانو",
+      "type": "دولي",
+      "cuisine": "إيطالي",
       "avgPrice": 100,
       "rating": 4.4,
       "address": "多家分店",
@@ -1801,16 +1801,16 @@
       },
       "phone": "+86 400 888 8888",
       "hours": "10:00-22:00",
-      "description": "Popular Italian pizzeria chain.",
+      "description": "سلسلة مطاعم بيتزا إيطالية شهيرة",
       "dishHighlights": [
-        "Wood-fired pizza",
-        "Pasta",
-        "Tiramisu"
+        "بيتزا مطهوة على الحطب",
+        "معكرونة",
+        "تيراميسو"
       ],
       "tags": [
-        "italian",
-        "pizza",
-        "chain"
+        "إيطالي",
+        "بيتزا",
+        "سلسلة مطاعم"
       ],
       "star": 0,
       "diamond": 0,
@@ -1819,9 +1819,9 @@
     {
       "id": "changsha-22",
       "name": "星巴克",
-      "nameEn": "Starbucks",
-      "type": "cafe",
-      "cuisine": "Coffee",
+      "nameEn": "ستاربكس",
+      "type": "مقهى",
+      "cuisine": "قهوة",
       "avgPrice": 45,
       "rating": 4.2,
       "address": "多家分店",
@@ -1831,16 +1831,16 @@
       },
       "phone": "N/A",
       "hours": "07:00-22:00",
-      "description": "International coffee chain with comfortable seating.",
+      "description": "سلسلة قهوة دولية مع مقاعد مريحة",
       "dishHighlights": [
-        "Caramel macchiato",
-        "Matcha latte",
-        "Cold brew"
+        "كaramel macchiato",
+        "لاتيه ماتشا (شاي أخضر ياباني مع حليب)",
+        "قهوة باردة مخمرة"
       ],
       "tags": [
-        "coffee",
-        "cafe",
-        "workspace"
+        "قهوة",
+        "مقهى",
+        "مساحة عمل"
       ],
       "star": 0,
       "diamond": 0,
@@ -1849,9 +1849,9 @@
     {
       "id": "changsha-23",
       "name": "客串出品",
-      "nameEn": "Kechuan Products",
-      "type": "local",
-      "cuisine": "Hunan BBQ",
+      "nameEn": "منتجات كيشوان",
+      "type": "محلي",
+      "cuisine": "شواء هونان",
       "avgPrice": 80,
       "rating": 4.5,
       "address": "天心区太平街",
@@ -1861,16 +1861,16 @@
       },
       "phone": "+86 731 8222 8888",
       "hours": "17:00-02:00",
-      "description": "Popular grilled skewer restaurant with retro Changsha atmosphere.",
+      "description": "مطعم مشوي شعبي بأجواء تشانغشا العتيقة",
       "dishHighlights": [
-        "Lamb kebabs",
-        "Grilled squid",
-        "Spicy skewers"
+        "أسياد الضأن",
+        "حبار مشوي",
+        "أسياد حارة"
       ],
       "tags": [
-        "bbq",
-        "late-night",
-        "local"
+        "شواء",
+        "متأخر الليل",
+        "المحلية"
       ],
       "star": 0,
       "diamond": 0,
@@ -1879,9 +1879,9 @@
     {
       "id": "changsha-24",
       "name": "德仁聚",
-      "nameEn": "Derenju",
-      "type": "local",
-      "cuisine": "Hunan",
+      "nameEn": "ديرينجو",
+      "type": "محلي",
+      "cuisine": "هونان",
       "avgPrice": 70,
       "rating": 4.4,
       "address": "开福区湘江中路",
@@ -1891,16 +1891,16 @@
       },
       "phone": "+86 731 8988 6666",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Popular riverside restaurant with authentic Hunan home-style dishes.",
+      "description": "مطعم شعبي على ضفاف النهر يقدم أطباق هونان المنزلية الأصيلة",
       "dishHighlights": [
-        "Chairman Mao's pork",
-        "Spicy fish head",
-        "Braised pork"
+        "لحم الخنزيرChairman ماو",
+        "رأس السمك الحار",
+        "لحم الخنزير المطهو على نار هادئة"
       ],
       "tags": [
-        "hunan",
-        "home-style",
-        "river-view"
+        "هونان",
+        "على الطراز المنزلي",
+        "إطلالة على النهر"
       ],
       "star": 0,
       "diamond": 0,
@@ -1909,9 +1909,9 @@
     {
       "id": "changsha-25",
       "name": "壹德壹粉店",
-      "nameEn": "Yideyi Rice Noodles",
-      "type": "local",
-      "cuisine": "Rice Noodles",
+      "nameEn": "ييدي يي نودلز الأرز",
+      "type": "محلي",
+      "cuisine": "شعيرية الأرز",
       "avgPrice": 25,
       "rating": 4.6,
       "address": "多家分店",
@@ -1921,16 +1921,16 @@
       },
       "phone": "+86 731 8555 8888",
       "hours": "06:00-20:00",
-      "description": "Famous rice noodle chain with authentic Hunan-style breakfast.",
+      "description": "سلسلة أرز شهيرة مع وجبة فطور من هوانان الأصيلة.",
       "dishHighlights": [
-        "Steamed rice noodles",
-        "Spicy beef noodles",
-        "Soy milk"
+        "أرز معكروم بخار",
+        "نودلز اللحم الحار",
+        "حليب الصويا"
       ],
       "tags": [
-        "breakfast",
-        "noodles",
-        "local"
+        "فطور",
+        "نودلز",
+        "محلي"
       ],
       "star": 0,
       "diamond": 0,
@@ -1939,9 +1939,9 @@
     {
       "id": "changsha-26",
       "name": "坛宗剁椒鱼头",
-      "nameEn": "Tanzong Chopped Chili Fish Head",
-      "type": "local",
-      "cuisine": "Hunan",
+      "nameEn": "Tan Zong Head de Poisson au Chili Haché",
+      "type": "محلي",
+      "cuisine": "هوانان",
       "avgPrice": 150,
       "rating": 4.7,
       "address": "开福区泊富国际",
@@ -1951,16 +1951,16 @@
       },
       "phone": "+86 731 8992 9999",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Famous for their signature chopped chili fish head, a must-try Hunan dish.",
+      "description": "مشهور برأس السمك المميز مع الفلفل المفروم، طبق هوانان الذي يجب تجربته.",
       "dishHighlights": [
-        "Chopped chili fish head",
-        "Spicy shrimp",
-        "Steamed fish"
+        "رأس السمك بالفلفل المفروم",
+        "جمبري حار",
+        "سمك على البخار"
       ],
       "tags": [
-        "hunan",
-        "signature-dish",
-        "famous"
+        "هوانان",
+        "طبق مميز",
+        "مشهور"
       ],
       "star": 0,
       "diamond": 0,
@@ -1969,9 +1969,9 @@
     {
       "id": "changsha-27",
       "name": "费大厨辣椒炒肉",
-      "nameEn": "Fei Da Chu Chili Pork",
-      "type": "local",
-      "cuisine": "Hunan",
+      "nameEn": "فاي دا تشو لحم الخنزير بالفلفل",
+      "type": "محلي",
+      "cuisine": "هوانان",
       "avgPrice": 60,
       "rating": 4.8,
       "address": "多家分店",
@@ -1981,16 +1981,16 @@
       },
       "phone": "+86 731 8555 5555",
       "hours": "11:00-21:00",
-      "description": "Most popular Hunan chain known for their iconic chili pork dish.",
+      "description": "سلسلة هونان الأكثر شعبية والمعروفة بطبق لحم الخنزير بالفلفل الحار المميز",
       "dishHighlights": [
-        "Chili stir-fried pork",
-        "Chairman Mao's pork",
-        "Steamed fish"
+        "لحم الخنزير المقلي بالفلفل الحار",
+        "لحم خنزير الرئيس ماو",
+        "سمك على البخار"
       ],
       "tags": [
-        "hunan",
-        "chain",
-        "popular"
+        "هوانان",
+        "سلسلة",
+        "شعبي"
       ],
       "star": 0,
       "diamond": 0,
@@ -1999,9 +1999,9 @@
     {
       "id": "changsha-28",
       "name": "蛙来哒",
-      "nameEn": "Wulaida",
-      "type": "local",
-      "cuisine": "Frog Hot Pot",
+      "nameEn": "وولايدا",
+      "type": "محلي",
+      "cuisine": "حساء الضفدع الحار",
       "avgPrice": 90,
       "rating": 4.5,
       "address": "多家分店",
@@ -2011,16 +2011,16 @@
       },
       "phone": "+86 731 8222 8888",
       "hours": "11:00-23:00",
-      "description": "Popular frog hot pot chain with various flavor options.",
+      "description": "سلسلة شهيرة من حساء الضفدع الحار مع خيارات نكهات متنوعة.",
       "dishHighlights": [
-        "Spicy frog hot pot",
-        "Sichuan style frog",
-        "Clear soup frog"
+        "حساء الضفدع الحار",
+        "الضفدع على الطريقة السيشوانية",
+        "حساء ضفادع صافٍ"
       ],
       "tags": [
-        "frog",
-        "hot-pot",
-        "chain"
+        "ضفدع",
+        "هوتبوت",
+        "سلسلة"
       ],
       "star": 0,
       "diamond": 0,
@@ -2029,9 +2029,9 @@
     {
       "id": "changsha-29",
       "name": "北二楼大碗先生",
-      "nameEn": "Beier Lou Dawansheng",
-      "type": "local",
-      "cuisine": "Hunan Home Style",
+      "nameEn": "بيير لو داوانشنغ",
+      "type": "محلي",
+      "cuisine": "أسلوب المنزل في مقاطعة هونان",
       "avgPrice": 50,
       "rating": 4.5,
       "address": "岳麓区麓山南路",
@@ -2041,16 +2041,16 @@
       },
       "phone": "+86 731 8888 5555",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Popular student-friendly restaurant with generous portions and great value.",
+      "description": "مطعم شعبي مناسب للطلاب مع حصص كبيرة وقيمة ممتازة",
       "dishHighlights": [
-        "Big bowl rice dishes",
-        "Spicy chicken",
-        "Home-style vegetables"
+        "أطباق الأرز في وعاء كبير",
+        "دجاج حار",
+        "خضروات على الطريقة المنزلية"
       ],
       "tags": [
-        "student",
-        "affordable",
-        "home-style"
+        "للطلاب",
+        "ميسور التكلفة",
+        "أسلوب-منزلي"
       ],
       "star": 0,
       "diamond": 0,
@@ -2059,9 +2059,9 @@
     {
       "id": "changsha-30",
       "name": "味上湘菜馆",
-      "nameEn": "Weishang Hunan",
-      "type": "local",
-      "cuisine": "Hunan",
+      "nameEn": "ويشانغ هونان",
+      "type": "محلي",
+      "cuisine": "هوانان",
       "avgPrice": 70,
       "rating": 4.4,
       "address": "多家分店",
@@ -2071,16 +2071,16 @@
       },
       "phone": "+86 731 8998 8888",
       "hours": "11:00-21:00",
-      "description": "Reliable Hunan chain restaurant with consistent quality and good service.",
+      "description": "مطعم سلسلة هونان موثوق بجودة ثابتة وخدمة جيدة.",
       "dishHighlights": [
-        "Spicy crab",
-        "Braised pork",
-        "Steamed fish"
+        "السلطعون الحار",
+        "لحم خنزير مشوي ببطء",
+        "سمك على البخار"
       ],
       "tags": [
-        "hunan",
-        "chain",
-        "reliable"
+        "هوانان",
+        "سلسلة",
+        "موثوق"
       ],
       "star": 0,
       "diamond": 0,
@@ -2090,7 +2090,7 @@
       "id": "changsha-31",
       "name": "巷子小龙虾",
       "nameEn": "巷子小龙虾 (小龙虾)",
-      "type": "local",
+      "type": "محلي",
       "cuisine": "小龙虾",
       "avgPrice": 61,
       "rating": 4.3,
@@ -2119,7 +2119,7 @@
       "id": "changsha-33",
       "name": "老长沙小龙虾",
       "nameEn": "老长沙小龙虾 (小龙虾)",
-      "type": "cafe",
+      "type": "مقهى",
       "cuisine": "小龙虾",
       "avgPrice": 32,
       "rating": 4.7,
@@ -2148,7 +2148,7 @@
       "id": "changsha-35",
       "name": "老长沙剁椒鱼头",
       "nameEn": "老长沙剁椒鱼头 (剁椒鱼头)",
-      "type": "local",
+      "type": "محلي",
       "cuisine": "剁椒鱼头",
       "avgPrice": 42,
       "rating": 4.9,
@@ -2177,7 +2177,7 @@
       "id": "changsha-37",
       "name": "街边口味虾",
       "nameEn": "街边口味虾 (口味虾)",
-      "type": "local",
+      "type": "محلي",
       "cuisine": "口味虾",
       "avgPrice": 96,
       "rating": 4.5,
@@ -2206,7 +2206,7 @@
       "id": "changsha-39",
       "name": "传统口味虾",
       "nameEn": "传统口味虾 (口味虾)",
-      "type": "local",
+      "type": "محلي",
       "cuisine": "口味虾",
       "avgPrice": 62,
       "rating": 4.1,
@@ -2235,7 +2235,7 @@
       "id": "changsha-41",
       "name": "巷子剁椒鱼头",
       "nameEn": "巷子剁椒鱼头 (剁椒鱼头)",
-      "type": "local",
+      "type": "محلي",
       "cuisine": "剁椒鱼头",
       "avgPrice": 63,
       "rating": 4,
@@ -2264,7 +2264,7 @@
       "id": "changsha-43",
       "name": "老长沙小龙虾",
       "nameEn": "老长沙小龙虾 (小龙虾)",
-      "type": "local",
+      "type": "محلي",
       "cuisine": "小龙虾",
       "avgPrice": 76,
       "rating": 4.8,
@@ -2293,7 +2293,7 @@
       "id": "changsha-45",
       "name": "传统臭豆腐",
       "nameEn": "传统臭豆腐 (臭豆腐)",
-      "type": "local",
+      "type": "محلي",
       "cuisine": "臭豆腐",
       "avgPrice": 117,
       "rating": 4.5,
@@ -2322,7 +2322,7 @@
       "id": "changsha-47",
       "name": "老街糖油粑粑",
       "nameEn": "老街糖油粑粑 (糖油粑粑)",
-      "type": "local",
+      "type": "محلي",
       "cuisine": "糖油粑粑",
       "avgPrice": 40,
       "rating": 4.9,
@@ -2351,7 +2351,7 @@
       "id": "changsha-49",
       "name": "街边糖油粑粑",
       "nameEn": "街边糖油粑粑 (糖油粑粑)",
-      "type": "local",
+      "type": "محلي",
       "cuisine": "糖油粑粑",
       "avgPrice": 112,
       "rating": 4.1,
@@ -2380,7 +2380,7 @@
       "id": "changsha-51",
       "name": "老字号糖油粑粑",
       "nameEn": "老字号糖油粑粑 (糖油粑粑)",
-      "type": "local",
+      "type": "محلي",
       "cuisine": "糖油粑粑",
       "avgPrice": 119,
       "rating": 4.3,
@@ -2409,7 +2409,7 @@
       "id": "changsha-53",
       "name": "街边糖油粑粑",
       "nameEn": "街边糖油粑粑 (糖油粑粑)",
-      "type": "cafe",
+      "type": "مقهى",
       "cuisine": "糖油粑粑",
       "avgPrice": 32,
       "rating": 4.1,
@@ -2438,7 +2438,7 @@
       "id": "changsha-55",
       "name": "街边口味虾",
       "nameEn": "街边口味虾 (口味虾)",
-      "type": "street",
+      "type": "طعام الشوارع",
       "cuisine": "口味虾",
       "avgPrice": 27,
       "rating": 4.1,
@@ -2467,7 +2467,7 @@
       "id": "changsha-57",
       "name": "传统小龙虾",
       "nameEn": "传统小龙虾 (小龙虾)",
-      "type": "local",
+      "type": "محلي",
       "cuisine": "小龙虾",
       "avgPrice": 110,
       "rating": 4.6,
@@ -2496,7 +2496,7 @@
       "id": "changsha-59",
       "name": "阿婆臭豆腐",
       "nameEn": "阿婆臭豆腐 (臭豆腐)",
-      "type": "street",
+      "type": "طعام الشوارع",
       "cuisine": "臭豆腐",
       "avgPrice": 35,
       "rating": 4.7,
@@ -2525,7 +2525,7 @@
       "id": "changsha-61",
       "name": "老街口味虾",
       "nameEn": "老街口味虾 (口味虾)",
-      "type": "cafe",
+      "type": "مقهى",
       "cuisine": "口味虾",
       "avgPrice": 72,
       "rating": 4.5,
@@ -2554,7 +2554,7 @@
       "id": "changsha-63",
       "name": "长沙味臭豆腐",
       "nameEn": "长沙味臭豆腐 (臭豆腐)",
-      "type": "local",
+      "type": "محلي",
       "cuisine": "臭豆腐",
       "avgPrice": 128,
       "rating": 4.2,
@@ -2583,7 +2583,7 @@
       "id": "changsha-65",
       "name": "街边糖油粑粑",
       "nameEn": "街边糖油粑粑 (糖油粑粑)",
-      "type": "local",
+      "type": "محلي",
       "cuisine": "糖油粑粑",
       "avgPrice": 43,
       "rating": 4.9,
@@ -2612,7 +2612,7 @@
       "id": "changsha-67",
       "name": "老长沙糖油粑粑",
       "nameEn": "老长沙糖油粑粑 (糖油粑粑)",
-      "type": "street",
+      "type": "طعام الشوارع",
       "cuisine": "糖油粑粑",
       "avgPrice": 57,
       "rating": 4.1,
@@ -2641,7 +2641,7 @@
       "id": "changsha-69",
       "name": "地道口味虾",
       "nameEn": "地道口味虾 (口味虾)",
-      "type": "local",
+      "type": "محلي",
       "cuisine": "口味虾",
       "avgPrice": 57,
       "rating": 4.6,
@@ -2661,7 +2661,7 @@
       "tags": [
         "排队王",
         "隐藏美食",
-        "قيمة ممتازة مقابل السعر"
+        "性价比高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/2f245a588d65.webp"
@@ -3156,140 +3156,140 @@
   "culturalTips": [
     {
       "category": "language",
-      "title": "Xiang Dialect",
-      "content": "The Changsha dialect (长沙话) is part of the Xiang dialect group. locals appreciate visitors who try simple phrases. '吃了没' (have you eaten?) is a common casual greeting.",
+      "title": "لهجة شيانغ",
+      "content": "تشانغشا (长沙话) هي جزء من مجموعة لهجة شيانغ. يقدر السكان المحليون الزوار الذين يحاولون استخدام عبارات بسيطة. '吃了没' (هل أكلت؟) تحية شائعة.",
       "importance": "medium"
     },
     {
       "category": "dining",
-      "title": "Hunan Spice Culture",
-      "content": "Hunan cuisine is famous for its use of chili peppers - '辣' (spicy) is the defining characteristic. The phrase '不怕辣，辣不怕，怕不辣' captures the Hunan relationship with spice.",
+      "title": "ثقافة توابل هونان",
+      "content": "مطبخ هونان مشهور باستخدام الفلفل الحار - '辣' (حاد) هي السمة المميزة. العبارة '不怕辣،辣不怕،怕不辣' توضح علاقة هونان بالتوابل.",
       "importance": "high"
     },
     {
       "category": "dining",
-      "title": "Stinky Tofu",
-      "content": "臭豆腐 (stinky tofu) is Changsha's iconic street food. The fermented tofu has a strong smell but delicious taste when deep-fried. Try it at Huogong Temple or street vendors.",
+      "title": "التوفو ذو الرائحة",
+      "content": "توفو المسوس (臭豆腐) هو طعام شارع أيقوني في تشانغشا. التوفو المخمر له رائحة قوية لكنه لذيذ عند قليه في الزيت العميق. جربه في معبد هوغونغ أو الباعة المتجولين.",
       "importance": "high"
     },
     {
       "category": "dining",
-      "title": "Tea Culture",
-      "content": "Changsha has a strong tea culture. 茶颜悦色 (Sexy Tea) is the beloved local milk tea chain. Traditional teahouses also offer authentic Hunan tea experiences.",
+      "title": "ثقافة الشاي",
+      "content": "تحظى ثقافة الشاي بأهمية كبيرة في تشانغشا. تشايان ييوسي (茶颜悦色) هي سلسلة حلوى حليب الشاي المحلية المحبوبة. تقدم بيوت الشاي التقليدية أيضاً تجارب شاي هونان الأصيلة.",
       "importance": "medium"
     },
     {
       "category": "seasonal",
-      "title": "Summer Crayfish",
-      "content": "夏天吃虾 (summer crayfish) is a major Changsha tradition. From May to September, crayfish restaurants are packed. '口味虾' (spicy crayfish) is the local favorite.",
+      "title": "جراد البحر الصيفي",
+      "content": "تناول جراد البحر في الصيف (夏天吃虾) تقليد رئيسي في تشانغشا. من مايو إلى سبتمبر، تكون مطاعم جراد البحر مزدحمة. جراد البحر الحار (口味虾) هو المفضل محلياً.",
       "importance": "medium"
     },
     {
       "category": "greeting",
-      "title": "Local Greetings",
-      "content": "Changsha people are known for their directness. '吃了没' is a common greeting. '要得不' (is that ok?) is frequently used. The phrase '哦岳' is a common expression.",
+      "title": "التحيات المحلية",
+      "content": "يشتهر سكان تشانغشا بمباشرتهم. '吃了没' تحية شائعة. '要得不' (هل هذا مقبول؟) تستخدم بشكل متكرر. التعبير '哦岳' شائع.",
       "importance": "low"
     },
     {
       "category": "revolutionary",
-      "title": "Revolutionary Heritage",
-      "content": "Changsha was Chairman Mao's hometown province and a center of revolutionary activity. The Orange Island statue and various museums commemorate this history.",
+      "title": "الإرث الثوري",
+      "content": "كانت تشانغشا مسقط رأس رئيسChairman ماو ومركزاً للنشاط الثوري. تمثال جزيرة أورانج والمتاحف المختلفة تحتفظ بهذا التاريخ.",
       "importance": "medium"
     },
     {
       "category": "dining",
-      "title": "Rice Noodles Culture",
-      "content": "米粉 (rice noodles) is a breakfast staple in Changsha. 壹德壹 and 米粉研究所 are popular spots. The rice noodles here are typically round and served in clear broth.",
+      "title": "ثقافة النودلز الأرزية",
+      "content": "أرز المعكرونة米粉) وجبة فطور أساسية في تشانغشا. 壹德壹 ومختبر أرز المعكرونة米粉研究所)Places популярные spots.这里的米粉通常是圆形的，通常在清澈的肉汤中提供。",
       "importance": "medium"
     },
     {
       "category": "shopping",
-      "title": "Shopping Districts",
-      "content": "黄兴路 and 坡子街 are major shopping and eating areas. 太平街 is for souvenirs and crafts. IFS is for luxury brands. These areas are all walkable from each other.",
+      "title": "أحياء التسوق",
+      "content": "黄兴路和坡子街是主要的购物和餐饮区域。太平街出售纪念品和手工艺品。IFS是奢侈品牌。这些区域彼此相邻，步行即可到达。",
       "importance": "medium"
     },
     {
       "category": "taboo",
-      "title": "Number Taboos",
-      "content": "The number 4 is unlucky (sounds like 'death'). The number 8 is very lucky. Phone numbers or car plates with multiple 8s can be valuable.",
+      "title": "محاذير الأرقام",
+      "content": "الرقم 4 يعتبر غير محظوظ (ينطق مثل 'الموت'). الرقم 8 محظوظ جداً. أرقام الهواتف أو لوحات السيارات التي تحتوي على أرقام 8 متعددة قد تكون ذات قيمة عالية.",
       "importance": "medium"
     },
     {
       "category": "dining",
-      "title": "Chopstick Etiquette",
-      "content": "Never stick chopsticks vertically in rice. This resembles funeral incense. Also, don't point with chopsticks or wave them around while eating.",
+      "title": "آداب استخدام العيدان",
+      "content": "لا تثبت عيدان الأكل عمودياً في الأرز. هذا يشبه بخور الجنائزية. أيضاً، لا تشير بعصي الأكل أو تلوح بها أثناء الأكل.",
       "importance": "medium"
     },
     {
       "category": "travel",
-      "title": "Metro Etiquette",
-      "content": "Give seats to elderly, pregnant women, and people with children. Don't eat or drink on metro. Keep phone calls brief.",
+      "title": "آداب المترو",
+      "content": "قدّم المقاعد لكبار السن والنساء الحوامل والأشخاص الذين لديهم أطفال. لا تأكل أو تشرب في المترو. اجعل المكالمات الهاتفية قصيرة.",
       "importance": "medium"
     },
     {
       "category": "cultural",
-      "title": "Xiang River Culture",
-      "content": "湘江 (Xiang River) is central to Changsha's identity. The river is visible from many parts of the city, and Orange Island sits in the middle of it.",
+      "title": "ثقافة نهر شيانغ",
+      "content": "نهر شيانغ (湘江) هو محور هوية تشانغشا. النهر مرئي من أجزاء كثيرة من المدينة، وجزيرة أورانج تقع في منتصفه.",
       "importance": "low"
     },
     {
       "category": "weather",
-      "title": "Summer Heat",
-      "content": "Changsha summers are extremely hot and humid (often 35C+). Stay hydrated, use sun protection, and take breaks in air-conditioned spaces.",
+      "title": "حرارة الصيف",
+      "content": "صيف تشانغشا حار ورطب جداً (غالباً 35 درجة مئوية أو أكثر). حافظ على الترطيب، استخدم الحماية من الشمس، وخذ فترات راحة في الأماكن المكيفة.",
       "importance": "high"
     },
     {
       "category": "weather",
-      "title": "Winter Cold",
-      "content": "Changsha winters are damp and cold (0-10C) without central heating. Dress in layers and expect indoor temperatures similar to outdoors.",
+      "title": "برد الشتاء",
+      "content": "شتاء تشانغشا رطب وبارد (0-10 درجات مئوية) بدون تدفئة مركزية. ارتدِ ملابس متعددة الطبقات وتوقع أن تكون درجات الحرارة الداخلية مماثلة للخارج.",
       "importance": "medium"
     },
     {
       "category": "entertainment",
-      "title": "Nightlife Culture",
-      "content": "Changsha has a vibrant nightlife with 盟重烧烤 and 文和友 being popular late-night spots. The city comes alive after dark.",
+      "title": "ثقافة الحياة الليلية",
+      "content": "تشانغشا تتم حياة ليلية نابضة بالحياة مع مطاعم مثل 盟重烧烤 و 文和友 كونها منspots популярных для وقت متأخر من الليل. المدينة تنبض بالحياة بعد حلول الظلام.",
       "importance": "medium"
     },
     {
       "category": "cultural",
-      "title": "Mawangdui Legacy",
-      "content": "The Mawangdui Han tombs nearby revealed incredible artifacts including ancient silk and the world's oldest preserved cheese. The Hunan Provincial Museum houses these treasures.",
+      "title": "إرث ماوانغدوي",
+      "content": "مقابر ماونغدوي Han القريبة كشفت عن آثار مذهلة تشمل حريراً قديماً وأقدم جبن محفوظ في العالم. متحف مقاطعة هونان يضم هذه الكنوز.",
       "importance": "medium"
     },
     {
       "category": "entertainment",
-      "title": "Changsha Entertainment Industry",
-      "content": "Changsha is known as China's 'Entertainment Capital' with many TV shows filmed here. The TV station district and entertainment companies are part of local culture. Fans often spot celebrities around town.",
+      "title": "صناعة الترفيه في تشانغشا",
+      "content": "تشانغشا معروفة بأنها 'عاصمة الترفيه' في الصين مع العديد من برامج التلفزيون التي تُصوّر هنا. منطقة محطة التلفزيون وشركات الترفيه جزء من الثقافة المحلية. المعجبون غالباً ما يكتشفون المشاهير حول المدينة.",
       "importance": "low"
     },
     {
       "category": "dining",
-      "title": "Spicy Food Culture",
-      "content": "Changsha cuisine is known for being '一辣到底' (spicy throughout). Even breakfast items like rice noodles come with chili. Visitors unaccustomed to spice should ask for '微辣' (mild) or '不辣' (no spice).",
+      "title": "ثقافة الطعام الحار",
+      "content": "مطبخ تشانغشا معروف بـ '一辣到底' (حار طوال الوقت). حتى وجبات الإفطار مثل نودلز الأرز تأتي مع الفلفل. الزوار غير المعتادين على التوابل يجب أن يطلبوا '微辣' (حار خفيف) أو '不辣' (بدون توابل).",
       "importance": "high"
     },
     {
       "category": "cultural",
-      "title": "Xiang River (湘江) Culture",
-      "content": "湘江 (Xiang River) is central to Changsha's identity. The river is visible from many parts of the city, and Orange Island sits in the middle of it. Sunset walks along the riverbank are a local favorite.",
+      "title": "ثقافة نهر شيانغ (湘江)",
+      "content": "نهر شيانغ (湘江) هو محور هوية تشانغشا. النهر مرئي من أجزاء كثيرة من المدينة، وجزيرة أورانج تقع في منتصفه. المشي عند الغروب على ضفة النهر من الأنشطة المفضلة محلياً.",
       "importance": "medium"
     },
     {
       "category": "seasonal",
-      "title": "Summer Heat and Humidity",
-      "content": "Changsha summers are extremely hot and humid (often 35C+). The '火炉城市' (furnace city) nickname is well-deserved. Stay hydrated, use sun protection, and seek air-conditioned spaces.",
+      "title": "الحرارة العالية والرطوبة في الصيف",
+      "content": "صيف تشانغشا حار ورطب جداً (غالباً 35 درجة مئوية أو أكثر). لقب '火炉城市' (مدينة الفرن) مستحق تماماً. حافظ على الترطيب، استخدم الحماية من الشمس، وابحث عن الأماكن المكيفة.",
       "importance": "high"
     },
     {
       "category": "shopping",
-      "title": "IFS and Luxury Shopping",
-      "content": "长沙IFS (International Finance Square) is Changsha's premier luxury shopping destination with international brands. The famous KAWS sculpture on the rooftop is a popular photo spot.",
+      "title": "IFS والتسوق الفاخر",
+      "content": "تشانغشا IFS (ساحة التمويل الدولية) هي الوجهة الرئيسية للتسوق الفاخر في تشانغشا مع العلامات التجارية الدولية. تمثال KAWS الشهير على السطح هو نقطة تصوير شائعة.",
       "importance": "medium"
     },
     {
       "category": "cultural",
-      "title": "Modern Art Scene",
-      "content": "The Meitan Lake area has become Changsha's cultural hub with the Grand Theatre, Photography Museum, and Art Gallery. The area showcases Changsha's modern cultural ambitions.",
+      "title": "مشهد الفن الحديث",
+      "content": "أصبحت منطقة بحيرة ميتان مركزاً ثقافياً لتشانغشا مع المسرح الكبير ومتحف التصوير ومعرض الفنون. المنطقة تُظهر الطموحات الثقافية الحديثة لتشانغشا.",
       "importance": "low"
     }
   ],
@@ -3297,174 +3297,174 @@
     {
       "type": "ambulance",
       "name": "长沙急救中心",
-      "nameEn": "Changsha Emergency Center",
+      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
       "phone": "120",
-      "address": "Various locations citywide",
-      "notes": "English operators may be limited"
+      "address": "قوانغتشو",
+      "notes": "للمواطنين السنغافوريين"
     },
     {
       "type": "police",
       "name": "长沙市公安局",
-      "nameEn": "Changsha Public Security Bureau",
+      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
       "phone": "110",
-      "address": "Police headquarters in Yuhua District",
-      "notes": "Tourist police at major attractions"
+      "address": "قوانغتشو",
+      "notes": "للمواطنين السنغافوريين"
     },
     {
       "type": "fire",
       "name": "长沙消防",
-      "nameEn": "Changsha Fire Brigade",
+      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
       "phone": "119",
-      "address": "Various stations",
-      "notes": "Also handles rescue operations"
+      "address": "قوانغتشو",
+      "notes": "للمواطنين السنغافوريين"
     },
     {
       "type": "hospital",
       "name": "中南大学湘雅医院",
-      "nameEn": "Xiangya Hospital",
+      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
       "phone": "+86 731 8432 8888",
-      "address": "88 Xiangya Rd, Changsha",
+      "address": "قوانغتشو",
       "coordinates": {
         "lat": 28.2188,
         "lng": 112.9311
       },
-      "notes": "One of China's top hospitals, English-speaking staff available"
+      "notes": "للمواطنين السنغافوريين"
     },
     {
       "type": "hospital",
       "name": "湖南省人民医院",
-      "nameEn": "Hunan Provincial People's Hospital",
+      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
       "phone": "+86 731 8227 8000",
-      "address": "89 Wangfujing Rd, Changsha",
+      "address": "قوانغتشو",
       "coordinates": {
         "lat": 28.2288,
         "lng": 112.9488
       },
-      "notes": "Large general hospital with international patient services"
+      "notes": "للمواطنين السنغافوريين"
     },
     {
       "type": "hospital",
       "name": "长沙市中心医院",
-      "nameEn": "Changsha Central Hospital",
+      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
       "phone": "+86 731 8566 7952",
-      "address": "Sanyi Rd, Tianxin District",
+      "address": "قوانغتشو",
       "coordinates": {
         "lat": 28.2255,
         "lng": 112.9611
       },
-      "notes": "Another top hospital in the city center"
+      "notes": "للمواطنين السنغافوريين"
     },
     {
       "type": "embassy",
       "name": "美国驻广州总领事馆",
-      "nameEn": "US Consulate General Guangzhou",
+      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
       "phone": "+86 20 3814 5775",
-      "address": "Guangzhou (closest US consulate)",
+      "address": "قوانغتشو",
       "coordinates": {
         "lat": 23.1291,
         "lng": 113.2644
       },
-      "notes": "For US citizens in Hunan - nearest consulate is Guangzhou"
+      "notes": "للمواطنين السنغافوريين"
     },
     {
       "type": "embassy",
       "name": "英国驻广州总领事馆",
-      "nameEn": "UK Consulate General Guangzhou",
+      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
       "phone": "+86 20 8314 2368",
-      "address": "Guangzhou (nearest UK consulate)",
+      "address": "قوانغتشو",
       "coordinates": {
         "lat": 23.1291,
         "lng": 113.2644
       },
-      "notes": "For UK citizens - nearest consulate is Guangzhou"
+      "notes": "للمواطنين السنغافوريين"
     },
     {
       "type": "embassy",
       "name": "日本驻广州总领事馆",
-      "nameEn": "Japan Consulate General Guangzhou",
+      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
       "phone": "+86 20 8334 3009",
-      "address": "Guangzhou",
+      "address": "قوانغتشو",
       "coordinates": {
         "lat": 23.1291,
         "lng": 113.2644
       },
-      "notes": "For Japanese citizens in Hunan - nearest consulate is Guangzhou"
+      "notes": "للمواطنين السنغافوريين"
     },
     {
       "type": "tourist",
       "name": "长沙旅游投诉热线",
-      "nameEn": "Changsha Tourist Complaint Hotline",
+      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
       "phone": "+86 731 8581 0101",
-      "address": "Citywide",
-      "notes": "For tourist complaints and assistance"
+      "address": "قوانغتشو",
+      "notes": "للمواطنين السنغافوريين"
     },
     {
       "type": "embassy",
       "name": "法国驻广州总领事馆",
-      "nameEn": "French Consulate Guangzhou",
+      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
       "phone": "+86 20 2829 2000",
-      "address": "Guangzhou",
+      "address": "قوانغتشو",
       "coordinates": {
         "lat": 23.1291,
         "lng": 113.2644
       },
-      "notes": "For French citizens - nearest consulate is Guangzhou"
+      "notes": "للمواطنين السنغافوريين"
     },
     {
       "type": "hospital",
       "name": "长沙市第一医院",
-      "nameEn": "Changsha First Hospital",
+      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
       "phone": "+86 731 8466 7635",
-      "address": "1st Section, Wangfujing Rd, Changsha",
+      "address": "قوانغتشو",
       "coordinates": {
         "lat": 28.2311,
         "lng": 112.9455
       },
-      "notes": "Major hospital with 24-hour emergency services"
+      "notes": "للمواطنين السنغافوريين"
     },
     {
       "type": "hospital",
       "name": "长沙市中心医院",
-      "nameEn": "Changsha Central Hospital",
+      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
       "phone": "+86 731 8566 7952",
-      "address": "Sanyi Rd, Tianxin District",
+      "address": "قوانغتشو",
       "coordinates": {
         "lat": 28.2255,
         "lng": 112.9611
       },
-      "notes": "Another top hospital with international patient services"
+      "notes": "للمواطنين السنغافوريين"
     },
     {
       "type": "emergency",
       "name": "长沙市自来水公司",
-      "nameEn": "Changsha Water Company",
+      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
       "phone": "96510",
-      "address": "Citywide",
-      "notes": "For water supply emergencies"
+      "address": "قوانغتشو",
+      "notes": "للمواطنين السنغافوريين"
     },
     {
       "type": "emergency",
       "name": "长沙燃气公司",
-      "nameEn": "Changsha Gas Company",
+      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
       "phone": "95007",
-      "address": "Citywide",
-      "notes": "For gas leaks and emergencies (24-hour)"
+      "address": "قوانغتشو",
+      "notes": "للمواطنين السنغافوريين"
     },
     {
       "type": "emergency",
       "name": "国家电网长沙供电公司",
-      "nameEn": "State Grid Changsha Power Supply",
+      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
       "phone": "95598",
-      "address": "Citywide",
-      "notes": "For power outages and electrical emergencies"
+      "address": "قوانغتشو",
+      "notes": "للمواطنين السنغافوريين"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese (Simplified)",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa (L-tourist, M-business)",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Tap water is boiled before drinking; bottled water widely available"
+    "language": "المندرين (الصينية)",
+    "currency": "اليوان الصيني (CNY/RMB)",
+    "visa": "معظم الجنسيات تتطلب تأشيرة. تتوفر تأشيرة عبور لمدة 72 ساعة في المطار للجنسيات المؤهلة.",
+    "timeZone": "UTC+8 (توقيت الصين القياسي)",
+    "electricity": "220 فولت/50 هرتز، مقابس من النوع A/I",
+    "water": "مياه الصنبور صالحة للشرب لكن يفضل استخدام المياه المعبأة"
   }
 }

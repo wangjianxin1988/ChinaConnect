@@ -1,4 +1,4 @@
----
+﻿---
 
 export function getStaticPaths() {
   const langs = ["ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"];
@@ -7,13 +7,37 @@ export function getStaticPaths() {
 
 import { CitiesListClient } from "@/components/city/CitiesListClient";
 import { cities, citiesMeta } from "@/data/cities/index";
+import { getCityData } from "@/data/cities-i18n";
 import { translations } from "@/i18n/translations";
 import { getLangFromUrl } from "@/i18n/utils";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { generateBreadcrumbSchema, generateCollectionPageSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
 
 const lang = (Astro.params.lang as string) || "en";
-const t = translations[lang] || translations.en;
+
+// Build localized citiesMeta so cards show the right language titles & descriptions.
+const i18nCitiesMeta = citiesMeta.map((m) => {
+  const d = getCityData(m.slug, lang);
+  if (!d) return m;
+  return {
+    slug: m.slug,
+    name: d.name || m.name,
+    nameZh: d.nameZh || d.name || m.nameZh,
+    description: d.description || m.description,
+    coverImage: m.coverImage,
+  };
+});
+const jaCities = {
+  ...(translations.ja?.cities || {}),
+  title: "中国の都市", subtitle: "中国各地の都市を、旅行者向けの実用情報とともに紹介します。",
+  pageTitle: "中国の都市を探す - ChinaConnect", pageDescription: "中国全土の幅広い都市を、旅行情報・文化・交通・食の実用ガイドとともに紹介します。",
+  searchPlaceholder: "都市を検索…", sortBy: "並べ替え：", sortRecommended: "おすすめ", sortTier: "ティア（S → D）", sortName: "名前（A-Z）", sortRegion: "地域", showing: "表示中", of: "全", citiesWord: "都市", filteredBy: "絞り込み：",
+  tierLabel: "ティア：", tierAll: "すべて", tierNone: "なし", tierShortS: "Sティア", tierShortA: "Aティア", tierShortB: "Bティア", tierShortC: "Cティア", tierShortD: "Dティア",
+  ratingTitle: "ChinaConnect 都市評価™", ratingDesc: "4つの指標による複合評価：", economicStrength: "経済力", globalConnectivity: "国際接続性", tourismCompetitiveness: "観光競争力", urbanLivability: "暮らしやすさ",
+  dataSources: "データソース：国家統計局、中国民用航空局、文化・観光部、OpenMeteoの気象データ", refreshedWeekly: "毎週更新（気候情報を随時調整）", exploreGuide: "ガイドを見る", loadingMore: "都市を読み込み中…",
+  tierLegendTitle: "ChinaConnect 都市評価™ — ティア分類", tierLegendDesc: "各都市を、経済・国際接続性・観光競争力・暮らしやすさの複合スコア（0〜100）で5段階に分類しています。", tierSDesc: "Sティア（85以上）：世界クラスの経済力と国際ネットワーク、充実した旅行インフラを持つ都市。", tierADesc: "Aティア（70以上）：主要な経済拠点・観光都市。国際アクセスと実用的な都市ガイドが充実。", tierBDesc: "Bティア（55以上）：地域の重要な中心都市。観光の魅力と実用的な旅行情報を備えています。", tierCDesc: "Cティア（40以上）：独自の文化・自然の魅力を持つ発展中の旅行先。", tierDDesc: "Dティア（40未満）：観光インフラを整備中の都市・地域。基本情報を掲載しています。", noCitiesFound: "該当する都市が見つかりません", adjustFilters: "フィルターまたは検索条件を変更してください"
+};
+const t = lang === "ja" ? { ...translations.ja, cities: jaCities } : (translations[lang] || translations.en);
 const pageTitle = t.cities?.pageTitle ?? translations.en.cities.pageTitle;
 const pageDescription = t.cities?.pageDescription ?? translations.en.cities.pageDescription;
 
@@ -29,6 +53,16 @@ const citiesSchemas = [
     { name: t.cities?.title ?? "Cities", url: "https://chinaengage.org/cities" },
   ]),
 ];
+
+const _lookup = (key) => {
+  const parts = key.split(".");
+  let cur = (typeof t !== 'undefined' ? t : translations[lang] || translations.en);
+  for (const p of parts) {
+    if (cur && typeof cur === "object" && p in cur) cur = cur[p];
+    else return key;
+  }
+  return typeof cur === "string" ? cur : key;
+};
 ---
 
 <BaseLayout
@@ -44,10 +78,10 @@ const citiesSchemas = [
 
   <main class="container mx-auto px-4 py-8">
     <div class="mb-8">
-      <h1 class="text-3xl font-bold text-gray-900 mb-2" data-i18n="cities.title">Explore All Cities</h1>
-      <p class="text-gray-600" data-i18n="cities.subtitle">Discover the best of China with our comprehensive city guides</p>
+      <h1 class="text-3xl font-bold text-gray-900 mb-2" data-i18n="cities.title">{_lookup("cities.title")}</h1>
+      <p class="text-gray-600" data-i18n="cities.subtitle">{_lookup("cities.subtitle")}</p>
     </div>
 
-    <CitiesListClient citiesMeta={citiesMeta} citiesData={cities} client:load />
+    <CitiesListClient citiesMeta={i18nCitiesMeta} citiesData={cities} lang={lang} i18n={t} client:load />
   </main>
 </BaseLayout>

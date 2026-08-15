@@ -3,28 +3,28 @@
   "name": "大连",
   "nameEn": "Dalian",
   "country": "China",
-  "population": "5.3 million",
+  "population": "5.3 ล้านคน",
   "coordinates": {
     "lat": 38.914,
     "lng": 121.6147
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Dalian, a coastal city in Liaoning province, is known for its European architecture, beautiful coastal scenery, and vibrant Russian and Japanese influence. The city features clean beaches, modern urban planning, and the famous Xinghai Square.",
+  "description": "ต้าเหลียน เมืองชายฝั่งในมณฑลเหลียวหนิง มีชื่อเสียงจากสถาปัตยกรรมแบบยุโรป ทิวทัศน์ชายฝั่งที่สวยงาม และอิทธิพลที่หลากหลายจากรัสเซียและญี่ปุ่น เมืองนี้มีชายหาดที่สะอาด การวางผังเมืองที่ทันสมัย และสแควร์ซิงไห่ที่มีชื่อเสียง",
   "coverImage": "/img/ext/ee0766a9cf32.webp",
   "highlights": [
-    "Xinghai Square - Largest city square in Asia",
-    "Fraser Beach - Golden sand beach",
-    "Tiger Beach - Scenic coastal area",
-    "Japanese and Russian architecture",
-    "Jinshi Beach Park"
+    "จัตุรัสเซี่ยงไห่ - จัตุรัสเมืองที่ใหญ่ที่สุดในเอเชีย",
+    "ชายหาดเฟรเซอร์ - ชายหาดทรายสีทอง",
+    "ชายหาดไทเกอร์ - พื้นที่ชายฝั่งที่มีทิวทัศน์สวยงาม",
+    "สถาปัตยกรรมญี่ปุ่นและรัสเซีย",
+    "สวนชายหาดจินชิ"
   ],
   "climate": {
-    "type": "Temperate oceanic climate",
+    "type": "ภูมิอากาศมหาสมุทรแบบอบอุ่น",
     "bestMonths": [
-      "May",
-      "June",
-      "September",
-      "October"
+      "พฤษภาคม",
+      "มิถุนายน",
+      "กันยายน",
+      "ตุลาคม"
     ],
     "avgSummerTemp": "22°C (72°F)",
     "avgWinterTemp": "-3°C (27°F)",
@@ -34,583 +34,583 @@
     {
       "id": "dalian-1",
       "name": "星海广场",
-      "nameEn": "Xinghai Square",
+      "nameEn": "จัตุรัสเซี่ยงไห่",
       "category": "landmark",
-      "description": "Largest city square in Asia, featuring the city's best waterfront views.",
+      "description": "จัตุรัสเมืองที่ใหญ่ที่สุดในเอเชีย มีทัศนียภาพริมน้ำที่สวยงามที่สุดของเมือง",
       "image": "/img/ext/dc968f8a6bde.webp",
-      "address": "Xinghai Square, Shahekou District",
+      "address": "จัตุรัสเซี่ยงไห่ เขตเชอเฮอโคว",
       "coordinates": {
         "lat": 38.8822,
         "lng": 121.5222
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "1-2 ชั่วโมง",
       "highlights": [
-        "Ocean views",
-        "Sculptures",
-        "Night lighting",
-        "Photo opportunities"
+        "วิวมหาสมุทร",
+        "ประติมากรรม",
+        "ไฟส่องสว่างยามค่ำคืน",
+        "โอกาสถ่ายภาพ"
       ],
-      "tips": "Best at sunset or night. Walk to the music fountain. Take photos with the giant book sculpture.",
+      "tips": "สวยที่สุดในช่วงพระอาทิตย์ตกหรือกลางคืน เดินไปยังน้ำพุดนตรี ถ่ายรูปกับประติมากรรมหนังสือยักษ์",
       "phone": "+86 041 1 5940 2097"
     },
     {
       "id": "dalian-2",
       "name": "金石滩",
-      "nameEn": "Jinshi Beach",
+      "nameEn": "หาดจินซื่อ",
       "category": "natural",
-      "description": "Scenic coastal area with golden beaches, rock formations, and theme parks.",
+      "description": "พื้นที่ชายฝั่งที่งดงามมีหาดทรายสีทองหินโขด และสวนสนุก",
       "image": "/img/ext/b1a91de242ab.webp",
-      "address": "Jinshi Beach, Jinzhou District",
+      "address": "หาดจินซื่อ เขตจินโจว",
       "coordinates": {
         "lat": 39.0522,
         "lng": 121.9222
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "80¥ (park only)",
-      "recommendedVisitTime": "4-5 hours",
+      "ticketPrice": "80¥ (เฉพาะสวนสาธารณะ)",
+      "recommendedVisitTime": "4-5 ชั่วโมง",
       "highlights": [
-        "Golden beach",
-        "Rock formations",
-        "Theme parks",
-        "Golf courses"
+        "หาดทรายสีทอง",
+        "หินโขด",
+        "สวนสนุก",
+        "สนามกอล์ฟ"
       ],
-      "tips": "Take bus 5 or tourist bus from city center. Combine with Discoveryland.",
+      "tips": "นั่งรถบัส 5 หรือรถบัสท่องเที่ยวจากใจกลางเมือง รวมกับดิสคัฟเลนด์",
       "phone": "+86 041 1 7294 6266"
     },
     {
       "id": "dalian-3",
       "name": "老虎滩海洋公园",
-      "nameEn": "Laohutan Ocean Park",
+      "nameEn": "สวนทะเลลาฮูตาน",
       "category": "entertainment",
-      "description": "Large ocean park with marine shows, aquariums and amusement rides.",
+      "description": "สวนทะเลขนาดใหญ่มีโชว์สัตว์ทะเล พิพิธภัณฑ์สัตว์น้ำ และเครื่องเล่นสนุก",
       "image": "/img/ext/331422cf63e6.webp",
-      "address": "Laohutan,中山区",
+      "address": "ลาฮูตัน, เขตจงซาน",
       "coordinates": {
         "lat": 38.8722,
         "lng": 121.6522
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "220¥ (includes all)",
-      "recommendedVisitTime": "4-5 hours",
+      "ticketPrice": "220¥ (รวมทุกอย่าง)",
+      "recommendedVisitTime": "4-5 ชั่วโมง",
       "highlights": [
-        "Dolphin shows",
-        "Polar bear",
-        "Bird shows",
-        "4D theater"
+        "โชว์ดอลฟิน",
+        "หมีขั้วโลก",
+        "โชว์นก",
+        "โรงละคร 4D"
       ],
-      "tips": "Arrive early for shows. Buy tickets online. Full day attraction.",
+      "tips": "มาถึงเช้าเพื่อชมโชว์ ซื้อตั๋วออนไลน์ สถานที่ท่องเที่ยวได้ทั้งวัน",
       "phone": "+86 041 1 0465 5833"
     },
     {
       "id": "dalian-4",
       "name": "俄罗斯风情街",
-      "nameEn": "Russian Style Street",
+      "nameEn": "ถนนสไตล์รัสเซีย",
       "category": "cultural",
-      "description": "Historic street with Russian colonial architecture from early 1900s.",
+      "description": "ถนนประวัติศาสตร์ที่มีสถาปัตยกรรมอาณานิคมรัสเซียจากต้นศตวรรษที่ 20",
       "image": "/img/ext/f5e115604d3c.webp",
-      "address": "Russian Style Street, Zhongshan District",
+      "address": "ถนนสไตล์รัสเซีย เขตจงซาน",
       "coordinates": {
         "lat": 38.9322,
         "lng": 121.6222
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "1-2 ชั่วโมง",
       "highlights": [
-        "Russian architecture",
-        "Wooden houses",
-        "Souvenir shops",
-        "Photo opportunities"
+        "สถาปัตยกรรมรัสเซีย",
+        "บ้านไม้",
+        "ร้านของฝาก",
+        "โอกาสถ่ายภาพ"
       ],
-      "tips": "Best in morning for photos. Buy Russian products. Combine with nearby Japanese Street.",
+      "tips": "ช่วงเช้าเหมาะสำหรับถ่ายรูป ซื้อผลิตภัณฑ์รัสเซีย รวมกับถนนญี่ปุ่นใกล้เคียง",
       "phone": "+86 041 1 1062 8045"
     },
     {
       "id": "dalian-5",
       "name": "日本风情街",
-      "nameEn": "Japanese Style Street",
+      "nameEn": "ถนนสไตล์ญี่ปุ่น",
       "category": "cultural",
-      "description": "Historic street with Japanese colonial architecture and traditional buildings.",
+      "description": "ถนนประวัติศาสตร์ที่มีสถาปัตยกรรมอาณานิคมญี่ปุ่นและอาคารแบบดั้งเดิม",
       "image": "/img/ext/695b810fea8c.webp",
-      "address": "Huanghe Road, Zhongshan District",
+      "address": "ถนนหวงเหอ เขตจงซาน",
       "coordinates": {
         "lat": 38.9322,
         "lng": 121.6222
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "1-2 ชั่วโมง",
       "highlights": [
-        "Japanese architecture",
-        "Cherry blossoms",
-        "Traditional shops",
-        "Tea houses"
+        "สถาปัตยกรรมญี่ปุ่น",
+        "ดอกซากุระ",
+        "ร้านค้าแบบดั้งเดิม",
+        "ร้านน้ำชา"
       ],
-      "tips": "Beautiful in spring. Take photos with Japanese-style buildings. Find Japanese restaurants.",
+      "tips": "สวยงามในฤดูใบไม้ผลิ ถ่ายรูปกับอาคารสไตล์ญี่ปุ่น หาร้านอาหารญี่ปุ่น",
       "phone": "+86 041 1 5904 3229"
     },
     {
       "id": "dalian-6",
       "name": "棒棰岛",
-      "nameEn": "Bangchui Island",
+      "nameEn": "เกาะบางชุย",
       "category": "natural",
-      "description": "Scenic island with beautiful beach and golf course, once a state guesthouse.",
+      "description": "เกาะที่มีทัศนียภาพสวยงามพร้อมชายหาดสวยและสนามกอล์ฟ เคยเป็นเกสต์เฮาส์ของรัฐ",
       "image": "/img/ext/a3c570f07eb5.webp",
-      "address": "Bangchui Island, Ganjingzi District",
+      "address": "เกาะบางชุย เขตกานจิงจื่อ",
       "coordinates": {
         "lat": 38.8722,
         "lng": 121.7222
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "20¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Clean beach",
-        "Island views",
-        "Golf course",
-        "State guesthouse"
+        "ชายหาดสะอาด",
+        "วิวเกาะ",
+        "สนามกอล์ฟ",
+        "เกสต์เฮาส์รัฐบาล"
       ],
-      "tips": "Take tourist bus or taxi. Beach is beautiful but crowded in summer.",
+      "tips": "นั่งรถบัสท่องเที่ยวหรือแท็กซี่ ชายหาดสวยงามแต่แออัดในฤดูร้อน",
       "phone": "+86 041 1 2971 8753"
     },
     {
       "id": "dalian-7",
       "name": "大连森林动物园",
-      "nameEn": "Dalian Forest Zoo",
+      "nameEn": "สวนสัตว์ป่าเตี๋ยหลู",
       "category": "nature",
-      "description": "Large zoo with natural environment for animals, featuring pandas and rare species.",
+      "description": "สวนสัตว์ขนาดใหญ่ที่มีสภาพแวดล้อมธรรมชาติสำหรับสัตว์ มีแพนด้าและสายพันธุ์หายาก",
       "image": "/img/ext/2612840ba7f8.webp",
-      "address": "Ganjingzi District",
+      "address": "เขตกานจิงจื่อ",
       "coordinates": {
         "lat": 38.9622,
         "lng": 121.7222
       },
       "openingHours": "08:30-16:30",
       "ticketPrice": "120¥",
-      "recommendedVisitTime": "4-5 hours",
+      "recommendedVisitTime": "4-5 ชั่วโมง",
       "highlights": [
-        "Giant pandas",
-        "African savanna",
-        "Bird show",
-        "Cable car"
+        "หมีแพนด้ายักษ์",
+        "ทุ่งอัฟริกา",
+        "แสดงนก",
+        "กระเช้าขึ้นเขา"
       ],
-      "tips": "Arrive early. Take cable car for views. Great for families.",
+      "tips": "มาถึงเช้า นั่งกระเช้าลอยฟ้าเพื่อชมวิว เหมาะสำหรับครอบครัว",
       "phone": "+86 041 1 9579 7580"
     },
     {
       "id": "dalian-8",
       "name": "付家庄海滨浴场",
-      "nameEn": "Fujiazhuang Beach",
+      "nameEn": "ชายหาดฟูเจียซวง",
       "category": "natural",
-      "description": "Popular city beach with clear water and scenic surrounding hills.",
+      "description": "ชายหาดในเมืองที่ได้รับความนิยม มีน้ำใสและเนินเขารอบข้างที่สวยงาม",
       "image": "/img/ext/f2ba27818a58.webp",
-      "address": "Fujiazhuang, Shahekou District",
+      "address": "ฟูเจียซวง เขตซาเหอคู",
       "coordinates": {
         "lat": 38.8522,
         "lng": 121.6022
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Clean beach",
-        "Clear water",
-        "City views",
-        "Sunset"
+        "ชายหาดสะอาด",
+        "น้ำใส",
+        "วิวเมือง",
+        "พระอาทิตย์ตก"
       ],
-      "tips": "Best in summer. Bring sunscreen. Take bus 5 or 702.",
+      "tips": "ดีที่สุดในฤดูร้อน นำครีมกันแดดติดตัว นั่งรถบัสสาย 5 หรือ 702",
       "phone": "+86 041 1 0003 7918"
     },
     {
       "id": "dalian-9",
       "name": "大连海滨路",
-      "nameEn": "Dalian Coastal Road",
+      "nameEn": "ถนนชายฝั่งต้าเลียน",
       "category": "natural",
-      "description": "Scenic coastal road with ocean views, connecting major attractions.",
+      "description": "ถนนชายฝั่งที่มีวิวทะเลสวยงาม เชื่อมต่อสถานที่ท่องเที่ยวหลัก",
       "image": "/img/ext/d9e1e34b36a1.webp",
-      "address": "Coastal Road, Zhongshan District",
+      "address": "ถนนชายฝั่ง เขตจงซาน",
       "coordinates": {
         "lat": 38.8922,
         "lng": 121.6522
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "1-2 ชั่วโมง",
       "highlights": [
-        "Ocean views",
-        "Scenic drive",
-        "Photo stops",
-        "Connecting attractions"
+        "วิวมหาสมุทร",
+        "การขับรถชมวิว",
+        "จุดถ่ายรูป",
+        "เชื่อมต่อสถานที่ท่องเที่ยว"
       ],
-      "tips": "Drive or take tourist bus. Best viewpoints at沿途. Stop for photos.",
+      "tips": "ขับรถหรือนั่งรถท่องเที่ยว จุดชมวิวที่ดีที่สุดอยู่ระหว่างทาง หยุดถ่ายรูป",
       "phone": "+86 041 1 3787 1248"
     },
     {
       "id": "dalian-10",
       "name": "大连星海湾跨海大桥",
-      "nameEn": "Xinghai Bay Cross-Sea Bridge",
+      "nameEn": "สะพานข้ามอ่าวซิงหาย",
       "category": "landmark",
-      "description": "Modern cross-sea bridge offering panoramic views of the bay.",
+      "description": "สะพานข้ามทะเลสมัยใหม่ที่มองเห็นวิวทัศน์กว้างของอ่าว",
       "image": "/img/ext/20ba084c3257.webp",
-      "address": "Xinghai Bay",
+      "address": "อ่าวซิงไห่",
       "coordinates": {
         "lat": 38.8822,
         "lng": 121.5522
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "1 ชั่วโมง",
       "highlights": [
-        "Bay views",
-        "Modern architecture",
-        "Sunset",
-        "Photography"
+        "วิวอ่าว",
+        "สถาปัตยกรรมสมัยใหม่",
+        "พระอาทิตย์ตก",
+        "ถ่ายภาพ"
       ],
-      "tips": "Best at sunset. Walk across or drive. Combine with Xinghai Square.",
+      "tips": "ดีที่สุดตอนพระอาทิตย์ตก เดินข้ามหรือขับรถ รวมกับจัตุรัสซิงหาย",
       "phone": "+86 041 1 5869 5489"
     },
     {
       "id": "dalian-11",
       "name": "大连发现王国主题公园",
-      "nameEn": "Discoveryland Theme Park",
+      "nameEn": "สวนสนุกดิสคัฟเวอรีแลนด์",
       "category": "entertainment",
-      "description": "Large theme park with European-style architecture and thrill rides.",
+      "description": "สวนสนุกขนาดใหญ่ที่มีสถาปัตยกรรมแบบยุโรปและรถไฟเหาะต่างๆ",
       "image": "/img/ext/116fe8f2eb85.webp",
-      "address": "Jinshi Beach, Jinzhou District",
+      "address": "หาดจินซื่อ เขตจินโจว",
       "coordinates": {
         "lat": 39.0522,
         "lng": 121.9222
       },
-      "openingHours": "09:00-21:00 (summer)",
+      "openingHours": "09:00-21:00 (ฤดูร้อน)",
       "ticketPrice": "200¥",
-      "recommendedVisitTime": "Full day",
+      "recommendedVisitTime": "เต็มวัน",
       "highlights": [
-        "Roller coasters",
-        "European street",
-        "Night show",
-        "Water rides"
+        "รถไฟเหาะ",
+        "ถนนสไตล์ยุโรป",
+        "การแสดงตอนค่ำ",
+        "การเล่นน้ำ"
       ],
-      "tips": "Full day attraction. Arrive at opening. Wear comfortable shoes.",
+      "tips": "สถานที่ท่องเที่ยวที่ใช้เวลาทั้งวัน มาถึงตอนเปิด สวมรองเท้าที่สบาย",
       "phone": "+86 041 1 0248 3561"
     },
     {
       "id": "dalian-12",
       "name": "劳动公园",
-      "nameEn": "Labor Park",
+      "nameEn": "สวนแรงงาน",
       "category": "natural",
-      "description": "Large urban park in city center with cherry blossoms and city views.",
+      "description": "สวนสาธารณะขนาดใหญ่ในใจเมืองที่มีดอกซากุระและวิวเมือง",
       "image": "/img/ext/733c64821aa7.webp",
-      "address": "Labor Park, Xigang District",
+      "address": "สวนแรงงาน เขตซีกาง",
       "coordinates": {
         "lat": 38.9122,
         "lng": 121.6022
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "1-2 ชั่วโมง",
       "highlights": [
-        "Cherry blossoms",
-        "Viewing tower",
-        "Lake",
-        "Local life"
+        "ดอกซากุระ",
+        "หอสังเกตการณ์",
+        "ทะเลสาบ",
+        "ชีวิตของคนท้องถิ่น"
       ],
-      "tips": "Best in spring for cherry blossoms. Take cable car to viewing tower.",
+      "tips": "ดีที่สุดในฤดูใบไม้ผลิสำหรับดอกซากุระ นั่งกระเช้าขึ้นหอสังเกตการณ์",
       "phone": "+86 041 1 2298 7237"
     },
     {
       "id": "dalian-13",
       "name": "大连博物馆",
-      "nameEn": "Dalian Museum",
+      "nameEn": "พิพิธภัณฑ์ต้าเหลียน",
       "category": "cultural",
-      "description": "Modern museum showcasing city's history, culture and natural heritage.",
+      "description": "พิพิภัณฑ์สมัยใหม่ที่จัดแสดงประวัติศาสตร์ วัฒนธรรม และมรดกทางธรรมชาติของเมือง",
       "image": "/img/ext/b5a0ebfa0e85.webp",
-      "address": "Xinghai Bay",
+      "address": "อ่าวซิงไห่",
       "coordinates": {
         "lat": 38.8822,
         "lng": 121.5322
       },
-      "openingHours": "09:00-16:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "09:00-16:00 น. (ปิดวันจันทร์)",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "2 ชั่วโมง",
       "highlights": [
-        "Local history",
-        "Russian period",
-        "Natural heritage",
-        "Modern exhibits"
+        "ประวัติศาสตร์ท้องถิ่น",
+        "ยุครัสเซีย",
+        "มรดกทางธรรมชาติ",
+        "นิทรรศกสมัยใหม่"
       ],
-      "tips": "Allow 2 hours. Audio guide available. Combine with Xinghai Square.",
+      "tips": "ควรใช้เวลาประมาณ 2 ชั่วโมง มีไกด์เสียงให้เช่า รวมกับการเยี่ยมชมซิงไห่สแควร์",
       "phone": "+86 041 1 4131 4038"
     },
     {
       "id": "dalian-14",
       "name": "大连女子骑警基地",
-      "nameEn": "Dalian Women Police Cavalry Base",
+      "nameEn": "ฐานทหารม้าตำรวจหญิงต้าเหลียน",
       "category": "cultural",
-      "description": "Unique base for all-female police cavalry, with horse shows and exhibitions.",
+      "description": "ฐานทหารม้าตำรวจหญิงแห่งเดียวในประเทศ พร้อมการแสดงม้าและนิทรรศก",
       "image": "/img/ext/831baa6c272a.webp",
-      "address": "Ganjingzi District",
+      "address": "เขตกานจิงจื่อ",
       "coordinates": {
         "lat": 38.9622,
         "lng": 121.6922
       },
       "openingHours": "09:00-11:00, 14:00-16:00",
       "ticketPrice": "20¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1 ชั่วโมง",
       "highlights": [
-        "Horse shows",
-        "Police cavalry",
-        "Photo with horses",
-        "Unique experience"
+        "การแสดงม้า",
+        "ทหารม้าตำรวจ",
+        "ถ่ายรูปกับม้า",
+        "ประสบการณ์ที่ไม่เหมือนใคร"
       ],
-      "tips": "Check show times. Great for children. Take photos with horses.",
+      "tips": "ตรวจสอบเวลาแสดง เหมาะสำหรับเด็ก ถ่ายรูปกับม้า",
       "phone": "+86 041 1 8531 6226"
     },
     {
       "id": "dalian-15",
       "name": "黑石礁",
-      "nameEn": "Black Rock Reef",
+      "nameEn": "หาดหินดำ",
       "category": "natural",
-      "description": "Coastal area with unique black rock formations and tide pools.",
+      "description": "พื้นที่ชายฝั่งที่มีหินสีดำรูปร่างแปลกตาและแอ่งน้ำขึ้นลงตามน้ำ",
       "image": "/img/ext/71790794757b.webp",
-      "address": "Black Rock Reef, Shahekou District",
+      "address": "Black Rock Reef, เขต Shahekou",
       "coordinates": {
         "lat": 38.8622,
         "lng": 121.5922
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "1 ชั่วโมง",
       "highlights": [
-        "Black rocks",
-        "Tide pools",
-        "Sunrise",
-        "Photography"
+        "หินสีดำ",
+        "แอ่งน้ำขึ้นลงตามน้ำ",
+        "พระอาทิตย์ขึ้น",
+        "ถ่ายภาพ"
       ],
-      "tips": "Best at low tide. Come for sunrise. Explore tide pools.",
+      "tips": "ดีที่สุดเมื่อน้ำลง มาดูพระอาทิตย์ขึ้น สำรวจแอ่งน้ำขึ้นลงตามน้ำ",
       "phone": "+86 041 1 6936 1607"
     },
     {
       "id": "dalian-16",
       "name": "大连夜景",
-      "nameEn": "Dalian Night View",
+      "nameEn": "วิวทิวทัศน์กลางคืนของดาเลียน",
       "category": "landmark",
-      "description": "Best viewpoints for Dalian's illuminated skyline at night.",
+      "description": "จุดชมวิวที่ดีที่สุดสำหรับทิวทัศน์เมืองที่สว่างไสวของดาเลียนในเวลากลางคืน",
       "image": "/img/ext/7e182197b7c7.webp",
-      "address": "Various locations",
+      "address": "หลายสถานที่",
       "coordinates": {
         "lat": 38.9022,
         "lng": 121.6222
       },
-      "openingHours": "Night",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "กลางคืน",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "1-2 ชั่วโมง",
       "highlights": [
-        "City lights",
-        "Mountain views",
-        "Coastal views",
-        "Photo spots"
+        "แสงไฟเมือง",
+        "วิวภูเขา",
+        "วิวชายฝั่ง",
+        "จุดถ่ายรูป"
       ],
-      "tips": "Best from Pearl Lake or mountain viewing points. Take night tour bus.",
+      "tips": "ที่สุดจากทะเลสาบเพิร์ลหรือจุดชมวิวบนภูเขา นั่งรถบัสทัวร์กลางคืน",
       "phone": "+86 041 1 7280 3736"
     },
     {
       "id": "dalian-17",
       "name": "中山广场",
-      "nameEn": "Zhongshan Square",
+      "nameEn": "จัตุรัสจงซาน",
       "category": "landmark",
-      "description": "Historic circular square surrounded by European architecture from various countries.",
+      "description": "จัตุรัสกลมประวัติศาสตร์ที่ล้อมรอบด้วยสถาปัตยกรรมยุโรปจากหลายประเทศ",
       "image": "/img/ext/998eb40307b9.webp",
-      "address": "Zhongshan Square, Zhongshan District",
+      "address": "จัตุรัสจงซาน เขตจงซาน",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "30 min - 1 hour",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "30 นาที - 1 ชั่วโมง",
       "highlights": [
-        "European architecture",
-        "Circular design",
-        "Historical buildings",
-        "Traffic circle"
+        "สถาปัตยกรรมยุโรป",
+        "การออกแบบวงกลม",
+        "อาคารประวัติศาสตร์",
+        "วงเวียนจราจร"
       ],
-      "tips": "Best for architecture photography. Surrounding buildings from 10+ countries.",
+      "tips": "เหมาะสำหรับการถ่ายภาพสถาปัตยกรรม อาคารโดยรอบจากกว่า 10 ประเทศ",
       "phone": "+86 041 1 2774 4102"
     },
     {
       "id": "dalian-18",
       "name": "金石滩国家旅游度假区",
-      "nameEn": "Jinshi Beach National Resort",
+      "nameEn": "รีสอร์ทชายหาดจินซื่อ",
       "category": "resort",
-      "description": "Large coastal resort area with beaches, golf courses and theme parks.",
+      "description": "พื้นที่รีสอร์ทชายฝั่งขนาดใหญ่ที่มีชายหาด สนามกอล์ฟ และสวนสนุก",
       "image": "/img/ext/747ca4e99819.webp",
-      "address": "Jinshi Beach, Jinzhou District",
+      "address": "หาดจินซื่อ เขตจินโจว",
       "coordinates": {
         "lat": 39.0522,
         "lng": 121.9222
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Varies by attraction",
-      "recommendedVisitTime": "Full day to multiple days",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "แตกต่างกันไปตามแต่ละสถานที่",
+      "recommendedVisitTime": "ทั้งวันถึงหลายวัน",
       "highlights": [
-        "Beaches",
-        "Golf courses",
-        "Theme parks",
-        "Natural scenery"
+        "ชายหาด",
+        "สนามกอล์ฟ",
+        "สวนสนุก",
+        "ทิวทัศน์ธรรมชาติ"
       ],
-      "tips": "Book resort hotel for multiple days. Rent car to explore. Take tourist bus.",
+      "tips": "จองโรงแรมรีสอร์ทสำหรับหลายวัน เช่ารถเพื่อสำรวจ ขึ้นรถบัสนักท่องเที่ยว",
       "phone": "+86 041 1 6005 3550"
     },
     {
       "id": "dalian-19",
       "name": "大连自然博物馆",
-      "nameEn": "Dalian Natural History Museum",
+      "nameEn": "พิพิธภัณฑ์ประวัติศาสตร์ธรรมชาติต้าเหลียน",
       "category": "cultural",
-      "description": "Museum with exhibits on dinosaurs, marine life and local ecosystems.",
+      "description": "พิพิธภัณฑ์ที่มีนิทรรศการเกี่ยวกับไดโนเสาร์ ชีวิตทางทะเล และระบบนิเวศท้องถิ่น",
       "image": "/img/ext/ff9b0960dc96.webp",
-      "address": "Xinghai Bay",
+      "address": "อ่าวซิงไห่",
       "coordinates": {
         "lat": 38.8822,
         "lng": 121.5322
       },
-      "openingHours": "09:00-16:30 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "09:00-16:30 (ปิดวันจันทร์)",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "2 ชั่วโมง",
       "highlights": [
-        "Dinosaur fossils",
-        "Marine life",
-        "Birds",
-        "Interactive exhibits"
+        "ซากไดโนเสาร์",
+        "ชีวิตทางทะเล",
+        "นก",
+        "นิทรรศการแบบมีส่วนร่วม"
       ],
-      "tips": "Great for families. Allow 2 hours. Combine with nearby attractions.",
+      "tips": "เหมาะสำหรับครอบครัว ควรใช้เวลา 2 ชั่วโมง รวมกับสถานที่ท่องเที่ยวใกล้เคียง",
       "phone": "+86 041 1 6450 6440"
     },
     {
       "id": "dalian-20",
       "name": "东海公园",
-      "nameEn": "East Sea Park",
+      "nameEn": "สวนตะวันออก",
       "category": "natural",
-      "description": "Coastal park with scenic cliffs, unusual rock formations and ocean views.",
+      "description": "สวนชายฝั่งที่มีหน้าผาทิวทัศน์สวยงาม หินรูปร่างแปลกตา และวิวทะเล",
       "image": "/img/ext/c09fcbe63c84.webp",
-      "address": "East Sea Park, Zhongshan District",
+      "address": "East Sea Park, เขต Zhongshan",
       "coordinates": {
         "lat": 38.8922,
         "lng": 121.7022
       },
       "openingHours": "06:00-20:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Sea cliffs",
-        "Rock formations",
-        "Hiking trails",
-        "Ocean views"
+        "หน้าผาริมทะเล",
+        "หินโขด",
+        "เส้นทางเดินป่า",
+        "วิวมหาสมุทร"
       ],
-      "tips": "Wear hiking shoes. Best in morning. The views are spectacular.",
+      "tips": "สวมรองเท้าเดินป่า ดีที่สุดในตอนเช้า วิวสวยงามมาก",
       "phone": "+86 041 1 9839 0451"
     },
     {
       "id": "dalian-21",
       "name": "大连奥林匹克广场",
-      "nameEn": "Dalian Olympic Square",
+      "nameEn": "จัตุรัสโอลิมปิกตาหลี",
       "category": "landmark",
-      "description": "Large square built for Dalian's Olympic bid, featuring sports themes.",
+      "description": "จัตุรัสขนาดใหญ่ที่สร้างขึ้นเพื่อเสนอตัวเป็นเจ้าภาพโอลิมปิกของต่ากลาง มีธีมกีฬา",
       "image": "/img/ext/309f30e43563.webp",
-      "address": "Xi'an Road, Shahekou District",
+      "address": "ถนน Xi'an, เขต Shahekou",
       "coordinates": {
         "lat": 38.9022,
         "lng": 121.6022
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "30 min",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "30 นาที",
       "highlights": [
-        "Olympic theme",
-        "Fountains",
-        "Night lighting",
-        "Photo opportunities"
+        "ธีมโอลิมปิก",
+        "น้ำพุ",
+        "ไฟส่องสว่างยามค่ำคืน",
+        "โอกาสถ่ายภาพ"
       ],
-      "tips": "Best at night with lighting. Take photos with statues.",
+      "tips": "ดีที่สุดในเวลากลางคืนเมื่อมีไฟ ถ่ายรูปกับรูปปั้น",
       "phone": "+86 041 1 7370 6052"
     },
     {
       "id": "dalian-22",
       "name": "海之韵公园",
-      "nameEn": "Sea Rhythm Park",
+      "nameEn": "สวนซีริธม์ทะเล",
       "category": "natural",
-      "description": "Coastal park with unique marine-themed sculptures and ocean views.",
+      "description": "สวนชายฝั่งที่มีประติมากรรมทะเลที่ไม่เหมือนใครและวิวทะเล",
       "image": "/img/ext/2197d082103b.webp",
-      "address": "Coastal Road, Zhongshan District",
+      "address": "ถนนชายฝั่ง เขตจงซาน",
       "coordinates": {
         "lat": 38.8922,
         "lng": 121.6922
       },
       "openingHours": "06:00-20:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "1-2 ชั่วโมง",
       "highlights": [
-        "Marine sculptures",
-        "Ocean views",
-        "Hiking",
-        "Photography"
+        "ประติมากรรมทะเล",
+        "วิวมหาสมุทร",
+        "การเดินป่า",
+        "ถ่ายภาพ"
       ],
-      "tips": "Best at sunrise or sunset. Combine with coastal road drive.",
+      "tips": "ดีที่สุดช่วงพระอาทิตย์ขึ้นหรือตก รวมกับการขับรถไปตามถนนชายฝั่ง",
       "phone": "+86 041 1 9038 5005"
     },
     {
       "id": "dalian-23",
       "name": "大连港",
-      "nameEn": "Dalian Port",
+      "nameEn": "ท่าเรือตาเลียน",
       "category": "landmark",
-      "description": "Historic port area with European architecture and ferry services.",
+      "description": "พื้นที่ท่าเรือประวัติศาสตร์ที่มีสถาปัตยกรรมยุโรปและบริการเรือเฟอร์รี่",
       "image": "/img/ext/ea876f06c25d.webp",
-      "address": "Dalian Port, Zhongshan District",
+      "address": "ท่าเรือตาเลียน เขตจงซาน",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6322
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "1-2 ชั่วโมง",
       "highlights": [
-        "Port views",
-        "European buildings",
-        "Ferry terminal",
-        "Historical architecture"
+        "วิวท่าเรือ",
+        "อาคารยุโรป",
+        "อาคารผู้โดยสารเรือเฟอร์รี่",
+        "สถาปัตยกรรมประวัติศาสตร์"
       ],
-      "tips": "Take ferry to Lvshun or Yantai. Explore old port area.",
+      "tips": "นั่งเรือเฟอร์รี่ไปLvshunหรือYantai สำรวจพื้นที่ท่าเรือเก่า",
       "phone": "+86 041 1 7403 5334"
     },
     {
       "id": "dalian-24",
       "name": "白玉山",
-      "nameEn": "White Jade Mountain",
+      "nameEn": "ภูเขาหยกขาว",
       "category": "natural",
-      "description": "Mountain with panoramic views of Dalian and the naval base.",
+      "description": "ภูเขาที่มีวิวทิวทัศน์ทั่วไปของตาเลียนและฐานทัพเรือ",
       "image": "/img/ext/90c2f10df87a.webp",
-      "address": "Lvshun, Dalian",
+      "address": "Lvshun ตาเลียน",
       "coordinates": {
         "lat": 38.7922,
         "lng": 121.2622
       },
       "openingHours": "07:00-18:00",
       "ticketPrice": "40¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Panoramic views",
-        "Naval base views",
-        "Cable car",
-        "Military history"
+        "ทิวทัศน์ที่กว้างไกล",
+        "วิวฐานทัพเรือ",
+        "กระเช้าขึ้นเขา",
+        "ประวัติศาสตร์ทางทหาร"
       ],
-      "tips": "Take cable car up. Views are spectacular. Combine with Lvshun.",
+      "tips": "นังกระเช้าขึ้นไป วิวสวยงามมาก รวมกับการท่องเที่ยวLvshun",
       "phone": "+86 041 1 6161 2977"
     },
     {
       "id": "xinghai-square",
       "name": "星海广场",
-      "nameEn": "Xinghai Square",
+      "nameEn": "จัตุรัสเซี่ยงไห่",
       "category": "landmark",
       "description": "亚洲最大的城市广场，面积176万平方米，有百年纪念雕塑。",
       "address": "大连市沙河口区",
@@ -633,7 +633,7 @@
     {
       "id": "laohutan",
       "name": "老虎滩海洋公园",
-      "nameEn": "Laohutan Ocean Park",
+      "nameEn": "สวนทะเลลาฮูตาน",
       "category": "museum",
       "description": "中国最大的海洋主题公园之一，有极地馆、珊瑚馆等。",
       "address": "大连市中山区滨海中路",
@@ -656,7 +656,7 @@
     {
       "id": "jinshitan",
       "name": "金石滩",
-      "nameEn": "Jinshitan",
+      "nameEn": "จินซิตัน",
       "category": "beach",
       "description": "国家级风景名胜区，有奇石、海滩和高尔夫球场。",
       "address": "大连市金州区",
@@ -679,7 +679,7 @@
     {
       "id": "bangchui-island",
       "name": "棒棰岛",
-      "nameEn": "Bangchui Island",
+      "nameEn": "เกาะบางชุย",
       "category": "beach",
       "description": "大连最美的海滩之一，曾是国家领导人疗养地。",
       "address": "大连市中山区",
@@ -702,7 +702,7 @@
     {
       "id": "dalian-church",
       "name": "大连天主教堂",
-      "nameEn": "Dalian Catholic Church",
+      "nameEn": "โบสถ์คาทอลิกตาลิอาน",
       "category": "landmark",
       "description": "哥特式建筑，是大连最古老的教堂之一。",
       "address": "大连市中山区",
@@ -723,7 +723,7 @@
     {
       "id": "dalian-museum",
       "name": "大连现代博物馆",
-      "nameEn": "Dalian Modern Museum",
+      "nameEn": "พิพิธภัณฑ์ร่วมสมัยตาลิอาน",
       "category": "museum",
       "description": "展示大连近代历史和城市发展的博物馆。",
       "address": "大连市沙河口区",
@@ -745,7 +745,7 @@
     {
       "id": "xinghai-park",
       "name": "星海公园",
-      "nameEn": "Xinghai Park",
+      "nameEn": "สวนซิงไห่",
       "category": "park",
       "description": "大连著名的海滨公园，有沙滩和海上乐园。",
       "address": "大连市沙河口区",
@@ -767,7 +767,7 @@
     {
       "id": "donggang",
       "name": "东港商务区",
-      "nameEn": "Donggang Business District",
+      "nameEn": "ย่านธุรกิจตงกาง",
       "category": "landmark",
       "description": "大连新城区，有音乐喷泉和现代建筑。",
       "address": "大连市中山区",
@@ -789,7 +789,7 @@
     {
       "id": "lvshun",
       "name": "旅顺口",
-      "nameEn": "Lüshunkou",
+      "nameEn": "ลู่ชุนเคาว์",
       "category": "landmark",
       "description": "中国近代史上的重要军事要塞，有日俄监狱旧址。",
       "address": "大连市旅顺口区",
@@ -812,7 +812,7 @@
     {
       "id": "baiyu-mountain",
       "name": "白玉山",
-      "nameEn": "Baiyu Mountain",
+      "nameEn": "ภูเขาบายู",
       "category": "nature",
       "description": "旅顺口的标志性山峰，可俯瞰旅顺军港。",
       "address": "大连市旅顺口区",
@@ -834,7 +834,7 @@
     {
       "id": "dalian-forest-zoo",
       "name": "大连森林动物园",
-      "nameEn": "Dalian Forest Zoo",
+      "nameEn": "สวนสัตว์ป่าเตี๋ยหลู",
       "category": "nature",
       "description": "中国最大的森林动物园之一，有散养区和圈养区。",
       "address": "大连市西岗区",
@@ -856,7 +856,7 @@
     {
       "id": "bangchui-beach",
       "name": "棒棰岛海滩",
-      "nameEn": "Bangchui Beach",
+      "nameEn": "หาดบางชุย",
       "category": "beach",
       "description": "大连最干净的海滩，水质清澈。",
       "address": "大连市中山区",
@@ -878,7 +878,7 @@
     {
       "id": "dalian-shell-museum",
       "name": "大连贝壳博物馆",
-      "nameEn": "Dalian Shell Museum",
+      "nameEn": "พิพิธภัณฑ์กุ้งทะเลดาเลียน",
       "category": "museum",
       "description": "中国最大的贝壳博物馆，有5000多种贝壳。",
       "address": "大连市中山区",
@@ -900,7 +900,7 @@
     {
       "id": "xinhua-bookstore",
       "name": "大连新华书店",
-      "nameEn": "Dalian Xinhua Bookstore",
+      "nameEn": "ร้านหนังสือซินหัว ดาเลียน",
       "category": "landmark",
       "description": "大连最大的书店，有独特的建筑设计。",
       "address": "大连市中山区",
@@ -922,7 +922,7 @@
     {
       "id": "dalian-night",
       "name": "大连夜景",
-      "nameEn": "Dalian Night View",
+      "nameEn": "วิวทิวทัศน์กลางคืนของดาเลียน",
       "category": "landmark",
       "description": "星海湾和东港的夜景灯光秀。",
       "address": "大连市中山区",
@@ -944,7 +944,7 @@
     {
       "id": "dalian-russian",
       "name": "俄罗斯风情街",
-      "nameEn": "Russian Style Street",
+      "nameEn": "ถนนสไตล์รัสเซีย",
       "category": "street",
       "description": "保留了俄式建筑的商业街，有俄罗斯商品。",
       "address": "大连市中山区",
@@ -966,7 +966,7 @@
     {
       "id": "dalian-japanese",
       "name": "日本风情街",
-      "nameEn": "Japanese Style Street",
+      "nameEn": "ถนนสไตล์ญี่ปุ่น",
       "category": "street",
       "description": "保留了日式建筑的商业街。",
       "address": "大连市中山区",
@@ -987,7 +987,7 @@
     {
       "id": "laohutan-beach",
       "name": "老虎滩海滩",
-      "nameEn": "Laohutan Beach",
+      "nameEn": "ชายหาดเหล่าฮู่ตัน",
       "category": "beach",
       "description": "大连著名的海滩，有细软的沙滩。",
       "address": "大连市中山区",
@@ -1009,7 +1009,7 @@
     {
       "id": "dalian-polar",
       "name": "大连极地馆",
-      "nameEn": "Dalian Polar Aquarium",
+      "nameEn": "อควาเรียมขั้วโลกดาเลียน",
       "category": "museum",
       "description": "有白鲸、海豚等极地海洋动物。",
       "address": "大连市中山区",
@@ -1031,7 +1031,7 @@
     {
       "id": "xinghai-bay",
       "name": "星海湾跨海大桥",
-      "nameEn": "Xinghai Bay Bridge",
+      "nameEn": "สะพานอ่าวซิงไห่",
       "category": "landmark",
       "description": "中国首座海上地锚悬索桥，全长6.8公里。",
       "address": "大连市沙河口区",
@@ -1053,7 +1053,7 @@
     {
       "id": "dalian-art-museum",
       "name": "大连美术馆",
-      "nameEn": "Dalian Art Museum",
+      "nameEn": "พิพิธภัณฑ์ศิลปะดาเลียน",
       "category": "museum",
       "description": "展示中外美术作品的美术馆。",
       "address": "大连市中山区",
@@ -1074,7 +1074,7 @@
     {
       "id": "dalian-botanical",
       "name": "大连植物园",
-      "nameEn": "Dalian Botanical Garden",
+      "nameEn": "สวนพฤกษศาสตร์ดาเลียน",
       "category": "park",
       "description": "大连市区的绿色氧吧，有各种植物。",
       "address": "大连市中山区",
@@ -1096,7 +1096,7 @@
     {
       "id": "lvshun-museum",
       "name": "旅顺博物馆",
-      "nameEn": "Lüshun Museum",
+      "nameEn": "พิพิธภัณฑ์ลู่ชุน",
       "category": "museum",
       "description": "中国最早的博物馆之一，有珍贵的历史文物。",
       "address": "大连市旅顺口区",
@@ -1118,7 +1118,7 @@
     {
       "id": "dalian-discovery",
       "name": "大连发现王国",
-      "nameEn": "Dalian Discovery Kingdom",
+      "nameEn": "ดิสคัฟเวอรีคิงดอมตาลิอาน",
       "category": "landmark",
       "description": "大型主题乐园，有过山车等游乐设施。",
       "address": "大连市金州区",
@@ -1140,7 +1140,7 @@
     {
       "id": "dalian-swim",
       "name": "付家庄海滨浴场",
-      "nameEn": "Fujiazhuang Beach",
+      "nameEn": "ชายหาดฟูเจียซวง",
       "category": "beach",
       "description": "大连最受欢迎的海水浴场之一。",
       "address": "大连市西岗区",
@@ -1162,7 +1162,7 @@
     {
       "id": "dalian-tiger",
       "name": "老虎滩极地馆",
-      "nameEn": "Laohutan Polar Aquarium",
+      "nameEn": "พิพิธภัณฑ์สัตว์น้ำโพลาร์เลาะฮูตัน",
       "category": "museum",
       "description": "大连最大的极地海洋动物展示馆。",
       "address": "大连市中山区",
@@ -1186,89 +1186,89 @@
     {
       "id": "dalian-1",
       "name": "天天渔港",
-      "nameEn": "Daily Fish Harbor",
-      "type": "local",
-      "cuisine": "Seafood",
+      "nameEn": "ท่าเรือปลา Daily",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารทะเล",
       "avgPrice": 200,
       "rating": 4.6,
-      "address": "Multiple locations",
+      "address": "หลายสถานที่",
       "coordinates": {
         "lat": 38.9122,
         "lng": 121.6222
       },
       "phone": "+86 411 8263 8888",
       "hours": "10:00-22:00",
-      "description": "Famous seafood restaurant with fresh catches daily.",
+      "description": "ร้านอาหารทะเลชื่อดัง มีอาหารทะเลสดใหม่ทุกวัน",
       "dishHighlights": [
-        "Steamed crab",
-        "Salt shrimp",
-        "Fresh fish",
-        "Shellfish"
+        "ปูนึ่ง",
+        "กุ้งเกลือ",
+        "ปลาสด",
+        "หอย"
       ],
       "tags": [
-        "local",
-        "seafood",
-        "famous",
-        "fresh"
+        "ท้องถิ่น",
+        "อาหารทะเล",
+        "โด่งดัง",
+        "สดใหม่"
       ],
       "imageUrl": "/img/ext/b6df8acd446d.webp"
     },
     {
       "id": "dalian-2",
       "name": "老船长海鲜",
-      "nameEn": "Old Captain Seafood",
-      "type": "local",
-      "cuisine": "Seafood",
+      "nameEn": "นายพันเก่า ซีฟู้ด",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารทะเล",
       "avgPrice": 180,
       "rating": 4.5,
-      "address": "Jinshi Beach area",
+      "address": "บริเวณหาดจินซี",
       "coordinates": {
         "lat": 39.0522,
         "lng": 121.9222
       },
       "phone": "+86 411 8790 8888",
       "hours": "10:00-22:00",
-      "description": "Popular seafood restaurant near the beach area.",
+      "description": "ร้านอาหารทะเลยอดนิยมใกล้กับพื้นที่ชายหาด",
       "dishHighlights": [
-        "Grilled fish",
-        "Steamed shrimp",
-        "Clam soup",
-        "Sea urchin"
+        "ปลาย่าง",
+        "กุ้งนึ่ง",
+        "ซุปหอย",
+        "ซีอูชิ"
       ],
       "tags": [
-        "local",
-        "seafood",
-        "beach-area",
-        "popular"
+        "ท้องถิ่น",
+        "อาหารทะเล",
+        "เขตชายหาด",
+        "ยอดนิยม"
       ],
       "imageUrl": "/img/ext/9a4e85e8d9f7.webp"
     },
     {
       "id": "dalian-3",
       "name": "大连海鲜饺子",
-      "nameEn": "Dalian Seafood Dumplings",
-      "type": "local",
-      "cuisine": "Dumplings",
+      "nameEn": "Dalian ปลาและสาคู",
+      "type": "ท้องถิ่น",
+      "cuisine": "ติ่มซำ",
       "avgPrice": 60,
       "rating": 4.6,
-      "address": "Multiple locations",
+      "address": "หลายสถานที่",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
       "hours": "10:00-22:00",
-      "description": "Famous for dumplings with fresh seafood fillings.",
+      "description": "มีชื่อเสียงในเรื่องของเดิมเปาะที่มีส่วนผสมของอาหารทะเลสด",
       "dishHighlights": [
-        "Shrimp dumplings",
-        "Squid dumplings",
-        "Crab dumplings",
-        "Mixed seafood"
+        "ซาลาเปาเกี๊ยวกุ้ง",
+        "ปูมัสสัมฝะ",
+        "ปูมัสลิม",
+        "สาหร่ายทะเลผสม"
       ],
       "tags": [
-        "local",
-        "dumplings",
-        "seafood",
-        "famous"
+        "ท้องถิ่น",
+        "ติ่มซำ",
+        "อาหารทะเล",
+        "โด่งดัง"
       ],
       "imageUrl": "/img/ext/3a727a953eca.webp",
       "phone": "+86 041 1 3147 0677"
@@ -1276,29 +1276,29 @@
     {
       "id": "dalian-4",
       "name": "日本料理街",
-      "nameEn": "Japanese Restaurant Row",
-      "type": "local",
-      "cuisine": "Japanese",
+      "nameEn": "ถนนร้านอาหารญี่ปุ่น",
+      "type": "ท้องถิ่น",
+      "cuisine": "ญี่ปุ่น",
       "avgPrice": 150,
       "rating": 4.5,
-      "address": "Huanghe Road, Japanese Style Street",
+      "address": "ถนนฮวงเหอ, ถนนสไตล์ญี่ปุ่น",
       "coordinates": {
         "lat": 38.9322,
         "lng": 121.6222
       },
       "hours": "11:00-22:00",
-      "description": "Area with many authentic Japanese restaurants.",
+      "description": "บริเวณที่มีร้านอาหารญี่ปุ่นแท้ๆ หลายร้าน",
       "dishHighlights": [
-        "Sushi",
-        "Ramen",
-        "Tempura",
-        "Japanese sake"
+        "ซูชิ",
+        "ราเม็ง",
+        "เทมปุระ",
+        "สาเกญี่ปุ่น"
       ],
       "tags": [
-        "local",
-        "japanese",
-        "row",
-        "authentic"
+        "ท้องถิ่น",
+        "ญี่ปุ่น",
+        "ถนน",
+        "ของแท้"
       ],
       "imageUrl": "/img/ext/94d85e1ea97f.webp",
       "phone": "+86 041 1 6419 4945"
@@ -1306,29 +1306,29 @@
     {
       "id": "dalian-5",
       "name": "俄罗斯餐厅",
-      "nameEn": "Russian Restaurant",
-      "type": "local",
-      "cuisine": "Russian",
+      "nameEn": "ร้านอาหารรัสเซีย",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารรัสเซีย",
       "avgPrice": 120,
       "rating": 4.4,
-      "address": "Russian Style Street",
+      "address": "ถนนสไตล์รัสเซีย",
       "coordinates": {
         "lat": 38.9322,
         "lng": 121.6222
       },
       "hours": "10:00-22:00",
-      "description": "Traditional Russian restaurant in historic building.",
+      "description": "ร้านอาหารรัสเซียดั้งเดิมในอาคารประวัติศาสตร์",
       "dishHighlights": [
-        "Borscht",
-        "Beef stroganoff",
-        "Russian bread",
-        "Dumplings"
+        "บอร์ชท์",
+        "เนื้อสเต็กสไตล์สตรอกานอฟ",
+        "ขนมปังรัสเซีย",
+        "ติ่มซำ"
       ],
       "tags": [
-        "local",
-        "russian",
-        "historic",
-        "traditional"
+        "ท้องถิ่น",
+        "รัสเซีย",
+        "ประวัติศาสตร์",
+        "ดั้งเดิม"
       ],
       "imageUrl": "/img/ext/abad2daf251a.webp",
       "phone": "+86 041 1 9662 5113"
@@ -1336,50 +1336,50 @@
     {
       "id": "dalian-6",
       "name": "品海楼",
-      "nameEn": "Pin Hai Lou",
-      "type": "fine",
-      "cuisine": "Seafood",
+      "nameEn": "ปินไห่หลาว",
+      "type": "ระดับสูง",
+      "cuisine": "อาหารทะเล",
       "avgPrice": 300,
       "rating": 4.7,
-      "address": "28 Renmin Road, Zhongshan District",
+      "address": "28 ถนน รุนมิน, เขต จงซาน",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
       "phone": "+86 411 8280 8888",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "High-end seafood restaurant with elegant atmosphere.",
+      "description": "ร้านอาหารซีฟู้ดระดับสูงที่มีบรรยากาศทันสมัยและหรูหรา",
       "dishHighlights": [
-        "Abalone",
-        "Sea cucumber",
-        "Shark fin",
-        "Premium seafood"
+        "หอยเป๋า",
+        "ปลิงทะเล",
+        "ครีบฉลาม",
+        "อาหารทะเลพรีเมียม"
       ],
       "tags": [
-        "fine-dining",
-        "seafood",
-        "luxury",
-        "special-occasion"
+        "ร้านอาหารหรู",
+        "อาหารทะเล",
+        "หรูหรา",
+        "โอกาสพิเศษ"
       ],
       "imageUrl": "/img/ext/12f70f19e121.webp"
     },
     {
       "id": "dalian-7",
       "name": "锅贴王",
-      "nameEn": "Pan-Fried Dumpling King",
-      "type": "local",
-      "cuisine": "Dumplings",
+      "nameEn": "ราชาเปี๊ยะทอด",
+      "type": "ท้องถิ่น",
+      "cuisine": "ติ่มซำ",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "Multiple locations",
+      "address": "หลายสถานที่",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
       "hours": "10:00-22:00",
-      "description": "Popular for pan-fried dumplings with various fillings.",
+      "description": "ขึ้นชื่อเรื่องเกี๊ยวทอดไส้หลากหลาย",
       "dishHighlights": [
-        "Pork pan-fried dumplings",
+        "ซาลาเปาหมูทอด",
         "อาหารทะเลผัด",
         "ผัก"
       ],
@@ -1395,8 +1395,8 @@
     {
       "id": "dalian-8",
       "name": "歹街小吃",
-      "nameEn": "Dai Street Snacks",
-      "type": "local",
+      "nameEn": "ขนมข้างถนนไท่สตรีท",
+      "type": "ท้องถิ่น",
       "cuisine": "หลากหลาย",
       "avgPrice": 30,
       "rating": 4.3,
@@ -1426,7 +1426,7 @@
       "id": "dalian-9",
       "name": "大连烤鱼",
       "nameEn": "ปลาย่างเต้าหลิน",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "ย่าง",
       "avgPrice": 80,
       "rating": 4.5,
@@ -1455,7 +1455,7 @@
       "id": "dalian-10",
       "name": "鹿鸣春",
       "nameEn": "หลู่หมิงซิง",
-      "type": "fine",
+      "type": "ระดับสูง",
       "cuisine": "อาหารเหลียวหนิง",
       "avgPrice": 200,
       "rating": 4.6,
@@ -1484,28 +1484,28 @@
       "id": "dalian-11",
       "name": "群英楼",
       "nameEn": "ชุนยิงโลว",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "อาหารเหลียวหนิง",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "45 Shandong Road, Zhongshan District",
+      "address": "45 ถนนซานตง เขตจงซาน",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
       "hours": "10:00-22:00",
-      "description": "Historic restaurant known for traditional Dalian dishes.",
+      "description": "ร้านอาหารประวัติศาสตร์ที่มีชื่อเสียงในด้านอาหารดาเลียนดั้งเดิม",
       "dishHighlights": [
-        "Sea cucumber",
-        "Abalone",
-        "Fresh seafood",
-        "Local specialties"
+        "ปลิงทะเล",
+        "หอยเป๋า",
+        "อาหารทะเลสดใหม่",
+        "อาหารพื้นบ้าน"
       ],
       "tags": [
-        "local",
-        "historic",
-        "dalian-cuisine",
-        "traditional"
+        "ท้องถิ่น",
+        "ประวัติศาสตร์",
+        "อาหารดาเลียน",
+        "ดั้งเดิม"
       ],
       "imageUrl": "/img/ext/bcac1f66059c.webp",
       "phone": "+86 041 1 5467 7986"
@@ -1513,57 +1513,57 @@
     {
       "id": "dalian-12",
       "name": "春和楼",
-      "nameEn": "Chun He Lou",
-      "type": "local",
-      "cuisine": "Dalian",
+      "nameEn": "ชุนเหอโหลว",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารตะวันออกเฉียงเหนือ",
       "avgPrice": 120,
       "rating": 4.6,
-      "address": "68 Nanjing Road, Zhongshan District",
+      "address": "68 ถนนนานกิง เขตจงซาน",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
       "phone": "+86 411 8282 8888",
       "hours": "10:30-21:30",
-      "description": "Popular for refined local dishes in traditional setting.",
+      "description": "มีชื่อเสียงในด้านอาหารพื้นเมืองระดับสูงในบรรยากาศแบบดั้งเดิม",
       "dishHighlights": [
-        "Steamed fish",
-        "Braised seafood",
-        "Local vegetables"
+        "ปลานึ่ง",
+        "อาหารทะเลตุ๋น",
+        "ผักพื้นบ้าน"
       ],
       "tags": [
-        "local",
-        "dalian-cuisine",
-        "traditional",
-        "popular"
+        "ท้องถิ่น",
+        "อาหารตะวันออกเฉียงเหนือ",
+        "ดั้งเดิม",
+        "ยอดนิยม"
       ],
       "imageUrl": "/img/ext/d4809842ee96.webp"
     },
     {
       "id": "dalian-13",
       "name": "必胜客",
-      "nameEn": "Pizza Hut",
-      "type": "chain",
-      "cuisine": "Western",
+      "nameEn": "พิซซ่าฮัท",
+      "type": "ร้านอาหารเชน",
+      "cuisine": "ตะวันตก",
       "avgPrice": 80,
       "rating": 4.2,
-      "address": "Multiple locations",
+      "address": "หลายสถานที่",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
       "hours": "10:00-22:00",
-      "description": "International chain with familiar menu.",
+      "description": "เครือข่ายระหว่างประเทศพร้อมเมนูที่คุ้นเคย",
       "dishHighlights": [
-        "Pizza",
-        "Pasta",
-        "Italian food"
+        "พิซซ่า",
+        "พาสต้า",
+        "อาหารอิตาเลียน"
       ],
       "tags": [
-        "chain",
-        "western",
-        "familiar",
-        "quick"
+        "เครือข่าย",
+        "ตะวันตก",
+        "คุ้นเคย",
+        "รวดเร็ว"
       ],
       "imageUrl": "/img/ext/7371aa31c0de.webp",
       "phone": "+86 041 1 2814 1682"
@@ -1571,56 +1571,56 @@
     {
       "id": "dalian-14",
       "name": "海底捞火锅",
-      "nameEn": "Haidilao Hotpot",
-      "type": "chain",
-      "cuisine": "Hotpot",
+      "nameEn": "ไห่ติ้งหลาวฮอตพอท",
+      "type": "ร้านอาหารเชน",
+      "cuisine": "หม้อไฟ",
       "avgPrice": 150,
       "rating": 4.7,
-      "address": "Times Square, Zhongshan District",
+      "address": "ไทม์สแควร์ เขตจงชาน",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
       "phone": "+86 411 8266 8888",
-      "hours": "24 hours",
-      "description": "Famous chain hotpot with excellent service.",
+      "hours": "24 ชั่วโมง",
+      "description": "หม้อไฟเครือข่ายที่มีชื่อเสียงพร้อมบริการที่ยอดเยี่ยม",
       "dishHighlights": [
-        "Spicy hotpot",
-        "Fresh beef",
-        "Hand-pulled noodles"
+        "หม้อไฟร้อนเผ็ด",
+        "เนื้อสด",
+        "บะหมี่แบบดึงมือ"
       ],
       "tags": [
-        "chain",
-        "hotpot",
-        "service",
-        "entertainment"
+        "ร้านสาขา",
+        "หม้อไฟ",
+        "บริการ",
+        "บันเทิง"
       ],
       "imageUrl": "/img/ext/1beaa4ec0924.webp"
     },
     {
       "id": "dalian-15",
       "name": "嘎巴虾",
-      "nameEn": "Gaba Shrimp",
-      "type": "local",
-      "cuisine": "Dalian Snacks",
+      "nameEn": "กาบากุ้ง",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารว่างต้าเหลียน",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Seafood markets",
+      "address": "ตลาดอาหารทะเล",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
       "hours": "全天",
-      "description": "Spicy raw shrimp - a Dalian specialty snack.",
+      "description": "กุ้งดิบร้อน - อาหารว่างพิเศษของต้าเหลียน",
       "dishHighlights": [
-        "Spicy raw shrimp",
-        "Pickled vegetables"
+        "กุ้งดิบร้อน",
+        "ผักดอง"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "dalian-specialty",
-        "unique"
+        "ท้องถิ่น",
+        "ขนมขบเคี้ยว",
+        "เอกลักษณ์ของตะวันออก",
+        "ไม่เหมือนใคร"
       ],
       "imageUrl": "/img/ext/36c42b39ec90.webp",
       "phone": "+86 041 1 2396 0712"
@@ -1628,28 +1628,28 @@
     {
       "id": "dalian-16",
       "name": "红烤全虾",
-      "nameEn": "Red Grilled Whole Shrimp",
-      "type": "local",
-      "cuisine": "Seafood",
+      "nameEn": "กุ้งย่างทั้งตัวราดซอสแดง",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารทะเล",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "Jinshi Beach area",
+      "address": "บริเวณหาดจินซี",
       "coordinates": {
         "lat": 39.0522,
         "lng": 121.9222
       },
       "hours": "10:00-22:00",
-      "description": "Grilled whole shrimp in red sauce - a local specialty.",
+      "description": "กุ้งย่างทั้งตัวราดซอสแดง - เมนูพิเศษของท้องถิ่น",
       "dishHighlights": [
-        "Red grilled shrimp",
-        "Garlic sauce",
-        "Fresh shrimp"
+        "กุ้งย่างซอสแดง",
+        "ซอสกระเทียม",
+        "กุ้งสด"
       ],
       "tags": [
-        "local",
-        "seafood",
-        "specialty",
-        "popular"
+        "ท้องถิ่น",
+        "อาหารทะเล",
+        "เมนูพิเศษ",
+        "ยอดนิยม"
       ],
       "imageUrl": "/img/ext/f088fa94da2f.webp",
       "phone": "+86 041 1 7781 4733"
@@ -1657,28 +1657,28 @@
     {
       "id": "dalian-17",
       "name": "焖子",
-      "nameEn": "Men Zi",
-      "type": "local",
-      "cuisine": "Dalian Snacks",
+      "nameEn": "เมนซี",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารว่างเต๋อเหลียน",
       "avgPrice": 20,
       "rating": 4.4,
-      "address": "Street vendors",
+      "address": "แถวรถเข็น",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
       "hours": "全天",
-      "description": "Pan-fried starch jelly cubes - iconic Dalian street snack.",
+      "description": "ลูกแป้งเจลาตินทอด - อาหารข้างถนนเป็นเอกลักษณ์ของเต๋อเหลียน",
       "dishHighlights": [
-        "Pan-fried menzi",
-        "Garlic sauce",
-        "MSoy sauce"
+        "เมนซีทอด",
+        "ซอสกระเทียม",
+        "ซอสถั่วเหลือง"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "street-food",
-        "iconic"
+        "ท้องถิ่น",
+        "อาหารว่าง",
+        "อาหารข้างถนน",
+        "เป็นเอกลักษณ์"
       ],
       "imageUrl": "/img/ext/c260e2c2f102.webp",
       "phone": "+86 041 1 7861 9316"
@@ -1686,28 +1686,28 @@
     {
       "id": "dalian-18",
       "name": "大连老菜馆",
-      "nameEn": "Dalian Old Restaurant",
-      "type": "local",
-      "cuisine": "Dalian",
+      "nameEn": "ร้านอาหารดาลียันเก่า",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารเต๋อเหลียน",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Multiple locations",
+      "address": "หลายสถานที่",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
       "hours": "10:00-22:00",
-      "description": "Traditional Dalian dishes in old-fashioned setting.",
+      "description": "อาหารเดลี่นแบบดั้งเดิมในบรรยากาศแบบโบราณ",
       "dishHighlights": [
-        "Braised pork",
-        "Steamed fish",
-        "Local vegetables"
+        "หมูตุ๋น",
+        "ปลานึ่ง",
+        "ผักท้องถิ่น"
       ],
       "tags": [
-        "local",
-        "traditional",
-        "dalian-cuisine",
-        "home-style"
+        "ท้องถิ่น",
+        "ดั้งเดิม",
+        "อาหารตะวันออกเฉียงเหนือ",
+        "แบบบ้าน"
       ],
       "imageUrl": "/img/ext/6dc7857ca52b.webp",
       "phone": "+86 041 1 7115 5233"
@@ -1715,29 +1715,29 @@
     {
       "id": "dalian-19",
       "name": "海鲜自助餐",
-      "nameEn": "Seafood Buffet",
-      "type": "chain",
-      "cuisine": "Seafood",
+      "nameEn": "บุฟเฟ่ต์อาหารทะเล",
+      "type": "ร้านอาหารเชน",
+      "cuisine": "อาหารทะเล",
       "avgPrice": 200,
       "rating": 4.4,
-      "address": "Multiple locations",
+      "address": "หลายสถานที่",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
       "hours": "11:00-15:00, 17:00-21:30",
-      "description": "All-you-can-eat seafood buffet with fresh catches.",
+      "description": "บุฟเฟ่ต์อาหารทะเลแบบไม่อั้นพร้อมสดใหม่",
       "dishHighlights": [
-        "Unlimited seafood",
-        "Crab",
-        "Shrimp",
-        "Shellfish"
+        "อาหารทะเลไม่จำกัด",
+        "ปู",
+        "กุ้ง",
+        "หอย"
       ],
       "tags": [
-        "chain",
-        "seafood",
-        "buffet",
-        "value"
+        "ร้านสาขา",
+        "อาหารทะเล",
+        "บุฟเฟ่ต์",
+        "คุ้มค่า"
       ],
       "imageUrl": "/img/ext/3cfac437bfdc.webp",
       "phone": "+86 041 1 0837 3986"
@@ -1745,29 +1745,29 @@
     {
       "id": "dalian-20",
       "name": "星海广场餐厅",
-      "nameEn": "Xinghai Square Restaurants",
-      "type": "local",
-      "cuisine": "Various",
+      "nameEn": "ร้านอาหารซิงไหห่าพลาซ่า",
+      "type": "ท้องถิ่น",
+      "cuisine": "หลากหลาย",
       "avgPrice": 100,
       "rating": 4.3,
-      "address": "Xinghai Square area",
+      "address": "บริเวณซิงไหห่าพลาซ่า",
       "coordinates": {
         "lat": 38.8822,
         "lng": 121.5222
       },
       "hours": "10:00-22:00",
-      "description": "Various restaurants near the famous square.",
+      "description": "ร้านอาหารหลากหลายใกล้กับสถานที่ท่องเที่ยวที่มีชื่อเสียง",
       "dishHighlights": [
-        "Western food",
-        "Chinese food",
-        "Seafood",
-        "Fast food"
+        "อาหารตะวันตก",
+        "อาหารจีน",
+        "อาหารทะเล",
+        "อาหารฟาสต์ฟูด"
       ],
       "tags": [
-        "local",
-        "tourist-area",
-        "variety",
-        "view"
+        "ท้องถิ่น",
+        "พื้นที่นักท่องเที่ยว",
+        "หลากหลาย",
+        "วิว"
       ],
       "imageUrl": "/img/ext/d48e7dcd448f.webp",
       "phone": "+86 041 1 8294 0000"
@@ -1775,29 +1775,29 @@
     {
       "id": "dalian-21",
       "name": "大悦城美食",
-      "nameEn": "Joy City Food Court",
-      "type": "local",
-      "cuisine": "Various",
+      "nameEn": "ศูนย์อาหารจอยซิตี้",
+      "type": "ท้องถิ่น",
+      "cuisine": "หลากหลาย",
       "avgPrice": 60,
       "rating": 4.3,
-      "address": "Joy City Mall, Zhongshan District",
+      "address": "ศูนย์การค้าจอยซิตี้ เขตจงซาน",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
       "hours": "10:00-22:00",
-      "description": "Large food court in modern shopping mall.",
+      "description": "ศูนย์อาหารขนาดใหญ่ในศูนย์การค้าสมัยใหม่",
       "dishHighlights": [
-        "Various cuisines",
-        "Fast food",
-        "Asian food",
-        "Desserts"
+        "อาหารหลากหลายชนิด",
+        "อาหารฟาสต์ฟูด",
+        "อาหารเอเชีย",
+        "ของหวาน"
       ],
       "tags": [
-        "local",
-        "food-court",
-        "shopping",
-        "variety"
+        "ท้องถิ่น",
+        "ศูนย์อาหาร",
+        "ช้อปปิ้ง",
+        "หลากหลาย"
       ],
       "imageUrl": "/img/ext/305ce406d2b8.webp",
       "phone": "+86 041 1 0407 3697"
@@ -1805,28 +1805,28 @@
     {
       "id": "dalian-22",
       "name": "糯米香",
-      "nameEn": "Glutinous Rice Fragrance",
-      "type": "local",
-      "cuisine": "Dessert",
+      "nameEn": "กลิ่นข้าวเหนียว",
+      "type": "ท้องถิ่น",
+      "cuisine": "ขนมหวาน",
       "avgPrice": 25,
       "rating": 4.5,
-      "address": "46 Shandong Road",
+      "address": "46 ถนน Shandong",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
       "hours": "09:00-21:00",
-      "description": "Famous dessert shop with traditional glutinous rice treats.",
+      "description": "ร้านขนมเค้กที่มีชื่อเสียงพร้อมขนมข้าวเหนียวแบบดั้งเดิม",
       "dishHighlights": [
-        "Glutinous rice cakes",
-        "Sweet dumplings",
-        "Rice pudding"
+        "ขนมข้าวเหนียว",
+        "ถุงทุเรียนหวาน",
+        "ข้าวต้ม"
       ],
       "tags": [
-        "local",
-        "dessert",
-        "traditional",
-        "sweet"
+        "ท้องถิ่น",
+        "ขนมหวาน",
+        "ดั้งเดิม",
+        "หวาน"
       ],
       "imageUrl": "/img/ext/58d532e5bd77.webp",
       "phone": "+86 041 1 8083 8850"
@@ -1834,28 +1834,28 @@
     {
       "id": "dalian-23",
       "name": "大连酱骨头",
-      "nameEn": "Dalian Braised Pork",
-      "type": "local",
-      "cuisine": "Northeast",
+      "nameEn": "หมูตุ๋นเดลี",
+      "type": "ท้องถิ่น",
+      "cuisine": "ตะวันออกเฉียงเหนือ",
       "avgPrice": 70,
       "rating": 4.5,
-      "address": "Multiple locations",
+      "address": "หลายสถานที่",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
       "hours": "10:00-22:00",
-      "description": "Famous for rich braised pork ribs and bones.",
+      "description": "โด่งดังเรื่องหมูซี่โครงตุ๋นและกระดูกหมูที่เข้มข้น",
       "dishHighlights": [
-        "Braised pork ribs",
-        "Pork knuckle",
-        "Rice"
+        "ซี่โครงหมูตุ๋น",
+        "ขาหมู",
+        "ข้าว"
       ],
       "tags": [
-        "local",
-        "northeast",
-        "meat",
-        "popular"
+        "ท้องถิ่น",
+        "ตะวันออกเฉียงเหนือ",
+        "เนื้อสัตว์",
+        "นิยม"
       ],
       "imageUrl": "/img/ext/3ba69556c2b5.webp",
       "phone": "+86 041 1 3866 7229"
@@ -1863,28 +1863,28 @@
     {
       "id": "dalian-24",
       "name": "糖醋咕噜肉",
-      "nameEn": "Sweet and Sour Pork",
-      "type": "local",
-      "cuisine": "Dalian",
+      "nameEn": "หมูผัดเปรี้ยวหวาน",
+      "type": "ท้องถิ่น",
+      "cuisine": "เดลี",
       "avgPrice": 60,
       "rating": 4.4,
-      "address": "Multiple locations",
+      "address": "หลายสถานที่",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
       "hours": "10:00-22:00",
-      "description": "Popular restaurant chain known for sweet and sour dishes.",
+      "description": "เครือข่ายร้านอาหารที่ได้รับความนิยมเป็นที่รู้จักในการเสิร์ฟอาหารรสหวานและเปรี้ยว",
       "dishHighlights": [
-        "Sweet and sour pork",
-        "General Tso's chicken",
-        "Fried rice"
+        "หมูหวานเปรี้ยว",
+        "ไก่ทอดของจอมพลโต",
+        "ข้าวผัด"
       ],
       "tags": [
-        "local",
-        "dalian-cuisine",
-        "popular",
-        "chain"
+        "ท้องถิ่น",
+        "อาหารตะวันออกเฉียงเหนือ",
+        "ยอดนิยม",
+        "เครือข่ายร้านอาหาร"
       ],
       "imageUrl": "/img/ext/a6da3f8929b1.webp",
       "phone": "+86 041 1 6567 2731"
@@ -1892,28 +1892,28 @@
     {
       "id": "dalian-25",
       "name": "炒海肠",
-      "nameEn": "Stir-fried Sea Intestine",
-      "type": "local",
-      "cuisine": "Seafood",
+      "nameEn": "สติร์-เฟรดซีอินเทสไทน์",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารทะเล",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Seafood restaurants",
+      "address": "ร้านอาหารซีฟู้ด",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
       "hours": "10:00-22:00",
-      "description": "Stir-fried sea intestine - a unique Dalian seafood dish.",
+      "description": "สติร์-เฟรดซี-อินเทสไทน์ - อาหารทะเลพิเศษของดาเลียน",
       "dishHighlights": [
-        "Stir-fried sea intestine",
-        "Garlic sauce",
-        "Spicy"
+        "ผัดลำไส้ทะเล",
+        "ซอสกระเทียม",
+        "เผ็ด"
       ],
       "tags": [
-        "local",
-        "seafood",
-        "unique",
-        "dalian-specialty"
+        "ท้องถิ่น",
+        "อาหารทะเล",
+        "ไม่เหมือนใคร",
+        "เอกลักษณ์ของตะวันออก"
       ],
       "imageUrl": "/img/ext/9e847b210354.webp",
       "phone": "+86 041 1 6535 2237"
@@ -1922,7 +1922,7 @@
       "id": "dalian-26",
       "name": "大连味焖子",
       "nameEn": "大连味焖子 (焖子)",
-      "type": "street",
+      "type": "ร้านอาหารข้างทาง",
       "cuisine": "焖子",
       "avgPrice": 35,
       "rating": 4.1,
@@ -1951,7 +1951,7 @@
       "id": "dalian-28",
       "name": "巷子海鲜",
       "nameEn": "巷子海鲜 (海鲜)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "海鲜",
       "avgPrice": 99,
       "rating": 4.8,
@@ -1980,7 +1980,7 @@
       "id": "dalian-30",
       "name": "阿婆海鲜",
       "nameEn": "阿婆海鲜 (海鲜)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "海鲜",
       "avgPrice": 66,
       "rating": 4.4,
@@ -2009,7 +2009,7 @@
       "id": "dalian-32",
       "name": "正宗焖子",
       "nameEn": "正宗焖子 (焖子)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "焖子",
       "avgPrice": 73,
       "rating": 4.3,
@@ -2038,7 +2038,7 @@
       "id": "dalian-34",
       "name": "巷子海鲜",
       "nameEn": "巷子海鲜 (海鲜)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "海鲜",
       "avgPrice": 121,
       "rating": 4.5,
@@ -2067,7 +2067,7 @@
       "id": "dalian-36",
       "name": "大连味海凉粉",
       "nameEn": "大连味海凉粉 (海凉粉)",
-      "type": "street",
+      "type": "ร้านอาหารข้างทาง",
       "cuisine": "海凉粉",
       "avgPrice": 31,
       "rating": 4.6,
@@ -2096,7 +2096,7 @@
       "id": "dalian-38",
       "name": "老街烤鱿鱼",
       "nameEn": "老街烤鱿鱼 (烤鱿鱼)",
-      "type": "street",
+      "type": "ร้านอาหารข้างทาง",
       "cuisine": "烤鱿鱼",
       "avgPrice": 36,
       "rating": 4.9,
@@ -2125,7 +2125,7 @@
       "id": "dalian-40",
       "name": "大连味焖子",
       "nameEn": "大连味焖子 (焖子)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "焖子",
       "avgPrice": 56,
       "rating": 4.8,
@@ -2154,7 +2154,7 @@
       "id": "dalian-42",
       "name": "传统海凉粉",
       "nameEn": "传统海凉粉 (海凉粉)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "海凉粉",
       "avgPrice": 76,
       "rating": 4.5,
@@ -2183,7 +2183,7 @@
       "id": "dalian-44",
       "name": "大连味焖子",
       "nameEn": "大连味焖子 (焖子)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "焖子",
       "avgPrice": 139,
       "rating": 4.9,
@@ -2212,7 +2212,7 @@
       "id": "dalian-46",
       "name": "阿婆烤鱿鱼",
       "nameEn": "阿婆烤鱿鱼 (烤鱿鱼)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "烤鱿鱼",
       "avgPrice": 121,
       "rating": 4.3,
@@ -2241,7 +2241,7 @@
       "id": "dalian-48",
       "name": "大连味海凉粉",
       "nameEn": "大连味海凉粉 (海凉粉)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "海凉粉",
       "avgPrice": 80,
       "rating": 4.4,
@@ -2270,7 +2270,7 @@
       "id": "dalian-50",
       "name": "传统咸鱼饼子",
       "nameEn": "传统咸鱼饼子 (咸鱼饼子)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "咸鱼饼子",
       "avgPrice": 50,
       "rating": 4.9,
@@ -2299,7 +2299,7 @@
       "id": "dalian-52",
       "name": "阿婆焖子",
       "nameEn": "阿婆焖子 (焖子)",
-      "type": "street",
+      "type": "ร้านอาหารข้างทาง",
       "cuisine": "焖子",
       "avgPrice": 44,
       "rating": 4.3,
@@ -2328,7 +2328,7 @@
       "id": "dalian-54",
       "name": "老大连海凉粉",
       "nameEn": "老大连海凉粉 (海凉粉)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "海凉粉",
       "avgPrice": 54,
       "rating": 4.9,
@@ -2357,7 +2357,7 @@
       "id": "dalian-56",
       "name": "老街海凉粉",
       "nameEn": "老街海凉粉 (海凉粉)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "海凉粉",
       "avgPrice": 73,
       "rating": 4.1,
@@ -2386,7 +2386,7 @@
       "id": "dalian-58",
       "name": "大连味焖子",
       "nameEn": "大连味焖子 (焖子)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "焖子",
       "avgPrice": 65,
       "rating": 4.6,
@@ -2415,7 +2415,7 @@
       "id": "dalian-60",
       "name": "大连味咸鱼饼子",
       "nameEn": "大连味咸鱼饼子 (咸鱼饼子)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "咸鱼饼子",
       "avgPrice": 55,
       "rating": 4.1,
@@ -2444,7 +2444,7 @@
       "id": "dalian-62",
       "name": "大连味咸鱼饼子",
       "nameEn": "大连味咸鱼饼子 (咸鱼饼子)",
-      "type": "street",
+      "type": "ร้านอาหารข้างทาง",
       "cuisine": "咸鱼饼子",
       "avgPrice": 55,
       "rating": 4.7,
@@ -2473,7 +2473,7 @@
       "id": "dalian-64",
       "name": "地道咸鱼饼子",
       "nameEn": "地道咸鱼饼子 (咸鱼饼子)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "咸鱼饼子",
       "avgPrice": 131,
       "rating": 4.9,
@@ -2502,27 +2502,27 @@
       "id": "dalian-66",
       "name": "巷子海鲜",
       "nameEn": "巷子海鲜 (海鲜)",
-      "type": "local",
-      "cuisine": "อาหารทะเล",
+      "type": "ท้องถิ่น",
+      "cuisine": "海鲜",
       "avgPrice": 77,
       "rating": 4.8,
-      "address": "112 ถนนซอยอาหารเลิศรสในย่านเมืองเก่าของดาเลียน",
+      "address": "大连市老城区美食街112号",
       "coordinates": {
         "lat": 38.8851,
         "lng": 121.6148
       },
       "phone": "+86 0411 36312912",
       "hours": "17:00-02:00",
-      "description": "ร้านอาหารทะเลที่ได้รับคำแนะนำจากคนท้องถิ่นในดาเลียน รสชาติแท้ตามเดิม ราคาย่อมเยา",
+      "description": "大连本地人推荐的海鲜店，味道正宗，价格实惠",
       "dishHighlights": [
-        "เม้นจือ",
-        "ขนมปังปลาปรุงเกลือ",
-        "อาหารทะเล"
+        "焖子",
+        "咸鱼饼子",
+        "海鲜"
       ],
       "tags": [
-        "คนท้องถิ่นชื่นชอบ",
-        "คุ้มค่า",
-        "ร้านที่ต้องเข้ารอคิว"
+        "本地人爱去",
+        "性价比高",
+        "排队王"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/7266ef379fe4.webp"
@@ -2530,19 +2530,19 @@
     {
       "id": "dalian-68",
       "name": "老字号焖子",
-      "nameEn": "老字号焖子 (เม้นจือ)",
-      "type": "street",
-      "cuisine": "เม้นจือ",
+      "nameEn": "老字号焖子 (焖子)",
+      "type": "ร้านอาหารข้างทาง",
+      "cuisine": "焖子",
       "avgPrice": 37,
       "rating": 4.3,
-      "address": "177 ถนนซอยอาหารเลิศรสในย่านเมืองใหม่ของดาเลียน",
+      "address": "大连市新城区美食街177号",
       "coordinates": {
         "lat": 38.8996,
         "lng": 121.6167
       },
       "phone": "+86 0411 33671882",
       "hours": "17:00-02:00",
-      "description": "ร้านเม้นจือที่ได้รับคำแนะนำจากคนท้องถิ่นในดาเลียน รสชาติแท้ตามเดิม ราคาย่อมเยา",
+      "description": "大连本地人推荐的焖子店，味道正宗，价格实惠",
       "dishHighlights": [
         "海凉粉",
         "焖子",
@@ -2560,7 +2560,7 @@
       "id": "dalian-70",
       "name": "地道烤鱿鱼",
       "nameEn": "地道烤鱿鱼 (烤鱿鱼)",
-      "type": "street",
+      "type": "ร้านอาหารข้างทาง",
       "cuisine": "烤鱿鱼",
       "avgPrice": 43,
       "rating": 4.7,
@@ -2589,7 +2589,7 @@
       "id": "dalian-72",
       "name": "大连味焖子",
       "nameEn": "大连味焖子 (焖子)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "焖子",
       "avgPrice": 65,
       "rating": 4.7,
@@ -2618,7 +2618,7 @@
       "id": "dalian-74",
       "name": "阿婆烤鱿鱼",
       "nameEn": "阿婆烤鱿鱼 (烤鱿鱼)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "烤鱿鱼",
       "avgPrice": 66,
       "rating": 4.9,
@@ -3023,98 +3023,98 @@
   "culturalTips": [
     {
       "category": "food",
-      "title": "Seafood Culture",
-      "content": "Dalian is famous for fresh seafood. Must-try: steamed crab, salt shrimp, grilled fish, and sea urchin. The city has many seafood markets where you can pick and have food cooked.",
+      "title": "วัฒนธรรมอาหารทะเล",
+      "content": "ต้าเหลียนขึ้นชื่อเรื่องอาหารทะเลสดใหม่ ต้องลอง: ปูนึ่ง กุ้งเค็ม ปลาย่าง และหอยเม่น เมืองนี้มีตลาดอาหารทะเลมากมายที่คุณสามารถเลือกซื้อและให้ปรุงอาหารได้",
       "importance": "high"
     },
     {
       "category": "history",
-      "title": "Russian and Japanese Heritage",
-      "content": "Dalian was under Russian and Japanese control in early 20th century. The Russian Style Street and Japanese Style Street still show this colonial heritage with unique architecture.",
+      "title": "มรดกรัสเซียและญี่ปุ่น",
+      "content": "ต้าเหลียนอยู่ภายใต้การปกครองของรัสเซียและญี่ปุ่นในช่วงต้นศตวรรษที่ 20 ถนนสไตล์รัสเซียและถนนสไตล์ญี่ปุ่นยังคงแสดงให้เห็นมรดกทางอาณานิคมพร้อมสถาปัตยกรรมที่มีเอกลักษณ์",
       "importance": "high"
     },
     {
       "category": "beach",
-      "title": "Coastal City",
-      "content": "Dalian has beautiful beaches including Fujiazhuang, Jinshi Beach, and Bangchui Island. Summer is peak season for beach activities and water sports.",
+      "title": "เมืองชายฝั่ง",
+      "content": "ต้าเหลียนมีชายหาดที่สวยงาม ได้แก่ ฟูเจียจวง จินซี บีช และเกาะบังชุย ฤดูร้อนเป็นช่วงไฮซีซันสำหรับกิจกรรมชายหาดและกีฬาทางน้ำ",
       "importance": "high"
     },
     {
       "category": "food",
-      "title": "Menzi (焖子)",
-      "content": "Pan-fried menzi is an iconic Dalian street snack made from starch. Find it at street vendors, especially near the old streets. Topped with garlic sauce and soy sauce.",
+      "title": "เมนซี (焖子)",
+      "content": "เมนซีผัดกระทะเป็นขนมขายข้างถนนที่เป็นเอกลักษณ์ของต้าเหลียนทำจากแป้ง หาซื้อได้ตามแผงลอย โดยเฉพาะใกล้ถนนเก่า ราดด้วยซอสกระเทียมและซีซอส",
       "importance": "medium"
     },
     {
       "category": "architecture",
-      "title": "European Architecture",
-      "content": "Zhongshan Square and surrounding streets feature European architecture from various countries, making Dalian feel like a European city in parts.",
+      "title": "สถาปัตยกรรมยุโรป",
+      "content": "จัตุรัสจงซานและถนนโดยรอบมีสถาปัตยกรรมแบบยุโรปจากหลายประเทศ ทำให้ต้าเหลียนรู้สึกเหมือนเมืองยุโรปในบางส่วน",
       "importance": "medium"
     },
     {
       "category": "nature",
-      "title": "Clean City",
-      "content": "Dalian is known for its clean streets and urban planning. The city has won awards for environmental improvements and green spaces.",
+      "title": "เมืองสะอาด",
+      "content": "ต้าเหลียนขึ้นชื่อเรื่องถนนสะอาดและการวางผังเมือง เมืองนี้ได้รับรางวัลสำหรับการปรับปรุงสิ่งแวดล้อมและพื้นที่สีเขียว",
       "importance": "medium"
     },
     {
       "category": "food",
-      "title": "Gaba Shrimp",
-      "content": "Spicy raw shrimp (嘎巴虾) is a unique Dalian snack. The shrimp is marinated alive in spicy sauce and eaten whole. An acquired taste!",
+      "title": "กุ้งกาบา",
+      "content": "กุ้งดิบรสเผ็ด (嘎巴虾) เป็นขนมขายข้างถนนที่เป็นเอกลักษณ์ของต้าเหลียน กุ้งหมักในซอสเผ็ดขณะมีชีวิตและรับประทานทั้งตัว รสชาติที่ต้องชิน!",
       "importance": "low"
     },
     {
       "category": "history",
-      "title": "Port City Heritage",
-      "content": "Dalian has been a major port since Russian times. The port area still shows historical buildings and the city has strong maritime heritage.",
+      "title": "มรดกเมืองท่า",
+      "content": "ต้าเหลียนเป็นท่าเรือสำคัญตั้งแต่สมัยรัสเซีย พื้นที่ท่าเรือยังคงมีอาคารประวัติศาสตร์และเมืองนี้มีมรดกทางการเดินเรือที่แข็งแกร่ง",
       "importance": "medium"
     },
     {
       "category": "dialect",
-      "title": "Dalian Dialect",
-      "content": "Dalian dialect is similar to standard Mandarin but with some unique expressions. Locals are known for being direct and friendly.",
+      "title": "ภาษาถิ่นต้าเหลียน",
+      "content": "ภาษาถิ่นต้าเหลียนคล้ายกับภาษาจีนมาตรฐานแต่มีสำนวนเฉพาะท้องถิ่นบางอย่าง ชาวท้องถิ่นขึ้นชื่อเรื่องความตรงไปตรงมาและเป็นมิตร",
       "importance": "low"
     },
     {
       "category": "transport",
-      "title": "Getting Around",
-      "content": "Dalian has a modern tram system and metro. The coastal scenic area is best explored by tourist bus or taxi. Bicycles are available but hilly terrain makes walking challenging.",
+      "title": "การเดินทางรอบเมือง",
+      "content": "ต้าเหลียนมีระบบรถม้าบดและรถไฟฟ้าใต้ดินที่ทันสมัย พื้นที่ชายฝั่งที่น่าชมสำรวจได้ดีที่สุดด้วยรถบัสท่องเที่ยวหรือแท็กซี่ จักรยานมีให้เช่าแต่ภูมิประเทศที่เป็นเนินเขาทำให้การเดินเป็นเรื่องยาก",
       "importance": "medium"
     },
     {
       "category": "shopping",
-      "title": "Russian Products",
-      "content": "Buy Russian chocolate, vodka, and souvenirs at the Russian Style Street. Also find local seafood products and dried seafood as souvenirs.",
+      "title": "สินค้ารัสเซีย",
+      "content": "ซื้อช็อกโกแลตรัสเซีย วอดกา และของที่ระลึกที่ถนนสไตล์รัสเซีย ยังหาผลิตภัณฑ์อาหารทะเลท้องถิ่นและอาหารทะเลแห้งเป็นของที่ระลึกได้อีกด้วย",
       "importance": "medium"
     },
     {
       "category": "nightlife",
-      "title": "Nightlife",
-      "content": "Dalian has vibrant nightlife around Xinghai Square and the beach areas. Many bars and clubs cater to both locals and tourists.",
+      "title": "ชีวิตยามค่ำคืน",
+      "content": "ต้าเหลียนมีชีวิตชีวายามค่ำคืนรอบจัตุรัสเซี่ยงไห้และพื้นที่ชายหาด มีบาร์และคลับมากมายรองรับทั้งชาวท้องถิ่นและนักท่องเที่ยว",
       "importance": "low"
     },
     {
       "category": "nature",
-      "title": "Mountain and Sea Views",
-      "content": "Dalian uniquely combines mountain and sea scenery. The coastal road offers spectacular views and there are hiking trails in the hills behind the city.",
+      "title": "วิวภูเขาและทะเล",
+      "content": "ต้าเหลียนผสมผสานทิวทัศน์ภูเขาและทะเลได้อย่างเป็นเอกลักษณ์ ถนนชายฝั่งมีวิวที่งดงามตระการตาและมีเส้นทางเดินป่าบนเนินเขาหลังเมือง",
       "importance": "medium"
     },
     {
       "category": "education",
-      "title": "Education Hub",
-      "content": "Dalian has several universities and is known for education. The city attracts students from across China and internationally.",
+      "title": "ศูนย์การศึกษา",
+      "content": "ต้าเหลียนมีมหาวิทยาลัยหลายแห่งและขึ้นชื่อเรื่องการศึกษา เมืองนี้ดึงดูดนักศึกษาจากทั่วประเทศจีนและต่างประเทศ",
       "importance": "low"
     },
     {
       "category": "art",
-      "title": "Fashion City",
-      "content": "Dalian hosts international fashion events and is known for its fashion industry. The city has a modern, cosmopolitan feel.",
+      "title": "เมืองแฟชั่น",
+      "content": "ต้าเหลียนเป็นเจ้าภาพจัดงานแฟชั่นระดับนานาชาติและขึ้นชื่อเรื่องอุตสาหกรรมแฟชั่น เมืองนี้มีความร่วมสมัยและเป็นสากล",
       "importance": "low"
     },
     {
       "category": "seasonal",
-      "title": "Cherry Blossoms",
-      "content": "Dalian has Japanese cherry trees that bloom in spring. The Japanese Style Street is particularly beautiful during cherry blossom season.",
+      "title": "ดอกซากุระ",
+      "content": "ต้าเหลียนมีต้นซากุระญี่ปุ่นบานในฤดูใบไม้ผลิ ถนนสไตล์ญี่ปุ่นมีความสวยงามเป็นพิเศษในช่วงฤดูซากุระบาน",
       "importance": "medium"
     }
   ],
@@ -3122,98 +3122,98 @@
     {
       "type": "ambulance",
       "name": "大连急救中心",
-      "nameEn": "Dalian Emergency Center",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "120",
-      "notes": "Major hospitals have English interpretation"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "police",
       "name": "大连市公安局",
-      "nameEn": "Dalian Public Security Bureau",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "110",
-      "notes": "Tourist police at major attractions"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "hospital",
       "name": "大连医科大学附属第一医院",
-      "nameEn": "The First Affiliated Hospital of Dalian Medical University",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 411 8363 5963",
-      "address": "222 Zhongshan Road, Xigang District",
+      "address": "กว่างโจว",
       "coordinates": {
         "lat": 38.9122,
         "lng": 121.6022
       },
-      "notes": "English-speaking staff available"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "hospital",
       "name": "大连市中心医院",
-      "nameEn": "Dalian Central Hospital",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 411 8440 8999",
-      "address": "42 Xuefu Road, Shahekou District",
+      "address": "กว่างโจว",
       "coordinates": {
         "lat": 38.8922,
         "lng": 121.5922
       },
-      "notes": "Another major hospital"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "tourist-police",
       "name": "大连旅游警察",
-      "nameEn": "Dalian Tourist Police",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 411 8805 8239",
-      "notes": "English-speaking tourist police"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "fire",
       "name": "大连消防",
-      "nameEn": "Dalian Fire Department",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "119",
-      "notes": "Fire and rescue services"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "embassy",
       "name": "俄罗斯驻大连总领事馆",
-      "nameEn": "Russia Consulate General Dalian",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 411 8280 3828",
-      "address": "6 Huayuan Street, Zhongshan District",
+      "address": "กว่างโจว",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
-      "notes": "For Russian citizens in Dalian"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "embassy",
       "name": "日本驻沈阳总领事馆大连办事处",
-      "nameEn": "Japan Consulate Dalian Office",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 411 8280 3922",
-      "address": "28 Shanghai Road, Zhongshan District",
-      "notes": "For Japanese citizens in Dalian"
+      "address": "กว่างโจว",
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "embassy",
       "name": "美国驻沈阳总领事馆",
-      "nameEn": "US Consulate General Shenyang",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 24 2322 2714",
-      "address": "Shenyang",
-      "notes": "For US citizens in Dalian region"
+      "address": "กว่างโจว",
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "embassy",
       "name": "韩国驻沈阳总领事馆",
-      "nameEn": "South Korea Consulate General Shenyang",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 24 2385 3366",
-      "address": "Shenyang",
-      "notes": "For Korean citizens in Dalian region"
+      "address": "กว่างโจว",
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese, Dalian dialect",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Tap water safe after boiling; bottled water recommended"
+    "language": "ภาษาจีน (แมนดาริน)",
+    "currency": "หยวนจีน (CNY/RMB)",
+    "visa": "ส่วนใหญ่ต้องมีวีซ่า นักเดินทางที่มีคุณสมบัติสามารถขอวีซ่าแวนผ่าน 72 ชั่วโมงที่สนามบิน",
+    "timeZone": "UTC+8 (เวลามาตรฐานจีน)",
+    "electricity": "220V/50Hz, ปลั๊กประเภท A/I",
+    "water": "น้ำประปาดื่มได้ แต่แนะนำให้ดื่มน้ำขวด"
   }
 }

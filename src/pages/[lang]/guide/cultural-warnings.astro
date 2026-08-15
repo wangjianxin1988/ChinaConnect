@@ -13,8 +13,8 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import { translations } from "@/i18n/translations";
 import { getLangFromUrl } from '@/i18n/utils';
 
-const pageTitle = translations.en.guidePage?.culturalWarningsTitle || "Cultural Warnings - ChinaConnect";
-const pageDescription = translations.en.guidePage?.culturalWarningsDescription || "Navigate cultural differences and avoid common faux pas while traveling in China.";
+const pageTitle = (translations[lang] || translations.en).guidePage?.culturalWarningsTitle || "Cultural Warnings - ChinaConnect";
+const pageDescription = (translations[lang] || translations.en).guidePage?.culturalWarningsDescription || "Navigate cultural differences and avoid common faux pas while traveling in China.";
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription}>

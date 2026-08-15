@@ -1,4 +1,4 @@
-﻿---
+---
 import EmbeddedAppRecommendation from "@/components/apps/EmbeddedAppRecommendation";
 import { InlineAppPillsGroup, getAppsForSection } from "@/components/apps/InlineAppPills";
 import { AttractionCard } from "@/components/city/AttractionCard";
@@ -7,6 +7,7 @@ import { CityMap } from "@/components/city/CityMap";
 import { CityTierBadge } from "@/components/city/CityTierBadge";
 import { CulturalSection } from "@/components/city/CulturalSection";
 import { EmergencyCard, QuickDialGrid } from "@/components/city/EmergencyCard";
+import { ct } from "@/i18n/components-strings";
 import { translations } from "@/i18n/translations";
 import { EmergencySection } from "@/components/city/EmergencySection";
 import { FoodHighlightsSection } from "@/components/city/FoodHighlightsSection";
@@ -34,11 +35,31 @@ if (!city) {
 const { prev, next } = getAdjacentCities(slug as string);
 
 // Get unified hotel data
-const unifiedHotels = getHotelsByCity(slug as string);
-const hotelCategoryCounts = getHotelCategoryCounts(slug as string);
-const totalHotelCount = getHotelCount(slug as string);
+const unifiedHotels = getHotelsByCity(slug as string, lang);
+const hotelCategoryCounts = getHotelCategoryCounts(slug as string, lang);
+const totalHotelCount = getHotelCount(slug as string, lang);
 
-const localCityName = translations[lang]?.["city." + city.slug + ".name"] ?? translations.en?.["city." + city.slug + ".name"] ?? city.nameEn;
+const i18nCity = lang !== "en" ? getCityData(city.slug, lang) : null;
+const localCityName = translations[lang]?.["city." + city.slug + ".name"] ?? translations.en?.["city." + city.slug + ".name"] ?? i18nCity?.name ?? city.nameEn;
+const isJapanese = lang === "ja";
+const langPrefix = lang === "en" ? "" : `/${lang}`;
+const weatherI18n = {
+  cityPage: {
+    weatherHumidity: translations[lang]?.cityPage?.weatherHumidity,
+    weatherWind: translations[lang]?.cityPage?.weatherWind,
+    weatherFeels: translations[lang]?.cityPage?.weatherFeels,
+    weatherForecast: translations[lang]?.cityPage?.weatherForecast,
+    weatherDemo: translations[lang]?.cityPage?.weatherDemo,
+    weatherNA: translations[lang]?.cityPage?.weatherNA,
+    weatherNotAvailable: translations[lang]?.cityPage?.weatherNotAvailable,
+  },
+  weather: {
+    toggleUnit: lang === "ja" ? "温度単位を切り替え" : "Toggle temperature unit",
+    toggleUnitCelsius: "°C",
+    toggleUnitFahrenheit: "°F",
+    rainProbability: lang === "ja" ? "降水確率" : "rain",
+  },
+};
 const pageTitle = (translations[lang] || translations.en).cityPage?.pageTitle?.replace("{city}", localCityName) ?? `${localCityName} ${(translations.en.cityPage?.pageTitleSuffix ?? "Travel Guide - ChinaConnect")}`;
 const pageDescription = (translations[lang] || translations.en).cityPage?.citySubtitle?.replace("{city}", localCityName) ?? `Complete travel guide for ${localCityName}, ${city.name}.`;
 
@@ -75,7 +96,7 @@ const citySchema = {
     addressRegion: city.name,
   },
   population: city.population,
-  url: `https://chinaengage.org/city/${city.slug}`,
+  url: `https://chinaengage.org${langPrefix}/city/${city.slug}`,
   photo: city.coverImage,
   aggregateRating:
     city.restaurants.length > 0
@@ -180,20 +201,20 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 1,
-      name: "Home",
-      item: "https://chinaengage.org",
+      name: translations[lang]?.nav?.home ?? "Home",
+      item: `https://chinaengage.org${langPrefix}`,
     },
     {
       "@type": "ListItem",
       position: 2,
-      name: "Cities",
-      item: "https://chinaengage.org/#cities",
+      name: translations[lang]?.nav?.cities ?? "Cities",
+      item: `https://chinaengage.org${langPrefix}/#cities`,
     },
     {
       "@type": "ListItem",
       position: 3,
-      name: city.nameEn,
-      item: `https://chinaengage.org/city/${city.slug}`,
+      name: localCityName,
+      item: `https://chinaengage.org${langPrefix}/city/${city.slug}`,
     },
   ],
 };
@@ -202,18 +223,21 @@ const breadcrumbSchema = {
 const SITE_URL = "https://chinaengage.org";
 const enCityUrl = `${SITE_URL}/city/${city.slug}`;
 const zhCityUrl = `${SITE_URL}/zh/city/${city.slug}`;
+const jaCityUrl = `${SITE_URL}/ja/city/${city.slug}`;
 
 const _t = translations[lang] || translations.en;
-const _lookup = (key) => {
+const _lookup = (key, vars) => {
+  if (vars === undefined) vars = { city: localCityName };
   const parts = key.split('.');
   let cur = _t;
-  for (const p of parts) { if (cur && typeof cur === 'object' && p in cur) cur = cur[p]; else return key; }
-  return typeof cur === 'string' ? cur : key;
+  for (const k of parts) { if (cur && typeof cur === 'object' && k in cur) cur = cur[k]; else return key; }
+  if (typeof cur !== 'string') return key;
+  return cur.replace(/\{(\w+)\}/g, (m, k) => (vars && k in vars ? String(vars[k]) : ''));
 };
 const modules = [
   { id: "overview", label: () => _lookup('cityPage.tabOverview'), icon: "📍", colorClass: "bg-blue-50 text-blue-700 hover:bg-blue-100" },
   { id: "food-highlights", label: () => _lookup('cityPage.tabFood'), icon: "🍜", colorClass: "bg-orange-50 text-orange-700 hover:bg-orange-100" },
-  { id: "attractions", label: () => _lookup('cityPage.tabAttractions'), icon: "🏛️", colorClass: "bg-purple-50 text-purple-700 hover:bg-purple-100" },
+  { id: "attractions", label: () => _lookup('cityPage.tabAttractions'), icon: "🏛", colorClass: "bg-purple-50 text-purple-700 hover:bg-purple-100" },
   { id: "transport", label: () => _lookup('cityPage.tabTransport'), icon: "🚇", colorClass: "bg-green-50 text-green-700 hover:bg-green-100" },
   { id: "accommodation", label: () => _lookup('cityPage.tabHotels'), icon: "🏨", colorClass: "bg-teal-50 text-teal-700 hover:bg-teal-100" },
   { id: "payment", label: () => _lookup('cityPage.tabPayment'), icon: "💳", colorClass: "bg-indigo-50 text-indigo-700 hover:bg-indigo-100" },
@@ -227,6 +251,46 @@ function getBadgeClass(type: string) {
   if (type === "michelin") return "badge-michelin";
   if (type === "blackpearl") return "badge-blackpearl";
   return "badge-local";
+}
+
+// Render transport list items that may be strings, nested string arrays, or objects
+function formatTransportItem(item: unknown): string {
+  if (typeof item === "string") return item;
+  if (Array.isArray(item)) return item.map((x) => formatTransportItem(x)).join(", ");
+  if (item && typeof item === "object") {
+    const parts = Object.values(item as Record<string, unknown>)
+      .filter((v): v is string => typeof v === "string" && v.length > 0 && v !== "N/A")
+      .map((v) => v.trim());
+    return parts.join(" · ");
+  }
+  return String(item);
+}
+
+
+// Map payment method name to i18n key
+function payKey(method: string): string {
+  const m = method.toLowerCase();
+  if (m === "alipay") return "pay_alipay";
+  if (m === "wechat pay") return "pay_wechat";
+  if (m === "cash") return "pay_cash";
+  if (m === "cash (rmb)") return "pay_cash_rmb";
+  if (m === "cash (cny)") return "pay_cash";
+  if (m === "unionpay") return "pay_unionpay";
+  if (m === "china unionpay") return "pay_unionpay";
+  if (m === "credit cards") return "pay_credit_cards";
+  if (m === "international credit cards") return "pay_intl_credit_cards";
+  if (m === "foreign exchange") return "pay_foreign_exchange";
+  if (m === "traveler's cheques" || m === "traveler checks") return "pay_travelers_checks";
+  if (m === "international cards") return "pay_international_cards";
+  if (m === "changsha tong card") return "pay_changsha_tong";
+  if (m === "wuhan tong card") return "pay_wuhan_tong";
+  if (m === "beer voucher") return "pay_beer_voucher";
+  if (m === "apple pay / contactless") return "pay_apple_pay_contactless";
+  if (m === "apple pay / google pay") return "pay_apple_google_pay";
+  if (m === "mobile payment via digital wallet") return "pay_mobile_wallet";
+  if (m === "mobile wallets (apple pay/google pay)") return "pay_mobile_wallets";
+  if (m === "visa/mastercard") return "pay_visa_mastercard";
+  return "";
 }
 
 // Derived data for template use
@@ -276,6 +340,7 @@ const mapMarkers = [
 
   <!-- SEO: hreflang for multi-language support -->
   <link rel="alternate" hreflang="en" href={enCityUrl} />
+  <link rel="alternate" hreflang="ja" href={jaCityUrl} />
   <link rel="alternate" hreflang="zh-CN" href={zhCityUrl} />
   <link rel="alternate" hreflang="x-default" href={enCityUrl} />
   <!-- Hero Section -->
@@ -286,19 +351,19 @@ const mapMarkers = [
     <div class="container-custom relative h-full flex flex-col justify-end pb-8">
       <!-- Breadcrumb -->
       <nav class="mb-4">
-        <a href="/" class="text-blue-200 hover:text-white transition-colors" data-i18n="cityPage.home">Home</a>
+        <a href={`${langPrefix}/`} class="text-blue-200 hover:text-white transition-colors" data-i18n="nav.home">{_lookup("nav.home")}</a>
         <span class="text-blue-300 mx-2">/</span>
-        <a href="/#cities" class="text-blue-200 hover:text-white transition-colors">Cities</a>
+        <a href={`${langPrefix}/#cities`} class="text-blue-200 hover:text-white transition-colors" data-i18n="nav.cities">{_lookup("nav.cities")}</a>
         <span class="text-blue-300 mx-2">/</span>
-        <span class="text-white">{city.nameEn}</span>
+        <span class="text-white">{localCityName}</span>
       </nav>
 
       <h1 class="text-4xl md:text-5xl font-bold text-white mb-2 flex items-center gap-3">
-        {city.nameEn}
+        {localCityName}
         <CityTierBadge tier={S_TIER_CITIES[city.slug]?.tier || "D"} size="md" showLabel={false} />
       </h1>
-      <p class="text-xl text-blue-200 mb-4">{city.name}</p>
-      <p class="text-gray-300 max-w-2xl" data-translate={city.description}>{city.description}</p>
+      <p class="text-xl text-blue-200 mb-4">{localCityName}</p>
+      <p class="text-gray-300 max-w-2xl" data-translate={i18nCity?.description || city.description}>{isJapanese ? (i18nCity?.description || city.description) : city.description}</p>
     </div>
   </section>
 
@@ -308,25 +373,27 @@ const mapMarkers = [
       <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
         <div class="text-center">
           <div class="text-2xl font-bold text-gray-900">{city.population}</div>
-          <div class="text-sm text-gray-500" data-i18n="cityPage.population">Population</div>
+          <div class="text-sm text-gray-500" data-i18n="cityPage.population">{_lookup("cityPage.population")}</div>
         </div>
         <div class="text-center">
           <div class="text-2xl font-bold text-gray-900">{city.climate.type}</div>
-          <div class="text-sm text-gray-500" data-i18n="cityPage.climate">Climate</div>
+          <div class="text-sm text-gray-500" data-i18n="cityPage.climate">{_lookup("cityPage.climate")}</div>
         </div>
         <div class="text-center">
           <div class="text-2xl font-bold text-gray-900">{city.attractions.length}</div>
-          <div class="text-sm text-gray-500" data-i18n="cityPage.attractionsLabel">Attractions</div>
+          <div class="text-sm text-gray-500" data-i18n="cityPage.attractionsLabel">{_lookup("cityPage.attractionsLabel")}</div>
         </div>
         <div class="text-center">
           <div class="text-2xl font-bold text-gray-900">{city.restaurants.length}</div>
-          <div class="text-sm text-gray-500" data-i18n="cityPage.restaurantsLabel">Restaurants</div>
+          <div class="text-sm text-gray-500" data-i18n="cityPage.restaurantsLabel">{_lookup("cityPage.restaurantsLabel")}</div>
         </div>
         <div class="text-center col-span-2 md:col-span-1">
           <WeatherWidget
             city={city.nameEn}
             lat={city.coordinates.lat}
             lng={city.coordinates.lng}
+            lang={lang}
+            i18n={weatherI18n}
             client:only="react"
           />
         </div>
@@ -357,7 +424,7 @@ const mapMarkers = [
         <!-- Overview Section -->
         <section id="overview" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
-            <span class="text-2xl">📍</span> <span data-i18n="cityPage.tabOverview">Overview</span>
+            <span class="text-2xl">📍</span> <span data-i18n="cityPage.tabOverview" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.tabOverview")}</span>
           </h2>
 
           <!-- Hero Image -->
@@ -388,7 +455,7 @@ const mapMarkers = [
           <!-- Best Time to Visit -->
           <div class="bg-blue-50 rounded-xl p-6 mb-6">
           <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-              <span aria-hidden="true">🌤️</span> <span data-i18n="cityPage.bestTimeHeading">Best Time to Visit</span>
+              <span aria-hidden="true">🌤</span> <span data-i18n="cityPage.bestTimeHeading" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.bestTimeHeading")}</span>
             </h3>
             <p class="text-gray-700 mb-3">{city.climate.tips}</p>
             <div class="flex flex-wrap gap-2">
@@ -400,11 +467,11 @@ const mapMarkers = [
             </div>
             <div class="grid grid-cols-2 gap-4 mt-4 text-sm">
               <div>
-                <span class="font-medium text-gray-700" data-i18n="cityPage.summer">Summer:</span>
+                <span class="font-medium text-gray-700" data-i18n="cityPage.summer" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.summer")}</span>
                 <span class="text-gray-600 ml-2">{city.climate.avgSummerTemp}</span>
               </div>
               <div>
-                <span class="font-medium text-gray-700" data-i18n="cityPage.winter">Winter:</span>
+                <span class="font-medium text-gray-700" data-i18n="cityPage.winter" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.winter")}</span>
                 <span class="text-gray-600 ml-2">{city.climate.avgWinterTemp}</span>
               </div>
             </div>
@@ -412,11 +479,11 @@ const mapMarkers = [
 
           <!-- Highlights -->
           <div class="bg-gray-50 rounded-xl p-6">
-            <h3 class="text-lg font-semibold mb-4" data-i18n="cityPage.topHighlightsHeading">Top Highlights</h3>
+            <h3 class="text-lg font-semibold mb-4" data-i18n="cityPage.topHighlightsHeading">{_lookup("cityPage.topHighlightsHeading")}</h3>
             <div class="grid md:grid-cols-2 gap-3">
               {city.highlights.map(h => (
                 <div class="flex items-start gap-2">
-                  <span class="text-blue-500 mt-1">✓</span>
+                  <span class="text-blue-500 mt-1">?</span>
                   <span class="text-gray-700">{h}</span>
                 </div>
               ))}
@@ -425,33 +492,33 @@ const mapMarkers = [
 
           <!-- Quick Facts -->
           <div class="bg-white border rounded-xl p-6 mt-6">
-            <h3 class="text-lg font-semibold mb-4" data-i18n="cityPage.quickFactsHeading">Quick Facts</h3>
+            <h3 class="text-lg font-semibold mb-4" data-i18n="cityPage.quickFactsHeading">{_lookup("cityPage.quickFactsHeading")}</h3>
             <div class="grid grid-cols-2 gap-4">
               <div class="flex items-center gap-3">
-                <span class="text-2xl">🗣️</span>
+                <span class="text-2xl">💬</span>
                 <div>
-                  <div class="text-sm text-gray-500" data-i18n="cityPage.language">Language</div>
+                  <div class="text-sm text-gray-500" data-i18n="cityPage.language">{_lookup("cityPage.language")}</div>
                   <div class="font-medium">{city.quickFacts.language}</div>
                 </div>
               </div>
               <div class="flex items-center gap-3">
                 <span class="text-2xl">💰</span>
                 <div>
-                  <div class="text-sm text-gray-500" data-i18n="cityPage.currency">Currency</div>
+                  <div class="text-sm text-gray-500" data-i18n="cityPage.currency">{_lookup("cityPage.currency")}</div>
                   <div class="font-medium">{city.quickFacts.currency}</div>
                 </div>
               </div>
               <div class="flex items-center gap-3">
                 <span class="text-2xl">🛂</span>
                 <div>
-                  <div class="text-sm text-gray-500" data-i18n="cityPage.visa">Visa</div>
+                  <div class="text-sm text-gray-500" data-i18n="cityPage.visa">{_lookup("cityPage.visa")}</div>
                   <div class="font-medium">{city.quickFacts.visa}</div>
                 </div>
               </div>
               <div class="flex items-center gap-3">
-                <span class="text-2xl">⚡</span>
+                <span class="text-2xl">?</span>
                 <div>
-                  <div class="text-sm text-gray-500" data-i18n="cityPage.electricity">Electricity</div>
+                  <div class="text-sm text-gray-500" data-i18n="cityPage.electricity">{_lookup("cityPage.electricity")}</div>
                   <div class="font-medium">{city.quickFacts.electricity}</div>
                 </div>
               </div>
@@ -462,15 +529,16 @@ const mapMarkers = [
         <!-- Food Highlights Section (High Priority - Before Attractions) -->
         <section id="food-highlights" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
-            <span class="text-2xl">🍜</span> <span data-i18n="cityPage.foodHighlightsHeading">Food Highlights</span>
-            <span class="text-sm font-normal text-gray-500 ml-2" data-i18n="cityPage.foodHighlightsSubtitle">Locally recommended</span>
+            <span class="text-2xl">🍜</span> <span data-i18n="cityPage.foodHighlightsHeading" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.foodHighlightsHeading")}</span>
+            <span class="text-sm font-normal text-gray-500 ml-2" data-i18n="cityPage.foodHighlightsSubtitle" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.foodHighlightsSubtitle")}</span>
           </h2>
-          <p class="section-subtitle" data-i18n="cityPage.foodSubtitle">Discover local food highlights in {city.nameEn}</p>
+          <p class="section-subtitle" data-i18n="cityPage.foodSubtitle">{isJapanese ? `${localCityName}のグルメハイライト` : `Discover local food highlights in ${city.nameEn}`}</p>
 
           <FoodHighlightsSection
             restaurants={city.restaurants}
             citySlug={city.slug}
             cityName={city.nameEn}
+            lang={lang}
             client:visible
           />
 
@@ -483,15 +551,15 @@ const mapMarkers = [
           <div class="mb-6 bg-gradient-to-r from-orange-50 to-red-50 rounded-xl p-4 flex items-center justify-between gap-4 border border-orange-100">
             <div>
               <h3 class="font-semibold text-gray-800 flex items-center gap-2">
-                <span>🗺️</span> Three-in-One Food Map
+                <span>🗺</span> {ct(lang, "apps_food_map", "Three-in-One Food Map")}
               </h3>
-              <p class="text-sm text-gray-600 mt-0.5" data-i18n="cityPage.mapLayerDesc">Layer controls: Michelin stars, Black Pearl rankings, and local recommendations</p>
+              <p class="text-sm text-gray-600 mt-0.5" data-i18n="cityPage.mapLayerDesc">{_lookup("cityPage.mapLayerDesc")}</p>
             </div>
             <a
-              href={`/food?city=${city.slug}`}
+              href={`${langPrefix}/food?city=${city.slug}`}
               class="shrink-0 px-5 py-2.5 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl font-semibold text-sm hover:from-orange-600 hover:to-red-600 transition-all shadow-md hover:shadow-lg flex items-center gap-2"
             >
-              <span><span data-i18n="cityPage.openFullMap">Open Full Map</span></span>
+              <span><span data-i18n="cityPage.openFullMap" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.openFullMap")}</span></span>
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
@@ -502,16 +570,17 @@ const mapMarkers = [
         <!-- Attractions Section (Lazy loaded with infinite scroll) -->
         <section id="attractions" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
-            <span class="text-2xl">🏛️</span> <span data-i18n="cityPage.attractionsHeading">Must-Visit Attractions</span>
+            <span class="text-2xl">🏛</span> <span data-i18n="cityPage.attractionsHeading" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.attractionsHeading")}</span>
             <span class="text-sm font-normal text-gray-500 ml-2">({city.attractions.length} places)</span>
           </h2>
-          <p class="section-subtitle" data-i18n="cityPage.attractionsSubtitle">Discover the best attractions in {city.nameEn}</p>
+          <p class="section-subtitle" data-i18n="cityPage.attractionsSubtitle">{isJapanese ? `${localCityName}のベスト観光スポット` : `Discover the best attractions in ${localCityName}`}</p>
 
           <AttractionsSection
             attractions={city.attractions.slice(0, 5)}
             citySlug={city.slug}
             cityName={city.nameEn}
             totalCount={city.attractions.length}
+            lang={lang}
             client:visible
           />
         </section>
@@ -519,32 +588,32 @@ const mapMarkers = [
         <!-- Transport Section -->
         <section id="transport" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
-            <span class="text-2xl">🚇</span> <span data-i18n="cityPage.sectionTransport">Transport Guide</span>
+            <span class="text-2xl">🚇</span> <span data-i18n="cityPage.sectionTransport" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.sectionTransport")}</span>
           </h2>
-          <p class="section-subtitle" data-i18n="cityPage.transportSubtitle">Getting to and around {city.nameEn}</p>
+          <p class="section-subtitle" data-i18n="cityPage.transportSubtitle">{isJapanese ? `${localCityName}へのアクセスと市内移動` : `Getting to and around ${localCityName}`}</p>
 
           <!-- Getting There -->
           <div class="mb-8">
-            <h3 class="text-lg font-semibold mb-4" data-i18n="cityPage.gettingTo">Getting to {city.nameEn}</h3>
+            <h3 class="text-lg font-semibold mb-4" data-i18n="cityPage.gettingTo">{isJapanese ? `${localCityName}へのアクセス` : `Getting to ${localCityName}`}</h3>
             <div class="space-y-4">
               {city.transport.arrival.map(option => (
                 <div class="bg-white border rounded-xl p-6">
                   <div class="flex items-center gap-3 mb-3">
-                    <span class="text-2xl">{option.type === 'air' ? '✈️' : option.type === 'train' ? '🚄' : '🚌'}</span>
-                    <span class="font-semibold capitalize">{option.type}</span>
+                    <span class="text-2xl">{option.type === 'air' ? '✈' : option.type === 'train' ? '🚄' : '🚌'}</span>
+                    <span class="font-semibold capitalize">{option.type === "air" ? ct(lang, "transport_air", "Air") : option.type === "train" ? ct(lang, "transport_train", "Train") : ct(lang, "transport_bus_route", "Bus")}</span>
                   </div>
                   <p class="text-gray-600 mb-2">{option.from}</p>
                   <div class="grid md:grid-cols-3 gap-4 text-sm">
                     <div>
-                      <span class="text-gray-500" data-i18n="cityPage.durationLabel">Duration:</span>
+                      <span class="text-gray-500" data-i18n="cityPage.durationLabel" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.durationLabel")}</span>
                       <span class="ml-2 font-medium">{option.duration}</span>
                     </div>
                     <div>
-                      <span class="text-gray-500" data-i18n="cityPage.priceLabel">Price:</span>
+                      <span class="text-gray-500" data-i18n="cityPage.priceLabel" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.priceLabel")}</span>
                       <span class="ml-2 font-medium">{option.price}</span>
                     </div>
                     <div>
-                      <span class="text-gray-500" data-i18n="cityPage.frequencyLabel">Frequency:</span>
+                      <span class="text-gray-500" data-i18n="cityPage.frequencyLabel" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.frequencyLabel")}</span>
                       <span class="ml-2 font-medium">{option.frequency}</span>
                     </div>
                   </div>
@@ -558,19 +627,18 @@ const mapMarkers = [
             </div>
           </div>
 
-          <!-- <span data-i18n="cityPage.gettingAround">Getting Around</span> -->
           <div>
-            <h3 class="text-lg font-semibold mb-4"><span data-i18n="cityPage.gettingAround">Getting Around</span></h3>
+            <h3 class="text-lg font-semibold mb-4"><span data-i18n="cityPage.gettingAround" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.gettingAround")}</span></h3>
             <div class="grid md:grid-cols-2 gap-4">
               <div class="bg-white border rounded-xl p-6">
                 <h4 class="font-medium mb-4 flex items-center gap-2">
-                  <span>🚇</span> Metro
+                  <span>🚇</span> {ct(lang, "transport_metro_label", "Metro")}
                 </h4>
                 <ul class="space-y-2 text-sm text-gray-600">
-                  {(city.transport.local.metro || []).map(item => (
+                  {(city.transport.local.metro || []).flat(Infinity).map(item => (
                     <li class="flex items-start gap-2">
-                      <span class="text-blue-500">•</span>
-                      <span>{item}</span>
+                      <span class="text-blue-500">?</span>
+                      <span>{formatTransportItem(item)}</span>
                     </li>
                   ))}
                 </ul>
@@ -581,19 +649,20 @@ const mapMarkers = [
                 <InlineAppPillsGroup
                   client:visible
                   apps={getAppsForSection(["transport"])}
-                                  data-i18n-title="cityPage.recommendedTransportApps" title="Recommended Transport Apps"
+                  lang={lang}
+                                  data-i18n-title="cityPage.recommendedTransportApps" title={ct(lang, "apps_transport_rec", "Recommended Transport Apps")}
                 />
               </div>
 
               <div class="bg-white border rounded-xl p-6">
                 <h4 class="font-medium mb-4 flex items-center gap-2">
-                  <span>🚌</span> Bus
+                  <span>🚌</span> {ct(lang, "transport_bus_label", "Bus")}
                 </h4>
                 <ul class="space-y-2 text-sm text-gray-600">
-                  {(city.transport.local.bus || []).map(item => (
+                  {(city.transport.local.bus || []).flat(Infinity).map(item => (
                     <li class="flex items-start gap-2">
-                      <span class="text-green-500">•</span>
-                      <span>{item}</span>
+                      <span class="text-green-500">?</span>
+                      <span>{formatTransportItem(item)}</span>
                     </li>
                   ))}
                 </ul>
@@ -601,13 +670,13 @@ const mapMarkers = [
 
               <div class="bg-white border rounded-xl p-6">
                 <h4 class="font-medium mb-4 flex items-center gap-2">
-                  <span>🚕</span> Taxi
+                  <span>🚕</span> {ct(lang, "transport_taxi_label", "Taxi")}
                 </h4>
                 <ul class="space-y-2 text-sm text-gray-600">
-                  {(city.transport.local.taxi || []).map(item => (
+                  {(city.transport.local.taxi || []).flat(Infinity).map(item => (
                     <li class="flex items-start gap-2">
-                      <span class="text-orange-500">•</span>
-                      <span>{item}</span>
+                      <span class="text-orange-500">?</span>
+                      <span>{formatTransportItem(item)}</span>
                     </li>
                   ))}
                 </ul>
@@ -615,13 +684,13 @@ const mapMarkers = [
 
               <div class="bg-white border rounded-xl p-6">
                 <h4 class="font-medium mb-4 flex items-center gap-2">
-                  <span>🚴</span> Bike
+                  <span>🚲</span> {ct(lang, "transport_bike_label", "Bike")}
                 </h4>
                 <ul class="space-y-2 text-sm text-gray-600">
-                  {(city.transport.local.bike || []).map(item => (
+                  {(city.transport.local.bike || []).flat(Infinity).map(item => (
                     <li class="flex items-start gap-2">
-                      <span class="text-purple-500">•</span>
-                      <span>{item}</span>
+                      <span class="text-purple-500">?</span>
+                      <span>{formatTransportItem(item)}</span>
                     </li>
                   ))}
                 </ul>
@@ -633,34 +702,34 @@ const mapMarkers = [
         <!-- Accommodation Section -->
         <section id="accommodation" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
-            <span class="text-2xl">🏨</span> <span data-i18n="cityPage.sectionHotels">Where to Stay</span>
+            <span class="text-2xl">🏨</span> <span data-i18n="cityPage.sectionHotels" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.sectionHotels")}</span>
           </h2>
-          <p class="section-subtitle">Browse {totalHotelCount} vetted hotels across 6 categories in {city.nameEn}</p>
+          <p class="section-subtitle">{isJapanese ? `${totalHotelCount}軒の選りすぐりホテルを6つのカテゴリーから` : `Browse ${totalHotelCount} vetted hotels across 6 categories in ${city.nameEn}`}</p>
 
-          {/* Hotel category entry cards — each card links to the dedicated
+          {/* Hotel category entry cards ¡ª each card links to the dedicated
               /city/[slug]/hotels?category=... page with a working filter.
               No duplicated list is rendered here; the home page is just an
               entry point. */}
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mt-6">
             {[
-              { key: "luxury", label: "豪华", labelEn: "Luxury", icon: "🏨", colorClass: "border-purple-200 hover:border-purple-400", textClass: "text-purple-700" },
-              { key: "mid_range", label: "中端", labelEn: "Mid-Range", icon: "🏢", colorClass: "border-blue-200 hover:border-blue-400", textClass: "text-blue-700" },
-              { key: "budget", label: "经济", labelEn: "Budget", icon: "💰", colorClass: "border-green-200 hover:border-green-400", textClass: "text-green-700" },
-              { key: "hostel", label: "青年旅舍", labelEn: "Hostel", icon: "🛏️", colorClass: "border-amber-200 hover:border-amber-400", textClass: "text-amber-700" },
-              { key: "love_hotel", label: "情趣", labelEn: "Love Hotel", icon: "💕", colorClass: "border-pink-200 hover:border-pink-400", textClass: "text-pink-700" },
-              { key: "esports_hotel", label: "电竞", labelEn: "Esports", icon: "🎮", colorClass: "border-indigo-200 hover:border-indigo-400", textClass: "text-indigo-700" },
+              { key: "luxury", label: lang === "ja" ? "ラグジュアリー" : "豪华", labelEn: "Luxury", icon: "🏨", colorClass: "border-purple-200 hover:border-purple-400", textClass: "text-purple-700" },
+              { key: "mid_range", label: lang === "ja" ? "ミッドレンジ" : "中端", labelEn: "Mid-Range", icon: "👔", colorClass: "border-blue-200 hover:border-blue-400", textClass: "text-blue-700" },
+              { key: "budget", label: lang === "ja" ? "バジェット" : "经济", labelEn: "Budget", icon: "💰", colorClass: "border-green-200 hover:border-green-400", textClass: "text-green-700" },
+              { key: "hostel", label: lang === "ja" ? "ホステル" : "青年旅舍", labelEn: "Hostel", icon: "🛏", colorClass: "border-amber-200 hover:border-amber-400", textClass: "text-amber-700" },
+              { key: "love_hotel", label: lang === "ja" ? "ラブホテル" : "情趣", labelEn: "Love Hotel", icon: "💋", colorClass: "border-pink-200 hover:border-pink-400", textClass: "text-pink-700" },
+              { key: "esports_hotel", label: lang === "ja" ? "eスポーツ" : "电竞", labelEn: "Esports", icon: "🎮", colorClass: "border-indigo-200 hover:border-indigo-400", textClass: "text-indigo-700" },
             ].map(cat => {
               const count = (hotelCategoryCounts as any)[cat.key] || 0;
               return (
                 <a
-                  href={`/city/${city.slug}/hotels?category=${cat.key}`}
+                  href={`${langPrefix}/city/${city.slug}/hotels?category=${cat.key}`}
                   class={`group flex flex-col items-center gap-2 p-4 bg-white rounded-2xl border-2 ${cat.colorClass} hover:shadow-md transition-all`}
                   data-category={cat.key}
                 >
                   <span class="text-3xl group-hover:scale-110 transition-transform">{cat.icon}</span>
-                  <span class="text-sm font-semibold text-gray-800">{cat.labelEn || cat.label}</span>
-                  <span class={`text-xs ${cat.textClass} font-bold`}><span>{count}</span> <span data-i18n="cityPage.hotelsCountUnit">hotels</span></span>
-                  <span class="text-[10px] text-gray-400 uppercase tracking-wide">{cat.labelEn}</span>
+                  <span class="text-sm font-semibold text-gray-800">{lang === "ja" ? cat.label : cat.labelEn || cat.label}</span>
+                  <span class={`text-xs ${cat.textClass} font-bold`}><span>{count}</span> <span data-i18n="cityPage.hotelsCountUnit" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.hotelsCountUnit", { count: totalHotelCount })}</span></span>
+                  <span class="text-[10px] text-gray-400 uppercase tracking-wide">{lang === "ja" ? cat.label : cat.labelEn}</span>
                 </a>
               );
             })}
@@ -669,11 +738,11 @@ const mapMarkers = [
           {/* View all link */}
           <div class="text-center mt-6">
             <a
-              href={`/city/${city.slug}/hotels`}
+              href={`${langPrefix}/city/${city.slug}/hotels`}
               class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-teal-500 to-blue-500 text-white rounded-xl font-semibold text-sm hover:from-teal-600 hover:to-blue-600 transition-all shadow-md hover:shadow-lg"
             >
               <span>🏨</span>
-              <span data-i18n="cityPage.viewAllHotels">View all {totalHotelCount} hotels</span>
+              <span data-i18n="cityPage.viewAllHotels">{ct(lang, "view_all_hotels", "View all {count} hotels").replace("{count}", String(totalHotelCount))}</span>
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
@@ -683,26 +752,26 @@ const mapMarkers = [
         <!-- Payment Section -->
         <section id="payment" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
-            <span class="text-2xl">💳</span> <span data-i18n="cityPage.sectionPayment">Payment Guide</span>
+            <span class="text-2xl">💳</span> <span data-i18n="cityPage.sectionPayment" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.sectionPayment")}</span>
           </h2>
-          <p class="section-subtitle">How to pay in {city.nameEn}</p>
+          <p class="section-subtitle">{isJapanese ? `${localCityName}での支払い方法` : `How to pay in ${city.nameEn}`}</p>
 
           <div class="space-y-6">
             {city.payment.map(method => (
               <div class="bg-white border rounded-xl p-6">
                 <div class="flex items-center gap-4 mb-4">
                   <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-2xl">
-                    {method.method === 'Alipay' ? '💙' : method.method === 'WeChat Pay' ? '💚' : method.method === 'Cash' ? '💵' : '💳'}
+                    {(method.method || method.nameEn) === 'Alipay' ? '💳' : (method.method || method.nameEn) === 'WeChat Pay' ? '💩' : (method.method || method.nameEn) === 'Cash' ? '💵' : '💰'}
                   </div>
                   <div>
-                    <h3 class="text-xl font-semibold">{method.method}</h3>
+                    <h3 class="text-xl font-semibold">{ct(lang, payKey(method.method || method.nameEn), method.method || method.nameEn)}</h3>
                     <p class="text-gray-500">{method.description}</p>
                   </div>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 class="text-sm font-semibold text-gray-700 mb-2" data-i18n="cityPage.howToUseLabel">How to Use:</h4>
+                    <h4 class="text-sm font-semibold text-gray-700 mb-2" data-i18n="cityPage.howToUseLabel">{_lookup("cityPage.howToUseLabel")}</h4>
                     <ul class="space-y-2">
                       {method.howToUse.map(step => (
                         <li class="flex items-start gap-2 text-sm">
@@ -713,11 +782,11 @@ const mapMarkers = [
                     </ul>
                   </div>
                   <div>
-                    <h4 class="text-sm font-semibold text-gray-700 mb-2" data-i18n="cityPage.tipsLabel">Tips:</h4>
+                    <h4 class="text-sm font-semibold text-gray-700 mb-2" data-i18n="cityPage.tipsLabel">{_lookup("cityPage.tipsLabel")}</h4>
                     <ul class="space-y-2">
                       {method.tips.map(tip => (
                         <li class="flex items-start gap-2 text-sm">
-                          <span class="text-amber-500">•</span>
+                          <span class="text-amber-500">?</span>
                           <span class="text-gray-600">{tip}</span>
                         </li>
                       ))}
@@ -730,14 +799,15 @@ const mapMarkers = [
             {/* Payment Apps */}
             <div class="mt-6 pt-6 border-t border-gray-200">
               <h4 class="text-sm font-semibold text-gray-700 mb-3 flex items-center gap-2">
-                <span>💳</span> Recommended Payment Apps
+                <span>💳</span> {ct(lang, "pay_apps_recommended", "Recommended Payment Apps")}
               </h4>
               <InlineAppPillsGroup
                 client:visible
                 apps={getAppsForSection(["payment"])}
+                lang={lang}
               />
               <p class="text-xs text-gray-500 mt-2">
-                <span data-i18n="cityPage.switchToEnglishMode">Switch to English mode in app settings if you see Chinese interface. Both Alipay and WeChat Pay support foreign credit cards.</span>
+                <span data-i18n="cityPage.switchToEnglishMode" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.switchToEnglishMode")}</span>
               </p>
             </div>
           </div>
@@ -746,30 +816,31 @@ const mapMarkers = [
         <!-- SIM/eSIM & Connectivity Section -->
         <section id="connectivity" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
-            <span class="text-2xl">📶</span> <span data-i18n="cityPage.sectionConnectivity">SIM & eSIM</span>
+            <span class="text-2xl">📶</span> <span data-i18n="cityPage.sectionConnectivity" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.sectionConnectivity")}</span>
           </h2>
-          <p class="section-subtitle" data-i18n="cityPage.connectivitySubtitle">Stay connected in China with the best data options</p>
+          <p class="section-subtitle" data-i18n="cityPage.connectivitySubtitle">{_lookup("cityPage.connectivitySubtitle")}</p>
 
           <div class="space-y-4">
             <div class="bg-white border rounded-xl p-6">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <span>📱</span> eSIM (Recommended)
+                <span>📶</span> <span data-i18n="cityPage.esimRecommended">eSIM（推奨）</span>
               </h3>
-              <p class="text-gray-600 mb-4" data-i18n="cityPage.esimDescription">eSIM is the easiest way to get data in China. No physical SIM needed - activate instantly on arrival.</p>
+              <p class="text-gray-600 mb-4" data-i18n="cityPage.esimDescription">{_lookup("cityPage.esimDescription")}</p>
               <InlineAppPillsGroup
                 client:visible
                 apps={getAppsForSection(["connectivity"])}
+                lang={lang}
               />
             </div>
 
             <div class="bg-blue-50 border border-blue-100 rounded-xl p-4">
               <h4 class="font-semibold text-blue-800 mb-2 flex items-center gap-2">
-                <span>💡</span> Pro Tips
+                <span>💡</span> <span data-i18n="cityPage.proTips">{_lookup("cityPage.proTips")}</span>
               </h4>
               <ul class="text-sm text-blue-700 space-y-1">
-                <li data-i18n="cityPage.proTipEsim1">• eSIM works best if your phone supports it (iPhone XS+ and most Android flagships).</li>
-                <li data-i18n="cityPage.proTipEsim2">• Download eSIM apps before arriving in China.</li>
-                <li data-i18n="cityPage.proTipEsim3">• Airalo and Holafly offer China-specific plans with unlimited data options.</li>
+                <li data-i18n="cityPage.proTipEsim1"><span>{isJapanese ? "💡" : "?"}</span> {isJapanese ? "eSIMは、お使いのスマホが対応している場合（iPhone XS以降および大半のAndroidフラッグシップ機）に最も便利です。" : "eSIM works best if your phone supports it (iPhone XS+ and most Android flagships)."}</li>
+                <li data-i18n="cityPage.proTipEsim2"><span>{isJapanese ? "💡" : "?"}</span> {isJapanese ? "中国到着前にeSIMアプリをダウンロードしておきましょう。" : "Download eSIM apps before arriving in China."}</li>
+                <li data-i18n="cityPage.proTipEsim3"><span>{isJapanese ? "💡" : "?"}</span> {isJapanese ? "AiraloとHolaflyは、データ無制限プランを含む中国向けeSIMを提供しています。" : "Airalo and Holafly offer China-specific plans with unlimited data options."}</li>
               </ul>
             </div>
           </div>
@@ -778,14 +849,15 @@ const mapMarkers = [
         <!-- Apps Section -->
         <section id="apps" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
-            <span class="text-2xl">📱</span> <span data-i18n="cityPage.sectionApps">Essential Apps</span>
+            <span class="text-2xl">📱</span> <span data-i18n="cityPage.sectionApps" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.sectionApps")}</span>
           </h2>
-          <p class="section-subtitle" data-i18n="cityPage.appsSubtitle">Download these apps before arriving in China</p>
+          <p class="section-subtitle" data-i18n="cityPage.appsSubtitle">{_lookup("cityPage.appsSubtitle")}</p>
 
           <EmbeddedAppRecommendation
             client:visible
+            lang={lang}
             categories={["payment", "transport", "food", "social", "language", "maps", "connectivity"]}
-            title={(translations[lang] || translations.en).cityPage?.essentialAppsFor?.replace("{city}", city.nameEn) ?? `Essential Apps for ${localCityName}`}
+            title={(translations[lang] || translations.en).cityPage?.essentialAppsFor?.replace("{city}", localCityName) ?? (isJapanese ? `${localCityName}の必須アプリ` : `Essential Apps for ${localCityName}`)}
             subtitle={(translations[lang] || translations.en).cityPage?.downloadBefore ?? "Download these apps before arriving in China"}
           />
         </section>
@@ -793,23 +865,23 @@ const mapMarkers = [
         <!-- Culture Section (Lazy loaded with infinite scroll) -->
         <section id="culture" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
-            <span class="text-2xl">🎎</span> <span data-i18n="cityPage.sectionCulture">Cultural Tips</span>
-            <span class="text-sm font-normal text-gray-500 ml-2">({city.culturalTips.length} tips)</span>
+            <span class="text-2xl">🎎</span> <span data-i18n="cityPage.sectionCulture" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.sectionCulture")}</span>
+            <span class="text-sm font-normal text-gray-500 ml-2">({city.culturalTips.length} {ct(lang, "unit_tips", "tips")})</span>
           </h2>
-          <p class="section-subtitle">Essential cultural knowledge for {city.nameEn}</p>
+          <p class="section-subtitle">{isJapanese ? `${localCityName}で必要な文化知識` : `Essential cultural knowledge for ${city.nameEn}`}</p>
 
-          <CulturalSection culturalTips={city.culturalTips} client:visible />
+          <CulturalSection culturalTips={city.culturalTips} lang={lang} client:visible />
         </section>
 
         <!-- Emergency Section (Lazy loaded with infinite scroll) -->
         <section id="emergency" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
-            <span class="text-2xl">🚨</span> <span data-i18n="cityPage.sectionEmergency">Emergency Contacts</span>
-            <span class="text-sm font-normal text-gray-500 ml-2">({city.emergencyContacts.length} contacts)</span>
+            <span class="text-2xl">🚨</span> <span data-i18n="cityPage.sectionEmergency" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.sectionEmergency")}</span>
+            <span class="text-sm font-normal text-gray-500 ml-2">({city.emergencyContacts.length} {ct(lang, "unit_contacts", "contacts")})</span>
           </h2>
-          <p class="section-subtitle">Important phone numbers in {city.nameEn}</p>
+          <p class="section-subtitle">{isJapanese ? `${localCityName}で必要な緊急電話番号` : `Important phone numbers in ${city.nameEn}`}</p>
 
-          <EmergencySection contacts={city.emergencyContacts} city={city} client:visible />
+          <EmergencySection contacts={city.emergencyContacts} city={city} lang={lang} client:visible />
         </section>
     </div>
   </div>
@@ -830,9 +902,9 @@ document.querySelectorAll('[id^="weather-widget-"]').forEach(widget => {
       if (!data.current_weather) return;
       const w = data.current_weather;
       const tempC = Math.round((w.temperature - 32) * 5 / 9);
-      const codes = {0:'☀️',1:'🌤️',2:'⛅',3:'☁️',45:'🌫️',48:'🌫️',51:'🌦️',53:'🌦️',55:'🌧️',61:'🌧️',63:'🌧️',65:'🌧️',71:'🌨️',73:'🌨️',75:'🌨️',80:'🌦️',81:'🌦️',82:'⛈️',95:'⛈️',96:'⛈️',99:'⛈️'};
-      const icon = codes[w.weathercode] || '🌡️';
-      el.innerHTML = `<div class="text-2xl font-bold text-gray-900">${tempC}°C</div><div class="text-sm text-gray-500">${icon} Now</div>`;
+      const codes = {0:'☀',1:'🌤',2:'⛅',3:'☁',45:'🌫',48:'🌫',51:'🌦',53:'🌦',55:'🌧',61:'🌧',63:'🌧',65:'🌧',71:'🌨',73:'❄',75:'❄',80:'🌦',81:'🌦',82:'⛈',95:'⛈',96:'⛈',99:'⛈'};
+      const icon = codes[w.weathercode] || '❓';
+      el.innerHTML = `<div class="text-2xl font-bold text-gray-900">${tempC}¡ãC</div><div class="text-sm text-gray-500">${icon} {ct(lang,"weather_now","Now")}</div>`;
     })
     .catch(() => {
       el.innerHTML = `<div class="text-gray-400 text-sm" data-i18n="cityPage.weatherNA">Weather N/A</div>`;

@@ -1,282 +1,282 @@
 {
   "slug": "harbin",
-  "name": "哈尔滨",
-  "nameEn": "Harbin",
+  "name": "哈爾浜",
+  "nameEn": "哈爾浜",
   "country": "China",
-  "population": "5.4 million",
+  "population": "540万",
   "coordinates": {
     "lat": 45.8038,
     "lng": 126.534
   },
-  "timezone": "UTC+8 (China Standard Time)",
-  "description": "Harbin, the capital of Heilongjiang province, is known for its severe winters and spectacular ice festival. The city showcases a unique blend of Russian and Chinese architecture, earning it the nickname 'Moscow of the East'. Home to one of the world's largest ice and snow festivals.",
+  "timezone": "UTC+8（中国標準時）",
+  "description": "ハルビンは黒龍江省の省都で、厳しい冬と壮大な氷の祭典で知られています。ロシアと中国建築の独特の融合を示し、「東方のモスクワ」というあだ名で呼ばれています。世界最大級冰雪祭りの開催地です。",
   "coverImage": "/img/ext/fae0fe7e7812.webp",
   "highlights": [
-    "Harbin Ice and Snow Festival - World's largest",
-    "Saint Sophia Cathedral - Largest Orthodox church in Far East",
-    "Central Avenue - Russian colonial architecture",
-    "Sun Island - Summer retreat island",
-    "Harbin Polar Aquarium - Siberian tigers"
+    "ハルビン氷雪祭——世界最大規模",
+    "聖ソフィア大聖堂——極東最大の正教会聖堂",
+    "中央大街——ロシア植民地時代の建築",
+    "太陽島——夏季の避暑アイランド",
+    "ハルビン極地館——シベリアトラ"
   ],
   "climate": {
-    "type": "Humid continental climate",
+    "type": "湿潤大陸性気候",
     "bestMonths": [
-      "December",
-      "January",
-      "February"
+      "12月",
+      "1月",
+      "2月"
     ],
     "avgSummerTemp": "22°C (72°F)",
     "avgWinterTemp": "-18°C (0°F)",
-    "tips": "Best in winter for Ice Festival. Summers are pleasant. Spring and autumn are short. Pack extremely warm clothes in winter."
+    "tips": "冬は氷祭りに最適。夏は過ごしやすい。春と秋は短い。冬は非常に暖かい服装を用意してください。"
   },
   "attractions": [
     {
       "id": "harbin-ice-festival",
       "name": "冰雪大世界",
-      "nameEn": "Harbin Ice and Snow Festival",
+      "nameEn": "哈爾浜氷雪祭り",
       "category": "seasonal",
-      "description": "World's largest ice and snow sculpture festival with massive illuminated ice structures.",
-      "address": "Ice and Snow World, Songhua River",
+      "description": "世界最大の氷雪彫刻祭で、巨大な氷の彫刻建築があり、夜はライトアップが輝く。",
+      "address": "冰雪大世界，松花江畔",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.5422
       },
-      "openingHours": "10:00-21:00 (Dec-Feb)",
-      "ticketPrice": "290¥ (peak), 180¥ (off-peak)",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "10:00-21:00（12月至2月）",
+      "ticketPrice": "290元（旺季），180元（淡季）",
+      "recommendedVisitTime": "3-4時間",
       "highlights": [
-        "Ice sculptures",
-        "Illuminated structures",
-        "Ice slides",
-        "Winter activities"
+        "冰雕作品",
+        "灯光氷建築",
+        "冰滑梯",
+        "冬季活动"
       ],
-      "tips": "Book tickets online. Arrive at sunset for photos. Dress extremely warm. Average visit 2-3 hours.",
+      "tips": "オンラインでのチケット購入をおすすめします。日没時に到着すると写真撮影に最適です。必ず非常に暖かい服装でお越しください。平均見学時間は2〜3時間です。",
       "image": "/img/ext/ab5068b530ee.webp",
       "phone": "+86 451 8488 4263"
     },
     {
       "id": "saint-sophia",
-      "name": "圣索菲亚教堂",
-      "nameEn": "Saint Sophia Cathedral",
+      "name": "聖ソフィア教会",
+      "nameEn": "聖ソフィア大聖堂",
       "category": "historical",
-      "description": "Largest Orthodox church in the Far East, built in 1903, now a museum.",
-      "address": "Zhongyang Avenue, Daoli District",
+      "description": "極東最大の正教会であり、1903年に建設、現在は博物館となっている",
+      "address": "中陽大道、道里区",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "15¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "Russian architecture",
-        "Byzantine style",
-        "Photo opportunities",
-        "Museum exhibits"
+        "ロシア建築",
+        "ビザンチン様式",
+        "フォトスポット",
+        "博物館展示"
       ],
-      "tips": "Best exterior photos at sunrise. The largest surviving church in Asia.",
+      "tips": "日出時の外観写真が最佳。アジアで現存する最大の教会。",
       "image": "/img/ext/6f9098e3f84b.webp",
       "phone": "+86 451 8468 4170"
     },
     {
       "id": "central-avenue",
       "name": "中央大街",
-      "nameEn": "Central Avenue",
+      "nameEn": "中央大街",
       "category": "cultural",
-      "description": "1.4km pedestrian street with European architecture, shops and restaurants.",
-      "address": "Central Avenue, Daoli District",
+      "description": "欧州建築、物販店、飲食店が並ぶ1.4kmの歩行者天国",
+      "address": "中央大街、道里区",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Russian architecture",
-        "Cobblestone streets",
-        "European shops",
-        "Historic buildings"
+        "ロシア建築",
+        "敷石道理的道路",
+        "欧州ショップ",
+        "歴史的建造物"
       ],
-      "tips": "Try Russian food and Harbin sausage. Best at night when illuminated. Buy Russian souvenirs.",
+      "tips": "ロシア料理とハルビンソーセージを試そう。夜間点灯時は最高。ロシアみやげを購入しよう。",
       "image": "/img/ext/4ce4e9db35e0.webp",
       "phone": "+86 045 1 8962 8126"
     },
     {
       "id": "sun-island",
-      "name": "太阳岛",
-      "nameEn": "Sun Island",
+      "name": "太陽島",
+      "nameEn": "太陽島",
       "category": "natural",
-      "description": "Island retreat on Songhua River with parks, beaches and Russian-style villas.",
-      "address": "Sun Island, Songhua River",
+      "description": "松花川に位置する島のリトリート。公園、ビーチ、ロシア風ヴィラがある",
+      "address": "太陽島、松花江",
       "coordinates": {
         "lat": 45.8022,
         "lng": 126.5822
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "30¥ (park only)",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "30¥（公園のみ）",
+      "recommendedVisitTime": "3-4時間",
       "highlights": [
-        "Russian villas",
-        "Lake views",
-        "Swan sculptures",
-        "Summer palace"
+        "ロシア風ヴィラ",
+        "湖の景色",
+        "白鳥の彫刻",
+        "夏宮"
       ],
-      "tips": "Take ferry in summer. Visit Snow Expo in winter. Beautiful in all seasons.",
+      "tips": "夏はフェリーで、冬は雪博覧会（スノーエキスポ）へ。一年中美しい場所です。",
       "image": "/img/ext/a2c07ead5f63.webp",
       "phone": "+86 451 8819 0230"
     },
     {
       "id": "harbin-polar-akvarium",
-      "name": "哈尔滨极地馆",
-      "nameEn": "Harbin Polar Aquarium",
+      "name": "ハルビン極地館",
+      "nameEn": "ハルビン極地水族館",
       "category": "entertainment",
-      "description": "Aquarium featuring polar animals, Siberian tigers and marine performances.",
-      "address": "Sun Island, Songhua River",
+      "description": "極地動物、シベリアトラ、海洋パフォーマンスをご紹介する水族館",
+      "address": "太陽島、松花江",
       "coordinates": {
         "lat": 45.8022,
         "lng": 126.5822
       },
       "openingHours": "09:00-17:00",
       "ticketPrice": "150¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4時間",
       "highlights": [
-        "Polar bears",
-        "Siberian tigers",
-        "Marine shows",
-        "Penguins"
+        "ホッキョクグマ",
+        "シベリアトラ",
+        "海洋ショー",
+        "ペンギン"
       ],
-      "tips": "Arrive early for shows. Combine with Sun Island visit. Great for families.",
+      "tips": "ショーには早く到着してください。太陽島との組み合わせをお勧めします。家族に最適です",
       "image": "/img/ext/2d979b12449c.webp",
       "phone": "+86 045 1 3097 7661"
     },
     {
       "id": "zhongyang-dashan",
       "name": "中央大街欧式建筑",
-      "nameEn": "Central Avenue European Architecture",
+      "nameEn": "中央大街ヨーロッパ建築",
       "category": "historical",
-      "description": "Collection of early 20th century European buildings along the historic street.",
-      "address": "Central Avenue",
+      "description": "歴史的なストリートに沿って並ぶ20世紀初頭のヨーロッパ建築のコレクション",
+      "address": "中央大街",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Russian style",
-        "Art Deco",
-        "Medieval European",
-        "Photo opportunities"
+        "ロシア風",
+        "アールデコ",
+        "中世ヨーロッパ",
+        "フォトスポット"
       ],
-      "tips": "Take walking tour for history. Best in evening lighting. Combine with Saint Sophia.",
+      "tips": "歴史的なウォーキングツアーをお勧めします。夕方の照明が最も美好です。聖ソフィアとの組み合わせをお勧めします",
       "image": "/img/ext/994fe88bf8b9.webp",
       "phone": "+86 045 1 3227 8712"
     },
     {
       "id": "songhua-river",
       "name": "松花江",
-      "nameEn": "Songhua River",
+      "nameEn": "松花江",
       "category": "natural",
-      "description": "Major river flowing through Harbin with winter activities and scenic walks.",
-      "address": "Songhua River waterfront",
+      "description": "哈爾濱を流れる主要な川で、冬のアクティビティや景色の良い散歩ができます",
+      "address": "松花江の水辺",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6122
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free (activities extra)",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料（アクティビティは別途）",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Winter activities",
-        "River views",
-        "Stalactite ice",
-        "Evening walks"
+        "冬季活动",
+        "川 전망",
+        "鍾乳石のような氷",
+        "夕方の散歩"
       ],
-      "tips": "Walk on frozen river in winter. Take ferry in summer. Beautiful at sunset.",
+      "tips": "冬には凍結した川面を歩くことができます。夏にはフェリーに乗れます。夕暮れ時に美しい",
       "image": "/img/ext/a7d165050e71.webp",
       "phone": "+86 045 1 5827 3151"
     },
     {
       "id": "tigers",
-      "name": "东北虎林园",
-      "nameEn": "Siberian Tiger Park",
+      "name": "東北虎林園",
+      "nameEn": "シベリアトラ公園",
       "category": "nature",
-      "description": "Large breeding facility for Siberian tigers with observation platforms.",
-      "address": "Songbei District",
+      "description": "シベリアトラの大型繁殖施設で観察プラットフォームがあります",
+      "address": "松北区",
       "coordinates": {
         "lat": 45.8322,
         "lng": 126.5122
       },
-      "openingHours": "08:00-17:00 (Nov-Mar), 08:00-16:00 (Apr-Oct)",
-      "ticketPrice": "90¥ (park) + 20¥ (bus)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "08:00-17:00（11月-3月）、08:00-16:00（4月-10月）",
+      "ticketPrice": "90¥ (公園) + 20¥ (バス)",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Tiger feeding",
-        "Cub interactions",
-        "White tigers",
-        "Photography"
+        "トラへの餌やり",
+        "子トラとの触れ合い",
+        "ホワイトタイガー",
+        "写真"
       ],
-      "tips": "Feed tigers from bus. Watch feeding times. Bring binoculars.",
+      "tips": "バスからトラに餌を与える。餌やり時間を見る。双眼鏡を持ってくる。",
       "image": "/img/ext/1cd8e208e109.webp",
       "phone": "+86 451 8808 0098"
     },
     {
       "id": "volunteer-bridge",
-      "name": "阳明滩大桥",
-      "nameEn": "Yangmingtan Bridge",
+      "name": "陽明灘大橋",
+      "nameEn": "ヤンティンタン橋",
       "category": "landmark",
-      "description": "Modern suspension bridge with panoramic city views.",
-      "address": "Yangmingtan Island",
+      "description": "街のパノラマビューを楽しめる近代的な吊り橋。",
+      "address": "ヤンティンタン島",
       "coordinates": {
         "lat": 45.8122,
         "lng": 126.5722
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "City views",
-        "Modern architecture",
-        "Photography",
-        "Sunset views"
+        "街の景色",
+        "近代建築",
+        "写真",
+        "夕日ビュー"
       ],
-      "tips": "Best at sunset or night. Drive or taxi to access.",
+      "tips": "夕暮れ時または夜に行くのが最佳。車またはタクシーでアクセス。",
       "image": "/img/ext/9b5f1087da38.webp",
       "phone": "+86 045 1 5112 1512"
     },
     {
       "id": "harbin-museum",
-      "name": "黑龙江省博物馆",
-      "nameEn": "Heilongjiang Provincial Museum",
+      "name": "黒竜江省博物館",
+      "nameEn": "黒龍江省博物館",
       "category": "cultural",
-      "description": "Museum showcasing provincial history, culture and natural heritage.",
-      "address": "Central Avenue, Daoli District",
+      "description": "省の歷史、文化、自然遺産を紹介する博物館。",
+      "address": "中央大街、道里区",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
-      "openingHours": "09:00-16:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "09:00-16:00（月曜休館）",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
-        "Ancient artifacts",
-        "Manchurian culture",
-        "Natural history",
+        "古代の遺物",
+        "滿洲文化",
+        "自然史",
         "ロシアの影響"
       ],
-      "tips": "Allow 2 hours. Audio guide available. Combine with Central Avenue visit.",
+      "tips": "2時間程度を見る。音声ガイド利用可能。中央大街と組み合わせて訪問おすすめ。",
       "image": "/img/ext/739fe212958a.webp",
       "phone": "+86 045 1 7488 2950"
     },
     {
       "id": "catherine-church",
-      "name": "圣斯坦尼斯拉夫教堂",
+      "name": "聖スタニスラフ教会",
       "nameEn": "聖ニコライ教会",
       "category": "historical",
       "description": "小さな正教会がレストラン兼文化会場として使用されています。",
-      "address": "中谊街、道理区",
+      "address": "道里区中誼街",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
@@ -295,7 +295,7 @@
     },
     {
       "id": "harbin-concert-hall",
-      "name": "哈尔滨音乐厅",
+      "name": "ハルビン音楽庁",
       "nameEn": "ハルビンコンサートホール",
       "category": "cultural",
       "description": "優れた音響とロシアの影響を受けたデザインの現代的なコンサートホール。",
@@ -329,7 +329,7 @@
         "lng": 126.5622
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "25¥",
+      "ticketPrice": "25元",
       "recommendedVisitTime": "2-3時間",
       "highlights": [
         "山の景色",
@@ -343,7 +343,7 @@
     },
     {
       "id": "fengle-zhen",
-      "name": "风铃镇",
+      "name": "風鈴鎮",
       "nameEn": "風鈴鎮",
       "category": "cultural",
       "description": "ヨーロッパ建築と文化活動があるロシア風の町",
@@ -367,491 +367,491 @@
     },
     {
       "id": "harbin-library",
-      "name": "哈尔滨图书馆",
+      "name": "哈爾浜図書館",
       "nameEn": "ハルビン図書館",
       "category": "cultural",
-      "description": "Historic library with Russian architectural influence.",
-      "address": "Zhongyang Avenue",
+      "description": "ロシアの建築様式 влияниеを受けた歴史的な図書館。",
+      "address": "中央大街",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "openingHours": "09:00-18:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "Russian architecture",
-        "Reading rooms",
-        "Historic building",
-        "Quiet atmosphere"
+        "ロシア建築",
+        "閲覧室",
+        "歴史的建物",
+        "静かな雰囲気"
       ],
-      "tips": "Great for book lovers. The building is beautiful.",
+      "tips": "愛書家に最適。建物が美しい。",
       "image": "/img/ext/b9119ee9ee3d.webp",
       "phone": "+86 045 1 5468 6229"
     },
     {
       "id": "qingyun-tower",
       "name": "清云塔",
-      "nameEn": "Qingyun Tower",
+      "nameEn": "青雲塔",
       "category": "landmark",
-      "description": "Modern tower offering panoramic views of Harbin.",
-      "address": "Songbei District",
+      "description": "ハルビンのパノラマビューを提供する近代的な塔。",
+      "address": "松北区",
       "coordinates": {
         "lat": 45.8122,
         "lng": 126.5722
       },
       "openingHours": "09:00-21:00",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "City panorama",
-        "Observation deck",
-        "Modern design",
-        "Sunset views"
+        "街のパノラマ景色",
+        "展望台",
+        "モダンなデザイン",
+        "夕日ビュー"
       ],
-      "tips": "Best views at sunset. Bring camera. Elevator to top.",
+      "tips": "夕暮れ時に最高の眺望。カメラを持参。頂上までエレベーターあり。",
       "image": "/img/ext/483e722fffca.webp",
       "phone": "+86 045 1 0296 2857"
     },
     {
       "id": "historic-district",
       "name": "道外历史文化区",
-      "nameEn": "Daowai Historic District",
+      "nameEn": "道外歴史地区",
       "category": "historical",
-      "description": "Old Chinese district with traditional architecture and local culture.",
-      "address": "Daowai District",
+      "description": "伝統的建築と地元文化を持つ古い中国地区。",
+      "address": "道外区",
       "coordinates": {
         "lat": 45.7922,
         "lng": 126.6422
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Chinese architecture",
-        "Traditional shops",
-        "Local life",
-        "Photography"
+        "中国建築",
+        "伝統的な商店",
+        "地元の人々の生活",
+        "写真"
       ],
-      "tips": "Explore authentic Harbin. Try local food. Best on weekdays.",
+      "tips": "本格的なハルビンを探索。地元のフードを試す。平日がベスト。",
       "image": "/img/ext/9711badd781a.webp",
       "phone": "+86 045 1 7944 8581"
     },
     {
       "id": "harbin-market",
       "name": "秋林公司",
-      "nameEn": "Qiulin Company",
+      "nameEn": "秋林公司",
       "category": "shopping",
-      "description": "Historic department store famous for Russian goods and local products.",
-      "address": "Zhongyang Avenue",
+      "description": "ロシア商品と地元製品で有名な歴史的な百貨店。",
+      "address": "中央大街",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "openingHours": "09:00-21:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Russian products",
-        "Harbin sausage",
-        "Chocolate",
-        "Traditional goods"
+        "ロシア製品",
+        "ハルビンソーセージ",
+        "チョコレート",
+        "伝統的工芸品"
       ],
-      "tips": "Buy souvenirs here. Famous for Russian chocolate and sausage.",
+      "tips": "お土産はこちらで購入しましょう。ロシアのチョコレートとソーセージで有名です。",
       "image": "/img/ext/8e20ca0b1fca.webp",
       "phone": "+86 045 1 6201 2356"
     },
     {
       "id": "squirrel",
-      "name": "松花江观鸟",
-      "nameEn": "Songhua River Birdwatching",
+      "name": "松花江バードウォッチング",
+      "nameEn": "松花江バードウォッチング",
       "category": "nature",
-      "description": "Winter spot for watching various bird species on the frozen river.",
-      "address": "Songhua River",
+      "description": "凍った川で様々な鳥の種類を観察する冬のスポット。",
+      "address": "松花江",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6122
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "Bird watching",
-        "Winter scenery",
-        "Local life",
-        "Photography"
+        "バードウォッチング",
+        "冬の景色",
+        "地元の人々の生活",
+        "写真"
       ],
-      "tips": "Visit in early morning. Bring binoculars. Watch for migratory birds.",
+      "tips": "早朝に訪問。双眼鏡を持参。渡りを観察。",
       "image": "/img/ext/80579031d1aa.webp",
       "phone": "+86 045 1 0695 5289"
     },
     {
       "id": "christmas-village",
-      "name": "伏尔加庄园",
-      "nameEn": "Volga Manor",
+      "name": "ヴォルガ荘園",
+      "nameEn": "ボルガ・マナー",
       "category": "cultural",
-      "description": "Russian-style estate with churches, dachas and cultural performances.",
-      "address": "香坊区oa Town",
+      "description": "教会、ダチャ、文化パフォーマンスを含むロシア風邸宅。",
+      "address": "香坊区ダウン",
       "coordinates": {
         "lat": 45.8522,
         "lng": 126.6722
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "120¥",
-      "recommendedVisitTime": "4-5 hours",
+      "recommendedVisitTime": "4-5時間",
       "highlights": [
-        "Russian architecture",
-        "Churches",
-        "Cultural shows",
-        "Photo opportunities"
+        "ロシア建築",
+        "教会",
+        "文化表演",
+        "フォトスポット"
       ],
-      "tips": "Full day trip. Arrive early. Watch all performances. Great for photos.",
+      "tips": "終日観光。早めに到着。全パフォーマンスを鑑賞。写真に最適。",
       "image": "/img/ext/2e1ba66bbe1b.webp",
       "phone": "+86 045 1 4364 7968"
     },
     {
       "id": "harbin-rolling",
-      "name": "防洪纪念塔",
-      "nameEn": "Flood Control Memorial Tower",
+      "name": "防洪記念塔",
+      "nameEn": "防洪記念塔",
       "category": "historical",
-      "description": "Iconic tower built to commemorate Harbin's flood resistance efforts.",
-      "address": "Zhongyang Avenue, Songhua River",
+      "description": "哈爾濱の洪水対策の功績を表彰するために建設された象徴的な塔。",
+      "address": "中央大街、松花江",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6122
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "30 min",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "30分",
       "highlights": [
-        "City landmark",
-        "River views",
-        "Historic significance",
-        "Photo spot"
+        "市のランドマーク",
+        "川 전망",
+        "歴史的重要性",
+        "写真スポット"
       ],
-      "tips": "Meet at base for photos. Combine with river walk. Night lighting impressive.",
+      "tips": "写真の待ち合わせは塔の下で。河岸散歩と組み合わせると良い。夜のライティングが素晴らしい。",
       "image": "/img/ext/646db04e7ab9.webp",
       "phone": "+86 045 1 7242 1814"
     },
     {
       "id": "hongxing",
-      "name": "红星冰雕馆",
-      "nameEn": "Hongxing Ice Sculpture Gallery",
+      "name": "紅星氷彫館",
+      "nameEn": "紅星氷彫ギャラリー",
       "category": "seasonal",
-      "description": "Year-round ice sculpture exhibition with elaborate carvings.",
-      "address": "Songhua River",
+      "description": "精巧な彫刻が施された通年の氷彫展示。",
+      "address": "松花江",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.5422
       },
       "openingHours": "09:00-22:00",
       "ticketPrice": "180¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Ice sculptures",
-        "Year-round display",
-        "Illumination",
-        "Photo opportunities"
+        "冰雕作品",
+        "通年展示",
+        "ライティング",
+        "フォトスポット"
       ],
-      "tips": "Bring warm clothes. Great alternative if missed main festival.",
+      "tips": "暖かい服装を持ってくることメインフェスティバルを見逃した場合の良い代替案。",
       "image": "/img/ext/de0ae28326d5.webp",
       "phone": "+86 045 1 8400 0465"
     },
     {
       "id": "zhongyang-dapai",
-      "name": "中央大街地下市场",
-      "nameEn": "Central Avenue Underground Market",
+      "name": "中央大街地下市場",
+      "nameEn": "中央大街地下市場",
       "category": "shopping",
-      "description": "Underground shopping area with local products and Russian goods.",
-      "address": "Under Central Avenue",
+      "description": "地元産品やロシア商品を扱う地下ショッピングエリア。",
+      "address": "中央大街地下",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "openingHours": "09:00-21:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "Russian goods",
-        "Local crafts",
-        "Souvenirs",
-        "Underground shopping"
+        "ロシア商品",
+        "地元工芸品",
+        "お土産",
+        "地下ショッピング"
       ],
-      "tips": "Browse for bargains. Compare prices. Good for souvenirs.",
+      "tips": "掘り出し物を探そう。価格を比較。お土産の購入に最適。",
       "image": "/img/ext/5ce39520c0ec.webp",
       "phone": "+86 045 1 9524 8054"
     },
     {
       "id": "harbin-industrial",
-      "name": "哈尔滨工业博物馆",
-      "nameEn": "Harbin Industrial Museum",
+      "name": "哈爾浜工業博物館",
+      "nameEn": "哈爾濱産業博物館",
       "category": "cultural",
-      "description": "Museum showcasing Harbin's industrial heritage and Russian influence.",
-      "address": "Daoli District",
+      "description": "哈爾濱の産業遺産とロシアの影響を示す博物館。",
+      "address": "道理区",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6322
       },
-      "openingHours": "09:00-16:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "09:00-16:00（月曜休館）",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
-        "Industrial heritage",
-        "Russian influence",
-        "Historic machinery",
-        "Cultural exhibits"
+        "産業遺産",
+        "ロシアの影響",
+        "歴史的な機械",
+        "文化展示"
       ],
-      "tips": "Learn about city's history. Combine with Central Avenue visit.",
+      "tips": "都市の歴史を学び、中央大街訪問と組み合わせてください",
       "image": "/img/ext/ca3eafccc306.webp",
       "phone": "+86 045 1 3472 9033"
     },
     {
       "id": "jile-temple",
-      "name": "极乐寺",
-      "nameEn": "Jile Temple",
+      "name": "極楽寺",
+      "nameEn": "極楽寺",
       "category": "temple",
-      "description": "哈尔滨最大的佛教寺院，建于1924年，建筑宏伟壮观，是哈尔滨重要的宗教文化场所，冬季白雪覆盖更显庄严神圣。",
-      "address": "哈尔滨市南岗区东大直街9号",
+      "description": "哈爾浜最大の仏教寺院で、1924年に建てられ、建築は雄大で壮観です。哈爾浜の重要な宗教文化施設であり、冬に雪に覆われるとさらに荘厳で神聖な雰囲気が増します。",
+      "address": "哈爾浜市南崗区東大直街9号",
       "coordinates": {
         "lat": 45.7582,
         "lng": 126.6822
       },
       "openingHours": "08:00-16:00",
       "ticketPrice": "10元",
-      "recommendedVisitTime": "1-2小时",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
         "千年古刹",
         "佛教文化",
         "建筑艺术",
         "冬季雪景"
       ],
-      "tips": "农历初一十五有法会，寺内有素食餐厅，冬天可以体验雪中古刹的意境。",
+      "tips": "旧暦の1日と15日には法要が行われ、寺内には精進料理のレストランがあります。冬には雪の中の古刹の風情を体験できます。",
       "image": "/img/ext/309f30e43563.webp",
       "phone": "+86 045 1 0860 7631"
     },
     {
       "id": "siberian-tiger-park",
-      "name": "东北虎林园",
-      "nameEn": "Siberian Tiger Park",
+      "name": "東北虎林園",
+      "nameEn": "シベリアトラ公園",
       "category": "nature",
-      "description": "世界最大的东北虎繁育基地，可近距离观赏东北虎、白虎等多种珍稀动物，体验与猛兽近距离接触的刺激与震撼。",
-      "address": "哈尔滨市松北区松北街88号",
+      "description": "世界最大のシベリアトラ繁殖基地で、間近でシベリアトラやホワイトタイガーなど様々な希少動物を観察でき、猛獣との至近距離での遭遇のスリルと迫力を体験できます。",
+      "address": "ハルビン市松北区松北街88号",
       "coordinates": {
         "lat": 45.8122,
         "lng": 126.5522
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "100元",
-      "recommendedVisitTime": "2-3小时",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
-        "东北虎近距离观赏",
+        "東北虎至近距離観賞",
         "白虎",
         "狮虎兽",
-        "野生动物保护"
+        "野生動物保護"
       ],
-      "tips": "建议乘坐园内观光车，冬季游客较少体验更好，不要把手伸出车外。",
+      "tips": "園内の観光車両に乗ることをおすすめします。冬は観光客が少なく体験も良いですが、車外に手を出さないでください。",
       "image": "/img/ext/20ba084c3257.webp",
       "phone": "+86 451 8460 2555"
     },
     {
       "id": "russian-style-town",
-      "name": "俄罗斯风情小镇",
-      "nameEn": "Russian Style Town",
+      "name": "ロシア風情の小さな町",
+      "nameEn": "ロシア風小镇",
       "category": "street",
-      "description": "以俄罗斯文化为主题的特色街区，汇集俄式建筑、俄罗斯商品店和特色餐饮，仿佛置身俄罗斯小镇之中。",
-      "address": "哈尔滨市松北区太阳岛风景区",
+      "description": "ロシア文化をテーマにした特色ある街並みで、ロシア風建築、ロシア雑貨店、特色ある飲食店が集まり、まるでロシアの小さな町にいるかのようです。",
+      "address": "哈爾濱市松北区太陽島風景区",
       "coordinates": {
         "lat": 45.7922,
         "lng": 126.5722
       },
       "openingHours": "09:00-17:00",
       "ticketPrice": "20元",
-      "recommendedVisitTime": "2-3小时",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
         "俄式木屋建筑",
         "俄罗斯套娃",
         "俄式面包房",
         "文化表演"
       ],
-      "tips": "可以购买正宗俄罗斯工艺品，冬天有冰雕展，夏天花园很美。",
+      "tips": "本格的なロシア工芸品を購入できます。冬には氷彫刻展が開催され、夏には庭園がとても美しいです。",
       "image": "/img/ext/f5e115604d3c.webp",
       "phone": "+86 045 1 0863 3286"
     },
     {
       "id": "harbin-confucian-temple",
-      "name": "哈尔滨文庙",
-      "nameEn": "Harbin Confucian Temple",
+      "name": "哈爾濱文廟",
+      "nameEn": "ハルビン孔子廟",
       "category": "temple",
-      "description": "东北地区最大的孔庙建筑群，建于1926年，保存完好的古建筑群落，是哈尔滨重要的文化遗产和儒学圣地。",
-      "address": "哈尔滨市南岗区文庙街25号",
+      "description": "東北地方最大の孔子廟建築群で、1926年に建てられ、保存状態の良い古建築群であり、哈爾浜の重要な文化遺産であり儒学の聖地です。",
+      "address": "哈爾濱市南崗区文廟街25号",
       "coordinates": {
         "lat": 45.7382,
         "lng": 126.6522
       },
       "openingHours": "08:30-16:30",
       "ticketPrice": "15元",
-      "recommendedVisitTime": "1-2小时",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "孔庙建筑群",
+        "孔子廟建築群",
         "儒家文化",
         "古建筑艺术",
         "碑林"
       ],
-      "tips": "每年9月有祭孔大典，建筑保存完好适合摄影，冬季人少清静。",
+      "tips": "毎年9月に祭孔大典が行われ、建物は保存状態が良く写真撮影に適している。冬は人も少なく静かだ。",
       "image": "/img/ext/a9e5228a112e.webp",
       "phone": "+86 045 1 6015 7844"
     },
     {
       "id": "annunciation-cathedral",
-      "name": "圣母领报大教堂",
-      "nameEn": "Annunciation Cathedral",
+      "name": "聖母受胎告知大聖堂",
+      "nameEn": "受胎告知大聖堂",
       "category": "temple",
-      "description": "哈尔滨最古老的东正教堂之一，拜占庭式建筑风格，洋葱形穹顶是哈尔滨天际线的标志之一，内部壁画精美。",
-      "address": "哈尔滨市南岗区士课街111号",
+      "description": "ハルビンで最も古い東方正教会の教会の一つで、ビザンチン様式の建築様式、玉ねぎ形のドームはハルビンのスカイラインのシンボルの一つで、内部の壁画は精美である。",
+      "address": "哈爾濱市南崗区士課街111号",
       "coordinates": {
         "lat": 45.7522,
         "lng": 126.6422
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
         "拜占庭建筑",
-        "洋葱形穹顶",
+        "タマネギ形のドーム",
         "宗教壁画",
         "历史建筑"
       ],
-      "tips": "外观宏伟适合摄影，内部有时举办音乐会，注意尊重宗教场所。",
+      "tips": "外観は雄大で写真撮影に適しており、内部では時折コンサートが開催される。宗教的な場所であることを尊重するよう注意が必要だ。",
       "image": "/img/ext/27e06b27a71e.webp",
       "phone": "+86 045 1 6475 0403"
     },
     {
       "id": "harbin-contemporary-art",
-      "name": "哈尔滨当代艺术馆",
-      "nameEn": "Harbin Contemporary Art Museum",
+      "name": "哈爾濱現代美術館",
+      "nameEn": "哈爾浜当代芸術館",
       "category": "museum",
-      "description": "展示当代艺术作品的专业美术馆，定期举办国内外艺术展览，是哈尔滨艺术爱好者的重要活动场所。",
-      "address": "哈尔滨市南岗区红军街57号",
+      "description": "現代アート作品を展示する専門の美術館で、定期的に国内外のアート展を開催しており、ハルビンのアート愛好家にとって重要な活動の場となっている。",
+      "address": "哈爾濱市南崗区紅軍街57号",
       "coordinates": {
         "lat": 45.7522,
         "lng": 126.6222
       },
-      "openingHours": "09:00-17:00（周一闭馆）",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1-2小时",
+      "openingHours": "09:00-17:00（月曜休館）",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
         "当代艺术展",
         "装置艺术",
         "油画雕塑",
-        "艺术讲座"
+        "芸術講座"
       ],
-      "tips": "经常有新的展览，关注公众号获取最新展讯，可以参加艺术讲座。",
+      "tips": "頻繁に新しい展覧会が開催される。公式アカウントをフォローして最新の展覧会情報を入手し、アート講座に参加することもできる。",
       "image": "/img/ext/ac56cb21b9b5.webp",
       "phone": "+86 045 1 3208 4633"
     },
     {
       "id": "northeast-martyrs-memorial",
-      "name": "东北烈士纪念馆",
-      "nameEn": "Northeast Martyrs Memorial Hall",
+      "name": "東北烈士記念館",
+      "nameEn": "東北烈士記念館",
       "category": "museum",
-      "description": "纪念东北抗日战争和解放战争中牺牲的烈士，馆内有大量珍贵历史资料和文物，是爱国主义教育基地。",
-      "address": "哈尔滨市南岗区一曼街241号",
+      "description": "東北抗日戦争と解放戦争で犠牲になった烈士を記念しており、館内には貴重な歴史資料や文物が数多くあり、愛国主義教育基地となっている。",
+      "address": "ハルビン市南崗区一曼街241号",
       "coordinates": {
         "lat": 45.7522,
         "lng": 126.6322
       },
-      "openingHours": "09:00-16:00（周一闭馆）",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1-2小时",
+      "openingHours": "09:00-16:00（月曜休館）",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
         "抗日历史",
         "烈士事迹",
         "历史文物",
-        "爱国主义教育"
+        "愛国主義教育"
       ],
-      "tips": "可以了解东北抗日历史，建筑本身也是历史文物，免费参观。",
+      "tips": "東北抗日の歴史を学ぶことができ、建物自体も歴史的文物であり、無料で見学できる。",
       "image": "/img/ext/6107387aee36.webp",
       "phone": "+86 045 1 2506 3421"
     },
     {
       "id": "gogol-street",
       "name": "果戈里大街",
-      "nameEn": "Gogol Street",
+      "nameEn": "ゴゴール通り",
       "category": "street",
-      "description": "以俄罗斯作家果戈里命名的商业街，两旁有众多俄式建筑，是哈尔滨俄罗斯风情的重要展示街区。",
-      "address": "哈尔滨市南岗区果戈里大街",
+      "description": "ロシアの作家ゴーゴリにちなんで名付けられた商店街で、両側には多くのロシア風建築が立ち並び、ハルビンのロシア情緒を紹介する重要なストリートである。",
+      "address": "ハルビン市南崗区ゴーゴリ大街",
       "coordinates": {
         "lat": 45.7522,
         "lng": 126.6322
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1-2小时",
+      "openingHours": "終日開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
         "俄式建筑",
-        "特色商铺",
+        "特色ある商店",
         "历史街区",
-        "文化氛围"
+        "文化的雰囲気"
       ],
-      "tips": "可以买到正宗俄罗斯商品，秋天梧桐叶很美，有时间可以逛逛附近的教堂。",
+      "tips": "正規のロシア商品を購入でき、秋のプラタナスの葉が美しい。時間があれば近くの教会も訪れてみよう。",
       "image": "/img/ext/86b4f795b5b8.webp",
       "phone": "+86 045 1 2739 9537"
     },
     {
       "id": "daowai-baroque",
       "name": "道外巴洛克建筑群",
-      "nameEn": "Daowai Baroque Architecture Complex",
+      "nameEn": "道外バロック建築群",
       "category": "landmark",
-      "description": "中国最大的巴洛克建筑群，融合了中西建筑风格，是哈尔滨近代历史的重要见证，被誉为东方小巴黎缩影。",
-      "address": "哈尔滨市道外区南二道街",
+      "description": "中国最大のバロック建築群で、中国と西洋の建築様式が融合しており、ハルビンの近代史の重要な証人であり、「東方の小さなパリ」の縮図と称されている。",
+      "address": "ハルビン市道外区南二道街",
       "coordinates": {
         "lat": 45.7722,
         "lng": 126.6522
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "openingHours": "終日開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
         "巴洛克建筑",
         "中西合璧",
         "历史街区",
-        "老道外风情"
+        "老道外の風情"
       ],
-      "tips": "建议请导游讲解建筑历史，冬天可以品尝附近的老字号小吃。",
+      "tips": "ガイドに建築の歴史を説明してもらうことをおすすめします。冬には近くの老舗の小吃（軽食）を味わえます。",
       "image": "/img/ext/3ebba106d2ab.webp",
       "phone": "+86 045 1 8222 6223"
     },
     {
       "id": "jihong-bridge",
-      "name": "霁虹桥",
-      "nameEn": "Jihong Bridge",
+      "name": "霽虹橋",
+      "nameEn": "ジホンブリッジ",
       "category": "landmark",
-      "description": "哈尔滨标志性建筑之一，建于1926年，欧式风格桥梁，连接道里区和南岗区，是哈尔滨百年历史的见证者。",
-      "address": "哈尔滨市道里区霁虹街",
+      "description": "ハルビンを代表する建造物の一つで、1926年に建てられた欧風様式の橋です。道里区と南崗区を結び、ハルビンの百年の歴史を見届けてきました。",
+      "address": "哈爾浜市道里区霽虹街",
       "coordinates": {
         "lat": 45.7622,
         "lng": 126.6122
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "30分钟",
+      "openingHours": "終日開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "30分",
       "highlights": [
         "欧式桥梁",
         "历史地标",
-        "城市记忆",
-        "摄影点"
+        "都市の記憶",
+        "撮影スポット"
       ],
-      "tips": "夜晚灯光璀璨非常漂亮，桥附近有很多历史建筑可以一起游览。",
+      "tips": "夜はライトアップが輝いてとても美しく、橋の近くには歴史的建造物が多くあり、一緒に見学できます。",
       "image": "/img/ext/9ceb21066d78.webp",
       "phone": "+86 045 1 9672 6710"
     },
     {
       "id": "yaobuli-ski-resort",
-      "name": "亚布力滑雪场",
-      "nameEn": "Yabuli Ski Resort",
+      "name": "亜布力スキー場",
+      "nameEn": "ヤブリ滑雪場",
       "category": "nature",
-      "description": "中国最大的综合性滑雪场，曾举办过亚冬会等国际赛事，拥有各级别雪道，是滑雪爱好者的天堂。",
-      "address": "哈尔滨市尚志市亚布力镇",
+      "description": "中国最大の総合スキー場で、アジア冬季競技大会などの国際大会も開催されました。様々なレベルのコースがあり、スキー愛好家の天国です。",
+      "address": "ハルビン市尚志市亜布力鎮",
       "coordinates": {
         "lat": 44.7822,
         "lng": 128.5222
@@ -860,190 +860,190 @@
       "ticketPrice": "200-400元",
       "recommendedVisitTime": "1-2天",
       "highlights": [
-        "国际级雪道",
+        "国際級スノーコース",
         "高山滑雪",
         "雪上运动",
         "度假村"
       ],
-      "tips": "建议提前预约教练，旺季酒店要早订，初学者选择初级雪道。",
+      "tips": "事前にインストラクターを予約することをおすすめします。繁忙期はホテルを早めに予約し、初心者は初級コースを選びましょう。",
       "image": "/img/ext/fea03543ce83.webp",
       "phone": "+86 045 1 6045 9896"
     },
     {
       "id": "zhaolin-ice-lantern",
-      "name": "兆麟公园冰灯游园会",
-      "nameEn": "Zhaolin Park Ice Lantern Festival",
+      "name": "兆麟公園氷灯遊園会",
+      "nameEn": "照林公園アイスランタンフェスティバル",
       "category": "nature",
-      "description": "哈尔滨最早的冰灯展览场地，每年冬季举办冰灯游园会，冰灯晶莹剔透，是哈尔滨冬季传统经典活动。",
-      "address": "哈尔滨市道里区兆麟街",
+      "description": "ハルビンで最も早い氷灯（氷のランタン）展覧会場で、毎年冬に氷灯遊園会が開催されます。氷灯は透明で美しく、ハルビンの冬の伝統的な定番イベントです。",
+      "address": "ハルビン市道里区兆麟街",
       "coordinates": {
         "lat": 45.7722,
         "lng": 126.6222
       },
       "openingHours": "17:00-21:00（冬季）",
       "ticketPrice": "150元",
-      "recommendedVisitTime": "1-2小时",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "冰灯艺术",
-        "传统冰灯",
-        "夜间景观",
+        "氷灯芸術",
+        "伝統氷灯",
+        "夜間景観",
         "冬季活动"
       ],
-      "tips": "晚上看冰灯效果最好，拍照很美，穿暖和点。",
+      "tips": "夜に氷灯を見るのが一番きれいで、写真も美しく撮れます。暖かくして出かけましょう。",
       "image": "/img/ext/5ecd09bffc58.webp",
       "phone": "+86 045 1 2736 2620"
     },
     {
       "id": "harbin-normal-night-market",
-      "name": "师大夜市",
-      "nameEn": "Harbin Normal University Night Market",
+      "name": "師大夜市",
+      "nameEn": "ハルビン師範大学ナイトマーケット",
       "category": "market",
-      "description": "哈尔滨最著名的夜市之一，汇集各种东北小吃和特色美食，是体验哈尔滨夜生活和美食文化的绝佳去处。",
-      "address": "哈尔滨市南岗区和兴路附近",
+      "description": "ハルビンで最も有名なナイトマーケットの一つで、様々な東北の小吃や特色あるグルメが集まり、ハルビンのナイトライフと食文化を体験するのに最適な場所です。",
+      "address": "ハルビン市南崗区興和路付近",
       "coordinates": {
         "lat": 45.7322,
         "lng": 126.6522
       },
       "openingHours": "17:00-23:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1-2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "东北小吃",
+        "東北小吃",
         "烤冷面",
-        "锅包肉",
-        "红肠"
+        "鍋包肉（豚肉の甘酢炒め）",
+        "紅腸（ハルビン風燻製ソーセージ）"
       ],
-      "tips": "冬天也照常营业，烤冷面和锅包肉必吃，注意保管好个人物品。",
+      "tips": "冬も通常通り営業しており、烤冷面（焼き冷麺）と鍋包肉（酢豚）は必食です。貴重品の管理に注意してください。",
       "image": "/img/ext/d44ea66e09aa.webp",
       "phone": "+86 045 1 1509 0569"
     },
     {
       "id": "harbin-northern-forest-zoo",
-      "name": "北方森林动物园",
-      "nameEn": "Harbin Northern Forest Zoo",
+      "name": "北方森林動物園",
+      "nameEn": "哈爾浜北部森林動物園",
       "category": "nature",
-      "description": "中国最大的森林动物园之一，动物在自然环境中生活，可以近距离接触各种东北和寒带珍稀动物。",
-      "address": "哈尔滨市阿城区鸽子洞地区",
+      "description": "中国最大級の森林動物園の一つで、動物たちは自然環境の中で生活しています。様々な東北や寒帯の希少動物を間近で見ることができます。",
+      "address": "哈爾浜市阿城区鳩子洞地区",
       "coordinates": {
         "lat": 45.5222,
         "lng": 126.9822
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "80元",
-      "recommendedVisitTime": "4-5小时",
+      "recommendedVisitTime": "4〜5時間",
       "highlights": [
-        "森林环境",
-        "东北虎",
+        "森林環境",
+        "東北虎（シベリアトラ）",
         "棕熊",
-        "丹顶鹤"
+        "丹頂鶴"
       ],
-      "tips": "园区很大建议乘坐观光车，夏天去最好，动物比较活跃。",
+      "tips": "園内は広いので観光車の利用をおすすめします。夏に行くのが良く、動物たちが活発です。",
       "image": "/img/ext/0df1b413372e.webp",
       "phone": "+86 045 1 8924 6308"
     },
     {
       "id": "harbin-heilongjiang-forest-museum",
-      "name": "中国(哈尔滨)森林博物馆",
-      "nameEn": "China Forest Museum",
+      "name": "中国（哈爾浜）森林博物館",
+      "nameEn": "中国森林博物館",
       "category": "museum",
-      "description": "国内首家以森林为主题的国家级博物馆，展示森林生态、林业历史和森林文化，科普教育意义重大。",
-      "address": "哈尔滨市香坊区和兴路26号",
+      "description": "国内初の森林をテーマにした国立博物館で、森林生態、林業の歴史、森林文化を展示し、科学普及教育の意義は大きい。",
+      "address": "哈爾浜市香坊区和興路26号",
       "coordinates": {
         "lat": 45.7222,
         "lng": 126.6422
       },
-      "openingHours": "09:00-16:00（周一闭馆）",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1-2小时",
+      "openingHours": "09:00-16:00（月曜休館）",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
         "森林生态",
         "林业历史",
-        "互动体验",
+        "インタラクティブ体験",
         "科普教育"
       ],
-      "tips": "适合带孩子来了解森林知识，展品丰富有趣，免费参观。",
+      "tips": "子供を連れて森林の知識を学ぶのに適しており、展示品は豊富で面白く、無料で見学できる。",
       "image": "/img/ext/063ada8efaf8.webp",
       "phone": "+86 045 1 8750 9491"
     },
     {
       "id": "harbin-erdogang",
-      "name": "哈尔滨关道衙门",
-      "nameEn": "Harbin Customs Office Historic Site",
+      "name": "哈爾浜関道衙門",
+      "nameEn": "哈爾浜税関歴史跡",
       "category": "museum",
-      "description": "清政府在哈尔滨设立的海关道台衙门旧址，展示了哈尔滨近代行政历史，是了解城市发展史的重要窗口。",
-      "address": "哈尔滨市道外区北十八道街",
+      "description": "清政府在ハルビンに設置した海関道台衙門の旧跡で、ハルビンの近代行政史を展示し、都市発展史を理解する重要な窓口である。",
+      "address": "ハルビン市道外区北十八道街",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6422
       },
       "openingHours": "09:00-16:30",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "清代衙门",
+        "清代の役所",
         "行政历史",
         "古建筑",
-        "文化展览"
+        "文化展示"
       ],
-      "tips": "了解哈尔滨近代行政历史的好去处，建筑保存完好，免费参观。",
+      "tips": "ハルビンの近代行政史を学ぶのに良い場所で、建物は保存状態が良く、無料で見学できる。",
       "image": "/img/ext/4d192538c5f9.webp",
       "phone": "+86 045 1 7137 6475"
     },
     {
       "id": "harbin-dongbei-forestry-university",
-      "name": "东北林业大学校园",
-      "nameEn": "Northeast Forestry University Campus",
+      "name": "東北林業大学キャンパス",
+      "nameEn": "東北林業大学キャンパス",
       "category": "park",
-      "description": "著名高等学府，校园内有大量俄式建筑，冬季校园雪景如画，秋季银杏大道金黄灿烂，是感受学术氛围的好去处。",
-      "address": "哈尔滨市香坊区和兴路26号",
+      "description": "有名な高等教育機関で、キャンパス内には多くのロシア風建築があり、冬のキャンパスの雪景色は絵のように美しく、秋のイチョウ並木は黄金色に輝き、学術的な雰囲気を感じられる良い場所である。",
+      "address": "哈爾浜市香坊区和興路26号",
       "coordinates": {
         "lat": 45.7222,
         "lng": 126.6422
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1-2小时",
+      "openingHours": "終日開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "俄式校园建筑",
-        "银杏大道",
+        "ロシア風キャンパス建築",
+        "イチョウ並木通り",
         "冬季雪景",
-        "学术氛围"
+        "学術的な雰囲気"
       ],
-      "tips": "秋季银杏大道和冬季雪景最值得一看，校园内有学生讲解服务。",
+      "tips": "秋のイチョウ並木と冬の雪景色が最も見応えがあり、キャンパス内には学生による解説サービスもある。",
       "image": "/img/ext/c09fcbe63c84.webp",
       "phone": "+86 045 1 3359 5819"
     },
     {
       "id": "harbin-taiping-lake",
       "name": "太平湖",
-      "nameEn": "Taiping Lake",
+      "nameEn": "太平湖",
       "category": "nature",
-      "description": "哈尔滨市郊的天然湖泊，夏季碧波荡漾，冬季结冰后成为天然冰场，是市民休闲娱乐和亲近自然的好去处。",
-      "address": "哈尔滨市道里区太平镇",
+      "description": "ハルビン郊外の天然湖で、夏は青い波が揺れ、冬は凍結して天然のスケートリンクとなり、市民のレジャーや自然と親しむのに良い場所である。",
+      "address": "ハルビン市道里区太平鎮",
       "coordinates": {
         "lat": 45.6222,
         "lng": 126.4822
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "openingHours": "終日開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
         "湖光山色",
-        "冬季冰场",
-        "垂钓",
-        "观鸟"
+        "冬季アイススケート場",
+        "釣り",
+        "バードウォッチング"
       ],
-      "tips": "夏天适合野餐垂钓，冬天可以体验冰上活动，注意安全。",
+      "tips": "夏はピクニックや釣りに適し、冬は氷上アクティビティを体験できるが、安全に注意が必要である。",
       "image": "/img/ext/b39ed63db61a.webp",
       "phone": "+86 045 1 7983 8730"
     },
     {
       "id": "harbin-erlongshan",
-      "name": "二龙山风景区",
-      "nameEn": "Erlong Mountain Scenic Area",
+      "name": "二竜山風景区",
+      "nameEn": "二龍山景区",
       "category": "nature",
-      "description": "哈尔滨市郊的著名风景区，有山有水，四季景色各异，是哈尔滨市民周末出游的热门目的地。",
-      "address": "哈尔滨市宾县",
+      "description": "ハルビン郊外の有名な景勝地で、山も水もあり、四季折々の景色が異なり、ハルビン市民の週末のお出かけ先として人気がある。",
+      "address": "ハルビン市賓県",
       "coordinates": {
         "lat": 45.7522,
         "lng": 127.4822
@@ -1052,166 +1052,166 @@
       "ticketPrice": "30元",
       "recommendedVisitTime": "半天",
       "highlights": [
-        "山水风光",
-        "龙珠塔",
-        "滑雪场",
+        "山水の風景",
+        "龍珠塔",
+        "スキー場",
         "森林浴"
       ],
-      "tips": "秋天红叶很美，冬天有滑雪场，夏天可以避暑。",
+      "tips": "秋の紅葉が美しく、冬はスキー場があり、夏は避暑に最適です。",
       "image": "/img/ext/867767e87cf7.webp",
       "phone": "+86 045 1 5779 2631"
     },
     {
       "id": "harbin-hongbo-square",
-      "name": "红博广场",
-      "nameEn": "Hongbo Square",
+      "name": "紅博広場",
+      "nameEn": "紅博広場",
       "category": "landmark",
-      "description": "哈尔滨市中心的标志性广场，周围有多座历史建筑，是市民休闲和城市文化活动的重要场所。",
-      "address": "哈尔滨市南岗区红军街",
+      "description": "ハルビン中心部のシンボル的な広場で、周辺には多くの歴史的建造物があり、市民のレジャーや都市文化活動の重要な場所である。",
+      "address": "哈爾浜市南崗区紅軍街",
       "coordinates": {
         "lat": 45.7522,
         "lng": 126.6322
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "30分钟-1小时",
+      "openingHours": "終日開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "30分～1時間",
       "highlights": [
-        "城市广场",
+        "シティプラザ",
         "历史建筑",
-        "市民休闲",
+        "市民の憩いの場",
         "文化活动"
       ],
-      "tips": "夜晚灯光很漂亮，附近有购物中心和餐厅，可以一起逛。",
+      "tips": "夜のライトアップがとても綺麗で、近くにショッピングモールやレストランがあり、一緒に楽しむことができます。",
       "image": "/img/ext/aa952a558f61.webp",
       "phone": "+86 045 1 5355 2014"
     },
     {
       "id": "harbin-ice-snow-entertainment-world",
-      "name": "冰雪欢乐谷",
-      "nameEn": "Ice and Snow Happy Valley",
+      "name": "冰雪歓楽谷（氷雪バレー）",
+      "nameEn": "冰雪歓楽谷",
       "category": "nature",
-      "description": "大型冰雪主题乐园，拥有各种冰上娱乐项目，包括冰滑梯、冰上碰碰车等，是冬季家庭游玩的绝佳去处。",
-      "address": "哈尔滨市松北区冰雪大世界附近",
+      "description": "大型の氷雪テーマパークで、氷の滑り台やアイスバンパーカーなど、さまざまな氷上アトラクションがあり、冬の家族連れに最適なスポットです。",
+      "address": "ハルビン市松北区冰雪大世界付近",
       "coordinates": {
         "lat": 45.7922,
         "lng": 126.5322
       },
       "openingHours": "10:00-21:00（冬季）",
       "ticketPrice": "150元",
-      "recommendedVisitTime": "3-4小时",
+      "recommendedVisitTime": "3〜4時間",
       "highlights": [
         "冰滑梯",
-        "冰上碰碰车",
+        "アイスバンパーカー",
         "雪地摩托",
-        "冰雕体验"
+        "氷彫刻体験"
       ],
-      "tips": "适合亲子游玩，穿好保暖衣物，冰上项目注意安全。",
+      "tips": "親子でのお出かけに最適。防寒着をしっかり着て、氷上アクティビティは安全に注意してください。",
       "image": "/img/ext/80b4a7205955.webp",
       "phone": "+86 045 1 9431 2014"
     },
     {
       "id": "harbin-manchurian-railway-museum",
-      "name": "中东铁路印象馆",
-      "nameEn": "Chinese Eastern Railway Museum",
+      "name": "中東鉄道印象館",
+      "nameEn": "中東鉄道博物館",
       "category": "museum",
-      "description": "展示中东铁路历史的专题博物馆，通过实物、图片和文献资料，再现了哈尔滨近代历史的重要篇章。",
-      "address": "哈尔滨市南岗区西大直街51号",
+      "description": "中東鉄路の歴史を紹介する専門博物館で、実物や写真、文献資料を通じて、哈爾浜の近代史における重要な一章を再現しています。",
+      "address": "哈爾濱市南崗区西大直街51号",
       "coordinates": {
         "lat": 45.7522,
         "lng": 126.6122
       },
-      "openingHours": "09:00-16:30（周一闭馆）",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1-2小时",
+      "openingHours": "09:00-16:30（月曜休館）",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "中东铁路历史",
+        "中東鉄道の歴史",
         "俄式建筑",
         "历史文物",
-        "哈尔滨发展史"
+        "ハルビン発展史"
       ],
-      "tips": "了解哈尔滨历史的好去处，建筑本身就是历史文物，免费参观。",
+      "tips": "哈爾浜の歴史を学ぶのに最適な場所で、建物自体が歴史的建造物であり、入場無料です。",
       "image": "/img/ext/da051b3656ba.webp",
       "phone": "+86 045 1 1024 1738"
     },
     {
       "id": "harbin-red-square-art",
-      "name": "红场美术馆",
-      "nameEn": "Red Square Art Museum",
+      "name": "紅場美術館",
+      "nameEn": "紅場芸術館",
       "category": "museum",
-      "description": "位于哈尔滨的俄罗斯风格美术馆，经常举办中俄艺术交流展览，是了解中俄文化艺术交流的重要窗口。",
-      "address": "哈尔滨市道里区中央大街附近",
+      "description": "哈爾浜にあるロシア風の美術館で、中露芸術交流展が頻繁に開催され、中露の文化芸術交流を理解するための重要な窓口となっています。",
+      "address": "哈爾濱市道里区中央大街付近",
       "coordinates": {
         "lat": 45.7722,
         "lng": 126.6222
       },
-      "openingHours": "09:00-17:00（周一闭馆）",
+      "openingHours": "09:00-17:00（月曜休館）",
       "ticketPrice": "30元",
-      "recommendedVisitTime": "1-2小时",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
         "中俄艺术",
-        "油画展览",
+        "油絵展覧会",
         "文化交流",
         "俄式建筑"
       ],
-      "tips": "经常有新的展览，适合艺术爱好者，建筑本身也很有特色。",
+      "tips": "常に新しい展示があり、アート愛好家に最適です。建物自体も非常に特徴的です。",
       "image": "/img/ext/01a0a5da577a.webp",
       "phone": "+86 045 1 3224 6115"
     },
     {
       "id": "harbin-xiangfang-park",
-      "name": "香坊公园",
-      "nameEn": "Xiangfang Park",
+      "name": "香坊公園",
+      "nameEn": "香坊公園",
       "category": "park",
-      "description": "哈尔滨东部的大型城市公园，绿化覆盖率高，有湖泊和各种休闲设施，是当地居民日常休闲的好去处。",
-      "address": "哈尔滨市香坊区红旗大街",
+      "description": "哈爾浜東部にある大型の都市公園で、緑化率が高く、湖やさまざまなレジャー施設があり、地元住民の日常的な憩いの場となっています。",
+      "address": "ハルビン市香坊区紅旗大街",
       "coordinates": {
         "lat": 45.7122,
         "lng": 126.6822
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1-2小时",
+      "openingHours": "終日開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "城市绿地",
+        "都市緑地",
         "湖泊",
-        "健身设施",
-        "市民休闲"
+        "フィットネス施設",
+        "市民の憩いの場"
       ],
-      "tips": "适合晨练和散步，环境清幽，冬天湖面结冰可以滑冰。",
+      "tips": "朝の運動や散歩に適しており、環境は静かで、冬は湖面が凍ってスケートができます。",
       "image": "/img/ext/93b23553ffdc.webp",
       "phone": "+86 045 1 1041 9211"
     },
     {
       "id": "harbin-yabuli-forest",
-      "name": "亚布力森林小火车",
-      "nameEn": "Yabuli Forest Train",
+      "name": "亜布力森林小列車",
+      "nameEn": "ヤブリ森林列車",
       "category": "nature",
-      "description": "乘坐复古森林小火车穿越原始森林，沿途欣赏林海雪原风光，是亚布力滑雪度假区的经典体验项目。",
-      "address": "哈尔滨市尚志市亚布力镇",
+      "description": "レトロな森林鉄道の小さな列車に乗って原生林を抜け、林海雪原の景色を楽しむのは、亜布力スキーリゾートの定番体験です。",
+      "address": "ハルビン市尚志市亜布力鎮",
       "coordinates": {
         "lat": 44.7922,
         "lng": 128.5322
       },
       "openingHours": "08:00-16:00",
       "ticketPrice": "50元",
-      "recommendedVisitTime": "1-2小时",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "森林小火车",
+        "森林小列車",
         "原始森林",
         "林海雪原",
-        "复古体验"
+        "レトロ体験"
       ],
-      "tips": "冬天雪景最美，可以和滑雪一起安排，建议上午乘坐光线好。",
+      "tips": "冬の雪景色が最も美しく、スキーと一緒に計画するのがおすすめです。午前中は光の具合が良いので、午前中の乗車をおすすめします。",
       "image": "/img/ext/2707c54b1ac7.webp",
       "phone": "+86 045 1 8392 7443"
     },
     {
       "id": "harbin-wanda-indoor",
-      "name": "哈尔滨万达室内主题乐园",
-      "nameEn": "Harbin Wanda Indoor Theme Park",
+      "name": "ハルビン万达室内テーマパーク",
+      "nameEn": "哈爾浜万达室内テーマパーク",
       "category": "park",
-      "description": "大型室内主题乐园，拥有多种游乐设施和表演，是冬季室内娱乐的好选择，不受严寒天气影响，适合全家游玩。",
-      "address": "哈尔滨市松北区世茂大道99号",
+      "description": "大型屋内テーマパークで、多彩な遊具やショーを備え、冬の屋内レジャーに最適。厳しい寒さの影響を受けず、家族連れでの訪問に適している。",
+      "address": "哈爾濱市松北区世茂大道99号",
       "coordinates": {
         "lat": 45.8222,
         "lng": 126.5822
@@ -1220,114 +1220,114 @@
       "ticketPrice": "218元",
       "recommendedVisitTime": "半天",
       "highlights": [
-        "室内过山车",
-        "4D影院",
-        "主题表演",
-        "亲子游乐"
+        "屋内ジェットコースター",
+        "4D映画館",
+        "テーマショー",
+        "親子で楽しめる遊園地"
       ],
-      "tips": "冬季推荐室内游玩，提前在网上购票有优惠，周末人多建议工作日前往。",
+      "tips": "冬は屋内での遊びを推奨。事前にオンラインでチケットを購入すると割引があり、週末は混雑するため、平日の訪問がおすすめ。",
       "image": "/img/ext/47bc8b87c28d.webp",
       "phone": "+86 045 1 4579 6594"
     },
     {
       "id": "sophia-cathedral",
-      "name": "圣索菲亚大教堂",
-      "nameEn": "Saint Sophia Cathedral",
+      "name": "聖ソフィア大聖堂",
+      "nameEn": "聖ソフィア大聖堂",
       "category": "landmark",
-      "description": "远东最大的东正教堂，建于1907年，拜占庭式建筑风格，绿色洋葱头穹顶是哈尔滨的标志。",
-      "address": "哈尔滨市道里区透笼街88号",
+      "description": "極東最大の正教会聖堂で、1907年建立。ビザンチン様式の建築で、緑の玉ねぎ型ドームはハルビンのシンボル。",
+      "address": "哈爾濱市道里区透籠街88号",
       "coordinates": {
         "lat": 45.7736,
         "lng": 126.6247
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "15元",
-      "recommendedVisitTime": "1小时",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "拜占庭穹顶",
-        "哈尔滨建筑艺术馆",
-        "广场鸽子"
+        "ビザンチン様式のドーム",
+        "ハルビン建築芸術館",
+        "広場の鳩"
       ],
-      "tips": "夜景灯光很美，建议傍晚前往。",
+      "tips": "夜景の灯りがとても美しいので、夕方に行くことをおすすめします。",
       "image": "/img/ext/5cc64e8183b5.webp",
       "phone": "+86 045 1 3873 4673"
     },
     {
       "id": "central-street",
       "name": "中央大街",
-      "nameEn": "Central Street",
+      "nameEn": "中央通り",
       "category": "street",
-      "description": "亚洲最长的步行街，全长1450米，铺满面包石，两侧汇集欧式建筑71栋。",
-      "address": "哈尔滨市道里区中央大街",
+      "description": "アジア最長の歩行者天国で、全長1450メートル。パン石が敷き詰められ、両側には欧風建築が71棟並ぶ。",
+      "address": "哈爾濱市道里区中央大街",
       "coordinates": {
         "lat": 45.7736,
         "lng": 126.6181
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
         "面包石路面",
         "欧式建筑群",
-        "马迭尔冰棍"
+        "マデルアイスキャンディー"
       ],
-      "tips": "一定要吃马迭尔冰棍和红肠。",
+      "tips": "マデルアイスキャンディーと紅腸（赤いソーセージ）はぜひ食べてください。",
       "image": "/img/ext/f859e856792b.webp",
       "phone": "+86 045 1 0895 6359"
     },
     {
       "id": "ice-snow-world",
       "name": "冰雪大世界",
-      "nameEn": "Ice and Snow World",
+      "nameEn": "アイス・アンド・スノー・ワールド",
       "category": "landmark",
-      "description": "世界上最大的冰雪主题乐园，每年12月开园，用冰量超20万立方米。",
-      "address": "哈尔滨市松北区太阳岛西侧",
+      "description": "世界最大の氷雪テーマパークで、毎年12月に開園。使用する氷の量は20万立方メートルを超える。",
+      "address": "哈爾浜市松北区太陽島西側",
       "coordinates": {
         "lat": 45.7917,
         "lng": 126.55
       },
       "openingHours": "11:00-21:30",
       "ticketPrice": "300元",
-      "recommendedVisitTime": "3-4小时",
+      "recommendedVisitTime": "3〜4時間",
       "highlights": [
         "巨型冰雕",
         "冰雪滑梯",
-        "灯光秀"
+        "ライトショー"
       ],
-      "tips": "12月下旬至2月最佳，穿暖和。",
+      "tips": "12月下旬から2月がベストシーズンです。暖かくしてお出かけください。",
       "image": "/img/ext/ea90071b44ab.webp",
       "phone": "+86 451 8488 4263"
     },
     {
       "id": "flood-memorial",
-      "name": "防洪纪念塔",
-      "nameEn": "Flood Control Memorial Tower",
+      "name": "防洪記念塔",
+      "nameEn": "防洪記念塔",
       "category": "landmark",
-      "description": "为纪念1957年哈尔滨人民抗洪胜利而建，塔高22.5米，是松花江畔标志性建筑。",
-      "address": "哈尔滨市道里区中央大街尽头",
+      "description": "1957年のハルビン市民による洪水対策の勝利を記念して建てられた。塔の高さは22.5メートルで、松花江畔のランドマーク。",
+      "address": "哈爾濱市道里区中央大街の突き当たり",
       "coordinates": {
         "lat": 45.7736,
         "lng": 126.6125
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "30分钟",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "30分",
       "highlights": [
-        "纪念塔",
+        "記念塔",
         "松花江畔",
-        "斯大林公园"
+        "スターリン公園"
       ],
-      "tips": "与中央大街相连，可一起游览。",
+      "tips": "中央大街とつながっているので、一緒に観光できます。",
       "image": "/img/ext/a84325599af8.webp",
       "phone": "+86 045 1 4166 3114"
     },
     {
       "id": "volga-manor",
-      "name": "伏尔加庄园",
-      "nameEn": "Volga Manor",
+      "name": "ヴォルガ荘園",
+      "nameEn": "ボルガ・マナー",
       "category": "landmark",
-      "description": "以俄罗斯文化为主题的园林，复建了多座俄式建筑，占地60万平方米。",
-      "address": "哈尔滨市香坊区成高子镇",
+      "description": "ロシア文化をテーマにした庭園で、複数のロシア風建築が復元され、敷地面積は60万平方メートル。",
+      "address": "哈爾濱市香坊区成高子鎮",
       "coordinates": {
         "lat": 45.7167,
         "lng": 126.7333
@@ -1337,66 +1337,66 @@
       "recommendedVisitTime": "半天",
       "highlights": [
         "俄式建筑",
-        "伏尔加河畔",
-        "套娃广场"
+        "ヴォルガ川の畔",
+        "マトリョーシカ広場"
       ],
-      "tips": "冬季雪景很美，可体验俄式餐饮。",
+      "tips": "冬の雪景色が美しく、ロシア風の食事も楽しめます。",
       "image": "/img/ext/c22a875e3421.webp",
       "phone": "+86 045 1 7539 0956"
     },
     {
       "id": "harbin-polarland",
-      "name": "哈尔滨极地馆",
-      "nameEn": "Harbin Polarland",
+      "name": "ハルビン極地館",
+      "nameEn": "ハルビン Polarland",
       "category": "museum",
-      "description": "中国唯一的极地动物表演馆，有白鲸、企鹅、北极熊等极地动物。",
-      "address": "哈尔滨市松北区太阳大道3号",
+      "description": "中国唯一の極地動物ショー施設で、シロイルカ、ペンギン、ホッキョクグマなどの極地動物がいる。",
+      "address": "哈爾浜市松北区太陽大道3号",
       "coordinates": {
         "lat": 45.7917,
         "lng": 126.5667
       },
       "openingHours": "09:00-17:00",
       "ticketPrice": "200元",
-      "recommendedVisitTime": "3小时",
+      "recommendedVisitTime": "3時間",
       "highlights": [
-        "白鲸表演",
-        "企鹅巡游",
+        "白鯨ショー",
+        "ペンギンパレード",
         "北极熊"
       ],
-      "tips": "表演时间需提前查看。",
+      "tips": "ショーの時間は事前に確認してください。",
       "image": "/img/ext/396da52c8553.webp",
       "phone": "+86 045 1 3636 9518"
     },
     {
       "id": "laodaowai",
       "name": "老道外",
-      "nameEn": "Laodao Wai",
+      "nameEn": "老道外",
       "category": "street",
-      "description": "哈尔滨最老的城区，保留了大量中华巴洛克建筑，是哈尔滨历史的缩影。",
-      "address": "哈尔滨市道外区南二道街",
+      "description": "ハルビンで最も古い市街地で、多くのチャイニーズ・バロック建築が残り、ハルビンの歴史の縮図。",
+      "address": "ハルビン市道外区南二道街",
       "coordinates": {
         "lat": 45.7833,
         "lng": 126.65
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
-        "中华巴洛克建筑",
+        "中華バロック建築",
         "老街巷",
         "特色小吃"
       ],
-      "tips": "推荐张包铺、老范记红肠。",
+      "tips": "張包舗（チャンバオプー）、老范記（ラオファンジー）の紅腸（ハムソーセージ）がおすすめです。",
       "image": "/img/ext/750968759ac3.webp",
       "phone": "+86 045 1 7074 2251"
     },
     {
       "id": "yabuli-ski",
-      "name": "亚布力滑雪场",
-      "nameEn": "Yabuli Ski Resort",
+      "name": "亜布力スキー場",
+      "nameEn": "ヤブリ滑雪場",
       "category": "nature",
-      "description": "中国最大的综合性滑雪场，曾举办亚冬会，有46条雪道。",
-      "address": "哈尔滨市尚志市亚布力镇",
+      "description": "中国最大の総合スキー場で、アジア冬季競技大会を開催した実績があり、46本のコースがある。",
+      "address": "ハルビン市尚志市亜布力鎮",
       "coordinates": {
         "lat": 44.7833,
         "lng": 128.5
@@ -1406,66 +1406,66 @@
       "recommendedVisitTime": "全天",
       "highlights": [
         "专业雪道",
-        "雪上娱乐",
+        "雪上アクティビティ",
         "度假村"
       ],
-      "tips": "11月至次年3月最佳，需提前预约。",
+      "tips": "11月から翌年3月がベストシーズンです。事前予約が必要です。",
       "image": "/img/ext/b8a433d7a83d.webp",
       "phone": "+86 045 1 0097 8558"
     },
     {
       "id": "heilongjiang-museum",
-      "name": "黑龙江省博物馆",
-      "nameEn": "Heilongjiang Provincial Museum",
+      "name": "黒竜江省博物館",
+      "nameEn": "黒龍江省博物館",
       "category": "museum",
-      "description": "综合性博物馆，馆藏文物10万余件，展示了黑龙江的历史和自然。",
-      "address": "哈尔滨市南岗区红军街50号",
+      "description": "総合博物館で、館蔵文物10万余点を収蔵し、黒竜江の歴史と自然を展示している。",
+      "address": "哈爾浜市南崗区紅軍街50号",
       "coordinates": {
         "lat": 45.75,
         "lng": 126.6333
       },
       "openingHours": "09:00-16:30",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
         "历史文物",
         "自然标本",
-        "临时展览"
+        "企画展"
       ],
-      "tips": "周一闭馆。",
+      "tips": "月曜日は休館です。",
       "image": "/img/ext/cbc88901198e.webp",
       "phone": "+86 045 1 5840 1850"
     },
     {
       "id": "stalin-park",
-      "name": "斯大林公园",
-      "nameEn": "Stalin Park",
+      "name": "スターリン公園",
+      "nameEn": "スターリン公園",
       "category": "park",
-      "description": "松花江南岸的带状公园，全长1750米，是市民休闲的好去处。",
-      "address": "哈尔滨市道里区斯大林街",
+      "description": "松花江南岸の帯状公園で、全長1750メートル、市民の憩いの場として親しまれている。",
+      "address": "ハルビン市道里区スターリン街",
       "coordinates": {
         "lat": 45.7736,
         "lng": 126.6125
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
         "松花江畔",
-        "防洪纪念塔",
+        "防洪記念塔",
         "俄式建筑"
       ],
-      "tips": "与中央大街相连。",
+      "tips": "中央大街に直結しています。",
       "image": "/img/ext/6cbef3d4d717.webp",
       "phone": "+86 045 1 5986 7229"
     },
     {
       "id": "harbin-zoo",
-      "name": "哈尔滨北方森林动物园",
-      "nameEn": "Harbin Northern Forest Zoo",
+      "name": "ハルビン北方森林動物園",
+      "nameEn": "哈爾浜北部森林動物園",
       "category": "nature",
-      "description": "中国最大的森林动物园之一，占地558公顷，有300多种动物。",
-      "address": "哈尔滨市阿城区鸽子洞地区",
+      "description": "中国最大級の森林動物園の一つで、面積558ヘクタール、300種以上の動物がいる。",
+      "address": "哈爾浜市阿城区鳩子洞地区",
       "coordinates": {
         "lat": 45.55,
         "lng": 126.95
@@ -1474,57 +1474,57 @@
       "ticketPrice": "80元",
       "recommendedVisitTime": "半天",
       "highlights": [
-        "东北虎",
-        "森林环境",
+        "東北虎（シベリアトラ）",
+        "森林環境",
         "动物表演"
       ],
-      "tips": "园区很大，建议坐观光车。",
+      "tips": "園区は広いので、観光車に乗ることをおすすめします。",
       "image": "/img/ext/a8b7191bf32f.webp",
       "phone": "+86 045 1 1284 2509"
     },
     {
       "id": "unit731",
-      "name": "侵华日军第七三一部队罪证陈列馆",
-      "nameEn": "Museum of Evidence of War Crimes by Unit 731",
+      "name": "侵華日軍第七三一部隊罪証陳列館",
+      "nameEn": "731部隊戦争犯罪証拠博物館",
       "category": "museum",
-      "description": "展示日本731部队进行细菌战和人体实验的罪证，是重要的爱国主义教育基地。",
-      "address": "哈尔滨市平房区新疆大街47号",
+      "description": "日本軍731部隊による細菌戦と人体実験の罪証を展示し、重要な愛国主義教育基地である。",
+      "address": "ハルビン市平房区新疆大街47号",
       "coordinates": {
         "lat": 45.6167,
         "lng": 126.6333
       },
       "openingHours": "09:00-16:30",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
-        "罪证展览",
+        "罪証展覧",
         "遗址",
         "历史教育"
       ],
-      "tips": "内容沉重，做好心理准备。",
+      "tips": "内容が重いので、心の準備をしてください。",
       "image": "/img/ext/8e894df8e003.webp",
       "phone": "+86 045 1 5781 3343"
     },
     {
       "id": "harbin-opera",
-      "name": "哈尔滨大剧院",
-      "nameEn": "Harbin Grand Theatre",
+      "name": "ハルビン大劇院",
+      "nameEn": "ハルビン大劇場",
       "category": "landmark",
-      "description": "由MAD建筑事务所设计，外形如雪山，是哈尔滨文化新地标。",
-      "address": "哈尔滨市松北区文化中心岛",
+      "description": "MAD建築事務所により設計され、外観は雪山のように見え、ハルビンの新しい文化ランドマークです",
+      "address": "ハルビン市松北区文化中心島",
       "coordinates": {
         "lat": 45.7972,
         "lng": 126.5583
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "参观免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "見学無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
         "雪山造型",
         "建筑艺术",
         "演出"
       ],
-      "tips": "夜景灯光很美，可看演出。",
+      "tips": "夜景のライトアップが美しく、ショーも見られます。",
       "image": "/img/ext/27179d3c9495.webp",
       "phone": "+86 045 1 2124 3334"
     }
@@ -1533,172 +1533,172 @@
     {
       "id": "harbin-1",
       "name": "老昌春饼",
-      "nameEn": "Lao Chang Spring Pancakes",
-      "type": "local",
-      "cuisine": "Harbin",
+      "nameEn": "老刀春餅",
+      "type": "ローカル",
+      "cuisine": "ハルビン料理",
       "avgPrice": 60,
       "rating": 4.6,
-      "address": "Multiple locations",
+      "address": "市内複数箇所",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "hours": "10:00-22:00",
-      "description": "Famous for thin spring pancakes with various fillings.",
+      "description": "薄い春巻きの皮に様々な具材を包んだ料理。",
       "dishHighlights": [
-        "Spring pancakes",
-        "Beijing duck",
-        "Vegetable rolls"
+        "春餅",
+        "北京ダック",
+        "野菜ロール"
       ],
       "tags": [
-        "local",
-        "famous",
-        "spring-pancakes",
-        "traditional"
+        "ローカル",
+        "有名",
+        "春餅",
+        "伝統的"
       ],
       "imageUrl": "/img/ext/caaf6fe8a966.webp",
       "phone": "+86 045 1 6380 2466"
     },
     {
       "id": "harbin-2",
-      "name": "马迭尔冰棍",
-      "nameEn": "Modern Dairy Ice Cream",
-      "type": "local",
-      "cuisine": "Dessert",
+      "name": "マデルアイスキャンディー",
+      "nameEn": "現代乳業のアイスクリーム",
+      "type": "ローカル",
+      "cuisine": "デザート",
       "avgPrice": 15,
       "rating": 4.7,
-      "address": "Central Avenue",
+      "address": "中央大街",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "hours": "09:00-23:00",
-      "description": "Legendary ice cream from Modern Hotel, a Harbin institution since 1906.",
+      "description": "1906年からハルビンで愛される伝説のアイスクリーム",
       "dishHighlights": [
-        "Vanilla ice cream",
-        "Chocolate ice cream"
+        "バニラアイスクリーム",
+        "チョコレートアイスクリーム"
       ],
       "tags": [
-        "local",
-        "famous",
-        "ice-cream",
-        "must-try"
+        "ローカル",
+        "有名",
+        "アイスクリーム",
+        "必食"
       ],
       "imageUrl": "/img/ext/58d532e5bd77.webp",
       "phone": "+86 045 1 5511 7462"
     },
     {
       "id": "harbin-3",
-      "name": "华梅西餐厅",
-      "nameEn": "Huamei Western Restaurant",
-      "type": "fine",
-      "cuisine": "Russian",
+      "name": "華梅西餐廳（ハルビン西洋料理店）",
+      "nameEn": "フワメイ西洋レストラン",
+      "type": "本格的",
+      "cuisine": "ロシア料理",
       "avgPrice": 150,
       "rating": 4.5,
-      "address": "85 Zhongyang Avenue, Daoli District",
+      "address": "85中陽路、道里区",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "phone": "+86 451 8488 4000",
       "hours": "11:00-22:00",
-      "description": "Historic Russian restaurant with elegant atmosphere and traditional recipes.",
+      "description": "歴史的なロシア料理店。優雅な雰囲気と伝統的なレシピが特徴です。",
       "dishHighlights": [
-        "Borscht",
-        "Beef stroganoff",
-        "Russian bread"
+        "ボルシチ",
+        "ビーフストロガノフ",
+        "ロシアンブレッド"
       ],
       "tags": [
-        "fine-dining",
-        "russian",
-        "historic",
-        "traditional"
+        "高級レストラン",
+        "ロシア",
+        "歴史的",
+        "伝統的"
       ],
       "imageUrl": "/img/ext/abad2daf251a.webp"
     },
     {
       "id": "harbin-4",
       "name": "老鼎丰",
-      "nameEn": "Lao Ding Feng",
-      "type": "local",
-      "cuisine": "Harbin Snacks",
+      "nameEn": "老鼎豊",
+      "type": "ローカル",
+      "cuisine": "ハルビン軽食",
       "avgPrice": 40,
       "rating": 4.6,
-      "address": "Multiple locations",
+      "address": "市内複数箇所",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "hours": "08:00-20:00",
-      "description": "Famous for pastries and traditional Chinese desserts.",
+      "description": "餅果子と伝統的な中国デザートで有名。",
       "dishHighlights": [
-        "Mooncakes",
-        "Pastries",
-        "Sweet dumplings"
+        "月餅",
+        "餅果子",
+        "白玉団子"
       ],
       "tags": [
-        "local",
-        "pastries",
-        "dessert",
-        "famous"
+        "ローカル",
+        "餅果子",
+        "デザート",
+        "有名"
       ],
       "imageUrl": "/img/ext/1b3180783f6a.webp",
       "phone": "+86 045 1 3776 9541"
     },
     {
       "id": "harbin-5",
-      "name": "东方饺子王",
-      "nameEn": "Oriental Dumpling King",
-      "type": "local",
-      "cuisine": "Dumplings",
+      "name": "東方餃子王（トウホウギョウザオウ）",
+      "nameEn": "東方餃子大王",
+      "type": "ローカル",
+      "cuisine": "餃子",
       "avgPrice": 50,
       "rating": 4.6,
-      "address": "Multiple locations",
+      "address": "市内複数箇所",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "phone": "+86 451 8881 8888",
       "hours": "10:00-22:00",
-      "description": "Popular chain for quality dumplings with various fillings.",
+      "description": "様々な餡を持つ高品質の餃子で人気のチェーン店。",
       "dishHighlights": [
-        "Pork dumplings",
-        "Shrimp dumplings",
-        "Vegetable dumplings"
+        "豚餃子",
+        "海老蒸し餃子",
+        "野菜餃子"
       ],
       "tags": [
-        "local",
-        "dumplings",
-        "chain",
-        "popular"
+        "ローカル",
+        "餃子",
+        "チェーン店",
+        "人気"
       ],
       "imageUrl": "/img/ext/3a727a953eca.webp"
     },
     {
       "id": "harbin-6",
       "name": "秋林食品",
-      "nameEn": "Qiulin Food",
-      "type": "local",
-      "cuisine": "Harbin",
+      "nameEn": "秋林食品",
+      "type": "ローカル",
+      "cuisine": "ハルビン料理",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "Central Avenue",
+      "address": "中央大街",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "hours": "09:00-21:00",
-      "description": "Famous for Russian-style sausages and local specialties.",
+      "description": "ロシア風ソーセージと地元スペシャリティーで有名。",
       "dishHighlights": [
-        "Harbin sausage",
-        "Russian bread",
-        "Candy"
+        "ハルビンソーセージ",
+        "ロシアンブレッド",
+        "キャンディ"
       ],
       "tags": [
-        "local",
-        "russian-style",
-        "sausage",
-        "souvenir"
+        "ローカル",
+        "ロシア風",
+        "ソーセージ",
+        "お土産"
       ],
       "imageUrl": "/img/ext/d36b540ddb5c.webp",
       "phone": "+86 045 1 5842 5063"
@@ -1706,58 +1706,58 @@
     {
       "id": "harbin-7",
       "name": "波特翡美食",
-      "nameEn": "Bote Por Food",
-      "type": "fine",
-      "cuisine": "Russian",
+      "nameEn": "博泰ポー食品",
+      "type": "本格的",
+      "cuisine": "ロシア料理",
       "avgPrice": 200,
       "rating": 4.7,
-      "address": "Modern Hotel, Central Avenue",
+      "address": "マダレンホテル、中央通り",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "phone": "+86 451 8488 4000",
       "hours": "11:30-14:00, 17:30-21:00",
-      "description": "Upscale Russian restaurant in historic hotel with elegant dining.",
+      "description": "歴史的なホテルにある優雅な食事の高級ロシア料理店",
       "dishHighlights": [
-        "Caviar",
-        "Grilled meat",
-        "Russian specialties"
+        "キャビア",
+        "焼き肉",
+        "ロシア料理"
       ],
       "tags": [
-        "fine-dining",
-        "russian",
-        "luxury",
-        "special-occasion"
+        "高級レストラン",
+        "ロシア",
+        "奢侈",
+        "特別な機会"
       ],
       "imageUrl": "/img/ext/af609ebb61a7.webp"
     },
     {
       "id": "harbin-8",
-      "name": "师大夜市",
-      "nameEn": "Shida Night Market",
-      "type": "local",
-      "cuisine": "Various",
+      "name": "師大夜市",
+      "nameEn": "師大夜市",
+      "type": "ローカル",
+      "cuisine": "多種多様",
       "avgPrice": 30,
       "rating": 4.4,
-      "address": "Near Harbin Normal University",
+      "address": "ハルビン師範大学近く",
       "coordinates": {
         "lat": 45.7622,
         "lng": 126.6222
       },
       "hours": "17:00-23:00",
-      "description": "Popular student night market with variety of street food.",
+      "description": "学生に人気の夜市場で、屋台料理の種類が豊富です",
       "dishHighlights": [
-        "Grilled skewers",
-        "Fried rice",
-        "Hot pot",
-        "Desserts"
+        "焼き串",
+        "チャーハン",
+        "火鍋",
+        "デザート"
       ],
       "tags": [
-        "local",
-        "night-market",
-        "street-food",
-        "budget"
+        "地元の",
+        "夜市",
+        "屋台料理",
+        "予算重視"
       ],
       "imageUrl": "/img/ext/6636e42ed315.webp",
       "phone": "+86 045 1 3175 9788"
@@ -1765,86 +1765,86 @@
     {
       "id": "harbin-9",
       "name": "杀猪菜",
-      "nameEn": "Slaughter Pig Dishes",
-      "type": "local",
-      "cuisine": "Northeast",
+      "nameEn": "猪肉料理",
+      "type": "ローカル",
+      "cuisine": "東北地方",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Daowai District",
+      "address": "道外区",
       "coordinates": {
         "lat": 45.7922,
         "lng": 126.6422
       },
       "hours": "10:00-22:00",
-      "description": "Traditional Northeast dishes, especially pork-based comfort food.",
+      "description": "伝統的な東北地方の料理で、特に豚肉の家庭料理。",
       "dishHighlights": [
-        "Blood sausage",
-        "Pork stomach",
-        "Pickled vegetables"
+        "ブラッドソーセージ",
+        "豚の胃",
+        "漬物"
       ],
       "tags": [
-        "local",
-        "northeast-cuisine",
-        "traditional",
-        "comfort-food"
+        "地元",
+        "東北料理",
+        "伝統的",
+        "家庭料理"
       ],
       "imageUrl": "/img/ext/3ba69556c2b5.webp",
       "phone": "+86 045 1 4986 0530"
     },
     {
       "id": "harbin-10",
-      "name": "锅烙记",
-      "nameEn": "Guo Luo Ji",
-      "type": "local",
-      "cuisine": "Harbin",
+      "name": "鍋烙記（グオラオジー）",
+      "nameEn": "郭洛基",
+      "type": "ローカル",
+      "cuisine": "ハルビン料理",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Multiple locations",
+      "address": "複数箇所",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "hours": "10:00-22:00",
-      "description": "Popular for pan-fried dumplings and local specialties.",
+      "description": "の水餃子と地元料理で人気があります。",
       "dishHighlights": [
-        "Pan-fried dumplings",
-        "Steamed dumplings",
-        "Soups"
+        "煎餃子",
+        "蒸し餃子",
+        "汁物"
       ],
       "tags": [
-        "local",
-        "dumplings",
-        "pan-fried",
-        "popular"
+        "地元",
+        "餃子",
+        "煎り焼き",
+        "人気"
       ],
       "imageUrl": "/img/ext/87aaf73e086e.webp",
       "phone": "+86 045 1 7541 5608"
     },
     {
       "id": "harbin-11",
-      "name": "红烧肉",
-      "nameEn": "Braised Pork Belly",
-      "type": "local",
-      "cuisine": "Northeast",
+      "name": "紅焼肉（豚の角煮）",
+      "nameEn": "豚バラ肉の煮込み",
+      "type": "ローカル",
+      "cuisine": "東北",
       "avgPrice": 70,
       "rating": 4.4,
-      "address": "Daowai District",
+      "address": "道外区",
       "coordinates": {
         "lat": 45.7922,
         "lng": 126.6422
       },
       "hours": "10:00-22:00",
-      "description": "Home-style restaurant famous for rich braised pork dishes.",
+      "description": "濃厚な豚肉の煮込み料理で知られる家庭的なレストラン",
       "dishHighlights": [
-        "Braised pork belly",
-        "Steamed ribs",
-        "Vegetables"
+        "豚バラ肉の煮込み",
+        "蒸した骨付き肉",
+        "野菜"
       ],
       "tags": [
-        "local",
-        "home-style",
-        "northeast",
-        "value"
+        "地元",
+        "家庭風",
+        "東北",
+        "コストパフォーマンス"
       ],
       "imageUrl": "/img/ext/4e0fc7f1315b.webp",
       "phone": "+86 045 1 8208 9277"
@@ -1852,28 +1852,28 @@
     {
       "id": "harbin-12",
       "name": "俄罗斯美食",
-      "nameEn": "Russian Food Court",
-      "type": "local",
-      "cuisine": "Russian",
+      "nameEn": "ロシアフードコート",
+      "type": "ローカル",
+      "cuisine": "ロシア料理",
       "avgPrice": 80,
       "rating": 4.3,
-      "address": "Central Avenue area",
+      "address": "中央大道エリア",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "hours": "10:00-22:00",
-      "description": "Various Russian restaurants and food stalls in tourist area.",
+      "description": "観光エリアにあるさまざまなロシア料理店と屋台",
       "dishHighlights": [
-        "Pelmeni",
-        "Borscht",
-        "Russian sausage"
+        "ペリメニ",
+        "ボルシチ",
+        "ロシアンソーセージ"
       ],
       "tags": [
-        "local",
-        "russian",
-        "tourist-area",
-        "variety"
+        "地元",
+        "ロシア",
+        "観光地",
+        " متنوعة"
       ],
       "imageUrl": "/img/ext/a675fec7afb2.webp",
       "phone": "+86 045 1 8921 2702"
@@ -1881,86 +1881,86 @@
     {
       "id": "harbin-13",
       "name": "小混沌",
-      "nameEn": "Small Wonton Shop",
-      "type": "local",
-      "cuisine": "Snacks",
+      "nameEn": "小さなワンタン店",
+      "type": "ローカル",
+      "cuisine": "軽食",
       "avgPrice": 20,
       "rating": 4.4,
-      "address": "Near Central Avenue",
+      "address": "中央大通り付近",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "hours": "07:00-19:00",
-      "description": "Local favorite for quick wontons and noodle soup.",
+      "description": "地元で人気のクイックワンタンとラーメン",
       "dishHighlights": [
-        "Wontons",
-        "Noodle soup",
-        "Dumplings"
+        "ワンタン",
+        "ラーメン",
+        "餃子"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "quick",
-        "budget"
+        "地元",
+        "朝食",
+        "クイック",
+        "格安"
       ],
       "imageUrl": "/img/ext/75cc963484f4.webp",
       "phone": "+86 045 1 9706 9930"
     },
     {
       "id": "harbin-14",
-      "name": "老鸡汤馆",
-      "nameEn": "Old Chicken Soup House",
-      "type": "local",
-      "cuisine": "Northeast",
+      "name": "老鶏湯館",
+      "nameEn": "老鶏汁の家",
+      "type": "ローカル",
+      "cuisine": "東北料理",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Daoli District",
+      "address": "道理区",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "hours": "10:00-22:00",
-      "description": "Famous for rich chicken soup and traditional dishes.",
+      "description": "濃厚な鶏汁と伝統的な料理で有名",
       "dishHighlights": [
-        "Chicken soup",
-        "Steamed chicken",
-        "Vegetables"
+        "鶏汁",
+        "蒸し鶏",
+        "野菜"
       ],
       "tags": [
-        "local",
-        "soup",
-        "traditional",
-        "healthy"
+        "地元",
+        "スープ",
+        "伝統的",
+        "健康"
       ],
       "imageUrl": "/img/ext/e15a569e6a5e.webp",
       "phone": "+86 045 1 8373 5192"
     },
     {
       "id": "harbin-15",
-      "name": "铁锅炖",
-      "nameEn": "Iron Pot Stew",
-      "type": "local",
-      "cuisine": "Northeast",
+      "name": "鉄鍋炖",
+      "nameEn": "鉄鍋煮込み",
+      "type": "ローカル",
+      "cuisine": "東北料理",
       "avgPrice": 100,
       "rating": 4.6,
-      "address": "Multiple locations",
+      "address": "複数店舗",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "hours": "10:00-22:00",
-      "description": "Traditional Northeastern stew cooked in iron pot over open flame.",
+      "description": "直火で鉄鍋で調理される伝統的な東北地方の煮込み料理",
       "dishHighlights": [
-        "Pork stew",
-        "Chicken stew",
-        "Vegetables"
+        "豚肉のシチュー",
+        "鶏肉のシチュー",
+        "野菜"
       ],
       "tags": [
-        "local",
-        "northeast",
-        " communal-dining",
-        "winter"
+        "ローカル",
+        "東北",
+        "共同食事",
+        "冬"
       ],
       "imageUrl": "/img/ext/e32c7648562e.webp",
       "phone": "+86 045 1 6460 3499"
@@ -1968,232 +1968,232 @@
     {
       "id": "harbin-16",
       "name": "毛毛春饼",
-      "nameEn": "Mao Mao Spring Pancakes",
-      "type": "local",
-      "cuisine": "Harbin",
+      "nameEn": "マオマオ・春のパンケーキ",
+      "type": "ローカル",
+      "cuisine": "ハルビン料理",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "Multiple locations",
+      "address": "市内複数箇所",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "hours": "10:00-22:00",
-      "description": "Popular chain for spring pancakes with various fillings.",
+      "description": "春巻きにさまざまな具材を入れた人気のチェーン店です。",
       "dishHighlights": [
-        "Spring pancakes",
+        "春餅",
         "京酱肉丝",
-        "Vegetables"
+        "野菜"
       ],
       "tags": [
-        "local",
-        "chain",
-        "spring-pancakes",
-        "value"
+        "ローカル",
+        "チェーン店",
+        "春餅",
+        "コストパフォーマンス"
       ],
       "imageUrl": "/img/ext/42e1ca3816c1.webp",
       "phone": "+86 045 1 9942 3962"
     },
     {
       "id": "harbin-17",
-      "name": "火锅季",
-      "nameEn": "Hotpot Season",
-      "type": "chain",
-      "cuisine": "Hotpot",
+      "name": "火鍋シーズン",
+      "nameEn": "火鍋シーズン",
+      "type": "チェーン店",
+      "cuisine": "火鍋",
       "avgPrice": 120,
       "rating": 4.5,
-      "address": "Multiple locations",
+      "address": "市内複数箇所",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "phone": "+86 451 8881 6666",
       "hours": "10:30-23:00",
-      "description": "Popular hotpot chain with quality meat and fresh vegetables.",
+      "description": "高品質の肉と新鮮な野菜が人気の火鍋チェーン店。",
       "dishHighlights": [
-        "Lamb hotpot",
-        "Beef slices",
-        "Vegetables"
+        "ラムの火鍋",
+        "牛肉スライス",
+        "野菜"
       ],
       "tags": [
-        "chain",
-        "hotpot",
-        "quality",
-        "popular"
+        "チェーン店",
+        "火鍋",
+        "品質",
+        "人気"
       ],
       "imageUrl": "/img/ext/1beaa4ec0924.webp"
     },
     {
       "id": "harbin-18",
       "name": "老独一坊",
-      "nameEn": "Lao Du Yi Fang",
-      "type": "fine",
-      "cuisine": "Harbin",
+      "nameEn": "老都一味",
+      "type": "本格的",
+      "cuisine": "ハルビン料理",
       "avgPrice": 200,
       "rating": 4.7,
-      "address": "20 Songpu Street, Daoli District",
+      "address": "松浦街20番地、道里区",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "phone": "+86 451 8464 0000",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "High-end restaurant serving refined Harbin cuisine.",
+      "description": "高級レストランで、洗練されたハルビン料理を提供しています。",
       "dishHighlights": [
-        "Refined local dishes",
-        "Premium seafood",
-        "Traditional recipes"
+        "洗練された地元の料理",
+        "プレミアムシーフード",
+        "伝統レシピ"
       ],
       "tags": [
-        "fine-dining",
-        "harbin-cuisine",
-        "luxury",
-        "special-occasion"
+        "高級レストラン",
+        "ハルビン料理",
+        "奢侈",
+        "特別な機会"
       ],
       "imageUrl": "/img/ext/eb81b8ba1718.webp"
     },
     {
       "id": "harbin-19",
       "name": "粘豆包",
-      "nameEn": "Glutinous Rice Dumplings",
-      "type": "local",
-      "cuisine": "Northeast Snacks",
+      "nameEn": "餅粽子",
+      "type": "ローカル",
+      "cuisine": "東北スナック",
       "avgPrice": 25,
       "rating": 4.4,
-      "address": "Daowai District",
+      "address": "道外区",
       "coordinates": {
         "lat": 45.7922,
         "lng": 126.6422
       },
       "hours": "08:00-18:00",
-      "description": "Traditional Northeast glutinous rice dumplings with sweet fillings.",
+      "description": "伝統的な東北の甘い餡入りのもち米団子。",
       "dishHighlights": [
-        "Red bean dumplings",
-        "Sweet rice cakes",
-        "Nuts"
+        "小豆ダンプリング",
+        "甘いお餅",
+        "ナッツ"
       ],
       "tags": [
-        "local",
-        "dessert",
-        "traditional",
-        "snacks"
+        "ローカル",
+        "デザート",
+        "伝統的",
+        "軽食"
       ],
       "imageUrl": "/img/ext/b122aa558dc1.webp",
       "phone": "+86 045 1 8700 2831"
     },
     {
       "id": "harbin-20",
-      "name": "冰雕馆餐厅",
-      "nameEn": "Ice Sculpture Restaurant",
-      "type": "local",
-      "cuisine": "Various",
+      "name": "氷彫館レストラン",
+      "nameEn": "アイス・スカルプチャー・レストラン",
+      "type": "ローカル",
+      "cuisine": "多種多様",
       "avgPrice": 150,
       "rating": 4.3,
-      "address": "Ice and Snow World area",
+      "address": "アイス＆スノー・ワールド地区",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.5422
       },
       "hours": "10:00-21:00",
-      "description": "Restaurant near ice festival with warm dining inside ice-themed decor.",
+      "description": "氷祭りの近くにあるレストランで、氷をテーマにした内装の中で温かい食事を楽しむことができます。",
       "dishHighlights": [
-        "Hot dishes",
-        "Northeast cuisine",
-        "Warm atmosphere"
+        "熱い料理",
+        "東北料理",
+        "温かい雰囲気"
       ],
       "tags": [
-        "local",
-        "tourist-area",
-        "convenient",
-        "ice-festival"
+        "ローカル",
+        "観光地",
+        "便利",
+        "氷祭り"
       ],
       "imageUrl": "/img/ext/d48e7dcd448f.webp",
       "phone": "+86 045 1 1873 1286"
     },
     {
       "id": "harbin-21",
-      "name": "哈尔滨啤酒屋",
-      "nameEn": "Harbin Beer House",
-      "type": "local",
-      "cuisine": "Northeast",
+      "name": "ハルビンビールハウス",
+      "nameEn": "哈爾濱ビールハウス",
+      "type": "ローカル",
+      "cuisine": "東北料理",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "Central Avenue area",
+      "address": "中央大道エリア",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "hours": "17:00-02:00",
-      "description": "Beer hall serving Harbin beer with traditional dishes.",
+      "description": "伝統料理を提供する哈爾濱ビールを提供するビールホール",
       "dishHighlights": [
-        "Harbin beer",
-        "Grilled meats",
-        "Sausages"
+        "ハルビン・ビール",
+        "焼き肉",
+        "ソーセージ"
       ],
       "tags": [
-        "local",
-        "beer",
-        "nightlife",
-        "traditional"
+        "ローカル",
+        "ビール",
+        "ナイトライフ",
+        "伝統的"
       ],
       "imageUrl": "/img/ext/d05017876aca.webp",
       "phone": "+86 045 1 2972 9742"
     },
     {
       "id": "harbin-22",
-      "name": "冻果铺",
-      "nameEn": "Frozen Fruit Shop",
-      "type": "local",
-      "cuisine": "Dessert",
+      "name": "冷凍果物店",
+      "nameEn": "凍フルーツショップ",
+      "type": "ローカル",
+      "cuisine": "デザート",
       "avgPrice": 30,
       "rating": 4.3,
-      "address": "Winter markets",
+      "address": "冬の市場",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
-      "hours": "10:00-22:00 (winter)",
-      "description": "Winter specialty - frozen fruits like hawthorn and pear on sticks.",
+      "hours": "10:00-22:00（冬季）",
+      "description": "冬限定−やまなしや梨などの冷凍果物を串に刺したもの",
       "dishHighlights": [
-        "Frozen hawthorn",
-        "Frozen pear",
-        "Frozen grapes"
+        "凍ったサンザシ",
+        "凍梨",
+        "冷凍ぶどう"
       ],
       "tags": [
-        "local",
-        "winter-specialty",
-        "dessert",
-        "unique"
+        "ローカル",
+        "冬の特産品",
+        "デザート",
+        "独特"
       ],
       "imageUrl": "/img/ext/6a7d5eb76c1d.webp",
       "phone": "+86 045 1 5465 2945"
     },
     {
       "id": "harbin-23",
-      "name": "得莫利炖鱼",
-      "nameEn": "De Moli Fish Stew",
-      "type": "local",
-      "cuisine": "Northeast",
+      "name": "得莫利炖魚",
+      "nameEn": "デ・モリ・フィッシュ・シチュー",
+      "type": "ローカル",
+      "cuisine": "東北料理",
       "avgPrice": 120,
       "rating": 4.6,
-      "address": "Highway 绥满线",
+      "address": "绥満線",
       "coordinates": {
         "lat": 45.7522,
         "lng": 126.5822
       },
       "hours": "10:00-22:00",
-      "description": "Famous for fish stew from De Moli village, a Harbin specialty.",
+      "description": "デモリ村の魚煮込みで有名、哈爾濱の名物",
       "dishHighlights": [
-        "Fish stew",
-        "Freshwater fish",
-        "Tofu",
-        "Noodles"
+        "魚のシチュー",
+        "淡水魚",
+        "豆腐",
+        "ラーメン"
       ],
       "tags": [
-        "local",
-        "famous",
-        "fish",
-        "roadside"
+        "ローカル",
+        "有名",
+        "魚",
+        "道路沿い"
       ],
       "imageUrl": "/img/ext/e7792c64a6e8.webp",
       "phone": "+86 045 1 9244 9930"
@@ -2201,665 +2201,665 @@
     {
       "id": "harbin-24",
       "name": "酱骨坊",
-      "nameEn": "Sauce Bone House",
-      "type": "local",
-      "cuisine": "Northeast",
+      "nameEn": "ソースボーンカーボン",
+      "type": "ローカル",
+      "cuisine": "東北料理",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Multiple locations",
+      "address": "市内複数箇所",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "hours": "10:00-22:00",
-      "description": "Popular for braised pork ribs in rich sauce.",
+      "description": "濃厚なソースで煮込んだ豚のスペアリブで有名です。",
       "dishHighlights": [
-        "Braised pork ribs",
-        "Pork knuckle",
-        "Vegetables"
+        "豚スペアリブ煮込み",
+        "豚足",
+        "野菜"
       ],
       "tags": [
-        "local",
-        "northeast",
-        "meat",
-        "value"
+        "ローカル",
+        "東北",
+        "肉",
+        "コストパフォーマンス"
       ],
       "imageUrl": "/img/ext/b6024f72f78a.webp",
       "phone": "+86 045 1 3584 9594"
     },
     {
       "id": "harbin-25",
-      "name": "哈尔滨饺子馆",
-      "nameEn": "Harbin Dumpling House",
-      "type": "local",
-      "cuisine": "Dumplings",
+      "name": "ハルビン餃子館",
+      "nameEn": "ハルビン餃子ハウス",
+      "type": "ローカル",
+      "cuisine": "餃子",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "Daoli District",
+      "address": "道理区",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "hours": "10:00-22:00",
-      "description": "Local favorite for handmade dumplings with unique fillings.",
+      "description": "地元で人気の、手作りの餃子を提供するお店で、ユニークな具材が特徴です。",
       "dishHighlights": [
-        "Lamb dumplings",
-        "Cabbage dumplings",
-        "Mixed vegetable"
+        "ラム肉の水餃子",
+        "白菜餃子",
+        "野菜炒め"
       ],
       "tags": [
-        "local",
-        "dumplings",
-        "handmade",
-        "popular"
+        "地元",
+        "餃子",
+        "手作り",
+        "人気"
       ],
       "imageUrl": "/img/ext/1853af49fc4f.webp",
       "phone": "+86 045 1 6215 3346"
     },
     {
       "id": "harbin-26",
-      "name": "街边马迭尔冰棍",
-      "nameEn": "街边马迭尔冰棍 (马迭尔冰棍)",
-      "type": "local",
-      "cuisine": "马迭尔冰棍",
+      "name": "街角のマディエルアイスバー",
+      "nameEn": "街角のマディエルアイスバー（マディエルアイスバー）",
+      "type": "ローカル",
+      "cuisine": "マデルアイスキャンディー",
       "avgPrice": 115,
       "rating": 4.3,
-      "address": "哈尔滨市新城区美食街24号",
+      "address": "ハルビン市新城区美食街24号",
       "coordinates": {
         "lat": 45.8535,
         "lng": 126.5334
       },
       "phone": "+86 0451 10637355",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "哈尔滨本地人推荐的马迭尔冰棍店，味道正宗，价格实惠",
+      "description": "ハルビン現地人がおすすめするマデルアイスキャンディー店。味は本格的で、価格も手頃。",
       "dishHighlights": [
-        "铁锅炖",
-        "红肠",
-        "东北饺子"
+        "鉄鍋炖",
+        "紅腸（ハルビン風燻製ソーセージ）",
+        "東北餃子"
       ],
       "tags": [
-        "隐藏美食",
-        "老字号",
-        "性价比高"
+        "隠れた名店",
+        "老舗",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/74cb9dbc79e8.webp"
     },
     {
       "id": "harbin-28",
-      "name": "老字号铁锅炖",
-      "nameEn": "老字号铁锅炖 (铁锅炖)",
-      "type": "local",
-      "cuisine": "铁锅炖",
+      "name": "老舗鉄鍋炖",
+      "nameEn": "老舗鉄鍋炖（鉄鍋炖）",
+      "type": "ローカル",
+      "cuisine": "鉄鍋炖",
       "avgPrice": 64,
       "rating": 4.7,
-      "address": "哈尔滨市市中心区美食街180号",
+      "address": "ハルビン市市中心区美食街180号",
       "coordinates": {
         "lat": 45.8287,
         "lng": 126.5496
       },
       "phone": "+86 0451 54729944",
       "hours": "06:00-14:00",
-      "description": "哈尔滨本地人推荐的铁锅炖店，味道正宗，价格实惠",
+      "description": "ハルビン現地人おすすめの鉄鍋炖店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "锅包肉",
-        "东北饺子",
-        "铁锅炖"
+        "鍋包肉（豚肉の甘酢炒め）",
+        "東北餃子",
+        "鉄鍋炖"
       ],
       "tags": [
-        "性价比高",
-        "家常菜",
-        "隐藏美食"
+        "コスパ最高",
+        "家庭料理",
+        "隠れた名店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/2b8b871b136e.webp"
     },
     {
       "id": "harbin-30",
-      "name": "巷子东北饺子",
-      "nameEn": "巷子东北饺子 (东北饺子)",
-      "type": "local",
-      "cuisine": "东北饺子",
+      "name": "路地裏東北餃子",
+      "nameEn": "路地裏東北餃子（東北餃子）",
+      "type": "ローカル",
+      "cuisine": "東北餃子",
       "avgPrice": 65,
       "rating": 4.4,
-      "address": "哈尔滨市市中心区美食街115号",
+      "address": "ハルビン市市中心区美食街115号",
       "coordinates": {
         "lat": 45.7553,
         "lng": 126.582
       },
       "phone": "+86 0451 44087800",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "哈尔滨本地人推荐的东北饺子店，味道正宗，价格实惠",
+      "description": "ハルビン現地人おすすめの東北餃子店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "锅包肉",
-        "红肠",
-        "东北饺子"
+        "鍋包肉（豚肉の甘酢炒め）",
+        "紅腸（ハルビン風燻製ソーセージ）",
+        "東北餃子"
       ],
       "tags": [
-        "隐藏美食",
-        "社区老店",
-        "老字号"
+        "隠れた名店",
+        "地元の老舗",
+        "老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/4bd6407dba00.webp"
     },
     {
       "id": "harbin-32",
-      "name": "传统锅包肉",
-      "nameEn": "传统锅包肉 (锅包肉)",
-      "type": "local",
-      "cuisine": "锅包肉",
+      "name": "伝統の鍋包肉",
+      "nameEn": "伝統の鍋包肉（鍋包肉）",
+      "type": "ローカル",
+      "cuisine": "鍋包肉（豚肉の甘酢炒め）",
       "avgPrice": 103,
       "rating": 4.3,
-      "address": "哈尔滨市市中心区美食街15号",
+      "address": "ハルビン市市中心区美食街15号",
       "coordinates": {
         "lat": 45.8077,
         "lng": 126.5766
       },
       "phone": "+86 0451 98575128",
       "hours": "06:00-14:00",
-      "description": "哈尔滨本地人推荐的锅包肉店，味道正宗，价格实惠",
+      "description": "ハルビン現地人おすすめの鍋包肉店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "铁锅炖",
-        "马迭尔冰棍",
-        "红肠"
+        "鉄鍋炖",
+        "マデルアイスキャンディー",
+        "紅腸（ハルビン風燻製ソーセージ）"
       ],
       "tags": [
-        "老字号",
-        "隐藏美食",
-        "本地人爱去"
+        "老舗",
+        "隠れた名店",
+        "地元の人に人気"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/74d051a46bb2.webp"
     },
     {
       "id": "harbin-34",
-      "name": "老字号锅包肉",
-      "nameEn": "老字号锅包肉 (锅包肉)",
-      "type": "local",
-      "cuisine": "锅包肉",
+      "name": "老舗鍋包肉",
+      "nameEn": "老舗の鍋包肉（豚肉の甘酢あんかけ）",
+      "type": "ローカル",
+      "cuisine": "鍋包肉（豚肉の甘酢炒め）",
       "avgPrice": 78,
       "rating": 4.9,
-      "address": "哈尔滨市市中心区美食街62号",
+      "address": "ハルビン市市中心区美食街62号",
       "coordinates": {
         "lat": 45.7629,
         "lng": 126.5029
       },
       "phone": "+86 0451 82805709",
       "hours": "10:00-22:00",
-      "description": "哈尔滨本地人推荐的锅包肉店，味道正宗，价格实惠",
+      "description": "ハルビン現地人おすすめの鍋包肉店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "铁锅炖",
-        "锅包肉",
-        "红肠"
+        "鉄鍋炖",
+        "鍋包肉（豚肉の甘酢炒め）",
+        "紅腸（ハルビン風燻製ソーセージ）"
       ],
       "tags": [
-        "老字号",
-        "家常菜",
-        "隐藏美食"
+        "老舗",
+        "家庭料理",
+        "隠れた名店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/abe41a7612d1.webp"
     },
     {
       "id": "harbin-36",
-      "name": "巷子铁锅炖",
-      "nameEn": "巷子铁锅炖 (铁锅炖)",
-      "type": "street",
-      "cuisine": "铁锅炖",
+      "name": "路地の鉄鍋炖",
+      "nameEn": "路地の鉄鍋炖（鉄鍋炖）",
+      "type": "ストリート",
+      "cuisine": "鉄鍋炖",
       "avgPrice": 19,
       "rating": 4.9,
-      "address": "哈尔滨市新城区美食街111号",
+      "address": "ハルビン市新城区美食街111号",
       "coordinates": {
         "lat": 45.7673,
         "lng": 126.537
       },
       "phone": "+86 0451 85222669",
       "hours": "17:00-02:00",
-      "description": "哈尔滨本地人推荐的铁锅炖店，味道正宗，价格实惠",
+      "description": "ハルビン現地人おすすめの鉄鍋炖店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "红肠",
-        "东北饺子",
-        "锅包肉"
+        "紅腸（ハルビン風燻製ソーセージ）",
+        "東北餃子",
+        "鍋包肉（豚肉の甘酢炒め）"
       ],
       "tags": [
         "夜市",
-        "深夜美食",
-        "路边摊"
+        "深夜グルメ",
+        "屋台"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/a547378e7a1f.webp"
     },
     {
       "id": "harbin-38",
-      "name": "老哈尔滨铁锅炖",
-      "nameEn": "老哈尔滨铁锅炖 (铁锅炖)",
-      "type": "local",
-      "cuisine": "铁锅炖",
+      "name": "老ハルビン鉄鍋炖",
+      "nameEn": "老ハルビン鉄鍋炖（鉄鍋炖）",
+      "type": "ローカル",
+      "cuisine": "鉄鍋炖",
       "avgPrice": 130,
       "rating": 4.1,
-      "address": "哈尔滨市老城区美食街132号",
+      "address": "ハルビン市老城区美食街132号",
       "coordinates": {
         "lat": 45.7648,
         "lng": 126.5598
       },
       "phone": "+86 0451 54162364",
       "hours": "06:00-14:00",
-      "description": "哈尔滨本地人推荐的铁锅炖店，味道正宗，价格实惠",
+      "description": "ハルビン現地人おすすめの鉄鍋炖店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "马迭尔冰棍",
-        "东北饺子",
-        "红肠"
+        "マデルアイスキャンディー",
+        "東北餃子",
+        "紅腸（ハルビン風燻製ソーセージ）"
       ],
       "tags": [
-        "社区老店",
-        "隐藏美食",
-        "老字号"
+        "地元の老舗",
+        "隠れた名店",
+        "老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/cd6dec49b271.webp"
     },
     {
       "id": "harbin-40",
-      "name": "老街马迭尔冰棍",
-      "nameEn": "老街马迭尔冰棍 (马迭尔冰棍)",
-      "type": "local",
-      "cuisine": "马迭尔冰棍",
+      "name": "老街のマデルアイスバー",
+      "nameEn": "老街のマデルアイスバー（マデルアイスバー）",
+      "type": "ローカル",
+      "cuisine": "マデルアイスキャンディー",
       "avgPrice": 33,
       "rating": 4.6,
-      "address": "哈尔滨市市中心区美食街100号",
+      "address": "ハルビン市市中心区美食街100号",
       "coordinates": {
         "lat": 45.7777,
         "lng": 126.498
       },
       "phone": "+86 0451 71097118",
       "hours": "06:00-14:00",
-      "description": "哈尔滨本地人推荐的马迭尔冰棍店，味道正宗，价格实惠",
+      "description": "ハルビン現地人がおすすめするマデルアイスキャンディー店。味は本格的で、価格も手頃。",
       "dishHighlights": [
-        "马迭尔冰棍",
-        "红肠",
-        "东北饺子"
+        "マデルアイスキャンディー",
+        "紅腸（ハルビン風燻製ソーセージ）",
+        "東北餃子"
       ],
       "tags": [
-        "家常菜",
-        "老字号",
-        "社区老店"
+        "家庭料理",
+        "老舗",
+        "地元の老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/85b7233e7284.webp"
     },
     {
       "id": "harbin-42",
-      "name": "传统铁锅炖",
-      "nameEn": "传统铁锅炖 (铁锅炖)",
-      "type": "local",
-      "cuisine": "铁锅炖",
+      "name": "伝統の鉄鍋炖",
+      "nameEn": "伝統の鉄鍋炖（鉄鍋炖）",
+      "type": "ローカル",
+      "cuisine": "鉄鍋炖",
       "avgPrice": 42,
       "rating": 4.7,
-      "address": "哈尔滨市老城区美食街3号",
+      "address": "哈爾浜市旧城区美食街3号",
       "coordinates": {
         "lat": 45.8522,
         "lng": 126.5787
       },
       "phone": "+86 0451 59533585",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "哈尔滨本地人推荐的铁锅炖店，味道正宗，价格实惠",
+      "description": "ハルビン現地人おすすめの鉄鍋炖店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "马迭尔冰棍",
-        "红肠",
-        "铁锅炖"
+        "マデルアイスキャンディー",
+        "紅腸（ハルビン風燻製ソーセージ）",
+        "鉄鍋炖"
       ],
       "tags": [
-        "排队王",
-        "家常菜",
-        "性价比高"
+        "行列のできる店",
+        "家庭料理",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/53af4e964656.webp"
     },
     {
       "id": "harbin-44",
-      "name": "街边锅包肉",
-      "nameEn": "街边锅包肉 (锅包肉)",
-      "type": "local",
-      "cuisine": "锅包肉",
+      "name": "街角の鍋包肉",
+      "nameEn": "街角の鍋包肉（豚肉の甘酢あんかけ）",
+      "type": "ローカル",
+      "cuisine": "鍋包肉（豚肉の甘酢炒め）",
       "avgPrice": 63,
       "rating": 4.7,
-      "address": "哈尔滨市新城区美食街121号",
+      "address": "哈爾浜市新城区美食街121号",
       "coordinates": {
         "lat": 45.7617,
         "lng": 126.5548
       },
       "phone": "+86 0451 66938039",
       "hours": "06:00-14:00",
-      "description": "哈尔滨本地人推荐的锅包肉店，味道正宗，价格实惠",
+      "description": "ハルビン現地人おすすめの鍋包肉店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "红肠",
-        "马迭尔冰棍",
-        "东北饺子"
+        "紅腸（ハルビン風燻製ソーセージ）",
+        "マデルアイスキャンディー",
+        "東北餃子"
       ],
       "tags": [
-        "社区老店",
-        "性价比高",
-        "本地人爱去"
+        "地元の老舗",
+        "コスパ最高",
+        "地元の人に人気"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/7147c52ceb16.webp"
     },
     {
       "id": "harbin-46",
-      "name": "正宗红肠",
-      "nameEn": "正宗红肠 (红肠)",
-      "type": "local",
-      "cuisine": "红肠",
+      "name": "本格紅腸（ハルビン風ソーセージ）",
+      "nameEn": "本格紅腸（ハルビン風ソーセージ）",
+      "type": "ローカル",
+      "cuisine": "紅腸（ハルビン風燻製ソーセージ）",
       "avgPrice": 119,
       "rating": 4.3,
-      "address": "哈尔滨市市中心区美食街31号",
+      "address": "哈爾浜市中心区美食街31号",
       "coordinates": {
         "lat": 45.8018,
         "lng": 126.5723
       },
       "phone": "+86 0451 45629768",
       "hours": "06:00-14:00",
-      "description": "哈尔滨本地人推荐的红肠店，味道正宗，价格实惠",
+      "description": "ハルビン地元民おすすめの紅腸店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "锅包肉",
-        "东北饺子",
-        "马迭尔冰棍"
+        "鍋包肉（豚肉の甘酢炒め）",
+        "東北餃子",
+        "マデルアイスキャンディー"
       ],
       "tags": [
-        "隐藏美食",
-        "社区老店",
-        "家常菜"
+        "隠れた名店",
+        "地元の老舗",
+        "家庭料理"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/1fb5bcefd1c4.webp"
     },
     {
       "id": "harbin-48",
-      "name": "哈尔滨味铁锅炖",
-      "nameEn": "哈尔滨味铁锅炖 (铁锅炖)",
-      "type": "local",
-      "cuisine": "铁锅炖",
+      "name": "ハルビン風鉄鍋炖（鉄鍋煮込み）",
+      "nameEn": "ハルビン風鉄鍋炖（鉄鍋煮込み）",
+      "type": "ローカル",
+      "cuisine": "鉄鍋炖",
       "avgPrice": 145,
       "rating": 4.8,
-      "address": "哈尔滨市市中心区美食街2号",
+      "address": "哈爾浜市中心区美食街2号",
       "coordinates": {
         "lat": 45.7739,
         "lng": 126.5004
       },
       "phone": "+86 0451 86503425",
       "hours": "10:00-22:00",
-      "description": "哈尔滨本地人推荐的铁锅炖店，味道正宗，价格实惠",
+      "description": "ハルビン現地人おすすめの鉄鍋炖店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "东北饺子",
-        "马迭尔冰棍",
-        "铁锅炖"
+        "東北餃子",
+        "マデルアイスキャンディー",
+        "鉄鍋炖"
       ],
       "tags": [
-        "老字号",
-        "本地人爱去",
-        "隐藏美食"
+        "老舗",
+        "地元の人に人気",
+        "隠れた名店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/4f471abcbf01.webp"
     },
     {
       "id": "harbin-50",
-      "name": "哈尔滨味锅包肉",
-      "nameEn": "哈尔滨味锅包肉 (锅包肉)",
-      "type": "local",
-      "cuisine": "锅包肉",
+      "name": "ハルビン風鍋包肉（豚肉の甘酢あんかけ）",
+      "nameEn": "ハルビン風鍋包肉（豚肉の甘酢あんかけ）",
+      "type": "ローカル",
+      "cuisine": "鍋包肉（豚肉の甘酢炒め）",
       "avgPrice": 96,
       "rating": 4.1,
-      "address": "哈尔滨市新城区美食街12号",
+      "address": "哈爾浜市新城区美食街12号",
       "coordinates": {
         "lat": 45.7566,
         "lng": 126.548
       },
       "phone": "+86 0451 25591849",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "哈尔滨本地人推荐的锅包肉店，味道正宗，价格实惠",
+      "description": "ハルビン現地人おすすめの鍋包肉店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "红肠",
-        "锅包肉",
-        "马迭尔冰棍"
+        "紅腸（ハルビン風燻製ソーセージ）",
+        "鍋包肉（豚肉の甘酢炒め）",
+        "マデルアイスキャンディー"
       ],
       "tags": [
-        "家常菜",
-        "本地人爱去",
-        "性价比高"
+        "家庭料理",
+        "地元の人に人気",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/363cdc90f0b4.webp"
     },
     {
       "id": "harbin-52",
-      "name": "巷子红肠",
-      "nameEn": "巷子红肠 (红肠)",
-      "type": "local",
-      "cuisine": "红肠",
+      "name": "路地裏の紅腸（ハルビン風ソーセージ）",
+      "nameEn": "路地裏の紅腸（ハルビン風ソーセージ）",
+      "type": "ローカル",
+      "cuisine": "紅腸（ハルビン風燻製ソーセージ）",
       "avgPrice": 147,
       "rating": 4.1,
-      "address": "哈尔滨市市中心区美食街133号",
+      "address": "哈爾浜市中心区美食街133号",
       "coordinates": {
         "lat": 45.8472,
         "lng": 126.4927
       },
       "phone": "+86 0451 43058657",
       "hours": "06:00-14:00",
-      "description": "哈尔滨本地人推荐的红肠店，味道正宗，价格实惠",
+      "description": "ハルビン地元民おすすめの紅腸店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "锅包肉",
-        "马迭尔冰棍",
-        "东北饺子"
+        "鍋包肉（豚肉の甘酢炒め）",
+        "マデルアイスキャンディー",
+        "東北餃子"
       ],
       "tags": [
-        "本地人爱去",
-        "社区老店",
-        "隐藏美食"
+        "地元の人に人気",
+        "地元の老舗",
+        "隠れた名店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/8043c4047a53.webp"
     },
     {
       "id": "harbin-54",
-      "name": "老字号红肠",
-      "nameEn": "老字号红肠 (红肠)",
-      "type": "local",
-      "cuisine": "红肠",
+      "name": "老舗紅腸",
+      "nameEn": "老舗紅腸（紅腸）",
+      "type": "ローカル",
+      "cuisine": "紅腸（ハルビン風燻製ソーセージ）",
       "avgPrice": 38,
       "rating": 4.9,
-      "address": "哈尔滨市新城区美食街102号",
+      "address": "哈爾浜市新城区美食街102号",
       "coordinates": {
         "lat": 45.7614,
         "lng": 126.4959
       },
       "phone": "+86 0451 91011935",
       "hours": "10:00-22:00",
-      "description": "哈尔滨本地人推荐的红肠店，味道正宗，价格实惠",
+      "description": "ハルビン地元民おすすめの紅腸店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "锅包肉",
-        "东北饺子",
-        "马迭尔冰棍"
+        "鍋包肉（豚肉の甘酢炒め）",
+        "東北餃子",
+        "マデルアイスキャンディー"
       ],
       "tags": [
-        "家常菜",
-        "排队王",
-        "老字号"
+        "家庭料理",
+        "行列のできる店",
+        "老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/c1ae00aa931c.webp"
     },
     {
       "id": "harbin-56",
-      "name": "老字号锅包肉",
-      "nameEn": "老字号锅包肉 (锅包肉)",
-      "type": "local",
-      "cuisine": "锅包肉",
+      "name": "老舗鍋包肉",
+      "nameEn": "老舗の鍋包肉（豚肉の甘酢あんかけ）",
+      "type": "ローカル",
+      "cuisine": "鍋包肉（豚肉の甘酢炒め）",
       "avgPrice": 149,
       "rating": 4.5,
-      "address": "哈尔滨市新城区美食街162号",
+      "address": "哈爾浜市新城区美食街162号",
       "coordinates": {
         "lat": 45.7864,
         "lng": 126.512
       },
       "phone": "+86 0451 70953160",
       "hours": "06:00-14:00",
-      "description": "哈尔滨本地人推荐的锅包肉店，味道正宗，价格实惠",
+      "description": "ハルビン現地人おすすめの鍋包肉店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "锅包肉",
-        "东北饺子",
-        "铁锅炖"
+        "鍋包肉（豚肉の甘酢炒め）",
+        "東北餃子",
+        "鉄鍋炖"
       ],
       "tags": [
-        "本地人爱去",
-        "家常菜",
-        "社区老店"
+        "地元の人に人気",
+        "家庭料理",
+        "地元の老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/57bc6657beee.webp"
     },
     {
       "id": "harbin-58",
-      "name": "正宗红肠",
-      "nameEn": "正宗红肠 (红肠)",
-      "type": "local",
-      "cuisine": "红肠",
+      "name": "本格紅腸（ハルビン風ソーセージ）",
+      "nameEn": "本格紅腸（ハルビン風ソーセージ）",
+      "type": "ローカル",
+      "cuisine": "紅腸（ハルビン風燻製ソーセージ）",
       "avgPrice": 101,
       "rating": 4.7,
-      "address": "哈尔滨市新城区美食街117号",
+      "address": "哈爾浜市新城区美食街117号",
       "coordinates": {
         "lat": 45.7845,
         "lng": 126.5631
       },
       "phone": "+86 0451 16735294",
       "hours": "10:00-22:00",
-      "description": "哈尔滨本地人推荐的红肠店，味道正宗，价格实惠",
+      "description": "ハルビン地元民おすすめの紅腸店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "马迭尔冰棍",
-        "东北饺子",
-        "红肠"
+        "マデルアイスキャンディー",
+        "東北餃子",
+        "紅腸（ハルビン風燻製ソーセージ）"
       ],
       "tags": [
-        "隐藏美食",
-        "本地人爱去",
-        "排队王"
+        "隠れた名店",
+        "地元の人に人気",
+        "行列のできる店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ff1d05539a86.webp"
     },
     {
       "id": "harbin-60",
-      "name": "哈尔滨味铁锅炖",
-      "nameEn": "哈尔滨味铁锅炖 (铁锅炖)",
-      "type": "local",
-      "cuisine": "铁锅炖",
+      "name": "ハルビン風鉄鍋炖（鉄鍋煮込み）",
+      "nameEn": "ハルビン風鉄鍋炖（鉄鍋煮込み）",
+      "type": "ローカル",
+      "cuisine": "鉄鍋炖",
       "avgPrice": 95,
       "rating": 4.6,
-      "address": "哈尔滨市新城区美食街191号",
+      "address": "哈爾浜市新城区美食街191号",
       "coordinates": {
         "lat": 45.825,
         "lng": 126.5194
       },
       "phone": "+86 0451 44517759",
       "hours": "10:00-22:00",
-      "description": "哈尔滨本地人推荐的铁锅炖店，味道正宗，价格实惠",
+      "description": "ハルビン現地人おすすめの鉄鍋炖店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "红肠",
-        "马迭尔冰棍",
-        "铁锅炖"
+        "紅腸（ハルビン風燻製ソーセージ）",
+        "マデルアイスキャンディー",
+        "鉄鍋炖"
       ],
       "tags": [
-        "隐藏美食",
-        "性价比高",
-        "本地人爱去"
+        "隠れた名店",
+        "コスパ最高",
+        "地元の人に人気"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ab6cee165f4d.webp"
     },
     {
       "id": "harbin-62",
-      "name": "巷子锅包肉",
-      "nameEn": "巷子锅包肉 (锅包肉)",
-      "type": "local",
-      "cuisine": "锅包肉",
+      "name": "路地の鍋包肉",
+      "nameEn": "路地の鍋包肉（鍋包肉）",
+      "type": "ローカル",
+      "cuisine": "鍋包肉（豚肉の甘酢炒め）",
       "avgPrice": 107,
       "rating": 4.8,
-      "address": "哈尔滨市老城区美食街126号",
+      "address": "哈爾浜市旧城区美食街126号",
       "coordinates": {
         "lat": 45.8155,
         "lng": 126.5847
       },
       "phone": "+86 0451 28786010",
       "hours": "09:00-21:00",
-      "description": "哈尔滨本地人推荐的锅包肉店，味道正宗，价格实惠",
+      "description": "ハルビン現地人おすすめの鍋包肉店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "红肠",
-        "铁锅炖",
-        "东北饺子"
+        "紅腸（ハルビン風燻製ソーセージ）",
+        "鉄鍋炖",
+        "東北餃子"
       ],
       "tags": [
-        "本地人爱去",
-        "隐藏美食",
-        "性价比高"
+        "地元の人に人気",
+        "隠れた名店",
+        "コスパ最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/8bfa7b8d9f73.webp"
     },
     {
       "id": "harbin-64",
-      "name": "巷子锅包肉",
-      "nameEn": "巷子锅包肉 (锅包肉)",
-      "type": "street",
-      "cuisine": "锅包肉",
+      "name": "路地の鍋包肉",
+      "nameEn": "路地の鍋包肉（鍋包肉）",
+      "type": "ストリート",
+      "cuisine": "鍋包肉（豚肉の甘酢炒め）",
       "avgPrice": 25,
       "rating": 4.9,
-      "address": "哈尔滨市新城区美食街67号",
+      "address": "哈爾浜市新城区美食街67号",
       "coordinates": {
         "lat": 45.818,
         "lng": 126.5359
       },
       "phone": "+86 0451 39343701",
       "hours": "10:00-22:00",
-      "description": "哈尔滨本地人推荐的锅包肉店，味道正宗，价格实惠",
+      "description": "ハルビン現地人おすすめの鍋包肉店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "铁锅炖",
-        "马迭尔冰棍",
-        "红肠"
+        "鉄鍋炖",
+        "マデルアイスキャンディー",
+        "紅腸（ハルビン風燻製ソーセージ）"
       ],
       "tags": [
-        "深夜美食",
+        "深夜グルメ",
         "夜市",
-        "网红打卡"
+        "インスタ映えスポット"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/bb8230fbc1f5.webp"
     },
     {
       "id": "harbin-66",
-      "name": "地道马迭尔冰棍",
-      "nameEn": "地道马迭尔冰棍 (马迭尔冰棍)",
-      "type": "street",
-      "cuisine": "马迭尔冰棍",
+      "name": "本場のマディエルアイスバー",
+      "nameEn": "本場のマディエルアイスバー（マディエルアイスバー）",
+      "type": "ストリート",
+      "cuisine": "マデルアイスキャンディー",
       "avgPrice": 23,
       "rating": 4.2,
-      "address": "哈尔滨市老城区美食街160号",
+      "address": "哈爾浜市旧城区美食街160号",
       "coordinates": {
         "lat": 45.7922,
         "lng": 126.4867
       },
       "phone": "+86 0451 44394110",
       "hours": "17:00-02:00",
-      "description": "哈尔滨本地人推荐的马迭尔冰棍店，味道正宗，价格实惠",
+      "description": "ハルビン現地人がおすすめするマデルアイスキャンディー店。味は本格的で、価格も手頃。",
       "dishHighlights": [
-        "马迭尔冰棍",
-        "锅包肉",
-        "红肠"
+        "マデルアイスキャンディー",
+        "鍋包肉（豚肉の甘酢炒め）",
+        "紅腸（ハルビン風燻製ソーセージ）"
       ],
       "tags": [
-        "路边摊",
-        "网红打卡",
+        "屋台",
+        "インスタ映えスポット",
         "夜市"
       ],
       "diamond": 0,
@@ -2867,116 +2867,116 @@
     },
     {
       "id": "harbin-68",
-      "name": "老哈尔滨铁锅炖",
-      "nameEn": "老哈尔滨铁锅炖 (铁锅炖)",
-      "type": "street",
-      "cuisine": "铁锅炖",
+      "name": "老ハルビン鉄鍋炖",
+      "nameEn": "老ハルビン鉄鍋炖（鉄鍋炖）",
+      "type": "ストリート",
+      "cuisine": "鉄鍋炖",
       "avgPrice": 48,
       "rating": 4.5,
-      "address": "哈尔滨市新城区美食街127号",
+      "address": "哈爾浜市新城区美食街127号",
       "coordinates": {
         "lat": 45.7668,
         "lng": 126.5431
       },
       "phone": "+86 0451 33292803",
       "hours": "10:00-22:00",
-      "description": "哈尔滨本地人推荐的铁锅炖店，味道正宗，价格实惠",
+      "description": "ハルビン現地人おすすめの鉄鍋炖店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "马迭尔冰棍",
-        "铁锅炖",
-        "东北饺子"
+        "マデルアイスキャンディー",
+        "鉄鍋炖",
+        "東北餃子"
       ],
       "tags": [
-        "路边摊",
-        "网红打卡",
-        "深夜美食"
+        "屋台",
+        "インスタ映えスポット",
+        "深夜グルメ"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/bb8230fbc1f5.webp"
     },
     {
       "id": "harbin-70",
-      "name": "哈尔滨味铁锅炖",
-      "nameEn": "哈尔滨味铁锅炖 (铁锅炖)",
-      "type": "local",
-      "cuisine": "铁锅炖",
+      "name": "ハルビン風鉄鍋炖（鉄鍋煮込み）",
+      "nameEn": "ハルビン風鉄鍋炖（鉄鍋煮込み）",
+      "type": "ローカル",
+      "cuisine": "鉄鍋炖",
       "avgPrice": 109,
       "rating": 4.7,
-      "address": "哈尔滨市新城区美食街141号",
+      "address": "哈爾浜市新城区美食街141号",
       "coordinates": {
         "lat": 45.8072,
         "lng": 126.5743
       },
       "phone": "+86 0451 21038350",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "哈尔滨本地人推荐的铁锅炖店，味道正宗，价格实惠",
+      "description": "ハルビン現地人おすすめの鉄鍋炖店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "红肠",
-        "马迭尔冰棍",
-        "东北饺子"
+        "紅腸（ハルビン風燻製ソーセージ）",
+        "マデルアイスキャンディー",
+        "東北餃子"
       ],
       "tags": [
-        "本地人爱去",
-        "性价比高",
-        "家常菜"
+        "地元の人に人気",
+        "コスパ最高",
+        "家庭料理"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/abe41a7612d1.webp"
     },
     {
       "id": "harbin-72",
-      "name": "老街东北饺子",
-      "nameEn": "老街东北饺子 (东北饺子)",
-      "type": "local",
-      "cuisine": "东北饺子",
+      "name": "老街の東北餃子",
+      "nameEn": "老街の東北餃子（東北餃子）",
+      "type": "ローカル",
+      "cuisine": "東北餃子",
       "avgPrice": 64,
       "rating": 4.7,
-      "address": "哈尔滨市老城区美食街47号",
+      "address": "哈爾浜市旧城区美食街47号",
       "coordinates": {
         "lat": 45.7617,
         "lng": 126.5585
       },
       "phone": "+86 0451 27841069",
       "hours": "06:00-14:00",
-      "description": "哈尔滨本地人推荐的东北饺子店，味道正宗，价格实惠",
+      "description": "ハルビン現地人おすすめの東北餃子店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "铁锅炖",
-        "红肠",
-        "东北饺子"
+        "鉄鍋炖",
+        "紅腸（ハルビン風燻製ソーセージ）",
+        "東北餃子"
       ],
       "tags": [
-        "社区老店",
-        "隐藏美食",
-        "本地人爱去"
+        "地元の老舗",
+        "隠れた名店",
+        "地元の人に人気"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/fa567ade5072.webp"
     },
     {
       "id": "harbin-74",
-      "name": "正宗锅包肉",
-      "nameEn": "正宗锅包肉 (锅包肉)",
-      "type": "local",
-      "cuisine": "锅包肉",
+      "name": "正宗の鍋包肉",
+      "nameEn": "正宗の鍋包肉（鍋包肉）",
+      "type": "ローカル",
+      "cuisine": "鍋包肉（豚肉の甘酢炒め）",
       "avgPrice": 76,
       "rating": 4.8,
-      "address": "哈尔滨市老城区美食街137号",
+      "address": "哈爾浜市旧城区美食街137号",
       "coordinates": {
         "lat": 45.7549,
         "lng": 126.5717
       },
       "phone": "+86 0451 62563143",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "哈尔滨本地人推荐的锅包肉店，味道正宗，价格实惠",
+      "description": "ハルビン現地人おすすめの鍋包肉店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "东北饺子",
-        "铁锅炖",
-        "锅包肉"
+        "東北餃子",
+        "鉄鍋炖",
+        "鍋包肉（豚肉の甘酢炒め）"
       ],
       "tags": [
-        "家常菜",
-        "本地人爱去",
-        "排队王"
+        "家庭料理",
+        "地元の人に人気",
+        "行列のできる店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/abe41a7612d1.webp"
@@ -2986,572 +2986,582 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major Chinese cities",
-        "to": "Harbin Taiping International Airport (HRB)",
-        "duration": "2-4 hours from major cities",
+        "from": "中国の主要都市",
+        "to": "ハルビン太平国際空港 (HRB)",
+        "duration": "主要都市から2〜4時間",
         "price": "800-2500¥",
-        "frequency": "Daily flights from major cities",
-        "tips": "Airport 40km from city center. Airport bus (20¥) or taxi (150¥) to city."
+        "frequency": "主要都市から毎日運航",
+        "tips": "空港は市内中心部から40km。市内へは空港バス（20元）またはタクシー（150元）。"
       },
       {
         "type": "train",
-        "from": "Beijing (7h), Shanghai (12h), Changchun (1.5h)",
-        "to": "Harbin Railway Station / Harbin West Station",
-        "duration": "1-12 hours",
+        "from": "北京（7時間）、上海（12時間）、長春（1.5時間）",
+        "to": "ハルビン駅 / ハルビン西駅",
+        "duration": "1〜12時間",
         "price": "200-800¥",
-        "frequency": "Multiple trains daily",
-        "tips": "Harbin West for high-speed trains. Both stations have metro connections."
+        "frequency": "1日複数の列車",
+        "tips": "高速鉄道はハルビン西駅。両駅とも地下鉄に接続している。"
       }
     ],
     "local": {
       "metro": [
-        "3 lines operational",
-        "Single ride: 2-5¥",
-        "Line 1, 2 cover most attractions",
-        "Connects stations and airport"
+        "3路線運行中",
+        "1回乗車：2〜5¥",
+        "1号線・2号線で主要観光地のほとんどをカバー",
+        "駅と空港を結ぶ"
       ],
       "bus": [
-        "Extensive network",
-        "Single ride: 2¥",
-        "Tourist areas connected",
-        "Winter heated buses"
+        "広範なネットワーク",
+        "1回の乗車：2¥",
+        "観光エリアに接続",
+        "冬季は暖房バス運行"
       ],
       "taxi": [
-        "Starting fare: 8¥ (first 3km)",
-        "Night surcharge: 10% extra",
-        "Most attractions 20-60¥",
-        "Didi app recommended"
+        "初乗り運賃：8¥（最初の3km）",
+        "夜間追加料金：10%増し",
+        "ほとんどの観光地は20〜60¥",
+        "Didiアプリ推奨"
       ],
       "bike": [
-        "Mobike, Meituan bikes available",
-        "Limited in winter",
-        "Summer cycling popular along river",
-        "Unlock: 1¥ per ride"
+        "Mobike、Meituanの自転車が利用可能",
+        "冬季は本数が限られる",
+        "夏は川沿いのサイクリングが人気",
+        "解錠：1回1¥"
       ]
     }
   },
   "hotels": [
     {
-      "name": "哈尔滨香格里拉大酒店",
+      "name": "哈爾浜香格里拉大酒店",
       "nameEn": "Shangri-La Hotel Harbin",
       "budget": "luxury",
-      "priceRange": "¥1200-2800/night",
-      "address": "555 Youyi Road, Daoli District",
+      "priceRange": "1泊1200〜2800元",
+      "address": "道里区友誼路555号",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6122
       },
       "rating": 4.7,
       "highlights": [
-        "Songhua River views",
-        "Central location",
-        "Luxury facilities",
-        "Russian influence"
+        "松花江の眺め",
+        "中心部に好立地",
+        "高級設備",
+        "ロシアの影響"
       ],
-      "bookingTips": "Best location for Ice Festival. Book river view rooms."
+      "bookingTips": "アイスフェスティバルに最適なロケーション。川側の客室を予約しましょう。"
     },
     {
-      "name": "哈尔滨万达索菲特大酒店",
+      "name": "哈爾浜万达索菲特大酒店",
       "nameEn": "Sofitel Harbin",
       "budget": "luxury",
-      "priceRange": "¥800-1800/night",
-      "address": "68 Ganshui Road, Daoli District",
+      "priceRange": "1泊800〜1800元",
+      "address": "道里区甘水路68号",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6122
       },
       "rating": 4.6,
       "highlights": [
-        "French luxury",
-        "Modern facilities",
-        "Central location",
-        "Good service"
+        "フレンチラグジュアリー",
+        "近代的な設備",
+        "中心部に好立地",
+        "サービス良好"
       ],
-      "bookingTips": "Book during Ice Festival well ahead."
+      "bookingTips": "アイスフェスティバルの期間中は、かなり前もって予約してください。"
     },
     {
-      "name": "马迭尔宾馆",
+      "name": "マジェル賓館",
       "nameEn": "Modern Hotel",
       "budget": "luxury",
-      "priceRange": "¥800-1500/night",
-      "address": "89 Zhongyang Avenue, Daoli District",
+      "priceRange": "1泊800〜1500元",
+      "address": "道里区中央大街89号",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "rating": 4.6,
       "highlights": [
-        "Historic luxury",
-        "Central location",
-        "Famous ice cream",
-        "Russian style"
+        "歴史ある高級感",
+        "中心部に好立地",
+        "有名なアイスクリーム",
+        "ロシア風"
       ],
-      "bookingTips": "Book for historic atmosphere. The location is perfect."
+      "bookingTips": "歴史的な雰囲気を求めて予約しましょう。ロケーションは完璧です。"
     },
     {
-      "name": "哈尔滨华特酒店",
+      "name": "哈爾濱華特酒店",
       "nameEn": "Huat Hotel Harbin",
       "budget": "mid",
-      "priceRange": "¥500-1000/night",
-      "address": "189 Zhongyang Avenue, Daoli District",
+      "priceRange": "1泊500〜1000元",
+      "address": "道里区中央大街189号",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "rating": 4.5,
       "highlights": [
-        "Near Saint Sophia",
-        "Modern rooms",
-        "Central location",
-        "Good value"
+        "聖ソフィア大聖堂付近",
+        "モダンな客室",
+        "中心部に好立地",
+        "コストパフォーマンスが良い"
       ],
-      "bookingTips": "Great location for sightseeing. Book during off-peak."
+      "bookingTips": "観光に最適なロケーション。オフピーク時に予約しましょう。"
     },
     {
-      "name": "哈尔滨中央大酒店",
+      "name": "哈爾濱中央大酒店",
       "nameEn": "Harbin Central Hotel",
       "budget": "mid",
-      "priceRange": "¥400-800/night",
-      "address": "69 Zhongyang Avenue, Daoli District",
+      "priceRange": "1泊400〜800元",
+      "address": "道里区中央大街69号",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "rating": 4.4,
       "highlights": [
-        "Central location",
-        "Comfortable rooms",
-        "Near attractions",
-        "Russian area"
+        "中心部に好立地",
+        "快適な客室",
+        "観光スポットに近い",
+        "ロシア人エリア"
       ],
-      "bookingTips": "Perfect for first-time visitors. Walking distance to sites."
+      "bookingTips": "初めての訪問者に最適。観光スポットへ徒歩圏内。"
     },
     {
-      "name": "如家酒店哈尔滨中央大街店",
+      "name": "如家酒店哈爾濱中央大街店",
       "nameEn": "Home Inn Harbin Central Avenue",
       "budget": "budget",
-      "priceRange": "¥150-350/night",
-      "address": "88 Zhongyang Avenue, Daoli District",
+      "priceRange": "1泊150〜350元",
+      "address": "道里区中央大街88号",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "rating": 4.2,
       "highlights": [
-        "Budget-friendly",
-        "Central location",
-        "Clean rooms",
-        "Metro access"
+        "リーズナブルな価格",
+        "中心部に好立地",
+        "清潔な客室",
+        "地下鉄アクセス"
       ],
-      "bookingTips": "Best budget option in central area."
+      "bookingTips": "中心部で最高の格安宿。"
     },
     {
-      "name": "哈尔滨青年旅舍",
+      "name": "哈爾濱青年旅舍",
       "nameEn": "Harbin Youth Hostel",
       "budget": "budget",
-      "priceRange": "¥80-250/night",
-      "address": "Near Saint Sophia Cathedral",
+      "priceRange": "1泊80〜250元",
+      "address": "聖ソフィア大聖堂付近",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "rating": 4.3,
       "highlights": [
-        "Central location",
-        "Social atmosphere",
-        "Budget-friendly",
-        "Russian area"
+        "中心部に好立地",
+        "社交的な雰囲気",
+        "リーズナブルな価格",
+        "ロシア人エリア"
       ],
-      "bookingTips": "Great for backpackers. Book during off-peak season."
+      "bookingTips": "バックパッカーに最適。オフシーズンに予約しましょう。"
     },
     {
-      "name": "哈尔滨松北香格里拉",
+      "name": "哈爾濱松北香格里拉",
       "nameEn": "Shangri-La Harbin Songbei",
       "budget": "luxury",
-      "priceRange": "¥1400-3000/night",
-      "address": "88 Songbei Street, Songbei District",
+      "priceRange": "1泊1400〜3000元",
+      "address": "松北区松北街88号",
       "coordinates": {
         "lat": 45.8122,
         "lng": 126.5722
       },
       "rating": 4.7,
       "highlights": [
-        "Newer property",
-        "Modern luxury",
-        "River views",
-        "Quiet area"
+        "新しい物件",
+        "モダンな高級感",
+        "川の眺望",
+        "静かなエリア"
       ],
-      "bookingTips": "Best for luxury seekers. Modern facilities."
+      "bookingTips": "高級志向に最適。モダンな設備。"
     },
     {
-      "name": "哈尔滨友谊宫",
+      "name": "ハルビン友誼宮",
       "nameEn": "Harbin Friendship Palace",
       "budget": "mid",
-      "priceRange": "¥450-900/night",
-      "address": "263 Zhongyang Avenue, Daoli District",
+      "priceRange": "1泊450〜900元",
+      "address": "道里区中央大街263号",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "rating": 4.4,
       "highlights": [
-        "Historic building",
-        "Russian style",
-        "Central location",
-        "Good service"
+        "歴史的建造物",
+        "ロシア風",
+        "中心部に好立地",
+        "サービス良好"
       ],
-      "bookingTips": "Experience Soviet-era luxury. Book well ahead."
+      "bookingTips": "ソビエト時代の贅沢を体験。かなり前もって予約しましょう。"
     },
     {
-      "name": "亚朵酒店哈尔滨中央大街",
+      "name": "亜朵酒店哈爾濱中央大街",
       "nameEn": "Atour Hotel Harbin Central Avenue",
       "budget": "mid",
-      "priceRange": "¥350-700/night",
-      "address": "168 Zhongyang Avenue, Daoli District",
+      "priceRange": "1泊350〜700元",
+      "address": "道里区中央大街168号",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "rating": 4.5,
       "highlights": [
-        "Library theme",
-        "Reading area",
-        "Free breakfast",
-        "Comfortable beds"
+        "図書館テーマ",
+        "読書エリア",
+        "朝食無料",
+        "快適なベッド"
       ],
-      "bookingTips": "Popular Chinese boutique chain. Great value."
+      "bookingTips": "人気の中国ブティックチェーン。コストパフォーマンスに優れています。"
     },
     {
-      "name": "哈尔滨欧罗巴西餐厅酒店",
+      "name": "ハルビン欧羅巴西洋料理レストランホテル",
       "nameEn": "Harbin Europa Hotel",
       "budget": "luxury",
-      "priceRange": "¥600-1200/night",
-      "address": "95 Zhongyang Avenue, Daoli District",
+      "priceRange": "1泊600〜1200元",
+      "address": "道里区中央大街95号",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
       "rating": 4.5,
       "highlights": [
-        "European style",
-        "Central location",
-        "Russian architecture",
-        "Fine dining"
+        "ヨーロピアンスタイル",
+        "中心部に好立地",
+        "ロシア建築",
+        "高級レストラン"
       ],
-      "bookingTips": "Feel like Europe. Perfect for romantic trips."
+      "bookingTips": "ヨーロッパ気分を味わえる。ロマンチックな旅行に最適。"
     },
     {
-      "name": "格林豪泰酒店哈尔滨站前店",
+      "name": "格林豪泰酒店哈爾濱駅前店",
       "nameEn": "GreenTree Inn Harbin Station",
       "budget": "budget",
-      "priceRange": "¥120-280/night",
-      "address": "Near Harbin Railway Station",
+      "priceRange": "1泊120〜280元",
+      "address": "ハルビン駅付近",
       "coordinates": {
         "lat": 45.7722,
         "lng": 126.6322
       },
       "rating": 4.2,
       "highlights": [
-        "Near station",
-        "Budget-friendly",
-        "Clean",
-        "Convenient transport"
+        "駅付近",
+        "リーズナブルな価格",
+        "清潔",
+        "交通に便利"
       ],
-      "bookingTips": "Best for transit. Simple but reliable."
+      "bookingTips": "乗り換えに最適。シンプルだが信頼できる。"
     },
     {
-      "name": "哈尔滨冰雪大世界主题酒店",
+      "name": "ハルビン氷雪大世界テーマホテル",
       "nameEn": "Harbin Ice Snow World Theme Hotel",
       "budget": "mid",
-      "priceRange": "¥400-800/night",
-      "address": "Near Ice and Snow World",
+      "priceRange": "1泊400〜800元",
+      "address": "氷雪ワールド付近",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.5422
       },
       "rating": 4.5,
       "highlights": [
-        "Near Ice Festival",
-        "Ice themed",
-        "Modern",
-        "Good service"
+        "氷祭り付近",
+        "アイスをテーマにした",
+        "モダン",
+        "サービス良好"
       ],
-      "bookingTips": "Perfect for Ice Festival visitors. Book early."
+      "bookingTips": "氷祭りの来場者に最適。早めの予約を。"
     },
     {
-      "name": "哈尔滨伏尔加庄园酒店",
+      "name": "哈爾濱伏爾加荘園酒店",
       "nameEn": "Harbin Volga Manor Hotel",
       "budget": "mid",
-      "priceRange": "¥350-700/night",
-      "address": "Near Volga Manor",
+      "priceRange": "1泊350〜700元",
+      "address": "ヴォルガマナーハ付近",
       "coordinates": {
         "lat": 45.8522,
         "lng": 126.5622
       },
       "rating": 4.4,
       "highlights": [
-        "Russian style",
-        "Near manor",
-        "Garden setting",
-        "Cultural experience"
+        "ロシア風",
+        "マナーハ付近",
+        "庭園環境",
+        "文化体験"
       ],
-      "bookingTips": "Great for Russian cultural experience."
+      "bookingTips": "ロシア文化を体験するのに最適。"
     },
     {
-      "name": "哈尔滨太阳岛度假酒店",
+      "name": "ハルビン太陽島リゾートホテル",
       "nameEn": "Harbin Sun Island Resort Hotel",
       "budget": "luxury",
-      "priceRange": "¥800-1500/night",
-      "address": "Sun Island area",
+      "priceRange": "1泊800〜1500元",
+      "address": "太陽島エリア",
       "coordinates": {
         "lat": 45.8022,
         "lng": 126.5822
       },
       "rating": 4.5,
       "highlights": [
-        "Island location",
-        "River views",
-        "Resort facilities",
-        "Quiet area"
+        "島のロケーション",
+        "川の眺望",
+        "リゾート施設",
+        "静かなエリア"
       ],
-      "bookingTips": "Perfect for summer retreats. Book river view rooms."
+      "bookingTips": "夏の避暑に最適。川側の客室を予約しましょう。"
     }
   ],
   "payment": [
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Universal in Harbin",
+      "description": "ハルビンのユニバーサル",
       "howToUse": [
-        "Download app",
-        "Link card"
+        "アプリをダウンロード",
+        "カードを連携"
       ],
       "tips": [
-        "Works at all merchants",
-        "English mode available"
+        "すべての加盟店で利用可能",
+        "英語モード対応"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Accepted everywhere",
+      "description": "どこでも受け入れられる",
       "howToUse": [
-        "WeChat required",
-        "International cards accepted"
+        "WeChatが必要",
+        "国際カード対応"
       ],
       "tips": [
-        "Set to English mode",
-        "Needed for shared bikes"
+        "英語モードに設定",
+        "シェア自転車に必要"
       ]
     },
     {
       "method": "Cash",
       "icon": "cash",
-      "description": "Useful at traditional markets",
+      "description": "伝統的な市場で便利",
       "howToUse": [
-        "ATM everywhere",
-        "Banks common"
+        "ATMはどこにでもある",
+        "銀行は一般的"
       ],
       "tips": [
-        "Keep 200¥ for markets",
-        "Street vendors prefer cash"
+        "市場用に200元を用意してください",
+        "屋台の出店者は現金を好む"
       ]
     }
   ],
   "culturalTips": [
     {
       "category": "winter",
-      "title": "Ice Festival",
-      "content": "Harbin Ice and Snow Festival (December-February) is the world's largest, featuring massive illuminated ice sculptures at Ice and Snow World. Dress extremely warmly.",
+      "title": "氷祭",
+      "content": "ハルビン冰雪祭（12月〜2月）は世界最大級で、冰雪ワールドでは巨大な照明付き氷彫刻が披露されます。防寒対策を徹底してください。",
       "importance": "high"
     },
     {
       "category": "history",
-      "title": "Russian Heritage",
-      "content": "Harbin was founded by Russians in 1898 as a railway hub. The city retains significant Russian architecture, especially around Central Avenue and Saint Sophia Cathedral.",
+      "title": "ロシアの遺産",
+      "content": "ハルビンは1898年にロシア人によって鉄道のハブ都市として設立されました。中央大街や聖ソフィア大聖堂周辺など、特にロシア建築がまだ多く残っています。",
       "importance": "high"
     },
     {
       "category": "architecture",
-      "title": "European Architecture",
-      "content": "The city has buildings from 10+ countries including Russian, French, German, Italian and Japanese. Central Avenue showcases this eclectic mix.",
+      "title": "ヨーロッパ建築",
+      "content": "市内にはロシア、フランス、ドイツ、イタリア、日本など10か国以上の建築があります。中央大街ではこの折衷的な建築様式の混在を楽しめます。",
       "importance": "medium"
     },
     {
       "category": "food",
-      "title": "Russian Influence",
-      "content": "Try Russian food at historic restaurants like Huamei. Sample Harbin sausage, Russian bread, and the famous Modern Hotel ice cream.",
+      "title": "ロシアの影響",
+      "content": "歴史的なレストラン（比如「花」）でロシア料理を試してください。ハルビンソーセージ、ロシアパン、そして有名なモダンホテルのアイスクリームをお楽しみください。",
       "importance": "high"
     },
     {
       "category": "food",
-      "title": "Northeast Cuisine",
-      "content": "Harbin cuisine is hearty Northeast Chinese food. Must-try: fried dumplings, pork knuckle, blood sausage, and iron pot stews.",
+      "title": "東北料理",
+      "content": "ハルビン料理は中国の東北地方の心温まる料理です。必食：焼き餃子、猪足、血ソーセージ、鉄鍋蒸し料理。",
       "importance": "medium"
     },
     {
       "category": "winter",
-      "title": "Extreme Cold",
-      "content": "Winters are extremely cold (-20C to -30C). Wear multiple layers, cover extremities, and limit outdoor time. Ice Festival stays open late but dress warmly.",
+      "title": "極寒",
+      "content": "冬は極めて寒く（-20℃〜-30℃）。重ね着を徹底し末端を保護し、外出している時間を短くしてください。冰雪祭りは夜遅くまで開催していますが、防寒対策をしてください。",
       "importance": "high"
     },
     {
       "category": "culture",
-      "title": "Orthodox Christianity",
-      "content": "Saint Sophia Cathedral is the largest surviving Orthodox church in the Far East. It now houses a museum showcasing Harbin's Christian heritage.",
+      "title": "ロシア正教",
+      "content": "聖ソフィア大聖堂極東最大の現存する正教会です、現在はハルビンのキリスト教遺産を示す博物館が入っています。",
       "importance": "medium"
     },
     {
       "category": "nature",
-      "title": "Siberian Tigers",
-      "content": "Visit the Siberian Tiger Park for a chance to see these magnificent animals. Feed them from the safety of a tour bus.",
+      "title": "シベリアトラ",
+      "content": "シベリアトラ公園では、これらの壮大な姿をを見ることができます。ツアー巴士から安全に餌をあげることができます。",
       "importance": "medium"
     },
     {
       "category": "food",
-      "title": "Spring Pancakes",
-      "content": "Harbin is famous for spring pancakes (春饼) - thin crepes wrapped around various fillings. Lao Chang Spring Pancakes is the most famous chain.",
+      "title": "春餅",
+      "content": "ハルビンは春餅（春餅）で有名です−様々な具を巻く薄いクレープ。老昌春餅が最も有名なチェーン店です。",
       "importance": "medium"
     },
     {
       "category": "transport",
-      "title": "Winter Transport",
-      "content": "Public transport runs normally in winter but some roads may be slippery. Taxis are available but can be hard to catch during snow.",
+      "title": "冬の交通",
+      "content": "公共交通機関は冬も運行していますが、道路が凍っている場合があります。タクシーはありますが、雪の時は捕まえにくいことがあります。",
       "importance": "medium"
     },
     {
       "category": "shopping",
-      "title": "Russian Goods",
-      "content": "Buy Russian chocolate, vodka, and souvenirs at Central Avenue shops. Qiulin Company and Russian goods stores have authentic products.",
+      "title": "ロシア商品",
+      "content": "中央大街のショップでロシアチョコレート、ウォッカ、お土産を購入してください。秋林公司和ロシア商品店で本格的な製品が手に入ります。",
       "importance": "medium"
     },
     {
       "category": "history",
-      "title": "Japanese Occupation",
-      "content": "Harbin has museums and memorials documenting its history during Japanese occupation. The city played a significant role in modern Chinese history.",
+      "title": "日本統治時代",
+      "content": "ハルビンには日本占領時代の歴史を記録する博物館や記念館があります。この街は現代中国史で重要な役割を果たしました。",
       "importance": "medium"
     },
     {
       "category": "culture",
-      "title": "Music Heritage",
-      "content": "Harbin has a strong classical music tradition. The Harbin Summer Music Concert was famous during the Soviet era.",
+      "title": "音楽遺産",
+      "content": "ハルビンは長いクラシック音楽の伝統を誇ります。ハルビン夏の音楽会はソ連時代に非常に有名でした。",
       "importance": "low"
     },
     {
       "category": "food",
-      "title": "Harbin Beer",
-      "content": "Harbin Beer is China's oldest beer brand, founded by Russians in 1900. Try it fresh at local beer halls.",
+      "title": "ハルビン・ビール",
+      "content": "ハルビンビールは中国最古のビールブランドで、1900年にロシア人によって創設されました。地元のビアホールで新鮮なビールを味わえます。",
       "importance": "medium"
     },
     {
       "category": "winter",
-      "title": "Frozen Food",
-      "content": "In winter, Harbin sells frozen fruits like hawthorn and pears on sticks - a unique winter treat. Also try frozen dumplings.",
+      "title": "冷凍食品",
+      "content": "冬になると、ハルビンではサンザシや梨などの冷凍フルーツが串に刺さって路上で売られます——これは独特の冬の味覚です。冷凍餃子もぜひお試しください。",
       "importance": "low"
     },
     {
       "category": "nature",
-      "title": "Songhua River",
-      "content": "The frozen Songhua River is a winter playground. Walk on the ice, try ice slides, and see locals enjoying winter activities.",
+      "title": "松花江",
+      "content": "凍った松花江は冬の遊び場です。氷の上を歩いたり、氷滑り台を試したり、地元の人々が冬のアクティビティを楽しむ様子を見ることができます。",
       "importance": "medium"
     }
   ],
   "emergencyContacts": [
     {
       "type": "ambulance",
-      "name": "哈尔滨急救中心",
-      "nameEn": "Harbin Emergency Center",
+      "name": "ハルビン救急センター",
+      "nameEn": "在広州シンガポール総領事館",
       "phone": "120",
-      "notes": "Major hospitals have English interpretation"
+      "notes": "主要病院では英語通訳が利用可能",
+      "nameJa": "ハルビン救急センター"
     },
     {
       "type": "police",
-      "name": "哈尔滨市公安局",
+      "name": "ハルビン市公安局",
       "nameEn": "Harbin Public Security Bureau",
       "phone": "110",
-      "notes": "Tourist police at major attractions"
+      "notes": "主要観光地に観光警察が配置されています",
+      "nameJa": "ハルビン市公安局"
     },
     {
       "type": "hospital",
-      "name": "哈尔滨医科大学附属第一医院",
+      "name": "ハルビン医科大学付属第一病院",
       "nameEn": "The First Affiliated Hospital of Harbin Medical University",
       "phone": "+86 451 5364 3854",
-      "address": "23 Youzheng Street, Nangang District",
+      "address": "南崗区郵政街23号",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6422
       },
-      "notes": "English-speaking staff available"
+      "notes": "英語対応スタッフあり",
+      "nameJa": "ハルビン医科大学付属第一病院"
     },
     {
       "type": "hospital",
-      "name": "哈尔滨市中心医院",
+      "name": "ハルビン市中心病院",
       "nameEn": "Harbin Central Hospital",
       "phone": "+86 451 5856 1000",
-      "address": "5 Wenlin Street, Daoli District",
+      "address": "道里区文林街5号",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
-      "notes": "Another major hospital"
+      "notes": "もう一つの主要病院",
+      "nameJa": "ハルビン市中心病院"
     },
     {
       "type": "tourist-police",
-      "name": "哈尔滨旅游警察",
+      "name": "ハルビン観光警察",
       "nameEn": "Harbin Tourist Police",
       "phone": "+86 451 8888 8810",
-      "notes": "English-speaking tourist police"
+      "notes": "英語対応可能な観光警察",
+      "nameJa": "ハルビン観光警察"
     },
     {
       "type": "fire",
-      "name": "哈尔滨消防",
+      "name": "ハルビン消防",
       "nameEn": "Harbin Fire Department",
       "phone": "119",
-      "notes": "Fire and rescue services"
+      "notes": "消防・救助サービス",
+      "nameJa": "ハルビン消防"
     },
     {
       "type": "embassy",
-      "name": "俄罗斯驻哈尔滨总领事馆",
+      "name": "ロシア連邦ハルビン総領事館",
       "nameEn": "Russia Consulate General Harbin",
       "phone": "+86 451 8238 1068",
-      "address": "No. 1 Xi'an Road, Daoli District",
+      "address": "道里区西安路1号",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
-      "notes": "For Russian citizens in Harbin"
+      "notes": "ハルビンのロシア国籍者向け",
+      "nameJa": "ロシア連邦ハルビン総領事館"
     },
     {
       "type": "embassy",
-      "name": "日本驻哈尔滨总领事馆",
+      "name": "日本国ハルビン総領事館",
       "nameEn": "Japan Consulate General Harbin",
       "phone": "+86 451 8238 1092",
-      "address": "8 Jiuzhi Street, Daoli District",
-      "notes": "For Japanese citizens in Harbin"
+      "address": "道里区九芝街8号",
+      "notes": "ハルビンの日本国籍者向け",
+      "nameJa": "日本国ハルビン総領事館"
     },
     {
       "type": "embassy",
-      "name": "美国驻沈阳总领事馆",
+      "name": "アメリカ合衆国瀋陽総領事館",
       "nameEn": "US Consulate General Shenyang",
       "phone": "+86 24 2322 2714",
-      "address": "Shenyang (nearest US consular services)",
-      "notes": "For US citizens in Harbin region"
+      "address": "瀋陽（最寄りの米国領事業務）",
+      "notes": "ハルビン地域の米国国籍者向け",
+      "nameJa": "アメリカ合衆国瀋陽総領事館"
     },
     {
       "type": "embassy",
-      "name": "韩国驻沈阳总领事馆",
+      "name": "在大韓民国駐瀋陽総領事館",
       "nameEn": "South Korea Consulate General Shenyang",
       "phone": "+86 24 2385 3366",
-      "address": "Shenyang",
-      "notes": "For Korean citizens in Harbin region"
+      "address": "瀋陽",
+      "notes": "ハルビン地域の韓国国籍者向け",
+      "nameJa": "在大韓民国駐瀋陽総領事館"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese, Harbin dialect (with Russian influence)",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Tap water safe after boiling; bottled water recommended"
+    "language": "中国語（マンダリン）",
+    "currency": "人民元 (CNY/RMB)",
+    "visa": "ほとんどの国籍でビザが必要です。対象者は空港で72時間トランジットビザを取得できます。",
+    "timeZone": "UTC+8 (中国標準時)",
+    "electricity": "220V/50Hz、A/I タイププラグ",
+    "water": "水道水は飲めますが、ペットボトル推奨"
   }
 }

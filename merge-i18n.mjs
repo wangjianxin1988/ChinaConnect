@@ -132,6 +132,7 @@ const extraFlat = {};
 for (const lang of Object.keys(translations)) {
   if (translations[lang]) for (const k of Object.keys(translations[lang])) extraFlat[k] = true;
 }
+function isValidIdent(s) { return /^[a-zA-Z_$][a-zA-Z0-9_$]*$/.test(s); }
 function extendTree(node, prefix) {
   const childKeys = new Set();
   for (const k of Object.keys(extraFlat)) {
@@ -139,23 +140,34 @@ function extendTree(node, prefix) {
       if (!k.startsWith(prefix + '.')) continue;
       const rest = k.substring(prefix.length + 1);
       const firstPart = rest.split('.')[0];
-      if (firstPart) childKeys.add(firstPart);
+      if (!rest.includes('.')) {
+        childKeys.add(firstPart);
+      } else {
+        if (isValidIdent(firstPart)) childKeys.add(firstPart);
+        else childKeys.add(k);
+      }
     } else {
-      if (!k.includes('.')) childKeys.add(k);
-      else childKeys.add(k.split('.')[0]);
+      const firstPart = k.includes('.') ? k.split('.')[0] : k;
+      if (isValidIdent(firstPart)) childKeys.add(firstPart);
+      else childKeys.add(k);
     }
   }
   for (const ck of childKeys) {
     if (!ck) continue;
-    const fullKey = prefix ? prefix + '.' + ck : ck;
-    const existing = node.children.find(c => c.name === ck);
+    const fullKey = (prefix && !ck.includes('.')) ? prefix + '.' + ck : ck;
+    const leafName = ck.includes('.') ? ck.replace(/./g, '__') : ck;
+    const existing = node.children.find(c => c.name === leafName);
     const isLeaf = extraFlat.hasOwnProperty(fullKey);
     if (!existing) {
       if (isLeaf) {
         const placeholder = translations.en && translations.en[fullKey] !== undefined ? translations.en[fullKey] : fullKey;
-        node.children.push({ type: 'leaf', name: ck, value: placeholder });
+        node.children.push({ type: 'leaf', name: leafName, value: placeholder });
+      } else if (ck.includes('.')) {
+        const child = { type: 'ns', name: leafName, children: [] };
+        node.children.push(child);
+        extendTree(child, fullKey);
       } else {
-        const child = { type: 'ns', name: ck, children: [] };
+        const child = { type: 'ns', name: leafName, children: [] };
         node.children.push(child);
         extendTree(child, fullKey);
       }

@@ -47,7 +47,12 @@
     "business:verify:strict": "node scripts/verify-business-data.mjs --strict",
     "check:i18n": "node scripts/check-i18n.mjs",
     "i18n:merge": "node merge-i18n.mjs",
-    "i18n:translate": "node gen-missing.mjs"
+    "i18n:translate": "node gen-missing.mjs",
+    "prebuild": "node build-i18n-content.mjs && node scripts/auto-translate-new-cities.mjs && node scripts/auto-translate-new-blog.mjs",
+    "i18n:auto": "node scripts/auto-translate-new-cities.mjs",
+    "i18n:blog": "node scripts/auto-translate-new-blog.mjs",
+    "i18n:content": "node scripts/auto-translate-content.mjs",
+    "i18n:build": "node build-i18n-content.mjs"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.6.13",

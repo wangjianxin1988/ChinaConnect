@@ -3330,6 +3330,7 @@ export const TIER_CONFIG: Record<
   CityTier,
   {
     label: string;
+    labelJa: string;
     labelZh: string;
     color: string;
     bgColor: string;
@@ -3340,6 +3341,7 @@ export const TIER_CONFIG: Record<
 > = {
   S: {
     label: "S-Tier",
+    labelJa: "S級都市",
     labelZh: "S级城市",
     color: "text-amber-700",
     bgColor: "bg-amber-50",
@@ -3350,6 +3352,7 @@ export const TIER_CONFIG: Record<
   },
   A: {
     label: "A-Tier",
+    labelJa: "A級都市",
     labelZh: "A级城市",
     color: "text-blue-700",
     bgColor: "bg-blue-50",
@@ -3360,6 +3363,7 @@ export const TIER_CONFIG: Record<
   },
   B: {
     label: "B-Tier",
+    labelJa: "B級都市",
     labelZh: "B级城市",
     color: "text-emerald-700",
     bgColor: "bg-emerald-50",
@@ -3369,6 +3373,7 @@ export const TIER_CONFIG: Record<
   },
   C: {
     label: "C-Tier",
+    labelJa: "C級都市",
     labelZh: "C级城市",
     color: "text-purple-700",
     bgColor: "bg-purple-50",
@@ -3379,6 +3384,7 @@ export const TIER_CONFIG: Record<
   },
   D: {
     label: "D-Tier",
+    labelJa: "D級都市",
     labelZh: "D级城市",
     color: "text-gray-600",
     bgColor: "bg-gray-50",

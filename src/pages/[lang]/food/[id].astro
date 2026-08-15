@@ -8,6 +8,7 @@ export function getStaticPaths() {
 import RestaurantDetail from "@/components/food/RestaurantDetail";
 import { cities } from "@/data/food/cities";
 import { getRestaurantById, restaurants } from "@/data/food/restaurants";
+import { JA_FOOD_OVERRIDES } from "@/data/food/ja-food-overrides";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
 
@@ -26,60 +27,63 @@ const sameCityRestaurants = restaurants
   .slice(0, 4);
 
 const TYPE_CONFIG = {
-  michelin: { label: "米其林", labelEn: "Michelin", icon: "⭐", stars: restaurant.star, color: "text-[#1E3A5F]" },
+  michelin: { label: "米其林", labelEn: "Michelin", labelJa: "ミシュラン", icon: "⭐", stars: restaurant.star, color: "text-[#1E3A5F]" },
   blackpearl: {
     label: "黑珍珠",
-    labelEn: "Black Pearl",
+    labelEn: "Black Pearl", labelJa: "ブラックパール",
     icon: "💎",
     diamonds: restaurant.diamond,
     color: "text-[#2D1B4E]",
   },
-  local: { label: "本地推荐", labelEn: "Local", icon: "🔥", color: "text-[#B8383D]" },
+  local: { label: "本地推荐", labelEn: "Local", labelJa: "地元のおすすめ", icon: "🔥", color: "text-[#B8383D]" },
 };
 
 const config = TYPE_CONFIG[restaurant.type];
 
 const showTitleCn = lang === "zh-CN" || lang === "zh-TW";
 
+const jaFood = (t: string | undefined): string =>
+  lang === "ja" && t ? JA_FOOD_OVERRIDES[t] || t : (t || "");
+
 const restaurantDetail = {
   id: restaurant.id,
-  name: restaurant.name,
+  name: jaFood(restaurant.name),
   name_en: restaurant.nameEn,
-  cuisine: restaurant.cuisine,
+  cuisine: jaFood(restaurant.cuisine),
   rating: restaurant.rating,
   review_count: 0,
   avg_cost: restaurant.avgPrice,
-  address: restaurant.address,
+  address: jaFood(restaurant.address),
   address_zh: restaurant.addressEn,
   images: restaurant.imageUrl ? [restaurant.imageUrl] : [],
-  tags: restaurant.tags || [],
+  tags: (restaurant.tags || []).map((t) => jaFood(t)),
   michelin_stars: restaurant.star,
   heizhenzhu_rank: restaurant.diamond,
   blogger_recommended: !!restaurant.bloggerName,
-  blogger_name: restaurant.bloggerName,
+  blogger_name: jaFood(restaurant.bloggerName),
   opening_hours: restaurant.hours ? { regular: restaurant.hours } : undefined,
   avg_meal_duration: 60,
   booking_required: false,
   phone: restaurant.phone,
-  description: restaurant.description,
+  description: jaFood(restaurant.description),
   description_zh: restaurant.descriptionEn,
 };
 ---
 
-<BaseLayout title={showTitleCn ? `${restaurant.name} - 美食推荐` : `${restaurant.name} - Food Recommendation`}>
+<BaseLayout title={lang === "ja" ? `${jaFood(restaurant.name)} - おすすめグルメ` : showTitleCn ? `${restaurant.name} - 美食推荐` : `${restaurant.name} - Food Recommendation`}>
   <div class="min-h-screen bg-gray-50">
     <!-- Header -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
       <div class="max-w-4xl mx-auto px-4 py-4">
         <div class="flex items-center justify-between">
-          <a href={`/food?city=${restaurant.city}`} class="flex items-center gap-2 text-gray-600 hover:text-gray-900">
+          <a href={`/${lang}/food?city=${restaurant.city}`} class="flex items-center gap-2 text-gray-600 hover:text-gray-900">
             <span aria-hidden="true">←</span>
             <span data-i18n="foodPage.back">Back</span>
           </a>
           <span class={`text-sm font-medium ${config.color}`}>
-            {config.icon} {showTitleCn ? config.label : config.labelEn}
-            {restaurant.type === 'michelin' && restaurant.star && (showTitleCn ? `${restaurant.star}星` : `${restaurant.star}-star`)}
-            {restaurant.type === 'blackpearl' && restaurant.diamond && (showTitleCn ? `${restaurant.diamond}钻` : `${restaurant.diamond}-diamond`)}
+            {config.icon} {lang === "ja" ? config.labelJa : showTitleCn ? config.label : config.labelEn}
+            {restaurant.type === 'michelin' && restaurant.star && (lang === "ja" ? `${restaurant.star}つ星` : showTitleCn ? `${restaurant.star}星` : `${restaurant.star}-star`)}
+            {restaurant.type === 'blackpearl' && restaurant.diamond && (lang === "ja" ? `${restaurant.diamond}ダイヤ` : showTitleCn ? `${restaurant.diamond}钻` : `${restaurant.diamond}-diamond`)}
           </span>
         </div>
       </div>
@@ -87,7 +91,7 @@ const restaurantDetail = {
 
     <main class="max-w-4xl mx-auto px-4 py-6">
       <!-- Restaurant Detail with Favorites and Reviews -->
-      <RestaurantDetail restaurant={restaurantDetail} client:load />
+      <RestaurantDetail restaurant={restaurantDetail} lang={lang} client:load />
 
       {/* Similar Restaurants */}
       {sameCityRestaurants.length > 0 && (
@@ -95,14 +99,14 @@ const restaurantDetail = {
           <h2 class="text-lg font-bold text-gray-900 mb-4" data-i18n="foodPage.otherRestaurants">Other restaurants nearby</h2>
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
             {sameCityRestaurants.map(r => (
-              <a href={`/food/${r.id}`} class="block group">
+              <a href={`/${lang}/food/${r.id}`} class="block group">
                 {r.imageUrl && (
                   <div class="h-24 rounded-lg overflow-hidden mb-2">
-                    <img src={r.imageUrl} alt={r.name} class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                    <img src={r.imageUrl} alt={jaFood(r.name)} class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                   </div>
                 )}
-                <p class="font-medium text-gray-900 text-sm line-clamp-1">{r.name}</p>
-                <p class="text-xs text-gray-500">{r.cuisine}</p>
+                <p class="font-medium text-gray-900 text-sm line-clamp-1">{jaFood(r.name)}</p>
+                <p class="text-xs text-gray-500">{jaFood(r.cuisine)}</p>
               </a>
             ))}
           </div>

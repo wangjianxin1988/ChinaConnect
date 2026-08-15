@@ -10,12 +10,13 @@ const lang = (Astro.params.lang as string) || "en";
 
 import ExpoCalendarClient from "@/components/Guide/ExpoCalendarClient";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { translations } from "@/i18n/translations";
 import { getLangFromUrl } from '@/i18n/utils';
 ---
 
 <BaseLayout
-  title="China Expo Calendar - ChinaConnect"
-  description="Complete calendar of major trade fairs and exhibitions in China including Canton Fair, auto shows, and industry events. Plan your business trip around key events."
+  title={(translations[lang] || translations.en).businessGuidePage?.expoTitle || "China Expo Calendar - ChinaConnect"}
+  description={(translations[lang] || translations.en).businessGuidePage?.expoDescription || "Complete calendar of major trade fairs and exhibitions in China including Canton Fair, auto shows, and industry events. Plan your business trip around key events."}
   meta={{
     keywords: ['China expo calendar', 'Canton Fair dates', 'Canton Fair', 'China trade shows 2026', 'China expo calendar'],
   }}
@@ -35,10 +36,8 @@ import { getLangFromUrl } from '@/i18n/utils';
           <p class="text-muted-foreground text-lg" data-i18n="businessGuidePage.expoSubtitle">Expo &amp; Event Calendar</p>
         </div>
       </div>
-      <p class="text-muted-foreground max-w-2xl">
-        Plan your business visits around China&apos;s most important trade shows.
-        From the Canton Fair to industry-specific exhibitions across major cities.
-      </p>
+      <p class="text-muted-foreground max-w-2xl" data-i18n="businessGuidePage.expoDescription">Plan your business visits around China&apos;s most important trade shows.
+        From the Canton Fair to industry-specific exhibitions across major cities.</p>
     </div>
 
     <ExpoCalendarClient client:load lang={lang} />

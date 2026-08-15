@@ -9,23 +9,23 @@
     "lng": 100.2676
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Dali is a picturesque town in Yunnan province, set against the dramatic backdrop of Cangshan Mountains and beside the crystal-clear Erhai Lake. Home to the Bai ethnic minority with 1,000 years of history. Known for cobblestone streets, traditional Bai architecture, and vibrant local culture. A laid-back atmosphere perfect for cycling, hiking, and cultural immersion.",
+  "description": "เมืองตาลีเป็นเมืองที่สวยงามในมณฑลยูนนาน ตั้งอยู่ท่ามกลางเทือกเขาซางชานที่งดงามและริมทะเลสาบเออร์ไห่ที่ใสราวคริสตัล เป็นบ้านของชาวไป๋ ชนกลุ่มน้อยที่มีประวัติศาสตร์ 1,000 ปี ขึ้นชื่อเรื่องถนนคนเดินหินกรวด สถาปัตยกรรมแบบไป๋ดั้งเดิม และวัฒนธรรมท้องถิ่นที่มีชีวิตชีวา บรรยากาศผ่อนคลายเหมาะสำหรับปั่นจักรยาน เดินป่า และสัมผัสวัฒนธรรม",
   "coverImage": "/img/ext/4e2e5e513a4d.webp",
   "highlights": [
-    "Erhai Lake - Scenic cycling and views",
-    "Three Pagodas of Dali - Buddhist temples",
-    "Dali Old Town - Traditional Bai architecture",
-    "Xizhou Market - Local Bai culture",
-    "Shuanglang - Lakeside photography"
+    "ทะเลสาบเออร์ไห - ปั่นจักรยานชมวิวทิวทัศน์",
+    "พระเจดีย์สามองค์แห่งตาลี - วัดพุทธ",
+    "เมืองเก่าตาลี - สถาปัตยกรรมไป๋ดั้งเดิม",
+    "ตลาดซีโจว - วัฒนธรรมท้องถิ่นไป๋",
+    "ซวงหลาง - ถ่ายรูปริมทะเลสาบ"
   ],
   "climate": {
-    "type": "Subtropical highland",
+    "type": "ภูมิอากาศกึ่งเขตร้อนชื้นแบบสูง",
     "bestMonths": [
-      "March",
-      "April",
-      "May",
-      "September",
-      "October"
+      "มีนาคม",
+      "เมษายน",
+      "พฤษภาคม",
+      "กันยายน",
+      "ตุลาคม"
     ],
     "avgSummerTemp": "18-25C (64-77F)",
     "avgWinterTemp": "8-15C (46-59F)",
@@ -35,29 +35,29 @@
     {
       "id": "dali-1",
       "name": "三塔寺素斋",
-      "nameEn": "Three Pagodas Vegetarian Restaurant",
-      "type": "local",
-      "cuisine": "Buddhist Vegetarian",
+      "nameEn": "ร้านอาหารมังสวิรัติสามพระเจดีย์",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารมังสวิรัติแบบพุทธ",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "Near Three Pagodas entrance",
+      "address": "ใกล้ทางเข้าซานตาปาดา",
       "coordinates": {
         "lat": 25.6722,
         "lng": 100.1572
       },
       "hours": "08:00-18:00",
-      "description": "Simple vegetarian restaurant near the pagodas serving Buddhist-style meat substitutes and local vegetables.",
+      "description": "ร้านอาหารมังสวิรัติเรียบง่ายใกล้ซานตาปาดาเสิร์ฟเนื้อทดแทนแบบพุทธและผักท้องถิ่น",
       "dishHighlights": [
-        "Vegetarian chicken",
-        "Bamboo shoot dishes",
-        "Mountain vegetables",
-        "Rice porridge"
+        "ไก่มังสวิรัติ",
+        "อาหารจากหน่อไม้",
+        "ผักภูเขา",
+        "ข้าวต้ม"
       ],
       "tags": [
-        "local",
-        "vegetarian",
-        "buddhist",
-        "budget"
+        "ท้องถิ่น",
+        "มังสวิรัติ",
+        "พุทธ",
+        "ประหยัด"
       ],
       "star": 0,
       "diamond": 0,
@@ -67,28 +67,28 @@
     {
       "id": "dali-2",
       "name": "古城第一凉鸡米线",
-      "nameEn": "Dali First Cold Chicken Rice Noodles",
-      "type": "local",
-      "cuisine": "Bai Specialty",
+      "nameEn": "ร้านข้าวเส้นไก่เย็นดาหลี",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารพื้นเมืองบาย",
       "avgPrice": 25,
       "rating": 4.8,
-      "address": "Fuxing Road, Dali Old Town",
+      "address": "ถนนฟูซิง, เมืองเก่าตะลิ",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "07:00-19:00",
-      "description": "Legendary local spot famous for cold chicken rice noodles - a Dali specialty with tangy sauce and fresh ingredients.",
+      "description": "ร้านท้องถิ่นตำนานที่มีชื่อเสียงเรื่องราดน้ำไก่เย็น - อาหารพิเศษของตาลีที่มีซอสรสเปรี้ยวและส่วนผสมสดใหม่",
       "dishHighlights": [
-        "Cold chicken rice noodles",
-        "Pickled vegetables",
-        "Bai style sauce"
+        "ราดน้ำไก่เย็น",
+        "ผักดอง",
+        "ซอสสไตล์ไป๋"
       ],
       "tags": [
-        "local",
-        "bai-cuisine",
-        "famous",
-        "budget"
+        "ท้องถิ่น",
+        "อาหารไทยใต้",
+        "โด่งดัง",
+        "ประหยัด"
       ],
       "star": 0,
       "diamond": 0,
@@ -98,29 +98,29 @@
     {
       "id": "dali-3",
       "name": "苍山道素食",
-      "nameEn": "Cangshan Dao Vegetarian",
-      "type": "local",
-      "cuisine": "Vegetarian",
+      "nameEn": "ร้านอาหารมังสวิรัติซางซาน",
+      "type": "ท้องถิ่น",
+      "cuisine": "มังสวิรัติ",
       "avgPrice": 60,
       "rating": 4.6,
-      "address": "Yeyou Road, near Dali Old Town",
+      "address": "ถนนเย่โหยว ใกล้เมืองเก่าตาลี",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
       },
       "hours": "10:00-21:00",
-      "description": "Cozy vegetarian restaurant with organic ingredients, creative dishes, and peaceful atmosphere near the old town.",
+      "description": "ร้านอาหารมังสวิรัติน่าอยู่ใช้วัตถุดิบออร์แกนิก อาหารสร้างสรรค์ และบรรยากาศสงบใกล้เมืองเก่า",
       "dishHighlights": [
-        "Mock meat dishes",
-        "Forest mushrooms",
-        "Herbal teas",
-        "Home-style cooking"
+        "จานเนื้อเทียม",
+        "เห็ดป่า",
+        "ชาสมุนไพร",
+        "อาหารแบบบ้าน"
       ],
       "tags": [
-        "local",
-        "vegetarian",
-        "organic",
-        "healthy"
+        "ท้องถิ่น",
+        "มังสวิรัติ",
+        "ออร์แกนิก",
+        "สุขภาพดี"
       ],
       "star": 0,
       "diamond": 0,
@@ -130,30 +130,30 @@
     {
       "id": "dali-4",
       "name": "双廊海韵",
-      "nameEn": "Shuanglang Sea Melody",
-      "type": "local",
-      "cuisine": "Yunnan/Seafood",
+      "nameEn": "ร้านเสียงทะเลซวงหลาง",
+      "type": "ท้องถิ่น",
+      "cuisine": "ยูนนาน/อาหารทะเล",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "Shuanglang waterfront",
+      "address": "ริมน้ำซวงหลาง",
       "coordinates": {
         "lat": 25.8822,
         "lng": 100.1572
       },
       "phone": "+86 872 246 8888",
       "hours": "10:00-22:00",
-      "description": "Lakeside restaurant with Erhai views, serving fresh fish from the lake and Yunnan specialties.",
+      "description": "ร้านอาหารริมทะเลสาบเออร์ไหย วิวทะเลสาบเออร์ไหย เสิร์ฟปลาสดจากทะเลสาบและอาหารพิเศษยูนนาน",
       "dishHighlights": [
-        "Erhai lake fish",
-        "Bai style pork",
-        "Wild mushrooms",
-        "Lake views"
+        "ปลาทะเลสาบเอ๋อร์ไห่",
+        "หมูสไตล์ไป่",
+        "เห็ดป่า",
+        "วิวทะเลสาบ"
       ],
       "tags": [
-        "local",
-        "scenic",
-        "seafood",
-        "yunnan'style"
+        "ท้องถิ่น",
+        "วิวสวย",
+        "อาหารทะเล",
+        "สไตล์ยูนนาน"
       ],
       "star": 0,
       "diamond": 0,
@@ -162,28 +162,28 @@
     {
       "id": "dali-5",
       "name": "永祥火把腿",
-      "nameEn": "Yongxiang Ham Leg",
-      "type": "local",
-      "cuisine": "Yunnan Specialty",
+      "nameEn": "ขาหมูยงเซียง",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารพิเศษยูนนาน",
       "avgPrice": 40,
       "rating": 4.7,
-      "address": "Fuxing Road, Dali Old Town",
+      "address": "ถนนฟูซิง, เมืองเก่าตะลิ",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "08:00-20:00",
-      "description": "Famous for Yunnan ham and leg meat, a local specialty snack perfect for quick lunch or snack.",
+      "description": "มีชื่อเสียงจากแฮมยูนนานและเนื้อขา เป็นของว่างพื้นบ้านท้องถิ่นที่เหมาะสำหรับอาหารกลางวันหรือของว่าง",
       "dishHighlights": [
-        "Smoked ham leg",
-        "Bai sausage",
-        "Grilled meat skewers"
+        "ขาแฮมรมควัน",
+        "ไส้กรอกไป่",
+        "เนื้อย่างเสียบไม้"
       ],
       "tags": [
-        "local",
-        "specialty",
-        "snacks",
-        "budget"
+        "ท้องถิ่น",
+        "พิเศษ",
+        "ขนม",
+        "ประหยัด"
       ],
       "star": 0,
       "diamond": 0,
@@ -193,29 +193,29 @@
     {
       "id": "dali-6",
       "name": "大理古城咖啡馆",
-      "nameEn": "Dali Old Town Cafe",
-      "type": "local",
-      "cuisine": "Western/Yunnan Fusion",
+      "nameEn": "คาเฟ่เมืองเก่าต้าลี่",
+      "type": "ท้องถิ่น",
+      "cuisine": "ฟิวชันตะวันตก/ยูนนาน",
       "avgPrice": 50,
       "rating": 4.4,
-      "address": "Foreigners Street, Dali Old Town",
+      "address": "ถนนชาวต่างชาติ เมืองเก่าตาลี",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "08:00-23:00",
-      "description": "Lively cafe in the old town serving Yunnan coffee, Western breakfasts, and fusion dishes popular with expats.",
+      "description": "คาเฟ่คึกคักในเมืองเก่าเสิร์ฟกาแฟยูนนาน อาหารเช้าแบบตะวันตก และอาหารผสมผสานที่ได้รับความนิยมในหมู่ชาวต่างชาติ",
       "dishHighlights": [
-        "Yunnan coffee",
-        "Pancakes",
-        "Muesli breakfast",
-        "Fresh fruit shakes"
+        "กาแฟยูนนาน",
+        "แพนเค้ก",
+        "อาหารเช้ามูสลี่",
+        "น้ำผลไม้ปั่นสดๆ"
       ],
       "tags": [
-        "local",
-        "cafe",
-        "western",
-        "cozy"
+        "ท้องถิ่น",
+        "คาเฟ่",
+        "ตะวันตก",
+        "อบอุ่น"
       ],
       "star": 0,
       "diamond": 0,
@@ -225,28 +225,28 @@
     {
       "id": "dali-7",
       "name": "喜洲破酥粑粑",
-      "nameEn": "Xizhou Baba",
-      "type": "local",
-      "cuisine": "Bai Street Food",
+      "nameEn": "ซีโจวบาบา",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารข้างถนนไป่",
       "avgPrice": 15,
       "rating": 4.8,
-      "address": "Xizhou Old Town",
+      "address": "เมืองเก่าซีโจว",
       "coordinates": {
         "lat": 25.7622,
         "lng": 100.1272
       },
       "hours": "07:00-18:00",
-      "description": "Famous street food - crispy Baba flatbread with sweet or savory fillings, a Bai specialty.",
+      "description": "อาหารริมถนนที่มีชื่อเสียง - ขนมปังบาบากรอบไส้หวานหรือเค็ม ซึ่งเป็นของพิเศษของชาวไป่",
       "dishHighlights": [
-        "Sweet Baba (玫瑰糖)",
-        "Savory Baba (鲜肉)",
-        "Egg Baba"
+        "บาบาหวาน (玫瑰糖)",
+        "บาบาเค็ม (鲜肉)",
+        "บาบาไข่"
       ],
       "tags": [
-        "local",
-        "street-food",
-        "bai",
-        "must-try"
+        "ท้องถิ่น",
+        "อาหารข้างถนน",
+        "ไป่",
+        "ต้องลอง"
       ],
       "star": 0,
       "diamond": 0,
@@ -256,29 +256,29 @@
     {
       "id": "dali-8",
       "name": "花与餐厅",
-      "nameEn": "Flower and Restaurant",
-      "type": "local",
-      "cuisine": "Yunnan Fusion",
+      "nameEn": "ร้านดอกไม้และภัตตาคาร",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารยูนนานฟิวชัน",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Erhai area, near Shuanglang",
+      "address": "บริเวณเอ๋อร์ไห่ ใกล้ซวงหลัง",
       "coordinates": {
         "lat": 25.8522,
         "lng": 100.1572
       },
       "hours": "10:00-22:00",
-      "description": "Romantic garden restaurant with Erhai views, serving creative Yunnan cuisine with fresh local ingredients.",
+      "description": "ภัตตาคารสวนโรแมนติกพร้อมวิวเอ๋อร์ไห่ เสิร์ฟอาหารยูนนานเชิงสร้างสรรค์ทำจากวัตถุดิบท้องถิ่นสดใหม่",
       "dishHighlights": [
-        "Bai style fish",
-        "Truffle dishes",
-        "Organic vegetables",
-        "Lake view dining"
+        "ปลาสไตล์ไทยใต้",
+        "เมนูเห็ดทรัฟเฟิล",
+        "ผักออร์แกนิก",
+        "รับประทานอาหารพร้อมวิวทะเลสาบ"
       ],
       "tags": [
-        "local",
-        "scenic",
-        "romantic",
-        "yunnan'style"
+        "ท้องถิ่น",
+        "วิวสวย",
+        "โรแมนติก",
+        "สไตล์ยูนนาน"
       ],
       "star": 0,
       "diamond": 0,
@@ -288,29 +288,29 @@
     {
       "id": "dali-9",
       "name": "白族菜馆",
-      "nameEn": "Bai Cuisine Restaurant",
-      "type": "local",
-      "cuisine": "Bai Specialty",
+      "nameEn": "ร้านอาหารไป่",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารพื้นเมืองบาย",
       "avgPrice": 60,
       "rating": 4.6,
-      "address": "Yeyou Road, Dali Old Town",
+      "address": "ถนนเย่ายู, เมืองเก่าตาลี",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "10:00-22:00",
-      "description": "Authentic Bai cuisine restaurant serving traditional dishes like Bender (Bai cold chicken), Rushan cheese, and Sai ao (rice noodle rolls).",
+      "description": "ร้านอาหารไป่แท้ๆ ที่เสิร์ฟอาหารดั้งเดิม เช่น เบนเดอร์ (ไก่เย็นไป่), ชีสรูซาน, และไซเอา (ลูกชิ้นข้าวแป้ง)",
       "dishHighlights": [
-        "Bender (cold chicken)",
-        "Rushan cheese",
-        "Sai ao",
-        "Bai style pork"
+        "เบนเดอร์ (ไก่เย็น)",
+        "ชีสรูซาน",
+        "ไซเอา",
+        "หมูสไตล์ไป่"
       ],
       "tags": [
-        "local",
-        "bai-cuisine",
-        "traditional",
-        "famous"
+        "ท้องถิ่น",
+        "อาหารไทยใต้",
+        "ดั้งเดิม",
+        "โด่งดัง"
       ],
       "star": 0,
       "diamond": 0,
@@ -320,29 +320,29 @@
     {
       "id": "dali-10",
       "name": "饵丝飘香",
-      "nameEn": "Ersi Delight",
-      "type": "local",
-      "cuisine": "Bai Specialty",
+      "nameEn": "เออร์ซี ดีไลท์",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารพื้นเมืองบาย",
       "avgPrice": 20,
       "rating": 4.7,
-      "address": "Fuxing Road, Dali Old Town",
+      "address": "ถนนฟูซิง, เมืองเก่าตะลิ",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "07:00-19:00",
-      "description": "Famous local spot for Ersi (rice noodle strips) in savory soup, a Dali breakfast staple.",
+      "description": "ร้านท้องถิ่นที่มีชื่อเสียงสำหรับเออร์ซี (เส้นข้าวแป้ง) ในซุปรสอร่อย อาหารเช้ายอดนิยมของตาลี",
       "dishHighlights": [
-        "Beef ersi",
-        "Pork ersi",
-        "Pickled vegetables",
-        "Bai style broth"
+        "เออร์ซีเนื้อ",
+        "เออร์ซีหมู",
+        "ผักดอง",
+        "น้ำซุปสไตล์ไป่"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "bai-cuisine",
-        "budget"
+        "ท้องถิ่น",
+        "อาหารเช้า",
+        "อาหารไทยใต้",
+        "ประหยัด"
       ],
       "star": 0,
       "diamond": 0,
@@ -352,29 +352,29 @@
     {
       "id": "dali-11",
       "name": "酸菜鱼庄",
-      "nameEn": "Sour Cabbage Fish Restaurant",
-      "type": "local",
-      "cuisine": "Yunnan Specialty",
+      "nameEn": "ร้านปลากะหล่ำปลีเปรี้ยว",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารพิเศษยูนนาน",
       "avgPrice": 70,
       "rating": 4.5,
-      "address": "Erhai Lake area, near Caicun",
+      "address": "บริเวณทะเลสาบเออร์ไหล, ใกล้ไค่ชุน",
       "coordinates": {
         "lat": 25.7222,
         "lng": 100.1672
       },
       "hours": "10:00-21:00",
-      "description": "Popular restaurant specializing in sour cabbage fish hotpot made with fresh Erhai Lake fish and homemade pickled cabbage.",
+      "description": "ร้านอาหารยอดนิยมที่เชี่ยวชาญด้านหม้อไฟปลากะหล่ำปลีเปรี้ยว ทำจากปลาสดจากทะเลสาบเออร์ไหลและกะหล่ำปลีดองบ้าน",
       "dishHighlights": [
-        "Sour cabbage fish",
-        "Fish hotpot",
-        "Fresh lake fish",
-        "Spicy dipping sauce"
+        "ปลาร้าผัด",
+        "หม้อไฟปลา",
+        "ปลาสาบสด",
+        "ซอสจิ้มเผ็ด"
       ],
       "tags": [
-        "local",
-        "seafood",
-        "hotpot",
-        "yunnan'style"
+        "ท้องถิ่น",
+        "อาหารทะเล",
+        "หม้อไฟ",
+        "สไตล์ยูนนาน"
       ],
       "star": 0,
       "diamond": 0,
@@ -384,29 +384,29 @@
     {
       "id": "dali-12",
       "name": "乳扇烧烤摊",
-      "nameEn": "Rushan BBQ Stall",
-      "type": "street",
-      "cuisine": "Bai Street Food",
+      "nameEn": "แผงย่างรุซาน",
+      "type": "ร้านอาหารข้างทาง",
+      "cuisine": "อาหารข้างถนนไป่",
       "avgPrice": 15,
       "rating": 4.6,
-      "address": "Foreigners Street, Dali Old Town",
+      "address": "ถนนชาวต่างชาติ เมืองเก่าต้าลี่",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "17:00-23:00",
-      "description": "Famous street food stall serving grilled Rushan (Bai milk cheese) skewers, a must-try Dali snack.",
+      "description": "แผงอาหารข้างถนนที่มีชื่อเสียงเสิร์ฟไม้เสียบรุซานย่าง (ชีสนมไป่) ขนมขบเคี้ยวต้องลองของต้าลี่",
       "dishHighlights": [
-        "Grilled Rushan",
-        "Sweet version",
-        "Savory version",
-        "Rose syrup Rushan"
+        "รุซานย่าง",
+        "รสหวาน",
+        "รสเค็ม",
+        "น้ำเชื่อมกุหลาบรุซาน"
       ],
       "tags": [
-        "street-food",
-        "bai",
-        "snacks",
-        "must-try"
+        "อาหารข้างถนน",
+        "ไป่",
+        "ขนม",
+        "ต้องลอง"
       ],
       "star": 0,
       "diamond": 0,
@@ -416,29 +416,29 @@
     {
       "id": "dali-13",
       "name": "鲜花饼总店",
-      "nameEn": "Flower Cake Headquarters",
-      "type": "local",
-      "cuisine": "Yunnan Pastry",
+      "nameEn": "สำนักงานใหญ่เค้กดอกไม้",
+      "type": "ท้องถิ่น",
+      "cuisine": "ขนมปังยูนนาน",
       "avgPrice": 30,
       "rating": 4.8,
-      "address": "Fuxing Road, Dali Old Town",
+      "address": "ถนนฟูซิง, เมืองเก่าตะลิ",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "08:00-20:00",
-      "description": "Famous bakery specializing in flower cakes - delicate pastries filled with fresh rose and other edible flowers.",
+      "description": "เบเกอรี่ชื่อดังที่เชี่ยวชาญในการทำเค้กดอกไม้ - ขนมปังอันละเอียดอ่อนที่สอดไส้ด้วยกุหลาบสดและดอกไม้ที่รับประทานได้อื่นๆ",
       "dishHighlights": [
-        "Rose flower cake",
-        "Lavender cake",
-        "Osmanthus cake",
-        "Gift boxes"
+        "เค้กดอกกุหลาบ",
+        "เค้กลาเวนเดอร์",
+        "เค้กมะลิ",
+        "กล่องของขวัญ"
       ],
       "tags": [
-        "local",
-        "pastry",
-        "souvenir",
-        "famous"
+        "ท้องถิ่น",
+        "ขนมอบ",
+        "ของที่ระลึก",
+        "มีชื่อเสียง"
       ],
       "star": 0,
       "diamond": 0,
@@ -448,29 +448,29 @@
     {
       "id": "dali-14",
       "name": "米凉虾小馆",
-      "nameEn": "Mi Liangxia Shop",
-      "type": "street",
-      "cuisine": "Bai Dessert",
+      "nameEn": "ร้านมี่เลียงเซีย",
+      "type": "ร้านอาหารข้างทาง",
+      "cuisine": "ของว่างแบบไปย",
       "avgPrice": 10,
       "rating": 4.5,
-      "address": "Dali Old Town alley",
+      "address": "ตรอกเมืองเก่าตาลี",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "10:00-18:00",
-      "description": "Local dessert shop serving Mi Liangxia - shrimp-shaped rice jelly in sweet osmanthus syrup, a Dali specialty.",
+      "description": "ร้านของว่างท้องถิ่นที่เสิร์ฟมี่เลียงเซีย - เจลลี่ข้าวรูปกุ้งในน้ำเชื่อมดอกมะลิหวาน ของพิเศษของตาลี",
       "dishHighlights": [
-        "Mi Liangxia",
-        "Sweet osmanthus syrup",
-        "Red sugar version",
-        "Ice cold version"
+        "มี่เลียงเซีย",
+        "น้ำเชื่อมดอกมะลิหวาน",
+        "รุ่นน้ำตาลแดง",
+        "รุ่นเย็นจัด"
       ],
       "tags": [
-        "street-food",
-        "dessert",
-        "bai",
-        "budget"
+        "อาหารข้างถนน",
+        "ของหวาน",
+        "ไป่",
+        "ราคาประหยัด"
       ],
       "star": 0,
       "diamond": 0,
@@ -480,29 +480,29 @@
     {
       "id": "dali-15",
       "name": "野生菌火锅",
-      "nameEn": "Wild Mushroom Hotpot",
-      "type": "local",
-      "cuisine": "Yunnan Specialty",
+      "nameEn": "หม้อไฟเห็ดป่า",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารพิเศษยูนนาน",
       "avgPrice": 120,
       "rating": 4.7,
-      "address": "Dali City, near old town",
+      "address": "เมืองตาลี ใกล้เมืองเก่า",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
       },
       "hours": "11:00-22:00",
-      "description": "Premium hotpot restaurant featuring fresh wild mushrooms from Yunnan mountains, served in nourishing broth.",
+      "description": "ร้านหม้อไฟพรีเมียมที่เสนอเห็ดป่าสดจากภูเขายูนนาน เสิร์ฟในน้ำซุปอุ่น",
       "dishHighlights": [
-        "Matsutake mushroom",
-        "Chicken thigh mushroom",
-        "Bolete mushroom",
-        "Wild herb dipping sauce"
+        "เห็ดมัตสึทาเกะ",
+        "เห็ดขาไก่",
+        "เห็ดโบเลต",
+        "ซอสจุ่มสมุนไพรป่า"
       ],
       "tags": [
-        "local",
-        "hotpot",
-        "premium",
-        "yunnan'style"
+        "ท้องถิ่น",
+        "หม้อไฟ",
+        "พรีเมียม",
+        "สไตล์ยูนนาน"
       ],
       "star": 0,
       "diamond": 0,
@@ -512,29 +512,29 @@
     {
       "id": "dali-16",
       "name": "洱海鱼村",
-      "nameEn": "Erhai Fish Village",
-      "type": "local",
-      "cuisine": "Yunnan/Seafood",
+      "nameEn": "หมู่บ้านปลาเออร์ไหล",
+      "type": "ท้องถิ่น",
+      "cuisine": "ยูนนาน/อาหารทะเล",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Caicun Village, Erhai Lake",
+      "address": "หมู่บ้านไช่ชุน, ทะเลสาบเออร์ไห",
       "coordinates": {
         "lat": 25.7222,
         "lng": 100.1672
       },
       "hours": "10:00-21:00",
-      "description": "Riverside restaurant in fishing village serving fresh Erhai Lake fish prepared in various styles.",
+      "description": "ร้านอาหารริมแม่น้ำในหมู่บ้านชาวประมงเสิร์ฟปลาสดจากทะเลสาบเออร์ไหลทำในหลายสไตล์",
       "dishHighlights": [
-        "Braised Erhai fish",
-        "Fish soup",
-        "Steamed fish",
-        "Lake shrimp"
+        "ปลาเออร์ไหลตุ๋น",
+        "ซุปปลา",
+        "ปลานึ่ง",
+        "กุ้งทะเลสาบ"
       ],
       "tags": [
-        "local",
-        "seafood",
-        "scenic",
-        "fresh"
+        "ท้องถิ่น",
+        "อาหารทะเล",
+        "วิวสวย",
+        "สดใหม่"
       ],
       "star": 0,
       "diamond": 0,
@@ -544,29 +544,29 @@
     {
       "id": "dali-17",
       "name": "白族三道茶茶馆",
-      "nameEn": "Bai Three Tea House",
-      "type": "local",
-      "cuisine": "Tea House",
+      "nameEn": "บ้านน้ำชาสามไป่",
+      "type": "ท้องถิ่น",
+      "cuisine": "ชาเฮาส์",
       "avgPrice": 50,
       "rating": 4.6,
-      "address": "Xizhou Ancient Town",
+      "address": "เมืองเก่าซีโจว",
       "coordinates": {
         "lat": 25.7622,
         "lng": 100.1272
       },
       "hours": "09:00-18:00",
-      "description": "Traditional tea house offering authentic Bai Three Tea Ceremony - bitter tea, sweet tea, and aftertaste tea.",
+      "description": "ร้านน้ำชาแบบดั้งเดิมที่เสนอพิธีชงชาบายสามชนิดอันแท้จริง - ชาขม ชาหวาน และชาหลังรส",
       "dishHighlights": [
-        "Bitter tea",
-        "Sweet tea",
-        "Aftertaste tea",
-        "Bai tea ceremony"
+        "ชาขม",
+        "ชาหวาน",
+        "ชาหลังรส",
+        "พิธีชงชาบาย"
       ],
       "tags": [
-        "local",
-        "tea",
-        "cultural",
-        "bai-culture"
+        "ท้องถิ่น",
+        "ชา",
+        "วัฒนธรรม",
+        "วัฒนธรรมบาย"
       ],
       "star": 0,
       "diamond": 0,
@@ -577,7 +577,7 @@
       "id": "dali-18",
       "name": "青梅酒铺",
       "nameEn": "ร้านไวน์พลัม",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "บาร์ไป",
       "avgPrice": 40,
       "rating": 4.5,
@@ -609,28 +609,28 @@
       "id": "dali-19",
       "name": "当地烧烤一条街",
       "nameEn": "ถนนบีบีคิวท้องถิ่น",
-      "type": "street",
+      "type": "ร้านอาหารข้างทาง",
       "cuisine": "บีบีคิว",
       "avgPrice": 40,
       "rating": 4.4,
-      "address": "Dali Old Town, south gate area",
+      "address": "เมืองเก่าตาลี, บริเวณประตูใต้",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "18:00-02:00",
-      "description": "Famous BBQ street with multiple stalls serving Yunnan-style grilled meat, mushrooms, and vegetables.",
+      "description": "ถนนปิ้งย่างที่มีชื่อเสียงมีแผงขายอาหารหลายแผงเสนอเนื้อย่างสไตล์ยูนนาน เห็ด และผัก",
       "dishHighlights": [
-        "Grilled lamb skewers",
-        "Mushroom BBQ",
-        "Eggplant with garlic",
-        "Yunnan sausage"
+        "ย่างเนื้อแกะ",
+        "บาร์บีคิวเห็ด",
+        "มะเขือทรงเสร็จกระเทียม",
+        "ไส้กรอกยูนนาน"
       ],
       "tags": [
-        "street-food",
-        "bbq",
-        "nightlife",
-        "local"
+        "อาหารข้างถนน",
+        "บาร์บีคิว",
+        "ชีวิตยามค่ำคืน",
+        "ท้องถิ่น"
       ],
       "star": 0,
       "diamond": 0,
@@ -640,29 +640,29 @@
     {
       "id": "dali-20",
       "name": "巍山一根面",
-      "nameEn": "Weishan Single Noodle",
-      "type": "local",
-      "cuisine": "Yunnan Noodles",
+      "nameEn": "บะหมี่เดี่ยวเวย์ซาน",
+      "type": "ท้องถิ่น",
+      "cuisine": "ก๋วยเตี๋ยวยูนนาน",
       "avgPrice": 25,
       "rating": 4.8,
-      "address": "Weishan Ancient Town",
+      "address": "เมืองโบราณเวย์ชาน",
       "coordinates": {
         "lat": 25.2322,
         "lng": 100.3072
       },
       "hours": "07:00-14:00",
-      "description": "Legendary noodle shop famous for One Strand Noodles - a single kilometer-long noodle served in one bowl.",
+      "description": "ร้านก๋วยเตี๋ยวตำนานที่มีชื่อเสียงเรื่องก๋วยเตี๋ยวเส้นเดียว - เส้นก๋วยเตี๋ยวยาวหนึ่งกิโลเมตรในชามเดียว",
       "dishHighlights": [
-        "One strand noodle",
-        "Hot and sour broth",
-        "Braised pork topping",
-        "Hand-pulled noodles"
+        "ก๋วยเตี๋ยวเส้นเดียว",
+        "ซุปร้อนเปรี้ยว",
+        "หมูเปอร์กรีตนึ่ง",
+        "บะหมี่ลวก"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "famous",
-        "must-try"
+        "ท้องถิ่น",
+        "บะหมี่",
+        "มีชื่อเสียง",
+        "ต้องลอง"
       ],
       "star": 0,
       "diamond": 0,
@@ -672,20 +672,20 @@
     {
       "id": "dali-21",
       "name": "白族特色凉拌菜",
-      "nameEn": "Bai Cold Salad",
-      "type": "local",
-      "cuisine": "Bai Specialty",
+      "nameEn": "สลัดเย็นบาย",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารพื้นเมืองบาย",
       "avgPrice": 35,
       "rating": 4.5,
-      "address": "Xizhou Market",
+      "address": "ตลาดซีโจว",
       "coordinates": {
         "lat": 25.7622,
         "lng": 100.1272
       },
       "hours": "08:00-18:00",
-      "description": "Local specialty shop at Xizhou market serving various Bai-style cold salads with fresh vegetables and herbs.",
+      "description": "ร้านอาหารพื้นเมืองที่ตลาดซีโจวให้บริการสลัดเย็นสไตล์บายหลากหลายแบบพร้อมผักและสมุนไพรสดใหม่",
       "dishHighlights": [
-        "Cold radish salad",
+        "สลัดหัวไชเท้าเย็น",
         "สลัดมันฝรั่งสไตล์ไป๋",
         "แตงกวาดอง",
         "สลัดสมุนไพร"
@@ -705,7 +705,7 @@
       "id": "dali-22",
       "name": "烤全羊",
       "nameEn": "ลูกแกะย่างทั้งตัว",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "อาหารยูนนานปิ้งย่าง",
       "avgPrice": 150,
       "rating": 4.7,
@@ -737,11 +737,11 @@
       "id": "dali-23",
       "name": "银桥米线馆",
       "nameEn": "ร้านบะหมี่ยินเชียว",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "บะหมี่ยูนนาน",
       "avgPrice": 20,
       "rating": 4.5,
-      "address": "Yinqiao Town, Dali",
+      "address": "เมืองยินเชียว เต๋อลี",
       "coordinates": {
         "lat": 25.7222,
         "lng": 100.0872
@@ -768,8 +768,8 @@
     {
       "id": "dali-24",
       "name": "双廊咖啡馆",
-      "nameEn": "Shuanglang Lakeside Cafe",
-      "type": "cafe",
+      "nameEn": "คาเฟ่ริมทะเลสาบซวงหลัง",
+      "type": "คาเฟ่",
       "cuisine": "ฟิวชันตะวันตก/ยูนนาน",
       "avgPrice": 50,
       "rating": 4.6,
@@ -790,7 +790,7 @@
         "คาเฟ่",
         "วิวสวย",
         "แบบตะวันตก",
-        "cozy"
+        "อบอุ่น"
       ],
       "star": 0,
       "diamond": 0,
@@ -800,30 +800,30 @@
     {
       "id": "dali-25",
       "name": "大理壹号院",
-      "nameEn": "Dali No.1 Courtyard",
-      "type": "local",
-      "cuisine": "Bai Fine Dining",
+      "nameEn": "ที่คุ้มเลขที่ 1 ดาลี่",
+      "type": "ท้องถิ่น",
+      "cuisine": "อาหารไทยใต้ระดับหรู",
       "avgPrice": 150,
       "rating": 4.7,
-      "address": "Dali Old Town, West Gate",
+      "address": "เมืองเก่าดาลี่ ประตูตะวันตก",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1472
       },
       "phone": "+86 872 267 8888",
       "hours": "11:00-22:00",
-      "description": "Upscale Bai cuisine restaurant in a traditional courtyard, offering refined local specialties with elegant presentation.",
+      "description": "ร้านอาหารไทยใต้ระดับหรูหราในลานบ้านแบบดั้งเดิม เสนออาหารพื้นเมืองระดับประณีตพร้อมการจัดวางที่งดงาม",
       "dishHighlights": [
-        "Bai style fish",
-        "Mushroom hotpot",
-        "Bender cold chicken",
-        "Seasonal vegetables"
+        "ปลาสไตล์ไทยใต้",
+        "ตุ๋นเห็ด",
+        "ไก่เย็นเบนเดอร์",
+        "ผักตามฤดูกาล"
       ],
       "tags": [
-        "fine-dining",
-        "bai-cuisine",
-        "courtyard",
-        "special-occasion"
+        "ระดับหรู",
+        "อาหารไทยใต้",
+        "ลานบ้าน",
+        "โอกาสพิเศษ"
       ],
       "star": 0,
       "diamond": 0,
@@ -832,29 +832,29 @@
     {
       "id": "dali-26",
       "name": "小邑庄白族菜",
-      "nameEn": "Xiaoyi Zhuang Bai Cuisine",
-      "type": "local",
-      "cuisine": "Bai Home Style",
+      "nameEn": "อาหารไป่เซี่ยวอี้จวง",
+      "type": "ท้องถิ่น",
+      "cuisine": "ร้านอาหารไฮน์สไตล์",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Xiaoyi Village, near Dali Old Town",
+      "address": "หมู่บ้านเซียวอี้ ใกล้เมืองเก่าตะลี",
       "coordinates": {
         "lat": 25.7022,
         "lng": 100.1772
       },
       "hours": "10:00-21:00",
-      "description": "Local family-run restaurant serving authentic Bai home-style dishes in a traditional courtyard.",
+      "description": "ร้านอาหารครอบครัวท้องถิ่นเสิร์ฟอาหารแบบดั้งเดิมของชาวไฮน์ในลานบ้านแบบดั้งเดิม",
       "dishHighlights": [
-        "Braised pork",
-        "Steam egg",
-        "Pickled vegetables",
-        "Rice cakes"
+        "หมูตุ๋น",
+        "ไข่นึ่ง",
+        "ผักดอง",
+        "ขนมเค้กข้าว"
       ],
       "tags": [
-        "local",
-        "home-style",
-        "family-run",
-        "value"
+        "ท้องถิ่น",
+        "แบบโฮมเมด",
+        "ร้านครอบครัว",
+        "คุ้มค่า"
       ],
       "star": 0,
       "diamond": 0,
@@ -864,29 +864,29 @@
     {
       "id": "dali-27",
       "name": "巍山老街面馆",
-      "nameEn": "Weishan Old Street Noodles",
-      "type": "local",
-      "cuisine": "Yunnan Noodles",
+      "nameEn": "ก๋วยเตี๋ยวซอยเก่าเวียนซาน",
+      "type": "ท้องถิ่น",
+      "cuisine": "จีนหยวนนoodles",
       "avgPrice": 25,
       "rating": 4.8,
-      "address": "Weishan Ancient Town",
+      "address": "เมืองโบราณเวย์ชาน",
       "coordinates": {
         "lat": 25.2322,
         "lng": 100.3072
       },
       "hours": "07:00-14:00",
-      "description": "Legendary single-noodle shop famous for one long strand noodle in rich broth, a must-try in Weishan.",
+      "description": "ร้านเส้นบะกอร์ตำนานที่มีชื่อเสียงในเรื่องเส้นบะกอร์เส้นเดียวยาวในน้ำซุปเข้มข้น ต้องลองที่เวย์ชาน",
       "dishHighlights": [
-        "Single strand noodle",
-        "Hot and sour broth",
-        "Braised pork topping",
-        "Hand-pulled noodles"
+        "เส้นบะกอร์เส้นเดียว",
+        "ซุปร้อนเปรี้ยว",
+        "หมูเปอร์กรีตนึ่ง",
+        "บะหมี่ทำมือ"
       ],
       "tags": [
-        "local",
-        "famous",
-        "noodles",
-        "must-try"
+        "ท้องถิ่น",
+        "โด่งดัง",
+        "เนื้อมือ",
+        "ต้องลอง"
       ],
       "star": 0,
       "diamond": 0,
@@ -896,29 +896,29 @@
     {
       "id": "dali-28",
       "name": "才村湖景餐厅",
-      "nameEn": "Caicun Lake View Restaurant",
-      "type": "local",
-      "cuisine": "Yunnan/Seafood",
+      "nameEn": "ร้านอาหารวิวทะเลสาบไซซุน",
+      "type": "ท้องถิ่น",
+      "cuisine": "ยูนนาน/อาหารทะเล",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Caicun Village, Erhai Lake",
+      "address": "หมู่บ้านไช่ชุน, ทะเลสาบเออร์ไห",
       "coordinates": {
         "lat": 25.7222,
         "lng": 100.1672
       },
       "hours": "10:00-21:00",
-      "description": "Lakeside restaurant with Erhai views, serving fresh fish from the lake and Yunnan specialties.",
+      "description": "ร้านอาหารริมทะเลสาบเออร์ไหย วิวทะเลสาบเออร์ไหย เสิร์ฟปลาสดจากทะเลสาบและอาหารพิเศษยูนนาน",
       "dishHighlights": [
-        "Erhai lake fish",
-        "Sour cabbage fish",
-        "Lake shrimp",
-        "Bai style pork"
+        "ปลาทะเลสาบเอ๋อร์ไห่",
+        "ปลาร้าผัด",
+        "กุ้งทะเลสาบ",
+        "หมูสไตล์ไป่"
       ],
       "tags": [
-        "local",
-        "scenic",
-        "seafood",
-        "lake-view"
+        "ท้องถิ่น",
+        "วิวสวย",
+        "อาหารทะเล",
+        "วิวทะเลสาบ"
       ],
       "star": 0,
       "diamond": 0,
@@ -928,29 +928,29 @@
     {
       "id": "dali-29",
       "name": "桃溪牧场",
-      "nameEn": "Taoxi Pasture",
-      "type": "local",
-      "cuisine": "Yunnan BBQ/Grill",
+      "nameEn": "ทุ่งเลี้ยงแกะเตาซี",
+      "type": "ท้องถิ่น",
+      "cuisine": "บาร์บีคิวยูนนาน/ย่าง",
       "avgPrice": 100,
       "rating": 4.7,
-      "address": "Dali Countryside,桃溪",
+      "address": "ชนบทตะลี 桃溪",
       "coordinates": {
         "lat": 25.6522,
         "lng": 100.1072
       },
       "hours": "11:00-22:00",
-      "description": "Countryside restaurant specializing in grilled meats and fresh vegetables in scenic mountain setting.",
+      "description": "ร้านอาหารชนบทเชี่ยวชาญเนื้อย่างและผักสดในทัศนียภาพภูเขาที่สวยงาม",
       "dishHighlights": [
-        "Grilled lamb",
-        "Wild mushroom BBQ",
-        "Fresh vegetables",
-        "Mountain stream fish"
+        "แกะย่าง",
+        "เห็ดป่าย่าง",
+        "ผักสด",
+        "ปลาลำธารภูเขา"
       ],
       "tags": [
-        "local",
-        "countryside",
-        "bbq",
-        "scenic"
+        "ท้องถิ่น",
+        "ชนบท",
+        "บาร์บีคิว",
+        "วิวสวย"
       ],
       "star": 0,
       "diamond": 0,
@@ -960,29 +960,29 @@
     {
       "id": "dali-30",
       "name": "床山咖啡",
-      "nameEn": "Cangshan Coffee",
-      "type": "cafe",
-      "cuisine": "Specialty Coffee",
+      "nameEn": "ร้านกาแฟซังซาน",
+      "type": "คาเฟ่",
+      "cuisine": "กาแฟพิเศษ",
       "avgPrice": 40,
       "rating": 4.5,
-      "address": "Dali Old Town, Renmin Road",
+      "address": "เมืองเก่าตะลี ถนนเหรินหมิน",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "08:00-20:00",
-      "description": "Specialty coffee shop serving Yunnan beans, pour-overs, and espresso drinks in cozy atmosphere.",
+      "description": "ร้านกาแฟเฉพาะทางที่เสิร์ฟเมล็ดกาแฟยูนนาน กาแฟแบบเทใส่แก้ว และเครื่องดื่มเอสเปรสโซในบรรยากาศอบอุ่น",
       "dishHighlights": [
-        "Yunnan pour-over",
-        "Cappuccino",
-        "Affogato",
-        "Homemade cake"
+        "กาแฟยูนนานแบบเทใส่แก้ว",
+        "คาปูชิโน",
+        "อาฟโฟกาโต",
+        "เค้กบ้าน"
       ],
       "tags": [
-        "cafe",
-        "coffee",
-        "specialty",
-        "cozy"
+        "คาเฟ่",
+        "กาแฟ",
+        "พิเศษ",
+        "อบอุ่น"
       ],
       "star": 0,
       "diamond": 0,
@@ -992,29 +992,29 @@
     {
       "id": "dali-31",
       "name": "喜洲甜品店",
-      "nameEn": "Xizhou Sweet Shop",
-      "type": "local",
-      "cuisine": "Bai Desserts",
+      "nameEn": "ร้านของหวานซีโจว",
+      "type": "ท้องถิ่น",
+      "cuisine": "ของหวานไป๋",
       "avgPrice": 20,
       "rating": 4.6,
-      "address": "Xizhou Ancient Town",
+      "address": "เมืองเก่าซีโจว",
       "coordinates": {
         "lat": 25.7622,
         "lng": 100.1272
       },
       "hours": "09:00-18:00",
-      "description": "Local sweet shop famous for rice-based desserts, sweet rice balls, and traditional Bai snacks.",
+      "description": "ร้านของหวานท้องถิ่นที่มีชื่อเสียงในด้านของหวานที่ทำจากข้าว ลูกชุบข้าวเหนียว และอาหารว่างแบบไป๋ดั้งเดิม",
       "dishHighlights": [
-        "Sweet rice balls",
-        "Rose glutinous rice",
-        "Bai Style donuts",
-        "Sweet soup"
+        "ลูกชุบข้าวเหนียว",
+        "ข้าวเหนียวกุหลาบ",
+        "โดนัทแบบไป๋",
+        "ซุปหวาน"
       ],
       "tags": [
-        "local",
-        "dessert",
-        "sweet",
-        "traditional"
+        "ท้องถิ่น",
+        "ของหวาน",
+        "หวาน",
+        "ดั้งเดิม"
       ],
       "star": 0,
       "diamond": 0,
@@ -1024,29 +1024,29 @@
     {
       "id": "dali-32",
       "name": "下关沱茶馆",
-      "nameEn": "Xiaguan Tuo Tea House",
-      "type": "local",
-      "cuisine": "Tea House",
+      "nameEn": "ร้านชาซีกวนตัว",
+      "type": "ท้องถิ่น",
+      "cuisine": "ชาเฮาส์",
       "avgPrice": 60,
       "rating": 4.7,
-      "address": "Dali Old Town,复兴路",
+      "address": "เมืองเก่าต้านี ถนนฝูซิง",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "09:00-21:00",
-      "description": "Traditional tea house specializing in Yunnan Pu'er tea with tea tasting and purchase options.",
+      "description": "บ้านชาดั้งเดิมที่เชี่ยวชาญในชายูนนานพูเอ้อร์พร้อมตัวเลือกชิมชาและซื้อชา",
       "dishHighlights": [
-        "Aged Pu'er",
-        "Raw Pu'er",
-        "Ripe Pu'er",
-        "Tea ceremony"
+        "พูเอ้อร์เก่า",
+        "พูเอ้อร์ดิบ",
+        "พูเอ้อร์สุก",
+        "พิธีชงชา"
       ],
       "tags": [
-        "local",
-        "tea",
-        "cultural",
-        "traditional"
+        "ท้องถิ่น",
+        "ชา",
+        "วัฒนธรรม",
+        "ดั้งเดิม"
       ],
       "star": 0,
       "diamond": 0,
@@ -1057,7 +1057,7 @@
       "id": "dali-33",
       "name": "街边饵丝",
       "nameEn": "街边饵丝 (饵丝)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "饵丝",
       "avgPrice": 150,
       "rating": 4.6,
@@ -1086,7 +1086,7 @@
       "id": "dali-35",
       "name": "大理味砂锅鱼",
       "nameEn": "大理味砂锅鱼 (砂锅鱼)",
-      "type": "street",
+      "type": "ร้านอาหารข้างทาง",
       "cuisine": "砂锅鱼",
       "avgPrice": 25,
       "rating": 4.9,
@@ -1115,7 +1115,7 @@
       "id": "dali-37",
       "name": "老字号酸辣鱼",
       "nameEn": "老字号酸辣鱼 (酸辣鱼)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "酸辣鱼",
       "avgPrice": 62,
       "rating": 4.8,
@@ -1144,7 +1144,7 @@
       "id": "dali-39",
       "name": "正宗酸辣鱼",
       "nameEn": "正宗酸辣鱼 (酸辣鱼)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "酸辣鱼",
       "avgPrice": 68,
       "rating": 4.1,
@@ -1173,7 +1173,7 @@
       "id": "dali-41",
       "name": "大理味饵丝",
       "nameEn": "大理味饵丝 (饵丝)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "饵丝",
       "avgPrice": 141,
       "rating": 4.5,
@@ -1202,7 +1202,7 @@
       "id": "dali-43",
       "name": "街边乳扇",
       "nameEn": "街边乳扇 (乳扇)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "乳扇",
       "avgPrice": 139,
       "rating": 4,
@@ -1231,7 +1231,7 @@
       "id": "dali-45",
       "name": "老字号白族三道茶",
       "nameEn": "老字号白族三道茶 (白族三道茶)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "白族三道茶",
       "avgPrice": 99,
       "rating": 4,
@@ -1260,7 +1260,7 @@
       "id": "dali-47",
       "name": "传统酸辣鱼",
       "nameEn": "传统酸辣鱼 (酸辣鱼)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "酸辣鱼",
       "avgPrice": 109,
       "rating": 4,
@@ -1289,7 +1289,7 @@
       "id": "dali-49",
       "name": "老字号乳扇",
       "nameEn": "老字号乳扇 (乳扇)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "乳扇",
       "avgPrice": 78,
       "rating": 4.1,
@@ -1318,7 +1318,7 @@
       "id": "dali-51",
       "name": "巷子砂锅鱼",
       "nameEn": "巷子砂锅鱼 (砂锅鱼)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "砂锅鱼",
       "avgPrice": 89,
       "rating": 4.2,
@@ -1347,7 +1347,7 @@
       "id": "dali-53",
       "name": "老字号酸辣鱼",
       "nameEn": "老字号酸辣鱼 (酸辣鱼)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "酸辣鱼",
       "avgPrice": 53,
       "rating": 4.8,
@@ -1376,7 +1376,7 @@
       "id": "dali-55",
       "name": "正宗乳扇",
       "nameEn": "正宗乳扇 (乳扇)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "乳扇",
       "avgPrice": 128,
       "rating": 4.6,
@@ -1405,7 +1405,7 @@
       "id": "dali-57",
       "name": "老字号乳扇",
       "nameEn": "老字号乳扇 (乳扇)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "乳扇",
       "avgPrice": 47,
       "rating": 4.8,
@@ -1434,7 +1434,7 @@
       "id": "dali-59",
       "name": "街边砂锅鱼",
       "nameEn": "街边砂锅鱼 (砂锅鱼)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "砂锅鱼",
       "avgPrice": 112,
       "rating": 4.4,
@@ -1463,7 +1463,7 @@
       "id": "dali-61",
       "name": "正宗饵丝",
       "nameEn": "正宗饵丝 (饵丝)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "饵丝",
       "avgPrice": 118,
       "rating": 4.5,
@@ -1492,7 +1492,7 @@
       "id": "dali-63",
       "name": "正宗饵丝",
       "nameEn": "正宗饵丝 (饵丝)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "饵丝",
       "avgPrice": 97,
       "rating": 4.9,
@@ -1521,7 +1521,7 @@
       "id": "dali-65",
       "name": "正宗白族三道茶",
       "nameEn": "正宗白族三道茶 (白族三道茶)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "白族三道茶",
       "avgPrice": 70,
       "rating": 4.4,
@@ -1550,7 +1550,7 @@
       "id": "dali-67",
       "name": "阿婆饵丝",
       "nameEn": "阿婆饵丝 (饵丝)",
-      "type": "local",
+      "type": "ท้องถิ่น",
       "cuisine": "饵丝",
       "avgPrice": 83,
       "rating": 4.3,
@@ -2030,164 +2030,164 @@
   "culturalTips": [
     {
       "category": "bai",
-      "title": "Bai Culture",
-      "content": "Dali is home to the Bai ethnic minority. Respect local customs. The Bai have unique traditions including the 'Three-Angel' dress and tie-dye crafts. March Fair and绕三灵 festival are major events.",
+      "title": "วัฒนธรรมไป๋",
+      "content": "ตาลีเป็นบ้านของชาวไป๋ ชนกลุ่มน้อย โปรดเคารพประเพณีท้องถิ่น ชาวไป๋มีประเพณีที่โดดเด่นรวมถึงเครื่องแต่งกาย 'สามเทวทูต' และงานหัตถกรรมย้อมเทียน เทศกาลมาร์เก็ตและเทศกาลรานซานลิงเป็นงานสำคัญ",
       "importance": "high"
     },
     {
       "category": "cycling",
-      "title": "Erhai Cycling",
-      "content": "Cycling Erhai Lake is the signature experience. 120km around the lake. Start early, bring water and sunscreen. Rent bikes in Dali or Caicun. The eastern shore is less crowded.",
+      "title": "ปั่นจักรยานรอบเออร์ไห่",
+      "content": "การปั่นจักรยานรอบทะเลสาบเออร์ไห่เป็นประสบการณ์เด่น ระยะทาง 120 กิโลเมตรรอบทะเลสาบ เริ่มต้นเช้า เตรียมน้ำและครีมกันแดด เช่าจักรยานได้ที่ตาลีหรือไค่ชุน ชายฝั่งตะวันออกมีนักท่องเที่ยวน้อยกว่า",
       "importance": "high"
     },
     {
       "category": "weather",
-      "title": "Mountain Weather",
-      "content": "Dali's weather changes quickly. Mountains cause localized weather systems. Even in summer, bring a jacket. Rain can appear suddenly. Spring flowers and autumn colors are spectacular.",
+      "title": "สภาพอากาศบนภูเขา",
+      "content": "อากาศที่ตาลีเปลี่ยนแปลงเร็ว ภูเขาทำให้เกิดระบบอากาศท้องถิ่น แม้ในฤดูร้อนก็ควรพกเสื้อโค้ท ฝนอาจตกโดยไม่ทันใจ ดอกไม้ในฤดูใบไม้ผลิและสีสันในฤดูใบไม้ร่วงงดงามเป็นพิเศษ",
       "importance": "medium"
     },
     {
       "category": "etiquette",
-      "title": "Temple Etiquette",
-      "content": "When visiting Three Pagodas and temples, dress modestly covering shoulders and knees. Remove hats in temples. Don't point feet at Buddha images. Walk clockwise around pagodas.",
+      "title": "มารยาทในวัด",
+      "content": "เมื่อเยี่ยมชมพระเจดีย์สามแห่งและวัด แต่งกายสุภาพปิดบ่าและเข่า ถอดหมวกในวัด อย่าชี้เท้าไปที่พระพุทธรูป เดินตามเข็มนาฬิการอบพระเจดีย์",
       "importance": "medium"
     },
     {
       "category": "tiedye",
-      "title": "Bai Tie-dye Culture",
-      "content": "The Bai are famous for traditional tie-dye (扎染), using natural plant dyes on cotton fabric. Each pattern has symbolic meaning. Zhoucheng village is the center of this craft. Look for butterfly, fish, and flower patterns.",
+      "title": "วัฒนธรรมการย้อมผ้าไป๋",
+      "content": "ชาวไป๋มีชื่อเสียงเรื่องการย้อมเทียนดั้งเดิม (扎染) ใช้สีย้อมจากพืชธรรมชาติบนผ้าฝ้าย แต่ละลายมีความหมายเชิงสัญลักษณ์ หมู่บ้านโจ้วเฉิงเป็นศูนย์กลางงานหัตถกรรมนี้ มองหาลายผีเสื้อ ปลา และดอกไม้",
       "importance": "high"
     },
     {
       "category": "tea",
-      "title": "Yunnan Tea Culture",
-      "content": "Yunnan is famous for Pu'er tea. Dali has tea houses where you can experience tea ceremony. The Bai Three Tea Ceremony (三道茶) represents life flavors: bitter, sweet, and aftertaste. Tea is an important part of local social life.",
+      "title": "วัฒนธรรมชายูนนาน",
+      "content": "ยูนนานมีชื่อเสียงเรื่องชาปูเอร์ ตาลีมีร้านชาที่คุณสามารถสัมผัสพิธีชงชา พิธีชาสามอย่างของชาวไป๋ (三道茶) แสดงถึงรสชีวิต: ขม หวาน และรสหลังรับ ชาเป็นส่วนสำคัญของชีวิตสังคมท้องถิ่น",
       "importance": "medium"
     },
     {
       "category": "festivals",
-      "title": "Bai Festivals",
-      "content": "Major Bai festivals include: March Fair (三月街) - horse trading and trading fair in Dali; Rao San Ling (绕三灵) - pilgrimage to Three Sacred Places; Torch Festival (火把节) - lighting torches to ward off pests. Summer and early autumn are festival seasons.",
+      "title": "เทศกาลไป๋",
+      "content": "เทศกาลสำคัญของชาวไป๋ ได้แก่: เทศกาลมาร์เก็ต (三月街) - การซื้อขายม้าและตลาดที่ตาลี เทศกาลรานซานลิง (绕三灵) - การเดินทางไปยังสามสถานศักดิ์สิทธิ์ เทศกาลคบเพลิง (火把节) - การจุดคบเพลิงเพื่อขับไล่แมลง ฤดูร้อนและต้นฤดูใบไม้ร่วงเป็นฤดูกาลเทศกาล",
       "importance": "high"
     },
     {
       "category": "architecture",
-      "title": "Bai Architecture",
-      "content": "Bai houses feature white walls, grey tiles, and horse-head roofs. Three-in-one courtyards (三坊一照壁) are typical. Look for the精美的门楼 (ornate gate towers) and paintings on walls inside courtyards.",
+      "title": "สถาปัตยกรรมไป๋",
+      "content": "บ้านชาวไป๋มีผนังสีขาว หลังคากระเบื้องสีเทา และหลังคาหัวม้า ลานสามหลังในกำแพงเดียว (三坊一照壁) เป็นแบบทั่วไป มองหาหอประตูที่ประดับประดา (精美的门楼) และภาพวาดบนผนังในลาน",
       "importance": "medium"
     },
     {
       "category": "clothing",
-      "title": "Bai Traditional Clothing",
-      "content": "Bai women wear 'Three-Angel' costumes (三道茶) with white jackets, blue belts, and embroidered shoes. The famous 'Phoenix Crown' headdress symbolizes the phoenix. You can rent costumes for photos in tourist areas.",
+      "title": "เครื่องแต่งกายดั้งเดิมของชาวไป๋",
+      "content": "ผู้หญิงชาวไป๋สวมเครื่องแต่งกาย 'สามเทวทูต' (三道茶) กับแจ็คเก็ตสีขาญ เข็มขัดสีน้ำเงิน และรองเท้าปัก มงกุฎฟีนิกซ์ที่มีชื่อเสียงเป็นสัญลักษณ์ของนกฟีนิกซ์ คุณสามารถเช่าเครื่องแต่งกายถ่ายรูปได้ในพื้นที่ท่องเที่ยว",
       "importance": "medium"
     },
     {
       "category": "religion",
-      "title": "Bai Religion",
-      "content": "The Bai follow a mix of Buddhism, Taoism, and Benzhu (本主) worship - worship of local deities. Every village has a Benzhu temple. The Three Pagodas are important Buddhist sites. Be respectful when observing rituals.",
+      "title": "ศาสนาของชาวไป๋",
+      "content": "ชาวไป๋นับถือศาสนาผสมผสานระหว่างพุทธ เต๋า และการบูชาเบนจู (本主) - การบูชาเทพเจ้าท้องถิ่น ทุกหมู่บ้านมีวัดเบนจู พระเจดีย์สามแห่งเป็นสถานที่สำคัญทางพุทธ กรุณาเคารพเมื่อสังเกตพิธีกรรม",
       "importance": "low"
     },
     {
       "category": "music",
-      "title": "Bai Music",
-      "content": "Bai opera (白剧) combines singing, dancing, and acting. Traditional instruments include the Sanxian (三弦) and Horse-head fiddle. You can catch performances at Dali Ancient Town or during festivals.",
+      "title": "ดนตรีไป่",
+      "content": "อุปรากรไป๋ (白剧) ผสมผสานการร้อง การเต้น และการแสดง เครื่องดนตรีดั้งเดิมรวมถึงซานเซียน (三弦) และไวโอลินหัวม้า คุณสามารถชมการแสดงได้ที่เมืองเก่าตาลีหรือระหว่างเทศกาล",
       "importance": "low"
     },
     {
       "category": "food",
-      "title": "Bai Food Culture",
-      "content": "Bai cuisine features fresh vegetables, mushrooms, and fish. Rushan (乳扇) is stretched milk cheese. Bender (凉鸡) is cold chicken. Try local specialties at markets: Baba (粑粑) flatbread, Ersi (饵丝) rice noodles, and Mi Liangxia (米凉虾) shrimp-shaped jelly dessert.",
+      "title": "วัฒนธรรมอาหารไป่",
+      "content": "อาหารไป๋เน้นผักสด เห็ด และปลา รูซาน (乳扇) คือชีสนมตึง เบนเดอร์ (凉鸡) คือไก่เย็น ลองอาหารพื้นเมืองที่ตลาด: บาบา (粑粑) ขนมปังแบน เออร์ซื (饵丝) ขนมจีน และมี่เลียงเซีย (米凉虾) ขนมวุ้นรูปกุ้ง",
       "importance": "high"
     },
     {
       "category": "crafts",
-      "title": "Bai Silver Crafts",
-      "content": "Bai silver smithing is famous for intricate jewelry and decorative items. Silver is believed to have health benefits. Popular items include silver bracelets, hair ornaments, and tea accessories. Authentic silver has high purity.",
+      "title": "หัตถกรรมเงินไป่",
+      "content": "การตีเหล็กเงินของชาวไป๋ขึ้นชื่อเรื่องเครื่องประดับและของตกแต่งที่ละเอียดอ่อน เชื่อกันว่าเงินมีประโยชน์ต่อสุขภาพ ของยอดนิยมได้แก่ กำไลเงิน เครื่องประดับผม และอุปกรณ์ชงชา เงินแท้มีความบริสุทธิ์สูง",
       "importance": "low"
     },
     {
       "category": "wedding",
-      "title": "Bai Wedding Customs",
-      "content": "Bai weddings feature unique customs including the 'Jiao Zhai' (咬嫁) ritual where the bride bites the groom's ear. Wedding feasts are elaborate multi-course affairs. The bride changes into multiple costumes during the ceremony.",
+      "title": "ประเพณีแต่งงานไป่",
+      "content": "งานแต่งงานของชาวไป๋มีประเพณีที่เป็นเอกลักษณ์ รวมถึงพิธี \"เจี้ยว ไจ\" (咬嫁) ที่เจ้าสาวกัดหูเจ้าบ่าว งานเลี้ยงแต่งงานเป็นมื้ออาหารหลายจานที่จัดเต็ม เจ้าสาวจะเปลี่ยนชุดหลายชุดระหว่างพิธี",
       "importance": "low"
     },
     {
       "category": "fishing",
-      "title": "Erhai Fishing Culture",
-      "content": "Fishing has been central to Erhai life for centuries. Traditional fishing methods include using cormorants (鸬鹚). Some fishing villages still practice these methods. Fish dishes are staples of local cuisine.",
+      "title": "วัฒนธรรมการประมงเออไห่",
+      "content": "การประมงเป็นส่วนสำคัญของชีวิตรอบเออร์ไห่มาหลายศตวรรษ วิธีการประมงแบบดั้งเดิมรวมถึงการใช้นกกระทา (鸬鹚) หมู่บ้านประมงบางแห่งยังคงปฏิบัติตามวิธีเหล่านี้ อาหารปลาเป็นอาหารหลักของท้องถิ่น",
       "importance": "medium"
     },
     {
       "category": "dialect",
-      "title": "Bai Language",
-      "content": "The Bai language (白语) is tonal and completely different from Mandarin. Many locals speak both Bai and Mandarin. Learning a few Bai phrases like 'Ni hao' (hello) and ' Xie xie' (thank you) in Bai will be appreciated.",
+      "title": "ภาษาไป่",
+      "content": "ภาษาไป๋ (白语) เป็นภาษาที่มีระดับเสียงและแตกต่างจากภาษาจีนกลางอย่างสิ้นเชิง คนท้องถิ่นจำนวนมากพูดทั้งภาษาไป๋และภาษาจีนกลาง การเรียนรู้สำนวนภาษาไป๋ไม่กี่คำ เช่น \"Ni hao\" (สวัสดี) และ \"Xie xie\" (ขอบคุณ) ในภาษาไป๋จะได้รับการชื่นชม",
       "importance": "low"
     },
     {
       "category": "photography",
-      "title": "Photography Tips",
-      "content": "Dali offers excellent photography opportunities: sunrise at Erhai Lake, the pink wall in Xizhou, Cangshan Mountain reflections, and Bai people in traditional clothing. The best light is early morning and late afternoon. Bring a tripod for night shots of the Three Pagodas.",
+      "title": "เคล็ดลับการถ่ายภาพ",
+      "content": "ตะลิบที่ดีเยี่ยมในต้าหลี่: พระอาทิตย์ขึ้นที่ทะเลสาบเออร์ไห่ กำแพงสีชมพูในซีโจว ภาพสะท้อนของเขาซางซาน และชาวไป๋ในชุดประจำชาติ แสงที่ดีที่สุดคือช่วงเช้าตรู่และช่วงบ่าย ควรพกขาตั้งกล้องสำหรับถ่ายรูปตอนกลางคืนของพาหานทั้งสาม",
       "importance": "medium"
     },
     {
       "category": "shopping",
-      "title": "Dali Shopping",
-      "content": "Dali is famous for tie-dye products, silver jewelry, tea (especially Pu'er), and marble. The best shopping is at the morning market in Xizhou and Zhoucheng for tie-dye, and the Foreigners Street in Dali Old Town for silver and souvenirs. Bargaining is expected in markets.",
+      "title": "การช็อปปิ้งในตาลี",
+      "content": "ตะลิบขึ้นชื่อเรื่องผลิตภัณฑ์ย้อมเทียน เครื่องประดับเงิน ชา (โดยเฉพาะชาปูเอ้อร์) และหินอ่อน การช็อปปิ้งที่ดีที่สุดคือตลาดเช้าในซีโจวและโจวเฉิงสำหรับย้อมเทียน และถนนชาวต่างชาติในเมืองเก่าตะลิบสำหรับเงินและของที่ระลึก การต่อรองราคาเป็นสิ่งที่คาดหวังในตลาด",
       "importance": "medium"
     },
     {
       "category": "health",
-      "title": "Altitude and Health",
-      "content": "Dali sits at about 1972m elevation. Some visitors may experience mild altitude sickness. Stay hydrated, avoid strenuous activity on arrival, and eat lightly. The medical facilities in Dali are adequate for basic health issues.",
+      "title": "ความสูงและสุขภาพ",
+      "content": "ตะลิบตั้งอยู่ที่ระดับความสูงประมาณ 1,972 เมตร ผู้เยี่ยมชมบางคนอาจมีอาการป่วยเล็กน้อยจากความสูง ดื่มน้ำให้เพียงพอ หลีกเลี่ยงกิจกรรมที่หนักเมื่อเดินทางถึง และรับประทานอาหารเบาๆ สถานพยาบาลในตะลิบเพียงพอสำหรับปัญหาสุขภาพพื้นฐาน",
       "importance": "medium"
     },
     {
       "category": "language",
-      "title": "English in Dali",
-      "content": "English is limited in Dali outside tourist areas. Learning a few Mandarin phrases helps. Many young people in Dali Old Town and Shuanglang speak basic English. Translation apps are helpful for communicating with older locals.",
+      "title": "ภาษาอังกฤษในตาลี",
+      "content": "ภาษาอังกฤษมีจำกัดในตะลิบนอกพื้นที่ท่องเที่ยว การเรียนรู้สำนวนภาษาจีนกลางไม่กี่คำช่วยได้ คนหนุ่มสาวจำนวนมากในเมืองเก่าตะลิบและซวงหลางพูดภาษาอังกฤษพื้นฐานได้ แอปแปลภาษามีประโยชน์สำหรับสื่อสารกับคนท้องถิ่นที่สูงอายุ",
       "importance": "medium"
     },
     {
       "category": "sustainability",
-      "title": "Environmental Awareness",
-      "content": "Erhai Lake's ecosystem is fragile. Avoid single-use plastics, don't swim in restricted areas, and use eco-friendly transportation. Several initiatives promote lake protection. Be a responsible tourist.",
+      "title": "ความตระหนักด้านสิ่งแวดล้อม",
+      "content": "ระบบนิเวศของทะเลสาบเออร์ไห่เปราะบาง หลีกเลี่ยงพลาสติกใช้ครั้งเดียวทิ้ง อย่าว่ายน้ำในพื้นที่ห้าม และใช้การขนส่งที่เป็นมิตรต่อสิ่งแวดล้อม มีหลายโครงการส่งเสริมการปกป้องทะเลสาบ จงเป็นนักท่องเที่ยวที่รับผิดชอบ",
       "importance": "high"
     },
     {
       "category": "nanzhao",
-      "title": "Nanzhao Kingdom Heritage",
-      "content": "Dali was the capital of the Nanzhao Kingdom (738-902 AD), one of the longest-ruling dynasties in Chinese history. The Three Pagodas, Nanzhao Island, and Weishan Ancient Town reflect this heritage. Understanding this history enriches the visit.",
+      "title": "มรดกอาณาจักรหนานเจา",
+      "content": "ตะลิบเคยเป็นเมืองหลวงของอาณาจักรหนานจาว (738-902 ค.ศ.) ซึ่งเป็นหนึ่งในราชวงศ์ที่ปกครองนานที่สุดในประวัติศาสตร์จีน พาหานทั้งสาม เกาะหนานจาว และเมืองเก่าเวย์ซานสะท้อนมรดกนี้ การเข้าใจประวัติศาสตร์นี้ทำให้การเยี่ยมชมมีความหมายมากขึ้น",
       "importance": "medium"
     },
     {
       "category": "coffee",
-      "title": "Yunnan Coffee Culture",
-      "content": "Yunnan produces some of China's best coffee. Dali has several specialty coffee shops using locally grown beans. Try the Yunnan pour-over at cafes on Foreigners Street. Coffee plantations are nearby and offer tours.",
+      "title": "วัฒนธรรมกาแฟยูนนาน",
+      "content": "ยูนนานผลิตกาแฟที่ดีที่สุดในจีนบางส่วน ตะลิบมีร้านกาแฟเฉพาะทางหลายแห่งที่ใช้เมล็ดที่ปลูกในพื้นที่ ลองกาแฟยูนนานแบบพราวโอเวอร์ที่คาเฟ่บนถนนชาวต่างชาติ ไร่กาแฟใกล้เคียงมีบริการทัวร์",
       "importance": "low"
     },
     {
       "category": "gay-friendly",
-      "title": "LGBTQ+ Friendly Destination",
-      "content": "Dali has a reputation as one of China's more LGBTQ+ friendly destinations, with a relatively open atmosphere and welcoming vibe. Several bars and cafes cater to the community. The laid-back atmosphere is generally accepting.",
+      "title": "จุดหมายปลายทางที่เป็นมิตรกับ LGBTQ+",
+      "content": "ตะลิบมีชื่อเสียงในฐานะหนึ่งในจุดหมายปลายทางที่เป็นมิตรต่อ LGBTQ+ มากที่สุดในจีน มีบรรยากาศที่ค่อนข้างเปิดกว้างและต้อนรับ มีบาร์และคาเฟ่หลายแห่งที่ให้บริการชุมชน บรรยากาศผ่อนคลายโดยทั่วไปยอมรับได้",
       "importance": "medium"
     },
     {
       "category": "digital-nomad",
-      "title": "Digital Nomad Hub",
-      "content": "Dali has become a popular base for digital nomads and remote workers. Many cafes offer fast WiFi and quiet workspaces. Monthly apartment rentals are affordable. Coworking spaces are available in Dali Old Town.",
+      "title": "ศูนย์กลางดิจิทัลนอมแอด",
+      "content": "ตะลิบกลายเป็นฐานยอดนิยมสำหรับโดเมนดิจิทัลและผู้ทำงานระยะไกล คาเฟ่หลายแห่งมี WiFi เร็วและพื้นที่ทำงานเงียบ ค่าเช่าอพาร์ตเมนต์รายเดือนราคาไม่แพง มีพื้นที่ทำงานร่วมในเมืองเก่าตะลิบ",
       "importance": "medium"
     },
     {
       "category": "nightlife",
-      "title": "Dali Nightlife",
-      "content": "Dali has a vibrant nightlife scene around Foreigners Street with bars, live music, and clubs. Shuanglang has a more relaxed evening atmosphere with lake-view bars. Most nightlife closes by midnight on weekdays.",
+      "title": "ชีวิตยามค่ำคืนในตาหลี่",
+      "content": "ตะลิบมีชีวิตชีวาตอนกลางคืนรอบถนนชาวต่างชาติ มีบาร์ ดนตรีสด และคลับ ซวงหลางมีบรรยากาศค่ำคืนที่ผ่อนคลายมากกว่าพร้อมบาร์ริมทะเลสาบ ชีวิตยามค่ำคืนส่วนใหญ่ปิดเที่ยงคืนในวันธรรมดา",
       "importance": "low"
     },
     {
       "category": "weather",
-      "title": "Best Time to Visit",
-      "content": "The best times to visit Dali are March-May (spring flower season) and September-November (clear skies, autumn colors). Summer (June-August) is rainy but green. Winter is dry and sunny but cold. Avoid Chinese holidays when tourist sites are crowded.",
+      "title": "ช่วงเวลาที่ดีที่สุดในการเยี่ยมชม",
+      "content": "ช่วงเวลาที่ดีที่สุดในการเยี่ยมชมตะลิบคือ มีนาคม-พฤษภาคม (ฤดูใบไม้ผลิดอกไม้บาน) และกันยายน-พฤศจิกายน (ท้องฟ้าใส สีสันฤดูใบไม้ร่วง) ฤดูร้อน (มิถุนายน-สิงหาคม) มีฝนตกแต่เขียวขจี ฤดูหนาวแห้งและแดดจัดแต่หนาวเย็น หลีกเลี่ยงช่วงวันหยุดของจีนเมื่อสถานที่ท่องเที่ยวมีผู้คนพลุกพล่ก",
       "importance": "high"
     }
   ],
@@ -2195,660 +2195,660 @@
     {
       "type": "ambulance",
       "name": "大理急救中心",
-      "nameEn": "Dali Emergency Center",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "120",
-      "notes": "Dali People's Hospital has English interpreters"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "police",
       "name": "大理市公安局",
-      "nameEn": "Dali Public Security Bureau",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "110",
-      "notes": "Tourist police in Dali Old Town"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "hospital",
       "name": "大理市第一人民医院",
-      "nameEn": "Dali First People's Hospital",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 872 212 5465",
-      "address": "Yeyou Road, Dali City",
+      "address": "กว่างโจว",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
       },
-      "notes": "Main hospital in Dali"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "embassy",
       "name": "美国驻昆明总领事馆",
-      "nameEn": "US Consulate General Kunming",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 871 6364 1057",
-      "address": "Kunming (nearest US consular services)",
-      "notes": "For US citizens in Dali region"
+      "address": "กว่างโจว",
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "hospital",
       "name": "大理州人民医院",
-      "nameEn": "Dali Prefecture People's Hospital",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 872 212 5075",
-      "address": "Yeyou Road, Dali City",
+      "address": "กว่างโจว",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
       },
-      "notes": "Another major hospital with emergency services"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "tourist-police",
       "name": "大理旅游警察",
-      "nameEn": "Dali Tourist Police",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 872 267 4110",
-      "notes": "Tourist police station in Dali Old Town"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "fire",
       "name": "大理消防",
-      "nameEn": "Dali Fire Department",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "119",
-      "notes": "Fire and rescue services"
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "embassy",
       "name": "英国驻昆明总领事馆",
-      "nameEn": "UK Consulate Kunming",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 871 6564 6689",
-      "address": "Kunming",
-      "notes": "For UK citizens in Dali region"
+      "address": "กว่างโจว",
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻昆明总领事馆",
-      "nameEn": "Australia Consulate Kunming",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 871 6856 2100",
-      "address": "Kunming",
-      "notes": "For Australian citizens in Dali region"
+      "address": "กว่างโจว",
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "embassy",
       "name": "日本驻昆明总领事馆",
-      "nameEn": "Japan Consulate Kunming",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 871 6314 8288",
-      "address": "Kunming",
-      "notes": "For Japanese citizens in Dali region"
+      "address": "กว่างโจว",
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "embassy",
       "name": "法国驻昆明总领事馆",
-      "nameEn": "France Consulate Kunming",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 871 6331 5889",
-      "address": "Kunming",
-      "notes": "For French citizens in Dali region"
+      "address": "กว่างโจว",
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "embassy",
       "name": "德国驻昆明总领事馆",
-      "nameEn": "Germany Consulate Kunming",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 871 6312 5555",
-      "address": "Kunming",
-      "notes": "For German citizens in Dali region"
+      "address": "กว่างโจว",
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "embassy",
       "name": "加拿大驻广州总领事馆",
-      "nameEn": "Canada Consulate Guangzhou",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 20 3888 0400",
-      "address": "Guangzhou",
-      "notes": "For Canadian citizens in Dali region"
+      "address": "กว่างโจว",
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     },
     {
       "type": "embassy",
       "name": "韩国驻昆明总领事馆",
-      "nameEn": "South Korea Consulate Kunming",
+      "nameEn": "สถานกงสุลใหญ่สิงคโปร์กว่างโจว",
       "phone": "+86 871 6566 2115",
-      "address": "Kunming",
-      "notes": "For Korean citizens in Dali region"
+      "address": "กว่างโจว",
+      "notes": "สำหรับพลเมืองสิงคโปร์"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese, Bai dialect in local areas",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Bottled water recommended; tap water safe after boiling"
+    "language": "ภาษาจีน (แมนดาริน)",
+    "currency": "หยวนจีน (CNY/RMB)",
+    "visa": "ส่วนใหญ่ต้องมีวีซ่า นักเดินทางที่มีคุณสมบัติสามารถขอวีซ่าแวนผ่าน 72 ชั่วโมงที่สนามบิน",
+    "timeZone": "UTC+8 (เวลามาตรฐานจีน)",
+    "electricity": "220V/50Hz, ปลั๊กประเภท A/I",
+    "water": "น้ำประปาดื่มได้ แต่แนะนำให้ดื่มน้ำขวด"
   },
   "attractions": [
     {
       "id": "erhai-lake",
       "name": "洱海",
-      "nameEn": "Erhai Lake",
+      "nameEn": "ทะเลสาบหูหลูน",
       "category": "natural",
-      "description": "A beautiful highland lake often called 'Sea of Clouds' offering scenic cycling paths, traditional fishing villages, and stunning mountain backdrops.",
-      "address": "Erhai Lake, Dali Bai Autonomous Prefecture",
+      "description": "中国第五大淡水湖，面积2339平方公里，蒙古语意为海一样的湖。",
+      "address": "呼伦贝尔市新巴尔虎右旗",
       "coordinates": {
         "lat": 25.7522,
         "lng": 100.1872
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free (some scenic spots may charge)",
-      "recommendedVisitTime": "Half to full day",
+      "openingHours": "全天",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "Cycling path around lake",
-        "Fisherman's village",
-        "Shuanglang village",
-        "Wutai Lake view"
+        "湖光山色",
+        "候鸟",
+        "日落",
+        "วิวทะเลสาบอูไท"
       ],
-      "tips": "Rent a bicycle (40-80¥/day) to circle the lake. Start early to avoid tour buses. Best light for photos in early morning.",
+      "tips": "夏季最佳，可品尝全鱼宴。",
       "image": "/img/ext/6faaa02aad08.webp",
       "phone": "+86 087 2 8699 3091"
     },
     {
       "id": "three-pagodas",
       "name": "大理三塔",
-      "nameEn": "Three Pagodas of Dali",
+      "nameEn": "สามเจดีย์แห่งตาลี",
       "category": "cultural",
-      "description": "Iconic trio of ancient Buddhist pagodas dating back to the 9th century, symbol of Dali's historic Nanzhao Kingdom.",
-      "address": "1 Hongshan Road, Dali City",
+      "description": "ไต้รางปาทาสามหอคอยพุทธโบราณอันเป็นสัญลักษณ์จากศตวรรษที่ 9 สัญลักษณ์ของราชอาณาจักรนานเจาในประวัติศาสตร์ของตาลี",
+      "address": "1 ถนนหงซาน เมืองตาลี",
       "coordinates": {
         "lat": 25.6722,
         "lng": 100.1572
       },
       "openingHours": "07:00-19:00",
       "ticketPrice": "75¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Three Pagodas main temple",
-        "Butterfly spring nearby",
-        "Ancient Buddhist artifacts"
+        "ไต้รางปาทาสามหอคอยหลัก",
+        "บ่อน้ำผีเสื้อใกล้เคียง",
+        "สิ่งประดิษฐ์พุทธโบราณ"
       ],
-      "tips": "Visit in morning to avoid tour crowds. Combine with nearby Butterfly Spring in spring. Good photo opportunities from temple courtyard.",
+      "tips": "ไปเยี่ยมชมในตอนเช้าเพื่อหลีกเลี่ยงฝูงนักท่องเที่ยว รวมกับบ่อน้ำผีเสื้อใกล้เคียงในฤดูใบไม้ผลิ ถ่ายรูปได้สวยจากลานวัด",
       "image": "/img/ext/1869dc714dd1.webp",
       "phone": "+86 087 2 7534 3361"
     },
     {
       "id": "dali-old-town",
       "name": "大理古城",
-      "nameEn": "Dali Old Town",
+      "nameEn": "เมืองเก่าตาลี",
       "category": "cultural",
-      "description": "A beautifully preserved ancient town with traditional Bai architecture, cobblestone streets, and lively local culture.",
-      "address": "Dali Old Town, Dali City",
+      "description": "เมืองโบราณที่สวยงามและได้รับการอนุรักษ์ไว้ มีสถาปัตยกรรมแบบไป๋แบบดั้งเดิม ถนนคนเดินหินกรวด และวัฒนธรรมท้องถิ่นที่มีชีวิตชีวา",
+      "address": "เมืองเก่าตาลี เมืองตาลี",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free (某些景点需要门票)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี (บางสถานที่ต้องซื้อตั๋ว)",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Foreigners Street",
-        "Five Phoenix Pagoda",
-        "Dali University area",
-        "Bai tie-dye workshops"
+        "ถนนชาวต่างชาติ",
+        "พระอาคารห้าพญาจีน",
+        "บริเวณมหาวิทยาลัยตาลี",
+        "โรงงานผ้าย้อมสีแบบไป๋"
       ],
-      "tips": "Stay overnight to experience night atmosphere. Early morning before shops open for photos. Explore side alleys for authentic Bai life.",
+      "tips": "พักค้างคืนเพื่อสัมผัสบรรยากาศยามค่ำคืน เช้ามาก่อนร้านค้าเปิดเพื่อถ่ายรูป สำรวจตรอกซอกซอยเพื่อสัมผัสชีวิตแบบไป๋แท้ๆ",
       "image": "/img/ext/a6e176e9ca1c.webp",
       "phone": "+86 872 267 1545"
     },
     {
       "id": "xizhou-market",
       "name": "喜洲古镇",
-      "nameEn": "Xizhou Ancient Town",
+      "nameEn": "เมืองเก่าซีโจว",
       "category": "cultural",
-      "description": "Well-preserved Bai ethnic town famous for its architecture, local markets, and authentic Bai way of life.",
-      "address": "Xizhou Town, Dali County",
+      "description": "เมืองชาวไป๋ที่ได้รับการอนุรักษ์ไว้อย่างดี มีชื่อเสียงเรื่องสถาปัตยกรรม ตลาดท้องถิ่น และวิถีชีวิตแบบไป๋แท้ๆ",
+      "address": "เมืองซี่โจว เขตตาลี",
       "coordinates": {
         "lat": 25.7622,
         "lng": 100.1272
       },
-      "openingHours": "Open 24 hours (market 08:00-18:00)",
-      "ticketPrice": "Free (Zhou's compound 60¥)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "เปิด 24 ชั่วโมง (ตลาด 08:00-18:00)",
+      "ticketPrice": "ฟรี (ค่าเข้าคฤหาสน์โจว 60¥)",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Zhou's Residence",
-        "Bai Tie-dye workshops",
-        "Friday market",
-        "Bai costume photos"
+        "บ้านตระกูลโจว",
+        "สถานที่สอนการย้อมผ้าแบบไป่",
+        "ตลาดวันศุกร์",
+        "ถ่ายภาพในชุดแพลวงไป่"
       ],
-      "tips": "Visit on market day (Friday, Saturday) for authentic experience. Try Baba (Bai flatbread) from vendors. Zhou's compound is worth entrance fee.",
+      "tips": "ไปวันตลาด (วันศุกร์ วันเสาร์) เพื่อประสบการณ์แท้ๆ ลองทานบาบา (ขนมแบนแบบไป๋) จากแผงขายของ คฤหาสน์โจวคุ้มค่ากับค่าเข้าชม",
       "image": "/img/ext/af97d8cb4b05.webp",
       "phone": "+86 087 2 3514 2224"
     },
     {
       "id": "shuanglang",
       "name": "双廊",
-      "nameEn": "Shuanglang",
+      "nameEn": "ซวงหลาง",
       "category": "natural",
-      "description": "A serene lakeside village on Erhai Lake's eastern shore, known for scenic beauty, boutique hotels, and photography spots.",
-      "address": "Shuanglang Town, Dali County",
+      "description": "หมู่บ้านริมทะเลสาบที่สงบงามบนฝั่งตะวันออกของทะเลสาบเออร์ไฮ ขึ้นชื่อเรื่องทิวทัศน์ที่สวยงาม โรงแรมบูทีก และจุดถ่ายภาพ",
+      "address": "เมืองซวงหลาง เขตมณฑลตาลี",
       "coordinates": {
         "lat": 25.8822,
         "lng": 100.1572
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-4 hours",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "2-4 ชั่วโมง",
       "highlights": [
-        "Nantian photographer point",
-        "Small fishing villages",
-        "Lakeside cafes",
-        "Yoga retreats"
+        "จุดถ่ายภาพนานเทียน",
+        "หมู่บ้านชาวประมงเล็กๆ",
+        "คาเฟ่ริมทะเลสาบ",
+        "สถานที่ฝึกโยคะ"
       ],
-      "tips": "Stay overnight at boutique lakeside hotels. Best sunset views from Nantian. Rent electric bike to explore coastline.",
+      "tips": "พักค้างคืนที่โรงแรมบูทีกริมทะเลสาบ ชมพระอาทิตย์ตกที่สวยที่สุดที่นานเทียน เช่าจักรยานยนต์ไฟฟ้าสำรวจชายฝั่ง",
       "image": "/img/ext/39e307f398db.webp",
       "phone": "+86 087 2 0104 3559"
     },
     {
       "id": "cangshan-mountain",
       "name": "苍山",
-      "nameEn": "Cangshan Mountain",
+      "nameEn": "ภูซังซาน",
       "category": "natural",
-      "description": "A dramatic mountain range behind Dali with hiking trails, ancient temples, and panoramic views of Erhai Lake.",
-      "address": "Cangshan Mountain, west of Dali",
+      "description": "เทือกเขาที่งดงามหลังเมืองตาลี มีเส้นทางเดินป่า วัดโบราณ และวิวทะเลสาบเออร์ไฮแบบพานอรามา",
+      "address": "ภูซังซาน ทางตะวันตกของเมืองตาลี",
       "coordinates": {
         "lat": 25.6722,
         "lng": 100.1072
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "40¥ (cable car extra)",
-      "recommendedVisitTime": "Half to full day",
+      "ticketPrice": "40¥ (ไม่รวมกระเช้าลอยฟ้า)",
+      "recommendedVisitTime": "ครึ่งวันถึงวันเต็ม",
       "highlights": [
-        "Giant's Head with 18 peaks",
-        "Jade Belt Road",
-        "Qiliang Temple",
-        "Alpine meadows"
+        "ยอดยักษ์กับ18ยอดเขา",
+        "ถนนสายเข็มขัดหยก",
+        "วัดฉีเหลียง",
+        "ทุ่งหญ้าบนภูเขาสูง"
       ],
-      "tips": "Take the cable car up for easier hiking. Weather changes quickly - bring layers and rain gear. Hiking trail is well marked but steep.",
+      "tips": "นั่งกระเช้าลอยฟ้าขึ้นไปเพื่อเดินป่าง่ายขึ้น สภาพอากาศเปลี่ยนแปลงเร็ว - เตรียมเสื้อผ้าหลายชั้นและอุปกรณ์กันฝน เส้นทางเดินป่ามีป้ายบอกทางชัดเจนแต่ค่อนข้างชัน",
       "image": "/img/ext/38f44f1e4171.webp",
       "phone": "+86 087 2 5125 6111"
     },
     {
       "id": "weibao-mountain",
       "name": "巍宝山",
-      "nameEn": "Weibao Mountain",
+      "nameEn": "ภูเขาเว่ยเป้า",
       "category": "cultural",
-      "description": "A sacred Taoist mountain with ancient temples, hiking trails, and panoramic views of the Dali valley.",
-      "address": "Weibao Mountain, Weishan County",
+      "description": "ภูเขาศักดิ์สิทธิ์ของลัทธิเต๋าที่มีวัดโบราณ เส้นทางเดินป่า และวิวทิวทัศน์อันงดงามของหุบเขาเดลี",
+      "address": "เว่ยเป้าเซน, อำเภอเว่ยซาน",
       "coordinates": {
         "lat": 25.2322,
         "lng": 100.3372
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "40¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4 ชั่วโมง",
       "highlights": [
-        "Ancient Taoist temples",
-        "Mountain scenery",
-        "Less crowded",
-        "Authentic experience"
+        "วัดโบราณของลัทธิเต๋า",
+        "วิวภูเขา",
+        "มีนักท่องเที่ยวน้อย",
+        "ประสบการณ์แท้จริง"
       ],
-      "tips": "Less visited than Cangshan. Good for hikers seeking solitude. Bring water and snacks. Start in morning.",
+      "tips": "มีนักท่องเที่ยวน้อยกว่าภูเขาซังซาน เหมาะสำหรับนักเดินป่าที่ต้องการความสงบ นำน้ำและอาหารว่างติดตัว เริ่มต้นในตอนเช้า",
       "image": "/img/ext/54c1ad3edb17.webp",
       "phone": "+86 087 2 1045 2098"
     },
     {
       "id": "butterfly-spring",
       "name": "蝴蝶泉",
-      "nameEn": "Butterfly Spring",
+      "nameEn": "บ่อน้ำผีเสื้อ",
       "category": "natural",
-      "description": "A legendary spring surrounded by ancient trees, traditionally associated with butterfly mating season in spring.",
-      "address": "Butterfly Spring Park, 20km north of Dali",
+      "description": "บ่อน้ำตำนานที่ล้อมรอบด้วยต้นไม้โบราณ เชื่อมโยงกับฤดูผสมพันธุ์ผีเสื้อในฤดูใบไม้ผลิ",
+      "address": "สวนบ่อน้ำผีเสื้อ, 20 กม. ทางเหนือของเมืองเดลี",
       "coordinates": {
         "lat": 25.8522,
         "lng": 100.1272
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 ชั่วโมง",
       "highlights": [
-        "Legendary spring",
-        "Butterfly exhibition",
-        "Bai performance",
-        "Ancient trees"
+        "บ่อน้ำตำนาน",
+        "นิทรรศการผีเสื้อ",
+        "การแสดงวัฒนธรรมไป๋",
+        "ต้นไม้โบราณ"
       ],
-      "tips": "Best in April-May when actual butterflies appear. Combine with Xizhou and Erhai Lake cycling. Performance times: 9:30, 11:00, 14:00, 15:30.",
+      "tips": "เหมาะที่สุดในเดือนเมษายน-พฤษภาคมเมื่อผีเสื้อปรากฏจริง รวมกับการปั่นจักรยานที่ซิ่วโจวและทะเลสาบเออไหหลิง เวลาการแสดง: 9:30, 11:00, 14:00, 15:30",
       "image": "/img/ext/fd780ef70830.webp",
       "phone": "+86 087 2 5910 4245"
     },
     {
       "id": "zhoucheng-tiedye",
       "name": "周城扎染",
-      "nameEn": "Zhoucheng Tie-dye Village",
+      "nameEn": "หมู่บ้านย้อมผ้าโจวเชิง",
       "category": "cultural",
-      "description": "The largest Bai ethnic village famous for traditional tie-dye crafts. Over 90% of residents are involved in tie-dye production.",
-      "address": "Zhoucheng Village, Dali County",
+      "description": "หมู่บ้านชาวไป๋ที่ใหญ่ที่สุดที่มีชื่อเสียงในด้านหัตถกรรมผ้าย้อมความ มากกว่า 90% ของชาวบ้านประกอบอาชีพผลิตผ้าย้อมความ",
+      "address": "หมู่บ้านจ้อวเชิง, อำเภอเดลี",
       "coordinates": {
         "lat": 25.8022,
         "lng": 100.0872
       },
       "openingHours": "08:00-19:00",
-      "ticketPrice": "Free (workshops extra)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "ฟรี (ค่าชมนิทรรศการเพิ่มเติม)",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Tie-dye workshops",
-        "Bai folk performances",
-        "Ancient architecture",
-        "Miao-Hua marriage market"
+        "ชุปนิทรรศการย้อมความ",
+        "การแสดงพื้นเมืองไป่",
+        "สถาปัตยกรรมโบราณ",
+        "ตลาดแต่งงานเมียว-หัว"
       ],
-      "tips": "Visit morning market on weekends. Try DIY tie-dye experience. Best light for photos in early morning.",
+      "tips": "เยี่ยมชมตลาดเช้าวันหยุดสุดสัปดาห์ ลองทำผ้าย้อมความด้วยตัวเอง แสงที่ดีที่สุดสำหรับถ่ายรูปในตอนเช้าตรู่",
       "image": "/img/ext/b2c1f8758015.webp",
       "phone": "+86 087 2 3245 9401"
     },
     {
       "id": "weishan-ancient",
       "name": "巍山古城",
-      "nameEn": "Weishan Ancient Town",
+      "nameEn": "เมืองโบราณเวย์ชาน",
       "category": "cultural",
-      "description": "A perfectly preserved ancient city and the birthplace of the Nanzhao Kingdom. Less touristy than Dali Old Town with authentic local life.",
-      "address": "Weishan County, Dali",
+      "description": "เมืองโบราณที่สมบูรณ์แบบและเป็นรั้วของอาณาจักรนานเจา มีนักท่องเที่ยวน้อยกว่าเมืองเก่าต้าเหลียนและมีชีวิตท้องถิ่นที่แท้จริง",
+      "address": "เขตเวย์ชาน ต้าเหลียน",
       "coordinates": {
         "lat": 25.2322,
         "lng": 100.3072
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free (巍山文庙 20¥)",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี (วีซานเวนเจียว 20¥)",
+      "recommendedVisitTime": "3-4 ชั่วโมง",
       "highlights": [
-        "Nanzhao culture",
-        "Ancient city walls",
-        "Tuojiang Temple",
-        "Weishan snacks"
+        "วัฒนธรรมนานเจา",
+        "กำแพงเมืองโบราณ",
+        "วัดตัวเจียง",
+        "ขนมขบเคี้ยวเวย์ชาน"
       ],
-      "tips": "Come for the torch festival (July-August). Try Weishan's famous Nanjiang rice noodles. Start from the south gate.",
+      "tips": "มาในเทศกาลคบเพลิง (กรกฎาคม-สิงหาคม) ลองเส้นบะหมี่ข้าวหยางนานเจียงที่มีชื่อเสียงของเวย์ชาน เริ่มต้นจากประตูใต้",
       "image": "/img/ext/8f7f83c1713d.webp",
       "phone": "+86 087 2 8222 9967"
     },
     {
       "id": "nanzhao-island",
       "name": "南诏风情岛",
-      "nameEn": "Nanzhao Fengqing Island",
+      "nameEn": "เกาะนานเจา เฟิงชิง",
       "category": "cultural",
-      "description": "A small island in Erhai Lake showcasing Nanzhao Kingdom culture with statues, temples, and traditional Bai architecture.",
-      "address": "Erhai Lake, near Shuanglang",
+      "description": "เกาะเล็กๆ ในทะเลสาบเออร์ไฮที่นำเสนอวัฒนธรรมอาณาจักรนานเจาพร้อมรูปปั้น วัด และสถาปัตยกรรมแบบไป่ดั้งเดิม",
+      "address": "ทะเลสาบเออร์ไฮ ใกล้ชวงหลาง",
       "coordinates": {
         "lat": 25.8722,
         "lng": 100.1672
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "50¥ (includes boat)",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "50¥ (รวมเรือ)",
+      "recommendedVisitTime": "1-2 ชั่วโมง",
       "highlights": [
-        "Nanzhao King statue",
-        "Bai architecture",
-        "Buddhist temple",
-        "Lake views"
+        "รูปปั้นกษัตริย์นานเจา",
+        "สถาปัตยกรรมไป่",
+        "วัดพุทธ",
+        "วิวทะเลสาบ"
       ],
-      "tips": "Combine with Shuanglang visit. Take the boat to the island. Best visited in morning.",
+      "tips": "รวมกับการเยี่ยมชวงหลาง นั่งเรือไปเกาะ ควรไปเช้า",
       "image": "/img/ext/b6efc229d6e8.webp",
       "phone": "+86 087 2 8131 4614"
     },
     {
       "id": "xiaoputuo",
       "name": "小普陀",
-      "nameEn": "Xiaoputuo",
+      "nameEn": "เซียวพู่ถัว",
       "category": "cultural",
-      "description": "A tiny island temple in Erhai Lake with a small pagoda, one of the most photographed spots in Dali.",
-      "address": "Erhai Lake, eastern shore",
+      "description": "วัดเกาะเล็กๆ ในทะเลสาบเออร์ไฮพร้อมพระเจดีย์เล็ก เป็นหนึ่งในสถานที่ถ่ายรูปมากที่สุดในต้าเหลียน",
+      "address": "ทะเลสาบเออร์ไห่ ชายฝั่งตะวันออก",
       "coordinates": {
         "lat": 25.9022,
         "lng": 100.1772
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "30¥ (boat extra)",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "30¥ (เรือเพิ่มเติม)",
+      "recommendedVisitTime": "1 ชั่วโมง",
       "highlights": [
-        "Island pagoda",
-        "Fisherman's temple",
-        "Sunrise views",
-        "Boat ride"
+        "วัดพีระมิดบนเกาะ",
+        "วัดชาวประมง",
+        "วิวพระอาทิตย์ขึ้น",
+        "นั่งเรือชม"
       ],
-      "tips": "Best at sunrise for photography. Can feed seagulls from the boat. Combine with cycling the eastern shore.",
+      "tips": "เหมาะที่สุดสำหรับการถ่ายรูปตอนพระอาทิตย์ขึ้น สามารถให้อาหารนกนางนวลจากเรือ รวมกับการปั่นจักรยานรอบชายฝั่งตะวันออก",
       "image": "/img/ext/9711badd781a.webp",
       "phone": "+86 087 2 4828 0338"
     },
     {
       "id": "ximatian",
       "name": "洗马潭",
-      "nameEn": "Ximatian",
+      "nameEn": "ซีเมเทียน",
       "category": "natural",
-      "description": "A high-altitude alpine meadow and marsh at Cangshan Mountain, accessible by cable car with stunning views.",
-      "address": "Cangshan Mountain, highest point",
+      "description": "ทุ่งหญ้าอัลไพน์และหนองบึงที่ระดับสูงบนเขาแคงซาน เข้าถึงได้โดยกระเช้าขึ้นเขาพร้อมวิวที่งดงาม",
+      "address": "เขาแคงซาน จุดสูงสุด",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.0872
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "100¥ (cable car included)",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "100¥ (รวมกระเช้า)",
+      "recommendedVisitTime": "3-4 ชั่วโมง",
       "highlights": [
-        "Alpine meadow",
-        "Mountain marsh",
-        "Panoramic views",
-        "Wildflowers"
+        "ทุ่งหญ้าอัลไพน์",
+        "หนองบึงบนเขา",
+        "ทิวทัศน์ที่กว้างไกล",
+        "ดอกไม้ป่า"
       ],
-      "tips": "Take the cable car up. Weather changes rapidly - bring warm layers. Best visited in summer for wildflowers.",
+      "tips": "นั่งกระเช้าขึ้นเขา สภาพอากาศเปลี่ยนแปลงเร็ว - เตรียมเสื้อผ้าที่อบอุ่น เหมาะที่สุดในช่วงฤดูร้อนเพื่อชมดอกไม้ป่า",
       "image": "/img/ext/ea71a28d01bf.webp",
       "phone": "+86 087 2 5758 2816"
     },
     {
       "id": "tianlongcave",
       "name": "天龙洞",
-      "nameEn": "Tianlong Cave",
+      "nameEn": "ถ้ำเทียนหลง",
       "category": "cultural",
-      "description": "Ancient Buddhist cave temple with colorful statues and carvings dating back to the Nanzhao Kingdom period.",
-      "address": "Cangshan Mountain, lower slope",
+      "description": "ถ้ำพุทธศาสนาโบราณที่มีรูปปั้นและจารึกหลากสี สร้างขึ้นในยุคราชวงศ์นานจ้าว",
+      "address": "เขาแคงซาน ลาดเขาตอนล่าง",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1172
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 ชั่วโมง",
       "highlights": [
-        "Buddhist statues",
-        "Ancient carvings",
-        "Cave exploration",
-        "Mountain scenery"
+        "รูปปั้นพุทธ",
+        "จารึกโบราณ",
+        "การสำรวจถ้ำ",
+        "วิวภูเขา"
       ],
-      "tips": "Combine with Cangshan hike. The cave is smaller than it looks from outside. Good for shelter if raining.",
+      "tips": "รวมกับการเดินป่าเขาแคงซาน ถ้ำมีขนาดเล็กกว่าที่มองเห็นจากภายนอก เหมาะสำหรับหลบฝน",
       "image": "/img/ext/67e7a64c5119.webp",
       "phone": "+86 087 2 5973 6910"
     },
     {
       "id": "erhai-westlake",
       "name": "洱源西湖",
-      "nameEn": "Erhai West Lake",
+      "nameEn": "ทะเลสาบเออร์ไฮเวสต์",
       "category": "natural",
-      "description": "A beautiful lake area with wetland scenery, lotus fields, and traditional Bai fishing villages. Less crowded than Erhai Lake.",
-      "address": "Eryuan County, Dali",
+      "description": "พื้นที่ทะเลสาบที่สวยงามพร้อมทัศนียภาพพื้นที่ชุ่มน้ำ แปลงดอกบัว และหมู่บ้านชาวประมงแบบไบยดั้งเดิม คนน้อยกว่าทะเลสาบเออร์ไฮ",
+      "address": "อำเภอเออร์ยวน ตาลี",
       "coordinates": {
         "lat": 26.0522,
         "lng": 100.0872
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free (boat tours extra)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "เข้าชมฟรี (เรือนำเที่ยวคิดค่าบริการเพิ่ม)",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Lotus fields",
-        "Wetland scenery",
-        "Fishing villages",
-        "Bird watching"
+        "แปลงดอกบัว",
+        "ทัศนียภาพพื้นที่ชุ่มน้ำ",
+        "หมู่บ้านชาวประมง",
+        "การดูนก"
       ],
-      "tips": "Best in summer for lotus. Take a boat tour through the waterways. Good for cycling combined with nearby temples.",
+      "tips": "ดีที่สุดในฤดูร้อนสำหรับดอกบัว รับทัวร์เรือผ่านทางน้ำ เหมาะสำหรับปั่นจักรยานรวมกับวัดใกล้เคียง",
       "image": "/img/ext/a23362069697.webp",
       "phone": "+86 087 2 8790 6120"
     },
     {
       "id": "xizhou-haishe",
       "name": "喜洲海舌生态公园",
-      "nameEn": "Xizhou Haishe Eco Park",
+      "nameEn": "สวนนิเวศซิโจวไห่เซ่อ",
       "category": "natural",
-      "description": "A peninsula extending into Erhai Lake, offering 180-degree views of the lake and Cangshan Mountains.",
-      "address": "Near Xizhou Ancient Town",
+      "description": "คาบสมุทรยื่นออกไปในทะเลสาบเออร์ไฮ มองเห็นวิว180องศาของทะเลสาบและเทือกเขาซังซาน",
+      "address": "ใกล้เมืองเก่าซิโจว",
       "coordinates": {
         "lat": 25.7722,
         "lng": 100.1172
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "1-2 ชั่วโมง",
       "highlights": [
-        "Peninsula viewpoint",
-        "Lake and mountain views",
-        "Photography spot",
-        "Shoreline walks"
+        "จุดชมวิวบนคาบสมุทร",
+        "วิวทะเลสาบและเขา",
+        "จุดถ่ายรูป",
+        "เดินเล่นริมชายหาด"
       ],
-      "tips": "Best at sunrise or sunset. Very crowded on weekends. Combine with Xizhou Baba tour.",
+      "tips": "ดีที่สุดตอนพระอาทิตย์ขึ้นหรือตก คนพลุกล่ำมากในวันหยุด ควรรวมกับทัวร์ซิโจวบาบา",
       "image": "/img/ext/d379551d93fd.webp",
       "phone": "+86 087 2 0943 4484"
     },
     {
       "id": "dali-museum",
       "name": "大理州博物馆",
-      "nameEn": "Dali Prefecture Museum",
+      "nameEn": "พิพิธภัณฑ์จังหวัดตาลี",
       "category": "cultural",
-      "description": "A modern museum showcasing Dali's history from Nanzhao Kingdom to present, with artifacts and interactive exhibits.",
-      "address": "Dali City, near Erhai Lake",
+      "description": "พิพิธภัณฑ์สมัยใหม่ที่แสดงประวัติศาสตร์ตั้งแต่อาณาจักรนานจาวจนถึงปัจจุบัน พร้อมโบราณวัตถุและนิทรรศการแบบมีปฏิสัมพันธ์",
+      "address": "เมืองตาลี ใกล้ทะเลสาบเออร์ไฮ",
       "coordinates": {
         "lat": 25.6622,
         "lng": 100.1772
       },
-      "openingHours": "09:00-17:00 (closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "09:00-17:00 (ปิดวันจันทร์)",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "1-2 ชั่วโมง",
       "highlights": [
-        "Nanzhao Kingdom artifacts",
-        "Bai ethnic culture",
-        "Buddhist art",
-        "Interactive exhibits"
+        "สิ่งประดิษฐ์ของอาณาจักรนานเจา",
+        "วัฒนธรรมชาวไป๋",
+        "ศิลปะพุทธ",
+        "การแสดงแบบโต้ตอบ"
       ],
-      "tips": "Good for rainy days. English descriptions available. Combine with nearby Erhai Lake walk.",
+      "tips": "เหมาะสำหรับวันฝนตก มีคำอธิบายภาษาอังกฤษ รวมกับการเดินเที่ยวทะเลสาบเออร์ไฮใกล้ๆ",
       "image": "/img/ext/a6b2943394e9.webp",
       "phone": "+86 087 2 8842 9002"
     },
     {
       "id": "jizhao-temple",
       "name": "寂照庵",
-      "nameEn": "Jizhao Temple",
+      "nameEn": "วัดจิเจา",
       "category": "cultural",
-      "description": "A serene Buddhist temple famous for its thousands of potted flowers and peaceful atmosphere.",
-      "address": "Cangshan Mountain slope",
+      "description": "วัดพุทธศาสนาที่เงียบสงบ ขึ้นชื่อเรื่องดอกไม้กระถางหลายพันใบและบรรยากาศที่สงบร่มเย็น",
+      "address": "บนเนินเขาชางซาน",
       "coordinates": {
         "lat": 25.6722,
         "lng": 100.1272
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "Free (donations welcome)",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "ฟรี (ยินดีรับบริจาค)",
+      "recommendedVisitTime": "1-2 ชั่วโมง",
       "highlights": [
-        "Flower gardens",
-        "Zen atmosphere",
-        "Vegetarian tea",
-        "Mountain location"
+        "สวนดอกไม้",
+        "บรรยากาศเจริญสติ",
+        "ชามังสวิรัติ",
+        "ทำเลที่ตั้งบนเขา"
       ],
-      "tips": "Try the vegetarian food. Very peaceful. Wear comfortable shoes for the walk up. Bring cash for donations.",
+      "tips": "ลองอาหารมังสวิรัติ สงบมาก สวมรองเท้าที่สบายสำหรับการเดินขึ้นเขา นำเงินสดไปสำหรับบริจาค",
       "image": "/img/ext/e1e1c86881fa.webp",
       "phone": "+86 087 2 5922 4379"
     },
     {
       "id": "zhang-garden",
       "name": "张家花园",
-      "nameEn": "Zhang's Garden",
+      "nameEn": "สวนจาง",
       "category": "cultural",
-      "description": "A restored Bai courtyard garden showcasing traditional Bai architecture, with tea tasting and cultural performances.",
-      "address": "Near Dali Old Town",
+      "description": "สวนคล้ายสถานที่ของชาวไป๋ที่ได้รับการบูรณะ สังเกตสถาปัตยกรรมแบบดั้งเดิมของชาวไป๋ พร้อมชิมชาและการแสดงทางวัฒนธรรม",
+      "address": "ใกล้เมืองเก่าดาหลี่",
       "coordinates": {
         "lat": 25.7022,
         "lng": 100.1572
       },
       "openingHours": "08:30-18:00",
       "ticketPrice": "50¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 ชั่วโมง",
       "highlights": [
-        "Bai architecture",
-        "Garden scenery",
-        "Tea ceremony",
-        "Cultural shows"
+        "สถาปัตยกรรมไป่",
+        "ทิวทัศน์สวน",
+        "พิธีชงชา",
+        "การแสดงทางวัฒนธรรม"
       ],
-      "tips": "Book tickets online for discounts. Combine tea tasting and performance. Good for learning about Bai culture.",
+      "tips": "จองตั๋วออนไลน์เพื่อรับส่วนลด รวมการชิมชาและการแสดง เหมาะสำหรับเรียนรู้วัฒนธรรมชาวไป๋",
       "image": "/img/ext/f9028ee51d31.webp",
       "phone": "+86 087 2 4590 5982"
     },
     {
       "id": "lover-dam",
       "name": "大理学院情人坝",
-      "nameEn": "Dali University Lover's Dam",
+      "nameEn": "เขื่อนคนรักของมหาวิทยาลัยดาหลี่",
       "category": "natural",
-      "description": "A scenic embankment near Dali University popular with students and couples, offering beautiful Erhai Lake views.",
-      "address": "Near Dali University",
+      "description": "ฝายทิวทัศน์ใกล้มหาวิทยาลัยดาหลี่ที่เป็นที่นิยมของนักศึกษาและคู่รัก มองเห็นทะเลสาบเออร์ไฮที่สวยงาม",
+      "address": "ใกล้มหาวิทยาลัยตาลี",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1872
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "1 ชั่วโมง",
       "highlights": [
-        "Sunset views",
-        "Local atmosphere",
-        "Lake scenery",
-        "Student cafes"
+        "วิวพระอาทิตย์ตก",
+        "บรรยากาศท้องถิ่น",
+        "ทิวทัศน์ทะเลสาบ",
+        "ร้านนักศึกษา"
       ],
-      "tips": "Best at sunset. Nearby small restaurants and cafes. Popular with local students.",
+      "tips": "ดีที่สุดช่วงพระอาทิตย์ตก ร้านอาหารและคาเฟ่เล็กๆ ใกล้เคียง ได้รับความนิยมในหมู่นักศึกษาท้องถิ่น",
       "image": "/img/ext/a2786969763d.webp",
       "phone": "+86 087 2 4466 2930"
     },
     {
       "id": "luwo-mountain",
       "name": "鹿卧山",
-      "nameEn": "Luwo Mountain",
+      "nameEn": "ภูลว",
       "category": "natural",
-      "description": "Hillside viewpoint between Dali Old Town and Erhai Lake, offering scenic views of both.",
-      "address": "Between Dali Old Town and Erhai",
+      "description": "จุดชมวิวบนเนินเขาระหว่างเมืองเก่าตาลีและทะเลสาบเออร์ไฮ ให้วิวทิวทัศน์ที่สวยงามของทั้งสองแห่ง",
+      "address": "ระหว่างเมืองเก่าตาลีและเออร์ไฮ",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1772
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "1 ชั่วโมง",
       "highlights": [
-        "Dual views",
-        "Photography",
-        "Popular spot",
-        "Sunset views"
+        "วิวคู่",
+        "ถ่ายภาพ",
+        "จุดยอดนิยม",
+        "วิวพระอาทิตย์ตก"
       ],
-      "tips": "Best at sunset for photos with both town and lake. Can be crowded on weekends.",
+      "tips": "ดีที่สุดช่วงพระอาทิตย์ตกสำหรับถ่ายรูปกับเมืองและทะเลสาบ อาจแออัดในช่วงวันหยุดสุดสัปดาห์",
       "image": "/img/ext/c118e6957af4.webp",
       "phone": "+86 087 2 2823 0848"
     },
     {
       "id": "wulongba",
       "name": "乌龙坝草甸",
-      "nameEn": "Wulongba Grassland",
+      "nameEn": "ทุ่งหญ้าวูลองบา",
       "category": "natural",
-      "description": "Highland grassland area with windmills, offering scenic views and photography opportunities.",
-      "address": "North of Dali",
+      "description": "พื้นที่ทุ่งหญ้าระดับสูงพร้อมกังหันลม ให้วิวทิวทัศน์ที่สวยงามและโอกาสถ่ายรูป",
+      "address": "ทางเหนือของตาลี",
       "coordinates": {
         "lat": 25.9022,
         "lng": 100.0672
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "เปิด 24 ชั่วโมง",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Grassland views",
-        "Windmills",
-        "Photography",
-        "Off-the-beaten-path"
+        "วิวทุ่งหญ้า",
+        "กังหันลม",
+        "ถ่ายภาพ",
+        "เส้นทางนอกเส้นทางหลัก"
       ],
-      "tips": "Less visited, great for escaping crowds. Bring food and water. Best in spring and summer.",
+      "tips": "นักท่องเที่ยวน้อย เหมาะสำหรับหนีฝูงชน นำอาหารและน้ำติดตัว ดีที่สุดในฤดูใบไม้ผลิและฤดูร้อน",
       "image": "/img/ext/d9e1e34b36a1.webp",
       "phone": "+86 087 2 5832 6210"
     },
     {
       "id": "dali-chongsheng-temple",
       "name": "崇圣寺",
-      "nameEn": "Chongsheng Temple",
+      "nameEn": "วัดชงเซิง",
       "category": "temple",
       "description": "崇圣寺是大理国时期的皇家寺院，与三塔为一体，是大理最宏伟的佛教建筑群，寺内殿宇辉煌，佛像庄严，展现了南诏大理国时期的佛教文化。",
       "address": "大理市古城北1.5公里",
@@ -2872,7 +2872,7 @@
     {
       "id": "dali-foreigner-street",
       "name": "洋人街",
-      "nameEn": "Foreigner Street",
+      "nameEn": "ถนนชาวต่างชาติ",
       "category": "street",
       "description": "洋人街是大理古城内最著名的步行街，因早年大量外国游客聚集而得名，街道两旁商铺林立，咖啡馆、酒吧、工艺品店比比皆是，是大理休闲生活的缩影。",
       "address": "大理市古城护国路",
@@ -2896,7 +2896,7 @@
     {
       "id": "dali-wuhua-building",
       "name": "五华楼",
-      "nameEn": "Wuhua Building",
+      "nameEn": "อาคารหวู่ฮัว",
       "category": "landmark",
       "description": "五华楼是大理古城的标志性建筑，始建于南诏时期，是南诏国的国宾馆，现在的建筑是重建的，登楼可俯瞰大理古城全景，远眺苍山洱海。",
       "address": "大理市古城内",
@@ -2920,7 +2920,7 @@
     {
       "id": "dali-city-wall",
       "name": "大理古城墙",
-      "nameEn": "Dali Ancient City Wall",
+      "nameEn": "กำแพงเมืองโบราณตาลี",
       "category": "landmark",
       "description": "大理古城墙始建于明代，是大理古城的重要防御设施，城墙保存较为完好，设有南北城门，城墙上的城楼是观赏古城风光的好地方。",
       "address": "大理市古城",
@@ -2944,7 +2944,7 @@
     {
       "id": "dali-nanzhao-island-detail",
       "name": "南诏风情岛",
-      "nameEn": "Nanzhao Style Island",
+      "nameEn": "เกาะสไตล์หนานจ้า",
       "category": "landmark",
       "description": "南诏风情岛是洱海中最大的岛屿，岛上建有南诏行宫、本主文化广场等，展示了南诏国的历史和白族文化，是了解大理历史的重要景点。",
       "address": "大理市双廊镇洱海中",
@@ -2968,7 +2968,7 @@
     {
       "id": "dali-bai-tie-dye-museum",
       "name": "白族扎染博物馆",
-      "nameEn": "Bai Tie-dye Museum",
+      "nameEn": "พิพิธภัณฑ์การย้อมผ้าของชาวไป๋",
       "category": "museum",
       "description": "白族扎染博物馆展示了大理白族传统的扎染工艺，这项国家级非物质文化遗产已有上千年历史，游客可以了解扎染的制作过程并亲手体验。",
       "address": "大理市喜洲镇周城村",
@@ -2992,7 +2992,7 @@
     {
       "id": "dali-xizhou-ancient-town",
       "name": "喜洲古镇",
-      "nameEn": "Xizhou Ancient Town",
+      "nameEn": "เมืองเก่าซีโจว",
       "category": "landmark",
       "description": "喜洲古镇是大理白族文化的代表，保留了大量白族传统民居建筑，其中严家大院是最著名的白族建筑群，古镇还以喜洲粑粑闻名遐迩。",
       "address": "大理市喜洲镇",
@@ -3016,7 +3016,7 @@
     {
       "id": "dali-cangshan-cableway",
       "name": "苍山索道",
-      "nameEn": "Cangshan Cableway",
+      "nameEn": "กระเช้าคังซาน",
       "category": "nature",
       "description": "苍山索道是游览苍山最便捷的方式，乘坐索道可以直达苍山半山腰，沿途可以欣赏苍山的壮丽景色，到达山顶后可以俯瞰整个洱海和大理古城。",
       "address": "大理市苍山景区",
@@ -3040,7 +3040,7 @@
     {
       "id": "dali-cangshan-waterfall",
       "name": "苍山瀑布",
-      "nameEn": "Cangshan Waterfall",
+      "nameEn": "น้ำตกซังซาน",
       "category": "nature",
       "description": "苍山瀑布群是苍山的重要景观，其中最著名的是清碧溪和七龙女池，瀑布从苍山高处飞流直下，水花四溅，与苍山的绿色植被形成美丽的画卷。",
       "address": "大理市苍山景区内",
@@ -3064,7 +3064,7 @@
     {
       "id": "dali-rose-meadow",
       "name": "大理玫瑰花田",
-      "nameEn": "Dali Rose Meadow",
+      "nameEn": "ทุ่งกุหลาบตาลี",
       "category": "nature",
       "description": "大理的玫瑰花田是近年来新兴的旅游景点，大片的玫瑰花在苍山脚下绽放，与远处的苍山洱海形成绝美的画面，是拍照打卡的热门地点。",
       "address": "大理市银桥镇等地",
@@ -3088,7 +3088,7 @@
     {
       "id": "dali-yan-family-house",
       "name": "严家大院",
-      "nameEn": "Yan Family House",
+      "nameEn": "บ้านตระกูลหยาน",
       "category": "landmark",
       "description": "严家大院是喜洲古镇最著名的白族民居建筑群，建于清末民初，由多个'三坊一照壁'和'四合五天井'组成，是白族建筑艺术的杰出代表。",
       "address": "大理市喜洲镇四方街",
@@ -3112,7 +3112,7 @@
     {
       "id": "dali-shibao-mountain",
       "name": "石宝山",
-      "nameEn": "Shibao Mountain",
+      "nameEn": "ภูเชาเปา",
       "category": "nature",
       "description": "石宝山位于剑川县，以石窟和丹霞地貌闻名，山上有大量南诏大理国时期的石窟造像，被誉为'南方的敦煌'，是研究南诏历史的珍贵资料。",
       "address": "大理州剑川县石宝山",
@@ -3136,7 +3136,7 @@
     {
       "id": "dali-fengyu-ancient-town",
       "name": "凤羽古镇",
-      "nameEn": "Fengyu Ancient Town",
+      "nameEn": "เมืองโบราณเฟิงยู",
       "category": "landmark",
       "description": "凤羽古镇是大理州洱源县的一个白族古镇，被誉为'白族建筑博物馆'，古镇保存了大量明清时期的白族民居，环境清幽，远离城市喧嚣。",
       "address": "大理州洱源县凤羽镇",
@@ -3160,7 +3160,7 @@
     {
       "id": "dali-nuodeng-village",
       "name": "诺邓古村",
-      "nameEn": "Nuodeng Ancient Village",
+      "nameEn": "หมู่บ้านโบราณนู่เดิง",
       "category": "landmark",
       "description": "诺邓古村是滇西北地区年代最久远的村落，以产盐闻名，村内保留了大量明清时期的建筑，包括盐井、庙宇和民居，是体验滇西古村文化的好去处。",
       "address": "大理州云龙县诺邓镇",
@@ -3184,7 +3184,7 @@
     {
       "id": "dali-haidong-art-village",
       "name": "海东艺术村",
-      "nameEn": "Haidong Art Village",
+      "nameEn": "หมู่บ้านศิลปะไห่ตง",
       "category": "landmark",
       "description": "海东艺术村位于洱海东岸，是大理新兴的艺术聚集地，吸引了很多艺术家和文艺青年在此定居创作，村内有各种艺术工作室、咖啡馆和民宿。",
       "address": "大理市海东镇",
@@ -3208,7 +3208,7 @@
     {
       "id": "dali-caicun-wharf",
       "name": "才村码头",
-      "nameEn": "Caicun Wharf",
+      "nameEn": "ท่าเรือไคซุน",
       "category": "landmark",
       "description": "才村码头是大理古城最近的洱海游船码头，从这里可以乘船游览洱海，码头周边有很多海景民宿和咖啡馆，是欣赏洱海风光的好地方。",
       "address": "大理市才村",
@@ -3232,7 +3232,7 @@
     {
       "id": "dali-sea-view-terrace",
       "name": "洱海观景台",
-      "nameEn": "Erhai Viewing Terrace",
+      "nameEn": "ระเบียงชมเออร์ไห่",
       "category": "nature",
       "description": "洱海观景台位于洱海东岸的高处，是俯瞰洱海全景的最佳地点，站在这里可以看到洱海的全貌，苍山十九峰倒映在湖面上，景色壮观。",
       "address": "大理市环海东路",
@@ -3256,7 +3256,7 @@
     {
       "id": "dali-xizhou-babashow",
       "name": "喜洲粑粑",
-      "nameEn": "Xizhou Baba",
+      "nameEn": "ซีโจวบาบา",
       "category": "market",
       "description": "喜洲粑粑是大理最著名的特色小吃，用炭火烤制，外酥里嫩，有甜咸两种口味，喜洲古镇上有多家制作喜洲粑粑的店铺，游客可以现场观看制作过程。",
       "address": "大理市喜洲镇四方街",
@@ -3280,7 +3280,7 @@
     {
       "id": "dali-batik-village",
       "name": "周城扎染村",
-      "nameEn": "Zhoucheng Batik Village",
+      "nameEn": "หมู่บ้านบาติกโจวเชิง",
       "category": "landmark",
       "description": "周城村是大理白族扎染的发源地，被誉为'白族扎染之乡'，村内几乎家家户户都从事扎染制作，游客可以参观扎染工坊并亲手体验扎染工艺。",
       "address": "大理市喜洲镇周城村",
@@ -3304,7 +3304,7 @@
     {
       "id": "dali-shuanglang-art",
       "name": "双廊艺术区",
-      "nameEn": "Shuanglang Art District",
+      "nameEn": "เขตศิลปะซวงหลัง",
       "category": "landmark",
       "description": "双廊是洱海边的一个艺术小镇，聚集了大量的艺术家和文艺青年，镇上有各种艺术工作室、画廊和特色小店，是大理文艺气息最浓的地方。",
       "address": "大理市双廊镇",
@@ -3328,7 +3328,7 @@
     {
       "id": "dali-erhai-cycling",
       "name": "洱海骑行",
-      "nameEn": "Erhai Lake Cycling",
+      "nameEn": "ปั่นจักรยานรอบทะเลสาบเออร์ไห่",
       "category": "nature",
       "description": "环洱海骑行是大理最受欢迎的旅游活动之一，全程约130公里，沿途可以欣赏洱海的湖光山色、白族村落和田园风光，是深度体验大理的最佳方式。",
       "address": "大理市环洱海公路",
@@ -3352,7 +3352,7 @@
     {
       "id": "dali-three-pagodas-reflection",
       "name": "三塔倒影",
-      "nameEn": "Three Pagodas Reflection",
+      "nameEn": "เงาพระเจดีย์สามองค์",
       "category": "landmark",
       "description": "三塔倒影是大理最著名的景观之一，在三塔前的水池中，三塔的倒影清晰可见，与真实的三塔相映成趣，尤其是在清晨和傍晚时分，景色格外迷人。",
       "address": "大理市崇圣寺三塔景区内",
@@ -3376,7 +3376,7 @@
     {
       "id": "dali-nanzhao-dreamland",
       "name": "南诏风情岛",
-      "nameEn": "Nanzhao Dreamland",
+      "nameEn": "แดนฝันนานเจา",
       "category": "landmark",
       "description": "南诏风情岛是洱海上的一个重要旅游景点，岛上有南诏行宫、白族本主文化广场等，展示了南诏国的历史和文化，是了解大理历史的重要窗口。",
       "address": "大理市双廊镇洱海中",
@@ -3400,7 +3400,7 @@
     {
       "id": "dali-wase-market",
       "name": "挖色集市",
-      "nameEn": "Wase Market",
+      "nameEn": "ตลาดวาเซะ",
       "category": "market",
       "description": "挖色集市是洱海东岸的一个传统白族集市，每逢赶集日，周边村民会聚集在此交易农产品和手工艺品，是体验白族乡村生活的好去处。",
       "address": "大理市挖色镇",
@@ -3424,7 +3424,7 @@
     {
       "id": "dali-shimenshan",
       "name": "石门关",
-      "nameEn": "Shimen Pass",
+      "nameEn": "ประตูซื่อเหมิน",
       "category": "nature",
       "description": "石门关是苍山西坡的一个天然峡谷，两壁陡峭如门，谷底溪流潺潺，是大理少有的峡谷景观，也是徒步爱好者的天堂。",
       "address": "大理市苍山西坡",
@@ -3448,7 +3448,7 @@
     {
       "id": "dali-linghui-temple",
       "name": "无为寺",
-      "nameEn": "Wuwei Temple",
+      "nameEn": "วัดอู่เว่ย",
       "category": "temple",
       "description": "无为寺位于苍山兰峰东麓，始建于唐代，是大理著名的佛教寺院，寺内环境清幽，古木参天，有多株千年古茶花树，是大理人修身养性的好去处。",
       "address": "大理市苍山兰峰东麓",
@@ -3472,7 +3472,7 @@
     {
       "id": "xizhou-ancient",
       "name": "喜洲古镇",
-      "nameEn": "Xizhou Ancient Town",
+      "nameEn": "เมืองเก่าซีโจว",
       "category": "street",
       "description": "白族建筑保存最完好的古镇，有严家大院等代表性建筑。",
       "address": "大理市喜洲镇",
@@ -3494,7 +3494,7 @@
     {
       "id": "dali-night",
       "name": "大理古城夜景",
-      "nameEn": "Dali Ancient City Night View",
+      "nameEn": "วิวเมืองโบราณตาลียามค่ำ",
       "category": "street",
       "description": "大理古城的夜景，人民路和洋人街灯火通明。",
       "address": "大理市古城区",

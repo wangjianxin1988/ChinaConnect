@@ -3,28 +3,28 @@
   "name": "天津",
   "nameEn": "Tianjin",
   "country": "China",
-  "population": "13.9 million",
+  "population": "1,390만",
   "coordinates": {
     "lat": 39.3434,
     "lng": 117.3616
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Tianjin, a bustling port city near Beijing, blends European colonial architecture with traditional Chinese culture. Famous for the Ancient Culture Street, food culture featuring Mahua and Goubuli baozi, and the impressive Tianjin Eye Ferris wheel.",
+  "description": "베이징 인근의 활기찬 항구 도시인 톈진은 유럽식 식민지 건축과 전통 중국 문화를 결합합니다. 고대 문화거리, 마화와 구브리빵으로 유명한 음식 문화, 그리고 인상적인 톈진 아이 Ferris wheel로 유명합니다.",
   "coverImage": "/img/ext/3c81c7331bd2.webp",
   "highlights": [
-    "Tianjin Eye - Giant Ferris wheel",
-    "Ancient Culture Street - Traditional architecture",
-    "Five Great Avenues - European architecture",
-    "Tianjin Ancient Cultural Street",
-    "Haihe River waterfront"
+    "천진 아이 - 대형 그랜드휠",
+    "고대 문화거리 - 전통 건축물",
+    "5개대로 - 유럽 건축물",
+    "천진 고문화 거리",
+    "해하 강 워터프론트"
   ],
   "climate": {
-    "type": "Humid continental climate",
+    "type": "습윤 대륙성 기후",
     "bestMonths": [
-      "April",
-      "May",
-      "September",
-      "October"
+      "4월",
+      "5월",
+      "9월",
+      "10월"
     ],
     "avgSummerTemp": "26°C (79°F)",
     "avgWinterTemp": "-2°C (28°F)",
@@ -34,583 +34,583 @@
     {
       "id": "tianjin-eye",
       "name": "天津之眼",
-      "nameEn": "Tianjin Eye",
+      "nameEn": "천진 아이",
       "category": "landmark",
-      "description": "Giant 120-meter Ferris wheel on the Haihe River, offering panoramic city views.",
-      "address": "Tianjin Eye, Hebei District",
+      "description": "해하 강에 있는 120미터 대형 그랜드휠로 도시 전경을 조망할 수 있습니다.",
+      "address": "천진 아이, 허베이 구",
       "coordinates": {
         "lat": 39.3622,
         "lng": 117.1822
       },
       "openingHours": "09:30-21:30",
       "ticketPrice": "70¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1시간",
       "highlights": [
-        "Haihe River views",
-        "City panorama",
-        "Night lighting",
-        "Photo opportunities"
+        "해하 강 전망",
+        "도시 전경",
+        "야간 조명",
+        "사진 촬영 포인트"
       ],
-      "tips": "Book tickets online. Best at sunset or night. Avoid holidays when crowded.",
+      "tips": "온라인으로 표를 예약하세요. 석류나 야간에 방문하기 가장 좋습니다. 휴가철에는 피하세요.",
       "image": "/img/ext/5be0c2903af2.webp",
       "phone": "+86 22 2628 8888"
     },
     {
       "id": "ancient-culture-street",
       "name": "古文化街",
-      "nameEn": "Ancient Culture Street",
+      "nameEn": "고문화거리",
       "category": "cultural",
-      "description": "Historic street with traditional architecture, temples, and local crafts.",
-      "address": "Ancient Culture Street, Heping District",
+      "description": "전통 건축물, 사찰, 지역 공예품이 있는 역사적인 거리입니다.",
+      "address": "고문화거리,和平区",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.2022
       },
-      "openingHours": "Open 24 hours (shops 09:00-21:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24시간 개방 (상점 09:00-21:00)",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "2-3시간",
       "highlights": [
-        "Tianhou Temple",
-        "Traditional shops",
-        "Cantonese opera",
-        "Local snacks"
+        "天后宫",
+        "전통 상점",
+        "광동 오페라",
+        "현지 간식"
       ],
-      "tips": "Best in morning for atmosphere. Try mahua and tea. Take boat ride on Haihe.",
+      "tips": "아침에 분위기를 즐기세요. 마화와 차를 시도하세요. 해하 강에서 배를 타세요.",
       "image": "/img/ext/f5e115604d3c.webp",
       "phone": "+86 022  9903 5780"
     },
     {
       "id": "five-great-avenues",
       "name": "五大道",
-      "nameEn": "Five Great Avenues",
+      "nameEn": "5대대로",
       "category": "historical",
-      "description": "Area with colonial European architecture from early 20th century, featuring buildings from various countries.",
-      "address": "Five Great Avenues, Heping District",
+      "description": "20세기 초의 식민지 유럽 건축물 지역으로, 다양한 국가의 건물이 있습니다.",
+      "address": "5대대로,和平区",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2122
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24시간 개방",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "2-3시간",
       "highlights": [
-        "Colonial mansions",
-        "British, French, Italian architecture",
-        "Tree-lined streets",
-        "Horse carriage tours"
+        "식민지 저택",
+        "영국, 프랑스, 이탈리아 건축",
+        "가로수길",
+        "마차 투어"
       ],
-      "tips": "Rent a bicycle or take a horse carriage tour. Best in autumn. Many buildings now house cafes.",
+      "tips": "자전거를 렌트하거나 마차 투어를 이용하세요. 가을에 방문하기 가장 좋으며, 많은 건물에 카페가 입점해 있습니다.",
       "image": "/img/ext/12f36429ae32.webp",
       "phone": "+86 022  2108 0433"
     },
     {
       "id": "tianjin-ancient-cultural-street",
       "name": "天津古文化街",
-      "nameEn": "Tianjin Ancient Cultural Street",
+      "nameEn": "천진 고문화 거리",
       "category": "cultural",
-      "description": "Replica of ancient street with traditional buildings, handicraft shops and food vendors.",
-      "address": "Nanshi Gate, Hebei District",
+      "description": "전통 건물, 수공예품점 및 음식점이 즐비한 고대 거리 복제판입니다.",
+      "address": "Hebei 구, 난시문",
       "coordinates": {
         "lat": 39.1522,
         "lng": 117.1922
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2 hours",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "2시간",
       "highlights": [
-        "Nanshi Gate",
-        "Traditional crafts",
-        "Folk performances",
-        "Local specialties"
+        "난시문",
+        "전통 공예",
+        "민속 공연",
+        "지역 특산품"
       ],
-      "tips": "Great for souvenirs. Watch for traditional art demonstrations. Combine with Haihe River walk.",
+      "tips": "선물 구매에 좋습니다. 전통 예술 시연에 주목하세요. 하이허 강 산책과 함께하세요.",
       "image": "/img/ext/de3cd0f08bdf.webp",
       "phone": "+86 022  1470 0942"
     },
     {
       "id": "haihe-river",
       "name": "海河",
-      "nameEn": "Haihe River",
+      "nameEn": "하이허 강",
       "category": "natural",
-      "description": "Central river flowing through Tianjin with historic bridges and riverside parks.",
-      "address": "Haihe River, central Tianjin",
+      "description": "역사적인 다리와 강변 공원이 있는 천심을 흐르는 중앙 강입니다.",
+      "address": "해하 강, 천진 시내",
       "coordinates": {
         "lat": 39.1422,
         "lng": 117.2022
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free (boat rides extra)",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24시간 개방",
+      "ticketPrice": "무료 (유람선 별도)",
+      "recommendedVisitTime": "1-2시간",
       "highlights": [
-        "Night cruise",
-        "Historic bridges",
-        "Riverside walks",
-        "Tianjin Eye views"
+        "야간 유람",
+        "역사적인 다리",
+        "강변 산책",
+        "천진 아이View"
       ],
-      "tips": "Take evening boat cruise for best views. Walk across the Friendship Pavilion Bridge.",
+      "tips": "석유람선을 타면 최고의 경관을 볼 수 있습니다. 우의관 다리를 걸어 건너세요.",
       "image": "/img/ext/7fecf108b380.webp",
       "phone": "+86 022  2546 0179"
     },
     {
       "id": "shibin-dagou",
       "name": "石版画狗",
-      "nameEn": "Stone Art Gallery",
+      "nameEn": "석영 화랑",
       "category": "cultural",
-      "description": "Famous for folk art and traditional Tianjing paintings.",
-      "address": "Yangliuqing, Xiqing District",
+      "description": "민속 예술과 전통 천징 회화로 유명합니다.",
+      "address": "양류청, 서경구",
       "coordinates": {
         "lat": 39.0522,
         "lng": 117.3022
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "30¥",
-      "recommendedVisitTime": "2 hours",
+      "recommendedVisitTime": "2시간",
       "highlights": [
-        "New Year paintings",
-        "Folk art",
-        "Traditional workshops",
-        "Cultural exhibits"
+        "춘련(春聯)",
+        "민속 예술",
+        "전통 공방",
+        "문화 전시"
       ],
-      "tips": "Buy authentic New Year paintings as souvenirs. Watch artists at work.",
+      "tips": "정통 춘절화를 기념품로 구매하세요. 예술가들의 작업을 지켜보세요.",
       "image": "/img/ext/4905e0a1ab21.webp",
       "phone": "+86 022  7862 1625"
     },
     {
       "id": "tianjin-library",
       "name": "天津图书馆",
-      "nameEn": "Tianjin Library",
+      "nameEn": "톈진 도서관",
       "category": "cultural",
-      "description": "Modern library with impressive architecture and vast collection of books.",
-      "address": "TEDA, Hexi District",
+      "description": "건물 설계가 인상적이고 다양한 장서를 갖춘 현대적인 도서관",
+      "address": "톈진 개발구, 허시 구",
       "coordinates": {
         "lat": 39.0222,
         "lng": 117.2222
       },
       "openingHours": "09:00-21:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1-2시간",
       "highlights": [
-        "Modern architecture",
-        "Reading rooms",
-        "Vast collection",
-        "Digital resources"
+        "현대적 건축",
+        "독서실",
+        "방대한 장서",
+        "디지털 자료"
       ],
-      "tips": "Great for book lovers. The architecture is impressive. Quiet atmosphere.",
+      "tips": "책 애호가들에게 최적입니다. 건물 설계가 인상적이며 분위기가 조용합니다",
       "image": "/img/ext/6eb08dbad99e.webp",
       "phone": "+86 022  0082 4509"
     },
     {
       "id": "tianjin-water-park",
       "name": "水上公园",
-      "nameEn": "Water Park",
+      "nameEn": "워터파크",
       "category": "natural",
-      "description": "Large urban park with lakes, pavilions and amusement rides.",
-      "address": "Nankai District",
+      "description": "호수, 정자, 놀이기구가 있는 대규모 도시 공원입니다.",
+      "address": "남开区",
       "coordinates": {
         "lat": 39.0922,
         "lng": 117.2122
       },
       "openingHours": "06:00-22:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "2-3시간",
       "highlights": [
-        "Lake activities",
-        "Amusement rides",
-        "Cherry blossoms",
-        "Tea houses"
+        "호수 활동",
+        "놀이기구",
+        "벚꽃",
+        "찻집"
       ],
-      "tips": "Best in spring for cherry blossoms. Great for families. Boat rentals available.",
+      "tips": "벚꽃이 피는 봄에 방문하기 가장 좋으며, 가족 방문에 적합합니다. 보트 렌탈 서비스가 있습니다.",
       "image": "/img/ext/47421538665b.webp",
       "phone": "+86 022  6949 0917"
     },
     {
       "id": "tianjin-economy-technological",
       "name": "天津经济技术开发区",
-      "nameEn": "Tianjin Economic-Technological Development Area",
+      "nameEn": "천진 경제기술개발구",
       "category": "modern",
-      "description": "Modern industrial zone with technology companies and entertainment facilities.",
-      "address": "TEDA, Binhai New Area",
+      "description": "기술 기업과 오락 시설이 있는 현대적인 산업 지구입니다.",
+      "address": "TEDA, 빈하이 신구",
       "coordinates": {
         "lat": 39.0022,
         "lng": 117.7022
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "24시간 개방",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "3-4시간",
       "highlights": [
-        "Modern architecture",
-        "Theme parks",
-        "Haihe River estuary",
-        "Industrial tours"
+        "현대 건축",
+        "테마파크",
+        "해하 강 하구",
+        "산업 투어"
       ],
-      "tips": "Home to several theme parks. The Ferris wheel area is popular.",
+      "tips": "여러 테마파크가 있는 곳입니다. Ferris wheel area가 인기가 있습니다.",
       "image": "/img/ext/9f10c875db11.webp",
       "phone": "+86 022  1649 5328"
     },
     {
       "id": "huangyaguan",
       "name": "黄崖关长城",
-      "nameEn": "Huangyaguan Great Wall",
+      "nameEn": "황야관 만리장성",
       "category": "historical",
-      "description": "Section of the Great Wall with steep climbs and scenic mountain views.",
-      "address": "Ji County, Tianjin",
+      "description": "가파른 오르막과 아름다운 산경치가 있는 만리장성 구간입니다.",
+      "address": "天津市蓟州区",
       "coordinates": {
         "lat": 40.2522,
         "lng": 117.4022
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "65¥",
-      "recommendedVisitTime": "4-5 hours",
+      "recommendedVisitTime": "4-5시간",
       "highlights": [
-        "Great Wall section",
-        "Mountain scenery",
-        "Hiking trails",
-        "Historical fortifications"
+        "만리장성 구간",
+        "산경치",
+        "하이킹 트레일",
+        "역사적 요새"
       ],
-      "tips": "Less crowded than Beijing sections. Wear hiking shoes. Bring water and snacks.",
+      "tips": "베이징 구간보다 인기가 적습니다. 등산화를 착용하고 물과 간식을 가져오세요.",
       "image": "/img/ext/d9e1e34b36a1.webp",
       "phone": "+86 022  7172 6870"
     },
     {
       "id": "panlong-shuiwu",
       "name": "盘龙水利风景区",
-      "nameEn": "Panlong Lake Scenic Area",
+      "nameEn": "반용호 Scenic Area",
       "category": "natural",
-      "description": "Lake with traditional Chinese gardens and water activities.",
-      "address": "Xiqing District",
+      "description": "전통 중국 정원과 물 활동이 있는 호수입니다.",
+      "address": "西青区",
       "coordinates": {
         "lat": 39.0622,
         "lng": 117.2522
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "40¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3시간",
       "highlights": [
-        "Lake views",
-        "Traditional pavilions",
-        "Boating",
-        "Photography"
+        "호수 전경",
+        "전통 정자",
+        "보트 타기",
+        "사진 촬영"
       ],
-      "tips": "Beautiful at sunset. Less crowded than Water Park. Great for traditional Chinese photos.",
+      "tips": "일몰 때 아름답습니다. 워터 파크보다 인기가 적습니다. 전통 중국 사진拍摄에 좋습니다.",
       "image": "/img/ext/d379551d93fd.webp",
       "phone": "+86 022  2404 0336"
     },
     {
       "id": "tianjin-temple",
       "name": "天后宫",
-      "nameEn": "Tianhou Temple",
+      "nameEn": "天后宫",
       "category": "cultural",
-      "description": "Historic temple dedicated to the sea goddess, one of the three famous Tianhou temples in China.",
-      "address": "Ancient Culture Street, Heping District",
+      "description": "해양의 여신에게 헌정된 역사적인 사당으로, 중국에서 가장 유명한 세 개의 천후 사당 중 하나입니다.",
+      "address": "고문화거리,和平区",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.2022
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "10¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1시간",
       "highlights": [
-        "Sea goddess temple",
-        "Ancient architecture",
-        "Cultural artifacts",
-        "Folk customs"
+        "해양의 여신 사당",
+        "고대 건축",
+        "문화 유물",
+        "민속 관습"
       ],
-      "tips": "One of the oldest temples in Tianjin. Visit during festivals for traditional performances.",
+      "tips": "천진에서 가장 오래된 사당 중 하나입니다. 축제 기간에 방문하면 전통 공연을 볼 수 있습니다.",
       "image": "/img/ext/ccae5add8138.webp",
       "phone": "+86 022  4267 2607"
     },
     {
       "id": "beidadehua",
       "name": "蓟县大碱厂",
-      "nameEn": "Dajianshan Factory",
+      "nameEn": "다오산 Salt Factory",
       "category": "cultural",
-      "description": "Historic salt refinery showcasing industrial heritage.",
-      "address": "Jixian County",
+      "description": "산업 유산을 보여주는 역사적인 소금 정제소입니다.",
+      "address": "Ji County",
       "coordinates": {
         "lat": 40.0522,
         "lng": 117.4022
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "30¥",
-      "recommendedVisitTime": "2 hours",
+      "recommendedVisitTime": "2시간",
       "highlights": [
-        "Industrial heritage",
-        "Salt making",
-        "Traditional methods",
-        "Museum exhibits"
+        "산업유산",
+        "소금 생산",
+        "전통적인 방법",
+        "박물관 전시"
       ],
-      "tips": "Learn about Tianjin's salt industry history. Combine with nearby mountain trips.",
+      "tips": "Tianjin의 소금 산업 역사에 대해 알아보세요. 근처 산악 여행과 결합하세요.",
       "image": "/img/ext/7b494038a7eb.webp",
       "phone": "+86 022  8202 2377"
     },
     {
       "id": "tianjin-geography-museum",
       "name": "天津自然博物馆",
-      "nameEn": "Tianjin Natural History Museum",
+      "nameEn": "천진 자연 역사 박물관",
       "category": "cultural",
-      "description": "Modern museum with exhibits on paleontology, dinosaurs and local ecosystems.",
-      "address": "Heping District",
+      "description": "고생물학, 공룡 및 현지 생태계를 전시하는 현대적인 박물관.",
+      "address": "허핑 구",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2122
       },
-      "openingHours": "09:00-16:30 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "09:00-16:30 (월요일 휴관)",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "2-3시간",
       "highlights": [
-        "Dinosaur fossils",
-        "Ancient civilizations",
-        "Local wildlife",
-        "Interactive exhibits"
+        "공룡 화석",
+        "고대 문명",
+        "현지 야생동물",
+        "인터랙티브 전시"
       ],
-      "tips": "Great for families. Allow 2-3 hours. Combine with nearby cultural attractions.",
+      "tips": "가족 여행에 적합합니다. 2-3시간이 필요합니다. 근처 문화 명소와 결합하세요.",
       "image": "/img/ext/c74d7faf7bb9.webp",
       "phone": "+86 022  1376 5470"
     },
     {
       "id": "tianjin-music-hall",
       "name": "天津音乐厅",
-      "nameEn": "Tianjin Concert Hall",
+      "nameEn": "천진 음악 회관",
       "category": "cultural",
-      "description": "Elegant colonial-era concert hall hosting classical performances.",
-      "address": "Hexi District",
+      "description": "고전 공연을 개최하는 우아한 식민지 시대 음악당.",
+      "address": "허시 구",
       "coordinates": {
         "lat": 39.1022,
         "lng": 117.2222
       },
-      "openingHours": "Performance hours vary",
-      "ticketPrice": "Performance dependent",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "공연 시간은 상황에 따라 다름",
+      "ticketPrice": "공연에 따라 다름",
+      "recommendedVisitTime": "2-3시간",
       "highlights": [
-        "Classical music",
-        "European architecture",
-        "Acoustic excellence",
-        "Cultural performances"
+        "클래식 음악",
+        "유럽 건축",
+        "음향의 탁월함",
+        "문화 공연"
       ],
-      "tips": "Book tickets in advance for popular performances. Dress appropriately.",
+      "tips": "인기 공연은 미리 표를 예약하세요. 적절한 복장을 하세요.",
       "image": "/img/ext/f2829573ba5f.webp",
       "phone": "+86 022  4189 5689"
     },
     {
       "id": "binhai-new-area",
       "name": "滨海新区",
-      "nameEn": "Binhai New Area",
+      "nameEn": "빈하이 신구",
       "category": "modern",
-      "description": "Modern development zone with contemporary architecture and entertainment.",
-      "address": "Binhai New Area",
+      "description": "현대적인 건축과 엔터테인먼트를 갖춘 현대적인 개발 지역.",
+      "address": "빈하이 신구",
       "coordinates": {
         "lat": 38.9922,
         "lng": 117.7022
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "24시간 개방",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "3-4시간",
       "highlights": [
-        "Modern skyline",
-        "Harbor views",
-        "Cultural center",
-        "Shopping malls"
+        "현대적인 스카이라인",
+        "항구 전망",
+        "문화 센터",
+        "쇼핑몰"
       ],
-      "tips": "Explore the modern side of Tianjin. The National Museum of China Seafaring is here.",
+      "tips": "Tianjin의 현대적인 면을 탐험하세요. 중국해양박물관(National Museum of China Seafaring)이 여기에 있습니다.",
       "image": "/img/ext/9b5f1087da38.webp",
       "phone": "+86 022  1581 7961"
     },
     {
       "id": "tianjin-drum-tower",
       "name": "天津古楼",
-      "nameEn": "Ancient Drum Tower",
+      "nameEn": "고대 북루",
       "category": "historical",
-      "description": "Historic drum tower marking the center of old Tianjin.",
-      "address": "Nankai District",
+      "description": "올 톈진의 중심을 표시하는 역사적인鼓楼입니다.",
+      "address": "남开区",
       "coordinates": {
         "lat": 39.1422,
         "lng": 117.1922
       },
       "openingHours": "09:00-17:00",
       "ticketPrice": "25¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1시간",
       "highlights": [
-        "Drum performances",
-        "Old city views",
-        "Traditional architecture",
-        "Cultural exhibits"
+        "드럼 공연",
+        "올드 시티 전망",
+        "전통 건축",
+        "문화 전시"
       ],
-      "tips": "Watch the daily drum performances. The surrounding area has traditional shops.",
+      "tips": "매일 드럼 공연을 보세요. 주변 지역에는 전통 상점이 있습니다.",
       "image": "/img/ext/c3274355fd82.webp",
       "phone": "+86 022  6452 0133"
     },
     {
       "id": "tianjin-polar-ocean-world",
       "name": "天津海昌极地海洋世界",
-      "nameEn": "Tianjin Haichang Polar Ocean World",
+      "nameEn": "톈진 해창 극지해양세계",
       "category": "entertainment",
-      "description": "Large aquarium with polar animals and marine life shows.",
-      "address": "Binhai New Area",
+      "description": "극지방 동물과 해양 생명이 있는 대형 수족관입니다.",
+      "address": "빈하이 신구",
       "coordinates": {
         "lat": 38.9822,
         "lng": 117.7122
       },
       "openingHours": "09:00-17:00",
       "ticketPrice": "180¥",
-      "recommendedVisitTime": "4-5 hours",
+      "recommendedVisitTime": "4-5시간",
       "highlights": [
-        "Polar bears",
-        "Penguins",
-        "Dolphin shows",
-        "Underwater tunnel"
+        "북극곰",
+        "펭귄",
+        "돌고래 쇼",
+        "수중 터널"
       ],
-      "tips": "Full day attraction. Arrive early for shows. Buy tickets online.",
+      "tips": "종일游览景点입니다. 공연을 보려면 일찍 도착하세요. 티켓은 온라인으로 구매하세요.",
       "image": "/img/ext/2d979b12449c.webp",
       "phone": "+86 022  3273 8170"
     },
     {
       "id": "tianjin-mingzhu",
       "name": "天津劝业场",
-      "nameEn": "Tianjin Quanyechang",
+      "nameEn": "톈진 췐예창",
       "category": "shopping",
-      "description": "Historic department store and shopping district.",
-      "address": "Heping District",
+      "description": "역사적인 백화점과 쇼핑 지구입니다.",
+      "address": "허핑 구",
       "coordinates": {
         "lat": 39.1222,
         "lng": 117.2022
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "2-3시간",
       "highlights": [
-        "Art Deco building",
-        "Shopping",
-        "Historic architecture",
-        "Local brands"
+        "아르데코 건물",
+        "쇼핑",
+        "역사적 건축물",
+        "현지 브랜드"
       ],
-      "tips": "Shop like a local. The building is beautiful. Explore nearby streets.",
+      "tips": "현지인처럼 쇼핑하세요. 건물이 아름답습니다. 근처 거리를 탐색하세요.",
       "image": "/img/ext/8e20ca0b1fca.webp",
       "phone": "+86 022  0730 9404"
     },
     {
       "id": "tianjin-world-joy",
       "name": "欢乐谷",
-      "nameEn": "Tianjin World Joy",
+      "nameEn": "톈진 월드조이",
       "category": "entertainment",
-      "description": "Large theme park with roller coasters and family rides.",
-      "address": "Beichen District",
+      "description": "롤러코스터와 가족 놀이시설이 있는 대형 테마파크입니다.",
+      "address": "베이천 구",
       "coordinates": {
         "lat": 39.2222,
         "lng": 117.1622
       },
       "openingHours": "09:00-18:00",
       "ticketPrice": "200¥",
-      "recommendedVisitTime": "Full day",
+      "recommendedVisitTime": "종일",
       "highlights": [
-        "Roller coasters",
-        "Water rides",
-        "Live shows",
-        "Family attractions"
+        "롤러코스터",
+        "워터 라이드",
+        "라이브 쇼",
+        "가족 관광명소"
       ],
-      "tips": "Arrive early. Wear comfortable shoes. Bring sunscreen and water.",
+      "tips": "일찍 도착하세요. 편한 신발을 착용하세요. 자외선 차단제와 물을 가져가세요.",
       "image": "/img/ext/2e1ba66bbe1b.webp",
       "phone": "+86 022  4822 7489"
     },
     {
       "id": "tianjin-art-museum",
       "name": "天津美术馆",
-      "nameEn": "Tianjin Art Museum",
+      "nameEn": "톈진 미술관",
       "category": "cultural",
-      "description": "Modern art museum with Chinese and international exhibitions.",
-      "address": "Hexi District",
+      "description": "중국 및 국제 전시회가 있는 현대 미술관입니다.",
+      "address": "허시 구",
       "coordinates": {
         "lat": 39.1022,
         "lng": 117.2222
       },
-      "openingHours": "09:00-16:30 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "09:00-16:30 (월요일 휴관)",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "2시간",
       "highlights": [
-        "Contemporary art",
-        "Chinese paintings",
-        "Rotating exhibitions",
-        "Art lectures"
+        "현대 미술",
+        "중국 회화",
+        "순환 전시회",
+        "미술 강좌"
       ],
-      "tips": "Check schedule for special exhibitions. Great for art enthusiasts.",
+      "tips": "특별 전시 일정を確認하세요。미술 애호가에게 좋습니다。",
       "image": "/img/ext/bb1e59b31c2f.webp",
       "phone": "+86 022  0345 6451"
     },
     {
       "id": "tianjin-zhengyuan",
       "name": "天津之眼摩天轮",
-      "nameEn": "Tianjin Eye at Night",
+      "nameEn": "천안 야간 에이다",
       "category": "landmark",
-      "description": "Spectacular night views of the illuminated Ferris wheel and river.",
-      "address": "Hebei District",
+      "description": "점등된 페리스휠과 강을 바라보는 경이로운 야경.",
+      "address": "허베이 구",
       "coordinates": {
         "lat": 39.3622,
         "lng": 117.1822
       },
       "openingHours": "09:30-22:00",
       "ticketPrice": "70¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1시간",
       "highlights": [
-        "Night photography",
-        "Illuminated bridge",
-        "River views",
-        "Romantic atmosphere"
+        "야간 사진 촬영",
+        "조명된 다리",
+        "강변 전경",
+        "낭만적 분위기"
       ],
-      "tips": "Best after dark. Bring tripod for photos. Combine with evening river cruise.",
+      "tips": "어둡고 나서 최고입니다. 사진 촬영용 삼각대를 가져오세요. 저녁 강 크루즈와 결합하세요.",
       "image": "/img/ext/b29f136b0869.webp",
       "phone": "+86 022  4967 8480"
     },
     {
       "id": "tianjin-hometown",
       "name": "杨柳青年画馆",
-      "nameEn": "Yangliuqing New Year Painting Hall",
+      "nameEn": "양류칭 설화 전시관",
       "category": "cultural",
-      "description": "Exhibition hall for traditional Chinese New Year paintings.",
-      "address": "Xiqing District",
+      "description": "전통 중국 설화 전시관",
+      "address": "西青区",
       "coordinates": {
         "lat": 39.0522,
         "lng": 117.3022
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "20¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2시간",
       "highlights": [
-        "New Year paintings",
-        "Traditional art",
-        "Woodblock printing",
-        "Cultural workshops"
+        "춘련(春聯)",
+        "전통 예술",
+        "목판 인쇄",
+        "문화 워크숍"
       ],
-      "tips": "Buy authentic paintings as souvenirs. Watch the creation process.",
+      "tips": "정통 그림을 기념품으로 구매하세요. 창작 과정을 지켜보세요.",
       "image": "/img/ext/998eb40307b9.webp",
       "phone": "+86 022  1028 2822"
     },
     {
       "id": "tianjin-zhufeng",
       "name": "天津朱成功纪念馆",
-      "nameEn": "Zhu Cheng Gong Memorial Hall",
+      "nameEn": "주청공 기념관",
       "category": "historical",
-      "description": "Memorial hall for Ming Dynasty general Zhu Cheng Gong.",
-      "address": "Jixian County",
+      "description": "명나라 장수 주청공을 위한 기념관",
+      "address": "Ji County",
       "coordinates": {
         "lat": 40.0022,
         "lng": 117.5022
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "25¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2시간",
       "highlights": [
-        "Ming history",
-        "Military artifacts",
-        "Traditional architecture",
-        "Cultural exhibits"
+        "명나라 역사",
+        "군사 유물",
+        "전통 건축",
+        "문화 전시"
       ],
-      "tips": "Learn about local hero. Combine with Huangyaguan Great Wall trip.",
+      "tips": "지역 영웅에 대해 알아보세요. 황야관长城之旅와 결합하세요.",
       "image": "/img/ext/cdcbe4576919.webp",
       "phone": "+86 022  3076 1095"
     },
     {
       "id": "italian-quarter",
       "name": "意式风情区",
-      "nameEn": "Italian Style District",
+      "nameEn": "이탈리안 스타일 지구",
       "category": "street",
       "description": "中国唯一的意大利风情建筑群，保存了100余栋意式建筑，梁启超等名人故居在此。",
       "address": "天津市河北区自由道",
@@ -633,7 +633,7 @@
     {
       "id": "five-avenues",
       "name": "五大道",
-      "nameEn": "Five Great Avenues",
+      "nameEn": "5대대로",
       "category": "street",
       "description": "中国保存最完整的洋楼建筑群，有2000余栋欧式建筑，被称为万国建筑博览会。",
       "address": "天津市和平区",
@@ -656,7 +656,7 @@
     {
       "id": "porcelain-house",
       "name": "瓷房子",
-      "nameEn": "Porcelain House",
+      "nameEn": "도자기 하우스",
       "category": "landmark",
       "description": "用4亿多片古瓷片装饰的法式建筑，被誉为全球最疯狂的建筑之一。",
       "address": "天津市和平区赤峰道72号",
@@ -679,7 +679,7 @@
     {
       "id": "tianjin-museum",
       "name": "天津博物馆",
-      "nameEn": "Tianjin Museum",
+      "nameEn": "톈진 박물관",
       "category": "museum",
       "description": "综合性博物馆，馆藏20万件文物，以甲骨文和瓷器收藏著称。",
       "address": "天津市河西区平江道62号",
@@ -702,7 +702,7 @@
     {
       "id": "hahyuan",
       "name": "天津海昌极地海洋世界",
-      "nameEn": "Tianjin Haichang Polar Ocean World",
+      "nameEn": "톈진 해창 극지해양세계",
       "category": "museum",
       "description": "华北地区最大的极地海洋馆，有白鲸、海豚、企鹅等极地动物。",
       "address": "天津市滨海新区响螺湾商务区",
@@ -725,7 +725,7 @@
     {
       "id": "tianjin-food-street",
       "name": "南市食品街",
-      "nameEn": "Nanshi Food Street",
+      "nameEn": "난시 푸드 스트리트",
       "category": "street",
       "description": "天津最大的美食集中地，汇集了狗不理包子、耳朵眼炸糕等天津名小吃。",
       "address": "天津市和平区南市",
@@ -748,7 +748,7 @@
     {
       "id": "tianjin-radio",
       "name": "天津广播电视塔",
-      "nameEn": "Tianjin Radio and TV Tower",
+      "nameEn": "톈진 라디오 TV 타워",
       "category": "landmark",
       "description": "高415.2米，是天津的地标建筑之一，塔上有旋转餐厅和观光层。",
       "address": "天津市河西区卫津南路1号",
@@ -771,7 +771,7 @@
     {
       "id": "dabeiyuan",
       "name": "大悲禅院",
-      "nameEn": "Dabei Temple",
+      "nameEn": "대비사",
       "category": "temple",
       "description": "天津最大的佛教寺院，始建于清初，寺内有释迦牟尼佛真身舍利。",
       "address": "天津市河北区天纬路40号",
@@ -794,7 +794,7 @@
     {
       "id": "binjiang-road",
       "name": "滨江道",
-      "nameEn": "Binjiang Road",
+      "nameEn": "빈량 로드",
       "category": "street",
       "description": "天津最繁华的商业街，全长2094米，汇集各大商场和品牌。",
       "address": "天津市和平区滨江道",
@@ -817,7 +817,7 @@
     {
       "id": "tianjin-zoo",
       "name": "天津动物园",
-      "nameEn": "Tianjin Zoo",
+      "nameEn": "톈진 동물원",
       "category": "nature",
       "description": "华北地区最大的动物园之一，有300多种动物，大熊猫馆最受欢迎。",
       "address": "天津市南开区水上公园东路",
@@ -840,7 +840,7 @@
     {
       "id": "water-park",
       "name": "水上公园",
-      "nameEn": "Water Park",
+      "nameEn": "워터파크",
       "category": "park",
       "description": "天津最大的公园，面积164公顷，以湖泊和园林著称。",
       "address": "天津市南开区水上公园路",
@@ -863,7 +863,7 @@
     {
       "id": "yangliuqing",
       "name": "杨柳青古镇",
-      "nameEn": "Yangliuqing Ancient Town",
+      "nameEn": "양류칭 고전 마을",
       "category": "street",
       "description": "中国年画之乡，杨柳青年画是中国四大木版年画之一。",
       "address": "天津市西青区杨柳青镇",
@@ -886,7 +886,7 @@
     {
       "id": "shijia-dayuan",
       "name": "石家大院",
-      "nameEn": "Shi Family Courtyard",
+      "nameEn": "시씨 가문 마당",
       "category": "landmark",
       "description": "清末民初建筑，华北第一宅，有156间房屋，展示了天津商贾文化。",
       "address": "天津市西青区杨柳青镇",
@@ -909,7 +909,7 @@
     {
       "id": "tianjin-forest-zoo",
       "name": "天津森林动物园",
-      "nameEn": "Tianjin Forest Zoo",
+      "nameEn": "톈진 숲 동물원",
       "category": "nature",
       "description": "位于滨海新区，以散养方式展示动物，占地5000亩。",
       "address": "天津市滨海新区",
@@ -932,7 +932,7 @@
     {
       "id": "tianjin-grand-theatre",
       "name": "天津大剧院",
-      "nameEn": "Tianjin Grand Theatre",
+      "nameEn": "톈진 그랜드 극장",
       "category": "landmark",
       "description": "天津文化中心核心建筑，设计灵感来自湖中之石，是天津文化新地标。",
       "address": "天津市河西区平江道",
@@ -955,7 +955,7 @@
     {
       "id": "panpan-temple",
       "name": "盘山风景区",
-      "nameEn": "Panshan Scenic Area",
+      "nameEn": "반산 Scenic Area",
       "category": "nature",
       "description": "天津后花园，有京东第一山之称，集自然风光和佛教文化于一体。",
       "address": "天津市蓟州区官庄镇",
@@ -978,7 +978,7 @@
     {
       "id": "bicycle-museum",
       "name": "天津自行车博物馆",
-      "nameEn": "Tianjin Bicycle Museum",
+      "nameEn": "톈진 자전거 박물관",
       "category": "museum",
       "description": "中国唯一的自行车专题博物馆，展示了自行车200年发展历史。",
       "address": "天津市武清区",
@@ -1001,7 +1001,7 @@
     {
       "id": "jinmen-bridge",
       "name": "金汤桥",
-      "nameEn": "Jintang Bridge",
+      "nameEn": "진탕 대교",
       "category": "landmark",
       "description": "天津解放会师地，始建于1906年，是天津现存最早的开启式铁桥。",
       "address": "天津市河北区",
@@ -1023,7 +1023,7 @@
     {
       "id": "wanghailou",
       "name": "望海楼教堂",
-      "nameEn": "Wanghailou Cathedral",
+      "nameEn": "왕해루 성당",
       "category": "landmark",
       "description": "中国近代史上著名的教堂，1869年建成，哥特式建筑风格。",
       "address": "天津市河北区狮子林大街292号",
@@ -1045,7 +1045,7 @@
     {
       "id": "tianjin-planetarium",
       "name": "天津科技馆",
-      "nameEn": "Tianjin Science and Technology Museum",
+      "nameEn": "톈진 과학기술 박물관",
       "category": "museum",
       "description": "华北地区最大的科技馆，有400多件互动展品。",
       "address": "天津市河西区隆昌路94号",
@@ -1068,7 +1068,7 @@
     {
       "id": "nankai-university",
       "name": "南开大学",
-      "nameEn": "Nankai University",
+      "nameEn": "난카이 대학",
       "category": "landmark",
       "description": "中国著名高等学府，周恩来总理母校，校园环境优美。",
       "address": "天津市南开区卫津路94号",
@@ -1091,7 +1091,7 @@
     {
       "id": "tianjin-university",
       "name": "天津大学",
-      "nameEn": "Tianjin University",
+      "nameEn": "톈진 대학",
       "category": "landmark",
       "description": "中国第一所现代大学，始建于1895年，前身为北洋大学。",
       "address": "天津市南开区卫津路92号",
@@ -1114,7 +1114,7 @@
     {
       "id": "dagukou",
       "name": "大沽口炮台",
-      "nameEn": "Dagu Fort",
+      "nameEn": "다구 요새",
       "category": "landmark",
       "description": "中国近代史上重要的海防要塞，见证了鸦片战争和八国联军侵华。",
       "address": "天津市滨海新区大沽口",
@@ -1136,9 +1136,9 @@
     {
       "id": "binhai-library",
       "name": "滨海图书馆",
-      "nameEn": "Binhai Library",
+      "nameEn": "빈하이 도서관",
       "category": "landmark",
-      "description": "由MVRDV设计，内部有34层白色阶梯式书架，被称为最美图书馆。",
+      "description": "MVRDV가 설계하고 내부에 34층의 흰색 계단식 서가가 있어 가장 아름다운 도서관으로 불림.",
       "address": "天津市滨海新区中心图书馆",
       "coordinates": {
         "lat": 39.0167,
@@ -1159,7 +1159,7 @@
     {
       "id": "tianjin-wetland",
       "name": "天津七里海湿地",
-      "nameEn": "Qilihai Wetland",
+      "nameEn": "칠라이해습지",
       "category": "nature",
       "description": "中国最大的古海岸与湿地国家级自然保护区，面积95平方公里。",
       "address": "天津市宁河区",
@@ -1182,7 +1182,7 @@
     {
       "id": "tianjin-teahouse",
       "name": "名流茶馆",
-      "nameEn": "Mingliu Teahouse",
+      "nameEn": "명류찻집",
       "category": "street",
       "description": "天津最有名的相声茶馆，可体验天津传统曲艺文化。",
       "address": "天津市和平区新华路177号",
@@ -1207,57 +1207,57 @@
     {
       "id": "tianjin-1",
       "name": "狗不理包子",
-      "nameEn": "Goubuli Baozi",
-      "type": "local",
-      "cuisine": "Tianjin",
+      "nameEn": "구블리包子",
+      "type": "로컬",
+      "cuisine": "톈진",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Multiple locations including Shandong Road",
+      "address": "산동로를 포함한 다수 위치",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.2022
       },
       "phone": "+86 22 2735 2535",
       "hours": "06:00-20:00",
-      "description": "Legendary baozi restaurant famous since 1858. Known for thin-skinned, juicy dumplings.",
+      "description": "1858년부터 유명한 전설적인包子 전문점. 껍질이 얇고 육汁이 풍부한 만두로 유명.",
       "dishHighlights": [
-        "Pork baozi",
-        "Seafood baozi",
-        "Vegetable baozi"
+        "돼지고기包子",
+        "해산물包子",
+        "채소包子"
       ],
       "tags": [
-        "local",
-        "famous",
-        "baozi",
-        "historic"
+        "현지",
+        "유명",
+        "包子",
+        "역사적인"
       ],
       "imageUrl": "/img/ext/0773a0c21fd5.webp"
     },
     {
       "id": "tianjin-2",
       "name": "耳朵眼炸糕",
-      "nameEn": "Erduoyan Fried Cake",
-      "type": "local",
-      "cuisine": "Tianjin Snacks",
+      "nameEn": "얼두오얀 튀김 케이크",
+      "type": "로컬",
+      "cuisine": "톈진 간식",
       "avgPrice": 20,
       "rating": 4.6,
-      "address": "2 Nanshi Gate, Hebei District",
+      "address": "hebei구 남시문 2번지",
       "coordinates": {
         "lat": 39.1522,
         "lng": 117.1922
       },
       "hours": "08:00-20:00",
-      "description": "Famous for crispy red bean fried cakes, a Tianjin specialty since 1905.",
+      "description": "1905년부터 톈진 특산인 바삭한 팥 튀김 케이크로 유명.",
       "dishHighlights": [
-        "Red bean fried cake",
-        "Sweet rice cake",
-        "Osmanthus cake"
+        "팥 튀김 케이크",
+        "단 쌀 케이크",
+        "계화 Cake"
       ],
       "tags": [
-        "local",
-        "famous",
-        "snacks",
-        "dessert"
+        "현지",
+        "유명",
+        "스낵",
+        "디저트"
       ],
       "imageUrl": "/img/ext/b0db14180b5e.webp",
       "phone": "+86 022  7819 7799"
@@ -1265,114 +1265,114 @@
     {
       "id": "tianjin-3",
       "name": "十八街麻花",
-      "nameEn": "Shibajie Mahua",
-      "type": "local",
-      "cuisine": "Tianjin Snacks",
+      "nameEn": "시바제 마후아",
+      "type": "로컬",
+      "cuisine": "톈진 간식",
       "avgPrice": 40,
       "rating": 4.7,
-      "address": "Multiple locations",
+      "address": "다수 위치",
       "coordinates": {
         "lat": 39.1422,
         "lng": 117.2022
       },
       "phone": "+86 22 2730 1618",
       "hours": "08:00-21:00",
-      "description": "Iconic Tianjin braid-like fried dough snack, crispy and not greasy.",
+      "description": "톈진 특유의 꼬인 튀김 반죽 간식, 바삭하고 느끼하지 않음.",
       "dishHighlights": [
-        "Mahua (fried dough)",
-        "Mixed nuts",
-        "Preserved fruits"
+        "마후아(튀김 반죽)",
+        "견과류Mixed",
+        "장아찌"
       ],
       "tags": [
-        "local",
-        "famous",
-        "snacks",
-        "souvenir"
+        "현지",
+        "유명",
+        "스낵",
+        "기념품"
       ],
       "imageUrl": "/img/ext/7e7d7df47e0c.webp"
     },
     {
       "id": "tianjin-4",
       "name": "津菜典藏",
-      "nameEn": "Jin Cuisine Classic",
-      "type": "fine",
-      "cuisine": "Tianjin",
+      "nameEn": "진 요리klassik",
+      "type": "고급",
+      "cuisine": "톈진",
       "avgPrice": 200,
       "rating": 4.6,
-      "address": "68 Nanjing Road, Heping District",
+      "address": "和平区南京路68호",
       "coordinates": {
         "lat": 39.1222,
         "lng": 117.2122
       },
       "phone": "+86 22 2339 8888",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "High-end restaurant serving refined Tianjin cuisine with elegant atmosphere.",
+      "description": "우아한 분위기로 정교한 천진 요리를 제공하는 고급 레스토랑",
       "dishHighlights": [
-        "Braised prawns",
-        "Whole steamed fish",
-        "Tianjin-style squid"
+        "찜 새우",
+        "통찜 생선",
+        "천진 스타일 오징어"
       ],
       "tags": [
-        "fine-dining",
-        "tianjin-cuisine",
-        "special-occasion"
+        "고급 식당",
+        "천진요리",
+        "특별한 자리"
       ],
       "imageUrl": "/img/ext/2ad92b97c0ec.webp"
     },
     {
       "id": "tianjin-5",
       "name": "红旗饭庄",
-      "nameEn": "Hongqi Restaurant",
-      "type": "local",
-      "cuisine": "Tianjin",
+      "nameEn": "홍기 레스토랑",
+      "type": "로컬",
+      "cuisine": "톈진",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "158 Weining Road, Hexi District",
+      "address": "河西區衛寧路158호",
       "coordinates": {
         "lat": 39.1022,
         "lng": 117.2222
       },
       "phone": "+86 22 2835 8888",
       "hours": "10:30-21:30",
-      "description": "Historic Tianjin restaurant known for traditional local dishes.",
+      "description": "전통적인 현지 요리로 알려진 역사적인 천진 레스토랑",
       "dishHighlights": [
-        "Eight-delight chicken",
-        "Braised pork belly",
-        "Fried dough twists"
+        "팔희鸡肉",
+        "찜 돼지고기",
+        "편력"
       ],
       "tags": [
-        "local",
-        "tianjin-cuisine",
-        "historic",
-        "traditional"
+        "현지",
+        "천진요리",
+        "역사적인",
+        "전통적인"
       ],
       "imageUrl": "/img/ext/8bc02f8b0151.webp"
     },
     {
       "id": "tianjin-6",
       "name": "盛锡福",
-      "nameEn": "Sheng Xifu Hat Shop",
-      "type": "local",
-      "cuisine": "Tianjin",
+      "nameEn": "성시부 모자 상점",
+      "type": "로컬",
+      "cuisine": "톈진",
       "avgPrice": 60,
       "rating": 4.4,
-      "address": "Nanshi Gate, Hebei District",
+      "address": "Hebei 구, 난시문",
       "coordinates": {
         "lat": 39.1522,
         "lng": 117.1922
       },
       "hours": "09:00-18:00",
-      "description": "Traditional restaurant with famous hat-shaped pastries.",
+      "description": "유명 모자 모양 pastry를 제공하는 전통 레스토랑",
       "dishHighlights": [
-        "Hat-shaped pastries",
-        "Traditional Tianjin snacks",
-        "Congee"
+        "모자 모양 pastry",
+        "전통 천진 스낵",
+        "죽"
       ],
       "tags": [
-        "local",
-        "historic",
-        "snacks",
-        "famous"
+        "현지",
+        "역사적인",
+        "스낵",
+        "유명"
       ],
       "imageUrl": "/img/ext/51976567dbfc.webp",
       "phone": "+86 022  4322 6576"
@@ -1380,28 +1380,28 @@
     {
       "id": "tianjin-7",
       "name": "石头门坎",
-      "nameEn": "Shitou Menkan",
-      "type": "local",
-      "cuisine": "Tianjin Vegetarian",
+      "nameEn": "石头 문관",
+      "type": "로컬",
+      "cuisine": "천진 베지테리언",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "Near Tianhou Temple, Ancient Culture Street",
+      "address": "고대 문화거리 천후사 근처",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.2022
       },
       "hours": "10:00-20:00",
-      "description": "Famous vegetarian restaurant near the temple, known for meat-substitute dishes.",
+      "description": "고기 대체 요리로 알려진 사찰 근처의 유명한 베지테리언 레스토랑",
       "dishHighlights": [
-        "Vegetarian meat",
-        "Buddhist cuisine",
-        "Vegetable rolls"
+        "베지 미트",
+        "불교 요리",
+        "야채롤"
       ],
       "tags": [
-        "local",
-        "vegetarian",
-        "buddhist",
-        "temple-area"
+        "현지",
+        "채식",
+        "불교",
+        "사찰 지역"
       ],
       "imageUrl": "/img/ext/4594fef09610.webp",
       "phone": "+86 022  8846 0434"
@@ -1409,85 +1409,85 @@
     {
       "id": "tianjin-8",
       "name": "天津烤鸭店",
-      "nameEn": "Tianjin Roast Duck",
-      "type": "fine",
-      "cuisine": "Peking Duck",
+      "nameEn": "천진 오리 구이",
+      "type": "고급",
+      "cuisine": "북경오리",
       "avgPrice": 180,
       "rating": 4.6,
-      "address": "89 Nanjing Road, Heping District",
+      "address": "和平区南京路89号",
       "coordinates": {
         "lat": 39.1222,
         "lng": 117.2122
       },
       "phone": "+86 22 2339 6666",
       "hours": "10:30-13:30, 17:00-20:30",
-      "description": "Quality Peking duck restaurant with crispy skin and traditional service.",
+      "description": "피부 쫄깃한 전통 서비스가 있는 품질 좋은 북경오리 전문점",
       "dishHighlights": [
-        "Roast duck",
-        "Pancakes",
-        "Cucumber and scallion"
+        "구운 오리",
+        "펜케이크",
+        "오이와 파"
       ],
       "tags": [
-        "fine-dining",
-        "peking-duck",
-        "traditional"
+        "고급 식당",
+        "북경오리",
+        "전통적인"
       ],
       "imageUrl": "/img/ext/bea876190f29.webp"
     },
     {
       "id": "tianjin-9",
       "name": "起士林",
-      "nameEn": "Shiqilin",
-      "type": "fine",
-      "cuisine": "Russian/Tianjin Fusion",
+      "nameEn": "시치린",
+      "type": "고급",
+      "cuisine": "러시아/톈진 퓨전",
       "avgPrice": 150,
       "rating": 4.5,
-      "address": "33 Yunnan Road, Heping District",
+      "address": "和平区云南路33号",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2122
       },
       "phone": "+86 22 2333 1888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Historic restaurant with Russian influence, serving fusion cuisine.",
+      "description": "퓨전 요리를 제공하는 러시아 영향의 역사적인 식당",
       "dishHighlights": [
-        "Russian-style dishes",
-        "Western pastries",
-        "Tianjin classics"
+        "러시아 스타일 요리",
+        "서양 페이스트리",
+        "톈진 전통 요리"
       ],
       "tags": [
-        "fine-dining",
-        "russian",
-        "fusion",
-        "historic"
+        "고급 식당",
+        "러시아",
+        "퓨전",
+        "역사적인"
       ],
       "imageUrl": "/img/ext/1f4e8a98b685.webp"
     },
     {
       "id": "tianjin-10",
       "name": "崩豆张",
-      "nameEn": "Bengdou Zhang",
-      "type": "local",
-      "cuisine": "Tianjin Snacks",
+      "nameEn": "봉두장",
+      "type": "로컬",
+      "cuisine": "톈진 간식",
       "avgPrice": 30,
       "rating": 4.4,
-      "address": "Nanshi Gate area",
+      "address": "남시문 지역",
       "coordinates": {
         "lat": 39.1522,
         "lng": 117.1922
       },
       "hours": "09:00-19:00",
-      "description": "Famous for crispy soybeans and nuts, a traditional Tianjin snack.",
+      "description": "쫀득한 대두와 견과류로 유명한 전통 톈진 간식",
       "dishHighlights": [
-        "Crispy soybeans",
-        "Fried beans",
-        "Mixed nuts"
+        "쫀득한 대두",
+        "볶은 콩",
+        "견과류Mixed"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "famous",
-        "souvenir"
+        "현지",
+        "스낵",
+        "유명",
+        "기념품"
       ],
       "imageUrl": "/img/ext/552745aa80da.png",
       "phone": "+86 022  1555 7897"
@@ -1495,86 +1495,86 @@
     {
       "id": "tianjin-11",
       "name": "老北京涮羊肉",
-      "nameEn": "Beijing-style Lamb Hotpot",
-      "type": "local",
-      "cuisine": "Hotpot",
+      "nameEn": "베이징 스타일 양고기火锅",
+      "type": "로컬",
+      "cuisine": "호트포",
       "avgPrice": 120,
       "rating": 4.6,
-      "address": "68 Changde Road, Heping District",
+      "address": "和平区常德路68号",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2022
       },
       "phone": "+86 22 2781 8888",
       "hours": "11:00-22:00",
-      "description": "Popular lamb hotpot with traditional Mongolian style.",
+      "description": "전통 몽골 스타일의 인기기 양고기火锅",
       "dishHighlights": [
-        "Lamb slices",
-        "Vegetables",
-        "Sesame paste"
+        "양고기 슬라이스",
+        "야채",
+        "참깨 페이스트"
       ],
       "tags": [
-        "local",
-        "hotpot",
-        "winter",
-        "traditional"
+        "현지",
+        "火锅",
+        "겨울",
+        "전통적인"
       ],
       "imageUrl": "/img/ext/1beaa4ec0924.webp"
     },
     {
       "id": "tianjin-12",
       "name": "宴宾楼",
-      "nameEn": "Yanbin Lou",
-      "type": "fine",
-      "cuisine": "Tianjin",
+      "nameEn": "연빈루",
+      "type": "고급",
+      "cuisine": "톈진",
       "avgPrice": 250,
       "rating": 4.7,
-      "address": "69 Guiyang Road, Hexi District",
+      "address": "河西区贵阳路69号",
       "coordinates": {
         "lat": 39.1022,
         "lng": 117.2322
       },
       "phone": "+86 22 2836 8888",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "Upscale Tianjin restaurant with imperial-style dishes.",
+      "description": "고급스러운 천진 레스토랑으로 황제 스타일 요리를 제공합니다.",
       "dishHighlights": [
-        "Imperial cuisine",
-        "Braised abalone",
-        "Bird's nest"
+        "궁정 요리",
+        "소재 전복",
+        "제비둥지"
       ],
       "tags": [
-        "fine-dining",
-        "luxury",
-        "imperial",
-        "special-occasion"
+        "고급 식당",
+        "럭셔리",
+        "황제",
+        "특별한 자리"
       ],
       "imageUrl": "/img/ext/90cf8e990c30.webp"
     },
     {
       "id": "tianjin-13",
       "name": "街边小吃",
-      "nameEn": "Street Food Stalls",
-      "type": "local",
-      "cuisine": "Various",
+      "nameEn": "길거리 음식 판매대",
+      "type": "로컬",
+      "cuisine": "다양한",
       "avgPrice": 30,
       "rating": 4.3,
-      "address": "Ancient Culture Street",
+      "address": "고문화거리",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.2022
       },
       "hours": "10:00-22:00",
-      "description": "Various street food stalls along the tourist street.",
+      "description": "관광通りです의 다양한 길거리 음식 판매대입니다.",
       "dishHighlights": [
-        "Grilled skewers",
-        "Fried dough sticks",
-        "Steamed buns"
+        "꼬치",
+        "튀김가래떡",
+        "찐빵"
       ],
       "tags": [
-        "local",
-        "street-food",
-        "snacks",
-        "night-market"
+        "현지",
+        "스트리트푸드",
+        "스낵",
+        "야시장"
       ],
       "imageUrl": "/img/ext/6636e42ed315.webp",
       "phone": "+86 022  2709 8976"
@@ -1582,57 +1582,57 @@
     {
       "id": "tianjin-14",
       "name": "天津海鲜坊",
-      "nameEn": "Tianjin Seafood Restaurant",
-      "type": "local",
-      "cuisine": "Seafood",
+      "nameEn": "천진 해산물 레스토랑",
+      "type": "로컬",
+      "cuisine": "해산물",
       "avgPrice": 200,
       "rating": 4.5,
-      "address": "Binhai New Area",
+      "address": "빈하이 신구",
       "coordinates": {
         "lat": 38.9922,
         "lng": 117.7022
       },
       "phone": "+86 22 6520 8888",
       "hours": "10:30-14:00, 17:00-21:30",
-      "description": "Fresh seafood restaurant near the port area.",
+      "description": "항구 지역 근처의 신선한 해산물 레스토랑입니다.",
       "dishHighlights": [
-        "Steamed crab",
-        "Salt shrimp",
-        "Fried fish"
+        "찐 게",
+        "소금 새우",
+        "튀긴 생선"
       ],
       "tags": [
-        "local",
-        "seafood",
-        "fresh",
-        "local-catch"
+        "현지",
+        "해산물",
+        "신선한",
+        "지역 산 어류"
       ],
       "imageUrl": "/img/ext/b6df8acd446d.webp"
     },
     {
       "id": "tianjin-15",
       "name": "百饺圆",
-      "nameEn": "Bai jiao Yuan",
-      "type": "local",
-      "cuisine": "Dumplings",
+      "nameEn": "백교원",
+      "type": "로컬",
+      "cuisine": "만두",
       "avgPrice": 60,
       "rating": 4.6,
-      "address": "Multiple locations",
+      "address": "다수 위치",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2122
       },
       "hours": "10:00-22:00",
-      "description": "Popular for variety of delicious dumplings with unique fillings.",
+      "description": "다양한 맛있는 만두와 독특한 속으로 유명합니다.",
       "dishHighlights": [
-        "Shrimp dumplings",
-        "Pork dumplings",
-        "Vegetable dumplings"
+        "새우 딤섬",
+        "돼지고기 만두",
+        "야채 만두"
       ],
       "tags": [
-        "local",
-        "dumplings",
-        "variety",
-        "popular"
+        "현지",
+        "딤섬",
+        "다양한",
+        "인기"
       ],
       "imageUrl": "/img/ext/3a727a953eca.webp",
       "phone": "+86 022  5158 2967"
@@ -1640,28 +1640,28 @@
     {
       "id": "tianjin-16",
       "name": "砂锅李",
-      "nameEn": "Sandpot Li",
-      "type": "local",
-      "cuisine": "Tianjin",
+      "nameEn": "샌드팟 리",
+      "type": "로컬",
+      "cuisine": "톈진",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Nanshi Gate area",
+      "address": "남시문 지역",
       "coordinates": {
         "lat": 39.1522,
         "lng": 117.1922
       },
       "hours": "11:00-21:00",
-      "description": "Famous for sandpot cooking and rich broth dishes.",
+      "description": "샌드팟 요리와 진한 국물 요리로 유명합니다.",
       "dishHighlights": [
-        "Sandpot chicken",
-        "Braised meatballs",
-        "Hot and sour soup"
+        "샌드팟 치킨",
+        "조림 미트볼",
+        "얼큰하고 새콤한 수프"
       ],
       "tags": [
-        "local",
-        "tianjin-cuisine",
-        "traditional",
-        "soup"
+        "현지",
+        "천진요리",
+        "전통적인",
+        "수프"
       ],
       "imageUrl": "/img/ext/ac60f6389624.webp",
       "phone": "+86 022  3037 4685"
@@ -1669,28 +1669,28 @@
     {
       "id": "tianjin-17",
       "name": "桂园餐厅",
-      "nameEn": "Guiyuan Restaurant",
-      "type": "local",
-      "cuisine": "Tianjin",
+      "nameEn": "구이위안 레스토랑",
+      "type": "로컬",
+      "cuisine": "톈진",
       "avgPrice": 90,
       "rating": 4.5,
-      "address": "42 Guangchuan Road, Heping District",
+      "address": "화평구 광천로 42번지",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2022
       },
       "hours": "10:30-21:30",
-      "description": "Local favorite known for home-style Tianjin dishes.",
+      "description": "집밥 스타일의 텐진 요리로 현지인들에게 사랑받는 곳입니다.",
       "dishHighlights": [
-        "Braised pork belly",
-        "Fried fish",
-        " Stir-fried vegetables"
+        "찜 돼지고기",
+        "튀긴 생선",
+        "볶은 채소"
       ],
       "tags": [
-        "local",
-        "home-style",
-        "tianjin-cuisine",
-        "value"
+        "현지",
+        "가정식",
+        "천진요리",
+        "가성비"
       ],
       "imageUrl": "/img/ext/51b76c1605be.webp",
       "phone": "+86 022  2138 4201"
@@ -1698,28 +1698,28 @@
     {
       "id": "tianjin-18",
       "name": "南市食品街",
-      "nameEn": "Nanshi Food Street",
-      "type": "local",
-      "cuisine": "Various",
+      "nameEn": "난시 푸드 스트리트",
+      "type": "로컬",
+      "cuisine": "다양한",
       "avgPrice": 50,
       "rating": 4.3,
-      "address": "Nanshi Gate, Hebei District",
+      "address": "Hebei 구, 난시문",
       "coordinates": {
         "lat": 39.1522,
         "lng": 117.1922
       },
       "hours": "09:00-22:00",
-      "description": "Historic food street with multiple restaurants and snack shops.",
+      "description": "여러 레스토랑과 간식 가게가 있는 역사적인 음식 거리입니다.",
       "dishHighlights": [
-        "Various dumplings",
-        "Tianjin snacks",
-        "Local dishes"
+        "다양한 만두",
+        "텐진 간식",
+        "현지 요리"
       ],
       "tags": [
-        "local",
-        "food-street",
-        "snacks",
-        "variety"
+        "현지",
+        "음식 거리",
+        "스낵",
+        "다양한"
       ],
       "imageUrl": "/img/ext/d48e7dcd448f.webp",
       "phone": "+86 022  1842 6039"
@@ -1727,115 +1727,115 @@
     {
       "id": "tianjin-19",
       "name": "老天津卫",
-      "nameEn": "Old Tianjin Wei",
-      "type": "local",
-      "cuisine": "Tianjin",
+      "nameEn": "올드 텐진 웨이",
+      "type": "로컬",
+      "cuisine": "톈진",
       "avgPrice": 100,
       "rating": 4.6,
-      "address": "Near Ancient Culture Street",
+      "address": "고대 문화 거리 근처",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.2022
       },
       "phone": "+86 22 2736 8888",
       "hours": "11:00-22:00",
-      "description": "Restaurant serving traditional Tianjin cuisine with vintage decor.",
+      "description": "빈티지 인테리어로 전통적인 텐진 요리를 제공하는 레스토랑입니다.",
       "dishHighlights": [
-        "Goubuli baozi",
-        "Fried dough twists",
-        "Tianjin classics"
+        "고우불리 바오즈",
+        "편력",
+        "톈진 전통 요리"
       ],
       "tags": [
-        "local",
-        "tianjin-cuisine",
-        "traditional",
-        "historic"
+        "현지",
+        "천진요리",
+        "전통적인",
+        "역사적인"
       ],
       "imageUrl": "/img/ext/cdfceae14ebf.webp"
     },
     {
       "id": "tianjin-20",
       "name": "利顺德大饭店",
-      "nameEn": "Astor Hotel",
-      "type": "fine",
-      "cuisine": "Western/Tianjin Fusion",
+      "nameEn": "애스터 호텔",
+      "type": "고급",
+      "cuisine": "서양/텐진 퓨전",
       "avgPrice": 300,
       "rating": 4.7,
-      "address": "33 Tangji Road, Heping District",
+      "address": "화평구 탕지 로드 33번지",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2122
       },
       "phone": "+86 22 2333 1888",
       "hours": "06:30-22:00",
-      "description": "Historic luxury hotel restaurant with colonial atmosphere and quality food.",
+      "description": "역사적인 럭셔리 호텔 레스토랑으로 식민지 시대의 분위기와 질 높은 음식을 제공합니다.",
       "dishHighlights": [
-        "Western breakfast",
-        "Tianjin afternoon tea",
-        "International cuisine"
+        "서양식 아침 식사",
+        "텐진 애프터눈 티",
+        "국제 요리"
       ],
       "tags": [
-        "fine-dining",
-        "luxury",
-        "historic",
-        "western"
+        "고급 식당",
+        "럭셔리",
+        "역사적인",
+        "서양"
       ],
       "imageUrl": "/img/ext/552745aa80da.png"
     },
     {
       "id": "tianjin-21",
       "name": "海底捞火锅",
-      "nameEn": "Haidilao Hotpot",
-      "type": "chain",
-      "cuisine": "Hotpot",
+      "nameEn": "하이디려오",
+      "type": "체인",
+      "cuisine": "호트포",
       "avgPrice": 150,
       "rating": 4.7,
-      "address": "Joy City Mall, 166 Nanjing Road",
+      "address": "난징 로드 166번지 조이 시티 몰",
       "coordinates": {
         "lat": 39.1222,
         "lng": 117.2122
       },
       "phone": "+86 22 5871 8888",
-      "hours": "24 hours",
-      "description": "Famous chain hotpot with excellent service and entertainment.",
+      "hours": "24시간",
+      "description": "탁월한 서비스와 엔터테인먼트로 유명한 체인점 훠궈입니다.",
       "dishHighlights": [
-        "Spicy hotpot",
-        "Fresh beef",
-        "Hand-pulled noodles"
+        "매운 호트포",
+        "신선한 소고기",
+        "손빼기면"
       ],
       "tags": [
-        "chain",
-        "hotpot",
-        "service",
-        "entertainment"
+        "체인점",
+        "火锅",
+        "서비스",
+        "엔터테인먼트"
       ],
       "imageUrl": "/img/ext/3a00829b84b4.webp"
     },
     {
       "id": "tianjin-22",
       "name": "潮汕砂锅粥",
-      "nameEn": "Chaoshan Congee",
-      "type": "local",
-      "cuisine": "Chaoshan",
+      "nameEn": "차오산 죽",
+      "type": "로컬",
+      "cuisine": "차오산",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Weining Road, Hexi District",
+      "address": "허시구 웨이닝 로드",
       "coordinates": {
         "lat": 39.1022,
         "lng": 117.2222
       },
       "hours": "17:00-03:00",
-      "description": "Popular for seafood congee and late-night dining.",
+      "description": "해산물 죽과 심야 식사로 유명합니다.",
       "dishHighlights": [
-        "Seafood congee",
-        "Steamed ribs",
-        "Chaoshan dishes"
+        "해물 죽",
+        "찐 갈비",
+        "차오산 요리"
       ],
       "tags": [
-        "local",
-        "congee",
-        "late-night",
-        "seafood"
+        "현지",
+        "죽",
+        "심야",
+        "해산물"
       ],
       "imageUrl": "/img/ext/32c350c99a70.webp",
       "phone": "+86 022  1023 8604"
@@ -1843,28 +1843,28 @@
     {
       "id": "tianjin-23",
       "name": "粥世家",
-      "nameEn": "Congee Family",
-      "type": "local",
-      "cuisine": "Congee",
+      "nameEn": "콘지 패밀리",
+      "type": "로컬",
+      "cuisine": "죽",
       "avgPrice": 50,
       "rating": 4.4,
-      "address": "Multiple locations",
+      "address": "다수 위치",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2022
       },
       "hours": "06:00-14:00, 17:00-21:00",
-      "description": "Morning congee shop popular with locals for breakfast.",
+      "description": "현지의 아침 죽 가게로 아침 식사로 인기가 많습니다.",
       "dishHighlights": [
-        "Pork congee",
-        "Egg drop congee",
-        "Fried dough sticks"
+        "돼지고기 죽",
+        "계란죽",
+        "튀김가래떡"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "congee",
-        "budget"
+        "현지",
+        "아침",
+        "죽",
+        "저렴"
       ],
       "imageUrl": "/img/ext/2bb55ee76f1d.webp",
       "phone": "+86 022  1067 5516"
@@ -1872,28 +1872,28 @@
     {
       "id": "tianjin-24",
       "name": "鲜又多",
-      "nameEn": "Xian You Duo",
-      "type": "local",
-      "cuisine": "Hotpot",
+      "nameEn": "샤이유 duo",
+      "type": "로컬",
+      "cuisine": "호트포",
       "avgPrice": 100,
       "rating": 4.4,
-      "address": "Hebei District",
+      "address": "허베이 구",
       "coordinates": {
         "lat": 39.1422,
         "lng": 117.1922
       },
       "hours": "10:00-23:00",
-      "description": "Local hotpot chain with fresh ingredients and reasonable prices.",
+      "description": "신선한 재료와 합리적인 가격의 현지 훠궈 체인점입니다.",
       "dishHighlights": [
-        "Lamb hotpot",
-        "Beef slices",
-        "Vegetables"
+        "양고기 전골",
+        "쇠고기 슬라이스",
+        "야채"
       ],
       "tags": [
-        "local",
-        "hotpot",
-        "fresh",
-        "value"
+        "현지",
+        "火锅",
+        "신선한",
+        "가성비"
       ],
       "imageUrl": "/img/ext/2098f10f69ca.webp",
       "phone": "+86 022  8419 6681"
@@ -1901,28 +1901,28 @@
     {
       "id": "tianjin-25",
       "name": "北塘海鲜",
-      "nameEn": "Beitang Seafood",
-      "type": "local",
-      "cuisine": "Seafood",
+      "nameEn": "Beitang 해산물",
+      "type": "로컬",
+      "cuisine": "해산물",
       "avgPrice": 200,
       "rating": 4.6,
-      "address": "Beitang, Binhai New Area",
+      "address": "빈하이 신구 베이탕",
       "coordinates": {
         "lat": 39.0522,
         "lng": 117.7022
       },
       "hours": "10:00-22:00",
-      "description": "Famous for fresh catches from Beitang fishing village.",
+      "description": "베이탕 어촌의 신선한 어획으로 유명합니다.",
       "dishHighlights": [
-        "Steamed crab",
-        "Salt and pepper shrimp",
-        "Fried fish"
+        "찐 게",
+        "소금후추 새우",
+        "튀긴 생선"
       ],
       "tags": [
-        "local",
-        "seafood",
-        "fresh",
-        "village-style"
+        "현지",
+        "해산물",
+        "신선한",
+        "마을 스타일"
       ],
       "imageUrl": "/img/ext/9a4e85e8d9f7.webp",
       "phone": "+86 022  9534 0372"
@@ -1931,7 +1931,7 @@
       "id": "tianjin-26",
       "name": "老天津麻花",
       "nameEn": "老天津麻花 (麻花)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "麻花",
       "avgPrice": 106,
       "rating": 4.3,
@@ -1960,7 +1960,7 @@
       "id": "tianjin-28",
       "name": "传统麻花",
       "nameEn": "传统麻花 (麻花)",
-      "type": "street",
+      "type": "길거리",
       "cuisine": "麻花",
       "avgPrice": 31,
       "rating": 4.6,
@@ -1989,7 +1989,7 @@
       "id": "tianjin-30",
       "name": "老天津麻花",
       "nameEn": "老天津麻花 (麻花)",
-      "type": "cafe",
+      "type": "카페",
       "cuisine": "麻花",
       "avgPrice": 63,
       "rating": 4.7,
@@ -2018,7 +2018,7 @@
       "id": "tianjin-32",
       "name": "街边耳朵眼炸糕",
       "nameEn": "街边耳朵眼炸糕 (耳朵眼炸糕)",
-      "type": "street",
+      "type": "길거리",
       "cuisine": "耳朵眼炸糕",
       "avgPrice": 45,
       "rating": 4.1,
@@ -2047,27 +2047,27 @@
       "id": "tianjin-34",
       "name": "老字号耳朵眼炸糕",
       "nameEn": "老字号耳朵眼炸糕 (耳朵眼炸糕)",
-      "type": "local",
-      "cuisine": "耳朵眼炸糕(이조안炸糕)",
+      "type": "로컬",
+      "cuisine": "耳朵眼炸糕",
       "avgPrice": 43,
       "rating": 4.6,
-      "address": "천진시 신청구 미식거리 135번지",
+      "address": "天津市新城区美食街135号",
       "coordinates": {
         "lat": 39.1111,
         "lng": 117.1832
       },
       "phone": "+86 022 65639167",
       "hours": "17:00-02:00",
-      "description": "천진 현지인이 추천하는耳朵眼炸糕 가게, 맛은 정통이고 가격이 합리적",
+      "description": "天津本地人推荐的耳朵眼炸糕店，味道正宗，价格实惠",
       "dishHighlights": [
-        "전병과자",
-        "마화(기름 튀김빵)",
-        "구부리包子(고기 만두)"
+        "煎饼果子",
+        "麻花",
+        "狗不理包子"
       ],
       "tags": [
-        "동네 오래된 가게",
-        "인기 많은 곳",
-        "가성비 좋음"
+        "社区老店",
+        "排队王",
+        "性价比高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/a8f78d3cc9b3.webp"
@@ -2075,28 +2075,28 @@
     {
       "id": "tianjin-36",
       "name": "老街煎饼果子",
-      "nameEn": "로거이 전병과자 (煎饼果子)",
-      "type": "local",
-      "cuisine": "전병과자",
+      "nameEn": "老街煎饼果子 (煎饼果子)",
+      "type": "로컬",
+      "cuisine": "煎饼果子",
       "avgPrice": 145,
       "rating": 4.8,
-      "address": "천진시 시중심구 미식거리 105번지",
+      "address": "天津市市中心区美食街105号",
       "coordinates": {
         "lat": 39.0815,
         "lng": 117.2278
       },
       "phone": "+86 022 33544496",
       "hours": "17:00-02:00",
-      "description": "천진 현지인이 추천하는 전병과자 가게, 맛은 정통이고 가격이 합리적",
+      "description": "天津本地人推荐的煎饼果子店，味道正宗，价格实惠",
       "dishHighlights": [
-        "귀hör炸糕",
-        "고불리 만두",
-        "마화"
+        "耳朵眼炸糕",
+        "狗不理包子",
+        "麻花"
       ],
       "tags": [
-        "인기排队장",
-        "고령 브랜드",
-        "동네 구식 가게"
+        "排队王",
+        "老字号",
+        "社区老店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/4d631dcf74e4.webp"
@@ -2104,28 +2104,28 @@
     {
       "id": "tianjin-38",
       "name": "巷子锅巴菜",
-      "nameEn": "항자锅巴菜 (锅巴菜)",
-      "type": "local",
+      "nameEn": "巷子锅巴菜 (锅巴菜)",
+      "type": "로컬",
       "cuisine": "锅巴菜",
       "avgPrice": 101,
       "rating": 4.3,
-      "address": "천진시 시심부구 미식가 49번지",
+      "address": "天津市市中心区美食街49号",
       "coordinates": {
         "lat": 39.1156,
         "lng": 117.1525
       },
       "phone": "+86 022 36411467",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "현지인이 추천하는锅巴菜 가게, 진짜 맛, 합리적 가격",
+      "description": "天津本地人推荐的锅巴菜店，味道正宗，价格实惠",
       "dishHighlights": [
-        "마화",
-        "귀hör炸糕",
-        "고불리 만두"
+        "麻花",
+        "耳朵眼炸糕",
+        "狗不理包子"
       ],
       "tags": [
-        "자취 요리",
-        "줄서기왕",
-        "동네 전통집"
+        "家常菜",
+        "排队王",
+        "社区老店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/fbc5f37f31a5.webp"
@@ -2133,28 +2133,28 @@
     {
       "id": "tianjin-40",
       "name": "正宗耳朵眼炸糕",
-      "nameEn": "정통 귀동炸糕 (귀동炸糕)",
-      "type": "local",
-      "cuisine": "귀동炸糕",
+      "nameEn": "正宗耳朵眼炸糕 (耳朵眼炸糕)",
+      "type": "로컬",
+      "cuisine": "耳朵眼炸糕",
       "avgPrice": 36,
       "rating": 4.2,
-      "address": "톈진시 라오청구 미식거리 67번지",
+      "address": "天津市老城区美食街67号",
       "coordinates": {
         "lat": 39.1319,
         "lng": 117.2041
       },
       "phone": "+86 022 84025379",
       "hours": "17:00-02:00",
-      "description": "톈진 현지인이 추천하는 귀동炸糕집, 맛있고 가격 합리적",
+      "description": "天津本地人推荐的耳朵眼炸糕店，味道正宗，价格实惠",
       "dishHighlights": [
-        " gouBuLI馒头",
-        "전병과자",
-        "꽈자차이"
+        "狗不理包子",
+        "煎饼果子",
+        "锅巴菜"
       ],
       "tags": [
-        "줄서기왕",
-        "집밥",
-        "숨은 미식"
+        "排队王",
+        "家常菜",
+        "隐藏美食"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/605e61b80963.webp"
@@ -2162,9 +2162,9 @@
     {
       "id": "tianjin-42",
       "name": "老街煎饼果子",
-      "nameEn": "로구전병과자 (전병과자)",
-      "type": "local",
-      "cuisine": "전병과자",
+      "nameEn": "老街煎饼果子 (煎饼果子)",
+      "type": "로컬",
+      "cuisine": "煎饼果子",
       "avgPrice": 142,
       "rating": 4.1,
       "address": "天津市新城区美食街42号",
@@ -2192,7 +2192,7 @@
       "id": "tianjin-44",
       "name": "阿婆锅巴菜",
       "nameEn": "阿婆锅巴菜 (锅巴菜)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "锅巴菜",
       "avgPrice": 142,
       "rating": 4.9,
@@ -2221,7 +2221,7 @@
       "id": "tianjin-46",
       "name": "传统狗不理包子",
       "nameEn": "传统狗不理包子 (狗不理包子)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "狗不理包子",
       "avgPrice": 114,
       "rating": 4.6,
@@ -2250,7 +2250,7 @@
       "id": "tianjin-48",
       "name": "老街锅巴菜",
       "nameEn": "老街锅巴菜 (锅巴菜)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "锅巴菜",
       "avgPrice": 55,
       "rating": 4,
@@ -2279,7 +2279,7 @@
       "id": "tianjin-50",
       "name": "街边狗不理包子",
       "nameEn": "街边狗不理包子 (狗不理包子)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "狗不理包子",
       "avgPrice": 139,
       "rating": 4,
@@ -2308,7 +2308,7 @@
       "id": "tianjin-52",
       "name": "老天津煎饼果子",
       "nameEn": "老天津煎饼果子 (煎饼果子)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "煎饼果子",
       "avgPrice": 96,
       "rating": 4.1,
@@ -2337,7 +2337,7 @@
       "id": "tianjin-54",
       "name": "阿婆锅巴菜",
       "nameEn": "阿婆锅巴菜 (锅巴菜)",
-      "type": "cafe",
+      "type": "카페",
       "cuisine": "锅巴菜",
       "avgPrice": 28,
       "rating": 4.6,
@@ -2366,7 +2366,7 @@
       "id": "tianjin-56",
       "name": "巷子耳朵眼炸糕",
       "nameEn": "巷子耳朵眼炸糕 (耳朵眼炸糕)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "耳朵眼炸糕",
       "avgPrice": 138,
       "rating": 4.1,
@@ -2395,7 +2395,7 @@
       "id": "tianjin-58",
       "name": "传统麻花",
       "nameEn": "传统麻花 (麻花)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "麻花",
       "avgPrice": 69,
       "rating": 4.6,
@@ -2424,7 +2424,7 @@
       "id": "tianjin-60",
       "name": "地道煎饼果子",
       "nameEn": "地道煎饼果子 (煎饼果子)",
-      "type": "street",
+      "type": "길거리",
       "cuisine": "煎饼果子",
       "avgPrice": 52,
       "rating": 4.3,
@@ -2453,7 +2453,7 @@
       "id": "tianjin-62",
       "name": "老天津狗不理包子",
       "nameEn": "老天津狗不理包子 (狗不理包子)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "狗不理包子",
       "avgPrice": 34,
       "rating": 4,
@@ -2482,7 +2482,7 @@
       "id": "tianjin-64",
       "name": "地道狗不理包子",
       "nameEn": "地道狗不理包子 (狗不理包子)",
-      "type": "cafe",
+      "type": "카페",
       "cuisine": "狗不理包子",
       "avgPrice": 65,
       "rating": 4.1,
@@ -2511,7 +2511,7 @@
       "id": "tianjin-66",
       "name": "老天津锅巴菜",
       "nameEn": "老天津锅巴菜 (锅巴菜)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "锅巴菜",
       "avgPrice": 57,
       "rating": 4.5,
@@ -2540,7 +2540,7 @@
       "id": "tianjin-68",
       "name": "巷子耳朵眼炸糕",
       "nameEn": "巷子耳朵眼炸糕 (耳朵眼炸糕)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "耳朵眼炸糕",
       "avgPrice": 39,
       "rating": 4.9,
@@ -2569,7 +2569,7 @@
       "id": "tianjin-70",
       "name": "巷子煎饼果子",
       "nameEn": "巷子煎饼果子 (煎饼果子)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "煎饼果子",
       "avgPrice": 76,
       "rating": 4.4,
@@ -2598,7 +2598,7 @@
       "id": "tianjin-72",
       "name": "街边麻花",
       "nameEn": "街边麻花 (麻花)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "麻花",
       "avgPrice": 46,
       "rating": 4.9,
@@ -2627,7 +2627,7 @@
       "id": "tianjin-74",
       "name": "传统锅巴菜",
       "nameEn": "传统锅巴菜 (锅巴菜)",
-      "type": "local",
+      "type": "로컬",
       "cuisine": "锅巴菜",
       "avgPrice": 124,
       "rating": 4.8,
@@ -3032,98 +3032,98 @@
   "culturalTips": [
     {
       "category": "food",
-      "title": "Tianjin Snacks",
-      "content": "Tianjin is famous for 'three treasures': Goubuli baozi, Erduoyan fried cake, and Shibajie mahua. These are must-try snacks available throughout the city.",
+      "title": "천진 스낵",
+      "content": "톈진은 '삼보': 구브리빵, 이드워옌 튀김케이크, Shih bangjie 마화로 유명합니다. 이小吃는 도시 전역에서 구할 수 있습니다.",
       "importance": "high"
     },
     {
       "category": "history",
-      "title": "Colonial Heritage",
-      "content": "Tianjin has nine foreign concession areas with European architecture. The Five Great Avenues area showcases Italian, French, British and other colonial buildings from the early 1900s.",
+      "title": "식민지 유산",
+      "content": "톈진에는 유럽 건축물이 있는 9개의 외래租界 지역이 있습니다. 5대대로 지역은 이탈리아, 영국 및 기타 1900년대 초의 식민지 건물을 전시합니다.",
       "importance": "high"
     },
     {
       "category": "arts",
-      "title": "Traditional Crafts",
-      "content": "Tianjin is known for Yangliuqing New Year paintings, clay figurines, and kites. Visit the crafts shops in Ancient Culture Street for authentic souvenirs.",
+      "title": "전통 공예",
+      "content": "톈진은 양류칭 신년화, 점토 인형, 연으로 유명합니다. 진품 기념품을 위해 고대 문화거리의 공예품 점을 방문하세요.",
       "importance": "medium"
     },
     {
       "category": "dialect",
-      "title": "Tianjin Dialect",
-      "content": "Tianjin dialect is known for its humor and directness. Locals are proud of their unique accent which differs significantly from Beijing dialect.",
+      "title": "천진 방언",
+      "content": "톈진 방언은 유머와 직접성으로 유명합니다. 현지인은 베이징 방언과 크게 다른 고유한 억양을 자랑스러워합니다.",
       "importance": "low"
     },
     {
       "category": "cuisine",
-      "title": "Tianjin Cuisine",
-      "content": "Tianjin cuisine is known for its seafood, especially clams and river fish. The city also has famous braised dishes and rich broth soups.",
+      "title": "천진 요리",
+      "content": "천진 요리는 특히 조개류와 강퍽이를 포함한 해산물로 유명합니다. 이 도시는 유명한 찜 요리와 진한 국물 수프도 가지고 있습니다.",
       "importance": "high"
     },
     {
       "category": "architecture",
-      "title": "European Architecture",
-      "content": "Walking through Five Great Avenues feels like being in Europe. The area has over 200 colonial buildings from 10 countries, now mostly housing cafes and boutiques.",
+      "title": "유럽 건축",
+      "content": "5대대를 걸으면 유럽에 있는 느낌이 듭니다. 이 지역에는 10개국에서 온 200개 이상의 식민지 건물이 있으며, 대부분 카페와 보티크가 들어서 있습니다.",
       "importance": "medium"
     },
     {
       "category": "water",
-      "title": "Haihe River Culture",
-      "content": "The Haihe River is central to Tianjin's identity, with historic bridges and riverside walks. Evening cruises offer beautiful views of the city skyline.",
+      "title": "하이허 강 문화",
+      "content": "하이는 톈진의 정체성의 중심이며, 역사적인 다리와 강변 산책로가 있습니다. 저녁 크루즈는 도시 전경의 아름다운景色을 제공합니다.",
       "importance": "medium"
     },
     {
       "category": "opera",
-      "title": "Tianjin Opera",
-      "content": "Tianjin is known for its traditional Peking opera performances. The Tianjin Drama票价 is worth visiting for authentic shows.",
+      "title": "천진 오페라",
+      "content": "톈진은 전통 베이징 오페라 공연으로 유명합니다. 톈진극장의 표가는 진짜 공연을 방문할 가치가 있습니다.",
       "importance": "medium"
     },
     {
       "category": "food",
-      "title": "Mahua Culture",
-      "content": "Tianjin mahua (fried dough twists) is a famous snack with crispy texture. It's often bought as a souvenir to take home.",
+      "title": "마화 문화",
+      "content": "톈진 마화(튀긴 반죽 꼬임)는 바삭한 식감으로 유명한小吃입니다. 집으로 가져갈纪念品로 자주 구매합니다.",
       "importance": "medium"
     },
     {
       "category": "history",
-      "title": "Revolutionary History",
-      "content": "Tianjin played a role in modern Chinese history, with various revolutionary activities. The Memorial Hall offers insights into this period.",
+      "title": "혁명 역사",
+      "content": "톈진은 다양한 혁명 활동으로 중국 현대사에 역할을 했습니다.紀念관은 이 시대에 대한 통찰을 제공합니다.",
       "importance": "medium"
     },
     {
       "category": "location",
-      "title": "Proximity to Beijing",
-      "content": "Tianjin is only 30 minutes from Beijing by high-speed train, making it an easy day trip or weekend destination from the capital.",
+      "title": "베이징 근접",
+      "content": "톈진은 고속 철도로 베이징에서 단 30분 거리에 있어 수도에서의Easy한 당일 여행 또는 주말 목적지가 됩니다.",
       "importance": "high"
     },
     {
       "category": "port",
-      "title": "Port City Heritage",
-      "content": "As a major port, Tianjin has international influences in its food and culture. The port area offers views of modern shipping operations.",
+      "title": "항구 도시 유산",
+      "content": "주요 항구로서 톈진은 음식과 문화에 국제적 영향을 가지고 있습니다. 항구 지역은 현대 해상 작업의景色을 제공합니다.",
       "importance": "medium"
     },
     {
       "category": "folk",
-      "title": "Folk Performances",
-      "content": "Traditional folk performances including acrobatics and Chinese opera can be seen at various venues. Tianjin is famous for its folk arts.",
+      "title": "민속 공연",
+      "content": "杂技와 중국 오페라를 포함한 전통 민속 공연은 여러 장소에서 볼 수 있습니다. 톈진은 민속 예술로 유명합니다.",
       "importance": "medium"
     },
     {
       "category": "shopping",
-      "title": "Traditional Shopping",
-      "content": "Nanshi Gate and Ancient Culture Street offer traditional Chinese goods, crafts, and local snacks. Bargaining is expected at markets.",
+      "title": "전통 쇼핑",
+      "content": "남시문과 고대 문화거리는 전통 중국 상품, 공예품, 현지小吃를 제공합니다. 시장에서 흥정은 예상됩니다.",
       "importance": "medium"
     },
     {
       "category": "transport",
-      "title": "Getting Around",
-      "content": "Tianjin has a modern metro system connecting major attractions. The city is walkable in central areas with Haihe River providing a scenic walking route.",
+      "title": "이동 방법",
+      "content": "천진은 주요 관광지를 연결하는 현대적인 지하철 시스템을 가지고 있습니다. 시 중심부는 도보로 탐방하기 좋으며, 해하 강이 아름다운 산책로를 제공합니다.",
       "importance": "medium"
     },
     {
       "category": "cuisine",
-      "title": "Bai jiao Yuan",
-      "content": "Tianjin is famous for dumplings - over 100 varieties. The city takes dumpling making to an art form with unique shapes and fillings.",
+      "title": "백조원",
+      "content": "천진은饺子(만두)로 유명합니다 - 100가지 이상의 varieties. 이 도시는 독특한 모양과馅(속재료)로 만두 만들기를 예술의 경지로 끌어올렸습니다.",
       "importance": "medium"
     }
   ],
@@ -3131,98 +3131,98 @@
     {
       "type": "ambulance",
       "name": "天津急救中心",
-      "nameEn": "Tianjin Emergency Center",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "120",
-      "notes": "Major hospitals have English interpretation"
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "police",
       "name": "天津市公安局",
-      "nameEn": "Tianjin Public Security Bureau",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "110",
-      "notes": "Tourist police at major attractions"
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "hospital",
       "name": "天津医科大学总医院",
-      "nameEn": "Tianjin Medical University General Hospital",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 22 6036 2222",
-      "address": "154 Anshan Road, Heping District",
+      "address": "광저우",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2022
       },
-      "notes": "English-speaking staff available"
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "hospital",
       "name": "天津市第一中心医院",
-      "nameEn": "Tianjin First Central Hospital",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 22 2362 6600",
-      "address": "24 Fukang Road, Nankai District",
+      "address": "광저우",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.1922
       },
-      "notes": "Another major hospital with English staff"
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "tourist-police",
       "name": "天津旅游警察",
-      "nameEn": "Tianjin Tourist Police",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 22 2303 1710",
-      "notes": "English-speaking tourist police"
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "fire",
       "name": "天津消防",
-      "nameEn": "Tianjin Fire Department",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "119",
-      "notes": "Fire and rescue services"
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "embassy",
       "name": "美国驻天津总领事馆",
-      "nameEn": "US Consulate General Tianjin",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 22 2318 8888",
-      "address": "No. 46 Nanjing Road, Heping District",
+      "address": "광저우",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2122
       },
-      "notes": "Located in Tianjin's main tourist area"
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "embassy",
       "name": "英国驻天津总领事馆",
-      "nameEn": "UK Consulate General Tianjin",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 22 2318 9000",
-      "address": "Silver Tower, 56 Nanjing Road",
-      "notes": "For UK citizens in Tianjin region"
+      "address": "광저우",
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "embassy",
       "name": "法国驻天津总领事馆",
-      "nameEn": "France Consulate General Tianjin",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 22 2312 3000",
-      "address": "5th Floor, Friendship Pavilion",
-      "notes": "For French citizens in Tianjin region"
+      "address": "광저우",
+      "notes": "싱가포르 시민용"
     },
     {
       "type": "embassy",
       "name": "日本驻天津总领事馆",
-      "nameEn": "Japan Consulate General Tianjin",
+      "nameEn": "싱가포르 광저우 영사관",
       "phone": "+86 22 2313 0015",
-      "address": "Jiangmen Road, Heping District",
-      "notes": "For Japanese citizens in Tianjin region"
+      "address": "광저우",
+      "notes": "싱가포르 시민용"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese, Tianjin dialect",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Tap water safe after boiling; bottled water recommended"
+    "language": "중국어 (북경어)",
+    "currency": "인민폐 (CNY/RMB)",
+    "visa": "대부분의 국적은 비자가 필요합니다. 자격이 있는 경우 공항에서 72시간 환승 비자를 받을 수 있습니다.",
+    "timeZone": "UTC+8 (중국 표준시)",
+    "electricity": "220V/50Hz, A/I 타입 플러그",
+    "water": "수돗물은 마실 수 있지만 병물을 권장합니다"
   }
 }

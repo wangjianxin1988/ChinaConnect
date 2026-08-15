@@ -2,6 +2,7 @@
 
 import { getCityBySlug, citySlugs } from "@/data/cities/index";
 import { getCityData } from "@/data/cities-i18n";
+import { ct } from "@/i18n/components-strings";
 import { translations } from "@/i18n/translations";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
@@ -18,12 +19,41 @@ if (!city) {
   return Astro.redirect("/404");
 }
 
-const localCityName = translations[lang]?.["city." + city.slug + ".name"] ?? translations.en?.["city." + city.slug + ".name"] ?? city.nameEn;
-const pageTitle = (translations[lang] || translations.en).cityAttractions?.title?.replace("{city}", localCityName) + " - ChinaConnect" ?? `${localCityName} Attractions - ChinaConnect`;
-const pageDescription = (translations[lang] || translations.en).cityAttractions?.subtitle?.replace("{city}", localCityName) ?? `Explore all ${city.attractions.length} attractions in ${localCityName} (${city.name}).`;
+const i18nCity = lang !== "en" ? getCityData(city.slug, lang) : null;
+const localCityName = translations[lang]?.["city." + city.slug + ".name"] ?? translations.en?.["city." + city.slug + ".name"] ?? i18nCity?.name ?? city.nameEn;
+const isJapanese = lang === "ja";
+const pageTitle = (translations[lang] || translations.en).cityAttractions?.title?.replace("{city}", localCityName) + " - ChinaConnect";
+const pageDescription = ((translations[lang] || translations.en).cityAttractions?.subtitle || `${localCityName}の${city.attractions.length}件の観光スポットを探索`).replace("{city}", localCityName);
 
 // Get unique categories
 const categories = [...new Set(city.attractions.map((a: any) => a.category))].sort();
+const CAT_LABELS: Record<string, Record<string, string>> = {
+  adventure: { en: "Adventure", ja: "アドベンチャー", ko: "모험", "zh-CN": "探险", "zh-TW": "探險", th: "การผจญภัย", vi: "Phiêu lưu", ru: "Приключения", fr: "Aventure", de: "Abenteuer", ar: "مغامرة", fa: "ماجراجویی" },
+  aquarium: { en: "Aquarium", ja: "水族館", ko: "수족관", "zh-CN": "水族馆", "zh-TW": "水族館", th: "พิพิธภัณฑ์สัตว์น้ำ", vi: "Thủy cung", ru: "Аквариум", fr: "Aquarium", de: "Aquarium", ar: "حوض أسماك", fa: "آکواریوم" },
+  beach: { en: "Beach", ja: "ビーチ", ko: "해변", "zh-CN": "海滩", "zh-TW": "海灘", th: "ชายหาด", vi: "Bãi biển", ru: "Пляж", fr: "Plage", de: "Strand", ar: "شاطئ", fa: "ساحل" },
+  cultural: { en: "Cultural", ja: "文化", ko: "문화", "zh-CN": "文化", "zh-TW": "文化", th: "วัฒนธรรม", vi: "Văn hóa", ru: "Культурный", fr: "Culturel", de: "Kulturell", ar: "ثقافي", fa: "فرهنگی" },
+  culture: { en: "Culture", ja: "文化", ko: "문화", "zh-CN": "文化", "zh-TW": "文化", th: "วัฒนธรรม", vi: "Văn hóa", ru: "Культура", fr: "Culture", de: "Kultur", ar: "ثقافة", fa: "فرهنگ" },
+  entertainment: { en: "Entertainment", ja: "エンターテイメント", ko: "연예", "zh-CN": "娱乐", "zh-TW": "娛樂", th: "บันเทิง", vi: "Giải trí", ru: "Развлечения", fr: "Divertissement", de: "Unterhaltung", ar: "ترفيه", fa: "سرگرمی" },
+  family: { en: "Family", ja: "家族向け", ko: "가족", "zh-CN": "亲子", "zh-TW": "親子", th: "ครอบครัว", vi: "Gia đình", ru: "Семейный", fr: "Familial", de: "Familie", ar: "عائلي", fa: "خانوادگی" },
+  festival: { en: "Festival", ja: "祭り", ko: "축제", "zh-CN": "节庆", "zh-TW": "節慶", th: "เทศกาล", vi: "Lễ hội", ru: "Фестиваль", fr: "Festival", de: "Festival", ar: "مهرجان", fa: "جشنواره" },
+  historical: { en: "Historical", ja: "歴史", ko: "역사", "zh-CN": "历史", "zh-TW": "歷史", th: "ประวัติศาสตร์", vi: "Lịch sử", ru: "Исторический", fr: "Historique", de: "Historisch", ar: "تاريخي", fa: "تاریخی" },
+  island: { en: "Island", ja: "島", ko: "섬", "zh-CN": "岛屿", "zh-TW": "島嶼", th: "เกาะ", vi: "Đảo", ru: "Остров", fr: "Île", de: "Insel", ar: "جزيرة", fa: "جزیره" },
+  landmark: { en: "Landmark", ja: "ランドマーク", ko: "랜드마크", "zh-CN": "地标", "zh-TW": "地標", th: "สถานที่สำคัญ", vi: "Địa danh", ru: "Достопримечательность", fr: "Monument", de: "Wahrzeichen", ar: "معلم", fa: "بنای تاریخی" },
+  market: { en: "Market", ja: "市場", ko: "시장", "zh-CN": "市场", "zh-TW": "市集", th: "ตลาด", vi: "Chợ", ru: "Рынок", fr: "Marché", de: "Markt", ar: "سوق", fa: "بازار" },
+  modern: { en: "Modern", ja: "モダン", ko: "현대", "zh-CN": "现代", "zh-TW": "現代", th: "ทันสมัย", vi: "Hiện đại", ru: "Современный", fr: "Moderne", de: "Modern", ar: "حديث", fa: "مدرن" },
+  museum: { en: "Museum", ja: "博物館", ko: "박물관", "zh-CN": "博物馆", "zh-TW": "博物館", th: "พิพิธภัณฑ์", vi: "Bảo tàng", ru: "Музей", fr: "Musée", de: "Museum", ar: "متحف", fa: "موزه" },
+  natural: { en: "Natural", ja: "自然", ko: "자연", "zh-CN": "自然", "zh-TW": "自然", th: "ธรรมชาติ", vi: "Thiên nhiên", ru: "Природа", fr: "Naturel", de: "Natur", ar: "طبيعي", fa: "طبیعی" },
+  nature: { en: "Nature", ja: "自然", ko: "자연", "zh-CN": "自然", "zh-TW": "自然", th: "ธรรมชาติ", vi: "Thiên nhiên", ru: "Природа", fr: "Nature", de: "Natur", ar: "طبيعة", fa: "طبیعت" },
+  park: { en: "Park", ja: "公園", ko: "공원", "zh-CN": "公园", "zh-TW": "公園", th: "สวนสาธารณะ", vi: "Công viên", ru: "Парк", fr: "Parc", de: "Park", ar: "حديقة", fa: "پارک" },
+  resort: { en: "Resort", ja: "リゾート", ko: "리조트", "zh-CN": "度假区", "zh-TW": "度假區", th: "รีสอร์ท", vi: "Khu nghỉ dưỡng", ru: "Курорт", fr: "Station balnéaire", de: "Resort", ar: "منتجع", fa: "تفرجگاه" },
+  seasonal: { en: "Seasonal", ja: "季節限定", ko: "계절", "zh-CN": "季节性", "zh-TW": "季節性", th: "ตามฤดูกาล", vi: "Theo mùa", ru: "Сезонный", fr: "Saisonnier", de: "Saisonal", ar: "موسمي", fa: "فصلی" },
+  shopping: { en: "Shopping", ja: "ショッピング", ko: "쇼핑", "zh-CN": "购物", "zh-TW": "購物", th: "ช้อปปิ้ง", vi: "Mua sắm", ru: "Шоппинг", fr: "Shopping", de: "Einkaufen", ar: "تسوق", fa: "خرید" },
+  sports: { en: "Sports", ja: "スポーツ", ko: "스포츠", "zh-CN": "运动", "zh-TW": "運動", th: "กีฬา", vi: "Thể thao", ru: "Спорт", fr: "Sport", de: "Sport", ar: "رياضة", fa: "ورزش" },
+  street: { en: "Street", ja: "ストリート", ko: "거리", "zh-CN": "街区", "zh-TW": "街區", th: "ถนน", vi: "Phố", ru: "Улица", fr: "Rue", de: "Straße", ar: "شارع", fa: "خیابان" },
+  temple: { en: "Temple", ja: "寺院", ko: "사찰", "zh-CN": "寺庙", "zh-TW": "寺廟", th: "วัด", vi: "Chùa", ru: "Храм", fr: "Temple", de: "Tempel", ar: "معبد", fa: "معبد" },
+  "theme-park": { en: "Theme Park", ja: "テーマパーク", ko: "테마파크", "zh-CN": "主题公园", "zh-TW": "主題公園", th: "สวนสนุก", vi: "Công viên giải trí", ru: "Тематический парк", fr: "Parc à thème", de: "Themenpark", ar: "مدينة ملاهي", fa: "شهربازی" },
+  wellness: { en: "Wellness", ja: "ウェルネス", ko: "웰니스", "zh-CN": "养生", "zh-TW": "養生", th: "สุขภาพดี", vi: "Sức khỏe", ru: "Оздоровление", fr: "Bien-être", de: "Wellness", ar: "عافية", fa: "تندرستی" },
+};
 ---
 
 <BaseLayout
@@ -31,7 +61,7 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
   description={pageDescription}
   lang={lang}
   meta={{
-    canonicalUrl: `https://chinaengage.org/city/${city.slug}/attractions`,
+    canonicalUrl: `https://chinaengage.org/${lang}/city/${city.slug}/attractions`,
   }}
 >
   <!-- Hero Section -->
@@ -44,15 +74,15 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
       <nav class="mb-4">
         <a href="/" class="text-purple-200 hover:text-white transition-colors" data-i18n="cityPage.home">Home</a>
         <span class="text-purple-300 mx-2">/</span>
-        <a href={`/city/${city.slug}`} class="text-purple-200 hover:text-white transition-colors">{city.nameEn}</a>
+        <a href={`/${lang}/city/${city.slug}`} class="text-purple-200 hover:text-white transition-colors">{localCityName}</a>
         <span class="text-purple-300 mx-2">/</span>
-        <span class="text-white" data-i18n="cityPage.attractionsHeading">Attractions</span>
+        <span class="text-white" data-i18n="cityPage.attractionsHeading">{isJapanese ? `${localCityName}の観光スポット` : `Attractions`}</span>
       </nav>
 
       <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">
-        🏛️Attractions in {city.nameEn}
+        🏛️{isJapanese ? `${localCityName}の観光スポット` : `Attractions in ${city.nameEn}`}
       </h1>
-      <p class="text-xl text-purple-200" data-i18n="cityPage.attractionsExploreCount">{city.name} — {city.attractions.length} places to explore</p>
+  <p class="text-xl text-purple-200" >{isJapanese ? `${localCityName}の${city.attractions.length}件の観光スポット` : (translations[lang] || translations.en).cityAttractions?.subtitle?.replace("{city}", localCityName)?.replace("{count}", String(city.attractions.length)) ?? `${city.nameEn} — ${city.attractions.length} places to explore`}</p>
     </div>
   </section>
 
@@ -83,13 +113,7 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
           </button>
           {categories.map((cat: string) => {
             const count = city.attractions.filter((a: any) => a.category === cat).length;
-            const catLabels = {
-              historical: { en: 'Historical', ja: '歴史', ko: '역사', 'zh-CN': '历史', 'zh-TW': '歷史', th: 'ประวัติศาสตร์', vi: 'Lịch sử', ru: 'Исторический', fr: 'Historique', de: 'Historisch', ar: 'تاريخي', fa: 'تاریخی' },
-              cultural: { en: 'Cultural', ja: '文化', ko: '문화', 'zh-CN': '文化', 'zh-TW': '文化', th: 'วัฒนธรรม', vi: 'Văn hóa', ru: 'Культурный', fr: 'Culturel', de: 'Kulturell', ar: 'ثقافي', fa: 'فرهنگی' },
-              modern: { en: 'Modern', ja: 'モダン', ko: '현대', 'zh-CN': '现代', 'zh-TW': '現代', th: 'ทันสมḱย', vi: 'Hiện đại', ru: 'Современный', fr: 'Moderne', de: 'Modern', ar: 'حديث', fa: 'مدرن' },
-              natural: { en: 'Natural', ja: '自然', ko: '자연', 'zh-CN': '自然', 'zh-TW': '自然', th: 'ธรรมชาติ', vi: 'Thiên nhiên', ru: 'Природа', fr: 'Naturel', de: 'Natur', ar: 'طبيعي', fa: 'طبیعی' },
-              entertainment: { en: 'Entertainment', ja: 'エンターテイメント', ko: '연예', 'zh-CN': '娱乐', 'zh-TW': '娛樂', th: 'การบันเสริม', vi: 'Giải trí', ru: 'Развлечения', fr: 'Divertissement', de: 'Unterhaltung', ar: 'ترفيه', fa: 'سرگرمی' }
-            };
+            const catLabels = CAT_LABELS;
             return (
               <button
                 class="category-filter px-4 py-2 rounded-lg text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200"
@@ -118,7 +142,7 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
             <div class="relative h-48 overflow-hidden">
               <img
                 src={attraction.image}
-                alt={attraction.nameEn}
+                alt={isJapanese ? (attraction.nameEn || attraction.name) : attraction.nameEn}
                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 loading="lazy"
               />
@@ -131,7 +155,7 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
                   attraction.category === 'entertainment' ? 'bg-pink-100 text-pink-700 border-pink-200' :
                   'bg-gray-100 text-gray-700 border-gray-200'
                 }`}>
-                  {attraction.category.charAt(0).toUpperCase() + attraction.category.slice(1)}
+                  {(CAT_LABELS[attraction.category] && CAT_LABELS[attraction.category][lang]) || (CAT_LABELS[attraction.category] && CAT_LABELS[attraction.category].en) || attraction.category.charAt(0).toUpperCase() + attraction.category.slice(1)}
                 </span>
               </div>
               {attraction.ticketPrice && attraction.ticketPrice !== 'Free' && (
@@ -148,8 +172,8 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
           )}
 
           <div class="p-5">
-            <h3 class="text-lg font-bold text-gray-900 mb-1">{attraction.nameEn}</h3>
-            <p class="text-gray-500 text-sm mb-3">{attraction.name}</p>
+            <h3 class="text-lg font-bold text-gray-900 mb-1">{isJapanese ? (attraction.nameEn || attraction.name) : attraction.nameEn}</h3>
+            <p class="text-gray-500 text-sm mb-3">{isJapanese ? "" : attraction.name}</p>
             <p class="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">{attraction.description}</p>
 
             <div class="space-y-2 mb-4">
@@ -167,7 +191,7 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
 
             <div class="flex flex-wrap items-center gap-3 mt-2">
               {attraction.phone && (
-                <a href={`tel:${attraction.phone.replace(/\s/g, "")}`} class="inline-flex items-center gap-1 text-sm text-green-700 hover:text-green-800 font-medium hover:underline" title={`Call ${attraction.nameEn}`}>
+                <a href={`tel:${attraction.phone.replace(/\s/g, "")}`} class="inline-flex items-center gap-1 text-sm text-green-700 hover:text-green-800 font-medium hover:underline" title={isJapanese ? `${attraction.nameEn || attraction.name}に電話` : `Call ${attraction.nameEn}`}>
                   📞 {attraction.phone}
                 </a>
               )}
@@ -178,7 +202,7 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
                 rel="noopener noreferrer"
                 class="inline-flex items-center gap-1 text-sm text-purple-600 hover:text-purple-700 font-medium hover:underline"
               >
-                Get Directions →
+                {ct(lang, "get_directions", "Get Directions")} →
               </a>
               )}
             </div>
@@ -259,17 +283,17 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
   <!-- Authoritative Data Sources -->
   <section class="container-custom py-8 mt-8 border-t border-gray-200">
     <div class="max-w-3xl mx-auto">
-      <h2 class="text-lg font-semibold text-gray-700 mb-3" data-i18n="cityPage.dataSourcesHeading">Data Sources & References</h2>
+      <h2 class="text-lg font-semibold text-gray-700 mb-3"><span data-i18n="cityPage.dataSourcesHeading">データソース＆参考文献</span></h2>
       <div class="bg-gray-50 rounded-xl p-5 text-sm text-gray-600 space-y-2">
-        <p data-i18n="cityPage.dataSourcesDesc">Attraction data compiled from authoritative sources. Verify details before visiting:</p>
+        <p data-i18n="cityPage.dataSourcesDesc">観光地データは権威ある情報源から編集されています。訪問前に詳細を確認することをお勧めします:</p>
         <ul class="list-disc list-inside space-y-1 ml-2">
-          <li><a href="https://www.mafengwo.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Mafengwo (马蜂窝)</a>  — <span data-i18n="cityAttractions.mafengwoDesc">China's largest travel community</span></li>
-          <li><a href="https://www.ctrip.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Ctrip / Trip.com</a>  — <span data-i18n="cityAttractions.ctripDesc">Attraction reviews & booking</span></li>
-          <li><a href="https://www.tripadvisor.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">TripAdvisor</a>  — <span data-i18n="cityAttractions.tripadvisorDesc">International attraction reviews</span></li>
-          <li><a href="https://www.chinanews.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">China News (新华网)</a>  — <span data-i18n="cityAttractions.chinanewsDesc">Official tourism information</span></li>
-          <li><a href="https://www.mct.gov.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline"Ministry of Culture & Tourismm)</a>  — <span data-i18n="cityAttractions.mctDesc">Government tourism data</span></li>
+          <li><a href="https://www.mafengwo.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{lang === "ja" ? "Mafengwo（馬蜂窩）" : "Mafengwo (马蜂窝)"}</a>  — <span data-i18n="cityAttractions.mafengwoDesc">中国最大の旅行コミュニティ</span></li>
+          <li><a href="https://www.ctrip.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Ctrip / Trip.com</a>  — <span data-i18n="cityAttractions.ctripDesc">観光地のレビュー＆予約</span></li>
+          <li><a href="https://www.tripadvisor.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">TripAdvisor</a>  — <span data-i18n="cityAttractions.tripadvisorDesc">国際的な観光地レビュー</span></li>
+          <li><a href="https://www.chinanews.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{lang === "ja" ? "China News（新華網）" : "China News (新华网)"}</a>  — <span data-i18n="cityAttractions.chinanewsDesc">公式の観光情報</span></li>
+          <li><a href="https://www.mct.gov.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">文化・観光部 (Ministry of Culture &amp; Tourism)</a>  — <span data-i18n="cityAttractions.mctDesc">政府の観光データ</span></li>
         </ul>
-        <p class="text-xs text-gray-400 mt-3">data-i18n="cityAttractions.disclaimer"<span data-i18n="cityAttractions.disclaimer">Opening hours, ticket prices, and phone numbers may change. We recommend verifying via the attraction's official website or calling ahead.</span></p>
+        <p class="text-xs text-gray-400 mt-3"><span data-i18n="cityAttractions.disclaimer">営業時間、チケット料金、電話番号は変更される場合があります。公式ウェブサイトで確認するか、事前に電話で確認することをお勧めします。</span></p>
       </div>
     </div>
   </section>

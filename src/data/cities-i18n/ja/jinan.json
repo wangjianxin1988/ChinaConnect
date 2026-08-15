@@ -1,255 +1,255 @@
 {
   "slug": "jinan",
-  "name": "济南",
-  "nameEn": "Jinan",
+  "name": "済南",
+  "nameEn": "済南",
   "country": "China",
-  "population": "9.2 million",
+  "population": "920万",
   "coordinates": {
     "lat": 36.6512,
     "lng": 117.1205
   },
-  "timezone": "UTC+8 (China Standard Time)",
+  "timezone": "UTC+8（中国標準時）",
   "description": "山東省の省都である済南は、多くの天然温泉があるため「泉の都市」として知られています。天下第一泉の趵突泉、大明湖、千仏山などの象徴的な名所があります。4000年の歴史を持つ文化の中心地であり、多くの中国有名人の出生地です。",
   "coverImage": "/img/ext/364406446214.webp",
   "highlights": [
-    "Baotu Spring - Most famous spring in China",
-    "Daming Lake - Largest urban lake in China",
-    "Thousand Buddha Mountain - Buddhist heritage",
-    "Quancheng Road - Historic commercial district",
-    "Shandong Museum - Provincial cultural heritage"
+    "趵突泉 - 中国で最も有名な泉",
+    "大明湖 - 中国最大の都市湖",
+    "千佛山 - 仏教の遺産",
+    "泉城路 - 歴史的な商業地区",
+    "山東博物館 - 省の文化的遺産"
   ],
   "climate": {
-    "type": "Temperate continental monsoon",
+    "type": "温帯大陸性季節風気候",
     "bestMonths": [
-      "April",
-      "May",
-      "September",
-      "October"
+      "4月",
+      "5月",
+      "9月",
+      "10月"
     ],
     "avgSummerTemp": "27C (81F)",
     "avgWinterTemp": "1C (34F)",
-    "tips": "Best in spring for springs and autumn for foliage. Summer can be hot and humid. Winter cold but sunny. Spring festivals around April."
+    "tips": "春は温泉、秋は紅葉に最適。夏は暑く湿気が多い。冬は寒いが晴れが多い。春祭りは4月頃。"
   },
   "attractions": [
     {
       "id": "baotu-spring",
       "name": "趵突泉",
-      "nameEn": "Baotu Spring",
+      "nameEn": "趵突泉",
       "category": "natural",
       "image": "/img/ext/66d2c1a6954f.webp",
-      "description": "The most famous spring in China, one of the Three Premier Springs globally. Features three large springs gushing year-round with crystal-clear water.",
-      "address": "Baotu Spring Park, Lixia District",
+      "description": "中国で最も有名な泉で、世界三大名泉の一つです。年間を通じて清らかな水が一年中噴出する3つの大きな泉が特徴です。",
+      "address": "趵突泉公園、歴下区",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0294
       },
       "openingHours": "07:00-19:00",
       "ticketPrice": "40¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Three major springs",
-        "Lotus pond",
-        "Lixia River views",
-        "Cultural statues"
+        "三大名泉",
+        "蓮の池",
+        "歴下川の花火",
+        "文化的彫刻"
       ],
-      "tips": "Arrive early morning for best photos. Combine with Daming Lake nearby. The water is drinkable.",
+      "tips": "朝 раннее времяに訪れると最高の写真が撮影できます。附近の大明湖と組み合わせてください。水を飲むことができます。",
       "phone": "+86 053 1 1363 8849"
     },
     {
       "id": "daming-lake",
       "name": "大明湖",
-      "nameEn": "Daming Lake",
+      "nameEn": "大明湖",
       "category": "natural",
       "image": "/img/ext/53a17ff02c86.webp",
-      "description": "Largest urban lake in China, spanning 580,000 square meters. Beautiful in all seasons with historic pavilions and gardens.",
-      "address": "Daming Lake, Lixia District",
+      "description": "中国最大の都市湖。面積58万平方メートル。四季を通じて美しく、歴史的な亭と庭園がある。",
+      "address": "大明湖、歴下区",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0194
       },
-      "openingHours": "Open 24 hours (ferries 08:00-18:00)",
-      "ticketPrice": "Free (ferry 30-50¥)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24時間開放（遊覧船 08:00-18:00）",
+      "ticketPrice": "無料（遊覧船 30-50元）",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Lake cycling",
-        "Historic islands",
-        "Night lighting",
-        "Autumn lotus"
+        "湖畔サイクリング",
+        "歴史的な島",
+        "夜間照明",
+        "秋蓮"
       ],
-      "tips": "Best at sunset or night. Rent bikes around the lake. Take boat to islands. Combine with Baotu Spring.",
+      "tips": "夕暮れや夜に最佳。湖畔でレンタサイクル。島へ船で。八大局温泉と組み合わせる。",
       "phone": "+86 053 1 3416 5092"
     },
     {
       "id": "thousand-buddha-mountain",
       "name": "千佛山",
-      "nameEn": "Thousand Buddha Mountain",
+      "nameEn": "千仏山",
       "category": "cultural",
       "image": "/img/ext/20ba084c3257.webp",
-      "description": "Mountain with ancient Buddhist carvings dating back 1500 years. Offers panoramic views of Jinan city.",
-      "address": "Thousand Buddha Mountain, Lixia District",
+      "description": "1500年前からの古代仏教彫刻がある山。済南市の全景を提供する。",
+      "address": "千佛山、歴下区",
       "coordinates": {
         "lat": 36.6212,
         "lng": 117.0494
       },
       "openingHours": "06:30-18:00",
-      "ticketPrice": "30¥",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Buddhist carvings",
-        "Mountain views",
-        "Monastery",
-        "Autumn foliage"
+        "仏像彫刻",
+        "山の景色",
+        "寺院",
+        "紅葉"
       ],
-      "tips": "Take cable car up, walk down. Visit in autumn for foliage. Combine with nearby Olympic Sports Center.",
+      "tips": "ケーブルカーで登り、歩いて下山。秋。紅葉は秋季に観賞することをおすすめし、ついでに近くのオリンピックスポーツセンターも訪れてみてください。",
       "phone": "+86 053 1 3312 3836"
     },
     {
       "id": "quancheng-road",
       "name": "泉城路",
-      "nameEn": "Quancheng Road",
+      "nameEn": "泉城路",
       "category": "cultural",
       "image": "/img/ext/f5e115604d3c.webp",
-      "description": "Historic commercial street with traditional architecture, modern shops, and beautiful fountain squares.",
-      "address": "Quancheng Road, Lixia District",
+      "description": "伝統的な建築と現代商店、美しい噴水広場を持つ歴史的な商業通り。",
+      "address": "泉城路、歴下区",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0194
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Traditional buildings",
-        "Shopping",
-        "Fountain square",
-        "Night atmosphere"
+        "伝統的な建築",
+        "ショッピング",
+        "噴水広場",
+        "夜の雰囲気"
       ],
-      "tips": "Best evening for lights. Good for souvenir shopping. Connect Baotu Spring and Daming Lake.",
+      "tips": "夜にライトアップが最好。みやげ物買い物に最適。八大局温泉と大明湖を結ぶ。",
       "phone": "+86 053 1 5975 0553"
     },
     {
       "id": "shandong-museum",
-      "name": "山东省博物馆",
-      "nameEn": "Shandong Museum",
+      "name": "山東省博物館",
+      "nameEn": "山東博物館",
       "category": "cultural",
       "image": "/img/ext/30287a164c9e.webp",
-      "description": "Premier museum showcasing 50,000 years of Shandong history with excellent collections of ancient bronzes, ceramics, and Buddhist art.",
-      "address": "5189991 East Road, Lixia District",
+      "description": "5万年の山東の歴史を示す優れた古代青銅器、陶器和仏教芸術のコレクションを持つ最重要的博物館。",
+      "address": "5189991東路、歴下区",
       "coordinates": {
         "lat": 36.6212,
         "lng": 117.0694
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "09:00-17:00（月曜日は休館）",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Ancient bronzes",
-        "Dawenkou culture",
-        "Buddhist art",
-        "Interactive exhibits"
+        "古代の青銅器",
+        "大汶口文化",
+        "仏教芸術",
+        "インタラクティブ展示"
       ],
-      "tips": "Book tickets online. Allow 2-3 hours. Excellent English signage. Great for rainy days.",
+      "tips": "チケットはオンラインで予約してください。2～3時間必要です。英語の案内表示が充実しています。雨の日に最適です。",
       "phone": "+86 053 1 2744 3135"
     },
     {
       "id": "pearl-lake",
       "name": "珍珠泉",
-      "nameEn": "Pearl Spring",
+      "nameEn": "珍珠泉",
       "category": "natural",
       "image": "/img/ext/90c2f10df87a.webp",
-      "description": "Beautiful spring in the Provincial Government compound with historic pavilions and lotus ponds.",
-      "address": "Shandong Provincial Government, Lixia District",
+      "description": "歴史的なパビリオンと蓮池のある省政府敷地内の美しい泉。",
+      "address": "山東省政府、歴下区",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0194
       },
       "openingHours": "06:00-20:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "Historic pavilions",
-        "Lotus pond",
-        "Quiet atmosphere",
-        "Local life"
+        "歴史的なパビリオン",
+        "蓮の池",
+        "静かな雰囲気",
+        "地元の人々の生活"
       ],
-      "tips": "Less crowded than Baotu Spring. Morning visits best. Watch locals doing tai chi.",
+      "tips": "八大泉水よりも空いています。朝の訪問が最佳です。太極拳をする地元の人たちをお楽しみください。",
       "phone": "+86 053 1 4151 7180"
     },
     {
       "id": "four-gratitude-mountain",
       "name": "英雄山",
-      "nameEn": "Hero Mountain",
+      "nameEn": "英雄山",
       "category": "natural",
       "image": "/img/ext/1b3a09b8ec59.webp",
-      "description": "Mountain with Revolutionary history, now a public park with cultural market at its base.",
-      "address": "Hero Mountain, Lixia District",
+      "description": "革命の歴史を持つ山で、現在は麓に文化市場のある公共公園となっています。",
+      "address": "英雄山、歴下区",
       "coordinates": {
         "lat": 36.6312,
         "lng": 117.0094
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "City views",
-        "Cultural market",
-        "Revolutionary history",
-        "Morning tai chi"
+        "街の景色",
+        "文化市場",
+        "革命の歴史",
+        "朝の太極拳"
       ],
-      "tips": "Visit morning for tai chi and market. The cultural market is great for calligraphy and antiques.",
+      "tips": "朝の太極拳と市場を訪れるのに最佳です。文化市場は書道や骨董品に最適です。",
       "phone": "+86 053 1 9316 6677"
     },
     {
       "id": "lixia-spring",
       "name": "历下泉",
-      "nameEn": "Lixia Spring",
+      "nameEn": "歴下泉",
       "category": "natural",
       "image": "/img/ext/6ff5a1e7187d.webp",
-      "description": "Series of beautiful springs in Lixia District, part of Jinan's famous spring culture.",
-      "address": "Lixia District",
+      "description": "歴下区にある美しい泉の群れで、濟南市の有名な泉文化の一部です。",
+      "address": "歴下区",
       "coordinates": {
         "lat": 36.6612,
         "lng": 117.0394
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "Natural springs",
-        "Local neighborhoods",
-        "Traditional culture"
+        "自然の泉",
+        "地元の住宅地",
+        "伝統的な文化"
       ],
-      "tips": "Explore by walking through old neighborhoods. Great for photography. Best spring water.",
+      "tips": "古い住宅地を巡りながら探索してください。写真に最適です。最も美味しい泉の水。",
       "phone": "+86 053 1 3438 4213"
     },
     {
       "id": "black-tiger-spring",
       "name": "黑虎泉",
-      "nameEn": "Black Tiger Spring",
+      "nameEn": "黒虎泉",
       "category": "natural",
       "image": "/img/ext/f40cca09aac0.webp",
-      "description": "One of Jinan's famous springs, named for the sound of water hitting the pool resembling a tiger's roar.",
-      "address": "South of Lixia River, Lixia District",
+      "description": "済南の名高い泉の一つ。池に落ちる水の音が虎の吼え声に似ていることで名付けられました。",
+      "address": "歴下区瀋里川の南側",
       "coordinates": {
         "lat": 36.6612,
         "lng": 117.0194
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "30 min",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "30分",
       "highlights": [
-        "Spring water",
-        "Local residents",
-        "Historic site",
-        "Drinking water"
+        "湧水",
+        "地元の人々",
+        "史跡",
+        "飲用水"
       ],
-      "tips": "Locals collect spring water here. Great to watch local life. The water is safe to drink.",
+      "tips": "地元の人々が湧水を汲みに来るスポットです。地元の生活の様子を見られるほか、水は安全に飲用できます。",
       "phone": "+86 053 1 4623 4545"
     },
     {
       "id": "Liberation Pavilion",
-      "name": "解放阁",
-      "nameEn": "Liberation Pavilion",
+      "name": "解放閣",
+      "nameEn": "解放 Pavilion",
       "category": "historical",
       "image": "/img/ext/715f62b712ce.webp",
       "description": "中国内戦中の済南解放の地に建てられた記念館。",
@@ -259,360 +259,360 @@
         "lng": 117.0294
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "30 min",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "30分",
       "highlights": [
         "市街地の景色",
         "革命の歴史",
         "建築物",
-        "Night lighting"
+        "夜間照明"
       ],
-      "tips": "Combine with Baotu Spring visit. Best at night when illuminated.",
+      "tips": "バンドー泉との観光を組み合わせると良いです。夜にライトアップされると特におすすめです。",
       "phone": "+86 053 1 7048 6462"
     },
     {
       "id": "huayuan-road",
-      "name": "花园路",
-      "nameEn": "Huayuan Road",
+      "name": "花園路",
+      "nameEn": "花園路",
       "category": "cultural",
       "image": "/img/ext/d9e1e34b36a1.webp",
-      "description": "Modern commercial district with international brands, restaurants, and entertainment.",
-      "address": "Huayuan Road, Lixia District",
+      "description": "国際ブランド、レストラン、エンターテイメントが揃った近代的な商業地域",
+      "address": "歴下区花園路",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0594
       },
-      "openingHours": "Open 24 hours",
+      "openingHours": "24時間営業",
       "ticketPrice": "無料",
       "recommendedVisitTime": "1-2時間",
       "highlights": [
-        "Shopping",
-        "Dining",
-        "Nightlife",
-        "Modern Jinan"
+        "ショッピング",
+        "ダイニング",
+        "ナイトライフ",
+        "近代的な済南"
       ],
       "tips": "夜や夜の時間帯が最もおすすめです。近代的な済南を体験するのに最適です。多くの国際ブランドがあります。",
       "phone": "+86 053 1 2917 9865"
     },
     {
       "id": "shengdian-spring",
-      "name": "圣殿泉",
-      "nameEn": "Holy Spring",
+      "name": "聖殿泉",
+      "nameEn": "聖泉",
       "category": "natural",
       "image": "/img/ext/c09fcbe63c84.webp",
-      "description": "Beautiful spring complex with historic Catholic church nearby.",
-      "address": "Near Shandong Museum, Lixia District",
+      "description": "歴史的なカトリック教会が附近にある美しい湧水群",
+      "address": "歴下区、山東省博物館の近く",
       "coordinates": {
         "lat": 36.6312,
         "lng": 67.0694
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "30 min",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "30分",
       "highlights": [
-        "Spring water",
-        "Church nearby",
-        "Peaceful",
-        "Local atmosphere"
+        "湧水",
+        "附近の教会",
+        "静か",
+        "地元の雰囲気"
       ],
-      "tips": "Combine with museum visit. Quiet spot for reflection.",
+      "tips": "博物館との観光を組み合わせると良いです。落ち着いた場所で静かに過ごせます。",
       "phone": "+86 053 1 4707 5080"
     },
     {
       "id": "lingshan-island",
       "name": "灵岩寺",
-      "nameEn": "Lingshan Temple",
+      "nameEn": "霊山寺",
       "category": "cultural",
       "image": "/img/ext/3eb4cb0b2027.webp",
-      "description": "One of the Four Great Buddhist Temples in China, famous for its ancient architecture and mountain setting.",
-      "address": "Lingshan, Changqing District",
+      "description": "中国四大仏教寺院の一つで、古代建築と山あいの場所で有名な寺院",
+      "address": "長清区霊山",
       "coordinates": {
         "lat": 36.3512,
         "lng": 117.1194
       },
       "openingHours": "07:00-18:00",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4時間",
       "highlights": [
-        "Buddhist temple",
-        "Mountain setting",
-        "Ancient architecture",
-        "Vegetarian food"
+        "仏教寺院",
+        "山間の景色",
+        "古代建築",
+        "ベジタリアンフード"
       ],
-      "tips": "Day trip from Jinan. Arrive early. The vegetarian noodles are excellent.",
+      "tips": "済南からの日帰り旅行。早めに到着することをお勧めします。ベジタリアンヌードルが絶品です。",
       "phone": "+86 053 1 9985 9280"
     },
     {
       "id": "red-beach",
-      "name": "红叶谷",
-      "nameEn": "Red Leaf Valley",
+      "name": "紅葉谷",
+      "nameEn": "レッドリーフバレー",
       "category": "natural",
       "image": "/img/ext/48b1d43ad8b8.webp",
-      "description": "Beautiful valley famous for autumn foliage, spanning 500 acres of maple trees.",
-      "address": "Licheng District",
+      "description": "500エーカーのカエデの木々が広がる、秋の紅葉で知られる美しい谷。",
+      "address": "鯉城区",
       "coordinates": {
         "lat": 36.7512,
         "lng": 117.2194
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4時間",
       "highlights": [
-        "Autumn leaves",
-        "Maple forest",
-        "Photography",
-        "Mountain air"
+        "紅葉",
+        "カエデの森",
+        "写真",
+        "山の空気"
       ],
-      "tips": "Best in late October. Less crowded on weekdays. Bring comfortable shoes.",
+      "tips": "10月下旬が最佳。平日人是少ない。歩きやすい靴をお持ちください。",
       "phone": "+86 053 1 9103 7122"
     },
     {
       "id": "yangguang-garden",
-      "name": "阳光一百",
-      "nameEn": "Sunshine 100",
+      "name": "陽光一百",
+      "nameEn": "サンシャイン100",
       "category": "cultural",
       "image": "/img/ext/b2612602b8d8.webp",
-      "description": "Modern entertainment complex with international dining and shopping.",
-      "address": "University Road, Shizhong District",
+      "description": "国際的なダイニングやショッピングが可能な最新のエンターテインメントコンプレックス。",
+      "address": "大学路、市中区",
       "coordinates": {
         "lat": 36.6212,
         "lng": 117.0194
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Shopping",
-        "Dining",
-        "Movies",
-        "International brands"
+        "ショッピング",
+        "ダイニング",
+        "映画",
+        "国際ブランド"
       ],
-      "tips": "Popular with locals. Great for evening entertainment. Many restaurants.",
+      "tips": "地元の人々に人気。夜のエンターテイメントに最適。レストランが多い。",
       "phone": "+86 053 1 8784 2576"
     },
     {
       "id": "yinxiang-ma",
-      "name": "印象济南",
-      "nameEn": "Yinxiang Jinan",
+      "name": "印象済南",
+      "nameEn": "印象済南",
       "category": "cultural",
       "image": "/img/ext/2baf9b276fc6.webp",
-      "description": "Cultural tourism block showcasing traditional Jinan architecture and local crafts.",
-      "address": "Lixia District",
+      "description": "伝統的な濟南の建築と地元の手工芸品を展示する文化旅游ブロック。",
+      "address": "歴下区",
       "coordinates": {
         "lat": 36.6612,
         "lng": 117.0594
       },
-      "openingHours": "Open 24 hours (shops 10:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24時間営業（店舗10:00-22:00）",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Traditional architecture",
-        "Local crafts",
-        "Street performances",
-        "Souvenirs"
+        "伝統的な建築",
+        "地元工芸品",
+        "路上パフォーマンス",
+        "お土産"
       ],
-      "tips": "Best evening with lighting. Good for souvenirs. Traditional performances on weekends.",
+      "tips": "夜のライトアップが最佳。お土産に良い。週末は伝統公演がある。",
       "phone": "+86 053 1 4207 1967"
     },
     {
       "id": "chuhe-cultural-street",
       "name": "曲水亭街",
-      "nameEn": "Qushui Ting Street",
+      "nameEn": "曲水亭街",
       "category": "cultural",
       "image": "/img/ext/ec6bda6c85d6.webp",
-      "description": "Historic street with traditional shophouses, teahouses, and beautiful canals.",
-      "address": "Near Baotu Spring, Lixia District",
+      "description": "伝統的な商屋、茶屋、美しい運河がある歴史的な улица。",
+      "address": "天下第一泉景区附近、歴下区",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0294
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "Traditional buildings",
-        "Canals",
-        "Teahouses",
-        "Old Jinan"
+        "伝統的な建築",
+        "運河",
+        "茶屋",
+        "古泉城"
       ],
-      "tips": "Best morning for tea culture. Very photogenic. Connect to Baotu Spring area.",
+      "tips": "朝一の茶文化が最佳。写真に最適。天下第一泉景区につながる。",
       "phone": "+86 053 1 4148 4778"
     },
     {
       "id": "jinandong-street",
       "name": "金街",
-      "nameEn": "Jin Street",
+      "nameEn": "金通",
       "category": "cultural",
       "image": "/img/ext/c16eb76a94f6.webp",
-      "description": "Premier pedestrian shopping street in Jinan with MixC mall and international brands.",
-      "address": "Lixia District",
+      "description": "済南を代表する歩行者天国ショッピングストリート。MixCモールの他、国際ブランド店が軒を連ねる。",
+      "address": "歴下区",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0294
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "MixC mall",
-        "International brands",
-        "Entertainment",
-        "Dining"
+        "MixCモール",
+        "国際ブランド",
+        "エンターテインメント",
+        "ダイニング"
       ],
-      "tips": "Best for shopping. The MixC is one of China's premier malls. Many restaurants.",
+      "tips": "ショッピングに最適。中国有数のモール「The MixC」があります。レストランも豊富です。",
       "phone": "+86 053 1 0313 4482"
     },
     {
       "id": "jinan-old-river",
-      "name": "护城河",
-      "nameEn": "City Moat",
+      "name": "護城河",
+      "nameEn": "城堀",
       "category": "natural",
       "image": "/img/ext/309f30e43563.webp",
-      "description": "Historic moat surrounding the old city with beautiful spring-fed waters and walking paths.",
-      "address": "Around old city center",
+      "description": "旧城を囲む歴史的な堀。美しい湧水と遊歩道を備えた風光明媚なエリア。",
+      "address": "旧市街の中心部付近",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0294
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24時間開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Spring-fed water",
-        "Walking path",
-        "City views",
-        "Boat rides"
+        "湧水",
+        "遊歩道を",
+        "街の眺望",
+        "舟遊び"
       ],
-      "tips": "Take boat ride for unique view. Best evening. Connect all major springs.",
+      "tips": "舟で独特の眺望を楽しめる。夕方が最佳。主要なすべての泉が接続されている。",
       "phone": "+86 053 1 9302 5680"
     },
     {
       "id": "liuhe-temple",
       "name": "柳荷山",
-      "nameEn": "Liuhe Mountain",
+      "nameEn": "六和山",
       "category": "natural",
       "image": "/img/ext/53e90497352f.webp",
-      "description": "Mountain named for its famous willows and lotus, offering hiking trails and temple.",
-      "address": "Licheng District",
+      "description": "柳と蓮で名高い山で、ハイキングコースと寺があります。",
+      "address": "歴城区",
       "coordinates": {
         "lat": 36.7212,
         "lng": 117.1294
       },
       "openingHours": "06:00-18:00",
       "ticketPrice": "20¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2〜3時間",
       "highlights": [
-        "Hiking trails",
-        "Temple",
-        "Willow views",
-        "Nature escape"
+        "ハイキングコース",
+        "寺院",
+        "柳の景色",
+        "自然体験"
       ],
-      "tips": "Good for escaping city. Less crowded than Thousand Buddha Mountain. Spring for willows.",
+      "tips": "都市を逃离できる。千仏山より混雑しない。柳の季節は春。",
       "phone": "+86 053 1 7709 5813"
     },
     {
       "id": "century-wisdom-park",
-      "name": "和谐广场",
-      "nameEn": "Harmony Square",
+      "name": "和諧広場",
+      "nameEn": "和諧広場",
       "category": "cultural",
       "image": "/img/ext/994bfae9b723.webp",
-      "description": "Modern public square with fountains, shopping, and entertainment complex.",
-      "address": "Weili Road, Lixia District",
+      "description": "噴水ショッピングエンターテイメント複合施設の現代的な公共広場",
+      "address": "歴下区威力路",
       "coordinates": {
         "lat": 36.6312,
         "lng": 117.0394
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "24時間開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1〜2時間",
       "highlights": [
-        "Fountains",
-        "Shopping",
-        "Night views",
-        "Local life"
+        "噴水",
+        "ショッピング",
+        "夜景",
+        "地元の人々の生活"
       ],
-      "tips": "Best evening. The fountain show at night is spectacular.",
+      "tips": "夜に行くのが最佳です。夜間の噴水ショーは壮観です",
       "phone": "+86 053 1 8014 5343"
     },
     {
       "id": "shandong-art-museum",
-      "name": "山东美术馆",
-      "nameEn": "Shandong Art Museum",
+      "name": "山東美術館",
+      "nameEn": "山東美術館",
       "category": "cultural",
       "image": "/img/ext/c74d7faf7bb9.webp",
-      "description": "Modern art museum with contemporary exhibitions and traditional Chinese art.",
-      "address": "8579 East Road, Lixia District",
+      "description": "現代アートと中国伝統美術作品を展示する現代美術館",
+      "address": "済南市歴下区東路8579号",
       "coordinates": {
         "lat": 36.6312,
         "lng": 117.0794
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "09:00-17:00（月曜休館）",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1-2時間",
       "highlights": [
-        "Contemporary art",
-        "Traditional calligraphy",
-        "Rotating exhibitions",
-        "Architecture"
+        "現代アート",
+        "伝統的な書道",
+        "入れ替え展示",
+        "建築"
       ],
-      "tips": "Great for art lovers. Combine with nearby Shandong Museum. Allow 1-2 hours.",
+      "tips": "アート愛好家に最適。近くの山東博物館と組み合わせる。所要時間1-2時間",
       "phone": "+86 053 1 7602 1652"
     },
     {
       "id": "shandong-concatenation",
-      "name": "山东连通",
-      "nameEn": "Shandong Canal",
+      "name": "山東連通",
+      "nameEn": "山東運河",
       "category": "historical",
       "image": "/img/ext/9f32b9507fe6.webp",
-      "description": "Historic canal with boat tours showcasing Jinan's water culture and spring systems.",
-      "address": "City Moat System",
+      "description": "済南の水文化と泉水を披露する歴史的な運河遊覧",
+      "address": "都市堀水系",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0294
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "100¥ (boat tour)",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "100¥（クルーズ）",
+      "recommendedVisitTime": "1-2時間",
       "highlights": [
-        "Boat tour",
-        "Spring culture",
-        "Historic locks",
-        "City views"
+        "クルーズ",
+        "春文化",
+        "歴史的な水門",
+        "街の景色"
       ],
-      "tips": "Best way to understand Jinan's spring culture. Combine with walking along moat.",
+      "tips": "濟南の春文化を理解するための最良の方法。堀沿いの散歩と組み合わせると良い。",
       "phone": "+86 053 1 7674 0176"
     },
     {
       "id": "tianqiao-arts",
       "name": "天桥",
-      "nameEn": "Tianqiao Arts District",
+      "nameEn": "天橋芸術地区",
       "category": "cultural",
       "image": "/img/ext/76d8ce3dced1.webp",
-      "description": "Revitalized industrial area turned arts district with galleries and performance spaces.",
-      "address": "Tianqiao District",
+      "description": "ギャラリーやパフォーマンススペースを持つ芸術地区へと再生された工業地帯。",
+      "address": "天橋区",
       "coordinates": {
         "lat": 36.6812,
         "lng": 117.0194
       },
-      "openingHours": "Various by venue",
-      "ticketPrice": "Varies",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "店舗により異なる",
+      "ticketPrice": "店舗により異なる",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Galleries",
-        "Street art",
-        "Performance venues",
-        "Cafes"
+        "ギャラリー",
+        "ストリートアート",
+        "パフォーマンス会場",
+        "カフェ"
       ],
-      "tips": "Weekend visits best. Check event schedules. Great for photography.",
+      "tips": "週末の訪問が最適。イベントスケジュールを確認하자。写真撮影に最適。",
       "phone": "+86 053 1 5717 1020"
     },
     {
       "id": "thousand-buddha",
       "name": "千佛山",
-      "nameEn": "Thousand Buddha Mountain",
+      "nameEn": "千仏山",
       "category": "nature",
-      "description": "济南三大名胜之一，有隋代石佛造像。",
-      "address": "济南市历下区",
+      "description": "済南三大名勝の一つで、隋代の石仏像がある。",
+      "address": "済南市歴下区",
       "coordinates": {
         "lat": 36.65,
         "lng": 117.03
@@ -622,64 +622,64 @@
       "recommendedVisitTime": "半天",
       "highlights": [
         "石佛",
-        "兴国禅寺",
+        "興国禅寺",
         "城市全景"
       ],
-      "tips": "登高望远好去处。",
+      "tips": "登って遠くを眺めるのに良い場所。",
       "image": "/img/ext/24b65780f61f.webp",
       "phone": "+86 053 1 3439 7892"
     },
     {
       "id": "five-dragon-pool",
-      "name": "五龙潭",
-      "nameEn": "Wulongtan Park",
+      "name": "五龍潭",
+      "nameEn": "五龍潭公園",
       "category": "nature",
-      "description": "济南四大泉群之一，有五龙潭、天镜泉等名泉。",
-      "address": "济南市历下区",
+      "description": "済南四大泉群の一つで、五龍潭、天鏡泉などの名泉がある。",
+      "address": "済南市歴下区",
       "coordinates": {
         "lat": 36.67,
         "lng": 117
       },
       "openingHours": "07:00-19:00",
       "ticketPrice": "5元",
-      "recommendedVisitTime": "1.5小时",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
         "名泉",
         "秦琼故居"
       ],
-      "tips": "了解济南泉文化。",
+      "tips": "済南の泉文化を学ぶ。",
       "image": "/img/ext/f050ed1f026d.webp",
       "phone": "+86 053 1 3502 9799"
     },
     {
       "id": "quancheng-square",
-      "name": "泉城广场",
-      "nameEn": "Quancheng Square",
+      "name": "泉城広場",
+      "nameEn": "泉城広場",
       "category": "landmark",
-      "description": "济南的城市中心广场，有泉标雕塑。",
-      "address": "济南市历下区",
+      "description": "済南の市中心広場で、泉標の彫刻がある。",
+      "address": "済南市歴下区",
       "coordinates": {
         "lat": 36.66,
         "lng": 117.01
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
         "泉标",
-        "音乐喷泉"
+        "音楽噴水"
       ],
-      "tips": "傍晚灯光最美。",
+      "tips": "夕方のライトアップが最も美しいです。",
       "image": "/img/ext/4e91a2e69f14.webp",
       "phone": "+86 053 1 5288 4777"
     },
     {
       "id": "lingyan-temple",
       "name": "灵岩寺",
-      "nameEn": "Lingyan Temple",
+      "nameEn": "霊岩寺",
       "category": "temple",
-      "description": "中国四大名刹之首，有千佛殿和辟支塔。",
-      "address": "济南市长清区",
+      "description": "中国四大名刹の筆頭で、千仏殿と辟支塔があります。",
+      "address": "済南市長清区",
       "coordinates": {
         "lat": 36.35,
         "lng": 117
@@ -692,172 +692,172 @@
         "辟支塔",
         "墓塔林"
       ],
-      "tips": "了解佛教文化。",
+      "tips": "仏教文化を学べます。",
       "image": "/img/ext/505d95e27bcc.webp",
       "phone": "+86 053 1 4080 6884"
     },
     {
       "id": "jinan-museum",
-      "name": "济南市博物馆",
-      "nameEn": "Jinan Museum",
+      "name": "済南市博物館",
+      "nameEn": "済南博物館",
       "category": "museum",
-      "description": "展示济南历史文化的博物馆。",
-      "address": "济南市历下区",
+      "description": "済南の歴史文化を展示する博物館。",
+      "address": "済南市歴下区",
       "coordinates": {
         "lat": 36.66,
         "lng": 117.02
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
         "历史文物",
         "泉文化"
       ],
-      "tips": "了解济南历史。",
+      "tips": "済南の歴史を学ぶ。",
       "image": "/img/ext/e6070f226fe6.webp",
       "phone": "+86 053 1 4476 6274"
     },
     {
       "id": "furong-street",
       "name": "芙蓉街",
-      "nameEn": "Furong Street",
+      "nameEn": "芙蓉街",
       "category": "street",
-      "description": "济南最古老的商业街，汇集各种小吃。",
-      "address": "济南市历下区",
+      "description": "済南で最も古い商業街で、さまざまな小吃が集まっています。",
+      "address": "済南市歴下区",
       "coordinates": {
         "lat": 36.67,
         "lng": 117.02
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
         "小吃",
         "老建筑"
       ],
-      "tips": "品尝济南小吃。",
+      "tips": "済南の小吃を味わう。",
       "image": "/img/ext/126bdc633985.webp",
       "phone": "+86 053 1 4985 7361"
     },
     {
       "id": "kuanhou-li",
       "name": "宽厚里",
-      "nameEn": "Kuanhouli",
+      "nameEn": "官後里",
       "category": "street",
-      "description": "济南新开发的历史文化街区，融合传统与现代。",
-      "address": "济南市历下区",
+      "description": "済南で新しく開発された歴史文化街区で、伝統と現代が融合しています。",
+      "address": "済南市歴下区",
       "coordinates": {
         "lat": 36.66,
         "lng": 117.02
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
         "历史街区",
         "美食",
         "文创"
       ],
-      "tips": "感受济南文化。",
+      "tips": "済南の文化を感じる。",
       "image": "/img/ext/d1897b255b76.webp",
       "phone": "+86 053 1 1830 7389"
     },
     {
       "id": "quancheng-park",
-      "name": "泉城公园",
-      "nameEn": "Quancheng Park",
+      "name": "泉城公園",
+      "nameEn": "泉城公園",
       "category": "park",
-      "description": "济南最大的城市公园，有湖泊和花园。",
-      "address": "济南市历下区",
+      "description": "済南最大の都市公園で、湖と庭園があります。",
+      "address": "済南市歴下区",
       "coordinates": {
         "lat": 36.66,
         "lng": 117.03
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
         "湖泊",
-        "花园"
+        "花園"
       ],
-      "tips": "休闲散步好去处。",
+      "tips": "散歩に最適な場所。",
       "image": "/img/ext/d981da75521c.webp",
       "phone": "+86 053 1 5231 8643"
     },
     {
       "id": "jingshi-road",
-      "name": "经十路",
-      "nameEn": "Jingshi Road",
+      "name": "経十路",
+      "nameEn": "京師路",
       "category": "landmark",
-      "description": "济南最宽的城市道路，有现代化建筑群。",
-      "address": "济南市历下区",
+      "description": "済南で最も広い都市道路で、近代的な建物群がある。",
+      "address": "済南市歴下区",
       "coordinates": {
         "lat": 36.66,
         "lng": 117
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "30分钟",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "30分",
       "highlights": [
-        "现代建筑",
+        "現代建築",
         "城市新貌"
       ],
-      "tips": "感受济南发展。",
+      "tips": "済南の発展を感じる。",
       "image": "/img/ext/8992f50f6b3f.webp",
       "phone": "+86 053 1 0551 9605"
     },
     {
       "id": "lishan-district",
       "name": "历下区",
-      "nameEn": "Lixia District",
+      "nameEn": "歴下区",
       "category": "landmark",
-      "description": "济南的中心城区，汇集了大部分名胜古迹。",
-      "address": "济南市历下区",
+      "description": "済南の中心市街地で、大部分の名所旧跡が集まっている。",
+      "address": "済南市歴下区",
       "coordinates": {
         "lat": 36.66,
         "lng": 117.02
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
+      "ticketPrice": "無料",
       "recommendedVisitTime": "半天",
       "highlights": [
         "名胜古迹",
         "商业中心"
       ],
-      "tips": "济南旅游核心区。",
+      "tips": "済南観光の中心エリア。",
       "image": "/img/ext/d94299b514bc.webp",
       "phone": "+86 053 1 3409 5090"
     },
     {
       "id": "zhangqiu-iron",
-      "name": "章丘铁锅",
-      "nameEn": "Zhangqiu Iron Wok",
+      "name": "章丘鉄鍋",
+      "nameEn": "章丘鉄鍋",
       "category": "street",
-      "description": "章丘铁锅锻造技艺，是非物质文化遗产。",
-      "address": "济南市章丘区",
+      "description": "章丘鉄鍋の鍛造技術は、無形文化遺産です。",
+      "address": "済南市章丘区",
       "coordinates": {
         "lat": 36.72,
         "lng": 117.53
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
         "非遗技艺",
-        "铁锅锻造"
+        "鉄鍋鍛造"
       ],
-      "tips": "了解传统工艺。",
+      "tips": "伝統工芸を学ぶ。",
       "image": "/img/ext/ffb75e0b0bd5.webp",
       "phone": "+86 053 1 0315 5204"
     },
     {
       "id": "jinan-zoo",
-      "name": "济南动物园",
-      "nameEn": "Jinan Zoo",
+      "name": "済南動物園",
+      "nameEn": "済南動物園",
       "category": "nature",
-      "description": "山东省最大的动物园，有300多种动物。",
-      "address": "济南市天桥区",
+      "description": "山東省最大の動物園で、300種類以上の動物がいます。",
+      "address": "済南市天橋区",
       "coordinates": {
         "lat": 36.68,
         "lng": 116.98
@@ -869,39 +869,39 @@
         "大熊猫",
         "金丝猴"
       ],
-      "tips": "适合亲子游。",
+      "tips": "家族連れに最適。",
       "image": "/img/ext/6ebe9f99d470.webp",
       "phone": "+86 053 1 9582 1687"
     },
     {
       "id": "mingshui-ancient",
       "name": "明水古城",
-      "nameEn": "Mingshui Ancient City",
+      "nameEn": "明水古城",
       "category": "street",
-      "description": "章丘区的古城，有泉水和古建筑。",
-      "address": "济南市章丘区",
+      "description": "章丘区にある古い城で、泉と古建築があります。",
+      "address": "済南市章丘区",
       "coordinates": {
         "lat": 36.72,
         "lng": 117.53
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
         "古城",
         "泉水"
       ],
-      "tips": "人少安静。",
+      "tips": "人が少なく静かです。",
       "image": "/img/ext/48b4b129bd4f.webp",
       "phone": "+86 053 1 5904 2613"
     },
     {
       "id": "changqing-forest",
-      "name": "长清园博园",
-      "nameEn": "Changqing Garden Expo",
+      "name": "長清園博園",
+      "nameEn": "長清園博会",
       "category": "park",
-      "description": "济南园博园，有各种主题花园。",
-      "address": "济南市长清区",
+      "description": "済南園博園には、さまざまなテーマの庭園があります。",
+      "address": "済南市長清区",
       "coordinates": {
         "lat": 36.35,
         "lng": 117
@@ -910,64 +910,64 @@
       "ticketPrice": "30元",
       "recommendedVisitTime": "半天",
       "highlights": [
-        "花园",
-        "园林"
+        "花園",
+        "庭園"
       ],
-      "tips": "春季花展最美。",
+      "tips": "春の花展が最も美しいです。",
       "image": "/img/ext/e8d26627fa35.webp",
       "phone": "+86 053 1 8982 3776"
     },
     {
       "id": "jinan-buddha",
-      "name": "四门塔",
-      "nameEn": "Four Gates Pagoda",
+      "name": "四門塔",
+      "nameEn": "四門塔",
       "category": "temple",
-      "description": "中国现存最古老的石塔，建于隋代。",
-      "address": "济南市历城区",
+      "description": "中国に現存する最古の石塔で、隋の時代に建てられました。",
+      "address": "済南市歴城区",
       "coordinates": {
         "lat": 36.48,
         "lng": 117.22
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "30元",
-      "recommendedVisitTime": "1.5小时",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
         "隋代石塔",
         "佛教文化"
       ],
-      "tips": "了解古代建筑。",
+      "tips": "古代建築を学べます。",
       "image": "/img/ext/08288e954d45.webp",
       "phone": "+86 053 1 1699 2717"
     },
     {
       "id": "laiwu-forest",
       "name": "莱芜莲花山",
-      "nameEn": "Laiwu Lianhua Mountain",
+      "nameEn": "萊芜蓮花山",
       "category": "nature",
-      "description": "济南南部的风景区，有莲花和瀑布。",
-      "address": "济南市莱芜区",
+      "description": "済南南部の景勝地で、蓮の花と滝があります。",
+      "address": "済南市萊蕪区",
       "coordinates": {
         "lat": 36.2,
         "lng": 117.67
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
+      "ticketPrice": "無料",
       "recommendedVisitTime": "半天",
       "highlights": [
         "莲花",
         "瀑布"
       ],
-      "tips": "夏季避暑。",
+      "tips": "夏の避暑に最適です。",
       "image": "/img/ext/b9e20fbe4d4c.webp",
       "phone": "+86 053 1 8008 3983"
     },
     {
       "id": "jinan-hotspring",
-      "name": "济南温泉",
-      "nameEn": "Jinan Hot Spring",
+      "name": "済南温泉",
+      "nameEn": "済南温泉",
       "category": "nature",
-      "description": "济南有丰富的温泉资源，可泡温泉。",
-      "address": "济南市历城区",
+      "description": "済南には豊富な温泉資源があり、温泉に入ることができます。",
+      "address": "済南市歴城区",
       "coordinates": {
         "lat": 36.48,
         "lng": 117.22
@@ -978,202 +978,202 @@
       "highlights": [
         "温泉"
       ],
-      "tips": "冬季泡温泉。",
+      "tips": "冬は温泉がおすすめです。",
       "image": "/img/ext/881209e0ad4b.webp",
       "phone": "+86 053 1 3862 0050"
     },
     {
       "id": "pingyin-rose",
-      "name": "平阴玫瑰",
-      "nameEn": "Pingyin Rose",
+      "name": "平陰玫瑰（ピンインメイグイ）",
+      "nameEn": "平陰バラ",
       "category": "nature",
-      "description": "中国玫瑰之乡，每年5月玫瑰盛开。",
-      "address": "济南市平阴县",
+      "description": "中国のバラの里、毎年5月にバラが咲き誇ります。",
+      "address": "済南市平陰県",
       "coordinates": {
         "lat": 36.28,
         "lng": 116.45
       },
       "openingHours": "5月",
-      "ticketPrice": "免费",
+      "ticketPrice": "無料",
       "recommendedVisitTime": "半天",
       "highlights": [
         "玫瑰花海"
       ],
-      "tips": "5月最美。",
+      "tips": "5月が見頃。",
       "image": "/img/ext/074dc657fe7e.webp",
       "phone": "+86 053 1 3709 3323"
     },
     {
       "id": "jinan-culture",
-      "name": "山东省美术馆",
-      "nameEn": "Shandong Art Museum",
+      "name": "山東省美術館",
+      "nameEn": "山東美術館",
       "category": "museum",
-      "description": "山东省最大的美术馆，展示中外美术作品。",
-      "address": "济南市历下区",
+      "description": "山東省最大の美術館で、中国と海外の美術作品を展示しています。",
+      "address": "済南市歴下区",
       "coordinates": {
         "lat": 36.66,
         "lng": 117.05
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
-        "美术展览"
+        "美術展覧会"
       ],
-      "tips": "了解艺术文化。",
+      "tips": "芸術文化を学べます。",
       "image": "/img/ext/90bb3bad9e27.webp",
       "phone": "+86 053 1 0844 7016"
     },
     {
       "id": "jinan-tea",
-      "name": "济南茶叶批发市场",
-      "nameEn": "Jinan Tea Market",
+      "name": "済南茶葉卸売市場",
+      "nameEn": "済南茶市場",
       "category": "street",
-      "description": "中国北方最大的茶叶市场，可品尝各种茶。",
-      "address": "济南市槐荫区",
+      "description": "中国北方最大の茶葉市場で、各種のお茶を味わえる。",
+      "address": "済南市槐蔭区",
       "coordinates": {
         "lat": 36.65,
         "lng": 116.98
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
         "茶叶",
         "品茶"
       ],
-      "tips": "购买济南特产。",
+      "tips": "済南の特産品を購入。",
       "image": "/img/ext/cd8bcddf7142.webp",
       "phone": "+86 053 1 4650 3134"
     },
     {
       "id": "jinan-night",
       "name": "泉城夜景",
-      "nameEn": "Quancheng Night View",
+      "nameEn": "泉城夜景",
       "category": "landmark",
-      "description": "趵突泉和大明湖的夜景灯光秀。",
-      "address": "济南市历下区",
+      "description": "趵突泉と大明湖の夜景ライトアップショー。",
+      "address": "済南市歴下区",
       "coordinates": {
         "lat": 36.66,
         "lng": 117.02
       },
-      "openingHours": "夜间",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "openingHours": "夜間",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "灯光秀",
+        "ライトショー",
         "泉城夜色"
       ],
-      "tips": "夏季夜间最美。",
+      "tips": "夏の夜が最も美しい。",
       "image": "/img/ext/9f3d4bf97b6e.webp",
       "phone": "+86 053 1 6002 6089"
     },
     {
       "id": "zhangqiu-baihua",
       "name": "百脉泉",
-      "nameEn": "Baimai Spring",
+      "nameEn": "白脈泉",
       "category": "nature",
-      "description": "章丘名泉，有百脉齐发的壮观景象。",
-      "address": "济南市章丘区",
+      "description": "章丘の名泉で、百脈が一斉に湧き出る壮観な景色が見られます。",
+      "address": "済南市章丘区",
       "coordinates": {
         "lat": 36.72,
         "lng": 117.53
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "25元",
-      "recommendedVisitTime": "1.5小时",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
         "名泉",
         "泉水"
       ],
-      "tips": "了解济南泉文化。",
+      "tips": "済南の泉文化を学ぶ。",
       "image": "/img/ext/d641e54e15b2.webp",
       "phone": "+86 053 1 0712 1465"
     },
     {
       "id": "wanda-plaza",
-      "name": "济南万达广场",
-      "nameEn": "Jinan Wanda Plaza",
+      "name": "済南万達広場",
+      "nameEn": "済南万达広場",
       "category": "landmark",
-      "description": "济南最大的商业综合体。",
-      "address": "济南市历下区",
+      "description": "済南最大の商業複合施設。",
+      "address": "済南市歴下区",
       "coordinates": {
         "lat": 36.66,
         "lng": 117.03
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
-        "购物",
+        "ショッピング",
         "美食"
       ],
-      "tips": "购物好去处。",
+      "tips": "買い物に最適な場所。",
       "image": "/img/ext/96f7e04e3f94.webp",
       "phone": "+86 053 1 4286 8626"
     },
     {
       "id": "high-tech-zone",
-      "name": "济南高新区",
-      "nameEn": "Jinan High-tech Zone",
+      "name": "済南高新区",
+      "nameEn": "済南高新技術産業区",
       "category": "landmark",
-      "description": "济南的科技中心，有现代化建筑。",
-      "address": "济南市高新区",
+      "description": "済南のテクノロジーセンターで、近代的な建物が並ぶ。",
+      "address": "済南市高新区",
       "coordinates": {
         "lat": 36.66,
         "lng": 117.05
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "现代建筑"
+        "現代建築"
       ],
-      "tips": "感受济南发展。",
+      "tips": "済南の発展を感じる。",
       "image": "/img/ext/b75125fae61b.webp",
       "phone": "+86 053 1 2999 0131"
     },
     {
       "id": "old-jinan",
-      "name": "老济南胡同",
-      "nameEn": "Old Jinan Hutongs",
+      "name": "老済南胡同",
+      "nameEn": "古い済南胡同",
       "category": "street",
-      "description": "济南老城区的胡同，保留了传统建筑风格。",
-      "address": "济南市历下区",
+      "description": "済南旧市街の胡同（フートン）で、伝統的な建築様式が残る。",
+      "address": "済南市歴下区",
       "coordinates": {
         "lat": 36.67,
         "lng": 117.02
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
         "胡同",
         "老建筑"
       ],
-      "tips": "了解老济南生活。",
+      "tips": "昔ながらの済南の暮らしを知る。",
       "image": "/img/ext/05ae7bd0ba32.webp",
       "phone": "+86 053 1 8757 8184"
     },
     {
       "id": "jinan-station",
-      "name": "济南站",
-      "nameEn": "Jinan Railway Station",
+      "name": "済南駅",
+      "nameEn": "済南駅",
       "category": "landmark",
-      "description": "济南的标志性建筑，德式建筑风格。",
-      "address": "济南市天桥区",
+      "description": "済南のランドマークで、ドイツ風建築様式。",
+      "address": "済南市天橋区",
       "coordinates": {
         "lat": 36.68,
         "lng": 117
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "30分钟",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "30分",
       "highlights": [
         "德式建筑",
-        "火车站"
+        "駅"
       ],
-      "tips": "了解济南历史。",
+      "tips": "済南の歴史を学ぶ。",
       "image": "/img/ext/65efc8264cfc.webp",
       "phone": "+86 053 1 1840 2314"
     }
@@ -1182,121 +1182,121 @@
     {
       "id": "jinan-1",
       "name": "便宜坊",
-      "nameEn": "Bian Yi Fang",
-      "type": "blackpearl",
+      "nameEn": "便一味",
+      "type": "黒真珠",
       "diamond": 1,
-      "cuisine": "Shandong",
+      "cuisine": "山東",
       "avgPrice": 200,
       "rating": 4.7,
-      "address": "188 Luoyuan Avenue, Lixia District",
+      "address": "188羅源大道、歴下区",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0294
       },
       "phone": "+86 531 8690 8888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "One-diamond Black Pearl restaurant specializing in classic Shandong cuisine with elegant atmosphere.",
+      "description": "黒真珠レストランで、伝統的な山東料理と優雅な雰囲気をコンセプトにした一品料理店",
       "dishHighlights": [
-        "Imperial Shandong cuisine",
-        "Braised abalone",
-        "Sweet and sour carp",
-        "Jinan style noodles"
+        "皇室山東料理",
+        "煮アワビ",
+        "甘酸っぱい鯉",
+        "済南風ラーメン"
       ],
       "tags": [
-        "fine-dining",
-        "shandong-cuisine",
-        "elegant",
-        "special-occasion"
+        "高級レストラン",
+        "山東料理",
+        "上品",
+        "特別な機会"
       ],
       "imageUrl": "/img/ext/45fcc7a963a5.webp"
     },
     {
       "id": "jinan-2",
       "name": "会仙楼",
-      "nameEn": "Hui Xian Lou",
-      "type": "local",
-      "cuisine": "Jinan",
+      "nameEn": "慧仙楼",
+      "type": "ローカル",
+      "cuisine": "済南料理",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Near Baotu Spring, Lixia District",
+      "address": "天下第一泉景区附近、歴下区",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0294
       },
       "phone": "+86 531 8690 1234",
       "hours": "10:30-21:30",
-      "description": "Historic restaurant famous for Jinan cuisine and local dishes in traditional setting.",
+      "description": "伝統的な雰囲気で済南料理と地元料理を有名な歴史的レストラン",
       "dishHighlights": [
-        "Jinan style prawns",
-        "Spring rolls",
-        "Fried dumplings",
-        "Sweet and sour carp"
+        "済南風海老",
+        "春巻き",
+        "揚げ餃子",
+        "甘酸っぱい鯉"
       ],
       "tags": [
-        "local",
-        "jinan-cuisine",
-        "historic",
-        "traditional"
+        "地元",
+        "済南料理",
+        "歴史あり",
+        "伝統的"
       ],
       "imageUrl": "/img/ext/45fcc7a963a5.webp"
     },
     {
       "id": "jinan-3",
       "name": "草包包子",
-      "nameEn": "Cao Bao Bao",
-      "type": "local",
-      "cuisine": "Jinan Snacks",
+      "nameEn": "曹包包",
+      "type": "ローカル",
+      "cuisine": "済南軽食",
       "avgPrice": 40,
       "rating": 4.8,
-      "address": "Multiple locations including Lixia District",
+      "address": "歴下区を含む複数の場所",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0294
       },
       "phone": "+86 531 8690 5678",
       "hours": "06:00-14:00",
-      "description": "Legendary local snack chain serving famous Jinan buns since 1917.",
+      "description": "1917年から有名な済南包子を提供する伝説的な地元軽食チェーン",
       "dishHighlights": [
-        "Pork buns",
-        "Vegetable buns",
-        "Soy milk",
-        "Fried dough sticks"
+        "豚まん",
+        "野菜包子",
+        "豆乳",
+        "油条"
       ],
       "tags": [
-        "local",
-        "famous",
-        "breakfast",
-        "must-try",
-        "budget"
+        "地元",
+        "有名",
+        "朝食",
+        "必食",
+        "節約"
       ],
       "imageUrl": "/img/ext/b122aa558dc1.webp"
     },
     {
       "id": "jinan-4",
-      "name": "孟家扒鸡",
-      "nameEn": "Meng's Braised Chicken",
-      "type": "local",
-      "cuisine": "Jinan",
+      "name": "孟家扒鶏（蒸し鶏）",
+      "nameEn": "孟の煮鳥",
+      "type": "ローカル",
+      "cuisine": "済南",
       "avgPrice": 60,
       "rating": 4.6,
-      "address": "Near Daming Lake, Lixia District",
+      "address": "大明湖付近、歴下区",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0194
       },
       "hours": "08:00-20:00",
-      "description": "Famous for braised chicken, a Jinan specialty with 100-year history.",
+      "description": "煮鳥で知られる済南の名物、100年の歴史を持つ",
       "dishHighlights": [
-        "Braised chicken",
-        "Chicken feet",
-        "Noodles",
-        "Local dishes"
+        "煮鳥",
+        "鶏足",
+        "麺類",
+        "地元の料理"
       ],
       "tags": [
-        "local",
-        "famous",
-        "specialty",
-        "must-try"
+        "地元",
+        "有名",
+        "名物",
+        "必食"
       ],
       "imageUrl": "/img/ext/08612821a937.webp",
       "phone": "+86 053 1 2082 7517"
@@ -1304,29 +1304,29 @@
     {
       "id": "jinan-5",
       "name": "油旋",
-      "nameEn": "You Xuan",
-      "type": "local",
-      "cuisine": "Jinan Snacks",
+      "nameEn": "優選",
+      "type": "ローカル",
+      "cuisine": "済南小吃",
       "avgPrice": 15,
       "rating": 4.7,
-      "address": "Near Quancheng Road, Lixia District",
+      "address": "済南市歴下区泉城路附近",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0194
       },
       "hours": "07:00-19:00",
-      "description": "Iconic Jinan snack - crispy spiral pastry layered with scallions and lard.",
+      "description": "濟南の代表的小吃 - ネギと脂身が層になったカリカリの螺旋状パイ",
       "dishHighlights": [
-        "Oil spirals",
-        "Millettia soup",
-        "Steamed buns"
+        "油螺旋",
+        "葛湯",
+        "蒸しパン"
       ],
       "tags": [
-        "local",
-        "famous",
-        "snacks",
-        "must-try",
-        "budget"
+        "地元",
+        "有名",
+        "小吃",
+        "必食",
+        "格安"
       ],
       "imageUrl": "/img/ext/b590c4b871cc.webp",
       "phone": "+86 053 1 8788 2481"
@@ -1334,30 +1334,30 @@
     {
       "id": "jinan-6",
       "name": "把子肉",
-      "nameEn": "Ba Zi Rou",
-      "type": "local",
-      "cuisine": "Jinan",
+      "nameEn": "八字肉",
+      "type": "ローカル",
+      "cuisine": "済南料理",
       "avgPrice": 35,
       "rating": 4.5,
-      "address": "Various locations",
+      "address": "各店舗",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0194
       },
       "hours": "10:00-22:00",
-      "description": "Classic Jinan rice bowl - braised pork belly over rice with gravy.",
+      "description": "済南名物のご飯もの。豚バラ肉の煮込みを甘辛いタレでご飯にかけた一品。",
       "dishHighlights": [
-        "Braised pork belly rice",
-        "Braised eggs",
-        "Braised tofu",
-        "Rice"
+        "豚バラ肉丼",
+        "煮卵",
+        "煮豆腐",
+        "ご飯"
       ],
       "tags": [
-        "local",
-        "jinan-cuisine",
-        "budget",
-        "quick",
-        "must-try"
+        "地元",
+        "済南料理",
+        "安い",
+        "クイック",
+        "必食"
       ],
       "imageUrl": "/img/ext/3f66b2cad520.webp",
       "phone": "+86 053 1 2040 4614"
@@ -1365,147 +1365,147 @@
     {
       "id": "jinan-7",
       "name": "甜沫",
-      "nameEn": "Tian Mo",
-      "type": "local",
-      "cuisine": "Jinan Breakfast",
+      "nameEn": "天漠",
+      "type": "ローカル",
+      "cuisine": "済南朝食",
       "avgPrice": 20,
       "rating": 4.6,
-      "address": "Old City District",
+      "address": "旧城区",
       "coordinates": {
         "lat": 36.6612,
         "lng": 117.0294
       },
       "hours": "06:00-10:00",
-      "description": "Famous Jinan breakfast - savory millet porridge with peanuts, tofu, and vegetables.",
+      "description": "済南名物朝食 - ピーナッツ、豆腐、野沢菜入りほんのり塩味の粟粥",
       "dishHighlights": [
-        "Sweet millet porridge",
-        "Fried dough sticks",
-        "Buns",
-        "Soy milk"
+        "甘粟粥",
+        "油条",
+        "肉まん",
+        "豆乳"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "traditional",
-        "budget"
+        "地元",
+        "朝食",
+        "伝統的",
+        "割安"
       ],
       "imageUrl": "/img/ext/0b75f085d914.png",
       "phone": "+86 053 1 2028 6987"
     },
     {
       "id": "jinan-8",
-      "name": "九转大肠",
-      "nameEn": "Jiu Zhuan Da Chang",
-      "type": "local",
-      "cuisine": "Shandong",
+      "name": "九転大腸（豚の腸の煮込み）",
+      "nameEn": "九転大巴",
+      "type": "ローカル",
+      "cuisine": "山東料理",
       "avgPrice": 80,
       "rating": 4.4,
-      "address": "Lixia District",
+      "address": "歴下区",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0294
       },
       "hours": "11:00-21:00",
-      "description": "Classic Shandong dish - braised pig intestine cooked in nine transformations.",
+      "description": "山東の伝統的な料理 - 煮込んだ豚の腸を9つの過程で調理したもの",
       "dishHighlights": [
-        "Nine-transformed intestine",
-        "Sweet and sour flavor",
-        "Crispy texture"
+        "九転腸",
+        "甘酸っぱい味",
+        "サクサクした食感"
       ],
       "tags": [
-        "local",
-        "shandong-cuisine",
-        "traditional",
-        "adventurous"
+        "地元の",
+        "山東料理",
+        "伝統的",
+        "冒険的な"
       ],
       "imageUrl": "/img/ext/86d7ee78c3ed.webp",
       "phone": "+86 053 1 6441 7006"
     },
     {
       "id": "jinan-9",
-      "name": "山东大煎饼",
-      "nameEn": "Shandong Crepe",
-      "type": "local",
-      "cuisine": "Shandong",
+      "name": "山東大煎餅（山東風クレープ）",
+      "nameEn": "山東煎餅",
+      "type": "ローカル",
+      "cuisine": "山東",
       "avgPrice": 15,
       "rating": 4.5,
-      "address": "Various locations",
+      "address": "各所",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0194
       },
       "hours": "06:00-14:00",
-      "description": "Thick crepe filled with scallions, vegetables, and various toppings.",
+      "description": "ネギ、野菜、様々なトッピングを包んだ分厚いクレープ。",
       "dishHighlights": [
-        "Shandong crepe",
-        "Savory filling",
-        "Classic breakfast"
+        "山東煎餅",
+        "風味豊かな具",
+        "定番朝食"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "street-food",
-        "budget"
+        "ローカル",
+        "朝ごはん",
+        "屋台料理",
+        "格安"
       ],
       "imageUrl": "/img/ext/759f92c161e0.webp",
       "phone": "+86 053 1 7596 2660"
     },
     {
       "id": "jinan-10",
-      "name": "春江饭店",
-      "nameEn": "Chun Jiang Restaurant",
-      "type": "local",
-      "cuisine": "Shandong",
+      "name": "春江飯店",
+      "nameEn": "春江レストラン",
+      "type": "ローカル",
+      "cuisine": "山東",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "96 Quancheng Road, Lixia District",
+      "address": "96泉城路、歴下区",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0194
       },
       "phone": "+86 531 8691 2345",
       "hours": "10:30-21:30",
-      "description": "Popular restaurant serving authentic Shandong cuisine in central location.",
+      "description": "中央勤務地で本格的な山東料理を提供する人気レストラン",
       "dishHighlights": [
-        "Shandong style seafood",
-        "Jinan noodles",
-        "Braised dishes",
-        "Fresh vegetables"
+        "山東風海鮮",
+        "濟南ラーメン",
+        "煮込み料理",
+        "新鮮な野菜"
       ],
       "tags": [
-        "local",
-        "shandong-cuisine",
-        "central",
-        "reliable"
+        "ローカル",
+        "山東料理",
+        "中心部",
+        "信頼できる"
       ],
       "imageUrl": "/img/ext/45fcc7a963a5.webp"
     },
     {
       "id": "jinan-11",
-      "name": "崔鸭",
-      "nameEn": "Cui Duck",
-      "type": "local",
-      "cuisine": "Jinan Roast Duck",
+      "name": "崔鴨（鴨料理）",
+      "nameEn": "クリーダック",
+      "type": "ローカル",
+      "cuisine": "済南のローストダック",
       "avgPrice": 120,
       "rating": 4.6,
-      "address": "Shizhong District",
+      "address": "市中区",
       "coordinates": {
         "lat": 36.6212,
         "lng": 117.0194
       },
       "hours": "11:00-21:00",
-      "description": "Famous roast duck restaurant with crispy skin and traditional preparation.",
+      "description": "有名な北京ダックレストランで、皮がパリパリで伝統的な調理法を採用しています。",
       "dishHighlights": [
-        "Roast duck",
-        "Pancakes",
-        "Cucumber and scallion",
-        "Duck soup"
+        "焼き鴨",
+        "パンケーキ",
+        "キュウリとネギ",
+        "ダックスープ"
       ],
       "tags": [
-        "local",
-        "famous",
-        "roast-duck",
-        "traditional"
+        "ローカル",
+        "有名",
+        "北京ダック",
+        "伝統的"
       ],
       "imageUrl": "/img/ext/6756df00e98e.png",
       "phone": "+86 053 1 4858 7594"
@@ -1513,29 +1513,29 @@
     {
       "id": "jinan-12",
       "name": "老董家",
-      "nameEn": "Lao Dong's",
-      "type": "local",
-      "cuisine": "Jinan Home Style",
+      "nameEn": "老東の店",
+      "type": "ローカル",
+      "cuisine": "済南家庭料理",
       "avgPrice": 70,
       "rating": 4.6,
-      "address": "Near Daming Lake",
+      "address": "大明湖付近",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0194
       },
       "hours": "10:30-21:00",
-      "description": "Popular home-style restaurant with cozy atmosphere and local favorites.",
+      "description": "居心地の良い雰囲気と地元の人気料理を提供する人気の家庭料理レストラン。",
       "dishHighlights": [
-        "Home-style dishes",
-        "Braised pork",
-        "Fish dishes",
-        "Seasonal vegetables"
+        "家庭料理",
+        "紅焼肉",
+        "魚料理",
+        "季節の野菜"
       ],
       "tags": [
-        "local",
-        "home-style",
-        "cozy",
-        "value"
+        "ローカル",
+        "家庭料理",
+        "居心地良好",
+        "コストパフォーマンス"
       ],
       "imageUrl": "/img/ext/75cc963484f4.webp",
       "phone": "+86 053 1 2112 4253"
@@ -1543,60 +1543,60 @@
     {
       "id": "jinan-13",
       "name": "金三杯",
-      "nameEn": "Jin San Bei",
-      "type": "blackpearl",
+      "nameEn": "金三杯",
+      "type": "黒真珠",
       "diamond": 1,
-      "cuisine": "Shandong",
+      "cuisine": "山東",
       "avgPrice": 250,
       "rating": 4.8,
-      "address": "666 Luoyuan Avenue, Lixia District",
+      "address": "洛源大通り666番地、歴下区",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0294
       },
       "phone": "+86 531 8692 8888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "One-diamond restaurant with elegant setting and refined Shandong imperial cuisine.",
+      "description": "エレガントな内装と洗練された山東宮廷料理を提供する一ツ星レストラン。",
       "dishHighlights": [
-        "Imperial cuisine",
-        "Shandong seafood",
-        "Braised abalone",
-        "Bird's nest"
+        "宮廷料理",
+        "山東海鮮",
+        "煮アワビ",
+        "ツバメの巣"
       ],
       "tags": [
-        "fine-dining",
-        "shandong-cuisine",
-        "luxury",
-        "special-occasion"
+        "高級レストラン",
+        "山東料理",
+        "奢侈",
+        "特別な機会"
       ],
       "imageUrl": "/img/ext/c5d8bf47ba21.webp"
     },
     {
       "id": "jinan-14",
       "name": "外婆桥",
-      "nameEn": "Grandma's Bridge",
-      "type": "local",
-      "cuisine": "Jinan Snacks",
+      "nameEn": "おばあちゃんの橋",
+      "type": "ローカル",
+      "cuisine": "済南小吃",
       "avgPrice": 50,
       "rating": 4.4,
-      "address": "Near Quancheng Road",
+      "address": "泉城路近く",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0194
       },
       "hours": "10:00-22:00",
-      "description": "Popular snack restaurant with variety of Jinan street foods and small dishes.",
+      "description": "済南の屋台料理や小皿料理が豊富に揃う人気の軽食レストラン。",
       "dishHighlights": [
-        "Spring rolls",
-        "Dumplings",
-        "Noodles",
-        "Fried snacks"
+        "春巻き",
+        "餃子",
+        "ラーメン",
+        "揚げスナック"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "variety",
-        "casual"
+        "ローカル",
+        "軽食",
+        " متنوعة",
+        "カジュアル"
       ],
       "imageUrl": "/img/ext/706844e3ea22.webp",
       "phone": "+86 053 1 4589 3566"
@@ -1604,59 +1604,59 @@
     {
       "id": "jinan-15",
       "name": "燕喜堂",
-      "nameEn": "Yan Xi Tang",
-      "type": "local",
-      "cuisine": "Shandong",
+      "nameEn": "燕喜堂",
+      "type": "ローカル",
+      "cuisine": "山東",
       "avgPrice": 150,
       "rating": 4.7,
-      "address": "128 Quancheng Road, Lixia District",
+      "address": "泉城路128番地、歴下区",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0194
       },
       "phone": "+86 531 8693 4567",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Historic restaurant established 1932, famous for traditional Shandong cuisine.",
+      "description": "1932年創業の歴史あるレストランで、伝統的な山東料理で有名です。",
       "dishHighlights": [
-        "Classic Shandong dishes",
-        "Braised sea cucumber",
-        "Jinan style fish",
-        "Seasonal menu"
+        "伝統的な山東料理",
+        "煮海鼠",
+        "済南風味の魚",
+        "季節メニュー"
       ],
       "tags": [
-        "local",
-        "historic",
-        "shandong-cuisine",
-        "traditional"
+        "ローカル",
+        "歴史的",
+        "山東料理",
+        "伝統的"
       ],
       "imageUrl": "/img/ext/7a54a848a581.webp"
     },
     {
       "id": "jinan-16",
-      "name": "金拱门",
-      "nameEn": "Golden Arch",
-      "type": "chain",
-      "cuisine": "Western Fast Food",
+      "name": "金拱門（マクドナルド）",
+      "nameEn": "ゴールデンアーチ",
+      "type": "チェーン店",
+      "cuisine": "西洋ファストフード",
       "avgPrice": 50,
       "rating": 4.2,
-      "address": "Multiple locations",
+      "address": "市内複数箇所",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0194
       },
       "hours": "07:00-23:00",
-      "description": "International fast food chain - familiar refuge when needed.",
+      "description": "国際的なファストフードチェーン - 必要なときに頼れる馴染みの避難所。",
       "dishHighlights": [
-        "Burgers",
-        "Fries",
-        "Chicken nuggets",
-        "Coffee"
+        "ハンバーガー",
+        "フライドポテト",
+        "チキンナゲット",
+        "コーヒー"
       ],
       "tags": [
-        "chain",
-        "western",
-        "familiar",
-        "quick"
+        "チェーン店",
+        "西洋風",
+        "お馴染みの味",
+        "クイック"
       ],
       "imageUrl": "/img/ext/34953e984f8f.webp",
       "phone": "+86 053 1 7743 6055"
@@ -1664,60 +1664,60 @@
     {
       "id": "jinan-17",
       "name": "海底捞",
-      "nameEn": "Haidilao Hotpot",
-      "type": "chain",
-      "cuisine": "Hotpot",
+      "nameEn": "海底撈火鍋",
+      "type": "チェーン店",
+      "cuisine": "火鍋",
       "avgPrice": 150,
       "rating": 4.8,
-      "address": "MixC Mall, Lixia District",
+      "address": "ミクスマール、リシャ区",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0294
       },
       "phone": "+86 531 8694 9999",
-      "hours": "24 hours",
-      "description": "Famous chain hotpot with exceptional service, free snacks, and manicotti.",
+      "hours": "24時間営業",
+      "description": "有名なチェーン火鍋店で、優れたサービス、無料スナック、マニトが楽しめます。",
       "dishHighlights": [
-        "Spicy and mild broth",
-        "Fresh beef",
-        "Hand-pulled noodles",
-        "Free dessert"
+        "辛いスープとマイルドなスープ",
+        "新鮮な牛肉",
+        "手引ラーメン",
+        "無料のデザート"
       ],
       "tags": [
-        "chain",
-        "hotpot",
-        "service",
-        "entertainment",
-        "late-night"
+        "チェーン店",
+        "火鍋",
+        "サービス",
+        "エンターテイメント",
+        "深夜"
       ],
       "imageUrl": "/img/ext/1beaa4ec0924.webp"
     },
     {
       "id": "jinan-18",
       "name": "鼎泰丰",
-      "nameEn": "Din Tai Fung",
-      "type": "chain",
-      "cuisine": "Taiwanese",
+      "nameEn": "ディンタイフォン",
+      "type": "チェーン店",
+      "cuisine": "台湾料理",
       "avgPrice": 120,
       "rating": 4.6,
-      "address": "MixC Mall, Lixia District",
+      "address": "ミクスマール、リシャ区",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0294
       },
       "hours": "10:00-21:30",
-      "description": "World-famous Taiwanese dumpling chain with excellent xiaolongbao.",
+      "description": "世界的に有名な台湾の小籠包チェーンで、絶品の小籠包が楽しめます。",
       "dishHighlights": [
-        "Xiaolongbao",
-        "Fried rice",
-        "Noodles",
-        "Desserts"
+        "小籠包",
+        "チャーハン",
+        "ラーメン",
+        "デザート"
       ],
       "tags": [
-        "chain",
-        "taiwanese",
-        "dumplings",
-        "quality"
+        "チェーン店",
+        "台湾料理",
+        "餃子",
+        "品質"
       ],
       "imageUrl": "/img/ext/f38720936e10.webp",
       "phone": "+86 053 1 8306 7864"
@@ -1725,210 +1725,210 @@
     {
       "id": "jinan-19",
       "name": "南京大牌档",
-      "nameEn": "Nanjing Restaurant",
-      "type": "chain",
-      "cuisine": "Jiangsu",
+      "nameEn": "南京レストラン",
+      "type": "チェーン店",
+      "cuisine": "江蘇料理",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Daming Lake area",
+      "address": "大明湖エリア",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0194
       },
       "hours": "11:00-22:00",
-      "description": "Popular chain serving Jiangsu cuisine in traditional atmosphere.",
+      "description": "伝統的な雰囲気の中で江蘇料理を提供する人気のチェーン店。",
       "dishHighlights": [
-        "Duck blood soup",
-        "Salt duck",
-        "Steamed dumplings",
-        "Jiangsu dishes"
+        "血鴨汁",
+        "塩漬けアヒル",
+        "蒸し餃子",
+        "江蘇料理"
       ],
       "tags": [
-        "chain",
-        "jiangsu-cuisine",
-        "traditional",
-        "atmospheric"
+        "チェーン店",
+        "江蘇料理",
+        "伝統的",
+        "情緒的"
       ],
       "imageUrl": "/img/ext/2b02a2d279a0.webp",
       "phone": "+86 053 1 9709 0047"
     },
     {
       "id": "jinan-20",
-      "name": "威尼斯西餐厅",
-      "nameEn": "Venice Western Restaurant",
-      "type": "fine",
-      "cuisine": "Italian",
+      "name": "威尼斯西餐廳（ベネチアンレストラン）",
+      "nameEn": "ヴェネツィア西洋料理レストラン",
+      "type": "本格的",
+      "cuisine": "イタリアン",
       "avgPrice": 200,
       "rating": 4.4,
-      "address": "Shangri-La Hotel, Lixia District",
+      "address": "シャングリ・ラホテル、リシャ区",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0394
       },
       "phone": "+86 531 8695 6789",
       "hours": "11:30-14:30, 18:00-22:00",
-      "description": "Italian restaurant in Shangri-La with elegant setting and authentic cuisine.",
+      "description": "シャングリ・ラ内にあるイタリアンレストランで、エレガントな内装と本格的な料理が楽しめます。",
       "dishHighlights": [
-        "Pasta",
-        "Pizza",
-        "Risotto",
-        "Italian wine"
+        "パスタ",
+        "ピザ",
+        "リゾット",
+        "イタリアンワイン"
       ],
       "tags": [
-        "fine-dining",
-        "italian",
-        "luxury",
-        "romantic"
+        "高級レストラン",
+        "イタリアン",
+        "奢侈",
+        "ロマンチック"
       ],
       "imageUrl": "/img/ext/0461404e221d.webp"
     },
     {
       "id": "jinan-21",
       "name": "犹太牛肉面",
-      "nameEn": "Jewish Beef Noodles",
-      "type": "local",
-      "cuisine": "Halal",
+      "nameEn": "ユダヤ風牛肉麺",
+      "type": "ローカル",
+      "cuisine": "ハラール",
       "avgPrice": 45,
       "rating": 4.7,
-      "address": "Near Quancheng Road",
+      "address": "泉城路近く",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0194
       },
       "hours": "07:00-20:00",
-      "description": "Popular halal noodle shop with authentic Muslim Chinese cuisine.",
+      "description": "人気のあるハラール麺店で、本場のムスリム中華料理が楽しめます。",
       "dishHighlights": [
-        "Beef noodles",
-        "Lamb skewers",
-        "Hand-pulled noodles",
-        "Fried rice"
+        "牛肉麺",
+        "羊肉串",
+        "手引ラーメン",
+        "チャーハン"
       ],
       "tags": [
-        "local",
-        "halal",
-        "noodles",
-        "budget",
-        "muslim"
+        "ローカル",
+        "ハラール",
+        "麺類",
+        "格安",
+        "イスラム料理"
       ],
       "imageUrl": "/img/ext/53ee86847678.webp",
       "phone": "+86 053 1 9147 2305"
     },
     {
       "id": "jinan-22",
-      "name": "东来顺",
-      "nameEn": "Dong Lai Shun",
-      "type": "chain",
-      "cuisine": "Mongolian Hotpot",
+      "name": "東来順",
+      "nameEn": "東来順",
+      "type": "チェーン店",
+      "cuisine": "蒙古鍋",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "Lixia District",
+      "address": "歴下区",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0294
       },
       "phone": "+86 531 8696 1234",
       "hours": "10:30-22:00",
-      "description": "Famous Mongolian hotpot chain with premium lamb and traditional broth.",
+      "description": "有名なモンゴル火鍋チェーンで、プレミアムなラム肉と伝統的なスープが楽しめます。",
       "dishHighlights": [
-        "Mongolian lamb",
-        "Hotpot",
-        "Traditional broth",
-        "Variety of toppings"
+        "モンゴル産ラム肉",
+        "火鍋",
+        "伝統的な出汁",
+        "様々なトッピング"
       ],
       "tags": [
-        "chain",
-        "hotpot",
-        "mongolian",
-        "premium"
+        "チェーン店",
+        "火鍋",
+        "モンゴル風",
+        "プレミアム"
       ],
       "imageUrl": "/img/ext/6158dc9ee5c6.webp"
     },
     {
       "id": "jinan-23",
       "name": "三义和",
-      "nameEn": "San Yi He",
-      "type": "local",
-      "cuisine": "Shandong",
+      "nameEn": "サンイーヘー",
+      "type": "ローカル",
+      "cuisine": "山東",
       "avgPrice": 120,
       "rating": 4.5,
-      "address": "Shizhong District",
+      "address": "市中区",
       "coordinates": {
         "lat": 36.6212,
         "lng": 117.0194
       },
       "phone": "+86 531 8697 4567",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Established restaurant with classic Shandong dishes and historic atmosphere.",
+      "description": "歴史あるレストランで、クラシックな山東料理と歴史的な雰囲気が楽しめます。",
       "dishHighlights": [
-        "Shandong classic dishes",
-        "Braised prawns",
-        "Sweet and sour carp",
-        "Seasonal dishes"
+        "山東のクラシック料理",
+        "エビの醤油煮込み",
+        "甘酸っぱい鯉",
+        "季節のおすすめ"
       ],
       "tags": [
-        "local",
-        "shandong-cuisine",
-        "historic",
-        "classic"
+        "ローカル",
+        "山東料理",
+        "歴史的",
+        "クラシック"
       ],
       "imageUrl": "/img/ext/2958ae69d93c.webp"
     },
     {
       "id": "jinan-24",
-      "name": "鲁信宫",
-      "nameEn": "Lu Xin Gong",
-      "type": "fine",
-      "cuisine": "Imperial Shandong",
+      "name": "魯信宮",
+      "nameEn": "ルーシンゴン",
+      "type": "本格的",
+      "cuisine": "山東宮廷料理",
       "avgPrice": 300,
       "rating": 4.8,
-      "address": "666 East Road, Lixia District",
+      "address": "歴下区東路666号",
       "coordinates": {
         "lat": 36.6312,
         "lng": 117.0694
       },
       "phone": "+86 531 8698 8888",
       "hours": "11:30-14:00, 17:30-21:00",
-      "description": "High-end imperial Shandong restaurant with elaborate décor and premium service.",
+      "description": "高級な山東宮廷料理レストランで、凝った内装と上質なサービスを提供しています。",
       "dishHighlights": [
-        "Imperial feast",
-        "Bird's nest soup",
-        "Shark fin",
-        "Premium seafood"
+        "宮廷盛宴",
+        "燕窩",
+        "フカヒレ",
+        "プレミアムシーフード"
       ],
       "tags": [
-        "fine-dining",
-        "luxury",
-        "imperial",
-        "special-occasion"
+        "高級レストラン",
+        "奢侈",
+        "宮廷",
+        "特別な機会"
       ],
       "imageUrl": "/img/ext/5fcadcf60ef6.webp"
     },
     {
       "id": "jinan-25",
-      "name": "济南味道",
-      "nameEn": "Jinan Flavor",
-      "type": "local",
-      "cuisine": "Jinan",
+      "name": "済南の味",
+      "nameEn": "済南風味",
+      "type": "ローカル",
+      "cuisine": "済南料理",
       "avgPrice": 90,
       "rating": 4.5,
-      "address": "Near Baotu Spring",
+      "address": "バオトゥ泉近く",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0294
       },
       "hours": "10:30-21:30",
-      "description": "Restaurant dedicated to Jinan cuisine with focus on local culinary traditions.",
+      "description": "済南の料理に特化したレストランで、地元の食文化の伝統に焦点を当てています。",
       "dishHighlights": [
-        "Jinan specialty dishes",
-        "Spring water tofu",
-        "Local seafood",
-        "Traditional recipes"
+        "済南の名物料理",
+        "泉の水豆腐",
+        "地元の海鮮料理",
+        "伝統レシピ"
       ],
       "tags": [
-        "local",
-        "jinan-cuisine",
-        "traditional",
-        "specialty"
+        "ローカル",
+        "済南料理",
+        "伝統的",
+        "名物"
       ],
       "imageUrl": "/img/ext/2b02a2d279a0.webp",
       "phone": "+86 053 1 2321 4163"
@@ -1937,27 +1937,27 @@
       "id": "jinan-26",
       "name": "地道把子肉",
       "nameEn": "地道把子肉 (把子肉)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "把子肉",
       "avgPrice": 122,
       "rating": 4.1,
-      "address": "济南市老城区美食街76号",
+      "address": "済南市旧市街地グルメ通り76号",
       "coordinates": {
         "lat": 36.674,
         "lng": 117.0938
       },
       "phone": "+86 0531 82623974",
       "hours": "10:00-22:00",
-      "description": "济南本地人推荐的把子肉店，味道正宗，价格实惠",
+      "description": "済南の地元民おすすめの把子肉（バーズーロー）店。味は本格的で、価格もお手頃",
       "dishHighlights": [
         "甜沫",
         "油旋",
-        "九转大肠"
+        "九転大腸（豚の腸の煮込み）"
       ],
       "tags": [
-        "性价比高",
-        "排队王",
-        "老字号"
+        "コスパ最高",
+        "行列のできる店",
+        "老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/23f6c2f4f5ad.webp"
@@ -1966,27 +1966,27 @@
       "id": "jinan-28",
       "name": "正宗油旋",
       "nameEn": "正宗油旋 (油旋)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "油旋",
       "avgPrice": 144,
       "rating": 4.5,
-      "address": "济南市老城区美食街196号",
+      "address": "済南市旧市街地グルメ通り196号",
       "coordinates": {
         "lat": 36.6038,
         "lng": 117.0869
       },
       "phone": "+86 0531 42564580",
       "hours": "09:00-21:00",
-      "description": "济南本地人推荐的油旋店，味道正宗，价格实惠",
+      "description": "済南の地元民おすすめの油旋（ヨウシュエン）店。味は本格的で、価格もお手頃",
       "dishHighlights": [
         "甜沫",
         "油旋",
-        "九转大肠"
+        "九転大腸（豚の腸の煮込み）"
       ],
       "tags": [
-        "本地人爱去",
-        "排队王",
-        "隐藏美食"
+        "地元の人に人気",
+        "行列のできる店",
+        "隠れた名店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/3e8607ae7dc8.webp"
@@ -1995,142 +1995,142 @@
       "id": "jinan-30",
       "name": "阿婆把子肉",
       "nameEn": "阿婆把子肉 (把子肉)",
-      "type": "street",
+      "type": "ストリート",
       "cuisine": "把子肉",
       "avgPrice": 29,
       "rating": 4.8,
-      "address": "济南市新城区美食街25号",
+      "address": "済南市新市街地グルメ通り25号",
       "coordinates": {
         "lat": 36.6322,
         "lng": 117.1391
       },
       "phone": "+86 0531 85685144",
       "hours": "06:00-14:00",
-      "description": "济南本地人推荐的把子肉店，味道正宗，价格实惠",
+      "description": "済南の地元民おすすめの把子肉（バーズーロー）店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "九转大肠",
-        "糖醋鲤鱼",
+        "九転大腸（豚の腸の煮込み）",
+        "糖醋鯉魚（甘酢鯉の唐揚げ）",
         "甜沫"
       ],
       "tags": [
-        "路边摊",
+        "屋台",
         "小吃",
-        "网红打卡"
+        "インスタ映えスポット"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/982f6f6bc0e3.webp"
     },
     {
       "id": "jinan-32",
-      "name": "阿婆九转大肠",
-      "nameEn": "阿婆九转大肠 (九转大肠)",
-      "type": "street",
-      "cuisine": "九转大肠",
+      "name": "阿婆九転大腸（アポー九転大腸）",
+      "nameEn": "阿婆九転大腸（九転大腸）",
+      "type": "ストリート",
+      "cuisine": "九転大腸（豚の腸の煮込み）",
       "avgPrice": 46,
       "rating": 4.3,
-      "address": "济南市市中心区美食街156号",
+      "address": "済南市市中心区美食街156号",
       "coordinates": {
         "lat": 36.6522,
         "lng": 117.104
       },
       "phone": "+86 0531 62071944",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "济南本地人推荐的九转大肠店，味道正宗，价格实惠",
+      "description": "済南の地元民おすすめの九転大腸店。味は本格的で、値段も手頃",
       "dishHighlights": [
-        "糖醋鲤鱼",
+        "糖醋鯉魚（甘酢鯉の唐揚げ）",
         "甜沫",
         "油旋"
       ],
       "tags": [
         "小吃",
         "夜市",
-        "路边摊"
+        "屋台"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/23765b2df366.webp"
     },
     {
       "id": "jinan-34",
-      "name": "老济南把子肉",
-      "nameEn": "老济南把子肉 (把子肉)",
-      "type": "local",
+      "name": "老済南把子肉",
+      "nameEn": "老済南把子肉（把子肉）",
+      "type": "ローカル",
       "cuisine": "把子肉",
       "avgPrice": 91,
       "rating": 4.1,
-      "address": "济南市老城区美食街52号",
+      "address": "済南市旧市街美食街52号",
       "coordinates": {
         "lat": 36.6164,
         "lng": 117.1388
       },
       "phone": "+86 0531 43507034",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "济南本地人推荐的把子肉店，味道正宗，价格实惠",
+      "description": "済南の地元民おすすめの把子肉（バーズーロー）店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "九转大肠",
+        "九転大腸（豚の腸の煮込み）",
         "甜沫",
-        "糖醋鲤鱼"
+        "糖醋鯉魚（甘酢鯉の唐揚げ）"
       ],
       "tags": [
-        "社区老店",
-        "老字号",
-        "隐藏美食"
+        "地元の老舗",
+        "老舗",
+        "隠れた名店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/d5ef6a841791.webp"
     },
     {
       "id": "jinan-36",
-      "name": "巷子九转大肠",
-      "nameEn": "巷子九转大肠 (九转大肠)",
-      "type": "street",
-      "cuisine": "九转大肠",
+      "name": "巷子九転大腸",
+      "nameEn": "巷子九転大腸（九転大腸）",
+      "type": "ストリート",
+      "cuisine": "九転大腸（豚の腸の煮込み）",
       "avgPrice": 14,
       "rating": 4.1,
-      "address": "济南市市中心区美食街122号",
+      "address": "済南市市中心区美食街122号",
       "coordinates": {
         "lat": 36.6593,
         "lng": 117.0932
       },
       "phone": "+86 0531 99626335",
       "hours": "09:00-21:00",
-      "description": "济南の人々が推荐的九転大肠専門店。本格的な味で価格は手頃。",
+      "description": "済南の地元民おすすめの九転大腸店。味は本格的で、値段も手頃",
       "dishHighlights": [
-        "九転大肠",
+        "九転大腸（豚の腸の煮込み）",
         "把子肉",
-        "甘酢鯉"
+        "糖醋鯉魚（甘酢鯉の唐揚げ）"
       ],
       "tags": [
-        "映えスポット",
+        "インスタ映えスポット",
         "深夜グルメ",
-        "ナイトマーケット"
+        "夜市"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/b62aa807bbe5.webp"
     },
     {
       "id": "jinan-38",
-      "name": "老济南糖醋鲤鱼",
-      "nameEn": "老济南甘酢鯉 (甘酢鯉)",
-      "type": "street",
-      "cuisine": "甘酢鯉",
+      "name": "老済南糖醋鯉魚",
+      "nameEn": "老済南糖醋鯉魚（糖醋鯉魚）",
+      "type": "ストリート",
+      "cuisine": "糖醋鯉魚（甘酢鯉の唐揚げ）",
       "avgPrice": 24,
       "rating": 4.8,
-      "address": "济南市市中心区美食街113号",
+      "address": "済南市市中心区美食街113号",
       "coordinates": {
         "lat": 36.6803,
         "lng": 117.1641
       },
       "phone": "+86 0531 79121608",
       "hours": "06:00-14:00",
-      "description": "济南の人々が推荐的甘酢鯉専門店。本本格的な味で価格は手頃。",
+      "description": "済南の地元民がおすすめする糖醋鯉魚（スイートビネガー鯉）の店。味は本格的で、価格も手頃。",
       "dishHighlights": [
-        "九転大肠",
-        "糖醋鲤鱼",
+        "九転大腸（豚の腸の煮込み）",
+        "糖醋鯉魚（甘酢鯉の唐揚げ）",
         "把子肉"
       ],
       "tags": [
-        "深夜美食",
-        "路边摊",
+        "深夜グルメ",
+        "屋台",
         "夜市"
       ],
       "diamond": 0,
@@ -2138,57 +2138,57 @@
     },
     {
       "id": "jinan-40",
-      "name": "街边糖醋鲤鱼",
-      "nameEn": "街边糖醋鲤鱼 (糖醋鲤鱼)",
-      "type": "local",
-      "cuisine": "糖醋鲤鱼",
+      "name": "屋台の糖醋鯉魚",
+      "nameEn": "屋台の糖醋鯉魚（糖醋鯉魚）",
+      "type": "ローカル",
+      "cuisine": "糖醋鯉魚（甘酢鯉の唐揚げ）",
       "avgPrice": 142,
       "rating": 4.9,
-      "address": "济南市新城区美食街38号",
+      "address": "済南市新城区美食街38号",
       "coordinates": {
         "lat": 36.6972,
         "lng": 117.1051
       },
       "phone": "+86 0531 80991850",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "济南本地人推荐的糖醋鲤鱼店，味道正宗，价格实惠",
+      "description": "済南の地元民がおすすめする糖醋鯉魚（スイートビネガー鯉）の店。味は本格的で、価格も手頃。",
       "dishHighlights": [
         "把子肉",
-        "九转大肠",
-        "糖醋鲤鱼"
+        "九転大腸（豚の腸の煮込み）",
+        "糖醋鯉魚（甘酢鯉の唐揚げ）"
       ],
       "tags": [
-        "排队王",
-        "家常菜",
-        "在地密着型老店舗"
+        "行列のできる店",
+        "家庭料理",
+        "地元の老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/7d5f6793388b.webp"
     },
     {
       "id": "jinan-42",
-      "name": "街边把子肉",
-      "nameEn": "路地ディズ把子肉（把子肉）",
-      "type": "local",
+      "name": "屋台の把子肉（バーズーロウ）",
+      "nameEn": "屋台の把子肉（把子肉）",
+      "type": "ローカル",
       "cuisine": "把子肉",
       "avgPrice": 125,
       "rating": 4.4,
-      "address": "濟南市新城區美食街106号",
+      "address": "済南市新城区美食街106号",
       "coordinates": {
         "lat": 36.6789,
         "lng": 117.0741
       },
       "phone": "+86 0531 84297367",
       "hours": "17:00-02:00",
-      "description": "濟南在住の方々がおすすめする把子肉店で、味は本格的、価格も手頃です",
+      "description": "済南の地元民おすすめの把子肉（バーズーロー）店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "九転大腸",
-        "糖醋鲤鱼",
+        "九転大腸（豚の腸の煮込み）",
+        "糖醋鯉魚（甘酢鯉の唐揚げ）",
         "把子肉"
       ],
       "tags": [
-        "地元民に人気",
-        "コストパフォーマンス良好",
+        "地元の人に人気",
+        "コスパ最高",
         "家庭料理"
       ],
       "diamond": 0,
@@ -2196,58 +2196,58 @@
     },
     {
       "id": "jinan-44",
-      "name": "地道九转大肠",
-      "nameEn": "本格的な九転大肠（九転大肠）",
-      "type": "local",
-      "cuisine": "九転大肠",
+      "name": "本格九転大腸（豚の腸の煮込み）",
+      "nameEn": "本格九転大腸（九転大腸）",
+      "type": "ローカル",
+      "cuisine": "九転大腸（豚の腸の煮込み）",
       "avgPrice": 54,
       "rating": 4.1,
-      "address": "濟南市市中心部美食街98号",
+      "address": "済南市市中心区美食街98号",
       "coordinates": {
         "lat": 36.6824,
         "lng": 117.1117
       },
       "phone": "+86 0531 56102756",
       "hours": "09:00-21:00",
-      "description": "济南本地人推荐的九转大肠店，味道正宗，价格实惠",
+      "description": "済南の地元民おすすめの九転大腸店。味は本格的で、値段も手頃",
       "dishHighlights": [
         "把子肉",
-        "九转大肠",
+        "九転大腸（豚の腸の煮込み）",
         "油旋"
       ],
       "tags": [
-        "排队王",
-        "社区老店",
-        "家常菜"
+        "行列のできる店",
+        "地元の老舗",
+        "家庭料理"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/eb9080a81ecd.webp"
     },
     {
       "id": "jinan-46",
-      "name": "阿婆九转大肠",
-      "nameEn": "阿婆九转大肠 (九转大肠)",
-      "type": "street",
-      "cuisine": "九转大肠",
+      "name": "阿婆九転大腸（アポー九転大腸）",
+      "nameEn": "阿婆九転大腸（九転大腸）",
+      "type": "ストリート",
+      "cuisine": "九転大腸（豚の腸の煮込み）",
       "avgPrice": 51,
       "rating": 4.8,
-      "address": "济南市老城区美食街171号",
+      "address": "済南市旧城区美食街171号",
       "coordinates": {
         "lat": 36.6819,
         "lng": 117.1287
       },
       "phone": "+86 0531 80415964",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "济南本地人推荐的九转大肠店，味道正宗，价格实惠",
+      "description": "済南の地元民おすすめの九転大腸店。味は本格的で、値段も手頃",
       "dishHighlights": [
         "把子肉",
-        "九转大肠",
+        "九転大腸（豚の腸の煮込み）",
         "油旋"
       ],
       "tags": [
         "小吃",
-        "路边摊",
-        "网红打卡"
+        "屋台",
+        "インスタ映えスポット"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ff1d05539a86.webp"
@@ -2256,114 +2256,114 @@
       "id": "jinan-48",
       "name": "老字号把子肉",
       "nameEn": "老字号把子肉 (把子肉)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "把子肉",
       "avgPrice": 65,
       "rating": 4.4,
-      "address": "济南市新城区美食街159号",
+      "address": "済南市新城区美食街159号",
       "coordinates": {
         "lat": 36.6861,
         "lng": 117.1519
       },
       "phone": "+86 0531 93309933",
       "hours": "09:00-21:00",
-      "description": "济南本地人推荐的把子肉店，味道正宗，价格实惠",
+      "description": "済南の地元民おすすめの把子肉（バーズーロー）店。味は本格的で、価格もお手頃",
       "dishHighlights": [
         "油旋",
         "把子肉",
-        "糖醋鲤鱼"
+        "糖醋鯉魚（甘酢鯉の唐揚げ）"
       ],
       "tags": [
-        "老字号",
-        "排队王",
-        "本地人爱去"
+        "老舗",
+        "行列のできる店",
+        "地元の人に人気"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/42709ea23cc6.webp"
     },
     {
       "id": "jinan-50",
-      "name": "街边油旋",
-      "nameEn": "街边油旋 (油旋)",
-      "type": "street",
+      "name": "街角の油旋",
+      "nameEn": "街角の油旋（油旋）",
+      "type": "ストリート",
       "cuisine": "油旋",
       "avgPrice": 58,
       "rating": 4.2,
-      "address": "济南市市中心区美食街175号",
+      "address": "済南市市中心区美食街175号",
       "coordinates": {
         "lat": 36.6696,
         "lng": 117.078
       },
       "phone": "+86 0531 82167054",
       "hours": "09:00-21:00",
-      "description": "济南本地人推荐的油旋店，味道正宗，价格实惠",
+      "description": "済南の地元民おすすめの油旋（ヨウシュエン）店。味は本格的で、価格もお手頃",
       "dishHighlights": [
         "把子肉",
-        "糖醋鲤鱼",
-        "九转大肠"
+        "糖醋鯉魚（甘酢鯉の唐揚げ）",
+        "九転大腸（豚の腸の煮込み）"
       ],
       "tags": [
-        "路边摊",
-        "网红打卡",
-        "深夜美食"
+        "屋台",
+        "インスタ映えスポット",
+        "深夜グルメ"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/f8463cb3c858.webp"
     },
     {
       "id": "jinan-52",
-      "name": "传统把子肉",
-      "nameEn": "传统把子肉 (把子肉)",
-      "type": "local",
+      "name": "伝統の把子肉",
+      "nameEn": "伝統の把子肉（把子肉）",
+      "type": "ローカル",
       "cuisine": "把子肉",
       "avgPrice": 122,
       "rating": 4.5,
-      "address": "济南市市中心区美食街151号",
+      "address": "済南市市中心区美食街151号",
       "coordinates": {
         "lat": 36.6407,
         "lng": 117.142
       },
       "phone": "+86 0531 71751814",
       "hours": "09:00-21:00",
-      "description": "济南本地人推荐的把子肉店，味道正宗，价格实惠",
+      "description": "済南の地元民おすすめの把子肉（バーズーロー）店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "九转大肠",
-        "糖醋鲤鱼",
+        "九転大腸（豚の腸の煮込み）",
+        "糖醋鯉魚（甘酢鯉の唐揚げ）",
         "把子肉"
       ],
       "tags": [
-        "性价比高",
-        "老字号",
-        "本地人爱去"
+        "コスパ最高",
+        "老舗",
+        "地元の人に人気"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/3876a641f74a.png"
     },
     {
       "id": "jinan-54",
-      "name": "街边油旋",
-      "nameEn": "街边油旋 (油旋)",
-      "type": "local",
+      "name": "街角の油旋",
+      "nameEn": "街角の油旋（油旋）",
+      "type": "ローカル",
       "cuisine": "油旋",
       "avgPrice": 47,
       "rating": 4.4,
-      "address": "济南市市中心区美食街179号",
+      "address": "済南市市中心区美食街179号",
       "coordinates": {
         "lat": 36.6242,
         "lng": 117.1119
       },
       "phone": "+86 0531 84027462",
       "hours": "17:00-02:00",
-      "description": "济南本地人推荐的油旋店，味道正宗，价格实惠",
+      "description": "済南の地元民おすすめの油旋（ヨウシュエン）店。味は本格的で、価格もお手頃",
       "dishHighlights": [
         "把子肉",
-        "糖醋鲤鱼",
-        "九转大肠"
+        "糖醋鯉魚（甘酢鯉の唐揚げ）",
+        "九転大腸（豚の腸の煮込み）"
       ],
       "tags": [
-        "排队王",
-        "社区老店",
-        "家常菜"
+        "行列のできる店",
+        "地元の老舗",
+        "家庭料理"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/74b873bcdf8e.webp"
@@ -2372,56 +2372,56 @@
       "id": "jinan-56",
       "name": "正宗甜沫",
       "nameEn": "正宗甜沫 (甜沫)",
-      "type": "cafe",
+      "type": "カフェ",
       "cuisine": "甜沫",
       "avgPrice": 73,
       "rating": 4.4,
-      "address": "济南市新城区美食街132号",
+      "address": "済南市新城區美食街132号",
       "coordinates": {
         "lat": 36.6281,
         "lng": 117.1568
       },
       "phone": "+86 0531 13193161",
       "hours": "10:00-22:00",
-      "description": "济南本地人推荐的甜沫店，味道正宗，价格实惠",
+      "description": "済南の地元民がおすすめする甜沫（ティエンモー）の店。味は本格的で、価格も手頃。",
       "dishHighlights": [
-        "九转大肠",
+        "九転大腸（豚の腸の煮込み）",
         "甜沫",
         "油旋"
       ],
       "tags": [
-        "安静",
+        "落ち着いた",
         "咖啡",
-        "下午茶"
+        "アフタヌーンティー"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/75cc963484f4.webp"
     },
     {
       "id": "jinan-58",
-      "name": "地道糖醋鲤鱼",
-      "nameEn": "地道糖醋鲤鱼 (糖醋鲤鱼)",
-      "type": "local",
-      "cuisine": "糖醋鲤鱼",
+      "name": "本場の糖醋鯉魚（スイート＆サワー鯉）",
+      "nameEn": "本場の糖醋鯉魚（スイート＆サワー鯉）",
+      "type": "ローカル",
+      "cuisine": "糖醋鯉魚（甘酢鯉の唐揚げ）",
       "avgPrice": 66,
       "rating": 4.6,
-      "address": "济南市新城区美食街73号",
+      "address": "済南市新城區美食街73号",
       "coordinates": {
         "lat": 36.6779,
         "lng": 117.1505
       },
       "phone": "+86 0531 92007718",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "济南本地人推荐的糖醋鲤鱼店，味道正宗，价格实惠",
+      "description": "済南の地元民がおすすめする糖醋鯉魚（スイートビネガー鯉）の店。味は本格的で、価格も手頃。",
       "dishHighlights": [
         "油旋",
-        "九转大肠",
+        "九転大腸（豚の腸の煮込み）",
         "把子肉"
       ],
       "tags": [
-        "隐藏美食",
-        "老字号",
-        "社区老店"
+        "隠れた名店",
+        "老舗",
+        "地元の老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/a6a2b0783059.webp"
@@ -2430,27 +2430,27 @@
       "id": "jinan-60",
       "name": "阿婆油旋",
       "nameEn": "阿婆油旋 (油旋)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "油旋",
       "avgPrice": 126,
       "rating": 4.6,
-      "address": "济南市市中心区美食街59号",
+      "address": "済南市市中心區美食街59号",
       "coordinates": {
         "lat": 36.6275,
         "lng": 117.0781
       },
       "phone": "+86 0531 88209059",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "济南本地人推荐的油旋店，味道正宗，价格实惠",
+      "description": "済南の地元民おすすめの油旋（ヨウシュエン）店。味は本格的で、価格もお手頃",
       "dishHighlights": [
         "甜沫",
-        "糖醋鲤鱼",
-        "九转大肠"
+        "糖醋鯉魚（甘酢鯉の唐揚げ）",
+        "九転大腸（豚の腸の煮込み）"
       ],
       "tags": [
-        "隐藏美食",
-        "排队王",
-        "老字号"
+        "隠れた名店",
+        "行列のできる店",
+        "老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/45b5db893dd3.webp"
@@ -2459,85 +2459,85 @@
       "id": "jinan-62",
       "name": "巷子把子肉",
       "nameEn": "巷子把子肉 (把子肉)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "把子肉",
       "avgPrice": 121,
       "rating": 4.6,
-      "address": "济南市市中心区美食街40号",
+      "address": "済南市市中心區美食街40号",
       "coordinates": {
         "lat": 36.6414,
         "lng": 117.1027
       },
       "phone": "+86 0531 31832670",
       "hours": "09:00-21:00",
-      "description": "济南本地人推荐的把子肉店，味道正宗，价格实惠",
+      "description": "済南の地元民おすすめの把子肉（バーズーロー）店。味は本格的で、価格もお手頃",
       "dishHighlights": [
         "甜沫",
-        "糖醋鲤鱼",
-        "九转大肠"
+        "糖醋鯉魚（甘酢鯉の唐揚げ）",
+        "九転大腸（豚の腸の煮込み）"
       ],
       "tags": [
-        "隐藏美食",
-        "排队王",
-        "家常菜"
+        "隠れた名店",
+        "行列のできる店",
+        "家庭料理"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/bb8230fbc1f5.webp"
     },
     {
       "id": "jinan-64",
-      "name": "济南味糖醋鲤鱼",
-      "nameEn": "济南味糖醋鲤鱼 (糖醋鲤鱼)",
-      "type": "street",
-      "cuisine": "糖醋鲤鱼",
+      "name": "済南風糖醋鯉魚",
+      "nameEn": "済南風糖醋鯉魚（スイート＆サワー鯉）",
+      "type": "ストリート",
+      "cuisine": "糖醋鯉魚（甘酢鯉の唐揚げ）",
       "avgPrice": 12,
       "rating": 4.3,
-      "address": "济南市市中心区美食街188号",
+      "address": "済南市市中心區美食街188号",
       "coordinates": {
         "lat": 36.6589,
         "lng": 117.1072
       },
       "phone": "+86 0531 65503261",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "济南本地人推荐的糖醋鲤鱼店，味道正宗，价格实惠",
+      "description": "済南の地元民がおすすめする糖醋鯉魚（スイートビネガー鯉）の店。味は本格的で、価格も手頃。",
       "dishHighlights": [
-        "九转大肠",
-        "糖醋鲤鱼",
+        "九転大腸（豚の腸の煮込み）",
+        "糖醋鯉魚（甘酢鯉の唐揚げ）",
         "把子肉"
       ],
       "tags": [
-        "路边摊",
+        "屋台",
         "夜市",
-        "网红打卡"
+        "インスタ映えスポット"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ea19be4f7702.webp"
     },
     {
       "id": "jinan-66",
-      "name": "街边甜沫",
-      "nameEn": "街边甜沫 (甜沫)",
-      "type": "local",
+      "name": "街角の甘いスープ",
+      "nameEn": "街角の甘いスープ（甜沫）",
+      "type": "ローカル",
       "cuisine": "甜沫",
       "avgPrice": 59,
       "rating": 4.2,
-      "address": "济南市新城区美食街101号",
+      "address": "済南市新城區美食街101号",
       "coordinates": {
         "lat": 36.6729,
         "lng": 117.1232
       },
       "phone": "+86 0531 14927796",
       "hours": "17:00-02:00",
-      "description": "济南本地人推荐的甜沫店，味道正宗，价格实惠",
+      "description": "済南の地元民がおすすめする甜沫（ティエンモー）の店。味は本格的で、価格も手頃。",
       "dishHighlights": [
-        "糖醋鲤鱼",
+        "糖醋鯉魚（甘酢鯉の唐揚げ）",
         "把子肉",
         "油旋"
       ],
       "tags": [
-        "排队王",
-        "本地人爱去",
-        "社区老店"
+        "行列のできる店",
+        "地元の人に人気",
+        "地元の老舗"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/bea5e585553a.webp"
@@ -2546,26 +2546,26 @@
       "id": "jinan-68",
       "name": "老字号把子肉",
       "nameEn": "老字号把子肉 (把子肉)",
-      "type": "cafe",
+      "type": "カフェ",
       "cuisine": "把子肉",
       "avgPrice": 37,
       "rating": 4.6,
-      "address": "济南市市中心区美食街15号",
+      "address": "済南市市中心区美食街15号",
       "coordinates": {
         "lat": 36.675,
         "lng": 117.1209
       },
       "phone": "+86 0531 68753514",
       "hours": "17:00-02:00",
-      "description": "济南本地人推荐的把子肉店，味道正宗，价格实惠",
+      "description": "済南の地元民おすすめの把子肉（バーズーロー）店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "糖醋鲤鱼",
+        "糖醋鯉魚（甘酢鯉の唐揚げ）",
         "油旋",
         "甜沫"
       ],
       "tags": [
-        "文艺",
-        "下午茶",
+        "おしゃれ",
+        "アフタヌーンティー",
         "咖啡"
       ],
       "diamond": 0,
@@ -2573,20 +2573,20 @@
     },
     {
       "id": "jinan-70",
-      "name": "传统油旋",
-      "nameEn": "传统油旋 (油旋)",
-      "type": "street",
+      "name": "伝統の油旋",
+      "nameEn": "伝統の油旋（油旋）",
+      "type": "ストリート",
       "cuisine": "油旋",
       "avgPrice": 32,
       "rating": 4.1,
-      "address": "济南市新城区美食街33号",
+      "address": "済南市新城區美食街33号",
       "coordinates": {
         "lat": 36.6179,
         "lng": 117.158
       },
       "phone": "+86 0531 37581025",
       "hours": "06:00-14:00",
-      "description": "济南本地人推荐的油旋店，味道正宗，价格实惠",
+      "description": "済南の地元民おすすめの油旋（ヨウシュエン）店。味は本格的で、価格もお手頃",
       "dishHighlights": [
         "甜沫",
         "油旋",
@@ -2594,37 +2594,37 @@
       ],
       "tags": [
         "小吃",
-        "网红打卡",
-        "路边摊"
+        "インスタ映えスポット",
+        "屋台"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/77f65cf31126.webp"
     },
     {
       "id": "jinan-72",
-      "name": "老字号糖醋鲤鱼",
-      "nameEn": "老字号糖醋鲤鱼 (糖醋鲤鱼)",
-      "type": "local",
-      "cuisine": "糖醋鲤鱼",
+      "name": "老舗の糖醋鯉魚",
+      "nameEn": "老舗の糖醋鯉魚（糖醋鯉魚）",
+      "type": "ローカル",
+      "cuisine": "糖醋鯉魚（甘酢鯉の唐揚げ）",
       "avgPrice": 93,
       "rating": 4.7,
-      "address": "济南市市中心区美食街159号",
+      "address": "済南市市中心区美食街159号",
       "coordinates": {
         "lat": 36.6975,
         "lng": 117.1392
       },
       "phone": "+86 0531 16602586",
       "hours": "09:00-21:00",
-      "description": "济南本地人推荐的糖醋鲤鱼店，味道正宗，价格实惠",
+      "description": "済南の地元民がおすすめする糖醋鯉魚（スイートビネガー鯉）の店。味は本格的で、価格も手頃。",
       "dishHighlights": [
         "把子肉",
         "油旋",
         "甜沫"
       ],
       "tags": [
-        "隐藏美食",
-        "社区老店",
-        "本地人爱去"
+        "隠れた名店",
+        "地元の老舗",
+        "地元の人に人気"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/98165ac73638.webp"
@@ -2633,27 +2633,27 @@
       "id": "jinan-74",
       "name": "巷子把子肉",
       "nameEn": "巷子把子肉 (把子肉)",
-      "type": "local",
+      "type": "ローカル",
       "cuisine": "把子肉",
       "avgPrice": 142,
       "rating": 4.8,
-      "address": "济南市新城区美食街95号",
+      "address": "済南市新城区美食街95号",
       "coordinates": {
         "lat": 36.6423,
         "lng": 117.1158
       },
       "phone": "+86 0531 37051211",
       "hours": "10:00-22:00",
-      "description": "济南本地人推荐的把子肉店，味道正宗，价格实惠",
+      "description": "済南の地元民おすすめの把子肉（バーズーロー）店。味は本格的で、価格もお手頃",
       "dishHighlights": [
-        "糖醋鲤鱼",
+        "糖醋鯉魚（甘酢鯉の唐揚げ）",
         "甜沫",
         "油旋"
       ],
       "tags": [
-        "隐藏美食",
-        "性价比高",
-        "排队王"
+        "隠れた名店",
+        "コスパ最高",
+        "行列のできる店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/5620d1659cff.webp"
@@ -2663,602 +2663,617 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major Chinese cities",
-        "to": "Jinan Yaoqiang International Airport (TNA)",
-        "duration": "Varies (1.5h from Beijing, 2h from Shanghai)",
+        "from": "中国の主要都市",
+        "to": "済南遥強国際空港（TNA）",
+        "duration": "所要時間は異なる（北京から1.5時間、上海から2時間）",
         "price": "500-1800¥",
-        "frequency": "Daily flights from major cities",
-        "tips": "Airport 40km from city center. Airport bus (20¥) or taxi (150¥). Metro Line 3 to downtown."
+        "frequency": "主要都市から毎日運航",
+        "tips": "市内中心部から40kmの空港。空港バス（20元）またはタクシー（150元）。地下鉄3号線で都心へ。"
       },
       {
         "type": "train",
-        "from": "Beijing (2h), Shanghai (2.5h), Qingdao (2h)",
-        "to": "Jinan Railway Station / Jinan West Railway Station",
-        "duration": "2-3 hours",
+        "from": "北京（2時間）、上海（2.5時間）、青島（2時間）",
+        "to": "済南駅／済南西駅",
+        "duration": "2〜3時間",
         "price": "150-600¥",
-        "frequency": "Multiple high-speed trains daily",
-        "tips": "Jinan West for high-speed trains. Jinan Station for regular trains. Both have metro connections."
+        "frequency": "1日複数の高速列車",
+        "tips": "高速鉄道は済南西駅、一般列車は済南駅。両駅とも地下鉄に接続しています。"
       }
     ],
     "local": {
       "metro": [
-        "4 lines operational",
-        "Single ride: 2-7¥",
-        "Lines 1, 2 cover most tourist areas",
-        "Connects both stations and airport"
+        "4路線運行中",
+        "1回の乗車：2〜7¥",
+        "1号線・2号線が主要観光エリアをカバー",
+        "両駅と空港を結ぶ"
       ],
       "bus": [
-        "Extensive network",
-        "Single ride: 2¥",
-        "Tourist areas well connected",
-        "Use apps for routes"
+        "広範なネットワーク",
+        "1回の乗車：2¥",
+        "観光エリアへのアクセス良好",
+        "ルート検索にはアプリを使用"
       ],
       "taxi": [
-        "Starting fare: 10¥ (first 3km)",
-        "Night surcharge: 20% extra",
-        "Most attractions 15-40¥",
-        "Didi recommended for English"
+        "初乗り運賃：10¥（最初の3km）",
+        "夜間割増：20%追加",
+        "ほとんどの観光地は15〜40円",
+        "英語対応にはDidiがおすすめ"
       ],
       "bike": [
-        "Mobike, Meituan bikes abundant",
-        "Unlock: 1¥, then 0.5-1¥ per 30 min",
-        "Great for Daming Lake area",
-        "Spring-fed moat path perfect for cycling"
+        "Mobike、Meituanの自転車が豊富",
+        "ロック解除：1円、その後30分ごとに0.5〜1円",
+        "大明湖エリアに最適",
+        "湧水を水源とする堀の道はサイクリングに最適"
       ]
     }
   },
   "hotels": [
     {
-      "name": "济南香格里拉大酒店",
+      "name": "済南シャングリ・ラホテル",
       "nameEn": "Shangri-La Hotel Jinan",
       "budget": "luxury",
-      "priceRange": "¥1200-2500/night",
-      "address": "88 Luoyuan Avenue, Lixia District",
+      "priceRange": "1泊1200〜2500元",
+      "address": "歴下区洛源大街88号",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0294
       },
       "rating": 4.7,
       "highlights": [
-        "Central location",
-        "Luxury facilities",
-        "Lake views",
-        "Multiple dining"
+        "中心部に好立地",
+        "高級設備",
+        "湖の景色",
+        "複数のダイニング"
       ],
-      "bookingTips": "Best location for sightseeing. Book lake view rooms. Famous brunch."
+      "bookingTips": "観光に最適なロケーション。湖側の客室を予約。有名なブランチ。"
     },
     {
-      "name": "济南贵和洲际酒店",
+      "name": "済南貴和洲際酒店",
       "nameEn": "InterContinental Jinan",
       "budget": "luxury",
-      "priceRange": "¥1000-2000/night",
-      "address": "101 Jingyi Road, Lixia District",
+      "priceRange": "1泊1000〜2000元",
+      "address": "歴下区経一路101号",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0394
       },
       "rating": 4.6,
       "highlights": [
-        "Modern luxury",
-        "River views",
-        "High-rise",
-        "Central location"
+        "モダンな高級感",
+        "川の眺望",
+        "高層",
+        "中心部に好立地"
       ],
-      "bookingTips": "Newer property. Great for business. Excellent views."
+      "bookingTips": "新しい施設。ビジネスに最適。眺望が素晴らしい。"
     },
     {
-      "name": "山东大厦",
+      "name": "山東大厦",
       "nameEn": "Shandong Hotel",
       "budget": "luxury",
-      "priceRange": "¥800-1500/night",
-      "address": "19 Luoyuan Avenue, Lixia District",
+      "priceRange": "1泊800〜1500元",
+      "address": "歴下区洛源大街19号",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0294
       },
       "rating": 4.5,
       "highlights": [
-        "Historic luxury",
-        "Near springs",
-        "Central location",
-        "Good service"
+        "歴史ある高級感",
+        "泉の近く",
+        "中心部に好立地",
+        "サービス良好"
       ],
-      "bookingTips": "Good value luxury. Near major attractions. Traditional Chinese hotel."
+      "bookingTips": "お得な高級感。主要観光スポットに近い。伝統的な中国式ホテル。"
     },
     {
-      "name": "济南银座佳悦酒店",
+      "name": "済南銀座佳悦酒店",
       "nameEn": "Jinan Silver Best Hotel",
       "budget": "mid",
-      "priceRange": "¥400-800/night",
-      "address": "66 Quancheng Road, Lixia District",
+      "priceRange": "1泊400〜800元",
+      "address": "歴下区泉城路66号",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0194
       },
       "rating": 4.4,
       "highlights": [
-        "Central location",
-        "Modern rooms",
-        "Metro access",
-        "Good breakfast"
+        "中心部に好立地",
+        "モダンな客室",
+        "地下鉄アクセス",
+        "朝食が良い"
       ],
-      "bookingTips": "Best value in center. Near shopping. Metro nearby."
+      "bookingTips": "中心部で最高のコスパ。ショッピングに近い。地下鉄も近く。"
     },
     {
-      "name": "济南泉城大酒店",
+      "name": "済南泉城大酒店",
       "nameEn": "Jinan Quancheng Hotel",
       "budget": "mid",
-      "priceRange": "¥350-700/night",
-      "address": "88 Quancheng Road, Lixia District",
+      "priceRange": "1泊350〜700元",
+      "address": "歴下区泉城路88号",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0194
       },
       "rating": 4.3,
       "highlights": [
-        "Near Baotu Spring",
-        "Central location",
-        "Traditional style",
-        "Good service"
+        "趵突泉の近く",
+        "中心部に好立地",
+        "伝統的なスタイル",
+        "サービス良好"
       ],
-      "bookingTips": "Perfect for sightseeing. Walk to major springs."
+      "bookingTips": "観光に最適。主要な泉まで徒歩圏内。"
     },
     {
-      "name": "济南蓝海御华酒店",
+      "name": "済南藍海御華酒店",
       "nameEn": "Blue Ocean Hotel Jinan",
       "budget": "mid",
-      "priceRange": "¥300-600/night",
-      "address": "88 Jiefang Road, Lixia District",
+      "priceRange": "1泊300〜600元",
+      "address": "歴下区解放路88号",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0294
       },
       "rating": 4.4,
       "highlights": [
-        "Modern",
-        "Clean rooms",
-        "Good breakfast",
-        "Central"
+        "モダン",
+        "清潔な客室",
+        "朝食が良い",
+        "中心部"
       ],
-      "bookingTips": "Good Chinese hotel chain. Reliable quality."
+      "bookingTips": "良い中国系ホテルチェーン。信頼できる品質。"
     },
     {
-      "name": "济南锦绣泉城酒店",
+      "name": "済南錦繍泉城酒店",
       "nameEn": "Jinan Splendid Spring Hotel",
       "budget": "mid",
-      "priceRange": "¥350-650/night",
-      "address": "168 Luoyuan Avenue, Lixia District",
+      "priceRange": "1泊350〜650元",
+      "address": "歴下区洛源大街168号",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0294
       },
       "rating": 4.5,
       "highlights": [
-        "Lake views",
-        "Modern",
-        "Good restaurant",
-        "Central"
+        "湖の景色",
+        "モダン",
+        "良いレストラン",
+        "中心部"
       ],
-      "bookingTips": "Great views. Near Daming Lake. Good restaurant."
+      "bookingTips": "眺望が素晴らしい。大明湖に近い。レストランも良い。"
     },
     {
-      "name": "济南珍珠泉宾馆",
+      "name": "済南珍珠泉賓館",
       "nameEn": "Jinan Pearl Spring Hotel",
       "budget": "mid",
-      "priceRange": "¥400-700/night",
-      "address": "68 Luoyuan Avenue, Lixia District",
+      "priceRange": "1泊400〜700元",
+      "address": "歴下区洛源大街68号",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0294
       },
       "rating": 4.4,
       "highlights": [
-        "Near Pearl Spring",
-        "Historic",
-        "Garden setting",
-        "Quiet"
+        "真珠泉付近",
+        "歴史的",
+        "庭園環境",
+        "静か"
       ],
-      "bookingTips": "Peaceful location. Great for nature lovers."
+      "bookingTips": "静かな立地。自然愛好家に最適。"
     },
     {
-      "name": "如家酒店济南泉城广场店",
+      "name": "如家酒店済南泉城広場店",
       "nameEn": "Home Inn Jinan Quancheng Square",
       "budget": "budget",
-      "priceRange": "¥150-300/night",
-      "address": "88 Quancheng Road, Lixia District",
+      "priceRange": "1泊150〜300元",
+      "address": "歴下区泉城路88号",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0194
       },
       "rating": 4.2,
       "highlights": [
-        "Central location",
-        "Budget-friendly",
-        "Clean",
-        "Metro access"
+        "中心部に好立地",
+        "リーズナブルな価格",
+        "清潔",
+        "地下鉄アクセス"
       ],
-      "bookingTips": "Best budget option in center. Simple but reliable."
+      "bookingTips": "中心部で最安値の選択肢。シンプルだが信頼できる。"
     },
     {
-      "name": "7天连锁酒店济南泉城路店",
+      "name": "7天連鎖酒店済南泉城路店",
       "nameEn": "7 Days Inn Jinan Quancheng Road",
       "budget": "budget",
-      "priceRange": "¥120-250/night",
-      "address": "66 Quancheng Road, Lixia District",
+      "priceRange": "1泊120〜250元",
+      "address": "歴下区泉城路66号",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0194
       },
       "rating": 4.1,
       "highlights": [
-        "Budget",
-        "Central",
-        "Simple",
-        "Clean"
+        "予算",
+        "中心部",
+        "シンプル",
+        "清潔"
       ],
-      "bookingTips": "Reliable budget chain. Good location."
+      "bookingTips": "信頼できる格安チェーン。立地も良い。"
     },
     {
-      "name": "济南青年旅舍",
+      "name": "済南ユースホステル",
       "nameEn": "Jinan Youth Hostel",
       "budget": "budget",
-      "priceRange": "¥80-200/night",
-      "address": "Near Daming Lake",
+      "priceRange": "1泊80〜200元",
+      "address": "大明湖付近",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0194
       },
       "rating": 4.3,
       "highlights": [
-        "Lake location",
-        "Budget-friendly",
-        "Social atmosphere",
-        "Bike rental"
+        "湖畔のロケーション",
+        "リーズナブルな価格",
+        "社交的な雰囲気",
+        "レンタサイクル"
       ],
-      "bookingTips": "Great for backpackers. English speaking. Bike rental available."
+      "bookingTips": "バックパッカーに最適。英語対応可。レンタサイクルあり。"
     },
     {
-      "name": "济南蓝创极轻旅民宿",
+      "name": "済南藍創極軽旅民宿",
       "nameEn": "Jinan Lanchuang Boutique Homestay",
       "budget": "budget",
-      "priceRange": "¥200-400/night",
-      "address": "Old City District",
+      "priceRange": "1泊200〜400元",
+      "address": "旧市街地区",
       "coordinates": {
         "lat": 36.6612,
         "lng": 117.0294
       },
       "rating": 4.5,
       "highlights": [
-        "Traditional courtyard",
-        "Local experience",
-        "Central",
-        "Authentic"
+        "伝統的な中庭",
+        "地元体験",
+        "中心部",
+        "本格的"
       ],
-      "bookingTips": "Experience traditional Jinan living. Book well ahead."
+      "bookingTips": "伝統的な済南の暮らしを体験。早めの予約を。"
     },
     {
-      "name": "济南舜耕山庄",
+      "name": "済南舜耕山荘",
       "nameEn": "Jinan Shungeng Hotel",
       "budget": "luxury",
-      "priceRange": "¥800-1500/night",
-      "address": "Near Shungeng Mountain",
+      "priceRange": "1泊800〜1500元",
+      "address": "舜耕山付近",
       "coordinates": {
         "lat": 36.6212,
         "lng": 117.0494
       },
       "rating": 4.5,
       "highlights": [
-        "Mountain views",
-        "Historic",
-        "Garden setting",
-        "Traditional"
+        "山の景色",
+        "歴史的",
+        "庭園環境",
+        "伝統的"
       ],
-      "bookingTips": "Great for traditional experience. Book during off-peak."
+      "bookingTips": "伝統体験に最適。オフピーク時に予約を。"
     },
     {
-      "name": "济南喜来登酒店",
+      "name": "済南喜来登酒店",
       "nameEn": "Sheraton Jinan Hotel",
       "budget": "luxury",
-      "priceRange": "¥800-1600/night",
-      "address": "88 Luoyuan Avenue",
+      "priceRange": "1泊800～1600元",
+      "address": "洛源大街88号",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0294
       },
       "rating": 4.6,
       "highlights": [
-        "International brand",
-        "Lake views",
-        "Modern facilities",
-        "Good service"
+        "国際ブランド",
+        "湖の景色",
+        "近代的な設備",
+        "サービス良好"
       ],
-      "bookingTips": "Book lake view rooms. International standard."
+      "bookingTips": "湖側の客室を予約。国際水準。"
     },
     {
-      "name": "济南千佛山酒店",
+      "name": "済南千仏山酒店",
       "nameEn": "Jinan Thousand Buddha Mountain Hotel",
       "budget": "mid",
-      "priceRange": "¥350-600/night",
-      "address": "Near Thousand Buddha Mountain",
+      "priceRange": "1泊350〜600元",
+      "address": "千仏山付近",
       "coordinates": {
         "lat": 36.6212,
         "lng": 117.0494
       },
       "rating": 4.4,
       "highlights": [
-        "Near mountain",
-        "Hiking access",
-        "Modern",
-        "Good value"
+        "山の近く",
+        "ハイキングアクセス",
+        "モダン",
+        "コストパフォーマンスが良い"
       ],
-      "bookingTips": "Perfect for hikers. Book during off-peak."
+      "bookingTips": "ハイカーに最適です。オフピーク時に予約してください。"
     }
   ],
   "payment": [
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Universal in Jinan",
+      "description": "済南で最も普及",
       "howToUse": [
-        "Download before arrival",
-        "Link card"
+        "到着前にダウンロード",
+        "カードを連携"
       ],
       "tips": [
-        "Works at all merchants",
-        "English available"
+        "すべての加盟店で利用可能",
+        "英語対応可能"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Accepted everywhere",
+      "description": "どこでも受け入れられる",
       "howToUse": [
-        "WeChat required",
-        "International cards accepted"
+        "WeChatが必要",
+        "国際カード対応"
       ],
       "tips": [
-        "Set to English mode",
-        "Needed for shared bikes"
+        "英語モードに設定",
+        "シェア自転車に必要"
       ]
     },
     {
       "method": "Cash",
       "icon": "cash",
-      "description": "Useful at traditional markets",
+      "description": "伝統的な市場で便利",
       "howToUse": [
-        "ATM everywhere",
-        "Banks along main streets"
+        "ATMはどこにでもある",
+        "大通りの銀行"
       ],
       "tips": [
-        "Keep 200¥ for markets",
-        "Most restaurants accept cards"
+        "市場用に200元を用意してください",
+        "ほとんどのレストランでカード利用可"
       ]
     }
   ],
   "culturalTips": [
     {
       "category": "history",
-      "title": "Spring City Heritage",
+      "title": "泉城の遺産",
       "content": "済南は72の有名な泉を持つ「泉の都市」と呼ばれています。泉の文化は当地の生活に溶け込んでおり、地元の人々は毎日泉の水を汲み、街はこれらの自然の驚異を中心にアイデンティティを構築しています。",
       "importance": "high"
     },
     {
       "category": "food",
-      "title": "Shandong Cuisine",
+      "title": "山東料理",
       "content": "山東料理は中国八大料理の一つで、新鮮な海産物、素材本来の味へのこだわり、卓越した包丁技術が特徴です。済南の特産品には煮込み料理、スープ、手作り麺があります。",
       "importance": "high"
     },
     {
       "category": "dialect",
-      "title": "Jinan Dialect",
+      "title": "済南方言",
       "content": "済南の方言は冀魯官話の種類で、清晰で理解しやすいことで知られています。標準的な北京語方言の一つとされ、歴史的に北京語の発音に影響を与えてきました。",
       "importance": "low"
     },
     {
       "category": "timing",
-      "title": "Avoiding Crowds",
+      "title": "混雑を避ける",
       "content": "済南の名所は週末に混雑することがあります。趵突泉と大明湖は早朝に訪れるのがをお勧めします。平日の方がかなり静かです。4月の春の花の季節が最も込みます。",
       "importance": "medium"
     },
     {
       "category": "culture",
-      "title": "Spring Water Culture",
-      "content": "済南の地元の人々は饮用や茶のために泉の水を汲む伝統があります。朝早く泉でボトルに水を補充する高齢者を見ることができます。この伝統は地域の人々と自然の遺産を結びつけています。",
+      "title": "泉水文化",
+      "content": "済南の地元の人々は飲用や茶のために泉の水を汲む伝統があります。朝早く泉でボトルに水を補充する高齢者を見ることができます。この伝統は地域の人々と自然の遺産を結びつけています。",
       "importance": "medium"
     },
     {
       "category": "literature",
-      "title": "Literary Legacy",
-      "content": "済南は杜甫、李白、苏轼などの多くの古典詩人にインスピレーションを与えました。「赤encionesへの賦」はここで書かれました。この街は中国文学に頻繁に登場し、自然の美の象徴として描かれています。",
+      "title": "文学遺産",
+      "content": "済南は杜甫、李白、蘇軾など多くの古典詩人にインスピレーションを与えました。「赤壁の賦」はここで書かれました。この街は中国文学に頻繁に登場し、自然の美の象徴として描かれています。",
       "importance": "medium"
     },
     {
       "category": "crafts",
-      "title": "Jinan Crafts",
+      "title": "濟南の手工芸",
       "content": "済南は木版年絵、凧作り（「済南鷲」スタイル особенно）、木影彫りで知られています。この街は民間工芸と芸術作品の強力な伝統を持っています。",
       "importance": "medium"
     },
     {
       "category": "food",
-      "title": "Street Food Culture",
-      "content": "Jinan street food is famous for items like oil spirals (you xuan), sweet millet porridge (tian mo), and braised pork over rice (ba zi rou). The old city lanes have many traditional snack vendors.",
+      "title": "屋台料理文化",
+      "content": "済南の屋台料理は、油らせん（ユーチャルアン）、甘粟粥（ティエンモ）、ご飯の上の煮豚（バーズロウ）などで有名。旧城地区的路地には多くの伝統的な軽食屋台がある",
       "importance": "high"
     },
     {
       "category": "education",
-      "title": "Academic Heritage",
-      "content": "Jinan has been an education center for centuries. Shandong University is a prestigious institution. The city's academic atmosphere contributed to it being the birthplace of many Chinese celebrities and scholars.",
+      "title": "学術遺産",
+      "content": "済南は何世紀にもわたって教育の中心地でした。山東大学は名門校です。この学術的な雰囲気が、中国の多くの有名人や学者の誕生に貢献しました。",
       "importance": "medium"
     },
     {
       "category": "revolutionary",
-      "title": "Revolutionary History",
-      "content": "Jinan was site of the 1928 'Jinan Incident' involving the Nationalist government. Hero Mountain commemorates revolutionary history. The city played important roles in modern Chinese political history.",
+      "title": "革命史",
+      "content": "済南は1928年の「済南事件」の発生地でした。英雄山は革命の歴史を偲びます。この街は中国近代史において重要な役割を果たしました。",
       "importance": "medium"
     },
     {
       "category": "gardens",
-      "title": "Garden Culture",
-      "content": "Like other ancient cities, Jinan has traditional gardens around the springs. The government has preserved many spring pools and built parks. Daming Lake area has classical garden elements and pavilions.",
+      "title": "庭園文化",
+      "content": "他の古代都市と同様に、済南には泉周辺の伝統的な庭園があります。政府は多くの泉池を保存し、公園を整備しました。大明湖エリアには古典的な庭園の要素と楼閣があります。",
       "importance": "medium"
     },
     {
       "category": "tea",
-      "title": "Tea Culture",
-      "content": "Jinan has strong tea culture with local varieties and traditional teahouses. Spring water collected from the springs is traditionally used for tea, making the local brew special. Teahouses around Daming Lake are popular.",
+      "title": "茶文化",
+      "content": "済南には強いお茶文化があり、地元の品種と伝統的な茶館があります。泉から集めた泉 традиционно используется для чая, делая местный настой особенным. 大明湖周辺の茶館は人気があります。",
       "importance": "medium"
     },
     {
       "category": "nightlife",
-      "title": "Modern Jinan",
-      "content": "Jinan has growing nightlife in Lixia District. Quancheng Road and nearby streets have bars, cafes, and KTV. The MixC mall area has international restaurants and entertainment options.",
+      "title": "近代的な済南",
+      "content": "済南は歴下区を中心にナイトライフが発展しています。泉城路とその周辺の通りにはバー、カフェ、KTVがあります。万象城ショッピングセンター周辺には国際的なレストランやエンターテイメントの選択肢があります。",
       "importance": "low"
     },
     {
       "category": "weather",
-      "title": "Seasonal Weather",
-      "content": "Jinan has four distinct seasons. Spring (April-May) is best for flowers and springs. Autumn (September-October) offers foliage. Summers are hot (30C+) and humid. Winters cold (0C average) but sunny with occasional snow.",
+      "title": "季節の天気",
+      "content": "済南は四季がはっきりしています。春（4月-5月）は花と泉に最適です。秋（9月-10月）は紅葉が楽しめます。夏は暑く（30度以上）湿気があります。冬は寒い（平均0度）ですが晴れが多く、雪が降ることがあります。",
       "importance": "medium"
     },
     {
       "category": "transportation",
-      "title": "Getting Around",
-      "content": "Jinan's metro covers major tourist areas but not all attractions. Bikes are excellent for Daming Lake and spring areas. Walking is pleasant in the old city around springs. Didi works well for direct routes.",
+      "title": "観光の回り方",
+      "content": "済南の地下鉄は主要な観光エリアをカバーしていますが、すべての観光地ではありません。大明湖と泉エリアには自転車が最適です。泉周辺の古い街並みを歩くのは快適です。ディディは直通ルートに便利です。",
       "importance": "medium"
     }
   ],
   "emergencyContacts": [
     {
       "type": "ambulance",
-      "name": "济南急救中心",
-      "nameEn": "Jinan Emergency Center",
+      "name": "済南救急センター",
+      "nameEn": "在広州シンガポール総領事館",
       "phone": "120",
-      "notes": "Major hospitals have English interpretation"
+      "notes": "主要病院では英語通訳が利用可能",
+      "nameJa": "済南救急センター"
     },
     {
       "type": "police",
-      "name": "济南市公安局",
+      "name": "済南市公安局",
       "nameEn": "Jinan Public Security Bureau",
       "phone": "110",
-      "notes": "Tourist police at major attractions"
+      "notes": "主要観光地に観光警察が配置されています",
+      "nameJa": "済南市公安局"
     },
     {
       "type": "hospital",
-      "name": "山东省立医院",
+      "name": "山東省立医院",
       "nameEn": "Shandong Provincial Hospital",
       "phone": "+86 531 8793 8911",
-      "address": "324 Jingwu Road, Lixia District",
+      "address": "歴下区経武路324号",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0394
       },
-      "notes": "English-speaking staff available"
+      "notes": "英語対応スタッフあり",
+      "nameJa": "山東省立医院"
     },
     {
       "type": "hospital",
-      "name": "山东大学齐鲁医院",
+      "name": "山東大学斉魯医院",
       "nameEn": "Qilu Hospital of Shandong University",
       "phone": "+86 531 8216 9266",
-      "address": "107 West Wenhua Road, Lixia District",
+      "address": "歴下区文化西路107号",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0194
       },
-      "notes": "Major teaching hospital with English"
+      "notes": "英語対応可能な主要教育病院",
+      "nameJa": "山東大学斉魯医院"
     },
     {
       "type": "tourist-police",
-      "name": "济南旅游警察",
+      "name": "済南観光警察",
       "nameEn": "Jinan Tourist Police",
       "phone": "+86 531 8791 2345",
-      "notes": "English-speaking tourist police"
+      "notes": "英語対応可能な観光警察",
+      "nameJa": "済南観光警察"
     },
     {
       "type": "fire",
-      "name": "济南消防",
+      "name": "済南消防",
       "nameEn": "Jinan Fire Department",
       "phone": "119",
-      "notes": "Fire and rescue services"
+      "notes": "消防・救助サービス",
+      "nameJa": "済南消防"
     },
     {
       "type": "embassy",
-      "name": "美国驻沈阳总领事馆",
+      "name": "アメリカ合衆国瀋陽総領事館",
       "nameEn": "US Consulate General Shenyang",
       "phone": "+86 24 2322 1947",
-      "address": "Shenyang (serves Jinan region)",
-      "notes": "For US citizens in Jinan region"
+      "address": "瀋陽（済南地域をカバー）",
+      "notes": "済南地域の米国市民向け",
+      "nameJa": "アメリカ合衆国瀋陽総領事館"
     },
     {
       "type": "embassy",
-      "name": "英国驻广州总领事馆",
+      "name": "英国駐広州総領事館",
       "nameEn": "UK Consulate General Guangzhou",
       "phone": "+86 20 8314 3000",
-      "address": "Guangzhou",
-      "notes": "For UK citizens in Jinan region"
+      "address": "広州",
+      "notes": "済南地域の英国市民向け",
+      "nameJa": "英国駐広州総領事館"
     },
     {
       "type": "embassy",
-      "name": "日本驻青岛总领事馆",
+      "name": "在上海日本国総領事館",
       "nameEn": "Japan Consulate General Qingdao",
       "phone": "+86 532 8090 0001",
-      "address": "Qingdao",
-      "notes": "For Japanese citizens in Jinan region"
+      "address": "青島",
+      "notes": "済南地域の日本国民向け",
+      "nameJa": "在上海日本国総領事館"
     },
     {
       "type": "embassy",
-      "name": "德国驻广州总领事馆",
+      "name": "ドイツ駐広州総領事館",
       "nameEn": "Germany Consulate General Guangzhou",
       "phone": "+86 20 8313 0000",
-      "address": "Guangzhou",
-      "notes": "For German citizens in Jinan region"
+      "address": "広州",
+      "notes": "済南地域のドイツ市民向け",
+      "nameJa": "ドイツ駐広州総領事館"
     },
     {
       "type": "embassy",
-      "name": "法国驻广州总领事馆",
+      "name": "フランス駐広州総領事館",
       "nameEn": "France Consulate General Guangzhou",
       "phone": "+86 20 2829 2000",
-      "address": "Guangzhou",
-      "notes": "For French citizens in Jinan region"
+      "address": "広州",
+      "notes": "済南地域のフランス市民向け",
+      "nameJa": "フランス駐広州総領事館"
     },
     {
       "type": "embassy",
-      "name": "澳大利亚驻广州总领事馆",
+      "name": "オーストラリア駐広州総領事館",
       "nameEn": "Australia Consulate General Guangzhou",
       "phone": "+86 20 3814 0100",
-      "address": "Guangzhou",
-      "notes": "For Australian citizens in Jinan region"
+      "address": "広州",
+      "notes": "済南地域のオーストラリア市民向け",
+      "nameJa": "オーストラリア駐広州総領事館"
     },
     {
       "type": "embassy",
-      "name": "加拿大驻广州总领事馆",
+      "name": "カナダ駐広州総領事館",
       "nameEn": "Canada Consulate General Guangzhou",
       "phone": "+86 20 8611 6100",
-      "address": "Guangzhou",
-      "notes": "For Canadian citizens in Jinan region"
+      "address": "広州",
+      "notes": "済南地域のカナダ市民向け",
+      "nameJa": "カナダ駐広州総領事館"
     },
     {
       "type": "embassy",
-      "name": "韩国驻青岛总领事馆",
+      "name": "在上海韓国総領事館",
       "nameEn": "South Korea Consulate General Qingdao",
       "phone": "+86 532 8090 0188",
-      "address": "Qingdao",
-      "notes": "For Korean citizens in Jinan region"
+      "address": "青島",
+      "notes": "済南地域の韓国市民向け",
+      "nameJa": "在上海韓国総領事館"
     },
     {
       "type": "embassy",
-      "name": "新加坡驻上海总领事馆",
+      "name": "在上海シンガポール総領事館",
       "nameEn": "Singapore Consulate General Shanghai",
       "phone": "+86 21 6295 3800",
-      "address": "Shanghai",
-      "notes": "For Singapore citizens in Jinan region"
+      "address": "上海",
+      "notes": "済南地域のシンガポール市民向け",
+      "nameJa": "在上海シンガポール総領事館"
     }
   ],
   "quickFacts": {
-    "language": "Mandarin Chinese, Jinan dialect",
-    "currency": "Chinese Yuan (CNY/RMB)",
-    "visa": "Most nationalities require visa",
-    "timeZone": "UTC+8 (China Standard Time)",
-    "electricity": "220V/50Hz, Type A/I plugs",
-    "water": "Tap water safe after boiling; bottled water recommended"
+    "language": "中国語（マンダリン）",
+    "currency": "人民元 (CNY/RMB)",
+    "visa": "ほとんどの国籍でビザが必要です。対象者は空港で72時間トランジットビザを取得できます。",
+    "timeZone": "UTC+8 (中国標準時)",
+    "electricity": "220V/50Hz、A/I タイププラグ",
+    "water": "水道水は飲めますが、ペットボトル推奨"
   }
 }

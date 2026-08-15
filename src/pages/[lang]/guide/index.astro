@@ -12,126 +12,139 @@ import { getLangFromUrl } from "@/i18n/utils";
 const lang = (Astro.params.lang as string) || "en";
 const showTitleCn = lang === "zh-CN" || lang === "zh-TW";
 
-const pageTitle = translations.en.guidePage?.indexTitle || "Complete Travel Guide to China - ChinaConnect";
-const pageDescription = translations.en.guidePage?.indexDescription || "Complete 12-stage travel guide for China plus business travel essentials.";
+const pageTitle = (translations[lang] || translations.en).guidePage?.indexTitle || "Complete Travel Guide to China - ChinaConnect";
+const pageDescription = (translations[lang] || translations.en).guidePage?.indexDescription || "Complete 12-stage travel guide for China plus business travel essentials.";
+const gp = (translations[lang] || translations.en).guidePage || translations.en.guidePage;
+const bgp = (translations[lang] || translations.en).businessGuidePage || translations.en.businessGuidePage;
+const learnMore = (translations[lang] || translations.en).common?.learnMore || "Learn More";
+const jaStageMap: Record<string, string> = {
+  "Stage 1": "第1段階",
+  "Stages 2 & 10": "第2・10段階",
+  "Stage 3": "第3段階",
+  "Stages 4-7": "第4〜7段階",
+  "Stage 8": "第8段階",
+  "Stage 9": "第9段階",
+  "Stage 11": "第11段階",
+  "Stage 12": "第12段階",
+};
+const stageLabel = (st: string) => (lang === "ja" ? jaStageMap[st] || st : st);
 const guides = [
   {
-    title: "Visa Guide",
+    title: gp.visaTitleShort || "Visa Guide",
     titleCn: "签证指南",
     icon: "📋",
-    description:
-      "Visa requirements, application process, and essential documents for entering China",
+    description: gp.visaSubtitle || "Visa requirements, application process, and essential documents for entering China",
     href: "/guide/visa",
-    stage: "Stage 1",
-    stageDescription: "Pre-departure Preparation",
+    stage: stageLabel("Stage 1"),
+    stageDescription: gp.visaStageDescription || "Pre-departure Preparation",
     color: "blue",
   },
   {
-    title: "Payment Guide",
+    title: gp.paymentTitleShort || "Payment Guide",
     titleCn: "支付指南",
     icon: "💳",
-    description: "Alipay, WeChat Pay, cash, and tax refund procedures in China",
+    description: gp.paymentSubtitle || "Alipay, WeChat Pay, cash, and tax refund procedures in China",
     href: "/guide/payment",
-    stage: "Stages 2 & 10",
-    stageDescription: "Payment & Shopping",
+    stage: stageLabel("Stages 2 & 10"),
+    stageDescription: gp.paymentStageDescription || "Payment & Shopping",
     color: "green",
   },
   {
-    title: "Communication Guide",
+    title: gp.communicationTitleShort || "Communication Guide",
     titleCn: "通讯指南",
     icon: "📱",
-    description: "SIM/eSIM options, VPN setup, and essential apps for staying connected",
+    description: gp.communicationSubtitle || "SIM/eSIM options, VPN setup, and essential apps for staying connected",
     href: "/guide/communication",
-    stage: "Stage 3",
-    stageDescription: "Communication Setup",
+    stage: stageLabel("Stage 3"),
+    stageDescription: gp.communicationStageDescription || "Communication Setup",
     color: "purple",
   },
   {
-    title: "Transport Guide",
+    title: gp.transportTitleShort || "Transport Guide",
     titleCn: "交通指南",
     icon: "🚄",
-    description: "Airport arrival, metro, bus, taxi, and inter-city transport options",
+    description: gp.transportSubtitle || "Airport arrival, metro, bus, taxi, and inter-city transport options",
     href: "/guide/transport",
-    stage: "Stages 4-7",
-    stageDescription: "Arrival to Inter-city",
+    stage: stageLabel("Stages 4-7"),
+    stageDescription: gp.transportStageDescription || "Arrival to Inter-city",
     color: "orange",
   },
   {
-    title: "Accommodation Guide",
+    title: gp.accommodationTitleShort || "Accommodation Guide",
     titleCn: "住宿指南",
     icon: "🏨",
-    description: "Hotel types, booking tips, check-in process, and staying comfortably",
+    description: gp.accommodationSubtitle || "Hotel types, booking tips, check-in process, and staying comfortably",
     href: "/guide/accommodation",
-    stage: "Stage 9",
-    stageDescription: "Accommodation",
+    stage: stageLabel("Stage 9"),
+    stageDescription: gp.accommodationStageDescription || "Accommodation",
     color: "pink",
   },
   {
-    title: "Emergency Procedures",
+    title: gp.emergencyTitleShort || "Emergency Procedures",
     titleCn: "紧急情况处理",
     icon: "🚨",
-    description: "Lost passport, medical emergency, theft, scams, and embassy contacts",
+    description: gp.emergencySubtitle || "Lost passport, medical emergency, theft, scams, and embassy contacts",
     href: "/guide/emergency-procedures",
-    stage: "Stage 11",
-    stageDescription: "Emergency Response",
+    stage: stageLabel("Stage 11"),
+    stageDescription: gp.emergencyStageDescription || "Emergency Response",
     color: "red",
   },
   {
-    title: "Departure Guide",
+    title: gp.departureTitleShort || "Departure Guide",
     titleCn: "离境指南",
     icon: "✈️",
-    description: "Tax refunds, airport transport, duty-free shopping, and departure checklist",
+    description: gp.departureSubtitle || "Tax refunds, airport transport, duty-free shopping, and departure checklist",
     href: "/guide/departure",
-    stage: "Stage 12",
-    stageDescription: "Leaving China",
+    stage: stageLabel("Stage 12"),
+    stageDescription: gp.departureStageDescription || "Leaving China",
     color: "indigo",
   },
   {
-    title: "Dining Guide",
+    title: gp.diningTitleShort || "Dining Guide",
     titleCn: "餐饮指南",
     icon: "🍜",
-    description: "Local cuisines, ordering tips, food safety, and dining etiquette in China",
+    description: gp.diningSubtitle || "Local cuisines, ordering tips, food safety, and dining etiquette in China",
     href: "/guide/dining",
-    stage: "Stage 8",
-    stageDescription: "Food & Restaurants",
+    stage: stageLabel("Stage 8"),
+    stageDescription: gp.diningStageDescription || "Food & Restaurants",
     color: "teal",
   },
 ];
 
 const businessGuides = [
   {
-    title: "Invitation Letter Templates",
+    title: bgp.invitationShort || "Invitation Letter Templates",
     titleCn: "商务邀请函模板",
     icon: "✉️",
-    description: "Download ready-to-use bilingual invitation letters for visa applications",
+    description: bgp.invitationSubtitle || "Download ready-to-use bilingual invitation letters for visa applications",
     href: "/guide/business/invitation-letter",
   },
   {
-    title: "Expo & Event Calendar",
+    title: bgp.expoShort || "Expo & Event Calendar",
     titleCn: "展会与活动日历",
     icon: "📅",
-    description: "Plan your trips around China's top trade shows and industry events",
+    description: bgp.expoSubtitle || "Plan your trips around China's top trade shows and industry events",
     href: "/guide/business/expo-calendar",
   },
   {
-    title: "Company Registration Guide",
+    title: bgp.registrationShort || "Company Registration Guide",
     titleCn: "工商注册指南",
     icon: "🏢",
-    description: "Step-by-step guide for WFOE, Representative Office, and other entities",
+    description: bgp.registrationSubtitle || "Step-by-step guide for WFOE, Representative Office, and other entities",
     href: "/guide/business/company-registration",
   },
   {
-    title: "Business Etiquette Essentials",
+    title: bgp.etiquetteShort || "Business Etiquette Essentials",
     titleCn: "商务礼仪速成",
     icon: "🎯",
-    description: "Master Chinese business culture, dining etiquette, and meeting protocols",
+    description: bgp.etiquetteSubtitle || "Master Chinese business culture, dining etiquette, and meeting protocols",
     href: "/guide/business/etiquette",
   },
   {
-    title: "Translation & Interpreting",
+    title: bgp.translationShort || "Translation & Interpreting",
     titleCn: "翻译服务预约",
     icon: "🌍",
-    description: "Professional interpreters and translators for business visits",
+    description: bgp.translationSubtitle || "Professional interpreters and translators for business visits",
     href: "/guide/business/translation",
   },
 ];
@@ -225,7 +238,7 @@ const colorClasses = {
                 {guide.stage}
               </span>
               <span class="text-sm font-medium group-hover:translate-x-1 transition-transform">
-                Learn More →
+                {learnMore} →
               </span>
             </div>
           </div>
@@ -258,7 +271,7 @@ const colorClasses = {
               {guide.description}
             </p>
             <div class="mt-4 text-primary font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-              Learn More
+              {learnMore}
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>

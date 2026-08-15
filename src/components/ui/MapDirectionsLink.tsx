@@ -16,6 +16,7 @@ import {
   getNativeMapUrl,
   isLikelyChinaUser,
 } from "@/lib/map-links";
+import { ct } from "@/i18n/components-strings";
 import React, { useEffect, useState } from "react";
 
 interface MapDirectionsLinkProps {
@@ -28,6 +29,7 @@ interface MapDirectionsLinkProps {
   children?: React.ReactNode;
   /** Force a specific provider (skips auto-detect) */
   forceProvider?: "google" | "amap";
+  lang?: string;
 }
 
 export function MapDirectionsLink({
@@ -38,6 +40,7 @@ export function MapDirectionsLink({
   className = "",
   children,
   forceProvider,
+  lang,
 }: MapDirectionsLinkProps) {
   const [useAmap, setUseAmap] = useState(false);
   useEffect(() => {
@@ -102,7 +105,7 @@ export function MapDirectionsLink({
       {children || (
         <>
           <span>🗺️</span>
-          <span>{useAmap ? "导航" : "Directions"}</span>
+          <span>{useAmap ? ct(lang, "map_nav", "导航") : ct(lang, "map_directions", "Directions")}</span>
         </>
       )}
     </a>
