@@ -33,7 +33,7 @@
   "attractions": [
     {
       "id": "forbidden-city",
-      "name": "故宫博物院",
+      "name": "故宮博物院",
       "nameEn": "故宮",
       "category": "historical",
       "image": "/img/ext/98befe7e3a32.webp",
@@ -57,12 +57,12 @@
     },
     {
       "id": "great-wall-badaling",
-      "name": "八达岭长城",
+      "name": "八達嶺長城",
       "nameEn": "長城（八達嶺）",
       "category": "historical",
       "image": "/img/ext/1a666c7b3877.webp",
       "description": "最受歡迎的長城段落，提供壯麗的景色和保存良好的防禦工事。",
-      "address": "北京市區以北60公里的延慶區",
+      "address": "北京市區以北60公裡的延慶區",
       "coordinates": {
         "lat": 40.3651,
         "lng": 116.0066
@@ -72,15 +72,15 @@
       "recommendedVisitTime": "半天",
       "highlights": [
         "纜車遊覽",
-        "烽火台觀景台",
-        "360度觀景台"
+        "烽火臺觀景臺",
+        "360度觀景臺"
       ],
       "tips": "盡量避開週末。參加導覽遊以獲得更好的歷史背景。帶上水和零食。長城很陡，請穿著舒適的步行鞋。",
       "phone": "+86 10 6912 1830"
     },
     {
       "id": "temple-of-heaven",
-      "name": "天坛",
+      "name": "天壇",
       "nameEn": "天壇",
       "category": "cultural",
       "image": "/img/ext/611ce4f349b9.webp",
@@ -104,12 +104,12 @@
     },
     {
       "id": "summer-palace",
-      "name": "颐和园",
+      "name": "頤和園",
       "nameEn": "頤和園",
       "category": "cultural",
       "image": "/img/ext/de2d3d38d6cf.webp",
       "description": "世界上最大的皇家園林，以壯麗的昆明湖和繪有畫作的長廊為特色。",
-      "address": "海淀區軍山公路19號",
+      "address": "海澱區軍山公路19號",
       "coordinates": {
         "lat": 39.9996,
         "lng": 116.4669
@@ -128,7 +128,7 @@
     },
     {
       "id": "tiananmen-square",
-      "name": "天安门广场",
+      "name": "天安門廣場",
       "nameEn": "天安門廣場",
       "category": "historical",
       "image": "/img/ext/034f108f7672.webp",
@@ -152,7 +152,7 @@
     },
     {
       "id": "798-art-district",
-      "name": "798艺术区",
+      "name": "798藝術區",
       "nameEn": "798藝術區",
       "category": "cultural",
       "image": "/img/ext/1eb2bd2615de.webp",
@@ -176,7 +176,7 @@
     },
     {
       "id": "lammatemple",
-      "name": "雍和宫",
+      "name": "雍和宮",
       "nameEn": "雍和宮（喇嘛寺）",
       "category": "cultural",
       "image": "/img/ext/5e9616329a4c.webp",
@@ -200,11 +200,11 @@
     },
     {
       "id": "beihai-park",
-      "name": "北海公园",
+      "name": "北海公園",
       "nameEn": "北海公園",
       "category": "cultural",
       "image": "/img/ext/cc1c0491ef7a.webp",
-      "description": "歷史悠久的皇家園林，擁有標誌性的白塔、美麗的湖泊和傳統亭台。",
+      "description": "歷史悠久的皇家園林，擁有標誌性的白塔、美麗的湖泊和傳統亭臺。",
       "address": "西城區文津街1號",
       "coordinates": {
         "lat": 39.9276,
@@ -224,12 +224,12 @@
     },
     {
       "id": "mutianyu-great-wall",
-      "name": "慕田峪长城",
+      "name": "慕田峪長城",
       "nameEn": "慕田峪長城",
       "category": "historical",
       "image": "/img/ext/1efd8a63f0ee.webp",
       "description": "全線修復的段落，設有22座敵樓，比八達嶺人少，並設有纜車。",
-      "address": "懷柔區慕田峪村，北部70公里",
+      "address": "懷柔區慕田峪村，北部70公裡",
       "coordinates": {
         "lat": 40.4316,
         "lng": 116.5669
@@ -248,12 +248,12 @@
     },
     {
       "id": "peking-opera",
-      "name": "梨园剧场",
+      "name": "梨園劇場",
       "nameEn": "京劇之夜",
       "category": "cultural",
       "image": "/img/ext/3a2025734e91.webp",
       "description": "在這座專屬劇場體驗傳統京劇，欣賞變臉、武術和演唱等精彩表演。",
-      "address": "東城區和平里",
+      "address": "東城區和平裡",
       "coordinates": {
         "lat": 39.9426,
         "lng": 116.4268
@@ -272,7 +272,7 @@
     },
     {
       "id": "nanluoguxiang",
-      "name": "南锣鼓巷",
+      "name": "南鑼鼓巷",
       "nameEn": "南鑼鼓巷",
       "category": "cultural",
       "image": "/img/ext/4af69f4aa830.webp",
@@ -296,7 +296,7 @@
     },
     {
       "id": "national-museum",
-      "name": "中国国家博物馆",
+      "name": "中國國家博物館",
       "nameEn": "中國國家博物館",
       "category": "cultural",
       "image": "/img/ext/a6d6f37e7851.webp",
@@ -320,17 +320,17 @@
     },
     {
       "id": "zhongshan-park",
-      "name": "中山公园",
+      "name": "中山公園",
       "nameEn": "中山公園",
       "category": "cultural",
       "image": "/img/ext/4af69f4aa830.webp",
       "description": "位於漢口市中心的大型城市公園，設有湖泊、花園、遊樂設施及歷史悠久的中山塔。當地人喜愛的休閒場所。",
-      "address": "解放大道696号, 江汉区",
+      "address": "解放大道696號, 江漢區",
       "coordinates": {
         "lat": 39.9076,
         "lng": 116.3962
       },
-      "openingHours": "06:00-22:00",
+      "openingHours": "06:00-21:00",
       "ticketPrice": "免費（遊樂設施需另外購票）",
       "recommendedVisitTime": "2-3小時",
       "highlights": [
@@ -344,7 +344,7 @@
     },
     {
       "id": "working-peoples-cultural-palace",
-      "name": "劳动人民文化宫",
+      "name": "勞動人民文化宮",
       "nameEn": "勞動人民文化宮",
       "category": "cultural",
       "image": "/img/ext/a6d6f37e7851.webp",
@@ -368,7 +368,7 @@
     },
     {
       "id": "jingshan-park",
-      "name": "景山公园",
+      "name": "景山公園",
       "nameEn": "景山公園",
       "category": "cultural",
       "image": "/img/ext/40b2617ae797.webp",
@@ -416,7 +416,7 @@
     },
     {
       "id": "shichahai",
-      "name": "什刹海",
+      "name": "什剎海",
       "nameEn": "什剎海",
       "category": "cultural",
       "image": "/img/ext/673f5ee74870.webp",
@@ -441,7 +441,7 @@
     },
     {
       "id": "bell-drum-towers",
-      "name": "钟鼓楼",
+      "name": "鐘鼓樓",
       "nameEn": "鐘樓和鼓樓",
       "category": "historical",
       "image": "/img/ext/6e87447b1ab1.webp",
@@ -465,7 +465,7 @@
     },
     {
       "id": "dashilan",
-      "name": "大栅栏",
+      "name": "大柵欄",
       "nameEn": "大柵欄",
       "category": "cultural",
       "image": "/img/ext/a668865c8a06.webp",
@@ -490,11 +490,11 @@
     },
     {
       "id": "beijing-happy-valley",
-      "name": "北京欢乐谷",
+      "name": "北京歡樂谷",
       "nameEn": "北京歡樂谷",
       "category": "entertainment",
       "image": "/img/ext/171128eac7b7.webp",
-      "description": "一個大型主題樂園，設有雲霄飛車、亲水設施及適合家庭遊玩的設施。",
+      "description": "一個大型主題樂園，設有雲霄飛車、親水設施及適合家庭遊玩的設施。",
       "address": "朝陽區小武基",
       "coordinates": {
         "lat": 39.8652,
@@ -515,7 +515,7 @@
     },
     {
       "id": "olympic-park",
-      "name": "奥林匹克公园",
+      "name": "奧林匹克公園",
       "nameEn": "奧林匹克公園",
       "category": "cultural",
       "image": "/img/ext/81fc759e622b.webp",
@@ -540,12 +540,12 @@
     },
     {
       "id": "summer-palace-old-summer",
-      "name": "圆明园",
+      "name": "圓明園",
       "nameEn": "舊夏宮",
       "category": "historical",
       "image": "/img/ext/f2b48a17b376.webp",
       "description": "舊夏宮的遺址，於1860年被毀，現在是紀念公園，擁有歷史基礎和湖泊。",
-      "address": "北京市海淀區頤和園路28號",
+      "address": "北京市海澱區頤和園路28號",
       "coordinates": {
         "lat": 39.9892,
         "lng": 116.4532
@@ -565,7 +565,7 @@
     },
     {
       "id": "beijing-natural-history-museum",
-      "name": "北京自然博物馆",
+      "name": "北京自然博物館",
       "nameEn": "北京自然博物館",
       "category": "cultural",
       "image": "/img/ext/4adbde7850e1.webp",
@@ -590,7 +590,7 @@
     },
     {
       "id": "louvre-abroad",
-      "name": "中国电影博物馆",
+      "name": "中國電影博物館",
       "nameEn": "中國電影博物館",
       "category": "cultural",
       "image": "/img/ext/a6d6f37e7851.webp",
@@ -614,12 +614,12 @@
     },
     {
       "id": "western-yuanming",
-      "name": "西洋楼遗址",
+      "name": "西洋樓遺址",
       "nameEn": "西洋樓遺址",
       "category": "historical",
       "image": "/img/ext/f2b48a17b376.webp",
       "description": "圓明園歐式宮殿的標誌性遺址，由耶穌會傳教士為乾隆皇帝建造。",
-      "address": "北京市海淀區頤和園路",
+      "address": "北京市海澱區頤和園路",
       "coordinates": {
         "lat": 39.9882,
         "lng": 116.4552
@@ -642,8 +642,8 @@
       "nameEn": "麋鹿公園",
       "category": "nature",
       "image": "/img/ext/e057eaa5c1a3.webp",
-      "description": "麋鹿自然保護區和教育中心，以其觀察平台和教育展覽而聞名。",
-      "address": "圓明園，海淀區",
+      "description": "麋鹿自然保護區和教育中心，以其觀察平臺和教育展覽而聞名。",
+      "address": "圓明園，海澱區",
       "coordinates": {
         "lat": 40.0052,
         "lng": 116.2852
@@ -662,12 +662,12 @@
     },
     {
       "id": "beijing-university",
-      "name": "北京大学",
+      "name": "北京大學",
       "nameEn": "北京大學",
       "category": "cultural",
       "image": "/img/ext/79e16f540fe6.webp",
       "description": "中國第一所現代國立大學，以其美麗的校園、傳統中國建築和湖泊而聞名。",
-      "address": "5號怡和園路，海淀區",
+      "address": "5號怡和園路，海澱區",
       "coordinates": {
         "lat": 39.9882,
         "lng": 116.4712
@@ -691,7 +691,7 @@
       "category": "historical",
       "image": "/img/ext/ab537e126673.webp",
       "description": "聯合國教科文組織世界遺產，擁有13位明代皇帝的陵墓，環境優美，擁有令人印象深刻的石砌大道。",
-      "address": "北京市昌平區，北京西北50公里處",
+      "address": "北京市昌平區，北京西北50公裡處",
       "coordinates": {
         "lat": 40.2919,
         "lng": 116.2244
@@ -710,12 +710,12 @@
     },
     {
       "id": "yuanmingyuan",
-      "name": "圆明园",
+      "name": "圓明園",
       "nameEn": "舊稱圓明園",
       "category": "historical",
       "image": "/img/ext/f2b48a17b376.webp",
       "description": "這是原本的皇宮和園林建築群的遺址，1860年被毀。設有歐式建築遺址和美麗的荷花池。",
-      "address": "海淀區清華西路28號",
+      "address": "海澱區清華西路28號",
       "coordinates": {
         "lat": 40.0067,
         "lng": 116.2977
@@ -734,7 +734,7 @@
     },
     {
       "id": "universal-resort",
-      "name": "北京环球度假区",
+      "name": "北京環球度假區",
       "nameEn": "北京環球度假區",
       "category": "entertainment",
       "image": "/img/ext/171128eac7b7.webp",
@@ -758,7 +758,7 @@
     },
     {
       "id": "national-stadium",
-      "name": "鸟巢（国家体育场）",
+      "name": "鳥巢（國家體育場）",
       "nameEn": "國家體育場（鳥巢）",
       "category": "modern",
       "image": "/img/ext/278ff84812e8.webp",
@@ -772,7 +772,7 @@
       "ticketPrice": "50元（外觀參觀），80元（內部參觀）",
       "recommendedVisitTime": "1-2小時",
       "highlights": [
-        "奧運聖火台",
+        "奧運聖火臺",
         "鋼筋結構建築",
         "夜間燈光秀",
         "奧運紀念品"
@@ -782,12 +782,12 @@
     },
     {
       "id": "water-cube",
-      "name": "水立方（国家游泳中心）",
-      "nameEn": "水立方（國家游泳中心）",
+      "name": "水立方（國家遊泳中心）",
+      "nameEn": "水立方（國家遊泳中心）",
       "category": "modern",
       "image": "/img/ext/81fc759e622b.webp",
-      "description": "2008年奧運會的游泳場館，現在設有水上樂園。其獨特的ETFE氣泡幕牆是建築藝術的傑作。",
-      "address": "朝陽區國家游泳中心1號",
+      "description": "2008年奧運會的遊泳場館，現在設有水上樂園。其獨特的ETFE氣泡幕牆是建築藝術的傑作。",
+      "address": "朝陽區國家遊泳中心1號",
       "coordinates": {
         "lat": 39.9937,
         "lng": 116.3835
@@ -810,7 +810,7 @@
       "nameEn": "王府井大街",
       "category": "cultural",
       "image": "/img/ext/c07c68888962.webp",
-      "description": "北京最著名的購物街，全長1.6公里，擁有現代購物中心、傳統商店以及著名的王府井小吃街。",
+      "description": "北京最著名的購物街，全長1.6公裡，擁有現代購物中心、傳統商店以及著名的王府井小吃街。",
       "address": "東城區",
       "coordinates": {
         "lat": 39.9142,
@@ -830,7 +830,7 @@
     },
     {
       "id": "qianmen",
-      "name": "前门大街",
+      "name": "前門大街",
       "nameEn": "前門大街",
       "category": "cultural",
       "image": "/img/ext/ca06a5442afe.webp",
@@ -854,36 +854,36 @@
     },
     {
       "id": "confucius-temple",
-      "name": "孔庙和国子监",
+      "name": "孔廟和國子監",
       "nameEn": "孔廟",
       "category": "cultural",
       "image": "/img/ext/fa0bb86fc2e6.webp",
-      "description": "南京最著名的文化街区，有秦淮河和各种小吃。",
-      "address": "南京市秦淮区",
+      "description": "南京最著名的文化街區，有秦淮河和各種小吃。",
+      "address": "南京市秦淮區",
       "coordinates": {
         "lat": 39.9472,
         "lng": 116.4118
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "2-3小時",
       "highlights": [
         "秦淮河",
         "小吃",
         "夜景",
         "科舉考試石刻"
       ],
-      "tips": "品尝南京小吃。",
+      "tips": "品嘗南京小吃。",
       "phone": "+86 010  6585 6231"
     },
     {
       "id": "chinese-garden-museum",
-      "name": "中国园林博物馆",
+      "name": "中國園林博物館",
       "nameEn": "中國園林博物館",
       "category": "cultural",
       "image": "/img/ext/aea46746bdcf.webp",
       "description": "中國首座國家級園林藝術博物館，展示室內外展品及著名園林的複製品。",
-      "address": "豐台區",
+      "address": "豐臺區",
       "coordinates": {
         "lat": 39.8563,
         "lng": 116.2159
@@ -926,7 +926,7 @@
     },
     {
       "id": "national-art-museum",
-      "name": "中国美术馆",
+      "name": "中國美術館",
       "nameEn": "中國美術館",
       "category": "cultural",
       "image": "/img/ext/a6d6f37e7851.webp",
@@ -950,7 +950,7 @@
     },
     {
       "id": "planetarium",
-      "name": "北京天文馆",
+      "name": "北京天文館",
       "nameEn": "北京天文館",
       "category": "cultural",
       "image": "/img/ext/205718a05aaa.webp",
@@ -974,7 +974,7 @@
     },
     {
       "id": "national-zoo",
-      "name": "北京动物园",
+      "name": "北京動物園",
       "nameEn": "北京動物園",
       "category": "natural",
       "image": "/img/ext/6334d34b42a4.webp",
@@ -998,12 +998,12 @@
     },
     {
       "id": "fragrant-hills",
-      "name": "香山公园",
+      "name": "香山公園",
       "nameEn": "香山公園",
       "category": "natural",
       "image": "/img/ext/6dddbdd9968a.webp",
       "description": "位於西郊的大型公園，以秋葉、歷史寺廟和風景優美的健行步道聞名。",
-      "address": "海淀區麥麥街40號",
+      "address": "海澱區麥麥街40號",
       "coordinates": {
         "lat": 39.9903,
         "lng": 116.1855
@@ -1022,7 +1022,7 @@
     },
     {
       "id": "capital-museum",
-      "name": "首都博物馆",
+      "name": "首都博物館",
       "nameEn": "首都博物館",
       "category": "cultural",
       "image": "/img/ext/cc68a9263e39.webp",
@@ -1050,7 +1050,7 @@
       "nameEn": "爨底下村",
       "category": "cultural",
       "image": "/img/ext/981a28ab731e.webp",
-      "description": "保存完好的明代山村，擁有石屋和傳統庭院建築，位於北京西側約90公里處。",
+      "description": "保存完好的明代山村，擁有石屋和傳統庭院建築，位於北京西側約90公裡處。",
       "address": "門頭溝區齋堂鎮",
       "coordinates": {
         "lat": 39.9708,
@@ -1070,12 +1070,12 @@
     },
     {
       "id": "gubei-water-town",
-      "name": "古北水镇",
+      "name": "古北水鎮",
       "nameEn": "古北水鎮",
       "category": "cultural",
       "image": "/img/ext/673f5ee74870.webp",
-      "description": "位於司馬台長城腳下的複製水鎮，擁有傳統建築、溫泉以及夜間點亮長城的美景。",
-      "address": "密雲區司馬台村",
+      "description": "位於司馬臺長城腳下的複製水鎮，擁有傳統建築、溫泉以及夜間點亮長城的美景。",
+      "address": "密雲區司馬臺村",
       "coordinates": {
         "lat": 40.6597,
         "lng": 117.2447
@@ -1084,7 +1084,7 @@
       "ticketPrice": "140¥",
       "recommendedVisitTime": "全天或住宿一晚",
       "highlights": [
-        "司馬台長城夜景",
+        "司馬臺長城夜景",
         "溫泉",
         "水鎮遊船",
         "傳統工藝"
@@ -1094,7 +1094,7 @@
     },
     {
       "id": "ncpa",
-      "name": "国家大剧院",
+      "name": "國家大劇院",
       "nameEn": "中國國家大劇院",
       "category": "modern",
       "image": "/img/ext/6a46d136bb22.webp",
@@ -1118,7 +1118,7 @@
     },
     {
       "id": "taoranting-park",
-      "name": "陶然亭公园",
+      "name": "陶然亭公園",
       "nameEn": "陶然亭公園",
       "category": "natural",
       "image": "/img/ext/4af69f4aa830.webp",
@@ -1142,7 +1142,7 @@
     },
     {
       "id": "badaling-safari",
-      "name": "八达岭野生动物园",
+      "name": "八達嶺野生動物園",
       "nameEn": "八達嶺野生動物園",
       "category": "natural",
       "image": "/img/ext/b2ca80eca619.webp",
@@ -1166,7 +1166,7 @@
     },
     {
       "id": "temple-of-earth",
-      "name": "地坛公园",
+      "name": "地壇公園",
       "nameEn": "地壇",
       "category": "cultural",
       "image": "/img/ext/cdd1944d7090.webp",
@@ -1190,12 +1190,12 @@
     },
     {
       "id": "world-park",
-      "name": "世界公园",
+      "name": "世界公園",
       "nameEn": "北京世界公園",
       "category": "entertainment",
       "image": "/img/ext/171128eac7b7.webp",
       "description": "一座主題公園，擁有來自世界各地的100多個著名地標的微型複製品，包括艾菲爾鐵塔和金字塔。",
-      "address": "豐台區豐寶路158號",
+      "address": "豐臺區豐寶路158號",
       "coordinates": {
         "lat": 39.8223,
         "lng": 116.2842
@@ -1214,7 +1214,7 @@
     },
     {
       "id": "beijing-natural-history",
-      "name": "北京自然博物馆",
+      "name": "北京自然博物館",
       "nameEn": "北京自然博物館",
       "category": "cultural",
       "image": "/img/ext/4adbde7850e1.webp",
@@ -1238,12 +1238,12 @@
     },
     {
       "id": "sanlitun",
-      "name": "三里屯",
-      "nameEn": "三里屯",
+      "name": "三裡屯",
+      "nameEn": "三裡屯",
       "category": "modern",
       "image": "/img/ext/8fdf5818ee84.webp",
       "description": "北京最時尚的娛樂區，擁有國際餐廳、酒吧、設計師精品店和充滿活力的夜生活。",
-      "address": "朝陽區三里屯路",
+      "address": "朝陽區三裡屯路",
       "coordinates": {
         "lat": 39.9337,
         "lng": 116.4542
@@ -1252,7 +1252,7 @@
       "ticketPrice": "免費",
       "recommendedVisitTime": "2-4小時",
       "highlights": [
-        "太古里購物中心",
+        "太古裡購物中心",
         "國際餐廳",
         "酒吧街",
         "設計師精品店"
@@ -1286,12 +1286,12 @@
     },
     {
       "id": "beijing-aquarium",
-      "name": "北京海洋馆",
+      "name": "北京海洋館",
       "nameEn": "北京海洋館",
       "category": "natural",
       "image": "/img/ext/7f80dfb8bda3.webp",
       "description": "世界上最大的內陸水族館之一，設有鯊魚池、海豚表演和熱帶雨林展區。",
-      "address": "海淀區白石橋路18號（北京動物園內）",
+      "address": "海澱區白石橋路18號（北京動物園內）",
       "coordinates": {
         "lat": 39.9395,
         "lng": 116.3348
@@ -1310,7 +1310,7 @@
     },
     {
       "id": "meilanfang-memorial",
-      "name": "梅兰芳纪念馆",
+      "name": "梅蘭芳紀念館",
       "nameEn": "梅蘭芳紀念館",
       "category": "cultural",
       "image": "/img/ext/4adbde7850e1.webp",
@@ -1336,7 +1336,7 @@
   "restaurants": [
     {
       "id": "beijing-1",
-      "name": "新荣记",
+      "name": "新榮記",
       "nameEn": "新榮記",
       "type": "米其林",
       "star": 3,
@@ -1374,7 +1374,7 @@
       "cuisine": "現代中式",
       "avgPrice": 600,
       "rating": 4.8,
-      "address": "朝陽區三里屯酒吧街3號樓3樓",
+      "address": "朝陽區三裡屯酒吧街3號樓3樓",
       "coordinates": {
         "lat": 39.9217,
         "lng": 116.4493
@@ -1399,20 +1399,20 @@
     {
       "id": "beijing-3",
       "name": "玲瓏",
-      "nameEn": "玲珑",
+      "nameEn": "玲瓏",
       "type": "米其林",
       "star": 1,
-      "cuisine": "現代台灣菜",
+      "cuisine": "現代臺灣菜",
       "avgPrice": 1500,
       "rating": 4.9,
-      "address": "朝陽區新源里8號，趙芳大廈1-3樓",
+      "address": "朝陽區新源裡8號，趙芳大廈1-3樓",
       "coordinates": {
         "lat": 39.9292,
         "lng": 116.4535
       },
       "phone": "+86 10 8454 0888",
       "hours": "18:00-23:00（週日-週一休息）",
-      "description": "米其林一星台灣菜，由主廚王大衛以先鋒派擺盤呈現。",
+      "description": "米其林一星臺灣菜，由主廚王大衛以先鋒派擺盤呈現。",
       "dishHighlights": [
         "水晶雞",
         "羅勒蛤蜊湯",
@@ -1420,7 +1420,7 @@
       ],
       "tags": [
         "精緻餐飲",
-        "台式",
+        "臺式",
         "需預訂"
       ],
       "diamond": 0,
@@ -1429,7 +1429,7 @@
     },
     {
       "id": "beijing-4",
-      "name": "御宝轩",
+      "name": "御寶軒",
       "nameEn": "御寶",
       "type": "黑珍珠",
       "diamond": 3,
@@ -1460,7 +1460,7 @@
     },
     {
       "id": "beijing-5",
-      "name": "北京厨房",
+      "name": "北京廚房",
       "nameEn": "北京廚房",
       "type": "本地",
       "cuisine": "北京菜",
@@ -1553,7 +1553,7 @@
     },
     {
       "id": "beijing-8",
-      "name": "局气",
+      "name": "局氣",
       "nameEn": "居奇",
       "type": "本地",
       "cuisine": "北京菜",
@@ -1585,7 +1585,7 @@
     },
     {
       "id": "beijing-9",
-      "name": "花家怡园",
+      "name": "花家怡園",
       "nameEn": "華嘉壹園",
       "type": "本地",
       "cuisine": "北京",
@@ -1599,7 +1599,7 @@
       "hours": "10:00-22:00",
       "description": "位於改建四合院中的歷史餐廳，以宮廷菜式聞名",
       "dishHighlights": [
-        "糖葫芦",
+        "糖葫蘆",
         "蒸蟹配韭菜",
         "蒙古火鍋"
       ],
@@ -1616,7 +1616,7 @@
     },
     {
       "id": "beijing-10",
-      "name": "利群烤鸭",
+      "name": "利群烤鴨",
       "nameEn": "利群烤鴨",
       "type": "本地",
       "cuisine": "北京烤鴨",
@@ -1679,7 +1679,7 @@
     },
     {
       "id": "beijing-12",
-      "name": "聚宝源",
+      "name": "聚寶源",
       "nameEn": "聚寶源",
       "type": "本地",
       "cuisine": "北京火鍋",
@@ -1712,7 +1712,7 @@
     },
     {
       "id": "beijing-13",
-      "name": "东来顺",
+      "name": "東來順",
       "nameEn": "東來順",
       "type": "黑珍珠",
       "diamond": 2,
@@ -1729,7 +1729,7 @@
       "description": "1903年成立的老字號火鍋連鎖店，以優質羊肉聞名，傳統銅鍋涮肉。",
       "dishHighlights": [
         "極品羊肉片",
-        "牛里脊",
+        "牛裡脊",
         "手打丸子",
         "傳統湯底"
       ],
@@ -1745,7 +1745,7 @@
     },
     {
       "id": "beijing-14",
-      "name": "旺顺阁鱼头泡饼",
+      "name": "旺順閣魚頭泡餅",
       "nameEn": "王順閣",
       "type": "本地",
       "cuisine": "北京菜",
@@ -1778,7 +1778,7 @@
     },
     {
       "id": "beijing-15",
-      "name": "那家小馆",
+      "name": "那家小館",
       "nameEn": "納家小館",
       "type": "本地",
       "cuisine": "宮廷",
@@ -1844,7 +1844,7 @@
     },
     {
       "id": "beijing-17",
-      "name": "南门涮肉",
+      "name": "南門涮肉",
       "nameEn": "南門涮肉",
       "type": "本地",
       "cuisine": "火鍋",
@@ -1877,7 +1877,7 @@
     },
     {
       "id": "beijing-18",
-      "name": "丰泽园",
+      "name": "豐澤園",
       "nameEn": "豐澤園",
       "type": "黑珍珠",
       "diamond": 2,
@@ -1910,7 +1910,7 @@
     },
     {
       "id": "beijing-19",
-      "name": "淮扬府",
+      "name": "淮揚府",
       "nameEn": "淮揚府",
       "type": "米其林",
       "star": 1,
@@ -1943,7 +1943,7 @@
     },
     {
       "id": "beijing-20",
-      "name": "1949-全鸭季",
+      "name": "1949-全鴨季",
       "nameEn": "1949金鵝",
       "type": "米其林",
       "star": 1,
@@ -2009,7 +2009,7 @@
     },
     {
       "id": "beijing-22",
-      "name": "松鹤楼",
+      "name": "松鶴樓",
       "nameEn": "松鶴樓",
       "type": "黑珍珠",
       "diamond": 2,
@@ -2023,7 +2023,7 @@
       },
       "phone": "+86 10 6505 2838",
       "hours": "11:00-15:00, 17:00-21:30",
-      "description": "成立於1737年的傳奇蘇州菜餐廳，以精美的甜點和經典菜肴聞名。",
+      "description": "成立於1737年的傳奇蘇州菜餐廳，以精美的甜點和經典菜餚聞名。",
       "dishHighlights": [
         "蘇式蟹",
         "水晶蝦仁",
@@ -2113,7 +2113,7 @@
       "cuisine": "北京菜",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "朝陽區三里屯路28號",
+      "address": "朝陽區三裡屯路28號",
       "coordinates": {
         "lat": 39.9342,
         "lng": 116.4462
@@ -2139,7 +2139,7 @@
     },
     {
       "id": "beijing-26",
-      "name": "都式烧麦馆",
+      "name": "都式燒麥館",
       "nameEn": "都士燒賣館",
       "type": "本地",
       "cuisine": "北京菜",
@@ -2172,7 +2172,7 @@
     },
     {
       "id": "beijing-27",
-      "name": "宫宴",
+      "name": "宮宴",
       "nameEn": "宮宴",
       "type": "本地",
       "cuisine": "宮廷",
@@ -2204,7 +2204,7 @@
     },
     {
       "id": "beijing-cheap-1",
-      "name": "方砖厂69号炸酱面",
+      "name": "方磚廠69號炸醬麵",
       "nameEn": "方磚廠69號炸醬麵",
       "type": "本地",
       "cuisine": "北京麵條",
@@ -2233,7 +2233,7 @@
     },
     {
       "id": "beijing-cheap-2",
-      "name": "护国寺小吃",
+      "name": "護國寺小吃",
       "nameEn": "護國寺小吃",
       "type": "本地",
       "cuisine": "北京傳統小吃",
@@ -2263,7 +2263,7 @@
     },
     {
       "id": "beijing-cheap-3",
-      "name": "姚记炒肝",
+      "name": "姚記炒肝",
       "nameEn": "姚記炒肝",
       "type": "本地",
       "cuisine": "北京傳統",
@@ -2275,7 +2275,7 @@
         "lng": 116.415
       },
       "hours": "06:00-14:00",
-      "description": "北京最有名的炒肝（炸豬肝）。濃郁的豬肝湯，加入大蒜，搭配包子。對於愛嚐鮮的食客來說是必嘗的早餐。",
+      "description": "北京最有名的炒肝（炸豬肝）。濃鬱的豬肝湯，加入大蒜，搭配包子。對於愛嚐鮮的食客來說是必嘗的早餐。",
       "dishHighlights": [
         "炒肝（炸豬肝）",
         "豬肉包子",
@@ -2380,7 +2380,7 @@
     },
     {
       "id": "beijing-cheap-7",
-      "name": "超意兴",
+      "name": "超意興",
       "nameEn": "朝陽星",
       "type": "本地",
       "cuisine": "山東快餐",
@@ -2410,7 +2410,7 @@
     },
     {
       "id": "beijing-cheap-8",
-      "name": "白魁老号饭庄",
+      "name": "白魁老號飯莊",
       "nameEn": "白魁老號餐廳",
       "type": "本地",
       "cuisine": "北京清真菜",
@@ -2440,29 +2440,29 @@
     },
     {
       "id": "beijing-36",
-      "name": "巷子炸酱面",
-      "nameEn": "巷子炸酱面 (炸酱面)",
+      "name": "巷子炸醬麵",
+      "nameEn": "巷子炸醬麵 (炸醬麵)",
       "type": "咖啡廳",
-      "cuisine": "炸酱面",
+      "cuisine": "炸醬麵",
       "avgPrice": 42,
       "rating": 4.2,
-      "address": "北京市朝阳区美食街46号",
+      "address": "北京市朝陽區美食街46號",
       "coordinates": {
         "lat": 39.8883,
         "lng": 116.4426
       },
       "phone": "+86 010 82424170",
       "hours": "06:00-14:00",
-      "description": "北京本地人推荐的炸酱面店，味道正宗，价格实惠",
+      "description": "北京本地人推薦的炸醬麵店，味道正宗，價格實惠",
       "dishHighlights": [
         "炒肝",
-        "炸酱面",
-        "烤鸭"
+        "炸醬麵",
+        "烤鴨"
       ],
       "tags": [
         "下午茶",
-        "安静",
-        "文艺"
+        "安靜",
+        "文藝"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/4d37d82561b1.webp",
@@ -2476,22 +2476,22 @@
       "cuisine": "豆汁",
       "avgPrice": 36,
       "rating": 4.4,
-      "address": "北京市东城区美食街133号",
+      "address": "北京市東城區美食街133號",
       "coordinates": {
         "lat": 39.8995,
         "lng": 116.4276
       },
       "phone": "+86 010 97838743",
       "hours": "17:00-02:00",
-      "description": "北京本地人推荐的豆汁店，味道正宗，价格实惠",
+      "description": "北京本地人推薦的豆汁店，味道正宗，價格實惠",
       "dishHighlights": [
         "涮羊肉",
         "豆汁",
         "炒肝"
       ],
       "tags": [
-        "老字号",
-        "本地人爱去",
+        "老字號",
+        "本地人愛去",
         "家常菜"
       ],
       "diamond": 0,
@@ -2506,22 +2506,22 @@
       "cuisine": "炒肝",
       "avgPrice": 58,
       "rating": 4.3,
-      "address": "北京市海淀区美食街57号",
+      "address": "北京市海澱區美食街57號",
       "coordinates": {
         "lat": 39.9189,
         "lng": 116.3946
       },
       "phone": "+86 010 20402647",
       "hours": "09:00-21:00",
-      "description": "北京本地人推荐的炒肝店，味道正宗，价格实惠",
+      "description": "北京本地人推薦的炒肝店，味道正宗，價格實惠",
       "dishHighlights": [
-        "卤煮",
-        "炸酱面",
-        "烤鸭"
+        "滷煮",
+        "炸醬麵",
+        "烤鴨"
       ],
       "tags": [
         "小吃",
-        "网红打卡",
+        "網紅打卡",
         "深夜美食"
       ],
       "diamond": 0,
@@ -2536,23 +2536,23 @@
       "cuisine": "爆肚",
       "avgPrice": 103,
       "rating": 4.5,
-      "address": "北京市丰台区美食街157号",
+      "address": "北京市豐臺區美食街157號",
       "coordinates": {
         "lat": 39.917,
         "lng": 116.3825
       },
       "phone": "+86 010 96682492",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "北京本地人推荐的爆肚店，味道正宗，价格实惠",
+      "description": "北京本地人推薦的爆肚店，味道正宗，價格實惠",
       "dishHighlights": [
-        "卤煮",
+        "滷煮",
         "豆汁",
-        "烤鸭"
+        "烤鴨"
       ],
       "tags": [
-        "排队王",
-        "性价比高",
-        "社区老店"
+        "排隊王",
+        "性價比高",
+        "社區老店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/c5faaf5231d4.webp",
@@ -2566,23 +2566,23 @@
       "cuisine": "涮羊肉",
       "avgPrice": 134,
       "rating": 4,
-      "address": "北京市丰台区美食街83号",
+      "address": "北京市豐臺區美食街83號",
       "coordinates": {
         "lat": 39.8624,
         "lng": 116.4037
       },
       "phone": "+86 010 11251050",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "北京本地人推荐的涮羊肉店，味道正宗，价格实惠",
+      "description": "北京本地人推薦的涮羊肉店，味道正宗，價格實惠",
       "dishHighlights": [
         "豆汁",
-        "烤鸭",
-        "炸酱面"
+        "烤鴨",
+        "炸醬麵"
       ],
       "tags": [
-        "排队王",
-        "社区老店",
-        "本地人爱去"
+        "排隊王",
+        "社區老店",
+        "本地人愛去"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/d816f126fa28.webp",
@@ -2596,23 +2596,23 @@
       "cuisine": "炒肝",
       "avgPrice": 44,
       "rating": 4.5,
-      "address": "北京市东城区美食街70号",
+      "address": "北京市東城區美食街70號",
       "coordinates": {
         "lat": 39.8862,
         "lng": 116.4275
       },
       "phone": "+86 010 11017546",
       "hours": "10:00-22:00",
-      "description": "北京本地人推荐的炒肝店，味道正宗，价格实惠",
+      "description": "北京本地人推薦的炒肝店，味道正宗，價格實惠",
       "dishHighlights": [
         "炒肝",
-        "炸酱面",
-        "卤煮"
+        "炸醬麵",
+        "滷煮"
       ],
       "tags": [
         "家常菜",
-        "排队王",
-        "性价比高"
+        "排隊王",
+        "性價比高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/439856bb3f9d.webp",
@@ -2626,23 +2626,23 @@
       "cuisine": "炒肝",
       "avgPrice": 75,
       "rating": 4.5,
-      "address": "北京市海淀区美食街12号",
+      "address": "北京市海澱區美食街12號",
       "coordinates": {
         "lat": 39.8653,
         "lng": 116.4081
       },
       "phone": "+86 010 88519802",
       "hours": "06:00-14:00",
-      "description": "北京本地人推荐的炒肝店，味道正宗，价格实惠",
+      "description": "北京本地人推薦的炒肝店，味道正宗，價格實惠",
       "dishHighlights": [
-        "烤鸭",
-        "卤煮",
+        "烤鴨",
+        "滷煮",
         "炒肝"
       ],
       "tags": [
-        "老字号",
+        "老字號",
         "家常菜",
-        "排队王"
+        "排隊王"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/e885a843cfca.webp",
@@ -2650,28 +2650,28 @@
     },
     {
       "id": "beijing-50",
-      "name": "老北京炸酱面",
-      "nameEn": "老北京炸酱面 (炸酱面)",
+      "name": "老北京炸醬麵",
+      "nameEn": "老北京炸醬麵 (炸醬麵)",
       "type": "本地",
-      "cuisine": "炸酱面",
+      "cuisine": "炸醬麵",
       "avgPrice": 101,
       "rating": 4.2,
-      "address": "北京市东城区美食街163号",
+      "address": "北京市東城區美食街163號",
       "coordinates": {
         "lat": 39.9026,
         "lng": 116.4088
       },
       "phone": "+86 010 71801862",
       "hours": "10:00-22:00",
-      "description": "北京本地人推荐的炸酱面店，味道正宗，价格实惠",
+      "description": "北京本地人推薦的炸醬麵店，味道正宗，價格實惠",
       "dishHighlights": [
-        "烤鸭",
+        "烤鴨",
         "涮羊肉",
         "炒肝"
       ],
       "tags": [
-        "排队王",
-        "老字号",
+        "排隊王",
+        "老字號",
         "家常菜"
       ],
       "diamond": 0,
@@ -2680,29 +2680,29 @@
     },
     {
       "id": "beijing-52",
-      "name": "街边涮羊肉",
-      "nameEn": "街边涮羊肉 (涮羊肉)",
+      "name": "街邊涮羊肉",
+      "nameEn": "街邊涮羊肉 (涮羊肉)",
       "type": "咖啡廳",
       "cuisine": "涮羊肉",
       "avgPrice": 38,
       "rating": 4.4,
-      "address": "北京市朝阳区美食街10号",
+      "address": "北京市朝陽區美食街10號",
       "coordinates": {
         "lat": 39.8822,
         "lng": 116.4396
       },
       "phone": "+86 010 97355396",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "北京本地人推荐的涮羊肉店，味道正宗，价格实惠",
+      "description": "北京本地人推薦的涮羊肉店，味道正宗，價格實惠",
       "dishHighlights": [
         "爆肚",
-        "炸酱面",
+        "炸醬麵",
         "涮羊肉"
       ],
       "tags": [
         "下午茶",
-        "安静",
-        "文艺"
+        "安靜",
+        "文藝"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/4fcc219f3aae.webp",
@@ -2710,29 +2710,29 @@
     },
     {
       "id": "beijing-54",
-      "name": "街边炸酱面",
-      "nameEn": "街边炸酱面 (炸酱面)",
+      "name": "街邊炸醬麵",
+      "nameEn": "街邊炸醬麵 (炸醬麵)",
       "type": "街頭小吃",
-      "cuisine": "炸酱面",
+      "cuisine": "炸醬麵",
       "avgPrice": 56,
       "rating": 4.1,
-      "address": "北京市海淀区美食街85号",
+      "address": "北京市海澱區美食街85號",
       "coordinates": {
         "lat": 39.9056,
         "lng": 116.3752
       },
       "phone": "+86 010 33886659",
       "hours": "10:00-22:00",
-      "description": "北京本地人推荐的炸酱面店，味道正宗，价格实惠",
+      "description": "北京本地人推薦的炸醬麵店，味道正宗，價格實惠",
       "dishHighlights": [
-        "卤煮",
-        "烤鸭",
+        "滷煮",
+        "烤鴨",
         "涮羊肉"
       ],
       "tags": [
         "小吃",
         "深夜美食",
-        "网红打卡"
+        "網紅打卡"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/a64be3138bf4.webp",
@@ -2740,29 +2740,29 @@
     },
     {
       "id": "beijing-56",
-      "name": "老字号豆汁",
-      "nameEn": "老字号豆汁 (豆汁)",
+      "name": "老字號豆汁",
+      "nameEn": "老字號豆汁 (豆汁)",
       "type": "本地",
       "cuisine": "豆汁",
       "avgPrice": 109,
       "rating": 4.8,
-      "address": "北京市西城区美食街112号",
+      "address": "北京市西城區美食街112號",
       "coordinates": {
         "lat": 39.8841,
         "lng": 116.3761
       },
       "phone": "+86 010 86562390",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "北京本地人推荐的豆汁店，味道正宗，价格实惠",
+      "description": "北京本地人推薦的豆汁店，味道正宗，價格實惠",
       "dishHighlights": [
-        "炸酱面",
+        "炸醬麵",
         "涮羊肉",
-        "烤鸭"
+        "烤鴨"
       ],
       "tags": [
-        "排队王",
-        "隐藏美食",
-        "社区老店"
+        "排隊王",
+        "隱藏美食",
+        "社區老店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/db77b0b2b9de.webp",
@@ -2776,23 +2776,23 @@
       "cuisine": "涮羊肉",
       "avgPrice": 45,
       "rating": 4.2,
-      "address": "北京市丰台区美食街131号",
+      "address": "北京市豐臺區美食街131號",
       "coordinates": {
         "lat": 39.9196,
         "lng": 116.4388
       },
       "phone": "+86 010 21874599",
       "hours": "17:00-02:00",
-      "description": "北京本地人推荐的涮羊肉店，味道正宗，价格实惠",
+      "description": "北京本地人推薦的涮羊肉店，味道正宗，價格實惠",
       "dishHighlights": [
-        "卤煮",
-        "烤鸭",
-        "炸酱面"
+        "滷煮",
+        "烤鴨",
+        "炸醬麵"
       ],
       "tags": [
         "家常菜",
-        "排队王",
-        "社区老店"
+        "排隊王",
+        "社區老店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/28b062f42bb1.webp",
@@ -2800,29 +2800,29 @@
     },
     {
       "id": "beijing-60",
-      "name": "老字号豆汁",
-      "nameEn": "老字号豆汁 (豆汁)",
+      "name": "老字號豆汁",
+      "nameEn": "老字號豆汁 (豆汁)",
       "type": "本地",
       "cuisine": "豆汁",
       "avgPrice": 62,
       "rating": 4.7,
-      "address": "北京市朝阳区美食街83号",
+      "address": "北京市朝陽區美食街83號",
       "coordinates": {
         "lat": 39.8926,
         "lng": 116.4141
       },
       "phone": "+86 010 30144588",
       "hours": "10:00-22:00",
-      "description": "北京本地人推荐的豆汁店，味道正宗，价格实惠",
+      "description": "北京本地人推薦的豆汁店，味道正宗，價格實惠",
       "dishHighlights": [
         "爆肚",
-        "卤煮",
-        "烤鸭"
+        "滷煮",
+        "烤鴨"
       ],
       "tags": [
-        "性价比高",
-        "排队王",
-        "老字号"
+        "性價比高",
+        "排隊王",
+        "老字號"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/e01ef0223e8c.webp",
@@ -2830,28 +2830,28 @@
     },
     {
       "id": "beijing-62",
-      "name": "阿婆炸酱面",
-      "nameEn": "阿婆炸酱面 (炸酱面)",
+      "name": "阿婆炸醬麵",
+      "nameEn": "阿婆炸醬麵 (炸醬麵)",
       "type": "咖啡廳",
-      "cuisine": "炸酱面",
+      "cuisine": "炸醬麵",
       "avgPrice": 58,
       "rating": 4.2,
-      "address": "北京市丰台区美食街135号",
+      "address": "北京市豐臺區美食街135號",
       "coordinates": {
         "lat": 39.8637,
         "lng": 116.4041
       },
       "phone": "+86 010 70044752",
       "hours": "09:00-21:00",
-      "description": "北京本地人推荐的炸酱面店，味道正宗，价格实惠",
+      "description": "北京本地人推薦的炸醬麵店，味道正宗，價格實惠",
       "dishHighlights": [
-        "炸酱面",
+        "炸醬麵",
         "豆汁",
         "爆肚"
       ],
       "tags": [
         "咖啡",
-        "文艺",
+        "文藝",
         "下午茶"
       ],
       "diamond": 0,
@@ -2866,23 +2866,23 @@
       "cuisine": "炒肝",
       "avgPrice": 45,
       "rating": 4.8,
-      "address": "北京市西城区美食街5号",
+      "address": "北京市西城區美食街5號",
       "coordinates": {
         "lat": 39.8972,
         "lng": 116.3862
       },
       "phone": "+86 010 98548136",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "北京本地人推荐的炒肝店，味道正宗，价格实惠",
+      "description": "北京本地人推薦的炒肝店，味道正宗，價格實惠",
       "dishHighlights": [
         "炒肝",
-        "卤煮",
-        "炸酱面"
+        "滷煮",
+        "炸醬麵"
       ],
       "tags": [
-        "安静",
+        "安靜",
         "下午茶",
-        "文艺"
+        "文藝"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/70ffe9fe58ab.webp",
@@ -2893,67 +2893,67 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major international airports worldwide",
-        "to": "Beijing Capital International Airport (PEK) / Daxing International Airport (PKX)",
-        "duration": "Varies by origin (8-14 hours from Europe/Americas)",
+        "from": "全球主要國際機場",
+        "to": "北京首都國際機場（PEK）/ 大興國際機場（PKX）",
+        "duration": "依出發地而異（從歐洲／美洲出發約8-14小時）",
         "price": "1000-8000¥",
         "frequency": "Multiple daily flights",
-        "tips": "Daxing is newer with better facilities. PEK is closer to city center. High-speed trains from many cities."
+        "tips": "大興機場較新且設施較佳。首都機場離市中心較近。許多城市有高鐵直達。"
       },
       {
         "type": "train",
-        "from": "Shanghai (4.5h), Xian (4.5h)",
-        "to": "Beijing Railway Stations (Beijing, Beijing West, Beijing North)",
-        "duration": "4.5-12 hours depending on origin",
+        "from": "上海（4.5小時）、西安（4.5小時）",
+        "to": "北京各大火車站（北京站、北京西站、北京北站）",
+        "duration": "依出發地不同約4.5-12小時",
         "price": "300-1000¥",
-        "frequency": "Multiple daily departures",
-        "tips": "High-speed trains are comfortable and punctual. Book through 12306 app or station."
+        "frequency": "每日多班次發車",
+        "tips": "高鐵舒適且準時。可透過12306 App或車站購票。"
       }
     ],
     "local": {
       "metro": [
-        "27 lines covering all major attractions",
-        "Single ride: 3-10¥ depending on distance",
-        "Peak hours: 7:00-9:00, 17:00-19:00 - expect crowds",
-        "Metro maps available in English at stations",
-        "Line 1 (red): Runs east-west through city center",
-        "Line 2 (blue): Circular line passing major sites",
-        "Line 5 (orange): Connects southern districts",
-        "Line 10 (purple): Major cross-district line",
-        "Airport Express Line: Connects city center to PEK (25¥)",
-        "Daxing Line: Connects to new Daxing Airport (25¥)",
-        "First train: 05:00, Last train: 23:00 (varies by line)",
-        "Women-only cars available on some lines during peak"
+        "27條路線涵蓋所有主要景點",
+        "單程票：依距離約3-10元人民幣",
+        "尖峰時段：7:00-9:00、17:00-19:00，人潮眾多",
+        "地鐵站提供英文地圖",
+        "1號線（紅線）：東西向貫穿市中心",
+        "2號線（藍線）：環狀線經過主要景點",
+        "5號線（橘線）：連接南區",
+        "10號線（紫線）：主要跨區路線",
+        "機場快線：連接市中心至北京首都國際機場（25元人民幣）",
+        "大興線：連接新大興機場（25元人民幣）",
+        "首班車：05:00，末班車：23:00（依路線而異）",
+        "部分路線於尖峰時段提供女性專用車廂"
       ],
       "bus": [
-        "Extensive network covering areas not served by metro",
-        "Single ride: 2¥ (flat fee for regular buses)",
-        "Air-conditioned buses: 3¥",
+        "廣泛的網絡涵蓋地鐵未服務的區域",
+        "單程票價：2元人民幣（一般公車均一價）",
+        "空調公車：3元人民幣",
         "Night buses (夜班): 2-5¥ depending on distance",
-        "Download Beijing Transport app for real-time info",
-        "Route numbers: 1-99 for main lines, 100+ for secondary",
-        "Elderly/disabled: Free with proper ID",
-        "Tips: Have exact change ready, or use transit card"
+        "下載北京交通應用程式以獲取即時資訊",
+        "路線編號：1-99為主線，100以上為支線",
+        "年長者/身心障礙者：持有效證件免費",
+        "小提示：請備妥零錢，或使用交通卡"
       ],
       "taxi": [
-        "Starting fare: 13¥ (first 3km)",
+        "起跳價：13元人民幣（前3公裡）",
         "Waiting: 0.8¥ per minute",
-        "Night surcharge: 20% extra (23:00-05:00)",
-        "Always insist on meter use",
-        "Didi app works well for English speakers",
-        "Long distance trips: 2.3¥ per km after 15km",
-        "Congestion fee: May apply during rush hours in central area",
-        "Electric taxis increasingly common (same rates)",
-        "Airport to city center: 100-150¥ by taxi"
+        "夜間加成：加收20%（23:00-05:00）",
+        "務必堅持使用跳錶",
+        "滴滴出行應用程式對英語使用者友善",
+        "長途行程：15公裡後每公裡2.3元",
+        "擁堵費：市中心尖峰時段可能收取",
+        "電動計程車越來越常見（費率相同）",
+        "機場到市中心：計程車約100-150元"
       ],
       "bike": [
-        "Mobike, Hello bikes widely available",
-        "Unlock: 1-2¥, then 0.5-1¥ per 15 minutes",
-        "Bike lanes common, follow traffic rules",
-        "International credit cards work with Alipay/WeChat",
-        "Designated parking zones required for shared bikes",
-        "Electric bikes available (need license plate)",
-        "Caution: Traffic can be chaotic, stay alert"
+        "Mobike、Hello 單車隨處可見",
+        "解鎖：1-2元，之後每15分鐘0.5-1元",
+        "自行車道常見，請遵守交通規則",
+        "國際信用卡可搭配支付寶/微信使用",
+        "共享單車需停放於指定區域",
+        "電動自行車可用（需有車牌）",
+        "注意：交通可能混亂，請保持警覺"
       ],
       "walking": [
         "Central Beijing is walkable between major attractions",
@@ -2971,39 +2971,39 @@
   },
   "hotels": [
     {
-      "name": "北京华尔道夫酒店",
+      "name": "北京華爾道夫酒店",
       "nameEn": "Waldorf Astoria Beijing",
       "budget": "luxury",
       "priceRange": "¥2500-5000/night",
-      "address": "8 Xinyuanli, Chaoyang District",
+      "address": "朝陽區新源裡8號",
       "coordinates": {
         "lat": 39.9292,
         "lng": 116.4535
       },
       "rating": 4.8,
       "highlights": [
-        "Prime location near Sanlitun",
-        "Luxurious spa",
-        "Multiple dining options",
-        "Butler service"
+        "鄰近三裡屯的黃金地段",
+        "豪華水療中心",
+        "多種餐飲選擇",
+        "管家服務"
       ],
       "bookingTips": "Book directly for best rates. Consider weekend packages."
     },
     {
-      "name": "北京王府半岛酒店",
+      "name": "北京王府半島酒店",
       "nameEn": "The Peninsula Beijing",
       "budget": "luxury",
       "priceRange": "¥2000-4000/night",
-      "address": "8 Jinyu Hutong, Wangfujing",
+      "address": "王府井金魚胡同8號",
       "coordinates": {
         "lat": 39.9142,
         "lng": 116.4135
       },
       "rating": 4.7,
       "highlights": [
-        "Historic location near Forbidden City",
-        "Traditional Chinese decor",
-        "Award-winning afternoon tea"
+        "歷史悠久的位置，鄰近故宮",
+        "傳統中式裝潢",
+        "獲獎的下午茶"
       ],
       "bookingTips": "Check Peninsula Academy for exclusive experiences."
     },
@@ -3012,52 +3012,52 @@
       "nameEn": "Grand Millennium Beijing",
       "budget": "mid",
       "priceRange": "¥800-1500/night",
-      "address": "Fortune Plaza, 7 Dongsanhuan Zhonglu, Chaoyang",
+      "address": "朝陽區東三環中路7號財富中心",
       "coordinates": {
         "lat": 39.9142,
         "lng": 116.4645
       },
       "rating": 4.5,
       "highlights": [
-        "Central location",
-        "Good business facilities",
-        "Varied breakfast options"
+        "中心位置",
+        "良好的商務設施",
+        "多樣化的早餐選擇"
       ],
       "bookingTips": "Weekend rates often lower. Check travel sites for deals."
     },
     {
-      "name": "北京希尔顿酒店",
+      "name": "北京希爾頓酒店",
       "nameEn": "Hilton Beijing",
       "budget": "mid",
       "priceRange": "¥700-1200/night",
-      "address": "1 Dongfang Rd, Chaoyang District",
+      "address": "朝陽區東方路1號",
       "coordinates": {
         "lat": 39.9392,
         "lng": 116.4545
       },
       "rating": 4.4,
       "highlights": [
-        "Near Workers Stadium",
-        "Good gym facilities",
-        "Reliable service"
+        "鄰近工人體育場",
+        "良好的健身房設施",
+        "可靠的服務"
       ],
       "bookingTips": "Hilton Honors members get better deals."
     },
     {
-      "name": "北京亮马河酒店",
+      "name": "北京亮馬河酒店",
       "nameEn": "Lakefront Hotel",
       "budget": "budget",
       "priceRange": "¥300-600/night",
-      "address": "16 Liangmaqiao Rd, Chaoyang District",
+      "address": "朝陽區亮馬橋路16號",
       "coordinates": {
         "lat": 39.9492,
         "lng": 116.4645
       },
       "rating": 4.2,
       "highlights": [
-        "Near Embassy District",
-        "Convenient metro access",
-        "Good value"
+        "鄰近Embassy區",
+        "地鐵交通便利",
+        "物超所值"
       ],
       "bookingTips": "Chinese travel apps often have good deals."
     },
@@ -3066,7 +3066,7 @@
       "nameEn": "The Opposite House",
       "budget": "luxury",
       "priceRange": "¥2000-4000/night",
-      "address": "11 Sanlitun Road, Chaoyang District",
+      "address": "朝陽區三裡屯路11號",
       "coordinates": {
         "lat": 39.9352,
         "lng": 116.4512
@@ -3074,9 +3074,9 @@
       "rating": 4.7,
       "highlights": [
         "Modern design by隈研吾",
-        "Trendy Sanlitun location",
-        "Excellent Asian cuisine",
-        "Rooftop bar"
+        "時尚的三裡屯位置",
+        "優質亞洲料理",
+        "屋頂酒吧"
       ],
       "bookingTips": "Popular with design-conscious travelers. Great for nightlife."
     },
@@ -3085,169 +3085,169 @@
       "nameEn": "The St. Regis Beijing",
       "budget": "luxury",
       "priceRange": "¥1800-3500/night",
-      "address": "21 Jianguomenwai Dajie, Chaoyang District",
+      "address": "朝陽區建國門外大街21號",
       "coordinates": {
         "lat": 39.9092,
         "lng": 116.4532
       },
       "rating": 4.6,
       "highlights": [
-        "Classic elegance near CBD",
-        "24-hour butler service",
-        "Award-winning spa",
-        "Fine dining restaurants"
+        "鄰近CBD的經典優雅",
+        "24小時管家服務",
+        "獲獎水療中心",
+        "精緻餐飲餐廳"
       ],
       "bookingTips": "Marriott Bonvoy members get better rates. Good for business travelers."
     },
     {
-      "name": "北京香格里拉饭店",
+      "name": "北京香格裡拉飯店",
       "nameEn": "Shangri-La Hotel Beijing",
       "budget": "luxury",
       "priceRange": "¥1500-3000/night",
-      "address": "29 Zizhuyuan Rd, Haidian District",
+      "address": "海澱區紫竹院路29號",
       "coordinates": {
         "lat": 39.9392,
         "lng": 116.4832
       },
       "rating": 4.6,
       "highlights": [
-        "Riverside location",
-        "Beautiful gardens",
-        "Excellent Chinese restaurant",
-        "Large pool"
+        "河畔位置",
+        "美麗花園",
+        "優質中餐廳",
+        "大型遊泳池"
       ],
       "bookingTips": "Best value in the luxury category. Good for tourists visiting Summer Palace."
     },
     {
-      "name": "北京JW万豪酒店",
+      "name": "北京JW萬豪酒店",
       "nameEn": "JW Marriott Hotel Beijing",
       "budget": "luxury",
       "priceRange": "¥1400-2800/night",
-      "address": "83 Jianguo Rd, Chaoyang District",
+      "address": "朝陽區建國路83號",
       "coordinates": {
         "lat": 39.9252,
         "lng": 116.4682
       },
       "rating": 4.5,
       "highlights": [
-        "Modern luxury in CBD",
-        "Multiple restaurants",
-        "Large fitness center",
-        "Executive lounge"
+        "中央商務區的現代奢華",
+        "多間餐廳",
+        "大型健身中心",
+        "行政酒廊"
       ],
       "bookingTips": "Book directly for weekend packages. Good for combining business and leisure."
     },
     {
-      "name": "北京丽晶酒店",
+      "name": "北京麗晶酒店",
       "nameEn": "Regent Hotel Beijing",
       "budget": "luxury",
       "priceRange": "¥1600-3200/night",
-      "address": "99 Jinbao St, Dongcheng District",
+      "address": "東城區金寶街99號",
       "coordinates": {
         "lat": 39.9162,
         "lng": 116.4212
       },
       "rating": 4.6,
       "highlights": [
-        "Walking distance to Forbidden City",
-        "Traditional Chinese decor",
-        "Excellent afternoon tea",
-        "Butler service"
+        "步行可達故宮",
+        "傳統中式裝潢",
+        "優質下午茶",
+        "管家服務"
       ],
       "bookingTips": "Best location for first-time visitors. Book rooms with city view."
     },
     {
-      "name": "北京粤财jw万豪酒店",
+      "name": "北京粵財jw萬豪酒店",
       "nameEn": "JW Marriott Hotel Beijing Central",
       "budget": "mid",
       "priceRange": "¥900-1800/night",
-      "address": "18 Xuanwumenwai St, Xicheng District",
+      "address": "西城區宣武門外大街18號",
       "coordinates": {
         "lat": 39.9172,
         "lng": 116.3812
       },
       "rating": 4.5,
       "highlights": [
-        "Near subway station",
-        "Modern facilities",
-        "Good breakfast buffet",
-        "Business center"
+        "鄰近地鐵站",
+        "現代化設施",
+        "豐盛的自助早餐",
+        "商務中心"
       ],
       "bookingTips": "Good value for the location. Check for weekend specials."
     },
     {
-      "name": "北京长城饭店",
+      "name": "北京長城飯店",
       "nameEn": "Great Wall Hotel Beijing",
       "budget": "mid",
       "priceRange": "¥700-1400/night",
-      "address": "10 Liangmaqiao Rd, Chaoyang District",
+      "address": "北京市朝陽區亮馬橋路10號",
       "coordinates": {
         "lat": 39.9482,
         "lng": 116.4622
       },
       "rating": 4.4,
       "highlights": [
-        "Near Embassy District",
-        "Multiple dining options",
-        "Large conference facilities",
-        "Outdoor garden"
+        "鄰近Embassy區",
+        "多種餐飲選擇",
+        "大型會議設施",
+        "戶外花園"
       ],
       "bookingTips": "Popular with tour groups. Good for longer stays."
     },
     {
-      "name": "北京希尔顿逸林酒店",
+      "name": "北京希爾頓逸林酒店",
       "nameEn": "DoubleTree by Hilton Beijing",
       "budget": "mid",
       "priceRange": "¥600-1200/night",
-      "address": "1 Wangjing Dongyi Rd, Chaoyang District",
+      "address": "北京市朝陽區望京東一路1號",
       "coordinates": {
         "lat": 39.9782,
         "lng": 116.4852
       },
       "rating": 4.3,
       "highlights": [
-        "Near 798 Art District",
-        "Free cookies at check-in",
-        "Good breakfast",
-        "Modern rooms"
+        "鄰近798藝術區",
+        "入住時提供免費餅乾",
+        "早餐不錯",
+        "現代化客房"
       ],
       "bookingTips": "Good base for visiting 798. Hilton Honors members save more."
     },
     {
-      "name": "北京金茂万丽酒店",
+      "name": "北京金茂萬麗酒店",
       "nameEn": "Renaissance Beijing Wangfujing",
       "budget": "mid",
       "priceRange": "¥800-1600/night",
-      "address": "57 Wangfujing St, Dongcheng District",
+      "address": "北京市東城區王府井大街57號",
       "coordinates": {
         "lat": 39.9132,
         "lng": 116.4132
       },
       "rating": 4.5,
       "highlights": [
-        "Prime Wangfujing location",
-        "Rooftop bar with views",
-        "Modern design",
-        "Near shopping"
+        "王府井黃金地段",
+        "屋頂酒吧，視野絕佳",
+        "現代設計",
+        "鄰近購物區"
       ],
       "bookingTips": "Great for shoppers. Book terrace rooms for views."
     },
     {
-      "name": "北京新侨诺富特饭店",
+      "name": "北京新僑諾富特飯店",
       "nameEn": "Novotel Beijing Xinqiao",
       "budget": "mid",
       "priceRange": "¥550-1000/night",
-      "address": "1 Chongwenmenwai Dajie, Dongcheng District",
+      "address": "東城區崇文門外大街1號",
       "coordinates": {
         "lat": 39.9022,
         "lng": 116.4272
       },
       "rating": 4.3,
       "highlights": [
-        "Near Railway Station",
-        "Multiple restaurants",
-        "Underground parking",
-        "Clean and modern"
+        "鄰近火車站",
+        "多家餐廳",
+        "地下停車場",
+        "乾淨現代"
       ],
       "bookingTips": "Best for train travelers. Good value for business."
     },
@@ -3256,55 +3256,55 @@
       "nameEn": "Beijing Howard Johnson Paragon",
       "budget": "budget",
       "priceRange": "¥350-700/night",
-      "address": "18 North Liulubao Rd, Chaoyang District",
+      "address": "朝陽區六裡堡北路18號",
       "coordinates": {
         "lat": 39.9422,
         "lng": 116.4552
       },
       "rating": 4.2,
       "highlights": [
-        "Near Workers Stadium",
-        "Affordable dining",
-        "Metro access",
-        "Good for short stays"
+        "鄰近工人體育場",
+        "平價餐飲",
+        "地鐵交通便利",
+        "適合短住"
       ],
       "bookingTips": "Best value near the center. Check apps for deals."
     },
     {
-      "name": "北京前门建国饭店",
+      "name": "北京前門建國飯店",
       "nameEn": "Qianmen Hotel Beijing",
       "budget": "budget",
       "priceRange": "¥300-600/night",
-      "address": "175 Qianmen St, Xicheng District",
+      "address": "西城區前門街175號",
       "coordinates": {
         "lat": 39.8982,
         "lng": 116.3952
       },
       "rating": 4.1,
       "highlights": [
-        "Historic building",
-        "Near Tiananmen",
-        "Traditional Chinese style",
-        "Affordable"
+        "歷史建築",
+        "鄰近天安門",
+        "傳統中式風格",
+        "價格實惠"
       ],
       "bookingTips": "Book early for best rates. Great location for tourists."
     },
     {
-      "name": "北京柏悦酒店",
+      "name": "北京柏悅酒店",
       "nameEn": "Park Hyatt Beijing",
       "budget": "luxury",
       "priceRange": "¥1800-3500/night",
-      "address": "2 Jianguomenwai Dajie, Chaoyang District",
+      "address": "朝陽區建國門外大街2號",
       "coordinates": {
         "lat": 39.9092,
         "lng": 116.4572
       },
       "rating": 4.7,
       "highlights": [
-        "Sky lobby on 59th floor",
-        "Stunning views",
-        "Central location",
-        "Modern luxury"
+        "59樓空中大廳",
+        "絕佳景觀",
+        "中心位置",
+        "現代奢華"
       ],
       "bookingTips": "Request upper floors for best views. Good for business travelers."
     }
@@ -3313,94 +3313,94 @@
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Most widely accepted mobile payment in China",
+      "description": "中國最廣泛接受的行動支付",
       "howToUse": [
-        "Download Alipay app before arrival",
-        "Link international credit card (Visa/Mastercard accepted at many merchants)",
-        "Or open a Chinese bank account for full features",
-        "QR code payment at most merchants"
+        "出發前下載支付寶應用程式",
+        "綁定國際credit card（許多商家接受Visa/Mastercard）",
+        "或開通中國bank帳戶以使用完整功能",
+        "在大多數商家使用QR Code付款"
       ],
       "tips": [
-        "Many small vendors only accept Alipay/WeChat",
-        "Download before arrival as app stores may not have it",
-        "Keep some cash as backup",
-        "Foreign cards may not work for person-to-person transfers"
+        "許多小攤販只接受支付寶/微信支付",
+        "請在出發前下載，因為應用程式商店可能沒有提供",
+        "保留一些cash作為備用",
+        "外國卡可能無法用於個人轉帳"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Second most popular payment method, integrated with social app",
+      "description": "第二受歡迎的支付方式，整合於社交應用程式中",
       "howToUse": [
         "WeChat app required",
-        "Link international card through WeChat Pay",
+        "透過微信支付綁定國際信用卡",
         "Scan QR code to pay",
-        "Some merchants prefer WeChat over Alipay"
+        "有些商家偏好微信支付勝過支付寶"
       ],
       "tips": [
-        "English interface available in settings",
-        "Some apps require WeChat for authentication",
-        "Good for restaurants and taxis"
+        "設定中可切換英文介面",
+        "有些應用程式需要微信進行驗證",
+        "適合餐廳和計程車使用"
       ]
     },
     {
       "method": "Cash (RMB)",
       "icon": "cash",
-      "description": "Still accepted everywhere, essential for markets and small vendors",
+      "description": "仍然到處都接受，對於市場和小型攤販來說是必需的",
       "howToUse": [
-        "Exchange at airport or bank",
-        "ATMs widely available (may charge fees for foreign cards)",
-        "500¥ and 100¥ notes most common"
+        "在機場或bank兌換",
+        "提款機隨處可見（外國卡可能收取手續費）",
+        "500元和100元紙鈔最常見"
       ],
       "tips": [
-        "Keep small bills for tips and small purchases",
-        "Bureau de change at airports offer poor rates",
-        "ICBC and Bank of China ATMs accept foreign cards"
+        "保留小面額紙鈔以備小費和小額購買",
+        "機場的兌換處匯率較差",
+        "中國工商銀行和中國Bank的提款機接受外國卡"
       ]
     },
     {
       "method": "International Credit Cards",
       "icon": "card",
-      "description": "Accepted at hotels, large restaurants, and international chains",
+      "description": "適用於飯店、大型餐廳和國際連鎖店",
       "howToUse": [
-        "Visa and Mastercard widely accepted at upscale venues",
-        "May require passport verification",
-        "Exchange rates applied by your bank"
+        "Visa和Mastercard在高檔場所廣泛接受",
+        "可能需要passport驗證",
+        "匯率由您的bank套用"
       ],
       "tips": [
-        "Call your bank to enable international transactions",
-        "Notify them of travel plans to avoid fraud alerts",
-        "Some places add foreign transaction fees"
+        "致電您的bank以啟用國際交易",
+        "通知他們您的旅行計劃以避免詐騙警報",
+        "有些地方會加收國外交易手續費"
       ]
     },
     {
       "method": "UnionPay",
       "icon": "unionpay",
-      "description": "China's domestic card network, widely accepted at ATMs and merchants",
+      "description": "中國的國內卡網路，在提款機和商家廣泛接受",
       "howToUse": [
-        "Works at any ATM accepting UnionPay cards",
-        "Accepted at most stores, hotels, and restaurants",
-        "International cards often work with UnionPay terminals"
+        "適用於任何接受銀聯卡的ATM",
+        "大多數商店、飯店和餐廳均接受",
+        "國際卡通常可在銀聯終端機使用"
       ],
       "tips": [
-        "Can withdraw RMB directly from international cards",
-        "Widely accepted at all banks",
-        "Lower fees than credit cards for cash withdrawals"
+        "可直接從國際卡提取人民幣",
+        "所有銀行廣泛接受",
+        "提取cash的手續費低於信用卡"
       ]
     },
     {
       "method": "Foreign Exchange",
       "icon": "exchange",
-      "description": "Currency exchange at banks and exchange offices",
+      "description": "在銀行和兌換處進行貨幣兌換",
       "howToUse": [
-        "Official exchange counters at airports",
-        "Bank branches with exchange services",
-        "Major hotels often have exchange services"
+        "機場的官方兌換櫃檯",
+        "提供兌換服務的Bank分行",
+        "大型飯店通常提供兌換服務"
       ],
       "tips": [
-        "Airport exchange counters offer poor rates",
-        "Bank of China and ICBC give better rates",
-        "Bring passport for all exchanges"
+        "機場兌換櫃檯匯率較差",
+        "中國Bank和工商銀行提供較佳匯率",
+        "所有兌換請攜帶passport"
       ]
     }
   ],
@@ -3503,7 +3503,7 @@
     },
     {
       "category": "travel",
-      "title": "公共交通禮儀",
+      "title": "公共運輸禮儀",
       "content": "讓座給老年人、孕婦和帶小孩的人。請不要在地鐵上吃東西或喝水。請保持電話簡短或設為靜音。請站在電扶梯右側，左側通行。",
       "importance": "medium"
     },
@@ -3528,55 +3528,55 @@
     {
       "category": "greeting",
       "title": "北京方言",
-      "content": "北京話有独特的发音和许多口语表达。「也」和「再」的发音带有卷舌「r」音。学基本短语会受到赞赏。",
+      "content": "北京話有獨特的發音和許多口語表達。「也」和「再」的發音帶有捲舌「r」音。學基本短語會受到讚賞。",
       "importance": "medium"
     },
     {
       "category": "weather",
       "title": "沙塵暴季節",
-      "content": "北京春季（三月至四月）有沙尘暴。外出前请查看空气质量指数（AQI）。在户外请戴口罩，沙尘暴严重时请关闭窗户。",
+      "content": "北京春季（三月至四月）有沙塵暴。外出前請查看空氣品質指數（AQI）。在戶外請戴口罩，沙塵暴嚴重時請關閉窗戶。",
       "importance": "high"
     },
     {
       "category": "communication",
       "title": "英語便利性",
-      "content": "主要旅游景点和酒店常见英文标示。然而，在当地市场、小餐厅和公共交通工具上，英语可能有限。翻译应用程序很有帮助。",
+      "content": "主要旅遊景點和酒店常見英文標示。然而，在當地市場、小餐廳和公共運輸工具上，英語可能有限。翻譯應用程式很有幫助。",
       "importance": "medium"
     },
     {
       "category": "greeting",
       "title": "北京方言",
-      "content": "北京话有独特的发音和许多口语表达。「也」和「再」的发音带有卷舌「r」音。学基本短语会受到赞赏。",
+      "content": "北京話有獨特的發音和許多口語表達。「也」和「再」的發音帶有捲舌「r」音。學基本短語會受到讚賞。",
       "importance": "medium"
     },
     {
       "category": "weather",
       "title": "沙塵暴季節",
-      "content": "北京春季（三月至四月）有沙尘暴。外出前请查看空气质量指数（AQI）。在户外请戴口罩，沙尘暴严重时请关闭窗户。",
+      "content": "北京春季（三月至四月）有沙塵暴。外出前請查看空氣品質指數（AQI）。在戶外請戴口罩，沙塵暴嚴重時請關閉窗戶。",
       "importance": "high"
     },
     {
       "category": "communication",
       "title": "英語便利性",
-      "content": "主要旅游景点和酒店常见英文标示。然而，在当地市场、小餐厅和公共交通工具上，英语可能有限。翻译应用程序很有帮助。",
+      "content": "主要旅遊景點和酒店常見英文標示。然而，在當地市場、小餐廳和公共運輸工具上，英語可能有限。翻譯應用程式很有幫助。",
       "importance": "medium"
     },
     {
       "category": "dining",
       "title": "北京烤鴨文化",
-      "content": "北京烤鸭是北京最著名的菜肴。知名餐厅包括全聚德（创立于1864年）、便宜坊（创立于1855年）和大东。每家都有独特的制作方式。",
+      "content": "北京烤鴨是北京最著名的菜餚。知名餐廳包括全聚德（創立於1864年）、便宜坊（創立於1855年）和大東。每家都有獨特的製作方式。",
       "importance": "high"
     },
     {
       "category": "architecture",
       "title": "胡同遺產",
-      "content": "胡同是形成北京历史街区的传统小巷。步行或骑自行车穿越胡同可以深入了解传统北京生活。",
+      "content": "胡同是形成北京歷史街區的傳統小巷。步行或騎自行車穿越胡同可以深入了解傳統北京生活。",
       "importance": "high"
     },
     {
       "category": "taboo",
       "title": "審查意識",
-      "content": "北京的互联网访问受限。VPN常用但可能不可靠。规划使用国际服务时请做好准备。",
+      "content": "北京的網際網路訪問受限。VPN常用但可能不可靠。規劃使用國際服務時請做好準備。",
       "importance": "high"
     },
     {
@@ -3588,7 +3588,7 @@
     {
       "category": "transportation",
       "title": "尖峰時段",
-      "content": "北京交通高峰時間為早上7-9點和下午5-8點。建議使用公共交通。地鐵1號線、2號線和10號線對遊客最為實用。",
+      "content": "北京交通高峰時間為早上7-9點和下午5-8點。建議使用公共運輸。地鐵1號線、2號線和10號線對遊客最為實用。",
       "importance": "medium"
     },
     {
@@ -3625,7 +3625,7 @@
     },
     {
       "type": "hospital",
-      "name": "和睦家医院",
+      "name": "和睦家醫院",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 10 5927 7120",
       "address": "廣州",
@@ -3637,7 +3637,7 @@
     },
     {
       "type": "hospital",
-      "name": "北京协和医院",
+      "name": "北京協和醫院",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 10 6915 1188",
       "address": "廣州",
@@ -3649,7 +3649,7 @@
     },
     {
       "type": "embassy",
-      "name": "美国驻华大使馆",
+      "name": "美國駐華大使館",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 10 8531 3000",
       "address": "廣州",
@@ -3661,7 +3661,7 @@
     },
     {
       "type": "embassy",
-      "name": "英国驻华大使馆",
+      "name": "英國駐華大使館",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 10 8529 6600",
       "address": "廣州",
@@ -3673,7 +3673,7 @@
     },
     {
       "type": "embassy",
-      "name": "日本驻华大使馆",
+      "name": "日本駐華大使館",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 10 8561 3000",
       "address": "廣州",
@@ -3685,7 +3685,7 @@
     },
     {
       "type": "embassy",
-      "name": "澳大利亚驻华大使馆",
+      "name": "澳大利亞駐華大使館",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 10 8529 6800",
       "address": "廣州",
@@ -3697,7 +3697,7 @@
     },
     {
       "type": "hospital",
-      "name": "北京友谊医院",
+      "name": "北京友誼醫院",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 10 6301 4441",
       "address": "廣州",
@@ -3709,7 +3709,7 @@
     },
     {
       "type": "hospital",
-      "name": "北京天坛医院",
+      "name": "北京天壇醫院",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 10 6709 6656",
       "address": "廣州",
@@ -3721,7 +3721,7 @@
     },
     {
       "type": "police",
-      "name": "北京旅游警察",
+      "name": "北京旅遊警察",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "010-65150118",
       "address": "廣州",
@@ -3729,7 +3729,7 @@
     },
     {
       "type": "embassy",
-      "name": "德国驻华大使馆",
+      "name": "德國駐華大使館",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 10 8532 9000",
       "address": "廣州",
@@ -3741,7 +3741,7 @@
     },
     {
       "type": "embassy",
-      "name": "法国驻华大使馆",
+      "name": "法國駐華大使館",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 10 8532 8000",
       "address": "廣州",
@@ -3753,7 +3753,7 @@
     },
     {
       "type": "embassy",
-      "name": "加拿大驻华大使馆",
+      "name": "加拿大駐華大使館",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 10 5139 4000",
       "address": "廣州",
@@ -3765,7 +3765,7 @@
     },
     {
       "type": "tourist-helpline",
-      "name": "北京旅游投诉热线",
+      "name": "北京旅遊投訴熱線",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "12345",
       "address": "廣州",
@@ -3773,7 +3773,7 @@
     },
     {
       "type": "embassy",
-      "name": "俄罗斯驻华大使馆",
+      "name": "俄羅斯駐華大使館",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 10 6532 2000",
       "address": "廣州",
@@ -3785,7 +3785,7 @@
     },
     {
       "type": "embassy",
-      "name": "意大利驻华大使馆",
+      "name": "義大利駐華大使館",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 10 8532 7600",
       "address": "廣州",

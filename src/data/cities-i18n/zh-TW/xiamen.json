@@ -1,6 +1,6 @@
 {
   "slug": "xiamen",
-  "name": "厦门",
+  "name": "廈門",
   "nameEn": "Xiamen",
   "country": "China",
   "population": "5.3 million",
@@ -9,7 +9,7 @@
     "lng": 118.0894
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Xiamen, a coastal city in Fujian Province, is known as the '海上花园' (Garden on the Sea). With its blend of colonial architecture, traditional Minnan culture, and modern development, it offers a unique mix of East and West. The city features beautiful beaches, the UNESCO-listed Gulangyu Island, Buddhist temples, and world-class cuisine.",
+  "description": "Xiamen, a coastal city in Fujian Province, is known as the '海上花園' (Garden on the Sea). With its blend of colonial architecture, traditional Minnan culture, and modern development, it offers a unique mix of East and West. The city features beautiful beaches, the UNESCO-listed Gulangyu Island, Buddhist temples, and world-class cuisine.",
   "coverImage": "/img/ext/d78a5158579e.webp",
   "highlights": [
     "Gulangyu Island - UNESCO World Heritage colonial island",
@@ -34,26 +34,26 @@
   "attractions": [
     {
       "id": "gulangyu-island",
-      "name": "鼓浪屿",
+      "name": "鼓浪嶼",
       "nameEn": "Gulangyu Island",
       "category": "cultural",
       "image": "/img/ext/24c78d4bdbb8.webp",
-      "description": "A UNESCO World Heritage island known for its colonial architecture, piano museum, and car-free streets. Features over 1,000 historical buildings and stunning ocean views.",
-      "address": "Gulangyu Island, Siming District",
+      "description": "聯合國教科文組織世界遺產島嶼，以殖民時期建築、鋼琴博物館和無車街道聞名。擁有超過1000座歷史建築和令人驚嘆的海景。",
+      "address": "思明區鼓浪嶼",
       "coordinates": {
         "lat": 24.4455,
         "lng": 118.0719
       },
-      "openingHours": "Open 24 hours (ferry 7:10-17:30)",
+      "openingHours": "全天開放（渡輪07:10-17:30）",
       "ticketPrice": "Free (ferry 35-50¥ round trip, attractions separate)",
       "recommendedVisitTime": "4-5小時",
       "highlights": [
-        "Piano Museum",
-        "Shuzhuang Garden",
-        "Sunlight Rock",
+        "鋼琴博物館",
+        "菽莊花園",
+        "日光巖",
         "殖民時期建築"
       ],
-      "tips": "Book ferry tickets in advance during holidays. Rent an audio guide at the pier. Best explored on foot - no cars allowed. Visit in early morning for fewer crowds.",
+      "tips": "假日請提前預訂渡輪船票。可在碼頭租借語音導覽。島上禁止汽車，最適合步行探索。建議清晨前往，避開人潮。",
       "phone": "+86 592 206 7284"
     },
     {
@@ -62,27 +62,27 @@
       "nameEn": "Nanputuo Temple",
       "category": "cultural",
       "image": "/img/ext/9711badd781a.webp",
-      "description": "One of the most important Buddhist temples in Fujian, set against the backdrop of Five Old Men Peak. Known for vegetarian restaurant and beautiful architecture.",
-      "address": "515 Siming Road, Siming District",
+      "description": "福建最重要的佛教寺廟之一，背靠五老峰。以素食餐廳和優美建築聞名。",
+      "address": "思明區思明南路515號",
       "coordinates": {
         "lat": 24.4377,
         "lng": 118.0937
       },
-      "openingHours": "03:00-18:00 ( temple), 08:30-17:00 (mountain)",
+      "openingHours": "03:00-18:00（寺廟），08:30-17:00（山區）",
       "ticketPrice": "Free (mountain 10¥)",
       "recommendedVisitTime": "2-3小時",
       "highlights": [
         "大雄寶殿",
-        "Five Old Men Peak",
-        "Buddhist College",
+        "五老峰",
+        "佛教學院",
         "素食餐廳"
       ],
-      "tips": "Climb the mountain for panoramic city views. Don't miss the vegetarian noodles at the temple restaurant. Respect Buddhist customs - dress modestly.",
+      "tips": "攀登山峰可俯瞰城市全景。別錯過寺廟餐廳的素麵。請尊重佛教習俗，衣著端莊。",
       "phone": "+86 592 208 7235"
     },
     {
       "id": "xiamen-university",
-      "name": "厦门大学",
+      "name": "廈門大學",
       "nameEn": "Xiamen University",
       "category": "cultural",
       "image": "/img/ext/c4a62854362b.webp",
@@ -106,12 +106,12 @@
     },
     {
       "id": "huandao-road",
-      "name": "环岛路",
+      "name": "環島路",
       "nameEn": "環島路",
       "category": "natural",
       "image": "/img/ext/0a94399d0cbd.webp",
-      "description": "一條風景優美的31公里沿海公路，提供美麗的海景、沙灘和公園。非常適合騎自行車、慢跑或休閒駕車，中途可在各個海灘區停留。",
-      "address": "從湖里區到翔安區的沿海公路",
+      "description": "一條風景優美的31公裡沿海公路，提供美麗的海景、沙灘和公園。非常適合騎自行車、慢跑或休閒駕車，中途可在各個海灘區停留。",
+      "address": "從湖裡區到翔安區的沿海公路",
       "coordinates": {
         "lat": 24.4612,
         "lng": 118.1056
@@ -120,7 +120,7 @@
       "ticketPrice": "免費",
       "recommendedVisitTime": "2-4小時",
       "highlights": [
-        "湖里山公園",
+        "湖裡山公園",
         "集美學村",
         "鼓浪嶼景觀",
         "蘇寧灣"
@@ -154,7 +154,7 @@
     },
     {
       "id": "jimei-school-village",
-      "name": "集美学村",
+      "name": "集美學村",
       "nameEn": "集美學村",
       "category": "cultural",
       "image": "/img/ext/0de035476377.webp",
@@ -183,21 +183,21 @@
       "category": "cultural",
       "image": "/img/ext/8be41735cef1.webp",
       "description": "廈門最古老的漁港，現已轉變為時尚的藝術與餐飲區，同時保留了傳統漁村的特色。",
-      "address": "Shapowei, Siming District",
+      "address": "思明區沙坡尾",
       "coordinates": {
         "lat": 24.4412,
         "lng": 118.0832
       },
-      "openingHours": "Open 24 hours (shops/restaurants 10:00-22:00)",
+      "openingHours": "24小時開放（商店/餐廳10:00-22:00）",
       "ticketPrice": "免費",
       "recommendedVisitTime": "2-3小時",
       "highlights": [
-        "Fishing boats",
-        "Art districts",
-        "Waterfront bars",
-        "Traditional vs modern contrast"
+        "漁船",
+        "藝術區",
+        "海濱酒吧",
+        "傳統與現代對比"
       ],
-      "tips": "Best during blue hour for photos. Explore the art spaces and galleries. Fresh seafood available from local vendors. Evening atmosphere is fantastic.",
+      "tips": "藍調時刻拍照最佳。探索藝術空間和畫廊。當地攤販提供新鮮海產。夜晚氛圍絕佳。",
       "phone": "+86 059 2 2862 7390"
     },
     {
@@ -206,8 +206,8 @@
       "nameEn": "Zengcuo'an",
       "category": "cultural",
       "image": "/img/ext/de29f9e7f602.webp",
-      "description": "A former fishing village turned bustling tourist town famous for its maze-like alleys, local snacks, handcraft shops, and vibrant nightlife.",
-      "address": "Zengcuo'an, Siming District",
+      "description": "一個從漁村轉變為繁華觀光小鎮的地方，以迷宮般的巷弄、在地小吃、手工藝品店和充滿活力的夜生活聞名。",
+      "address": "思明區曾厝垵",
       "coordinates": {
         "lat": 24.4402,
         "lng": 118.1092
@@ -216,46 +216,46 @@
       "ticketPrice": "免費",
       "recommendedVisitTime": "2-4小時",
       "highlights": [
-        "Wenyu Ferry",
+        "文裕渡口",
         "當地小吃",
         "手工藝品商店",
-        "Temple of Tianzhu"
+        "天竺寺"
       ],
-      "tips": "Get lost in the alleys intentionally. Try local snacks like土笋冻 and沙茶面. Night market atmosphere after sunset. Can be very crowded during holidays.",
+      "tips": "Get lost in the alleys intentionally. Try local snacks like土筍凍 and沙茶麵. Night market atmosphere after sunset. Can be very crowded during holidays.",
       "phone": "+86 059 2 8652 0315"
     },
     {
       "id": "xiamen-underwater-world",
-      "name": "厦门海底世界",
+      "name": "廈門海底世界",
       "nameEn": "Xiamen Underwater World",
       "category": "modern",
       "image": "/img/ext/d9e1e34b36a1.webp",
-      "description": "One of the largest underwater exhibitions in Asia, featuring a 15-meter underwater tunnel and diverse marine life including sharks, sea turtles, and colorful fish.",
-      "address": "2 Luling Road, Gulangyu Island",
+      "description": "亞洲最大的水下展覽之一，擁有15公尺長的水下隧道和多樣化的海洋生物，包括鯊魚、海龜和色彩繽紛的魚類。",
+      "address": "鼓浪嶼鹿礁路2號",
       "coordinates": {
         "lat": 24.4425,
         "lng": 118.0708
       },
-      "openingHours": "08:00-18:00 (summer), 08:30-17:30 (winter)",
+      "openingHours": "08:00-18:00（夏季），08:30-17:30（冬季）",
       "ticketPrice": "90¥",
       "recommendedVisitTime": "1.5-2小時",
       "highlights": [
-        "15m underwater tunnel",
-        "Giant sea turtles",
-        "Shark feeding",
-        "Dolphin show"
+        "15公尺水下隧道",
+        "巨型海龜",
+        "鯊魚餵食",
+        "海豚表演"
       ],
-      "tips": "Go early to avoid school groups. Allow time for dolphin show schedule. Combine with other Gulangyu attractions. Air-conditioned - good escape from summer heat.",
+      "tips": "提早前往以避開學生團體。預留時間觀看海豚表演時段。可搭配鼓浪嶼其他景點一同遊覽。有空調，是避暑的好去處。",
       "phone": "+86 059 2 6799 3134"
     },
     {
       "id": "piano-museum",
-      "name": "钢琴博物馆",
+      "name": "鋼琴博物館",
       "nameEn": "Piano Museum (Gulangyu)",
       "category": "cultural",
       "image": "/img/ext/8e682fed6dce.webp",
-      "description": "Houses over 40 antique pianos from different eras, including a rare 1796 grand piano. Located in Shuzhuang Garden on Gulangyu Island.",
-      "address": "Shuzhuang Garden, Gulangyu Island",
+      "description": "收藏超過40臺來自不同時期的古董鋼琴，包括一臺罕見的1796年平臺鋼琴。位於鼓浪嶼的菽莊花園內。",
+      "address": "鼓浪嶼菽莊花園",
       "coordinates": {
         "lat": 24.4438,
         "lng": 118.0685
@@ -264,22 +264,22 @@
       "ticketPrice": "Included in Shuzhuang Garden ticket (30¥)",
       "recommendedVisitTime": "45 minutes",
       "highlights": [
-        "Antique piano collection",
-        "Automatic piano performances",
+        "古董鋼琴收藏",
+        "自動鋼琴演奏",
         "19世紀樂器",
         "鋼琴歷史展覽"
       ],
-      "tips": "Check timing for automatic piano performances. Photography allowed without flash. Combine with Shuzhuang Garden visit. Audio guide recommended.",
+      "tips": "請查詢自動鋼琴演奏的時間。允許不使用閃光燈拍照。可搭配菽莊花園一同參觀。建議使用語音導覽。",
       "phone": "+86 059 2 6657 0104"
     },
     {
       "id": "sunlight-rock",
-      "name": "日光岩",
-      "nameEn": "日光岩 (Riguang Yan)",
+      "name": "日光巖",
+      "nameEn": "日光巖 (Riguang Yan)",
       "category": "natural",
       "image": "/img/ext/447d0f95da41.webp",
-      "description": "位於鼓浪嶼的最高點，提供360度全景視野，可俯瞰廈門灣及周圍區域。景點包括古老的岩石刻文和一座小廟。",
-      "address": "鼓浪嶼日光岩",
+      "description": "位於鼓浪嶼的最高點，提供360度全景視野，可俯瞰廈門灣及周圍區域。景點包括古老的巖石刻文和一座小廟。",
+      "address": "鼓浪嶼日光巖",
       "coordinates": {
         "lat": 24.4472,
         "lng": 118.0642
@@ -293,36 +293,36 @@
         "古代碑刻",
         "海恆寺"
       ],
-      "tips": "建議日出時前往，人潮較少且景色迷人。攀爬100級台階，請穿舒適的鞋子。建議早晨參觀以避開午後的炎熱。",
+      "tips": "建議日出時前往，人潮較少且景色迷人。攀爬100級臺階，請穿舒適的鞋子。建議早晨參觀以避開午後的炎熱。",
       "phone": "+86 059 2 8896 0196"
     },
     {
       "id": "shuzhuang-garden",
-      "name": "菽庄花园",
+      "name": "菽莊花園",
       "nameEn": "Shuzhuang Garden",
       "category": "cultural",
       "image": "/img/ext/7dbb581cac0d.webp",
-      "description": "一座美麗的海濱花園，擁有傳統的中式建築、鋼琴博物館和壯麗的海岸景色。由一位富有的台灣商人於1913年建造。",
+      "description": "一座美麗的海濱花園，擁有傳統的中式建築、鋼琴博物館和壯麗的海岸景色。由一位富有的臺灣商人於1913年建造。",
       "address": "Gulangyu Island",
       "coordinates": {
         "lat": 24.4435,
         "lng": 118.0685
       },
       "openingHours": "07:00-18:30（夏季），07:30-17:30（冬季）",
-      "ticketPrice": "30¥（與日光岩聯票90¥）",
+      "ticketPrice": "30¥（與日光巖聯票90¥）",
       "recommendedVisitTime": "1.5小時",
       "highlights": [
         "海濱花園",
-        "Piano Museum",
+        "鋼琴博物館",
         "42橋",
         "福建建築"
       ],
-      "tips": "早晨光線最適合攝影。42橋步道獨具特色。與日光岩結合可獲得完整體驗。漲潮時景色更美。",
+      "tips": "早晨光線最適合攝影。42橋步道獨具特色。與日光巖結合可獲得完整體驗。漲潮時景色更美。",
       "phone": "+86 059 2 0108 9050"
     },
     {
       "id": "xiamen-haiceng-park",
-      "name": "海沧湾公园",
+      "name": "海滄灣公園",
       "nameEn": "海滄公園",
       "category": "natural",
       "image": "/img/ext/66a5257eeb95.webp",
@@ -346,7 +346,7 @@
     },
     {
       "id": "tianzhushan-forest-park",
-      "name": "天竺山森林公园",
+      "name": "天竺山森林公園",
       "nameEn": "天竺山森林公園",
       "category": "natural",
       "image": "/img/ext/a02f4a9b5a72.webp",
@@ -370,7 +370,7 @@
     },
     {
       "id": "xiamen-amusement-center",
-      "name": "厦门游乐园",
+      "name": "廈門遊樂園",
       "nameEn": "廈門遊樂中心",
       "category": "modern",
       "image": "/img/ext/abc45db7e8d3.webp",
@@ -394,11 +394,11 @@
     },
     {
       "id": "xiamen-botanical-garden",
-      "name": "厦门园林植物园",
+      "name": "廈門園林植物園",
       "nameEn": "Xiamen Botanical Garden",
       "category": "natural",
       "image": "/img/ext/bc805c264483.webp",
-      "description": "一個廣闊的植物園，擁有熱帶植物、多肉植物收藏以及著名的岩石景觀。以熱帶雨林步道聞名。",
+      "description": "一個廣闊的植物園，擁有熱帶植物、多肉植物收藏以及著名的巖石景觀。以熱帶雨林步道聞名。",
       "address": "福建省廈門市思明區虎園路25號",
       "coordinates": {
         "lat": 24.4345,
@@ -418,11 +418,11 @@
     },
     {
       "id": "dadeng-island",
-      "name": "大嶝岛",
+      "name": "大嶝島",
       "nameEn": "大嶝島",
       "category": "cultural",
       "image": "/img/ext/974549d65160.webp",
-      "description": "一個以傳統閩南習俗、海岸風光及1949年轟炸相關歷史古蹟聞名的小島。與大陸有橋樑相連。",
+      "description": "一個以傳統閩南習俗、海岸風光及1949年轟炸相關歷史古蹟聞名的小島。與大陸有橋梁相連。",
       "address": "大嶝島，廈門市翔安區",
       "coordinates": {
         "lat": 24.5325,
@@ -442,7 +442,7 @@
     },
     {
       "id": "fujian-mazu-temple",
-      "name": "福建妈祖庙",
+      "name": "福建媽祖廟",
       "nameEn": "媽祖廟（廈門）",
       "category": "cultural",
       "image": "/img/ext/f5326b93b3ca.webp",
@@ -466,7 +466,7 @@
     },
     {
       "id": "huoshao-island",
-      "name": "火烧屿",
+      "name": "火燒嶼",
       "nameEn": "Huoshao Island",
       "category": "natural",
       "image": "/img/ext/675814b483b2.webp",
@@ -490,12 +490,12 @@
     },
     {
       "id": "xiamen-science-center",
-      "name": "厦门科技馆",
+      "name": "廈門科技館",
       "nameEn": "Xiamen Science Center",
       "category": "modern",
       "image": "/img/ext/dd684065f301.webp",
       "description": "一座現代化的科學博物館，設有涵蓋物理學、天文學和科技的互動展覽。設有IMAX圓頂劇院和動手實驗。",
-      "address": "湖里區漳州路95-97號",
+      "address": "湖裡區漳州路95-97號",
       "coordinates": {
         "lat": 24.4952,
         "lng": 118.0925
@@ -514,7 +514,7 @@
     },
     {
       "id": "xiamen-golf-course",
-      "name": "厦门高尔夫球场",
+      "name": "廈門高爾夫球場",
       "nameEn": "廈門高爾夫球俱樂部",
       "category": "modern",
       "image": "/img/ext/d7beef165a0e.webp",
@@ -538,8 +538,8 @@
     },
     {
       "id": "xiamen-hulii-beach",
-      "name": "胡里山炮台",
-      "nameEn": "廈門胡里山炮台",
+      "name": "胡裡山炮臺",
+      "nameEn": "廈門胡裡山炮臺",
       "category": "historical",
       "image": "/img/ext/4538cf4fe604.webp",
       "description": "建於1894年清代的歷史堡壘，展示了世界上現存最大的海岸炮。定時有砲擊表演。",
@@ -562,7 +562,7 @@
     },
     {
       "id": "xiamen-ronghua-shan",
-      "name": "厦门岛内山",
+      "name": "廈門島內山",
       "nameEn": "榮華山",
       "category": "nature",
       "image": "/img/ext/ea71a28d01bf.webp",
@@ -586,7 +586,7 @@
     },
     {
       "id": "xiamen-yuqingshan",
-      "name": "厦门园林博览苑",
+      "name": "廈門園林博覽苑",
       "nameEn": "廈門園博園",
       "category": "cultural",
       "image": "/img/ext/0e20caf1aae1.webp",
@@ -603,14 +603,14 @@
         "地區花園",
         "浮橋",
         "蓮花",
-        "Boat tours"
+        "遊船"
       ],
       "tips": "春季賞花最佳。搭乘遊船可欣賞美景。可在此度過半天。非常適合攝影愛好者。",
       "phone": "+86 059 2 2356 8244"
     },
     {
       "id": "xiamen-furong-tunnel",
-      "name": "厦门芙蓉隧道",
+      "name": "廈門芙蓉隧道",
       "nameEn": "Furong Tunnel",
       "category": "cultural",
       "image": "/img/ext/f5e115604d3c.webp",
@@ -634,11 +634,11 @@
     },
     {
       "id": "xm-gulangyu",
-      "name": "鼓浪屿",
+      "name": "鼓浪嶼",
       "nameEn": "Gulangyu Island",
       "category": "street",
-      "description": "世界文化遗产，有万国建筑和钢琴之岛之称。",
-      "address": "厦门市思明区",
+      "description": "世界文化遺產，有萬國建築和鋼琴之島之稱。",
+      "address": "廈門市思明區",
       "coordinates": {
         "lat": 24.45,
         "lng": 118.07
@@ -647,34 +647,34 @@
       "ticketPrice": "35元船票",
       "recommendedVisitTime": "全天",
       "highlights": [
-        "万国建筑",
-        "钢琴",
-        "日光岩"
+        "萬國建築",
+        "鋼琴",
+        "日光巖"
       ],
-      "tips": "必去鼓浪屿。",
+      "tips": "必去鼓浪嶼。",
       "image": "/img/ext/309f30e43563.webp",
       "phone": "+86 592 206 7284"
     },
     {
       "id": "xm-university",
-      "name": "厦门大学",
+      "name": "廈門大學",
       "nameEn": "Xiamen University",
       "category": "landmark",
-      "description": "中国最美丽的大学之一，有芙蓉湖和芙蓉隧道。",
-      "address": "厦门市思明区",
+      "description": "中國最美麗的大學之一，有芙蓉湖和芙蓉隧道。",
+      "address": "廈門市思明區",
       "coordinates": {
         "lat": 24.45,
         "lng": 118.1
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "2小時",
       "highlights": [
         "芙蓉湖",
         "芙蓉隧道",
-        "涂鸦"
+        "塗鴉"
       ],
-      "tips": "了解厦门教育。",
+      "tips": "了解廈門教育。",
       "image": "/img/ext/20ba084c3257.webp",
       "phone": "+86 059 2 3136 7947"
     },
@@ -683,21 +683,21 @@
       "name": "中山路",
       "nameEn": "中山路",
       "category": "street",
-      "description": "厦门最古老的商业骑楼街。",
-      "address": "厦门市思明区",
+      "description": "廈門最古老的商業騎樓街。",
+      "address": "廈門市思明區",
       "coordinates": {
         "lat": 24.45,
         "lng": 118.08
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "2小時",
       "highlights": [
-        "骑楼",
+        "騎樓",
         "小吃",
-        "购物"
+        "購物"
       ],
-      "tips": "品尝厦门小吃。",
+      "tips": "品嘗廈門小吃。",
       "image": "/img/ext/5c9f5c1a4c9e.webp",
       "phone": "+86 059 2 6495 4219"
     },
@@ -706,53 +706,53 @@
       "name": "南普陀寺",
       "nameEn": "Nanputuo Temple",
       "category": "temple",
-      "description": "闽南佛教圣地，有千年历史。",
-      "address": "厦门市思明区",
+      "description": "閩南佛教聖地，有千年歷史。",
+      "address": "廈門市思明區",
       "coordinates": {
         "lat": 24.45,
         "lng": 118.1
       },
       "openingHours": "03:00-20:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "1.5小時",
       "highlights": [
         "佛教文化",
-        "素斋"
+        "素齋"
       ],
-      "tips": "品尝素斋。",
+      "tips": "品嘗素齋。",
       "image": "/img/ext/90c2f10df87a.webp",
       "phone": "+86 592 208 6586"
     },
     {
       "id": "xm-huan-island",
-      "name": "环岛路",
+      "name": "環島路",
       "nameEn": "Island Ring Road",
       "category": "landmark",
-      "description": "厦门最美的海滨大道，全长43公里。",
-      "address": "厦门市思明区",
+      "description": "廈門最美的海濱大道，全長43公裡。",
+      "address": "廈門市思明區",
       "coordinates": {
         "lat": 24.45,
         "lng": 118.1
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "2小時",
       "highlights": [
-        "海滨",
-        "骑行",
-        "沙滩"
+        "海濱",
+        "騎行",
+        "沙灘"
       ],
-      "tips": "骑行看海。",
+      "tips": "騎行看海。",
       "image": "/img/ext/428e7e0eb9b1.webp",
       "phone": "+86 059 2 1144 8234"
     },
     {
       "id": "xm-food",
-      "name": "厦门美食",
+      "name": "廈門美食",
       "nameEn": "Xiamen Food",
       "category": "street",
-      "description": "厦门有沙茶面和各种海鲜小吃。",
-      "address": "厦门市",
+      "description": "廈門有沙茶麵和各種海鮮小吃。",
+      "address": "廈門市",
       "coordinates": {
         "lat": 24.45,
         "lng": 118.08
@@ -761,42 +761,42 @@
       "ticketPrice": "人均50元",
       "recommendedVisitTime": "全天",
       "highlights": [
-        "沙茶面",
-        "海蛎煎",
-        "土笋冻"
+        "沙茶麵",
+        "海蠣煎",
+        "土筍凍"
       ],
-      "tips": "品尝厦门美食。",
+      "tips": "品嘗廈門美食。",
       "image": "/img/ext/49fc2b738f60.webp",
       "phone": "+86 059 2 6594 3541"
     },
     {
       "id": "xm-museum",
-      "name": "厦门博物馆",
+      "name": "廈門博物館",
       "nameEn": "Xiamen Museum",
       "category": "museum",
-      "description": "展示厦门历史的博物馆。",
-      "address": "厦门市思明区",
+      "description": "展示廈門歷史的博物館。",
+      "address": "廈門市思明區",
       "coordinates": {
         "lat": 24.45,
         "lng": 118.08
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "1.5小時",
       "highlights": [
-        "厦门历史"
+        "廈門歷史"
       ],
-      "tips": "了解厦门文化。",
+      "tips": "了解廈門文化。",
       "image": "/img/ext/0a3cdc7c50d4.webp",
       "phone": "+86 059 2 1182 2991"
     },
     {
       "id": "xm-wanshi",
-      "name": "万石植物园",
+      "name": "萬石植物園",
       "nameEn": "Wanshi Botanical Garden",
       "category": "nature",
-      "description": "厦门最大的植物园。",
-      "address": "厦门市思明区",
+      "description": "廈門最大的植物園。",
+      "address": "廈門市思明區",
       "coordinates": {
         "lat": 24.45,
         "lng": 118.1
@@ -806,51 +806,51 @@
       "recommendedVisitTime": "半天",
       "highlights": [
         "植物",
-        "热带雨林"
+        "熱帶雨林"
       ],
-      "tips": "休闲好去处。",
+      "tips": "休閒好去處。",
       "image": "/img/ext/21029773e8bc.webp",
       "phone": "+86 059 2 6782 9041"
     },
     {
       "id": "xm-night",
-      "name": "厦门夜景",
+      "name": "廈門夜景",
       "nameEn": "廈門夜景",
       "category": "landmark",
-      "description": "鼓浪屿和环岛路的夜景。",
-      "address": "厦门市思明区",
+      "description": "鼓浪嶼和環島路的夜景。",
+      "address": "廈門市思明區",
       "coordinates": {
         "lat": 24.45,
         "lng": 118.08
       },
-      "openingHours": "夜间",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "openingHours": "夜間",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "1小時",
       "highlights": [
-        "灯光秀",
+        "燈光秀",
         "夜景"
       ],
-      "tips": "夏季夜间最美。",
+      "tips": "夏季夜間最美。",
       "image": "/img/ext/b9bc3ef03fa1.webp",
       "phone": "+86 059 2 3517 0233"
     },
     {
       "id": "xm-beach",
-      "name": "白城沙滩",
+      "name": "白城沙灘",
       "nameEn": "白城海灘",
       "category": "beach",
-      "description": "厦门最美的海滩之一。",
-      "address": "厦门市思明区",
+      "description": "廈門最美的海灘之一。",
+      "address": "廈門市思明區",
       "coordinates": {
         "lat": 24.45,
         "lng": 118.1
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
+      "ticketPrice": "免費",
       "recommendedVisitTime": "半天",
       "highlights": [
-        "沙滩",
-        "游泳"
+        "沙灘",
+        "遊泳"
       ],
       "tips": "夏季最佳。",
       "image": "/img/ext/a2b51e6e32bc.webp",
@@ -861,40 +861,40 @@
       "name": "曾厝垵",
       "nameEn": "Zengcuo'an",
       "category": "street",
-      "description": "厦门最文艺的渔村，有各种小吃和手工艺品。",
-      "address": "厦门市思明区",
+      "description": "廈門最文藝的漁村，有各種小吃和手工藝品。",
+      "address": "廈門市思明區",
       "coordinates": {
         "lat": 24.45,
         "lng": 118.1
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "2小時",
       "highlights": [
-        "文艺",
+        "文藝",
         "小吃",
-        "手工艺品"
+        "手工藝品"
       ],
-      "tips": "感受厦门文艺。",
+      "tips": "感受廈門文藝。",
       "image": "/img/ext/bd5ca3feb6ba.webp",
       "phone": "+86 059 2 5907 4451"
     },
     {
       "id": "xm-bridge",
-      "name": "海沧大桥",
+      "name": "海滄大橋",
       "nameEn": "海滄大橋",
       "category": "landmark",
-      "description": "横跨海峡的大桥。",
-      "address": "厦门市",
+      "description": "橫跨海峽的大橋。",
+      "address": "廈門市",
       "coordinates": {
         "lat": 24.45,
         "lng": 118.03
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "30分钟",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "30分鐘",
       "highlights": [
-        "大桥",
+        "大橋",
         "海景"
       ],
       "tips": "看海景。",
@@ -903,40 +903,40 @@
     },
     {
       "id": "xm-park",
-      "name": "白鹭洲公园",
+      "name": "白鷺洲公園",
       "nameEn": "Egret Island Park",
       "category": "park",
-      "description": "厦门最大的城市公园。",
-      "address": "厦门市思明区",
+      "description": "廈門最大的城市公園。",
+      "address": "廈門市思明區",
       "coordinates": {
         "lat": 24.45,
         "lng": 118.08
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "1.5小時",
       "highlights": [
-        "公园",
-        "白鹭"
+        "公園",
+        "白鷺"
       ],
-      "tips": "休闲好去处。",
+      "tips": "休閒好去處。",
       "image": "/img/ext/220befe8208d.webp",
       "phone": "+86 059 2 4964 7385"
     },
     {
       "id": "xm-temple",
-      "name": "开元寺",
+      "name": "開元寺",
       "nameEn": "開元寺",
       "category": "temple",
-      "description": "厦门最古老的佛教寺院。",
-      "address": "厦门市思明区",
+      "description": "廈門最古老的佛教寺院。",
+      "address": "廈門市思明區",
       "coordinates": {
         "lat": 24.45,
         "lng": 118.08
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "1小時",
       "highlights": [
         "古寺",
         "佛教文化"
@@ -950,21 +950,21 @@
       "name": "八市",
       "nameEn": "八市",
       "category": "street",
-      "description": "厦门最古老的菜市场，有各种海鲜和小吃。",
-      "address": "厦门市思明区",
+      "description": "廈門最古老的菜市場，有各種海鮮和小吃。",
+      "address": "廈門市思明區",
       "coordinates": {
         "lat": 24.45,
         "lng": 118.08
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "1.5小時",
       "highlights": [
-        "海鲜",
+        "海鮮",
         "小吃",
         "市井生活"
       ],
-      "tips": "体验厦门生活。",
+      "tips": "體驗廈門生活。",
       "image": "/img/ext/39e307f398db.webp",
       "phone": "+86 059 2 4139 0440"
     },
@@ -973,95 +973,95 @@
       "name": "五老峰",
       "nameEn": "五老峰",
       "category": "nature",
-      "description": "南普陀寺后面的山峰。",
-      "address": "厦门市思明区",
+      "description": "南普陀寺後面的山峰。",
+      "address": "廈門市思明區",
       "coordinates": {
         "lat": 24.45,
         "lng": 118.1
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "2小時",
       "highlights": [
         "山峰",
         "城市全景"
       ],
-      "tips": "登高望远。",
+      "tips": "登高望遠。",
       "image": "/img/ext/e528126ef988.webp",
       "phone": "+86 059 2 1473 9320"
     },
     {
       "id": "xm-art",
-      "name": "厦门美术馆",
+      "name": "廈門美術館",
       "nameEn": "Xiamen Art Museum",
       "category": "museum",
-      "description": "展示中外美术作品。",
-      "address": "厦门市思明区",
+      "description": "展示中外美術作品。",
+      "address": "廈門市思明區",
       "coordinates": {
         "lat": 24.45,
         "lng": 118.08
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "1小時",
       "highlights": [
-        "美术展览"
+        "美術展覽"
       ],
-      "tips": "了解艺术文化。",
+      "tips": "了解藝術文化。",
       "image": "/img/ext/1de6d52e332a.webp",
       "phone": "+86 059 2 8387 4499"
     },
     {
       "id": "xm-bay",
-      "name": "五缘湾",
+      "name": "五緣灣",
       "nameEn": "Wuyuan Bay",
       "category": "nature",
-      "description": "厦门新开发的海湾。",
-      "address": "厦门市湖里区",
+      "description": "廈門新開發的海灣。",
+      "address": "廈門市湖裡區",
       "coordinates": {
         "lat": 24.5,
         "lng": 118.12
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "1小時",
       "highlights": [
-        "海湾",
+        "海灣",
         "帆船"
       ],
-      "tips": "休闲好去处。",
+      "tips": "休閒好去處。",
       "image": "/img/ext/e1b505496571.webp",
       "phone": "+86 059 2 2142 1306"
     },
     {
       "id": "xm-jiujiu",
-      "name": "集美学村",
+      "name": "集美學村",
       "nameEn": "集美學村",
       "category": "landmark",
-      "description": "陈嘉庚创办的学校群，有嘉庚建筑风格。",
-      "address": "厦门市集美区",
+      "description": "陳嘉庚創辦的學校群，有嘉庚建築風格。",
+      "address": "廈門市集美區",
       "coordinates": {
         "lat": 24.57,
         "lng": 118.1
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "2小時",
       "highlights": [
-        "嘉庚建筑",
-        "学校"
+        "嘉庚建築",
+        "學校"
       ],
-      "tips": "了解陈嘉庚文化。",
+      "tips": "了解陳嘉庚文化。",
       "image": "/img/ext/a411639509c5.webp",
       "phone": "+86 059 2 5124 3049"
     },
     {
       "id": "xm-tulou",
-      "name": "永定土楼",
+      "name": "永定土樓",
       "nameEn": "永定土樓",
       "category": "landmark",
-      "description": "世界文化遗产，有独特的圆形土楼。",
-      "address": "龙岩市永定区",
+      "description": "世界文化遺產，有獨特的圓形土樓。",
+      "address": "龍巖市永定區",
       "coordinates": {
         "lat": 24.72,
         "lng": 116.82
@@ -1070,7 +1070,7 @@
       "ticketPrice": "90元",
       "recommendedVisitTime": "半天",
       "highlights": [
-        "圆形土楼",
+        "圓形土樓",
         "客家文化"
       ],
       "tips": "了解客家文化。",
@@ -1079,63 +1079,63 @@
     },
     {
       "id": "xm-last1",
-      "name": "厦门科技馆",
+      "name": "廈門科技館",
       "nameEn": "廈門科技館",
       "category": "museum",
-      "description": "展示科技知识的博物馆。",
-      "address": "厦门市思明区",
+      "description": "展示科技知識的博物館。",
+      "address": "廈門市思明區",
       "coordinates": {
         "lat": 24.45,
         "lng": 118.08
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "1.5小時",
       "highlights": [
-        "科技展览"
+        "科技展覽"
       ],
-      "tips": "适合亲子游。",
+      "tips": "適合親子遊。",
       "image": "/img/ext/d99d4116a419.webp",
       "phone": "+86 059 2 6700 6223"
     },
     {
       "id": "xm-last2",
-      "name": "海湾公园",
+      "name": "海灣公園",
       "nameEn": "海灣公園",
       "category": "park",
-      "description": "厦门最大的海滨公园。",
-      "address": "厦门市思明区",
+      "description": "廈門最大的海濱公園。",
+      "address": "廈門市思明區",
       "coordinates": {
         "lat": 24.45,
         "lng": 118.08
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "1.5小時",
       "highlights": [
-        "海滨",
-        "公园"
+        "海濱",
+        "公園"
       ],
-      "tips": "休闲好去处。",
+      "tips": "休閒好去處。",
       "image": "/img/ext/1cfd6c8d0eae.webp",
       "phone": "+86 059 2 6132 4968"
     },
     {
       "id": "xm-last3",
-      "name": "五通灯塔",
+      "name": "五通燈塔",
       "nameEn": "梧桐燈塔",
       "category": "landmark",
-      "description": "厦门东部的灯塔。",
-      "address": "厦门市湖里区",
+      "description": "廈門東部的燈塔。",
+      "address": "廈門市湖裡區",
       "coordinates": {
         "lat": 24.52,
         "lng": 121.15
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "30分钟",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "30分鐘",
       "highlights": [
-        "灯塔",
+        "燈塔",
         "海景"
       ],
       "tips": "看海景。",
@@ -1144,45 +1144,45 @@
     },
     {
       "id": "xm-last4",
-      "name": "厦门老剧场文化中心",
+      "name": "廈門老劇場文化中心",
       "nameEn": "廈門老劇院文化中心",
       "category": "landmark",
-      "description": "厦门最古老的剧场。",
-      "address": "厦门市思明区",
+      "description": "廈門最古老的劇場。",
+      "address": "廈門市思明區",
       "coordinates": {
         "lat": 24.45,
         "lng": 118.08
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "30分钟",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "30分鐘",
       "highlights": [
-        "老剧场",
+        "老劇場",
         "文化"
       ],
-      "tips": "了解厦门文化。",
+      "tips": "了解廈門文化。",
       "image": "/img/ext/36fd8a925ce2.webp",
       "phone": "+86 059 2 2990 2168"
     },
     {
       "id": "xm-last5",
-      "name": "白鹭洲公园",
+      "name": "白鷺洲公園",
       "nameEn": "Egret Island Park",
       "category": "park",
-      "description": "厦门最大的城市公园。",
-      "address": "厦门市思明区",
+      "description": "廈門最大的城市公園。",
+      "address": "廈門市思明區",
       "coordinates": {
         "lat": 24.45,
         "lng": 118.08
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "1.5小時",
       "highlights": [
-        "公园",
-        "白鹭"
+        "公園",
+        "白鷺"
       ],
-      "tips": "休闲好去处。",
+      "tips": "休閒好去處。",
       "image": "/img/ext/7595c7c20aa3.webp",
       "phone": "+86 059 2 5680 2650"
     }
@@ -1190,7 +1190,7 @@
   "restaurants": [
     {
       "id": "xiamen-1",
-      "name": "厦门润丰吉祥石亭",
+      "name": "廈門潤豐吉祥石亭",
       "nameEn": "吉祥食堂",
       "type": "米其林",
       "star": 1,
@@ -1220,7 +1220,7 @@
     },
     {
       "id": "xiamen-2",
-      "name": "xm-s的优点",
+      "name": "xm-s的優點",
       "nameEn": "ISO",
       "type": "米其林",
       "star": 1,
@@ -1346,7 +1346,7 @@
       "cuisine": "廈門本地菜",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "123 Zhongshan Road, Siming District",
+      "address": "思明區中山路123號",
       "coordinates": {
         "lat": 24.4542,
         "lng": 118.0845
@@ -1476,7 +1476,7 @@
       },
       "phone": "+86 592 210 8888",
       "hours": "10:30-21:30",
-      "description": "專營傳統姜母鴨（薑母鴨）以及各種鴨肉料理的特色鴨肉餐廳。",
+      "description": "專營傳統薑母鴨（薑母鴨）以及各種鴨肉料理的特色鴨肉餐廳。",
       "dishHighlights": [
         "Ginger duck",
         "鴨血湯",
@@ -1499,7 +1499,7 @@
       "cuisine": "海鮮",
       "avgPrice": 200,
       "rating": 4.7,
-      "address": "8 Siming Road, Siming District",
+      "address": "思明區思明路8號",
       "coordinates": {
         "lat": 24.4485,
         "lng": 118.0895
@@ -1561,7 +1561,7 @@
       "cuisine": "福建",
       "avgPrice": 600,
       "rating": 4.8,
-      "address": "77 Lujiang Road, near Ferry Terminal",
+      "address": "廬江路77號，近渡輪碼頭",
       "coordinates": {
         "lat": 24.4565,
         "lng": 118.0785
@@ -1628,9 +1628,9 @@
       },
       "phone": "+86 592 208 9999",
       "hours": "10:00-21:00",
-      "description": "寺庙附近的本地餐厅，以素食选择和佛教风格的菜肴而闻名。",
+      "description": "寺廟附近的本地餐廳，以素食選擇和佛教風格的菜餚而聞名。",
       "dishHighlights": [
-        "佛跳墙火锅",
+        "佛跳牆火鍋",
         "炒蔬菜",
         "Rice with toppings"
       ],
@@ -1646,19 +1646,19 @@
     {
       "id": "xiamen-16",
       "name": "xm-longde",
-      "nameEn": "龙德",
+      "nameEn": "龍德",
       "type": "本地",
       "cuisine": "福建",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "中山路骑楼建筑",
+      "address": "中山路騎樓建築",
       "coordinates": {
         "lat": 24.4548,
         "lng": 118.0838
       },
       "phone": "+86 592 213 8888",
       "hours": "11:00-21:30",
-      "description": "自1920年代以来在骑楼建筑中提供传统闽南菜的知名餐厅。",
+      "description": "自1920年代以來在騎樓建築中提供傳統閩南菜的知名餐廳。",
       "dishHighlights": [
         "蠔仔煎",
         "Spring rolls",
@@ -1677,19 +1677,19 @@
     {
       "id": "xiamen-17",
       "name": "xm-zhaole",
-      "nameEn": "赵乐",
+      "nameEn": "趙樂",
       "type": "本地",
       "cuisine": "潮州菜",
       "avgPrice": 100,
       "rating": 4.4,
-      "address": "湖滨南路",
+      "address": "湖濱南路",
       "coordinates": {
         "lat": 24.4505,
         "lng": 118.1085
       },
       "phone": "+86 592 539 8888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "以精湛的烹饪技术和新鲜的食材而闻名的潮州风味餐厅。",
+      "description": "以精湛的烹飪技術和新鮮的食材而聞名的潮州風味餐廳。",
       "dishHighlights": [
         "清蒸魚",
         "滷鵝",
@@ -1699,7 +1699,7 @@
       "tags": [
         "潮州",
         "海鮮",
-        "精致"
+        "精緻"
       ],
       "star": 0,
       "diamond": 0,
@@ -1714,7 +1714,7 @@
       "cuisine": "融合料理",
       "avgPrice": 450,
       "rating": 4.7,
-      "address": "集美新城，程怡公园",
+      "address": "集美新城，程怡公園",
       "coordinates": {
         "lat": 24.4385,
         "lng": 118.0545
@@ -1861,7 +1861,7 @@
     },
     {
       "id": "xiamen-23",
-      "name": "厦门海底世界酒楼",
+      "name": "廈門海底世界酒樓",
       "nameEn": "海迪世界餐廳",
       "type": "本地",
       "cuisine": "海鮮",
@@ -1892,7 +1892,7 @@
     },
     {
       "id": "xiamen-24",
-      "name": "阿杰土笋冻",
+      "name": "阿傑土筍凍",
       "nameEn": "阿姐海蟲凍",
       "type": "本地",
       "cuisine": "小吃",
@@ -1923,7 +1923,7 @@
     },
     {
       "id": "xiamen-25",
-      "name": "集美学村大排档",
+      "name": "集美學村大排檔",
       "nameEn": "集美夜市",
       "type": "本地",
       "cuisine": "街頭小吃",
@@ -1954,28 +1954,28 @@
     },
     {
       "id": "xiamen-26",
-      "name": "街边花生汤",
-      "nameEn": "街边花生汤 (花生汤)",
+      "name": "街邊花生湯",
+      "nameEn": "街邊花生湯 (花生湯)",
       "type": "本地",
-      "cuisine": "花生汤",
+      "cuisine": "花生湯",
       "avgPrice": 139,
       "rating": 4.6,
-      "address": "厦门市市中心区美食街160号",
+      "address": "廈門市市中心區美食街160號",
       "coordinates": {
         "lat": 24.4599,
         "lng": 118.1123
       },
       "phone": "+86 0592 96939607",
       "hours": "06:00-14:00",
-      "description": "厦门本地人推荐的花生汤店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的花生湯店，味道正宗，價格實惠",
       "dishHighlights": [
-        "花生汤",
-        "土笋冻",
-        "沙茶面"
+        "花生湯",
+        "土筍凍",
+        "沙茶麵"
       ],
       "tags": [
-        "排队王",
-        "社区老店",
+        "排隊王",
+        "社區老店",
         "家常菜"
       ],
       "diamond": 0,
@@ -1983,57 +1983,57 @@
     },
     {
       "id": "xiamen-28",
-      "name": "巷子土笋冻",
-      "nameEn": "巷子土笋冻 (土笋冻)",
+      "name": "巷子土筍凍",
+      "nameEn": "巷子土筍凍 (土筍凍)",
       "type": "本地",
-      "cuisine": "土笋冻",
+      "cuisine": "土筍凍",
       "avgPrice": 50,
       "rating": 4.6,
-      "address": "厦门市老城区美食街111号",
+      "address": "廈門市老城區美食街111號",
       "coordinates": {
         "lat": 24.4671,
         "lng": 118.0692
       },
       "phone": "+86 0592 29497644",
       "hours": "06:00-14:00",
-      "description": "厦门本地人推荐的土笋冻店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的土筍凍店，味道正宗，價格實惠",
       "dishHighlights": [
-        "沙茶面",
-        "土笋冻",
-        "姜母鸭"
+        "沙茶麵",
+        "土筍凍",
+        "薑母鴨"
       ],
       "tags": [
-        "排队王",
-        "社区老店",
-        "性价比高"
+        "排隊王",
+        "社區老店",
+        "性價比高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/7147c52ceb16.webp"
     },
     {
       "id": "xiamen-30",
-      "name": "地道海蛎煎",
-      "nameEn": "地道海蛎煎 (海蛎煎)",
+      "name": "地道海蠣煎",
+      "nameEn": "地道海蠣煎 (海蠣煎)",
       "type": "街頭小吃",
-      "cuisine": "海蛎煎",
+      "cuisine": "海蠣煎",
       "avgPrice": 17,
       "rating": 4.5,
-      "address": "厦门市市中心区美食街196号",
+      "address": "廈門市市中心區美食街196號",
       "coordinates": {
         "lat": 24.4704,
         "lng": 118.081
       },
       "phone": "+86 0592 25581657",
       "hours": "06:00-14:00",
-      "description": "厦门本地人推荐的海蛎煎店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的海蠣煎店，味道正宗，價格實惠",
       "dishHighlights": [
-        "海蛎煎",
-        "姜母鸭",
-        "沙茶面"
+        "海蠣煎",
+        "薑母鴨",
+        "沙茶麵"
       ],
       "tags": [
         "小吃",
-        "网红打卡",
+        "網紅打卡",
         "夜市"
       ],
       "diamond": 0,
@@ -2041,115 +2041,115 @@
     },
     {
       "id": "xiamen-32",
-      "name": "厦门味姜母鸭",
-      "nameEn": "厦门味姜母鸭 (姜母鸭)",
+      "name": "廈門味薑母鴨",
+      "nameEn": "廈門味薑母鴨 (薑母鴨)",
       "type": "街頭小吃",
-      "cuisine": "姜母鸭",
+      "cuisine": "薑母鴨",
       "avgPrice": 26,
       "rating": 4.4,
-      "address": "厦门市老城区美食街30号",
+      "address": "廈門市老城區美食街30號",
       "coordinates": {
         "lat": 24.454,
         "lng": 118.0681
       },
       "phone": "+86 0592 66673607",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "厦门本地人推荐的姜母鸭店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的薑母鴨店，味道正宗，價格實惠",
       "dishHighlights": [
-        "花生汤",
-        "土笋冻",
-        "海蛎煎"
+        "花生湯",
+        "土筍凍",
+        "海蠣煎"
       ],
       "tags": [
         "小吃",
         "夜市",
-        "网红打卡"
+        "網紅打卡"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/75144b8941f4.webp"
     },
     {
       "id": "xiamen-34",
-      "name": "地道土笋冻",
-      "nameEn": "地道土笋冻 (土笋冻)",
+      "name": "地道土筍凍",
+      "nameEn": "地道土筍凍 (土筍凍)",
       "type": "街頭小吃",
-      "cuisine": "土笋冻",
+      "cuisine": "土筍凍",
       "avgPrice": 39,
       "rating": 4.1,
-      "address": "厦门市老城区美食街29号",
+      "address": "廈門市老城區美食街29號",
       "coordinates": {
         "lat": 24.445,
         "lng": 118.096
       },
       "phone": "+86 0592 53831172",
       "hours": "10:00-22:00",
-      "description": "厦门本地人推荐的土笋冻店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的土筍凍店，味道正宗，價格實惠",
       "dishHighlights": [
-        "海蛎煎",
-        "花生汤",
-        "沙茶面"
+        "海蠣煎",
+        "花生湯",
+        "沙茶麵"
       ],
       "tags": [
         "夜市",
-        "网红打卡",
-        "路边摊"
+        "網紅打卡",
+        "路邊攤"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/cbdc0af445c5.webp"
     },
     {
       "id": "xiamen-36",
-      "name": "正宗沙茶面",
-      "nameEn": "正宗沙茶面 (沙茶面)",
+      "name": "正宗沙茶麵",
+      "nameEn": "正宗沙茶麵 (沙茶麵)",
       "type": "本地",
-      "cuisine": "沙茶面",
+      "cuisine": "沙茶麵",
       "avgPrice": 98,
       "rating": 4.5,
-      "address": "厦门市市中心区美食街117号",
+      "address": "廈門市市中心區美食街117號",
       "coordinates": {
         "lat": 24.438,
         "lng": 118.0507
       },
       "phone": "+86 0592 48457518",
       "hours": "17:00-02:00",
-      "description": "厦门本地人推荐的沙茶面店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的沙茶麵店，味道正宗，價格實惠",
       "dishHighlights": [
-        "姜母鸭",
-        "沙茶面",
-        "花生汤"
+        "薑母鴨",
+        "沙茶麵",
+        "花生湯"
       ],
       "tags": [
-        "社区老店",
-        "隐藏美食",
-        "性价比高"
+        "社區老店",
+        "隱藏美食",
+        "性價比高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/92ae956f754c.webp"
     },
     {
       "id": "xiamen-38",
-      "name": "老厦门姜母鸭",
-      "nameEn": "老厦门姜母鸭 (姜母鸭)",
+      "name": "老廈門薑母鴨",
+      "nameEn": "老廈門薑母鴨 (薑母鴨)",
       "type": "街頭小吃",
-      "cuisine": "姜母鸭",
+      "cuisine": "薑母鴨",
       "avgPrice": 49,
       "rating": 4.6,
-      "address": "厦门市新城区美食街136号",
+      "address": "廈門市新城區美食街136號",
       "coordinates": {
         "lat": 24.4421,
         "lng": 118.1358
       },
       "phone": "+86 0592 95534949",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "厦门本地人推荐的姜母鸭店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的薑母鴨店，味道正宗，價格實惠",
       "dishHighlights": [
-        "沙茶面",
-        "海蛎煎",
-        "姜母鸭"
+        "沙茶麵",
+        "海蠣煎",
+        "薑母鴨"
       ],
       "tags": [
-        "路边摊",
-        "网红打卡",
+        "路邊攤",
+        "網紅打卡",
         "深夜美食"
       ],
       "diamond": 0,
@@ -2157,143 +2157,143 @@
     },
     {
       "id": "xiamen-40",
-      "name": "正宗海蛎煎",
-      "nameEn": "正宗海蛎煎 (海蛎煎)",
+      "name": "正宗海蠣煎",
+      "nameEn": "正宗海蠣煎 (海蠣煎)",
       "type": "本地",
-      "cuisine": "海蛎煎",
+      "cuisine": "海蠣煎",
       "avgPrice": 112,
       "rating": 4.8,
-      "address": "厦门市市中心区美食街162号",
+      "address": "廈門市市中心區美食街162號",
       "coordinates": {
         "lat": 24.4369,
         "lng": 118.134
       },
       "phone": "+86 0592 69841575",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "厦门本地人推荐的海蛎煎店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的海蠣煎店，味道正宗，價格實惠",
       "dishHighlights": [
-        "姜母鸭",
-        "花生汤",
-        "土笋冻"
+        "薑母鴨",
+        "花生湯",
+        "土筍凍"
       ],
       "tags": [
         "家常菜",
-        "排队王",
-        "老字号"
+        "排隊王",
+        "老字號"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/456a6faed599.webp"
     },
     {
       "id": "xiamen-42",
-      "name": "老字号姜母鸭",
-      "nameEn": "老字号姜母鸭 (姜母鸭)",
+      "name": "老字號薑母鴨",
+      "nameEn": "老字號薑母鴨 (薑母鴨)",
       "type": "本地",
-      "cuisine": "姜母鸭",
+      "cuisine": "薑母鴨",
       "avgPrice": 111,
       "rating": 4.5,
-      "address": "厦门市新城区美食街169号",
+      "address": "廈門市新城區美食街169號",
       "coordinates": {
         "lat": 24.4866,
         "lng": 118.0828
       },
       "phone": "+86 0592 85302404",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "厦门本地人推荐的姜母鸭店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的薑母鴨店，味道正宗，價格實惠",
       "dishHighlights": [
-        "沙茶面",
-        "土笋冻",
-        "花生汤"
+        "沙茶麵",
+        "土筍凍",
+        "花生湯"
       ],
       "tags": [
-        "老字号",
-        "隐藏美食",
-        "社区老店"
+        "老字號",
+        "隱藏美食",
+        "社區老店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/a41ae364ddc6.webp"
     },
     {
       "id": "xiamen-44",
-      "name": "正宗海蛎煎",
-      "nameEn": "正宗海蛎煎 (海蛎煎)",
+      "name": "正宗海蠣煎",
+      "nameEn": "正宗海蠣煎 (海蠣煎)",
       "type": "本地",
-      "cuisine": "海蛎煎",
+      "cuisine": "海蠣煎",
       "avgPrice": 140,
       "rating": 4.9,
-      "address": "厦门市新城区美食街52号",
+      "address": "廈門市新城區美食街52號",
       "coordinates": {
         "lat": 24.5017,
         "lng": 118.0944
       },
       "phone": "+86 0592 32486122",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "厦门本地人推荐的海蛎煎店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的海蠣煎店，味道正宗，價格實惠",
       "dishHighlights": [
-        "沙茶面",
-        "土笋冻",
-        "花生汤"
+        "沙茶麵",
+        "土筍凍",
+        "花生湯"
       ],
       "tags": [
-        "排队王",
-        "本地人爱去",
-        "老字号"
+        "排隊王",
+        "本地人愛去",
+        "老字號"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/8f35d99e2895.webp"
     },
     {
       "id": "xiamen-46",
-      "name": "老厦门土笋冻",
-      "nameEn": "老厦门土笋冻 (土笋冻)",
+      "name": "老廈門土筍凍",
+      "nameEn": "老廈門土筍凍 (土筍凍)",
       "type": "本地",
-      "cuisine": "土笋冻",
+      "cuisine": "土筍凍",
       "avgPrice": 123,
       "rating": 4.5,
-      "address": "厦门市新城区美食街118号",
+      "address": "廈門市新城區美食街118號",
       "coordinates": {
         "lat": 24.4321,
         "lng": 118.1104
       },
       "phone": "+86 0592 60279373",
       "hours": "10:00-22:00",
-      "description": "厦门本地人推荐的土笋冻店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的土筍凍店，味道正宗，價格實惠",
       "dishHighlights": [
-        "姜母鸭",
-        "海蛎煎",
-        "土笋冻"
+        "薑母鴨",
+        "海蠣煎",
+        "土筍凍"
       ],
       "tags": [
-        "老字号",
+        "老字號",
         "家常菜",
-        "本地人爱去"
+        "本地人愛去"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/0cbc82bf71b3.webp"
     },
     {
       "id": "xiamen-48",
-      "name": "正宗姜母鸭",
-      "nameEn": "正宗姜母鸭 (姜母鸭)",
+      "name": "正宗薑母鴨",
+      "nameEn": "正宗薑母鴨 (薑母鴨)",
       "type": "咖啡廳",
-      "cuisine": "姜母鸭",
+      "cuisine": "薑母鴨",
       "avgPrice": 52,
       "rating": 4.8,
-      "address": "厦门市新城区美食街81号",
+      "address": "廈門市新城區美食街81號",
       "coordinates": {
         "lat": 24.4518,
         "lng": 118.1173
       },
       "phone": "+86 0592 28645623",
       "hours": "06:00-14:00",
-      "description": "厦门本地人推荐的姜母鸭店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的薑母鴨店，味道正宗，價格實惠",
       "dishHighlights": [
-        "海蛎煎",
-        "沙茶面",
-        "花生汤"
+        "海蠣煎",
+        "沙茶麵",
+        "花生湯"
       ],
       "tags": [
-        "文艺",
+        "文藝",
         "下午茶",
         "咖啡"
       ],
@@ -2302,85 +2302,85 @@
     },
     {
       "id": "xiamen-50",
-      "name": "老街土笋冻",
-      "nameEn": "老街土笋冻 (土笋冻)",
+      "name": "老街土筍凍",
+      "nameEn": "老街土筍凍 (土筍凍)",
       "type": "本地",
-      "cuisine": "土笋冻",
+      "cuisine": "土筍凍",
       "avgPrice": 126,
       "rating": 4.9,
-      "address": "厦门市市中心区美食街33号",
+      "address": "廈門市市中心區美食街33號",
       "coordinates": {
         "lat": 24.4336,
         "lng": 118.0507
       },
       "phone": "+86 0592 20658169",
       "hours": "17:00-02:00",
-      "description": "厦门本地人推荐的土笋冻店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的土筍凍店，味道正宗，價格實惠",
       "dishHighlights": [
-        "沙茶面",
-        "花生汤",
-        "海蛎煎"
+        "沙茶麵",
+        "花生湯",
+        "海蠣煎"
       ],
       "tags": [
-        "性价比高",
+        "性價比高",
         "家常菜",
-        "老字号"
+        "老字號"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/48a090786f2f.webp"
     },
     {
       "id": "xiamen-52",
-      "name": "厦门味沙茶面",
-      "nameEn": "厦门味沙茶面 (沙茶面)",
+      "name": "廈門味沙茶麵",
+      "nameEn": "廈門味沙茶麵 (沙茶麵)",
       "type": "本地",
-      "cuisine": "沙茶面",
+      "cuisine": "沙茶麵",
       "avgPrice": 109,
       "rating": 4.1,
-      "address": "厦门市新城区美食街48号",
+      "address": "廈門市新城區美食街48號",
       "coordinates": {
         "lat": 24.4952,
         "lng": 118.0511
       },
       "phone": "+86 0592 76975550",
       "hours": "09:00-21:00",
-      "description": "厦门本地人推荐的沙茶面店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的沙茶麵店，味道正宗，價格實惠",
       "dishHighlights": [
-        "海蛎煎",
-        "花生汤",
-        "姜母鸭"
+        "海蠣煎",
+        "花生湯",
+        "薑母鴨"
       ],
       "tags": [
-        "老字号",
-        "排队王",
-        "社区老店"
+        "老字號",
+        "排隊王",
+        "社區老店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/4a3a08b8c137.webp"
     },
     {
       "id": "xiamen-54",
-      "name": "老街海蛎煎",
-      "nameEn": "老街海蛎煎 (海蛎煎)",
+      "name": "老街海蠣煎",
+      "nameEn": "老街海蠣煎 (海蠣煎)",
       "type": "街頭小吃",
-      "cuisine": "海蛎煎",
+      "cuisine": "海蠣煎",
       "avgPrice": 28,
       "rating": 4,
-      "address": "厦门市市中心区美食街57号",
+      "address": "廈門市市中心區美食街57號",
       "coordinates": {
         "lat": 24.5006,
         "lng": 118.0448
       },
       "phone": "+86 0592 79909030",
       "hours": "17:00-02:00",
-      "description": "厦门本地人推荐的海蛎煎店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的海蠣煎店，味道正宗，價格實惠",
       "dishHighlights": [
-        "海蛎煎",
-        "花生汤",
-        "姜母鸭"
+        "海蠣煎",
+        "花生湯",
+        "薑母鴨"
       ],
       "tags": [
-        "路边摊",
+        "路邊攤",
         "夜市",
         "小吃"
       ],
@@ -2389,143 +2389,143 @@
     },
     {
       "id": "xiamen-56",
-      "name": "阿婆土笋冻",
-      "nameEn": "阿婆土笋冻 (土笋冻)",
+      "name": "阿婆土筍凍",
+      "nameEn": "阿婆土筍凍 (土筍凍)",
       "type": "本地",
-      "cuisine": "土笋冻",
+      "cuisine": "土筍凍",
       "avgPrice": 146,
       "rating": 4.6,
-      "address": "厦门市市中心区美食街51号",
+      "address": "廈門市市中心區美食街51號",
       "coordinates": {
         "lat": 24.4429,
         "lng": 118.0553
       },
       "phone": "+86 0592 40761394",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "厦门本地人推荐的土笋冻店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的土筍凍店，味道正宗，價格實惠",
       "dishHighlights": [
-        "花生汤",
-        "海蛎煎",
-        "土笋冻"
+        "花生湯",
+        "海蠣煎",
+        "土筍凍"
       ],
       "tags": [
-        "本地人爱去",
+        "本地人愛去",
         "家常菜",
-        "排队王"
+        "排隊王"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/e76f24e15ffa.webp"
     },
     {
       "id": "xiamen-58",
-      "name": "地道花生汤",
-      "nameEn": "地道花生汤 (花生汤)",
+      "name": "地道花生湯",
+      "nameEn": "地道花生湯 (花生湯)",
       "type": "本地",
-      "cuisine": "花生汤",
+      "cuisine": "花生湯",
       "avgPrice": 138,
       "rating": 4.1,
-      "address": "厦门市新城区美食街33号",
+      "address": "廈門市新城區美食街33號",
       "coordinates": {
         "lat": 24.5248,
         "lng": 118.0977
       },
       "phone": "+86 0592 69781591",
       "hours": "17:00-02:00",
-      "description": "厦门本地人推荐的花生汤店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的花生湯店，味道正宗，價格實惠",
       "dishHighlights": [
-        "土笋冻",
-        "姜母鸭",
-        "沙茶面"
+        "土筍凍",
+        "薑母鴨",
+        "沙茶麵"
       ],
       "tags": [
-        "排队王",
-        "隐藏美食",
-        "性价比高"
+        "排隊王",
+        "隱藏美食",
+        "性價比高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ed3e34e3ccc6.webp"
     },
     {
       "id": "xiamen-60",
-      "name": "正宗花生汤",
-      "nameEn": "正宗花生汤 (花生汤)",
+      "name": "正宗花生湯",
+      "nameEn": "正宗花生湯 (花生湯)",
       "type": "本地",
-      "cuisine": "花生汤",
+      "cuisine": "花生湯",
       "avgPrice": 122,
       "rating": 4.9,
-      "address": "厦门市老城区美食街68号",
+      "address": "廈門市老城區美食街68號",
       "coordinates": {
         "lat": 24.435,
         "lng": 118.081
       },
       "phone": "+86 0592 79071430",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "厦门本地人推荐的花生汤店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的花生湯店，味道正宗，價格實惠",
       "dishHighlights": [
-        "沙茶面",
-        "海蛎煎",
-        "花生汤"
+        "沙茶麵",
+        "海蠣煎",
+        "花生湯"
       ],
       "tags": [
-        "老字号",
-        "性价比高",
-        "社区老店"
+        "老字號",
+        "性價比高",
+        "社區老店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/3f0e785a3e7b.webp"
     },
     {
       "id": "xiamen-62",
-      "name": "正宗花生汤",
-      "nameEn": "正宗花生汤 (花生汤)",
+      "name": "正宗花生湯",
+      "nameEn": "正宗花生湯 (花生湯)",
       "type": "本地",
-      "cuisine": "花生汤",
+      "cuisine": "花生湯",
       "avgPrice": 55,
       "rating": 4.8,
-      "address": "厦门市老城区美食街156号",
+      "address": "廈門市老城區美食街156號",
       "coordinates": {
         "lat": 24.5222,
         "lng": 118.0771
       },
       "phone": "+86 0592 55971487",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "厦门本地人推荐的花生汤店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的花生湯店，味道正宗，價格實惠",
       "dishHighlights": [
-        "土笋冻",
-        "沙茶面",
-        "花生汤"
+        "土筍凍",
+        "沙茶麵",
+        "花生湯"
       ],
       "tags": [
-        "隐藏美食",
-        "排队王",
-        "老字号"
+        "隱藏美食",
+        "排隊王",
+        "老字號"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/c9c40af51935.webp"
     },
     {
       "id": "xiamen-64",
-      "name": "传统沙茶面",
-      "nameEn": "传统沙茶面 (沙茶面)",
+      "name": "傳統沙茶麵",
+      "nameEn": "傳統沙茶麵 (沙茶麵)",
       "type": "街頭小吃",
-      "cuisine": "沙茶面",
+      "cuisine": "沙茶麵",
       "avgPrice": 48,
       "rating": 4.8,
-      "address": "厦门市老城区美食街17号",
+      "address": "廈門市老城區美食街17號",
       "coordinates": {
         "lat": 24.4777,
         "lng": 118.1391
       },
       "phone": "+86 0592 74244284",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "厦门本地人推荐的沙茶面店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的沙茶麵店，味道正宗，價格實惠",
       "dishHighlights": [
-        "海蛎煎",
-        "土笋冻",
-        "沙茶面"
+        "海蠣煎",
+        "土筍凍",
+        "沙茶麵"
       ],
       "tags": [
-        "网红打卡",
+        "網紅打卡",
         "夜市",
         "小吃"
       ],
@@ -2534,57 +2534,57 @@
     },
     {
       "id": "xiamen-66",
-      "name": "巷子土笋冻",
-      "nameEn": "巷子土笋冻 (土笋冻)",
+      "name": "巷子土筍凍",
+      "nameEn": "巷子土筍凍 (土筍凍)",
       "type": "本地",
-      "cuisine": "土笋冻",
+      "cuisine": "土筍凍",
       "avgPrice": 35,
       "rating": 4.3,
-      "address": "厦门市老城区美食街182号",
+      "address": "廈門市老城區美食街182號",
       "coordinates": {
         "lat": 24.4848,
         "lng": 118.0789
       },
       "phone": "+86 0592 58376818",
       "hours": "06:00-14:00",
-      "description": "厦门本地人推荐的土笋冻店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的土筍凍店，味道正宗，價格實惠",
       "dishHighlights": [
-        "土笋冻",
-        "沙茶面",
-        "花生汤"
+        "土筍凍",
+        "沙茶麵",
+        "花生湯"
       ],
       "tags": [
-        "性价比高",
-        "排队王",
-        "隐藏美食"
+        "性價比高",
+        "排隊王",
+        "隱藏美食"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/1beaa4ec0924.webp"
     },
     {
       "id": "xiamen-68",
-      "name": "老字号土笋冻",
-      "nameEn": "老字号土笋冻 (土笋冻)",
+      "name": "老字號土筍凍",
+      "nameEn": "老字號土筍凍 (土筍凍)",
       "type": "本地",
-      "cuisine": "土笋冻",
+      "cuisine": "土筍凍",
       "avgPrice": 50,
       "rating": 4.4,
-      "address": "厦门市新城区美食街67号",
+      "address": "廈門市新城區美食街67號",
       "coordinates": {
         "lat": 24.5137,
         "lng": 118.0841
       },
       "phone": "+86 0592 95193013",
       "hours": "09:00-21:00",
-      "description": "厦门本地人推荐的土笋冻店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的土筍凍店，味道正宗，價格實惠",
       "dishHighlights": [
-        "海蛎煎",
-        "姜母鸭",
-        "土笋冻"
+        "海蠣煎",
+        "薑母鴨",
+        "土筍凍"
       ],
       "tags": [
-        "本地人爱去",
-        "隐藏美食",
+        "本地人愛去",
+        "隱藏美食",
         "家常菜"
       ],
       "diamond": 0,
@@ -2592,28 +2592,28 @@
     },
     {
       "id": "xiamen-70",
-      "name": "正宗姜母鸭",
-      "nameEn": "正宗姜母鸭 (姜母鸭)",
+      "name": "正宗薑母鴨",
+      "nameEn": "正宗薑母鴨 (薑母鴨)",
       "type": "本地",
-      "cuisine": "姜母鸭",
+      "cuisine": "薑母鴨",
       "avgPrice": 36,
       "rating": 4.9,
-      "address": "厦门市老城区美食街155号",
+      "address": "廈門市老城區美食街155號",
       "coordinates": {
         "lat": 24.5104,
         "lng": 118.0636
       },
       "phone": "+86 0592 95155571",
       "hours": "09:00-21:00",
-      "description": "厦门本地人推荐的姜母鸭店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的薑母鴨店，味道正宗，價格實惠",
       "dishHighlights": [
-        "海蛎煎",
-        "姜母鸭",
-        "土笋冻"
+        "海蠣煎",
+        "薑母鴨",
+        "土筍凍"
       ],
       "tags": [
-        "本地人爱去",
-        "排队王",
+        "本地人愛去",
+        "排隊王",
         "家常菜"
       ],
       "diamond": 0,
@@ -2621,58 +2621,58 @@
     },
     {
       "id": "xiamen-72",
-      "name": "老街土笋冻",
-      "nameEn": "老街土笋冻 (土笋冻)",
+      "name": "老街土筍凍",
+      "nameEn": "老街土筍凍 (土筍凍)",
       "type": "街頭小吃",
-      "cuisine": "土笋冻",
+      "cuisine": "土筍凍",
       "avgPrice": 41,
       "rating": 4.7,
-      "address": "厦门市市中心区美食街176号",
+      "address": "廈門市市中心區美食街176號",
       "coordinates": {
         "lat": 24.4832,
         "lng": 118.0644
       },
       "phone": "+86 0592 10151747",
       "hours": "10:00-22:00",
-      "description": "厦门本地人推荐的土笋冻店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的土筍凍店，味道正宗，價格實惠",
       "dishHighlights": [
-        "土笋冻",
-        "花生汤",
-        "沙茶面"
+        "土筍凍",
+        "花生湯",
+        "沙茶麵"
       ],
       "tags": [
         "夜市",
         "小吃",
-        "网红打卡"
+        "網紅打卡"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/749818794c93.webp"
     },
     {
       "id": "xiamen-74",
-      "name": "阿婆沙茶面",
-      "nameEn": "阿婆沙茶面 (沙茶面)",
+      "name": "阿婆沙茶麵",
+      "nameEn": "阿婆沙茶麵 (沙茶麵)",
       "type": "本地",
-      "cuisine": "沙茶面",
+      "cuisine": "沙茶麵",
       "avgPrice": 75,
       "rating": 4.1,
-      "address": "厦门市新城区美食街133号",
+      "address": "廈門市新城區美食街133號",
       "coordinates": {
         "lat": 24.4849,
         "lng": 118.0655
       },
       "phone": "+86 0592 53168493",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "厦门本地人推荐的沙茶面店，味道正宗，价格实惠",
+      "description": "廈門本地人推薦的沙茶麵店，味道正宗，價格實惠",
       "dishHighlights": [
-        "土笋冻",
-        "花生汤",
-        "沙茶面"
+        "土筍凍",
+        "花生湯",
+        "沙茶麵"
       ],
       "tags": [
-        "老字号",
-        "社区老店",
-        "性价比高"
+        "老字號",
+        "社區老店",
+        "性價比高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/508ac032bcf0.webp"
@@ -2682,330 +2682,330 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major international airports (Singapore, Tokyo, Seoul, Bangkok)",
-        "to": "Xiamen Gaoqi International Airport (XMN)",
-        "duration": "3-6 hours from Asia, 8-12 hours from Europe/Americas",
+        "from": "主要國際機場（新加坡、東京、首爾、曼谷）",
+        "to": "廈門高崎國際機場（XMN）",
+        "duration": "從亞洲出發3-6小時，從歐洲/美洲出發8-12小時",
         "price": "800-5000¥",
-        "frequency": "Multiple daily international flights, extensive domestic network",
-        "tips": "Gaoqi Airport is close to city center (15 minutes). Use official taxi queue or Didi. Metro Line 2 connects to city."
+        "frequency": "每日多班國際航班，國內航線網絡廣泛",
+        "tips": "高崎機場距離市中心僅15分鐘。請使用官方計程車排隊區或滴滴。地鐵2號線可直達市區。"
       },
       {
         "type": "train",
-        "from": "Fuzhou (1.5h), Quanzhou (1h), Zhangzhou (30min)",
-        "to": "Xiamen Railway Station / Xiamen North Railway Station",
+        "from": "福州（1.5小時）、泉州（1小時）、漳州（30分鐘）",
+        "to": "廈門站／廈門北站",
         "duration": "30min-1.5 hours",
         "price": "50-150¥",
-        "frequency": "Multiple daily high-speed trains",
-        "tips": "Xiamen North is for high-speed trains. Xiamen Station is closer to center. Book through 12306 app."
+        "frequency": "每日多班高鐵",
+        "tips": "廈門北站為高鐵站。廈門站距離市中心較近。請透過12306應用程式訂票。"
       },
       {
         "type": "train",
-        "from": "Shanghai (6h), Shenzhen (3h), Hangzhou (4h)",
-        "to": "Xiamen North Railway Station",
+        "from": "上海（6小時）、深圳（3小時）、杭州（4小時）",
+        "to": "廈門北站",
         "duration": "3-6 hours",
         "price": "200-500¥",
-        "frequency": "Multiple daily departures",
-        "tips": "High-speed trains are comfortable. scenic route along coast. Book seats on right side for ocean views."
+        "frequency": "每日多班次發車",
+        "tips": "高鐵舒適，沿海風景優美。選右側座位可欣賞海景。"
       }
     ],
     "local": {
       "metro": [
-        "Metro Line 1: Railway Station to Amphitheater (Coastal scenic route)",
-        "Metro Line 2: Jiahe Road to Tianzhou Road (connects airport)",
-        "Metro Line 3: Handan Road to Songbai Road (connects Xiang'an)",
-        "Single ride: 2-8¥ depending on distance",
-        "First train: 06:30, Last train: 23:00",
-        "Peak hours: 07:00-09:00, 17:00-19:00 - expect crowds"
+        "地鐵1號線：火車站至圓形劇場（沿海景觀路線）",
+        "地鐵2號線：嘉禾路至天洲路（連接機場）",
+        "地鐵3號線：邯鄲路至松柏路（連接翔安）",
+        "單程票：2-8元，依距離而定",
+        "首班車：06:30，末班車：23:00",
+        "尖峰時段：07:00-09:00、17:00-19:00 - 請預期人潮"
       ],
       "bus": [
-        "Extensive network covering all areas",
-        "Single ride: 1-2¥ (flat fee or distance-based)",
-        "BRT (Bus Rapid Transit): dedicated lanes, faster travel",
-        "Tourist Bus 29: links major attractions around Island Ring",
-        "Airport bus: 10-30¥ to city center",
-        "Night bus routes available for late-night travel"
+        "綿密路網涵蓋所有區域",
+        "單程票：1-2元（單一票價或依距離計費）",
+        "BRT（快捷公車）：專用車道，行車更快速",
+        "觀光巴士29路：串聯環島路沿線主要景點",
+        "機場巴士：10-30元至市中心",
+        "提供夜間公車路線，方便深夜出行"
       ],
       "taxi": [
-        "Starting fare: 10¥ (first 3km)",
+        "起跳價：10元（前3公裡）",
         "Waiting: 0.5¥ per minute",
-        "Night surcharge: 10% extra (23:00-06:00)",
-        "Always insist on meter use",
-        "Didi app recommended - English interface available",
-        "Airport/large hotels have taxi stands with queue system"
+        "夜間加成：加收10%（23:00-06:00）",
+        "務必堅持按錶計費",
+        "建議使用滴滴出行App - 提供英文介面",
+        "機場/大型飯店設有排班計程車站"
       ],
       "bike": [
-        "Mobike, Hello bikes, and other shared bikes widely available",
-        "Unlock: 1-2¥, then 0.5-1.5¥ per 15-30 minutes",
-        "Designated bike lanes on Huandao Road",
-        "Electric bikes available for longer distances",
-        "Must park at designated spots in some areas"
+        "Mobike、Hello單車等共享單車隨處可見",
+        "解鎖：1-2元，之後每15-30分鐘0.5-1.5元",
+        "環島路設有專用自行車道",
+        "電動自行車可供長途使用",
+        "部分區域須停放於指定地點"
       ]
     }
   },
   "hotels": [
     {
-      "name": "厦门安达仕酒店",
+      "name": "廈門安達仕酒店",
       "nameEn": "Andaz Xiamen",
       "budget": "luxury",
       "priceRange": "¥1500-3000/night",
-      "address": "No.88 Lujiang Road, Siming District",
+      "address": "思明區鷺江道88號",
       "coordinates": {
         "lat": 24.4558,
         "lng": 118.0788
       },
       "rating": 4.8,
       "highlights": [
-        "Harbour views",
-        "Stylish design",
-        "Central location",
-        "Rooftop bar"
+        "海港景觀",
+        "時尚設計",
+        "中心位置",
+        "屋頂酒吧"
       ],
       "bookingTips": "Book direct for best rates. Weekend packages available. Sea-view rooms worth the premium."
     },
     {
-      "name": "厦门华尔道夫酒店",
+      "name": "廈門華爾道夫酒店",
       "nameEn": "Waldorf Astoria Xiamen",
       "budget": "luxury",
       "priceRange": "¥2000-4000/night",
-      "address": "No.16 Lujiang Road, Siming District",
+      "address": "思明區鷺江道16號",
       "coordinates": {
         "lat": 24.4552,
         "lng": 118.0792
       },
       "rating": 4.9,
       "highlights": [
-        "Luxury spa",
-        "Multiple fine dining",
-        "Butler service",
-        "Prime waterfront location"
+        "豪華水療",
+        "多間精緻餐廳",
+        "管家服務",
+        "絕佳濱海位置"
       ],
       "bookingTips": "Book 2+ weeks ahead for best availability. Consider breakfast-inclusive packages."
     },
     {
-      "name": "厦门康莱德酒店",
+      "name": "廈門康萊德酒店",
       "nameEn": "Conrad Xiamen",
       "budget": "luxury",
       "priceRange": "¥1200-2500/night",
-      "address": "188 Jiahe Road, Siming District",
+      "address": "思明區嘉禾路188號",
       "coordinates": {
         "lat": 24.4612,
         "lng": 118.0895
       },
       "rating": 4.7,
       "highlights": [
-        "Floor-to-ceiling views",
-        "Infinity pool",
-        "Great breakfast",
-        "Near Hubin Road"
+        "落地窗景觀",
+        "無邊際泳池",
+        "豐盛早餐",
+        "鄰近湖濱路"
       ],
       "bookingTips": "Request high floor for best views. Hotel buffet is excellent. Good value at weekends."
     },
     {
-      "name": "厦门香格里拉大酒店",
+      "name": "廈門香格裡拉大酒店",
       "nameEn": "Shangri-La Xiamen",
       "budget": "luxury",
       "priceRange": "¥1000-2000/night",
-      "address": "84 Lujiang Road, Siming District",
+      "address": "思明區鷺江路84號",
       "coordinates": {
         "lat": 24.4555,
         "lng": 118.0785
       },
       "rating": 4.6,
       "highlights": [
-        "Garden setting",
-        "Good service",
-        "Close to ferry terminal",
-        "Spacious rooms"
+        "花園環境",
+        "服務良好",
+        "靠近渡輪碼頭",
+        "寬敞客房"
       ],
       "bookingTips": "Club rooms offer good value with benefits. Ask for renovated rooms."
     },
     {
-      "name": "厦门海景千禧大酒店",
+      "name": "廈門海景千禧大酒店",
       "nameEn": "Millennium Harbourview Hotel Xiamen",
       "budget": "mid",
       "priceRange": "¥600-1200/night",
-      "address": "12 Lujiang Road, Siming District",
+      "address": "思明區鷺江路12號",
       "coordinates": {
         "lat": 24.4558,
         "lng": 118.0782
       },
       "rating": 4.5,
       "highlights": [
-        "Seaview rooms",
-        "Central location",
-        "Good breakfast",
-        "Walk to attractions"
+        "海景房",
+        "中心位置",
+        "早餐豐盛",
+        "步行可達景點"
       ],
       "bookingTips": "Seaview rooms recommended. Book on travel platforms for discounts."
     },
     {
-      "name": "厦门牡丹万鹏宾馆",
+      "name": "廈門牡丹萬鵬賓館",
       "nameEn": "Peony Wanpeng Hotel",
       "budget": "mid",
       "priceRange": "¥400-800/night",
-      "address": "No.17 Lujiang Road, Siming District",
+      "address": "思明區鷺江路17號",
       "coordinates": {
         "lat": 24.4552,
         "lng": 118.0778
       },
       "rating": 4.4,
       "highlights": [
-        "Near Zhongshan Road",
-        "Good location",
-        "Comfortable rooms",
-        "Chinese restaurant"
+        "鄰近中山路",
+        "地理位置佳",
+        "客房舒適",
+        "中式餐廳"
       ],
       "bookingTips": "Best location for shopping and sightseeing. Check packages for breakfast."
     },
     {
-      "name": "厦门京闽中心酒店",
+      "name": "廈門京閩中心酒店",
       "nameEn": "Jingmin Central Hotel",
       "budget": "mid",
       "priceRange": "¥400-700/night",
-      "address": "68 Hubin South Road, Siming District",
+      "address": "思明區湖濱南路68號",
       "coordinates": {
         "lat": 24.4512,
         "lng": 118.1045
       },
       "rating": 4.4,
       "highlights": [
-        "Near shopping district",
-        "Good facilities",
-        "Multiple restaurants",
-        "Metro access"
+        "鄰近購物區",
+        "設施完善",
+        "多家餐廳",
+        "地鐵交通便利"
       ],
       "bookingTips": "Weekend rates significantly lower. Good for business travelers."
     },
     {
-      "name": "厦门航空金雁酒店",
+      "name": "廈門航空金雁酒店",
       "nameEn": "Xiamen Air Galaxy Hotel",
       "budget": "mid",
       "priceRange": "¥350-600/night",
-      "address": "84 Lujiang Road, Siming District",
+      "address": "思明區鷺江路84號",
       "coordinates": {
         "lat": 24.4548,
         "lng": 118.0785
       },
       "rating": 4.3,
       "highlights": [
-        "Airport shuttle",
-        "Flight display in lobby",
-        "Comfortable beds",
-        "Value for money"
+        "機場接駁車",
+        "大廳航班顯示",
+        "舒適床鋪",
+        "物超所值"
       ],
       "bookingTips": "Great for early flights. Free airport transfer. Request quiet rooms."
     },
     {
-      "name": "厦门鹭江宾馆",
+      "name": "廈門鷺江賓館",
       "nameEn": "Lujiang Hotel",
       "budget": "mid",
       "priceRange": "¥300-600/night",
-      "address": "23 Lujiang Road, Siming District",
+      "address": "思明區鷺江路23號",
       "coordinates": {
         "lat": 24.4562,
         "lng": 118.0795
       },
       "rating": 4.3,
       "highlights": [
-        "Historic building",
-        "Central location",
-        "Traditional decor",
-        "Good service"
+        "歷史建築",
+        "中心位置",
+        "傳統裝飾",
+        "服務良好"
       ],
       "bookingTips": "Book historical wing for unique experience. Walking distance to ferry."
     },
     {
-      "name": "厦门华侨大厦",
+      "name": "廈門華僑大廈",
       "nameEn": "Overseas Chinese Hotel",
       "budget": "budget",
       "priceRange": "¥200-400/night",
-      "address": "1-6 Lujiang Road, Siming District",
+      "address": "思明區鷺江路1-6號",
       "coordinates": {
         "lat": 24.4565,
         "lng": 118.0798
       },
       "rating": 4.2,
       "highlights": [
-        "Excellent location",
-        "Budget-friendly",
-        "Basic amenities",
-        "Central to attractions"
+        "絕佳位置",
+        "經濟實惠",
+        "基本設施",
+        "靠近景點"
       ],
       "bookingTips": "Best value in prime location. Simple but clean rooms. No views but great location."
     },
     {
-      "name": "厦门七斗星商旅酒店",
+      "name": "廈門七鬥星商旅酒店",
       "nameEn": "Seven Star Business Hotel",
       "budget": "budget",
       "priceRange": "¥150-350/night",
-      "address": "158 Hubin South Road, Siming District",
+      "address": "思明區湖濱南路158號",
       "coordinates": {
         "lat": 24.4505,
         "lng": 118.1035
       },
       "rating": 4.1,
       "highlights": [
-        "Near shopping mall",
-        "Metro nearby",
-        "Free breakfast",
-        "Modern decor"
+        "鄰近購物中心",
+        "鄰近地鐵",
+        "免費早餐",
+        "現代裝潢"
       ],
       "bookingTips": "Breakfast included makes great value. Good metro connections. Clean and functional."
     },
     {
-      "name": "厦门如家酒店",
+      "name": "廈門如家酒店",
       "nameEn": "Home Inn Plus",
       "budget": "budget",
       "priceRange": "¥120-250/night",
-      "address": "35-1 Siming Road, Siming District",
+      "address": "思明區思明路35-1號",
       "coordinates": {
         "lat": 24.4475,
         "lng": 118.0905
       },
       "rating": 4,
       "highlights": [
-        "Near Nanputuo Temple",
-        "Home Inn quality",
-        "Consistent standards",
-        "Good service"
+        "鄰近南普陀寺",
+        "如家品質",
+        "標準一致",
+        "服務良好"
       ],
       "bookingTips": "Reliable chain with consistent quality. Book ahead during holidays."
     },
     {
-      "name": "鼓浪屿红堂酒店",
+      "name": "鼓浪嶼紅堂酒店",
       "nameEn": "Red Hall Hotel Gulangyu",
       "budget": "mid",
       "priceRange": "¥500-900/night",
-      "address": "Gulangyu Island, near Shuzhuang Garden",
+      "address": "鼓浪嶼，鄰近菽莊花園",
       "coordinates": {
         "lat": 24.4438,
         "lng": 118.0685
       },
       "rating": 4.6,
       "highlights": [
-        "On Gulangyu Island",
-        "Historic building",
-        "Garden setting",
-        "Quiet location"
+        "位於鼓浪嶼",
+        "歷史建築",
+        "花園環境",
+        "位置安靜"
       ],
       "bookingTips": "Book early - only hotel on Gulangyu with character. Stay on island for sunrise access."
     },
     {
-      "name": "鼓浪屿磐石酒店",
+      "name": "鼓浪嶼磐石酒店",
       "nameEn": "Panshi Hotel Gulangyu",
       "budget": "luxury",
       "priceRange": "¥800-1500/night",
-      "address": "Gulangyu Island, near Sunlight Rock",
+      "address": "鼓浪嶼，鄰近日光巖",
       "coordinates": {
         "lat": 24.4468,
         "lng": 118.0652
       },
       "rating": 4.7,
       "highlights": [
-        "Seaview",
-        "Historic mansion",
-        "Good restaurant",
-        "Close to attractions"
+        "海景",
+        "歷史豪宅",
+        "餐廳優質",
+        "鄰近景點"
       ],
       "bookingTips": "Best location on Gulangyu for first-time visitors. Reserve seaview rooms."
     },
@@ -3014,55 +3014,55 @@
       "nameEn": "Jimei Lake Hotel",
       "budget": "mid",
       "priceRange": "¥300-600/night",
-      "address": "Jimei District, near Chengyi Park",
+      "address": "集美區，鄰近誠毅公園",
       "coordinates": {
         "lat": 24.4375,
         "lng": 118.0535
       },
       "rating": 4.3,
       "highlights": [
-        "Near Jimei School Village",
-        "Lake views",
-        "New facilities",
-        "Good for families"
+        "鄰近集美學村",
+        "湖景",
+        "設施新穎",
+        "適合家庭"
       ],
       "bookingTips": "Best for exploring Jimei area. Good restaurant. Free parking."
     },
     {
-      "name": "厦门海沧希尔顿花园酒店",
+      "name": "廈門海滄希爾頓花園酒店",
       "nameEn": "Hilton Garden Inn Xiamen Haicang",
       "budget": "mid",
       "priceRange": "¥350-650/night",
-      "address": "68 Haicang Avenue, Haicang District",
+      "address": "海滄區海滄大道68號",
       "coordinates": {
         "lat": 24.4595,
         "lng": 118.0255
       },
       "rating": 4.5,
       "highlights": [
-        "Near Haicang Port",
-        "Modern facilities",
-        "Good breakfast",
-        "Value for money"
+        "鄰近海滄港",
+        "現代化設施",
+        "早餐豐盛",
+        "物超所值"
       ],
       "bookingTips": "Great for business travelers. Clean and comfortable. Free WiFi. Good location."
     },
     {
-      "name": "厦门国际会议中心酒店",
+      "name": "廈門國際會議中心酒店",
       "nameEn": "Xiamen International Conference Hotel",
       "budget": "luxury",
       "priceRange": "¥800-1500/night",
-      "address": "110 Lulin Road, Siming District",
+      "address": "思明區鷺林路110號",
       "coordinates": {
         "lat": 24.4635,
         "lng": 118.0785
       },
       "rating": 4.6,
       "highlights": [
-        "Ocean view",
-        "Conference facilities",
-        "Luxury spa",
-        "Multiple restaurants"
+        "海景",
+        "會議設施",
+        "豪華水療",
+        "多間餐廳"
       ],
       "bookingTips": "Book sea-view rooms. Great for MICE travelers. Excellent service. Beautiful grounds."
     }
@@ -3071,99 +3071,99 @@
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Most widely accepted mobile payment in Xiamen",
+      "description": "廈門最廣泛接受的行動支付",
       "howToUse": [
-        "Download Alipay app before arrival",
-        "Link international credit card (Visa/Mastercard accepted at many merchants)",
-        "QR code payment at most merchants, supermarkets, and restaurants",
-        "Use for metro, bus, taxis, and rideshare"
+        "抵達前下載支付寶應用程式",
+        "綁定國際credit card（許多商家接受Visa/Mastercard）",
+        "在大多數商家、超市和餐廳使用QR碼支付",
+        "用於地鐵、公車、計程車和共乘服務"
       ],
       "tips": [
-        "Nearly all merchants in Xiamen accept Alipay",
-        "Blue code (international version) available for foreign cards",
-        "Download before arrival as app stores may not have it",
-        "Keep some cash as backup in rural areas"
+        "廈門幾乎所有商家都接受支付寶",
+        "藍色代碼（國際版）可用於外國卡",
+        "請在抵達前下載，因為應用程式商店可能沒有",
+        "在鄉村地區保留一些cash作為備用"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Second most popular payment method, integrated with social app",
+      "description": "第二受歡迎的支付方式，整合於社交應用程式中",
       "howToUse": [
         "WeChat app required",
-        "Link international card through WeChat Pay",
-        "Scan QR code to pay at merchants",
-        "Use for small purchases and tipping"
+        "透過微信支付綁定國際卡",
+        "掃描QR碼在商家付款",
+        "用於小額購買和小費"
       ],
       "tips": [
-        "English interface available in settings",
-        "Most locals prefer WeChat Pay for peer-to-peer",
-        "Both Alipay and WeChat work at most merchants",
-        "Useful for ordering at some restaurants"
+        "設定中提供英文介面",
+        "大多數當地人偏好使用微信支付進行個人間轉帳",
+        "支付寶和微信在大多數商家都可以使用",
+        "在某些餐廳點餐時很有用"
       ]
     },
     {
       "method": "Cash (RMB)",
       "icon": "cash",
-      "description": "Still accepted everywhere, essential for local markets and small vendors",
+      "description": "仍然到處都接受，對於當地市場和小型攤販來說是必需的",
       "howToUse": [
-        "Exchange at airport bank or ATM",
-        "ICBC and Bank of China ATMs widely available",
-        "500¥, 100¥, 50¥ notes most useful",
-        "Small vendors at markets prefer cash"
+        "在機場兌換 bank 或 ATM",
+        "中國工商銀行和中國 Bank 的ATM隨處可見",
+        "500元、100元、50元紙幣最實用",
+        "市場的小攤販更喜歡 cash"
       ],
       "tips": [
-        "Keep 100-200¥ in cash for markets",
-        "ATMs at Metro stations convenient for cash",
-        "Xiamen is mostly cashless - only rural markets need cash",
-        "ATMs charge 10-20¥ fee for foreign cards"
+        "為市場保留100-200元 cash",
+        "地鐵站的ATM方便提取 cash",
+        "廈門幾乎是無現金城市 - 只有鄉村市場需要 cash",
+        "ATM對外國卡收取10-20元手續費"
       ]
     },
     {
       "method": "International Credit Cards",
       "icon": "card",
-      "description": "Accepted at hotels, large restaurants, and international chains",
+      "description": "適用於酒店、大型餐廳和國際連鎖店",
       "howToUse": [
-        "Visa and Mastercard accepted at upscale venues",
-        "May require passport verification",
-        "Look for card logos at store entrances"
+        "Visa和Mastercard在高檔場所接受",
+        "可能需要 passport 驗證",
+        "在商店入口尋找卡標誌"
       ],
       "tips": [
-        "Call your bank before travel to enable international use",
-        "Some places add 2-3% foreign transaction fee",
-        "Best used at hotels and modern shopping malls",
-        "Smaller shops and restaurants often don't accept cards"
+        "旅行前致電您的bank以啟用國際使用",
+        "部分商家會收取2-3%的國外交易手續費",
+        "最適合在飯店和現代購物中心使用",
+        "較小的商店和餐廳通常不接受信用卡"
       ]
     },
     {
       "method": "China UnionPay",
       "icon": "unionpay",
-      "description": "Domestic bank cards - widely accepted across China",
+      "description": "國內bank卡 - 在中國各地廣泛接受",
       "howToUse": [
-        "ATM cards from Chinese banks work everywhere",
-        "Can withdraw cash from ICBC, CCB, BOC ATMs",
-        "Some merchants prefer domestic cards"
+        "中國銀行的ATM卡隨處可用",
+        "可從工商銀行、建設銀行、中國銀行的ATM提領cash",
+        "部分商家偏好國內卡"
       ],
       "tips": [
-        "If you have Chinese bank account, this works like debit",
-        "Lower fees than international cards at ATMs",
-        "Ask hotel to help open temporary account if needed"
+        "如果您有中國的bank帳戶，這就像金融卡一樣運作",
+        "在ATM使用比國際卡手續費更低",
+        "如有需要，可請飯店協助開設臨時帳戶"
       ]
     },
     {
       "method": "Mobile Payment via Digital Wallet",
       "icon": "wallet",
-      "description": "Digital wallets like Apple Pay, Samsung Pay increasingly accepted",
+      "description": "數位錢包如Apple Pay、Samsung Pay越來越被接受",
       "howToUse": [
-        "Link international card to Apple Pay/Google Pay",
-        "Tap to pay at terminals with contactless symbol",
-        "Available at modern stores and hotels"
+        "將國際卡連結至Apple Pay/Google Pay",
+        "在具有感應式符號的終端機上輕觸付款",
+        "在現代商店和飯店可使用"
       ],
       "tips": [
-        "Limited acceptance compared to Alipay/WeChat",
-        "Useful if you have foreign card linked",
-        "Works at 7-Eleven and some modern chains",
-        "Best as backup to Alipay/WeChat"
+        "與支付寶/微信相比，接受度有限",
+        "若綁定外國卡則有用",
+        "適用於7-Eleven及部分現代連鎖店",
+        "最適合作為支付寶/微信的備用方案"
       ]
     }
   ],
@@ -3171,7 +3171,7 @@
     {
       "category": "greeting",
       "title": "Min Nan Dialect Greetings",
-      "content": "Learn a few闽南话 phrases: 'Li ho' (hello), 'Zuo zai' (thank you), 'Cheh beh' (not good). Locals appreciate the effort even if pronunciation isn't perfect.",
+      "content": "Learn a few閩南話 phrases: 'Li ho' (hello), 'Zuo zai' (thank you), 'Cheh beh' (not good). Locals appreciate the effort even if pronunciation isn't perfect.",
       "importance": "medium"
     },
     {
@@ -3225,7 +3225,7 @@
     {
       "category": "shopping",
       "title": "Local Products to Buy",
-      "content": "Famous Xiamen products:桂圆干 (dried longan), 金门高粱酒 (Kinmen Kaoliang wine), 闽南特产 (Minnan specialties), 茶叶 (tea), 馅饼 (pastries). Buy from reputable shops near Zhongshan Road.",
+      "content": "Famous Xiamen products:桂圓乾 (dried longan), 金門高粱酒 (Kinmen Kaoliang wine), 閩南特產 (Minnan specialties), 茶葉 (tea), 餡餅 (pastries). Buy from reputable shops near Zhongshan Road.",
       "importance": "low"
     },
     {
@@ -3261,13 +3261,13 @@
     {
       "category": "social",
       "title": "Dancing in Parks",
-      "content": "Early morning park dancing (广场舞) is popular. Don't interrupt or photograph without permission. Some groups may welcome foreigners to join.",
+      "content": "Early morning park dancing (廣場舞) is popular. Don't interrupt or photograph without permission. Some groups may welcome foreigners to join.",
       "importance": "low"
     },
     {
       "category": "dining",
       "title": "Xiamen Snacks to Try",
-      "content": "Must-try snacks: 土笋冻 (sea worm jelly), 沙茶面 (satay noodles), 烧肉粽 (braised rice dumplings), 花生汤 (peanut soup), 馅饼 (pastries). Buy from local shops in Zhongshan Road or Zengcuo'an.",
+      "content": "Must-try snacks: 土筍凍 (sea worm jelly), 沙茶麵 (satay noodles), 燒肉粽 (braised rice dumplings), 花生湯 (peanut soup), 餡餅 (pastries). Buy from local shops in Zhongshan Road or Zengcuo'an.",
       "importance": "high"
     },
     {
@@ -3279,7 +3279,7 @@
     {
       "category": "shopping",
       "title": "Taiwan Products",
-      "content": "Due to proximity to Taiwan, Xiamen has many Taiwan products: Kinmen Kaoliang wine, Taiwan pineapple cakes, dried seafood, and Taiwan-style snacks. Taiwan Commodity City (大嶝小镇) offers duty-free shopping.",
+      "content": "Due to proximity to Taiwan, Xiamen has many Taiwan products: Kinmen Kaoliang wine, Taiwan pineapple cakes, dried seafood, and Taiwan-style snacks. Taiwan Commodity City (大嶝小鎮) offers duty-free shopping.",
       "importance": "medium"
     },
     {
@@ -3292,7 +3292,7 @@
   "emergencyContacts": [
     {
       "type": "ambulance",
-      "name": "厦门急救中心",
+      "name": "廈門急救中心",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "120",
       "address": "廣州",
@@ -3300,7 +3300,7 @@
     },
     {
       "type": "police",
-      "name": "厦门市公安局",
+      "name": "廈門市公安局",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "110",
       "address": "廣州",
@@ -3308,7 +3308,7 @@
     },
     {
       "type": "fire",
-      "name": "厦门消防",
+      "name": "廈門消防",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "119",
       "address": "廣州",
@@ -3316,7 +3316,7 @@
     },
     {
       "type": "hospital",
-      "name": "厦门大学附属第一医院",
+      "name": "廈門大學附屬第一醫院",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 592 213 2222",
       "address": "廣州",
@@ -3328,7 +3328,7 @@
     },
     {
       "type": "hospital",
-      "name": "厦门市中医院",
+      "name": "廈門市中醫院",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 592 202 5209",
       "address": "廣州",
@@ -3340,7 +3340,7 @@
     },
     {
       "type": "hospital",
-      "name": "厦门长庚医院",
+      "name": "廈門長庚醫院",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 592 620 3456",
       "address": "廣州",
@@ -3352,7 +3352,7 @@
     },
     {
       "type": "embassy",
-      "name": "新加坡驻厦门总领事馆",
+      "name": "新加坡駐廈門總領事館",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 592 268 8691",
       "address": "廣州",
@@ -3364,7 +3364,7 @@
     },
     {
       "type": "embassy",
-      "name": "马来西亚驻厦门总领事馆",
+      "name": "馬來西亞駐廈門總領事館",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 592 202 7984",
       "address": "廣州",
@@ -3376,7 +3376,7 @@
     },
     {
       "type": "police",
-      "name": "厦门出入境管理局",
+      "name": "廈門出入境管理局",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 592 202 2020",
       "address": "廣州",
@@ -3388,7 +3388,7 @@
     },
     {
       "type": "hospital",
-      "name": "厦门大学医院",
+      "name": "廈門大學醫院",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 592 218 0120",
       "address": "廣州",
@@ -3400,7 +3400,7 @@
     },
     {
       "type": "hospital",
-      "name": "厦门眼科中心",
+      "name": "廈門眼科中心",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 592 210 9898",
       "address": "廣州",
@@ -3412,7 +3412,7 @@
     },
     {
       "type": "tourist-complaint",
-      "name": "厦门旅游投诉热线",
+      "name": "廈門旅遊投訴熱線",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "12345",
       "address": "廣州",
@@ -3420,7 +3420,7 @@
     },
     {
       "type": "coast-guard",
-      "name": "厦门海上搜救中心",
+      "name": "廈門海上搜救中心",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "12395",
       "address": "廣州",
@@ -3428,7 +3428,7 @@
     },
     {
       "type": "tourist-police",
-      "name": "厦门旅游警察",
+      "name": "廈門旅遊警察",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 592 202 2020",
       "address": "廣州",
@@ -3440,7 +3440,7 @@
     },
     {
       "type": "foreign-affairs",
-      "name": "厦门市人民政府外事办公室",
+      "name": "廈門市人民政府外事辦公室",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 592 285 8888",
       "address": "廣州",

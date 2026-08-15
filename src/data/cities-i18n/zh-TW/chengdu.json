@@ -9,11 +9,11 @@
     "lng": 104.0658
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "成都，四川省省會，因其悠閒的生活方式、麻辣美食和熊貓而被稱為「休閒之都」。作為古蜀文化的發源地，這裡有 Relaxing茶館、麻辣火鍋、歷史悠久的錦里街，臨近風景秀麗的九寨溝和樂山大佛。",
+  "description": "成都，四川省省會，因其悠閒的生活方式、麻辣美食和熊貓而被稱為「休閒之都」。作為古蜀文化的發源地，這裡有 Relaxing茶館、麻辣火鍋、歷史悠久的錦裡街，臨近風景秀麗的九寨溝和樂山大佛。",
   "coverImage": "/img/ext/ee9d4784d80e.webp",
   "highlights": [
     "熊貓基地 - 可愛熊貓的家園",
-    "錦里古街 - 古老蜀文化與小吃",
+    "錦裡古街 - 古老蜀文化與小吃",
     "人民公園 - 茶館與熊貓",
     "峨眉山 - 佛教聖山",
     "川劇 - 傳統變臉表演"
@@ -35,7 +35,7 @@
   "attractions": [
     {
       "id": "panda-base",
-      "name": "成都大熊猫繁育研究基地",
+      "name": "成都大熊貓繁育研究基地",
       "nameEn": "成都大熊貓繁育研究基地",
       "category": "cultural",
       "description": "全球最大的大熊貓繁育中心，擁有超過80隻大熊貓，模擬自然棲息環境",
@@ -59,8 +59,8 @@
     },
     {
       "id": "jinli-street",
-      "name": "锦里古街",
-      "nameEn": "錦里古街",
+      "name": "錦裡古街",
+      "nameEn": "錦裡古街",
       "category": "cultural",
       "description": "一條重建的古街，展現蜀文化傳統建築、街道小吃、茶館和商店。",
       "image": "/img/ext/95dfd9d7b442.png",
@@ -111,7 +111,7 @@
       "category": "cultural",
       "description": "聯合國教科文組織世界遺產 - 世界上最古老且至今仍在使用的水利灌溉系統，建於西元前256年。",
       "image": "/img/ext/a621ecf68c20.webp",
-      "address": "都江堰市，距離成都50公里",
+      "address": "都江堰市，距離成都50公裡",
       "coordinates": {
         "lat": 30.9965,
         "lng": 103.6105
@@ -130,7 +130,7 @@
     },
     {
       "id": "sichuan-opera",
-      "name": "川剧变脸秀",
+      "name": "川劇變臉秀",
       "nameEn": "川劇",
       "category": "cultural",
       "description": "傳統川劇，以其著名的變臉技法聞名，演員可在數秒內變換面具。",
@@ -159,7 +159,7 @@
       "category": "cultural",
       "description": "道教名山，擁有古寺、森林步道，是中國道教文化的發源地。聯合國教科文組織世界遺產。",
       "image": "/img/ext/f250a90ab85e.webp",
-      "address": "青城山鎮，都江堰，距離成都70公里",
+      "address": "青城山鎮，都江堰，距離成都70公裡",
       "coordinates": {
         "lat": 30.8975,
         "lng": 103.5335
@@ -178,7 +178,7 @@
     },
     {
       "id": "peoples-park",
-      "name": "人民公园",
+      "name": "人民公園",
       "nameEn": "人民公園",
       "category": "cultural",
       "description": "成都茶館文化的核心，擁有傳統茶館、相親角和太極拳區域。",
@@ -202,7 +202,7 @@
     },
     {
       "id": "jinsha",
-      "name": "金沙遗址博物馆",
+      "name": "金沙遺址博物館",
       "nameEn": "金沙遺址博物館",
       "category": "historical",
       "description": "一處重要考古遺址，可追溯至古蜀國（公元前1250-650年），設有現代博物館展示黃金文物。",
@@ -226,12 +226,12 @@
     },
     {
       "id": "leshan-giant-buddha",
-      "name": "乐山大佛",
+      "name": "樂山大佛",
       "nameEn": "樂山大佛",
       "category": "historical",
       "description": "世界上最大的石雕佛像（高71米），雕刻於三江匯合處的懸崖上。",
       "image": "/img/ext/dbab57e89617.png",
-      "address": "樂山市，距離成都150公里",
+      "address": "樂山市，距離成都150公裡",
       "coordinates": {
         "lat": 29.5465,
         "lng": 103.7675
@@ -241,7 +241,7 @@
       "recommendedVisitTime": "半天至一天",
       "highlights": [
         "71米佛頭雕刻於懸崖上",
-        "靈岡觀景台風景",
+        "靈岡觀景臺風景",
         "千佛崖",
         "岷江遊船"
       ],
@@ -250,7 +250,7 @@
     },
     {
       "id": "tianfu-square",
-      "name": "天府广场",
+      "name": "天府廣場",
       "nameEn": "天府廣場",
       "category": "modern",
       "description": "成都的中央廣場和交通樞紐，擁有標誌性的四川博物院和哲學雕像。",
@@ -274,12 +274,12 @@
     },
     {
       "id": "sanxingdui",
-      "name": "三星堆博物馆",
+      "name": "三星堆博物館",
       "nameEn": "三星堆博物館",
       "category": "historical",
       "description": "神秘的古文明遺址，擁有非凡的青銅面具和金器，年代早於漢代。",
       "image": "/img/ext/8652e6198486.webp",
-      "address": "四川省廣漢市三星堆鎮，距離成都40公里",
+      "address": "四川省廣漢市三星堆鎮，距離成都40公裡",
       "coordinates": {
         "lat": 30.9875,
         "lng": 104.2045
@@ -298,7 +298,7 @@
     },
     {
       "id": "kuanzhai-alley",
-      "name": "宽窄巷子",
+      "name": "寬窄巷子",
       "nameEn": "寬窄巷子",
       "category": "cultural",
       "description": "歷史悠久的巷弄街區，擁有清代建築，現在是流行的零食、茶館和四川工藝品商店區。",
@@ -317,7 +317,7 @@
         "工藝作坊",
         "夜間氛圍"
       ],
-      "tips": "嘗試叮叮糖和糖畫。建議傍晚參觀，欣賞燈籠夜景。可與錦里古街比較。",
+      "tips": "嘗試叮叮糖和糖畫。建議傍晚參觀，欣賞燈籠夜景。可與錦裡古街比較。",
       "phone": "+86 28 8663 9939"
     },
     {
@@ -346,10 +346,10 @@
     },
     {
       "id": "339-tv-tower",
-      "name": "成都339电视塔",
+      "name": "成都339電視塔",
       "nameEn": "成都339塔",
       "category": "modern",
-      "description": "成都標誌性電視塔，設有旋轉觀景台及天空酒吧，可欣賞全景城市風光。",
+      "description": "成都標誌性電視塔，設有旋轉觀景臺及天空酒吧，可欣賞全景城市風光。",
       "image": "/img/ext/a0f0ef5bc7ae.webp",
       "address": "成華區339小通巷",
       "coordinates": {
@@ -357,12 +357,12 @@
         "lng": 104.1025
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "50¥ (觀景台)",
+      "ticketPrice": "50¥ (觀景臺)",
       "recommendedVisitTime": "1-2 小時",
       "highlights": [
         "208公尺高空酒吧",
         "旋轉餐廳",
-        "蹦極跳台",
+        "蹦極跳臺",
         "夜景"
       ],
       "tips": "日落時分前往可欣賞最美景色。蹦極深受尋求刺激者的歡迎。可與附近的猛追灣泳區結合遊覽。",
@@ -370,7 +370,7 @@
     },
     {
       "id": "eastern-creative-memory",
-      "name": "东郊记忆",
+      "name": "東郊記憶",
       "nameEn": "東方創意記憶",
       "category": "cultural",
       "description": "改造後的工業廠房變身為創意藝術區，設有音樂場館、咖啡廳和藝術裝置。",
@@ -394,12 +394,12 @@
     },
     {
       "id": "qintai-road",
-      "name": "琴台路",
+      "name": "琴臺路",
       "nameEn": "勤廈路",
       "category": "cultural",
       "description": "一條以漢代建築風格聞名的文化街，以傳說中的鋼琴家司馬相如及其妻子卓文君命名。",
       "image": "/img/ext/25a26f7e674a.webp",
-      "address": "成都市青羊區琴台路",
+      "address": "成都市青羊區琴臺路",
       "coordinates": {
         "lat": 30.6615,
         "lng": 104.0465
@@ -461,7 +461,7 @@
         "寺內茶館",
         "靜謐之地"
       ],
-      "tips": "位於太古里附近。內設茶館人氣極高。為數不多仍有僧人居住的寺廟之一。",
+      "tips": "位於太古裡附近。內設茶館人氣極高。為數不多仍有僧人居住的寺廟之一。",
       "phone": "+86 028  5551 2316"
     },
     {
@@ -481,7 +481,7 @@
       "recommendedVisitTime": "2-4小時",
       "highlights": [
         "IFS購物中心",
-        "太古里",
+        "太古裡",
         "Sunjoy紀念碑",
         "街頭時尚"
       ],
@@ -490,7 +490,7 @@
     },
     {
       "id": "sichuan-university",
-      "name": "四川大学望江校区",
+      "name": "四川大學望江校區",
       "nameEn": "四川大學（望江校區）",
       "category": "cultural",
       "description": "中國最古老的大學之一，擁有美麗的傳統建築、荷花池和歷史建築。",
@@ -514,12 +514,12 @@
     },
     {
       "id": "jietai-temple",
-      "name": "石经寺",
+      "name": "石經寺",
       "nameEn": "皆大寺",
       "category": "historical",
       "description": "千年古剎，以觀音雕像和寧靜的山區環境聞名。",
       "image": "/img/ext/60f61a603031.webp",
-      "address": "龍泉驛區皆大鎮，距成都35公里",
+      "address": "龍泉驛區皆大鎮，距成都35公裡",
       "coordinates": {
         "lat": 30.5815,
         "lng": 104.2185
@@ -538,12 +538,12 @@
     },
     {
       "id": "baiyun-temple",
-      "name": "白云观",
+      "name": "白雲觀",
       "nameEn": "白雲觀",
       "category": "cultural",
       "description": "位於風景優美的五皇山上的道教寺廟，以道教文化和美麗的自然風光聞名。",
       "image": "/img/ext/85389545bfc3.webp",
-      "address": "五皇山，新津區，距成都40公里",
+      "address": "五皇山，新津區，距成都40公裡",
       "coordinates": {
         "lat": 30.2215,
         "lng": 103.8985
@@ -562,7 +562,7 @@
     },
     {
       "id": "tianfu-new-area",
-      "name": "天府新区",
+      "name": "天府新區",
       "nameEn": "天府新區",
       "category": "modern",
       "description": "成都的未來感街區，特色有尖端建築、主題公園和現代化設施。",
@@ -586,12 +586,12 @@
     },
     {
       "id": "huanglongxi",
-      "name": "黄龙溪古镇",
+      "name": "黃龍溪古鎮",
       "nameEn": "黃龍溪古鎮",
       "category": "cultural",
       "description": "擁有2000年歷史的水鄉，保存了明清時期的建築，以古街和傳統習俗聞名。",
       "image": "/img/ext/835ad54fddf0.webp",
-      "address": "黃龍溪鎮，雙流區，距離成都40公里",
+      "address": "黃龍溪鎮，雙流區，距離成都40公裡",
       "coordinates": {
         "lat": 30.2315,
         "lng": 104.1385
@@ -610,12 +610,12 @@
     },
     {
       "id": "anji-new-village",
-      "name": "安仁古镇",
+      "name": "安仁古鎮",
       "nameEn": "安仁古鎮",
       "category": "cultural",
       "description": "以1940年代建築群及獨特博物館群聞名的歷史名鎮，包括劉氏莊園博物館。",
       "image": "/img/ext/251ea33a3e15.webp",
-      "address": "大邑縣安仁鎮，距離成都40公里",
+      "address": "大邑縣安仁鎮，距離成都40公裡",
       "coordinates": {
         "lat": 30.4585,
         "lng": 103.6085
@@ -639,7 +639,7 @@
       "category": "cultural",
       "description": "擁有2000年歷史的古老羌族村落，以石屋和梯田聞名。",
       "image": "/img/ext/835ad54fddf0.webp",
-      "address": "彭州市羌峒鄉，距離成都90公里",
+      "address": "彭州市羌峒鄉，距離成都90公裡",
       "coordinates": {
         "lat": 31.0285,
         "lng": 103.8385
@@ -682,12 +682,12 @@
     },
     {
       "id": "chuanbai-ecological",
-      "name": "川西竹海景区",
+      "name": "川西竹海景區",
       "nameEn": "川西竹海",
       "category": "natural",
       "description": "平壩山的大片竹林，有登山步道、玻璃橋和自然風光。",
       "image": "/img/ext/f559500ee99e.webp",
-      "address": "新津區平壩山，距離成都40公里",
+      "address": "新津區平壩山，距離成都40公裡",
       "coordinates": {
         "lat": 30.3785,
         "lng": 103.8285
@@ -706,7 +706,7 @@
     },
     {
       "id": "tianfu-presley",
-      "name": "成都博物馆",
+      "name": "成都博物館",
       "nameEn": "成都博物館",
       "category": "cultural",
       "description": "成都最大的博物館，展示從古蜀時期到現代的四川歷史，收藏超過30萬件文物。",
@@ -730,11 +730,11 @@
     },
     {
       "id": "giant-panda",
-      "name": "成都大熊猫繁育研究基地",
+      "name": "成都大熊貓繁育研究基地",
       "nameEn": "成都大熊貓繁育研究基地",
       "category": "nature",
-      "description": "世界最大的大熊猫人工繁育基地，可近距离观看大熊猫。",
-      "address": "成都市成华区",
+      "description": "世界最大的大熊貓人工繁育基地，可近距離觀看大熊貓。",
+      "address": "成都市成華區",
       "coordinates": {
         "lat": 30.7,
         "lng": 104.15
@@ -743,11 +743,11 @@
       "ticketPrice": "55元",
       "recommendedVisitTime": "半天",
       "highlights": [
-        "大熊猫",
-        "小熊猫",
-        "熊猫宝宝"
+        "大熊貓",
+        "小熊貓",
+        "熊貓寶寶"
       ],
-      "tips": "早上最活跃。",
+      "tips": "早上最活躍。",
       "image": "/img/ext/287ca77bedf7.webp",
       "phone": "+86 028  3920 7480"
     },
@@ -756,7 +756,7 @@
       "name": "青城山",
       "nameEn": "青城山",
       "category": "nature",
-      "description": "道教名山，有青城天下幽之称。",
+      "description": "道教名山，有青城天下幽之稱。",
       "address": "成都市都江堰市",
       "coordinates": {
         "lat": 30.9,
@@ -768,9 +768,9 @@
       "highlights": [
         "道教文化",
         "森林",
-        "幽静"
+        "幽靜"
       ],
-      "tips": "前山看道教，后山看自然。",
+      "tips": "前山看道教，後山看自然。",
       "image": "/img/ext/60f61a603031.webp",
       "phone": "+86 028  5598 8244"
     },
@@ -779,19 +779,19 @@
       "name": "杜甫草堂",
       "nameEn": "杜甫草堂",
       "category": "landmark",
-      "description": "唐代诗人杜甫流寓成都时的故居。",
-      "address": "成都市青羊区",
+      "description": "唐代詩人杜甫流寓成都時的故居。",
+      "address": "成都市青羊區",
       "coordinates": {
         "lat": 30.65,
         "lng": 104.02
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "50元",
-      "recommendedVisitTime": "2小时",
+      "recommendedVisitTime": "2小時",
       "highlights": [
-        "杜甫诗碑",
+        "杜甫詩碑",
         "茅屋",
-        "园林"
+        "園林"
       ],
       "tips": "了解唐代文化。",
       "image": "/img/ext/b0874195abdf.webp",
@@ -799,7 +799,7 @@
     },
     {
       "id": "people-park",
-      "name": "人民公园",
+      "name": "人民公園",
       "nameEn": "人民公園",
       "category": "park",
       "description": "城市中心的都市公園，設有茶館、花園和歷史紀念碑，深受當地人喜愛。",
@@ -808,7 +808,7 @@
         "lat": 30.67,
         "lng": 104.05
       },
-      "openingHours": "06:00-22:00",
+      "openingHours": "全天",
       "ticketPrice": "免費",
       "recommendedVisitTime": "1-2 小時",
       "highlights": [
@@ -824,17 +824,17 @@
       "name": "四川博物院",
       "nameEn": "四川省博物館",
       "category": "museum",
-      "description": "馆藏文物30万件，以张大千临摹敦煌壁画最著名。",
-      "address": "成都市青羊区",
+      "description": "館藏文物30萬件，以張大千臨摹敦煌壁畫最著名。",
+      "address": "成都市青羊區",
       "coordinates": {
         "lat": 30.65,
         "lng": 104.02
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "2-3小時",
       "highlights": [
-        "张大千壁画",
+        "張大千壁畫",
         "巴蜀文化"
       ],
       "tips": "了解四川文化。",
@@ -846,39 +846,39 @@
       "name": "文殊院",
       "nameEn": "文殊院",
       "category": "temple",
-      "description": "成都最大的佛教寺院，有1000多年历史。",
-      "address": "成都市青羊区",
+      "description": "成都最大的佛教寺院，有1000多年歷史。",
+      "address": "成都市青羊區",
       "coordinates": {
         "lat": 30.67,
         "lng": 104.05
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "1.5小時",
       "highlights": [
         "佛教文化",
-        "素斋"
+        "素齋"
       ],
-      "tips": "品尝素斋。",
+      "tips": "品嘗素齋。",
       "image": "/img/ext/60f61a603031.webp",
       "phone": "+86 028  8837 6439"
     },
     {
       "id": "jinsha-site",
-      "name": "金沙遗址博物馆",
+      "name": "金沙遺址博物館",
       "nameEn": "金沙遺址博物館",
       "category": "museum",
-      "description": "展示古蜀文明的博物馆，有太阳神鸟金饰。",
-      "address": "成都市青羊区",
+      "description": "展示古蜀文明的博物館，有太陽神鳥金飾。",
+      "address": "成都市青羊區",
       "coordinates": {
         "lat": 30.68,
         "lng": 104.02
       },
       "openingHours": "09:00-18:00",
       "ticketPrice": "70元",
-      "recommendedVisitTime": "2小时",
+      "recommendedVisitTime": "2小時",
       "highlights": [
-        "太阳神鸟",
+        "太陽神鳥",
         "古蜀文明"
       ],
       "tips": "了解古蜀文化。",
@@ -890,7 +890,7 @@
       "name": "成都美食",
       "nameEn": "成都美食",
       "category": "street",
-      "description": "联合国教科文组织评定的美食之都。",
+      "description": "聯合國教科文組織評定的美食之都。",
       "address": "成都市",
       "coordinates": {
         "lat": 30.67,
@@ -900,31 +900,31 @@
       "ticketPrice": "人均50元",
       "recommendedVisitTime": "全天",
       "highlights": [
-        "火锅",
+        "火鍋",
         "串串",
-        "担担面"
+        "擔擔麵"
       ],
-      "tips": "品尝成都美食。",
+      "tips": "品嘗成都美食。",
       "image": "/img/ext/95dfd9d7b442.png",
       "phone": "+86 028  5070 1223"
     },
     {
       "id": "luodai-ancient",
-      "name": "洛带古镇",
+      "name": "洛帶古鎮",
       "nameEn": "洛帶古鎮",
       "category": "street",
-      "description": "中国西部最大的客家古镇。",
-      "address": "成都市龙泉驿区",
+      "description": "中國西部最大的客家古鎮。",
+      "address": "成都市龍泉驛區",
       "coordinates": {
         "lat": 30.58,
         "lng": 104.32
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
+      "ticketPrice": "免費",
       "recommendedVisitTime": "半天",
       "highlights": [
         "客家文化",
-        "会馆"
+        "會館"
       ],
       "tips": "了解客家文化。",
       "image": "/img/ext/835ad54fddf0.webp",
@@ -932,10 +932,10 @@
     },
     {
       "id": "chengdu-panda-base",
-      "name": "都江堰熊猫谷",
+      "name": "都江堰熊貓谷",
       "nameEn": "都江堰熊貓谷",
       "category": "nature",
-      "description": "大熊猫野化训练基地，可近距离观看。",
+      "description": "大熊貓野化訓練基地，可近距離觀看。",
       "address": "成都市都江堰市",
       "coordinates": {
         "lat": 30.98,
@@ -945,8 +945,8 @@
       "ticketPrice": "50元",
       "recommendedVisitTime": "半天",
       "highlights": [
-        "大熊猫",
-        "野化训练"
+        "大熊貓",
+        "野化訓練"
       ],
       "tips": "比基地人少。",
       "image": "/img/ext/5eff665988e1.webp",
@@ -954,24 +954,24 @@
     },
     {
       "id": "taikoo-li",
-      "name": "太古里",
-      "nameEn": "太古里",
+      "name": "太古裡",
+      "nameEn": "太古裡",
       "category": "street",
-      "description": "成都最时尚的商业街区，融合传统与现代。",
-      "address": "成都市锦江区",
+      "description": "成都最時尚的商業街區，融合傳統與現代。",
+      "address": "成都市錦江區",
       "coordinates": {
         "lat": 30.65,
         "lng": 104.08
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "2小時",
       "highlights": [
-        "时尚",
-        "购物",
+        "時尚",
+        "購物",
         "美食"
       ],
-      "tips": "感受成都时尚。",
+      "tips": "感受成都時尚。",
       "image": "/img/ext/b874e39b7bfc.webp",
       "phone": "+86 028  7156 0256"
     },
@@ -980,20 +980,20 @@
       "name": "成都夜景",
       "nameEn": "成都夜景",
       "category": "landmark",
-      "description": "锦里和宽窄巷子的夜景灯光秀。",
+      "description": "錦裡和寬窄巷子的夜景燈光秀。",
       "address": "成都市",
       "coordinates": {
         "lat": 30.67,
         "lng": 104.05
       },
-      "openingHours": "夜间",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "openingHours": "夜間",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "1小時",
       "highlights": [
-        "灯光秀",
+        "燈光秀",
         "夜景"
       ],
-      "tips": "夏季夜间最美。",
+      "tips": "夏季夜間最美。",
       "image": "/img/ext/a0f0ef5bc7ae.webp",
       "phone": "+86 028  6622 9606"
     },
@@ -1002,20 +1002,20 @@
       "name": "文殊坊",
       "nameEn": "文殊坊",
       "category": "street",
-      "description": "文殊院周边的文化街区，有各种小吃和手工艺品。",
-      "address": "成都市青羊区",
+      "description": "文殊院周邊的文化街區，有各種小吃和手工藝品。",
+      "address": "成都市青羊區",
       "coordinates": {
         "lat": 30.67,
         "lng": 104.05
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "1.5小時",
       "highlights": [
         "小吃",
-        "手工艺品"
+        "手工藝品"
       ],
-      "tips": "品尝成都小吃。",
+      "tips": "品嘗成都小吃。",
       "image": "/img/ext/95dfd9d7b442.png",
       "phone": "+86 028  9859 0974"
     },
@@ -1031,54 +1031,54 @@
         "lng": 104.05
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "1小時",
       "highlights": [
         "啤酒文化"
       ],
-      "tips": "品尝成都啤酒。",
+      "tips": "品嘗成都啤酒。",
       "image": "/img/ext/73043c950f22.webp",
       "phone": "+86 028  4060 2374"
     },
     {
       "id": "chengdu-center",
-      "name": "天府广场",
+      "name": "天府廣場",
       "nameEn": "天府廣場",
       "category": "landmark",
-      "description": "成都的城市中心广场，有毛泽东雕像。",
-      "address": "成都市青羊区",
+      "description": "成都的城市中心廣場，有毛澤東雕像。",
+      "address": "成都市青羊區",
       "coordinates": {
         "lat": 30.67,
         "lng": 104.05
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "30分钟",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "30分鐘",
       "highlights": [
         "城市中心",
-        "毛泽东雕像"
+        "毛澤東雕像"
       ],
-      "tips": "成都地标。",
+      "tips": "成都地標。",
       "image": "/img/ext/04dcca25a669.webp",
       "phone": "+86 028  6342 9616"
     },
     {
       "id": "jinjiang-river",
-      "name": "锦江",
+      "name": "錦江",
       "nameEn": "錦江",
       "category": "nature",
-      "description": "穿城而过的河流，两岸有绿道。",
+      "description": "穿城而過的河流，兩岸有綠道。",
       "address": "成都市",
       "coordinates": {
         "lat": 30.65,
         "lng": 104.08
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "1小時",
       "highlights": [
         "河流",
-        "绿道"
+        "綠道"
       ],
       "tips": "傍晚散步。",
       "image": "/img/ext/f250a90ab85e.webp",
@@ -1089,61 +1089,61 @@
       "name": "成都339",
       "nameEn": "成都339",
       "category": "landmark",
-      "description": "成都电视塔，高339米，可俯瞰城市。",
-      "address": "成都市成华区",
+      "description": "成都電視塔，高339米，可俯瞰城市。",
+      "address": "成都市成華區",
       "coordinates": {
         "lat": 30.67,
         "lng": 104.12
       },
       "openingHours": "09:00-21:00",
       "ticketPrice": "50元",
-      "recommendedVisitTime": "1小时",
+      "recommendedVisitTime": "1小時",
       "highlights": [
         "城市全景",
-        "旋转餐厅"
+        "旋轉餐廳"
       ],
-      "tips": "天气好时视野最佳。",
+      "tips": "天氣好時視野最佳。",
       "image": "/img/ext/d9f06cb8389a.webp",
       "phone": "+86 028  2291 7596"
     },
     {
       "id": "xinglong-lake",
-      "name": "兴隆湖",
+      "name": "興隆湖",
       "nameEn": "興隆湖",
       "category": "nature",
-      "description": "天府新区的人工湖，有环湖绿道。",
-      "address": "成都市天府新区",
+      "description": "天府新區的人工湖，有環湖綠道。",
+      "address": "成都市天府新區",
       "coordinates": {
         "lat": 30.5,
         "lng": 104.07
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "2小時",
       "highlights": [
         "湖泊",
-        "绿道"
+        "綠道"
       ],
-      "tips": "休闲好去处。",
+      "tips": "休閒好去處。",
       "image": "/img/ext/6ca40af7315e.webp",
       "phone": "+86 028  9432 0979"
     },
     {
       "id": "luodai-water",
-      "name": "洛带长城",
+      "name": "洛帶長城",
       "nameEn": "洛帶長城",
       "category": "landmark",
-      "description": "洛带古镇附近的仿长城建筑。",
-      "address": "成都市龙泉驿区",
+      "description": "洛帶古鎮附近的仿長城建築。",
+      "address": "成都市龍泉驛區",
       "coordinates": {
         "lat": 30.58,
         "lng": 104.32
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "30元",
-      "recommendedVisitTime": "1小时",
+      "recommendedVisitTime": "1小時",
       "highlights": [
-        "仿长城"
+        "仿長城"
       ],
       "tips": "拍照打卡。",
       "image": "/img/ext/f559500ee99e.webp",
@@ -1151,44 +1151,44 @@
     },
     {
       "id": "chengdu-wetland",
-      "name": "白鹭湾湿地公园",
-      "nameEn": "白鹭湾湿地公园",
+      "name": "白鷺灣溼地公園",
+      "nameEn": "白鷺灣溼地公園",
       "category": "nature",
-      "description": "成都东部的湿地公园，有丰富的鸟类。",
-      "address": "成都市锦江区",
+      "description": "成都東部的溼地公園，有豐富的鳥類。",
+      "address": "成都市錦江區",
       "coordinates": {
         "lat": 30.6,
         "lng": 104.12
       },
       "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "2小時",
       "highlights": [
-        "湿地",
-        "鸟类"
+        "溼地",
+        "鳥類"
       ],
-      "tips": "观鸟好去处。",
+      "tips": "觀鳥好去處。",
       "image": "/img/ext/dd6e1ddbb2ad.webp",
       "phone": "+86 028  8602 4114"
     },
     {
       "id": "chengdu-art",
-      "name": "成都市美术馆",
+      "name": "成都市美術館",
       "nameEn": "成都美術館",
       "category": "museum",
-      "description": "展示中外美术作品。",
-      "address": "成都市青羊区",
+      "description": "展示中外美術作品。",
+      "address": "成都市青羊區",
       "coordinates": {
         "lat": 30.67,
         "lng": 104.05
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "1.5小時",
       "highlights": [
-        "美术展览"
+        "美術展覽"
       ],
-      "tips": "了解艺术文化。",
+      "tips": "了解藝術文化。",
       "image": "/img/ext/8652e6198486.webp",
       "phone": "+86 028  9648 1345"
     }
@@ -1196,14 +1196,14 @@
   "restaurants": [
     {
       "id": "chengdu-1",
-      "name": "松云泽",
+      "name": "松雲澤",
       "nameEn": "宋雲澤",
       "type": "米其林",
       "star": 2,
       "cuisine": "川味料理",
       "avgPrice": 800,
       "rating": 4.9,
-      "address": "成都市武侯區錦里西一段6-7號",
+      "address": "成都市武侯區錦裡西一段6-7號",
       "coordinates": {
         "lat": 30.6505,
         "lng": 104.0545
@@ -1227,7 +1227,7 @@
     },
     {
       "id": "chengdu-2",
-      "name": "廊桥遗风",
+      "name": "廊橋遺風",
       "nameEn": "廊橋怡豐",
       "type": "米其林",
       "star": 1,
@@ -1258,13 +1258,13 @@
     },
     {
       "id": "chengdu-3",
-      "name": "大妙火锅",
+      "name": "大妙火鍋",
       "nameEn": "大妙火鍋",
       "type": "本地",
       "cuisine": "四川火鍋",
       "avgPrice": 150,
       "rating": 4.7,
-      "address": "多個地點，包括錦里附近",
+      "address": "多個地點，包括錦裡附近",
       "coordinates": {
         "lat": 30.6515,
         "lng": 104.0555
@@ -1289,7 +1289,7 @@
     },
     {
       "id": "chengdu-4",
-      "name": "蜀大侠",
+      "name": "蜀大俠",
       "nameEn": "蜀大俠",
       "type": "本地",
       "cuisine": "四川火鍋",
@@ -1320,7 +1320,7 @@
     },
     {
       "id": "chengdu-5",
-      "name": "龙抄手",
+      "name": "龍抄手",
       "nameEn": "龍抄手",
       "type": "本地",
       "cuisine": "川菜",
@@ -1415,7 +1415,7 @@
     },
     {
       "id": "chengdu-8",
-      "name": "鹤鸣茶社",
+      "name": "鶴鳴茶社",
       "nameEn": "合鳴茶館",
       "type": "本地",
       "cuisine": "四川茶",
@@ -1447,7 +1447,7 @@
     },
     {
       "id": "chengdu-9",
-      "name": "马旺子川小馆",
+      "name": "馬旺子川小館",
       "nameEn": "馬王府",
       "type": "黑珍珠",
       "diamond": 1,
@@ -1479,7 +1479,7 @@
     },
     {
       "id": "chengdu-10",
-      "name": "听香餐馆",
+      "name": "聽香餐館",
       "nameEn": "庭香",
       "type": "本地",
       "cuisine": "四川",
@@ -1511,13 +1511,13 @@
     },
     {
       "id": "chengdu-11",
-      "name": "小龙坎老火锅",
+      "name": "小龍坎老火鍋",
       "nameEn": "小龍坎",
       "type": "本地",
       "cuisine": "四川火鍋",
       "avgPrice": 120,
       "rating": 4.7,
-      "address": "包括太古里在內的多個地點",
+      "address": "包括太古裡在內的多個地點",
       "coordinates": {
         "lat": 30.6585,
         "lng": 104.0715
@@ -1543,7 +1543,7 @@
     },
     {
       "id": "chengdu-12",
-      "name": "海底捞火锅",
+      "name": "海底撈火鍋",
       "nameEn": "海底撈火鍋",
       "type": "本地",
       "cuisine": "四川火鍋",
@@ -1575,7 +1575,7 @@
     },
     {
       "id": "chengdu-13",
-      "name": "蜀九香火锅",
+      "name": "蜀九香火鍋",
       "nameEn": "蜀九香",
       "type": "本地",
       "cuisine": "四川火鍋",
@@ -1606,7 +1606,7 @@
     },
     {
       "id": "chengdu-14",
-      "name": "钢管厂五区小郡肝串串香",
+      "name": "鋼管廠五區小郡肝串串香",
       "nameEn": "觀光餐廳",
       "type": "本地",
       "cuisine": "串串香",
@@ -1638,7 +1638,7 @@
     },
     {
       "id": "chengdu-15",
-      "name": "袁记串串香",
+      "name": "袁記串串香",
       "nameEn": "袁記串串香",
       "type": "本地",
       "cuisine": "串串香",
@@ -1681,7 +1681,7 @@
         "lat": 30.6475,
         "lng": 104.0535
       },
-      "description": "成都最有名的冒菜餐廳，辣味濃郁，食材嫩滑",
+      "description": "成都最有名的冒菜餐廳，辣味濃鬱，食材嫩滑",
       "dishHighlights": [
         "毛蛋（湯麵）",
         "牛雜",
@@ -1713,7 +1713,7 @@
         "lat": 30.6595,
         "lng": 104.0645
       },
-      "description": "當地人喜愛的冒菜餐廳，湯底濃郁，價格實惠。",
+      "description": "當地人喜愛的冒菜餐廳，湯底濃鬱，價格實惠。",
       "dishHighlights": [
         "豆皮",
         "馬鈴薯",
@@ -1734,7 +1734,7 @@
     },
     {
       "id": "chengdu-18",
-      "name": "巴蜀大宅门",
+      "name": "巴蜀大宅門",
       "nameEn": "巴蜀大寨門",
       "type": "本地",
       "cuisine": "四川",
@@ -1766,7 +1766,7 @@
     },
     {
       "id": "chengdu-19",
-      "name": "红杏酒家",
+      "name": "紅杏酒家",
       "nameEn": "紅星酒家",
       "type": "本地",
       "cuisine": "四川",
@@ -1798,7 +1798,7 @@
     },
     {
       "id": "chengdu-20",
-      "name": "转转会",
+      "name": "轉轉會",
       "nameEn": "轉轉會",
       "type": "本地",
       "cuisine": "四川",
@@ -1862,7 +1862,7 @@
     },
     {
       "id": "chengdu-22",
-      "name": "午餐钱",
+      "name": "午餐錢",
       "nameEn": "吳餐倩",
       "type": "本地",
       "cuisine": "四川",
@@ -1894,7 +1894,7 @@
     },
     {
       "id": "chengdu-23",
-      "name": "蜀绣宴",
+      "name": "蜀繡宴",
       "nameEn": "蜀秀宴",
       "type": "本地",
       "cuisine": "四川",
@@ -1958,7 +1958,7 @@
     },
     {
       "id": "chengdu-25",
-      "name": "蜀九香火锅",
+      "name": "蜀九香火鍋",
       "nameEn": "蜀九香火鍋",
       "type": "本地",
       "cuisine": "四川火鍋",
@@ -1990,7 +1990,7 @@
     },
     {
       "id": "chengdu-26",
-      "name": "锦城印象",
+      "name": "錦城印象",
       "nameEn": "錦城印象",
       "type": "本地",
       "cuisine": "川菜",
@@ -2022,7 +2022,7 @@
     },
     {
       "id": "chengdu-27",
-      "name": "玉林串串香总店",
+      "name": "玉林串串香總店",
       "nameEn": "玉林串串香總店",
       "type": "本地",
       "cuisine": "串串香",
@@ -2054,14 +2054,14 @@
     },
     {
       "id": "chengdu-28",
-      "name": "蜀绣香",
+      "name": "蜀繡香",
       "nameEn": "舒秀香",
       "type": "黑珍珠",
       "diamond": 1,
       "cuisine": "川菜",
       "avgPrice": 180,
       "rating": 4.7,
-      "address": "成都市武侯區錦里西路一段6號",
+      "address": "成都市武侯區錦裡西路一段6號",
       "coordinates": {
         "lat": 30.6505,
         "lng": 104.0535
@@ -2086,29 +2086,29 @@
     },
     {
       "id": "chengdu-29",
-      "name": "阿婆回锅肉",
-      "nameEn": "阿婆回锅肉 (回锅肉)",
+      "name": "阿婆回鍋肉",
+      "nameEn": "阿婆回鍋肉 (回鍋肉)",
       "type": "本地",
-      "cuisine": "回锅肉",
+      "cuisine": "回鍋肉",
       "avgPrice": 90,
       "rating": 4.5,
-      "address": "成都市锦江区美食街43号",
+      "address": "成都市錦江區美食街43號",
       "coordinates": {
         "lat": 30.5917,
         "lng": 104.045
       },
       "phone": "+86 028 63391546",
       "hours": "17:00-02:00",
-      "description": "成都本地人推荐的回锅肉店，味道正宗，价格实惠",
+      "description": "成都本地人推薦的回鍋肉店，味道正宗，價格實惠",
       "dishHighlights": [
-        "火锅",
-        "回锅肉",
-        "龙抄手"
+        "火鍋",
+        "回鍋肉",
+        "龍抄手"
       ],
       "tags": [
-        "性价比高",
+        "性價比高",
         "家常菜",
-        "本地人爱去"
+        "本地人愛去"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/2ab8768f877a.webp",
@@ -2122,22 +2122,22 @@
       "cuisine": "串串香",
       "avgPrice": 26,
       "rating": 4.7,
-      "address": "成都市锦江区美食街52号",
+      "address": "成都市錦江區美食街52號",
       "coordinates": {
         "lat": 30.5297,
         "lng": 104.0748
       },
       "phone": "+86 028 73288045",
       "hours": "06:00-14:00",
-      "description": "成都本地人推荐的串串香店，味道正宗，价格实惠",
+      "description": "成都本地人推薦的串串香店，味道正宗，價格實惠",
       "dishHighlights": [
-        "龙抄手",
-        "火锅",
-        "担担面"
+        "龍抄手",
+        "火鍋",
+        "擔擔麵"
       ],
       "tags": [
         "夜市",
-        "路边摊",
+        "路邊攤",
         "小吃"
       ],
       "diamond": 0,
@@ -2146,29 +2146,29 @@
     },
     {
       "id": "chengdu-33",
-      "name": "街边回锅肉",
-      "nameEn": "街边回锅肉 (回锅肉)",
+      "name": "街邊回鍋肉",
+      "nameEn": "街邊回鍋肉 (回鍋肉)",
       "type": "本地",
-      "cuisine": "回锅肉",
+      "cuisine": "回鍋肉",
       "avgPrice": 108,
       "rating": 4.4,
-      "address": "成都市成华区美食街186号",
+      "address": "成都市成華區美食街186號",
       "coordinates": {
         "lat": 30.5326,
         "lng": 104.0824
       },
       "phone": "+86 028 14217255",
       "hours": "10:00-22:00",
-      "description": "成都本地人推荐的回锅肉店，味道正宗，价格实惠",
+      "description": "成都本地人推薦的回鍋肉店，味道正宗，價格實惠",
       "dishHighlights": [
         "串串香",
-        "龙抄手",
+        "龍抄手",
         "麻婆豆腐"
       ],
       "tags": [
-        "排队王",
-        "社区老店",
-        "本地人爱去"
+        "排隊王",
+        "社區老店",
+        "本地人愛去"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/eff9b87563ef.webp",
@@ -2176,28 +2176,28 @@
     },
     {
       "id": "chengdu-35",
-      "name": "正宗回锅肉",
-      "nameEn": "正宗回锅肉 (回锅肉)",
+      "name": "正宗回鍋肉",
+      "nameEn": "正宗回鍋肉 (回鍋肉)",
       "type": "本地",
-      "cuisine": "回锅肉",
+      "cuisine": "回鍋肉",
       "avgPrice": 103,
       "rating": 4.2,
-      "address": "成都市金牛区美食街97号",
+      "address": "成都市金牛區美食街97號",
       "coordinates": {
         "lat": 30.6113,
         "lng": 104.0457
       },
       "phone": "+86 028 42018949",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "成都本地人推荐的回锅肉店，味道正宗，价格实惠",
+      "description": "成都本地人推薦的回鍋肉店，味道正宗，價格實惠",
       "dishHighlights": [
-        "担担面",
-        "回锅肉",
+        "擔擔麵",
+        "回鍋肉",
         "麻婆豆腐"
       ],
       "tags": [
-        "老字号",
-        "本地人爱去",
+        "老字號",
+        "本地人愛去",
         "家常菜"
       ],
       "diamond": 0,
@@ -2206,29 +2206,29 @@
     },
     {
       "id": "chengdu-37",
-      "name": "地道担担面",
-      "nameEn": "地道担担面 (担担面)",
+      "name": "地道擔擔麵",
+      "nameEn": "地道擔擔麵 (擔擔麵)",
       "type": "街頭小吃",
-      "cuisine": "担担面",
+      "cuisine": "擔擔麵",
       "avgPrice": 59,
       "rating": 4.8,
-      "address": "成都市青羊区美食街142号",
+      "address": "成都市青羊區美食街142號",
       "coordinates": {
         "lat": 30.5605,
         "lng": 104.0806
       },
       "phone": "+86 028 86002595",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "成都本地人推荐的担担面店，味道正宗，价格实惠",
+      "description": "成都本地人推薦的擔擔麵店，味道正宗，價格實惠",
       "dishHighlights": [
         "串串香",
         "麻婆豆腐",
-        "回锅肉"
+        "回鍋肉"
       ],
       "tags": [
         "夜市",
         "深夜美食",
-        "网红打卡"
+        "網紅打卡"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/777b777e6f7a.webp",
@@ -2236,29 +2236,29 @@
     },
     {
       "id": "chengdu-39",
-      "name": "传统串串香",
-      "nameEn": "传统串串香 (串串香)",
+      "name": "傳統串串香",
+      "nameEn": "傳統串串香 (串串香)",
       "type": "咖啡廳",
       "cuisine": "串串香",
       "avgPrice": 28,
       "rating": 4,
-      "address": "成都市金牛区美食街138号",
+      "address": "成都市金牛區美食街138號",
       "coordinates": {
         "lat": 30.6099,
         "lng": 104.0464
       },
       "phone": "+86 028 56675548",
       "hours": "10:00-22:00",
-      "description": "成都本地人推荐的串串香店，味道正宗，价格实惠",
+      "description": "成都本地人推薦的串串香店，味道正宗，價格實惠",
       "dishHighlights": [
-        "担担面",
+        "擔擔麵",
         "麻婆豆腐",
-        "回锅肉"
+        "回鍋肉"
       ],
       "tags": [
         "下午茶",
-        "安静",
-        "文艺"
+        "安靜",
+        "文藝"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/7cf19c9b28d8.webp",
@@ -2266,28 +2266,28 @@
     },
     {
       "id": "chengdu-41",
-      "name": "正宗火锅",
-      "nameEn": "正宗火锅 (火锅)",
+      "name": "正宗火鍋",
+      "nameEn": "正宗火鍋 (火鍋)",
       "type": "本地",
-      "cuisine": "火锅",
+      "cuisine": "火鍋",
       "avgPrice": 119,
       "rating": 4,
-      "address": "成都市锦江区美食街90号",
+      "address": "成都市錦江區美食街90號",
       "coordinates": {
         "lat": 30.5546,
         "lng": 104.0804
       },
       "phone": "+86 028 74824439",
       "hours": "09:00-21:00",
-      "description": "成都本地人推荐的火锅店，味道正宗，价格实惠",
+      "description": "成都本地人推薦的火鍋店，味道正宗，價格實惠",
       "dishHighlights": [
-        "回锅肉",
-        "火锅",
+        "回鍋肉",
+        "火鍋",
         "串串香"
       ],
       "tags": [
-        "本地人爱去",
-        "隐藏美食",
+        "本地人愛去",
+        "隱藏美食",
         "家常菜"
       ],
       "diamond": 0,
@@ -2302,23 +2302,23 @@
       "cuisine": "串串香",
       "avgPrice": 34,
       "rating": 4.4,
-      "address": "成都市武侯区美食街158号",
+      "address": "成都市武侯區美食街158號",
       "coordinates": {
         "lat": 30.6154,
         "lng": 104.0709
       },
       "phone": "+86 028 26358337",
       "hours": "06:00-14:00",
-      "description": "成都本地人推荐的串串香店，味道正宗，价格实惠",
+      "description": "成都本地人推薦的串串香店，味道正宗，價格實惠",
       "dishHighlights": [
-        "担担面",
-        "回锅肉",
+        "擔擔麵",
+        "回鍋肉",
         "串串香"
       ],
       "tags": [
-        "本地人爱去",
-        "老字号",
-        "排队王"
+        "本地人愛去",
+        "老字號",
+        "排隊王"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/0183574f7d86.webp",
@@ -2326,29 +2326,29 @@
     },
     {
       "id": "chengdu-45",
-      "name": "巷子龙抄手",
-      "nameEn": "巷子龙抄手 (龙抄手)",
+      "name": "巷子龍抄手",
+      "nameEn": "巷子龍抄手 (龍抄手)",
       "type": "本地",
-      "cuisine": "龙抄手",
+      "cuisine": "龍抄手",
       "avgPrice": 56,
       "rating": 4,
-      "address": "成都市锦江区美食街167号",
+      "address": "成都市錦江區美食街167號",
       "coordinates": {
         "lat": 30.5831,
         "lng": 104.1001
       },
       "phone": "+86 028 32279621",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "成都本地人推荐的龙抄手店，味道正宗，价格实惠",
+      "description": "成都本地人推薦的龍抄手店，味道正宗，價格實惠",
       "dishHighlights": [
         "串串香",
-        "回锅肉",
+        "回鍋肉",
         "麻婆豆腐"
       ],
       "tags": [
-        "性价比高",
-        "老字号",
-        "本地人爱去"
+        "性價比高",
+        "老字號",
+        "本地人愛去"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/86ba9d9afae2.webp",
@@ -2362,23 +2362,23 @@
       "cuisine": "串串香",
       "avgPrice": 57,
       "rating": 4.6,
-      "address": "成都市青羊区美食街126号",
+      "address": "成都市青羊區美食街126號",
       "coordinates": {
         "lat": 30.5672,
         "lng": 104.102
       },
       "phone": "+86 028 29605180",
       "hours": "17:00-02:00",
-      "description": "成都本地人推荐的串串香店，味道正宗，价格实惠",
+      "description": "成都本地人推薦的串串香店，味道正宗，價格實惠",
       "dishHighlights": [
-        "龙抄手",
-        "担担面",
+        "龍抄手",
+        "擔擔麵",
         "串串香"
       ],
       "tags": [
-        "排队王",
-        "老字号",
-        "社区老店"
+        "排隊王",
+        "老字號",
+        "社區老店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/0f05a8dee674.webp",
@@ -2386,29 +2386,29 @@
     },
     {
       "id": "chengdu-49",
-      "name": "正宗火锅",
-      "nameEn": "正宗火锅 (火锅)",
+      "name": "正宗火鍋",
+      "nameEn": "正宗火鍋 (火鍋)",
       "type": "本地",
-      "cuisine": "火锅",
+      "cuisine": "火鍋",
       "avgPrice": 74,
       "rating": 4,
-      "address": "成都市武侯区美食街178号",
+      "address": "成都市武侯區美食街178號",
       "coordinates": {
         "lat": 30.5987,
         "lng": 104.0323
       },
       "phone": "+86 028 69039130",
       "hours": "06:00-14:00",
-      "description": "成都本地人推荐的火锅店，味道正宗，价格实惠",
+      "description": "成都本地人推薦的火鍋店，味道正宗，價格實惠",
       "dishHighlights": [
-        "火锅",
+        "火鍋",
         "串串香",
-        "龙抄手"
+        "龍抄手"
       ],
       "tags": [
-        "隐藏美食",
-        "社区老店",
-        "排队王"
+        "隱藏美食",
+        "社區老店",
+        "排隊王"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/4f471abcbf01.webp",
@@ -2416,28 +2416,28 @@
     },
     {
       "id": "chengdu-51",
-      "name": "阿婆担担面",
-      "nameEn": "阿婆担担面 (担担面)",
+      "name": "阿婆擔擔麵",
+      "nameEn": "阿婆擔擔麵 (擔擔麵)",
       "type": "咖啡廳",
-      "cuisine": "担担面",
+      "cuisine": "擔擔麵",
       "avgPrice": 76,
       "rating": 4.8,
-      "address": "成都市成华区美食街191号",
+      "address": "成都市成華區美食街191號",
       "coordinates": {
         "lat": 30.5341,
         "lng": 104.04
       },
       "phone": "+86 028 41695753",
       "hours": "10:00-22:00",
-      "description": "成都本地人推荐的担担面店，味道正宗，价格实惠",
+      "description": "成都本地人推薦的擔擔麵店，味道正宗，價格實惠",
       "dishHighlights": [
-        "火锅",
-        "回锅肉",
+        "火鍋",
+        "回鍋肉",
         "串串香"
       ],
       "tags": [
         "咖啡",
-        "文艺",
+        "文藝",
         "下午茶"
       ],
       "diamond": 0,
@@ -2452,23 +2452,23 @@
       "cuisine": "麻婆豆腐",
       "avgPrice": 49,
       "rating": 4.8,
-      "address": "成都市青羊区美食街99号",
+      "address": "成都市青羊區美食街99號",
       "coordinates": {
         "lat": 30.55,
         "lng": 104.0976
       },
       "phone": "+86 028 12736923",
       "hours": "10:00-22:00",
-      "description": "成都本地人推荐的麻婆豆腐店，味道正宗，价格实惠",
+      "description": "成都本地人推薦的麻婆豆腐店，味道正宗，價格實惠",
       "dishHighlights": [
-        "龙抄手",
-        "担担面",
-        "回锅肉"
+        "龍抄手",
+        "擔擔麵",
+        "回鍋肉"
       ],
       "tags": [
-        "本地人爱去",
-        "排队王",
-        "社区老店"
+        "本地人愛去",
+        "排隊王",
+        "社區老店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/589e339c6833.webp",
@@ -2476,29 +2476,29 @@
     },
     {
       "id": "chengdu-55",
-      "name": "街边担担面",
-      "nameEn": "街边担担面 (担担面)",
+      "name": "街邊擔擔麵",
+      "nameEn": "街邊擔擔麵 (擔擔麵)",
       "type": "本地",
-      "cuisine": "担担面",
+      "cuisine": "擔擔麵",
       "avgPrice": 93,
       "rating": 4.4,
-      "address": "成都市金牛区美食街157号",
+      "address": "成都市金牛區美食街157號",
       "coordinates": {
         "lat": 30.5795,
         "lng": 104.0314
       },
       "phone": "+86 028 25128872",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "成都本地人推荐的担担面店，味道正宗，价格实惠",
+      "description": "成都本地人推薦的擔擔麵店，味道正宗，價格實惠",
       "dishHighlights": [
         "串串香",
-        "火锅",
-        "回锅肉"
+        "火鍋",
+        "回鍋肉"
       ],
       "tags": [
-        "社区老店",
-        "性价比高",
-        "老字号"
+        "社區老店",
+        "性價比高",
+        "老字號"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/1f1cf1fdea2d.webp",
@@ -2506,28 +2506,28 @@
     },
     {
       "id": "chengdu-57",
-      "name": "成都味回锅肉",
-      "nameEn": "成都味回锅肉 (回锅肉)",
+      "name": "成都味回鍋肉",
+      "nameEn": "成都味回鍋肉 (回鍋肉)",
       "type": "街頭小吃",
-      "cuisine": "回锅肉",
+      "cuisine": "回鍋肉",
       "avgPrice": 39,
       "rating": 4.3,
-      "address": "成都市青羊区美食街146号",
+      "address": "成都市青羊區美食街146號",
       "coordinates": {
         "lat": 30.5704,
         "lng": 104.0173
       },
       "phone": "+86 028 16697249",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "成都本地人推荐的回锅肉店，味道正宗，价格实惠",
+      "description": "成都本地人推薦的回鍋肉店，味道正宗，價格實惠",
       "dishHighlights": [
         "麻婆豆腐",
-        "龙抄手",
-        "火锅"
+        "龍抄手",
+        "火鍋"
       ],
       "tags": [
-        "网红打卡",
-        "路边摊",
+        "網紅打卡",
+        "路邊攤",
         "深夜美食"
       ],
       "diamond": 0,
@@ -2536,28 +2536,28 @@
     },
     {
       "id": "chengdu-59",
-      "name": "正宗龙抄手",
-      "nameEn": "正宗龙抄手 (龙抄手)",
+      "name": "正宗龍抄手",
+      "nameEn": "正宗龍抄手 (龍抄手)",
       "type": "咖啡廳",
-      "cuisine": "龙抄手",
+      "cuisine": "龍抄手",
       "avgPrice": 54,
       "rating": 4.6,
-      "address": "成都市武侯区美食街112号",
+      "address": "成都市武侯區美食街112號",
       "coordinates": {
         "lat": 30.5659,
         "lng": 104.1161
       },
       "phone": "+86 028 52578890",
       "hours": "09:00-21:00",
-      "description": "成都本地人推荐的龙抄手店，味道正宗，价格实惠",
+      "description": "成都本地人推薦的龍抄手店，味道正宗，價格實惠",
       "dishHighlights": [
-        "回锅肉",
-        "龙抄手",
+        "回鍋肉",
+        "龍抄手",
         "麻婆豆腐"
       ],
       "tags": [
         "下午茶",
-        "安静",
+        "安靜",
         "咖啡"
       ],
       "diamond": 0,
@@ -2572,23 +2572,23 @@
       "cuisine": "串串香",
       "avgPrice": 95,
       "rating": 4.1,
-      "address": "成都市青羊区美食街54号",
+      "address": "成都市青羊區美食街54號",
       "coordinates": {
         "lat": 30.547,
         "lng": 104.0723
       },
       "phone": "+86 028 69612266",
       "hours": "10:00-22:00",
-      "description": "成都本地人推荐的串串香店，味道正宗，价格实惠",
+      "description": "成都本地人推薦的串串香店，味道正宗，價格實惠",
       "dishHighlights": [
         "串串香",
         "麻婆豆腐",
-        "龙抄手"
+        "龍抄手"
       ],
       "tags": [
-        "社区老店",
-        "隐藏美食",
-        "老字号"
+        "社區老店",
+        "隱藏美食",
+        "老字號"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/21f4543d0ab1.webp",
@@ -2596,29 +2596,29 @@
     },
     {
       "id": "chengdu-63",
-      "name": "老字号串串香",
-      "nameEn": "老字号串串香 (串串香)",
+      "name": "老字號串串香",
+      "nameEn": "老字號串串香 (串串香)",
       "type": "咖啡廳",
       "cuisine": "串串香",
       "avgPrice": 68,
       "rating": 4.3,
-      "address": "成都市金牛区美食街178号",
+      "address": "成都市金牛區美食街178號",
       "coordinates": {
         "lat": 30.5972,
         "lng": 104.0785
       },
       "phone": "+86 028 28226655",
       "hours": "17:00-02:00",
-      "description": "成都本地人推荐的串串香店，味道正宗，价格实惠",
+      "description": "成都本地人推薦的串串香店，味道正宗，價格實惠",
       "dishHighlights": [
-        "回锅肉",
-        "担担面",
-        "火锅"
+        "回鍋肉",
+        "擔擔麵",
+        "火鍋"
       ],
       "tags": [
         "咖啡",
         "下午茶",
-        "安静"
+        "安靜"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/663688166c77.webp",
@@ -2626,29 +2626,29 @@
     },
     {
       "id": "chengdu-65",
-      "name": "阿婆回锅肉",
-      "nameEn": "阿婆回锅肉 (回锅肉)",
+      "name": "阿婆回鍋肉",
+      "nameEn": "阿婆回鍋肉 (回鍋肉)",
       "type": "本地",
-      "cuisine": "回锅肉",
+      "cuisine": "回鍋肉",
       "avgPrice": 81,
       "rating": 4.2,
-      "address": "成都市金牛区美食街189号",
+      "address": "成都市金牛區美食街189號",
       "coordinates": {
         "lat": 30.5688,
         "lng": 104.0707
       },
       "phone": "+86 028 66998291",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "成都本地人推荐的回锅肉店，味道正宗，价格实惠",
+      "description": "成都本地人推薦的回鍋肉店，味道正宗，價格實惠",
       "dishHighlights": [
-        "担担面",
-        "龙抄手",
-        "回锅肉"
+        "擔擔麵",
+        "龍抄手",
+        "回鍋肉"
       ],
       "tags": [
-        "性价比高",
-        "老字号",
-        "排队王"
+        "性價比高",
+        "老字號",
+        "排隊王"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/876370af54cf.webp",
@@ -2662,23 +2662,23 @@
       "cuisine": "麻婆豆腐",
       "avgPrice": 30,
       "rating": 4.1,
-      "address": "成都市锦江区美食街17号",
+      "address": "成都市錦江區美食街17號",
       "coordinates": {
         "lat": 30.5272,
         "lng": 104.0365
       },
       "phone": "+86 028 74308574",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "成都本地人推荐的麻婆豆腐店，味道正宗，价格实惠",
+      "description": "成都本地人推薦的麻婆豆腐店，味道正宗，價格實惠",
       "dishHighlights": [
-        "龙抄手",
-        "火锅",
-        "回锅肉"
+        "龍抄手",
+        "火鍋",
+        "回鍋肉"
       ],
       "tags": [
-        "网红打卡",
+        "網紅打卡",
         "夜市",
-        "路边摊"
+        "路邊攤"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/b36594bcf565.webp",
@@ -2686,29 +2686,29 @@
     },
     {
       "id": "chengdu-69",
-      "name": "成都味回锅肉",
-      "nameEn": "成都味回锅肉 (回锅肉)",
+      "name": "成都味回鍋肉",
+      "nameEn": "成都味回鍋肉 (回鍋肉)",
       "type": "本地",
-      "cuisine": "回锅肉",
+      "cuisine": "回鍋肉",
       "avgPrice": 106,
       "rating": 4.7,
-      "address": "成都市锦江区美食街91号",
+      "address": "成都市錦江區美食街91號",
       "coordinates": {
         "lat": 30.6063,
         "lng": 104.1159
       },
       "phone": "+86 028 94916392",
       "hours": "10:00-22:00",
-      "description": "成都本地人推荐的回锅肉店，味道正宗，价格实惠",
+      "description": "成都本地人推薦的回鍋肉店，味道正宗，價格實惠",
       "dishHighlights": [
         "串串香",
-        "回锅肉",
+        "回鍋肉",
         "麻婆豆腐"
       ],
       "tags": [
-        "隐藏美食",
-        "排队王",
-        "社区老店"
+        "隱藏美食",
+        "排隊王",
+        "社區老店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/149ad1a67620.webp",
@@ -2722,23 +2722,23 @@
       "cuisine": "串串香",
       "avgPrice": 141,
       "rating": 4.3,
-      "address": "成都市武侯区美食街162号",
+      "address": "成都市武侯區美食街162號",
       "coordinates": {
         "lat": 30.6057,
         "lng": 104.0668
       },
       "phone": "+86 028 39396533",
       "hours": "17:00-02:00",
-      "description": "成都本地人推荐的串串香店，味道正宗，价格实惠",
+      "description": "成都本地人推薦的串串香店，味道正宗，價格實惠",
       "dishHighlights": [
-        "担担面",
+        "擔擔麵",
         "麻婆豆腐",
-        "龙抄手"
+        "龍抄手"
       ],
       "tags": [
-        "性价比高",
-        "社区老店",
-        "隐藏美食"
+        "性價比高",
+        "社區老店",
+        "隱藏美食"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/cf08550b6458.webp",
@@ -2749,45 +2749,45 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major international airports, many domestic connections",
-        "to": "Chengdu Tianfu International Airport (TFU)",
-        "duration": "Varies (10-14 hours from Europe/Americas)",
+        "from": "主要國際機場，眾多國內航線",
+        "to": "成都天府國際機場（TFU）",
+        "duration": "視情況而定（從歐洲/美洲出發約10-14小時）",
         "price": "1000-8000¥",
         "frequency": "Multiple daily flights",
-        "tips": "New airport (TFU) opened 2021 with metro connection. Also old Shuangliu Airport for some flights."
+        "tips": "新機場（TFU）於2021年啟用，設有地鐵接駁。部分航班仍使用舊的雙流機場。"
       },
       {
         "type": "train",
-        "from": "Beijing (7.5h), Shanghai (10h), Xian (3h)",
-        "to": "Chengdu East Railway Station / Chengdu Station",
+        "from": "北京（7.5小時）、上海（10小時）、西安（3小時）",
+        "to": "成都東站／成都站",
         "duration": "3-10 hours",
         "price": "350-900¥",
         "frequency": "Frequent departures",
-        "tips": "High-speed rail network well-connected. Book early for popular routes."
+        "tips": "高鐵網絡四通八達。熱門路線請提早訂票。"
       }
     ],
     "local": {
       "metro": [
-        "12 lines covering city and suburbs",
+        "12條路線涵蓋市區及郊區",
         "Single ride: 2-10¥",
-        "English signage improving",
-        "Line 1 to Panda Base, line 2 to Jinli"
+        "英文標示持續改善中",
+        "1號線可達熊貓基地，2號線可達錦裡"
       ],
       "bus": [
         "Extensive network",
-        "Bamboo bikes (zhongbao) useful for short trips",
-        "Download app for English navigation"
+        "竹製單車（中寶）適合短途行程",
+        "下載應用程式以使用英文導航"
       ],
       "taxi": [
-        "Starting fare: 8¥ (first 2km)",
-        "Didi fully functional in English",
-        "Airport taxi official counters reliable"
+        "起跳價：8元（前2公裡）",
+        "滴滴打車英文版功能完整",
+        "機場計程車官方櫃檯可靠"
       ],
       "bike": [
-        "Hellobike, Mobike, Meituan bikes available",
+        "提供哈囉單車、摩拜單車、美團單車",
         "Unlock: 1.5¥",
-        "Good for short trips in center",
-        "Many dedicated bike lanes"
+        "適合市中心短途行程",
+        "許多專用自行車道"
       ]
     }
   },
@@ -2797,16 +2797,16 @@
       "nameEn": "The St. Regis Chengdu",
       "budget": "luxury",
       "priceRange": "¥1800-3500/night",
-      "address": "88 Tianhua Middle Rd, Jinjiang District",
+      "address": "錦江區天華中路88號",
       "coordinates": {
         "lat": 30.6555,
         "lng": 104.0815
       },
       "rating": 4.8,
       "highlights": [
-        "Prime location near Chunxi Road",
-        "Luxurious spa",
-        "Excellent service"
+        "鄰近春熙路的絕佳位置",
+        "豪華水療中心",
+        "優質服務"
       ],
       "bookingTips": "Request higher floors for views."
     },
@@ -2815,70 +2815,70 @@
       "nameEn": "The Temple House",
       "budget": "luxury",
       "priceRange": "¥2000-4000/night",
-      "address": "81 Bitieshi Rd, Jinjiang District",
+      "address": "錦江區畢昇路81號",
       "coordinates": {
         "lat": 30.6585,
         "lng": 104.0665
       },
       "rating": 4.9,
       "highlights": [
-        "Modern design in historic area",
-        "Outstanding service",
-        "Great dining"
+        "歷史區域中的現代設計",
+        "卓越的服務",
+        "優質餐飲"
       ],
       "bookingTips": "One of Chengdu's best hotels. Book far ahead."
     },
     {
-      "name": "成都香格里拉大酒店",
+      "name": "成都香格裡拉大酒店",
       "nameEn": "Shangri-La Hotel Chengdu",
       "budget": "mid",
       "priceRange": "¥900-1800/night",
-      "address": "9 Binjiang East Rd, Jinjiang District",
+      "address": "錦江區濱江東路9號",
       "coordinates": {
         "lat": 30.6535,
         "lng": 104.0875
       },
       "rating": 4.6,
       "highlights": [
-        "River views",
-        "Central location",
-        "Good facilities"
+        "河景",
+        "中心位置",
+        "設施完善"
       ],
       "bookingTips": "River-view rooms worth extra."
     },
     {
-      "name": "成都希尔顿酒店",
+      "name": "成都希爾頓酒店",
       "nameEn": "Hilton Chengdu",
       "budget": "mid",
       "priceRange": "¥600-1200/night",
-      "address": "666 Tianfu Avenue, High-Tech Zone",
+      "address": "高新區天府大道666號",
       "coordinates": {
         "lat": 30.6435,
         "lng": 104.0615
       },
       "rating": 4.5,
       "highlights": [
-        "Near High-Tech Zone",
-        "Good for business",
-        "Modern facilities"
+        "靠近高新區",
+        "適合商務",
+        "現代化設施"
       ],
       "bookingTips": "Good value for business travelers."
     },
     {
-      "name": "成都太古里春熙亚朵酒店",
+      "name": "成都太古裡春熙亞朵酒店",
       "nameEn": "Atour Hotel Chunxi Road",
       "budget": "budget",
       "priceRange": "¥400-800/night",
-      "address": "99 Baihua Rd, Jinjiang District",
+      "address": "錦江區百花路99號",
       "coordinates": {
         "lat": 30.6595,
         "lng": 104.0795
       },
       "rating": 4.5,
       "highlights": [
-        "Near Taikoo Li and Chunxi Road",
-        "Great value",
-        "Good breakfast"
+        "靠近太古裡和春熙路",
+        "高性價比",
+        "早餐好吃"
       ],
       "bookingTips": "Best budget option near major shopping."
     },
@@ -2887,178 +2887,178 @@
       "nameEn": "W Chengdu",
       "budget": "luxury",
       "priceRange": "¥1500-3000/night",
-      "address": "1199 Kaifa Avenue, High-Tech Zone",
+      "address": "高新區開發大道1199號",
       "coordinates": {
         "lat": 30.6455,
         "lng": 104.0615
       },
       "rating": 4.7,
       "highlights": [
-        "Modern design",
-        "Rooftop bar",
-        "Trendy atmosphere"
+        "現代設計",
+        "屋頂酒吧",
+        "時尚氛圍"
       ],
       "bookingTips": "Request high floor for city views."
     },
     {
-      "name": "成都JW万豪酒店",
+      "name": "成都JW萬豪酒店",
       "nameEn": "JW Marriott Hotel Chengdu",
       "budget": "luxury",
       "priceRange": "¥1200-2500/night",
-      "address": "388 East Section of Dongmen Bridge, Jinjiang District",
+      "address": "錦江區東門大橋東段388號",
       "coordinates": {
         "lat": 30.6465,
         "lng": 104.0915
       },
       "rating": 4.6,
       "highlights": [
-        "Central location",
-        "Luxurious spa",
-        "Fine dining"
+        "中心位置",
+        "豪華水療",
+        "精緻餐飲"
       ],
       "bookingTips": "Good for business travelers."
     },
     {
-      "name": "成都凯宾斯基饭店",
+      "name": "成都凱賓斯基飯店",
       "nameEn": "Kempinski Hotel Chengdu",
       "budget": "mid",
       "priceRange": "¥800-1500/night",
-      "address": "88 Section 2, South Renmin Rd, Wuhou District",
+      "address": "武侯區人民南路二段88號",
       "coordinates": {
         "lat": 30.6375,
         "lng": 104.0565
       },
       "rating": 4.5,
       "highlights": [
-        "Near Wuhou Temple area",
-        "European style",
-        "Good breakfast"
+        "鄰近武侯祠區域",
+        "歐式風格",
+        "早餐好吃"
       ],
       "bookingTips": "Weekend rates often lower."
     },
     {
-      "name": "成都雅诗阁来福士中心",
+      "name": "成都雅詩閣來福士中心",
       "nameEn": "Ascott Raffles City Chengdu",
       "budget": "mid",
       "priceRange": "¥600-1200/night",
-      "address": "1 Section 3, South Ring Rd, Wuhou District",
+      "address": "武侯區南環路三段1號",
       "coordinates": {
         "lat": 30.6395,
         "lng": 104.0515
       },
       "rating": 4.5,
       "highlights": [
-        "Service apartments",
-        "Near metro station",
-        "Kitchen facilities"
+        "服務式公寓",
+        "鄰近地鐵站",
+        "廚房設施"
       ],
       "bookingTips": "Good for long stays."
     },
     {
-      "name": "成都熊猫王子主题酒店",
+      "name": "成都熊貓王子主題酒店",
       "nameEn": "Panda Prince Theme Hotel",
       "budget": "budget",
       "priceRange": "¥300-600/night",
-      "address": "198 Chengdu Plain, Chenghua District",
+      "address": "成都市成華區成都平原198號",
       "coordinates": {
         "lat": 30.6715,
         "lng": 104.1185
       },
       "rating": 4.4,
       "highlights": [
-        "Panda themed",
-        "Near Panda Base",
-        "Family friendly"
+        "熊貓主題",
+        "鄰近熊貓基地",
+        "適合家庭"
       ],
       "bookingTips": "Book early for Panda Base visits."
     },
     {
-      "name": "成都钓鱼台精品酒店",
+      "name": "成都釣魚臺精品酒店",
       "nameEn": "Diaoyutai Boutique Hotel",
       "budget": "luxury",
       "priceRange": "¥2000-4500/night",
-      "address": "28 Panda Road, Chenghua District",
+      "address": "成都市成華區熊貓大道28號",
       "coordinates": {
         "lat": 30.7385,
         "lng": 104.1455
       },
       "rating": 4.8,
       "highlights": [
-        "Historic compound",
-        "Elegant Chinese design",
-        "Near Panda Base"
+        "歷史建築",
+        "優雅中式設計",
+        "鄰近熊貓基地"
       ],
       "bookingTips": "One of Chengdu's most exclusive hotels."
     },
     {
-      "name": "成都锦江宾馆",
+      "name": "成都錦江賓館",
       "nameEn": "Jinjiang Hotel",
       "budget": "mid",
       "priceRange": "¥500-900/night",
-      "address": "80 Section 1, South Ring Rd, Wuhou District",
+      "address": "成都市武侯區南環路一段80號",
       "coordinates": {
         "lat": 30.6425,
         "lng": 104.0565
       },
       "rating": 4.4,
       "highlights": [
-        "Historic hotel",
-        "Central location",
-        "Reliable service"
+        "歷史悠久飯店",
+        "中心位置",
+        "可靠服務"
       ],
       "bookingTips": "Good value for money."
     },
     {
-      "name": "成都浣花溪智选假日酒店",
+      "name": "成都浣花溪智選假日酒店",
       "nameEn": "Holiday Inn Express Chengdu Huanhua Stream",
       "budget": "budget",
       "priceRange": "¥250-500/night",
-      "address": "388 Huanhua Road, Qingyang District",
+      "address": "成都市青羊區浣花路388號",
       "coordinates": {
         "lat": 30.6865,
         "lng": 104.0355
       },
       "rating": 4.3,
       "highlights": [
-        "Near Huanhua Stream Park",
-        "Clean and modern",
-        "Good breakfast included"
+        "靠近浣花溪公園",
+        "乾淨且現代化",
+        "含優質早餐"
       ],
       "bookingTips": "Best value near cultural attractions."
     },
     {
-      "name": "成都望江宾馆",
+      "name": "成都望江賓館",
       "nameEn": "Wangjiang Hotel",
       "budget": "mid",
       "priceRange": "¥400-800/night",
-      "address": "6 North Section of Yihuan Rd, Chenghua District",
+      "address": "成華區一環路北六段",
       "coordinates": {
         "lat": 30.6515,
         "lng": 104.1085
       },
       "rating": 4.4,
       "highlights": [
-        "Sichuan University area",
-        "Quiet environment",
-        "Good restaurant"
+        "四川大學周邊",
+        "環境安靜",
+        "餐廳不錯"
       ],
       "bookingTips": "Good for visitors to university area."
     },
     {
-      "name": "成都泰合索菲特大饭店",
+      "name": "成都泰合索菲特大飯店",
       "nameEn": "Sofitel Chengdu",
       "budget": "mid",
       "priceRange": "¥700-1400/night",
-      "address": "88 South Section of Shuangqing Rd, Wuhou District",
+      "address": "武侯區雙清路南八十八號",
       "coordinates": {
         "lat": 30.6385,
         "lng": 104.0595
       },
       "rating": 4.5,
       "highlights": [
-        "French brand",
-        "Central location",
-        "Good service"
+        "法國品牌",
+        "市中心位置",
+        "服務良好"
       ],
       "bookingTips": "Book directly for upgrades."
     }
@@ -3067,15 +3067,15 @@
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Standard payment, accepted everywhere",
+      "description": "標準付款方式，隨處可用",
       "howToUse": [
         "Download before arrival",
         "Bind international card",
         "QR code payment"
       ],
       "tips": [
-        "Chengdu is modern city - most places accept cards",
-        "But download Alipay for markets and street food"
+        "成都是一座現代化城市，大部分地方都接受信用卡",
+        "但請下載支付寶，用於市場和街頭小吃"
       ]
     },
     {
@@ -3087,21 +3087,21 @@
         "Link card"
       ],
       "tips": [
-        "Didi打车 requires WeChat",
-        "Both apps equally important"
+        "Didi打車 requires WeChat",
+        "兩個應用程式同等重要"
       ]
     },
     {
       "method": "Cash (RMB)",
       "icon": "cash",
-      "description": "Useful for traditional teahouses and small vendors",
+      "description": "適用於傳統茶館和小型攤販",
       "howToUse": [
-        "Keep 100-200¥ for emergencies",
+        "保留100-200元人民幣以備不時之需",
         "ATMs at every corner"
       ],
       "tips": [
-        "Traditional teahouses mostly cash",
-        "Most modern places accept cards"
+        "傳統茶館大多只收現金",
+        "大部分現代場所接受信用卡"
       ]
     }
   ],
@@ -3133,7 +3133,7 @@
     {
       "category": "tea-house",
       "title": "成都茶館文化",
-      "content": "成都拥有超過一萬家茶館。人們坐在竹椅（椅子）上，長時間品茶、看報紙、聊天。傳統茶館提供掏耳朵和麻將服務。最著名的是人民公園的鶴鳴茶館和蜀客坊。",
+      "content": "成都擁有超過一萬家茶館。人們坐在竹椅（椅子）上，長時間品茶、看報紙、聊天。傳統茶館提供掏耳朵和麻將服務。最著名的是人民公園的鶴鳴茶館和蜀客坊。",
       "importance": "high"
     },
     {
@@ -3187,7 +3187,7 @@
     {
       "category": "spicy-snacks",
       "title": "街頭小吃文化",
-      "content": "成都的街頭小吃（小食）堪稱傳奇。務必品嚐臭豆腐、糖畫、丁丁糖和糍粑。金里與寬窄巷子的夜市選擇最為豐富。每種小吃都有數百年的歷史。",
+      "content": "成都的街頭小吃（小食）堪稱傳奇。務必品嚐臭豆腐、糖畫、丁丁糖和餈粑。金裡與寬窄巷子的夜市選擇最為豐富。每種小吃都有數百年的歷史。",
       "importance": "medium"
     },
     {
@@ -3199,7 +3199,7 @@
     {
       "category": "nightlife",
       "title": "成都夜生活",
-      "content": "成都的夜晚充滿活力。339電視塔有高空酒吧，太古里提供深夜咖啡，而金里附近的酒吧一條街營業至凌晨三點。成都的夜店場景熱鬧蓬勃，同時包含中式和西式風格的場所。",
+      "content": "成都的夜晚充滿活力。339電視塔有高空酒吧，太古裡提供深夜咖啡，而金裡附近的酒吧一條街營業至凌晨三點。成都的夜店場景熱鬧蓬勃，同時包含中式和西式風格的場所。",
       "importance": "medium"
     },
     {
@@ -3277,7 +3277,7 @@
     {
       "category": "weekend-escape",
       "title": "週末出逃文化",
-      "content": "成都人喜歡週末遊(周末游)到附近地區：都江堰避暑、樂山大佛、九寨溝風景。「农家乐」(農莊住宿)適合家庭。週五晚上的交通堵塞表示大家都在離開城市。",
+      "content": "成都人喜歡週末遊(周末遊)到附近地區：都江堰避暑、樂山大佛、九寨溝風景。「農家樂」(農莊住宿)適合家庭。週五晚上的交通堵塞表示大家都在離開城市。",
       "importance": "medium"
     },
     {
@@ -3289,13 +3289,13 @@
     {
       "category": "panda-protection",
       "title": "熊貓保護意識",
-      "content": "大熊貓是「傘物種」(傘物種) - 保護它們就是保護它們的整個棲息地。熊貓的67個自然保護區也保護了8000多個其他物種。請勿對熊貓使用閃光燈拍攝。請遵守「安靜參觀」(安静参观)規則。",
+      "content": "大熊貓是「傘物種」(傘物種) - 保護它們就是保護它們的整個棲息地。熊貓的67個自然保護區也保護了8000多個其他物種。請勿對熊貓使用閃光燈拍攝。請遵守「安靜參觀」(安靜參觀)規則。",
       "importance": "medium"
     },
     {
       "category": "chess-park-culture",
       "title": "公園棋文化",
-      "content": "人民公園的棋手非常認真，有些已經下了幾十年。「象棋」比國際象棋更受歡迎。站在玩家背後給予建議是可以的，這叫做「支招」。這也是一些人進行博彩的形式。",
+      "content": "人民公園的棋手非常認真，有些已經下了幾十年。「象棋」比西洋棋更受歡迎。站在玩家背後給予建議是可以的，這叫做「支招」。這也是一些人進行博彩的形式。",
       "importance": "low"
     }
   ],
@@ -3316,7 +3316,7 @@
     },
     {
       "type": "hospital",
-      "name": "成都新世纪妇女儿童医院",
+      "name": "成都新世紀婦女兒童醫院",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 28 6533 1666",
       "address": "廣州",
@@ -3328,7 +3328,7 @@
     },
     {
       "type": "hospital",
-      "name": "四川大学华西医院",
+      "name": "四川大學華西醫院",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 28 8542 2114",
       "address": "廣州",
@@ -3340,7 +3340,7 @@
     },
     {
       "type": "embassy",
-      "name": "美国驻成都总领事馆",
+      "name": "美國駐成都總領事館",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 28 8558 3992",
       "address": "廣州",
@@ -3352,7 +3352,7 @@
     },
     {
       "type": "embassy",
-      "name": "英国驻重庆总领事馆",
+      "name": "英國駐重慶總領事館",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 23 6369 1488",
       "address": "廣州",
@@ -3360,7 +3360,7 @@
     },
     {
       "type": "embassy",
-      "name": "德国驻成都总领事馆",
+      "name": "德國駐成都總領事館",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 28 8458 8031",
       "address": "廣州",
@@ -3372,7 +3372,7 @@
     },
     {
       "type": "embassy",
-      "name": "日本驻成都总领事馆",
+      "name": "日本駐成都總領事館",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 28 8558 6391",
       "address": "廣州",
@@ -3384,14 +3384,14 @@
     },
     {
       "type": "fire",
-      "name": "成都消防支队",
+      "name": "成都消防支隊",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "119",
       "address": "廣州"
     },
     {
       "type": "tourist-police",
-      "name": "成都旅游警察",
+      "name": "成都旅遊警察",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 28 8640 7711",
       "address": "廣州",
@@ -3399,7 +3399,7 @@
     },
     {
       "type": "tourist-complaint",
-      "name": "成都旅游投诉热线",
+      "name": "成都旅遊投訴熱線",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "12301",
       "address": "廣州",
@@ -3407,7 +3407,7 @@
     },
     {
       "type": "embassy",
-      "name": "法国驻成都总领事馆",
+      "name": "法國駐成都總領事館",
       "nameEn": "新加坡駐廣州總領事館",
       "phone": "+86 28 8447 7031",
       "address": "廣州",
