@@ -836,3 +836,21 @@ for lang in LANGS:
   4. 工作区未提交改动多（含本次 36 个 ja 城市文件重写 + 组件/脚本），遵守约定未 commit。
   5. 本次新增脚本（.audit/）：`fix-ja-cn.mjs` / `fix-ja-cn2.mjs`（中文残留修复）、`scan-cn-*.mjs` / `scan-func.mjs` / `scan-remain.mjs`（中文残留扫描）、`del-dup-first.mjs`（重复键清理）、`patch-build.mjs` / `patch-paykey.mjs`（构建修复）、`verify-ja-links.mjs` + `ja-all-urls.txt`（全量链接验证）。
 - **本地测试地址**：主站 `http://localhost:4321/`；ja 版 `http://localhost:4321/ja/`；全量 432 页清单 `.audit/ja-all-urls.txt`。
+
+
+### 2026-08-16 会话 #9（规划 + 基线提交）
+
+- **起**：用户审读交接文档后拍板三项决定：1) guide/apps/紧急联系人等 ja 已覆盖的层，10 语言全做，且要检查遗漏页面，严格全量；2) 先 git 提交当前状态做基线；3) EN 源中文散文必须清理——英文版不能出现中文（推翻「不改 EN 源」旧约定，硬性标准）。
+- **改动**：
+  - 清理 264 个调试垃圾文件（根目录 .tmp-* × 166、.audit _*.py 等）；.gitignore 追加 .tmp-* / *.err / build-output.txt / .audit 调试产物 / *.bak*
+  - git 基线提交 d5b7971（999 文件：496 A / 492 M / 11 D），工作区干净
+  - 落盘执行计划 .audit/PLAN-2026-08-16.md（6 阶段）
+- **调研量化**（只读扫描，dev server 4321 运行中）：
+  - 页面清点：每语言 432 URL（1 首页 + 1 ai + 5 blog + 1 cities + 35 城市详情 + 315 城市分节 + 54 food + 19 guide + 1 scenic-spots），× 12 ≈ 5,341 页
+  - EN 源 35/35 城含中文 21,181 字段（highlights/tags 7,515 / name 4,614 / prose 2,991 / address 1,984 / 其它）
+  - EN 页面实际漏中文：/ 11 处、/cities/ 25 处、/food/ 35 处、/en/city/beijing/ 65 处、food 289 处、attractions 90 处
+  - 10 语言数据层英文残留（相对 ja 基准）：合计 ≈ 3.38 万字段；缺失键 ~2,300；非 CJK 中文散文各 ~3,700
+  - guide 仅 ja 有 override（3,813 条）；apps 22 个仅 ja；emergency 6 国仅 ja；offline.astro 硬编码中文 11 处；locales 缺 fa.json
+  - 非前缀遗留路由多为重定向（auth/index→login），auth/account/pricing 等已用 i18n
+- **遗留**：按 PLAN-2026-08-16.md Phase 1 开始（EN 源清理）→ Phase 2 起 10 语言数据层。注意 verify_data_i18n.mjs 的 fr/de/vi isTranslated 逻辑有 bug 需先修。
+- **下个会话**：Phase 1a 写 EN 源中文清理脚本（MiniMax/DeepSeek，35 城分批），小批量试跑 1-2 城验证质量后全量；同步修组件 name 渲染逻辑（非 CJK 用 nameEn）。
