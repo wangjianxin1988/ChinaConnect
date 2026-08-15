@@ -2,7 +2,7 @@
 // node scripts/translate-data-fast.mjs --lang=ko --source-lang=ja beijing
 import fs from "fs";
 import path from "path";
-import { getMiniMaxConfig } from "./lib/minimax-config.mjs";
+import { getTranslateProvider } from "./lib/translate-provider.mjs";
 import {
   isTranslated,
   maskSensitiveTerms,
@@ -11,8 +11,8 @@ import {
   toDataPath,
 } from "./lib/translation-keys.mjs";
 
-const { apiKey: KEY, baseUrl: HOST } = getMiniMaxConfig();
-const MODEL = "MiniMax-Text-01";
+const { apiKey: KEY, baseUrl: HOST, model: MODEL } = getTranslateProvider();
+console.log(`Provider: ${HOST} | model: ${MODEL}`);
 const BATCH_SIZE = 15;
 const RETRY_ATTEMPTS = 4;
 const TARGETS = {
@@ -289,7 +289,7 @@ ${lines}`;
     } catch (error) {
       console.warn(`  retry ${attempt}: ${error?.message || error}`);
     }
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await new Promise((resolve) => setTimeout(resolve, 1000 * attempt * attempt));
   }
   if (keys.length <= 1) return {};
   const fallbackBatchSize = 1;
