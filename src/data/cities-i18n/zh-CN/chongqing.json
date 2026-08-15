@@ -2692,40 +2692,40 @@
       {
         "type": "air",
         "from": "Major cities worldwide",
-        "to": "Chongqing Jiangbei International Airport (CKG)",
-        "duration": "Varies (2h from Shanghai, 15h from Europe)",
+        "to": "重庆江北国际机场（CKG）",
+        "duration": "视情况而定（从上海2小时，从欧洲15小时）",
         "price": "800-4000¥",
-        "frequency": "Daily international flights",
-        "tips": "Airport 25km from city center. Metro Line 3 to downtown. Airport bus to Jiefangbei."
+        "frequency": "每日有国际航班",
+        "tips": "机场距市中心25公里。地铁3号线直达市中心。机场大巴可到解放碑。"
       },
       {
         "type": "train",
-        "from": "Chengdu (1.5h), Beijing (10h), Shanghai (12h)",
-        "to": "Chongqing North Station / Chongqing Station",
-        "duration": "1.5-12 hours depending on origin",
+        "from": "成都（1.5小时）、北京（10小时）、上海（12小时）",
+        "to": "重庆北站/重庆站",
+        "duration": "1.5-12小时，取决于出发地",
         "price": "200-1000¥",
-        "frequency": "Multiple high-speed trains daily",
-        "tips": "High-speed rail from Chengdu very convenient. Chongqing North is near business district."
+        "frequency": "每日多班高铁",
+        "tips": "从成都坐高铁非常方便。重庆北站靠近商务区。"
       }
     ],
     "local": {
       "metro": [
         "10 lines operational",
         "Single ride: 2-7¥",
-        "Line 1, 3 for tourist areas",
-        "Note: Many stations have exits on different levels"
+        "1号线、3号线可到达旅游区",
+        "注意：许多车站的出口位于不同楼层"
       ],
       "bus": [
         "Extensive network",
         "Single ride: 2¥",
-        "Many routes serve tourist areas",
-        "Easiest to hail Didi for direct routes"
+        "多条线路覆盖旅游区",
+        "直达路线建议使用滴滴叫车"
       ],
       "taxi": [
-        "Starting fare: 10¥ (first 3km)",
+        "起步价：10元（含3公里）",
         "Waiting: 0.5¥ per minute",
-        "Night surcharge: 20% extra",
-        "Strongly recommend Didi over hailing"
+        "夜间加价：20%",
+        "强烈建议使用滴滴而非路边拦车"
       ],
       " Yangtze Cruise": [
         "Three Gorges cruises depart from Chongqing docks",
@@ -2735,8 +2735,8 @@
       ],
       "bike": [
         "Mobike and Ofo available",
-        "City bike stations near tourist areas",
-        "Didi bike for longer distances"
+        "旅游区附近设有城市自行车站点",
+        "长途骑行可使用滴滴单车"
       ]
     }
   },
@@ -2746,17 +2746,17 @@
       "nameEn": "InterContinental Chongqing Raffles City",
       "budget": "luxury",
       "priceRange": "¥1500-3500/night",
-      "address": "Yangtze River, Yuzhong District",
+      "address": "渝中区长江",
       "coordinates": {
         "lat": 29.5622,
         "lng": 106.5882
       },
       "rating": 4.8,
       "highlights": [
-        "New landmark towers",
-        "River views",
-        "Infinity pool",
-        "Central location"
+        "新地标塔楼",
+        "江景",
+        "无边泳池",
+        "中心位置"
       ],
       "bookingTips": "Book river view rooms. The building itself is architectural marvel."
     },
@@ -2765,17 +2765,17 @@
       "nameEn": "The Westin Chongqing Liberation Square",
       "budget": "luxury",
       "priceRange": "¥1200-2500/night",
-      "address": "Jiefangbei, Yuzhong District",
+      "address": "渝中区解放碑",
       "coordinates": {
         "lat": 29.5522,
         "lng": 106.5782
       },
       "rating": 4.6,
       "highlights": [
-        "Jiefangbei location",
-        "Sky lobby",
-        "Modern rooms",
-        "Multiple dining"
+        "解放碑位置",
+        "空中大堂",
+        "现代客房",
+        "多种餐饮"
       ],
       "bookingTips": "Best location for shopping and food. Weekend rates lower."
     },
@@ -2784,16 +2784,16 @@
       "nameEn": "Hilton Chongqing",
       "budget": "mid",
       "priceRange": "¥800-1500/night",
-      "address": "139 Zhongshan San Road, Yuzhong",
+      "address": "渝中区中山三路139号",
       "coordinates": {
         "lat": 29.5622,
         "lng": 106.5682
       },
       "rating": 4.4,
       "highlights": [
-        "Near Jiefangbei",
-        "Yangtze views",
-        "Good service"
+        "近解放碑",
+        "长江景观",
+        "服务好"
       ],
       "bookingTips": "Book river view. Good for first-time visitors."
     },
@@ -2809,9 +2809,9 @@
       },
       "rating": 4.3,
       "highlights": [
-        "River views",
-        "Good value",
-        "Near Jialing River"
+        "江景",
+        "性价比高",
+        "近嘉陵江"
       ],
       "bookingTips": "Better rates on weekdays. Ask for river view room."
     },
@@ -2820,17 +2820,17 @@
       "nameEn": "Yangtze Gold Cruise",
       "budget": "luxury",
       "priceRange": "¥2000-8000/night",
-      "address": "Chongqing Dock, Yuzhong District",
+      "address": "渝中区朝天门码头",
       "coordinates": {
         "lat": 29.5622,
         "lng": 106.5982
       },
       "rating": 4.7,
       "highlights": [
-        "5-star river cruise",
-        "Three Gorges itinerary",
-        "All-inclusive",
-        "Unique experience"
+        "五星级长江游轮",
+        "三峡行程",
+        "全包式",
+        "独特体验"
       ],
       "bookingTips": "Book 3+ months ahead for peak season. Window cabins worth premium."
     },
@@ -2839,17 +2839,17 @@
       "nameEn": "JW Marriott Hotel Chongqing",
       "budget": "luxury",
       "priceRange": "¥1200-2500/night",
-      "address": "168 Jiefangbei Road, Yuzhong District",
+      "address": "渝中区解放碑路168号",
       "coordinates": {
         "lat": 29.5522,
         "lng": 106.5782
       },
       "rating": 4.6,
       "highlights": [
-        "Central business district",
-        "Premium service",
-        "Multiple restaurants",
-        "River views"
+        "中央商务区",
+        "优质服务",
+        "多家餐厅",
+        "江景"
       ],
       "bookingTips": "Best location for tourists. Book club rooms for better service."
     },
@@ -2858,17 +2858,17 @@
       "nameEn": "Sheraton Chongqing Hotel",
       "budget": "mid",
       "priceRange": "¥800-1500/night",
-      "address": "16 Nan'an Binjiang Road, Nan'an District",
+      "address": "南岸区南滨路16号",
       "coordinates": {
         "lat": 29.5422,
         "lng": 106.5882
       },
       "rating": 4.5,
       "highlights": [
-        "River view",
-        "Near Hongyadong",
-        "Modern facilities",
-        "Good breakfast"
+        "江景",
+        "靠近洪崖洞",
+        "现代化设施",
+        "早餐丰盛"
       ],
       "bookingTips": "Best river view rooms. Walking distance to attractions."
     },
@@ -2877,17 +2877,17 @@
       "nameEn": "Mercure Chongqing Jiefangbei",
       "budget": "mid",
       "priceRange": "¥400-800/night",
-      "address": "68 Jiutional Road, Yuzhong District",
+      "address": "渝中区九龙门路68号",
       "coordinates": {
         "lat": 29.5522,
         "lng": 106.5782
       },
       "rating": 4.4,
       "highlights": [
-        "Central location",
-        "Clean rooms",
-        "Good value",
-        "Close to metro"
+        "中心位置",
+        "干净整洁的房间",
+        "性价比高",
+        "靠近地铁"
       ],
       "bookingTips": "Best budget option near Jiefangbei. Book direct."
     },
@@ -2896,17 +2896,17 @@
       "nameEn": "Marriott Hotel Chongqing",
       "budget": "luxury",
       "priceRange": "¥1000-2000/night",
-      "address": "55 Jiangbei Main Street, Jiangbei District",
+      "address": "江北区江北正街55号",
       "coordinates": {
         "lat": 29.5622,
         "lng": 106.5682
       },
       "rating": 4.5,
       "highlights": [
-        "City center location",
-        "Premium facilities",
-        "Multiple dining",
-        "Business center"
+        "市中心位置",
+        "高端设施",
+        "多种餐饮",
+        "商务中心"
       ],
       "bookingTips": "Good for both business and leisure. Weekend rates available."
     },
@@ -2915,17 +2915,17 @@
       "nameEn": "Yaste Hotel Chongqing",
       "budget": "mid",
       "priceRange": "¥500-1000/night",
-      "address": "88 Stomatic Street, Yuzhong District",
+      "address": "渝中区Stomatic街88号",
       "coordinates": {
         "lat": 29.5522,
         "lng": 106.5882
       },
       "rating": 4.4,
       "highlights": [
-        "Near Hongyadong",
-        "River views",
-        "Modern decoration",
-        "Good location"
+        "靠近洪崖洞",
+        "江景",
+        "现代装修",
+        "位置优越"
       ],
       "bookingTips": "Book river view rooms. Great for night photography."
     },
@@ -2934,17 +2934,17 @@
       "nameEn": "Glenview Premier Hotel",
       "budget": "mid",
       "priceRange": "¥600-1100/night",
-      "address": "36 Jiuthor Road, Yuzhong District",
+      "address": "渝中区Jiuthor路36号",
       "coordinates": {
         "lat": 29.5522,
         "lng": 106.5682
       },
       "rating": 4.4,
       "highlights": [
-        "Near People's Square",
-        "Good service",
-        "Clean rooms",
-        "Metro access"
+        "靠近人民广场",
+        "服务好",
+        "干净的房间",
+        "地铁直达"
       ],
       "bookingTips": "Combine with Three Gorges Museum visit. Good breakfast."
     },
@@ -2953,17 +2953,17 @@
       "nameEn": "Radisson Blu Hotel Chongqing",
       "budget": "mid",
       "priceRange": "¥700-1200/night",
-      "address": "22 Nan'an Binjiang Road, Nan'an District",
+      "address": "南岸区南滨路22号",
       "coordinates": {
         "lat": 29.5422,
         "lng": 106.5922
       },
       "rating": 4.5,
       "highlights": [
-        "River view rooms",
-        "Near Hongyadong",
-        "Modern facilities",
-        "Good breakfast"
+        "江景房",
+        "靠近洪崖洞",
+        "现代化设施",
+        "早餐不错"
       ],
       "bookingTips": "Best for night views. Book high floor rooms."
     },
@@ -2972,17 +2972,17 @@
       "nameEn": "Wanda Vista Hotel Chongqing",
       "budget": "luxury",
       "priceRange": "¥1200-2200/night",
-      "address": "88 Jiatong Road, Yuzhong District",
+      "address": "渝中区嘉同路88号",
       "coordinates": {
         "lat": 29.5622,
         "lng": 106.5782
       },
       "rating": 4.6,
       "highlights": [
-        "Luxury facilities",
-        "Central location",
-        "Good service",
-        "Multiple restaurants"
+        "豪华设施",
+        "中心位置",
+        "服务好",
+        "多家餐厅"
       ],
       "bookingTips": "Book club rooms. Weekend rates available."
     },
@@ -2991,17 +2991,17 @@
       "nameEn": "Days Hotel & Suites Chongqing",
       "budget": "budget",
       "priceRange": "¥300-600/night",
-      "address": "168 Jiefangbei Road, Yuzhong District",
+      "address": "渝中区解放碑路168号",
       "coordinates": {
         "lat": 29.5522,
         "lng": 106.5782
       },
       "rating": 4.3,
       "highlights": [
-        "Budget option",
-        "Central location",
-        "Clean rooms",
-        "Good value"
+        "经济实惠",
+        "中心位置",
+        "干净的房间",
+        "性价比高"
       ],
       "bookingTips": "Best budget near Jiefangbei. Book early for discounts."
     },
@@ -3010,17 +3010,17 @@
       "nameEn": "Chongqing Mist City Hotel",
       "budget": "mid",
       "priceRange": "¥400-800/night",
-      "address": "68 Chengjung Road, Yuzhong District",
+      "address": "渝中区城东路68号",
       "coordinates": {
         "lat": 29.5522,
         "lng": 106.5682
       },
       "rating": 4.4,
       "highlights": [
-        "Traditional style",
-        "Near Jiefangbei",
-        "Local atmosphere",
-        "Good service"
+        "传统风格",
+        "靠近解放碑",
+        "当地氛围",
+        "服务好"
       ],
       "bookingTips": "Experience local culture. Good for first-time visitors."
     }
@@ -3032,10 +3032,10 @@
       "description": "Universal in Chongqing",
       "howToUse": [
         "Download before arrival",
-        "Link card or Chinese account"
+        "绑定银行卡或中国账户"
       ],
       "tips": [
-        "Works at all hot pot restaurants",
+        "适用于所有火锅店",
         "English available"
       ]
     },
@@ -3045,7 +3045,7 @@
       "description": "Accepted everywhere",
       "howToUse": [
         "WeChat required",
-        "International cards accepted"
+        "接受国际银行卡"
       ],
       "tips": [
         "Set to English mode",
@@ -3055,14 +3055,14 @@
     {
       "method": "Cash",
       "icon": "cash",
-      "description": "Still common at traditional markets",
+      "description": "在传统市场仍然常见",
       "howToUse": [
-        "ATM at every corner",
+        "ATM在每个角落",
         "Banks for exchange"
       ],
       "tips": [
-        "Small vendors prefer cash",
-        "Keep 100¥ for emergencies"
+        "小摊贩更喜欢cash",
+        "随身携带100元以备不时之需"
       ]
     }
   ],

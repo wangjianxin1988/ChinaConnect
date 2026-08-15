@@ -428,7 +428,7 @@
         "lat": 36.0314,
         "lng": 103.8143
       },
-      "openingHours": "08:00-18:00",
+      "openingHours": "08:00-17:00",
       "ticketPrice": "60¥",
       "recommendedVisitTime": "3-4小时",
       "highlights": [
@@ -2680,32 +2680,32 @@
       {
         "type": "air",
         "from": "Major Chinese cities",
-        "to": "Lanzhou Zhongchuan Airport (LHW)",
+        "to": "兰州中川机场（LHW）",
         "duration": "2-4 hours",
         "price": "600-1800¥",
-        "frequency": "Daily flights from major cities",
-        "tips": "Airport 70km from city. Airport bus (30¥) or high-speed train (25¥) to city. Good connections."
+        "frequency": "主要城市每日有航班",
+        "tips": "机场距市区70公里。机场大巴（30元）或高铁（25元）可到市区。交通便利。"
       },
       {
         "type": "train",
-        "from": "Beijing (11h), Shanghai (14h), Xian (3h)",
-        "to": "Lanzhou Railway Station / Lanzhou West Station",
+        "from": "北京（11小时）、上海（14小时）、西安（3小时）",
+        "to": "兰州站 / 兰州西站",
         "duration": "3-14 hours",
         "price": "200-900¥",
-        "frequency": "Multiple daily trains including high-speed",
-        "tips": "Lanzhou West for high-speed trains. Regular trains at main station. Both have metro connections."
+        "frequency": "每日多趟列车，包括高铁",
+        "tips": "高铁在兰州西站，普通列车在兰州站。两站均有地铁接驳。"
       }
     ],
     "local": {
       "metro": [
         "Metro Line 1 operational",
-        "Line 2 under construction",
-        "Connects stations and airport"
+        "2号线在建中",
+        "连接车站和机场"
       ],
       "bus": [
         "Extensive bus network",
         "2¥ standard fare",
-        "Tourist buses to attractions"
+        "旅游巴士可到景点"
       ],
       "taxi": [
         "Starting fare: 10¥",
@@ -2713,8 +2713,8 @@
         "Negotiate for long trips"
       ],
       "bike": [
-        "Mobike and Meituan bikes available",
-        "Flat city terrain good for cycling",
+        "有摩拜和美团单车可用",
+        "平坦的城市地形适合骑行",
         "Bike lanes on main roads"
       ],
       "walking": [
@@ -2742,10 +2742,10 @@
       },
       "rating": 4.6,
       "highlights": [
-        "Central location",
-        "Modern luxury",
-        "River views",
-        "Good service"
+        "中心位置",
+        "现代奢华",
+        "河景",
+        "服务好"
       ],
       "bookingTips": "Best luxury in city. Book river view rooms. Good base for sightseeing."
     },
@@ -2761,10 +2761,10 @@
       },
       "rating": 4.5,
       "highlights": [
-        "Yellow River location",
-        "Modern facilities",
-        "Good breakfast",
-        "Central"
+        "黄河位置",
+        "现代化设施",
+        "早餐好",
+        "中心地段"
       ],
       "bookingTips": "Best location near river. The breakfast is excellent. Book river view rooms."
     },
@@ -2780,10 +2780,10 @@
       },
       "rating": 4.4,
       "highlights": [
-        "Central location",
-        "Historic hotel",
-        "Good value",
-        "Chinese style"
+        "中心位置",
+        "历史悠久的酒店",
+        "性价比高",
+        "中式风格"
       ],
       "bookingTips": "Good mid-range option. Historic hotel with character. Book direct for discounts."
     },
@@ -2792,17 +2792,17 @@
       "nameEn": "Yellow River Hotel",
       "budget": "mid",
       "priceRange": "¥300-600/night",
-      "address": "South River Bank",
+      "address": "南河Bank",
       "coordinates": {
         "lat": 36.0614,
         "lng": 103.8443
       },
       "rating": 4.4,
       "highlights": [
-        "River location",
-        "Central",
-        "Good views",
-        "Value"
+        "河畔位置",
+        "中心位置",
+        "视野好",
+        "性价比高"
       ],
       "bookingTips": "Good location near river attractions. Book river view rooms. Simple but adequate."
     },
@@ -2818,10 +2818,10 @@
       },
       "rating": 4.3,
       "highlights": [
-        "Budget-friendly",
-        "Social atmosphere",
-        "Near station",
-        "English spoken"
+        "经济实惠",
+        "社交氛围好",
+        "靠近车站",
+        "提供英语服务"
       ],
       "bookingTips": "Best for backpackers. English speaking staff. Great for Silk Road travelers. Book ahead."
     },
@@ -2837,10 +2837,10 @@
       },
       "rating": 4.3,
       "highlights": [
-        "Near park",
-        "Quiet location",
-        "Good views",
-        "Value"
+        "靠近公园",
+        "位置安静",
+        "视野好",
+        "性价比高"
       ],
       "bookingTips": "Good for nature lovers. Near Baita Mountain hike. Book park view rooms."
     },
@@ -2856,10 +2856,10 @@
       },
       "rating": 4.5,
       "highlights": [
-        "Modern",
-        "Central location",
-        "Good facilities",
-        "Value"
+        "现代化",
+        "中心位置",
+        "设施完善",
+        "性价比高"
       ],
       "bookingTips": "New property with modern amenities. Good for business travelers. Book direct."
     },
@@ -2875,10 +2875,10 @@
       },
       "rating": 4.2,
       "highlights": [
-        "Near mosque",
-        "Muslim area",
-        "Cultural experience",
-        "Budget"
+        "靠近清真寺",
+        "穆斯林区",
+        "文化体验",
+        "经济实惠"
       ],
       "bookingTips": "Stay in Muslim quarter for cultural experience. Simple accommodation. Great Muslim food nearby."
     },
@@ -2894,10 +2894,10 @@
       },
       "rating": 4.2,
       "highlights": [
-        "Budget chain",
-        "Consistent quality",
-        "Multiple locations",
-        "Clean"
+        "经济连锁",
+        "品质稳定",
+        "多家分店",
+        "干净整洁"
       ],
       "bookingTips": "Reliable budget option. Multiple locations in city. Book online for discounts."
     },
@@ -2913,10 +2913,10 @@
       },
       "rating": 4.5,
       "highlights": [
-        "Business hotel",
-        "Modern facilities",
-        "Good service",
-        "Central"
+        "商务酒店",
+        "现代化设施",
+        "服务优质",
+        "市中心"
       ],
       "bookingTips": "Good for business travelers. Modern amenities. Book weekend rates for value."
     },
@@ -2932,10 +2932,10 @@
       },
       "rating": 4.4,
       "highlights": [
-        "Ancient town",
-        "Local families",
-        "Historic",
-        "Cultural"
+        "古镇",
+        "当地家庭",
+        "历史悠久",
+        "文化"
       ],
       "bookingTips": "Stay overnight in ancient town for quiet experience. Local homestays available. Book through local guides."
     },
@@ -2951,10 +2951,10 @@
       },
       "rating": 4.4,
       "highlights": [
-        "Lake location",
-        "Near Bingling",
-        "Scenic",
-        "Peaceful"
+        "湖畔位置",
+        "靠近炳灵",
+        "风景优美",
+        "宁静"
       ],
       "bookingTips": "Base for Bingling Caves day trip. Good for photography tours. The canyon scenery is beautiful."
     },
@@ -2970,10 +2970,10 @@
       },
       "rating": 4.5,
       "highlights": [
-        "Mountain location",
-        "Nature",
-        "Hiking",
-        "Fresh air"
+        "山间位置",
+        "自然",
+        "徒步",
+        "空气清新"
       ],
       "bookingTips": "Good for hiking trips. Mountain air is refreshing. Book hiking packages. Summer escape from city."
     },
@@ -2989,10 +2989,10 @@
       },
       "rating": 4.6,
       "highlights": [
-        "Boat hotel",
-        "River views",
-        "Unique experience",
-        "Scenic"
+        "船屋酒店",
+        "河景",
+        "独特体验",
+        "风景优美"
       ],
       "bookingTips": "Unique overnight on Yellow River. The canyon views are stunning. Book in advance for best cabins."
     },
@@ -3008,10 +3008,10 @@
       },
       "rating": 4.5,
       "highlights": [
-        "Near station",
-        "Modern",
-        "Good service",
-        "Value"
+        "靠近车站",
+        "现代",
+        "服务好",
+        "性价比高"
       ],
       "bookingTips": "Best for train travelers. New hotel with consistent quality. Book direct for best rates."
     }
@@ -3036,7 +3036,7 @@
       "description": "Accepted everywhere",
       "howToUse": [
         "WeChat required",
-        "International version works"
+        "国际版可用"
       ],
       "tips": [
         "Set to English mode",
@@ -3046,14 +3046,14 @@
     {
       "method": "Cash",
       "icon": "cash",
-      "description": "Useful at traditional markets",
+      "description": "在传统市场很有用",
       "howToUse": [
-        "ATM everywhere",
+        "ATM 到处可用",
         "Bring for night markets"
       ],
       "tips": [
         "Keep 100¥ for markets",
-        "Most restaurants accept mobile"
+        "大多数餐厅接受移动支付"
       ]
     }
   ],

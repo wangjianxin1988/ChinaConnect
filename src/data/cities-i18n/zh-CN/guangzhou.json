@@ -2756,46 +2756,46 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major international airports",
-        "to": "Guangzhou Baiyun International Airport (CAN)",
-        "duration": "Varies (10-13 hours from Europe/Americas)",
+        "from": "主要国际机场",
+        "to": "广州白云国际机场（CAN）",
+        "duration": "视情况而定（从欧洲/美洲出发约10-13小时）",
         "price": "1000-7000¥",
         "frequency": "Multiple daily flights",
-        "tips": "Second busiest airport in China. Metro Line 3 connects to city center. High-speed rail station nearby."
+        "tips": "中国第二繁忙的机场。地铁3号线连接市中心。附近有高铁站。"
       },
       {
         "type": "train",
-        "from": "Shenzhen (35min), Hong Kong (1h), Beijing (8h)",
-        "to": "Guangzhou South Railway Station / Guangzhou Railway Station",
-        "duration": "35min-8h depending on origin",
+        "from": "深圳（35分钟）、香港（1小时）、北京（8小时）",
+        "to": "广州南站 / 广州站",
+        "duration": "35分钟至8小时，取决于出发地",
         "price": "150-900¥",
         "frequency": "Frequent departures",
-        "tips": "High-speed rail very convenient. Guangzhou South is for high-speed, Guangzhou for conventional trains."
+        "tips": "高铁非常方便。广州南站是高铁站，广州站是普通列车站。"
       }
     ],
     "local": {
       "metro": [
-        "18 lines covering city and suburbs",
-        "Single ride: 2-16¥ depending on distance",
-        "English announcements at major stations",
-        "Line 3 very crowded during peak hours"
+        "18条线路覆盖市区和郊区",
+        "单程票价：2-16元，视距离而定",
+        "主要站点有英文播报",
+        "3号线高峰时段非常拥挤"
       ],
       "bus": [
-        "Extensive network but complex to navigate",
-        "Buses marked with numbers and pinyin",
-        "Guangzhou Bus app available"
+        "公交网络广泛，但导航复杂",
+        "公交车标有数字和拼音",
+        "可使用广州公交APP"
       ],
       "taxi": [
-        "Starting fare: 10¥ (first 2.5km)",
+        "起步价：10元（首2.5公里）",
         "Waiting: 0.4¥ per minute",
-        "Didi app fully English-friendly in Guangzhou",
-        "Electric taxis becoming common"
+        "滴滴APP在广州完全支持英文",
+        "电动出租车越来越普遍"
       ],
       "bike": [
-        "Hellobike, Mobike available",
-        "Unlock: 1¥, then 0.15¥ per 15 min",
+        "哈啰单车、摩拜单车可用",
+        "解锁：1元，之后每15分钟0.15元",
         "Bike lanes improving",
-        "Electric bikes require local registration"
+        "电动自行车需本地注册"
       ]
     }
   },
@@ -2805,16 +2805,16 @@
       "nameEn": "Four Seasons Hotel Guangzhou",
       "budget": "luxury",
       "priceRange": "¥2000-4000/night",
-      "address": "3F, IFZ Tower 2, 5 Zhujiang West Rd, Tianhe",
+      "address": "天河区珠江西路5号IFZ塔2座3楼",
       "coordinates": {
         "lat": 23.1185,
         "lng": 113.3265
       },
       "rating": 4.9,
       "highlights": [
-        "99th floor infinity pool",
-        "Canton Tower views",
-        "Premium service"
+        "99楼无边泳池",
+        "广州塔景观",
+        "优质服务"
       ],
       "bookingTips": "Request tower-view rooms. Very popular for special occasions."
     },
@@ -2823,16 +2823,16 @@
       "nameEn": "Shangri-La Hotel Guangzhou",
       "budget": "luxury",
       "priceRange": "¥1800-3500/night",
-      "address": "1 Hua Cheng Da Dao, Tianhe District",
+      "address": "天河区花城大道1号",
       "coordinates": {
         "lat": 23.1235,
         "lng": 113.3145
       },
       "rating": 4.7,
       "highlights": [
-        "River views",
-        "Large pool and spa",
-        "Central location"
+        "江景",
+        "大型泳池和水疗中心",
+        "中心位置"
       ],
       "bookingTips": "Riverside rooms worth the extra cost."
     },
@@ -2841,16 +2841,16 @@
       "nameEn": "Sheraton Guangzhou Hotel",
       "budget": "mid",
       "priceRange": "¥900-1500/night",
-      "address": "208 Tianhe Rd, Tianhe District",
+      "address": "天河区天河路208号",
       "coordinates": {
         "lat": 23.1345,
         "lng": 113.3345
       },
       "rating": 4.5,
       "highlights": [
-        "Central location near Grandview Mall",
-        "Reliable brand",
-        "Good breakfast"
+        "中心位置，靠近正佳广场",
+        "可靠品牌",
+        "早餐丰盛"
       ],
       "bookingTips": "Weekend rates often lower."
     },
@@ -2859,16 +2859,16 @@
       "nameEn": "DoubleTree by Hilton Guangzhou",
       "budget": "mid",
       "priceRange": "¥700-1200/night",
-      "address": "1 Fortune Rd, Tianhe District",
+      "address": "天河区福运路1号",
       "coordinates": {
         "lat": 23.1405,
         "lng": 113.3395
       },
       "rating": 4.4,
       "highlights": [
-        "Near metro station",
-        "Consistent quality",
-        "Good value"
+        "靠近地铁站",
+        "品质稳定",
+        "性价比高"
       ],
       "bookingTips": "Book directly for best rates."
     },
@@ -2877,16 +2877,16 @@
       "nameEn": "White Swan Hotel",
       "budget": "luxury",
       "priceRange": "¥1500-3000/night",
-      "address": "1 Shamian St, Liwan District",
+      "address": "荔湾区沙面大街1号",
       "coordinates": {
         "lat": 23.1205,
         "lng": 113.2465
       },
       "rating": 4.7,
       "highlights": [
-        "Historic Shamian Island location",
-        "Best dim sum in Guangzhou",
-        "Cultural heritage"
+        "位于历史悠久的沙面岛",
+        "广州最佳点心",
+        "文化遗产"
       ],
       "bookingTips": "Request rooms with river views. Famous for breakfast dim sum."
     },
@@ -2895,16 +2895,16 @@
       "nameEn": "Guangzhou Marriott Hotel",
       "budget": "luxury",
       "priceRange": "¥1200-2500/night",
-      "address": "515 Huangpu Da Dao, Tianhe District",
+      "address": "天河区黄埔大道515号",
       "coordinates": {
         "lat": 23.1165,
         "lng": 113.3215
       },
       "rating": 4.6,
       "highlights": [
-        "Pearl River views",
-        "Modern facilities",
-        "Central location"
+        "珠江景观",
+        "现代化设施",
+        "中心位置"
       ],
       "bookingTips": "Best river-view rooms on higher floors."
     },
@@ -2913,16 +2913,16 @@
       "nameEn": "Hyatt Regency Guangzhou Zengjiang",
       "budget": "luxury",
       "priceRange": "¥1100-2200/night",
-      "address": "No. 370 Huangpu Da Dao, Tianhe District",
+      "address": "天河区黄埔大道370号",
       "coordinates": {
         "lat": 23.1175,
         "lng": 113.3195
       },
       "rating": 4.7,
       "highlights": [
-        "Connected to Taikoo Hui mall",
-        "Modern design",
-        "Excellent breakfast"
+        "连接太古汇商场",
+        "现代设计",
+        "早餐很棒"
       ],
       "bookingTips": "Request rooms away from street for quiet."
     },
@@ -2931,16 +2931,16 @@
       "nameEn": "China Hotel Guangzhou",
       "budget": "mid",
       "priceRange": "¥600-1100/night",
-      "address": "194 Liu Hua Rd, Yuexiu District",
+      "address": "越秀区流花路194号",
       "coordinates": {
         "lat": 23.1395,
         "lng": 113.2725
       },
       "rating": 4.5,
       "highlights": [
-        "Near railway station",
-        "Good transport links",
-        "Reliable brand"
+        "靠近火车站",
+        "交通便利",
+        "品牌可靠"
       ],
       "bookingTips": "Weekend rates often lower."
     },
@@ -2949,16 +2949,16 @@
       "nameEn": "Garden Hotel Guangzhou",
       "budget": "luxury",
       "priceRange": "¥1000-2000/night",
-      "address": "368 Huanshi Dong Rd, Yuexiu District",
+      "address": "越秀区环市东路368号",
       "coordinates": {
         "lat": 23.1435,
         "lng": 113.2795
       },
       "rating": 4.6,
       "highlights": [
-        "Large garden area",
-        "Historic luxury",
-        "Multiple dining options"
+        "大型花园区域",
+        "历史悠久的奢华",
+        "多种餐饮选择"
       ],
       "bookingTips": "Best for business travelers."
     },
@@ -2967,16 +2967,16 @@
       "nameEn": "Mandarin Oriental Guangzhou",
       "budget": "luxury",
       "priceRange": "¥2500-5000/night",
-      "address": "5 Xin Gang Rd, Tianhe District",
+      "address": "天河区新港路5号",
       "coordinates": {
         "lat": 23.1165,
         "lng": 113.3235
       },
       "rating": 4.8,
       "highlights": [
-        "Ultra-luxury service",
-        "Michelin-starred restaurant",
-        "Private club lounge"
+        "超豪华服务",
+        "米其林星级餐厅",
+        "私人俱乐部酒廊"
       ],
       "bookingTips": "Suite upgrades worth considering for special occasions."
     },
@@ -2985,16 +2985,16 @@
       "nameEn": "The Ritz-Carlton Guangzhou",
       "budget": "luxury",
       "priceRange": "¥2000-4000/night",
-      "address": "3 Xinghua Rd, Tianhe District",
+      "address": "天河区兴华路3号",
       "coordinates": {
         "lat": 23.1195,
         "lng": 113.3195
       },
       "rating": 4.8,
       "highlights": [
-        "Pearl River front location",
-        "Premium spa",
-        "Executive lounge"
+        "珠江前滨位置",
+        "高级水疗",
+        "行政酒廊"
       ],
       "bookingTips": "Club level rooms include excellent breakfast."
     },
@@ -3003,16 +3003,16 @@
       "nameEn": "The Westin Guangzhou",
       "budget": "luxury",
       "priceRange": "¥1500-2800/night",
-      "address": "6 Linhe Zhong Rd, Tianhe District",
+      "address": "天河区林和中路6号",
       "coordinates": {
         "lat": 23.1365,
         "lng": 113.3395
       },
       "rating": 4.6,
       "highlights": [
-        "Wellness focus",
-        "Central location",
-        "Good business facilities"
+        "注重养生",
+        "中心位置",
+        "良好的商务设施"
       ],
       "bookingTips": "Heavenly beds popular for good sleep."
     },
@@ -3021,16 +3021,16 @@
       "nameEn": "Hilton Guangzhou Tianhe",
       "budget": "mid",
       "priceRange": "¥800-1500/night",
-      "address": "215 Linhe Rd, Tianhe District",
+      "address": "天河区林和路215号",
       "coordinates": {
         "lat": 23.1355,
         "lng": 113.3405
       },
       "rating": 4.5,
       "highlights": [
-        "Near East Railway Station",
-        "Reliable brand standards",
-        "Good breakfast"
+        "靠近广州东站",
+        "可靠的品牌标准",
+        "早餐不错"
       ],
       "bookingTips": "HHonors members get better rates."
     },
@@ -3039,16 +3039,16 @@
       "nameEn": "Jianguo Hotel Guangzhou",
       "budget": "mid",
       "priceRange": "¥500-900/night",
-      "address": "586 Beijing Rd, Yuexiu District",
+      "address": "越秀区北京路586号",
       "coordinates": {
         "lat": 23.1315,
         "lng": 113.2635
       },
       "rating": 4.4,
       "highlights": [
-        "Near shopping district",
-        "Good value",
-        "Central location"
+        "靠近购物区",
+        "性价比高",
+        "中心位置"
       ],
       "bookingTips": "Best location for sightseeing."
     },
@@ -3057,16 +3057,16 @@
       "nameEn": "Pullman Guangzhou Airport",
       "budget": "mid",
       "priceRange": "¥550-950/night",
-      "address": "Baiyun International Airport",
+      "address": "白云国际机场",
       "coordinates": {
         "lat": 23.3895,
         "lng": 113.2985
       },
       "rating": 4.4,
       "highlights": [
-        "Airport location",
-        "Free airport shuttle",
-        "Good for transit"
+        "机场位置",
+        "免费机场班车",
+        "适合中转"
       ],
       "bookingTips": "Perfect for early flights or late arrivals."
     },
@@ -3075,16 +3075,16 @@
       "nameEn": "Atour Hotel Guangzhou",
       "budget": "budget",
       "priceRange": "¥350-650/night",
-      "address": "Multiple locations citywide",
+      "address": "全市多个地点",
       "coordinates": {
         "lat": 23.1285,
         "lng": 113.2945
       },
       "rating": 4.6,
       "highlights": [
-        "Book library in lobby",
-        "Quality bedding",
-        "Modern design"
+        "大堂设有图书借阅",
+        "优质床上用品",
+        "现代设计"
       ],
       "bookingTips": "Good value for quality conscious travelers."
     },
@@ -3100,9 +3100,9 @@
       },
       "rating": 4.2,
       "highlights": [
-        "Budget friendly",
-        "Consistent quality",
-        "Good locations"
+        "经济实惠",
+        "品质稳定",
+        "位置优越"
       ],
       "bookingTips": "Best for very budget travelers."
     },
@@ -3118,9 +3118,9 @@
       },
       "rating": 4.4,
       "highlights": [
-        "HuaTeng brand quality",
-        "Modern rooms",
-        "Good value"
+        "华腾品牌品质",
+        "现代客房",
+        "性价比高"
       ],
       "bookingTips": "Good balance of price and quality."
     }
@@ -3129,43 +3129,43 @@
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Dominant payment in Guangzhou, accepted everywhere",
+      "description": "广州主要支付方式，随处可用",
       "howToUse": [
         "Download before arrival",
         "Bind international card",
         "QR code payment"
       ],
       "tips": [
-        "Guangzhou is modern - foreign cards work at many places",
-        "Still download Alipay as backup",
-        "Local vendors mostly use Alipay"
+        "广州很现代——外国卡在很多地方都能用",
+        "仍建议下载支付宝作为备用",
+        "本地商家大多使用支付宝"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Essential for local transactions",
+      "description": "本地交易必备",
       "howToUse": [
         "WeChat app required",
-        "Link card in app settings",
+        "在应用设置中绑定银行卡",
         "QR scan payment"
       ],
       "tips": [
-        "Didi taxi requires WeChat",
-        "Even locals prefer Alipay for larger payments"
+        "滴滴打车需要微信",
+        "即使是本地人，大额支付也更喜欢用支付宝"
       ]
     },
     {
       "method": "Cash (RMB)",
       "icon": "cash",
-      "description": "Still useful for traditional markets and small vendors",
+      "description": "在传统市场和街边小贩处仍有用",
       "howToUse": [
         "ATMs widely available",
-        "Keep 100-200¥ small bills"
+        "准备100-200元的小面额纸币"
       ],
       "tips": [
-        "Most modern places accept cards",
-        "Food markets still prefer cash"
+        "大多数现代场所接受刷卡",
+        "食品市场仍偏好现金"
       ]
     }
   ],

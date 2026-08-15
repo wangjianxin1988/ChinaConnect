@@ -116,7 +116,7 @@
         "lat": 24.7695,
         "lng": 110.4835
       },
-      "openingHours": "07:00-17:30",
+      "openingHours": "全天开放",
       "ticketPrice": "76¥（仅火车票）",
       "recommendedVisitTime": "1.5小时",
       "highlights": [
@@ -500,7 +500,7 @@
         "lat": 25.2625,
         "lng": 110.2985
       },
-      "openingHours": "06:00-18:00",
+      "openingHours": "06:30-18:30",
       "ticketPrice": "免费",
       "recommendedVisitTime": "2小时",
       "highlights": [
@@ -2746,44 +2746,44 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major domestic airports, growing international routes",
-        "to": "Guilin Liangjiang International Airport (KWL)",
+        "from": "主要国内机场，国际航线不断增多",
+        "to": "桂林两江国际机场（KWL）",
         "duration": "Varies by origin",
         "price": "600-3000¥",
         "frequency": "Multiple daily flights",
-        "tips": "Airport 28km from city center. Airport bus (hourly, 20¥) to downtown. Taxis available."
+        "tips": "机场距市中心28公里。机场大巴（每小时一班，20元）可到市区。也有出租车。"
       },
       {
         "type": "train",
-        "from": "Guangzhou (2.5h), Shenzhen (3h), Beijing (10h)",
-        "to": "Guilin Railway Station / Guilin North Station",
+        "from": "广州（2.5小时）、深圳（3小时）、北京（10小时）",
+        "to": "桂林火车站 / 桂林北站",
         "duration": "2.5-10 hours",
         "price": "200-600¥",
         "frequency": "Several daily departures",
-        "tips": "Guilin North for high-speed trains to/from Guangzhou, Shenzhen. Old station for trains to/from Beijing."
+        "tips": "桂林北站有往返广州、深圳的高铁。老火车站有往返北京的列车。"
       }
     ],
     "local": {
       "metro": [
-        "Currently 2 lines being expanded",
+        "目前有2条线路正在扩建中",
         "English signage limited",
         "Bus network extensive"
       ],
       "bus": [
-        "Good bus connections between scenic areas",
-        "Tourist bus to Yangshuo and Longji",
+        "景区之间公交连接良好",
+        "有前往阳朔和龙脊的旅游巴士",
         "Local buses numbered"
       ],
       "taxi": [
         "Starting fare: 7¥",
-        "Didi works but less common than cities",
-        "Negotiate price for tourist areas"
+        "滴滴可用，但不如城市里普遍",
+        "旅游区需议价"
       ],
       "bike": [
-        "E-bikes widely available for rent",
-        "30-50¥ per day in Yangshuo",
-        "Best way to explore karst scenery",
-        "Helmet recommended but not always provided"
+        "电动车租赁广泛",
+        "阳朔每天30-50元",
+        "探索喀斯特风景的最佳方式",
+        "建议佩戴头盔，但并非总是提供"
       ]
     }
   },
@@ -2793,16 +2793,16 @@
       "nameEn": "Shangri-La Hotel Guilin",
       "budget": "luxury",
       "priceRange": "¥800-1800/night",
-      "address": "1 Shanmeng Rd, Diecai District",
+      "address": "叠彩区山门路1号",
       "coordinates": {
         "lat": 25.2915,
         "lng": 110.2895
       },
       "rating": 4.7,
       "highlights": [
-        "Riverside location",
-        "Great views of karst",
-        "Spacious rooms"
+        "临江位置",
+        "喀斯特美景尽收眼底",
+        "房间宽敞"
       ],
       "bookingTips": "Request river-view rooms for best scenery."
     },
@@ -2811,16 +2811,16 @@
       "nameEn": "Club Med Guilin",
       "budget": "luxury",
       "priceRange": "¥1500-3000/night",
-      "address": "Lijiang National Park, Yanshan Town",
+      "address": "丽江国家公园，雁山镇",
       "coordinates": {
         "lat": 25.1835,
         "lng": 110.3535
       },
       "rating": 4.8,
       "highlights": [
-        "Karst surroundings",
-        "All-inclusive resort",
-        "Activities for all ages"
+        "喀斯特地貌环绕",
+        "全包式度假村",
+        "适合各年龄段的丰富活动"
       ],
       "bookingTips": "Good for families. Book directly for best rates."
     },
@@ -2829,16 +2829,16 @@
       "nameEn": "Sheraton Guilin Hotel",
       "budget": "mid",
       "priceRange": "¥500-1000/night",
-      "address": "1 Binjiang Rd, Xiufeng District",
+      "address": "秀峰区滨江路1号",
       "coordinates": {
         "lat": 25.2785,
         "lng": 110.2875
       },
       "rating": 4.5,
       "highlights": [
-        "Central location on river",
-        "Walking distance to attractions",
-        "Good breakfast"
+        "位于河畔中心地段",
+        "步行可达景点",
+        "早餐丰盛"
       ],
       "bookingTips": "Weekend rates often lower."
     },
@@ -2854,9 +2854,9 @@
       },
       "rating": 4.9,
       "highlights": [
-        "Stunning karst views",
-        "Luxury spa",
-        "Private pool villas"
+        "壮观的喀斯特景观",
+        "豪华水疗中心",
+        "带私人泳池的别墅"
       ],
       "bookingTips": "Best luxury stay in the area. Book spa in advance."
     },
@@ -2872,9 +2872,9 @@
       },
       "rating": 4.4,
       "highlights": [
-        "Central Xi Street location",
-        "Rooftop terrace",
-        "Friendly owners"
+        "位于西街中心地段",
+        "屋顶露台",
+        "友好的店主"
       ],
       "bookingTips": "Book ahead during peak season. Great for budget travelers."
     },
@@ -2883,16 +2883,16 @@
       "nameEn": "Lijiang Waterfall Hotel",
       "budget": "luxury",
       "priceRange": "¥800-1800/night",
-      "address": "1 South Ring Rd, Xiufeng District",
+      "address": "秀峰区南环路1号",
       "coordinates": {
         "lat": 25.2785,
         "lng": 110.2875
       },
       "rating": 4.6,
       "highlights": [
-        "Famous waterfall show",
-        "Central location",
-        "Historic building"
+        "著名瀑布表演",
+        "中心位置",
+        "历史建筑"
       ],
       "bookingTips": "Waterfall show at 20:00 daily. Book river-view room."
     },
@@ -2901,16 +2901,16 @@
       "nameEn": "Guilin Banyan Lake Hotel",
       "budget": "mid",
       "priceRange": "¥500-1000/night",
-      "address": "38-1 Ronghu Rd, Xiufeng District",
+      "address": "秀峰区榕湖路38-1号",
       "coordinates": {
         "lat": 25.2815,
         "lng": 110.2935
       },
       "rating": 4.5,
       "highlights": [
-        "Lake view",
-        "Classic Chinese style",
-        "Central location"
+        "湖景",
+        "经典中式风格",
+        "中心位置"
       ],
       "bookingTips": "Best location near city center attractions."
     },
@@ -2919,16 +2919,16 @@
       "nameEn": "Yangshuo Bilian River View Hotel",
       "budget": "mid",
       "priceRange": "¥400-900/night",
-      "address": "1 Chengzhong Rd, Yangshuo",
+      "address": "阳朔城中路1号",
       "coordinates": {
         "lat": 24.7805,
         "lng": 110.4935
       },
       "rating": 4.5,
       "highlights": [
-        "River view",
-        "Near West Street",
-        "Good facilities"
+        "江景",
+        "靠近西街",
+        "设施齐全"
       ],
       "bookingTips": "Best value in Yangshuo with river views."
     },
@@ -2937,16 +2937,16 @@
       "nameEn": "Guilin Hotel",
       "budget": "mid",
       "priceRange": "¥400-800/night",
-      "address": "1 Yiren Rd, Xiufeng District",
+      "address": "秀峰区翊人路1号",
       "coordinates": {
         "lat": 25.2815,
         "lng": 110.2965
       },
       "rating": 4.4,
       "highlights": [
-        "Near Jingjiang Prince",
-        "Comfortable rooms",
-        "Good breakfast"
+        "靠近靖江王府",
+        "舒适客房",
+        "早餐丰盛"
       ],
       "bookingTips": "Good for first-time visitors."
     },
@@ -2962,9 +2962,9 @@
       },
       "rating": 4.4,
       "highlights": [
-        "Near railway station",
-        "Modern facilities",
-        "Good service"
+        "靠近火车站",
+        "现代化设施",
+        "服务好"
       ],
       "bookingTips": "Best for train travelers."
     },
@@ -2973,16 +2973,16 @@
       "nameEn": "Yangshuo Riverside Resort",
       "budget": "luxury",
       "priceRange": "¥1200-2800/night",
-      "address": "108 Chengzhong Rd, Yangshuo",
+      "address": "阳朔城中路108号",
       "coordinates": {
         "lat": 24.7705,
         "lng": 110.4905
       },
       "rating": 4.7,
       "highlights": [
-        "Riverside location",
-        "Infinity pool",
-        "Quiet environment"
+        "临江位置",
+        "无边泳池",
+        "环境安静"
       ],
       "bookingTips": "Best for romantic getaways."
     },
@@ -2998,9 +2998,9 @@
       },
       "rating": 4.3,
       "highlights": [
-        "Near Elephant Hill",
-        "Affordable",
-        "Basic amenities"
+        "靠近象鼻山",
+        "价格实惠",
+        "基本设施"
       ],
       "bookingTips": "Best budget near main attraction."
     },
@@ -3016,9 +3016,9 @@
       },
       "rating": 4.5,
       "highlights": [
-        "Central location",
-        "Rooftop bar",
-        "Traveler friendly"
+        "中心位置",
+        "屋顶酒吧",
+        "适合旅行者"
       ],
       "bookingTips": "Best for young travelers."
     },
@@ -3034,9 +3034,9 @@
       },
       "rating": 4.6,
       "highlights": [
-        "Terrace views",
-        "Authentic Zhuang experience",
-        "Local family run"
+        "露台景观",
+        "地道壮族体验",
+        "当地家庭经营"
       ],
       "bookingTips": "Book early for sunrise views. Shared bathroom common."
     },
@@ -3052,9 +3052,9 @@
       },
       "rating": 4.4,
       "highlights": [
-        "Near East-West Alley",
-        "Clean rooms",
-        "Good location"
+        "靠近东西巷",
+        "房间干净",
+        "位置好"
       ],
       "bookingTips": "Good value near pedestrian zone."
     }
@@ -3063,16 +3063,16 @@
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Standard payment, accepted at most modern venues",
+      "description": "标准支付方式，大多数现代场所均接受",
       "howToUse": [
         "Download before arrival",
         "Bind international card",
         "QR code payment"
       ],
       "tips": [
-        "Guilin less developed - some places only accept cash",
-        "Rural areas (Longji, Yangshuo) mostly cash",
-        "Download both Alipay and WeChat as backup"
+        "桂林较不发达——部分地方仅接受cash",
+        "农村地区（龙脊、阳朔）大多仅接受cash",
+        "建议同时下载支付宝和微信作为备用"
       ]
     },
     {
@@ -3091,16 +3091,16 @@
     {
       "method": "Cash (RMB)",
       "icon": "cash",
-      "description": "Essential in Guilin - many local restaurants and vendors only accept cash",
+      "description": "在桂林必不可少——许多当地餐馆和摊贩仅接受cash",
       "howToUse": [
-        "Keep 500-1000¥ cash for rural areas",
-        "ATMs available but rural area access limited",
-        "Bamboo raft operators usually cash only"
+        "为农村地区预留500-1000元cash",
+        "有ATM机，但农村地区取款不便",
+        "竹筏经营者通常仅接受cash"
       ],
       "tips": [
-        "Longji Rice Terraces area mostly cash",
-        "Yangshuo market vendors cash only",
-        "Exchange before heading to rural areas"
+        "龙脊梯田景区大多仅接受cash",
+        "阳朔市场摊贩仅接受cash",
+        "前往农村地区前请提前兑换"
       ]
     }
   ],

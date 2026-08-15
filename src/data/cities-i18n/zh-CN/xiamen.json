@@ -2682,63 +2682,63 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major international airports (Singapore, Tokyo, Seoul, Bangkok)",
-        "to": "Xiamen Gaoqi International Airport (XMN)",
-        "duration": "3-6 hours from Asia, 8-12 hours from Europe/Americas",
+        "from": "主要国际机场（新加坡、东京、首尔、曼谷）",
+        "to": "厦门高崎国际机场（XMN）",
+        "duration": "从亚洲出发3-6小时，从欧洲/美洲出发8-12小时",
         "price": "800-5000¥",
-        "frequency": "Multiple daily international flights, extensive domestic network",
-        "tips": "Gaoqi Airport is close to city center (15 minutes). Use official taxi queue or Didi. Metro Line 2 connects to city."
+        "frequency": "每日多班国际航班，国内航线网络密集",
+        "tips": "高崎机场离市中心很近（15分钟）。请使用官方出租车排队区或滴滴。地铁2号线连接市区。"
       },
       {
         "type": "train",
-        "from": "Fuzhou (1.5h), Quanzhou (1h), Zhangzhou (30min)",
-        "to": "Xiamen Railway Station / Xiamen North Railway Station",
+        "from": "福州（1.5小时）、泉州（1小时）、漳州（30分钟）",
+        "to": "厦门站 / 厦门北站",
         "duration": "30min-1.5 hours",
         "price": "50-150¥",
-        "frequency": "Multiple daily high-speed trains",
-        "tips": "Xiamen North is for high-speed trains. Xiamen Station is closer to center. Book through 12306 app."
+        "frequency": "每日多班高铁",
+        "tips": "厦门北站用于高铁。厦门站离市中心更近。可通过12306应用购票。"
       },
       {
         "type": "train",
-        "from": "Shanghai (6h), Shenzhen (3h), Hangzhou (4h)",
-        "to": "Xiamen North Railway Station",
+        "from": "上海（6小时）、深圳（3小时）、杭州（4小时）",
+        "to": "厦门北站",
         "duration": "3-6 hours",
         "price": "200-500¥",
-        "frequency": "Multiple daily departures",
-        "tips": "High-speed trains are comfortable. scenic route along coast. Book seats on right side for ocean views."
+        "frequency": "每天多班次发车",
+        "tips": "高铁舒适，沿海风景优美。预订右侧座位可欣赏海景。"
       }
     ],
     "local": {
       "metro": [
-        "Metro Line 1: Railway Station to Amphitheater (Coastal scenic route)",
-        "Metro Line 2: Jiahe Road to Tianzhou Road (connects airport)",
-        "Metro Line 3: Handan Road to Songbai Road (connects Xiang'an)",
-        "Single ride: 2-8¥ depending on distance",
-        "First train: 06:30, Last train: 23:00",
-        "Peak hours: 07:00-09:00, 17:00-19:00 - expect crowds"
+        "地铁1号线：火车站至剧场（沿海风景路线）",
+        "地铁2号线：嘉禾路至天洲路（连接机场）",
+        "地铁3号线：汉丹路至松柏路（连接翔安）",
+        "单程票价：2-8元，视距离而定",
+        "首班车：06:30，末班车：23:00",
+        "高峰时段：07:00-09:00，17:00-19:00 - 请做好拥挤准备"
       ],
       "bus": [
-        "Extensive network covering all areas",
-        "Single ride: 1-2¥ (flat fee or distance-based)",
-        "BRT (Bus Rapid Transit): dedicated lanes, faster travel",
-        "Tourist Bus 29: links major attractions around Island Ring",
-        "Airport bus: 10-30¥ to city center",
-        "Night bus routes available for late-night travel"
+        "公交网络覆盖所有区域",
+        "单程票价：1-2元（固定或按距离计费）",
+        "BRT（快速公交）：专用车道，出行更快捷",
+        "旅游巴士29路：连接环岛路主要景点",
+        "机场巴士：10-30元至市中心",
+        "夜间公交线路可供深夜出行"
       ],
       "taxi": [
-        "Starting fare: 10¥ (first 3km)",
+        "起步价：10元（含首3公里）",
         "Waiting: 0.5¥ per minute",
-        "Night surcharge: 10% extra (23:00-06:00)",
-        "Always insist on meter use",
-        "Didi app recommended - English interface available",
-        "Airport/large hotels have taxi stands with queue system"
+        "夜间附加费：加收10%（23:00-06:00）",
+        "务必坚持使用计价器",
+        "推荐使用滴滴出行APP - 支持英文界面",
+        "机场/大型酒店设有出租车候客区，排队有序"
       ],
       "bike": [
-        "Mobike, Hello bikes, and other shared bikes widely available",
-        "Unlock: 1-2¥, then 0.5-1.5¥ per 15-30 minutes",
-        "Designated bike lanes on Huandao Road",
-        "Electric bikes available for longer distances",
-        "Must park at designated spots in some areas"
+        "摩拜、哈啰等共享单车随处可见",
+        "解锁：1-2元，之后每15-30分钟0.5-1.5元",
+        "环岛路设有专用自行车道",
+        "电动自行车可用于较长距离出行",
+        "部分区域必须在指定地点停放"
       ]
     }
   },
@@ -2748,17 +2748,17 @@
       "nameEn": "Andaz Xiamen",
       "budget": "luxury",
       "priceRange": "¥1500-3000/night",
-      "address": "No.88 Lujiang Road, Siming District",
+      "address": "思明区鹭江道88号",
       "coordinates": {
         "lat": 24.4558,
         "lng": 118.0788
       },
       "rating": 4.8,
       "highlights": [
-        "Harbour views",
-        "Stylish design",
-        "Central location",
-        "Rooftop bar"
+        "海港景观",
+        "时尚设计",
+        "中心位置",
+        "屋顶酒吧"
       ],
       "bookingTips": "Book direct for best rates. Weekend packages available. Sea-view rooms worth the premium."
     },
@@ -2767,17 +2767,17 @@
       "nameEn": "Waldorf Astoria Xiamen",
       "budget": "luxury",
       "priceRange": "¥2000-4000/night",
-      "address": "No.16 Lujiang Road, Siming District",
+      "address": "思明区鹭江道16号",
       "coordinates": {
         "lat": 24.4552,
         "lng": 118.0792
       },
       "rating": 4.9,
       "highlights": [
-        "Luxury spa",
-        "Multiple fine dining",
-        "Butler service",
-        "Prime waterfront location"
+        "豪华水疗",
+        "多家高级餐厅",
+        "管家服务",
+        "黄金海滨位置"
       ],
       "bookingTips": "Book 2+ weeks ahead for best availability. Consider breakfast-inclusive packages."
     },
@@ -2786,17 +2786,17 @@
       "nameEn": "Conrad Xiamen",
       "budget": "luxury",
       "priceRange": "¥1200-2500/night",
-      "address": "188 Jiahe Road, Siming District",
+      "address": "思明区嘉禾路188号",
       "coordinates": {
         "lat": 24.4612,
         "lng": 118.0895
       },
       "rating": 4.7,
       "highlights": [
-        "Floor-to-ceiling views",
-        "Infinity pool",
-        "Great breakfast",
-        "Near Hubin Road"
+        "落地窗景观",
+        "无边泳池",
+        "丰盛早餐",
+        "靠近湖滨路"
       ],
       "bookingTips": "Request high floor for best views. Hotel buffet is excellent. Good value at weekends."
     },
@@ -2805,17 +2805,17 @@
       "nameEn": "Shangri-La Xiamen",
       "budget": "luxury",
       "priceRange": "¥1000-2000/night",
-      "address": "84 Lujiang Road, Siming District",
+      "address": "思明区鹭江路84号",
       "coordinates": {
         "lat": 24.4555,
         "lng": 118.0785
       },
       "rating": 4.6,
       "highlights": [
-        "Garden setting",
-        "Good service",
-        "Close to ferry terminal",
-        "Spacious rooms"
+        "花园环境",
+        "优质服务",
+        "靠近轮渡码头",
+        "宽敞客房"
       ],
       "bookingTips": "Club rooms offer good value with benefits. Ask for renovated rooms."
     },
@@ -2824,17 +2824,17 @@
       "nameEn": "Millennium Harbourview Hotel Xiamen",
       "budget": "mid",
       "priceRange": "¥600-1200/night",
-      "address": "12 Lujiang Road, Siming District",
+      "address": "思明区鹭江路12号",
       "coordinates": {
         "lat": 24.4558,
         "lng": 118.0782
       },
       "rating": 4.5,
       "highlights": [
-        "Seaview rooms",
-        "Central location",
-        "Good breakfast",
-        "Walk to attractions"
+        "海景房",
+        "中心位置",
+        "早餐不错",
+        "步行可达景点"
       ],
       "bookingTips": "Seaview rooms recommended. Book on travel platforms for discounts."
     },
@@ -2843,17 +2843,17 @@
       "nameEn": "Peony Wanpeng Hotel",
       "budget": "mid",
       "priceRange": "¥400-800/night",
-      "address": "No.17 Lujiang Road, Siming District",
+      "address": "思明区鹭江道17号",
       "coordinates": {
         "lat": 24.4552,
         "lng": 118.0778
       },
       "rating": 4.4,
       "highlights": [
-        "Near Zhongshan Road",
-        "Good location",
-        "Comfortable rooms",
-        "Chinese restaurant"
+        "靠近中山路",
+        "位置好",
+        "房间舒适",
+        "中餐厅"
       ],
       "bookingTips": "Best location for shopping and sightseeing. Check packages for breakfast."
     },
@@ -2862,17 +2862,17 @@
       "nameEn": "Jingmin Central Hotel",
       "budget": "mid",
       "priceRange": "¥400-700/night",
-      "address": "68 Hubin South Road, Siming District",
+      "address": "思明区湖滨南路68号",
       "coordinates": {
         "lat": 24.4512,
         "lng": 118.1045
       },
       "rating": 4.4,
       "highlights": [
-        "Near shopping district",
-        "Good facilities",
-        "Multiple restaurants",
-        "Metro access"
+        "靠近购物区",
+        "设施齐全",
+        "多家餐厅",
+        "地铁可达"
       ],
       "bookingTips": "Weekend rates significantly lower. Good for business travelers."
     },
@@ -2881,17 +2881,17 @@
       "nameEn": "Xiamen Air Galaxy Hotel",
       "budget": "mid",
       "priceRange": "¥350-600/night",
-      "address": "84 Lujiang Road, Siming District",
+      "address": "思明区鹭江道84号",
       "coordinates": {
         "lat": 24.4548,
         "lng": 118.0785
       },
       "rating": 4.3,
       "highlights": [
-        "Airport shuttle",
-        "Flight display in lobby",
-        "Comfortable beds",
-        "Value for money"
+        "机场班车",
+        "大堂航班显示屏",
+        "舒适的床",
+        "性价比高"
       ],
       "bookingTips": "Great for early flights. Free airport transfer. Request quiet rooms."
     },
@@ -2900,17 +2900,17 @@
       "nameEn": "Lujiang Hotel",
       "budget": "mid",
       "priceRange": "¥300-600/night",
-      "address": "23 Lujiang Road, Siming District",
+      "address": "思明区鹭江道23号",
       "coordinates": {
         "lat": 24.4562,
         "lng": 118.0795
       },
       "rating": 4.3,
       "highlights": [
-        "Historic building",
-        "Central location",
-        "Traditional decor",
-        "Good service"
+        "历史建筑",
+        "中心位置",
+        "传统装饰",
+        "服务好"
       ],
       "bookingTips": "Book historical wing for unique experience. Walking distance to ferry."
     },
@@ -2919,17 +2919,17 @@
       "nameEn": "Overseas Chinese Hotel",
       "budget": "budget",
       "priceRange": "¥200-400/night",
-      "address": "1-6 Lujiang Road, Siming District",
+      "address": "思明区鹭江道1-6号",
       "coordinates": {
         "lat": 24.4565,
         "lng": 118.0798
       },
       "rating": 4.2,
       "highlights": [
-        "Excellent location",
-        "Budget-friendly",
-        "Basic amenities",
-        "Central to attractions"
+        "位置优越",
+        "经济实惠",
+        "基本设施",
+        "靠近景点"
       ],
       "bookingTips": "Best value in prime location. Simple but clean rooms. No views but great location."
     },
@@ -2938,17 +2938,17 @@
       "nameEn": "Seven Star Business Hotel",
       "budget": "budget",
       "priceRange": "¥150-350/night",
-      "address": "158 Hubin South Road, Siming District",
+      "address": "思明区湖滨南路158号",
       "coordinates": {
         "lat": 24.4505,
         "lng": 118.1035
       },
       "rating": 4.1,
       "highlights": [
-        "Near shopping mall",
-        "Metro nearby",
-        "Free breakfast",
-        "Modern decor"
+        "靠近购物中心",
+        "地铁附近",
+        "免费早餐",
+        "现代装饰"
       ],
       "bookingTips": "Breakfast included makes great value. Good metro connections. Clean and functional."
     },
@@ -2957,17 +2957,17 @@
       "nameEn": "Home Inn Plus",
       "budget": "budget",
       "priceRange": "¥120-250/night",
-      "address": "35-1 Siming Road, Siming District",
+      "address": "思明区思明路35-1号",
       "coordinates": {
         "lat": 24.4475,
         "lng": 118.0905
       },
       "rating": 4,
       "highlights": [
-        "Near Nanputuo Temple",
-        "Home Inn quality",
-        "Consistent standards",
-        "Good service"
+        "靠近南普陀寺",
+        "如家品质",
+        "标准统一",
+        "服务良好"
       ],
       "bookingTips": "Reliable chain with consistent quality. Book ahead during holidays."
     },
@@ -2976,17 +2976,17 @@
       "nameEn": "Red Hall Hotel Gulangyu",
       "budget": "mid",
       "priceRange": "¥500-900/night",
-      "address": "Gulangyu Island, near Shuzhuang Garden",
+      "address": "鼓浪屿，靠近菽庄花园",
       "coordinates": {
         "lat": 24.4438,
         "lng": 118.0685
       },
       "rating": 4.6,
       "highlights": [
-        "On Gulangyu Island",
-        "Historic building",
-        "Garden setting",
-        "Quiet location"
+        "位于鼓浪屿",
+        "历史建筑",
+        "花园环境",
+        "位置安静"
       ],
       "bookingTips": "Book early - only hotel on Gulangyu with character. Stay on island for sunrise access."
     },
@@ -2995,17 +2995,17 @@
       "nameEn": "Panshi Hotel Gulangyu",
       "budget": "luxury",
       "priceRange": "¥800-1500/night",
-      "address": "Gulangyu Island, near Sunlight Rock",
+      "address": "鼓浪屿，靠近日光岩",
       "coordinates": {
         "lat": 24.4468,
         "lng": 118.0652
       },
       "rating": 4.7,
       "highlights": [
-        "Seaview",
-        "Historic mansion",
-        "Good restaurant",
-        "Close to attractions"
+        "海景",
+        "历史建筑",
+        "优质餐厅",
+        "靠近景点"
       ],
       "bookingTips": "Best location on Gulangyu for first-time visitors. Reserve seaview rooms."
     },
@@ -3014,17 +3014,17 @@
       "nameEn": "Jimei Lake Hotel",
       "budget": "mid",
       "priceRange": "¥300-600/night",
-      "address": "Jimei District, near Chengyi Park",
+      "address": "集美区，靠近诚毅公园",
       "coordinates": {
         "lat": 24.4375,
         "lng": 118.0535
       },
       "rating": 4.3,
       "highlights": [
-        "Near Jimei School Village",
-        "Lake views",
-        "New facilities",
-        "Good for families"
+        "靠近集美学村",
+        "湖景",
+        "设施新",
+        "适合家庭"
       ],
       "bookingTips": "Best for exploring Jimei area. Good restaurant. Free parking."
     },
@@ -3033,17 +3033,17 @@
       "nameEn": "Hilton Garden Inn Xiamen Haicang",
       "budget": "mid",
       "priceRange": "¥350-650/night",
-      "address": "68 Haicang Avenue, Haicang District",
+      "address": "海沧区海沧大道68号",
       "coordinates": {
         "lat": 24.4595,
         "lng": 118.0255
       },
       "rating": 4.5,
       "highlights": [
-        "Near Haicang Port",
-        "Modern facilities",
-        "Good breakfast",
-        "Value for money"
+        "靠近海沧港",
+        "现代化设施",
+        "早餐好",
+        "性价比高"
       ],
       "bookingTips": "Great for business travelers. Clean and comfortable. Free WiFi. Good location."
     },
@@ -3052,17 +3052,17 @@
       "nameEn": "Xiamen International Conference Hotel",
       "budget": "luxury",
       "priceRange": "¥800-1500/night",
-      "address": "110 Lulin Road, Siming District",
+      "address": "思明区鹭林路110号",
       "coordinates": {
         "lat": 24.4635,
         "lng": 118.0785
       },
       "rating": 4.6,
       "highlights": [
-        "Ocean view",
-        "Conference facilities",
-        "Luxury spa",
-        "Multiple restaurants"
+        "海景",
+        "会议设施",
+        "豪华水疗",
+        "多家餐厅"
       ],
       "bookingTips": "Book sea-view rooms. Great for MICE travelers. Excellent service. Beautiful grounds."
     }
@@ -3071,99 +3071,99 @@
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Most widely accepted mobile payment in Xiamen",
+      "description": "厦门最广泛接受的移动支付方式",
       "howToUse": [
-        "Download Alipay app before arrival",
-        "Link international credit card (Visa/Mastercard accepted at many merchants)",
-        "QR code payment at most merchants, supermarkets, and restaurants",
-        "Use for metro, bus, taxis, and rideshare"
+        "抵达前下载支付宝应用",
+        "绑定国际银行卡（许多商家接受Visa/Mastercard）",
+        "在大多数商家、超市和餐厅使用二维码支付",
+        "用于地铁、公交、出租车和网约车"
       ],
       "tips": [
-        "Nearly all merchants in Xiamen accept Alipay",
-        "Blue code (international version) available for foreign cards",
-        "Download before arrival as app stores may not have it",
-        "Keep some cash as backup in rural areas"
+        "厦门几乎所有商家都接受支付宝",
+        "蓝色代码（国际版）适用于外国银行卡",
+        "抵达前下载，因为应用商店可能没有",
+        "在乡村地区保留一些现金作为备用"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Second most popular payment method, integrated with social app",
+      "description": "第二受欢迎的支付方式，与社交应用集成",
       "howToUse": [
         "WeChat app required",
-        "Link international card through WeChat Pay",
-        "Scan QR code to pay at merchants",
-        "Use for small purchases and tipping"
+        "通过微信支付绑定国际银行卡",
+        "扫描二维码在商家付款",
+        "用于小额购买和小费"
       ],
       "tips": [
-        "English interface available in settings",
-        "Most locals prefer WeChat Pay for peer-to-peer",
-        "Both Alipay and WeChat work at most merchants",
-        "Useful for ordering at some restaurants"
+        "设置中提供英文界面",
+        "大多数当地人更喜欢微信支付进行点对点转账",
+        "支付宝和微信在大多数商户都可以使用",
+        "在一些餐厅点餐时很有用"
       ]
     },
     {
       "method": "Cash (RMB)",
       "icon": "cash",
-      "description": "Still accepted everywhere, essential for local markets and small vendors",
+      "description": "仍然到处通用，对当地市场和摊贩至关重要",
       "howToUse": [
-        "Exchange at airport bank or ATM",
-        "ICBC and Bank of China ATMs widely available",
-        "500¥, 100¥, 50¥ notes most useful",
-        "Small vendors at markets prefer cash"
+        "在机场bank或ATM兑换",
+        "中国工商银行和中国Bank的ATM机广泛可用",
+        "500元、100元、50元面额的纸币最实用",
+        "市场摊贩更喜欢cash"
       ],
       "tips": [
-        "Keep 100-200¥ in cash for markets",
-        "ATMs at Metro stations convenient for cash",
-        "Xiamen is mostly cashless - only rural markets need cash",
-        "ATMs charge 10-20¥ fee for foreign cards"
+        "为市场准备100-200元cash",
+        "地铁站的ATM机方便取cash",
+        "厦门基本无现金化——只有农村市场需要cash",
+        "ATM机对国外卡收取10-20元手续费"
       ]
     },
     {
       "method": "International Credit Cards",
       "icon": "card",
-      "description": "Accepted at hotels, large restaurants, and international chains",
+      "description": "在酒店、大型餐厅和国际连锁店可使用",
       "howToUse": [
-        "Visa and Mastercard accepted at upscale venues",
-        "May require passport verification",
-        "Look for card logos at store entrances"
+        "Visa和Mastercard在高档场所可使用",
+        "可能需要passport验证",
+        "在商店入口处寻找卡标识"
       ],
       "tips": [
-        "Call your bank before travel to enable international use",
-        "Some places add 2-3% foreign transaction fee",
-        "Best used at hotels and modern shopping malls",
-        "Smaller shops and restaurants often don't accept cards"
+        "出行前致电您的bank，开通国际使用功能",
+        "部分商家会收取2-3%的境外交易手续费",
+        "最适合在酒店和现代购物中心使用",
+        "小店和餐馆通常不接受刷卡"
       ]
     },
     {
       "method": "China UnionPay",
       "icon": "unionpay",
-      "description": "Domestic bank cards - widely accepted across China",
+      "description": "国内bank卡——在中国广泛接受",
       "howToUse": [
-        "ATM cards from Chinese banks work everywhere",
-        "Can withdraw cash from ICBC, CCB, BOC ATMs",
-        "Some merchants prefer domestic cards"
+        "中国银行的ATM卡随处可用",
+        "可在工商银行、建设银行、中国银行的ATM机上提取cash",
+        "部分商户更偏好国内卡"
       ],
       "tips": [
-        "If you have Chinese bank account, this works like debit",
-        "Lower fees than international cards at ATMs",
-        "Ask hotel to help open temporary account if needed"
+        "如果您有中国bank账户，此卡可作借记卡使用",
+        "在ATM机上使用，手续费低于国际卡",
+        "如有需要，可请酒店协助开通临时账户"
       ]
     },
     {
       "method": "Mobile Payment via Digital Wallet",
       "icon": "wallet",
-      "description": "Digital wallets like Apple Pay, Samsung Pay increasingly accepted",
+      "description": "Apple Pay、Samsung Pay等数字钱包越来越被接受",
       "howToUse": [
-        "Link international card to Apple Pay/Google Pay",
-        "Tap to pay at terminals with contactless symbol",
-        "Available at modern stores and hotels"
+        "将国际卡绑定到Apple Pay/Google Pay",
+        "在带有非接触式标识的终端上轻触支付",
+        "适用于现代商店和酒店"
       ],
       "tips": [
-        "Limited acceptance compared to Alipay/WeChat",
-        "Useful if you have foreign card linked",
-        "Works at 7-Eleven and some modern chains",
-        "Best as backup to Alipay/WeChat"
+        "与支付宝/微信相比，接受范围有限",
+        "如果绑定了外国卡，会很有用",
+        "在7-Eleven和一些现代连锁店可用",
+        "最适合作为支付宝/微信的备用支付方式"
       ]
     }
   ],

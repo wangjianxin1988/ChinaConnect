@@ -93,7 +93,7 @@
         "lat": 30.2372,
         "lng": 120.1022
       },
-      "openingHours": "08:00-17:00",
+      "openingHours": "06:30-17:30（夏季），07:00-17:30（冬季）",
       "ticketPrice": "45¥",
       "recommendedVisitTime": "2小时",
       "highlights": [
@@ -2673,46 +2673,46 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major international airports (Shanghai, Beijing, Hong Kong)",
-        "to": "Hangzhou Xiaoshan International Airport (HGH)",
-        "duration": "Varies by origin (2-3 hours from Shanghai, 12+ from Europe)",
+        "from": "主要国际机场（上海、北京、香港）",
+        "to": "杭州萧山国际机场（HGH）",
+        "duration": "视出发地而定（从上海2-3小时，从欧洲12小时以上）",
         "price": "800-3000¥",
-        "frequency": "Daily international flights from Seoul, Tokyo, Singapore, Bangkok",
-        "tips": "Hangzhou Airport is 27km from city center. Airport shuttle bus to East Railway Station and West Lake area. High-speed rail from Shanghai is faster."
+        "frequency": "每日有从首尔、东京、新加坡、曼谷出发的国际航班",
+        "tips": "杭州机场距市中心27公里。机场大巴可到火车东站和西湖景区。从上海乘高铁更快。"
       },
       {
         "type": "train",
-        "from": "Shanghai (45min-1h), Nanjing (1h), Beijing (4.5h)",
-        "to": "Hangzhou East Railway Station / Hangzhou Railway Station",
-        "duration": "45min-5 hours depending on origin",
+        "from": "上海（45分钟-1小时）、南京（1小时）、北京（4.5小时）",
+        "to": "杭州东站 / 杭州站",
+        "duration": "45分钟至5小时，视出发地而定",
         "price": "150-600¥",
-        "frequency": "Multiple high-speed trains daily",
-        "tips": "High-speed train from Shanghai is fastest and most convenient. Hangzhou East is near shopping districts. Hangzhou Station is closer to West Lake."
+        "frequency": "每日多趟高铁",
+        "tips": "从上海乘高铁最快最方便。杭州东站靠近购物区。杭州站离西湖更近。"
       }
     ],
     "local": {
       "metro": [
-        "12 lines covering city center and suburbs",
-        "Single ride: 2-9¥ depending on distance",
-        "Line 1 connects East Railway Station",
-        "West Lake area served by Lines 1, 2, 10"
+        "12条线路覆盖市中心和郊区",
+        "单程票价：2-9元，视距离而定",
+        "1号线连接火车东站",
+        "西湖景区由1、2、10号线服务"
       ],
       "bus": [
-        "Extensive network covering areas not served by metro",
-        "Single ride: 2¥ (basic), higher for air-conditioned",
-        "Buses to West Lake from main tourist areas"
+        "广泛网络覆盖地铁未达区域",
+        "单程票价：2元（基本），空调车更高",
+        "从主要旅游区到西湖的公交车"
       ],
       "taxi": [
-        "Starting fare: 11¥ (first 3km)",
-        "Waiting: 0.05¥ per minute",
-        "Night surcharge: 20% extra (23:00-05:00)",
-        "Didi app recommended for English speakers"
+        "起步价：11元（前3公里）",
+        "等待费：每分钟0.05元",
+        "夜间加价：加收20%（23:00-05:00）",
+        "推荐英语使用者使用滴滴出行应用"
       ],
       "bike": [
-        "Hellobike, Meituan bikes widely available",
-        "Unlock: 1-2¥, then 0.5-1.5¥ per 30 minutes",
-        "Designated bike lanes on West Lake surrounding roads",
-        "Scenic bike paths around West Lake"
+        "哈啰单车、美团单车广泛可用",
+        "解锁：1-2元，之后每30分钟0.5-1.5元",
+        "西湖周边道路设有专用自行车道",
+        "西湖周边风景优美的自行车道"
       ]
     }
   },
@@ -2722,17 +2722,17 @@
       "nameEn": "Four Seasons Hotel Hangzhou",
       "budget": "luxury",
       "priceRange": "¥3500-8000/night",
-      "address": "5 Lingjia Lane, Hubin Road",
+      "address": "湖滨路灵家巷5号",
       "coordinates": {
         "lat": 30.2422,
         "lng": 120.1522
       },
       "rating": 4.9,
       "highlights": [
-        "Prime lakeside location",
-        "Jin Sha Ting restaurant",
-        "Luxurious spa",
-        "Garden courtyard"
+        "绝佳湖滨位置",
+        "金沙厅餐厅",
+        "豪华水疗中心",
+        "花园庭院"
       ],
       "bookingTips": "Book lakeside rooms for West Lake views. Restaurant reservations essential."
     },
@@ -2741,17 +2741,17 @@
       "nameEn": "Four Seasons Resort Hangzhou at West Lake",
       "budget": "luxury",
       "priceRange": "¥5000-12000/night",
-      "address": "5 Xinghua Road, Xihu District",
+      "address": "西湖区兴华路5号",
       "coordinates": {
         "lat": 30.2522,
         "lng": 120.1382
       },
       "rating": 4.9,
       "highlights": [
-        "Historic garden setting",
-        "Private villa accommodations",
-        "Boat dining",
-        "Traditional Chinese architecture"
+        "历史园林环境",
+        "私人别墅住宿",
+        "船上用餐",
+        "传统中式建筑"
       ],
       "bookingTips": "Exclusive resort experience. Book months ahead for holidays."
     },
@@ -2767,10 +2767,10 @@
       },
       "rating": 4.6,
       "highlights": [
-        "North Shore location",
-        "Garden with lake views",
-        "Multiple restaurants",
-        "Business facilities"
+        "北岸位置",
+        "湖景花园",
+        "多家餐厅",
+        "商务设施"
       ],
       "bookingTips": "Great location near West Lake. Weekend packages available."
     },
@@ -2786,10 +2786,10 @@
       },
       "rating": 4.5,
       "highlights": [
-        "Central business district",
-        "Direct access to Hubin shopping",
-        "Modern facilities",
-        "Good service"
+        "中央商务区",
+        "直达湖滨购物区",
+        "现代化设施",
+        "优质服务"
       ],
       "bookingTips": "Best for business travelers. Check weekend rates."
     },
@@ -2805,9 +2805,9 @@
       },
       "rating": 4.4,
       "highlights": [
-        "Walking distance to West Lake",
-        "Historic property",
-        "Good value"
+        "步行可达西湖",
+        "历史建筑",
+        "性价比高"
       ],
       "bookingTips": "Book well in advance during peak season."
     },
@@ -2816,17 +2816,17 @@
       "nameEn": "Hilton Hangzhou",
       "budget": "mid",
       "priceRange": "¥800-1500/night",
-      "address": "528 Yinxi Road, Gongshu District",
+      "address": "拱墅区隐秀路528号",
       "coordinates": {
         "lat": 30.2822,
         "lng": 120.1422
       },
       "rating": 4.5,
       "highlights": [
-        "Near Grand Canal",
-        "Modern facilities",
-        "Multiple dining options",
-        "Good metro connection"
+        "靠近京杭大运河",
+        "现代化设施",
+        "多种餐饮选择",
+        "地铁交通便利"
       ],
       "bookingTips": "Good base for exploring city. Book river view rooms."
     },
@@ -2835,17 +2835,17 @@
       "nameEn": "Hyatt Regency Hangzhou",
       "budget": "mid",
       "priceRange": "¥900-1800/night",
-      "address": "68 Huguang Road, Shangcheng District",
+      "address": "上城区湖光路68号",
       "coordinates": {
         "lat": 30.2622,
         "lng": 120.1722
       },
       "rating": 4.5,
       "highlights": [
-        "Canal view",
-        "Central location",
-        "Good for shopping",
-        "Modern rooms"
+        "运河景观",
+        "中心位置",
+        "购物便利",
+        "现代化客房"
       ],
       "bookingTips": "Great for first-time visitors. Easy metro access."
     },
@@ -2854,17 +2854,17 @@
       "nameEn": "Hangzhou Huanglong Hotel",
       "budget": "mid",
       "priceRange": "¥600-1200/night",
-      "address": "1 Huanglong Road, Xihu District",
+      "address": "西湖区黄龙路1号",
       "coordinates": {
         "lat": 30.2622,
         "lng": 120.1322
       },
       "rating": 4.4,
       "highlights": [
-        "Near Zhejiang University",
-        "Quiet area",
-        "Good breakfast",
-        "Historic atmosphere"
+        "靠近浙江大学",
+        "安静区域",
+        "早餐丰盛",
+        "历史氛围"
       ],
       "bookingTips": "Book standard rooms for best value. Walking distance to West Lake."
     },
@@ -2873,17 +2873,17 @@
       "nameEn": "State Guest Hotel Zhejiang",
       "budget": "luxury",
       "priceRange": "¥2000-5000/night",
-      "address": "18 Xinye Road, Xihu District",
+      "address": "西湖区新业路18号",
       "coordinates": {
         "lat": 30.2422,
         "lng": 120.1422
       },
       "rating": 4.8,
       "highlights": [
-        "Government guest house",
-        "Prime West Lake location",
-        "Private garden",
-        "Exclusive service"
+        "政府招待所",
+        "西湖黄金地段",
+        "私家花园",
+        "专属服务"
       ],
       "bookingTips": "National leader accommodation. Book months ahead."
     },
@@ -2892,17 +2892,17 @@
       "nameEn": "The Q Hotel",
       "budget": "mid",
       "priceRange": "¥800-1500/night",
-      "address": "39 Xinye Road, Shangcheng District",
+      "address": "上城区新业路39号",
       "coordinates": {
         "lat": 30.2322,
         "lng": 120.1522
       },
       "rating": 4.5,
       "highlights": [
-        "River view",
-        "Modern design",
-        "Good location",
-        "Professional service"
+        "江景",
+        "现代设计",
+        "位置优越",
+        "专业服务"
       ],
       "bookingTips": "Best river view rooms. Walking distance to Broken Bridge."
     },
@@ -2911,17 +2911,17 @@
       "nameEn": "JW Marriott Hotel Hangzhou",
       "budget": "luxury",
       "priceRange": "¥1500-3000/night",
-      "address": "2 Wenhua Road, Shangcheng District",
+      "address": "上城区文华路2号",
       "coordinates": {
         "lat": 30.2522,
         "lng": 120.1682
       },
       "rating": 4.6,
       "highlights": [
-        "Central business district",
-        "Premium service",
-        "Multiple restaurants",
-        "Modern facilities"
+        "中央商务区",
+        "优质服务",
+        "多家餐厅",
+        "现代化设施"
       ],
       "bookingTips": "Best for business travelers. Club lounge access recommended."
     },
@@ -2930,17 +2930,17 @@
       "nameEn": "Courtyard by Marriott Hangzhou",
       "budget": "mid",
       "priceRange": "¥600-1100/night",
-      "address": "86 Xueyuan Road, Xihu District",
+      "address": "西湖区学院路86号",
       "coordinates": {
         "lat": 30.2722,
         "lng": 120.1282
       },
       "rating": 4.4,
       "highlights": [
-        "Near university area",
-        "Clean and modern",
-        "Good breakfast",
-        "Affordable luxury"
+        "靠近大学区",
+        "干净现代",
+        "早餐不错",
+        "平价奢华"
       ],
       "bookingTips": "Great value for money. Metro nearby."
     },
@@ -2949,17 +2949,17 @@
       "nameEn": "Nade Hotel",
       "budget": "mid",
       "priceRange": "¥400-800/night",
-      "address": "388 Wenhua Road, Shangcheng District",
+      "address": "上城区文华路388号",
       "coordinates": {
         "lat": 30.2622,
         "lng": 120.1682
       },
       "rating": 4.3,
       "highlights": [
-        "Central location",
-        "Good value",
-        "Clean rooms",
-        "Close to metro"
+        "中心位置",
+        "性价比高",
+        "房间干净",
+        "靠近地铁"
       ],
       "bookingTips": "Best budget option in city center. Book direct for discounts."
     },
@@ -2968,17 +2968,17 @@
       "nameEn": "Hilton Qiandao Lake Resort",
       "budget": "luxury",
       "priceRange": "¥1200-2500/night",
-      "address": "Qiandao Lake, Chun'an County",
+      "address": "淳安县千岛湖",
       "coordinates": {
         "lat": 29.6152,
         "lng": 119.0122
       },
       "rating": 4.7,
       "highlights": [
-        "Lake view",
-        "Resort facilities",
-        "Water activities",
-        "Scenic location"
+        "湖景",
+        "度假设施",
+        "水上活动",
+        "风景优美"
       ],
       "bookingTips": "Book lake view rooms. Great for weekend getaway."
     },
@@ -2987,17 +2987,17 @@
       "nameEn": "Hangzhou Xixi Hotel",
       "budget": "mid",
       "priceRange": "¥500-900/night",
-      "address": "2 Xixi Road, Xihu District",
+      "address": "西湖区西溪路2号",
       "coordinates": {
         "lat": 30.3022,
         "lng": 120.0652
       },
       "rating": 4.5,
       "highlights": [
-        "Near Xixi Wetland",
-        "Quiet location",
-        "Good for nature lovers",
-        "Traditional Chinese style"
+        "靠近西溪湿地",
+        "位置安静",
+        "适合自然爱好者",
+        "传统中式风格"
       ],
       "bookingTips": "Best combined with wetland visit. Book quiet rooms."
     }
@@ -3006,42 +3006,42 @@
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Universal payment method throughout Hangzhou",
+      "description": "杭州通用的支付方式",
       "howToUse": [
-        "Download app before arrival",
-        "Link international credit card or open Chinese account",
+        "到达前下载应用程序",
+        "关联国际credit card或开通中国账户",
         "QR code scanning"
       ],
       "tips": [
-        "Required for most transactions",
-        "Works at all restaurants and shops",
-        "English interface available"
+        "大多数交易必需",
+        "适用于所有餐厅和商店",
+        "提供英文界面"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Secondary popular payment method",
+      "description": "第二流行的支付方式",
       "howToUse": [
         "WeChat app required",
-        "Link international card through WeChat Pay"
+        "通过微信支付关联国际卡"
       ],
       "tips": [
-        "Accepted almost everywhere Alipay is",
-        "English version available"
+        "几乎在支付宝可用的地方都接受",
+        "提供英文版本"
       ]
     },
     {
       "method": "Cash",
       "icon": "cash",
-      "description": "Still useful at traditional markets and small vendors",
+      "description": "在传统市场和小型商贩处仍然有用",
       "howToUse": [
         "ATMs widely available",
-        "Exchange at banks or airport"
+        "在银行或机场兑换"
       ],
       "tips": [
-        "Keep small bills for markets",
-        "Most upscale restaurants accept cards"
+        "保留小额纸币用于市场",
+        "大多数高档餐厅接受银行卡"
       ]
     }
   ],

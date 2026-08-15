@@ -516,7 +516,7 @@
       "name": "莲花山公园",
       "nameEn": "莲花山公园",
       "category": "park",
-      "description": "A landmark park in the center of Shenzhen. There is a bronze statue of Deng Xiaoping at the mountain's summit. Climbing to the top offers a panoramic view of Shenzhen's CBD skyline and the Civic Center, making it a popular spot for both locals and tourists.",
+      "description": "深圳中心区的地标公园，山顶有邓小平铜像。从山顶可俯瞰深圳CBD天际线和市民中心。是当地居民休闲和游客打卡的热门去处。",
       "address": "深圳市福田区红荔路6030号",
       "coordinates": {
         "lat": 22.5531,
@@ -527,11 +527,11 @@
       "recommendedVisitTime": "1-2小时",
       "highlights": [
         "邓小平铜像",
-        "CBD Skyline",
+        "CBD天际线",
         "风筝广场",
         "椰林草坪"
       ],
-      "tips": "Climb to the top in the evening to watch the sunset and the CBD lights. Kite performances are held on weekends.",
+      "tips": "傍晚登顶可看日落和CBD灯光。周末有风筝表演。",
       "image": "/img/ext/2bf9c9919c9e.webp",
       "phone": "+86 075 5 7551 6675"
     },
@@ -2738,46 +2738,46 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major international cities",
-        "to": "Shenzhen Bao'an International Airport (SZX)",
-        "duration": "Varies by origin (3h from Hong Kong, 12h from Europe)",
+        "from": "主要国际城市",
+        "to": "深圳宝安国际机场（SZX）",
+        "duration": "视出发地而定（从香港3小时，从欧洲12小时）",
         "price": "1000-5000¥",
-        "frequency": "Daily flights from Asia, Europe, Americas",
-        "tips": "Airport is 35km from city center. Metro Line 11 to downtown. Airport shuttle bus available."
+        "frequency": "每日有来自亚洲、欧洲、美洲的航班",
+        "tips": "机场距市中心35公里。地铁11号线直达市中心。机场大巴可用。"
       },
       {
         "type": "train",
-        "from": "Hong Kong (15min-1h), Guangzhou (30min), Beijing (10h)",
-        "to": "Shenzhen Railway Station / Shenzhen North Station / Shenzhen East",
-        "duration": "15min-4h depending on origin",
+        "from": "香港（15分钟-1小时），广州（30分钟），北京（10小时）",
+        "to": "深圳火车站 / 深圳北站 / 深圳东站",
+        "duration": "15分钟-4小时，取决于出发地",
         "price": "80-1000¥",
-        "frequency": "High-speed trains from major cities",
-        "tips": "High-speed rail from Hong Kong West Kowloon is very convenient. Futian Station is central."
+        "frequency": "来自主要城市的高铁",
+        "tips": "从香港西九龙出发的高铁非常方便。福田站位于市中心。"
       }
     ],
     "local": {
       "metro": [
-        "12 lines covering most of city",
-        "Single ride: 2-10¥ depending on distance",
-        "Line 1 connects Luohu (Hong Kong border)",
-        "Line 11 to Bao'an Airport"
+        "12条线路覆盖城市大部分区域",
+        "单程票价：2-10元，视距离而定",
+        "1号线连接罗湖（香港边境）",
+        "11号线直达宝安机场"
       ],
       "bus": [
-        "Extensive network covering areas not served by metro",
+        "广泛网络覆盖地铁未达区域",
         "Single ride: 2-6¥",
-        "Many routes run until late night"
+        "许多线路运营至深夜"
       ],
       "taxi": [
-        "Starting fare: 10¥ (first 2km)",
+        "起步价：10元（首2公里）",
         "Waiting: 0.8¥ per minute",
-        "Night surcharge: 20% extra (23:00-06:00)",
-        "Didi works well for English users"
+        "夜间附加费：加收20%（23:00-06:00）",
+        "滴滴对英语用户友好"
       ],
       "bike": [
-        "Mobike and Meituan bikes abundant",
-        "Unlock: 1¥, then 0.5-1¥ per 30 minutes",
-        "Designated bike lanes on many roads",
-        "Shared bikes forbidden on some roads"
+        "摩拜和美团单车数量充足",
+        "解锁：1元，之后每30分钟0.5-1元",
+        "许多道路设有专用自行车道",
+        "部分道路禁止共享单车通行"
       ]
     }
   },
@@ -2787,17 +2787,17 @@
       "nameEn": "InterContinental Shenzhen",
       "budget": "luxury",
       "priceRange": "¥1500-3000/night",
-      "address": "9009 Shennan Avenue, Overseas Chinese Town",
+      "address": "深南大道9009号，华侨城",
       "coordinates": {
         "lat": 22.5322,
         "lng": 113.9672
       },
       "rating": 4.7,
       "highlights": [
-        "Near Happy Valley",
-        "Large pool",
-        "Multiple restaurants",
-        "Garden setting"
+        "靠近欢乐谷",
+        "大型泳池",
+        "多家餐厅",
+        "花园环境"
       ],
       "bookingTips": "Weekend packages good value. Check for OCT discounts."
     },
@@ -2806,17 +2806,17 @@
       "nameEn": "The St. Regis Shenzhen",
       "budget": "luxury",
       "priceRange": "¥2000-4000/night",
-      "address": "5016 Jintian Road, Futian District",
+      "address": "福田区金田路5016号",
       "coordinates": {
         "lat": 22.5222,
         "lng": 114.0572
       },
       "rating": 4.6,
       "highlights": [
-        "Central location",
-        "High-rise views",
-        "Butler service",
-        "Luxury spa"
+        "中心位置",
+        "高层景观",
+        "管家服务",
+        "豪华水疗"
       ],
       "bookingTips": "Club rooms worth upgrade for privileges. Book direct for benefits."
     },
@@ -2825,17 +2825,17 @@
       "nameEn": "Shangri-La Hotel Shenzhen",
       "budget": "luxury",
       "priceRange": "¥1200-2500/night",
-      "address": "1002 Jianshe Road, Luohu District",
+      "address": "罗湖区建设路1002号",
       "coordinates": {
         "lat": 22.5522,
         "lng": 114.0972
       },
       "rating": 4.5,
       "highlights": [
-        "Near Luohu border",
-        "Luohu Park views",
-        "Business center",
-        "Multiple dining"
+        "靠近罗湖口岸",
+        "罗湖公园景观",
+        "商务中心",
+        "多种餐饮选择"
       ],
       "bookingTips": "Best for those entering from Hong Kong. Good for transit."
     },
@@ -2844,16 +2844,16 @@
       "nameEn": "Grand Skylight Hotel",
       "budget": "mid",
       "priceRange": "¥600-1200/night",
-      "address": "88 Fuhua Road, Futian District",
+      "address": "福田区福华路88号",
       "coordinates": {
         "lat": 22.5322,
         "lng": 114.0472
       },
       "rating": 4.4,
       "highlights": [
-        "Near Convention Center",
-        "Good value",
-        "Reliable service"
+        "靠近会展中心",
+        "性价比高",
+        "服务可靠"
       ],
       "bookingTips": "Check weekend rates. Book early during conventions."
     },
@@ -2869,9 +2869,9 @@
       },
       "rating": 4.2,
       "highlights": [
-        "Near Dongmen shopping",
-        "Metro access",
-        "Budget-friendly"
+        "靠近东门购物区",
+        "地铁交通便利",
+        "经济实惠"
       ],
       "bookingTips": "Great for shopping tourists. Basic but clean."
     },
@@ -2880,17 +2880,17 @@
       "nameEn": "JW Marriott Hotel Shenzhen",
       "budget": "luxury",
       "priceRange": "¥1800-3500/night",
-      "address": "6001 Shennan Avenue, Futian District",
+      "address": "福田区深南大道6001号",
       "coordinates": {
         "lat": 22.5222,
         "lng": 114.0672
       },
       "rating": 4.7,
       "highlights": [
-        "Modern luxury",
-        "Multiple award-winning restaurants",
-        "Rooftop bar",
-        "Executive lounge"
+        "现代奢华",
+        "多家获奖餐厅",
+        "屋顶酒吧",
+        "行政酒廊"
       ],
       "bookingTips": "Book via Marriott app for member benefits. Club lounge access worth it."
     },
@@ -2899,17 +2899,17 @@
       "nameEn": "Hilton Shenzhen Grand World",
       "budget": "luxury",
       "priceRange": "¥1200-2200/night",
-      "address": "Great China Financial Center, Futian",
+      "address": "福田区大中华国际金融中心",
       "coordinates": {
         "lat": 22.5222,
         "lng": 114.0772
       },
       "rating": 4.5,
       "highlights": [
-        "Iconic tower",
-        "Sky lobby",
-        "Central location",
-        "Reliable brand"
+        "标志性塔楼",
+        "空中大堂",
+        "中心位置",
+        "可靠品牌"
       ],
       "bookingTips": "Higher floors offer better views. Weekend deals available."
     },
@@ -2918,17 +2918,17 @@
       "nameEn": "The Venice Raytour Hotel",
       "budget": "mid",
       "priceRange": "¥800-1500/night",
-      "address": "9028-1 Shennan Avenue, Overseas Chinese Town",
+      "address": "南山区华侨城深南大道9028-1号",
       "coordinates": {
         "lat": 22.5322,
         "lng": 113.9572
       },
       "rating": 4.4,
       "highlights": [
-        "Venetian canal theme",
-        "Near Window of the World",
-        "Unique architecture",
-        "Good breakfast"
+        "威尼斯运河主题",
+        "靠近世界之窗",
+        "独特建筑",
+        "早餐不错"
       ],
       "bookingTips": "Request canal-view rooms. Good for families with kids."
     },
@@ -2937,16 +2937,16 @@
       "nameEn": "Crowne Plaza Shenzhen",
       "budget": "mid",
       "priceRange": "¥700-1300/night",
-      "address": "143 Yi Tian Road, Futian District",
+      "address": "福田区益田路143号",
       "coordinates": {
         "lat": 22.5222,
         "lng": 114.0272
       },
       "rating": 4.3,
       "highlights": [
-        "Near Shenzhen Convention Center",
-        "Comfortable beds",
-        "Good service"
+        "靠近深圳会展中心",
+        "舒适床品",
+        "服务好"
       ],
       "bookingTips": "Book during conventions in Futian for convenience."
     },
@@ -2955,16 +2955,16 @@
       "nameEn": "Shenzhen Hai Dei Hotel",
       "budget": "mid",
       "priceRange": "¥600-1100/night",
-      "address": "1002 Nanshan Avenue, Nanshan District",
+      "address": "南山区南山大道1002号",
       "coordinates": {
         "lat": 22.5122,
         "lng": 113.9372
       },
       "rating": 4.3,
       "highlights": [
-        "Nanshan business district",
-        "Modern rooms",
-        "Good restaurant"
+        "南山商务区",
+        "现代客房",
+        "优质餐厅"
       ],
       "bookingTips": "Good for tech company visitors. Check corporate rates."
     },
@@ -2973,16 +2973,16 @@
       "nameEn": "Shenzhen Yishang Business Hotel",
       "budget": "budget",
       "priceRange": "¥350-650/night",
-      "address": "3031 Shennan Avenue, Futian",
+      "address": "福田区深南大道3031号",
       "coordinates": {
         "lat": 22.5332,
         "lng": 114.0372
       },
       "rating": 4.1,
       "highlights": [
-        "Central location",
-        "Clean rooms",
-        "Metro nearby"
+        "中心位置",
+        "干净客房",
+        "靠近地铁"
       ],
       "bookingTips": "Best value in Futian. Good for short business trips."
     },
@@ -2991,17 +2991,17 @@
       "nameEn": "Kempinski Hotel Shenzhen",
       "budget": "luxury",
       "priceRange": "¥1500-2800/night",
-      "address": "Haide Yi Dao, Nanshan District",
+      "address": "南山区海德一道",
       "coordinates": {
         "lat": 22.5022,
         "lng": 113.9272
       },
       "rating": 4.6,
       "highlights": [
-        "Sea view rooms",
-        "European brand",
-        "Award-winning spa",
-        "Fine dining"
+        "海景客房",
+        "欧洲品牌",
+        "获奖水疗",
+        "精致餐饮"
       ],
       "bookingTips": "Sea-view rooms worth premium. Book direct for better rates."
     },
@@ -3010,16 +3010,16 @@
       "nameEn": "Marco Polo Shenzhen",
       "budget": "mid",
       "priceRange": "¥800-1400/night",
-      "address": "1692 Jianshe Road, Luohu District",
+      "address": "罗湖区建设路1692号",
       "coordinates": {
         "lat": 22.5522,
         "lng": 114.1072
       },
       "rating": 4.4,
       "highlights": [
-        "Near Luohu border",
-        "Shopping mall attached",
-        "Multiple restaurants"
+        "靠近罗湖口岸",
+        "连接购物中心",
+        "多家餐厅"
       ],
       "bookingTips": "Great for cross-border travelers. Connected to mall."
     },
@@ -3028,17 +3028,17 @@
       "nameEn": "Shenzhen Upper Hill Residence",
       "budget": "mid",
       "priceRange": "¥500-900/night",
-      "address": "Mid-Level, Upper Hill, Futian",
+      "address": "福田区上梅林中段",
       "coordinates": {
         "lat": 22.5332,
         "lng": 114.0572
       },
       "rating": 4.3,
       "highlights": [
-        "Apartment-style",
-        "Kitchen facilities",
-        "City views",
-        "Quiet location"
+        "公寓式",
+        "厨房设施",
+        "城市景观",
+        "安静位置"
       ],
       "bookingTips": "Good for extended stays. Request higher floors."
     },
@@ -3047,16 +3047,16 @@
       "nameEn": "Pullman Shenzhen North Station",
       "budget": "mid",
       "priceRange": "¥550-1000/night",
-      "address": "North Railway Station, Longhua District",
+      "address": "龙华区深圳北站",
       "coordinates": {
         "lat": 22.6522,
         "lng": 114.0272
       },
       "rating": 4.4,
       "highlights": [
-        "Near high-speed rail",
-        "Modern design",
-        "Good for transit"
+        "靠近高铁",
+        "现代设计",
+        "适合中转"
       ],
       "bookingTips": "Perfect for arriving by train. Easy metro connection."
     },
@@ -3065,17 +3065,17 @@
       "nameEn": "Ascott Serviced Residence Shenzhen",
       "budget": "mid",
       "priceRange": "¥700-1200/night",
-      "address": "888 Shennan Avenue, Futian",
+      "address": "福田区深南大道888号",
       "coordinates": {
         "lat": 22.5332,
         "lng": 114.0472
       },
       "rating": 4.5,
       "highlights": [
-        "Serviced apartments",
-        "Full kitchen",
-        "Long-stay suitable",
-        "Gym and pool"
+        "服务式公寓",
+        "全套厨房",
+        "适合长住",
+        "健身房和游泳池"
       ],
       "bookingTips": "Best for business travelers staying a week or more."
     },
@@ -3084,16 +3084,16 @@
       "nameEn": "The Pavilion Hotel Shenzhen",
       "budget": "mid",
       "priceRange": "¥650-1100/night",
-      "address": "2001 Jiabin Road, Luohu District",
+      "address": "罗湖区嘉宾路2001号",
       "coordinates": {
         "lat": 22.5522,
         "lng": 114.0972
       },
       "rating": 4.3,
       "highlights": [
-        "Near Dasha River",
-        "Quiet area",
-        "Good breakfast"
+        "靠近大沙河",
+        "环境安静",
+        "早餐不错"
       ],
       "bookingTips": "Good balance of price and location. Weekend discounts."
     },
@@ -3102,17 +3102,17 @@
       "nameEn": "Interlaken OCT Hotel",
       "budget": "luxury",
       "priceRange": "¥1400-2600/night",
-      "address": "OCT Eastern, Yantian District",
+      "address": "盐田区东部华侨城",
       "coordinates": {
         "lat": 22.6022,
         "lng": 114.2572
       },
       "rating": 4.6,
       "highlights": [
-        "European alpine theme",
-        "Hot spring access",
-        "Nature setting",
-        "Near theme parks"
+        "欧洲阿尔卑斯主题",
+        "可享温泉",
+        "自然环境",
+        "靠近主题公园"
       ],
       "bookingTips": "Include hot spring in your booking. Great for weekend getaways."
     }
@@ -3121,40 +3121,40 @@
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Universal payment throughout Shenzhen",
+      "description": "深圳全市通用支付",
       "howToUse": [
         "Download before arrival",
-        "Link card or Chinese account"
+        "绑定银行卡或中国账户"
       ],
       "tips": [
         "Works at all merchants",
         "English available",
-        "Required for tech experiences"
+        "科技体验必备"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Accepted everywhere in Shenzhen",
+      "description": "深圳各处均可使用",
       "howToUse": [
         "WeChat required",
-        "International cards accepted"
+        "接受国际银行卡"
       ],
       "tips": [
         "Set to English mode",
-        "Required for shared bikes"
+        "共享单车必备"
       ]
     },
     {
       "method": "Cash",
       "icon": "cash",
-      "description": "Useful at traditional markets only",
+      "description": "仅传统市场有用",
       "howToUse": [
-        "ATM at every bank",
-        "Currency exchange at banks"
+        "ATM在每个bank",
+        "在银行兑换货币"
       ],
       "tips": [
-        "Only needed for small vendors",
+        "仅小额商贩需要",
         "Most places accept cards"
       ]
     }

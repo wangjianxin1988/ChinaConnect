@@ -808,7 +808,7 @@
         "lat": 30.67,
         "lng": 104.05
       },
-      "openingHours": "06:00-22:00",
+      "openingHours": "全天",
       "ticketPrice": "免费",
       "recommendedVisitTime": "1-2小时",
       "highlights": [
@@ -2749,45 +2749,45 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major international airports, many domestic connections",
-        "to": "Chengdu Tianfu International Airport (TFU)",
-        "duration": "Varies (10-14 hours from Europe/Americas)",
+        "from": "主要国际机场，众多国内航线",
+        "to": "成都天府国际机场（TFU）",
+        "duration": "视情况而定（从欧洲/美洲需10-14小时）",
         "price": "1000-8000¥",
         "frequency": "Multiple daily flights",
-        "tips": "New airport (TFU) opened 2021 with metro connection. Also old Shuangliu Airport for some flights."
+        "tips": "新机场（TFU）于2021年启用，有地铁连接。部分航班仍使用老的双流机场。"
       },
       {
         "type": "train",
-        "from": "Beijing (7.5h), Shanghai (10h), Xian (3h)",
-        "to": "Chengdu East Railway Station / Chengdu Station",
+        "from": "北京（7.5小时）、上海（10小时）、西安（3小时）",
+        "to": "成都东站 / 成都站",
         "duration": "3-10 hours",
         "price": "350-900¥",
         "frequency": "Frequent departures",
-        "tips": "High-speed rail network well-connected. Book early for popular routes."
+        "tips": "高铁网络四通八达。热门线路请提前购票。"
       }
     ],
     "local": {
       "metro": [
-        "12 lines covering city and suburbs",
+        "12条线路覆盖市区和郊区",
         "Single ride: 2-10¥",
-        "English signage improving",
-        "Line 1 to Panda Base, line 2 to Jinli"
+        "英文标识正在改善",
+        "1号线到熊猫基地，2号线到锦里"
       ],
       "bus": [
         "Extensive network",
-        "Bamboo bikes (zhongbao) useful for short trips",
-        "Download app for English navigation"
+        "竹编自行车（中宝）适合短途出行",
+        "下载应用程序获取英文导航"
       ],
       "taxi": [
-        "Starting fare: 8¥ (first 2km)",
-        "Didi fully functional in English",
-        "Airport taxi official counters reliable"
+        "起步价：8元（前2公里）",
+        "滴滴英文版功能齐全",
+        "机场出租车官方柜台可靠"
       ],
       "bike": [
-        "Hellobike, Mobike, Meituan bikes available",
+        "哈啰单车、摩拜、美团单车可用",
         "Unlock: 1.5¥",
-        "Good for short trips in center",
-        "Many dedicated bike lanes"
+        "适合市中心短途出行",
+        "许多专用自行车道"
       ]
     }
   },
@@ -2797,16 +2797,16 @@
       "nameEn": "The St. Regis Chengdu",
       "budget": "luxury",
       "priceRange": "¥1800-3500/night",
-      "address": "88 Tianhua Middle Rd, Jinjiang District",
+      "address": "锦江区天华中路88号",
       "coordinates": {
         "lat": 30.6555,
         "lng": 104.0815
       },
       "rating": 4.8,
       "highlights": [
-        "Prime location near Chunxi Road",
-        "Luxurious spa",
-        "Excellent service"
+        "靠近春熙路的黄金位置",
+        "豪华水疗中心",
+        "优质服务"
       ],
       "bookingTips": "Request higher floors for views."
     },
@@ -2815,16 +2815,16 @@
       "nameEn": "The Temple House",
       "budget": "luxury",
       "priceRange": "¥2000-4000/night",
-      "address": "81 Bitieshi Rd, Jinjiang District",
+      "address": "锦江区笔帖式街81号",
       "coordinates": {
         "lat": 30.6585,
         "lng": 104.0665
       },
       "rating": 4.9,
       "highlights": [
-        "Modern design in historic area",
-        "Outstanding service",
-        "Great dining"
+        "历史区域中的现代设计",
+        "卓越服务",
+        "优质餐饮"
       ],
       "bookingTips": "One of Chengdu's best hotels. Book far ahead."
     },
@@ -2833,16 +2833,16 @@
       "nameEn": "Shangri-La Hotel Chengdu",
       "budget": "mid",
       "priceRange": "¥900-1800/night",
-      "address": "9 Binjiang East Rd, Jinjiang District",
+      "address": "锦江区滨江东路9号",
       "coordinates": {
         "lat": 30.6535,
         "lng": 104.0875
       },
       "rating": 4.6,
       "highlights": [
-        "River views",
-        "Central location",
-        "Good facilities"
+        "江景",
+        "中心位置",
+        "设施齐全"
       ],
       "bookingTips": "River-view rooms worth extra."
     },
@@ -2851,16 +2851,16 @@
       "nameEn": "Hilton Chengdu",
       "budget": "mid",
       "priceRange": "¥600-1200/night",
-      "address": "666 Tianfu Avenue, High-Tech Zone",
+      "address": "高新区天府大道666号",
       "coordinates": {
         "lat": 30.6435,
         "lng": 104.0615
       },
       "rating": 4.5,
       "highlights": [
-        "Near High-Tech Zone",
-        "Good for business",
-        "Modern facilities"
+        "靠近高新区",
+        "适合商务",
+        "现代化设施"
       ],
       "bookingTips": "Good value for business travelers."
     },
@@ -2869,16 +2869,16 @@
       "nameEn": "Atour Hotel Chunxi Road",
       "budget": "budget",
       "priceRange": "¥400-800/night",
-      "address": "99 Baihua Rd, Jinjiang District",
+      "address": "锦江区百花路99号",
       "coordinates": {
         "lat": 30.6595,
         "lng": 104.0795
       },
       "rating": 4.5,
       "highlights": [
-        "Near Taikoo Li and Chunxi Road",
-        "Great value",
-        "Good breakfast"
+        "靠近太古里和春熙路",
+        "性价比高",
+        "早餐不错"
       ],
       "bookingTips": "Best budget option near major shopping."
     },
@@ -2887,16 +2887,16 @@
       "nameEn": "W Chengdu",
       "budget": "luxury",
       "priceRange": "¥1500-3000/night",
-      "address": "1199 Kaifa Avenue, High-Tech Zone",
+      "address": "高新区开发大道1199号",
       "coordinates": {
         "lat": 30.6455,
         "lng": 104.0615
       },
       "rating": 4.7,
       "highlights": [
-        "Modern design",
-        "Rooftop bar",
-        "Trendy atmosphere"
+        "现代设计",
+        "屋顶酒吧",
+        "时尚氛围"
       ],
       "bookingTips": "Request high floor for city views."
     },
@@ -2905,16 +2905,16 @@
       "nameEn": "JW Marriott Hotel Chengdu",
       "budget": "luxury",
       "priceRange": "¥1200-2500/night",
-      "address": "388 East Section of Dongmen Bridge, Jinjiang District",
+      "address": "锦江区东门大桥东段388号",
       "coordinates": {
         "lat": 30.6465,
         "lng": 104.0915
       },
       "rating": 4.6,
       "highlights": [
-        "Central location",
-        "Luxurious spa",
-        "Fine dining"
+        "中心位置",
+        "豪华水疗",
+        "精致餐饮"
       ],
       "bookingTips": "Good for business travelers."
     },
@@ -2923,16 +2923,16 @@
       "nameEn": "Kempinski Hotel Chengdu",
       "budget": "mid",
       "priceRange": "¥800-1500/night",
-      "address": "88 Section 2, South Renmin Rd, Wuhou District",
+      "address": "武侯区人民南路二段88号",
       "coordinates": {
         "lat": 30.6375,
         "lng": 104.0565
       },
       "rating": 4.5,
       "highlights": [
-        "Near Wuhou Temple area",
-        "European style",
-        "Good breakfast"
+        "靠近武侯祠区域",
+        "欧式风格",
+        "早餐不错"
       ],
       "bookingTips": "Weekend rates often lower."
     },
@@ -2941,16 +2941,16 @@
       "nameEn": "Ascott Raffles City Chengdu",
       "budget": "mid",
       "priceRange": "¥600-1200/night",
-      "address": "1 Section 3, South Ring Rd, Wuhou District",
+      "address": "武侯区南环路三段1号",
       "coordinates": {
         "lat": 30.6395,
         "lng": 104.0515
       },
       "rating": 4.5,
       "highlights": [
-        "Service apartments",
-        "Near metro station",
-        "Kitchen facilities"
+        "服务式公寓",
+        "靠近地铁站",
+        "厨房设施"
       ],
       "bookingTips": "Good for long stays."
     },
@@ -2959,16 +2959,16 @@
       "nameEn": "Panda Prince Theme Hotel",
       "budget": "budget",
       "priceRange": "¥300-600/night",
-      "address": "198 Chengdu Plain, Chenghua District",
+      "address": "成华区成都平原198号",
       "coordinates": {
         "lat": 30.6715,
         "lng": 104.1185
       },
       "rating": 4.4,
       "highlights": [
-        "Panda themed",
-        "Near Panda Base",
-        "Family friendly"
+        "熊猫主题",
+        "靠近熊猫基地",
+        "适合家庭"
       ],
       "bookingTips": "Book early for Panda Base visits."
     },
@@ -2977,16 +2977,16 @@
       "nameEn": "Diaoyutai Boutique Hotel",
       "budget": "luxury",
       "priceRange": "¥2000-4500/night",
-      "address": "28 Panda Road, Chenghua District",
+      "address": "成华区熊猫大道28号",
       "coordinates": {
         "lat": 30.7385,
         "lng": 104.1455
       },
       "rating": 4.8,
       "highlights": [
-        "Historic compound",
-        "Elegant Chinese design",
-        "Near Panda Base"
+        "历史建筑",
+        "典雅中式设计",
+        "靠近熊猫基地"
       ],
       "bookingTips": "One of Chengdu's most exclusive hotels."
     },
@@ -2995,16 +2995,16 @@
       "nameEn": "Jinjiang Hotel",
       "budget": "mid",
       "priceRange": "¥500-900/night",
-      "address": "80 Section 1, South Ring Rd, Wuhou District",
+      "address": "武侯区南环路一段80号",
       "coordinates": {
         "lat": 30.6425,
         "lng": 104.0565
       },
       "rating": 4.4,
       "highlights": [
-        "Historic hotel",
-        "Central location",
-        "Reliable service"
+        "历史酒店",
+        "中心位置",
+        "可靠服务"
       ],
       "bookingTips": "Good value for money."
     },
@@ -3013,16 +3013,16 @@
       "nameEn": "Holiday Inn Express Chengdu Huanhua Stream",
       "budget": "budget",
       "priceRange": "¥250-500/night",
-      "address": "388 Huanhua Road, Qingyang District",
+      "address": "青羊区浣花路388号",
       "coordinates": {
         "lat": 30.6865,
         "lng": 104.0355
       },
       "rating": 4.3,
       "highlights": [
-        "Near Huanhua Stream Park",
-        "Clean and modern",
-        "Good breakfast included"
+        "靠近浣花溪公园",
+        "干净现代",
+        "含优质早餐"
       ],
       "bookingTips": "Best value near cultural attractions."
     },
@@ -3031,16 +3031,16 @@
       "nameEn": "Wangjiang Hotel",
       "budget": "mid",
       "priceRange": "¥400-800/night",
-      "address": "6 North Section of Yihuan Rd, Chenghua District",
+      "address": "成华区一环路北段6号",
       "coordinates": {
         "lat": 30.6515,
         "lng": 104.1085
       },
       "rating": 4.4,
       "highlights": [
-        "Sichuan University area",
-        "Quiet environment",
-        "Good restaurant"
+        "四川大学区域",
+        "环境安静",
+        "餐厅不错"
       ],
       "bookingTips": "Good for visitors to university area."
     },
@@ -3049,16 +3049,16 @@
       "nameEn": "Sofitel Chengdu",
       "budget": "mid",
       "priceRange": "¥700-1400/night",
-      "address": "88 South Section of Shuangqing Rd, Wuhou District",
+      "address": "武侯区双清路南段88号",
       "coordinates": {
         "lat": 30.6385,
         "lng": 104.0595
       },
       "rating": 4.5,
       "highlights": [
-        "French brand",
-        "Central location",
-        "Good service"
+        "法国品牌",
+        "位置居中",
+        "服务好"
       ],
       "bookingTips": "Book directly for upgrades."
     }
@@ -3067,15 +3067,15 @@
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Standard payment, accepted everywhere",
+      "description": "标准支付方式，随处可用",
       "howToUse": [
         "Download before arrival",
         "Bind international card",
         "QR code payment"
       ],
       "tips": [
-        "Chengdu is modern city - most places accept cards",
-        "But download Alipay for markets and street food"
+        "成都是现代化城市——大多数地方都接受刷卡",
+        "但请下载支付宝，用于市场和街头小吃"
       ]
     },
     {
@@ -3088,20 +3088,20 @@
       ],
       "tips": [
         "Didi打车 requires WeChat",
-        "Both apps equally important"
+        "两个应用同等重要"
       ]
     },
     {
       "method": "Cash (RMB)",
       "icon": "cash",
-      "description": "Useful for traditional teahouses and small vendors",
+      "description": "适用于传统茶馆和小商贩",
       "howToUse": [
-        "Keep 100-200¥ for emergencies",
+        "随身携带100-200元以备不时之需",
         "ATMs at every corner"
       ],
       "tips": [
-        "Traditional teahouses mostly cash",
-        "Most modern places accept cards"
+        "传统茶馆大多只收现金",
+        "大多数现代场所接受刷卡"
       ]
     }
   ],
