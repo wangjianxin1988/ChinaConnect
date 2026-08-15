@@ -854,3 +854,19 @@ for lang in LANGS:
   - 非前缀遗留路由多为重定向（auth/index→login），auth/account/pricing 等已用 i18n
 - **遗留**：按 PLAN-2026-08-16.md Phase 1 开始（EN 源清理）→ Phase 2 起 10 语言数据层。注意 verify_data_i18n.mjs 的 fr/de/vi isTranslated 逻辑有 bug 需先修。
 - **下个会话**：Phase 1a 写 EN 源中文清理脚本（MiniMax/DeepSeek，35 城分批），小批量试跑 1-2 城验证质量后全量；同步修组件 name 渲染逻辑（非 CJK 用 nameEn）。
+
+
+### 2026-08-16 会话 #10（Phase 1 EN 清理完成 + 提交基线）
+
+- **起**：用户审读交接后拍板：1) guide/apps/紧急联系人等 10 语言全做 + 检查遗漏页面；2) 开始前先 git 提交当前状态；3) EN 版零中文为硬性标准（推翻「不改 EN 源」旧约定）。
+- **本会话完成**（全部已提交 `8104a24`，Phase 1 里程碑）：
+  - Stage A：blog 去括号中文、city 页数据源署名去中文、14 个 guide 页双语副标题→纯英文、新增 `src/lib/city-sources.ts` 按语言输出数据源标签（ja/zh 中文、其它语言英文）。
+  - Stage B：guide 数据 EN 字段 104 处替换（`X (中文)`→`X`、教学汉字→拼音、usefulPhrases 取冒号前英文、weather 4 条中文 tips 英译）；有意保留：邀请函中英双语（PDF）、搜索别名。
+  - Stage C：`guide-i18n.tsx` 新增 `stripZh()`/`guideText()`，12 个 Guide 组件 EN 字段改走 `guideText`（ja→override / en→stripZh / 其它原样）。
+  - **ja 回归修复**：`ja-overrides.ts` 补 66 个新键（旧键值复制到新 EN 值），`CARRIER_JA` 键同步，CompanyRegistration EN 免责声明修正。
+- **验证结果**：
+  - EN 全量扫描（432 URL，`scripts/en-clean/scan-en-pages.py`）：**0 CJK**（此前 415 处）。
+  - ja 抽查（dining/payment/communication/transport/etiquette）：可见区全日语（四川料理/支付宝（アリペイ）/中国移動 等），英文仅在 meta/JSON-LD。
+  - `pnpm typecheck` ✅ 0 错误；`node scripts/check-i18n.mjs` ✅ 12/12、0 缺失。
+- **说明**：EN legacy 无前缀路由（`/city/suzhou/sim/` 等 section 页）404 为既有设计——EN 城市页只链锚点 `#transport` 等，无用户断链；Phase 5 验收时若按 432 URL 标准需专门处理。
+- **下个会话**：Phase 2 开始——先修 `verify_data_i18n.mjs` 的 fr/de/vi isTranslated 误判 bug，再按 ko→zh-CN→zh-TW→th→vi→ru→fr→de→ar→fa 顺序补 10 语言城市数据层（~3.4 万字段，DeepSeek ≤3 并发 + 缓存）。
