@@ -13,7 +13,7 @@ import { translations } from "@/i18n/translations";
 import { EmergencySection } from "@/components/city/EmergencySection";
 import { FoodHighlightsSection } from "@/components/city/FoodHighlightsSection";
 import { WeatherWidget } from "@/components/city/WeatherWidget";
-import { WEATHER_CONDITIONS, WEATHER_DEMO } from "@/i18n/weather";
+import { WEATHER_CONDITIONS, WEATHER_DEMO, WEATHER_LABELS } from "@/i18n/weather";
 import { citySlugs, getAdjacentCities, getCityBySlug } from "@/data/cities/index";
 import { cityDisplayName, pruneCityEntityNames } from "@/lib/city-name";
 import { getCityData } from "@/data/cities-i18n";
@@ -51,9 +51,9 @@ const isJapanese = lang === "ja";
 const langPrefix = lang === "en" ? "" : `/${lang}`;
 const weatherI18n = {
   cityPage: {
-    weatherHumidity: translations[lang]?.cityPage?.weatherHumidity,
-    weatherWind: translations[lang]?.cityPage?.weatherWind,
-    weatherFeels: translations[lang]?.cityPage?.weatherFeels,
+    weatherHumidity: translations[lang]?.cityPage?.weatherHumidity ?? WEATHER_LABELS[lang]?.weatherHumidity,
+    weatherWind: translations[lang]?.cityPage?.weatherWind ?? WEATHER_LABELS[lang]?.weatherWind,
+    weatherFeels: translations[lang]?.cityPage?.weatherFeels ?? WEATHER_LABELS[lang]?.weatherFeels,
     weatherForecast: translations[lang]?.cityPage?.weatherForecast,
     weatherDemo: WEATHER_DEMO[lang] ?? translations[lang]?.cityPage?.weatherDemo,
     weatherNA: translations[lang]?.cityPage?.weatherNA,
@@ -63,7 +63,7 @@ const weatherI18n = {
     toggleUnit: lang === "ja" ? "温度単位を切り替え" : "Toggle temperature unit",
     toggleUnitCelsius: "°C",
     toggleUnitFahrenheit: "°F",
-    rainProbability: lang === "ja" ? "降水確率" : "rain",
+    rainProbability: WEATHER_LABELS[lang]?.rainProbability ?? "rain",
     conditions: WEATHER_CONDITIONS[lang] || {},
   },
 };

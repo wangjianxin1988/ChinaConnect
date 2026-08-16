@@ -369,3 +369,17 @@ export const WEATHER_DEMO: Record<string, string> = {
   ar: "بيانات تجريبية - عيّن PUBLIC_OWM_API_KEY لعرض الطقس المباشر",
   fa: "داده نمایشی - برای مشاهده آب‌وهوای زنده PUBLIC_OWM_API_KEY را تنظیم کنید",
 };
+
+export const WEATHER_LABELS: Record<string, { weatherHumidity: string; weatherWind: string; weatherFeels: string; rainProbability: string }> = {
+  ja: { weatherHumidity: "湿度", weatherWind: "風", weatherFeels: "体感", rainProbability: "降水確率" },
+  ko: { weatherHumidity: "습도", weatherWind: "바람", weatherFeels: "체감", rainProbability: "강수 확률" },
+  "zh-CN": { weatherHumidity: "湿度", weatherWind: "风", weatherFeels: "体感", rainProbability: "降水概率" },
+  "zh-TW": { weatherHumidity: "濕度", weatherWind: "風", weatherFeels: "體感", rainProbability: "降水機率" },
+  th: { weatherHumidity: "ความชื้น", weatherWind: "ลม", weatherFeels: "รู้สึก", rainProbability: "ความน่าจะเป็นของฝน" },
+  vi: { weatherHumidity: "Độ ẩm", weatherWind: "Gió", weatherFeels: "Cảm giác", rainProbability: "Xác suất mưa" },
+  ru: { weatherHumidity: "Влажность", weatherWind: "Ветер", weatherFeels: "Ощущается", rainProbability: "Вероятность дождя" },
+  fr: { weatherHumidity: "Humidité", weatherWind: "Vent", weatherFeels: "Ressenti", rainProbability: "Probabilité de pluie" },
+  de: { weatherHumidity: "Luftfeuchtigkeit", weatherWind: "Wind", weatherFeels: "Gefühlt", rainProbability: "Regenwahrscheinlichkeit" },
+  ar: { weatherHumidity: "الرطوبة", weatherWind: "الرياح", weatherFeels: "الإحساس", rainProbability: "احتمال هطول الأمطار" },
+  fa: { weatherHumidity: "رطوبت", weatherWind: "باد", weatherFeels: "احساس", rainProbability: "احتمال بارش باران" },
+};
