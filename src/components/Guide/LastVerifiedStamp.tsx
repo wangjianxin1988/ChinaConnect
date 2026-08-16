@@ -1,6 +1,6 @@
 import React from "react";
 import { BUSINESS_DATA_META } from "@/data/guide/business/_meta";
-import { jaText } from "./guide-i18n";
+import { jaText, localized } from "./guide-i18n";;
 
 interface Props {
   /** Data file key, e.g. "expo-calendar" */
@@ -30,7 +30,7 @@ export const LastVerifiedStamp: React.FC<Props> = ({ dataKey, label, lang = "en"
         />
       </svg>
       <span>
-        {label ?? (lang === "ja" ? "最終確認日" : "Last verified")}: {meta.lastVerified}
+        {label ?? (localized("Last verified", "最終確認日", lang))}: {meta.lastVerified}
       </span>
       <span className="text-white/50">|</span>
       <a

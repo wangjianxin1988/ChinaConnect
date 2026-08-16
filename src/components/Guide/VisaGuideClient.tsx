@@ -12,7 +12,7 @@ import {
 } from "@/data/guide/visa";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
-import { jaText, guideText } from "./guide-i18n";
+import { jaText, guideText, localized } from "./guide-i18n";;
 
 interface VisaGuideClientProps {
     lang?: Language;
@@ -100,7 +100,7 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
                     </div>
                   </div>
                   <div className="mt-3">
-                    <span className="text-sm text-muted-foreground">{lang === "ja" ? "要件：" : (tv.requirements || "Requirements:")}</span>
+                    <span className="text-sm text-muted-foreground">{localized(tv.requirements || "Requirements:", "要件：", lang)}</span>
                     <ul className="mt-1 grid md:grid-cols-2 gap-1">
                       {req.notes.map((note, i) => (
                         <li key={i} className="text-sm flex items-center gap-1">
@@ -121,9 +121,9 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
               <div key={idx} className="bg-card rounded-xl border p-4">
                 <div className="flex items-center gap-2 mb-2">
                   <span className="text-2xl">{tip.icon}</span>
-                  <h3 className="font-semibold">{lang === "ja" ? jaText(tip.titleCn, lang) : tip.title}</h3>
+                  <h3 className="font-semibold">{localized(tip.title, tip.titleCn, lang)}</h3>
                 </div>
-                {lang !== "ja" && <p className="text-sm text-muted-foreground">{tip.tip}</p>}
+                {lang !== "ja" && <p className="text-sm text-muted-foreground">{guideText(tip.tip, lang)}</p>}
                 <p className="text-sm text-muted-foreground mt-1">{jaText(tip.tipCn, lang)}</p>
               </div>
             ))}
@@ -141,16 +141,14 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
                   {step.step}
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg">{lang === "ja" ? jaText(step.titleCn, lang) : step.title}</h3>
-                  {lang !== "ja" && <p className="text-sm text-muted-foreground">{jaText(step.titleCn, lang)}</p>}
+                  <h3 className="font-semibold text-lg">{localized(step.title, step.titleCn, lang)}</h3>
                 </div>
               </div>
               <div className="p-4">
-                <p className="text-foreground mb-4">{lang === "ja" ? jaText(step.descriptionCn, lang) : step.description}</p>
-                {lang !== "ja" && <p className="text-sm text-muted-foreground mb-4">{jaText(step.descriptionCn, lang)}</p>}
+                <p className="text-foreground mb-4">{localized(step.description, step.descriptionCn, lang)}</p>
                 <div className="bg-slate-50 rounded-lg p-4">
                   <h4 className="font-medium mb-2 flex items-center gap-2">
-                    <span>📋</span> {lang === "ja" ? "重要アクション" : "Key Actions"}
+                    <span>📋</span> {localized("Key Actions", "重要アクション", lang)}
                   </h4>
                   <ul className="space-y-2">
                     {lang !== "ja" && step.tips.map((tip, i) => (
@@ -241,9 +239,9 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
               <div key={idx} className="bg-card rounded-xl border p-4">
                 <div className="flex items-center gap-2 mb-2">
                   <span className="text-2xl">{tip.icon}</span>
-                  <h3 className="font-semibold">{lang === "ja" ? jaText(tip.titleCn, lang) : tip.title}</h3>
+                  <h3 className="font-semibold">{localized(tip.title, tip.titleCn, lang)}</h3>
                 </div>
-                {lang !== "ja" && <p className="text-sm text-foreground">{tip.tip}</p>}
+                {lang !== "ja" && <p className="text-sm text-foreground">{guideText(tip.tip, lang)}</p>}
                 <p className="text-sm text-muted-foreground mt-2">{jaText(tip.tipCn, lang)}</p>
               </div>
             ))}
@@ -261,12 +259,12 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
                     onClick={() => setExpandedFaq(expandedFaq === idx ? null : idx)}
                     className="w-full flex items-center justify-between p-4 hover:bg-slate-50 transition-colors"
                   >
-                    <span className="font-medium text-left pr-4">{lang === "ja" ? jaText(faq.question, lang) : faq.question}</span>
+                    <span className="font-medium text-left pr-4">{localized(faq.question, faq.question, lang)}</span>
                     <span className="text-muted-foreground">{expandedFaq === idx ? "▲" : "▼"}</span>
                   </button>
                   {expandedFaq === idx && (
                     <div className="px-4 pb-4">
-                      <p className="text-foreground">{lang === "ja" ? jaText(faq.answer, lang) : faq.answer}</p>
+                      <p className="text-foreground">{localized(faq.answer, faq.answer, lang)}</p>
                     </div>
                   )}
                 </div>
@@ -281,7 +279,7 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
               <div>
                 <h3 className="font-semibold">{tv.overstayWarning || "Visa Overstay Warning"}</h3>
                 <p className="text-sm text-muted-foreground mt-1">
-                  {lang === "ja" ? "ビザの超過滞在は罰金、拘束、今後の入国禁止につながる可能性があります。延長が必要な場合は、ビザの有効期限前に公安局（PSB）で延長申請をしてください。現在の超過滞在罰金は1日あたり約500元です。" : "Overstaying your visa can result in fines, detention, and future travel bans. If you need more time, apply for extension at the Public Security Bureau (PSB) before your visa expires. Current overstay fines are approximately 500 CNY per day."}
+                  {localized("Overstaying your visa can result in fines, detention, and future travel bans. If you need more time, apply for extension at the Public Security Bureau (PSB) before your visa expires. Current overstay fines are approximately 500 CNY per day.", "ビザの超過滞在は罰金、拘束、今後の入国禁止につながる可能性があります。延長が必要な場合は、ビザの有効期限前に公安局（PSB）で延長申請をしてください。現在の超過滞在罰金は1日あたり約500元です。", lang)}
                 </p>
               </div>
             </div>
@@ -296,10 +294,10 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-blue-50 px-6 py-4 border-b">
               <h2 className="font-semibold text-xl flex items-center gap-2">
-                <span>📅</span> {lang === "ja" ? "渡航の4〜6週間前" : (tv.weeksBefore || "Weeks Before Travel (4-6 weeks)")}
+                <span>📅</span> {localized(tv.weeksBefore || "Weeks Before Travel (4-6 weeks)", "渡航の4〜6週間前", lang)}
               </h2>
               <p className="text-sm text-muted-foreground">
-                {lang === "ja" ? "出発の4〜6週間前に完了してください" : (tv.weeksBeforeDesc || "Complete these 4-6 weeks before departure")}
+                {localized(tv.weeksBeforeDesc || "Complete these 4-6 weeks before departure", "出発の4〜6週間前に完了してください", lang)}
               </p>
             </div>
             <div className="divide-y">
@@ -328,7 +326,7 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-green-50 px-6 py-4 border-b">
               <h2 className="font-semibold text-xl flex items-center gap-2">
-                <span>⏰</span> {lang === "ja" ? "渡航の2〜3日前" : "Days Before Travel (2-3 days)"}
+                <span>⏰</span> {localized("Days Before Travel (2-3 days)", "渡航の2〜3日前", lang)}
               </h2>
               <p className="text-sm text-muted-foreground">{tv.finalPreparations || "Final preparations"}</p>
             </div>
@@ -358,7 +356,7 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-purple-50 px-6 py-4 border-b">
               <h2 className="font-semibold text-xl flex items-center gap-2">
-                <span>🔌</span> {lang === "ja" ? "持参品 - 電化製品" : "What to Bring - Electronics"}
+                <span>🔌</span> {localized("What to Bring - Electronics", "持参品 - 電化製品", lang)}
               </h2>
             </div>
             <div className="divide-y">
@@ -384,7 +382,7 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-amber-50 px-6 py-4 border-b">
               <h2 className="font-semibold text-xl flex items-center gap-2">
-                <span>🎒</span> {lang === "ja" ? "持参品 - 必須アイテム" : "What to Bring - Essentials"}
+                <span>🎒</span> {localized("What to Bring - Essentials", "持参品 - 必須アイテム", lang)}
               </h2>
             </div>
             <div className="divide-y">
@@ -409,12 +407,12 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
           {/* Progress */}
           <div className="bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-xl p-4 text-center">
             <p className="text-sm text-muted-foreground mb-1">
-              {lang === "ja" ? "進捗：" : "Progress: "}{checkedItems.size}/
+              {localized("Progress: ", "進捗：", lang)}{checkedItems.size}/
               {PRE_DEPARTURE_CHECKLIST.weeksBefore.length +
                 PRE_DEPARTURE_CHECKLIST.daysBefore.length +
                 PRE_DEPARTURE_CHECKLIST.whatToBring.electronics.length +
                 PRE_DEPARTURE_CHECKLIST.whatToBring.essentials.length}{" "}
-              {lang === "ja" ? "件チェック済み" : "items checked"}
+              {localized("items checked", "件チェック済み", lang)}
             </p>
             <div className="w-full bg-blue-100 rounded-full h-2">
               <div

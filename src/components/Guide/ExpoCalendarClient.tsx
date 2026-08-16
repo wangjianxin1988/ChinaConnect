@@ -1,7 +1,7 @@
 import { EXPO_CALENDAR, EXPO_CATEGORIES, YEAR_MONTHS } from "@/data/guide/business/expo-calendar";
 import { LastVerifiedStamp } from "./LastVerifiedStamp";
 import React, { useState } from "react";
-import { jaText, Bi } from "./guide-i18n";
+import { jaText, Bi, localized } from "./guide-i18n";;
 
 export function ExpoCalendarClient({ lang = "en" }: { lang?: string }) {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -25,9 +25,9 @@ export function ExpoCalendarClient({ lang = "en" }: { lang?: string }) {
         <div className="flex items-start gap-4">
           <span className="text-5xl">📅</span>
           <div>
-            <h2 className="text-2xl font-bold mb-2">{lang === "ja" ? "中国見本市カレンダー2026" : "China Expo Calendar 2026"}</h2>
+            <h2 className="text-2xl font-bold mb-2">{localized("China Expo Calendar 2026", "中国見本市カレンダー2026", lang)}</h2>
             <p className="text-indigo-100 max-w-2xl">
-              {lang === "ja" ? "中国の最も重要な見本市や展示会に合わせて出張を計画しましょう。広州交易会から主要都市の業界別イベントまで。" : "Plan your business trips around China&apos;s most important trade shows and exhibitions. From the Canton Fair to industry-specific events across major cities."}
+              {localized("Plan your business trips around China&apos;s most important trade shows and exhibitions. From the Canton Fair to industry-specific events across major cities.", "中国の最も重要な見本市や展示会に合わせて出張を計画しましょう。広州交易会から主要都市の業界別イベントまで。", lang)}
             </p>
             <LastVerifiedStamp dataKey="expo-calendar" lang={lang} />
           </div>
@@ -71,7 +71,7 @@ export function ExpoCalendarClient({ lang = "en" }: { lang?: string }) {
                     : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                 }`}
               >
-                {lang === "ja" ? jaText(m.labelCn, lang) : <>{m.label} <span className="ml-1 opacity-70 text-xs">{jaText(m.labelCn, lang)}</span></>}
+                {localized(m.label, m.labelCn, lang)}
               </button>
             ))}
           </div>
@@ -81,7 +81,7 @@ export function ExpoCalendarClient({ lang = "en" }: { lang?: string }) {
       {/* Results */}
       <div className="bg-card rounded-xl border p-4">
         <p className="text-sm text-muted-foreground">
-          {lang === "ja" ? `全${filteredExpos.length}件のイベントを表示中` : `Showing ${filteredExpos.length} event${filteredExpos.length !== 1 ? "s" : ""}`}
+          {localized("Showing {count} events", "全{count}件のイベントを表示中", lang).replace("{count}", String(filteredExpos.length))}
         </p>
       </div>
 
@@ -90,7 +90,7 @@ export function ExpoCalendarClient({ lang = "en" }: { lang?: string }) {
         {filteredExpos.length === 0 ? (
           <div className="text-center py-12 bg-card rounded-xl border">
             <span className="text-5xl mb-4 block">🔍</span>
-            <p className="text-muted-foreground">{lang === "ja" ? "選択したフィルターに一致するイベントがありません。" : "No events found for the selected filters."}</p>
+            <p className="text-muted-foreground">{localized("No events found for the selected filters.", "選択したフィルターに一致するイベントがありません。", lang)}</p>
           </div>
         ) : (
           filteredExpos.map((expo) => (
@@ -111,7 +111,7 @@ export function ExpoCalendarClient({ lang = "en" }: { lang?: string }) {
                         key={m}
                         className="px-2 py-0.5 rounded bg-indigo-100 text-indigo-700 text-xs font-medium text-center"
                       >
-                        {lang === "ja" ? jaText(month?.labelCn || "", lang) : month?.label}
+                        {localized(month?.label || "", month?.labelCn || "", lang)}
                       </span>
                     );
                   })}
@@ -121,9 +121,8 @@ export function ExpoCalendarClient({ lang = "en" }: { lang?: string }) {
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
                     <span className="text-xl">{getCategoryEmoji(expo.category)}</span>
-                    <h3 className="font-semibold text-lg">{lang === "ja" ? jaText(expo.nameCn, lang) : expo.name}</h3>
+                    <h3 className="font-semibold text-lg">{localized(expo.name, expo.nameCn, lang)}</h3>
                   </div>
-                  {lang !== "ja" && <p className="text-sm text-primary font-medium">{jaText(expo.nameCn, lang)}</p>}
                   <div className="flex flex-wrap items-center gap-3 mt-2 text-sm text-muted-foreground">
                     <span>📍 {jaText(expo.city, lang)}</span>
                     <span>🏢 {jaText(expo.venue, lang)}</span>
@@ -141,26 +140,25 @@ export function ExpoCalendarClient({ lang = "en" }: { lang?: string }) {
                   <div className="grid md:grid-cols-2 gap-6 mt-5">
                     <div>
                       <h4 className="font-semibold mb-2 flex items-center gap-2">
-                        <span>🌐</span> {lang === "ja" ? "説明" : "Description"}
+                        <span>🌐</span> {localized("Description", "説明", lang)}
                       </h4>
-                      <p className="text-sm text-foreground mb-3">{lang === "ja" ? jaText(expo.descriptionCn, lang) : expo.description}</p>
-                      {lang !== "ja" && <p className="text-sm text-muted-foreground">{jaText(expo.descriptionCn, lang)}</p>}
+                      <p className="text-sm text-foreground mb-3">{localized(expo.description, expo.descriptionCn, lang)}</p>
                     </div>
                     <div className="space-y-3">
                       <h4 className="font-semibold flex items-center gap-2">
-                        <span>🔗</span> {lang === "ja" ? "基本情報" : "Quick Info"}
+                        <span>🔗</span> {localized("Quick Info", "基本情報", lang)}
                       </h4>
                       <div className="grid grid-cols-2 gap-2 text-sm">
                         <div className="bg-slate-50 p-2 rounded">
-                          <span className="text-muted-foreground block text-xs">{lang === "ja" ? "都市" : "City"}</span>
+                          <span className="text-muted-foreground block text-xs">{localized("City", "都市", lang)}</span>
                           <span className="font-medium">{jaText(expo.city, lang)}</span>
                         </div>
                         <div className="bg-slate-50 p-2 rounded">
-                          <span className="text-muted-foreground block text-xs">{lang === "ja" ? "開催頻度" : "Frequency"}</span>
+                          <span className="text-muted-foreground block text-xs">{localized("Frequency", "開催頻度", lang)}</span>
                           <span className="font-medium">{jaText(expo.frequency, lang)}</span>
                         </div>
                         <div className="bg-slate-50 p-2 rounded md:col-span-2">
-                          <span className="text-muted-foreground block text-xs">{lang === "ja" ? "会場" : "Venue"}</span>
+                          <span className="text-muted-foreground block text-xs">{localized("Venue", "会場", lang)}</span>
                           <span className="font-medium">{jaText(expo.venue, lang)}</span>
                         </div>
                       </div>
@@ -172,7 +170,7 @@ export function ExpoCalendarClient({ lang = "en" }: { lang?: string }) {
                           className="flex items-center gap-2 text-sm text-blue-600 hover:text-blue-800 font-medium"
                         >
                           <span>🌐</span>
-                          {lang === "ja" ? "公式ウェブサイトへ" : "Visit Official Website"}
+                          {localized("Visit Official Website", "公式ウェブサイトへ", lang)}
                           <svg
                             className="w-3 h-3"
                             fill="none"
@@ -203,22 +201,15 @@ export function ExpoCalendarClient({ lang = "en" }: { lang?: string }) {
           <span className="text-4xl">⭐</span>
           <div>
             <h3 className="text-xl font-bold text-amber-900 mb-1"><Bi en="Canton Fair Spotlight" zh="广交会亮点" lang={lang} /></h3>
-            {lang === "ja" ? (
-              <p className="text-amber-800 text-sm mb-3">
-                中国輸出入商品交易会（広州交易会）は、中国で最も歴史が古く、最大規模で最も成功した見本市です。毎年春と秋に広州で開催されます。
-              </p>
-            ) : (
-              <p className="text-amber-800 text-sm mb-3">
-                The China Import and Export Fair (Canton Fair) is the oldest, largest, and most
-                successful trade fair in China. Held every spring and autumn in Guangzhou.
-              </p>
-            )}
+            <p className="text-amber-800 text-sm mb-3">
+              {localized("The China Import and Export Fair (Canton Fair) is the oldest, largest, and most successful trade fair in China. Held every spring and autumn in Guangzhou.", "中国輸出入商品交易会（広州交易会）は、中国で最も歴史が古く、最大規模で最も成功した見本市です。毎年春と秋に広州で開催されます。", lang)}
+            </p>
             <div className="flex flex-wrap gap-3 text-sm">
               <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full font-medium">
-                {lang === "ja" ? "春：2026年4月15日〜5月5日" : "Spring: April 15 – May 5, 2026"}
+                {localized("Spring: April 15 – May 5, 2026", "春：2026年4月15日〜5月5日", lang)}
               </span>
               <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full font-medium">
-                {lang === "ja" ? "秋：2026年10月15日〜11月4日" : "Autumn: October 15 – November 4, 2026"}
+                {localized("Autumn: October 15 – November 4, 2026", "秋：2026年10月15日〜11月4日", lang)}
               </span>
             </div>
             <a
@@ -227,7 +218,7 @@ export function ExpoCalendarClient({ lang = "en" }: { lang?: string }) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 mt-3 text-amber-700 hover:text-amber-900 font-semibold"
             >
-              {lang === "ja" ? "登録・詳細はこちら →" : "Register & Learn More →"}
+              {localized("Register & Learn More →", "登録・詳細はこちら →", lang)}
             </a>
           </div>
         </div>

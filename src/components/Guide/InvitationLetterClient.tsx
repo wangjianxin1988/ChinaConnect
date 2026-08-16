@@ -9,7 +9,7 @@ import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import React, { useState, useRef, useEffect } from "react";
 import { type Language, translations } from "@/i18n/translations";
-import { jaText, Bi, stripZh } from "./guide-i18n";
+import { jaText, Bi, stripZh, localized } from "./guide-i18n";;
 
 interface FormValues {
   [key: string]: string;
@@ -304,10 +304,10 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
                   }`}
                 >
                   {tpl.language === "bilingual"
-                    ? (lang === "zh-CN" || lang === "zh-TW" ? "双语" : lang === "ja" ? "バイリンガル" : "Bilingual")
+                    ? (lang === "zh-CN" || lang === "zh-TW" ? "双语" : localized("Bilingual", "バイリンガル", lang))
                     : tpl.language === "en"
                       ? "English"
-                      : (lang === "zh-CN" || lang === "zh-TW" ? "中文" : lang === "ja" ? "中国語" : "Chinese")}
+                      : (lang === "zh-CN" || lang === "zh-TW" ? "中文" : localized("Chinese", "中国語", lang))}
                 </span>
               </div>
             </button>
@@ -364,7 +364,7 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
                     : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                 }`}
               >
-                {previewMode ? (lang === "zh-CN" || lang === "zh-TW" ? "编辑" : lang === "ja" ? "編集" : "Edit") : (lang === "zh-CN" || lang === "zh-TW" ? "预览" : lang === "ja" ? "プレビュー" : "Preview")}
+                {previewMode ? (lang === "zh-CN" || lang === "zh-TW" ? "编辑" : localized("Edit", "編集", lang)) : (lang === "zh-CN" || lang === "zh-TW" ? "预览" : localized("Preview", "プレビュー", lang))}
               </button>
             </div>
           </div>
@@ -441,7 +441,7 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
           <li>• Keep a scanned PDF copy and original for your visa interview</li>
         </ul>
         <p className="text-xs text-amber-600 mt-3">
-          {lang === "ja" ? "ヒント：多くの大使館・領事館は統一社会信用コードの記載を求めます。招待状は権限のある署名者が署名し、会社印を押印する必要があります。" : "Tip: Most embassies require the unified social credit code. The letter must be signed by an authorized signatory and stamped with the company seal."}
+          {localized("Tip: Most embassies require the unified social credit code. The letter must be signed by an authorized signatory and stamped with the company seal.", "ヒント：多くの大使館・領事館は統一社会信用コードの記載を求めます。招待状は権限のある署名者が署名し、会社印を押印する必要があります。", lang)}
         </p>
       </div>
     </div>

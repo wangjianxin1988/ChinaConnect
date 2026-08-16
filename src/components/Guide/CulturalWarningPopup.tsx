@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { CULTURAL_WARNINGS, IMPORTANCE_STYLES, REGION_TRIGGERS } from "@/data/cultural-warnings";
 import React, { useState, useEffect } from "react";
-import { jaText, Bi } from "./guide-i18n";
+import { jaText, Bi, localized } from "./guide-i18n";;
 
 interface CulturalWarningPopupProps {
   currentLocation?: string;
@@ -92,7 +92,7 @@ export function CulturalWarningPopup({
         {/* Actions */}
         <div className="px-4 py-3 bg-black/5 flex items-center justify-between">
           <button onClick={nextWarning} className="text-sm font-medium hover:underline">
-            (lang === "zh-CN" || lang === "zh-TW" ? "下一个 →" : lang === "ja" ? "次へ →" : "Next →")
+            (lang === "zh-CN" || lang === "zh-TW" ? "下一个 →" : localized("Next →", "次へ →", lang))
           </button>
           <button
             onClick={dismiss}

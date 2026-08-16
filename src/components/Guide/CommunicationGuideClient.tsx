@@ -9,7 +9,7 @@ import {
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
 import { ct } from "@/i18n/components-strings";
-import { jaText, Bi, guideText } from "./guide-i18n";
+import { jaText, Bi, guideText, localized } from "./guide-i18n";;
 const RELIABILITY_JA: Record<string, string> = { high: "高信頼性", medium: "中程度", low: "低" };
 const SPEED_JA: Record<string, string> = { fast: "高速", medium: "中程度", slow: "低速" };
 const DIFFICULTY_JA: Record<string, string> = { easy: "簡単", medium: "中程度", hard: "難しい" };
@@ -65,7 +65,7 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
         <div className="space-y-4">
           <div className="grid lg:grid-cols-3 gap-4">
             <div className="lg:col-span-1 space-y-3">
-              <h3 className="font-semibold">{lang === "ja" ? "オプションを選択" : "Select Option"}</h3>
+              <h3 className="font-semibold">{localized("Select Option", "オプションを選択", lang)}</h3>
               {SIM_OPTIONS.map((sim) => (
                 <button
                   key={sim.type}
@@ -79,7 +79,7 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
                   <div className="flex items-center gap-3">
                     <span className="text-2xl">{sim.icon}</span>
                     <div>
-                      <div className="font-medium">{lang === "ja" ? (SIM_TYPE_JA[sim.type] || sim.type) : sim.type}</div>
+                      <div className="font-medium">{lang === "ja" ? (SIM_TYPE_JA[sim.type] || sim.type) : localized(sim.type, sim.type, lang)}</div>
                       <div className="text-sm text-muted-foreground">{jaText(sim.costCn, lang)}</div>
                     </div>
                   </div>
@@ -94,14 +94,14 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
                     <div className="flex items-center gap-4">
                       <span className="text-5xl">{currentSIM.icon}</span>
                       <div>
-                        <h2 className="text-2xl font-bold">{lang === "ja" ? (SIM_TYPE_JA[currentSIM.type] || currentSIM.type) : currentSIM.type}</h2>
-                        {lang !== "ja" && <p className="text-muted-foreground">{currentSIM.cost}</p>}
+                        <h2 className="text-2xl font-bold">{lang === "ja" ? (SIM_TYPE_JA[currentSIM.type] || currentSIM.type) : localized(currentSIM.type, currentSIM.type, lang)}</h2>
+                        {lang !== "ja" && <p className="text-muted-foreground">{guideText(currentSIM.cost, lang)}</p>}
                         <p className="text-sm text-muted-foreground">{jaText(currentSIM.costCn, lang)}</p>
                       </div>
                     </div>
                   </div>
                   <div className="p-6 space-y-4">
-                    {lang !== "ja" && <p className="text-foreground">{currentSIM.description}</p>}
+                    {lang !== "ja" && <p className="text-foreground">{guideText(currentSIM.description, lang)}</p>}
                     <p className="text-sm text-muted-foreground">{jaText(currentSIM.descriptionCn, lang)}</p>
 
                     {/* Providers */}
@@ -162,7 +162,7 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
                     {/* Pros & Cons */}
                     <div className="grid md:grid-cols-2 gap-4">
                       <div className="bg-green-50 rounded-lg p-3">
-                        <h4 className="font-medium mb-2">{lang === "ja" ? "✅ メリット" : "✅ Pros"}</h4>
+                        <h4 className="font-medium mb-2">{localized("✅ Pros", "✅ メリット", lang)}</h4>
                         <ul className="space-y-1">
                           {currentSIM.pros.map((pro, i) => (
                             <li key={i} className="text-sm">
@@ -172,7 +172,7 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
                         </ul>
                       </div>
                       <div className="bg-red-50 rounded-lg p-3">
-                        <h4 className="font-medium mb-2">{lang === "ja" ? "⚠️ デメリット" : "⚠️ Cons"}</h4>
+                        <h4 className="font-medium mb-2">{localized("⚠️ Cons", "⚠️ デメリット", lang)}</h4>
                         <ul className="space-y-1">
                           {currentSIM.cons.map((con, i) => (
                             <li key={i} className="text-sm">
@@ -187,9 +187,9 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
               ) : (
                 <div className="bg-card rounded-xl border p-12 text-center">
                   <span className="text-6xl mb-4 block">📱</span>
-                  <h3 className="text-xl font-semibold mb-2">{lang === "ja" ? "SIMオプションを選択" : "Select a SIM Option"}</h3>
+                  <h3 className="text-xl font-semibold mb-2">{localized("Select a SIM Option", "SIMオプションを選択", lang)}</h3>
                   <p className="text-muted-foreground">
-                    {lang === "ja" ? "オプションをクリックすると詳細情報が表示されます" : "Click on an option to see detailed information"}
+                    {localized("Click on an option to see detailed information", "オプションをクリックすると詳細情報が表示されます", lang)}
                   </p>
                 </div>
               )}
@@ -199,7 +199,7 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
           {/* APN Settings */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h3 className="font-semibold text-lg">{lang === "ja" ? "通信事業者別APN設定" : "APN Settings by Carrier"}</h3>
+              <h3 className="font-semibold text-lg">{localized("APN Settings by Carrier", "通信事業者別APN設定", lang)}</h3>
             </div>
             <div className="divide-y">
               {APN_SETTINGS.map((apn, idx) => (
@@ -215,12 +215,12 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
                       <p className="font-mono text-xs">{apn.mmsc}</p>
                     </div>
                     <div>
-                      <span className="text-muted-foreground">{lang === "ja" ? "プロキシ：" : "Proxy:"}</span>
+                      <span className="text-muted-foreground">{localized("Proxy:", "プロキシ：", lang)}</span>
                       <p className="font-mono">{apn.proxy || "-"}</p>
                     </div>
                     <div>
-                      <span className="text-muted-foreground">{lang === "ja" ? "メモ：" : "Notes:"}</span>
-                      <p className="text-muted-foreground">{lang === "ja" ? jaText(apn.notes, lang) : apn.notes}</p>
+                      <span className="text-muted-foreground">{localized("Notes:", "メモ：", lang)}</span>
+                      <p className="text-muted-foreground">{localized(apn.notes, apn.notes, lang)}</p>
                     </div>
                   </div>
                 </div>
@@ -235,10 +235,10 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
         <div className="space-y-4">
           <div className="bg-red-50 border border-red-200 rounded-xl p-4">
             <h3 className="font-semibold flex items-center gap-2">
-              <span>⚠️</span> {lang === "ja" ? "重要なVPN警告" : "Important VPN Warning"}
+              <span>⚠️</span> {localized("Important VPN Warning", "重要なVPN警告", lang)}
             </h3>
             <p className="text-sm text-muted-foreground mt-1">
-              {lang === "ja" ? "中国に到着する前にVPNをダウンロードして設定してください。国内では多くのVPNサイトがブロックされており、アプリストアに希望のVPNがない場合もあります。出発前にインストールしてテストしておきましょう。" : "Download and set up your VPN BEFORE arriving in China. Most VPN websites are blocked domestically, and app stores may not have your preferred VPN. Install and test before departure."}
+              {localized("Download and set up your VPN BEFORE arriving in China. Most VPN websites are blocked domestically, and app stores may not have your preferred VPN. Install and test before departure.", "中国に到着する前にVPNをダウンロードして設定してください。国内では多くのVPNサイトがブロックされており、アプリストアに希望のVPNがない場合もあります。出発前にインストールしてテストしておきましょう。", lang)}
             </p>
           </div>
 
@@ -261,14 +261,14 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
                             : "bg-red-100 text-red-800"
                       }`}
                     >
-                      {lang === "ja" ? RELIABILITY_JA[vpn.reliability] || vpn.reliability : vpn.reliability + " reliability"}
+                      {lang === "ja" ? RELIABILITY_JA[vpn.reliability] || vpn.reliability : localized(vpn.reliability + " reliability", vpn.reliability, lang)}
                     </span>
-                    <span className="text-xs text-muted-foreground">{lang === "ja" ? SPEED_JA[vpn.speed] || vpn.speed : vpn.speed + " speed"}</span>
+                    <span className="text-xs text-muted-foreground">{lang === "ja" ? SPEED_JA[vpn.speed] || vpn.speed : localized(vpn.speed + " speed", vpn.speed, lang)}</span>
                   </div>
                 </div>
                 <div className="p-4 space-y-3">
                   <div>
-                    <h4 className="font-medium text-sm">{lang === "ja" ? "機能：" : "Features:"}</h4>
+                    <h4 className="font-medium text-sm">{localized("Features:", "機能：", lang)}</h4>
                     <div className="flex flex-wrap gap-1 mt-1">
                       {vpn.features.map((f, i) => (
                         <span key={i} className="text-xs bg-slate-100 px-2 py-1 rounded">
@@ -278,7 +278,7 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
                     </div>
                   </div>
                   <div className="text-xs text-muted-foreground">
-                    {lang === "ja" ? "セットアップ難易度：" + (DIFFICULTY_JA[vpn.setupDifficulty] || vpn.setupDifficulty) : "Setup difficulty: " + vpn.setupDifficulty}
+                    {lang === "ja" ? "セットアップ難易度：" + (DIFFICULTY_JA[vpn.setupDifficulty] || vpn.setupDifficulty) : localized("Setup difficulty: ", "セットアップ難易度：", lang) + localized(vpn.setupDifficulty, vpn.setupDifficulty, lang)}
                   </div>
                 </div>
               </div>
@@ -292,10 +292,10 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
         <div className="space-y-4">
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
             <h3 className="font-semibold flex items-center gap-2">
-              <span>📱</span> {lang === "ja" ? "到着前にダウンロード" : "Download Before Arrival"}
+              <span>📱</span> {localized("Download Before Arrival", "到着前にダウンロード", lang)}
             </h3>
             <p className="text-sm text-muted-foreground mt-1">
-              {lang === "ja" ? "中国ではGoogle Playがブロックされています。到着前にこれらのアプリをダウンロードするか、Apple App Store、Huawei AppGalleryなどの代替ストア、またはアプリ公式サイトからダウンロードしてください。" : "Google Play is blocked in China. Download these apps before arrival or use alternative app stores like Apple App Store, Huawei AppGallery, or directly from app websites."}
+              {localized("Google Play is blocked in China. Download these apps before arrival or use alternative app stores like Apple App Store, Huawei AppGallery, or directly from app websites.", "中国ではGoogle Playがブロックされています。到着前にこれらのアプリをダウンロードするか、Apple App Store、Huawei AppGalleryなどの代替ストア、またはアプリ公式サイトからダウンロードしてください。", lang)}
             </p>
           </div>
 
@@ -317,11 +317,11 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
                   </div>
                 </div>
                 <div className="text-xs text-muted-foreground mb-1">
-                  {lang === "ja" ? jaText(app.categoryCn, lang) : <>{app.category} / {jaText(app.categoryCn, lang)}</>}
+                  {localized(app.category, app.categoryCn, lang)}
                 </div>
                 <p className="text-sm">{guideText(app.purpose, lang)}</p>
                 <p className="text-xs text-muted-foreground mt-1">{jaText(app.purposeCn, lang)}</p>
-                <div className="text-xs text-muted-foreground mt-2">{lang === "ja" ? "ダウンロード：" : "Download: "}{guideText(app.download, lang)}</div>
+                <div className="text-xs text-muted-foreground mt-2">{localized("Download: ", "ダウンロード：", lang)}{guideText(app.download, lang)}</div>
               </div>
             ))}
           </div>
@@ -338,16 +338,16 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
                   {step.step}
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg">{lang === "ja" ? jaText(step.titleCn, lang) : step.title}</h3>
+                  <h3 className="font-semibold text-lg">{localized(step.title, step.titleCn, lang)}</h3>
                   <p className="text-sm text-muted-foreground">{jaText(step.titleCn, lang)}</p>
                 </div>
                 <span className="text-3xl ml-auto">{step.icon}</span>
               </div>
               <div className="p-4">
-                <p className="text-foreground mb-4">{lang === "ja" ? jaText(step.descriptionCn, lang) : step.description}</p>
+                <p className="text-foreground mb-4">{localized(step.description, step.descriptionCn, lang)}</p>
                 <p className="text-sm text-muted-foreground mb-4">{jaText(step.descriptionCn, lang)}</p>
                 <div className="bg-slate-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">{lang === "ja" ? "アクション項目：" : "Action Items:"}</h4>
+                  <h4 className="font-medium mb-2">{localized("Action Items:", "アクション項目：", lang)}</h4>
                   <ul className="space-y-2">
                     {step.actionItems.map((item, i) => (
                       <li key={i} className="flex items-start gap-2 text-sm">
@@ -371,7 +371,7 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
           {/* Useful Phrases */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h3 className="font-semibold text-lg">{lang === "ja" ? "便利なフレーズ" : "Useful Phrases"}</h3>
+              <h3 className="font-semibold text-lg">{localized("Useful Phrases", "便利なフレーズ", lang)}</h3>
             </div>
             <div className="divide-y">
               {COMMUNICATION_HELPERS.usefulPhrases.map((phrase, idx) => (

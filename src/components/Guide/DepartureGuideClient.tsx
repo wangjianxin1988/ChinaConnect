@@ -9,7 +9,7 @@ import {
 } from "@/data/guide/departure";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
-import { jaText, Bi, guideText } from "./guide-i18n";
+import { jaText, Bi, guideText, localized } from "./guide-i18n";;
 
 export function DepartureGuideClient({ lang = "en" }: { lang?: Language } = {}) { const t = translations[lang] || translations.en; const tg = (t.departureGuide || translations.en.departureGuide || {}) as Record<string, string>;
   const [activeTab, setActiveTab] = useState("steps");
@@ -53,26 +53,24 @@ export function DepartureGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                     {step.step}
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-semibold text-lg">{lang === "ja" ? jaText(step.titleCn, lang) : step.title}</h3>
-                    {lang !== "ja" && <p className="text-sm text-muted-foreground">{jaText(step.titleCn, lang)}</p>}
+                    <h3 className="font-semibold text-lg">{localized(step.title, step.titleCn, lang)}</h3>
                   </div>
                   <span className="text-3xl">{step.icon}</span>
                 </div>
                 <div className="p-4">
-                  {lang !== "ja" && <p className="text-foreground mb-2">{step.description}</p>}
+                  {lang !== "ja" && <p className="text-foreground mb-2">{guideText(step.description, lang)}</p>}
                   <p className="text-sm text-muted-foreground mb-4">{jaText(step.descriptionCn, lang)}</p>
                   <div className="bg-slate-50 rounded-lg p-4">
                     <div className="flex items-center gap-2 mb-2">
                       <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                        {lang === "ja" ? jaText(step.timingCn, lang) : step.timing}
+                        {localized(step.timing, step.timingCn, lang)}
                       </span>
-                      {lang !== "ja" && <span className="text-xs text-muted-foreground">{jaText(step.timingCn, lang)}</span>}
                     </div>
                     <ul className="space-y-2">
                       {step.details.map((detail, i) => (
                         <li key={i} className="flex items-start gap-2 text-sm">
                           <span className="text-blue-500">{i + 1}.</span>
-                          <span>{lang === "ja" ? jaText(step.detailsCn[i] || "", lang) : detail}</span>
+                          <span>{localized(detail, step.detailsCn[i] || "", lang)}</span>
                         </li>
                       ))}
                     </ul>
@@ -85,26 +83,26 @@ export function DepartureGuideClient({ lang = "en" }: { lang?: Language } = {}) 
           {/* Important Reminders */}
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
             <h3 className="font-semibold flex items-center gap-2">
-              <span>⏰</span> {lang === "ja" ? "重要な注意事項" : "Important Reminders"}
+              <span>⏰</span> {localized("Important Reminders", "重要な注意事項", lang)}
             </h3>
             <ul className="mt-2 space-y-2 text-sm">
               <li className="flex items-start gap-2">
                 <span className="text-amber-600">•</span>
-                <span>{lang === "ja" ? "国際線：出発の3時間前に空港到着" : "International flights: arrive at airport 3 hours before departure"}</span>
+                <span>{localized("International flights: arrive at airport 3 hours before departure", "国際線：出発の3時間前に空港到着", lang)}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-amber-600">•</span>
                 <span>
-                  {lang === "ja" ? "パスポート有効期限を確認 - 渡航期間終了後6ヶ月以上の残存が必要" : "Check passport validity - must be valid for 6+ months beyond travel dates"}
+                  {localized("Check passport validity - must be valid for 6+ months beyond travel dates", "パスポート有効期限を確認 - 渡航期間終了後6ヶ月以上の残存が必要", lang)}
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-amber-600">•</span>
-                <span>{lang === "ja" ? "ビザの出国期限を確認 - 超過滞在の罰金は1日あたり約500元" : "Verify visa exit dates - overstay fines are approximately 500 CNY/day"}</span>
+                <span>{localized("Verify visa exit dates - overstay fines are approximately 500 CNY/day", "ビザの出国期限を確認 - 超過滞在の罰金は1日あたり約500元", lang)}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-amber-600">•</span>
-                <span>{lang === "ja" ? "経費管理のため搭乗券と領収書を保管" : "Keep boarding pass and receipts for expense tracking"}</span>
+                <span>{localized("Keep boarding pass and receipts for expense tracking", "経費管理のため搭乗券と領収書を保管", lang)}</span>
               </li>
             </ul>
           </div>
@@ -120,11 +118,10 @@ export function DepartureGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                 <span className="text-3xl">{refund.icon}</span>
                 <div>
                   <h3 className="font-semibold text-lg">{refund.category}</h3>
-                  {lang !== "ja" && <p className="text-sm text-muted-foreground">{jaText(refund.descriptionCn, lang)}</p>}
                 </div>
               </div>
               <div className="p-4 space-y-4">
-                <p className="text-sm text-foreground">{lang === "ja" ? jaText(refund.descriptionCn, lang) : refund.description}</p>
+                <p className="text-sm text-foreground">{localized(refund.description, refund.descriptionCn, lang)}</p>
 
                 {refund.process.length > 0 && (
                   <div className="bg-slate-50 rounded-lg p-4">
@@ -174,24 +171,24 @@ export function DepartureGuideClient({ lang = "en" }: { lang?: Language } = {}) 
           {/* Tax Refund Calculator */}
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
             <h3 className="font-semibold flex items-center gap-2">
-              <span>💰</span> {lang === "ja" ? "税還付率" : "Tax Refund Rates"}
+              <span>💰</span> {localized("Tax Refund Rates", "税還付率", lang)}
             </h3>
             <div className="mt-3 grid md:grid-cols-3 gap-4 text-sm">
               <div className="bg-white rounded-lg p-3">
-                <h4 className="font-medium">{lang === "ja" ? "一般商品" : "General Goods"}</h4>
+                <h4 className="font-medium">{localized("General Goods", "一般商品", lang)}</h4>
                 <p className="text-2xl font-bold text-primary">3-6%</p>
               </div>
               <div className="bg-white rounded-lg p-3">
-                <h4 className="font-medium">{lang === "ja" ? "高級品" : "Luxury Items"}</h4>
+                <h4 className="font-medium">{localized("Luxury Items", "高級品", lang)}</h4>
                 <p className="text-2xl font-bold text-primary">6-11%</p>
               </div>
               <div className="bg-white rounded-lg p-3">
-                <h4 className="font-medium">{lang === "ja" ? "最低購入額" : "Minimum Purchase"}</h4>
+                <h4 className="font-medium">{localized("Minimum Purchase", "最低購入額", lang)}</h4>
                 <p className="text-2xl font-bold text-primary">500 CNY</p>
               </div>
             </div>
             <p className="text-sm text-muted-foreground mt-3">
-              {lang === "ja" ? "還付率は商品カテゴリーによって異なります。高級品、化粧品、電化製品は一般的に還付率が高くなります。" : "Refund rate depends on item category. Luxury goods, cosmetics, and electronics typically have higher rates."}
+              {localized("Refund rate depends on item category. Luxury goods, cosmetics, and electronics typically have higher rates.", "還付率は商品カテゴリーによって異なります。高級品、化粧品、電化製品は一般的に還付率が高くなります。", lang)}
             </p>
           </div>
         </div>
@@ -215,7 +212,7 @@ export function DepartureGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                 <div className="p-4 space-y-4">
                   <div>
                     <span className="text-sm text-muted-foreground">
-                      {lang === "ja" ? "市内中心部からの距離：" : "Distance from city center:"}
+                      {localized("Distance from city center:", "市内中心部からの距離：", lang)}
                     </span>
                     <p className="font-medium">{jaText(airport.distance, lang)}</p>
                   </div>
@@ -248,7 +245,7 @@ export function DepartureGuideClient({ lang = "en" }: { lang?: Language } = {}) 
           {/* Duty Free Shopping */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h3 className="font-semibold text-lg">{lang === "ja" ? "免税店ショッピングのヒント" : "Duty-Free Shopping Tips"}</h3>
+              <h3 className="font-semibold text-lg">{localized("Duty-Free Shopping Tips", "免税店ショッピングのヒント", lang)}</h3>
             </div>
             <div className="p-4 grid md:grid-cols-2 gap-4">
               {DUTY_FREE_SHOPPING.map((item, idx) => (
@@ -257,9 +254,9 @@ export function DepartureGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                     <span className="text-2xl">{item.icon}</span>
                     <h4 className="font-medium">{jaText(item.category, lang)}</h4>
                   </div>
-                  <p className="text-sm text-foreground">{lang === "ja" ? jaText(item.tipCn, lang) : item.tip}</p>
+                  <p className="text-sm text-foreground">{localized(item.tip, item.tipCn, lang)}</p>
                   <p className="text-sm text-muted-foreground mt-1">{jaText(item.tipCn, lang)}</p>
-                  <p className="text-sm text-muted-foreground mt-2 italic">{lang === "ja" ? jaText(item.noteCn, lang) : item.note}</p>
+                  <p className="text-sm text-muted-foreground mt-2 italic">{localized(item.note, item.noteCn, lang)}</p>
                   <p className="text-xs text-muted-foreground italic">{jaText(item.noteCn, lang)}</p>
                 </div>
               ))}

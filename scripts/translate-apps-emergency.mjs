@@ -3,6 +3,7 @@
 import fs from "node:fs";
 import { getTranslateProvider } from "./lib/translate-provider.mjs";
 import { isTranslated } from "./lib/translation-keys.mjs";
+import { acceptTranslation } from "./lib/translation-accept.mjs";
 import { APP_CATEGORIES, APP_RECOMMENDATIONS } from "../src/data/apps/app-recommendations.ts";
 import { NATIONAL_EMERGENCY_NUMBERS } from "../src/data/emergency/global-contacts.ts";
 
@@ -94,7 +95,7 @@ ${lines}`;
     try {
       const content = await callChat(prompt);
       const result = extractJson(content);
-      const ok = Object.keys(result).length === batch.length && batch.every(([, text], i) => typeof result[`k${i}`] === "string" && isTranslated(result[`k${i}`], lang, text));
+      const ok = Object.keys(result).length === batch.length && batch.every(([, text], i) => typeof result[`k${i}`] === "string" && acceptTranslation(result[`k${i}`], lang, text));
       if (!ok) throw new Error("Incomplete translation response");
       return batch.map((_, i) => result[`k${i}`]);
     } catch (error) {
@@ -104,8 +105,13 @@ ${lines}`;
   }
   const out = [];
   for (let i = 0; i < batch.length; i += 1) {
-    const [one] = await translateBatch([batch[i]]);
-    out.push(one);
+    const one = batch[i];
+    try {
+      const [r] = await translateBatch([one]);
+      out.push(r);
+    } catch {
+      out.push(one);
+    }
   }
   return out;
 }

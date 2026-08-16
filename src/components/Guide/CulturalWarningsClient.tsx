@@ -2,7 +2,7 @@
 import { CULTURAL_WARNINGS, IMPORTANCE_STYLES } from "@/data/cultural-warnings";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
-import { jaText, guideText } from "./guide-i18n";
+import { jaText, guideText, localized } from "./guide-i18n";;
 
 export function CulturalWarningsClient({ lang = "en" }: { lang?: Language } = {}) { const t = translations[lang] || translations.en; const tg = (t.culturalWarnings || translations.en.culturalWarnings || {}) as Record<string, string>;
   const [activeCategory, setActiveCategory] = useState("all");
@@ -40,7 +40,7 @@ export function CulturalWarningsClient({ lang = "en" }: { lang?: Language } = {}
     <div className="space-y-6">
       {/* Importance Filter */}
       <div className="flex flex-wrap gap-2">
-        <span className="text-sm font-medium mr-2 py-2">{lang === "ja" ? "重要度:" : "Importance:"}</span>
+        <span className="text-sm font-medium mr-2 py-2">{localized("Importance:", "重要度:", lang)}</span>
         {[
           { id: "all", label: "All", labelJa: "すべて" },
           { id: "critical", label: "Critical", labelJa: "重大", style: IMPORTANCE_STYLES.critical },
@@ -59,7 +59,7 @@ export function CulturalWarningsClient({ lang = "en" }: { lang?: Language } = {}
             }`}
           >
             {imp.id !== "all" && <span className="mr-1">{imp.style.icon}</span>}
-            {lang === "ja" ? imp.labelJa : imp.label}
+            {localized(imp.label, imp.labelJa, lang)}
           </button>
         ))}
       </div>
@@ -77,7 +77,7 @@ export function CulturalWarningsClient({ lang = "en" }: { lang?: Language } = {}
             }`}
           >
             <span>{cat.icon}</span>
-            <span>{lang === "ja" ? cat.labelJa : cat.label}</span>
+            <span>{localized(cat.label, cat.labelJa, lang)}</span>
           </button>
         ))}
       </div>
@@ -87,7 +87,7 @@ export function CulturalWarningsClient({ lang = "en" }: { lang?: Language } = {}
         {Object.entries(groupedWarnings).map(([category, warnings]) => (
           <div key={category} className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h2 className="font-semibold text-lg">{lang === "ja" ? (categories.find((x) => x.id === category)?.labelJa || category) : category}</h2>
+              <h2 className="font-semibold text-lg">{localized(category, categories.find((x) => x.id === category)?.labelJa || category, lang)}</h2>
             </div>
             <div className="divide-y">
               {warnings.map((warning) => {
@@ -109,21 +109,19 @@ export function CulturalWarningsClient({ lang = "en" }: { lang?: Language } = {}
                       <span className="text-3xl">{warning.icon}</span>
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-1">
-                          <h3 className="font-semibold text-lg">{lang === "ja" ? jaText(warning.titleCn, lang) : warning.title}</h3>
+                          <h3 className="font-semibold text-lg">{localized(warning.title, warning.titleCn, lang)}</h3>
                           <span
                             className={`px-2 py-0.5 rounded text-xs font-medium ${style.bg} ${style.text}`}
                           >
-                            {lang === "ja" ? (style.labelCn === "重要" ? "重大" : style.labelCn === "注意" ? "警告" : "メモ") : style.label}
+                            {lang === "ja" ? (style.labelCn === "重要" ? "重大" : style.labelCn === "注意" ? "警告" : "メモ") : localized(style.label, style.labelCn, lang)}
                           </span>
                         </div>
-                        {lang !== "ja" && <p className="text-sm text-muted-foreground mb-2">{jaText(warning.titleCn, lang)}</p>}
-                        <p className="text-foreground">{lang === "ja" ? jaText(warning.descriptionCn, lang) : guideText(warning.description, lang)}</p>
-                        {lang !== "ja" && <p className="text-muted-foreground mt-1">{jaText(warning.descriptionCn, lang)}</p>}
+                        <p className="text-foreground">{localized(warning.description, warning.descriptionCn, lang)}</p>
                         {warning.region && (
                           <div className="mt-2 text-sm">
-                            <span className="font-medium">{lang === "ja" ? "地域: " : "Region: "}</span>
+                            <span className="font-medium">{localized("Region: ", "地域: ", lang)}</span>
                             <span className="text-muted-foreground">
-                              {lang === "ja" ? jaText(warning.regionCn, lang) : <>{warning.region} ({jaText(warning.regionCn, lang)})</>}
+                              {localized(warning.region, warning.regionCn, lang)}
                             </span>
                           </div>
                         )}
@@ -140,8 +138,8 @@ export function CulturalWarningsClient({ lang = "en" }: { lang?: Language } = {}
       {filteredWarnings.length === 0 && (
         <div className="text-center py-12 bg-card rounded-xl border">
           <span className="text-6xl mb-4 block">🔍</span>
-          <h3 className="text-xl font-semibold mb-2">{lang === "ja" ? "警告は見つかりませんでした" : "No warnings found"}</h3>
-          <p className="text-muted-foreground">{lang === "ja" ? "フィルターを調整してください" : "Try adjusting your filters"}</p>
+          <h3 className="text-xl font-semibold mb-2">{localized("No warnings found", "警告は見つかりませんでした", lang)}</h3>
+          <p className="text-muted-foreground">{localized("Try adjusting your filters", "フィルターを調整してください", lang)}</p>
         </div>
       )}
     </div>

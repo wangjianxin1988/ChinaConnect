@@ -1,7 +1,7 @@
 import { PRICE_DATA, TIPS } from "@/data/price-transparency";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
-import { jaText, Bi, guideText } from "./guide-i18n";
+import { jaText, Bi, guideText, localized } from "./guide-i18n";;
 
 export function PriceTransparencyClient({ lang = "en" }: { lang?: Language } = {}) { const t = translations[lang] || translations.en; const tg = (t.priceTransparency || translations.en.priceTransparency || {}) as Record<string, string>;
   const [activeCategory, setActiveCategory] = useState("all");
@@ -9,7 +9,7 @@ export function PriceTransparencyClient({ lang = "en" }: { lang?: Language } = {
 
   const categories = [
     { id: "all", label: tg.all || "All", icon: "📊" },
-    ...PRICE_DATA.map((c) => ({ id: c.category, label: lang === "ja" ? c.categoryCn : c.category, icon: c.icon })),
+    ...PRICE_DATA.map((c) => ({ id: c.category, label: localized(c.category, c.categoryCn, lang), icon: c.icon })),
   ];
 
   const filteredData =
@@ -20,15 +20,14 @@ export function PriceTransparencyClient({ lang = "en" }: { lang?: Language } = {
       {/* Tips Section */}
       <div className="bg-gradient-to-r from-green-50 to-green-100 border border-green-200 rounded-xl p-6">
         <h2 className="text-xl font-bold flex items-center gap-2 mb-4">
-{lang === "ja" ? <>💡 クイックヒント</> : <><span>💡</span> Quick Tips</>}
+{<>💡 {localized("Quick Tips", "クイックヒント", lang)}</>}
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
           {TIPS.map((tip, idx) => (
             <div key={idx} className="bg-white/80 rounded-lg p-4">
               <div className="text-2xl mb-2">{tip.icon}</div>
-              <h3 className="font-semibold">{lang === "ja" ? jaText(tip.titleCn, lang) : tip.title}</h3>
-              {lang !== "ja" && <p className="text-xs text-muted-foreground">{jaText(tip.titleCn, lang)}</p>}
-              <p className="text-sm mt-2 text-foreground/80">{lang === "ja" ? jaText(tip.contentCn, lang) : tip.content}</p>
+              <h3 className="font-semibold">{localized(tip.title, tip.titleCn, lang)}</h3>
+              <p className="text-sm mt-2 text-foreground/80">{localized(tip.content, tip.contentCn, lang)}</p>
             </div>
           ))}
         </div>
@@ -36,14 +35,14 @@ export function PriceTransparencyClient({ lang = "en" }: { lang?: Language } = {
 
       {/* Toggle */}
       <div className="flex items-center justify-between bg-card p-4 rounded-lg border">
-{<span className="text-sm font-medium">{lang === "ja" ? "価格比較表示:" : "Price comparison view:"}</span>}
+{<span className="text-sm font-medium">{localized("Price comparison view:", "価格比較表示:", lang)}</span>}
         <button
           onClick={() => setShowBothPrices(!showBothPrices)}
           className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
             showBothPrices ? "bg-primary text-primary-foreground" : "bg-slate-100 text-slate-700"
           }`}
         >
-          {showBothPrices ? (lang === "ja" ? "比較表示" : "Show comparison") : (lang === "ja" ? "簡易表示" : "Show simplified")}
+          {showBothPrices ? (localized("Show comparison", "比較表示", lang)) : (localized("Show simplified", "簡易表示", lang))}
         </button>
       </div>
 
@@ -72,8 +71,7 @@ export function PriceTransparencyClient({ lang = "en" }: { lang?: Language } = {
             <div className="bg-slate-50 px-6 py-4 border-b flex items-center gap-3">
               <span className="text-2xl">{category.icon}</span>
               <div>
-                <h2 className="font-semibold text-lg">{lang === "ja" ? jaText(category.categoryCn, lang) : guideText(category.category, lang)}</h2>
-                {lang !== "ja" && <p className="text-sm text-muted-foreground">{jaText(category.categoryCn, lang)}</p>}
+                <h2 className="font-semibold text-lg">{localized(category.category, category.categoryCn, lang)}</h2>
               </div>
             </div>
 
@@ -98,8 +96,7 @@ export function PriceTransparencyClient({ lang = "en" }: { lang?: Language } = {
                   {category.items.map((item, idx) => (
                     <tr key={idx} className="hover:bg-slate-50 transition-colors">
                       <td className="px-6 py-4">
-                        <div className="font-medium">{lang === "ja" ? jaText(item.nameCn, lang) : guideText(item.name, lang)}</div>
-                        {lang !== "ja" && <div className="text-sm text-muted-foreground">{jaText(item.nameCn, lang)}</div>}
+                        <div className="font-medium">{localized(item.name, item.nameCn, lang)}</div>
                       </td>
                       {showBothPrices && (
                         <>
@@ -119,12 +116,10 @@ export function PriceTransparencyClient({ lang = "en" }: { lang?: Language } = {
                         </td>
                       )}
                       <td className="px-6 py-4">
-                        <div className="text-sm">{lang === "ja" ? jaText(item.noteCn, lang) : item.note}</div>
-                        {lang !== "ja" && <div className="text-xs text-muted-foreground">{jaText(item.noteCn, lang)}</div>}
+                        <div className="text-sm">{localized(item.note, item.noteCn, lang)}</div>
                         {item.warning && (
                           <div className="mt-2 px-2 py-1 bg-amber-50 border border-amber-200 rounded text-xs text-amber-800">
-                            ⚠️ {lang === "ja" ? jaText(item.warningCn, lang) : item.warning}
-                            {lang !== "ja" && (<><br /><span className="text-amber-600">{jaText(item.warningCn, lang)}</span></>)}
+                            ⚠️ {localized(item.warning, item.warningCn, lang)}
                           </div>
                         )}
                       </td>
@@ -142,61 +137,61 @@ export function PriceTransparencyClient({ lang = "en" }: { lang?: Language } = {
         <div className="bg-blue-50 px-6 py-4 border-b flex items-center gap-3">
           <span className="text-2xl">🚕</span>
           <div>
-            <h2 className="font-semibold text-lg">{lang === "ja" ? "タクシーメーターの解説" : "Taxi Meter Tutorial"}</h2>
+            <h2 className="font-semibold text-lg">{localized("Taxi Meter Tutorial", "タクシーメーターの解説", lang)}</h2>
           </div>
         </div>
         <div className="p-6">
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <h3 className="font-semibold mb-3">{lang === "ja" ? "タクシーメーターの仕組み" : "How Taxi Meters Work"}</h3>
+              <h3 className="font-semibold mb-3">{localized("How Taxi Meters Work", "タクシーメーターの仕組み", lang)}</h3>
               <div className="space-y-3 text-sm">
                 <div className="flex items-start gap-2">
                   <span className="text-primary font-bold">1.</span>
                   <div>
-                    <p className="font-medium">{lang === "ja" ? "初乗り料金" : "Base Fare"}</p>
-                    <p className="text-muted-foreground">{lang === "ja" ? "最初の3kmで通常¥10〜14" : "Usually ¥10-14 for first 3km"}</p>
+                    <p className="font-medium">{localized("Base Fare", "初乗り料金", lang)}</p>
+                    <p className="text-muted-foreground">{localized("Usually ¥10-14 for first 3km", "最初の3kmで通常¥10〜14", lang)}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
                   <span className="text-primary font-bold">2.</span>
                   <div>
-                    <p className="font-medium">{lang === "ja" ? "距離料金" : "Distance Rate"}</p>
-                    <p className="text-muted-foreground">{lang === "ja" ? "基本料金超過後、1kmあたり¥2〜3" : "¥2-3 per km after base"}</p>
+                    <p className="font-medium">{localized("Distance Rate", "距離料金", lang)}</p>
+                    <p className="text-muted-foreground">{localized("¥2-3 per km after base", "基本料金超過後、1kmあたり¥2〜3", lang)}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
                   <span className="text-primary font-bold">3.</span>
                   <div>
-                    <p className="font-medium">{lang === "ja" ? "待機料金" : "Waiting Rate"}</p>
-                    <p className="text-muted-foreground">{lang === "ja" ? "待機5分ごとに¥2〜3" : "¥2-3 per 5 minutes of waiting"}</p>
+                    <p className="font-medium">{localized("Waiting Rate", "待機料金", lang)}</p>
+                    <p className="text-muted-foreground">{localized("¥2-3 per 5 minutes of waiting", "待機5分ごとに¥2〜3", lang)}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
                   <span className="text-primary font-bold">4.</span>
                   <div>
-                    <p className="font-medium">{lang === "ja" ? "深夜料金" : "Night Rate"}</p>
-                    <p className="text-muted-foreground">{lang === "ja" ? "23時〜6時：10〜20%割増" : "11PM-6AM: 10-20% higher"}</p>
+                    <p className="font-medium">{localized("Night Rate", "深夜料金", lang)}</p>
+                    <p className="text-muted-foreground">{localized("11PM-6AM: 10-20% higher", "23時〜6時：10〜20%割増", lang)}</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="bg-slate-100 rounded-lg p-4">
-              <h3 className="font-semibold mb-3">{lang === "ja" ? "料金例" : "Sample Fares"}</h3>
+              <h3 className="font-semibold mb-3">{localized("Sample Fares", "料金例", lang)}</h3>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
-                  <span>{lang === "ja" ? "3km（短距離）" : "3km (short trip)"}</span>
+                  <span>{localized("3km (short trip)", "3km（短距離）", lang)}</span>
                   <span className="font-semibold">¥10-15</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>{lang === "ja" ? "10km（市内）" : "10km (city)"}</span>
+                  <span>{localized("10km (city)", "10km（市内）", lang)}</span>
                   <span className="font-semibold">¥25-35</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>{lang === "ja" ? "25km（郊外）" : "25km (suburb)"}</span>
+                  <span>{localized("25km (suburb)", "25km（郊外）", lang)}</span>
                   <span className="font-semibold">¥60-80</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>{lang === "ja" ? "空港（50km）" : "Airport (50km)"}</span>
+                  <span>{localized("Airport (50km)", "空港（50km）", lang)}</span>
                   <span className="font-semibold">¥150-200</span>
                 </div>
               </div>

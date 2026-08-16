@@ -1,7 +1,7 @@
 import { ATM_LOCATIONS, PAYMENT_FAQS, PAYMENT_METHODS, SHOPPING_TIPS } from "@/data/guide/payment";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
-import { jaText, Bi, guideText } from "./guide-i18n";
+import { jaText, Bi, guideText, localized } from "./guide-i18n";;
 
 interface PaymentGuideClientProps {
   lang?: Language;
@@ -50,12 +50,12 @@ export function PaymentGuideClient({ lang = "en" }: PaymentGuideClientProps = {}
               <div className="bg-gradient-to-r from-blue-50 to-transparent p-4 border-b flex items-center gap-4">
                 <span className="text-4xl">{method.icon}</span>
                 <div className="flex-1">
-                  <h3 className="font-semibold text-lg">{lang === "ja" ? jaText(method.method, lang) : guideText(method.method, lang)}</h3>
+                  <h3 className="font-semibold text-lg">{localized(method.method, method.method, lang)}</h3>
                   <p className="text-sm text-muted-foreground">{jaText(method.descriptionCn, lang)}</p>
                 </div>
               </div>
               <div className="p-4 space-y-4">
-                {lang !== "ja" && <p className="text-sm text-foreground">{method.description}</p>}
+                {lang !== "ja" && <p className="text-sm text-foreground">{guideText(method.description, lang)}</p>}
 
                 {/* How to Setup */}
                 <div className="bg-slate-50 rounded-lg p-4">
@@ -103,7 +103,7 @@ export function PaymentGuideClient({ lang = "en" }: PaymentGuideClientProps = {}
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="bg-green-50 rounded-lg p-4">
                     <h4 className="font-medium mb-2 flex items-center gap-2">
-                      <span>✅</span> {lang === "ja" ? "メリット" : "Pros"}
+                      <span>✅</span> {localized("Pros", "メリット", lang)}
                     </h4>
                     <ul className="space-y-1">
                       {method.pros.map((pro, i) => (
@@ -116,7 +116,7 @@ export function PaymentGuideClient({ lang = "en" }: PaymentGuideClientProps = {}
                   </div>
                   <div className="bg-red-50 rounded-lg p-4">
                     <h4 className="font-medium mb-2 flex items-center gap-2">
-                      <span>⚠️</span> {lang === "ja" ? "デメリット" : "Cons"}
+                      <span>⚠️</span> {localized("Cons", "デメリット", lang)}
                     </h4>
                     <ul className="space-y-1">
                       {method.cons.map((con, i) => (
@@ -132,7 +132,7 @@ export function PaymentGuideClient({ lang = "en" }: PaymentGuideClientProps = {}
                 {/* Tips */}
                 <div className="bg-amber-50 rounded-lg p-4">
                   <h4 className="font-semibold mb-2 flex items-center gap-2">
-                    <span>💡</span> {lang === "ja" ? "プロのヒント" : "Pro Tips"}
+                    <span>💡</span> {localized("Pro Tips", "プロのヒント", lang)}
                   </h4>
                   <ul className="space-y-2">
                     {method.tips.map((tip, i) => (
@@ -154,7 +154,7 @@ export function PaymentGuideClient({ lang = "en" }: PaymentGuideClientProps = {}
               <div>
                 <h3 className="font-semibold">{tg.securityWarning || "Security Warning"}</h3>
                 <p className="text-sm text-muted-foreground mt-1">
-                  {lang === "ja" ? "支払いパスワード、認証コード、個人情報を他人と共有しないでください。銀行員や店員がパスワードを尋ねることは絶対にありません。不審な活動があればすぐに報告してください。" : "Never share your payment passwords, verification codes, or personal information with strangers. Bank staff and merchants will never ask for your passwords. Report suspicious activity immediately."}
+                  {localized("Never share your payment passwords, verification codes, or personal information with strangers. Bank staff and merchants will never ask for your passwords. Report suspicious activity immediately.", "支払いパスワード、認証コード、個人情報を他人と共有しないでください。銀行員や店員がパスワードを尋ねることは絶対にありません。不審な活動があればすぐに報告してください。", lang)}
                 </p>
               </div>
             </div>
@@ -177,7 +177,7 @@ export function PaymentGuideClient({ lang = "en" }: PaymentGuideClientProps = {}
                 {tip.warning && (
                   <div className="mt-3 p-2 bg-amber-50 rounded-lg">
                     <p className="text-sm">
-                      <span className="font-medium text-amber-700">{lang === "ja" ? "警告：" : "Warning:"}</span> {jaText(tip.warning, lang)}
+                      <span className="font-medium text-amber-700">{localized("Warning:", "警告：", lang)}</span> {jaText(tip.warning, lang)}
                     </p>
                     <p className="text-sm text-muted-foreground">{jaText(tip.warningCn, lang)}</p>
                   </div>
@@ -189,7 +189,7 @@ export function PaymentGuideClient({ lang = "en" }: PaymentGuideClientProps = {}
           {/* Tax Refund Info */}
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
             <h3 className="font-semibold flex items-center gap-2">
-              <span>💰</span> {lang === "ja" ? "VAT税還付（付加価値税還付）" : "VAT Tax Refund"}
+              <span>💰</span> {localized("VAT Tax Refund", "VAT税還付（付加価値税還付）", lang)}
             </h3>
             <ul className="mt-2 space-y-2 text-sm">
               <li className="flex items-start gap-2">
@@ -220,7 +220,7 @@ export function PaymentGuideClient({ lang = "en" }: PaymentGuideClientProps = {}
             <div className="bg-slate-50 px-6 py-4 border-b">
               <h2 className="font-semibold text-xl">{tg.atmHeading || "Best ATMs for International Cards"}</h2>
               <p className="text-sm text-muted-foreground">
-                {lang === "ja" ? "サービスが良い銀行ATMを探しましょう" : "Look for these bank ATMs for best service"}
+                {localized("Look for these bank ATMs for best service", "サービスが良い銀行ATMを探しましょう", lang)}
               </p>
             </div>
             <div className="divide-y">

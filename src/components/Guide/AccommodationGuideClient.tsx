@@ -7,7 +7,7 @@ import {
 } from "@/data/guide/accommodation";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
-import { jaText, guideText } from "./guide-i18n";
+import { jaText, guideText, localized } from "./guide-i18n";;
 
 export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = {}) { const t = translations[lang] || translations.en; const tg = (t.accommodationGuide || translations.en.accommodationGuide || {}) as Record<string, string>;
   const [activeTab, setActiveTab] = useState("types");
@@ -49,18 +49,18 @@ export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = 
                 <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-4 border-b flex items-center gap-4">
                   <span className="text-4xl">{hotel.icon}</span>
                   <div className="flex-1">
-                    <h3 className="font-semibold text-lg">{lang === "ja" ? jaText(hotel.type, lang) : hotel.type}</h3>
+                    <h3 className="font-semibold text-lg">{localized(hotel.type, hotel.type, lang)}</h3>
                     <p className="text-primary font-medium">{guideText(hotel.priceRange, lang)}</p>
                     <p className="text-xs text-muted-foreground">{jaText(hotel.priceRangeCn, lang)}</p>
                   </div>
                 </div>
                 <div className="p-4 space-y-4">
-                  {lang !== "ja" && <p className="text-sm text-foreground">{hotel.description}</p>}
+                  {lang !== "ja" && <p className="text-sm text-foreground">{guideText(hotel.description, lang)}</p>}
                   <p className="text-sm text-muted-foreground">{jaText(hotel.descriptionCn, lang)}</p>
 
                   {/* Features */}
                   <div className="bg-slate-50 rounded-lg p-3">
-                    <h4 className="font-medium text-sm mb-2">{lang === "ja" ? "設備：" : "Features:"}</h4>
+                    <h4 className="font-medium text-sm mb-2">{localized("Features:", "設備：", lang)}</h4>
                     <div className="flex flex-wrap gap-1">
                       {hotel.features.map((f, i) => (
                         <span key={i} className="text-xs bg-white px-2 py-1 rounded border">
@@ -79,7 +79,7 @@ export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = 
 
                   {/* Recommended For */}
                   <div className="bg-green-50 rounded-lg p-3">
-                    <h4 className="font-medium text-sm mb-2">{lang === "ja" ? "こんな人におすすめ：" : "Best For:"}</h4>
+                    <h4 className="font-medium text-sm mb-2">{localized("Best For:", "こんな人におすすめ：", lang)}</h4>
                     <div className="flex flex-wrap gap-1">
                       {hotel.recommendedFor.map((r, i) => (
                         <span
@@ -99,31 +99,31 @@ export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = 
           {/* Booking Platforms */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h3 className="font-semibold text-lg">{lang === "ja" ? "おすすめの予約プラットフォーム" : "Recommended Booking Platforms"}</h3>
+              <h3 className="font-semibold text-lg">{localized("Recommended Booking Platforms", "おすすめの予約プラットフォーム", lang)}</h3>
             </div>
             <div className="divide-y">
               <div className="p-4">
                 <h4 className="font-medium">Trip.com (Ctrip International)</h4>
                 <p className="text-sm text-muted-foreground">
-                  {lang === "ja" ? "英語インターフェースが最良、信頼できるカスタマーサービス、豊富な選択肢" : "Best English interface, reliable customer service, wide selection"}
+                  {localized("Best English interface, reliable customer service, wide selection", "英語インターフェースが最良、信頼できるカスタマーサービス、豊富な選択肢", lang)}
                 </p>
               </div>
               <div className="p-4">
                 <h4 className="font-medium">Booking.com</h4>
                 <p className="text-sm text-muted-foreground">
-                  {lang === "ja" ? "国際的なサポートが充実、価格保証も充実" : "Good international support, often has best price guarantees"}
+                  {localized("Good international support, often has best price guarantees", "国際的なサポートが充実、価格保証も充実", lang)}
                 </p>
               </div>
               <div className="p-4">
                 <h4 className="font-medium">Hotels.com</h4>
                 <p className="text-sm text-muted-foreground">
-                  {lang === "ja" ? "頻繁に旅行する人に嬉しいリワードプログラム" : "Rewards program good for frequent travelers"}
+                  {localized("Rewards program good for frequent travelers", "頻繁に旅行する人に嬉しいリワードプログラム", lang)}
                 </p>
               </div>
               <div className="p-4">
                 <h4 className="font-medium">Agoda</h4>
                 <p className="text-sm text-muted-foreground">
-                  {lang === "ja" ? "アジアの目的地で最安値が多い" : "Often has lowest prices for Asian destinations"}
+                  {localized("Often has lowest prices for Asian destinations", "アジアの目的地で最安値が多い", lang)}
                 </p>
               </div>
             </div>
@@ -141,7 +141,7 @@ export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = 
                   <span className="text-2xl">{tip.icon}</span>
                   <h3 className="font-semibold">{tip.category}</h3>
                 </div>
-                {lang !== "ja" && <p className="text-sm text-foreground">{tip.tip}</p>}
+                {lang !== "ja" && <p className="text-sm text-foreground">{guideText(tip.tip, lang)}</p>}
                 <p className="text-sm text-muted-foreground mt-2">{jaText(tip.tipCn, lang)}</p>
                 {tip.warning && (
                   <div className="mt-3 p-2 bg-amber-50 rounded-lg">
@@ -182,13 +182,11 @@ export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = 
                   {step.step}
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg">{lang === "ja" ? jaText(step.titleCn, lang) : step.title}</h3>
-                  {lang !== "ja" && <p className="text-sm text-muted-foreground">{jaText(step.titleCn, lang)}</p>}
+                  <h3 className="font-semibold text-lg">{localized(step.title, step.titleCn, lang)}</h3>
                 </div>
               </div>
               <div className="p-4">
-                <p className="text-foreground mb-4">{lang === "ja" ? jaText(step.descriptionCn, lang) : step.description}</p>
-                {lang !== "ja" && <p className="text-sm text-muted-foreground mb-4">{jaText(step.descriptionCn, lang)}</p>}
+                <p className="text-foreground mb-4">{localized(step.description, step.descriptionCn, lang)}</p>
                 <div className="bg-slate-50 rounded-lg p-4">
                   <h4 className="font-medium mb-2">Details:</h4>
                   <ul className="space-y-2">

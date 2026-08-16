@@ -9,7 +9,7 @@ import {
 } from "@/data/guide/transport";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
-import { jaText, guideText } from "./guide-i18n";
+import { jaText, guideText, localized } from "./guide-i18n";;
 
 interface TransportGuideClientProps {
   lang?: Language;
@@ -65,14 +65,12 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                   {step.step}
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg">{lang === "ja" ? jaText(step.titleCn, lang) : step.title}</h3>
-                  {lang !== "ja" && <p className="text-sm text-muted-foreground">{jaText(step.titleCn, lang)}</p>}
+                  <h3 className="font-semibold text-lg">{localized(step.title, step.titleCn, lang)}</h3>
                 </div>
                 <span className="text-3xl ml-auto">{step.icon}</span>
               </div>
               <div className="p-4">
-                <p className="text-foreground mb-4">{lang === "ja" ? jaText(step.descriptionCn, lang) : step.description}</p>
-                {lang !== "ja" && <p className="text-sm text-muted-foreground mb-4">{jaText(step.descriptionCn, lang)}</p>}
+                <p className="text-foreground mb-4">{localized(step.description, step.descriptionCn, lang)}</p>
                 <div className="grid md:grid-cols-2 gap-4">
                   {lang !== "ja" && (
                   <div className="bg-slate-50 rounded-lg p-4">
@@ -91,7 +89,7 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                   )}
                   <div className="bg-slate-50 rounded-lg p-4">
                     <h4 className="font-medium mb-2 flex items-center gap-2">
-                      <span>📋</span> {lang === "ja" ? "手順" : "Steps"}
+                      <span>📋</span> {localized("Steps", "手順", lang)}
                     </h4>
                     <ul className="space-y-2">
                       {step.detailsCn.map((detail, i) => (
@@ -109,7 +107,7 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
           {/* Quick Reference */}
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
             <h3 className="font-semibold flex items-center gap-2">
-              <span>💡</span> {lang === "ja" ? "プロのヒント" : "Pro Tips"}
+              <span>💡</span> {localized("Pro Tips", "プロのヒント", lang)}
             </h3>
             <ul className="mt-2 space-y-2 text-sm">
               <li className="flex items-start gap-2">
@@ -176,7 +174,7 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                     {/* How to Use */}
                     <div className="bg-slate-50 rounded-lg p-4">
                       <h3 className="font-semibold mb-3 flex items-center gap-2">
-                        <span>📖</span> {lang === "ja" ? "使い方" : "How to Use"}
+                        <span>📖</span> {localized("How to Use", "使い方", lang)}
                       </h3>
                       <ol className="space-y-2">
                         {currentMode.howToUse.map((step, i) => (
@@ -198,7 +196,7 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                     {/* Tips */}
                     <div className="bg-green-50 rounded-lg p-4">
                       <h3 className="font-semibold mb-3 flex items-center gap-2">
-                        <span>💡</span> {lang === "ja" ? "プロのヒント" : "Pro Tips"}
+                        <span>💡</span> {localized("Pro Tips", "プロのヒント", lang)}
                       </h3>
                       <ul className="space-y-2">
                         {currentMode.tips.map((tip, i) => (
@@ -223,7 +221,7 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                   <span className="text-6xl mb-4 block">🚇</span>
                   <h3 className="text-xl font-semibold mb-2">{tg.selectMode || "Select a Transport Mode"}</h3>
                   <p className="text-muted-foreground">
-                    {lang === "ja" ? "交通手段をクリックすると詳細ガイドが表示されます" : "Click on a transport option to see detailed guide"}
+                    {localized("Click on a transport option to see detailed guide", "交通手段をクリックすると詳細ガイドが表示されます", lang)}
                   </p>
                 </div>
               )}
@@ -286,19 +284,19 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
               <div className="p-4">
                 <h4 className="font-medium">12306</h4>
                 <p className="text-sm text-muted-foreground">
-                  {lang === "ja" ? "公式の列車予約（英語版あり）" : "Official train booking (English version available)"}
+                  {localized("Official train booking (English version available)", "公式の列車予約（英語版あり）", lang)}
                 </p>
               </div>
               <div className="p-4">
                 <h4 className="font-medium">{tg.tripCta || "Trip.com / Ctrip"}</h4>
                 <p className="text-sm text-muted-foreground">
-                  {lang === "ja" ? "英語インターフェースで全交通手段を予約可能" : "All transport types with English interface"}
+                  {localized("All transport types with English interface", "英語インターフェースで全交通手段を予約可能", lang)}
                 </p>
               </div>
               <div className="p-4">
                 <h4 className="font-medium">Didi</h4>
                 <p className="text-sm text-muted-foreground">
-                  {lang === "ja" ? "市内交通と空港送迎のライドシェア" : "Ride-hailing for local transport and airport trips"}
+                  {localized("Ride-hailing for local transport and airport trips", "市内交通と空港送迎のライドシェア", lang)}
                 </p>
               </div>
             </div>
@@ -328,19 +326,19 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
           {/* Important Numbers */}
           <div className="bg-red-50 border border-red-200 rounded-xl p-4">
             <h3 className="font-semibold flex items-center gap-2">
-              <span>🚨</span> {lang === "ja" ? "緊急時の交通連絡先" : "Emergency Transport Numbers"}
+              <span>🚨</span> {localized("Emergency Transport Numbers", "緊急時の交通連絡先", lang)}
             </h3>
             <ul className="mt-2 space-y-2 text-sm">
               <li className="flex items-center gap-2">
-                <span className="font-medium">{lang === "ja" ? "警察：" : "Police:"}</span>
+                <span className="font-medium">{localized("Police:", "警察：", lang)}</span>
                 <span>110</span>
               </li>
               <li className="flex items-center gap-2">
-                <span className="font-medium">{lang === "ja" ? "救急車：" : "Ambulance:"}</span>
+                <span className="font-medium">{localized("Ambulance:", "救急車：", lang)}</span>
                 <span>120</span>
               </li>
               <li className="flex items-center gap-2">
-                <span className="font-medium">{lang === "ja" ? "消防：" : "Fire:"}</span>
+                <span className="font-medium">{localized("Fire:", "消防：", lang)}</span>
                 <span>119</span>
               </li>
             </ul>

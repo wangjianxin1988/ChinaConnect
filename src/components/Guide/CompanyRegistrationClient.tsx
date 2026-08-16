@@ -4,7 +4,7 @@ import {
 } from "@/data/guide/business/company-registration";
 import { LastVerifiedStamp } from "./LastVerifiedStamp";
 import React, { useState } from "react";
-import { jaText, Bi, guideText } from "./guide-i18n";
+import { jaText, Bi, guideText, localized } from "./guide-i18n";;
 
 export function CompanyRegistrationClient({ lang = "en" }: { lang?: string }) {
   const [selectedType, setSelectedType] = useState<string>(COMPANY_REGISTRATION[0].type);
@@ -24,9 +24,9 @@ export function CompanyRegistrationClient({ lang = "en" }: { lang?: string }) {
         <div className="flex items-start gap-4">
           <span className="text-5xl">🏢</span>
           <div>
-            <h2 className="text-2xl font-bold mb-2">{lang === "ja" ? "会社登録ガイド" : "Company Registration Guide"}</h2>
+            <h2 className="text-2xl font-bold mb-2">{localized("Company Registration Guide", "会社登録ガイド", lang)}</h2>
             <p className="text-orange-100 max-w-2xl">
-              {lang === "ja" ? "外国人投資家として中国でビジネス法人を登録するためのステップバイステップガイド。ビジネスニーズに最適な会社形態を選択してください。" : "Step-by-step guide to registering a business entity in China as a foreign investor. Choose the structure that best fits your business needs."}
+              {localized("Step-by-step guide to registering a business entity in China as a foreign investor. Choose the structure that best fits your business needs.", "外国人投資家として中国でビジネス法人を登録するためのステップバイステップガイド。ビジネスニーズに最適な会社形態を選択してください。", lang)}
             </p>
             <LastVerifiedStamp dataKey="company-registration" lang={lang} />
           </div>
@@ -64,12 +64,12 @@ export function CompanyRegistrationClient({ lang = "en" }: { lang?: string }) {
                         : "📂"}
                   </span>
                   <div>
-                    <h3 className="font-bold text-lg">{lang === "ja" ? jaText(info.typeCn, lang) : info.type}</h3>
+                    <h3 className="font-bold text-lg">{localized(info.type, info.typeCn, lang)}</h3>
                     <p className="text-sm text-muted-foreground">{jaText(info.typeCn, lang)}</p>
                   </div>
                 </div>
                 <div className="text-right text-sm">
-                  <div className="text-muted-foreground">{lang === "ja" ? "期間" : "Timeline"}</div>
+                  <div className="text-muted-foreground">{localized("Timeline", "期間", lang)}</div>
                   <div className="font-semibold">
                     {jaText(timeline.min, lang)} – {jaText(timeline.max, lang)}
                   </div>
@@ -82,9 +82,9 @@ export function CompanyRegistrationClient({ lang = "en" }: { lang?: string }) {
 
       {/* Overview */}
       <div className="bg-card rounded-xl border p-6">
-        <h3 className="text-xl font-bold mb-2">{lang === "ja" ? jaText(currentInfo.typeCn, lang) : currentInfo.type}</h3>
+        <h3 className="text-xl font-bold mb-2">{localized(currentInfo.type, currentInfo.typeCn, lang)}</h3>
         <p className="text-muted-foreground mb-4">{jaText(currentInfo.typeCn, lang)}</p>
-        {lang !== "ja" && <p className="text-foreground">{currentInfo.summary}</p>}
+        {lang !== "ja" && <p className="text-foreground">{guideText(currentInfo.summary, lang)}</p>}
         <p className="text-muted-foreground mt-2">{jaText(currentInfo.summaryCn, lang)}</p>
       </div>
 
@@ -114,8 +114,7 @@ export function CompanyRegistrationClient({ lang = "en" }: { lang?: string }) {
                       className="w-full flex items-center justify-between p-4 text-left hover:bg-slate-50 transition-colors"
                     >
                       <div>
-                        <h4 className="font-semibold text-lg">{lang === "ja" ? jaText(step.titleCn, lang) : step.title}</h4>
-                        {lang !== "ja" && <p className="text-sm text-primary">{jaText(step.titleCn, lang)}</p>}
+                        <h4 className="font-semibold text-lg">{localized(step.title, step.titleCn, lang)}</h4>
                         <div className="flex flex-wrap items-center gap-3 mt-2 text-sm text-muted-foreground">
                           {lang !== "ja" && <span className="bg-slate-100 px-2 py-0.5 rounded">
                             ⏱ {step.duration}
@@ -125,7 +124,7 @@ export function CompanyRegistrationClient({ lang = "en" }: { lang?: string }) {
                           </span>
                           {step.cost && (
                             <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded">
-                              💰 {lang === "ja" ? jaText(step.cost, lang) : step.cost}
+                              💰 {localized(step.cost, step.cost, lang)}
                             </span>
                           )}
                         </div>
@@ -139,19 +138,19 @@ export function CompanyRegistrationClient({ lang = "en" }: { lang?: string }) {
                       <div className="border-t p-5 space-y-5">
                         {/* Description */}
                         <div>
-                          {lang !== "ja" && <p className="text-sm text-foreground">{step.description}</p>}
+                          {lang !== "ja" && <p className="text-sm text-foreground">{guideText(step.description, lang)}</p>}
                           <p className="text-sm text-muted-foreground mt-1">{jaText(step.descriptionCn, lang)}</p>
                         </div>
 
                         {/* Documents */}
                         <div>
                           <h5 className="font-semibold mb-2 text-sm">
-                            📄 {lang === "ja" ? "必要書類" : "Required Documents"}
+                            📄 {localized("Required Documents", "必要書類", lang)}
                           </h5>
                           <div className="grid md:grid-cols-2 gap-2">
                             {step.documents.map((doc, idx) => (
                               <div key={idx} className="bg-slate-50 rounded-lg p-3">
-                                {lang !== "ja" && <p className="text-sm font-medium">{doc.en}</p>}
+                                {lang !== "ja" && <p className="text-sm font-medium">{guideText(doc.en, lang)}</p>}
                                 <p className="text-xs text-muted-foreground">{jaText(doc.cn, lang)}</p>
                               </div>
                             ))}
@@ -160,7 +159,7 @@ export function CompanyRegistrationClient({ lang = "en" }: { lang?: string }) {
 
                         {/* Tips */}
                         <div>
-                          <h5 className="font-semibold mb-2 text-sm">💡 {lang === "ja" ? "プロのヒント" : "Pro Tips"}</h5>
+                          <h5 className="font-semibold mb-2 text-sm">💡 {localized("Pro Tips", "プロのヒント", lang)}</h5>
                           <ul className="space-y-1">
                             {lang !== "ja" && step.tips.map((tip, idx) => (
                               <li
@@ -203,7 +202,7 @@ export function CompanyRegistrationClient({ lang = "en" }: { lang?: string }) {
             <li key={idx} className="flex items-start gap-3 text-sm">
               <span className="text-amber-400 mt-0.5">◆</span>
               <div>
-                {lang !== "ja" && <p className="text-slate-200">{point.en}</p>}
+                {lang !== "ja" && <p className="text-slate-200">{guideText(point.en, lang)}</p>}
                 <p className="text-slate-400 text-xs mt-1">{jaText(point.cn, lang)}</p>
               </div>
             </li>
@@ -213,14 +212,9 @@ export function CompanyRegistrationClient({ lang = "en" }: { lang?: string }) {
 
       {/* Disclaimer */}
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-5">
-        <h4 className="font-semibold text-amber-900 mb-2">⚠️ {lang === "ja" ? "免責事項" : "Disclaimer"}</h4>
-        {lang !== "ja" && <p className="text-sm text-amber-800">
-          This guide is for informational purposes only. Registration requirements change frequently
-          and vary by city, industry, and nationality. Always consult a licensed Chinese corporate
-          service provider or lawyer before starting the registration process.
-        </p>}
-        <p className="text-xs text-amber-600 mt-2">
-          {lang === "ja" ? "本ガイドは参考情報です。登録要件は頻繁に変更され、都市・業種・国籍によって異なります。登録手続きを開始する前に、必ず中国の有資格企業サービスプロバイダーまたは弁護士にご相談ください。" : lang === "en" ? "This guide is for informational purposes only. Registration requirements change frequently and vary by city, industry, and nationality. Always consult a licensed Chinese corporate service provider or lawyer before starting the registration process." : jaText("本指南仅供参考。注册要求时常变化，因城市、行业和国籍而异。在开始注册流程前，请务必咨询持有执照的中国企业服务商或律师。", lang)}
+        <h4 className="font-semibold text-amber-900 mb-2">⚠️ {localized("Disclaimer", "免責事項", lang)}</h4>
+        <p className="text-sm text-amber-800">
+          {localized("This guide is for informational purposes only. Registration requirements change frequently and vary by city, industry, and nationality. Always consult a licensed Chinese corporate service provider or lawyer before starting the registration process.", "本指南仅供参考。注册要求时常变化，因城市、行业和国籍而异。在开始注册流程前，请务必咨询持有执照的中国企业服务商或律师。", lang)}
         </p>
       </div>
     </div>

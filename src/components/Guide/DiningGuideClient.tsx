@@ -10,7 +10,7 @@ import {
 } from "@/data/guide/dining";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
-import { jaText, Bi, guideText } from "./guide-i18n";
+import { jaText, Bi, guideText, localized } from "./guide-i18n";;
 
 interface DiningGuideClientProps {
   lang?: Language;
@@ -60,13 +60,13 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
                 <div className="bg-gradient-to-r from-orange-50 to-red-50 p-4 border-b flex items-center gap-4">
                   <span className="text-4xl">{cuisine.icon}</span>
                   <div className="flex-1">
-                    <h3 className="font-semibold text-lg">{lang === "ja" ? jaText(cuisine.cuisine, lang) : guideText(cuisine.cuisine, lang)}</h3>
+                    <h3 className="font-semibold text-lg">{localized(cuisine.cuisine, cuisine.cuisine, lang)}</h3>
                     <p className="text-sm text-muted-foreground">{jaText(cuisine.priceRangeCn, lang)}</p>
                   </div>
                 </div>
                 <div className="p-4 space-y-4">
-                  {lang !== "ja" && <p className="text-sm text-foreground">{cuisine.description}</p>}
-                  <p className="text-sm text-muted-foreground">{lang === "ja" ? jaText(cuisine.descriptionCn, lang) : jaText(cuisine.descriptionCn, lang)}</p>
+                  {lang !== "ja" && <p className="text-sm text-foreground">{guideText(cuisine.description, lang)}</p>}
+                  <p className="text-sm text-muted-foreground">{localized(cuisine.description, cuisine.descriptionCn, lang)}</p>
 
                   {/* Popular Dishes */}
                   <div className="bg-slate-50 rounded-lg p-3">

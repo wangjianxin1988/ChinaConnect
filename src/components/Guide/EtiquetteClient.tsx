@@ -2,7 +2,7 @@ import { ETIQUETTE_DATA } from "@/data/guide/business/etiquette";
 import { LastVerifiedStamp } from "./LastVerifiedStamp";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
-import { jaText, Bi } from "./guide-i18n";
+import { jaText, Bi, localized } from "./guide-i18n";;
 
 export function EtiquetteClient({ lang = "en" }: { lang?: Language } = {}) { const t = translations[lang] || translations.en; const tg = (t.etiquette || translations.en.etiquette || {}) as Record<string, string>;
   const [selectedCategory, setSelectedCategory] = useState<string>(ETIQUETTE_DATA[0].id);
@@ -22,9 +22,9 @@ export function EtiquetteClient({ lang = "en" }: { lang?: Language } = {}) { con
         <div className="flex items-start gap-4">
           <span className="text-5xl">🎯</span>
           <div>
-            <h2 className="text-2xl font-bold mb-2">{lang === "ja" ? "中国ビジネスマナーの基本" : "Business Etiquette Essentials"}</h2>
+            <h2 className="text-2xl font-bold mb-2">{localized("Business Etiquette Essentials", "中国ビジネスマナーの基本", lang)}</h2>
             <p className="text-emerald-100 max-w-2xl">
-              {lang === "ja" ? "中国のビジネス文化における暗黙のルールをマスターしましょう。第一印象が重要です — これらの規範を知っていれば、信頼を得て長期的な関係を築くことができます。" : "Master the unwritten rules of Chinese business culture. First impressions matter — knowing these norms will help you earn respect and build lasting relationships."}
+              {localized("Master the unwritten rules of Chinese business culture. First impressions matter — knowing these norms will help you earn respect and build lasting relationships.", "中国のビジネス文化における暗黙のルールをマスターしましょう。第一印象が重要です — これらの規範を知っていれば、信頼を得て長期的な関係を築くことができます。", lang)}
             </p>
             <LastVerifiedStamp dataKey="etiquette" lang={lang} />
           </div>
@@ -48,8 +48,7 @@ export function EtiquetteClient({ lang = "en" }: { lang?: Language } = {}) { con
           >
             <span className="text-2xl">{cat.icon}</span>
             <div className="text-left">
-              <div className="font-semibold text-sm">{lang === "ja" ? jaText(cat.titleCn, lang) : cat.title}</div>
-              {lang !== "ja" && <div className="text-xs opacity-80">{jaText(cat.titleCn, lang)}</div>}
+              <div className="font-semibold text-sm">{localized(cat.title, cat.titleCn, lang)}</div>
             </div>
           </button>
         ))}
@@ -60,12 +59,10 @@ export function EtiquetteClient({ lang = "en" }: { lang?: Language } = {}) { con
         <div className="flex items-center gap-3 mb-3">
           <span className="text-3xl">{currentCategory.icon}</span>
           <div>
-            <h3 className="text-xl font-bold">{lang === "ja" ? jaText(currentCategory.titleCn, lang) : currentCategory.title}</h3>
-            {lang !== "ja" && <p className="text-primary font-medium">{jaText(currentCategory.titleCn, lang)}</p>}
+            <h3 className="text-xl font-bold">{localized(currentCategory.title, currentCategory.titleCn, lang)}</h3>
           </div>
         </div>
-        <p className="text-foreground">{lang === "ja" ? jaText(currentCategory.summaryCn, lang) : currentCategory.summary}</p>
-        {lang !== "ja" && <p className="text-muted-foreground mt-2">{jaText(currentCategory.summaryCn, lang)}</p>}
+        <p className="text-foreground">{localized(currentCategory.summary, currentCategory.summaryCn, lang)}</p>
       </div>
 
       {/* Rules */}
@@ -78,8 +75,7 @@ export function EtiquetteClient({ lang = "en" }: { lang?: Language } = {}) { con
             >
               <span className="text-2xl shrink-0">{rule.icon}</span>
               <div className="flex-1">
-                <h4 className="font-semibold">{lang === "ja" ? jaText(rule.titleCn, lang) : rule.title}</h4>
-                {lang !== "ja" && <p className="text-sm text-primary">{jaText(rule.titleCn, lang)}</p>}
+                <h4 className="font-semibold">{localized(rule.title, rule.titleCn, lang)}</h4>
               </div>
               <span className="text-muted-foreground shrink-0">
                 {expandedRules[rule.id] ? "▲" : "▼"}
@@ -93,16 +89,14 @@ export function EtiquetteClient({ lang = "en" }: { lang?: Language } = {}) { con
                   <div className="p-5 bg-green-50 border-b md:border-b-0 md:border-r border-green-100">
                     <h5 className="font-semibold text-green-800 mb-3 flex items-center gap-2">
                       <span className="text-lg">✅</span><Bi en="Do" zh="正确做法" lang={lang} /></h5>
-                    <p className="text-sm text-green-900 mb-2">{lang === "ja" ? jaText(rule.correctCn, lang) : rule.correct}</p>
-                    {lang !== "ja" && <p className="text-sm text-green-700">{jaText(rule.correctCn, lang)}</p>}
+                    <p className="text-sm text-green-900 mb-2">{localized(rule.correct, rule.correctCn, lang)}</p>
                   </div>
 
                   {/* Incorrect */}
                   <div className="p-5 bg-red-50">
                     <h5 className="font-semibold text-red-800 mb-3 flex items-center gap-2">
                       <span className="text-lg">❌</span><Bi en="Avoid" zh="错误做法" lang={lang} /></h5>
-                    <p className="text-sm text-red-900 mb-2">{lang === "ja" ? jaText(rule.incorrectCn, lang) : rule.incorrect}</p>
-                    {lang !== "ja" && <p className="text-sm text-red-700">{jaText(rule.incorrectCn, lang)}</p>}
+                    <p className="text-sm text-red-900 mb-2">{localized(rule.incorrect, rule.incorrectCn, lang)}</p>
                   </div>
                 </div>
 
@@ -110,8 +104,7 @@ export function EtiquetteClient({ lang = "en" }: { lang?: Language } = {}) { con
                 <div className="p-5 bg-slate-50 border-t">
                   <h5 className="font-semibold mb-2 flex items-center gap-2">
                     <span>💡</span><Bi en="Why it matters" zh="为什么重要" lang={lang} /></h5>
-                  <p className="text-sm text-foreground">{lang === "ja" ? jaText(rule.reasonCn, lang) : rule.reason}</p>
-                  {lang !== "ja" && <p className="text-sm text-muted-foreground mt-1">{jaText(rule.reasonCn, lang)}</p>}
+                  <p className="text-sm text-foreground">{localized(rule.reason, rule.reasonCn, lang)}</p>
                 </div>
               </div>
             )}
@@ -125,20 +118,20 @@ export function EtiquetteClient({ lang = "en" }: { lang?: Language } = {}) { con
           <span>📌</span><Bi en="Quick Reference" zh="快速参考" lang={lang} /></h3>
         <div className="grid md:grid-cols-2 gap-4 text-sm">
           <div className="bg-white/10 rounded-lg p-3">
-            <div className="font-semibold mb-1">{lang === "ja" ? "🎴 名刺" : "🎴 Business Cards"}</div>
-            <p className="text-slate-300">{lang === "ja" ? "両手で渡し、受け取ります。カードはよく読みます。決して書き込まないでください。" : "Use both hands. Study the card. Never write on it."}</p>
+            <div className="font-semibold mb-1">{localized("🎴 Business Cards", "🎴 名刺", lang)}</div>
+            <p className="text-slate-300">{localized("Use both hands. Study the card. Never write on it.", "両手で渡し、受け取ります。カードはよく読みます。決して書き込まないでください。", lang)}</p>
           </div>
           <div className="bg-white/10 rounded-lg p-3">
-            <div className="font-semibold mb-1">{lang === "ja" ? "🥂 乾杯" : "🥂 Toasting"}</div>
-            <p className="text-slate-300">{lang === "ja" ? "目上の人よりグラスを低く持ち、相手の目を見て乾杯します。" : "Hold glass lower than seniors. Make eye contact."}</p>
+            <div className="font-semibold mb-1">{localized("🥂 Toasting", "🥂 乾杯", lang)}</div>
+            <p className="text-slate-300">{localized("Hold glass lower than seniors. Make eye contact.", "目上の人よりグラスを低く持ち、相手の目を見て乾杯します。", lang)}</p>
           </div>
           <div className="bg-white/10 rounded-lg p-3">
-            <div className="font-semibold mb-1">{lang === "ja" ? "⏰ 時間厳守" : "⏰ Punctuality"}</div>
-            <p className="text-slate-300">{lang === "ja" ? "5〜10分早めに到着します。遅刻は信用を損なうため、避けてください。" : "Arrive 5-10 min early. Being late damages reputation."}</p>
+            <div className="font-semibold mb-1">{localized("⏰ Punctuality", "⏰ 時間厳守", lang)}</div>
+            <p className="text-slate-300">{localized("Arrive 5-10 min early. Being late damages reputation.", "5〜10分早めに到着します。遅刻は信用を損なうため、避けてください。", lang)}</p>
           </div>
           <div className="bg-white/10 rounded-lg p-3">
-            <div className="font-semibold mb-1">{lang === "ja" ? "🎁 贈り物" : "🎁 Gifts"}</div>
-            <p className="text-slate-300">{lang === "ja" ? "両手で渡します。時計や「四」に関わる贈り物は避けましょう。" : "Present with both hands. Avoid clocks and fours."}</p>
+            <div className="font-semibold mb-1">{localized("🎁 Gifts", "🎁 贈り物", lang)}</div>
+            <p className="text-slate-300">{localized("Present with both hands. Avoid clocks and fours.", "両手で渡します。時計や「四」に関わる贈り物は避けましょう。", lang)}</p>
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@
 import fs from "node:fs";
 import { getTranslateProvider } from "./lib/translate-provider.mjs";
 import { isTranslated } from "./lib/translation-keys.mjs";
+import { acceptTranslation } from "./lib/translation-accept.mjs";
 
 const { apiKey: KEY, baseUrl: HOST, model: MODEL } = getTranslateProvider();
 const BATCH_SIZE = 15;
@@ -92,7 +93,7 @@ ${lines}`;
       const content = await callChat(prompt);
       const result = extractJson(content);
       const keys = Object.keys(result);
-      const ok = keys.length === batch.length && batch.every((s, i) => typeof result[`k${i}`] === "string" && isTranslated(result[`k${i}`], lang, s));
+      const ok = keys.length === batch.length && batch.every((s, i) => typeof result[`k${i}`] === "string" && acceptTranslation(result[`k${i}`], lang, s));
       if (!ok) throw new Error("Incomplete translation response");
       return batch.map((_, i) => result[`k${i}`]);
     } catch (error) {
@@ -100,11 +101,16 @@ ${lines}`;
     }
     await new Promise((resolve) => setTimeout(resolve, 1000 * attempt * attempt));
   }
-  // Fallback: single-key
+  // Fallback: single-key (bounded, no infinite recursion)
   const out = [];
   for (let i = 0; i < batch.length; i += 1) {
-    const [one] = await translateBatch([batch[i]]);
-    out.push(one);
+    const one = batch[i];
+    try {
+      const [r] = await translateBatch([one]);
+      out.push(r);
+    } catch {
+      out.push(one);
+    }
   }
   return out;
 }

@@ -7,7 +7,7 @@ import {
 } from "@/data/guide/emergency";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
-import { jaText, Bi, guideText } from "./guide-i18n";
+import { jaText, Bi, guideText, localized } from "./guide-i18n";;
 
 const SEVERITY_JA: Record<string, string> = { critical: "重大", high: "高", medium: "中", low: "低" };
 
@@ -106,7 +106,7 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                             : "bg-blue-100 text-blue-800"
                       }`}
                     >
-                      {lang === "ja" ? SEVERITY_JA[emergency.severity] || emergency.severity : emergency.severity}
+                      {lang === "ja" ? SEVERITY_JA[emergency.severity] || emergency.severity : localized(emergency.severity, emergency.severity, lang)}
                     </span>
                   </div>
                 </button>
@@ -139,13 +139,13 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                                 : "bg-blue-100 text-blue-800"
                           }`}
                         >
-                          {lang === "ja" ? (SEVERITY_JA[currentEmergency.severity] || currentEmergency.severity) + "（重大度）" : currentEmergency.severity + " severity"}
+                          {lang === "ja" ? (SEVERITY_JA[currentEmergency.severity] || currentEmergency.severity) + "（重大度）" : localized(currentEmergency.severity + " severity", currentEmergency.severity, lang)}
                         </span>
                       </div>
                     </div>
                   </div>
                   <div className="p-6 space-y-6">
-                    {lang !== "ja" && <p className="text-foreground">{currentEmergency.description}</p>}
+                    {lang !== "ja" && <p className="text-foreground">{guideText(currentEmergency.description, lang)}</p>}
 
                     {/* Immediate Actions */}
                     <div className="bg-red-50 rounded-lg p-4">
@@ -155,7 +155,6 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                         {currentEmergency.immediateActions.map((action, i) => (
                           <li key={i} className="flex items-start gap-2 text-sm">
                             <span className="text-red-500 font-bold">{i + 1}.</span>
-                            {lang !== "ja" && <span>{jaText(action, lang)}</span>}
                           </li>
                         ))}
                       </ol>
@@ -176,7 +175,6 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                         {currentEmergency.prevention.map((tip, i) => (
                           <li key={i} className="flex items-start gap-2 text-sm">
                             <span className="text-green-500">✓</span>
-                            {lang !== "ja" && <span>{jaText(tip, lang)}</span>}
                           </li>
                         ))}
                       </ul>
@@ -213,9 +211,9 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
               ) : (
                 <div className="bg-card rounded-xl border p-12 text-center">
                   <span className="text-6xl mb-4 block">🚨</span>
-                  <h3 className="text-xl font-semibold mb-2">{lang === "ja" ? "緊急事態の種類を選択" : "Select an Emergency Type"}</h3>
+                  <h3 className="text-xl font-semibold mb-2">{localized("Select an Emergency Type", "緊急事態の種類を選択", lang)}</h3>
                   <p className="text-muted-foreground">
-                    {lang === "ja" ? "緊急事態の種類をクリックすると詳細なガイダンスが表示されます" : "Click on an emergency type to see detailed guidance"}
+                    {localized("Click on an emergency type to see detailed guidance", "緊急事態の種類をクリックすると詳細なガイダンスが表示されます", lang)}
                   </p>
                 </div>
               )}
@@ -235,7 +233,7 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                 <div className="text-3xl font-bold text-primary my-3">{contact.number}</div>
                 <p className="text-sm text-muted-foreground">{jaText(contact.descriptionCn, lang)}</p>
                 <span className="inline-block mt-2 px-3 py-1 rounded bg-green-100 text-green-800 text-xs">
-                  {lang === "ja" ? jaText(contact.availabilityCn, lang) : <>{contact.availability} / {jaText(contact.availabilityCn, lang)}</>}
+                  {localized(contact.availability, contact.availabilityCn, lang)}
                 </span>
               </div>
             ))}
@@ -324,10 +322,10 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
           {/* Important Note */}
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
             <h3 className="font-semibold flex items-center gap-2">
-              <span>📝</span> {lang === "ja" ? "重要な注意" : "Important Note"}
+              <span>📝</span> {localized("Important Note", "重要な注意", lang)}
             </h3>
             <p className="text-sm text-muted-foreground mt-1">
-              {lang === "ja" ? "旅行前に大使館の緊急連絡先を保存しておきましょう。多くの大使館は在外国民向けの24時間緊急回線を設置しています。重大な緊急時（パスポート紛失、拘留、入院）はすぐに大使館へ連絡してください。" : "Save your embassy&apos;s emergency number before travel. Most embassies have 24/7 emergency lines for citizens abroad. In serious emergencies (lost passport, detention, hospitalization), contact your embassy immediately."}
+              {localized("Save your embassy&apos;s emergency number before travel. Most embassies have 24/7 emergency lines for citizens abroad. In serious emergencies (lost passport, detention, hospitalization), contact your embassy immediately.", "旅行前に大使館の緊急連絡先を保存しておきましょう。多くの大使館は在外国民向けの24時間緊急回線を設置しています。重大な緊急時（パスポート紛失、拘留、入院）はすぐに大使館へ連絡してください。", lang)}
             </p>
           </div>
         </div>
@@ -338,7 +336,7 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
         <div className="space-y-4">
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-red-50 px-6 py-4 border-b">
-              <h2 className="font-semibold text-xl">{lang === "ja" ? "緊急時に役立つフレーズ" : "Essential Emergency Phrases"}</h2>
+              <h2 className="font-semibold text-xl">{localized("Essential Emergency Phrases", "緊急時に役立つフレーズ", lang)}</h2>
             </div>
             <div className="divide-y">
               {EMERGENCY_HELPERS.essentialPhrases.map((phrase, idx) => (
@@ -353,7 +351,7 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
           {/* FAQ Section */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h3 className="font-semibold text-lg">{lang === "ja" ? "よくある質問" : "Frequently Asked Questions"}</h3>
+              <h3 className="font-semibold text-lg">{localized("Frequently Asked Questions", "よくある質問", lang)}</h3>
             </div>
             <div className="divide-y">
               {EMERGENCY_FAQS.map((faq, idx) => (
@@ -362,12 +360,12 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                     onClick={() => setExpandedFaq(expandedFaq === idx ? null : idx)}
                     className="w-full flex items-center justify-between p-4 hover:bg-slate-50 transition-colors"
                   >
-                    <span className="font-medium text-left pr-4">{lang === "ja" ? jaText(faq.question, lang) : faq.question}</span>
+                    <span className="font-medium text-left pr-4">{localized(faq.question, faq.question, lang)}</span>
                     <span className="text-muted-foreground">{expandedFaq === idx ? "▲" : "▼"}</span>
                   </button>
                   {expandedFaq === idx && (
                     <div className="px-4 pb-4">
-                      <p className="text-foreground">{lang === "ja" ? jaText(faq.answer, lang) : faq.answer}</p>
+                      <p className="text-foreground">{localized(faq.answer, faq.answer, lang)}</p>
                     </div>
                   )}
                 </div>
@@ -378,16 +376,16 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
           {/* Prevention Tips */}
           <div className="bg-green-50 border border-green-200 rounded-xl p-4">
             <h3 className="font-semibold flex items-center gap-2">
-              <span>🛡️</span> {lang === "ja" ? "一般的な予防のヒント" : "General Prevention Tips"}
+              <span>🛡️</span> {localized("General Prevention Tips", "一般的な予防のヒント", lang)}
             </h3>
             <ul className="mt-2 space-y-2 text-sm">
               <li className="flex items-start gap-2">
                 <span className="text-green-500">•</span>
-                <span>{lang === "ja" ? "重要な書類はすべてクラウドにデジタルコピーを保存" : "Keep digital copies of all important documents in cloud storage"}</span>
+                <span>{localized("Keep digital copies of all important documents in cloud storage", "重要な書類はすべてクラウドにデジタルコピーを保存", lang)}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-500">•</span>
-                <span>{lang === "ja" ? "旅行日程を家族や友人と共有" : "Share your travel itinerary with family/friends back home"}</span>
+                <span>{localized("Share your travel itinerary with family/friends back home", "旅行日程を家族や友人と共有", lang)}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-500">•</span>
