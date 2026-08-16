@@ -1,6 +1,12 @@
 import type { PresetContact } from "@/hooks/useEmergency";
 import React, { useState, useCallback } from "react";
 import { v4 as uuidv4 } from "uuid";
+import { EMERGENCY_L10N } from "@/data/emergency/emergency-l10n";
+import { useClientLang } from "./sos-strings";
+
+function pcT(lang: string, key: string): string {
+  return EMERGENCY_L10N[lang]?.[key] || key;
+}
 
 interface PresetContactsProps {
   contacts: PresetContact[];
@@ -28,6 +34,7 @@ export function PresetContacts({
   onCall,
   className = "",
 }: PresetContactsProps) {
+  const lang = useClientLang();
   const [showAddForm, setShowAddForm] = useState(false);
   const [newContact, setNewContact] = useState({
     name: "",
@@ -38,11 +45,11 @@ export function PresetContacts({
 
   const handleAdd = useCallback(() => {
     if (!newContact.name.trim()) {
-      setError("Please enter a name");
+      setError(pcT(lang, "Please enter a name"));
       return;
     }
     if (!newContact.phone.trim()) {
-      setError("Please enter a phone number");
+      setError(pcT(lang, "Please enter a phone number"));
       return;
     }
 
@@ -78,15 +85,15 @@ export function PresetContacts({
         <div className="flex items-center justify-between">
           <div>
             <h2 className="text-lg font-bold flex items-center gap-2">
-              <span>👥</span> Emergency Contacts
+              <span>👥</span> {pcT(lang, "Emergency Contacts")}
             </h2>
-            <p className="text-sm opacity-90 mt-1">Save your emergency contacts here</p>
+            <p className="text-sm opacity-90 mt-1">{pcT(lang, "Save your emergency contacts here")}</p>
           </div>
           <button
             onClick={() => setShowAddForm(!showAddForm)}
             className="bg-white/20 hover:bg-white/30 px-3 py-1 rounded-lg text-sm transition-colors"
           >
-            {showAddForm ? "Cancel" : "+ Add"}
+            {showAddForm ? pcT(lang, "Cancel") : pcT(lang, "+ Add")}
           </button>
         </div>
       </div>
@@ -96,27 +103,27 @@ export function PresetContacts({
         <div className="p-4 bg-slate-50 border-b">
           <div className="space-y-3">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+              <label className="block text-sm font-medium text-gray-700 mb-1">{pcT(lang, "Name")}</label>
               <input
                 type="text"
                 value={newContact.name}
                 onChange={(e) => setNewContact({ ...newContact, name: e.target.value })}
-                placeholder="Contact name"
+                placeholder={pcT(lang, "Contact name")}
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 outline-none"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+              <label className="block text-sm font-medium text-gray-700 mb-1">{pcT(lang, "Phone")}</label>
               <input
                 type="tel"
                 value={newContact.phone}
                 onChange={(e) => setNewContact({ ...newContact, phone: e.target.value })}
-                placeholder="Phone number"
+                placeholder={pcT(lang, "Phone number")}
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 outline-none"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Relationship</label>
+              <label className="block text-sm font-medium text-gray-700 mb-1">{pcT(lang, "Relationship")}</label>
               <select
                 value={newContact.relationship}
                 onChange={(e) => setNewContact({ ...newContact, relationship: e.target.value })}
@@ -124,7 +131,7 @@ export function PresetContacts({
               >
                 {RELATIONSHIPS.map((rel) => (
                   <option key={rel} value={rel}>
-                    {rel}
+                    {pcT(lang, rel)}
                   </option>
                 ))}
               </select>
@@ -134,7 +141,7 @@ export function PresetContacts({
               onClick={handleAdd}
               className="w-full bg-purple-600 hover:bg-purple-700 text-white py-2 rounded-lg font-medium transition-colors"
             >
-              Add Contact
+              {pcT(lang, "Add Contact")}
             </button>
           </div>
         </div>
@@ -145,8 +152,8 @@ export function PresetContacts({
         {contacts.length === 0 ? (
           <div className="p-8 text-center text-gray-500">
             <span className="text-4xl mb-2 block">👥</span>
-            <p>No emergency contacts saved</p>
-            <p className="text-sm mt-1">Tap "+ Add" to save important contacts</p>
+            <p>{pcT(lang, "No emergency contacts saved")}</p>
+            <p className="text-sm mt-1">{pcT(lang, 'Tap "+ Add" to save important contacts')}</p>
           </div>
         ) : (
           <div className="p-2 space-y-2">
@@ -163,25 +170,25 @@ export function PresetContacts({
                     <span className="font-medium truncate">{contact.name}</span>
                     {contact.isPrimary && (
                       <span className="px-2 py-0.5 bg-yellow-100 text-yellow-700 rounded text-xs">
-                        Primary
+                        {pcT(lang, "Primary")}
                       </span>
                     )}
                   </div>
-                  <div className="text-sm text-gray-500">{contact.relationship}</div>
+                  <div className="text-sm text-gray-500">{pcT(lang, contact.relationship)}</div>
                   <div className="text-sm text-gray-600 font-mono">{contact.phone}</div>
                 </div>
                 <div className="flex items-center gap-2">
                   <button
                     onClick={() => handleCall(contact.phone)}
                     className="w-10 h-10 rounded-full bg-green-100 hover:bg-green-200 text-green-600 flex items-center justify-center transition-colors"
-                    aria-label={`Call ${contact.name}`}
+                    aria-label={`${pcT(lang, "Call")} ${contact.name}`}
                   >
                     📞
                   </button>
                   <button
                     onClick={() => onRemove(contact.id)}
                     className="w-10 h-10 rounded-full bg-red-100 hover:bg-red-200 text-red-600 flex items-center justify-center transition-colors"
-                    aria-label={`Remove ${contact.name}`}
+                    aria-label={`${pcT(lang, "Remove")} ${contact.name}`}
                   >
                     ✕
                   </button>
@@ -195,7 +202,7 @@ export function PresetContacts({
       {/* Tip */}
       <div className="bg-amber-50 border-t border-amber-200 p-3 text-xs text-amber-800 flex items-center gap-2">
         <span>💡</span>
-        <span>Add your hotel or tour guide for quick access during emergencies.</span>
+        <span>{pcT(lang, "Add your hotel or tour guide for quick access during emergencies.")}</span>
       </div>
     </div>
   );

@@ -8,29 +8,29 @@
     "lat": 40.1421,
     "lng": 94.6618
   },
-  "timezone": "UTC+8 (China Standard Time)",
-  "description": "Dunhuang, a oasis city at the edge of the Taklamakan Desert, was the ancient gateway to the Silk Road. Home to the spectacular Mogao Caves (UNESCO), singing sand dunes of Mingsha Mountain, and the ancient Yumenguan Pass. A mystical blend of Buddhist art, desert adventures, and star-filled night skies.",
+  "timezone": "UTC+8 (زمان استاندارد چین)",
+  "description": "دون‌هوانگ، شهری واحه‌ای در لبهٔ صحرای تکلامکان، دروازهٔ باستانی جادهٔ ابریشم بود. این شهر میزبان غارهای باشکوه موگائو (میراث جهانی یونسکو)، تپه‌های شنی آوازخوان کوه مینگ‌شا، و گذرگاه باستانی یومن‌گوان است. ترکیبی عرفانی از هنر بودایی، ماجراجویی‌های بیابانی، و آسمان‌های پرستاره.",
   "coverImage": "/img/ext/4267a852dcbd.webp",
   "highlights": [
-    "Mogao Caves - 1,000-year Buddhist art treasury",
-    "Mingsha Mountain - Singing sand dunes",
-    "Yumenguan Pass - Ancient Silk Road fortress",
-    "Crescent Spring - Desert oasis",
-    "Yadan Landforms - Spectacular desert geology"
+    "غارهای موگائو - گنجینهٔ هنر بودایی با قدمت ۱۰۰۰ سال",
+    "کوه مینگشا - تپه‌های شنی آوازخوان",
+    "گذرگاه یومن‌گوان - دژ باستانی جاده ابریشم",
+    "چشمه هلال - واحه بیابانی",
+    "زمین‌نماهای یادان - زمین‌شناسی خیره‌کننده بیابان"
   ],
   "climate": {
-    "type": "Temperate desert",
+    "type": "بیابان معتدل",
     "bestMonths": [
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October"
+      "مه",
+      "ژوئن",
+      "جولای",
+      "اوت",
+      "سپتامبر",
+      "اکتبر"
     ],
     "avgSummerTemp": "25°C (77°F)",
     "avgWinterTemp": "-10°C (14°F)",
-    "tips": "Best visited May-Oct for comfortable weather. Summers can be hot but dry. Winters cold but caves are warmer. Avoid sandstorms in spring. Book Mogao Caves tickets early."
+    "tips": "بهترین زمان بازدید از مه تا اکتبر برای هوای مطبوع است. تابستان‌ها گرم اما خشک هستند. زمستان‌ها سرد اما غارها گرم‌ترند. در بهار از طوفان‌های شن پرهیز کنید. بلیط غارهای موگائو را زودتر رزرو کنید."
   },
   "restaurants": [
     {
@@ -170,7 +170,7 @@
         "lat": 40.1421,
         "lng": 94.6618
       },
-      "hours": "全天",
+      "hours": "تمام روز",
       "description": "نوشیدنی شیرین و ترش سنتی دانه‌هوانگ که از زردآلوی خشک تهیه می‌شود، طعمی تازه و منحصربه‌فرد دارد.",
       "dishHighlights": [
         "نوشیدنی زردآلو",
@@ -232,12 +232,12 @@
         "lat": 40.1421,
         "lng": 94.6618
       },
-      "hours": "全天",
+      "hours": "تمام روز",
       "description": "شیرینی سرخ‌شده سنتی دان‌هوانگ با مغز شیرین، بیرون ترد و داخل نرم.",
       "dishHighlights": [
-        "Fried pastry",
-        "Sweet filling",
-        "Crispy"
+        "شیرینی سرخشده",
+        "مایه شیرین",
+        "ترد و crispy"
       ],
       "tags": [
         "محلی",
@@ -255,7 +255,7 @@
       "name": "羊肉垫卷",
       "nameEn": "Lamb Rolls",
       "type": "محلی",
-      "cuisine": "Gansu Lamb",
+      "cuisine": "گوشت بره گانسو",
       "avgPrice": 70,
       "rating": 4.6,
       "address": "دان‌هوانگ",
@@ -266,9 +266,9 @@
       "hours": "10:00-22:00",
       "description": "گوشت بره لطیف با نان‌های رول‌شده، غذای مقوی گانسو، مناسب برای تقسیم کردن.",
       "dishHighlights": [
-        "Lamb stew",
+        "خورش گوشت بره",
         "نان تخت",
-        "Rich sauce"
+        "سس غلیظ و خوشطعم"
       ],
       "tags": [
         "محلی",
@@ -325,7 +325,7 @@
         "lat": 40.1421,
         "lng": 94.6618
       },
-      "hours": "全天",
+      "hours": "تمام روز",
       "description": "زردآلو و هلوی محلی دانه‌وانگ، شیرین و آبدار از کشت در واحه صحرایی.",
       "dishHighlights": [
         "زردآلوی تازه",
@@ -356,7 +356,7 @@
         "lat": 40.1421,
         "lng": 94.6618
       },
-      "hours": "全天",
+      "hours": "تمام روز",
       "description": "گوجی‌های با کیفیت بالا از واحه‌های صحرایی، سوغات و محصول سلامتی معروف دان‌هوانگ.",
       "dishHighlights": [
         "گوجی تازه",
@@ -390,13 +390,13 @@
       "hours": "10:00-22:00",
       "description": "غذای صحرایی عجیب - پنجه شتر پخته شده به سبک‌های مختلف، خوشمزه‌گی محلی منحصربه‌فرد.",
       "dishHighlights": [
-        "Camel paw hotpot",
-        "Camel meat",
-        "Desert herbs"
+        "دیگ شتر با پنجه شتر",
+        "گوشت شتر",
+        "گیاهان بیابانی"
       ],
       "tags": [
         "محلی",
-        "exotic",
+        "غریب و exotic",
         "تخصصی",
         "ماجراجویانه"
       ],
@@ -453,8 +453,8 @@
       "description": "زردآلوی معروف دنهوآنگ به نام ژنرال افسانه‌ای لی گوانگ، شیرین و معطر.",
       "dishHighlights": [
         "زردآلوی تازه",
-        "Apricot products",
-        "Orchard visit"
+        "فرآورده‌های زردآلو",
+        "بازدید از باغ"
       ],
       "tags": [
         "محلی",
@@ -484,7 +484,7 @@
       "description": "نودل زرد معروف دان هوانگ با انواع تاپینگ‌ها، غذای رنگارنگ و خوش‌طعم.",
       "dishHighlights": [
         "رشته‌های زرد",
-        "Vegetable toppings",
+        "روی‌ه‌های سبزیجات",
         "سس ویژه"
       ],
       "tags": [
@@ -534,10 +534,10 @@
       "name": "手抓饭",
       "nameEn": "Hand-Grabbable Rice",
       "type": "محلی",
-      "cuisine": "Uighur Style",
+      "cuisine": "سبک اویغوری",
       "avgPrice": 40,
       "rating": 4.5,
-      "address": "Near Night Market",
+      "address": "نزدیک بازار شبانه",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
@@ -545,15 +545,15 @@
       "hours": "10:00-22:00",
       "description": "برنج با گوشت بره، هویج و کشمش که با دست خورده می‌شود، پلو به سبک اویغوری.",
       "dishHighlights": [
-        "Lamb rice",
-        "Carrots",
-        "Raisins"
+        "برنج با گوشت بره",
+        "هویج",
+        "کشمش"
       ],
       "tags": [
         "محلی",
-        "uighur",
+        "اویغور",
         "اشتراکی",
-        "flavorful"
+        "خوش‌طعم"
       ],
       "star": 0,
       "diamond": 0,
@@ -565,25 +565,25 @@
       "name": "烤全羊",
       "nameEn": "بره کامل پخته شده",
       "type": "فوق‌العاده",
-      "cuisine": "Gansu Lamb",
+      "cuisine": "گوشت بره گانسو",
       "avgPrice": 2000,
       "rating": 4.9,
-      "address": "Desert Resort",
+      "address": "تفریحگاه کویری",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
-      "hours": "By reservation",
+      "hours": "با رزرو قبلی",
       "description": "گوشت کامل بره که در گودال کویری کباب می‌شود، غذای تشریفاتی برای مناسبت‌های خاص، نیاز به سفارش قبلی دارد.",
       "dishHighlights": [
-        "Whole lamb",
-        "Pit roasted",
-        "Ceremonial"
+        "بره کامل",
+        "کباب در گودال",
+        "مراسمی"
       ],
       "tags": [
         "مناسبت خاص",
         "لوکس",
-        "ceremonial",
+        "مراسمی",
         "گوشت بره"
       ],
       "star": 0,
@@ -604,12 +604,12 @@
         "lat": 40.1421,
         "lng": 94.6618
       },
-      "hours": "全天",
+      "hours": "تمام روز",
       "description": "شراب محلی از انگورهای کویری، با پیوند تاریخی به تجارت شراب در جاده ابریشم.",
       "dishHighlights": [
-        "Local wine",
-        "Grape wine",
-        "Silk Road heritage"
+        "شراب محلی",
+        "شراب انگور",
+        "میراث جاده ابریشم"
       ],
       "tags": [
         "محلی",
@@ -630,7 +630,7 @@
       "cuisine": "حلال",
       "avgPrice": 25,
       "rating": 4.5,
-      "address": "Muslim Quarter",
+      "address": "محله مسلمان‌نشین",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
@@ -639,7 +639,7 @@
       "description": "فروشگاه‌های نودل حلال در محله مسلمانان که نودل گوشت گاو و گوسفند سرو می‌کنند.",
       "dishHighlights": [
         "نودل گوشت گاو",
-        "Lamb noodles",
+        "نودل بره",
         "نان تخت"
       ],
       "tags": [
@@ -658,7 +658,7 @@
       "name": "大盘鸡",
       "nameEn": "Big Plate Chicken",
       "type": "محلی",
-      "cuisine": "Xinjiang Style",
+      "cuisine": "سبک سین‌جیانگ",
       "avgPrice": 80,
       "rating": 4.6,
       "address": "دان‌هوانگ",
@@ -669,7 +669,7 @@
       "hours": "10:00-22:00",
       "description": "بشقاب بزرگ مرغ با سیب‌زمینی و نودل، غذای مشترک محبوب در منطقه گانسو/شین‌جیانگ.",
       "dishHighlights": [
-        "Chicken",
+        "مرغ",
         "سیب‌زمینی‌ها",
         "نودل پهن"
       ],
@@ -689,7 +689,7 @@
       "name": "凉皮",
       "nameEn": "Liangpi Cold Noodles",
       "type": "محلی",
-      "cuisine": "Gansu Snacks",
+      "cuisine": "تنقلات گانسو",
       "avgPrice": 15,
       "rating": 4.4,
       "address": "بازار شبانه",
@@ -700,7 +700,7 @@
       "hours": "17:00-24:00",
       "description": "نودل سرد برنجی با سس تند، میان‌وعده خیابانی تابستانی و با طراوت.",
       "dishHighlights": [
-        "Cold noodles",
+        "نودل سرد",
         "سس تند",
         "خیار"
       ],
@@ -728,12 +728,12 @@
         "lat": 40.1421,
         "lng": 94.6618
       },
-      "hours": "全天",
+      "hours": "تمام روز",
       "description": "کشمش شیرین از تاکستان‌های کویری دون‌هوانگ، تنقلات و سوغاتی محبوب.",
       "dishHighlights": [
-        "Fresh raisins",
-        "Dried grapes",
-        "Various sizes"
+        "کشمش تازه",
+        "انگور خشک",
+        "اندازه‌های مختلف"
       ],
       "tags": [
         "محلی",
@@ -764,7 +764,7 @@
       "dishHighlights": [
         "نان تخت",
         "آبگوشت بره",
-        "Lamb slices"
+        "ورقه‌های گوشت بره"
       ],
       "tags": [
         "محلی",
@@ -790,18 +790,18 @@
         "lat": 40.1421,
         "lng": 94.6618
       },
-      "hours": "全天",
+      "hours": "تمام روز",
       "description": "نوشیدنی شیرین گلابی با نبات، تسکین‌دهنده گلوی خشک کویری.",
       "dishHighlights": [
-        "Pear drink",
-        "Rock sugar",
-        "Soothing"
+        "نوشیدنی گلابی",
+        "شکر نبات",
+        "آرامبخش"
       ],
       "tags": [
         "محلی",
         "دسر",
         "نوشیدنی",
-        "soothing"
+        "آرامبخش"
       ],
       "star": 0,
       "diamond": 0,
@@ -811,7 +811,7 @@
     {
       "id": "dunhuang-26",
       "name": "正宗胡羊焖饼",
-      "nameEn": "正宗胡羊焖饼 (胡羊焖饼)",
+      "nameEn": "نان مسطح خورشتی گوسفند اصیل (نان مسطح خورشتی گوسفند)",
       "type": "محلی",
       "cuisine": "خورش هو گوسفند با نان",
       "avgPrice": 118,
@@ -840,7 +840,7 @@
     {
       "id": "dunhuang-28",
       "name": "敦煌味胡羊焖饼",
-      "nameEn": "敦煌味胡羊焖饼 (胡羊焖饼)",
+      "nameEn": "خورش گوشت گوسفند دونهوی با نان تخت (خورش گوشت گوسفند با نان تخت)",
       "type": "محلی",
       "cuisine": "خورش گوشت گوسفند و نان سرخ‌کرده",
       "avgPrice": 144,
@@ -869,7 +869,7 @@
     {
       "id": "dunhuang-30",
       "name": "传统驴肉黄面",
-      "nameEn": "传统驴肉黄面 (驴肉黄面)",
+      "nameEn": "نودل زرد سنتی با گوشت الاغ (نودل زرد با گوشت الاغ)",
       "type": "خیابانی",
       "cuisine": "نودل زرد با گوشت الاغ",
       "avgPrice": 36,
@@ -898,7 +898,7 @@
     {
       "id": "dunhuang-32",
       "name": "敦煌味驴肉黄面",
-      "nameEn": "敦煌味驴肉黄面 (驴肉黄面)",
+      "nameEn": "نودل زرد با گوشت الاغ به سبک دونهوانگ (نودل زرد با گوشت الاغ)",
       "type": "خیابانی",
       "cuisine": "رشته زرد گوشت الاغ",
       "avgPrice": 14,
@@ -927,7 +927,7 @@
     {
       "id": "dunhuang-34",
       "name": "敦煌味羊肉粉汤",
-      "nameEn": "敦煌味羊肉粉汤 (羊肉粉汤)",
+      "nameEn": "سوپ گوشت گوسفند با رشته به سبک دونهوانگ (سوپ گوشت گوسفند با رشته)",
       "type": "محلی",
       "cuisine": "سوپ گوشت گوسفند با نودل برنجی",
       "avgPrice": 33,
@@ -956,7 +956,7 @@
     {
       "id": "dunhuang-36",
       "name": "老街羊肉粉汤",
-      "nameEn": "老街羊肉粉汤 (羊肉粉汤)",
+      "nameEn": "سوپ گوشت گوسفند با رشته در بازار قدیمی (سوپ گوشت گوسفند با رشته)",
       "type": "محلی",
       "cuisine": "سوپ گوشت گوسفند با نودل برنجی",
       "avgPrice": 60,
@@ -985,7 +985,7 @@
     {
       "id": "dunhuang-38",
       "name": "老敦煌胡羊焖饼",
-      "nameEn": "老敦煌胡羊焖饼 (胡羊焖饼)",
+      "nameEn": "خورش گوشت گوسفند با نان تخت دونهوانگ قدیم (خورش گوشت گوسفند با نان تخت)",
       "type": "محلی",
       "cuisine": "خورش گوشت گوسفند با نان سرخ‌کرده",
       "avgPrice": 60,
@@ -1014,7 +1014,7 @@
     {
       "id": "dunhuang-40",
       "name": "敦煌味羊肉粉汤",
-      "nameEn": "敦煌味羊肉粉汤 (羊肉粉汤)",
+      "nameEn": "سوپ گوشت گوسفند با رشته به سبک دونهوانگ (سوپ گوشت گوسفند با رشته)",
       "type": "محلی",
       "cuisine": "سوپ گوشت گوسفند با رشته برنج",
       "avgPrice": 134,
@@ -1043,7 +1043,7 @@
     {
       "id": "dunhuang-42",
       "name": "街边羊肉粉汤",
-      "nameEn": "街边羊肉粉汤 (羊肉粉汤)",
+      "nameEn": "سوپ گوشت گوسفند با رشته در گوشه خیابان (سوپ گوشت گوسفند با رشته)",
       "type": "خیابانی",
       "cuisine": "سوپ گوشت گوسفند با نودل برنجی",
       "avgPrice": 51,
@@ -1072,7 +1072,7 @@
     {
       "id": "dunhuang-44",
       "name": "敦煌味羊肉粉汤",
-      "nameEn": "敦煌味羊肉粉汤 (羊肉粉汤)",
+      "nameEn": "سوپ گوشت گوسفند با رشته به سبک دونهوانگ (سوپ گوشت گوسفند با رشته)",
       "type": "محلی",
       "cuisine": "سوپ گوشت گوسفند با رشته برنج",
       "avgPrice": 58,
@@ -1101,7 +1101,7 @@
     {
       "id": "dunhuang-46",
       "name": "地道羊肉粉汤",
-      "nameEn": "地道羊肉粉汤 (羊肉粉汤)",
+      "nameEn": "سوپ گوشت گوسفند با رشته اصیل (سوپ گوشت گوسفند با رشته)",
       "type": "محلی",
       "cuisine": "سوپ گوشت گوسفند با رشته برنج",
       "avgPrice": 71,
@@ -1130,7 +1130,7 @@
     {
       "id": "dunhuang-48",
       "name": "传统羊肉粉汤",
-      "nameEn": "传统羊肉粉汤 (羊肉粉汤)",
+      "nameEn": "سوپ رشته گوشت گوسفندی سنتی (آش رشته گوشت گوسفندی)",
       "type": "محلی",
       "cuisine": "سوپ گوشت گوسفند با رشته برنج",
       "avgPrice": 78,
@@ -1159,7 +1159,7 @@
     {
       "id": "dunhuang-50",
       "name": "敦煌味杏皮水",
-      "nameEn": "敦煌味杏皮水 (杏皮水)",
+      "nameEn": "نوشیدنی زردآلوی دونخوان (آب زردآلو)",
       "type": "محلی",
       "cuisine": "آب پوست زردآلو",
       "avgPrice": 70,
@@ -1188,7 +1188,7 @@
     {
       "id": "dunhuang-52",
       "name": "老街驴肉黄面",
-      "nameEn": "老街驴肉黄面 (驴肉黄面)",
+      "nameEn": "رشته زرد با گوشت الاغ در بازار قدیمی (رشته زرد با گوشت الاغ)",
       "type": "محلی",
       "cuisine": "نودل زرد با گوشت الاغ",
       "avgPrice": 73,
@@ -1217,7 +1217,7 @@
     {
       "id": "dunhuang-54",
       "name": "老字号杏皮水",
-      "nameEn": "老字号杏皮水 (杏皮水)",
+      "nameEn": "نوشیدنی زردآلوی برند قدیمی (آب زردآلو)",
       "type": "محلی",
       "cuisine": "آب پوست زردآلو",
       "avgPrice": 33,
@@ -1246,7 +1246,7 @@
     {
       "id": "dunhuang-56",
       "name": "正宗羊肉粉汤",
-      "nameEn": "正宗羊肉粉汤 (羊肉粉汤)",
+      "nameEn": "سوپ رشته گوشت گوسفندی اصیل (آش رشته گوشت گوسفندی)",
       "type": "محلی",
       "cuisine": "سوپ گوشت گوسفند با رشته برنجی",
       "avgPrice": 31,
@@ -1275,7 +1275,7 @@
     {
       "id": "dunhuang-58",
       "name": "巷子杏皮水",
-      "nameEn": "巷子杏皮水 (杏皮水)",
+      "nameEn": "نوشیدنی زردآلوی کوچه (آب زردآلو)",
       "type": "خیابانی",
       "cuisine": "آب پوست زردآلو",
       "avgPrice": 21,
@@ -1304,7 +1304,7 @@
     {
       "id": "dunhuang-60",
       "name": "传统羊肉粉汤",
-      "nameEn": "传统羊肉粉汤 (羊肉粉汤)",
+      "nameEn": "سوپ رشته گوشت گوسفندی سنتی (آش رشته گوشت گوسفندی)",
       "type": "محلی",
       "cuisine": "سوپ گوشت گوسفند با رشته برنج",
       "avgPrice": 83,
@@ -1333,7 +1333,7 @@
     {
       "id": "dunhuang-62",
       "name": "敦煌味杏皮水",
-      "nameEn": "敦煌味杏皮水 (杏皮水)",
+      "nameEn": "نوشیدنی زردآلوی دونخوان (آب زردآلو)",
       "type": "خیابانی",
       "cuisine": "آب پوست زردآلو",
       "avgPrice": 37,
@@ -1362,7 +1362,7 @@
     {
       "id": "dunhuang-64",
       "name": "老街羊肉粉汤",
-      "nameEn": "老街羊肉粉汤 (羊肉粉汤)",
+      "nameEn": "سوپ گوشت گوسفند با رشته در بازار قدیمی (سوپ گوشت گوسفند با رشته)",
       "type": "خیابانی",
       "cuisine": "سوپ گوشت گوسفند با رشته برنج",
       "avgPrice": 32,
@@ -1391,7 +1391,7 @@
     {
       "id": "dunhuang-66",
       "name": "地道羊肉粉汤",
-      "nameEn": "地道羊肉粉汤 (羊肉粉汤)",
+      "nameEn": "سوپ گوشت گوسفند با رشته اصیل (سوپ گوشت گوسفند با رشته)",
       "type": "محلی",
       "cuisine": "سوپ گوشت گوسفند با رشته برنج",
       "avgPrice": 147,
@@ -1420,7 +1420,7 @@
     {
       "id": "dunhuang-68",
       "name": "老敦煌胡羊焖饼",
-      "nameEn": "老敦煌胡羊焖饼 (胡羊焖饼)",
+      "nameEn": "خورش گوشت گوسفند با نان تخت دونهوانگ قدیم (خورش گوشت گوسفند با نان تخت)",
       "type": "خیابانی",
       "cuisine": "خورش گوشت گوسفند با نان مسطح",
       "avgPrice": 42,
@@ -1449,7 +1449,7 @@
     {
       "id": "dunhuang-70",
       "name": "巷子驴肉黄面",
-      "nameEn": "巷子驴肉黄面 (驴肉黄面)",
+      "nameEn": "رشته زرد با گوشت الاغ در کوچه (رشته زرد با گوشت الاغ)",
       "type": "محلی",
       "cuisine": "نودل زرد با گوشت الاغ",
       "avgPrice": 138,
@@ -1478,7 +1478,7 @@
     {
       "id": "dunhuang-72",
       "name": "老字号胡羊焖饼",
-      "nameEn": "老字号胡羊焖饼 (胡羊焖饼)",
+      "nameEn": "خورش گوشت گوسفندی با نان مسطح برند قدیمی (خورش گوشت گوسفندی با نان)",
       "type": "محلی",
       "cuisine": "خورش پنکیک گوشت گوسفند هو",
       "avgPrice": 62,
@@ -1507,7 +1507,7 @@
     {
       "id": "dunhuang-74",
       "name": "敦煌味杏皮水",
-      "nameEn": "敦煌味杏皮水 (杏皮水)",
+      "nameEn": "نوشیدنی زردآلوی دونخوان (آب زردآلو)",
       "type": "محلی",
       "cuisine": "آب پوست زردآلو",
       "avgPrice": 145,
@@ -1538,8 +1538,8 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major Chinese cities",
-        "to": "Dunhuang Airport (DNH)",
+        "from": "شهرهای بزرگ چین",
+        "to": "فرودگاه دونهوانگ (DNH)",
         "duration": "۲ تا ۴ ساعت از طریق شیان یا لانژو",
         "price": "800-2000¥",
         "frequency": "پروازهای روزانه از شیان، لانژو، پکن",
@@ -1548,29 +1548,29 @@
     ],
     "local": {
       "bus": [
-        "Public buses limited",
+        "اتوبوسهای عمومی محدود",
         "اتوبوس توریستی به جاذبه‌ها",
-        "Hire car recommended"
+        "توصیه میشود ماشین کرایه کنید"
       ],
       "taxi": [
-        "Taxi available in city",
+        "تاکسی در شهر موجود است",
         "برای سفرهای جاذبه‌ها چانه بزنید",
-        "Didi limited"
+        "دیدی محدود"
       ],
       "bike": [
-        "Bike sharing limited",
-        "Flat city for cycling",
+        "اشتراک دوچرخه محدود است",
+        "شهر مسطح برای دوچرخه‌سواری",
         "در کویر توصیه نمی‌شود"
       ],
       "walking": [
-        "City center walkable",
-        "Desert attractions require vehicle",
-        "Use tour transport"
+        "مرکز شهر قابل پیاده‌روی است",
+        "جاذبه‌های بیابانی نیاز به وسیله نقلیه دارند",
+        "از حمل‌ونقل تور استفاده کنید"
       ],
       "rental": [
-        "Car rental recommended",
-        "Driver with car popular option",
-        "Tour operators for day trips"
+        "اجاره ماشین توصیه می‌شود",
+        "راننده با ماشین گزینه محبوب است",
+        "اپراتورهای تور برای سفرهای یک‌روزه"
       ]
     }
   },
@@ -1580,7 +1580,7 @@
       "nameEn": "Dunhuang Hotel",
       "budget": "luxury",
       "priceRange": "¥500-1000/night",
-      "address": "Dunhuang City Center",
+      "address": "مرکز شهر دون‌هوانگ",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
@@ -1592,14 +1592,14 @@
         "خدمات خوب",
         "دکور فرهنگی"
       ],
-      "bookingTips": "Best luxury in city. Book direct. Traditional Chinese style. Good base for sightseeing."
+      "bookingTips": "بهترین اقامتگاه لوکس در شهر. رزرو مستقیم. سبک سنتی چینی. پایگاه خوبی برای بازدید از دیدنی‌ها."
     },
     {
       "name": "اقامتگاه کوهستانی دونخوانگ",
       "nameEn": "Dunhuang Mountain Villa",
       "budget": "luxury",
       "priceRange": "¥600-1200/night",
-      "address": "Near Mingsha Mountain",
+      "address": "نزدیک کوه شا (Mingsha Mountain)",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
@@ -1611,14 +1611,14 @@
         "امکانات لوکس",
         "تجربه منحصر‌به‌فرد"
       ],
-      "bookingTips": "Best location near desert. Book desert view rooms. Amazing sunrise/sunset views. Great for photography."
+      "bookingTips": "بهترین موقعیت نزدیک بیابان. اتاق‌های با نمای بیابان را رزرو کنید. مناظر شگفت‌انگیز طلوع و غروب خورشید. عالی برای عکاسی."
     },
     {
       "name": "هتل جاده ابریشم",
       "nameEn": "Silk Road Hotel",
       "budget": "mid",
       "priceRange": "¥300-600/night",
-      "address": "City Center",
+      "address": "مرکز شهر",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
@@ -1630,14 +1630,14 @@
         "ارزش خوب",
         "فرهنگی"
       ],
-      "bookingTips": "Good mid-range option. Themed decor. Book direct for discounts. Good location for night market."
+      "bookingTips": "گزینه‌ی خوب میان‌رده. دکوراسیون تم‌دار. رزرو مستقیم برای تخفیف. موقعیت خوب برای بازار شبانه."
     },
     {
       "name": "مسافرخانه یوآکوان",
       "nameEn": "Crescent Spring Inn",
       "budget": "mid",
       "priceRange": "¥350-700/night",
-      "address": "Near Crescent Spring",
+      "address": "نزدیک چشمه‌ی هلال (Crescent Spring)",
       "coordinates": {
         "lat": 40.0921,
         "lng": 94.7618
@@ -1649,14 +1649,14 @@
         "دنج",
         "منحصر به فرد"
       ],
-      "bookingTips": "Stay near desert attractions. Book early for sunset/sunrise access. The location is magical."
+      "bookingTips": "نزدیک جاذبه‌های بیابانی بمانید. زود رزرو کنید تا به طلوع و غروب خورشید دسترسی داشته باشید. موقعیت جادویی است."
     },
     {
       "name": "هاستل جوانان دون‌هوانگ",
       "nameEn": "Dunhuang Youth Hostel",
       "budget": "budget",
       "priceRange": "¥50-150/night",
-      "address": "City Center",
+      "address": "مرکز شهر",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
@@ -1668,14 +1668,14 @@
         "انگلیسی صحبت می‌شود",
         "اطلاعات تور"
       ],
-      "bookingTips": "Best for backpackers. Organize desert tours here. Book ahead. Great for solo travelers."
+      "bookingTips": "بهترین انتخاب برای کوله‌پشتی‌ها. تورهای کویر را اینجا هماهنگ کنید. از قبل رزرو کنید. عالی برای مسافران تنها."
     },
     {
       "name": "کمپ چادری کویر",
       "nameEn": "Desert Camping Base",
       "budget": "mid",
       "priceRange": "¥300-600/night",
-      "address": "Mingsha Mountain",
+      "address": "کوه مینگشا",
       "coordinates": {
         "lat": 40.0921,
         "lng": 94.7618
@@ -1687,14 +1687,14 @@
         "شام باربیکیو",
         "طلوع آفتاب"
       ],
-      "bookingTips": "Book through tour operators. The starry night is unforgettable. Bring warm layers. Once-in-a-lifetime experience."
+      "bookingTips": "از طریق اپراتورهای تور رزرو کنید. شب پرستاره فراموش‌نشدنی است. لباس گرم همراه داشته باشید. تجربه‌ای یک‌بار در زندگی."
     },
     {
       "name": "مهمان‌سرای موگائو",
       "nameEn": "Mogao Caves Guesthouse",
       "budget": "budget",
       "priceRange": "¥100-250/night",
-      "address": "Near Mogao Caves",
+      "address": "نزدیک غارهای موگائو",
       "coordinates": {
         "lat": 40.0421,
         "lng": 94.7618
@@ -1706,14 +1706,14 @@
         "ساده",
         "ارزش"
       ],
-      "bookingTips": "Stay near caves for early access. Simple accommodation. Good for photographers wanting sunrise."
+      "bookingTips": "نزدیک غارها اقامت کنید تا دسترسی زودهنگام داشته باشید. اقامتگاه ساده. مناسب برای عکاسانی که می‌خواهند طلوع خورشید را ببینند."
     },
     {
       "name": "هتل فِی‌تیان دون‌هوانگ",
       "nameEn": "Dunhuang Feitian Hotel",
       "budget": "mid",
       "priceRange": "¥350-700/night",
-      "address": "City Center",
+      "address": "مرکز شهر",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
@@ -1725,14 +1725,14 @@
         "خدمات خوب",
         "ارزش"
       ],
-      "bookingTips": "Newer hotel with western amenities. Good for business travelers. Book direct for best rates."
+      "bookingTips": "هتل جدیدتر با امکانات غربی. مناسب برای مسافران کاری. مستقیم رزرو کنید تا بهترین نرخ را بگیرید."
     },
     {
       "name": "هتل یانگ‌گوانگ شاژو دون‌هوانگ",
       "nameEn": "Dunhuang Sunshine Hotel",
       "budget": "mid",
       "priceRange": "¥300-600/night",
-      "address": "City Center",
+      "address": "مرکز شهر",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
@@ -1744,14 +1744,14 @@
         "صبحانه خوب",
         "ارزش"
       ],
-      "bookingTips": "Reliable mid-range choice. Good location near markets. Book weekend rates."
+      "bookingTips": "انتخاب مطمئن میان‌رده. موقعیت خوب نزدیک بازارها. نرخ آخر هفته را رزرو کنید."
     },
     {
       "name": "کمپ پارک زمین‌شناسی یادان",
       "nameEn": "Yadan Geopark Camp",
       "budget": "budget",
       "priceRange": "¥100-200/night",
-      "address": "Yadan Park",
+      "address": "پارک یادان",
       "coordinates": {
         "lat": 40.5421,
         "lng": 93.0618
@@ -1763,14 +1763,14 @@
         "ماجراجویی",
         "شب‌های پرستاره"
       ],
-      "bookingTips": "Stay overnight at Yadan for sunset and stars. Basic facilities. The ghost city at night is magical."
+      "bookingTips": "برای تماشای غروب و ستاره‌ها در یاردان شب بمانید. امکانات اولیه. شهر ارواح در شب جادویی است."
     },
     {
       "name": "دونهوانگ جین‌جیانگ ژی‌شینگ",
       "nameEn": "Jinjiang Inn Dunhuang",
       "budget": "budget",
       "priceRange": "¥120-250/night",
-      "address": "City Center",
+      "address": "مرکز شهر",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
@@ -1782,14 +1782,14 @@
         "مرکزی",
         "قابل اعتماد"
       ],
-      "bookingTips": "Budget but consistent quality. Multiple locations. Book online for discounts."
+      "bookingTips": "اقتصادی اما کیفیت ثابت. چندین شعبه. برای تخفیف آنلاین رزرو کنید."
     },
     {
       "name": "ایستگاه جاده ابریشم",
       "nameEn": "Silk Road Post Hotel",
       "budget": "mid",
       "priceRange": "¥300-550/night",
-      "address": "Near Shazhou Market",
+      "address": "نزدیک بازار شاژو",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
@@ -1801,14 +1801,14 @@
         "خدمات خوب",
         "فرهنگی"
       ],
-      "bookingTips": "Best for night market lovers. Themed Silk Road decor. Book center rooms for less noise."
+      "bookingTips": "بهترین برای علاقه‌مندان به شب‌بازار. دکور با تم جاده ابریشم. اتاق‌های مرکزی را برای سروصدای کمتر رزرو کنید."
     },
     {
       "name": "هتل یومن‌گوان",
       "nameEn": "Yumenguan Hotel",
       "budget": "mid",
       "priceRange": "¥250-500/night",
-      "address": "Near Yumenguan",
+      "address": "نزدیک یومنگوان",
       "coordinates": {
         "lat": 40.4921,
         "lng": 93.5618
@@ -1820,14 +1820,14 @@
         "ساده اما تمیز",
         "تجربه کویر"
       ],
-      "bookingTips": "Stay overnight near Yumenguan for sunrise. Basic accommodation. The isolation is part of the experience."
+      "bookingTips": "برای طلوع آفتاب نزدیک یومنگوان شب بمانید. اقامتگاه ساده. انزوا بخشی از تجربه است."
     },
     {
       "name": "یانگوان رن جیا",
       "nameEn": "Yangguan Homestay",
       "budget": "budget",
       "priceRange": "¥80-200/night",
-      "address": "Near Yangguan Pass",
+      "address": "نزدیک گذرگاه یانگوان",
       "coordinates": {
         "lat": 40.2921,
         "lng": 94.3618
@@ -1839,14 +1839,14 @@
         "تجربه روستایی",
         "اصیل"
       ],
-      "bookingTips": "Stay with local families near ancient pass. Very authentic experience. Limited English. Bring gifts."
+      "bookingTips": "با خانواده‌های محلی نزدیک گذرگاه باستانی بمانید. تجربه بسیار اصیل. انگلیسی محدود. هدیه بیاورید."
     },
     {
       "name": "هتل دان هوانگ دونگ شیان",
       "nameEn": "Dunhuang East Line Hotel",
       "budget": "mid",
       "priceRange": "¥280-500/night",
-      "address": "East Side",
+      "address": "سمت شرقی",
       "coordinates": {
         "lat": 40.1621,
         "lng": 94.7018
@@ -1858,7 +1858,7 @@
         "تمیز",
         "ارزش"
       ],
-      "bookingTips": "Good base for Eastern circuit (Mogao alternative route). Quieter area. Book direct."
+      "bookingTips": "پایگاه خوبی برای حلقه شرقی (مسیر جایگزین موگائو). منطقه آرام‌تر. مستقیم رزرو کنید."
     }
   ],
   "payment": [
@@ -1867,24 +1867,24 @@
       "icon": "alipay",
       "description": "در شهر و برخی جاذبه‌ها کار می‌کند",
       "howToUse": [
-        "Download before arrival",
-        "Link card"
+        "دانلود قبل از arrival",
+        "اتصال کارت"
       ],
       "tips": [
-        "City merchants accept",
+        "بازاریان شهر می‌پذیرند",
         "مناطق دورافتاده ممکن است cash را ترجیح دهند"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Common in city",
+      "description": "رایج در شهر",
       "howToUse": [
-        "WeChat required",
-        "International version"
+        "وی‌چت الزامی است",
+        "نسخه بین‌المللی"
       ],
       "tips": [
-        "Works for some merchants",
+        "برای برخی بازاریان کار می‌کند",
         "مناطق دورافتاده از cash استفاده می‌کنند"
       ]
     },
@@ -1894,104 +1894,104 @@
       "description": "برای جاذبه‌های کویری ضروری است",
       "howToUse": [
         "ATM در شهر",
-        "Bring to desert sites"
+        "به مکان‌های بیابانی بیاورید"
       ],
       "tips": [
         "سایت‌های دورافتاده موبایل نمی‌پذیرند",
         "اردوگاه‌های یورت نیاز به cash دارند",
-        "Keep 500¥ for day trips"
+        "برای سفرهای یک‌روزه ۵۰۰ یوان نگه دارید"
       ]
     }
   ],
   "culturalTips": [
     {
       "category": "culture",
-      "title": "Mogao Caves Respect",
-      "content": "The Mogao Caves are sacred Buddhist sites. Don't photograph inside caves. Don't touch murals. Speak quietly. These are 1,000-year-old treasures.",
+      "title": "احترام به غارهای موگائو",
+      "content": "غارهای موگائو مکان‌های مقدس بودایی هستند. داخل غارها عکس نگیرید. به نقاشی‌های دیواری دست نزنید. آرام صحبت کنید. این‌ها گنجینه‌هایی با قدمت ۱۰۰۰ سال هستند.",
       "importance": "high"
     },
     {
       "category": "culture",
-      "title": "Desert Environment",
+      "title": "محیط بیابانی",
       "content": "دانشانگ در لبه‌ی بیابان تکلماکان قرار دارد. محیط این منطقه شکننده است. در مسیرهای مشخص بمانید، از آشفته کردن حیات وحش بیابان خودداری کنید و تمام زباله‌های خود را با خود ببرید.",
       "importance": "high"
     },
     {
       "category": "food",
-      "title": "Dunhuang Cuisine",
+      "title": "غذاهای محلی دونهوانگ",
       "content": "آشپزی دانشانگ ترکیبی از تاثیرات استان گانسو و جاده ابریشم است. باید امتحان کنید: رشته‌های زرد گوساله، نوشیدنی پوست زردآلو، کباب گوسفند و تره تیزک بیابانی.",
       "importance": "high"
     },
     {
       "category": "timing",
-      "title": "Book Mogao Early",
+      "title": "رزرو زودهنگام موگائو",
       "content": "بلیط موزه‌های موقائو به سرعت به فروش می‌رسد، به ویژه در فصل اوج (مه تا اکتبر). هفته‌ها قبل به صورت آنلاین رزرو کنید یا در صبح زود به صف اولیه بپیوندید.",
       "importance": "high"
     },
     {
       "category": "culture",
-      "title": "Islamic Culture",
+      "title": "فرهنگ اسلامی",
       "content": "دانشانگ دارای یک جامعه مسلمان قابل توجه است. احترام خود را به آداب اسلامی نشان دهید. بازار شبانه گزینه‌های عالی غذای حلال دارد.",
       "importance": "medium"
     },
     {
       "category": "weather",
-      "title": "Desert Climate",
-      "content": "Desert temperatures vary greatly - hot daytime, cold nights. Even summer nights need warm layers. Bring sunscreen and water. Sandstorms can occur in spring.",
+      "title": "آب‌وهوای بیابانی",
+      "content": "دمای بیابان بسیار متغیر است - روزها گرم و شب‌ها سرد. حتی در شب‌های تابستان به لباس گرم نیاز دارید. ضدآفتاب و آب همراه داشته باشید. طوفان‌های شن در بهار ممکن است رخ دهند.",
       "importance": "high"
     },
     {
       "category": "culture",
-      "title": "Silk Road History",
-      "content": "Dunhuang was a major Silk Road oasis where Buddhism, trade, and cultures met. The Mogao Caves were created by monks, merchants, and rulers over 1,000 years.",
+      "title": "تاریخ جاده ابریشم",
+      "content": "دون‌هوانگ یک واحه بزرگ در جاده ابریشم بود که بودیسم، تجارت و فرهنگ‌ها در آن به هم می‌رسیدند. غارهای موگائو توسط راهبان، بازرگانان و حاکمان در طول بیش از ۱۰۰۰ سال ایجاد شدند.",
       "importance": "medium"
     },
     {
       "category": "food",
-      "title": "Night Market Culture",
-      "content": "Shazhou Night Market is the heart of Dunhuang evening life. Try local snacks, buy souvenirs, and enjoy the atmosphere. The apricot juice is a must-try.",
+      "title": "فرهنگ بازار شبانه",
+      "content": "بازار شبانه شاژو قلب زندگی شبانه دون‌هوانگ است. تنقلات محلی را امتحان کنید، سوغاتی بخرید و از فضای آن لذت ببرید. آب زردآلو را حتماً امتحان کنید.",
       "importance": "medium"
     },
     {
       "category": "culture",
-      "title": "Photography Etiquette",
-      "content": "Photography is prohibited inside Mogao Caves but allowed outside. At sand dunes, remove shoes before climbing. Respect signs at archaeological sites.",
+      "title": "آداب عکاسی",
+      "content": "عکاسی در داخل غارهای موگائو ممنوع است اما در بیرون مجاز است. در تپه‌های شنی، قبل از بالا رفتن کفش‌ها را درآورید. به علائم در سایت‌های باستان‌شناسی احترام بگذارید.",
       "importance": "medium"
     },
     {
       "category": "etiquette",
-      "title": "Visiting Temples",
-      "content": "When visiting Buddhist sites like Leiyin Temple, walk clockwise around statues, speak softly, and make offerings if invited by monks.",
+      "title": "بازدید از معابد",
+      "content": "هنگام بازدید از مکان‌های بودایی مانند معبد لی‌یین، در جهت عقربه‌های ساعت دور مجسمه‌ها بچرخید، آرام صحبت کنید و اگر راهبان دعوت کردند، نذری بدهید.",
       "importance": "medium"
     },
     {
       "category": "culture",
-      "title": "Starry Night",
-      "content": "Dunhuang has minimal light pollution, especially at desert camps. The Milky Way is visible on clear nights. Bring a telescope or just lie back and enjoy.",
+      "title": "شب پرستاره",
+      "content": "دون‌هوانگ آلودگی نوری بسیار کمی دارد، به‌ویژه در اردوگاه‌های بیابانی. کهکشان راه شیری در شب‌های صاف قابل مشاهده است. یک تلسکوپ همراه داشته باشید یا فقط به پشت دراز بکشید و لذت ببرید.",
       "importance": "medium"
     },
     {
       "category": "shopping",
-      "title": "Dunhuang Souvenirs",
-      "content": "Look for goji berries, dried apricots, desert poplar crafts, and Buddhist art reproductions. The night market has good bargaining opportunities.",
+      "title": "سوغاتی‌های دون‌هوانگ",
+      "content": "به دنبال توت گوجی، زردآلوی خشک، صنایع دستی چوب صنوبر بیابانی و بازتولیدهای هنر بودایی باشید. بازار شب فرصت‌های خوبی برای چانه زدن دارد.",
       "importance": "low"
     },
     {
       "category": "dialect",
-      "title": "Local Language",
-      "content": "Mandarin is universal. Some Muslim vendors speak local dialect. Basic Mandarin phrases appreciated. Hand signals help in markets.",
+      "title": "زبان محلی",
+      "content": "ماندارین زبان رایج است. برخی فروشندگان مسلمان به گویش محلی صحبت می‌کنند. عبارات پایه ماندارین مورد قدردانی است. در بازارها زبان اشاره کمک می‌کند.",
       "importance": "low"
     },
     {
       "category": "etiquette",
-      "title": "Desert Activities",
-      "content": "When riding camels, follow handler instructions. Don't feed the animals. For sand sliding, protect electronics from sand. Wear goggles on windy days.",
+      "title": "فعالیت‌های بیابانی",
+      "content": "هنگام سوار شدن بر شتر، دستورالعمل‌های راهنما را دنبال کنید. به حیوانات غذا ندهید. برای شن‌سواری، از وسایل الکترونیکی در برابر شن محافظت کنید. در روزهای بادی عینک محافظ بزنید.",
       "importance": "medium"
     },
     {
       "category": "culture",
-      "title": "Ancient Passes",
-      "content": "Yumenguan and Yangguan passes were Silk Road fortresses. Visiting these lonely ruins with historical context creates a powerful experience of ancient travelers.",
+      "title": "گذرگاه‌های باستانی",
+      "content": "گذرگاه‌های یومنگوان و یانگوان قلعه‌های جاده ابریشم بودند. بازدید از این ویرانه‌های تنهایی با زمینه تاریخی، تجربه‌ای قدرتمند از مسافران باستانی ایجاد می‌کند.",
       "importance": "medium"
     }
   ],
@@ -2095,7 +2095,7 @@
         "lng": 94.7618
       },
       "openingHours": "۰۸:۰۰-۱۸:۰۰ (دسترسی محدود)",
-      "ticketPrice": "旺季238¥ (includes digital center + cave visit)",
+      "ticketPrice": "۲۳۸ یوان در فصل پرترافیک (شامل مرکز دیجیتال و بازدید از غارها)",
       "recommendedVisitTime": "۳-۴ ساعت",
       "highlights": [
         "هنر بودایی غارها",
@@ -2119,7 +2119,7 @@
         "lng": 94.7618
       },
       "openingHours": "07:00-19:00",
-      "ticketPrice": "110¥ (3-day pass available)",
+      "ticketPrice": "۱۱۰ یوان (بلیط ۳ روزه موجود است)",
       "recommendedVisitTime": "۴-۵ ساعت",
       "highlights": [
         "تپههای شنی آوازخوان",
@@ -2137,13 +2137,13 @@
       "category": "natural",
       "image": "/img/ext/b1a91de242ab.webp",
       "description": "واحه باستانی در بیابان با برکهای هلالیشکل، احاطهشده توسط تپههای شنی، با مناظر جادویی بیابان.",
-      "address": "Mingsha Mountain Park",
+      "address": "پارک کوه شا (مingsha)",
       "coordinates": {
         "lat": 40.0921,
         "lng": 94.7618
       },
       "openingHours": "07:00-19:00",
-      "ticketPrice": "Included in Mingsha Mountain ticket (110¥)",
+      "ticketPrice": "شامل بلیط کوه شا (۱۱۰ یوان)",
       "recommendedVisitTime": "2-3 ساعت",
       "highlights": [
         "واحه بیابانی",
@@ -2161,13 +2161,13 @@
       "category": "historical",
       "image": "/img/ext/95e687f9d954.webp",
       "description": "قلعه باستانی محافظ جاده ابریشم، ساخته شده در دوران سلسله هان، اکنون ویرانههایی تنها در بیابان.",
-      "address": "90km from Dunhuang",
+      "address": "۹۰ کیلومتر از دون‌هوانگ",
       "coordinates": {
         "lat": 40.4921,
         "lng": 93.5618
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "40¥ (combined with Han Great Wall)",
+      "ticketPrice": "۴۰ یوان (به همراه دیوار بزرگ هان)",
       "recommendedVisitTime": "2-3 ساعت",
       "highlights": [
         "قلعه باستانی",
@@ -2310,9 +2310,9 @@
         "lat": 40.0921,
         "lng": 94.7618
       },
-      "openingHours": "Evening to morning",
-      "ticketPrice": "200-500¥ (camping package)",
-      "recommendedVisitTime": "Overnight",
+      "openingHours": "از عصر تا صبح",
+      "ticketPrice": "۲۰۰-۵۰۰ یوان (بسته کمپینگ)",
+      "recommendedVisitTime": "یک شب",
       "highlights": [
         "آسمان پرستاره",
         "غروب آفتاب در بیابان",
@@ -2329,7 +2329,7 @@
       "category": "historical",
       "image": "/img/ext/fc243405b08e.webp",
       "description": "مجموعه غارهایی کوچک‌تر از موگائو اما قدیمی‌تر و کم‌جمعیت‌تر، با نقاشی‌های دیواری باستانی بودایی در کنار رودخانه.",
-      "address": "35km from Dunhuang",
+      "address": "۳۵ کیلومتر از دون‌هوانگ",
       "coordinates": {
         "lat": 40.1921,
         "lng": 94.5618
@@ -2359,7 +2359,7 @@
         "lng": 94.7618
       },
       "openingHours": "07:00-19:00",
-      "ticketPrice": "Included in Mingsha ticket",
+      "ticketPrice": "شامل در بلیط میشا",
       "recommendedVisitTime": "2-3 ساعت",
       "highlights": [
         "غروب آفتاب بر فراز تپه‌های شنی",
@@ -2377,7 +2377,7 @@
       "category": "cultural",
       "image": "/img/ext/8db70aae509d.webp",
       "description": "صحنه فیلم ساخته‌شده برای فیلم‌های تاریخی، که نگاهی به تولید فیلم باستانی چین ارائه می‌دهد.",
-      "address": "Near Dunhuang",
+      "address": "نزدیک دون‌هوانگ",
       "coordinates": {
         "lat": 40.1221,
         "lng": 94.6618
@@ -2401,13 +2401,13 @@
       "category": "cultural",
       "image": "/img/ext/309f30e43563.webp",
       "description": "مؤسسه تحقیقاتی و سالن نمایش که نسخه‌های باکیفیت از هنر غار موگائو و کارهای مرمت در حال انجام را نشان می‌دهد.",
-      "address": "Near Mogao Caves",
+      "address": "نزدیک غارهای موگائو",
       "coordinates": {
         "lat": 40.0421,
         "lng": 94.7618
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "Included with Mogao ticket",
+      "ticketPrice": "شامل در بلیط موگائو",
       "recommendedVisitTime": "1-2 ساعت",
       "highlights": [
         "نسخه‌های غار",
@@ -2497,7 +2497,7 @@
       "category": "historical",
       "image": "/img/ext/9f32b9507fe6.webp",
       "description": "محوطه باستانی که ۳۵۰۰۰ لوح بامبویی از سلسله هان در آن کشف شد، مستندسازی ارتباطات جاده ابریشم.",
-      "address": "Xuanquan",
+      "address": "شوان‌چوان",
       "coordinates": {
         "lat": 40.2421,
         "lng": 94.6618
@@ -2545,7 +2545,7 @@
       "category": "natural",
       "image": "/img/ext/31f8d74eeab1.webp",
       "description": "واحه بیابانی با گل‌های نیلوفر آبی و پرندگان آبزی، مکانی آرام برای عکاسی از طبیعت.",
-      "address": "Near Dunhuang",
+      "address": "نزدیک دون‌هوانگ",
       "coordinates": {
         "lat": 40.1921,
         "lng": 94.7618
@@ -2569,7 +2569,7 @@
       "category": "natural",
       "image": "/img/ext/c09fcbe63c84.webp",
       "description": "درختان صنوبر باستانی بیابانی، برخی بیش از ۱۰۰۰ سال قدمت دارند، با برگ‌های پاییزی زیبا.",
-      "address": "Near Dunhuang",
+      "address": "نزدیک دون‌هوانگ",
       "coordinates": {
         "lat": 40.2921,
         "lng": 94.7618
@@ -2598,7 +2598,7 @@
         "lng": 93.8667
       },
       "openingHours": "08:00-20:00",
-      "ticketPrice": "50元",
+      "ticketPrice": "50 یوان",
       "recommendedVisitTime": "۲-۳ ساعت",
       "highlights": [
         "ویرانه‌های برج دیده‌بانی",
@@ -2622,7 +2622,7 @@
         "lng": 94.6625
       },
       "openingHours": "09:00-17:00 (دوشنبه‌ها تعطیل است)",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۲-۳ ساعت",
       "highlights": [
         "مجموعه الواح بامبوی سلسله هان",
@@ -2646,7 +2646,7 @@
         "lng": 94.6625
       },
       "openingHours": "۱۸:۰۰-۰۱:۰۰ روز بعد",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۲-۳ ساعت",
       "highlights": [
         "نودل زرد گوشت الاغ",
@@ -2670,7 +2670,7 @@
         "lng": 94.6722
       },
       "openingHours": "05:00-20:30",
-      "ticketPrice": "100元/人",
+      "ticketPrice": "۱۰۰ یوان برای هر نفر",
       "recommendedVisitTime": "۱-۲ ساعت",
       "highlights": [
         "شتر بیابانی",
@@ -2694,7 +2694,7 @@
         "lng": 94.6722
       },
       "openingHours": "05:00-20:30",
-      "ticketPrice": "110元",
+      "ticketPrice": "۱۱۰ یوان",
       "recommendedVisitTime": "۱-۲ ساعت",
       "highlights": [
         "غروب آفتاب در کویر",
@@ -2718,7 +2718,7 @@
         "lng": 94.8056
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "含在莫高窟门票内",
+      "ticketPrice": "شامل هزینه ورودی موگائوکو (غارهای موگائو) است",
       "recommendedVisitTime": "۱-۲ ساعت",
       "highlights": [
         "فیلم گنبدی",
@@ -2742,7 +2742,7 @@
         "lng": 94.6625
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۲-۳ ساعت",
       "highlights": [
         "آثار جاده ابریشم",
@@ -2766,7 +2766,7 @@
         "lng": 94.6722
       },
       "openingHours": "05:00-20:30",
-      "ticketPrice": "110元",
+      "ticketPrice": "۱۱۰ یوان",
       "recommendedVisitTime": "۳-۴ ساعت",
       "highlights": [
         "شگفتی تپه‌های شنی آوازخوان",
@@ -2790,7 +2790,7 @@
         "lng": 94.8056
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "含在莫高窟门票内",
+      "ticketPrice": "شامل هزینه ورودی موگائوکو (غارهای موگائو) است",
       "recommendedVisitTime": "۲-۳ ساعت",
       "highlights": [
         "نقاشی‌های دیواری بودایی",
@@ -2814,7 +2814,7 @@
         "lng": 93.8667
       },
       "openingHours": "06:00-19:00",
-      "ticketPrice": "50元",
+      "ticketPrice": "50 یوان",
       "recommendedVisitTime": "۳-۴ ساعت",
       "highlights": [
         "لندفرم‌های فرسایش بادی",
@@ -2838,7 +2838,7 @@
         "lng": 94.8056
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "A类238元/B类100元",
+      "ticketPrice": "کلاس A: ۲۳۸ یوان / کلاس B: ۱۰۰ یوان",
       "recommendedVisitTime": "۳-۴ ساعت",
       "highlights": [
         "۷۳۵ غار",
@@ -2862,7 +2862,7 @@
         "lng": 94.4167
       },
       "openingHours": "باز در تمام روز (نمای بیرونی)",
-      "ticketPrice": "免费（外观）",
+      "ticketPrice": "رایگان (نمای بیرونی)",
       "recommendedVisitTime": "۱ ساعت",
       "highlights": [
         "تولید برق حرارتی خورشیدی",
@@ -2879,14 +2879,14 @@
       "name": "戈壁滩",
       "nameEn": "Gobi Desert",
       "category": "nature",
-      "description": "صحرای گبی اطراف دون‌هوانگ یک لندفرم بیابانی典型 است، با شن‌ها و تپه‌های شنی بی‌پایان که منظره‌ای خشک و باشکوه را تشکیل می‌دهند. این مقصدی عالی برای تورهای خودران و سفرهای ماجراجویانه است و همچنین محیطی ایده‌آل برای فیلم‌برداری فیلم‌های وسترن به شمار می‌رود.",
+      "description": "بیابان گبی در اطراف دونهوانگ دارای زمین‌های بیابانی و خشکِ نمونه‌ای است؛ گستره‌ای از شن و ریگ تا دوردست‌ها، منظره‌ای باشکوه و خاموش را می‌سازد که مقصدی ایده‌آل برای رانندگی و سفرهای اکتشافی و همچنین مکانی عالی برای فیلم‌برداری فیلم‌های وسترن است.",
       "address": "اطراف شهر دون‌هوانگ",
       "coordinates": {
         "lat": 40.1,
         "lng": 94.6
       },
       "openingHours": "باز در تمام روز",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۲-۳ ساعت",
       "highlights": [
         "منظره گبی",
@@ -2910,7 +2910,7 @@
         "lng": 93.9
       },
       "openingHours": "تمام روز باز است",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱ ساعت",
       "highlights": [
         "ویرانه‌های سلسله هان",
@@ -2934,7 +2934,7 @@
         "lng": 94.6722
       },
       "openingHours": "05:00-20:30",
-      "ticketPrice": "110元",
+      "ticketPrice": "۱۱۰ یوان",
       "recommendedVisitTime": "۱-۲ ساعت",
       "highlights": [
         "آب چشمه در مهتاب",
@@ -2958,7 +2958,7 @@
         "lng": 94.6333
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "40元",
+      "ticketPrice": "۴۰ یوان",
       "recommendedVisitTime": "۱ تا ۲ ساعت",
       "highlights": [
         "شهر باستانی",
@@ -2982,7 +2982,7 @@
         "lng": 94.6722
       },
       "openingHours": "05:00-20:30",
-      "ticketPrice": "100元/人",
+      "ticketPrice": "۱۰۰ یوان برای هر نفر",
       "recommendedVisitTime": "۱ تا ۲ ساعت",
       "highlights": [
         "سوارکاری با شتر",
@@ -3006,7 +3006,7 @@
         "lng": 94.8056
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "含在莫高窟门票内",
+      "ticketPrice": "شامل هزینه ورودی موگائوکو (غارهای موگائو) است",
       "recommendedVisitTime": "۲-۳ ساعت",
       "highlights": [
         "دیوارنگاره آپساراهای پرنده",
@@ -3030,7 +3030,7 @@
         "lng": 94.6722
       },
       "openingHours": "05:00-20:30",
-      "ticketPrice": "110元",
+      "ticketPrice": "۱۱۰ یوان",
       "recommendedVisitTime": "۳-۴ ساعت",
       "highlights": [
         "همزیستی شن و چشمه",
@@ -3054,7 +3054,7 @@
         "lng": 94.8056
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "含在各景点门票内",
+      "ticketPrice": "شامل هزینه ورودی هر جاذبه گردشگری است",
       "recommendedVisitTime": "۱ روز",
       "highlights": [
         "مجسمه‌های نقاشی‌شدهٔ بودایی",
@@ -3078,7 +3078,7 @@
         "lng": 94.5
       },
       "openingHours": "باز در تمام روز",
-      "ticketPrice": "视活动而定",
+      "ticketPrice": "بسته به فعالیت",
       "recommendedVisitTime": "۱ روز",
       "highlights": [
         "رانندگی در شنزار",
@@ -3102,7 +3102,7 @@
         "lng": 94.6625
       },
       "openingHours": "باز در تمام روز",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱ ساعت",
       "highlights": [
         "گیاهان بیابانی",
@@ -3126,7 +3126,7 @@
         "lng": 94.7
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱ ساعت",
       "highlights": [
         "غارهای اولیه",
@@ -3150,7 +3150,7 @@
         "lng": 94.8056
       },
       "openingHours": "باز در تمام روز",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱-۲ ساعت",
       "highlights": [
         "مشرف بر غارهای موگائو",
@@ -3174,7 +3174,7 @@
         "lng": 94.6625
       },
       "openingHours": "باز در تمام روز",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱-۲ ساعت",
       "highlights": [
         "نمای شب رودخانه دانگ",
@@ -3198,7 +3198,7 @@
         "lng": 94.6625
       },
       "openingHours": "بستگی به هر جاذبه دارد",
-      "ticketPrice": "视各景点而定",
+      "ticketPrice": "بسته به هر جاذبه گردشگری",
       "recommendedVisitTime": "۲-۳ روز",
       "highlights": [
         "میراث جهانی یونسکو",
@@ -3222,7 +3222,7 @@
         "lng": 94.6722
       },
       "openingHours": "05:00-20:30",
-      "ticketPrice": "各项活动另收费",
+      "ticketPrice": "هر فعالیت هزینه جداگانه دارد",
       "recommendedVisitTime": "۲-۳ ساعت",
       "highlights": [
         "شن‌سواری",
@@ -3246,7 +3246,7 @@
         "lng": 94.68
       },
       "openingHours": "تمام روز",
-      "ticketPrice": "110元",
+      "ticketPrice": "۱۱۰ یوان",
       "recommendedVisitTime": "نیم روز.",
       "highlights": [
         "کویر",
@@ -3268,7 +3268,7 @@
         "lng": 94.67
       },
       "openingHours": "تمام روز",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱ ساعت",
       "highlights": [
         "منظره رودخانه"

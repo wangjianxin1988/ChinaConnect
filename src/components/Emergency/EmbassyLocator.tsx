@@ -1,4 +1,9 @@
 import React, { useState, useCallback } from "react";
+import { EMERGENCY_L10N } from "@/data/emergency/emergency-l10n";
+
+function embT(lang: string, key: string): string {
+  return EMERGENCY_L10N[lang]?.[key] || key;
+}
 
 interface Embassy {
   id: string;
@@ -207,9 +212,9 @@ export function EmbassyLocator({ className = "", showAll = false, lang = "en" }:
       {/* Header */}
       <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-4">
         <h2 className="text-lg font-bold flex items-center gap-2">
-          <span>🏛️</span> Embassy & Consulate Locator
+          <span>🏛️</span> {embT(lang, "Embassy & Consulate Locator")}
         </h2>
-        <p className="text-sm opacity-90 mt-1">Find your embassy for emergency assistance</p>
+        <p className="text-sm opacity-90 mt-1">{embT(lang, "Find your embassy for emergency assistance")}</p>
       </div>
 
       {/* Search */}
@@ -218,7 +223,7 @@ export function EmbassyLocator({ className = "", showAll = false, lang = "en" }:
           type="text"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          placeholder="Search country name..."
+          placeholder={embT(lang, "Search country name...")}
           className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
         />
       </div>
@@ -236,7 +241,7 @@ export function EmbassyLocator({ className = "", showAll = false, lang = "en" }:
                 <div className="flex items-center gap-3 mb-2">
                   <span className="text-3xl">{embassy.flag}</span>
                   <div>
-                    <div className="font-semibold">{embassy.country}</div>
+                    <div className="font-semibold">{embT(lang, embassy.country)}</div>
                     <div className="text-sm text-gray-500">{embassy.countryCn}</div>
                   </div>
                 </div>
@@ -258,7 +263,7 @@ export function EmbassyLocator({ className = "", showAll = false, lang = "en" }:
                   <div className="flex-1 min-w-0">
                     <div className="flex items-start justify-between gap-2">
                       <div>
-                        <h3 className="font-semibold">{embassy.country}</h3>
+                        <h3 className="font-semibold">{embT(lang, embassy.country)}</h3>
                         <div className="text-sm text-gray-500">{embassy.city}</div>
                       </div>
                       <div className="flex gap-2">
@@ -314,7 +319,7 @@ export function EmbassyLocator({ className = "", showAll = false, lang = "en" }:
         {filteredEmbassies.length === 0 && (
           <div className="text-center py-8 text-gray-500">
             <span className="text-4xl mb-2 block">🔍</span>
-            <p>No embassies found matching "{searchQuery}"</p>
+            <p>{embT(lang, "No embassies found matching")} "{searchQuery}"</p>
           </div>
         )}
       </div>
@@ -327,7 +332,7 @@ export function EmbassyLocator({ className = "", showAll = false, lang = "en" }:
               <div className="flex items-center gap-4">
                 <span className="text-5xl">{selectedEmbassy.flag}</span>
                 <div>
-                  <h3 className="text-2xl font-bold">{selectedEmbassy.country}</h3>
+                  <h3 className="text-2xl font-bold">{embT(lang, selectedEmbassy.country)}</h3>
                   <div className="opacity-90">{selectedEmbassy.countryCn}</div>
                 </div>
               </div>
@@ -335,13 +340,13 @@ export function EmbassyLocator({ className = "", showAll = false, lang = "en" }:
 
             <div className="p-6 space-y-4">
               <div>
-                <div className="text-sm text-gray-500 mb-1">Address</div>
+                <div className="text-sm text-gray-500 mb-1">{embT(lang, "Address")}</div>
               {lang !== "en" && <div className="font-medium">{selectedEmbassy.addressCn}</div>}
                 <div className="text-sm text-gray-600">{selectedEmbassy.address}</div>
               </div>
 
               <div>
-                <div className="text-sm text-gray-500 mb-1">Phone</div>
+                <div className="text-sm text-gray-500 mb-1">{embT(lang, "Phone")}</div>
                 <div className="flex items-center gap-2">
                   <a
                     href={`tel:${selectedEmbassy.phone.replace(/\D/g, "")}`}
@@ -361,14 +366,14 @@ export function EmbassyLocator({ className = "", showAll = false, lang = "en" }:
               </div>
 
               <div>
-                <div className="text-sm text-gray-500 mb-2">Available Services</div>
+                <div className="text-sm text-gray-500 mb-2">{embT(lang, "Available Services")}</div>
                 <div className="flex flex-wrap gap-2">
                   {selectedEmbassy.services.map((service, idx) => (
                     <span
                       key={idx}
                       className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm"
                     >
-                      {service}
+                      {embT(lang, service)}
                     </span>
                   ))}
                 </div>
@@ -380,14 +385,14 @@ export function EmbassyLocator({ className = "", showAll = false, lang = "en" }:
                   className="bg-red-600 hover:bg-red-700 text-white py-3 rounded-xl font-medium transition-colors flex items-center justify-center gap-2"
                 >
                   <span>📞</span>
-                  <span>Call Now</span>
+                  <span>{embT(lang, "Call Now")}</span>
                 </button>
                 <button
                   onClick={() => handleWebsite(selectedEmbassy.website)}
                   className="bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-xl font-medium transition-colors flex items-center justify-center gap-2"
                 >
                   <span>🌐</span>
-                  <span>Website</span>
+                  <span>{embT(lang, "Website")}</span>
                 </button>
               </div>
             </div>
@@ -397,7 +402,7 @@ export function EmbassyLocator({ className = "", showAll = false, lang = "en" }:
                 onClick={() => setSelectedEmbassy(null)}
                 className="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 py-3 rounded-xl font-medium transition-colors"
               >
-                Close
+                {embT(lang, "Close")}
               </button>
             </div>
           </div>

@@ -1,5 +1,4 @@
 {
-  "2": "양쯔강 대교 - 최초의 도로·철도 겸용 교량",
   "slug": "wuhan",
   "name": "武汉",
   "nameEn": "Wuhan",
@@ -9,13 +8,13 @@
     "lat": 30.5928,
     "lng": 114.3055
   },
-  "timezone": "UTC+8 (China Standard Time)",
+  "timezone": "UTC+8 (중국 표준시)",
   "description": "후베이성의 성도 우한은 고대 문화와 현대 혁신이 만나는 활기찬 대도시입니다. 양쯔강과 한강의 합류점에 위치한 '강의 도시'로 유명한 우한은 훌륭한 자연 경관, 풍부한 혁명 역사, 그리고 중국에서 가장 활기찬 음식 문화를 제공합니다. 우한 대학의 벚꽃, 황허루, 그리고 양쯔강 대교의 공학적 위업으로 유명한 도시입니다.",
   "coverImage": "/img/ext/7823c1a6eecd.webp",
   "highlights": [
     "황학루 - 상징적인 도시 랜드마크",
     "우한 대학 - 벚꽃 천국",
-    "양자강大桥 - 최초의 철도-도로 겸용 다리",
+    "창장 대교 - 최초의 도로·철도 겸용 교량",
     "동호 - 중국 최대 도시 호수",
     "후베이 성박물관 - 고대 초 문화"
   ],
@@ -30,7 +29,7 @@
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "4C (39F)",
-    "tips": "Winters can be cold and damp, summers hot and humid. Spring (March-May) is the best time for cherry blossoms at Wuhan University. Autumn offers pleasant weather. Summer brings frequent rainstorms. Pack layers for variable temperatures."
+    "tips": "겨울은 춥고 습하며, 여름은 덥고 습합니다. 봄(3월~5월)은 우한 대학의 벚꽃을 보기에 가장 좋은 시기입니다. 가을은 쾌적한 날씨를 제공합니다. 여름에는 잦은 폭우가 옵니다. 변덕스러운 기온에 대비해 겹쳐 입을 옷을 준비하세요."
   },
   "attractions": [
     {
@@ -84,10 +83,10 @@
     {
       "id": "yangtze-river-bridge",
       "name": "武汉长江大桥",
-      "nameEn": "양자강大桥",
+      "nameEn": "창장 대교",
       "category": "historical",
       "image": "/img/ext/243363dbb830.webp",
-      "description": "1957년에 완공된, 창장(長江)을 건너는 최초의 중국 독자 설계 철도·도로 겸용 교량입니다. 중국의 공학 기술을 상징하게 되었습니다.",
+      "description": "1957년에 완공된, 창장을 건너는 최초의 중국 독자 설계 철도·도로 겸용 교량입니다. 중국 공학 기술의 상징이 되었습니다.",
       "address": "우창과 한양을 연결",
       "coordinates": {
         "lat": 30.5489,
@@ -123,20 +122,19 @@
       "highlights": [
         "동호 벚꽃 공원",
         "문드레이크 섬",
-        "파도 청취亭",
+        "청파정",
         "백령도"
       ],
       "tips": "광대한 호수 지역을 탐색하기 위해 자전거를 렌탈하세요. 벚꽃 공원에는 10,000 그루 이상의 벚나무가 있습니다. 아침 일찍 방문하여 태치 수련자와 평화로운 풍경을 감상하세요.",
       "phone": "+86 27 8679 0329"
     },
     {
-      "2": "초나라 시대의 유물",
       "id": "hubei-provincial-museum",
       "name": "湖北省博物馆",
       "nameEn": "후베이 박물관",
       "category": "cultural",
       "image": "/img/ext/8193eef9981b.webp",
-      "description": "중국에서 가장 중요한 성급 박물관 중 하나로, 고대 초(楚) 문화 유물, 특히 유명한 월왕 구천의 검과 증후을 편종을 전시하고 있습니다.",
+      "description": "중국에서 가장 중요한 성급 박물관 중 하나로, 고대 초나라 문화 유물, 특히 유명한 월왕 구천의 검과 증후을 편종을 전시하고 있습니다.",
       "address": "우창구 동후로 160번지",
       "coordinates": {
         "lat": 30.5633,
@@ -148,7 +146,7 @@
       "highlights": [
         "여왕 구지안의 검",
         "증후이 종 세트",
-        "수(蜀)나라 유물",
+        "초나라 시대 유물",
         "초나라 문화 전시회"
       ],
       "tips": "미리 온라인으로 표를 예매하세요. 오디오 가이드가 이용 가능합니다. 종 공연은 반드시 봐야 합니다. 광범위한 컬렉션을 위해 여유 시간을 할당하세요.",
@@ -181,7 +179,7 @@
     {
       "id": "qingchuan-pavilion",
       "name": "晴川阁",
-      "nameEn": "청천亭",
+      "nameEn": "청천정",
       "category": "historical",
       "image": "/img/ext/de969db95905.webp",
       "description": "양안의 역사적인 누각으로, 물 너머로 황학루 전망을 제공합니다. 명대에 건축되었고 여러 번 재건되었습니다.",
@@ -253,7 +251,7 @@
     {
       "id": "jianghan-road",
       "name": "江汉路",
-      "nameEn": "江漢路 보행자 거리",
+      "nameEn": "장한루 보행자 거리",
       "category": "shopping",
       "image": "/img/ext/8933f9ec083c.webp",
       "description": "우한에서 가장 유명한 쇼핑거리로, 현대적인 쇼핑몰과 역사적인 식민지 시대 건물의 혼합을 특징으로 합니다. 쇼핑과 사람 구경에 완벽한 활기찬 보행자 지역입니다.",
@@ -319,7 +317,7 @@
         "국제 요리",
         "기술 박물관"
       ],
-      "tips": "스페인 거리와 이탈리아 거리는 최고의 사진 명소입니다. 음악 분수 쇼는 장관입니다. 지하철로 우당산(武當山)과 연결됩니다.",
+      "tips": "스페인 거리와 이탈리아 거리는 사진 찍기에 최고의 장소입니다. 음악 분수 쇼는 장관입니다. 지하철로 무당산과 연결됩니다.",
       "phone": "+86 027  1970 6523"
     },
     {
@@ -347,13 +345,12 @@
       "phone": "+86 027  5156 4256"
     },
     {
-      "0": "추성 테마파크",
       "id": "mopanshan",
       "name": "磨山风景区",
       "nameEn": "모판산 관광지",
       "category": "nature",
       "image": "/img/ext/7a2672fbb2eb.webp",
-      "description": "동호(東湖)의 일부인 모팡산(磨山)에는 유명한 초성(楚城) 테마파크와 아름다운 정원이 있습니다. 주비정(朱碑亭)의 대규모 건축물로 유명합니다.",
+      "description": "동호의 일부인 마오판산에는 유명한 초성 테마파크와 아름다운 정원이 있습니다. 주비정의 대규모 건축물로 유명합니다.",
       "address": "동후 생태관광지 무판산",
       "coordinates": {
         "lat": 30.5611,
@@ -363,7 +360,7 @@
       "ticketPrice": "60¥ (케이블카 포함)",
       "recommendedVisitTime": "3-4시간",
       "highlights": [
-        "楚城 테마파크",
+        "초성 테마파크",
         "정상행 케이블카",
         "벚꽃 정원",
         "주비정 기념비"
@@ -662,7 +659,7 @@
     {
       "id": "wuhan-yongling-tomb",
       "name": "汉阳陵永陵",
-      "nameEn": "한 무제陵",
+      "nameEn": "한무제릉 (한무제의 능)",
       "category": "historical",
       "image": "/img/ext/caf86c2817ea.webp",
       "description": "서한 시대의 황제 유오의 능으로, 고고학 발굴과 고대 장례 의식 전시가 있습니다.",
@@ -684,7 +681,6 @@
       "phone": "+86 027  2633 2427"
     },
     {
-      "0": "스릴 넘치는 놀이기구",
       "id": "wuhan-xiaoyao Park",
       "name": "武汉欢乐谷",
       "nameEn": "우한 해피밸리",
@@ -700,7 +696,7 @@
       "ticketPrice": "200¥ (신장 제한 적용)",
       "recommendedVisitTime": "종일",
       "highlights": [
-        "极端 어트랙션",
+        "절규 어트랙션",
         "워터파크 구역",
         "퍼레이드 쇼",
         "야간 공연"
@@ -744,7 +740,7 @@
         "lng": 114.3
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "70元",
+      "ticketPrice": "70위안",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "양쯔강",
@@ -766,7 +762,7 @@
         "lng": 114.35
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "2-3시간",
       "highlights": [
         "편종(청동 편종)",
@@ -788,7 +784,7 @@
         "lng": 114.37
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "벚꽃",
@@ -810,7 +806,7 @@
         "lng": 114.3
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "1.5시간",
       "highlights": [
         "열간면 (러간몐)",
@@ -833,7 +829,7 @@
         "lng": 114.3
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "30분",
       "highlights": [
         "다리",
@@ -855,7 +851,7 @@
         "lng": 114.3
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "人均50元",
+      "ticketPrice": "1인당 50위안",
       "recommendedVisitTime": "하루 종일",
       "highlights": [
         "열간면(뤄간몐)",
@@ -878,7 +874,7 @@
         "lng": 114.3
       },
       "openingHours": "11. 밤 시간.",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "1시간",
       "highlights": [
         "12. 조명 쇼.",
@@ -900,7 +896,7 @@
         "lng": 114.42
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "35元",
+      "ticketPrice": "35위안",
       "recommendedVisitTime": "반나절",
       "highlights": [
         "식물"
@@ -921,7 +917,7 @@
         "lng": 114.27
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "20元",
+      "ticketPrice": "20위안",
       "recommendedVisitTime": "반나절",
       "highlights": [
         "동물"
@@ -942,7 +938,7 @@
         "lng": 114.3
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "과학기술 전시"
@@ -963,7 +959,7 @@
         "lng": 114.37
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "80元",
+      "ticketPrice": "80위안",
       "recommendedVisitTime": "반나절",
       "highlights": [
         "톈츠(천지호)",
@@ -985,7 +981,7 @@
         "lng": 114.3
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "1.5시간",
       "highlights": [
         "미술 전시회"
@@ -1006,7 +1002,7 @@
         "lng": 114.42
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "1시간",
       "highlights": [
         "캠퍼스 풍경"
@@ -1027,7 +1023,7 @@
         "lng": 114.3
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "1시간",
       "highlights": [
         "양쯔강",
@@ -1049,7 +1045,7 @@
         "lng": 114.3
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "人均15元",
+      "ticketPrice": "1인당 15위안",
       "recommendedVisitTime": "30분",
       "highlights": [
         "열간면 (러간몐)"
@@ -1070,7 +1066,7 @@
         "lng": 114.3
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "2元起",
+      "ticketPrice": "2위안부터",
       "recommendedVisitTime": "언제든지",
       "highlights": [
         "지하철",
@@ -1092,7 +1088,7 @@
         "lng": 114.3
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "1.5시간",
       "highlights": [
         "공원",
@@ -1114,7 +1110,7 @@
         "lng": 114.3
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "30분",
       "highlights": [
         "다리",
@@ -1136,7 +1132,7 @@
         "lng": 114.28
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "쇼핑",
@@ -1158,7 +1154,7 @@
         "lng": 114.3
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "1.5시간",
       "highlights": [
         "유럽풍 건축",
@@ -1180,7 +1176,7 @@
         "lng": 114.28
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "1.5시간",
       "highlights": [
         "공원"
@@ -1673,7 +1669,6 @@
       "imageUrl": "/img/ext/8d89c015103d.webp"
     },
     {
-      "1": "양고기",
       "id": "wuhan-17",
       "name": "日式烤肉",
       "nameEn": "일본 야키니쿠",
@@ -1691,7 +1686,7 @@
       "description": "고급 고기를 제공하는 프리미엄 일본 BBQ 레스토랑",
       "dishHighlights": [
         "와규 비프",
-        "양排骨",
+        "양고기",
         "소설"
       ],
       "tags": [
@@ -1764,10 +1759,9 @@
       "imageUrl": "/img/ext/383e048ed8dc.webp"
     },
     {
-      "0": "셀프 서비스 훠궈",
       "id": "wuhan-20",
       "name": "海底捞火锅",
-      "nameEn": "해디라오火锅",
+      "nameEn": "하이디라오 훠궈",
       "type": "체인",
       "cuisine": "전골",
       "avgPrice": 150,
@@ -1781,7 +1775,7 @@
       "hours": "24시간",
       "description": "탁월한 서비스로 세계적으로 유명한 हॉट팟 체인점입니다.",
       "dishHighlights": [
-        "셀프火锅",
+        "셀프 서비스 훠궈",
         "손빼기면",
         "무료 매니큐어"
       ],
@@ -2037,7 +2031,7 @@
     {
       "id": "wuhan-29",
       "name": "우한식 우창어 (돼지고기 조림풍 생선 요리)",
-      "nameEn": "武汉味武昌鱼 (武昌鱼)",
+      "nameEn": "우한식 우창어 (우창어)",
       "type": "로컬",
       "cuisine": "우창 방어",
       "avgPrice": 80,
@@ -2066,7 +2060,7 @@
     {
       "id": "wuhan-31",
       "name": "老街豆皮",
-      "nameEn": "老街豆皮 (豆皮)",
+      "nameEn": "올드스트리트 두피 (두피)",
       "type": "로컬",
       "cuisine": "두피 (콩 껍질 요리)",
       "avgPrice": 123,
@@ -2153,7 +2147,7 @@
     {
       "id": "wuhan-37",
       "name": "阿婆豆皮",
-      "nameEn": "阿婆豆皮 (豆皮)",
+      "nameEn": "아파 두피 (두피)",
       "type": "로컬",
       "cuisine": "두피 (콩 껍질 요리)",
       "avgPrice": 72,
@@ -2182,7 +2176,7 @@
     {
       "id": "wuhan-39",
       "name": "정통 갈비 연근 수프",
-      "nameEn": "정통 갈비 연근 수프 (排骨蓮根湯)",
+      "nameEn": "정통 갈비 연근 수프 (갈비 연근 수프)",
       "type": "길거리",
       "cuisine": "돼지갈비 연근탕",
       "avgPrice": 23,
@@ -2211,7 +2205,7 @@
     {
       "id": "wuhan-41",
       "name": "武汉味豆皮",
-      "nameEn": "武汉味豆皮 (豆皮)",
+      "nameEn": "우한식 두피 (두피)",
       "type": "로컬",
       "cuisine": "두피 (콩 껍질 요리)",
       "avgPrice": 54,
@@ -2298,7 +2292,7 @@
     {
       "id": "wuhan-47",
       "name": "정통 갈비 연근 수프",
-      "nameEn": "정통 갈비 연근 수프 (排骨蓮根湯)",
+      "nameEn": "정통 갈비 연근 수프 (갈비 연근 수프)",
       "type": "카페",
       "cuisine": "돼지갈비 연근탕",
       "avgPrice": 38,
@@ -2356,7 +2350,7 @@
     {
       "id": "wuhan-51",
       "name": "정통 갈비와 연근 수프",
-      "nameEn": "정통 갈비와 연근 수프 (排骨藕湯)",
+      "nameEn": "정통 갈비와 연근 수프 (갈비 연근탕)",
       "type": "로컬",
       "cuisine": "돼지갈비 연근탕",
       "avgPrice": 55,
@@ -2385,7 +2379,7 @@
     {
       "id": "wuhan-53",
       "name": "正宗豆皮",
-      "nameEn": "正宗豆皮 (豆皮)",
+      "nameEn": "정종 두피 (두피)",
       "type": "로컬",
       "cuisine": "콩 껍질 (더우피)",
       "avgPrice": 75,
@@ -2443,7 +2437,7 @@
     {
       "id": "wuhan-57",
       "name": "오래된 우창위(武昌魚) 전문점",
-      "nameEn": "오래된 우창위(武昌魚) 전문점",
+      "nameEn": "노포 무창어 (우창어)",
       "type": "로컬",
       "cuisine": "우창 방어",
       "avgPrice": 55,
@@ -2472,7 +2466,7 @@
     {
       "id": "wuhan-59",
       "name": "우한식 우창어 (돼지고기 조림풍 생선 요리)",
-      "nameEn": "武汉味武昌鱼 (武昌鱼)",
+      "nameEn": "우한식 우창어 (우창어)",
       "type": "로컬",
       "cuisine": "우창 방어",
       "avgPrice": 94,
@@ -2501,7 +2495,7 @@
     {
       "id": "wuhan-61",
       "name": "老武汉糊汤粉",
-      "nameEn": "老武汉糊汤粉 (糊汤粉)",
+      "nameEn": "라오우한 후탕펀 (후탕펀)",
       "type": "로컬",
       "cuisine": "후탕펀 (진한 육즙 소스를 얹은 쌀국수)",
       "avgPrice": 61,
@@ -2530,7 +2524,7 @@
     {
       "id": "wuhan-63",
       "name": "老街糊汤粉",
-      "nameEn": "老街糊汤粉 (糊汤粉)",
+      "nameEn": "라오지에 후탕펀 (후탕펀)",
       "type": "카페",
       "cuisine": "후탕펀 (진한 그레이비 쌀국수)",
       "avgPrice": 60,
@@ -2588,7 +2582,7 @@
     {
       "id": "wuhan-67",
       "name": "老街热干面",
-      "nameEn": "老街热干面 (热干面)",
+      "nameEn": "라오지에 러간몐 (러간몐)",
       "type": "로컬",
       "cuisine": "열간면 (러간몐)",
       "avgPrice": 105,
@@ -2617,7 +2611,7 @@
     {
       "id": "wuhan-69",
       "name": "길모퉁이 우창위(武昌魚)",
-      "nameEn": "길모퉁이 우창위(武昌魚)",
+      "nameEn": "길모퉁이 무창어 (우창어)",
       "type": "길거리",
       "cuisine": "우창 방어",
       "avgPrice": 15,
@@ -2646,7 +2640,7 @@
     {
       "id": "wuhan-71",
       "name": "地道面窝",
-      "nameEn": "地道面窝 (面窝)",
+      "nameEn": "디다오 몐워 (몐워)",
       "type": "로컬",
       "cuisine": "면워(튀긴 도넛 링)",
       "avgPrice": 56,
@@ -2691,7 +2685,7 @@
         "다양한 파인 다이닝 옵션",
         "역사적인 한커우 위치"
       ],
-      "bookingTips": "Request river-view rooms for best scenery. Weekend packages often include breakfast."
+      "bookingTips": "최고의 경치를 위해 강변 전망 객실을 요청하세요. 주말 패키지에는 종종 조식이 포함됩니다."
     },
     {
       "name": "우한 샹그릴라 호텔",
@@ -2729,7 +2723,7 @@
         "좋은 조식",
         "비즈니스 시설"
       ],
-      "bookingTips": "Walking distance to Jianghan Road shopping. Good for first-time visitors to Hankou."
+      "bookingTips": "장한 로드 쇼핑가에서 도보 거리입니다. 한커우를 처음 방문하는 분들에게 좋습니다."
     },
     {
       "name": "우한 판하이 쉐라톤 호텔",
@@ -2748,7 +2742,7 @@
         "가족 여행에 적합",
         "다양한 레스토랑"
       ],
-      "bookingTips": "Great for families visiting the zoo. Weekend rates often lower."
+      "bookingTips": "동물원을 방문하는 가족에게 훌륭합니다. 주말 요금은 종종 더 저렴합니다."
     },
     {
       "name": "우한 진장 인터내셔널 호텔",
@@ -2767,7 +2761,7 @@
         "좋은 조식",
         "피트니스 센터"
       ],
-      "bookingTips": "Weekend discounts available. Good value for business travelers."
+      "bookingTips": "주말 할인 가능. 출장 여행객에게 가성비가 좋습니다."
     },
     {
       "name": "우한 광구 힐튼 호텔",
@@ -2786,7 +2780,7 @@
         "현대적인 시설",
         "비즈니스에 적합"
       ],
-      "bookingTips": "Best for business travelers in the tech district. Connected to shopping mall."
+      "bookingTips": "테크 지구 출장 여행객에게 최적. 쇼핑몰과 연결되어 있습니다."
     },
     {
       "name": "우한 광구 진둔 호텔",
@@ -2805,7 +2799,7 @@
         "모던한 인테리어",
         "친절한 직원"
       ],
-      "bookingTips": "Chinese travel apps often have good deals. Close to dining and entertainment."
+      "bookingTips": "중국 여행 앱에서 좋은 할인을 찾을 수 있습니다. 식당과 엔터테인먼트 시설과 가깝습니다."
     },
     {
       "name": "우한 단칭 아트 호텔",
@@ -2824,7 +2818,7 @@
         "독특한 객실",
         "문화적 분위기"
       ],
-      "bookingTips": "Perfect for art lovers. Walking distance to historic Tanhualin district."
+      "bookingTips": "예술 애호가에게 완벽합니다. 역사적인 탄화린 지구까지 도보 거리입니다."
     },
     {
       "name": "우한 베스트 웨스턴 광구 호텔",
@@ -2843,7 +2837,7 @@
         "기본 편의시설",
         "합리적인 가격"
       ],
-      "bookingTips": "Best value in the area. Good for budget travelers."
+      "bookingTips": "이 지역에서 최고의 가성비. 예산 여행객에게 좋습니다."
     },
     {
       "name": "우한 보위 부티크 호텔",
@@ -2862,7 +2856,7 @@
         "좋은 서비스",
         "관광지 인접"
       ],
-      "bookingTips": "Great location for exploring Hankou colonial architecture. Book early."
+      "bookingTips": "한커우 식민지 건축을 탐험하기에 훌륭한 위치. 일찍 예약하세요."
     },
     {
       "name": "우한 중난 가든 호텔",
@@ -2881,7 +2875,7 @@
         "좋은 조식",
         "넓은 객실"
       ],
-      "bookingTips": "Convenient for train travelers. Good value for the amenities."
+      "bookingTips": "기차 여행객에게 편리합니다. 부대시설 대비 가성비가 좋습니다."
     },
     {
       "name": "우한 칭촨 홀리데이 인",
@@ -2900,7 +2894,7 @@
         "편안한 침대",
         "좋은 서비스"
       ],
-      "bookingTips": "Great for Yangtze River scenery. Close to Yellow Crane Tower area."
+      "bookingTips": "양쯔강 경치를 감상하기에 훌륭합니다. 황허러우 타워 지역과 가깝습니다."
     },
     {
       "name": "우한 장청 밍주 하오성 그랜드 호텔",
@@ -2919,7 +2913,7 @@
         "다양한 레스토랑",
         "강변 산책로"
       ],
-      "bookingTips": "Request high floor for best river views. Good for both business and leisure."
+      "bookingTips": "강가 전망을 위해 높은 층을 요청하세요. 비즈니스와 레저 모두에 좋습니다."
     },
     {
       "name": "우한 성웨이 서비스 아파트",
@@ -2938,7 +2932,7 @@
         "가족에게 좋음",
         "중심부 위치"
       ],
-      "bookingTips": "Perfect for extended stays. Kitchen facilities save on dining costs."
+      "bookingTips": "장기 숙박에 완벽합니다. 주방 시설이 있어 식비를 절약할 수 있습니다."
     },
     {
       "name": "우한 루자 쾌속 호텔",
@@ -2957,7 +2951,7 @@
         "기본 편의 시설",
         "저렴함"
       ],
-      "bookingTips": "Reliable budget option. Many locations near metro stations."
+      "bookingTips": "믿을 수 있는 저예산 옵션입니다. 지하철역 근처에 여러 지점이 있습니다."
     },
     {
       "name": "우한 그린랜드 프리미어 호텔",
@@ -2976,7 +2970,7 @@
         "중심부 위치",
         "좋은 조식"
       ],
-      "bookingTips": "Great value for luxury. High floors have best views. Near metro Line 5."
+      "bookingTips": "럭셔리 대비 가성비가 뛰어납니다. 높은 층에서 최고의 전망을 즐길 수 있습니다. 지하철 5호선 인근."
     },
     {
       "name": "우한 뉴베이카이 쉬둥 인터내셔널 호텔",
@@ -2995,7 +2989,7 @@
         "넓은 객실",
         "친절한 직원"
       ],
-      "bookingTips": "Good for business travelers. Weekend rates often lower. Near the Yangtze River Bridge."
+      "bookingTips": "비즈니스 여행객에게 좋습니다. 주말 요금이 더 저렴한 경우가 많습니다. 양쯔강 다리 인근."
     }
   ],
   "transport": {
@@ -3044,7 +3038,7 @@
       ],
       "taxi": [
         "기본 요금: 10위안 (첫 3km)",
-        "Waiting: 0.5¥ per minute",
+        "대기: 분당 0.5위안",
         "야간 할증료: 20% 추가 (23:00-06:00)",
         "항상 미터기를 사용할 것을 요구하세요",
         "디디 앱을 적극 추천합니다 (영어 인터페이스 지원)",
@@ -3062,16 +3056,16 @@
         "대학가 주변 단거리 이동에 매우 좋습니다"
       ],
       "walking": [
-        "Central Wuhan is walkable between attractions",
-        "Use underground passages at major intersections",
-        "Walk on right side of sidewalks",
-        "Cross at designated crosswalks - jaywalking fines exist",
-        "Tanhualin and Jianghan Road areas best explored on foot"
+        "우한 중심부는 관광 명소 간 도보 이동이 가능합니다.",
+        "주요 교차로에서는 지하도를 이용하세요",
+        "보도에서는 오른쪽으로 걷기",
+        "지정된 횡단보도로 건너세요 - 무단횡단 시 벌금이 있습니다",
+        "탄화린과 장한루 지역은 도보로 둘러보는 것이 가장 좋습니다."
       ],
       "rental": [
-        "Electric scooters: Require helmet and license by law",
-        "Car rental: International license accepted with translation",
-        "Driver with car: Popular option for day trips to nearby attractions"
+        "전동 스쿠터: 법적으로 헬멧과 면허가 필요합니다",
+        "렌터카: 국제 면허증 + 번역본 허용",
+        "차량 이용: 인근 관광지 당일치기 여행에 인기 있는 옵션입니다"
       ]
     }
   },
@@ -3096,9 +3090,9 @@
       "icon": "wechat",
       "description": "두 번째로 인기 있는 결제 수단으로, 사회적 상호작용에 필수적입니다",
       "howToUse": [
-        "WeChat app required",
+        "위챗 앱 필요",
         "위챗페이를 통해 국제 카드를 연결하세요",
-        "Scan QR code to pay"
+        "QR 코드를 스캔하여 결제"
       ],
       "tips": [
         "많은 현지 서비스는 인증을 위해 위챗을 선호합니다",
@@ -3112,7 +3106,7 @@
       "howToUse": [
         "공항이나 현지 은행에서 환전하세요",
         "ATM이 널리 이용 가능합니다 (외국 카드 사용 시 수수료 부과될 수 있음)",
-        "100¥ notes most common"
+        "100위안 지폐가 가장 흔합니다"
       ],
       "tips": [
         "팁과 소액 구매를 위해 작은 지폐를 준비하세요",
@@ -3143,8 +3137,8 @@
       ],
       "tips": [
         "지하철 티켓 구매 시간 절약",
-        "Discount on bus fares",
-        "Refundable deposit"
+        "버스 요금 할인",
+        "환불 가능한 보증금"
       ]
     },
     {
@@ -3171,25 +3165,25 @@
     {
       "category": "dining",
       "title": "우한 음식 문화",
-      "content": "우한은 \"과오짜오(過早)\"로 유명합니다. 아침 식사 문화입니다. 현지인들은 수많은 포장마차 음식으로 아침 식사를 매우 진지하게 생각합니다. \"과오짜오러메이(過早了沒)\"는 일반적인 아침 인사입니다.",
+      "content": "우한은 '과짜오(아침 식사)'로 유명합니다. 아침 식사 문화로, 현지인들은 수많은 길거리 음식으로 아침을 매우 진지하게 즐깁니다. '과짜오 러 메이'는 일반적인 아침 인사말입니다.",
       "importance": "high"
     },
     {
       "category": "dining",
       "title": "열건면",
-      "content": "러간몐(熱乾面, 참깨 소스 비빔면)은 우한을 대표하는 요리입니다. 참깨 페이스트 코팅은 호불호가 갈릴 수 있습니다. 먼저 소량부터 시도해 보세요.",
+      "content": "열간면(참깨 소스 비빔면)은 우한을 대표하는 요리입니다. 즈마장(참깨 페이스트) 코팅은 호불호가 갈릴 수 있으니, 먼저 소량부터 시도해 보세요.",
       "importance": "high"
     },
     {
       "category": "dining",
       "title": "두피 (속피)",
-      "content": "더우피(豆皮)는 찹쌀과 고기를 채운 고소한 팬케이크입니다. 가장 맛있는 집을 찾으려면 라오통청 또는 후부샹으로 가세요.",
+      "content": "더우피는 찹쌀과 고기를 채운 고소한 팬케이크입니다. 가장 맛있는 집을 찾는다면 라오통청 또는 후부샹으로 가세요.",
       "importance": "high"
     },
     {
       "category": "seasonal",
       "title": "가재 시즌",
-      "content": "여름에 가재를 먹는 것은 우한의 전통입니다. 5월부터 9월까지 가재 전문점은 사람들로 가득합니다. 량량蒸샤(량량 정샤)나 푸디(푸디)는 모두 인기 있는 선택지입니다.",
+      "content": "여름에 새우 먹기(여름 가재)는 우한의 전통입니다. 5월부터 9월까지 가재 전문점은 사람들로 가득합니다. 량량정샤(리앙리앙 정샤)나 푸디(푸디) 모두 인기 있는 선택지입니다.",
       "importance": "medium"
     },
     {

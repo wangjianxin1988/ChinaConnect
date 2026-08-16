@@ -1,7 +1,4 @@
 {
-  "0": "자이언트 판다 기지 - 사랑스러운 판다의 고향",
-  "3": "어메이산 - 불교의 산 속 은신처",
-  "4": "쓰촨 오페라 - 전통적인 변검 쇼",
   "slug": "chengdu",
   "name": "成都",
   "nameEn": "Chengdu",
@@ -11,15 +8,15 @@
     "lat": 30.6587,
     "lng": 104.0658
   },
-  "timezone": "UTC+8 (China Standard Time)",
+  "timezone": "UTC+8 (중국 표준시)",
   "description": "쓰촨성의 성도 청두는 느긋한 라이프스타일, 매운 요리, 자이언트 판다로 유명한 '환락의 도시'입니다. 고대 촉 문화의 발상지이며, 휴식을 취할 수 있는 찻집, 매운 훠궈, 역사 깊은 진리, 그리고 구채구와 러산 대불 같은 명승지로의 접근성이 뛰어난 것이 매력입니다.",
   "coverImage": "/img/ext/ee9d4784d80e.webp",
   "highlights": [
-    "대熊猫 연구기지 - 사랑스러운 팬더의 집",
+    "자이언트 판다 기지 - 사랑스러운 판다의 고향",
     "진리 거리 - 고대 촉 문화와 스낵",
     "인민공원 - 찻집과 팬더",
-    "峨眉山 - 불교 산악 휴식지",
-    "천극 Opera - 전통 명반(臉변화) 공연"
+    "어메이산 - 불교의 산 속 은신처",
+    "쓰촨 오페라 - 전통적인 변검 쇼"
   ],
   "climate": {
     "type": "아열대 습윤 기후",
@@ -33,7 +30,7 @@
     ],
     "avgSummerTemp": "26C (79F)",
     "avgWinterTemp": "6C (43F)",
-    "tips": "Best visited in spring and autumn. Summers hot and humid but indoor AC everywhere. Winters mild but foggy. Rain common year-round. Bring umbrella."
+    "tips": "봄과 가을에 방문하기 가장 좋습니다. 여름은 덥고 습하지만 실내 에어컨이 곳곳에 있습니다. 겨울은 온화하지만 안개가 끼기 쉽습니다. 비는 연중 내내 자주 내리니 우산을 챙기세요."
   },
   "attractions": [
     {
@@ -63,7 +60,7 @@
     {
       "id": "jinli-street",
       "name": "锦里古街",
-      "nameEn": "锦里古街",
+      "nameEn": "진리 고가 (고대 거리)",
       "category": "cultural",
       "description": "재건된 고대 거리로 촉( Shu) 문화를 전시하며 전통 건축, 거리 음식, 찻집, 상점이 있습니다.",
       "image": "/img/ext/95dfd9d7b442.png",
@@ -180,14 +177,13 @@
       "phone": "+86 028  1664 6603"
     },
     {
-      "1": "중매 코너 (샹친자오)",
       "id": "peoples-park",
       "name": "人民公园",
       "nameEn": "인민공원",
       "category": "cultural",
       "description": "청두 차 문화의 중심지로서 전통 찻집, 결혼 정보 코너, 태극권 영역이 있습니다.",
       "image": "/img/ext/690be6b1d9ea.webp",
-      "address": "청양구的人民路 12호",
+      "address": "칭양구 런민루 12호",
       "coordinates": {
         "lat": 30.6575,
         "lng": 104.0665
@@ -197,7 +193,7 @@
       "recommendedVisitTime": "2-3시간",
       "highlights": [
         "전통 찻집",
-        "결혼 정보 코너 (相亲角)",
+        "중매 코너 (상친자오)",
         "골프 연습장",
         "민중학살 추모관"
       ],
@@ -379,7 +375,7 @@
       "category": "cultural",
       "description": "음악 공연장, 카페, 아트 설치물을 갖춘 창의적인 예술 지구로 탈바꿈한 재개발 공업 단지입니다.",
       "image": "/img/ext/63ed66139449.webp",
-      "address": "成華구 소가 River로 298번지",
+      "address": "청화구 샤오자허루 298호",
       "coordinates": {
         "lat": 30.6895,
         "lng": 104.1275
@@ -389,7 +385,7 @@
       "recommendedVisitTime": "2-3시간",
       "highlights": [
         "이전 공장 건물",
-        "음악场馆",
+        "음악 공연장",
         "아트 전시",
         "거리 공연"
       ],
@@ -565,7 +561,6 @@
       "phone": "+86 028  3247 4082"
     },
     {
-      "0": "청두 글로벌 센터",
       "id": "tianfu-new-area",
       "name": "天府新区",
       "nameEn": "톈푸 신구",
@@ -581,7 +576,7 @@
       "ticketPrice": "관광지에 따라 다름",
       "recommendedVisitTime": "3-5시간",
       "highlights": [
-        "청두環球中心",
+        "청두 글로벌 센터",
         "스카이 하트랜드",
         "현대 건축",
         "과학 박물관"
@@ -590,7 +585,6 @@
       "phone": "+86 028  6837 0293"
     },
     {
-      "1": "화룡 퍼포먼스",
       "id": "huanglongxi",
       "name": "黄龙溪古镇",
       "nameEn": "황용시 고대 마을",
@@ -607,7 +601,7 @@
       "recommendedVisitTime": "3-4시간",
       "highlights": [
         "고대의 물의 마을",
-        "화용龍パフォーマンス",
+        "화룽 퍼포먼스",
         "전통 사찰",
         "거리 음식"
       ],
@@ -689,7 +683,7 @@
     {
       "id": "chuanbai-ecological",
       "name": "川西竹海景区",
-      "nameEn": "川西竹海",
+      "nameEn": "촨시 주하이 (대나무 바다)",
       "category": "natural",
       "description": "핑링산에 있는 광활한 대나무 숲으로, 하이킹 코스, 유리 다리, 자연 경관을 갖추고 있습니다.",
       "image": "/img/ext/f559500ee99e.webp",
@@ -746,7 +740,7 @@
         "lng": 104.15
       },
       "openingHours": "07:30-18:00",
-      "ticketPrice": "55元",
+      "ticketPrice": "55위안",
       "recommendedVisitTime": "반나절",
       "highlights": [
         "자이언트 판다",
@@ -769,7 +763,7 @@
         "lng": 103.58
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "80元",
+      "ticketPrice": "80위안",
       "recommendedVisitTime": "하루 종일",
       "highlights": [
         "도교 문화",
@@ -792,7 +786,7 @@
         "lng": 104.02
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "50元",
+      "ticketPrice": "50위안",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "두보의 시비",
@@ -837,7 +831,7 @@
         "lng": 104.02
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "2-3시간",
       "highlights": [
         "장다첸의 벽화",
@@ -859,7 +853,7 @@
         "lng": 104.05
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "1.5시간",
       "highlights": [
         "불교 문화",
@@ -881,7 +875,7 @@
         "lng": 104.02
       },
       "openingHours": "09:00-18:00",
-      "ticketPrice": "70元",
+      "ticketPrice": "70위안",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "선버드",
@@ -903,7 +897,7 @@
         "lng": 104.05
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "人均50元",
+      "ticketPrice": "1인당 50위안",
       "recommendedVisitTime": "하루 종일",
       "highlights": [
         "훠궈",
@@ -926,7 +920,7 @@
         "lng": 104.32
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "반나절.",
       "highlights": [
         "하카 문화",
@@ -948,7 +942,7 @@
         "lng": 103.62
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "50元",
+      "ticketPrice": "50위안",
       "recommendedVisitTime": "반나절.",
       "highlights": [
         "자이언트 판다",
@@ -970,7 +964,7 @@
         "lng": 104.08
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "패션",
@@ -993,7 +987,7 @@
         "lng": 104.05
       },
       "openingHours": "11. 야간.",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "1시간",
       "highlights": [
         "12. 조명 쇼.",
@@ -1015,7 +1009,7 @@
         "lng": 104.05
       },
       "openingHours": "종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "1.5시간",
       "highlights": [
         "간식",
@@ -1037,7 +1031,7 @@
         "lng": 104.05
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "1시간",
       "highlights": [
         "맥주 문화"
@@ -1058,7 +1052,7 @@
         "lng": 104.05
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "30분",
       "highlights": [
         "도심",
@@ -1080,7 +1074,7 @@
         "lng": 104.08
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "1시간",
       "highlights": [
         "강",
@@ -1102,7 +1096,7 @@
         "lng": 104.12
       },
       "openingHours": "09:00-21:00",
-      "ticketPrice": "50元",
+      "ticketPrice": "50위안",
       "recommendedVisitTime": "1시간",
       "highlights": [
         "도시 전경",
@@ -1124,7 +1118,7 @@
         "lng": 104.07
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "호수",
@@ -1146,7 +1140,7 @@
         "lng": 104.32
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "30元",
+      "ticketPrice": "30위안",
       "recommendedVisitTime": "1시간",
       "highlights": [
         "만리장성 복제품"
@@ -1167,7 +1161,7 @@
         "lng": 104.12
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "습지",
@@ -1189,7 +1183,7 @@
         "lng": 104.05
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "1.5시간",
       "highlights": [
         "미술 전시회"
@@ -1240,7 +1234,7 @@
       "cuisine": "사천",
       "avgPrice": 600,
       "rating": 4.8,
-      "address": "중국存储 Chengdu 강남로 9호",
+      "address": "장난루 9호, 청두",
       "coordinates": {
         "lat": 30.6485,
         "lng": 104.0735
@@ -1325,7 +1319,6 @@
       "image": "/img/ext/c39a1a60923f.webp"
     },
     {
-      "0": "홍유 완탄 (고추기름 완탕)",
       "id": "chengdu-5",
       "name": "龙抄手",
       "nameEn": "룽차오쇼",
@@ -1340,7 +1333,7 @@
       },
       "description": "완통(차오쇼)과 사천 간식을 전문으로 하는 전설적인 레스토랑.",
       "dishHighlights": [
-        "빨간기름饅飩",
+        "훙유 원툰",
         "사천면",
         "달콤새콤 오리"
       ],
@@ -1389,12 +1382,11 @@
       "image": "/img/ext/32efc4033570.webp"
     },
     {
-      "2": "냉채 요리",
       "id": "chengdu-7",
       "name": "夫妻肺片",
       "nameEn": "부치페이피안",
       "type": "로컬",
-      "cuisine": "사천 냉菜",
+      "cuisine": "쓰촨 냉채",
       "avgPrice": 60,
       "rating": 4.6,
       "address": "청양구 시후아시 가 2번지",
@@ -1412,7 +1404,7 @@
       "tags": [
         "현지",
         "역사적인",
-        "냉菜",
+        "냉채",
         "반드시 시도해야 할"
       ],
       "star": 0,
@@ -1424,7 +1416,7 @@
     {
       "id": "chengdu-8",
       "name": "鹤鸣茶社",
-      "nameEn": "하명茶屋",
+      "nameEn": "허밍 차관",
       "type": "로컬",
       "cuisine": "사천 차",
       "avgPrice": 30,
@@ -1501,7 +1493,7 @@
       "description": "전통적인 영혼을 잃지 않으면서 혁신적인 사천 요리로 알려진 인기 있는 고품격 캐주얼 dining 공간입니다.",
       "dishHighlights": [
         "조림 가지",
-        "涎水鸡肉 (녹이는 닭고기)",
+        "커우수이지",
         "정교한 마파두부"
       ],
       "tags": [
@@ -1552,7 +1544,7 @@
     {
       "id": "chengdu-12",
       "name": "海底捞火锅",
-      "nameEn": "해디라오火锅",
+      "nameEn": "하이디라오 훠궈",
       "type": "로컬",
       "cuisine": "사천 탕후루",
       "avgPrice": 180,
@@ -1589,7 +1581,7 @@
       "cuisine": "사천 탕후루",
       "avgPrice": 130,
       "rating": 4.6,
-      "address": "고펭로 1-2, 고新技术开发区",
+      "address": "청두시 가오신구 가오펑루 1-2호",
       "coordinates": {
         "lat": 30.6475,
         "lng": 104.0665
@@ -1681,7 +1673,7 @@
       "name": "冒椒火辣",
       "nameEn": "마오jiaohuola",
       "type": "로컬",
-      "cuisine": "마오차이 (冒菜)",
+      "cuisine": "마오차이",
       "avgPrice": 50,
       "rating": 4.8,
       "address": "우후구 쿠싱 스트리트 39",
@@ -1713,7 +1705,7 @@
       "name": "冒菜老店",
       "nameEn": "마오 차이 라오 디안",
       "type": "로컬",
-      "cuisine": "마오차이 (冒菜)",
+      "cuisine": "마오차이",
       "avgPrice": 40,
       "rating": 4.6,
       "address": "인민공원 근처, 청양구",
@@ -1884,7 +1876,7 @@
       "description": "학생 지역에 위치한 인기 있는 레스토랑으로 푸짐한 양과 진정한 현지 맛으로 유명합니다.",
       "dishHighlights": [
         "매운 생선",
-        "매운酸한면",
+        "얼큰한 국수",
         "저렴한 고전 요리"
       ],
       "tags": [
@@ -2013,7 +2005,7 @@
       "dishHighlights": [
         "단단 면",
         "마파두부",
-        "사천 냉菜"
+        "쓰촨 냉채"
       ],
       "tags": [
         "쓰촨",
@@ -2095,7 +2087,7 @@
     {
       "id": "chengdu-29",
       "name": "阿婆回锅肉",
-      "nameEn": "阿婆回锅肉 (回锅肉)",
+      "nameEn": "할머니의 회과육 (돼지고기 볶음)",
       "type": "로컬",
       "cuisine": "회춘육",
       "avgPrice": 90,
@@ -2125,7 +2117,7 @@
     {
       "id": "chengdu-31",
       "name": "老成都串串香",
-      "nameEn": "老成都串串香 (串串香)",
+      "nameEn": "올드 청두 꼬치구이 (꼬치구이)",
       "type": "길거리",
       "cuisine": "춴춴샹 (꼬치 훠궈)",
       "avgPrice": 26,
@@ -2185,7 +2177,7 @@
     {
       "id": "chengdu-35",
       "name": "正宗回锅肉",
-      "nameEn": "正宗回锅肉 (回锅肉)",
+      "nameEn": "정통 회과육 (돼지고기 볶음)",
       "type": "로컬",
       "cuisine": "회과육",
       "avgPrice": 103,
@@ -2215,7 +2207,7 @@
     {
       "id": "chengdu-37",
       "name": "地道担担面",
-      "nameEn": "地道担担面 (担担面)",
+      "nameEn": "정통 단단면 (단단면)",
       "type": "길거리",
       "cuisine": "단단면",
       "avgPrice": 59,
@@ -2245,7 +2237,7 @@
     {
       "id": "chengdu-39",
       "name": "传统串串香",
-      "nameEn": "传统串串香 (串串香)",
+      "nameEn": "전통 꼬치구이 (꼬치구이)",
       "type": "카페",
       "cuisine": "촨촨샹 (꼬치 훠궈)",
       "avgPrice": 28,
@@ -2275,7 +2267,7 @@
     {
       "id": "chengdu-41",
       "name": "正宗火锅",
-      "nameEn": "正宗火锅 (火锅)",
+      "nameEn": "정통 훠궈 (중식 샤브샤브)",
       "type": "로컬",
       "cuisine": "훠궈",
       "avgPrice": 119,
@@ -2305,7 +2297,7 @@
     {
       "id": "chengdu-43",
       "name": "阿婆串串香",
-      "nameEn": "阿婆串串香 (串串香)",
+      "nameEn": "할머니의 꼬치구이 (꼬치구이)",
       "type": "로컬",
       "cuisine": "추안추안샹 (꼬치 훠궈)",
       "avgPrice": 34,
@@ -2335,7 +2327,7 @@
     {
       "id": "chengdu-45",
       "name": "巷子龙抄手",
-      "nameEn": "巷子龙抄手 (龙抄手)",
+      "nameEn": "골목 용춘수 (용춘수)",
       "type": "로컬",
       "cuisine": "롱차오서우 (드래곤 원톤)",
       "avgPrice": 56,
@@ -2365,7 +2357,7 @@
     {
       "id": "chengdu-47",
       "name": "巷子串串香",
-      "nameEn": "巷子串串香 (串串香)",
+      "nameEn": "골목 꼬치 향 (꼬치 향)",
       "type": "로컬",
       "cuisine": "꾸안꾸안샹(꼬치 훠궈)",
       "avgPrice": 57,
@@ -2395,7 +2387,7 @@
     {
       "id": "chengdu-49",
       "name": "正宗火锅",
-      "nameEn": "正宗火锅 (火锅)",
+      "nameEn": "정통 훠궈 (중식 샤브샤브)",
       "type": "로컬",
       "cuisine": "훠궈",
       "avgPrice": 74,
@@ -2425,7 +2417,7 @@
     {
       "id": "chengdu-51",
       "name": "阿婆担担面",
-      "nameEn": "阿婆担担面 (担担面)",
+      "nameEn": "할머니 단단면 (단단면)",
       "type": "카페",
       "cuisine": "단단면",
       "avgPrice": 76,
@@ -2455,7 +2447,7 @@
     {
       "id": "chengdu-53",
       "name": "地道麻婆豆腐",
-      "nameEn": "地道麻婆豆腐 (麻婆豆腐)",
+      "nameEn": "정통 마파두부 (마파두부)",
       "type": "로컬",
       "cuisine": "마파두부",
       "avgPrice": 49,
@@ -2485,7 +2477,7 @@
     {
       "id": "chengdu-55",
       "name": "街边担担面",
-      "nameEn": "街边担担面 (担担面)",
+      "nameEn": "길가 단단면 (단단면)",
       "type": "로컬",
       "cuisine": "단단면",
       "avgPrice": 93,
@@ -2515,7 +2507,7 @@
     {
       "id": "chengdu-57",
       "name": "成都味回锅肉",
-      "nameEn": "成都味回锅肉 (回锅肉)",
+      "nameEn": "청두식 회과육 (회과육)",
       "type": "길거리",
       "cuisine": "회과육",
       "avgPrice": 39,
@@ -2545,7 +2537,7 @@
     {
       "id": "chengdu-59",
       "name": "正宗龙抄手",
-      "nameEn": "正宗龙抄手 (龙抄手)",
+      "nameEn": "정통 용춘수 (용춘수)",
       "type": "카페",
       "cuisine": "룽차오서우(드래곤 원톤)",
       "avgPrice": 54,
@@ -2559,7 +2551,7 @@
       "hours": "09:00-21:00",
       "description": "청두 현지인이 추천하는 룽차오서우 전문점으로, 정통 맛과 합리적인 가격을 자랑합니다.",
       "dishHighlights": [
-        "회锅肉",
+        "회과육",
         "룽차오서우 (드래곤 원톤)",
         "마파두부"
       ],
@@ -2575,7 +2567,7 @@
     {
       "id": "chengdu-61",
       "name": "巷子串串香",
-      "nameEn": "巷子串串香 (串串香)",
+      "nameEn": "골목 꼬치 향 (꼬치 향)",
       "type": "로컬",
       "cuisine": "꾸안꾸안샹 (꼬치 훠궈)",
       "avgPrice": 95,
@@ -2605,7 +2597,7 @@
     {
       "id": "chengdu-63",
       "name": "老字号串串香",
-      "nameEn": "老字号串串香 (串串香)",
+      "nameEn": "노점 꼬치 샤브샤브 (꼬치 샤브샤브)",
       "type": "카페",
       "cuisine": "추안추안샹(꼬치 훠궈)",
       "avgPrice": 68,
@@ -2635,7 +2627,7 @@
     {
       "id": "chengdu-65",
       "name": "阿婆回锅肉",
-      "nameEn": "阿婆回锅肉 (回锅肉)",
+      "nameEn": "할머니의 회과육 (돼지고기 볶음)",
       "type": "로컬",
       "cuisine": "회과육",
       "avgPrice": 81,
@@ -2665,7 +2657,7 @@
     {
       "id": "chengdu-67",
       "name": "成都味麻婆豆腐",
-      "nameEn": "成都味麻婆豆腐 (麻婆豆腐)",
+      "nameEn": "청두식 마파두부 (마파두부)",
       "type": "길거리",
       "cuisine": "마파두부",
       "avgPrice": 30,
@@ -2681,7 +2673,7 @@
       "dishHighlights": [
         "룽차오서우 (드래곤 원톤)",
         "훠궈",
-        "회锅肉 (얼얼한 돼지고기 볶음)"
+        "회과육"
       ],
       "tags": [
         "트렌디한 체크인 명소",
@@ -2695,9 +2687,9 @@
     {
       "id": "chengdu-69",
       "name": "成都味回锅肉",
-      "nameEn": "成都味回锅肉 (回锅肉)",
+      "nameEn": "청두식 회과육 (회과육)",
       "type": "로컬",
-      "cuisine": "회锅肉 (얼얼한 돼지고기 볶음)",
+      "cuisine": "회과육",
       "avgPrice": 106,
       "rating": 4.7,
       "address": "청두시 진장구 푸드 스트리트 91번지",
@@ -2710,7 +2702,7 @@
       "description": "청두 현지인이 추천하는 회과육 맛집. 맛은 정통이고 가격도 저렴하다.",
       "dishHighlights": [
         "춴춴샹 (꼬치 훠궈)",
-        "회锅肉 (두 번 조리한 돼지고기)",
+        "회과육",
         "마파두부"
       ],
       "tags": [
@@ -2725,7 +2717,7 @@
     {
       "id": "chengdu-71",
       "name": "正宗串串香",
-      "nameEn": "正宗串串香 (串串香)",
+      "nameEn": "정통 꼬치 샤브샤브 (꼬치 샤브샤브)",
       "type": "로컬",
       "cuisine": "춴춴샹 (꼬치 훠궈)",
       "avgPrice": 141,
@@ -2761,16 +2753,16 @@
         "to": "청두 톈푸 국제공항 (TFU)",
         "duration": "다양함 (유럽/미주에서 10-14시간)",
         "price": "1000-8000¥",
-        "frequency": "Multiple daily flights",
+        "frequency": "매일 여러 편의 항공편",
         "tips": "2021년에 개장한 신공항(TFU)은 지하철로 연결됩니다. 일부 항공편은 기존 솽류 공항을 이용합니다."
       },
       {
         "type": "train",
         "from": "베이징 (7.5시간), 상하이 (10시간), 시안 (3시간)",
         "to": "청두 동역 / 청두역",
-        "duration": "3-10 hours",
+        "duration": "3-10시간",
         "price": "350-900¥",
-        "frequency": "Frequent departures",
+        "frequency": "자주 출발",
         "tips": "고속철도 네트워크가 잘 연결되어 있습니다. 인기 노선은 일찍 예약하세요."
       }
     ],
@@ -2782,7 +2774,7 @@
         "1호선은 판다 기지, 2호선은 진리로 연결"
       ],
       "bus": [
-        "Extensive network",
+        "광범위한 네트워크",
         "대나무 자전거(중바오)는 짧은 이동에 유용",
         "영어 내비게이션을 위한 앱 다운로드"
       ],
@@ -2816,7 +2808,7 @@
         "럭셔리 스파",
         "훌륭한 서비스"
       ],
-      "bookingTips": "Request higher floors for views."
+      "bookingTips": "전망을 위해 높은 층을 요청하세요."
     },
     {
       "name": "청두 보서",
@@ -2834,7 +2826,7 @@
         "뛰어난 서비스",
         "훌륭한 다이닝"
       ],
-      "bookingTips": "One of Chengdu's best hotels. Book far ahead."
+      "bookingTips": "청두 최고의 호텔 중 하나입니다. 미리 예약하세요."
     },
     {
       "name": "청두 샹그릴라 호텔",
@@ -2852,7 +2844,7 @@
         "중심 위치",
         "좋은 시설"
       ],
-      "bookingTips": "River-view rooms worth extra."
+      "bookingTips": "강 전망 객실은 추가 비용을 지불할 가치가 있습니다."
     },
     {
       "name": "청두 힐튼 호텔",
@@ -2870,7 +2862,7 @@
         "비즈니스에 적합",
         "현대적인 시설"
       ],
-      "bookingTips": "Good value for business travelers."
+      "bookingTips": "비즈니스 여행객에게 가성비가 좋습니다."
     },
     {
       "name": "청두 타이쿠리 춘시 아토 호텔",
@@ -2888,7 +2880,7 @@
         "가성비 우수",
         "좋은 조식"
       ],
-      "bookingTips": "Best budget option near major shopping."
+      "bookingTips": "주요 쇼핑 지역 근처 최고의 가성비 옵션."
     },
     {
       "name": "청두 W 호텔",
@@ -2906,7 +2898,7 @@
         "루프탑 바",
         "트렌디한 분위기"
       ],
-      "bookingTips": "Request high floor for city views."
+      "bookingTips": "도시 전망을 위해 높은 층을 요청하세요."
     },
     {
       "name": "청두 JW 메리어트 호텔",
@@ -2924,7 +2916,7 @@
         "럭셔리 스파",
         "파인 다이닝"
       ],
-      "bookingTips": "Good for business travelers."
+      "bookingTips": "출장 여행객에게 좋습니다."
     },
     {
       "name": "청두 켐핀스키 호텔",
@@ -2942,7 +2934,7 @@
         "유럽풍 스타일",
         "좋은 조식"
       ],
-      "bookingTips": "Weekend rates often lower."
+      "bookingTips": "주말 요금이 종종 더 저렴합니다."
     },
     {
       "name": "청두 아스코트 래플즈 시티",
@@ -2960,7 +2952,7 @@
         "지하철역 인근",
         "주방 시설"
       ],
-      "bookingTips": "Good for long stays."
+      "bookingTips": "장기 숙박에 좋습니다."
     },
     {
       "name": "청두 판다 프린스 테마 호텔",
@@ -2978,7 +2970,7 @@
         "판다 기지 인근",
         "가족 친화적"
       ],
-      "bookingTips": "Book early for Panda Base visits."
+      "bookingTips": "판다 기지 방문 시 일찍 예약하세요."
     },
     {
       "name": "청두 댜오위타이 부티크 호텔",
@@ -2996,7 +2988,7 @@
         "우아한 중국식 디자인",
         "판다 기지 인근"
       ],
-      "bookingTips": "One of Chengdu's most exclusive hotels."
+      "bookingTips": "청두에서 가장 고급스러운 호텔 중 하나."
     },
     {
       "name": "청두 진장 호텔",
@@ -3014,7 +3006,7 @@
         "중심부 위치",
         "믿을 수 있는 서비스"
       ],
-      "bookingTips": "Good value for money."
+      "bookingTips": "가격 대비 가치가 좋습니다."
     },
     {
       "name": "청두 환화시 즈쉬안 홀리데이 인",
@@ -3032,7 +3024,7 @@
         "깨끗하고 현대적",
         "좋은 조식 포함"
       ],
-      "bookingTips": "Best value near cultural attractions."
+      "bookingTips": "문화 명소 근처에서 최고의 가치."
     },
     {
       "name": "청두 왕장 빈관",
@@ -3050,7 +3042,7 @@
         "조용한 환경",
         "좋은 레스토랑"
       ],
-      "bookingTips": "Good for visitors to university area."
+      "bookingTips": "대학가 방문객에게 좋음."
     },
     {
       "name": "청두 타이허 소피텔",
@@ -3068,7 +3060,7 @@
         "중심 위치",
         "좋은 서비스"
       ],
-      "bookingTips": "Book directly for upgrades."
+      "bookingTips": "업그레이드를 위해 직접 예약하세요."
     }
   ],
   "payment": [
@@ -3077,9 +3069,9 @@
       "icon": "alipay",
       "description": "표준 결제, 어디서나 사용 가능",
       "howToUse": [
-        "Download before arrival",
-        "Bind international card",
-        "QR code payment"
+        "도착 전에 다운로드하세요",
+        "국제 카드 등록",
+        "QR 코드 결제"
       ],
       "tips": [
         "청두는 현대적인 도시입니다 - 대부분의 곳에서 카드를 받습니다",
@@ -3089,10 +3081,10 @@
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Common in Chengdu",
+      "description": "청두에서 흔함",
       "howToUse": [
-        "WeChat app required",
-        "Link card"
+        "위챗 앱 필요",
+        "카드 연결"
       ],
       "tips": [
         "디디 차량 호출은 위챗이 필요합니다",
@@ -3105,7 +3097,7 @@
       "description": "전통 찻집과 소규모 상점에서 유용합니다",
       "howToUse": [
         "비상시를 위해 100-200위안을 보관하세요",
-        "ATMs at every corner"
+        "모퉁이마다 ATM"
       ],
       "tips": [
         "전통 찻집은 대부분 현금만 받습니다",
@@ -3231,7 +3223,7 @@
     {
       "category": "dialect-hospitality",
       "title": "사천식 환대",
-      "content": "쓰촨 사람들은 따뜻함과 콜라겐으로 유명합니다. 현지 문화에 관심을 보이면 현지인들이 차나 식사에 초대할 수도 있습니다. '바스'(巴適, 편안함/훌륭함을 뜻함)라고 말하면 기뻐합니다. 거절을 반복하는 것은 무례한 것으로 간주됩니다.",
+      "content": "쓰촨 사람들은 따뜻함과 콜라겐으로 유명합니다. 현지 문화에 관심을 보이면 현지인들이 차나 식사에 초대할 수도 있습니다. '바스' (빠스 - 편안함/훌륭함을 뜻함)라고 말하면 기뻐합니다. 거듭 거절하는 것은 실례로 여겨집니다.",
       "importance": "medium"
     },
     {
@@ -3243,19 +3235,19 @@
     {
       "category": "spicy-tolerance",
       "title": "매운 음식 내성 기르기",
-      "content": "'웨이라'(微辣, 약간 매움) 또는 '중라'(中辣, 중간 매움)부터 시작하세요. 필요에 따라 '칭탕'(清湯, 일반)을 요청하세요. 화자오(花椒)는 '마'(麻, 저림) 느낌을 만들어냅니다. 이것은 단순한 매움이 아니라 진정한 경험입니다. 차나 물을 마시며 진정하세요.",
+      "content": "'웨이라' (약간 매움) 또는 '중라' (중간 매움)부터 시작하세요. 필요에 따라 '칭탕' (일반)을 요청하세요. 화자오는 '마' (얼얼함)의 느낌을 만듭니다. 이것은 단순한 매움이 아니라 진짜 경험입니다. 차나 물을 마시며 진정하세요.",
       "importance": "high"
     },
     {
       "category": "foot-massage-culture",
       "title": "천푸 발 마사지 예절",
-      "content": "발 마사지(족료) 가게는 어디에나 있으며 사회적으로 용인됩니다. 팁은 10~20%가 일반적입니다. 초보자에게는 '중식안마'(中式按摩, 중국식)가 자극이 적어 추천됩니다. 인기 체인으로는 '량쯔'(良子)와 '진서인샹'(金色印象)이 있습니다. 친구와 함께 가는 것이 일반적입니다.",
+      "content": "발 마사지 (족료) 가게는 어디에나 있으며 사회적으로 용인됩니다. 팁은 10~20%가 일반적입니다. 초보자에게는 '중식 마사지' (중국식)가 자극이 적어 추천됩니다. 인기 체인점으로는 '량쯔'와 '진서인샹'이 있습니다. 친구와 함께 가는 것이 일반적입니다.",
       "importance": "medium"
     },
     {
       "category": "sichuan-opera-ticket",
       "title": "쓰촨 오페라 공연 가이드",
-      "content": "촉풍아운(蜀風雅韻)이 가장 정통한 곳입니다. 호텔 컨시어지나 여행 앱으로 예약하세요. 공연에는 변검(變臉), 귀청소, 다예(茶藝)가 포함됩니다. 공연 중 사진 촬영은 금지입니다. 드레스 코드는 엄격하지 않지만 스마트 캐주얼을 권장합니다.",
+      "content": "수풍아운이 가장 정통한 곳입니다. 호텔 컨시어지 또는 여행 앱으로 예약하세요. 공연에는 변검, 귀청소, 다예가 포함됩니다. 공연 중 사진 촬영은 금지입니다. 드레스 코드는 엄격하지 않지만 스마트 캐주얼을 권장합니다.",
       "importance": "medium"
     },
     {
@@ -3267,13 +3259,13 @@
     {
       "category": "hotpot-dining-etiquette",
       "title": "훠궈 식사 예절",
-      "content": "생고기에는 공개(公筷, 공용 젓가락)를 사용하세요. 재료를 빠르게 익히므로 계속 저어주지 마세요. 식히기 위해 유뎨(油碟, 기름 소스)에 찍어 드세요. 소고기는 '치상파샤'(七上八下, 일곱 번 올리고 여덟 번 내리기)로 빠르게 담가 익히세요. 냄비 국물은 마시지 마세요. 너무 기름집니다. AA제(각자 계산)로 나누어 계산하세요.",
+      "content": "생고기에는 공용 젓가락을 사용하세요. 재료를 빠르게 익히므로 계속 저어주지 마세요. 식히기 위해 기름 소스에 찍어 드세요. 소고기는 '치샹빠샤' (일곱 번 올리고 여덟 번 내리기)로 빠르게 찍어 익히세요. 냄비 국물은 마시지 마세요 - 너무 기름집니다. AA제 (각자 계산)로 나누어 계산하세요.",
       "importance": "high"
     },
     {
       "category": "chuan-chuan-slang",
       "title": "촨촨 속어 가이드",
-      "content": "촨촨샹(串串香)에는 독특한 용어가 있습니다. '촨촨'(串串)은 꼬치를 뜻하고, '수촨촨'(數串串)은 식사가 끝날 때 꼬치 개수를 세는 것을 의미하며, '위안양궈'(鴛鴦鍋)는 절반은 맵고 절반은 순한 냄비입니다. 시간을 두고 즐기세요. 2~3시간의 식사가 일반적입니다. 아직 배가 고프다면 2차로 가세요.",
+      "content": "추안추안샹에는 독특한 용어가 있습니다: '청청'은 꼬치를 의미하고, '슈청청'은 식사가 끝날 때 꼬치 개수를 세는 것을 의미하며, '위안양궈'는 절반은 매운 맛, 절반은 순한 맛의 냄비입니다. 시간을 두고 즐기세요 - 2~3시간의 식사가 일반적입니다. 아직 배가 고프다면 2차로 가세요.",
       "importance": "low"
     },
     {

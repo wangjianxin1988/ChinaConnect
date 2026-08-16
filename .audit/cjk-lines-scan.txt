@@ -1,0 +1,180 @@
+########## src/pages/[lang]/cities/index.astro (7)
+   32: title: "中国の都市", subtitle: "中国各地の都市を、旅行者向けの実用情報とともに紹介します。",
+   33: pageTitle: "中国の都市を探す - ChinaConnect", pageDescription: "中国全土の幅広い都市を、旅行情報・文化・交通・食の実用ガイドとともに紹介します。",
+   34: searchPlaceholder: "都市を検索…", sortBy: "並べ替え：", sortRecommended: "おすすめ", sortTier: "ティア（S → D）", sortName: "名前（A-Z）", sortRegion: "地
+   35: tierLabel: "ティア：", tierAll: "すべて", tierNone: "なし", tierShortS: "Sティア", tierShortA: "Aティア", tierShortB: "Bティア", tierShortC: "Cティア",
+   36: ratingTitle: "ChinaConnect 都市評価™", ratingDesc: "4つの指標による複合評価：", economicStrength: "経済力", globalConnectivity: "国際接続性", tourismCompe
+   37: dataSources: "データソース：国家統計局、中国民用航空局、文化・観光部、OpenMeteoの気象データ", refreshedWeekly: "毎週更新（気候情報を随時調整）", exploreGuide: "ガイドを見る", loadingMor
+   38: tierLegendTitle: "ChinaConnect 都市評価™ — ティア分類", tierLegendDesc: "各都市を、経済・国際接続性・観光競争力・暮らしやすさの複合スコア（0〜100）で5段階に分類しています。", tierSDesc: 
+########## src/pages/[lang]/city/[slug].astro (21)
+   62: toggleUnit: lang === "ja" ? "温度単位を切り替え" : "Toggle temperature unit",
+   65: rainProbability: lang === "ja" ? "降水確率" : "rain",
+   543: <p class="section-subtitle" data-i18n="cityPage.foodSubtitle">{isJapanese ? `${localCityName}のグルメハイライト` : `Discover local food hig
+   584: <p class="section-subtitle" data-i18n="cityPage.attractionsSubtitle">{isJapanese ? `${localCityName}のベスト観光スポット` : `Discover the be
+   601: <p class="section-subtitle" data-i18n="cityPage.transportSubtitle">{isJapanese ? `${localCityName}へのアクセスと市内移動` : `Getting to and a
+   605: <h3 class="text-lg font-semibold mb-4" data-i18n="cityPage.gettingTo">{isJapanese ? `${localCityName}へのアクセス` : `Getting to ${local
+   715: <p class="section-subtitle">{isJapanese ? `${totalHotelCount}軒の選りすぐりホテルを6つのカテゴリーから` : `Browse ${totalHotelCount} vetted hotels acr
+   723: { key: "luxury", label: lang === "ja" ? "ラグジュアリー" : "豪华", labelEn: "Luxury", icon: "🏨", colorClass: "border-purple-200 hover:borde
+   724: { key: "mid_range", label: lang === "ja" ? "ミッドレンジ" : "中端", labelEn: "Mid-Range", icon: "👔", colorClass: "border-blue-200 hover:bo
+   725: { key: "budget", label: lang === "ja" ? "バジェット" : "经济", labelEn: "Budget", icon: "💰", colorClass: "border-green-200 hover:border-g
+   726: { key: "hostel", label: lang === "ja" ? "ホステル" : "青年旅舍", labelEn: "Hostel", icon: "🛏", colorClass: "border-amber-200 hover:border-
+   727: { key: "love_hotel", label: lang === "ja" ? "ラブホテル" : "情趣", labelEn: "Love Hotel", icon: "💋", colorClass: "border-pink-200 hover:b
+   728: { key: "esports_hotel", label: lang === "ja" ? "eスポーツ" : "电竞", labelEn: "Esports", icon: "🎮", colorClass: "border-indigo-200 hover
+   765: <p class="section-subtitle">{isJapanese ? `${localCityName}での支払い方法` : `How to pay in ${city.nameEn}`}</p>
+   834: <span>📶</span> <span data-i18n="cityPage.esimRecommended">eSIM（推奨）</span>
+   849: <li data-i18n="cityPage.proTipEsim1"><span>{isJapanese ? "💡" : "?"}</span> {isJapanese ? "eSIMは、お使いのスマホが対応している場合（iPhone XS以降および大半の
+   850: <li data-i18n="cityPage.proTipEsim2"><span>{isJapanese ? "💡" : "?"}</span> {isJapanese ? "中国到着前にeSIMアプリをダウンロードしておきましょう。" : "Downlo
+   851: <li data-i18n="cityPage.proTipEsim3"><span>{isJapanese ? "💡" : "?"}</span> {isJapanese ? "AiraloとHolaflyは、データ無制限プランを含む中国向けeSIMを提供し
+   868: title={(translations[lang] || translations.en).cityPage?.essentialAppsFor?.replace("{city}", localCityName) ?? (isJapanese ? `${lo
+   879: <p class="section-subtitle">{isJapanese ? `${localCityName}で必要な文化知識` : `Essential cultural knowledge for ${city.nameEn}`}</p>
+   890: <p class="section-subtitle">{isJapanese ? `${localCityName}で必要な緊急電話番号` : `Important phone numbers in ${city.nameEn}`}</p>
+########## src/pages/[lang]/city/[slug]/attractions.astro (38)
+   31: const pageDescription = ((translations[lang] || translations.en).cityAttractions?.subtitle || `${localCityName}の${city.attractions
+   36: adventure: { en: "Adventure", ja: "アドベンチャー", ko: "모험", "zh-CN": "探险", "zh-TW": "探險", th: "การผจญภัย", vi: "Phiêu lưu", ru: "Приклю
+   37: aquarium: { en: "Aquarium", ja: "水族館", ko: "수족관", "zh-CN": "水族馆", "zh-TW": "水族館", th: "พิพิธภัณฑ์สัตว์น้ำ", vi: "Thủy cung", ru: "
+   38: beach: { en: "Beach", ja: "ビーチ", ko: "해변", "zh-CN": "海滩", "zh-TW": "海灘", th: "ชายหาด", vi: "Bãi biển", ru: "Пляж", fr: "Plage", de
+   39: cultural: { en: "Cultural", ja: "文化", ko: "문화", "zh-CN": "文化", "zh-TW": "文化", th: "วัฒนธรรม", vi: "Văn hóa", ru: "Культурный", fr:
+   40: culture: { en: "Culture", ja: "文化", ko: "문화", "zh-CN": "文化", "zh-TW": "文化", th: "วัฒนธรรม", vi: "Văn hóa", ru: "Культура", fr: "Cu
+   41: entertainment: { en: "Entertainment", ja: "エンターテイメント", ko: "연예", "zh-CN": "娱乐", "zh-TW": "娛樂", th: "บันเทิง", vi: "Giải trí", ru: 
+   42: family: { en: "Family", ja: "家族向け", ko: "가족", "zh-CN": "亲子", "zh-TW": "親子", th: "ครอบครัว", vi: "Gia đình", ru: "Семейный", fr: "F
+   43: festival: { en: "Festival", ja: "祭り", ko: "축제", "zh-CN": "节庆", "zh-TW": "節慶", th: "เทศกาล", vi: "Lễ hội", ru: "Фестиваль", fr: "Fe
+   44: historical: { en: "Historical", ja: "歴史", ko: "역사", "zh-CN": "历史", "zh-TW": "歷史", th: "ประวัติศาสตร์", vi: "Lịch sử", ru: "Историч
+   45: island: { en: "Island", ja: "島", ko: "섬", "zh-CN": "岛屿", "zh-TW": "島嶼", th: "เกาะ", vi: "Đảo", ru: "Остров", fr: "Île", de: "Insel
+   46: landmark: { en: "Landmark", ja: "ランドマーク", ko: "랜드마크", "zh-CN": "地标", "zh-TW": "地標", th: "สถานที่สำคัญ", vi: "Địa danh", ru: "Досто
+   47: market: { en: "Market", ja: "市場", ko: "시장", "zh-CN": "市场", "zh-TW": "市集", th: "ตลาด", vi: "Chợ", ru: "Рынок", fr: "Marché", de: "M
+   48: modern: { en: "Modern", ja: "モダン", ko: "현대", "zh-CN": "现代", "zh-TW": "現代", th: "ทันสมัย", vi: "Hiện đại", ru: "Современный", fr: "
+   49: museum: { en: "Museum", ja: "博物館", ko: "박물관", "zh-CN": "博物馆", "zh-TW": "博物館", th: "พิพิธภัณฑ์", vi: "Bảo tàng", ru: "Музей", fr: "
+   50: natural: { en: "Natural", ja: "自然", ko: "자연", "zh-CN": "自然", "zh-TW": "自然", th: "ธรรมชาติ", vi: "Thiên nhiên", ru: "Природа", fr: 
+   51: nature: { en: "Nature", ja: "自然", ko: "자연", "zh-CN": "自然", "zh-TW": "自然", th: "ธรรมชาติ", vi: "Thiên nhiên", ru: "Природа", fr: "N
+   52: park: { en: "Park", ja: "公園", ko: "공원", "zh-CN": "公园", "zh-TW": "公園", th: "สวนสาธารณะ", vi: "Công viên", ru: "Парк", fr: "Parc", d
+   53: resort: { en: "Resort", ja: "リゾート", ko: "리조트", "zh-CN": "度假区", "zh-TW": "度假區", th: "รีสอร์ท", vi: "Khu nghỉ dưỡng", ru: "Курорт", 
+   54: seasonal: { en: "Seasonal", ja: "季節限定", ko: "계절", "zh-CN": "季节性", "zh-TW": "季節性", th: "ตามฤดูกาล", vi: "Theo mùa", ru: "Сезонный",
+   55: shopping: { en: "Shopping", ja: "ショッピング", ko: "쇼핑", "zh-CN": "购物", "zh-TW": "購物", th: "ช้อปปิ้ง", vi: "Mua sắm", ru: "Шоппинг", fr
+   56: sports: { en: "Sports", ja: "スポーツ", ko: "스포츠", "zh-CN": "运动", "zh-TW": "運動", th: "กีฬา", vi: "Thể thao", ru: "Спорт", fr: "Sport",
+   57: street: { en: "Street", ja: "ストリート", ko: "거리", "zh-CN": "街区", "zh-TW": "街區", th: "ถนน", vi: "Phố", ru: "Улица", fr: "Rue", de: "St
+   58: temple: { en: "Temple", ja: "寺院", ko: "사찰", "zh-CN": "寺庙", "zh-TW": "寺廟", th: "วัด", vi: "Chùa", ru: "Храм", fr: "Temple", de: "Te
+   59: "theme-park": { en: "Theme Park", ja: "テーマパーク", ko: "테마파크", "zh-CN": "主题公园", "zh-TW": "主題公園", th: "สวนสนุก", vi: "Công viên giải t
+   60: wellness: { en: "Wellness", ja: "ウェルネス", ko: "웰니스", "zh-CN": "养生", "zh-TW": "養生", th: "สุขภาพดี", vi: "Sức khỏe", ru: "Оздоровлени
+   84: <span class="text-white" data-i18n="cityPage.attractionsHeading">{isJapanese ? `${localCityName}の観光スポット` : `Attractions`}</span>
+   88: 🏛️{isJapanese ? `${localCityName}の観光スポット` : `Attractions in ${city.nameEn}`}
+   90: <p class="text-xl text-purple-200" >{isJapanese ? `${localCityName}の${city.attractions.length}件の観光スポット` : (translations[lang] || t
+   199: <a href={`tel:${attraction.phone.replace(/\s/g, "")}`} class="inline-flex items-center gap-1 text-sm text-green-700 hover:text-gre
+   291: <h2 class="text-lg font-semibold text-gray-700 mb-3"><span data-i18n="cityPage.dataSourcesHeading">データソース＆参考文献</span></h2>
+   293: <p data-i18n="cityPage.dataSourcesDesc">観光地データは権威ある情報源から編集されています。訪問前に詳細を確認することをお勧めします:</p>
+   295: <li><a href="https://www.mafengwo.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{citySourceLabel(lang, 
+   296: <li><a href="https://www.ctrip.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Ctrip / Trip.com</a>  — <
+   297: <li><a href="https://www.tripadvisor.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">TripAdvisor</a>  — 
+   298: <li><a href="https://www.chinanews.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{citySourceLabel(lang
+   299: <li><a href="https://www.mct.gov.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{citySourceLabel(lang, "
+   301: <p class="text-xs text-gray-400 mt-3"><span data-i18n="cityAttractions.disclaimer">営業時間、チケット料金、電話番号は変更される場合があります。公式ウェブサイトで確認するか、事前
+########## src/pages/[lang]/city/[slug]/food.astro (16)
+   46: ? `${localCityName}のグルメガイド：ミシュラン、ブラックパール、地元の人気店を網羅`
+   57: if (type === "michelin") return "ミシュラン";
+   58: if (type === "blackpearl") return "ブラックパール";
+   59: return "地元のおすすめ";
+   91: <span>🍜</span> <span>{isJapanese ? `${localCityName}のグルメ` : `${city.nameEn} Food`}</span>
+   93: <p class="text-orange-100" data-i18n="foodPage.cityEmptySubtitle">{isJapanese ? `ミシュラン、黒真珠、地元の人気店など選りすぐり` : `Discover Michelin, Bl
+   213: {restaurant.type === "michelin" && restaurant.star ? (lang === "ja" ? `${restaurant.star}つ星` : `${restaurant.star}-star`) : ""}
+   214: {restaurant.type === "blackpearl" && restaurant.diamond ? (lang === "ja" ? `${restaurant.diamond}ダイヤ` : `${restaurant.diamond}-dia
+   505: <h2 class="text-lg font-semibold text-gray-700 mb-3"><span aria-hidden="true">📊</span> <span data-i18n="cityFood.dataSourcesHeadin
+   507: <p><span data-i18n="cityFood.dataSourcesDesc">レストランデータは権威ある情報源から編集されています。訪問前に詳細を確認することをお勧めします：</span></p>
+   509: <li><a href="https://www.dianping.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{citySourceLabel(lang,
+   510: <li><a href="https://www.michelin.com/en/restaurant-and-hotel/" target="_blank" rel="noopener" class="text-blue-600 hover:underlin
+   511: <li><a href="https://www.meishij.net" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{citySourceLabel(lang, 
+   512: <li><a href="https://www.ctrip.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{citySourceLabel(lang, "c
+   513: <li><a href="https://www.mafengwo.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{citySourceLabel(lang, 
+   515: <p class="text-xs text-gray-400 mt-3"><span data-i18n="cityFood.disclaimer">電話番号と住所は変更される場合があります。公式チャンネルで確認するか、事前に電話で確認することをお勧めします
+########## src/pages/[lang]/city/[slug]/hotels.astro (4)
+   65: ? (lang === "ja" ? `${localCityName}の${HOTEL_CATEGORY_CONFIG[initialCategory].labels && HOTEL_CATEGORY_CONFIG[initialCategory].lab
+   66: : (lang === "ja" ? `${localCityName}のホテル - 全カテゴリー | ChinaConnect` : `${city.nameEn} Hotels - All Categories | ChinaConnect`);
+   69: ? (lang === "ja" ? `${localCityName}の${HOTEL_CATEGORY_CONFIG[initialCategory].labels && HOTEL_CATEGORY_CONFIG[initialCategory].lab
+   70: : (lang === "ja" ? `${localCityName}で理想的なホテルを見つけよう。ラグジュアリー、ミッドレンジ、バジェット、ホステル、ラブホテル、eスポーツホテルなど全カテゴリー。${hotels.length}件のオプション.` : `F
+########## src/pages/[lang]/food/[id].astro (7)
+   31: michelin: { label: "米其林", labelEn: "Michelin", labelJa: "ミシュラン", icon: "⭐", stars: restaurant.star, color: "text-[#1E3A5F]" },
+   33: label: "黑珍珠",
+   34: labelEn: "Black Pearl", labelJa: "ブラックパール",
+   39: local: { label: "本地推荐", labelEn: "Local", labelJa: "地元のおすすめ", icon: "🔥", color: "text-[#B8383D]" },
+   77: <BaseLayout title={lang === "ja" ? `${jaFood(restaurant.name)} - おすすめグルメ` : showTitleCn ? `${restaurant.name} - 美食推荐` : `${restaur
+   89: {restaurant.type === 'michelin' && restaurant.star && (lang === "ja" ? `${restaurant.star}つ星` : showTitleCn ? `${restaurant.star}星
+   90: {restaurant.type === 'blackpearl' && restaurant.diamond && (lang === "ja" ? `${restaurant.diamond}ダイヤ` : showTitleCn ? `${restaura
+########## src/pages/[lang]/food/index.astro (6)
+   328: 'all': { icon: '🍽️', labelKey: 'foodPage.filter全部', colorClass: 'bg-gray-50 border-gray-200 text-gray-700' },
+   329: 'local_recommend': { icon: '❤️', labelKey: 'foodPage.filter本地人推荐', colorClass: 'bg-red-50 border-red-200 text-red-700' },
+   330: 'michelin': { icon: '⭐', labelKey: 'foodPage.filter米其林', colorClass: 'bg-amber-50 border-amber-200 text-amber-700' },
+   331: 'blackpearl': { icon: '💎', labelKey: 'foodPage.filter黑珍珠', colorClass: 'bg-slate-800 border-slate-600 text-slate-200' },
+   332: 'affordable': { icon: '💙', labelKey: 'foodPage.filter平价美食', colorClass: 'bg-blue-50 border-blue-200 text-blue-700' },
+   333: 'street_food': { icon: '🔥', labelKey: 'foodPage.filter苍蝇馆子', colorClass: 'bg-orange-50 border-orange-200 text-orange-700' },
+########## src/pages/[lang]/guide/attractions.astro (12)
+   73: <li>{lang === "ja" ? `• 故宮博物院 — 皇室の宮殿建築群` : `• Forbidden City - Imperial palace complex`}</li>
+   74: <li>{lang === "ja" ? `• 万里の長城 — 象徴的な古代の要塞` : `• Great Wall - Iconic ancient fortification`}</li>
+   75: <li>{lang === "ja" ? `• 天壇 — ユネスコ世界遺産` : `• Temple of Heaven - UNESCO heritage site`}</li>
+   81: <li>{lang === "ja" ? `• 外灘 — 歴史あるウォーターフロント遊歩道` : `• The Bund - Historic waterfront promenade`}</li>
+   82: <li>{lang === "ja" ? `• 豫園 — 古典的な中国庭園` : `• Yu Garden - Classical Chinese garden`}</li>
+   83: <li>{lang === "ja" ? `• 上海タワー — 世界最速のエレベーター` : `• Shanghai Tower - World's fastest elevator`}</li>
+   89: <li>{lang === "ja" ? `• 兵馬俑 — 古代の兵士の像` : `• Terracotta Warriors - Ancient army statue`}</li>
+   90: <li>{lang === "ja" ? `• 西安城壁 — 保存状態の良い城壁` : `• City Wall - Best-preserved city walls`}</li>
+   91: <li>{lang === "ja" ? `• ムスリムクォーター — 屋台グルメの楽園` : `• Muslim Quarter - Street food paradise`}</li>
+   97: <li>{lang === "ja" ? `• ジャイアントパンダ基地 — パンダ保護施設` : `• Giant Panda Base - Panda conservation`}</li>
+   98: <li>{lang === "ja" ? `• 錦里古街 — 伝統的な商店街` : `• Jinli Street - Traditional shopping street`}</li>
+   99: <li>{lang === "ja" ? `• 楽山大仏 — ユネスコ世界遺産` : `• Leshan Giant Buddha - UNESCO heritage`}</li>
+########## src/pages/[lang]/guide/business/index.astro (17)
+   22: titleJa: "招待状テンプレート",
+   23: titleCn: "商务邀请函模板",
+   27: descriptionJa: "ビザ申請用のすぐ使えるバイリンガル招待状をダウンロード。貿易代表団、会議出席、パートナー訪問に対応した編集可能な形式。",
+   32: titleJa: "展示会・イベントカレンダー",
+   33: titleCn: "展会与活动日历",
+   37: descriptionJa: "中国の主要な見本市や業界イベントに合わせて旅行を計画。広交会（Canton Fair）、CIIE、デザインウィーク、その他数百の地域展示会の日程と会場を掲載。",
+   42: titleJa: "会社設立ガイド",
+   43: titleCn: "工商注册指南",
+   47: descriptionJa: "中国でのWFOE、JV、または駐在員事務所設立のステップバイステップガイド。必要書類、スケジュール、費用、2026年最新の規制情報を網羅。",
+   52: titleJa: "ビジネスマナー基本",
+   53: titleCn: "商务礼仪要点",
+   57: descriptionJa: "中国のビジネス文化、食事マナー、贈り物の習慣、会議の進め方を習得。よくある失敗を避け、長期的なguanxiを築く。",
+   62: titleJa: "翻訳・通訳サービス",
+   63: titleCn: "翻译服务预约",
+   67: descriptionJa: "中国出張時のプロ通訳・翻訳者を予約。逐次通訳、同時通訳、公認翻訳文書に対応。",
+   111: <p class="text-muted-foreground max-w-2xl">{lang === "ja" ? "中国旅行ガイドの他のコンテンツと連携するバイリンガルビジネスツール。ここにあるすべてのリンクは /guide → Business Too
+   132: {lang === "ja" ? "開く" : lang === "zh-CN" || lang === "zh-TW" ? "打开" : "Open"}
+########## src/pages/[lang]/guide/communication.astro (2)
+   69: title={lang === "ja" ? "中国でつながり続ける" : "Stay Connected in China"}
+   70: subtitle={lang === "ja" ? "必須のメッセージ・通信アプリ" : "Essential messaging and connectivity apps"}
+########## src/pages/[lang]/guide/index.astro (21)
+   21: "Stage 1": "第1段階",
+   22: "Stages 2 & 10": "第2・10段階",
+   23: "Stage 3": "第3段階",
+   24: "Stages 4-7": "第4〜7段階",
+   25: "Stage 8": "第8段階",
+   26: "Stage 9": "第9段階",
+   27: "Stage 11": "第11段階",
+   28: "Stage 12": "第12段階",
+   34: titleCn: "签证指南",
+   44: titleCn: "支付指南",
+   54: titleCn: "通讯指南",
+   64: titleCn: "交通指南",
+   74: titleCn: "住宿指南",
+   84: titleCn: "紧急情况处理",
+   94: titleCn: "离境指南",
+   104: titleCn: "餐饮指南",
+   117: titleCn: "商务邀请函模板",
+   124: titleCn: "展会与活动日历",
+   131: titleCn: "工商注册指南",
+   138: titleCn: "商务礼仪速成",
+   145: titleCn: "翻译服务预约",
+########## src/pages/[lang]/guide/payment.astro (2)
+   117: title={lang === "ja" ? "おすすめ決済アプリ" : "Payment Apps You Need"}
+   118: subtitle={lang === "ja" ? "中国に到着する前にダウンロードして設定しておきましょう" : "Download and set up these apps before arriving in China"}
+########## src/pages/[lang]/guide/transport.astro (2)
+   95: title={lang === "ja" ? "交通・ナビゲーションアプリ" : "Transport & Navigation Apps"}
+   96: subtitle={lang === "ja" ? "中国国内の移動に必須のアプリ" : "Essential apps for getting around China"}
+########## src/pages/[lang]/scenic-spots/index.astro (5)
+   116: <strong>{allScenic.length}</strong> {isJa ? "景勝地" : "scenic spots"}
+   120: <strong>{citiesWithScenic.length}</strong> {isJa ? "都市" : "cities"}
+   124: {isJa ? "山、湖、川、森林などの自然景観" : "Mountains, lakes, rivers, forests"}
+   142: alt={`${city.nameEn} ${isJa ? "景勝地" : "scenic spots"}`}
+   152: <p class="text-xs text-gray-500 mt-0.5">{city.count} {isJa ? "景勝地" : "scenic spots"}</p>
+########## src/pages/city/[slug]/attractions.astro (5)
+   101: historical: { en: 'Historical', ja: '歴史', ko: '역사', 'zh-CN': '历史', 'zh-TW': '歷史', th: 'ประวัติศาสตร์', vi: 'Lịch sử', ru: 'Историч
+   102: cultural: { en: 'Cultural', ja: '文化', ko: '문화', 'zh-CN': '文化', 'zh-TW': '文化', th: 'วัฒนธรรม', vi: 'Văn hóa', ru: 'Культурный', fr:
+   103: modern: { en: 'Modern', ja: 'モダン', ko: '현대', 'zh-CN': '现代', 'zh-TW': '現代', th: 'ทันสมḱย', vi: 'Hiện đại', ru: 'Современный', fr: '
+   104: natural: { en: 'Natural', ja: '自然', ko: '자연', 'zh-CN': '自然', 'zh-TW': '自然', th: 'ธรรมชาติ', vi: 'Thiên nhiên', ru: 'Природа', fr: 
+   105: entertainment: { en: 'Entertainment', ja: 'エンターテイメント', ko: '연예', 'zh-CN': '娱乐', 'zh-TW': '娛樂', th: 'การบันเสริม', vi: 'Giải trí', 

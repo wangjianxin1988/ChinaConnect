@@ -1,0 +1,23 @@
+import fs from "node:fs";
+const strings = JSON.parse(fs.readFileSync(".audit/guide-strings.json","utf8")).strings;
+const text = fs.readFileSync("src/data/guide/overrides-ko.ts","utf8");
+const re = /^\s*"((?:[^"\\]|\\.)*)"\s*:\s*"((?:[^"\\]|\\.)*)",?\s*$/gm;
+const un = (s)=>s.replace(/\\"/g,'"').replace(/\\\\/g,'\\').replace(/\\n/g,"\n");
+const existing = new Map();
+for (const m of text.matchAll(re)) existing.set(un(m[1]), un(m[2]));
+const KEEPABLE_RE = /^(?:[\d\s.,¥$€£₩₹₽+\-()/%×·&'":;~!?]+|(?:https?:\/\/|tel:|mailto:).*)$/;
+const BRAND = new Set(["Alipay","WeChat","WeChat Pay","Meituan","Dianping","DiDi","Didi","Amap","AutoNavi","Baidu Maps","Baidu","Trip.com","Ctrip","Fliggy","Booking.com","Agoda","Airbnb","12306","Google","Google Maps","Google Translate","ChatGPT","Pleco","Pleco Chinese Dictionary","TripAdvisor","Wise","TransferWise","Xiaohongshu","RED","Airalo","Holafly","eSIM","SIM","WiFi","Wi-Fi","UnionPay","China Mobile","China Unicom","China Telecom","KFC","McDonald's","Starbucks","Huawei","Xiaomi","QQ","Weibo","Taobao","JD.com","Pinduoduo","NetEase","163 Mail","Metro Now","Nihao China","AI Translation","Oppo","Vivo","Beijing","Changsha","Chengde","Chengdu","Chongqing","Dali","Dalian","Dunhuang","Fuzhou","Guangzhou","Guilin","Hangzhou","Harbin","Hulunbuir","Jinan","Kunming","Lanzhou","Lijiang","Luoyang","Nanjing","Ningbo","Qingdao","Quanzhou","Sanya","Shanghai","Shenzhen","Suzhou","Tianjin","Weihai","Wuhan","Xi'an","Xiamen","Xining","Yantai","Zhangjiajie","三亚","上海","丽江","兰州","北京","南京","厦门","呼伦贝尔","哈尔滨","大理","大连","天津","威海","宁波","广州","张家界","成都","承德","敦煌","昆明","杭州","桂林","武汉","泉州","洛阳","济南","深圳","烟台","福州","苏州","西宁","西安","重庆","长沙","青岛","China","Chinese","ChinaConnect","App Store","Google Play","Metro","Tiananmen","Tiananmen Square","Great Wall","Terracotta Army","Panda","Pandas","Forbidden City"]);
+const isKeepable = (s)=>{ if(!s) return false; const t=s.trim(); if(KEEPABLE_RE.test(t)) return true; if(BRAND.has(t)) return true; if(t.endsWith("¥")||t.startsWith("¥")) return true; return false; };
+const dis = /[\u3400-\u9fff\u3040-\u30ff\u0400-\u04ff\u0600-\u06ff\u0e00-\u0e7f]/;
+const needsApi = strings.filter((s)=>{
+  const v = existing.get(s);
+  if (v === undefined) return true;
+  if (v === s && !isKeepable(s)) return true;
+  if (dis.test(v)) return true;
+  return false;
+});
+console.log("needsApi:", needsApi.length);
+console.log("=== first 10 ===");
+needsApi.slice(0,10).forEach((s,i)=>console.log(i, JSON.stringify(s.slice(0,100))));
+console.log("=== sample mid ===");
+needsApi.slice(500,510).forEach((s,i)=>console.log(i, JSON.stringify(s.slice(0,100))));

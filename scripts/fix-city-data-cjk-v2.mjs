@@ -55,13 +55,21 @@ function setPath(obj, pathStr, value) {
     const arrMatch = /^(.*)\[(\d+)\]$/.exec(part);
     const isLast = i === parts.length - 1;
     if (arrMatch) {
-      const key = arrMatch[1] || "0";
+      const key = arrMatch[1];
       const idx = Number(arrMatch[2]);
+      if (key === "") {
+        if (isLast) { cur[idx] = value; return; }
+        if (!cur[idx]) cur[idx] = {};
+        cur = cur[idx];
+        continue;
+      }
       if (isLast) {
+        if (!Array.isArray(cur[key])) return;
         cur[key][idx] = value;
         return;
       }
       if (!cur[key]) cur[key] = [];
+      if (!Array.isArray(cur[key])) return;
       if (!cur[key][idx]) cur[key][idx] = {};
       cur = cur[key][idx];
     } else {

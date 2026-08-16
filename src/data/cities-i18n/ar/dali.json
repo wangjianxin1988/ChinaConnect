@@ -8,8 +8,8 @@
     "lat": 25.6069,
     "lng": 100.2676
   },
-  "timezone": "UTC+8 (China Standard Time)",
-  "description": "دالي هي مدينة ساحرة في مقاطعة يونان، تقع أمام خلفية جبال كانغشان الدرامية وبجانب بحيرة إيرهاي البلورية. تستضيف الأقلية العرقية البايع التي تمتد تاريخها إلى 1000 عام. تشتهر بشوارعها المرصوفة بالحصى، والتراث المعماري الباي التقليدي، والثقافة المحلية النابضة بالحياة. جو منعش مثالي لركوب الدراجات والمشي والتم沉浸 الثقافي.",
+  "timezone": "التوقيت العالمي المنسق+8 (توقيت الصين الرسمي)",
+  "description": "دالي بلدة خلابة في مقاطعة يوننان، تقع عند سفح جبال تشانغشان المهيبة وعلى ضفاف بحيرة إيرهاي الصافية. هي موطن قومية باي التي يعود تاريخها إلى ألف عام، وتشتهر بشوارعها المرصوفة بالحصى وعمارة باي التقليدية وثقافتها المحلية النابضة بالحياة. تتميز بأجواء هادئة مثالية لركوب الدراجات والمشي لمسافات طويلة والتجارب الثقافية.",
   "coverImage": "/img/ext/4e2e5e513a4d.webp",
   "highlights": [
     "بحيرة إرهاي - ركوب الدراجات الخلابة والمناظر",
@@ -19,17 +19,17 @@
     "شوانغلانغ - التصوير على ضفاف البحيرة"
   ],
   "climate": {
-    "type": "Subtropical highland",
+    "type": "مرتفعات شبه استوائية",
     "bestMonths": [
-      "March",
-      "April",
-      "May",
-      "September",
-      "October"
+      "مارس",
+      "أبريل",
+      "مايو",
+      "سبتمبر",
+      "أكتوبر"
     ],
     "avgSummerTemp": "18-25C (64-77F)",
     "avgWinterTemp": "8-15C (46-59F)",
-    "tips": "Spring (March-May) is flower season with mild weather. Autumn (Sept-Oct) has clear skies and comfortable temps. Summer is rainy but green. Winter is dry and sunny but cold. Bring layers - temperature swings daily."
+    "tips": "الربيع (مارس-مايو) هو موسم الزهور مع طقس معتدل. الخريف (سبتمبر-أكتوبر) يتميز بسماء صافية ودرجات حرارة مريحة. الصيف ممطر لكنه أخضر. الشتاء جاف ومشمس لكنه بارد. أحضر طبقات من الملابس - درجات الحرارة تتغير يوميًا."
   },
   "restaurants": [
     {
@@ -238,8 +238,8 @@
       "hours": "07:00-18:00",
       "description": "طعام شارع مشهور - خبز بابا المسطح المقرمش مع حشوات حلوة أو مالحة، وهو طبق متخصص من الباي.",
       "dishHighlights": [
-        "بابا الحلو (玫瑰糖)",
-        "بابا المحلّي (鲜肉)",
+        "كعكة الورد (حلوى الورد)",
+        "كعكة مالحة (باللحم الطازج)",
         "بابا بالبيض"
       ],
       "tags": [
@@ -1056,7 +1056,7 @@
     {
       "id": "dali-33",
       "name": "街边饵丝",
-      "nameEn": "街边饵丝 (饵丝)",
+      "nameEn": "أرشي في زاوية الشارع (أرشي)",
       "type": "محلي",
       "cuisine": "إير سي (نودلز الأرز)",
       "avgPrice": 150,
@@ -1085,7 +1085,7 @@
     {
       "id": "dali-35",
       "name": "大理味砂锅鱼",
-      "nameEn": "大理味砂锅鱼 (砂锅鱼)",
+      "nameEn": "سمك قدر الطين في دالي (سمك قدر الطين)",
       "type": "طعام الشوارع",
       "cuisine": "سمك بالقدر الفخاري",
       "avgPrice": 25,
@@ -1114,7 +1114,7 @@
     {
       "id": "dali-37",
       "name": "老字号酸辣鱼",
-      "nameEn": "老字号酸辣鱼 (酸辣鱼)",
+      "nameEn": "سمك حامض وحار من محل عريق (سوان لا يو)",
       "type": "محلي",
       "cuisine": "سمك حار وحامض",
       "avgPrice": 62,
@@ -1143,7 +1143,7 @@
     {
       "id": "dali-39",
       "name": "正宗酸辣鱼",
-      "nameEn": "正宗酸辣鱼 (酸辣鱼)",
+      "nameEn": "سمك حامض وحار أصيل (سوان لا يو)",
       "type": "محلي",
       "cuisine": "سمك حار وحامض",
       "avgPrice": 68,
@@ -1172,7 +1172,7 @@
     {
       "id": "dali-41",
       "name": "大理味饵丝",
-      "nameEn": "大理味饵丝 (饵丝)",
+      "nameEn": "نودلز إيرسي بطعم دالي (إيرسي)",
       "type": "محلي",
       "cuisine": "إير سي (نودلز الأرز)",
       "avgPrice": 141,
@@ -1201,7 +1201,7 @@
     {
       "id": "dali-43",
       "name": "街边乳扇",
-      "nameEn": "街边乳扇 (乳扇)",
+      "nameEn": "روشان في زاوية الشارع (روشان)",
       "type": "محلي",
       "cuisine": "رشان (مروحة الحليب)",
       "avgPrice": 139,
@@ -1230,7 +1230,7 @@
     {
       "id": "dali-45",
       "name": "老字号白族三道茶",
-      "nameEn": "老字号白族三道茶 (白族三道茶)",
+      "nameEn": "شاي باي الثلاثي من محل عريق (شاي باي الثلاثي)",
       "type": "محلي",
       "cuisine": "شاي باي الثلاثي",
       "avgPrice": 99,
@@ -1259,7 +1259,7 @@
     {
       "id": "dali-47",
       "name": "传统酸辣鱼",
-      "nameEn": "传统酸辣鱼 (酸辣鱼)",
+      "nameEn": "سمك حامض وحار تقليدي (سوان لا يو)",
       "type": "محلي",
       "cuisine": "سمك حار وحامض",
       "avgPrice": 109,
@@ -1288,7 +1288,7 @@
     {
       "id": "dali-49",
       "name": "老字号乳扇",
-      "nameEn": "老字号乳扇 (乳扇)",
+      "nameEn": "جبن الحليب التقليدي (روشان)",
       "type": "محلي",
       "cuisine": "روشان (مروحة الحليب)",
       "avgPrice": 78,
@@ -1317,7 +1317,7 @@
     {
       "id": "dali-51",
       "name": "巷子砂锅鱼",
-      "nameEn": "巷子砂锅鱼 (砂锅鱼)",
+      "nameEn": "سمك القدْر على الطريق (شاغو يو)",
       "type": "محلي",
       "cuisine": "سمك القدر الفخاري",
       "avgPrice": 89,
@@ -1346,7 +1346,7 @@
     {
       "id": "dali-53",
       "name": "老字号酸辣鱼",
-      "nameEn": "老字号酸辣鱼 (酸辣鱼)",
+      "nameEn": "سمك حامض وحار من محل عريق (سوان لا يو)",
       "type": "محلي",
       "cuisine": "سمك حار وحامض",
       "avgPrice": 53,
@@ -1375,7 +1375,7 @@
     {
       "id": "dali-55",
       "name": "正宗乳扇",
-      "nameEn": "正宗乳扇 (乳扇)",
+      "nameEn": "جبن الحليب الأصيل (روشان)",
       "type": "محلي",
       "cuisine": "روشان (مروحة الحليب)",
       "avgPrice": 128,
@@ -1404,7 +1404,7 @@
     {
       "id": "dali-57",
       "name": "老字号乳扇",
-      "nameEn": "老字号乳扇 (乳扇)",
+      "nameEn": "جبن الحليب التقليدي (روشان)",
       "type": "محلي",
       "cuisine": "روشان (مروحة الحليب)",
       "avgPrice": 47,
@@ -1433,7 +1433,7 @@
     {
       "id": "dali-59",
       "name": "街边砂锅鱼",
-      "nameEn": "街边砂锅鱼 (砂锅鱼)",
+      "nameEn": "سمك القدْر على جانب الطريق (شاغو يو)",
       "type": "محلي",
       "cuisine": "سمك بالقدر الطيني",
       "avgPrice": 112,
@@ -1462,7 +1462,7 @@
     {
       "id": "dali-61",
       "name": "正宗饵丝",
-      "nameEn": "正宗饵丝 (饵丝)",
+      "nameEn": "نودلز الأرز الأصيلة (إيرسي)",
       "type": "محلي",
       "cuisine": "إير سي (نودلز الأرز)",
       "avgPrice": 118,
@@ -1491,7 +1491,7 @@
     {
       "id": "dali-63",
       "name": "正宗饵丝",
-      "nameEn": "正宗饵丝 (饵丝)",
+      "nameEn": "نودلز الأرز الأصيلة (إيرسي)",
       "type": "محلي",
       "cuisine": "إير سي (نودلز الأرز)",
       "avgPrice": 97,
@@ -1520,7 +1520,7 @@
     {
       "id": "dali-65",
       "name": "正宗白族三道茶",
-      "nameEn": "正宗白族三道茶 (白族三道茶)",
+      "nameEn": "شاي باي الثلاثي الأصيل (شاي باي الثلاثي)",
       "type": "محلي",
       "cuisine": "شاي باي الثلاثي",
       "avgPrice": 70,
@@ -1549,7 +1549,7 @@
     {
       "id": "dali-67",
       "name": "阿婆饵丝",
-      "nameEn": "阿婆饵丝 (饵丝)",
+      "nameEn": "نودلز الأرز على طريقة الجدة (إيرسي)",
       "type": "محلي",
       "cuisine": "إير سي (نودلز الأرز)",
       "avgPrice": 83,
@@ -1580,9 +1580,9 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major Chinese cities",
+        "from": "المدن الصينية الكبرى",
         "to": "مطار دالي فينغهوانغ (DLU)",
-        "duration": "Varies (2h from Kunming)",
+        "duration": "يختلف (ساعتان من كونمينغ)",
         "price": "300-800¥",
         "frequency": "رحلات يومية من كونمينغ، بعضها موسمي",
         "tips": "المطار على بعد 13 كم من مدينة دالي القديمة. حافلة المطار أو سيارة أجرة إلى المدينة. قد تتأخر الرحلات بسبب الضباب."
@@ -1591,7 +1591,7 @@
         "type": "train",
         "from": "كونمينغ (6-8 ساعات)، ليجيانغ (2.5 ساعة)",
         "to": "محطة سكة حديد دالي (قرب وسط المدينة)",
-        "duration": "2.5-8 hours",
+        "duration": "2.5-8 ساعات",
         "price": "100-300¥",
         "frequency": "قطارات يومية من مدن يونان الرئيسية",
         "tips": "القطار فائق السرعة الجديد من كونمينغ خلاب لكنه بطيء. القطار القديم أسرع. محطة دالي أقرب إلى المدينة القديمة من الجديدة."
@@ -1599,8 +1599,8 @@
       {
         "type": "bus",
         "from": "كونمينغ (4 ساعات)، ليجيانغ (2.5 ساعة)",
-        "to": "Dali Bus Station",
-        "duration": "2.5-4 hours",
+        "to": "محطة حافلات دالي",
+        "duration": "2.5-4 ساعات",
         "price": "100-200¥",
         "frequency": "حافلات متكررة من المدن الكبرى",
         "tips": "الحافلة من فندق شيying في كونمينغ مريحة. محطة حافلات دالي قريبة من المدينة القديمة."
@@ -1620,16 +1620,16 @@
         "تفاوض على السعر للرحلات اليومية"
       ],
       "bicycle": [
-        "Rent bicycles near Dali Old Town: 30-80¥/day",
-        "Electric bikes available: 80-150¥/day",
-        "Cycling Erhai Lake: 40-60km, full day",
-        "Mountain bikes for Cangshan trails"
+        "استئجار الدراجات بالقرب من مدينة دالي القديمة: 30-80 يوان/يوم",
+        "الدراجات الكهربائية متاحة: 80-150 يوان/يوم",
+        "ركوب الدراجات حول بحيرة إرهي: 40-60 كم، يوم كامل",
+        "دراجات جبلية لمسارات جبل تشانغشان"
       ],
       "electric-bike": [
-        "Popular way to explore Erhai Lake area",
-        "Rent in Dali or Shuanglang",
-        "80-150¥ per day",
-        "Need to recharge for long trips"
+        "طريقة شائعة لاستكشاف منطقة بحيرة إرهي",
+        "استئجار في دالي أو شوانغلانغ",
+        "80-150 يوان يوميًا",
+        "يحتاج إلى إعادة شحن للرحلات الطويلة"
       ],
       "metro": [
         "لا يوجد نظام مترو في مدينة دالي القديمة",
@@ -1648,7 +1648,7 @@
       "nameEn": "Dali Old Town Lake View Hotel",
       "budget": "mid",
       "priceRange": "¥400-800/night",
-      "address": "Near Dali Old Town",
+      "address": "بالقرب من مدينة دالي القديمة",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
@@ -1660,14 +1660,14 @@
         "عمارة باي",
         "مقهى على السطح"
       ],
-      "bookingTips": "Book well ahead in peak season. Request lake view room."
+      "bookingTips": "احجز مسبقًا في موسم الذروة. اطلب غرفة بإطلالة على البحيرة."
     },
     {
       "name": "فندق شوانغلانغ هايجياو",
       "nameEn": "Shuanglang Haijiao Hotel",
       "budget": "luxury",
       "priceRange": "¥800-2000/night",
-      "address": "Shuanglang waterfront",
+      "address": "واجهة شوانغلانغ المائية",
       "coordinates": {
         "lat": 25.8822,
         "lng": 100.1572
@@ -1679,14 +1679,14 @@
         "تصميم بوتيكي",
         "شرفات خاصة"
       ],
-      "bookingTips": "The best lakeside area in Dali. Premium for Nantian views."
+      "bookingTips": "أفضل منطقة على ضفاف البحيرة في دالي. سعر أعلى لإطلالات نانتيان."
     },
     {
       "name": "فندق دالي تشونغخه فانغ",
       "nameEn": "Dali Zhonghefang Hotel",
       "budget": "mid",
       "priceRange": "¥300-600/night",
-      "address": "Within Dali Old Town",
+      "address": "داخل مدينة دالي القديمة",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
@@ -1698,7 +1698,7 @@
         "أجواء هادئة",
         "طراز باي"
       ],
-      "bookingTips": "Good value in old town. Book inner courtyard rooms for quiet."
+      "bookingTips": "قيمة جيدة في المدينة القديمة. احجز الغرف المطلة على الفناء الداخلي للهدوء."
     },
     {
       "name": "نُزُل رصيف قرية تساي",
@@ -1717,14 +1717,14 @@
         "تديره عائلة محلية",
         "هادئ"
       ],
-      "bookingTips": "Great for cyclists. Families run many guesthouses here."
+      "bookingTips": "رائعة لراكبي الدراجات. تدير العائلات العديد من النزل هنا."
     },
     {
       "name": "فندق دالي الدولي الكبير",
       "nameEn": "Dali International Hotel",
       "budget": "luxury",
       "priceRange": "¥600-1500/night",
-      "address": "Dali City, near Erhai",
+      "address": "مدينة دالي، بالقرب من بحيرة إرهي",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1672
@@ -1736,14 +1736,14 @@
         "مطاعم متعددة",
         "مسبح"
       ],
-      "bookingTips": "Best for comfort seekers. Good location between old town and lake."
+      "bookingTips": "الأفضل لمن يبحثون عن الراحة. موقع جيد بين المدينة القديمة والبحيرة."
     },
     {
       "name": "لانلينغ غي في مدينة دالي القديمة",
       "nameEn": "Dali Old Town Lanlingge",
       "budget": "mid",
       "priceRange": "¥350-700/night",
-      "address": "Within Dali Old Town",
+      "address": "داخل مدينة دالي القديمة",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
@@ -1755,14 +1755,14 @@
         "إطلالات من السطح",
         "عمارة باي"
       ],
-      "bookingTips": "Book inner rooms for quiet. Good value for location."
+      "bookingTips": "احجز الغرف الداخلية للهدوء. قيمة جيدة مقابل الموقع."
     },
     {
       "name": "شاي وو هاوس على البحيرة في شوانغلانغ",
       "nameEn": "Shuanglang Lake Thoughts",
       "budget": "luxury",
       "priceRange": "¥600-1500/night",
-      "address": "Shuanglang, Erhai Lake",
+      "address": "شوانغلانغ، بحيرة إرهي",
       "coordinates": {
         "lat": 25.8822,
         "lng": 100.1572
@@ -1774,14 +1774,14 @@
         "إطلالات غروب الشمس",
         "بيت شاي"
       ],
-      "bookingTips": "Premium lakeside location. Book well ahead in peak season."
+      "bookingTips": "موقع متميز على ضفاف البحيرة. احجز مبكرًا في موسم الذروة."
     },
     {
       "name": "نزل قرية كاي",
       "nameEn": "Caicun Village Homestay",
       "budget": "budget",
       "priceRange": "¥150-400/night",
-      "address": "Caicun Village, Erhai",
+      "address": "قرية كايتسون، بحيرة إرهي",
       "coordinates": {
         "lat": 25.7222,
         "lng": 100.1672
@@ -1793,14 +1793,14 @@
         "تأجير دراجات",
         "تجربة محلية"
       ],
-      "bookingTips": "Great for cyclists. Locals are very friendly."
+      "bookingTips": "رائعة لراكبي الدراجات. السكان المحليون ودودون للغاية."
     },
     {
       "name": "فندق دالي فنغهوا شويوي",
       "nameEn": "Dali Wind Flower Snow Moon Hotel",
       "budget": "mid",
       "priceRange": "¥400-800/night",
-      "address": "Dali City, near old town",
+      "address": "مدينة دالي، بالقرب من البلدة القديمة",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
@@ -1812,14 +1812,14 @@
         "خدمة جيدة",
         "قيمة جيدة"
       ],
-      "bookingTips": "Good balance of comfort and location."
+      "bookingTips": "توازن جيد بين الراحة والموقع."
     },
     {
       "name": "فناء يانغ جيا بينغ تو في شي تشو",
       "nameEn": "Xizhou Yang's Courtyard",
       "budget": "mid",
       "priceRange": "¥300-600/night",
-      "address": "Xizhou Ancient Town",
+      "address": "بلدة شيتشو القديمة",
       "coordinates": {
         "lat": 25.7622,
         "lng": 100.1272
@@ -1831,14 +1831,14 @@
         "ديكور أصيل",
         "هادئ"
       ],
-      "bookingTips": "Experience traditional Bai living. Book during market day."
+      "bookingTips": "عِش تجربة الحياة الباي التقليدية. احجز خلال يوم السوق."
     },
     {
       "name": "نزل دالي باكباكيرز للشباب",
       "nameEn": "Dali Backpacker Youth Hostel",
       "budget": "budget",
       "priceRange": "¥60-150/night",
-      "address": "Dali Old Town",
+      "address": "بلدة دالي القديمة",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
@@ -1850,7 +1850,7 @@
         "موقع مركزي",
         "تأجير دراجات"
       ],
-      "bookingTips": "Great for solo travelers. Evening pub crawls organized."
+      "bookingTips": "رائعة للمسافرين المنفردين. تُنظم جولات حانات مسائية."
     },
     {
       "name": "شوانغلانغ تشينغ تيان جيان",
@@ -1869,14 +1869,14 @@
         "إطلالات على شروق الشمس",
         "شرفة خاصة"
       ],
-      "bookingTips": "Best sunrise location in Shuanglang. Book months ahead."
+      "bookingTips": "أفضل موقع لشروق الشمس في شوانغلانغ. احجز قبل أشهر."
     },
     {
       "name": "نُزُل واشي إيرهاي",
       "nameEn": "Wase Erhai Inn",
       "budget": "mid",
       "priceRange": "¥250-500/night",
-      "address": "Wase Town, Erhai",
+      "address": "بلدة وازي، إرهي",
       "coordinates": {
         "lat": 25.9222,
         "lng": 100.1872
@@ -1888,14 +1888,14 @@
         "عائلة محلية",
         "بعيد عن المسارات المألوفة"
       ],
-      "bookingTips": "Good alternative to Shuanglang. Very peaceful."
+      "bookingTips": "بديل جيد لشوانغلانغ. هادئة جدًا."
     },
     {
       "name": "فندق دالي تشانغشان",
       "nameEn": "Dali Cangshan Hotel",
       "budget": "mid",
       "priceRange": "¥400-700/night",
-      "address": "Dali City",
+      "address": "مدينة دالي",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1672
@@ -1907,14 +1907,14 @@
         "مريح",
         "فطور جيد"
       ],
-      "bookingTips": "Good base for exploring. Request mountain view rooms."
+      "bookingTips": "قاعدة جيدة للاستكشاف. اطلب غرفًا تطل على الجبال."
     },
     {
       "name": "نُزُل حول معابد سانتا",
       "nameEn": "Three Pagodas Area Homestay",
       "budget": "budget",
       "priceRange": "¥120-300/night",
-      "address": "Near Three Pagodas",
+      "address": "بالقرب من الباغودات الثلاث",
       "coordinates": {
         "lat": 25.6722,
         "lng": 100.1572
@@ -1926,14 +1926,14 @@
         "تديره عائلة",
         "قيمة"
       ],
-      "bookingTips": "Good for temple visitors. Very peaceful mornings."
+      "bookingTips": "مناسبة لزوار المعابد. صباحات هادئة جدًا."
     },
     {
       "name": "نُزُل يينكياو هوايو",
       "nameEn": "Yinqiao Flower Language Inn",
       "budget": "budget",
       "priceRange": "¥150-350/night",
-      "address": "Yinqiao Town",
+      "address": "بلدة يينكياو",
       "coordinates": {
         "lat": 25.7222,
         "lng": 100.0872
@@ -1945,14 +1945,14 @@
         "هادئ",
         "مناسب للدراجات"
       ],
-      "bookingTips": "Great for photographers. Perfect for flower season."
+      "bookingTips": "رائعة للمصورين. مثالية في موسم الزهور."
     },
     {
       "name": "نُزُل تشوتشنغ باي",
       "nameEn": "Zhoucheng Bai Homestay",
       "budget": "budget",
       "priceRange": "¥100-280/night",
-      "address": "Zhoucheng Village",
+      "address": "قرية تشوتشنغ",
       "coordinates": {
         "lat": 25.8022,
         "lng": 100.0872
@@ -1964,14 +1964,14 @@
         "عائلة محلية",
         "انغماس ثقافي"
       ],
-      "bookingTips": "Best for culture seekers. Morning market is walking distance."
+      "bookingTips": "الأفضل لعشاق الثقافة. سوق الصباح على مسافة قريبة سيرًا على الأقدام."
     },
     {
       "name": "نُزُل مدينة ويشان القديمة",
       "nameEn": "Weishan Ancient Town Inn",
       "budget": "mid",
       "priceRange": "¥200-450/night",
-      "address": "Weishan Ancient Town",
+      "address": "بلدة ويشان القديمة",
       "coordinates": {
         "lat": 25.2322,
         "lng": 100.3072
@@ -1983,7 +1983,7 @@
         "أصيل",
         "هادئ"
       ],
-      "bookingTips": "Perfect for escaping tourism. Nanzhao Kingdom atmosphere."
+      "bookingTips": "مثالية للهروب من السياحة. أجواء مملكة نانجاو."
     }
   ],
   "payment": [
@@ -1992,25 +1992,25 @@
       "icon": "alipay",
       "description": "يعمل في معظم منشآت دالي",
       "howToUse": [
-        "Download before arrival",
-        "Link international card"
+        "قم بالتنزيل قبل الوصول",
+        "ربط بطاقة دولية"
       ],
       "tips": [
-        "Common in tourist areas",
+        "شائع في المناطق السياحية",
         "قد لا يعمل في القرى النائية"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Accepted in most places",
+      "description": "مقبول في معظم الأماكن",
       "howToUse": [
-        "WeChat required",
+        "يتطلب استخدام WeChat",
         "البطاقات الدولية مقبولة"
       ],
       "tips": [
-        "Set to English mode",
-        "Useful in villages"
+        "اضبطه على الوضع الإنجليزي",
+        "مفيد في القرى"
       ]
     },
     {
@@ -2019,7 +2019,7 @@
       "description": "ضروري للأسواق والمناطق النائية",
       "howToUse": [
         "ATM في مدينة دالي القديمة",
-        "Banks in city"
+        "البنوك في المدينة"
       ],
       "tips": [
         "أحضر 500+ يوان لركوب الدراجات حول إرهي",
@@ -2055,49 +2055,49 @@
     {
       "category": "tiedye",
       "title": "ثقافة التلوين لدى Bai",
-      "content": "تشتهر قبيلة Bai بالتلوين التقليدي (扎染)، باستخدام أصباغ النباتات الطبيعية على القطن. لكل نمط معنى رمزي. قرية Zhoucheng هي مركز هذه الحرفة. ابحث عن أنماط الفراشات والأسماك والزهور.",
+      "content": "يشتهر شعب باي بالصباغة الزرقاء التقليدية، حيث تُستخدم أصباغ نباتية طبيعية على الأقمشة القطنية. لكل نقشة معنى رمزي. قرية تشوتشنغ هي مركز هذه الحرفة. ابحث عن نقوش الفراشات والأسماك والزهور.",
       "importance": "high"
     },
     {
       "category": "tea",
       "title": "ثقافة الشاي في Yunnan",
-      "content": "تشتهر مقاطعة Yunnan بشاي Pu'er. توجد في Dali بيوت شاي حيث يمكنك体验 طقوس الشاي. يمثل طقس الشاي الثلاثي (三道茶) نكهات الحياة: المر، والحلو، والذائقية. الشاي جزء مهم من الحياة الاجتماعية المحلية.",
+      "content": "تشتهر يونان بالشاي الصيني الشهير (بو إير). في دالي، توجد بيوت شاي حيث يمكنك تجربة فن الشاي. شاي الطرق الثلاث لقومية باي يمثل طعم الحياة: مر، حلو، ولاحقًا حلو. الشاي جزء مهم من الحياة الاجتماعية المحلية.",
       "importance": "medium"
     },
     {
       "category": "festivals",
       "title": "مهرجانات الباي",
-      "content": "تشمل المهرجانات الرئيسية لقبيلة Bai: معرض مارس (三月街) - تجارة الخيام والمعرض التجاري في Dali؛ Rao San Ling (绕三灵) - الحج إلى الأماكن المقدسة الثلاث؛ مهرجان الشعلة (火把节) - إشعال الشعلات لطرد الآفات. الصيف وأوائل الخريف هي مواسم المهرجانات.",
+      "content": "من أهم مهرجانات قومية باي: مهرجان شارع مارس - سوق للخيول والتجارة في دالي؛ رحلات حول الجبال الثلاثة - حج إلى الأماكن المقدسة الثلاثة؛ مهرجان المشاعل - إشعال المشاعل لطرد الآفات. من الصيف إلى أوائل الخريف هو موسم المهرجانات.",
       "importance": "high"
     },
     {
       "category": "architecture",
       "title": "عمارة الباي",
-      "content": "تتميز منازل الباي بجدرانها البيضاء وبلاطها الرملي وأسقفها على شكل رؤوس خيل. الساحات الثلاثية (三坊一照壁) نموذجية. ابحث عن الأبراج البوابة المزخرفة (精美的门楼) واللوحات الجدارية داخل الساحات.",
+      "content": "تتميز منازل قومية باي بجدران بيضاء، وأسقف رمادية، وجدران على شكل رأس حصان. النمط النموذجي هو ",
       "importance": "medium"
     },
     {
       "category": "clothing",
       "title": "الملابس التقليدية للباي",
-      "content": "ترتدي نساء الباي أزياء 'الملاك الثلاثة' (三道茶) مع سترات بيضاء وأحزمة زرقاء وأحذية مطرزة. يُرمز لحاء 'تاج العنقاء' الشهير بالتنين. يمكنك استئجار الأزياء للتصوير في المناطق السياحية.",
+      "content": "ترتدي نساء قومية باي زي ",
       "importance": "medium"
     },
     {
       "category": "religion",
       "title": "ديانة الباي",
-      "content": "يتبع الباي مزيجاً من البوئية والطاوية وعقيدة البنزهو (本主) - أي عبادة الآلهة المحلية. كل قرية تحتوي على معبد البنزهو. الأبراج الثلاثة مواقع بوذية مهمة. كن محترماً عند مراقبة الطقوس.",
+      "content": "تؤمن قومية باي بمزيج من البوذية والطاوية وعبادة الأرواح المحلية (عبادة آلهة الأرض). كل قرية لديها معبد للإله المحلي. الأبراج الثلاثة هي موقع بوذي مهم. يرجى إظهار الاحترام عند مراقبة الطقوس.",
       "importance": "low"
     },
     {
       "category": "music",
       "title": "موسيقى الباي",
-      "content": "يجمع أوبرا الباي (白剧) بين الغناء والرقص والتمثيل. تشمل الآلات التقليدية السنكسيان (三弦) وكمان رأس الحصان. يمكنك مشاهدة العروض في مدينة دالي القديمة أو خلال المهرجانات.",
+      "content": "أوبرا باي هي مسرحية تقليدية تجمع بين الغناء والرقص. تشمل الآلات الموسيقية التقليدية العود ذو الثلاثة أوتار والكمان ذو رأس الحصان. يمكنك مشاهدة العروض في مدينة دالي القديمة أو خلال المهرجانات.",
       "importance": "low"
     },
     {
       "category": "food",
       "title": "ثقافة الطعام لدى الباي",
-      "content": "تتميز مطبخ الباي بالخضروات الطازجة والفطر والأسماك. روشان (乳扇) هو جبن الحليب الممتد. بندر (凉鸡) هو الدجاج البارد. جرب الأطباق المحلية في الأسواق: خبز بابا (粑粑) المسطح، وإيرسي (饵丝) أرز المعكرونة، ومي ليانغ شيا (米凉虾) الحلوى الهلامية على شكل جمبري.",
+      "content": "يتميز مطبخ قومية باي بالخضروات الطازجة والفطر والأسماك. ",
       "importance": "high"
     },
     {
@@ -2109,19 +2109,19 @@
     {
       "category": "wedding",
       "title": "عادات الزواج البايسية",
-      "content": "تتميز حفلات الزفاف البايسية بعادات فريدة تشمل طقس 'جياو تشاي' (咬嫁) حيثعض العروس أذن العريس. تمثل الولائم الزفافية وجبات متعددة الأطباق elaborada. تقوم العروس بتغيير عدة أزياء خلال حفل الزفاف.",
+      "content": "تتضمن مراسم الزواج لقومية باي عادات فريدة مثل طقوس ",
       "importance": "low"
     },
     {
       "category": "fishing",
       "title": "ثقافة الصيد في إيرهاي",
-      "content": "احتل الصيد مكانة محورية في حياة إيرهاي منذ قرون. تشمل_methods الصيد التقليدية استخدام طيور الغاق (鸬鹚). لا يزال بعض القرى الساحلية تمارس هذه الطرق. تمثل أطباق السمك أساسيات المطبخ المحلي.",
+      "content": "لعبت مصايد الأسماك دورًا محوريًا في حياة إيرهي لعدة قرون. تشمل طرق الصيد التقليدية استخدام طيور الغاق. في بعض قرى الصيد، لا يزال الممارسون يطبقون هذه الأساليب حتى اليوم. أطباق السمك هي الغذاء الأساسي على الموائد المحلية.",
       "importance": "medium"
     },
     {
       "category": "dialect",
       "title": "لغة الباي",
-      "content": "اللغة البايسية (白语) لها نغمات وتختلف تماماً عن الماندرين يتحدث العديد من السكان كلاً من البايسية والماندرين. إن تعلم بعض العبارات البايسية مثل 'ني هاو' (مرحباً) و'شييه شييه' (شكراً) باللغة البايسية سيُقدر كثيراً.",
+      "content": "لغة باي هي لغة نغمية تختلف تمامًا عن الماندرين. يتحدث العديد من السكان المحليين لغتي باي والماندرين معًا. حفظ بعض العبارات بلغة باي مثل \"نيهاو\" (مرحبًا) و\"شيشي\" (شكرًا) سيكون موضع تقدير.",
       "importance": "low"
     },
     {
@@ -2330,7 +2330,7 @@
         "lng": 100.1872
       },
       "openingHours": "مفتوح على مدار 24 ساعة",
-      "ticketPrice": "30元",
+      "ticketPrice": "30 يوان",
       "recommendedVisitTime": "نصف يوم إلى يوم كامل",
       "highlights": [
         "مسار ركوب الدراجات حول البحيرة",
@@ -2377,7 +2377,7 @@
         "lng": 100.1572
       },
       "openingHours": "مفتوح على مدار 24 ساعة",
-      "ticketPrice": "مجاني (某些景点需要门票)",
+      "ticketPrice": "مجاني (بعض المعالم تتطلب تذاكر دخول)",
       "recommendedVisitTime": "2-3 ساعات",
       "highlights": [
         "شارع الأجانب",
@@ -2857,7 +2857,7 @@
         "lng": 100.15
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "75元（含三塔）",
+      "ticketPrice": "75 يوان (يشمل الأبراج الثلاثة)",
       "recommendedVisitTime": "2-3 ساعات",
       "highlights": [
         "قاعة غوانيين",
@@ -2881,7 +2881,7 @@
         "lng": 100.1556
       },
       "openingHours": "مفتوح طوال اليوم",
-      "ticketPrice": "免费",
+      "ticketPrice": "مجاني",
       "recommendedVisitTime": "1-2 ساعة",
       "highlights": [
         "مقاهي القهوة المتخصصة",
@@ -2905,7 +2905,7 @@
         "lng": 100.1556
       },
       "openingHours": "08:00-22:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "مجاني",
       "recommendedVisitTime": "30 دقيقة إلى ساعة",
       "highlights": [
         "إطلالة بانورامية على المدينة القديمة",
@@ -2929,7 +2929,7 @@
         "lng": 100.1556
       },
       "openingHours": "مفتوح طوال اليوم",
-      "ticketPrice": "免费",
+      "ticketPrice": "مجاني",
       "recommendedVisitTime": "ساعة واحدة",
       "highlights": [
         "البوابة الجنوبية",
@@ -2953,7 +2953,7 @@
         "lng": 100.1833
       },
       "openingHours": "08:30-17:00",
-      "ticketPrice": "50元（含船票）",
+      "ticketPrice": "50 يوان (يشمل تذكرة القارب)",
       "recommendedVisitTime": "2-3 ساعات",
       "highlights": [
         "قصر نانجاو",
@@ -2977,7 +2977,7 @@
         "lng": 100.1167
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "مجاني",
       "recommendedVisitTime": "1-2 ساعات",
       "highlights": [
         "معرض حرفة الصباغة بالربط",
@@ -3001,7 +3001,7 @@
         "lng": 100.1167
       },
       "openingHours": "مفتوح طوال اليوم",
-      "ticketPrice": "免费（严家大院25元）",
+      "ticketPrice": "مجاني (منزل يان الكبير 25 يوانًا)",
       "recommendedVisitTime": "2-3 ساعات",
       "highlights": [
         "الفناء الكبير لعائلة يان",
@@ -3025,7 +3025,7 @@
         "lng": 100.1333
       },
       "openingHours": "08:30-17:00",
-      "ticketPrice": "150元（含索道和门票）",
+      "ticketPrice": "150 يوان (يشمل التلفريك وتذكرة الدخول)",
       "recommendedVisitTime": "3-4 ساعات",
       "highlights": [
         "مناظر جبل تشانغشان",
@@ -3049,7 +3049,7 @@
         "lng": 100.1333
       },
       "openingHours": "08:30-17:00",
-      "ticketPrice": "含在苍山门票内",
+      "ticketPrice": "مشمول في رسوم دخول جبل تشانغ",
       "recommendedVisitTime": "2-3 ساعات",
       "highlights": [
         "جدول تشينغبي",
@@ -3073,7 +3073,7 @@
         "lng": 100.1333
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "30-50元",
+      "ticketPrice": "30-50 يوان",
       "recommendedVisitTime": "1-2 ساعات",
       "highlights": [
         "بحر الورود",
@@ -3097,7 +3097,7 @@
         "lng": 100.1167
       },
       "openingHours": "08:30-17:30",
-      "ticketPrice": "25元",
+      "ticketPrice": "25 يوان",
       "recommendedVisitTime": "1-2 ساعة",
       "highlights": [
         "ثلاثة أجنحة مع جدار شاشة واحد",
@@ -3121,7 +3121,7 @@
         "lng": 99.9
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "50元",
+      "ticketPrice": "50 يوان",
       "recommendedVisitTime": "3-4 ساعات",
       "highlights": [
         "كهوف شيتشونغشان",
@@ -3145,7 +3145,7 @@
         "lng": 99.95
       },
       "openingHours": "مفتوح طوال اليوم",
-      "ticketPrice": "免费",
+      "ticketPrice": "مجاني",
       "recommendedVisitTime": "2-3 ساعات",
       "highlights": [
         "المنازل السكنية البائية",
@@ -3169,7 +3169,7 @@
         "lng": 99.3667
       },
       "openingHours": "مفتوح طوال اليوم",
-      "ticketPrice": "免费",
+      "ticketPrice": "مجاني",
       "recommendedVisitTime": "2-3 ساعات",
       "highlights": [
         "بئر الملح الذي يعود لألف عام",
@@ -3193,7 +3193,7 @@
         "lng": 100.2167
       },
       "openingHours": "مفتوح طوال اليوم",
-      "ticketPrice": "免费",
+      "ticketPrice": "مجاني",
       "recommendedVisitTime": "2-3 ساعات",
       "highlights": [
         "استوديوهات فنية",
@@ -3217,7 +3217,7 @@
         "lng": 100.1667
       },
       "openingHours": "مفتوح طوال اليوم",
-      "ticketPrice": "免费（游船另收费）",
+      "ticketPrice": "مجاني (رحلة القارب السياحي بتكلفة إضافية)",
       "recommendedVisitTime": "1-2 ساعة",
       "highlights": [
         "جولة بالقارب في بحيرة إرهي",
@@ -3232,7 +3232,7 @@
     {
       "id": "dali-sea-view-terrace",
       "name": "洱海观景台",
-      "nameEn": "شرفة观景 إرهاي",
+      "nameEn": "منصة إرهي للمشاهدة",
       "category": "nature",
       "description": "منصة مشاهدة بحيرة إرهي تقع على أرض مرتفعة على الشاطئ الشرقي، مما يجعلها أفضل نقطة لإطلالة شاملة على بحيرة إرهي. من هنا، يمكنك رؤية البحيرة بأكملها، مع انعكاس قمم جبال تشانغشان التسعة عشر على الماء، وهو مشهد مذهل.",
       "address": "طريق هوانهاي الشرقي، مدينة دالي",
@@ -3241,7 +3241,7 @@
         "lng": 100.2167
       },
       "openingHours": "مفتوح طوال اليوم",
-      "ticketPrice": "免费",
+      "ticketPrice": "مجاني",
       "recommendedVisitTime": "30 دقيقة إلى ساعة",
       "highlights": [
         "إطلالة بانورامية على بحيرة إرهي",
@@ -3265,7 +3265,7 @@
         "lng": 100.1167
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "10-15元/个",
+      "ticketPrice": "10-15 يوان للقطعة",
       "recommendedVisitTime": "30 دقيقة",
       "highlights": [
         "بابا مخبوزة طازجة",
@@ -3289,7 +3289,7 @@
         "lng": 100.1167
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "免费（体验另收费）",
+      "ticketPrice": "مجاني (التجربة بتكلفة إضافية)",
       "recommendedVisitTime": "1-2 ساعات",
       "highlights": [
         "ورشة صباغة ربطة",
@@ -3313,7 +3313,7 @@
         "lng": 100.1833
       },
       "openingHours": "مفتوح طوال اليوم",
-      "ticketPrice": "免费",
+      "ticketPrice": "مجاني",
       "recommendedVisitTime": "2-3 ساعات",
       "highlights": [
         "استوديوهات فنية",
@@ -3337,7 +3337,7 @@
         "lng": 100.1833
       },
       "openingHours": "مفتوح طوال اليوم",
-      "ticketPrice": "租车约50-100元/天",
+      "ticketPrice": "استئجار سيارة حوالي 50-100 يوان يوميًا",
       "recommendedVisitTime": "1-2 يوم",
       "highlights": [
         "ركوب الدراجات على ضفاف البحيرة",
@@ -3361,7 +3361,7 @@
         "lng": 100.15
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "75元",
+      "ticketPrice": "75 يوان",
       "recommendedVisitTime": "30 دقيقة إلى ساعة",
       "highlights": [
         "انعكاس الأبراج الثلاثة",
@@ -3385,7 +3385,7 @@
         "lng": 100.1833
       },
       "openingHours": "08:30-17:00",
-      "ticketPrice": "50元",
+      "ticketPrice": "50 يوان",
       "recommendedVisitTime": "2-3 ساعات",
       "highlights": [
         "قصر نانجاو",
@@ -3409,7 +3409,7 @@
         "lng": 100.2
       },
       "openingHours": "أيام السوق (في الخامس والعاشر من كل شهر)",
-      "ticketPrice": "免费",
+      "ticketPrice": "مجاني",
       "recommendedVisitTime": "1-2 ساعات",
       "highlights": [
         "سوق قومية باي",
@@ -3433,7 +3433,7 @@
         "lng": 100.0667
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "30元",
+      "ticketPrice": "30 يوان",
       "recommendedVisitTime": "2-3 ساعات",
       "highlights": [
         "مناظر الوادي",
@@ -3457,7 +3457,7 @@
         "lng": 100.1167
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "مجاني",
       "recommendedVisitTime": "1-2 ساعات",
       "highlights": [
         "أشجار الكاميليا التي يبلغ عمرها ألف عام",
@@ -3481,7 +3481,7 @@
         "lng": 100.1
       },
       "openingHours": "طوال اليوم",
-      "ticketPrice": "免费",
+      "ticketPrice": "مجاني",
       "recommendedVisitTime": "ساعتان",
       "highlights": [
         "العمارة العرقية البائية",
@@ -3503,7 +3503,7 @@
         "lng": 100.16
       },
       "openingHours": "11. وقت الليل.",
-      "ticketPrice": "免费",
+      "ticketPrice": "مجاني",
       "recommendedVisitTime": "ساعة واحدة",
       "highlights": [
         "١٣. منظر ليلي.",

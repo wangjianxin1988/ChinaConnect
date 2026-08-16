@@ -8,7 +8,7 @@
     "lat": 39.3434,
     "lng": 117.3616
   },
-  "timezone": "UTC+8 (China Standard Time)",
+  "timezone": "UTC+8 (중국 표준시)",
   "description": "베이징 인근의 활기찬 항구 도시인 톈진은 유럽식 식민지 건축과 전통 중국 문화를 결합합니다. 고대 문화거리, 마화와 구브리빵으로 유명한 음식 문화, 그리고 인상적인 톈진 아이 Ferris wheel로 유명합니다.",
   "coverImage": "/img/ext/3c81c7331bd2.webp",
   "highlights": [
@@ -28,7 +28,7 @@
     ],
     "avgSummerTemp": "26°C (79°F)",
     "avgWinterTemp": "-2°C (28°F)",
-    "tips": "Best in spring and autumn. Summers hot and humid. Winters cold and dry. Spring brings sandstorms from Gobi Desert."
+    "tips": "봄과 가을에 가장 좋습니다. 여름은 덥고 습하며, 겨울은 춥고 건조합니다. 봄에는 고비 사막에서 모래폭풍이 불어옵니다."
   },
   "attractions": [
     {
@@ -61,7 +61,7 @@
       "nameEn": "고문화거리",
       "category": "cultural",
       "description": "전통 건축물, 사찰, 지역 공예품이 있는 역사적인 거리입니다.",
-      "address": "고문화거리,和平区",
+      "address": "허핑구 고대 문화 거리",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.2022
@@ -166,7 +166,7 @@
       "ticketPrice": "30¥",
       "recommendedVisitTime": "2시간",
       "highlights": [
-        "춘련(春聯)",
+        "년화",
         "민속 예술",
         "전통 공방",
         "문화 전시"
@@ -205,7 +205,7 @@
       "nameEn": "워터파크",
       "category": "natural",
       "description": "호수, 정자, 놀이기구가 있는 대규모 도시 공원입니다.",
-      "address": "남开区",
+      "address": "난카이구",
       "coordinates": {
         "lat": 39.0922,
         "lng": 117.2122
@@ -298,10 +298,10 @@
     {
       "id": "tianjin-temple",
       "name": "天后宫",
-      "nameEn": "天后宫",
+      "nameEn": "천후궁",
       "category": "cultural",
       "description": "해양의 여신에게 헌정된 역사적인 사당으로, 중국에서 가장 유명한 세 개의 천후 사당 중 하나입니다.",
-      "address": "고문화거리,和平区",
+      "address": "허핑구 고대 문화 거리",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.2022
@@ -420,8 +420,8 @@
       "name": "天津古楼",
       "nameEn": "고대 북루",
       "category": "historical",
-      "description": "옛 톈진의 중심을 보여주는 역사적인 고루(鼓樓).",
-      "address": "남开区",
+      "description": "옛 톈진의 중심을 보여주는 역사적인 고루(북루).",
+      "address": "난카이구",
       "coordinates": {
         "lat": 39.1422,
         "lng": 117.1922
@@ -574,7 +574,7 @@
       "ticketPrice": "20¥",
       "recommendedVisitTime": "1-2시간",
       "highlights": [
-        "춘련(春聯)",
+        "년화",
         "전통 예술",
         "목판 인쇄",
         "문화 워크숍"
@@ -619,7 +619,7 @@
         "lng": 117.2
       },
       "openingHours": "종일 개방",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "이탈리아풍 건축",
@@ -642,7 +642,7 @@
         "lng": 117.2
       },
       "openingHours": "종일 개방",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "2-3시간",
       "highlights": [
         "외국식 건축물",
@@ -665,7 +665,7 @@
         "lng": 117.2083
       },
       "openingHours": "09:00-19:00",
-      "ticketPrice": "50元",
+      "ticketPrice": "50위안",
       "recommendedVisitTime": "1시간",
       "highlights": [
         "도자기 장식",
@@ -688,7 +688,7 @@
         "lng": 117.2167
       },
       "openingHours": "09:00-16:30",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "갑골문",
@@ -711,7 +711,7 @@
         "lng": 117.7
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "160元",
+      "ticketPrice": "160위안",
       "recommendedVisitTime": "3시간",
       "highlights": [
         "벨루가 고래 공연",
@@ -734,7 +734,7 @@
         "lng": 117.1833
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "구부리 만두",
@@ -757,7 +757,7 @@
         "lng": 117.1667
       },
       "openingHours": "09:00-21:00",
-      "ticketPrice": "50元",
+      "ticketPrice": "50위안",
       "recommendedVisitTime": "1시간",
       "highlights": [
         "파노라마 시티 뷰",
@@ -780,7 +780,7 @@
         "lng": 117.1833
       },
       "openingHours": "09:00-16:30",
-      "ticketPrice": "10元",
+      "ticketPrice": "10위안",
       "recommendedVisitTime": "1시간",
       "highlights": [
         "불교 문화",
@@ -803,7 +803,7 @@
         "lng": 117.2
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "상업 거리",
@@ -826,7 +826,7 @@
         "lng": 117.15
       },
       "openingHours": "08:30-17:00",
-      "ticketPrice": "20元",
+      "ticketPrice": "20위안",
       "recommendedVisitTime": "반나절",
       "highlights": [
         "자이언트 판다",
@@ -849,7 +849,7 @@
         "lng": 117.15
       },
       "openingHours": "06:00-21:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "호수",
@@ -872,7 +872,7 @@
         "lng": 117
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "반나절",
       "highlights": [
         "양류칭 설날 그림",
@@ -895,7 +895,7 @@
         "lng": 117
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "27元",
+      "ticketPrice": "27위안",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "청나라 건축",
@@ -918,7 +918,7 @@
         "lng": 117.65
       },
       "openingHours": "08:30-17:00",
-      "ticketPrice": "100元",
+      "ticketPrice": "100위안",
       "recommendedVisitTime": "반나절.",
       "highlights": [
         "방목 동물",
@@ -941,7 +941,7 @@
         "lng": 117.2167
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "参观免费",
+      "ticketPrice": "관람 무료",
       "recommendedVisitTime": "1시간",
       "highlights": [
         "현대 건축",
@@ -964,7 +964,7 @@
         "lng": 117.35
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "78元",
+      "ticketPrice": "78위안",
       "recommendedVisitTime": "하루 종일",
       "highlights": [
         "삼판과 저녁 비",
@@ -987,7 +987,7 @@
         "lng": 117.05
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "1시간",
       "highlights": [
         "골동품 자전거",
@@ -1010,7 +1010,7 @@
         "lng": 117.1833
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "30분",
       "highlights": [
         "도개교 철교",
@@ -1032,7 +1032,7 @@
         "lng": 117.1833
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "30분",
       "highlights": [
         "고딕 건축",
@@ -1054,7 +1054,7 @@
         "lng": 117.2
       },
       "openingHours": "09:00-16:30",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "체험형 전시",
@@ -1077,7 +1077,7 @@
         "lng": 117.15
       },
       "openingHours": "종일 개방",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "1시간",
       "highlights": [
         "명문 백년 대학",
@@ -1100,7 +1100,7 @@
         "lng": 117.15
       },
       "openingHours": "종일 개방",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "1시간",
       "highlights": [
         "북양대학당",
@@ -1123,7 +1123,7 @@
         "lng": 117.7167
       },
       "openingHours": "09:00-16:30",
-      "ticketPrice": "20元",
+      "ticketPrice": "20위안",
       "recommendedVisitTime": "1시간",
       "highlights": [
         "해안 방어 요새",
@@ -1145,7 +1145,7 @@
         "lng": 117.7
       },
       "openingHours": "10:00-21:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "1시간",
       "highlights": [
         "인터넷 유명 도서관",
@@ -1168,7 +1168,7 @@
         "lng": 117.5
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "50元",
+      "ticketPrice": "50위안",
       "recommendedVisitTime": "반나절",
       "highlights": [
         "습지 풍경",
@@ -1191,7 +1191,7 @@
         "lng": 117.2
       },
       "openingHours": "14:00-22:00",
-      "ticketPrice": "80元",
+      "ticketPrice": "80위안",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "만담(크로스토크)",
@@ -1205,11 +1205,9 @@
   ],
   "restaurants": [
     {
-      "0": "돼지고기 바오쯔",
-      "1": "해산물 바오쯔",
       "id": "tianjin-1",
       "name": "狗不理包子",
-      "nameEn": "구블리包子",
+      "nameEn": "거부리 바오쯔",
       "type": "로컬",
       "cuisine": "톈진",
       "avgPrice": 80,
@@ -1223,9 +1221,9 @@
       "hours": "06:00-20:00",
       "description": "1858년부터 유명한 전설적인 바오쯔 레스토랑입니다. 얇은 피에 육즙이 풍부한 만두가 특징입니다.",
       "dishHighlights": [
-        "돼지고기包子",
-        "해산물包子",
-        "채소包子"
+        "돼지고기 바오쯔",
+        "해산물 바오쯔",
+        "야채 만두"
       ],
       "tags": [
         "현지",
@@ -1301,7 +1299,7 @@
       "cuisine": "톈진",
       "avgPrice": 200,
       "rating": 4.6,
-      "address": "和平区南京路68호",
+      "address": "허핑구 난징루 68호",
       "coordinates": {
         "lat": 39.1222,
         "lng": 117.2122
@@ -1329,7 +1327,7 @@
       "cuisine": "톈진",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "河西區衛寧路158호",
+      "address": "허시구 웨이닝로 158호",
       "coordinates": {
         "lat": 39.1022,
         "lng": 117.2222
@@ -1338,7 +1336,7 @@
       "hours": "10:30-21:30",
       "description": "전통적인 현지 요리로 알려진 역사적인 천진 레스토랑",
       "dishHighlights": [
-        "팔희鸡肉",
+        "팔보계 (8가지 보물 닭)",
         "찜 돼지고기",
         "편력"
       ],
@@ -1932,7 +1930,7 @@
     {
       "id": "tianjin-26",
       "name": "老天津麻花",
-      "nameEn": "老天津麻花 (麻花)",
+      "nameEn": "톈진 노포 마화 (꼬인 튀김빵)",
       "type": "로컬",
       "cuisine": "마화(꼬인 튀김)",
       "avgPrice": 106,
@@ -1961,7 +1959,7 @@
     {
       "id": "tianjin-28",
       "name": "传统麻花",
-      "nameEn": "传统麻花 (麻花)",
+      "nameEn": "전통 마화 (꼬인 튀김빵)",
       "type": "길거리",
       "cuisine": "마화 (꼬인 튀김)",
       "avgPrice": 31,
@@ -1990,7 +1988,7 @@
     {
       "id": "tianjin-30",
       "name": "老天津麻花",
-      "nameEn": "老天津麻花 (麻花)",
+      "nameEn": "톈진 노포 마화 (꼬인 튀김빵)",
       "type": "카페",
       "cuisine": "마화 (꼬인 튀김)",
       "avgPrice": 63,
@@ -2048,7 +2046,7 @@
     {
       "id": "tianjin-34",
       "name": "老字号耳朵眼炸糕",
-      "nameEn": "老字号耳朵眼炸糕 (耳朵眼炸糕)",
+      "nameEn": "노포 귀두옌 튀김떡 (귀두옌 튀김떡)",
       "type": "로컬",
       "cuisine": "이얼두옌 튀김 케이크",
       "avgPrice": 43,
@@ -2077,7 +2075,7 @@
     {
       "id": "tianjin-36",
       "name": "老街煎饼果子",
-      "nameEn": "老街煎饼果子 (煎饼果子)",
+      "nameEn": "옛 거리 지엔빙궈쯔 (중국식 크레이프)",
       "type": "로컬",
       "cuisine": "지엔빙궈쯔 (중국식 크레이프)",
       "avgPrice": 145,
@@ -2135,7 +2133,7 @@
     {
       "id": "tianjin-40",
       "name": "正宗耳朵眼炸糕",
-      "nameEn": "正宗耳朵眼炸糕 (耳朵眼炸糕)",
+      "nameEn": "정통 귀두옌 튀김떡 (귀두옌 튀김떡)",
       "type": "로컬",
       "cuisine": "얼두옌 튀김 쌀떡",
       "avgPrice": 36,
@@ -2164,7 +2162,7 @@
     {
       "id": "tianjin-42",
       "name": "老街煎饼果子",
-      "nameEn": "老街煎饼果子 (煎饼果子)",
+      "nameEn": "옛 거리 지엔빙궈쯔 (중국식 크레이프)",
       "type": "로컬",
       "cuisine": "지엔빙 궈쯔 (중국식 크레이프)",
       "avgPrice": 142,
@@ -2309,7 +2307,7 @@
     {
       "id": "tianjin-52",
       "name": "老天津煎饼果子",
-      "nameEn": "老天津煎饼果子 (煎饼果子)",
+      "nameEn": "톈진 노포 지엔빙궈쯔 (중국식 크레이프)",
       "type": "로컬",
       "cuisine": "지엔빙 궈쯔 (중국식 크레이프)",
       "avgPrice": 96,
@@ -2367,7 +2365,7 @@
     {
       "id": "tianjin-56",
       "name": "巷子耳朵眼炸糕",
-      "nameEn": "巷子耳朵眼炸糕 (耳朵眼炸糕)",
+      "nameEn": "골목귀귀이얼옌자즈 (귀귀이얼옌자즈)",
       "type": "로컬",
       "cuisine": "얼둬옌 튀김 케이크",
       "avgPrice": 138,
@@ -2396,7 +2394,7 @@
     {
       "id": "tianjin-58",
       "name": "传统麻花",
-      "nameEn": "传统麻花 (麻花)",
+      "nameEn": "전통 마화 (꼬인 튀김빵)",
       "type": "로컬",
       "cuisine": "마화 (꼬인 튀김)",
       "avgPrice": 69,
@@ -2425,7 +2423,7 @@
     {
       "id": "tianjin-60",
       "name": "地道煎饼果子",
-      "nameEn": "地道煎饼果子 (煎饼果子)",
+      "nameEn": "정통 젠빙궈쯔 (젠빙궈쯔)",
       "type": "길거리",
       "cuisine": "지엔빙궈쯔 (중국식 크레이프)",
       "avgPrice": 52,
@@ -2454,7 +2452,7 @@
     {
       "id": "tianjin-62",
       "name": "老天津狗不理包子",
-      "nameEn": "老天津狗不理包子 (狗不理包子)",
+      "nameEn": "톈진 노포 구부리바오쯔 (구부리바오쯔)",
       "type": "로컬",
       "cuisine": "구부리 찐빵",
       "avgPrice": 34,
@@ -2483,7 +2481,7 @@
     {
       "id": "tianjin-64",
       "name": "地道狗不理包子",
-      "nameEn": "地道狗不理包子 (狗不理包子)",
+      "nameEn": "정통 구부리바오쯔 (구부리바오쯔)",
       "type": "카페",
       "cuisine": "구부리 찐빵",
       "avgPrice": 65,
@@ -2512,7 +2510,7 @@
     {
       "id": "tianjin-66",
       "name": "올드 톈진 궈바차이 (라오톈진 궈바차이)",
-      "nameEn": "老天津锅巴菜 (锅巴菜)",
+      "nameEn": "톈진 노포 궈바차이 (궈바차이)",
       "type": "로컬",
       "cuisine": "궈바차이 (바삭한 누룽지)",
       "avgPrice": 57,
@@ -2541,7 +2539,7 @@
     {
       "id": "tianjin-68",
       "name": "巷子耳朵眼炸糕",
-      "nameEn": "巷子耳朵眼炸糕 (耳朵眼炸糕)",
+      "nameEn": "골목귀귀이얼옌자즈 (귀귀이얼옌자즈)",
       "type": "로컬",
       "cuisine": "얼둬옌 튀김 쌀가루 케이크",
       "avgPrice": 39,
@@ -2570,7 +2568,7 @@
     {
       "id": "tianjin-70",
       "name": "巷子煎饼果子",
-      "nameEn": "巷子煎饼果子 (煎饼果子)",
+      "nameEn": "골목 젠빙궈쯔 (젠빙궈쯔)",
       "type": "로컬",
       "cuisine": "젠빙궈쯔(중국식 크레이프)",
       "avgPrice": 76,
@@ -2659,7 +2657,7 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major Chinese cities",
+        "from": "중국 주요 도시",
         "to": "톈진 빈하이 국제공항 (TSN)",
         "duration": "대부분의 주요 도시에서 2-3시간",
         "price": "500-1500¥",
@@ -2670,7 +2668,7 @@
         "type": "train",
         "from": "베이징(30분), 상하이(4시간), 스자좡(2시간)",
         "to": "톈진역 / 톈진 서역",
-        "duration": "30 min - 4 hours",
+        "duration": "30분 - 4시간",
         "price": "50-500¥",
         "frequency": "고속철도 자주 운행",
         "tips": "베이징-톈진 고속철도는 매우 편리함(30분). 두 역 모두 지하철 연결."
@@ -2678,27 +2676,27 @@
     ],
     "local": {
       "metro": [
-        "10 lines operational",
+        "10개 노선 운행 중",
         "Single ride: 2-8¥",
         "주요 관광지 연결",
         "2호선, 3호선이 대부분의 명소에 연결"
       ],
       "bus": [
-        "Extensive network",
+        "광범위한 네트워크",
         "Single ride: 2¥",
         "관광 지역과 연결이 잘 되어 있음",
-        "Mobile payment supported"
+        "모바일 결제 지원"
       ],
       "taxi": [
         "기본 요금: 11위안 (첫 3km)",
         "Most attractions 20-50¥",
-        "Didi app recommended",
+        "디디 앱 추천",
         "야간 할증료: 20% 추가"
       ],
       "bike": [
         "모바이크, 메이퇀 자전거 이용 가능",
         "잠금 해제: 1위안, 이후 30분당 0.5-1위안",
-        "Good for short trips",
+        "짧은 여행에 적합",
         "강변 길은 자전거 타기에 좋음"
       ]
     }
@@ -2721,7 +2719,7 @@
         "중심부 위치",
         "풍부한 역사"
       ],
-      "bookingTips": "Book well ahead. The historic wing is unique. Breakfast is excellent."
+      "bookingTips": "미리 예약하세요. 역사적인 건물이 독특합니다. 조식이 훌륭합니다."
     },
     {
       "name": "톈진 샹그릴라 호텔",
@@ -2740,7 +2738,7 @@
         "중심부 위치",
         "훌륭한 서비스"
       ],
-      "bookingTips": "Best for first-time visitors. Book river view rooms."
+      "bookingTips": "첫 방문객에게 최적입니다. 강변 전망 객실을 예약하세요."
     },
     {
       "name": "톈진 포시즌스 호텔",
@@ -2759,7 +2757,7 @@
         "파인 다이닝",
         "중심부 위치"
       ],
-      "bookingTips": "Premium luxury experience. Book direct for best rates."
+      "bookingTips": "프리미엄 럭셔리 경험. 최적의 요금을 위해 직접 예약하세요."
     },
     {
       "name": "톈진 진황 그랜드 호텔",
@@ -2778,7 +2776,7 @@
         "쇼핑 접근성",
         "지하철 인근"
       ],
-      "bookingTips": "Great for sightseeing. Walking distance to major attractions."
+      "bookingTips": "관광에 최적입니다. 주요 명소까지 도보 거리입니다."
     },
     {
       "name": "톈진 테다 인터내셔널 호텔",
@@ -2797,7 +2795,7 @@
         "모던한 객실",
         "가성비 우수"
       ],
-      "bookingTips": "Good for business travelers. Explore Binhai New Area."
+      "bookingTips": "비즈니스 여행자에게 좋습니다. 빈하이 신구를 탐험하세요."
     },
     {
       "name": "톈진 유이 빈관",
@@ -2816,7 +2814,7 @@
         "정원 환경",
         "좋은 서비스"
       ],
-      "bookingTips": "Good value in central location. Book garden view rooms."
+      "bookingTips": "중심부에 위치해 가성비가 좋습니다. 가든 뷰 객실을 예약하세요."
     },
     {
       "name": "톈진 크리스탈 팰리스 호텔",
@@ -2835,7 +2833,7 @@
         "좋은 조식",
         "조용한 지역"
       ],
-      "bookingTips": "Great for families. Near Water Park and cultural attractions."
+      "bookingTips": "가족 여행에 좋습니다. 워터파크와 문화 명소와 가깝습니다."
     },
     {
       "name": "톈진 샤오바이러 아토 호텔",
@@ -2854,7 +2852,7 @@
         "편안한 침대",
         "무료 조식"
       ],
-      "bookingTips": "Popular Chinese boutique chain. Great value and service."
+      "bookingTips": "인기 있는 중국 부티크 체인입니다. 가성비와 서비스가 뛰어납니다."
     },
     {
       "name": "루자 호텔 톈진 난징루점",
@@ -2873,7 +2871,7 @@
         "청결한 객실",
         "지하철 접근성"
       ],
-      "bookingTips": "Best budget option in central area. Simple but reliable."
+      "bookingTips": "중심 지역에서 최고의 가성비 옵션입니다. 단순하지만 믿을 수 있습니다."
     },
     {
       "name": "톈진 고대문화거리 청년여관",
@@ -2892,7 +2890,7 @@
         "사교적인 분위기",
         "가성비"
       ],
-      "bookingTips": "Great location for sightseeing. Book during off-peak season."
+      "bookingTips": "관광하기에 최적의 위치입니다. 비수기에 예약하세요."
     },
     {
       "name": "톈진 하이허 인디고 호텔",
@@ -2911,7 +2909,7 @@
         "중심부 위치",
         "부티크 럭셔리"
       ],
-      "bookingTips": "Good for romantic trips. Book river view rooms."
+      "bookingTips": "로맨틱한 여행에 좋습니다. 리버뷰 객실을 예약하세요."
     },
     {
       "name": "톈진 준롱 웨스틴 호텔",
@@ -2930,7 +2928,7 @@
         "현대적인 시설",
         "좋은 서비스"
       ],
-      "bookingTips": "Westin quality with central location. Book direct for perks."
+      "bookingTips": "웨스틴 품질에 중심부 위치입니다. 직영 예약 시 추가 혜택이 있습니다."
     },
     {
       "name": "톈진 고문화 거리 호텔",
@@ -2949,14 +2947,14 @@
         "현대적",
         "좋은 위치"
       ],
-      "bookingTips": "Perfect for culture tourists. Book during off-peak."
+      "bookingTips": "문화 관광객에게 완벽합니다. 비수기에 예약하세요."
     },
     {
       "name": "톈진의 눈 관람차 호텔",
       "nameEn": "Tianjin Eye Ferris Wheel Hotel",
       "budget": "mid",
       "priceRange": "¥400-700/night",
-      "address": "Near Ferris Wheel",
+      "address": "대관람차 인근",
       "coordinates": {
         "lat": 39.1411,
         "lng": 117.1911
@@ -2968,14 +2966,14 @@
         "현대적",
         "사진 촬영 기회"
       ],
-      "bookingTips": "Great for photos. Book river view rooms."
+      "bookingTips": "사진 찍기에 좋아요. 강 전망 객실을 예약하세요."
     },
     {
       "name": "톈진 우다다오 민박",
       "nameEn": "Tianjin Five Great Avenues Homestay",
       "budget": "budget",
       "priceRange": "¥150-350/night",
-      "address": "Five Great Avenues area",
+      "address": "오대대로 지역",
       "coordinates": {
         "lat": 39.1211,
         "lng": 117.2011
@@ -2987,7 +2985,7 @@
         "현지 체험",
         "가성비"
       ],
-      "bookingTips": "Experience colonial architecture. Book during off-peak."
+      "bookingTips": "식민지 시대 건축을 경험하세요. 비수기에 예약하세요."
     }
   ],
   "payment": [
@@ -2996,25 +2994,25 @@
       "icon": "alipay",
       "description": "톈진에서의 보편적인 결제",
       "howToUse": [
-        "Download app",
-        "Link card"
+        "앱 다운로드",
+        "카드 연결"
       ],
       "tips": [
-        "Works at all merchants",
-        "English mode available"
+        "모든 가맹점에서 사용 가능",
+        "영어 모드 지원"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Accepted everywhere",
+      "description": "어디서나 사용 가능",
       "howToUse": [
-        "WeChat required",
+        "위챗 필요",
         "국제 카드 사용 가능"
       ],
       "tips": [
-        "Set to English mode",
-        "Needed for shared bikes"
+        "영어 모드로 설정",
+        "공유 자전거 이용에 필요"
       ]
     },
     {
@@ -3023,10 +3021,10 @@
       "description": "전통 시장에서 유용함",
       "howToUse": [
         "ATM 어디서나",
-        "Banks common"
+        "은행이 흔함"
       ],
       "tips": [
-        "Keep 200¥ for markets",
+        "시장용으로 200위안을 준비하세요",
         "대부분의 레스토랑에서 카드 사용 가능"
       ]
     }
@@ -3041,7 +3039,7 @@
     {
       "category": "history",
       "title": "식민지 유산",
-      "content": "톈진에는 유럽식 건축 양식의 9개 외국 조계지구가 있습니다. 우다다오(五大道) 지역에서는 1900년대 초 이탈리아, 프랑스, 영국 등의 식민지 건축물을 볼 수 있습니다.",
+      "content": "톈진에는 유럽식 건축 양식의 9개 외국 조계지가 있습니다. 우다다오 지역에서는 1900년대 초 이탈리아, 프랑스, 영국 등의 식민지 건축물을 볼 수 있습니다.",
       "importance": "high"
     },
     {
@@ -3071,7 +3069,7 @@
     {
       "category": "water",
       "title": "하이허 강 문화",
-      "content": "톈진 중심에 있는 하이허(海河) 강은 역사적인 다리와 강변 산책로를 갖추고 있습니다. 저녁 크루즈에서는 도시의 스카이라인이 가장 아름다운 경치를 즐길 수 있습니다.",
+      "content": "톈진 중심을 흐르는 하이허 강은 역사적인 다리와 강변 산책로를 갖추고 있습니다. 저녁 크루즈에서는 도시의 스카이라인 가장 아름다운 전망을 즐길 수 있습니다.",
       "importance": "medium"
     },
     {
@@ -3083,7 +3081,7 @@
     {
       "category": "food",
       "title": "마화 문화",
-      "content": "톈진의 마후아(麻花, 튀긴 과자)는 바삭한 식감이 특징인 유명한 간식입니다. 기념품으로 자주 가져갑니다.",
+      "content": "톈진의 마후아(튀긴 과자)는 바삭한 식감이 특징인 유명한 간식입니다. 기념품으로 자주 가져갑니다.",
       "importance": "medium"
     },
     {
@@ -3113,7 +3111,7 @@
     {
       "category": "shopping",
       "title": "전통 쇼핑",
-      "content": "난스먼(南市門)과 구문화제(古文化街)에서는 전통 중국 상품, 공예품, 현지 간식을 제공합니다. 시장에서는 흥정이 기대됩니다.",
+      "content": "난스먼(남시문)과 고문화가(고문화가)에서는 전통 중국 상품과 공예품, 현지 간식을 제공합니다. 시장에서는 흥정이 기대됩니다.",
       "importance": "medium"
     },
     {

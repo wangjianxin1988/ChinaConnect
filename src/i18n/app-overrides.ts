@@ -30,7 +30,10 @@ function buildRegistry(modules: Record<string, Record<string, unknown>>): Record
       const lang = match[1];
       for (const [exportName, value] of Object.entries(mod)) {
         if (value && typeof value === "object" && !Array.isArray(value)) {
-          const prefix = EXPORT_PREFIX[exportName] ?? "";
+          // Export names carry a language suffix (e.g. APP_OVERRIDES_AR, APP_OVERRIDES_ZH_CN);
+          // strip it so the base name matches the EXPORT_PREFIX map.
+          const base = exportName.replace(/_([A-Z]{2})(?:_([A-Z]{2}))?$/, "");
+          const prefix = (EXPORT_PREFIX as Record<string, string>)[base] ?? "";
           for (const [k, v] of Object.entries(value as Record<string, string>)) {
             registry[lang] = { ...(registry[lang] || {}), [prefix + k]: v };
           }

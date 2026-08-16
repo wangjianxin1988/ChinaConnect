@@ -1,5 +1,4 @@
 {
-  "3": "난징루 - 최고급 쇼핑 거리",
   "slug": "shanghai",
   "name": "上海",
   "nameEn": "Shanghai",
@@ -9,14 +8,14 @@
     "lat": 31.2304,
     "lng": 121.4737
   },
-  "timezone": "UTC+8 (China Standard Time)",
+  "timezone": "UTC+8 (중국 표준시)",
   "description": "상하이는 중국의 경제 중심지이자 아르데코 건축과 미래적인 고층 빌딩이 어우러진 눈부신 대도시입니다. '동방의 진주'라고 불리는 이 도시는 세계적 수준의 다이닝, 난징루에서의 쇼핑, 역사적인 와이탄의 워터프런트, 그리고 활기찬 나이트라이프를 제공합니다. 동서양 문화가 완벽하게 융합되어 독특한 국제적 분위기를 자아냅니다.",
   "coverImage": "/img/ext/2284bd75905e.webp",
   "highlights": [
     "밴드 - 역사적인 해안대로",
     "동방진주탑 - 상징적인 스카이라인 랜드마크",
     "유원지 - 고전 중국 정원",
-    "난징로 -顶级 쇼핑거리",
+    "난징루 - 일류 쇼핑 거리",
     "신톈디 - 역사적인 시쿠먼 주택"
   ],
   "climate": {
@@ -30,12 +29,10 @@
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "4C (39F)",
-    "tips": "Spring and autumn offer the most comfortable weather. Summers are hot and humid with frequent rain. Winters are cold but rarely snowy. Typhoon season is July-September. Pack layers and an umbrella."
+    "tips": "봄과 가을이 가장 쾌적한 날씨입니다. 여름은 덥고 습하며 비가 잦습니다. 겨울은 춥지만 눈이 거의 내리지 않습니다. 태풍 시즌은 7월부터 9월까지입니다. 겹쳐 입을 옷과 우산을 준비하세요."
   },
   "attractions": [
     {
-      "1": "피스 호텔",
-      "2": "세관 하우스 시계탑",
       "id": "the-bund",
       "name": "外滩",
       "nameEn": "와이탄",
@@ -52,8 +49,8 @@
       "recommendedVisitTime": "1-2시간",
       "highlights": [
         "황푸 강 전경",
-        "피스 호텔(和平饭店)",
-        "세관사钟楼",
+        "피스 호텔",
+        "세관 하우스 시계탑",
         "야간 조명"
       ],
       "tips": "골든 아워에 촬영하기 위해 석시에 방문하는 것이 가장 좋습니다. 밴드에서 난징 로드 보행자 거리까지 걸어가는 것을 추천합니다. 저녁 강물 야간 조명쇼를 즐기세요.",
@@ -108,7 +105,6 @@
       "phone": "+86 21 6326 0830"
     },
     {
-      "0": "내부에 케이블카",
       "id": "shanghai-tower",
       "name": "上海中心大厦",
       "nameEn": "상하이 타워",
@@ -124,7 +120,7 @@
       "ticketPrice": "180¥ (상층), 120¥ (94층)",
       "recommendedVisitTime": "1시간",
       "highlights": [
-        "내부 시트형缆차",
+        "내부에 케이블카",
         "스카이 로비",
         "360도 도시 전경",
         "클라우드 기술 전시"
@@ -159,11 +155,11 @@
     {
       "id": "oriental-pearl",
       "name": "东方明珠塔",
-      "nameEn": "东方明珠塔",
+      "nameEn": "동방명주탑",
       "category": "modern",
       "description": "상하이의 가장 상징적인 랜드마크로 관망대, 회전 레스토랑, 유리 바닥 스카이워크가 있습니다.",
       "image": "/img/ext/0f22197252fb.webp",
-      "address": "世纪大道1号, 浦东",
+      "address": "상하이시 푸둥신구 스지대로 1호",
       "coordinates": {
         "lat": 31.2397,
         "lng": 121.4999
@@ -207,7 +203,7 @@
     {
       "id": "shanghai-museum",
       "name": "上海博物馆",
-      "nameEn": "上海博物馆",
+      "nameEn": "상하이 박물관",
       "category": "cultural",
       "description": "중국 최고의 박물관 중 하나로, 청동기, 도자기, 서예를 포함한 세계적 수준의 고대 중국 예술 컬렉션을 보유하고 있습니다.",
       "image": "/img/ext/e3b01cfae9b2.webp",
@@ -283,7 +279,7 @@
       "category": "cultural",
       "description": "대규모 인터랙티브 과학 박물관으로 모든 연령대를 위한 IMAX 돔 극장과 체험형 전시를 갖추고 있습니다.",
       "image": "/img/ext/bac2969d62dd.webp",
-      "address": "푸동 区 世纪大道 2000호",
+      "address": "2000 스지대로, 푸둥",
       "coordinates": {
         "lat": 31.218,
         "lng": 121.543
@@ -307,7 +303,7 @@
       "category": "cultural",
       "description": "상하이를 대표하는 중요한 불교 사찰 중 하나로, 금색 전각이 도시 한가운데 자리 잡고 있습니다.",
       "image": "/img/ext/c8db03c48237.webp",
-      "address": "1686 난징西路, 징안구",
+      "address": "난징시루 1686호, 징안구",
       "coordinates": {
         "lat": 31.2238,
         "lng": 121.4455
@@ -541,7 +537,6 @@
       "phone": "+86 021  5206 0091"
     },
     {
-      "2": "2010년 상하이 엑스포 전시품",
       "id": "world-expo-museum",
       "name": "世博会博物馆",
       "nameEn": "세계박람회 박물관",
@@ -559,7 +554,7 @@
       "highlights": [
         "박람회 역사 전시",
         "인터랙티브 전시",
-        "2010 상하이世博 행사 유물",
+        "2010년 상하이 엑스포 전시품",
         "국제 관"
       ],
       "tips": "예약 시 무료 입장. 홍차오 지역과 가까우며, 상하이의 발전을 이해하는 데 좋습니다.",
@@ -1210,7 +1205,7 @@
         "사찰",
         "전통 건축"
       ],
-      "tips": "꼭 먹어야 할 것: 오래된 레스토랑에서의 오리지널 난샹 샤오롱바오. 구위안(顧園)도 방문할 가치가 있습니다.",
+      "tips": "필식: 오래된 레스토랑에서 즐기는 오리지널 난샹 샤오룽바오. 구위안도 방문할 가치가 있습니다.",
       "phone": "+86 021  1536 4365"
     },
     {
@@ -1268,7 +1263,7 @@
       "category": "cultural",
       "image": "/img/ext/546c23e9922d.webp",
       "description": "중국 최초의 국영 현대 미술관. 발전소를 개조한 건물로, 국제적인 기획 전시를 개최합니다.",
-      "address": "황푸区 댁오쓰马쌍장로 678",
+      "address": "황푸구 먀오장로 678호",
       "coordinates": {
         "lat": 31.2025,
         "lng": 121.4912
@@ -1288,7 +1283,6 @@
   ],
   "restaurants": [
     {
-      "0": "자작 푸아그라",
       "id": "shanghai-1",
       "name": "울트라바이올렛 바이 폴 파이레",
       "nameEn": "자외선",
@@ -1306,7 +1300,7 @@
       "hours": "저녁만, 예약 필수",
       "description": "셰프 폴 피레의 3미쉐린 스타 몰입형 다이닝 체험. 다감각 방에서 4시간에 20코스.",
       "dishHighlights": [
-        "A la候爵의鹅肝",
+        "자쥐에의 푸아그라",
         "감각적인 디저트",
         "올리브"
       ],
@@ -1320,7 +1314,6 @@
       "image": "/img/ext/7ae3fe0c05ca.webp"
     },
     {
-      "1": "송이버섯 조림 전복",
       "id": "shanghai-2",
       "name": "唐阁",
       "nameEn": "통 코트",
@@ -1339,7 +1332,7 @@
       "description": "미쉐린 2스타 광동 요리점으로 완벽한 딤섬과 정교한 상하이 요리를 제공합니다.",
       "dishHighlights": [
         "찜 점박이 가루퍼",
-        "버섯 소牢어기",
+        "송이버섯 조림 전복",
         "계란흰자와 대게알"
       ],
       "tags": [
@@ -1541,7 +1534,6 @@
       "image": "/img/ext/3e2e304adf46.webp"
     },
     {
-      "2": "번드 뷰",
       "id": "shanghai-9",
       "name": "新天地朗廷酒店唐阁",
       "nameEn": "린롱헌",
@@ -1566,7 +1558,7 @@
       "tags": [
         "고급 식당",
         "광동요리",
-        "번드가视角",
+        "번드 뷰 (황푸강 전망)",
         "비즈니스"
       ],
       "diamond": 0,
@@ -1574,7 +1566,6 @@
       "image": "/img/ext/1ccf9503e0e7.webp"
     },
     {
-      "1": "삶은 게",
       "id": "shanghai-10",
       "name": "夜上海",
       "nameEn": "이룡Court",
@@ -1593,7 +1584,7 @@
       "description": "역사적인 왈도프 아스토리아 건물에서 정교한 상하이 요리를 제공하는 미쉐린 1성 레스토랑.",
       "dishHighlights": [
         "계란 흰자와 찐 대게",
-        "볶은 모래蟹",
+        "게 조림",
         "레드와인 브레이즈드 숏립"
       ],
       "tags": [
@@ -1678,7 +1669,7 @@
       "cuisine": "상하이",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "、江寧路 17번지, 징안",
+      "address": "징안구 장닝로 17번지",
       "coordinates": {
         "lat": 31.229,
         "lng": 121.465
@@ -1800,7 +1791,6 @@
       "image": "/img/ext/b54fdaeb3505.webp"
     },
     {
-      "2": "번드 뷰",
       "id": "shanghai-17",
       "name": "外滩18号",
       "nameEn": "번드 18",
@@ -1825,7 +1815,7 @@
       "tags": [
         "고급 식당",
         "프랑스",
-        "번드가视角",
+        "번드 뷰 (황푸강 전망)",
         "역사적인"
       ],
       "diamond": 0,
@@ -2323,7 +2313,7 @@
     {
       "id": "shanghai-34",
       "name": "老字号生煎",
-      "nameEn": "老字号生煎 (生煎)",
+      "nameEn": "노포 생전 (생전)",
       "type": "길거리",
       "cuisine": "팬에 구운 만두 (성지앤)",
       "avgPrice": 60,
@@ -2353,7 +2343,7 @@
     {
       "id": "shanghai-36",
       "name": "正宗葱油拌面",
-      "nameEn": "正宗葱油拌面 (葱油拌面)",
+      "nameEn": "정통 파기름 비빔면 (파기름 비빔면)",
       "type": "로컬",
       "cuisine": "파기름 국수",
       "avgPrice": 115,
@@ -2383,7 +2373,7 @@
     {
       "id": "shanghai-38",
       "name": "老上海蟹粉豆腐",
-      "nameEn": "老上海蟹粉豆腐 (蟹粉豆腐)",
+      "nameEn": "올드상하이 게살 두부 (게살 두부)",
       "type": "로컬",
       "cuisine": "게장 두부",
       "avgPrice": 149,
@@ -2413,9 +2403,9 @@
     {
       "id": "shanghai-40",
       "name": "阿婆生煎",
-      "nameEn": "阿婆生煎 (生煎)",
+      "nameEn": "아파오 생전 (생전)",
       "type": "로컬",
-      "cuisine": "성지앤(생煎)",
+      "cuisine": "생전",
       "avgPrice": 54,
       "rating": 4.3,
       "address": "상하이시 쉬후이구 푸드 스트리트 52번지",
@@ -2443,7 +2433,7 @@
     {
       "id": "shanghai-42",
       "name": "地道生煎",
-      "nameEn": "地道生煎 (生煎)",
+      "nameEn": "토속 생전 (생전)",
       "type": "로컬",
       "cuisine": "생전만두(판프라이드 번)",
       "avgPrice": 59,
@@ -2473,7 +2463,7 @@
     {
       "id": "shanghai-44",
       "name": "巷子葱油拌面",
-      "nameEn": "巷子葱油拌面 (葱油拌面)",
+      "nameEn": "골목 파기름 비빔면 (파기름 비빔면)",
       "type": "로컬",
       "cuisine": "파기름 국수",
       "avgPrice": 81,
@@ -2487,7 +2477,7 @@
       "hours": "09:00-21:00",
       "description": "상하이 현지인이 추천하는 파기름 국수 가게로, 정통 맛과 합리적인 가격을 자랑합니다",
       "dishHighlights": [
-        "파葱기름 국수",
+        "파기름 비빔면",
         "생지앤 (군만두 번)",
         "백절닭"
       ],
@@ -2503,7 +2493,7 @@
     {
       "id": "shanghai-46",
       "name": "阿婆生煎",
-      "nameEn": "阿婆生煎 (生煎)",
+      "nameEn": "아파오 생전 (생전)",
       "type": "로컬",
       "cuisine": "생지앤 (군만두 번)",
       "avgPrice": 133,
@@ -2519,7 +2509,7 @@
       "dishHighlights": [
         "백절닭",
         "샤오롱바오 (수프 만두)",
-        "파葱기름 국수"
+        "파기름 비빔면"
       ],
       "tags": [
         "숨은 미식의 즐거움",
@@ -2533,7 +2523,7 @@
     {
       "id": "shanghai-48",
       "name": "길모퉁이의 홍샤오러우 (돼지고기 조림)",
-      "nameEn": "길모퉁이의 훙사오러우(紅焼肉)",
+      "nameEn": "길모퉁이의 훙샤오러우 (간장 조림 돼지고기)",
       "type": "카페",
       "cuisine": "동파육",
       "avgPrice": 58,
@@ -2593,7 +2583,7 @@
     {
       "id": "shanghai-52",
       "name": "上海味蟹粉豆腐",
-      "nameEn": "上海味蟹粉豆腐 (蟹粉豆腐)",
+      "nameEn": "상하이식 게살 두부 (게살 두부)",
       "type": "로컬",
       "cuisine": "게장 두부",
       "avgPrice": 53,
@@ -2623,7 +2613,7 @@
     {
       "id": "shanghai-54",
       "name": "老上海蟹粉豆腐",
-      "nameEn": "老上海蟹粉豆腐 (蟹粉豆腐)",
+      "nameEn": "올드상하이 게살 두부 (게살 두부)",
       "type": "로컬",
       "cuisine": "게장 두부",
       "avgPrice": 120,
@@ -2773,7 +2763,7 @@
     {
       "id": "shanghai-64",
       "name": "上海味小笼包",
-      "nameEn": "上海味小笼包 (小笼包)",
+      "nameEn": "상하이식 샤오룽바오 (작은 만두)",
       "type": "로컬",
       "cuisine": "샤오룽바오 (소룡포)",
       "avgPrice": 117,
@@ -2803,7 +2793,7 @@
     {
       "id": "shanghai-66",
       "name": "上海味白斩鸡",
-      "nameEn": "上海味白斩鸡 (白斩鸡)",
+      "nameEn": "상하이식 백참계 (흰 닭고기)",
       "type": "카페",
       "cuisine": "백절계",
       "avgPrice": 26,
@@ -2839,23 +2829,22 @@
         "to": "상하이 푸동 국제공항(PVG) / 훙차오 공항(SHA)",
         "duration": "상이함 (유럽/미주에서 10-14시간)",
         "price": "1200-9000¥",
-        "frequency": "Multiple daily flights",
+        "frequency": "매일 여러 편의 항공편",
         "tips": "PVG는 국제선, SHA는 주로 국내선. PVG에서 마그레브 열차는 시속 430km에 도달."
       },
       {
         "type": "train",
         "from": "베이징(4.5시간), 항저우(1시간), 쑤저우(0.5시간)",
         "to": "상하이 훙차오 기차역 / 상하이 기차역",
-        "duration": "0.5-4.5 hours",
+        "duration": "0.5~4.5시간",
         "price": "200-900¥",
         "frequency": "매일 여러 차례 출발",
         "tips": "고속열차는 매우 정시. 훙차오 역은 지하철 및 공항과 연결."
       }
     ],
     "local": {
-      "0": "주요 지역을 커버하는 19개 노선",
       "metro": [
-        "모든 주요 지역을覆盖하는 19개 노선",
+        "주요 지역을 커버하는 19개 노선",
         "단일 승차: 거리에 따라 3-10위안",
         "세계에서 가장 긴 무인 자동 운전 시스템",
         "주요 역에 영어 표지판"
@@ -2867,7 +2856,7 @@
       ],
       "taxi": [
         "기본 요금: 14위안 (첫 3km)",
-        "Waiting: 0.8¥ per minute",
+        "대기: 분당 0.8위안",
         "중국어를 못하는 사람은 디디(Didi) 앱 선호",
         "단체 이용 시 밴 옵션 가능"
       ],
@@ -2897,7 +2886,7 @@
         "번드 전망이 보이는 실내 수영장",
         "요트 투어 이용 가능"
       ],
-      "bookingTips": "Request Bund-view rooms. Best deals through hotel loyalty programs."
+      "bookingTips": "번드 뷰 객실을 요청하세요. 호텔 로열티 프로그램을 통해 최고의 할인 혜택을 받을 수 있습니다."
     },
     {
       "name": "상하이 와이탄 왈도프 호텔",
@@ -2915,14 +2904,14 @@
         "매력적인 롱 바",
         "중심부 위치"
       ],
-      "bookingTips": "Long Bar for cocktails is legendary. Book bar seats in advance."
+      "bookingTips": "칵테일로 유명한 롱 바는 전설적입니다. 바 좌석은 사전에 예약하세요."
     },
     {
       "name": "상하이 진마오 그랜드 하얏트 호텔",
       "nameEn": "Grand Hyatt Shanghai",
       "budget": "mid",
       "priceRange": "¥1200-2000/night",
-      "address": "88 Jinjiang Rd, Pudong",
+      "address": "푸둥 진장루 88번지",
       "coordinates": {
         "lat": 31.221,
         "lng": 121.5025
@@ -2933,14 +2922,14 @@
         "멋진 도시 전망",
         "IFC 몰과 연결됨"
       ],
-      "bookingTips": "Higher floors offer better views. Check for weekend packages."
+      "bookingTips": "높은 층일수록 전망이 좋습니다. 주말 패키지가 있는지 확인해 보세요."
     },
     {
       "name": "상하이 힐튼 호텔",
       "nameEn": "Hilton Shanghai",
       "budget": "mid",
       "priceRange": "¥900-1500/night",
-      "address": "1 Fatherland Rd, Huangpu",
+      "address": "황푸구 어더루 1번지",
       "coordinates": {
         "lat": 31.2285,
         "lng": 121.4805
@@ -2951,7 +2940,7 @@
         "좋은 조식 뷔페",
         "신뢰할 수 있는 브랜드"
       ],
-      "bookingTips": "Good central location for first-time visitors."
+      "bookingTips": "첫 방문객에게 좋은 중심 위치입니다."
     },
     {
       "name": "상하이 에디션 호텔",
@@ -2969,14 +2958,14 @@
         "훌륭한 루프탑 바",
         "중심부 위치"
       ],
-      "bookingTips": "Rooftop bar is popular - book ahead."
+      "bookingTips": "루프탑 바가 인기가 많으니 미리 예약하세요."
     },
     {
       "name": "상하이 푸리 호텔",
       "nameEn": "The Puli Hotel & Spa",
       "budget": "luxury",
       "priceRange": "¥2500-4500/night",
-      "address": "1 Xiushan Rd, Jing'an",
+      "address": "징안구 시우산루 1번지",
       "coordinates": {
         "lat": 31.224,
         "lng": 121.448
@@ -2987,7 +2976,7 @@
         "훌륭한 스파",
         "중심부 위치"
       ],
-      "bookingTips": "Weekend packages offer better value."
+      "bookingTips": "주말 패키지가 더 가성비가 좋습니다."
     },
     {
       "name": "상하이 징안 샹그릴라 호텔",
@@ -3005,7 +2994,7 @@
         "훌륭한 전망",
         "다양한 레스토랑"
       ],
-      "bookingTips": "Higher floors have best views. Breakfast worth the upgrade."
+      "bookingTips": "높은 층에서 가장 좋은 전망을 볼 수 있습니다. 조식 업그레이드가 가치가 있습니다."
     },
     {
       "name": "상하이 융서",
@@ -3023,7 +3012,7 @@
         "스파와 수영장",
         "트렌디한 위치"
       ],
-      "bookingTips": "Connected to HKRI Taikoo Hui mall."
+      "bookingTips": "HKRI 타이쿠 후이 몰과 연결되어 있습니다."
     },
     {
       "name": "상하이 불가리 호텔",
@@ -3041,7 +3030,7 @@
         "멋진 번드 전망",
         "미쉐린 레스토랑"
       ],
-      "bookingTips": "Bund view suites are exceptional. Book restaurant in advance."
+      "bookingTips": "번드 뷰 스위트룸이 훌륭합니다. 레스토랑은 사전에 예약하세요."
     },
     {
       "name": "상하이 피스 호텔",
@@ -3059,14 +3048,14 @@
         "재즈 바",
         "상징적인 위치"
       ],
-      "bookingTips": "Request renovated rooms in the south building. Sunday jazz brunch is legendary."
+      "bookingTips": "남쪽 건물의 리노베이션된 객실을 요청하세요. 일요일 재즈 브런치는 전설적입니다."
     },
     {
       "name": "상하이 푸동 샹그릴라 호텔",
       "nameEn": "Shangri-La Pudong",
       "budget": "luxury",
       "priceRange": "¥2000-3500/night",
-      "address": "33 Fu Cheng Rd, Pudong",
+      "address": "푸둥, 푸청 로드 33번지",
       "coordinates": {
         "lat": 31.238,
         "lng": 121.499
@@ -3077,7 +3066,7 @@
         "훌륭한 번드 전망",
         "여러 수영장"
       ],
-      "bookingTips": "Horizon Club rooms offer better views. Airport transfer recommended."
+      "bookingTips": "호라이즌 클럽 객실은 더 나은 전망을 제공합니다. 공항 이동 서비스를 추천합니다."
     },
     {
       "name": "상하이 수케타이 호텔",
@@ -3095,7 +3084,7 @@
         "훌륭한 서비스",
         "중심부 위치"
       ],
-      "bookingTips": "Spa treatments highly recommended. Good for business travelers."
+      "bookingTips": "스파 트리트먼트를 적극 추천합니다. 비즈니스 여행객에게 좋습니다."
     },
     {
       "name": "상하이 리츠칼튼 호텔",
@@ -3113,7 +3102,7 @@
         "버틀러 서비스",
         "다양한 다이닝 옵션"
       ],
-      "bookingTips": "Butler service is exceptional. Ask for renovated rooms."
+      "bookingTips": "버틀러 서비스가 탁월합니다. 리노베이션된 객실을 요청하세요."
     },
     {
       "name": "상하이 안만 호텔",
@@ -3131,14 +3120,14 @@
         "프라이빗 클럽 느낌",
         "아만 서비스"
       ],
-      "bookingTips": "Only 28 rooms ensure exclusivity. Book well in advance."
+      "bookingTips": "단 28개의 객실만 있어 프라이버시가 보장됩니다. 미리 예약하세요."
     },
     {
       "name": "상하이 진장 호텔",
       "nameEn": "Jinjiang Hotel",
       "budget": "mid",
       "priceRange": "¥800-1500/night",
-      "address": "59 Changle Rd, Xuhui",
+      "address": "창러루 59번지, 쉬후이",
       "coordinates": {
         "lat": 31.214,
         "lng": 121.453
@@ -3149,7 +3138,7 @@
         "넓은 정원",
         "프랑스 조계지 위치"
       ],
-      "bookingTips": "Meijing building has been renovated. Great for history buffs."
+      "bookingTips": "메이징 빌딩은 리노베이션을 마쳤습니다. 역사 애호가에게 훌륭합니다."
     },
     {
       "name": "상하이 와이탄 빈양좡",
@@ -3168,7 +3157,7 @@
         "루프탑 바",
         "럭셔리 스파"
       ],
-      "bookingTips": "Request river-view rooms. Best for romantic getaways."
+      "bookingTips": "강변 전망 객실을 요청하세요. 로맨틱한 휴가에 최고입니다."
     },
     {
       "name": "상하이 신톈디 안다즈 호텔",
@@ -3187,7 +3176,7 @@
         "루프탑 바",
         "중심부 위치"
       ],
-      "bookingTips": "Great for nightlife. Book weekend packages."
+      "bookingTips": "나이트라이프에 최적입니다. 주말 패키지를 예약하세요."
     }
   ],
   "payment": [
@@ -3211,14 +3200,14 @@
       "icon": "wechat",
       "description": "현지 거래 및 위챗 서비스에 필수",
       "howToUse": [
-        "WeChat app required",
+        "위챗 앱 필요",
         "설정에서 위챗페이를 통해 카드 연결",
         "QR 코드 스캔으로 결제"
       ],
       "tips": [
         "설정에서 영어 버전 사용 가능",
         "디디 차량 호출에 필요",
-        "Good for group payments"
+        "단체 결제에 적합합니다."
       ]
     },
     {
@@ -3230,7 +3219,7 @@
         "ICBC, HSBC, 스탠다드차타드에 영어 인터페이스 제공"
       ],
       "tips": [
-        "Keep 200-500¥ as backup",
+        "예비로 200-500위안을 준비하세요.",
         "Bank 카드는 일반적으로 모든 ATM에서 사용할 수 있습니다"
       ]
     },
@@ -3282,7 +3271,7 @@
     {
       "category": "language",
       "title": "상하이 방언",
-      "content": "북경어는 널리 이해되지만, 상하이어(上海話)가 지역 언어입니다. 방문객이 몇몇 표현을 시도하면 현지인들은 감사하게 생각합니다.",
+      "content": "북경어는 널리 이해되지만, 상하이어(상하이 방언)가 지역 언어입니다. 방문객이 몇 가지 표현을 시도하면 현지인들은 감사하게 생각합니다.",
       "importance": "medium"
     },
     {
@@ -3312,25 +3301,25 @@
     {
       "category": "culture",
       "title": "해파이 문화",
-      "content": "하이파이(海派)는 상하이 특유의 동서양 융합 문화를 가리킵니다. 이 국제적인 스타일은 건축에서 요리에 이르기까지 모든 것에 영향을 미치며, 개방성, 혁신, 세련됨이 특징입니다.",
+      "content": "하이파이(상하이식 융합 문화)는 상하이의 독특한 동서양 융합 문화를 가리킵니다. 이 국제적인 스타일은 건축에서 요리에 이르기까지 모든 것에 영향을 미치며, 개방성, 혁신, 세련됨이 특징입니다.",
       "importance": "high"
     },
     {
       "category": "architecture",
       "title": "시쿠먼 건축",
-      "content": "스쿠먼(石庫門)은 중국과 서양 요소가 융합된 독특한 석조 문을 가진 역사적인 연립 주택입니다. 많은 스쿠먼이 신티엔디(新天地)와 톈쯔팡(田子坊)에서 문화유산으로 보존되고 있습니다.",
+      "content": "스쿠먼(석조 문)은 중국과 서양 요소를 융합한 독특한 석조 문을 가진 역사적인 연립 주택입니다. 많은 스쿠먼이 신티엔디와 톈쯔팡에서 문화 유산으로 보존되어 있습니다.",
       "importance": "high"
     },
     {
       "category": "fashion",
       "title": "치파오와 패션",
-      "content": "1920년대부터 1930년대에 걸쳐 상하이에서 상징적인 치파오(旗袍)가 세련되게 발전했습니다. 오늘날 상하이는 여전히 중국 패션의 수도이며, 디자이너들은 전통 요소와 현대 스타일을 융합하고 있습니다.",
+      "content": "1920년대부터 1930년대에 걸쳐 상하이에서 아이코닉한 치파오가 세련되게 완성되었습니다. 오늘날 상하이는 중국 패션의 수도로 계속해서 자리 잡고 있으며, 디자이너들은 전통적인 요소와 현대적인 스타일을 융합하고 있습니다.",
       "importance": "medium"
     },
     {
       "category": "nightlife",
       "title": "나이트라이프 문화",
-      "content": "상하이는 중국 나이트라이프의 중심지로, 바, 클럽, 엔터테인먼트 시설이 새벽까지 영업합니다. 인기 있는 지역으로는 신티엔디, 구 프랑스 조계, 징안(靜安) 등이 있습니다.",
+      "content": "상하이는 중국 나이트라이프의 중심지로, 바, 클럽, 엔터테인먼트 시설이 새벽까지 영업합니다. 인기 있는 지역으로는 신톈디, 구 프랑스 조계, 징안 등이 있습니다.",
       "importance": "medium"
     },
     {
@@ -3354,13 +3343,13 @@
     {
       "category": "cuisine",
       "title": "본방 요리",
-      "content": "번방 요리(本幫料理)는 전통적인 상하이 스타일 요리를 가리키며, 단맛, 간장의 신중한 사용, 신선한 식재료 중시가 특징입니다. 대표적인 요리로는 돼지 삼겹살 조림과 상하이 게 등이 있습니다.",
+      "content": "번강 요리(베이징 요리)는 전통적인 상하이 스타일 요리를 가리키며, 단맛, 간장의 신중한 사용, 신선한 재료 중시가 특징입니다. 대표적인 요리로는 돼지고기 삼겹살 조림과 상하이 게 등이 있습니다.",
       "importance": "high"
     },
     {
       "category": "dialect",
       "title": "상년대",
-      "content": "상하이어(상하이 방언)는 베이징어와 상당히 다른 우(吳) 방언입니다. 베이징어는 일반적으로 이해되지만, 현지인들은 방문객이 기본적인 상하이어 표현을 배우는 것을 고마워합니다.",
+      "content": "상하이어(상하이 방언)는 베이징어와 상당히 다른 우(우) 방언입니다. 베이징어는 일반적으로 이해되지만, 현지인들은 방문객이 기본적인 상하이어 표현을 배우는 것을 고마워합니다.",
       "importance": "medium"
     },
     {
@@ -3378,13 +3367,13 @@
     {
       "category": "language",
       "title": "오 방언",
-      "content": "상하이어는 우어(吳語) 방언에 속하며 베이징어와 크게 다릅니다. 일반적인 표현: 'ni' (你) = 당신, 'wo' (我) = 나, 'na' (那) = 그것. 성조 차이로 인해 비화자(非話者)는 거의 알아듣지 못합니다.",
+      "content": "상하이어는 우(우)어 방언에 속하며, 베이징어와 크게 다릅니다. 일반적인 표현: '니'(너) = 당신, '워'(나) = 나, '나'(그것) = 그것. 성조 차이로 인해 비화자에게는 거의 이해되지 않습니다.",
       "importance": "medium"
     },
     {
       "category": "fashion",
       "title": "해파이 패션",
-      "content": "1920년대부터 1930년대까지 상하이는 현대적인 치파오(旗袍)를 개척했습니다. 오늘날 상하이는 중국 패션의 중심지이며, 상하이 패션 위크와 많은 디자이너들이 동서양 스타일을 융합하고 있습니다.",
+      "content": "1920년대부터 1930년대에 걸쳐 상하이는 현대적인 치파오를 개척했습니다. 오늘날 상하이는 중국 패션의 중심지이며, 상하이 패션 위크와 많은 디자이너들이 동서양 스타일을 융합하고 있습니다.",
       "importance": "medium"
     },
     {
@@ -3396,13 +3385,13 @@
     {
       "category": "language",
       "title": "오 방언",
-      "content": "상하이어는 우어(吳語) 방언에 속하며 베이징어와 크게 다릅니다. 일반적인 표현: 'ni' (你) = 당신, 'wo' (我) = 나, 'na' (那) = 그것. 성조 차이로 인해 비화자(非話者)는 거의 알아듣지 못합니다.",
+      "content": "상하이어는 우(우)어 방언에 속하며, 베이징어와 크게 다릅니다. 일반적인 표현: '니'(너) = 당신, '워'(나) = 나, '나'(그것) = 그것. 성조 차이로 인해 비화자에게는 거의 이해되지 않습니다.",
       "importance": "medium"
     },
     {
       "category": "fashion",
       "title": "해파이 패션",
-      "content": "1920년대부터 1930년대까지 상하이는 현대적인 치파오(旗袍)를 개척했습니다. 오늘날 상하이는 중국 패션의 중심지이며, 상하이 패션 위크와 많은 디자이너들이 동서양 스타일을 융합하고 있습니다.",
+      "content": "1920년대부터 1930년대에 걸쳐 상하이는 현대적인 치파오를 개척했습니다. 오늘날 상하이는 중국 패션의 중심지이며, 상하이 패션 위크와 많은 디자이너들이 동서양 스타일을 융합하고 있습니다.",
       "importance": "medium"
     },
     {
@@ -3414,7 +3403,7 @@
     {
       "category": "greeting",
       "title": "상하이 인삿말",
-      "content": "베이징 관화의 '니하오'가 일반적이지만, 상하이 방언의 '농하오(侬好)'는 현지 말로 '안녕하세요'라는 뜻입니다. 현지인들은 방문객이 현지 표현을 사용하려는 것을 기뻐합니다.",
+      "content": "베이징 관화의 ‘니하오’가 일반적이지만, 상하이 방언의 ‘농하오’는 현지 말로 ‘안녕하세요’라는 뜻입니다. 현지인들은 방문객이 현지 표현을 사용하려고 하면 기뻐합니다.",
       "importance": "low"
     },
     {
@@ -3426,7 +3415,7 @@
     {
       "category": "architecture",
       "title": "아르데코 유산",
-      "content": "상하이는 세계에서 두 번째로 많은 아르데코 건축 컬렉션을 보유하고 있습니다. 와이탄(外灘)을 따라 있는 많은 건물들이 이 1920~30년대 스타일을 특징으로 합니다.",
+      "content": "상하이는 세계에서 두 번째로 많은 아르데코 건축 컬렉션을 보유하고 있습니다. 반드(외탄)를 따라 있는 많은 건물들이 이 1920~30년대 스타일을 특징으로 합니다.",
       "importance": "medium"
     }
   ],

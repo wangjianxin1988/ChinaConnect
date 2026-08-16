@@ -137,7 +137,11 @@ export function TranslationServiceClient({ lang = "en" }: { lang?: string }) {
                   <td className="p-3 border font-medium text-violet-700">{guideText(svc.priceRange, lang)}</td>
                   <td className="p-3 border text-muted-foreground">{guideText(svc.delivery, lang)}</td>
                   <td className="p-3 border text-muted-foreground">
-                    {localized(svc.description.split(".")[0] + ".", svc.descriptionCn.split("。")[0] + "。", lang)}
+                    {(() => {
+                      const fullText = localized(svc.description, svc.descriptionCn, lang);
+                      const m = fullText.match(/^[^。.．\n]+[。.．]?/);
+                      return m ? m[0] : fullText;
+                    })()}
                   </td>
                 </tr>
               ))}

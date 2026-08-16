@@ -1,4 +1,13 @@
 import React, { useState, useCallback } from "react";
+import { EMERGENCY_L10N } from "@/data/emergency/emergency-l10n";
+
+function ecT(lang: string, key: string): string {
+  return EMERGENCY_L10N[lang]?.[key] || key;
+}
+
+function ecPhrase(lang: string, phrase: string): string {
+  return lang !== "en" ? EMERGENCY_L10N[lang]?.[phrase] || phrase : phrase;
+}
 
 interface Phrase {
   english: string;
@@ -261,17 +270,17 @@ export function EmergencyCard({ className = "", compact = false, lang = "en" }: 
         <div className="flex items-center justify-between">
           <div>
             <h2 className="text-xl font-bold flex items-center gap-2">
-              <span>🚨</span> Emergency Translation Card
+              <span>🚨</span> {ecT(lang, "Emergency Translation Card")}
             </h2>
             <p className="text-sm opacity-90 mt-1">
-              {compact ? "Tap to hear pronunciation" : "20+ essential phrases for emergencies"}
+              {compact ? ecT(lang, "Tap to hear pronunciation") : ecT(lang, "20+ essential phrases for emergencies")}
             </p>
           </div>
           <button
             onClick={() => setShowPronunciation(!showPronunciation)}
             className="bg-white/20 px-3 py-1 rounded-lg text-sm hover:bg-white/30 transition-colors"
           >
-            {showPronunciation ? "Hide" : "Show"} Pinyin
+            {showPronunciation ? ecT(lang, "Hide Pinyin") : ecT(lang, "Show Pinyin")}
           </button>
         </div>
       </div>
@@ -289,7 +298,7 @@ export function EmergencyCard({ className = "", compact = false, lang = "en" }: 
             }`}
           >
             <span>{cat.icon}</span>
-            <span className="hidden sm:inline">{cat.label}</span>
+            <span className="hidden sm:inline">{ecT(lang, cat.label)}</span>
           </button>
         ))}
       </div>
@@ -307,7 +316,7 @@ export function EmergencyCard({ className = "", compact = false, lang = "en" }: 
                 className="flex-1 text-left"
                 disabled={speakingPhrase === phrase.chinese}
               >
-                <div className="text-sm text-gray-500 mb-1">{phrase.english}</div>
+                <div className="text-sm text-gray-500 mb-1">{ecPhrase(lang, phrase.english)}</div>
                 <div className="font-semibold text-slate-900 text-lg">{lang === "en" ? phrase.pronunciation : phrase.chinese}</div>
                 {showPronunciation && lang !== "en" && (
                   <div className="text-xs text-gray-400 mt-1 font-mono">{phrase.pronunciation}</div>
@@ -320,7 +329,7 @@ export function EmergencyCard({ className = "", compact = false, lang = "en" }: 
                   onClick={() => speakText(phrase)}
                   disabled={speakingPhrase === phrase.chinese}
                   className="w-10 h-10 rounded-full bg-red-100 hover:bg-red-200 text-red-600 flex items-center justify-center transition-colors disabled:opacity-50"
-                  aria-label="Hear Chinese pronunciation"
+                  aria-label={ecT(lang, "Hear Chinese pronunciation")}
                 >
                   {speakingPhrase === phrase.chinese ? (
                     <span className="animate-pulse">🔊</span>
@@ -332,7 +341,7 @@ export function EmergencyCard({ className = "", compact = false, lang = "en" }: 
                   <button
                     onClick={() => speakEnglish(phrase)}
                     className="w-10 h-10 rounded-full bg-blue-100 hover:bg-blue-200 text-blue-600 flex items-center justify-center transition-colors"
-                    aria-label="Hear English pronunciation"
+                    aria-label={ecT(lang, "Hear English pronunciation")}
                   >
                     <span className="text-lg">🇬🇧</span>
                   </button>
@@ -346,7 +355,7 @@ export function EmergencyCard({ className = "", compact = false, lang = "en" }: 
       {/* Offline Notice */}
       <div className="bg-amber-50 border-t border-amber-200 p-3 text-xs text-amber-800 flex items-center gap-2">
         <span>💡</span>
-        <span>Works offline - phrases are cached. Tap any phrase to hear pronunciation.</span>
+        <span>{ecT(lang, "Works offline - phrases are cached. Tap any phrase to hear pronunciation.")}</span>
       </div>
     </div>
   );

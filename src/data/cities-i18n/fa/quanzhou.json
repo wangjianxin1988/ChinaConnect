@@ -3,33 +3,33 @@
   "name": "泉州",
   "nameEn": "Quanzhou",
   "country": "China",
-  "population": "8.7 million",
+  "population": "۸.۷ میلیون",
   "coordinates": {
     "lat": 24.8742,
     "lng": 118.6758
   },
-  "timezone": "UTC+8 (China Standard Time)",
-  "description": "Quanzhou is a historic port city in Fujian, known as the starting point of the Maritime Silk Road. Home to diverse religious sites including Buddhism, Islam, Christianity, and Hinduism. Called 'Zayton' by Marco Polo. A UNESCO World Heritage city with incredible cultural diversity.",
+  "timezone": "UTC+8 (زمان استاندارد چین)",
+  "description": "کوانژو یک شهر بندری تاریخی در فوجیان است که به عنوان نقطه شروع جاده ابریشم دریایی شناخته می‌شود. این شهر میزبان مکان‌های مذهبی متنوعی از جمله بودایی، اسلامی، مسیحی و هندو است. مارکو پولو آن را «زایتون» نامید. شهری در فهرست میراث جهانی یونسکو با تنوع فرهنگی شگفت‌انگیز.",
   "coverImage": "/img/ext/66109f403d87.webp",
   "highlights": [
-    "Kaiyuan Temple - Largest Song Dynasty temple in Fujian",
-    "Qingjing Mosque - Oldest mosque in China",
-    "Sri Lankan Buddhist Temple - Unique foreign architecture",
-    "Maritime Silk Road Museum - Ancient trade history",
-    "Shandong Hill - Scenic Buddhist temple"
+    "معبد کای‌یوان - بزرگ‌ترین معبد دوره سلسله سونگ در فوجیان",
+    "مسجد چینگ‌جینگ - قدیمی‌ترین مسجد در چین",
+    "معبد بودایی سری‌لانکایی - معماری خارجی منحصر‌به‌فرد",
+    "موزه جاده ابریشم دریایی - تاریخ تجارت باستانی",
+    "تپه شاندونگ - معبد بودایی منظره‌دار"
   ],
   "climate": {
-    "type": "Subtropical monsoon",
+    "type": "موسمی نیمه‌گرمسیری",
     "bestMonths": [
-      "March",
-      "April",
-      "May",
-      "October",
-      "November"
+      "مارس",
+      "آوریل",
+      "مه",
+      "اکتبر",
+      "نوامبر"
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "12C (54F)",
-    "tips": "Best in spring and autumn. Summers hot and humid. Winter mild. Year-round destination due to cultural sites."
+    "tips": "بهترین زمان در بهار و پاییز است. تابستان‌ها گرم و مرطوب. زمستان معتدل. به دلیل مکان‌های فرهنگی، مقصدی در تمام طول سال است."
   },
   "attractions": [
     {
@@ -91,7 +91,7 @@
         "lat": 24.9042,
         "lng": 118.5958
       },
-      "openingHours": "Shows at 15:00, 20:00",
+      "openingHours": "نمایش‌ها در ساعت ۱۵:۰۰ و ۲۰:۰۰",
       "ticketPrice": "80-120¥",
       "recommendedVisitTime": "۱.۵ ساعت",
       "highlights": [
@@ -110,7 +110,7 @@
       "nameEn": "Qingyuan Mountain",
       "category": "natural",
       "description": "کوه مقدس با معابد بودایی، مجسمه‌های باستانی و چای‌خانه‌ها.",
-      "address": "Qingyuan District",
+      "address": "منطقه چینگیوان",
       "coordinates": {
         "lat": 24.9542,
         "lng": 118.5858
@@ -158,7 +158,7 @@
       "nameEn": "Luoyang Bridge",
       "category": "historical",
       "description": "پل سنگی باستانی از دودمان سونگ، یکی از چهار پل معروف چین.",
-      "address": "Quanzhou Bay",
+      "address": "خلیج کوانژو",
       "coordinates": {
         "lat": 24.9642,
         "lng": 118.5858
@@ -206,7 +206,7 @@
       "nameEn": "Maritime Silk Road Museum",
       "category": "cultural",
       "description": "موزه‌ای که تاریخ تجارت دریایی باستانی کوانژو را به نمایش می‌گذارد.",
-      "address": "Donghu Road",
+      "address": "جاده دونگهو",
       "coordinates": {
         "lat": 24.9142,
         "lng": 118.5958
@@ -230,7 +230,7 @@
       "nameEn": "Southern Shaolin Temple",
       "category": "cultural",
       "description": "معبد معروف هنرهای رزمی که بوکس چینی در آن آغاز شد.",
-      "address": "Qingyuan Mountain Area",
+      "address": "منطقه کوهستانی چینگیوان",
       "coordinates": {
         "lat": 24.9542,
         "lng": 118.5658
@@ -498,7 +498,7 @@
         "lng": 118.7358
       },
       "openingHours": "09:00-21:00",
-      "ticketPrice": "Free (dining extra)",
+      "ticketPrice": "رایگان (هزینه اضافی برای غذا)",
       "recommendedVisitTime": "2-3 ساعت",
       "highlights": [
         "رستوران شناور",
@@ -642,7 +642,7 @@
         "lng": 118.58
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱.۵ ساعت",
       "highlights": [
         "پاگوداهای شرقی و غربی",
@@ -664,7 +664,7 @@
         "lng": 118.58
       },
       "openingHours": "تمام روز",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۲ ساعت",
       "highlights": [
         "خیابان قدیمی",
@@ -686,7 +686,7 @@
         "lng": 118.62
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۲ ساعت",
       "highlights": [
         "جاده ابریشم دریایی",
@@ -708,7 +708,7 @@
         "lng": 118.58
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "3元",
+      "ticketPrice": "۳ یوان",
       "recommendedVisitTime": "۱ ساعت",
       "highlights": [
         "معماری اسلامی"
@@ -729,7 +729,7 @@
         "lng": 118.62
       },
       "openingHours": "08:00-17:30",
-      "ticketPrice": "55元",
+      "ticketPrice": "55 یوان",
       "recommendedVisitTime": "نیم روز",
       "highlights": [
         "صخره لائوجون",
@@ -751,7 +751,7 @@
         "lng": 118.58
       },
       "openingHours": "تمام روز",
-      "ticketPrice": "人均30元",
+      "ticketPrice": "میانگین ۳۰ یوان برای هر نفر",
       "recommendedVisitTime": "تمام روز",
       "highlights": [
         "خمیر میسوا",
@@ -773,7 +773,7 @@
         "lng": 118.58
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۳۰ دقیقه",
       "highlights": [
         "فرهنگ گوان یو"
@@ -794,7 +794,7 @@
         "lng": 118.58
       },
       "openingHours": "۱۱. شب‌ها.",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱ ساعت",
       "highlights": [
         "۱۳. نمای شب."
@@ -815,7 +815,7 @@
         "lng": 118.68
       },
       "openingHours": "تمام روز",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱ ساعت",
       "highlights": [
         "پل باستانی",
@@ -837,7 +837,7 @@
         "lng": 118.58
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱ ساعت",
       "highlights": [
         "فرهنگ مازو"
@@ -858,7 +858,7 @@
         "lng": 118.62
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱.۵ ساعت",
       "highlights": [
         "تاریخ کوانژو"
@@ -879,7 +879,7 @@
         "lng": 118.58
       },
       "openingHours": "تمام روز",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱.۵ ساعت",
       "highlights": [
         "خرید",
@@ -901,7 +901,7 @@
         "lng": 118.62
       },
       "openingHours": "تمام روز",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱.۵ ساعت",
       "highlights": [
         "پارک",
@@ -923,7 +923,7 @@
         "lng": 118.58
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱ ساعت",
       "highlights": [
         "فرهنگ بودایی"
@@ -944,7 +944,7 @@
         "lng": 118.58
       },
       "openingHours": "تمام روز",
-      "ticketPrice": "人均10元",
+      "ticketPrice": "سرانه ۱۰ یوان",
       "recommendedVisitTime": "۳۰ دقیقه",
       "highlights": [
         "زونگزی (دلمه برنج چسبناک)"
@@ -965,7 +965,7 @@
         "lng": 118.92
       },
       "openingHours": "08:00-17:30",
-      "ticketPrice": "45元",
+      "ticketPrice": "۴۵ یوان",
       "recommendedVisitTime": "۲ ساعت",
       "highlights": [
         "شهر باستانی",
@@ -988,7 +988,7 @@
         "lng": 118.42
       },
       "openingHours": "تمام روز",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱.۵ ساعت",
       "highlights": [
         "سنگ‌نگاره‌های دعا برای باد",
@@ -1010,7 +1010,7 @@
         "lng": 118.55
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱ ساعت",
       "highlights": [
         "مانی‌گرایی",
@@ -1032,7 +1032,7 @@
         "lng": 118.58
       },
       "openingHours": "تمام روز",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱ ساعت",
       "highlights": [
         "خیابان قدیمی",
@@ -1054,7 +1054,7 @@
         "lng": 118.58
       },
       "openingHours": "تمام روز",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱.۵ ساعت",
       "highlights": [
         "دریاچه",
@@ -1076,7 +1076,7 @@
         "lng": 118.58
       },
       "openingHours": "۱۱. شب‌ها.",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱ ساعت",
       "highlights": [
         "۱۳. نمای شب."
@@ -1097,7 +1097,7 @@
         "lng": 118.62
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱ ساعت",
       "highlights": [
         "کشتی‌های باستانی",
@@ -1119,7 +1119,7 @@
         "lng": 118.58
       },
       "openingHours": "تمام روز",
-      "ticketPrice": "人均10元",
+      "ticketPrice": "سرانه ۱۰ یوان",
       "recommendedVisitTime": "۳۰ دقیقه",
       "highlights": [
         "خمیر میسوا"
@@ -1140,7 +1140,7 @@
         "lng": 118.55
       },
       "openingHours": "تمام روز",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "نیم روز",
       "highlights": [
         "قله‌های کوهستان",
@@ -1162,7 +1162,7 @@
         "lng": 118.62
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱ ساعت",
       "highlights": [
         "کندهکاریهای سنگی مذهبی"
@@ -1190,8 +1190,8 @@
       "description": "معروف به گلوله‌های برنجی با گوشت، یکی از غذاهای محلی مشهور اکسیان",
       "dishHighlights": [
         "کوفته‌های گوشت",
-        "Savory filling",
-        "Traditional recipe",
+        "مواد داخلی خوشطعم",
+        "دستور پخت سنتی",
         "باید امتحان کنید"
       ],
       "tags": [
@@ -1219,10 +1219,10 @@
       "hours": "06:00-14:00",
       "description": "نودلهای نازک برنجی در آبگوشت خوشطعم، صبحانهی محلی اصلی.",
       "dishHighlights": [
-        "Thin noodles",
-        "Pork broth",
+        "رشته فرنگی نازک",
+        "آبگوشت گوشت خوک",
         "انواع topping",
-        "Breakfast"
+        "صبحانه"
       ],
       "tags": [
         "محلی",
@@ -1249,9 +1249,9 @@
       "hours": "10:30-21:00",
       "description": "غذای معروف - اردک کبابی با زنجبیل در دیگ سفالی.",
       "dishHighlights": [
-        "Ginger duck",
-        "Clay pot cooking",
-        "Aromatic",
+        "اردک زنجبیلی",
+        "پخت در دیگ سفالی",
+        "معطر",
         "سنتی"
       ],
       "tags": [
@@ -1311,8 +1311,8 @@
       "dishHighlights": [
         "املت صدف",
         "بافت ترد",
-        "Sweet sauce",
-        "Fresh oysters"
+        "سس شیرین",
+        "صدف تازه"
       ],
       "tags": [
         "محلی",
@@ -1369,10 +1369,10 @@
       "hours": "10:30-22:00",
       "description": "زنجیره‌ی معروف هاتپات با گوشت گوسفند مرغوب.",
       "dishHighlights": [
-        "Lamb slices",
+        "ورقه‌های گوشت بره",
         "هات پات",
         "آبگوشت سنتی",
-        "Quality"
+        "کیفیت"
       ],
       "tags": [
         "زنجیره‌ای",
@@ -1391,7 +1391,7 @@
       "cuisine": "تنقلات کوانژو",
       "avgPrice": 15,
       "rating": 4.6,
-      "address": "Tumen Street",
+      "address": "خیابان تومِن",
       "coordinates": {
         "lat": 24.9042,
         "lng": 118.5958
@@ -1399,7 +1399,7 @@
       "hours": "07:00-19:00",
       "description": "تنقلات محلی - پای گوشت ترد با پوستهی پفکی.",
       "dishHighlights": [
-        "Meat pie",
+        "پای گوشت",
         "پوسته ورقه‌ای",
         " مغز گوشت خوک",
         "داغ"
@@ -1508,7 +1508,7 @@
       "name": "群众牛肉馆",
       "nameEn": "Qunzhong Beef Restaurant",
       "type": "محلی",
-      "cuisine": "Beef",
+      "cuisine": "گوشت گاو",
       "avgPrice": 60,
       "rating": 4.6,
       "address": "ناحیه لی‌چنگ",
@@ -1520,15 +1520,15 @@
       "description": "محبوب محلیها برای غذاهای گوشت گاو، از جمله سوپ قلوهگاه گاو و گوشت گاو سرخشده.",
       "dishHighlights": [
         "احشای گوشت گاو",
-        "Beef soup",
-        "Stir-fried beef",
-        "Local favorite"
+        "سوپ گوشت گاو",
+        "گوشت گاو سرخشده",
+        "محبوب محلی‌ها"
       ],
       "tags": [
         "محلی",
         "گوشت",
         "سنتی",
-        "offal"
+        "انواع دل و جگر"
       ],
       "imageUrl": "/img/ext/7325a3b2aa34.webp",
       "phone": "+86 059 5 2136 9096"
@@ -1541,7 +1541,7 @@
       "cuisine": "تنقلات کوانژو",
       "avgPrice": 20,
       "rating": 4.8,
-      "address": "Xianglan Street",
+      "address": "خیابان شیانگلان",
       "coordinates": {
         "lat": 24.9022,
         "lng": 118.5928
@@ -1549,10 +1549,10 @@
       "hours": "08:00-20:00",
       "description": "فروشگاه شیرینی سنتی معروف به هووی کریسپ و شیرینیهای سبک میننان.",
       "dishHighlights": [
-        "Huwai cake",
-        "Minnan pastries",
-        "Traditional desserts",
-        "Old recipe"
+        "کیک هووایی",
+        "شیرینیهای مینان",
+        "دسرهای سنتی",
+        "دستور پخت قدیمی"
       ],
       "tags": [
         "محلی",
@@ -1571,7 +1571,7 @@
       "cuisine": "کویژو",
       "avgPrice": 90,
       "rating": 4.7,
-      "address": "Fengze District",
+      "address": "منطقه فنگزه",
       "coordinates": {
         "lat": 24.8942,
         "lng": 118.6108
@@ -1642,7 +1642,7 @@
         "غذاهای دریایی زنده",
         "ماهی بخارپز",
         "خرچنگ",
-        "Professional cooking"
+        "آشپزی حرفهای"
       ],
       "tags": [
         "محلی",
@@ -1669,9 +1669,9 @@
       "hours": "06:00-14:00",
       "description": "معروف به کیک برنجی سبزیجات، یک میانوعدهی سنتی صبحانه.",
       "dishHighlights": [
-        "Vegetable rice cake",
+        "کیک برنجی سبزیجات",
         "Pan-fried",
-        "Breakfast",
+        "صبحانه",
         "سنتی"
       ],
       "tags": [
@@ -1781,7 +1781,7 @@
       "cuisine": "کویژو",
       "avgPrice": 70,
       "rating": 4.5,
-      "address": "Fengze District",
+      "address": "منطقه فنگزه",
       "coordinates": {
         "lat": 24.8942,
         "lng": 118.6058
@@ -1789,10 +1789,10 @@
       "hours": "10:30-21:00",
       "description": "رستوران زنجیره‌ای محلی که برای غذاهای مین‌نان ساده و سرویس سریع شناخته شده است.",
       "dishHighlights": [
-        "Casual dining",
+        "غذای غیررسمی",
         "غذاهای مین‌نان",
-        "Quick service",
-        "Value"
+        "سرویس سریع",
+        "ارزش"
       ],
       "tags": [
         "محلی",
@@ -1849,10 +1849,10 @@
       "hours": "12:00-23:00",
       "description": "مغازه‌ی شیرینی‌فروشی محبوب با دسرهای ژله‌ی علفی، لوبیای قرمز و شیرینی‌های سنتی.",
       "dishHighlights": [
-        "Grass jelly",
+        "ژله علفی",
         "لوبیای قرمز",
-        "Traditional desserts",
-        "Cool treats"
+        "دسرهای سنتی",
+        "خوراکی‌های خنک"
       ],
       "tags": [
         "محلی",
@@ -1879,15 +1879,15 @@
       "hours": "10:00-22:00",
       "description": "رستورانی که غذاهای تحت تأثیر پرناکان از چینی‌های مقیم خارج را سرو می‌کند.",
       "dishHighlights": [
-        "Nanyang cuisine",
-        "Peranakan",
-        "Curry",
-        "Laksa"
+        "آشپزی نانیانگ",
+        "پراناکن",
+        "کاری",
+        "لاکسا"
       ],
       "tags": [
         "محلی",
-        "nanyang",
-        "curry",
+        "نانیانگ",
+        "کاری",
         "فیوژن"
       ],
       "imageUrl": "/img/ext/8a92e486e563.webp",
@@ -1909,10 +1909,10 @@
       "hours": "09:00-21:00",
       "description": "معروف به کوفتههای مارماهی و نودل مارماهی، یک تخصص کوانژو.",
       "dishHighlights": [
-        "Eel balls",
-        "Eel noodles",
-        "Fresh eel",
-        "Specialty"
+        "گوشت مارماهی به شکل توپ",
+        "نودل مارماهی",
+        "مارماهی تازه",
+        "ویژه"
       ],
       "tags": [
         "محلی",
@@ -1926,7 +1926,7 @@
     {
       "id": "quanzhou-26",
       "name": "传统牛肉羹",
-      "nameEn": "传统牛肉羹 (牛肉羹)",
+      "nameEn": "سوپ گوشت گوساله سنتی (سوپ گوشت)",
       "type": "محلی",
       "cuisine": "سوپ گوشت گاو",
       "avgPrice": 46,
@@ -1955,7 +1955,7 @@
     {
       "id": "quanzhou-28",
       "name": "阿婆面线糊",
-      "nameEn": "阿婆面线糊 (面线糊)",
+      "nameEn": "نودل نرم خاله (نودل نرم)",
       "type": "محلی",
       "cuisine": "خمیر میسوا",
       "avgPrice": 109,
@@ -1984,7 +1984,7 @@
     {
       "id": "quanzhou-30",
       "name": "传统醋肉",
-      "nameEn": "传统醋肉 (醋肉)",
+      "nameEn": "گوشت ترش سنتی (گوشت ترش)",
       "type": "محلی",
       "cuisine": "گوشت خوک سرخشده با سرکه",
       "avgPrice": 72,
@@ -2013,7 +2013,7 @@
     {
       "id": "quanzhou-32",
       "name": "泉州味面线糊",
-      "nameEn": "泉州味面线糊 (面线糊)",
+      "nameEn": "نودل نرم به سبک کوانژو (نودل نرم)",
       "type": "محلی",
       "cuisine": "خمیر میسوا",
       "avgPrice": 135,
@@ -2042,7 +2042,7 @@
     {
       "id": "quanzhou-34",
       "name": "街边醋肉",
-      "nameEn": "街边醋肉 (醋肉)",
+      "nameEn": "گوشت خوک ترش گوشه خیابان (گوشت ترش)",
       "type": "خیابانی",
       "cuisine": "گوشت خوک سرکه‌ای سرخ‌شده",
       "avgPrice": 39,
@@ -2071,7 +2071,7 @@
     {
       "id": "quanzhou-36",
       "name": "地道醋肉",
-      "nameEn": "地道醋肉 (醋肉)",
+      "nameEn": "گوشت ترش اصیل (گوشت ترش)",
       "type": "محلی",
       "cuisine": "گوشت خوک سرکه‌ای سرخ‌شده",
       "avgPrice": 116,
@@ -2100,7 +2100,7 @@
     {
       "id": "quanzhou-38",
       "name": "老字号醋肉",
-      "nameEn": "老字号醋肉 (醋肉)",
+      "nameEn": "گوشت ترش برند قدیمی (گوشت ترش)",
       "type": "محلی",
       "cuisine": "گوشت خوک سرخکرده با سرکه",
       "avgPrice": 60,
@@ -2129,7 +2129,7 @@
     {
       "id": "quanzhou-40",
       "name": "老泉州土笋冻",
-      "nameEn": "老泉州土笋冻 (土笋冻)",
+      "nameEn": "ژله کرم دریایی قدیمی کوانژو (ژله کرم دریایی)",
       "type": "کافه",
       "cuisine": "توبوسون (پیشغذای ژلهای مانند)",
       "avgPrice": 51,
@@ -2158,7 +2158,7 @@
     {
       "id": "quanzhou-42",
       "name": "传统面线糊",
-      "nameEn": "传统面线糊 (面线糊)",
+      "nameEn": "نودل سنتی (نودل خمیری)",
       "type": "کافه",
       "cuisine": "خمیر میسوا",
       "avgPrice": 41,
@@ -2187,7 +2187,7 @@
     {
       "id": "quanzhou-44",
       "name": "传统醋肉",
-      "nameEn": "传统醋肉 (醋肉)",
+      "nameEn": "گوشت ترش سنتی (گوشت ترش)",
       "type": "خیابانی",
       "cuisine": "گوشت خوک سرکه‌ای سرخ‌شده",
       "avgPrice": 46,
@@ -2216,7 +2216,7 @@
     {
       "id": "quanzhou-46",
       "name": "老字号面线糊",
-      "nameEn": "老字号面线糊 (面线糊)",
+      "nameEn": "نودل معروف قدیمی (نودل خمیری)",
       "type": "محلی",
       "cuisine": "خمیر میسوا",
       "avgPrice": 72,
@@ -2245,7 +2245,7 @@
     {
       "id": "quanzhou-48",
       "name": "街边润饼",
-      "nameEn": "街边润饼 (润饼)",
+      "nameEn": "رولت بهاری گوشه خیابان (رولت بهاری)",
       "type": "محلی",
       "cuisine": "رانبینگ (رول بهاری)",
       "avgPrice": 117,
@@ -2274,7 +2274,7 @@
     {
       "id": "quanzhou-50",
       "name": "阿婆润饼",
-      "nameEn": "阿婆润饼 (润饼)",
+      "nameEn": "رولت بهاری مادربزرگ (رولت بهاری)",
       "type": "خیابانی",
       "cuisine": "رانبینگ (رول بهاری)",
       "avgPrice": 13,
@@ -2303,7 +2303,7 @@
     {
       "id": "quanzhou-52",
       "name": "老街润饼",
-      "nameEn": "老街润饼 (润饼)",
+      "nameEn": "رولت بهاری بازار قدیم (رولت بهاری)",
       "type": "محلی",
       "cuisine": "رانبینگ (رول بهاری)",
       "avgPrice": 60,
@@ -2332,7 +2332,7 @@
     {
       "id": "quanzhou-54",
       "name": "传统润饼",
-      "nameEn": "传统润饼 (润饼)",
+      "nameEn": "رولت بهاری سنتی (رولت بهاری)",
       "type": "محلی",
       "cuisine": "ران‌بینگ (رول بهاری)",
       "avgPrice": 140,
@@ -2361,7 +2361,7 @@
     {
       "id": "quanzhou-56",
       "name": "老泉州牛肉羹",
-      "nameEn": "老泉州牛肉羹 (牛肉羹)",
+      "nameEn": "سوپ گوشت گاو قدیمی کوانژو (سوپ گوشت گاو)",
       "type": "خیابانی",
       "cuisine": "سوپ گوشت گاو",
       "avgPrice": 50,
@@ -2390,7 +2390,7 @@
     {
       "id": "quanzhou-58",
       "name": "阿婆润饼",
-      "nameEn": "阿婆润饼 (润饼)",
+      "nameEn": "رولت بهاری مادربزرگ (رولت بهاری)",
       "type": "محلی",
       "cuisine": "رانبینگ (رول بهاری)",
       "avgPrice": 91,
@@ -2419,7 +2419,7 @@
     {
       "id": "quanzhou-60",
       "name": "老泉州土笋冻",
-      "nameEn": "老泉州土笋冻 (土笋冻)",
+      "nameEn": "ژله کرم دریایی قدیمی کوانژو (ژله کرم دریایی)",
       "type": "محلی",
       "cuisine": "توبوسون (پیش‌غذای ژله‌ای مانند)",
       "avgPrice": 126,
@@ -2448,7 +2448,7 @@
     {
       "id": "quanzhou-62",
       "name": "老泉州面线糊",
-      "nameEn": "老泉州面线糊 (面线糊)",
+      "nameEn": "نودل قدیمی کوانژو (نودل خمیری)",
       "type": "محلی",
       "cuisine": "خمیر میسوا",
       "avgPrice": 49,
@@ -2477,7 +2477,7 @@
     {
       "id": "quanzhou-64",
       "name": "地道面线糊",
-      "nameEn": "地道面线糊 (面线糊)",
+      "nameEn": "نودل‌های محلی فن‌شیانهو (فن‌شیانهو)",
       "type": "محلی",
       "cuisine": "خمیر میسوا",
       "avgPrice": 48,
@@ -2506,7 +2506,7 @@
     {
       "id": "quanzhou-66",
       "name": "正宗土笋冻",
-      "nameEn": "正宗土笋冻 (土笋冻)",
+      "nameEn": "تو سون دونگ اصیل (تو سون دونگ)",
       "type": "محلی",
       "cuisine": "توبوسون (پیش‌غذای ژله‌ای مانند)",
       "avgPrice": 49,
@@ -2535,7 +2535,7 @@
     {
       "id": "quanzhou-68",
       "name": "老泉州醋肉",
-      "nameEn": "老泉州醋肉 (醋肉)",
+      "nameEn": "گوشت سرکه‌ای قدیمی کوان‌جو (گوشت سرکه‌ای)",
       "type": "محلی",
       "cuisine": "گوشت خوک سرخکرده با سرکه",
       "avgPrice": 133,
@@ -2564,7 +2564,7 @@
     {
       "id": "quanzhou-70",
       "name": "传统土笋冻",
-      "nameEn": "传统土笋冻 (土笋冻)",
+      "nameEn": "تو سون دونگ سنتی (تو سون دونگ)",
       "type": "کافه",
       "cuisine": "توبوسون (پیشغذای ژلهای مانند)",
       "avgPrice": 74,
@@ -2593,7 +2593,7 @@
     {
       "id": "quanzhou-72",
       "name": "阿婆牛肉羹",
-      "nameEn": "阿婆牛肉羹 (牛肉羹)",
+      "nameEn": "سوپ گوشت گاو مادربزرگ (سوپ گوشت گاو)",
       "type": "محلی",
       "cuisine": "سوپ گوشت گاو",
       "avgPrice": 87,
@@ -2622,7 +2622,7 @@
     {
       "id": "quanzhou-74",
       "name": "巷子醋肉",
-      "nameEn": "巷子醋肉 (醋肉)",
+      "nameEn": "گوشت سرکه‌ای کوچه (گوشت سرکه‌ای)",
       "type": "محلی",
       "cuisine": "گوشت خوک سرکه‌ای سرخ‌شده",
       "avgPrice": 131,
@@ -2653,38 +2653,38 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major Chinese cities",
+        "from": "شهرهای بزرگ چین",
         "to": "فرودگاه بین‌المللی کوانژو جینجیانگ (JJN)",
-        "duration": "Varies",
+        "duration": "متغیر",
         "price": "400-1500¥",
-        "frequency": "Daily flights",
+        "frequency": "پروازهای روزانه",
         "tips": "فرودگاه ۱۵ کیلومتر از مرکز شهر فاصله دارد. تاکسی یا اتوبوس."
       },
       {
         "type": "train",
         "from": "شیامن (۱ ساعت)، فوژو (۲ ساعت)، شانگهای (۴ ساعت)",
-        "to": "Quanzhou Railway Station",
-        "duration": "1-4 hours",
+        "to": "ایستگاه راه‌آهن کوانژو",
+        "duration": "۱ تا ۴ ساعت",
         "price": "100-500¥",
-        "frequency": "Multiple daily",
+        "frequency": "چند بار در روز",
         "tips": "قطارهای پرسرعت از شهرهای بزرگ."
       }
     ],
     "local": {
       "bus": [
-        "Extensive network",
+        "شبکه گسترده",
         "Single ride: 2¥",
-        "Tourist areas connected"
+        "مناطق گردشگری متصل"
       ],
       "taxi": [
         "Starting fare: 8¥",
         "Most attractions 15-50¥",
-        "Didi recommended"
+        "توصیهشده توسط دیدی"
       ],
       "bike": [
         "موبایک، میتوآن در دسترس است",
-        "Good for city center",
-        "Historic areas"
+        "مناسب برای مرکز شهر",
+        "مناطق تاریخی"
       ]
     }
   },
@@ -2705,14 +2705,14 @@
         "تاریخی",
         "خدمات خوب"
       ],
-      "bookingTips": "Best location for sightseeing."
+      "bookingTips": "بهترین موقعیت برای بازدید از اماکن دیدنی."
     },
     {
       "name": "هتل مارکوپولو جینجیانگ",
       "nameEn": "Marco Polo Hotel Jinjiang",
       "budget": "luxury",
       "priceRange": "¥600-1200/night",
-      "address": "Jinjiang District",
+      "address": "منطقه جینجیانگ",
       "coordinates": {
         "lat": 24.8242,
         "lng": 118.5758
@@ -2723,14 +2723,14 @@
         "امکانات تجاری",
         "غذاخوری خوب"
       ],
-      "bookingTips": "Good for business travelers."
+      "bookingTips": "مناسب برای مسافران تجاری."
     },
     {
       "name": "هتل رویا جی‌آی کوانژو شعبه معبد کایوان",
       "nameEn": "Home Inn Quanzhou Kaiyuan",
       "budget": "budget",
       "priceRange": "¥150-300/night",
-      "address": "Near Kaiyuan Temple",
+      "address": "نزدیک معبد کای‌یوان",
       "coordinates": {
         "lat": 24.9042,
         "lng": 118.5958
@@ -2741,7 +2741,7 @@
         "مقرون به صرفه",
         "تمیز"
       ],
-      "bookingTips": "Best budget near historic areas."
+      "bookingTips": "بهترین گزینه اقتصادی نزدیک مناطق تاریخی."
     },
     {
       "name": "هتل وندا ون‌هوا فولی کوانژو",
@@ -2760,14 +2760,14 @@
         "موقعیت مرکزی",
         "خدمات عالی"
       ],
-      "bookingTips": "Great for luxury travelers."
+      "bookingTips": "عالی برای مسافران لوکس."
     },
     {
       "name": "هتل یوهوا کوانژو",
       "nameEn": "Yuehua Hotel Quanzhou",
       "budget": "luxury",
       "priceRange": "¥500-900/night",
-      "address": "Licheng District",
+      "address": "منطقه لیچنگ",
       "coordinates": {
         "lat": 24.9142,
         "lng": 118.5858
@@ -2778,14 +2778,14 @@
         "سبک سنتی",
         "صبحانه خوب"
       ],
-      "bookingTips": "Good balance of luxury and value."
+      "bookingTips": "تعادل خوبی بین لوکس بودن و ارزش."
     },
     {
       "name": "آپارتمان‌هتل کوانژو",
       "nameEn": "Quanzhou Serviced Apartments",
       "budget": "mid-range",
       "priceRange": "¥300-600/night",
-      "address": "Fengze District",
+      "address": "منطقه فنگزه",
       "coordinates": {
         "lat": 24.8942,
         "lng": 118.6058
@@ -2796,14 +2796,14 @@
         "اتاق‌های جادار",
         "مناسب برای خانواده"
       ],
-      "bookingTips": "Best for families and long stays."
+      "bookingTips": "بهترین برای خانواده‌ها و اقامت‌های طولانی."
     },
     {
       "name": "هتل هانتینگ مرکز فرهنگی کوانژو",
       "nameEn": "Hanting Quanzhou Culture Center",
       "budget": "budget",
       "priceRange": "¥120-250/night",
-      "address": "Cultural Center Area",
+      "address": "منطقه مرکز فرهنگی",
       "coordinates": {
         "lat": 24.9142,
         "lng": 118.6008
@@ -2814,14 +2814,14 @@
         "مقرون به صرفه",
         "نزدیک به موزه‌ها"
       ],
-      "bookingTips": "Best budget option near cultural attractions."
+      "bookingTips": "بهترین گزینه اقتصادی نزدیک جاذبه‌های فرهنگی."
     },
     {
       "name": "هتل کوانجی معبد کایوان کوانژو",
       "nameEn": "Ji Hotel Quanzhou Kaiyuan",
       "budget": "mid-range",
       "priceRange": "¥250-450/night",
-      "address": "Licheng District",
+      "address": "منطقه لیچنگ",
       "coordinates": {
         "lat": 24.9042,
         "lng": 118.5988
@@ -2832,7 +2832,7 @@
         "موقعیت عالی",
         "کیفیت یکنواخت"
       ],
-      "bookingTips": "Reliable mid-range chain."
+      "bookingTips": "زنجیره‌ای قابل اعتماد با قیمت متوسط."
     },
     {
       "name": "هتل بین‌المللی شیشی",
@@ -2850,14 +2850,14 @@
         "امکانات تجاری",
         "نمای دریا"
       ],
-      "bookingTips": "Best for Shishi exploration."
+      "bookingTips": "بهترین برای کاوش در شیشی."
     },
     {
       "name": "هتل جینجیانگ رونگیو",
       "nameEn": "Jinjiang Honor Hotel",
       "budget": "luxury",
       "priceRange": "¥450-850/night",
-      "address": "Jinjiang District",
+      "address": "منطقه جینجیانگ",
       "coordinates": {
         "lat": 24.8242,
         "lng": 118.5808
@@ -2868,14 +2868,14 @@
         "اسپا",
         "امکانات کنفرانس"
       ],
-      "bookingTips": "Good for resort-style stays."
+      "bookingTips": "مناسب برای اقامت‌های تفریحی و استراحتی."
     },
     {
       "name": "روجیا جینگ‌شوان کوانژو شی‌هو",
       "nameEn": "Home Inn Plus Quanzhou West Lake",
       "budget": "mid-range",
       "priceRange": "¥200-380/night",
-      "address": "West Lake Area",
+      "address": "منطقه دریاچه غربی",
       "coordinates": {
         "lat": 24.9242,
         "lng": 118.5908
@@ -2886,7 +2886,7 @@
         "منطقه آرام",
         "صبحانه خوب"
       ],
-      "bookingTips": "Best location for nature lovers."
+      "bookingTips": "بهترین موقعیت برای علاقهمندان به طبیعت."
     },
     {
       "name": "هتل ۷ روزه کوانژو نانجونشیانگ",
@@ -2904,14 +2904,14 @@
         "مرکزی",
         "ساده اما تمیز"
       ],
-      "bookingTips": "Ultra-budget option."
+      "bookingTips": "گزینهٔ بسیار اقتصادی."
     },
     {
       "name": "هتل یینگبین کوانژو",
       "nameEn": "Quanzhou Guest Hotel",
       "budget": "luxury",
       "priceRange": "¥600-1100/night",
-      "address": "Licheng District",
+      "address": "منطقه لیچنگ",
       "coordinates": {
         "lat": 24.9142,
         "lng": 118.5888
@@ -2922,14 +2922,14 @@
         "باغ‌های زیبا",
         "معماری سنتی"
       ],
-      "bookingTips": "Experience local government hospitality."
+      "bookingTips": "تجربهٔ مهماننوازی دولت محلی."
     },
     {
       "name": "هتل آیل جینجیانگ",
       "nameEn": "Jinjiang Aile Hotel",
       "budget": "mid-range",
       "priceRange": "¥280-500/night",
-      "address": "Jinjiang District",
+      "address": "منطقه جینجیانگ",
       "coordinates": {
         "lat": 24.8342,
         "lng": 118.5708
@@ -2940,14 +2940,14 @@
         "رستوران",
         "ارزش خوب"
       ],
-      "bookingTips": "Good for nightlife enthusiasts."
+      "bookingTips": "مناسب برای علاقهمندان به شبزندهداری."
     },
     {
       "name": "تجربه اقامتگاه بومی کوانژو",
       "nameEn": "Quanzhou Homestay Experience",
       "budget": "mid-range",
       "priceRange": "¥200-450/night",
-      "address": "Historic District",
+      "address": "منطقهٔ تاریخی",
       "coordinates": {
         "lat": 24.9022,
         "lng": 118.5908
@@ -2958,7 +2958,7 @@
         "تجربه محلی",
         "میزبانان شخصی"
       ],
-      "bookingTips": "Best for cultural immersion."
+      "bookingTips": "بهترین برای غوطهوری فرهنگی."
     },
     {
       "name": "خانه تعطیلات ساحلی هوی‌آن",
@@ -2976,14 +2976,14 @@
         "نمای اقیانوس",
         "غذاهای دریایی تازه"
       ],
-      "bookingTips": "Perfect for beach vacation."
+      "bookingTips": "مناسب برای تعطیلات ساحلی."
     },
     {
       "name": "هتل پولمن کوانژو",
       "nameEn": "Pullman Quanzhou",
       "budget": "luxury",
       "priceRange": "¥700-1300/night",
-      "address": "Financial District",
+      "address": "منطقهٔ مالی",
       "coordinates": {
         "lat": 24.9242,
         "lng": 118.5858
@@ -2994,14 +2994,14 @@
         "بار پشت‌بام",
         "باشگاه ورزشی و استخر"
       ],
-      "bookingTips": "Best international luxury option."
+      "bookingTips": "بهترین گزینه لوکس بین‌المللی."
     },
     {
       "name": "هتل هوایی کوانژو",
       "nameEn": "Quanzhou Aviation Hotel",
       "budget": "mid-range",
       "priceRange": "¥300-550/night",
-      "address": "Near Airport",
+      "address": "نزدیک فرودگاه",
       "coordinates": {
         "lat": 24.8042,
         "lng": 118.6758
@@ -3012,30 +3012,30 @@
         "پارکینگ رایگان",
         "مناسب برای پرواز صبحگاهی"
       ],
-      "bookingTips": "Best for early/late flights."
+      "bookingTips": "بهترین برای پروازهای صبح زود یا دیروقت."
     }
   ],
   "payment": [
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Universal in Quanzhou",
+      "description": "جهانی در کوانژو",
       "howToUse": [
-        "Download before arrival"
+        "دانلود قبل از arrival"
       ],
       "tips": [
-        "Works at all merchants"
+        "در همه فروشگاه‌ها قابل استفاده است"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Accepted everywhere",
+      "description": "در همه جا پذیرفته می‌شود",
       "howToUse": [
-        "WeChat required"
+        "وی‌چت الزامی است"
       ],
       "tips": [
-        "Set to English mode"
+        "روی حالت انگلیسی تنظیم کنید"
       ]
     },
     {
@@ -3046,117 +3046,117 @@
         "ATM در همه جا"
       ],
       "tips": [
-        "Keep 200¥ for markets"
+        "برای بازارها ۲۰۰ یوان همراه داشته باشید."
       ]
     }
   ],
   "culturalTips": [
     {
       "category": "history",
-      "title": "Maritime Silk Road",
-      "content": "Quanzhou was major port on Maritime Silk Road, visited by Marco Polo who called it Zayton. Diverse foreign religions settled here including Islam, Christianity, Hinduism.",
+      "title": "جاده ابریشم دریایی",
+      "content": "کوانژو بندری مهم در جاده ابریشم دریایی بود که مارکو پولو از آن بازدید کرد و آن را زایتون نامید. ادیان مختلف خارجی در اینجا ساکن شدند، از جمله اسلام، مسیحیت و هندوئیسم.",
       "importance": "high"
     },
     {
       "category": "religion",
-      "title": "Religious Diversity",
-      "content": "Quanzhou has unique religious diversity - Buddhist temples, Islamic mosques, Christian churches, and Hindu ruins coexist on Tumen Street.",
+      "title": "تنوع مذهبی",
+      "content": "کوانژو تنوع مذهبی منحصر به فردی دارد - معابد بودایی، مساجد اسلامی، کلیساهای مسیحی و ویرانه‌های هندو در خیابان تومین همزیستی دارند.",
       "importance": "high"
     },
     {
       "category": "food",
-      "title": "Minnan Cuisine",
-      "content": "Quanzhou is heart of Minnan cuisine known for seafood, ginger duck, rice dumplings, and unique snacks like 土笋冻 (tusun jelly).",
+      "title": "آشپزی مینان",
+      "content": "کوان‌جو مرکز آشپزی مین‌نان است و به‌خاطر غذاهای دریایی، اردک زنجبیلی، زونگ‌زی و تنقلات منحصربه‌فردی مانند تو سون دونگ (تو سون دونگ) شهرت دارد.",
       "importance": "high"
     },
     {
       "category": "crafts",
-      "title": "Stone Carving",
-      "content": "Quanzhou and nearby Hui'an are famous for stone carving tradition, visible at Chongwu Ancient City.",
+      "title": "سنگ‌تراشی",
+      "content": "کوانژو و هوی‌آن در نزدیکی آن به خاطر سنت سنگ‌تراشی معروف هستند که در شهر باستانی چونگوو قابل مشاهده است.",
       "importance": "medium"
     },
     {
       "category": "martial-arts",
-      "title": "Southern Shaolin",
-      "content": "Southern Shaolin Temple at Qingyuan Mountain is birthplace of many Chinese martial arts styles including Hung Gar boxing.",
+      "title": "شائولین جنوبی",
+      "content": "معبد شائولین جنوبی در کوه چینگیوان زادگاه بسیاری از سبک‌های هنرهای رزمی چینی از جمله بوکس هونگ گار است.",
       "importance": "medium"
     },
     {
       "category": "culture",
-      "title": "Overseas Chinese Heritage",
-      "content": "Quanzhou is major overseas Chinese hometown. Many Chinese diaspora from Southeast Asia trace ancestry here. The华侨文化 is strong.",
+      "title": "میراث چینی‌های خارج از کشور",
+      "content": "کوان‌جو زادگاه اصلی بسیاری از چینی‌های خارج از کشور است و بسیاری از مهاجران چینی از جنوب‌شرق آسیا این شهر را ریشه اجدادی خود می‌دانند. فرهنگ چینی‌های خارج از کشور در این منطقه بسیار قوی است.",
       "importance": "high"
     },
     {
       "category": "architecture",
-      "title": "Minnan Architectural Style",
-      "content": "Minnan houses feature red brick, white walls, and ornate roof ridges with upturned corners. The闽南建筑风格 is distinct from other Chinese regional styles.",
+      "title": "سبک معماری مینان",
+      "content": "خانه‌های مین‌نان با آجر قرمز، دیوارهای سفید و پشت‌بام‌های تزئینی با گوشه‌های خمیده مشخص می‌شوند. سبک معماری مین‌نان با سایر سبک‌های منطقه‌ای چین متفاوت است.",
       "importance": "medium"
     },
     {
       "category": "folk",
-      "title": "Mazu Worship",
-      "content": "Quanzhou is important center for Mazu worship, the sea goddess. Tianhou Palace is one of the most important Mazu temples in the world.",
+      "title": "پرستش مازو",
+      "content": "کوانژو مرکز مهمی برای پرستش مازو، الهه دریا است. معبد تیانهو یکی از مهم‌ترین معابد مازو در جهان است.",
       "importance": "high"
     },
     {
       "category": "food",
       "title": "فرهنگ چای",
-      "content": "Fujian is famous for tea, and Quanzhou has its own tea traditions. Visit tea houses on 清源山 to experience mountain tea culture.",
+      "content": "استان فوجیان به خاطر چای معروف است و کوانژو فرهنگ چای خاص خود را دارد. از خانه‌های چای در کوه چینگیوان بازدید کنید و فرهنگ چای کوهستانی را تجربه کنید.",
       "importance": "medium"
     },
     {
       "category": "art",
-      "title": "Nanyin Music",
-      "content": "Nanyin (南音) is ancient music from Quanzhou, recognized as intangible cultural heritage. Listen to performances at Quanzhou Puppet Show.",
+      "title": "موسیقی نانیین",
+      "content": "نان‌یین (نان‌یین) موسیقی باستانی کوانژو است که به عنوان میراث فرهنگی ناملموس ثبت شده است. لطفاً اجرای آن را در تئاتر عروسکی کوانژو تماشا کنید.",
       "importance": "medium"
     },
     {
       "category": "dialect",
-      "title": "Minnan Dialect",
-      "content": "Quanzhou speakers use Minnanhua (闽南话), a distinct dialect group. It's mutually intelligible with Taiwanese and Southeast Asian Chinese communities.",
+      "title": "گویش مین‌نان",
+      "content": "مردم کوانژو از گروه گویشی منحصر به فردی به نام مین‌نان (مین‌نان) استفاده می‌کنند که با جوامع چینی تایوان و جنوب شرق آسیا قابل درک متقابل است.",
       "importance": "high"
     },
     {
       "category": "folk",
-      "title": "惠安女 Culture",
-      "content": "Hui'an women are famous for their colorful costumes, including直达髻 headpieces and short上衣. They traditionally handle fishing while men work abroad.",
+      "title": "فرهنگ زنان هوی‌آن",
+      "content": "زنان هوئی‌آن به لباس‌های رنگارنگ معروف هستند و از زیورآلات مو به نام ژی‌دا‌جی (ژی‌دا‌جی) و بالاتنه‌های کوتاه استفاده می‌کنند. آن‌ها به طور سنتی مسئول ماهیگیری هستند و مردان در خارج از کشور کار می‌کنند.",
       "importance": "medium"
     },
     {
       "category": "food",
-      "title": "Seafood Culture",
-      "content": "Being a coastal city, seafood is central to Quanzhou cuisine. Fresh fish, crab, shrimp, and shellfish appear in most dishes.",
+      "title": "فرهنگ غذاهای دریایی",
+      "content": "به‌عنوان یک شهر ساحلی، غذاهای دریایی نقش اصلی در آشپزی کوانژو دارند. ماهی تازه، خرچنگ، میگو و صدف در بیشتر غذاها دیده می‌شود.",
       "importance": "high"
     },
     {
       "category": "history",
-      "title": "Zheng He Connections",
-      "content": "Zheng He, the famous Ming Dynasty admiral, was associated with Quanzhou. His maritime legacy is celebrated at several historical sites.",
+      "title": "ارتباط با ژنگ هی",
+      "content": "ژنگ هی، دریاسالار معروف سلسله مینگ، با کوانژو مرتبط بود. میراث دریایی او در چندین مکان تاریخی گرامی داشته می‌شود.",
       "importance": "medium"
     },
     {
       "category": "religion",
-      "title": "Buddhist Heritage",
-      "content": "Quanzhou has been Buddhist center for over 1000 years. Kaiyuan Temple and Qingyuan Mountain are important Buddhist sites.",
+      "title": "میراث بودایی",
+      "content": "کوانژو بیش از ۱۰۰۰ سال مرکز بودایی‌گری بوده است. معبد کای‌یوان و کوه چینگیوان از مکان‌های مهم بودایی هستند.",
       "importance": "medium"
     },
     {
       "category": "crafts",
-      "title": "Dehua Porcelain",
-      "content": "Dehua County near Quanzhou produces world-famous white porcelain, called 'white gold' in ancient times. Visit museums and factories.",
+      "title": "چینی دِهوا",
+      "content": "شهرستان دِهوا در نزدیکی کوانژو چینی سفید مشهور جهانی تولید میکند که در دوران باستان «طلای سفید» نامیده میشد. از موزهها و کارخانهها بازدید کنید.",
       "importance": "medium"
     },
     {
       "category": "food",
-      "title": "Street Food Culture",
-      "content": "Quanzhou has vibrant night markets and street food culture. Try local snacks at路边摊 and传统小贩 for authentic flavors.",
+      "title": "فرهنگ غذای خیابانی",
+      "content": "کوانژو دارای بازارهای شبانه پرجنب‌وجوش و فرهنگ غذای خیابانی است. در غرفه‌های کنار جاده و فروشندگان سنتی، تنقلات محلی را امتحان کنید و طعم اصیل را تجربه کنید.",
       "importance": "high"
     },
     {
       "category": "folk",
-      "title": "Traditional Festivals",
-      "content": "Quanzhou celebrates traditional festivals with unique customs including Mazu birthday, 中秋博饼, and various temple fairs.",
+      "title": "جشنوارههای سنتی",
+      "content": "کوانژو جشن‌های سنتی را با آداب و رسوم خاص خود برگزار می‌کند، از جمله تولد مازو، کیک ماه پاییزی وسط پاییز، و انواع جشن‌های معبدی.",
       "importance": "medium"
     }
   ],

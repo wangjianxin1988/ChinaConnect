@@ -1,6 +1,4 @@
 {
-  "0": "룽먼석굴 - 유네스코 세계문화유산",
-  "1": "소림사 - 쿵푸의 발상지",
   "slug": "luoyang",
   "name": "洛阳",
   "nameEn": "Luoyang",
@@ -10,12 +8,12 @@
     "lat": 34.6197,
     "lng": 112.454
   },
-  "timezone": "UTC+8 (China Standard Time)",
+  "timezone": "UTC+8 (중국 표준시)",
   "description": "중국의 고대 수도 중 하나인 뤼양은 룽먼굴(UNESCO), 사림사 및 모란화로 유명합니다. 5,000년 이상의 역사를 가진 중국 문명의 요람으로 13개 왕조의 수도였습니다.",
   "coverImage": "/img/ext/1633beb663fe.webp",
   "highlights": [
-    "龙门石窟 - 유네스코 세계문화유산",
-    "少林寺 -功伕의 요람",
+    "룽먼석굴 - 유네스코 세계문화유산",
+    "샤오린사 - 쿵푸의 발상지",
     "백마사 - 중국 최초의 불교 사원",
     "뤄양 박물관 - 고대 수도 유물",
     "모란꽃"
@@ -30,7 +28,7 @@
     ],
     "avgSummerTemp": "27°C (81°F)",
     "avgWinterTemp": "2°C (36°F)",
-    "tips": "Best in spring for peonies. Autumn for pleasant weather. Summers hot. Spring festival (April) is peak tourist season."
+    "tips": "모란은 봄이 최고입니다. 가을은 날씨가 쾌적합니다. 여름은 덥습니다. 춘절(4월)은 성수기입니다."
   },
   "attractions": [
     {
@@ -58,10 +56,9 @@
       "phone": "+86 037 9 8653 0071"
     },
     {
-      "2": "탑림(파고다 숲)",
       "id": "luoyang-2",
       "name": "少林寺",
-      "nameEn": "少林寺",
+      "nameEn": "샤오린사",
       "category": "cultural",
       "description": "중국 무술과 선불교의 발상지로, 유명한 쿵푸 쇼가 열립니다.",
       "address": "송산, 등정현",
@@ -75,7 +72,7 @@
       "highlights": [
         "쿤푸 공연",
         "무술 훈련",
-        "탑림(塔林)",
+        "탑림(승탑의 숲)",
         "보리수"
       ],
       "tips": "쿤푸 공연을 보세요. 일찍 도착하세요. 송산 등반과 함께하세요.",
@@ -85,7 +82,7 @@
     {
       "id": "luoyang-3",
       "name": "白马寺",
-      "nameEn": "백마사(白馬寺)",
+      "nameEn": "바이마사(백마사)",
       "category": "cultural",
       "description": "기원후 68년에 건립된 중국 최초의 불교 사찰로 인도와 동남아시아의 기여가 있습니다.",
       "address": "백마사, 라오청 구",
@@ -179,7 +176,6 @@
       "phone": "+86 037 9 4591 3190"
     },
     {
-      "1": "성벽 산책",
       "id": "luoyang-7",
       "name": "丽景门",
       "nameEn": "리징 Gate",
@@ -195,7 +191,7 @@
       "recommendedVisitTime": "1-2시간",
       "highlights": [
         "고대 성문",
-        "성城墙 탐방",
+        "성벽 산책",
         "야경",
         "사진 촬영 포인트"
       ],
@@ -324,7 +320,6 @@
       "phone": "+86 037 9 9290 0237"
     },
     {
-      "0": "당나라 성문",
       "id": "luoyang-13",
       "name": "应天门",
       "nameEn": "영천문",
@@ -339,7 +334,7 @@
       "ticketPrice": "60¥",
       "recommendedVisitTime": "1-2시간",
       "highlights": [
-        "당 왕조城门",
+        "당대의 문",
         "조명 쇼",
         "야간 사진 촬영",
         "역사적 재현"
@@ -624,7 +619,7 @@
         "lng": 112.47
       },
       "openingHours": "08:00-18:30",
-      "ticketPrice": "90元",
+      "ticketPrice": "90위안",
       "recommendedVisitTime": "반나절.",
       "highlights": [
         "비로자나불.",
@@ -638,7 +633,7 @@
     {
       "id": "white-horse-temple",
       "name": "白马寺",
-      "nameEn": "백마사(白馬寺)",
+      "nameEn": "바이마사(백마사)",
       "category": "temple",
       "description": "중국 최초의 고대 사찰로, 불교가 중국에 전래된 후 처음으로 공식적으로 세워진 사찰입니다.",
       "address": "루오양시 루오룽구.",
@@ -647,7 +642,7 @@
         "lng": 112.43
       },
       "openingHours": "07:30-17:30",
-      "ticketPrice": "35元",
+      "ticketPrice": "35위안",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "대불전.",
@@ -670,7 +665,7 @@
         "lng": 111.6
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "100元",
+      "ticketPrice": "100위안",
       "recommendedVisitTime": "하루 종일",
       "highlights": [
         "금빛 지붕",
@@ -693,7 +688,7 @@
         "lng": 112.45
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "2-3시간",
       "highlights": [
         "당삼채",
@@ -716,7 +711,7 @@
         "lng": 112.47
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "1시간",
       "highlights": [
         "고대 도시 성문",
@@ -738,7 +733,7 @@
         "lng": 112.47
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "간식",
@@ -760,7 +755,7 @@
         "lng": 112.47
       },
       "openingHours": "08:00-17:30",
-      "ticketPrice": "40元",
+      "ticketPrice": "40위안",
       "recommendedVisitTime": "1.5시간",
       "highlights": [
         "관우의 무덤",
@@ -782,7 +777,7 @@
         "lng": 112.45
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "30元",
+      "ticketPrice": "30위안",
       "recommendedVisitTime": "1시간",
       "highlights": [
         "전차와 말 구덩이",
@@ -804,7 +799,7 @@
         "lng": 112.45
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "모란",
@@ -826,7 +821,7 @@
         "lng": 112.47
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "50元",
+      "ticketPrice": "50위안",
       "recommendedVisitTime": "반나절",
       "highlights": [
         "모란",
@@ -839,7 +834,7 @@
     {
       "id": "shaolin-temple",
       "name": "少林寺",
-      "nameEn": "少林寺",
+      "nameEn": "샤오린사",
       "category": "temple",
       "description": "중국 선불교의 요람이자 소림 무술의 발상지입니다.",
       "address": "정저우시 덩펑시",
@@ -848,7 +843,7 @@
         "lng": 112.93
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "80元",
+      "ticketPrice": "80위안",
       "recommendedVisitTime": "반나절",
       "highlights": [
         "무술 공연",
@@ -871,7 +866,7 @@
         "lng": 112.93
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "80元",
+      "ticketPrice": "80위안",
       "recommendedVisitTime": "하루 종일",
       "highlights": [
         "소림사",
@@ -894,7 +889,7 @@
         "lng": 113.33
       },
       "openingHours": "07:00-18:00",
-      "ticketPrice": "120元",
+      "ticketPrice": "120위안",
       "recommendedVisitTime": "하루 종일",
       "highlights": [
         "홍석협",
@@ -917,7 +912,7 @@
         "lng": 111.93
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "75元",
+      "ticketPrice": "75위안",
       "recommendedVisitTime": "하루 종일",
       "highlights": [
         "위황봉",
@@ -940,7 +935,7 @@
         "lng": 114.07
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "65元",
+      "ticketPrice": "65위안",
       "recommendedVisitTime": "하루 종일",
       "highlights": [
         "피서지",
@@ -962,7 +957,7 @@
         "lng": 112.12
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "80元",
+      "ticketPrice": "80위안",
       "recommendedVisitTime": "반나절",
       "highlights": [
         "17. 협곡",
@@ -984,7 +979,7 @@
         "lng": 112.47
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "人均80元",
+      "ticketPrice": "1인당 80위안",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "뤄양 수석 연회",
@@ -1006,7 +1001,7 @@
         "lng": 111.93
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "75元",
+      "ticketPrice": "75위안",
       "recommendedVisitTime": "하루 종일",
       "highlights": [
         "숲",
@@ -1028,7 +1023,7 @@
         "lng": 112.42
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "반나절",
       "highlights": [
         "고대 무덤 군락",
@@ -1050,7 +1045,7 @@
         "lng": 112.47
       },
       "openingHours": "11. 야간",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "1시간",
       "highlights": [
         "12. 조명 쇼",
@@ -1072,7 +1067,7 @@
         "lng": 112.78
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "20元",
+      "ticketPrice": "20위안",
       "recommendedVisitTime": "1.5시간",
       "highlights": [
         "상나라 유적"
@@ -1093,7 +1088,7 @@
         "lng": 112.47
       },
       "openingHours": "하루 종일",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "고대 건축물",
@@ -1115,7 +1110,7 @@
         "lng": 112.93
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "30元",
+      "ticketPrice": "30위안",
       "recommendedVisitTime": "1.5시간",
       "highlights": [
         "고대 편백나무",
@@ -1137,7 +1132,7 @@
         "lng": 112.93
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "30元",
+      "ticketPrice": "30위안",
       "recommendedVisitTime": "1.5시간",
       "highlights": [
         "고대 건축",
@@ -1159,7 +1154,7 @@
         "lng": 112.42
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "무료",
       "recommendedVisitTime": "2시간",
       "highlights": [
         "고대 무덤",
@@ -1181,7 +1176,7 @@
         "lng": 112.33
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "40元",
+      "ticketPrice": "40위안",
       "recommendedVisitTime": "반나절",
       "highlights": [
         "수리 시설",
@@ -1225,7 +1220,6 @@
       "phone": "+86 037 9 8493 9976"
     },
     {
-      "0": "수석 풀코스",
       "id": "luoyang-2",
       "name": "洛阳水席园",
       "nameEn": "뤼양 수연회 정원",
@@ -1240,16 +1234,16 @@
       },
       "phone": "+86 379 6330 8888",
       "hours": "10:00-22:00",
-      "description": "정통 뤄양 수석(水席)을 제공하는 최적의 장소.",
+      "description": "정통 낙양 수석연을 제공하는 최적의 장소.",
       "dishHighlights": [
-        "정통 수宴(물 연회)",
+        "수석 풀코스",
         "24가지 요리",
         "전통 레시피",
         "문화 체험"
       ],
       "tags": [
         "현지",
-        "수宴(물 연회)",
+        "수석",
         "전통적인",
         "유명"
       ],
@@ -1316,10 +1310,9 @@
       "phone": "+86 037 9 1638 9894"
     },
     {
-      "0": "전통 수석 연회",
       "id": "luoyang-5",
       "name": "관지 수석",
-      "nameEn": "관지 수宴",
+      "nameEn": "관지 수원석 연회",
       "type": "로컬",
       "cuisine": "뤼양",
       "avgPrice": 80,
@@ -1332,14 +1325,14 @@
       "hours": "10:00-22:00",
       "description": "가족 운영 레스토랑에서 정통 수석 연회를 맛볼 수 있다.",
       "dishHighlights": [
-        "전통 수宴(물 연회)",
+        "전통 수원석 연회",
         "가정 레시피",
         "정통 맛",
         "문화"
       ],
       "tags": [
         "현지",
-        "수宴(물 연회)",
+        "수석",
         "가족 경영",
         "전통적인"
       ],
@@ -1363,7 +1356,7 @@
       "description": "전통 뤼양 면 요리와 국수로 유명합니다.",
       "dishHighlights": [
         "연루면",
-        "매운酸한면",
+        "얼큰한 국수",
         "토핑이 들어간 면"
       ],
       "tags": [
@@ -1450,9 +1443,9 @@
       "hours": "07:00-19:00",
       "description": "뜨거운 소를 넣고 찐 만두 - 뤄양의 명물",
       "dishHighlights": [
-        "뜨거운馅 만두",
-        "돼지고기馅",
-        "채소馅"
+        "뜨끈한 만두",
+        "돼지고기 소",
+        "야채 소"
       ],
       "tags": [
         "현지",
@@ -1595,7 +1588,7 @@
         "lat": 34.6622,
         "lng": 112.4522
       },
-      "hours": "全天",
+      "hours": "종일",
       "description": "채소가 들어간 두꺼운 면 - 간단한 현지 요리",
       "dishHighlights": [
         "두꺼운 면",
@@ -1630,7 +1623,7 @@
       "dishHighlights": [
         "국수",
         "다양한 토핑",
-        "신辣",
+        "새콤달콤",
         "매운"
       ],
       "tags": [
@@ -1660,7 +1653,7 @@
       "dishHighlights": [
         "팬이 구운 만두",
         "바삭한 바닥",
-        "돼지고기馅",
+        "돼지고기 소",
         "야채"
       ],
       "tags": [
@@ -1793,7 +1786,6 @@
       "phone": "+86 037 9 6648 7685"
     },
     {
-      "1": "단팥소",
       "id": "luoyang-21",
       "name": "炸麻球",
       "nameEn": "참깨 경단 튀김",
@@ -1806,11 +1798,11 @@
         "lat": 34.6622,
         "lng": 112.4522
       },
-      "hours": "全天",
+      "hours": "종일",
       "description": "바삭한 참깨 경단 디저트 - 일반적인 간식",
       "dishHighlights": [
-        "참깨丸子",
-        "달콤한馅",
+        "참깨볼",
+        "달콤한 소",
         "바삭한",
         "전통"
       ],
@@ -1870,7 +1862,7 @@
       "description": "육즙이 풍부한 만두 - 중국 전역에서 인기.",
       "dishHighlights": [
         "수육만두",
-        "돼지고기馅",
+        "돼지고기 소",
         "뜨거운 육수",
         "정교한"
       ],
@@ -1884,7 +1876,6 @@
       "phone": "+86 037 9 4141 7542"
     },
     {
-      "1": "다양한 소",
       "id": "luoyang-24",
       "name": "老城饺子",
       "nameEn": "고성 만두",
@@ -1901,7 +1892,7 @@
       "description": "다양한 전통 소를 넣은 수제 만두",
       "dishHighlights": [
         "수제 만두",
-        "다양한陷落",
+        "다양한 소",
         "전통",
         "신선한"
       ],
@@ -1976,7 +1967,7 @@
     {
       "id": "luoyang-28",
       "name": "老街浆面条",
-      "nameEn": "老街浆面条 (浆面条)",
+      "nameEn": "라오지에 장멘티아오 (장멘티아오)",
       "type": "로컬",
       "cuisine": "장면탕(발효 콩 국수 수프)",
       "avgPrice": 148,
@@ -2005,7 +1996,7 @@
     {
       "id": "luoyang-30",
       "name": "老字号水席",
-      "nameEn": "老字号水席 (水席)",
+      "nameEn": "라오쯔하오 수이시 (수이시)",
       "type": "길거리",
       "cuisine": "수이시(물 연회)",
       "avgPrice": 55,
@@ -2266,7 +2257,7 @@
     {
       "id": "luoyang-48",
       "name": "洛阳味浆面条",
-      "nameEn": "洛阳味浆面条 (浆面条)",
+      "nameEn": "뤄양 웨이 장멘티아오 (장멘티아오)",
       "type": "길거리",
       "cuisine": "장몐탸오(발효 콩 국수)",
       "avgPrice": 32,
@@ -2295,7 +2286,7 @@
     {
       "id": "luoyang-50",
       "name": "老字号水席",
-      "nameEn": "老字号水席 (水席)",
+      "nameEn": "라오쯔하오 수이시 (수이시)",
       "type": "로컬",
       "cuisine": "수이시(물 연회)",
       "avgPrice": 95,
@@ -2324,7 +2315,7 @@
     {
       "id": "luoyang-52",
       "name": "正宗浆面条",
-      "nameEn": "正宗浆面条 (浆面条)",
+      "nameEn": "정통 장멘티아오 (장멘티아오)",
       "type": "로컬",
       "cuisine": "장몐탸오(발효 콩 국수)",
       "avgPrice": 90,
@@ -2382,7 +2373,7 @@
     {
       "id": "luoyang-56",
       "name": "老洛阳不翻汤",
-      "nameEn": "老洛阳不翻汤 (不翻汤)",
+      "nameEn": "라오 뤄양 부판탕 (부판탕)",
       "type": "길거리",
       "cuisine": "부펀탕(노터치 수프)",
       "avgPrice": 35,
@@ -2440,7 +2431,7 @@
     {
       "id": "luoyang-60",
       "name": "阿婆水席",
-      "nameEn": "阿婆水席 (水席)",
+      "nameEn": "아바 수시 (수시)",
       "type": "로컬",
       "cuisine": "수이시(물 연회)",
       "avgPrice": 120,
@@ -2469,7 +2460,7 @@
     {
       "id": "luoyang-62",
       "name": "巷子水席",
-      "nameEn": "巷子水席 (水席)",
+      "nameEn": "샹쯔 수시 (수시)",
       "type": "로컬",
       "cuisine": "수이시(물 연회)",
       "avgPrice": 54,
@@ -2498,7 +2489,7 @@
     {
       "id": "luoyang-64",
       "name": "传统水席",
-      "nameEn": "传统水席 (水席)",
+      "nameEn": "전통 수시 (수시)",
       "type": "로컬",
       "cuisine": "수이시 (물 연회)",
       "avgPrice": 122,
@@ -2585,7 +2576,7 @@
     {
       "id": "luoyang-70",
       "name": "老洛阳不翻汤",
-      "nameEn": "老洛阳不翻汤 (不翻汤)",
+      "nameEn": "라오 뤄양 부판탕 (부판탕)",
       "type": "로컬",
       "cuisine": "부펀탕(무회전 수프)",
       "avgPrice": 80,
@@ -2614,7 +2605,7 @@
     {
       "id": "luoyang-72",
       "name": "老洛阳浆面条",
-      "nameEn": "老洛阳浆面条 (浆面条)",
+      "nameEn": "라오뤄양 장면 (장면)",
       "type": "로컬",
       "cuisine": "장몐탸오 (발효 콩 국수)",
       "avgPrice": 115,
@@ -2643,7 +2634,7 @@
     {
       "id": "luoyang-74",
       "name": "老洛阳不翻汤",
-      "nameEn": "老洛阳不翻汤 (不翻汤)",
+      "nameEn": "라오 뤄양 부판탕 (부판탕)",
       "type": "로컬",
       "cuisine": "부분탕 (부전탕)",
       "avgPrice": 44,
@@ -2674,7 +2665,7 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major Chinese cities",
+        "from": "중국 주요 도시",
         "to": "루양 베이자오 공항 (LYA)",
         "duration": "주요 도시에서 1-3시간",
         "price": "400-1500¥",
@@ -2685,30 +2676,30 @@
         "type": "train",
         "from": "베이징(4시간), 상하이(8시간), 정저우(1시간)",
         "to": "루양 기차역 / 루양 룽먼 역",
-        "duration": "1-8 hours",
+        "duration": "1~8시간",
         "price": "100-600¥",
-        "frequency": "Multiple trains daily",
+        "frequency": "매일 여러 차례 운행",
         "tips": "정저우에서 고속열차는 루양 룽먼 역 이용. 두 역 모두 버스 연결 가능."
       }
     ],
     "local": {
       "bus": [
-        "Extensive network",
+        "광범위한 네트워크",
         "Single ride: 1-2¥",
-        "Tourist areas connected",
+        "연결된 관광 지역",
         "Air-conditioned"
       ],
       "taxi": [
         "Starting fare: 8¥",
         "Within city 15-40¥",
         "To Shaolin 150¥",
-        "Didi available"
+        "디디 이용 가능"
       ],
       "bike": [
         "모바이크, 메이투안 자전거 이용 가능",
-        "City cycling possible",
-        "Good for short trips",
-        "Unlock: 1¥ per ride"
+        "도시 자전거 이용 가능",
+        "짧은 여행에 적합",
+        "잠금 해제: 1위안/회"
       ]
     }
   },
@@ -2718,7 +2709,7 @@
       "nameEn": "LuoyangMode",
       "budget": "luxury",
       "priceRange": "¥600-1200/night",
-      "address": "City center",
+      "address": "도심",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
@@ -2730,14 +2721,14 @@
         "좋은 서비스",
         "가성비"
       ],
-      "bookingTips": "Book during off-peak season. Good location for sightseeing."
+      "bookingTips": "비수기에 예약하세요. 관광하기 좋은 위치입니다."
     },
     {
       "name": "뤄양 화양 광장 국제대호텔",
       "nameEn": "Luoyang Huayang Plaza International Hotel",
       "budget": "luxury",
       "priceRange": "¥500-1000/night",
-      "address": "City center",
+      "address": "도심",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
@@ -2749,14 +2740,14 @@
         "다양한 다이닝",
         "좋은 서비스"
       ],
-      "bookingTips": "Book during off-peak. Good for transport."
+      "bookingTips": "비수기에 예약하세요. 교통이 편리합니다."
     },
     {
       "name": "뤄양 무단 대호텔",
       "nameEn": "Luoyang Peony Hotel",
       "budget": "mid",
       "priceRange": "¥300-600/night",
-      "address": "Near Old City",
+      "address": "구시가지 인근",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
@@ -2768,14 +2759,14 @@
         "좋은 위치",
         "가성비"
       ],
-      "bookingTips": "Perfect for old city exploration. Book during off-peak."
+      "bookingTips": "구시가지 탐험에 완벽한 위치입니다. 비수기에 예약하세요."
     },
     {
       "name": "루자 호텔 뤄양 라오청 십자거리점",
       "nameEn": "Home Inn Luoyang Old City",
       "budget": "budget",
       "priceRange": "¥120-250/night",
-      "address": "Near Old City",
+      "address": "구시가지 인근",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
@@ -2787,14 +2778,14 @@
         "깨끗한 객실",
         "중심부 위치"
       ],
-      "bookingTips": "Best budget option in old city area."
+      "bookingTips": "구시가지 지역에서 가장 가성비가 좋은 선택입니다."
     },
     {
       "name": "뤄양 카이위안 밍두 그랜드 호텔",
       "nameEn": "New Century Grand Hotel Luoyang",
       "budget": "luxury",
       "priceRange": "¥500-1000/night",
-      "address": "City center",
+      "address": "도심",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
@@ -2806,14 +2797,14 @@
         "좋은 서비스",
         "가성비"
       ],
-      "bookingTips": "Book direct for best rates. Good business hotel."
+      "bookingTips": "최저가를 원한다면 직접 예약하세요. 훌륭한 비즈니스 호텔입니다."
     },
     {
       "name": "뤄양 아토 호텔",
       "nameEn": "Atour Hotel Luoyang",
       "budget": "mid",
       "priceRange": "¥250-500/night",
-      "address": "City center",
+      "address": "도심",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
@@ -2825,14 +2816,14 @@
         "무료 조식",
         "좋은 서비스"
       ],
-      "bookingTips": "Popular Chinese boutique chain. Great value."
+      "bookingTips": "인기 있는 중국 부티크 체인. 가성비가 좋습니다."
     },
     {
       "name": "쑹산 샤오린사 호텔",
       "nameEn": "Songshan Shaolin Hotel",
       "budget": "mid",
       "priceRange": "¥300-600/night",
-      "address": "Near Shaolin Temple",
+      "address": "샤오린 사 인근",
       "coordinates": {
         "lat": 34.5022,
         "lng": 112.9322
@@ -2844,14 +2835,14 @@
         "쿵푸 테마",
         "사찰 방문에 좋음"
       ],
-      "bookingTips": "Perfect for Shaolin Temple visits. Book during off-peak."
+      "bookingTips": "샤오린 사 방문에 완벽한 위치입니다. 비수기에 예약하세요."
     },
     {
       "name": "뤄양 무단청 호텔",
       "nameEn": "Luoyang Peony City Hotel",
       "budget": "mid",
       "priceRange": "¥300-550/night",
-      "address": "City center",
+      "address": "도심",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
@@ -2863,14 +2854,14 @@
         "현대적인 시설",
         "좋은 서비스"
       ],
-      "bookingTips": "Book during off-peak. Good for sightseeing."
+      "bookingTips": "비수기에 예약하세요. 관광하기에 좋습니다."
     },
     {
       "name": "뤄양 라오청 호텔",
       "nameEn": "Luoyang Old City Hotel",
       "budget": "mid",
       "priceRange": "¥250-450/night",
-      "address": "Near Old City",
+      "address": "구시가지 인근",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
@@ -2882,14 +2873,14 @@
         "좋은 위치",
         "가성비"
       ],
-      "bookingTips": "Perfect for old city exploration."
+      "bookingTips": "구시가지 탐험에 완벽한 위치입니다."
     },
     {
       "name": "뤄양 룽먼 비즈니스 호텔",
       "nameEn": "Luoyang Longmen Business Hotel",
       "budget": "mid",
       "priceRange": "¥280-500/night",
-      "address": "Near Longmen Grottoes",
+      "address": "룽먼 석굴 인근",
       "coordinates": {
         "lat": 34.4522,
         "lng": 112.4722
@@ -2901,14 +2892,14 @@
         "좋은 서비스",
         "무료 주차"
       ],
-      "bookingTips": "Perfect for Longmen Grottoes visits."
+      "bookingTips": "룽먼 석굴 방문에 최적입니다."
     },
     {
       "name": "뤄양 시공 호텔",
       "nameEn": "Luoyang Xigong Hotel",
       "budget": "budget",
       "priceRange": "¥120-280/night",
-      "address": "Xigong District",
+      "address": "시궁 구",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
@@ -2920,14 +2911,14 @@
         "깨끗한 객실",
         "기본 편의시설"
       ],
-      "bookingTips": "Best budget option in central area."
+      "bookingTips": "중심 지역에서 최고의 가성비 옵션입니다."
     },
     {
       "name": "뤄양 항공성 호텔",
       "nameEn": "Luoyang Aviation City Hotel",
       "budget": "mid",
       "priceRange": "¥350-600/night",
-      "address": "Near airport",
+      "address": "공항 인근",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
@@ -2939,14 +2930,14 @@
         "무료 셔틀",
         "좋은 서비스"
       ],
-      "bookingTips": "Perfect for early flights. Book airport shuttle."
+      "bookingTips": "이른 아침 비행기에 적합합니다. 공항 셔틀을 예약하세요."
     },
     {
       "name": "뤄양 온천 산장",
       "nameEn": "Luoyang Hot Spring Resort",
       "budget": "luxury",
       "priceRange": "¥600-1200/night",
-      "address": "Near city",
+      "address": "도심 인근",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
@@ -2958,14 +2949,14 @@
         "산 전망",
         "휴식"
       ],
-      "bookingTips": "Perfect for relaxation. Book spa packages."
+      "bookingTips": "휴식에 최적입니다. 스파 패키지를 예약하세요."
     },
     {
       "name": "뤄양 바이마사 여관",
       "nameEn": "Luoyang White Horse Temple Inn",
       "budget": "budget",
       "priceRange": "¥100-250/night",
-      "address": "Near White Horse Temple",
+      "address": "바이마 사 인근",
       "coordinates": {
         "lat": 34.7122,
         "lng": 112.5622
@@ -2977,14 +2968,14 @@
         "간단함",
         "가성비"
       ],
-      "bookingTips": "Great for temple visits. Experience local life."
+      "bookingTips": "사찰 방문에 좋습니다. 현지의 일상을 경험해 보세요."
     },
     {
       "name": "뤄양 고분 박물관 호텔",
       "nameEn": "Luoyang Ancient Tomb Museum Hotel",
       "budget": "budget",
       "priceRange": "¥150-300/night",
-      "address": "Near Ancient Tomb Museum",
+      "address": "고대 무덤 박물관 인근",
       "coordinates": {
         "lat": 34.6922,
         "lng": 112.5222
@@ -2996,33 +2987,33 @@
         "청결함",
         "저렴한 가격"
       ],
-      "bookingTips": "Perfect for museum visitors."
+      "bookingTips": "박물관 방문객에게 완벽합니다."
     }
   ],
   "payment": [
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Universal in Luoyang",
+      "description": "뤄양의 유니버설",
       "howToUse": [
-        "Download app",
-        "Link card"
+        "앱 다운로드",
+        "카드 연결"
       ],
       "tips": [
-        "Works at all merchants",
-        "English mode available"
+        "모든 가맹점에서 사용 가능",
+        "영어 모드 지원"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Accepted everywhere",
+      "description": "어디서나 사용 가능",
       "howToUse": [
-        "WeChat required",
+        "위챗 필요",
         "국제 카드 사용 가능"
       ],
       "tips": [
-        "Set to English mode"
+        "영어 모드로 설정"
       ]
     },
     {
@@ -3031,10 +3022,10 @@
       "description": "전통 시장에서 유용함",
       "howToUse": [
         "ATM 어디서나",
-        "Banks common"
+        "은행이 흔함"
       ],
       "tips": [
-        "Keep 100¥ for markets",
+        "시장에서 100위안 보유",
         "대부분의 식당에서 카드 사용 가능"
       ]
     }
@@ -3061,7 +3052,7 @@
     {
       "category": "food",
       "title": "뤼양 수연",
-      "content": "유명한 '수시(水席)'는 24가지 요리가 순서대로 제공되며, 각 요리에는 국물이나 즙이 주를 이룹니다. 방문객이라면 꼭 맛봐야 할 별미입니다.",
+      "content": "유명한 '수시'는 24가지 요리가 순서대로 제공되며, 각 요리에는 국물이나 즙이 주를 이룹니다. 방문객이라면 꼭 맛봐야 할 별미입니다.",
       "importance": "high"
     },
     {

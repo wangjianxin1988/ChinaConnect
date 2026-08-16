@@ -1,4 +1,9 @@
 import React, { useState, useCallback, useEffect } from "react";
+import { EMERGENCY_L10N } from "@/data/emergency/emergency-l10n";
+
+function gpsT(lang: string, key: string): string {
+  return EMERGENCY_L10N[lang]?.[key] || key;
+}
 
 interface UserLocation {
   lat: number;
@@ -31,7 +36,7 @@ export function GPSLocator({ className = "" }: GPSLocatorProps) {
 
   const getLocation = useCallback(async () => {
     if (!("geolocation" in navigator)) {
-      setError("Geolocation is not supported by your browser");
+      setError(gpsT(lang, "Geolocation is not supported by your browser"));
       return;
     }
 
@@ -60,17 +65,17 @@ export function GPSLocator({ className = "" }: GPSLocatorProps) {
       switch (geolocationError.code) {
         case geolocationError.PERMISSION_DENIED:
           setError(
-            "Location permission denied. Please enable location access in your browser settings.",
+            gpsT(lang, "Location permission denied. Please enable location access in your browser settings."),
           );
           break;
         case geolocationError.POSITION_UNAVAILABLE:
-          setError("Location information is currently unavailable.");
+          setError(gpsT(lang, "Location information is currently unavailable."));
           break;
         case geolocationError.TIMEOUT:
-          setError("Location request timed out. Please try again.");
+          setError(gpsT(lang, "Location request timed out. Please try again."));
           break;
         default:
-          setError("An unknown error occurred while getting your location.");
+          setError(gpsT(lang, "An unknown error occurred while getting your location."));
       }
     } finally {
       setIsLoading(false);
@@ -173,9 +178,9 @@ City: Please provide your city
       {/* Header */}
       <div className="bg-gradient-to-r from-green-600 to-teal-600 text-white p-4">
         <h2 className="text-lg font-bold flex items-center gap-2">
-          <span>📍</span> GPS Location
+          <span>📍</span> {gpsT(lang, "GPS Location")}
         </h2>
-        <p className="text-sm opacity-90 mt-1">Share your location with emergency services</p>
+        <p className="text-sm opacity-90 mt-1">{gpsT(lang, "Share your location with emergency services")}</p>
       </div>
 
       <div className="p-4 space-y-4">
@@ -188,12 +193,12 @@ City: Please provide your city
           {isLoading ? (
             <>
               <span className="animate-spin">⏳</span>
-              <span>Getting location...</span>
+              <span>{gpsT(lang, "Getting location...")}</span>
             </>
           ) : (
             <>
               <span>📡</span>
-              <span>{location ? "Refresh Location" : "Get My Location"}</span>
+              <span>{location ? gpsT(lang, "Refresh Location") : gpsT(lang, "Get My Location")}</span>
             </>
           )}
         </button>
@@ -201,7 +206,7 @@ City: Please provide your city
         {/* Location Display */}
         {error && (
           <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-red-700 text-sm">
-            <span className="font-semibold">Error:</span> {error}
+            <span className="font-semibold">{gpsT(lang, "Error:")}</span> {error}
           </div>
         )}
 
@@ -209,16 +214,16 @@ City: Please provide your city
           <>
             <div className="bg-slate-50 rounded-xl p-4 space-y-2">
               <div className="flex items-center justify-between">
-                <span className="text-sm text-gray-600">Latitude</span>
+                <span className="text-sm text-gray-600">{gpsT(lang, "Latitude")}</span>
                 <span className="font-mono text-sm">{location.lat.toFixed(6)}</span>
               </div>
               <div className="flex items-center justify-between">
-                <span className="text-sm text-gray-600">Longitude</span>
+                <span className="text-sm text-gray-600">{gpsT(lang, "Longitude")}</span>
                 <span className="font-mono text-sm">{location.lng.toFixed(6)}</span>
               </div>
               {location.accuracy && (
                 <div className="flex items-center justify-between">
-                  <span className="text-sm text-gray-600">Accuracy</span>
+                  <span className="text-sm text-gray-600">{gpsT(lang, "Accuracy")}</span>
                   <span className="text-sm">{Math.round(location.accuracy)}m</span>
                 </div>
               )}
@@ -233,12 +238,12 @@ City: Please provide your city
                 {copied ? (
                   <>
                     <span>✓</span>
-                    <span>Copied!</span>
+                    <span>{gpsT(lang, "Copied!")}</span>
                   </>
                 ) : (
                   <>
                     <span>📋</span>
-                    <span>Copy Location</span>
+                    <span>{gpsT(lang, "Copy Location")}</span>
                   </>
                 )}
               </button>
@@ -247,7 +252,7 @@ City: Please provide your city
                 className="bg-gray-600 hover:bg-gray-700 text-white py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2"
               >
                 <span>🗺️</span>
-                <span>Open in Maps</span>
+                <span>{gpsT(lang, "Open in Maps")}</span>
               </button>
             </div>
 
@@ -260,12 +265,12 @@ City: Please provide your city
               {isSearching ? (
                 <>
                   <span className="animate-spin">⏳</span>
-                  <span>Searching...</span>
+                  <span>{gpsT(lang, "Searching...")}</span>
                 </>
               ) : (
                 <>
                   <span>🔍</span>
-                  <span>Find Nearby Services</span>
+                  <span>{gpsT(lang, "Find Nearby Services")}</span>
                 </>
               )}
             </button>
@@ -274,7 +279,7 @@ City: Please provide your city
             {nearbyPlaces.length > 0 && (
               <div className="space-y-2">
                 <h3 className="font-semibold text-sm text-gray-700 flex items-center gap-2">
-                  <span>🏥</span> Nearby Services
+                  <span>🏥</span> {gpsT(lang, "Nearby Services")}
                 </h3>
                 <div className="space-y-2 max-h-64 overflow-y-auto">
                   {nearbyPlaces.map((place, idx) => (
@@ -303,7 +308,7 @@ City: Please provide your city
         <div className="bg-amber-50 border border-amber-200 rounded-xl p-3 text-xs text-amber-800 flex items-center gap-2">
           <span>💡</span>
           <span>
-            This feature requires internet. Download offline maps for better preparedness.
+            {gpsT(lang, "This feature requires internet. Download offline maps for better preparedness.")}
           </span>
         </div>
       </div>

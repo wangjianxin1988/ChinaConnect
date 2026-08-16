@@ -109,3 +109,7 @@ build-output.txt
 _*.py
 .audit/guide-cjk-lines.txt
 
+
+# Audit caches
+.audit/*.pkl
+.audit/__pycache__/

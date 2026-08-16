@@ -9,6 +9,7 @@ import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import React, { useState, useRef, useEffect } from "react";
 import { type Language, translations } from "@/i18n/translations";
+import { GUIDE_CARD_L10N } from "@/data/guide/guide-card-l10n";
 import { jaText, Bi, stripZh, localized, guideText } from "./guide-i18n";;
 
 interface FormValues {
@@ -60,7 +61,9 @@ function buildLetterHTML(template: (typeof INVITATION_TEMPLATES)[0], values: For
   return html;
 }
 
-export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}) { const t = translations[lang] || translations.en; const tg = (t.invitationLetter || translations.en.invitationLetter || {}) as Record<string, string>;
+export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}) {
+  const ilt = (k: string) => GUIDE_CARD_L10N[lang]?.[k] || GUIDE_CARD_L10N.en?.[k] || k;
+  const t = translations[lang] || translations.en; const tg = (t.invitationLetter || translations.en.invitationLetter || {}) as Record<string, string>;
   const [selectedTemplate, setSelectedTemplate] = useState<string>(INVITATION_TEMPLATES[0].id);
   const [formValues, setFormValues] = useState<FormValues>({});
   const [previewMode, setPreviewMode] = useState(false);
@@ -126,7 +129,7 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
       pdf.save(`invitation-letter-${currentTemplate.id}-${timestamp}.pdf`);
     } catch (error) {
       console.error("PDF generation failed:", error);
-      alert("PDF generation failed. Please try again.");
+      alert(ilt("PDF generation failed. Please try again."));
     } finally {
       setIsGeneratingPDF(false);
     }
@@ -182,7 +185,7 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
 
     const printWindow = window.open("", "_blank");
     if (!printWindow) {
-      alert("Please allow popups to print");
+      alert(ilt("Please allow popups to print"));
       return;
     }
 
@@ -255,10 +258,9 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
         <div className="flex items-start gap-4">
           <span className="text-5xl">✉️</span>
           <div>
-            <h2 className="text-2xl font-bold mb-2">Business Invitation Letter Templates</h2>
+            <h2 className="text-2xl font-bold mb-2">{ilt("Business Invitation Letter Templates")}</h2>
             <p className="text-blue-100 max-w-2xl">
-              Download ready-to-use invitation letters for visa applications, trade visits, and
-              business meetings. Fill in the fields and download as PDF or print.
+              {ilt("Download ready-to-use invitation letters for visa applications, trade visits, and business meetings. Fill in the fields and download as PDF or print.")}
             </p>
             <LastVerifiedStamp dataKey="invitation-letter" lang={lang} />
           </div>
@@ -433,12 +435,11 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
           <span>💡</span><Bi en="Important Tips for Visa Applications" zh="签证申请重要提示" lang={lang} /></h4>
         <ul className="space-y-2 text-sm text-amber-800">
           <li>
-            • Include the company registration number (unified social credit code) — required by most
-            embassies
+            {ilt("• Include the company registration number (unified social credit code) — required by most embassies")}
           </li>
-          <li>• Have the letter signed by an authorized person with company seal</li>
-          <li>• Both English and Chinese versions are recommended for the Chinese embassy</li>
-          <li>• Keep a scanned PDF copy and original for your visa interview</li>
+          <li>{ilt("• Have the letter signed by an authorized person with company seal")}</li>
+          <li>{ilt("• Both English and Chinese versions are recommended for the Chinese embassy")}</li>
+          <li>{ilt("• Keep a scanned PDF copy and original for your visa interview")}</li>
         </ul>
         <p className="text-xs text-amber-600 mt-3">
           {localized("Tip: Most embassies require the unified social credit code. The letter must be signed by an authorized signatory and stamped with the company seal.", "ヒント：多くの大使館・領事館は統一社会信用コードの記載を求めます。招待状は権限のある署名者が署名し、会社印を押印する必要があります。", lang)}

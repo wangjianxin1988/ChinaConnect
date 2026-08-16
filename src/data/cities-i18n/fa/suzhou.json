@@ -3,33 +3,33 @@
   "name": "苏州",
   "nameEn": "Suzhou",
   "country": "China",
-  "population": "10.7 million",
+  "population": "۱۰.۷ میلیون",
   "coordinates": {
     "lat": 31.2989,
     "lng": 120.5853
   },
-  "timezone": "UTC+8 (China Standard Time)",
-  "description": "Suzhou is a paradise of elegant gardens, silk production, and classical Chinese culture. Known as 'Venice of the East' for its canals and water towns. Home to UNESCO World Heritage classical gardens, intricate silk embroidery, and 2,500 years of history. A cultural gem between Shanghai and Nanjing.",
+  "timezone": "UTC+8 (زمان استاندارد چین)",
+  "description": "سوژو بهشتی از باغ‌های زیبا، تولید ابریشم و فرهنگ کلاسیک چین است. به دلیل کانال‌ها و شهرهای آبی، به «ونیز شرق» معروف است. میزبان باغ‌های کلاسیک ثبت‌شده در میراث جهانی یونسکو، گلدوزی‌های پیچیده ابریشمی و ۲۵۰۰ سال تاریخ است. گوهری فرهنگی میان شانگهای و نانجینگ.",
   "coverImage": "/img/ext/bb437a1b3f23.webp",
   "highlights": [
-    "Humble Administrator's Garden - UNESCO",
-    "Lingering Garden - Ming dynasty masterpiece",
-    "Tiger Hill - Ancient pagoda and hill",
-    "Shantang Street - Classic canal street",
-    "Zhouzhuang - Water town Venice"
+    "باغ مدیر فروتن - یونسکو",
+    "باغ لینگرینگ - شاهکار سلسله مینگ",
+    "تپه ببر - بتکده باستانی و تپه",
+    "خیابان شانتانگ - خیابان کلاسیک کانالی",
+    "ژوژوانگ - ونیز شهر آبی"
   ],
   "climate": {
-    "type": "Subtropical monsoon",
+    "type": "موسمی نیمه‌گرمسیری",
     "bestMonths": [
-      "April",
-      "May",
-      "September",
-      "October",
-      "November"
+      "آوریل",
+      "مه",
+      "سپتامبر",
+      "اکتبر",
+      "نوامبر"
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "5C (41F)",
-    "tips": "Best in spring (April-May) for garden flowers or autumn (Sept-Nov) for pleasant weather. Summer is hot and humid. Winter is cold but gardens are beautiful in snow. Plum blossoms in winter."
+    "tips": "بهترین زمان در بهار (آوریل-مه) برای گل‌های باغ یا پاییز (سپتامبر-نوامبر) برای هوای مطبوع. تابستان گرم و مرطوب است. زمستان سرد است اما باغ‌ها در برف زیبا هستند. شکوفه‌های آلو در زمستان."
   },
   "attractions": [
     {
@@ -45,7 +45,7 @@
         "lng": 120.6372
       },
       "openingHours": "۰۷:۳۰-۱۷:۳۰ (تابستان)، ۰۸:۰۰-۱۷:۰۰ (زمستان)",
-      "ticketPrice": "70¥ (peak), 50¥ (off-peak)",
+      "ticketPrice": "۷۰ یوان (فصل اوج)، ۵۰ یوان (غیر اوج)",
       "recommendedVisitTime": "2-3 ساعت",
       "highlights": [
         "باغ پیونی",
@@ -189,7 +189,7 @@
         "lng": 120.8472
       },
       "openingHours": "۰۸:۰۰-۱۶:۰۰ (تور شبانه موجود است)",
-      "ticketPrice": "100¥ (day), 80¥ (night)",
+      "ticketPrice": "۱۰۰ یوان (روز)، ۸۰ یوان (شب)",
       "recommendedVisitTime": "۳-۴ ساعت",
       "highlights": [
         "پل‌های دوقلو",
@@ -213,7 +213,7 @@
         "lng": 120.7172
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "100¥ (includes attractions)",
+      "ticketPrice": "۱۰۰ یوان (شامل جاذبه‌ها)",
       "recommendedVisitTime": "۳-۴ ساعت",
       "highlights": [
         "باغ تویسی",
@@ -254,7 +254,7 @@
       "image": "/img/ext/0df1b413372e.webp",
       "category": "cultural",
       "description": "معبد باستانی بودایی بر روی تپهای منظرهدار با باغهای زیبا.",
-      "address": "Lingyin Temple, Suzhou",
+      "address": "معبد لینگین، سوژو",
       "coordinates": {
         "lat": 31.3422,
         "lng": 120.5672
@@ -277,7 +277,7 @@
       "image": "/img/ext/2197d082103b.webp",
       "category": "cultural",
       "description": "باغ میراث جهانی یونسکو که به خاطر مقیاس صمیمی و طراحی ظریفش شناخته میشود.",
-      "address": "70 Wangshi Lane",
+      "address": "خیابان وانگشی، پلاک ۷۰",
       "coordinates": {
         "lat": 31.3022,
         "lng": 120.6472
@@ -299,7 +299,7 @@
       "image": "/img/ext/1670b85b2588.webp",
       "category": "cultural",
       "description": "باغ کنار رودخانه با ارتباطات امپراتوری و مناظر زیبا.",
-      "address": "Qianlong Emperor Garden",
+      "address": "باغ امپراتور چیانلونگ",
       "coordinates": {
         "lat": 31.3522,
         "lng": 120.5772
@@ -321,14 +321,14 @@
       "image": "/img/ext/e7b07db4941f.webp",
       "category": "cultural",
       "description": "روستای بهخوبی حفظشده از سلسله مینگ در کنار دریاچه دونگتینگ.",
-      "address": "Luxu Village, Suzhou",
+      "address": "روستای لوکسو، سوژو",
       "coordinates": {
         "lat": 31.1522,
         "lng": 120.5672
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "65¥",
-      "recommendedVisitTime": "3 hours",
+      "recommendedVisitTime": "۳ ساعت",
       "highlights": [
         "معماری باستانی",
         "منظره دریاچه"
@@ -343,7 +343,7 @@
       "image": "/img/ext/c74d7faf7bb9.webp",
       "category": "cultural",
       "description": "موزهای که اپرای کونکو، میراث ناملموس یونسکو را به نمایش میگذارد.",
-      "address": "Su Opera Museum",
+      "address": "موزه اپرای سو",
       "coordinates": {
         "lat": 31.3332,
         "lng": 120.6272
@@ -365,7 +365,7 @@
       "image": "/img/ext/9390fdd1db87.webp",
       "category": "historical",
       "description": "دروازه باستانی شهر و دروازه آبی از دودمان سونگ.",
-      "address": "18 Panmen Road",
+      "address": "جاده پانمن، پلاک ۱۸",
       "coordinates": {
         "lat": 31.2922,
         "lng": 120.6172
@@ -377,7 +377,7 @@
         "دیوار شهر",
         "دریاچه رویوان"
       ],
-      "tips": "Beautiful at sunset.",
+      "tips": "در غروب آفتاب زیباست.",
       "phone": "+86 051 2 1111 0061"
     },
     {
@@ -387,7 +387,7 @@
       "image": "/img/ext/88bacafe8f0a.webp",
       "category": "cultural",
       "description": "معبد تائوئیستی در قلب سوژو با بازار پرجنبوجوش.",
-      "address": "Xuanmiao Temple",
+      "address": "معبد شوانمیائو",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6472
@@ -409,7 +409,7 @@
       "image": "/img/ext/4ce1f2cca7ce.webp",
       "category": "cultural",
       "description": "معبد معروف دودمان تانگ که به خاطر شعر «لنگر انداختن در پل افرا» شناخته میشود.",
-      "address": "Hanshan Temple",
+      "address": "معبد هانشان",
       "coordinates": {
         "lat": 31.2822,
         "lng": 120.5772
@@ -431,7 +431,7 @@
       "image": "/img/ext/a1437454d0aa.webp",
       "category": "cultural",
       "description": "موزهای که تاریخ ۵۰۰۰ ساله ابریشم سوژو و تولید آن را به نمایش میگذارد.",
-      "address": "Suzhou Silk Museum",
+      "address": "موزه ابریشم سوژو",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6572
@@ -453,7 +453,7 @@
       "image": "/img/ext/715f62b712ce.webp",
       "category": "cultural",
       "description": "اولین موزه اختصاصی باغهای کلاسیک چینی در چین.",
-      "address": "Suzhou Garden Museum",
+      "address": "موزه باغ سوژو",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
@@ -475,7 +475,7 @@
       "image": "/img/ext/fe4ed812b34e.webp",
       "category": "cultural",
       "description": "مسیر منظره که باغهای کلاسیک اصلی سوژو را به هم متصل میکند.",
-      "address": "Old Town Suzhou",
+      "address": "شهر قدیمی سوژو",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -502,7 +502,7 @@
         "lng": 120.6323
       },
       "openingHours": "07:30-17:30",
-      "ticketPrice": "40元",
+      "ticketPrice": "۴۰ یوان",
       "recommendedVisitTime": "۱-۲ ساعت",
       "highlights": [
         "مجموعههای صخرهای سنگ تایهو",
@@ -526,7 +526,7 @@
         "lng": 120.6853
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۲ تا ۳ ساعت",
       "highlights": [
         "نمای پانورامیک از دریاچه جینجی",
@@ -550,7 +550,7 @@
         "lng": 120.6953
       },
       "openingHours": "باز در تمام طول روز",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۲ تا ۳ ساعت",
       "highlights": [
         "فواره موزیکال",
@@ -574,7 +574,7 @@
         "lng": 120.6253
       },
       "openingHours": "07:30-17:30",
-      "ticketPrice": "20元",
+      "ticketPrice": "۲۰ یوان",
       "recommendedVisitTime": "۱ تا ۱.۵ ساعت",
       "highlights": [
         "راهروهای دوتایی و پنجره‌های مشبک",
@@ -598,7 +598,7 @@
         "lng": 120.6383
       },
       "openingHours": "07:30-17:30",
-      "ticketPrice": "25元",
+      "ticketPrice": "۲۵ یوان",
       "recommendedVisitTime": "۱ ساعت",
       "highlights": [
         "باغ‌های دوقلوی شرقی و غربی",
@@ -622,7 +622,7 @@
         "lng": 120.6283
       },
       "openingHours": "۱۹:۳۰-۲۲:۰۰ (آوریل تا اکتبر)",
-      "ticketPrice": "100元",
+      "ticketPrice": "۱۰۰ یوان",
       "recommendedVisitTime": "۱.۵ ساعت",
       "highlights": [
         "تور شبانه باغ",
@@ -646,7 +646,7 @@
         "lng": 120.7253
       },
       "openingHours": "07:30-17:30",
-      "ticketPrice": "含在同里古镇联票100元内",
+      "ticketPrice": "شامل بلیط مشترک ۱۰۰ یوانی شهر باستانی تونگلی",
       "recommendedVisitTime": "۱ ساعت",
       "highlights": [
         "باغ مجاور آب",
@@ -670,7 +670,7 @@
         "lng": 120.6853
       },
       "openingHours": "باز در تمام روز",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۲-۳ ساعت",
       "highlights": [
         "معماری مدرن",
@@ -694,7 +694,7 @@
         "lng": 120.3953
       },
       "openingHours": "باز در تمام روز",
-      "ticketPrice": "50元",
+      "ticketPrice": "50 یوان",
       "recommendedVisitTime": "۲-۳ ساعت",
       "highlights": [
         "معماری باستانی سلسله‌های مینگ و چینگ",
@@ -718,7 +718,7 @@
         "lng": 120.5153
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "50元",
+      "ticketPrice": "50 یوان",
       "recommendedVisitTime": "۳-۴ ساعت",
       "highlights": [
         "لونگچی (استخر اژدها)",
@@ -742,7 +742,7 @@
         "lng": 120.6953
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱-۲ ساعت",
       "highlights": [
         "معماری به سبک اروپایی",
@@ -766,7 +766,7 @@
         "lng": 120.5053
       },
       "openingHours": "07:30-17:00",
-      "ticketPrice": "30元",
+      "ticketPrice": "۳۰ یوان",
       "recommendedVisitTime": "۳-۴ ساعت",
       "highlights": [
         "برگ‌های قرمز",
@@ -790,7 +790,7 @@
         "lng": 120.5153
       },
       "openingHours": "08:30-17:00",
-      "ticketPrice": "78元（联票）",
+      "ticketPrice": "۷۸ یوان (بلیط مشترک)",
       "recommendedVisitTime": "۳-۴ ساعت",
       "highlights": [
         "باغ یان",
@@ -814,7 +814,7 @@
         "lng": 120.5353
       },
       "openingHours": "09:00-17:30",
-      "ticketPrice": "160元",
+      "ticketPrice": "۱۶۰ یوان",
       "recommendedVisitTime": "۱ روز",
       "highlights": [
         "قطار هوایی",
@@ -838,7 +838,7 @@
         "lng": 120.6183
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "25元",
+      "ticketPrice": "۲۵ یوان",
       "recommendedVisitTime": "۱ ساعت",
       "highlights": [
         "بالا رفتن از برج برای نمای دور",
@@ -862,7 +862,7 @@
         "lng": 120.6753
       },
       "openingHours": "باز در تمام روز",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۲-۳ ساعت",
       "highlights": [
         "راهروی سرپوشیده",
@@ -886,7 +886,7 @@
         "lng": 120.5253
       },
       "openingHours": "باز در تمام روز",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱-۲ ساعت",
       "highlights": [
         "کانال بزرگ باستانی",
@@ -910,13 +910,13 @@
         "lng": 120.7353
       },
       "openingHours": "باز در تمام روز",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۳-۴ ساعت",
       "highlights": [
         "آرامگاه یانزی",
         "جیانمن",
         "ویلای کوه ویمو",
-        "نمای全景 دریاچه شانگهو"
+        "نمای کامل دریاچه شانگ‌هو"
       ],
       "tips": "میتوانید همراه با منطقه منظره دریاچه شانگهو بازدید کنید. برگهای قرمز پاییزی بسیار زیبا هستند.",
       "image": "/img/ext/e77c57e7fdf6.webp",
@@ -934,7 +934,7 @@
         "lng": 120.7153
       },
       "openingHours": "08:00-16:30",
-      "ticketPrice": "45元",
+      "ticketPrice": "۴۵ یوان",
       "recommendedVisitTime": "۳-۴ ساعت",
       "highlights": [
         "جشنواره گل صدتومانی",
@@ -951,14 +951,14 @@
       "name": "沙溪古镇",
       "nameEn": "شهر باستانی شاکسی",
       "category": "street",
-      "description": "شهر باستانی بهخوبی حفظشده در شهر تایکانگ با بیش از ۱۳۰۰ سال تاریخ. خیابانهای قدیمی در شهر بهخوبی حفظ شدهاند و ساختمانهای کنار آب، پلهای باستانی و معابد، نمایی典型的 از شهر آبی جیانگنان را تشکیل میدهند. تعداد گردشگران بسیار کم است و بسیار آرام است.",
+      "description": "شهر باستانی بهخوبی حفظشده در شهر تایکانگ با بیش از ۱۳۰۰ سال تاریخ. خیابانهای قدیمی در این شهر بهخوبی حفظ شدهاند و ساختمانهای کنار آب، پلهای باستانی و معابد، نمایی از یک شهر آبی معمولی جیانگنان را تشکیل میدهند. گردشگران بسیار کمی وجود دارند و این مکان بسیار آرام است.",
       "address": "شهرک شاشی، شهر تایکانگ، سوژو",
       "coordinates": {
         "lat": 31.5689,
         "lng": 121.0953
       },
       "openingHours": "تمام روز باز است",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۲-۳ ساعت",
       "highlights": [
         "خیابان قدیمی کنار آب",
@@ -982,7 +982,7 @@
         "lng": 120.5353
       },
       "openingHours": "07:30-17:00",
-      "ticketPrice": "40元",
+      "ticketPrice": "۴۰ یوان",
       "recommendedVisitTime": "۲-۳ ساعت",
       "highlights": [
         "باغ گل رز",
@@ -1006,7 +1006,7 @@
         "lng": 120.5353
       },
       "openingHours": "07:30-17:00",
-      "ticketPrice": "40元",
+      "ticketPrice": "۴۰ یوان",
       "recommendedVisitTime": "۳-۴ ساعت",
       "highlights": [
         "بتکده معبد لنگجیا",
@@ -1030,7 +1030,7 @@
         "lng": 120.6083
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱ ساعت",
       "highlights": [
         "نمایشگاه تکنیکهای دمآوری",
@@ -1054,7 +1054,7 @@
         "lng": 120.5453
       },
       "openingHours": "باز در تمام روز",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۱-۲ ساعت",
       "highlights": [
         "دریاچه شیشان",
@@ -1078,7 +1078,7 @@
         "lng": 120.8853
       },
       "openingHours": "باز در تمام روز",
-      "ticketPrice": "100元",
+      "ticketPrice": "۱۰۰ یوان",
       "recommendedVisitTime": "۱ روز",
       "highlights": [
         "راهروهای بارانی مه‌آلود",
@@ -1102,7 +1102,7 @@
         "lng": 120.4953
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "40元",
+      "ticketPrice": "۴۰ یوان",
       "recommendedVisitTime": "نیم روز تا ۱ روز",
       "highlights": [
         "معبد ونشو",
@@ -1126,7 +1126,7 @@
         "lng": 120.3953
       },
       "openingHours": "تمام روز باز است",
-      "ticketPrice": "免费",
+      "ticketPrice": "رایگان",
       "recommendedVisitTime": "۲-۳ ساعت",
       "highlights": [
         "غروب آفتاب بر فراز دریاچه تایهو",
@@ -1150,7 +1150,7 @@
         "lng": 120.7753
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "20元",
+      "ticketPrice": "۲۰ یوان",
       "recommendedVisitTime": "۱.۵-۲ ساعت",
       "highlights": [
         "آلاچیق گوانین آبی",
@@ -1174,7 +1174,7 @@
         "lng": 120.3753
       },
       "openingHours": "08:30-16:30",
-      "ticketPrice": "60元",
+      "ticketPrice": "۶۰ یوان",
       "recommendedVisitTime": "۲-۳ ساعت",
       "highlights": [
         "جنگل آبی",
@@ -1198,7 +1198,7 @@
         "lng": 120.6243
       },
       "openingHours": "07:30-17:30",
-      "ticketPrice": "25元",
+      "ticketPrice": "۲۵ یوان",
       "recommendedVisitTime": "۱ ساعت",
       "highlights": [
         "باغ به سبک آکادمی",
@@ -1231,8 +1231,8 @@
       "description": "رستوران افسانهای تأسیسشده در ۱۷۷۹ که غذاهای اصیل سوژو با بشقابهای کلاسیک سرو میکند.",
       "dishHighlights": [
         "سونگ شو (ماهی ماندارین به شکل سنجاب)",
-        "Wusong duck",
-        "Suzhou-style pork"
+        "اردک ووسونگ",
+        "گوشت خوک به سبک سوژو"
       ],
       "tags": [
         "تاریخی",
@@ -1261,7 +1261,7 @@
       "description": "رستوران تاریخی تأسیسشده در ۱۸۷۱، مشهور به غذاهای سنتی سوژو و نمایشهای آشپزی.",
       "dishHighlights": [
         "سونگ شو (ماهی ماندارین به شکل سنجاب)",
-        "Steamed shad",
+        "شاهماهی بخارپز",
         "غذاهای خرچنگ"
       ],
       "tags": [
@@ -1277,7 +1277,7 @@
       "name": "协和菜馆",
       "nameEn": "Xiehe Restaurant",
       "type": "محلی",
-      "cuisine": "Suzhou Home-style",
+      "cuisine": "سبک خانگی سوژو",
       "avgPrice": 80,
       "rating": 4.7,
       "address": "کوچهٔ شیائو شیانگ ۱۶۰، جادهٔ پینگجیانگ",
@@ -1291,7 +1291,7 @@
       "dishHighlights": [
         "ماهی ماندارین ترش و شیرین",
         "خوک شکمی آب‌پز",
-        "Wonton soup"
+        "سوپ وونتون"
       ],
       "tags": [
         "محلی",
@@ -1308,10 +1308,10 @@
       "name": "老苏州茶楼",
       "nameEn": "Old Suzhou Teahouse",
       "type": "محلی",
-      "cuisine": "Suzhou Snacks",
+      "cuisine": "تنقلات سوژو",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "Pingjiang Road",
+      "address": "خیابان پینگجیانگ",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -1319,14 +1319,14 @@
       "hours": "08:00-22:00",
       "description": "چایخانهٔ سنتی که صبحانههای اصیل سوژو و چای محلی را در فضایی کلاسیک سرو میکند.",
       "dishHighlights": [
-        "Suzhou-style dim sum",
-        "Wonton",
-        "Ginger tea",
-        "Green tea"
+        "دیمسام به سبک سوژو",
+        "وانتون",
+        "چای زنجبیل",
+        "چای سبز"
       ],
       "tags": [
         "محلی",
-        "teahouse",
+        "چای‌خانه",
         "صبحانه",
         "سنتی"
       ],
@@ -1340,10 +1340,10 @@
       "name": "同得兴",
       "nameEn": "Tong De Xing",
       "type": "محلی",
-      "cuisine": "Suzhou Noodles",
+      "cuisine": "نودل سوژو",
       "avgPrice": 40,
       "rating": 4.8,
-      "address": "72 Shantang Street",
+      "address": "خیابان شانتانگ، شماره ۷۲",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6072
@@ -1352,8 +1352,8 @@
       "description": "فروشگاه افسانهای نودل که نودلهای کلاسیک به سبک سوژو با مواد تازه سرو میکند.",
       "dishHighlights": [
         "نودل آبگوشت شفاف",
-        "Fried shrimp noodles",
-        "Pork liver noodles"
+        "نودل میگو سرخشده",
+        "نودل جگر خوک"
       ],
       "tags": [
         "محلی",
@@ -1371,7 +1371,7 @@
       "name": "绿杨馄饨",
       "nameEn": "Lv Yang Wonton",
       "type": "محلی",
-      "cuisine": "Suzhou Snacks",
+      "cuisine": "تنقلات سوژو",
       "avgPrice": 30,
       "rating": 4.6,
       "address": "چندین مکان",
@@ -1382,8 +1382,8 @@
       "hours": "06:00-19:00",
       "description": "مشهور به دامپلینگهای ظریف وانتون به سبک سوژو در آبگوشت سبک، یک نهاد محلی.",
       "dishHighlights": [
-        "Wonton soup",
-        "Fried wontons",
+        "سوپ وونتون",
+        "وانتون سرخشده",
         "بائوزی گوشت"
       ],
       "tags": [
@@ -1405,7 +1405,7 @@
       "cuisine": "غذای خیابانی",
       "avgPrice": 40,
       "rating": 4.4,
-      "address": "Pingjiang Road",
+      "address": "خیابان پینگجیانگ",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -1413,9 +1413,9 @@
       "hours": "10:00-22:00",
       "description": "غرفههای مختلف غذای خیابانی در امتداد جادهٔ تاریخی پینگجیانگ که تنقلات و خوراکیهای محلی سرو میکنند.",
       "dishHighlights": [
-        "Sugar-coated hawthorn",
+        "زالزالک شکری",
         "شیرینی‌های سنتی",
-        "Fried rice cakes"
+        "کیک برنجی سرخشده"
       ],
       "tags": [
         "محلی",
@@ -1433,10 +1433,10 @@
       "name": "悬慈巷蟹粉小笼",
       "nameEn": "Xuanci Lane Crab Soup Dumplings",
       "type": "محلی",
-      "cuisine": "Jiangnan Dim Sum",
+      "cuisine": "دیمسام جیانگنان",
       "avgPrice": 60,
       "rating": 4.7,
-      "address": "Near Shantang Street",
+      "address": "نزدیک خیابان شانتانگ",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6072
@@ -1444,9 +1444,9 @@
       "hours": "07:00-14:00",
       "description": "محل محبوب و معروف به شیائولونگبائو با تخمخرچنگ و دیم سام اصیل سوژو.",
       "dishHighlights": [
-        "Crab roe xiaolongbao",
+        "شیاولونگبائو با تخم خرچنگ",
         "کوفته میگو",
-        "Suzhou-style cakes"
+        "کیکهای سبک سوژو"
       ],
       "tags": [
         "محلی",
@@ -1467,7 +1467,7 @@
       "cuisine": "سوژو",
       "avgPrice": 150,
       "rating": 4.5,
-      "address": "Guanqian Street",
+      "address": "خیابان گوانچیان",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
@@ -1477,7 +1477,7 @@
       "description": "مشهور به غذاهای اصیل سوژو با منظره دره.",
       "dishHighlights": [
         "خوک شکمی آب‌پز",
-        "River fish"
+        "ماهی رودخانهای"
       ],
       "tags": [
         "محلی",
@@ -1492,10 +1492,10 @@
       "name": "水乡人家",
       "nameEn": "Water Town Restaurant",
       "type": "محلی",
-      "cuisine": "Jiangnan",
+      "cuisine": "جیانگ‌نان",
       "avgPrice": 100,
       "rating": 4.6,
-      "address": "Pingjiang Road",
+      "address": "خیابان پینگجیانگ",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -1524,7 +1524,7 @@
       "cuisine": "سوژو",
       "avgPrice": 200,
       "rating": 4.4,
-      "address": "Shantang Street",
+      "address": "خیابان شانتانگ",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6072
@@ -1534,7 +1534,7 @@
       "description": "رستوران تاریخی با فضای سنتی.",
       "dishHighlights": [
         "ماهی سنجاب",
-        "Bamboo shoot"
+        "جوانه بامبو"
       ],
       "tags": [
         "تاریخی",
@@ -1548,10 +1548,10 @@
       "name": "江南名厨",
       "nameEn": "Jiangnan Chef",
       "type": "محلی",
-      "cuisine": "Jiangnan",
+      "cuisine": "جیانگ‌نان",
       "avgPrice": 120,
       "rating": 4.7,
-      "address": "Guanqian Street",
+      "address": "خیابان گوانچیان",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
@@ -1560,12 +1560,12 @@
       "hours": "11:00-14:00, 17:00-21:00",
       "description": "نگاهی مدرن به غذاهای سنتی جیانگ‌نان.",
       "dishHighlights": [
-        "Crispy duck",
-        "Lotus leaf rice"
+        "اردک ترد",
+        "برنج با برگ نیلوفر"
       ],
       "tags": [
         "مدرن",
-        "jiangnan"
+        "جیانگ‌نان"
       ],
       "star": 0,
       "diamond": 0,
@@ -1576,10 +1576,10 @@
       "name": "太湖三白",
       "nameEn": "Taihu Delights",
       "type": "محلی",
-      "cuisine": "Taihu",
+      "cuisine": "تایهو",
       "avgPrice": 180,
       "rating": 4.5,
-      "address": "Lake Tai area",
+      "address": "منطقه دریاچه تایهو",
       "coordinates": {
         "lat": 31.2422,
         "lng": 120.4772
@@ -1588,7 +1588,7 @@
       "hours": "10:00-21:00",
       "description": "غذاهای دریایی تازه از دریاچه تای، از جمله میگوی سفید.",
       "dishHighlights": [
-        "Taihu white shrimp",
+        "میگوی سفید تایهو",
         "خرچنگ"
       ],
       "tags": [
@@ -1607,7 +1607,7 @@
       "cuisine": "سوژو",
       "avgPrice": 90,
       "rating": 4.3,
-      "address": "Xuanmiao Temple area",
+      "address": "منطقه معبد شوان‌میائو",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6472
@@ -1617,7 +1617,7 @@
       "description": "غذاهای سنتی سو در حیاط کلاسیک.",
       "dishHighlights": [
         "کوفته‌های بخارپز",
-        "Soy sauce pork"
+        "گوشت خوک با سس سویا"
       ],
       "tags": [
         "محلی",
@@ -1635,7 +1635,7 @@
       "cuisine": "گیاهخواری",
       "avgPrice": 60,
       "rating": 4.4,
-      "address": "Guanqian Street",
+      "address": "خیابان گوانچیان",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
@@ -1644,12 +1644,12 @@
       "hours": "10:30-20:30",
       "description": "غذای گیاهی بودایی در نزدیکی معبد.",
       "dishHighlights": [
-        "Vegetable roasts",
-        "Mock meat"
+        "سبزیجات کبابی",
+        "گوشت گیاهی"
       ],
       "tags": [
         "وگان",
-        "temple"
+        "معبد"
       ],
       "star": 0,
       "diamond": 0,
@@ -1663,7 +1663,7 @@
       "cuisine": "دسرها",
       "avgPrice": 30,
       "rating": 4.8,
-      "address": "Pingjiang Road",
+      "address": "خیابان پینگجیانگ",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -1671,7 +1671,7 @@
       "hours": "08:00-18:00",
       "description": "مشهور به فرنی شیرین و دسرهای سبک سوژو.",
       "dishHighlights": [
-        "Sweet red bean porridge",
+        "فرنی شیرین لوبیا قرمز",
         "کیک گل زیتون"
       ],
       "tags": [
@@ -1692,7 +1692,7 @@
       "cuisine": "هات پات",
       "avgPrice": 100,
       "rating": 4.2,
-      "address": "Shantang Street",
+      "address": "خیابان شانتانگ",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6072
@@ -1701,7 +1701,7 @@
       "hours": "11:00-22:00",
       "description": "هات‌پات گوشت بره به سبک شمالی، محبوب در میان محلی‌ها.",
       "dishHighlights": [
-        "Lamb slices",
+        "ورقه‌های گوشت بره",
         "بشقاب سبزیجات"
       ],
       "tags": [
@@ -1720,7 +1720,7 @@
       "cuisine": "سوژو",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "Guanqian Street",
+      "address": "خیابان گوانچیان",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
@@ -1745,10 +1745,10 @@
       "name": "太湖船菜",
       "nameEn": "Taihu Boat Restaurant",
       "type": "محلی",
-      "cuisine": "Taihu",
+      "cuisine": "تایهو",
       "avgPrice": 200,
       "rating": 4.5,
-      "address": "Lake Tai area",
+      "address": "منطقه دریاچه تایهو",
       "coordinates": {
         "lat": 31.2522,
         "lng": 120.4772
@@ -1788,10 +1788,10 @@
       "description": "چای‌خانه سنتی با منظره باغ.",
       "dishHighlights": [
         "چای دریای اژدها",
-        "Suzhou snacks"
+        "تنقلات سوژو"
       ],
       "tags": [
-        "teahouse",
+        "چای‌خانه",
         "سنتی"
       ],
       "star": 0,
@@ -1803,10 +1803,10 @@
       "name": "山塘街小笼",
       "nameEn": "Shantang Street Xiaolong",
       "type": "محلی",
-      "cuisine": "Dim Sum",
+      "cuisine": "دیم سام",
       "avgPrice": 40,
       "rating": 4.7,
-      "address": "Shantang Street",
+      "address": "خیابان شانتانگ",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6072
@@ -1832,10 +1832,10 @@
       "name": "桃花源记",
       "nameEn": "Peach Blossom Spring",
       "type": "محلی",
-      "cuisine": "Jiangnan",
+      "cuisine": "جیانگ‌نان",
       "avgPrice": 120,
       "rating": 4.5,
-      "address": "Pingjiang Road",
+      "address": "خیابان پینگجیانگ",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -1844,12 +1844,12 @@
       "hours": "11:00-14:00, 17:00-21:00",
       "description": "غذاهای لوکس جیانگ‌نان در فضایی شاعرانه.",
       "dishHighlights": [
-        "Bamboo shoots",
-        "River shrimps"
+        "جوانه بامبو",
+        "میگوی رودخانهای"
       ],
       "tags": [
         "بالغ بالا",
-        "poetic"
+        "شاعرانه"
       ],
       "star": 0,
       "diamond": 0,
@@ -1863,7 +1863,7 @@
       "cuisine": "گیاهخواری",
       "avgPrice": 35,
       "rating": 4.4,
-      "address": "Near Lion Grove Garden",
+      "address": "نزدیک باغ شیر گروم",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -1887,7 +1887,7 @@
     {
       "id": "suzhou-24",
       "name": "老苏州蟹黄汤包",
-      "nameEn": "老苏州蟹黄汤包 (蟹黄汤包)",
+      "nameEn": "سوپ‌مانتو گوشت خرچنگ به سبک سوژو (سوپ‌مانتو زرده خرچنگ)",
       "type": "محلی",
       "cuisine": "دامپلینگ سوپ با تخم‌خرچنگ",
       "avgPrice": 140,
@@ -1916,7 +1916,7 @@
     {
       "id": "suzhou-26",
       "name": "街边响油鳝糊",
-      "nameEn": "街边响油鳝糊 (响油鳝糊)",
+      "nameEn": "خمیر مارماهی سرخشده با سس غلیظ (شاریو یانهو)",
       "type": "خیابانی",
       "cuisine": "مارماهی در روغن داغ",
       "avgPrice": 52,
@@ -1945,7 +1945,7 @@
     {
       "id": "suzhou-28",
       "name": "传统松鼠桂鱼",
-      "nameEn": "传统松鼠桂鱼 (松鼠桂鱼)",
+      "nameEn": "ماهی سونگشو سنتی (ماهی سونگشو)",
       "type": "محلی",
       "cuisine": "ماهی ماندارین به شکل سنجاب",
       "avgPrice": 38,
@@ -1974,7 +1974,7 @@
     {
       "id": "suzhou-30",
       "name": "阿婆生煎",
-      "nameEn": "阿婆生煎 (生煎)",
+      "nameEn": "نان سرخ‌کرده آب‌پز مادربزرگ (نان سرخ‌کرده آب‌پز)",
       "type": "محلی",
       "cuisine": "نان سرخ‌کرده (شنگ‌جیان)",
       "avgPrice": 71,
@@ -2003,7 +2003,7 @@
     {
       "id": "suzhou-32",
       "name": "正宗苏式面",
-      "nameEn": "正宗苏式面 (苏式面)",
+      "nameEn": "نودل سوژو اصیل (نودل سوژو)",
       "type": "محلی",
       "cuisine": "نودل به سبک سوژو",
       "avgPrice": 93,
@@ -2032,7 +2032,7 @@
     {
       "id": "suzhou-34",
       "name": "苏州味响油鳝糊",
-      "nameEn": "苏州味响油鳝糊 (响油鳝糊)",
+      "nameEn": "طعم سوژو، خمیر مارماهی سرخشده با سس غلیظ (شاریو یانهو)",
       "type": "خیابانی",
       "cuisine": "مارماهی در روغن داغ",
       "avgPrice": 60,
@@ -2061,7 +2061,7 @@
     {
       "id": "suzhou-36",
       "name": "老街蟹黄汤包",
-      "nameEn": "老街蟹黄汤包 (蟹黄汤包)",
+      "nameEn": "سوپ دامپلینگ خاویار خرچنگ خیابان قدیمی (سوپ دامپلینگ خاویار خرچنگ)",
       "type": "محلی",
       "cuisine": "سوپ دامپلینگ با تخم خرچنگ",
       "avgPrice": 31,
@@ -2090,7 +2090,7 @@
     {
       "id": "suzhou-38",
       "name": "老街松鼠桂鱼",
-      "nameEn": "老街松鼠桂鱼 (松鼠桂鱼)",
+      "nameEn": "خیابان قدیمی، ماهی سونگشو (ماهی سونگشو)",
       "type": "محلی",
       "cuisine": "ماهی ماندارین به شکل سنجاب",
       "avgPrice": 139,
@@ -2119,7 +2119,7 @@
     {
       "id": "suzhou-40",
       "name": "地道苏式面",
-      "nameEn": "地道苏式面 (苏式面)",
+      "nameEn": "نودل سوژو محلی (نودل سوژو)",
       "type": "محلی",
       "cuisine": "نودل به سبک سوژو",
       "avgPrice": 125,
@@ -2148,7 +2148,7 @@
     {
       "id": "suzhou-42",
       "name": "阿婆蟹黄汤包",
-      "nameEn": "阿婆蟹黄汤包 (蟹黄汤包)",
+      "nameEn": "سوپ دامپلینگ خاویار خرچنگ مادربزرگ (سوپ دامپلینگ خاویار خرچنگ)",
       "type": "محلی",
       "cuisine": "دامپلینگ سوپ با تخم خرچنگ",
       "avgPrice": 81,
@@ -2177,7 +2177,7 @@
     {
       "id": "suzhou-44",
       "name": "地道松鼠桂鱼",
-      "nameEn": "地道松鼠桂鱼 (松鼠桂鱼)",
+      "nameEn": "ماهی سنجاب اصیل (ماهی سنجاب)",
       "type": "محلی",
       "cuisine": "ماهی ماندارین به شکل سنجاب",
       "avgPrice": 136,
@@ -2206,7 +2206,7 @@
     {
       "id": "suzhou-46",
       "name": "苏州味响油鳝糊",
-      "nameEn": "苏州味响油鳝糊 (响油鳝糊)",
+      "nameEn": "طعم سوژو، خمیر مارماهی سرخشده با سس غلیظ (شاریو یانهو)",
       "type": "خیابانی",
       "cuisine": "مارماهی در روغن داغ",
       "avgPrice": 39,
@@ -2235,7 +2235,7 @@
     {
       "id": "suzhou-48",
       "name": "苏州味松鼠桂鱼",
-      "nameEn": "苏州味松鼠桂鱼 (松鼠桂鱼)",
+      "nameEn": "ماهی سنجاب به سبک سوژو (ماهی سنجاب)",
       "type": "محلی",
       "cuisine": "ماهی ماندارین به شکل سنجاب",
       "avgPrice": 79,
@@ -2264,7 +2264,7 @@
     {
       "id": "suzhou-50",
       "name": "地道苏式面",
-      "nameEn": "地道苏式面 (苏式面)",
+      "nameEn": "نودل سوژو محلی (نودل سوژو)",
       "type": "محلی",
       "cuisine": "نودل به سبک سوژو",
       "avgPrice": 81,
@@ -2293,7 +2293,7 @@
     {
       "id": "suzhou-52",
       "name": "巷子苏式面",
-      "nameEn": "巷子苏式面 (苏式面)",
+      "nameEn": "نودل سبک سوژو در کوچه (نودل سبک سوژو)",
       "type": "خیابانی",
       "cuisine": "نودل به سبک سوژو",
       "avgPrice": 39,
@@ -2322,7 +2322,7 @@
     {
       "id": "suzhou-54",
       "name": "传统生煎",
-      "nameEn": "传统生煎 (生煎)",
+      "nameEn": "نان سرخ‌شده سنتی (نان سرخ‌شده)",
       "type": "محلی",
       "cuisine": "نان سرخ‌کرده (شنگ‌جیان)",
       "avgPrice": 74,
@@ -2351,7 +2351,7 @@
     {
       "id": "suzhou-56",
       "name": "老字号苏式面",
-      "nameEn": "老字号苏式面 (苏式面)",
+      "nameEn": "نودل سبک سوژو از برند قدیمی (نودل سبک سوژو)",
       "type": "محلی",
       "cuisine": "نودل به سبک سوژو",
       "avgPrice": 134,
@@ -2380,7 +2380,7 @@
     {
       "id": "suzhou-58",
       "name": "老字号蟹黄汤包",
-      "nameEn": "老字号蟹黄汤包 (蟹黄汤包)",
+      "nameEn": "سوپ کوفته خرچنگ از فروشگاه قدیمی (سوپ کوفته خرچنگ)",
       "type": "خیابانی",
       "cuisine": "دامپلینگ سوپ خرچنگ",
       "avgPrice": 36,
@@ -2409,7 +2409,7 @@
     {
       "id": "suzhou-60",
       "name": "街边蟹黄汤包",
-      "nameEn": "街边蟹黄汤包 (蟹黄汤包)",
+      "nameEn": "سوپ کوفته خرچنگ در گوشه خیابان (سوپ کوفته خرچنگ)",
       "type": "محلی",
       "cuisine": "سوپ دامپلینگ با خاویار خرچنگ",
       "avgPrice": 104,
@@ -2438,7 +2438,7 @@
     {
       "id": "suzhou-62",
       "name": "苏州味苏式面",
-      "nameEn": "苏州味苏式面 (苏式面)",
+      "nameEn": "نودل سبک سوژو (نودل سبک سوژو)",
       "type": "محلی",
       "cuisine": "نودل به سبک سوژو",
       "avgPrice": 34,
@@ -2467,7 +2467,7 @@
     {
       "id": "suzhou-64",
       "name": "苏州味蟹黄汤包",
-      "nameEn": "苏州味蟹黄汤包 (蟹黄汤包)",
+      "nameEn": "سوپ کوفته خرچنگ به سبک سوژو (سوپ کوفته خرچنگ)",
       "type": "محلی",
       "cuisine": "دامپلینگ سوپ خرچنگ",
       "avgPrice": 38,
@@ -2496,7 +2496,7 @@
     {
       "id": "suzhou-66",
       "name": "老字号松鼠桂鱼",
-      "nameEn": "老字号松鼠桂鱼 (松鼠桂鱼)",
+      "nameEn": "ماهی سنجاب به سبک سنتی (ماهی سنجاب)",
       "type": "محلی",
       "cuisine": "ماهی ماندارین به شکل سنجاب",
       "avgPrice": 89,
@@ -2525,7 +2525,7 @@
     {
       "id": "suzhou-68",
       "name": "巷子松鼠桂鱼",
-      "nameEn": "巷子松鼠桂鱼 (松鼠桂鱼)",
+      "nameEn": "ماهی سنجاب در کوچه (ماهی سنجاب)",
       "type": "کافه",
       "cuisine": "ماهی ماندارین به شکل سنجاب",
       "avgPrice": 60,
@@ -2554,7 +2554,7 @@
     {
       "id": "suzhou-70",
       "name": "阿婆松鼠桂鱼",
-      "nameEn": "阿婆松鼠桂鱼 (松鼠桂鱼)",
+      "nameEn": "ماهی سنجاب مادربزرگ (ماهی سنجاب)",
       "type": "محلی",
       "cuisine": "ماهی ماندارین به شکل سنجاب",
       "avgPrice": 95,
@@ -2583,7 +2583,7 @@
     {
       "id": "suzhou-72",
       "name": "地道松鼠桂鱼",
-      "nameEn": "地道松鼠桂鱼 (松鼠桂鱼)",
+      "nameEn": "ماهی سنجاب اصیل (ماهی سنجاب)",
       "type": "محلی",
       "cuisine": "ماهی ماندارین به شکل سنجاب",
       "avgPrice": 71,
@@ -2612,7 +2612,7 @@
     {
       "id": "suzhou-74",
       "name": "传统苏式面",
-      "nameEn": "传统苏式面 (苏式面)",
+      "nameEn": "نودل سنتی به سبک سوژو (نودل سبک سوژو)",
       "type": "خیابانی",
       "cuisine": "نودل به سبک سوژو",
       "avgPrice": 40,
@@ -2641,7 +2641,7 @@
     {
       "id": "suzhou-76",
       "name": "苏州味生煎",
-      "nameEn": "苏州味生煎 (生煎)",
+      "nameEn": "نان سرخ‌شده به سبک سوژو (نان سرخ‌شده)",
       "type": "محلی",
       "cuisine": "نان سرخ‌کرده (شنگ‌جیان)",
       "avgPrice": 46,
@@ -2682,8 +2682,8 @@
       {
         "type": "bus",
         "from": "شانگهای (۱.۵ ساعت)، هانگژو (۲ ساعت)",
-        "to": "Suzhou Bus Station",
-        "duration": "1.5-2 hours",
+        "to": "ایستگاه اتوبوس سوژو",
+        "duration": "۱.۵ تا ۲ ساعت",
         "price": "50-80¥",
         "frequency": "اتوبوس‌های مکرر از شهرهای بزرگ",
         "tips": "اتوبوس‌های از هونگکیائو و پوما شانگهای راحت هستند. ایستگاه اتوبوس نزدیک شهر قدیمی است."
@@ -2691,13 +2691,13 @@
     ],
     "local": {
       "metro": [
-        "5 lines operational",
+        "۵ خط فعال",
         "Single ride: 2-8¥",
         "خط ۱ و ۲ برای مناطق گردشگری",
         "به ایستگاه‌های راه‌آهن متصل می‌شود"
       ],
       "bus": [
-        "Extensive city network",
+        "شبکه گسترده شهری",
         "Single ride: 2¥",
         "مناطق توریستی به خوبی پوشش داده میشوند",
         "گوگل مپ برای ناوبری کار میکند"
@@ -2710,9 +2710,9 @@
       ],
       "boat": [
         "Shantang Street boat: 50-120¥",
-        "Canal tours available",
-        "Pingjiang Road boat rides",
-        "Good way to see water towns"
+        "تورهای کانال موجود است",
+        "قایق‌سواری در جاده پینگ‌جیانگ",
+        "راه خوبی برای دیدن شهرهای آبی"
       ],
       "bike": [
         "دوچرخههای اشتراکی به طور گسترده در دسترس هستند",
@@ -2727,7 +2727,7 @@
       "nameEn": "Suzhou Old City Wall Hotel",
       "budget": "luxury",
       "priceRange": "¥800-2000/night",
-      "address": "88 Pingjiang Road",
+      "address": "جاده پینگ‌جیانگ ۸۸",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -2739,14 +2739,14 @@
         "موقعیت مرکزی",
         "نمای باغ"
       ],
-      "bookingTips": "Book well ahead. Request canal view room."
+      "bookingTips": "از قبل خوب رزرو کنید. اتاق با نمای کانال درخواست دهید."
     },
     {
       "name": "هتل شانگری-لا سوژو",
       "nameEn": "Shangri-La Hotel Suzhou",
       "budget": "luxury",
       "priceRange": "¥1200-2500/night",
-      "address": "168 Tao River Road",
+      "address": "جاده رودخانه تائو ۱۶۸",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6172
@@ -2758,14 +2758,14 @@
         "رستوران‌های متعدد",
         "امکانات لوکس"
       ],
-      "bookingTips": "Best location for first-time visitors. Check weekend rates."
+      "bookingTips": "بهترین موقعیت برای بازدیدکنندگان بار اول. نرخ‌های آخر هفته را بررسی کنید."
     },
     {
       "name": "هتل نانیوان سوژو",
       "nameEn": "Suzhou Nan Yuan Hotel",
       "budget": "mid",
       "priceRange": "¥500-1200/night",
-      "address": "343 Xiangmen Road",
+      "address": "خیابان شیانگمن، پلاک ۳۴۳",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6272
@@ -2777,14 +2777,14 @@
         "فضای سنتی",
         "ارزش خوب"
       ],
-      "bookingTips": "Former residence of Chiang Kai-shek. Book garden view rooms."
+      "bookingTips": "محل اقامت سابق چیانگ کای شک. اتاق‌های با چشم‌انداز باغ رزرو کنید."
     },
     {
       "name": "هتل پینگ‌جیانگ‌فو",
       "nameEn": "Pingjiang Fu Hotel",
       "budget": "luxury",
       "priceRange": "¥1000-2500/night",
-      "address": "77 Pingjiang Road",
+      "address": "جاده پینگ‌جیانگ، پلاک ۷۷",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -2796,14 +2796,14 @@
         "حیاط سنتی",
         "موقعیت عالی"
       ],
-      "bookingTips": "Renovated historical building. Best for romantic getaways."
+      "bookingTips": "ساختمان تاریخی بازسازی‌شده. بهترین انتخاب برای سفرهای عاشقانه."
     },
     {
       "name": "هتل گوان‌جیان‌جی",
       "nameEn": "Guanqian Street Hotel",
       "budget": "budget",
       "priceRange": "¥200-500/night",
-      "address": "Guanqian Street area",
+      "address": "منطقه خیابان گوان‌چیان",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -2815,14 +2815,14 @@
         "مقرون به صرفه",
         "مرکزی"
       ],
-      "bookingTips": "Great for shoppers. Many chain hotels available."
+      "bookingTips": "عالی برای خریداران. هتل‌های زنجیره‌ای زیادی در دسترس است."
     },
     {
       "name": "هتل W سوژو",
       "nameEn": "W Suzhou",
       "budget": "luxury",
       "priceRange": "¥1500-3500/night",
-      "address": "Suzhou Center",
+      "address": "مرکز سوجو",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
@@ -2833,14 +2833,14 @@
         "بار پشتبام",
         "اسپا"
       ],
-      "bookingTips": "Best views of city."
+      "bookingTips": "بهترین چشم‌اندازهای شهر."
     },
     {
       "name": "هتل هیلتون سوژو",
       "nameEn": "Hilton Suzhou",
       "budget": "luxury",
       "priceRange": "¥1000-2000/night",
-      "address": "Suzhou Industrial Park",
+      "address": "پارک صنعتی سوژو",
       "coordinates": {
         "lat": 31.3422,
         "lng": 120.6772
@@ -2851,14 +2851,14 @@
         "استخر",
         "رستورانهای متعدد"
       ],
-      "bookingTips": "Good for business travelers."
+      "bookingTips": "مناسب برای مسافران تجاری."
     },
     {
       "name": "هتل Hyatt سوژو",
       "nameEn": "Hyatt Regency Suzhou",
       "budget": "luxury",
       "priceRange": "¥1200-2500/night",
-      "address": "Suzhou Center",
+      "address": "مرکز سوجو",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6472
@@ -2868,14 +2868,14 @@
         "موقعیت مرکزی",
         "امکانات لوکس"
       ],
-      "bookingTips": "Book canal view."
+      "bookingTips": "نمای کانال را رزرو کنید."
     },
     {
       "name": "هتل فورپوینتس شراتون سوژو",
       "nameEn": "Four Points Suzhou",
       "budget": "mid",
       "priceRange": "¥600-1200/night",
-      "address": "Guanqian Area",
+      "address": "منطقه گوانچیان",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6372
@@ -2886,14 +2886,14 @@
         "راحت",
         "ارزش"
       ],
-      "bookingTips": "Good location for sightseeing."
+      "bookingTips": "موقعیت عالی برای بازدید از دیدنی‌ها."
     },
     {
       "name": "سوژو کورتیارد",
       "nameEn": "Courtyard Suzhou",
       "budget": "mid",
       "priceRange": "¥500-1000/night",
-      "address": "Near Jinji Lake",
+      "address": "نزدیک دریاچه جینجی",
       "coordinates": {
         "lat": 31.3522,
         "lng": 120.6972
@@ -2904,14 +2904,14 @@
         "مدرن",
         "ارزش"
       ],
-      "bookingTips": "Great for lakeside walks."
+      "bookingTips": "عالی برای پیاده‌روی کنار دریاچه."
     },
     {
       "name": "هتل آتود سوژو",
       "nameEn": "Atour Suzhou",
       "budget": "mid",
       "priceRange": "¥400-800/night",
-      "address": "Multiple locations",
+      "address": "مکان‌های متعدد",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
@@ -2922,14 +2922,14 @@
         "اتاق مطالعه",
         "سبک چینی"
       ],
-      "bookingTips": "Book themed rooms."
+      "bookingTips": "اتاق‌های با تم رزرو کنید."
     },
     {
       "name": "روجیا سوژو",
       "nameEn": "Home Inn Suzhou",
       "budget": "budget",
       "priceRange": "¥150-300/night",
-      "address": "Multiple locations",
+      "address": "مکان‌های متعدد",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6372
@@ -2940,14 +2940,14 @@
         "یکنواخت",
         "مرکزی"
       ],
-      "bookingTips": "Budget travelers."
+      "bookingTips": "مسافران با بودجه محدود."
     },
     {
       "name": "هتل هانتینگ سوژو",
       "nameEn": "Hanting Suzhou",
       "budget": "budget",
       "priceRange": "¥120-250/night",
-      "address": "Multiple locations",
+      "address": "مکان‌های متعدد",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -2958,14 +2958,14 @@
         "تمیز",
         "دسترسی به مترو"
       ],
-      "bookingTips": "Check location before booking."
+      "bookingTips": "قبل از رزرو، موقعیت را بررسی کنید."
     },
     {
       "name": "هتل کریستال پرتقال سوژو",
       "nameEn": "Crystal Orange Suzhou",
       "budget": "budget",
       "priceRange": "¥200-400/night",
-      "address": "Near Guanqian",
+      "address": "نزدیک گوانچیان",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
@@ -2976,14 +2976,14 @@
         "دوش خوب",
         "ارزش خرید"
       ],
-      "bookingTips": "Design-conscious budget."
+      "bookingTips": "بودجه با توجه به طراحی."
     },
     {
       "name": "اقامتگاه پینگجیانگلو",
       "nameEn": "Pingjiang Lane Homestay",
       "budget": "mid",
       "priceRange": "¥300-600/night",
-      "address": "Pingjiang Road",
+      "address": "خیابان پینگجیانگ",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -2994,33 +2994,33 @@
         "سنتی",
         "مرکزی"
       ],
-      "bookingTips": "Book well ahead for best rooms."
+      "bookingTips": "برای بهترین اتاق‌ها خیلی زود رزرو کنید."
     }
   ],
   "payment": [
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Universal in Suzhou",
+      "description": "یونیورسال در سوژو",
       "howToUse": [
-        "Download before arrival",
-        "Link card or account"
+        "دانلود قبل از arrival",
+        "کارت یا حساب را پیوند دهید"
       ],
       "tips": [
         "در همه رستوران‌ها و فروشگاه‌ها کار می‌کند",
-        "English available"
+        "انگلیسی در دسترس است"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Accepted everywhere",
+      "description": "در همه جا پذیرفته می‌شود",
       "howToUse": [
-        "WeChat required",
-        "International cards work"
+        "وی‌چت الزامی است",
+        "کارت‌های بین‌المللی کار می‌کنند"
       ],
       "tips": [
-        "Set to English",
+        "به انگلیسی تنظیم کنید",
         "برای فروشندگان کوچک الزامی است"
       ]
     },
@@ -3030,10 +3030,10 @@
       "description": "در بازارهای سنتی مفید است",
       "howToUse": [
         "ATM به طور گسترده در دسترس است",
-        "Banks in city"
+        "بانک‌ها در شهر"
       ],
       "tips": [
-        "Keep 200¥ for markets",
+        "برای بازارها ۲۰۰ یوان همراه داشته باشید.",
         "بیشتر رستوران‌ها کارت قبول می‌کنند"
       ]
     }
@@ -3041,104 +3041,104 @@
   "culturalTips": [
     {
       "category": "gardens",
-      "title": "Garden Etiquette",
-      "content": "Suzhou's classical gardens are UNESCO sites. Walk quietly, don't touch plants. Morning visits offer best photos and fewer crowds. Each garden tells a philosophical story.",
+      "title": "آداب باغ‌ها",
+      "content": "باغ‌های کلاسیک سوژو جزو میراث جهانی یونسکو هستند. آرام قدم بزنید و به گیاهان دست نزنید. بازدید صبحگاهی بهترین عکس‌ها و جمعیت کمتر را فراهم می‌کند. هر باغ داستانی فلسفی روایت می‌کند.",
       "importance": "high"
     },
     {
       "category": "silk",
-      "title": "Silk Culture",
+      "title": "فرهنگ ابریشم",
       "content": "سوجو به تولید ابریشم معروف است. بازدید از کارخانه ابریشم برای دیدن نمایش بافتن. ابریشم واقعی هزینه بیشتری دارد - در بازارها قیمت را پایین بیاورید. کار سوزن دوزی یکی دیگر از صنایع دستی معروف است.",
       "importance": "medium"
     },
     {
       "category": "food",
-      "title": "Suzhou Cuisine",
+      "title": "غذاهای سوژو",
       "content": "غذای سوجو سبکتر و شیرینتر از شانگهای است. باید امتحان کنید: سونگ شو (ماهی مندرین به شکل سنجاب)، اردک وو سونگ و غذاهای خرچنگ در فصل. صبحانه را در چایخانههای سنتی بخورید.",
       "importance": "high"
     },
     {
       "category": "water-towns",
-      "title": "Water Town Visits",
+      "title": "بازدید از شهرهای آبی",
       "content": "ژوژوانگ و تونگلی آبگیرهای اصلی هستند. ژوژوانگ معروفتر است اما شلوغ است. تونگلی آرامتر است. صبح زود بروید. ترکیب دو مکان در یک روز عجلهآمیز است.",
       "importance": "medium"
     },
     {
       "category": "etiquette",
-      "title": "Greeting Etiquette",
+      "title": "آداب احوالپرسی",
       "content": "با دستهای فشرده به هم که کمی خم شدهاند به عنوان احترام گرفتن، سنتی است. دست دادن نیز قابل قبول است. افراد را با عنوان و نام خانوادگی خطاب کنید.",
       "importance": "medium"
     },
     {
       "category": "dining",
-      "title": "Dining Customs",
+      "title": "رسوم غذاخوری",
       "content": "منتظر میزبان برای شروع غذا خوردن باشید. مقداری غذا روی بشقاب باقی بگذارید تا نشان دهید سیر هستید. ضربه زدن به چوب های غذاخوری به عنوان بی ادبی تلقی می شود.",
       "importance": "high"
     },
     {
       "category": "dress",
-      "title": "Dress Code",
+      "title": "کد پوشش",
       "content": "برای رستوران ها لباس کمی رسمی و راحت بپوشید. هنگام ورود به خانه ها و برخی از ساختمان های سنتی، کفش های خود را در بیاورید. در معابد شانه های خود را بپوشانید.",
       "importance": "low"
     },
     {
       "category": "bargaining",
-      "title": "Shopping and Bargaining",
+      "title": "خرید و چانه زدن",
       "content": "در بازارها انتظار می رود که قیمت را پایین بیاورید. شروع کنید با 30-40 درصد قیمت درخواستی. دوستانه اما مصمم باشید. اکثر فروشگاه های با قیمت ثابت قیمت های معقولی دارند.",
       "importance": "medium"
     },
     {
       "category": "language",
       "title": "نکات زبانی",
-      "content": "ماندارین زبان رسمی است. لهجه سوزوو نرم و موزون است. اصطلاحات پایه را بیاموزید: 你好 (سلام)، 谢谢 (متشکرم)، 请问 (ببخشید).",
+      "content": "زبان ماندارین زبان رسمی است. گویش سوژو ملایم و آهنگین است. عبارات پایه را یاد بگیرید: «نی‌هاو» (سلام)، «شیه‌شیه» (متشکرم)، «چینگ‌ون» (ببخشید).",
       "importance": "medium"
     },
     {
       "category": "transport",
-      "title": "Getting Around",
+      "title": "حمل‌ونقل در شهر",
       "content": "شهر سوجو دوچرخه پسند است و دارای زمینهای مسطح میباشد. متروی آن کارآمد است. دیدی به خوبی کار میکند. پیادهروی در شهر قدیمی، گنجینههای مخفی را آشکار میسازد.",
       "importance": "low"
     },
     {
       "category": "photography",
-      "title": "Photography Ethics",
+      "title": "اخلاقیات عکاسی",
       "content": "قبل از عکسبرداری از افراد، از آنها اجازه بگیرید. برخی از معابد عکسبرداری داخلی را ممنوع کردهاند. فلش ممکن است به آثار باستانی آسیب برساند.",
       "importance": "low"
     },
     {
       "category": "silk",
-      "title": "Silk Shopping Guide",
+      "title": "راهنمای خرید ابریشم",
       "content": "ابریشم واقعی قیمت بالاتری دارد. برای گواهی نامه بررسی کنید. پارچه ابریشم به متری فروخته میشود. در بازارها قیمت را پایین بیاورید اما در فروشگاههای برنددار این کار را نکنید.",
       "importance": "medium"
     },
     {
       "category": "garden",
-      "title": "Garden Visitation",
-      "content": "Arrive early (7:30-8:00) to avoid tour groups. Humble Administrator and Lingering are most famous. Garden pass saves money.",
+      "title": "بازدید از باغ‌ها",
+      "content": "زودتر برسید (۷:۳۰ تا ۸:۰۰) تا از گروه‌های تور جلوگیری کنید. باغ باغبان فروتن و باغ ماندگار معروف‌ترین هستند. گذرنامه باغ باعث صرفه‌جویی در هزینه می‌شود.",
       "importance": "medium"
     },
     {
       "category": "seasonal",
-      "title": "Best Seasons",
-      "content": "Spring (April-May) for flowers and pleasant weather. Autumn (Sept-Nov) for chrysanthemums and cool evenings. Summer is hot and humid.",
+      "title": "بهترین فصل‌ها",
+      "content": "بهار (آوریل-مه) برای گل‌ها و هوای مطبوع. پاییز (سپتامبر-نوامبر) برای گل‌های داوودی و شب‌های خنک. تابستان گرم و مرطوب است.",
       "importance": "low"
     },
     {
       "category": "tea",
       "title": "فرهنگ چای",
-      "content": "Suzhou is famous for Biluochun tea. Visit tea houses for authentic experience. Best tea shops are near the gardens.",
+      "content": "سوژو به خاطر چای بیلوچون معروف است. برای تجربه اصیل از چای‌خانه‌ها دیدن کنید. بهترین فروشگاه‌های چای نزدیک باغ‌ها هستند.",
       "importance": "medium"
     },
     {
       "category": "arts",
-      "title": "Kunqu Opera",
-      "content": "Kunqu opera is Suzhou most famous performing art. Watch a performance at the Kunqu Museum or in gardens at night.",
+      "title": "اپرای کونکو",
+      "content": "اپرای کونکو مشهورترین هنر نمایشی سوژو است. تماشای یک اجرا در موزه کونکو یا در باغ‌ها در شب.",
       "importance": "low"
     },
     {
       "category": "water",
-      "title": "Water Town Etiquette",
-      "content": "When visiting water towns like Zhouzhuang, be respectful of local residents. Do not block doorways or photograph interiors without permission.",
+      "title": "آداب معاشرت در شهرهای آبی",
+      "content": "هنگام بازدید از شهرهای آبی مانند ژوژوانگ، به ساکنان محلی احترام بگذارید. جلوی درها را مسدود نکنید و بدون اجازه از داخل خانه‌ها عکس نگیرید.",
       "importance": "low"
     }
   ],

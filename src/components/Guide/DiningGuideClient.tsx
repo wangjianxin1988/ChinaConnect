@@ -23,12 +23,12 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
 
   const tabs = [
-    { id: "dishes", label: tg.tabDishes || "Popular Dishes", icon: "??" },
-    { id: "budget", label: tg.tabBudget || "Budget Guide", icon: "??" },
-    { id: "etiquette", label: tg.tabEtiquette || "Etiquette", icon: "??" },
-    { id: "phrases", label: tg.tabPhrases || "Phrases", icon: "??" },
-    { id: "allergies", label: tg.tabAllergies || "Allergies", icon: "??" },
-    { id: "categories", label: tg.tabCategories || "Categories", icon: "???" }
+    { id: "dishes", label: tg.tabDishes || "Popular Dishes", icon: "🍜" },
+    { id: "budget", label: tg.tabBudget || "Budget Guide", icon: "💰" },
+    { id: "etiquette", label: tg.tabEtiquette || "Etiquette", icon: "🥢" },
+    { id: "phrases", label: tg.tabPhrases || "Phrases", icon: "💬" },
+    { id: "allergies", label: tg.tabAllergies || "Allergies", icon: "⚠️" },
+    { id: "categories", label: tg.tabCategories || "Categories", icon: "🍽️" }
   ];
 
   return (
