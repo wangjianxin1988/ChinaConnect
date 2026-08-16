@@ -20,7 +20,13 @@ GUIDE_LANGS = ["zh-CN", "zh-TW", "th", "vi", "ru", "fr", "de", "ar", "fa"]  # ko
 APPS_LANGS = ["ko", "zh-CN", "zh-TW", "th", "vi", "ru", "fr", "de", "ar", "fa"]
 MAX_TOTAL = 3
 MAX_FAILURES = 3
-GUIDE_STRINGS = 4891
+def current_guide_count():
+    try:
+        import json as _json
+        d = _json.load(open(".audit/guide-strings.json", encoding="utf-8"))
+        return len(d.get("strings", []))
+    except Exception:
+        return 8773
 
 def log(msg):
     line = f"[{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {msg}"
@@ -76,11 +82,20 @@ def launch(kind, lang):
 
 def is_done(kind, lang):
     if kind == "guide":
-        return guide_file_complete(lang) >= GUIDE_STRINGS
+        return guide_file_complete(lang) >= current_guide_count()
     return apps_file_complete(lang) >= 30
 
 def build_queue():
     return [("guide", l) for l in GUIDE_LANGS] + [("apps", l) for l in APPS_LANGS]
+
+def data_inflight_from_auto_chain():
+    # City-data langs still owned by auto-translate-chain (may be between relaunches).
+    try:
+        import json as _json
+        st = _json.load(open(".audit/auto-chain-state.json", encoding="utf-8"))
+        return len([l for l in st.get("inflight", []) if l not in st.get("done", [])])
+    except Exception:
+        return 0
 
 def save_state(state):
     with open(STATE_PATH, "w", encoding="utf-8") as f:
@@ -97,7 +112,7 @@ def main():
     failures = {}
     while True:
         running = running_tasks()
-        data_active = len([t for t in running if t[0] == "data"])
+        data_active = len([t for t in running if t[0] == "data"]) + data_inflight_from_auto_chain()
         tracked = {(k, l) for k, l in running if k in ("guide", "apps")}
         inflight |= tracked
         # Finalize tracked tasks no longer running
@@ -120,7 +135,7 @@ def main():
         # Fill up to MAX_TOTAL total translation processes (including city-data)
         running = running_tasks()
         tracked = {(k, l) for k, l in running if k in ("guide", "apps")}
-        data_active = len([t for t in running if t[0] == "data"])
+        data_active = len([t for t in running if t[0] == "data"]) + data_inflight_from_auto_chain()
         inflight |= tracked
         active = len(inflight - done) + data_active
         while active < MAX_TOTAL and pending:

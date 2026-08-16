@@ -83,9 +83,9 @@ export function CulturalWarningPopup({
 
         {/* Content */}
         <div className="p-4">
-          <h3 className="font-bold text-lg mb-1">{currentWarning.title}</h3>
+          <h3 className="font-bold text-lg mb-1">{localized(currentWarning.title, currentWarning.titleCn, lang)}</h3>
           <p className="text-sm opacity-80 mb-2">{jaText(currentWarning.titleCn, lang)}</p>
-          <p className="text-sm">{currentWarning.description}</p>
+          <p className="text-sm">{localized(currentWarning.description, currentWarning.descriptionCn, lang)}</p>
           <p className="text-sm opacity-70 mt-1">{jaText(currentWarning.descriptionCn, lang)}</p>
         </div>
 

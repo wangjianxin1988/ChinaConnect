@@ -894,3 +894,31 @@ for lang in LANGS:
 - **运行中（勿中断）**：th、vi、ru 三路 DeepSeek 翻译。完成后自动接力 fr/de/ar/fa。
 - **已知顽固字段模式**：`consulate` 等 SENSITIVE_TERMS 词被 mask 后模型原样返回 → isTranslated 拒绝 → 反复重试不写；中文地址翻译成韩语时模型直接给中文。已手工修 ko 3 处，后续语言若遇同类残留需按此模式处理（verify 残留 → 手工翻译写入）。
 - **下个会话**：Phase 2 收尾（th→fr、vi→de、ar/fa）→ Phase 3（guide 10 语言 override + guide-i18n.tsx 接线）→ Phase 4（apps/emergency override + offline.astro + locales）→ Phase 5（每语言 432 URL 扫描）→ Phase 6（typecheck/check-i18n/build + 本日志更新）。
+
+### 2026-08-16 会话 #13（交接检查：核对在飞链路 + 记录当前状态）
+
+- **起**：用户要求先核对在飞翻译链最新进度、更新交接文档并复述（含下一步安排），再决定是否开工。
+- **在飞进程（10:23 快照，均未中断）**：
+  - `scripts/auto-translate-chain.py`（pid 26540，Phase 2 城市数据链）→ 当前跑 `de`（pid 34748，`translate-data-fast.mjs --lang=de --source-lang=en`）
+  - `scripts/guide-chain.py`（pid 36856，Phase 3 guide/apps 链）→ 当前跑 `guide:ko`（pid 25064）与 `guide:zh-CN`（pid 36540）
+- **Phase 2 城市数据实际状态**：
+  - 已提交：zh-CN（6aecb21）、zh-TW（0b1b7a3）、ko（b33b048）、th（187670e）、vi（f4aada1）、ru（bf33f72）、ar（b3d0560）、fr（d7f20ca）＝ 8 语言
+  - fa：verify 已 0 残留（本次复核 Total missing: 0），但**未提交**（auto-chain 因 yantai 1 个顽固字段累积 3 次失败放弃，后已人工清掉）
+  - de：verify 94 残留（多为中文地址/`毛血旺`等 highlights），进程仍在跑但日志全是 `Incomplete translation response` 重试
+- **Phase 3 guide override 实际状态**：
+  - `overrides-ko.ts` 8773 条（=guide-strings.json 总数，文件已完整）但链上仍标记 inflight
+  - `overrides-zh-CN.ts` 7347/8773 条，进行中
+  - 两个进程同样卡在 `Incomplete translation response` 反复重试 → **API 通道疑似降级**（限速/额度），需查 DeepSeek/DashScope 配额或换通道
+  - 未开始：guide 其余 8 语言 + apps 全部 9 语言
+- **未提交改动（123 个已跟踪文件 + 7 个未跟踪）**：
+  - Guide 组件 i18n 接线：`guide-i18n.tsx` + 13 个 Guide 组件 + 3 个 apps 组件 + `EmergencySection.tsx`（localized() override 查找）
+  - 城市数据：de/fa 全量 + ja/ko 少量残留修复（ja 有韩文污染修复，如 `朝早시가最高です`→`早朝がベストです`）
+  - 未跟踪：`src/data/guide/overrides-ko.ts`、`overrides-zh-CN.ts`、`src/i18n/app-overrides.ts`、`scripts/residue-chain.py`、`scripts/translate-residue.mjs`、`.audit/full_verify.py`、`scripts/__pycache__/`（应 gitignore）
+- **待办锚点（与 PLAN-2026-08-16.md 一致）**：
+  - 收尾 Phase 2：de 94 残留 + fa 提交
+  - Phase 3：guide 10 语言 override（ko 待收尾、zh-CN 进行中）+ guide-i18n.tsx 接线（已在工作区，未提交）
+  - Phase 4：apps 22 个描述 ×10、紧急联系人 6 国 ×10、`locales` 补 fa.json + zh-CN/zh-TW 映射、`offline.astro` 7 处中文短语
+  - Phase 5：每语言 432 URL 全量验收 + 遗漏页面检查（guide 19 页、[lang]/guide 19 页等）
+  - Phase 6：typecheck / check:i18n / build 全绿 + git 提交 + 本日志更新
+- **用户硬性要求（本次确认）**：1) guide/apps/紧急联系人等 ja 已覆盖层，10 语言全做 + 查遗漏页面，严格全量；2) 开工前先 git 提交当前状态；3) EN 源零中文（英文版必须 100% 英文，中文散文历史遗留必须清掉），所有语言全量翻译为硬性标准。
+- **下个会话**：等用户拍板。开工顺序建议 = 先提交当前状态（含在飞产物，__pycache__ 排除）→ 处理 de 残留与 fa 提交 → 检查 API 通道 → 按 Phase 3/4/5/6 推进。

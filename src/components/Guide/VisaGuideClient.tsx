@@ -188,7 +188,7 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
                   <span className="text-3xl">{doc.icon}</span>
                   <div className="flex-1">
                     <h3 className="font-semibold">{doc.item}</h3>
-                    <p className="text-sm text-muted-foreground">{doc.note}</p>
+                    <p className="text-sm text-muted-foreground">{guideText(doc.note, lang)}</p>
                   </div>
                 </div>
               ))}
@@ -208,7 +208,7 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
                   <span className="text-3xl">{doc.icon}</span>
                   <div className="flex-1">
                     <h3 className="font-semibold">{doc.item}</h3>
-                    <p className="text-sm text-muted-foreground">{doc.note}</p>
+                    <p className="text-sm text-muted-foreground">{guideText(doc.note, lang)}</p>
                   </div>
                 </div>
               ))}
@@ -433,7 +433,7 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
               {FLIGHT_BOOKING_TIPS.map((tip, idx) => (
                 <div key={idx} className="p-4 flex items-center gap-4">
                   <span className="text-2xl">{tip.icon}</span>
-                  <span className="text-sm">{tip.tip}</span>
+                  <span className="text-sm">{guideText(tip.tip, lang)}</span>
                 </div>
               ))}
             </div>
@@ -482,7 +482,7 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
                 <tbody className="divide-y">
                   {VPN_RECOMMENDATIONS.map((vpn, idx) => (
                     <tr key={idx}>
-                      <td className="p-3 font-medium">{vpn.name}</td>
+                      <td className="p-3 font-medium">{guideText(vpn.name, lang)}</td>
                       <td className="p-3">
                         <span
                           className={`px-2 py-0.5 rounded text-xs font-medium ${
@@ -497,7 +497,7 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
                       <td className="p-3">{vpn.speed}</td>
                       <td className="p-3 font-medium text-primary">{vpn.cost}</td>
                       <td className="p-3">{vpn.setup}</td>
-                      <td className="p-3 text-muted-foreground">{vpn.note}</td>
+                      <td className="p-3 text-muted-foreground">{guideText(vpn.note, lang)}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -571,7 +571,7 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
                   </span>
                   <div className="flex-1">
                     <h3 className="font-medium">{item.coverage}</h3>
-                    <p className="text-sm text-muted-foreground">{item.note}</p>
+                    <p className="text-sm text-muted-foreground">{guideText(item.note, lang)}</p>
                   </div>
                 </div>
               ))}

@@ -167,7 +167,7 @@ export function CompanyRegistrationClient({ lang = "en" }: { lang?: string }) {
                                 className="flex items-start gap-2 text-sm text-foreground"
                               >
                                 <span className="text-green-500 mt-0.5">✓</span>
-                                <span>{tip.en}</span>
+                                <span>{guideText(tip.en, lang)}</span>
                               </li>
                             ))}
                           </ul>

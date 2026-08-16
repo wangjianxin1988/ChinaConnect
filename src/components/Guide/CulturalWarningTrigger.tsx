@@ -222,9 +222,9 @@ export function CulturalWarningTrigger({
 
         {/* Content */}
         <div className="p-4">
-          <h3 className="font-bold text-base mb-0.5">{warning.title}</h3>
+          <h3 className="font-bold text-base mb-0.5">{localized(warning.title, warning.titleCn, lang)}</h3>
           <p className="text-sm opacity-80 mb-2">{jaText(warning.titleCn, lang)}</p>
-          <p className="text-sm">{warning.description}</p>
+          <p className="text-sm">{localized(warning.description, warning.descriptionCn, lang)}</p>
           <p className="text-sm opacity-70 mt-1">{jaText(warning.descriptionCn, lang)}</p>
           {warning.region && (
             <div className="mt-2 text-xs opacity-60">

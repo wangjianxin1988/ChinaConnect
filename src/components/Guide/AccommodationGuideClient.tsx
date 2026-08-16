@@ -139,14 +139,14 @@ export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = 
               <div key={idx} className="bg-card rounded-xl border p-4">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-2xl">{tip.icon}</span>
-                  <h3 className="font-semibold">{tip.category}</h3>
+                  <h3 className="font-semibold">{guideText(tip.category, lang)}</h3>
                 </div>
                 {lang !== "ja" && <p className="text-sm text-foreground">{guideText(tip.tip, lang)}</p>}
                 <p className="text-sm text-muted-foreground mt-2">{jaText(tip.tipCn, lang)}</p>
                 {tip.warning && (
                   <div className="mt-3 p-2 bg-amber-50 rounded-lg">
                     <p className="text-sm">
-                      <span className="font-medium text-amber-700">Warning:</span> {tip.warning}
+                      <span className="font-medium text-amber-700">{localized("Warning:", "警告：", lang)}</span> {guideText(tip.warning, lang)}
                     </p>
                     <p className="text-sm text-muted-foreground">{jaText(tip.warningCn, lang)}</p>
                   </div>
@@ -158,13 +158,13 @@ export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = 
           {/* Useful Phrases */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-blue-50 px-6 py-4 border-b">
-              <h3 className="font-semibold text-lg">Useful Hotel Phrases</h3>
+              <h3 className="font-semibold text-lg">{localized("Useful Hotel Phrases", "酒店实用短语", lang)}</h3>
             </div>
             <div className="divide-y">
               {HOTEL_HELPERS.usefulPhrases.map((phrase, idx) => (
                 <div key={idx} className="p-4 flex items-center justify-between">
-                  <span className="text-foreground">{phrase.english}</span>
-                  <span className="text-primary font-medium">{phrase.chinese}</span>
+                  <span className="text-foreground">{guideText(phrase.english, lang)}</span>
+                  <span className="text-primary font-medium">{jaText(phrase.chinese, lang)}</span>
                 </div>
               ))}
             </div>
@@ -188,7 +188,7 @@ export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = 
               <div className="p-4">
                 <p className="text-foreground mb-4">{localized(step.description, step.descriptionCn, lang)}</p>
                 <div className="bg-slate-50 rounded-lg p-4">
-                  <h4 className="font-medium mb-2">Details:</h4>
+                  <h4 className="font-medium mb-2">{localized("Details:", "详情：", lang)}</h4>
                   <ul className="space-y-2">
                     {step.details.map((detail, i) => (
                       <li key={i} className="flex items-start gap-2 text-sm">
@@ -212,16 +212,16 @@ export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = 
           {/* Common Issues */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-amber-50 px-6 py-4 border-b">
-              <h3 className="font-semibold text-lg">Common Issues & Solutions</h3>
+              <h3 className="font-semibold text-lg">{localized("Common Issues & Solutions", "常见问题及解决方案", lang)}</h3>
             </div>
             <div className="divide-y">
               {HOTEL_HELPERS.commonIssues.map((issue, idx) => (
                 <div key={idx} className="p-4">
                   <div className="flex items-start gap-4">
                     <div className="flex-1">
-                      <h4 className="font-medium">Problem: {issue.issue}</h4>
+                      <h4 className="font-medium">{localized("Problem:", "问题：", lang)} {guideText(issue.issue, lang)}</h4>
                       <p className="text-sm text-muted-foreground mt-1">
-                        Solution: {issue.solution}
+                        {localized("Solution:", "解决方案：", lang)} {guideText(issue.solution, lang)}
                       </p>
                     </div>
                   </div>
@@ -237,7 +237,7 @@ export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = 
         <div className="space-y-4">
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h2 className="font-semibold text-xl">Frequently Asked Questions</h2>
+              <h2 className="font-semibold text-xl">{localized("Frequently Asked Questions", "常见问题", lang)}</h2>
             </div>
             <div className="divide-y">
               {ACCOMMODATION_FAQS.map((faq, idx) => (
@@ -246,12 +246,12 @@ export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = 
                     onClick={() => setExpandedFaq(expandedFaq === idx ? null : idx)}
                     className="w-full flex items-center justify-between p-4 hover:bg-slate-50 transition-colors"
                   >
-                    <span className="font-medium text-left pr-4">{faq.question}</span>
+                    <span className="font-medium text-left pr-4">{guideText(faq.question, lang)}</span>
                     <span className="text-muted-foreground">{expandedFaq === idx ? "▲" : "▼"}</span>
                   </button>
                   {expandedFaq === idx && (
                     <div className="px-4 pb-4">
-                      <p className="text-foreground">{faq.answer}</p>
+                      <p className="text-foreground">{guideText(faq.answer, lang)}</p>
                     </div>
                   )}
                 </div>
@@ -262,14 +262,14 @@ export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = 
           {/* Amenities List */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-blue-50 px-6 py-4 border-b">
-              <h3 className="font-semibold text-lg">Common Amenities</h3>
+              <h3 className="font-semibold text-lg">{localized("Common Amenities", "常见设施", lang)}</h3>
             </div>
             <div className="p-4 grid md:grid-cols-3 gap-4">
               {HOTEL_HELPERS.amenities.map((amenity, idx) => (
                 <div key={idx} className="flex items-center gap-2">
                   <span className="text-muted-foreground">•</span>
-                  <span className="text-foreground">{amenity.english}</span>
-                  <span className="text-sm text-muted-foreground">({amenity.chinese})</span>
+                  <span className="text-foreground">{guideText(amenity.english, lang)}</span>
+                  <span className="text-sm text-muted-foreground">({jaText(amenity.chinese, lang)})</span>
                 </div>
               ))}
             </div>

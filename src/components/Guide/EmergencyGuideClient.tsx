@@ -94,7 +94,7 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                   <div className="flex items-center gap-3">
                     <span className="text-2xl">{emergency.icon}</span>
                     <div className="flex-1">
-                      <div className="font-medium">{jaText(emergency.type, lang)}</div>
+                      <div className="font-medium">{guideText(emergency.type, lang)}</div>
                       <div className="text-sm text-muted-foreground">{jaText(emergency.descriptionCn, lang)}</div>
                     </div>
                     <span
@@ -229,7 +229,7 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
             {EMERGENCY_CONTACTS.map((contact, idx) => (
               <div key={idx} className="bg-card rounded-xl border p-6 text-center">
                 <span className="text-4xl">{contact.icon}</span>
-                <h3 className="font-semibold text-lg mt-2">{contact.service}</h3>
+                <h3 className="font-semibold text-lg mt-2">{guideText(contact.service, lang)}</h3>
                 <div className="text-3xl font-bold text-primary my-3">{contact.number}</div>
                 <p className="text-sm text-muted-foreground">{jaText(contact.descriptionCn, lang)}</p>
                 <span className="inline-block mt-2 px-3 py-1 rounded bg-green-100 text-green-800 text-xs">
@@ -249,7 +249,7 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                 <div key={idx} className="p-4 flex items-center justify-between">
                   <div className="flex items-center gap-4">
                     <span className="font-bold text-primary">{ref.action}</span>
-                    <span className="text-muted-foreground">{ref.note}</span>
+                    <span className="text-muted-foreground">{guideText(ref.note, lang)}</span>
                   </div>
                   <span className="text-2xl font-bold text-red-600">{ref.number}</span>
                 </div>
@@ -291,7 +291,7 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                   <div>
                     <span className="text-muted-foreground">Address:</span>
                     <p>{jaText(embassy.addressCn, lang)}</p>
-                    <p className="text-muted-foreground">{embassy.address}</p>
+                    <p className="text-muted-foreground">{guideText(embassy.address, lang)}</p>
                   </div>
                   <div className="flex items-center gap-4">
                     <div>
@@ -300,7 +300,7 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                     </div>
                     <div>
                       <span className="text-muted-foreground">Emergency:</span>
-                      <p className="font-medium text-red-600">{embassy.emergency}</p>
+                      <p className="font-medium text-red-600">{guideText(embassy.emergency, lang)}</p>
                     </div>
                   </div>
                   <div>
@@ -341,7 +341,7 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
             <div className="divide-y">
               {EMERGENCY_HELPERS.essentialPhrases.map((phrase, idx) => (
                 <div key={idx} className="p-4 flex items-center justify-between">
-                  <span className="text-foreground font-medium">{phrase.english}</span>
+                  <span className="text-foreground font-medium">{guideText(phrase.english, lang)}</span>
                   <span className="text-primary text-lg">{phrase.chinese}</span>
                 </div>
               ))}

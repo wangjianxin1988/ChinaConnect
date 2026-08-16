@@ -1,7 +1,7 @@
 import { EXPO_CALENDAR, EXPO_CATEGORIES, YEAR_MONTHS } from "@/data/guide/business/expo-calendar";
 import { LastVerifiedStamp } from "./LastVerifiedStamp";
 import React, { useState } from "react";
-import { jaText, Bi, localized } from "./guide-i18n";;
+import { jaText, Bi, localized, guideText } from "./guide-i18n";;
 
 export function ExpoCalendarClient({ lang = "en" }: { lang?: string }) {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -50,7 +50,7 @@ export function ExpoCalendarClient({ lang = "en" }: { lang?: string }) {
                     : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                 }`}
               >
-                {cat.label}
+                {guideText(cat.label, lang)}
                 <span className="ml-1 opacity-70 text-xs">{jaText(cat.labelCn, lang)}</span>
               </button>
             ))}

@@ -4,6 +4,7 @@
 } from "@/data/emergency/global-contacts";
 import React from "react";
 import { ct } from "@/i18n/components-strings";
+import { getEmergencyOverride } from "@/i18n/app-overrides";
 import { CityMap } from "./CityMap";
 import { EmergencyCard, type EmergencyContact } from "./EmergencyCard";
 import { QuickDialGrid } from "./EmergencyCard";
@@ -250,19 +251,19 @@ function NationalEmergencyCard({ item, lang = "en" }: { item: EmergencyNumber; l
     <a
       href={telHref}
       className="flex items-start gap-3 p-4 bg-white border border-blue-100 rounded-xl hover:border-blue-300 hover:shadow-sm transition-all"
-      aria-label={`${lang === "ja" ? item.nameJa || item.name : item.name}${tt(lang, "callAriaSuffix", " - call ")}${item.phone}`}
+      aria-label={`${lang === "ja" ? item.nameJa || item.name : getEmergencyOverride(lang, `ename:${item.phone}`) || item.name}${tt(lang, "callAriaSuffix", " - call ")}${item.phone}`}
     >
       <span className="text-2xl shrink-0" aria-hidden>
         {item.icon}
       </span>
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 flex-wrap">
-          <h4 className="font-semibold text-gray-900">{lang === "ja" ? item.nameJa || item.name : item.name}</h4>
+          <h4 className="font-semibold text-gray-900">{lang === "ja" ? item.nameJa || item.name : getEmergencyOverride(lang, `ename:${item.phone}`) || item.name}</h4>
           <span className="px-1.5 py-0.5 bg-blue-100 text-blue-700 text-xs rounded">
             {ct(lang, "qd_intl", "Intl")}
           </span>
         </div>
-        <p className="text-sm text-gray-600 mt-0.5">{lang === "ja" ? item.descriptionJa || item.description : item.description}</p>
+        <p className="text-sm text-gray-600 mt-0.5">{lang === "ja" ? item.descriptionJa || item.description : getEmergencyOverride(lang, `edesc:${item.phone}`) || item.description}</p>
         <div className="flex items-center gap-2 mt-2">
           <span className="text-lg font-bold text-blue-700">{item.phone}</span>
           {item.shortCode && (

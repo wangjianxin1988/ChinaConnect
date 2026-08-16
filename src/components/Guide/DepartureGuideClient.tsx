@@ -117,7 +117,7 @@ export function DepartureGuideClient({ lang = "en" }: { lang?: Language } = {}) 
               <div className="bg-gradient-to-r from-green-50 to-blue-50 p-4 border-b flex items-center gap-4">
                 <span className="text-3xl">{refund.icon}</span>
                 <div>
-                  <h3 className="font-semibold text-lg">{refund.category}</h3>
+                  <h3 className="font-semibold text-lg">{guideText(refund.category, lang)}</h3>
                 </div>
               </div>
               <div className="p-4 space-y-4">
@@ -351,7 +351,7 @@ export function DepartureGuideClient({ lang = "en" }: { lang?: Language } = {}) 
           {/* Memory Collection */}
           <div className="bg-gradient-to-r from-pink-50 to-purple-50 border border-pink-200 rounded-xl p-4">
             <h3 className="font-semibold flex items-center gap-2">
-              <span>📸</span> {MEMORY_COLLECTION.title} / {jaText(MEMORY_COLLECTION.titleCn, lang)}
+              <span>📸</span> {guideText(MEMORY_COLLECTION.title, lang)} / {jaText(MEMORY_COLLECTION.titleCn, lang)}
             </h3>
             <p className="text-sm text-muted-foreground mt-1">{jaText(MEMORY_COLLECTION.descriptionCn, lang)}</p>
             <div className="mt-3 grid md:grid-cols-2 gap-3">
@@ -359,8 +359,8 @@ export function DepartureGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                 <div key={idx} className="bg-white/50 rounded-lg p-3 flex items-center gap-2">
                   <span className="text-2xl">{item.icon}</span>
                   <div>
-                    <h4 className="font-medium text-sm">{item.title}</h4>
-                    <p className="text-xs text-muted-foreground">{item.note}</p>
+                    <h4 className="font-medium text-sm">{guideText(item.title, lang)}</h4>
+                    <p className="text-xs text-muted-foreground">{guideText(item.note, lang)}</p>
                   </div>
                 </div>
               ))}
@@ -379,12 +379,12 @@ export function DepartureGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                     onClick={() => setExpandedFaq(expandedFaq === idx ? null : idx)}
                     className="w-full flex items-center justify-between p-4 hover:bg-slate-50 transition-colors"
                   >
-                    <span className="font-medium text-left pr-4">{faq.question}</span>
+                    <span className="font-medium text-left pr-4">{guideText(faq.question, lang)}</span>
                     <span className="text-muted-foreground">{expandedFaq === idx ? "▲" : "▼"}</span>
                   </button>
                   {expandedFaq === idx && (
                     <div className="px-4 pb-4">
-                      <p className="text-foreground">{faq.answer}</p>
+                      <p className="text-foreground">{guideText(faq.answer, lang)}</p>
                     </div>
                   )}
                 </div>

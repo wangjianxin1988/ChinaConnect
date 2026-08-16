@@ -12,6 +12,7 @@ import {
   type AppRecommendation,
 } from "@/data/apps/app-recommendations";
 import { getDownloadLink } from "@/data/apps/app-recommendations";
+import { getAppOverride } from "@/i18n/app-overrides";
 import { useEffect, useState } from "react";
 
 interface EmbeddedAppRecommendationProps {
@@ -107,7 +108,7 @@ function AppCard({ app, platform, lang }: { app: AppRecommendation; platform: Pl
           )}
         </div>
         <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
-          {lang === "ja" && app.descriptionJa ? app.descriptionJa : app.descriptionEn || app.description}
+          {lang === "ja" ? app.descriptionJa || app.description : (getAppOverride(lang, `app:${app.id}`) || app.descriptionEn || app.description)}
         </p>
       </div>
 

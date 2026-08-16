@@ -248,7 +248,7 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
                 <div className="bg-gradient-to-r from-purple-50 to-blue-50 p-4 border-b flex items-center gap-4">
                   <span className="text-3xl">{vpn.icon}</span>
                   <div>
-                    <h3 className="font-semibold">{vpn.name}</h3>
+                    <h3 className="font-semibold">{guideText(vpn.name, lang)}</h3>
                     <p className="text-sm text-muted-foreground">{guideText(vpn.cost, lang)}</p>
                   </div>
                   <div className="ml-auto flex flex-col items-end gap-1">
@@ -376,7 +376,7 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
             <div className="divide-y">
               {COMMUNICATION_HELPERS.usefulPhrases.map((phrase, idx) => (
                 <div key={idx} className="p-4 flex items-center justify-between">
-                  <span className="text-foreground">{phrase.english}</span>
+                  <span className="text-foreground">{guideText(phrase.english, lang)}</span>
                   <div className="text-right">
                     <span className="text-primary font-medium">{phrase.chinese}</span>
                     <p className="text-xs text-muted-foreground">{phrase.pronunciation}</p>

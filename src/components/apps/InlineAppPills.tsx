@@ -4,6 +4,7 @@ import {
   getDownloadLink,
 } from "@/data/apps/app-recommendations";
 import { detectMobileOS } from "@/lib/map-links";
+import { getAppOverride } from "@/i18n/app-overrides";
 /**
  * Inline App Pills Component
  * Compact app recommendations for embedding within content sections.
@@ -51,7 +52,7 @@ export function InlineAppPill({ app, lang = "en" }: InlineAppPillProps) {
             <span className="px-1 py-0.5 bg-green-100 text-green-700 text-xs rounded">EN</span>
           )}
         </div>
-        <span className="text-xs text-gray-500 line-clamp-1">{lang === "ja" ? app.descriptionJa || app.description : lang === "en" ? app.descriptionEn : app.description}</span>
+        <span className="text-xs text-gray-500 line-clamp-1">{lang === "ja" ? app.descriptionJa || app.description : lang === "en" ? app.descriptionEn : (getAppOverride(lang, `app:${app.id}`) || app.descriptionEn || app.description)}</span>
       </div>
       {app.appStoreUrl && (
         <a

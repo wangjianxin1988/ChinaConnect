@@ -146,14 +146,14 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
               <div key={idx} className="bg-card rounded-xl border p-4">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-2xl">{tip.icon}</span>
-                  <h3 className="font-semibold">{tip.category}</h3>
+                  <h3 className="font-semibold">{guideText(tip.category, lang)}</h3>
                 </div>
-                <p className="text-sm text-foreground">{tip.tip}</p>
+                <p className="text-sm text-foreground">{guideText(tip.tip, lang)}</p>
                 <p className="text-sm text-muted-foreground mt-2">{jaText(tip.tipCn, lang)}</p>
                 {tip.warning && (
                   <div className="mt-3 p-2 bg-amber-50 rounded-lg">
                     <p className="text-sm">
-                      <span className="font-medium text-amber-700">Warning:</span> {tip.warning}
+                      <span className="font-medium text-amber-700">{localized("Warning:", "警告：", lang)}</span> {guideText(tip.warning, lang)}
                     </p>
                     <p className="text-sm text-muted-foreground">{jaText(tip.warningCn, lang)}</p>
                   </div>
@@ -223,7 +223,7 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
               {ORDERING_HELPERS.map((phrase, idx) => (
                 <div key={idx} className="p-4">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-foreground font-medium">{phrase.english}</span>
+                    <span className="text-foreground font-medium">{guideText(phrase.english, lang)}</span>
                     <span className="text-primary">{phrase.chinese}</span>
                   </div>
                   <div className="flex items-center justify-between text-sm">
@@ -296,10 +296,10 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
               <div key={idx} className="bg-card rounded-xl border p-4">
                 <div className="flex items-center gap-2 mb-2">
                   <span className="text-2xl">{item.icon}</span>
-                  <h3 className="font-semibold">{item.title}</h3>
+                  <h3 className="font-semibold">{guideText(item.title, lang)}</h3>
                 </div>
                 <p className="text-sm text-muted-foreground">{jaText(item.titleCn, lang)}</p>
-                <p className="text-sm text-foreground mt-2">{item.tip}</p>
+                <p className="text-sm text-foreground mt-2">{guideText(item.tip, lang)}</p>
                 <p className="text-sm text-muted-foreground mt-1">{jaText(item.tipCn, lang)}</p>
               </div>
             ))}
@@ -317,12 +317,12 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
                     onClick={() => setExpandedFaq(expandedFaq === idx ? null : idx)}
                     className="w-full flex items-center justify-between p-4 hover:bg-slate-50 transition-colors"
                   >
-                    <span className="font-medium text-left pr-4">{faq.question}</span>
+                    <span className="font-medium text-left pr-4">{guideText(faq.question, lang)}</span>
                     <span className="text-muted-foreground">{expandedFaq === idx ? "▲" : "▼"}</span>
                   </button>
                   {expandedFaq === idx && (
                     <div className="px-4 pb-4">
-                      <p className="text-foreground">{faq.answer}</p>
+                      <p className="text-foreground">{guideText(faq.answer, lang)}</p>
                     </div>
                   )}
                 </div>
@@ -341,7 +341,7 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
                 <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-4 border-b flex items-center gap-4">
                   <span className="text-4xl">{diet.icon}</span>
                   <div>
-                    <h3 className="font-semibold text-lg">{diet.type}</h3>
+                    <h3 className="font-semibold text-lg">{guideText(diet.type, lang)}</h3>
                     <p className="text-sm text-muted-foreground">{jaText(diet.typeCn, lang)}</p>
                   </div>
                 </div>
@@ -382,9 +382,9 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
                 <div key={idx} className="bg-slate-50 rounded-lg p-4">
                   <div className="flex items-center gap-2 mb-2">
                     <span className="text-2xl">{cat.icon}</span>
-                    <h3 className="font-medium">{cat.category}</h3>
+                    <h3 className="font-medium">{guideText(cat.category, lang)}</h3>
                   </div>
-                  <p className="text-sm text-muted-foreground">{cat.description}</p>
+                  <p className="text-sm text-muted-foreground">{guideText(cat.description, lang)}</p>
                 </div>
               ))}
             </div>
@@ -413,7 +413,7 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
                 <div className="bg-gradient-to-r from-amber-50 to-red-50 p-4 border-b flex items-center gap-4">
                   <span className="text-4xl">{card.icon}</span>
                   <div>
-                    <h3 className="font-semibold">{card.allergen}</h3>
+                    <h3 className="font-semibold">{guideText(card.allergen, lang)}</h3>
                     <p className="text-sm text-muted-foreground">{jaText(card.allergenCn, lang)}</p>
                   </div>
                 </div>
@@ -426,7 +426,7 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
                   </div>
                   <div className="bg-amber-50 rounded-lg p-3">
                     <p className="text-sm">
-                      <span className="font-medium">Note:</span> {card.note}
+                      <span className="font-medium">{localized("Note:", "备注：", lang)}</span> {guideText(card.note, lang)}
                     </p>
                     <p className="text-sm text-muted-foreground mt-1">{jaText(card.noteCn, lang)}</p>
                   </div>
@@ -455,7 +455,7 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
                       <span className="text-xl">{card.icon}</span>
                       <div>
                         <p className="font-medium text-sm">
-                          {card.allergen} / {jaText(card.allergenCn, lang)}
+                          {guideText(card.allergen, lang)} / {jaText(card.allergenCn, lang)}
                         </p>
                         <p className="text-xs font-mono">{card.chinesePhrase}</p>
                       </div>

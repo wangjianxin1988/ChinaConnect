@@ -9,7 +9,7 @@ import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import React, { useState, useRef, useEffect } from "react";
 import { type Language, translations } from "@/i18n/translations";
-import { jaText, Bi, stripZh, localized } from "./guide-i18n";;
+import { jaText, Bi, stripZh, localized, guideText } from "./guide-i18n";;
 
 interface FormValues {
   [key: string]: string;
@@ -21,7 +21,7 @@ function buildLetterHTML(template: (typeof INVITATION_TEMPLATES)[0], values: For
   // Header
   html += `<div class="print-header">
     <div class="print-title">${jaText(template.titleCn, lang)}</div>
-    <div style="font-size:14pt;font-weight:normal;margin-top:5px;">${template.title}</div>
+    <div style="font-size:14pt;font-weight:normal;margin-top:5px;">${guideText(template.title, lang)}</div>
   </div>`;
 
   // Content sections
@@ -38,7 +38,7 @@ function buildLetterHTML(template: (typeof INVITATION_TEMPLATES)[0], values: For
       }
     }
     html += `<div class="print-section">
-      <div class="print-section-title">${section.title}</div>
+      <div class="print-section-title">${guideText(section.title, lang)}</div>
       <div>${content.replace(/\n/g, "<br>")}</div>
     </div>`;
   }
@@ -153,7 +153,7 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
           content = content.replaceAll(`[${key.toUpperCase()}]`, `【${key.replace(/_/g, " ")}】`);
         }
       }
-      lines.push(section.title);
+      lines.push(guideText(section.title, lang));
       lines.push(content);
       lines.push("");
     }
@@ -288,11 +288,11 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
                   {tpl.type === "formal" ? "📋" : tpl.type === "urgent" ? "⚡" : "📄"}
                 </span>
                 <div>
-                  <div className="font-semibold">{tpl.title}</div>
+                  <div className="font-semibold">{guideText(tpl.title, lang)}</div>
                   <div className="text-xs text-muted-foreground">{jaText(tpl.titleCn, lang)}</div>
                 </div>
               </div>
-              <p className="text-sm text-muted-foreground">{tpl.description}</p>
+              <p className="text-sm text-muted-foreground">{guideText(tpl.description, lang)}</p>
               <div className="mt-2 flex items-center gap-2">
                 <span
                   className={`px-2 py-0.5 rounded text-xs font-medium ${
@@ -335,7 +335,7 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
             {currentTemplate.fields.map((field) => (
               <div key={field.key}>
                 <label className="block text-sm font-medium mb-1">
-                  {field.label}
+                  {guideText(field.label, lang)}
                   {field.required && <span className="text-red-500 ml-1">*</span>}
                   <span className="text-muted-foreground ml-2 text-xs">{jaText(field.labelCn, lang)}</span>
                 </label>

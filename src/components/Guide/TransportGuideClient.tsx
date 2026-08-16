@@ -168,7 +168,7 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                     </div>
                   </div>
                   <div className="p-6 space-y-6">
-                    <p className="text-foreground">{currentMode.description}</p>
+                    <p className="text-foreground">{guideText(currentMode.description, lang)}</p>
                     <p className="text-sm text-muted-foreground">{jaText(currentMode.descriptionCn, lang)}</p>
 
                     {/* How to Use */}
@@ -244,7 +244,7 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                   </div>
                 </div>
                 <div className="p-4 space-y-4">
-                  <p className="text-sm text-foreground">{mode.description}</p>
+                  <p className="text-sm text-foreground">{guideText(mode.description, lang)}</p>
                   <p className="text-sm text-muted-foreground">{jaText(mode.descriptionCn, lang)}</p>
 
                   <div className="bg-slate-50 rounded-lg p-3">
@@ -315,7 +315,7 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
               {TRANSPORT_HELPERS.usefulPhrases.map((phrase, idx) => (
                 <div key={idx} className="p-4">
                   <div className="flex items-center justify-between">
-                    <span className="text-foreground">{phrase.english}</span>
+                    <span className="text-foreground">{guideText(phrase.english, lang)}</span>
                     <span className="text-primary font-medium">{phrase.chinese}</span>
                   </div>
                 </div>
@@ -355,17 +355,17 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                 <div className="bg-gradient-to-r from-yellow-50 to-amber-50 p-4 border-b flex items-center gap-4">
                   <span className="text-4xl">{type.icon}</span>
                   <div>
-                    <h3 className="font-semibold">{type.type}</h3>
-                    <p className="text-sm text-muted-foreground">{type.description}</p>
+                    <h3 className="font-semibold">{guideText(type.type, lang)}</h3>
+                    <p className="text-sm text-muted-foreground">{guideText(type.description, lang)}</p>
                   </div>
                 </div>
                 <div className="p-4 space-y-4">
                   <div className="bg-slate-50 rounded-lg p-3">
-                    <h4 className="font-medium text-sm mb-2">Price:</h4>
-                    <p className="text-sm font-medium text-primary">{type.price}</p>
+                    <h4 className="font-medium text-sm mb-2">{localized("Price:", "价格：", lang)}</h4>
+                    <p className="text-sm font-medium text-primary">{guideText(type.price, lang)}</p>
                   </div>
                   <div>
-                    <h4 className="font-medium text-sm mb-2">Tips:</h4>
+                    <h4 className="font-medium text-sm mb-2">{localized("Tips:", "提示：", lang)}</h4>
                     <ul className="space-y-1">
                       {type.tips.map((tip, i) => (
                         <li key={i} className="text-sm flex items-start gap-2">
@@ -386,7 +386,7 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
             <div className="divide-y">
               {TAXI_GUIDE.usefulPhrases.map((phrase, idx) => (
                 <div key={idx} className="p-4 flex items-center justify-between">
-                  <span className="text-foreground">{phrase.english}</span>
+                  <span className="text-foreground">{guideText(phrase.english, lang)}</span>
                   <div className="text-right">
                     <span className="text-primary font-medium">{phrase.chinese}</span>
                     <p className="text-xs text-muted-foreground">{phrase.pronunciation}</p>
@@ -404,7 +404,7 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
           {/* Booking Platforms */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h2 className="font-semibold text-xl">Booking Platforms</h2>
+              <h2 className="font-semibold text-xl">{localized("Booking Platforms", "预订平台", lang)}</h2>
             </div>
             <div className="divide-y">
               {TRAIN_BOOKING_GUIDE.platforms.map((platform) => (
@@ -412,17 +412,17 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                   <div className="flex items-center gap-3 mb-2">
                     <span className="text-2xl">{platform.icon}</span>
                     <div>
-                      <h3 className="font-semibold">{platform.name}</h3>
+                      <h3 className="font-semibold">{guideText(platform.name, lang)}</h3>
                       <p className="text-xs text-muted-foreground">{platform.url}</p>
                     </div>
                   </div>
-                  <p className="text-sm text-foreground">{platform.description}</p>
+                  <p className="text-sm text-foreground">{guideText(platform.description, lang)}</p>
                   <div className="grid md:grid-cols-2 gap-2 mt-2">
                     <p className="text-sm">
-                      <span className="text-green-500">+</span> {platform.pros}
+                      <span className="text-green-500">+</span> {guideText(platform.pros, lang)}
                     </p>
                     <p className="text-sm">
-                      <span className="text-red-500">-</span> {platform.cons}
+                      <span className="text-red-500">-</span> {guideText(platform.cons, lang)}
                     </p>
                   </div>
                 </div>
@@ -448,7 +448,7 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                   {TRAIN_BOOKING_GUIDE.seatClasses.map((seat) => (
                     <tr key={seat.class}>
                       <td className="p-3 font-medium">{seat.class}</td>
-                      <td className="p-3">{seat.price}</td>
+                      <td className="p-3">{guideText(seat.price, lang)}</td>
                       <td className="p-3">{seat.features.join(", ")}</td>
                     </tr>
                   ))}
@@ -466,7 +466,7 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
               {TRAIN_BOOKING_GUIDE.tips.map((tip, idx) => (
                 <div key={idx} className="p-4 flex items-center gap-4">
                   <span className="text-2xl">{tip.icon}</span>
-                  <span className="text-sm">{tip.tip}</span>
+                  <span className="text-sm">{guideText(tip.tip, lang)}</span>
                 </div>
               ))}
             </div>
@@ -502,7 +502,7 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                       <td className="p-3 font-medium">{row.to}</td>
                       <td className="p-3 text-blue-600">{row.byTrain}</td>
                       <td className="p-3 text-muted-foreground">{row.byPlane}</td>
-                      <td className="p-3 text-sm">{row.recommendation}</td>
+                      <td className="p-3 text-sm">{guideText(row.recommendation, lang)}</td>
                     </tr>
                   ))}
                 </tbody>
