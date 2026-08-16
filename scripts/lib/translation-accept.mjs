@@ -21,7 +21,7 @@ const BRAND_TOKENS = new Set([
   "三亚", "上海", "丽江", "兰州", "北京", "南京", "厦门", "呼伦贝尔", "哈尔滨",
   "大理", "大连", "天津", "威海", "宁波", "广州", "张家界", "成都", "承德", "敦煌",
   "昆明", "杭州", "桂林", "武汉", "泉州", "洛阳", "济南", "深圳", "烟台", "福州",
-  "苏州", "西宁", "西安", "重庆", "长沙", "青岛", "China", "Chinese", "ChinaConnect", "Tibet", "Lhasa", "Xinjiang", "Urumqi", "Sichuan", "Guangdong", "Canton", "tibet", "lhasa", "xinjiang", "urumqi", "sichuan", "guangdong", "canton", "beijing", "shanghai", "guangzhou", "shenzhen", "chengdu", "K-ETA", "eTA",
+  "苏州", "西宁", "西安", "重庆", "长沙", "青岛", "China", "Chinese", "ChinaConnect", "Tibet", "Lhasa", "Xinjiang", "Urumqi", "Sichuan", "Guangdong", "Canton", "tibet", "lhasa", "xinjiang", "urumqi", "sichuan", "guangdong", "canton", "beijing", "shanghai", "guangzhou", "shenzhen", "chengdu", "K-ETA", "eTA", "Halal", "Compliment", "NordVPN", "Kill switch", "App Store", "Android", "Li Wei", "Zhang Ming", "Religion", "Description", "Service", "App Store / Android", "Quick Info", "Customize protocol",
   "App Store", "Google Play", "Metro", "Tiananmen", "Tiananmen Square",
   "Great Wall", "Terracotta Army", "Panda", "Pandas", "Forbidden City",
 ]);
