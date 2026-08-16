@@ -946,3 +946,19 @@ for lang in LANGS:
 - **在飞**：EN 修复链仍在 zh-CN（PID 28784，DeepSeek 指数退避，慢但存活）；dev server 已重启（新实例，日志 `.audit/_dev_server.log`）。
 - **下步**：等链完成（zh-CN→zh-TW，日志 `ALL DONE`）→ 对 zh-CN/zh-TW 跑 `fix-city-data-residual.mjs --fast --deep-only` 再全量；de 再收敛一次 → nameEn 验证 → Phase 5 扫描（guide/apps/紧急 10 语言，dev server 现已可靠）→ Phase 6 check-i18n + `pnpm astro build`（**必须先修 GPSLocator 才能 build**，已修）→ EN 零中文终验 → HANDOFF 收尾提交。
 - **注意**：写 translations.ts 必须保持 CRLF；`.audit/_*.cjs` 被 gitignore（诊断脚本不入库）。
+
+### 2026-08-16 会话 #17（EN 修复链收尾 + 占位符根治 + 数据层全量补齐）
+
+- **起**：目标模式延续。用户审批通过计划：开工前 git 提交、等 zh-CN→zh-TW 链、数据层残留清理、Phase 6 终验、HANDOFF 收尾。用户强调"合适节点写交接文档"。
+- **已提交（本会话）**：
+  - `2bb64bd`：开工前提交（占位符 vars 修复 + 扫描输出 + HANDOFF #16）。
+  - `0a59b78`：**data-i18n-vars 非法 JSON 根治（74 处）**——`data-i18n-vars='{"city": localCityName}'` 是字面字符串（Astro 不解析单引号属性），客户端 `JSON.parse` 失败 → 占位符泄漏。全部改 `data-i18n-vars={JSON.stringify({ city: localCityName })}`；另补 11 处缺 vars 的元素（food/attractions 页 `{city}`/`{count}`）；food/index 空状态错键 `foodPage.cityEmpty/cityEmptyDesc` → 改正 `foodPage.empty/emptyDesc`。**占位符全量扫描 12 语言 × 4 页型 = 0**。zh-CN 城市 JSON 全量 2067 字段。
+  - `ab92d0a`：**isKeepableToken ¥ 规则过宽**——`t.endsWith("¥")||t.startsWith("¥")` 把 "¥2500-5000/night"、"Single ride: 1-2¥" 等英文散文全当可保留价格跳过。改为仅无拉丁字母时保留。fr 补翻 51 字段。
+  - `b6e457b`：**DASHED_ID_RE 误伤**——把 "hong-kong"/"rice-rolls"/"Air-conditioned" 当 slug 保留。移除该保留规则 + 修复器显式跳过 .id/.slug/.image/.coverImage 路径。de 1209 + zh-CN 615+2 + zh-TW 616+121 字段；chengde arrival[0].to 手工改 承德。
+- **关键根因（本会话）**：
+  1. **zh-CN 链 0 翻译**：`fix-city-data-eng.mjs` validOutput 对 zh-CN/zh-TW 自相矛盾——`CJK_RE.test(raw)` 拒绝一切中文输出，`SCRIPT_PRESENCE` 又要求必须含中文 → 187 批全拒。已修：zh 系跳过 CJK 拒绝 + prompt 改为 "NO English words"。修复后 zh-CN 2067 / zh-TW 4108 全量应用。
+  2. **data-i18n-vars**：从 `d5b7971` 起就是坏写法（单引号内嵌未转义标识符），本会话根治。
+- **验证**：EN 全页扫描 379 URL = **0 残留 0 中文**（EN 零中文硬性要求达成）；`pnpm tsc --noEmit` 0 错；`check-i18n.mjs` 1642 键 0 缺失。
+- **在飞**：11 语言全页扫描（focus=all × 379 URL/语言，3 并发，~6 分钟/语言）。
+- **下步**：分析扫描结果 → 逐条清残留 → `pnpm astro build`（GPSLocator 已修，应该能过）→ dist EN 零中文终验 → HANDOFF §10 收尾 + 最终提交。
+- **注意**：zh-CN/zh-TW/de/fr 城市 JSON 已含本会话翻译成果；后续修复器改动注意 .id/.slug/.image 跳过逻辑。

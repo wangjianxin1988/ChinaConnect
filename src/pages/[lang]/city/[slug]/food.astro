@@ -50,10 +50,10 @@ const allRestaurants = city.restaurants;
 const filterGroups: FilterGroup[] = buildFilterGroups(allRestaurants);
 const currentFilter = filterGroups.find(g => g.id === filterParam) || filterGroups[0];
 
-const pageTitle = (translations[lang] || translations.en).cityFood?.title?.replace("{city}", localCityName) + " - ChinaConnect" ?? "Restaurants in " + localCityName + " - ChinaConnect";
+const pageTitle = ((translations[lang] || translations.en).cityFood?.title?.replace("{city}", localCityName) ?? `Restaurants in ${city.nameEn}`) + " - ChinaConnect";
 const pageDescription = lang === "ja"
   ? `${localCityName}のグルメガイド：ミシュラン、ブラックパール、地元の人気店を網羅`
-  : `${localCityName} Food Guide: complete Michelin, Black Pearl, and local picks`;
+  : (translations[lang] || translations.en).cityFood?.subtitle?.replace("{city}", localCityName) ?? `${city.nameEn} Food Guide: complete Michelin, Black Pearl, and local picks`;
 
 function getBadgeClass(type: Restaurant["type"]) {
   if (type === "michelin") return "badge-michelin";
@@ -62,14 +62,9 @@ function getBadgeClass(type: Restaurant["type"]) {
 }
 
 function getBadgeLabel(type: Restaurant["type"], lang: string) {
-  if (lang === "ja") {
-    if (type === "michelin") return "ミシュラン";
-    if (type === "blackpearl") return "ブラックパール";
-    return "地元のおすすめ";
-  }
-  if (type === "michelin") return "Michelin";
-  if (type === "blackpearl") return "Black Pearl";
-  return "Local Favorite";
+  if (type === "michelin") return ct(lang, "badge_michelin", "Michelin");
+  if (type === "blackpearl") return ct(lang, "badge_blackpearl", "Black Pearl");
+  return ct(lang, "badge_local", "Local Favorite");
 }
 ---
 
@@ -91,13 +86,13 @@ function getBadgeLabel(type: Restaurant["type"], lang: string) {
       <nav class="mb-4">
         <a href="/" class="text-orange-200 hover:text-white transition-colors" data-i18n="cityPage.home">Home</a>
         <span class="text-orange-300 mx-2">/</span>
-        <a href={`/city/${city.slug}`} class="text-orange-200 hover:text-white transition-colors">{city.nameEn}</a>
+        <a href={`/city/${city.slug}`} class="text-orange-200 hover:text-white transition-colors">{localCityName}</a>
         <span class="text-orange-300 mx-2">/</span>
         <span class="text-white" data-i18n="cityPage.foodHeading">Food</span>
       </nav>
 
       <h1 class="text-3xl md:text-4xl font-bold text-white mb-2 flex items-center gap-3">
-        <span>🍜</span> <span>{isJapanese ? `${localCityName}のグルメ` : `${city.nameEn} Food`}</span>
+        <span>🍜</span> <span>{isJapanese ? `${localCityName}のグルメ` : (translations[lang] || translations.en).cityFood?.title?.replace("{city}", localCityName) ?? `${city.nameEn} Food`}</span>
       </h1>
       <p class="text-orange-100" data-i18n="foodPage.cityEmptySubtitle">{isJapanese ? `ミシュラン、黒真珠、地元の人気店など選りすぐり` : `Discover Michelin, Black Pearl, and locally loved picks`}</p>
 

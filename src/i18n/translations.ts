@@ -118,6 +118,19 @@ export const translations: Record<Language, Translations> = {
       thinking: "Thinking..."
     },
     aiPage: {
+      heroSubtitle: "Your personal China travel intelligence — itineraries, local insights, and real-time guidance.",
+      description: "Your personal China travel intelligence.",
+      authGateDescription: "Sign in to save your conversations and get personalized travel help.",
+      checkEmailConfirm: "Check your email to confirm your account.",
+      prompts: [
+        { icon: "🏯", text: "Plan a 5-day Beijing trip with imperial history and modern culture" },
+        { icon: "🍜", text: "Best local street food in Chengdu that tourists usually miss" },
+        { icon: "🚄", text: "How to travel from Shanghai to Xi’an by high-speed rail?" },
+        { icon: "💳", text: "Can I use Apple Pay in China? What payment apps do I need?" },
+        { icon: "🏨", text: "Recommend boutique hotels in Hangzhou near West Lake" },
+        { icon: "🤝", text: "Business etiquette tips for meeting Chinese partners" },
+      ],
+
       authFailed: "Authentication failed",
       authGateSignupTitle: "Create your account",
       authGateTitle: "Sign in to chat",
@@ -4491,6 +4504,17 @@ export const translations: Record<Language, Translations> = {
       thinking: "考え中..."
     },
     aiPage: {
+      authGateDescription: "サインインすると会話履歴を保存し、パーソナライズされた旅行サポートを受けられます。",
+      checkEmailConfirm: "メールを確認してアカウントを確認してください。",
+      prompts: [
+        { icon: "🏯", text: "北京5日間の旅：王朝の歴史と現代文化を満喫するプラン" },
+        { icon: "🍜", text: "観光客が逃しがちな成都のローカル屋台グルメ" },
+        { icon: "🚄", text: "上海から西安への高速鉄道での行き方は？" },
+        { icon: "💳", text: "中国でApple Payは使えますか？必要な決済アプリは？" },
+        { icon: "🏨", text: "杭州の西湖近くでおしゃれなブティックホテルを紹介して" },
+        { icon: "🤝", text: "中国のビジネスパートナーと会う際のビジネスマナー" },
+      ],
+
       heroSubtitle: "中国旅行のパーソナルアシスタント — 旅程、現地情報、リアルタイムガイダンス。",
       authFailed: "認証失敗",
       authGateSignupTitle: "アカウントを作成",
@@ -8872,6 +8896,19 @@ export const translations: Record<Language, Translations> = {
       thinking: "생각 중..."
     },
     aiPage: {
+      heroSubtitle: "나만의 중국 여행 인텔리전스 — 일정, 현지 정보, 실시간 가이드를 한 번에.",
+      description: "나만의 중국 여행 인텔리전스 서비스.",
+      authGateDescription: "로그인하면 대화를 저장하고 맞춤형 여행 도움을 받을 수 있습니다.",
+      checkEmailConfirm: "이메일을 확인하여 계정을 인증해 주세요.",
+      prompts: [
+        { icon: "🏯", text: "제국의 역사와 현대 문화를 즐기는 베이징 5일 여행 계획" },
+        { icon: "🍜", text: "관광객이 놓치기 쉬운 청두의 현지 길거리 음식" },
+        { icon: "🚄", text: "상하이에서 시안까지 고속철도로 가는 방법은?" },
+        { icon: "💳", text: "중국에서 Apple Pay를 쓸 수 있나요? 어떤 결제 앱이 필요한가요?" },
+        { icon: "🏨", text: "항저우 서호 근처의 부티크 호텔을 추천해 주세요" },
+        { icon: "🤝", text: "중국 비즈니스 파트너를 만날 때의 비즈니스 매너" },
+      ],
+
       authFailed: "인증 실패",
       authGateSignupTitle: "계정 만들기",
       authGateTitle: "채팅하려면 로그인",
@@ -13245,6 +13282,19 @@ export const translations: Record<Language, Translations> = {
       thinking: "กำลังคิด..."
     },
     aiPage: {
+      heroSubtitle: "ผู้ช่วยอัจฉริยะท่องเที่ยวจีนของคุณ — แผนการเดินทาง ข้อมูลท้องถิ่น และคำแนะนำแบบเรียลไทม์",
+      description: "ผู้ช่วยอัจฉริยะท่องเที่ยวจีนของคุณ",
+      authGateDescription: "ลงชื่อเข้าสู่ระบบเพื่อบันทึกบทสนทนาและรับความช่วยเหลือด้านการท่องเที่ยวเฉพาะบุคคล",
+      checkEmailConfirm: "ตรวจสอบอีเมลของคุณเพื่อยืนยันบัญชี",
+      prompts: [
+        { icon: "🏯", text: "วางแผนเที่ยวปักกิ่ง 5 วัน สัมผัสประวัติศาสตร์จักรพรรดิและวัฒนธรรมสมัยใหม่" },
+        { icon: "🍜", text: "อาหารริมทางท้องถิ่นเฉิงตูที่นักท่องเที่ยวมักพลาด" },
+        { icon: "🚄", text: "เดินทางจากเซี่ยงไฮ้ไปซีอานด้วยรถไฟความเร็วสูงอย่างไร?" },
+        { icon: "💳", text: "ใช้ Apple Pay ในจีนได้ไหม? ต้องมีแอปชำระเงินอะไรบ้าง?" },
+        { icon: "🏨", text: "แนะนำโรงแรมบูติกในหางโจวใกล้ทะเลสาบซีหู" },
+        { icon: "🤝", text: "เคล็ดลับมารยาททางธุรกิจเมื่อพบปะคู่ค้าชาวจีน" },
+      ],
+
       authFailed: "การรับรองล้มเหลว",
       authGateSignupTitle: "สร้างบัญชีของคุณ",
       authGateTitle: "เข้าสู่ระบบเพื่อแชท",
@@ -17618,6 +17668,19 @@ export const translations: Record<Language, Translations> = {
       thinking: "Đang suy nghĩ..."
     },
     aiPage: {
+      heroSubtitle: "Trợ lý du lịch Trung Quốc thông minh của bạn — lịch trình, thông tin địa phương và hướng dẫn theo thời gian thực.",
+      description: "Trợ lý du lịch Trung Quốc thông minh của bạn.",
+      authGateDescription: "Đăng nhập để lưu cuộc trò chuyện và nhận trợ giúp du lịch cá nhân hóa.",
+      checkEmailConfirm: "Kiểm tra email của bạn để xác nhận tài khoản.",
+      prompts: [
+        { icon: "🏯", text: "Lên kế hoạch chuyến đi Bắc Kinh 5 ngày với lịch sử hoàng gia và văn hóa hiện đại" },
+        { icon: "🍜", text: "Món ăn đường phố địa phương ở Thành Đô mà du khách thường bỏ lỡ" },
+        { icon: "🚄", text: "Làm thế nào đi tàu cao tốc từ Thượng Hải đến Tây An?" },
+        { icon: "💳", text: "Có thể dùng Apple Pay ở Trung Quốc không? Cần những ứng dụng thanh toán nào?" },
+        { icon: "🏨", text: "Gợi ý khách sạn boutique ở Hàng Châu gần Tây Hồ" },
+        { icon: "🤝", text: "Mẹo nghi thức kinh doanh khi gặp đối tác Trung Quốc" },
+      ],
+
       authFailed: "Xác thực thất bại",
       authGateSignupTitle: "Tạo tài khoản của bạn",
       authGateTitle: "Đăng nhập để trò chuyện",
@@ -21991,6 +22054,19 @@ export const translations: Record<Language, Translations> = {
       thinking: "Думаю..."
     },
     aiPage: {
+      heroSubtitle: "Ваш персональный AI-гид по Китаю — маршруты, местные советы и помощь в реальном времени.",
+      description: "Ваш персональный AI-гид по Китаю.",
+      authGateDescription: "Войдите, чтобы сохранять беседы и получать персональную помощь в путешествиях.",
+      checkEmailConfirm: "Проверьте почту, чтобы подтвердить аккаунт.",
+      prompts: [
+        { icon: "🏯", text: "Спланируйте 5-дневную поездку в Пекин: имперская история и современная культура" },
+        { icon: "🍜", text: "Лучшая местная уличная еда в Чэнду, которую туристы обычно пропускают" },
+        { icon: "🚄", text: "Как добраться из Шанхая в Сиань на скоростном поезде?" },
+        { icon: "💳", text: "Можно ли использовать Apple Pay в Китае? Какие платёжные приложения нужны?" },
+        { icon: "🏨", text: "Порекомендуйте бутик-отели в Ханчжоу рядом с озером Сиху" },
+        { icon: "🤝", text: "Советы по деловому этикету при встрече с китайскими партнёрами" },
+      ],
+
       authFailed: "Ошибка аутентификации",
       authGateSignupTitle: "Создайте свою учетную запись",
       authGateTitle: "Войдите в чат",
@@ -26364,6 +26440,19 @@ export const translations: Record<Language, Translations> = {
       thinking: "En cours..."
     },
     aiPage: {
+      heroSubtitle: "Votre assistant IA de voyage en Chine — itinéraires, conseils locaux et assistance en temps réel.",
+      description: "Votre assistant IA de voyage en Chine.",
+      authGateDescription: "Connectez-vous pour enregistrer vos conversations et obtenir une aide de voyage personnalisée.",
+      checkEmailConfirm: "Vérifiez votre e-mail pour confirmer votre compte.",
+      prompts: [
+        { icon: "🏯", text: "Planifiez un voyage de 5 jours à Pékin entre histoire impériale et culture moderne" },
+        { icon: "🍜", text: "Les meilleures spécialités de rue à Chengdu que les touristes ratent souvent" },
+        { icon: "🚄", text: "Comment voyager de Shanghai à Xi’an en train à grande vitesse ?" },
+        { icon: "💳", text: "Peut-on utiliser Apple Pay en Chine ? Quelles applications de paiement faut-il ?" },
+        { icon: "🏨", text: "Recommandez des hôtels-boutiques à Hangzhou près du lac de l’Ouest" },
+        { icon: "🤝", text: "Conseils d’étiquette professionnelle pour rencontrer des partenaires chinois" },
+      ],
+
       authFailed: "Échec de l'authentification",
       authGateSignupTitle: "Créez votre compte",
       authGateTitle: "Connectez-vous pour discuter",
@@ -30737,6 +30826,19 @@ export const translations: Record<Language, Translations> = {
       thinking: "Wird bearbeitet..."
     },
     aiPage: {
+      heroSubtitle: "Ihr persönlicher KI-Reiseassistent für China — Routen, lokale Tipps und Echtzeit-Hilfe.",
+      description: "Ihr persönlicher KI-Reiseassistent für China.",
+      authGateDescription: "Melden Sie sich an, um Gespräche zu speichern und persönliche Reisehilfe zu erhalten.",
+      checkEmailConfirm: "Prüfen Sie Ihre E-Mail, um Ihr Konto zu bestätigen.",
+      prompts: [
+        { icon: "🏯", text: "Planen Sie eine 5-tägige Peking-Reise mit Kaiserzeit-Geschichte und moderner Kultur" },
+        { icon: "🍜", text: "Beste lokale Streetfood-Gerichte in Chengdu, die Touristen oft verpassen" },
+        { icon: "🚄", text: "Wie reist man mit dem Hochgeschwindigkeitszug von Shanghai nach Xi’an?" },
+        { icon: "💳", text: "Kann man Apple Pay in China nutzen? Welche Zahlungs-Apps braucht man?" },
+        { icon: "🏨", text: "Empfehlen Sie Boutique-Hotels in Hangzhou in der Nähe des Westsees" },
+        { icon: "🤝", text: "Tipps zur Geschäftsetikette beim Treffen mit chinesischen Partnern" },
+      ],
+
       authFailed: "Authentifizierung fehlgeschlagen",
       authGateSignupTitle: "Erstelle dein Konto",
       authGateTitle: "Anmelden, um zu chatten",
@@ -35110,6 +35212,19 @@ export const translations: Record<Language, Translations> = {
       thinking: "يفكر..."
     },
     aiPage: {
+      heroSubtitle: "مساعد السفر الذكي إلى الصين — مسارات، نصائح محلية وإرشادات فورية.",
+      description: "مساعد السفر الذكي الخاص بك إلى الصين.",
+      authGateDescription: "سجّل الدخول لحفظ محادثاتك والحصول على مساعدة سفر مخصصة.",
+      checkEmailConfirm: "تحقق من بريدك الإلكتروني لتأكيد حسابك.",
+      prompts: [
+        { icon: "🏯", text: "خطط لرحلة بكين 5 أيام بين التاريخ الإمبراطوري والثقافة الحديثة" },
+        { icon: "🍜", text: "أفضل أكلات الشارع المحلية في تشنغدو التي يفوتها السياح عادة" },
+        { icon: "🚄", text: "كيف أسافر من شنغهاي إلى شيآن بالقطار فائق السرعة؟" },
+        { icon: "💳", text: "هل يمكنني استخدام Apple Pay في الصين؟ ما هي تطبيقات الدفع المطلوبة؟" },
+        { icon: "🏨", text: "اقترح فنادق بوتيك في هانغتشو قرب بحيرة الغرب" },
+        { icon: "🤝", text: "نصائح آداب الأعمال عند لقاء الشركاء الصينيين" },
+      ],
+
       authFailed: "فشل المصادقة",
       authGateSignupTitle: "إنشاء حسابك",
       authGateTitle: "تسجيل الدخول للدردشة",
@@ -39483,6 +39598,19 @@ export const translations: Record<Language, Translations> = {
       thinking: "در حال پردازش..."
     },
     aiPage: {
+      heroSubtitle: "دستیار هوشمند سفر شما به چین — برنامه سفر، اطلاعات محلی و راهنمایی لحظهای.",
+      description: "دستیار هوشمند سفر شما به چین.",
+      authGateDescription: "برای ذخیره گفتگوها و دریافت کمک شخصیسازیشده سفر وارد شوید.",
+      checkEmailConfirm: "برای تأیید حساب خود ایمیل خود را بررسی کنید.",
+      prompts: [
+        { icon: "🏯", text: "برنامهریزی سفر ۵ روزه به پکن با تاریخ امپراتوری و فرهنگ مدرن" },
+        { icon: "🍜", text: "بهترین غذاهای خیابانی محلی چنگدو که گردشگران معمولاً از دست میدهند" },
+        { icon: "🚄", text: "چگونه با قطار پرسرعت از شانگهای به شیآن برویم؟" },
+        { icon: "💳", text: "آیا در چین میتوان از Apple Pay استفاده کرد؟ چه اپلیکیشنهای پرداختی لازم است؟" },
+        { icon: "🏨", text: "هتلهای بوتیک نزدیک دریاچه غرب در هانگژو معرفی کن" },
+        { icon: "🤝", text: "نکات آداب کسبوکار هنگام ملاقات با شرکای چینی" },
+      ],
+
       authFailed: "احراز هویت ناموفق",
       authGateSignupTitle: "ایجاد حساب",
       authGateTitle: "ورود به گفتگو",
@@ -43856,6 +43984,19 @@ export const translations: Record<Language, Translations> = {
       thinking: "思考中..."
     },
     aiPage: {
+      heroSubtitle: "您的中国旅行智能助手 — 行程规划、本地资讯与实时指引。",
+      description: "您的中国旅行智能助手。",
+      authGateDescription: "登录后可保存对话记录并获得个性化旅行帮助。",
+      checkEmailConfirm: "请检查邮箱以确认您的账户。",
+      prompts: [
+        { icon: "🏯", text: "规划一次5天北京之旅，感受帝王历史与现代文化" },
+        { icon: "🍜", text: "成都本地人常去、游客容易错过的街头美食" },
+        { icon: "🚄", text: "如何从上海乘高铁到西安？" },
+        { icon: "💳", text: "在中国能用Apple Pay吗？需要哪些支付应用？" },
+        { icon: "🏨", text: "推荐杭州西湖附近的精品酒店" },
+        { icon: "🤝", text: "会见中国商务伙伴的商务礼仪建议" },
+      ],
+
       authFailed: "认证失败",
       authGateSignupTitle: "创建你的账户",
       authGateTitle: "登录后开始对话",
@@ -48229,6 +48370,19 @@ export const translations: Record<Language, Translations> = {
       thinking: "思考中..."
     },
     aiPage: {
+      heroSubtitle: "您的中國旅行智慧助手 — 行程規劃、在地資訊與即時指引。",
+      description: "您的中國旅行智慧助手。",
+      authGateDescription: "登入後可儲存對話紀錄並獲得個人化旅遊協助。",
+      checkEmailConfirm: "請檢查電子郵件以確認您的帳戶。",
+      prompts: [
+        { icon: "🏯", text: "規劃一趟5天北京之旅，感受帝王歷史與現代文化" },
+        { icon: "🍜", text: "成都在地人常去、觀光客容易錯過的街頭美食" },
+        { icon: "🚄", text: "如何從上海搭高鐵到西安？" },
+        { icon: "💳", text: "在中國能用Apple Pay嗎？需要哪些支付App？" },
+        { icon: "🏨", text: "推薦杭州西湖附近的精品飯店" },
+        { icon: "🤝", text: "會見中國商務夥伴的商務禮儀建議" },
+      ],
+
       authFailed: "認證失敗",
       authGateSignupTitle: "建立你的帳戶",
       authGateTitle: "登入後開始對話",

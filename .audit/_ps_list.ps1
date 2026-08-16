@@ -1,0 +1,1 @@
+Get-CimInstance Win32_Process | Where-Object { \.CommandLine -match fix-city-data|run_eng_fixes } | ForEach-Object { Write-Host (\.ProcessId.ToString() +  |  + \.Name +  |  + \.CommandLine.Substring(0, [Math]::Min(150, \.CommandLine.Length))) }
