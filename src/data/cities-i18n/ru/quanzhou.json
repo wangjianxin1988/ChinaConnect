@@ -8,7 +8,7 @@
     "lat": 24.8742,
     "lng": 118.6758
   },
-  "timezone": "UTC+8 (China Standard Time)",
+  "timezone": "UTC+8 (китайское стандартное время)",
   "description": "Цюаньчжоу — исторический портовый город в провинции Фуцзянь, известный как отправная точка Морского Шелкового Пути. Здесь находятся разнообразные религиозные объекты, включая буддизм, ислам, христианство и индуизм. Марко Поло называл его 'Зайтон'. Это город, внесенный в список Всемирного наследия ЮНЕСКО, с невероятным культурным разнообразием.",
   "coverImage": "/img/ext/66109f403d87.webp",
   "highlights": [
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "12C (54F)",
-    "tips": "Best in spring and autumn. Summers hot and humid. Winter mild. Year-round destination due to cultural sites."
+    "tips": "Лучше всего весной и осенью. Летом жарко и влажно. Зима мягкая. Направление, подходящее для посещения круглый год благодаря культурным достопримечательностям."
   },
   "attractions": [
     {
@@ -1661,7 +1661,7 @@
       "cuisine": "Каньчжоуские закуски",
       "avgPrice": 15,
       "rating": 4.5,
-      "address": "Jinjiang Anhai",
+      "address": "Цзиньцзян Аньхай",
       "coordinates": {
         "lat": 24.7842,
         "lng": 118.4858
@@ -2653,38 +2653,38 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major Chinese cities",
+        "from": "Крупные города Китая",
         "to": "Международный аэропорт Цюаньчжоу Цзиньцзян (JJN)",
-        "duration": "Varies",
+        "duration": "Различается",
         "price": "400-1500¥",
-        "frequency": "Daily flights",
+        "frequency": "Ежедневные рейсы",
         "tips": "Аэропорт в 15 км от центра города. Такси или автобус."
       },
       {
         "type": "train",
         "from": "Сямэнь (1 ч), Фучжоу (2 ч), Шанхай (4 ч)",
-        "to": "Quanzhou Railway Station",
-        "duration": "1-4 hours",
+        "to": "Железнодорожный вокзал Цюаньчжоу",
+        "duration": "1-4 часа",
         "price": "100-500¥",
-        "frequency": "Multiple daily",
+        "frequency": "Несколько раз в день",
         "tips": "Скоростные поезда из крупных городов."
       }
     ],
     "local": {
       "bus": [
-        "Extensive network",
-        "Single ride: 2¥",
-        "Tourist areas connected"
+        "Обширная сеть",
+        "Одна поездка: 2 юаня",
+        "Туристические районы соединены"
       ],
       "taxi": [
-        "Starting fare: 8¥",
-        "Most attractions 15-50¥",
-        "Didi recommended"
+        "Посадка: 8 юаней",
+        "Большинство достопримечательностей — 15–50 юаней",
+        "Рекомендуется Didi"
       ],
       "bike": [
         "Доступны Mobike, Meituan",
-        "Good for city center",
-        "Historic areas"
+        "Хорошо для центра города",
+        "Исторические районы"
       ]
     }
   },
@@ -2693,7 +2693,7 @@
       "name": "Отель Цюаньчжоу",
       "nameEn": "Quanzhou Hotel",
       "budget": "luxury",
-      "priceRange": "¥800-1500/night",
+      "priceRange": "800–1500 юаней/ночь",
       "address": "улица Пин, 88, район Личэн",
       "coordinates": {
         "lat": 24.9042,
@@ -2705,14 +2705,14 @@
         "Исторический",
         "Хорошее обслуживание"
       ],
-      "bookingTips": "Best location for sightseeing."
+      "bookingTips": "Лучшее расположение для осмотра достопримечательностей."
     },
     {
       "name": "Отель Marco Polo в Цзиньцзяне",
       "nameEn": "Marco Polo Hotel Jinjiang",
       "budget": "luxury",
-      "priceRange": "¥600-1200/night",
-      "address": "Jinjiang District",
+      "priceRange": "600–1200 юаней/ночь",
+      "address": "Район Цзиньцзян",
       "coordinates": {
         "lat": 24.8242,
         "lng": 118.5758
@@ -2723,14 +2723,14 @@
         "Бизнес-удобства",
         "Хорошее питание"
       ],
-      "bookingTips": "Good for business travelers."
+      "bookingTips": "Подходит для деловых путешественников."
     },
     {
       "name": "Отель Home Inn у храма Кайюань в Цюаньчжоу",
       "nameEn": "Home Inn Quanzhou Kaiyuan",
       "budget": "budget",
-      "priceRange": "¥150-300/night",
-      "address": "Near Kaiyuan Temple",
+      "priceRange": "150-300¥/ночь",
+      "address": "Рядом с храмом Кайюань",
       "coordinates": {
         "lat": 24.9042,
         "lng": 118.5958
@@ -2741,13 +2741,13 @@
         "Бюджетный вариант",
         "Чисто"
       ],
-      "bookingTips": "Best budget near historic areas."
+      "bookingTips": "Лучший бюджетный вариант рядом с историческими районами."
     },
     {
       "name": "Отель Quanzhou Fuli Wanda Wenhua",
       "nameEn": "Wanda Vista Quanzhou",
       "budget": "luxury",
-      "priceRange": "¥700-1400/night",
+      "priceRange": "700–1400 юаней/ночь",
       "address": "Улица Байцзе, район Личэн",
       "coordinates": {
         "lat": 24.9142,
@@ -2760,14 +2760,14 @@
         "Центральное расположение",
         "Отличный сервис"
       ],
-      "bookingTips": "Great for luxury travelers."
+      "bookingTips": "Отлично подходит для любителей роскоши."
     },
     {
       "name": "Отель Quanzhou Yuehua",
       "nameEn": "Yuehua Hotel Quanzhou",
       "budget": "luxury",
-      "priceRange": "¥500-900/night",
-      "address": "Licheng District",
+      "priceRange": "500–900 юаней/ночь",
+      "address": "Район Личэн",
       "coordinates": {
         "lat": 24.9142,
         "lng": 118.5858
@@ -2778,14 +2778,14 @@
         "Традиционный стиль",
         "Хороший завтрак"
       ],
-      "bookingTips": "Good balance of luxury and value."
+      "bookingTips": "Хороший баланс роскоши и цены."
     },
     {
       "name": "Цюаньчжоу апарт-отель",
       "nameEn": "Quanzhou Serviced Apartments",
       "budget": "mid-range",
-      "priceRange": "¥300-600/night",
-      "address": "Fengze District",
+      "priceRange": "300–600 юаней/ночь",
+      "address": "Район Фэнцзэ",
       "coordinates": {
         "lat": 24.8942,
         "lng": 118.6058
@@ -2796,14 +2796,14 @@
         "Просторные номера",
         "Подходит для семей"
       ],
-      "bookingTips": "Best for families and long stays."
+      "bookingTips": "Лучший вариант для семей и длительного проживания."
     },
     {
       "name": "Отель Hanting, Культурный центр Цюаньчжоу",
       "nameEn": "Hanting Quanzhou Culture Center",
       "budget": "budget",
-      "priceRange": "¥120-250/night",
-      "address": "Cultural Center Area",
+      "priceRange": "120–250 юаней/ночь",
+      "address": "Район Культурного центра",
       "coordinates": {
         "lat": 24.9142,
         "lng": 118.6008
@@ -2814,14 +2814,14 @@
         "Доступно",
         "Рядом с музеями"
       ],
-      "bookingTips": "Best budget option near cultural attractions."
+      "bookingTips": "Лучший бюджетный вариант рядом с культурными достопримечательностями."
     },
     {
       "name": "Отель JI Hotel, храм Кайюань в Цюаньчжоу",
       "nameEn": "Ji Hotel Quanzhou Kaiyuan",
       "budget": "mid-range",
-      "priceRange": "¥250-450/night",
-      "address": "Licheng District",
+      "priceRange": "250–450 юаней/ночь",
+      "address": "Район Личэн",
       "coordinates": {
         "lat": 24.9042,
         "lng": 118.5988
@@ -2832,13 +2832,13 @@
         "Удачное расположение",
         "Стабильное качество"
       ],
-      "bookingTips": "Reliable mid-range chain."
+      "bookingTips": "Надёжная сеть среднего класса."
     },
     {
       "name": "Международный отель Шиши",
       "nameEn": "Shishi International Hotel",
       "budget": "luxury",
-      "priceRange": "¥500-1000/night",
+      "priceRange": "500–1000 юаней/ночь",
       "address": "Шиши",
       "coordinates": {
         "lat": 24.8142,
@@ -2850,14 +2850,14 @@
         "Бизнес-услуги",
         "Вид на море"
       ],
-      "bookingTips": "Best for Shishi exploration."
+      "bookingTips": "Лучший вариант для изучения Шиши."
     },
     {
       "name": "Отель Цзиньцзян Жуньюй",
       "nameEn": "Jinjiang Honor Hotel",
       "budget": "luxury",
-      "priceRange": "¥450-850/night",
-      "address": "Jinjiang District",
+      "priceRange": "450–850 юаней/ночь",
+      "address": "Район Цзиньцзян",
       "coordinates": {
         "lat": 24.8242,
         "lng": 118.5808
@@ -2868,14 +2868,14 @@
         "Спа",
         "Конференц-залы"
       ],
-      "bookingTips": "Good for resort-style stays."
+      "bookingTips": "Хорош для отдыха в стиле курорта."
     },
     {
       "name": "Руцзя Цзинсюань, озеро Сиху, Цюаньчжоу",
       "nameEn": "Home Inn Plus Quanzhou West Lake",
       "budget": "mid-range",
-      "priceRange": "¥200-380/night",
-      "address": "West Lake Area",
+      "priceRange": "200–380 юаней/ночь",
+      "address": "Район Западного озера",
       "coordinates": {
         "lat": 24.9242,
         "lng": 118.5908
@@ -2886,13 +2886,13 @@
         "Тихий район",
         "Хороший завтрак"
       ],
-      "bookingTips": "Best location for nature lovers."
+      "bookingTips": "Лучшее место для любителей природы."
     },
     {
       "name": "7 дней, отель Цюаньчжоу Наньцзюнь Лэйн",
       "nameEn": "7 Days Inn Quanzhou Nanjun Lane",
       "budget": "budget",
-      "priceRange": "¥100-200/night",
+      "priceRange": "100–200 юаней/ночь",
       "address": "Наньцзюнь Лэйн, район Личэн",
       "coordinates": {
         "lat": 24.9062,
@@ -2904,14 +2904,14 @@
         "В центре",
         "Базово, но чисто"
       ],
-      "bookingTips": "Ultra-budget option."
+      "bookingTips": "Сверхбюджетный вариант."
     },
     {
       "name": "Гостевой дом Цюаньчжоу Инбинь",
       "nameEn": "Quanzhou Guest Hotel",
       "budget": "luxury",
-      "priceRange": "¥600-1100/night",
-      "address": "Licheng District",
+      "priceRange": "600–1100 юаней/ночь",
+      "address": "Район Личэн",
       "coordinates": {
         "lat": 24.9142,
         "lng": 118.5888
@@ -2922,14 +2922,14 @@
         "Красивые сады",
         "Традиционная архитектура"
       ],
-      "bookingTips": "Experience local government hospitality."
+      "bookingTips": "Оцените гостеприимство местных властей."
     },
     {
       "name": "Отель Aile в Цзиньцзяне",
       "nameEn": "Jinjiang Aile Hotel",
       "budget": "mid-range",
-      "priceRange": "¥280-500/night",
-      "address": "Jinjiang District",
+      "priceRange": "280-500¥/ночь",
+      "address": "Район Цзиньцзян",
       "coordinates": {
         "lat": 24.8342,
         "lng": 118.5708
@@ -2940,14 +2940,14 @@
         "Ресторан",
         "Хорошее соотношение цены и качества"
       ],
-      "bookingTips": "Good for nightlife enthusiasts."
+      "bookingTips": "Подходит для любителей ночной жизни."
     },
     {
       "name": "Проживание в гостевом доме в Цюаньчжоу",
       "nameEn": "Quanzhou Homestay Experience",
       "budget": "mid-range",
-      "priceRange": "¥200-450/night",
-      "address": "Historic District",
+      "priceRange": "200–450 юаней/ночь",
+      "address": "Исторический район",
       "coordinates": {
         "lat": 24.9022,
         "lng": 118.5908
@@ -2958,13 +2958,13 @@
         "Местный опыт",
         "Персональные хозяева"
       ],
-      "bookingTips": "Best for cultural immersion."
+      "bookingTips": "Лучшее место для погружения в культуру."
     },
     {
       "name": "Пляжный дом в Хуэйане",
       "nameEn": "Hui'an Beach Resort",
       "budget": "mid-range",
-      "priceRange": "¥350-700/night",
+      "priceRange": "350–700 юаней/ночь",
       "address": "Уезд Хуэйань",
       "coordinates": {
         "lat": 24.8742,
@@ -2976,14 +2976,14 @@
         "Вид на океан",
         "Свежие морепродукты"
       ],
-      "bookingTips": "Perfect for beach vacation."
+      "bookingTips": "Идеально для пляжного отдыха."
     },
     {
       "name": "Отель Pullman в Цюаньчжоу",
       "nameEn": "Pullman Quanzhou",
       "budget": "luxury",
-      "priceRange": "¥700-1300/night",
-      "address": "Financial District",
+      "priceRange": "700–1300 юаней/ночь",
+      "address": "Финансовый район",
       "coordinates": {
         "lat": 24.9242,
         "lng": 118.5858
@@ -2994,14 +2994,14 @@
         "Бар на крыше",
         "Тренажерный зал и бассейн"
       ],
-      "bookingTips": "Best international luxury option."
+      "bookingTips": "Лучший вариант международного уровня класса люкс."
     },
     {
       "name": "Отель Цюаньчжоу Авиационный",
       "nameEn": "Quanzhou Aviation Hotel",
       "budget": "mid-range",
-      "priceRange": "¥300-550/night",
-      "address": "Near Airport",
+      "priceRange": "300-550¥/ночь",
+      "address": "Близко к аэропорту",
       "coordinates": {
         "lat": 24.8042,
         "lng": 118.6758
@@ -3012,30 +3012,30 @@
         "Бесплатная парковка",
         "Удобно для ранних рейсов"
       ],
-      "bookingTips": "Best for early/late flights."
+      "bookingTips": "Лучший вариант для ранних/поздних рейсов."
     }
   ],
   "payment": [
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Universal in Quanzhou",
+      "description": "Universal в Цюаньчжоу",
       "howToUse": [
-        "Download before arrival"
+        "Скачайте до прибытия"
       ],
       "tips": [
-        "Works at all merchants"
+        "Действует во всех магазинах"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Accepted everywhere",
+      "description": "Принимается везде",
       "howToUse": [
-        "WeChat required"
+        "Требуется WeChat"
       ],
       "tips": [
-        "Set to English mode"
+        "Переключить на английский режим"
       ]
     },
     {
@@ -3046,7 +3046,7 @@
         "ATM везде"
       ],
       "tips": [
-        "Keep 200¥ for markets"
+        "Держите 200 юаней для рынков"
       ]
     }
   ],
@@ -3164,85 +3164,85 @@
     {
       "type": "ambulance",
       "name": "泉州急救中心",
-      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
+      "nameEn": "Quanzhou Emergency Center",
       "phone": "120"
     },
     {
       "type": "police",
       "name": "泉州市公安局",
-      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
+      "nameEn": "Quanzhou Public Security Bureau",
       "phone": "110"
     },
     {
       "type": "hospital",
       "name": "福建医科大学附属第二医院",
-      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
+      "nameEn": "Second Affiliated Hospital of Fujian Medical University",
       "phone": "+86 595 2275 0141",
       "address": "Гуанчжоу"
     },
     {
       "type": "fire",
       "name": "泉州消防",
-      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
+      "nameEn": "Quanzhou Fire Department",
       "phone": "119"
     },
     {
       "type": "tourism",
       "name": "泉州旅游投诉热线",
-      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
+      "nameEn": "Quanzhou Tourism Complaint Hotline",
       "phone": "0595-22132188"
     },
     {
       "type": "hospital",
       "name": "泉州市第一医院",
-      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
+      "nameEn": "Quanzhou First Hospital",
       "phone": "+86 595 2227 7001",
       "address": "Гуанчжоу"
     },
     {
       "type": "police",
       "name": "晋江公安局",
-      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
+      "nameEn": "Jinjiang Public Security Bureau",
       "phone": "0595-85681100",
       "address": "Гуанчжоу"
     },
     {
       "type": "police",
       "name": "石狮公安局",
-      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
+      "nameEn": "Shishi Public Security Bureau",
       "phone": "0595-88719110",
       "address": "Гуанчжоу"
     },
     {
       "type": "medical",
       "name": "泉州市中医院",
-      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
+      "nameEn": "Quanzhou Traditional Chinese Medicine Hospital",
       "phone": "+86 595 2278 5041",
       "address": "Гуанчжоу"
     },
     {
       "type": "traffic",
       "name": "泉州交通事故报警",
-      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
+      "nameEn": "Quanzhou Traffic Accident",
       "phone": "122"
     },
     {
       "type": "consumer",
       "name": "消费者投诉热线",
-      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
+      "nameEn": "Consumer Rights Hotline",
       "phone": "12315"
     },
     {
       "type": "foreign",
       "name": "福建省外事办公室",
-      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
+      "nameEn": "Fujian Foreign Affairs Office",
       "phone": "+86 591 87841370",
       "address": "Гуанчжоу"
     },
     {
       "type": "embassy",
       "name": "中国外交部全球领事保护",
-      "nameEn": "Генеральное консульство Сингапура в Гуанчжоу",
+      "nameEn": "China Ministry of Foreign Affairs Consular Protection",
       "phone": "+86 10 12308",
       "address": "Гуанчжоу"
     }
