@@ -107,9 +107,9 @@ try {
     const page = await ctx.newPage();
     let title = "", text = "", status = "ERR";
     try {
-      const resp = await page.goto(url, { waitUntil: "networkidle", timeout: 45000 });
+      const resp = await page.goto(url, { waitUntil: "load", timeout: 30000 });
       status = resp ? resp.status() : "NO-RESP";
-      await page.waitForTimeout(900);
+      await page.waitForTimeout(600);
       title = await page.title();
       text = await page.evaluate(() => document.body ? document.body.innerText : "");
     } catch (e) {
@@ -139,3 +139,4 @@ for (const r of results) {
 lines.push(`\nTOTAL pages: ${results.length}, pages-with-issues: ${results.filter((r) => r.issues.length).length}, issues: ${totalIssues}`);
 fs.writeFileSync(outFile, lines.join("\n"), "utf8");
 console.log(`\nwrote ${outFile}`);
+

@@ -529,11 +529,11 @@ const mapMarkers = [
           <h2 class="section-title flex items-center gap-3">
             <span class="text-2xl">🚇</span> <span data-i18n="cityPage.sectionTransport" data-i18n-vars='{"city": city.nameEn}'>{_lookup("cityPage.sectionTransport")}</span>
           </h2>
-          <p class="section-subtitle" data-i18n="cityPage.transportSubtitle">Getting to and around {city.nameEn}</p>
+          <p class="section-subtitle" data-i18n="cityPage.transportSubtitle" data-i18n-vars='{"city": localCityName}'>Getting to and around {city.nameEn}</p>
 
           <!-- Getting There -->
           <div class="mb-8">
-            <h3 class="text-lg font-semibold mb-4" data-i18n="cityPage.gettingTo">Getting to {city.nameEn}</h3>
+            <h3 class="text-lg font-semibold mb-4" data-i18n="cityPage.gettingTo" data-i18n-vars='{"city": localCityName}'>Getting to {city.nameEn}</h3>
             <div class="space-y-4">
               {city.transport.arrival.map(option => (
                 <div class="bg-white border rounded-xl p-6">
@@ -681,7 +681,7 @@ const mapMarkers = [
               class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-teal-500 to-blue-500 text-white rounded-xl font-semibold text-sm hover:from-teal-600 hover:to-blue-600 transition-all shadow-md hover:shadow-lg"
             >
               <span>🏨</span>
-              <span data-i18n="cityPage.viewAllHotels">View all {totalHotelCount} hotels</span>
+              <span data-i18n="cityPage.viewAllHotels" data-i18n-vars='{"totalHotelCount": totalHotelCount, "count": totalHotelCount, "n": totalHotelCount}'>View all {totalHotelCount} hotels</span>
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>

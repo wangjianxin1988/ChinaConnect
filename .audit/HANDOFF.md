@@ -935,3 +935,14 @@ for lang in LANGS:
 - **城市数据 CJK（fix-city-data-cjk-v2.mjs）**：fr 2539 / de 2419 / ko 2057 / ru 2250 / vi 2292 / th 2284 已应用；**ar/fa 正在跑**（~50%）。未译残留集中在 qingdao priceRange（人均/晚）等价格字段 + 少量 culturalTips 散文 → 由 EN 修复器 CJK pass 兜底。
 - **在飞**：EN 修复链（PID 33816，ko→th→vi→ru→fr→de→zh-CN→zh-TW 串行）+ ar/fa CJK（PID 28644/28720）。共 3 并发。
 - **下步**：等 ar/fa 完成 → 补跑 EN 修复器 ar/fa → 全语言 EN 残留清零验证 → Phase 5 页面级扫描（guide/apps/紧急联系人 + 全 URL）→ Phase 6 build/typecheck/check:i18n + EN 零中文终验 → 提交 + 本日志更新。
+### 2026-08-16 会话 #16（EN 自引用键修复 + emergency SSR 崩溃修复 + de 全量提交 + 根级重定向）
+
+- **起**：延续 #14/#15 目标模式。用户硬性要求重申：guide/apps/紧急联系人 10 语言全做 + 遗漏页面检查（严格全量）；开工前 git 提交；EN 版 100% 英文零中文。当前在飞：EN 修复链（zh-CN 进行中，PID 28784）。
+- **已提交（本会话）**：
+  - `cd3ff7b`：de 全量 EN-fix（5542 字段，untranslated 393 多为德英同形词）+ offline EN 零中文（删 7 条中文短语，保留英文+拼音）+ **根级 `/city/{slug}/{section}` 301 重定向页**（transport/payment/sim→connectivity/apps/culture/emergency，35 城×6 节，解决旧链接 404 遗漏页）。
+  - `ee26af9`：**EN 自引用键修复（重大 bug）**——EN 字典 65 个条目值 = 键路径（如 `home.heroDesc`、`nav.attractions`、`auth.signIn`），运行时直接把键名写进 DOM，**线上 EN 站可见原始键名**（已用 Playwright + curl 实锤 `chinaengage.org`）。修复来源：git 历史恢复 14 条 + 模板 fallback 收割 + 语义翻译死键。另修 ja/ko `language.*` 死键。修复后 `git diff` 71+71 行，import 通过，Playwright 复验 `/`、`/emergency/`、`/guide` 键名残留 = 0。
+  - `261ed65`：**GPSLocator `lang` 未定义 → SSR ReferenceError**（cc271dc 引入：把硬编码英文换成 `gpsT(lang,...)` 但组件签名没有 `lang`）。导致 emergency 页（全部语言 + 根级）dev 流式输出在 GPSLocator 处截断（无 footer/runtime/`</html>`），扫描器对 emergency 页的 EN 残留全是假阳性。**生产 build 也会因此失败**（dist 17:27 是 cc271dc 之前构建的，掩盖了问题）。修复：`GPSLocatorProps` 加 `lang?: string` + 签名默认 `"en"`（与 EmergencyCard/EmbassyLocator 一致）。修复后 12 语言 emergency 页 dev 完整渲染（19 islands）。
+- **重大发现**：`git log -S "home.heroDesc"` 显示 EN 自引用值从 12 语言翻译提交（c92df9b/bb86a9e）就存在，属于"identical-to-en 清理"的副作用——把未译值替换成键路径时漏了 EN 本身。已全部修复。
+- **在飞**：EN 修复链仍在 zh-CN（PID 28784，DeepSeek 指数退避，慢但存活）；dev server 已重启（新实例，日志 `.audit/_dev_server.log`）。
+- **下步**：等链完成（zh-CN→zh-TW，日志 `ALL DONE`）→ 对 zh-CN/zh-TW 跑 `fix-city-data-residual.mjs --fast --deep-only` 再全量；de 再收敛一次 → nameEn 验证 → Phase 5 扫描（guide/apps/紧急 10 语言，dev server 现已可靠）→ Phase 6 check-i18n + `pnpm astro build`（**必须先修 GPSLocator 才能 build**，已修）→ EN 零中文终验 → HANDOFF 收尾提交。
+- **注意**：写 translations.ts 必须保持 CRLF；`.audit/_*.cjs` 被 gitignore（诊断脚本不入库）。
