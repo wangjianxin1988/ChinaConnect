@@ -49,7 +49,7 @@ def cjk_fragments(html):
     body = strip_noise(html)
     return [m.group(0) for m in CJK.finditer(body)]
 
-SIMPLIFIED = set('门们国这长为东车红经间见进说时书万与个来对发会开动东西风头飞云电电话话样样哪里这里些关问题张专业乡历史严丽举义气门们们')
+SIMPLIFIED = set('门们国这为长东车红经间见进说时书万与个来对发会开动风头飞云电电话样张专业乡历严丽举义气')
 def simplified_runs(html):
     body = strip_noise(html)
     runs = []

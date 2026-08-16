@@ -48,15 +48,31 @@ if (fs.existsSync(outFile)) {
   const re = /^\s*"((?:[^"\\]|\\.)*)"\s*:\s*"((?:[^"\\]|\\.)*)",?\s*$/gm;
   for (const m of text.matchAll(re)) existing[unescapeTs(m[1])] = unescapeTs(m[2]);
 }
+// Seed zh-TW from the completed zh-CN dictionary (values are Simplified Chinese;
+// the zhconv pass converts them to Traditional after the run).
+if (lang === "zh-TW") {
+  const cnFile = "src/data/guide/overrides-zh-CN.ts";
+  if (fs.existsSync(cnFile)) {
+    const text = fs.readFileSync(cnFile, "utf8");
+    const re = /^\s*"((?:[^"\\]|\\.)*)"\s*:\s*"((?:[^"\\]|\\.)*)",?\s*$/gm;
+    for (const m of text.matchAll(re)) {
+      if (existing[unescapeTs(m[1])] === undefined) existing[unescapeTs(m[1])] = unescapeTs(m[2]);
+    }
+  }
+}
 
 const hasCJK = (s) => /[\u3400-\u9fff]/.test(s);
+const hasKana = (s) => /[\u3040-\u30ff]/.test(s);
+// Genuine Chinese source: Han characters and NO kana (Japanese strings must be translated).
+const isZhSource = (s) => hasCJK(s) && !hasKana(s);
 // For zh-CN / zh-TW, Chinese strings stay as-is (zhconv pass handles zh-TW conversion).
 // For other languages, re-translate identity values and values with foreign scripts.
 const needsApi = strings.filter((s) => {
   const v = existing[s];
   if (v === undefined) return true;
   if (lang === "zh-CN" || lang === "zh-TW") {
-    if (hasCJK(s)) return false; // Chinese stays as-is
+    if (isZhSource(s)) return false; // Chinese stays as-is (zh-TW converted by zhconv pass)
+    if (v === s && !isKeepableToken(s)) return true; // non-Chinese identity not keepable -> refill
   } else {
     if (v === s && !isKeepableToken(s)) return true; // identity not keepable -> refill
   }

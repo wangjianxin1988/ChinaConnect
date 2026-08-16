@@ -45,18 +45,21 @@ const DISALLOWED = {
 };
 const disallow = DISALLOWED[lang];
 const hasCJK = (s) => /[\u3400-\u9fff]/.test(s);
+const hasKana = (s) => /[\u3040-\u30ff]/.test(s);
+const isZhSource = (s) => hasCJK(s) && !hasKana(s);
 let bad = 0, cont = 0, total = 0, junk = 0, missing = 0;
 const covered = new Set();
+const badKeys = [], contKeys = [];
 for (const p of paths) {
   for (const [k, v] of parse(p)) {
     if (REAL_KEYS.size > 0 && kind === "guide" && !REAL_KEYS.has(k)) { junk++; continue; }
     covered.add(k);
     total++;
     if (v === k) {
-      const legalZhIdentity = (lang === "zh-CN" || lang === "zh-TW") && hasCJK(k);
-      if (!legalZhIdentity && !isKeepableToken(k)) bad++;
+      const legalZhIdentity = (lang === "zh-CN" || lang === "zh-TW") && isZhSource(k);
+      if (!legalZhIdentity && !isKeepableToken(k)) { bad++; badKeys.push({ key: k, value: v }); }
     } else if (disallow && disallow.test(v)) {
-      cont++;
+      cont++; contKeys.push({ key: k, value: v });
     }
   }
 }
@@ -65,4 +68,5 @@ if (REAL_KEYS.size > 0 && kind === "guide") {
     if (!covered.has(k)) missing++;
   }
 }
-console.log(JSON.stringify({ lang, kind, total, bad, cont, junk, missing }));
+const keysMode = process.argv.includes("--keys");
+console.log(JSON.stringify(keysMode ? { lang, kind, total, bad, cont, junk, missing, badKeys, contKeys } : { lang, kind, total, bad, cont, junk, missing }));

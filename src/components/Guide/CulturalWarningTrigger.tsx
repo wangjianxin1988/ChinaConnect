@@ -257,7 +257,7 @@ export function CulturalWarningTrigger({
               title="Don't show for this city again"
             >
               {typeof navigator !== "undefined" && navigator.language?.startsWith("zh")
-                ? (lang === "zh-CN" || lang === "zh-TW" ? "不再显示" : localized("Don't show again", "今後表示しない", lang))
+                ? localized("Don't show again", "今後表示しない", lang)
                 : "Hide for City"}
             </button>
             <button
@@ -265,7 +265,7 @@ export function CulturalWarningTrigger({
               className={`px-3 py-1.5 rounded-lg text-xs font-medium ${style.text} bg-black/10 hover:bg-black/20 transition-colors`}
             >
               {typeof navigator !== "undefined" && navigator.language?.startsWith("zh")
-                ? (lang === "zh-CN" || lang === "zh-TW" ? "知道了" : localized("Got it", "閉じる", lang))
+                ? localized("Got it", "閉じる", lang)
                 : "Got it"}
             </button>
           </div>
