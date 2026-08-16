@@ -14,6 +14,7 @@ interface UserLocation {
 
 interface GPSLocatorProps {
   className?: string;
+  lang?: string;
 }
 
 interface NearbyPlace {
@@ -26,7 +27,7 @@ interface NearbyPlace {
   icon: string;
 }
 
-export function GPSLocator({ className = "" }: GPSLocatorProps) {
+export function GPSLocator({ className = "", lang = "en" }: GPSLocatorProps) {
   const [location, setLocation] = useState<UserLocation | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
