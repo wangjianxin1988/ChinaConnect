@@ -5144,7 +5144,7 @@ export const FA_GUIDE_OVERRIDES: Record<string, string> = {
   "坚持要去特定的餐厅/商店": "استراتژی‌های فروش اجباری",
   "强行推销策略": "فقط از طریق آژانس‌های معتبر رزرو کنید",
   "Book through certified agencies only": "اعتبارنامه راهنما را بررسی کنید",
-  "Verify guide credentials": "Verify guide credentials",
+  "Verify guide credentials": "اعتبارنامه راهنما را بررسی کنید",
   "Use audio guides or official apps": "از راهنماهای صوتی یا اپلیکیشنهای رسمی استفاده کنید",
   "Join group tours from reputable companies": "به تورهای گروهی از شرکتهای معتبر بپیوندید",
   "Ignore unsolicited approach": "به افرادی که خودسرانه نزدیک میشوند توجه نکنید",
