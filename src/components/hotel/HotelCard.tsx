@@ -160,7 +160,8 @@ export function HotelCard({ hotel, onClick, compact = false, lang = "en" }: Hote
   // (untranslated source name), e.g. on the English page or for untranslated rows.
   const nameHasCJK = /[\u3400-\u9fff]/.test(hotel.name || "");
   const displayName = isCJKName ? hotel.name : (nameHasCJK ? hotel.nameEn || hotel.name : hotel.name);
-  const secondaryName = isCJKName && hotel.nameEn && hotel.nameEn !== hotel.name ? hotel.nameEn : "";
+  // Per project i18n standard, non-EN pages must not show English secondary names.
+  const secondaryName = "";
 
   return (
     <div

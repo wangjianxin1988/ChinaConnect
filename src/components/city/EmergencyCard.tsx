@@ -67,8 +67,8 @@ export function EmergencyCard({ contact, compact = false, lang = "en" }: Emergen
   const displayName = isCJK && contact.name
     ? contact.name
     : (localised || EMERGENCY_NAMES_L10N[lang]?.[contact.nameEn] || contact.nameEn || contact.name);
-  const showSecondary = lang === "zh-CN" || lang === "zh-TW" || lang === "ja";
-  const secondaryName = showSecondary ? ((displayName === contact.nameEn) ? contact.name : contact.nameEn) : "";
+  // Per project i18n standard, non-EN pages must not show English secondary names.
+  const secondaryName = "";
 
   return (
     <div className="bg-white border border-gray-100 rounded-xl p-4 hover:shadow-md transition-shadow">
