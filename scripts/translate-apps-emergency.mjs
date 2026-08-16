@@ -56,8 +56,9 @@ async function callChat(prompt) {
   const body = { model: MODEL, messages: [{ role: "user", content: prompt }], temperature: 0.2, max_tokens: 4000 };
   const res = await fetch(`${HOST}/v1/chat/completions`, {
     method: "POST",
-    headers: { Authorization: `Bearer ${KEY}`, "Content-Type": "application/json" },
+    headers: { Authorization: `Bearer ${KEY}`, "Content-Type": "application/json", Connection: "close" },
     body: JSON.stringify(body),
+    signal: AbortSignal.timeout(120000),
   });
   if (!res.ok) throw new Error(`HTTP ${res.status}: ${(await res.text()).slice(0, 200)}`);
   return res.json().then((j) => j.choices?.[0]?.message?.content);

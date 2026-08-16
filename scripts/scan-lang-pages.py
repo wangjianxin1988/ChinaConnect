@@ -21,6 +21,13 @@ def ja_urls():
     return out
 
 def lang_url(lang, ja_path):
+    if lang == 'en':
+        # EN uses non-prefixed routes (/, /cities/, ...)
+        if ja_path == '/ja/':
+            return '/'
+        if ja_path.startswith('/ja'):
+            return ja_path[3:]  # '/ja/xxx' -> '/xxx'
+        return ja_path
     if ja_path == '/ja/':
         return f'/{lang}/'
     if ja_path.startswith('/ja'):

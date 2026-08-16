@@ -206,6 +206,7 @@ async function callChat(prompt) {
     headers: {
       Authorization: `Bearer ${KEY}`,
       "Content-Type": "application/json",
+      Connection: "close",
     },
     body: JSON.stringify(body),
   });

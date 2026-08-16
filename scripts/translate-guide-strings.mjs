@@ -77,8 +77,9 @@ async function callChat(prompt) {
   const body = { model: MODEL, messages: [{ role: "user", content: prompt }], temperature: 0.2, max_tokens: 8000 };
   const res = await fetch(`${HOST}/v1/chat/completions`, {
     method: "POST",
-    headers: { Authorization: `Bearer ${KEY}`, "Content-Type": "application/json" },
+    headers: { Authorization: `Bearer ${KEY}`, "Content-Type": "application/json", Connection: "close" },
     body: JSON.stringify(body),
+    signal: AbortSignal.timeout(120000),
   });
   if (!res.ok) throw new Error(`HTTP ${res.status}: ${(await res.text()).slice(0, 200)}`);
   const payload = await res.json();
@@ -146,9 +147,24 @@ ${lines}`;
       }
       remaining.splice(0, remaining.length, ...newRemaining);
     } catch (error) {
-      console.warn(`  retry ${attempt}: ${error?.message || error}`);
+      const snip = String(content || "").slice(0, 120).replace(/\n/g, " ");
+      console.warn(`  retry ${attempt}: ${error?.message || error}${snip ? ` | resp: ${snip}` : ""}`);
     }
-    await new Promise((resolve) => setTimeout(resolve, 1000 * attempt * attempt));
+    await new Promise((resolve) => setTimeout(resolve, 600 * attempt));
+  }
+  if (remaining.length > 0) {
+    // Single-key fallback (bounded): smaller responses succeed more often.
+    for (const s of remaining) {
+      try {
+        const [one] = await translateBatch([s]);
+        if (one !== undefined) accepted.push(one);
+        else accepted.push(undefined);
+      } catch {
+        accepted.push(undefined);
+      }
+      await new Promise((resolve) => setTimeout(resolve, 200));
+    }
+    console.warn(`  fallback: ${remaining.length} keys single-key`);
   }
   return accepted;
 }
@@ -158,20 +174,29 @@ for (let i = 0; i < needsApi.length; i += BATCH_SIZE) {
   const startedAt = Date.now();
   const results = await translateBatch(batch);
   batch.forEach((s, idx) => { existing[s] = results[idx] ?? existing[s] ?? s; });
-  writeFile();
+  await writeFile();
   const elapsed = Date.now() - startedAt;
   console.log(`  [${new Date().toISOString().slice(11, 19)}] batch ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(needsApi.length / BATCH_SIZE)} done ${results.length}/${batch.length} in ${elapsed}ms`);
 }
 
-function writeFile() {
+async function writeFile() {
   const entries = strings.map((s) => `  "${escapeTs(s)}": "${escapeTs(existing[s] ?? s)}",`).join("\n");
   const content = `// Auto-generated ${lang} override dictionary for guide data.
 // Key: original string (EN or ZH) -> ${TARGETS[lang]}.
 export const ${lang.toUpperCase().replace("-", "_")}_GUIDE_OVERRIDES: Record<string, string> = {\n${entries}\n};\n`;
   const tmp = `${outFile}.tmp`;
-  fs.writeFileSync(tmp, content, "utf8");
-  fs.renameSync(tmp, outFile);
+  for (let attempt = 1; attempt <= 5; attempt += 1) {
+    try {
+      fs.writeFileSync(tmp, content, "utf8");
+      fs.renameSync(tmp, outFile);
+      return;
+    } catch (error) {
+      if (attempt === 5) throw error;
+      console.warn(`  write retry ${attempt}: ${error?.code || error}`);
+      await new Promise((resolve) => setTimeout(resolve, 800 * attempt));
+    }
+  }
 }
-writeFile();
+await writeFile();
 console.log(`[${lang}] done: ${Object.keys(existing).length} entries -> ${outFile}`);
 

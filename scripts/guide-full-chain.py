@@ -49,8 +49,10 @@ def run_task(kind, lang, logfile):
     log(f"RUN {kind} {lang}")
     with open(logfile, "wb") as f:
         env = dict(os.environ)
-        env["TRANSLATE_PROVIDER"] = env.get("TRANSLATE_PROVIDER", "deepseek")
+        env["TRANSLATE_PROVIDER"] = env.get("TRANSLATE_PROVIDER", "dashscope")
         p = subprocess.run(["node", script, f"--lang={lang}"], stdout=f, stderr=subprocess.STDOUT, env=env)
+    if kind == "guide" and lang == "zh-TW":
+        subprocess.run(["uv", "run", "--no-project", "--with", "zhconv", "python", "scripts/fix-zh-tw-guide.py"], check=False)
     return p.returncode
 
 def main():
@@ -102,4 +104,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
