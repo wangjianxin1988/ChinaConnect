@@ -3,12 +3,12 @@
   "name": "成都",
   "nameEn": "Chengdu",
   "country": "China",
-  "population": "21.24 million",
+  "population": "21,24 millions",
   "coordinates": {
     "lat": 30.6587,
     "lng": 104.0658
   },
-  "timezone": "UTC+8 (China Standard Time)",
+  "timezone": "UTC+8 (heure normale de la Chine)",
   "description": "Chengdu, capitale de la province du Sichuan, est connue comme la 'ville de la détente' pour son style de vie décontracté, sa cuisine épicée et les pandas géants. Berceau de l'ancienne culture Shu, elle offre des maisons de thé relaxantes, des hotpots épicés, la rue historique de Jinli, et la proximité des paysages spectaculaires de Jiuzhaigou et du Bouddha géant de Leshan.",
   "coverImage": "/img/ext/ee9d4784d80e.webp",
   "highlights": [
@@ -19,18 +19,18 @@
     "Opéra du Sichuan - Spectacle traditionnel de changement de visage"
   ],
   "climate": {
-    "type": "Subtropical humid",
+    "type": "Humide subtropical",
     "bestMonths": [
-      "March",
-      "April",
-      "May",
-      "September",
-      "October",
-      "November"
+      "Mars",
+      "Avril",
+      "Mai",
+      "Septembre",
+      "Octobre",
+      "Novembre"
     ],
     "avgSummerTemp": "26C (79F)",
     "avgWinterTemp": "6C (43F)",
-    "tips": "Best visited in spring and autumn. Summers hot and humid but indoor AC everywhere. Winters mild but foggy. Rain common year-round. Bring umbrella."
+    "tips": "Meilleure période de visite au printemps et en automne. Étés chauds et humides mais climatisation intérieure partout. Hivers doux mais brumeux. Pluies fréquentes toute l'année. Apportez un parapluie."
   },
   "attractions": [
     {
@@ -1449,7 +1449,7 @@
       "id": "chengdu-9",
       "name": "马旺子川小馆",
       "nameEn": "Prince Ma",
-      "type": "Black Pearl",
+      "type": "Perle noire",
       "diamond": 1,
       "cuisine": "Sichuanaise",
       "avgPrice": 120,
@@ -1593,7 +1593,7 @@
         "Plateau de champignons"
       ],
       "tags": [
-        "hot pot",
+        "fondue chinoise",
         "haut de gamme",
         "sichuanais"
       ],
@@ -2056,7 +2056,7 @@
       "id": "chengdu-28",
       "name": "蜀绣香",
       "nameEn": "Shuxiu Xiang",
-      "type": "Black Pearl",
+      "type": "Perle noire",
       "diamond": 1,
       "cuisine": "Sichuanaise",
       "avgPrice": 180,
@@ -2389,7 +2389,7 @@
       "name": "正宗火锅",
       "nameEn": "Fondue chinoise authentique (hot pot)",
       "type": "Cuisine locale",
-      "cuisine": "Hot pot",
+      "cuisine": "Fondue chinoise",
       "avgPrice": 74,
       "rating": 4,
       "address": "178, rue de la Gastronomie, district de Wuhou, Chengdu",
@@ -2401,7 +2401,7 @@
       "hours": "06:00-14:00",
       "description": "Un restaurant de hot pot recommandé par les habitants de Chengdu, avec un goût authentique et des prix abordables",
       "dishHighlights": [
-        "Hot pot",
+        "Fondue chinoise",
         "Chuan Chuan Xiang (brochettes de hot pot)",
         "Long Chao Shou (raviolis dragon)"
       ],
@@ -2753,28 +2753,28 @@
         "to": "Aéroport international de Chengdu Tianfu (TFU)",
         "duration": "Variable (10-14 heures depuis l'Europe/les Amériques)",
         "price": "1000-8000¥",
-        "frequency": "Multiple daily flights",
+        "frequency": "Plusieurs vols quotidiens",
         "tips": "Le nouvel aéroport (TFU) a ouvert en 2021 avec une connexion au métro. L'ancien aéroport de Shuangliu dessert également certains vols."
       },
       {
         "type": "train",
         "from": "Pékin (7,5h), Shanghai (10h), Xian (3h)",
         "to": "Gare de l'Est de Chengdu / Gare de Chengdu",
-        "duration": "3-10 hours",
+        "duration": "3 à 10 heures",
         "price": "350-900¥",
-        "frequency": "Frequent departures",
+        "frequency": "Départs fréquents",
         "tips": "Réseau ferroviaire à grande vitesse bien connecté. Réservez tôt pour les itinéraires populaires."
       }
     ],
     "local": {
       "metro": [
         "12 lignes couvrant la ville et les banlieues",
-        "Single ride: 2-10¥",
+        "Trajet simple : 2-10¥",
         "Signalétique en anglais en amélioration",
         "Ligne 1 vers la base des pandas, ligne 2 vers Jinli"
       ],
       "bus": [
-        "Extensive network",
+        "Réseau étendu",
         "Vélos en bambou (zhongbao) utiles pour les courts trajets",
         "Téléchargez l'application pour la navigation en anglais"
       ],
@@ -2785,7 +2785,7 @@
       ],
       "bike": [
         "Hellobike, Mobike, Meituan disponibles",
-        "Unlock: 1.5¥",
+        "Déverrouillage : 1,5¥",
         "Bon pour les courts trajets dans le centre",
         "De nombreuses pistes cyclables dédiées"
       ]
@@ -2796,7 +2796,7 @@
       "name": "成都瑞吉酒店",
       "nameEn": "The St. Regis Chengdu",
       "budget": "luxury",
-      "priceRange": "¥1800-3500/night",
+      "priceRange": "1800-3500 ¥/nuit",
       "address": "88 Tianhua Middle Rd, district de Jinjiang",
       "coordinates": {
         "lat": 30.6555,
@@ -2808,13 +2808,13 @@
         "Spa luxueux",
         "Service excellent"
       ],
-      "bookingTips": "Request higher floors for views."
+      "bookingTips": "Demandez des étages supérieurs pour la vue."
     },
     {
       "name": "成都博舍",
       "nameEn": "The Temple House",
       "budget": "luxury",
-      "priceRange": "¥2000-4000/night",
+      "priceRange": "2000-4000 ¥/nuit",
       "address": "81 Bitieshi Rd, district de Jinjiang",
       "coordinates": {
         "lat": 30.6585,
@@ -2826,13 +2826,13 @@
         "Service exceptionnel",
         "Excellente cuisine"
       ],
-      "bookingTips": "One of Chengdu's best hotels. Book far ahead."
+      "bookingTips": "L'un des meilleurs hôtels de Chengdu. Réservez longtemps à l'avance."
     },
     {
       "name": "成都香格里拉大酒店",
       "nameEn": "Shangri-La Hotel Chengdu",
       "budget": "mid",
-      "priceRange": "¥900-1800/night",
+      "priceRange": "900-1800 ¥/nuit",
       "address": "9 Binjiang East Rd, district de Jinjiang",
       "coordinates": {
         "lat": 30.6535,
@@ -2844,13 +2844,13 @@
         "Emplacement central",
         "Bonnes installations"
       ],
-      "bookingTips": "River-view rooms worth extra."
+      "bookingTips": "Les chambres avec vue sur la rivière valent le supplément."
     },
     {
       "name": "成都希尔顿酒店",
       "nameEn": "Hilton Chengdu",
       "budget": "mid",
-      "priceRange": "¥600-1200/night",
+      "priceRange": "600-1200 ¥/nuit",
       "address": "666 Tianfu Avenue, zone de haute technologie",
       "coordinates": {
         "lat": 30.6435,
@@ -2862,13 +2862,13 @@
         "Idéal pour les affaires",
         "Installations modernes"
       ],
-      "bookingTips": "Good value for business travelers."
+      "bookingTips": "Bon rapport qualité-prix pour les voyageurs d'affaires."
     },
     {
       "name": "成都太古里春熙亚朵酒店",
       "nameEn": "Atour Hotel Chunxi Road",
       "budget": "budget",
-      "priceRange": "¥400-800/night",
+      "priceRange": "400-800¥/nuit",
       "address": "99 Baihua Rd, district de Jinjiang",
       "coordinates": {
         "lat": 30.6595,
@@ -2880,13 +2880,13 @@
         "Excellent rapport qualité-prix",
         "Bon petit-déjeuner"
       ],
-      "bookingTips": "Best budget option near major shopping."
+      "bookingTips": "Meilleure option économique près des grands centres commerciaux."
     },
     {
       "name": "W Chengdu",
       "nameEn": "W Chengdu",
       "budget": "luxury",
-      "priceRange": "¥1500-3000/night",
+      "priceRange": "1500-3000 ¥/nuit",
       "address": "1199 avenue Kaifa, zone de haute technologie",
       "coordinates": {
         "lat": 30.6455,
@@ -2898,13 +2898,13 @@
         "Bar sur le toit",
         "Ambiance tendance"
       ],
-      "bookingTips": "Request high floor for city views."
+      "bookingTips": "Demandez un étage élevé pour la vue sur la ville."
     },
     {
       "name": "JW Marriott Hotel Chengdu",
       "nameEn": "JW Marriott Hotel Chengdu",
       "budget": "luxury",
-      "priceRange": "¥1200-2500/night",
+      "priceRange": "1200-2500 yuans/nuit",
       "address": "388 section est du pont Dongmen, district de Jinjiang",
       "coordinates": {
         "lat": 30.6465,
@@ -2916,13 +2916,13 @@
         "Spa luxueux",
         "Gastronomie raffinée"
       ],
-      "bookingTips": "Good for business travelers."
+      "bookingTips": "Adapté aux voyageurs d'affaires."
     },
     {
       "name": "Kempinski Hotel Chengdu",
       "nameEn": "Kempinski Hotel Chengdu",
       "budget": "mid",
-      "priceRange": "¥800-1500/night",
+      "priceRange": "800-1500 ¥/nuit",
       "address": "88 Section 2, South Renmin Rd, district de Wuhou",
       "coordinates": {
         "lat": 30.6375,
@@ -2934,13 +2934,13 @@
         "Style européen",
         "Bon petit-déjeuner"
       ],
-      "bookingTips": "Weekend rates often lower."
+      "bookingTips": "Les tarifs du week-end sont souvent plus bas."
     },
     {
       "name": "Ascott Raffles City Chengdu",
       "nameEn": "Ascott Raffles City Chengdu",
       "budget": "mid",
-      "priceRange": "¥600-1200/night",
+      "priceRange": "600-1200 ¥/nuit",
       "address": "1 Section 3, South Ring Rd, district de Wuhou",
       "coordinates": {
         "lat": 30.6395,
@@ -2952,13 +2952,13 @@
         "Près de la station de métro",
         "Cuisine équipée"
       ],
-      "bookingTips": "Good for long stays."
+      "bookingTips": "Idéal pour les longs séjours."
     },
     {
       "name": "Chengdu Panda Prince Theme Hotel",
       "nameEn": "Panda Prince Theme Hotel",
       "budget": "budget",
-      "priceRange": "¥300-600/night",
+      "priceRange": "300-600 ¥/nuit",
       "address": "198 Chengdu Plain, district de Chenghua",
       "coordinates": {
         "lat": 30.6715,
@@ -2970,13 +2970,13 @@
         "Près de la base des pandas",
         "Adapté aux familles"
       ],
-      "bookingTips": "Book early for Panda Base visits."
+      "bookingTips": "Réservez tôt pour les visites de la base des pandas."
     },
     {
       "name": "The Diaoyutai Boutique Hotel Chengdu",
       "nameEn": "Diaoyutai Boutique Hotel",
       "budget": "luxury",
-      "priceRange": "¥2000-4500/night",
+      "priceRange": "2000-4500¥/nuit",
       "address": "28, route Panda, district de Chenghua",
       "coordinates": {
         "lat": 30.7385,
@@ -2988,13 +2988,13 @@
         "Design chinois élégant",
         "Près de la base des pandas"
       ],
-      "bookingTips": "One of Chengdu's most exclusive hotels."
+      "bookingTips": "L'un des hôtels les plus exclusifs de Chengdu."
     },
     {
       "name": "成都锦江宾馆",
       "nameEn": "Jinjiang Hotel",
       "budget": "mid",
-      "priceRange": "¥500-900/night",
+      "priceRange": "500-900 ¥/nuit",
       "address": "80, section 1, route du périphérique sud, district de Wuhou",
       "coordinates": {
         "lat": 30.6425,
@@ -3006,13 +3006,13 @@
         "Emplacement central",
         "Service fiable"
       ],
-      "bookingTips": "Good value for money."
+      "bookingTips": "Bon rapport qualité-prix."
     },
     {
       "name": "成都浣花溪智选假日酒店",
       "nameEn": "Holiday Inn Express Chengdu Huanhua Stream",
       "budget": "budget",
-      "priceRange": "¥250-500/night",
+      "priceRange": "250-500¥/nuit",
       "address": "388, route Huanhua, district de Qingyang",
       "coordinates": {
         "lat": 30.6865,
@@ -3024,13 +3024,13 @@
         "Propre et moderne",
         "Bon petit-déjeuner inclus"
       ],
-      "bookingTips": "Best value near cultural attractions."
+      "bookingTips": "Meilleur rapport qualité-prix près des attractions culturelles."
     },
     {
       "name": "Hôtel Wangjiang de Chengdu",
       "nameEn": "Wangjiang Hotel",
       "budget": "mid",
-      "priceRange": "¥400-800/night",
+      "priceRange": "400-800¥/nuit",
       "address": "6, section nord de la route Yihuan, district de Chenghua",
       "coordinates": {
         "lat": 30.6515,
@@ -3042,13 +3042,13 @@
         "Environnement calme",
         "Bon restaurant"
       ],
-      "bookingTips": "Good for visitors to university area."
+      "bookingTips": "Idéal pour les visiteurs du quartier universitaire."
     },
     {
       "name": "Sofitel Chengdu Taihe",
       "nameEn": "Sofitel Chengdu",
       "budget": "mid",
-      "priceRange": "¥700-1400/night",
+      "priceRange": "700-1400 ¥/nuit",
       "address": "88, section sud de la route Shuangqing, district de Wuhou",
       "coordinates": {
         "lat": 30.6385,
@@ -3060,7 +3060,7 @@
         "Emplacement central",
         "Bon service"
       ],
-      "bookingTips": "Book directly for upgrades."
+      "bookingTips": "Réservez directement pour bénéficier de surclassements."
     }
   ],
   "payment": [
@@ -3069,9 +3069,9 @@
       "icon": "alipay",
       "description": "Paiement standard, accepté partout",
       "howToUse": [
-        "Download before arrival",
-        "Bind international card",
-        "QR code payment"
+        "Téléchargez avant l'arrivée",
+        "Associer une carte internationale",
+        "Paiement par code QR"
       ],
       "tips": [
         "Chengdu est une ville moderne - la plupart des endroits acceptent les cartes",
@@ -3081,10 +3081,10 @@
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Common in Chengdu",
+      "description": "Courant à Chengdu",
       "howToUse": [
-        "WeChat app required",
-        "Link card"
+        "Application WeChat requise",
+        "Lier la carte"
       ],
       "tips": [
         "Le covoiturage Didi nécessite WeChat",
@@ -3097,7 +3097,7 @@
       "description": "Utile pour les maisons de thé traditionnelles et les petits vendeurs",
       "howToUse": [
         "Gardez 100-200¥ pour les urgences",
-        "ATMs at every corner"
+        "Distributeurs automatiques à chaque coin de rue"
       ],
       "tips": [
         "Les maisons de thé traditionnelles sont principalement cash",

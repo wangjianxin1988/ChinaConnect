@@ -2679,25 +2679,25 @@
     "local": {
       "metro": [
         "เปิดให้บริการ 3 สาย",
-        "Single ride: 2-7¥",
+        "ค่าโดยสารเที่ยวเดียว: 2-7¥",
         "เชื่อมต่อพื้นที่สำคัญ",
         "สาย 1 และ 2 มีประโยชน์ที่สุดสำหรับนักท่องเที่ยว"
       ],
       "bus": [
         "เครือข่ายครอบคลุมกว้างขวาง",
-        "Single ride: 2¥",
+        "ค่าโดยสารเที่ยวเดียว: 2¥",
         "เชื่อมต่อพื้นที่ท่องเที่ยว",
         "ใช้แอปพลิเคชัน"
       ],
       "taxi": [
         "ค่าโดยสารเริ่มต้น: 10¥ (3 กม. แรก)",
         "ค่าบริการกลางคืน: 20%",
-        "Most attractions 15-50¥",
+        "สถานที่ท่องเที่ยวส่วนใหญ่ 15-50¥",
         "แนะนำให้ใช้ Didi"
       ],
       "bike": [
         "มีจักรยาน Mobike และ Meituan",
-        "Unlock: 1¥",
+        "ปลดล็อก: 1¥",
         "เหมาะสำหรับใจกลางเมือง",
         "ย่านซานฟางชีเฉียงเหมาะสำหรับการปั่นจักรยาน"
       ]
@@ -2708,7 +2708,7 @@
       "name": "โรงแรมแชงกรี-ลา ฝูโจว",
       "nameEn": "Shangri-La Hotel Fuzhou",
       "budget": "luxury",
-      "priceRange": "¥1200-2500/night",
+      "priceRange": "¥1200-2500/คืน",
       "address": "88 ถนนกู่เทียน เขตจินอัน",
       "coordinates": {
         "lat": 26.0953,
@@ -2727,7 +2727,7 @@
       "name": "โรงแรมเวสทิน ฝูโจว",
       "nameEn": "The Westin Fuzhou",
       "budget": "luxury",
-      "priceRange": "¥1000-2000/night",
+      "priceRange": "¥1000-2000/คืน",
       "address": "100 ถนนหลิวอี้ใต้ เขตจินอัน",
       "coordinates": {
         "lat": 26.0853,
@@ -2746,7 +2746,7 @@
       "name": "โรงแรมอินเตอร์คอนติเนนตัล ฝูโจว",
       "nameEn": "InterContinental Fuzhou",
       "budget": "luxury",
-      "priceRange": "¥800-1800/night",
+      "priceRange": "800-1800 เยน/คืน",
       "address": "108 ถนนกู่เทียน เขตจินอัน",
       "coordinates": {
         "lat": 26.0953,
@@ -2765,7 +2765,7 @@
       "name": "โรงแรมอาทัวร์ โฟโจว สปริงส์ อู่ซื่อ",
       "nameEn": "Atour Hotel Fuzhou Hot Spring",
       "budget": "mid",
-      "priceRange": "¥400-700/night",
+      "priceRange": "¥400-700/คืน",
       "address": "88 ถนนอู่ซื่อ เขตจินอัน",
       "coordinates": {
         "lat": 26.1053,
@@ -2784,7 +2784,7 @@
       "name": "โรงแรมรูเจีย ฟูโจว สามเลนและเจ็ดตรอก",
       "nameEn": "Home Inn Fuzhou Three Lanes",
       "budget": "budget",
-      "priceRange": "¥150-300/night",
+      "priceRange": "150-300 เยน/คืน",
       "address": "88 ถนนหยางเฉียว เขตกู่โหลว",
       "coordinates": {
         "lat": 26.0753,
@@ -2803,7 +2803,7 @@
       "name": "7天连锁酒店 สาขาจัตุรัสอู่ยี่ ฝูโจว",
       "nameEn": "7 Days Inn Fuzhou Wuyi Square",
       "budget": "budget",
-      "priceRange": "¥120-250/night",
+      "priceRange": "120-250 หยวน/คืน",
       "address": "168 ถนนอู่ยี่ เขตกู่โหลว",
       "coordinates": {
         "lat": 26.0753,
@@ -2822,7 +2822,7 @@
       "name": "โฮมสเตย์ซานฟางชีเซียง ฝูโจว",
       "nameEn": "Fuzhou Three Lanes Boutique Homestay",
       "budget": "budget",
-      "priceRange": "¥200-500/night",
+      "priceRange": "200-500 หยวน/คืน",
       "address": "ย่านซานฟางชีเซียง เขตกู่โหลว",
       "coordinates": {
         "lat": 26.0753,
@@ -2841,7 +2841,7 @@
       "name": "โรงแรมเยว่หัว ฝูโจว",
       "nameEn": "Yuehua Hotel Fuzhou",
       "budget": "mid",
-      "priceRange": "¥350-600/night",
+      "priceRange": "350-600 หยวน/คืน",
       "address": "128 ถนนอู่อี๋ เขตกู่โหลว",
       "coordinates": {
         "lat": 26.0753,
@@ -2860,7 +2860,7 @@
       "name": "โรงแรมฟูโจวซีหู",
       "nameEn": "Fuzhou West Lake Hotel",
       "budget": "luxury",
-      "priceRange": "¥600-1200/night",
+      "priceRange": "¥600-1200/คืน",
       "address": "88 ถนนหูโถว",
       "coordinates": {
         "lat": 26.0653,
@@ -2879,7 +2879,7 @@
       "name": "โรงแรมฟูโจวเวินฉวน",
       "nameEn": "Fuzhou Hot Spring Hotel",
       "budget": "luxury",
-      "priceRange": "¥800-1500/night",
+      "priceRange": "¥800-1500/คืน",
       "address": "188 เขตจินอัน",
       "coordinates": {
         "lat": 26.1153,
@@ -2898,7 +2898,7 @@
       "name": "โรงแรมฟูโจวไวก์เทรดเซ็นเตอร์",
       "nameEn": "Fuzhou Trade Center Hotel",
       "budget": "mid",
-      "priceRange": "¥400-700/night",
+      "priceRange": "¥400-700/คืน",
       "address": "68 ถนนอู่อี๋",
       "coordinates": {
         "lat": 26.0753,
@@ -2917,7 +2917,7 @@
       "name": "โรงแรมการ์เด้น ฝูโจว มหาวิทยาลัยทาวน์",
       "nameEn": "Fuzhou University Town Garden Hotel",
       "budget": "mid",
-      "priceRange": "¥250-450/night",
+      "priceRange": "¥250-450/คืน",
       "address": "มหาวิทยาลัยทาวน์ อำเภอหมินโหว",
       "coordinates": {
         "lat": 26.0453,
@@ -2936,7 +2936,7 @@
       "name": "โรงแรมกูซาน รีสอร์ท ฝูโจว",
       "nameEn": "Fuzhou Drum Mountain Resort Hotel",
       "budget": "mid",
-      "priceRange": "¥300-550/night",
+      "priceRange": "300-550 เยน/คืน",
       "address": "ใกล้เขากลอง",
       "coordinates": {
         "lat": 26.0853,
@@ -2955,7 +2955,7 @@
       "name": "โรงแรมมินเจียง เซ็นจูรี่ โกลเด้น ซอร์ส ฝูโจว",
       "nameEn": "Minjiang Century Golden Hotel",
       "budget": "luxury",
-      "priceRange": "¥500-1000/night",
+      "priceRange": "¥500-1000/คืน",
       "address": "88 ถนนหมินเจียง",
       "coordinates": {
         "lat": 26.0553,
@@ -2974,7 +2974,7 @@
       "name": "โรงแรมรีสอร์ทน้ำพุร้อนดอกมะลิฝูโจว",
       "nameEn": "Fuzhou Jasmine Hot Spring Resort",
       "budget": "luxury",
-      "priceRange": "¥700-1400/night",
+      "priceRange": "¥700-1400/คืน",
       "address": "เขตจินอาน พื้นที่บ่อน้ำพุร้อน",
       "coordinates": {
         "lat": 26.1153,
@@ -3014,7 +3014,7 @@
       ],
       "tips": [
         "ตั้งค่าเป็นโหมดภาษาอังกฤษ",
-        "Needed for shared bikes"
+        "จำเป็นสำหรับจักรยานที่ใช้ร่วมกัน"
       ]
     },
     {

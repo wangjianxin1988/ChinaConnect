@@ -3,12 +3,12 @@
   "name": "承德",
   "nameEn": "Chengde",
   "country": "China",
-  "population": "2.9 million",
+  "population": "2,9 millions",
   "coordinates": {
     "lat": 40.9515,
     "lng": 117.963
   },
-  "timezone": "UTC+8 (China Standard Time)",
+  "timezone": "UTC+8 (heure normale de la Chine)",
   "description": "Chengde, une ville historique de montagne dans la province du Hebei, est célèbre pour son palais impérial d'été et ses temples bouddhistes voisins. Site du patrimoine mondial de l'UNESCO, c'était autrefois le lieu de villégiature estival des empereurs de la dynastie Qing. Les paysages montagneux et les temples bouddhistes tibétains lui confèrent une atmosphère unique.",
   "coverImage": "/img/ext/fec12dec27c6.webp",
   "highlights": [
@@ -19,16 +19,16 @@
     "Retraite imperiale d'ete"
   ],
   "climate": {
-    "type": "Temperate continental climate",
+    "type": "Climat continental tempéré",
     "bestMonths": [
-      "May",
-      "June",
-      "September",
-      "October"
+      "Mai",
+      "Juin",
+      "Septembre",
+      "Octobre"
     ],
     "avgSummerTemp": "24°C (75°F)",
     "avgWinterTemp": "-8°C (18°F)",
-    "tips": "Best in summer for resort and temples. Spring and autumn pleasant. Winters cold. Summer is peak season but pleasant escape from Beijing heat."
+    "tips": "Meilleur en été pour les stations balnéaires et les temples. Printemps et automne agréables. Hivers froids. L'été est la haute saison mais constitue une évasion agréable de la chaleur de Pékin."
   },
   "attractions": [
     {
@@ -1603,7 +1603,7 @@
       "name": "清真羊汤",
       "nameEn": "Soupe d'agneau halal",
       "type": "Cuisine locale",
-      "cuisine": "Halal",
+      "cuisine": "halal",
       "avgPrice": 40,
       "rating": 4.5,
       "address": "Pres de la mosquee",
@@ -1663,7 +1663,7 @@
       "name": "杏仁豆腐",
       "nameEn": "Tofu aux Amandes",
       "type": "Cuisine locale",
-      "cuisine": "Dessert",
+      "cuisine": "dessert",
       "avgPrice": 20,
       "rating": 4.4,
       "address": "Boutiques de desserts",
@@ -1734,7 +1734,7 @@
       "description": "Thé au lait traditionnel mongol et collations.",
       "dishHighlights": [
         "Thé au lait",
-        "Airag",
+        "airag",
         "Snacks mongols"
       ],
       "tags": [
@@ -2653,7 +2653,7 @@
         "type": "bus",
         "from": "Pékin (Sihui, Dongzhimen)",
         "to": "Chengde",
-        "duration": "3-4 hours",
+        "duration": "3-4 heures",
         "price": "80-100¥",
         "frequency": "Plusieurs départs quotidiens",
         "tips": "Gares routières longue distance de Sihui ou Dongzhimen. Confortable avec climatisation."
@@ -2661,31 +2661,31 @@
       {
         "type": "train",
         "from": "Pékin (4h), Qinhuangdao (3h)",
-        "to": "Chengde Railway Station",
-        "duration": "3-5 hours",
+        "to": "Gare de Chengde",
+        "duration": "3-5 heures",
         "price": "50-150¥",
-        "frequency": "Several trains daily",
+        "frequency": "Plusieurs trains par jour",
         "tips": "Le train est confortable. Réservez à l'avance en haute saison."
       }
     ],
     "local": {
       "bus": [
         "Bus locaux vers les attractions",
-        "Single ride: 1-2¥",
+        "Trajet simple : 1-2¥",
         "Bus touristique vers le Mont Resort",
         "Bus 5, 7, 15 vers les sites principaux"
       ],
       "taxi": [
-        "Starting fare: 6¥",
-        "Within city 10-30¥",
-        "To attractions 30-80¥",
-        "Didi available"
+        "Tarif de départ : 6¥",
+        "En ville : 10-30¥",
+        "Vers les attractions : 30-80¥",
+        "Didi disponible"
       ],
       "bike": [
-        "Limited bike sharing",
-        "Not common due to hills",
+        "Partage de vélos limité",
+        "Peu courant en raison des collines",
         "La marche est préférable pour la plupart des zones",
-        "Taxi more practical"
+        "Taxi plus pratique"
       ]
     }
   },
@@ -2694,8 +2694,8 @@
       "name": "Hilton Hôtel de la Montagne de Chengde",
       "nameEn": "Hilton Chengde Mountain Resort",
       "budget": "luxury",
-      "priceRange": "¥800-1800/night",
-      "address": "Near Mountain Resort",
+      "priceRange": "800-1800¥/nuit",
+      "address": "Près de la station de montagne",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2707,14 +2707,14 @@
         "Vues sur la montagne",
         "Quartier historique"
       ],
-      "bookingTips": "Book during peak season well ahead. Best location for sightseeing."
+      "bookingTips": "Réservez bien à l'avance en haute saison. Meilleur emplacement pour visiter."
     },
     {
       "name": "Hôtel Qiwanglou de Chengde",
       "nameEn": "Qiwanglou Hotel",
       "budget": "luxury",
-      "priceRange": "¥600-1200/night",
-      "address": "Inside Mountain Resort",
+      "priceRange": "600-1200 ¥/nuit",
+      "address": "À l'intérieur de la station de montagne",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2726,14 +2726,14 @@
         "Style traditionnel",
         "Expérience unique"
       ],
-      "bookingTips": "Stay within the resort. Book well ahead for unique experience."
+      "bookingTips": "Séjournez dans la station. Réservez bien à l'avance pour une expérience unique."
     },
     {
       "name": "Hôtel Shenghua de Chengde",
       "nameEn": "Shenghua Hotel",
       "budget": "mid",
-      "priceRange": "¥400-800/night",
-      "address": "City center",
+      "priceRange": "400-800¥/nuit",
+      "address": "Centre-ville",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2745,14 +2745,14 @@
         "Bon service",
         "Rapport qualité-prix"
       ],
-      "bookingTips": "Good value in city center. Book during off-peak."
+      "bookingTips": "Bon rapport qualité-prix au centre-ville. Réservez hors saison."
     },
     {
       "name": "Hôtel Home Inn Chengde Mountain Resort",
       "nameEn": "Home Inn Chengde Mountain Resort",
       "budget": "budget",
-      "priceRange": "¥150-300/night",
-      "address": "Near Mountain Resort",
+      "priceRange": "150-300¥/nuit",
+      "address": "Près de la station de montagne",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2764,14 +2764,14 @@
         "Chambres propres",
         "Équipements de base"
       ],
-      "bookingTips": "Best budget option near main attractions."
+      "bookingTips": "Meilleure option économique près des attractions principales."
     },
     {
       "name": "Grand Hôtel du Palais de Chengde",
       "nameEn": "Xinggong Hotel",
       "budget": "mid",
-      "priceRange": "¥300-600/night",
-      "address": "Near Mountain Resort",
+      "priceRange": "300-600 ¥/nuit",
+      "address": "Près de la station de montagne",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2783,14 +2783,14 @@
         "Bon emplacement",
         "Bon rapport qualité-prix"
       ],
-      "bookingTips": "Good for temple visits. Book during off-peak."
+      "bookingTips": "Idéal pour visiter les temples. Réservez en dehors des heures de pointe."
     },
     {
       "name": "Hôtel Qianyang de Chengde",
       "nameEn": "Qianyang Hotel",
       "budget": "mid",
-      "priceRange": "¥350-700/night",
-      "address": "City center",
+      "priceRange": "350-700 ¥/nuit",
+      "address": "Centre-ville",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2802,14 +2802,14 @@
         "Bon service",
         "Petit-déjeuner inclus"
       ],
-      "bookingTips": "Good for transport connections. Book direct."
+      "bookingTips": "Bonnes connexions de transport. Réservez directement."
     },
     {
       "name": "Maison d'hôtes de la Montagne de Chengde",
       "nameEn": "Chengde Resort Homestay",
       "budget": "budget",
-      "priceRange": "¥150-400/night",
-      "address": "Near Mountain Resort",
+      "priceRange": "150-400 ¥/nuit",
+      "address": "Près de la station de montagne",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2821,14 +2821,14 @@
         "Décor traditionnel",
         "Rapport qualité-prix"
       ],
-      "bookingTips": "Experience local life. Book during off-peak season."
+      "bookingTips": "Vivez la vie locale. Réservez en basse saison."
     },
     {
       "name": "Hôtel Wenyuan de Chengde",
       "nameEn": "Wenyuan Hotel Chengde",
       "budget": "mid",
-      "priceRange": "¥280-500/night",
-      "address": "Near Mountain Resort",
+      "priceRange": "280-500 ¥/nuit",
+      "address": "Près de la station de montagne",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2840,14 +2840,14 @@
         "Style traditionnel",
         "Bon service"
       ],
-      "bookingTips": "Good for temple visits. Book during off-peak."
+      "bookingTips": "Idéal pour visiter les temples. Réservez en dehors des heures de pointe."
     },
     {
       "name": "Hôtel Guibinlou de Chengde",
       "nameEn": "Chengde VIP Hotel",
       "budget": "mid",
-      "priceRange": "¥350-600/night",
-      "address": "City center",
+      "priceRange": "350-600 ¥/nuit",
+      "address": "Centre-ville",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2859,14 +2859,14 @@
         "Bon petit-déjeuner",
         "Rapport qualité-prix"
       ],
-      "bookingTips": "Good transport connections. Book direct."
+      "bookingTips": "Bonnes connexions de transport. Réservez directement."
     },
     {
       "name": "Hôtel Tianbao de Chengde",
       "nameEn": "Tianbao Hotel Chengde",
       "budget": "mid",
-      "priceRange": "¥300-550/night",
-      "address": "Near Shuangqiao District",
+      "priceRange": "300-550 ¥/nuit",
+      "address": "Près du district de Shuangqiao",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2878,14 +2878,14 @@
         "Bon service",
         "Parking gratuit"
       ],
-      "bookingTips": "Good for temple tours. Book during off-peak."
+      "bookingTips": "Idéal pour les visites de temples. Réservez en dehors des heures de pointe."
     },
     {
       "name": "Hôtel Jingdu de Chengde",
       "nameEn": "Jingdu Hotel Chengde",
       "budget": "mid",
-      "priceRange": "¥250-450/night",
-      "address": "Near Mountain Resort",
+      "priceRange": "250-450 ¥/nuit",
+      "address": "Près de la station de montagne",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2897,14 +2897,14 @@
         "Bon rapport qualité-prix",
         "Bon emplacement"
       ],
-      "bookingTips": "Best value near attractions. Book in advance."
+      "bookingTips": "Meilleur rapport qualité-prix près des attractions. Réservez à l'avance."
     },
     {
       "name": "Hôtel Yuanbaoshan de Chengde",
       "nameEn": "Yuanbaoshan Hotel",
       "budget": "budget",
-      "priceRange": "¥120-280/night",
-      "address": "Near Mountain Resort",
+      "priceRange": "120-280 ¥/nuit",
+      "address": "Près de la station de montagne",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2916,14 +2916,14 @@
         "Équipements de base",
         "Propre"
       ],
-      "bookingTips": "Best budget option. Simple but convenient."
+      "bookingTips": "Meilleure option économique. Simple mais pratique."
     },
     {
       "name": "Station thermale de Chengde",
       "nameEn": "Chengde Hot Spring Resort",
       "budget": "luxury",
-      "priceRange": "¥600-1200/night",
-      "address": "Near Mountain Resort",
+      "priceRange": "600-1200 ¥/nuit",
+      "address": "Près de la station de montagne",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2935,14 +2935,14 @@
         "Luxe",
         "Détente"
       ],
-      "bookingTips": "Perfect for relaxation. Book hot spring packages."
+      "bookingTips": "Parfait pour se détendre. Réservez des forfaits de sources chaudes."
     },
     {
       "name": "Camp de vacances de la prairie de Chengde",
       "nameEn": "Chengde Grassland Resort Camp",
       "budget": "mid",
-      "priceRange": "¥300-600/night",
-      "address": "Mulan Weichang area",
+      "priceRange": "300-600 ¥/nuit",
+      "address": "Zone de Mulan Weichang",
       "coordinates": {
         "lat": 42.2022,
         "lng": 117.4022
@@ -2954,14 +2954,14 @@
         "Équitation",
         "Expérience culturelle"
       ],
-      "bookingTips": "Experience Mongolian culture. Great for families."
+      "bookingTips": "Découvrez la culture mongole. Idéal pour les familles."
     },
     {
       "name": "Auberge de la vieille rue de Chengde",
       "nameEn": "Old Street Inn Chengde",
       "budget": "budget",
-      "priceRange": "¥100-250/night",
-      "address": "Old city area",
+      "priceRange": "100-250 ¥/nuit",
+      "address": "Vieille ville",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2973,42 +2973,42 @@
         "Emplacement central",
         "Rapport qualité-prix"
       ],
-      "bookingTips": "Experience local life. Great for cultural immersion."
+      "bookingTips": "Vivez la vie locale. Parfait pour une immersion culturelle."
     }
   ],
   "payment": [
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Accepted in most places",
+      "description": "Accepté dans la plupart des endroits",
       "howToUse": [
-        "Download app",
-        "Link card"
+        "Télécharger l'application",
+        "Lier la carte"
       ],
       "tips": [
-        "Works in most shops",
-        "English mode available"
+        "Fonctionne dans la plupart des magasins",
+        "Mode anglais disponible"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Accepted in most places",
+      "description": "Accepté dans la plupart des endroits",
       "howToUse": [
-        "WeChat required",
+        "WeChat requis",
         "Cartes internationales acceptées"
       ],
       "tips": [
-        "Set to English mode"
+        "Passer en mode anglais"
       ]
     },
     {
       "method": "Cash",
       "icon": "cash",
-      "description": "Useful at local markets",
+      "description": "Utile sur les marchés locaux",
       "howToUse": [
         "ATM en ville",
-        "Banks available"
+        "Banques disponibles"
       ],
       "tips": [
         "Gardez 200¥ pour les petits achats",
@@ -3061,7 +3061,7 @@
     },
     {
       "category": "grassland",
-      "title": "Mulan Weichang",
+      "title": "Prairie de Mulan",
       "content": "Le terrain de chasse de Mulan Weichang pres de Chengde etait utilise par les empereurs Qing pour les chasses annuelles. Aujourd'hui, il offre des paysages de prairie et des experiences culturelles mongoles.",
       "importance": "medium"
     },

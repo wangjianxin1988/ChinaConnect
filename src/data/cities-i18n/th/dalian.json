@@ -2668,20 +2668,20 @@
     "local": {
       "metro": [
         "เปิดให้บริการ 4 สาย",
-        "Single ride: 2-8¥",
+        "ค่าโดยสารเที่ยวเดียว: 2-8 หยวน",
         "เชื่อมต่อพื้นที่สำคัญ",
         "สาย 2 ไปยังสถานที่ท่องเที่ยวชายทะเล"
       ],
       "bus": [
         "เครือข่ายครอบคลุมกว้างขวาง",
-        "Single ride: 2¥",
+        "ค่าโดยสารเที่ยวเดียว: 2¥",
         "มีรถบัสนักท่องเที่ยวให้บริการ",
         "เส้นทางชมวิวทะเล"
       ],
       "taxi": [
         "ค่าโดยสารเริ่มต้น: 10 หยวน (3 กม.แรก)",
         "ค่าบริการกลางคืน: เพิ่ม 10%",
-        "Most attractions 20-60¥",
+        "สถานที่ท่องเที่ยวส่วนใหญ่ 20-60 หยวน",
         "แอป Didi ใช้งานได้ดี"
       ],
       "bike": [
@@ -2697,7 +2697,7 @@
       "name": "大连香格里拉大酒店",
       "nameEn": "Shangri-La Hotel Dalian",
       "budget": "luxury",
-      "priceRange": "¥1200-2800/night",
+      "priceRange": "1200-2800 หยวน/คืน",
       "address": "68 ถนนเจียฟาง เขตจงซาน",
       "coordinates": {
         "lat": 38.9222,
@@ -2716,7 +2716,7 @@
       "name": "大连富力希尔顿酒店",
       "nameEn": "Hilton Dalian",
       "budget": "luxury",
-      "priceRange": "¥1000-2200/night",
+      "priceRange": "1000-2200 หยวน/คืน",
       "address": "1-3 จัตุรัสวิกตอรี เขตจงซาน",
       "coordinates": {
         "lat": 38.9222,
@@ -2735,7 +2735,7 @@
       "name": "โรงแรมดาลยันวันฟางปราสาทลักชัวรีคอลเลกชัน",
       "nameEn": "Castle Luxury Collection",
       "budget": "luxury",
-      "priceRange": "¥1500-3500/night",
+      "priceRange": "¥1500-3500/คืน",
       "address": "600 ถนนจินซี เขตจินโจว",
       "coordinates": {
         "lat": 39.0422,
@@ -2754,7 +2754,7 @@
       "name": "โรงแรมฮิลตันรีสอร์ทต้าเหลียนจินซีทาน",
       "nameEn": "Hilton Dalian Jinshi Beach",
       "budget": "luxury",
-      "priceRange": "¥1000-2000/night",
+      "priceRange": "¥1000-2000/คืน",
       "address": "หาดจินซี เขตจินโจว",
       "coordinates": {
         "lat": 39.0522,
@@ -2773,7 +2773,7 @@
       "name": "โรงแรมท่าอากาศยานนานาชาติต้าเหลียน",
       "nameEn": "Dalian Airport Hotel",
       "budget": "mid",
-      "priceRange": "¥400-800/night",
+      "priceRange": "400-800 เยน/คืน",
       "address": "ใกล้สนามบินต้าเหลียน",
       "coordinates": {
         "lat": 38.9622,
@@ -2792,7 +2792,7 @@
       "name": "โรงแรมรูเจีย สาขาจัตุรัสซิงไห่ ต้าเหลียน",
       "nameEn": "Home Inn Dalian Xinghai Square",
       "budget": "budget",
-      "priceRange": "¥150-350/night",
+      "priceRange": "150-350 หยวน/คืน",
       "address": "ย่านจัตุรัสซิงไห่",
       "coordinates": {
         "lat": 38.8822,
@@ -2811,7 +2811,7 @@
       "name": "โรงแรมอาตัว จัตุรัสซิงไห่ ต้าเหลียน",
       "nameEn": "Atour Hotel Dalian Xinghai",
       "budget": "mid",
-      "priceRange": "¥350-700/night",
+      "priceRange": "¥350-700/คืน",
       "address": "ย่านอ่าวซิงไห่",
       "coordinates": {
         "lat": 38.8822,
@@ -2830,7 +2830,7 @@
       "name": "โรงแรมเล่าถาน มหาสมุทรพาร์ค ต้าเหลียน",
       "nameEn": "Laohutan Ocean Park Hotel",
       "budget": "mid",
-      "priceRange": "¥500-900/night",
+      "priceRange": "¥500-900/คืน",
       "address": "ย่านเหล่าหูถาน",
       "coordinates": {
         "lat": 38.8722,
@@ -2849,7 +2849,7 @@
       "name": "โรงแรมจงซานกว่างฉ่าง ต้าเหลียน",
       "nameEn": "Dalian Zhongshan Square Hotel",
       "budget": "mid",
-      "priceRange": "¥400-800/night",
+      "priceRange": "400-800 เยน/คืน",
       "address": "จงซานสแควร์",
       "coordinates": {
         "lat": 38.9222,
@@ -2868,7 +2868,7 @@
       "name": "ที่พักต้าเหลียนจินสือทาน",
       "nameEn": "Jinshi Beach Resort Homestay",
       "budget": "budget",
-      "priceRange": "¥200-500/night",
+      "priceRange": "200-500 หยวน/คืน",
       "address": "ย่านหาดจินฉือ",
       "coordinates": {
         "lat": 39.0522,
@@ -2887,7 +2887,7 @@
       "name": "โรงแรมต้าเหลียนปังชุยเต่า",
       "nameEn": "Dalian Bangchuidao Seaside Hotel",
       "budget": "luxury",
-      "priceRange": "¥800-1500/night",
+      "priceRange": "¥800-1500/คืน",
       "address": "พื้นที่เกาะปังชุยเต่า",
       "coordinates": {
         "lat": 38.8722,
@@ -2906,7 +2906,7 @@
       "name": "ที่พักสไตล์รัสเซีย ต้าเหลียน",
       "nameEn": "Dalian Russian Style Street Homestay",
       "budget": "budget",
-      "priceRange": "¥150-350/night",
+      "priceRange": "150-350 หยวน/คืน",
       "address": "ย่านถนนสไตล์รัสเซีย",
       "coordinates": {
         "lat": 38.9322,
@@ -2925,7 +2925,7 @@
       "name": "โรงแรมรีสอร์ทต้าเหลียนฟาเซียนหวังกั๋ว",
       "nameEn": "Dalian Discoveryland Theme Park Hotel",
       "budget": "mid",
-      "priceRange": "¥500-900/night",
+      "priceRange": "¥500-900/คืน",
       "address": "ใกล้ดิสคัฟเวอรี่แลนด์",
       "coordinates": {
         "lat": 39.0522,
@@ -2944,7 +2944,7 @@
       "name": "โรงแรมซิงไห่ปราสาทต้าเหลียน",
       "nameEn": "Dalian Xinghai Castle Hotel",
       "budget": "luxury",
-      "priceRange": "¥1200-2500/night",
+      "priceRange": "¥1200-2500/คืน",
       "address": "อ่าวซิงไห่",
       "coordinates": {
         "lat": 38.8822,
@@ -2963,7 +2963,7 @@
       "name": "โรงแรมต้าเหลียนเหล่าหู่ทานซีวิว",
       "nameEn": "Dalian Laohutan Sea View Hotel",
       "budget": "mid",
-      "priceRange": "¥400-800/night",
+      "priceRange": "400-800 เยน/คืน",
       "address": "ใกล้สวนสัตว์ทะเลเล่าหู่ถาน",
       "coordinates": {
         "lat": 38.8722,
@@ -3003,7 +3003,7 @@
       ],
       "tips": [
         "ตั้งค่าเป็นโหมดภาษาอังกฤษ",
-        "Needed for shared bikes"
+        "จำเป็นสำหรับจักรยานที่ใช้ร่วมกัน"
       ]
     },
     {

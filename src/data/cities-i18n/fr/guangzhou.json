@@ -3,12 +3,12 @@
   "name": "广州",
   "nameEn": "Guangzhou",
   "country": "China",
-  "population": "18.67 million",
+  "population": "18,67 millions",
   "coordinates": {
     "lat": 23.1291,
     "lng": 113.2644
   },
-  "timezone": "UTC+8 (China Standard Time)",
+  "timezone": "UTC+8 (heure normale de la Chine)",
   "description": "Canton est la capitale de la province du Guangdong, un port historique et le berceau de la culture cantonaise. Connue sous le nom de « Canton », elle offre des dim sum de renommée mondiale, des marchés alimentaires fascinants et l'emblématique tour de Canton. La ville allie traditions du sud de la Chine et architecture moderne, et sert de porte d'entrée vers Hong Kong et Macao.",
   "coverImage": "/img/ext/65dc57b427bd.webp",
   "highlights": [
@@ -19,17 +19,17 @@
     "Mont Baiyun - Vues sur la ville et maisons de thé"
   ],
   "climate": {
-    "type": "Subtropical humid",
+    "type": "Humide subtropical",
     "bestMonths": [
-      "October",
-      "November",
-      "December",
-      "March",
-      "April"
+      "Octobre",
+      "Novembre",
+      "Décembre",
+      "Mars",
+      "Avril"
     ],
     "avgSummerTemp": "30C (86F)",
     "avgWinterTemp": "13C (55F)",
-    "tips": "Best visited in autumn and early spring. Summers are hot, humid, and rainy (May-September). Typhoon season is July-September. Light clothing most of the year. Mosquitoes common in summer."
+    "tips": "À visiter de préférence en automne et au début du printemps. Les étés sont chauds, humides et pluvieux (mai-septembre). La saison des typhons s'étend de juillet à septembre. Des vêtements légers conviennent la majeure partie de l'année. Les moustiques sont fréquents en été."
   },
   "attractions": [
     {
@@ -800,7 +800,7 @@
       "nameEn": "Croixère de nuit sur la rivière des Perles",
       "category": "landmark",
       "description": "Faites une croisière en bateau pour profiter des vues nocturnes le long des deux rives de la rivière des Perles.",
-      "address": "Guangzhou",
+      "address": "Canton",
       "coordinates": {
         "lat": 23.1,
         "lng": 113.32
@@ -932,7 +932,7 @@
       "nameEn": "Gastronomie de Guangzhou",
       "category": "street",
       "description": "Guangzhou est la capitale culinaire de la Chine, réputée pour ses dim sum et divers plats cantonais.",
-      "address": "Guangzhou",
+      "address": "Canton",
       "coordinates": {
         "lat": 23.12,
         "lng": 113.27
@@ -1130,7 +1130,7 @@
       "nameEn": "Métro de Guangzhou",
       "category": "landmark",
       "description": "Le troisième plus grand système de transport ferroviaire urbain de Chine.",
-      "address": "Guangzhou",
+      "address": "Canton",
       "coordinates": {
         "lat": 23.12,
         "lng": 113.27
@@ -1174,7 +1174,7 @@
       "nameEn": "Pont de Guangzhou",
       "category": "landmark",
       "description": "Ponts enjambant la rivière des Perles.",
-      "address": "Guangzhou",
+      "address": "Canton",
       "coordinates": {
         "lat": 23.12,
         "lng": 113.32
@@ -1196,7 +1196,7 @@
       "id": "guangzhou-new-1",
       "name": "炳胜品味",
       "nameEn": "Restaurant Bingsheng",
-      "type": "Black Pearl",
+      "type": "Perle noire",
       "diamond": 2,
       "cuisine": "Cantonais",
       "avgPrice": 180,
@@ -1228,7 +1228,7 @@
       "id": "guangzhou-new-2",
       "name": "南海渔村",
       "nameEn": "Village de pêcheurs de Nanhai",
-      "type": "Black Pearl",
+      "type": "Perle noire",
       "diamond": 1,
       "cuisine": "Fruits de mer cantonais",
       "avgPrice": 200,
@@ -1484,7 +1484,7 @@
       "id": "guangzhou-new-10",
       "name": "海门鱼仔店",
       "nameEn": "Hai Men Poissonnerie",
-      "type": "Black Pearl",
+      "type": "Perle noire",
       "diamond": 1,
       "cuisine": "fruits de mer de Chaozhou",
       "avgPrice": 150,
@@ -1504,7 +1504,7 @@
       ],
       "tags": [
         "perle-noire",
-        "chaozhou",
+        "Chaozhou",
         "fruits-de-mer",
         "frais"
       ],
@@ -1642,7 +1642,7 @@
       "id": "guangzhou-3",
       "name": "利苑酒家",
       "nameEn": "Restaurant Jardin Lei",
-      "type": "Black Pearl",
+      "type": "Perle noire",
       "diamond": 2,
       "cuisine": "Cantonais",
       "avgPrice": 350,
@@ -1735,7 +1735,7 @@
       "id": "guangzhou-6",
       "name": "白天鹅宾馆",
       "nameEn": "Hôtel White Swan",
-      "type": "Black Pearl",
+      "type": "Perle noire",
       "diamond": 2,
       "cuisine": "cantonais",
       "avgPrice": 400,
@@ -1799,7 +1799,7 @@
       "id": "guangzhou-8",
       "name": "惠食佳",
       "nameEn": "Les Gourmet",
-      "type": "Black Pearl",
+      "type": "Perle noire",
       "diamond": 1,
       "cuisine": "cantonaise",
       "avgPrice": 150,
@@ -2353,7 +2353,7 @@
         "Poulet blanc"
       ],
       "tags": [
-        "Snacks",
+        "collations",
         "Marché de nuit",
         "Étal de rue"
       ],
@@ -2760,7 +2760,7 @@
         "to": "Aéroport international de Guangzhou Baiyun (CAN)",
         "duration": "Variable (10-13 heures depuis l'Europe/les Amériques)",
         "price": "1000-7000¥",
-        "frequency": "Multiple daily flights",
+        "frequency": "Plusieurs vols quotidiens",
         "tips": "Deuxième aéroport le plus fréquenté de Chine. La ligne 3 du métro relie le centre-ville. Gare à grande vitesse à proximité."
       },
       {
@@ -2769,7 +2769,7 @@
         "to": "Gare du Sud de Guangzhou / Gare de Guangzhou",
         "duration": "35 min à 8 h selon l'origine",
         "price": "150-900¥",
-        "frequency": "Frequent departures",
+        "frequency": "Départs fréquents",
         "tips": "Train à grande vitesse très pratique. Guangzhou Sud est pour la grande vitesse, Guangzhou pour les trains conventionnels."
       }
     ],
@@ -2787,14 +2787,14 @@
       ],
       "taxi": [
         "Tarif de départ : 10 ¥ (2,5 premiers km)",
-        "Waiting: 0.4¥ per minute",
+        "Attente : 0,4 ¥ par minute",
         "Application Didi entièrement en anglais à Guangzhou",
         "Les taxis électriques deviennent courants"
       ],
       "bike": [
         "Hellobike, Mobike disponibles",
         "Déverrouillage : 1¥, puis 0,15¥ par 15 min",
-        "Bike lanes improving",
+        "Pistes cyclables en amélioration",
         "Les vélos électriques nécessitent une inscription locale"
       ]
     }
@@ -2804,7 +2804,7 @@
       "name": "Four Seasons Hotel Guangzhou",
       "nameEn": "Four Seasons Hotel Guangzhou",
       "budget": "luxury",
-      "priceRange": "¥2000-4000/night",
+      "priceRange": "2000-4000 ¥/nuit",
       "address": "3e étage, IFZ Tour 2, 5 rue Zhujiang Ouest, Tianhe",
       "coordinates": {
         "lat": 23.1185,
@@ -2816,13 +2816,13 @@
         "Vue sur la tour de Canton",
         "Service premium"
       ],
-      "bookingTips": "Request tower-view rooms. Very popular for special occasions."
+      "bookingTips": "Demandez les chambres avec vue sur la tour. Très populaires pour les occasions spéciales."
     },
     {
       "name": "Shangri-La Hotel Guangzhou",
       "nameEn": "Shangri-La Hotel Guangzhou",
       "budget": "luxury",
-      "priceRange": "¥1800-3500/night",
+      "priceRange": "1800-3500 ¥/nuit",
       "address": "1 Hua Cheng Da Dao, district de Tianhe",
       "coordinates": {
         "lat": 23.1235,
@@ -2834,13 +2834,13 @@
         "Grande piscine et spa",
         "Emplacement central"
       ],
-      "bookingTips": "Riverside rooms worth the extra cost."
+      "bookingTips": "Les chambres côté rivière valent le supplément."
     },
     {
       "name": "Sheraton Guangzhou Yuehai Hotel",
       "nameEn": "Sheraton Guangzhou Hotel",
       "budget": "mid",
-      "priceRange": "¥900-1500/night",
+      "priceRange": "900-1500 ¥/nuit",
       "address": "208 rue Tianhe, district de Tianhe",
       "coordinates": {
         "lat": 23.1345,
@@ -2852,13 +2852,13 @@
         "Marque fiable",
         "Bon petit-déjeuner"
       ],
-      "bookingTips": "Weekend rates often lower."
+      "bookingTips": "Les tarifs du week-end sont souvent plus bas."
     },
     {
       "name": "DoubleTree by Hilton Hotel Guangzhou",
       "nameEn": "DoubleTree by Hilton Guangzhou",
       "budget": "mid",
-      "priceRange": "¥700-1200/night",
+      "priceRange": "700-1200 ¥/nuit",
       "address": "1, rue Fortune, district de Tianhe",
       "coordinates": {
         "lat": 23.1405,
@@ -2870,13 +2870,13 @@
         "Qualité constante",
         "Bon rapport qualité-prix"
       ],
-      "bookingTips": "Book directly for best rates."
+      "bookingTips": "Réservez directement pour obtenir les meilleurs tarifs."
     },
     {
       "name": "White Swan Hotel Guangzhou",
       "nameEn": "White Swan Hotel",
       "budget": "luxury",
-      "priceRange": "¥1500-3000/night",
+      "priceRange": "1500-3000 ¥/nuit",
       "address": "1, rue Shamian, district de Liwan",
       "coordinates": {
         "lat": 23.1205,
@@ -2888,13 +2888,13 @@
         "Meilleurs dim sum de Guangzhou",
         "Patrimoine culturel"
       ],
-      "bookingTips": "Request rooms with river views. Famous for breakfast dim sum."
+      "bookingTips": "Demandez les chambres avec vue sur la rivière. Célèbre pour ses dim sum au petit-déjeuner."
     },
     {
       "name": "Marriott Hotel Guangzhou",
       "nameEn": "Guangzhou Marriott Hotel",
       "budget": "luxury",
-      "priceRange": "¥1200-2500/night",
+      "priceRange": "1200-2500 yuans/nuit",
       "address": "515, avenue Huangpu, district de Tianhe",
       "coordinates": {
         "lat": 23.1165,
@@ -2906,13 +2906,13 @@
         "Installations modernes",
         "Emplacement central"
       ],
-      "bookingTips": "Best river-view rooms on higher floors."
+      "bookingTips": "Meilleures chambres avec vue sur la rivière aux étages supérieurs."
     },
     {
       "name": "Hyatt Regency Guangzhou Taikoo Hui",
       "nameEn": "Hyatt Regency Guangzhou Zengjiang",
       "budget": "luxury",
-      "priceRange": "¥1100-2200/night",
+      "priceRange": "1100-2200 ¥/nuit",
       "address": "N° 370 Huangpu Da Dao, district de Tianhe",
       "coordinates": {
         "lat": 23.1175,
@@ -2924,13 +2924,13 @@
         "Design moderne",
         "Excellent petit-déjeuner"
       ],
-      "bookingTips": "Request rooms away from street for quiet."
+      "bookingTips": "Demandez des chambres à l'écart de la rue pour plus de calme."
     },
     {
       "name": "China Hotel Guangzhou",
       "nameEn": "China Hotel Guangzhou",
       "budget": "mid",
-      "priceRange": "¥600-1100/night",
+      "priceRange": "600-1100¥/nuit",
       "address": "194 Liu Hua Rd, district de Yuexiu",
       "coordinates": {
         "lat": 23.1395,
@@ -2942,13 +2942,13 @@
         "Bonnes liaisons de transport",
         "Marque fiable"
       ],
-      "bookingTips": "Weekend rates often lower."
+      "bookingTips": "Les tarifs du week-end sont souvent plus bas."
     },
     {
       "name": "Jardin de Guangzhou Hôtel",
       "nameEn": "Garden Hotel Guangzhou",
       "budget": "luxury",
-      "priceRange": "¥1000-2000/night",
+      "priceRange": "1000-2000 yuans/nuit",
       "address": "368 Huanshi Dong Rd, district de Yuexiu",
       "coordinates": {
         "lat": 23.1435,
@@ -2960,13 +2960,13 @@
         "Luxe historique",
         "Plusieurs options de restauration"
       ],
-      "bookingTips": "Best for business travelers."
+      "bookingTips": "Idéal pour les voyageurs d'affaires."
     },
     {
       "name": "Mandarin Oriental, Guangzhou",
       "nameEn": "Mandarin Oriental Guangzhou",
       "budget": "luxury",
-      "priceRange": "¥2500-5000/night",
+      "priceRange": "2500-5000 ¥/nuit",
       "address": "5 Xin Gang Rd, district de Tianhe",
       "coordinates": {
         "lat": 23.1165,
@@ -2978,13 +2978,13 @@
         "Restaurant étoilé Michelin",
         "Salon privé du club"
       ],
-      "bookingTips": "Suite upgrades worth considering for special occasions."
+      "bookingTips": "Les surclassements en suite valent la peine pour les occasions spéciales."
     },
     {
       "name": "The Ritz-Carlton, Guangzhou",
       "nameEn": "The Ritz-Carlton Guangzhou",
       "budget": "luxury",
-      "priceRange": "¥2000-4000/night",
+      "priceRange": "2000-4000 ¥/nuit",
       "address": "3 Xinghua Rd, district de Tianhe",
       "coordinates": {
         "lat": 23.1195,
@@ -2996,13 +2996,13 @@
         "Spa haut de gamme",
         "Salon exécutif"
       ],
-      "bookingTips": "Club level rooms include excellent breakfast."
+      "bookingTips": "Les chambres du club incluent un excellent petit-déjeuner."
     },
     {
       "name": "The Westin Guangzhou",
       "nameEn": "The Westin Guangzhou",
       "budget": "luxury",
-      "priceRange": "¥1500-2800/night",
+      "priceRange": "1500-2800 ¥/nuit",
       "address": "6 Linhe Zhong Rd, district de Tianhe",
       "coordinates": {
         "lat": 23.1365,
@@ -3014,13 +3014,13 @@
         "Emplacement central",
         "Bonnes installations d'affaires"
       ],
-      "bookingTips": "Heavenly beds popular for good sleep."
+      "bookingTips": "Les lits paradisiaques sont réputés pour un bon sommeil."
     },
     {
       "name": "Hilton Guangzhou",
       "nameEn": "Hilton Guangzhou Tianhe",
       "budget": "mid",
-      "priceRange": "¥800-1500/night",
+      "priceRange": "800-1500 ¥/nuit",
       "address": "215, rue Linhe, district de Tianhe",
       "coordinates": {
         "lat": 23.1355,
@@ -3032,13 +3032,13 @@
         "Normes de marque fiables",
         "Bon petit-déjeuner"
       ],
-      "bookingTips": "HHonors members get better rates."
+      "bookingTips": "Les membres HHonors bénéficient de meilleurs tarifs."
     },
     {
       "name": "Jianguo Hotel Guangzhou",
       "nameEn": "Jianguo Hotel Guangzhou",
       "budget": "mid",
-      "priceRange": "¥500-900/night",
+      "priceRange": "500-900 ¥/nuit",
       "address": "586, rue de Pékin, district de Yuexiu",
       "coordinates": {
         "lat": 23.1315,
@@ -3050,13 +3050,13 @@
         "Bon rapport qualité-prix",
         "Emplacement central"
       ],
-      "bookingTips": "Best location for sightseeing."
+      "bookingTips": "Meilleur emplacement pour le tourisme."
     },
     {
       "name": "Pullman Guangzhou Baiyun Airport",
       "nameEn": "Pullman Guangzhou Airport",
       "budget": "mid",
-      "priceRange": "¥550-950/night",
+      "priceRange": "550-950 ¥/nuit",
       "address": "Aéroport international de Baiyun",
       "coordinates": {
         "lat": 23.3895,
@@ -3068,13 +3068,13 @@
         "Navette aéroport gratuite",
         "Idéal pour le transit"
       ],
-      "bookingTips": "Perfect for early flights or late arrivals."
+      "bookingTips": "Idéal pour les vols matinaux ou les arrivées tardives."
     },
     {
       "name": "Atour Hotel Guangzhou",
       "nameEn": "Atour Hotel Guangzhou",
       "budget": "budget",
-      "priceRange": "¥350-650/night",
+      "priceRange": "350-650 ¥/nuit",
       "address": "Plusieurs emplacements en ville",
       "coordinates": {
         "lat": 23.1285,
@@ -3086,14 +3086,14 @@
         "Literie de qualité",
         "Design moderne"
       ],
-      "bookingTips": "Good value for quality conscious travelers."
+      "bookingTips": "Bon rapport qualité-prix pour les voyageurs soucieux de la qualité."
     },
     {
       "name": "Home Inn Guangzhou",
       "nameEn": "Home Inn Guangzhou",
       "budget": "budget",
-      "priceRange": "¥180-350/night",
-      "address": "Multiple locations",
+      "priceRange": "180-350 ¥/nuit",
+      "address": "Plusieurs emplacements",
       "coordinates": {
         "lat": 23.1265,
         "lng": 113.2845
@@ -3104,14 +3104,14 @@
         "Qualité constante",
         "Bons emplacements"
       ],
-      "bookingTips": "Best for very budget travelers."
+      "bookingTips": "Idéal pour les voyageurs à très petit budget."
     },
     {
       "name": "Jinjiang Inn Select Guangzhou",
       "nameEn": "Jiji Hotel Guangzhou",
       "budget": "budget",
-      "priceRange": "¥250-450/night",
-      "address": "Multiple locations",
+      "priceRange": "250-450 ¥/nuit",
+      "address": "Plusieurs emplacements",
       "coordinates": {
         "lat": 23.1295,
         "lng": 113.2895
@@ -3122,7 +3122,7 @@
         "Chambres modernes",
         "Bon rapport qualité-prix"
       ],
-      "bookingTips": "Good balance of price and quality."
+      "bookingTips": "Bon équilibre entre prix et qualité."
     }
   ],
   "payment": [
@@ -3131,9 +3131,9 @@
       "icon": "alipay",
       "description": "Paiement dominant à Guangzhou, accepté partout",
       "howToUse": [
-        "Download before arrival",
-        "Bind international card",
-        "QR code payment"
+        "Téléchargez avant l'arrivée",
+        "Associer une carte internationale",
+        "Paiement par code QR"
       ],
       "tips": [
         "Guangzhou est moderne - les cartes étrangères fonctionnent dans de nombreux endroits",
@@ -3146,9 +3146,9 @@
       "icon": "wechat",
       "description": "Essentiel pour les transactions locales",
       "howToUse": [
-        "WeChat app required",
+        "Application WeChat requise",
         "Liez votre carte dans les paramètres de l'application",
-        "QR scan payment"
+        "Paiement par scan de code QR"
       ],
       "tips": [
         "Le taxi Didi nécessite WeChat",
@@ -3160,7 +3160,7 @@
       "icon": "cash",
       "description": "Encore utile pour les marchés traditionnels et les petits vendeurs",
       "howToUse": [
-        "ATMs widely available",
+        "Distributeurs automatiques de billets largement disponibles",
         "Gardez des billets de 100-200¥ en petites coupures"
       ],
       "tips": [

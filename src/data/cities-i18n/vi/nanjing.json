@@ -1218,7 +1218,7 @@
       "id": "nanjing-2",
       "name": "狮子桥",
       "nameEn": "Sư Tử Kiều",
-      "type": "Black Pearl",
+      "type": "Hắc Trân Châu",
       "diamond": 1,
       "cuisine": "Ẩm thực Giang Tô",
       "avgPrice": 150,
@@ -1592,7 +1592,7 @@
       "id": "nanjing-14",
       "name": "南京精菜馆",
       "nameEn": "Ẩm Thực Tinh Hoa Nam Kinh",
-      "type": "Black Pearl",
+      "type": "Hắc Trân Châu",
       "diamond": 1,
       "cuisine": "Ẩm thực Giang Tô",
       "avgPrice": 200,
@@ -2728,20 +2728,20 @@
     "local": {
       "metro": [
         "12 tuyến đang hoạt động",
-        "Single ride: 2-8¥",
+        "Một chuyến: 2-8 tệ",
         "Tuyến 1, 2 cho hầu hết các điểm du lịch",
         "Kết nối cả hai ga và sân bay"
       ],
       "bus": [
         "Mạng lưới rộng khắp",
-        "Single ride: 2¥",
+        "Một lượt: 2 tệ",
         "Khu du lịch được kết nối tốt",
         "Google Maps hoạt động tốt cho việc tìm tuyến đường"
       ],
       "taxi": [
         "Giá mở cửa: 11¥ (3km đầu tiên)",
         "Phụ phí ban đêm: thêm 20%",
-        "Most attractions 20-50¥",
+        "Hầu hết điểm tham quan 20-50¥",
         "Didi được khuyên dùng cho người nói tiếng Anh"
       ],
       "bike": [
@@ -2757,7 +2757,7 @@
       "name": "Khách sạn Kim Lăng Nam Kinh",
       "nameEn": "Jinling Hotel Nanjing",
       "budget": "luxury",
-      "priceRange": "¥1200-2500/night",
+      "priceRange": "¥1200-2500/đêm",
       "address": "2 Đường Hán Trung, Huyền Vũ",
       "coordinates": {
         "lat": 32.0222,
@@ -2776,7 +2776,7 @@
       "name": "Khách sạn Shangri-La Nam Kinh",
       "nameEn": "Shangri-La Hotel Nanjing",
       "budget": "luxury",
-      "priceRange": "¥1500-3000/night",
+      "priceRange": "1.500-3.000 tệ/đêm",
       "address": "329 Đường Quảng Châu, Cổ Lâu",
       "coordinates": {
         "lat": 32.0422,
@@ -2795,7 +2795,7 @@
       "name": "Khách sạn InterContinental Nam Kinh Greenland",
       "nameEn": "InterContinental Nanjing",
       "budget": "luxury",
-      "priceRange": "¥1000-2200/night",
+      "priceRange": "¥1000-2200/đêm",
       "address": "1 Đường Yingtian, Jianye",
       "coordinates": {
         "lat": 32.0422,
@@ -2814,7 +2814,7 @@
       "name": "Khách sạn Trạng Nguyên Lâu",
       "nameEn": "Zhuangyuan Lou Hotel",
       "budget": "mid",
-      "priceRange": "¥500-1000/night",
+      "priceRange": "¥500-1000/đêm",
       "address": "Gần Miếu Phu Tử",
       "coordinates": {
         "lat": 32.0122,
@@ -2833,7 +2833,7 @@
       "name": "Nhà nghỉ Thanh niên Quốc tế Nam Kinh",
       "nameEn": "Nanjing International Youth Hostel",
       "budget": "budget",
-      "priceRange": "¥100-300/night",
+      "priceRange": "¥100-300/đêm",
       "address": "Gần Hồ Tuyên Vũ",
       "coordinates": {
         "lat": 32.0222,
@@ -2852,7 +2852,7 @@
       "name": "Khách sạn Novotel Nam Kinh Suning",
       "nameEn": "Novotel Nanjing Central",
       "budget": "mid",
-      "priceRange": "¥500-900/night",
+      "priceRange": "¥500-900/đêm",
       "address": "88 Đường Thượng Hải, Quận Huyền Vũ",
       "coordinates": {
         "lat": 32.0322,
@@ -2871,7 +2871,7 @@
       "name": "Khách sạn Renaissance Nam Kinh Huatai",
       "nameEn": "Renaissance Nanjing",
       "budget": "luxury",
-      "priceRange": "¥800-1500/night",
+      "priceRange": "800-1.500 tệ/đêm",
       "address": "9 Đường Quang Hoa, Quận Kiến Nghiệp",
       "coordinates": {
         "lat": 32.0422,
@@ -2890,7 +2890,7 @@
       "name": "Khách sạn Nam Kinh Huyền Vũ",
       "nameEn": "Nanjing Xuanwu Hotel",
       "budget": "mid",
-      "priceRange": "¥400-800/night",
+      "priceRange": "400-800 tệ/đêm",
       "address": "199 Đường Quảng Châu, Quận Cổ Lâu",
       "coordinates": {
         "lat": 32.0422,
@@ -2909,7 +2909,7 @@
       "name": "Khách sạn Nam Kinh Thủy Du Thành Holiday Inn",
       "nameEn": "Holiday Inn Nanjing Aqua City",
       "budget": "mid",
-      "priceRange": "¥450-800/night",
+      "priceRange": "¥450-800/đêm",
       "address": "6 Đường Dương Hà, Quận Tần Hoài",
       "coordinates": {
         "lat": 32.0222,
@@ -2928,7 +2928,7 @@
       "name": "Khách sạn Atour Đường Thụy Kim Nam Kinh",
       "nameEn": "Atour Hotel Nanjing Ruijin Road",
       "budget": "mid",
-      "priceRange": "¥300-600/night",
+      "priceRange": "300-600 tệ/đêm",
       "address": "688 Đường Thụy Kim, Quận Huyền Vũ",
       "coordinates": {
         "lat": 32.0522,
@@ -2947,7 +2947,7 @@
       "name": "Khách sạn Home Inn Tân Nhai Khẩu Nam Kinh",
       "nameEn": "Home Inn Nanjing Xinjiekou",
       "budget": "budget",
-      "priceRange": "¥150-300/night",
+      "priceRange": "150-300 tệ/đêm",
       "address": "218 Đường Trung Sơn, quận Huyền Vũ",
       "coordinates": {
         "lat": 32.0322,
@@ -2966,7 +2966,7 @@
       "name": "Nhà nghỉ Thanh niên Phu Tử Miếu Nam Kinh",
       "nameEn": "Nanjing Fuzi Temple Youth Hostel",
       "budget": "budget",
-      "priceRange": "¥80-200/night",
+      "priceRange": "¥80-200/đêm",
       "address": "Gần đền Phu Tử, quận Tần Hoài",
       "coordinates": {
         "lat": 32.0122,
@@ -2985,7 +2985,7 @@
       "name": "Trang viên Tử Kim Sơn Nam Kinh",
       "nameEn": "Nanjing Purple Mountain Villa",
       "budget": "luxury",
-      "priceRange": "¥1200-2500/night",
+      "priceRange": "¥1200-2500/đêm",
       "address": "8 Đường Zhongling, Quận Xuanwu",
       "coordinates": {
         "lat": 32.0622,
@@ -3004,7 +3004,7 @@
       "name": "Khách sạn Atour Trung tâm Thể thao Olympic Nam Kinh",
       "nameEn": "Atour Hotel Nanjing Olympic Center",
       "budget": "mid",
-      "priceRange": "¥350-650/night",
+      "priceRange": "350-650¥/đêm",
       "address": "168 Đường Huanqing, Quận Jianye",
       "coordinates": {
         "lat": 32.0322,
@@ -3023,7 +3023,7 @@
       "name": "Nhà nghỉ dân gian Phu Tử Miếu Nam Kinh",
       "nameEn": "Nanjing Fuzi Temple Boutique Homestay",
       "budget": "budget",
-      "priceRange": "¥200-500/night",
+      "priceRange": "¥200-500/đêm",
       "address": "Khu Laochengli, Quận Qinhuai",
       "coordinates": {
         "lat": 32.0122,

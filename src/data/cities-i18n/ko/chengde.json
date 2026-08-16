@@ -2652,7 +2652,7 @@
       {
         "type": "bus",
         "from": "베이징(시후이, 둥즈먼)",
-        "to": "Chengde",
+        "to": "청더",
         "duration": "3-4시간",
         "price": "80-100¥",
         "frequency": "매일 여러 차례 출발",
@@ -2671,14 +2671,14 @@
     "local": {
       "bus": [
         "관광지로 가는 시내버스",
-        "Single ride: 1-2¥",
+        "1회 승차: 1-2위안",
         "피서산장으로 가는 관광버스",
         "5, 7, 15번 버스로 주요 명소 이동"
       ],
       "taxi": [
-        "Starting fare: 6¥",
-        "Within city 10-30¥",
-        "To attractions 30-80¥",
+        "기본 요금: 6위안",
+        "시내 10-30위안",
+        "관광지까지 30-80위안",
         "디디 이용 가능"
       ],
       "bike": [
@@ -2694,7 +2694,7 @@
       "name": "청더 피서산장 힐튼 호텔",
       "nameEn": "Hilton Chengde Mountain Resort",
       "budget": "luxury",
-      "priceRange": "¥800-1800/night",
+      "priceRange": "800-1800위안/박",
       "address": "산장 리조트 인근",
       "coordinates": {
         "lat": 40.9722,
@@ -2713,7 +2713,7 @@
       "name": "청더 치왕러우 빈관",
       "nameEn": "Qiwanglou Hotel",
       "budget": "luxury",
-      "priceRange": "¥600-1200/night",
+      "priceRange": "1박에 600-1200위안",
       "address": "산장 리조트 내부",
       "coordinates": {
         "lat": 40.9722,
@@ -2732,7 +2732,7 @@
       "name": "청더 성화 대호텔",
       "nameEn": "Shenghua Hotel",
       "budget": "mid",
-      "priceRange": "¥400-800/night",
+      "priceRange": "400-800위안/박",
       "address": "도심",
       "coordinates": {
         "lat": 40.9722,
@@ -2751,7 +2751,7 @@
       "name": "루자 호텔 청더 피서산장점",
       "nameEn": "Home Inn Chengde Mountain Resort",
       "budget": "budget",
-      "priceRange": "¥150-300/night",
+      "priceRange": "150-300위안/박",
       "address": "산장 리조트 인근",
       "coordinates": {
         "lat": 40.9722,
@@ -2770,7 +2770,7 @@
       "name": "청더 싱궁 그랜드 호텔",
       "nameEn": "Xinggong Hotel",
       "budget": "mid",
-      "priceRange": "¥300-600/night",
+      "priceRange": "1박에 300-600위안",
       "address": "산장 리조트 인근",
       "coordinates": {
         "lat": 40.9722,
@@ -2789,7 +2789,7 @@
       "name": "청더 첸양 호텔",
       "nameEn": "Qianyang Hotel",
       "budget": "mid",
-      "priceRange": "¥350-700/night",
+      "priceRange": "1박에 350-700위안",
       "address": "도심",
       "coordinates": {
         "lat": 40.9722,
@@ -2808,7 +2808,7 @@
       "name": "청더 산장 민숙",
       "nameEn": "Chengde Resort Homestay",
       "budget": "budget",
-      "priceRange": "¥150-400/night",
+      "priceRange": "150-400위안/박",
       "address": "산장 리조트 인근",
       "coordinates": {
         "lat": 40.9722,
@@ -2827,7 +2827,7 @@
       "name": "청더 원위안 빈관",
       "nameEn": "Wenyuan Hotel Chengde",
       "budget": "mid",
-      "priceRange": "¥280-500/night",
+      "priceRange": "280-500위안/박",
       "address": "산장 리조트 인근",
       "coordinates": {
         "lat": 40.9722,
@@ -2846,7 +2846,7 @@
       "name": "청더 구이빈러우 호텔",
       "nameEn": "Chengde VIP Hotel",
       "budget": "mid",
-      "priceRange": "¥350-600/night",
+      "priceRange": "1박에 350-600위안",
       "address": "도심",
       "coordinates": {
         "lat": 40.9722,
@@ -2865,7 +2865,7 @@
       "name": "청더 톈바오 호텔",
       "nameEn": "Tianbao Hotel Chengde",
       "budget": "mid",
-      "priceRange": "¥300-550/night",
+      "priceRange": "300-550위안/박",
       "address": "솽차오 구 인근",
       "coordinates": {
         "lat": 40.9722,
@@ -2884,7 +2884,7 @@
       "name": "청더 징두 빈관",
       "nameEn": "Jingdu Hotel Chengde",
       "budget": "mid",
-      "priceRange": "¥250-450/night",
+      "priceRange": "¥250-450/박",
       "address": "산장 리조트 인근",
       "coordinates": {
         "lat": 40.9722,
@@ -2903,7 +2903,7 @@
       "name": "청더 위안바오산 호텔",
       "nameEn": "Yuanbaoshan Hotel",
       "budget": "budget",
-      "priceRange": "¥120-280/night",
+      "priceRange": "120-280위안/박",
       "address": "산장 리조트 인근",
       "coordinates": {
         "lat": 40.9722,
@@ -2922,7 +2922,7 @@
       "name": "청더 온천 리조트",
       "nameEn": "Chengde Hot Spring Resort",
       "budget": "luxury",
-      "priceRange": "¥600-1200/night",
+      "priceRange": "1박에 600-1200위안",
       "address": "산장 리조트 인근",
       "coordinates": {
         "lat": 40.9722,
@@ -2941,7 +2941,7 @@
       "name": "청더 초원 휴양 캠프",
       "nameEn": "Chengde Grassland Resort Camp",
       "budget": "mid",
-      "priceRange": "¥300-600/night",
+      "priceRange": "1박에 300-600위안",
       "address": "무란웨이창 지역",
       "coordinates": {
         "lat": 42.2022,
@@ -2960,7 +2960,7 @@
       "name": "청더 올드 스트리트 여관",
       "nameEn": "Old Street Inn Chengde",
       "budget": "budget",
-      "priceRange": "¥100-250/night",
+      "priceRange": "1박에 100-250위안",
       "address": "구시가지 지역",
       "coordinates": {
         "lat": 40.9722,

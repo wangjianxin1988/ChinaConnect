@@ -3,12 +3,12 @@
   "name": "上海",
   "nameEn": "Shanghai",
   "country": "China",
-  "population": "24.87 million",
+  "population": "24,87 millions",
   "coordinates": {
     "lat": 31.2304,
     "lng": 121.4737
   },
-  "timezone": "UTC+8 (China Standard Time)",
+  "timezone": "UTC+8 (heure normale de la Chine)",
   "description": "Shanghai, la powerhouse économique de la Chine, est une métropole éblouissante où l'architecture Art Deco cohabite avec des gratte-ciel futuristes. Connue comme la 'Perle de l'Orient', elle offre une gastronomie de classe mondiale, des achats sur Nanjing Road, le front de mer historique du Bund, et une vie nocturne trépidante. La ville mêle parfaitement les influences orientales et occidentales, créant une atmosphère cosmopolite unique.",
   "coverImage": "/img/ext/2284bd75905e.webp",
   "highlights": [
@@ -19,17 +19,17 @@
     "Xintiandi - Maisons historiques de shikumen"
   ],
   "climate": {
-    "type": "Humid subtropical",
+    "type": "Subtropical humide",
     "bestMonths": [
-      "March",
-      "April",
-      "May",
-      "October",
-      "November"
+      "Mars",
+      "Avril",
+      "Mai",
+      "Octobre",
+      "Novembre"
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "4C (39F)",
-    "tips": "Spring and autumn offer the most comfortable weather. Summers are hot and humid with frequent rain. Winters are cold but rarely snowy. Typhoon season is July-September. Pack layers and an umbrella."
+    "tips": "Le printemps et l'automne offrent le climat le plus agréable. Les étés sont chauds et humides avec des pluies fréquentes. Les hivers sont froids mais rarement enneigés. La saison des typhons s'étend de juillet à septembre. Prévoyez des vêtements en couches et un parapluie."
   },
   "attractions": [
     {
@@ -478,7 +478,7 @@
       },
       "openingHours": "11:00-21:30 (departements multiples)",
       "ticketPrice": "120-180¥",
-      "recommendedVisitTime": "45-60 minutes",
+      "recommendedVisitTime": "45 à 60 minutes",
       "highlights": [
         "Vues architecturales du Bund",
         "Skyline de Pudong la nuit",
@@ -1379,7 +1379,7 @@
       "id": "shanghai-4",
       "name": "御宝轩",
       "nameEn": "Trésor Impérial",
-      "type": "Black Pearl",
+      "type": "Perle noire",
       "diamond": 3,
       "cuisine": "Cantonais",
       "avgPrice": 500,
@@ -1633,7 +1633,7 @@
       "id": "shanghai-12",
       "name": "苏浙总会",
       "nameEn": "Su Zhe Hui",
-      "type": "Black Pearl",
+      "type": "Perle noire",
       "diamond": 3,
       "cuisine": "cuisine Jiangzhe",
       "avgPrice": 400,
@@ -1826,7 +1826,7 @@
       "id": "shanghai-18",
       "name": "新荣记",
       "nameEn": "Xin Rong Ji",
-      "type": "Black Pearl",
+      "type": "Perle noire",
       "diamond": 3,
       "cuisine": "Cuisine chinoise inspirée de la Thaïlande",
       "avgPrice": 600,
@@ -2829,14 +2829,14 @@
         "to": "Aéroport international de Shanghai Pudong (PVG) / Aéroport de Hongqiao (SHA)",
         "duration": "Variable (10-14 heures depuis l'Europe/les Amériques)",
         "price": "1200-9000¥",
-        "frequency": "Multiple daily flights",
+        "frequency": "Plusieurs vols quotidiens",
         "tips": "PVG gère les vols internationaux, SHA principalement domestique. Le train Maglev depuis PVG atteint 430 km/h."
       },
       {
         "type": "train",
         "from": "Pékin (4,5 h), Hangzhou (1 h), Suzhou (0,5 h)",
         "to": "Gare de Shanghai Hongqiao / Gare de Shanghai",
-        "duration": "0.5-4.5 hours",
+        "duration": "0,5 à 4,5 heures",
         "price": "200-900¥",
         "frequency": "Plusieurs départs quotidiens",
         "tips": "Les trains à grande vitesse sont extrêmement ponctuels. La gare de Hongqiao est connectée au métro et aux aéroports."
@@ -2856,7 +2856,7 @@
       ],
       "taxi": [
         "Tarif de départ : 14¥ (3 premiers km)",
-        "Waiting: 0.8¥ per minute",
+        "Attente : 0,8 ¥ par minute",
         "Application Didi recommandée pour les non-chinoisophones",
         "Option van disponible pour les groupes"
       ],
@@ -2873,7 +2873,7 @@
       "name": "Hôtel Peninsula Shanghai",
       "nameEn": "The Peninsula Shanghai",
       "budget": "luxury",
-      "priceRange": "¥3000-6000/night",
+      "priceRange": "3000-6000 yuans/nuit",
       "address": "32 Le Bund, 32 Zhongshan Dong Yi Rd, Huangpu",
       "coordinates": {
         "lat": 31.2385,
@@ -2886,13 +2886,13 @@
         "Piscine intérieure avec vue sur le Bund",
         "Visites en yacht disponibles"
       ],
-      "bookingTips": "Request Bund-view rooms. Best deals through hotel loyalty programs."
+      "bookingTips": "Demandez des chambres avec vue sur le Bund. Les meilleures offres se trouvent via les programmes de fidélité des hôtels."
     },
     {
       "name": "Hôtel Waldorf Astoria sur le Bund de Shanghai",
       "nameEn": "Waldorf Astoria Shanghai",
       "budget": "luxury",
-      "priceRange": "¥2800-5000/night",
+      "priceRange": "2800-5000 yuans/nuit",
       "address": "2 Le Bund, 20 Zhongshan Dong Yi Rd, Huangpu",
       "coordinates": {
         "lat": 31.239,
@@ -2901,17 +2901,17 @@
       "rating": 4.8,
       "highlights": [
         "Bâtiment patrimonial relié à la nouvelle tour",
-        "Charming Long Bar",
+        "Charmant Long Bar",
         "Emplacement central"
       ],
-      "bookingTips": "Long Bar for cocktails is legendary. Book bar seats in advance."
+      "bookingTips": "Le Long Bar pour les cocktails est légendaire. Réservez les places au bar à l'avance."
     },
     {
       "name": "Grand Hyatt Shanghai",
       "nameEn": "Grand Hyatt Shanghai",
       "budget": "mid",
-      "priceRange": "¥1200-2000/night",
-      "address": "88 Jinjiang Rd, Pudong",
+      "priceRange": "1200-2000 yuans/nuit",
+      "address": "88, rue Jinjiang, Pudong",
       "coordinates": {
         "lat": 31.221,
         "lng": 121.5025
@@ -2922,14 +2922,14 @@
         "Vues imprenables sur la ville",
         "Connecté au centre commercial IFC"
       ],
-      "bookingTips": "Higher floors offer better views. Check for weekend packages."
+      "bookingTips": "Les étages supérieurs offrent de meilleures vues. Renseignez-vous sur les forfaits week-end."
     },
     {
       "name": "Hôtel Hilton de Shanghai",
       "nameEn": "Hilton Shanghai",
       "budget": "mid",
-      "priceRange": "¥900-1500/night",
-      "address": "1 Fatherland Rd, Huangpu",
+      "priceRange": "900-1500 ¥/nuit",
+      "address": "1, rue de la Patrie, Huangpu",
       "coordinates": {
         "lat": 31.2285,
         "lng": 121.4805
@@ -2940,13 +2940,13 @@
         "Bon buffet petit-déjeuner",
         "Marque fiable"
       ],
-      "bookingTips": "Good central location for first-time visitors."
+      "bookingTips": "Bon emplacement central pour les primo-visiteurs."
     },
     {
       "name": "Hôtel Édition Shanghai",
       "nameEn": "The Shanghai EDITION",
       "budget": "mid",
-      "priceRange": "¥1500-2500/night",
+      "priceRange": "1500-2500 yuans/nuit",
       "address": "199 Nanjing Rd Est, Huangpu",
       "coordinates": {
         "lat": 31.231,
@@ -2958,14 +2958,14 @@
         "Excellent bar sur le toit",
         "Emplacement central"
       ],
-      "bookingTips": "Rooftop bar is popular - book ahead."
+      "bookingTips": "Le bar sur le toit est populaire - réservez à l'avance."
     },
     {
       "name": "Hôtel Puli Shanghai",
       "nameEn": "The Puli Hotel & Spa",
       "budget": "luxury",
-      "priceRange": "¥2500-4500/night",
-      "address": "1 Xiushan Rd, Jing'an",
+      "priceRange": "2500-4500 yuans/nuit",
+      "address": "1, rue Xiushan, Jing'an",
       "coordinates": {
         "lat": 31.224,
         "lng": 121.448
@@ -2976,13 +2976,13 @@
         "Excellent spa",
         "Emplacement central"
       ],
-      "bookingTips": "Weekend packages offer better value."
+      "bookingTips": "Les forfaits week-end offrent un meilleur rapport qualité-prix."
     },
     {
       "name": "Hôtel Shangri-La Jing An, Shanghai",
       "nameEn": "Jing'an Shangri-La",
       "budget": "luxury",
-      "priceRange": "¥2200-4000/night",
+      "priceRange": "2200-4000 ¥/nuit",
       "address": "1218, route de la Ceinture centrale, district de Jing'an",
       "coordinates": {
         "lat": 31.228,
@@ -2994,13 +2994,13 @@
         "Belles vues",
         "Plusieurs restaurants"
       ],
-      "bookingTips": "Higher floors have best views. Breakfast worth the upgrade."
+      "bookingTips": "Les étages supérieurs offrent les meilleures vues. Le petit-déjeuner vaut la peine de payer le supplément."
     },
     {
       "name": "上海镛舍",
       "nameEn": "The Middle House",
       "budget": "luxury",
-      "priceRange": "¥1800-3000/night",
+      "priceRange": "1800-3000 ¥/nuit",
       "address": "333, chemin du Nord de Chengdu, Jing'an",
       "coordinates": {
         "lat": 31.235,
@@ -3012,13 +3012,13 @@
         "Spa et piscine",
         "Emplacement branché"
       ],
-      "bookingTips": "Connected to HKRI Taikoo Hui mall."
+      "bookingTips": "Connecté au centre commercial HKRI Taikoo Hui."
     },
     {
       "name": "Hôtel Bulgari Shanghai",
       "nameEn": "Bulgari Hotel Shanghai",
       "budget": "luxury",
-      "priceRange": "¥4000-8000/night",
+      "priceRange": "4000-8000 ¥/nuit",
       "address": "88, route de Henan centrale, Huangpu",
       "coordinates": {
         "lat": 31.238,
@@ -3030,13 +3030,13 @@
         "Vues imprenables sur le Bund",
         "Restaurant étoilé Michelin"
       ],
-      "bookingTips": "Bund view suites are exceptional. Book restaurant in advance."
+      "bookingTips": "Les suites avec vue sur le Bund sont exceptionnelles. Réservez le restaurant à l'avance."
     },
     {
       "name": "Hôtel Peace de Shanghai",
       "nameEn": "Fairmont Peace Hotel",
       "budget": "luxury",
-      "priceRange": "¥2500-5000/night",
+      "priceRange": "2500-5000 ¥/nuit",
       "address": "20, rue Nanjing Est, Huangpu",
       "coordinates": {
         "lat": 31.237,
@@ -3048,14 +3048,14 @@
         "Bar de jazz",
         "Emplacement emblématique"
       ],
-      "bookingTips": "Request renovated rooms in the south building. Sunday jazz brunch is legendary."
+      "bookingTips": "Demandez les chambres rénovées dans le bâtiment sud. Le brunch jazz du dimanche est légendaire."
     },
     {
       "name": "Hôtel Shangri-La de Pudong, Shanghai",
       "nameEn": "Shangri-La Pudong",
       "budget": "luxury",
-      "priceRange": "¥2000-3500/night",
-      "address": "33 Fu Cheng Rd, Pudong",
+      "priceRange": "2000-3500 ¥/nuit",
+      "address": "33, chemin Fu Cheng, Pudong",
       "coordinates": {
         "lat": 31.238,
         "lng": 121.499
@@ -3066,13 +3066,13 @@
         "Belles vues sur le Bund",
         "Plusieurs piscines"
       ],
-      "bookingTips": "Horizon Club rooms offer better views. Airport transfer recommended."
+      "bookingTips": "Les chambres Horizon Club offrent de meilleures vues. Le transfert depuis l'aéroport est recommandé."
     },
     {
       "name": "Hôtel Sukhothai Shanghai",
       "nameEn": "The Sukhothai Shanghai",
       "budget": "luxury",
-      "priceRange": "¥1800-2800/night",
+      "priceRange": "1800-2800 ¥/nuit",
       "address": "380, route du Nord de Shaanxi, Jing'an",
       "coordinates": {
         "lat": 31.234,
@@ -3081,16 +3081,16 @@
       "rating": 4.7,
       "highlights": [
         "Design inspiré de la Thaïlande",
-        "Excellent service",
+        "Service excellent",
         "Emplacement central"
       ],
-      "bookingTips": "Spa treatments highly recommended. Good for business travelers."
+      "bookingTips": "Les soins du spa sont hautement recommandés. Idéal pour les voyageurs d'affaires."
     },
     {
       "name": "Hôtel St. Regis Shanghai",
       "nameEn": "The St. Regis Shanghai",
       "budget": "luxury",
-      "priceRange": "¥2200-4000/night",
+      "priceRange": "2200-4000 ¥/nuit",
       "address": "368 Rue Jian Guo Liu, Huangpu",
       "coordinates": {
         "lat": 31.221,
@@ -3102,13 +3102,13 @@
         "Service de majordome",
         "Plusieurs options de restauration"
       ],
-      "bookingTips": "Butler service is exceptional. Ask for renovated rooms."
+      "bookingTips": "Le service de majordome est exceptionnel. Demandez les chambres rénovées."
     },
     {
       "name": "Hôtel Aman Shanghai",
       "nameEn": "Aman Bund",
       "budget": "luxury",
-      "priceRange": "¥5000-10000/night",
+      "priceRange": "5000-10000 ¥/nuit",
       "address": "Hôtel Conrad, 500, route Yincheng, Pudong",
       "coordinates": {
         "lat": 31.238,
@@ -3120,14 +3120,14 @@
         "Ambiance de club privé",
         "Service Aman"
       ],
-      "bookingTips": "Only 28 rooms ensure exclusivity. Book well in advance."
+      "bookingTips": "Seulement 28 chambres garantissent l'exclusivité. Réservez bien à l'avance."
     },
     {
       "name": "Hôtel Jinjiang de Shanghai",
       "nameEn": "Jinjiang Hotel",
       "budget": "mid",
-      "priceRange": "¥800-1500/night",
-      "address": "59 Changle Rd, Xuhui",
+      "priceRange": "800-1500 ¥/nuit",
+      "address": "59 rue Changle, Xuhui",
       "coordinates": {
         "lat": 31.214,
         "lng": 121.453
@@ -3138,13 +3138,13 @@
         "Grands jardins",
         "Emplacement de la concession française"
       ],
-      "bookingTips": "Meijing building has been renovated. Great for history buffs."
+      "bookingTips": "Le bâtiment Meijing a été rénové. Idéal pour les passionnés d'histoire."
     },
     {
       "name": "Banyan Tree Shanghai on the Bund",
       "nameEn": "Banyan Tree Shanghai On The Bund",
       "budget": "luxury",
-      "priceRange": "¥3500-6000/night",
+      "priceRange": "3500-6000 ¥/nuit",
       "address": "20, rue Funing, district de Huangpu",
       "coordinates": {
         "lat": 31.242,
@@ -3157,13 +3157,13 @@
         "Bar sur le toit",
         "Spa luxueux"
       ],
-      "bookingTips": "Request river-view rooms. Best for romantic getaways."
+      "bookingTips": "Demandez les chambres avec vue sur la rivière. Parfait pour les escapades romantiques."
     },
     {
       "name": "Hôtel Andaz Shanghai Xintiandi",
       "nameEn": "Andaz Shanghai Xintiandi",
       "budget": "mid",
-      "priceRange": "¥1200-2000/night",
+      "priceRange": "1200-2000 yuans/nuit",
       "address": "88 rue Taicang, district de Huangpu",
       "coordinates": {
         "lat": 31.224,
@@ -3176,7 +3176,7 @@
         "Bar sur le toit",
         "Emplacement central"
       ],
-      "bookingTips": "Great for nightlife. Book weekend packages."
+      "bookingTips": "Idéal pour la vie nocturne. Réservez les forfaits week-end."
     }
   ],
   "payment": [
@@ -3200,14 +3200,14 @@
       "icon": "wechat",
       "description": "Essentiel pour les transactions locales et les services WeChat",
       "howToUse": [
-        "WeChat app required",
+        "Application WeChat requise",
         "Liez votre carte via WeChat Pay dans les paramètres",
         "Scannez le code QR pour les paiements"
       ],
       "tips": [
         "Version anglaise disponible dans les paramètres",
         "Requis pour le covoiturage Didi",
-        "Good for group payments"
+        "Bon pour les paiements de groupe"
       ]
     },
     {
@@ -3219,7 +3219,7 @@
         "ICBC, HSBC, Standard Chartered ont des interfaces en anglais"
       ],
       "tips": [
-        "Keep 200-500¥ as backup",
+        "Gardez 200-500¥ en réserve",
         "Les cartes Bank fonctionnent généralement dans n'importe quel ATM"
       ]
     },

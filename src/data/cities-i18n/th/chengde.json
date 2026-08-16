@@ -2652,7 +2652,7 @@
       {
         "type": "bus",
         "from": "ปักกิ่ง (Sihui, Dongzhimen)",
-        "to": "Chengde",
+        "to": "เฉิงเต๋อ",
         "duration": "3-4 ชั่วโมง",
         "price": "80-100¥",
         "frequency": "มีรถออกหลายเที่ยวต่อวัน",
@@ -2671,14 +2671,14 @@
     "local": {
       "bus": [
         "รถบัสท้องถิ่นไปยังสถานที่ท่องเที่ยว",
-        "Single ride: 1-2¥",
+        "ค่าโดยสารเที่ยวเดียว: 1-2 หยวน",
         "รถบัสนักท่องเที่ยวไปยัง Mountain Resort",
         "รถบัสสาย 5, 7, 15 ไปยังสถานที่สำคัญ"
       ],
       "taxi": [
-        "Starting fare: 6¥",
-        "Within city 10-30¥",
-        "To attractions 30-80¥",
+        "ค่าโดยสารเริ่มต้น: 6 หยวน",
+        "ในเมือง 10-30 หยวน",
+        "ไปยังสถานที่ท่องเที่ยว 30-80 เยน",
         "มีบริการ Didi"
       ],
       "bike": [
@@ -2694,7 +2694,7 @@
       "name": "โรงแรมฮิลตัน เฉิงเต๋อ ปีเขาซานจวง",
       "nameEn": "Hilton Chengde Mountain Resort",
       "budget": "luxury",
-      "priceRange": "¥800-1800/night",
+      "priceRange": "800-1800 เยน/คืน",
       "address": "ใกล้กับ Mountain Resort",
       "coordinates": {
         "lat": 40.9722,
@@ -2713,7 +2713,7 @@
       "name": "โรงแรมเฉิงเต๋อฉี่หวังโหลว",
       "nameEn": "Qiwanglou Hotel",
       "budget": "luxury",
-      "priceRange": "¥600-1200/night",
+      "priceRange": "¥600-1200/คืน",
       "address": "ภายใน Mountain Resort",
       "coordinates": {
         "lat": 40.9722,
@@ -2732,7 +2732,7 @@
       "name": "โรงแรมเฉิงเต๋อเซิงหัว",
       "nameEn": "Shenghua Hotel",
       "budget": "mid",
-      "priceRange": "¥400-800/night",
+      "priceRange": "400-800 เยน/คืน",
       "address": "ใจกลางเมือง",
       "coordinates": {
         "lat": 40.9722,
@@ -2751,7 +2751,7 @@
       "name": "โรงแรมรูเจีย สาขาพระราชวังฤดูร้อนเฉิงเต๋อ",
       "nameEn": "Home Inn Chengde Mountain Resort",
       "budget": "budget",
-      "priceRange": "¥150-300/night",
+      "priceRange": "150-300 เยน/คืน",
       "address": "ใกล้กับ Mountain Resort",
       "coordinates": {
         "lat": 40.9722,
@@ -2770,7 +2770,7 @@
       "name": "โรงแรมเฉิงเต๋อซิงกง",
       "nameEn": "Xinggong Hotel",
       "budget": "mid",
-      "priceRange": "¥300-600/night",
+      "priceRange": "¥300-600/คืน",
       "address": "ใกล้กับ Mountain Resort",
       "coordinates": {
         "lat": 40.9722,
@@ -2789,7 +2789,7 @@
       "name": "โรงแรมเฉิงเต๋อเฉียนหยาง",
       "nameEn": "Qianyang Hotel",
       "budget": "mid",
-      "priceRange": "¥350-700/night",
+      "priceRange": "¥350-700/คืน",
       "address": "ใจกลางเมือง",
       "coordinates": {
         "lat": 40.9722,
@@ -2808,7 +2808,7 @@
       "name": "เกสต์เฮาส์เฉิงเต๋อซานจวง",
       "nameEn": "Chengde Resort Homestay",
       "budget": "budget",
-      "priceRange": "¥150-400/night",
+      "priceRange": "150-400 เยน/คืน",
       "address": "ใกล้กับ Mountain Resort",
       "coordinates": {
         "lat": 40.9722,
@@ -2827,7 +2827,7 @@
       "name": "โรงแรมเฉิงเต๋อเวินหยวน",
       "nameEn": "Wenyuan Hotel Chengde",
       "budget": "mid",
-      "priceRange": "¥280-500/night",
+      "priceRange": "280-500 เยน/คืน",
       "address": "ใกล้กับ Mountain Resort",
       "coordinates": {
         "lat": 40.9722,
@@ -2846,7 +2846,7 @@
       "name": "โรงแรมเฉิงเต๋อกุ้ยปินโหลว",
       "nameEn": "Chengde VIP Hotel",
       "budget": "mid",
-      "priceRange": "¥350-600/night",
+      "priceRange": "350-600 หยวน/คืน",
       "address": "ใจกลางเมือง",
       "coordinates": {
         "lat": 40.9722,
@@ -2865,7 +2865,7 @@
       "name": "โรงแรมเฉิงเต๋อเทียนเป่า",
       "nameEn": "Tianbao Hotel Chengde",
       "budget": "mid",
-      "priceRange": "¥300-550/night",
+      "priceRange": "300-550 เยน/คืน",
       "address": "ใกล้เขตซวงเฉียว",
       "coordinates": {
         "lat": 40.9722,
@@ -2884,7 +2884,7 @@
       "name": "โรงแรมเฉิงเต๋อจิงตู",
       "nameEn": "Jingdu Hotel Chengde",
       "budget": "mid",
-      "priceRange": "¥250-450/night",
+      "priceRange": "¥250-450/คืน",
       "address": "ใกล้กับ Mountain Resort",
       "coordinates": {
         "lat": 40.9722,
@@ -2903,7 +2903,7 @@
       "name": "โรงแรมเฉิงเต๋อหยวนเป่าซาน",
       "nameEn": "Yuanbaoshan Hotel",
       "budget": "budget",
-      "priceRange": "¥120-280/night",
+      "priceRange": "120-280 เยน/คืน",
       "address": "ใกล้กับ Mountain Resort",
       "coordinates": {
         "lat": 40.9722,
@@ -2922,7 +2922,7 @@
       "name": "รีสอร์ทน้ำพุร้อนเฉิงเต๋อ",
       "nameEn": "Chengde Hot Spring Resort",
       "budget": "luxury",
-      "priceRange": "¥600-1200/night",
+      "priceRange": "¥600-1200/คืน",
       "address": "ใกล้กับ Mountain Resort",
       "coordinates": {
         "lat": 40.9722,
@@ -2941,7 +2941,7 @@
       "name": "ค่ายพักรีสอร์ตทุ่งหญ้าเฉิงเต๋อ",
       "nameEn": "Chengde Grassland Resort Camp",
       "budget": "mid",
-      "priceRange": "¥300-600/night",
+      "priceRange": "¥300-600/คืน",
       "address": "พื้นที่หมู่หลานเว่ยชาง",
       "coordinates": {
         "lat": 42.2022,
@@ -2960,7 +2960,7 @@
       "name": "โรงแรมเฉิงเต๋อลาวเจีย",
       "nameEn": "Old Street Inn Chengde",
       "budget": "budget",
-      "priceRange": "¥100-250/night",
+      "priceRange": "¥100-250/คืน",
       "address": "เขตเมืองเก่า",
       "coordinates": {
         "lat": 40.9722,

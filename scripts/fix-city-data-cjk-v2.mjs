@@ -48,34 +48,27 @@ function walk(o, pathStr = "") {
 }
 
 function setPath(obj, pathStr, value) {
-  const parts = pathStr.split(".");
+  const tokens = [];
+  for (const part of pathStr.split(".")) {
+    const m = /^([^[]*)((?:\[\d+\])*)$/.exec(part);
+    const key = m ? m[1] : part;
+    if (key !== "") tokens.push(key);
+    const brackets = m ? m[2] : "";
+    for (const b of brackets.matchAll(/\[(\d+)\]/g)) tokens.push(Number(b[1]));
+  }
   let cur = obj;
-  for (let i = 0; i < parts.length; i += 1) {
-    const part = parts[i];
-    const arrMatch = /^(.*)\[(\d+)\]$/.exec(part);
-    const isLast = i === parts.length - 1;
-    if (arrMatch) {
-      const key = arrMatch[1];
-      const idx = Number(arrMatch[2]);
-      if (key === "") {
-        if (isLast) { cur[idx] = value; return; }
-        if (!cur[idx]) cur[idx] = {};
-        cur = cur[idx];
-        continue;
-      }
-      if (isLast) {
-        if (!Array.isArray(cur[key])) return;
-        cur[key][idx] = value;
-        return;
-      }
-      if (!cur[key]) cur[key] = [];
-      if (!Array.isArray(cur[key])) return;
-      if (!cur[key][idx]) cur[key][idx] = {};
-      cur = cur[key][idx];
+  for (let i = 0; i < tokens.length; i += 1) {
+    const t = tokens[i];
+    const isLast = i === tokens.length - 1;
+    if (typeof t === "number") {
+      if (!Array.isArray(cur)) return;
+      if (isLast) { cur[t] = value; return; }
+      if (!cur[t]) cur[t] = {};
+      cur = cur[t];
     } else {
-      if (isLast) { cur[part] = value; return; }
-      if (!cur[part]) cur[part] = {};
-      cur = cur[part];
+      if (isLast) { cur[t] = value; return; }
+      if (!cur[t]) cur[t] = {};
+      cur = cur[t];
     }
   }
 }
