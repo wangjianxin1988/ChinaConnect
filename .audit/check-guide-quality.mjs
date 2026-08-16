@@ -6,6 +6,14 @@ import { isKeepableToken } from "../scripts/lib/translation-accept.mjs";
 
 const lang = process.argv[2];
 const kind = process.argv[3] || "guide"; // guide | apps | emergency
+
+// Real key set for guide dictionaries comes from .audit/guide-strings.json.
+const REAL_KEYS = (() => {
+  try {
+    const d = JSON.parse(fs.readFileSync(".audit/guide-strings.json", "utf8"));
+    return new Set(d.strings || []);
+  } catch { return new Set(); }
+})();
 const paths = {
   guide: [`src/data/guide/overrides-${lang}.ts`],
   apps: [`src/data/apps/overrides-${lang}.ts`, `src/data/emergency/overrides-${lang}.ts`],
@@ -37,9 +45,12 @@ const DISALLOWED = {
 };
 const disallow = DISALLOWED[lang];
 const hasCJK = (s) => /[\u3400-\u9fff]/.test(s);
-let bad = 0, cont = 0, total = 0;
+let bad = 0, cont = 0, total = 0, junk = 0, missing = 0;
+const covered = new Set();
 for (const p of paths) {
   for (const [k, v] of parse(p)) {
+    if (REAL_KEYS.size > 0 && kind === "guide" && !REAL_KEYS.has(k)) { junk++; continue; }
+    covered.add(k);
     total++;
     if (v === k) {
       const legalZhIdentity = (lang === "zh-CN" || lang === "zh-TW") && hasCJK(k);
@@ -49,4 +60,9 @@ for (const p of paths) {
     }
   }
 }
-console.log(JSON.stringify({ lang, kind, total, bad, cont }));
+if (REAL_KEYS.size > 0 && kind === "guide") {
+  for (const k of REAL_KEYS) {
+    if (!covered.has(k)) missing++;
+  }
+}
+console.log(JSON.stringify({ lang, kind, total, bad, cont, junk, missing }));

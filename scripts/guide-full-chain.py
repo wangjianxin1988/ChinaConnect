@@ -49,13 +49,25 @@ def run_task(kind, lang, logfile):
     log(f"RUN {kind} {lang}")
     with open(logfile, "wb") as f:
         env = dict(os.environ)
-        env["TRANSLATE_PROVIDER"] = env.get("TRANSLATE_PROVIDER", "dashscope")
+        env["TRANSLATE_PROVIDER"] = env.get("TRANSLATE_PROVIDER", "deepseek")
         p = subprocess.run(["node", script, f"--lang={lang}"], stdout=f, stderr=subprocess.STDOUT, env=env)
     if kind == "guide" and lang == "zh-TW":
         subprocess.run(["uv", "run", "--no-project", "--with", "zhconv", "python", "scripts/fix-zh-tw-guide.py"], check=False)
     return p.returncode
 
 def main():
+    # Guard: refuse to start if another controller is already running.
+    me = os.path.basename(__file__)
+    ps = subprocess.run(
+        ["powershell", "-NoProfile", "-Command",
+         "Get-CimInstance Win32_Process -Filter \"Name='python.exe'\" | "
+         "Where-Object { $_.CommandLine -match 'guide-full-chain' } | "
+         "ForEach-Object { $_.ProcessId }"],
+        capture_output=True, text=True, timeout=60)
+    other = [int(x) for x in (ps.stdout or "").split() if x.strip().isdigit() and int(x) != os.getpid()]
+    if other:
+        log(f"ABORT: another guide-full-chain controller already running (pids={other})")
+        sys.exit(2)
     log("===== guide-full-chain started =====")
     state = {"done": [], "inflight": None, "failures": {}, "kind": "guide"}
     if os.path.exists(STATE_PATH):

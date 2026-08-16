@@ -81,17 +81,21 @@ function extractJson(content) {
   throw new Error("No closing JSON");
 }
 
-async function translateBatch(batch) {
-  const lines = batch.map(([key, text], i) => `k${i} = "${escapeTs(text)}"`).join("\n");
-  const prompt = `You are a professional translator for ChinaConnect (chinaengage.org), a Chinese travel website.
-Translate these ${batch.length} English strings into ${TARGETS[lang]} for foreign visitors.
+function buildPrompt(entries) {
+  const body = "{\n" + entries.map(([, text], i) => `  "k${i}": "${escapeTs(text)}"`).join(",\n") + "\n}";
+  return `You are a professional translator for ChinaConnect (chinaengage.org), a Chinese travel website.
+Translate these ${entries.length} English strings into ${TARGETS[lang]} for foreign visitors.
 Content: mobile app descriptions, app category labels, and emergency contact names/descriptions in China.
+Input JSON:
+${body}
 RULES:
-- Output ONLY a single flat JSON object with EXACTLY ${batch.length} keys (k0 ... k${batch.length - 1}).
-- No markdown, no commentary, no extra keys. Translate EVERY value into ${TARGETS[lang]}.
-- Keep brand names (WeChat, Alipay, etc.), phone numbers and URLs unchanged.
+- Respond with ONLY a JSON object of the same shape (keys k0..k${entries.length - 1}) where EVERY value is translated into ${TARGETS[lang]}.
+- No markdown, no commentary. Do NOT echo the input. Do NOT leave Chinese characters.
+- Keep brand names (WeChat, Alipay, etc.), phone numbers and URLs unchanged.`;
+}
 
-${lines}`;
+async function translateBatch(batch) {
+  const prompt = buildPrompt(batch);
   for (let attempt = 1; attempt <= RETRY_ATTEMPTS; attempt += 1) {
     try {
       const content = await callChat(prompt);
@@ -105,14 +109,18 @@ ${lines}`;
     await new Promise((resolve) => setTimeout(resolve, 1000 * attempt * attempt));
   }
   const out = [];
-  for (let i = 0; i < batch.length; i += 1) {
-    const one = batch[i];
+  for (const one of batch) {
+    // Single-key fallback: ONE direct attempt (no recursion), accept or keep identity.
     try {
-      const [r] = await translateBatch([one]);
-      out.push(r);
+      const content = await callChat(buildPrompt([one]));
+      const result = extractJson(content);
+      const raw = result?.k0;
+      if (typeof raw === "string" && acceptTranslation(raw, lang, one[1])) out.push(raw);
+      else out.push(one[1]);
     } catch {
-      out.push(one);
+      out.push(one[1]);
     }
+    await new Promise((resolve) => setTimeout(resolve, 200));
   }
   return out;
 }

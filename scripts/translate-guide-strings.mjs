@@ -110,26 +110,31 @@ function goodValue(value, source) {
 }
 
 // Translate a batch with partial acceptance: valid keys are kept, invalid ones retried.
+function buildPrompt(keys) {
+  const body = "{\n" + keys.map((s, i) => `  "k${i}": "${escapeTs(s)}"`).join(",\n") + "\n}";
+  return `You are a professional translator for ChinaConnect (chinaengage.org), a Chinese travel website.
+Translate the following strings into ${TARGETS[lang]} for foreign visitors.
+Content: visa rules, transport, payment, dining, etiquette, emergency, business and travel guide content.
+Input JSON:
+${body}
+RULES:
+- Respond with ONLY a JSON object of the same shape (keys k0..k${keys.length - 1}) where EVERY value is translated into ${TARGETS[lang]}.
+- No markdown, no commentary. Do NOT echo the input. Do NOT leave Chinese characters.
+- Do NOT keep English or Chinese text unless it is a brand name, number, price, time, unit, phone number, URL or proper noun.
+- Proper nouns should be transliterated into ${TARGETS[lang]} or kept as standard English/pinyin.
+- For Chinese proper nouns and dish names, give a ${TARGETS[lang]} gloss in parentheses where helpful.`;
+}
+
 async function translateBatch(batch) {
   const remaining = [...batch];
   const accepted = [];
   let attempt = 0;
   while (attempt < RETRY_ATTEMPTS && remaining.length > 0) {
     attempt += 1;
-    const lines = remaining.map((s, i) => `k${i} = "${escapeTs(s)}"`).join("\n");
-    const prompt = `You are a professional translator for ChinaConnect (chinaengage.org), a Chinese travel website.
-Translate the following strings into ${TARGETS[lang]} for foreign visitors.
-Content: visa rules, transport, payment, dining, etiquette, emergency, business and travel guide content.
-RULES:
-- Output ONLY a single flat JSON object with EXACTLY ${remaining.length} keys (k0 ... k${remaining.length - 1}).
-- No markdown, no commentary, no extra keys.
-- Translate EVERY value into ${TARGETS[lang]}. Do NOT keep English or Chinese text unless it is a brand name, number, price, time, unit, phone number, URL or proper noun.
-- Do NOT leave any Chinese characters in the output. Proper nouns should be transliterated into ${TARGETS[lang]} or kept as standard English/pinyin.
-- For Chinese proper nouns and dish names, give a ${TARGETS[lang]} gloss in parentheses where helpful.
-
-${lines}`;
+    const prompt = buildPrompt(remaining);
+    let content = "";
     try {
-      const content = await callChat(prompt);
+      content = await callChat(prompt);
       const result = extractJson(content);
       const newRemaining = [];
       let acceptedNow = 0;
@@ -153,15 +158,16 @@ ${lines}`;
     await new Promise((resolve) => setTimeout(resolve, 600 * attempt));
   }
   if (remaining.length > 0) {
-    // Single-key fallback (bounded): smaller responses succeed more often.
+    // Single-key fallback: ONE direct attempt per key (no recursion).
     for (const s of remaining) {
+      let val;
       try {
-        const [one] = await translateBatch([s]);
-        if (one !== undefined) accepted.push(one);
-        else accepted.push(undefined);
-      } catch {
-        accepted.push(undefined);
-      }
+        const content = await callChat(buildPrompt([s]));
+        const result = extractJson(content);
+        const raw = result?.k0;
+        if (goodValue(raw, s)) val = raw;
+      } catch { /* keep identity for manual review */ }
+      accepted.push(val);
       await new Promise((resolve) => setTimeout(resolve, 200));
     }
     console.warn(`  fallback: ${remaining.length} keys single-key`);

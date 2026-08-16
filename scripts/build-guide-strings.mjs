@@ -23,9 +23,18 @@ function isTranslatable(s) {
   return true;
 }
 
+// Object fields that are internal identifiers / not user-facing display text.
+const SKIP_FIELDS = new Set([
+  "id", "key", "slug", "href", "url", "phone", "email", "code",
+  "icon", "emoji", "colorClass", "bg", "text", "border",
+]);
+// Tailwind-style CSS class strings must never be treated as translatable.
+const CSS_CLASS_RE =
+  /^(?:[a-z]+(?:-[a-z0-9]+)+|hover:|focus:|dark:|md:|lg:|sm:|px-\d|py-\d)(?:\s+(?:[a-z]+(?:-[a-z0-9]+)+|hover:|focus:|dark:|md:|lg:|sm:))*$/;
+
 function walk(value, out) {
   if (typeof value === "string") {
-    out.push(value);
+    if (!CSS_CLASS_RE.test(value)) out.push(value);
     return;
   }
   if (Array.isArray(value)) {
@@ -34,7 +43,7 @@ function walk(value, out) {
   }
   if (value && typeof value === "object") {
     for (const key of Object.keys(value)) {
-      if (key === "icon" || key === "emoji") continue;
+      if (SKIP_FIELDS.has(key)) continue;
       walk(value[key], out);
     }
     return;
@@ -45,6 +54,7 @@ const files = [];
 for (const dir of DATA_DIRS) {
   for (const name of fs.readdirSync(dir)) {
     if (!name.endsWith(".ts") || name === "ja-overrides.ts") continue;
+    if (/^overrides-[\w-]+\.ts$/.test(name)) continue; // generated per-lang dicts, not source data
     files.push(path.join(dir, name));
   }
 }
