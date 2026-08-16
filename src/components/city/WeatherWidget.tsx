@@ -57,7 +57,11 @@ export function WeatherWidget({ city, lat, lng, className = "", lang = "en", i18
     "shower drizzle": "霧雨",
   };
   const localizedDesc = (d: string): string => {
-    if (lang === "ja") return JA_DESC[d.toLowerCase()] || d;
+    if (lang === "en") return d;
+    const key = d.toLowerCase();
+    const localized = (i18n as any)?.weather?.conditions?.[key];
+    if (localized) return localized;
+    if (lang === "ja") return JA_DESC[key] || d;
     return d;
   };
   const localizedDay = (date: string): string => {

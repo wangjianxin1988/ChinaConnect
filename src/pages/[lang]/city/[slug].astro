@@ -13,6 +13,7 @@ import { translations } from "@/i18n/translations";
 import { EmergencySection } from "@/components/city/EmergencySection";
 import { FoodHighlightsSection } from "@/components/city/FoodHighlightsSection";
 import { WeatherWidget } from "@/components/city/WeatherWidget";
+import { WEATHER_CONDITIONS, WEATHER_DEMO } from "@/i18n/weather";
 import { citySlugs, getAdjacentCities, getCityBySlug } from "@/data/cities/index";
 import { cityDisplayName, pruneCityEntityNames } from "@/lib/city-name";
 import { getCityData } from "@/data/cities-i18n";
@@ -54,7 +55,7 @@ const weatherI18n = {
     weatherWind: translations[lang]?.cityPage?.weatherWind,
     weatherFeels: translations[lang]?.cityPage?.weatherFeels,
     weatherForecast: translations[lang]?.cityPage?.weatherForecast,
-    weatherDemo: translations[lang]?.cityPage?.weatherDemo,
+    weatherDemo: WEATHER_DEMO[lang] ?? translations[lang]?.cityPage?.weatherDemo,
     weatherNA: translations[lang]?.cityPage?.weatherNA,
     weatherNotAvailable: translations[lang]?.cityPage?.weatherNotAvailable,
   },
@@ -63,6 +64,7 @@ const weatherI18n = {
     toggleUnitCelsius: "°C",
     toggleUnitFahrenheit: "°F",
     rainProbability: lang === "ja" ? "降水確率" : "rain",
+    conditions: WEATHER_CONDITIONS[lang] || {},
   },
 };
 const pageTitle = (translations[lang] || translations.en).cityPage?.pageTitle?.replace("{city}", localCityName) ?? `${localCityName} ${(translations.en.cityPage?.pageTitleSuffix ?? "Travel Guide - ChinaConnect")}`;

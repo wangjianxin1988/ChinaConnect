@@ -2143,7 +2143,7 @@ export const COMP_STRINGS: Record<string, Record<ComponentLang, string>> = {
     ko: "중국 여행 가이드의 다른 콘텐츠와 함께 제공되는 이중 언어 비즈니스 도구입니다. 여기의 모든 링크는",
     "zh-CN": "与中国旅行指南其他内容配套的双语商务工具。这里的每个链接也可从",
     "zh-TW": "與中國旅遊指南其他內容配套的雙語商務工具。這裡的每個連結也可從",
-    th: "เครื่องมือธุรกิจสองภาษาที่ใช้ร่วมกับเนื้อหาอื่นๆ ของ China Travel Guide ทุกลิงก์ที่นี่ยังสามารถเข้าถึงได้จาก",
+    th: "เครื่องมือธุรกิจสองภาษาที่ใช้ร่วมกับเนื้อหาอื่นๆ ของคู่มือท่องเที่ยวจีน ทุกลิงก์ที่นี่ยังสามารถเข้าถึงได้จาก",
     vi: "Các công cụ kinh doanh song ngữ kết hợp với phần còn lại của China Travel Guide. Mọi liên kết ở đây cũng có thể truy cập từ",
     ru: "Двуязычные бизнес-инструменты, дополняющие остальной Китайский путеводитель. Все ссылки здесь также доступны с",
     fr: "Des outils professionnels bilingues qui s'associent au reste du guide de voyage en Chine. Chaque lien ici est également accessible depuis",
