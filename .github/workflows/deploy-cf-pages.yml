@@ -22,7 +22,13 @@ jobs:
           node-version: "22"
       - run: npm install -g pnpm
       - run: pnpm install --ignore-scripts
-      - run: pnpm build
+      # IMPORTANT: do NOT use `pnpm build` here. Its prebuild hook runs
+      # build-i18n-content.mjs + auto-translate scripts, which attempt ~385
+      # MiniMax API calls (one per city x language). When the key is
+      # unavailable/expired each call burns 3 x 25s timeouts (~8h total),
+      # exceeding the job limit; when valid it rewrites curated translations.
+      # All 12-language content is committed, so build directly (like local CI).
+      - run: pnpm check:i18n && node node_modules/astro/astro.js build
         env:
           PUBLIC_SUPABASE_URL: ${{ secrets.PUBLIC_SUPABASE_URL }}
           PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY }}

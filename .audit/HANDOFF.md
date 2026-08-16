@@ -1040,6 +1040,7 @@ for lang in LANGS:
   - **Playwright 公告 8/8 过**：ja 首访 onboarding→公告、seen 已记录、老用户已读不弹、AI 落地页可浏览 + Start Chatting → `/auth/login?next=%2Fja%2Fai`。
   - **Playwright 跨语言 7/7 过**：切换器 ja→ko URL 变 `/ko/city/beijing` + 内容韩文；guide 链接带 `/ja`；点击 guide→beijing 保持 ja；attractions breadcrumb `/ja/`。
   - **终扫**：zh-TW/th/fr/de 各 140 页 0 ISSUE 0 HTTP 错误；张家界 12 语言验证过（vi/de 各 1 条为误报已白名单）。
+- **CI 安全修复**：查证 `pnpm build` 的 prebuild 钩子（`build-i18n-content.mjs` + `auto-translate-new-cities/blog.mjs`）在 CI 会对全部 35 城 × 11 语言发起 ~385 次 MiniMax 调用——`auto-translate-new-cities` 的 `isFieldUntranslated` 遍历有 bug（attr/rest/culturalTip 字段在 i=0 步 generic 置 undefined 导致全部判未翻译，且与 EN 同值字段也算未翻译）。key 过期时每次 3×25s≈80s，合计 ~8.5h 超 GH Actions 6h 上限直接失败；key 有效时会把精心维护的翻译全量重写造成质量回退。**已在 `.github/workflows/deploy-cf-pages.yml` + `ci.yml` 把 build 步骤改为 `pnpm check:i18n && node node_modules/astro/astro.js build`（跳过 prebuild，与本地验证命令一致）**。CI 无 `content-*.json`（gitignored）故 build-i18n-content 整体跳过；blog 4 篇 × 11 语言已全覆盖故 blog 脚本 no-op，均已验证。
 - **部署**：push master → GitHub Actions（`.github/workflows/deploy-cf-pages.yml`）→ Cloudflare Pages 项目 `chinaconnect`（域名 `chinaengage.org`）+ 线上探活 api/chat、api/search。（结果待本节末尾补充）
 - **下个会话**：
   1. 若部署失败，查 GitHub Actions 日志修复重推。

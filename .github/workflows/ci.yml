@@ -151,7 +151,10 @@ jobs:
         run: pnpm install
 
       - name: Build project
-        run: pnpm build
+        # Skip `pnpm build` (prebuild hook = MiniMax auto-translate scripts that
+        # would attempt ~385 API calls and hang/fail when the key is unavailable).
+        # 12-language content is committed; build directly like local CI.
+        run: pnpm check:i18n && node node_modules/astro/astro.js build
         env:
           PUBLIC_SUPABASE_URL: ${{ secrets.PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co' }}
           PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key' }}
