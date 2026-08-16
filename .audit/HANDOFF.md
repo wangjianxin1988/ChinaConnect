@@ -1041,7 +1041,13 @@ for lang in LANGS:
   - **Playwright 跨语言 7/7 过**：切换器 ja→ko URL 变 `/ko/city/beijing` + 内容韩文；guide 链接带 `/ja`；点击 guide→beijing 保持 ja；attractions breadcrumb `/ja/`。
   - **终扫**：zh-TW/th/fr/de 各 140 页 0 ISSUE 0 HTTP 错误；张家界 12 语言验证过（vi/de 各 1 条为误报已白名单）。
 - **CI 安全修复**：查证 `pnpm build` 的 prebuild 钩子（`build-i18n-content.mjs` + `auto-translate-new-cities/blog.mjs`）在 CI 会对全部 35 城 × 11 语言发起 ~385 次 MiniMax 调用——`auto-translate-new-cities` 的 `isFieldUntranslated` 遍历有 bug（attr/rest/culturalTip 字段在 i=0 步 generic 置 undefined 导致全部判未翻译，且与 EN 同值字段也算未翻译）。key 过期时每次 3×25s≈80s，合计 ~8.5h 超 GH Actions 6h 上限直接失败；key 有效时会把精心维护的翻译全量重写造成质量回退。**已在 `.github/workflows/deploy-cf-pages.yml` + `ci.yml` 把 build 步骤改为 `pnpm check:i18n && node node_modules/astro/astro.js build`（跳过 prebuild，与本地验证命令一致）**。CI 无 `content-*.json`（gitignored）故 build-i18n-content 整体跳过；blog 4 篇 × 11 语言已全覆盖故 blog 脚本 no-op，均已验证。
-- **部署**：push master → GitHub Actions（`.github/workflows/deploy-cf-pages.yml`）→ Cloudflare Pages 项目 `chinaconnect`（域名 `chinaengage.org`）+ 线上探活 api/chat、api/search。（结果待本节末尾补充）
+- **部署**：已 push master（`22067f6` 功能 + `c561017` CI 修复）→ GitHub Actions「Deploy to Cloudflare Pages」**成功（2m41s）**，Cloudflare Pages 项目 `chinaconnect` 已上线 `chinaengage.org`，工作流内 api/chat、api/search 探活通过。
+- **线上抽验结果（Playwright 真实浏览器 + curl，全部 PASS）**：
+  - 公告弹窗：`/`（en）与 `/ja/` 首访先 onboarding → 弹出 12 语言公告（en「Major update: 12 languages…」/ ja「大型アップデート：12言語対応…」）；点 Got it 后 `chinaconnect_announcement_seen` 写入公告 id；刷新后老用户不再弹。
+  - AI 页：`/ja/ai` 可浏览落地页（3 功能卡 + 6 示例问题 + ✨ Start Chatting），点击跳 `/auth/login?next=…` 且回跳参数保留；`/auth/login` 统一登录页 200。
+  - 语言保持：`/ja/city/beijing/` 点 guide 链接 → `/ja/guide`；点城市卡片 → `/ja/city/…`；语言切换器 ja→ko → `/ko/city/beijing/` + 韩文内容；`lang="ja"` 属性正确。
+  - 博客配图：`/blog/ultimate-china-travel-guide-2026`、`/ja/blog/`、`/zh-CN/blog/` 均含 `/img/blog/*.webp` 封面。
+  - SSR 抽查：`/` 含公告 id `2026-08-17-i18n-ai-blog` + onboarding-root；`/ja/` 含日文公告；`/zh-TW/city/beijing/` `lang="zh-TW"`。
 - **下个会话**：
   1. 若部署失败，查 GitHub Actions 日志修复重推。
   2. 部署成功后 curl 线上抽验：首页弹窗公告、`/ja/ai` 落地页、`/ja/city/beijing` 语言保持、`/auth/login` 统一登录。
