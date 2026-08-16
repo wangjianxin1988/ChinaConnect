@@ -358,18 +358,70 @@ export default function AIChatPage() {
     setChatStarted(true);
   }, []);
 
-  // Render the auth gate if not signed in
+  // Public visitors can browse the AI page; sign-in is only required when they
+  // actually start chatting. Redirect to the single unified login page.
+  const handleStartChat = useCallback(() => {
+    const next = encodeURIComponent(window.location.pathname + window.location.search);
+    window.location.href = `/auth/login?next=${next}`;
+  }, []);
+
+  // Public landing view: browseable without an account, no login wall.
   if (!isAuthenticated) {
     return (
       <div className="min-h-[calc(100vh-64px)] bg-gradient-to-br from-slate-50 via-white to-purple-50">
-        <div className="container-custom py-12">
-          <div className="text-center mb-8">
+        <div className="container-custom py-12 md:py-16">
+          <div className="text-center mb-10">
             <h1 className="text-4xl md:text-5xl font-black text-gray-900 mb-3">ChinaGuide AI</h1>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
               {aiT("heroSubtitle", "Your personal China travel intelligence — itineraries, local insights, and real-time guidance.")}
             </p>
           </div>
-          <AuthGate />
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-12">
+            {[
+              { icon: "🗺", title: aiT("featItineraryTitle", "Custom Itineraries"), desc: aiT("featItineraryDesc", "Day-by-day plans tailored to any city, budget and travel style.") },
+              { icon: "🍜", title: aiT("featFoodTitle", "Food & Dining"), desc: aiT("featFoodDesc", "Michelin, Black Pearl and local hidden gems you won’t find in guidebooks.") },
+              { icon: "💳", title: aiT("featPayTitle", "Payments & Practical"), desc: aiT("featPayDesc", "Alipay, WeChat Pay, SIM cards, VPNs and every practical detail.") },
+            ].map((f) => (
+              <div key={f.title} className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 text-center">
+                <div className="text-4xl mb-3">{f.icon}</div>
+                <h3 className="font-semibold text-gray-900 mb-1.5">{f.title}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed">{f.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="max-w-3xl mx-auto mb-12">
+            <h2 className="text-lg font-semibold text-gray-900 text-center mb-4">
+              {aiT("tryExamplesTitle", "Try asking things like…")}
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {FALLBACK_PROMPTS.map((pr) => (
+                <button
+                  key={pr.text}
+                  type="button"
+                  onClick={handleStartChat}
+                  className="text-left flex items-start gap-3 p-4 rounded-xl bg-white border border-gray-200 hover:border-purple-300 hover:shadow-md transition-shadow"
+                >
+                  <span className="text-xl">{pr.icon}</span>
+                  <span className="text-sm text-gray-700">{pr.text}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="text-center">
+            <button
+              type="button"
+              onClick={handleStartChat}
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold text-lg shadow-lg hover:opacity-90 transition-opacity"
+            >
+              ✨ {aiT("startChatCta", "Start Chatting")}
+            </button>
+            <p className="text-sm text-gray-500 mt-3">
+              {aiT("loginHint", "Sign in or create a free account to start chatting.")}
+            </p>
+          </div>
         </div>
       </div>
     );

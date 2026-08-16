@@ -1,0 +1,176 @@
+---
+import type { Announcement } from "@/data/announcements";
+
+interface Props {
+  lang: string;
+  announcements: Announcement[];
+}
+
+const { lang, announcements } = Astro.props;
+
+const UI: Record<string, { title: string; gotIt: string; close: string }> = {
+  en: { title: "What's New", gotIt: "Got it", close: "Close" },
+  ja: { title: "新着情報", gotIt: "閉じる", close: "閉じる" },
+  ko: { title: "새로운 소식", gotIt: "확인", close: "닫기" },
+  "zh-CN": { title: "最新公告", gotIt: "知道了", close: "关闭" },
+  "zh-TW": { title: "最新公告", gotIt: "知道了", close: "關閉" },
+  th: { title: "ข่าวสารล่าสุด", gotIt: "รับทราบ", close: "ปิด" },
+  vi: { title: "Tin mới", gotIt: "Đã hiểu", close: "Đóng" },
+  ru: { title: "Что нового", gotIt: "Понятно", close: "Закрыть" },
+  fr: { title: "Nouveautés", gotIt: "Compris", close: "Fermer" },
+  de: { title: "Neuigkeiten", gotIt: "Verstanden", close: "Schließen" },
+  ar: { title: "ما الجديد", gotIt: "حسنًا", close: "إغلاق" },
+  fa: { title: "تازه‌ها", gotIt: "متوجه شدم", close: "بستن" },
+};
+
+const ui = UI[lang] || UI.en;
+
+// Server-side pick the right language for each announcement so the client
+// just renders plain strings (no client-side translation needed).
+const payload = (announcements || [])
+  .filter((a) => a && a.id && (a.title?.[lang] || a.title?.en))
+  .map((a) => ({
+    id: a.id,
+    date: a.date || "",
+    title: a.title?.[lang] || a.title?.en || "",
+    body: a.body?.[lang] || a.body?.en || "",
+    link: a.link || "",
+  }));
+---
+
+<!-- Entry popup: first-time onboarding + unread announcements -->
+<div id="onboarding-root"></div>
+
+<script is:inline define:vars={{ announcements: payload, uiLabels: ui }}>
+  (function () {
+    if (navigator.webdriver) return;
+
+    var ANNOUNCEMENTS = announcements || [];
+    var UI = uiLabels || {};
+
+    var SEEN_KEY = "chinaconnect_announcement_seen";
+
+    function getSeen() {
+      try {
+        var s = JSON.parse(localStorage.getItem(SEEN_KEY) || "[]");
+        return Array.isArray(s) ? s : [];
+      } catch (e) { return []; }
+    }
+
+    function markSeen(ids) {
+      var seen = getSeen();
+      ids.forEach(function (id) { if (seen.indexOf(id) === -1) seen.push(id); });
+      try { localStorage.setItem(SEEN_KEY, JSON.stringify(seen)); } catch (e) {}
+    }
+
+    function esc(s) {
+      return String(s == null ? "" : s).replace(/[&<>"']/g, function (ch) {
+        return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch];
+      });
+    }
+
+    var unread = ANNOUNCEMENTS.filter(function (a) { return getSeen().indexOf(a.id) === -1; });
+
+    function showAnnouncements() {
+      if (!unread.length) return;
+      var root = document.getElementById("onboarding-root");
+      if (!root) return;
+      var items = unread.map(function (a) {
+        var linkHtml = a.link
+          ? '<div style="margin-top:0.75rem;"><a href="' + esc(a.link) + '" style="color:#3b82f6;font-weight:600;font-size:0.875rem;text-decoration:none;">' + esc(UI.title || "More") + " →</a></div>"
+          : "";
+        return '<div style="padding:1rem 0;border-bottom:1px solid #f3f4f6;">' +
+          '<div style="margin-bottom:0.375rem;"><span style="font-size:0.75rem;font-weight:600;color:#3b82f6;background:#eff6ff;border-radius:9999px;padding:0.125rem 0.625rem;" dir="auto">' + esc(a.date || "") + "</span></div>" +
+          '<h3 style="font-size:1rem;font-weight:700;color:#111827;margin:0 0 0.375rem;line-height:1.4;" dir="auto">' + esc(a.title) + "</h3>" +
+          '<p style="font-size:0.875rem;color:#4b5563;line-height:1.7;margin:0;" dir="auto">' + esc(a.body) + "</p>" + linkHtml +
+          "</div>";
+      }).join("");
+
+      root.innerHTML = '<div id="announcement-overlay" style="position:fixed;inset:0;background:rgba(0,0,0,0.6);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;z-index:1001;padding:1rem;">' +
+        '<div style="background:white;border-radius:1.5rem;max-width:28rem;width:100%;max-height:85vh;overflow-y:auto;box-shadow:0 25px 50px -12px rgba(0,0,0,0.25);animation:ccSlideUp 0.3s ease;">' +
+        '<style>@keyframes ccSlideUp{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}</style>' +
+        '<div style="display:flex;justify-content:space-between;align-items:center;padding:1.25rem 1.5rem 0.5rem;">' +
+        '<h2 style="font-size:1.25rem;font-weight:700;color:#111827;margin:0;" dir="auto">' + esc(UI.title || "What's New") + "</h2>" +
+        '<button id="announcement-close" style="padding:0.375rem 0.75rem;background:transparent;color:#6b7280;border:none;border-radius:0.375rem;font-size:0.875rem;cursor:pointer;">' + esc(UI.close || "Close") + "</button>" +
+        "</div>" +
+        '<div style="padding:0.5rem 1.5rem 1.5rem;">' + items +
+        '<button id="announcement-gotit" style="width:100%;margin-top:1rem;padding:0.75rem 1.25rem;background:#3b82f6;color:white;border:none;border-radius:0.75rem;font-size:0.875rem;font-weight:600;cursor:pointer;">' + esc(UI.gotIt || "Got it") + "</button>" +
+        "</div></div></div>";
+
+      var done = function () {
+        markSeen(unread.map(function (a) { return a.id; }));
+        var ov = document.getElementById("announcement-overlay");
+        if (ov) ov.remove();
+      };
+      document.getElementById("announcement-close").onclick = done;
+      document.getElementById("announcement-gotit").onclick = done;
+    }
+
+    function completeOnboarding() {
+      localStorage.setItem("chinaconnect_onboarding_complete", "true");
+      var ov = document.getElementById("onboarding-overlay");
+      if (ov) ov.remove();
+      showAnnouncements();
+    }
+
+    // Returning users: show unread announcements right away.
+    if (localStorage.getItem("chinaconnect_onboarding_complete")) {
+      showAnnouncements();
+      return;
+    }
+
+    var root = document.getElementById("onboarding-root");
+    if (!root) return;
+
+    root.innerHTML = '<div id="onboarding-overlay" style="position:fixed;inset:0;background:rgba(0,0,0,0.6);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;z-index:1000;padding:1rem;"><div style="background:white;border-radius:1.5rem;max-width:28rem;width:100%;overflow:hidden;box-shadow:0 25px 50px -12px rgba(0,0,0,0.25);animation:ccSlideUp 0.3s ease"><div style="display:flex;justify-content:flex-end;padding:1rem 1rem 0;"><button id="onboarding-skip" style="padding:0.375rem 0.75rem;background:transparent;color:#6b7280;border:none;border-radius:0.375rem;font-size:0.875rem;cursor:pointer;" data-i18n="home.onboardingSkip">Skip</button></div><div style="padding:1.5rem 2rem 2rem;text-align:center;"><div id="onboarding-icon" style="width:5rem;height:5rem;margin:0 auto 1.5rem;border-radius:50%;background:linear-gradient(135deg,#3b82f6,#8b5cf6);display:flex;align-items:center;justify-content:center;color:white;"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width:2.5rem;height:2.5rem;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"/></svg></div><h2 id="onboarding-title" style="font-size:1.5rem;font-weight:700;color:#111827;margin:0 0 0.75rem;" data-i18n="home.onboarding1Title">Discover Great Food</h2><p id="onboarding-desc" style="font-size:1rem;color:#6b7280;line-height:1.6;margin:0;" data-i18n="home.onboarding1Desc">Find Michelin-starred and Black Pearl restaurants in 12 Chinese cities.</p></div><div style="padding:1.5rem 2rem;border-top:1px solid #e5e7eb;display:flex;align-items:center;justify-content:space-between;"><div id="onboarding-dots" style="display:flex;gap:0.5rem;"><button id="dot0" style="width:1.5rem;height:0.5rem;border-radius:9999px;background:#3b82f6;border:none;padding:0;cursor:pointer;"></button><button id="dot1" style="width:0.5rem;height:0.5rem;border-radius:50%;background:#d1d5db;border:none;padding:0;cursor:pointer;"></button><button id="dot2" style="width:0.5rem;height:0.5rem;border-radius:50%;background:#d1d5db;border:none;padding:0;cursor:pointer;"></button></div><button id="onboarding-next" style="display:flex;align-items:center;gap:0.5rem;padding:0.625rem 1.25rem;background:#3b82f6;color:white;border:none;border-radius:0.5rem;font-size:0.875rem;font-weight:600;cursor:pointer;"><span data-i18n="home.onboardingNext">Next</span> <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width:1.25rem;height:1.25rem;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button></div></div></div>';
+
+    var i18nT = function (key) {
+      try {
+        var lang = document.documentElement.lang || "en";
+        var translations = (window.__I18N__ && window.__I18N__.translations) || {};
+        var dict = translations[lang] || translations.en || {};
+        var parts = key.split(".");
+        var cur = dict;
+        for (var i = 0; i < parts.length; i++) { if (cur && typeof cur === "object" && parts[i] in cur) cur = cur[parts[i]]; else return key; }
+        return typeof cur === "string" ? cur : key;
+      } catch (e) { return key; }
+    };
+    var steps = [
+      { titleKey: "home.onboarding1Title", descKey: "home.onboarding1Desc" },
+      { titleKey: "home.onboarding2Title", descKey: "home.onboarding2Desc" },
+      { titleKey: "home.onboarding3Title", descKey: "home.onboarding3Desc" },
+    ];
+    var currentStep = 0;
+
+    window.goToStep = function (idx) {
+      currentStep = idx;
+      for (var i = 0; i < 3; i++) {
+        var dot = document.getElementById("dot" + i);
+        if (i === idx) {
+          dot.style.width = "1.5rem";
+          dot.style.borderRadius = "9999px";
+          dot.style.background = "#3b82f6";
+        } else {
+          dot.style.width = "0.5rem";
+          dot.style.borderRadius = "50%";
+          dot.style.background = "#d1d5db";
+        }
+      }
+      document.getElementById("onboarding-title").textContent = i18nT(steps[idx].titleKey);
+      document.getElementById("onboarding-desc").textContent = i18nT(steps[idx].descKey);
+      var nextLabel = idx === 2 ? i18nT("home.onboardingFinish") : i18nT("home.onboardingNext");
+      var nextIcon = idx === 2
+        ? '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width:1.25rem;height:1.25rem;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>'
+        : '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width:1.25rem;height:1.25rem;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>';
+      document.getElementById("onboarding-next").innerHTML = nextLabel + " " + nextIcon;
+    };
+
+    document.getElementById("onboarding-next").onclick = function () {
+      if (currentStep < 2) { currentStep++; window.goToStep(currentStep); }
+      else { completeOnboarding(); }
+    };
+    document.getElementById("onboarding-skip").onclick = completeOnboarding;
+    document.getElementById("dot1").onclick = function () { window.goToStep(1); };
+    document.getElementById("dot2").onclick = function () { window.goToStep(2); };
+  })();
+</script>

@@ -121,28 +121,15 @@ test.describe("AI Chat Interface", () => {
     expect(hasChatContainer || hasInput || hasChatKeywords).toBeTruthy();
   });
 
-  test("has text input for user messages", async ({ page }) => {
+  test("unauthenticated visitors see the browsable AI landing", async ({ page }) => {
     await page.goto("/ai", { timeout: 30000 });
     await waitForHydration(page);
 
-    // Wait for client-side React mount (h1 with "AI Concierge")
-    await page
-      .locator("h1:has-text('ChinaGuide AI')")
-      .first()
-      .waitFor({ state: "visible", timeout: 15000 });
-
-    // AI chat starts with example prompts; clicking one triggers chatStarted and reveals the textarea
-    const promptButton = page
-      .locator(
-        "button:has-text('Plan a'), button:has-text('Best local'), button:has-text('How to travel')",
-      )
-      .first();
-    if ((await promptButton.count()) > 0) {
-      await promptButton.click({ timeout: 5000 }).catch(() => {});
-    }
-
-    const chatInput = page.locator("textarea").first();
-    await expect(chatInput).toBeVisible({ timeout: 15000 });
+    // Public visitors can browse the AI page without an account (no login wall).
+    const heading = page.locator("h1:has-text('ChinaGuide AI')").first();
+    await expect(heading).toBeVisible({ timeout: 15000 });
+    const bodyText = await page.locator("body").innerText();
+    expect(bodyText).toContain("Start Chatting");
   });
 
   test("chat input is focusable", async ({ page }) => {
@@ -300,31 +287,16 @@ test.describe("AI Chat Interactions", () => {
     }
   });
 
-  test("submit button is present", async ({ page }) => {
+  test("starting a chat redirects to the unified login page with next", async ({ page }) => {
     await page.goto("/ai", { timeout: 30000 });
     await waitForHydration(page);
 
-    // Wait for client-side React mount (h1 with "AI Concierge")
-    await page
-      .locator("h1:has-text('ChinaGuide AI')")
-      .first()
-      .waitFor({ state: "visible", timeout: 15000 });
-
-    // Click a prompt to trigger chatStarted and reveal the chat input + submit
-    const promptButton = page
-      .locator(
-        "button:has-text('Plan a'), button:has-text('Best local'), button:has-text('How to travel')",
-      )
-      .first();
-    if ((await promptButton.count()) > 0) {
-      await promptButton.click({ timeout: 5000 }).catch(() => {});
-    }
-
-    // After chatStarted the chat input area (with Send button) appears
-    const submitBtn = page.locator(
-      'button[type="submit"], button:has-text("Send"), button:has-text("Submit")',
-    );
-    await expect(submitBtn.first()).toBeVisible({ timeout: 15000 });
+    // Chat requires sign-in: the Start Chatting CTA goes to the single /auth/login
+    // page and carries ?next= so the user returns to the AI page after login.
+    const startBtn = page.locator("button:has-text('Start Chatting')").first();
+    await expect(startBtn).toBeVisible({ timeout: 15000 });
+    await startBtn.click();
+    await page.waitForURL(/\/auth\/login\?next=/, { timeout: 15000 });
   });
 
   test("chat input supports multiline text", async ({ page }) => {

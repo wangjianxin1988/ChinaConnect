@@ -5,7 +5,7 @@ export function getStaticPaths() {
   return langs.flatMap((lang) => slugs.map((slug) => ({ params: { lang, slug } })));
 }
 
-import { getAllPostSlugs, getPost } from "@/data/blog";
+import { getAllPostSlugs, getPost , blogCoverImage } from "@/data/blog";
 import { translations } from "@/i18n/translations";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
@@ -73,9 +73,9 @@ const htmlContent = post.content
         <p class="text-sm text-gray-500 mt-2">{(b.author || "By {name}").replace("{name}", post.author)}</p>
       </header>
 
-      {post.coverImage && (
+      {blogCoverImage(post) && (
         <div class="aspect-video rounded-2xl overflow-hidden mb-8 bg-gradient-to-br from-blue-500 to-purple-600">
-          <img src={post.coverImage} alt={post.title} class="w-full h-full object-cover" />
+          <img src={blogCoverImage(post)} alt={post.title} class="w-full h-full object-cover" />
         </div>
       )}
 

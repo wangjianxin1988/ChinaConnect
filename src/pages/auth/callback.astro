@@ -41,8 +41,15 @@ import { translations } from "@/i18n/translations";
       const { error } = await exchangeCodeForSession(code);
       if (!error) {
         // Clean URL, then redirect to account
-        window.history.replaceState({}, '', window.location.pathname);
-        window.location.href = '/account';
+        function goNext() {
+          var n = null;
+          try { n = sessionStorage.getItem("auth_next"); } catch (e) { n = null; }
+          try { if (n) sessionStorage.removeItem("auth_next"); } catch (e) {}
+          if (n && n.charAt(0) === "/" && n.charAt(1) !== "/") { window.location.href = n; return; }
+          window.location.href = "/account";
+        }
+          window.history.replaceState({}, '', window.location.pathname);
+        goNext();
         return;
       }
       console.warn('[auth/callback] exchangeCodeForSession failed:', error);
@@ -55,7 +62,7 @@ import { translations } from "@/i18n/translations";
       const { error } = await verifyOtpToken(tokenHash, otpType);
       if (!error) {
         window.history.replaceState({}, '', window.location.pathname);
-        window.location.href = '/account';
+        goNext();
         return;
       }
       console.warn('[auth/callback] verifyOtp failed:', error);
@@ -73,7 +80,7 @@ import { translations } from "@/i18n/translations";
         });
         if (!error) {
           window.history.replaceState({}, '', window.location.pathname);
-          window.location.href = '/account';
+          goNext();
           return;
         }
         console.warn('[auth/callback] setSession failed:', error);
@@ -85,7 +92,7 @@ import { translations } from "@/i18n/translations";
     // 4) Fallback: maybe session was already established (e.g., magic link click that auto-sets)
     const { data: { session } } = await supabase.auth.getSession();
     if (session) {
-      window.location.href = '/account';
+      goNext();
       return;
     }
 

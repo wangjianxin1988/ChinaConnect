@@ -98,6 +98,7 @@ function renderCount(lang: string | undefined, n: number): string {
 }
 
 export function CityFoodNav({ restaurants, citySlug, lang = "en" }: CityFoodNavProps) {
+  const lp = lang === "en" ? "" : "/" + lang;
   const [activeFilter, setActiveFilter] = useState<FoodFilter>("all");
   const counts = getFilterCounts(restaurants);
 
@@ -153,7 +154,7 @@ export function CityFoodNav({ restaurants, citySlug, lang = "en" }: CityFoodNavP
       <div className="flex items-center justify-between text-sm">
         <p className="text-gray-500">{renderCount(lang, filteredRestaurants.length)}</p>
         <a
-          href={`/city/${citySlug}/food${activeFilter !== "all" ? `?filter=${activeFilter}` : ""}`}
+          href={`${lp}/city/${citySlug}/food${activeFilter !== "all" ? `?filter=${activeFilter}` : ""}`}
           className="text-blue-600 hover:text-blue-700 font-medium hover:underline"
         >
           {ct(lang, "restaurants_full_list", "Full list ->")}

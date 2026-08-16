@@ -201,6 +201,7 @@ async function callChat(prompt) {
   const body = { model: MODEL, messages: [{ role: 'user', content: prompt }], temperature: 0.2, max_tokens: 8000 };
   const res = await fetch(HOST + '/v1/chat/completions', {
     method: 'POST',
+    signal: AbortSignal.timeout(25000),
     headers: { Authorization: 'Bearer ' + KEY, 'Content-Type': 'application/json' },
     body: JSON.stringify(body),
   });

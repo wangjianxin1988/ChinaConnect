@@ -5,9 +5,11 @@ import { useEffect, useState } from "react";
 
 interface RestaurantListClientProps {
   restaurants: Restaurant[];
+  lang?: string;
 }
 
-export default function RestaurantListClient({ restaurants }: RestaurantListClientProps) {
+export default function RestaurantListClient({ restaurants, lang }: RestaurantListClientProps) {
+  const langPrefix = (lang || (typeof document !== "undefined" ? document.documentElement.lang : "") || "en") === "en" ? "" : "/" + (lang || document.documentElement.lang);
   const [filtered, setFiltered] = useState<Restaurant[]>(restaurants);
   const [_stateVersion, setStateVersion] = useState(0);
 
@@ -24,13 +26,13 @@ export default function RestaurantListClient({ restaurants }: RestaurantListClie
   return (
     <>
       {filtered.map((restaurant) => (
-        <RestaurantListItem key={restaurant.id} restaurant={restaurant} />
+        <RestaurantListItem key={restaurant.id} restaurant={restaurant} langPrefix={langPrefix} />
       ))}
     </>
   );
 }
 
-function RestaurantListItem({ restaurant }: { restaurant: Restaurant }) {
+function RestaurantListItem({ restaurant, langPrefix }: { restaurant: Restaurant; langPrefix?: string }) {
   const typeColors = {
     michelin: "bg-[#1E3A5F]/90 text-white",
     blackpearl: "bg-[#2D1B4E]/90 text-white",
@@ -39,7 +41,7 @@ function RestaurantListItem({ restaurant }: { restaurant: Restaurant }) {
 
   return (
     <a
-      href={`/food/${restaurant.id}`}
+      href={`${langPrefix || ""}/food/${restaurant.id}`}
       className="block bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-all border border-gray-100 hover:border-blue-200"
     >
       {restaurant.imageUrl && (

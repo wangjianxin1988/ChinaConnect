@@ -101,6 +101,7 @@ RULES:
 
   const res = await fetch(`${HOST}/v1/chat/completions`, {
     method: "POST",
+    signal: AbortSignal.timeout(25000),
     headers: { Authorization: `Bearer ${KEY}`, "Content-Type": "application/json" },
     body: JSON.stringify(body),
   });

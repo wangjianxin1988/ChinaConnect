@@ -2869,27 +2869,27 @@
       ],
       "taxi": [
         {
-          "type": "Starting Fare",
+          "type": "起步价",
           "price": "8¥",
           "description": "首2公里"
         },
         {
-          "type": "Per km",
+          "type": "每公里",
           "price": "2元/公里",
           "description": "超过首2公里后"
         },
         {
-          "type": "To Airport",
+          "type": "前往机场",
           "price": "30-50¥",
           "description": "从市中心出发"
         },
         {
-          "type": "To Forest Park",
+          "type": "前往森林公园",
           "price": "80-120¥",
           "description": "从市中心出发"
         },
         {
-          "type": "To Tianmen",
+          "type": "前往天门山",
           "price": "50-80¥",
           "description": "从市中心出发"
         },
@@ -2899,62 +2899,62 @@
           "tips": "仔细设置目的地"
         },
         {
-          "type": "Long Distance",
+          "type": "长途",
           "price": "可议价",
           "description": "前往偏远景点"
         },
         {
-          "type": "Night Surcharge",
+          "type": "夜间附加费",
           "price": "+20%",
           "description": "22:00-06:00"
         },
         {
-          "type": "Tip",
+          "type": "小费",
           "description": "将目的地用中文写好",
           "tips": "向司机出示地址"
         },
         {
-          "type": "Airport Taxi",
+          "type": "机场出租车",
           "price": "计价器",
           "description": "机场的官方出租车"
         },
         {
-          "type": "Hotel Pickup",
+          "type": "酒店叫车",
           "description": "请酒店帮忙叫出租车",
           "tips": "清晨时段很有用"
         },
         {
-          "type": "Negotiation",
+          "type": "议价",
           "description": "在旅游区先谈好价格再上车",
           "tips": "提前了解常规价格"
         }
       ],
       "bike": [
         {
-          "type": "E-bike Rental",
+          "type": "电动自行车租赁",
           "price": "50-80元/天",
           "locations": "市中心和旅游区",
           "tips": "需持有有效驾照"
         },
         {
-          "type": "Bike Share",
+          "type": "共享单车",
           "price": "2-5元/次",
           "locations": "市中心车站",
           "tips": "使用微信小程序"
         },
         {
-          "type": "Mountain Bike",
+          "type": "山地车",
           "price": "100-150元/天",
           "locations": "靠近森林公园",
           "tips": "仅限经验丰富的骑行者"
         },
         {
-          "type": "Cave Area",
+          "type": "洞穴区域",
           "description": "不推荐——距离较长",
           "suitability": "仅限城市观光"
         },
         {
-          "type": "Traffic Rules",
+          "type": "交通规则",
           "description": "遵守当地交通规则",
           "tips": "在自行车道骑行"
         },
@@ -2965,32 +2965,32 @@
           "tips": "正确锁好自行车"
         },
         {
-          "type": "Helmet",
+          "type": "头盔",
           "description": "建议佩戴，但不一定提供",
           "tips": "尽量自带"
         },
         {
-          "type": "Night Riding",
+          "type": "夜间骑行",
           "description": "不推荐——照明有限",
           "tips": "天黑前返回"
         },
         {
-          "type": "Scenic Areas",
+          "type": "景区",
           "description": "大多数景点内不允许自行车进入",
           "tips": "在入口处停车"
         },
         {
-          "type": "Rain",
+          "type": "雨天",
           "description": "避免在大雨中骑行",
           "tips": "查看天气预报"
         },
         {
-          "type": "Distance",
+          "type": "距离",
           "description": "仅适用于市内短途",
           "tips": "前往景区请乘坐公交车"
         },
         {
-          "type": "Registration",
+          "type": "登记",
           "description": "部分电动自行车需要登记",
           "tips": "咨询租赁店"
         }

@@ -2869,27 +2869,27 @@
       ],
       "taxi": [
         {
-          "type": "Starting Fare",
+          "type": "Giá cước ban đầu",
           "price": "8¥",
           "description": "2 km đầu tiên"
         },
         {
-          "type": "Per km",
+          "type": "Mỗi km",
           "price": "2 NDT/km",
           "description": "Sau 2 km đầu tiên"
         },
         {
-          "type": "To Airport",
+          "type": "Ra sân bay",
           "price": "30-50¥",
           "description": "Từ trung tâm thành phố"
         },
         {
-          "type": "To Forest Park",
+          "type": "Đến Công viên Rừng",
           "price": "80-120¥",
           "description": "Từ trung tâm thành phố"
         },
         {
-          "type": "To Tianmen",
+          "type": "Đến Thiên Môn Sơn",
           "price": "50-80¥",
           "description": "Từ trung tâm thành phố"
         },
@@ -2899,62 +2899,62 @@
           "tips": "Đặt điểm đến cẩn thận"
         },
         {
-          "type": "Long Distance",
+          "type": "Đường dài",
           "price": "Có thể thương lượng",
           "description": "Đến các điểm tham quan xa"
         },
         {
-          "type": "Night Surcharge",
+          "type": "Phụ phí ban đêm",
           "price": "+20%",
           "description": "22:00-06:00"
         },
         {
-          "type": "Tip",
+          "type": "Tiền tip",
           "description": "Viết điểm đến bằng tiếng Trung",
           "tips": "Đưa địa chỉ cho tài xế"
         },
         {
-          "type": "Airport Taxi",
+          "type": "Taxi sân bay",
           "price": "Đồng hồ tính tiền",
           "description": "Taxi chính thức tại sân bay"
         },
         {
-          "type": "Hotel Pickup",
+          "type": "Đặt xe từ khách sạn",
           "description": "Nhờ khách sạn gọi taxi",
           "tips": "Hữu ích cho buổi sáng sớm"
         },
         {
-          "type": "Negotiation",
+          "type": "Thương lượng giá",
           "description": "Thỏa thuận giá trước ở khu du lịch",
           "tips": "Nghiên cứu giá thông thường"
         }
       ],
       "bike": [
         {
-          "type": "E-bike Rental",
+          "type": "Thuê xe đạp điện",
           "price": "50-80¥/ngày",
           "locations": "Trung tâm thành phố và khu du lịch",
           "tips": "Cần bằng lái xe hợp lệ"
         },
         {
-          "type": "Bike Share",
+          "type": "Xe đạp chia sẻ",
           "price": "2-5¥/chuyến",
           "locations": "Các ga ở trung tâm thành phố",
           "tips": "Sử dụng mini program của WeChat"
         },
         {
-          "type": "Mountain Bike",
+          "type": "Xe đạp địa hình",
           "price": "100-150¥/ngày",
           "locations": "Gần Công viên Rừng",
           "tips": "Chỉ dành cho người đã có kinh nghiệm đi xe"
         },
         {
-          "type": "Cave Area",
+          "type": "Khu vực hang động",
           "description": "Không khuyến khích - quãng đường dài",
           "suitability": "Chỉ khám phá thành phố"
         },
         {
-          "type": "Traffic Rules",
+          "type": "Luật giao thông",
           "description": "Tuân thủ luật giao thông địa phương",
           "tips": "Đi xe trong làn đường dành cho xe đạp"
         },
@@ -2965,32 +2965,32 @@
           "tips": "Khóa xe đạp cẩn thận"
         },
         {
-          "type": "Helmet",
+          "type": "Mũ bảo hiểm",
           "description": "Được khuyến nghị nhưng không phải lúc nào cũng có",
           "tips": "Mang theo của bạn nếu có thể"
         },
         {
-          "type": "Night Riding",
+          "type": "Đi xe đạp ban đêm",
           "description": "Không được khuyến nghị - ánh sáng hạn chế",
           "tips": "Quay về trước khi trời tối"
         },
         {
-          "type": "Scenic Areas",
+          "type": "Khu danh lam",
           "description": "Xe đạp không được phép vào bên trong hầu hết các điểm tham quan",
           "tips": "Đỗ xe ở lối vào"
         },
         {
-          "type": "Rain",
+          "type": "Trời mưa",
           "description": "Tránh đi xe khi mưa lớn",
           "tips": "Kiểm tra dự báo thời tiết"
         },
         {
-          "type": "Distance",
+          "type": "Khoảng cách",
           "description": "Chỉ đi quãng đường ngắn trong thành phố",
           "tips": "Dùng xe buýt cho các khu danh lam thắng cảnh"
         },
         {
-          "type": "Registration",
+          "type": "Đăng ký",
           "description": "Một số xe máy điện cần đăng ký",
           "tips": "Hỏi cửa hàng cho thuê"
         }

@@ -2869,27 +2869,27 @@
       ],
       "taxi": [
         {
-          "type": "Starting Fare",
+          "type": "Tarif de départ",
           "price": "8¥",
           "description": "Les 2 premiers kilomètres"
         },
         {
-          "type": "Per km",
+          "type": "Par km",
           "price": "2¥/km",
           "description": "Après les 2 premiers kilomètres"
         },
         {
-          "type": "To Airport",
+          "type": "Vers l’aéroport",
           "price": "30-50¥",
           "description": "Depuis le centre-ville"
         },
         {
-          "type": "To Forest Park",
+          "type": "Vers le parc forestier",
           "price": "80-120¥",
           "description": "Depuis le centre-ville"
         },
         {
-          "type": "To Tianmen",
+          "type": "Vers Tianmen",
           "price": "50-80¥",
           "description": "Depuis le centre-ville"
         },
@@ -2899,62 +2899,62 @@
           "tips": "Définissez soigneusement la destination"
         },
         {
-          "type": "Long Distance",
+          "type": "Longue distance",
           "price": "Négociable",
           "description": "Vers les attractions éloignées"
         },
         {
-          "type": "Night Surcharge",
+          "type": "Supplément de nuit",
           "price": "+20%",
           "description": "22:00-06:00"
         },
         {
-          "type": "Tip",
+          "type": "Pourboire",
           "description": "Faites écrire la destination en chinois",
           "tips": "Montrez l'adresse au chauffeur"
         },
         {
-          "type": "Airport Taxi",
+          "type": "Taxi aéroport",
           "price": "Compteur",
           "description": "Taxis officiels à l'aéroport"
         },
         {
-          "type": "Hotel Pickup",
+          "type": "Prise en charge à l’hôtel",
           "description": "Demandez à l'hôtel d'appeler un taxi",
           "tips": "Utile tôt le matin"
         },
         {
-          "type": "Negotiation",
+          "type": "Négociation",
           "description": "Convenez du prix avant dans les zones touristiques",
           "tips": "Renseignez-vous sur les prix habituels"
         }
       ],
       "bike": [
         {
-          "type": "E-bike Rental",
+          "type": "Location de vélo électrique",
           "price": "50-80¥/jour",
           "locations": "Centre-ville et zones touristiques",
           "tips": "Permis de conduire valide requis"
         },
         {
-          "type": "Bike Share",
+          "type": "Vélos en libre-service",
           "price": "2-5¥/trajet",
           "locations": "Stations du centre-ville",
           "tips": "Utilisez le mini-programme WeChat"
         },
         {
-          "type": "Mountain Bike",
+          "type": "Vélo de montagne",
           "price": "100-150¥/jour",
           "locations": "Près du parc forestier",
           "tips": "Réservé aux cavaliers expérimentés"
         },
         {
-          "type": "Cave Area",
+          "type": "Zone des grottes",
           "description": "Déconseillé - longues distances",
           "suitability": "Exploration urbaine uniquement"
         },
         {
-          "type": "Traffic Rules",
+          "type": "Règles de circulation",
           "description": "Respectez le code de la route local",
           "tips": "Roulez dans les pistes cyclables"
         },
@@ -2965,22 +2965,22 @@
           "tips": "Verrouillez correctement le vélo"
         },
         {
-          "type": "Helmet",
+          "type": "Casque",
           "description": "Recommandé mais pas toujours fourni",
           "tips": "Apportez le vôtre si possible"
         },
         {
-          "type": "Night Riding",
+          "type": "Conduite de nuit",
           "description": "Déconseillé - éclairage limité",
           "tips": "Revenez avant la tombée de la nuit"
         },
         {
-          "type": "Scenic Areas",
+          "type": "Zones pittoresques",
           "description": "Vélos non autorisés à l'intérieur de la plupart des attractions",
           "tips": "Stationnez à l'entrée"
         },
         {
-          "type": "Rain",
+          "type": "Pluie",
           "description": "Évitez de rouler sous une forte pluie",
           "tips": "Consulter les prévisions météo"
         },
@@ -2990,7 +2990,7 @@
           "tips": "Utiliser le bus pour les zones panoramiques"
         },
         {
-          "type": "Registration",
+          "type": "Enregistrement",
           "description": "Certains vélos électriques nécessitent un enregistrement",
           "tips": "Demander au magasin de location"
         }

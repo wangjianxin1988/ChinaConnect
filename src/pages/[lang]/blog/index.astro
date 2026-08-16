@@ -4,7 +4,7 @@ export function getStaticPaths() {
   return langs.map((lang) => ({ params: { lang } }));
 }
 
-import { getPosts, getFeaturedPosts } from "@/data/blog";
+import { getPosts, getFeaturedPosts , blogCoverImage } from "@/data/blog";
 import { translations } from "@/i18n/translations";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { generateCollectionPageSchema, generateJsonLdScript, generateBreadcrumbSchema } from "@/lib/seo/schema-org";
@@ -54,8 +54,8 @@ const schemas = [
               class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow border border-gray-100"
             >
               <div class="aspect-video bg-gradient-to-br from-blue-500 to-purple-600 relative">
-                {post.coverImage && (
-                  <img src={post.coverImage} alt={post.title} class="w-full h-full object-cover" loading="lazy" />
+                {blogCoverImage(post) && (
+                  <img src={blogCoverImage(post)} alt={post.title} class="w-full h-full object-cover" loading="lazy" />
                 )}
               </div>
               <div class="p-5">
@@ -84,8 +84,8 @@ const schemas = [
               class="group flex gap-4 p-4 bg-white rounded-xl border border-gray-100 hover:border-blue-300 hover:shadow-md transition-all"
             >
               <div class="shrink-0 w-32 h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg overflow-hidden">
-                {post.coverImage && (
-                  <img src={post.coverImage} alt={post.title} class="w-full h-full object-cover" loading="lazy" />
+                {blogCoverImage(post) && (
+                  <img src={blogCoverImage(post)} alt={post.title} class="w-full h-full object-cover" loading="lazy" />
                 )}
               </div>
               <div class="flex-1 min-w-0">

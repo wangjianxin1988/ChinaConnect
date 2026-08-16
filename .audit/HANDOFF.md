@@ -962,3 +962,87 @@ for lang in LANGS:
 - **在飞**：11 语言全页扫描（focus=all × 379 URL/语言，3 并发，~6 分钟/语言）。
 - **下步**：分析扫描结果 → 逐条清残留 → `pnpm astro build`（GPSLocator 已修，应该能过）→ dist EN 零中文终验 → HANDOFF §10 收尾 + 最终提交。
 - **注意**：zh-CN/zh-TW/de/fr 城市 JSON 已含本会话翻译成果；后续修复器改动注意 .id/.slug/.image 跳过逻辑。
+
+### 2026-08-17 会话 #18（目标模式：全量翻译 ar/fa/de/fr/zh-TW + 扫描收尾）
+
+- **起**：用户确认计划并开启目标模式，要求每个开发节点写 HANDOFF、不要出大错。MiniMax key 已失效（401），全部纯手工翻译；最多 3 并发子代理。
+- **已完成（本节点）**：
+  - `bbcf7a4`（00:00）：aiPage 12 语言补键 + attractions/food 页 title/breadcrumb l10n + attractions app-lang prop。
+  - `5dcbc21`（00:06）：ru/th/vi/ko 79 个酒店名本地化 + ru 占位符/地址/ISO 餐厅修复。
+  - **ar 字典已应用**：`.audit/_tr_ar.json`（853 条 = 793 景点 + 60 餐厅）→ ar/*.json 912 处替换。ar 残留从 1258 → **346**（342 餐厅 + 2 景点 + 2 酒店）。2 景点是 nameEn 带前导空格（ningbo " Tashan Dam"、shenzhen " Dameisha Coastal Park"）字典没匹配上；2 酒店是混汉字（fuzhou/zhangjiajie 温泉）待修。
+  - 全量扫描队列 queue3 在跑：fa ✅（62 ISSUE 页）、zh-TW ✅（239）、zh-CN ✅（174，56 唯一残留）、ko/th 进行中、ja/vi/ru/fr/de/ar 排队。
+  - 3 个翻译子代理已派：fa 景点（802 唯一）、fa 餐厅（390）、de（882）→ JSONL 字典，写入 .audit/_tr_fa_att.jsonl / _tr_fa_rest.jsonl / _tr_de.jsonl。
+- **重大发现（跨语言共性）**：
+  1. `emergencyContacts[].nameEn` 在 **所有 11 语言仍英文**（416 唯一 × 11）。`EMERGENCY_NAMES_L10N`（emergency-names-l10n.ts）字典**已全**（416×12），但 `EmergencyCard.tsx` 的 secondaryName 逻辑（zh-CN/zh-TW/ja showSecondary=true）把英文 nameEn 当副标题渲染 → 扫描报 "US Consulate General Shenyang" 等。**需改组件**：zh/ja 不再显示英文副标题。
+  2. zh-CN 仍有 56 唯一残留（领事馆/医院英文副标题 + 1 条中英混合描述「重庆菜…locals believe…」等）；zh-TW 数据层 27 城 816 景点 + 353 餐厅 nameEn 英文 + description 英文（zh-TW 未全量完成，会话 #17 摘要误报）。
+  3. 扫描器判定：非 en 语言，纯英文行 ≥4 非白名单词且 ≥25 拉丁字符 → EN 残留；CJK 语言（zh/ja）不报 CJK，只报英文行；地址行（Road/Street/District，<70 字符）跳过；`LATIN_LANGS={vi,fr,de}` 含重音符号的行跳过。
+- **在飞**：queue3 扫描（预计 00:41 左右全部完成）；3 翻译子代理。
+- **下一步（按序）**：
+  1. 等 queue3 全完 → 重启 dev server（INDEX/i18nHotelCache 缓存旧数据）。
+  2. 修 ar 剩余 2 景点 + 2 酒店 → 提交 ar。
+  3. ar 餐厅 340 条 → 应用 → 提交。
+  4. 收 fa/de 子代理字典 → 应用 → 验证 → 提交；fr + ar-rest 子代理（第 2 批，≤3 并发）。
+  5. zh-TW：opencc s2twp 从 zh-CN 填充（`uv run --with opencc-python-reimplemented`，已验证 故宫→故宮 等正确）。
+  6. EmergencyCard 副标题修复（zh/ja 去英文）。
+  7. 全语言扫描残留清零 → `pnpm astro build` → dist EN 零中文终验 → HANDOFF §10 收尾 + 最终提交。
+- **注意**：写 src/ 前必须等扫描队列完成（Vite HMR 会打断在飞扫描，watchdog 会重启但浪费 7 分钟）。`.audit/_*.py/_tr_*.json/.jsonl` 均 gitignore 不入库。翻译字典 key 必须与 JSON nameEn 完全一致（含前导空格问题）。PS 读中文文件必用 Python（PYTHONIOENCODING=utf-8）。
+
+### 2026-08-17 会话 #18（续：数据层全量应用完成，终扫启动）
+
+- **本节点完成**：
+  - ar 字典全量（793 景点 + 400 餐厅 + 2 酒店 = 1195 条）→ **ar 数据层残留 0**。
+  - fa 字典 1192 条（802 景点 + 390 餐厅，2 个子代理产出 JSONL 合并）→ 应用 1256 处，残留 6 条均为国际品牌（Din Tai Fung/Ultraviolet/McDonald's，正确保留）。
+  - de 字典 882 条（306 景点 + 399 餐厅 + 177 酒店，子代理产出）→ 应用 510 处；剩余 392 条为拼音/专名保留（Nanluoguxiang、Xin Rong Ji 等，德语惯例），扫描器不会报（<4 词或<25 拉丁字符）。
+  - zh-TW：opencc s2twp 从 zh-CN 填充（`uv run --with opencc-python-reimplemented`）→ 顶层字段+列表项全量补全，含第二次针对纯拉丁短名（Arxan→阿爾山、Bund 18→外灘18號 等 15 处）+ 手工修 qingdao 'Qingdao Municipal Museum'。**zh-TW 景点/餐厅 nameEn 残留 0**（仅酒店中文名，属正常）。
+  - zh-CN 混合字段修复 7 处：chongqing culturalTips[5]（locals believe 英文尾）、beijing/wuhan transport bus（Night buses）、sanya payment×2（我-Pay/Ko莉卡）、sanya transport.arrival[6].tips（粤海铁路）、shenzhen attractions[30].description。
+  - **组件修复（英文副标题）**：`EmergencyCard.tsx` + `HotelCard.tsx` + `hotels.astro` 的 CJK 语言英文副标题全部移除（`secondaryName = ""`）。ja 页可见文本已无 "Peking Union Medical College Hospital"（curl 含 script 序列化 props 会误报，须用 Playwright innerText 判定）。
+  - dev server 重启（`pnpm astro dev --host --port 4322`，PID 30620），`npx tsc --noEmit` 0 错。
+  - 杀掉 queue3（ko/th 反复被 HMR 打断，且最终要重扫），启动 **queue4 终扫**（11 语言 × 379 URL，批次 fa+zh-CN+zh-TW → ja+ko+th → vi+ru+fr → de+ar，约 30 分钟）。
+- **经验教训**：**扫描期间严禁改 src/ 任何文件**（Vite HMR 全量重载会打断在飞扫描，watchdog 重启浪费 7 分钟/次，queue3 因此 ko/th 重试 2 次）。数据修复全部做完→重启 dev server→再统一终扫。
+- **下一步**：
+  1. 等 queue4 完成 → 分析 11 语言残留（按扫描器判定：纯英文行≥4词≥25字符才算）。
+  2. 剩余可保留项登记：fa 品牌名 6、de 拼音/专名 392（扫描不报）、zh-CN/zh-TW/ja 酒店中文名（正常）。
+  3. 清每语言真残留（紧急联系人已由组件修复覆盖；剩余描述/地址类按扫描定位）。
+  4. `pnpm astro build` → dist EN 零中文终验 → HANDOFF 收尾 + 最终提交。
+- **待收**：fr 子代理（Poincare）402 条字典 → 应用 → 验证。
+
+### 2026-08-17 会话 #18（续3：终扫完成 · 用户唤醒暂停审查）
+
+- **起**：目标模式延续，用户在睡眠期间由我自动收尾；01:17 用户唤醒，要求「暂停、写交接文档、看进度成品 + 本地测试地址」。本节为暂停时的完整快照。
+- **Git 状态**：`master @ 01b4616`（weather 标签本地化）。**`src/` 零未提交改动**；未提交的只有 `.audit/` 下的扫描产物/脚本（gitignore 不入库）。未部署生产。
+- **终扫已完成**（queue5 + queue6，新扫描器带 countStop，379 URL/语言，全部跑完，ar/fa/de 01:25 复扫最新）：
+  - **0 残留**：en、ja、ko、vi、zh-CN、ar、fa。
+  - **待复扫确认**：ru 1 条（Crowne Plaza 酒店名）——根因是旧 dev server（PID 30620）缓存，数据层早已修好（`ru/shenzhen.json .hotels[8].name` 已正确），01:17 已杀掉旧 server、重启新 server（PID 17496），需复扫确认归零。
+  - **已知小残留（修复脚本已备好未执行）**：zh-TW 2（guilin culturalTips[31]、sanya transport.arrival[6].tips）+ th 1（chengdu culturalTips[30] umbrella species/quiet visit）→ `.audit/_fix_remaining.py`。
+  - **fr 4153 命中 / 917 唯一、de 5679 命中 / 1175 唯一**：经逐条核验**全部为法语/德语纯本地误报**（如 `Menu : Traduction, GPS, Ambassade, Culture`、`Michelin-Sterne, Black Pearl-Auswahl...`），无真实英文残留。修复方案已定：给 FR_STOP/DE_STOP 扩充「仅法语/德语专属词」（已生成模拟词集，过滤后可把 fr 唯一残留压到 49 条内且均为专名/地址，再配白名单清零）。`ar`/`fa` 复扫 0 命中已实证该扫描器有效。
+- **新发现（未修，等用户决定）**：`src/data/cities/zhangjiajie.json` 的 `transport.local.taxi[].type` + `bike[].type` 在 **11 个目标语言全部是英文**（Starting Fare / Per km / To Airport / To Forest Park / To Tianmen / Long Distance / Night Surcharge / Tip / Airport Taxi / Hotel Pickup / Negotiation + E-bike Rental / Bike Share / Mountain Bike / Cave Area / Traffic Rules / Helmet / Night Riding / Scenic Areas / Rain / Distance / Registration），会经 `formatTransportItem` 拼进页面（如「To Airport · 30-50¥ · 从市中心出发」）。**翻译表已全部译好并校验**（11 语言 × 22 标签 = 242 处 + de bus[9] Sightseeing-Bus→Rundfahrt-Bus + zh-TW bus[11] 墾丁公車→看洞公車 + fr tianjin nameEn 3 处「translated to French」垃圾），写入 `.audit/_fix_transport_types.json`（247 条 fix）**未执行**。
+- **本地测试地址（dev server 运行中）**：`http://localhost:4322/`；示例：`http://localhost:4322/ja/`、`http://localhost:4322/zh-CN/`、`http://localhost:4322/zh-TW/city/beijing/`、`http://localhost:4322/fr/city/tianjin/`。当前预览 = 已提交版本 `01b4616`，上述待修项在页面上仍可见（张家界交通/自行车英文标签、fr 天津餐厅 nameEn 垃圾、zh-TW/th 各 1 条文化提示）。
+- **下一步（若继续，按序）**：
+  1. 应用 `.audit/_fix_remaining.py`（zh-TW 2 + th 1）与 `.audit/_fix_transport_types.json`（247）→ 重启 dev server → 复扫 zh-TW / th / ru。
+  2. 扩 FR_STOP / DE_STOP（词集已生成）→ 复扫 fr / de → 确认归零。
+  3. `pnpm astro build` → dist EN 零中文终验（EN 源不动，仅验证产物无中文泄漏）→ `npx tsc --noEmit` 复跑。
+  4. HANDOFF 追加最终记录 + 最终提交。
+- **注意**：dev server 重启用 node 直跑 astro.js（带 `--host` 与 `--port 4322`，pnpm 垫片 Start-Process 不可用）；扫描期间严禁改 `src/`（Vite HMR 打断）；PS 读中文必用 Python（PYTHONIOENCODING=utf-8）；JSON 写回 `ensure_ascii=False, indent=2` + 换行符。
+
+### 2026-08-17 会话 #19（用户 6 项任务收尾 + 部署生产）
+
+- **起**：用户审阅交接后拍板 6 项任务：1) 收尾并尽快部署生产；2) 进站弹窗加 12 语言公告系统（每次更新内容都公告）；3) 修复跨语言跳转丢失 lang（切日文后点链接变英文/其它语言）；4) AI 页可浏览（聊天才登录）+ AI 与导航栏登录统一到同一页面；5) 博客文章配图 + 后续文章自动配图；6) 部署后更新 HANDOFF §10。本节先完成 1-5 并在本地验证，随后提交 + 推送部署。
+- **改动**（全部在本地验证，未部署前为工作区状态）：
+  - **公告系统（12 语言）**：重写 `src/data/announcements.ts`（1 条公告 `2026-08-17-i18n-ai-blog`，12 语言 title/body）；新建 `src/components/EntryPopup.astro`（onboarding 3 步 + 公告弹窗统一组件）；`src/pages/index.astro` + `src/pages/[lang]/index.astro` 移除内联 onboarding 脚本改 `<EntryPopup lang announcements>`；`localStorage("chinaconnect_announcement_seen")` 数组判未读，首次用户 onboarding 完→公告，老用户直接弹未读公告。以后每次更新内容 = 在 announcements.ts 加一条新 id 即可全语言公告。
+  - **跨语言链接修复**：`src/layouts/BaseLayout.astro` 登录链接改 `/auth/login`（auth 无 [lang] 路由）；`getLangInfo()` 以 URL 语言（`window.__I18N__.serverLang`）优先于 localStorage；`switchLanguage()` 正则支持无尾斜杠；新增 `LOCALIZED_PATHS` + 点击拦截，非 en 页面把硬编码 `/city/...`、`/food/...`、`/guide`、`/` 自动加当前 lang 前缀；服务端组件加 lp 前缀（AttractionsSection/CityFoodNav/FoodHighlightsSection/food/hotels）；13 个 guide 页 + 404 + `[lang]/guide/index.astro` 5 处 + attractions breadcrumb + guide Back Home 全部改 `` `/${lang}/...` ``；`RestaurantListClient.tsx` 加 lang prop（未引用，防御性）。全量扫描 `[lang]` 页面硬编码 href **0 残留**。
+  - **AI 页可浏览 + 统一登录**：`AIChatPage.tsx` 未认证显示可浏览落地页（3 功能卡 + 6 示例按钮 + Start Chatting CTA），`handleStartChat` 跳 `/auth/login?next=<当前路径>`，登录后回跳；`LoginPage.tsx` 读 `?next=` 存 `sessionStorage("auth_next")`；`callback.astro` 4 处 `/account` 改 `goNext()`；`/auth/index`→redirect `/auth/login`，`/auth/register`→redirect `/auth/login#register`（AI 与导航栏登录统一同一页面）。e2e 更新 2 个过时测试。
+  - **博客配图**：`public/img/blog/` 4 张主图 + `categories/` 3 张兜底；`src/data/blog.ts` 加 `blogCoverImage(post)`（有 coverImage 用之，否则按 category 兜底）；4 个博客页（blog/index x2 + blog/[slug] x2）改用。后续文章只需在 frontmatter 配 coverImage 或复用 category 兜底。
+  - **i18n 数据收尾**：应用 `.audit/_fix_remaining.py`（zh-TW guilin[31]/sanya[6] + th chengdu[30]）与 `.audit/_fix_transport_types.json` 247 条（zhangjiajie 交通/自行车 11 语言 + fr tianjin nameEn 3 处 + de/zh-TW 附带）；git checkout 还原 385 个 cities-i18n 文件被 `build-i18n-content.mjs` 污染的部分并重放修复，污染 0。
+  - **脚本健壮性**：3 个 auto-translate 脚本 fetch 加 `AbortSignal.timeout(25000)`（MiniMax API key 已 401 过期，防止卡死 15 分钟）。
+- **验证**（全部通过）：
+  - `npx tsc --noEmit` **0 错误**；`pnpm check:i18n` **12/12 语言 0 缺失**。
+  - `node node_modules/astro/astro.js build` **5609 页 35.6s 成功**（跳过 prebuild 防污染）；dist 抽查：ja/zh-CN/ar 首页含公告文本 + onboarding-root，blog 含封面图路径。
+  - **Playwright 公告 8/8 过**：ja 首访 onboarding→公告、seen 已记录、老用户已读不弹、AI 落地页可浏览 + Start Chatting → `/auth/login?next=%2Fja%2Fai`。
+  - **Playwright 跨语言 7/7 过**：切换器 ja→ko URL 变 `/ko/city/beijing` + 内容韩文；guide 链接带 `/ja`；点击 guide→beijing 保持 ja；attractions breadcrumb `/ja/`。
+  - **终扫**：zh-TW/th/fr/de 各 140 页 0 ISSUE 0 HTTP 错误；张家界 12 语言验证过（vi/de 各 1 条为误报已白名单）。
+- **部署**：push master → GitHub Actions（`.github/workflows/deploy-cf-pages.yml`）→ Cloudflare Pages 项目 `chinaconnect`（域名 `chinaengage.org`）+ 线上探活 api/chat、api/search。（结果待本节末尾补充）
+- **下个会话**：
+  1. 若部署失败，查 GitHub Actions 日志修复重推。
+  2. 部署成功后 curl 线上抽验：首页弹窗公告、`/ja/ai` 落地页、`/ja/city/beijing` 语言保持、`/auth/login` 统一登录。
+  3. 把部署结果补写回本条 §10。
+  4. 公告更新流程已就绪：`src/data/announcements.ts` 每条公告 12 语言 title/body + 唯一 id，改完 push 即全语言公告。

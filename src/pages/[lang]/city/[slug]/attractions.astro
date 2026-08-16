@@ -86,7 +86,7 @@ const CAT_LABELS: Record<string, Record<string, string>> = {
     <div class="container-custom relative h-full flex flex-col justify-end pb-8">
       <!-- Breadcrumb -->
       <nav class="mb-4">
-        <a href="/" class="text-purple-200 hover:text-white transition-colors" data-i18n="cityPage.home">Home</a>
+        <a href={`/${lang}/`} class="text-purple-200 hover:text-white transition-colors" data-i18n="cityPage.home">Home</a>
         <span class="text-purple-300 mx-2">/</span>
         <a href={`/${lang}/city/${city.slug}`} class="text-purple-200 hover:text-white transition-colors">{localCityName}</a>
         <span class="text-purple-300 mx-2">/</span>

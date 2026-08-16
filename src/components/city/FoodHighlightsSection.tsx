@@ -85,6 +85,7 @@ function getHlKey(tag: RestaurantHighlightTag): string {
 }
 
 function HighlightCard({ restaurant, highlightTag, lang = "en" }: HighlightCardProps) {
+  const lp = lang === "en" ? "" : "/" + lang;
   const isCJK = lang === "zh-CN" || lang === "zh-TW" || lang === "ja" || lang === "ko";
   const displayName = (isCJK && restaurant.name && restaurant.name !== restaurant.nameEn)
     ? restaurant.name
@@ -96,7 +97,7 @@ function HighlightCard({ restaurant, highlightTag, lang = "en" }: HighlightCardP
 
   return (
     <a
-      href={`/food/${restaurant.id}`}
+      href={`${lp}/food/${restaurant.id}`}
       className="block bg-white border border-gray-100 rounded-xl p-4 hover:shadow-lg hover:-translate-y-0.5 transition-all group"
     >
       {/* Header row */}
@@ -169,6 +170,7 @@ export function FoodHighlightsSection({
   cityName,
   lang = "en",
 }: FoodHighlightsSectionProps) {
+  const lp = lang === "en" ? "" : "/" + lang;
   // Categorize restaurants
   const categorized: Record<RestaurantHighlightTag, Restaurant[]> = {
     local_recommend: [],
@@ -200,7 +202,7 @@ export function FoodHighlightsSection({
           <p className="text-sm text-gray-500 mt-0.5">{ct(lang, "hl_section_desc", "Hand-picked local dining picks in {city}").replace("{city}", cityName)}</p>
         </div>
         <a
-          href={`/city/${citySlug}/food`}
+          href={`${lp}/city/${citySlug}/food`}
           className="shrink-0 text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline flex items-center gap-1"
         >
           {ct(lang, "hl_view_all", "View all")}
@@ -227,7 +229,7 @@ export function FoodHighlightsSection({
             </div>
             {categorized.local_recommend.length > 3 && (
               <a
-                href={`/city/${citySlug}/food?filter=local_recommend`}
+                href={`${lp}/city/${citySlug}/food?filter=local_recommend`}
                 className="block text-center text-sm text-red-600 hover:text-red-700 font-medium py-2 border border-dashed border-red-200 rounded-lg hover:bg-red-50 transition-colors"
               >
                 {ct(lang, "hl_view_all_count", "View all {count}").replace("{count}", String(categorized.local_recommend.length))}
@@ -253,7 +255,7 @@ export function FoodHighlightsSection({
             </div>
             {categorized.affordable.length > 3 && (
               <a
-                href={`/city/${citySlug}/food?filter=affordable`}
+                href={`${lp}/city/${citySlug}/food?filter=affordable`}
                 className="block text-center text-sm text-blue-600 hover:text-blue-700 font-medium py-2 border border-dashed border-blue-200 rounded-lg hover:bg-blue-50 transition-colors"
               >
                 {ct(lang, "hl_view_all_count", "View all {count}").replace("{count}", String(categorized.affordable.length))}
@@ -279,7 +281,7 @@ export function FoodHighlightsSection({
             </div>
             {categorized.street_food.length > 3 && (
               <a
-                href={`/city/${citySlug}/food?filter=street_food`}
+                href={`${lp}/city/${citySlug}/food?filter=street_food`}
                 className="block text-center text-sm text-orange-600 hover:text-orange-700 font-medium py-2 border border-dashed border-orange-200 rounded-lg hover:bg-orange-50 transition-colors"
               >
                 {ct(lang, "hl_view_all_count", "View all {count}").replace("{count}", String(categorized.street_food.length))}
@@ -299,7 +301,7 @@ export function FoodHighlightsSection({
             <p className="text-sm text-gray-600 mt-0.5">{ct(lang, "food_filter_layers", "米其林、黑珍珠、本地推荐 - 三层筛选")}</p>
           </div>
           <a
-            href={`/city/${citySlug}/food`}
+            href={`${lp}/city/${citySlug}/food`}
             className="shrink-0 px-5 py-2.5 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl font-semibold text-sm hover:from-orange-600 hover:to-red-600 transition-all shadow-md hover:shadow-lg flex items-center gap-2"
           >
             {ct(lang, "food_map_cta", "美食地图")}

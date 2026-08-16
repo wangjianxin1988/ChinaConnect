@@ -41,6 +41,7 @@ export function LoginPage() {
   const [resetPasswordSent, setResetPasswordSent] = useState(false);
   const [oauthPending, setOauthPending] = useState<string | null>(null);
   const [disabledProviders, setDisabledProviders] = useState<Set<string>>(new Set());
+  const [nextPath, setNextPath] = useState<string>("/account");
 
   const {
     user,
@@ -58,6 +59,21 @@ export function LoginPage() {
   useEffect(() => {
     if (typeof window === "undefined") return;
     if (window.location.hash === "#register") setMode("register");
+  }, []);
+
+  // Read ?next= so users can return to the page they came from (e.g. the AI page).
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    try {
+      const n = new URLSearchParams(window.location.search).get("next");
+      if (n && n.startsWith("/") && !n.startsWith("//")) {
+        setNextPath(n);
+        sessionStorage.setItem("auth_next", n);
+        return;
+      }
+      const stored = sessionStorage.getItem("auth_next");
+      if (stored && stored.startsWith("/") && !stored.startsWith("//")) setNextPath(stored);
+    } catch (e) { /* ignore */ }
   }, []);
 
   // Probe enabled providers once so we can hide OAuth buttons that won't work
@@ -125,6 +141,14 @@ export function LoginPage() {
     clearError();
     await signIn("demo@chinaengage.org", "demo123");
   };
+
+  // After successful sign-in, redirect back to the page the user came from.
+  useEffect(() => {
+    if (user && !isLoading) {
+      try { sessionStorage.removeItem("auth_next"); } catch (e) { /* ignore */ }
+      window.location.href = nextPath;
+    }
+  }, [user, isLoading, nextPath]);
 
   // Show loading state while redirecting (user object exists but auth still settling)
   if (user && !isLoading) {

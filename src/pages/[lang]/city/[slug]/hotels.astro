@@ -89,9 +89,9 @@ import { cityDisplayName } from "@/lib/city-name";
     <div class="container-custom relative h-full flex flex-col justify-end pb-8">
       <!-- Breadcrumb -->
       <nav class="mb-4">
-        <a href="/" class="text-teal-200 hover:text-white transition-colors" data-i18n="cityPage.home">Home</a>
+        <a href={`/${lang}/`} class="text-teal-200 hover:text-white transition-colors" data-i18n="cityPage.home">Home</a>
         <span class="text-teal-300 mx-2">/</span>
-        <a href={`/city/${city.slug}`} class="text-teal-200 hover:text-white transition-colors">{cityDisplayName(city, lang)}</a>
+        <a href={`/${lang}/city/${city.slug}`} class="text-teal-200 hover:text-white transition-colors">{cityDisplayName(city, lang)}</a>
         <span class="text-teal-300 mx-2">/</span>
         <span class="text-white" data-i18n="cityPage.hotelsHeading">Hotels</span>
       </nav>
@@ -150,7 +150,7 @@ import { cityDisplayName } from "@/lib/city-name";
     <!-- Back to City -->
     <div class="mt-12 text-center">
       <a
-        href={`/city/${city.slug}`}
+        href={`/${lang}/city/${city.slug}`}
         class="inline-flex items-center gap-2 px-6 py-3 bg-gray-100 text-gray-700 rounded-xl font-semibold text-sm hover:bg-gray-200 transition-all"
       >
         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -47,6 +47,19 @@ export interface BlogPost {
   content: string;
 }
 
+// Topic-matched fallback covers so every post (including future ones without an
+// explicit coverImage) always renders a relevant image on blog cards/pages.
+const CATEGORY_COVER_FALLBACKS: Record<string, string> = {
+  "Travel Guide": "/img/blog/categories/travel-guide.webp",
+  "Practical Guide": "/img/blog/categories/practical-guide.webp",
+  "City Picks": "/img/blog/categories/city-picks.webp",
+};
+
+export function blogCoverImage(post: Pick<BlogPost, "coverImage" | "category">): string {
+  if (post.coverImage) return post.coverImage;
+  return CATEGORY_COVER_FALLBACKS[post.category] || "/img/blog/categories/travel-guide.webp";
+}
+
 export function getPost(slug: string, lang: string): BlogPost | null {
   const idx = getI18nIndex();
   if (lang && lang !== "en" && idx[lang + ":" + slug]) return idx[lang + ":" + slug];

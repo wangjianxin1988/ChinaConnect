@@ -2869,27 +2869,27 @@
       ],
       "taxi": [
         {
-          "type": "Starting Fare",
+          "type": "初乗り料金",
           "price": "8¥",
           "description": "最初の2km"
         },
         {
-          "type": "Per km",
+          "type": "1kmごと",
           "price": "2元/km",
           "description": "最初の2km以降"
         },
         {
-          "type": "To Airport",
+          "type": "空港へ",
           "price": "30-50¥",
           "description": "市内中心部から"
         },
         {
-          "type": "To Forest Park",
+          "type": "森林公園へ",
           "price": "80-120¥",
           "description": "市内中心部から"
         },
         {
-          "type": "To Tianmen",
+          "type": "天門山へ",
           "price": "50-80¥",
           "description": "市内中心部から"
         },
@@ -2899,62 +2899,62 @@
           "tips": "目的地を慎重に設定する"
         },
         {
-          "type": "Long Distance",
+          "type": "長距離",
           "price": "交渉制",
           "description": "離れた観光地へ"
         },
         {
-          "type": "Night Surcharge",
+          "type": "深夜割増料金",
           "price": "+20%",
           "description": "22:00-06:00"
         },
         {
-          "type": "Tip",
+          "type": "チップ",
           "description": "目的地を中国語で書いておく",
           "tips": "運転手に住所を見せる"
         },
         {
-          "type": "Airport Taxi",
+          "type": "空港タクシー",
           "price": "メーター制",
           "description": "空港には正規タクシーあり"
         },
         {
-          "type": "Hotel Pickup",
+          "type": "ホテル送迎",
           "description": "ホテルにタクシーを呼んでもらう",
           "tips": "早朝に便利"
         },
         {
-          "type": "Negotiation",
+          "type": "料金交渉",
           "description": "観光地では事前に料金交渉",
           "tips": "一般的な料金を調べておく"
         }
       ],
       "bike": [
         {
-          "type": "E-bike Rental",
+          "type": "電動自転車レンタル",
           "price": "1日50〜80元",
           "locations": "市内中心部と観光地",
           "tips": "有効な運転免許証が必要"
         },
         {
-          "type": "Bike Share",
+          "type": "シェアサイクル",
           "price": "1回2〜5元",
           "locations": "市内中心部の駅",
           "tips": "WeChatミニプログラムを使用"
         },
         {
-          "type": "Mountain Bike",
+          "type": "マウンテンバイク",
           "price": "1日100〜150元",
           "locations": "森林公園付近",
           "tips": "経験豊富なライダーのみ対象"
         },
         {
-          "type": "Cave Area",
+          "type": "洞窟エリア",
           "description": "おすすめしない - 距離が長い",
           "suitability": "市内観光のみ"
         },
         {
-          "type": "Traffic Rules",
+          "type": "交通ルール",
           "description": "現地の交通規制に従う",
           "tips": "自転車レーンを走行"
         },
@@ -2965,32 +2965,32 @@
           "tips": "自転車をしっかり施錠"
         },
         {
-          "type": "Helmet",
+          "type": "ヘルメット",
           "description": "推奨されるが、常に提供されるとは限らない",
           "tips": "可能であれば持参してください"
         },
         {
-          "type": "Night Riding",
+          "type": "夜間走行",
           "description": "おすすめしない - 照明が少ない",
           "tips": "暗くなる前に戻る"
         },
         {
-          "type": "Scenic Areas",
+          "type": "景勝地",
           "description": "ほとんどの観光地内では自転車の乗り入れ禁止",
           "tips": "入口に駐車"
         },
         {
-          "type": "Rain",
+          "type": "雨天",
           "description": "大雨の中での走行は避ける",
           "tips": "天気予報を確認する"
         },
         {
-          "type": "Distance",
+          "type": "距離",
           "description": "市内の短距離のみ",
           "tips": "景勝地へはバスを利用する"
         },
         {
-          "type": "Registration",
+          "type": "登録",
           "description": "一部の電動自転車は登録が必要",
           "tips": "レンタルショップに問い合わせる"
         }

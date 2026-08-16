@@ -273,7 +273,7 @@ const colorClasses = {
 
       <!-- View All Business Guides -->
       <a
-        href="/guide#business-tools"
+        href={`/${lang}/guide#business-tools`}
         class="group bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-6 text-white flex flex-col justify-center items-center hover:shadow-lg transition-all hover:-translate-y-1"
       >
         <span class="text-5xl mb-4">📋</span>
@@ -287,21 +287,21 @@ const colorClasses = {
 
     <!-- Quick Links -->
     <div class="mt-12 grid md:grid-cols-3 gap-6">
-      <a href="/city/beijing" class="bg-card rounded-xl border p-6 hover:shadow-md transition-shadow group">
+      <a href={`/${lang}/city/beijing`} class="bg-card rounded-xl border p-6 hover:shadow-md transition-shadow group">
         <div class="flex items-center gap-3 mb-3">
           <span class="text-3xl">🏯</span>
           <h3 class="font-semibold text-lg group-hover:text-primary transition-colors"><span data-i18n="guide.beijingGuide">Beijing</span></h3>
         </div>
         <p class="text-sm text-muted-foreground" data-i18n="guidePage.quickBeijingDesc">Explore China's capital with our comprehensive city guide</p>
       </a>
-      <a href="/food" class="bg-card rounded-xl border p-6 hover:shadow-md transition-shadow group">
+      <a href={`/${lang}/food`} class="bg-card rounded-xl border p-6 hover:shadow-md transition-shadow group">
         <div class="flex items-center gap-3 mb-3">
           <span class="text-3xl">🍜</span>
           <h3 class="font-semibold text-lg group-hover:text-primary transition-colors"><span data-i18n="guide.foodGuide">Food Guide</span></h3>
         </div>
         <p class="text-sm text-muted-foreground" data-i18n="guidePage.quickFoodDesc">Michelin stars, Black Pearl restaurants, and local favorites</p>
       </a>
-      <a href="/guide/scam-prevention" class="bg-card rounded-xl border p-6 hover:shadow-md transition-shadow group">
+      <a href={`/${lang}/guide/scam-prevention`} class="bg-card rounded-xl border p-6 hover:shadow-md transition-shadow group">
         <div class="flex items-center gap-3 mb-3">
           <span class="text-3xl">🛡️</span>
           <h3 class="font-semibold text-lg group-hover:text-primary transition-colors"><span data-i18n="guide.scamPrevention">Scam Prevention</span></h3>
@@ -335,7 +335,7 @@ const colorClasses = {
             </div>
           </div>
           <a
-            href="/guide/emergency-procedures"
+            href={`/${lang}/guide/emergency-procedures`}
             class="inline-block mt-4 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors"
           data-i18n="guidePage.viewFullEmergency"
           >

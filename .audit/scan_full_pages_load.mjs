@@ -61,12 +61,34 @@ function buildUrls() {
 const ALLOW = new Set(("ChinaConnect Alipay WeChat Didi Meituan Dianping Ctrip Trip.com 12306 Amap Gaode Baidu Tencent "
   + "SIM eSIM VPN SOS RMB CNY USD EUR JPY HKD TWD THB KRW GBP AUD CAD NZD ID PDF QR NFC 4G 5G GPS AI "
   + "L Visa M Visa F Visa Z Visa X Visa Q Visa D Visa Metro Subway BRT Maglev High Speed Rail").toLowerCase().split(/\s+/));
+// Known-good line whitelists for Latin-script languages (all manual-verified false positives).
+// A line is skipped only when it exactly matches a previously verified French/German line.
+function loadKnownGood(lang) {
+  try {
+    const p = new URL(`./${lang}_known_good.txt`, import.meta.url);
+    const raw = fs.readFileSync(p, "utf8");
+    return new Set(raw.split(/\r?\n/).map((s) => s.trim().toLowerCase().replace(/\s+/g, " ")).filter(Boolean));
+  } catch (e) {
+    return new Set();
+  }
+}
+const KNOWN_GOOD = { fr: loadKnownGood("fr"), de: loadKnownGood("de") };
 const EN_WORD_RE = /[A-Za-z]+/g;
 const CJK_RE = /[\u3400-\u9fff]/;
 
 const LATIN_LANGS = new Set(["vi", "fr", "de"]);
-const DIACRITIC_RE = /[\u00C0-\u017F\u1E00-\u1EFF\u0300-\u036F]/; // Latin-1/Extended-A/B + combining marks
+const DIACRITIC_RE = /[\u00C0-\u017F\u1E00-\u1EFF\u0300-\u036F]/;
+const FR_STOP = new Set(("le la les des un une et est dans pour avec sur de du au aux en ce cette ces il elle ils elles qui que quoi sont plus comme par pas ne non ou si aussi tout tous toutes").toLowerCase().split(/\s+/));
+const DE_STOP = new Set(("der die das und ist sind mit von fuer fuer für auf den dem nicht ein eine einer eines als auch zu im in des aus bei nach ueber über sich es er sie wir ihr").toLowerCase().split(/\s+/)); // Latin-1/Extended-A/B + combining marks
 const ADDR_OK = /\b(Beijing|Shanghai|Guangzhou|Shenzhen|Chengdu|Chongqing|Xi'an|Xian|Hangzhou|Suzhou|Nanjing|Wuhan|Changsha|Harbin|Kunming|Qingdao|Dalian|Sanya|Guilin|Xiamen|Fuzhou|Luoyang|Ningbo|Lanzhou|Weihai|Yantai|Jinan|Xining|Dunhuang|Dali|Lijiang|Chengde|Zhangjiajie|Hulunbuir|Quanzhou|Tianjin|China|District|Road|Street|Lane|No\.|Rm|Room)\b/;
+
+function countStop(stopSet, line) {
+  let n = 0;
+  for (const w of line.toLowerCase().split(/[^a-zäöüßàâçéèêëîïôûùœ\u00C0-\u00FF]+/)) {
+    if (w && stopSet.has(w)) n++;
+  }
+  return n;
+}
 
 function analyzeText(text, lang) {
   const issues = [];
@@ -80,8 +102,13 @@ function analyzeText(text, lang) {
     if (lang !== "en" && foreign.length >= 4 && t.replace(/[^A-Za-z]/g, "").length >= 25) {
       // For Latin-script languages, only flag lines that are essentially pure ASCII
       if (LATIN_LANGS.has(lang) && DIACRITIC_RE.test(t)) continue;
+      // French/German text contains local stopwords -> not an English residual
+      if (lang === "fr" && countStop(FR_STOP, t) >= 2) continue;
+      if (lang === "de" && countStop(DE_STOP, t) >= 2) continue;
       // skip address-like lines
       if (ADDR_OK.test(t) && t.length < 70) continue;
+      const normLine = t.toLowerCase().replace(/\s+/g, " ");
+      if (KNOWN_GOOD[lang] && KNOWN_GOOD[lang].has(normLine)) continue;
       issues.push(`EN: "${t.slice(0, 130)}"`);
     }
     if (lang !== "zh-CN" && lang !== "zh-TW" && lang !== "ja") {

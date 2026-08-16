@@ -84,9 +84,9 @@ function getBadgeLabel(type: Restaurant["type"], lang: string) {
     <div class="container-custom relative h-full flex flex-col justify-end pb-8">
       <!-- Breadcrumb -->
       <nav class="mb-4">
-        <a href="/" class="text-orange-200 hover:text-white transition-colors" data-i18n="cityPage.home">Home</a>
+        <a href={`/${lang}/`} class="text-orange-200 hover:text-white transition-colors" data-i18n="cityPage.home">Home</a>
         <span class="text-orange-300 mx-2">/</span>
-        <a href={`/city/${city.slug}`} class="text-orange-200 hover:text-white transition-colors">{localCityName}</a>
+        <a href={`/${lang}/city/${city.slug}`} class="text-orange-200 hover:text-white transition-colors">{localCityName}</a>
         <span class="text-orange-300 mx-2">/</span>
         <span class="text-white" data-i18n="cityPage.foodHeading">Food</span>
       </nav>
@@ -153,7 +153,7 @@ function getBadgeLabel(type: Restaurant["type"], lang: string) {
           </span>
         </p>
         <a
-          href={`/city/${city.slug}`}
+          href={`/${lang}/city/${city.slug}`}
           class="text-sm text-blue-600 hover:text-blue-700 font-medium hover:underline flex items-center gap-1"
         >
           <span>←</span> <span data-i18n="foodPage.backToCity" data-i18n-vars={JSON.stringify({ city: localCityName })}>Back to {city.nameEn}</span>
@@ -182,7 +182,7 @@ function getBadgeLabel(type: Restaurant["type"], lang: string) {
             )}
             <div class="p-5">
             {/* Header - clickable link to detail */}
-            <a href={`/food/${restaurant.id}`} class="block mb-3">
+            <a href={`/${lang}/food/${restaurant.id}`} class="block mb-3">
               <div class="flex items-start justify-between gap-2">
                 <div class="flex-1 min-w-0">
                   <h3 class="text-lg font-semibold text-gray-900 leading-tight group-hover:text-blue-600 transition-colors">
@@ -380,7 +380,7 @@ function getBadgeLabel(type: Restaurant["type"], lang: string) {
       <div>
         {prev && (
           <a
-            href={`/city/${prev.slug}/food`}
+            href={`/${lang}/city/${prev.slug}/food`}
             class="flex items-center gap-3 p-4 rounded-xl border border-gray-200 hover:border-orange-300 hover:bg-orange-50 transition-all"
           >
             <span class="text-gray-400">←</span>
@@ -394,7 +394,7 @@ function getBadgeLabel(type: Restaurant["type"], lang: string) {
       <div>
         {next && (
           <a
-            href={`/city/${next.slug}/food`}
+            href={`/${lang}/city/${next.slug}/food`}
             class="flex items-center gap-3 p-4 rounded-xl border border-gray-200 hover:border-orange-300 hover:bg-orange-50 transition-all"
           >
             <div class="text-right">

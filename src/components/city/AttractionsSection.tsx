@@ -21,6 +21,7 @@ export function AttractionsSection({
   lang = "en",
   i18n = {},
 }: AttractionsSectionProps) {
+  const lp = lang === "en" ? "" : "/" + lang;
   const [_selectedCoords, setSelectedCoords] = useState<{ lat: number; lng: number } | null>(null);
 
   const { visibleItems, hasMore, loading, sentinelRef } = useInfiniteScroll<AttractionData>({
@@ -121,7 +122,7 @@ export function AttractionsSection({
             </div>
           )}
           <a
-            href={`/city/${citySlug}/attractions`}
+            href={`${lp}/city/${citySlug}/attractions`}
             className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors shadow-md hover:shadow-lg"
           >
             {ct(lang, "view_all", "View All")} {total} {ct(lang, "attractions_label", "attractions")}

@@ -2843,7 +2843,7 @@
           "frequency": "Alle 30 Minuten"
         },
         {
-          "route": "Sightseeing-Bus",
+          "route": "Rundfahrt-Bus",
           "description": "Im Forest Park - mit Ticket kostenlos",
           "price": "Inklusive",
           "frequency": "Durchgehend"
@@ -2869,27 +2869,27 @@
       ],
       "taxi": [
         {
-          "type": "Starting Fare",
+          "type": "Grundgebühr",
           "price": "8¥",
           "description": "Erste 2 km"
         },
         {
-          "type": "Per km",
+          "type": "Pro km",
           "price": "2¥/km",
           "description": "Nach den ersten 2 km"
         },
         {
-          "type": "To Airport",
+          "type": "Zum Flughafen",
           "price": "30-50¥",
           "description": "Vom Stadtzentrum"
         },
         {
-          "type": "To Forest Park",
+          "type": "Zum Waldpark",
           "price": "80-120¥",
           "description": "Vom Stadtzentrum"
         },
         {
-          "type": "To Tianmen",
+          "type": "Zum Tianmen",
           "price": "50-80¥",
           "description": "Vom Stadtzentrum"
         },
@@ -2899,62 +2899,62 @@
           "tips": "Ziel sorgfältig festlegen"
         },
         {
-          "type": "Long Distance",
+          "type": "Lange Strecke",
           "price": "Verhandelbar",
           "description": "Zu entfernten Sehenswürdigkeiten"
         },
         {
-          "type": "Night Surcharge",
+          "type": "Nachtzuschlag",
           "price": "+20%",
           "description": "22:00-06:00"
         },
         {
-          "type": "Tip",
+          "type": "Trinkgeld",
           "description": "Ziel auf Chinesisch aufschreiben lassen",
           "tips": "Adresse dem Fahrer zeigen"
         },
         {
-          "type": "Airport Taxi",
+          "type": "Flughafentaxi",
           "price": "Taxameter",
           "description": "Offizielle Taxis am Flughafen"
         },
         {
-          "type": "Hotel Pickup",
+          "type": "Hotelabholung",
           "description": "Hotel bitten, ein Taxi zu rufen",
           "tips": "Nützlich für den frühen Morgen"
         },
         {
-          "type": "Negotiation",
+          "type": "Verhandlung",
           "description": "Preis vorher vereinbaren in Touristenbereichen",
           "tips": "Übliche Preise recherchieren"
         }
       ],
       "bike": [
         {
-          "type": "E-bike Rental",
+          "type": "E-Bike-Verleih",
           "price": "50-80¥/Tag",
           "locations": "Stadtzentrum und Touristenbereiche",
           "tips": "Gültiger Führerschein erforderlich"
         },
         {
-          "type": "Bike Share",
+          "type": "Bike-Sharing",
           "price": "2-5¥/Fahrt",
           "locations": "Stationen im Stadtzentrum",
           "tips": "WeChat-Miniprogramm verwenden"
         },
         {
-          "type": "Mountain Bike",
+          "type": "Mountainbike",
           "price": "100-150¥/Tag",
           "locations": "In der Nähe des Waldparks",
           "tips": "Nur für erfahrene Fahrer"
         },
         {
-          "type": "Cave Area",
+          "type": "Höhlengebiet",
           "description": "Nicht empfohlen – lange Strecken",
           "suitability": "Nur für Stadterkundung"
         },
         {
-          "type": "Traffic Rules",
+          "type": "Verkehrsregeln",
           "description": "Lokale Verkehrsregeln beachten",
           "tips": "Auf Fahrradwegen fahren"
         },
@@ -2965,32 +2965,32 @@
           "tips": "Fahrrad ordnungsgemäß abschließen"
         },
         {
-          "type": "Helmet",
+          "type": "Helm",
           "description": "Empfohlen, aber nicht immer vorhanden",
           "tips": "Wenn möglich eigenes mitbringen"
         },
         {
-          "type": "Night Riding",
+          "type": "Nachtfahrten",
           "description": "Nicht empfohlen – begrenzte Beleuchtung",
           "tips": "Vor Einbruch der Dunkelheit zurückkehren"
         },
         {
-          "type": "Scenic Areas",
+          "type": "Naturgebiete",
           "description": "Fahrräder sind in den meisten Sehenswürdigkeiten nicht erlaubt",
           "tips": "Am Eingang parken"
         },
         {
-          "type": "Rain",
+          "type": "Regen",
           "description": "Vermeiden Sie Fahrten bei starkem Regen",
           "tips": "Wettervorhersage prüfen"
         },
         {
-          "type": "Distance",
+          "type": "Entfernung",
           "description": "Nur für kurze Strecken in der Stadt",
           "tips": "Für landschaftlich reizvolle Gebiete den Bus nutzen"
         },
         {
-          "type": "Registration",
+          "type": "Registrierung",
           "description": "Einige E-Bikes müssen registriert werden",
           "tips": "Fragen Sie den Verleih"
         }

@@ -2869,27 +2869,27 @@
       ],
       "taxi": [
         {
-          "type": "Starting Fare",
+          "type": "기본요금",
           "price": "8¥",
           "description": "최초 2km"
         },
         {
-          "type": "Per km",
+          "type": "km당",
           "price": "2위안/km",
           "description": "최초 2km 이후"
         },
         {
-          "type": "To Airport",
+          "type": "공항행",
           "price": "30-50¥",
           "description": "시내 중심에서"
         },
         {
-          "type": "To Forest Park",
+          "type": "포레스트 파크행",
           "price": "80-120¥",
           "description": "시내 중심에서"
         },
         {
-          "type": "To Tianmen",
+          "type": "톈먼산행",
           "price": "50-80¥",
           "description": "시내 중심에서"
         },
@@ -2899,62 +2899,62 @@
           "tips": "목적지를 신중하게 설정하세요"
         },
         {
-          "type": "Long Distance",
+          "type": "장거리",
           "price": "흥정 가능",
           "description": "먼 관광지까지"
         },
         {
-          "type": "Night Surcharge",
+          "type": "야간 할증료",
           "price": "+20%",
           "description": "22:00-06:00"
         },
         {
-          "type": "Tip",
+          "type": "팁",
           "description": "목적지를 중국어로 적어 두세요",
           "tips": "기사에게 주소를 보여 주세요"
         },
         {
-          "type": "Airport Taxi",
+          "type": "공항 택시",
           "price": "미터기",
           "description": "공항의 공식 택시"
         },
         {
-          "type": "Hotel Pickup",
+          "type": "호텔 픽업",
           "description": "호텔에 택시를 불러달라고 요청하세요",
           "tips": "이른 아침에 유용합니다"
         },
         {
-          "type": "Negotiation",
+          "type": "흥정",
           "description": "관광 지역에서는 가격을 먼저 합의하세요",
           "tips": "일반적인 가격을 미리 알아보세요"
         }
       ],
       "bike": [
         {
-          "type": "E-bike Rental",
+          "type": "전동 자전거 대여",
           "price": "하루 50-80위안",
           "locations": "도심 및 관광 지역",
           "tips": "유효한 운전면허가 필요합니다"
         },
         {
-          "type": "Bike Share",
+          "type": "공유 자전거",
           "price": "1회 2-5위안",
           "locations": "도심 주요 역",
           "tips": "위챗 미니 프로그램 사용"
         },
         {
-          "type": "Mountain Bike",
+          "type": "산악 자전거",
           "price": "하루 100-150위안",
           "locations": "삼림공원 인근",
           "tips": "경험 많은 라이더 전용"
         },
         {
-          "type": "Cave Area",
+          "type": "동굴 지역",
           "description": "비추천 - 장거리 이동",
           "suitability": "도시 탐방 전용"
         },
         {
-          "type": "Traffic Rules",
+          "type": "교통 규칙",
           "description": "현지 교통 규정 준수",
           "tips": "자전거 도로를 이용하세요"
         },
@@ -2965,32 +2965,32 @@
           "tips": "자전거를 제대로 잠그세요"
         },
         {
-          "type": "Helmet",
+          "type": "헬멧",
           "description": "권장되지만 항상 제공되지는 않음",
           "tips": "가능하면 직접 가져오세요"
         },
         {
-          "type": "Night Riding",
+          "type": "야간 주행",
           "description": "비추천 - 조명이 제한적임",
           "tips": "어두워지기 전에 돌아오세요"
         },
         {
-          "type": "Scenic Areas",
+          "type": "관광 지역",
           "description": "대부분의 관광지 내부에는 자전거 출입이 금지됩니다",
           "tips": "입구에 주차"
         },
         {
-          "type": "Rain",
+          "type": "비",
           "description": "폭우 시 라이딩 피하기",
           "tips": "일기예보 확인"
         },
         {
-          "type": "Distance",
+          "type": "거리",
           "description": "도시 내 단거리 전용",
           "tips": "경치 좋은 지역은 버스 이용"
         },
         {
-          "type": "Registration",
+          "type": "등록",
           "description": "일부 전기자전거는 등록 필요",
           "tips": "렌탈 업체에 문의"
         }
