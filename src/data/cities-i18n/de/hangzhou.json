@@ -3,39 +3,39 @@
   "name": "杭州",
   "nameEn": "Hangzhou",
   "country": "China",
-  "population": "12.2 million",
+  "population": "12,2 Millionen",
   "coordinates": {
     "lat": 30.2741,
     "lng": 120.1551
   },
-  "timezone": "UTC+8 (China Standard Time)",
-  "description": "Hangzhou, the capital of Zhejiang Province, is famous for its natural beauty and historical culture. Home to West Lake, a UNESCO World Heritage site, and the ancient water town ambiance of the Grand Canal. Known as 'Paradise on Earth' for its mild climate, lush greenery, and elegant gardens. A leading tech hub as headquarters of Alibaba.",
+  "timezone": "UTC+8 (Chinesische Standardzeit)",
+  "description": "Hangzhou, die Hauptstadt der Provinz Zhejiang, ist berühmt für ihre natürliche Schönheit und historische Kultur. Heimat des Westsees, einem UNESCO-Weltkulturerbe, und der antiken Wasserstadt-Atmosphäre des Großen Kanals. Bekannt als \"Paradies auf Erden\" für sein mildes Klima, üppiges Grün und elegante Gärten. Ein führendes Technologiezentrum als Hauptsitz von Alibaba.",
   "coverImage": "/img/ext/c71341b19c1d.webp",
   "highlights": [
-    "West Lake - UNESCO World Heritage",
-    "Xianghu Lake - New scenic area",
-    "Hefang Street - Historic shopping street",
-    "Lingyin Temple - Ancient Buddhist temple",
-    "Xixi Wetland - Largest urban wetland"
+    "Westsee - UNESCO-Weltkulturerbe",
+    "Xianghu-See - Neues Landschaftsgebiet",
+    "Hefang-Straße - Historische Einkaufsstraße",
+    "Lingyin-Tempel - Alter buddhistischer Tempel",
+    "Xixi-Feuchtgebiet - Größtes städtisches Feuchtgebiet"
   ],
   "climate": {
-    "type": "Subtropical monsoon",
+    "type": "Subtropischer Monsun",
     "bestMonths": [
-      "March",
+      "März",
       "April",
-      "May",
-      "October",
+      "Mai",
+      "Oktober",
       "November"
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "4C (39F)",
-    "tips": "Best visited in spring for flowers or autumn for golden foliage. Summer is hot and humid with frequent rain. Spring rainy season (Meiyu) in June. Wear comfortable shoes for walking around West Lake."
+    "tips": "Am besten im Frühling für Blumen oder im Herbst für goldenes Laub besuchen. Der Sommer ist heiß und feucht mit häufigen Regenfällen. Regensaison im Frühling (Meiyu) im Juni. Tragen Sie bequeme Schuhe für Spaziergänge rund um den Westsee."
   },
   "attractions": [
     {
       "id": "west-lake",
       "name": "西湖",
-      "nameEn": "West Lake",
+      "nameEn": "Westsee",
       "image": "/img/ext/4dc42d2df4a3.webp",
       "category": "natural",
       "description": "Ein UNESCO-Weltkulturerbe und das ikonische Herz von Hangzhou. Ein Süßwassersee mit umliegenden Gärten, Pagoden und Dämmen, die atemberaubende Landschaften schaffen.",
@@ -50,7 +50,7 @@
       "highlights": [
         "Leifeng-Pagode",
         "Drei Teiche, die den Mond spiegeln",
-        "Broken Bridge",
+        "Die Gebrochene Brücke",
         "Su-Damm",
         "Lingyin-Tempel in der Nähe"
       ],
@@ -60,7 +60,7 @@
     {
       "id": "xixi-wetland",
       "name": "西溪国家湿地公园",
-      "nameEn": "Xixi National Wetland Park",
+      "nameEn": "Xixi-Nationaler-Feuchtgebietspark",
       "image": "/img/ext/48b4b129bd4f.webp",
       "category": "natural",
       "description": "Das größte städtische Feuchtgebiet Chinas mit einzigartigem Ökosystem, traditionellen Fischerdörfern und ruhiger natürlicher Schönheit.",
@@ -84,7 +84,7 @@
     {
       "id": "lingyin-temple",
       "name": "灵隐寺",
-      "nameEn": "Lingyin Temple",
+      "nameEn": "Lingyin-Tempel",
       "image": "/img/ext/928aa4512683.webp",
       "category": "cultural",
       "description": "Ancient Buddhist temple on a scenic hill with beautiful gardens.",
@@ -108,7 +108,7 @@
     {
       "id": "hefang-street",
       "name": "河坊街",
-      "nameEn": "Hefang Street",
+      "nameEn": "Hefang-Straße",
       "image": "/img/ext/74d5ab2e3515.webp",
       "category": "cultural",
       "description": "Eine historische Fußgängerzone in Hangzhou mit traditioneller chinesischer Architektur, lokalen Snacks, Teehäusern und Souvenirläden.",
@@ -132,7 +132,7 @@
     {
       "id": "grand-canal",
       "name": "京杭大运河",
-      "nameEn": "Grand Canal",
+      "nameEn": "Großer Kanal",
       "image": "/img/ext/f90432ef02d5.webp",
       "category": "historical",
       "description": "Der längste antike Kanal der Welt, der sich über 1794 km von Peking bis Hangzhou erstreckt. Der Abschnitt in Hangzhou bietet Bootstouren durch historische Wasserstädte.",
@@ -142,7 +142,7 @@
         "lng": 120.1322
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "60¥ (boat tour additional)",
+      "ticketPrice": "60¥ (Bootstour zusätzlich)",
       "recommendedVisitTime": "2-3 Stunden",
       "highlights": [
         "Xiangji-Tempel",
@@ -180,7 +180,7 @@
     {
       "id": "longjing",
       "name": "龙井村",
-      "nameEn": "Longjing Tea Village",
+      "nameEn": "Longjing-Tee-Dorf",
       "image": "/img/ext/5840105b20de.webp",
       "category": "cultural",
       "description": "Berühmt für Longjing (Drachenbrunnen) Tee, einen der geschätztesten grünen Tees Chinas. Malerische Teepflanzungen und traditionelle Teehäuser.",
@@ -204,7 +204,7 @@
     {
       "id": "qiantang-river",
       "name": "钱塘江",
-      "nameEn": "Qiantang River",
+      "nameEn": "Qiantang-Fluss",
       "image": "/img/ext/ecd694ae9210.webp",
       "category": "natural",
       "description": "Berühmt für die größte Gezeitenwelle der Welt, mit monatlichen Wellen bis zu 9 Metern während des Mittherbstfestes.",
@@ -442,11 +442,11 @@
     {
       "id": "jiuxi-eighteen",
       "name": "九溪十八涧",
-      "nameEn": "Nine Creeks and Eighteen Gullies",
+      "nameEn": "Neun Bäche und achtzehn Schluchten",
       "image": "/img/ext/f5e115604d3c.webp",
       "category": "natural",
       "description": "Ein malerisches Wandergebiet durch Bambuswälder, Teeplantagen und Bergbäche, das das Longjing-Teegebiet mit dem Westsee verbindet.",
-      "address": "Jiuxi, Xihu District",
+      "address": "Jiuxi, Bezirk Xihu",
       "coordinates": {
         "lat": 30.1822,
         "lng": 120.0822
@@ -466,7 +466,7 @@
     {
       "id": "canal-square",
       "name": "运河广场",
-      "nameEn": "Canal Square",
+      "nameEn": "Kanalplatz",
       "image": "/img/ext/6aff39cf893f.webp",
       "category": "cultural",
       "description": "Ein Flussuferplatz am südlichen Ende des Großen Kanals in Hangzhou, mit historischen Ausstellungen und Einkaufsbereichen.",
@@ -490,7 +490,7 @@
     {
       "id": "song-imperial-street",
       "name": "南宋御街",
-      "nameEn": "Southern Song Imperial Street",
+      "nameEn": "Südliche Song-Kaiserstraße",
       "image": "/img/ext/ec6bda6c85d6.webp",
       "category": "historical",
       "description": "Die Hauptstraße der alten Hauptstadt während der Südlichen Song-Dynastie, heute eine Fußgängerzone mit historischen Gebäuden und Geschäften.",
@@ -514,7 +514,7 @@
     {
       "id": "qinghefang",
       "name": "清河坊",
-      "nameEn": "Qinghefang Historical Block",
+      "nameEn": "Qinghefang-Historisches Viertel",
       "image": "/img/ext/ca7ec0831bf7.webp",
       "category": "cultural",
       "description": "Eine der am besten erhaltenen historischen Straßen in Hangzhou mit traditioneller Hangzhou-Architektur, Geschäften und traditionellem Handwerk.",
@@ -538,7 +538,7 @@
     {
       "id": "liangzhu-ancient-city",
       "name": "良渚古城遗址",
-      "nameEn": "Liangzhu Ancient City Site",
+      "nameEn": "Liangzhu-Altstadtstätte",
       "image": "/img/ext/a237ca8ba2e4.webp",
       "category": "historical",
       "description": "Ein UNESCO-Weltkulturerbe, das 5.000 Jahre zurückreicht und eine der frühesten Zivilisationen Chinas mit fortgeschrittener Jadekultur repräsentiert.",
@@ -548,7 +548,7 @@
         "lng": 120.0122
       },
       "openingHours": "09:00-17:00 (montags geschlossen)",
-      "ticketPrice": "Free (museum), 60¥ for archaeological site",
+      "ticketPrice": "Kostenlos (Museum), 60¥ für die archäologische Stätte",
       "recommendedVisitTime": "3-4 Stunden",
       "highlights": [
         "Liangzhu-Museum",
@@ -562,7 +562,7 @@
     {
       "id": "chaoshan-mountain",
       "name": "超山",
-      "nameEn": "Chaoshan Mountain",
+      "nameEn": "Chaoshan-Berg",
       "image": "/img/ext/1b3a09b8ec59.webp",
       "category": "natural",
       "description": "Ein malerischer Berg, berühmt für Pflaumenblüten im Winter und Frühling, mit alten Tempeln und einzigartigen Felsformationen.",
@@ -600,8 +600,8 @@
       "recommendedVisitTime": "1-2 Stunden",
       "highlights": [
         "Nächtliche Lichtshow",
-        "Qianjiang Century City",
-        "Hangzhou Grand Theatre",
+        "Qianjiang-Jahrhundertstadt",
+        "Hangzhou-Großtheater",
         "Stadt-Skyline"
       ],
       "tips": "Am besten nachts besuchen, wenn die spektakuläre Lichtshow stattfindet. Die Sonnenuntergänge über dem Qiantang-Fluss sind beeindruckend. Nehmen Sie die U-Bahn-Linie 4.",
@@ -610,7 +610,7 @@
     {
       "id": "xueguan-road",
       "name": "学宫路历史街区",
-      "nameEn": "Xueguan Road Historical Area",
+      "nameEn": "Xueguan-Straße Historisches Viertel",
       "image": "/img/ext/1c0362a2316d.webp",
       "category": "cultural",
       "description": "Historisches Viertel mit traditioneller chinesischer Architektur, alten Straßen und kulturellen Wahrzeichen der Qing-Dynastie.",
@@ -634,7 +634,7 @@
     {
       "id": "xiangshan-park",
       "name": "香山公园",
-      "nameEn": "Xiangshan Park",
+      "nameEn": "Xiangshan-Park",
       "image": "/img/ext/f50bff55f552.webp",
       "category": "natural",
       "description": "Wunderschöner Park an einem Hang, bekannt für seine alten Pflaumenbäume, Kameliengärten und Panoramablicke auf das Gebiet des Westsees.",
@@ -658,7 +658,7 @@
     {
       "id": "fenghuang-dajing",
       "name": "凤凰景宫",
-      "nameEn": "Phoenix Palace",
+      "nameEn": "Phönix-Palast",
       "image": "/img/ext/44669b7d40d3.webp",
       "category": "cultural",
       "description": "Historischer Palastkomplex mit traditionellen chinesischen Gärten, kaiserlicher Architektur und kulturellen Ausstellungen.",
@@ -682,7 +682,7 @@
     {
       "id": "yuhuang-shan",
       "name": "玉皇山",
-      "nameEn": "Yuhuangshan Mountain",
+      "nameEn": "Yuhuangshan-Berg",
       "image": "/img/ext/8e894df8e003.webp",
       "category": "natural",
       "description": "Tempel auf dem Hügel mit Panoramablick auf den Westsee und die Umgebung. Bietet taoistischen Tempel und malerische Wanderwege.",
@@ -776,7 +776,7 @@
     {
       "id": "longjing-village",
       "name": "龙井村",
-      "nameEn": "Longjing Village",
+      "nameEn": "Longjing-Dorf",
       "category": "street",
       "description": "Chinas berühmtestes Anbaugebiet für Longjing-Tee, wo Sie authentischen Longjing-Tee probieren können.",
       "address": "Hangzhou, Bezirk Xihu",
@@ -799,7 +799,7 @@
     {
       "id": "xihu-museum",
       "name": "浙江省博物馆",
-      "nameEn": "Zhejiang Provincial Museum",
+      "nameEn": "Provinzmuseum Zhejiang",
       "category": "museum",
       "description": "Das Museum beherbergt über 100.000 Kulturgüter, wobei die berühmtesten die Jade-Artefakte der Liangzhu-Kultur sind.",
       "address": "Hangzhou, Bezirk Xihu",
@@ -821,7 +821,7 @@
     {
       "id": "qianjiang-new",
       "name": "钱江新城",
-      "nameEn": "Qianjiang New City",
+      "nameEn": "Qianjiang Neustadt",
       "category": "landmark",
       "description": "Hangzhous neues Stadtgebiet mit modernen Architekturkomplexen.",
       "address": "Bezirk Jianggan, Hangzhou",
@@ -842,7 +842,7 @@
     {
       "id": "song-cheng",
       "name": "宋城",
-      "nameEn": "Song Dynasty Town",
+      "nameEn": "Song-Dynastie-Stadt",
       "category": "landmark",
       "description": "Ein großer Themenpark, der sich um die Kultur der Song-Dynastie dreht, mit der Aufführung 'Songcheng Eternal Love'.",
       "address": "Hangzhou, Bezirk Xihu",
@@ -886,7 +886,7 @@
     {
       "id": "hangzhou-tea",
       "name": "茶文化",
-      "nameEn": "Hangzhou Tea Culture",
+      "nameEn": "Hangzhou Teekultur",
       "category": "street",
       "description": "Hangzhou ist Chinas Teehauptstadt, bekannt für Longjing-Tee und Teekultur.",
       "address": "Hangzhou, Bezirk Xihu",
@@ -908,7 +908,7 @@
     {
       "id": "hangzhou-food",
       "name": "杭帮菜",
-      "nameEn": "Hangbang Cuisine",
+      "nameEn": "Hangbang-Küche",
       "category": "street",
       "description": "Traditionelle Hangzhou-Küche, darunter Westsee-Essigfisch, Dongpo-Schweinefleisch usw.",
       "address": "Stadt Hangzhou",
@@ -930,7 +930,7 @@
     {
       "id": "hangzhou-night",
       "name": "杭州夜景",
-      "nameEn": "Hangzhou Night View",
+      "nameEn": "Hangzhou Nachtansicht",
       "category": "landmark",
       "description": "Nächtliche Lichtshows am Westsee und am Qiantang-Fluss.",
       "address": "Stadt Hangzhou",
@@ -994,7 +994,7 @@
     {
       "id": "hangzhou-bay",
       "name": "杭州湾",
-      "nameEn": "Hangzhou Bay",
+      "nameEn": "Hangzhou-Bucht",
       "category": "nature",
       "description": "Die Mündung des Qiantang-Flusses, berühmt für seine Tidenwelle.",
       "address": "Stadt Hangzhou",
@@ -1015,7 +1015,7 @@
     {
       "id": "hangzhou-bridge",
       "name": "钱塘江大桥",
-      "nameEn": "Qiantang River Bridge",
+      "nameEn": "Qiantang-Flussbrücke",
       "category": "landmark",
       "description": "Chinas erste selbst entworfene Straßen-Eisenbahn-Doppelzweckbrücke.",
       "address": "Stadt Hangzhou",
@@ -1037,7 +1037,7 @@
     {
       "id": "hangzhou-silk",
       "name": "丝绸博物馆",
-      "nameEn": "Silk Museum",
+      "nameEn": "Seidenmuseum",
       "category": "museum",
       "description": "Ein Museum, das die chinesische Seidenkultur präsentiert.",
       "address": "Hangzhou, Bezirk Xihu",
@@ -1058,7 +1058,7 @@
     {
       "id": "hangzhou-park",
       "name": "太子湾公园",
-      "nameEn": "Prince Bay Park",
+      "nameEn": "Prince-Bay-Park",
       "category": "park",
       "description": "Einer der schönsten Parks von Hangzhou, mit Tulpen, die im Frühling blühen.",
       "address": "Hangzhou, Bezirk Xihu",
@@ -1122,7 +1122,7 @@
     {
       "id": "jingci",
       "name": "净慈寺",
-      "nameEn": "Jingci Temple",
+      "nameEn": "Jingci-Tempel",
       "category": "temple",
       "description": "Einer der vier berühmten Tempel des Westsees.",
       "address": "Hangzhou, Bezirk Xihu",
@@ -1143,7 +1143,7 @@
     {
       "id": "baoshi",
       "name": "宝石山",
-      "nameEn": "Baoshi Mountain",
+      "nameEn": "Baoshi-Berg",
       "category": "nature",
       "description": "Ein kleiner Hügel am Westsee, auf dem sich die Baochu-Pagode befindet.",
       "address": "Hangzhou, Bezirk Xihu",
@@ -1165,7 +1165,7 @@
     {
       "id": "xiang-lake",
       "name": "湘湖",
-      "nameEn": "Xiang Lake",
+      "nameEn": "Xiang-See",
       "category": "nature",
       "description": "Ein See im Bezirk Xiaoshan.",
       "address": "Bezirk Xiaoshan, Hangzhou",
@@ -1279,7 +1279,7 @@
     {
       "id": "hangzhou-4",
       "name": "绿茶餐厅",
-      "nameEn": "Green Tea Restaurant",
+      "nameEn": "Grüntee-Restaurant",
       "type": "lokal",
       "cuisine": "Zhejiang-Küche",
       "avgPrice": 100,
@@ -1311,7 +1311,7 @@
       "name": "奎元馆",
       "nameEn": "Kui Yuan Guan",
       "type": "lokal",
-      "cuisine": "Hangzhou Noodles",
+      "cuisine": "Hangzhou-Nudeln",
       "avgPrice": 50,
       "rating": 4.7,
       "address": "Gaoyin Straße 86, Bezirk Shangcheng",
@@ -1323,9 +1323,9 @@
       "hours": "06:30-20:00",
       "description": "Legendäres Nudelhaus, gegründet 1867, serviert authentische Hangzhou-Nudeln mit reichhaltiger Brühe.",
       "dishHighlights": [
-        "Shrimp noodles",
+        "Garnelennudeln",
         "Gemüse- und Pilznudeln",
-        "Red-braised pork noodles"
+        "Rotgeschmorte Schweinefleischnudeln"
       ],
       "tags": [
         "historisch",
@@ -1356,7 +1356,7 @@
       "description": "Historisches Restaurant am Ufer des Westsees, gegründet 1848. Berühmt für Aussichtsdining und traditionelle Gerichte.",
       "dishHighlights": [
         "Westsee-Fisch in Essigsauce",
-        "Beggar's chicken",
+        "Bettlerhuhn",
         "Löwenkopf-Fleischbällchen"
       ],
       "tags": [
@@ -1372,7 +1372,7 @@
       "name": "龙井菜馆",
       "nameEn": "Longjing Caiguan",
       "type": "lokal",
-      "cuisine": "Tea Cuisine",
+      "cuisine": "Teeküche",
       "avgPrice": 150,
       "rating": 4.6,
       "address": "Longjing Dorf, Xihu Bezirk",
@@ -1384,13 +1384,13 @@
       "hours": "10:00-22:00",
       "description": "Traditionelles Restaurant im Teeland, spezialisiert auf Gerichte mit Longjing-Tee und biologischen lokalen Zutaten.",
       "dishHighlights": [
-        "Longjing shrimp",
-        "Tea-smoked duck",
+        "Longjing-Garnelen",
+        "Teegeräucherte Ente",
         "Drachenbrunnen-Tee gebratener Reis"
       ],
       "tags": [
         "lokal",
-        "tea-cuisine",
+        "Tee-Küche",
         "malerisch"
       ],
       "star": 0,
@@ -1413,8 +1413,8 @@
       "hours": "10:00-22:00",
       "description": "Beliebte lokale Kette, bekannt für authentische Zhejiang-Hausmannskost und angenehmes Speiseambiente.",
       "dishHighlights": [
-        "Fried sweet rice cake",
-        "Braised pork with taro",
+        "Gebratener süßer Reiskuchen",
+        "Geschmortes Schweinefleisch mit Taro",
         "Hangzhou-Kalte Nudeln"
       ],
       "tags": [
@@ -1430,9 +1430,9 @@
     {
       "id": "hangzhou-9",
       "name": "龙井茶餐厅",
-      "nameEn": "Longjing Tea Restaurant",
+      "nameEn": "Longjing-Teestube",
       "type": "lokal",
-      "cuisine": "Tea Cuisine",
+      "cuisine": "Teeküche",
       "avgPrice": 120,
       "rating": 4.5,
       "address": "Longjing Dorf, Xihu Bezirk",
@@ -1444,15 +1444,15 @@
       "hours": "09:00-21:00",
       "description": "Malerisches Restaurant, umgeben von Teegärten, serviert authentische Longjing-Tee-Küche und lokale Hangzhou-Gerichte.",
       "dishHighlights": [
-        "Longjing tea chicken",
+        "Longjing-Tee-Hähnchen",
         "Rührei mit Teeblättern",
-        "Steamed fish with tea"
+        "Gedämpfter Fisch mit Tee"
       ],
       "tags": [
         "lokal",
-        "tea-cuisine",
+        "Tee-Küche",
         "malerisch",
-        "garden-view"
+        "Gartenblick"
       ],
       "star": 0,
       "diamond": 0,
@@ -1461,7 +1461,7 @@
     {
       "id": "hangzhou-10",
       "name": "杭帮菜馆",
-      "nameEn": "Hangbang Cuisine Restaurant",
+      "nameEn": "Hangbang-Küche Restaurant",
       "type": "lokal",
       "cuisine": "Hangzhou",
       "avgPrice": 100,
@@ -1475,7 +1475,7 @@
       "hours": "10:30-21:00",
       "description": "Traditionelles Restaurant, spezialisiert auf authentische Hangzhou-Küche mit Fokus auf klassischen Rezepten, die über Generationen weitergegeben wurden.",
       "dishHighlights": [
-        "Hangzhou roast duck",
+        "Hangzhou-Bratente",
         "Westlake-Essigfisch",
         "Dongpo-Schweinefleisch"
       ],
@@ -1507,13 +1507,13 @@
       "dishHighlights": [
         "Geschmortes Schweinebauchfleisch mit Teeblatt",
         "Gedopter Wolfsbarsch mit Frühlingszwiebeln",
-        "Hangzhou wontons"
+        "Hangzhou-Wan-Tan"
       ],
       "tags": [
         "lokal",
         "gehoben",
         "traditionell",
-        "historic-area"
+        "historisches Viertel"
       ],
       "star": 0,
       "diamond": 0,
@@ -1522,7 +1522,7 @@
     {
       "id": "hangzhou-12",
       "name": "湖畔大学堂",
-      "nameEn": "Lakeview Dining Hall",
+      "nameEn": "Seeblick-Speisesaal",
       "type": "lokal",
       "cuisine": "Zhejiang-Küche",
       "avgPrice": 250,
@@ -1536,9 +1536,9 @@
       "hours": "10:30-22:00",
       "description": "Elegantes Restaurant am See mit wunderschönem Blick auf den Westsee, bekannt für traditionelle Hangzhou-Gerichte und kaiserliche Kochkunst.",
       "dishHighlights": [
-        "Imperial style shrimp",
-        "Lotus leaf rice",
-        "Crystal pork ribs"
+        "Kaiserliche Garnelen",
+        "Lotusblatt-Reis",
+        "Kristall-Schweinerippchen"
       ],
       "tags": [
         "lokal",
@@ -1553,9 +1553,9 @@
     {
       "id": "hangzhou-13",
       "name": "香格里拉中餐厅",
-      "nameEn": "Shangri-La Chinese Restaurant",
+      "nameEn": "Shangri-La Chinesisches Restaurant",
       "type": "luxury",
-      "cuisine": "Cantonese and Zhejiang",
+      "cuisine": "Kantonesisch und Zhejiang",
       "avgPrice": 400,
       "rating": 4.6,
       "address": "Shangri-La Hotel, Beishan-Straße 78",
@@ -1567,13 +1567,13 @@
       "hours": "11:30-14:30, 17:30-22:00",
       "description": "Hochwertiges Restaurant im Shangri-La Hotel, serviert erstklassige kantonesische und Zhejiang-Küche mit professionellem Service.",
       "dishHighlights": [
-        "Bird's nest soup",
+        "Schwalbennestersuppe",
         "Abalone mit saisonalem Gemüse",
-        "Premium dim sum"
+        "Premium-Dim-Sum"
       ],
       "tags": [
         "Luxus",
-        "hotel",
+        "Hotel",
         "kantonesisch",
         "Zhejiang-Küche"
       ],
@@ -1598,7 +1598,7 @@
       "hours": "10:30-21:30",
       "description": "Beliebte lokale Kette, berühmt für Öl-Explosions-Garnelen und authentische Hangzhou-Hausmannskost zu vernünftigen Preisen.",
       "dishHighlights": [
-        "Oil explosion shrimp",
+        "Öl-explodierte Garnelen",
         "Geschmortes Schweinefleisch mit brauner Soße",
         "Rührei mit Tomaten"
       ],
@@ -1631,12 +1631,12 @@
       "dishHighlights": [
         "Gedämpfte Krabbe mit gereiftem Wein",
         "Geschmorter Abalone",
-        "Cantonese roast duck"
+        "Kantonesische Ente vom Spieß"
       ],
       "tags": [
         "lokal",
         "gehoben",
-        "fusion",
+        "Fusion",
         "Meeresfrüchte"
       ],
       "star": 0,
@@ -1661,14 +1661,14 @@
       "description": "Historisches Restaurant in der Nähe des Lingyin-Tempels, das buddhistische vegetarische Küche und traditionelle Hangzhou-Gerichte serviert.",
       "dishHighlights": [
         "Buddhistischer vegetarischer Hotpot",
-        "Lotus seed soup",
+        "Lotoskernsuppe",
         "Saisonales Gemüse"
       ],
       "tags": [
         "lokal",
         "Vegetarisch",
         "historisch",
-        "near-temple"
+        "in Tempelnähe"
       ],
       "star": 0,
       "diamond": 0,
@@ -1677,7 +1677,7 @@
     {
       "id": "hangzhou-17",
       "name": "运河私房菜",
-      "nameEn": "Canal Private Kitchen",
+      "nameEn": "Kanal-Privatküche",
       "type": "lokal",
       "cuisine": "Zhejiang-Heimische Küche",
       "avgPrice": 120,
@@ -1691,15 +1691,15 @@
       "hours": "11:00-14:00, 17:00-21:00",
       "description": "Verstecktes Juwel am Grand Canal, das geheime Familienrezepte der traditionellen Zhejiang-Hausmannskost serviert.",
       "dishHighlights": [
-        "Grandma's braised pork",
-        "Canal style fish",
-        "Handmade dumplings"
+        "Omas geschmortes Schweinefleisch",
+        "Fisch nach Kanalart",
+        "Handgemachte Teigtaschen"
       ],
       "tags": [
         "lokal",
-        "hidden-gem",
+        "Geheimtipp",
         "Hausmannskost",
-        "canal-view"
+        "Kanalblick"
       ],
       "star": 0,
       "diamond": 0,
@@ -1708,9 +1708,9 @@
     {
       "id": "hangzhou-18",
       "name": "南舍私房菜",
-      "nameEn": "Nan She Private Kitchen",
+      "nameEn": "Nan She Privatküche",
       "type": "lokal",
-      "cuisine": "Creative Zhejiang",
+      "cuisine": "Kreative Küche aus Zhejiang",
       "avgPrice": 280,
       "rating": 4.7,
       "address": "Nanshan-Straße 88, Bezirk Xihu",
@@ -1719,16 +1719,16 @@
         "lng": 120.1482
       },
       "phone": "+86 571 8797 3456",
-      "hours": "17:30-22:00 (closed Monday)",
+      "hours": "17:30–22:00 Uhr (montags geschlossen)",
       "description": "Exklusive Privatküche mit nur 8 Tischen, die innovative Zhejiang-Küche mit saisonalen Zutaten serviert.",
       "dishHighlights": [
         "Saisonales Verkostungsmenü",
-        "Tea infused dishes",
-        "Artisan desserts"
+        "Gerichte mit Tee-Aroma",
+        "Handwerklich hergestellte Desserts"
       ],
       "tags": [
         "lokal",
-        "private-kitchen",
+        "Privatküche",
         "gehoben",
         "Kreativ"
       ],
@@ -1739,7 +1739,7 @@
     {
       "id": "hangzhou-19",
       "name": "西子湖四季中餐厅",
-      "nameEn": "Four Seasons Resort Chinese Restaurant",
+      "nameEn": "Four Seasons Resort Chinesisches Restaurant",
       "type": "luxury",
       "cuisine": "Zhejiang-Küche",
       "avgPrice": 800,
@@ -1753,13 +1753,13 @@
       "hours": "11:30-14:30, 17:30-22:00",
       "description": "Michelin-Niveau-Dining im Four Seasons Resort mit Garten- und Seeblick und feinster Zhejiang-Küche.",
       "dishHighlights": [
-        "Imperial banquet",
+        "Kaiserliches Bankett",
         "Saisonales Verkostungsmenü",
-        "West Lake view dining"
+        "Restaurant mit Blick auf den Westsee"
       ],
       "tags": [
         "Luxus",
-        "resort",
+        "Resort",
         "Feinschmecker-Restaurant",
         "Seeblick"
       ],
@@ -1786,7 +1786,7 @@
       "dishHighlights": [
         "Spareribs nach Hangzhou-Art",
         "Gedämpfter Karpfen",
-        "Longjing tea shrimp"
+        "Langjing-Tee-Garnelen"
       ],
       "tags": [
         "lokal",
@@ -2734,7 +2734,7 @@
         "Luxuriöses Spa",
         "Gartenhof"
       ],
-      "bookingTips": "Book lakeside rooms for West Lake views. Restaurant reservations essential."
+      "bookingTips": "Buchen Sie Zimmer am Seeufer für den Blick auf den Westsee. Reservierungen im Restaurant sind unbedingt erforderlich."
     },
     {
       "name": "Four Seasons Hotel Hangzhou at West Lake",
@@ -2753,14 +2753,14 @@
         "Dinner auf dem Boot",
         "Traditionelle chinesische Architektur"
       ],
-      "bookingTips": "Exclusive resort experience. Book months ahead for holidays."
+      "bookingTips": "Exklusives Resort-Erlebnis. Buchen Sie Monate im Voraus für Feiertage."
     },
     {
       "name": "Shangri-La Hotel Hangzhou",
       "nameEn": "Shangri-La Hotel Hangzhou",
       "budget": "luxury",
       "priceRange": "¥1500-3000/night",
-      "address": "78 Beishan Road",
+      "address": "Beishan-Straße 78",
       "coordinates": {
         "lat": 30.2622,
         "lng": 120.1482
@@ -2772,14 +2772,14 @@
         "Mehrere Restaurants",
         "Geschäftseinrichtungen"
       ],
-      "bookingTips": "Great location near West Lake. Weekend packages available."
+      "bookingTips": "Tolle Lage in der Nähe des Westsees. Wochenendpakete verfügbar."
     },
     {
       "name": "Grand Hyatt Hangzhou",
       "nameEn": "Grand Hyatt Hangzhou",
       "budget": "mid",
       "priceRange": "¥1200-2500/night",
-      "address": "28 Hubin Road",
+      "address": "Hubin-Straße 28",
       "coordinates": {
         "lat": 30.2522,
         "lng": 120.1622
@@ -2791,14 +2791,14 @@
         "Moderne Ausstattung",
         "Guter Service"
       ],
-      "bookingTips": "Best for business travelers. Check weekend rates."
+      "bookingTips": "Am besten für Geschäftsreisende geeignet. Wochenendtarife prüfen."
     },
     {
       "name": "杭州西湖饭店",
       "nameEn": "Hangzhou West Lake Hotel",
       "budget": "mid",
       "priceRange": "¥500-1000/night",
-      "address": "101-1 Xiling Road",
+      "address": "Xiling-Straße 101-1",
       "coordinates": {
         "lat": 30.2522,
         "lng": 120.1522
@@ -2809,7 +2809,7 @@
         "Historisches Anwesen",
         "Gutes Preis-Leistungs-Verhältnis"
       ],
-      "bookingTips": "Book well in advance during peak season."
+      "bookingTips": "Buchen Sie in der Hochsaison rechtzeitig im Voraus."
     },
     {
       "name": "杭州希尔顿酒店",
@@ -2828,7 +2828,7 @@
         "Mehrere gastronomische Angebote",
         "Gute U-Bahn-Anbindung"
       ],
-      "bookingTips": "Good base for exploring city. Book river view rooms."
+      "bookingTips": "Guter Ausgangspunkt für Stadterkundungen. Buchen Sie Zimmer mit Seeblick."
     },
     {
       "name": "杭州凯悦酒店",
@@ -2847,7 +2847,7 @@
         "Gut zum Einkaufen",
         "Moderne Zimmer"
       ],
-      "bookingTips": "Great for first-time visitors. Easy metro access."
+      "bookingTips": "Ideal für Erstbesucher. Guter U-Bahn-Anschluss."
     },
     {
       "name": "Hangzhou Huanglong Hotel",
@@ -2866,7 +2866,7 @@
         "Gutes Frühstück",
         "Historische Atmosphäre"
       ],
-      "bookingTips": "Book standard rooms for best value. Walking distance to West Lake."
+      "bookingTips": "Buchen Sie Standardzimmer für das beste Preis-Leistungs-Verhältnis. Fußläufig zum Westsee."
     },
     {
       "name": "Hangzhou West Lake State Guesthouse",
@@ -2885,7 +2885,7 @@
         "Privater Garten",
         "Exklusiver Service"
       ],
-      "bookingTips": "National leader accommodation. Book months ahead."
+      "bookingTips": "Unterkunft für Staatsgäste. Monate im Voraus buchen."
     },
     {
       "name": "杭州绿城尊蓝钱江豪华精选酒店",
@@ -2904,7 +2904,7 @@
         "Gute Lage",
         "Professioneller Service"
       ],
-      "bookingTips": "Best river view rooms. Walking distance to Broken Bridge."
+      "bookingTips": "Beste Zimmer mit Seeblick. Zu Fuß erreichbar zur Broken Bridge."
     },
     {
       "name": "JW Marriott Hotel Hangzhou",
@@ -2923,7 +2923,7 @@
         "Mehrere Restaurants",
         "Moderne Einrichtungen"
       ],
-      "bookingTips": "Best for business travelers. Club lounge access recommended."
+      "bookingTips": "Am besten für Geschäftsreisende. Zugang zur Club-Lounge empfohlen."
     },
     {
       "name": "Courtyard by Marriott Hangzhou",
@@ -2942,7 +2942,7 @@
         "Gutes Frühstück",
         "Erschwinglicher Luxus"
       ],
-      "bookingTips": "Great value for money. Metro nearby."
+      "bookingTips": "Großartiges Preis-Leistungs-Verhältnis. U-Bahn in der Nähe."
     },
     {
       "name": "Hangzhou Nade Hotel",
@@ -2961,7 +2961,7 @@
         "Saubere Zimmer",
         "Nähe zur U-Bahn"
       ],
-      "bookingTips": "Best budget option in city center. Book direct for discounts."
+      "bookingTips": "Beste Budget-Option im Stadtzentrum. Direkt buchen für Rabatte."
     },
     {
       "name": "Hilton Hangzhou Qiandao Lake",
@@ -2980,7 +2980,7 @@
         "Wassersportaktivitäten",
         "Malerische Lage"
       ],
-      "bookingTips": "Book lake view rooms. Great for weekend getaway."
+      "bookingTips": "Zimmer mit Seeblick buchen. Ideal für einen Wochenendausflug."
     },
     {
       "name": "Hangzhou Xixi Hotel",
@@ -2999,7 +2999,7 @@
         "Gut für Naturliebhaber",
         "Traditioneller chinesischer Stil"
       ],
-      "bookingTips": "Best combined with wetland visit. Book quiet rooms."
+      "bookingTips": "Am besten kombinierbar mit einem Feuchtgebietsbesuch. Ruhige Zimmer buchen."
     }
   ],
   "payment": [
@@ -3010,7 +3010,7 @@
       "howToUse": [
         "App vor der Ankunft herunterladen",
         "Internationale credit card verknüpfen oder chinesisches Konto eröffnen",
-        "QR code scanning"
+        "QR-Code-Scannen"
       ],
       "tips": [
         "Für die meisten Transaktionen erforderlich",
@@ -3023,7 +3023,7 @@
       "icon": "wechat",
       "description": "Zweitbeliebteste Zahlungsmethode",
       "howToUse": [
-        "WeChat app required",
+        "WeChat-App erforderlich",
         "Internationale Karte über WeChat Pay verknüpfen"
       ],
       "tips": [
@@ -3036,7 +3036,7 @@
       "icon": "cash",
       "description": "Weiterhin nützlich auf traditionellen Märkten und bei kleinen Händlern",
       "howToUse": [
-        "ATMs widely available",
+        "Geldautomaten sind weit verbreitet",
         "Bei Banken oder am Flughafen umtauschen"
       ],
       "tips": [
@@ -3049,90 +3049,90 @@
     {
       "category": "tea",
       "title": "Teekultur",
-      "content": "Hangzhou is famous for Longjing (Dragon Well) tea. Visit a tea house for authentic tea ceremony. Spring tea picking (April) is a special experience.",
+      "content": "Hangzhou ist berühmt für Longjing-Tee (Drachenbrunnen-Tee). Besuchen Sie ein Teehaus für eine authentische Teezeremonie. Das Pflücken des Frühlings-Tees (April) ist ein besonderes Erlebnis.",
       "importance": "high"
     },
     {
       "category": "dining",
       "title": "Essensetikette",
-      "content": "West Lake vinegar fish and Dongpo pork are local specialties. Tipping is not expected. Restaurant service may be casual.",
+      "content": "Westsee-Essigfisch und Dongpo-Schweinefleisch sind lokale Spezialitäten. Trinkgeld ist nicht üblich. Der Service in Restaurants kann ungezwungen sein.",
       "importance": "high"
     },
     {
       "category": "dressing",
-      "title": "Clothing",
-      "content": "Comfortable walking shoes essential for West Lake. Dress modestly for temple visits. Light layers for variable weather.",
+      "title": "Kleidung",
+      "content": "Bequeme Wanderschuhe sind für den Westsee unerlässlich. Kleiden Sie sich dezent für Tempelbesuche. Leichte Schichten für wechselhaftes Wetter.",
       "importance": "medium"
     },
     {
       "category": "timing",
-      "title": "Best Times",
-      "content": "Visit West Lake early morning or late evening to avoid crowds. Weekdays are less crowded than weekends. Spring (April-May) for flowers, autumn for foliage.",
+      "title": "Beste Reisezeit",
+      "content": "Besuchen Sie den Westsee am frühen Morgen oder späten Abend, um Menschenmassen zu vermeiden. Wochentage sind weniger überlaufen als Wochenenden. Frühling (April-Mai) für Blumen, Herbst für Laub.",
       "importance": "medium"
     },
     {
       "category": "silk-culture",
-      "title": "Silk Heritage",
+      "title": "Seidenerbe",
       "content": "Hangzhou ist seit über 2000 Jahren Chinas Seidenhauptstadt. Im Chinesischen Seidenmuseum oder in Seidenfabriken kann man echte Produkte kaufen. ‚Hangzhou-Seide‘ ist eine weltweit bekannte Premiummarke.",
       "importance": "medium"
     },
     {
       "category": "lotus-culture",
-      "title": "Lotus and Water Lily Culture",
+      "title": "Lotus- und Seerosenkultur",
       "content": "Die Lotusblume symbolisiert in der Kultur von Hangzhou Reinheit und Eleganz. Die Lotusteiche am Westsee blühen im Sommer (Juni bis August) in voller Pracht. ‚Quyuan Fenghe‘ (Lotus im Wind an der Biegung) ist eine der Zehn Sehenswürdigkeiten des Westsees.",
       "importance": "medium"
     },
     {
       "category": "imperial-history",
-      "title": "Imperial Heritage",
-      "content": "Hangzhou served as capital during Southern Song Dynasty (1127-1279). The city's layout, gardens, and cuisine reflect this imperial period. Emperor Gaozong chose Hangzhou for its 'paradise' scenery.",
+      "title": "Kaiserliches Erbe",
+      "content": "Hangzhou diente während der Südlichen Song-Dynastie (1127-1279) als Hauptstadt. Die Stadtplanung, Gärten und Küche spiegeln diese kaiserliche Periode wider. Kaiser Gaozong wählte Hangzhou wegen seiner 'paradiesischen' Landschaft.",
       "importance": "medium"
     },
     {
       "category": "poetry-culture",
-      "title": "Literary and Poetry Heritage",
+      "title": "Literarisches und poetisches Erbe",
       "content": "Der Westsee inspirierte unzählige Dichter wie Su Dongpo, Bai Juyi und Li Bai. Viele berühmte Gedichte beschreiben die Landschaft des Westsees. \"Drei Teiche, die den Mond spiegeln\" und \"Die zerbrochene Brücke im Schnee\" sind poetische Ausdrücke für die faszinierenden Landschaften des Westsees.",
       "importance": "medium"
     },
     {
       "category": "tea-harvest",
-      "title": "Longjing Tea Harvest Season",
+      "title": "Longjing-Tee-Erntezeit",
       "content": "Der Longjing-Tee von Anfang April (Mingqian Longjing) wird am meisten geschätzt. Die Teeerntezeit zieht Besucher ins Dorf Longjing, und der neue Tee in dieser Zeit wird zu Premiumpreisen verkauft.",
       "importance": "high"
     },
     {
       "category": "west-lake-legends",
-      "title": "Legend of White Snake",
+      "title": "Legende der Weißen Schlange",
       "content": "Die Legende der Weißen Schlange ist die berühmteste Volksgeschichte in Hangzhou. Der Leifeng-Pagode ist der Ort, an dem die Heldin der Geschichte eingesperrt wurde. Diese romantische Legende wurde in Opern, Filmen und im Fernsehen adaptiert.",
       "importance": "medium"
     },
     {
       "category": "water-town",
-      "title": "Water Town Atmosphere",
-      "content": "Hangzhou's connection to water includes the Grand Canal, West Lake, and surrounding waterways. Traditional water town architecture can still be seen along canal banks. Boat tours offer glimpses of this heritage.",
+      "title": "Wasserstadt-Atmosphäre",
+      "content": "Hangzhous Verbindung zum Wasser umfasst den Großen Kanal, den Westsee und die umliegenden Wasserwege. Traditionelle Wasserstadt-Architektur ist noch immer entlang der Kanalufer zu sehen. Bootstouren bieten Einblicke in dieses Erbe.",
       "importance": "medium"
     },
     {
       "category": "festival-traditions",
-      "title": "Festival Celebrations",
-      "content": "Hangzhou celebrates festivals with unique traditions. Mid-Autumn Festival at West Lake features moon viewing and boat rides. Qingming Festival brings visitors to tea gardens and historical sites.",
+      "title": "Festivalfeierlichkeiten",
+      "content": "Hangzhou feiert Feste mit einzigartigen Traditionen. Das Mondfest am Westsee bietet Mondbeobachtung und Bootsfahrten. Das Qingming-Fest bringt Besucher zu Teegärten und historischen Stätten.",
       "importance": "medium"
     },
     {
       "category": "gardens",
-      "title": "Classical Chinese Gardens",
-      "content": "Hangzhou's classical gardens showcase Chinese landscape design principles. Guo Wang's Garden and Lianhua Chi are excellent examples. Gardens feature pavilions, rock arrangements, and water features.",
+      "title": "Klassische chinesische Gärten",
+      "content": "Hangzhous klassische Gärten zeigen die Prinzipien der chinesischen Landschaftsgestaltung. Der Guo-Wang-Garten und der Lianhua-Chi sind hervorragende Beispiele. Die Gärten verfügen über Pavillons, Felsanordnungen und Wasserspiele.",
       "importance": "medium"
     },
     {
       "category": "crafts",
-      "title": "Traditional Crafts",
-      "content": "Hangzhou preserves traditional crafts including silk weaving, fan making, and bamboo carving. Workshops in Hefang Street demonstrate these skills. Authentic products make meaningful souvenirs.",
+      "title": "Traditionelles Handwerk",
+      "content": "Hangzhou bewahrt traditionelles Handwerk wie Seidenweberei, Fächerherstellung und Bambusschnitzerei. Werkstätten in der Hefang-Straße demonstrieren diese Fertigkeiten. Authentische Produkte sind bedeutungsvolle Souvenirs.",
       "importance": "medium"
     },
     {
       "category": "tech-innovation",
-      "title": "Tech Hub Culture",
+      "title": "Kultur des Technologiezentrums",
       "content": "Hangzhou ist die Heimat von Alibaba und der chinesischen Technologiebranche. Die Stadt verbindet traditionelle Kultur mit Innovation. Die \"Traumstadt\" (Dream Town) zeigt den Unternehmergeist von Hangzhou.",
       "importance": "low"
     }

@@ -3,39 +3,39 @@
   "name": "广州",
   "nameEn": "Guangzhou",
   "country": "China",
-  "population": "18.67 million",
+  "population": "18,67 Millionen",
   "coordinates": {
     "lat": 23.1291,
     "lng": 113.2644
   },
-  "timezone": "UTC+8 (China Standard Time)",
+  "timezone": "UTC+8 (Chinesische Standardzeit)",
   "description": "Guangzhou, die Hauptstadt der Provinz Guangdong, ist ein historischer Handelshafen und die Geburtsstadt der kantonesischen Kultur. Bekannt als 'Kanton' bietet es weltbekannte Dim Sum, faszinierende Lebensmittelmärkte und den ikonischen Kanton-Turm. Die Stadt verbindet südchinesische Traditionen mit moderner Architektur und dient als Tor zu Hongkong und Macau.",
   "coverImage": "/img/ext/65dc57b427bd.webp",
   "highlights": [
     "Canton Tower - Ikonischer LED-beleuchteter Turm",
     "Chen Clan Ancestral Hall - Traditionelle kantonesische Architektur",
     "Beijing Rd Fußgängerzone - Historisches Einkaufsviertel",
-    "Shamian Island - Colonial architecture",
-    "Baiyun Mountain - City views and tea houses"
+    "Shamian-Insel – Kolonialarchitektur",
+    "Baiyun-Berg – Stadtblick und Teehäuser"
   ],
   "climate": {
-    "type": "Subtropical humid",
+    "type": "Subtropisch feucht",
     "bestMonths": [
-      "October",
+      "Oktober",
       "November",
-      "December",
-      "March",
+      "Dezember",
+      "März",
       "April"
     ],
     "avgSummerTemp": "30C (86F)",
     "avgWinterTemp": "13C (55F)",
-    "tips": "Best visited in autumn and early spring. Summers are hot, humid, and rainy (May-September). Typhoon season is July-September. Light clothing most of the year. Mosquitoes common in summer."
+    "tips": "Am besten im Herbst und frühen Frühling besuchen. Die Sommer sind heiß, feucht und regnerisch (Mai–September). Taifunsaison ist von Juli bis September. Leichte Kleidung die meiste Zeit des Jahres. Mücken sind im Sommer häufig."
   },
   "attractions": [
     {
       "id": "shangxiajiu",
       "name": "上下九步行街",
-      "nameEn": "Shangxiajiu Pedestrian Street",
+      "nameEn": "Shangxiajiu-Fußgängerzone",
       "category": "shopping",
       "description": "Guangzhous berühmteste Fußgängerzone mit traditioneller kantonesischer Architektur und lokalen Snacks.",
       "image": "/img/ext/06dc392c8fb9.webp",
@@ -59,7 +59,7 @@
     {
       "id": "beijing-road",
       "name": "北京路步行街",
-      "nameEn": "Beijing Road Pedestrian Street",
+      "nameEn": "Beijing-Straße-Fußgängerzone",
       "category": "shopping",
       "description": "Eines der ältesten Geschäftsviertel von Guangzhou mit antiken Ruinen, die durch Glasböden sichtbar sind.",
       "image": "/img/ext/23de9998ede5.webp",
@@ -83,7 +83,7 @@
     {
       "id": "guangdong-museum",
       "name": "广东省博物馆",
-      "nameEn": "Guangdong Museum",
+      "nameEn": "Guangdong-Museum",
       "category": "cultural",
       "description": "Modernes Museum mit Ausstellungen zur Geschichte, Kultur und den natürlichen Ressourcen Guangdongs.",
       "image": "/img/ext/073d2635a578.webp",
@@ -93,7 +93,7 @@
         "lng": 113.3285
       },
       "openingHours": "09:00-17:00 (Montag geschlossen)",
-      "ticketPrice": "Free (must book online)",
+      "ticketPrice": "Kostenlos (Online-Buchung erforderlich)",
       "recommendedVisitTime": "2-3 Stunden",
       "highlights": [
         "Fossilienausstellungen",
@@ -107,7 +107,7 @@
     {
       "id": "guangzhou-zoo",
       "name": "广州动物园",
-      "nameEn": "Guangzhou Zoo",
+      "nameEn": "Guangzhou-Zoo",
       "category": "natural",
       "description": "Großer zoologischer Park mit vielfältigen Tieren und Artenschutzprogrammen.",
       "image": "/img/ext/54709d6c1f5d.webp",
@@ -131,11 +131,11 @@
     {
       "id": "baihe-mountain",
       "name": "百万葵园",
-      "nameEn": "Baihe (Hundred Thousand Roses) Garden",
+      "nameEn": "Baihe (Hunderttausend Rosen) Garten",
       "category": "natural",
       "description": "Themenpark mit Millionen von Sonnenblumen und verschiedenen Blumenausstellungen das ganze Jahr über.",
       "image": "/img/ext/17c7c27a1120.webp",
-      "address": "Nansha District",
+      "address": "Nansha-Bezirk",
       "coordinates": {
         "lat": 22.7835,
         "lng": 113.5445
@@ -155,17 +155,17 @@
     {
       "id": "conghua-hot-spring",
       "name": "从化温泉",
-      "nameEn": "Conghua Hot Spring",
+      "nameEn": "Conghua Heiße Quelle",
       "category": "natural",
       "description": "Bekanntes Thermalquellen-Resortgebiet mit mineralreichen geothermischen Quellen.",
       "image": "/img/ext/7e71f2098943.webp",
-      "address": "Conghua District",
+      "address": "Bezirk Conghua",
       "coordinates": {
         "lat": 23.5745,
         "lng": 113.8245
       },
       "openingHours": "09:00-23:00",
-      "ticketPrice": "68-388¥ (varies by venue)",
+      "ticketPrice": "68-388¥ (je nach Veranstaltungsort)",
       "recommendedVisitTime": "4-6 Stunden",
       "highlights": [
         "Natürliche Mineralquellen",
@@ -179,11 +179,11 @@
     {
       "id": "nansha-wetland",
       "name": "南沙湿地公园",
-      "nameEn": "Nansha Wetland Park",
+      "nameEn": "Nansha Feuchtgebietspark",
       "category": "natural",
       "description": "Küstenfeuchtgebiet mit Mangrovenwäldern, Vogelbeobachtung und malerischen Bootstouren.",
       "image": "/img/ext/be337e1e6a2e.webp",
-      "address": "Nansha District",
+      "address": "Nansha-Bezirk",
       "coordinates": {
         "lat": 22.7245,
         "lng": 113.5945
@@ -227,7 +227,7 @@
     {
       "id": "lingnan-impression",
       "name": "岭南印象园",
-      "nameEn": "Lingnan Impressions Park",
+      "nameEn": "Lingnan Impressionen Park",
       "category": "cultural",
       "description": "Kultureller Themenpark, der traditionelle Lingnan-Architektur, Essen und Handwerk nachbildet.",
       "image": "/img/ext/8e758db40e11.webp",
@@ -251,11 +251,11 @@
     {
       "id": "baomo-garden",
       "name": "宝墨园",
-      "nameEn": "Baomo Garden",
+      "nameEn": "Baomo Garten",
       "category": "cultural",
       "description": "Ein großer traditioneller chinesischer Garten mit antiker Architektur und Goldfischteich.",
       "image": "/img/ext/d7daf660f858.webp",
-      "address": "Zhongcun District, Panyu",
+      "address": "Bezirk Zhongcun, Panyu",
       "coordinates": {
         "lat": 22.9145,
         "lng": 113.3545
@@ -275,7 +275,7 @@
     {
       "id": "baishuizhai",
       "name": "白水寨风景区",
-      "nameEn": "Baishuizhai Scenic Area",
+      "nameEn": "Baishuizhai Landschaftsgebiet",
       "category": "natural",
       "description": "Berggebiet mit dem höchsten Wasserfall in Guangdong und malerischen Wanderwegen.",
       "image": "/img/ext/6f1fcc46e296.webp",
@@ -299,7 +299,7 @@
     {
       "id": "dafu-shan",
       "name": "大夫山森林公园",
-      "nameEn": "Dafu Mountain Forest Park",
+      "nameEn": "Dafu Bergwaldpark",
       "category": "natural",
       "description": "Großer urbaner Waldpark mit Radwegen, Seen und Picknickplätzen.",
       "image": "/img/ext/dd29bba1c50c.webp",
@@ -333,7 +333,7 @@
         "lng": 113.3185
       },
       "openingHours": "09:30-22:00",
-      "ticketPrice": "150¥ (normal), 228¥ (with all attractions)",
+      "ticketPrice": "150¥ (normal), 228¥ (mit allen Attraktionen)",
       "recommendedVisitTime": "2-3 Stunden",
       "highlights": [
         "488 m Aussichtsplattform im Freien",
@@ -347,7 +347,7 @@
     {
       "id": "chen-clan",
       "name": "陈家祠",
-      "nameEn": "Chen Clan Ancestral Hall",
+      "nameEn": "Chen-Clan-Ahnentempel",
       "category": "cultural",
       "description": "Ein sorgfältig erhaltenes traditionelles kantonesisches Gebäudeensemble mit kunstvollen Holzschnitzereien und Steinskulpturen.",
       "image": "/img/ext/d4a585959e2d.webp",
@@ -371,7 +371,7 @@
     {
       "id": "shamian",
       "name": "沙面",
-      "nameEn": "Shamian Island",
+      "nameEn": "Shamian-Insel",
       "category": "historical",
       "description": "Eine ehemalige ausländische Konzession mit wunderschöner europäischer Architektur, von Bäumen gesäumten Straßen und Gebäuden aus der Kolonialzeit.",
       "image": "/img/ext/66de44f1da6c.webp",
@@ -399,13 +399,13 @@
       "category": "natural",
       "description": "Ein Stadtpark mit Gipfeln, der Erholung vom städtischen Trubel und Panoramablicke auf Guangzhou bietet.",
       "image": "/img/ext/b40f23fbb2c9.webp",
-      "address": "Baiyun District",
+      "address": "Bezirk Baiyun",
       "coordinates": {
         "lat": 23.1865,
         "lng": 113.2745
       },
       "openingHours": "06:00-22:00",
-      "ticketPrice": "5¥ (park), 10¥ (peak area)",
+      "ticketPrice": "5¥ (Park), 10¥ (Gipfelbereich)",
       "recommendedVisitTime": "3-4 Stunden",
       "highlights": [
         "Moxing-Gipfel",
@@ -419,7 +419,7 @@
     {
       "id": "pearl-river",
       "name": "珠江夜游",
-      "nameEn": "Pearl River Night Cruise",
+      "nameEn": "Perlfluss-Nachtkreuzfahrt",
       "category": "cultural",
       "description": "Eine malerische Kreuzfahrt entlang des Perlflusses, die Guangzhous beleuchtete Skyline und historische Brücken zeigt.",
       "image": "/img/ext/257eb031478c.webp",
@@ -428,8 +428,8 @@
         "lat": 23.1185,
         "lng": 113.3245
       },
-      "openingHours": "19:00-22:00 (cruises)",
-      "ticketPrice": "68-138¥ depending on vessel",
+      "openingHours": "19:00-22:00 Uhr (Kreuzfahrten)",
+      "ticketPrice": "68-138¥ je nach Schiff",
       "recommendedVisitTime": "1-1,5 Stunden",
       "highlights": [
         "Canton Tower Beleuchtung",
@@ -477,13 +477,13 @@
         "lng": 113.3215
       },
       "openingHours": "09:00-21:00 (Führungen verfügbar)",
-      "ticketPrice": "Free (exterior), 30¥ (interior tour)",
+      "ticketPrice": "Kostenlos (Außenbereich), 30¥ (Innenbesichtigung)",
       "recommendedVisitTime": "1 Stunde",
       "highlights": [
         "Doppelkiesel-Design",
         "Perlfluss-Blick",
         "Weltklasse-Akustik",
-        "Café with river views"
+        "Café mit Flussblick"
       ],
       "tips": "Am besten nachts von der anderen Flussseite aus fotografieren. Buchen Sie eine Show für das volle Erlebnis. Kombinieren Sie mit dem Kanton-Turm.",
       "phone": "+86 020  3081 8213"
@@ -491,7 +491,7 @@
     {
       "id": "dongshan",
       "name": "东山口",
-      "nameEn": "Dongshan Area",
+      "nameEn": "Dongshan-Viertel",
       "category": "cultural",
       "description": "Historisches kantonesisches Viertel mit Villen im europäischen Stil, Kunstgalerien, trendigen Cafés und baumgesäumten Straßen.",
       "image": "/img/ext/8754decdd422.webp",
@@ -515,11 +515,11 @@
     {
       "id": "whale-island",
       "name": "海珠湿地公园",
-      "nameEn": "Haizhu Wetland Park",
+      "nameEn": "Haizhu-Feuchtgebietspark",
       "category": "natural",
       "description": "Ein wunderschöner Feuchtgebietspark im Herzen der Stadt mit Wasserkanälen, Lotusteichen und Möglichkeiten zur Vogelbeobachtung.",
       "image": "/img/ext/c22edec30882.webp",
-      "address": "Haizhu District",
+      "address": "Bezirk Haizhu",
       "coordinates": {
         "lat": 23.0635,
         "lng": 113.3135
@@ -539,7 +539,7 @@
     {
       "id": "huangpu-ancient",
       "name": "黄埔古港",
-      "nameEn": "Huangpu Ancient Harbor",
+      "nameEn": "Huangpu-Alter Hafen",
       "category": "historical",
       "description": "Der historische Ausgangspunkt der maritimen Seidenstraße Chinas, mit traditioneller Architektur und kantonesischen Essensständen.",
       "image": "/img/ext/2a5927658a02.webp",
@@ -563,7 +563,7 @@
     {
       "id": "yuexiu-park",
       "name": "越秀公园",
-      "nameEn": "Yuexiu Park",
+      "nameEn": "Yuexiu-Park",
       "category": "cultural",
       "description": "Guangzhous größter Park mit dem antiken Zhenhai-Turm, wunderschönen Gärten und der ikonischen Fünf-Ziegen-Statue.",
       "image": "/img/ext/3f82c6374b1a.webp",
@@ -587,7 +587,7 @@
     {
       "id": "nansha-star-sea",
       "name": "南沙天后宫",
-      "nameEn": "Nansha Tianhou Palace",
+      "nameEn": "Nansha-Tianhou-Palast",
       "category": "cultural",
       "description": "Ein prächtiger Mazu-Tempel am Meer mit traditioneller chinesischer Palastarchitektur und Meerblick.",
       "image": "/img/ext/fed98073cf57.webp",
@@ -669,7 +669,7 @@
         "lng": 113.2585
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "15¥ (included with temple)",
+      "ticketPrice": "15¥ (im Tempelpreis enthalten)",
       "recommendedVisitTime": "30 Minuten",
       "highlights": [
         "Neunstöckige Struktur",
@@ -683,7 +683,7 @@
     {
       "id": "guangzhou-library",
       "name": "广州图书馆",
-      "nameEn": "Guangzhou Library",
+      "nameEn": "Guangzhou Bibliothek",
       "category": "cultural",
       "description": "Eine moderne öffentliche Bibliothek mit umfangreichen Sammlungen, Lesesälen und kulturellen Veranstaltungen.",
       "image": "/img/ext/5edc4444be22.webp",
@@ -711,13 +711,13 @@
       "category": "cultural",
       "description": "Ein renoviertes Kanalsystem mit traditioneller Lingnan-Architektur, Bootsfahrten und Streetfood.",
       "image": "/img/ext/1fae54894d4d.webp",
-      "address": "Liwan District",
+      "address": "Bezirk Liwan",
       "coordinates": {
         "lat": 23.1195,
         "lng": 113.2525
       },
       "openingHours": "Rund um die Uhr geöffnet (Geschäfte variieren)",
-      "ticketPrice": "Free (boat rides extra)",
+      "ticketPrice": "Kostenlos (Bootsfahrten kosten extra)",
       "recommendedVisitTime": "2 Stunden",
       "highlights": [
         "Bootsfahrten",
@@ -731,7 +731,7 @@
     {
       "id": "gz-last1",
       "name": "广州塔摩天轮",
-      "nameEn": "Canton Tower Ferris Wheel",
+      "nameEn": "Canton Tower Riesenrad",
       "category": "landmark",
       "description": "Eines der höchsten Riesenräder der Welt.",
       "address": "Haizhu-Bezirk, Guangzhou",
@@ -740,7 +740,7 @@
         "lng": 113.32
       },
       "openingHours": "09:00-23:00",
-      "ticketPrice": "150 Yuan",
+      "ticketPrice": "150 Yuan.",
       "recommendedVisitTime": "1 Stunde",
       "highlights": [
         "Riesenrad",
@@ -753,7 +753,7 @@
     {
       "id": "gz-last2",
       "name": "沙面岛",
-      "nameEn": "Shamian Island",
+      "nameEn": "Shamian-Insel",
       "category": "street",
       "description": "Eine kleine Insel im Perlfluss mit zahlreichen europäischen Gebäuden.",
       "address": "Liwan-Bezirk, Guangzhou",
@@ -797,7 +797,7 @@
     {
       "id": "gz-last4",
       "name": "珠江夜游",
-      "nameEn": "Pearl River Night Cruise",
+      "nameEn": "Perlfluss-Nachtkreuzfahrt",
       "category": "landmark",
       "description": "Machen Sie eine Bootstour, um die Nachtansichten entlang beider Ufer des Perlflusses zu genießen.",
       "address": "Guangzhou",
@@ -863,7 +863,7 @@
     {
       "id": "gz-last7",
       "name": "光孝寺",
-      "nameEn": "Guangxiao Temple",
+      "nameEn": "Guangxiao Tempel",
       "category": "temple",
       "description": "Der älteste buddhistische Tempel in Guangzhou mit einer Geschichte von über 1.700 Jahren.",
       "address": "Bezirk Yuexiu, Guangzhou",
@@ -885,7 +885,7 @@
     {
       "id": "gz-last8",
       "name": "越秀公园",
-      "nameEn": "Yuexiu Park",
+      "nameEn": "Yuexiu-Park",
       "category": "park",
       "description": "Der größte Park in Guangzhou mit der Fünf-Widder-Statue.",
       "address": "Bezirk Yuexiu, Guangzhou",
@@ -907,7 +907,7 @@
     {
       "id": "gz-last9",
       "name": "长隆旅游度假区",
-      "nameEn": "Chimelong Tourist Resort",
+      "nameEn": "Chimelong Touristenresort",
       "category": "landmark",
       "description": "Einer der größten Themenparks in China.",
       "address": "Bezirk Panyu, Guangzhou",
@@ -929,7 +929,7 @@
     {
       "id": "gz-last10",
       "name": "广州美食",
-      "nameEn": "Guangzhou Food",
+      "nameEn": "Guangzhou Küche",
       "category": "street",
       "description": "Guangzhou ist Chinas kulinarische Hauptstadt, bekannt für Dim Sum und verschiedene kantonesische Gerichte.",
       "address": "Guangzhou",
@@ -952,7 +952,7 @@
     {
       "id": "gz-last11",
       "name": "天河商圈",
-      "nameEn": "Tianhe Commercial District",
+      "nameEn": "Tianhe Geschäftsviertel",
       "category": "street",
       "description": "Das belebteste Geschäftsviertel in Guangzhou.",
       "address": "Bezirk Tianhe, Guangzhou",
@@ -995,7 +995,7 @@
     {
       "id": "gz-last13",
       "name": "黄埔古港",
-      "nameEn": "Huangpu Ancient Port",
+      "nameEn": "Huangpu Alter Hafen",
       "category": "street",
       "description": "Der Ausgangspunkt der antiken maritimen Seidenstraße in Guangzhou.",
       "address": "Haizhu-Bezirk, Guangzhou",
@@ -1017,7 +1017,7 @@
     {
       "id": "gz-last14",
       "name": "广州美术馆",
-      "nameEn": "Guangzhou Art Museum",
+      "nameEn": "Kunstmuseum Guangzhou",
       "category": "museum",
       "description": "Präsentation chinesischer und ausländischer Kunstwerke.",
       "address": "Bezirk Yuexiu, Guangzhou",
@@ -1038,7 +1038,7 @@
     {
       "id": "gz-last15",
       "name": "广州夜景",
-      "nameEn": "Guangzhou Night View",
+      "nameEn": "Nachtansicht von Guangzhou",
       "category": "landmark",
       "description": "Die nächtliche Lichtshow am Zhujiang New Town und am Canton Tower.",
       "address": "Bezirk Tianhe, Guangzhou",
@@ -1060,7 +1060,7 @@
     {
       "id": "gz-last16",
       "name": "荔湾区",
-      "nameEn": "Liwan District",
+      "nameEn": "Bezirk Liwan",
       "category": "street",
       "description": "Guangzhous Altstadtgebiet mit Xiguan-Herrenhäusern und verschiedenen Snacks.",
       "address": "Bezirk Liwan, Guangzhou",
@@ -1082,7 +1082,7 @@
     {
       "id": "gz-last17",
       "name": "流花湖公园",
-      "nameEn": "Liuhua Park",
+      "nameEn": "Liuhua-Park",
       "category": "park",
       "description": "Einer der schönsten Parks Guangzhous mit Seen und Gärten.",
       "address": "Yuexiu-Bezirk, Guangzhou",
@@ -1104,7 +1104,7 @@
     {
       "id": "gz-last18",
       "name": "陈家祠",
-      "nameEn": "Chen Clan Ancestral Hall",
+      "nameEn": "Chen-Clan-Ahnentempel",
       "category": "temple",
       "description": "Der größte Ahnentempelkomplex in Guangdong mit exquisiten Holz- und Ziegelschnitzereien.",
       "address": "Liwan-Bezirk, Guangzhou",
@@ -1171,7 +1171,7 @@
     {
       "id": "gz-last21",
       "name": "广州大桥",
-      "nameEn": "Guangzhou Bridge",
+      "nameEn": "Guangzhou-Brücke",
       "category": "landmark",
       "description": "Brücken, die den Perlfluss überspannen.",
       "address": "Guangzhou",
@@ -1227,7 +1227,7 @@
     {
       "id": "guangzhou-new-2",
       "name": "南海渔村",
-      "nameEn": "Nanhai Fisherman's Village",
+      "nameEn": "Fischerdorf Nanhai",
       "type": "Schwarze Perle",
       "diamond": 1,
       "cuisine": "Kantonesische Meeresfrüchte",
@@ -1259,7 +1259,7 @@
     {
       "id": "guangzhou-new-3",
       "name": "山东老家",
-      "nameEn": "Shandong Old Home",
+      "nameEn": "Shandong-Heimat",
       "type": "lokal",
       "cuisine": "Shandong-Küche",
       "avgPrice": 80,
@@ -1272,9 +1272,9 @@
       "hours": "10:30-21:30",
       "description": "Beliebte Kette mit authentischer Shandong-Küche, hausgemachten Nudeln und Teigtaschen.",
       "dishHighlights": [
-        "Handmade noodles",
-        "Boiled dumplings",
-        "Stir-fried liver"
+        "Handgemachte Nudeln",
+        "Gekochte Teigtaschen",
+        "Gebratene Leber"
       ],
       "tags": [
         "Shandong",
@@ -1291,9 +1291,9 @@
     {
       "id": "guangzhou-new-4",
       "name": "表哥茶餐厅",
-      "nameEn": "Cousin Tea Restaurant",
+      "nameEn": "Cousin-Tee-Restaurant",
       "type": "lokal",
-      "cuisine": "Hong Kong style",
+      "cuisine": "Hongkong-Stil",
       "avgPrice": 60,
       "rating": 4.3,
       "address": "Mehrere Standorte in Tianhe",
@@ -1305,11 +1305,11 @@
       "description": "Beliebtes Hongkonger Cha Chaan Teng mit authentischen Hongkonger Frühstücksangeboten.",
       "dishHighlights": [
         "Ananasbrötchen mit Butter",
-        "Hong Kong milk tea",
-        "Egg sandwiches"
+        "Hongkong-Milchtee",
+        "Eiersandwiches"
       ],
       "tags": [
-        "hong-kong",
+        "Hongkong",
         "cha-chaan-teng",
         "Frühstück",
         "locker"
@@ -1323,9 +1323,9 @@
     {
       "id": "guangzhou-new-5",
       "name": "银记肠粉店",
-      "nameEn": "Yinji Rice Noodle Rolls",
+      "nameEn": "Yinji Reisnudelrollen",
       "type": "lokal",
-      "cuisine": "Cantonese dim sum",
+      "cuisine": "Kantonesisches Dim Sum",
       "avgPrice": 30,
       "rating": 4.5,
       "address": "Mehrere Standorte, darunter Beijing Rd und Tianhe",
@@ -1336,13 +1336,13 @@
       "hours": "06:30-13:30, 17:30-20:30",
       "description": "Legendäres Reissnudelrollen-Geschäft, gegründet 1958, berühmt für glatte und weiche Reissnudelrollen.",
       "dishHighlights": [
-        "Pork and egg rice rolls",
-        "Beef offal rice rolls",
-        "Shrimp rice rolls"
+        "Schweinefleisch- und Eier-Reisrollen",
+        "Rinderinnereien-Reisrollen",
+        "Garnelen-Reisrollen"
       ],
       "tags": [
         "lokal",
-        "rice-rolls",
+        "Reisrollen",
         "Frühstück",
         "historisch"
       ],
@@ -1355,9 +1355,9 @@
     {
       "id": "guangzhou-new-6",
       "name": "南信牛奶甜品专家",
-      "nameEn": "Nanxin Milk Dessert Expert",
+      "nameEn": "Nanxin Milchdessert-Experte",
       "type": "lokal",
-      "cuisine": "Cantonese dessert",
+      "cuisine": "Kantonesisches Dessert",
       "avgPrice": 25,
       "rating": 4.6,
       "address": "47 Shangxiajiu, Bezirk Liwan",
@@ -1368,8 +1368,8 @@
       "hours": "09:00-23:00",
       "description": "Berühmter Dessertladen seit 1934, spezialisiert auf traditionelle kantonesische Milchdesserts.",
       "dishHighlights": [
-        "Double skin milk",
-        "Ginger milk pudding",
+        "Doppelhäutige Milch",
+        "Ingwermilchpudding",
         "Schwarze Sesampaste"
       ],
       "tags": [
@@ -1389,7 +1389,7 @@
       "name": "致美斋",
       "nameEn": "Zhi Mei Zhai",
       "type": "lokal",
-      "cuisine": "Cantonese roast meat",
+      "cuisine": "Kantonesisches Bratfleisch",
       "avgPrice": 70,
       "rating": 4.4,
       "address": "68 Disheng Rd, Bezirk Yuexiu",
@@ -1400,14 +1400,14 @@
       "hours": "10:00-21:30",
       "description": "Berühmt für kantonesische Bratgerichte, darunter Char Siu, Ente und Sojahuhn.",
       "dishHighlights": [
-        "Char siu rice bowl",
-        "Roasted duck",
+        "Char-Siu-Reisschale",
+        "Gebratene Ente",
         "Huhn in Sojasauce"
       ],
       "tags": [
         "lokal",
-        "roast-meat",
-        "rice-bowl",
+        "Bratenfleisch",
+        "Reisschale",
         "schnell"
       ],
       "star": 0,
@@ -1434,13 +1434,13 @@
       "description": "Historisches kantonesisches Restaurant, gegründet 1938, berühmt für Morgentee und Bankettgerichte.",
       "dishHighlights": [
         "Gedämpfte Garnelendumplings",
-        "Crispy chicken",
-        "Bird's nest soup"
+        "Knuspriges Hühnchen",
+        "Schwalbennestersuppe"
       ],
       "tags": [
         "historisch",
         "kantonesisch",
-        "morning-tea",
+        "Morgen-Tee",
         "Dim Sum"
       ],
       "star": 0,
@@ -1453,7 +1453,7 @@
       "name": "雅苑餐厅",
       "nameEn": "Ya Yuan Restaurant",
       "type": "lokal",
-      "cuisine": "Cantonese home cooking",
+      "cuisine": "Kantonesische Hausmannskost",
       "avgPrice": 120,
       "rating": 4.7,
       "address": "28 Taojiang Rd, Bezirk Yuexiu",
@@ -1467,12 +1467,12 @@
       "dishHighlights": [
         "Gedämpfter Fisch",
         "Geschmorte Schweinebauch",
-        "Black bean clams"
+        "Venusmuscheln mit schwarzen Bohnen"
       ],
       "tags": [
         "lokal",
-        "home-cooking",
-        "hidden-gem",
+        "hausgemachte Küche",
+        "Geheimtipp",
         "authentisch"
       ],
       "star": 0,
@@ -1483,10 +1483,10 @@
     {
       "id": "guangzhou-new-10",
       "name": "海门鱼仔店",
-      "nameEn": "Hai Men Fish Shop",
+      "nameEn": "Hai Men Fischladen",
       "type": "Schwarze Perle",
       "diamond": 1,
-      "cuisine": "Chaozhou seafood",
+      "cuisine": "Meeresfrüchte nach Chaozhou-Art",
       "avgPrice": 150,
       "rating": 4.6,
       "address": "Mehrere Standorte",
@@ -1498,13 +1498,13 @@
       "hours": "11:00-14:00, 17:00-21:30",
       "description": "Ein-Diamant-Schwarze Perle, spezialisiert auf frische Meeresfrüchte im Chaozhou-Stil.",
       "dishHighlights": [
-        "Raw fish slices",
-        "Steamed grouper",
-        "Oyster omelette"
+        "Rohe Fischscheiben",
+        "Gedämpfter Zackenbarsch",
+        "Austernomelett"
       ],
       "tags": [
         "Schwarze Perle",
-        "chaozhou",
+        "Chaozhou",
         "Meeresfrüchte",
         "frisch"
       ],
@@ -1515,7 +1515,7 @@
     {
       "id": "guangzhou-new-11",
       "name": "荔湾名食家",
-      "nameEn": "Liwan Famous Food House",
+      "nameEn": "Liwan Berühmtes Speisehaus",
       "type": "lokal",
       "cuisine": "Kantonesisch",
       "avgPrice": 80,
@@ -1530,12 +1530,12 @@
       "dishHighlights": [
         "Rinderinnereien",
         "Reisrollen",
-        "Egg tarts"
+        "Eiertörtchen"
       ],
       "tags": [
         "lokal",
         "historisch",
-        "liwan",
+        "Liwan",
         "traditionell"
       ],
       "star": 0,
@@ -1561,9 +1561,9 @@
       "hours": "11:00-14:30, 17:00-22:00",
       "description": "Beliebt für späte Dim Sum und authentische kantonesische Mitternachtsmahlzeiten.",
       "dishHighlights": [
-        "Midnight dim sum",
-        "Steamed vermicelli",
-        "Phoenix claws"
+        "Mitternachts-Dim-Sum",
+        "Gedämpfte Reisnudeln",
+        "Phönixkrallen"
       ],
       "tags": [
         "lokal",
@@ -1594,9 +1594,9 @@
       "hours": "11:00-15:00, 18:00-22:00",
       "description": "Feine kantonesische Küche mit zwei Michelin-Sternen, außergewöhnliche Dim Sum und anspruchsvolles Ambiente.",
       "dishHighlights": [
-        "Braised goose web",
-        "Steamed grouper",
-        "Crispy chicken"
+        "Geschmorte Gänsefüße",
+        "Gedämpfter Zackenbarsch",
+        "Knuspriges Hühnchen"
       ],
       "tags": [
         "Feinschmecker-Restaurant",
@@ -1610,7 +1610,7 @@
     {
       "id": "guangzhou-2",
       "name": "江- by Chef Fei",
-      "nameEn": "Jiang - by Chef Fei",
+      "nameEn": "Jiang - von Küchenchef Fei",
       "type": "Michelin",
       "star": 2,
       "cuisine": "Kantonesisch",
@@ -1625,13 +1625,13 @@
       "hours": "11:30-14:30, 18:00-21:30",
       "description": "Zwei-Sterne-Michelin-Restaurant von Starkoch Fei mit innovativer Interpretation klassischer kantonesischer Gerichte.",
       "dishHighlights": [
-        "Braised fish maw",
-        "Steamed razor clam",
-        "Squirrel fish"
+        "Geschmorte Fischblase",
+        "Gedämpfte Messermuscheln",
+        "Eichhörnchenfisch"
       ],
       "tags": [
         "Feinschmecker-Restaurant",
-        "chef-table",
+        "Chef's Table",
         "innovativ"
       ],
       "diamond": 0,
@@ -1654,9 +1654,9 @@
       },
       "description": "Zwei Diamanten Black Pearl mit legendärem Dim Sum und konstanter Qualität über Jahrzehnte.",
       "dishHighlights": [
-        "Baked pork ribs",
+        "Gebackene Schweinerippchen",
         "Gedämpfte Jakobsmuschel-Dumplings",
-        "Egg tarts"
+        "Eiertörtchen"
       ],
       "tags": [
         "kantonesisch",
@@ -1685,8 +1685,8 @@
       "description": "Legendäres kantonesisches Restaurant, gegründet 1880, berühmt für Dim Sum und traditionelle Gerichte.",
       "dishHighlights": [
         "Gedämpfte Garnelendumplings",
-        "Phoenix claws",
-        "Cantonese congee"
+        "Phönixkrallen",
+        "Kantonesischer Reisbrei"
       ],
       "tags": [
         "lokal",
@@ -1705,7 +1705,7 @@
       "name": "点都德",
       "nameEn": "Dim Sum Do",
       "type": "lokal",
-      "cuisine": "Cantonese dim sum",
+      "cuisine": "Kantonesisches Dim Sum",
       "avgPrice": 80,
       "rating": 4.4,
       "address": "Mehrere Standorte in der gesamten Stadt",
@@ -1715,9 +1715,9 @@
       },
       "description": "Beliebte Kette, die authentische Dim Sum in modernem Ambiente serviert.",
       "dishHighlights": [
-        "Prawn dumplings",
-        "Char siu bao",
-        "Cheung fun"
+        "Garnelenknödel",
+        "Char Siu Bao (gefüllte Brötchen)",
+        "Cheung Fun (Reisnudelrollen)"
       ],
       "tags": [
         "lokal",
@@ -1734,7 +1734,7 @@
     {
       "id": "guangzhou-6",
       "name": "白天鹅宾馆",
-      "nameEn": "White Swan Hotel",
+      "nameEn": "White-Swan-Hotel",
       "type": "Schwarze Perle",
       "diamond": 2,
       "cuisine": "Kantonesisch",
@@ -1749,14 +1749,14 @@
       "hours": "06:30-10:30, 11:30-14:30, 18:00-22:00",
       "description": "Zwei Diamanten Black Pearl in historischem Hotel, serviert kantonesische Dim Sum mit Blick auf die Insel Shamian.",
       "dishHighlights": [
-        "Shrimp dumplings",
-        "Crispy lobster",
-        "Sweet and sour pork"
+        "Garnelendim Sum",
+        "Knuspriger Hummer",
+        "Süß-saures Schweinefleisch"
       ],
       "tags": [
         "Schwarze Perle",
         "kantonesisch",
-        "historic-hotel",
+        "historisches Hotel",
         "Dim Sum"
       ],
       "star": 0,
@@ -1779,7 +1779,7 @@
       "hours": "07:00-22:00",
       "description": "Legendäre kantonesische Teestube, gegründet 1889, berühmt für Mondkuchen und Dim Sum.",
       "dishHighlights": [
-        "Steamed spare ribs",
+        "Gedämpfte Spareribs",
         "Mondkuchen mit Lotossamenpaste",
         "Reisrollen"
       ],
@@ -1814,7 +1814,7 @@
       "description": "Ein Diamant Black Pearl, bekannt für Tontopf-Gerichte und qualitativ hochwertige frische Speisen.",
       "dishHighlights": [
         "Fisch im Tontopf",
-        "Steamed grouper",
+        "Gedämpfter Zackenbarsch",
         "Kantonesische Heißtöpfe"
       ],
       "tags": [
@@ -1832,7 +1832,7 @@
       "name": "虾饺妹",
       "nameEn": "Xia Jiao Mei",
       "type": "lokal",
-      "cuisine": "Cantonese dim sum",
+      "cuisine": "Kantonesisches Dim Sum",
       "avgPrice": 70,
       "rating": 4.5,
       "address": "Mehrere Standorte im Tianhe-Bezirk",
@@ -1862,7 +1862,7 @@
     {
       "id": "guangzhou-10",
       "name": "广州酒家",
-      "nameEn": "Guangzhou Restaurant",
+      "nameEn": "Guangzhou-Restaurant",
       "type": "lokal",
       "cuisine": "Kantonesisch",
       "avgPrice": 90,
@@ -1878,7 +1878,7 @@
       "dishHighlights": [
         "Char siu (gegrilltes Schweinefleisch)",
         "Gedämpfter Fisch",
-        "Egg tarts"
+        "Eiertörtchen"
       ],
       "tags": [
         "lokal",
@@ -1896,7 +1896,7 @@
       "name": "莲记糖水铺",
       "nameEn": "Lian Ji Süßsuppenladen",
       "type": "lokal",
-      "cuisine": "Cantonese dessert",
+      "cuisine": "Kantonesisches Dessert",
       "avgPrice": 20,
       "rating": 4.5,
       "address": "Dongshan-Gebiet, Bezirk Yuexiu",
@@ -1907,7 +1907,7 @@
       "hours": "11:00-23:00",
       "description": "Beliebter lokaler Dessertladen mit traditionellen kantonesischen süßen Suppen und Puddings.",
       "dishHighlights": [
-        "Red bean soup",
+        "Rote-Bohnen-Suppe",
         "Grasgelee",
         "Tofu-Pudding"
       ],
@@ -1926,12 +1926,12 @@
     {
       "id": "guangzhou-new-14",
       "name": "港点王",
-      "nameEn": "Hong Kong Dim Sum King",
+      "nameEn": "Hong-Kong-Dim-Sum-King",
       "type": "lokal",
-      "cuisine": "Hong Kong dim sum",
+      "cuisine": "Hongkong-Dim-Sum",
       "avgPrice": 60,
       "rating": 4.4,
-      "address": "Tianhe District",
+      "address": "Tianhe-Bezirk",
       "coordinates": {
         "lat": 23.1325,
         "lng": 113.3385
@@ -1939,14 +1939,14 @@
       "hours": "07:00-15:00, 17:30-22:00",
       "description": "Beliebt für authentisches Hongkonger Morgen-Teefrühstück mit frischen Dim Sum.",
       "dishHighlights": [
-        "Egg tarts",
-        "Char siu bao",
-        "Turnip cake"
+        "Eiertörtchen",
+        "Char Siu Bao (gefüllte Brötchen)",
+        "Rettichkuchen"
       ],
       "tags": [
         "lokal",
         "Dim Sum",
-        "morning-tea",
+        "Morgen-Tee",
         "beliebt"
       ],
       "star": 0,
@@ -1958,7 +1958,7 @@
     {
       "id": "guangzhou-new-15",
       "name": "陈添记鱼皮",
-      "nameEn": "Chen Tian Ji Fish Skin",
+      "nameEn": "Chen-Tian-Ji-Fischhaut",
       "type": "lokal",
       "cuisine": "Kantonesisch",
       "avgPrice": 25,
@@ -1971,13 +1971,13 @@
       "hours": "09:00-21:00",
       "description": "Legendäres Geschäft, berühmt für Fischhaut mit spezieller Soße, ein kantonesisches Muss.",
       "dishHighlights": [
-        "Fish skin with sauce",
-        "Beef offal rice rolls",
+        "Fischhaut mit Sauce",
+        "Rinderinnereien-Reisrollen",
         "Sojamilch"
       ],
       "tags": [
         "lokal",
-        "snack",
+        "Snack",
         "historisch",
         "berühmt"
       ],
@@ -1990,12 +1990,12 @@
     {
       "id": "guangzhou-new-16",
       "name": "榕记港式茶餐厅",
-      "nameEn": "Yong Ji Hong Kong Restaurant",
+      "nameEn": "Yong-Ji-Hong-Kong-Restaurant",
       "type": "lokal",
-      "cuisine": "Hong Kong style",
+      "cuisine": "Hongkong-Stil",
       "avgPrice": 50,
       "rating": 4.3,
-      "address": "Haizhu District",
+      "address": "Bezirk Haizhu",
       "coordinates": {
         "lat": 23.0995,
         "lng": 113.2585
@@ -2003,13 +2003,13 @@
       "hours": "08:00-22:00",
       "description": "Ungezwungenes Hongkonger Restaurant, beliebt für Frühstück und Nachmittagstee.",
       "dishHighlights": [
-        "Pineapple bun",
-        "Hong Kong style noodles",
+        "Ananasbrötchen",
+        "Nudeln nach Hongkong-Art",
         "Milchtee"
       ],
       "tags": [
         "lokal",
-        "hong-kong",
+        "Hongkong",
         "locker",
         "Frühstück"
       ],
@@ -2022,12 +2022,12 @@
     {
       "id": "guangzhou-new-17",
       "name": "点心皇子",
-      "nameEn": "Dim Sum Prince",
+      "nameEn": "Dim-Sum-Prinz",
       "type": "lokal",
-      "cuisine": "Cantonese dim sum",
+      "cuisine": "Kantonesisches Dim Sum",
       "avgPrice": 75,
       "rating": 4.5,
-      "address": "Baiyun District",
+      "address": "Bezirk Baiyun",
       "coordinates": {
         "lat": 23.1785,
         "lng": 113.2645
@@ -2035,9 +2035,9 @@
       "hours": "10:00-15:00, 17:30-22:00",
       "description": "Beliebtes Dim-Sum-Restaurant mit frisch zubereiteten Gerichten und traditioneller kantonesischer Atmosphäre.",
       "dishHighlights": [
-        "Shrimp dumplings",
-        "Crispy rice rolls",
-        "Egg custards"
+        "Garnelendim Sum",
+        "Knusprige Reisröllchen",
+        "Eierpudding"
       ],
       "tags": [
         "lokal",
@@ -2054,12 +2054,12 @@
     {
       "id": "guangzhou-new-18",
       "name": "潮汕鱼粥",
-      "nameEn": "Chaoshan Fish Porridge",
+      "nameEn": "Chaoshan-Fischbrei",
       "type": "lokal",
       "cuisine": "Chaoshan",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Liwan District",
+      "address": "Bezirk Liwan",
       "coordinates": {
         "lat": 23.1215,
         "lng": 113.2515
@@ -2067,13 +2067,13 @@
       "hours": "10:00-22:00",
       "description": "Beliebt für authentische Chaoshan-Fischgerichte und Congee.",
       "dishHighlights": [
-        "Fresh fish congee",
-        "Steamed fish slices",
-        "Tofu with fish"
+        "Frischer Fisch-Congee",
+        "Gedämpfte Fischscheiben",
+        "Tofu mit Fisch"
       ],
       "tags": [
         "lokal",
-        "chaoshan",
+        "Chaoshan",
         "Meeresfrüchte",
         "gesund"
       ],
@@ -2088,10 +2088,10 @@
       "name": "广州味道",
       "nameEn": "Guangzhou Flavor",
       "type": "lokal",
-      "cuisine": "Cantonese home cooking",
+      "cuisine": "Kantonesische Hausmannskost",
       "avgPrice": 95,
       "rating": 4.5,
-      "address": "Yuexiu District",
+      "address": "Yuexiu-Bezirk",
       "coordinates": {
         "lat": 23.1355,
         "lng": 113.2795
@@ -2100,12 +2100,12 @@
       "description": "Restaurant, das sich auf traditionelle kantonesische Hausmannskost spezialisiert hat.",
       "dishHighlights": [
         "Gedämpftes Hühnchen",
-        "Braised pork trotters",
-        "Bok choy with garlic"
+        "Geschmorte Schweinshaxe",
+        "Pak Choi mit Knoblauch"
       ],
       "tags": [
         "lokal",
-        "home-cooking",
+        "hausgemachte Küche",
         "traditionell",
         "authentisch"
       ],
@@ -2123,7 +2123,7 @@
       "cuisine": "Kantonesisch",
       "avgPrice": 110,
       "rating": 4.4,
-      "address": "Tianhe District",
+      "address": "Tianhe-Bezirk",
       "coordinates": {
         "lat": 23.1385,
         "lng": 113.3265
@@ -2132,8 +2132,8 @@
       "description": "Beliebtes kantonesisches Restaurant mit einer großen Auswahl an klassischen kantonesischen Gerichten.",
       "dishHighlights": [
         "Gedämpfter Fisch",
-        "Roast pork",
-        "Buddha jumps over wall"
+        "Schweinebraten",
+        "Buddha springt über die Mauer"
       ],
       "tags": [
         "lokal",
@@ -2150,12 +2150,12 @@
     {
       "id": "guangzhou-new-21",
       "name": "澳门街",
-      "nameEn": "Macau Street",
+      "nameEn": "Macau-Straße",
       "type": "lokal",
-      "cuisine": "Macau/Portuguese",
+      "cuisine": "Macau/portugiesisch",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "Tianhe District",
+      "address": "Tianhe-Bezirk",
       "coordinates": {
         "lat": 23.1275,
         "lng": 113.3295
@@ -2163,15 +2163,15 @@
       "hours": "11:00-22:00",
       "description": "Restaurant mit Macau-Küche mit portugiesischem Einfluss.",
       "dishHighlights": [
-        "African chicken",
-        "Portuguese egg tarts",
-        "Seafood curry"
+        "Afrikanisches Huhn",
+        "Portugiesische Eiertörtchen",
+        "Meeresfrüchte-Curry"
       ],
       "tags": [
         "lokal",
-        "macau",
-        "portuguese",
-        "fusion"
+        "Macau",
+        "portugiesisch",
+        "Fusion"
       ],
       "star": 0,
       "diamond": 0,
@@ -2182,9 +2182,9 @@
     {
       "id": "guangzhou-new-22",
       "name": "顺记糖水",
-      "nameEn": "Shun Ji Sweet Soup",
+      "nameEn": "Shun Ji Süßsuppe",
       "type": "lokal",
-      "cuisine": "Cantonese dessert",
+      "cuisine": "Kantonesisches Dessert",
       "avgPrice": 22,
       "rating": 4.6,
       "address": "Shamian-Insel, Bezirk Liwan",
@@ -2195,14 +2195,14 @@
       "hours": "10:00-22:00",
       "description": "Berühmter Dessertladen in der Nähe der Insel Shamian mit traditionellen kantonesischen Süßspeisen.",
       "dishHighlights": [
-        "Mango pomelo sago",
-        "Black sesame soup",
-        "Red bean ice"
+        "Mango-Pomelo-Sago",
+        "Schwarze-Sesam-Suppe",
+        "Rote-Bohnen-Eis"
       ],
       "tags": [
         "lokal",
         "Nachspeise",
-        "shamian",
+        "Shamian",
         "beliebt"
       ],
       "star": 0,
@@ -2760,7 +2760,7 @@
         "to": "Internationaler Flughafen Guangzhou Baiyun (CAN)",
         "duration": "Variiert (10-13 Stunden aus Europa/Amerika)",
         "price": "1000-7000¥",
-        "frequency": "Multiple daily flights",
+        "frequency": "Mehrere tägliche Flüge",
         "tips": "Zweitgrößter Flughafen Chinas. U-Bahn-Linie 3 verbindet mit dem Stadtzentrum. Hochgeschwindigkeitsbahnstation in der Nähe."
       },
       {
@@ -2769,7 +2769,7 @@
         "to": "Bahnhof Guangzhou Süd / Bahnhof Guangzhou",
         "duration": "35 Min. bis 8 Std., je nach Abfahrtsort",
         "price": "150-900¥",
-        "frequency": "Frequent departures",
+        "frequency": "Häufige Abfahrten",
         "tips": "Hochgeschwindigkeitsbahn sehr bequem. Guangzhou Süd ist für Hochgeschwindigkeitszüge, Guangzhou für konventionelle Züge."
       }
     ],
@@ -2787,14 +2787,14 @@
       ],
       "taxi": [
         "Grundpreis: 10¥ (erste 2,5 km)",
-        "Waiting: 0.4¥ per minute",
+        "Wartezeit: 0,4 ¥ pro Minute",
         "Didi-App in Guangzhou vollständig englischfreundlich",
         "Elektrotaxis werden immer häufiger"
       ],
       "bike": [
         "Hellobike, Mobike verfügbar",
         "Entsperren: 1¥, dann 0,15¥ pro 15 Minuten",
-        "Bike lanes improving",
+        "Fahrradwege werden verbessert",
         "E-Bikes erfordern eine lokale Registrierung"
       ]
     }
@@ -2816,7 +2816,7 @@
         "Blick auf den Canton Tower",
         "Premium-Service"
       ],
-      "bookingTips": "Request tower-view rooms. Very popular for special occasions."
+      "bookingTips": "Bitte um Zimmer mit Turmblick. Sehr beliebt für besondere Anlässe."
     },
     {
       "name": "Guangzhou Shangri-La Hotel",
@@ -2834,7 +2834,7 @@
         "Großer Pool und Spa",
         "Zentrale Lage"
       ],
-      "bookingTips": "Riverside rooms worth the extra cost."
+      "bookingTips": "Zimmer am Fluss sind den Aufpreis wert."
     },
     {
       "name": "Guangzhou Yuehai Sheraton Hotel",
@@ -2852,7 +2852,7 @@
         "Zuverlässige Marke",
         "Gutes Frühstück"
       ],
-      "bookingTips": "Weekend rates often lower."
+      "bookingTips": "Wochenendtarife sind oft günstiger."
     },
     {
       "name": "Guangzhou Hilton DoubleTree Hotel",
@@ -2870,7 +2870,7 @@
         "Konstante Qualität",
         "Gutes Preis-Leistungs-Verhältnis"
       ],
-      "bookingTips": "Book directly for best rates."
+      "bookingTips": "Buchen Sie direkt für die besten Preise."
     },
     {
       "name": "Weißer Schwan Hotel Guangzhou",
@@ -2888,7 +2888,7 @@
         "Bestes Dim Sum in Guangzhou",
         "Kulturelles Erbe"
       ],
-      "bookingTips": "Request rooms with river views. Famous for breakfast dim sum."
+      "bookingTips": "Bitten Sie um Zimmer mit Flussblick. Berühmt für Dim Sum zum Frühstück."
     },
     {
       "name": "Guangzhou Marriott Hotel",
@@ -2906,7 +2906,7 @@
         "Moderne Einrichtungen",
         "Zentrale Lage"
       ],
-      "bookingTips": "Best river-view rooms on higher floors."
+      "bookingTips": "Die besten Zimmer mit Flussblick befinden sich in den oberen Stockwerken."
     },
     {
       "name": "Guangzhou Taikoo Hui Hyatt Regency",
@@ -2924,7 +2924,7 @@
         "Modernes Design",
         "Ausgezeichnetes Frühstück"
       ],
-      "bookingTips": "Request rooms away from street for quiet."
+      "bookingTips": "Bitten Sie um Zimmer abseits der Straße für Ruhe."
     },
     {
       "name": "China Hotel Guangzhou",
@@ -2942,7 +2942,7 @@
         "Gute Verkehrsanbindung",
         "Zuverlässige Marke"
       ],
-      "bookingTips": "Weekend rates often lower."
+      "bookingTips": "Wochenendtarife sind oft günstiger."
     },
     {
       "name": "Garden Hotel Guangzhou",
@@ -2960,7 +2960,7 @@
         "Historischer Luxus",
         "Mehrere gastronomische Angebote"
       ],
-      "bookingTips": "Best for business travelers."
+      "bookingTips": "Am besten für Geschäftsreisende geeignet."
     },
     {
       "name": "Mandarin Oriental Guangzhou",
@@ -2978,7 +2978,7 @@
         "Restaurant mit Michelin-Stern",
         "Privater Club-Lounge"
       ],
-      "bookingTips": "Suite upgrades worth considering for special occasions."
+      "bookingTips": "Suite-Upgrades lohnen sich für besondere Anlässe."
     },
     {
       "name": "The Ritz-Carlton, Guangzhou",
@@ -2996,7 +2996,7 @@
         "Premium-Spa",
         "Executive Lounge"
       ],
-      "bookingTips": "Club level rooms include excellent breakfast."
+      "bookingTips": "Club-Etagenzimmer beinhalten ein ausgezeichnetes Frühstück."
     },
     {
       "name": "Guangzhou Yuehai Westin Hotel",
@@ -3014,7 +3014,7 @@
         "Zentrale Lage",
         "Gute Geschäftseinrichtungen"
       ],
-      "bookingTips": "Heavenly beds popular for good sleep."
+      "bookingTips": "Himmlische Betten, beliebt für guten Schlaf."
     },
     {
       "name": "Guangzhou Hilton Hotel",
@@ -3032,7 +3032,7 @@
         "Zuverlässige Markenstandards",
         "Gutes Frühstück"
       ],
-      "bookingTips": "HHonors members get better rates."
+      "bookingTips": "HHonors-Mitglieder erhalten bessere Tarife."
     },
     {
       "name": "Guangzhou Jianguo Hotel",
@@ -3050,7 +3050,7 @@
         "Gutes Preis-Leistungs-Verhältnis",
         "Zentrale Lage"
       ],
-      "bookingTips": "Best location for sightseeing."
+      "bookingTips": "Beste Lage für Sightseeing."
     },
     {
       "name": "Pullman Guangzhou Baiyun Airport",
@@ -3068,7 +3068,7 @@
         "Kostenloser Flughafen-Shuttle",
         "Gut für Zwischenstopps"
       ],
-      "bookingTips": "Perfect for early flights or late arrivals."
+      "bookingTips": "Perfekt für frühe Flüge oder späte Ankünfte."
     },
     {
       "name": "Guangzhou Atour Hotel",
@@ -3086,14 +3086,14 @@
         "Hochwertige Bettwäsche",
         "Modernes Design"
       ],
-      "bookingTips": "Good value for quality conscious travelers."
+      "bookingTips": "Gutes Preis-Leistungs-Verhältnis für qualitätsbewusste Reisende."
     },
     {
       "name": "Guangzhou Home Inn",
       "nameEn": "Home Inn Guangzhou",
       "budget": "budget",
       "priceRange": "¥180-350/night",
-      "address": "Multiple locations",
+      "address": "Mehrere Standorte",
       "coordinates": {
         "lat": 23.1265,
         "lng": 113.2845
@@ -3104,14 +3104,14 @@
         "Konstante Qualität",
         "Gute Lagen"
       ],
-      "bookingTips": "Best for very budget travelers."
+      "bookingTips": "Am besten für Reisende mit sehr kleinem Budget."
     },
     {
       "name": "Guangzhou JI Hotel",
       "nameEn": "Jiji Hotel Guangzhou",
       "budget": "budget",
       "priceRange": "¥250-450/night",
-      "address": "Multiple locations",
+      "address": "Mehrere Standorte",
       "coordinates": {
         "lat": 23.1295,
         "lng": 113.2895
@@ -3122,7 +3122,7 @@
         "Moderne Zimmer",
         "Gutes Preis-Leistungs-Verhältnis"
       ],
-      "bookingTips": "Good balance of price and quality."
+      "bookingTips": "Gutes Preis-Leistungs-Verhältnis."
     }
   ],
   "payment": [
@@ -3131,9 +3131,9 @@
       "icon": "alipay",
       "description": "Dominante Zahlungsmethode in Guangzhou, überall akzeptiert",
       "howToUse": [
-        "Download before arrival",
-        "Bind international card",
-        "QR code payment"
+        "Vor der Ankunft herunterladen",
+        "Internationale Karte binden",
+        "QR-Code-Zahlung"
       ],
       "tips": [
         "Guangzhou ist modern – ausländische Karten funktionieren an vielen Orten",
@@ -3146,9 +3146,9 @@
       "icon": "wechat",
       "description": "Unverzichtbar für lokale Transaktionen",
       "howToUse": [
-        "WeChat app required",
+        "WeChat-App erforderlich",
         "Karte in den App-Einstellungen verknüpfen",
-        "QR scan payment"
+        "QR-Code-Zahlung"
       ],
       "tips": [
         "Didi-Taxi erfordert WeChat",
@@ -3160,7 +3160,7 @@
       "icon": "cash",
       "description": "Immer noch nützlich für traditionelle Märkte und kleine Händler",
       "howToUse": [
-        "ATMs widely available",
+        "Geldautomaten sind weit verbreitet",
         "Halten Sie 100-200¥ kleine Scheine bereit"
       ],
       "tips": [
@@ -3172,7 +3172,7 @@
   "culturalTips": [
     {
       "category": "cantonese",
-      "title": "Cantonese Language Culture",
+      "title": "Kantonesische Sprachkultur",
       "content": "Kantonesisch (Guangdonghua/Yueyu) ist ein lokaler Dialekt mit neun Tönen und unterscheidet sich stark vom Hochchinesischen. Wenn Besucher grundlegende Sätze wie „Nei Hou“ (Hallo) oder „M Goi“ (Danke) versuchen, schätzen die Einheimischen das. Viele Ladenschilder sind in traditionellen chinesischen Schriftzeichen.",
       "importance": "high"
     },
@@ -3184,13 +3184,13 @@
     },
     {
       "category": "food",
-      "title": "Cantonese Food Culture",
+      "title": "Kantonesische Esskultur",
       "content": "Guangzhou ist die Geburtsstadt von Dim Sum. Probieren Sie die Morgentee (yum cha) Kultur - es ist ein soziales Ritual. Frische und leichte Aromen werden geschätzt.",
       "importance": "high"
     },
     {
       "category": "dining-etiquette",
-      "title": "Cantonese Dining Etiquette",
+      "title": "Kantonesische Tischsitten",
       "content": "Beim Essen in Guangzhou: Stecken Sie nie Essstäbchen vertikal in Reis (Beerdigungstradition), lassen Sie etwas Essen auf dem Teller um Sättigung zu zeigen, drehen Sie Fisch um wenn Sie das Fischgericht beenden, tippen Sie drei Finger um dem Kellner zu danken.",
       "importance": "medium"
     },
@@ -3202,97 +3202,97 @@
     },
     {
       "category": "hot-spring",
-      "title": "Hot Spring Bathing Culture",
+      "title": "Kultur des Thermalbads",
       "content": "Die Conghua-Heißquellen sind ein beliebtes Wochenendziel zur Erholung. Einheimische glauben, dass die Thermalquellen gesundheitsfördernd sind. Etikette: Vor dem Baden duschen, ausreichend Flüssigkeit zu sich nehmen und jede Sitzung auf 15–20 Minuten begrenzen.",
       "importance": "low"
     },
     {
       "category": "festival",
-      "title": "Cantonese New Year Traditions",
+      "title": "Kantonesische Neujahrstraditionen",
       "content": "Guangzhou hat eine einzigartige Tradition: den Blumenmarkt (Nianxiao-Blumenmarkt), ein Familienessen mit Abalone und Gans, das Verteilen von roten Umschlägen mit neuen Geldscheinen (Lai See) und das Anschauen von Feuerwerk in der Litschi-Stadt.",
       "importance": "medium"
     },
     {
       "category": "bargaining",
-      "title": "Market Bargaining Culture",
+      "title": "Verhandlungskultur auf dem Markt",
       "content": "Auf traditionellen Märkten (Shangxiajiu, Sanlin Road) ist Feilschen üblich. Beginnen Sie mit 30–40 % des ersten genannten Preises und einigen Sie sich auf einen Mittelwert. Lächeln Sie immer und zeigen Sie Respekt – es ist ein sozialer Austausch, kein Kampf.",
       "importance": "medium"
     },
     {
       "category": "tea-history",
-      "title": "Cantonese Tea History",
+      "title": "Geschichte des kantonesischen Tees",
       "content": "Guangzhou war der erste chinesische Hafen, der im 18. Jahrhundert Tee mit Großbritannien handelte. Der Begriff „Canton-Tee",
       "importance": "medium"
     },
     {
       "category": "architecture",
-      "title": "Lingnan Architecture",
+      "title": "Lingnan-Architektur",
       "content": "Die Lingnan-Architektur ist ein einzigartiger Stil in der Provinz Guangdong, der chinesische und westliche Einflüsse vereint. Sehenswürdigkeiten: Fenstergitter (Tanglong-Türen), dekorative Sichtschutzwände (Zhaobi) und europäische Kolonialelemente wie in Shamian.",
       "importance": "medium"
     },
     {
       "category": "superstitions",
-      "title": "Cantonese Superstitions",
+      "title": "Kantonesischer Aberglaube",
       "content": "Häufige Aberglauben: Kaufen Sie keine Uhren als Geschenk (klingt wie 'Tod'), die Zahl 4 gilt als Unglückszahl, hängen Sie Spiegel nach außen, um Unglück abzuwenden, Rot bringt besonders während Festen und Neujahr Glück.",
       "importance": "low"
     },
     {
       "category": "foot-massage",
-      "title": "Foot Massage Culture",
+      "title": "Fußmassage-Kultur",
       "content": "In Guangzhou gibt es viele Fußmassage-Geschäfte (Muzu). Es ist eine legale Entspannungsmethode, die von Einheimischen aller Altersgruppen genossen wird. Eine typische Sitzung dauert 60 bis 90 Minuten und kostet 50 bis 150 Yuan. Nach der Arbeit ist sie sehr beliebt.",
       "importance": "low"
     },
     {
       "category": "dim-sum-history",
-      "title": "History of Dim Sum",
+      "title": "Geschichte des Dim Sum",
       "content": "Dim Sum (Dianxin) bedeutet wörtlich „das Herz berühren“ und bezeichnet kleine Gerichte, die zum Teilen gedacht sind. Es entstand in den Teehäusern von Guangzhou entlang der Seidenstraße. Zu den ursprünglichen Gerichten gehörten in Lotusblätter gewickelter Reis und Garnelenknödel.",
       "importance": "medium"
     },
     {
       "category": "language",
-      "title": "Cantonese vs Mandarin",
+      "title": "Kantonesisch vs. Mandarin",
       "content": "Die Einheimischen in Guangzhou sprechen von Geburt an Kantonesisch (Kotonese), aber auch Mandarin wird verstanden. Englisch wird hier häufiger gesprochen als in nördlichen Städten.",
       "importance": "medium"
     },
     {
       "category": "weather",
-      "title": "Humid Weather Adaptation",
+      "title": "Anpassung an feuchtes Wetter",
       "content": "Guangzhou ist das ganze Jahr über sehr humid. Bleiben Sie hydriert, benutzen Sie Sonnenschutz und gewöhnen Sie sich an die Wärme.",
       "importance": "medium"
     },
     {
       "category": "dining",
-      "title": "Cantonese Breakfast",
+      "title": "Kantonesisches Frühstück",
       "content": "Die Einheimischen in Guangzhou genießen das Morgen-Tee-Ritual (Zaocha) als gesellschaftliches Ereignis. Kommen Sie gegen 9 bis 10 Uhr in ein Dim-Sum-Restaurant. Es ist normal, mehr als zwei Stunden mit mehreren Gerichten wie Knödeln, Baozi und Reisrollen zu verbringen.",
       "importance": "medium"
     },
     {
       "category": "seafood",
-      "title": "Seafood Dining Culture",
+      "title": "Esskultur der Meeresfrüchte",
       "content": "Die Nähe von Guangzhou zum Meer bedeutet, dass frischer Fisch und Meeresfrüchte zur Grundnahrung gehören. Lebende Fische und Schalentiere sind üblich, und „Qingzheng“ (Dämpfen) ist die bevorzugte Zubereitungsart, um den natürlichen Geschmack zu erhalten.",
       "importance": "medium"
     },
     {
       "category": "silk-road",
-      "title": "Maritime Silk Road Heritage",
+      "title": "Erbe der maritimen Seidenstraße",
       "content": "Guangzhou war der Ausgangspunkt der maritimen Seidenstraße. Am alten Hafen von Huangpu (Huangpu Gangu) handelten chinesische Kaufleute erstmals mit Ausländern, was das einzigartige multikulturelle Erbe der Stadt prägte.",
       "importance": "medium"
     },
     {
       "category": "dragon-boat",
-      "title": "Dragon Boat Festival Traditions",
+      "title": "Traditionen des Drachenbootfestes",
       "content": "Guangzhou nimmt Drachenbootrennen ernst. Das Tuangong-Fest bietet aufwendige Rennen entlang des Perlflusses. Probieren Sie Zongzi (Klebreisklößchen) während dieser Saison.",
       "importance": "low"
     },
     {
       "category": "fashion",
-      "title": "Cantonese Fashion Culture",
+      "title": "Kantonesische Modewelt",
       "content": "Guangzhou ist ein bedeutendes Zentrum der Textil- und Bekleidungsherstellung. In der Gegend von Shangxiajiu gibt es Geschäfte, die chinesische Kleider (Qipao) und traditionelle kantonesische Kleidung verkaufen. Das Einkaufen hier ist ein Erlebnis für sich, nicht nur eine Transaktion.",
       "importance": "low"
     },
     {
       "category": "night-market",
-      "title": "Night Market Culture",
+      "title": "Nachtmarktkultur",
       "content": "Nachtmärkte sind in Guangzhou beliebt. Probieren Sie Streetfood wie Stinky Tofu, Austernsauce-Kuchen und gegrillten Tintenfisch. Suchen Sie nach Märkten in der Nähe der Beijing Road und Shangxiajiu.",
       "importance": "medium"
     }

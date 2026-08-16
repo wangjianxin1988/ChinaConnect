@@ -3,13 +3,13 @@
   "name": "深圳",
   "nameEn": "Shenzhen",
   "country": "China",
-  "population": "17.56 million",
+  "population": "17,56 Millionen",
   "coordinates": {
     "lat": 22.5431,
     "lng": 114.0579
   },
-  "timezone": "UTC+8 (China Standard Time)",
-  "description": "Shenzhen is China's first Special Economic Zone and a global tech hub. A modern megacity that transformed from a fishing village to one of the world's fastest-growing cities in just 40 years. Home to tech giants like Tencent, Huawei, and BYD. Features innovative architecture, theme parks, and easy access to Hong Kong.",
+  "timezone": "UTC+8 (Chinesische Standardzeit)",
+  "description": "Shenzhen ist Chinas erste Sonderwirtschaftszone und ein globales Technologiezentrum. Eine moderne Megastadt, die sich in nur 40 Jahren von einem Fischerdorf zu einer der am schnellsten wachsenden Städte der Welt entwickelt hat. Heimat von Technologiegiganten wie Tencent, Huawei und BYD. Bietet innovative Architektur, Themenparks und eine einfache Anbindung an Hongkong.",
   "coverImage": "/img/ext/aafc56ced0ba.webp",
   "highlights": [
     "Window of the World - Globale Wahrzeichen",
@@ -19,23 +19,23 @@
     "Mizuki Piazza - Einkaufszentrum am Meer"
   ],
   "climate": {
-    "type": "Subtropical monsoon",
+    "type": "Subtropischer Monsun",
     "bestMonths": [
       "November",
-      "December",
-      "January",
-      "February",
-      "March"
+      "Dezember",
+      "Januar",
+      "Februar",
+      "März"
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "15C (59F)",
-    "tips": "Best visited in winter (Nov-Feb) when weather is mild and pleasant. Summer is hot, humid with frequent typhoons. Spring is rainy. Always bring sunscreen and hydration."
+    "tips": "Am besten im Winter (November bis Februar) besuchen, wenn das Wetter mild und angenehm ist. Der Sommer ist heiß, feucht und von häufigen Taifunen geprägt. Der Frühling ist regnerisch. Immer Sonnenschutz und ausreichend Flüssigkeit mitbringen."
   },
   "attractions": [
     {
       "id": "window-of-the-world",
       "name": "世界之窗",
-      "nameEn": "Window of the World",
+      "nameEn": "Fenster der Welt",
       "category": "theme-park",
       "image": "/img/ext/2e8c60dd6a1c.webp",
       "description": "Themenpark mit Miniatur-Nachbildungen berühmter Wahrzeichen der Welt, darunter Eiffelturm, Pyramiden und Taj Mahal.",
@@ -107,7 +107,7 @@
     {
       "id": "shenzhen-bay",
       "name": "深圳湾公园",
-      "nameEn": "Shenzhen Bay Park",
+      "nameEn": "Shenzhen-Bucht-Park",
       "category": "natural",
       "image": "/img/ext/0df1b413372e.webp",
       "description": "Küstenpark entlang der Shenzhen Bay mit malerischer Uferpromenade, Mangroven, Vogelbeobachtung und Blick auf das Skyline von Hongkong.",
@@ -189,7 +189,7 @@
         "lng": 114.0572
       },
       "openingHours": "09:00-21:00",
-      "ticketPrice": "180¥ (observation deck)",
+      "ticketPrice": "180¥ (Aussichtsplattform)",
       "recommendedVisitTime": "1-2 Stunden",
       "highlights": [
         "540 m Höhe",
@@ -251,7 +251,7 @@
     {
       "id": "dameisha",
       "name": "大梅沙海滨公园",
-      "nameEn": "Dameisha Beach Park",
+      "nameEn": "Dameisha-Strandpark",
       "category": "beach",
       "image": "/img/ext/c09fcbe63c84.webp",
       "description": "Beliebter Sandstrand mit klarem Wasser und malerischer Küste. Öffentlicher Strand mit Einrichtungen und freiem Eintritt.",
@@ -299,7 +299,7 @@
     {
       "id": "dutch-flower-town",
       "name": "荷兰花卉小镇",
-      "nameEn": "Dutch Flower Town",
+      "nameEn": "Niederländische Blumenstadt",
       "category": "cultural",
       "image": "/img/ext/e02098d7b0b7.webp",
       "description": "Europäischer Blumenmarkt mit niederländischer Architektur, Blumenläden und Cafés. Freier Eintritt.",
@@ -323,7 +323,7 @@
     {
       "id": "ganjia-ancient-town",
       "name": "甘坑古镇",
-      "nameEn": "Ganjia Ancient Town",
+      "nameEn": "Ganjia-Alstadt",
       "category": "cultural",
       "image": "/img/ext/c55fad2a4f53.webp",
       "description": "Historisches Hakka-Dorf mit traditioneller Architektur, Museen und lokalen Spezialitäten. Abendausleuchtung spektakulär.",
@@ -347,7 +347,7 @@
     {
       "id": "guanlan-art-village",
       "name": "观澜版画村",
-      "nameEn": "Guanlan Original Art Village",
+      "nameEn": "Guanlan-Dorf der Originalkunst",
       "category": "cultural",
       "image": "/img/ext/d9e1e34b36a1.webp",
       "description": "Traditionelles Hakka-Dorf, das sich zu einer Künstlerkolonie entwickelt hat. Bekannt für Druckgrafik und traditionelle Architektur.",
@@ -395,7 +395,7 @@
     {
       "id": "jiaochangwei-beach",
       "name": "较场尾海滩",
-      "nameEn": "Jiaochangwei Beach",
+      "nameEn": "Jiaochangwei-Strand",
       "category": "beach",
       "image": "/img/ext/3714e583a5df.webp",
       "description": "Beliebtes Strandziel, bekannt für Surfen, Strandbars und bunte Strandhäuschen.",
@@ -406,7 +406,7 @@
       },
       "openingHours": "24 Stunden geöffnet",
       "ticketPrice": "Kostenlos",
-      "recommendedVisitTime": "Half-day to full day",
+      "recommendedVisitTime": "Halber bis ganzer Tag",
       "highlights": [
         "Surfschulen",
         "Strandbars",
@@ -429,7 +429,7 @@
         "lng": 114.0672
       },
       "openingHours": "07:00-19:00",
-      "ticketPrice": "800-2000¥ per round",
+      "ticketPrice": "800-2000¥ pro Runde",
       "recommendedVisitTime": "4-5 Stunden",
       "highlights": [
         "12 Signature-Plätze",
@@ -443,7 +443,7 @@
     {
       "id": "shenzhen-museum",
       "name": "深圳博物馆",
-      "nameEn": "Shenzhen Museum",
+      "nameEn": "Shenzhen-Museum",
       "category": "museum",
       "image": "/img/ext/86833e2da2b5.webp",
       "description": "Modernes Museum, das Shenzhens Geschichte vom Fischerdorf zur Megastadt zeigt. Freier Eintritt.",
@@ -467,7 +467,7 @@
     {
       "id": "chunjee-festival",
       "name": "春 节",
-      "nameEn": "Chinese New Year in Shenzhen",
+      "nameEn": "Chinesisches Neujahr in Shenzhen",
       "category": "festival",
       "image": "/img/ext/01a0a5da577a.webp",
       "description": "Große stadtweite Feierlichkeiten zum chinesischen Neujahr mit Blumen, Lichtern und kulturellen Veranstaltungen.",
@@ -476,12 +476,12 @@
         "lat": 22.5431,
         "lng": 114.0579
       },
-      "openingHours": "Varies by event",
-      "ticketPrice": "Varies",
-      "recommendedVisitTime": "1-3 days",
+      "openingHours": "Je nach Veranstaltung unterschiedlich",
+      "ticketPrice": "Variiert",
+      "recommendedVisitTime": "1-3 Tage",
       "highlights": [
         "Blumenschau am Lianhua-Hügel",
-        "Happy Valley¥ events",
+        "Happy Valley-Veranstaltungen",
         "Kulturelle Aufführungen",
         "Lichterfeste"
       ],
@@ -491,7 +491,7 @@
     {
       "id": "shenzhen-20",
       "name": "大梅沙海滨公园",
-      "nameEn": " Dameisha Coastal Park",
+      "nameEn": "Dameisha-Küstenpark",
       "category": "natural",
       "image": "/img/ext/2197d082103b.webp",
       "description": "Beliebter Küstenpark mit Sandstrand und Freizeiteinrichtungen.",
@@ -514,7 +514,7 @@
     {
       "id": "lianhua-mountain",
       "name": "莲花山公园",
-      "nameEn": "Lianhua Mountain Park",
+      "nameEn": "Lianhua-Bergpark",
       "category": "park",
       "description": "Ein markanter Park im Stadtzentrum von Shenzhen mit einer Bronzestatue von Deng Xiaoping auf dem Gipfel. Der Aufstieg bietet einen Panoramablick auf die Skyline des Shenzhen CBD und das Bürgerzentrum. Ein beliebter Ort für Freizeitaktivitäten der Einheimischen und für Touristen.",
       "address": "Hongli-Straße 6030, Bezirk Futian, Shenzhen",
@@ -538,7 +538,7 @@
     {
       "id": "dongmen-pedestrian-street",
       "name": "东门步行街",
-      "nameEn": "Dongmen Pedestrian Street",
+      "nameEn": "Dongmen-Fußgängerstraße",
       "category": "street",
       "description": "Das älteste Geschäftsviertel in Shenzhen mit einer Geschichte von über 300 Jahren. Heute ist es ein Einkaufsparadies für junge Leute, das verschiedene trendige Kleidung, Snacks und Unterhaltungsmöglichkeiten bietet, mit extrem hohem Fußgängeraufkommen.",
       "address": "Mittlere Dongmen-Straße, Bezirk Luohu, Shenzhen",
@@ -562,7 +562,7 @@
     {
       "id": "huaqiangbei",
       "name": "华强北",
-      "nameEn": "Huaqiangbei Electronics Market",
+      "nameEn": "Huaqiangbei-Elektronikmarkt",
       "category": "market",
       "description": "Das größte Vertriebszentrum für elektronische Produkte der Welt, bekannt als 'Chinas erste Elektronikstraße'. Hier finden Sie verschiedene elektronische Produkte, Komponenten und digitales Zubehör – ein Paradies für Technikbegeisterte.",
       "address": "Nord-Huaqiang-Straße, Bezirk Futian, Shenzhen",
@@ -586,7 +586,7 @@
     {
       "id": "nantou-ancient-city",
       "name": "南头古城",
-      "nameEn": "Nantou Ancient City",
+      "nameEn": "Nantou-Altstadt",
       "category": "street",
       "description": "Die älteste Stadt in Shenzhen mit einer Geschichte von über 1.700 Jahren. Nach der Renovierung verbindet sie traditionelle Lingnan-Architektur mit modernen Kultur- und Kreativräumen und verkörpert die Verschmelzung von Shenzhens Geschichte und Moderne.",
       "address": "Nantou-Alte Stadt, Bezirk Nanshan, Shenzhen",
@@ -610,7 +610,7 @@
     {
       "id": "shenzhen-library",
       "name": "深圳图书馆",
-      "nameEn": "Shenzhen Library",
+      "nameEn": "Shenzhen-Bibliothek",
       "category": "museum",
       "description": "Eine moderne Bibliothek im Zentrum von Shenzhen mit avantgardistischem Architekturdesign und einer reichen Buchsammlung. Sie ist der Hauptveranstaltungsort für Shenzhens Lesemonat-Aktivitäten und ein kultureller Raum für Bürger zum Lernen und Entspannen.",
       "address": "Fuzhong 1. Straße 2001, Bezirk Futian, Shenzhen",
@@ -634,7 +634,7 @@
     {
       "id": "shenzhen-concert-hall",
       "name": "深圳音乐厅",
-      "nameEn": "Shenzhen Concert Hall",
+      "nameEn": "Shenzhen-Konzerthalle",
       "category": "landmark",
       "description": "Eine moderne Konzerthalle, entworfen vom japanischen Architekten Arata Isozaki, mit einer einzigartigen architektonischen Form wie eine goldene Halle. Sie ist der Hauptveranstaltungsort für große Sinfonie- und Konzertveranstaltungen in Shenzhen.",
       "address": "Fuzhong 1. Straße 2016, Bezirk Futian, Shenzhen",
@@ -658,7 +658,7 @@
     {
       "id": "shenzhen-civic-center",
       "name": "深圳市民中心",
-      "nameEn": "Shenzhen Civic Center",
+      "nameEn": "Shenzhen-Bürgerzentrum",
       "category": "landmark",
       "description": "Sitz der Stadtregierung von Shenzhen, mit einer Architektur, die an einen riesigen Pinguin erinnert, der seine Flügel ausbreitet – eines der Wahrzeichen von Shenzhen. Der Platz ist weitläufig und dient als Veranstaltungsort für große Events und öffentliche Freizeitaktivitäten.",
       "address": "Fuzhong Straße 3, Bezirk Futian, Shenzhen",
@@ -682,7 +682,7 @@
     {
       "id": "shenzhen-bay-bridge",
       "name": "深圳湾大桥",
-      "nameEn": "Shenzhen Bay Bridge",
+      "nameEn": "Shenzhen-Bay-Brücke",
       "category": "landmark",
       "description": "Eine Meeresbrücke, die Shenzhen und Hongkong verbindet, mit einer Gesamtlänge von 5,5 Kilometern. Vom Shenzhen Bay Park aus hat man einen Panoramablick auf die Brücke, und sie ist ein wichtiger Übergang zwischen Shenzhen und Hongkong.",
       "address": "Shenzhen Bay, Bezirk Nanshan, Shenzhen",
@@ -706,7 +706,7 @@
     {
       "id": "xianhu-botanical-garden",
       "name": "仙湖植物园",
-      "nameEn": "Fairy Lake Botanical Garden",
+      "nameEn": "Feensee-Botanischer Garten",
       "category": "nature",
       "description": "Der größte botanische Garten in Shenzhen, mit einer Fläche von 546 Hektar. Er bietet Attraktionen wie den Hongfa-Tempel, den Fossilienwald und den Xianhu-See und vereint Pflanzenforschung, Wissenschaftsbildung sowie Tourismus und Erholung.",
       "address": "Nr. 160 Xianhu-Straße, Liantang, Bezirk Luohu, Shenzhen",
@@ -778,7 +778,7 @@
     {
       "id": "shenzhen-wetland-park",
       "name": "深圳红树林海滨生态公园",
-      "nameEn": "Mangrove Seaside Ecological Park",
+      "nameEn": "Mangroven-Meeresökologie-Park",
       "category": "nature",
       "description": "Ein Mangrovenreservat an der Shenzhen Bay, einer der wichtigsten ökologischen Grünflächen in Shenzhen. Jedes Jahr leben hier zahlreiche Zugvögel, was es zu einem großartigen Ort für Vogelbeobachtung und Naturerlebnisse macht.",
       "address": "An der Shenzhen Bay, Bezirk Futian, Shenzhen",
@@ -826,7 +826,7 @@
     {
       "id": "shenzhen-museum-of-art",
       "name": "关山月美术馆",
-      "nameEn": "Guan Shanyue Art Museum",
+      "nameEn": "Guan-Shanyue-Kunstmuseum",
       "category": "museum",
       "description": "Ein Kunstmuseum, benannt nach dem berühmten chinesischen Maler Guan Shanyue, das seine Werke und zeitgenössische chinesische Gemälde beherbergt und ausstellt. Es ist ein wichtiger Ort für Kunstausstellungen in Shenzhen.",
       "address": "Hongli Road Nr. 6026, Bezirk Futian, Shenzhen",
@@ -874,7 +874,7 @@
     {
       "id": "shenzhen-nanshan-district",
       "name": "蛇口海上世界文化艺术中心",
-      "nameEn": "Sea World Culture and Arts Center",
+      "nameEn": "Sea World Kultur- und Kunstzentrum",
       "category": "museum",
       "description": "Entworfen vom japanischen Architekten Fumihiko Maki, beherbergt dieses kulturelle und künstlerische Zentrum am Meer regelmäßig verschiedene Kunstausstellungen und kulturelle Veranstaltungen. Das Gebäude selbst ist ein Kunstwerk und liegt dem Meer zugewandt.",
       "address": "Wanghai Road 1187, Bezirk Nanshan, Shenzhen",
@@ -922,7 +922,7 @@
     {
       "id": "shenzhen-bijiashan-park",
       "name": "笔架山公园",
-      "nameEn": "Bijiashan Park",
+      "nameEn": "Bijiashan-Park",
       "category": "park",
       "description": "Ein Stadtpark im Bezirk Futian, Shenzhen, benannt nach seiner Bergform, die einem Schreibgeräteständer ähnelt. Er verfügt über Wanderwege, Aussichtsplattformen und Sporteinrichtungen und ist ein großartiger Ort für morgendliche Bewegung und Wochenendfreizeit.",
       "address": "Meigang Straße, Bezirk Futian, Shenzhen",
@@ -946,7 +946,7 @@
     {
       "id": "shenzhen-lychee-park",
       "name": "荔枝公园",
-      "nameEn": "Lizhi Park",
+      "nameEn": "Lizhi-Park",
       "category": "park",
       "description": "Einer der ältesten Parks in Shenzhen, benannt nach seinen Litschibäumen. Mit Seen, Bergen, Pavillons und Türmen ist er eine Oase in der geschäftigen Stadt.",
       "address": "Hongling Middle Road 1001, Bezirk Futian, Shenzhen",
@@ -970,7 +970,7 @@
     {
       "id": "shenzhen-shuanglong-park",
       "name": "大南山公园",
-      "nameEn": "Dananshan Park",
+      "nameEn": "Dananshan-Park",
       "category": "nature",
       "description": "Ein Stadtbergpark im Bezirk Nanshan, mit einer Höhe von 336 Metern. Vom Gipfel aus kann man die Bucht von Shenzhen, den Hafen von Shekou und Yuen Long in Hongkong überblicken – einer der besten Aussichtspunkte in Shenzhen.",
       "address": "Nanshan Allee, Bezirk Nanshan, Shenzhen",
@@ -1018,7 +1018,7 @@
     {
       "id": "shenzhen-hakka-museum",
       "name": "深圳客家民俗博物馆",
-      "nameEn": "Shenzhen Hakka Folk Museum",
+      "nameEn": "Shenzhen-Hakka-Volkskundemuseum",
       "category": "museum",
       "description": "Ein Themenmuseum, das die Hakka-Kultur und Geschichte von Shenzhen zeigt, gelegen in der Hehu New Residence, Bezirk Longgang. Die Hehu New Residence ist eines der größten Hakka-Umwallungshäuser in China mit prächtiger Architektur.",
       "address": "Nanlian Community, Longgang Street, Bezirk Longgang, Shenzhen",
@@ -1042,7 +1042,7 @@
     {
       "id": "shenzhen-dapeng-bay",
       "name": "大鹏半岛国家地质公园",
-      "nameEn": "Dapeng Peninsula National Geopark",
+      "nameEn": "Nationaler Geopark der Dapeng-Halbinsel",
       "category": "nature",
       "description": "Ein nationaler Geopark mit vulkanischen Gesteinsformationen und geologischen Küstenlandschaften. Er bietet geologische Wunder wie Meereshöhlen und vulkanische Säulen und ist ein seltenes Naturjuwel in Shenzhen.",
       "address": "Dapeng-Halbinsel, Dapeng New District, Shenzhen",
@@ -1066,7 +1066,7 @@
     {
       "id": "shenzhen-lychee-beach",
       "name": "西涌海滩",
-      "nameEn": "Xichong Beach",
+      "nameEn": "Xichong-Strand",
       "category": "beach",
       "description": "Der längste und schönste Strand in Shenzhen, etwa 4 Kilometer lang. Mit feinem Sand und klarem Wasser ist er als die Malediven von Shenzhen bekannt. Er ist das beste Badeziel in Shenzhen.",
       "address": "Xichong, Nanao-Straße, Bezirk Dapeng, Shenzhen",
@@ -1090,7 +1090,7 @@
     {
       "id": "shenzhen-dongchong-beach",
       "name": "东涌海滩",
-      "nameEn": "Dongchong Beach",
+      "nameEn": "Dongchong-Strand",
       "category": "beach",
       "description": "Ein unberührter Strand auf der Dapeng-Halbinsel, ruhiger und ursprünglicher als Xichong. Das Wasser ist kristallklar und zum Schnorcheln und Schwimmen geeignet. Es ist ein Geheimtipp-Strand für Einheimische in Shenzhen.",
       "address": "Dongchong, Nanao-Straße, Bezirk Dapeng, Shenzhen",
@@ -1138,7 +1138,7 @@
     {
       "id": "shenzhen-talent-park",
       "name": "人才公园",
-      "nameEn": "Talent Park",
+      "nameEn": "Talent-Park",
       "category": "park",
       "description": "Ein Park am Meer an der Shenzhen Bay, thematisch um 'Talent' gestaltet. Er bietet beliebte Fotospots wie die Sternbrücke und die Pi-Brücke und ist ein neues Freizeitziel in Shenzhen.",
       "address": "Shahe West Road, Bezirk Nanshan, Shenzhen",
@@ -1210,7 +1210,7 @@
     {
       "id": "shenzhen-buji-ceramics-town",
       "name": "大芬油画村美术馆",
-      "nameEn": "Dafen Oil Painting Village Art Museum",
+      "nameEn": "Dafen-Ölgemäldedorf-Kunstmuseum",
       "category": "museum",
       "description": "Ein professionelles Kunstmuseum im Dorf Dafen, das den Wandel von der Ölgemälde-Reproduktion zur Originalkunst zeigt. Es beherbergt eine große Sammlung originaler Ölgemälde und dient als wichtiges Fenster zur künstlerischen Entwicklung des Dorfes Dafen.",
       "address": "Dorf Dafen, Bezirk Longgang, Shenzhen",
@@ -1236,7 +1236,7 @@
     {
       "id": "shenzhen-1",
       "name": "利苑酒家",
-      "nameEn": "Lei Garden",
+      "nameEn": "Lei-Garten",
       "type": "Michelin",
       "star": 2,
       "cuisine": "Kantonesisch",
@@ -1253,7 +1253,7 @@
       "dishHighlights": [
         "Gedämpfte Garnelendumplings",
         "Geschmorter Abalone",
-        "Roasted suckling pig"
+        "Spanferkel"
       ],
       "tags": [
         "Feinschmecker-Restaurant",
@@ -1283,8 +1283,8 @@
       "description": "Black-Pearl-Restaurant mit zwei Diamanten, spezialisiert auf authentische kantonesische Küche in eleganter Atmosphäre.",
       "dishHighlights": [
         "Gedämpfter Fisch",
-        "White salted chicken",
-        "Bird's nest dessert"
+        "Gewürztes Hühnchen in weißer Sauce",
+        "Schwalbennest-Dessert"
       ],
       "tags": [
         "kantonesisch",
@@ -1299,7 +1299,7 @@
       "name": "润园四季椰子鸡",
       "nameEn": "Run Yuan Si Ji Coconut Chicken",
       "type": "lokal",
-      "cuisine": "Hainanese/Cantonese",
+      "cuisine": "Hainanesisch/Kantonesisch",
       "avgPrice": 150,
       "rating": 4.8,
       "address": "Nanshan-Bezirk (mehrere Standorte)",
@@ -1311,13 +1311,13 @@
       "hours": "11:00-22:00",
       "description": "Bekannt für zartes Kokosnuss-Hühnchen-Hotpot, ein Favorit der Einheimischen für gesundes und köstliches Essen.",
       "dishHighlights": [
-        "Coconut chicken",
+        "Kokosnuss-Hühnchen",
         "Frisches Gemüse",
-        "Taro balls"
+        "Taro-Bällchen"
       ],
       "tags": [
         "lokal",
-        "Hotpot",
+        "Feuertopf",
         "gesund",
         "familienfreundlich"
       ],
@@ -1341,14 +1341,14 @@
       "hours": "17:00-03:00",
       "description": "Beliebter Ort für späte Abende mit dickem kantonesischem Reisbrei und frischen Meeresfrüchtegerichten.",
       "dishHighlights": [
-        "Seafood congee",
-        "Steamed scallops",
+        "Meeresfrüchte-Reisbrei",
+        "Gedämpfte Jakobsmuscheln",
         "Frittierte Teigstangen"
       ],
       "tags": [
         "lokal",
         "spätabends",
-        "congee",
+        "Reisbrei",
         "Meeresfrüchte"
       ],
       "star": 0,
@@ -1359,9 +1359,9 @@
     {
       "id": "shenzhen-5",
       "name": "华强北小吃街",
-      "nameEn": "Huaqiangbei Snack Street",
+      "nameEn": "Huaqiangbei-Snackstraße",
       "type": "lokal",
-      "cuisine": "Various Chinese",
+      "cuisine": "Verschiedene chinesische Gerichte",
       "avgPrice": 50,
       "rating": 4.3,
       "address": "Huaqiangbei Road, Futian-Bezirk",
@@ -1373,8 +1373,8 @@
       "description": "Lebendiges Straßenfood-Gebiet in der Nähe des Elektronikmarktes mit einer Vielzahl lokaler Snacks und schneller Küche.",
       "dishHighlights": [
         "Gegrillte Spieße",
-        "Stir-fried noodles",
-        "Bubble tea"
+        "Gebratene Nudeln",
+        "Bubble Tea"
       ],
       "tags": [
         "lokal",
@@ -1393,7 +1393,7 @@
       "nameEn": "Chua Lam Dim Sum",
       "type": "Michelin",
       "star": 1,
-      "cuisine": "Cantonese Dim Sum",
+      "cuisine": "Kantonesische Dim Sum",
       "avgPrice": 200,
       "rating": 4.6,
       "address": "Einkaufszentrum MixC, Kouan-Straße, Luohu",
@@ -1406,13 +1406,13 @@
       "description": "Mit einem Michelin-Stern ausgezeichnetes Dim Sum von Starkoch Chua Lam. Moderne Präsentation mit traditionellen Aromen.",
       "dishHighlights": [
         "Kristallgarnelen-Dumplings",
-        "Baked char siu buns",
-        "Pan-fried noodles"
+        "Gebackene Char-Siu-Brötchen",
+        "Gebratene Nudeln"
       ],
       "tags": [
         "Feinschmecker-Restaurant",
         "Dim Sum",
-        "celebrity-chef"
+        "Promi-Koch"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/e2987486c5c3.webp"
@@ -1434,13 +1434,13 @@
       "hours": "11:00-14:30, 17:00-21:30",
       "description": "Bekannt für salzgebackene Gans und traditionelle Chaozhou-Gerichte. Bei Einheimischen beliebt mit fairen Preisen.",
       "dishHighlights": [
-        "Salt-baked goose",
-        "Goose meatballs",
-        "Preserved vegetables"
+        "Salzgebackene Gans",
+        "Gänsefleischbällchen",
+        "Eingelegtes Gemüse"
       ],
       "tags": [
         "lokal",
-        "chaozhou",
+        "Chaozhou",
         "Spezialität",
         "preiswert"
       ],
@@ -1451,9 +1451,9 @@
     {
       "id": "shenzhen-8",
       "name": "探鱼",
-      "nameEn": "Tan Yu (Fish Grilled)",
+      "nameEn": "Tan Yu (gegrillter Fisch)",
       "type": "lokal",
-      "cuisine": "Sichuan/Guangdong Fusion",
+      "cuisine": "Sichuan-Kantonesische Fusion",
       "avgPrice": 100,
       "rating": 4.5,
       "address": "COCO Park, Fuhua-Straße, Futian",
@@ -1466,7 +1466,7 @@
       "dishHighlights": [
         "Gegrillter Fisch mit Frühlingszwiebeln",
         "Dan Dan Nudeln",
-        "Chengdu style skewers"
+        "Chengdu-Spieße"
       ],
       "tags": [
         "lokal",
@@ -1484,7 +1484,7 @@
       "name": "点都德",
       "nameEn": "Dian Dou De",
       "type": "lokal",
-      "cuisine": "Cantonese Dim Sum",
+      "cuisine": "Kantonesische Dim Sum",
       "avgPrice": 80,
       "rating": 4.6,
       "address": "Verschiedene Standorte, darunter Dongmen und Futian",
@@ -1497,7 +1497,7 @@
       "description": "Beliebte Dim-Sum-Kette, bekannt für traditionelle Rezepte und durchgehend geöffnet. Ideal für Frühstück und Brunch.",
       "dishHighlights": [
         "Schweinefleisch-Shu-Mai",
-        "Egg tarts",
+        "Eiertörtchen",
         "Frühlingsrollen",
         "Reisbrei"
       ],
@@ -1531,8 +1531,8 @@
       "dishHighlights": [
         "Gedämpfte Spareribs",
         "Gebackene Krabbenpanzer",
-        "Phoenix claws",
-        "Bird's nest soup"
+        "Phönixkrallen",
+        "Schwalbennestersuppe"
       ],
       "tags": [
         "kantonesisch",
@@ -1546,7 +1546,7 @@
     {
       "id": "shenzhen-11",
       "name": "广州酒家",
-      "nameEn": "Guangzhou Restaurant",
+      "nameEn": "Guangzhou-Restaurant",
       "type": "lokal",
       "cuisine": "Kantonesisch",
       "avgPrice": 120,
@@ -1560,9 +1560,9 @@
       "description": "Berühmte Kette für Kantonesische Küche und Yum Cha. Bekannt für Mondkuchen und Festtagsspezialitäten.",
       "dishHighlights": [
         "Dim Sum Korb",
-        "Roast duck",
+        "Ente braten",
         "Gedämpfter Fisch",
-        "Moon cakes"
+        "Mondkuchen"
       ],
       "tags": [
         "kantonesisch",
@@ -1594,7 +1594,7 @@
       "dishHighlights": [
         "Geschmorte Haiflosse",
         "Gedämpfter Krebs",
-        "Roasted suckling pig",
+        "Spanferkel",
         "Vogelnest"
       ],
       "tags": [
@@ -1631,7 +1631,7 @@
         "Chaozhou-Nudeln"
       ],
       "tags": [
-        "chaozhou",
+        "Chaozhou",
         "Feinschmecker-Restaurant",
         "Meeresfrüchte",
         "elegant"
@@ -1655,10 +1655,10 @@
       "hours": "07:00-22:00",
       "description": "Beliebt für Dim Sum den ganzen Tag über und kantonesische Hausmannskost. Lokaler Favorit mit gleichbleibender Qualität.",
       "dishHighlights": [
-        "Shrimp dumplings",
-        "Char siu bao",
+        "Garnelendim Sum",
+        "Char Siu Bao (gefüllte Brötchen)",
         "Reisrollen",
-        "Taro balls"
+        "Taro-Bällchen"
       ],
       "tags": [
         "Dim Sum",
@@ -1728,7 +1728,7 @@
         "Dim Sum",
         "günstig",
         "lokal",
-        "historic-area"
+        "historisches Viertel"
       ],
       "star": 0,
       "diamond": 0,
@@ -1752,7 +1752,7 @@
       "description": "Beliebtes Lokal für traditionelles kantonesisches Frühstück und Dim Sum. Nur Einheimische.",
       "dishHighlights": [
         "Morgendliches Dim Sum",
-        "Egg sandwiches",
+        "Eiersandwiches",
         "Reisbrei",
         "Hongkong-Stil-Milchtee"
       ],
@@ -1786,7 +1786,7 @@
         "Frühmorgendliche Dim Sum",
         "Gedämpfte Schwämme",
         "Rettichkuchen",
-        "Sesame balls"
+        "Sesambällchen"
       ],
       "tags": [
         "kantonesisch",
@@ -1818,7 +1818,7 @@
         "Boston-Hummer",
         "Steinkrabbe",
         "Lebender Fisch",
-        "Abalone"
+        "Seeohr"
       ],
       "tags": [
         "Meeresfrüchte",
@@ -1848,8 +1848,8 @@
       "description": "Beliebtes koreanisches BBQ mit einer Auswahl an hochwertigem Fleisch und authentischen koreanischen Beilagen.",
       "dishHighlights": [
         "Hanwoo-Rindfleisch",
-        "Pork belly",
-        "Kimchi jjigae",
+        "Schweinebauch",
+        "Kimchi-Eintopf",
         "Koreanische kalte Nudeln"
       ],
       "tags": [
@@ -2764,12 +2764,12 @@
       ],
       "bus": [
         "Umfangreiches Netz, das Gebiete abdeckt, die nicht von der U-Bahn bedient werden",
-        "Single ride: 2-6¥",
+        "Einzelfahrt: 2-6¥",
         "Viele Linien fahren bis spät in die Nacht"
       ],
       "taxi": [
         "Grundtarif: 10¥ (erste 2 km)",
-        "Waiting: 0.8¥ per minute",
+        "Wartezeit: 0,8 ¥ pro Minute",
         "Nachtzuschlag: 20% extra (23:00-06:00 Uhr)",
         "Didi funktioniert gut für englischsprachige Nutzer"
       ],
@@ -2799,7 +2799,7 @@
         "Mehrere Restaurants",
         "Gartenanlage"
       ],
-      "bookingTips": "Weekend packages good value. Check for OCT discounts."
+      "bookingTips": "Wochenendpakete sind preiswert. Achten Sie auf OCT-Rabatte."
     },
     {
       "name": "The St. Regis Shenzhen",
@@ -2818,7 +2818,7 @@
         "Butler-Service",
         "Luxus-Spa"
       ],
-      "bookingTips": "Club rooms worth upgrade for privileges. Book direct for benefits."
+      "bookingTips": "Clubzimmer lohnen sich für die Vorteile. Direkt buchen für Vergünstigungen."
     },
     {
       "name": "Shenzhen Shangri-La Hotel",
@@ -2837,7 +2837,7 @@
         "Businesscenter",
         "Mehrere Restaurants"
       ],
-      "bookingTips": "Best for those entering from Hong Kong. Good for transit."
+      "bookingTips": "Am besten für diejenigen, die aus Hongkong einreisen. Gut für Zwischenstopps."
     },
     {
       "name": "Shenzhen Grand Skylight Hotel",
@@ -2855,14 +2855,14 @@
         "Gutes Preis-Leistungs-Verhältnis",
         "Zuverlässiger Service"
       ],
-      "bookingTips": "Check weekend rates. Book early during conventions."
+      "bookingTips": "Wochenendtarife prüfen. Früh buchen während Messen."
     },
     {
       "name": "Shenzhen Dongmen Hotel",
       "nameEn": "Dongmen Hotel",
       "budget": "budget",
       "priceRange": "¥300-600/night",
-      "address": "2008 Chunhui Road, Luohu",
+      "address": "Chunhui-Straße 2008, Luohu",
       "coordinates": {
         "lat": 22.5622,
         "lng": 114.1072
@@ -2873,7 +2873,7 @@
         "U-Bahn-Anschluss",
         "Preisgünstig"
       ],
-      "bookingTips": "Great for shopping tourists. Basic but clean."
+      "bookingTips": "Ideal für Shopping-Touristen. Einfach, aber sauber."
     },
     {
       "name": "Shenzhen JW Marriott Hotel",
@@ -2892,7 +2892,7 @@
         "Dachterrassenbar",
         "Executive Lounge"
       ],
-      "bookingTips": "Book via Marriott app for member benefits. Club lounge access worth it."
+      "bookingTips": "Über die Marriott-App buchen für Mitgliedervorteile. Der Zugang zur Club-Lounge lohnt sich."
     },
     {
       "name": "Shenzhen Greater China Hilton Hotel",
@@ -2911,7 +2911,7 @@
         "Zentrale Lage",
         "Zuverlässige Marke"
       ],
-      "bookingTips": "Higher floors offer better views. Weekend deals available."
+      "bookingTips": "Höhere Etagen bieten bessere Aussicht. Wochenendangebote verfügbar."
     },
     {
       "name": "Shenzhen Venice Raytour Hotel",
@@ -2930,7 +2930,7 @@
         "Einzigartige Architektur",
         "Gutes Frühstück"
       ],
-      "bookingTips": "Request canal-view rooms. Good for families with kids."
+      "bookingTips": "Zimmer mit Kanalblick anfragen. Gut für Familien mit Kindern."
     },
     {
       "name": "Shenzhen Qiushan Water Crown Plaza Hotel",
@@ -2948,7 +2948,7 @@
         "Bequeme Betten",
         "Guter Service"
       ],
-      "bookingTips": "Book during conventions in Futian for convenience."
+      "bookingTips": "Buchen Sie während Messen in Futian für mehr Bequemlichkeit."
     },
     {
       "name": "Shenzhen Haide Hotel",
@@ -2966,7 +2966,7 @@
         "Moderne Zimmer",
         "Gutes Restaurant"
       ],
-      "bookingTips": "Good for tech company visitors. Check corporate rates."
+      "bookingTips": "Gut für Besucher von Technologieunternehmen. Fragen Sie nach Firmenrabatten."
     },
     {
       "name": "Shenzhen Yishang Business Hotel",
@@ -2984,7 +2984,7 @@
         "Saubere Zimmer",
         "U-Bahn in der Nähe"
       ],
-      "bookingTips": "Best value in Futian. Good for short business trips."
+      "bookingTips": "Bestes Preis-Leistungs-Verhältnis in Futian. Gut für kurze Geschäftsreisen."
     },
     {
       "name": "Shenzhen Kempinski Hotel",
@@ -3003,7 +3003,7 @@
         "Preisgekröntes Spa",
         "Feine Küche"
       ],
-      "bookingTips": "Sea-view rooms worth premium. Book direct for better rates."
+      "bookingTips": "Zimmer mit Meerblick sind den Aufpreis wert. Buchen Sie direkt für bessere Tarife."
     },
     {
       "name": "Shenzhen Marco Polo Hotel",
@@ -3021,7 +3021,7 @@
         "Einkaufszentrum angeschlossen",
         "Mehrere Restaurants"
       ],
-      "bookingTips": "Great for cross-border travelers. Connected to mall."
+      "bookingTips": "Ideal für Grenzgänger. Mit Einkaufszentrum verbunden."
     },
     {
       "name": "深圳深业上城民宿",
@@ -3040,7 +3040,7 @@
         "Stadtblick",
         "Ruhige Lage"
       ],
-      "bookingTips": "Good for extended stays. Request higher floors."
+      "bookingTips": "Gut für längere Aufenthalte. Fragen Sie nach höheren Etagen."
     },
     {
       "name": "Pullman Hotel Shenzhen Nordbahnhof",
@@ -3058,7 +3058,7 @@
         "Modernes Design",
         "Gut für Zwischenstopps"
       ],
-      "bookingTips": "Perfect for arriving by train. Easy metro connection."
+      "bookingTips": "Perfekt für Anreise mit dem Zug. Einfacher U-Bahn-Anschluss."
     },
     {
       "name": "Ascott Serviced Apartments Shenzhen",
@@ -3077,7 +3077,7 @@
         "Für Langzeitaufenthalte geeignet",
         "Fitnessstudio und Pool"
       ],
-      "bookingTips": "Best for business travelers staying a week or more."
+      "bookingTips": "Am besten für Geschäftsreisende, die eine Woche oder länger bleiben."
     },
     {
       "name": "Shenzhen Zhongzhou Shengtingyuan Hotel",
@@ -3095,7 +3095,7 @@
         "Ruhige Gegend",
         "Gutes Frühstück"
       ],
-      "bookingTips": "Good balance of price and location. Weekend discounts."
+      "bookingTips": "Gutes Preis-Leistungs-Verhältnis und gute Lage. Wochenendrabatte."
     },
     {
       "name": "Shenzhen Eastern OCT Interlaken Hotel",
@@ -3114,7 +3114,7 @@
         "Naturnahe Umgebung",
         "In der Nähe von Themenparks"
       ],
-      "bookingTips": "Include hot spring in your booking. Great for weekend getaways."
+      "bookingTips": "Buchen Sie die Heißquelle in Ihrer Reservierung mit ein. Ideal für Wochenendausflüge."
     }
   ],
   "payment": [
@@ -3123,12 +3123,12 @@
       "icon": "alipay",
       "description": "Universelle Zahlung in ganz Shenzhen",
       "howToUse": [
-        "Download before arrival",
+        "Vor der Ankunft herunterladen",
         "Karte oder chinesisches Konto verknüpfen"
       ],
       "tips": [
-        "Works at all merchants",
-        "English available",
+        "Gilt bei allen Händlern",
+        "Englisch verfügbar",
         "Erforderlich für Tech-Erlebnisse"
       ]
     },
@@ -3137,11 +3137,11 @@
       "icon": "wechat",
       "description": "Überall in Shenzhen akzeptiert",
       "howToUse": [
-        "WeChat required",
+        "WeChat erforderlich",
         "Internationale Karten werden akzeptiert"
       ],
       "tips": [
-        "Set to English mode",
+        "Auf Englisch umstellen",
         "Erforderlich für Leihfahrräder"
       ]
     },
@@ -3155,128 +3155,128 @@
       ],
       "tips": [
         "Nur für kleine Verkäufer nötig",
-        "Most places accept cards"
+        "Die meisten Orte akzeptieren Karten."
       ]
     }
   ],
   "culturalTips": [
     {
       "category": "tech",
-      "title": "Tech Culture",
-      "content": "Shenzhen is China's tech hub. Visit Huaqiangbei electronics market for gadgets. Experience cashless society firsthand.",
+      "title": "Technologiekultur",
+      "content": "Shenzhen ist das Technologiezentrum Chinas. Besuchen Sie den Elektronikmarkt Huaqiangbei für Gadgets. Erleben Sie die bargeldlose Gesellschaft aus erster Hand.",
       "importance": "high"
     },
     {
       "category": "pace",
-      "title": "Fast Pace",
-      "content": "Shenzhen is always moving. Metro is packed during rush hours (7:30-9:00, 17:30-19:30). Plan accordingly.",
+      "title": "Schnelles Tempo",
+      "content": "Shenzhen ist immer in Bewegung. Die U-Bahn ist während der Stoßzeiten (7:30-9:00, 17:30-19:30) überfüllt. Planen Sie entsprechend.",
       "importance": "medium"
     },
     {
       "category": "dining",
-      "title": "Dining Hours",
-      "content": "Local restaurants busy during normal meal times: 11:30-13:30 and 17:30-20:30. Late-night dining common.",
+      "title": "Essenszeiten",
+      "content": "Lokale Restaurants sind zu den üblichen Essenszeiten stark frequentiert: 11:30-13:30 und 17:30-20:30. Spätes Abendessen ist üblich.",
       "importance": "medium"
     },
     {
       "category": "language",
-      "title": "Language",
-      "content": "Mandarin is primary. Cantonese widely spoken in Luohu and traditional areas. English more common in tourist areas.",
+      "title": "Sprache",
+      "content": "Mandarin ist die Hauptsprache. Kantonesisch wird in Luohu und in traditionellen Vierteln häufig gesprochen. Englisch ist in Touristengebieten verbreiteter.",
       "importance": "low"
     },
     {
       "category": "tech",
-      "title": "Huaqiangbei Electronics Market",
-      "content": "The world's largest electronics market at Huaqiangbei. Bargain hard, check quality carefully, and verify specifications before purchase. Bring your laptop to test components.",
+      "title": "Huaqiangbei Elektronikmarkt",
+      "content": "Der weltweit größte Elektronikmarkt in Huaqiangbei. Verhandeln Sie hart, prüfen Sie die Qualität sorgfältig und verifizieren Sie die Spezifikationen vor dem Kauf. Bringen Sie Ihren Laptop mit, um Komponenten zu testen.",
       "importance": "high"
     },
     {
       "category": "startup",
-      "title": "Startup Ecosystem",
-      "content": "Shenzhen is home to Tencent, Huawei, BYD, and DJI. Visit Tencent's headquarters in Nanshan. The city has a unique entrepreneurial spirit born from reform and opening.",
+      "title": "Startup-Ökosystem",
+      "content": "Shenzhen ist die Heimat von Tencent, Huawei, BYD und DJI. Besuchen Sie den Hauptsitz von Tencent in Nanshan. Die Stadt hat einen einzigartigen Unternehmergeist, der aus der Reform- und Öffnungspolitik entstanden ist.",
       "importance": "medium"
     },
     {
       "category": "cashless",
-      "title": "Cashless Society",
-      "content": "Mobile payment is universal in Shenzhen. Alipay and WeChat Pay are used for everything from street food to taxis. Bring a phone with these apps installed.",
+      "title": "Bargeldlose Gesellschaft",
+      "content": "Mobile Bezahlung ist in Shenzhen allgegenwärtig. Alipay und WeChat Pay werden für alles verwendet, von Straßenessen bis zu Taxis. Bringen Sie ein Telefon mit, auf dem diese Apps installiert sind.",
       "importance": "high"
     },
     {
       "category": "beach",
-      "title": "Beach Culture",
-      "content": "Shenzhen has beautiful beaches (Dameisha, Xiaomeisha, Jiaochangwei). Arrive early on weekends as they get crowded. Bring sunscreen - shade is limited.",
+      "title": "Strandkultur",
+      "content": "Shenzhen hat wunderschöne Strände (Dameisha, Xiaomeisha, Jiaochangwei). Kommen Sie am Wochenende früh, da sie überfüllt sind. Bringen Sie Sonnencreme mit – Schatten ist begrenzt.",
       "importance": "medium"
     },
     {
       "category": "cantonese",
-      "title": "Cantonese Influence",
-      "content": "While Mandarin dominates, Cantonese is still widely spoken in Luohu, Dongmen, and traditional Hakka areas. Locals appreciate when visitors try basic phrases.",
+      "title": "Kantonesischer Einfluss",
+      "content": "Obwohl Mandarin dominiert, wird Kantonesisch in Luohu, Dongmen und traditionellen Hakka-Gebieten immer noch häufig gesprochen. Einheimische schätzen es, wenn Besucher einfache Sätze versuchen.",
       "importance": "medium"
     },
     {
       "category": "hk-access",
-      "title": "Hong Kong Access",
-      "content": "Shenzhen is gateway to Hong Kong via Luohu or Futian Checkpoint. Consider a day trip to Hong Kong or use Shenzhen as base for Pearl River Delta exploration.",
+      "title": "Zugang nach Hongkong",
+      "content": "Shenzhen ist das Tor nach Hongkong über den Grenzübergang Luohu oder Futian. Erwägen Sie einen Tagesausflug nach Hongkong oder nutzen Sie Shenzhen als Basis für die Erkundung des Perlflussdeltas.",
       "importance": "high"
     },
     {
       "category": "theme-parks",
-      "title": "Theme Park Culture",
-      "content": "Shenzhen has major theme parks (Window of the World, Happy Valley, OCT Eastern). Book tickets online for discounts. Weekdays are less crowded.",
+      "title": "Themenpark-Kultur",
+      "content": "Shenzhen hat große Themenparks (Window of the World, Happy Valley, OCT Eastern). Buchen Sie Tickets online für Rabatte. Unter der Woche ist es weniger überlaufen.",
       "importance": "medium"
     },
     {
       "category": "fashion",
-      "title": "Fashion and Design",
-      "content": "OCT-LOFT and Dapeng Fortress host creative festivals. Shenzhen Fashion Week showcases local designers. The city blends innovation with manufacturing.",
+      "title": "Mode und Design",
+      "content": "OCT-LOFT und die Dapeng-Festung veranstalten kreative Festivals. Die Shenzhen Fashion Week präsentiert lokale Designer. Die Stadt verbindet Innovation mit Fertigung.",
       "importance": "low"
     },
     {
       "category": " hukou",
-      "title": "Reform History",
-      "content": "Shenzhen was a fishing village in 1980. Now it's 17+ million people. Visit Shenzhen Museum to understand this remarkable transformation.",
+      "title": "Reformgeschichte",
+      "content": "Shenzhen war 1980 ein Fischerdorf. Jetzt hat es über 17 Millionen Einwohner. Besuchen Sie das Shenzhen-Museum, um diese bemerkenswerte Verwandlung zu verstehen.",
       "importance": "medium"
     },
     {
       "category": "dialect",
-      "title": "Teochew Dialect",
+      "title": "Teochew-Dialekt",
       "content": "In Shenzhen gibt es eine große Bevölkerung aus Chaoshan (Chaozhou). Ihre Esskultur beeinflusst die lokale Gastronomie. Probieren Sie das Chaoshan-Rindfleisch-Hotpot.",
       "importance": "low"
     },
     {
       "category": "seafood",
-      "title": "Seafood Dining",
-      "content": "Coastal location means fresh seafood is abundant. Shekou and Dapeng have excellent seafood restaurants. Live tanks are common - pick your own.",
+      "title": "Meeresfrüchte-Restaurants",
+      "content": "Die Küstenlage bedeutet, dass frische Meeresfrüchte reichlich vorhanden sind. Shekou und Dapeng haben ausgezeichnete Restaurants mit Meeresfrüchten. Lebendbecken sind üblich – wählen Sie selbst.",
       "importance": "medium"
     },
     {
       "category": "nightlife",
-      "title": "Nightlife Scene",
+      "title": "Nachtleben",
       "content": "Im Seaworld in Shekou gibt es internationale Bars, wo Sie ein lebhaftes Nachtleben genießen können. Auch Coastal City und COCO Park eignen sich für abendliche Unterhaltung.",
       "importance": "medium"
     },
     {
       "category": "art",
-      "title": "Art Scene",
+      "title": "Kunstszene",
       "content": "Dafen Oil Painting Village produziert 60% der weltweiten Ölgemälde. OCT-LOFT veranstaltet Indie-Musik- und Design-Events. Kunst ist hier ein großes Geschäft.",
       "importance": "medium"
     },
     {
       "category": "weather",
-      "title": "Typhoon Season",
+      "title": "Taifunsaison",
       "content": "Die Taifunsaison in Shenzhen dauert von Juli bis September. Überprüfen Sie das Wetter vor Strandbesuchen. Starke Taifune verursachen Verkehrsunterbrechungen - bleiben Sie im Haus.",
       "importance": "high"
     },
     {
       "category": "architecture",
-      "title": "Modern Architecture",
+      "title": "Moderne Architektur",
       "content": "Shenzhen hat ikonische moderne Architektur: Ping An Finance Center (599m), Shenzhen Civic Center von Mario Botta. Architekturführungen sind beliebt.",
       "importance": "low"
     },
     {
       "category": "business",
-      "title": "Business Hub",
+      "title": "Geschäftszentrum",
       "content": "Shenzhen ist das Silicon Valley Chinas. Viele Technologieunternehmen rekrutieren international. Die Geschäftskultur ist schnelllebig und effizienzorientiert.",
       "importance": "medium"
     }

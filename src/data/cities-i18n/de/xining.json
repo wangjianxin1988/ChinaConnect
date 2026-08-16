@@ -3,12 +3,12 @@
   "name": "西宁",
   "nameEn": "Xining",
   "country": "China",
-  "population": "2.5 million",
+  "population": "2,5 Millionen",
   "coordinates": {
     "lat": 36.6171,
     "lng": 101.7782
   },
-  "timezone": "UTC+8 (China Standard Time)",
+  "timezone": "UTC+8 (Chinesische Standardzeit)",
   "description": "Xining, die Hauptstadt der Provinz Qinghai, liegt auf einer Höhe von 2.265 Metern und dient als Tor zum tibetischen Hochland. Sie beherbergt den beeindruckenden Taiping-Tempel (Kumbum-Kloster), den atemberaubenden Qinghai-See und eine reiche tibetische und Hui-Ethno-Kultur. Eine faszinierende Mischung aus alten buddhistischen Klöstern, islamischer Küche und alpinen Landschaften.",
   "coverImage": "/img/ext/b7b3c5e94d62.webp",
   "highlights": [
@@ -19,18 +19,18 @@
     "Tibetische Kultur und Hochlandlandschaft"
   ],
   "climate": {
-    "type": "Plateau continental",
+    "type": "Plateau-Kontinentalklima",
     "bestMonths": [
-      "May",
-      "June",
-      "July",
+      "Mai",
+      "Juni",
+      "Juli",
       "August",
       "September",
-      "October"
+      "Oktober"
     ],
     "avgSummerTemp": "17°C (63°F)",
     "avgWinterTemp": "-8°C (18°F)",
-    "tips": "Best visited May-Oct for pleasant weather. Summers are mild and perfect for Qinghai Lake. High altitude - acclimatize 1-2 days. UV radiation is intense year-round. Winters cold but clear."
+    "tips": "Am besten von Mai bis Oktober bei angenehmem Wetter besuchen. Die Sommer sind mild und perfekt für den Qinghai-See. Hohe Höhenlage – 1-2 Tage zur Akklimatisierung einplanen. UV-Strahlung ist ganzjährig intensiv. Winter kalt, aber klar."
   },
   "attractions": [
     {
@@ -252,7 +252,7 @@
     {
       "id": "plateau-animal",
       "name": "青海高原野生动物园",
-      "nameEn": "Qinghai Plateau Wildlife Zoo",
+      "nameEn": "Qinghai-Plateau-Wildtier-Zoo",
       "category": "cultural",
       "image": "/img/ext/ac5bbbe869f9.webp",
       "description": "Zoo, der sich auf Hochlandwildtiere spezialisiert hat, darunter Yaks, Tibetantilopen und seltene Vögel, die in Hochgebirgsregionen beheimatet sind.",
@@ -324,7 +324,7 @@
     {
       "id": "yushu",
       "name": "玉珠峰",
-      "nameEn": "Yuzhu Peak",
+      "nameEn": "Yuzhu-Gipfel",
       "category": "natural",
       "image": "/img/ext/dc81bb62fa0b.webp",
       "description": "Schneebedeckter Gipfel mit 6.178 Metern Höhe, heiliger Berg und beliebte Trekking-Basis für Bergsteiger und Wanderer, die alpine Erlebnisse suchen.",
@@ -468,17 +468,17 @@
     {
       "id": "xian",
       "name": "湟源古镇",
-      "nameEn": "Huangyuan Ancient Town",
+      "nameEn": "Huangyuan-Altstadt",
       "category": "cultural",
       "image": "/img/ext/74d8d8fe5292.webp",
       "description": "Historische Stadt an der alten Seidenstraße mit traditioneller Architektur, Museen und Tor zu den tibetischen Hochebenen.",
-      "address": "Huangyuan County",
+      "address": "Kreis Huangyuan",
       "coordinates": {
         "lat": 36.7171,
         "lng": 101.2782
       },
       "openingHours": "24 Stunden geöffnet",
-      "ticketPrice": "Free (museums extra)",
+      "ticketPrice": "Kostenlos (Museen extra)",
       "recommendedVisitTime": "2-3 Stunden",
       "highlights": [
         "Seidenstraßen-Geschichte",
@@ -492,11 +492,11 @@
     {
       "id": "mingshan",
       "name": "互助土族风情园",
-      "nameEn": "Mingshan Tu Ethnic Park",
+      "nameEn": "Mingshan-Tu-Volkspark",
       "category": "cultural",
       "image": "/img/ext/6b54a294df53.webp",
       "description": "Kulturpark, der die einzigartigen Traditionen, Tänze und Volksbräuche der Tu-ethnischen Minderheit mit Aufführungen präsentiert.",
-      "address": "Huzhu County",
+      "address": "Kreis Huzhu",
       "coordinates": {
         "lat": 36.8171,
         "lng": 102.1782
@@ -520,7 +520,7 @@
       "category": "natural",
       "image": "/img/ext/ea71a28d01bf.webp",
       "description": "Heiliger tibetischer Gebirgszug mit Gletschern und Gipfeln, bedeutender religiöser Ort und Trekking-Ziel.",
-      "address": "Maqen County",
+      "address": "Kreis Maqen",
       "coordinates": {
         "lat": 34.8171,
         "lng": 99.5782
@@ -540,11 +540,11 @@
     {
       "id": "datong",
       "name": "大通国家森林公园",
-      "nameEn": "Datong National Forest Park",
+      "nameEn": "Nationaler Waldpark Datong",
       "category": "natural",
       "image": "/img/ext/042243334b21.webp",
       "description": "Waldpark mit Bergen, Flüssen und Sommerresidenzen, der Wandern und Naturgenuss bietet.",
-      "address": "Datong County",
+      "address": "Kreis Datong",
       "coordinates": {
         "lat": 37.0171,
         "lng": 101.6782
@@ -564,7 +564,7 @@
     {
       "id": "taer-temple",
       "name": "塔尔寺",
-      "nameEn": "Ta'er Temple",
+      "nameEn": "Ta'er-Tempel",
       "category": "temple",
       "description": "Eines der sechs großen Klöster der Gelug-Schule des tibetischen Buddhismus. Seine Butterskulpturen, Wandmalereien und Applikationsstickereien sind als die 'drei Kunstwunder' bekannt.",
       "address": "Lushar-Stadt, Bezirk Huangzhong, Stadt Xining",
@@ -587,7 +587,7 @@
     {
       "id": "kunlun-mountain",
       "name": "日月山",
-      "nameEn": "Riyue Mountain",
+      "nameEn": "Riyue-Berg",
       "category": "nature",
       "description": "Die Trennlinie zwischen landwirtschaftlichen und Weidegebieten in Qinghai und ein Ort, an dem Prinzessin Wencheng auf ihrem Weg nach Tibet vorbeikam.",
       "address": "Kreis Huangyuan",
@@ -655,7 +655,7 @@
     {
       "id": "qilian-mountain",
       "name": "祁连山",
-      "nameEn": "Qilian Mountain",
+      "nameEn": "Qilian-Berg",
       "category": "nature",
       "description": "Eine wichtige Gebirgskette in China, bekannt als die 'Schweiz des Ostens'.",
       "address": "Kreis Qilian, Bezirk Haibei",
@@ -678,7 +678,7 @@
     {
       "id": "dongxiaojie",
       "name": "水井巷市场",
-      "nameEn": "Shuijingxiang Market",
+      "nameEn": "Shuijingxiang-Markt",
       "category": "street",
       "description": "Der lebhafteste Markt in Xining, der verschiedene Spezialitäten und Snacks aus Qinghai versammelt.",
       "address": "Bezirk Chengzhong, Stadt Xining",
@@ -701,7 +701,7 @@
     {
       "id": "beishan-temple",
       "name": "北禅寺",
-      "nameEn": "Beichan Temple",
+      "nameEn": "Beichan-Tempel",
       "category": "temple",
       "description": "Der älteste Tempel in Xining, erbaut während der Nördlichen Wei-Dynastie, mit neun Höhlen und achtzehn Grotten.",
       "address": "Bezirk Chengbei, Stadt Xining",
@@ -723,7 +723,7 @@
     {
       "id": "nanshan-park",
       "name": "南山公园",
-      "nameEn": "Nanshan Park",
+      "nameEn": "Nanshan-Park",
       "category": "park",
       "description": "Ein grüner Gürtel im Süden von Xining mit Sehenswürdigkeiten wie der Phönix-Terrasse.",
       "address": "Bezirk Chengzhong, Stadt Xining",
@@ -768,7 +768,7 @@
     {
       "id": "tibetan-medicine",
       "name": "青海藏医药文化博物馆",
-      "nameEn": "Qinghai Tibetan Medicine Museum",
+      "nameEn": "Qinghai-Museum für Tibetische Medizin",
       "category": "museum",
       "description": "Das weltweit einzige Museum für tibetische Medizinkultur mit dem größten Thangka Chinas.",
       "address": "Bezirk Chengbei, Stadt Xining",
@@ -791,7 +791,7 @@
     {
       "id": "kumbum-art",
       "name": "酥油花馆",
-      "nameEn": "Butter Flower Museum",
+      "nameEn": "Butterblumen-Museum",
       "category": "museum",
       "description": "Zeigt die Butterskulpturenkunst des Kumbum-Klosters, ein immaterielles Kulturerbe.",
       "address": "Gemeinde Lushar, Bezirk Huangzhong",
@@ -813,7 +813,7 @@
     {
       "id": "huangyuan-ancient",
       "name": "丹噶尔古城",
-      "nameEn": "Dangar Ancient City",
+      "nameEn": "Dangar-Alte Stadt",
       "category": "street",
       "description": "Eine antike Stadt mit über 600 Jahren Geschichte, einst ein wichtiger Posten an der Tee-Pferde-Straße.",
       "address": "Kreis Huangyuan",
@@ -836,7 +836,7 @@
     {
       "id": "datong-forest",
       "name": "大通国家森林公园",
-      "nameEn": "Datong National Forest Park",
+      "nameEn": "Nationaler Waldpark Datong",
       "category": "nature",
       "description": "Eine natürliche Sauerstoffbar nördlich von Xining mit Attraktionen wie dem Chahan-Fluss.",
       "address": "Kreis Datong",
@@ -859,7 +859,7 @@
     {
       "id": "guide-ancient",
       "name": "贵德古城",
-      "nameEn": "Guide Ancient City",
+      "nameEn": "Guide-Alte Stadt",
       "category": "street",
       "description": "Eine antike Stadt mit über 600 Jahren Geschichte, bekannt als 'Der Gelbe Fluss in Guide ist am klarsten.'",
       "address": "Kreis Guide",
@@ -881,7 +881,7 @@
     {
       "id": "guide-wenquan",
       "name": "贵德温泉",
-      "nameEn": "Guide Hot Spring",
+      "nameEn": "Guide-Heißquelle",
       "category": "nature",
       "description": "Eine berühmte heiße Quelle in Qinghai, mit Wassertemperaturen von bis zu 93°C.",
       "address": "Kreis Guide",
@@ -1061,7 +1061,7 @@
     {
       "id": "xining-park",
       "name": "人民公园",
-      "nameEn": "People's Park",
+      "nameEn": "Volkspark",
       "category": "park",
       "description": "Xinings größter Stadtpark mit Seen und Gärten.",
       "address": "Bezirk Chengxi, Stadt Xining",
@@ -1114,7 +1114,7 @@
         "lng": 100.5
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "100 Yuan",
+      "ticketPrice": "100 Yuan.",
       "recommendedVisitTime": "2 Stunden",
       "highlights": [
         "Seeufer",
@@ -1128,7 +1128,7 @@
     {
       "id": "menyuan-land",
       "name": "百里油菜花海",
-      "nameEn": "Menyuan Flower Sea",
+      "nameEn": "Menyuan-Blumenmeer",
       "category": "nature",
       "description": "Das Menyuan-Hundert-Meilen-Rapsblütenmeer ist der größte Aussichtspunkt für Rapsblüten in China.",
       "address": "Kreis Menyuan",
@@ -1150,7 +1150,7 @@
     {
       "id": "xining-night",
       "name": "西宁夜市",
-      "nameEn": "Xining Night Market",
+      "nameEn": "Xining-Nachtmarkt",
       "category": "street",
       "description": "Xinings lebhaftester Nachtmarkt, der verschiedene Qinghai-Snacks vereint.",
       "address": "Bezirk Chengzhong, Stadt Xining",
@@ -1172,7 +1172,7 @@
     {
       "id": "huangzhong-taer",
       "name": "塔尔寺广场",
-      "nameEn": "Ta'er Temple Square",
+      "nameEn": "Ta'er-Tempelplatz",
       "category": "landmark",
       "description": "Der Platz vor dem Kumbum-Kloster mit tibetisch geprägter Architektur.",
       "address": "Bezirk Huangzhong, Stadt Xining",
@@ -1195,12 +1195,12 @@
     {
       "id": "xining-1",
       "name": "青海名吃",
-      "nameEn": "Qinghai Famous Foods",
+      "nameEn": "Qinghai-Berühmte Speisen",
       "type": "lokal",
-      "cuisine": "Qinghai Local",
+      "cuisine": "Qinghai lokal",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Xining Central Street",
+      "address": "Xining Hauptstraße",
       "coordinates": {
         "lat": 36.6171,
         "lng": 101.7782
@@ -1214,7 +1214,7 @@
       ],
       "tags": [
         "lokal",
-        "qinghai",
+        "Qinghai",
         "traditionell",
         "unbedingt probieren"
       ],
@@ -1226,7 +1226,7 @@
     {
       "id": "xining-2",
       "name": "马忠食府",
-      "nameEn": "Ma Zhong Restaurant",
+      "nameEn": "Ma-Zhong-Restaurant",
       "type": "lokal",
       "cuisine": "Qinghai Muslimische Küche",
       "avgPrice": 50,
@@ -1257,7 +1257,7 @@
     {
       "id": "xining-3",
       "name": "青海穆斯林美食",
-      "nameEn": "Qinghai Muslim Food Street",
+      "nameEn": "Qinghai-Muslimische Speisestraße",
       "type": "lokal",
       "cuisine": "islamisch",
       "avgPrice": 40,
@@ -1319,7 +1319,7 @@
     {
       "id": "xining-5",
       "name": "土族风情美食",
-      "nameEn": "Tu Ethnic Food",
+      "nameEn": "Tu-Volksküche",
       "type": "lokal",
       "cuisine": "Tu-Ethnie",
       "avgPrice": 55,
@@ -1338,7 +1338,7 @@
       ],
       "tags": [
         "lokal",
-        "tu-ethnic",
+        "Tu-Ethnie",
         "traditionell",
         "kulturell"
       ],
@@ -1350,7 +1350,7 @@
     {
       "id": "xining-6",
       "name": "藏家乐",
-      "nameEn": "Tibetan Family Kitchen",
+      "nameEn": "Tibetische Familienküche",
       "type": "lokal",
       "cuisine": "Tibetisch",
       "avgPrice": 70,
@@ -1432,7 +1432,7 @@
       "tags": [
         "lokal",
         "Getränke",
-        "qinghai",
+        "Qinghai",
         "traditionell"
       ],
       "star": 0,
@@ -1538,7 +1538,7 @@
       "name": "酿皮",
       "nameEn": "Niangpi (Qinghai Haut)",
       "type": "lokal",
-      "cuisine": "Qinghai Snacks",
+      "cuisine": "Qinghai-Snacks",
       "avgPrice": 20,
       "rating": 4.5,
       "address": "Nachtmärkte",
@@ -1551,7 +1551,7 @@
       "dishHighlights": [
         "Niangpi",
         "Scharfe Soße",
-        "Vegetable toppings"
+        "Gemüsebeläge"
       ],
       "tags": [
         "lokal",
@@ -1569,7 +1569,7 @@
       "name": "酸奶",
       "nameEn": "Qinghai Yogurt",
       "type": "lokal",
-      "cuisine": "Qinghai Dairy",
+      "cuisine": "Qinghai-Milchprodukte",
       "avgPrice": 15,
       "rating": 4.6,
       "address": "Verschiedene Standorte",
@@ -1580,13 +1580,13 @@
       "hours": "ganztägig",
       "description": "Frischer Yakmilch-Joghurt, dick und cremig, erhältlich an Straßenständen und in Restaurants in ganz Xining.",
       "dishHighlights": [
-        "Fresh yak yogurt",
+        "Frischer Yak-Joghurt",
         "Honigjoghurt",
-        "Traditional dairy"
+        "Traditionelle Milchprodukte"
       ],
       "tags": [
         "lokal",
-        "dairy",
+        "Milchprodukte",
         "yak",
         "gesund"
       ],
@@ -1598,12 +1598,12 @@
     {
       "id": "xining-14",
       "name": "虫草炖鸡",
-      "nameEn": "Caterpillar Fungus Chicken Soup",
+      "nameEn": "Suppe mit Raupenpilz und Huhn",
       "type": "lokal",
-      "cuisine": "Plateau Specialty",
+      "cuisine": "Hochland-Spezialität",
       "avgPrice": 150,
       "rating": 4.5,
-      "address": "Xining Upscale Area",
+      "address": "Xining Nobelgegend",
       "coordinates": {
         "lat": 36.6171,
         "lng": 101.7782
@@ -1611,8 +1611,8 @@
       "hours": "10:00-22:00",
       "description": "Premium-Restaurant, das teure, aber authentische Chinesische Raupenpilz-Suppe (Cordyceps) mit Huhn serviert, ein Plateau-Delikatesse.",
       "dishHighlights": [
-        "Caterpillar fungus soup",
-        "Yak meat",
+        "Raupenpilzsuppe",
+        "Yakfleisch",
         "Plateaugemüse"
       ],
       "tags": [
@@ -1629,12 +1629,12 @@
     {
       "id": "xining-15",
       "name": "沙柳路夜市",
-      "nameEn": "Shaliu Road Night Market",
+      "nameEn": "Nachtmarkt an der Shaliu-Straße",
       "type": "lokal",
       "cuisine": "Verschiedene",
       "avgPrice": 40,
       "rating": 4.3,
-      "address": "Shaliu Road",
+      "address": "Shaliu-Straße",
       "coordinates": {
         "lat": 36.6071,
         "lng": 101.7682
@@ -1643,9 +1643,9 @@
       "description": "Lebhafter Nachtmarkt mit Dutzenden von Essensständen, die lokale und internationale Küche anbieten.",
       "dishHighlights": [
         "Lamm-Spieße",
-        "Hotpot",
-        "Street pizza",
-        "Beer"
+        "Feuertopf",
+        "Straßenpizza",
+        "Bier"
       ],
       "tags": [
         "Nachtmarkt",
@@ -1674,8 +1674,8 @@
       "hours": "11:00-23:00",
       "description": "Legendäres Lammrestaurant mit geheimem Familienrezept, in ganz Qinghai für außergewöhnliche Lammgerichte berühmt.",
       "dishHighlights": [
-        "Secret recipe lamb",
-        "Grilled lamb ribs",
+        "Geheimrezept-Lamm",
+        "Gegrillte Lammrippchen",
         "Lammbrühe"
       ],
       "tags": [
@@ -1692,12 +1692,12 @@
     {
       "id": "xining-17",
       "name": "互助小吃",
-      "nameEn": "Huzhu Snacks",
+      "nameEn": "Huzhu-Snacks",
       "type": "lokal",
-      "cuisine": "Tu Ethnic Snacks",
+      "cuisine": "Tu-Spezialitäten",
       "avgPrice": 30,
       "rating": 4.4,
-      "address": "Huzhu County",
+      "address": "Kreis Huzhu",
       "coordinates": {
         "lat": 36.8171,
         "lng": 102.1782
@@ -1705,13 +1705,13 @@
       "hours": "09:00-20:00",
       "description": "Lokaler Snackladen, der tu-ethnische Speisen wie Kartoffelknödel und Gerstenkuchen serviert.",
       "dishHighlights": [
-        "Tu potato dumplings",
-        "Barley pastries",
-        "Tu pastries"
+        "Tu-Kartoffelknödel",
+        "Gerstenkuchen",
+        "Tu-Gebäck"
       ],
       "tags": [
         "lokal",
-        "tu-ethnic",
+        "Tu-Ethnie",
         "Snacks",
         "günstig"
       ],
@@ -1723,12 +1723,12 @@
     {
       "id": "xining-18",
       "name": "茶卡盐湖餐厅",
-      "nameEn": "Chaka Salt Lake Restaurant",
+      "nameEn": "Restaurant am Chaka-Salzsee",
       "type": "lokal",
       "cuisine": "Lokale Küche",
       "avgPrice": 60,
       "rating": 4.2,
-      "address": "Chaka Town",
+      "address": "Chaka-Stadt",
       "coordinates": {
         "lat": 36.7171,
         "lng": 99.0782
@@ -1736,13 +1736,13 @@
       "hours": "07:00-20:00",
       "description": "Restaurant am Salzsee, das lokale Küche mit salzthematischen Gerichten und Plateau-Spezialitäten anbietet.",
       "dishHighlights": [
-        "Salt Lake fish",
+        "Salzseefisch",
         "Plateaugemüse",
-        "Lamb hotpot"
+        "Lamm-Hotpot"
       ],
       "tags": [
         "lokal",
-        "salt-lake",
+        "Salzsee",
         "Hochland",
         "Touristengebiet"
       ],
@@ -1754,12 +1754,12 @@
     {
       "id": "xining-19",
       "name": "老字号烤肉",
-      "nameEn": "Old Brand BBQ",
+      "nameEn": "Alte Marken-BBQ",
       "type": "lokal",
-      "cuisine": "Qinghai BBQ",
+      "cuisine": "Qinghai-Grill",
       "avgPrice": 70,
       "rating": 4.6,
-      "address": "Xining Night Market Area",
+      "address": "Nachtmarktgebiet von Xining",
       "coordinates": {
         "lat": 36.6171,
         "lng": 101.7782
@@ -1769,7 +1769,7 @@
       "dishHighlights": [
         "Lamm-Spieße",
         "Rinder-Spieße",
-        "Grilled vegetables"
+        "Gegrilltes Gemüse"
       ],
       "tags": [
         "lokal",
@@ -1785,7 +1785,7 @@
     {
       "id": "xining-20",
       "name": "酥油花",
-      "nameEn": "Butter Sculpture Cafe",
+      "nameEn": "Butterskulpturen-Café",
       "type": "lokal",
       "cuisine": "Tibetisches Teehaus",
       "avgPrice": 30,
@@ -1800,13 +1800,13 @@
       "dishHighlights": [
         "Buttertee",
         "Tsampa (geröstetes Gerstenmehl, traditionelles tibetisches Grundnahrungsmittel)",
-        "Simple meals"
+        "Einfache Gerichte"
       ],
       "tags": [
         "lokal",
         "tibetisch",
         "Teestube",
-        "monastery"
+        "Kloster"
       ],
       "star": 0,
       "diamond": 0,
@@ -1816,7 +1816,7 @@
     {
       "id": "xining-21",
       "name": "清真手抓饭",
-      "nameEn": "Muslim Hand-Grabbed Rice",
+      "nameEn": "Muslimischer Handgerissener Reis",
       "type": "lokal",
       "cuisine": "islamisch",
       "avgPrice": 35,
@@ -1829,7 +1829,7 @@
       "hours": "10:00-22:00",
       "description": "Beliebtes muslimisches Restaurant, das Reis mit Lamm, Karotten und Rosinen serviert – ein aromatisches Ein-Topf-Gericht.",
       "dishHighlights": [
-        "Lamb rice",
+        "Lammreis",
         "Gemüsereis",
         "Lammkebab"
       ],
@@ -1909,7 +1909,7 @@
     {
       "id": "xining-24",
       "name": "果洛火锅",
-      "nameEn": "Guoluo Hotpot",
+      "nameEn": "Guoluo-Feuertopf",
       "type": "lokal",
       "cuisine": "Hochebenen-Hotpot",
       "avgPrice": 90,
@@ -1928,7 +1928,7 @@
       ],
       "tags": [
         "lokal",
-        "Hotpot",
+        "Feuertopf",
         "Hochland",
         "Qualität"
       ],
@@ -2698,7 +2698,7 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major Chinese cities",
+        "from": "Große chinesische Städte",
         "to": "Internationaler Flughafen Xining Caojiabao (XNN)",
         "duration": "2-3 Stunden von Peking/Shanghai",
         "price": "800-2000¥",
@@ -2708,8 +2708,8 @@
       {
         "type": "train",
         "from": "Peking (20h), Shanghai (25h), Chengdu (14h)",
-        "to": "Xining Railway Station",
-        "duration": "14-25 hours",
+        "to": "Bahnhof Xining",
+        "duration": "14-25 Stunden",
         "price": "300-900¥",
         "frequency": "Tägliche Züge aus großen Städten",
         "tips": "Die Zugfahrt zum Qinghai-See-Gebiet ist landschaftlich reizvoll. Schlafwagen werden empfohlen. Kumbum-Kloster in der Nähe des Bahnhofs."
@@ -2722,13 +2722,13 @@
         "Bus ist das wichtigste öffentliche Verkehrsmittel"
       ],
       "bus": [
-        "City buses 2¥ standard",
+        "Stadtbusse 2¥ Standard",
         "Touristenbusse zu den Sehenswürdigkeiten",
         "Elektrobusse werden immer häufiger"
       ],
       "taxi": [
-        "Starting fare: 8¥",
-        "Didi works well in city",
+        "Grundpreis: 8¥",
+        "Didi funktioniert in der Stadt gut",
         "Bei Fernfahrten verhandeln"
       ],
       "bike": [
@@ -2737,14 +2737,14 @@
         "Radwege werden ausgebaut"
       ],
       "walking": [
-        "City center walkable",
-        "High altitude affects stamina",
-        "Take breaks when climbing"
+        "Stadtzentrum zu Fuß erkundbar",
+        "Hohe Höhe beeinträchtigt die Ausdauer",
+        "Machen Sie beim Klettern Pausen"
       ],
       "rental": [
-        "Car rental recommended for region",
-        "Driver with car is best option",
-        "4WD needed for plateau roads"
+        "Mietwagen für die Region empfohlen",
+        "Fahrer mit Auto ist die beste Option",
+        "Allradantrieb für Plateau-Straßen erforderlich"
       ]
     }
   },
@@ -2754,7 +2754,7 @@
       "nameEn": "Qinghai Hotel",
       "budget": "luxury",
       "priceRange": "¥600-1200/night",
-      "address": "Xining City Center",
+      "address": "Stadtzentrum von Xining",
       "coordinates": {
         "lat": 36.6171,
         "lng": 101.7782
@@ -2766,14 +2766,14 @@
         "Guter Service",
         "Chinesisches Restaurant"
       ],
-      "bookingTips": "Best luxury option in city. Good base for sightseeing. Book ahead during peak season."
+      "bookingTips": "Beste Luxusoption in der Stadt. Guter Ausgangspunkt für Besichtigungen. In der Hochsaison im Voraus buchen."
     },
     {
       "name": "西宁万达嘉华酒店",
       "nameEn": "Xining Wanda Realm Hotel",
       "budget": "luxury",
       "priceRange": "¥500-1000/night",
-      "address": "Chengdong District",
+      "address": "Bezirk Chengdong",
       "coordinates": {
         "lat": 36.6271,
         "lng": 101.8082
@@ -2785,14 +2785,14 @@
         "Gutes Frühstück",
         "Zentral"
       ],
-      "bookingTips": "Newer property with western amenities. Good for first-time visitors. Book weekend rates."
+      "bookingTips": "Neuere Unterkunft mit westlichen Annehmlichkeiten. Gut für Erstbesucher. Wochenendtarife buchen."
     },
     {
       "name": "塔尔寺迎宾楼",
       "nameEn": "Kumbum Monastery Guesthouse",
       "budget": "mid",
       "priceRange": "¥300-600/night",
-      "address": "Near Kumbum Monastery",
+      "address": "In der Nähe des Kumbum-Klosters",
       "coordinates": {
         "lat": 36.4571,
         "lng": 101.5782
@@ -2804,14 +2804,14 @@
         "Kulturelles Erlebnis",
         "Ruhige Lage"
       ],
-      "bookingTips": "Stay near monastery for early morning visit. Tibetan-style rooms. Simple but authentic."
+      "bookingTips": "Übernachten Sie in der Nähe des Klosters für einen Besuch am frühen Morgen. Zimmer im tibetischen Stil. Einfach, aber authentisch."
     },
     {
       "name": "青海湖宾馆",
       "nameEn": "Qinghai Lake Hotel",
       "budget": "mid",
       "priceRange": "¥400-800/night",
-      "address": "Near Qinghai Lake",
+      "address": "In der Nähe des Qinghai-Sees",
       "coordinates": {
         "lat": 36.9171,
         "lng": 100.3782
@@ -2823,7 +2823,7 @@
         "Jurtenoptionen",
         "Naturerlebnis"
       ],
-      "bookingTips": "Best for sunrise over lake. Book yurt stay for authentic experience. Advance booking essential in summer."
+      "bookingTips": "Am besten für den Sonnenaufgang über dem See. Buchen Sie eine Jurte für ein authentisches Erlebnis. Im Sommer ist eine Vorausbuchung unbedingt erforderlich."
     },
     {
       "name": "互助土族青年旅舍",
@@ -2842,14 +2842,14 @@
         "Kulturelle Aktivitäten",
         "Lokale Erfahrung"
       ],
-      "bookingTips": "Great for cultural immersion. Tu ethnic homestay available. English limited but experience is authentic."
+      "bookingTips": "Ideal für kulturelles Eintauchen. Tu-Volksheimunterkunft verfügbar. Englischkenntnisse begrenzt, aber das Erlebnis ist authentisch."
     },
     {
       "name": "茶卡盐湖民宿",
       "nameEn": "Chaka Salt Lake Homestay",
       "budget": "budget",
       "priceRange": "¥150-350/night",
-      "address": "Chaka Town",
+      "address": "Chaka-Stadt",
       "coordinates": {
         "lat": 36.7171,
         "lng": 99.0782
@@ -2861,14 +2861,14 @@
         "Lokale Familie",
         "Preis-Leistung"
       ],
-      "bookingTips": "Stay overnight for sunrise photos. Simple but clean accommodation. Great for photographers."
+      "bookingTips": "Übernachten Sie für Sonnenaufgangsfotos. Einfache, aber saubere Unterkunft. Ideal für Fotografen."
     },
     {
       "name": "西宁中心智选假日酒店",
       "nameEn": "Holiday Inn Express Xining Downtown",
       "budget": "mid",
       "priceRange": "¥300-500/night",
-      "address": "City Center",
+      "address": "Stadtzentrum",
       "coordinates": {
         "lat": 36.6171,
         "lng": 101.7782
@@ -2880,14 +2880,14 @@
         "Sauber und modern",
         "Gutes Frühstück"
       ],
-      "bookingTips": "Best western chain option. Good for English speakers. Consistent quality. Book direct for best rates."
+      "bookingTips": "Beste westliche Kettenoption. Gut für Englischsprachige. Konstante Qualität. Direkt buchen für die besten Preise."
     },
     {
       "name": "金银滩草原营地",
       "nameEn": "Jinyintan Grassland Camp",
       "budget": "mid",
       "priceRange": "¥350-700/night",
-      "address": "Jinyintan Grassland",
+      "address": "Jinyintan-Grasland",
       "coordinates": {
         "lat": 36.9171,
         "lng": 100.8782
@@ -2899,14 +2899,14 @@
         "Atomgeschichte in der Nähe",
         "Authentisches Erlebnis"
       ],
-      "bookingTips": "Unique grassland experience. Stay overnight for sunset and stars. Bring warm clothes even in summer."
+      "bookingTips": "Einzigartiges Grasland-Erlebnis. Übernachten Sie, um den Sonnenuntergang und die Sterne zu sehen. Bringen Sie auch im Sommer warme Kleidung mit."
     },
     {
       "name": "西宁锦江之星",
       "nameEn": "Jinjiang Inn Xining",
       "budget": "budget",
       "priceRange": "¥150-300/night",
-      "address": "Various Locations",
+      "address": "Verschiedene Standorte",
       "coordinates": {
         "lat": 36.6171,
         "lng": 101.7782
@@ -2918,14 +2918,14 @@
         "Zentrale Optionen",
         "Sauber"
       ],
-      "bookingTips": "Reliable budget option. Multiple locations. Book online for discounts. Simple but adequate."
+      "bookingTips": "Zuverlässige Budget-Option. Mehrere Standorte. Online buchen für Rabatte. Einfach, aber ausreichend."
     },
     {
       "name": "阿尼玛卿雪山营地",
       "nameEn": "Anyemaqen Mountain Camp",
       "budget": "mid",
       "priceRange": "¥300-600/night",
-      "address": "Maqen County",
+      "address": "Kreis Maqen",
       "coordinates": {
         "lat": 34.8171,
         "lng": 99.5782
@@ -2937,14 +2937,14 @@
         "Abgelegene Lage",
         "Abenteuer"
       ],
-      "bookingTips": "For serious trekkers only. Base for Anyemaqen expeditions. Altitude is extreme. Guide required."
+      "bookingTips": "Nur für ernsthafte Trekker. Basis für Anyemaqen-Expeditionen. Die Höhe ist extrem. Führer erforderlich."
     },
     {
       "name": "海晏宾馆",
       "nameEn": "Haiyan Hotel",
       "budget": "mid",
       "priceRange": "¥250-500/night",
-      "address": "Haiyan County",
+      "address": "Kreis Haiyan",
       "coordinates": {
         "lat": 36.7571,
         "lng": 100.9782
@@ -2956,14 +2956,14 @@
         "Lokales Erlebnis",
         "Preis-Leistung"
       ],
-      "bookingTips": "Good base for western lake exploration. Quieter than main lake area. Simple local hotels."
+      "bookingTips": "Gute Basis für die Erkundung des westlichen Sees. Ruhiger als das Hauptseegebiet. Einfache lokale Hotels."
     },
     {
       "name": "共和温泉宾馆",
       "nameEn": "Gonghe Hot Spring Hotel",
       "budget": "mid",
       "priceRange": "¥400-800/night",
-      "address": "Gonghe County",
+      "address": "Kreis Gonghe",
       "coordinates": {
         "lat": 36.4171,
         "lng": 100.6782
@@ -2975,14 +2975,14 @@
         "Hochebenen-Landschaft",
         "Spa-Einrichtungen"
       ],
-      "bookingTips": "Perfect after long drives on plateau. Soothe muscles in hot springs. Great winter destination."
+      "bookingTips": "Perfekt nach langen Fahrten auf dem Hochplateau. Muskeln in heißen Quellen entspannen. Großartiges Winterziel."
     },
     {
       "name": "祁连山草原民宿",
       "nameEn": "Qilian Mountain Grassland Homestay",
       "budget": "budget",
       "priceRange": "¥150-350/night",
-      "address": "Qilian County",
+      "address": "Kreis Qilian",
       "coordinates": {
         "lat": 38.2171,
         "lng": 100.5782
@@ -2994,14 +2994,14 @@
         "Lokale Familien",
         "Authentisch"
       ],
-      "bookingTips": "Stay with local Tibetan or Mongolian families. Extremely authentic. Limited English. Bring gifts."
+      "bookingTips": "Übernachten Sie bei einheimischen tibetischen oder mongolischen Familien. Sehr authentisch. Begrenzte Englischkenntnisse. Bringen Sie Geschenke mit."
     },
     {
       "name": "门源油菜花民宿",
       "nameEn": " Menyuan Rapeseed Flower Homestay",
       "budget": "budget",
       "priceRange": "¥120-280/night",
-      "address": " Menyuan County",
+      "address": "Kreis Menyuan",
       "coordinates": {
         "lat": 37.6171,
         "lng": 101.1782
@@ -3013,14 +3013,14 @@
         "Bergkulisse",
         "Lokale Familie"
       ],
-      "bookingTips": "Best July for flower season. The yellow flower fields are spectacular. Book well ahead in peak season."
+      "bookingTips": "Beste Reisezeit ist Juli für die Blumenzeit. Die gelben Blumenfelder sind spektakulär. Buchen Sie in der Hochsaison rechtzeitig im Voraus."
     },
     {
       "name": "果洛藏饰客栈",
       "nameEn": "Guoluo Tibetan Inn",
       "budget": "budget",
       "priceRange": "¥100-250/night",
-      "address": "Guoluo Prefecture",
+      "address": "Präfektur Guoluo",
       "coordinates": {
         "lat": 34.5171,
         "lng": 100.2782
@@ -3032,7 +3032,7 @@
         "Lokale Erfahrung",
         "Abenteuer"
       ],
-      "bookingTips": "For adventurous travelers only. Deep Tibetan plateau experience. Very limited English. Acclimatize first."
+      "bookingTips": "Nur für abenteuerlustige Reisende. Tiefe tibetische Hochebenen-Erfahrung. Sehr begrenzte Englischkenntnisse. Akklimatisieren Sie sich zuerst."
     }
   ],
   "payment": [
@@ -3041,34 +3041,34 @@
       "icon": "alipay",
       "description": "In Xining weit verbreitet akzeptiert",
       "howToUse": [
-        "Download before arrival",
+        "Vor der Ankunft herunterladen",
         "Karte verknüpfen oder cash hinzufügen"
       ],
       "tips": [
-        "Works in most locations",
-        "English available"
+        "Funktioniert an den meisten Orten",
+        "Englisch verfügbar"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Common payment in city",
+      "description": "Übliche Zahlungsmethode in der Stadt",
       "howToUse": [
-        "WeChat required",
+        "WeChat erforderlich",
         "Internationale Version verfügbar"
       ],
       "tips": [
-        "Set to English mode",
-        "Works for bike sharing"
+        "Auf Englisch umstellen",
+        "Funktioniert für Bike-Sharing"
       ]
     },
     {
       "method": "Cash",
       "icon": "cash",
-      "description": "Useful for remote areas",
+      "description": "Nützlich für abgelegene Gebiete",
       "howToUse": [
         "ATM in Städten",
-        "Bring extra to plateau"
+        "Extra für das Hochplateau mitbringen"
       ],
       "tips": [
         "Abgelegene Gebiete akzeptieren möglicherweise kein Mobiltelefon",
@@ -3079,73 +3079,73 @@
   "culturalTips": [
     {
       "category": "culture",
-      "title": "Tibetan Buddhist Respect",
+      "title": "Respekt vor dem tibetischen Buddhismus",
       "content": "Besuchen Sie das Kumbum-Kloster, gehen Sie im Uhrzeigersinn um die Pagoden, drehen Sie die Gebetsmühlen im Uhrzeigersinn und fotografieren Sie niemals Menschen beim Beten ohne Erlaubnis.",
       "importance": "high"
     },
     {
       "category": "culture",
-      "title": "Islamic Etiquette",
+      "title": "Islamische Etikette",
       "content": "Die Dongguan-Moschee ist ein aktiver Ort des Gebets. Kleiden Sie sich bescheiden, ziehen Sie vor dem Betreten der Gebetsräume die Schuhe aus und vermeiden Sie Besuche während der Gebetszeiten.",
       "importance": "high"
     },
     {
       "category": "food",
-      "title": "Qinghai Cuisine",
+      "title": "Qinghai-Küche",
       "content": "Die Qinghai-Küche vereint tibetische, mongolische und Hui-Einflüsse. Unbedingt probieren: Handgegrilltes Lamm, Yak-Buttertee, Gerstenwein und frischer Joghurt.",
       "importance": "high"
     },
     {
       "category": "altitude",
-      "title": "Altitude Sickness Prevention",
+      "title": "Vorbeugung gegen Höhenkrankheit",
       "content": "Xining liegt auf 2.265 Metern. Akklimatisieren Sie sich 1-2 Tage, bevor Sie höhere Gebiete wie den Qinghai-See (3.200 Meter) besuchen. Trinken Sie viel Wasser und vermeiden Sie anfangs anstrengende Aktivitäten.",
       "importance": "high"
     },
     {
       "category": "culture",
-      "title": "Minority Cultures",
+      "title": "Minderheitenkulturen",
       "content": "Qinghai hat tibetische, Hui, Tu, mongolische und Salar-Minderheiten. Jede hat einzigartige Bräuche und Traditionen. Respektieren Sie lokale Praktiken und fragen Sie vor dem Fotografieren um Erlaubnis.",
       "importance": "medium"
     },
     {
       "category": "religion",
-      "title": "Monastery Protocol",
+      "title": "Klosterprotokoll",
       "content": "In tibetischen Klöstern: Treten Sie nicht auf die Schwelle, richten Sie die Füße weg von den Statuen, gehen Sie im Uhrzeigersinn und sprechen Sie leise. Geben Sie kleine Spenden, wenn Sie dazu aufgefordert werden.",
       "importance": "medium"
     },
     {
       "category": "etiquette",
-      "title": "Tea House Culture",
+      "title": "Teekultur",
       "content": "In tibetischen Teehäusern wird der Tee mit beiden Händen entgegengenommen. Es ist höflich, den Becher immer voll zu halten - der Gastgeber wird automatisch nachschenken. Der Buttertee ist ein erworbenes Geschmackserlebnis.",
       "importance": "medium"
     },
     {
       "category": "culture",
-      "title": "Plateau Environment",
+      "title": "Hochplateau-Umgebung",
       "content": "Das Ökosystem des Hochlands ist empfindlich. Bleiben Sie auf markierten Wegen, stören Sie die Tierwelt nicht, nehmen Sie Ihren Müll mit und unterstützen Sie nachhaltigen Tourismus.",
       "importance": "high"
     },
     {
       "category": "food",
-      "title": "Alcohol Traditions",
+      "title": "Alkoholtraditionen",
       "content": "Gerstenwein (qingkejiu) ist wichtig in der lokalen Kultur. Beim Anstoßen hält man den Becher mit beiden Händen und nimmt ihn auch mit beiden Händen entgegen. Es ist höflich, mindestens einen Schluck zu trinken.",
       "importance": "medium"
     },
     {
       "category": "culture",
-      "title": "Prayer Flags",
+      "title": "Gebetsfahnen",
       "content": "Bunte Gebetsfahnen sind heilig - treten Sie nicht auf sie oder entfernen Sie sie nicht. Wenn sie alt sind, sollten sie durch Verbrennen ersetzt werden, nicht weggeworfen.",
       "importance": "medium"
     },
     {
       "category": "weather",
-      "title": "Plateau Climate",
+      "title": "Hochlandklima",
       "content": "Das Wetter auf dem Hochland ändert sich schnell. Selbst die Sommernächte sind kalt. Die UV-Strahlung ist ganzjährig intensiv. Bringen Sie Schichten und Sonnencreme unabhängig von der Jahreszeit mit.",
       "importance": "high"
     },
     {
       "category": "culture",
-      "title": "Nomadic Communities",
+      "title": "Nomadengemeinschaften",
       "content": "Einige tibetische und mongolische Familien praktizieren noch traditionelles Nomadenleben. Bitten Sie beim Besuch um Erlaubnis und respektieren Sie ihre Lebensweise.",
       "importance": "medium"
     },
@@ -3157,13 +3157,13 @@
     },
     {
       "category": "language",
-      "title": "Language Diversity",
+      "title": "Sprachvielfalt",
       "content": "Mandarin ist weit verbreitet, aber auch Tibetisch, Mongolisch und Hui werden gesprochen. In abgelegenen Gebieten helfen Handzeichen und Geduld bei der Kommunikation.",
       "importance": "low"
     },
     {
       "category": "etiquette",
-      "title": "Gift Giving",
+      "title": "Geschenke überreichen",
       "content": "Besuchen Sie tibetische oder mongolische Familien, bringen Sie kleine Geschenke (Süßigkeiten, Obst, Tee) mit. Geschenke werden mit beiden Händen entgegengenommen. Vermeiden Sie es, spitze Gegenstände wie Messer zu verschenken.",
       "importance": "medium"
     }

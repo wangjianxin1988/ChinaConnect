@@ -3,38 +3,38 @@
   "name": "济南",
   "nameEn": "Jinan",
   "country": "China",
-  "population": "9.2 million",
+  "population": "9,2 Millionen",
   "coordinates": {
     "lat": 36.6512,
     "lng": 117.1205
   },
-  "timezone": "UTC+8 (China Standard Time)",
+  "timezone": "UTC+8 (Chinesische Standardzeit)",
   "description": "Jinan, die Hauptstadt der Provinz Shandong, ist wegen ihrer vielen natürlichen Quellen als \"Stadt der Quellen\" bekannt. Zu den symbolträchtigen Sehenswürdigkeiten zählen die Baotu-Quelle, die als erste Quelle der Welt gilt, der Daming-See und der Qianfo-Berg. Mit einer 4000-jährigen Geschichte ist sie ein kulturelles Zentrum und Geburtsort vieler berühmter chinesischer Persönlichkeiten.",
   "coverImage": "/img/ext/364406446214.webp",
   "highlights": [
-    "Baotu Spring - Most famous spring in China",
-    "Daming Lake - Largest urban lake in China",
-    "Thousand Buddha Mountain - Buddhist heritage",
-    "Quancheng Road - Historic commercial district",
-    "Shandong Museum - Provincial cultural heritage"
+    "Baotu-Quelle - Berühmteste Quelle Chinas",
+    "Daming-See - Größter Stadtsee Chinas",
+    "Tausend-Buddha-Berg - Buddhistisches Erbe",
+    "Quancheng-Straße - Historisches Geschäftsviertel",
+    "Shandong-Museum - Kulturelles Erbe der Provinz"
   ],
   "climate": {
-    "type": "Temperate continental monsoon",
+    "type": "Gemäßigtes kontinentales Monsunklima",
     "bestMonths": [
       "April",
-      "May",
+      "Mai",
       "September",
-      "October"
+      "Oktober"
     ],
     "avgSummerTemp": "27C (81F)",
     "avgWinterTemp": "1C (34F)",
-    "tips": "Best in spring for springs and autumn for foliage. Summer can be hot and humid. Winter cold but sunny. Spring festivals around April."
+    "tips": "Am besten im Frühling für Quellen und im Herbst für Laub. Der Sommer kann heiß und feucht sein. Der Winter ist kalt, aber sonnig. Frühlingsfeste finden etwa im April statt."
   },
   "attractions": [
     {
       "id": "baotu-spring",
       "name": "趵突泉",
-      "nameEn": "Baotu Spring",
+      "nameEn": "Baotu-Quelle",
       "category": "natural",
       "image": "/img/ext/66d2c1a6954f.webp",
       "description": "Die berühmteste Quelle Chinas, eine der drei bedeutendsten Quellen weltweit. Drei große Quellen sprudeln das ganze Jahr über mit kristallklarem Wasser.",
@@ -58,7 +58,7 @@
     {
       "id": "daming-lake",
       "name": "大明湖",
-      "nameEn": "Daming Lake",
+      "nameEn": "Daming-See",
       "category": "natural",
       "image": "/img/ext/53a17ff02c86.webp",
       "description": "Größter urbaner See Chinas, erstreckt sich über 580.000 Quadratmeter. Wunderschön in allen Jahreszeiten mit historischen Pavillons und Gärten.",
@@ -68,7 +68,7 @@
         "lng": 117.0194
       },
       "openingHours": "24 Stunden geöffnet (Fähren 08:00-18:00 Uhr)",
-      "ticketPrice": "Free (ferry 30-50¥)",
+      "ticketPrice": "Kostenlos (Fähre 30-50¥)",
       "recommendedVisitTime": "2-3 Stunden",
       "highlights": [
         "Radfahren am See",
@@ -82,7 +82,7 @@
     {
       "id": "thousand-buddha-mountain",
       "name": "千佛山",
-      "nameEn": "Thousand Buddha Mountain",
+      "nameEn": "Tausend-Buddha-Berg",
       "category": "cultural",
       "image": "/img/ext/20ba084c3257.webp",
       "description": "Berg mit antiken buddhistischen Schnitzereien aus der Zeit vor 1500 Jahren. Bietet Panoramablick über die Stadt Jinan.",
@@ -130,7 +130,7 @@
     {
       "id": "shandong-museum",
       "name": "山东省博物馆",
-      "nameEn": "Shandong Museum",
+      "nameEn": "Shandong-Museum",
       "category": "cultural",
       "image": "/img/ext/30287a164c9e.webp",
       "description": "Erstklassiges Museum, das 50.000 Jahre Geschichte der Provinz Shandong zeigt, mit hervorragenden Sammlungen antiker Bronzen, Keramiken und buddhistischer Kunst.",
@@ -154,7 +154,7 @@
     {
       "id": "pearl-lake",
       "name": "珍珠泉",
-      "nameEn": "Pearl Spring",
+      "nameEn": "Perlenquelle",
       "category": "natural",
       "image": "/img/ext/90c2f10df87a.webp",
       "description": "Wunderschöne Quelle im Gelände der Provinzregierung mit historischen Pavillons und Lotusteichen.",
@@ -178,7 +178,7 @@
     {
       "id": "four-gratitude-mountain",
       "name": "英雄山",
-      "nameEn": "Hero Mountain",
+      "nameEn": "Heldenberg",
       "category": "natural",
       "image": "/img/ext/1b3a09b8ec59.webp",
       "description": "Berg mit revolutionärer Geschichte, heute ein öffentlicher Park mit Kulturmarkt am Fuße.",
@@ -202,11 +202,11 @@
     {
       "id": "lixia-spring",
       "name": "历下泉",
-      "nameEn": "Lixia Spring",
+      "nameEn": "Lixia-Quelle",
       "category": "natural",
       "image": "/img/ext/6ff5a1e7187d.webp",
       "description": "Serie wunderschöner Quellen im Bezirk Lixia, Teil der berühmten Quellenkultur von Jinan.",
-      "address": "Lixia District",
+      "address": "Bezirk Lixia",
       "coordinates": {
         "lat": 36.6612,
         "lng": 117.0394
@@ -321,7 +321,7 @@
     {
       "id": "lingshan-island",
       "name": "灵岩寺",
-      "nameEn": "Lingshan Temple",
+      "nameEn": "Lingshan-Tempel",
       "category": "cultural",
       "image": "/img/ext/3eb4cb0b2027.webp",
       "description": "Einer der vier großen buddhistischen Tempel Chinas, berühmt für seine antike Architektur und die Berglage.",
@@ -345,7 +345,7 @@
     {
       "id": "red-beach",
       "name": "红叶谷",
-      "nameEn": "Red Leaf Valley",
+      "nameEn": "Rotes-Blatt-Tal",
       "category": "natural",
       "image": "/img/ext/48b1d43ad8b8.webp",
       "description": "Wunderschönes Tal, berühmt für seine Herbstfärbung, mit 500 Acres Ahornbäumen.",
@@ -397,7 +397,7 @@
       "category": "cultural",
       "image": "/img/ext/2baf9b276fc6.webp",
       "description": "Kulturelles Tourismusviertel, das traditionelle Jinan-Architektur und lokales Kunsthandwerk präsentiert.",
-      "address": "Lixia District",
+      "address": "Bezirk Lixia",
       "coordinates": {
         "lat": 36.6612,
         "lng": 117.0594
@@ -409,7 +409,7 @@
         "Traditionelle Architektur",
         "Lokales Kunsthandwerk",
         "Straßenaufführungen",
-        "Souvenirs"
+        "Andenken"
       ],
       "tips": "Am besten abends bei Beleuchtung. Gut für Souvenirs. Traditionelle Aufführungen am Wochenende.",
       "phone": "+86 053 1 4207 1967"
@@ -417,7 +417,7 @@
     {
       "id": "chuhe-cultural-street",
       "name": "曲水亭街",
-      "nameEn": "Qushui Ting Street",
+      "nameEn": "Qushui-Ting-Straße",
       "category": "cultural",
       "image": "/img/ext/ec6bda6c85d6.webp",
       "description": "Historische Straße mit traditionellen Geschäftshäusern, Teehäusern und wunderschönen Kanälen.",
@@ -441,11 +441,11 @@
     {
       "id": "jinandong-street",
       "name": "金街",
-      "nameEn": "Jin Street",
+      "nameEn": "Jin-Straße",
       "category": "cultural",
       "image": "/img/ext/c16eb76a94f6.webp",
       "description": "Erste Fußgängerzone in Jinan mit MixC-Einkaufszentrum und internationalen Marken.",
-      "address": "Lixia District",
+      "address": "Bezirk Lixia",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0294
@@ -465,11 +465,11 @@
     {
       "id": "jinan-old-river",
       "name": "护城河",
-      "nameEn": "City Moat",
+      "nameEn": "Stadtgraben",
       "category": "natural",
       "image": "/img/ext/309f30e43563.webp",
       "description": "Historischer Wassergraben, der die Altstadt umgibt, mit wunderschönem Quellwasser und Spazierwegen.",
-      "address": "Around old city center",
+      "address": "Rund um das alte Stadtzentrum",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0294
@@ -489,7 +489,7 @@
     {
       "id": "liuhe-temple",
       "name": "柳荷山",
-      "nameEn": "Liuhe Mountain",
+      "nameEn": "Liuhe-Berg",
       "category": "natural",
       "image": "/img/ext/53e90497352f.webp",
       "description": "Berg, benannt nach seinen berühmten Weiden und Lotosblumen, mit Wanderwegen und Tempel.",
@@ -513,7 +513,7 @@
     {
       "id": "century-wisdom-park",
       "name": "和谐广场",
-      "nameEn": "Harmony Square",
+      "nameEn": "Harmonie-Platz",
       "category": "cultural",
       "image": "/img/ext/994bfae9b723.webp",
       "description": "Moderner öffentlicher Platz mit Springbrunnen, Einkaufs- und Unterhaltungskomplex.",
@@ -565,13 +565,13 @@
       "category": "historical",
       "image": "/img/ext/9f32b9507fe6.webp",
       "description": "Historischer Kanal mit Bootstouren, die Jinans Wasserkultur und Quellsysteme präsentieren.",
-      "address": "City Moat System",
+      "address": "Stadtgrabensystem",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0294
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "100¥ (boat tour)",
+      "ticketPrice": "100¥ (Bootstour)",
       "recommendedVisitTime": "1-2 Stunden",
       "highlights": [
         "Bootstour",
@@ -585,17 +585,17 @@
     {
       "id": "tianqiao-arts",
       "name": "天桥",
-      "nameEn": "Tianqiao Arts District",
+      "nameEn": "Tianqiao-Kunstbezirk",
       "category": "cultural",
       "image": "/img/ext/76d8ce3dced1.webp",
       "description": "Wiederbelebtes Industriegebiet, das zu einem Kunstviertel mit Galerien und Aufführungsstätten wurde.",
-      "address": "Tianqiao District",
+      "address": "Bezirk Tianqiao",
       "coordinates": {
         "lat": 36.6812,
         "lng": 117.0194
       },
-      "openingHours": "Various by venue",
-      "ticketPrice": "Varies",
+      "openingHours": "Je nach Veranstaltungsort",
+      "ticketPrice": "Variiert",
       "recommendedVisitTime": "2-3 Stunden",
       "highlights": [
         "Galerien",
@@ -609,7 +609,7 @@
     {
       "id": "thousand-buddha",
       "name": "千佛山",
-      "nameEn": "Thousand Buddha Mountain",
+      "nameEn": "Tausend-Buddha-Berg",
       "category": "nature",
       "description": "Einer der drei großen Aussichtspunkte von Jinan mit steinernen Buddha-Statuen aus der Sui-Dynastie.",
       "address": "Bezirk Lixia, Stadt Jinan",
@@ -632,7 +632,7 @@
     {
       "id": "five-dragon-pool",
       "name": "五龙潭",
-      "nameEn": "Wulongtan Park",
+      "nameEn": "Wulongtan-Park",
       "category": "nature",
       "description": "Eine der vier großen Quellengruppen von Jinan, darunter berühmte Quellen wie der Fünf-Drachen-Teich und die Tianjing-Quelle.",
       "address": "Bezirk Lixia, Stadt Jinan",
@@ -654,7 +654,7 @@
     {
       "id": "quancheng-square",
       "name": "泉城广场",
-      "nameEn": "Quancheng Square",
+      "nameEn": "Quancheng-Platz",
       "category": "landmark",
       "description": "Jinans zentraler Stadtplatz mit der Skulptur des Quellensymbols.",
       "address": "Bezirk Lixia, Stadt Jinan",
@@ -676,7 +676,7 @@
     {
       "id": "lingyan-temple",
       "name": "灵岩寺",
-      "nameEn": "Lingyan Temple",
+      "nameEn": "Lingyan-Tempel",
       "category": "temple",
       "description": "Der erste der vier großen alten Tempel Chinas, mit der Tausend-Buddha-Halle und der Pizhi-Pagode.",
       "address": "Bezirk Changqing, Stadt Jinan",
@@ -699,7 +699,7 @@
     {
       "id": "jinan-museum",
       "name": "济南市博物馆",
-      "nameEn": "Jinan Museum",
+      "nameEn": "Jinan-Museum",
       "category": "museum",
       "description": "Ein Museum, das Jinans Geschichte und Kultur präsentiert.",
       "address": "Bezirk Lixia, Stadt Jinan",
@@ -721,7 +721,7 @@
     {
       "id": "furong-street",
       "name": "芙蓉街",
-      "nameEn": "Furong Street",
+      "nameEn": "Furong-Straße",
       "category": "street",
       "description": "Jinans älteste Geschäftsstraße, die eine Vielzahl von Snacks bietet.",
       "address": "Bezirk Lixia, Stadt Jinan",
@@ -766,7 +766,7 @@
     {
       "id": "quancheng-park",
       "name": "泉城公园",
-      "nameEn": "Quancheng Park",
+      "nameEn": "Quancheng-Park",
       "category": "park",
       "description": "Jinans größter Stadtpark mit Seen und Gärten.",
       "address": "Bezirk Lixia, Stadt Jinan",
@@ -810,7 +810,7 @@
     {
       "id": "lishan-district",
       "name": "历下区",
-      "nameEn": "Lixia District",
+      "nameEn": "Lixia-Bezirk",
       "category": "landmark",
       "description": "Jinans zentrales Stadtgebiet, in dem sich die meisten seiner berühmten historischen Stätten befinden.",
       "address": "Bezirk Lixia, Stadt Jinan",
@@ -854,7 +854,7 @@
     {
       "id": "jinan-zoo",
       "name": "济南动物园",
-      "nameEn": "Jinan Zoo",
+      "nameEn": "Jinan-Zoo",
       "category": "nature",
       "description": "Der größte Zoo der Provinz Shandong mit über 300 Tierarten.",
       "address": "Bezirk Tianqiao, Jinan",
@@ -876,7 +876,7 @@
     {
       "id": "mingshui-ancient",
       "name": "明水古城",
-      "nameEn": "Mingshui Ancient City",
+      "nameEn": "Mingshui-Altstadt",
       "category": "street",
       "description": "Eine antike Stadt im Bezirk Zhangqiu mit Quellen und antiker Architektur.",
       "address": "Bezirk Zhangqiu, Jinan",
@@ -898,7 +898,7 @@
     {
       "id": "changqing-forest",
       "name": "长清园博园",
-      "nameEn": "Changqing Garden Expo",
+      "nameEn": "Changqing-Garten-Expo",
       "category": "park",
       "description": "Jinan Garden Expo Park mit verschiedenen thematischen Gärten.",
       "address": "Bezirk Changqing, Stadt Jinan",
@@ -942,7 +942,7 @@
     {
       "id": "laiwu-forest",
       "name": "莱芜莲花山",
-      "nameEn": "Laiwu Lianhua Mountain",
+      "nameEn": "Laiwu-Lianhua-Berg",
       "category": "nature",
       "description": "Ein malerisches Gebiet im Süden von Jinan mit Lotusblumen und Wasserfällen.",
       "address": "Bezirk Laiwu, Jinan",
@@ -964,7 +964,7 @@
     {
       "id": "jinan-hotspring",
       "name": "济南温泉",
-      "nameEn": "Jinan Hot Spring",
+      "nameEn": "Jinan-Heißquelle",
       "category": "nature",
       "description": "Jinan verfügt über reichhaltige Thermalquellen-Ressourcen, wo Sie in heißen Quellen baden können.",
       "address": "Bezirk Licheng, Jinan",
@@ -973,7 +973,7 @@
         "lng": 117.22
       },
       "openingHours": "Ganztägig",
-      "ticketPrice": "100 Yuan",
+      "ticketPrice": "100 Yuan.",
       "recommendedVisitTime": "Ein halber Tag.",
       "highlights": [
         "Heiße Quellen"
@@ -1027,7 +1027,7 @@
     {
       "id": "jinan-tea",
       "name": "济南茶叶批发市场",
-      "nameEn": "Jinan Tea Market",
+      "nameEn": "Jinan-Teemarkt",
       "category": "street",
       "description": "Der größte Teemarkt in Nordchina, wo Sie verschiedene Tees probieren können.",
       "address": "Bezirk Huaiyin, Stadt Jinan",
@@ -1049,7 +1049,7 @@
     {
       "id": "jinan-night",
       "name": "泉城夜景",
-      "nameEn": "Quancheng Night View",
+      "nameEn": "Quancheng Nachtansicht",
       "category": "landmark",
       "description": "Nächtliche Lichtshows am Baotu-Quell und am Daming-See.",
       "address": "Bezirk Lixia, Stadt Jinan",
@@ -1071,7 +1071,7 @@
     {
       "id": "zhangqiu-baihua",
       "name": "百脉泉",
-      "nameEn": "Baimai Spring",
+      "nameEn": "Baimai-Quelle",
       "category": "nature",
       "description": "Eine berühmte Quelle in Zhangqiu, mit dem spektakulären Anblick von Hunderten von Quellen, die gleichzeitig hervorsprudeln.",
       "address": "Bezirk Zhangqiu, Jinan",
@@ -1115,7 +1115,7 @@
     {
       "id": "high-tech-zone",
       "name": "济南高新区",
-      "nameEn": "Jinan High-tech Zone",
+      "nameEn": "Jinan High-Tech-Zone",
       "category": "landmark",
       "description": "Jinans Wissenschafts- und Technologiezentrum mit moderner Architektur.",
       "address": "Hightech-Zone, Stadt Jinan",
@@ -1400,7 +1400,7 @@
       "cuisine": "Shandong-Küche",
       "avgPrice": 80,
       "rating": 4.4,
-      "address": "Lixia District",
+      "address": "Bezirk Lixia",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0294
@@ -1467,15 +1467,15 @@
       "hours": "10:30-21:30",
       "description": "Beliebtes Restaurant, das authentische Shandong-Küche in zentraler Lage serviert.",
       "dishHighlights": [
-        "Shandong style seafood",
-        "Jinan noodles",
+        "Meeresfrüchte nach Shandong-Art",
+        "Jinan-Nudeln",
         "Geschmorte Gerichte",
         "Frisches Gemüse"
       ],
       "tags": [
         "lokal",
         "Shandong-Küche",
-        "central",
+        "zentral",
         "zuverlässig"
       ],
       "imageUrl": "/img/ext/45fcc7a963a5.webp"
@@ -1483,12 +1483,12 @@
     {
       "id": "jinan-11",
       "name": "崔鸭",
-      "nameEn": "Cui Duck",
+      "nameEn": "Cui-Ente",
       "type": "lokal",
-      "cuisine": "Jinan Roast Duck",
+      "cuisine": "Jinan-Ente",
       "avgPrice": 120,
       "rating": 4.6,
-      "address": "Shizhong District",
+      "address": "Bezirk Shizhong",
       "coordinates": {
         "lat": 36.6212,
         "lng": 117.0194
@@ -1496,15 +1496,15 @@
       "hours": "11:00-21:00",
       "description": "Berühmtes Restaurant für Ente mit knuspriger Haut und traditioneller Zubereitung.",
       "dishHighlights": [
-        "Roast duck",
-        "Pancakes",
-        "Cucumber and scallion",
+        "Ente braten",
+        "Pfannkuchen",
+        "Gurke und Frühlingszwiebel",
         "Entensuppe"
       ],
       "tags": [
         "lokal",
         "berühmt",
-        "roast-duck",
+        "Bratente",
         "traditionell"
       ],
       "imageUrl": "/img/ext/6756df00e98e.png",
@@ -1515,10 +1515,10 @@
       "name": "老董家",
       "nameEn": "Lao Dong's",
       "type": "lokal",
-      "cuisine": "Jinan Home Style",
+      "cuisine": "Jinaner Hausmannskost",
       "avgPrice": 70,
       "rating": 4.6,
-      "address": "Near Daming Lake",
+      "address": "In der Nähe des Daming-Sees",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0194
@@ -1528,7 +1528,7 @@
       "dishHighlights": [
         "Hausmannskost",
         "Geschmortes Schweinefleisch",
-        "Fish dishes",
+        "Fischgerichte",
         "Saisonales Gemüse"
       ],
       "tags": [
@@ -1649,7 +1649,7 @@
       "dishHighlights": [
         "Burger",
         "Pommes",
-        "Chicken nuggets",
+        "Hähnchennuggets",
         "Kaffee"
       ],
       "tags": [
@@ -1664,9 +1664,9 @@
     {
       "id": "jinan-17",
       "name": "海底捞",
-      "nameEn": "Haidilao Hotpot",
+      "nameEn": "Haidilao Feuertopf",
       "type": "Kette",
-      "cuisine": "Hotpot",
+      "cuisine": "Feuertopf",
       "avgPrice": 150,
       "rating": 4.8,
       "address": "MixC Mall, Bezirk Lixia",
@@ -1685,7 +1685,7 @@
       ],
       "tags": [
         "Kette",
-        "Hotpot",
+        "Feuertopf",
         "Service",
         "Unterhaltung",
         "spätabends"
@@ -1708,10 +1708,10 @@
       "hours": "10:00-21:30",
       "description": "Weltberühmte taiwanesische Teigtaschen-Kette mit ausgezeichneten Xiaolongbao.",
       "dishHighlights": [
-        "Xiaolongbao",
+        "Kleine Teigtaschen",
         "Gebratener Reis",
         "Nudeln",
-        "Desserts"
+        "Nachspeisen"
       ],
       "tags": [
         "Kette",
@@ -1730,7 +1730,7 @@
       "cuisine": "Jiangsu",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Daming Lake area",
+      "address": "Daming-See-Gebiet",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0194
@@ -1739,15 +1739,15 @@
       "description": "Beliebte Kette mit Jiangsu-Küche in traditioneller Atmosphäre.",
       "dishHighlights": [
         "Entenblutsuppe",
-        "Salt duck",
+        "Salzente",
         "Gedämpfte Teigtaschen",
-        "Jiangsu dishes"
+        "Jiangsu-Gerichte"
       ],
       "tags": [
         "Restaurantkette",
         "jiangsu-küche",
         "traditionell",
-        "atmospheric"
+        "atmosphärisch"
       ],
       "imageUrl": "/img/ext/2b02a2d279a0.webp",
       "phone": "+86 053 1 9709 0047"
@@ -1755,7 +1755,7 @@
     {
       "id": "jinan-20",
       "name": "威尼斯西餐厅",
-      "nameEn": "Venice Western Restaurant",
+      "nameEn": "Venedig Westliches Restaurant",
       "type": "gehoben",
       "cuisine": "Italienisch",
       "avgPrice": 200,
@@ -1769,10 +1769,10 @@
       "hours": "11:30-14:30, 18:00-22:00",
       "description": "Italienisches Restaurant im Shangri-La mit elegantem Ambiente und authentischer Küche.",
       "dishHighlights": [
-        "Pasta",
+        "Nudeln",
         "Pizza",
         "Risotto",
-        "Italian wine"
+        "Italienischer Wein"
       ],
       "tags": [
         "Feinschmecker-Restaurant",
@@ -1785,7 +1785,7 @@
     {
       "id": "jinan-21",
       "name": "犹太牛肉面",
-      "nameEn": "Jewish Beef Noodles",
+      "nameEn": "Jüdische Rindfleischnudeln",
       "type": "lokal",
       "cuisine": "Halal",
       "avgPrice": 45,
@@ -1818,10 +1818,10 @@
       "name": "东来顺",
       "nameEn": "Dong Lai Shun",
       "type": "Kette",
-      "cuisine": "Mongolian Hotpot",
+      "cuisine": "Mongolischer Feuertopf",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "Lixia District",
+      "address": "Bezirk Lixia",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0294
@@ -1830,14 +1830,14 @@
       "hours": "10:30-22:00",
       "description": "Berühmte mongolische Hotpot-Kette mit erstklassigem Lammfleisch und traditioneller Brühe.",
       "dishHighlights": [
-        "Mongolian lamb",
-        "Hotpot",
+        "Mongolisches Lamm",
+        "Feuertopf",
         "Traditionelle Brühe",
-        "Variety of toppings"
+        "Verschiedene Beläge"
       ],
       "tags": [
         "Restaurantkette",
-        "Hotpot",
+        "Feuertopf",
         "mongolisch",
         "Premium"
       ],
@@ -1851,7 +1851,7 @@
       "cuisine": "Shandong-Küche",
       "avgPrice": 120,
       "rating": 4.5,
-      "address": "Shizhong District",
+      "address": "Bezirk Shizhong",
       "coordinates": {
         "lat": 36.6212,
         "lng": 117.0194
@@ -1860,8 +1860,8 @@
       "hours": "11:00-14:00, 17:00-21:00",
       "description": "Etabliertes Restaurant mit klassischen Shandong-Gerichten und historischem Ambiente.",
       "dishHighlights": [
-        "Shandong classic dishes",
-        "Braised prawns",
+        "Shandong-Klassiker",
+        "Geschmorte Garnelen",
         "Süß-saurer Karpfen",
         "Saisonale Gerichte"
       ],
@@ -1878,7 +1878,7 @@
       "name": "鲁信宫",
       "nameEn": "Lu Xin Gong",
       "type": "gehoben",
-      "cuisine": "Imperial Shandong",
+      "cuisine": "Kaiserliches Shandong",
       "avgPrice": 300,
       "rating": 4.8,
       "address": "666 East Road, Bezirk Lixia",
@@ -1891,8 +1891,8 @@
       "description": "Hochwertiges kaiserliches Shandong-Restaurant mit aufwendiger Dekoration und erstklassigem Service.",
       "dishHighlights": [
         "Kaiserliches Festmahl",
-        "Bird's nest soup",
-        "Shark fin",
+        "Schwalbennestersuppe",
+        "Haifischflosse",
         "Premium-Meeresfrüchte"
       ],
       "tags": [
@@ -1911,7 +1911,7 @@
       "cuisine": "Jinan",
       "avgPrice": 90,
       "rating": 4.5,
-      "address": "Near Baotu Spring",
+      "address": "In der Nähe der Baotu-Quelle",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0294
@@ -1919,9 +1919,9 @@
       "hours": "10:30-21:30",
       "description": "Restaurant, das sich der Jinan-Küche widmet, mit Fokus auf lokale kulinarische Traditionen.",
       "dishHighlights": [
-        "Jinan specialty dishes",
-        "Spring water tofu",
-        "Local seafood",
+        "Jinaner Spezialitäten",
+        "Quellwasser-Tofu",
+        "Lokale Meeresfrüchte",
         "Traditionelle Rezepte"
       ],
       "tags": [
@@ -2663,7 +2663,7 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major Chinese cities",
+        "from": "Große chinesische Städte",
         "to": "Internationaler Flughafen Jinan Yaoqiang (TNA)",
         "duration": "Variiert (1,5 Std. von Peking, 2 Std. von Shanghai)",
         "price": "500-1800¥",
@@ -2674,7 +2674,7 @@
         "type": "train",
         "from": "Peking (2 Std.), Shanghai (2,5 Std.), Qingdao (2 Std.)",
         "to": "Bahnhof Jinan / Westbahnhof Jinan",
-        "duration": "2-3 hours",
+        "duration": "2-3 Stunden",
         "price": "150-600¥",
         "frequency": "Mehrere Hochgeschwindigkeitszüge täglich",
         "tips": "Jinan West für Hochgeschwindigkeitszüge. Bahnhof Jinan für reguläre Züge. Beide haben U-Bahn-Anschluss."
@@ -2682,21 +2682,21 @@
     ],
     "local": {
       "metro": [
-        "4 lines operational",
-        "Single ride: 2-7¥",
+        "4 Linien in Betrieb",
+        "Einzelfahrt: 2-7¥",
         "Die Linien 1 und 2 decken die meisten Touristenbereiche ab",
         "Verbindet beide Bahnhöfe und den Flughafen"
       ],
       "bus": [
-        "Extensive network",
-        "Single ride: 2¥",
+        "Umfangreiches Netz",
+        "Einzelfahrt: 2¥",
         "Touristenbereiche gut angebunden",
-        "Use apps for routes"
+        "Apps für Routen nutzen"
       ],
       "taxi": [
         "Grundpreis: 10¥ (erste 3 km)",
         "Nachtzuschlag: 20 % extra",
-        "Most attractions 15-40¥",
+        "Die meisten Sehenswürdigkeiten: 15-40¥",
         "Didi für Englisch empfohlen"
       ],
       "bike": [
@@ -2725,7 +2725,7 @@
         "Seeblick",
         "Mehrere Restaurants"
       ],
-      "bookingTips": "Best location for sightseeing. Book lake view rooms. Famous brunch."
+      "bookingTips": "Beste Lage für Besichtigungen. Seeblickzimmer buchen. Berühmtes Frühstück."
     },
     {
       "name": "济南贵和洲际酒店",
@@ -2744,7 +2744,7 @@
         "Hochhaus",
         "Zentrale Lage"
       ],
-      "bookingTips": "Newer property. Great for business. Excellent views."
+      "bookingTips": "Neuere Unterkunft. Ideal für Geschäftsreisende. Hervorragende Aussicht."
     },
     {
       "name": "山东大厦",
@@ -2763,7 +2763,7 @@
         "Zentrale Lage",
         "Guter Service"
       ],
-      "bookingTips": "Good value luxury. Near major attractions. Traditional Chinese hotel."
+      "bookingTips": "Guter Luxus zum fairen Preis. In der Nähe der wichtigsten Sehenswürdigkeiten. Traditionelles chinesisches Hotel."
     },
     {
       "name": "济南银座佳悦酒店",
@@ -2782,7 +2782,7 @@
         "U-Bahn-Anschluss",
         "Gutes Frühstück"
       ],
-      "bookingTips": "Best value in center. Near shopping. Metro nearby."
+      "bookingTips": "Bestes Preis-Leistungs-Verhältnis im Zentrum. In der Nähe von Einkaufsmöglichkeiten. U-Bahn in der Nähe."
     },
     {
       "name": "Jinan Quancheng Hotel",
@@ -2801,7 +2801,7 @@
         "Traditioneller Stil",
         "Guter Service"
       ],
-      "bookingTips": "Perfect for sightseeing. Walk to major springs."
+      "bookingTips": "Perfekt für Sightseeing. Zu Fuß zu den wichtigsten Quellen."
     },
     {
       "name": "Jinan Blue Sea Yuhua Hotel",
@@ -2820,7 +2820,7 @@
         "Gutes Frühstück",
         "Zentral"
       ],
-      "bookingTips": "Good Chinese hotel chain. Reliable quality."
+      "bookingTips": "Gute chinesische Hotelkette. Zuverlässige Qualität."
     },
     {
       "name": "Jinan Jinxiu Quancheng Hotel",
@@ -2839,7 +2839,7 @@
         "Gutes Restaurant",
         "Zentral"
       ],
-      "bookingTips": "Great views. Near Daming Lake. Good restaurant."
+      "bookingTips": "Tolle Aussicht. In der Nähe des Daming-Sees. Gutes Restaurant."
     },
     {
       "name": "Jinan Perlenquell-Hotel",
@@ -2858,7 +2858,7 @@
         "Gartenanlage",
         "Ruhig"
       ],
-      "bookingTips": "Peaceful location. Great for nature lovers."
+      "bookingTips": "Ruhige Lage. Ideal für Naturliebhaber."
     },
     {
       "name": "Home Inn Jinan Quancheng-Platz",
@@ -2877,7 +2877,7 @@
         "Sauber",
         "U-Bahn-Anschluss"
       ],
-      "bookingTips": "Best budget option in center. Simple but reliable."
+      "bookingTips": "Beste Budget-Option im Zentrum. Einfach, aber zuverlässig."
     },
     {
       "name": "7天连锁酒店济南泉城路店",
@@ -2896,14 +2896,14 @@
         "Einfach",
         "Sauber"
       ],
-      "bookingTips": "Reliable budget chain. Good location."
+      "bookingTips": "Zuverlässige Budget-Kette. Gute Lage."
     },
     {
       "name": "Jinan Jugendherberge",
       "nameEn": "Jinan Youth Hostel",
       "budget": "budget",
       "priceRange": "¥80-200/night",
-      "address": "Near Daming Lake",
+      "address": "In der Nähe des Daming-Sees",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0194
@@ -2915,14 +2915,14 @@
         "Gesellige Atmosphäre",
         "Fahrradverleih"
       ],
-      "bookingTips": "Great for backpackers. English speaking. Bike rental available."
+      "bookingTips": "Ideal für Rucksacktouristen. Englischsprachig. Fahrradverleih verfügbar."
     },
     {
       "name": "Jinan Lancuang Extrem Leichtes Reise-Homestay",
       "nameEn": "Jinan Lanchuang Boutique Homestay",
       "budget": "budget",
       "priceRange": "¥200-400/night",
-      "address": "Old City District",
+      "address": "Altstadtbezirk",
       "coordinates": {
         "lat": 36.6612,
         "lng": 117.0294
@@ -2934,14 +2934,14 @@
         "Zentral",
         "Authentisch"
       ],
-      "bookingTips": "Experience traditional Jinan living. Book well ahead."
+      "bookingTips": "Erleben Sie traditionelles Jinaner Leben. Buchen Sie rechtzeitig im Voraus."
     },
     {
       "name": "济南舜耕山庄",
       "nameEn": "Jinan Shungeng Hotel",
       "budget": "luxury",
       "priceRange": "¥800-1500/night",
-      "address": "Near Shungeng Mountain",
+      "address": "In der Nähe des Shungeng-Bergs",
       "coordinates": {
         "lat": 36.6212,
         "lng": 117.0494
@@ -2953,14 +2953,14 @@
         "Gartenanlage",
         "Traditionell"
       ],
-      "bookingTips": "Great for traditional experience. Book during off-peak."
+      "bookingTips": "Ideal für ein traditionelles Erlebnis. Buchen Sie außerhalb der Hauptsaison."
     },
     {
       "name": "济南喜来登酒店",
       "nameEn": "Sheraton Jinan Hotel",
       "budget": "luxury",
       "priceRange": "¥800-1600/night",
-      "address": "88 Luoyuan Avenue",
+      "address": "Luoyuan-Allee 88",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0294
@@ -2972,7 +2972,7 @@
         "Moderne Ausstattung",
         "Guter Service"
       ],
-      "bookingTips": "Book lake view rooms. International standard."
+      "bookingTips": "Buchen Sie Zimmer mit Seeblick. Internationaler Standard."
     },
     {
       "name": "济南千佛山酒店",
@@ -2991,34 +2991,34 @@
         "Modern",
         "Gutes Preis-Leistungs-Verhältnis"
       ],
-      "bookingTips": "Perfect for hikers. Book during off-peak."
+      "bookingTips": "Perfekt für Wanderer. Buchen Sie außerhalb der Hauptsaison."
     }
   ],
   "payment": [
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Universal in Jinan",
+      "description": "Universell in Jinan",
       "howToUse": [
-        "Download before arrival",
-        "Link card"
+        "Vor der Ankunft herunterladen",
+        "Karte verknüpfen"
       ],
       "tips": [
-        "Works at all merchants",
-        "English available"
+        "Gilt bei allen Händlern",
+        "Englisch verfügbar"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Accepted everywhere",
+      "description": "Überall akzeptiert",
       "howToUse": [
-        "WeChat required",
+        "WeChat erforderlich",
         "Internationale Karten werden akzeptiert"
       ],
       "tips": [
-        "Set to English mode",
-        "Needed for shared bikes"
+        "Auf Englisch umstellen",
+        "Erforderlich für Leihfahrräder"
       ]
     },
     {
@@ -3027,10 +3027,10 @@
       "description": "Nützlich auf traditionellen Märkten",
       "howToUse": [
         "ATM überall",
-        "Banks along main streets"
+        "Banken entlang der Hauptstraßen"
       ],
       "tips": [
-        "Keep 200¥ for markets",
+        "200¥ für Märkte einplanen",
         "Die meisten Restaurants akzeptieren Karten"
       ]
     }
@@ -3038,92 +3038,92 @@
   "culturalTips": [
     {
       "category": "history",
-      "title": "Spring City Heritage",
+      "title": "Erbe der Frühlingsstadt",
       "content": "Jinan wird die 'Stadt der Quellen' genannt und verfügt über 72 berühmte Quellen. Die Quellenkultur ist integraler Bestandteil des lokalen Lebens - die Einheimischen sammeln täglich Quellwasser, und die Stadt hat ihre Identität um diese Naturwunder herum aufgebaut.",
       "importance": "high"
     },
     {
       "category": "food",
-      "title": "Shandong Cuisine",
+      "title": "Shandong-Küche",
       "content": "Die Shandong-Küche ist eine der Acht Großen Küchen Chinas, bekannt für frischen Meeresfrüchten, den Fokus auf ursprüngliche Aromen und hervorragende Messerkünste. Spezialitäten von Jinan umfassen Schmorgerichte, Suppen und frisch zubereitete Nudeln.",
       "importance": "high"
     },
     {
       "category": "dialect",
-      "title": "Jinan Dialect",
-      "content": "Jinan dialect is part of the Ji-Lu Mandarin family, known for being clear and easy to understand. It's considered one of the standard Mandarin dialects and influenced Beijing speech patterns historically.",
+      "title": "Jinan-Dialekt",
+      "content": "Der Jinan-Dialekt gehört zur Ji-Lu-Mandarin-Familie und ist für seine Klarheit und leichte Verständlichkeit bekannt. Er gilt als einer der Standard-Mandarin-Dialekte und hat historisch die Sprechweise in Peking beeinflusst.",
       "importance": "low"
     },
     {
       "category": "timing",
-      "title": "Avoiding Crowds",
-      "content": "Jinan's attractions can be crowded on weekends. Visit Baotu Spring and Daming Lake early morning. Weekdays are much quieter. Spring flower season in April is busiest.",
+      "title": "Menschenmassen vermeiden",
+      "content": "Jinans Sehenswürdigkeiten können an Wochenenden überfüllt sein. Besuchen Sie die Baotu-Quelle und den Daming-See am frühen Morgen. Unter der Woche ist es deutlich ruhiger. Die Frühlingsblütezeit im April ist am belebtesten.",
       "importance": "medium"
     },
     {
       "category": "culture",
-      "title": "Spring Water Culture",
-      "content": "Jinan locals have a tradition of collecting spring water for drinking and tea. You can see elderly residents filling bottles at springs early morning. This tradition connects the community to their natural heritage.",
+      "title": "Quellwasserkultur",
+      "content": "Die Einwohner von Jinan haben die Tradition, Quellwasser zum Trinken und für Tee zu sammeln. Am frühen Morgen kann man ältere Bewohner sehen, die an den Quellen Flaschen füllen. Diese Tradition verbindet die Gemeinschaft mit ihrem natürlichen Erbe.",
       "importance": "medium"
     },
     {
       "category": "literature",
-      "title": "Literary Legacy",
-      "content": "Jinan inspired many classical poets including Du Fu, Li Bai, and Su Shi. The 'Ode to the Red Mason' was written here. The city appears frequently in Chinese literature as a symbol of natural beauty.",
+      "title": "Literarisches Erbe",
+      "content": "Jinan inspirierte viele klassische Dichter, darunter Du Fu, Li Bai und Su Shi. Die 'Ode an den Roten Stein' wurde hier verfasst. Die Stadt erscheint in der chinesischen Literatur häufig als Symbol natürlicher Schönheit.",
       "importance": "medium"
     },
     {
       "category": "crafts",
-      "title": "Jinan Crafts",
+      "title": "Jinaner Kunsthandwerk",
       "content": "Jinan ist bekannt für Holzschnitt-Neujahrsbilder, Drachenbau (insbesondere im Stil des \"Jinan-Adlers\") und Holzschnitzerei. Die Stadt hat eine starke Tradition in Volkskunst und Kunsthandwerk.",
       "importance": "medium"
     },
     {
       "category": "food",
-      "title": "Street Food Culture",
-      "content": "Jinan street food is famous for items like oil spirals (you xuan), sweet millet porridge (tian mo), and braised pork over rice (ba zi rou). The old city lanes have many traditional snack vendors.",
+      "title": "Straßenessenskultur",
+      "content": "Jinans Straßenessen ist berühmt für Spezialitäten wie Ölspiralen (you xuan), süßen Hirsebrei (tian mo) und geschmortes Schweinefleisch über Reis (ba zi rou). In den alten Gassen der Stadt gibt es viele traditionelle Snackstände.",
       "importance": "high"
     },
     {
       "category": "education",
-      "title": "Academic Heritage",
-      "content": "Jinan has been an education center for centuries. Shandong University is a prestigious institution. The city's academic atmosphere contributed to it being the birthplace of many Chinese celebrities and scholars.",
+      "title": "Akademisches Erbe",
+      "content": "Jinan ist seit Jahrhunderten ein Bildungszentrum. Die Shandong-Universität ist eine angesehene Einrichtung. Die akademische Atmosphäre der Stadt trug dazu bei, dass sie Geburtsort vieler chinesischer Berühmtheiten und Gelehrter ist.",
       "importance": "medium"
     },
     {
       "category": "revolutionary",
-      "title": "Revolutionary History",
-      "content": "Jinan was site of the 1928 'Jinan Incident' involving the Nationalist government. Hero Mountain commemorates revolutionary history. The city played important roles in modern Chinese political history.",
+      "title": "Revolutionäre Geschichte",
+      "content": "Jinan war 1928 Schauplatz des 'Jinan-Zwischenfalls', an dem die nationalistische Regierung beteiligt war. Der Heldenberg erinnert an die revolutionäre Geschichte. Die Stadt spielte eine wichtige Rolle in der modernen politischen Geschichte Chinas.",
       "importance": "medium"
     },
     {
       "category": "gardens",
-      "title": "Garden Culture",
-      "content": "Like other ancient cities, Jinan has traditional gardens around the springs. The government has preserved many spring pools and built parks. Daming Lake area has classical garden elements and pavilions.",
+      "title": "Gartenkultur",
+      "content": "Wie andere alte Städte hat auch Jinan traditionelle Gärten rund um die Quellen. Die Regierung hat viele Quellbecken erhalten und Parks angelegt. Das Gebiet um den Daming-See weist klassische Gartenelemente und Pavillons auf.",
       "importance": "medium"
     },
     {
       "category": "tea",
       "title": "Teekultur",
-      "content": "Jinan has strong tea culture with local varieties and traditional teahouses. Spring water collected from the springs is traditionally used for tea, making the local brew special. Teahouses around Daming Lake are popular.",
+      "content": "Jinan hat eine ausgeprägte Teekultur mit lokalen Sorten und traditionellen Teehäusern. Das aus den Quellen gesammelte Quellwasser wird traditionell für die Teezubereitung verwendet, was den lokalen Aufguss besonders macht. Teehäuser rund um den Daming-See sind beliebt.",
       "importance": "medium"
     },
     {
       "category": "nightlife",
-      "title": "Modern Jinan",
-      "content": "Jinan has growing nightlife in Lixia District. Quancheng Road and nearby streets have bars, cafes, and KTV. The MixC mall area has international restaurants and entertainment options.",
+      "title": "Modernes Jinan",
+      "content": "Jinan hat ein wachsendes Nachtleben im Bezirk Lixia. Die Quancheng-Straße und die umliegenden Straßen bieten Bars, Cafés und KTV. Das MixC-Einkaufszentrum bietet internationale Restaurants und Unterhaltungsmöglichkeiten.",
       "importance": "low"
     },
     {
       "category": "weather",
-      "title": "Seasonal Weather",
-      "content": "Jinan has four distinct seasons. Spring (April-May) is best for flowers and springs. Autumn (September-October) offers foliage. Summers are hot (30C+) and humid. Winters cold (0C average) but sunny with occasional snow.",
+      "title": "Saisonales Wetter",
+      "content": "Jinan hat vier ausgeprägte Jahreszeiten. Der Frühling (April-Mai) ist am besten für Blumen und Quellen geeignet. Der Herbst (September-Oktober) bietet buntes Laub. Die Sommer sind heiß (über 30 °C) und feucht. Die Winter sind kalt (Durchschnitt 0 °C), aber sonnig mit gelegentlichem Schnee.",
       "importance": "medium"
     },
     {
       "category": "transportation",
-      "title": "Getting Around",
-      "content": "Jinan's metro covers major tourist areas but not all attractions. Bikes are excellent for Daming Lake and spring areas. Walking is pleasant in the old city around springs. Didi works well for direct routes.",
+      "title": "Fortbewegung",
+      "content": "Die U-Bahn von Jinan deckt die wichtigsten Touristenziele ab, aber nicht alle Sehenswürdigkeiten. Fahrräder sind ideal für den Daming-See und die Quellengebiete. In der Altstadt rund um die Quellen ist man zu Fuß gut unterwegs. Didi funktioniert gut für direkte Strecken.",
       "importance": "medium"
     }
   ],

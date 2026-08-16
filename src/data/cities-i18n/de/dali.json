@@ -8,34 +8,34 @@
     "lat": 25.6069,
     "lng": 100.2676
   },
-  "timezone": "UTC+8 (China Standard Time)",
-  "description": "Dali is a picturesque town in Yunnan province, set against the dramatic backdrop of Cangshan Mountains and beside the crystal-clear Erhai Lake. Home to the Bai ethnic minority with 1,000 years of history. Known for cobblestone streets, traditional Bai architecture, and vibrant local culture. A laid-back atmosphere perfect for cycling, hiking, and cultural immersion.",
+  "timezone": "UTC+8 (Chinesische Standardzeit)",
+  "description": "Dali ist eine malerische Stadt in der Provinz Yunnan, eingebettet in die dramatische Kulisse des Cangshan-Gebirges und am Ufer des kristallklaren Erhai-Sees. Sie ist die Heimat der Bai-Volksgruppe mit einer 1000-jährigen Geschichte. Bekannt für Kopfsteinpflasterstraßen, traditionelle Bai-Architektur und lebendige lokale Kultur. Eine entspannte Atmosphäre, perfekt zum Radfahren, Wandern und für kulturelles Eintauchen.",
   "coverImage": "/img/ext/4e2e5e513a4d.webp",
   "highlights": [
-    "Erhai Lake - Scenic cycling and views",
-    "Three Pagodas of Dali - Buddhist temples",
-    "Dali Old Town - Traditional Bai architecture",
-    "Xizhou Market - Local Bai culture",
-    "Shuanglang - Lakeside photography"
+    "Erhai-See - Malerische Radtouren und Aussichten",
+    "Drei Pagoden von Dali - Buddhistische Tempel",
+    "Altstadt von Dali - Traditionelle Bai-Architektur",
+    "Xizhou-Markt - lokale Bai-Kultur",
+    "Shuanglang - Fotografie am Seeufer"
   ],
   "climate": {
-    "type": "Subtropical highland",
+    "type": "Subtropisches Hochland",
     "bestMonths": [
-      "March",
+      "März",
       "April",
-      "May",
+      "Mai",
       "September",
-      "October"
+      "Oktober"
     ],
     "avgSummerTemp": "18-25C (64-77F)",
     "avgWinterTemp": "8-15C (46-59F)",
-    "tips": "Spring (March-May) is flower season with mild weather. Autumn (Sept-Oct) has clear skies and comfortable temps. Summer is rainy but green. Winter is dry and sunny but cold. Bring layers - temperature swings daily."
+    "tips": "Der Frühling (März-Mai) ist die Blumenzeit mit mildem Wetter. Der Herbst (Sept.-Okt.) hat klaren Himmel und angenehme Temperaturen. Der Sommer ist regnerisch, aber grün. Der Winter ist trocken und sonnig, aber kalt. Bringen Sie mehrere Schichten Kleidung mit - die Temperaturen schwanken täglich."
   },
   "restaurants": [
     {
       "id": "dali-1",
       "name": "三塔寺素斋",
-      "nameEn": "Three Pagodas Vegetarian Restaurant",
+      "nameEn": "Drei Pagoden Vegetarisches Restaurant",
       "type": "lokal",
       "cuisine": "Buddhistisch Vegetarisch",
       "avgPrice": 50,
@@ -82,7 +82,7 @@
       "dishHighlights": [
         "Kalte Hühnerreisnudeln",
         "Eingelegtes Gemüse",
-        "Bai style sauce"
+        "Bai-Sauce"
       ],
       "tags": [
         "lokal",
@@ -98,7 +98,7 @@
     {
       "id": "dali-3",
       "name": "苍山道素食",
-      "nameEn": "Cangshan Dao Vegetarian",
+      "nameEn": "Cangshan Dao Vegetarisch",
       "type": "lokal",
       "cuisine": "Vegetarisch",
       "avgPrice": 60,
@@ -130,7 +130,7 @@
     {
       "id": "dali-4",
       "name": "双廊海韵",
-      "nameEn": "Shuanglang Sea Melody",
+      "nameEn": "Shuanglang Meeresmelodie",
       "type": "lokal",
       "cuisine": "Yunnan/Meeresfrüchte",
       "avgPrice": 100,
@@ -175,9 +175,9 @@
       "hours": "08:00-20:00",
       "description": "Berühmt für Yunnan-Schinken und Beinfleisch, ein lokaler Snack, der perfekt für ein schnelles Mittagessen oder einen Snack ist.",
       "dishHighlights": [
-        "Smoked ham leg",
-        "Bai sausage",
-        "Grilled meat skewers"
+        "Geräucherte Schinkenkeule",
+        "Bai-Wurst",
+        "Gegrillte Fleischspieße"
       ],
       "tags": [
         "lokal",
@@ -193,9 +193,9 @@
     {
       "id": "dali-6",
       "name": "大理古城咖啡馆",
-      "nameEn": "Dali Old Town Cafe",
+      "nameEn": "Dali Altstadt Café",
       "type": "lokal",
-      "cuisine": "Western/Yunnan Fusion",
+      "cuisine": "Westliche/Yunnan-Fusion",
       "avgPrice": 50,
       "rating": 4.4,
       "address": "Foreigners Street, Dali-Altstadt",
@@ -206,9 +206,9 @@
       "hours": "08:00-23:00",
       "description": "Lebhaftes Café in der Altstadt, das Yunnan-Kaffee, westliche Frühstücke und Fusionsgerichte serviert, die bei Auswanderern beliebt sind.",
       "dishHighlights": [
-        "Yunnan coffee",
-        "Pancakes",
-        "Muesli breakfast",
+        "Yunnan-Kaffee",
+        "Pfannkuchen",
+        "Müsli-Frühstück",
         "Frische Frucht-Shakes"
       ],
       "tags": [
@@ -333,10 +333,10 @@
       "hours": "07:00-19:00",
       "description": "Berühmter lokaler Ort für Ersi (Reisnudelstreifen) in herzhafter Suppe, ein Frühstücksklassiker in Dali.",
       "dishHighlights": [
-        "Beef ersi",
-        "Pork ersi",
+        "Rindfleisch-Ersi",
+        "Schweinefleisch-Ersi",
         "Eingelegtes Gemüse",
-        "Bai style broth"
+        "Bai-Brühe"
       ],
       "tags": [
         "lokal",
@@ -352,7 +352,7 @@
     {
       "id": "dali-11",
       "name": "酸菜鱼庄",
-      "nameEn": "Sour Cabbage Fish Restaurant",
+      "nameEn": "Sauerkrautfisch Restaurant",
       "type": "lokal",
       "cuisine": "Spezialität aus Yunnan",
       "avgPrice": 70,
@@ -365,15 +365,15 @@
       "hours": "10:00-21:00",
       "description": "Beliebtes Restaurant, das sich auf Sauerfisch-Hotpot mit frischem Erhai-See-Fisch und hausgemachtem Sauerkraut spezialisiert hat.",
       "dishHighlights": [
-        "Sour cabbage fish",
+        "Sauer eingelegter Kohl mit Fisch",
         "Fischfondue",
-        "Fresh lake fish",
-        "Spicy dipping sauce"
+        "Frischer Seefisch",
+        "Scharfe Dip-Sauce"
       ],
       "tags": [
         "lokal",
         "Meeresfrüchte",
-        "Hotpot",
+        "Feuertopf",
         "Yunnan-Stil"
       ],
       "star": 0,
@@ -384,7 +384,7 @@
     {
       "id": "dali-12",
       "name": "乳扇烧烤摊",
-      "nameEn": "Rushan BBQ Stall",
+      "nameEn": "Rushan BBQ-Stand",
       "type": "Straßenessen",
       "cuisine": "Bai-Straßenessen",
       "avgPrice": 15,
@@ -397,10 +397,10 @@
       "hours": "17:00-23:00",
       "description": "Berühmter Straßenimbiss, der gegrillte Rushan-Spieße (Bai-Milchkäse) serviert, ein Muss unter Dalís Snacks.",
       "dishHighlights": [
-        "Grilled Rushan",
-        "Sweet version",
-        "Savory version",
-        "Rose syrup Rushan"
+        "Gegrillter Rushan-Käse",
+        "Süße Variante",
+        "Herzhafte Variante",
+        "Rushan-Käse mit Rosensirup"
       ],
       "tags": [
         "Straßenessen",
@@ -416,9 +416,9 @@
     {
       "id": "dali-13",
       "name": "鲜花饼总店",
-      "nameEn": "Flower Cake Headquarters",
+      "nameEn": "Blumenkuchen-Hauptsitz",
       "type": "lokal",
-      "cuisine": "Yunnan Pastry",
+      "cuisine": "Yunnan-Gebäck",
       "avgPrice": 30,
       "rating": 4.8,
       "address": "Fuxing Road, Dali Altstadt",
@@ -429,14 +429,14 @@
       "hours": "08:00-20:00",
       "description": "Berühmte Bäckerei, die sich auf Blumenkuchen spezialisiert hat – feine Gebäckstücke gefüllt mit frischen Rosen und anderen essbaren Blüten.",
       "dishHighlights": [
-        "Rose flower cake",
-        "Lavender cake",
+        "Rosenblütenkuchen",
+        "Lavendelkuchen",
         "Osmanthus-Kuchen",
-        "Gift boxes"
+        "Geschenkboxen"
       ],
       "tags": [
         "lokal",
-        "pastry",
+        "Gebäck",
         "Mitbringsel",
         "berühmt"
       ],
@@ -450,10 +450,10 @@
       "name": "米凉虾小馆",
       "nameEn": "Mi Liangxia Shop",
       "type": "Straßenessen",
-      "cuisine": "Bai Dessert",
+      "cuisine": "Bai-Dessert",
       "avgPrice": 10,
       "rating": 4.5,
-      "address": "Dali Old Town alley",
+      "address": "Gasse der Dali-Altstadt",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
@@ -462,9 +462,9 @@
       "description": "Lokaler Dessertladen, der Mi Liangxia serviert – garnelenförmige Reispudding in süßem Osmanthus-Sirup, eine Dali-Spezialität.",
       "dishHighlights": [
         "Mi Liangxia",
-        "Sweet osmanthus syrup",
-        "Red sugar version",
-        "Ice cold version"
+        "Süßer Osmanthus-Sirup",
+        "Rote Zucker-Version",
+        "Eiskalte Version"
       ],
       "tags": [
         "Straßenessen",
@@ -480,12 +480,12 @@
     {
       "id": "dali-15",
       "name": "野生菌火锅",
-      "nameEn": "Wild Mushroom Hotpot",
+      "nameEn": "Wildpilz-Feuertopf",
       "type": "lokal",
       "cuisine": "Spezialität aus Yunnan",
       "avgPrice": 120,
       "rating": 4.7,
-      "address": "Dali City, near old town",
+      "address": "Dali-Stadt, nahe der Altstadt",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
@@ -493,14 +493,14 @@
       "hours": "11:00-22:00",
       "description": "Premium-Hotpot-Restaurant mit frischen Wildpilzen aus den Bergen Yunnans, serviert in nahrhafter Brühe.",
       "dishHighlights": [
-        "Matsutake mushroom",
-        "Chicken thigh mushroom",
-        "Bolete mushroom",
-        "Wild herb dipping sauce"
+        "Matsutake-Pilz",
+        "Hähnchenschenkel-Pilz",
+        "Steinpilz",
+        "Wildkräuter-Dip-Sauce"
       ],
       "tags": [
         "lokal",
-        "Hotpot",
+        "Feuertopf",
         "Premium",
         "Yunnan-Stil"
       ],
@@ -512,7 +512,7 @@
     {
       "id": "dali-16",
       "name": "洱海鱼村",
-      "nameEn": "Erhai Fish Village",
+      "nameEn": "Erhai-Fischdorf",
       "type": "lokal",
       "cuisine": "Yunnan/Meeresfrüchte",
       "avgPrice": 80,
@@ -525,10 +525,10 @@
       "hours": "10:00-21:00",
       "description": "Restaurant am Fluss im Fischerdorf, das frischen Erhai-See-Fisch in verschiedenen Zubereitungsarten serviert.",
       "dishHighlights": [
-        "Braised Erhai fish",
-        "Fish soup",
+        "Geschmorter Erhai-Fisch",
+        "Fischsuppe",
         "Gedämpfter Fisch",
-        "Lake shrimp"
+        "Seegarnelen"
       ],
       "tags": [
         "lokal",
@@ -544,7 +544,7 @@
     {
       "id": "dali-17",
       "name": "白族三道茶茶馆",
-      "nameEn": "Bai Three Tea House",
+      "nameEn": "Bai-Drei-Teestube",
       "type": "lokal",
       "cuisine": "Teestube",
       "avgPrice": 50,
@@ -557,10 +557,10 @@
       "hours": "09:00-18:00",
       "description": "Traditionelles Teehaus, das die authentische Bai-Drei-Tee-Zeremonie anbietet – bitterer Tee, süßer Tee und Nachgeschmack-Tee.",
       "dishHighlights": [
-        "Bitter tea",
-        "Sweet tea",
-        "Aftertaste tea",
-        "Bai tea ceremony"
+        "Bitterer Tee",
+        "Süßer Tee",
+        "Nachgeschmack-Tee",
+        "Bai-Teezeremonie"
       ],
       "tags": [
         "lokal",
@@ -576,9 +576,9 @@
     {
       "id": "dali-18",
       "name": "青梅酒铺",
-      "nameEn": "Plum Wine Shop",
+      "nameEn": "Pflaumenwein-Laden",
       "type": "lokal",
-      "cuisine": "Bai Bar",
+      "cuisine": "Bai-Bar",
       "avgPrice": 40,
       "rating": 4.5,
       "address": "Ausländerstraße, Dali-Altstadt",
@@ -589,10 +589,10 @@
       "hours": "14:00-24:00",
       "description": "Gemütliche Bar, die sich auf lokalen Pflaumenwein und Fruchtweine aus Yunnans frischen Früchten spezialisiert hat.",
       "dishHighlights": [
-        "Plum wine",
-        "Raspberry wine",
-        "Rose wine",
-        "Local craft beer"
+        "Pflaumenwein",
+        "Himbeerwein",
+        "Rosenwein",
+        "Lokales Craft-Bier"
       ],
       "tags": [
         "lokal",
@@ -608,7 +608,7 @@
     {
       "id": "dali-19",
       "name": "当地烧烤一条街",
-      "nameEn": "Local BBQ Street",
+      "nameEn": "Lokale-BBQ-Straße",
       "type": "Straßenessen",
       "cuisine": "Grillgerichte",
       "avgPrice": 40,
@@ -622,9 +622,9 @@
       "description": "Berühmte BBQ-Straße mit mehreren Ständen, die gegrilltes Fleisch, Pilze und Gemüse im Yunnan-Stil servieren.",
       "dishHighlights": [
         "Gegrillte Lammspieße",
-        "Mushroom BBQ",
-        "Eggplant with garlic",
-        "Yunnan sausage"
+        "Pilz-BBQ",
+        "Aubergine mit Knoblauch",
+        "Yunnan-Wurst"
       ],
       "tags": [
         "Straßenessen",
@@ -640,12 +640,12 @@
     {
       "id": "dali-20",
       "name": "巍山一根面",
-      "nameEn": "Weishan Single Noodle",
+      "nameEn": "Weishan-Einzel-Nudel",
       "type": "lokal",
-      "cuisine": "Yunnan Noodles",
+      "cuisine": "Yunnan-Nudeln",
       "avgPrice": 25,
       "rating": 4.8,
-      "address": "Weishan Ancient Town",
+      "address": "Weishan-Alte Stadt",
       "coordinates": {
         "lat": 25.2322,
         "lng": 100.3072
@@ -653,9 +653,9 @@
       "hours": "07:00-14:00",
       "description": "Legendärer Nudelladen, berühmt für Ein-Strang-Nudeln – eine einzelne kilometerlange Nudel, serviert in einer Schüssel.",
       "dishHighlights": [
-        "One strand noodle",
-        "Hot and sour broth",
-        "Braised pork topping",
+        "Eine Strangnudel",
+        "Scharf-saure Brühe",
+        "Geschmortes Schweinefleisch als Belag",
         "Handgezogene Nudeln"
       ],
       "tags": [
@@ -672,12 +672,12 @@
     {
       "id": "dali-21",
       "name": "白族特色凉拌菜",
-      "nameEn": "Bai Cold Salad",
+      "nameEn": "Bai-Kaltsalat",
       "type": "lokal",
       "cuisine": "Bai-Spezialität",
       "avgPrice": 35,
       "rating": 4.5,
-      "address": "Xizhou Market",
+      "address": "Xizhou-Markt",
       "coordinates": {
         "lat": 25.7622,
         "lng": 100.1272
@@ -685,10 +685,10 @@
       "hours": "08:00-18:00",
       "description": "Lokaler Spezialitätenladen am Xizhou-Markt, der verschiedene Bai-Kaltsalate mit frischem Gemüse und Kräutern serviert.",
       "dishHighlights": [
-        "Cold radish salad",
-        "Bai style potato salad",
-        "Pickled cucumber",
-        "Herb salad"
+        "Kalter Rettichsalat",
+        "Kartoffelsalat nach Bai-Art",
+        "Eingelegte Gurke",
+        "Kräutersalat"
       ],
       "tags": [
         "lokal",
@@ -704,9 +704,9 @@
     {
       "id": "dali-22",
       "name": "烤全羊",
-      "nameEn": "Roast Whole Lamb",
+      "nameEn": "Gebratenes ganzes Lamm",
       "type": "lokal",
-      "cuisine": "Yunnan BBQ",
+      "cuisine": "Yunnan-Barbecue",
       "avgPrice": 150,
       "rating": 4.7,
       "address": "Dali Landschaft, nahe Cangshan",
@@ -717,15 +717,15 @@
       "hours": "11:00-22:00",
       "description": "Traditionelles Ganzes-Lamm-Braten-Erlebnis in malerischer ländlicher Umgebung, perfekt für Gruppen.",
       "dishHighlights": [
-        "Roast whole lamb",
-        "Mutton soup",
+        "Gebratenes ganzes Lamm",
+        "Hammelsuppe",
         "Gegrillte Lammkoteletts",
-        "Countryside scenery"
+        "Ländliche Landschaft"
       ],
       "tags": [
         "lokal",
         "Grillgerichte",
-        "group",
+        "Gruppe",
         "Spezialität"
       ],
       "star": 0,
@@ -736,12 +736,12 @@
     {
       "id": "dali-23",
       "name": "银桥米线馆",
-      "nameEn": "Yinqiao Rice Noodle Shop",
+      "nameEn": "Yinqiao Reissnudel-Laden",
       "type": "lokal",
-      "cuisine": "Yunnan Rice Noodles",
+      "cuisine": "Yunnan-Reisnudeln",
       "avgPrice": 20,
       "rating": 4.5,
-      "address": "Yinqiao Town, Dali",
+      "address": "Yinqiao-Stadt, Dali",
       "coordinates": {
         "lat": 25.7222,
         "lng": 100.0872
@@ -749,8 +749,8 @@
       "hours": "07:00-15:00",
       "description": "Lokaler Ort, berühmt für Reisnudeln in reichhaltiger Brühe, beliebt bei Einheimischen und kundigen Reisenden.",
       "dishHighlights": [
-        "Beef rice noodles",
-        "Pork rice noodles",
+        "Rindfleisch-Reisnudeln",
+        "Schweinefleisch-Reisnudeln",
         "Eingelegtes Gemüse",
         "Chiliöl"
       ],
@@ -768,12 +768,12 @@
     {
       "id": "dali-24",
       "name": "双廊咖啡馆",
-      "nameEn": "Shuanglang Lakeside Cafe",
+      "nameEn": "Shuanglang Seeufer-Café",
       "type": "Café",
-      "cuisine": "Western/Yunnan Fusion",
+      "cuisine": "Westliche/Yunnan-Fusion",
       "avgPrice": 50,
       "rating": 4.6,
-      "address": "Shuanglang Waterfront",
+      "address": "Shuanglang-Uferpromenade",
       "coordinates": {
         "lat": 25.8822,
         "lng": 100.1572
@@ -781,10 +781,10 @@
       "hours": "08:00-22:00",
       "description": "Gemütliches Café am See mit Erhai-Blick, serviert Yunnan-Kaffee, westliches Frühstück und hausgemachtes Gebäck.",
       "dishHighlights": [
-        "Yunnan coffee",
-        "Pancakes with fruit",
-        "Fresh smoothies",
-        "Cheesecake"
+        "Yunnan-Kaffee",
+        "Pfannkuchen mit Obst",
+        "Frische Smoothies",
+        "Käsekuchen"
       ],
       "tags": [
         "Café",
@@ -800,12 +800,12 @@
     {
       "id": "dali-25",
       "name": "大理壹号院",
-      "nameEn": "Dali No.1 Courtyard",
+      "nameEn": "Dali Nr. 1 Innenhof",
       "type": "lokal",
-      "cuisine": "Bai Fine Dining",
+      "cuisine": "Bai-Feinkost",
       "avgPrice": 150,
       "rating": 4.7,
-      "address": "Dali Old Town, West Gate",
+      "address": "Dali-Altstadt, Westtor",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1472
@@ -815,8 +815,8 @@
       "description": "Gehobenes Bai-Küchen-Restaurant in einem traditionellen Innenhof, bietet raffinierte lokale Spezialitäten mit eleganter Präsentation.",
       "dishHighlights": [
         "Fisch im Bai-Stil",
-        "Mushroom hotpot",
-        "Bender cold chicken",
+        "Pilz-Hotpot",
+        "Bender-Kaltes Huhn",
         "Saisonales Gemüse"
       ],
       "tags": [
@@ -832,9 +832,9 @@
     {
       "id": "dali-26",
       "name": "小邑庄白族菜",
-      "nameEn": "Xiaoyi Zhuang Bai Cuisine",
+      "nameEn": "Xiaoyi Zhuang Bai-Küche",
       "type": "lokal",
-      "cuisine": "Bai Home Style",
+      "cuisine": "Bai Hausmannskost",
       "avgPrice": 60,
       "rating": 4.5,
       "address": "Dorf Xiaoyi, nahe der Altstadt von Dali",
@@ -846,14 +846,14 @@
       "description": "Lokales Familienrestaurant, das authentische Bai-Hausmannskost in einem traditionellen Innenhof serviert.",
       "dishHighlights": [
         "Geschmortes Schweinefleisch",
-        "Steam egg",
+        "Gedämpftes Ei",
         "Eingelegtes Gemüse",
-        "Rice cakes"
+        "Reiskuchen"
       ],
       "tags": [
         "lokal",
         "Hausmannskost",
-        "family-run",
+        "familiengeführt",
         "preiswert"
       ],
       "star": 0,
@@ -864,12 +864,12 @@
     {
       "id": "dali-27",
       "name": "巍山老街面馆",
-      "nameEn": "Weishan Old Street Noodles",
+      "nameEn": "Weishan Altstadt-Nudeln",
       "type": "lokal",
-      "cuisine": "Yunnan Noodles",
+      "cuisine": "Yunnan-Nudeln",
       "avgPrice": 25,
       "rating": 4.8,
-      "address": "Weishan Ancient Town",
+      "address": "Weishan-Alte Stadt",
       "coordinates": {
         "lat": 25.2322,
         "lng": 100.3072
@@ -877,9 +877,9 @@
       "hours": "07:00-14:00",
       "description": "Legendärer Ein-Strang-Nudelladen, berühmt für eine lange Nudelstrang in reichhaltiger Brühe, ein Muss in Weishan.",
       "dishHighlights": [
-        "Single strand noodle",
-        "Hot and sour broth",
-        "Braised pork topping",
+        "Einstrangnudel",
+        "Scharf-saure Brühe",
+        "Geschmortes Schweinefleisch als Belag",
         "Handgezogene Nudeln"
       ],
       "tags": [
@@ -896,7 +896,7 @@
     {
       "id": "dali-28",
       "name": "才村湖景餐厅",
-      "nameEn": "Caicun Lake View Restaurant",
+      "nameEn": "Caicun Seeblick-Restaurant",
       "type": "lokal",
       "cuisine": "Yunnan/Meeresfrüchte",
       "avgPrice": 80,
@@ -910,8 +910,8 @@
       "description": "Am See gelegenes Restaurant mit Blick auf den Erhai-See, das frischen Fisch aus dem See und Spezialitäten aus Yunnan serviert.",
       "dishHighlights": [
         "Fisch aus dem Erhai-See",
-        "Sour cabbage fish",
-        "Lake shrimp",
+        "Sauer eingelegter Kohl mit Fisch",
+        "Seegarnelen",
         "Schweinefleisch nach Bai-Art"
       ],
       "tags": [
@@ -930,7 +930,7 @@
       "name": "桃溪牧场",
       "nameEn": "Taoxi Weide",
       "type": "lokal",
-      "cuisine": "Yunnan BBQ/Grill",
+      "cuisine": "Yunnan-Grill",
       "avgPrice": 100,
       "rating": 4.7,
       "address": "Dali Landschaft, Taoxi",
@@ -1580,9 +1580,9 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major Chinese cities",
+        "from": "Große chinesische Städte",
         "to": "Flughafen Dali Fenghuang (DLU)",
-        "duration": "Varies (2h from Kunming)",
+        "duration": "Variiert (2 Stunden von Kunming)",
         "price": "300-800¥",
         "frequency": "Tägliche Flüge von Kunming, einige saisonal",
         "tips": "Flughafen 13 km von der Altstadt von Dali entfernt. Flughafenbus oder Taxi in die Stadt. Flüge können bei Nebel Verspätung haben."
@@ -1591,7 +1591,7 @@
         "type": "train",
         "from": "Kunming (6-8 Stunden), Lijiang (2,5 Stunden)",
         "to": "Bahnhof Dali (in der Nähe des Stadtzentrums)",
-        "duration": "2.5-8 hours",
+        "duration": "2,5-8 Stunden",
         "price": "100-300¥",
         "frequency": "Tägliche Züge aus den wichtigsten Städten Yunnans",
         "tips": "Der neue Hochgeschwindigkeitszug von Kunming ist landschaftlich reizvoll, aber langsam. Der alte Zug ist schneller. Der Bahnhof Dali liegt näher an der Altstadt als der neue."
@@ -1599,8 +1599,8 @@
       {
         "type": "bus",
         "from": "Kunming (4 Stunden), Lijiang (2,5 Stunden)",
-        "to": "Dali Bus Station",
-        "duration": "2.5-4 hours",
+        "to": "Busbahnhof Dali",
+        "duration": "2,5-4 Stunden",
         "price": "100-200¥",
         "frequency": "Häufige Busverbindungen aus großen Städten",
         "tips": "Der Bus vom Xiying Hotel in Kunming ist bequem. Der Busbahnhof Dali liegt in der Nähe der Altstadt."
@@ -1616,20 +1616,20 @@
       "taxi": [
         "Stadttaxis in Dali: 10-30¥",
         "Taxi nach Shuanglang: 80-120¥",
-        "Taxi to Xizhou: 40-60¥",
+        "Taxi nach Xizhou: 40-60¥",
         "Preis für Tagesausflüge verhandeln"
       ],
       "bicycle": [
-        "Rent bicycles near Dali Old Town: 30-80¥/day",
-        "Electric bikes available: 80-150¥/day",
-        "Cycling Erhai Lake: 40-60km, full day",
-        "Mountain bikes for Cangshan trails"
+        "Fahrräder in der Nähe der Altstadt von Dali mieten: 30-80¥/Tag",
+        "Elektrofahrräder verfügbar: 80-150¥/Tag",
+        "Radtour um den Erhai-See: 40-60 km, ganzer Tag",
+        "Mountainbikes für die Cangshan-Wanderwege"
       ],
       "electric-bike": [
-        "Popular way to explore Erhai Lake area",
-        "Rent in Dali or Shuanglang",
-        "80-150¥ per day",
-        "Need to recharge for long trips"
+        "Beliebte Art, die Gegend um den Erhai-See zu erkunden",
+        "Miete in Dali oder Shuanglang",
+        "80-150¥ pro Tag",
+        "Für lange Touren muss aufgeladen werden"
       ],
       "metro": [
         "Kein U-Bahn-System in der Altstadt von Dali",
@@ -1648,7 +1648,7 @@
       "nameEn": "Dali Old Town Lake View Hotel",
       "budget": "mid",
       "priceRange": "¥400-800/night",
-      "address": "Near Dali Old Town",
+      "address": "In der Nähe der Altstadt von Dali",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
@@ -1660,14 +1660,14 @@
         "Bai-Architektur",
         "Dachterrassen-Café"
       ],
-      "bookingTips": "Book well ahead in peak season. Request lake view room."
+      "bookingTips": "In der Hochsaison unbedingt früh buchen. Bitte um ein Zimmer mit Seeblick."
     },
     {
       "name": "双廊海角酒店",
       "nameEn": "Shuanglang Haijiao Hotel",
       "budget": "luxury",
       "priceRange": "¥800-2000/night",
-      "address": "Shuanglang waterfront",
+      "address": "Uferpromenade von Shuanglang",
       "coordinates": {
         "lat": 25.8822,
         "lng": 100.1572
@@ -1679,14 +1679,14 @@
         "Boutique-Design",
         "Private Balkone"
       ],
-      "bookingTips": "The best lakeside area in Dali. Premium for Nantian views."
+      "bookingTips": "Das beste Seeufergebiet in Dali. Aufpreis für Aussicht nach Süden."
     },
     {
       "name": "大理中和坊酒店",
       "nameEn": "Dali Zhonghefang Hotel",
       "budget": "mid",
       "priceRange": "¥300-600/night",
-      "address": "Within Dali Old Town",
+      "address": "In der Altstadt von Dali",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
@@ -1698,7 +1698,7 @@
         "Ruhige Atmosphäre",
         "Bai-Stil"
       ],
-      "bookingTips": "Good value in old town. Book inner courtyard rooms for quiet."
+      "bookingTips": "Gutes Preis-Leistungs-Verhältnis in der Altstadt. Buchen Sie Zimmer zum Innenhof für Ruhe."
     },
     {
       "name": "才村码头客栈",
@@ -1717,14 +1717,14 @@
         "Lokale Familienführung",
         "Ruhig"
       ],
-      "bookingTips": "Great for cyclists. Families run many guesthouses here."
+      "bookingTips": "Ideal für Radfahrer. Viele Gästehäuser hier werden von Familien geführt."
     },
     {
       "name": "大理国际大酒店",
       "nameEn": "Dali International Hotel",
       "budget": "luxury",
       "priceRange": "¥600-1500/night",
-      "address": "Dali City, near Erhai",
+      "address": "Dali-Stadt, nahe dem Erhai-See",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1672
@@ -1736,14 +1736,14 @@
         "Mehrere Restaurants",
         "Pool"
       ],
-      "bookingTips": "Best for comfort seekers. Good location between old town and lake."
+      "bookingTips": "Am besten für Komfortsuchende. Gute Lage zwischen Altstadt und See."
     },
     {
       "name": "大理古城兰陵阁",
       "nameEn": "Dali Old Town Lanlingge",
       "budget": "mid",
       "priceRange": "¥350-700/night",
-      "address": "Within Dali Old Town",
+      "address": "In der Altstadt von Dali",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
@@ -1755,14 +1755,14 @@
         "Blick von der Dachterrasse",
         "Bai-Architektur"
       ],
-      "bookingTips": "Book inner rooms for quiet. Good value for location."
+      "bookingTips": "Buchen Sie Innenzimmer für Ruhe. Gutes Preis-Leistungs-Verhältnis für die Lage."
     },
     {
       "name": "双廊湖思茶屋",
       "nameEn": "Shuanglang Lake Thoughts",
       "budget": "luxury",
       "priceRange": "¥600-1500/night",
-      "address": "Shuanglang, Erhai Lake",
+      "address": "Shuanglang, Erhai-See",
       "coordinates": {
         "lat": 25.8822,
         "lng": 100.1572
@@ -1774,14 +1774,14 @@
         "Sonnenuntergangsblick",
         "Teestube"
       ],
-      "bookingTips": "Premium lakeside location. Book well ahead in peak season."
+      "bookingTips": "Erstklassige Lage am See. In der Hochsaison frühzeitig buchen."
     },
     {
       "name": "才村民宿",
       "nameEn": "Caicun Village Homestay",
       "budget": "budget",
       "priceRange": "¥150-400/night",
-      "address": "Caicun Village, Erhai",
+      "address": "Caicun-Dorf, Erhai",
       "coordinates": {
         "lat": 25.7222,
         "lng": 100.1672
@@ -1793,14 +1793,14 @@
         "Fahrradverleih",
         "Lokale Erfahrung"
       ],
-      "bookingTips": "Great for cyclists. Locals are very friendly."
+      "bookingTips": "Ideal für Radfahrer. Die Einheimischen sind sehr freundlich."
     },
     {
       "name": "大理风花雪月酒店",
       "nameEn": "Dali Wind Flower Snow Moon Hotel",
       "budget": "mid",
       "priceRange": "¥400-800/night",
-      "address": "Dali City, near old town",
+      "address": "Dali-Stadt, nahe der Altstadt",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
@@ -1812,14 +1812,14 @@
         "Guter Service",
         "Preis-Leistung"
       ],
-      "bookingTips": "Good balance of comfort and location."
+      "bookingTips": "Gutes Gleichgewicht zwischen Komfort und Lage."
     },
     {
       "name": "喜洲杨家拼图",
       "nameEn": "Xizhou Yang's Courtyard",
       "budget": "mid",
       "priceRange": "¥300-600/night",
-      "address": "Xizhou Ancient Town",
+      "address": "Altstadt von Xizhou",
       "coordinates": {
         "lat": 25.7622,
         "lng": 100.1272
@@ -1831,14 +1831,14 @@
         "Authentische Einrichtung",
         "Ruhig"
       ],
-      "bookingTips": "Experience traditional Bai living. Book during market day."
+      "bookingTips": "Erleben Sie das traditionelle Leben der Bai. Buchen Sie am Markttag."
     },
     {
       "name": "大理背包客青年旅舍",
       "nameEn": "Dali Backpacker Youth Hostel",
       "budget": "budget",
       "priceRange": "¥60-150/night",
-      "address": "Dali Old Town",
+      "address": "Altstadt von Dali",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
@@ -1850,7 +1850,7 @@
         "Zentrale Lage",
         "Fahrradverleih"
       ],
-      "bookingTips": "Great for solo travelers. Evening pub crawls organized."
+      "bookingTips": "Ideal für Alleinreisende. Abendliche Pub-Touren werden organisiert."
     },
     {
       "name": "双廊晴天见",
@@ -1869,14 +1869,14 @@
         "Sonnenaufgangsblick",
         "Privater Balkon"
       ],
-      "bookingTips": "Best sunrise location in Shuanglang. Book months ahead."
+      "bookingTips": "Bester Ort für den Sonnenaufgang in Shuanglang. Monate im Voraus buchen."
     },
     {
       "name": "挖色洱海客栈",
       "nameEn": "Wase Erhai Inn",
       "budget": "mid",
       "priceRange": "¥250-500/night",
-      "address": "Wase Town, Erhai",
+      "address": "Wase-Stadt, Erhai",
       "coordinates": {
         "lat": 25.9222,
         "lng": 100.1872
@@ -1888,14 +1888,14 @@
         "Lokale Familie",
         "Abseits der Touristenpfade"
       ],
-      "bookingTips": "Good alternative to Shuanglang. Very peaceful."
+      "bookingTips": "Gute Alternative zu Shuanglang. Sehr ruhig."
     },
     {
       "name": "大理苍山饭店",
       "nameEn": "Dali Cangshan Hotel",
       "budget": "mid",
       "priceRange": "¥400-700/night",
-      "address": "Dali City",
+      "address": "Dali-Stadt",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1672
@@ -1907,14 +1907,14 @@
         "Komfortabel",
         "Gutes Frühstück"
       ],
-      "bookingTips": "Good base for exploring. Request mountain view rooms."
+      "bookingTips": "Guter Ausgangspunkt für Erkundungen. Zimmer mit Bergblick anfragen."
     },
     {
       "name": "民宿 in der Nähe des Drei-Pagoden-Tempels",
       "nameEn": "Three Pagodas Area Homestay",
       "budget": "budget",
       "priceRange": "¥120-300/night",
-      "address": "Near Three Pagodas",
+      "address": "In der Nähe der Drei Pagoden",
       "coordinates": {
         "lat": 25.6722,
         "lng": 100.1572
@@ -1926,14 +1926,14 @@
         "Familiengeführt",
         "Preis-Leistung"
       ],
-      "bookingTips": "Good for temple visitors. Very peaceful mornings."
+      "bookingTips": "Gut für Tempelbesucher. Sehr ruhige Morgen."
     },
     {
       "name": "Yinqiao Huayu Gasthaus",
       "nameEn": "Yinqiao Flower Language Inn",
       "budget": "budget",
       "priceRange": "¥150-350/night",
-      "address": "Yinqiao Town",
+      "address": "Yinqiao-Stadt",
       "coordinates": {
         "lat": 25.7222,
         "lng": 100.0872
@@ -1945,14 +1945,14 @@
         "Ruhig",
         "Fahrradfreundlich"
       ],
-      "bookingTips": "Great for photographers. Perfect for flower season."
+      "bookingTips": "Ideal für Fotografen. Perfekt für die Blumenzeit."
     },
     {
       "name": "Zhoucheng Bai-Gasthaus",
       "nameEn": "Zhoucheng Bai Homestay",
       "budget": "budget",
       "priceRange": "¥100-280/night",
-      "address": "Zhoucheng Village",
+      "address": "Dorf Zhoucheng",
       "coordinates": {
         "lat": 25.8022,
         "lng": 100.0872
@@ -1964,14 +1964,14 @@
         "Lokale Familie",
         "Kulturelles Eintauchen"
       ],
-      "bookingTips": "Best for culture seekers. Morning market is walking distance."
+      "bookingTips": "Am besten für Kulturliebhaber. Der Morgenmarkt ist zu Fuß erreichbar."
     },
     {
       "name": "Gasthaus in der Altstadt von Weishan",
       "nameEn": "Weishan Ancient Town Inn",
       "budget": "mid",
       "priceRange": "¥200-450/night",
-      "address": "Weishan Ancient Town",
+      "address": "Weishan-Alte Stadt",
       "coordinates": {
         "lat": 25.2322,
         "lng": 100.3072
@@ -1983,7 +1983,7 @@
         "Authentisch",
         "Ruhig"
       ],
-      "bookingTips": "Perfect for escaping tourism. Nanzhao Kingdom atmosphere."
+      "bookingTips": "Perfekt, um dem Tourismus zu entfliehen. Atmosphäre des Königreichs Nanzhao."
     }
   ],
   "payment": [
@@ -1992,25 +1992,25 @@
       "icon": "alipay",
       "description": "Funktioniert in den meisten Einrichtungen in Dali",
       "howToUse": [
-        "Download before arrival",
-        "Link international card"
+        "Vor der Ankunft herunterladen",
+        "Internationale Karte verknüpfen"
       ],
       "tips": [
-        "Common in tourist areas",
+        "In Touristengebieten üblich",
         "Funktioniert möglicherweise nicht in abgelegenen Dörfern"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Accepted in most places",
+      "description": "In den meisten Orten akzeptiert",
       "howToUse": [
-        "WeChat required",
+        "WeChat erforderlich",
         "Internationale Karten werden akzeptiert"
       ],
       "tips": [
-        "Set to English mode",
-        "Useful in villages"
+        "Auf Englisch umstellen",
+        "In Dörfern nützlich"
       ]
     },
     {
@@ -2019,7 +2019,7 @@
       "description": "Unverzichtbar für Märkte und abgelegene Gebiete",
       "howToUse": [
         "ATM in der Altstadt von Dali",
-        "Banks in city"
+        "Banken in der Stadt"
       ],
       "tips": [
         "Bringen Sie 500+¥ für die Erhai-Radtour mit",
@@ -2030,164 +2030,164 @@
   "culturalTips": [
     {
       "category": "bai",
-      "title": "Bai Culture",
+      "title": "Bai-Kultur",
       "content": "Dali ist das Siedlungsgebiet der Bai. Bitte respektieren Sie die lokalen Bräuche. Die Bai haben einzigartige Traditionen wie den Drei-Tassen-Tee, die Trachten und die Batik-Kunst. Das Dritte-Monats-Fest und das Raosanling-Fest sind wichtige Veranstaltungen.",
       "importance": "high"
     },
     {
       "category": "cycling",
-      "title": "Erhai Cycling",
-      "content": "Cycling Erhai Lake is the signature experience. 120km around the lake. Start early, bring water and sunscreen. Rent bikes in Dali or Caicun. The eastern shore is less crowded.",
+      "title": "Erhai-Radtour",
+      "content": "Eine Radtour um den Erhai-See ist das Erlebnis schlechthin. 120 km rund um den See. Früh starten, Wasser und Sonnencreme mitbringen. Fahrräder kann man in Dali oder Caicun mieten. Das Ostufer ist weniger überlaufen.",
       "importance": "high"
     },
     {
       "category": "weather",
-      "title": "Mountain Weather",
-      "content": "Dali's weather changes quickly. Mountains cause localized weather systems. Even in summer, bring a jacket. Rain can appear suddenly. Spring flowers and autumn colors are spectacular.",
+      "title": "Bergwetter",
+      "content": "Das Wetter in Dali wechselt schnell. Die Berge verursachen lokale Wettersysteme. Auch im Sommer eine Jacke mitbringen. Regen kann plötzlich auftreten. Frühlingsblumen und Herbstfarben sind spektakulär.",
       "importance": "medium"
     },
     {
       "category": "etiquette",
       "title": "Tempeletikette",
-      "content": "When visiting Three Pagodas and temples, dress modestly covering shoulders and knees. Remove hats in temples. Don't point feet at Buddha images. Walk clockwise around pagodas.",
+      "content": "Beim Besuch der Drei Pagoden und Tempel sollte man sich dezent kleiden und Schultern sowie Knie bedecken. In Tempeln Hüte abnehmen. Nicht mit den Füßen auf Buddha-Bilder zeigen. Pagoden im Uhrzeigersinn umrunden.",
       "importance": "medium"
     },
     {
       "category": "tiedye",
-      "title": "Bai Tie-dye Culture",
+      "title": "Bai-Batik-Kultur",
       "content": "Die Bai sind bekannt für ihre traditionelle Indigofärberei. Sie verwenden natürliche Pflanzenfarbstoffe auf Baumwollstoffen. Jedes Muster hat eine symbolische Bedeutung. Das Dorf Zhoucheng ist das Zentrum dieses Handwerks. Achten Sie auf Muster von Schmetterlingen, Fischen und Blumen.",
       "importance": "high"
     },
     {
       "category": "tea",
-      "title": "Yunnan Tea Culture",
+      "title": "Yunnan-Tee-Kultur",
       "content": "Yunnan ist berühmt für Pu-Erh-Tee. In Dali gibt es Teehäuser, in denen Sie die Teezeremonie erleben können. Der Drei-Tassen-Tee der Bai symbolisiert die Geschmäcker des Lebens: bitter, süß und nachklingend. Tee ist ein wichtiger Bestandteil des lokalen gesellschaftlichen Lebens.",
       "importance": "medium"
     },
     {
       "category": "festivals",
-      "title": "Bai Festivals",
+      "title": "Bai-Feste",
       "content": "Zu den wichtigsten Festen der Bai gehören: das Dritte-Mond-Fest (Sanyuejie) – ein Pferdemarkt und Handelsmarkt in Dali; Raosanling – eine Pilgerreise zu drei heiligen Stätten; das Feuerfackel-Fest – das Anzünden von Fackeln, um Schädlinge fernzuhalten. Vom Sommer bis zum Frühherbst ist Festivalsaison.",
       "importance": "high"
     },
     {
       "category": "architecture",
-      "title": "Bai Architecture",
+      "title": "Bai-Architektur",
       "content": "Die Häuser der Bai zeichnen sich durch weiße Wände, graue Ziegel und Pferdekopfwände aus. Das typische Muster ist der Drei-Höfe-und-ein-Sichtschutz-Stil. Achten Sie auf kunstvolle Torhäuser (dekorative Tortürme in den Innenhöfen) und Wandmalereien.",
       "importance": "medium"
     },
     {
       "category": "clothing",
-      "title": "Bai Traditional Clothing",
+      "title": "Traditionelle Bai-Kleidung",
       "content": "Die Frauen der Bai tragen die traditionelle Kleidung des Drei-Tassen-Tees: weiße Jacken, blaue Gürtel und bestickte Schuhe. Der berühmte Phönixhut-Kopfschmuck symbolisiert den Phönix. In Touristenbereichen können Sie Kostüme für Fotos mieten.",
       "importance": "medium"
     },
     {
       "category": "religion",
-      "title": "Bai Religion",
+      "title": "Bai-Religion",
       "content": "Die Bai glauben an eine Mischung aus Buddhismus, Daoismus und der Verehrung von Benzhu (lokalen Schutzgottheiten). Jedes Dorf hat einen Benzhu-Tempel. Die Drei Pagoden sind ein bedeutendes buddhistisches Erbe. Zeigen Sie Respekt, wenn Sie Zeremonien beobachten.",
       "importance": "low"
     },
     {
       "category": "music",
-      "title": "Bai Music",
+      "title": "Bai-Musik",
       "content": "Bai-Oper ist ein traditionelles Theater, das Gesang und Tanz verbindet. Zu den traditionellen Instrumenten gehören die Sanxian (dreisaitige Laute) und die Pferdekopfgeige. Sie können Aufführungen in der Altstadt von Dali oder während der Feste sehen.",
       "importance": "low"
     },
     {
       "category": "food",
-      "title": "Bai Food Culture",
+      "title": "Bai-Esskultur",
       "content": "Die Küche der Bai zeichnet sich durch frisches Gemüse, Pilze und Fisch aus. Rushan ist ein gezogener Käse. Liangji ist kaltes Huhn. Probieren Sie auf den Märkten lokale Spezialitäten: Baba (gedämpfte Brötchen), Ersi (Reisnudeln) und Mixia (garnelenförmige Gelee-Süßigkeiten aus Reis).",
       "importance": "high"
     },
     {
       "category": "crafts",
-      "title": "Bai Silver Crafts",
-      "content": "Bai silver smithing is famous for intricate jewelry and decorative items. Silver is believed to have health benefits. Popular items include silver bracelets, hair ornaments, and tea accessories. Authentic silver has high purity.",
+      "title": "Bai-Silberhandwerk",
+      "content": "Die Silberschmiedekunst der Bai ist berühmt für filigrane Schmuckstücke und dekorative Gegenstände. Silber soll gesundheitsfördernde Eigenschaften haben. Beliebte Artikel sind Silberarmbänder, Haarspangen und Teezubehör. Echtes Silber hat einen hohen Reinheitsgrad.",
       "importance": "low"
     },
     {
       "category": "wedding",
-      "title": "Bai Wedding Customs",
+      "title": "Hochzeitsbräuche der Bai",
       "content": "Die Hochzeitsbräuche der Bai beinhalten einzigartige Rituale wie das \"Jiao Jia\" (Braut beißt den Bräutigam ins Ohr). Das Hochzeitsbankett besteht aus aufwendig zubereiteten Gerichten. Die Braut wechselt am Veranstaltungsort mehrmals ihre Kleidung.",
       "importance": "low"
     },
     {
       "category": "fishing",
-      "title": "Erhai Fishing Culture",
+      "title": "Fischerkultur am Erhai-See",
       "content": "Die Fischerei spielt seit Jahrhunderten eine zentrale Rolle im Leben am Erhai-See. Zu den traditionellen Fangmethoden gehört der Einsatz von Kormoranen. In einigen Fischerdörfern werden diese Methoden noch heute praktiziert. Fischgerichte sind ein Grundnahrungsmittel der lokalen Küche.",
       "importance": "medium"
     },
     {
       "category": "dialect",
-      "title": "Bai Language",
+      "title": "Die Sprache der Bai",
       "content": "Die Bai-Sprache ist eine Tonsprache, die sich völlig vom Hochchinesischen unterscheidet. Viele Einheimische sprechen sowohl Bai als auch Mandarin. Es wird geschätzt, wenn man ein paar Bai-Ausdrücke wie \"Nihao\" (Hallo) oder \"Xiexie\" (Danke) lernt.",
       "importance": "low"
     },
     {
       "category": "photography",
-      "title": "Photography Tips",
-      "content": "Dali offers excellent photography opportunities: sunrise at Erhai Lake, the pink wall in Xizhou, Cangshan Mountain reflections, and Bai people in traditional clothing. The best light is early morning and late afternoon. Bring a tripod for night shots of the Three Pagodas.",
+      "title": "Fototipps",
+      "content": "Dali bietet hervorragende Fotomöglichkeiten: Sonnenaufgang am Erhai-See, die rosa Mauer in Xizhou, Spiegelungen des Cangshan-Gebirges und Bai in traditioneller Kleidung. Das beste Licht ist am frühen Morgen und am späten Nachmittag. Bringen Sie ein Stativ für Nachtaufnahmen der Drei Pagoden mit.",
       "importance": "medium"
     },
     {
       "category": "shopping",
-      "title": "Dali Shopping",
-      "content": "Dali is famous for tie-dye products, silver jewelry, tea (especially Pu'er), and marble. The best shopping is at the morning market in Xizhou and Zhoucheng for tie-dye, and the Foreigners Street in Dali Old Town for silver and souvenirs. Bargaining is expected in markets.",
+      "title": "Einkaufen in Dali",
+      "content": "Dali ist berühmt für Batikprodukte, Silberschmuck, Tee (insbesondere Pu'er) und Marmor. Am besten einkaufen kann man auf dem Morgenmarkt in Xizhou und in Zhoucheng für Batik sowie auf der Ausländerstraße in der Altstadt von Dali für Silber und Souvenirs. Auf Märkten wird mit dem Preis gehandelt.",
       "importance": "medium"
     },
     {
       "category": "health",
-      "title": "Altitude and Health",
-      "content": "Dali sits at about 1972m elevation. Some visitors may experience mild altitude sickness. Stay hydrated, avoid strenuous activity on arrival, and eat lightly. The medical facilities in Dali are adequate for basic health issues.",
+      "title": "Höhenlage und Gesundheit",
+      "content": "Dali liegt auf etwa 1972 m Höhe. Einige Besucher können leichte Höhenkrankheitssymptome verspüren. Bleiben Sie hydriert, vermeiden Sie anstrengende Aktivitäten bei der Ankunft und essen Sie leicht. Die medizinischen Einrichtungen in Dali sind für grundlegende Gesundheitsprobleme ausreichend.",
       "importance": "medium"
     },
     {
       "category": "language",
-      "title": "English in Dali",
-      "content": "English is limited in Dali outside tourist areas. Learning a few Mandarin phrases helps. Many young people in Dali Old Town and Shuanglang speak basic English. Translation apps are helpful for communicating with older locals.",
+      "title": "Englisch in Dali",
+      "content": "Englisch ist in Dali außerhalb der Touristenbereiche begrenzt. Das Erlernen einiger Mandarin-Sätze hilft. Viele junge Leute in der Altstadt von Dali und in Shuanglang sprechen grundlegendes Englisch. Übersetzungs-Apps sind hilfreich, um mit älteren Einheimischen zu kommunizieren.",
       "importance": "medium"
     },
     {
       "category": "sustainability",
-      "title": "Environmental Awareness",
-      "content": "Erhai Lake's ecosystem is fragile. Avoid single-use plastics, don't swim in restricted areas, and use eco-friendly transportation. Several initiatives promote lake protection. Be a responsible tourist.",
+      "title": "Umweltbewusstsein",
+      "content": "Das Ökosystem des Erhai-Sees ist empfindlich. Vermeiden Sie Einwegplastik, schwimmen Sie nicht in gesperrten Bereichen und nutzen Sie umweltfreundliche Verkehrsmittel. Mehrere Initiativen fördern den Schutz des Sees. Seien Sie ein verantwortungsbewusster Tourist.",
       "importance": "high"
     },
     {
       "category": "nanzhao",
-      "title": "Nanzhao Kingdom Heritage",
-      "content": "Dali was the capital of the Nanzhao Kingdom (738-902 AD), one of the longest-ruling dynasties in Chinese history. The Three Pagodas, Nanzhao Island, and Weishan Ancient Town reflect this heritage. Understanding this history enriches the visit.",
+      "title": "Erbe des Nanzhao-Königreichs",
+      "content": "Dali war die Hauptstadt des Nanzhao-Königreichs (738-902 n. Chr.), einer der am längsten regierenden Dynastien in der chinesischen Geschichte. Die Drei Pagoden, die Nanzhao-Insel und die Altstadt von Weishan spiegeln dieses Erbe wider. Das Verständnis dieser Geschichte bereichert den Besuch.",
       "importance": "medium"
     },
     {
       "category": "coffee",
-      "title": "Yunnan Coffee Culture",
-      "content": "Yunnan produces some of China's best coffee. Dali has several specialty coffee shops using locally grown beans. Try the Yunnan pour-over at cafes on Foreigners Street. Coffee plantations are nearby and offer tours.",
+      "title": "Yunnan-Kaffeekultur",
+      "content": "Yunnan produziert einen Teil des besten Kaffees Chinas. Dali hat mehrere Spezialitätenkaffeehäuser, die lokal angebaute Bohnen verwenden. Probieren Sie den Yunnan-Pour-Over in Cafés auf der Foreigners Street. Kaffeeplantagen sind in der Nähe und bieten Führungen an.",
       "importance": "low"
     },
     {
       "category": "gay-friendly",
-      "title": "LGBTQ+ Friendly Destination",
-      "content": "Dali has a reputation as one of China's more LGBTQ+ friendly destinations, with a relatively open atmosphere and welcoming vibe. Several bars and cafes cater to the community. The laid-back atmosphere is generally accepting.",
+      "title": "LGBTQ+-freundliches Reiseziel",
+      "content": "Dali hat den Ruf, eines der LGBTQ+-freundlicheren Reiseziele Chinas zu sein, mit einer relativ offenen Atmosphäre und einem einladenden Vibe. Mehrere Bars und Cafés richten sich an die Community. Die entspannte Atmosphäre ist im Allgemeinen akzeptierend.",
       "importance": "medium"
     },
     {
       "category": "digital-nomad",
-      "title": "Digital Nomad Hub",
-      "content": "Dali has become a popular base for digital nomads and remote workers. Many cafes offer fast WiFi and quiet workspaces. Monthly apartment rentals are affordable. Coworking spaces are available in Dali Old Town.",
+      "title": "Digital-Nomaden-Hub",
+      "content": "Dali ist zu einem beliebten Stützpunkt für digitale Nomaden und Remote-Arbeiter geworden. Viele Cafés bieten schnelles WLAN und ruhige Arbeitsplätze. Monatliche Apartmentmieten sind erschwinglich. Coworking-Spaces sind in der Dali-Altstadt verfügbar.",
       "importance": "medium"
     },
     {
       "category": "nightlife",
-      "title": "Dali Nightlife",
-      "content": "Dali has a vibrant nightlife scene around Foreigners Street with bars, live music, and clubs. Shuanglang has a more relaxed evening atmosphere with lake-view bars. Most nightlife closes by midnight on weekdays.",
+      "title": "Dali Nachtleben",
+      "content": "Dali hat ein lebendiges Nachtleben rund um die Foreigners Street mit Bars, Live-Musik und Clubs. Shuanglang hat eine entspanntere Abendatmosphäre mit Bars am Seeufer. Das meiste Nachtleben schließt unter der Woche um Mitternacht.",
       "importance": "low"
     },
     {
       "category": "weather",
-      "title": "Best Time to Visit",
-      "content": "The best times to visit Dali are March-May (spring flower season) and September-November (clear skies, autumn colors). Summer (June-August) is rainy but green. Winter is dry and sunny but cold. Avoid Chinese holidays when tourist sites are crowded.",
+      "title": "Beste Reisezeit",
+      "content": "Die beste Reisezeit für Dali ist von März bis Mai (Frühlingsblüte) und von September bis November (klarer Himmel, Herbstfarben). Der Sommer (Juni bis August) ist regnerisch, aber grün. Der Winter ist trocken und sonnig, aber kalt. Meiden Sie chinesische Feiertage, wenn die Touristenattraktionen überfüllt sind.",
       "importance": "high"
     }
   ],
@@ -2368,10 +2368,10 @@
     {
       "id": "dali-old-town",
       "name": "大理古城",
-      "nameEn": "Dali Old Town",
+      "nameEn": "Dali Altstadt",
       "category": "cultural",
       "description": "Eine wunderschön erhaltene alte Stadt mit traditioneller Bai-Architektur, Kopfsteinpflasterstraßen und lebendiger lokaler Kultur.",
-      "address": "Dali Old Town, Dali City",
+      "address": "Altstadt von Dali, Stadt Dali",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
@@ -2395,13 +2395,13 @@
       "nameEn": "Xizhou Altstadt",
       "category": "cultural",
       "description": "Gut erhaltene Bai-Stadt, berühmt für ihre Architektur, lokale Märkte und authentische Lebensweise der Bai.",
-      "address": "Xizhou Town, Dali County",
+      "address": "Stadt Xizhou, Kreis Dali",
       "coordinates": {
         "lat": 25.7622,
         "lng": 100.1272
       },
       "openingHours": "24 Stunden geöffnet (Markt 08:00-18:00)",
-      "ticketPrice": "Free (Zhou's compound 60¥)",
+      "ticketPrice": "Kostenlos (Zhous Anwesen 60 Yuan)",
       "recommendedVisitTime": "2-3 Stunden",
       "highlights": [
         "Zhou-Residenz",
@@ -2440,7 +2440,7 @@
     {
       "id": "cangshan-mountain",
       "name": "苍山",
-      "nameEn": "Cangshan Mountain",
+      "nameEn": "Cangshan-Berg",
       "category": "natural",
       "description": "Eine dramatische Bergkette hinter Dali mit Wanderwegen, alten Tempeln und Panoramablicken auf den Erhai-See.",
       "address": "Cangshan-Berg, westlich von Dali",
@@ -2449,7 +2449,7 @@
         "lng": 100.1072
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "40¥ (cable car extra)",
+      "ticketPrice": "40 Yuan (Seilbahn extra)",
       "recommendedVisitTime": "Halber bis ganzer Tag",
       "highlights": [
         "Riesenkopf mit 18 Gipfeln",
@@ -2464,7 +2464,7 @@
     {
       "id": "weibao-mountain",
       "name": "巍宝山",
-      "nameEn": "Weibao Mountain",
+      "nameEn": "Weibao-Berg",
       "category": "cultural",
       "description": "Ein heiliger taoistischer Berg mit alten Tempeln, Wanderwegen und Panoramablicken auf das Dali-Tal.",
       "address": "Weibao-Berg, Kreis Weishan",
@@ -2488,7 +2488,7 @@
     {
       "id": "butterfly-spring",
       "name": "蝴蝶泉",
-      "nameEn": "Butterfly Spring",
+      "nameEn": "Schmetterlingsquelle",
       "category": "natural",
       "description": "Eine legendäre Quelle, umgeben von alten Bäumen, traditionell mit der Paarungszeit der Schmetterlinge im Frühling verbunden.",
       "address": "Butterfly Spring Park, 20 km nördlich von Dali",
@@ -2536,7 +2536,7 @@
     {
       "id": "weishan-ancient",
       "name": "巍山古城",
-      "nameEn": "Weishan Ancient Town",
+      "nameEn": "Weishan-Altstadt",
       "category": "cultural",
       "description": "Eine perfekt erhaltene antike Stadt und die Geburtsstätte des Königreichs Nanzhao. Weniger touristisch als die Altstadt von Dali mit authentischem Lokalleben.",
       "address": "Kreis Weishan, Dali",
@@ -2944,7 +2944,7 @@
     {
       "id": "dali-nanzhao-island-detail",
       "name": "南诏风情岛",
-      "nameEn": "Nanzhao Style Island",
+      "nameEn": "Nanzhao-Stil-Insel",
       "category": "landmark",
       "description": "Die Nanzhao-Brauchtumsinsel ist die größte Insel im Erhai-See. Sie beherbergt den Nanzhao-Palast und den Benzhu-Kulturplatz, die die Geschichte des Nanzhao-Königreichs und der Bai-Kultur zeigen und sie zu einem wichtigen Ort für das Verständnis der Geschichte von Dali machen.",
       "address": "Mitte des Erhai-Sees, Shuanglang-Stadt, Stadt Dali",
@@ -3136,7 +3136,7 @@
     {
       "id": "dali-fengyu-ancient-town",
       "name": "凤羽古镇",
-      "nameEn": "Fengyu Ancient Town",
+      "nameEn": "Fengyu-Altstadt",
       "category": "landmark",
       "description": "Die antike Stadt Fengyu ist eine Bai-Stadt im Kreis Eryuan im Bezirk Dali und wird als 'Museum der Bai-Architektur' bezeichnet. Die Stadt bewahrt viele Bai-Wohnhäuser aus der Ming- und Qing-Dynastie und bietet eine ruhige Umgebung abseits des Trubels der Stadt.",
       "address": "Fengyu-Stadt, Kreis Eryuan, Bezirk Dali",
@@ -3160,7 +3160,7 @@
     {
       "id": "dali-nuodeng-village",
       "name": "诺邓古村",
-      "nameEn": "Nuodeng Ancient Village",
+      "nameEn": "Nuodeng-Altes Dorf",
       "category": "landmark",
       "description": "Das alte Dorf Nuodeng ist das älteste Dorf im Nordwesten Yunnans und berühmt für die Salzproduktion. Das Dorf bewahrt viele Gebäude aus der Ming- und Qing-Dynastie, darunter Salzbrunnen, Tempel und Wohnhäuser, und ist ein großartiger Ort, um die alte Dorfkultur West-Yunnans zu erleben.",
       "address": "Stadt Nuodeng, Kreis Yunlong, Bezirk Dali",
@@ -3208,7 +3208,7 @@
     {
       "id": "dali-caicun-wharf",
       "name": "才村码头",
-      "nameEn": "Caicun Wharf",
+      "nameEn": "Caicun-Kai",
       "category": "landmark",
       "description": "Der Cai Village Pier ist der nächstgelegene Erhai-Kreuzfahrtsteg zur Dali-Altenstadt. Von hier aus können Sie ein Boot nehmen, um den Erhai-See zu erkunden. Rund um den Steg gibt es viele Gästehäuser und Cafés mit Seeblick, was ihn zu einem großartigen Ort macht, um die Landschaft des Erhai-Sees zu genießen.",
       "address": "Caicun-Dorf, Dali",
@@ -3304,7 +3304,7 @@
     {
       "id": "dali-shuanglang-art",
       "name": "双廊艺术区",
-      "nameEn": "Shuanglang Art District",
+      "nameEn": "Shuanglang Kunstviertel",
       "category": "landmark",
       "description": "Shuanglang ist eine künstlerische Stadt am Erhai-See, Heimat vieler Künstler und Bohemiens. Die Stadt bietet verschiedene Kunststudios, Galerien und Fachgeschäfte und ist damit das kulturell lebendigste Gebiet in Dali.",
       "address": "Shuanglang-Stadt, Dali",
@@ -3400,7 +3400,7 @@
     {
       "id": "dali-wase-market",
       "name": "挖色集市",
-      "nameEn": "Wase Market",
+      "nameEn": "Wase Markt",
       "category": "market",
       "description": "Der Wase-Markt ist ein traditioneller Markt der Bai auf der Ostseite des Erhai-Sees. An Markttagen versammeln sich hier Dorfbewohner aus der Umgebung, um landwirtschaftliche Produkte und Kunsthandwerk zu handeln – ein großartiger Ort, um das ländliche Leben der Bai zu erleben.",
       "address": "Wase-Stadt, Dali",
@@ -3494,7 +3494,7 @@
     {
       "id": "dali-night",
       "name": "大理古城夜景",
-      "nameEn": "Dali Ancient City Night View",
+      "nameEn": "Dali Altstadt Nachtansicht",
       "category": "street",
       "description": "Nachtansichten der Dali-Altstadt, mit der Renmin Road und der Foreigner Street hell erleuchtet.",
       "address": "Altstadtbereich, Stadt Dali",

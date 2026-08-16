@@ -3,37 +3,37 @@
   "name": "哈尔滨",
   "nameEn": "Harbin",
   "country": "China",
-  "population": "5.4 million",
+  "population": "5,4 Millionen",
   "coordinates": {
     "lat": 45.8038,
     "lng": 126.534
   },
-  "timezone": "UTC+8 (China Standard Time)",
-  "description": "Harbin, the capital of Heilongjiang province, is known for its severe winters and spectacular ice festival. The city showcases a unique blend of Russian and Chinese architecture, earning it the nickname 'Moscow of the East'. Home to one of the world's largest ice and snow festivals.",
+  "timezone": "UTC+8 (Chinesische Standardzeit)",
+  "description": "Harbin, die Hauptstadt der Provinz Heilongjiang, ist bekannt für seine strengen Winter und das spektakuläre Eisfestival. Die Stadt zeigt eine einzigartige Mischung aus russischer und chinesischer Architektur, was ihr den Spitznamen 'Moskau des Ostens' eingebracht hat. Heimat eines der größten Eis- und Schneefestivals der Welt.",
   "coverImage": "/img/ext/fae0fe7e7812.webp",
   "highlights": [
-    "Harbin Ice and Snow Festival - World's largest",
-    "Saint Sophia Cathedral - Largest Orthodox church in Far East",
-    "Central Avenue - Russian colonial architecture",
-    "Sun Island - Summer retreat island",
-    "Harbin Polar Aquarium - Siberian tigers"
+    "Harbin Eis- und Schneefestival - das größte der Welt",
+    "Sophienkathedrale - größte orthodoxe Kirche im Fernen Osten",
+    "Zentralstraße - russische Kolonialarchitektur",
+    "Sonneninsel - Sommerrückzugsinsel",
+    "Harbin Polar Aquarium - Sibirische Tiger"
   ],
   "climate": {
-    "type": "Humid continental climate",
+    "type": "Feuchtes Kontinentalklima",
     "bestMonths": [
-      "December",
-      "January",
-      "February"
+      "Dezember",
+      "Januar",
+      "Februar"
     ],
     "avgSummerTemp": "22°C (72°F)",
     "avgWinterTemp": "-18°C (0°F)",
-    "tips": "Best in winter for Ice Festival. Summers are pleasant. Spring and autumn are short. Pack extremely warm clothes in winter."
+    "tips": "Am besten im Winter für das Eisfestival. Die Sommer sind angenehm. Frühling und Herbst sind kurz. Packen Sie im Winter extrem warme Kleidung ein."
   },
   "attractions": [
     {
       "id": "harbin-ice-festival",
       "name": "冰雪大世界",
-      "nameEn": "Harbin Ice and Snow Festival",
+      "nameEn": "Harbin Eis- und Schneefestival",
       "category": "seasonal",
       "description": "Das größte Eis- und Schneeskulpturen-Festival der Welt mit massiven beleuchteten Eisstrukturen.",
       "address": "Eis- und Schneewelt, Songhua-Fluss",
@@ -41,8 +41,8 @@
         "lat": 45.7822,
         "lng": 126.5422
       },
-      "openingHours": "10:00-21:00 (Dec-Feb)",
-      "ticketPrice": "290¥ (peak), 180¥ (off-peak)",
+      "openingHours": "10:00-21:00 Uhr (Dez-Feb)",
+      "ticketPrice": "290¥ (Hauptsaison), 180¥ (Nebensaison)",
       "recommendedVisitTime": "3-4 Stunden",
       "highlights": [
         "Eisskulpturen",
@@ -81,7 +81,7 @@
     {
       "id": "central-avenue",
       "name": "中央大街",
-      "nameEn": "Central Avenue",
+      "nameEn": "Zentralstraße",
       "category": "cultural",
       "description": "1,4 km lange Fußgängerzone mit europäischer Architektur, Geschäften und Restaurants.",
       "address": "Zentralallee, Bezirk Daoli",
@@ -105,7 +105,7 @@
     {
       "id": "sun-island",
       "name": "太阳岛",
-      "nameEn": "Sun Island",
+      "nameEn": "Sonneninsel",
       "category": "natural",
       "description": "Inselrückzugsort am Songhua-Fluss mit Parks, Stränden und russischen Villen im Stil.",
       "address": "Sonneninsel, Songhua-Fluss",
@@ -114,7 +114,7 @@
         "lng": 126.5822
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "30¥ (park only)",
+      "ticketPrice": "30¥ (nur Park)",
       "recommendedVisitTime": "3-4 Stunden",
       "highlights": [
         "Russische Villen",
@@ -129,7 +129,7 @@
     {
       "id": "harbin-polar-akvarium",
       "name": "哈尔滨极地馆",
-      "nameEn": "Harbin Polar Aquarium",
+      "nameEn": "Harbin Polar-Aquarium",
       "category": "entertainment",
       "description": "Aquarium mit Polartieren, Sibirischen Tigern und Meeresvorführungen.",
       "address": "Sonneninsel, Songhua-Fluss",
@@ -153,10 +153,10 @@
     {
       "id": "zhongyang-dashan",
       "name": "中央大街欧式建筑",
-      "nameEn": "Central Avenue European Architecture",
+      "nameEn": "Europäische Architektur der Zentralstraße",
       "category": "historical",
       "description": "Sammlung europäischer Gebäude aus dem frühen 20. Jahrhundert entlang der historischen Straße.",
-      "address": "Central Avenue",
+      "address": "Zentralallee",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
@@ -166,7 +166,7 @@
       "recommendedVisitTime": "1-2 Stunden",
       "highlights": [
         "Russischer Stil",
-        "Art Deco",
+        "Art-Déco",
         "Mittelalterliches Europa",
         "Fotomöglichkeiten"
       ],
@@ -177,16 +177,16 @@
     {
       "id": "songhua-river",
       "name": "松花江",
-      "nameEn": "Songhua River",
+      "nameEn": "Songhua-Fluss",
       "category": "natural",
       "description": "Bedeutender Fluss, der durch Harbin fließt, mit Winteraktivitäten und malerischen Spazierwegen.",
-      "address": "Songhua River waterfront",
+      "address": "Ufer des Songhua-Flusses",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6122
       },
       "openingHours": "24 Stunden geöffnet",
-      "ticketPrice": "Free (activities extra)",
+      "ticketPrice": "Kostenlos (Aktivitäten extra)",
       "recommendedVisitTime": "1-2 Stunden",
       "highlights": [
         "Winteraktivitäten",
@@ -204,13 +204,13 @@
       "nameEn": "Sibirischer Tigerpark",
       "category": "nature",
       "description": "Große Zuchtanlage für Sibirische Tiger mit Beobachtungsplattformen.",
-      "address": "Songbei District",
+      "address": "Stadtbezirk Songbei",
       "coordinates": {
         "lat": 45.8322,
         "lng": 126.5122
       },
       "openingHours": "08:00-17:00 (Nov-Mär), 08:00-16:00 (Apr-Okt)",
-      "ticketPrice": "90¥ (park) + 20¥ (bus)",
+      "ticketPrice": "90¥ (Park) + 20¥ (Bus)",
       "recommendedVisitTime": "2-3 Stunden",
       "highlights": [
         "Tigerfütterung",
@@ -225,10 +225,10 @@
     {
       "id": "volunteer-bridge",
       "name": "阳明滩大桥",
-      "nameEn": "Yangmingtan Bridge",
+      "nameEn": "Yangmingtan-Brücke",
       "category": "landmark",
       "description": "Moderne Hängebrücke mit Panoramablick auf die Stadt.",
-      "address": "Yangmingtan Island",
+      "address": "Insel Yangmingtan",
       "coordinates": {
         "lat": 45.8122,
         "lng": 126.5722
@@ -249,7 +249,7 @@
     {
       "id": "harbin-museum",
       "name": "黑龙江省博物馆",
-      "nameEn": "Heilongjiang Provincial Museum",
+      "nameEn": "Provinzmuseum Heilongjiang",
       "category": "cultural",
       "description": "Museum, das die Geschichte, Kultur und das Naturerbe der Provinz zeigt.",
       "address": "Zentralallee, Bezirk Daoli",
@@ -296,10 +296,10 @@
     {
       "id": "harbin-concert-hall",
       "name": "哈尔滨音乐厅",
-      "nameEn": "Harbin Concert Hall",
+      "nameEn": "Harbiner Konzerthalle",
       "category": "cultural",
       "description": "Modernes Konzerthaus mit ausgezeichneter Akustik und russisch beeinflusstem Design.",
-      "address": "Songhua River waterfront",
+      "address": "Ufer des Songhua-Flusses",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6122
@@ -323,7 +323,7 @@
       "nameEn": "Huangshan",
       "category": "cultural",
       "description": "Berglandschaft innerhalb der Stadt, bekannt für Gebäude im russischen Datscha-Stil.",
-      "address": "Huangshan District",
+      "address": "Stadtbezirk Huangshan",
       "coordinates": {
         "lat": 45.8522,
         "lng": 126.5622
@@ -344,10 +344,10 @@
     {
       "id": "fengle-zhen",
       "name": "风铃镇",
-      "nameEn": "Wind Bell Town",
+      "nameEn": "Windglockenstadt",
       "category": "cultural",
       "description": "Stadt im russischen Stil mit europäischer Architektur und kulturellen Aktivitäten.",
-      "address": "Songbei District",
+      "address": "Stadtbezirk Songbei",
       "coordinates": {
         "lat": 45.8122,
         "lng": 126.5722
@@ -359,7 +359,7 @@
         "Russischer Stil",
         "Kulturelle Aufführungen",
         "Europäische Architektur",
-        "Souvenirs"
+        "Andenken"
       ],
       "tips": "Ideal für Fotos. Kulturelle Aufführungen ansehen. Russische Produkte kaufen.",
       "image": "/img/ext/24ea14d2ac60.webp",
@@ -368,10 +368,10 @@
     {
       "id": "harbin-library",
       "name": "哈尔滨图书馆",
-      "nameEn": "Harbin Library",
+      "nameEn": "Harbin-Bibliothek",
       "category": "cultural",
       "description": "Historische Bibliothek mit russischem architektonischem Einfluss.",
-      "address": "Zhongyang Avenue",
+      "address": "Zhongyang-Allee",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
@@ -392,10 +392,10 @@
     {
       "id": "qingyun-tower",
       "name": "清云塔",
-      "nameEn": "Qingyun Tower",
+      "nameEn": "Qingyun-Turm",
       "category": "landmark",
       "description": "Moderner Turm mit Panoramablick über Harbin.",
-      "address": "Songbei District",
+      "address": "Stadtbezirk Songbei",
       "coordinates": {
         "lat": 45.8122,
         "lng": 126.5722
@@ -416,10 +416,10 @@
     {
       "id": "historic-district",
       "name": "道外历史文化区",
-      "nameEn": "Daowai Historic District",
+      "nameEn": "Daowai-Altstadt",
       "category": "historical",
       "description": "Altes chinesisches Viertel mit traditioneller Architektur und lokaler Kultur.",
-      "address": "Daowai District",
+      "address": "Stadtbezirk Daowai",
       "coordinates": {
         "lat": 45.7922,
         "lng": 126.6422
@@ -443,7 +443,7 @@
       "nameEn": "Qiulin Company",
       "category": "shopping",
       "description": "Historisches Kaufhaus, berühmt für russische Waren und lokale Produkte.",
-      "address": "Zhongyang Avenue",
+      "address": "Zhongyang-Allee",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
@@ -464,10 +464,10 @@
     {
       "id": "squirrel",
       "name": "松花江观鸟",
-      "nameEn": "Songhua River Birdwatching",
+      "nameEn": "Vogelbeobachtung am Songhua-Fluss",
       "category": "nature",
       "description": "Winterort zum Beobachten verschiedener Vogelarten am zugefrorenen Fluss.",
-      "address": "Songhua River",
+      "address": "Sungari-Fluss",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6122
@@ -512,7 +512,7 @@
     {
       "id": "harbin-rolling",
       "name": "防洪纪念塔",
-      "nameEn": "Flood Control Memorial Tower",
+      "nameEn": "Hochwasserschutz-Gedenkturm",
       "category": "historical",
       "description": "Ikonischer Turm, der zum Gedenken an Harbins Hochwasserschutzbemühungen erbaut wurde.",
       "address": "Zhongyang-Allee, Songhua-Fluss",
@@ -536,10 +536,10 @@
     {
       "id": "hongxing",
       "name": "红星冰雕馆",
-      "nameEn": "Hongxing Ice Sculpture Gallery",
+      "nameEn": "Hongxing-Eisskulpturen-Galerie",
       "category": "seasonal",
       "description": "Ganzjährige Eisskulpturen-Ausstellung mit kunstvollen Schnitzereien.",
-      "address": "Songhua River",
+      "address": "Sungari-Fluss",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.5422
@@ -560,7 +560,7 @@
     {
       "id": "zhongyang-dapai",
       "name": "中央大街地下市场",
-      "nameEn": "Central Avenue Underground Market",
+      "nameEn": "Untergrundmarkt der Zentralstraße",
       "category": "shopping",
       "description": "Unterirdischer Einkaufsbereich mit lokalen Produkten und russischen Waren.",
       "address": "Unter der Zentralstraße",
@@ -574,7 +574,7 @@
       "highlights": [
         "Russische Waren",
         "Lokales Kunsthandwerk",
-        "Souvenirs",
+        "Andenken",
         "Unterirdisches Einkaufen"
       ],
       "tips": "Nach Schnäppchen stöbern. Preise vergleichen. Gut für Souvenirs.",
@@ -584,7 +584,7 @@
     {
       "id": "harbin-industrial",
       "name": "哈尔滨工业博物馆",
-      "nameEn": "Harbin Industrial Museum",
+      "nameEn": "Industriemuseum Harbin",
       "category": "cultural",
       "description": "Museum, das das Industrieerbe Harbins und den russischen Einfluss zeigt.",
       "address": "Stadtbezirk Daoli",
@@ -641,7 +641,7 @@
         "lng": 126.5522
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "100 Yuan",
+      "ticketPrice": "100 Yuan.",
       "recommendedVisitTime": "2-3 Stunden",
       "highlights": [
         "Sibirische Tiger aus nächster Nähe beobachten",
@@ -752,7 +752,7 @@
     {
       "id": "northeast-martyrs-memorial",
       "name": "东北烈士纪念馆",
-      "nameEn": "Northeast Martyrs Memorial Hall",
+      "nameEn": "Gedenkhalle der Nordost-Märtyrer",
       "category": "museum",
       "description": "Ein Denkmal für die Märtyrer, die ihr Leben im Nordost-Chinesischen Antijapanischen Krieg und im Befreiungskrieg geopfert haben. Das Museum beherbergt eine große Anzahl wertvoller historischer Materialien und Kulturgüter und dient als Basis für patriotische Erziehung.",
       "address": "Yiman-Straße 241, Bezirk Nangang, Harbin",
@@ -824,7 +824,7 @@
     {
       "id": "jihong-bridge",
       "name": "霁虹桥",
-      "nameEn": "Jihong Bridge",
+      "nameEn": "Jihong-Brücke",
       "category": "landmark",
       "description": "Eines der Wahrzeichen Harbins, erbaut 1926, eine europäisch anmutende Brücke, die den Bezirk Daoli mit dem Bezirk Nangang verbindet und Harbins über hundertjährige Geschichte bezeugt.",
       "address": "Jihong-Straße, Bezirk Daoli, Harbin",
@@ -848,7 +848,7 @@
     {
       "id": "yaobuli-ski-resort",
       "name": "亚布力滑雪场",
-      "nameEn": "Yabuli Ski Resort",
+      "nameEn": "Yabuli-Skiresort",
       "category": "nature",
       "description": "Das größte umfassende Skigebiet Chinas, das internationale Veranstaltungen wie die Winter-Asienspiele ausgerichtet hat. Es verfügt über Skipisten verschiedener Schwierigkeitsgrade und ist ein Paradies für Skibegeisterte.",
       "address": "Yabuli-Stadt, Stadt Shangzhi, Harbin",
@@ -856,7 +856,7 @@
         "lat": 44.7822,
         "lng": 128.5222
       },
-      "openingHours": "08:00-16:30 (Winter)",
+      "openingHours": "08:00-16:30 Uhr (Winter)",
       "ticketPrice": "200-400 Yuan",
       "recommendedVisitTime": "1-2 Tage",
       "highlights": [
@@ -880,8 +880,8 @@
         "lat": 45.7722,
         "lng": 126.6222
       },
-      "openingHours": "17:00-21:00 (Winter)",
-      "ticketPrice": "150 Yuan",
+      "openingHours": "17:00-21:00 Uhr (Winter)",
+      "ticketPrice": "150 Yuan.",
       "recommendedVisitTime": "1-2 Stunden",
       "highlights": [
         "Eislaternenkunst",
@@ -920,7 +920,7 @@
     {
       "id": "harbin-northern-forest-zoo",
       "name": "北方森林动物园",
-      "nameEn": "Harbin Northern Forest Zoo",
+      "nameEn": "Nördlicher Waldzoo Harbin",
       "category": "nature",
       "description": "Einer der größten Waldzoos Chinas, in dem Tiere in einer natürlichen Umgebung leben und eine enge Begegnung mit verschiedenen seltenen Tieren aus dem Nordosten und kalten Regionen ermöglicht wird.",
       "address": "Gezidong-Gebiet, Bezirk Acheng, Harbin",
@@ -944,7 +944,7 @@
     {
       "id": "harbin-heilongjiang-forest-museum",
       "name": "中国(哈尔滨)森林博物馆",
-      "nameEn": "China Forest Museum",
+      "nameEn": "Chinesisches Waldmuseum",
       "category": "museum",
       "description": "Als das erste nationale Museum Chinas, das sich dem Thema Wald widmet, zeigt es Waldökologie, Forstgeschichte und Waldkultur und hat einen bedeutenden Bildungswert für die Wissenschaftskommunikation.",
       "address": "Hexing-Straße 26, Bezirk Xiangfang, Harbin",
@@ -968,7 +968,7 @@
     {
       "id": "harbin-erdogang",
       "name": "哈尔滨关道衙门",
-      "nameEn": "Harbin Customs Office Historic Site",
+      "nameEn": "Historische Stätte des Zollamts Harbin",
       "category": "museum",
       "description": "Die ehemalige Stätte des Zoll-Daotai-Yamens, das von der Qing-Regierung in Harbin errichtet wurde, zeigt Harbins moderne Verwaltungsgeschichte und dient als wichtiges Fenster zur Stadtentwicklung.",
       "address": "Beishiba Dao Straße, Bezirk Daowai, Harbin",
@@ -1016,7 +1016,7 @@
     {
       "id": "harbin-taiping-lake",
       "name": "太平湖",
-      "nameEn": "Taiping Lake",
+      "nameEn": "Taiping-See",
       "category": "nature",
       "description": "Ein natürlicher See am Stadtrand von Harbin, mit blauen Wellen im Sommer und einer natürlichen Eisbahn im Winter, ein großartiger Ort für Bürger zur Erholung, zum Spaß und zur Nähe zur Natur.",
       "address": "Taiping Stadt, Bezirk Daoli, Harbin",
@@ -1040,7 +1040,7 @@
     {
       "id": "harbin-erlongshan",
       "name": "二龙山风景区",
-      "nameEn": "Erlong Mountain Scenic Area",
+      "nameEn": "Erlong-Berg-Landschaftsgebiet",
       "category": "nature",
       "description": "Ein berühmtes Landschaftsgebiet am Stadtrand von Harbin, mit Bergen und Wasser und unterschiedlicher Landschaft in jeder Jahreszeit, es ist ein beliebtes Wochenendziel für die Bürger von Harbin.",
       "address": "Kreis Bin, Harbin",
@@ -1064,7 +1064,7 @@
     {
       "id": "harbin-hongbo-square",
       "name": "红博广场",
-      "nameEn": "Hongbo Square",
+      "nameEn": "Hongbo-Platz",
       "category": "landmark",
       "description": "Der symbolträchtige Platz im Zentrum von Harbin, umgeben von vielen historischen Gebäuden, ist ein wichtiger Ort für Freizeit und städtische Kulturveranstaltungen.",
       "address": "Hongjun-Straße, Bezirk Nangang, Harbin",
@@ -1088,7 +1088,7 @@
     {
       "id": "harbin-ice-snow-entertainment-world",
       "name": "冰雪欢乐谷",
-      "nameEn": "Ice and Snow Happy Valley",
+      "nameEn": "Eis- und Schnee-Freudental",
       "category": "nature",
       "description": "Ein großer Eis- und Schnee-Themenpark mit verschiedenen Eisunterhaltungsaktivitäten, darunter Eisrutschen und Eis-Autoscooter, was ihn im Winter zu einem ausgezeichneten Ziel für Familienausflüge macht.",
       "address": "In der Nähe der Harbin Ice-Snow World, Bezirk Songbei, Harbin",
@@ -1096,8 +1096,8 @@
         "lat": 45.7922,
         "lng": 126.5322
       },
-      "openingHours": "10:00-21:00 (Winter)",
-      "ticketPrice": "150 Yuan",
+      "openingHours": "10:00-21:00 Uhr (Winter)",
+      "ticketPrice": "150 Yuan.",
       "recommendedVisitTime": "3-4 Stunden",
       "highlights": [
         "Eisrutsche",
@@ -1112,7 +1112,7 @@
     {
       "id": "harbin-manchurian-railway-museum",
       "name": "中东铁路印象馆",
-      "nameEn": "Chinese Eastern Railway Museum",
+      "nameEn": "Museum der Chinesischen Osteisenbahn",
       "category": "museum",
       "description": "Ein Themenmuseum, das die Geschichte der Chinesischen Osteisenbahn zeigt und durch Artefakte, Bilder und Dokumentarmaterial ein wichtiges Kapitel der modernen Geschichte Harbins nachbildet.",
       "address": "Xidazhi Straße 51, Bezirk Nangang, Harbin",
@@ -1136,7 +1136,7 @@
     {
       "id": "harbin-red-square-art",
       "name": "红场美术馆",
-      "nameEn": "Red Square Art Museum",
+      "nameEn": "Roter-Platz-Kunstmuseum",
       "category": "museum",
       "description": "Ein Kunstmuseum im russischen Stil in Harbin, das häufig Ausstellungen zum chinesisch-russischen Kulturaustausch veranstaltet und ein wichtiges Fenster für den kulturellen und künstlerischen Austausch zwischen China und Russland darstellt.",
       "address": "In der Nähe der Zentralstraße, Bezirk Daoli, Harbin",
@@ -1160,7 +1160,7 @@
     {
       "id": "harbin-xiangfang-park",
       "name": "香坊公园",
-      "nameEn": "Xiangfang Park",
+      "nameEn": "Xiangfang-Park",
       "category": "park",
       "description": "Ein großer Stadtpark im Osten von Harbin mit hoher Grünflächenabdeckung, Seen und verschiedenen Freizeiteinrichtungen, was ihn zu einem großartigen Ort für die tägliche Erholung der Anwohner macht.",
       "address": "Hongqi-Straße, Bezirk Xiangfang, Harbin",
@@ -1184,7 +1184,7 @@
     {
       "id": "harbin-yabuli-forest",
       "name": "亚布力森林小火车",
-      "nameEn": "Yabuli Forest Train",
+      "nameEn": "Yabuli-Waldbahn",
       "category": "nature",
       "description": "Nehmen Sie einen nostalgischen Waldzug durch den Urwald und genießen Sie die verschneite Waldlandschaft entlang der Strecke – ein klassisches Erlebnis im Skigebiet Yabuli.",
       "address": "Yabuli-Stadt, Shangzhi, Harbin",
@@ -1208,7 +1208,7 @@
     {
       "id": "harbin-wanda-indoor",
       "name": "哈尔滨万达室内主题乐园",
-      "nameEn": "Harbin Wanda Indoor Theme Park",
+      "nameEn": "Harbin Wanda Indoor-Themenpark",
       "category": "park",
       "description": "Ein großer Indoor-Freizeitpark mit verschiedenen Fahrgeschäften und Shows, eine gute Wahl für Indoor-Unterhaltung im Winter, unbeeinflusst vom kalten Wetter, geeignet für die ganze Familie.",
       "address": "Nr. 99 Shimao Allee, Bezirk Songbei, Harbin",
@@ -1255,7 +1255,7 @@
     {
       "id": "central-street",
       "name": "中央大街",
-      "nameEn": "Central Street",
+      "nameEn": "Zentralstraße",
       "category": "street",
       "description": "Asiens längste Fußgängerzone, die sich über 1.450 Meter erstreckt, mit Brotsteinen gepflastert und auf beiden Seiten von 71 europäischen Gebäuden gesäumt.",
       "address": "Zentralstraße, Bezirk Daoli, Harbin",
@@ -1278,7 +1278,7 @@
     {
       "id": "ice-snow-world",
       "name": "冰雪大世界",
-      "nameEn": "Ice and Snow World",
+      "nameEn": "Eis- und Schneewelt",
       "category": "landmark",
       "description": "Der weltweit größte Eis- und Schnee-Themenpark, der jeden Dezember öffnet und über 200.000 Kubikmeter Eis verwendet.",
       "address": "Westseite der Sonneninsel, Bezirk Songbei, Harbin",
@@ -1301,7 +1301,7 @@
     {
       "id": "flood-memorial",
       "name": "防洪纪念塔",
-      "nameEn": "Flood Control Memorial Tower",
+      "nameEn": "Hochwasserschutz-Gedenkturm",
       "category": "landmark",
       "description": "Der Turm wurde zum Gedenken an den Sieg der Bevölkerung von Harbin im Kampf gegen das Hochwasser von 1957 erbaut, ist 22,5 Meter hoch und ein Wahrzeichen am Ufer des Songhua-Flusses.",
       "address": "Ende der Zentralstraße, Bezirk Daoli, Harbin",
@@ -1333,7 +1333,7 @@
         "lng": 126.7333
       },
       "openingHours": "08:30-17:00",
-      "ticketPrice": "100 Yuan",
+      "ticketPrice": "100 Yuan.",
       "recommendedVisitTime": "Ein halber Tag.",
       "highlights": [
         "Russische Architektur",
@@ -1393,7 +1393,7 @@
     {
       "id": "yabuli-ski",
       "name": "亚布力滑雪场",
-      "nameEn": "Yabuli Ski Resort",
+      "nameEn": "Yabuli-Skiresort",
       "category": "nature",
       "description": "Chinas größtes umfassendes Skigebiet, das die Asian Winter Games ausgerichtet hat, mit 46 Skipisten.",
       "address": "Yabuli-Stadt, Stadt Shangzhi, Harbin",
@@ -1416,7 +1416,7 @@
     {
       "id": "heilongjiang-museum",
       "name": "黑龙江省博物馆",
-      "nameEn": "Heilongjiang Provincial Museum",
+      "nameEn": "Provinzmuseum Heilongjiang",
       "category": "museum",
       "description": "Ein umfassendes Museum mit über 100.000 Kulturgütern, das die Geschichte und Natur von Heilongjiang zeigt.",
       "address": "Nr. 50 Hongjun-Straße, Bezirk Nangang, Harbin",
@@ -1439,7 +1439,7 @@
     {
       "id": "stalin-park",
       "name": "斯大林公园",
-      "nameEn": "Stalin Park",
+      "nameEn": "Stalin-Park",
       "category": "park",
       "description": "Ein linearer Park am südlichen Ufer des Songhua-Flusses, 1.750 Meter lang, ein großartiger Ort für Einwohner zum Entspannen.",
       "address": "Stalin-Straße, Bezirk Daoli, Harbin",
@@ -1462,7 +1462,7 @@
     {
       "id": "harbin-zoo",
       "name": "哈尔滨北方森林动物园",
-      "nameEn": "Harbin Northern Forest Zoo",
+      "nameEn": "Nördlicher Waldzoo Harbin",
       "category": "nature",
       "description": "Einer der größten Waldzoos in China, 558 Hektar groß, mit über 300 Tierarten.",
       "address": "Gezidong-Gebiet, Bezirk Acheng, Harbin",
@@ -1485,7 +1485,7 @@
     {
       "id": "unit731",
       "name": "侵华日军第七三一部队罪证陈列馆",
-      "nameEn": "Museum of Evidence of War Crimes by Unit 731",
+      "nameEn": "Museum der Beweise für Kriegsverbrechen der Einheit 731",
       "category": "museum",
       "description": "Zeigt Beweise für biologische Kriegsführung und Menschenversuche der Einheit 731, eine wichtige Basis für patriotische Erziehung.",
       "address": "Xinjiang-Straße 47, Bezirk Pingfang, Harbin",
@@ -1508,7 +1508,7 @@
     {
       "id": "harbin-opera",
       "name": "哈尔滨大剧院",
-      "nameEn": "Harbin Grand Theatre",
+      "nameEn": "Harbin Großes Theater",
       "category": "landmark",
       "description": "Entworfen von MAD Architects, ähnelt seine Form einem Schneeberg und ist ein neues kulturelles Wahrzeichen von Harbin.",
       "address": "Kulturzentrum-Insel, Bezirk Songbei, Harbin",
@@ -1533,7 +1533,7 @@
     {
       "id": "harbin-1",
       "name": "老昌春饼",
-      "nameEn": "Lao Chang Spring Pancakes",
+      "nameEn": "Lao Chang Frühlingspfannkuchen",
       "type": "lokal",
       "cuisine": "Harbin",
       "avgPrice": 60,
@@ -1547,8 +1547,8 @@
       "description": "Bekannt für dünne Frühlingspfannkuchen mit verschiedenen Füllungen.",
       "dishHighlights": [
         "Frühlingspfannkuchen",
-        "Beijing duck",
-        "Vegetable rolls"
+        "Pekingente",
+        "Gemüseröllchen"
       ],
       "tags": [
         "lokal",
@@ -1564,10 +1564,10 @@
       "name": "马迭尔冰棍",
       "nameEn": "Modern Dairy Ice Cream",
       "type": "lokal",
-      "cuisine": "Dessert",
+      "cuisine": "Nachtisch",
       "avgPrice": 15,
       "rating": 4.7,
-      "address": "Central Avenue",
+      "address": "Zentralallee",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
@@ -1575,13 +1575,13 @@
       "hours": "09:00-23:00",
       "description": "Legendäres Eis vom Modern Hotel, eine Harbiner Institution seit 1906.",
       "dishHighlights": [
-        "Vanilla ice cream",
-        "Chocolate ice cream"
+        "Vanilleeis",
+        "Schokoladeneis"
       ],
       "tags": [
         "lokal",
         "berühmt",
-        "ice-cream",
+        "Speiseeis",
         "unbedingt probieren"
       ],
       "imageUrl": "/img/ext/58d532e5bd77.webp",
@@ -1590,9 +1590,9 @@
     {
       "id": "harbin-3",
       "name": "华梅西餐厅",
-      "nameEn": "Huamei Western Restaurant",
+      "nameEn": "Huamei Westliches Restaurant",
       "type": "gehoben",
-      "cuisine": "Russian",
+      "cuisine": "Russisch",
       "avgPrice": 150,
       "rating": 4.5,
       "address": "Zhongyang-Allee 85, Bezirk Daoli",
@@ -1604,13 +1604,13 @@
       "hours": "11:00-22:00",
       "description": "Historisches russisches Restaurant mit eleganter Atmosphäre und traditionellen Rezepten.",
       "dishHighlights": [
-        "Borscht",
-        "Beef stroganoff",
-        "Russian bread"
+        "Borschtsch",
+        "Rindfleisch Stroganoff",
+        "Russisches Brot"
       ],
       "tags": [
         "Feinschmecker-Restaurant",
-        "russian",
+        "russisch",
         "historisch",
         "traditionell"
       ],
@@ -1621,7 +1621,7 @@
       "name": "老鼎丰",
       "nameEn": "Lao Ding Feng",
       "type": "lokal",
-      "cuisine": "Harbin Snacks",
+      "cuisine": "Harbiner Snacks",
       "avgPrice": 40,
       "rating": 4.6,
       "address": "Mehrere Standorte",
@@ -1632,13 +1632,13 @@
       "hours": "08:00-20:00",
       "description": "Bekannt für Gebäck und traditionelle chinesische Desserts.",
       "dishHighlights": [
-        "Mooncakes",
-        "Pastries",
-        "Sweet dumplings"
+        "Mondkuchen",
+        "Gebäck",
+        "Süße Klöße"
       ],
       "tags": [
         "lokal",
-        "pastries",
+        "Gebäck",
         "Nachspeise",
         "berühmt"
       ],
@@ -1662,8 +1662,8 @@
       "hours": "10:00-22:00",
       "description": "Beliebte Kette für qualitativ hochwertige Teigtaschen mit verschiedenen Füllungen.",
       "dishHighlights": [
-        "Pork dumplings",
-        "Shrimp dumplings",
+        "Schweinefleischknödel",
+        "Garnelendim Sum",
         "Gemüse-Dumplings"
       ],
       "tags": [
@@ -1677,12 +1677,12 @@
     {
       "id": "harbin-6",
       "name": "秋林食品",
-      "nameEn": "Qiulin Food",
+      "nameEn": "Qiulin Lebensmittel",
       "type": "lokal",
       "cuisine": "Harbin",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "Central Avenue",
+      "address": "Zentralallee",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
@@ -1690,14 +1690,14 @@
       "hours": "09:00-21:00",
       "description": "Bekannt für russische Würste und lokale Spezialitäten.",
       "dishHighlights": [
-        "Harbin sausage",
-        "Russian bread",
-        "Candy"
+        "Harbiner Wurst",
+        "Russisches Brot",
+        "Bonbons"
       ],
       "tags": [
         "lokal",
-        "russian-style",
-        "sausage",
+        "im russischen Stil",
+        "Wurst",
         "Mitbringsel"
       ],
       "imageUrl": "/img/ext/d36b540ddb5c.webp",
@@ -1708,7 +1708,7 @@
       "name": "波特翡美食",
       "nameEn": "Bote Por Food",
       "type": "gehoben",
-      "cuisine": "Russian",
+      "cuisine": "Russisch",
       "avgPrice": 200,
       "rating": 4.7,
       "address": "Modern Hotel, Zentralallee",
@@ -1720,13 +1720,13 @@
       "hours": "11:30-14:00, 17:30-21:00",
       "description": "Gehobenes russisches Restaurant im historischen Hotel mit elegantem Speisesaal.",
       "dishHighlights": [
-        "Caviar",
-        "Grilled meat",
-        "Russian specialties"
+        "Kaviar",
+        "Gegrilltes Fleisch",
+        "Russische Spezialitäten"
       ],
       "tags": [
         "Feinschmecker-Restaurant",
-        "russian",
+        "russisch",
         "Luxus",
         "besonderer-anlass"
       ],
@@ -1735,7 +1735,7 @@
     {
       "id": "harbin-8",
       "name": "师大夜市",
-      "nameEn": "Shida Night Market",
+      "nameEn": "Shida Nachtmarkt",
       "type": "lokal",
       "cuisine": "Verschiedene",
       "avgPrice": 30,
@@ -1750,8 +1750,8 @@
       "dishHighlights": [
         "Gegrillte Spieße",
         "Gebratener Reis",
-        "Hot pot",
-        "Desserts"
+        "Feuertopf",
+        "Nachspeisen"
       ],
       "tags": [
         "lokal",
@@ -1770,7 +1770,7 @@
       "cuisine": "Nordosten",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Daowai District",
+      "address": "Stadtbezirk Daowai",
       "coordinates": {
         "lat": 45.7922,
         "lng": 126.6422
@@ -1779,12 +1779,12 @@
       "description": "Traditionelle nordöstliche Gerichte, besonders herzhafte Schweinefleischgerichte.",
       "dishHighlights": [
         "Blutwurst",
-        "Pork stomach",
+        "Schweinemagen",
         "Eingelegtes Gemüse"
       ],
       "tags": [
         "lokal",
-        "northeast-cuisine",
+        "Nordostküche",
         "traditionell",
         "Soulfood"
       ],
@@ -1807,14 +1807,14 @@
       "hours": "10:00-22:00",
       "description": "Beliebt für gebratene Teigtaschen und lokale Spezialitäten.",
       "dishHighlights": [
-        "Pan-fried dumplings",
+        "Gebratene Teigtaschen",
         "Gedämpfte Teigtaschen",
-        "Soups"
+        "Suppen"
       ],
       "tags": [
         "lokal",
         "Teigtaschen",
-        "pan-fried",
+        "in der Pfanne gebraten",
         "beliebt"
       ],
       "imageUrl": "/img/ext/87aaf73e086e.webp",
@@ -1828,7 +1828,7 @@
       "cuisine": "Nordosten",
       "avgPrice": 70,
       "rating": 4.4,
-      "address": "Daowai District",
+      "address": "Stadtbezirk Daowai",
       "coordinates": {
         "lat": 45.7922,
         "lng": 126.6422
@@ -1837,7 +1837,7 @@
       "description": "Hausmannskost-Restaurant, berühmt für reichhaltige geschmorte Schweinefleischgerichte.",
       "dishHighlights": [
         "Geschmorte Schweinebauch",
-        "Steamed ribs",
+        "Gedämpfte Rippchen",
         "Gemüse"
       ],
       "tags": [
@@ -1852,12 +1852,12 @@
     {
       "id": "harbin-12",
       "name": "俄罗斯美食",
-      "nameEn": "Russian Food Court",
+      "nameEn": "Russischer Food Court",
       "type": "lokal",
-      "cuisine": "Russian",
+      "cuisine": "Russisch",
       "avgPrice": 80,
       "rating": 4.3,
-      "address": "Central Avenue area",
+      "address": "Bereich der Zentralstraße",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
@@ -1866,12 +1866,12 @@
       "description": "Verschiedene russische Restaurants und Essensstände im Touristengebiet.",
       "dishHighlights": [
         "Pelmeni",
-        "Borscht",
-        "Russian sausage"
+        "Borschtsch",
+        "Russische Wurst"
       ],
       "tags": [
         "lokal",
-        "russian",
+        "russisch",
         "Touristengebiet",
         "Vielfalt"
       ],
@@ -1881,12 +1881,12 @@
     {
       "id": "harbin-13",
       "name": "小混沌",
-      "nameEn": "Small Wonton Shop",
+      "nameEn": "Kleine Wonton-Stube",
       "type": "lokal",
       "cuisine": "Snacks",
       "avgPrice": 20,
       "rating": 4.4,
-      "address": "Near Central Avenue",
+      "address": "In der Nähe der Zentralstraße",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
@@ -1894,7 +1894,7 @@
       "hours": "07:00-19:00",
       "description": "Lokaler Favorit für schnelle Wontons und Nudelsuppe.",
       "dishHighlights": [
-        "Wontons",
+        "Wan Tan",
         "Nudelsuppe",
         "Teigtaschen"
       ],
@@ -1960,7 +1960,7 @@
         "lokal",
         "nordosten",
         "Gemeinschaftsessen",
-        "winter"
+        "Winter"
       ],
       "imageUrl": "/img/ext/e32c7648562e.webp",
       "phone": "+86 045 1 6460 3499"
@@ -1997,9 +1997,9 @@
     {
       "id": "harbin-17",
       "name": "火锅季",
-      "nameEn": "Hotpot Season",
+      "nameEn": "Feuertopf-Saison",
       "type": "Kette",
-      "cuisine": "Hotpot",
+      "cuisine": "Feuertopf",
       "avgPrice": 120,
       "rating": 4.5,
       "address": "Mehrere Standorte",
@@ -2011,13 +2011,13 @@
       "hours": "10:30-23:00",
       "description": "Beliebte Hotpot-Kette mit qualitativem Fleisch und frischem Gemüse.",
       "dishHighlights": [
-        "Lamb hotpot",
-        "Beef slices",
+        "Lamm-Hotpot",
+        "Rindfleischscheiben",
         "Gemüse"
       ],
       "tags": [
         "Restaurantkette",
-        "Hotpot",
+        "Feuertopf",
         "Qualität",
         "beliebt"
       ],
@@ -2040,13 +2040,13 @@
       "hours": "11:00-14:00, 17:00-21:30",
       "description": "Hochwertiges Restaurant mit raffinierter Harbin-Küche.",
       "dishHighlights": [
-        "Refined local dishes",
+        "Verfeinerte lokale Gerichte",
         "Premium-Meeresfrüchte",
         "Traditionelle Rezepte"
       ],
       "tags": [
         "Feinschmecker-Restaurant",
-        "harbin-cuisine",
+        "Harbin-Küche",
         "Luxus",
         "besonderer-anlass"
       ],
@@ -2055,12 +2055,12 @@
     {
       "id": "harbin-19",
       "name": "粘豆包",
-      "nameEn": "Glutinous Rice Dumplings",
+      "nameEn": "Klebreisklöße",
       "type": "lokal",
-      "cuisine": "Northeast Snacks",
+      "cuisine": "Nordost-Snacks",
       "avgPrice": 25,
       "rating": 4.4,
-      "address": "Daowai District",
+      "address": "Stadtbezirk Daowai",
       "coordinates": {
         "lat": 45.7922,
         "lng": 126.6422
@@ -2068,9 +2068,9 @@
       "hours": "08:00-18:00",
       "description": "Traditionelle nordöstliche Klebreisklöße mit süßen Füllungen.",
       "dishHighlights": [
-        "Red bean dumplings",
-        "Sweet rice cakes",
-        "Nuts"
+        "Rote-Bohnen-Klöße",
+        "Süße Reiskuchen",
+        "Nüsse"
       ],
       "tags": [
         "lokal",
@@ -2084,12 +2084,12 @@
     {
       "id": "harbin-20",
       "name": "冰雕馆餐厅",
-      "nameEn": "Ice Sculpture Restaurant",
+      "nameEn": "Eisskulpturen-Restaurant",
       "type": "lokal",
       "cuisine": "Verschiedene",
       "avgPrice": 150,
       "rating": 4.3,
-      "address": "Ice and Snow World area",
+      "address": "Eis- und Schneewelt-Gebiet",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.5422
@@ -2097,15 +2097,15 @@
       "hours": "10:00-21:00",
       "description": "Restaurant in der Nähe des Eisfestivals mit warmem Speisesaal in eisiger Dekoration.",
       "dishHighlights": [
-        "Hot dishes",
-        "Northeast cuisine",
-        "Warm atmosphere"
+        "Warme Gerichte",
+        "Nordostküche",
+        "Gemütliche Atmosphäre"
       ],
       "tags": [
         "lokal",
         "Touristengebiet",
-        "convenient",
-        "ice-festival"
+        "bequem",
+        "Eisfestival"
       ],
       "imageUrl": "/img/ext/d48e7dcd448f.webp",
       "phone": "+86 045 1 1873 1286"
@@ -2113,12 +2113,12 @@
     {
       "id": "harbin-21",
       "name": "哈尔滨啤酒屋",
-      "nameEn": "Harbin Beer House",
+      "nameEn": "Harbin-Bierhaus",
       "type": "lokal",
       "cuisine": "Nordosten",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "Central Avenue area",
+      "address": "Bereich der Zentralstraße",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
@@ -2126,9 +2126,9 @@
       "hours": "17:00-02:00",
       "description": "Bierhalle, die Harbin-Bier mit traditionellen Gerichten serviert.",
       "dishHighlights": [
-        "Harbin beer",
-        "Grilled meats",
-        "Sausages"
+        "Harbin-Bier",
+        "Gegrilltes Fleisch",
+        "Würstchen"
       ],
       "tags": [
         "lokal",
@@ -2144,24 +2144,24 @@
       "name": "冻果铺",
       "nameEn": "Frozen Fruit Shop",
       "type": "lokal",
-      "cuisine": "Dessert",
+      "cuisine": "Nachtisch",
       "avgPrice": 30,
       "rating": 4.3,
-      "address": "Winter markets",
+      "address": "Wintermärkte",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.6222
       },
-      "hours": "10:00-22:00 (winter)",
+      "hours": "10:00-22:00 (Winter)",
       "description": "Winter-Spezialität - gefrorene Früchte wie Weißdorn und Birne am Stiel.",
       "dishHighlights": [
-        "Frozen hawthorn",
-        "Frozen pear",
-        "Frozen grapes"
+        "Gefrorener Weißdorn",
+        "Gefrorene Birne",
+        "Gefrorene Trauben"
       ],
       "tags": [
         "lokal",
-        "winter-specialty",
+        "Winter-Spezialität",
         "Nachspeise",
         "einzigartig"
       ],
@@ -2171,7 +2171,7 @@
     {
       "id": "harbin-23",
       "name": "得莫利炖鱼",
-      "nameEn": "De Moli Fish Stew",
+      "nameEn": "De Moli-Fischeintopf",
       "type": "lokal",
       "cuisine": "Nordosten",
       "avgPrice": 120,
@@ -2184,8 +2184,8 @@
       "hours": "10:00-22:00",
       "description": "Berühmt für Fischeintopf aus dem Dorf De Moli, eine Harbin-Spezialität.",
       "dishHighlights": [
-        "Fish stew",
-        "Freshwater fish",
+        "Fischeintopf",
+        "Süßwasserfisch",
         "Tofu",
         "Nudeln"
       ],
@@ -2193,7 +2193,7 @@
         "lokal",
         "berühmt",
         "Fisch",
-        "roadside"
+        "Straßenrand"
       ],
       "imageUrl": "/img/ext/e7792c64a6e8.webp",
       "phone": "+86 045 1 9244 9930"
@@ -2201,7 +2201,7 @@
     {
       "id": "harbin-24",
       "name": "酱骨坊",
-      "nameEn": "Sauce Bone House",
+      "nameEn": "Soßenknochenhaus",
       "type": "lokal",
       "cuisine": "Nordosten",
       "avgPrice": 80,
@@ -2214,8 +2214,8 @@
       "hours": "10:00-22:00",
       "description": "Beliebt für geschmorte Schweinerippchen in reichhaltiger Sauce.",
       "dishHighlights": [
-        "Braised pork ribs",
-        "Pork knuckle",
+        "Geschmorte Schweinerippchen",
+        "Schweinshaxe",
         "Gemüse"
       ],
       "tags": [
@@ -2230,7 +2230,7 @@
     {
       "id": "harbin-25",
       "name": "哈尔滨饺子馆",
-      "nameEn": "Harbin Dumpling House",
+      "nameEn": "Harbin-Teigtaschenhaus",
       "type": "lokal",
       "cuisine": "Teigtaschen",
       "avgPrice": 50,
@@ -2244,13 +2244,13 @@
       "description": "Lokaler Favorit für handgemachte Teigtaschen mit einzigartigen Füllungen.",
       "dishHighlights": [
         "Lammknödel",
-        "Cabbage dumplings",
-        "Mixed vegetable"
+        "Kohlknödel",
+        "Gemischtes Gemüse"
       ],
       "tags": [
         "lokal",
         "Teigtaschen",
-        "handmade",
+        "handgefertigt",
         "beliebt"
       ],
       "imageUrl": "/img/ext/1853af49fc4f.webp",
@@ -2986,7 +2986,7 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major Chinese cities",
+        "from": "Große chinesische Städte",
         "to": "Internationaler Flughafen Harbin Taiping (HRB)",
         "duration": "2-4 Stunden von großen Städten",
         "price": "800-2500¥",
@@ -2997,36 +2997,36 @@
         "type": "train",
         "from": "Peking (7 Std.), Shanghai (12 Std.), Changchun (1,5 Std.)",
         "to": "Harbin Hauptbahnhof / Harbin Westbahnhof",
-        "duration": "1-12 hours",
+        "duration": "1-12 Stunden",
         "price": "200-800¥",
-        "frequency": "Multiple trains daily",
+        "frequency": "Mehrere Züge täglich",
         "tips": "Harbin West für Hochgeschwindigkeitszüge. Beide Bahnhöfe haben U-Bahn-Anschlüsse."
       }
     ],
     "local": {
       "metro": [
-        "3 lines operational",
-        "Single ride: 2-5¥",
+        "3 Linien in Betrieb",
+        "Einzelfahrt: 2-5¥",
         "Linie 1, 2 decken die meisten Sehenswürdigkeiten ab",
         "Verbindet Stationen und Flughafen"
       ],
       "bus": [
-        "Extensive network",
-        "Single ride: 2¥",
-        "Tourist areas connected",
-        "Winter heated buses"
+        "Umfangreiches Netz",
+        "Einzelfahrt: 2¥",
+        "Touristengebiete verbunden",
+        "Beheizte Busse im Winter"
       ],
       "taxi": [
         "Grundpreis: 8¥ (erste 3 km)",
         "Nachtzuschlag: 10 % extra",
-        "Most attractions 20-60¥",
-        "Didi app recommended"
+        "Die meisten Sehenswürdigkeiten: 20-60¥",
+        "Didi-App empfohlen"
       ],
       "bike": [
         "Mobike, Meituan-Fahrräder verfügbar",
-        "Limited in winter",
+        "Im Winter eingeschränkt",
         "Sommerradfahren entlang des Flusses beliebt",
-        "Unlock: 1¥ per ride"
+        "Entsperren: 1 ¥ pro Fahrt"
       ]
     }
   },
@@ -3048,7 +3048,7 @@
         "Luxuriöse Ausstattung",
         "Russischer Einfluss"
       ],
-      "bookingTips": "Best location for Ice Festival. Book river view rooms."
+      "bookingTips": "Beste Lage für das Eisfestival. Buchen Sie Zimmer mit Flussblick."
     },
     {
       "name": "哈尔滨万达索菲特大酒店",
@@ -3067,7 +3067,7 @@
         "Zentrale Lage",
         "Guter Service"
       ],
-      "bookingTips": "Book during Ice Festival well ahead."
+      "bookingTips": "Buchen Sie während des Eisfestivals rechtzeitig im Voraus."
     },
     {
       "name": "马迭尔宾馆",
@@ -3086,7 +3086,7 @@
         "Berühmtes Eis",
         "Russischer Stil"
       ],
-      "bookingTips": "Book for historic atmosphere. The location is perfect."
+      "bookingTips": "Buchen Sie für historisches Ambiente. Die Lage ist perfekt."
     },
     {
       "name": "哈尔滨华特酒店",
@@ -3105,7 +3105,7 @@
         "Zentrale Lage",
         "Gutes Preis-Leistungs-Verhältnis"
       ],
-      "bookingTips": "Great location for sightseeing. Book during off-peak."
+      "bookingTips": "Tolle Lage für Besichtigungen. Buchen Sie außerhalb der Hauptsaison."
     },
     {
       "name": "哈尔滨中央大酒店",
@@ -3124,7 +3124,7 @@
         "In der Nähe von Sehenswürdigkeiten",
         "Russisches Viertel"
       ],
-      "bookingTips": "Perfect for first-time visitors. Walking distance to sites."
+      "bookingTips": "Perfekt für Erstbesucher. Sehenswürdigkeiten zu Fuß erreichbar."
     },
     {
       "name": "Home Inn Harbin Zhongyang Street",
@@ -3143,7 +3143,7 @@
         "Saubere Zimmer",
         "U-Bahn-Anschluss"
       ],
-      "bookingTips": "Best budget option in central area."
+      "bookingTips": "Beste Budget-Option im zentralen Bereich."
     },
     {
       "name": "Harbin Jugendherberge",
@@ -3162,7 +3162,7 @@
         "Preisgünstig",
         "Russisches Viertel"
       ],
-      "bookingTips": "Great for backpackers. Book during off-peak season."
+      "bookingTips": "Ideal für Rucksacktouristen. Buchen Sie außerhalb der Hauptsaison."
     },
     {
       "name": "哈尔滨松北香格里拉",
@@ -3181,7 +3181,7 @@
         "Flussblick",
         "Ruhige Gegend"
       ],
-      "bookingTips": "Best for luxury seekers. Modern facilities."
+      "bookingTips": "Am besten für Luxussuchende. Moderne Ausstattung."
     },
     {
       "name": "哈尔滨友谊宫",
@@ -3200,7 +3200,7 @@
         "Zentrale Lage",
         "Guter Service"
       ],
-      "bookingTips": "Experience Soviet-era luxury. Book well ahead."
+      "bookingTips": "Erleben Sie sowjetischen Luxus. Buchen Sie rechtzeitig im Voraus."
     },
     {
       "name": "亚朵酒店哈尔滨中央大街",
@@ -3219,7 +3219,7 @@
         "Kostenloses Frühstück",
         "Bequeme Betten"
       ],
-      "bookingTips": "Popular Chinese boutique chain. Great value."
+      "bookingTips": "Beliebte chinesische Boutique-Kette. Großartiges Preis-Leistungs-Verhältnis."
     },
     {
       "name": "Harbin Europa West Restaurant Hotel",
@@ -3238,7 +3238,7 @@
         "Russische Architektur",
         "Feine Küche"
       ],
-      "bookingTips": "Feel like Europe. Perfect for romantic trips."
+      "bookingTips": "Fühlt sich an wie Europa. Perfekt für romantische Reisen."
     },
     {
       "name": "GreenTree Inn Harbin Bahnhofsvorplatz",
@@ -3257,14 +3257,14 @@
         "Sauber",
         "Gute Verkehrsanbindung"
       ],
-      "bookingTips": "Best for transit. Simple but reliable."
+      "bookingTips": "Am besten für Zwischenstopps. Einfach, aber zuverlässig."
     },
     {
       "name": "Harbin Eis- und Schneewelt Themenhotel",
       "nameEn": "Harbin Ice Snow World Theme Hotel",
       "budget": "mid",
       "priceRange": "¥400-800/night",
-      "address": "Near Ice and Snow World",
+      "address": "In der Nähe der Eis- und Schneewelt",
       "coordinates": {
         "lat": 45.7822,
         "lng": 126.5422
@@ -3276,14 +3276,14 @@
         "Modern",
         "Guter Service"
       ],
-      "bookingTips": "Perfect for Ice Festival visitors. Book early."
+      "bookingTips": "Perfekt für Besucher des Eisfestivals. Früh buchen."
     },
     {
       "name": "Harbin Wolga Manor Hotel",
       "nameEn": "Harbin Volga Manor Hotel",
       "budget": "mid",
       "priceRange": "¥350-700/night",
-      "address": "Near Volga Manor",
+      "address": "In der Nähe von Wolga Manor",
       "coordinates": {
         "lat": 45.8522,
         "lng": 126.5622
@@ -3295,14 +3295,14 @@
         "Gartenanlage",
         "Kulturelles Erlebnis"
       ],
-      "bookingTips": "Great for Russian cultural experience."
+      "bookingTips": "Großartig für ein russisches Kulturerlebnis."
     },
     {
       "name": "Harbin Sonneninsel Resort Hotel",
       "nameEn": "Harbin Sun Island Resort Hotel",
       "budget": "luxury",
       "priceRange": "¥800-1500/night",
-      "address": "Sun Island area",
+      "address": "Bereich der Sonneninsel",
       "coordinates": {
         "lat": 45.8022,
         "lng": 126.5822
@@ -3314,34 +3314,34 @@
         "Resort Einrichtungen",
         "Ruhige Gegend"
       ],
-      "bookingTips": "Perfect for summer retreats. Book river view rooms."
+      "bookingTips": "Perfekt für Sommerausflüge. Zimmer mit Flussblick buchen."
     }
   ],
   "payment": [
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Universal in Harbin",
+      "description": "In Harbin überall akzeptiert",
       "howToUse": [
-        "Download app",
-        "Link card"
+        "App herunterladen",
+        "Karte verknüpfen"
       ],
       "tips": [
-        "Works at all merchants",
-        "English mode available"
+        "Gilt bei allen Händlern",
+        "Englischer Modus verfügbar"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Accepted everywhere",
+      "description": "Überall akzeptiert",
       "howToUse": [
-        "WeChat required",
+        "WeChat erforderlich",
         "Internationale Karten werden akzeptiert"
       ],
       "tips": [
-        "Set to English mode",
-        "Needed for shared bikes"
+        "Auf Englisch umstellen",
+        "Erforderlich für Leihfahrräder"
       ]
     },
     {
@@ -3350,10 +3350,10 @@
       "description": "Nützlich auf traditionellen Märkten",
       "howToUse": [
         "ATM überall",
-        "Banks common"
+        "Banken üblich"
       ],
       "tips": [
-        "Keep 200¥ for markets",
+        "200¥ für Märkte einplanen",
         "Straßenhändler bevorzugen cash"
       ]
     }
@@ -3361,98 +3361,98 @@
   "culturalTips": [
     {
       "category": "winter",
-      "title": "Ice Festival",
-      "content": "Harbin Ice and Snow Festival (December-February) is the world's largest, featuring massive illuminated ice sculptures at Ice and Snow World. Dress extremely warmly.",
+      "title": "Eisfestival",
+      "content": "Das Harbin Eis- und Schneefestival (Dezember bis Februar) ist das größte der Welt und bietet massive beleuchtete Eisskulpturen in der Eis- und Schneewelt. Ziehen Sie sich extrem warm an.",
       "importance": "high"
     },
     {
       "category": "history",
-      "title": "Russian Heritage",
-      "content": "Harbin was founded by Russians in 1898 as a railway hub. The city retains significant Russian architecture, especially around Central Avenue and Saint Sophia Cathedral.",
+      "title": "Russisches Erbe",
+      "content": "Harbin wurde 1898 von Russen als Eisenbahnknotenpunkt gegründet. Die Stadt bewahrt bedeutende russische Architektur, besonders rund um die Zentralstraße und die Sophienkathedrale.",
       "importance": "high"
     },
     {
       "category": "architecture",
-      "title": "European Architecture",
-      "content": "The city has buildings from 10+ countries including Russian, French, German, Italian and Japanese. Central Avenue showcases this eclectic mix.",
+      "title": "Europäische Architektur",
+      "content": "Die Stadt hat Gebäude aus über 10 Ländern, darunter russische, französische, deutsche, italienische und japanische. Die Zentralstraße zeigt diese eklektische Mischung.",
       "importance": "medium"
     },
     {
       "category": "food",
-      "title": "Russian Influence",
-      "content": "Try Russian food at historic restaurants like Huamei. Sample Harbin sausage, Russian bread, and the famous Modern Hotel ice cream.",
+      "title": "Russischer Einfluss",
+      "content": "Probieren Sie russisches Essen in historischen Restaurants wie Huamei. Kosten Sie Harbiner Wurst, russisches Brot und das berühmte Speiseeis des Modern Hotels.",
       "importance": "high"
     },
     {
       "category": "food",
-      "title": "Northeast Cuisine",
-      "content": "Harbin cuisine is hearty Northeast Chinese food. Must-try: fried dumplings, pork knuckle, blood sausage, and iron pot stews.",
+      "title": "Nordostküche",
+      "content": "Die Harbiner Küche ist herzhafte nordostchinesische Küche. Unbedingt probieren: gebratene Teigtaschen, Schweinshaxe, Blutwurst und Eintöpfe aus dem Eisentopf.",
       "importance": "medium"
     },
     {
       "category": "winter",
-      "title": "Extreme Cold",
-      "content": "Winters are extremely cold (-20C to -30C). Wear multiple layers, cover extremities, and limit outdoor time. Ice Festival stays open late but dress warmly.",
+      "title": "Extreme Kälte",
+      "content": "Die Winter sind extrem kalt (-20 °C bis -30 °C). Tragen Sie mehrere Schichten, bedecken Sie Extremitäten und begrenzen Sie die Zeit im Freien. Das Eisfest hat lange geöffnet, aber ziehen Sie sich warm an.",
       "importance": "high"
     },
     {
       "category": "culture",
-      "title": "Orthodox Christianity",
-      "content": "Saint Sophia Cathedral is the largest surviving Orthodox church in the Far East. It now houses a museum showcasing Harbin's Christian heritage.",
+      "title": "Orthodoxes Christentum",
+      "content": "Die Sophienkathedrale ist die größte erhaltene orthodoxe Kirche im Fernen Osten. Sie beherbergt heute ein Museum, das Harbins christliches Erbe zeigt.",
       "importance": "medium"
     },
     {
       "category": "nature",
-      "title": "Siberian Tigers",
-      "content": "Visit the Siberian Tiger Park for a chance to see these magnificent animals. Feed them from the safety of a tour bus.",
+      "title": "Sibirische Tiger",
+      "content": "Besuchen Sie den Sibirischen Tigerpark, um diese majestätischen Tiere zu sehen. Füttern Sie sie aus der Sicherheit eines Tourbusses.",
       "importance": "medium"
     },
     {
       "category": "food",
-      "title": "Spring Pancakes",
+      "title": "Frühlingspfannkuchen",
       "content": "Harbin ist berühmt für Frühlingspfannkuchen (Chun Bing) – dünne Crêpes, die mit verschiedenen Zutaten gefüllt werden. Laochang Chun Bing ist die bekannteste Restaurantkette.",
       "importance": "medium"
     },
     {
       "category": "transport",
-      "title": "Winter Transport",
-      "content": "Public transport runs normally in winter but some roads may be slippery. Taxis are available but can be hard to catch during snow.",
+      "title": "Wintertransport",
+      "content": "Die öffentlichen Verkehrsmittel funktionieren im Winter normal, aber einige Straßen können rutschig sein. Taxis sind verfügbar, aber bei Schneefall kann es schwierig sein, eines zu bekommen.",
       "importance": "medium"
     },
     {
       "category": "shopping",
-      "title": "Russian Goods",
-      "content": "Buy Russian chocolate, vodka, and souvenirs at Central Avenue shops. Qiulin Company and Russian goods stores have authentic products.",
+      "title": "Russische Waren",
+      "content": "Kaufen Sie russische Schokolade, Wodka und Souvenirs in den Geschäften der Zentralstraße. Die Qiulin Company und Geschäfte mit russischen Waren führen authentische Produkte.",
       "importance": "medium"
     },
     {
       "category": "history",
-      "title": "Japanese Occupation",
-      "content": "Harbin has museums and memorials documenting its history during Japanese occupation. The city played a significant role in modern Chinese history.",
+      "title": "Japanische Besatzung",
+      "content": "Harbin verfügt über Museen und Gedenkstätten, die seine Geschichte während der japanischen Besatzung dokumentieren. Die Stadt spielte eine bedeutende Rolle in der modernen chinesischen Geschichte.",
       "importance": "medium"
     },
     {
       "category": "culture",
-      "title": "Music Heritage",
-      "content": "Harbin has a strong classical music tradition. The Harbin Summer Music Concert was famous during the Soviet era.",
+      "title": "Musikerbe",
+      "content": "Harbin hat eine starke Tradition klassischer Musik. Das Harbiner Sommerkonzert war während der Sowjetära berühmt.",
       "importance": "low"
     },
     {
       "category": "food",
-      "title": "Harbin Beer",
-      "content": "Harbin Beer is China's oldest beer brand, founded by Russians in 1900. Try it fresh at local beer halls.",
+      "title": "Harbin-Bier",
+      "content": "Harbin-Bier ist die älteste Biermarke Chinas, gegründet von Russen im Jahr 1900. Probieren Sie es frisch in lokalen Bierhallen.",
       "importance": "medium"
     },
     {
       "category": "winter",
-      "title": "Frozen Food",
-      "content": "In winter, Harbin sells frozen fruits like hawthorn and pears on sticks - a unique winter treat. Also try frozen dumplings.",
+      "title": "Gefrorene Speisen",
+      "content": "Im Winter verkauft Harbin gefrorene Früchte wie Weißdorn und Birnen am Stiel – ein einzigartiger Wintergenuss. Probieren Sie auch gefrorene Teigtaschen.",
       "importance": "low"
     },
     {
       "category": "nature",
-      "title": "Songhua River",
-      "content": "The frozen Songhua River is a winter playground. Walk on the ice, try ice slides, and see locals enjoying winter activities.",
+      "title": "Sungari-Fluss",
+      "content": "Der zugefrorene Songhua-Fluss ist ein Winterparadies. Gehen Sie auf dem Eis spazieren, probieren Sie Eisrutschen und beobachten Sie Einheimische bei Winteraktivitäten.",
       "importance": "medium"
     }
   ],

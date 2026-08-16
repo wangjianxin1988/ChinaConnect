@@ -3,33 +3,33 @@
   "name": "上海",
   "nameEn": "Shanghai",
   "country": "China",
-  "population": "24.87 million",
+  "population": "24,87 Millionen",
   "coordinates": {
     "lat": 31.2304,
     "lng": 121.4737
   },
-  "timezone": "UTC+8 (China Standard Time)",
-  "description": "Shanghai, China's economic powerhouse, is a dazzling metropolis where Art Deco architecture meets futuristic skyscrapers. Known as the 'Pearl of the Orient', it offers world-class dining, shopping on Nanjing Road, the historic Bund waterfront, and a vibrant nightlife scene. The city seamlessly blends Eastern and Western influences, creating a unique cosmopolitan atmosphere.",
+  "timezone": "UTC+8 (Chinesische Standardzeit)",
+  "description": "Shanghai, Chinas wirtschaftliches Kraftzentrum, ist eine schillernde Metropole, in der Art-Déco-Architektur auf futuristische Wolkenkratzer trifft. Bekannt als die 'Perle des Ostens', bietet die Stadt Weltklasse-Restaurants, Einkaufsmöglichkeiten auf der Nanjing Road, die historische Uferpromenade am Bund und ein pulsierendes Nachtleben. Die Stadt verbindet nahtlos östliche und westliche Einflüsse und schafft eine einzigartige kosmopolitische Atmosphäre.",
   "coverImage": "/img/ext/2284bd75905e.webp",
   "highlights": [
-    "The Bund - Historic waterfront boulevard",
-    "Oriental Pearl Tower - Iconic skyline landmark",
-    "Yu Garden - Classical Chinese garden",
-    "Nanjing Road - Premier shopping street",
-    "Xintiandi - Historic shikumen houses"
+    "Der Bund - Historische Uferpromenade",
+    "Oriental Pearl Tower - Wahrzeichen der Skyline",
+    "Yu-Garten - Klassischer chinesischer Garten",
+    "Nanjing Road - Die wichtigste Einkaufsstraße",
+    "Xintiandi - Historische Shikumen-Häuser"
   ],
   "climate": {
-    "type": "Humid subtropical",
+    "type": "Feucht-subtropisch",
     "bestMonths": [
-      "March",
+      "März",
       "April",
-      "May",
-      "October",
+      "Mai",
+      "Oktober",
       "November"
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "4C (39F)",
-    "tips": "Spring and autumn offer the most comfortable weather. Summers are hot and humid with frequent rain. Winters are cold but rarely snowy. Typhoon season is July-September. Pack layers and an umbrella."
+    "tips": "Frühling und Herbst bieten das angenehmste Wetter. Die Sommer sind heiß und feucht mit häufigen Regenfällen. Die Winter sind kalt, aber selten schneereich. Die Taifunsaison dauert von Juli bis September. Packen Sie Kleidung in Schichten und einen Regenschirm ein."
   },
   "attractions": [
     {
@@ -59,7 +59,7 @@
     {
       "id": "nanjing-road",
       "name": "南京路步行街",
-      "nameEn": "Nanjing Road Pedestrian Street",
+      "nameEn": "Nanjing Road Fußgängerzone",
       "category": "modern",
       "description": "Die verkehrsreichste Einkaufsstraße der Welt, die sich 1,3 km vom Volksplatz bis zum Bund erstreckt.",
       "image": "/img/ext/bd0590b519ef.webp",
@@ -83,7 +83,7 @@
     {
       "id": "yu-garden",
       "name": "豫园",
-      "nameEn": "Yu Garden (Yuyuan)",
+      "nameEn": "Yu-Garten (Yuyuan)",
       "category": "cultural",
       "description": "Ein klassischer chinesischer Garten aus der Ming-Dynastie mit Pavillons, Hallen, Felsengärten und Teichen.",
       "image": "/img/ext/818dcc90b011.webp",
@@ -93,7 +93,7 @@
         "lng": 121.4858
       },
       "openingHours": "09:00-17:00 (Garten), Geschäfte bis 22:00",
-      "ticketPrice": "30¥ (garden only), 50¥ (with City God Temple)",
+      "ticketPrice": "30¥ (nur Garten), 50¥ (mit Stadtgott-Tempel)",
       "recommendedVisitTime": "2 Stunden",
       "highlights": [
         "Große Felsengartenanlage",
@@ -107,7 +107,7 @@
     {
       "id": "shanghai-tower",
       "name": "上海中心大厦",
-      "nameEn": "Shanghai Tower",
+      "nameEn": "Shanghai-Turm",
       "category": "modern",
       "description": "Chinas höchstes Gebäude und das zweithöchste der Welt, mit einer Aussichtsplattform auf der 118. Etage, die einen Panoramablick über die Stadt bietet.",
       "image": "/img/ext/540e4f60a065.webp",
@@ -121,7 +121,7 @@
       "recommendedVisitTime": "1 Stunde",
       "highlights": [
         "Sitzende Seilbahnen im Inneren",
-        "Sky Lobby",
+        "Sky-Lobby",
         "360-Grad-Stadtblick",
         "Wolken-Technologie-Ausstellung"
       ],
@@ -155,17 +155,17 @@
     {
       "id": "oriental-pearl",
       "name": "东方明珠塔",
-      "nameEn": "Oriental Pearl Tower",
+      "nameEn": "Oriental-Pearl-Turm",
       "category": "modern",
       "description": "Shanghais bekanntestes Wahrzeichen mit Aussichtsplattformen, einem Drehrestaurant und einem Skywalk mit Glasboden.",
       "image": "/img/ext/0f22197252fb.webp",
-      "address": "1 Century Ave, Pudong",
+      "address": "Century Avenue 1, Pudong",
       "coordinates": {
         "lat": 31.2397,
         "lng": 121.4999
       },
       "openingHours": "08:00-22:00",
-      "ticketPrice": "220¥ (all decks), 180¥ (upper spheres)",
+      "ticketPrice": "220¥ (alle Decks), 180¥ (obere Kugeln)",
       "recommendedVisitTime": "2-3 Stunden",
       "highlights": [
         "Aussichtsplattform auf 351 m",
@@ -193,7 +193,7 @@
       "recommendedVisitTime": "3-4 Stunden",
       "highlights": [
         "Historische Gebäude der Wukang Rd",
-        "Café culture",
+        "Cafékultur",
         "Boutique-Shopping",
         "Baumgesäumte Boulevards"
       ],
@@ -203,7 +203,7 @@
     {
       "id": "shanghai-museum",
       "name": "上海博物馆",
-      "nameEn": "Shanghai Museum",
+      "nameEn": "Shanghai-Museum",
       "category": "cultural",
       "description": "Eines der besten Museen Chinas mit einer Weltklasse-Sammlung antiker chinesischer Kunst, darunter Bronzen, Keramiken und Kalligraphie.",
       "image": "/img/ext/e3b01cfae9b2.webp",
@@ -231,16 +231,16 @@
       "category": "modern",
       "description": "Chinas erster Disney-Park mit dem größten Schloss der Welt, innovativen Fahrgeschäften und chinesisch-thematisierten Attraktionen.",
       "image": "/img/ext/9daf9149f23d.webp",
-      "address": "Disney Resort Rd, Pudong",
+      "address": "Disney Resort Straße, Pudong",
       "coordinates": {
         "lat": 31.1412,
         "lng": 121.657
       },
       "openingHours": "09:00-21:00 (variiert je nach Saison)",
-      "ticketPrice": "435¥ (weekday), 545¥ (weekend/holiday)",
+      "ticketPrice": "435¥ (werktags), 545¥ (Wochenende/Feiertag)",
       "recommendedVisitTime": "Ganzer Tag",
       "highlights": [
-        "Treasure Cove",
+        "Schatzbucht",
         "TRON Lightcycle Power Run (Lichtzyklus-Rennen)",
         "Sieben-Zwerge-Minenzug",
         "Abendfeuerwerk"
@@ -251,7 +251,7 @@
     {
       "id": "maglev",
       "name": "磁悬浮列车",
-      "nameEn": "Maglev Train Experience",
+      "nameEn": "Maglev-Zug-Erlebnis",
       "category": "modern",
       "description": "Der weltweit schnellste kommerzielle Magnetschwebebahn-Zug, der auf der 30 km langen Flughafenverbindung 431 km/h erreicht.",
       "image": "/img/ext/e2b9f97085b8.webp",
@@ -261,8 +261,8 @@
         "lng": 121.558
       },
       "openingHours": "06:45-21:40",
-      "ticketPrice": "50¥ (single ride), 80¥ (round trip including metro)",
-      "recommendedVisitTime": "15 minutes",
+      "ticketPrice": "50¥ (Einzelfahrt), 80¥ (Hin- und Rückfahrt inkl. U-Bahn)",
+      "recommendedVisitTime": "15 Minuten",
       "highlights": [
         "431 km/h Höchstgeschwindigkeit",
         "Schlankes futuristisches Design",
@@ -275,11 +275,11 @@
     {
       "id": "china-science",
       "name": "上海科技馆",
-      "nameEn": "Shanghai Science and Technology Museum",
+      "nameEn": "Shanghai Museum für Wissenschaft und Technologie",
       "category": "cultural",
       "description": "Ein großes interaktives Wissenschaftsmuseum mit IMAX-Dome-Kino und Mitmach-Ausstellungen für alle Altersgruppen.",
       "image": "/img/ext/bac2969d62dd.webp",
-      "address": "2000 Century Ave, Pudong",
+      "address": "2000 Century Avenue, Pudong",
       "coordinates": {
         "lat": 31.218,
         "lng": 121.543
@@ -338,7 +338,7 @@
       "highlights": [
         "Boutique-Kunstgalerien",
         "Lokales Kunsthandwerk",
-        "Café culture",
+        "Cafékultur",
         "Versteckte Innenhöfe"
       ],
       "tips": "Verirren Sie sich in den Gassen. Am besten unter der Woche besuchen. Ideal, um einzigartige Souvenirs zu finden. Viele Geschäfte schließen um 21 Uhr.",
@@ -351,7 +351,7 @@
       "category": "cultural",
       "description": "Ein beeindruckendes modernes Museum mit über 30.000 Exponaten, darunter Dinosaurierfossilien, Walskelette und interaktive Ausstellungen.",
       "image": "/img/ext/b1bfd393fa9b.webp",
-      "address": "1 Shiji Ave, Pudong",
+      "address": "1 Shiji Avenue, Pudong",
       "coordinates": {
         "lat": 31.2197,
         "lng": 121.5535
@@ -371,7 +371,7 @@
     {
       "id": "urban-planning-exhibition",
       "name": "上海城市规划展示馆",
-      "nameEn": "Shanghai Urban Planning Exhibition Center",
+      "nameEn": "Shanghai Ausstellungszentrum für Stadtplanung",
       "category": "cultural",
       "description": "Ein Museum, das die Vergangenheit, Gegenwart und Zukunft der Stadtentwicklung Shanghais mit detaillierten Stadtmodellen zeigt.",
       "image": "/img/ext/99f2ca00ce08.webp",
@@ -423,7 +423,7 @@
       "category": "cultural",
       "description": "Das größte Kunstmuseum Chinas, untergebracht im ehemaligen China-Pavillon der Expo 2010, mit umfangreichen Ausstellungen chinesischer Kunst.",
       "image": "/img/ext/65a4404bbc7b.webp",
-      "address": "205 Shangnan Rd, Pudong",
+      "address": "205 Shangnan Straße, Pudong",
       "coordinates": {
         "lat": 31.1845,
         "lng": 121.539
@@ -467,7 +467,7 @@
     {
       "id": "huangpu-river-cruise",
       "name": "黄浦江游览",
-      "nameEn": "Huangpu River Cruise",
+      "nameEn": "Huangpu-Flusskreuzfahrt",
       "category": "modern",
       "description": "Eine malerische Bootstour auf dem Huangpu River mit den besten Ausblicken auf sowohl das historische Bund als auch die moderne Skyline von Pudong.",
       "image": "/img/ext/6873a52c8f7d.webp",
@@ -563,7 +563,7 @@
     {
       "id": "qibao-ancient",
       "name": "七宝古镇",
-      "nameEn": "Qibao Ancient Town",
+      "nameEn": "Qibao-Alstadt",
       "category": "cultural",
       "description": "Eine historische Wasserstadt mit traditioneller Architektur, Straßenessen und Kunsthandwerk, nur 30 Minuten vom Zentrum Shanghais entfernt.",
       "image": "/img/ext/94641c0f7da6.webp",
@@ -663,7 +663,7 @@
       "category": "modern",
       "image": "/img/ext/33bc84d764a8.webp",
       "description": "Shanghais ikonischer Finanzdistrikt mit den drei Wolkenkratzern: Shanghai Tower, Shanghai World Financial Center und Jin Mao Tower.",
-      "address": "Pudong New Area",
+      "address": "Neues Gebiet Pudong",
       "coordinates": {
         "lat": 31.2355,
         "lng": 121.4998
@@ -674,7 +674,7 @@
       "highlights": [
         "Aussichtsplattform des Shanghai Tower",
         "IFC Einkaufszentrum",
-        "Oriental Pearl Tower",
+        "Oriental-Perlenturm",
         "Nachtskyline-Blick"
       ],
       "tips": "Besuchen Sie das Viertel nachts für die besten Ausblicke vom Bund. Die drei Türme lassen sich am besten vom anderen Flussufer aus fotografieren.",
@@ -683,17 +683,17 @@
     {
       "id": "jinmao-tower",
       "name": "金茂大厦",
-      "nameEn": "Jin Mao Tower",
+      "nameEn": "Jin-Mao-Turm",
       "category": "modern",
       "image": "/img/ext/17d9118338e5.webp",
       "description": "Ein 421 Meter hoher Wolkenkratzer mit einem einzigartigen, von Pagoden inspirierten Design, der eine Aussichtsplattform im 88. Stock mit einem gläsernen Skywalk bietet.",
-      "address": "88 Century Ave, Pudong",
+      "address": "88 Century Avenue, Pudong",
       "coordinates": {
         "lat": 31.2355,
         "lng": 121.5012
       },
       "openingHours": "08:30-21:30",
-      "ticketPrice": "120¥ (88th floor observation deck)",
+      "ticketPrice": "120¥ (Aussichtsplattform auf der 88. Etage)",
       "recommendedVisitTime": "1 Stunde",
       "highlights": [
         "Skywalk auf der 88. Etage",
@@ -731,7 +731,7 @@
     {
       "id": "people-square",
       "name": "人民广场",
-      "nameEn": "People's Square",
+      "nameEn": "Volksplatz",
       "category": "cultural",
       "image": "/img/ext/a8b621959b0f.webp",
       "description": "Der zentrale Platz von Shanghai, umgeben von bedeutenden Kultureinrichtungen wie dem Shanghai Museum, dem Grand Theatre und dem Urban Planning Exhibition Center.",
@@ -744,7 +744,7 @@
       "ticketPrice": "Kostenlos",
       "recommendedVisitTime": "1-2 Stunden",
       "highlights": [
-        "Shanghai Museum",
+        "Shanghai-Museum",
         "Großes Theater",
         "Unterirdisches Einkaufen",
         "Tauben und Springbrunnen"
@@ -755,11 +755,11 @@
     {
       "id": "shanghai-wildlife-park",
       "name": "上海野生动物园",
-      "nameEn": "Shanghai Wildlife Park",
+      "nameEn": "Shanghai-Wildtierpark",
       "category": "natural",
       "image": "/img/ext/a0ff023dd3dc.webp",
       "description": "Ein großer Wildtierpark mit über 200 Arten aus aller Welt, einschließlich Safari-Zonen zum Durchfahren und Tieraufführungen.",
-      "address": "178 Nanliu Rd, Pudong",
+      "address": "Nanliu-Straße 178, Pudong",
       "coordinates": {
         "lat": 31.0527,
         "lng": 121.7242
@@ -789,7 +789,7 @@
         "lng": 121.4978
       },
       "openingHours": "09:00-18:00",
-      "ticketPrice": "160¥ (adult), 110¥ (child)",
+      "ticketPrice": "160¥ (Erwachsene), 110¥ (Kind)",
       "recommendedVisitTime": "2-3 Stunden",
       "highlights": [
         "155m Unterwassertunnel",
@@ -803,7 +803,7 @@
     {
       "id": "duolun-road",
       "name": "多伦路文化名人街",
-      "nameEn": "Duolun Road Cultural Street",
+      "nameEn": "Duolun Road Kulturstraße",
       "category": "cultural",
       "image": "/img/ext/9ca1708065fe.webp",
       "description": "Eine kurze, aber historisch reiche Straße, in der in den 1920er-30er Jahren viele berühmte chinesische Schriftsteller und Intellektuelle lebten, heute mit Buchhandlungen und Kunstgalerien.",
@@ -875,7 +875,7 @@
     {
       "id": "shanghai-bund-history-museum",
       "name": "上海市历史博物馆",
-      "nameEn": "Shanghai History Museum",
+      "nameEn": "Shanghai Geschichtsmuseum",
       "category": "cultural",
       "image": "/img/ext/b1bfd393fa9b.webp",
       "description": "In dem ehemaligen Gebäude des Shanghai Race Club untergebracht, dokumentiert dieses Museum Shanghais Entwicklung von einem kleinen Fischerdorf zu einer globalen Metropole.",
@@ -899,11 +899,11 @@
     {
       "id": "shanghai-astronomical-museum",
       "name": "上海天文馆",
-      "nameEn": "Shanghai Astronomical Museum",
+      "nameEn": "Shanghai Astronomiemuseum",
       "category": "cultural",
       "image": "/img/ext/0818c50f4626.webp",
       "description": "Das weltweit größte astronomische Museum mit immersiven Planetariumsshows, Weltraumausstellungen und einem Sonnenteleskop.",
-      "address": "380 Lingang Ave, Pudong",
+      "address": "Lingang Allee 380, Pudong",
       "coordinates": {
         "lat": 30.9112,
         "lng": 121.9375
@@ -937,7 +937,7 @@
       "recommendedVisitTime": "1-2 Stunden",
       "highlights": [
         "Historische Architektur",
-        "Rockbund Art Museum",
+        "Rockbund Kunstmuseum",
         "Feine Küche",
         "Flusspromenade"
       ],
@@ -947,7 +947,7 @@
     {
       "id": "china-maritime-museum",
       "name": "中国航海博物馆",
-      "nameEn": "China Maritime Museum",
+      "nameEn": "China Schifffahrtsmuseum",
       "category": "cultural",
       "image": "/img/ext/edd412a5b9dc.webp",
       "description": "Ein umfassendes Museum, das der maritimen Geschichte Chinas gewidmet ist, mit Schiffsmodellen, Navigationsinstrumenten und einem originalgroßen Nachbau eines antiken Schiffs.",
@@ -971,11 +971,11 @@
     {
       "id": "shanghai-greenhouse-garden",
       "name": "上海温室花园",
-      "nameEn": "Shanghai Greenhouse Garden",
+      "nameEn": "Shanghai Gewächshausgarten",
       "category": "natural",
       "image": "/img/ext/f8c110af1512.webp",
       "description": "Ein atemberaubender moderner Gewächshauskomplex mit tropischen Pflanzen, Wüstenlandschaften und einem Wolkenwald in einem futuristischen architektonischen Umfeld.",
-      "address": "Near Expo Park, Pudong",
+      "address": "In der Nähe des Expo-Parks, Pudong",
       "coordinates": {
         "lat": 31.1855,
         "lng": 121.4912
@@ -995,7 +995,7 @@
     {
       "id": "shanghai-jewish-refugees-museum",
       "name": "上海犹太难民纪念馆",
-      "nameEn": "Shanghai Jewish Refugees Museum",
+      "nameEn": "Shanghai Museum der jüdischen Flüchtlinge",
       "category": "cultural",
       "image": "/img/ext/0818c50f4626.webp",
       "description": "Ein Museum, das die Geschichte jüdischer Flüchtlinge dokumentiert, die während des Zweiten Weltkriegs nach Shanghai flohen, untergebracht in der ehemaligen Ohel-Moishe-Synagoge.",
@@ -1019,7 +1019,7 @@
     {
       "id": "shanghai-chopsticks-museum",
       "name": "上海筷子博物馆",
-      "nameEn": "Shanghai Chopsticks Museum",
+      "nameEn": "Shanghai Essstäbchenmuseum",
       "category": "cultural",
       "image": "/img/ext/e3b01cfae9b2.webp",
       "description": "Ein skurriles privates Museum mit über 2.000 Essstäbchenpaaren aus verschiedenen Dynastien und Ländern – das einzige Essstäbchenmuseum der Welt.",
@@ -1043,7 +1043,7 @@
     {
       "id": "jing-an-sculpture-park",
       "name": "静安雕塑公园",
-      "nameEn": "Jing'an Sculpture Park",
+      "nameEn": "Jing'an Skulpturenpark",
       "category": "modern",
       "image": "/img/ext/3eedb153f298.webp",
       "description": "Ein wunderschöner Stadtpark mit zeitgenössischen Skulptureninstallationen, Kirschblüten und dem Naturkundemuseum von Shanghai.",
@@ -1077,7 +1077,7 @@
         "lng": 121.4945
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "Free (exhibitions may charge)",
+      "ticketPrice": "Eintritt frei (Ausstellungen können kostenpflichtig sein)",
       "recommendedVisitTime": "1-2 Stunden",
       "highlights": [
         "Beweglicher Fassadenschleier",
@@ -1139,7 +1139,7 @@
     {
       "id": "zhujiajiao",
       "name": "朱家角古镇",
-      "nameEn": "Zhujiajiao Water Town",
+      "nameEn": "Zhujiajiao Wasserstadt",
       "category": "cultural",
       "image": "/img/ext/10a3b673e437.webp",
       "description": "Eine 1.700 Jahre alte Wasserstadt mit Kanälen, Steinbrücken, traditionellen Häusern und lokalen Spezialitäten, nur 48 km von Shanghai entfernt.",
@@ -1149,7 +1149,7 @@
         "lng": 121.0526
       },
       "openingHours": "Rund um die Uhr geöffnet (Attraktionen 08:30-16:30 Uhr)",
-      "ticketPrice": "Free (combo ticket 80¥ for attractions)",
+      "ticketPrice": "Eintritt frei (Kombi-Ticket 80¥ für Attraktionen)",
       "recommendedVisitTime": "Halbtag bis ganztägig",
       "highlights": [
         "Fangsheng-Brücke",
@@ -1163,7 +1163,7 @@
     {
       "id": "qibao-old-town",
       "name": "七宝老街",
-      "nameEn": "Qibao Old Town",
+      "nameEn": "Qibao Altstadt",
       "category": "cultural",
       "image": "/img/ext/94641c0f7da6.webp",
       "description": "Eine charmante antike Wasserstadt in Shanghai mit traditioneller Architektur, lokalen Snacks und einem Grillenmuseum.",
@@ -1187,7 +1187,7 @@
     {
       "id": "nanxiang-old-town",
       "name": "南翔古镇",
-      "nameEn": "Nanxiang Old Town",
+      "nameEn": "Nanxiang Altstadt",
       "category": "cultural",
       "image": "/img/ext/94641c0f7da6.webp",
       "description": "Der Geburtsort von Xiaolongbao (Suppenklößchen), mit alten Tempeln, Gärten und dem berühmten Nanxiang Steamed Bun Restaurant.",
@@ -1211,7 +1211,7 @@
     {
       "id": "shanghai-chongming-island",
       "name": "崇明岛",
-      "nameEn": "Chongming Island",
+      "nameEn": "Chongming Insel",
       "category": "natural",
       "image": "/img/ext/5b265ce8c74a.webp",
       "description": "Die drittgrößte Insel Chinas an der Mündung des Jangtse, bekannt für Feuchtgebiete, Vogelbeobachtung und Ökotourismus.",
@@ -1221,7 +1221,7 @@
         "lng": 121.3975
       },
       "openingHours": "24 Stunden geöffnet (Parks variieren)",
-      "ticketPrice": "Free (parks may charge)",
+      "ticketPrice": "Eintritt frei (Parks können kostenpflichtig sein)",
       "recommendedVisitTime": "Ganzer Tag oder Übernachtung",
       "highlights": [
         "Feuchtgebietreservat Dongtan",
@@ -1235,7 +1235,7 @@
     {
       "id": "shanghai-pest-control-memorial",
       "name": "上海四行仓库抗战纪念馆",
-      "nameEn": "Sihang Warehouse Battle Memorial",
+      "nameEn": "Sihang Warehouse Schlachtgedenkstätte",
       "category": "cultural",
       "image": "/img/ext/f200ed5748e2.webp",
       "description": "Ein Denkmal des Zweiten Weltkriegs am Ort der berühmten Verteidigungsschlacht von 1937, mit Ausstellungen über die 425 chinesischen Soldaten, die das Lagerhaus gegen japanische Streitkräfte hielten.",
@@ -1288,7 +1288,7 @@
       "nameEn": "Ultraviolet",
       "type": "Michelin",
       "star": 3,
-      "cuisine": "Avant-garde French",
+      "cuisine": "Avantgardistische französische Küche",
       "avgPrice": 6000,
       "rating": 4.9,
       "address": "6. Stock, 20 Huangpu Rd, nahe Bund",
@@ -1297,17 +1297,17 @@
         "lng": 121.4895
       },
       "phone": "+86 21 6328 9897",
-      "hours": "Only dinner, by reservation",
+      "hours": "Nur Abendessen, auf Reservierung",
       "description": "Drei-Sterne-Michelin-Erlebnis mit immersivem Dining von Küchenchef Paul Pairet. 20 Gänge über 4 Stunden in einem multisensorischen Raum.",
       "dishHighlights": [
         "Foie gras nach Art des Marquis",
-        "Sensory dessert",
+        "Sensorisches Dessert",
         "Die Olive"
       ],
       "tags": [
         "Feinschmecker-Restaurant",
         "einzigartige-Erfahrung",
-        "reservation-months-ahead"
+        "Monate im Voraus reservieren"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/3801e23294a3.webp",
@@ -1363,8 +1363,8 @@
       "description": "Modernes chinesisches Restaurant mit zwei Michelin-Sternen von Küchenchef Eric Wang, das eine kreative Fusion regionaler Küchen präsentiert.",
       "dishHighlights": [
         "Hühnchen mit gesalzenem Eidotter",
-        "Squirrel fish",
-        "Red-braised pork"
+        "Eichhörnchenfisch",
+        "Geschmortes Schweinefleisch in Rot"
       ],
       "tags": [
         "Feinschmecker-Restaurant",
@@ -1393,9 +1393,9 @@
       "hours": "11:00-15:00, 18:00-22:00",
       "description": "Drei-Sterne-Black-Pearl-Kantonesisches Restaurant mit außergewöhnlichem Dim Sum und erstklassigen Meeresfrüchten.",
       "dishHighlights": [
-        "Crispy suckling pig",
-        "Steamed dim sum",
-        "Braised seafood"
+        "Knuspriges Spanferkel",
+        "Gedämpfte Dim Sum",
+        "Geschmorte Meeresfrüchte"
       ],
       "tags": [
         "kantonesisch",
@@ -1411,10 +1411,10 @@
       "name": "上海老饭店",
       "nameEn": "Shanghai Lao Fan Dian",
       "type": "lokal",
-      "cuisine": "Shanghainese",
+      "cuisine": "Shanghaier Küche",
       "avgPrice": 120,
       "rating": 4.5,
-      "address": "Near Yuyuan Garden",
+      "address": "In der Nähe des Yu-Gartens",
       "coordinates": {
         "lat": 31.2267,
         "lng": 121.4848
@@ -1422,7 +1422,7 @@
       "description": "Legendäres Restaurant, das seit über 40 Jahren authentische Shanghaier Küche serviert.",
       "dishHighlights": [
         "Geschmorte Schweinebauch",
-        "Wonton soup",
+        "Wonton-Suppe",
         "Geschmortes Schweinebauch mit brauner Soße"
       ],
       "tags": [
@@ -1442,7 +1442,7 @@
       "name": "南翔小笼",
       "nameEn": "Nanxiang Steamed Bun Restaurant",
       "type": "lokal",
-      "cuisine": "Shanghainese",
+      "cuisine": "Shanghaier Küche",
       "avgPrice": 60,
       "rating": 4.5,
       "address": "Yuyuan-Basar, Anren Str. 88, Huangpu",
@@ -1454,8 +1454,8 @@
       "description": "Berühmt für authentische Nanxiang-Xiaolongbao (gedämpfte Suppenknödel), seit 1900 im Geschäft.",
       "dishHighlights": [
         "Suppenknödel (Xiaolongbao)",
-        "Crab roe xiaolongbao",
-        "Pan-fried buns"
+        "Krabbenrogen-Xiaolongbao",
+        "Gebratene Teigtaschen"
       ],
       "tags": [
         "lokal",
@@ -1487,14 +1487,14 @@
       "description": "Historisches Restaurant in Yuyuan seit den 1940er-Jahren, bekannt für raffinierte Shanghaier Snacks und Lieblingsgerichte der Kaiserinwitwe.",
       "dishHighlights": [
         "Süß-saure Spareribs",
-        "Yam paste with egg white",
-        "Delicate pastries"
+        "Yamspaste mit Eiweiß",
+        "Feine Gebäckstücke"
       ],
       "tags": [
         "lokal",
         "historisch",
         "shanghai-küche",
-        "location"
+        "Lage"
       ],
       "star": 0,
       "diamond": 0,
@@ -1516,7 +1516,7 @@
       },
       "description": "Beliebter lokaler Treffpunkt, immer voll mit Einheimischen, für authentische Shanghaier Gerichte und legendäre frische Mondkuchen.",
       "dishHighlights": [
-        "Fresh mooncakes",
+        "Frische Mondkuchen",
         "Geschmorte Schweinebauch",
         "Gedämpfter Fischkopf"
       ],
@@ -1553,12 +1553,12 @@
       "dishHighlights": [
         "Abalone mit getrockneter Jakobsmuschel",
         "Wagyu-Rind mit schwarzem Pfeffer",
-        "Bird's nest dessert"
+        "Schwalbennest-Dessert"
       ],
       "tags": [
         "Feinschmecker-Restaurant",
         "kantonesisch",
-        "bund-views",
+        "Bund-Blick",
         "Geschäftlich"
       ],
       "diamond": 0,
@@ -1584,7 +1584,7 @@
       "description": "Ein-Sterne-Michelin-Restaurant mit raffinierter Shanghaier Küche im historischen Waldorf-Astoria-Gebäude.",
       "dishHighlights": [
         "Gedämpfte Krabbe mit Eiweiß",
-        "Braised hairy crab",
+        "Geschmortes Wollhandkrabbe",
         "Rotwein-geschmortes Kurzrippchen"
       ],
       "tags": [
@@ -1614,7 +1614,7 @@
       "hours": "11:00-14:00, 17:00-21:00",
       "description": "Ein beliebtes lokales Institut, berühmt für authentische Shanghaier Hausmannskost in gemütlicher Atmosphäre.",
       "dishHighlights": [
-        "Red-braised pork",
+        "Geschmortes Schweinefleisch in Rot",
         "Gedämpfter Fisch",
         "Shanghai-Krabben"
       ],
@@ -1648,13 +1648,13 @@
       "description": "Drei-Diamanten-Black-Pearl-Restaurant, das raffinierte Küche aus Jiangsu und Zhejiang mit ausgezeichneten Meeresfrüchten serviert.",
       "dishHighlights": [
         "Geschmorte Schweinebauch",
-        "Squirrel fish",
-        "Yangzhou fried rice"
+        "Eichhörnchenfisch",
+        "Yangzhou-Gebratener Reis"
       ],
       "tags": [
         "Feinschmecker-Restaurant",
         "jiangzhe-Küche",
-        "bund-area",
+        "Bund-Viertel",
         "Geschäftlich"
       ],
       "star": 0,
@@ -1669,7 +1669,7 @@
       "cuisine": "Shanghai-Küche",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "17 Jiangning Rd, Jing'an",
+      "address": "Jiangning-Straße 17, Jing'an",
       "coordinates": {
         "lat": 31.229,
         "lng": 121.465
@@ -1678,7 +1678,7 @@
       "hours": "06:30-19:30",
       "description": "Legendärer Ort für die besten Shengjian bao (gebratene Schweinefleisch-Suppentaschen) in Shanghai seit 1937.",
       "dishHighlights": [
-        "Shengjian bao",
+        "Shengjian-Bao",
         "Reisbrei",
         "Sojamilch"
       ],
@@ -1711,9 +1711,9 @@
       "hours": "10:30-21:30",
       "description": "Berühmtes buddhistisches vegetarisches Restaurant, das seit 1922 pflanzliche Versionen traditioneller Shanghaier Gerichte serviert.",
       "dishHighlights": [
-        "Vegetarian xiaolongbao",
-        "Buddhist chicken",
-        "Meat analogs"
+        "Vegetarische Xiaolongbao",
+        "Buddhistisches Huhn",
+        "Fleischimitate"
       ],
       "tags": [
         "Vegetarisch",
@@ -1743,9 +1743,9 @@
       "hours": "07:00-20:00",
       "description": "Beliebtes über hundert Jahre altes Restaurant, bekannt für authentische Shanghai-Snacks und traditionelles Gebäck.",
       "dishHighlights": [
-        "Sara noodles",
-        "Steamed soup dumplings",
-        "Moon cakes"
+        "Sara-Nudeln",
+        "Gedämpfte Suppenknödel",
+        "Mondkuchen"
       ],
       "tags": [
         "lokal",
@@ -1766,7 +1766,7 @@
       "cuisine": "Shanghai-Küche",
       "avgPrice": 200,
       "rating": 4.7,
-      "address": "396 Changle Rd, Xuhui",
+      "address": "Changle Straße 396, Xuhui",
       "coordinates": {
         "lat": 31.212,
         "lng": 121.451
@@ -1777,12 +1777,12 @@
       "dishHighlights": [
         "Geschmorte Schweinebauch",
         "Gedämpfter Fisch",
-        "Hairyi crab"
+        "Haarige Krabbe"
       ],
       "tags": [
         "lokal",
         "shanghai-küche",
-        "historic-villa",
+        "historische Villa",
         "romantisch"
       ],
       "star": 0,
@@ -1796,7 +1796,7 @@
       "nameEn": "Bund 18",
       "type": "Michelin",
       "star": 1,
-      "cuisine": "French",
+      "cuisine": "Französisch",
       "avgPrice": 600,
       "rating": 4.7,
       "address": "18, Zhongshan-Dongyi-Straße, Huangpu",
@@ -1808,14 +1808,14 @@
       "hours": "11:30-14:30, 18:00-23:00",
       "description": "Französisches Restaurant mit einem Michelin-Stern in einem restaurierten Kolonialgebäude mit atemberaubendem Blick auf den Bund.",
       "dishHighlights": [
-        "French tasting menu",
-        "Wine pairing",
-        "Dessert trolley"
+        "Französisches Degustationsmenü",
+        "Weinbegleitung",
+        "Nachspeisenwagen"
       ],
       "tags": [
         "Feinschmecker-Restaurant",
-        "french",
-        "bund-views",
+        "französisch",
+        "Bund-Blick",
         "historisch"
       ],
       "diamond": 0,
@@ -1828,7 +1828,7 @@
       "nameEn": "Xin Rong Ji",
       "type": "Schwarze Perle",
       "diamond": 3,
-      "cuisine": "Tailand-inspired Chinese",
+      "cuisine": "Thailändisch inspirierte chinesische Küche",
       "avgPrice": 600,
       "rating": 4.8,
       "address": "98, Huaihai-Mittelstraße, Xuhui",
@@ -1840,14 +1840,14 @@
       "hours": "11:00-14:00, 17:00-21:30",
       "description": "Drei-Diamanten-Restaurant Black Pearl, bekannt für hochwertige Zutaten und raffinierte Küche.",
       "dishHighlights": [
-        "Braised seafood",
-        "Premium crab dishes",
-        "Signature tofu"
+        "Geschmorte Meeresfrüchte",
+        "Premium-Krabbengerichte",
+        "Signature-Tofu"
       ],
       "tags": [
         "Feinschmecker-Restaurant",
         "Meeresfrüchte",
-        "quality-ingredients",
+        "Qualitätszutaten",
         "beliebt"
       ],
       "star": 0,
@@ -1859,10 +1859,10 @@
       "name": "上海1号私房菜",
       "nameEn": "Shanghai No.1 Private Kitchen",
       "type": "lokal",
-      "cuisine": "Shanghainese",
+      "cuisine": "Shanghaier Küche",
       "avgPrice": 300,
       "rating": 4.6,
-      "address": "99 Changsha Rd, Huangpu",
+      "address": "Changsha Rd. 99, Huangpu",
       "coordinates": {
         "lat": 31.222,
         "lng": 121.482
@@ -1872,13 +1872,13 @@
       "description": "Verstecktes Juwel, das hausgemachte Shanghaier Gerichte in einem traditionellen Ambiente ohne Anspruch serviert.",
       "dishHighlights": [
         "Geschmorte Schweinebauch",
-        "Wonton soup",
-        "Sweet and sour ribs"
+        "Wonton-Suppe",
+        "Süß-saure Rippchen"
       ],
       "tags": [
         "lokal",
         "shanghai-küche",
-        "hidden-gem",
+        "Geheimtipp",
         "gemütlich"
       ],
       "star": 0,
@@ -1894,7 +1894,7 @@
       "cuisine": "Shanghai-Küche",
       "avgPrice": 250,
       "rating": 4.7,
-      "address": "1088 Changle Rd, Xuhui",
+      "address": "Changle Rd. 1088, Xuhui",
       "coordinates": {
         "lat": 31.208,
         "lng": 121.448
@@ -1903,14 +1903,14 @@
       "hours": "11:00-14:00, 17:00-22:00",
       "description": "Beliebtes lokales Restaurant in einem wunderschönen Garten, das klassische Shanghaier Hausmannskost serviert.",
       "dishHighlights": [
-        "Red-braised pork",
+        "Geschmortes Schweinefleisch in Rot",
         "Gebratener Reis",
         "Saisonales Gemüse"
       ],
       "tags": [
         "lokal",
         "shanghai-küche",
-        "garden-setting",
+        "Gartenlage",
         "gemütlich"
       ],
       "star": 0,
@@ -1926,7 +1926,7 @@
       "cuisine": "International",
       "avgPrice": 200,
       "rating": 4.5,
-      "address": "116 Dadu Rd, Jing'an",
+      "address": "Dadustraße 116, Jing'an",
       "coordinates": {
         "lat": 31.231,
         "lng": 121.452
@@ -1937,7 +1937,7 @@
       "dishHighlights": [
         "Fliegendes Essenslieferungssystem",
         "Burger",
-        "Pasta"
+        "Nudeln"
       ],
       "tags": [
         "Familie",
@@ -1968,8 +1968,8 @@
       "description": "Beliebter Ort für authentische kantonesische Dim Sum und Meeresfrüchte in modernem Ambiente.",
       "dishHighlights": [
         "Gedämpfte Teigtaschen",
-        "Egg tarts",
-        "Shark fin soup"
+        "Eiertörtchen",
+        "Haifischflossensuppe"
       ],
       "tags": [
         "kantonesisch",
@@ -2096,8 +2096,8 @@
       "description": "Die berühmteste Shengjianbao-Kette (pfannengebratene Teigtaschen) in Shanghai. Knuspriger Boden, saftige Füllung und zu einem Bruchteil der Preise von Restaurants mit Sitzplätzen.",
       "dishHighlights": [
         "Shengjianbao (Pfannengebratene Teigtaschen)",
-        "Xiaolongbao",
-        "Wonton Soup"
+        "Kleine Teigtaschen",
+        "Wan-Tan-Suppe"
       ],
       "tags": [
         "Straße",
@@ -2113,7 +2113,7 @@
       "name": "大壶春",
       "nameEn": "Da Hu Chun",
       "type": "lokal",
-      "cuisine": "Shanghai Traditional",
+      "cuisine": "Shanghai Traditionell",
       "avgPrice": 12,
       "rating": 4.4,
       "address": "Bezirk Huangpu, Yunnan South Road",
@@ -2124,9 +2124,9 @@
       "hours": "06:30-19:00",
       "description": "Traditioneller Shengjianbao-Laden seit 1932. Dickere Hülle als bei Xiaoyang, aber genauso köstlich. Das originale Shanghaier Pfannengericht-Knödel-Erlebnis.",
       "dishHighlights": [
-        "Shengjianbao",
+        "Shengjianbao (gebratene Teigtaschen)",
         "Xianrou Baozi (Schweinefleischbrötchen)",
-        "Xiaolongbao"
+        "Kleine Teigtaschen"
       ],
       "tags": [
         "Straße",
@@ -2142,7 +2142,7 @@
       "name": "阿大葱油饼",
       "nameEn": "A Da Congyoubing",
       "type": "lokal",
-      "cuisine": "Shanghai Street Food",
+      "cuisine": "Shanghai Straßenessen",
       "avgPrice": 10,
       "rating": 4.3,
       "address": "Bezirk Huangpu, Ruijin Er Road Nr. 120",
@@ -2154,7 +2154,7 @@
       "description": "Legendärer Hersteller von Frühlingszwiebel-Öl-Pfannkuchen. Ein Mann, ein Wok, jahrzehntelange Hingabe. Knusprig, blättrig und aromatisch. Kommen Sie früh – bis mittags ausverkauft.",
       "dishHighlights": [
         "Congyoubing (Frühlingszwiebel-Öl-Pfannkuchen)",
-        "Danbing (Egg Pancake)"
+        "Danbing (Eierpfannkuchen)"
       ],
       "tags": [
         "Straße",
@@ -2170,7 +2170,7 @@
       "name": "阿娘面馆",
       "nameEn": "A Niang Mian Guan",
       "type": "lokal",
-      "cuisine": "Shanghai Noodles",
+      "cuisine": "Shanghai Nudeln",
       "avgPrice": 18,
       "rating": 4.5,
       "address": "Bezirk Huangpu, Sinan Road",
@@ -2182,8 +2182,8 @@
       "description": "Berühmter Nudelladen, bekannt für Huangyu Mian (Gelbflossennudeln). Einfacher Laden, außergewöhnlicher Geschmack. Der Fisch wird in der Pfanne gebraten und auf elastischen Nudeln in reichhaltiger Brühe serviert.",
       "dishHighlights": [
         "Huangyu Mian (Gelbflossennudeln)",
-        "Huntun (Wontons)",
-        "Noodle Soup"
+        "Huntun (Wan-Tan)",
+        "Nudelsuppe"
       ],
       "tags": [
         "Straße",
@@ -2228,7 +2228,7 @@
       "name": "鲜得来排骨年糕",
       "nameEn": "Xiandelai Pai Nian Gao",
       "type": "lokal",
-      "cuisine": "Shanghai Traditional",
+      "cuisine": "Shanghai Traditionell",
       "avgPrice": 18,
       "rating": 4.4,
       "address": "Huangpu-Bezirk, Yunnan South Road Nr. 69",
@@ -2240,8 +2240,8 @@
       "description": "Der Ort für Paigu Niangao (Schweinekotelett mit Reiskuchen). Süße Soße, zartes Fleisch, zähe Reiskuchen – eine klassische Shanghai-Kombination seit den 1920er Jahren.",
       "dishHighlights": [
         "Paigu Niangao (Schweinekotelett-Reiskuchen)",
-        "Nian Gao Stir-Fry",
-        "Sweet Sauce Chicken"
+        "Nian Gao Pfannengericht",
+        "Hähnchen in Süß-Soße"
       ],
       "tags": [
         "Straße",
@@ -2257,7 +2257,7 @@
       "name": "蘑心餐厅",
       "nameEn": "Lan Xin Restaurant",
       "type": "lokal",
-      "cuisine": "Shanghai Home Cooking",
+      "cuisine": "Shanghaier Hausmannskost",
       "avgPrice": 20,
       "rating": 4.5,
       "address": "Huangpu-Bezirk, Jinxian Road",
@@ -2268,14 +2268,14 @@
       "hours": "11:00-14:00, 17:00-21:00",
       "description": "Sieben Jahre in Folge von Michelin empfohlen. Kleines Nachbarschaftsrestaurant mit authentischen Shanghai-Hausmannskost-Gerichten. Keine Reservierungen, rechnen Sie mit Wartezeit und geteilten Tischen.",
       "dishHighlights": [
-        "Hogao (Braised Pork)",
+        "Hogao (Geschmortes Schweinefleisch)",
         "Youmen Xunzi (Geschmorte Bambussprossen)",
         "Congshao Pai (Frühlingszwiebel-Schweinekotelett)"
       ],
       "tags": [
         "Straße",
         "Michelin-Empfehlung",
-        "home-cooking"
+        "hausgemachte Küche"
       ],
       "imageUrl": "/img/ext/75cc963484f4.webp",
       "phone": "+86 021  1073 9732",
@@ -2286,7 +2286,7 @@
       "name": "玖玖小炒",
       "nameEn": "Jiujiu Small Stir-Fry",
       "type": "lokal",
-      "cuisine": "Shanghai Stir-Fry",
+      "cuisine": "Shanghaier Pfannengericht",
       "avgPrice": 15,
       "rating": 4.3,
       "address": "Huangpu-Bezirk, Guangxi North Road Nr. 434",
@@ -2299,11 +2299,11 @@
       "dishHighlights": [
         "Jiaoyan Paidiao (Salz-Pfeffer-Rippchen)",
         "Jiangbao Zhugan (Schweineleber)",
-        "Garlic Stir-Fried Greens"
+        "Knoblauch-Gebratenes Gemüse"
       ],
       "tags": [
         "Straße",
-        "stir-fry",
+        "Pfannengericht",
         "günstig"
       ],
       "imageUrl": "/img/ext/07dc985f36c2.webp",
@@ -2829,14 +2829,14 @@
         "to": "Internationaler Flughafen Shanghai Pudong (PVG) / Flughafen Hongqiao (SHA)",
         "duration": "Variiert (10-14 Stunden aus Europa/Amerika)",
         "price": "1200-9000¥",
-        "frequency": "Multiple daily flights",
+        "frequency": "Mehrere tägliche Flüge",
         "tips": "PVG wickelt internationale Flüge ab, SHA hauptsächlich Inlandsflüge. Der Magnetschwebebahn-Zug vom PVG erreicht 430 km/h."
       },
       {
         "type": "train",
         "from": "Peking (4,5 Std.), Hangzhou (1 Std.), Suzhou (0,5 Std.)",
         "to": "Shanghai Hongqiao Bahnhof / Shanghai Hauptbahnhof",
-        "duration": "0.5-4.5 hours",
+        "duration": "0,5–4,5 Stunden",
         "price": "200-900¥",
         "frequency": "Mehrere tägliche Abfahrten",
         "tips": "Hochgeschwindigkeitszüge sind äußerst pünktlich. Der Bahnhof Hongqiao ist mit U-Bahn und Flughäfen verbunden."
@@ -2856,7 +2856,7 @@
       ],
       "taxi": [
         "Grundpreis: 14¥ (erste 3 km)",
-        "Waiting: 0.8¥ per minute",
+        "Wartezeit: 0,8 ¥ pro Minute",
         "Didi-App für Nicht-Chinesischsprachige bevorzugt",
         "Van-Option für Gruppen verfügbar"
       ],
@@ -2886,7 +2886,7 @@
         "Innenpool mit Blick auf den Bund",
         "Yacht-Touren verfügbar"
       ],
-      "bookingTips": "Request Bund-view rooms. Best deals through hotel loyalty programs."
+      "bookingTips": "Bund-Blick-Zimmer anfragen. Die besten Angebote gibt es über Hotel-Treueprogramme."
     },
     {
       "name": "上海外滩华尔道夫酒店",
@@ -2904,14 +2904,14 @@
         "Charmante Long Bar",
         "Zentrale Lage"
       ],
-      "bookingTips": "Long Bar for cocktails is legendary. Book bar seats in advance."
+      "bookingTips": "Die Long Bar für Cocktails ist legendär. Reservieren Sie Barplätze im Voraus."
     },
     {
       "name": "上海金茂君悦大酒店",
       "nameEn": "Grand Hyatt Shanghai",
       "budget": "mid",
       "priceRange": "¥1200-2000/night",
-      "address": "88 Jinjiang Rd, Pudong",
+      "address": "Jinjiang Road 88, Pudong",
       "coordinates": {
         "lat": 31.221,
         "lng": 121.5025
@@ -2922,14 +2922,14 @@
         "Atemberaubende Stadtaussicht",
         "Mit dem IFC-Einkaufszentrum verbunden"
       ],
-      "bookingTips": "Higher floors offer better views. Check for weekend packages."
+      "bookingTips": "Höhere Etagen bieten bessere Aussicht. Prüfen Sie Wochenendpakete."
     },
     {
       "name": "上海希尔顿酒店",
       "nameEn": "Hilton Shanghai",
       "budget": "mid",
       "priceRange": "¥900-1500/night",
-      "address": "1 Fatherland Rd, Huangpu",
+      "address": "Fatherland Road 1, Huangpu",
       "coordinates": {
         "lat": 31.2285,
         "lng": 121.4805
@@ -2940,7 +2940,7 @@
         "Gutes Frühstücksbuffet",
         "Zuverlässige Marke"
       ],
-      "bookingTips": "Good central location for first-time visitors."
+      "bookingTips": "Gute zentrale Lage für Erstbesucher."
     },
     {
       "name": "Shanghai Edition Hotel",
@@ -2958,14 +2958,14 @@
         "Hervorragende Rooftop-Bar",
         "Zentrale Lage"
       ],
-      "bookingTips": "Rooftop bar is popular - book ahead."
+      "bookingTips": "Die Rooftop-Bar ist beliebt – reservieren Sie im Voraus."
     },
     {
       "name": "Hotel Puli Shanghai",
       "nameEn": "The Puli Hotel & Spa",
       "budget": "luxury",
       "priceRange": "¥2500-4500/night",
-      "address": "1 Xiushan Rd, Jing'an",
+      "address": "Xiushan Road 1, Jing'an",
       "coordinates": {
         "lat": 31.224,
         "lng": 121.448
@@ -2976,7 +2976,7 @@
         "Hervorragendes Spa",
         "Zentrale Lage"
       ],
-      "bookingTips": "Weekend packages offer better value."
+      "bookingTips": "Wochenendpakete bieten ein besseres Preis-Leistungs-Verhältnis."
     },
     {
       "name": "Shanghai Jing'an Shangri-La Hotel",
@@ -2994,7 +2994,7 @@
         "Tolle Aussicht",
         "Mehrere Restaurants"
       ],
-      "bookingTips": "Higher floors have best views. Breakfast worth the upgrade."
+      "bookingTips": "Die oberen Etagen bieten die beste Aussicht. Das Frühstück ist die Aufwertung wert."
     },
     {
       "name": "上海镛舍",
@@ -3012,7 +3012,7 @@
         "Spa und Pool",
         "Trendiger Ort"
       ],
-      "bookingTips": "Connected to HKRI Taikoo Hui mall."
+      "bookingTips": "Direkt mit dem HKRI Taikoo Hui Einkaufszentrum verbunden."
     },
     {
       "name": "Shanghai Bulgari Hotel",
@@ -3030,7 +3030,7 @@
         "Atemberaubender Blick auf den Bund",
         "Michelin-Restaurant"
       ],
-      "bookingTips": "Bund view suites are exceptional. Book restaurant in advance."
+      "bookingTips": "Die Suiten mit Blick auf den Bund sind außergewöhnlich. Reservieren Sie das Restaurant im Voraus."
     },
     {
       "name": "Hotel Peace Shanghai",
@@ -3048,14 +3048,14 @@
         "Jazzbar",
         "Ikonische Lage"
       ],
-      "bookingTips": "Request renovated rooms in the south building. Sunday jazz brunch is legendary."
+      "bookingTips": "Fragen Sie nach renovierten Zimmern im Südgebäude. Der Jazz-Brunch am Sonntag ist legendär."
     },
     {
       "name": "Shanghai Pudong Shangri-La Hotel",
       "nameEn": "Shangri-La Pudong",
       "budget": "luxury",
       "priceRange": "¥2000-3500/night",
-      "address": "33 Fu Cheng Rd, Pudong",
+      "address": "Fu Cheng Straße 33, Pudong",
       "coordinates": {
         "lat": 31.238,
         "lng": 121.499
@@ -3066,7 +3066,7 @@
         "Großartiger Blick auf den Bund",
         "Mehrere Pools"
       ],
-      "bookingTips": "Horizon Club rooms offer better views. Airport transfer recommended."
+      "bookingTips": "Die Horizon Club Zimmer bieten eine bessere Aussicht. Ein Transfer vom Flughafen wird empfohlen."
     },
     {
       "name": "Shanghai Sukhothai Hotel",
@@ -3084,7 +3084,7 @@
         "Hervorragender Service",
         "Zentrale Lage"
       ],
-      "bookingTips": "Spa treatments highly recommended. Good for business travelers."
+      "bookingTips": "Die Spa-Behandlungen sind sehr zu empfehlen. Gut für Geschäftsreisende."
     },
     {
       "name": "Shanghai St. Regis Hotel",
@@ -3102,7 +3102,7 @@
         "Butler-Service",
         "Mehrere gastronomische Optionen"
       ],
-      "bookingTips": "Butler service is exceptional. Ask for renovated rooms."
+      "bookingTips": "Der Butler-Service ist außergewöhnlich. Fragen Sie nach renovierten Zimmern."
     },
     {
       "name": "Shanghai Aman Hotel",
@@ -3120,14 +3120,14 @@
         "Privater Club-Charakter",
         "Aman-Service"
       ],
-      "bookingTips": "Only 28 rooms ensure exclusivity. Book well in advance."
+      "bookingTips": "Nur 28 Zimmer gewährleisten Exklusivität. Buchen Sie rechtzeitig im Voraus."
     },
     {
       "name": "Shanghai Jinjiang Hotel",
       "nameEn": "Jinjiang Hotel",
       "budget": "mid",
       "priceRange": "¥800-1500/night",
-      "address": "59 Changle Rd, Xuhui",
+      "address": "Changle Lu 59, Xuhui",
       "coordinates": {
         "lat": 31.214,
         "lng": 121.453
@@ -3138,7 +3138,7 @@
         "Große Gärten",
         "Lage in der Französischen Konzession"
       ],
-      "bookingTips": "Meijing building has been renovated. Great for history buffs."
+      "bookingTips": "Das Meijing-Gebäude wurde renoviert. Sehr gut für Geschichtsinteressierte."
     },
     {
       "name": "Shanghai Bund Banyan Tree",
@@ -3157,7 +3157,7 @@
         "Dachbar",
         "Luxuriöses Spa"
       ],
-      "bookingTips": "Request river-view rooms. Best for romantic getaways."
+      "bookingTips": "Verlangen Sie Zimmer mit Flussblick. Am besten für romantische Kurztrips."
     },
     {
       "name": "Andaz Shanghai Xintiandi",
@@ -3176,7 +3176,7 @@
         "Dachbar",
         "Zentrale Lage"
       ],
-      "bookingTips": "Great for nightlife. Book weekend packages."
+      "bookingTips": "Ideal für das Nachtleben. Buchen Sie Wochenendpakete."
     }
   ],
   "payment": [
@@ -3200,14 +3200,14 @@
       "icon": "wechat",
       "description": "Unverzichtbar für lokale Transaktionen und WeChat-Dienste",
       "howToUse": [
-        "WeChat app required",
+        "WeChat-App erforderlich",
         "Karte über WeChat Pay in den Einstellungen verknüpfen",
         "QR-Code-Scannen für Zahlungen"
       ],
       "tips": [
         "Englische Version in den Einstellungen verfügbar",
         "Erforderlich für Didi-Ride-Hailing",
-        "Good for group payments"
+        "Gut für Gruppenzahlungen"
       ]
     },
     {
@@ -3219,7 +3219,7 @@
         "ICBC, HSBC, Standard Chartered haben englische Oberflächen"
       ],
       "tips": [
-        "Keep 200-500¥ as backup",
+        "200–500 ¥ als Reserve bereithalten",
         "Bank Karten funktionieren in der Regel an jedem ATM"
       ]
     },
@@ -3270,49 +3270,49 @@
   "culturalTips": [
     {
       "category": "language",
-      "title": "Shanghainese Dialect",
+      "title": "Shanghaier Dialekt",
       "content": "Mandarin wird weitgehend verstanden, aber Shanghaierisch (Shanghai-Dialekt) ist die regionale Sprache. Wenn Besucher ein paar Sätze versuchen, schätzen die Einheimischen das.",
       "importance": "medium"
     },
     {
       "category": "dining",
-      "title": "Dining Scene",
+      "title": "Restaurantszene",
       "content": "Shanghai ist das kulinarische Zentrum Chinas mit unglaublicher Vielfalt. Reservierungen sind für beliebte Restaurants unerlässlich. Die Hauptessenszeit ist 19-20 Uhr.",
       "importance": "high"
     },
     {
       "category": "fashion",
-      "title": "Dress Code",
+      "title": "Kleiderordnung",
       "content": "Shanghai ist modisch fortschrittlich. Smart Casual ist der Standard für Restaurants und Bars. Einige gehobene Veranstaltungsorte haben Kleidervorschriften.",
       "importance": "medium"
     },
     {
       "category": "timing",
-      "title": "City Rhythm",
+      "title": "Stadtrythmus",
       "content": "Shanghai ist eine Stadt, die rund um die Uhr aktiv ist. Geschäfte öffnen oft spät, und viele Restaurants nehmen die letzten Bestellungen um 21-22 Uhr an. Nachtmärkte erwachen nach 20 Uhr zum Leben.",
       "importance": "medium"
     },
     {
       "category": "etiquette",
-      "title": "Social Customs",
+      "title": "Soziale Gepflogenheiten",
       "content": "Pünktlichkeit wird im Geschäftsleben geschätzt. Trinkgeld wird in gehobenen Etablissements nicht erwartet, aber geschätzt. Visitenkarten werden mit beiden Händen ausgetauscht.",
       "importance": "medium"
     },
     {
       "category": "culture",
-      "title": "Haipai Culture",
+      "title": "Haipai-Kultur",
       "content": "Haipai (Shanghaier Stil) bezieht sich auf die einzigartige Kultur der Verschmelzung von Ost und West in Shanghai. Dieser kosmopolitische Stil beeinflusst alles von der Architektur bis zur Küche und zeichnet sich durch Offenheit, Innovation und Raffinesse aus.",
       "importance": "high"
     },
     {
       "category": "architecture",
-      "title": "Shikumen Architecture",
+      "title": "Shikumen-Architektur",
       "content": "Shikumen (Steintorhäuser) sind historische Reihenhäuser mit charakteristischen Steintoren, die chinesische und westliche Elemente vereinen. Viele Shikumen sind in Xintiandi und Tianzifang als Kulturerbe erhalten.",
       "importance": "high"
     },
     {
       "category": "fashion",
-      "title": "Qipao and Fashion",
+      "title": "Qipao und Mode",
       "content": "In den 1920er- und 1930er-Jahren wurde das ikonische Qipao (Cheongsam) in Shanghai verfeinert. Heute ist Shanghai weiterhin die Modehauptstadt Chinas, und Designer verbinden traditionelle Elemente mit modernen Stilen.",
       "importance": "medium"
     },
@@ -3324,31 +3324,31 @@
     },
     {
       "category": "cafe",
-      "title": "Café Culture",
+      "title": "Cafékultur",
       "content": "In Anlehnung an europäische Traditionen hat Shanghai eine starke Café-Kultur, besonders im ehemaligen Französischen Konzessionsgebiet. Der sonntägliche Brunch ist eine beliebte lokale Tradition mit Freunden und Familie.",
       "importance": "medium"
     },
     {
       "category": "arts",
-      "title": "Arts Scene",
+      "title": "Kunstszene",
       "content": "Shanghai beherbergt weltklasse Museen, Galerien und kulturelle Veranstaltungsorte. M50 und 1933 Old Mill Fun sind kreative Zentren, während das West Bund Cultural Center das neueste Kunstviertel ist.",
       "importance": "medium"
     },
     {
       "category": "history",
-      "title": "Historical Layers",
+      "title": "Historische Schichten",
       "content": "Shanghai entwickelte sich von einem Fischerdorf zu einem Vertragshafen mit internationalen Konzessionen, was sich in seiner vielfältigen Architektur von kolonialen Villen bis hin zu modernen Wolkenkratzern widerspiegelt.",
       "importance": "high"
     },
     {
       "category": "cuisine",
-      "title": "Benbang Cuisine",
+      "title": "Benbang-Küche",
       "content": "Benbang-Küche (Shanghaier Küche) bezeichnet traditionelle Shanghaier Gerichte, die sich durch Süße, sorgfältige Verwendung von Sojasauce und Betonung frischer Zutaten auszeichnen. Typische Gerichte sind geschmortes Schweinebauchfleisch und Shanghai-Krabben.",
       "importance": "high"
     },
     {
       "category": "dialect",
-      "title": "Shanghainese Language",
+      "title": "Shanghaier Sprache",
       "content": "Der Shanghaier Dialekt (Shanghaihua) ist ein Wu-Dialekt, der sich erheblich vom Mandarin unterscheidet. Obwohl Mandarin allgemein verstanden wird, schätzen es die Einheimischen, wenn Besucher grundlegende Shanghaier Phrasen lernen.",
       "importance": "medium"
     },
@@ -3360,62 +3360,62 @@
     },
     {
       "category": "transportation",
-      "title": "Metro Culture",
+      "title": "Metrokultur",
       "content": "Die Metro von Shanghai ist eine der größten und effizientesten der Welt. In den Stoßzeiten (8-9 Uhr morgens, 6-7 Uhr abends) sollten Sie mit überfüllten Wagen rechnen. Bitte geben Sie Ihren Sitzplatz an ältere Menschen, schwangere Frauen und Personen mit Kindern ab.",
       "importance": "high"
     },
     {
       "category": "language",
-      "title": "Wu Dialect Family",
+      "title": "Wu-Dialektfamilie",
       "content": "Der Shanghaier Dialekt gehört zum Wu-Dialekt und unterscheidet sich stark vom Mandarin. Häufige Phrasen: 'ni' (du) = du, 'wo' (ich) = ich, 'na' (das) = das. Aufgrund der Tonunterschiede ist er für Nicht-Sprecher kaum verständlich.",
       "importance": "medium"
     },
     {
       "category": "fashion",
-      "title": "Haipai Fashion",
+      "title": "Haipai-Mode",
       "content": "In den 1920er- und 1930er-Jahren war Shanghai Vorreiter des modernen Qipao (Cheongsam). Heute ist Shanghai das Modezentrum Chinas, mit der Shanghai Fashion Week und vielen Designern, die östliche und westliche Stile verbinden.",
       "importance": "medium"
     },
     {
       "category": "environment",
-      "title": "Air Quality",
+      "title": "Luftqualität",
       "content": "Die Luftqualität kann besonders im Winter schlecht sein. Überprüfen Sie den AQI vor Aktivitäten im Freien. Große internationale Hotels verfügen über Luftreiniger. Während starker Luftverschmutzung wird das Tragen einer Maske empfohlen.",
       "importance": "high"
     },
     {
       "category": "language",
-      "title": "Wu Dialect Family",
+      "title": "Wu-Dialektfamilie",
       "content": "Der Shanghaier Dialekt gehört zum Wu-Dialekt und unterscheidet sich stark vom Mandarin. Häufige Phrasen: 'ni' (du) = du, 'wo' (ich) = ich, 'na' (das) = das. Aufgrund der Tonunterschiede ist er für Nicht-Sprecher kaum verständlich.",
       "importance": "medium"
     },
     {
       "category": "fashion",
-      "title": "Haipai Fashion",
+      "title": "Haipai-Mode",
       "content": "In den 1920er- und 1930er-Jahren war Shanghai Vorreiter des modernen Qipao (Cheongsam). Heute ist Shanghai das Modezentrum Chinas, mit der Shanghai Fashion Week und vielen Designern, die östliche und westliche Stile verbinden.",
       "importance": "medium"
     },
     {
       "category": "environment",
-      "title": "Air Quality",
+      "title": "Luftqualität",
       "content": "Die Luftqualität kann besonders im Winter schlecht sein. Überprüfen Sie den AQI vor Aktivitäten im Freien. Große internationale Hotels verfügen über Luftreiniger. Während starker Luftverschmutzung wird das Tragen einer Maske empfohlen.",
       "importance": "high"
     },
     {
       "category": "greeting",
-      "title": "Shanghai Greetings",
+      "title": "Grüße in Shanghai",
       "content": "Obwohl das Pekinger Mandarin 'Nihao' üblich ist, bedeutet 'Nonghao' im Shanghaier Dialekt 'Hallo'. Die Einheimischen freuen sich, wenn Besucher versuchen, lokale Phrasen zu verwenden.",
       "importance": "low"
     },
     {
       "category": "dining",
-      "title": "Dim Sum Culture",
-      "content": "Shanghai dim sum differs from Cantonese style. Try local specialties like shengjian bao (pan-fried soup dumplings), xiaolongbao, and crab roe dishes.",
+      "title": "Dim-Sum-Kultur",
+      "content": "Shanghaiser Dim Sum unterscheidet sich vom kantonesischen Stil. Probieren Sie lokale Spezialitäten wie Shengjian Bao (in der Pfanne gebratene Suppenknödel), Xiaolongbao und Gerichte mit Krabbenrogen.",
       "importance": "high"
     },
     {
       "category": "architecture",
-      "title": "Art Deco Legacy",
-      "content": "Shanghai has one of the world's largest collections of Art Deco architecture, second only to Miami. Many buildings along the Bund feature this 1920s-30s style.",
+      "title": "Art-déco-Erbe",
+      "content": "Shanghai besitzt eine der weltweit größten Sammlungen von Art-déco-Architektur, nur übertroffen von Miami. Viele Gebäude am Bund weisen diesen Stil der 1920er- und 1930er-Jahre auf.",
       "importance": "medium"
     }
   ],
