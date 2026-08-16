@@ -466,7 +466,7 @@ const mapMarkers = [
 
           <!-- Interactive City Map -->
           <div class="mb-6">
-            <CityMap city={city} activeTab="overview" height="400px" client:visible />
+            <CityMap city={city} activeTab="overview" height="400px" lang={lang} client:visible />
           </div>
 
           <!-- Best Time to Visit -->
@@ -561,7 +561,7 @@ const mapMarkers = [
 
           <!-- Food Map -->
           <div class="mb-6 mt-6">
-            <CityMap city={city} activeTab="food" height="350px" client:visible />
+            <CityMap city={city} activeTab="food" height="350px" lang={lang} client:visible />
           </div>
 
           <!-- View Full Food Map CTA -->

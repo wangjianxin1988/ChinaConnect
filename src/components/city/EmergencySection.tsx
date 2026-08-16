@@ -287,7 +287,7 @@ export function EmergencySection({ contacts, city, lang = "en" }: EmergencySecti
       {/* Emergency Map */}
       {city && (
         <div className="mb-6">
-          <CityMap city={city} activeTab="emergency" height="350px" />
+          <CityMap city={city} activeTab="emergency" height="350px" lang={lang} />
         </div>
       )}
 

@@ -9,12 +9,13 @@ import { SOS_STRINGS, useClientLang } from "./sos-strings";
 
 interface SOSButtonProps {
   className?: string;
+  lang?: string;
 }
 
 type MenuTab = "main" | "translation" | "location" | "embassy" | "contacts" | "cultural";
 
-export function SOSButton({ className = "" }: SOSButtonProps) {
-  const lang = useClientLang();
+export function SOSButton({ className = "", lang: propLang }: SOSButtonProps) {
+  const lang = propLang || useClientLang();
   const s = SOS_STRINGS[lang] || SOS_STRINGS.en;
   const [isExpanded, setIsExpanded] = useState(false);
   const [activeTab, setActiveTab] = useState<MenuTab>("main");

@@ -39,7 +39,8 @@ const localCityName = translations[lang]?.["city." + city.slug + ".name"] ?? tra
 const CJK_HOTEL_LANGS = ["zh-CN", "zh-TW", "ja"];
 const hotelCardProps = (h: any) => {
   const cjk = CJK_HOTEL_LANGS.includes(lang);
-  const primary = cjk ? h.name : h.nameEn || h.name;
+  const nameHasCJK = /[\u3400-\u9fff]/.test(h.name || "");
+  const primary = cjk ? h.name : (nameHasCJK ? h.nameEn || h.name : h.name);
   const secondary = cjk && h.nameEn && h.nameEn !== h.name ? h.nameEn : "";
   return { ...h, name: primary, nameEn: secondary || undefined, cityZh: undefined, imageUrl: h.image || h.imageUrl };
 };

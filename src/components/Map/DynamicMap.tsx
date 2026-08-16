@@ -3,6 +3,7 @@ import type { MapMarker } from "@/lib/map-types";
  * Dynamic map loader - solves SSR issues with Leaflet
  * Leaflet requires browser APIs (window, document) which don't exist during SSR
  */
+import { ct } from "@/i18n/components-strings";
 import React, { useState, useEffect } from "react";
 
 interface DynamicMapProps {
@@ -25,7 +26,7 @@ function MapSkeleton({ height, lang = "en" }: { height?: string; lang?: string }
     >
       <div className="text-center">
         <div className="text-gray-300 text-5xl mb-3">🗺️</div>
-        <p className="text-sm text-gray-400">{lang === "ja" ? "地図を読み込み中..." : "Loading map..."}</p>
+        <p className="text-sm text-gray-400">{ct(lang, "map_loading", "Loading map...")}</p>
       </div>
     </div>
   );
@@ -51,7 +52,7 @@ export function DynamicMap(props: DynamicMapProps) {
 
   // Show skeleton during SSR and while loading the map component
   if (!isMounted || !MapComponent) {
-    return <MapSkeleton height={props.height} />;
+    return <MapSkeleton height={props.height} lang={lang} />;
   }
 
   return <MapComponent {...props} />;

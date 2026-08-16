@@ -3,17 +3,18 @@ import { SOSButton } from "./SOSButton";
 
 interface EmergencyWrapperProps {
   className?: string;
+  lang?: string;
 }
 
 /**
  * EmergencyWrapper - Main container for all emergency features
  * This component includes the SOS floating button that is fixed on every page
  */
-export function EmergencyWrapper({ className = "" }: EmergencyWrapperProps) {
+export function EmergencyWrapper({ className = "", lang = "en" }: EmergencyWrapperProps) {
   return (
     <div className={className}>
       {/* Main SOS Button with all emergency features */}
-      <SOSButton />
+      <SOSButton lang={lang} />
 
       {/* Note: The SOSButton includes:
        * - SOS Emergency Call (110 Police)

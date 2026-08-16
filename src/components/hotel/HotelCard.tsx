@@ -155,7 +155,11 @@ export function HotelCard({ hotel, onClick, compact = false, lang = "en" }: Hote
   const priceDisplay = buildPriceDisplay(hotel);
   const catLabel = config.labels?.[lang] || config.labelEn || config.label;
   const isCJKName = ["zh-CN", "zh-TW", "ja"].includes(lang);
-  const displayName = isCJKName ? hotel.name : hotel.nameEn || hotel.name;
+  // Hotels in cities-i18n/<lang> are localized in the `name` field (nameEn stays
+  // English). Fall back to nameEn only when the localized name still contains CJK
+  // (untranslated source name), e.g. on the English page or for untranslated rows.
+  const nameHasCJK = /[\u3400-\u9fff]/.test(hotel.name || "");
+  const displayName = isCJKName ? hotel.name : (nameHasCJK ? hotel.nameEn || hotel.name : hotel.name);
   const secondaryName = isCJKName && hotel.nameEn && hotel.nameEn !== hotel.name ? hotel.nameEn : "";
 
   return (

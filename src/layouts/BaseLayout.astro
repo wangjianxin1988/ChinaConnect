@@ -230,7 +230,7 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
       <slot />
     </main>
 
-    <EmergencyWrapper client:load />
+    <EmergencyWrapper lang={lang} client:load />
     <InstallPrompt client:load />
     <OfflineIndicator client:load />
 

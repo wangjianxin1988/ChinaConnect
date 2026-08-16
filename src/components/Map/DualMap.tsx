@@ -1,4 +1,5 @@
 import { useGeoLocation } from "@/hooks/useGeoLocation";
+import { ct } from "@/i18n/components-strings";
 import { useMap } from "@/hooks/useMap";
 import type { MapLayer, MapMarker } from "@/lib/map-types";
 import React, { useState, useCallback, useMemo, useEffect } from "react";
@@ -19,6 +20,7 @@ interface DualMapProps {
   defaultLayer?: MapLayer;
   onMarkerClick?: (marker: MapMarker) => void;
   className?: string;
+  lang?: string;
 }
 
 const PROVIDER_BUTTON_STYLES = `
@@ -45,6 +47,7 @@ export function DualMap({
   defaultLayer = "standard",
   onMarkerClick,
   className = "",
+  lang = "en",
 }: DualMapProps) {
   const { provider, toggleProvider, setViewState, viewState, isDetectingLocation } = useMap({
     initialProvider: undefined, // Let hook auto-detect
@@ -106,17 +109,17 @@ export function DualMap({
       return {
         name: "Google Maps",
         flag: "🌍",
-        switchLabel: "切换到高德地图",
+        switchLabel: ct(lang, "map_switch_amap", "Switch to Amap"),
         switchFlag: "🇨🇳",
       };
     }
     return {
-      name: "高德地图",
+      name: ct(lang, "map_amap_china", "高德地图 (China)"),
       flag: "🇨🇳",
-      switchLabel: "Switch to Google",
+      switchLabel: ct(lang, "map_switch_google", "Switch to Google"),
       switchFlag: "🌍",
     };
-  }, [provider]);
+  }, [provider, lang]);
 
   // Determine which provider to highlight based on geo detection
   const _effectiveProvider = geoDetectedProvider ?? provider;
@@ -131,11 +134,11 @@ export function DualMap({
         <div className="absolute inset-0 bg-white/90 z-[1000] flex items-center justify-center">
           <div className="text-center">
             <div className="animate-spin h-8 w-8 border-4 border-blue-500 border-t-transparent rounded-full mx-auto mb-3" />
-            <p className="text-sm text-gray-500">Detecting location and region...</p>
+            <p className="text-sm text-gray-500">{ct(lang, "map_detecting", "Detecting location and region...")}</p>
             {geoDetectedProvider && (
               <p className="text-xs text-blue-600 mt-1">
-                Auto-selected:{" "}
-                {geoDetectedProvider === "amap" ? "高德地图 (China)" : "Google Maps (Global)"}
+                {ct(lang, "map_auto_selected", "Auto-selected:")}{" "}
+                {geoDetectedProvider === "amap" ? ct(lang, "map_amap_china", "高德地图 (China)") : ct(lang, "map_google_global", "Google Maps (Global)")}
               </p>
             )}
           </div>
@@ -157,7 +160,7 @@ export function DualMap({
           <div className="w-full h-full bg-slate-100 flex items-center justify-center">
             <div className="text-center">
               <div className="animate-spin h-8 w-8 border-4 border-blue-500 border-t-transparent rounded-full mx-auto mb-3" />
-              <p className="text-sm text-gray-500">Loading map...</p>
+              <p className="text-sm text-gray-500">{ct(lang, "map_loading", "Loading map...")}</p>
             </div>
           </div>
         )}
@@ -170,7 +173,7 @@ export function DualMap({
           <button
             onClick={toggleProvider}
             className={PROVIDER_BUTTON_STYLES}
-            title="Switch map provider"
+            title={ct(lang, "map_switch_title", "Switch map provider")}
           >
             <span className="text-base">{providerInfo.flag}</span>
             <span className="hidden sm:inline">{providerInfo.switchLabel}</span>
@@ -205,7 +208,7 @@ export function DualMap({
         {geoDetectedProvider && geoDetectedProvider !== provider && (
           <span className="ml-1 text-blue-300">
             {" "}
-            (auto: {geoDetectedProvider === "amap" ? "高德" : "Google"})
+            {ct(lang, "map_auto_label", "(auto: {name})").replace("{name}", geoDetectedProvider === "amap" ? "Amap" : "Google")}
           </span>
         )}
       </div>
@@ -220,7 +223,7 @@ export function DualMap({
       {/* Markers Count Badge */}
       {markers.length > 0 && (
         <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-gray-700 px-3 py-1.5 rounded-full shadow-md text-xs font-medium z-[500]">
-          {markers.length} location{markers.length > 1 ? "s" : ""}
+          {ct(lang, "map_location_count", "{n} locations").replace("{n}", String(markers.length))}
         </div>
       )}
     </div>

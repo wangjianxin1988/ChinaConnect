@@ -1,6 +1,7 @@
 import { DynamicMap } from "@/components/Map";
 import type { DualMapLocation } from "@/components/Map";
 import type { MapMarker } from "@/lib/map-types";
+import { ct } from "@/i18n/components-strings";
 import { useMemo, useState } from "react";
 
 // Define types matching the actual city JSON structure
@@ -189,22 +190,22 @@ export function CityMap({
     <div className="space-y-3">
       {/* Map Legend */}
       <div className="flex flex-wrap items-center gap-3 text-xs text-gray-500">
-        <span className="font-medium">{lang === "ja" ? "凡例：" : "Legend:"}</span>
+        <span className="font-medium">{ct(lang, "map_legend", "Legend:")}</span>
         <div className="flex items-center gap-1">
           <span className="w-3 h-3 rounded-full bg-amber-500 inline-block" />
-          <span>{lang === "ja" ? "観光スポット" : "Attractions"}</span>
+          <span>{ct(lang, "map_legend_attractions", "Attractions")}</span>
         </div>
         <div className="flex items-center gap-1">
           <span className="w-3 h-3 rounded-full bg-red-500 inline-block" />
-          <span>{lang === "ja" ? "レストラン" : "Restaurants"}</span>
+          <span>{ct(lang, "map_legend_restaurants", "Restaurants")}</span>
         </div>
         <div className="flex items-center gap-1">
           <span className="w-3 h-3 rounded-full bg-emerald-500 inline-block" />
-          <span>{lang === "ja" ? "交通" : "Transport"}</span>
+          <span>{ct(lang, "map_legend_transport", "Transport")}</span>
         </div>
         <div className="flex items-center gap-1">
           <span className="w-3 h-3 rounded-full bg-red-600 inline-block" />
-          <span>{lang === "ja" ? "緊急" : "Emergency"}</span>
+          <span>{ct(lang, "map_legend_emergency", "Emergency")}</span>
         </div>
       </div>
 
@@ -216,6 +217,7 @@ export function CityMap({
         showControls={showControls}
         showLayerControls={true}
         onMarkerClick={handleMarkerClick}
+        lang={lang}
         className="rounded-xl overflow-hidden shadow-sm border border-gray-100"
       />
 

@@ -57,6 +57,7 @@ export function AttractionsSection({
             } as any
           }
           activeTab="attractions"
+          lang={lang}
           height="350px"
         />
       </div>

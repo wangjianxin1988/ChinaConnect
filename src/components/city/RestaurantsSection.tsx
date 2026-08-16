@@ -28,6 +28,7 @@ export function RestaurantsSection({ restaurants, citySlug, cityName, lang = "en
           }
           activeTab="food"
           height="350px"
+          lang={lang}
         />
       </div>
 
@@ -35,6 +36,7 @@ export function RestaurantsSection({ restaurants, citySlug, cityName, lang = "en
         items={restaurants}
         initialCount={10}
         loadMoreCount={10}
+        lang={lang}
         className="grid grid-cols-1 md:grid-cols-2 gap-6"
         renderItem={(restaurant, _index) => (
           <RestaurantCard key={restaurant.id} restaurant={restaurant} lang={lang} />

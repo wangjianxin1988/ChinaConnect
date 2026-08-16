@@ -57,6 +57,7 @@ export function CulturalSection({ culturalTips, lang = "en" }: CulturalSectionPr
       items={culturalTips}
       initialCount={10}
       loadMoreCount={10}
+      lang={lang}
       renderItem={(tip) => {
         const styles = getImportanceStyles(tip.importance, lang);
         return (

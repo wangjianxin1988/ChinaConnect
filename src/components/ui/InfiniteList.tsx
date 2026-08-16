@@ -1,4 +1,5 @@
 import { useInfiniteScroll } from "@/hooks/useInfiniteScroll";
+import { ct } from "@/i18n/components-strings";
 import React from "react";
 
 interface InfiniteListProps<T> {
@@ -8,6 +9,7 @@ interface InfiniteListProps<T> {
   loadMoreCount?: number;
   className?: string;
   emptyMessage?: string;
+  lang?: string;
 }
 
 export function InfiniteList<T>({
@@ -17,6 +19,7 @@ export function InfiniteList<T>({
   loadMoreCount = 10,
   className = "space-y-4",
   emptyMessage = "No items to display",
+  lang = "en",
 }: InfiniteListProps<T>) {
   const { visibleItems, hasMore, loading, sentinelRef } = useInfiniteScroll<T>({
     items,
@@ -27,7 +30,7 @@ export function InfiniteList<T>({
   if (items.length === 0) {
     return (
       <div className="text-center py-12 text-gray-500">
-        <p>{emptyMessage}</p>
+        <p>{emptyMessage || ct(lang, "list_empty", "No items to display")}</p>
       </div>
     );
   }
@@ -62,10 +65,10 @@ export function InfiniteList<T>({
                     d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                   />
                 </svg>
-                <span className="text-sm font-medium">Loading more...</span>
+                <span className="text-sm font-medium">{ct(lang, "list_loading_more", "Loading more...")}</span>
               </div>
               <div className="mt-2 text-xs text-gray-400">
-                Showing {visibleItems.length} of {items.length} items
+                {ct(lang, "list_showing", "Showing {a} of {b} items").replace("{a}", String(visibleItems.length)).replace("{b}", String(items.length))}
               </div>
             </>
           ) : (
@@ -76,7 +79,7 @@ export function InfiniteList<T>({
 
       {!hasMore && items.length > initialCount && (
         <div className="py-6 text-center text-sm text-gray-400">
-          You've reached the end · {items.length} items total
+          {ct(lang, "list_end", "You've reached the end · {n} items total").replace("{n}", String(items.length))}
         </div>
       )}
     </>

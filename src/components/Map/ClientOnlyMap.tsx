@@ -1,4 +1,5 @@
 import type { MapMarker } from "@/lib/map-types";
+import { ct } from "@/i18n/components-strings";
 import React, { useState, useEffect } from "react";
 import type { DualMapLocation } from "./DualMap";
 
@@ -12,9 +13,10 @@ interface ClientOnlyMapProps {
   showLayerControls?: boolean;
   onMarkerClick?: (marker: MapMarker) => void;
   className?: string;
+  lang?: string;
 }
 
-export function ClientOnlyMap(props: ClientOnlyMapProps) {
+export function ClientOnlyMap({ lang = "en", ...props }: ClientOnlyMapProps) {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -29,7 +31,7 @@ export function ClientOnlyMap(props: ClientOnlyMapProps) {
       >
         <div className="text-center">
           <div className="text-gray-400 text-4xl mb-2">🗺️</div>
-          <p className="text-sm text-gray-500">Loading map...</p>
+          <p className="text-sm text-gray-500">{ct(lang, "map_loading", "Loading map...")}</p>
         </div>
       </div>
     );
