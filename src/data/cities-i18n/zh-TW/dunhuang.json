@@ -8,7 +8,7 @@
     "lat": 40.1421,
     "lng": 94.6618
   },
-  "timezone": "UTC+8 (China Standard Time)",
+  "timezone": "UTC+8（中國標準時間）",
   "description": "敦煌是塔克拉瑪幹沙漠邊緣的綠洲城市，是古代絲綢之路的門戶。擁有壯觀的莫高窟（UNESCO）、鳴沙山的鳴沙丘，以及古老的玉門關。這是一個結合佛教藝術、沙漠探險和星空的奇妙之地。",
   "coverImage": "/img/ext/4267a852dcbd.webp",
   "highlights": [
@@ -19,18 +19,18 @@
     "雅丹地貌 - 壯觀的沙漠地質奇觀"
   ],
   "climate": {
-    "type": "Temperate desert",
+    "type": "溫帶沙漠",
     "bestMonths": [
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October"
+      "五月",
+      "6月",
+      "七月",
+      "八月",
+      "九月",
+      "十月"
     ],
     "avgSummerTemp": "25°C (77°F)",
     "avgWinterTemp": "-10°C (14°F)",
-    "tips": "Best visited May-Oct for comfortable weather. Summers can be hot but dry. Winters cold but caves are warmer. Avoid sandstorms in spring. Book Mogao Caves tickets early."
+    "tips": "最佳旅遊時間為五月至十月，天氣舒適。夏季炎熱但乾燥，冬季寒冷但洞穴較溫暖。春季請避免沙塵暴。莫高窟門票請提早預訂。"
   },
   "restaurants": [
     {
@@ -1538,8 +1538,8 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major Chinese cities",
-        "to": "Dunhuang Airport (DNH)",
+        "from": "中國主要城市",
+        "to": "敦煌機場（DNH）",
         "duration": "經西安或蘭州約2-4小時",
         "price": "800-2000¥",
         "frequency": "每日有從西安、蘭州、北京出發的航班",
@@ -1548,29 +1548,29 @@
     ],
     "local": {
       "bus": [
-        "Public buses limited",
+        "公車班次有限",
         "前往景點的旅遊巴士",
-        "Hire car recommended"
+        "建議租車"
       ],
       "taxi": [
-        "Taxi available in city",
+        "市區可搭計程車",
         "前往景點需議價",
-        "Didi limited"
+        "滴滴叫車服務有限"
       ],
       "bike": [
-        "Bike sharing limited",
-        "Flat city for cycling",
+        "共享單車有限",
+        "市區平坦，適合騎車",
         "沙漠地區不建議騎自行車"
       ],
       "walking": [
-        "City center walkable",
-        "Desert attractions require vehicle",
-        "Use tour transport"
+        "市中心適合步行",
+        "沙漠景點需搭乘車輛",
+        "使用旅遊交通"
       ],
       "rental": [
-        "Car rental recommended",
-        "Driver with car popular option",
-        "Tour operators for day trips"
+        "建議租車",
+        "附司機的車輛是熱門選擇",
+        "一日遊可參加旅行社行程"
       ]
     }
   },
@@ -1579,8 +1579,8 @@
       "name": "敦煌賓館",
       "nameEn": "Dunhuang Hotel",
       "budget": "luxury",
-      "priceRange": "¥500-1000/night",
-      "address": "Dunhuang City Center",
+      "priceRange": "每晚500-1000元人民幣",
+      "address": "敦煌市中心",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
@@ -1592,14 +1592,14 @@
         "服務良好",
         "文化裝飾"
       ],
-      "bookingTips": "Best luxury in city. Book direct. Traditional Chinese style. Good base for sightseeing."
+      "bookingTips": "市內頂級豪華住宿。建議直接預訂。傳統中式風格。是觀光的良好據點。"
     },
     {
       "name": "敦煌山莊",
       "nameEn": "Dunhuang Mountain Villa",
       "budget": "luxury",
-      "priceRange": "¥600-1200/night",
-      "address": "Near Mingsha Mountain",
+      "priceRange": "每晚600-1200元",
+      "address": "鄰近鳴沙山",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
@@ -1611,14 +1611,14 @@
         "豪華設施",
         "獨特體驗"
       ],
-      "bookingTips": "Best location near desert. Book desert view rooms. Amazing sunrise/sunset views. Great for photography."
+      "bookingTips": "沙漠附近的最佳位置。預訂沙漠景觀房。日出/日落景觀令人驚嘆。非常適合攝影。"
     },
     {
       "name": "絲路賓館",
       "nameEn": "Silk Road Hotel",
       "budget": "mid",
-      "priceRange": "¥300-600/night",
-      "address": "City Center",
+      "priceRange": "每晚300-600元人民幣",
+      "address": "市中心",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
@@ -1630,14 +1630,14 @@
         "物超所值",
         "文化"
       ],
-      "bookingTips": "Good mid-range option. Themed decor. Book direct for discounts. Good location for night market."
+      "bookingTips": "不錯的中價位選擇。主題裝飾。直接預訂可享折扣。夜市位置佳。"
     },
     {
       "name": "月牙泉客棧",
       "nameEn": "Crescent Spring Inn",
       "budget": "mid",
-      "priceRange": "¥350-700/night",
-      "address": "Near Crescent Spring",
+      "priceRange": "每晚350-700元",
+      "address": "鄰近月牙泉",
       "coordinates": {
         "lat": 40.0921,
         "lng": 94.7618
@@ -1649,14 +1649,14 @@
         "溫馨",
         "獨特"
       ],
-      "bookingTips": "Stay near desert attractions. Book early for sunset/sunrise access. The location is magical."
+      "bookingTips": "住在沙漠景點附近。提早預訂以享有日落/日出景觀。位置非常夢幻。"
     },
     {
       "name": "敦煌青年旅舍",
       "nameEn": "Dunhuang Youth Hostel",
       "budget": "budget",
-      "priceRange": "¥50-150/night",
-      "address": "City Center",
+      "priceRange": "每晚50-150元人民幣",
+      "address": "市中心",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
@@ -1668,14 +1668,14 @@
         "可使用英語",
         "旅遊資訊"
       ],
-      "bookingTips": "Best for backpackers. Organize desert tours here. Book ahead. Great for solo travelers."
+      "bookingTips": "最適合背包客。可在這裡安排沙漠行程。請提前預訂。非常適合獨自旅行者。"
     },
     {
       "name": "沙漠露營基地",
       "nameEn": "Desert Camping Base",
       "budget": "mid",
-      "priceRange": "¥300-600/night",
-      "address": "Mingsha Mountain",
+      "priceRange": "每晚300-600元人民幣",
+      "address": "鳴沙山",
       "coordinates": {
         "lat": 40.0921,
         "lng": 94.7618
@@ -1687,14 +1687,14 @@
         "燒烤晚餐",
         "日出"
       ],
-      "bookingTips": "Book through tour operators. The starry night is unforgettable. Bring warm layers. Once-in-a-lifetime experience."
+      "bookingTips": "透過旅行社預訂。星空之夜令人難忘。請攜帶保暖衣物。一生一次的體驗。"
     },
     {
       "name": "莫高窟招待所",
       "nameEn": "Mogao Caves Guesthouse",
       "budget": "budget",
-      "priceRange": "¥100-250/night",
-      "address": "Near Mogao Caves",
+      "priceRange": "每晚100至250元人民幣",
+      "address": "莫高窟附近",
       "coordinates": {
         "lat": 40.0421,
         "lng": 94.7618
@@ -1706,14 +1706,14 @@
         "簡單",
         "物超所值"
       ],
-      "bookingTips": "Stay near caves for early access. Simple accommodation. Good for photographers wanting sunrise."
+      "bookingTips": "住在窟區附近可提早入場。住宿簡單，適合想拍日出的攝影愛好者。"
     },
     {
       "name": "敦煌飛天大酒店",
       "nameEn": "Dunhuang Feitian Hotel",
       "budget": "mid",
-      "priceRange": "¥350-700/night",
-      "address": "City Center",
+      "priceRange": "每晚350-700元",
+      "address": "市中心",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
@@ -1725,14 +1725,14 @@
         "服務良好",
         "物超所值"
       ],
-      "bookingTips": "Newer hotel with western amenities. Good for business travelers. Book direct for best rates."
+      "bookingTips": "較新的飯店，提供西式設施。適合商務旅客。直接訂房可享最優房價。"
     },
     {
       "name": "敦煌陽光沙洲酒店",
       "nameEn": "Dunhuang Sunshine Hotel",
       "budget": "mid",
-      "priceRange": "¥300-600/night",
-      "address": "City Center",
+      "priceRange": "每晚300-600元人民幣",
+      "address": "市中心",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
@@ -1744,14 +1744,14 @@
         "早餐不錯",
         "物有所值"
       ],
-      "bookingTips": "Reliable mid-range choice. Good location near markets. Book weekend rates."
+      "bookingTips": "可靠的中價位選擇。位置佳，靠近市場。週末房價請提前預訂。"
     },
     {
       "name": "雅丹地質公園營地",
       "nameEn": "Yadan Geopark Camp",
       "budget": "budget",
-      "priceRange": "¥100-200/night",
-      "address": "Yadan Park",
+      "priceRange": "每晚100-200元",
+      "address": "雅丹地質公園",
       "coordinates": {
         "lat": 40.5421,
         "lng": 93.0618
@@ -1763,14 +1763,14 @@
         "冒險",
         "滿天星鬥"
       ],
-      "bookingTips": "Stay overnight at Yadan for sunset and stars. Basic facilities. The ghost city at night is magical."
+      "bookingTips": "在雅丹過夜可欣賞夕陽與星空。設施基本。夜晚的魔鬼城非常夢幻。"
     },
     {
       "name": "敦煌錦江之星",
       "nameEn": "Jinjiang Inn Dunhuang",
       "budget": "budget",
-      "priceRange": "¥120-250/night",
-      "address": "City Center",
+      "priceRange": "每晚120-250元人民幣",
+      "address": "市中心",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
@@ -1782,14 +1782,14 @@
         "市中心",
         "可靠"
       ],
-      "bookingTips": "Budget but consistent quality. Multiple locations. Book online for discounts."
+      "bookingTips": "平價但品質穩定。多個分店。線上訂房享折扣。"
     },
     {
       "name": "絲路驛站",
       "nameEn": "Silk Road Post Hotel",
       "budget": "mid",
-      "priceRange": "¥300-550/night",
-      "address": "Near Shazhou Market",
+      "priceRange": "每晚300至550元人民幣",
+      "address": "沙州市場附近",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
@@ -1801,14 +1801,14 @@
         "服務良好",
         "文化"
       ],
-      "bookingTips": "Best for night market lovers. Themed Silk Road decor. Book center rooms for less noise."
+      "bookingTips": "最適合夜市愛好者。以絲路為主題的裝潢。預訂中央樓層的房間以減少噪音。"
     },
     {
       "name": "玉門關酒店",
       "nameEn": "Yumenguan Hotel",
       "budget": "mid",
-      "priceRange": "¥250-500/night",
-      "address": "Near Yumenguan",
+      "priceRange": "每晚250-500元",
+      "address": "玉門關附近",
       "coordinates": {
         "lat": 40.4921,
         "lng": 93.5618
@@ -1820,14 +1820,14 @@
         "基本但乾淨",
         "沙漠體驗"
       ],
-      "bookingTips": "Stay overnight near Yumenguan for sunrise. Basic accommodation. The isolation is part of the experience."
+      "bookingTips": "在玉門關附近過夜以觀賞日出。住宿條件基本。與世隔絕正是體驗的一部分。"
     },
     {
       "name": "陽關人家",
       "nameEn": "Yangguan Homestay",
       "budget": "budget",
-      "priceRange": "¥80-200/night",
-      "address": "Near Yangguan Pass",
+      "priceRange": "每晚80-200元",
+      "address": "陽關附近",
       "coordinates": {
         "lat": 40.2921,
         "lng": 94.3618
@@ -1839,14 +1839,14 @@
         "鄉村體驗",
         "道地"
       ],
-      "bookingTips": "Stay with local families near ancient pass. Very authentic experience. Limited English. Bring gifts."
+      "bookingTips": "在古關隘附近與當地家庭同住。非常道地的體驗。英語能力有限。請帶禮物。"
     },
     {
       "name": "敦煌東線酒店",
       "nameEn": "Dunhuang East Line Hotel",
       "budget": "mid",
-      "priceRange": "¥280-500/night",
-      "address": "East Side",
+      "priceRange": "每晚280至500元人民幣",
+      "address": "東側",
       "coordinates": {
         "lat": 40.1621,
         "lng": 94.7018
@@ -1858,7 +1858,7 @@
         "乾淨",
         "物有所值"
       ],
-      "bookingTips": "Good base for Eastern circuit (Mogao alternative route). Quieter area. Book direct."
+      "bookingTips": "適合東線行程（莫高窟替代路線）的基地。較安靜的區域。直接預訂。"
     }
   ],
   "payment": [
@@ -1867,24 +1867,24 @@
       "icon": "alipay",
       "description": "適用於市區及部分景點",
       "howToUse": [
-        "Download before arrival",
-        "Link card"
+        "抵達前下載",
+        "綁定卡片"
       ],
       "tips": [
-        "City merchants accept",
+        "市區商家接受",
         "偏遠地區可能偏好cash"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Common in city",
+      "description": "市區常見",
       "howToUse": [
-        "WeChat required",
-        "International version"
+        "需使用微信",
+        "國際版"
       ],
       "tips": [
-        "Works for some merchants",
+        "部分商家適用",
         "偏遠地區使用cash"
       ]
     },
@@ -1894,12 +1894,12 @@
       "description": "沙漠景點必備",
       "howToUse": [
         "市區內使用ATM",
-        "Bring to desert sites"
+        "帶至沙漠景點"
       ],
       "tips": [
         "偏遠地區不接受行動支付",
         "蒙古包營地需使用cash",
-        "Keep 500¥ for day trips"
+        "一日遊請保留500人民幣"
       ]
     }
   ],

@@ -3,33 +3,33 @@
   "name": "廈門",
   "nameEn": "Xiamen",
   "country": "China",
-  "population": "5.3 million",
+  "population": "530萬",
   "coordinates": {
     "lat": 24.4798,
     "lng": 118.0894
   },
-  "timezone": "UTC+8 (China Standard Time)",
+  "timezone": "UTC+8（中國標準時間）",
   "description": "Xiamen, a coastal city in Fujian Province, is known as the '海上花園' (Garden on the Sea). With its blend of colonial architecture, traditional Minnan culture, and modern development, it offers a unique mix of East and West. The city features beautiful beaches, the UNESCO-listed Gulangyu Island, Buddhist temples, and world-class cuisine.",
   "coverImage": "/img/ext/d78a5158579e.webp",
   "highlights": [
-    "Gulangyu Island - UNESCO World Heritage colonial island",
-    "Nanputuo Temple - Sacred Buddhist mountain temple",
-    "Xiamen University - China's most beautiful campus",
-    "Huandao Road - Scenic coastal boulevard",
-    "Zhongshan Road - Historic shopping street"
+    "鼓浪嶼 - 聯合國教科文組織世界遺產殖民島嶼",
+    "南普陀寺 - 神聖的佛教山寺",
+    "廈門大學 - 中國最美麗的校園",
+    "環島路－風景優美的濱海大道",
+    "中山路－歷史悠久的購物街"
   ],
   "climate": {
-    "type": "Subtropical Maritime",
+    "type": "亞熱帶海洋性",
     "bestMonths": [
-      "October",
-      "November",
-      "March",
-      "April",
-      "May"
+      "十月",
+      "十一月",
+      "三月",
+      "四月",
+      "五月"
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "13C (55F)",
-    "tips": "Best visited in spring (March-May) or autumn (October-November) for pleasant weather. Summers are hot and humid with frequent typhoons. Winters are mild but can be rainy. Bring rain gear year-round and sunscreen in summer."
+    "tips": "最佳旅遊季節為春季（3月至5月）或秋季（10月至11月），天氣宜人。夏季炎熱潮濕，常有颱風。冬季溫和但多雨。全年請攜帶雨具，夏季請塗防曬。"
   },
   "attractions": [
     {
@@ -45,7 +45,7 @@
         "lng": 118.0719
       },
       "openingHours": "全天開放（渡輪07:10-17:30）",
-      "ticketPrice": "Free (ferry 35-50¥ round trip, attractions separate)",
+      "ticketPrice": "免費（渡輪來回35-50元，景點另計）",
       "recommendedVisitTime": "4-5小時",
       "highlights": [
         "鋼琴博物館",
@@ -69,7 +69,7 @@
         "lng": 118.0937
       },
       "openingHours": "03:00-18:00（寺廟），08:30-17:00（山區）",
-      "ticketPrice": "Free (mountain 10¥)",
+      "ticketPrice": "免費（山上10元）",
       "recommendedVisitTime": "2-3小時",
       "highlights": [
         "大雄寶殿",
@@ -261,8 +261,8 @@
         "lng": 118.0685
       },
       "openingHours": "08:15-17:00",
-      "ticketPrice": "Included in Shuzhuang Garden ticket (30¥)",
-      "recommendedVisitTime": "45 minutes",
+      "ticketPrice": "已包含在菽莊花園門票內（30元）",
+      "recommendedVisitTime": "45分鐘",
       "highlights": [
         "古董鋼琴收藏",
         "自動鋼琴演奏",
@@ -303,7 +303,7 @@
       "category": "cultural",
       "image": "/img/ext/7dbb581cac0d.webp",
       "description": "一座美麗的海濱花園，擁有傳統的中式建築、鋼琴博物館和壯麗的海岸景色。由一位富有的臺灣商人於1913年建造。",
-      "address": "Gulangyu Island",
+      "address": "鼓浪嶼",
       "coordinates": {
         "lat": 24.4435,
         "lng": 118.0685
@@ -1268,11 +1268,11 @@
       "dishHighlights": [
         "佛跳牆",
         "廈門風格龍蝦",
-        "Seafood congee"
+        "海鮮粥"
       ],
       "tags": [
         "黑珍珠",
-        "minnan",
+        "閩南",
         "海鮮"
       ],
       "star": 0,
@@ -1297,7 +1297,7 @@
       "description": "一鑽素食餐廳，使用自家農場的有機食材。餐點以佛教理念為靈感。",
       "dishHighlights": [
         "素食佛跳牆",
-        "Lotus leaf rice",
+        "荷葉飯",
         "蘑菇火鍋"
       ],
       "tags": [
@@ -1327,7 +1327,7 @@
       "description": "一鑽粵菜餐廳，以正宗的點心和優質的海鮮菜餚而聞名。",
       "dishHighlights": [
         "蒸蝦餃",
-        "Roasted suckling pig",
+        "烤乳豬",
         "燴海參"
       ],
       "tags": [
@@ -1357,7 +1357,7 @@
       "dishHighlights": [
         "花生湯",
         "蠔仔煎",
-        "Seafood noodles",
+        "海鮮麵",
         "糯米卷"
       ],
       "tags": [
@@ -1389,7 +1389,7 @@
         "炸魷魚",
         "清蒸蛤蜊",
         "廈門風味蟹",
-        "Salt and pepper shrimp"
+        "椒鹽蝦"
       ],
       "tags": [
         "海鮮",
@@ -1405,7 +1405,7 @@
       "name": "xm-shaxian",
       "nameEn": "沙縣小吃",
       "type": "本地",
-      "cuisine": "Fujian Snacks",
+      "cuisine": "福建小吃",
       "avgPrice": 50,
       "rating": 4.4,
       "address": "沙坡尾，靠近漁港",
@@ -1418,14 +1418,14 @@
       "description": "著名的傳統福建小吃店，以沙茶麵和各種閩南小吃聞名。",
       "dishHighlights": [
         "沙茶麵",
-        "Sea worm jelly",
+        "土筍凍",
         "肉燕",
-        "Taro balls"
+        "芋圓"
       ],
       "tags": [
         "當地",
         "小吃",
-        "cheap-eats"
+        "平價美食"
       ],
       "star": 0,
       "diamond": 0,
@@ -1478,7 +1478,7 @@
       "hours": "10:30-21:30",
       "description": "專營傳統薑母鴨（薑母鴨）以及各種鴨肉料理的特色鴨肉餐廳。",
       "dishHighlights": [
-        "Ginger duck",
+        "薑母鴨",
         "鴨血湯",
         "辣鴨脖"
       ],
@@ -1541,12 +1541,12 @@
       "dishHighlights": [
         "牛肉內臟麵",
         "豬腳飯",
-        "Spring rolls"
+        "春捲"
       ],
       "tags": [
         "當地",
         "麵食",
-        "cheap-eats"
+        "平價美食"
       ],
       "star": 0,
       "diamond": 0,
@@ -1632,12 +1632,12 @@
       "dishHighlights": [
         "佛跳牆火鍋",
         "炒蔬菜",
-        "Rice with toppings"
+        "蓋飯"
       ],
       "tags": [
         "當地",
         "素食",
-        "near-temple"
+        "寺廟附近"
       ],
       "star": 0,
       "diamond": 0,
@@ -1661,14 +1661,14 @@
       "description": "自1920年代以來在騎樓建築中提供傳統閩南菜的知名餐廳。",
       "dishHighlights": [
         "蠔仔煎",
-        "Spring rolls",
+        "春捲",
         "紅燒五花肉",
-        "Seafood congee"
+        "海鮮粥"
       ],
       "tags": [
         "歷史",
-        "minnan",
-        "central"
+        "閩南",
+        "市中心"
       ],
       "star": 0,
       "diamond": 0,
@@ -1802,7 +1802,7 @@
       "name": "xm-baocheng",
       "nameEn": "寶成",
       "type": "本地",
-      "cuisine": "Dim Sum",
+      "cuisine": "點心",
       "avgPrice": 70,
       "rating": 4.3,
       "address": "集美學村",
@@ -1845,7 +1845,7 @@
       "hours": "06:00-15:00",
       "description": "以正宗土筍凍（海蟲凍凍）和其它傳統小吃而聞名。",
       "dishHighlights": [
-        "Sea worm jelly",
+        "土筍凍",
         "蠔仔麵線",
         "豬肉米線",
         "炸芋頭"
@@ -1907,9 +1907,9 @@
       "hours": "09:00-22:00",
       "description": "以漳州正宗土筍凍聞名的本地著名店家。",
       "dishHighlights": [
-        "Sea worm jelly",
+        "土筍凍",
         "蠔仔煎",
-        "Spring rolls",
+        "春捲",
         "仙草凍"
       ],
       "tags": [
@@ -1941,7 +1941,7 @@
         "烤串",
         "炒米粉",
         "臭豆腐",
-        "Bubble tea"
+        "珍珠奶茶"
       ],
       "tags": [
         "夜市",
@@ -2693,7 +2693,7 @@
         "type": "train",
         "from": "福州（1.5小時）、泉州（1小時）、漳州（30分鐘）",
         "to": "廈門站／廈門北站",
-        "duration": "30min-1.5 hours",
+        "duration": "30分鐘至1.5小時",
         "price": "50-150¥",
         "frequency": "每日多班高鐵",
         "tips": "廈門北站為高鐵站。廈門站距離市中心較近。請透過12306應用程式訂票。"
@@ -2702,7 +2702,7 @@
         "type": "train",
         "from": "上海（6小時）、深圳（3小時）、杭州（4小時）",
         "to": "廈門北站",
-        "duration": "3-6 hours",
+        "duration": "3至6小時",
         "price": "200-500¥",
         "frequency": "每日多班次發車",
         "tips": "高鐵舒適，沿海風景優美。選右側座位可欣賞海景。"
@@ -2727,7 +2727,7 @@
       ],
       "taxi": [
         "起跳價：10元（前3公裡）",
-        "Waiting: 0.5¥ per minute",
+        "等候：每分鐘0.5元人民幣",
         "夜間加成：加收10%（23:00-06:00）",
         "務必堅持按錶計費",
         "建議使用滴滴出行App - 提供英文介面",
@@ -2747,7 +2747,7 @@
       "name": "廈門安達仕酒店",
       "nameEn": "Andaz Xiamen",
       "budget": "luxury",
-      "priceRange": "¥1500-3000/night",
+      "priceRange": "每晚1500-3000元人民幣",
       "address": "思明區鷺江道88號",
       "coordinates": {
         "lat": 24.4558,
@@ -2760,13 +2760,13 @@
         "中心位置",
         "屋頂酒吧"
       ],
-      "bookingTips": "Book direct for best rates. Weekend packages available. Sea-view rooms worth the premium."
+      "bookingTips": "直接預訂享最優房價。週末套裝方案可供選擇。海景房值得加價入住。"
     },
     {
       "name": "廈門華爾道夫酒店",
       "nameEn": "Waldorf Astoria Xiamen",
       "budget": "luxury",
-      "priceRange": "¥2000-4000/night",
+      "priceRange": "每晚2000-4000元人民幣",
       "address": "思明區鷺江道16號",
       "coordinates": {
         "lat": 24.4552,
@@ -2779,13 +2779,13 @@
         "管家服務",
         "絕佳濱海位置"
       ],
-      "bookingTips": "Book 2+ weeks ahead for best availability. Consider breakfast-inclusive packages."
+      "bookingTips": "提前2週以上預訂以確保有空房。可考慮含早餐的套裝方案。"
     },
     {
       "name": "廈門康萊德酒店",
       "nameEn": "Conrad Xiamen",
       "budget": "luxury",
-      "priceRange": "¥1200-2500/night",
+      "priceRange": "每晚1200-2500元人民幣",
       "address": "思明區嘉禾路188號",
       "coordinates": {
         "lat": 24.4612,
@@ -2798,13 +2798,13 @@
         "豐盛早餐",
         "鄰近湖濱路"
       ],
-      "bookingTips": "Request high floor for best views. Hotel buffet is excellent. Good value at weekends."
+      "bookingTips": "要求高樓層以享最佳景觀。飯店自助餐相當出色。週末入住性價比高。"
     },
     {
       "name": "廈門香格裡拉大酒店",
       "nameEn": "Shangri-La Xiamen",
       "budget": "luxury",
-      "priceRange": "¥1000-2000/night",
+      "priceRange": "每晚1000-2000元人民幣",
       "address": "思明區鷺江路84號",
       "coordinates": {
         "lat": 24.4555,
@@ -2817,13 +2817,13 @@
         "靠近渡輪碼頭",
         "寬敞客房"
       ],
-      "bookingTips": "Club rooms offer good value with benefits. Ask for renovated rooms."
+      "bookingTips": "俱樂部房含多項禮遇，物超所值。可要求入住翻新後的客房。"
     },
     {
       "name": "廈門海景千禧大酒店",
       "nameEn": "Millennium Harbourview Hotel Xiamen",
       "budget": "mid",
-      "priceRange": "¥600-1200/night",
+      "priceRange": "每晚600-1200元",
       "address": "思明區鷺江路12號",
       "coordinates": {
         "lat": 24.4558,
@@ -2836,13 +2836,13 @@
         "早餐豐盛",
         "步行可達景點"
       ],
-      "bookingTips": "Seaview rooms recommended. Book on travel platforms for discounts."
+      "bookingTips": "推薦海景房。可於旅遊平台預訂享折扣。"
     },
     {
       "name": "廈門牡丹萬鵬賓館",
       "nameEn": "Peony Wanpeng Hotel",
       "budget": "mid",
-      "priceRange": "¥400-800/night",
+      "priceRange": "每晚400至800元人民幣",
       "address": "思明區鷺江路17號",
       "coordinates": {
         "lat": 24.4552,
@@ -2855,13 +2855,13 @@
         "客房舒適",
         "中式餐廳"
       ],
-      "bookingTips": "Best location for shopping and sightseeing. Check packages for breakfast."
+      "bookingTips": "購物與觀光的最佳地點。請查看含早餐的套裝方案。"
     },
     {
       "name": "廈門京閩中心酒店",
       "nameEn": "Jingmin Central Hotel",
       "budget": "mid",
-      "priceRange": "¥400-700/night",
+      "priceRange": "每晚400-700元人民幣",
       "address": "思明區湖濱南路68號",
       "coordinates": {
         "lat": 24.4512,
@@ -2874,13 +2874,13 @@
         "多家餐廳",
         "地鐵交通便利"
       ],
-      "bookingTips": "Weekend rates significantly lower. Good for business travelers."
+      "bookingTips": "週末房價明顯較低。適合商務旅客。"
     },
     {
       "name": "廈門航空金雁酒店",
       "nameEn": "Xiamen Air Galaxy Hotel",
       "budget": "mid",
-      "priceRange": "¥350-600/night",
+      "priceRange": "每晚350-600元人民幣",
       "address": "思明區鷺江路84號",
       "coordinates": {
         "lat": 24.4548,
@@ -2893,13 +2893,13 @@
         "舒適床鋪",
         "物超所值"
       ],
-      "bookingTips": "Great for early flights. Free airport transfer. Request quiet rooms."
+      "bookingTips": "適合早班機。提供免費機場接送。可要求安靜的房間。"
     },
     {
       "name": "廈門鷺江賓館",
       "nameEn": "Lujiang Hotel",
       "budget": "mid",
-      "priceRange": "¥300-600/night",
+      "priceRange": "每晚300-600元人民幣",
       "address": "思明區鷺江路23號",
       "coordinates": {
         "lat": 24.4562,
@@ -2912,13 +2912,13 @@
         "傳統裝飾",
         "服務良好"
       ],
-      "bookingTips": "Book historical wing for unique experience. Walking distance to ferry."
+      "bookingTips": "預訂歷史翼樓可享獨特體驗。步行可達渡輪碼頭。"
     },
     {
       "name": "廈門華僑大廈",
       "nameEn": "Overseas Chinese Hotel",
       "budget": "budget",
-      "priceRange": "¥200-400/night",
+      "priceRange": "每晚200-400元人民幣",
       "address": "思明區鷺江路1-6號",
       "coordinates": {
         "lat": 24.4565,
@@ -2931,13 +2931,13 @@
         "基本設施",
         "靠近景點"
       ],
-      "bookingTips": "Best value in prime location. Simple but clean rooms. No views but great location."
+      "bookingTips": "黃金地段的最佳價值。房間簡單但乾淨。沒有景觀但位置極佳。"
     },
     {
       "name": "廈門七鬥星商旅酒店",
       "nameEn": "Seven Star Business Hotel",
       "budget": "budget",
-      "priceRange": "¥150-350/night",
+      "priceRange": "每晚150至350元人民幣",
       "address": "思明區湖濱南路158號",
       "coordinates": {
         "lat": 24.4505,
@@ -2950,13 +2950,13 @@
         "免費早餐",
         "現代裝潢"
       ],
-      "bookingTips": "Breakfast included makes great value. Good metro connections. Clean and functional."
+      "bookingTips": "含早餐讓CP值很高。地鐵交通便利。乾淨且機能完善。"
     },
     {
       "name": "廈門如家酒店",
       "nameEn": "Home Inn Plus",
       "budget": "budget",
-      "priceRange": "¥120-250/night",
+      "priceRange": "每晚120-250元人民幣",
       "address": "思明區思明路35-1號",
       "coordinates": {
         "lat": 24.4475,
@@ -2969,13 +2969,13 @@
         "標準一致",
         "服務良好"
       ],
-      "bookingTips": "Reliable chain with consistent quality. Book ahead during holidays."
+      "bookingTips": "品質穩定的連鎖品牌。假期期間請提前預訂。"
     },
     {
       "name": "鼓浪嶼紅堂酒店",
       "nameEn": "Red Hall Hotel Gulangyu",
       "budget": "mid",
-      "priceRange": "¥500-900/night",
+      "priceRange": "每晚500-900元人民幣",
       "address": "鼓浪嶼，鄰近菽莊花園",
       "coordinates": {
         "lat": 24.4438,
@@ -2988,13 +2988,13 @@
         "花園環境",
         "位置安靜"
       ],
-      "bookingTips": "Book early - only hotel on Gulangyu with character. Stay on island for sunrise access."
+      "bookingTips": "請提早預訂——這是鼓浪嶼上唯一有特色的飯店。住在島上可欣賞日出。"
     },
     {
       "name": "鼓浪嶼磐石酒店",
       "nameEn": "Panshi Hotel Gulangyu",
       "budget": "luxury",
-      "priceRange": "¥800-1500/night",
+      "priceRange": "每晚800-1500元人民幣",
       "address": "鼓浪嶼，鄰近日光巖",
       "coordinates": {
         "lat": 24.4468,
@@ -3007,13 +3007,13 @@
         "餐廳優質",
         "鄰近景點"
       ],
-      "bookingTips": "Best location on Gulangyu for first-time visitors. Reserve seaview rooms."
+      "bookingTips": "首次造訪鼓浪嶼的最佳住宿地點。請預訂海景房。"
     },
     {
       "name": "集美湖酒店",
       "nameEn": "Jimei Lake Hotel",
       "budget": "mid",
-      "priceRange": "¥300-600/night",
+      "priceRange": "每晚300-600元人民幣",
       "address": "集美區，鄰近誠毅公園",
       "coordinates": {
         "lat": 24.4375,
@@ -3026,13 +3026,13 @@
         "設施新穎",
         "適合家庭"
       ],
-      "bookingTips": "Best for exploring Jimei area. Good restaurant. Free parking."
+      "bookingTips": "探索集美區的最佳選擇。餐廳不錯。免費停車。"
     },
     {
       "name": "廈門海滄希爾頓花園酒店",
       "nameEn": "Hilton Garden Inn Xiamen Haicang",
       "budget": "mid",
-      "priceRange": "¥350-650/night",
+      "priceRange": "每晚350至650元人民幣",
       "address": "海滄區海滄大道68號",
       "coordinates": {
         "lat": 24.4595,
@@ -3045,13 +3045,13 @@
         "早餐豐盛",
         "物超所值"
       ],
-      "bookingTips": "Great for business travelers. Clean and comfortable. Free WiFi. Good location."
+      "bookingTips": "商務旅客的理想之選。乾淨舒適。免費WiFi。地理位置優越。"
     },
     {
       "name": "廈門國際會議中心酒店",
       "nameEn": "Xiamen International Conference Hotel",
       "budget": "luxury",
-      "priceRange": "¥800-1500/night",
+      "priceRange": "每晚800-1500元人民幣",
       "address": "思明區鷺林路110號",
       "coordinates": {
         "lat": 24.4635,
@@ -3064,7 +3064,7 @@
         "豪華水療",
         "多間餐廳"
       ],
-      "bookingTips": "Book sea-view rooms. Great for MICE travelers. Excellent service. Beautiful grounds."
+      "bookingTips": "請預訂海景房。適合會展旅遊旅客。服務一流。環境優美。"
     }
   ],
   "payment": [
@@ -3090,7 +3090,7 @@
       "icon": "wechat",
       "description": "第二受歡迎的支付方式，整合於社交應用程式中",
       "howToUse": [
-        "WeChat app required",
+        "需使用微信應用程式",
         "透過微信支付綁定國際卡",
         "掃描QR碼在商家付款",
         "用於小額購買和小費"
@@ -3170,14 +3170,14 @@
   "culturalTips": [
     {
       "category": "greeting",
-      "title": "Min Nan Dialect Greetings",
+      "title": "閩南語問候語",
       "content": "Learn a few閩南話 phrases: 'Li ho' (hello), 'Zuo zai' (thank you), 'Cheh beh' (not good). Locals appreciate the effort even if pronunciation isn't perfect.",
       "importance": "medium"
     },
     {
       "category": "dining",
-      "title": "Seafood Ordering Etiquette",
-      "content": "At seafood restaurants, prices are often 'per jin' (500g). Confirm total price before ordering. Watch the scale when selecting live seafood. Don't hesitate to negotiate at wet markets.",
+      "title": "海鮮點餐禮儀",
+      "content": "在海鮮餐廳，價格常以「斤」（500公克）計價。點餐前請確認總價。挑選活海鮮時請注意秤重。在傳統市場別猶豫，可以議價。",
       "importance": "high"
     },
     {
@@ -3188,104 +3188,104 @@
     },
     {
       "category": "dining",
-      "title": "Chopstick customs",
-      "content": "Don't stick chopsticks vertically in rice - it resembles incense for the dead. Don't point with chopsticks. Don't pass food directly from chopstick to chopstick.",
+      "title": "筷子使用禮儀",
+      "content": "不要將筷子直立在飯上，這會讓人聯想到祭拜亡者的香。不要用筷子指人。不要直接用筷子夾食物給他人。",
       "importance": "medium"
     },
     {
       "category": "social",
-      "title": "Gulangyu Island Courtesy",
-      "content": "Gulangyu is a residential island with many elderly residents. Keep noise levels down, especially near the piano museum and residential areas. No cars are allowed - respect the peaceful atmosphere.",
+      "title": "鼓浪嶼禮儀",
+      "content": "鼓浪嶼是住宅區島嶼，有許多年長居民。請降低音量，尤其是在鋼琴博物館和住宅區附近。島上禁止汽車通行，請尊重這份寧靜的氛圍。",
       "importance": "high"
     },
     {
       "category": "social",
-      "title": "Temple Respect",
-      "content": "At Nanputuo Temple, dress modestly covering shoulders and knees. Remove sunglasses and hats when entering halls. Don't take photos where prohibited. Walk clockwise around Buddhist halls.",
+      "title": "寺廟尊重",
+      "content": "在南普陀寺，請穿著得體，遮蓋肩膀和膝蓋。進入殿堂時請摘下太陽眼鏡和帽子。請勿在禁止拍照的地方拍照。繞行佛殿時請順時針方向行走。",
       "importance": "high"
     },
     {
       "category": "photography",
-      "title": "Photography at Fishing Harbor",
-      "content": "At Shapowei and fishing harbors, ask before photographing fishermen or their catches. Some may ask for small payment (5-10¥) for photos of them or their boats.",
+      "title": "漁港攝影",
+      "content": "在沙坡尾和漁港，拍攝漁民或他們的漁獲前請先詢問。有些人可能會要求小額費用（5-10元）才允許拍攝他們或他們的船隻。",
       "importance": "low"
     },
     {
       "category": "photography",
-      "title": "Sunrise and Sunset Etiquette",
-      "content": "Popular sunrise spots (Huandao Road, Gulangyu) get crowded. Don't block others' views or set up tripods for long periods. Be mindful of passing cyclists on Huandao Road.",
+      "title": "日出與日落禮儀",
+      "content": "熱門日出景點（環島路、鼓浪嶼）人潮眾多。請勿擋住他人視線，或長時間架設腳架。在環島路請留意往來的自行車騎士。",
       "importance": "medium"
     },
     {
       "category": "shopping",
-      "title": "Bargaining in Xiamen",
-      "content": "Bargaining expected at Zhongshan Road stalls, Zengcuo'an shops, and markets. Start at 40-50% of asking price. Be friendly - it's part of the experience. Walk away if you can't agree.",
+      "title": "廈門殺價",
+      "content": "在中山路攤位、曾厝垵商店和市場，殺價是預期中的行為。從開價的40-50%開始殺。保持友善——這是體驗的一部分。如果無法達成共識，可以走開。",
       "importance": "medium"
     },
     {
       "category": "shopping",
-      "title": "Local Products to Buy",
+      "title": "推薦購買的當地特產",
       "content": "Famous Xiamen products:桂圓乾 (dried longan), 金門高粱酒 (Kinmen Kaoliang wine), 閩南特產 (Minnan specialties), 茶葉 (tea), 餡餅 (pastries). Buy from reputable shops near Zhongshan Road.",
       "importance": "low"
     },
     {
       "category": "social",
-      "title": "Beach Culture",
-      "content": "Xiamen beaches (Hulhi Beach, Jimei Beach) can get crowded. Don't swim at unguarded beaches. Watch for jellyfish in summer. Clean up after yourself.",
+      "title": "海灘文化",
+      "content": "廈門海灘（黃厝海灘、集美海灘）可能人潮眾多。請勿在無救生員的海灘游泳。夏季請留意水母。離開前請清理自己的垃圾。",
       "importance": "medium"
     },
     {
       "category": "social",
-      "title": "Respecting Elders",
-      "content": "In Minnan culture, show respect to elders by addressing them first, offering seats, and not starting eating before older people at the table.",
+      "title": "尊重長輩",
+      "content": "在閩南文化中，對長輩表達尊重的方式包括：先向他們打招呼、讓座，以及在餐桌上等長輩先開動。",
       "importance": "medium"
     },
     {
       "category": "photography",
-      "title": "University Etiquette",
-      "content": "When visiting Xiamen University, be respectful of students studying. Don't wander into classroom buildings. The campus is private property - follow all rules.",
+      "title": "校園禮儀",
+      "content": "參觀廈門大學時，請尊重正在唸書的學生。不要走進教室大樓。校園是私人財產，請遵守所有規定。",
       "importance": "medium"
     },
     {
       "category": "shopping",
-      "title": "Market haggling",
-      "content": "At local wet markets, prices are often fixed for locals but negotiable for tourists. Start lower, meet in middle. Bring small bills. Fresh seafood markets are open early morning.",
+      "title": "市場殺價",
+      "content": "在當地傳統市場，價格對當地人來說通常是固定的，但對觀光客則可以議價。從低價開始喊，再折衷成交。記得帶小面額鈔票。新鮮海鮮市場清晨就開門了。",
       "importance": "low"
     },
     {
       "category": "dining",
-      "title": "Tipping Culture",
-      "content": "Tipping is not expected or common in Xiamen. High-end restaurants may add service charge. Good service is considered standard - a small tip (10-20¥) for exceptional service at nice restaurants is appreciated.",
+      "title": "小費文化",
+      "content": "在廈門，給小費並非慣例或常見行為。高級餐廳可能會加收服務費。良好的服務被視為基本標準——若在好餐廳遇到特別出色的服務，給點小費（10-20元人民幣）會很受感謝。",
       "importance": "low"
     },
     {
       "category": "social",
-      "title": "Dancing in Parks",
+      "title": "公園跳舞",
       "content": "Early morning park dancing (廣場舞) is popular. Don't interrupt or photograph without permission. Some groups may welcome foreigners to join.",
       "importance": "low"
     },
     {
       "category": "dining",
-      "title": "Xiamen Snacks to Try",
+      "title": "廈門必嚐小吃",
       "content": "Must-try snacks: 土筍凍 (sea worm jelly), 沙茶麵 (satay noodles), 燒肉粽 (braised rice dumplings), 花生湯 (peanut soup), 餡餅 (pastries). Buy from local shops in Zhongshan Road or Zengcuo'an.",
       "importance": "high"
     },
     {
       "category": "social",
-      "title": "Gambling Culture",
-      "content": "Mahjong is popular social activity in Xiamen. You may hear mahjong tiles clicking in tea houses or parks. It's a social game, not gambling in the Western sense - tourists are welcome to watch or learn.",
+      "title": "賭博文化",
+      "content": "麻將是廈門常見的社交活動。你可能會在茶館或公園裡聽到麻將牌碰撞的聲音。這是一種社交遊戲，並非西方意義上的賭博——歡迎觀光客在旁觀看或學習。",
       "importance": "low"
     },
     {
       "category": "shopping",
-      "title": "Taiwan Products",
+      "title": "臺灣產品",
       "content": "Due to proximity to Taiwan, Xiamen has many Taiwan products: Kinmen Kaoliang wine, Taiwan pineapple cakes, dried seafood, and Taiwan-style snacks. Taiwan Commodity City (大嶝小鎮) offers duty-free shopping.",
       "importance": "medium"
     },
     {
       "category": "social",
-      "title": "Teahouse Etiquette",
-      "content": "Xiamen has many traditional teahouses. When receiving tea, tap two fingers on the table as thanks - this gesture shows respect to the host. Don't pour tea for yourself first; pour for others before yourself.",
+      "title": "茶館禮儀",
+      "content": "廈門有許多傳統茶館。接受奉茶時，以兩指輕敲桌面表示感謝——這個手勢表達對主人的尊重。不要先為自己倒茶；要先為別人倒茶，再倒自己的。",
       "importance": "medium"
     }
   ],
@@ -3458,6 +3458,6 @@
     "timeZone": "UTC+8 (北京時間)",
     "electricity": "220V/50Hz，A 型/I 型插頭",
     "water": "自來水可飲用但建議使用瓶裝水",
-    "bestTimeToVisit": "March-May for flowers, October-November for weather, avoid July-September for typhoons"
+    "bestTimeToVisit": "三月至五月賞花，十月至十一月氣候宜人，七月至九月請避開颱風季節"
   }
 }

@@ -180,6 +180,7 @@ for (const lang of [onlyLang || "ar"]) {
     const jaFields = walk(JSON.parse(fs.readFileSync(jaFile, "utf8")));
     for (const [p, v] of Object.entries(walk(target))) {
       if (p === "name" || p === "nameEn" || p.endsWith(".name") || p.endsWith(".nameEn") || p.endsWith(".category") || p.endsWith(".importance")) continue;
+      if (p.endsWith(".id") || p.endsWith(".slug") || p.endsWith(".image") || p.endsWith(".coverImage")) continue;
       if (p.includes("emergencyContacts")) continue;
       if (typeof v !== "string" || !/[A-Za-z]/.test(v)) continue;
       const enV = enFields[p];

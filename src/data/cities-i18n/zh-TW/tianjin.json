@@ -3,32 +3,32 @@
   "name": "天津",
   "nameEn": "Tianjin",
   "country": "China",
-  "population": "13.9 million",
+  "population": "1390萬",
   "coordinates": {
     "lat": 39.3434,
     "lng": 117.3616
   },
-  "timezone": "UTC+8 (China Standard Time)",
+  "timezone": "UTC+8（中國標準時間）",
   "description": "天津，一個繁華的港口城市，位於北京附近，將歐洲殖民建築與中國傳統文化完美融合。以古文化街、美食文化（如麻花和狗不理包子）以及壯觀的天津之眼摩天輪而聞名。",
   "coverImage": "/img/ext/3c81c7331bd2.webp",
   "highlights": [
     "天津之眼 - 巨型摩天輪",
-    "Ancient Culture Street - Traditional architecture",
-    "Five Great Avenues - European architecture",
+    "古文化街 - 傳統建築",
+    "五大道 - 歐式建築",
     "天津古文化街",
     "海河河畔"
   ],
   "climate": {
-    "type": "Humid continental climate",
+    "type": "濕潤大陸性氣候",
     "bestMonths": [
-      "April",
-      "May",
-      "September",
-      "October"
+      "四月",
+      "五月",
+      "九月",
+      "十月"
     ],
     "avgSummerTemp": "26°C (79°F)",
     "avgWinterTemp": "-2°C (28°F)",
-    "tips": "Best in spring and autumn. Summers hot and humid. Winters cold and dry. Spring brings sandstorms from Gobi Desert."
+    "tips": "春秋兩季最佳。夏季炎熱潮濕，冬季寒冷乾燥。春季會有來自戈壁沙漠的沙塵暴。"
   },
   "attractions": [
     {
@@ -493,7 +493,7 @@
       "nameEn": "Tianjin World Joy",
       "category": "entertainment",
       "description": "大型主題樂園，設有雲霄飛車及適合全家大小的遊樂設施。",
-      "address": "Beichen District",
+      "address": "北辰區",
       "coordinates": {
         "lat": 39.2222,
         "lng": 117.1622
@@ -541,7 +541,7 @@
       "nameEn": "Tianjin Eye at Night",
       "category": "landmark",
       "description": "欣賞摩天輪與河岸燈光璀璨的壯觀夜景。",
-      "address": "Hebei District",
+      "address": "河北區",
       "coordinates": {
         "lat": 39.3622,
         "lng": 117.1822
@@ -1221,8 +1221,8 @@
       "hours": "06:00-20:00",
       "description": "自1858年以來聞名的傳奇包子店，以皮薄多汁的包子著稱。",
       "dishHighlights": [
-        "Pork baozi",
-        "Seafood baozi",
+        "豬肉包子",
+        "海鮮包子",
         "蔬菜包子"
       ],
       "tags": [
@@ -1238,7 +1238,7 @@
       "name": "耳朵眼炸糕",
       "nameEn": "Erduoyan Fried Cake",
       "type": "本地",
-      "cuisine": "Tianjin Snacks",
+      "cuisine": "天津小吃",
       "avgPrice": 20,
       "rating": 4.6,
       "address": "河北區南市門2號",
@@ -1249,8 +1249,8 @@
       "hours": "08:00-20:00",
       "description": "以酥脆的紅豆炸糕聞名，是自1905年以來的天津特產。",
       "dishHighlights": [
-        "Red bean fried cake",
-        "Sweet rice cake",
+        "紅豆炸糕",
+        "甜年糕",
         "桂花糕"
       ],
       "tags": [
@@ -1267,7 +1267,7 @@
       "name": "十八街麻花",
       "nameEn": "Shibajie Mahua",
       "type": "本地",
-      "cuisine": "Tianjin Snacks",
+      "cuisine": "天津小吃",
       "avgPrice": 40,
       "rating": 4.7,
       "address": "多個地點",
@@ -1279,9 +1279,9 @@
       "hours": "08:00-21:00",
       "description": "標誌性的天津麻花狀炸麵點，酥脆不油膩。",
       "dishHighlights": [
-        "Mahua (fried dough)",
-        "Mixed nuts",
-        "Preserved fruits"
+        "麻花（炸麵團）",
+        "綜合堅果",
+        "蜜餞"
       ],
       "tags": [
         "當地",
@@ -1309,12 +1309,12 @@
       "description": "高級餐廳，提供精緻的天津菜，氛圍優雅。",
       "dishHighlights": [
         "紅燒大蝦",
-        "Whole steamed fish",
-        "Tianjin-style squid"
+        "全魚清蒸",
+        "天津風味魷魚"
       ],
       "tags": [
         "精緻餐飲",
-        "tianjin-cuisine",
+        "天津菜",
         "特殊場合"
       ],
       "imageUrl": "/img/ext/2ad92b97c0ec.webp"
@@ -1336,13 +1336,13 @@
       "hours": "10:30-21:30",
       "description": "歷史悠久的天津餐廳，以傳統地方菜餚聞名。",
       "dishHighlights": [
-        "Eight-delight chicken",
+        "八寶雞",
         "紅燒五花肉",
-        "Fried dough twists"
+        "炸麻花"
       ],
       "tags": [
         "當地",
-        "tianjin-cuisine",
+        "天津菜",
         "歷史",
         "傳統"
       ],
@@ -1364,9 +1364,9 @@
       "hours": "09:00-18:00",
       "description": "傳統餐廳，以著名的帽子形糕點聞名。",
       "dishHighlights": [
-        "Hat-shaped pastries",
+        "帽子形糕點",
         "傳統天津小吃",
-        "Congee"
+        "粥"
       ],
       "tags": [
         "當地",
@@ -1382,7 +1382,7 @@
       "name": "石頭門坎",
       "nameEn": "Shitou Menkan",
       "type": "本地",
-      "cuisine": "Tianjin Vegetarian",
+      "cuisine": "天津素食",
       "avgPrice": 50,
       "rating": 4.5,
       "address": "古文化街天后宮附近",
@@ -1393,7 +1393,7 @@
       "hours": "10:00-20:00",
       "description": "寺廟附近著名的素食餐廳，以仿葷菜餚聞名。",
       "dishHighlights": [
-        "Vegetarian meat",
+        "素肉",
         "素齋",
         "蔬菜卷"
       ],
@@ -1401,7 +1401,7 @@
         "當地",
         "素食",
         "佛教",
-        "temple-area"
+        "寺廟區"
       ],
       "imageUrl": "/img/ext/4594fef09610.webp",
       "phone": "+86 022  8846 0434"
@@ -1425,7 +1425,7 @@
       "dishHighlights": [
         "烤鴨",
         "煎餅",
-        "Cucumber and scallion"
+        "黃瓜與青蔥"
       ],
       "tags": [
         "精緻餐飲",
@@ -1439,7 +1439,7 @@
       "name": "起士林",
       "nameEn": "Shiqilin",
       "type": "精緻",
-      "cuisine": "Russian/Tianjin Fusion",
+      "cuisine": "俄式天津融合料理",
       "avgPrice": 150,
       "rating": 4.5,
       "address": "和平區雲南路33號",
@@ -1451,9 +1451,9 @@
       "hours": "11:00-14:00, 17:00-21:00",
       "description": "具有俄羅斯影響的歷史悠久的餐廳，提供融合菜餚。",
       "dishHighlights": [
-        "Russian-style dishes",
-        "Western pastries",
-        "Tianjin classics"
+        "俄式菜餚",
+        "西式糕點",
+        "天津經典"
       ],
       "tags": [
         "精緻餐飲",
@@ -1468,10 +1468,10 @@
       "name": "崩豆張",
       "nameEn": "Bengdou Zhang",
       "type": "本地",
-      "cuisine": "Tianjin Snacks",
+      "cuisine": "天津小吃",
       "avgPrice": 30,
       "rating": 4.4,
-      "address": "Nanshi Gate area",
+      "address": "南市門地區",
       "coordinates": {
         "lat": 39.1522,
         "lng": 117.1922
@@ -1479,9 +1479,9 @@
       "hours": "09:00-19:00",
       "description": "以脆皮黃豆和堅果聞名，是傳統天津小吃。",
       "dishHighlights": [
-        "Crispy soybeans",
-        "Fried beans",
-        "Mixed nuts"
+        "脆皮黃豆",
+        "炒豆子",
+        "綜合堅果"
       ],
       "tags": [
         "當地",
@@ -1511,7 +1511,7 @@
       "dishHighlights": [
         "羊肉片",
         "蔬菜",
-        "Sesame paste"
+        "芝麻醬"
       ],
       "tags": [
         "當地",
@@ -1558,7 +1558,7 @@
       "cuisine": "多元料理",
       "avgPrice": 30,
       "rating": 4.3,
-      "address": "Ancient Culture Street",
+      "address": "古文化街",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.2022
@@ -1598,13 +1598,13 @@
       "dishHighlights": [
         "蒸螃蟹",
         "鹽蝦",
-        "Fried fish"
+        "炸魚"
       ],
       "tags": [
         "當地",
         "海鮮",
         "新鮮",
-        "local-catch"
+        "當地漁獲"
       ],
       "imageUrl": "/img/ext/b6df8acd446d.webp"
     },
@@ -1645,7 +1645,7 @@
       "cuisine": "Tianjin",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Nanshi Gate area",
+      "address": "南市門地區",
       "coordinates": {
         "lat": 39.1522,
         "lng": 117.1922
@@ -1653,13 +1653,13 @@
       "hours": "11:00-21:00",
       "description": "以砂鍋料理和濃鬱湯品聞名。",
       "dishHighlights": [
-        "Sandpot chicken",
-        "Braised meatballs",
-        "Hot and sour soup"
+        "砂鍋雞",
+        "紅燒獅子頭",
+        "酸辣湯"
       ],
       "tags": [
         "當地",
-        "tianjin-cuisine",
+        "天津菜",
         "傳統",
         "湯"
       ],
@@ -1683,13 +1683,13 @@
       "description": "以家常天津菜聞名的當地人最愛。",
       "dishHighlights": [
         "紅燒五花肉",
-        "Fried fish",
-        " Stir-fried vegetables"
+        "炸魚",
+        "炒時蔬"
       ],
       "tags": [
         "當地",
         "家常",
-        "tianjin-cuisine",
+        "天津菜",
         "超值"
       ],
       "imageUrl": "/img/ext/51b76c1605be.webp",
@@ -1711,13 +1711,13 @@
       "hours": "09:00-22:00",
       "description": "歷史悠久的食品街，有多家餐廳和小吃店。",
       "dishHighlights": [
-        "Various dumplings",
-        "Tianjin snacks",
+        "各式水餃",
+        "天津小吃",
         "當地菜餚"
       ],
       "tags": [
         "當地",
-        "food-street",
+        "美食街",
         "小吃",
         "多樣"
       ],
@@ -1741,13 +1741,13 @@
       "hours": "11:00-22:00",
       "description": "供應傳統天津菜並帶有復古裝潢的餐廳。",
       "dishHighlights": [
-        "Goubuli baozi",
-        "Fried dough twists",
-        "Tianjin classics"
+        "狗不理包子",
+        "炸麻花",
+        "天津經典"
       ],
       "tags": [
         "當地",
-        "tianjin-cuisine",
+        "天津菜",
         "傳統",
         "歷史"
       ],
@@ -1758,7 +1758,7 @@
       "name": "利順德大飯店",
       "nameEn": "Astor Hotel",
       "type": "精緻",
-      "cuisine": "Western/Tianjin Fusion",
+      "cuisine": "西式／天津融合料理",
       "avgPrice": 300,
       "rating": 4.7,
       "address": "和平區唐吉路33號",
@@ -1771,8 +1771,8 @@
       "description": "歷史悠久的豪華酒店餐廳，具有殖民氛圍和優質食物。",
       "dishHighlights": [
         "西式早餐",
-        "Tianjin afternoon tea",
-        "International cuisine"
+        "天津下午茶",
+        "異國料理"
       ],
       "tags": [
         "精緻餐飲",
@@ -1827,13 +1827,13 @@
       "hours": "17:00-03:00",
       "description": "以海鮮粥和深夜食堂聞名。",
       "dishHighlights": [
-        "Seafood congee",
+        "海鮮粥",
         "蒸排骨",
         "潮汕菜"
       ],
       "tags": [
         "當地",
-        "congee",
+        "粥",
         "宵夜",
         "海鮮"
       ],
@@ -1845,7 +1845,7 @@
       "name": "粥世家",
       "nameEn": "Congee Family",
       "type": "本地",
-      "cuisine": "Congee",
+      "cuisine": "粥",
       "avgPrice": 50,
       "rating": 4.4,
       "address": "多個地點",
@@ -1863,7 +1863,7 @@
       "tags": [
         "當地",
         "早餐",
-        "congee",
+        "粥",
         "經濟實惠"
       ],
       "imageUrl": "/img/ext/2bb55ee76f1d.webp",
@@ -1877,7 +1877,7 @@
       "cuisine": "火鍋",
       "avgPrice": 100,
       "rating": 4.4,
-      "address": "Hebei District",
+      "address": "河北區",
       "coordinates": {
         "lat": 39.1422,
         "lng": 117.1922
@@ -1915,14 +1915,14 @@
       "description": "以塘沽北塘漁村的新鮮海獲聞名。",
       "dishHighlights": [
         "蒸螃蟹",
-        "Salt and pepper shrimp",
-        "Fried fish"
+        "椒鹽蝦",
+        "炸魚"
       ],
       "tags": [
         "當地",
         "海鮮",
         "新鮮",
-        "village-style"
+        "鄉村風格"
       ],
       "imageUrl": "/img/ext/9a4e85e8d9f7.webp",
       "phone": "+86 022  9534 0372"
@@ -2657,7 +2657,7 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major Chinese cities",
+        "from": "中國主要城市",
         "to": "天津濱海國際機場（TSN）",
         "duration": "從大多數主要城市出發需2-3小時",
         "price": "500-1500¥",
@@ -2668,7 +2668,7 @@
         "type": "train",
         "from": "北京（30分鐘）、上海（4小時）、石家莊（2小時）",
         "to": "天津站／天津西站",
-        "duration": "30 min - 4 hours",
+        "duration": "30分鐘至4小時",
         "price": "50-500¥",
         "frequency": "高鐵班次密集",
         "tips": "京津高鐵非常方便（30分鐘）。兩個車站都有地鐵接駁。"
@@ -2676,27 +2676,27 @@
     ],
     "local": {
       "metro": [
-        "10 lines operational",
-        "Single ride: 2-8¥",
+        "10條營運路線",
+        "單程票：2-8元人民幣",
         "連接主要旅遊景點",
         "2號、3號線可達大部分景點"
       ],
       "bus": [
-        "Extensive network",
-        "Single ride: 2¥",
+        "路網綿密",
+        "單程票：2元",
         "旅遊區交通便利",
-        "Mobile payment supported"
+        "支援行動支付"
       ],
       "taxi": [
         "起跳價：11元（前3公裡）",
-        "Most attractions 20-50¥",
-        "Didi app recommended",
+        "多數景點20-50元",
+        "建議使用滴滴出行應用程式",
         "夜間加成：加收20%"
       ],
       "bike": [
         "有摩拜單車、美團單車",
         "解鎖：1元，之後每30分鐘0.5-1元",
-        "Good for short trips",
+        "適合短途旅行",
         "河畔步道很適合騎自行車"
       ]
     }
@@ -2706,7 +2706,7 @@
       "name": "天津利順德大飯店",
       "nameEn": "The Astor Hotel Tianjin",
       "budget": "luxury",
-      "priceRange": "¥800-2000/night",
+      "priceRange": "每晚800至2000元人民幣",
       "address": "和平區唐基路33號",
       "coordinates": {
         "lat": 39.1111,
@@ -2719,13 +2719,13 @@
         "地點中心",
         "歷史豐富"
       ],
-      "bookingTips": "Book well ahead. The historic wing is unique. Breakfast is excellent."
+      "bookingTips": "請提前預訂。歷史翼樓獨具特色。早餐非常棒。"
     },
     {
       "name": "天津香格裡拉大酒店",
       "nameEn": "Shangri-La Hotel Tianjin",
       "budget": "luxury",
-      "priceRange": "¥1200-2500/night",
+      "priceRange": "每晚1200-2500元人民幣",
       "address": "和平區南京路328號",
       "coordinates": {
         "lat": 39.1211,
@@ -2738,13 +2738,13 @@
         "地點中心",
         "優質服務"
       ],
-      "bookingTips": "Best for first-time visitors. Book river view rooms."
+      "bookingTips": "最適合初次到訪的旅客。請預訂河景房。"
     },
     {
       "name": "天津四季酒店",
       "nameEn": "Four Seasons Hotel Tianjin",
       "budget": "luxury",
-      "priceRange": "¥1500-3500/night",
+      "priceRange": "每晚1500-3500元",
       "address": "和平區赤峰道138號",
       "coordinates": {
         "lat": 39.1111,
@@ -2757,13 +2757,13 @@
         "精緻餐飲",
         "中心位置"
       ],
-      "bookingTips": "Premium luxury experience. Book direct for best rates."
+      "bookingTips": "頂級奢華體驗。直接預訂可享最優房價。"
     },
     {
       "name": "天津金皇大酒店",
       "nameEn": "Golden Crown Hotel Tianjin",
       "budget": "luxury",
-      "priceRange": "¥800-1500/night",
+      "priceRange": "每晚800-1500元人民幣",
       "address": "和平區南京路66號",
       "coordinates": {
         "lat": 39.1211,
@@ -2776,13 +2776,13 @@
         "購物便利",
         "鄰近地鐵"
       ],
-      "bookingTips": "Great for sightseeing. Walking distance to major attractions."
+      "bookingTips": "非常適合觀光。步行即可抵達主要景點。"
     },
     {
       "name": "天津泰達國際酒店",
       "nameEn": "Tianjin TEDA International Hotel",
       "budget": "mid",
-      "priceRange": "¥500-900/night",
+      "priceRange": "每晚500-900元人民幣",
       "address": "天津經濟技術開發區第二大街11號",
       "coordinates": {
         "lat": 39.0211,
@@ -2795,13 +2795,13 @@
         "現代化客房",
         "物超所值"
       ],
-      "bookingTips": "Good for business travelers. Explore Binhai New Area."
+      "bookingTips": "適合商務旅客。探索濱海新區。"
     },
     {
       "name": "天津友誼賓館",
       "nameEn": "Tianjin Friendship Hotel",
       "budget": "mid",
-      "priceRange": "¥400-800/night",
+      "priceRange": "每晚400至800元人民幣",
       "address": "和平區南京路16號",
       "coordinates": {
         "lat": 39.1211,
@@ -2814,13 +2814,13 @@
         "花園環境",
         "服務良好"
       ],
-      "bookingTips": "Good value in central location. Book garden view rooms."
+      "bookingTips": "位於市中心，性價比高。建議預訂花園景觀房。"
     },
     {
       "name": "天津水晶宮飯店",
       "nameEn": "Crystal Palace Hotel Tianjin",
       "budget": "mid",
-      "priceRange": "¥450-800/night",
+      "priceRange": "每晚450-800元人民幣",
       "address": "河西區友誼路28號",
       "coordinates": {
         "lat": 39.1011,
@@ -2833,13 +2833,13 @@
         "早餐豐盛",
         "安靜區域"
       ],
-      "bookingTips": "Great for families. Near Water Park and cultural attractions."
+      "bookingTips": "非常適合家庭。鄰近水上公園及文化景點。"
     },
     {
       "name": "天津小白樓亞朵酒店",
       "nameEn": "Atour Hotel Tianjin Xiaobailou",
       "budget": "mid",
-      "priceRange": "¥350-650/night",
+      "priceRange": "每晚350至650元人民幣",
       "address": "和平區南京路88號",
       "coordinates": {
         "lat": 39.1211,
@@ -2852,13 +2852,13 @@
         "舒適床鋪",
         "免費早餐"
       ],
-      "bookingTips": "Popular Chinese boutique chain. Great value and service."
+      "bookingTips": "熱門的中國精品連鎖店。物超所值，服務優良。"
     },
     {
       "name": "如家酒店天津南京路店",
       "nameEn": "Home Inn Tianjin Nanjing Road",
       "budget": "budget",
-      "priceRange": "¥150-300/night",
+      "priceRange": "每晚150至300元人民幣",
       "address": "和平區南京路58號",
       "coordinates": {
         "lat": 39.1211,
@@ -2871,13 +2871,13 @@
         "乾淨客房",
         "地鐵便利"
       ],
-      "bookingTips": "Best budget option in central area. Simple but reliable."
+      "bookingTips": "市中心區域的最佳經濟選擇。簡單但可靠。"
     },
     {
       "name": "天津古文化街青年旅舍",
       "nameEn": "Tianjin Ancient Culture Street Youth Hostel",
       "budget": "budget",
-      "priceRange": "¥80-200/night",
+      "priceRange": "每晚80-200元",
       "address": "近古文化街",
       "coordinates": {
         "lat": 39.1311,
@@ -2890,13 +2890,13 @@
         "社交氛圍",
         "高性價比"
       ],
-      "bookingTips": "Great location for sightseeing. Book during off-peak season."
+      "bookingTips": "觀光地點絕佳。建議在淡季預訂。"
     },
     {
       "name": "天津海河英迪格酒店",
       "nameEn": "Hotel Indigo Tianjin",
       "budget": "luxury",
-      "priceRange": "¥700-1400/night",
+      "priceRange": "每晚700-1400元",
       "address": "河北區解放北路300號",
       "coordinates": {
         "lat": 39.1411,
@@ -2909,13 +2909,13 @@
         "中心位置",
         "精品奢華"
       ],
-      "bookingTips": "Good for romantic trips. Book river view rooms."
+      "bookingTips": "適合浪漫之旅。建議預訂河景房。"
     },
     {
       "name": "天津君隆威斯汀酒店",
       "nameEn": "The Westin Tianjin",
       "budget": "luxury",
-      "priceRange": "¥1000-2000/night",
+      "priceRange": "每晚1000-2000元人民幣",
       "address": "和平區南京路101號",
       "coordinates": {
         "lat": 39.1211,
@@ -2928,13 +2928,13 @@
         "現代化設施",
         "服務優良"
       ],
-      "bookingTips": "Westin quality with central location. Book direct for perks."
+      "bookingTips": "威斯汀品質，地點位於市中心。直接預訂可享額外優惠。"
     },
     {
       "name": "天津古文化街酒店",
       "nameEn": "Tianjin Ancient Culture Street Hotel",
       "budget": "mid",
-      "priceRange": "¥350-650/night",
+      "priceRange": "每晚350至650元人民幣",
       "address": "近古文化街",
       "coordinates": {
         "lat": 39.1311,
@@ -2947,14 +2947,14 @@
         "現代化",
         "位置良好"
       ],
-      "bookingTips": "Perfect for culture tourists. Book during off-peak."
+      "bookingTips": "非常適合文化旅遊者。建議在淡季預訂。"
     },
     {
       "name": "天津之眼摩天輪酒店",
       "nameEn": "Tianjin Eye Ferris Wheel Hotel",
       "budget": "mid",
-      "priceRange": "¥400-700/night",
-      "address": "Near Ferris Wheel",
+      "priceRange": "每晚400-700元人民幣",
+      "address": "靠近摩天輪",
       "coordinates": {
         "lat": 39.1411,
         "lng": 117.1911
@@ -2966,14 +2966,14 @@
         "現代化",
         "拍照機會"
       ],
-      "bookingTips": "Great for photos. Book river view rooms."
+      "bookingTips": "非常適合拍照。建議預訂河景房。"
     },
     {
       "name": "天津五大道民宿",
       "nameEn": "Tianjin Five Great Avenues Homestay",
       "budget": "budget",
-      "priceRange": "¥150-350/night",
-      "address": "Five Great Avenues area",
+      "priceRange": "每晚150至350元人民幣",
+      "address": "五大道區域",
       "coordinates": {
         "lat": 39.1211,
         "lng": 117.2011
@@ -2985,7 +2985,7 @@
         "在地體驗",
         "高性價比"
       ],
-      "bookingTips": "Experience colonial architecture. Book during off-peak."
+      "bookingTips": "體驗殖民時期建築。建議在離峰時段預訂。"
     }
   ],
   "payment": [
@@ -2994,25 +2994,25 @@
       "icon": "alipay",
       "description": "天津通用支付",
       "howToUse": [
-        "Download app",
-        "Link card"
+        "下載應用程式",
+        "綁定卡片"
       ],
       "tips": [
-        "Works at all merchants",
-        "English mode available"
+        "所有商家均適用",
+        "提供英文模式"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Accepted everywhere",
+      "description": "到處都可使用",
       "howToUse": [
-        "WeChat required",
+        "需使用微信",
         "接受國際信用卡"
       ],
       "tips": [
-        "Set to English mode",
-        "Needed for shared bikes"
+        "設定為英文模式",
+        "共享單車需要"
       ]
     },
     {
@@ -3021,10 +3021,10 @@
       "description": "在傳統市場實用",
       "howToUse": [
         "ATM 到處可用",
-        "Banks common"
+        "銀行常見"
       ],
       "tips": [
-        "Keep 200¥ for markets",
+        "留200元人民幣逛市場",
         "大多數餐廳接受信用卡"
       ]
     }
@@ -3032,7 +3032,7 @@
   "culturalTips": [
     {
       "category": "food",
-      "title": "Tianjin Snacks",
+      "title": "天津小吃",
       "content": "天津以「三絕」聞名：狗不理包子、耳朵眼炸糕和十八街麻花。這些是遍布全城的必嘗小吃。",
       "importance": "high"
     },
@@ -3044,20 +3044,20 @@
     },
     {
       "category": "arts",
-      "title": "Traditional Crafts",
-      "content": "Tianjin is known for Yangliuqing New Year paintings, clay figurines, and kites. Visit the crafts shops in Ancient Culture Street for authentic souvenirs.",
+      "title": "傳統工藝",
+      "content": "天津以楊柳青年畫、泥人張和風箏聞名。可前往古文化街的手工藝品店選購道地紀念品。",
       "importance": "medium"
     },
     {
       "category": "dialect",
-      "title": "Tianjin Dialect",
-      "content": "Tianjin dialect is known for its humor and directness. Locals are proud of their unique accent which differs significantly from Beijing dialect.",
+      "title": "天津話",
+      "content": "天津話以幽默和直率著稱。當地人對其獨特的口音感到自豪，這種口音與北京話有顯著差異。",
       "importance": "low"
     },
     {
       "category": "cuisine",
-      "title": "Tianjin Cuisine",
-      "content": "Tianjin cuisine is known for its seafood, especially clams and river fish. The city also has famous braised dishes and rich broth soups.",
+      "title": "天津菜",
+      "content": "天津菜以海鮮聞名，尤其是蛤蜊和河魚。這座城市也有著名的紅燒菜餚和濃郁的高湯。",
       "importance": "high"
     },
     {
@@ -3068,32 +3068,32 @@
     },
     {
       "category": "water",
-      "title": "Haihe River Culture",
+      "title": "海河文化",
       "content": "海河是天津身份認同的核心，擁有歷史悠久的橋梁和河濱步道。晚間的遊船之旅可以欣賞到城市天際線的美麗景色。",
       "importance": "medium"
     },
     {
       "category": "opera",
-      "title": "Tianjin Opera",
+      "title": "天津相聲",
       "content": "天津以其傳統的京劇表演而聞名。天津戲劇院的票價非常值得一遊，可以觀賞到正宗的演出。",
       "importance": "medium"
     },
     {
       "category": "food",
-      "title": "Mahua Culture",
+      "title": "麻花文化",
       "content": "天津麻花是一種以酥脆口感著稱的著名小吃，通常會被買來作為伴手禮帶回家。",
       "importance": "medium"
     },
     {
       "category": "history",
-      "title": "Revolutionary History",
+      "title": "革命歷史",
       "content": "天津在中國近代史上扮演了重要角色，曾發生過多次革命活動。紀念館提供了對這段時期的深入了解。",
       "importance": "medium"
     },
     {
       "category": "location",
-      "title": "Proximity to Beijing",
-      "content": "Tianjin is only 30 minutes from Beijing by high-speed train, making it an easy day trip or weekend destination from the capital.",
+      "title": "鄰近北京",
+      "content": "天津距離北京僅需30分鐘高鐵車程，從首都出發，無論是一日遊或週末度假都非常方便。",
       "importance": "high"
     },
     {
@@ -3104,14 +3104,14 @@
     },
     {
       "category": "folk",
-      "title": "Folk Performances",
-      "content": "Traditional folk performances including acrobatics and Chinese opera can be seen at various venues. Tianjin is famous for its folk arts.",
+      "title": "民間表演",
+      "content": "在天津的各個場館可以欣賞到傳統民間表演，包括雜技和戲曲。天津以其民間藝術聞名。",
       "importance": "medium"
     },
     {
       "category": "shopping",
-      "title": "Traditional Shopping",
-      "content": "Nanshi Gate and Ancient Culture Street offer traditional Chinese goods, crafts, and local snacks. Bargaining is expected at markets.",
+      "title": "傳統購物",
+      "content": "南市門和古文化街提供傳統中國商品、手工藝品和當地小吃。在市場購物時，議價是常見的。",
       "importance": "medium"
     },
     {
@@ -3122,8 +3122,8 @@
     },
     {
       "category": "cuisine",
-      "title": "Bai jiao Yuan",
-      "content": "Tianjin is famous for dumplings - over 100 varieties. The city takes dumpling making to an art form with unique shapes and fillings.",
+      "title": "白膠園",
+      "content": "天津以餃子聞名，種類超過一百種。這座城市將餃子製作提升為一門藝術，擁有獨特的造型與餡料。",
       "importance": "medium"
     }
   ],

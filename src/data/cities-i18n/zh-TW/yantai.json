@@ -3,12 +3,12 @@
   "name": "煙臺",
   "nameEn": "Yantai",
   "country": "China",
-  "population": "7.1 million",
+  "population": "710萬",
   "coordinates": {
     "lat": 37.5365,
     "lng": 121.3914
   },
-  "timezone": "UTC+8 (China Standard Time)",
+  "timezone": "UTC+8（中國標準時間）",
   "description": "煙臺是山東省一座美麗的沿海城市，以葡萄酒生產、新鮮海鮮和迷人的海濱風光而聞名。擁有著名的蓬萊閣、風景如畫的沿海公路，以及作為中國現代通心粉工業發源地的特色。這裡是殖民建築與中國傳統文化迷人融合的地方。",
   "coverImage": "/img/ext/7ded2fed59fe.webp",
   "highlights": [
@@ -19,16 +19,16 @@
     "酒文化 - 中國葡萄酒之都"
   ],
   "climate": {
-    "type": "Temperate monsoon",
+    "type": "溫帶季風氣候",
     "bestMonths": [
-      "May",
-      "June",
-      "September",
-      "October"
+      "五月",
+      "6月",
+      "九月",
+      "十月"
     ],
     "avgSummerTemp": "24C (75F)",
     "avgWinterTemp": "1C (34F)",
-    "tips": "Best in summer for beaches and autumn for wine harvest. Pleasant sea breezes. Winter cold but scenic. Avoid Golden Week October."
+    "tips": "夏季最適合海灘活動，秋季最適合葡萄酒收成。海風宜人。冬季寒冷但風景優美。避開十月黃金週。"
   },
   "attractions": [
     {
@@ -134,7 +134,7 @@
       "category": "natural",
       "image": "/img/ext/293f2f3ffd6b.webp",
       "description": "浪漫新月形海灣，以愛情鎖展示和浪漫日落景觀聞名。",
-      "address": "Yantai Coastal Zone",
+      "address": "煙台沿海地區",
       "coordinates": {
         "lat": 37.5265,
         "lng": 121.4014
@@ -158,13 +158,13 @@
       "category": "historical",
       "image": "/img/ext/94db9ac76890.webp",
       "description": "明代歷史海軍要塞與港口，用於防禦倭寇。",
-      "address": "Penglai District",
+      "address": "蓬萊區",
       "coordinates": {
         "lat": 37.8101,
         "lng": 120.7557
       },
       "openingHours": "08:00-17:30",
-      "ticketPrice": "80¥ (combined with Penglai Pavilion)",
+      "ticketPrice": "80元（含蓬萊閣）",
       "recommendedVisitTime": "2-3小時",
       "highlights": [
         "明代要塞",
@@ -302,7 +302,7 @@
       "category": "cultural",
       "image": "/img/ext/ce4b6dce08b7.webp",
       "description": "專注於鐘錶製造歷史的獨特博物館，展示中國鐘錶產業的傳承。",
-      "address": "Zhifu District",
+      "address": "芝罘區",
       "coordinates": {
         "lat": 37.5465,
         "lng": 121.3914
@@ -350,7 +350,7 @@
       "category": "historical",
       "image": "/img/ext/4c354a4ced03.webp",
       "description": "紀念明代抗倭名將的祠堂，他曾保衛中國抵禦倭寇。",
-      "address": "Penglai District",
+      "address": "蓬萊區",
       "coordinates": {
         "lat": 37.8101,
         "lng": 120.7557
@@ -446,7 +446,7 @@
       "category": "cultural",
       "image": "/img/ext/35cc7fe4ac2b.webp",
       "description": "現代購物娛樂區，匯集國際品牌與餐廳。",
-      "address": "Zhifu District",
+      "address": "芝罘區",
       "coordinates": {
         "lat": 37.5365,
         "lng": 121.4014
@@ -1216,16 +1216,16 @@
       "hours": "10:30-22:00",
       "description": "高級海鮮餐廳，每日新鮮漁獲，並可欣賞海景。",
       "dishHighlights": [
-        "Steamed seafood",
+        "蒸海鮮",
         "海膽",
-        "Razor clams",
+        "竹蟶",
         "烤魚"
       ],
       "tags": [
         "當地",
         "海鮮",
         "高級",
-        "views"
+        "瀏覽次數"
       ],
       "imageUrl": "/img/ext/98d9d2a5bca5.webp"
     },
@@ -1237,7 +1237,7 @@
       "cuisine": "Yantai",
       "avgPrice": 30,
       "rating": 4.7,
-      "address": "Penglai District",
+      "address": "蓬萊區",
       "coordinates": {
         "lat": 37.8101,
         "lng": 120.7557
@@ -1246,8 +1246,8 @@
       "description": "當地早餐店，以手工拉麵和鮮美湯頭聞名。",
       "dishHighlights": [
         "手工拉麵",
-        "Seafood broth",
-        "Scallion oil",
+        "海鮮高湯",
+        "蔥油",
         "醃菜"
       ],
       "tags": [
@@ -1265,7 +1265,7 @@
       "name": "燜子",
       "nameEn": "焔子",
       "type": "本地",
-      "cuisine": "Yantai Snacks",
+      "cuisine": "煙台小吃",
       "avgPrice": 20,
       "rating": 4.6,
       "address": "多處地點",
@@ -1276,10 +1276,10 @@
       "hours": "10:00-22:00",
       "description": "煙臺經典小吃——炸綠豆澱粉塊，搭配鹹香醬汁。",
       "dishHighlights": [
-        "Fried starch cubes",
-        "Soy sauce dressing",
-        "Sesame",
-        "Mildly spicy"
+        "炸澱粉塊",
+        "醬油調味醬",
+        "芝麻",
+        "微辣"
       ],
       "tags": [
         "當地",
@@ -1299,7 +1299,7 @@
       "cuisine": "Yantai",
       "avgPrice": 50,
       "rating": 4.8,
-      "address": "Zhifu District",
+      "address": "芝罘區",
       "coordinates": {
         "lat": 37.5365,
         "lng": 121.3914
@@ -1307,9 +1307,9 @@
       "hours": "10:00-22:00",
       "description": "以新鮮西班牙鯖魚餡水餃聞名，是煙臺特色。",
       "dishHighlights": [
-        "Fresh mackerel dumplings",
+        "新鮮鯖魚水餃",
         "蒸餃",
-        "Sour and spicy dipping"
+        "酸辣沾醬"
       ],
       "tags": [
         "當地",
@@ -1328,7 +1328,7 @@
       "cuisine": "煙臺海鮮",
       "avgPrice": 80,
       "rating": 4.7,
-      "address": "Near Fisherman's Wharf",
+      "address": "鄰近漁人碼頭",
       "coordinates": {
         "lat": 37.4765,
         "lng": 121.5814
@@ -1338,8 +1338,8 @@
       "dishHighlights": [
         "海腸",
         "米飯",
-        "Savory sauce",
-        "Umami flavor"
+        "鹹味醬料",
+        "鮮味"
       ],
       "tags": [
         "當地",
@@ -1355,7 +1355,7 @@
       "name": "撈麵坊",
       "nameEn": "Lao Mian Fang",
       "type": "本地",
-      "cuisine": "Yantai Noodles",
+      "cuisine": "煙台麵",
       "avgPrice": 40,
       "rating": 4.5,
       "address": "多個地點",
@@ -1367,9 +1367,9 @@
       "description": "受歡迎的麵館，提供多種手工拉麵和湯頭。",
       "dishHighlights": [
         "牛肉麵",
-        "Seafood noodles",
+        "海鮮麵",
         "蔬菜麵",
-        "Hand-pulled"
+        "手拉"
       ],
       "tags": [
         "當地",
@@ -1396,16 +1396,16 @@
       "hours": "09:00-22:00",
       "description": "新鮮海鮮市場餐廳，您挑選食材，他們為您烹調。",
       "dishHighlights": [
-        "Fresh catch",
-        "Steam preparation",
-        "Grilled options",
-        "Your choice"
+        "現撈海鮮",
+        "蒸煮方式",
+        "燒烤選項",
+        "您的選擇"
       ],
       "tags": [
         "當地",
         "海鮮",
         "新鮮",
-        "market-style"
+        "市集風格"
       ],
       "imageUrl": "/img/ext/c3cb63de3a03.webp",
       "phone": "+86 053 5 2530 6238"
@@ -1415,7 +1415,7 @@
       "name": "張裕酒莊餐廳",
       "nameEn": "Changyu Chateau Restaurant",
       "type": "精緻",
-      "cuisine": "French/Wine Pairing",
+      "cuisine": "法式／葡萄酒搭配",
       "avgPrice": 300,
       "rating": 4.7,
       "address": "張裕酒文化博物館",
@@ -1427,15 +1427,15 @@
       "hours": "11:00-14:00, 17:00-21:00",
       "description": "酒莊內的優雅餐廳，提供葡萄酒搭配和法式風味料理。",
       "dishHighlights": [
-        "Wine paired dishes",
-        "Western cuisine",
-        "Premium wine",
+        "葡萄酒佐餐菜餚",
+        "西式料理",
+        "頂級葡萄酒",
         "優雅的環境"
       ],
       "tags": [
         "精緻餐飲",
         "葡萄酒",
-        "french",
+        "法式",
         "浪漫",
         "特殊場合"
       ],
@@ -1446,10 +1446,10 @@
       "name": "農家漁家",
       "nameEn": "Rural Fisherman",
       "type": "本地",
-      "cuisine": "Yantai Home Style",
+      "cuisine": "煙台家常風味",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Near Golden Sand Beach",
+      "address": "鄰近金沙灘",
       "coordinates": {
         "lat": 37.4665,
         "lng": 121.4414
@@ -1457,9 +1457,9 @@
       "hours": "10:30-22:00",
       "description": "溫馨餐廳，供應家常海鮮和當地煙臺菜。",
       "dishHighlights": [
-        "Home-style seafood",
-        "Fried fish",
-        "Steamed clams",
+        "家常海鮮",
+        "炸魚",
+        "蒸蛤蜊",
         "當地蔬菜"
       ],
       "tags": [
@@ -1487,9 +1487,9 @@
       "hours": "10:00-22:00",
       "description": "大型購物中心，內有多家餐廳和美食廣場選擇。",
       "dishHighlights": [
-        "Food court",
-        "International brands",
-        "Cafes",
+        "美食廣場",
+        "國際品牌",
+        "咖啡館",
         "多樣選擇"
       ],
       "tags": [
@@ -1547,7 +1547,7 @@
       "hours": "07:00-21:00",
       "description": "島上海鮮餐廳，提供新鮮漁獲和傳統烹調方式。",
       "dishHighlights": [
-        "Island seafood",
+        "島嶼海鮮",
         "清蒸魚",
         "海帶湯",
         "當地特產"
@@ -1569,7 +1569,7 @@
       "cuisine": "煙臺海鮮",
       "avgPrice": 150,
       "rating": 4.7,
-      "address": "Fisherman's Wharf",
+      "address": "漁人碼頭",
       "coordinates": {
         "lat": 37.4765,
         "lng": 121.5814
@@ -1579,14 +1579,14 @@
       "description": "歷史悠久的海鮮餐廳，享有港灣景觀和新鮮海鮮。",
       "dishHighlights": [
         "新鮮海鮮",
-        "Grilled prawns",
+        "烤蝦",
         "清蒸魚",
         "海港景觀"
       ],
       "tags": [
         "當地",
         "海鮮",
-        "views",
+        "瀏覽次數",
         "歷史"
       ],
       "imageUrl": "/img/ext/fa44b8ad2ce1.webp"
@@ -1615,7 +1615,7 @@
       "tags": [
         "精緻餐飲",
         "義大利",
-        "views",
+        "瀏覽次數",
         "浪漫"
       ],
       "imageUrl": "/img/ext/0461404e221d.webp",
@@ -1629,7 +1629,7 @@
       "cuisine": "蒙古火鍋",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "Zhifu District",
+      "address": "芝罘區",
       "coordinates": {
         "lat": 37.5465,
         "lng": 121.3914
@@ -1641,7 +1641,7 @@
         "蒙古羊肉",
         "火鍋",
         "傳統湯底",
-        "Quality ingredients"
+        "優質食材"
       ],
       "tags": [
         "連鎖店",
@@ -1659,7 +1659,7 @@
       "cuisine": "Yantai",
       "avgPrice": 70,
       "rating": 4.5,
-      "address": "Penglai District",
+      "address": "蓬萊區",
       "coordinates": {
         "lat": 37.8101,
         "lng": 120.7557
@@ -1667,15 +1667,15 @@
       "hours": "10:00-21:30",
       "description": "位於蓬萊閣附近的知名餐廳，供應當地特色菜。",
       "dishHighlights": [
-        "Penglai noodles",
-        "Seafood dishes",
+        "蓬萊麵",
+        "海鮮料理",
         "傳統做法",
-        "Local favorites"
+        "在地人氣美食"
       ],
       "tags": [
         "當地",
         "傳統",
-        "near-attraction",
+        "鄰近景點",
         "可靠"
       ],
       "imageUrl": "/img/ext/59214744521f.webp",
@@ -1699,7 +1699,7 @@
       "dishHighlights": [
         "個人火鍋",
         "多種湯品",
-        "Fresh ingredients",
+        "食材新鮮",
         "實惠"
       ],
       "tags": [
@@ -1720,7 +1720,7 @@
       "cuisine": "韓式",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "Zhifu District",
+      "address": "芝罘區",
       "coordinates": {
         "lat": 37.5365,
         "lng": 121.3914
@@ -1729,9 +1729,9 @@
       "description": "韓式燒烤餐廳，提供優質肉品和道地韓式小菜。",
       "dishHighlights": [
         "烤羊肉",
-        "Beef",
+        "牛肉",
         "泡菜",
-        "Korean side dishes"
+        "韓式小菜"
       ],
       "tags": [
         "當地",
@@ -1747,10 +1747,10 @@
       "name": "味道小館",
       "nameEn": "Taste House",
       "type": "本地",
-      "cuisine": "Yantai Home Style",
+      "cuisine": "煙台家常風味",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Chaoyang Street area",
+      "address": "朝陽街商圈",
       "coordinates": {
         "lat": 37.5456,
         "lng": 121.4014
@@ -1761,7 +1761,7 @@
         "家常菜",
         "本地海鮮",
         "時令菜單",
-        "Value"
+        "性價比"
       ],
       "tags": [
         "當地",
@@ -1780,7 +1780,7 @@
       "cuisine": "臺式",
       "avgPrice": 120,
       "rating": 4.6,
-      "address": "MixC Mall",
+      "address": "萬象城",
       "coordinates": {
         "lat": 37.5465,
         "lng": 121.3914
@@ -1825,7 +1825,7 @@
       ],
       "tags": [
         "咖啡廳",
-        "views",
+        "瀏覽次數",
         "日落",
         "浪漫"
       ],
@@ -1840,7 +1840,7 @@
       "cuisine": "燒烤",
       "avgPrice": 60,
       "rating": 4.4,
-      "address": "Night Market Area",
+      "address": "夜市區",
       "coordinates": {
         "lat": 37.5465,
         "lng": 121.4014
@@ -1849,9 +1849,9 @@
       "description": "受歡迎的夜市燒烤，提供多種烤肉和海鮮。",
       "dishHighlights": [
         "烤羊肉",
-        "Skewers",
+        "串燒",
         "烤魷魚",
-        "Beer"
+        "啤酒"
       ],
       "tags": [
         "當地",
@@ -1870,7 +1870,7 @@
       "cuisine": "山東",
       "avgPrice": 100,
       "rating": 4.6,
-      "address": "Zhifu District",
+      "address": "芝罘區",
       "coordinates": {
         "lat": 37.5465,
         "lng": 121.3914
@@ -1881,7 +1881,7 @@
         "山東經典菜",
         "燉海鮮",
         "新鮮蔬菜",
-        "Traditional cooking"
+        "傳統烹調"
       ],
       "tags": [
         "當地",
@@ -1908,10 +1908,10 @@
       "hours": "08:00-21:00",
       "description": "島上餐廳，專營當地漁民捕獲的新鮮海鮮。",
       "dishHighlights": [
-        "Fresh catch",
-        "Island specialties",
+        "現撈海鮮",
+        "島嶼特色料理",
         "海景",
-        "Local preparation"
+        "在地烹調方式"
       ],
       "tags": [
         "當地",
@@ -2683,7 +2683,7 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major Chinese cities",
+        "from": "中國主要城市",
         "to": "煙臺蓬萊國際機場 (YNT)",
         "duration": "視情況而定（從北京 1 小時，從上海 1.5 小時）",
         "price": "400-1500¥",
@@ -2694,7 +2694,7 @@
         "type": "train",
         "from": "北京（5 小時）、上海（7 小時）、青島（2 小時）",
         "to": "煙臺火車站 / 煙臺南站",
-        "duration": "2-7 hours",
+        "duration": "2-7小時",
         "price": "150-600¥",
         "frequency": "每日有高鐵及普通列車",
         "tips": "煙臺站位於市中心附近。從青島有高鐵。從北京有 K 字頭列車。"
@@ -2707,21 +2707,21 @@
         "建議遊客搭乘計程車"
       ],
       "bus": [
-        "Extensive network",
-        "Single ride: 2¥",
-        "Tourist areas connected",
-        "Use apps for routes"
+        "路網綿密",
+        "單程票：2元",
+        "連接觀光區",
+        "使用應用程式查詢路線"
       ],
       "taxi": [
         "起跳價：8元（前3公裡）",
         "夜間加成：加收20%",
-        "Most attractions 20-60¥",
-        "Didi recommended"
+        "大部分景點20-60元人民幣",
+        "建議使用滴滴"
       ],
       "bike": [
         "可使用摩拜單車、美團單車",
         "解鎖：1元，之後每30分鐘0.5-1元",
-        "Great for coastal areas",
+        "非常適合沿海地區",
         "海灘區域非常適合騎自行車"
       ]
     }
@@ -2731,7 +2731,7 @@
       "name": "煙臺金海岸希爾頓酒店",
       "nameEn": "Hilton Yantai Golden Coast",
       "budget": "luxury",
-      "priceRange": "¥1000-2000/night",
+      "priceRange": "每晚1000-2000元人民幣",
       "address": "長江路158號，沿海開發區",
       "coordinates": {
         "lat": 37.4565,
@@ -2744,13 +2744,13 @@
         "多座泳池",
         "海景"
       ],
-      "bookingTips": "Best for beach vacation. Book ocean view rooms."
+      "bookingTips": "最適合海灘度假。建議預訂海景房。"
     },
     {
       "name": "煙臺香格裡拉大酒店",
       "nameEn": "Shangri-La Hotel Yantai",
       "budget": "luxury",
-      "priceRange": "¥1200-2200/night",
+      "priceRange": "每晚1200至2200元人民幣",
       "address": "棲霞路88號，芝罘區",
       "coordinates": {
         "lat": 37.5465,
@@ -2763,13 +2763,13 @@
         "灣景",
         "多種餐飲選擇"
       ],
-      "bookingTips": "Best location for sightseeing. Famous Sunday brunch."
+      "bookingTips": "觀光最佳位置。著名的週日早午餐。"
     },
     {
       "name": "煙臺萬達文華酒店",
       "nameEn": "Wanda Vista Hotel Yantai",
       "budget": "luxury",
-      "priceRange": "¥800-1500/night",
+      "priceRange": "每晚800-1500元人民幣",
       "address": "芝罘區長江路218號",
       "coordinates": {
         "lat": 37.5465,
@@ -2782,13 +2782,13 @@
         "高樓層",
         "服務良好"
       ],
-      "bookingTips": "Newer property. Great for business and leisure."
+      "bookingTips": "較新的飯店，適合商務與休閒旅客。"
     },
     {
       "name": "煙臺百瑞佳選酒店",
       "nameEn": "Bairuijia Hotel Yantai",
       "budget": "mid",
-      "priceRange": "¥400-700/night",
+      "priceRange": "每晚400-700元人民幣",
       "address": "芝罘區長江路88號",
       "coordinates": {
         "lat": 37.5465,
@@ -2801,13 +2801,13 @@
         "早餐豐盛",
         "高性價比"
       ],
-      "bookingTips": "Best value in center. Reliable Chinese brand."
+      "bookingTips": "市中心最佳性價比，可靠的中國品牌。"
     },
     {
       "name": "煙臺華美達廣場",
       "nameEn": "Ramada Plaza Yantai",
       "budget": "mid",
-      "priceRange": "¥500-900/night",
+      "priceRange": "每晚500-900元人民幣",
       "address": "芝罘區煙臺山路158號",
       "coordinates": {
         "lat": 37.5456,
@@ -2820,13 +2820,13 @@
         "中心位置",
         "現代"
       ],
-      "bookingTips": "Perfect for sightseeing. Walk to attractions."
+      "bookingTips": "觀光首選，步行即可抵達景點。"
     },
     {
       "name": "如家酒店煙臺棧橋店",
       "nameEn": "Home Inn Yantai Zhanqiao",
       "budget": "budget",
-      "priceRange": "¥150-300/night",
+      "priceRange": "每晚150至300元人民幣",
       "address": "芝罘區站橋路68號",
       "coordinates": {
         "lat": 37.5365,
@@ -2839,13 +2839,13 @@
         "乾淨",
         "市中心"
       ],
-      "bookingTips": "Best budget near waterfront. Simple but reliable."
+      "bookingTips": "靠近海濱的最佳平價選擇。簡單但可靠。"
     },
     {
       "name": "7天連鎖酒店煙臺汽車站店",
       "nameEn": "7 Days Inn Yantai Bus Station",
       "budget": "budget",
-      "priceRange": "¥120-250/night",
+      "priceRange": "每晚120-250元人民幣",
       "address": "芝罘區棲霞路168號",
       "coordinates": {
         "lat": 37.5465,
@@ -2858,14 +2858,14 @@
         "簡樸",
         "乾淨"
       ],
-      "bookingTips": "Good for bus travelers. Reliable budget chain."
+      "bookingTips": "適合搭乘巴士的旅客。可靠的平價連鎖飯店。"
     },
     {
       "name": "煙臺國際青年旅舍",
       "nameEn": "Yantai International Youth Hostel",
       "budget": "budget",
-      "priceRange": "¥80-200/night",
-      "address": "Near Golden Sand Beach",
+      "priceRange": "每晚80-200元",
+      "address": "鄰近金沙灘",
       "coordinates": {
         "lat": 37.4665,
         "lng": 121.4414
@@ -2877,14 +2877,14 @@
         "社交氛圍",
         "自行車租賃"
       ],
-      "bookingTips": "Great for backpackers. Beach access. English speaking."
+      "bookingTips": "非常適合背包客。可通往海灘。提供英語服務。"
     },
     {
       "name": "蓬萊歐樂堡騎士酒店",
       "nameEn": "Penglai Knight Hotel",
       "budget": "mid",
-      "priceRange": "¥500-900/night",
-      "address": "Penglai District",
+      "priceRange": "每晚500-900元人民幣",
+      "address": "蓬萊區",
       "coordinates": {
         "lat": 37.8101,
         "lng": 120.7557
@@ -2896,13 +2896,13 @@
         "適合家庭",
         "娛樂設施"
       ],
-      "bookingTips": "Best for Penglai sightseeing. Great for families."
+      "bookingTips": "蓬萊觀光的最佳選擇。非常適合家庭。"
     },
     {
       "name": "長島漁家樂民宿",
       "nameEn": "Changdao Island Fisherman Homestay",
       "budget": "budget",
-      "priceRange": "¥200-500/night",
+      "priceRange": "每晚200-500元人民幣",
       "address": "長島縣 Changdao County",
       "coordinates": {
         "lat": 37.9565,
@@ -2915,13 +2915,13 @@
         "新鮮海產",
         "道地"
       ],
-      "bookingTips": "Experience island life. Book during fishing season."
+      "bookingTips": "體驗島嶼生活。請在漁季期間預訂。"
     },
     {
       "name": "煙臺張裕葡萄酒主題酒店",
       "nameEn": "Yantai Changyu Wine Theme Hotel",
       "budget": "mid",
-      "priceRange": "¥400-700/night",
+      "priceRange": "每晚400-700元人民幣",
       "address": "鄰近張裕葡萄酒文化博物館",
       "coordinates": {
         "lat": 37.5465,
@@ -2934,14 +2934,14 @@
         "現代",
         "文化體驗"
       ],
-      "bookingTips": "Perfect for wine lovers. Book wine tour packages."
+      "bookingTips": "葡萄酒愛好者的完美選擇。請預訂葡萄酒之旅套裝行程。"
     },
     {
       "name": "煙臺養馬島度假酒店",
       "nameEn": "Yantai Yangma Island Resort Hotel",
       "budget": "luxury",
-      "priceRange": "¥800-1500/night",
-      "address": "Yangma Island",
+      "priceRange": "每晚800-1500元人民幣",
+      "address": "養馬島",
       "coordinates": {
         "lat": 37.3865,
         "lng": 121.6414
@@ -2953,14 +2953,14 @@
         "度假村設施",
         "風景優美"
       ],
-      "bookingTips": "Perfect for beach vacation. Book during off-peak."
+      "bookingTips": "海灘度假的完美選擇。請在離峰期間預訂。"
     },
     {
       "name": "煙臺金沙灘海景酒店",
       "nameEn": "Yantai Golden Sand Beach Sea View Hotel",
       "budget": "mid",
-      "priceRange": "¥350-650/night",
-      "address": "Near Golden Sand Beach",
+      "priceRange": "每晚350至650元人民幣",
+      "address": "鄰近金沙灘",
       "coordinates": {
         "lat": 37.4665,
         "lng": 121.4414
@@ -2972,14 +2972,14 @@
         "現代化",
         "物超所值"
       ],
-      "bookingTips": "Great for beach lovers. Book ocean view rooms."
+      "bookingTips": "非常適合海灘愛好者。請預訂海景房。"
     },
     {
       "name": "煙臺朝陽街民宿",
       "nameEn": "Yantai Chaoyang Street Homestay",
       "budget": "budget",
-      "priceRange": "¥150-350/night",
-      "address": "Chaoyang Street area",
+      "priceRange": "每晚150至350元人民幣",
+      "address": "朝陽街商圈",
       "coordinates": {
         "lat": 37.5465,
         "lng": 121.3914
@@ -2991,14 +2991,14 @@
         "在地體驗",
         "高性價比"
       ],
-      "bookingTips": "Experience colonial history. Book during off-peak."
+      "bookingTips": "體驗殖民歷史。請在離峰期間預訂。"
     },
     {
       "name": "煙臺葡萄酒莊酒店",
       "nameEn": "Yantai Vineyard Hotel",
       "budget": "luxury",
-      "priceRange": "¥700-1300/night",
-      "address": "Yantai Wine Valley",
+      "priceRange": "每晚700至1300元人民幣",
+      "address": "煙台葡萄酒谷",
       "coordinates": {
         "lat": 37.5465,
         "lng": 121.3914
@@ -3010,34 +3010,34 @@
         "奢華",
         "浪漫"
       ],
-      "bookingTips": "Perfect for romantic trips. Book wine tasting packages."
+      "bookingTips": "非常適合浪漫之旅。請預訂葡萄酒品嚐套裝。"
     }
   ],
   "payment": [
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Universal in Yantai",
+      "description": "煙台環球影城",
       "howToUse": [
-        "Download before arrival",
-        "Link card"
+        "抵達前下載",
+        "綁定卡片"
       ],
       "tips": [
-        "Works at all merchants",
-        "English available"
+        "所有商家均適用",
+        "提供英語服務"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Accepted everywhere",
+      "description": "到處都可使用",
       "howToUse": [
-        "WeChat required",
+        "需使用微信",
         "接受國際信用卡"
       ],
       "tips": [
-        "Set to English mode",
-        "Needed for shared bikes"
+        "設定為英文模式",
+        "共享單車需要"
       ]
     },
     {
@@ -3046,7 +3046,7 @@
       "description": "在海鮮市場實用",
       "howToUse": [
         "ATM 到處可用",
-        "Banks along main streets"
+        "主要街道兩旁的銀行"
       ],
       "tips": [
         "海鮮市場請備妥 300 元人民幣",
@@ -3063,25 +3063,25 @@
     },
     {
       "category": "history",
-      "title": "Maritime Heritage",
+      "title": "海洋文化遺產",
       "content": "煙臺作為條約港口擁有600年的海事歷史。殖民建築，特別是在煙臺山周圍，反映了其國際化的過去，帶有俄羅斯、英國、法國和德國的影響。",
       "importance": "high"
     },
     {
       "category": "wine",
-      "title": "Wine Culture",
+      "title": "葡萄酒文化",
       "content": "煙臺是中國的葡萄酒之都，產量佔中國葡萄酒的40%。張裕酒莊世界聞名。葡萄酒旅遊很受歡迎，提供葡萄園參觀和品酒活動。",
       "importance": "high"
     },
     {
       "category": "legend",
-      "title": "Penglai Legend",
+      "title": "蓬萊傳說",
       "content": "蓬萊在中國神話中是八仙和仙人的居住地。蓬萊閣據說是仙人居住的地方，使其成為一個神聖的道教聖地。",
       "importance": "medium"
     },
     {
       "category": "dialect",
-      "title": "Yantai Dialect",
+      "title": "煙台方言",
       "content": "煙臺話是冀魯官話的一部分，有獨特的發音。當地方言以直接和坦率著稱。一些詞彙是該地區獨有的。",
       "importance": "low"
     },
@@ -3093,37 +3093,37 @@
     },
     {
       "category": "beach",
-      "title": "Beach Culture",
+      "title": "海灘文化",
       "content": "煙臺擁有美麗的海灘，其中金沙灘最為著名。海灘在夏季很受歡迎，適合遊泳和水上運動。一些海灘在7月至8月可能會變得擁擠。",
       "importance": "medium"
     },
     {
       "category": "colonial",
-      "title": "Colonial Architecture",
+      "title": "殖民時期建築",
       "content": "煙臺的殖民歷史在煙臺山和朝陽街周圍留下了歐式建築的遺產。許多19世紀末的建築被保存下來，現在成為咖啡館和商店的所在地。",
       "importance": "medium"
     },
     {
       "category": "crafts",
-      "title": "Local Crafts",
+      "title": "當地手工藝品",
       "content": "煙臺以海帶/海藻產品、葡萄酒（當然）以及當地鼻煙壺而聞名。該地區的工藝品反映了其沿海文化和殖民影響。",
       "importance": "low"
     },
     {
       "category": "food",
-      "title": "Must-Try Dishes",
+      "title": "必嚐美食",
       "content": "煙臺的特色美食包括：海膽（海膽）、蟶子（蟶子）、清蒸海鱸魚、海腸撈飯（海腸撈飯）、蓬萊小面（蓬萊小面）和當地餃子。",
       "importance": "high"
     },
     {
       "category": "island",
-      "title": "Island Hopping",
+      "title": "跳島遊",
       "content": "長島群島提供美麗的島嶼風光，有原始海灘和漁村。這個群島非常適合逃離大陸，體驗真正的島嶼生活。",
       "importance": "medium"
     },
     {
       "category": "festival",
-      "title": "Wine Festival",
+      "title": "葡萄酒節",
       "content": "9月舉辦的煙臺國際葡萄酒節展示了當地的葡萄酒文化，包括品酒、參觀和文化活動。這與葡萄收穫季節同時進行。",
       "importance": "medium"
     },
@@ -3135,13 +3135,13 @@
     },
     {
       "category": "weather",
-      "title": "Coastal Weather",
+      "title": "沿海天氣",
       "content": "煙臺夏季有宜人的海風，比山東內陸地區涼爽。然而，冬季可能會因海風而寒冷。春季常有大霧。",
       "importance": "medium"
     },
     {
       "category": "nightlife",
-      "title": "Evening Entertainment",
+      "title": "夜間娛樂",
       "content": "煙臺的夜生活圍繞漁人碼頭、朝陽街和沿海區域逐漸發展。月灣在晚上很有浪漫氣氛。萬象城商場提供深夜娛樂。",
       "importance": "low"
     }

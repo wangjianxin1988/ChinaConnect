@@ -3,12 +3,12 @@
   "name": "承德",
   "nameEn": "Chengde",
   "country": "China",
-  "population": "2.9 million",
+  "population": "290萬",
   "coordinates": {
     "lat": 40.9515,
     "lng": 117.963
   },
-  "timezone": "UTC+8 (China Standard Time)",
+  "timezone": "UTC+8（中國標準時間）",
   "description": "承德是河北省歷史悠久的山城，以其皇家避暑山莊和附近的佛教寺廟聞名。作為聯合國教科文組織世界遺產，它曾是清朝皇帝的夏季避暑勝地。山景和藏式佛教寺廟使其與眾不同。",
   "coverImage": "/img/ext/fec12dec27c6.webp",
   "highlights": [
@@ -19,16 +19,16 @@
     "皇家避暑山莊"
   ],
   "climate": {
-    "type": "Temperate continental climate",
+    "type": "溫帶大陸性氣候",
     "bestMonths": [
-      "May",
-      "June",
-      "September",
-      "October"
+      "五月",
+      "6月",
+      "九月",
+      "十月"
     ],
     "avgSummerTemp": "24°C (75°F)",
     "avgWinterTemp": "-8°C (18°F)",
-    "tips": "Best in summer for resort and temples. Spring and autumn pleasant. Winters cold. Summer is peak season but pleasant escape from Beijing heat."
+    "tips": "夏季最適合前往避暑山莊和寺廟。春、秋兩季氣候宜人。冬季寒冷。夏季為旺季，但可避開北京的炎熱。"
   },
   "attractions": [
     {
@@ -2652,8 +2652,8 @@
       {
         "type": "bus",
         "from": "北京（四惠、東直門）",
-        "to": "Chengde",
-        "duration": "3-4 hours",
+        "to": "承德",
+        "duration": "3-4小時",
         "price": "80-100¥",
         "frequency": "每日多班次",
         "tips": "四惠或東直門長途汽車站。有空調，舒適。"
@@ -2661,31 +2661,31 @@
       {
         "type": "train",
         "from": "北京（4小時）、秦皇島（3小時）",
-        "to": "Chengde Railway Station",
-        "duration": "3-5 hours",
+        "to": "承德火車站",
+        "duration": "3-5小時",
         "price": "50-150¥",
-        "frequency": "Several trains daily",
+        "frequency": "每日多班列車",
         "tips": "火車舒適。旺季請提前訂票。"
       }
     ],
     "local": {
       "bus": [
         "前往景點的當地公車",
-        "Single ride: 1-2¥",
+        "單程票：1-2元人民幣",
         "前往山莊的旅遊巴士",
         "5、7、15路公車可達主要景點"
       ],
       "taxi": [
-        "Starting fare: 6¥",
-        "Within city 10-30¥",
-        "To attractions 30-80¥",
-        "Didi available"
+        "起跳價：6元人民幣",
+        "市區內10-30元人民幣",
+        "前往景點30-80元人民幣",
+        "可使用滴滴出行"
       ],
       "bike": [
-        "Limited bike sharing",
-        "Not common due to hills",
+        "共享單車有限",
+        "因多山地形，不常見",
         "大部分地區步行更佳",
-        "Taxi more practical"
+        "計程車較為實用"
       ]
     }
   },
@@ -2694,8 +2694,8 @@
       "name": "承德避暑山莊希爾頓酒店",
       "nameEn": "Hilton Chengde Mountain Resort",
       "budget": "luxury",
-      "priceRange": "¥800-1800/night",
-      "address": "Near Mountain Resort",
+      "priceRange": "每晚800至1800元人民幣",
+      "address": "鄰近山莊",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2707,14 +2707,14 @@
         "山景",
         "歷史街區"
       ],
-      "bookingTips": "Book during peak season well ahead. Best location for sightseeing."
+      "bookingTips": "旺季期間請提前預訂。觀光最佳位置。"
     },
     {
       "name": "承德綺望樓賓館",
       "nameEn": "Qiwanglou Hotel",
       "budget": "luxury",
-      "priceRange": "¥600-1200/night",
-      "address": "Inside Mountain Resort",
+      "priceRange": "每晚600-1200元",
+      "address": "山莊內",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2726,14 +2726,14 @@
         "傳統風格",
         "獨特體驗"
       ],
-      "bookingTips": "Stay within the resort. Book well ahead for unique experience."
+      "bookingTips": "入住山莊內。提前預訂以享受獨特體驗。"
     },
     {
       "name": "承德盛華大酒店",
       "nameEn": "Shenghua Hotel",
       "budget": "mid",
-      "priceRange": "¥400-800/night",
-      "address": "City center",
+      "priceRange": "每晚400至800元人民幣",
+      "address": "市中心",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2745,14 +2745,14 @@
         "服務良好",
         "物有所值"
       ],
-      "bookingTips": "Good value in city center. Book during off-peak."
+      "bookingTips": "市中心性價比高。淡季期間預訂。"
     },
     {
       "name": "如家酒店承德避暑山莊店",
       "nameEn": "Home Inn Chengde Mountain Resort",
       "budget": "budget",
-      "priceRange": "¥150-300/night",
-      "address": "Near Mountain Resort",
+      "priceRange": "每晚150至300元人民幣",
+      "address": "鄰近山莊",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2764,14 +2764,14 @@
         "乾淨客房",
         "基本設施"
       ],
-      "bookingTips": "Best budget option near main attractions."
+      "bookingTips": "靠近主要景點的最佳經濟選擇。"
     },
     {
       "name": "承德行宮大酒店",
       "nameEn": "Xinggong Hotel",
       "budget": "mid",
-      "priceRange": "¥300-600/night",
-      "address": "Near Mountain Resort",
+      "priceRange": "每晚300-600元人民幣",
+      "address": "鄰近山莊",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2783,14 +2783,14 @@
         "地理位置佳",
         "物有所值"
       ],
-      "bookingTips": "Good for temple visits. Book during off-peak."
+      "bookingTips": "適合參觀寺廟。請在離峰時段預訂。"
     },
     {
       "name": "承德乾陽酒店",
       "nameEn": "Qianyang Hotel",
       "budget": "mid",
-      "priceRange": "¥350-700/night",
-      "address": "City center",
+      "priceRange": "每晚350-700元",
+      "address": "市中心",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2802,14 +2802,14 @@
         "服務良好",
         "含早餐"
       ],
-      "bookingTips": "Good for transport connections. Book direct."
+      "bookingTips": "交通便利。請直接預訂。"
     },
     {
       "name": "承德山莊民宿",
       "nameEn": "Chengde Resort Homestay",
       "budget": "budget",
-      "priceRange": "¥150-400/night",
-      "address": "Near Mountain Resort",
+      "priceRange": "每晚150至400元人民幣",
+      "address": "鄰近山莊",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2821,14 +2821,14 @@
         "傳統裝潢",
         "物有所值"
       ],
-      "bookingTips": "Experience local life. Book during off-peak season."
+      "bookingTips": "體驗當地生活。請在離峰季節預訂。"
     },
     {
       "name": "承德文苑賓館",
       "nameEn": "Wenyuan Hotel Chengde",
       "budget": "mid",
-      "priceRange": "¥280-500/night",
-      "address": "Near Mountain Resort",
+      "priceRange": "每晚280至500元人民幣",
+      "address": "鄰近山莊",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2840,14 +2840,14 @@
         "傳統風格",
         "服務良好"
       ],
-      "bookingTips": "Good for temple visits. Book during off-peak."
+      "bookingTips": "適合參觀寺廟。請在離峰時段預訂。"
     },
     {
       "name": "承德貴賓樓飯店",
       "nameEn": "Chengde VIP Hotel",
       "budget": "mid",
-      "priceRange": "¥350-600/night",
-      "address": "City center",
+      "priceRange": "每晚350-600元人民幣",
+      "address": "市中心",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2859,14 +2859,14 @@
         "早餐豐盛",
         "物超所值"
       ],
-      "bookingTips": "Good transport connections. Book direct."
+      "bookingTips": "交通便利。請直接預訂。"
     },
     {
       "name": "承德天寶酒店",
       "nameEn": "Tianbao Hotel Chengde",
       "budget": "mid",
-      "priceRange": "¥300-550/night",
-      "address": "Near Shuangqiao District",
+      "priceRange": "每晚300至550元人民幣",
+      "address": "靠近雙橋區",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2878,14 +2878,14 @@
         "服務良好",
         "免費停車"
       ],
-      "bookingTips": "Good for temple tours. Book during off-peak."
+      "bookingTips": "適合寺廟導覽。請在離峰時段預訂。"
     },
     {
       "name": "承德京都賓館",
       "nameEn": "Jingdu Hotel Chengde",
       "budget": "mid",
-      "priceRange": "¥250-450/night",
-      "address": "Near Mountain Resort",
+      "priceRange": "每晚250-450元人民幣",
+      "address": "鄰近山莊",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2897,14 +2897,14 @@
         "價格實惠",
         "位置優越"
       ],
-      "bookingTips": "Best value near attractions. Book in advance."
+      "bookingTips": "鄰近景點的最佳選擇。請提前預訂。"
     },
     {
       "name": "承德元寶山酒店",
       "nameEn": "Yuanbaoshan Hotel",
       "budget": "budget",
-      "priceRange": "¥120-280/night",
-      "address": "Near Mountain Resort",
+      "priceRange": "每晚120至280元人民幣",
+      "address": "鄰近山莊",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2916,14 +2916,14 @@
         "基本設施",
         "乾淨"
       ],
-      "bookingTips": "Best budget option. Simple but convenient."
+      "bookingTips": "最佳經濟選擇。簡單但方便。"
     },
     {
       "name": "承德溫泉度假村",
       "nameEn": "Chengde Hot Spring Resort",
       "budget": "luxury",
-      "priceRange": "¥600-1200/night",
-      "address": "Near Mountain Resort",
+      "priceRange": "每晚600-1200元",
+      "address": "鄰近山莊",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2935,14 +2935,14 @@
         "豪華",
         "放鬆"
       ],
-      "bookingTips": "Perfect for relaxation. Book hot spring packages."
+      "bookingTips": "非常適合放鬆。預訂溫泉套票。"
     },
     {
       "name": "承德草原度假營地",
       "nameEn": "Chengde Grassland Resort Camp",
       "budget": "mid",
-      "priceRange": "¥300-600/night",
-      "address": "Mulan Weichang area",
+      "priceRange": "每晚300-600元人民幣",
+      "address": "木蘭圍場地區",
       "coordinates": {
         "lat": 42.2022,
         "lng": 117.4022
@@ -2954,14 +2954,14 @@
         "騎馬",
         "文化體驗"
       ],
-      "bookingTips": "Experience Mongolian culture. Great for families."
+      "bookingTips": "體驗蒙古文化。非常適合家庭。"
     },
     {
       "name": "承德老街客棧",
       "nameEn": "Old Street Inn Chengde",
       "budget": "budget",
-      "priceRange": "¥100-250/night",
-      "address": "Old city area",
+      "priceRange": "每晚100至250元人民幣",
+      "address": "老城區",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
@@ -2973,42 +2973,42 @@
         "中心位置",
         "價值"
       ],
-      "bookingTips": "Experience local life. Great for cultural immersion."
+      "bookingTips": "體驗當地生活。非常適合文化沉浸。"
     }
   ],
   "payment": [
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Accepted in most places",
+      "description": "大部分地方都接受",
       "howToUse": [
-        "Download app",
-        "Link card"
+        "下載應用程式",
+        "綁定卡片"
       ],
       "tips": [
-        "Works in most shops",
-        "English mode available"
+        "大部分商店適用",
+        "提供英文模式"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Accepted in most places",
+      "description": "大部分地方都接受",
       "howToUse": [
-        "WeChat required",
+        "需使用微信",
         "接受國際信用卡"
       ],
       "tips": [
-        "Set to English mode"
+        "設定為英文模式"
       ]
     },
     {
       "method": "Cash",
       "icon": "cash",
-      "description": "Useful at local markets",
+      "description": "在當地市場實用",
       "howToUse": [
         "ATM 在市區",
-        "Banks available"
+        "有銀行可用"
       ],
       "tips": [
         "保留 200 元人民幣以備小額消費",

@@ -3,13 +3,13 @@
   "name": "蘇州",
   "nameEn": "Suzhou",
   "country": "China",
-  "population": "10.7 million",
+  "population": "1,070萬",
   "coordinates": {
     "lat": 31.2989,
     "lng": 120.5853
   },
-  "timezone": "UTC+8 (China Standard Time)",
-  "description": "Suzhou is a paradise of elegant gardens, silk production, and classical Chinese culture. Known as 'Venice of the East' for its canals and water towns. Home to UNESCO World Heritage classical gardens, intricate silk embroidery, and 2,500 years of history. A cultural gem between Shanghai and Nanjing.",
+  "timezone": "UTC+8（中國標準時間）",
+  "description": "蘇州是優雅園林、絲綢生產與古典中國文化的天堂。因其運河與水鄉而被譽為「東方威尼斯」。這裡擁有聯合國教科文組織世界遺產古典園林、精緻的絲綢刺繡，以及2,500年的歷史。是位於上海與南京之間的文化瑰寶。",
   "coverImage": "/img/ext/bb437a1b3f23.webp",
   "highlights": [
     "拙政園 - 聯合國教科文組織世界遺產",
@@ -19,17 +19,17 @@
     "周莊 - 東方威尼斯水鄉"
   ],
   "climate": {
-    "type": "Subtropical monsoon",
+    "type": "亞熱帶季風",
     "bestMonths": [
-      "April",
-      "May",
-      "September",
-      "October",
-      "November"
+      "四月",
+      "五月",
+      "九月",
+      "十月",
+      "十一月"
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "5C (41F)",
-    "tips": "Best in spring (April-May) for garden flowers or autumn (Sept-Nov) for pleasant weather. Summer is hot and humid. Winter is cold but gardens are beautiful in snow. Plum blossoms in winter."
+    "tips": "春季（4月至5月）賞花最佳，秋季（9月至11月）天氣宜人。夏季炎熱潮濕。冬季寒冷，但雪中的園林別有風情。冬季有梅花可賞。"
   },
   "attractions": [
     {
@@ -45,7 +45,7 @@
         "lng": 120.6372
       },
       "openingHours": "07:30-17:30（夏季），08:00-17:00（冬季）",
-      "ticketPrice": "70¥ (peak), 50¥ (off-peak)",
+      "ticketPrice": "70元（旺季），50元（淡季）",
       "recommendedVisitTime": "2-3小時",
       "highlights": [
         "牡丹花園",
@@ -189,7 +189,7 @@
         "lng": 120.8472
       },
       "openingHours": "08:00-16:00 (夜遊 available)",
-      "ticketPrice": "100¥ (day), 80¥ (night)",
+      "ticketPrice": "100元（白天），80元（夜間）",
       "recommendedVisitTime": "3-4小時",
       "highlights": [
         "雙橋",
@@ -213,7 +213,7 @@
         "lng": 120.7172
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "100¥ (includes attractions)",
+      "ticketPrice": "100元（含景點門票）",
       "recommendedVisitTime": "3-4小時",
       "highlights": [
         "退思園",
@@ -254,7 +254,7 @@
       "image": "/img/ext/0df1b413372e.webp",
       "category": "cultural",
       "description": "位於風景秀麗的山丘上的古老佛教寺廟，擁有美麗的花園。",
-      "address": "Lingyin Temple, Suzhou",
+      "address": "靈隱寺，蘇州",
       "coordinates": {
         "lat": 31.3422,
         "lng": 120.5672
@@ -475,7 +475,7 @@
       "image": "/img/ext/fe4ed812b34e.webp",
       "category": "cultural",
       "description": "連接蘇州主要古典園林的風景路線。",
-      "address": "Old Town Suzhou",
+      "address": "蘇州古城",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -1231,12 +1231,12 @@
       "description": "傳奇餐廳，成立於1779年，供應正宗蘇州菜，經典菜餚聞名。",
       "dishHighlights": [
         "松鼠桂魚",
-        "Wusong duck",
-        "Suzhou-style pork"
+        "吳松鴨",
+        "蘇式豬肉"
       ],
       "tags": [
         "歷史",
-        "suzhou-cuisine",
+        "蘇州菜",
         "精緻餐飲"
       ],
       "star": 0,
@@ -1261,12 +1261,12 @@
       "description": "歷史悠久的餐廳，成立於1871年，以傳統蘇州菜和烹飪示範聞名。",
       "dishHighlights": [
         "松鼠桂魚",
-        "Steamed shad",
+        "清蒸鰣魚",
         "蟹類菜餚"
       ],
       "tags": [
         "歷史",
-        "suzhou-cuisine",
+        "蘇州菜",
         "風景優美"
       ],
       "star": 0,
@@ -1277,7 +1277,7 @@
       "name": "協和菜館",
       "nameEn": "Xiehe Restaurant",
       "type": "本地",
-      "cuisine": "Suzhou Home-style",
+      "cuisine": "蘇州家常菜",
       "avgPrice": 80,
       "rating": 4.7,
       "address": "平江路小香巷160號",
@@ -1291,7 +1291,7 @@
       "dishHighlights": [
         "糖醋鱖魚",
         "紅燒五花肉",
-        "Wonton soup"
+        "餛飩湯"
       ],
       "tags": [
         "當地",
@@ -1308,10 +1308,10 @@
       "name": "老蘇州茶樓",
       "nameEn": "Old Suzhou Teahouse",
       "type": "本地",
-      "cuisine": "Suzhou Snacks",
+      "cuisine": "蘇州小吃",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "Pingjiang Road",
+      "address": "平江路",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -1319,10 +1319,10 @@
       "hours": "08:00-22:00",
       "description": "傳統茶館，在經典環境中供應正宗蘇式早餐點心和當地茶。",
       "dishHighlights": [
-        "Suzhou-style dim sum",
-        "Wonton",
-        "Ginger tea",
-        "Green tea"
+        "蘇式點心",
+        "餛飩",
+        "薑茶",
+        "綠茶"
       ],
       "tags": [
         "當地",
@@ -1340,10 +1340,10 @@
       "name": "同得興",
       "nameEn": "Tong De Xing",
       "type": "本地",
-      "cuisine": "Suzhou Noodles",
+      "cuisine": "蘇州麵",
       "avgPrice": 40,
       "rating": 4.8,
-      "address": "72 Shantang Street",
+      "address": "山塘街72號",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6072
@@ -1352,8 +1352,8 @@
       "description": "傳奇麵館，以新鮮食材供應經典蘇式麵條。",
       "dishHighlights": [
         "清湯麵",
-        "Fried shrimp noodles",
-        "Pork liver noodles"
+        "炸蝦仁麵",
+        "豬肝麵"
       ],
       "tags": [
         "當地",
@@ -1371,7 +1371,7 @@
       "name": "綠楊餛飩",
       "nameEn": "Lv Yang Wonton",
       "type": "本地",
-      "cuisine": "Suzhou Snacks",
+      "cuisine": "蘇州小吃",
       "avgPrice": 30,
       "rating": 4.6,
       "address": "多個地點",
@@ -1382,8 +1382,8 @@
       "hours": "06:00-19:00",
       "description": "以清淡湯頭中的精緻蘇式餛飩聞名，是當地老字號。",
       "dishHighlights": [
-        "Wonton soup",
-        "Fried wontons",
+        "餛飩湯",
+        "炸餛飩",
         "豬肉包子"
       ],
       "tags": [
@@ -1405,7 +1405,7 @@
       "cuisine": "街頭小吃",
       "avgPrice": 40,
       "rating": 4.4,
-      "address": "Pingjiang Road",
+      "address": "平江路",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -1413,9 +1413,9 @@
       "hours": "10:00-22:00",
       "description": "歷史悠久的平江路沿線有各種街頭小吃攤，供應當地點心和美食。",
       "dishHighlights": [
-        "Sugar-coated hawthorn",
+        "糖葫蘆",
         "傳統糕點",
-        "Fried rice cakes"
+        "炒年糕"
       ],
       "tags": [
         "當地",
@@ -1433,10 +1433,10 @@
       "name": "懸慈巷蟹粉小籠",
       "nameEn": "Xuanci Lane Crab Soup Dumplings",
       "type": "本地",
-      "cuisine": "Jiangnan Dim Sum",
+      "cuisine": "江南點心",
       "avgPrice": 60,
       "rating": 4.7,
-      "address": "Near Shantang Street",
+      "address": "山塘街附近",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6072
@@ -1444,9 +1444,9 @@
       "hours": "07:00-14:00",
       "description": "受歡迎的當地餐廳，以蟹黃小籠包和正宗蘇式點心聞名。",
       "dishHighlights": [
-        "Crab roe xiaolongbao",
+        "蟹黃小籠包",
         "蝦仁水餃",
-        "Suzhou-style cakes"
+        "蘇式糕點"
       ],
       "tags": [
         "當地",
@@ -1492,10 +1492,10 @@
       "name": "水鄉人家",
       "nameEn": "Water Town Restaurant",
       "type": "本地",
-      "cuisine": "Jiangnan",
+      "cuisine": "江南",
       "avgPrice": 100,
       "rating": 4.6,
-      "address": "Pingjiang Road",
+      "address": "平江路",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -1524,7 +1524,7 @@
       "cuisine": "蘇州菜",
       "avgPrice": 200,
       "rating": 4.4,
-      "address": "Shantang Street",
+      "address": "山塘街",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6072
@@ -1534,11 +1534,11 @@
       "description": "歷史悠久的餐廳，充滿傳統氛圍。",
       "dishHighlights": [
         "松鼠魚",
-        "Bamboo shoot"
+        "竹筍"
       ],
       "tags": [
         "歷史",
-        "suzhou-cuisine"
+        "蘇州菜"
       ],
       "star": 0,
       "imageUrl": "/img/ext/273dda184180.webp"
@@ -1548,7 +1548,7 @@
       "name": "江南名廚",
       "nameEn": "Jiangnan Chef",
       "type": "本地",
-      "cuisine": "Jiangnan",
+      "cuisine": "江南",
       "avgPrice": 120,
       "rating": 4.7,
       "address": "觀前街",
@@ -1560,12 +1560,12 @@
       "hours": "11:00-14:00, 17:00-21:00",
       "description": "以現代手法詮釋傳統江南菜。",
       "dishHighlights": [
-        "Crispy duck",
-        "Lotus leaf rice"
+        "脆皮鴨",
+        "荷葉飯"
       ],
       "tags": [
         "現代",
-        "jiangnan"
+        "江南"
       ],
       "star": 0,
       "diamond": 0,
@@ -1576,10 +1576,10 @@
       "name": "太湖三白",
       "nameEn": "Taihu Delights",
       "type": "本地",
-      "cuisine": "Taihu",
+      "cuisine": "太湖",
       "avgPrice": 180,
       "rating": 4.5,
-      "address": "Lake Tai area",
+      "address": "太湖地區",
       "coordinates": {
         "lat": 31.2422,
         "lng": 120.4772
@@ -1588,7 +1588,7 @@
       "hours": "10:00-21:00",
       "description": "來自太湖的新鮮海產，包括白蝦。",
       "dishHighlights": [
-        "Taihu white shrimp",
+        "太湖白蝦",
         "螃蟹"
       ],
       "tags": [
@@ -1607,7 +1607,7 @@
       "cuisine": "蘇州菜",
       "avgPrice": 90,
       "rating": 4.3,
-      "address": "Xuanmiao Temple area",
+      "address": "玄妙觀周邊",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6472
@@ -1617,7 +1617,7 @@
       "description": "在經典庭院中品嚐傳統蘇幫菜。",
       "dishHighlights": [
         "蒸餃",
-        "Soy sauce pork"
+        "醬油豬肉"
       ],
       "tags": [
         "當地",
@@ -1644,12 +1644,12 @@
       "hours": "10:30-20:30",
       "description": "寺廟附近的佛教素食料理。",
       "dishHighlights": [
-        "Vegetable roasts",
-        "Mock meat"
+        "蔬菜烤物",
+        "素肉"
       ],
       "tags": [
         "素食",
-        "temple"
+        "寺廟"
       ],
       "star": 0,
       "diamond": 0,
@@ -1663,7 +1663,7 @@
       "cuisine": "甜點",
       "avgPrice": 30,
       "rating": 4.8,
-      "address": "Pingjiang Road",
+      "address": "平江路",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -1671,7 +1671,7 @@
       "hours": "08:00-18:00",
       "description": "以蘇式甜粥和甜點聞名。",
       "dishHighlights": [
-        "Sweet red bean porridge",
+        "紅豆甜粥",
         "桂花糕"
       ],
       "tags": [
@@ -1692,7 +1692,7 @@
       "cuisine": "火鍋",
       "avgPrice": 100,
       "rating": 4.2,
-      "address": "Shantang Street",
+      "address": "山塘街",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6072
@@ -1745,10 +1745,10 @@
       "name": "太湖船菜",
       "nameEn": "Taihu Boat Restaurant",
       "type": "本地",
-      "cuisine": "Taihu",
+      "cuisine": "太湖",
       "avgPrice": 200,
       "rating": 4.5,
-      "address": "Lake Tai area",
+      "address": "太湖地區",
       "coordinates": {
         "lat": 31.2522,
         "lng": 120.4772
@@ -1787,8 +1787,8 @@
       "hours": "08:00-17:00",
       "description": "傳統茶館，可欣賞花園景觀。",
       "dishHighlights": [
-        "Dragon Well tea",
-        "Suzhou snacks"
+        "龍井茶",
+        "蘇州小吃"
       ],
       "tags": [
         "茶樓",
@@ -1803,10 +1803,10 @@
       "name": "山塘街小籠",
       "nameEn": "Shantang Street Xiaolong",
       "type": "本地",
-      "cuisine": "Dim Sum",
+      "cuisine": "點心",
       "avgPrice": 40,
       "rating": 4.7,
-      "address": "Shantang Street",
+      "address": "山塘街",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6072
@@ -1814,7 +1814,7 @@
       "hours": "07:00-14:00",
       "description": "品嚐正宗蘇州小籠包的當地店家。",
       "dishHighlights": [
-        "Soup dumplings",
+        "湯包",
         "豬肉包子"
       ],
       "tags": [
@@ -1832,10 +1832,10 @@
       "name": "桃花源記",
       "nameEn": "桃花源",
       "type": "本地",
-      "cuisine": "Jiangnan",
+      "cuisine": "江南",
       "avgPrice": 120,
       "rating": 4.5,
-      "address": "Pingjiang Road",
+      "address": "平江路",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -2682,8 +2682,8 @@
       {
         "type": "bus",
         "from": "上海（1.5小時）、杭州（2小時）",
-        "to": "Suzhou Bus Station",
-        "duration": "1.5-2 hours",
+        "to": "蘇州汽車站",
+        "duration": "1.5-2小時",
         "price": "50-80¥",
         "frequency": "主要城市有頻繁的巴士班次",
         "tips": "從上海虹橋和浦東出發的巴士很舒適。巴士站位於老城區附近。"
@@ -2691,28 +2691,28 @@
     ],
     "local": {
       "metro": [
-        "5 lines operational",
-        "Single ride: 2-8¥",
+        "5條營運路線",
+        "單程票：2-8元人民幣",
         "1號線、2號線可達旅遊區",
         "連接火車站"
       ],
       "bus": [
-        "Extensive city network",
-        "Single ride: 2¥",
+        "廣泛的城市網絡",
+        "單程票：2元",
         "旅遊區交通便利",
         "Google 地圖可用於導航"
       ],
       "taxi": [
         "起跳價：14元（前3公裡）",
         "夜間加成：加收20%",
-        "Within old town: 20-40¥",
+        "古城內：20-40元人民幣",
         "建議使用滴滴，支援英文"
       ],
       "boat": [
-        "Shantang Street boat: 50-120¥",
-        "Canal tours available",
-        "Pingjiang Road boat rides",
-        "Good way to see water towns"
+        "山塘街遊船：50-120元人民幣",
+        "提供運河遊船",
+        "平江路遊船",
+        "欣賞水鄉的好方式"
       ],
       "bike": [
         "共享單車隨處可見",
@@ -2726,8 +2726,8 @@
       "name": "蘇州老城牆飯店",
       "nameEn": "Suzhou Old City Wall Hotel",
       "budget": "luxury",
-      "priceRange": "¥800-2000/night",
-      "address": "88 Pingjiang Road",
+      "priceRange": "每晚800至2000元人民幣",
+      "address": "平江路88號",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -2739,14 +2739,14 @@
         "市中心位置",
         "花園景觀"
       ],
-      "bookingTips": "Book well ahead. Request canal view room."
+      "bookingTips": "請提前預訂。要求入住面向運河的房間。"
     },
     {
       "name": "蘇州香格裡拉大酒店",
       "nameEn": "Shangri-La Hotel Suzhou",
       "budget": "luxury",
-      "priceRange": "¥1200-2500/night",
-      "address": "168 Tao River Road",
+      "priceRange": "每晚1200-2500元人民幣",
+      "address": "桃河路168號",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6172
@@ -2758,14 +2758,14 @@
         "多家餐廳",
         "豪華設施"
       ],
-      "bookingTips": "Best location for first-time visitors. Check weekend rates."
+      "bookingTips": "首次造訪者的最佳位置。請查看週末房價。"
     },
     {
       "name": "蘇州南園賓館",
       "nameEn": "Suzhou Nan Yuan Hotel",
       "budget": "mid",
-      "priceRange": "¥500-1200/night",
-      "address": "343 Xiangmen Road",
+      "priceRange": "每晚500至1200元人民幣",
+      "address": "廈門路343號",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6272
@@ -2777,14 +2777,14 @@
         "傳統氛圍",
         "物超所值"
       ],
-      "bookingTips": "Former residence of Chiang Kai-shek. Book garden view rooms."
+      "bookingTips": "蔣中正故居。請預訂花園景觀房。"
     },
     {
       "name": "平江府酒店",
       "nameEn": "Pingjiang Fu Hotel",
       "budget": "luxury",
-      "priceRange": "¥1000-2500/night",
-      "address": "77 Pingjiang Road",
+      "priceRange": "每晚1000至2500元人民幣",
+      "address": "平江路77號",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -2796,14 +2796,14 @@
         "傳統庭院",
         "黃金地段"
       ],
-      "bookingTips": "Renovated historical building. Best for romantic getaways."
+      "bookingTips": "翻新後的歷史建築。最適合浪漫度假。"
     },
     {
       "name": "觀前街酒店",
       "nameEn": "Guanqian Street Hotel",
       "budget": "budget",
-      "priceRange": "¥200-500/night",
-      "address": "Guanqian Street area",
+      "priceRange": "每晚200-500元人民幣",
+      "address": "觀前街區域",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -2815,14 +2815,14 @@
         "經濟實惠",
         "市中心"
       ],
-      "bookingTips": "Great for shoppers. Many chain hotels available."
+      "bookingTips": "購物天堂。多家連鎖飯店可供選擇。"
     },
     {
       "name": "蘇州W酒店",
       "nameEn": "W Suzhou",
       "budget": "luxury",
-      "priceRange": "¥1500-3500/night",
-      "address": "Suzhou Center",
+      "priceRange": "每晚1500-3500元",
+      "address": "蘇州中心",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
@@ -2833,14 +2833,14 @@
         "空中酒吧",
         "水療"
       ],
-      "bookingTips": "Best views of city."
+      "bookingTips": "城市最佳景觀。"
     },
     {
       "name": "蘇州希爾頓",
       "nameEn": "Hilton Suzhou",
       "budget": "luxury",
-      "priceRange": "¥1000-2000/night",
-      "address": "Suzhou Industrial Park",
+      "priceRange": "每晚1000-2000元人民幣",
+      "address": "蘇州工業園區",
       "coordinates": {
         "lat": 31.3422,
         "lng": 120.6772
@@ -2851,14 +2851,14 @@
         "遊泳池",
         "多間餐廳"
       ],
-      "bookingTips": "Good for business travelers."
+      "bookingTips": "適合商務旅客。"
     },
     {
       "name": "蘇州凱悅",
       "nameEn": "Hyatt Regency Suzhou",
       "budget": "luxury",
-      "priceRange": "¥1200-2500/night",
-      "address": "Suzhou Center",
+      "priceRange": "每晚1200-2500元人民幣",
+      "address": "蘇州中心",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6472
@@ -2868,14 +2868,14 @@
         "中心位置",
         "豪華設施"
       ],
-      "bookingTips": "Book canal view."
+      "bookingTips": "預訂運河景觀房。"
     },
     {
       "name": "蘇州福朋喜來登",
       "nameEn": "Four Points Suzhou",
       "budget": "mid",
-      "priceRange": "¥600-1200/night",
-      "address": "Guanqian Area",
+      "priceRange": "每晚600-1200元",
+      "address": "觀前地區",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6372
@@ -2886,14 +2886,14 @@
         "舒適",
         "高性價比"
       ],
-      "bookingTips": "Good location for sightseeing."
+      "bookingTips": "地理位置優越，適合觀光。"
     },
     {
       "name": "蘇州萬怡",
       "nameEn": "Courtyard Suzhou",
       "budget": "mid",
-      "priceRange": "¥500-1000/night",
-      "address": "Near Jinji Lake",
+      "priceRange": "每晚500-1000元人民幣",
+      "address": "鄰近金雞湖",
       "coordinates": {
         "lat": 31.3522,
         "lng": 120.6972
@@ -2904,14 +2904,14 @@
         "現代",
         "高性價比"
       ],
-      "bookingTips": "Great for lakeside walks."
+      "bookingTips": "適合湖邊散步。"
     },
     {
       "name": "蘇州亞朵酒店",
       "nameEn": "Atour Suzhou",
       "budget": "mid",
-      "priceRange": "¥400-800/night",
-      "address": "Multiple locations",
+      "priceRange": "每晚400至800元人民幣",
+      "address": "多個地點",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
@@ -2922,14 +2922,14 @@
         "閱讀室",
         "中式風格"
       ],
-      "bookingTips": "Book themed rooms."
+      "bookingTips": "可預訂主題客房。"
     },
     {
       "name": "蘇州如家",
       "nameEn": "Home Inn Suzhou",
       "budget": "budget",
-      "priceRange": "¥150-300/night",
-      "address": "Multiple locations",
+      "priceRange": "每晚150至300元人民幣",
+      "address": "多個地點",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6372
@@ -2940,14 +2940,14 @@
         "品質穩定",
         "地點中心"
       ],
-      "bookingTips": "Budget travelers."
+      "bookingTips": "適合預算有限的旅客。"
     },
     {
       "name": "蘇州漢庭",
       "nameEn": "Hanting Suzhou",
       "budget": "budget",
-      "priceRange": "¥120-250/night",
-      "address": "Multiple locations",
+      "priceRange": "每晚120-250元人民幣",
+      "address": "多個地點",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -2958,14 +2958,14 @@
         "乾淨整潔",
         "地鐵方便"
       ],
-      "bookingTips": "Check location before booking."
+      "bookingTips": "訂房前請確認地理位置。"
     },
     {
       "name": "蘇州桔子水晶",
       "nameEn": "Crystal Orange Suzhou",
       "budget": "budget",
-      "priceRange": "¥200-400/night",
-      "address": "Near Guanqian",
+      "priceRange": "每晚200-400元人民幣",
+      "address": "鄰近觀前",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
@@ -2976,14 +2976,14 @@
         "淋浴設備佳",
         "物有所值"
       ],
-      "bookingTips": "Design-conscious budget."
+      "bookingTips": "注重設計的平價選擇。"
     },
     {
       "name": "平江路民宿",
       "nameEn": "Pingjiang Lane Homestay",
       "budget": "mid",
-      "priceRange": "¥300-600/night",
-      "address": "Pingjiang Road",
+      "priceRange": "每晚300-600元人民幣",
+      "address": "平江路",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
@@ -2994,33 +2994,33 @@
         "傳統風格",
         "地點中心"
       ],
-      "bookingTips": "Book well ahead for best rooms."
+      "bookingTips": "提前預訂，才能訂到最好的房間。"
     }
   ],
   "payment": [
     {
       "method": "Alipay",
       "icon": "alipay",
-      "description": "Universal in Suzhou",
+      "description": "蘇州通用",
       "howToUse": [
-        "Download before arrival",
-        "Link card or account"
+        "抵達前下載",
+        "綁定卡片或帳戶"
       ],
       "tips": [
         "適用於所有餐廳和商店",
-        "English available"
+        "提供英語服務"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Accepted everywhere",
+      "description": "到處都可使用",
       "howToUse": [
-        "WeChat required",
-        "International cards work"
+        "需使用微信",
+        "國際信用卡可使用"
       ],
       "tips": [
-        "Set to English",
+        "設定為英文",
         "小型攤販必備"
       ]
     },
@@ -3030,10 +3030,10 @@
       "description": "在傳統市場很有用",
       "howToUse": [
         "ATM 隨處可用",
-        "Banks in city"
+        "市區內的銀行"
       ],
       "tips": [
-        "Keep 200¥ for markets",
+        "留200元人民幣逛市場",
         "大多數餐廳接受信用卡"
       ]
     }
@@ -3041,49 +3041,49 @@
   "culturalTips": [
     {
       "category": "gardens",
-      "title": "Garden Etiquette",
+      "title": "園林禮儀",
       "content": "蘇州的古典園林是聯合國教科文組織的世界遺產。參觀時請保持安靜，不要觸摸植物。早晨參觀能拍到最佳照片且遊客較少。每個園林都蘊含著哲學故事。",
       "importance": "high"
     },
     {
       "category": "silk",
-      "title": "Silk Culture",
+      "title": "絲綢文化",
       "content": "蘇州以絲綢生產聞名。可以參觀絲綢工廠觀看織造示範。真絲價格較高，可在市場上議價。蘇繡是另一項著名工藝。",
       "importance": "medium"
     },
     {
       "category": "food",
-      "title": "Suzhou Cuisine",
+      "title": "蘇州美食",
       "content": "蘇州菜比上海菜更清淡香甜。必嘗美食：松鼠鱖魚（松鼠鱖魚）、吳淞鴨以及當季的蟹料理。早餐可在傳統茶館享用。",
       "importance": "high"
     },
     {
       "category": "water-towns",
-      "title": "Water Town Visits",
+      "title": "水鄉遊覽",
       "content": "周莊和同裡是主要的水鄉古鎮。周莊更為出名但遊客較多，同裡則較為寧靜。建議早晨前往。若想一天內遊覽兩個古鎮會較為倉促。",
       "importance": "medium"
     },
     {
       "category": "etiquette",
-      "title": "Greeting Etiquette",
+      "title": "問候禮儀",
       "content": "雙手合十微微鞠躬是傳統的問候方式。握手也是可以接受的。應以頭銜和姓氏稱呼他人。",
       "importance": "medium"
     },
     {
       "category": "dining",
-      "title": "Dining Customs",
+      "title": "用餐習俗",
       "content": "等待主人開始用餐。留一些食物在盤中以示已飽。用筷子敲擊被認為是不禮貌的。",
       "importance": "high"
     },
     {
       "category": "dress",
-      "title": "Dress Code",
+      "title": "服裝規定",
       "content": "餐廳著裝建議為休閒正式。進入住宅和一些傳統建築時需脫鞋。在寺廟時需覆蓋肩膀。",
       "importance": "low"
     },
     {
       "category": "bargaining",
-      "title": "Shopping and Bargaining",
+      "title": "購物與議價",
       "content": "在市場購物時，預期需要討價還價。從標價的30-40%開始出價。要友善但堅定。大多數固定價格的商店價格合理。",
       "importance": "medium"
     },
@@ -3101,25 +3101,25 @@
     },
     {
       "category": "photography",
-      "title": "Photography Ethics",
+      "title": "攝影倫理",
       "content": "在拍攝人物之前請先徵求許可。一些寺廟禁止在內部拍照。使用閃光燈可能會損壞古代文物。",
       "importance": "low"
     },
     {
       "category": "silk",
-      "title": "Silk Shopping Guide",
+      "title": "絲綢購物指南",
       "content": "真正的絲綢價格較高。請檢查認證。絲綢布料按米銷售。在市場可以議價，但在品牌商店不行。",
       "importance": "medium"
     },
     {
       "category": "garden",
-      "title": "Garden Visitation",
+      "title": "園林參觀",
       "content": "建議早上7:30-8:00到達以避開旅遊團。拙政園和留園最為著名。購買園林通票可以省錢。",
       "importance": "medium"
     },
     {
       "category": "seasonal",
-      "title": "Best Seasons",
+      "title": "最佳季節",
       "content": "春季（4月至5月）可以欣賞花卉和宜人的天氣。秋季（9月至11月）可以觀賞菊花和涼爽的夜晚。夏季則炎熱潮濕。",
       "importance": "low"
     },
@@ -3131,13 +3131,13 @@
     },
     {
       "category": "arts",
-      "title": "Kunqu Opera",
+      "title": "崑曲",
       "content": "崑曲是蘇州最著名的表演藝術。您可以在崑曲博物館或夜晚的園林中觀賞表演。",
       "importance": "low"
     },
     {
       "category": "water",
-      "title": "Water Town Etiquette",
+      "title": "水鄉禮儀",
       "content": "參觀周莊等水鄉時，請尊重當地居民。不要阻塞門口或未經許可拍攝室內場景。",
       "importance": "low"
     }

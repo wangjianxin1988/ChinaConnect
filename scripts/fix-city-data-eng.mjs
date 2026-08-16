@@ -209,6 +209,7 @@ for (const lang of LANGS) {
     for (const [p, v] of Object.entries(walk(target))) {
       if (p.endsWith(".name") || p.endsWith(".nameEn") || p.endsWith(".category") || p.endsWith(".importance")) continue;
       if (p === "name") continue;
+      if (p.endsWith(".id") || p.endsWith(".slug") || p.endsWith(".image") || p.endsWith(".coverImage")) continue;
       if (p.includes("emergencyContacts")) continue;
       if (isKeepableToken(v)) continue;
       const enV = enFields[p];
@@ -237,6 +238,7 @@ for (const lang of LANGS) {
         if (!CJK_RE.test(v)) continue;
         if (p.endsWith(".name") || p.endsWith(".nameEn") || p.endsWith(".category") || p.endsWith(".importance")) continue;
         if (p === "name") continue;
+        if (p.endsWith(".id") || p.endsWith(".slug") || p.endsWith(".image") || p.endsWith(".coverImage")) continue;
         if (p.includes("emergencyContacts")) continue;
         const enV = enFields[p];
         const jaV = jaFields[p];
