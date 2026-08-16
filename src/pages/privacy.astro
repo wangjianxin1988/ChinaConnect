@@ -1,0 +1,59 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { translations } from "@/i18n/translations";
+
+const pageTitle = translations.en.privacyPage?.pageTitle || "Privacy Policy - ChinaConnect";
+const pageDescription = translations.en.privacyPage?.pageDescription || "How ChinaConnect collects, uses, and protects your data.";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <main class="bg-gray-50 min-h-screen">
+    <section class="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16">
+      <div class="container-custom">
+        <h1 class="text-4xl font-bold mb-3" data-i18n="privacyPage.pageTitle">Privacy Policy</h1>
+        <p class="text-blue-100" data-i18n="privacyPage.lastUpdated">Last updated: August 2026</p>
+      </div>
+    </section>
+    <section class="py-12">
+      <div class="container-custom max-w-3xl">
+        <p class="text-gray-700 mb-8" data-i18n="privacyPage.intro">This Privacy Policy explains how ChinaConnect ("we", "us") collects, uses, and protects your personal information when you use our website and services.</p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4" data-i18n="privacyPage.collectTitle">1. Information We Collect</h2>
+        <ul class="list-disc list-inside space-y-3 text-gray-700 mb-8">
+          <li data-i18n="privacyPage.collect1">Information you provide: account details, saved favorites, and chat messages with the AI assistant.</li>
+          <li data-i18n="privacyPage.collect2">Usage data: pages visited, language preference, and device type to improve our services.</li>
+          <li data-i18n="privacyPage.collect3">Location data: only when you use location features like GPS sharing or nearby search.</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4" data-i18n="privacyPage.useTitle">2. How We Use Your Information</h2>
+        <ul class="list-disc list-inside space-y-3 text-gray-700 mb-8">
+          <li data-i18n="privacyPage.use1">To provide and improve our travel guides, AI assistant, and city information.</li>
+          <li data-i18n="privacyPage.use2">To personalize content and language preferences.</li>
+          <li data-i18n="privacyPage.use3">To respond to your requests and support inquiries.</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4" data-i18n="privacyPage.shareTitle">3. Sharing of Information</h2>
+        <ul class="list-disc list-inside space-y-3 text-gray-700 mb-8">
+          <li data-i18n="privacyPage.share1">We do not sell your personal data.</li>
+          <li data-i18n="privacyPage.share2">We may share anonymized data with analytics providers to understand site usage.</li>
+          <li data-i18n="privacyPage.share3">Location searches use OpenStreetMap's Nominatim service; only the coordinates you request are sent.</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4" data-i18n="privacyPage.cookiesTitle">4. Cookies and Local Storage</h2>
+        <ul class="list-disc list-inside space-y-3 text-gray-700 mb-8">
+          <li data-i18n="privacyPage.cookies1">We use local storage to remember your language preference and recently viewed cities.</li>
+          <li data-i18n="privacyPage.cookies2">Essential cookies help the website function. No advertising cookies are used.</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4" data-i18n="privacyPage.rightsTitle">5. Your Rights</h2>
+        <ul class="list-disc list-inside space-y-3 text-gray-700 mb-8">
+          <li data-i18n="privacyPage.rights1">You can request access to, correction of, or deletion of your personal data by contacting us.</li>
+          <li data-i18n="privacyPage.rights2">You can clear your browsing data at any time through your browser settings.</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4" data-i18n="privacyPage.contactTitle">6. Contact Us</h2>
+        <p class="text-gray-700" data-i18n="privacyPage.contact1">For privacy questions, email us at support@chinaengage.org.</p>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

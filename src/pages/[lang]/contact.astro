@@ -1,0 +1,46 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { translations } from "@/i18n/translations";
+import type { Language } from "@/i18n/translations";
+
+export function getStaticPaths() {
+  const langs = ["ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"] as Language[];
+  return langs.map((lang) => ({ params: { lang } }));
+}
+
+const lang = (Astro.params.lang as Language) || "en";
+const t = translations[lang] || translations.en;
+const pageTitle = t.contactPage?.pageTitle || translations.en.contactPage?.pageTitle || "Contact Us - ChinaConnect";
+const pageDescription = t.contactPage?.pageDescription || translations.en.contactPage?.pageDescription || "Get in touch with the ChinaConnect team.";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} lang={lang}>
+  <main class="bg-gray-50 min-h-screen">
+    <section class="bg-gradient-to-br from-teal-600 to-teal-800 text-white py-16">
+      <div class="container-custom">
+        <h1 class="text-4xl font-bold mb-3" data-i18n="contactPage.pageTitle">Contact Us</h1>
+        <p class="text-teal-100" data-i18n="contactPage.intro">We'd love to hear from you. Reach out for support, feedback, or partnership inquiries.</p>
+      </div>
+    </section>
+    <section class="py-12">
+      <div class="container-custom max-w-3xl grid md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <h2 class="text-xl font-bold text-gray-900 mb-3" data-i18n="contactPage.emailTitle">Email</h2>
+          <p class="text-gray-700"><a href="mailto:support@chinaengage.org" class="text-teal-600 font-medium">support@chinaengage.org</a></p>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <h2 class="text-xl font-bold text-gray-900 mb-3" data-i18n="contactPage.responseTitle">Response Time</h2>
+          <p class="text-gray-700" data-i18n="contactPage.response1">We typically respond within 1-2 business days.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <h2 class="text-xl font-bold text-gray-900 mb-3" data-i18n="contactPage.feedbackTitle">Feedback</h2>
+          <p class="text-gray-700" data-i18n="contactPage.feedback1">Found a translation issue or outdated information? Let us know which page and language.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <h2 class="text-xl font-bold text-gray-900 mb-3" data-i18n="contactPage.partnershipTitle">Partnerships</h2>
+          <p class="text-gray-700" data-i18n="contactPage.partnership1">For business or partnership opportunities, email partnerships@chinaengage.org.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
