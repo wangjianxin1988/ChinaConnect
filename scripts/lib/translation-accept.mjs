@@ -69,7 +69,7 @@ export function isKeepableToken(s) {
   if (SHORT_ID_RE.test(t)) return true;
   if (DASHED_ID_RE.test(t) && t.length <= 16) return true;
   if (BRAND_TOKENS.has(t)) return true;
-  if (t.endsWith("¥") || t.startsWith("¥")) return true;
+  if ((t.endsWith("¥") || t.startsWith("¥")) && !/[A-Za-z]/.test(t)) return true;
   return false;
 }
 
