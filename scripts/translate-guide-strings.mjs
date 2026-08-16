@@ -1,12 +1,13 @@
 // Translate guide strings into one language, output src/data/guide/overrides-<lang>.ts
-// Usage: node scripts/translate-guide-strings.mjs --lang=ko
+// v2: partial batch acceptance + refill of identity/contaminated values.
+// Usage: node scripts/translate-guide-strings.mjs --lang=ko [--force]
 import fs from "node:fs";
 import { getTranslateProvider } from "./lib/translate-provider.mjs";
-import { isTranslated } from "./lib/translation-keys.mjs";
 import { acceptTranslation } from "./lib/translation-accept.mjs";
+import { isKeepableToken } from "./lib/translation-accept.mjs";
 
 const { apiKey: KEY, baseUrl: HOST, model: MODEL } = getTranslateProvider();
-const BATCH_SIZE = 15;
+const BATCH_SIZE = 8;
 const RETRY_ATTEMPTS = 4;
 const TARGETS = {
   ja: "Japanese", ko: "Korean", "zh-CN": "Simplified Chinese", "zh-TW": "Traditional Chinese (Taiwan)",
@@ -14,12 +15,30 @@ const TARGETS = {
   ar: "Modern Standard Arabic", fa: "Modern Persian (Farsi)", en: "English",
 };
 
+const KANA = "\\u3040-\\u30ff", CJK = "\\u3400-\\u9fff", HANGUL = "\\uac00-\\ud7af",
+      CYR = "\\u0400-\\u04ff", ARAB = "\\u0600-\\u06ff", THAI = "\\u0e00-\\u0e7f";
+const DISALLOWED = {
+  ja:  new RegExp("[" + HANGUL + CYR + ARAB + THAI + "]"),
+  ko:  new RegExp("[" + CJK + KANA + CYR + ARAB + THAI + "]"),
+  "zh-CN": new RegExp("[" + KANA + HANGUL + CYR + ARAB + THAI + "]"),
+  "zh-TW": new RegExp("[" + KANA + HANGUL + CYR + ARAB + THAI + "]"),
+  th:  new RegExp("[" + CJK + KANA + HANGUL + CYR + ARAB + "]"),
+  vi:  new RegExp("[" + CJK + KANA + HANGUL + CYR + ARAB + THAI + "]"),
+  ru:  new RegExp("[" + CJK + KANA + HANGUL + ARAB + THAI + "]"),
+  fr:  new RegExp("[" + CJK + KANA + HANGUL + CYR + ARAB + THAI + "]"),
+  de:  new RegExp("[" + CJK + KANA + HANGUL + CYR + ARAB + THAI + "]"),
+  ar:  new RegExp("[" + CJK + KANA + HANGUL + CYR + THAI + "]"),
+  fa:  new RegExp("[" + CJK + KANA + HANGUL + CYR + THAI + "]"),
+};
+
 const args = process.argv.slice(2);
 const lang = args.find((a) => a.startsWith("--lang="))?.split("=")[1];
+const force = args.includes("--force");
 if (!lang || lang === "ja") {
   console.error("--lang required (non-ja)");
   process.exit(1);
 }
+const disallow = DISALLOWED[lang] ?? null;
 const source = JSON.parse(fs.readFileSync(".audit/guide-strings.json", "utf8"));
 const strings = source.strings;
 const outFile = `src/data/guide/overrides-${lang}.ts`;
@@ -32,12 +51,20 @@ if (fs.existsSync(outFile)) {
 
 const hasCJK = (s) => /[\u3400-\u9fff]/.test(s);
 // For zh-CN / zh-TW, Chinese strings stay as-is (zhconv pass handles zh-TW conversion).
+// For other languages, re-translate identity values and values with foreign scripts.
 const needsApi = strings.filter((s) => {
-  if (existing[s] !== undefined) return false;
-  if (lang === "zh-CN" || lang === "zh-TW") return !hasCJK(s);
-  return true;
+  const v = existing[s];
+  if (v === undefined) return true;
+  if (lang === "zh-CN" || lang === "zh-TW") {
+    if (hasCJK(s)) return false; // Chinese stays as-is
+  } else {
+    if (v === s && !isKeepableToken(s)) return true; // identity not keepable -> refill
+  }
+  if (force) return true;
+  if (disallow && disallow.test(v)) return true; // contamination -> refill
+  return false;
 });
-console.log(`[${lang}] total=${strings.length} needsApi=${needsApi.length} existing=${Object.keys(existing).length}`);
+console.log(`[${lang}] total=${strings.length} needsApi=${needsApi.length} existing=${Object.keys(existing).length} force=${force}`);
 
 function unescapeTs(s) {
   return s.replace(/\\"/g, '"').replace(/\\\\/g, "\\").replace(/\\n/g, "\n");
@@ -75,55 +102,65 @@ function extractJson(content) {
   throw new Error("No closing JSON object");
 }
 
+function goodValue(value, source) {
+  if (typeof value !== "string" || value.length === 0) return false;
+  if (disallow && disallow.test(value)) return false;
+  return acceptTranslation(value, lang, source);
+}
+
+// Translate a batch with partial acceptance: valid keys are kept, invalid ones retried.
 async function translateBatch(batch) {
-  const lines = batch.map((s, i) => `k${i} = "${escapeTs(s)}"`).join("\n");
-  const prompt = `You are a professional translator for ChinaConnect (chinaengage.org), a Chinese travel website.
+  const remaining = [...batch];
+  const accepted = [];
+  let attempt = 0;
+  while (attempt < RETRY_ATTEMPTS && remaining.length > 0) {
+    attempt += 1;
+    const lines = remaining.map((s, i) => `k${i} = "${escapeTs(s)}"`).join("\n");
+    const prompt = `You are a professional translator for ChinaConnect (chinaengage.org), a Chinese travel website.
 Translate the following strings into ${TARGETS[lang]} for foreign visitors.
 Content: visa rules, transport, payment, dining, etiquette, emergency, business and travel guide content.
 RULES:
-- Output ONLY a single flat JSON object with EXACTLY ${batch.length} keys (k0 ... k${batch.length - 1}).
+- Output ONLY a single flat JSON object with EXACTLY ${remaining.length} keys (k0 ... k${remaining.length - 1}).
 - No markdown, no commentary, no extra keys.
-- Translate EVERY value into ${TARGETS[lang]}. Do NOT keep English or Chinese text.
-- Keep numbers, prices, times, units, brand names, phone numbers and URLs unchanged.
-- Keep proper nouns recognizable (Forbidden City = ${lang === "zh-CN" ? "故宫" : lang === "zh-TW" ? "故宮" : "literal translation in target language"}).
+- Translate EVERY value into ${TARGETS[lang]}. Do NOT keep English or Chinese text unless it is a brand name, number, price, time, unit, phone number, URL or proper noun.
+- Do NOT leave any Chinese characters in the output. Proper nouns should be transliterated into ${TARGETS[lang]} or kept as standard English/pinyin.
+- For Chinese proper nouns and dish names, give a ${TARGETS[lang]} gloss in parentheses where helpful.
 
 ${lines}`;
-  for (let attempt = 1; attempt <= RETRY_ATTEMPTS; attempt += 1) {
     try {
       const content = await callChat(prompt);
       const result = extractJson(content);
-      const keys = Object.keys(result);
-      const ok = keys.length === batch.length && batch.every((s, i) => typeof result[`k${i}`] === "string" && acceptTranslation(result[`k${i}`], lang, s));
-      if (!ok) throw new Error("Incomplete translation response");
-      return batch.map((_, i) => result[`k${i}`]);
+      const newRemaining = [];
+      let acceptedNow = 0;
+      remaining.forEach((s, i) => {
+        const raw = result[`k${i}`];
+        if (goodValue(raw, s)) {
+          accepted.push(raw);
+          acceptedNow += 1;
+        } else {
+          newRemaining.push(s);
+        }
+      });
+      if (newRemaining.length < remaining.length) {
+        console.warn(`  partial: +${acceptedNow} accepted, ${newRemaining.length} remaining (attempt ${attempt})`);
+      }
+      remaining.splice(0, remaining.length, ...newRemaining);
     } catch (error) {
       console.warn(`  retry ${attempt}: ${error?.message || error}`);
     }
     await new Promise((resolve) => setTimeout(resolve, 1000 * attempt * attempt));
   }
-  // Fallback: single-key (bounded, no infinite recursion)
-  const out = [];
-  for (let i = 0; i < batch.length; i += 1) {
-    const one = batch[i];
-    try {
-      const [r] = await translateBatch([one]);
-      out.push(r);
-    } catch {
-      out.push(one);
-    }
-  }
-  return out;
+  return accepted;
 }
 
 for (let i = 0; i < needsApi.length; i += BATCH_SIZE) {
   const batch = needsApi.slice(i, i + BATCH_SIZE);
   const startedAt = Date.now();
   const results = await translateBatch(batch);
-  batch.forEach((s, idx) => { existing[s] = results[idx]; });
-  // Write progress incrementally
+  batch.forEach((s, idx) => { existing[s] = results[idx] ?? existing[s] ?? s; });
   writeFile();
   const elapsed = Date.now() - startedAt;
-  console.log(`  [${new Date().toISOString().slice(11, 19)}] batch ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(needsApi.length / BATCH_SIZE)} done in ${elapsed}ms`);
+  console.log(`  [${new Date().toISOString().slice(11, 19)}] batch ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(needsApi.length / BATCH_SIZE)} done ${results.length}/${batch.length} in ${elapsed}ms`);
 }
 
 function writeFile() {
@@ -137,3 +174,4 @@ export const ${lang.toUpperCase().replace("-", "_")}_GUIDE_OVERRIDES: Record<str
 }
 writeFile();
 console.log(`[${lang}] done: ${Object.keys(existing).length} entries -> ${outFile}`);
+

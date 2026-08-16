@@ -3,12 +3,12 @@
 import fs from "node:fs";
 import { getTranslateProvider } from "./lib/translate-provider.mjs";
 import { isTranslated } from "./lib/translation-keys.mjs";
-import { acceptTranslation } from "./lib/translation-accept.mjs";
+import { acceptTranslation, isKeepableToken } from "./lib/translation-accept.mjs";
 import { APP_CATEGORIES, APP_RECOMMENDATIONS } from "../src/data/apps/app-recommendations.ts";
 import { NATIONAL_EMERGENCY_NUMBERS } from "../src/data/emergency/global-contacts.ts";
 
 const { apiKey: KEY, baseUrl: HOST, model: MODEL } = getTranslateProvider();
-const BATCH_SIZE = 15;
+const BATCH_SIZE = 8;
 const RETRY_ATTEMPTS = 4;
 const TARGETS = {
   ja: "Japanese", ko: "Korean", "zh-CN": "Simplified Chinese", "zh-TW": "Traditional Chinese (Taiwan)",
@@ -49,7 +49,7 @@ const appExisting = readExisting(appPath);
 const emergencyExisting = readExisting(emergencyPath);
 const existing = { ...appExisting, ...emergencyExisting };
 
-const toTranslate = entries.filter(([key]) => existing[key] === undefined);
+const toTranslate = entries.filter(([key]) => existing[key] === undefined || (existing[key] === key && !isKeepableToken(key)));
 console.log(`[${lang}] to translate: ${toTranslate.length}`);
 
 async function callChat(prompt) {
