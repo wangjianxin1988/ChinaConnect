@@ -2224,167 +2224,186 @@
     {
       "type": "fire",
       "name": "昆明消防",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Kunming Fire Department",
       "phone": "119",
-      "notes": "싱가포르 시민용"
+      "notes": "싱가포르 시민용",
+      "nameKo": "쿤밍 소방서"
     },
     {
       "type": "ambulance",
       "name": "쿤밍 응급센터",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Kunming Emergency Center",
       "phone": "120",
-      "notes": "싱가포르 시민용"
+      "notes": "싱가포르 시민용",
+      "nameKo": "쿤밍 응급의료센터"
     },
     {
       "type": "police",
       "name": "昆明市公安局",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Kunming Public Security Bureau",
       "phone": "110",
-      "notes": "싱가포르 시민용"
+      "notes": "싱가포르 시민용",
+      "nameKo": "쿤밍 공안국"
     },
     {
       "id": "police",
       "name": "昆明市公安局",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Kunming Police Bureau",
       "phone": "110",
       "type": "police",
       "description": "쿤밍시 police emergency 핫라인",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "쿤밍 경찰청"
     },
     {
       "id": "fire",
       "name": "昆明市消防支队",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Kunming Fire Department",
       "phone": "119",
       "type": "fire",
       "description": "화재 및 구조 emergency",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "쿤밍 소방서"
     },
     {
       "id": "ambulance",
       "name": "쿤밍시 응급센터",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Kunming Emergency Medical Center",
       "phone": "120",
       "type": "medical",
       "description": "의료 emergency 및 구급차 서비스",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "쿤밍 응급 의료 센터"
     },
     {
       "id": "tourism-hotline",
       "name": "쿤밍시 관광 불만 신고 핫라인",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Kunming Tourism Complaint Hotline",
       "phone": "0871-12345",
       "type": "tourism",
       "description": "관광 불만 및 관광객 지원",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "쿤밍 관광 불만 신고 핫라인"
     },
     {
       "id": "entry-exit",
       "name": "昆明市公安局出入境管理处",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Kunming Exit-Entry Administration",
       "phone": "0871-6715555",
       "type": "government",
       "description": "Passport, 비자 및 출입국 서비스",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "쿤밍 출입국 관리 사무소"
     },
     {
       "id": "supervision",
       "name": "昆明市旅游执法支队",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Kunming Tourism Enforcement Brigade",
       "phone": "0871-6535233",
       "type": "tourism",
       "description": "불법 관광 활동 신고",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "쿤밍 관광 단속반"
     },
     {
       "id": "weather",
       "name": "昆明市气象局",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Kunming Meteorological Bureau",
       "phone": "12121",
       "type": "weather",
       "description": "일기 예보 및 심각한 기상 경보",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "쿤밍 기상청"
     },
     {
       "id": "consumer-complaints",
       "name": "昆明市消费者协会",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Kunming Consumers Association",
       "phone": "0871-12315",
       "type": "consumer",
       "description": "소비자 권리 보호 및 불만 접수",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "쿤밍 소비자 협회"
     },
     {
       "id": "forestry",
       "name": "昆明市森林防火指挥部",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Kunming Forest Fire Prevention",
       "phone": "0871-12119",
       "type": "emergency",
       "description": "산불 신고 및 예방",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "쿤밍 산불 방지"
     },
     {
       "id": "province-emergency",
       "name": "云南省应急管理厅",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Yunnan Provincial Emergency Management",
       "phone": "0871-12350",
       "type": "emergency",
       "description": "성급 비상 조정",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "윈난성 긴급 관리청"
     },
     {
       "id": "china-post",
       "name": "中国邮政速递",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "China Post Express",
       "phone": "11183",
       "type": "delivery",
       "description": "우편 및 소포 배송 서비스",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "중국우편특급"
     },
     {
       "id": "water-emergency",
       "name": "昆明市自来水公司",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Kunming Water Supply Company",
       "phone": "0871-96106",
       "type": "utility",
       "description": "상수도 공급 비상사태 및 누수",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "쿤밍수도공급회사"
     },
     {
       "id": "electricity-emergency",
       "name": "昆明供电局",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Kunming Power Supply Bureau",
       "phone": "95598",
       "type": "utility",
       "description": "정전 및 전기 비상사태",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "쿤밍전력공급국"
     },
     {
       "id": "gas-emergency",
       "name": "쿤밍시 가스공사",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Kunming Gas Company",
       "phone": "0871-96107",
       "type": "utility",
       "description": "가스 누출 및 가스 신고",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "쿤밍가스회사"
     },
     {
       "id": "railway-complaints",
       "name": "昆明铁路投诉",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Kunming Railway Station Complaints",
       "phone": "0871-12306",
       "type": "transport",
       "description": "철도 티켓 문의 및 불만 접수",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "쿤밍기차역민원접수처"
     },
     {
       "id": "national-tourism-complaint",
       "name": "전국 관광 불만 신고 핫라인",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "National Tourism Complaint Hotline",
       "phone": "12301",
       "type": "tourism",
       "description": "국가 관광 불만 신고 핫라인",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "국가관광민원핫라인"
     }
   ],
   "culturalTips": [

@@ -1317,7 +1317,7 @@
         "وجبة إفطار",
         "معكرونة",
         "محلي",
-        "cheap-eats"
+        "مأكولات رخيصة"
       ],
       "star": 0,
       "diamond": 0,
@@ -1391,7 +1391,7 @@
       "id": "sanya-seafood-buffet-1",
       "name": "海鲜自助",
       "nameEn": "بوفيه المأكولات البحرية",
-      "type": "buffet",
+      "type": "بوفيه",
       "cuisine": "مأكولات بحرية",
       "avgPrice": 300,
       "rating": 4.5,
@@ -1444,7 +1444,7 @@
       "tags": [
         "فاكهة",
         "محلي",
-        "cheap-eats",
+        "مأكولات رخيصة",
         "هدية"
       ],
       "star": 0,
@@ -1476,7 +1476,7 @@
       "tags": [
         "حوز بوت",
         "محلي",
-        "sour-spicy",
+        "حامض-حار",
         "صحي"
       ],
       "star": 0,
@@ -1507,7 +1507,7 @@
       ],
       "tags": [
         "معكرونة",
-        "sour",
+        "حامض",
         "وجبة إفطار",
         "محلي"
       ],
@@ -1519,7 +1519,7 @@
       "id": "sanya-luxury-1",
       "name": "闻绮法餐厅",
       "nameEn": "Vin Noble French Restaurant",
-      "type": "fine-dining",
+      "type": "مطاعم راقية",
       "cuisine": "فرنسية",
       "avgPrice": 800,
       "rating": 4.7,
@@ -1551,7 +1551,7 @@
       "id": "sanya-japanese-1",
       "name": "鮨樱",
       "nameEn": "Sakura Japanese",
-      "type": "fine-dining",
+      "type": "مطاعم راقية",
       "cuisine": "ياباني",
       "avgPrice": 500,
       "rating": 4.6,
@@ -1647,7 +1647,7 @@
       "id": "sanya-western-1",
       "name": "海角轩",
       "nameEn": "مطعم أوشن كليف",
-      "type": "fine-dining",
+      "type": "مطاعم راقية",
       "cuisine": "دولي",
       "avgPrice": 400,
       "rating": 4.6,
@@ -2009,7 +2009,7 @@
       "tags": [
         "مأكولات بحرية",
         "متخصص",
-        "crab"
+        "سلطعون"
       ],
       "star": 0,
       "diamond": 0,
@@ -2129,7 +2129,7 @@
       ],
       "tags": [
         "عرقي",
-        "li-cuisine",
+        "مطبخ لي",
         "تقليدي"
       ],
       "star": 0,
@@ -2723,7 +2723,7 @@
       "name": "فندق أتلانتس",
       "nameEn": "Atlantis Sanya",
       "budget": "luxury",
-      "priceRange": "¥3000-8000/night",
+      "priceRange": "3000-8000 يوان / ليلة",
       "address": "منتجع خليج هايتانغ السياحي الوطني",
       "rating": 4.7,
       "highlights": [
@@ -2738,7 +2738,7 @@
       "name": "فندق سانت ريجيس",
       "nameEn": "The St. Regis Sanya Resort",
       "budget": "luxury",
-      "priceRange": "¥2500-6000/night",
+      "priceRange": "2500-6000 يوان / ليلة",
       "address": "منتجع يالونغ باي السياحي الوطني",
       "rating": 4.6,
       "highlights": [
@@ -2753,7 +2753,7 @@
       "name": "فندق جراند هايبات بينغتانغ باي",
       "nameEn": "Grand Hyatt Haitang Bay",
       "budget": "luxury",
-      "priceRange": "¥2000-5000/night",
+      "priceRange": "2000-5000 يوان/ليلة",
       "address": "خليج هايتانغ",
       "rating": 4.6,
       "highlights": [
@@ -2768,7 +2768,7 @@
       "name": "فندق ماندarin أورينتال",
       "nameEn": "Mandarin Oriental Sanya",
       "budget": "luxury",
-      "priceRange": "¥2200-5500/night",
+      "priceRange": "2200-5500 يوان/ليلة",
       "address": "خليج دادونغهاي",
       "rating": 4.7,
       "highlights": [
@@ -2783,7 +2783,7 @@
       "name": "فندق بولمان ريزورت",
       "nameEn": "Pullman Sanya Bay",
       "budget": "mid",
-      "priceRange": "¥800-1800/night",
+      "priceRange": "800-1800 يوانًا/ليلة",
       "address": "خليج سانيا",
       "rating": 4.4,
       "highlights": [
@@ -2798,7 +2798,7 @@
       "name": "فندق هيلتون",
       "nameEn": "Hilton Sanya Yalong Bay",
       "budget": "mid",
-      "priceRange": "¥1000-2500/night",
+      "priceRange": "1000-2500 يوان/ليلة",
       "address": "خليج يالونغ",
       "rating": 4.5,
       "highlights": [
@@ -2813,7 +2813,7 @@
       "name": "فندق كونراد",
       "nameEn": "Conrad Sanya",
       "budget": "mid",
-      "priceRange": "¥1200-2800/night",
+      "priceRange": "١٢٠٠-٢٨٠٠ يوان/ليلة",
       "address": "خليج يالونغ",
       "rating": 4.5,
       "highlights": [
@@ -2828,7 +2828,7 @@
       "name": "فندق ماريوت",
       "nameEn": "Sanya Marriott Hotel",
       "budget": "mid",
-      "priceRange": "¥1100-2600/night",
+      "priceRange": "1100-2600 يوان/ليلة",
       "address": "دادونغهاي",
       "rating": 4.4,
       "highlights": [
@@ -2843,7 +2843,7 @@
       "name": "فندق كراون بلازا سانيا باي",
       "nameEn": "Crowne Plaza Sanya Bay",
       "budget": "mid",
-      "priceRange": "¥700-1500/night",
+      "priceRange": "700-1500 يوان/ليلة",
       "address": "خليج سانيا",
       "rating": 4.3,
       "highlights": [
@@ -2858,7 +2858,7 @@
       "name": "فندق استقبال يالونغ باي",
       "nameEn": "Yalong Bay Welcome Inn",
       "budget": "budget",
-      "priceRange": "¥400-900/night",
+      "priceRange": "400-900 يوان / ليلة",
       "address": "خليج يالونغ",
       "rating": 4.2,
       "highlights": [
@@ -2873,7 +2873,7 @@
       "name": "فندق دادونغهاي هاي فيو",
       "nameEn": "Dadonghai Sea View Hotel",
       "budget": "budget",
-      "priceRange": "¥300-700/night",
+      "priceRange": "300-700 يوان/ليلة",
       "address": "دادونغهاي",
       "rating": 4.1,
       "highlights": [
@@ -2888,7 +2888,7 @@
       "name": "فندق ووتشو كورال",
       "nameEn": "Wuzhizhou Island Coral Hotel",
       "budget": "luxury",
-      "priceRange": "¥1500-3500/night",
+      "priceRange": "1500-3500 يوان/ليلة",
       "address": "جزيرة ووتشيتشو",
       "rating": 4.5,
       "highlights": [
@@ -2903,7 +2903,7 @@
       "name": "فندق سانيا سنترال كراون",
       "nameEn": "Sanya Center Hotel",
       "budget": "budget",
-      "priceRange": "¥250-500/night",
+      "priceRange": "250-500 يوان/ليلة",
       "address": "وسط المدينة",
       "rating": 4,
       "highlights": [
@@ -2918,7 +2918,7 @@
       "name": "فندق نارادا ريزورت آند سبا شيانغشوي باي",
       "nameEn": "Perfume Bay Resort",
       "budget": "luxury",
-      "priceRange": "¥2800-6500/night",
+      "priceRange": "2800-6500 يوان/ليلة",
       "address": "خليج شيانغشوي، على بعد 40 كم من سانيا",
       "rating": 4.7,
       "highlights": [
@@ -2933,7 +2933,7 @@
       "name": "فندق هايتانغ باي 9 ريزورت",
       "nameEn": "Haitang Bay No.9 Resort",
       "budget": "mid",
-      "priceRange": "¥600-1400/night",
+      "priceRange": "600-1400 يوان/ليلة",
       "address": "خليج هايتانغ",
       "rating": 4.3,
       "highlights": [
@@ -2948,7 +2948,7 @@
       "name": "فندق هاييون ريزورت خليج سانيا",
       "nameEn": "Sanya Bay Sanya Royal Resort",
       "budget": "luxury",
-      "priceRange": "¥1500-3500/night",
+      "priceRange": "1500-3500 يوان/ليلة",
       "address": "خليج سانيا",
       "rating": 4.6,
       "highlights": [
@@ -2963,7 +2963,7 @@
       "name": "فندق إديشن سانيا",
       "nameEn": "The Sanya EDITION",
       "budget": "luxury",
-      "priceRange": "¥2500-6000/night",
+      "priceRange": "2500-6000 يوان / ليلة",
       "address": "خليج هايتانغ",
       "rating": 4.7,
       "highlights": [
@@ -2978,7 +2978,7 @@
       "name": "منتجع يينتاي صن شاين دادونغهاي",
       "nameEn": "Oceanview Hotel Dadonghai",
       "budget": "mid",
-      "priceRange": "¥500-1200/night",
+      "priceRange": "500-1200 يوان/ليلة",
       "address": "دادونغهاي",
       "rating": 4.4,
       "highlights": [
@@ -2993,7 +2993,7 @@
       "name": "فندق يالونغ باي كاكتوس ريزورت",
       "nameEn": "Yalong Bay Cactus Resort",
       "budget": "mid",
-      "priceRange": "¥600-1400/night",
+      "priceRange": "600-1400 يوان/ليلة",
       "address": "خليج يالونغ",
       "rating": 4.3,
       "highlights": [
@@ -3008,7 +3008,7 @@
       "name": "فندق سانيا الدولي",
       "nameEn": "Sanya International Hotel",
       "budget": "mid",
-      "priceRange": "¥400-900/night",
+      "priceRange": "400-900 يوان / ليلة",
       "address": "وسط المدينة",
       "rating": 4.2,
       "highlights": [
@@ -3023,7 +3023,7 @@
       "name": "فندق شيانغشوي باي فولي مارriott",
       "nameEn": "Perfume Bay Marriott",
       "budget": "luxury",
-      "priceRange": "¥1800-4000/night",
+      "priceRange": "1800-4000 يوان/ليلة",
       "address": "خليج العطور",
       "rating": 4.6,
       "highlights": [
@@ -3039,14 +3039,14 @@
     {
       "type": "police",
       "name": "三亚市公安局",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "Sanya Public Security Bureau",
       "phone": "110",
       "notes": "للمواطنين السنغافوريين"
     },
     {
       "type": "police",
       "name": "三亚市公安局",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "Sanya Public Security Bureau",
       "phone": "+86 898 88868110",
       "address": "قوانغتشو",
       "notes": "للمواطنين السنغافوريين"
@@ -3054,7 +3054,7 @@
     {
       "type": "medical",
       "name": "三亚市人民医院",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "Sanya People's Hospital",
       "phone": "+86 898 88257801",
       "address": "قوانغتشو",
       "coordinates": {
@@ -3066,7 +3066,7 @@
     {
       "type": "medical",
       "name": "解放军总医院海南分院",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "PLA General Hospital Sanya Branch",
       "phone": "+86 898 37331000",
       "address": "قوانغتشو",
       "coordinates": {
@@ -3078,7 +3078,7 @@
     {
       "type": "fire",
       "name": "消防救援",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "Fire Department",
       "phone": "119",
       "address": "قوانغتشو",
       "notes": "للمواطنين السنغافوريين"
@@ -3086,7 +3086,7 @@
     {
       "type": "ambulance",
       "name": "急救中心",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "Emergency Medical Services",
       "phone": "120",
       "address": "قوانغتشو",
       "notes": "للمواطنين السنغافوريين"
@@ -3094,7 +3094,7 @@
     {
       "type": "tourism",
       "name": "三亚旅游投诉热线",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "Sanya Tourism Complaint Hotline",
       "phone": "+86 898 88392211",
       "address": "قوانغتشو",
       "notes": "للمواطنين السنغافوريين"
@@ -3102,7 +3102,7 @@
     {
       "type": "coastguard",
       "name": "海上救援",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "Coast Guard Emergency",
       "phone": "12395",
       "address": "قوانغتشو",
       "notes": "للمواطنين السنغافوريين"
@@ -3110,7 +3110,7 @@
     {
       "type": "traffic",
       "name": "交通事故报警",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "Traffic Police",
       "phone": "122",
       "address": "قوانغتشو",
       "notes": "للمواطنين السنغافوريين"
@@ -3118,7 +3118,7 @@
     {
       "type": "consular",
       "name": "中国外交部领事保护",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "China MFA Consular Protection",
       "phone": "+86 10 12308",
       "address": "قوانغتشو",
       "notes": "للمواطنين السنغافوريين"
@@ -3126,7 +3126,7 @@
     {
       "type": "info",
       "name": "三亚旅游信息咨询",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "Sanya Tourist Information Center",
       "phone": "+86 898 88295300",
       "address": "قوانغتشو",
       "notes": "للمواطنين السنغافوريين"
@@ -3134,7 +3134,7 @@
     {
       "type": "taxi",
       "name": "出租车失物招领",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "Taxi Lost and Found",
       "phone": "+86 898 88696888",
       "address": "قوانغتشو",
       "notes": "للمواطنين السنغافوريين"
@@ -3142,7 +3142,7 @@
     {
       "type": "embassy",
       "name": "澳大利亚驻广州总领事馆",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "Australian Consulate General Guangzhou",
       "phone": "+86 20 3814 0128",
       "address": "قوانغتشو",
       "notes": "للمواطنين السنغافوريين"
@@ -3150,7 +3150,7 @@
     {
       "type": "embassy",
       "name": "英国驻广州总领事馆",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "British Consulate General Guangzhou",
       "phone": "+86 20 8314 3000",
       "address": "قوانغتشو",
       "notes": "للمواطنين السنغافوريين"
@@ -3158,7 +3158,7 @@
     {
       "type": "embassy",
       "name": "美国驻广州总领事馆",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "U.S. Consulate General Guangzhou",
       "phone": "+86 20 3814 5775",
       "address": "قوانغتشو",
       "notes": "للمواطنين السنغافوريين"
@@ -3166,7 +3166,7 @@
     {
       "type": "embassy",
       "name": "德国驻广州总领事馆",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "German Consulate General Guangzhou",
       "phone": "+86 20 8313 0000",
       "address": "قوانغتشو",
       "notes": "للمواطنين السنغافوريين"
@@ -3174,7 +3174,7 @@
     {
       "type": "embassy",
       "name": "法国驻广州总领事馆",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "French Consulate General Guangzhou",
       "phone": "+86 20 2829 2000",
       "address": "قوانغتشو",
       "notes": "للمواطنين السنغافوريين"
@@ -3182,7 +3182,7 @@
     {
       "type": "embassy",
       "name": "日本驻广州总领事馆",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "Japanese Consulate General Guangzhou",
       "phone": "+86 20 8334 3009",
       "address": "قوانغتشو",
       "notes": "للمواطنين السنغافوريين"
@@ -3190,7 +3190,7 @@
     {
       "type": "embassy",
       "name": "韩国驻广州总领事馆",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "South Korean Consulate General Guangzhou",
       "phone": "+86 20 3885 0993",
       "address": "قوانغتشو",
       "notes": "للمواطنين السنغافوريين"
@@ -3198,7 +3198,7 @@
     {
       "type": "embassy",
       "name": "加拿大驻广州总领事馆",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "Canadian Consulate General Guangzhou",
       "phone": "+86 20 8611 6100",
       "address": "قوانغتشو",
       "notes": "للمواطنين السنغافوريين"
@@ -3206,7 +3206,7 @@
     {
       "type": "embassy",
       "name": "新加坡驻广州总领事馆",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "Singapore Consulate General Guangzhou",
       "phone": "+86 20 3892 2125",
       "address": "قوانغتشو",
       "notes": "للمواطنين السنغافوريين"
@@ -3214,7 +3214,7 @@
     {
       "type": "tourist",
       "name": "海南省旅游投诉热线",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "Hainan Province Tourism Complaint Hotline",
       "phone": "12301",
       "address": "قوانغتشو",
       "notes": "للمواطنين السنغافوريين"
@@ -3222,7 +3222,7 @@
     {
       "type": "tourist",
       "name": "三亚旅游信息咨询中心",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "Sanya Tourist Information Center",
       "phone": "+86 898 88295300",
       "address": "قوانغتشو",
       "notes": "للمواطنين السنغافوريين"
@@ -3230,7 +3230,7 @@
     {
       "type": "water-rescue",
       "name": "海上救援",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "Water Rescue Service",
       "phone": "12395",
       "address": "قوانغتشو",
       "notes": "للمواطنين السنغافوريين"
@@ -3238,7 +3238,7 @@
     {
       "type": "info",
       "name": "消费者投诉热线",
-      "nameEn": "القنصلية العامة لسنغافورة في قوانغتشو",
+      "nameEn": "Consumer Rights Hotline",
       "phone": "12315",
       "address": "قوانغتشو",
       "notes": "للمواطنين السنغافوريين"

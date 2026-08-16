@@ -2272,194 +2272,216 @@
     {
       "type": "fire",
       "name": "丽江消防",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Lijiang Fire Department",
       "phone": "119",
-      "notes": "싱가포르 시민용"
+      "notes": "싱가포르 시민용",
+      "nameKo": "리장 소방서"
     },
     {
       "type": "ambulance",
       "name": "리장 구급 센터",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Lijiang Emergency Center",
       "phone": "120",
-      "notes": "싱가포르 시민용"
+      "notes": "싱가포르 시민용",
+      "nameKo": "리장 응급센터"
     },
     {
       "type": "police",
       "name": "丽江市公安局",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Lijiang Public Security Bureau",
       "phone": "110",
-      "notes": "싱가포르 시민용"
+      "notes": "싱가포르 시민용",
+      "nameKo": "리장 공안국"
     },
     {
       "id": "police",
       "name": "丽江市公安局",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Lijiang Police Bureau",
       "phone": "110",
       "type": "police",
       "description": "리장시 police emergency 핫라인",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "리장시 경찰국"
     },
     {
       "id": "fire",
       "name": "丽江市消防支队",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Lijiang Fire Department",
       "phone": "119",
       "type": "fire",
       "description": "화재 및 구조 emergency",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "리장 소방서"
     },
     {
       "id": "ambulance",
       "name": "리장시 구급 센터",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Lijiang Emergency Medical Center",
       "phone": "120",
       "type": "medical",
       "description": "의료 emergency 및 구급차 서비스",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "리장시 응급의료센터"
     },
     {
       "id": "tourism-hotline",
       "name": "리장시 관광 불만 신고 핫라인",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Lijiang Tourism Complaint Hotline",
       "phone": "0888-12345",
       "type": "tourism",
       "description": "관광 불만 및 관광객 지원",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "리장시 관광 불만 신고 핫라인"
     },
     {
       "id": "tourism-bureau",
       "name": "丽江市旅游执法支队",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Lijiang Tourism Enforcement",
       "phone": "0888-5122927",
       "type": "tourism",
       "description": "불법 관광 활동 신고, 가격 분쟁",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "리장시 관광 단속반"
     },
     {
       "id": "gucheng-police",
       "name": "古城区公安分局",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Gucheng District Police Station",
       "phone": "0888-5158110",
       "type": "police",
       "description": "구시가지 지역 police 파출소",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "구청구 경찰서"
     },
     {
       "id": "medical-advice",
       "name": "丽江市人民医院急诊",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Lijiang People's Hospital Emergency",
       "phone": "0888-5160120",
       "type": "medical",
       "description": "주요 hospital emergency 부서",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "리장시 인민병원 응급실"
     },
     {
       "id": "high-altitude-rescue",
       "name": "丽江高山救援",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Lijiang High Altitude Rescue",
       "phone": "0888-5168110",
       "type": "rescue",
       "description": "옥룡설산 및 하이킹 지역 산악 구조",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "리장시 고소도 구조대"
     },
     {
       "id": "weather",
       "name": "丽江市气象局",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Lijiang Meteorological Bureau",
       "phone": "12121",
       "type": "weather",
       "description": "일기 예보 및 산악 날씨 전문 정보",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "리장시 기상국"
     },
     {
       "id": "forestry-fire",
       "name": "丽江森林防火指挥部",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Lijiang Forest Fire Prevention",
       "phone": "0888-12119",
       "type": "emergency",
       "description": "리장 지역 산불 신고",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "리장 산불 방지"
     },
     {
       "id": "province-emergency",
       "name": "云南省应急管理厅",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Yunnan Provincial Emergency",
       "phone": "0871-12350",
       "type": "emergency",
       "description": "성급 emergency 조정",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "윈난성 긴급 구조"
     },
     {
       "id": "lugu-lake-police",
       "name": "泸沽湖派出所",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Lugu Lake Police Station",
       "phone": "0888-5881110",
       "type": "police",
       "description": "노고호 지역 Police 커버리지",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "루구호 경찰서"
     },
     {
       "id": "tiger-leaping-gorge-rescue",
       "name": "후탸오샤(호도협) 구조대",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Tiger Leaping Gorge Rescue",
       "phone": "0888-5166110",
       "type": "rescue",
       "description": "호도협 하이킹 지역 구조 서비스",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "호도협 구조대"
     },
     {
       "id": "road-emergency",
       "name": "丽江道路救援",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Lijiang Road Emergency",
       "phone": "0888-12122",
       "type": "road",
       "description": "도로 지원 및 교통 응급 상황",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "리장 도로 긴급 구조"
     },
     {
       "id": "lijiang-railway",
       "name": "리장역 서비스",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Lijiang Railway Station",
       "phone": "0888-5129352",
       "type": "transport",
       "description": "철도 티켓 문의 및 역 서비스",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "리장 기차역"
     },
     {
       "id": "national-tourism-lijiang",
       "name": "전국 관광 불만 신고 핫라인",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "National Tourism Complaint Hotline",
       "phone": "12301",
       "type": "tourism",
       "description": "국가 관광 불만 신고 핫라인",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "국가관광민원핫라인"
     },
     {
       "id": "lijiang-consumer-complaint",
       "name": "丽江市消费者协会",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Lijiang Consumer Association",
       "phone": "0888-12315",
       "type": "consumer",
       "description": "소비자 권리 보호 및 불만 신고",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "리장 소비자 협회"
     },
     {
       "id": "lijiang-water-emergency",
       "name": "丽江市自来水公司",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Lijiang Water Supply Company",
       "phone": "0888-96106",
       "type": "utility",
       "description": "수도 공급 긴급 상황 및 누수",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "리장 수도 공급 회사"
     },
     {
       "id": "lijiang-electricity-emergency",
       "name": "丽江供电局",
-      "nameEn": "싱가포르 광저우 영사관",
+      "nameEn": "Lijiang Power Supply Bureau",
       "phone": "95598",
       "type": "utility",
       "description": "정전 및 전기 긴급 상황",
-      "address": "광저우"
+      "address": "광저우",
+      "nameKo": "리장 전력 공급국"
     }
   ],
   "culturalTips": [

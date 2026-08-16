@@ -1317,7 +1317,7 @@
         "صبحانه",
         "نودل",
         "محلی",
-        "cheap-eats"
+        "غذای ارزان"
       ],
       "star": 0,
       "diamond": 0,
@@ -1391,7 +1391,7 @@
       "id": "sanya-seafood-buffet-1",
       "name": "海鲜自助",
       "nameEn": "بوفه دریایی",
-      "type": "buffet",
+      "type": "بوفه",
       "cuisine": "غذاهای دریایی",
       "avgPrice": 300,
       "rating": 4.5,
@@ -1444,7 +1444,7 @@
       "tags": [
         "میوه",
         "محلی",
-        "cheap-eats",
+        "غذای ارزان",
         "هدیه"
       ],
       "star": 0,
@@ -1476,7 +1476,7 @@
       "tags": [
         "خورشت چینی",
         "محلی",
-        "sour-spicy",
+        "ترش-تند",
         "سالم"
       ],
       "star": 0,
@@ -1507,7 +1507,7 @@
       ],
       "tags": [
         "نودل",
-        "sour",
+        "ترش",
         "صبحانه",
         "محلی"
       ],
@@ -1519,7 +1519,7 @@
       "id": "sanya-luxury-1",
       "name": "闻绮法餐厅",
       "nameEn": "رستوران فرانسوی وین نوبل",
-      "type": "fine-dining",
+      "type": "رستوران لوکس",
       "cuisine": "فرانسوی",
       "avgPrice": 800,
       "rating": 4.7,
@@ -1551,7 +1551,7 @@
       "id": "sanya-japanese-1",
       "name": "鮨樱",
       "nameEn": "سakura ژاپنی",
-      "type": "fine-dining",
+      "type": "رستوران لوکس",
       "cuisine": "ژاپنی",
       "avgPrice": 500,
       "rating": 4.6,
@@ -1647,7 +1647,7 @@
       "id": "sanya-western-1",
       "name": "海角轩",
       "nameEn": "Ocean Cliff Restaurant",
-      "type": "fine-dining",
+      "type": "رستوران لوکس",
       "cuisine": "بینالمللی",
       "avgPrice": 400,
       "rating": 4.6,
@@ -2723,7 +2723,7 @@
       "name": "هتل آتلانتیس",
       "nameEn": "Atlantis Sanya",
       "budget": "luxury",
-      "priceRange": "¥3000-8000/night",
+      "priceRange": "۳۰۰۰-۸۰۰۰ یوان/شب",
       "address": "منطقه گردشگری ملی خلیج هایتانگ",
       "rating": 4.7,
       "highlights": [
@@ -2738,7 +2738,7 @@
       "name": "هتل ریزورت سنت رجیس",
       "nameEn": "The St. Regis Sanya Resort",
       "budget": "luxury",
-      "priceRange": "¥2500-6000/night",
+      "priceRange": "۲۵۰۰-۶۰۰۰ یوان/شب",
       "address": "منطقه گردشگری ملی خلیج یالونگ",
       "rating": 4.6,
       "highlights": [
@@ -2753,7 +2753,7 @@
       "name": "هتل گرند حیات خلیج هائوتانگ",
       "nameEn": "Grand Hyatt Haitang Bay",
       "budget": "luxury",
-      "priceRange": "¥2000-5000/night",
+      "priceRange": "۲۰۰۰-۵۰۰۰ یوان در شب",
       "address": "خلیج هایتانگ",
       "rating": 4.6,
       "highlights": [
@@ -2768,7 +2768,7 @@
       "name": "هتل مانداری اورینتال",
       "nameEn": "Mandarin Oriental Sanya",
       "budget": "luxury",
-      "priceRange": "¥2200-5500/night",
+      "priceRange": "۲۲۰۰-۵۵۰۰ یوان/شب",
       "address": "خلیج دادونگ‌های",
       "rating": 4.7,
       "highlights": [
@@ -2783,7 +2783,7 @@
       "name": "هتل ریزورت پولمن",
       "nameEn": "Pullman Sanya Bay",
       "budget": "mid",
-      "priceRange": "¥800-1800/night",
+      "priceRange": "۸۰۰-۱۸۰۰ یوان در شب",
       "address": "خلیج سانیا",
       "rating": 4.4,
       "highlights": [
@@ -2798,7 +2798,7 @@
       "name": "هتل هیلتون",
       "nameEn": "Hilton Sanya Yalong Bay",
       "budget": "mid",
-      "priceRange": "¥1000-2500/night",
+      "priceRange": "۱۰۰۰-۲۵۰۰ یوان/شب",
       "address": "خلیج یالونگ",
       "rating": 4.5,
       "highlights": [
@@ -2813,7 +2813,7 @@
       "name": "هتل کنراد",
       "nameEn": "Conrad Sanya",
       "budget": "mid",
-      "priceRange": "¥1200-2800/night",
+      "priceRange": "۱۲۰۰-۲۸۰۰ یوان/شب",
       "address": "خلیج یالونگ",
       "rating": 4.5,
       "highlights": [
@@ -2828,7 +2828,7 @@
       "name": "هتل ماریوت",
       "nameEn": "Sanya Marriott Hotel",
       "budget": "mid",
-      "priceRange": "¥1100-2600/night",
+      "priceRange": "۱۱۰۰-۲۶۰۰ یوان/شب",
       "address": "دادونگهای",
       "rating": 4.4,
       "highlights": [
@@ -2843,7 +2843,7 @@
       "name": "هتل کراون پلازا خلیج سانیا",
       "nameEn": "Crowne Plaza Sanya Bay",
       "budget": "mid",
-      "priceRange": "¥700-1500/night",
+      "priceRange": "۷۰۰-۱۵۰۰ یوان/شب",
       "address": "خلیج سانیا",
       "rating": 4.3,
       "highlights": [
@@ -2858,7 +2858,7 @@
       "name": "هتل ینگبین یالونگ بی",
       "nameEn": "Yalong Bay Welcome Inn",
       "budget": "budget",
-      "priceRange": "¥400-900/night",
+      "priceRange": "۴۰۰-۹۰۰ یوان در شب",
       "address": "خلیج یالونگ",
       "rating": 4.2,
       "highlights": [
@@ -2873,7 +2873,7 @@
       "name": "هتل ساحلی داهیدونگ",
       "nameEn": "Dadonghai Sea View Hotel",
       "budget": "budget",
-      "priceRange": "¥300-700/night",
+      "priceRange": "۳۰۰-۷۰۰ یوان/شب",
       "address": "دادونگهای",
       "rating": 4.1,
       "highlights": [
@@ -2888,7 +2888,7 @@
       "name": "هتل مرجانی ووژوژو",
       "nameEn": "Wuzhizhou Island Coral Hotel",
       "budget": "luxury",
-      "priceRange": "¥1500-3500/night",
+      "priceRange": "۱۵۰۰-۳۵۰۰ یوان/شب",
       "address": "جزیره ووژیژو",
       "rating": 4.5,
       "highlights": [
@@ -2903,7 +2903,7 @@
       "name": "هتل تاج سانیا",
       "nameEn": "Sanya Center Hotel",
       "budget": "budget",
-      "priceRange": "¥250-500/night",
+      "priceRange": "۲۵۰-۵۰۰ یوان/شب",
       "address": "مرکز شهر",
       "rating": 4,
       "highlights": [
@@ -2918,7 +2918,7 @@
       "name": "هتل نارنجستان خلیج عطر",
       "nameEn": "Perfume Bay Resort",
       "budget": "luxury",
-      "priceRange": "¥2800-6500/night",
+      "priceRange": "۲۸۰۰-۶۵۰۰ یوان/شب",
       "address": "خلیج شیانگشویی، ۴۰ کیلومتری سانیا",
       "rating": 4.7,
       "highlights": [
@@ -2933,7 +2933,7 @@
       "name": "هتل شماره ۹ خلیج هایتانگ",
       "nameEn": "Haitang Bay No.9 Resort",
       "budget": "mid",
-      "priceRange": "¥600-1400/night",
+      "priceRange": "۶۰۰-۱۴۰۰ یوان/شب",
       "address": "خلیج هایتانگ",
       "rating": 4.3,
       "highlights": [
@@ -2948,7 +2948,7 @@
       "name": "هتل تفریحی هایون خلیج سانیا",
       "nameEn": "Sanya Bay Sanya Royal Resort",
       "budget": "luxury",
-      "priceRange": "¥1500-3500/night",
+      "priceRange": "۱۵۰۰-۳۵۰۰ یوان/شب",
       "address": "خلیج سانیا",
       "rating": 4.6,
       "highlights": [
@@ -2963,7 +2963,7 @@
       "name": "هتل ادیسون سانیا",
       "nameEn": "The Sanya EDITION",
       "budget": "luxury",
-      "priceRange": "¥2500-6000/night",
+      "priceRange": "۲۵۰۰-۶۰۰۰ یوان/شب",
       "address": "خلیج هایتانگ",
       "rating": 4.7,
       "highlights": [
@@ -2978,7 +2978,7 @@
       "name": "دهکده تفریحی سیلور سان دادونگهای",
       "nameEn": "Oceanview Hotel Dadonghai",
       "budget": "mid",
-      "priceRange": "¥500-1200/night",
+      "priceRange": "۵۰۰-۱۲۰۰ یوان/شب",
       "address": "دادونگهای",
       "rating": 4.4,
       "highlights": [
@@ -2993,7 +2993,7 @@
       "name": "هتل کاکتوس یالونگ بی",
       "nameEn": "Yalong Bay Cactus Resort",
       "budget": "mid",
-      "priceRange": "¥600-1400/night",
+      "priceRange": "۶۰۰-۱۴۰۰ یوان/شب",
       "address": "خلیج یالونگ",
       "rating": 4.3,
       "highlights": [
@@ -3008,7 +3008,7 @@
       "name": "هتل بین‌المللی سانیا",
       "nameEn": "Sanya International Hotel",
       "budget": "mid",
-      "priceRange": "¥400-900/night",
+      "priceRange": "۴۰۰-۹۰۰ یوان در شب",
       "address": "مرکز شهر",
       "rating": 4.2,
       "highlights": [
@@ -3023,7 +3023,7 @@
       "name": "هتل ماریوت فولی شیانگشوی",
       "nameEn": "Perfume Bay Marriott",
       "budget": "luxury",
-      "priceRange": "¥1800-4000/night",
+      "priceRange": "۱۸۰۰-۴۰۰۰ یوآن/شب",
       "address": "خلیج عطر",
       "rating": 4.6,
       "highlights": [
@@ -3039,14 +3039,14 @@
     {
       "type": "police",
       "name": "三亚市公安局",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Sanya Public Security Bureau",
       "phone": "110",
       "notes": "برای شهروندان سنگاپور"
     },
     {
       "type": "police",
       "name": "三亚市公安局",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Sanya Public Security Bureau",
       "phone": "+86 898 88868110",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3054,7 +3054,7 @@
     {
       "type": "medical",
       "name": "三亚市人民医院",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Sanya People's Hospital",
       "phone": "+86 898 88257801",
       "address": "گوانگ‌ژو",
       "coordinates": {
@@ -3066,7 +3066,7 @@
     {
       "type": "medical",
       "name": "解放军总医院海南分院",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "PLA General Hospital Sanya Branch",
       "phone": "+86 898 37331000",
       "address": "گوانگ‌ژو",
       "coordinates": {
@@ -3078,7 +3078,7 @@
     {
       "type": "fire",
       "name": "消防救援",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Fire Department",
       "phone": "119",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3086,7 +3086,7 @@
     {
       "type": "ambulance",
       "name": "急救中心",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Emergency Medical Services",
       "phone": "120",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3094,7 +3094,7 @@
     {
       "type": "tourism",
       "name": "三亚旅游投诉热线",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Sanya Tourism Complaint Hotline",
       "phone": "+86 898 88392211",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3102,7 +3102,7 @@
     {
       "type": "coastguard",
       "name": "海上救援",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Coast Guard Emergency",
       "phone": "12395",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3110,7 +3110,7 @@
     {
       "type": "traffic",
       "name": "交通事故报警",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Traffic Police",
       "phone": "122",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3118,7 +3118,7 @@
     {
       "type": "consular",
       "name": "中国外交部领事保护",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "China MFA Consular Protection",
       "phone": "+86 10 12308",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3126,7 +3126,7 @@
     {
       "type": "info",
       "name": "三亚旅游信息咨询",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Sanya Tourist Information Center",
       "phone": "+86 898 88295300",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3134,7 +3134,7 @@
     {
       "type": "taxi",
       "name": "出租车失物招领",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Taxi Lost and Found",
       "phone": "+86 898 88696888",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3142,7 +3142,7 @@
     {
       "type": "embassy",
       "name": "澳大利亚驻广州总领事馆",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Australian Consulate General Guangzhou",
       "phone": "+86 20 3814 0128",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3150,7 +3150,7 @@
     {
       "type": "embassy",
       "name": "英国驻广州总领事馆",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "British Consulate General Guangzhou",
       "phone": "+86 20 8314 3000",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3158,7 +3158,7 @@
     {
       "type": "embassy",
       "name": "美国驻广州总领事馆",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "U.S. Consulate General Guangzhou",
       "phone": "+86 20 3814 5775",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3166,7 +3166,7 @@
     {
       "type": "embassy",
       "name": "德国驻广州总领事馆",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "German Consulate General Guangzhou",
       "phone": "+86 20 8313 0000",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3174,7 +3174,7 @@
     {
       "type": "embassy",
       "name": "法国驻广州总领事馆",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "French Consulate General Guangzhou",
       "phone": "+86 20 2829 2000",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3182,7 +3182,7 @@
     {
       "type": "embassy",
       "name": "日本驻广州总领事馆",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Japanese Consulate General Guangzhou",
       "phone": "+86 20 8334 3009",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3190,7 +3190,7 @@
     {
       "type": "embassy",
       "name": "韩国驻广州总领事馆",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "South Korean Consulate General Guangzhou",
       "phone": "+86 20 3885 0993",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3198,7 +3198,7 @@
     {
       "type": "embassy",
       "name": "加拿大驻广州总领事馆",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Canadian Consulate General Guangzhou",
       "phone": "+86 20 8611 6100",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3206,7 +3206,7 @@
     {
       "type": "embassy",
       "name": "新加坡驻广州总领事馆",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Singapore Consulate General Guangzhou",
       "phone": "+86 20 3892 2125",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3214,7 +3214,7 @@
     {
       "type": "tourist",
       "name": "海南省旅游投诉热线",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Hainan Province Tourism Complaint Hotline",
       "phone": "12301",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3222,7 +3222,7 @@
     {
       "type": "tourist",
       "name": "三亚旅游信息咨询中心",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Sanya Tourist Information Center",
       "phone": "+86 898 88295300",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3230,7 +3230,7 @@
     {
       "type": "water-rescue",
       "name": "海上救援",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Water Rescue Service",
       "phone": "12395",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3238,7 +3238,7 @@
     {
       "type": "info",
       "name": "消费者投诉热线",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Consumer Rights Hotline",
       "phone": "12315",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"

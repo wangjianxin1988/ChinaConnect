@@ -7,13 +7,12 @@ export function getStaticPaths() {
 
 import { getCityData } from "@/data/cities-i18n";
 import { citySlugs } from "@/data/cities/index";
-import { citiesMeta } from "@/data/cities/index";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { translations } from "@/i18n/translations";
 import { ct } from "@/i18n/components-strings";
 
 const lang = (Astro.params.lang as string) || "en";
-const jaCities = lang === "ja" ? citySlugs.map((slug) => getCityData(slug, lang)).filter(Boolean) : citiesMeta;
+const localizedCities = citySlugs.map((slug) => getCityData(slug, lang)).filter(Boolean);
 
 const pageTitle = (translations[lang] || translations.en).guidePage?.attractionsTitle || "Top Attractions in China - ChinaConnect";
 const pageDescription = (translations[lang] || translations.en).guidePage?.attractionsDescription || "Discover top-rated attractions across China with opening hours, tickets, and local tips";
@@ -33,7 +32,7 @@ const pageDescription = (translations[lang] || translations.en).guidePage?.attra
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {jaCities.map((city: any) => (
+      {localizedCities.map((city: any) => (
         <a
           href={`/${lang}/city/${city.slug}#attractions`}
           class="group bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow block"

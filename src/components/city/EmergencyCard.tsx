@@ -1,4 +1,5 @@
 import { ct } from "@/i18n/components-strings";
+import { EMERGENCY_NAMES_L10N } from "@/data/emergency/emergency-names-l10n";
 import React from "react";
 
 export interface EmergencyContact {
@@ -65,7 +66,7 @@ export function EmergencyCard({ contact, compact = false, lang = "en" }: Emergen
   const isCJK = lang === "zh-CN" || lang === "zh-TW";
   const displayName = isCJK && contact.name
     ? contact.name
-    : (localised || contact.nameEn || contact.name);
+    : (localised || EMERGENCY_NAMES_L10N[lang]?.[contact.nameEn] || contact.nameEn || contact.name);
   const showSecondary = lang === "zh-CN" || lang === "zh-TW" || lang === "ja";
   const secondaryName = showSecondary ? ((displayName === contact.nameEn) ? contact.name : contact.nameEn) : "";
 

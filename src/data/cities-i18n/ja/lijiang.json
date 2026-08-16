@@ -2293,10 +2293,10 @@
     {
       "type": "fire",
       "name": "麗江消防",
-      "nameEn": "在広州シンガポール総領事館",
+      "nameEn": "Lijiang Fire Department",
       "phone": "119",
       "notes": "シンガポール国民向け",
-      "nameJa": "麗江消防",
+      "nameJa": "麗江消防署",
       "address": "麗江市"
     },
     {
@@ -2310,10 +2310,10 @@
     {
       "type": "police",
       "name": "麗江市公安局",
-      "nameEn": "Lijiang Police Bureau",
+      "nameEn": "Lijiang Public Security Bureau",
       "phone": "110",
       "notes": "シンガポール国民向け",
-      "nameJa": "麗江市公安局",
+      "nameJa": "麗江公安局",
       "address": "麗江市中心"
     },
     {
@@ -2324,17 +2324,17 @@
       "type": "police",
       "description": "麗江市警察緊急ホットライン",
       "address": "麗江市中心",
-      "nameJa": "麗江市公安局"
+      "nameJa": "麗江警察署"
     },
     {
       "id": "fire",
       "name": "麗江市消防支隊",
-      "nameEn": "在広州シンガポール総領事館",
+      "nameEn": "Lijiang Fire Department",
       "phone": "119",
       "type": "fire",
       "description": "火災・救急緊急通報",
       "address": "麗江市",
-      "nameJa": "麗江市消防支隊"
+      "nameJa": "麗江消防署"
     },
     {
       "id": "ambulance",
@@ -2364,7 +2364,7 @@
       "type": "tourism",
       "description": "違法な観光活動や価格トラブルの通報",
       "address": "麗江古城",
-      "nameJa": "麗江市観光取締支隊"
+      "nameJa": "麗江観光取締部門"
     },
     {
       "id": "gucheng-police",
@@ -2374,7 +2374,7 @@
       "type": "police",
       "description": "旧市街エリアの警察署",
       "address": "麗江古城區",
-      "nameJa": "古城區公安分局"
+      "nameJa": "古城地区警察署"
     },
     {
       "id": "medical-advice",
@@ -2384,7 +2384,7 @@
       "type": "medical",
       "description": "主要病院の救急外来",
       "address": "麗江新大堰路",
-      "nameJa": "麗江市人民医院救急"
+      "nameJa": "麗江人民病院救急"
     },
     {
       "id": "high-altitude-rescue",
@@ -2394,7 +2394,7 @@
       "type": "rescue",
       "description": "玉龍雪山およびハイキングエリアの山岳救助",
       "address": "玉龍雪山エリア",
-      "nameJa": "麗江高山救助"
+      "nameJa": "麗江高所救助隊"
     },
     {
       "id": "weather",
@@ -2404,7 +2404,7 @@
       "type": "weather",
       "description": "天気予報、特に山岳地帯の天気",
       "address": "麗江市",
-      "nameJa": "麗江市気象局"
+      "nameJa": "麗江気象局"
     },
     {
       "id": "forestry-fire",
@@ -2414,7 +2414,7 @@
       "type": "emergency",
       "description": "麗江地域の森林火災通報",
       "address": "麗江市",
-      "nameJa": "麗江森林防火指揮部"
+      "nameJa": "麗江森林防火"
     },
     {
       "id": "province-emergency",
@@ -2424,7 +2424,7 @@
       "type": "emergency",
       "description": "省レベルの緊急調整",
       "address": "昆明（省都）",
-      "nameJa": "雲南省応急管理庁"
+      "nameJa": "雲南省緊急事態"
     },
     {
       "id": "lugu-lake-police",
@@ -2434,7 +2434,7 @@
       "type": "police",
       "description": "泸沽湖エリアの警察管轄",
       "address": "泸沽湖エリア",
-      "nameJa": "泸沽湖派出所"
+      "nameJa": "ルグ湖警察署"
     },
     {
       "id": "tiger-leaping-gorge-rescue",
@@ -2454,7 +2454,7 @@
       "type": "road",
       "description": "ロードサービスおよび交通緊急時対応",
       "address": "麗江エリアの道路",
-      "nameJa": "麗江道路救援"
+      "nameJa": "麗江道路緊急事態"
     },
     {
       "id": "lijiang-railway",
@@ -2484,7 +2484,7 @@
       "type": "consumer",
       "description": "消費者権利の保護・苦情受付",
       "address": "麗江市",
-      "nameJa": "麗江市消費者協会"
+      "nameJa": "麗江消費者協会"
     },
     {
       "id": "lijiang-water-emergency",
@@ -2494,7 +2494,7 @@
       "type": "utility",
       "description": "水道供給の緊急事態および漏水",
       "address": "麗江市",
-      "nameJa": "麗江市水道公司"
+      "nameJa": "麗江水道会社"
     },
     {
       "id": "lijiang-electricity-emergency",
@@ -2504,7 +2504,7 @@
       "type": "utility",
       "description": "停電および電気に関する緊急事態",
       "address": "麗江市",
-      "nameJa": "麗江電力局"
+      "nameJa": "麗江電力供給局"
     }
   ],
   "culturalTips": [

@@ -90,7 +90,8 @@ try {
       status = "ERR:" + e.message.slice(0, 60);
     }
     const path = url.replace(BASE, "");
-    const lang = path.startsWith("/") ? (path.split("/")[1] || "en") : "en";
+    const first = path.startsWith("/") ? (path.split("/")[1] || "") : "";
+    const lang = LANGS.includes(first) ? first : "en";
     const issues = status === 200 ? analyzeText(text, lang) : [];
     results.push({ path, lang, status, title, issues });
     await page.close();

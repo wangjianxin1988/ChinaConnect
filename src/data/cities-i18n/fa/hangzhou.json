@@ -1452,7 +1452,7 @@
         "محلی",
         "غذای چای",
         "طبیعی",
-        "garden-view"
+        "نمای باغ"
       ],
       "star": 0,
       "diamond": 0,
@@ -1513,7 +1513,7 @@
         "محلی",
         "بالغ بالا",
         "سنتی",
-        "historic-area"
+        "منطقه تاریخی"
       ],
       "star": 0,
       "diamond": 0,
@@ -1554,7 +1554,7 @@
       "id": "hangzhou-13",
       "name": "香格里拉中餐厅",
       "nameEn": "Shangri-La Chinese Restaurant",
-      "type": "luxury",
+      "type": "لوکس",
       "cuisine": "کانتونی و ژجیانگی",
       "avgPrice": 400,
       "rating": 4.6,
@@ -1668,7 +1668,7 @@
         "محلی",
         "وگان",
         "تاریخی",
-        "near-temple"
+        "نزدیک معبد"
       ],
       "star": 0,
       "diamond": 0,
@@ -1699,7 +1699,7 @@
         "محلی",
         "گنج پنهان",
         "خانگی",
-        "canal-view"
+        "نمای کانال"
       ],
       "star": 0,
       "diamond": 0,
@@ -1728,7 +1728,7 @@
       ],
       "tags": [
         "محلی",
-        "private-kitchen",
+        "آشپزخانه خصوصی",
         "بالغ بالا",
         "خلاق"
       ],
@@ -1740,7 +1740,7 @@
       "id": "hangzhou-19",
       "name": "西子湖四季中餐厅",
       "nameEn": "Four Seasons Resort Chinese Restaurant",
-      "type": "luxury",
+      "type": "لوکس",
       "cuisine": "ژجیانگ",
       "avgPrice": 800,
       "rating": 4.9,
@@ -2721,7 +2721,7 @@
       "name": "هتل فور سیزنز هانگژو",
       "nameEn": "Four Seasons Hotel Hangzhou",
       "budget": "luxury",
-      "priceRange": "¥3500-8000/night",
+      "priceRange": "۳۵۰۰-۸۰۰۰ یوان در شب",
       "address": "۵ لینگ‌جیا لین، جاده هوبین",
       "coordinates": {
         "lat": 30.2422,
@@ -2740,7 +2740,7 @@
       "name": "هتل فورسیزون هانگژو وست لیک",
       "nameEn": "Four Seasons Resort Hangzhou at West Lake",
       "budget": "luxury",
-      "priceRange": "¥5000-12000/night",
+      "priceRange": "۵۰۰۰-۱۲۰۰۰ یوان در شب",
       "address": "جاده شینگ‌هوا ۵، ناحیه شی‌هو",
       "coordinates": {
         "lat": 30.2522,
@@ -2759,7 +2759,7 @@
       "name": "هتل شانگری-لا هانگژو",
       "nameEn": "Shangri-La Hotel Hangzhou",
       "budget": "luxury",
-      "priceRange": "¥1500-3000/night",
+      "priceRange": "۱۵۰۰-۳۰۰۰ یوان/شب",
       "address": "جاده‌ی بایشن، شماره ۷۸",
       "coordinates": {
         "lat": 30.2622,
@@ -2778,7 +2778,7 @@
       "name": "هتل گرند هیات هانگژو",
       "nameEn": "Grand Hyatt Hangzhou",
       "budget": "mid",
-      "priceRange": "¥1200-2500/night",
+      "priceRange": "۱۲۰۰-۲۵۰۰ یوان در شب",
       "address": "جاده‌ی هوبین، شماره ۲۸",
       "coordinates": {
         "lat": 30.2522,
@@ -2797,7 +2797,7 @@
       "name": "هتل وست لیک هانگژو",
       "nameEn": "Hangzhou West Lake Hotel",
       "budget": "mid",
-      "priceRange": "¥500-1000/night",
+      "priceRange": "۵۰۰-۱۰۰۰ یوان در شب",
       "address": "جاده‌ی شیلینگ، شماره ۱۰۱-۱",
       "coordinates": {
         "lat": 30.2522,
@@ -2815,7 +2815,7 @@
       "name": "هتل هیلتون هانگژو",
       "nameEn": "Hilton Hangzhou",
       "budget": "mid",
-      "priceRange": "¥800-1500/night",
+      "priceRange": "۸۰۰-۱۵۰۰ یوان/شب",
       "address": "جاده یینشی ۵۲۸، ناحیه گونگشو",
       "coordinates": {
         "lat": 30.2822,
@@ -2834,7 +2834,7 @@
       "name": "هتل هایت هانگژو",
       "nameEn": "Hyatt Regency Hangzhou",
       "budget": "mid",
-      "priceRange": "¥900-1800/night",
+      "priceRange": "۹۰۰-۱۸۰۰ یوآن/شب",
       "address": "جاده هوگوانگ ۶۸، ناحیه شانگچنگ",
       "coordinates": {
         "lat": 30.2622,
@@ -2853,7 +2853,7 @@
       "name": "هتل هوانگ‌لونگ هانگژو",
       "nameEn": "Hangzhou Huanglong Hotel",
       "budget": "mid",
-      "priceRange": "¥600-1200/night",
+      "priceRange": "۶۰۰-۱۲۰۰ یوآن/شب",
       "address": "جاده هوانگ‌لونگ ۱، ناحیه شی‌هو",
       "coordinates": {
         "lat": 30.2622,
@@ -2872,7 +2872,7 @@
       "name": "هتل دولتی وست لیک هانگژو",
       "nameEn": "State Guest Hotel Zhejiang",
       "budget": "luxury",
-      "priceRange": "¥2000-5000/night",
+      "priceRange": "۲۰۰۰-۵۰۰۰ یوان در شب",
       "address": "جاده شینیِ ۱۸، ناحیه شی‌هو",
       "coordinates": {
         "lat": 30.2422,
@@ -2891,7 +2891,7 @@
       "name": "هتل لوکس گرین تاون زونلان کیانجیانگ هانگژو",
       "nameEn": "The Q Hotel",
       "budget": "mid",
-      "priceRange": "¥800-1500/night",
+      "priceRange": "۸۰۰-۱۵۰۰ یوان/شب",
       "address": "جاده شینیِ ۳۹، ناحیه شانگ‌چنگ",
       "coordinates": {
         "lat": 30.2322,
@@ -2910,7 +2910,7 @@
       "name": "هتل جیدبلیو ماریوت هانگژو",
       "nameEn": "JW Marriott Hotel Hangzhou",
       "budget": "luxury",
-      "priceRange": "¥1500-3000/night",
+      "priceRange": "۱۵۰۰-۳۰۰۰ یوان/شب",
       "address": "جاده ونهوا ۲، ناحیه شانگچنگ",
       "coordinates": {
         "lat": 30.2522,
@@ -2929,7 +2929,7 @@
       "name": "هتل کورتیارد هانگژو",
       "nameEn": "Courtyard by Marriott Hangzhou",
       "budget": "mid",
-      "priceRange": "¥600-1100/night",
+      "priceRange": "۶۰۰-۱۱۰۰ یوان/شب",
       "address": "جاده شو‌یوان ۸۶، ناحیه شی‌هو",
       "coordinates": {
         "lat": 30.2722,
@@ -2948,7 +2948,7 @@
       "name": "هتل ناد هانگژو",
       "nameEn": "Nade Hotel",
       "budget": "mid",
-      "priceRange": "¥400-800/night",
+      "priceRange": "۴۰۰-۸۰۰ یوان در شب",
       "address": "جاده ونهوا ۳۸۸، ناحیه شانگچنگ",
       "coordinates": {
         "lat": 30.2622,
@@ -2967,7 +2967,7 @@
       "name": "هتل هیلتون چیاندائو هانگژو",
       "nameEn": "Hilton Qiandao Lake Resort",
       "budget": "luxury",
-      "priceRange": "¥1200-2500/night",
+      "priceRange": "۱۲۰۰-۲۵۰۰ یوان در شب",
       "address": "دریاچه چیاندائو، شهرستان چون‌آن",
       "coordinates": {
         "lat": 29.6152,
@@ -2986,7 +2986,7 @@
       "name": "هتل شیشی هانگژو",
       "nameEn": "Hangzhou Xixi Hotel",
       "budget": "mid",
-      "priceRange": "¥500-900/night",
+      "priceRange": "۵۰۰-۹۰۰ یوان در شب",
       "address": "جاده شیشی ۲، ناحیه شیهو",
       "coordinates": {
         "lat": 30.3022,
@@ -3141,21 +3141,21 @@
     {
       "type": "ambulance",
       "name": "杭州急救中心",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Hangzhou Emergency Center",
       "phone": "120",
       "notes": "برای شهروندان سنگاپور"
     },
     {
       "type": "police",
       "name": "杭州市公安局",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Hangzhou Public Security Bureau",
       "phone": "110",
       "notes": "برای شهروندان سنگاپور"
     },
     {
       "type": "hospital",
       "name": "浙江大学医学院附属第一医院",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "First Affiliated Hospital of Zhejiang University",
       "phone": "+86 571 8723 6000",
       "address": "گوانگ‌ژو",
       "coordinates": {
@@ -3167,7 +3167,7 @@
     {
       "type": "embassy",
       "name": "美国驻上海总领事馆",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "US Consulate General Shanghai",
       "phone": "+86 21 8011 2400",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3175,14 +3175,14 @@
     {
       "type": "fire",
       "name": "杭州市消防救援支队",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Hangzhou Fire Department",
       "phone": "119",
       "notes": "برای شهروندان سنگاپور"
     },
     {
       "type": "tourist-info",
       "name": "杭州旅游咨询服务中心",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Hangzhou Tourist Information Center",
       "phone": "0571-96123",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3190,7 +3190,7 @@
     {
       "type": "police-special",
       "name": "杭州旅游警察",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Hangzhou Tourist Police",
       "phone": "+86 571 8502 6110",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3198,7 +3198,7 @@
     {
       "type": "embassy",
       "name": "英国驻上海总领事馆",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "British Consulate General Shanghai",
       "phone": "+86 21 6179 2000",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3206,7 +3206,7 @@
     {
       "type": "embassy",
       "name": "澳大利亚驻上海总领事馆",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Australian Consulate General Shanghai",
       "phone": "+86 21 5292 8000",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3214,7 +3214,7 @@
     {
       "type": "embassy",
       "name": "德国驻上海总领事馆",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "German Consulate General Shanghai",
       "phone": "+86 21 6101 2000",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3222,7 +3222,7 @@
     {
       "type": "embassy",
       "name": "日本驻上海总领事馆",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Japanese Consulate General Shanghai",
       "phone": "+86 21 6218 0021",
       "address": "گوانگ‌ژو",
       "notes": "برای شهروندان سنگاپور"
@@ -3230,7 +3230,7 @@
     {
       "type": "hospital",
       "name": "邵逸夫医院",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Sir Run Run Shaw Hospital",
       "phone": "+86 571 8609 0088",
       "address": "گوانگ‌ژو",
       "coordinates": {
@@ -3242,7 +3242,7 @@
     {
       "type": "hotel-booking",
       "name": "杭州旅游投诉热线",
-      "nameEn": "کنسولگری سنگاپور در گوانگ‌ژو",
+      "nameEn": "Hangzhou Tourism Complaint Hotline",
       "phone": "0571-12345",
       "notes": "برای شهروندان سنگاپور"
     }
