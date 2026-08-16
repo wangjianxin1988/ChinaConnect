@@ -14,7 +14,7 @@ import { EmergencySection } from "@/components/city/EmergencySection";
 import { FoodHighlightsSection } from "@/components/city/FoodHighlightsSection";
 import { WeatherWidget } from "@/components/city/WeatherWidget";
 import { citySlugs, getAdjacentCities, getCityBySlug } from "@/data/cities/index";
-import { pruneCityEntityNames } from "@/lib/city-name";
+import { cityDisplayName, pruneCityEntityNames } from "@/lib/city-name";
 import { getCityData } from "@/data/cities-i18n";
 import { S_TIER_CITIES } from "@/data/cities/tier-data";
 import { getHotelsByCity, getHotelCategoryCounts, getHotelCount } from "@/data/hotels";
@@ -45,7 +45,7 @@ const hotelCategoryCounts = getHotelCategoryCounts(slug as string, lang);
 const totalHotelCount = getHotelCount(slug as string, lang);
 
 const i18nCity = lang !== "en" ? getCityData(city.slug, lang) : null;
-const localCityName = translations[lang]?.["city." + city.slug + ".name"] ?? translations.en?.["city." + city.slug + ".name"] ?? i18nCity?.name ?? city.nameEn;
+const localCityName = translations[lang]?.["city." + city.slug + ".name"] ?? translations.en?.["city." + city.slug + ".name"] ?? cityDisplayName(i18nCity ?? city, lang);
 const isJapanese = lang === "ja";
 const langPrefix = lang === "en" ? "" : `/${lang}`;
 const weatherI18n = {

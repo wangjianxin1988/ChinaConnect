@@ -425,6 +425,7 @@ export const translations: Record<Language, Translations> = {
       title: "Hotels in {city}"
     },
     cityPage: {
+      pageTitle: "Travel Guide {city} - ChinaConnect",
       appCount: "{count} essential apps",
       appsSubtitle: "Download these before you arrive.",
       area: "Area",
@@ -4735,6 +4736,7 @@ export const translations: Record<Language, Translations> = {
       title: "{city}のホテル"
     },
     cityPage: {
+      pageTitle: "{city} 旅行ガイド - ChinaConnect",
       appCount: "{count}個の必須アプリ",
       appsSubtitle: "到着前にダウンロードしてください。",
       area: "地域",
@@ -9049,6 +9051,7 @@ export const translations: Record<Language, Translations> = {
       title: "{city}의 호텔"
     },
     cityPage: {
+      pageTitle: "{city} 여행 가이드 - ChinaConnect",
       appCount: "{count}개의 필수 앱",
       appsSubtitle: "도착 전에 다운로드하세요.",
       area: "지역",
@@ -13357,6 +13360,7 @@ export const translations: Record<Language, Translations> = {
       title: "โรงแรมใน{city}"
     },
     cityPage: {
+      pageTitle: "คู่มือท่องเที่ยว {city} - ChinaConnect",
       appCount: "{count} แอปพลิเคชันที่จำเป็น",
       appsSubtitle: "ดาวน์โหลดก่อนที่คุณจะมาถึง",
       area: "พื้นที่",
@@ -17665,6 +17669,7 @@ export const translations: Record<Language, Translations> = {
       title: "Khách sạn tại {city}"
     },
     cityPage: {
+      pageTitle: "Hướng dẫn du lịch {city} - ChinaConnect",
       appCount: "{count} ứng dụng cần thiết",
       appsSubtitle: "Tải xuống trước khi bạn đến.",
       area: "Khu vực",
@@ -21973,6 +21978,7 @@ export const translations: Record<Language, Translations> = {
       title: "Отели в {city}"
     },
     cityPage: {
+      pageTitle: "Путеводитель по городу {city} - ChinaConnect",
       appCount: "{count} необходимых приложений",
       appsSubtitle: "Загрузите их до прибытия.",
       area: "Район",
@@ -26281,6 +26287,7 @@ export const translations: Record<Language, Translations> = {
       title: "Hôtels à {city}"
     },
     cityPage: {
+      pageTitle: "Guide de voyage {city} - ChinaConnect",
       appCount: "{count} applications essentielles",
       appsSubtitle: "Téléchargez-les avant votre arrivée.",
       area: "Zone",
@@ -30589,6 +30596,7 @@ export const translations: Record<Language, Translations> = {
       title: "Hotels in {city}"
     },
     cityPage: {
+      pageTitle: "Reiseführer {city} - ChinaConnect",
       appCount: "{count} unverzichtbare Apps",
       appsSubtitle: "Laden Sie diese Apps herunter, bevor Sie ankommen.",
       area: "Gebiet",
@@ -34897,6 +34905,7 @@ export const translations: Record<Language, Translations> = {
       title: "فنادق في {city}"
     },
     cityPage: {
+      pageTitle: "دليل السفر إلى {city} - ChinaConnect",
       appCount: "{count} تطبيقات أساسية",
       appsSubtitle: "قم بتحميلها قبل وصولك.",
       area: "المساحة",
@@ -39205,6 +39214,7 @@ export const translations: Record<Language, Translations> = {
       title: "هتل‌های {city}"
     },
     cityPage: {
+      pageTitle: "راهنمای سفر به {city} - ChinaConnect",
       appCount: "{count} اپلیکیشن‌های ضروری",
       appsSubtitle: "قبل از رسیدن آن‌ها را دانلود کنید.",
       area: "منطقه",
@@ -43513,6 +43523,7 @@ export const translations: Record<Language, Translations> = {
       title: "{city}的酒店"
     },
     cityPage: {
+      pageTitle: "{city} 旅游指南 - ChinaConnect",
       appCount: "{count}个必备应用",
       appsSubtitle: "抵达前下载这些应用。",
       area: "区域",
@@ -47821,6 +47832,7 @@ export const translations: Record<Language, Translations> = {
       title: "{city}的酒店"
     },
     cityPage: {
+      pageTitle: "{city} 旅遊指南 - ChinaConnect",
       appCount: "{count}個必備應用程式",
       appsSubtitle: "抵達前先下載這些應用程式。",
       area: "地區",
