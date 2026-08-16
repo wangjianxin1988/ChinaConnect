@@ -3971,7 +3971,9 @@ export const translations: Record<Language, Translations> = {
       title2: "ChinaConnect Emergency SOS - Works Offline",
       trafficDesc: "Traffic accidents only",
       trafficName: "Traffic",
-      tryAgain: "Try again"
+      tryAgain: "Try again",
+      viewFullEmergencyInfo: "View Full Emergency Info",
+      browseCities: "Browse Cities",
     },
     onboarding: {
       done: "Done",
@@ -8266,7 +8268,9 @@ export const translations: Record<Language, Translations> = {
       title2: "ChinaConnect緊急SOS - オフラインでも利用可能",
       trafficDesc: "交通事故のみ",
       trafficName: "交通事故",
-      tryAgain: "再試行"
+      tryAgain: "再試行",
+      viewFullEmergencyInfo: "緊急情報のすべてを見る",
+      browseCities: "都市を閲覧",
     },
     onboarding: {
       done: "完了",
@@ -12544,7 +12548,9 @@ export const translations: Record<Language, Translations> = {
       title2: "ChinaConnect 긴급 SOS - 오프라인 작동",
       trafficDesc: "교통 사고 전용",
       trafficName: "교통사고",
-      tryAgain: "재시도"
+      tryAgain: "재시도",
+      viewFullEmergencyInfo: "전체 긴급 정보 보기",
+      browseCities: "도시 둘러보기",
     },
     onboarding: {
       done: "Done",
@@ -16822,7 +16828,9 @@ export const translations: Record<Language, Translations> = {
       title2: "ChinaConnect ฉุกเฉิน SOS - ทำงานแบบออฟไลน์",
       trafficDesc: "อุบัติเหตุทางรถยนต์เท่านั้น",
       trafficName: "อุบัติเหตุจราจร",
-      tryAgain: "ลองอีกครั้ง"
+      tryAgain: "ลองอีกครั้ง",
+      viewFullEmergencyInfo: "ดูข้อมูลฉุกเฉินทั้งหมด",
+      browseCities: "เรียกดูเมือง",
     },
     onboarding: {
       done: "เสร็จสิ้น",
@@ -21100,7 +21108,9 @@ export const translations: Record<Language, Translations> = {
       title2: "ChinaConnect Khẩn cấp SOS - Hoạt động Ngoại tuyến",
       trafficDesc: "Chỉ tai nạn giao thông",
       trafficName: "Tai nạn giao thông",
-      tryAgain: "Thử lại"
+      tryAgain: "Thử lại",
+      viewFullEmergencyInfo: "Xem toàn bộ thông tin khẩn cấp",
+      browseCities: "Duyệt các thành phố",
     },
     onboarding: {
       done: "Hoàn thành",
@@ -25378,7 +25388,9 @@ export const translations: Record<Language, Translations> = {
       title2: "ChinaConnect Экстренная помощь SOS - Работает офлайн",
       trafficDesc: "Только дорожно-транспортные происшествия",
       trafficName: "ДТП",
-      tryAgain: "Попробовать снова"
+      tryAgain: "Попробовать снова",
+      viewFullEmergencyInfo: "Вся информация об экстренных службах",
+      browseCities: "Обзор городов",
     },
     onboarding: {
       done: "Готово",
@@ -29656,7 +29668,9 @@ export const translations: Record<Language, Translations> = {
       title2: "ChinaConnect Urgence SOS - Fonctionne Hors Ligne",
       trafficDesc: "Accidents de la circulation uniquement",
       trafficName: "Accident de la route",
-      tryAgain: "Réessayer"
+      tryAgain: "Réessayer",
+      viewFullEmergencyInfo: "Voir toutes les informations d’urgence",
+      browseCities: "Parcourir les villes",
     },
     onboarding: {
       done: "Terminé",
@@ -33934,7 +33948,9 @@ export const translations: Record<Language, Translations> = {
       title2: "ChinaConnect Emergency SOS - Funktioniert Offline",
       trafficDesc: "Nur Verkehrsunfälle",
       trafficName: "Verkehrsunfall",
-      tryAgain: "Erneut versuchen"
+      tryAgain: "Erneut versuchen",
+      viewFullEmergencyInfo: "Alle Notfallinformationen anzeigen",
+      browseCities: "Städte durchsuchen",
     },
     onboarding: {
       done: "Fertig",
@@ -38212,7 +38228,9 @@ export const translations: Record<Language, Translations> = {
       title2: "ChinaConnect SOS الطارئة - يعمل بدون اتصال",
       trafficDesc: "حوادث مرورية فقط",
       trafficName: "حوادث المرور",
-      tryAgain: "حاول مرة أخرى"
+      tryAgain: "حاول مرة أخرى",
+      viewFullEmergencyInfo: "عرض جميع معلومات الطوارئ",
+      browseCities: "تصفح المدن",
     },
     onboarding: {
       done: "تم",
@@ -42490,7 +42508,9 @@ export const translations: Record<Language, Translations> = {
       title2: "ChinaConnect اورژانس SOS - در حالت آفلاین کار می‌کند",
       trafficDesc: "فقط تصادفات ترافیکی",
       trafficName: "تصادف جادهای",
-      tryAgain: "دوباره امتحان کنید"
+      tryAgain: "دوباره امتحان کنید",
+      viewFullEmergencyInfo: "مشاهده تمام اطلاعات اضطراری",
+      browseCities: "مرور شهرها",
     },
     onboarding: {
       done: "اتمام",
@@ -46768,7 +46788,9 @@ export const translations: Record<Language, Translations> = {
       title2: "ChinaConnect 紧急SOS - 离线可用",
       trafficDesc: "仅限交通事故",
       trafficName: "交通事故",
-      tryAgain: "重试"
+      tryAgain: "重试",
+      viewFullEmergencyInfo: "查看全部紧急信息",
+      browseCities: "浏览城市",
     },
     onboarding: {
       done: "完成",
@@ -51046,7 +51068,9 @@ export const translations: Record<Language, Translations> = {
       title2: "ChinaConnect 緊急SOS - 離線可用",
       trafficDesc: "交通事故專用",
       trafficName: "交通事故",
-      tryAgain: "重試"
+      tryAgain: "重試",
+      viewFullEmergencyInfo: "查看全部緊急資訊",
+      browseCities: "瀏覽城市",
     },
     onboarding: {
       done: "完成",
