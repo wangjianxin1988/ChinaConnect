@@ -1,5 +1,5 @@
 // Auto-generated ar override dictionary for guide data.
-// Key: original string (EN or ZH) -> Modern Standard Arabic.
+// Key: original string (EN or ZH) -> Arabic.
 export const AR_GUIDE_OVERRIDES: Record<string, string> = {
   "Do I need to register with police when checking in?": "هل يتعين علي التسجيل لدى الشرطة عند تسجيل الوصول؟",
   "Yes, all foreign guests must complete a registration form. Hotels usually handle this automatically with your passport. Keep the registration receipt during your stay.": "نعم، يجب على جميع الضيوف الأجانب ملء استمارة تسجيل. عادة ما تقوم الفنادق بذلك تلقائيًا باستخدام جواز سفرك. احتفظ بإيصال التسجيل أثناء إقامتك.",
@@ -4608,7 +4608,7 @@ export const AR_GUIDE_OVERRIDES: Record<string, string> = {
   "Company Address (China)": "عنوان الشركة (الصين)",
   "公司地址（中国）": "الطابق العاشر، المبنى أ، 123 طريق الأعمال، بودونغ، شنغهاي",
   "Floor 10, Building A, 123 Business Road, Pudong, Shanghai": "شانغهاي، منطقة بودونغ الجديدة، طريق الأعمال رقم 123، المبنى أ، الطابق العاشر",
-  "上海市浦东新区商务路123号A栋10楼": "上海市浦东新区商务路123号A栋10楼",
+  "上海市浦东新区商务路123号A栋10楼": "شنغهاي، منطقة بودونغ الجديدة، شارع شانغو رقم 123، مبنى أ، الطابق 10",
   "Contact Person": "جهة الاتصال",
   "联系人": "جهة الاتصال",
   "Li Wei": "لي وي",
