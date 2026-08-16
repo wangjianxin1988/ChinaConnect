@@ -57,7 +57,11 @@ for (const p of paths) {
     total++;
     if (v === k) {
       const legalZhIdentity = (lang === "zh-CN" || lang === "zh-TW") && isZhSource(k);
-      if (!legalZhIdentity && !isKeepableToken(k)) { bad++; badKeys.push({ key: k, value: v }); }
+      // For ja, source strings that already contain CJK are legal identity
+      // (shared kanji / Japanese-source content); only Latin/other scripts
+      // still need translation.
+      const legalJaIdentity = lang === "ja" && (hasKana(k) || hasCJK(k));
+      if (!legalZhIdentity && !legalJaIdentity && !isKeepableToken(k)) { bad++; badKeys.push({ key: k, value: v }); }
     } else if (disallow && disallow.test(v)) {
       cont++; contKeys.push({ key: k, value: v });
     }

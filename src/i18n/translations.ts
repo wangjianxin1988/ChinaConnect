@@ -8629,10 +8629,10 @@ export const translations: Record<Language, Translations> = {
   },
   ko: {
     accommodationGuide: {
-      tabBooking: "予約のコツ",
-      tabCheckin: "チェックインの流れ",
-      tabFaqs: "よくある質問",
-      tabTypes: "ホテルタイプ"
+      tabBooking: "예약 팁",
+      tabCheckin: "체크인 절차",
+      tabFaqs: "자주 묻는 질문",
+      tabTypes: "호텔 유형"
     },
     accountPage: {
       active: "활성",
@@ -8643,7 +8643,7 @@ export const translations: Record<Language, Translations> = {
       deleteAction: "삭제",
       deleteRouteConfirm: "이 경로를 삭제하시겠습니까?",
       editProfile: "프로필 편집",
-      emptyFavorites: "�겨찾기 없음",
+      emptyFavorites: "즐겨찾기 없음",
       emptyFavoritesHint: "즐겨찾기가 없습니다. 도시와 레스토랑을 둘러보며 추가하세요!",
       emptyOrders: "최근 주문 없음",
       emptySavedRoutes: "저장된 경로 없음",
@@ -8946,18 +8946,18 @@ export const translations: Record<Language, Translations> = {
     cityAttractions: {
       categoryAll: "전체",
       categoryLabel: "카테고리",
-      chinanewsDesc: "公式観光情報",
-      ctripDesc: "観光地のレビュー・予約",
+      chinanewsDesc: "공식 관광 정보",
+      ctripDesc: "관광지 리뷰 및 예약",
       disclaimer: "개장 시간, 입장료 및 전화번호는 변경될 수 있습니다. 명소의 공식 웹사이트를 통해 확인하거나 미리 전화하시기 바랍니다.",
-      mafengwoDesc: "中国最大の旅行コミュニティ",
-      mctDesc: "政府観光データ",
+      mafengwoDesc: "중국 최대 여행 커뮤니티",
+      mctDesc: "정부 관광 데이터",
       openOnMap: "지도에서 열기",
       openingHours: "개장 시간",
       subtitle: "놓치지 말아야 할 랜드마크, 박물관 및 자연의 경이.",
       ticketPrice: "입장료",
       tipsHeader: "팁",
       title: "{city}의 명소",
-      tripadvisorDesc: "海外の観光地レビュー",
+      tripadvisorDesc: "해외 관광지 리뷰",
       viewAll: "{city}의 모든 명소 보기",
       viewDetails: "자세히 보기",
       viewMore: "더 많은 명소 보기"
@@ -8965,9 +8965,9 @@ export const translations: Record<Language, Translations> = {
     cityFood: {
       avgPrice: "평균 가격",
       cuisine: "요리",
-      dataSourcesDesc: "権威ある情報源からまとめた飲食店データ。訪問前に詳細を確認してください：",
-      dataSourcesHeading: "データソースと参考資料",
-      dianpingDesc: "中国最大のローカル生活サービスプラットフォーム",
+      dataSourcesDesc: "권위 있는 정보 소스에서 정리한 음식점 데이터. 방문 전에 세부 정보를 확인하세요:",
+      dataSourcesHeading: "데이터 소스 및 참고 자료",
+      dianpingDesc: "중국 최대 로컬 생활 서비스 플랫폼",
       disclaimer: "전화번호와 주소는 변경될 수 있습니다. 레스토랑의 공식 채널을 통해 확인하거나 미리 전화하시기 바랍니다.",
       filterAll: "전체",
       filterBlackPearl: "블랙 펄",
@@ -8977,16 +8977,16 @@ export const translations: Record<Language, Translations> = {
       filterMichelin: "미쉐린",
       filteringLabel: "필터링:",
       googleMaps: "구글 지도",
-      meituanDesc: "出前・レビュープラットフォーム",
-      michelinDesc: "国際的に権威ある飲食店評価",
-      nextCity: "次の都市",
-      previousCity: "前の都市",
+      meituanDesc: "배달 및 리뷰 플랫폼",
+      michelinDesc: "국제적으로 권위 있는 음식점 평가",
+      nextCity: "다음 도시",
+      previousCity: "이전 도시",
       signatureDishes: "시그니처 요리",
       subtitle: "미쉐린 스타, 블랙 펄의 추천 및 현지 보석 같은 곳.",
       title: "{city}의 레스토랑",
       viewAll: "{city}의 모든 레스토랑 보기",
       viewDetails: "자세히 보기",
-      xiaohongshuDesc: "ローカルグルメ探索ガイド"
+      xiaohongshuDesc: "로컬 미식 탐험 가이드"
     },
     cityHotels: {
       bookCta: "호텔 세부 정보 보기",
@@ -9014,7 +9014,7 @@ export const translations: Record<Language, Translations> = {
       bookHotelCta: "{city}에서 호텔 찾기",
       bookTourCta: "{city}에서 투어 예약하기",
       citySubtitle: "{city}, 중국을 위한 완벽한 여행 가이드. 최고의 레스토랑, 명소, 호텔 및 여행 팁을 찾으세요.",
-      climate: "気候",
+      climate: "기후",
       connectivitySubtitle: "데이터로 연결 상태 유지하기",
       contactCount: "{count}개의 연락처",
       cultureSubtitle: "지역 관습 및 예절",
@@ -9023,8 +9023,8 @@ export const translations: Record<Language, Translations> = {
       dataSourcesDesc: "레스토랑 데이터는 공개 리뷰와 현지 추천에서 가져옵니다.",
       dataSourcesHeading: "데이터 소스",
       downloadBefore: "중국 도착 전에 이 앱들을 다운로드하세요.",
-      durationLabel: "所要時間：",
-      electricity: "電圧・電源",
+      durationLabel: "소요 시간:",
+      electricity: "전압 및 전원",
       elevation: "고도",
       emergencySubtitle: "중요한 전화번호 및 대사관",
       emergencySubtitleDynamic: "{city}의 중요한 전화번호",
@@ -9036,8 +9036,8 @@ export const translations: Record<Language, Translations> = {
       foodHeading: "음식 하이라이트",
       foodHighlightsHeading: "음식 하이라이트",
       foodHighlightsSubtitle: "꼭 먹어야 할 시그니처 요리와 레스토랑",
-      foodSubtitle: "미�랭, 흑진주, 로컬 인기",
-      frequencyLabel: "周波数：",
+      foodSubtitle: "미쉐린, 흑진주, 로컬 인기",
+      frequencyLabel: "주파수:",
       gettingAround: "이동 방법",
       gettingTo: "가는 방법",
       heroEyebrow: "여행 가이드",
@@ -9046,13 +9046,13 @@ export const translations: Record<Language, Translations> = {
       hotelsCountUnit: "개 호텔",
       hotelsHeading: "숙박 추천",
       hotelsSubtitle: "부티크 호텔부터 국제 체인까지",
-      howToUseLabel: "使い方：",
+      howToUseLabel: "사용 방법:",
       importantNumbers: "{city}의 중요한 전화번호",
       intro: "환영합니다, {city}는 중국에서 가장 매력적인 목적지 중 하나입니다.",
       language: "언어",
       localFoodHighlights: "Local Food Highlights",
       localFoodHighlightsDesc: "Hand-picked local dining picks in {city}",
-      mapLayerDesc: "レイヤー切替：ミシュラン星、黒珍珠ランキング、地元のおすすめ",
+      mapLayerDesc: "레이어 전환: 미쉐린 스타, 블랙 펄 랭킹, 현지 추천",
       moreCities: "다른 도시들",
       nextCity: "다음 도시",
       noHotels: "호텔 데이터 없음",
@@ -9066,7 +9066,7 @@ export const translations: Record<Language, Translations> = {
       phoneIcon: "전화",
       population: "인구",
       previousCity: "이전 도시",
-      priceLabel: "料金：",
+      priceLabel: "요금:",
       proTipBooking: "프로 팁: 최고의 요금을 위해 호텔을 2-3주 전에 예약하세요.",
       proTipEsim1: "eSIM은 휴대전화가 이를 지원하는 경우 (iPhone XS 이상 및 대부분의 안드로이드 플래그십)에 가장 잘 작동합니다.",
       proTipEsim2: "중국 도착 전에 eSIM 앱을 다운로드하세요.",
@@ -9074,11 +9074,11 @@ export const translations: Record<Language, Translations> = {
       proTips: "프로 팁",
       quickFacts: "주요 사실",
       quickFactsHeading: "도시 빠른 사실",
-      recommendedPaymentApps: "おすすめ決済アプリ",
-      recommendedTransportApps: "おすすめ交通アプリ",
+      recommendedPaymentApps: "추천 결제 앱",
+      recommendedTransportApps: "추천 교통 앱",
       region: "지역",
       restaurantCount: "{count}개의 레스토랑",
-      restaurantsLabel: "レストラン",
+      restaurantsLabel: "레스토랑",
       sectionApps: "필수 앱",
       sectionAttractions: "주요 명소",
       sectionConnectivity: "SIM & eSIM",
@@ -9088,11 +9088,11 @@ export const translations: Record<Language, Translations> = {
       sectionHotels: "머무를 곳",
       sectionOverview: "개요",
       sectionPayment: "결제 및 돈",
-      sectionScenic: "景勝地",
+      sectionScenic: "명승지",
       sectionTransport: "이동 방법",
       sectionVisa: "비자 및 입국",
       sosTip: "도착 전에 이 번호들을 저장하세요 - 외딴 지역에서는 휴대전화 서비스가 제한될 수 있습니다.",
-      summer: "夏：",
+      summer: "여름:",
       switchToEnglishMode: "중국어 인터페이스가 보이면 앱 설정에서 영어 모드로 전환하세요. Alipay와 WeChat Pay 모두 외국 신용 카드를 지원합니다.",
       tabApps: "앱",
       tabAttractions: "명소",
@@ -9106,21 +9106,21 @@ export const translations: Record<Language, Translations> = {
       tabTransport: "교통",
       timezone: "시간대",
       tipCount: "{count}개의 팁",
-      tipsLabel: "ポイント：",
+      tipsLabel: "포인트:",
       topHighlightsHeading: "도시 하이라이트",
       transportSubtitle: "도착 및 시내 교통",
       travelTo: "{city}로 여행하기",
       viewAllAttractions: "View all attractions",
       viewAllHotels: "모든 호텔 보기",
       viewAllRestaurants: "View all restaurants",
-      visa: "ビザ",
+      visa: "비자",
       visaSubtitle: "Visa-free policies and entry requirements.",
       visit: "Visit",
       weatherForecast: "Weather forecast",
-      weatherNA: "天気データなし",
+      weatherNA: "날씨 데이터 없음",
       weatherNotAvailable: "Weather not available",
       weatherNow: "Now",
-      winter: "冬：",
+      winter: "겨울:",
       youMayAlsoLike: "You may also like"
     },
     common: {
@@ -9157,54 +9157,54 @@ export const translations: Record<Language, Translations> = {
       viewMore: "View more"
     },
     communicationGuide: {
-      tabApps: "必須アプリ",
-      tabSetup: "セットアップガイド",
-      tabSim: "SIM/eSIMオプション",
-      tabVpn: "VPN設定"
+      tabApps: "필수 앱",
+      tabSetup: "설정 가이드",
+      tabSim: "SIM/eSIM 옵션",
+      tabVpn: "VPN 설정"
     },
     culturalWarnings: {
-      all: "すべて",
-      catColors: "色",
-      catDining: "食事",
-      catGiftEtiquette: "贈答マナー",
-      catGifts: "贈り物",
-      catNumbers: "数字",
-      catPhoto: "写真",
-      catPhotography: "写真撮影",
-      catSocial: "社交",
-      critical: "重要",
-      general: "一般",
-      note: "注意",
-      warning: "警告"
+      all: "모두",
+      catColors: "색상",
+      catDining: "식사",
+      catGiftEtiquette: "선물 예절",
+      catGifts: "선물",
+      catNumbers: "숫자",
+      catPhoto: "사진",
+      catPhotography: "사진 촬영",
+      catSocial: "사교",
+      critical: "중요",
+      general: "일반",
+      note: "주의",
+      warning: "경고"
     },
     departureGuide: {
-      tabAirport: "空港情報",
-      tabChecklist: "チェックリスト",
-      tabSteps: "出国手順",
-      tabTax: "税還付"
+      tabAirport: "공항 정보",
+      tabChecklist: "체크리스트",
+      tabSteps: "출국 절차",
+      tabTax: "세금 환급"
     },
     diningGuide: {
-      allergenCard: "アレルゲン翻訳カード",
-      budgetHeading: "予算ガイド（1人あたり）",
-      casual: "カジュアルレストラン",
-      categoriesHeading: "人気料理カテゴリー",
-      chinesePhrases: "中国語フレーズ：",
-      commonAllergies: "よくあるアレルゲン：",
-      dietary: "食事制限",
-      diningEtiquette: "食事マナー",
-      faqsHeading: "よくある質問",
-      importantAllergyInfo: "重要なアレルギー情報",
-      orderingPhrases: "注文フレーズ",
-      popularDishesHeading: "人気料理：",
-      proTips: "プロのヒント：",
-      safeOptions: "安心な選択肢：",
-      streetFood: "屋台料理",
-      tabAllergies: "アレルギー",
-      tabBudget: "予算ガイド",
-      tabCategories: "カテゴリー",
-      tabDishes: "人気料理",
-      tabEtiquette: "マナー",
-      tabPhrases: "フレーズ集"
+      allergenCard: "알레르겐 번역 카드",
+      budgetHeading: "예산 가이드 (1인당)",
+      casual: "캐주얼 레스토랑",
+      categoriesHeading: "인기 요리 카테고리",
+      chinesePhrases: "중국어 표현:",
+      commonAllergies: "흔한 알레르겐:",
+      dietary: "식이 제한",
+      diningEtiquette: "식사 예절",
+      faqsHeading: "자주 묻는 질문",
+      importantAllergyInfo: "중요한 알레르기 정보",
+      orderingPhrases: "주문 표현",
+      popularDishesHeading: "인기 요리:",
+      proTips: "프로 팁:",
+      safeOptions: "안전한 선택:",
+      streetFood: "길거리 음식",
+      tabAllergies: "알레르기",
+      tabBudget: "예산 가이드",
+      tabCategories: "카테고리",
+      tabDishes: "인기 요리",
+      tabEtiquette: "예절",
+      tabPhrases: "표현 모음"
     },
     emergency: {
       address: "Address",
@@ -9229,15 +9229,15 @@ export const translations: Record<Language, Translations> = {
       viewAllContacts: "View all contacts"
     },
     emergencyGuide: {
-      bannerSubtitle: "この番号を保存してください — 警察：110、救急：120、消防：119",
-      bannerTitle: "中国の緊急番号",
-      labelAmbulance: "救急",
-      labelFire: "消防",
-      labelPolice: "警察",
-      tabContacts: "緊急連絡先",
-      tabEmbassy: "大使館情報",
-      tabOverview: "緊急時の種類",
-      tabPhrases: "便利フレーズ"
+      bannerSubtitle: "이 번호를 저장하세요 — 경찰: 110, 구급: 120, 화재: 119",
+      bannerTitle: "중국 비상 연락처",
+      labelAmbulance: "구급",
+      labelFire: "화재",
+      labelPolice: "경찰",
+      tabContacts: "비상 연락처",
+      tabEmbassy: "대사관 정보",
+      tabOverview: "비상 상황 유형",
+      tabPhrases: "유용한 표현"
     },
     emergencyPage: {
       ambulance: "구급차",
@@ -9271,7 +9271,7 @@ export const translations: Record<Language, Translations> = {
       keepDocs1: "스마트폰으로 사진 백업",
       keepDocs2: "호텔 안전 금고에 보관",
       keepDocs3: "복사본 휴대",
-      keepDocs4: "공개场合에서 보여주지 않기",
+      keepDocs4: "공공장소에서 보여주지 않기",
       keepDocsTitle: "서류 안전",
       lostPassportTitle: "여권 분실",
       lpStep1Desc: "가장 가까운 경찰서에 가서 신고하세요.",
@@ -9351,7 +9351,7 @@ export const translations: Record<Language, Translations> = {
       unauthorized: "errors.unauthorized"
     },
     etiquette: {
-      placeholder: "近日公開"
+      placeholder: "곧 공개"
     },
     features: {
       accommodation: "숙박",
@@ -9593,7 +9593,7 @@ export const translations: Record<Language, Translations> = {
                           can: {
                             help: {
                               with: {
-                                directio: "着陸後、標識に従って地下鉄またはタクシーに乗ります。空港スタッフが道順をお手伝いします。"
+                                directio: "착륙 후 표지판을 따라 지하철 또는 택시를 이용하세요. 공항 직원이 길을 안내해 드립니다."
                               }
                             }
                           }
@@ -9866,7 +9866,7 @@ export const translations: Record<Language, Translations> = {
                   meetings: {
                     conferences: {
                       and: {
-                        negotiatio: "中国での会議、カンファレンス、交渉のために、審査を受けた通訳者と翻訳者を予約しましょう。"
+                        negotiatio: "중국에서의 회의, 컨퍼런스, 협상을 위해 검증된 통역사와 번역가를 예약하세요."
                       }
                     }
                   }
@@ -10695,7 +10695,7 @@ export const translations: Record<Language, Translations> = {
                 into: {
                   hotels: {
                     in: {
-                      china: "中国のホテルの予約とチェックイン方法"
+                      china: "중국 호텔 예약 및 체크인 방법"
                     }
                   }
                 }
@@ -12439,12 +12439,12 @@ export const translations: Record<Language, Translations> = {
       popularRestaurants: "Popular Restaurants",
       popularRestaurantsSubtitle: "Michelin and Black Pearl favorites across China",
       recentlyViewed: "최근 본 항목",
-      recommendedForYou: "맞� 추천",
+      recommendedForYou: "맞춤 추천",
       startPlanningToday: "Start planning your trip today.",
       statsAI: "AI 지원",
       statsAttractions: "인기 명소",
       statsCities: "커버 도시",
-      statsRestaurants: "미�랭 레스토랑",
+      statsRestaurants: "미쉐린 레스토랑",
       viewAllCities: "모든 도시 보기",
       viewAllCitiesButton: "View All Cities"
     },
@@ -12452,16 +12452,16 @@ export const translations: Record<Language, Translations> = {
       featuredDestinations: "인기 있는 목적지에 기반"
     },
     invitationLetter: {
-      allowPopups: "印刷のためにポップアップを許可してください",
-      bilingual: "バイリンガル",
-      downloadPdf: "PDFをダウンロード",
-      edit: "編集",
-      english: "英語",
-      generating: "生成中...",
-      pdfFailed: "PDF生成に失敗しました：",
-      pdfFailedRetry: "PDF生成に失敗しました。もう一度お試しください。",
+      allowPopups: "인쇄를 위해 팝업을 허용해 주세요",
+      bilingual: "이중 언어",
+      downloadPdf: "PDF 다운로드",
+      edit: "편집",
+      english: "영어",
+      generating: "생성 중...",
+      pdfFailed: "PDF 생성 실패:",
+      pdfFailedRetry: "PDF 생성에 실패했습니다. 다시 시도해 주세요.",
       png: "PNG",
-      preview: "プレビュー"
+      preview: "미리보기"
     },
     language: {
       chinese: "중국어",
@@ -12486,7 +12486,7 @@ export const translations: Record<Language, Translations> = {
       guide: "여행 가이드",
       home: "홈",
       restaurants: "음식",
-      scenicSpots: "景勝地",
+      scenicSpots: "명승지",
       selectLanguage: "언어 선택",
       signIn: "Sign in",
       tagline: "AI와 함께 중국을 탐험"
@@ -12499,7 +12499,7 @@ export const translations: Record<Language, Translations> = {
       goHome: "홈으로 돌아가기",
       heading: "페이지를 찾을 수 없음",
       homeButton: "Back to home",
-      letsContinue: "중국 탐험을 계속해 �시다",
+      letsContinue: "중국 탐험을 계속해 보시다",
       primary: "홈으로 돌아가기",
       subtitle: "The page you're looking for doesn't exist or has moved.",
       title: "페이지를 찾을 수 없음 - ChinaConnect",
@@ -12559,7 +12559,7 @@ export const translations: Record<Language, Translations> = {
       next: "Next",
       skip: "Skip",
       step1Desc: "12개 중국 도시에서 미슐랭 별·흑진주 레스토랑을 찾으세요.",
-      step1Title: "�륭한 음식 발견",
+      step1Title: "훌륭한 음식 발견",
       step2Desc: "AI 어시스턴트로부터 개인화된 추천과 현지 지식 얻기.",
       step2Title: "AI 기반 팁",
       step3Desc: "긴급 연락처, 교통 정보, 문화 팁을 한 곳에서 액세스.",
@@ -12567,29 +12567,29 @@ export const translations: Record<Language, Translations> = {
       welcome: "ChinaConnect에 오신 것을 환영합니다!"
     },
     paymentGuide: {
-      atmHeading: "国際カードに強いATM",
-      atmTip1: "空港や銀行のATMが最良の為替レートです",
-      atmTip2: "国際的な引き出し手数料について銀行に確認してください",
-      atmTip3: "一部のATMは外国カードの引き出しを制限します（最大2000元）",
-      atmTip4: "銀行内のATMを使うとより安全です",
-      faqsHeading: "よくある質問",
-      securityWarning: "セキュリティ警告",
-      setupHeading: "設定方法",
+      atmHeading: "국제 카드 지원 ATM",
+      atmTip1: "공항이나 은행 ATM이 최고의 환율을 제공합니다",
+      atmTip2: "국제 인출 수수료에 대해 은행에 확인하세요",
+      atmTip3: "일부 ATM은 외국 카드 인출을 제한합니다 (최대 2000위안)",
+      atmTip4: "은행 내부의 ATM을 사용하면 더 안전합니다",
+      faqsHeading: "자주 묻는 질문",
+      securityWarning: "보안 경고",
+      setupHeading: "설정 방법",
       tabAlipay: "Alipay",
       tabAtm: "ATM",
-      tabCash: "現金・カード",
-      tabFaq: "よくある質問",
-      tabTax: "税還付",
+      tabCash: "현금 및 카드",
+      tabFaq: "자주 묻는 질문",
+      tabTax: "세금 환급",
       tabWechat: "WeChat Pay",
-      taxTip1: "セキュリティチェック前に空港出発ロビーで行ってください",
-      taxTip2: "対象店舗での最低購入額は500元",
-      taxTip3: "還付率：品目カテゴリーにより3-11%",
-      taxTip4: "税還付マーク付きの発注書を保管してください"
+      taxTip1: "보안 검색 전에 공항 출발 로비에서 진행하세요",
+      taxTip2: "대상 매장에서 최소 구매 금액은 500위안",
+      taxTip3: "환급률: 품목 카테고리에 따라 3-11%",
+      taxTip4: "세금 환급 마크가 있는 주문서를 보관하세요"
     },
     priceTransparency: {
-      all: "すべて",
-      showComparison: "比較表示",
-      showSimplified: "簡略表示"
+      all: "모두",
+      showComparison: "비교 보기",
+      showSimplified: "간단 보기"
     },
     pricing: {
       annualNote: "Billed annually at ¥659 (save ¥169)",
@@ -12692,7 +12692,7 @@ export const translations: Record<Language, Translations> = {
       },
       freeForever: "영원히 무료",
       heroBadge: "Pricing",
-      heroSubtitle: "무료浏览부터 전문 계획까지, 여행 페이스에 맞는 플랜.",
+      heroSubtitle: "무료 탐색부터 전문 계획까지, 여행 속도에 맞는 플랜.",
       heroTitle: "중국 탐험 플랜을 선택하세요",
       moneyBack: "30-day refund",
       planBusiness: "비즈니스",
@@ -12734,7 +12734,7 @@ export const translations: Record<Language, Translations> = {
         feature4: "프리미엄 맞춤 설정",
         feature5: "고급 여행 도구",
         name: "여행자",
-        price: "�13,900"
+        price: "₩13,900"
       },
       trustBadges: {
         cancelAnytime: "언제든 취소",
@@ -12823,7 +12823,7 @@ export const translations: Record<Language, Translations> = {
       title: "Restaurant Guide"
     },
     scamPrevention: {
-      all: "すべて"
+      all: "모두"
     },
     scenicSpots: {
       allSpots: "All Scenic Spots",
@@ -12848,28 +12848,28 @@ export const translations: Record<Language, Translations> = {
       shareTip: "친구와 공유"
     },
     transportGuide: {
-      airportWifi: "空港WiFiが利用可能な場合が多い — SIM購入前に接続を",
-      arrivalByPlane: "飛行機で",
-      arrivalByTrain: "電車で",
-      arrivalTip: "入国カードは大切に保管してください — 入管審査で必要になります",
-      bookingPlatforms: "予約プラットフォーム",
-      didiTip: "空港送迎にはDidiアプリが便利 — タクシーキューより安い",
-      howToUse: "使い方：",
-      proTips: "プロのヒント：",
-      seatClasses: "シートクラス",
-      selectMode: "交通手段を選択",
-      selectModeHint: "交通手段を選択してください",
-      tabArrival: "到着",
-      tabDistances: "距離",
-      tabIntercity: "都市間",
-      tabLocal: "市内の交通",
-      tabPhrases: "フレーズ集",
-      tabTaxi: "タクシー/Didi",
-      tabTrains: "鉄道予約",
-      taxiPhrases: "タクシー便利フレーズ",
-      trainBookingTips: "鉄道予約のコツ",
+      airportWifi: "공항 WiFi가 이용 가능한 경우가 많습니다 — SIM 구매 전에 연결하세요",
+      arrivalByPlane: "비행기로",
+      arrivalByTrain: "기차로",
+      arrivalTip: "입국 카드는 잘 보관하세요 — 입국 심사에서 필요합니다",
+      bookingPlatforms: "예약 플랫폼",
+      didiTip: "공항 픽업에는 Didi 앱이 편리합니다 — 택시 줄보다 저렴합니다",
+      howToUse: "사용 방법:",
+      proTips: "프로 팁:",
+      seatClasses: "좌석 등급",
+      selectMode: "교통 수단 선택",
+      selectModeHint: "교통 수단을 선택하세요",
+      tabArrival: "도착",
+      tabDistances: "거리",
+      tabIntercity: "도시 간",
+      tabLocal: "시내 교통",
+      tabPhrases: "표현 모음",
+      tabTaxi: "택시/Didi",
+      tabTrains: "철도 예약",
+      taxiPhrases: "택시 유용한 표현",
+      trainBookingTips: "철도 예약 팁",
       tripCta: "Trip.com / Ctrip",
-      usefulPhrases: "交通便利フレーズ"
+      usefulPhrases: "교통 유용한 표현"
     },
     userPage: {
       heading: "프로필",
@@ -12877,42 +12877,42 @@ export const translations: Record<Language, Translations> = {
       title: "사용자 프로필 - ChinaConnect"
     },
     visaPage: {
-      appsHeading: "必須アプリ",
-      appsSubtitle: "到着前にダウンロード — Google Playは中国で利用不可",
-      beforeBuying: "購入前に",
-      digitalCopiesDesc: "デジタルコピーをクラウド（Google Drive、iCloud）に保管し、家族と共有。原本とは別に物理コピーを保管してください。",
-      duration: "滞在期間：",
-      faqHeading: "よくある質問",
-      fee: "料金：",
-      finalPreparations: "最終準備",
-      flightHeading: "フライト予約のコツ",
-      importantReminder: "重要なお知らせ",
+      appsHeading: "필수 앱",
+      appsSubtitle: "도착 전에 다운로드하세요 — Google Play는 중국에서 사용 불가",
+      beforeBuying: "구매 전에",
+      digitalCopiesDesc: "디지털 사본을 클라우드(Google Drive, iCloud)에 보관하고 가족과 공유하세요. 원본과 별도로 물리적 사본을 보관하세요.",
+      duration: "체류 기간:",
+      faqHeading: "자주 묻는 질문",
+      fee: "요금:",
+      finalPreparations: "최종 준비",
+      flightHeading: "항공편 예약 팁",
+      importantReminder: "중요 공지",
       insuranceDesc: "Medical treatment in China can be expensive, especially for foreigners. A good travel insurance policy with medical coverage is non-negotiable for safe travel.",
-      insuranceHeading: "旅行保険は必須",
-      insuranceTipsHeading: "保険選びのポイント",
-      overstayWarning: "ビザオーバーステイ警告",
-      processing: "処理期間：",
-      recommendedProviders: "おすすめプロバイダー",
-      reqHeading: "国別ビザ要件",
-      reqSubtitle: "国を選択して具体的な要件を確認",
-      requirements: "必要書類：",
-      tabApps: "アプリ・VPN",
-      tabChecklist: "出発前",
-      tabDocuments: "必要書類",
-      tabInsurance: "保険",
-      tabOverview: "概要",
-      tabProcess: "手続き",
-      tabTips: "コツ・よくある質問",
-      weeksBefore: "出発までの週数（4-6週間前）",
-      weeksBeforeDesc: "出発の4-6週間前に完了してください"
+      insuranceHeading: "여행 보험은 필수",
+      insuranceTipsHeading: "보험 선택 포인트",
+      overstayWarning: "비자 오버스테이 경고",
+      processing: "처리 기간:",
+      recommendedProviders: "추천 제공업체",
+      reqHeading: "국가별 비자 요건",
+      reqSubtitle: "국가를 선택하여 구체적인 요건 확인",
+      requirements: "필요 서류:",
+      tabApps: "앱 및 VPN",
+      tabChecklist: "출발 전",
+      tabDocuments: "필요 서류",
+      tabInsurance: "보험",
+      tabOverview: "개요",
+      tabProcess: "절차",
+      tabTips: "팁 및 FAQ",
+      weeksBefore: "출발까지 남은 주 수 (4-6주 전)",
+      weeksBeforeDesc: "출발 4-6주 전에 완료하세요"
     }
   },
   th: {
     accommodationGuide: {
-      tabBooking: "予約のコツ",
-      tabCheckin: "チェックインの流れ",
-      tabFaqs: "よくある質問",
-      tabTypes: "ホテルタイプ"
+      tabBooking: "เคล็ดลับการจอง",
+      tabCheckin: "ขั้นตอนการเช็คอิน",
+      tabFaqs: "คำถามที่พบบ่อย",
+      tabTypes: "ประเภทโรงแรม"
     },
     accountPage: {
       active: "ใช้งานอยู่",
@@ -13084,22 +13084,22 @@ export const translations: Record<Language, Translations> = {
     businessGuidePage: {
       backToGuide: "← กลับสู่คู่มือการท่องเที่ยว",
       etiquetteShort: "ความรู้พื้นฐานด้านมารยาททางธุรกิจ",
-      etiquetteSubtitle: "商务礼仪速成",
+      etiquetteSubtitle: "มารยาททางธุรกิจฉบับเร่งรัด",
       etiquetteTitle: "มารยาททางธุรกิจของจีน - ChinaConnect",
       expoShort: "ปฏิทินมหกรรมและงานแสดงสินค้า",
-      expoSubtitle: "展会与活动日厈",
+      expoSubtitle: "งานแสดงสินค้าและปฏิทินกิจกรรม",
       expoTitle: "ปฏิทินงานแสดงสินค้าและมหกรรมทางการค้าของจีน - ChinaConnect",
       indexDescription: "เครื่องมือที่เหมาะสมสำหรับนักธุรกิจต่างชาติในประเทศจีน",
       indexSubtitle: "Business Express",
       indexTitle: "Business Express - ChinaConnect",
       invitationShort: "จดหมายเชิญทางธุรกิจ",
-      invitationSubtitle: "商务邀请函模板",
+      invitationSubtitle: "เทมเพลตจดหมายเชิญธุรกิจ",
       invitationTitle: "แม่แบบจดหมายเชิญทางธุรกิจของจีน - ChinaConnect",
       registrationShort: "คู่มือการจดทะเบียนบริษัท",
-      registrationSubtitle: "工商注册指南",
+      registrationSubtitle: "คู่มือการจดทะเบียนบริษัท",
       registrationTitle: "คู่มือการจดทะเบียนบริษัทของจีน - ChinaConnect",
       translationShort: "บริการแปลและถ่ายทอด",
-      translationSubtitle: "翻译服务预约",
+      translationSubtitle: "จองบริการแปลภาษา",
       translationTitle: "บริการแปลและถ่ายทอด - ChinaConnect",
       registrationDescription: "คู่มือทีละขั้นตอนสำหรับการจดทะเบียน WFOE สำนักงานผู้แทน หรือนิติบุคคลอื่น ๆ ในจีนในฐานะนักลงทุนต่างชาติ พร้อมไทม์ไลน์และรายการตรวจสอบเอกสารครบถ้วน",
       etiquetteDescription: "เรียนรู้มารยาททางธุรกิจจีนอย่างเชี่ยวชาญ รวมถึงการแลกนามบัตร การรับประทานอาหาร การประชุม และการให้ของขวัญ ข้อควรปฏิบัติและข้อควรหลีกเลี่ยงสำหรับนักธุรกิจต่างชาติ",
@@ -13226,18 +13226,18 @@ export const translations: Record<Language, Translations> = {
     cityAttractions: {
       categoryAll: "ทั้งหมด",
       categoryLabel: "หมวดหมู่",
-      chinanewsDesc: "公式観光情報",
-      ctripDesc: "観光地のレビュー・予約",
+      chinanewsDesc: "ข้อมูลท่องเที่ยวอย่างเป็นทางการ",
+      ctripDesc: "รีวิวและจองสถานที่ท่องเที่ยว",
       disclaimer: "เวลาเปิด-ปิด ราคาตั๋ว และหมายเลขโทรศัพท์อาจมีการเปลี่ยนแปลง เราแนะนำให้ตรวจสอบผ่านเว็บไซต์ทางการของสถานที่ท่องเที่ยวหรือโทรหาก่อน",
-      mafengwoDesc: "中国最大の旅行コミュニティ",
-      mctDesc: "政府観光データ",
+      mafengwoDesc: "ชุมชนท่องเที่ยวที่ใหญ่ที่สุดในจีน",
+      mctDesc: "ข้อมูลการท่องเที่ยวจากภาครัฐ",
       openOnMap: "เปิดบนแผนที่",
       openingHours: "เวลาเปิด",
       subtitle: "จุดสำคัญ พิพิธภัณฑ์ และธรรมชาติ",
       ticketPrice: "ราคาเข้าชม",
       tipsHeader: "คำแนะนำ",
       title: "สถานที่ท่องเที่ยวใน {city}",
-      tripadvisorDesc: "海外の観光地レビュー",
+      tripadvisorDesc: "รีวิวสถานที่ท่องเที่ยวต่างประเทศ",
       viewAll: "ดูทั้งหมดใน {city}",
       viewDetails: "ดูรายละเอียด",
       viewMore: "ดูสถานที่ท่องเที่ยวเพิ่มเติม"
@@ -13245,9 +13245,9 @@ export const translations: Record<Language, Translations> = {
     cityFood: {
       avgPrice: "ราคาเฉลี่ย",
       cuisine: "อาหาร",
-      dataSourcesDesc: "権威ある情報源からまとめた飲食店データ。訪問前に詳細を確認してください：",
-      dataSourcesHeading: "データソースと参考資料",
-      dianpingDesc: "中国最大のローカル生活サービスプラットフォーム",
+      dataSourcesDesc: "ข้อมูลร้านอาหารรวบรวมจากแหล่งข้อมูลที่น่าเชื่อถือ กรุณาตรวจสอบรายละเอียดก่อนเยี่ยมชม:",
+      dataSourcesHeading: "แหล่งข้อมูลและเอกสารอ้างอิง",
+      dianpingDesc: "แพลตฟอร์มบริการชีวิตท้องถิ่นที่ใหญ่ที่สุดในจีน",
       disclaimer: "หมายเลขโทรศัพท์และที่อยู่อาจมีการเปลี่ยนแปลง เราแนะนำให้ตรวจสอบผ่านช่องทางทางการของร้านอาหารหรือโทรหาก่อน",
       filterAll: "ทั้งหมด",
       filterBlackPearl: "Black Pearl",
@@ -13257,16 +13257,16 @@ export const translations: Record<Language, Translations> = {
       filterMichelin: "Michelin",
       filteringLabel: "การกรอง:",
       googleMaps: "แผนที่ Google",
-      meituanDesc: "出前・レビュープラットフォーム",
-      michelinDesc: "国際的に権威ある飲食店評価",
-      nextCity: "次の都市",
-      previousCity: "前の都市",
+      meituanDesc: "แพลตฟอร์มเดลิเวอรี่และรีวิว",
+      michelinDesc: "การจัดอันดับร้านอาหารระดับนานาชาติที่น่าเชื่อถือ",
+      nextCity: "เมืองถัดไป",
+      previousCity: "เมืองก่อนหน้า",
       signatureDishes: "อาหารเด่น",
       subtitle: "ดาว Michelin และที่เป็นที่ชื่นชอบ Black Pearl และสมบัติท้องถิ่น",
       title: "ร้านอาหารใน {city}",
       viewAll: "ดูร้านอาหารทั้งหมดใน{city}",
       viewDetails: "ดูรายละเอียด",
-      xiaohongshuDesc: "ローカルグルメ探索ガイド"
+      xiaohongshuDesc: "คู่มือสำรวจอาหารท้องถิ่น"
     },
     cityHotels: {
       bookCta: "ดูรายละเอียดโรงแรม",
@@ -13294,7 +13294,7 @@ export const translations: Record<Language, Translations> = {
       bookHotelCta: "หาโรงแรมใน{city}",
       bookTourCta: "จองทัวร์ใน{city}",
       citySubtitle: "คู่มือท่องเที่ยวที่สมบูรณ์สำหรับ {city}, จีน ค้นหาร้านอาหาร แหล่งท่องเที่ยว โรงแรม และคำแนะนำการเดินทางที่ดีที่สุด",
-      climate: "気候",
+      climate: "สภาพอากาศ",
       connectivitySubtitle: "อยู่เชื่อมต่อกับข้อมูล",
       contactCount: "{count} ที่ติดต่อ",
       cultureSubtitle: "ประเพณีและมารยาทท้องถิ่น",
@@ -13303,8 +13303,8 @@ export const translations: Record<Language, Translations> = {
       dataSourcesDesc: "แหล่งที่มาของข้อมูลนี้",
       dataSourcesHeading: "แหล่งข้อมูล",
       downloadBefore: "ดาวน์โหลดแอปพลิเคชันเหล่านี้ก่อนที่คุณจะมาถึงประเทศจีน",
-      durationLabel: "所要時間：",
-      electricity: "電圧・電源",
+      durationLabel: "ระยะเวลา:",
+      electricity: "แรงดันไฟฟ้าและปลั๊กไฟ",
       elevation: "ความสูง",
       emergencySubtitle: "หมายเลขสำคัญและสถานทูต",
       emergencySubtitleDynamic: "หมายเลขโทรศัพท์สำคัญใน {city}",
@@ -13317,7 +13317,7 @@ export const translations: Record<Language, Translations> = {
       foodHighlightsHeading: "จุดเด่นด้านอาหาร",
       foodHighlightsSubtitle: "แนะนำโดยชาวพื้นเมือง",
       foodSubtitle: "ดาว Michelin, คัดเลือกจาก Black Pearl และร้านโปรดของท้องถิ่น",
-      frequencyLabel: "周波数：",
+      frequencyLabel: "ความถี่:",
       gettingAround: "การเดินทาง",
       gettingTo: "การเดินทางไปยัง{city}",
       heroEyebrow: "คู่มือท่องเที่ยว",
@@ -13326,13 +13326,13 @@ export const translations: Record<Language, Translations> = {
       hotelsCountUnit: "โรงแรม",
       hotelsHeading: "ที่พัก",
       hotelsSubtitle: "จากโรงแรมริมน้ำแบบบูติกไปจนถึงเชนระหว่างประเทศ",
-      howToUseLabel: "使い方：",
+      howToUseLabel: "การใช้งาน:",
       importantNumbers: "หมายเลขโทรศัพท์สำคัญใน{city}",
       intro: "ยินดีต้อนรับสู่{city} เป็นหนึ่งในจุดหมายปลายทางที่น่าสนใจที่สุดของจีน",
       language: "ภาษา",
       localFoodHighlights: "Local Food Highlights",
       localFoodHighlightsDesc: "Hand-picked local dining picks in {city}",
-      mapLayerDesc: "レイヤー切替：ミシュラン星、黒珍珠ランキング、地元のおすすめ",
+      mapLayerDesc: "สลับเลเยอร์: ดาวมิชลิน, การจัดอันดับไข่มุกดำ, คำแนะนำท้องถิ่น",
       moreCities: "เมืองเพิ่มเติม",
       nextCity: "เมืองถัดไป",
       noHotels: "ไม่พบโรงแรม",
@@ -13346,7 +13346,7 @@ export const translations: Record<Language, Translations> = {
       phoneIcon: "📞",
       population: "ประชากร",
       previousCity: "เมืองก่อนหน้า",
-      priceLabel: "料金：",
+      priceLabel: "ค่าใช้จ่าย:",
       proTipBooking: "คำแนะนำ: จองโรงแรม 2-3 สัปดาห์ล่วงหน้าสำหรับอัตราที่ดีที่สุด",
       proTipEsim1: "eSIM ทำงานได้ดีที่สุดหากโทรศัพท์ของคุณรองรับ (iPhone XS+ และส่วนใหญ่ของแอนดรอยด์แฟล็กชิป)",
       proTipEsim2: "ดาวน์โหลดแอปพลิเคชัน eSIM ก่อนที่คุณจะมาถึงประเทศจีน",
@@ -13354,11 +13354,11 @@ export const translations: Record<Language, Translations> = {
       proTips: "คำแนะนำ",
       quickFacts: "ข้อเท็จจริง",
       quickFactsHeading: "ข้อมูลสำคัญ",
-      recommendedPaymentApps: "おすすめ決済アプリ",
-      recommendedTransportApps: "おすすめ交通アプリ",
+      recommendedPaymentApps: "แอปชำระเงินแนะนำ",
+      recommendedTransportApps: "แอปขนส่งแนะนำ",
       region: "ภูมิภาค",
       restaurantCount: "{count} ร้านอาหาร",
-      restaurantsLabel: "レストラン",
+      restaurantsLabel: "ร้านอาหาร",
       sectionApps: "แอปพลิเคชันที่จำเป็น",
       sectionAttractions: "สถานที่ท่องเที่ยวยอดนิยม",
       sectionConnectivity: "SIM และ eSIM",
@@ -13368,11 +13368,11 @@ export const translations: Record<Language, Translations> = {
       sectionHotels: "ที่พัก",
       sectionOverview: "ภาพรวม",
       sectionPayment: "การชำระเงินและเงิน",
-      sectionScenic: "景勝地",
+      sectionScenic: "สถานที่ท่องเที่ยว",
       sectionTransport: "การเดินทาง",
       sectionVisa: "วีซ่าและการเข้า",
       sosTip: "บันทึกหมายเลขเหล่านี้ก่อนที่คุณจะมาถึง - บริการเครือข่ายมือถืออาจจำกัดในพื้นที่ห่างไกล",
-      summer: "夏：",
+      summer: "ฤดูร้อน:",
       switchToEnglishMode: "เปลี่ยนเป็นโหมดภาษาอังกฤษในการตั้งค่าแอปถ้าคุณเห็นหน้าจอภาษาจีน แอลิปายและเว่ย์ซิงเพย์สนับสนุนบัตรเครดิตต่างประเทศ",
       tabApps: "แอปพลิเคชัน",
       tabAttractions: "สถานที่ท่องเที่ยว",
@@ -13386,21 +13386,21 @@ export const translations: Record<Language, Translations> = {
       tabTransport: "การเดินทาง",
       timezone: "เขตเวลา",
       tipCount: "{count} เคล็ดลับ",
-      tipsLabel: "ポイント：",
+      tipsLabel: "จุดเด่น:",
       topHighlightsHeading: "จุดเด่นยอดนิยม",
       transportSubtitle: "การเดินทางไปรอบ{city}",
       travelTo: "เดินทางไป{city}",
       viewAllAttractions: "ดูทั้งหมดแหล่งท่องเที่ยว",
       viewAllHotels: "ดูทั้งหมด {totalHotelCount} โรงแรม",
       viewAllRestaurants: "ดูทั้งหมดร้านอาหาร",
-      visa: "ビザ",
+      visa: "วีซ่า",
       visaSubtitle: "นโยบายการเดินทางไม่ต้องรับวีซ่าและข้อกำหนดการเข้าเมือง",
       visit: "เยี่ยมชม",
       weatherForecast: "พยากรณ์อากาศ",
-      weatherNA: "天気データなし",
+      weatherNA: "ไม่มีข้อมูลสภาพอากาศ",
       weatherNotAvailable: "ข้อมูลอากาศไม่พร้อมใช้งาน",
       weatherNow: "ขณะนี้",
-      winter: "冬：",
+      winter: "ฤดูหนาว:",
       youMayAlsoLike: "คุณอาจสนใจ"
     },
     common: {
@@ -13437,54 +13437,54 @@ export const translations: Record<Language, Translations> = {
       viewMore: "ดูเพิ่มเติม"
     },
     communicationGuide: {
-      tabApps: "必須アプリ",
-      tabSetup: "セットアップガイド",
-      tabSim: "SIM/eSIMオプション",
-      tabVpn: "VPN設定"
+      tabApps: "แอปจำเป็น",
+      tabSetup: "คู่มือการติดตั้ง",
+      tabSim: "ตัวเลือก SIM/eSIM",
+      tabVpn: "การตั้งค่า VPN"
     },
     culturalWarnings: {
-      all: "すべて",
-      catColors: "色",
-      catDining: "食事",
-      catGiftEtiquette: "贈答マナー",
-      catGifts: "贈り物",
-      catNumbers: "数字",
-      catPhoto: "写真",
-      catPhotography: "写真撮影",
-      catSocial: "社交",
-      critical: "重要",
-      general: "一般",
-      note: "注意",
-      warning: "警告"
+      all: "ทั้งหมด",
+      catColors: "สี",
+      catDining: "อาหาร",
+      catGiftEtiquette: "มารยาทการให้ของขวัญ",
+      catGifts: "ของขวัญ",
+      catNumbers: "ตัวเลข",
+      catPhoto: "รูปภาพ",
+      catPhotography: "การถ่ายรูป",
+      catSocial: "สังคม",
+      critical: "สำคัญ",
+      general: "ทั่วไป",
+      note: "ข้อควรระวัง",
+      warning: "คำเตือน"
     },
     departureGuide: {
-      tabAirport: "空港情報",
-      tabChecklist: "チェックリスト",
-      tabSteps: "出国手順",
-      tabTax: "税還付"
+      tabAirport: "ข้อมูลสนามบิน",
+      tabChecklist: "รายการตรวจสอบ",
+      tabSteps: "ขั้นตอนการออกจากประเทศ",
+      tabTax: "คืนภาษี"
     },
     diningGuide: {
-      allergenCard: "アレルゲン翻訳カード",
-      budgetHeading: "予算ガイド（1人あたり）",
-      casual: "カジュアルレストラン",
-      categoriesHeading: "人気料理カテゴリー",
-      chinesePhrases: "中国語フレーズ：",
-      commonAllergies: "よくあるアレルゲン：",
-      dietary: "食事制限",
-      diningEtiquette: "食事マナー",
-      faqsHeading: "よくある質問",
-      importantAllergyInfo: "重要なアレルギー情報",
-      orderingPhrases: "注文フレーズ",
-      popularDishesHeading: "人気料理：",
-      proTips: "プロのヒント：",
-      safeOptions: "安心な選択肢：",
-      streetFood: "屋台料理",
-      tabAllergies: "アレルギー",
-      tabBudget: "予算ガイド",
-      tabCategories: "カテゴリー",
-      tabDishes: "人気料理",
-      tabEtiquette: "マナー",
-      tabPhrases: "フレーズ集"
+      allergenCard: "การ์ดแปลสารก่อภูมิแพ้",
+      budgetHeading: "คู่มืองบประมาณ (ต่อคน)",
+      casual: "ร้านอาหารทั่วไป",
+      categoriesHeading: "หมวดหมู่อาหารยอดนิยม",
+      chinesePhrases: "วลีภาษาจีน:",
+      commonAllergies: "สารก่อภูมิแพ้ทั่วไป:",
+      dietary: "ข้อจำกัดด้านอาหาร",
+      diningEtiquette: "มารยาทในการรับประทานอาหาร",
+      faqsHeading: "คำถามที่พบบ่อย",
+      importantAllergyInfo: "ข้อมูลสำคัญเกี่ยวกับภูมิแพ้",
+      orderingPhrases: "วลีสำหรับสั่งอาหาร",
+      popularDishesHeading: "อาหารยอดนิยม:",
+      proTips: "เคล็ดลับจากผู้เชี่ยวชาญ:",
+      safeOptions: "ตัวเลือกที่ปลอดภัย:",
+      streetFood: "อาหารข้างทาง",
+      tabAllergies: "ภูมิแพ้",
+      tabBudget: "คู่มืองบประมาณ",
+      tabCategories: "หมวดหมู่",
+      tabDishes: "อาหารยอดนิยม",
+      tabEtiquette: "มารยาท",
+      tabPhrases: "รวมวลี"
     },
     emergency: {
       address: "ที่อยู่",
@@ -13509,15 +13509,15 @@ export const translations: Record<Language, Translations> = {
       viewAllContacts: "ดูผู้ติดต่อทั้งหมด"
     },
     emergencyGuide: {
-      bannerSubtitle: "この番号を保存してください — 警察：110、救急：120、消防：119",
-      bannerTitle: "中国の緊急番号",
-      labelAmbulance: "救急",
-      labelFire: "消防",
-      labelPolice: "警察",
-      tabContacts: "緊急連絡先",
-      tabEmbassy: "大使館情報",
-      tabOverview: "緊急時の種類",
-      tabPhrases: "便利フレーズ"
+      bannerSubtitle: "บันทึกหมายเลขนี้ — ตำรวจ: 110, รถพยาบาล: 120, ดับเพลิง: 119",
+      bannerTitle: "หมายเลขฉุกเฉินของจีน",
+      labelAmbulance: "รถพยาบาล",
+      labelFire: "ดับเพลิง",
+      labelPolice: "ตำรวจ",
+      tabContacts: "ติดต่อฉุกเฉิน",
+      tabEmbassy: "ข้อมูลสถานทูต",
+      tabOverview: "ประเภทเหตุฉุกเฉิน",
+      tabPhrases: "วลีที่เป็นประโยชน์"
     },
     emergencyPage: {
       ambulance: "รถพยาบาล",
@@ -13631,7 +13631,7 @@ export const translations: Record<Language, Translations> = {
       unauthorized: "ไม่ได้รับอนุญาต"
     },
     etiquette: {
-      placeholder: "近日公開"
+      placeholder: "เร็วๆ นี้"
     },
     features: {
       accommodation: "ที่พัก",
@@ -13873,7 +13873,7 @@ export const translations: Record<Language, Translations> = {
                           can: {
                             help: {
                               with: {
-                                directio: "着陸後、標識に従って地下鉄またはタクシーに乗ります。空港スタッフが道順をお手伝いします。"
+                                directio: "หลังจากลงจอด ตามป้ายไปขึ้นรถไฟใต้ดินหรือแท็กซี่ เจ้าหน้าที่สนามบินจะช่วยแนะนำเส้นทาง"
                               }
                             }
                           }
@@ -15919,7 +15919,7 @@ export const translations: Record<Language, Translations> = {
               password: {
                 for: {
                   authorizing: {
-                    transactions: "ตั้งรหัสผ่านการชำระเงินที่ปลอดภัยเพื่ออนุญาต�ธุรกรรม"
+                    transactions: "ตั้งรหัสผ่านการชำระเงินที่ปลอดภัยเพื่ออนุญาตให้ธุรกรรม"
                   }
                 }
               }
@@ -16369,7 +16369,7 @@ export const translations: Record<Language, Translations> = {
                       bookings: {
                         and: {
                           proof: {
-                            of: "有効なパスポート、ビザ申請書、写真、旅行日程、ホテル予約、および財政証明"
+                            of: "หนังสือเดินทางที่ยังไม่หมดอายุ ใบสมัครวีซ่า รูปถ่าย แผนการเดินทาง ใบจองโรงแรม และหลักฐานทางการเงิน"
                           }
                         }
                       }
@@ -16732,16 +16732,16 @@ export const translations: Record<Language, Translations> = {
       featuredDestinations: "ตามจุดหมายปลายทางยอดนิยม"
     },
     invitationLetter: {
-      allowPopups: "印刷のためにポップアップを許可してください",
-      bilingual: "バイリンガル",
-      downloadPdf: "PDFをダウンロード",
-      edit: "編集",
-      english: "英語",
-      generating: "生成中...",
-      pdfFailed: "PDF生成に失敗しました：",
-      pdfFailedRetry: "PDF生成に失敗しました。もう一度お試しください。",
+      allowPopups: "อนุญาตป๊อปอัปเพื่อการพิมพ์",
+      bilingual: "สองภาษา",
+      downloadPdf: "ดาวน์โหลด PDF",
+      edit: "แก้ไข",
+      english: "ภาษาอังกฤษ",
+      generating: "กำลังสร้าง...",
+      pdfFailed: "สร้าง PDF ไม่สำเร็จ:",
+      pdfFailedRetry: "สร้าง PDF ไม่สำเร็จ กรุณาลองอีกครั้ง",
       png: "PNG",
-      preview: "プレビュー"
+      preview: "ตัวอย่าง"
     },
     language: {
       chinese: "ภาษาจีน",
@@ -16766,7 +16766,7 @@ export const translations: Record<Language, Translations> = {
       guide: "คู่มือท่องเที่ยว",
       home: "หน้าหลัก",
       restaurants: "ร้านอาหาร",
-      scenicSpots: "景勝地",
+      scenicSpots: "สถานที่ท่องเที่ยว",
       selectLanguage: "เลือกภาษา",
       signIn: "เข้าสู่ระบบ",
       tagline: "สำรวจประเทศจีนด้วย AI"
@@ -16847,29 +16847,29 @@ export const translations: Record<Language, Translations> = {
       welcome: "ยินดีต้อนรับสู่ ChinaConnect!"
     },
     paymentGuide: {
-      atmHeading: "国際カードに強いATM",
-      atmTip1: "空港や銀行のATMが最良の為替レートです",
-      atmTip2: "国際的な引き出し手数料について銀行に確認してください",
-      atmTip3: "一部のATMは外国カードの引き出しを制限します（最大2000元）",
-      atmTip4: "銀行内のATMを使うとより安全です",
-      faqsHeading: "よくある質問",
-      securityWarning: "セキュリティ警告",
-      setupHeading: "設定方法",
+      atmHeading: "ตู้ ATM ที่รองรับบัตรต่างประเทศ",
+      atmTip1: "ตู้ ATM ที่สนามบินหรือธนาคารให้อัตราแลกเปลี่ยนดีที่สุด",
+      atmTip2: "ตรวจสอบค่าธรรมเนียมการถอนเงินต่างประเทศกับธนาคารของคุณ",
+      atmTip3: "ตู้ ATM บางเครื่องจำกัดการถอนด้วยบัตรต่างประเทศ (สูงสุด 2000 หยวน)",
+      atmTip4: "ใช้ตู้ ATM ในธนาคารจะปลอดภัยกว่า",
+      faqsHeading: "คำถามที่พบบ่อย",
+      securityWarning: "คำเตือนด้านความปลอดภัย",
+      setupHeading: "วิธีการตั้งค่า",
       tabAlipay: "Alipay",
       tabAtm: "ATM",
-      tabCash: "現金・カード",
-      tabFaq: "よくある質問",
-      tabTax: "税還付",
+      tabCash: "เงินสดและบัตร",
+      tabFaq: "คำถามที่พบบ่อย",
+      tabTax: "คืนภาษี",
       tabWechat: "WeChat Pay",
-      taxTip1: "セキュリティチェック前に空港出発ロビーで行ってください",
-      taxTip2: "対象店舗での最低購入額は500元",
-      taxTip3: "還付率：品目カテゴリーにより3-11%",
-      taxTip4: "税還付マーク付きの発注書を保管してください"
+      taxTip1: "ทำก่อนผ่านจุดตรวจรักษาความปลอดภัยที่ห้องโถงผู้โดยสารขาออก",
+      taxTip2: "ยอดซื้อขั้นต่ำ 500 หยวนที่ร้านค้าที่เข้าร่วม",
+      taxTip3: "อัตราคืนภาษี: 3-11% ตามประเภทสินค้า",
+      taxTip4: "เก็บใบสั่งซื้อที่มีเครื่องหมายคืนภาษี"
     },
     priceTransparency: {
-      all: "すべて",
-      showComparison: "比較表示",
-      showSimplified: "簡略表示"
+      all: "ทั้งหมด",
+      showComparison: "แสดงแบบเปรียบเทียบ",
+      showSimplified: "แสดงแบบย่อ"
     },
     pricing: {
       annualNote: "จ่ายปีละ ¥659 (وفر ¥169)",
@@ -17103,7 +17103,7 @@ export const translations: Record<Language, Translations> = {
       title: "คู่มือร้านอาหาร"
     },
     scamPrevention: {
-      all: "すべて"
+      all: "ทั้งหมด"
     },
     scenicSpots: {
       allSpots: "All Scenic Spots",
@@ -17128,28 +17128,28 @@ export const translations: Record<Language, Translations> = {
       shareTip: "แชร์กับเพื่อน"
     },
     transportGuide: {
-      airportWifi: "空港WiFiが利用可能な場合が多い — SIM購入前に接続を",
-      arrivalByPlane: "飛行機で",
-      arrivalByTrain: "電車で",
-      arrivalTip: "入国カードは大切に保管してください — 入管審査で必要になります",
-      bookingPlatforms: "予約プラットフォーム",
-      didiTip: "空港送迎にはDidiアプリが便利 — タクシーキューより安い",
-      howToUse: "使い方：",
-      proTips: "プロのヒント：",
-      seatClasses: "シートクラス",
-      selectMode: "交通手段を選択",
-      selectModeHint: "交通手段を選択してください",
-      tabArrival: "到着",
-      tabDistances: "距離",
-      tabIntercity: "都市間",
-      tabLocal: "市内の交通",
-      tabPhrases: "フレーズ集",
-      tabTaxi: "タクシー/Didi",
-      tabTrains: "鉄道予約",
-      taxiPhrases: "タクシー便利フレーズ",
-      trainBookingTips: "鉄道予約のコツ",
+      airportWifi: "สนามบินมักมี WiFi ให้ใช้ — เชื่อมต่อก่อนซื้อ SIM",
+      arrivalByPlane: "โดยเครื่องบิน",
+      arrivalByTrain: "โดยรถไฟ",
+      arrivalTip: "เก็บการ์ดเข้าเมืองไว้ให้ดี — จำเป็นต้องใช้ตอนตรวจคนเข้าเมือง",
+      bookingPlatforms: "แพลตฟอร์มการจอง",
+      didiTip: "แอป Didi สะดวกสำหรับรับส่งสนามบิน — ถูกกว่าแท็กซี่",
+      howToUse: "การใช้งาน:",
+      proTips: "เคล็ดลับจากผู้เชี่ยวชาญ:",
+      seatClasses: "ชั้นที่นั่ง",
+      selectMode: "เลือกวิธีการเดินทาง",
+      selectModeHint: "กรุณาเลือกวิธีการเดินทาง",
+      tabArrival: "ถึง",
+      tabDistances: "ระยะทาง",
+      tabIntercity: "ระหว่างเมือง",
+      tabLocal: "การเดินทางในเมือง",
+      tabPhrases: "รวมวลี",
+      tabTaxi: "แท็กซี่/Didi",
+      tabTrains: "จองรถไฟ",
+      taxiPhrases: "วลีแท็กซี่ที่เป็นประโยชน์",
+      trainBookingTips: "เคล็ดลับการจองรถไฟ",
       tripCta: "Trip.com / Ctrip",
-      usefulPhrases: "交通便利フレーズ"
+      usefulPhrases: "วลีการเดินทางที่เป็นประโยชน์"
     },
     userPage: {
       heading: "ข้อมูลส่วนตัว",
@@ -17157,42 +17157,42 @@ export const translations: Record<Language, Translations> = {
       title: "ข้อมูลผู้ใช้ - ChinaConnect"
     },
     visaPage: {
-      appsHeading: "必須アプリ",
-      appsSubtitle: "到着前にダウンロード — Google Playは中国で利用不可",
-      beforeBuying: "購入前に",
-      digitalCopiesDesc: "デジタルコピーをクラウド（Google Drive、iCloud）に保管し、家族と共有。原本とは別に物理コピーを保管してください。",
-      duration: "滞在期間：",
-      faqHeading: "よくある質問",
-      fee: "料金：",
-      finalPreparations: "最終準備",
-      flightHeading: "フライト予約のコツ",
-      importantReminder: "重要なお知らせ",
+      appsHeading: "แอปจำเป็น",
+      appsSubtitle: "ดาวน์โหลดก่อนเดินทาง — Google Play ไม่พร้อมใช้งานในจีน",
+      beforeBuying: "ก่อนซื้อ",
+      digitalCopiesDesc: "เก็บสำเนาดิจิทัลในคลาวด์ (Google Drive, iCloud) และแชร์กับครอบครัว เก็บสำเนากระดาษแยกจากต้นฉบับ",
+      duration: "ระยะเวลาพำนัก:",
+      faqHeading: "คำถามที่พบบ่อย",
+      fee: "ค่าใช้จ่าย:",
+      finalPreparations: "เตรียมตัวครั้งสุดท้าย",
+      flightHeading: "เคล็ดลับการจองเที่ยวบิน",
+      importantReminder: "ประกาศสำคัญ",
       insuranceDesc: "Medical treatment in China can be expensive, especially for foreigners. A good travel insurance policy with medical coverage is non-negotiable for safe travel.",
-      insuranceHeading: "旅行保険は必須",
-      insuranceTipsHeading: "保険選びのポイント",
-      overstayWarning: "ビザオーバーステイ警告",
-      processing: "処理期間：",
-      recommendedProviders: "おすすめプロバイダー",
-      reqHeading: "国別ビザ要件",
-      reqSubtitle: "国を選択して具体的な要件を確認",
-      requirements: "必要書類：",
-      tabApps: "アプリ・VPN",
-      tabChecklist: "出発前",
-      tabDocuments: "必要書類",
-      tabInsurance: "保険",
-      tabOverview: "概要",
-      tabProcess: "手続き",
-      tabTips: "コツ・よくある質問",
-      weeksBefore: "出発までの週数（4-6週間前）",
-      weeksBeforeDesc: "出発の4-6週間前に完了してください"
+      insuranceHeading: "ประกันการเดินทางจำเป็น",
+      insuranceTipsHeading: "จุดที่ควรพิจารณาในการเลือกประกัน",
+      overstayWarning: "คำเตือนการอยู่เกินวีซ่า",
+      processing: "ระยะเวลาดำเนินการ:",
+      recommendedProviders: "ผู้ให้บริการแนะนำ",
+      reqHeading: "ข้อกำหนดวีซ่าตามประเทศ",
+      reqSubtitle: "เลือกประเทศเพื่อดูข้อกำหนดเฉพาะ",
+      requirements: "เอกสารที่ต้องใช้:",
+      tabApps: "แอปและ VPN",
+      tabChecklist: "ก่อนออกเดินทาง",
+      tabDocuments: "เอกสารที่ต้องใช้",
+      tabInsurance: "ประกัน",
+      tabOverview: "ภาพรวม",
+      tabProcess: "ขั้นตอน",
+      tabTips: "เคล็ดลับและคำถามที่พบบ่อย",
+      weeksBefore: "สัปดาห์ก่อนออกเดินทาง (4-6 สัปดาห์ก่อน)",
+      weeksBeforeDesc: "ควรทำให้เสร็จ 4-6 สัปดาห์ก่อนออกเดินทาง"
     }
   },
   vi: {
     accommodationGuide: {
-      tabBooking: "予約のコツ",
-      tabCheckin: "チェックインの流れ",
-      tabFaqs: "よくある質問",
-      tabTypes: "ホテルタイプ"
+      tabBooking: "Mẹo đặt chỗ",
+      tabCheckin: "Quy trình nhận phòng",
+      tabFaqs: "Câu hỏi thường gặp",
+      tabTypes: "Loại khách sạn"
     },
     accountPage: {
       active: "Đang hoạt động",
@@ -17364,22 +17364,22 @@ export const translations: Record<Language, Translations> = {
     businessGuidePage: {
       backToGuide: "← Quay lại Hướng dẫn du lịch",
       etiquetteShort: "Những điều cơ bản về Nhập môn văn hóa",
-      etiquetteSubtitle: "商务礼仪速成",
+      etiquetteSubtitle: "Nghi thức kinh doanh cấp tốc",
       etiquetteTitle: "Văn hóa làm ăn Trung Quốc - ChinaConnect",
       expoShort: "Lịch triển lãm & Sự kiện",
-      expoSubtitle: "展会与活动日厈",
+      expoSubtitle: "Triển lãm và sự kiện",
       expoTitle: "Lịch triển lãm & Hội chợ thương mại Trung Quốc - ChinaConnect",
       indexDescription: "Công cụ hữu ích cho các doanh nhân nước ngoài đi công tác tại Trung Quốc.",
       indexSubtitle: "Business Express",
       indexTitle: "Business Express - ChinaConnect",
       invitationShort: "Mẫu thư mời kinh doanh",
-      invitationSubtitle: "商务邀请函模板",
+      invitationSubtitle: "Mẫu thư mời kinh doanh",
       invitationTitle: "Mẫu thư mời kinh doanh Trung Quốc - ChinaConnect",
       registrationShort: "Hướng dẫn đăng ký doanh nghiệp",
-      registrationSubtitle: "工商注册指南",
+      registrationSubtitle: "Hướng dẫn đăng ký kinh doanh",
       registrationTitle: "Hướng dẫn đăng ký doanh nghiệp Trung Quốc - ChinaConnect",
       translationShort: "Dịch thuật & Thông dịch",
-      translationSubtitle: "翻译服务预约",
+      translationSubtitle: "Đặt lịch dịch thuật",
       translationTitle: "Dịch thuật & Dịch vụ thông dịch - ChinaConnect",
       registrationDescription: "Hướng dẫn từng bước đăng ký WFOE, Văn phòng đại diện hoặc các loại hình doanh nghiệp khác tại Trung Quốc cho nhà đầu tư nước ngoài. Danh sách kiểm tra tài liệu và mốc thời gian hoàn chỉnh.",
       etiquetteDescription: "Nắm vững nghi thức kinh doanh Trung Quốc bao gồm trao đổi danh thiếp, ăn uống, họp hành và tặng quà. Những điều nên và không nên thực tế cho chuyên gia kinh doanh nước ngoài.",
@@ -17506,18 +17506,18 @@ export const translations: Record<Language, Translations> = {
     cityAttractions: {
       categoryAll: "Tất cả",
       categoryLabel: "Danh mục",
-      chinanewsDesc: "公式観光情報",
-      ctripDesc: "観光地のレビュー・予約",
+      chinanewsDesc: "Thông tin du lịch chính thức",
+      ctripDesc: "Đánh giá và đặt chỗ điểm tham quan",
       disclaimer: "Giờ mở cửa, giá vé và số điện thoại có thể thay đổi. Chúng tôi khuyên bạn nên xác minh thông qua trang web chính thức của điểm tham quan hoặc gọi điện trước.",
-      mafengwoDesc: "中国最大の旅行コミュニティ",
-      mctDesc: "政府観光データ",
+      mafengwoDesc: "Cộng đồng du lịch lớn nhất Trung Quốc",
+      mctDesc: "Dữ liệu du lịch chính phủ",
       openOnMap: "Mở trên bản đồ",
       openingHours: "Giờ mở cửa",
       subtitle: "Các điểm đến, bảo tàng và kỳ quan thiên nhiên không thể bỏ qua.",
       ticketPrice: "Giá vé",
       tipsHeader: "Mẹo",
       title: "Các điểm tham quan ở {city}",
-      tripadvisorDesc: "海外の観光地レビュー",
+      tripadvisorDesc: "Đánh giá điểm tham quan nước ngoài",
       viewAll: "Xem tất cả các điểm tham quan ở {city}",
       viewDetails: "Xem chi tiết",
       viewMore: "Xem thêm các điểm tham quan"
@@ -17525,9 +17525,9 @@ export const translations: Record<Language, Translations> = {
     cityFood: {
       avgPrice: "Giá trung bình",
       cuisine: "Ẩm thực",
-      dataSourcesDesc: "権威ある情報源からまとめた飲食店データ。訪問前に詳細を確認してください：",
-      dataSourcesHeading: "データソースと参考資料",
-      dianpingDesc: "中国最大のローカル生活サービスプラットフォーム",
+      dataSourcesDesc: "Dữ liệu nhà hàng tổng hợp từ các nguồn uy tín. Vui lòng kiểm tra chi tiết trước khi ghé thăm:",
+      dataSourcesHeading: "Nguồn dữ liệu và tài liệu tham khảo",
+      dianpingDesc: "Nền tảng dịch vụ đời sống địa phương lớn nhất Trung Quốc",
       disclaimer: "Số điện thoại và địa chỉ có thể thay đổi. Chúng tôi khuyên bạn nên xác minh thông qua các kênh chính thức của nhà hàng hoặc gọi điện trước.",
       filterAll: "Tất cả",
       filterBlackPearl: "Hạt đen",
@@ -17537,16 +17537,16 @@ export const translations: Record<Language, Translations> = {
       filterMichelin: "Michelin",
       filteringLabel: "Lọc:",
       googleMaps: "Google Maps",
-      meituanDesc: "出前・レビュープラットフォーム",
-      michelinDesc: "国際的に権威ある飲食店評価",
-      nextCity: "次の都市",
-      previousCity: "前の都市",
+      meituanDesc: "Nền tảng giao đồ ăn và đánh giá",
+      michelinDesc: "Đánh giá nhà hàng uy tín quốc tế",
+      nextCity: "Thành phố tiếp theo",
+      previousCity: "Thành phố trước",
       signatureDishes: "Món ăn đặc trưng",
       subtitle: "Hạt đen, yêu thích Michelin và những viên ngọc địa phương.",
       title: "Nhà hàng ở {city}",
       viewAll: "Xem tất cả các nhà hàng tại {city}",
       viewDetails: "Xem chi tiết",
-      xiaohongshuDesc: "ローカルグルメ探索ガイド"
+      xiaohongshuDesc: "Hướng dẫn khám phá ẩm thực địa phương"
     },
     cityHotels: {
       bookCta: "Xem chi tiết khách sạn",
@@ -17574,7 +17574,7 @@ export const translations: Record<Language, Translations> = {
       bookHotelCta: "Tìm khách sạn tại {city}",
       bookTourCta: "Đặt tour tại {city}",
       citySubtitle: "Hướng dẫn du lịch đầy đủ cho {city}, Trung Quốc. Tìm nhà hàng, điểm tham quan, khách sạn và mẹo du lịch tốt nhất.",
-      climate: "気候",
+      climate: "Khí hậu",
       connectivitySubtitle: "Giữ kết nối với dữ liệu.",
       contactCount: "{count} liên hệ",
       cultureSubtitle: "Phong tục và nghi lễ địa phương.",
@@ -17583,8 +17583,8 @@ export const translations: Record<Language, Translations> = {
       dataSourcesDesc: "Nguồn gốc của dữ liệu này",
       dataSourcesHeading: "Nguồn Dữ Liệu",
       downloadBefore: "Tải xuống các ứng dụng này trước khi bạn đến Trung Quốc.",
-      durationLabel: "所要時間：",
-      electricity: "電圧・電源",
+      durationLabel: "Thời gian di chuyển:",
+      electricity: "Điện áp và nguồn điện",
       elevation: "Độ cao",
       emergencySubtitle: "Số điện thoại quan trọng và đại sứ quán.",
       emergencySubtitleDynamic: "Các số điện thoại quan trọng ở {city}",
@@ -17597,7 +17597,7 @@ export const translations: Record<Language, Translations> = {
       foodHighlightsHeading: "Điểm Nổi Bật Về Thực Phẩm",
       foodHighlightsSubtitle: "Được đề xuất bởi địa phương",
       foodSubtitle: "Huy chương Michelin, lựa chọn Black Pearl và địa điểm ưa thích của người dân",
-      frequencyLabel: "周波数：",
+      frequencyLabel: "Tần số:",
       gettingAround: "Di chuyển",
       gettingTo: "Cách đến {city}",
       heroEyebrow: "Cẩm nang du lịch",
@@ -17606,13 +17606,13 @@ export const translations: Record<Language, Translations> = {
       hotelsCountUnit: "khách sạn",
       hotelsHeading: "Nơi Ở",
       hotelsSubtitle: "Từ khách sạn nhỏ đến chuỗi khách sạn quốc tế.",
-      howToUseLabel: "使い方：",
+      howToUseLabel: "Cách dùng:",
       importantNumbers: "Số điện thoại quan trọng tại {city}",
       intro: "Chào mừng đến {city}, một trong những điểm đến hấp dẫn nhất của Trung Quốc.",
       language: "Ngôn ngữ",
       localFoodHighlights: "Local Food Highlights",
       localFoodHighlightsDesc: "Hand-picked local dining picks in {city}",
-      mapLayerDesc: "レイヤー切替：ミシュラン星、黒珍珠ランキング、地元のおすすめ",
+      mapLayerDesc: "Chuyển lớp: sao Michelin, bảng xếp hạng Hắc Trân Châu, gợi ý địa phương",
       moreCities: "Thêm các thành phố",
       nextCity: "Thành phố tiếp theo",
       noHotels: "Không tìm thấy khách sạn",
@@ -17626,7 +17626,7 @@ export const translations: Record<Language, Translations> = {
       phoneIcon: "📞",
       population: "Dân số",
       previousCity: "Thành phố trước đó",
-      priceLabel: "料金：",
+      priceLabel: "Giá:",
       proTipBooking: "Mẹo chuyên nghiệp: hãy đặt phòng khách sạn trước 2-3 tuần để có mức giá tốt nhất.",
       proTipEsim1: "eSIM hoạt động tốt nhất nếu điện thoại của bạn hỗ trợ nó (iPhone XS+ và hầu hết các máy Android hàng đầu).",
       proTipEsim2: "Tải xuống các ứng dụng eSIM trước khi bạn đến Trung Quốc.",
@@ -17634,11 +17634,11 @@ export const translations: Record<Language, Translations> = {
       proTips: "Mẹo chuyên nghiệp",
       quickFacts: "Những thông tin cơ bản nhanh chóng",
       quickFactsHeading: "Thông Tin Nhanh",
-      recommendedPaymentApps: "おすすめ決済アプリ",
-      recommendedTransportApps: "おすすめ交通アプリ",
+      recommendedPaymentApps: "Ứng dụng thanh toán được khuyên dùng",
+      recommendedTransportApps: "Ứng dụng giao thông được khuyên dùng",
       region: "Vùng",
       restaurantCount: "{count} nhà hàng",
-      restaurantsLabel: "レストラン",
+      restaurantsLabel: "Nhà hàng",
       sectionApps: "Ứng dụng cần thiết",
       sectionAttractions: "Điểm tham quan hàng đầu",
       sectionConnectivity: "SIM & eSIM",
@@ -17648,11 +17648,11 @@ export const translations: Record<Language, Translations> = {
       sectionHotels: "Nơi để ở",
       sectionOverview: "Tổng quan",
       sectionPayment: "Thanh toán & Tiền",
-      sectionScenic: "景勝地",
+      sectionScenic: "Danh lam thắng cảnh",
       sectionTransport: "Di chuyển",
       sectionVisa: "Thị thực & Nhập cảnh",
       sosTip: "Lưu lại những số này trước khi bạn đến - dịch vụ di động có thể bị giới hạn ở các khu vực xa xôi.",
-      summer: "夏：",
+      summer: "Mùa hè:",
       switchToEnglishMode: "Chuyển sang chế độ tiếng Anh trong cài đặt ứng dụng nếu bạn thấy giao diện tiếng Trung. Cả Alipay và WeChat Pay đều hỗ trợ thẻ tín dụng nước ngoài.",
       tabApps: "Ứng dụng",
       tabAttractions: "Điểm tham quan",
@@ -17666,21 +17666,21 @@ export const translations: Record<Language, Translations> = {
       tabTransport: "Giao thông",
       timezone: "Múi giờ",
       tipCount: "{count} mẹo",
-      tipsLabel: "ポイント：",
+      tipsLabel: "Điểm:",
       topHighlightsHeading: "Điểm Nổi Bật Hàng Đầu",
       transportSubtitle: "Di chuyển xung quanh {city}",
       travelTo: "Đi đến {city}",
       viewAllAttractions: "Xem tất cả các điểm tham quan",
       viewAllHotels: "Xem tất cả {totalHotelCount} khách sạn",
       viewAllRestaurants: "Xem tất cả các nhà hàng",
-      visa: "ビザ",
+      visa: "Visa",
       visaSubtitle: "Chính sách miễn thị thực và yêu cầu nhập cảnh.",
       visit: "Tham quan",
       weatherForecast: "Dự báo thời tiết",
-      weatherNA: "天気データなし",
+      weatherNA: "Không có dữ liệu thời tiết",
       weatherNotAvailable: "Thời tiết không khả dụng",
       weatherNow: "Hiện tại",
-      winter: "冬：",
+      winter: "Mùa đông:",
       youMayAlsoLike: "Bạn có thể thích"
     },
     common: {
@@ -17717,54 +17717,54 @@ export const translations: Record<Language, Translations> = {
       viewMore: "Xem thêm"
     },
     communicationGuide: {
-      tabApps: "必須アプリ",
-      tabSetup: "セットアップガイド",
-      tabSim: "SIM/eSIMオプション",
-      tabVpn: "VPN設定"
+      tabApps: "Ứng dụng cần thiết",
+      tabSetup: "Hướng dẫn cài đặt",
+      tabSim: "Tùy chọn SIM/eSIM",
+      tabVpn: "Cài đặt VPN"
     },
     culturalWarnings: {
-      all: "すべて",
-      catColors: "色",
-      catDining: "食事",
-      catGiftEtiquette: "贈答マナー",
-      catGifts: "贈り物",
-      catNumbers: "数字",
-      catPhoto: "写真",
-      catPhotography: "写真撮影",
-      catSocial: "社交",
-      critical: "重要",
-      general: "一般",
-      note: "注意",
-      warning: "警告"
+      all: "Tất cả",
+      catColors: "Màu sắc",
+      catDining: "Ẩm thực",
+      catGiftEtiquette: "Nghi thức tặng quà",
+      catGifts: "Quà tặng",
+      catNumbers: "Số",
+      catPhoto: "Ảnh",
+      catPhotography: "Chụp ảnh",
+      catSocial: "Giao tiếp xã hội",
+      critical: "Quan trọng",
+      general: "Chung",
+      note: "Lưu ý",
+      warning: "Cảnh báo"
     },
     departureGuide: {
-      tabAirport: "空港情報",
-      tabChecklist: "チェックリスト",
-      tabSteps: "出国手順",
-      tabTax: "税還付"
+      tabAirport: "Thông tin sân bay",
+      tabChecklist: "Danh sách kiểm tra",
+      tabSteps: "Quy trình xuất cảnh",
+      tabTax: "Hoàn thuế"
     },
     diningGuide: {
-      allergenCard: "アレルゲン翻訳カード",
-      budgetHeading: "予算ガイド（1人あたり）",
-      casual: "カジュアルレストラン",
-      categoriesHeading: "人気料理カテゴリー",
-      chinesePhrases: "中国語フレーズ：",
-      commonAllergies: "よくあるアレルゲン：",
-      dietary: "食事制限",
-      diningEtiquette: "食事マナー",
-      faqsHeading: "よくある質問",
-      importantAllergyInfo: "重要なアレルギー情報",
-      orderingPhrases: "注文フレーズ",
-      popularDishesHeading: "人気料理：",
-      proTips: "プロのヒント：",
-      safeOptions: "安心な選択肢：",
-      streetFood: "屋台料理",
-      tabAllergies: "アレルギー",
-      tabBudget: "予算ガイド",
-      tabCategories: "カテゴリー",
-      tabDishes: "人気料理",
-      tabEtiquette: "マナー",
-      tabPhrases: "フレーズ集"
+      allergenCard: "Thẻ dịch chất gây dị ứng",
+      budgetHeading: "Hướng dẫn ngân sách (mỗi người)",
+      casual: "Nhà hàng bình dân",
+      categoriesHeading: "Danh mục món ăn phổ biến",
+      chinesePhrases: "Cụm từ tiếng Trung:",
+      commonAllergies: "Chất gây dị ứng thường gặp:",
+      dietary: "Hạn chế ăn uống",
+      diningEtiquette: "Nghi thức ăn uống",
+      faqsHeading: "Câu hỏi thường gặp",
+      importantAllergyInfo: "Thông tin dị ứng quan trọng",
+      orderingPhrases: "Cụm từ gọi món",
+      popularDishesHeading: "Món ăn phổ biến:",
+      proTips: "Mẹo chuyên nghiệp:",
+      safeOptions: "Lựa chọn an toàn:",
+      streetFood: "Đồ ăn đường phố",
+      tabAllergies: "Dị ứng",
+      tabBudget: "Hướng dẫn ngân sách",
+      tabCategories: "Danh mục",
+      tabDishes: "Món ăn phổ biến",
+      tabEtiquette: "Nghi thức",
+      tabPhrases: "Sổ cụm từ"
     },
     emergency: {
       address: "Địa chỉ",
@@ -17789,15 +17789,15 @@ export const translations: Record<Language, Translations> = {
       viewAllContacts: "Xem tất cả các liên hệ"
     },
     emergencyGuide: {
-      bannerSubtitle: "この番号を保存してください — 警察：110、救急：120、消防：119",
-      bannerTitle: "中国の緊急番号",
-      labelAmbulance: "救急",
-      labelFire: "消防",
-      labelPolice: "警察",
-      tabContacts: "緊急連絡先",
-      tabEmbassy: "大使館情報",
-      tabOverview: "緊急時の種類",
-      tabPhrases: "便利フレーズ"
+      bannerSubtitle: "Lưu số này — Cảnh sát: 110, Cấp cứu: 120, Cứu hỏa: 119",
+      bannerTitle: "Số khẩn cấp Trung Quốc",
+      labelAmbulance: "Cấp cứu",
+      labelFire: "Cứu hỏa",
+      labelPolice: "Cảnh sát",
+      tabContacts: "Liên hệ khẩn cấp",
+      tabEmbassy: "Thông tin đại sứ quán",
+      tabOverview: "Loại khẩn cấp",
+      tabPhrases: "Cụm từ hữu ích"
     },
     emergencyPage: {
       ambulance: "Xe cứu thương",
@@ -17911,7 +17911,7 @@ export const translations: Record<Language, Translations> = {
       unauthorized: "Không được phép"
     },
     etiquette: {
-      placeholder: "近日公開"
+      placeholder: "Sắp ra mắt"
     },
     features: {
       accommodation: "Chỗ ở",
@@ -18153,7 +18153,7 @@ export const translations: Record<Language, Translations> = {
                           can: {
                             help: {
                               with: {
-                                directio: "着陸後、標識に従って地下鉄またはタクシーに乗ります。空港スタッフが道順をお手伝いします。"
+                                directio: "Sau khi hạ cánh, đi theo biển báo để đến tàu điện ngầm hoặc taxi. Nhân viên sân bay sẽ hỗ trợ chỉ đường."
                               }
                             }
                           }
@@ -18426,7 +18426,7 @@ export const translations: Record<Language, Translations> = {
                   meetings: {
                     conferences: {
                       and: {
-                        negotiatio: "中国での会議、カンファレンス、交渉のために、審査を受けた通訳者と翻訳者を予約しましょう。"
+                        negotiatio: "Đặt phiên dịch viên và biên dịch viên đã được kiểm duyệt cho các cuộc họp, hội nghị và đàm phán tại Trung Quốc."
                       }
                     }
                   }
@@ -21012,16 +21012,16 @@ export const translations: Record<Language, Translations> = {
       featuredDestinations: "Dựa trên các điểm đến phổ biến"
     },
     invitationLetter: {
-      allowPopups: "印刷のためにポップアップを許可してください",
-      bilingual: "バイリンガル",
-      downloadPdf: "PDFをダウンロード",
-      edit: "編集",
-      english: "英語",
-      generating: "生成中...",
-      pdfFailed: "PDF生成に失敗しました：",
-      pdfFailedRetry: "PDF生成に失敗しました。もう一度お試しください。",
+      allowPopups: "Cho phép bật pop-up để in",
+      bilingual: "Song ngữ",
+      downloadPdf: "Tải PDF",
+      edit: "Chỉnh sửa",
+      english: "Tiếng Anh",
+      generating: "Đang tạo...",
+      pdfFailed: "Tạo PDF thất bại:",
+      pdfFailedRetry: "Tạo PDF thất bại. Vui lòng thử lại.",
       png: "PNG",
-      preview: "プレビュー"
+      preview: "Xem trước"
     },
     language: {
       chinese: "Tiếng Trung",
@@ -21029,8 +21029,8 @@ export const translations: Record<Language, Translations> = {
       current: "Hiện tại",
       dir: "ltr",
       english: "English",
-      name: "中文（简体）",
-      nativeName: "简体中文",
+      name: "Tiếng Trung (Giản thể)",
+      nativeName: "Tiếng Trung Giản thể",
       switchTo: "Chuyển sang"
     },
     loginPage: {
@@ -21046,7 +21046,7 @@ export const translations: Record<Language, Translations> = {
       guide: "Cẩm nang du lịch",
       home: "Trang chủ",
       restaurants: "Nhà hàng",
-      scenicSpots: "景勝地",
+      scenicSpots: "Danh lam thắng cảnh",
       selectLanguage: "Chọn ngôn ngữ",
       signIn: "Đăng nhập",
       tagline: "Khám phá Trung Quốc cùng AI"
@@ -21127,29 +21127,29 @@ export const translations: Record<Language, Translations> = {
       welcome: "Chào mừng đến với ChinaConnect!"
     },
     paymentGuide: {
-      atmHeading: "国際カードに強いATM",
-      atmTip1: "空港や銀行のATMが最良の為替レートです",
-      atmTip2: "国際的な引き出し手数料について銀行に確認してください",
-      atmTip3: "一部のATMは外国カードの引き出しを制限します（最大2000元）",
-      atmTip4: "銀行内のATMを使うとより安全です",
-      faqsHeading: "よくある質問",
-      securityWarning: "セキュリティ警告",
-      setupHeading: "設定方法",
+      atmHeading: "ATM chấp nhận thẻ quốc tế",
+      atmTip1: "ATM tại sân bay hoặc ngân hàng có tỷ giá tốt nhất",
+      atmTip2: "Kiểm tra phí rút tiền quốc tế với ngân hàng của bạn",
+      atmTip3: "Một số ATM giới hạn rút tiền bằng thẻ nước ngoài (tối đa 2000 tệ)",
+      atmTip4: "Sử dụng ATM trong ngân hàng an toàn hơn",
+      faqsHeading: "Câu hỏi thường gặp",
+      securityWarning: "Cảnh báo bảo mật",
+      setupHeading: "Cách cài đặt",
       tabAlipay: "Alipay",
       tabAtm: "ATM",
-      tabCash: "現金・カード",
-      tabFaq: "よくある質問",
-      tabTax: "税還付",
+      tabCash: "Tiền mặt và thẻ",
+      tabFaq: "Câu hỏi thường gặp",
+      tabTax: "Hoàn thuế",
       tabWechat: "WeChat Pay",
-      taxTip1: "セキュリティチェック前に空港出発ロビーで行ってください",
-      taxTip2: "対象店舗での最低購入額は500元",
-      taxTip3: "還付率：品目カテゴリーにより3-11%",
-      taxTip4: "税還付マーク付きの発注書を保管してください"
+      taxTip1: "Thực hiện tại sảnh khởi hành trước khi kiểm tra an ninh",
+      taxTip2: "Mua tối thiểu 500 tệ tại cửa hàng tham gia",
+      taxTip3: "Tỷ lệ hoàn thuế: 3-11% tùy theo loại hàng hóa",
+      taxTip4: "Giữ hóa đơn có dấu hoàn thuế"
     },
     priceTransparency: {
-      all: "すべて",
-      showComparison: "比較表示",
-      showSimplified: "簡略表示"
+      all: "Tất cả",
+      showComparison: "Xem so sánh",
+      showSimplified: "Xem đơn giản"
     },
     pricing: {
       annualNote: "Hóa đơn hàng năm với giá ¥659 (tiết kiệm ¥169)",
@@ -21383,7 +21383,7 @@ export const translations: Record<Language, Translations> = {
       title: "Hướng dẫn nhà hàng"
     },
     scamPrevention: {
-      all: "すべて"
+      all: "Tất cả"
     },
     scenicSpots: {
       allSpots: "All Scenic Spots",
@@ -21408,28 +21408,28 @@ export const translations: Record<Language, Translations> = {
       shareTip: "Chia sẻ với bạn bè"
     },
     transportGuide: {
-      airportWifi: "空港WiFiが利用可能な場合が多い — SIM購入前に接続を",
-      arrivalByPlane: "飛行機で",
-      arrivalByTrain: "電車で",
-      arrivalTip: "入国カードは大切に保管してください — 入管審査で必要になります",
-      bookingPlatforms: "予約プラットフォーム",
-      didiTip: "空港送迎にはDidiアプリが便利 — タクシーキューより安い",
-      howToUse: "使い方：",
-      proTips: "プロのヒント：",
-      seatClasses: "シートクラス",
-      selectMode: "交通手段を選択",
-      selectModeHint: "交通手段を選択してください",
-      tabArrival: "到着",
-      tabDistances: "距離",
-      tabIntercity: "都市間",
-      tabLocal: "市内の交通",
-      tabPhrases: "フレーズ集",
-      tabTaxi: "タクシー/Didi",
-      tabTrains: "鉄道予約",
-      taxiPhrases: "タクシー便利フレーズ",
-      trainBookingTips: "鉄道予約のコツ",
+      airportWifi: "WiFi sân bay thường có sẵn — kết nối trước khi mua SIM",
+      arrivalByPlane: "Bằng máy bay",
+      arrivalByTrain: "Bằng tàu hỏa",
+      arrivalTip: "Giữ thẻ nhập cảnh cẩn thận — cần cho kiểm tra nhập cảnh",
+      bookingPlatforms: "Nền tảng đặt chỗ",
+      didiTip: "Ứng dụng Didi tiện cho đưa đón sân bay — rẻ hơn xếp hàng taxi",
+      howToUse: "Cách dùng:",
+      proTips: "Mẹo chuyên nghiệp:",
+      seatClasses: "Hạng ghế",
+      selectMode: "Chọn phương tiện",
+      selectModeHint: "Vui lòng chọn phương tiện",
+      tabArrival: "Đến",
+      tabDistances: "Khoảng cách",
+      tabIntercity: "Liên tỉnh",
+      tabLocal: "Giao thông nội thành",
+      tabPhrases: "Sổ cụm từ",
+      tabTaxi: "Taxi/Didi",
+      tabTrains: "Đặt vé tàu",
+      taxiPhrases: "Cụm từ hữu ích cho taxi",
+      trainBookingTips: "Mẹo đặt vé tàu",
       tripCta: "Trip.com / Ctrip",
-      usefulPhrases: "交通便利フレーズ"
+      usefulPhrases: "Cụm từ giao thông hữu ích"
     },
     userPage: {
       heading: "Hồ sơ",
@@ -21437,42 +21437,42 @@ export const translations: Record<Language, Translations> = {
       title: "Hồ sơ người dùng - ChinaConnect"
     },
     visaPage: {
-      appsHeading: "必須アプリ",
-      appsSubtitle: "到着前にダウンロード — Google Playは中国で利用不可",
-      beforeBuying: "購入前に",
-      digitalCopiesDesc: "デジタルコピーをクラウド（Google Drive、iCloud）に保管し、家族と共有。原本とは別に物理コピーを保管してください。",
-      duration: "滞在期間：",
-      faqHeading: "よくある質問",
-      fee: "料金：",
-      finalPreparations: "最終準備",
-      flightHeading: "フライト予約のコツ",
-      importantReminder: "重要なお知らせ",
+      appsHeading: "Ứng dụng cần thiết",
+      appsSubtitle: "Tải xuống trước khi đến — Google Play không khả dụng tại Trung Quốc",
+      beforeBuying: "Trước khi mua",
+      digitalCopiesDesc: "Lưu bản sao kỹ thuật số trên đám mây (Google Drive, iCloud) và chia sẻ với gia đình. Giữ bản sao vật lý riêng với bản gốc.",
+      duration: "Thời gian lưu trú:",
+      faqHeading: "Câu hỏi thường gặp",
+      fee: "Giá:",
+      finalPreparations: "Chuẩn bị cuối cùng",
+      flightHeading: "Mẹo đặt vé máy bay",
+      importantReminder: "Thông báo quan trọng",
       insuranceDesc: "Medical treatment in China can be expensive, especially for foreigners. A good travel insurance policy with medical coverage is non-negotiable for safe travel.",
-      insuranceHeading: "旅行保険は必須",
-      insuranceTipsHeading: "保険選びのポイント",
-      overstayWarning: "ビザオーバーステイ警告",
-      processing: "処理期間：",
-      recommendedProviders: "おすすめプロバイダー",
-      reqHeading: "国別ビザ要件",
-      reqSubtitle: "国を選択して具体的な要件を確認",
-      requirements: "必要書類：",
-      tabApps: "アプリ・VPN",
-      tabChecklist: "出発前",
-      tabDocuments: "必要書類",
-      tabInsurance: "保険",
-      tabOverview: "概要",
-      tabProcess: "手続き",
-      tabTips: "コツ・よくある質問",
-      weeksBefore: "出発までの週数（4-6週間前）",
-      weeksBeforeDesc: "出発の4-6週間前に完了してください"
+      insuranceHeading: "Bảo hiểm du lịch là bắt buộc",
+      insuranceTipsHeading: "Điểm chọn bảo hiểm",
+      overstayWarning: "Cảnh báo quá hạn visa",
+      processing: "Thời gian xử lý:",
+      recommendedProviders: "Nhà cung cấp được khuyên dùng",
+      reqHeading: "Yêu cầu visa theo quốc gia",
+      reqSubtitle: "Chọn quốc gia để xem yêu cầu cụ thể",
+      requirements: "Tài liệu cần thiết:",
+      tabApps: "Ứng dụng và VPN",
+      tabChecklist: "Trước khi khởi hành",
+      tabDocuments: "Tài liệu cần thiết",
+      tabInsurance: "Bảo hiểm",
+      tabOverview: "Tổng quan",
+      tabProcess: "Thủ tục",
+      tabTips: "Mẹo và câu hỏi thường gặp",
+      weeksBefore: "Số tuần trước khi khởi hành (4-6 tuần)",
+      weeksBeforeDesc: "Hoàn thành 4-6 tuần trước khi khởi hành"
     }
   },
   ru: {
     accommodationGuide: {
-      tabBooking: "予約のコツ",
-      tabCheckin: "チェックインの流れ",
-      tabFaqs: "よくある質問",
-      tabTypes: "ホテルタイプ"
+      tabBooking: "Советы по бронированию",
+      tabCheckin: "Процесс заселения",
+      tabFaqs: "Часто задаваемые вопросы",
+      tabTypes: "Типы отелей"
     },
     accountPage: {
       active: "Активный",
@@ -21786,18 +21786,18 @@ export const translations: Record<Language, Translations> = {
     cityAttractions: {
       categoryAll: "Все",
       categoryLabel: "Категория",
-      chinanewsDesc: "公式観光情報",
-      ctripDesc: "観光地のレビュー・予約",
+      chinanewsDesc: "Официальная туристическая информация",
+      ctripDesc: "Отзывы и бронирование достопримечательностей",
       disclaimer: "Часы работы, цены на билеты и номера телефонов могут измениться. Мы рекомендуем проверять информацию на официальном сайте достопримечательности или уточнять по телефону.",
-      mafengwoDesc: "中国最大の旅行コミュニティ",
-      mctDesc: "政府観光データ",
+      mafengwoDesc: "Крупнейшее туристическое сообщество Китая",
+      mctDesc: "Правительственные туристические данные",
       openOnMap: "Открыть на карте",
       openingHours: "Часы работы",
       subtitle: "Обязательные к посещению достопримечательности, музеи и чудеса природы.",
       ticketPrice: "Цена билета",
       tipsHeader: "Советы",
       title: "Достопримечательности в {city}",
-      tripadvisorDesc: "海外の観光地レビュー",
+      tripadvisorDesc: "Отзывы о зарубежных достопримечательностях",
       viewAll: "Просмотреть все достопримечательности в {city}",
       viewDetails: "Подробнее",
       viewMore: "Просмотреть больше достопримечательностей"
@@ -21805,9 +21805,9 @@ export const translations: Record<Language, Translations> = {
     cityFood: {
       avgPrice: "Средняя цена",
       cuisine: "Кухня",
-      dataSourcesDesc: "権威ある情報源からまとめた飲食店データ。訪問前に詳細を確認してください：",
-      dataSourcesHeading: "データソースと参考資料",
-      dianpingDesc: "中国最大のローカル生活サービスプラットフォーム",
+      dataSourcesDesc: "Данные о ресторанах, собранные из авторитетных источников. Проверьте детали перед посещением:",
+      dataSourcesHeading: "Источники данных и справочные материалы",
+      dianpingDesc: "Крупнейшая платформа локальных услуг Китая",
       disclaimer: "Номера телефонов и адреса могут измениться. Мы рекомендуем проверять информацию через официальные каналы ресторана или уточнять по телефону.",
       filterAll: "Все",
       filterBlackPearl: "Черная жемчужина",
@@ -21817,16 +21817,16 @@ export const translations: Record<Language, Translations> = {
       filterMichelin: "Мишлен",
       filteringLabel: "Фильтрация:",
       googleMaps: "Google Карты",
-      meituanDesc: "出前・レビュープラットフォーム",
-      michelinDesc: "国際的に権威ある飲食店評価",
-      nextCity: "次の都市",
-      previousCity: "前の都市",
+      meituanDesc: "Платформа доставки еды и отзывов",
+      michelinDesc: "Международно признанный рейтинг ресторанов",
+      nextCity: "Следующий город",
+      previousCity: "Предыдущий город",
       signatureDishes: "Фирменные блюда",
       subtitle: "Звезды Мишлен, любимые Черной жемчужины и местные жемчужины.",
       title: "Рестораны в {city}",
       viewAll: "View all restaurants in {city}",
       viewDetails: "Подробнее",
-      xiaohongshuDesc: "ローカルグルメ探索ガイド"
+      xiaohongshuDesc: "Гид по местной кухне"
     },
     cityHotels: {
       bookCta: "View hotel details",
@@ -21854,7 +21854,7 @@ export const translations: Record<Language, Translations> = {
       bookHotelCta: "Find hotels in {city}",
       bookTourCta: "Book a tour in {city}",
       citySubtitle: "Полное руководство по путешествию в {city}, Китай. Найдите лучшие рестораны, достопримечательности, отели и советы для путешествий.",
-      climate: "気候",
+      climate: "Климат",
       connectivitySubtitle: "Stay connected with data.",
       contactCount: "{count} contacts",
       cultureSubtitle: "Local customs and etiquette.",
@@ -21863,8 +21863,8 @@ export const translations: Record<Language, Translations> = {
       dataSourcesDesc: "Откуда поступают эти данные",
       dataSourcesHeading: "Источники данных",
       downloadBefore: "Download these apps before arriving in China.",
-      durationLabel: "所要時間：",
-      electricity: "電圧・電源",
+      durationLabel: "Продолжительность:",
+      electricity: "Напряжение и розетки",
       elevation: "Elevation",
       emergencySubtitle: "Important numbers and embassies.",
       emergencySubtitleDynamic: "Важные номера телефонов в {city}",
@@ -21877,7 +21877,7 @@ export const translations: Record<Language, Translations> = {
       foodHighlightsHeading: "Изюминки кухни",
       foodHighlightsSubtitle: "Рекомендовано местными жителями",
       foodSubtitle: "Звезды Мишлен, выбор Черного Жемчуга и местные фавориты",
-      frequencyLabel: "周波数：",
+      frequencyLabel: "Частота:",
       gettingAround: "Как передвигаться",
       gettingTo: "Как добраться до {city}",
       heroEyebrow: "Travel Guide",
@@ -21886,13 +21886,13 @@ export const translations: Record<Language, Translations> = {
       hotelsCountUnit: "отелей",
       hotelsHeading: "Где остановиться",
       hotelsSubtitle: "From boutique hotels to international chains.",
-      howToUseLabel: "使い方：",
+      howToUseLabel: "Тип:",
       importantNumbers: "Important phone numbers in {city}",
       intro: "Welcome to {city}, one of China's most fascinating destinations.",
       language: "Language",
       localFoodHighlights: "Local Food Highlights",
       localFoodHighlightsDesc: "Hand-picked local dining picks in {city}",
-      mapLayerDesc: "レイヤー切替：ミシュラン星、黒珍珠ランキング、地元のおすすめ",
+      mapLayerDesc: "Переключение слоёв: звёзды Мишлен, рейтинг «Чёрный жемчуг», местные рекомендации",
       moreCities: "More cities",
       nextCity: "Next city",
       noHotels: "Отели не найдены",
@@ -21906,7 +21906,7 @@ export const translations: Record<Language, Translations> = {
       phoneIcon: "📞",
       population: "Population",
       previousCity: "Previous city",
-      priceLabel: "料金：",
+      priceLabel: "Стоимость:",
       proTipBooking: "Pro tip: book hotels 2-3 weeks in advance for the best rates.",
       proTipEsim1: "eSIM works best if your phone supports it (iPhone XS+ and most Android flagships).",
       proTipEsim2: "Download eSIM apps before arriving in China.",
@@ -21914,11 +21914,11 @@ export const translations: Record<Language, Translations> = {
       proTips: "Pro Tips",
       quickFacts: "Quick Facts",
       quickFactsHeading: "Краткие факты",
-      recommendedPaymentApps: "おすすめ決済アプリ",
-      recommendedTransportApps: "おすすめ交通アプリ",
+      recommendedPaymentApps: "Рекомендуемые платёжные приложения",
+      recommendedTransportApps: "Рекомендуемые транспортные приложения",
       region: "Region",
       restaurantCount: "{count} restaurants",
-      restaurantsLabel: "レストラン",
+      restaurantsLabel: "Рестораны",
       sectionApps: "Essential Apps",
       sectionAttractions: "Top Attractions",
       sectionConnectivity: "SIM & eSIM",
@@ -21928,11 +21928,11 @@ export const translations: Record<Language, Translations> = {
       sectionHotels: "Where to Stay",
       sectionOverview: "Overview",
       sectionPayment: "Payment & Money",
-      sectionScenic: "景勝地",
+      sectionScenic: "Достопримечательности",
       sectionTransport: "Getting Around",
       sectionVisa: "Visa & Entry",
       sosTip: "Save these numbers before you arrive - cellular service may be limited in remote areas.",
-      summer: "夏：",
+      summer: "Лето:",
       switchToEnglishMode: "Switch to English mode in app settings if you see Chinese interface. Both Alipay and WeChat Pay support foreign credit cards.",
       tabApps: "Приложения",
       tabAttractions: "Достопримечательности",
@@ -21946,21 +21946,21 @@ export const translations: Record<Language, Translations> = {
       tabTransport: "Транспорт",
       timezone: "Timezone",
       tipCount: "{count} tips",
-      tipsLabel: "ポイント：",
+      tipsLabel: "Баллы:",
       topHighlightsHeading: "Основные достопримечательности",
       transportSubtitle: "Как передвигаться по {city}",
       travelTo: "Travel to {city}",
       viewAllAttractions: "View all attractions",
       viewAllHotels: "Посмотреть все {totalHotelCount} отелей",
       viewAllRestaurants: "View all restaurants",
-      visa: "ビザ",
+      visa: "Виза",
       visaSubtitle: "Visa-free policies and entry requirements.",
       visit: "Visit",
       weatherForecast: "Weather forecast",
-      weatherNA: "天気データなし",
+      weatherNA: "Нет данных о погоде",
       weatherNotAvailable: "Weather not available",
       weatherNow: "Now",
-      winter: "冬：",
+      winter: "Зима:",
       youMayAlsoLike: "You may also like"
     },
     common: {
@@ -21997,54 +21997,54 @@ export const translations: Record<Language, Translations> = {
       viewMore: "View more"
     },
     communicationGuide: {
-      tabApps: "必須アプリ",
-      tabSetup: "セットアップガイド",
-      tabSim: "SIM/eSIMオプション",
-      tabVpn: "VPN設定"
+      tabApps: "Необходимые приложения",
+      tabSetup: "Руководство по настройке",
+      tabSim: "Варианты SIM/eSIM",
+      tabVpn: "Настройка VPN"
     },
     culturalWarnings: {
-      all: "すべて",
-      catColors: "色",
-      catDining: "食事",
-      catGiftEtiquette: "贈答マナー",
-      catGifts: "贈り物",
-      catNumbers: "数字",
-      catPhoto: "写真",
-      catPhotography: "写真撮影",
-      catSocial: "社交",
-      critical: "重要",
-      general: "一般",
-      note: "注意",
-      warning: "警告"
+      all: "Все",
+      catColors: "Цвет",
+      catDining: "Еда",
+      catGiftEtiquette: "Подарочный этикет",
+      catGifts: "Подарки",
+      catNumbers: "Числа",
+      catPhoto: "Фото",
+      catPhotography: "Фотографирование",
+      catSocial: "Общение",
+      critical: "Важно",
+      general: "Общее",
+      note: "Внимание",
+      warning: "Предупреждение"
     },
     departureGuide: {
-      tabAirport: "空港情報",
-      tabChecklist: "チェックリスト",
-      tabSteps: "出国手順",
-      tabTax: "税還付"
+      tabAirport: "Информация об аэропорте",
+      tabChecklist: "Контрольный список",
+      tabSteps: "Процедура вылета",
+      tabTax: "Возврат налога"
     },
     diningGuide: {
-      allergenCard: "アレルゲン翻訳カード",
-      budgetHeading: "予算ガイド（1人あたり）",
-      casual: "カジュアルレストラン",
-      categoriesHeading: "人気料理カテゴリー",
-      chinesePhrases: "中国語フレーズ：",
-      commonAllergies: "よくあるアレルゲン：",
-      dietary: "食事制限",
-      diningEtiquette: "食事マナー",
-      faqsHeading: "よくある質問",
-      importantAllergyInfo: "重要なアレルギー情報",
-      orderingPhrases: "注文フレーズ",
-      popularDishesHeading: "人気料理：",
-      proTips: "プロのヒント：",
-      safeOptions: "安心な選択肢：",
-      streetFood: "屋台料理",
-      tabAllergies: "アレルギー",
-      tabBudget: "予算ガイド",
-      tabCategories: "カテゴリー",
-      tabDishes: "人気料理",
-      tabEtiquette: "マナー",
-      tabPhrases: "フレーズ集"
+      allergenCard: "Карточка перевода аллергенов",
+      budgetHeading: "Бюджетный гид (на человека)",
+      casual: "Непринуждённые рестораны",
+      categoriesHeading: "Популярные категории блюд",
+      chinesePhrases: "Китайские фразы:",
+      commonAllergies: "Распространённые аллергены:",
+      dietary: "Диетические ограничения",
+      diningEtiquette: "Столовый этикет",
+      faqsHeading: "Часто задаваемые вопросы",
+      importantAllergyInfo: "Важная информация об аллергиях",
+      orderingPhrases: "Фразы для заказа",
+      popularDishesHeading: "Популярные блюда:",
+      proTips: "Советы профессионалов:",
+      safeOptions: "Безопасные варианты:",
+      streetFood: "Уличная еда",
+      tabAllergies: "Аллергии",
+      tabBudget: "Бюджетный гид",
+      tabCategories: "Категории",
+      tabDishes: "Популярные блюда",
+      tabEtiquette: "Этикет",
+      tabPhrases: "Сборник фраз"
     },
     emergency: {
       address: "Address",
@@ -22069,15 +22069,15 @@ export const translations: Record<Language, Translations> = {
       viewAllContacts: "View all contacts"
     },
     emergencyGuide: {
-      bannerSubtitle: "この番号を保存してください — 警察：110、救急：120、消防：119",
-      bannerTitle: "中国の緊急番号",
-      labelAmbulance: "救急",
-      labelFire: "消防",
-      labelPolice: "警察",
-      tabContacts: "緊急連絡先",
-      tabEmbassy: "大使館情報",
-      tabOverview: "緊急時の種類",
-      tabPhrases: "便利フレーズ"
+      bannerSubtitle: "Сохраните эти номера — полиция: 110, скорая: 120, пожарная: 119",
+      bannerTitle: "Экстренные номера в Китае",
+      labelAmbulance: "Скорая помощь",
+      labelFire: "Пожарная",
+      labelPolice: "Полиция",
+      tabContacts: "Экстренные контакты",
+      tabEmbassy: "Информация о посольствах",
+      tabOverview: "Типы чрезвычайных ситуаций",
+      tabPhrases: "Полезные фразы"
     },
     emergencyPage: {
       ambulance: "Скорая помощь",
@@ -22191,7 +22191,7 @@ export const translations: Record<Language, Translations> = {
       unauthorized: "Не авторизовано"
     },
     etiquette: {
-      placeholder: "近日公開"
+      placeholder: "Скоро"
     },
     features: {
       accommodation: "Жилье",
@@ -22433,7 +22433,7 @@ export const translations: Record<Language, Translations> = {
                           can: {
                             help: {
                               with: {
-                                directio: "着陸後、標識に従って地下鉄またはタクシーに乗ります。空港スタッフが道順をお手伝いします。"
+                                directio: "После приземления следуйте указателям до метро или такси. Сотрудники аэропорта помогут с направлением."
                               }
                             }
                           }
@@ -22706,7 +22706,7 @@ export const translations: Record<Language, Translations> = {
                   meetings: {
                     conferences: {
                       and: {
-                        negotiatio: "中国での会議、カンファレンス、交渉のために、審査を受けた通訳者と翻訳者を予約しましょう。"
+                        negotiatio: "Забронируйте проверенных переводчиков и устных переводчиков для встреч, конференций и переговоров в Китае."
                       }
                     }
                   }
@@ -23535,7 +23535,7 @@ export const translations: Record<Language, Translations> = {
                 into: {
                   hotels: {
                     in: {
-                      china: "中国のホテルの予約とチェックイン方法"
+                      china: "Как бронировать отели в Китае и заселяться"
                     }
                   }
                 }
@@ -24109,27 +24109,27 @@ export const translations: Record<Language, Translations> = {
       oauth: {
         provider: {
           not: {
-            enabled: "OAuthプロバイダーが有効になっていません"
+            enabled: "Провайдер OAuth не включён"
           }
         }
       },
       open: {
         emergency: {
-          menu: "緊急メニューを開く"
+          menu: "Открыть экстренное меню"
         }
       },
-      openinghoursspecification: "営業時間仕様",
+      openinghoursspecification: "Спецификация часов работы",
       pan: {
         fried: {
           pork: {
-            buns: "焼き豚まん"
+            buns: "Жареные булочки с мясом"
           }
         }
       },
       passionate: {
         about: {
           exploring: {
-            china: "中国探索に情熱を注ぐ"
+            china: "Страсть к исследованию Китая"
           }
         }
       },
@@ -24144,7 +24144,7 @@ export const translations: Record<Language, Translations> = {
                       depending: {
                         on: {
                           hotel: {
-                            policy: "ホテルのポリシーにより、アリペイ、ウィーチャットペイ、またはクレジットカードでお支払いください。"
+                            policy: "Согласно политике отеля, оплата производится через Alipay, WeChat Pay или кредитную карту."
                           }
                         }
                       }
@@ -24159,19 +24159,19 @@ export const translations: Record<Language, Translations> = {
       payment: {
         apps: {
           you: {
-            need: "必要な支払いアプリ"
+            need: "Необходимые платёжные приложения"
           }
         }
       },
       pdf: {
         generation: {
-          failed: "PDF生成に失敗しました:"
+          failed: "Не удалось создать PDF:"
         }
       },
       pian: {
         er: {
           chuan: {
-            noodles: "ピエンアルチュアン麺"
+            noodles: "Лапша Пяньэрчуань"
           }
         }
       },
@@ -24182,7 +24182,7 @@ export const translations: Record<Language, Translations> = {
               type: {
                 your: {
                   own: {
-                    below: "プロンプトを選択するか、下に独自のものを入力してください"
+                    below: "Выберите подсказку или введите свою ниже"
                   }
                 }
               }
@@ -24197,7 +24197,7 @@ export const translations: Record<Language, Translations> = {
         your: {
           scenic: {
             spot: {
-              visit: "観光地訪問を計画する"
+              visit: "Планирование посещения достопримечательностей"
             }
           },
           trips: {
@@ -24209,7 +24209,7 @@ export const translations: Record<Language, Translations> = {
                       shows: {
                         and: {
                           industry: {
-                            events: "中国のトップトレードショーや業界イベントに合わせて旅行を計画する"
+                            events: "Планируйте поездку с учётом крупнейших торговых выставок и отраслевых мероприятий Китая"
                           }
                         }
                       }
@@ -24230,23 +24230,23 @@ export const translations: Record<Language, Translations> = {
         allow: {
           popups: {
             to: {
-              print: "印刷するためにポップアップを許可してください"
+              print: "Разрешите всплывающие окна для печати"
             }
           }
         },
         call: {
           an: {
-            ambulance: "救急車を呼んでください"
+            ambulance: "Вызовите скорую"
           },
           my: {
-            family: "家族に電話してください"
+            family: "Позвоните семье"
           }
         },
         enter: {
           a: {
-            name: "名前を入力してください",
+            name: "Введите имя",
             phone: {
-              number: "電話番号を入力してください"
+              number: "Введите номер телефона"
             }
           }
         },
@@ -24254,24 +24254,24 @@ export const translations: Record<Language, Translations> = {
           in: {
             to: {
               save: {
-                routes: "ルートを保存するにはサインインしてください"
+                routes: "Войдите, чтобы сохранить маршрут"
               }
             }
           }
         },
         speak: {
-          slowly: "ゆっくり話してください"
+          slowly: "Говорите медленнее"
         }
       },
       popular: {
         food: {
-          categories: "人気の食品カテゴリー"
+          categories: "Популярные категории еды"
         }
       },
       powered: {
         by: {
           advanced: {
-            ai: "高度なAI搭載"
+            ai: "На базе продвинутого ИИ"
           }
         }
       },
@@ -24282,7 +24282,7 @@ export const translations: Record<Language, Translations> = {
               business: {
                 travelers: {
                   in: {
-                    china: "中国での外国人ビジネス旅行者向け実用ツール"
+                    china: "Практические инструменты для иностранных деловых путешественников в Китае"
                   }
                 }
               }
@@ -24292,11 +24292,11 @@ export const translations: Record<Language, Translations> = {
       },
       pre: {
         departure: {
-          preparation: "出発前の準備"
+          preparation: "Подготовка перед отъездом"
         }
       },
       premium: {
-        customization: "プレミアムカスタマイズ"
+        customization: "Премиальная настройка"
       },
       process: {
         at: {
@@ -24304,7 +24304,7 @@ export const translations: Record<Language, Translations> = {
             departure: {
               hall: {
                 before: {
-                  security: "保安検査前の空港出発ロビーの手続き"
+                  security: "Процедуры в зале вылета аэропорта перед досмотром"
                 }
               }
             }
@@ -24317,7 +24317,7 @@ export const translations: Record<Language, Translations> = {
             translators: {
               for: {
                 business: {
-                  visits: "ビジネス訪問向けのプロフェッショナル通訳者と翻訳者"
+                  visits: "Профессиональные устные и письменные переводчики для деловых визитов"
                 }
               }
             }
@@ -24337,7 +24337,7 @@ export const translations: Record<Language, Translations> = {
                           apps: {
                             and: {
                               ride: {
-                                hailing: "空港でSIMまたはeSIMを購入して、ナビゲーションアプリや配車サービスを利用する"
+                                hailing: "Купите SIM или eSIM в аэропорту для навигационных приложений и сервисов такси"
                               }
                             }
                           }
@@ -24358,7 +24358,7 @@ export const translations: Record<Language, Translations> = {
               hangzhou: {
                 near: {
                   west: {
-                    lake: "西湖近くの杭州にあるブティックホテルを推奨"
+                    lake: "Рекомендуем бутик-отель в Ханчжоу рядом с озером Сиху"
                   }
                 }
               }
@@ -24368,21 +24368,21 @@ export const translations: Record<Language, Translations> = {
       },
       remove: {
         from: {
-          favorites: "お気に入りから削除"
+          favorites: "Удалить из избранного"
         }
       },
       reservation: {
-        required: "予約必須"
+        required: "Требуется бронирование"
       },
       route: {
         saved: {
-          successfully: "ルートが保存されました！"
+          successfully: "Маршрут сохранён!"
         }
       },
       sanlitun: {
         chaoyang: {
           district: {
-            beijing: "北京・朝陽区・三里屯"
+            beijing: "Пекин, район Чаоян, Саньлитунь"
           }
         }
       },
@@ -24395,11 +24395,11 @@ export const translations: Record<Language, Translations> = {
           }
         },
         your: {
-          itineraries: "旅程を保存する"
+          itineraries: "Сохранить маршрут"
         }
       },
       saving: {
-        itinerary: "旅程を保存中..."
+        itinerary: "Сохранение маршрута..."
       },
       scan: {
         merchant: {
@@ -24413,7 +24413,7 @@ export const translations: Record<Language, Translations> = {
                         code: {
                           to: {
                             complete: {
-                              payments: "支払いを行うには、店のQRコードを読み取るか、自分のQRコードを表示してください"
+                              payments: "Для оплаты отсканируйте QR-код магазина или покажите свой QR-код"
                             }
                           }
                         }
@@ -24430,42 +24430,42 @@ export const translations: Record<Language, Translations> = {
         spots: {
           in: {
             china: {
-              chinaconnect: "中国の観光地 - ChinaConnect"
+              chinaconnect: "Достопримечательности Китая - ChinaConnect"
             }
           }
         }
       },
       search: {
-        attractions: "観光地を検索...",
+        attractions: "Поиск достопримечательностей...",
         country: {
-          name: "国名を入力..."
+          name: "Введите название страны..."
         }
       },
       searching: {
-        cities: "都市を検索中...",
+        cities: "Поиск города...",
         for: {
-          attractions: "観光地を検索中..."
+          attractions: "Поиск достопримечательностей..."
         },
-        hotels: "ホテルを検索中...",
+        hotels: "Поиск отелей...",
         the: {
-          web: "ウェブを検索中..."
+          web: "Поиск в интернете..."
         }
       },
       select: {
         a: {
           transport: {
-            mode: "交通手段を選択"
+            mode: "Выберите транспорт"
           }
         },
         transport: {
-          mode: "交通手段を選択"
+          mode: "Выберите транспорт"
         },
         your: {
           country: {
             to: {
               see: {
                 specific: {
-                  requirements: "国を選択して具体的な要件を確認する"
+                  requirements: "Выберите страну для просмотра конкретных требований"
                 }
               }
             }
@@ -24479,7 +24479,7 @@ export const translations: Record<Language, Translations> = {
               password: {
                 for: {
                   authorizing: {
-                    transactions: "取引を承認するための安全な支払いパスワードを設定する"
+                    transactions: "Установите безопасный платёжный пароль для подтверждения транзакций"
                   }
                 }
               }
@@ -24487,13 +24487,13 @@ export const translations: Record<Language, Translations> = {
           }
         },
         payment: {
-          password: "支払いパスワードを設定"
+          password: "Установить платёжный пароль"
         }
       },
       share: {
         your: {
           dining: {
-            experience: "食事体験をシェアする..."
+            experience: "Поделиться впечатлением о еде..."
           }
         }
       },
@@ -24507,7 +24507,7 @@ export const translations: Record<Language, Translations> = {
                     apps: {
                       for: {
                         staying: {
-                          connected: "SIM/eSIMオプション、VPN設定、接続を維持するための必須アプリ"
+                          connected: "Варианты SIM/eSIM, настройка VPN, необходимые приложения для поддержания связи"
                         }
                       }
                     }
@@ -24520,12 +24520,12 @@ export const translations: Record<Language, Translations> = {
       },
       something: {
         went: {
-          wrong: "問題が発生しました"
+          wrong: "Возникла проблема"
         }
       },
       sorry: {
         i: {
-          encountered: "すみません、遭遇した"
+          encountered: "Извините, возникла"
         }
       },
       sos: {
@@ -24533,7 +24533,7 @@ export const translations: Record<Language, Translations> = {
           tap: {
             to: {
               call: {
-                police: "緊急SOS - タップして警察に電話"
+                police: "Экстренный SOS - нажмите, чтобы позвонить в полицию"
               }
             }
           }
@@ -24549,7 +24549,7 @@ export const translations: Record<Language, Translations> = {
       stay: {
         connected: {
           in: {
-            china: "中国でつながる"
+            china: "Оставайтесь на связи в Китае"
           }
         }
       },
@@ -24566,7 +24566,7 @@ export const translations: Record<Language, Translations> = {
                           in: {
                             procedures: {
                               in: {
-                                chin: "中国への外国人旅行者向けホテル予約とチェックイン手続きのステップバイステップガイド"
+                                chin: "Пошаговое руководство по бронированию отелей и процедуре заселения для иностранных туристов в Китае"
                               }
                             }
                           }
@@ -24595,7 +24595,7 @@ export const translations: Record<Language, Translations> = {
                           and: {
                             using: {
                               mobile: {
-                                pay: "中国でのモバイル決済、現金、カードの使用に関する国際旅行者向けステップバイステップガイド"
+                                pay: "Пошаговое руководство для иностранных путешественников по использованию мобильных платежей, наличных и карт в Китае"
                               }
                             }
                           }
@@ -24610,7 +24610,7 @@ export const translations: Record<Language, Translations> = {
                       china: {
                         including: {
                           airport: {
-                            tran: "中国での交通機関の案内（空港送迎、地下鉄、高速鉄道、タクシー、都市間交通を含む）に関するステップバイステップガイド"
+                            tran: "Пошаговое руководство по транспорту в Китае (включая трансфер из аэропорта, метро, высокоскоростные поезда, такси, междугородний транспорт)"
                           }
                         }
                       }
@@ -24622,7 +24622,7 @@ export const translations: Record<Language, Translations> = {
                     office: {
                       and: {
                         other: {
-                          entities: "WFOE、駐在員事務所およびその他のエンティティに関するステップバイステップガイド"
+                          entities: "Пошаговое руководство по WFOE, представительствам и другим юридическим лицам"
                         }
                       }
                     }
@@ -24638,7 +24638,7 @@ export const translations: Record<Language, Translations> = {
                           or: {
                             other: {
                               entity: {
-                                i: "外国投資家向け中国でのWFOE、駐在員事務所またはその他のエンティティ登録に関するステップバイステップガイド。完全なタイムラインと必要書類リスト。"
+                                i: "Пошаговое руководство для иностранных инвесторов по регистрации WFOE, представительства или другого юридического лица в Китае. Полные сроки и список необходимых документов."
                               }
                             }
                           }
@@ -24657,7 +24657,7 @@ export const translations: Record<Language, Translations> = {
                               office: {
                                 in: {
                                   china: {
-                                    doc: "中国でのWFOE、合弁会社（JV）、駐在員事務所の設立に関するステップバイステップガイド。必要書類、タイムライン、コスト、および2026年の最新の規制更新。"
+                                    doc: "Пошаговое руководство по созданию WFOE, совместного предприятия (JV) или представительства в Китае. Необходимые документы, сроки, затраты и последние изменения в регулировании на 2026 год."
                                   }
                                 }
                               }
@@ -24676,7 +24676,7 @@ export const translations: Record<Language, Translations> = {
       stir: {
         fried: {
           beef: {
-            offal: "牛肉ホルモンの炒め物"
+            offal: "Жареная говядина с перцем"
           }
         }
       },
@@ -24689,7 +24689,7 @@ export const translations: Record<Language, Translations> = {
                   center: {
                     with: {
                       applicable: {
-                        fees: "該当する料金を添えて中国大使館/領事館/ビザセンターに提出"
+                        fees: "Подайте в посольство/консульство/визовый центр Китая с соответствующим сбором"
                       }
                     }
                   }
@@ -24701,18 +24701,18 @@ export const translations: Record<Language, Translations> = {
       },
       switch: {
         map: {
-          provider: "地図プロバイダーを切り替える"
+          provider: "Переключить поставщика карт"
         },
         to: {
           google: {
-            maps: "Googleマップに切り替える"
+            maps: "Переключиться на Google Карты"
           }
         }
       },
       tap: {
         to: {
           hear: {
-            pronunciation: "タップして発音を聞く"
+            pronunciation: "Нажмите, чтобы прослушать произношение"
           }
         }
       },
@@ -24725,7 +24725,7 @@ export const translations: Record<Language, Translations> = {
                   shopping: {
                     and: {
                       departure: {
-                        checklist: "税金還付、空港交通、免税ショッピング、出国チェックリスト"
+                        checklist: "Возврат налога, транспорт в аэропорт, беспошлинные покупки, контрольный список на вылет"
                       }
                     }
                   }
@@ -24737,64 +24737,64 @@ export const translations: Record<Language, Translations> = {
       },
       taxi: {
         useful: {
-          phrases: "タクシー便利なフレーズ"
+          phrases: "Полезные фразы для такси"
         }
       },
       thank: {
         you: {
           for: {
             your: {
-              subscription: "ご購読ありがとうございます！"
+              subscription: "Спасибо за подписку!"
             }
           }
         }
       },
       toggle: {
         temperature: {
-          unit: "温度単位を切り替える"
+          unit: "Переключить единицу температуры"
         }
       },
       translation: {
-        interpreting: "翻訳・通訳",
-        services: "翻訳サービス"
+        interpreting: "Перевод и устный перевод",
+        services: "Переводческие услуги"
       },
       transport: {
         navigation: {
-          apps: "交通・ナビゲーションアプリ"
+          apps: "Транспортные и навигационные приложения"
         }
       },
       travel: {
         insurance: {
           is: {
-            essential: "旅行保険は必須です"
+            essential: "Туристическая страховка обязательна"
           }
         }
       },
       try: {
         these: {
           quick: {
-            prompts: "これらの簡単なプロンプトを試してみてください"
+            prompts: "Попробуйте эти простые подсказки"
           }
         }
       },
       unlimited: {
         ai: {
-          requests: "無制限のAIリクエスト"
+          requests: "Безлимитные ИИ-запросы"
         }
       },
       unsaved: {
-        conversation: "未保存の会話"
+        conversation: "Несохранённые разговоры"
       },
       upgrade: {
         to: {
           a: {
             paid: {
-              plan: "有料プランにアップグレード"
+              plan: "Перейти на платный тариф"
             }
           },
           continue: {
             using: {
-              ai: "AIを使い続けるためにアップグレード"
+              ai: "Обновите тариф, чтобы продолжить использовать ИИ"
             }
           }
         }
@@ -24824,7 +24824,7 @@ export const translations: Record<Language, Translations> = {
                           sites: {
                             often: {
                               have: {
-                                be: "Booking.com、Ctrip、またはFliggyを使用してホテルを予約してください。国際サイトは英語サポートが優れていることが多いです"
+                                be: "Бронируйте отели через Booking.com, Ctrip или Fliggy. Международные сайты часто имеют лучшую поддержку на английском"
                               }
                             }
                           }
@@ -24843,7 +24843,7 @@ export const translations: Record<Language, Translations> = {
               banks: {
                 for: {
                   better: {
-                    security: "銀行内のカードマシンを使ってより高いセキュリティを確保"
+                    security: "Используйте банкоматы внутри банков для большей безопасности"
                   }
                 }
               }
@@ -24858,7 +24858,7 @@ export const translations: Record<Language, Translations> = {
                   cheaper: {
                     than: {
                       taxi: {
-                        queue: "空港ピックアップにはDidiアプリを使用 - タクシー待ち行列より安い"
+                        queue: "Используйте приложение Didi для трансфера из аэропорта — дешевле, чем очередь такси"
                       }
                     }
                   }
@@ -24881,7 +24881,7 @@ export const translations: Record<Language, Translations> = {
                               have: {
                                 the: {
                                   best: {
-                                    e: "国際カードにはICBC、中国銀行、またはHSBCのATMを使用してください。彼らは最高の為替レートと最も広いカバレッジを持っています"
+                                    e: "Для международных карт используйте банкоматы ICBC, Bank of China или HSBC. У них лучший обменный курс и наибольшее покрытие"
                                   }
                                 }
                               }
@@ -24899,21 +24899,21 @@ export const translations: Record<Language, Translations> = {
       },
       useful: {
         transport: {
-          phrases: "便利な交通フレーズ"
+          phrases: "Полезные фразы для транспорта"
         }
       },
       user: {
         accepted: {
           the: {
             install: {
-              prompt: "ユーザーがインストールプロンプトを受け入れました"
+              prompt: "Пользователь принял запрос на установку"
             }
           }
         },
         dismissed: {
           the: {
             install: {
-              prompt: "ユーザーがインストールプロンプトを却下しました"
+              prompt: "Пользователь отклонил запрос на установку"
             }
           }
         }
@@ -24929,7 +24929,7 @@ export const translations: Record<Language, Translations> = {
                       bookings: {
                         and: {
                           proof: {
-                            of: "有効なパスポート、ビザ申請書、写真、旅行日程、ホテル予約、および財政証明"
+                            of: "Действительный паспорт, визовая анкета, фото, план поездки, бронь отеля и финансовое подтверждение"
                           }
                         }
                       }
@@ -24944,13 +24944,13 @@ export const translations: Record<Language, Translations> = {
       verify: {
         identity: {
           with: {
-            passport: "パスポートで身元を確認する"
+            passport: "Подтвердите личность паспортом"
           }
         }
       },
       visa: {
         overstay: {
-          warning: "ビザのオーバーステイ警告"
+          warning: "Предупреждение о превышении срока визы"
         },
         requirements: {
           application: {
@@ -24960,7 +24960,7 @@ export const translations: Record<Language, Translations> = {
                   documents: {
                     for: {
                       entering: {
-                        china: "中国入国に必要なビザ要件、申請プロセス、および必須書類"
+                        china: "Визовые требования, процесс подачи и необходимые документы для въезда в Китай"
                       }
                     }
                   }
@@ -24969,7 +24969,7 @@ export const translations: Record<Language, Translations> = {
             }
           },
           by: {
-            country: "国別のビザ要件"
+            country: "Визовые требования по странам"
           }
         }
       },
@@ -24979,7 +24979,7 @@ export const translations: Record<Language, Translations> = {
             error: {
               loading: {
                 this: {
-                  content: "このコンテンツの読み込み中にエラーが発生しました"
+                  content: "Ошибка при загрузке этого контента"
                 }
               }
             }
@@ -24990,7 +24990,7 @@ export const translations: Record<Language, Translations> = {
         lake: {
           fish: {
             in: {
-              vinegar: "西湖酢漬けの魚"
+              vinegar: "Рыба в уксусном соусе по-хубэйски"
             }
           }
         }
@@ -25001,7 +25001,7 @@ export const translations: Record<Language, Translations> = {
             i: {
               use: {
                 in: {
-                  china: "中国ではどのATMを使えばいいですか？"
+                  china: "Какие банкоматы использовать в Китае?"
                 }
               }
             }
@@ -25014,7 +25014,7 @@ export const translations: Record<Language, Translations> = {
                 know: {
                   before: {
                     visiting: {
-                      china: "中国訪問前に知っておくべき文化的エチケットは何ですか？"
+                      china: "Какие культурные нормы этикета следует знать перед посещением Китая?"
                     }
                   }
                 }
@@ -25029,7 +25029,7 @@ export const translations: Record<Language, Translations> = {
                 are: {
                   available: {
                     in: {
-                      china: "中国ではどのような緊急電話番号とサービスが利用できますか？"
+                      china: "Какие экстренные номера и службы доступны в Китае?"
                     }
                   }
                 }
@@ -25050,7 +25050,7 @@ export const translations: Record<Language, Translations> = {
                             a: {
                               visa: {
                                 on: {
-                                  arrival: "中国訪問にはどのようなビザが必要ですか？到着時にビザを取得できますか？"
+                                  arrival: "Какая виза нужна для посещения Китая? Можно ли получить визу по прибытии?"
                                 }
                               }
                             }
@@ -25072,7 +25072,7 @@ export const translations: Record<Language, Translations> = {
               to: {
                 go: {
                   in: {
-                    china: "中国でどこに行きたいですか？"
+                    china: "Куда вы хотите поехать в Китае?"
                   }
                 }
               }
@@ -25081,12 +25081,12 @@ export const translations: Record<Language, Translations> = {
         },
         is: {
           the: {
-            embassy: "大使館はどこですか？",
-            hospital: "病院はどこですか？",
+            embassy: "Где находится посольство?",
+            hospital: "Где находится больница?",
             police: {
-              station: "警察署はどこですか？"
+              station: "Где находится полицейский участок?"
             },
-            restroom: "トイレはどこですか？"
+            restroom: "Где находится туалет?"
           }
         }
       },
@@ -25146,7 +25146,7 @@ export const translations: Record<Language, Translations> = {
                       that: {
                         wasn: {
                           t: {
-                            saved: "前回のセッションで保存されなかった会話があります"
+                            saved: "У вас есть несохранённые разговоры с прошлой сессии"
                           }
                         }
                       }
@@ -25166,7 +25166,7 @@ export const translations: Record<Language, Translations> = {
                     upgrading: {
                       for: {
                         more: {
-                          requests: "月間制限に近づいています。より多くのリクエストにはアップグレードをご検討ください"
+                          requests: "Вы приближаетесь к месячному лимиту. Рассмотрите возможность обновления для большего количества запросов"
                         }
                       }
                     }
@@ -25202,7 +25202,7 @@ export const translations: Record<Language, Translations> = {
                 }
               },
               highest: {
-                plan: "あなたは最高のプランをご利用中です！"
+                plan: "Вы используете лучший тариф!"
               }
             }
           }
@@ -25214,7 +25214,7 @@ export const translations: Record<Language, Translations> = {
                 limit: {
                   upgrade: {
                     to: {
-                      continue: "月間制限に達しました。アップグレードして続行してください"
+                      continue: "Достигнут месячный лимит. Обновите тариф, чтобы продолжить"
                     }
                   }
                 }
@@ -25227,7 +25227,7 @@ export const translations: Record<Language, Translations> = {
         personal: {
           china: {
             travel: {
-              intelligence: "あなたの個人的な中国旅行情報"
+              intelligence: "Ваша персональная информация о поездке в Китай"
             }
           }
         },
@@ -25235,7 +25235,7 @@ export const translations: Record<Language, Translations> = {
           includes: {
             unlimited: {
               ai: {
-                requests: "あなたのプランには無制限のAIリクエストが含まれています"
+                requests: "Ваш тариф включает безлимитные ИИ-запросы"
               }
             }
           }
@@ -25292,16 +25292,16 @@ export const translations: Record<Language, Translations> = {
       featuredDestinations: "На основе популярных направлений"
     },
     invitationLetter: {
-      allowPopups: "印刷のためにポップアップを許可してください",
-      bilingual: "バイリンガル",
-      downloadPdf: "PDFをダウンロード",
-      edit: "編集",
-      english: "英語",
-      generating: "生成中...",
-      pdfFailed: "PDF生成に失敗しました：",
-      pdfFailedRetry: "PDF生成に失敗しました。もう一度お試しください。",
+      allowPopups: "Разрешите всплывающие окна для печати",
+      bilingual: "Двуязычный",
+      downloadPdf: "Скачать PDF",
+      edit: "Редактировать",
+      english: "Английский",
+      generating: "Генерация...",
+      pdfFailed: "Не удалось создать PDF:",
+      pdfFailedRetry: "Не удалось создать PDF. Попробуйте ещё раз.",
       png: "PNG",
-      preview: "プレビュー"
+      preview: "Предпросмотр"
     },
     language: {
       chinese: "Китайский",
@@ -25309,8 +25309,8 @@ export const translations: Record<Language, Translations> = {
       current: "Текущий",
       dir: "ltr",
       english: "English",
-      name: "中文（简体）",
-      nativeName: "简体中文",
+      name: "Китайский (упрощённый)",
+      nativeName: "Китайский (упрощённый)",
       switchTo: "Переключиться на"
     },
     loginPage: {
@@ -25326,7 +25326,7 @@ export const translations: Record<Language, Translations> = {
       guide: "Путеводитель",
       home: "Главная",
       restaurants: "Рестораны",
-      scenicSpots: "景勝地",
+      scenicSpots: "Достопримечательности",
       selectLanguage: "Выбор языка",
       signIn: "Sign in",
       tagline: "Исследуйте Китай с помощью AI"
@@ -25407,29 +25407,29 @@ export const translations: Record<Language, Translations> = {
       welcome: "Добро пожаловать в ChinaConnect!"
     },
     paymentGuide: {
-      atmHeading: "国際カードに強いATM",
-      atmTip1: "空港や銀行のATMが最良の為替レートです",
-      atmTip2: "国際的な引き出し手数料について銀行に確認してください",
-      atmTip3: "一部のATMは外国カードの引き出しを制限します（最大2000元）",
-      atmTip4: "銀行内のATMを使うとより安全です",
-      faqsHeading: "よくある質問",
-      securityWarning: "セキュリティ警告",
-      setupHeading: "設定方法",
+      atmHeading: "Банкоматы, поддерживающие международные карты",
+      atmTip1: "Банкоматы в аэропортах и банках предлагают лучший обменный курс",
+      atmTip2: "Уточните в банке комиссию за международное снятие",
+      atmTip3: "Некоторые банкоматы ограничивают снятие для иностранных карт (максимум 2000 юаней)",
+      atmTip4: "Использование банкоматов внутри банков безопаснее",
+      faqsHeading: "Часто задаваемые вопросы",
+      securityWarning: "Предупреждение о безопасности",
+      setupHeading: "Как настроить",
       tabAlipay: "Alipay",
       tabAtm: "ATM",
-      tabCash: "現金・カード",
-      tabFaq: "よくある質問",
-      tabTax: "税還付",
+      tabCash: "Наличные и карты",
+      tabFaq: "Часто задаваемые вопросы",
+      tabTax: "Возврат налога",
       tabWechat: "WeChat Pay",
-      taxTip1: "セキュリティチェック前に空港出発ロビーで行ってください",
-      taxTip2: "対象店舗での最低購入額は500元",
-      taxTip3: "還付率：品目カテゴリーにより3-11%",
-      taxTip4: "税還付マーク付きの発注書を保管してください"
+      taxTip1: "Сделайте это в зале вылета аэропорта перед досмотром",
+      taxTip2: "Минимальная сумма покупки в участвующих магазинах — 500 юаней",
+      taxTip3: "Ставка возврата: 3-11% в зависимости от категории товара",
+      taxTip4: "Сохраняйте чеки с пометкой о возврате налога"
     },
     priceTransparency: {
-      all: "すべて",
-      showComparison: "比較表示",
-      showSimplified: "簡略表示"
+      all: "Все",
+      showComparison: "Сравнительный вид",
+      showSimplified: "Упрощённый вид"
     },
     pricing: {
       annualNote: "Billed annually at ¥659 (save ¥169)",
@@ -25663,7 +25663,7 @@ export const translations: Record<Language, Translations> = {
       title: "Гид по ресторанам"
     },
     scamPrevention: {
-      all: "すべて"
+      all: "Все"
     },
     scenicSpots: {
       allSpots: "All Scenic Spots",
@@ -25688,28 +25688,28 @@ export const translations: Record<Language, Translations> = {
       shareTip: "Поделиться с друзьями"
     },
     transportGuide: {
-      airportWifi: "空港WiFiが利用可能な場合が多い — SIM購入前に接続を",
-      arrivalByPlane: "飛行機で",
-      arrivalByTrain: "電車で",
-      arrivalTip: "入国カードは大切に保管してください — 入管審査で必要になります",
-      bookingPlatforms: "予約プラットフォーム",
-      didiTip: "空港送迎にはDidiアプリが便利 — タクシーキューより安い",
-      howToUse: "使い方：",
-      proTips: "プロのヒント：",
-      seatClasses: "シートクラス",
-      selectMode: "交通手段を選択",
-      selectModeHint: "交通手段を選択してください",
-      tabArrival: "到着",
-      tabDistances: "距離",
-      tabIntercity: "都市間",
-      tabLocal: "市内の交通",
-      tabPhrases: "フレーズ集",
-      tabTaxi: "タクシー/Didi",
-      tabTrains: "鉄道予約",
-      taxiPhrases: "タクシー便利フレーズ",
-      trainBookingTips: "鉄道予約のコツ",
+      airportWifi: "В аэропорту часто есть Wi-Fi — подключитесь перед покупкой SIM-карты",
+      arrivalByPlane: "Самолётом",
+      arrivalByTrain: "Поездом",
+      arrivalTip: "Храните иммиграционную карту — она понадобится на паспортном контроле",
+      bookingPlatforms: "Платформы бронирования",
+      didiTip: "Приложение Didi удобно для трансфера из аэропорта — дешевле очереди такси",
+      howToUse: "Тип:",
+      proTips: "Советы профессионалов:",
+      seatClasses: "Класс места",
+      selectMode: "Выберите транспорт",
+      selectModeHint: "Выберите вид транспорта",
+      tabArrival: "Прибытие",
+      tabDistances: "Расстояние",
+      tabIntercity: "Междугородний",
+      tabLocal: "Городской транспорт",
+      tabPhrases: "Сборник фраз",
+      tabTaxi: "Такси/Didi",
+      tabTrains: "Бронирование ж/д билетов",
+      taxiPhrases: "Полезные фразы для такси",
+      trainBookingTips: "Советы по бронированию ж/д билетов",
       tripCta: "Trip.com / Ctrip",
-      usefulPhrases: "交通便利フレーズ"
+      usefulPhrases: "Полезные фразы для транспорта"
     },
     userPage: {
       heading: "Профиль",
@@ -25717,42 +25717,42 @@ export const translations: Record<Language, Translations> = {
       title: "Профиль пользователя - ChinaConnect"
     },
     visaPage: {
-      appsHeading: "必須アプリ",
-      appsSubtitle: "到着前にダウンロード — Google Playは中国で利用不可",
-      beforeBuying: "購入前に",
-      digitalCopiesDesc: "デジタルコピーをクラウド（Google Drive、iCloud）に保管し、家族と共有。原本とは別に物理コピーを保管してください。",
-      duration: "滞在期間：",
-      faqHeading: "よくある質問",
-      fee: "料金：",
-      finalPreparations: "最終準備",
-      flightHeading: "フライト予約のコツ",
-      importantReminder: "重要なお知らせ",
+      appsHeading: "Необходимые приложения",
+      appsSubtitle: "Скачайте до прибытия — Google Play недоступен в Китае",
+      beforeBuying: "Перед покупкой",
+      digitalCopiesDesc: "Храните цифровые копии в облаке (Google Drive, iCloud) и делитесь с семьёй. Храните физические копии отдельно от оригиналов.",
+      duration: "Срок пребывания:",
+      faqHeading: "Часто задаваемые вопросы",
+      fee: "Стоимость:",
+      finalPreparations: "Финальная подготовка",
+      flightHeading: "Советы по бронированию авиабилетов",
+      importantReminder: "Важное уведомление",
       insuranceDesc: "Medical treatment in China can be expensive, especially for foreigners. A good travel insurance policy with medical coverage is non-negotiable for safe travel.",
-      insuranceHeading: "旅行保険は必須",
-      insuranceTipsHeading: "保険選びのポイント",
-      overstayWarning: "ビザオーバーステイ警告",
-      processing: "処理期間：",
-      recommendedProviders: "おすすめプロバイダー",
-      reqHeading: "国別ビザ要件",
-      reqSubtitle: "国を選択して具体的な要件を確認",
-      requirements: "必要書類：",
-      tabApps: "アプリ・VPN",
-      tabChecklist: "出発前",
-      tabDocuments: "必要書類",
-      tabInsurance: "保険",
-      tabOverview: "概要",
-      tabProcess: "手続き",
-      tabTips: "コツ・よくある質問",
-      weeksBefore: "出発までの週数（4-6週間前）",
-      weeksBeforeDesc: "出発の4-6週間前に完了してください"
+      insuranceHeading: "Туристическая страховка обязательна",
+      insuranceTipsHeading: "На что обратить внимание при выборе страховки",
+      overstayWarning: "Предупреждение о превышении срока визы",
+      processing: "Срок обработки:",
+      recommendedProviders: "Рекомендуемые провайдеры",
+      reqHeading: "Визовые требования по странам",
+      reqSubtitle: "Выберите страну для просмотра конкретных требований",
+      requirements: "Необходимые документы:",
+      tabApps: "Приложения и VPN",
+      tabChecklist: "Перед отъездом",
+      tabDocuments: "Необходимые документы",
+      tabInsurance: "Страховка",
+      tabOverview: "Обзор",
+      tabProcess: "Процедура",
+      tabTips: "Советы и FAQ",
+      weeksBefore: "Недель до вылета (4-6 недель)",
+      weeksBeforeDesc: "Завершите за 4-6 недель до вылета"
     }
   },
   fr: {
     accommodationGuide: {
-      tabBooking: "予約のコツ",
-      tabCheckin: "チェックインの流れ",
-      tabFaqs: "よくある質問",
-      tabTypes: "ホテルタイプ"
+      tabBooking: "Conseils de réservation",
+      tabCheckin: "Procédure d'enregistrement",
+      tabFaqs: "Questions fréquentes",
+      tabTypes: "Type d'hôtel"
     },
     accountPage: {
       active: "Actif",
@@ -25924,22 +25924,22 @@ export const translations: Record<Language, Translations> = {
     businessGuidePage: {
       backToGuide: "← Retour au guide de voyage",
       etiquetteShort: "Essentiels de l'étiquette professionnelle",
-      etiquetteSubtitle: "速成商务礼仪",
+      etiquetteSubtitle: "Étiquette des affaires express",
       etiquetteTitle: "Étiquette professionnelle en Chine - ChinaConnect",
       expoShort: "Calendrier des expositions et événements",
-      expoSubtitle: "展会与活动日历",
+      expoSubtitle: "Calendrier des salons et événements",
       expoTitle: "Calendrier des expositions et salons en Chine - ChinaConnect",
       indexDescription: "Outils pratiques pour les voyageurs d'affaires étrangers en Chine.",
       indexSubtitle: "Express Affaires",
       indexTitle: "Express Affaires - ChinaConnect",
       invitationShort: "Modèles de lettres d'invitation professionnelle",
-      invitationSubtitle: "商务邀请函模板",
+      invitationSubtitle: "Modèle de lettre d'invitation professionnelle",
       invitationTitle: "Modèles de lettres d'invitation professionnelle en Chine - ChinaConnect",
       registrationShort: "Guide d'enregistrement des entreprises",
-      registrationSubtitle: "工商注册指南",
+      registrationSubtitle: "Guide d'enregistrement d'entreprise",
       registrationTitle: "Guide d'enregistrement des entreprises en Chine - ChinaConnect",
       translationShort: "Traduction et interprétation",
-      translationSubtitle: "预约翻译服务",
+      translationSubtitle: "Réserver un service de traduction",
       translationTitle: "Services de traduction et d'interprétation - ChinaConnect",
       registrationDescription: "Guide étape par étape pour enregistrer une WFOE, un bureau de représentation ou toute autre entité commerciale en Chine en tant qu'investisseur étranger. Calendrier complet et liste de contrôle des documents.",
       etiquetteDescription: "Maîtrisez l'étiquette des affaires en Chine, y compris l'échange de cartes de visite, les repas, les réunions et les cadeaux. Conseils pratiques à suivre et à éviter pour les professionnels étrangers.",
@@ -26066,18 +26066,18 @@ export const translations: Record<Language, Translations> = {
     cityAttractions: {
       categoryAll: "Toutes",
       categoryLabel: "Catégorie",
-      chinanewsDesc: "公式観光情報",
-      ctripDesc: "観光地のレビュー・予約",
+      chinanewsDesc: "Informations touristiques officielles",
+      ctripDesc: "Avis et réservation de sites touristiques",
       disclaimer: "Les horaires d'ouverture, les prix des billets et les numéros de téléphone peuvent changer. Nous vous recommandons de vérifier via le site officiel de l'attraction ou d'appeler à l'avance.",
-      mafengwoDesc: "中国最大の旅行コミュニティ",
-      mctDesc: "政府観光データ",
+      mafengwoDesc: "La plus grande communauté de voyage en Chine",
+      mctDesc: "Données touristiques gouvernementales",
       openOnMap: "Ouvrir sur la carte",
       openingHours: "Heures d'ouverture",
       subtitle: "Monuments incontournables, musées et merveilles naturelles.",
       ticketPrice: "Prix du billet",
       tipsHeader: "Conseils",
       title: "Attractions à {city}",
-      tripadvisorDesc: "海外の観光地レビュー",
+      tripadvisorDesc: "Avis de sites touristiques à l'étranger",
       viewAll: "Voir toutes les attractions à {city}",
       viewDetails: "Voir les détails",
       viewMore: "Voir plus d'attractions"
@@ -26085,9 +26085,9 @@ export const translations: Record<Language, Translations> = {
     cityFood: {
       avgPrice: "Prix moyen",
       cuisine: "Cuisine",
-      dataSourcesDesc: "権威ある情報源からまとめた飲食店データ。訪問前に詳細を確認してください：",
-      dataSourcesHeading: "データソースと参考資料",
-      dianpingDesc: "中国最大のローカル生活サービスプラットフォーム",
+      dataSourcesDesc: "Données de restaurants compilées à partir de sources fiables. Vérifiez les détails avant de visiter :",
+      dataSourcesHeading: "Sources de données et références",
+      dianpingDesc: "La plus grande plateforme de services locaux en Chine",
       disclaimer: "Les numéros de téléphone et les adresses peuvent changer. Nous vous recommandons de vérifier via les canaux officiels du restaurant ou d'appeler à l'avance.",
       filterAll: "Tous",
       filterBlackPearl: "Perle Noire",
@@ -26097,16 +26097,16 @@ export const translations: Record<Language, Translations> = {
       filterMichelin: "Michelin",
       filteringLabel: "Filtrage :",
       googleMaps: "Google Maps",
-      meituanDesc: "出前・レビュープラットフォーム",
-      michelinDesc: "国際的に権威ある飲食店評価",
-      nextCity: "次の都市",
-      previousCity: "前の都市",
+      meituanDesc: "Plateforme de livraison et d'avis",
+      michelinDesc: "Évaluation de restaurants internationalement reconnue",
+      nextCity: "Ville suivante",
+      previousCity: "Ville précédente",
       signatureDishes: "Plats signatures",
       subtitle: "Étoiles Michelin, favoris Perle Noire et trésors locaux.",
       title: "Restaurants à {city}",
       viewAll: "View all restaurants in {city}",
       viewDetails: "Voir les détails",
-      xiaohongshuDesc: "ローカルグルメ探索ガイド"
+      xiaohongshuDesc: "Guide d'exploration culinaire locale"
     },
     cityHotels: {
       bookCta: "View hotel details",
@@ -26134,7 +26134,7 @@ export const translations: Record<Language, Translations> = {
       bookHotelCta: "Find hotels in {city}",
       bookTourCta: "Book a tour in {city}",
       citySubtitle: "Guide de voyage complet pour {city}, Chine. Trouvez les meilleurs restaurants, attractions, hôtels et conseils de voyage.",
-      climate: "気候",
+      climate: "Climat",
       connectivitySubtitle: "Stay connected with data.",
       contactCount: "{count} contacts",
       cultureSubtitle: "Local customs and etiquette.",
@@ -26143,8 +26143,8 @@ export const translations: Record<Language, Translations> = {
       dataSourcesDesc: "D'où proviennent ces données",
       dataSourcesHeading: "Sources de Données",
       downloadBefore: "Download these apps before arriving in China.",
-      durationLabel: "所要時間：",
-      electricity: "電圧・電源",
+      durationLabel: "Durée :",
+      electricity: "Tension et alimentation",
       elevation: "Elevation",
       emergencySubtitle: "Important numbers and embassies.",
       emergencySubtitleDynamic: "Numéros de téléphone importants à {city}",
@@ -26157,7 +26157,7 @@ export const translations: Record<Language, Translations> = {
       foodHighlightsHeading: "Points Culinaires",
       foodHighlightsSubtitle: "Recommandé localement",
       foodSubtitle: "Étoiles Michelin, choix Black Pearl et favoris locaux",
-      frequencyLabel: "周波数：",
+      frequencyLabel: "Fréquence :",
       gettingAround: "Se déplacer",
       gettingTo: "Comment se rendre à {city}",
       heroEyebrow: "Travel Guide",
@@ -26166,13 +26166,13 @@ export const translations: Record<Language, Translations> = {
       hotelsCountUnit: "hôtels",
       hotelsHeading: "Où Se Loger",
       hotelsSubtitle: "From boutique hotels to international chains.",
-      howToUseLabel: "使い方：",
+      howToUseLabel: "Utilisation :",
       importantNumbers: "Important phone numbers in {city}",
       intro: "Welcome to {city}, one of China's most fascinating destinations.",
       language: "Language",
       localFoodHighlights: "Local Food Highlights",
       localFoodHighlightsDesc: "Hand-picked local dining picks in {city}",
-      mapLayerDesc: "レイヤー切替：ミシュラン星、黒珍珠ランキング、地元のおすすめ",
+      mapLayerDesc: "Changement de couche : étoiles Michelin, classement Black Pearl, recommandations locales",
       moreCities: "More cities",
       nextCity: "Next city",
       noHotels: "Aucun hôtel trouvé",
@@ -26186,7 +26186,7 @@ export const translations: Record<Language, Translations> = {
       phoneIcon: "📞",
       population: "Population",
       previousCity: "Previous city",
-      priceLabel: "料金：",
+      priceLabel: "Tarif :",
       proTipBooking: "Pro tip: book hotels 2-3 weeks in advance for the best rates.",
       proTipEsim1: "eSIM works best if your phone supports it (iPhone XS+ and most Android flagships).",
       proTipEsim2: "Download eSIM apps before arriving in China.",
@@ -26194,11 +26194,11 @@ export const translations: Record<Language, Translations> = {
       proTips: "Pro Tips",
       quickFacts: "Quick Facts",
       quickFactsHeading: "Faits Rapides",
-      recommendedPaymentApps: "おすすめ決済アプリ",
-      recommendedTransportApps: "おすすめ交通アプリ",
+      recommendedPaymentApps: "Applications de paiement recommandées",
+      recommendedTransportApps: "Applications de transport recommandées",
       region: "Region",
       restaurantCount: "{count} restaurants",
-      restaurantsLabel: "レストラン",
+      restaurantsLabel: "Restaurants",
       sectionApps: "Essential Apps",
       sectionAttractions: "Top Attractions",
       sectionConnectivity: "SIM & eSIM",
@@ -26208,11 +26208,11 @@ export const translations: Record<Language, Translations> = {
       sectionHotels: "Where to Stay",
       sectionOverview: "Overview",
       sectionPayment: "Payment & Money",
-      sectionScenic: "景勝地",
+      sectionScenic: "Sites pittoresques",
       sectionTransport: "Getting Around",
       sectionVisa: "Visa & Entry",
       sosTip: "Save these numbers before you arrive - cellular service may be limited in remote areas.",
-      summer: "夏：",
+      summer: "Été :",
       switchToEnglishMode: "Switch to English mode in app settings if you see Chinese interface. Both Alipay and WeChat Pay support foreign credit cards.",
       tabApps: "Applications",
       tabAttractions: "Attractions",
@@ -26226,21 +26226,21 @@ export const translations: Record<Language, Translations> = {
       tabTransport: "Transports",
       timezone: "Timezone",
       tipCount: "{count} tips",
-      tipsLabel: "ポイント：",
+      tipsLabel: "Points :",
       topHighlightsHeading: "Principaux Points Forts",
       transportSubtitle: "Se déplacer dans {city}",
       travelTo: "Travel to {city}",
       viewAllAttractions: "View all attractions",
       viewAllHotels: "Voir tous les {totalHotelCount} hôtels",
       viewAllRestaurants: "View all restaurants",
-      visa: "ビザ",
+      visa: "Visa",
       visaSubtitle: "Visa-free policies and entry requirements.",
       visit: "Visit",
       weatherForecast: "Weather forecast",
-      weatherNA: "天気データなし",
+      weatherNA: "Aucune donnée météo",
       weatherNotAvailable: "Weather not available",
       weatherNow: "Now",
-      winter: "冬：",
+      winter: "Hiver :",
       youMayAlsoLike: "You may also like"
     },
     common: {
@@ -26277,54 +26277,54 @@ export const translations: Record<Language, Translations> = {
       viewMore: "View more"
     },
     communicationGuide: {
-      tabApps: "必須アプリ",
-      tabSetup: "セットアップガイド",
-      tabSim: "SIM/eSIMオプション",
-      tabVpn: "VPN設定"
+      tabApps: "Applications essentielles",
+      tabSetup: "Guide de configuration",
+      tabSim: "Options SIM/eSIM",
+      tabVpn: "Configuration VPN"
     },
     culturalWarnings: {
-      all: "すべて",
-      catColors: "色",
-      catDining: "食事",
-      catGiftEtiquette: "贈答マナー",
-      catGifts: "贈り物",
-      catNumbers: "数字",
-      catPhoto: "写真",
-      catPhotography: "写真撮影",
-      catSocial: "社交",
-      critical: "重要",
-      general: "一般",
-      note: "注意",
-      warning: "警告"
+      all: "Tout",
+      catColors: "Couleur",
+      catDining: "Repas",
+      catGiftEtiquette: "Étiquette des cadeaux",
+      catGifts: "Cadeaux",
+      catNumbers: "Chiffres",
+      catPhoto: "Photos",
+      catPhotography: "Photographie",
+      catSocial: "Social",
+      critical: "Important",
+      general: "Général",
+      note: "Attention",
+      warning: "Avertissement"
     },
     departureGuide: {
-      tabAirport: "空港情報",
-      tabChecklist: "チェックリスト",
-      tabSteps: "出国手順",
-      tabTax: "税還付"
+      tabAirport: "Informations sur l'aéroport",
+      tabChecklist: "Liste de contrôle",
+      tabSteps: "Procédure de sortie",
+      tabTax: "Détaxe"
     },
     diningGuide: {
-      allergenCard: "アレルゲン翻訳カード",
-      budgetHeading: "予算ガイド（1人あたり）",
-      casual: "カジュアルレストラン",
-      categoriesHeading: "人気料理カテゴリー",
-      chinesePhrases: "中国語フレーズ：",
-      commonAllergies: "よくあるアレルゲン：",
-      dietary: "食事制限",
-      diningEtiquette: "食事マナー",
-      faqsHeading: "よくある質問",
-      importantAllergyInfo: "重要なアレルギー情報",
-      orderingPhrases: "注文フレーズ",
-      popularDishesHeading: "人気料理：",
-      proTips: "プロのヒント：",
-      safeOptions: "安心な選択肢：",
-      streetFood: "屋台料理",
-      tabAllergies: "アレルギー",
-      tabBudget: "予算ガイド",
-      tabCategories: "カテゴリー",
-      tabDishes: "人気料理",
-      tabEtiquette: "マナー",
-      tabPhrases: "フレーズ集"
+      allergenCard: "Carte de traduction des allergènes",
+      budgetHeading: "Guide budgétaire (par personne)",
+      casual: "Restaurant décontracté",
+      categoriesHeading: "Catégories de plats populaires",
+      chinesePhrases: "Phrases en chinois :",
+      commonAllergies: "Allergènes courants :",
+      dietary: "Restrictions alimentaires",
+      diningEtiquette: "Étiquette à table",
+      faqsHeading: "Questions fréquentes",
+      importantAllergyInfo: "Informations importantes sur les allergies",
+      orderingPhrases: "Phrases pour commander",
+      popularDishesHeading: "Plats populaires :",
+      proTips: "Conseils de professionnels :",
+      safeOptions: "Options sûres :",
+      streetFood: "Cuisine de rue",
+      tabAllergies: "Allergies",
+      tabBudget: "Guide budgétaire",
+      tabCategories: "Catégories",
+      tabDishes: "Plats populaires",
+      tabEtiquette: "Étiquette",
+      tabPhrases: "Recueil de phrases"
     },
     emergency: {
       address: "Address",
@@ -26349,15 +26349,15 @@ export const translations: Record<Language, Translations> = {
       viewAllContacts: "View all contacts"
     },
     emergencyGuide: {
-      bannerSubtitle: "この番号を保存してください — 警察：110、救急：120、消防：119",
-      bannerTitle: "中国の緊急番号",
-      labelAmbulance: "救急",
-      labelFire: "消防",
-      labelPolice: "警察",
-      tabContacts: "緊急連絡先",
-      tabEmbassy: "大使館情報",
-      tabOverview: "緊急時の種類",
-      tabPhrases: "便利フレーズ"
+      bannerSubtitle: "Enregistrez ce numéro — Police : 110, Urgences : 120, Pompiers : 119",
+      bannerTitle: "Numéros d'urgence en Chine",
+      labelAmbulance: "Urgences",
+      labelFire: "Pompiers",
+      labelPolice: "Police",
+      tabContacts: "Contacts d'urgence",
+      tabEmbassy: "Informations sur l'ambassade",
+      tabOverview: "Type d'urgence",
+      tabPhrases: "Phrases utiles"
     },
     emergencyPage: {
       ambulance: "Ambulance",
@@ -26456,7 +26456,7 @@ export const translations: Record<Language, Translations> = {
       noResults: "Aucun résultat trouvé",
       noSearchResults: "Aucun résultat pour votre recherche",
       tryAdjusting: "Essayez d'ajuster vos filtres ou vos termes de recherche",
-      tryDifferent: "试试其他搜尋条件"
+      tryDifferent: "Essayez d'autres critères de recherche"
     },
     errors: {
       generic: "Une erreur s'est produite",
@@ -26471,7 +26471,7 @@ export const translations: Record<Language, Translations> = {
       unauthorized: "Non autorisé"
     },
     etiquette: {
-      placeholder: "近日公開"
+      placeholder: "Bientôt disponible"
     },
     features: {
       accommodation: "Hébergement",
@@ -26698,7 +26698,7 @@ export const translations: Record<Language, Translations> = {
     },
     hard: {
       accommodation: {
-        guide: "宿泊施設ガイド"
+        guide: "Guide d'hébergement"
       },
       after: {
         landing: {
@@ -26713,7 +26713,7 @@ export const translations: Record<Language, Translations> = {
                           can: {
                             help: {
                               with: {
-                                directio: "着陸後、標識に従って地下鉄またはタクシーに乗ります。空港スタッフが道順をお手伝いします。"
+                                directio: "Après l'atterrissage, suivez les panneaux pour prendre le métro ou un taxi. Le personnel de l'aéroport vous aidera à trouver votre chemin."
                               }
                             }
                           }
@@ -26729,9 +26729,9 @@ export const translations: Record<Language, Translations> = {
       },
       ai: {
         requests: {
-          month: "AIリクエスト/月",
+          month: "Requêtes IA/mois",
           this: {
-            month: "今月のAIリクエスト"
+            month: "Requêtes IA ce mois-ci"
           }
         },
         responses: {
@@ -26741,7 +26741,7 @@ export const translations: Record<Language, Translations> = {
                 only: {
                   always: {
                     verify: {
-                      locally: "AIの応答は参考用です。常に現地で確認してください。"
+                      locally: "Les réponses de l'IA sont à titre de référence. Vérifiez toujours sur place."
                     }
                   }
                 }
@@ -26753,7 +26753,7 @@ export const translations: Record<Language, Translations> = {
       aichat: {
         error: {
           boundary: {
-            caught: "AIチャットエラー境界でキャッチされました："
+            caught: "Erreur de chat IA capturée à la limite :"
           }
         }
       },
@@ -26766,7 +26766,7 @@ export const translations: Record<Language, Translations> = {
                   inter: {
                     city: {
                       transport: {
-                        options: "空港到着、メトロ、バス、タクシー、および都市間交通のオプション"
+                        options: "Arrivée à l'aéroport, métro, bus, taxi et options de transport interurbain"
                       }
                     }
                   }
@@ -26781,7 +26781,7 @@ export const translations: Record<Language, Translations> = {
               connect: {
                 before: {
                   buying: {
-                    sim: "空港のWi-Fiは通常利用可能です - SIMカードを購入する前に接続してください"
+                    sim: "Le Wi-Fi de l'aéroport est généralement disponible - connectez-vous avant d'acheter une carte SIM"
                   }
                 }
               }
@@ -26798,7 +26798,7 @@ export const translations: Record<Language, Translations> = {
                   refund: {
                     procedures: {
                       in: {
-                        china: "中国におけるAlipay、WeChat Pay、現金および税金還付の手続き"
+                        china: "Alipay, WeChat Pay, espèces et procédures de détaxe en Chine"
                       }
                     }
                   }
@@ -26810,20 +26810,20 @@ export const translations: Record<Language, Translations> = {
       },
       allergen: {
         translation: {
-          card: "アレルゲン翻訳カード"
+          card: "Carte de traduction des allergènes"
         }
       },
       amap: {
         api: {
           not: {
-            loaded: "Amap APIが読み込まれていません"
+            loaded: "API Amap non chargée"
           }
         }
       },
       an: {
         unexpected: {
           error: {
-            occurred: "予期しないエラーが発生しました"
+            occurred: "Une erreur inattendue s'est produite"
           }
         },
         unknown: {
@@ -26832,7 +26832,7 @@ export const translations: Record<Language, Translations> = {
               while: {
                 getting: {
                   your: {
-                    location: "位置情報を取得中に不明なエラーが発生しました。"
+                    location: "Une erreur inconnue s'est produite lors de l'obtention de la position."
                   }
                 }
               }
@@ -26848,7 +26848,7 @@ export const translations: Record<Language, Translations> = {
                 scenic: {
                   spots: {
                     in: {
-                      china: "中国の観光地を見つけて案内するためのアプリ"
+                      china: "Applications pour trouver et naviguer vers les sites touristiques en Chine"
                     }
                   }
                 }
@@ -26860,7 +26860,7 @@ export const translations: Record<Language, Translations> = {
       arrival: {
         to: {
           inter: {
-            city: "到着から都市間移動まで"
+            city: "De l'arrivée aux déplacements interurbains"
           }
         }
       },
@@ -26868,7 +26868,7 @@ export const translations: Record<Language, Translations> = {
         about: {
           your: {
             china: {
-              trip: "あなたの中国旅行について質問する..."
+              trip: "Posez une question sur votre voyage en Chine..."
             }
           }
         }
@@ -26886,7 +26886,7 @@ export const translations: Record<Language, Translations> = {
                 have: {
                   best: {
                     exchange: {
-                      rates: "空港や銀行のATMが最も良い為替レートです"
+                      rates: "Les distributeurs automatiques de l'aéroport et des banques offrent les meilleurs taux de change"
                     }
                   }
                 }
@@ -26896,13 +26896,13 @@ export const translations: Record<Language, Translations> = {
         }
       },
       authentication: {
-        failed: "認証に失敗しました"
+        failed: "Échec de l'authentification"
       },
       best: {
         atms: {
           for: {
             international: {
-              cards: "国際カードに最適なベストなATM"
+              cards: "Meilleurs distributeurs pour cartes internationales"
             }
           }
         },
@@ -26914,7 +26914,7 @@ export const translations: Record<Language, Translations> = {
                   that: {
                     tourists: {
                       usually: {
-                        miss: "観光客が通常見逃す成都のベストローカルストリートフード"
+                        miss: "Les meilleures spécialités de rue locales à Chengdu que les touristes manquent souvent"
                       }
                     }
                   }
@@ -26937,7 +26937,7 @@ export const translations: Record<Language, Translations> = {
                               best: {
                                 for: {
                                   first: {
-                                    timers: "中国の長城を訪れるベストな方法は？初心者に最適なセクションは？"
+                                    timers: "Quelle est la meilleure façon de visiter la Grande Muraille de Chine ? Quelle section est idéale pour les débutants ?"
                                   }
                                 }
                               }
@@ -26956,7 +26956,7 @@ export const translations: Record<Language, Translations> = {
       book: {
         high: {
           speed: {
-            rail: "高速鉄道を予約する"
+            rail: "Réserver un train à grande vitesse"
           }
         },
         professional: {
@@ -26968,7 +26968,7 @@ export const translations: Record<Language, Translations> = {
                     business: {
                       visits: {
                         in: {
-                          china: "中国のビジネス訪問のためにプロの通訳者と翻訳者を予約する。逐次通訳、同時通訳、公文書翻訳。"
+                          china: "Réservez des interprètes et traducteurs professionnels pour une visite d'affaires en Chine. Interprétation consécutive, simultanée et traduction de documents officiels."
                         }
                       }
                     }
@@ -26986,7 +26986,7 @@ export const translations: Record<Language, Translations> = {
                   meetings: {
                     conferences: {
                       and: {
-                        negotiatio: "中国での会議、カンファレンス、交渉のために、審査を受けた通訳者と翻訳者を予約しましょう。"
+                        negotiatio: "Réservez des interprètes et traducteurs vérifiés pour vos réunions, conférences et négociations en Chine."
                       }
                     }
                   }
@@ -26998,30 +26998,30 @@ export const translations: Record<Language, Translations> = {
       },
       business: {
         etiquette: {
-          essentials: "ビジネスエチケットの基本",
+          essentials: "Bases de l'étiquette des affaires",
           tips: {
             for: {
               meeting: {
                 chinese: {
-                  partners: "中国のビジネスパートナーとのミーティングのためのビジネスエチケットのヒント"
+                  partners: "Conseils d'étiquette des affaires pour rencontrer des partenaires commerciaux chinois"
                 }
               }
             }
           }
         },
         express: {
-          chinaconnect: "ビジネスエクスプレス - ChinaConnect"
+          chinaconnect: "Business Express - ChinaConnect"
         },
         invitation: {
           letter: {
             templates: {
-              chinaconnect: "ビジネス招待状テンプレート - ChinaConnect"
+              chinaconnect: "Modèle de lettre d'invitation professionnelle - ChinaConnect"
             }
           }
         }
       },
       calculating: {
-        routes: "ルートを計算中..."
+        routes: "Calcul de l'itinéraire..."
       },
       can: {
         i: {
@@ -27030,7 +27030,7 @@ export const translations: Record<Language, Translations> = {
               china: {
                 visa: {
                   on: {
-                    arrival: "中国ビザは到着時に取得できますか？"
+                    arrival: "Puis-je obtenir un visa chinois à l'arrivée ?"
                   }
                 }
               },
@@ -27039,7 +27039,7 @@ export const translations: Record<Language, Translations> = {
                   on: {
                     purchases: {
                       in: {
-                        china: "中国での購入で税金還付を受けられますか？"
+                        china: "Puis-je obtenir une détaxe sur mes achats en Chine ?"
                       }
                     }
                   }
@@ -27057,7 +27057,7 @@ export const translations: Record<Language, Translations> = {
                         apps: {
                           do: {
                             i: {
-                              need: "中国でApple Payは使えますか？どの支払いアプリが必要ですか？"
+                              need: "Puis-je utiliser Apple Pay en Chine ? De quelles applications de paiement ai-je besoin ?"
                             }
                           }
                         }
@@ -27077,7 +27077,7 @@ export const translations: Record<Language, Translations> = {
               about: {
                 international: {
                   withdrawal: {
-                    fees: "国際引き出し手数料について銀行に確認してください"
+                    fees: "Vérifiez auprès de votre banque les frais de retrait internationaux"
                   }
                 }
               }
@@ -27089,7 +27089,7 @@ export const translations: Record<Language, Translations> = {
             to: {
               confirm: {
                 your: {
-                  account: "アカウントを確認するためにメールをチェックしてください。"
+                  account: "Vérifiez votre e-mail pour confirmer votre compte."
                 }
               }
             }
@@ -27098,19 +27098,19 @@ export const translations: Record<Language, Translations> = {
       },
       checking: {
         visa: {
-          requirements: "ビザの必要条件を調べています..."
+          requirements: "Recherche des conditions de visa..."
         },
-        weather: "天気を調べています..."
+        weather: "Recherche de la météo..."
       },
       china: {
         business: {
-          etiquette: "中国のビジネスエチケット",
-          guide: "中国ビジネスガイド"
+          etiquette: "Étiquette des affaires en Chine",
+          guide: "Guide des affaires en Chine"
         },
         company: {
           registration: {
             guide: {
-              chinaconnect: "中国会社登録ガイド - ChinaConnect"
+              chinaconnect: "Guide d'enregistrement d'entreprise en Chine - ChinaConnect"
             }
           }
         },
@@ -27126,7 +27126,7 @@ export const translations: Record<Language, Translations> = {
                           you: {
                             must: {
                               apply: {
-                                befo: "中国はほとんどの国籍に対して到着時のビザを提供していません。旅行前に中国の大使館、総領事館、または認可されたビザセンターで申請する必要があります。"
+                                befo: "La Chine n'offre pas de visa à l'arrivée pour la plupart des nationalités. Vous devez faire une demande auprès de l'ambassade, du consulat ou d'un centre de visa agréé avant votre voyage."
                               }
                             }
                           }
@@ -27141,50 +27141,50 @@ export const translations: Record<Language, Translations> = {
         },
         expo: {
           calendar: {
-            chinaconnect: "中国展示会カレンダー - ChinaConnect"
+            chinaconnect: "Calendrier des salons en Chine - ChinaConnect"
           }
         },
         interpreter: {
-          booking: "中国通訳者予約"
+          booking: "Réserver un interprète en Chine"
         },
         invitation: {
-          letter: "中国招待状"
+          letter: "Lettre d'invitation pour la Chine"
         }
       },
       chinese: {
         business: {
           etiquette: {
             guide: {
-              chinaconnect: "中国ビジネスエチケットガイド - ChinaConnect"
+              chinaconnect: "Guide d'étiquette des affaires en Chine - ChinaConnect"
             }
           }
         },
-        restaurants: "中華レストラン"
+        restaurants: "Restaurants chinois"
       },
       city: {
         distance: {
           travel: {
-            time: "都市間の距離と移動時間"
+            time: "Distances et temps de trajet interurbains"
           }
         }
       },
       close: {
         emergency: {
-          menu: "緊急メニューを閉じる"
+          menu: "Fermer le menu d'urgence"
         }
       },
       collect: {
         your: {
-          passport: "パスポートを受け取る"
+          passport: "Recevoir le passeport"
         }
       },
       communication: {
-        guide: "コミュニケーションガイド",
-        setup: "コミュニケーション設定"
+        guide: "Guide de communication",
+        setup: "Paramètres de communication"
       },
       company: {
         registration: {
-          guide: "会社登録ガイド"
+          guide: "Guide d'enregistrement d'entreprise"
         }
       },
       complete: {
@@ -27198,7 +27198,7 @@ export const translations: Record<Language, Translations> = {
                       in: {
                         china: {
                           including: {
-                            canton: "中国で開催される主要な見本市や展示会（広州交易会、自動車ショー、産業イベントを含む）の完全なカレンダー。主要イベントに合わせて出張を計画してください。"
+                            canton: "Calendrier complet des principaux salons et expositions en Chine (y compris la Foire de Canton, les salons de l'automobile, les événements industriels). Planifiez vos voyages d'affaires en fonction des événements clés."
                           }
                         }
                       }
@@ -27209,10 +27209,10 @@ export const translations: Record<Language, Translations> = {
             }
           }
         },
-        registration: "登録を完了する",
+        registration: "Terminer l'inscription",
         the: {
           application: {
-            form: "申請フォームを記入する"
+            form: "Remplir le formulaire de demande"
           },
           foreign: {
             passport: {
@@ -27240,13 +27240,13 @@ export const translations: Record<Language, Translations> = {
         }
       },
       consular: {
-        assistance: "領事サポート"
+        assistance: "Soutien consulaire"
       },
       conversation: {
-        history: "会話履歴"
+        history: "Historique des conversations"
       },
       current: {
-        subscription: "現在のサブスクリプション"
+        subscription: "Abonnement actuel"
       },
       daily: {
         details: {
@@ -27254,7 +27254,7 @@ export const translations: Record<Language, Translations> = {
             appear: {
               after: {
                 full: {
-                  planning: "詳細な日程は完全な計画後に表示されます"
+                  planning: "L'itinéraire détaillé sera affiché après la planification complète"
                 }
               }
             }
@@ -27263,23 +27263,23 @@ export const translations: Record<Language, Translations> = {
       },
       delete: {
         this: {
-          conversation: "この会話を削除しますか？"
+          conversation: "Supprimer cette conversation ?"
         }
       },
       detailed: {
         feature: {
-          comparison: "詳細な機能比較"
+          comparison: "Comparaison détaillée des fonctionnalités"
         }
       },
       determine: {
         your: {
           visa: {
-            type: "ビザの種類を確認する"
+            type: "Vérifier le type de visa"
           }
         }
       },
       dietary: {
-        restrictions: "食事制限"
+        restrictions: "Restrictions alimentaires"
       },
       do: {
         i: {
@@ -27290,7 +27290,7 @@ export const translations: Record<Language, Translations> = {
                   account: {
                     for: {
                       mobile: {
-                        payments: "モバイル決済に中国の銀行口座は必要ですか？"
+                        payments: "Ai-je besoin d'un compte bancaire chinois pour les paiements mobiles ?"
                       }
                     }
                   }
@@ -27303,7 +27303,7 @@ export const translations: Record<Language, Translations> = {
                   for: {
                     a: {
                       china: {
-                        visa: "中国ビザに招待状は必要ですか？"
+                        visa: "Ai-je besoin d'une lettre d'invitation pour un visa chinois ?"
                       }
                     }
                   }
@@ -27314,7 +27314,7 @@ export const translations: Record<Language, Translations> = {
         },
         you: {
           speak: {
-            english: "英語は話せますか？"
+            english: "Parlez-vous anglais ?"
           }
         }
       },
@@ -27324,7 +27324,7 @@ export const translations: Record<Language, Translations> = {
             for: {
               this: {
                 city: {
-                  again: "この都市では再度表示しない"
+                  again: "Ne plus afficher dans cette ville"
                 }
               }
             }
@@ -27335,7 +27335,7 @@ export const translations: Record<Language, Translations> = {
         alipay: {
           or: {
             wechat: {
-              pay: "AlipayまたはWeChat Payをダウンロードする"
+              pay: "Télécharger Alipay ou WeChat Pay"
             }
           }
         },
@@ -27347,7 +27347,7 @@ export const translations: Record<Language, Translations> = {
                   before: {
                     arriving: {
                       in: {
-                        china: "これらのアプリを中国に到着する前にダウンロードして設定してください"
+                        china: "Téléchargez et configurez ces applications avant d'arriver en Chine"
                       }
                     }
                   }
@@ -27363,7 +27363,7 @@ export const translations: Record<Language, Translations> = {
                 is: {
                   blocked: {
                     in: {
-                      china: "到着前にダウンロード - Google Playは中国でブロックされています"
+                      china: "Télécharger avant l'arrivée - Google Play est bloqué en Chine"
                     }
                   }
                 }
@@ -27381,7 +27381,7 @@ export const translations: Record<Language, Translations> = {
                       for: {
                         china: {
                           visa: {
-                            appli: "中国ビザ申請およびビジネス訪問用のすぐに使えるバイリンガル招待状テンプレートをダウンロードしてください。必要事項を記入してすぐにダウンロードできます。"
+                            appli: "Téléchargez des modèles de lettres d'invitation bilingues prêts à l'emploi pour les demandes de visa chinois et les visites d'affaires. Remplissez les informations nécessaires et téléchargez immédiatement."
                           }
                         }
                       }
@@ -27390,7 +27390,7 @@ export const translations: Record<Language, Translations> = {
                   letters: {
                     for: {
                       visa: {
-                        applications: "ビザ申請用のすぐに使えるバイリンガル招待状をダウンロードする"
+                        applications: "Télécharger des lettres d'invitation bilingues prêtes à l'emploi pour les demandes de visa"
                       }
                     }
                   }
@@ -27404,7 +27404,7 @@ export const translations: Record<Language, Translations> = {
             before: {
               arriving: {
                 in: {
-                  china: "これらのアプリを中国に到着する前にダウンロードする"
+                  china: "Téléchargez ces applications avant d'arriver en Chine"
                 }
               }
             }
@@ -27421,15 +27421,15 @@ export const translations: Record<Language, Translations> = {
         }
       },
       emergency: {
-        assistance: "緊急時のサポート",
+        assistance: "Soutien en cas d'urgence",
         numbers: {
           in: {
-            china: "中国の緊急連絡先"
+            china: "Contacts d'urgence en Chine"
           }
         },
-        procedures: "緊急時の手順",
+        procedures: "Procédures d'urgence",
         travel: {
-          documents: "緊急時の旅行書類"
+          documents: "Documents de voyage d'urgence"
         }
       },
       enjoy: {
@@ -27439,7 +27439,7 @@ export const translations: Record<Language, Translations> = {
               support: {
                 for: {
                   team: {
-                    plans: "すべての機能をお楽しみください。チームプランについてはサポートにお問い合わせください。"
+                    plans: "Profitez de toutes les fonctionnalités. Pour les plans d'équipe, contactez le support."
                   }
                 }
               }
@@ -27455,13 +27455,13 @@ export const translations: Record<Language, Translations> = {
                 a: {
                   password: {
                     reset: {
-                      link: "パスワードリセットリンクを受信するにはメールアドレスを入力してください。"
+                      link: "Entrez votre adresse e-mail pour recevoir un lien de réinitialisation de mot de passe."
                     }
                   },
                   passwordless: {
                     sign: {
                       in: {
-                        link: "パスワードレスサインインリンクを受信するにはメールアドレスを入力してください。"
+                        link: "Entrez votre adresse e-mail pour recevoir un lien de connexion sans mot de passe."
                       }
                     }
                   }
@@ -27476,7 +27476,7 @@ export const translations: Record<Language, Translations> = {
           for: {
             getting: {
               around: {
-                china: "中国での移動に必要なアプリ"
+                china: "Applications nécessaires pour se déplacer en Chine"
               }
             }
           },
@@ -27485,7 +27485,7 @@ export const translations: Record<Language, Translations> = {
               interface: {
                 for: {
                   navigating: {
-                    china: "中国での移動に便利な英語インターフェース付きアプリ"
+                    china: "Applications avec interface anglaise utiles pour se déplacer en Chine"
                   }
                 }
               }
@@ -27495,46 +27495,46 @@ export const translations: Record<Language, Translations> = {
         messaging: {
           and: {
             connectivity: {
-              apps: "必須のメッセージングおよび接続アプリ"
+              apps: "Applications de messagerie et de connexion essentielles"
             }
           }
         }
       },
       expo: {
         event: {
-          calendar: "展示会＆イベントカレンダー"
+          calendar: "Calendrier des salons et événements"
         }
       },
       failed: {
         to: {
           fetch: {
             city: {
-              scores: "都市のスコアを取得できませんでした："
+              scores: "Impossible d'obtenir le score de la ville :"
             },
-            profile: "プロフィールの取得に失敗しました："
+            profile: "Échec de la récupération du profil :"
           },
           load: {
             amap: {
-              api: "Amap APIの読み込みに失敗しました"
+              api: "Échec du chargement de l'API Amap"
             },
-            weather: "天気の読み込みに失敗しました"
+            weather: "Échec du chargement de la météo"
           },
           save: {
-            route: "ルートの保存に失敗しました："
+            route: "Échec de l'enregistrement de l'itinéraire :"
           },
           search: {
             nearby: {
-              places: "近くの場所の検索に失敗しました："
+              places: "Échec de la recherche de lieux à proximité :"
             }
           },
           update: {
-            profile: "プロフィールの更新に失敗しました："
+            profile: "Échec de la mise à jour du profil :"
           }
         }
       },
       fermented: {
         soybean: {
-          milk: "発酵豆乳"
+          milk: "Lait de soja fermenté"
         }
       },
       fill: {
@@ -27550,7 +27550,7 @@ export const translations: Record<Language, Translations> = {
                           hotels: {
                             use: {
                               digital: {
-                                regist: "チェックイン時に一時滞在届を記入してください。一部のホテルではデジタル登録を使用しています。"
+                                regist: "Remplissez le formulaire d'enregistrement temporaire à l'arrivée. Certains hôtels utilisent un enregistrement numérique."
                               }
                             }
                           }
@@ -27565,14 +27565,14 @@ export const translations: Record<Language, Translations> = {
         }
       },
       finding: {
-        restaurants: "レストランを探しています...",
+        restaurants: "Recherche de restaurants...",
         transport: {
-          options: "交通手段を探しています..."
+          options: "Recherche de moyens de transport..."
         }
       },
       flight: {
         booking: {
-          tips: "フライト予約のヒント"
+          tips: "Conseils de réservation de vol"
         }
       },
       for: {
@@ -27592,7 +27592,7 @@ export const translations: Record<Language, Translations> = {
                         required: {
                           but: {
                             strengthens: {
-                              yo: "観光ビザの場合、招待状は必ずしも必要ではありませんが、申請を強化します。ビジネスビザの場合は通常、中国企業からの招待状が必要です。"
+                              yo: "Pour un visa touristique, une lettre d'invitation n'est pas toujours nécessaire, mais elle renforce votre demande. Pour un visa d'affaires, une lettre d'invitation d'une entreprise chinoise est généralement requise."
                             }
                           }
                         }
@@ -27618,7 +27618,7 @@ export const translations: Record<Language, Translations> = {
                           but: {
                             with: {
                               limitations: {
-                                fo: "外国のクレジットカードはAlipayおよびWeChat Payで動作するようになりましたが、制限があります。すべての機能を利用するには中国の銀行口座が役立ちますが、必ずしも必要ではありません。"
+                                fo: "Les cartes de crédit étrangères fonctionnent désormais avec Alipay et WeChat Pay, mais avec des limitations. Un compte bancaire chinois est utile pour toutes les fonctionnalités, mais pas toujours nécessaire."
                               }
                             }
                           }
@@ -27634,12 +27634,12 @@ export const translations: Record<Language, Translations> = {
       },
       frequently: {
         asked: {
-          questions: "よくある質問"
+          questions: "Questions fréquentes"
         }
       },
       gather: {
         required: {
-          documents: "必要な書類を準備する"
+          documents: "Préparer les documents nécessaires"
         }
       },
       generate: {
@@ -27650,7 +27650,7 @@ export const translations: Record<Language, Translations> = {
                 chatting: {
                   with: {
                     the: {
-                      ai: "AIとチャットして最初に旅程を作成する"
+                      ai: "Discutez avec l'IA pour créer d'abord un itinéraire"
                     }
                   }
                 }
@@ -27665,7 +27665,7 @@ export const translations: Record<Language, Translations> = {
             supported: {
               by: {
                 your: {
-                  browser: "お使いのブラウザはジオロケーションに対応していません"
+                  browser: "Votre navigateur ne prend pas en charge la géolocalisation"
                 }
               }
             }
@@ -27674,7 +27674,7 @@ export const translations: Record<Language, Translations> = {
       },
       getting: {
         exchange: {
-          rates: "為替レートを取得しています..."
+          rates: "Obtention du taux de change..."
         }
       },
       have: {
@@ -27688,7 +27688,7 @@ export const translations: Record<Language, Translations> = {
                       for: {
                         all: {
                           foreign: {
-                            gu: "パスポートを準備してください。ホテルではすべての外国人ゲストのパスポート登録が必要です。"
+                            gu: "Préparez votre passeport. Les hôtels exigent l'enregistrement du passeport pour tous les clients étrangers."
                           }
                         }
                       }
@@ -27702,10 +27702,10 @@ export const translations: Record<Language, Translations> = {
       },
       hear: {
         chinese: {
-          pronunciation: "中国語の発音を聞く"
+          pronunciation: "Écouter la prononciation en chinois"
         },
         english: {
-          pronunciation: "英語の発音を聞く"
+          pronunciation: "Écouter la prononciation en anglais"
         }
       },
       hotel: {
@@ -27717,7 +27717,7 @@ export const translations: Record<Language, Translations> = {
                   process: {
                     and: {
                       staying: {
-                        comfortably: "ホテルの種類、予約のヒント、チェックイン手続き、および快適に滞在する方法"
+                        comfortably: "Types d'hôtels, conseils de réservation, procédures d'enregistrement et comment séjourner confortablement"
                       }
                     }
                   }
@@ -27733,7 +27733,7 @@ export const translations: Record<Language, Translations> = {
             get: {
               to: {
                 the: {
-                  hospital: "病院にはどうやって行けばいいですか？"
+                  hospital: "Comment aller à l'hôpital ?"
                 }
               }
             },
@@ -27745,7 +27745,7 @@ export const translations: Record<Language, Translations> = {
                       as: {
                         a: {
                           foreign: {
-                            tourist: "外国人観光客としてWeChat PayとAlipayを使用するにはどうすればよいですか？"
+                            tourist: "Comment utiliser WeChat Pay et Alipay en tant que touriste étranger ?"
                           }
                         }
                       }
@@ -27765,7 +27765,7 @@ export const translations: Record<Language, Translations> = {
                     a: {
                       china: {
                         tourist: {
-                          visa: "中国観光ビザの取得にはどのくらい時間がかかりますか？"
+                          visa: "Combien de temps faut-il pour obtenir un visa touristique pour la Chine ?"
                         }
                       }
                     }
@@ -27781,7 +27781,7 @@ export const translations: Record<Language, Translations> = {
               i: {
                 bring: {
                   to: {
-                    china: "中国にはどのくらいの現金を持っていくべきですか？"
+                    china: "Combien d'argent liquide dois-je emporter en Chine ?"
                   }
                 }
               }
@@ -27791,7 +27791,7 @@ export const translations: Record<Language, Translations> = {
             a: {
               china: {
                 visa: {
-                  cost: "中国ビザの費用はいくらですか？"
+                  cost: "Combien coûte un visa chinois ?"
                 }
               }
             }
@@ -27803,7 +27803,7 @@ export const translations: Record<Language, Translations> = {
               a: {
                 china: {
                   tourist: {
-                    visa: "中国観光ビザの申請方法"
+                    visa: "Comment demander un visa touristique pour la Chine"
                   }
                 }
               }
@@ -27815,7 +27815,7 @@ export const translations: Record<Language, Translations> = {
                 into: {
                   hotels: {
                     in: {
-                      china: "中国のホテルの予約とチェックイン方法"
+                      china: "Comment réserver et s'enregistrer dans un hôtel en Chine"
                     }
                   }
                 }
@@ -27833,7 +27833,7 @@ export const translations: Record<Language, Translations> = {
                           china: {
                             as: {
                               a: {
-                                tourist: "中国で観光客としてSIMカードとインターネットアクセスを取得する方法"
+                                tourist: "Comment obtenir une carte SIM et un accès Internet en tant que touriste en Chine"
                               }
                             }
                           }
@@ -27848,7 +27848,7 @@ export const translations: Record<Language, Translations> = {
               china: {
                 as: {
                   a: {
-                    tourist: "観光客として中国を移動する方法"
+                    tourist: "Comment se déplacer en Chine en tant que touriste"
                   }
                 }
               },
@@ -27858,7 +27858,7 @@ export const translations: Record<Language, Translations> = {
                     metro: {
                       taxi: {
                         or: {
-                          bike: "中国の都市での移動方法：地下鉄、タクシー、それとも自転車？"
+                          bike: "Comment se déplacer dans les villes chinoises : métro, taxi ou vélo ?"
                         }
                       }
                     }
@@ -27872,7 +27872,7 @@ export const translations: Record<Language, Translations> = {
               china: {
                 as: {
                   a: {
-                    foreigner: "外国人として中国で支払いをする方法"
+                    foreigner: "Comment payer en Chine en tant qu'étranger"
                   }
                 }
               }
@@ -27887,7 +27887,7 @@ export const translations: Record<Language, Translations> = {
                       by: {
                         high: {
                           speed: {
-                            rail: "上海から西安まで高速鉄道で旅行する方法"
+                            rail: "Comment voyager de Shanghai à Xi'an en train à grande vitesse"
                           }
                         }
                       }
@@ -27909,7 +27909,7 @@ export const translations: Record<Language, Translations> = {
                     food: {
                       destinations: {
                         in: {
-                          china: "私はグルメです。中国の最高のグルメスポットを教えてください"
+                          china: "Je suis un gourmet. Indiquez-moi les meilleurs endroits gastronomiques en Chine"
                         }
                       }
                     }
@@ -27919,12 +27919,12 @@ export const translations: Record<Language, Translations> = {
             }
           },
           allergic: {
-            to: "私は...にアレルギーがあります"
+            to: "Je suis allergique à..."
           },
           sick: {
             i: {
               feel: {
-                unwell: "体調が悪い / 気分が優れません"
+                unwell: "Je ne me sens pas bien / Je me sens mal"
               }
             }
           }
@@ -27953,7 +27953,7 @@ export const translations: Record<Language, Translations> = {
         },
         do: {
           not: {
-            understand: "理解できません"
+            understand: "Je ne comprends pas"
           }
         },
         have: {
@@ -27969,7 +27969,7 @@ export const translations: Record<Language, Translations> = {
                             info: {
                               and: {
                                 transport: {
-                                  tip: "来週深圳でビジネスミーティングがあります。ビザの情報と交通のヒントが必要です"
+                                  tip: "J'ai une réunion d'affaires à Shenzhen la semaine prochaine. J'ai besoin d'informations sur les visas et de conseils de transport"
                                 }
                               }
                             }
@@ -27981,18 +27981,18 @@ export const translations: Record<Language, Translations> = {
                 }
               }
             },
-            stomachache: "腹痛があります"
+            stomachache: "J'ai mal au ventre"
           },
           been: {
-            assaulted: "暴行を受けました"
+            assaulted: "J'ai été agressé"
           }
         },
         need: {
           a: {
-            translator: "通訳が必要です"
+            translator: "J'ai besoin d'un interprète"
           },
           an: {
-            ambulance: "救急車を呼ぶ必要があります"
+            ambulance: "Je dois appeler une ambulance"
           }
         },
         want: {
@@ -28009,12 +28009,12 @@ export const translations: Record<Language, Translations> = {
       },
       important: {
         allergy: {
-          information: "重要なアレルギー情報"
+          information: "Informations importantes sur les allergies"
         }
       },
       invitation: {
         letter: {
-          templates: "招待状のテンプレート"
+          templates: "Modèles de lettres d'invitation"
         }
       },
       is: {
@@ -28025,7 +28025,7 @@ export const translations: Record<Language, Translations> = {
                 mobile: {
                   payments: {
                     in: {
-                      china: "中国でモバイル決済を使用するのは安全ですか？"
+                      china: "Est-il sûr d'utiliser les paiements mobiles en Chine ?"
                     }
                   }
                 }
@@ -28043,7 +28043,7 @@ export const translations: Record<Language, Translations> = {
                   need: {
                     it: {
                       for: {
-                        emigration: "入国カードを安全に保管してください - 出国の際に必要になります"
+                        emigration: "Conservez soigneusement votre carte d'arrivée - elle sera nécessaire à la sortie"
                       }
                     }
                   }
@@ -28056,13 +28056,13 @@ export const translations: Record<Language, Translations> = {
           with: {
             tax: {
               refund: {
-                mark: "税金還付マーク付きの請求書を持っておいてください"
+                mark: "Conservez les reçus portant la mention de détaxe"
               }
             }
           }
         },
         registration: {
-          slip: "登録証を保管してください"
+          slip: "Conservez le certificat d'enregistrement"
         },
         your: {
           hotel: {
@@ -28077,7 +28077,7 @@ export const translations: Record<Language, Translations> = {
                             checks: {
                               or: {
                                 other: {
-                                  hot: "ホテルの登録証を保管してください - 警察のチェックや他のホテル予約の際に必要になるかもしれません"
+                                  hot: "Conservez le certificat d'enregistrement de l'hôtel - il peut être nécessaire lors des contrôles de police ou lors de la réservation d'autres hôtels"
                                 }
                               }
                             }
@@ -28093,7 +28093,7 @@ export const translations: Record<Language, Translations> = {
         }
       },
       language: {
-        translation: "言語と翻訳"
+        translation: "Langue et traduction"
       },
       link: {
         a: {
@@ -28105,7 +28105,7 @@ export const translations: Record<Language, Translations> = {
                     card: {
                       to: {
                         enable: {
-                          payments: "Visa、Mastercard、または他の国際カードをリンクして支払いを有効にします"
+                          payments: "Liez une carte Visa, Mastercard ou une autre carte internationale pour activer les paiements"
                         }
                       }
                     }
@@ -28116,7 +28116,7 @@ export const translations: Record<Language, Translations> = {
           }
         },
         international: {
-          card: "国際カードのリンク"
+          card: "Liaison de carte internationale"
         }
       },
       local: {
@@ -28129,7 +28129,7 @@ export const translations: Record<Language, Translations> = {
                     dining: {
                       etiquette: {
                         in: {
-                          china: "中国のローカル料理、オーダーする際のヒント、食品安全、および食事のマナー"
+                          china: "Cuisine locale chinoise, conseils pour commander, sécurité alimentaire et étiquette à table"
                         }
                       }
                     }
@@ -28144,7 +28144,7 @@ export const translations: Record<Language, Translations> = {
         information: {
           is: {
             currently: {
-              unavailable: "現在、位置情報が利用できません"
+              unavailable: "Position actuellement indisponible"
             }
           }
         },
@@ -28157,7 +28157,7 @@ export const translations: Record<Language, Translations> = {
                     in: {
                       your: {
                         browser: {
-                          setting: "位置情報の許可が拒否されました。ブラウザの設定で位置情報アクセスを有効にしてください"
+                          setting: "Autorisation de localisation refusée. Activez l'accès à la localisation dans les paramètres de votre navigateur"
                         }
                       }
                     }
@@ -28172,7 +28172,7 @@ export const translations: Record<Language, Translations> = {
             out: {
               please: {
                 try: {
-                  again: "位置情報の要求がタイムアウトしました。もう一度お試しください"
+                  again: "La demande de localisation a expiré. Veuillez réessayer"
                 }
               }
             }
@@ -28206,7 +28206,7 @@ export const translations: Record<Language, Translations> = {
                 scams: {
                   and: {
                     embassy: {
-                      contacts: "パスポート紛失、医療緊急事態、盗難、詐欺、および大使館の連絡先"
+                      contacts: "Passeport perdu, urgence médicale, vol, fraude et contacts de l'ambassade"
                     }
                   }
                 }
@@ -28274,14 +28274,14 @@ export const translations: Record<Language, Translations> = {
                 etiquette: {
                   and: {
                     meeting: {
-                      protocols: "中国のビジネス文化、接待マナー、会合プロトコルをマスターする"
+                      protocols: "Maîtrisez la culture d'entreprise chinoise, l'étiquette de réception et le protocole de réunion"
                     }
                   },
                   gift: {
                     giving: {
                       customs: {
                         and: {
-                          meeting: "中国のビジネス文化、接待マナー、贈答習慣、会合プロトコルをマスターする。よくある間違いを避け、良好な関係を築く。"
+                          meeting: "Maîtrisez la culture d'entreprise chinoise, l'étiquette de réception, les coutumes en matière de cadeaux et le protocole de réunion. Évitez les erreurs courantes et établissez de bonnes relations."
                         }
                       }
                     }
@@ -28295,7 +28295,7 @@ export const translations: Record<Language, Translations> = {
                   card: {
                     exchange: {
                       dining: {
-                        meetin: "中国のビジネスエチケット（名刺交換、接待、会合、贈答を含む）をマスターする。外国人ビジネスプロフェッショナル向けの実践的な注意事項。"
+                        meetin: "Maîtrisez l'étiquette des affaires en Chine (y compris l'échange de cartes de visite, la réception, les réunions et les cadeaux). Conseils pratiques pour les professionnels étrangers."
                       }
                     }
                   }
@@ -28307,7 +28307,7 @@ export const translations: Record<Language, Translations> = {
       },
       maximum: {
         level: {
-          reached: "最大レベルに達しました！"
+          reached: "Niveau maximum atteint !"
         }
       },
       medical: {
@@ -28322,7 +28322,7 @@ export const translations: Record<Language, Translations> = {
                         foreigners: {
                           a: {
                             good: {
-                              tra: "中国の医療治療は、特に外国人にとって高額になることがあります。安全な旅行には、医療保険付きの優れた旅行保険が不可欠です。"
+                              tra: "Les traitements médicaux en Chine peuvent être coûteux, surtout pour les étrangers. Une bonne assurance voyage avec couverture médicale est essentielle pour voyager en toute sécurité."
                             }
                           }
                         }
@@ -28344,7 +28344,7 @@ export const translations: Record<Language, Translations> = {
         ai: {
           requests: {
             used: {
-              up: "月間AIリクエスト使用済み"
+              up: "Requêtes IA mensuelles épuisées"
             }
           }
         }
@@ -28356,24 +28356,24 @@ export const translations: Record<Language, Translations> = {
         __________________________________________________________________________________________________________________: "hard.no.__________________________________________________________________________________________________________________",
         items: {
           to: {
-            display: "表示するアイテムがありません"
+            display: "Aucun élément à afficher"
           }
         },
         itinerary: {
           to: {
-            display: "表示する旅程がありません"
+            display: "Aucun itinéraire à afficher"
           }
         },
         route: {
           data: {
             to: {
-              save: "保存するルートデータがありません。"
+              save: "Aucune donnée d'itinéraire à enregistrer."
             }
           }
         },
         saved: {
           itineraries: {
-            yet: "まだ保存された旅程はありません"
+            yet: "Aucun itinéraire enregistré pour le moment"
           }
         }
       },
@@ -28381,7 +28381,7 @@ export const translations: Record<Language, Translations> = {
         with: {
           soy: {
             bean: {
-              paste: "味噌入り麺"
+              paste: "Nouilles à la sauce de soja fermentée"
             }
           }
         }
@@ -28389,27 +28389,27 @@ export const translations: Record<Language, Translations> = {
       oauth: {
         provider: {
           not: {
-            enabled: "OAuthプロバイダーが有効になっていません"
+            enabled: "Fournisseur OAuth non activé"
           }
         }
       },
       open: {
         emergency: {
-          menu: "緊急メニューを開く"
+          menu: "Ouvrir le menu d'urgence"
         }
       },
-      openinghoursspecification: "営業時間仕様",
+      openinghoursspecification: "Spécifications des heures d'ouverture",
       pan: {
         fried: {
           pork: {
-            buns: "焼き豚まん"
+            buns: "Petit pain farci au porc grillé"
           }
         }
       },
       passionate: {
         about: {
           exploring: {
-            china: "中国探索に情熱を注ぐ"
+            china: "Passionné par l'exploration de la Chine"
           }
         }
       },
@@ -28424,7 +28424,7 @@ export const translations: Record<Language, Translations> = {
                       depending: {
                         on: {
                           hotel: {
-                            policy: "ホテルのポリシーにより、アリペイ、ウィーチャットペイ、またはクレジットカードでお支払いください。"
+                            policy: "Selon la politique de l'hôtel, veuillez payer avec Alipay, WeChat Pay ou carte de crédit."
                           }
                         }
                       }
@@ -28439,19 +28439,19 @@ export const translations: Record<Language, Translations> = {
       payment: {
         apps: {
           you: {
-            need: "必要な支払いアプリ"
+            need: "Applications de paiement nécessaires"
           }
         }
       },
       pdf: {
         generation: {
-          failed: "PDF生成に失敗しました:"
+          failed: "Échec de la génération du PDF :"
         }
       },
       pian: {
         er: {
           chuan: {
-            noodles: "ピエンアルチュアン麺"
+            noodles: "Nouilles Pian'erchuan"
           }
         }
       },
@@ -28462,7 +28462,7 @@ export const translations: Record<Language, Translations> = {
               type: {
                 your: {
                   own: {
-                    below: "プロンプトを選択するか、下に独自のものを入力してください"
+                    below: "Sélectionnez une invite ou saisissez la vôtre ci-dessous"
                   }
                 }
               }
@@ -28477,7 +28477,7 @@ export const translations: Record<Language, Translations> = {
         your: {
           scenic: {
             spot: {
-              visit: "観光地訪問を計画する"
+              visit: "Planifier la visite de sites touristiques"
             }
           },
           trips: {
@@ -28489,7 +28489,7 @@ export const translations: Record<Language, Translations> = {
                       shows: {
                         and: {
                           industry: {
-                            events: "中国のトップトレードショーや業界イベントに合わせて旅行を計画する"
+                            events: "Planifiez vos voyages en fonction des principaux salons et événements industriels en Chine"
                           }
                         }
                       }
@@ -28510,23 +28510,23 @@ export const translations: Record<Language, Translations> = {
         allow: {
           popups: {
             to: {
-              print: "印刷するためにポップアップを許可してください"
+              print: "Autorisez les pop-ups pour imprimer"
             }
           }
         },
         call: {
           an: {
-            ambulance: "救急車を呼んでください"
+            ambulance: "Appelez une ambulance"
           },
           my: {
-            family: "家族に電話してください"
+            family: "Appelez la famille"
           }
         },
         enter: {
           a: {
-            name: "名前を入力してください",
+            name: "Entrez votre nom",
             phone: {
-              number: "電話番号を入力してください"
+              number: "Entrez votre numéro de téléphone"
             }
           }
         },
@@ -28534,24 +28534,24 @@ export const translations: Record<Language, Translations> = {
           in: {
             to: {
               save: {
-                routes: "ルートを保存するにはサインインしてください"
+                routes: "Connectez-vous pour enregistrer l'itinéraire"
               }
             }
           }
         },
         speak: {
-          slowly: "ゆっくり話してください"
+          slowly: "Parlez lentement"
         }
       },
       popular: {
         food: {
-          categories: "人気の食品カテゴリー"
+          categories: "Catégories de plats populaires"
         }
       },
       powered: {
         by: {
           advanced: {
-            ai: "高度なAI搭載"
+            ai: "Propulsé par l'IA avancée"
           }
         }
       },
@@ -28562,7 +28562,7 @@ export const translations: Record<Language, Translations> = {
               business: {
                 travelers: {
                   in: {
-                    china: "中国での外国人ビジネス旅行者向け実用ツール"
+                    china: "Outils pratiques pour les voyageurs d'affaires étrangers en Chine"
                   }
                 }
               }
@@ -28572,11 +28572,11 @@ export const translations: Record<Language, Translations> = {
       },
       pre: {
         departure: {
-          preparation: "出発前の準備"
+          preparation: "Préparation avant le départ"
         }
       },
       premium: {
-        customization: "プレミアムカスタマイズ"
+        customization: "Personnalisation premium"
       },
       process: {
         at: {
@@ -28584,7 +28584,7 @@ export const translations: Record<Language, Translations> = {
             departure: {
               hall: {
                 before: {
-                  security: "保安検査前の空港出発ロビーの手続き"
+                  security: "Procédures dans le hall de départ de l'aéroport avant le contrôle de sécurité"
                 }
               }
             }
@@ -28597,7 +28597,7 @@ export const translations: Record<Language, Translations> = {
             translators: {
               for: {
                 business: {
-                  visits: "ビジネス訪問向けのプロフェッショナル通訳者と翻訳者"
+                  visits: "Interprètes et traducteurs professionnels pour visites d'affaires"
                 }
               }
             }
@@ -28617,7 +28617,7 @@ export const translations: Record<Language, Translations> = {
                           apps: {
                             and: {
                               ride: {
-                                hailing: "空港でSIMまたはeSIMを購入して、ナビゲーションアプリや配車サービスを利用する"
+                                hailing: "Achetez une SIM ou eSIM à l'aéroport pour utiliser les applications de navigation et les services de covoiturage"
                               }
                             }
                           }
@@ -28638,7 +28638,7 @@ export const translations: Record<Language, Translations> = {
               hangzhou: {
                 near: {
                   west: {
-                    lake: "西湖近くの杭州にあるブティックホテルを推奨"
+                    lake: "Recommander un hôtel boutique à Hangzhou près du lac de l'Ouest"
                   }
                 }
               }
@@ -28648,21 +28648,21 @@ export const translations: Record<Language, Translations> = {
       },
       remove: {
         from: {
-          favorites: "お気に入りから削除"
+          favorites: "Retirer des favoris"
         }
       },
       reservation: {
-        required: "予約必須"
+        required: "Réservation obligatoire"
       },
       route: {
         saved: {
-          successfully: "ルートが保存されました！"
+          successfully: "Itinéraire enregistré !"
         }
       },
       sanlitun: {
         chaoyang: {
           district: {
-            beijing: "北京・朝陽区・三里屯"
+            beijing: "Pékin, district de Chaoyang, Sanlitun"
           }
         }
       },
@@ -28675,11 +28675,11 @@ export const translations: Record<Language, Translations> = {
           }
         },
         your: {
-          itineraries: "旅程を保存する"
+          itineraries: "Enregistrer l'itinéraire"
         }
       },
       saving: {
-        itinerary: "旅程を保存中..."
+        itinerary: "Enregistrement de l'itinéraire..."
       },
       scan: {
         merchant: {
@@ -28693,7 +28693,7 @@ export const translations: Record<Language, Translations> = {
                         code: {
                           to: {
                             complete: {
-                              payments: "支払いを行うには、店のQRコードを読み取るか、自分のQRコードを表示してください"
+                              payments: "Pour payer, scannez le code QR du magasin ou affichez votre propre code QR"
                             }
                           }
                         }
@@ -28710,42 +28710,42 @@ export const translations: Record<Language, Translations> = {
         spots: {
           in: {
             china: {
-              chinaconnect: "中国の観光地 - ChinaConnect"
+              chinaconnect: "Sites touristiques de Chine - ChinaConnect"
             }
           }
         }
       },
       search: {
-        attractions: "観光地を検索...",
+        attractions: "Rechercher des sites touristiques...",
         country: {
-          name: "国名を入力..."
+          name: "Entrez le nom du pays..."
         }
       },
       searching: {
-        cities: "都市を検索中...",
+        cities: "Recherche de villes...",
         for: {
-          attractions: "観光地を検索中..."
+          attractions: "Recherche de sites touristiques..."
         },
-        hotels: "ホテルを検索中...",
+        hotels: "Recherche d'hôtels...",
         the: {
-          web: "ウェブを検索中..."
+          web: "Recherche sur le web..."
         }
       },
       select: {
         a: {
           transport: {
-            mode: "交通手段を選択"
+            mode: "Choisir le moyen de transport"
           }
         },
         transport: {
-          mode: "交通手段を選択"
+          mode: "Choisir le moyen de transport"
         },
         your: {
           country: {
             to: {
               see: {
                 specific: {
-                  requirements: "国を選択して具体的な要件を確認する"
+                  requirements: "Sélectionnez un pays pour vérifier les exigences spécifiques"
                 }
               }
             }
@@ -28759,7 +28759,7 @@ export const translations: Record<Language, Translations> = {
               password: {
                 for: {
                   authorizing: {
-                    transactions: "取引を承認するための安全な支払いパスワードを設定する"
+                    transactions: "Définissez un mot de passe de paiement sécurisé pour approuver les transactions"
                   }
                 }
               }
@@ -28767,13 +28767,13 @@ export const translations: Record<Language, Translations> = {
           }
         },
         payment: {
-          password: "支払いパスワードを設定"
+          password: "Définir le mot de passe de paiement"
         }
       },
       share: {
         your: {
           dining: {
-            experience: "食事体験をシェアする..."
+            experience: "Partager votre expérience culinaire..."
           }
         }
       },
@@ -28787,7 +28787,7 @@ export const translations: Record<Language, Translations> = {
                     apps: {
                       for: {
                         staying: {
-                          connected: "SIM/eSIMオプション、VPN設定、接続を維持するための必須アプリ"
+                          connected: "Options SIM/eSIM, configuration VPN et applications essentielles pour rester connecté"
                         }
                       }
                     }
@@ -28800,12 +28800,12 @@ export const translations: Record<Language, Translations> = {
       },
       something: {
         went: {
-          wrong: "問題が発生しました"
+          wrong: "Un problème est survenu"
         }
       },
       sorry: {
         i: {
-          encountered: "すみません、遭遇した"
+          encountered: "Désolé, nous avons rencontré"
         }
       },
       sos: {
@@ -28813,7 +28813,7 @@ export const translations: Record<Language, Translations> = {
           tap: {
             to: {
               call: {
-                police: "緊急SOS - タップして警察に電話"
+                police: "SOS d'urgence - Appuyez pour appeler la police"
               }
             }
           }
@@ -28829,7 +28829,7 @@ export const translations: Record<Language, Translations> = {
       stay: {
         connected: {
           in: {
-            china: "中国でつながる"
+            china: "Rester connecté en Chine"
           }
         }
       },
@@ -28846,7 +28846,7 @@ export const translations: Record<Language, Translations> = {
                           in: {
                             procedures: {
                               in: {
-                                chin: "中国への外国人旅行者向けホテル予約とチェックイン手続きのステップバイステップガイド"
+                                chin: "Guide étape par étape pour la réservation d'hôtel et les procédures d'enregistrement pour les voyageurs étrangers en Chine"
                               }
                             }
                           }
@@ -28875,7 +28875,7 @@ export const translations: Record<Language, Translations> = {
                           and: {
                             using: {
                               mobile: {
-                                pay: "中国でのモバイル決済、現金、カードの使用に関する国際旅行者向けステップバイステップガイド"
+                                pay: "Guide étape par étape pour l'utilisation des paiements mobiles, des espèces et des cartes en Chine pour les voyageurs internationaux"
                               }
                             }
                           }
@@ -28890,7 +28890,7 @@ export const translations: Record<Language, Translations> = {
                       china: {
                         including: {
                           airport: {
-                            tran: "中国での交通機関の案内（空港送迎、地下鉄、高速鉄道、タクシー、都市間交通を含む）に関するステップバイステップガイド"
+                            tran: "Guide étape par étape pour les transports en Chine (y compris les transferts aéroport, le métro, les trains à grande vitesse, les taxis et les transports interurbains)"
                           }
                         }
                       }
@@ -28902,7 +28902,7 @@ export const translations: Record<Language, Translations> = {
                     office: {
                       and: {
                         other: {
-                          entities: "WFOE、駐在員事務所およびその他のエンティティに関するステップバイステップガイド"
+                          entities: "Guide étape par étape pour les WFOE, bureaux de représentation et autres entités"
                         }
                       }
                     }
@@ -28918,7 +28918,7 @@ export const translations: Record<Language, Translations> = {
                           or: {
                             other: {
                               entity: {
-                                i: "外国投資家向け中国でのWFOE、駐在員事務所またはその他のエンティティ登録に関するステップバイステップガイド。完全なタイムラインと必要書類リスト。"
+                                i: "Guide étape par étape pour l'enregistrement d'une WFOE, d'un bureau de représentation ou d'une autre entité en Chine pour les investisseurs étrangers. Calendrier complet et liste des documents requis."
                               }
                             }
                           }
@@ -28937,7 +28937,7 @@ export const translations: Record<Language, Translations> = {
                               office: {
                                 in: {
                                   china: {
-                                    doc: "中国でのWFOE、合弁会社（JV）、駐在員事務所の設立に関するステップバイステップガイド。必要書類、タイムライン、コスト、および2026年の最新の規制更新。"
+                                    doc: "Guide étape par étape pour la création d'une WFOE, d'une coentreprise (JV) ou d'un bureau de représentation en Chine. Documents requis, calendrier, coûts et mises à jour réglementaires 2026."
                                   }
                                 }
                               }
@@ -28956,7 +28956,7 @@ export const translations: Record<Language, Translations> = {
       stir: {
         fried: {
           beef: {
-            offal: "牛肉ホルモンの炒め物"
+            offal: "Sauté de bœuf épicé"
           }
         }
       },
@@ -28969,7 +28969,7 @@ export const translations: Record<Language, Translations> = {
                   center: {
                     with: {
                       applicable: {
-                        fees: "該当する料金を添えて中国大使館/領事館/ビザセンターに提出"
+                        fees: "Soumettre à l'ambassade/consulat/centre de visa de Chine avec les frais applicables"
                       }
                     }
                   }
@@ -28981,18 +28981,18 @@ export const translations: Record<Language, Translations> = {
       },
       switch: {
         map: {
-          provider: "地図プロバイダーを切り替える"
+          provider: "Changer de fournisseur de cartes"
         },
         to: {
           google: {
-            maps: "Googleマップに切り替える"
+            maps: "Passer à Google Maps"
           }
         }
       },
       tap: {
         to: {
           hear: {
-            pronunciation: "タップして発音を聞く"
+            pronunciation: "Appuyez pour écouter la prononciation"
           }
         }
       },
@@ -29005,7 +29005,7 @@ export const translations: Record<Language, Translations> = {
                   shopping: {
                     and: {
                       departure: {
-                        checklist: "税金還付、空港交通、免税ショッピング、出国チェックリスト"
+                        checklist: "Détaxe, transport aéroport, shopping hors taxes et liste de contrôle de sortie"
                       }
                     }
                   }
@@ -29017,64 +29017,64 @@ export const translations: Record<Language, Translations> = {
       },
       taxi: {
         useful: {
-          phrases: "タクシー便利なフレーズ"
+          phrases: "Phrases utiles pour les taxis"
         }
       },
       thank: {
         you: {
           for: {
             your: {
-              subscription: "ご購読ありがとうございます！"
+              subscription: "Merci pour votre abonnement !"
             }
           }
         }
       },
       toggle: {
         temperature: {
-          unit: "温度単位を切り替える"
+          unit: "Changer l'unité de température"
         }
       },
       translation: {
-        interpreting: "翻訳・通訳",
-        services: "翻訳サービス"
+        interpreting: "Traduction et interprétation",
+        services: "Services de traduction"
       },
       transport: {
         navigation: {
-          apps: "交通・ナビゲーションアプリ"
+          apps: "Applications de transport et de navigation"
         }
       },
       travel: {
         insurance: {
           is: {
-            essential: "旅行保険は必須です"
+            essential: "L'assurance voyage est obligatoire"
           }
         }
       },
       try: {
         these: {
           quick: {
-            prompts: "これらの簡単なプロンプトを試してみてください"
+            prompts: "Essayez ces invites simples"
           }
         }
       },
       unlimited: {
         ai: {
-          requests: "無制限のAIリクエスト"
+          requests: "Requêtes IA illimitées"
         }
       },
       unsaved: {
-        conversation: "未保存の会話"
+        conversation: "Conversations non enregistrées"
       },
       upgrade: {
         to: {
           a: {
             paid: {
-              plan: "有料プランにアップグレード"
+              plan: "Passer au plan payant"
             }
           },
           continue: {
             using: {
-              ai: "AIを使い続けるためにアップグレード"
+              ai: "Mettez à niveau pour continuer à utiliser l'IA"
             }
           }
         }
@@ -29104,7 +29104,7 @@ export const translations: Record<Language, Translations> = {
                           sites: {
                             often: {
                               have: {
-                                be: "Booking.com、Ctrip、またはFliggyを使用してホテルを予約してください。国際サイトは英語サポートが優れていることが多いです"
+                                be: "Réservez des hôtels avec Booking.com, Ctrip ou Fliggy. Les sites internationaux offrent souvent un meilleur support en anglais"
                               }
                             }
                           }
@@ -29123,7 +29123,7 @@ export const translations: Record<Language, Translations> = {
               banks: {
                 for: {
                   better: {
-                    security: "銀行内のカードマシンを使ってより高いセキュリティを確保"
+                    security: "Utilisez les machines à cartes dans les banques pour une sécurité accrue"
                   }
                 }
               }
@@ -29138,7 +29138,7 @@ export const translations: Record<Language, Translations> = {
                   cheaper: {
                     than: {
                       taxi: {
-                        queue: "空港ピックアップにはDidiアプリを使用 - タクシー待ち行列より安い"
+                        queue: "Utilisez l'application Didi pour les transferts aéroport - moins cher que la file de taxis"
                       }
                     }
                   }
@@ -29161,7 +29161,7 @@ export const translations: Record<Language, Translations> = {
                               have: {
                                 the: {
                                   best: {
-                                    e: "国際カードにはICBC、中国銀行、またはHSBCのATMを使用してください。彼らは最高の為替レートと最も広いカバレッジを持っています"
+                                    e: "Utilisez les distributeurs ICBC, Bank of China ou HSBC pour les cartes internationales. Ils offrent les meilleurs taux de change et la plus large couverture"
                                   }
                                 }
                               }
@@ -29179,21 +29179,21 @@ export const translations: Record<Language, Translations> = {
       },
       useful: {
         transport: {
-          phrases: "便利な交通フレーズ"
+          phrases: "Phrases de transport utiles"
         }
       },
       user: {
         accepted: {
           the: {
             install: {
-              prompt: "ユーザーがインストールプロンプトを受け入れました"
+              prompt: "L'utilisateur a accepté l'invite d'installation"
             }
           }
         },
         dismissed: {
           the: {
             install: {
-              prompt: "ユーザーがインストールプロンプトを却下しました"
+              prompt: "L'utilisateur a refusé l'invite d'installation"
             }
           }
         }
@@ -29209,7 +29209,7 @@ export const translations: Record<Language, Translations> = {
                       bookings: {
                         and: {
                           proof: {
-                            of: "有効なパスポート、ビザ申請書、写真、旅行日程、ホテル予約、および財政証明"
+                            of: "Passeport valide, formulaire de demande de visa, photos, itinéraire de voyage, réservations d'hôtel et preuve de ressources financières"
                           }
                         }
                       }
@@ -29224,13 +29224,13 @@ export const translations: Record<Language, Translations> = {
       verify: {
         identity: {
           with: {
-            passport: "パスポートで身元を確認する"
+            passport: "Vérifier l'identité avec le passeport"
           }
         }
       },
       visa: {
         overstay: {
-          warning: "ビザのオーバーステイ警告"
+          warning: "Avertissement de dépassement de visa"
         },
         requirements: {
           application: {
@@ -29240,7 +29240,7 @@ export const translations: Record<Language, Translations> = {
                   documents: {
                     for: {
                       entering: {
-                        china: "中国入国に必要なビザ要件、申請プロセス、および必須書類"
+                        china: "Exigences de visa pour entrer en Chine, processus de demande et documents requis"
                       }
                     }
                   }
@@ -29249,7 +29249,7 @@ export const translations: Record<Language, Translations> = {
             }
           },
           by: {
-            country: "国別のビザ要件"
+            country: "Exigences de visa par pays"
           }
         }
       },
@@ -29259,7 +29259,7 @@ export const translations: Record<Language, Translations> = {
             error: {
               loading: {
                 this: {
-                  content: "このコンテンツの読み込み中にエラーが発生しました"
+                  content: "Une erreur s'est produite lors du chargement de ce contenu"
                 }
               }
             }
@@ -29270,7 +29270,7 @@ export const translations: Record<Language, Translations> = {
         lake: {
           fish: {
             in: {
-              vinegar: "西湖酢漬けの魚"
+              vinegar: "Poisson de l'Ouest au vinaigre"
             }
           }
         }
@@ -29281,7 +29281,7 @@ export const translations: Record<Language, Translations> = {
             i: {
               use: {
                 in: {
-                  china: "中国ではどのATMを使えばいいですか？"
+                  china: "Quel distributeur utiliser en Chine ?"
                 }
               }
             }
@@ -29294,7 +29294,7 @@ export const translations: Record<Language, Translations> = {
                 know: {
                   before: {
                     visiting: {
-                      china: "中国訪問前に知っておくべき文化的エチケットは何ですか？"
+                      china: "Quelles sont les étiquettes culturelles à connaître avant de visiter la Chine ?"
                     }
                   }
                 }
@@ -29309,7 +29309,7 @@ export const translations: Record<Language, Translations> = {
                 are: {
                   available: {
                     in: {
-                      china: "中国ではどのような緊急電話番号とサービスが利用できますか？"
+                      china: "Quels numéros et services d'urgence sont disponibles en Chine ?"
                     }
                   }
                 }
@@ -29330,7 +29330,7 @@ export const translations: Record<Language, Translations> = {
                             a: {
                               visa: {
                                 on: {
-                                  arrival: "中国訪問にはどのようなビザが必要ですか？到着時にビザを取得できますか？"
+                                  arrival: "Quel visa ai-je besoin pour visiter la Chine ? Puis-je obtenir un visa à l'arrivée ?"
                                 }
                               }
                             }
@@ -29352,7 +29352,7 @@ export const translations: Record<Language, Translations> = {
               to: {
                 go: {
                   in: {
-                    china: "中国でどこに行きたいですか？"
+                    china: "Où voulez-vous aller en Chine ?"
                   }
                 }
               }
@@ -29361,12 +29361,12 @@ export const translations: Record<Language, Translations> = {
         },
         is: {
           the: {
-            embassy: "大使館はどこですか？",
-            hospital: "病院はどこですか？",
+            embassy: "Où est l'ambassade ?",
+            hospital: "Où est l'hôpital ?",
             police: {
-              station: "警察署はどこですか？"
+              station: "Où est le poste de police ?"
             },
-            restroom: "トイレはどこですか？"
+            restroom: "Où sont les toilettes ?"
           }
         }
       },
@@ -29426,7 +29426,7 @@ export const translations: Record<Language, Translations> = {
                       that: {
                         wasn: {
                           t: {
-                            saved: "前回のセッションで保存されなかった会話があります"
+                            saved: "Vous avez des conversations non enregistrées de la session précédente"
                           }
                         }
                       }
@@ -29446,7 +29446,7 @@ export const translations: Record<Language, Translations> = {
                     upgrading: {
                       for: {
                         more: {
-                          requests: "月間制限に近づいています。より多くのリクエストにはアップグレードをご検討ください"
+                          requests: "Vous approchez de la limite mensuelle. Envisagez de passer à un plan supérieur pour plus de requêtes"
                         }
                       }
                     }
@@ -29482,7 +29482,7 @@ export const translations: Record<Language, Translations> = {
                 }
               },
               highest: {
-                plan: "あなたは最高のプランをご利用中です！"
+                plan: "Vous utilisez le meilleur plan !"
               }
             }
           }
@@ -29494,7 +29494,7 @@ export const translations: Record<Language, Translations> = {
                 limit: {
                   upgrade: {
                     to: {
-                      continue: "月間制限に達しました。アップグレードして続行してください"
+                      continue: "Limite mensuelle atteinte. Mettez à niveau pour continuer"
                     }
                   }
                 }
@@ -29507,7 +29507,7 @@ export const translations: Record<Language, Translations> = {
         personal: {
           china: {
             travel: {
-              intelligence: "あなたの個人的な中国旅行情報"
+              intelligence: "Votre guide de voyage personnel pour la Chine"
             }
           }
         },
@@ -29515,7 +29515,7 @@ export const translations: Record<Language, Translations> = {
           includes: {
             unlimited: {
               ai: {
-                requests: "あなたのプランには無制限のAIリクエストが含まれています"
+                requests: "Votre plan inclut des requêtes IA illimitées"
               }
             }
           }
@@ -29572,16 +29572,16 @@ export const translations: Record<Language, Translations> = {
       featuredDestinations: "Basé sur les destinations populaires"
     },
     invitationLetter: {
-      allowPopups: "印刷のためにポップアップを許可してください",
-      bilingual: "バイリンガル",
-      downloadPdf: "PDFをダウンロード",
-      edit: "編集",
-      english: "英語",
-      generating: "生成中...",
-      pdfFailed: "PDF生成に失敗しました：",
-      pdfFailedRetry: "PDF生成に失敗しました。もう一度お試しください。",
+      allowPopups: "Autorisez les pop-ups pour imprimer",
+      bilingual: "Bilingue",
+      downloadPdf: "Télécharger le PDF",
+      edit: "Modifier",
+      english: "Anglais",
+      generating: "Génération...",
+      pdfFailed: "Échec de la génération du PDF :",
+      pdfFailedRetry: "Échec de la génération du PDF. Veuillez réessayer.",
       png: "PNG",
-      preview: "プレビュー"
+      preview: "Aperçu"
     },
     language: {
       chinese: "Chinois",
@@ -29589,8 +29589,8 @@ export const translations: Record<Language, Translations> = {
       current: "Actuel",
       dir: "ltr",
       english: "Anglais",
-      name: "中文（简体）",
-      nativeName: "简体中文",
+      name: "Chinois (simplifié)",
+      nativeName: "Chinois simplifié",
       switchTo: "Passer à"
     },
     loginPage: {
@@ -29606,7 +29606,7 @@ export const translations: Record<Language, Translations> = {
       guide: "Guide de voyage",
       home: "Accueil",
       restaurants: "Restaurants",
-      scenicSpots: "景勝地",
+      scenicSpots: "Sites pittoresques",
       selectLanguage: "Sélectionner la langue",
       signIn: "Se connecter",
       tagline: "Explorez la Chine avec l'IA"
@@ -29687,29 +29687,29 @@ export const translations: Record<Language, Translations> = {
       welcome: "Bienvenue sur ChinaConnect !"
     },
     paymentGuide: {
-      atmHeading: "国際カードに強いATM",
-      atmTip1: "空港や銀行のATMが最良の為替レートです",
-      atmTip2: "国際的な引き出し手数料について銀行に確認してください",
-      atmTip3: "一部のATMは外国カードの引き出しを制限します（最大2000元）",
-      atmTip4: "銀行内のATMを使うとより安全です",
-      faqsHeading: "よくある質問",
-      securityWarning: "セキュリティ警告",
-      setupHeading: "設定方法",
+      atmHeading: "Distributeurs acceptant les cartes internationales",
+      atmTip1: "Les distributeurs de l'aéroport et des banques offrent les meilleurs taux de change",
+      atmTip2: "Vérifiez auprès de votre banque les frais de retrait internationaux",
+      atmTip3: "Certains distributeurs limitent les retraits pour les cartes étrangères (maximum 2000 yuans)",
+      atmTip4: "Utiliser les distributeurs dans les banques est plus sûr",
+      faqsHeading: "Questions fréquentes",
+      securityWarning: "Avertissement de sécurité",
+      setupHeading: "Comment configurer",
       tabAlipay: "Alipay",
       tabAtm: "ATM",
-      tabCash: "現金・カード",
-      tabFaq: "よくある質問",
-      tabTax: "税還付",
+      tabCash: "Espèces et cartes",
+      tabFaq: "Questions fréquentes",
+      tabTax: "Détaxe",
       tabWechat: "WeChat Pay",
-      taxTip1: "セキュリティチェック前に空港出発ロビーで行ってください",
-      taxTip2: "対象店舗での最低購入額は500元",
-      taxTip3: "還付率：品目カテゴリーにより3-11%",
-      taxTip4: "税還付マーク付きの発注書を保管してください"
+      taxTip1: "À faire dans le hall de départ de l'aéroport avant le contrôle de sécurité",
+      taxTip2: "Achat minimum de 500 yuans dans les magasins participants",
+      taxTip3: "Taux de remboursement : 3-11% selon la catégorie d'article",
+      taxTip4: "Conservez les reçus portant la mention de détaxe"
     },
     priceTransparency: {
-      all: "すべて",
-      showComparison: "比較表示",
-      showSimplified: "簡略表示"
+      all: "Tout",
+      showComparison: "Affichage comparatif",
+      showSimplified: "Affichage simplifié"
     },
     pricing: {
       annualNote: "Facturé annuellement à ¥659 (économisez ¥169)",
@@ -29943,7 +29943,7 @@ export const translations: Record<Language, Translations> = {
       title: "Guide des Restaurants"
     },
     scamPrevention: {
-      all: "すべて"
+      all: "Tout"
     },
     scenicSpots: {
       allSpots: "All Scenic Spots",
@@ -29968,28 +29968,28 @@ export const translations: Record<Language, Translations> = {
       shareTip: "Partager avec des amis"
     },
     transportGuide: {
-      airportWifi: "空港WiFiが利用可能な場合が多い — SIM購入前に接続を",
-      arrivalByPlane: "飛行機で",
-      arrivalByTrain: "電車で",
-      arrivalTip: "入国カードは大切に保管してください — 入管審査で必要になります",
-      bookingPlatforms: "予約プラットフォーム",
-      didiTip: "空港送迎にはDidiアプリが便利 — タクシーキューより安い",
-      howToUse: "使い方：",
-      proTips: "プロのヒント：",
-      seatClasses: "シートクラス",
-      selectMode: "交通手段を選択",
-      selectModeHint: "交通手段を選択してください",
-      tabArrival: "到着",
-      tabDistances: "距離",
-      tabIntercity: "都市間",
-      tabLocal: "市内の交通",
-      tabPhrases: "フレーズ集",
-      tabTaxi: "タクシー/Didi",
-      tabTrains: "鉄道予約",
-      taxiPhrases: "タクシー便利フレーズ",
-      trainBookingTips: "鉄道予約のコツ",
+      airportWifi: "Le Wi-Fi de l'aéroport est souvent disponible - connectez-vous avant d'acheter une SIM",
+      arrivalByPlane: "En avion",
+      arrivalByTrain: "En train",
+      arrivalTip: "Conservez soigneusement votre carte d'arrivée - elle sera nécessaire au contrôle d'immigration",
+      bookingPlatforms: "Plateformes de réservation",
+      didiTip: "Utilisez l'application Didi pour les transferts aéroport - moins cher que la file de taxis",
+      howToUse: "Utilisation :",
+      proTips: "Conseils de professionnels :",
+      seatClasses: "Classe de siège",
+      selectMode: "Choisir le moyen de transport",
+      selectModeHint: "Veuillez sélectionner un moyen de transport",
+      tabArrival: "Arrivée",
+      tabDistances: "Distance",
+      tabIntercity: "Interurbain",
+      tabLocal: "Transport urbain",
+      tabPhrases: "Recueil de phrases",
+      tabTaxi: "Taxi/Didi",
+      tabTrains: "Réservation de train",
+      taxiPhrases: "Phrases utiles pour les taxis",
+      trainBookingTips: "Conseils de réservation de train",
       tripCta: "Trip.com / Ctrip",
-      usefulPhrases: "交通便利フレーズ"
+      usefulPhrases: "Phrases de transport utiles"
     },
     userPage: {
       heading: "Profil",
@@ -29997,42 +29997,42 @@ export const translations: Record<Language, Translations> = {
       title: "Profil Utilisateur - ChinaConnect"
     },
     visaPage: {
-      appsHeading: "必須アプリ",
-      appsSubtitle: "到着前にダウンロード — Google Playは中国で利用不可",
-      beforeBuying: "購入前に",
-      digitalCopiesDesc: "デジタルコピーをクラウド（Google Drive、iCloud）に保管し、家族と共有。原本とは別に物理コピーを保管してください。",
-      duration: "滞在期間：",
-      faqHeading: "よくある質問",
-      fee: "料金：",
-      finalPreparations: "最終準備",
-      flightHeading: "フライト予約のコツ",
-      importantReminder: "重要なお知らせ",
+      appsHeading: "Applications essentielles",
+      appsSubtitle: "Télécharger avant l'arrivée - Google Play n'est pas disponible en Chine",
+      beforeBuying: "Avant l'achat",
+      digitalCopiesDesc: "Conservez une copie numérique dans le cloud (Google Drive, iCloud) et partagez-la avec votre famille. Conservez une copie physique séparée de l'original.",
+      duration: "Durée du séjour :",
+      faqHeading: "Questions fréquentes",
+      fee: "Tarif :",
+      finalPreparations: "Préparatifs finaux",
+      flightHeading: "Conseils de réservation de vol",
+      importantReminder: "Avis important",
       insuranceDesc: "Medical treatment in China can be expensive, especially for foreigners. A good travel insurance policy with medical coverage is non-negotiable for safe travel.",
-      insuranceHeading: "旅行保険は必須",
-      insuranceTipsHeading: "保険選びのポイント",
-      overstayWarning: "ビザオーバーステイ警告",
-      processing: "処理期間：",
-      recommendedProviders: "おすすめプロバイダー",
-      reqHeading: "国別ビザ要件",
-      reqSubtitle: "国を選択して具体的な要件を確認",
-      requirements: "必要書類：",
-      tabApps: "アプリ・VPN",
-      tabChecklist: "出発前",
-      tabDocuments: "必要書類",
-      tabInsurance: "保険",
-      tabOverview: "概要",
-      tabProcess: "手続き",
-      tabTips: "コツ・よくある質問",
-      weeksBefore: "出発までの週数（4-6週間前）",
-      weeksBeforeDesc: "出発の4-6週間前に完了してください"
+      insuranceHeading: "L'assurance voyage est obligatoire",
+      insuranceTipsHeading: "Conseils pour choisir une assurance",
+      overstayWarning: "Avertissement de dépassement de visa",
+      processing: "Délai de traitement :",
+      recommendedProviders: "Fournisseurs recommandés",
+      reqHeading: "Exigences de visa par pays",
+      reqSubtitle: "Sélectionnez un pays pour vérifier les exigences spécifiques",
+      requirements: "Documents requis :",
+      tabApps: "Applications et VPN",
+      tabChecklist: "Avant le départ",
+      tabDocuments: "Documents requis",
+      tabInsurance: "Assurance",
+      tabOverview: "Aperçu",
+      tabProcess: "Procédure",
+      tabTips: "Conseils et FAQ",
+      weeksBefore: "Semaines avant le départ (4-6 semaines)",
+      weeksBeforeDesc: "À faire 4 à 6 semaines avant le départ"
     }
   },
   de: {
     accommodationGuide: {
-      tabBooking: "予約のコツ",
-      tabCheckin: "チェックインの流れ",
-      tabFaqs: "よくある質問",
-      tabTypes: "ホテルタイプ"
+      tabBooking: "Buchungstipps",
+      tabCheckin: "Check-in-Ablauf",
+      tabFaqs: "Häufig gestellte Fragen",
+      tabTypes: "Hoteltypen"
     },
     accountPage: {
       active: "Aktiv",
@@ -30346,18 +30346,18 @@ export const translations: Record<Language, Translations> = {
     cityAttractions: {
       categoryAll: "Alle",
       categoryLabel: "Kategorie",
-      chinanewsDesc: "公式観光情報",
-      ctripDesc: "観光地のレビュー・予約",
+      chinanewsDesc: "Offizielle Tourismusinformationen",
+      ctripDesc: "Bewertungen und Buchung von Sehenswürdigkeiten",
       disclaimer: "Öffnungszeiten, Ticketpreise und Telefonnummern können sich ändern. Wir empfehlen, die Informationen über die offizielle Website der Sehenswürdigkeit oder telefonisch zu überprüfen.",
-      mafengwoDesc: "中国最大の旅行コミュニティ",
-      mctDesc: "政府観光データ",
+      mafengwoDesc: "Chinas größte Reise-Community",
+      mctDesc: "Regierungs-Tourismusdaten",
       openOnMap: "Auf Karte öffnen",
       openingHours: "Öffnungszeiten",
       subtitle: "Muss man gesehen haben: Wahrzeichen, Museen und Naturwunder.",
       ticketPrice: "Eintrittspreis",
       tipsHeader: "Tipps",
       title: "Sehenswürdigkeiten in {city}",
-      tripadvisorDesc: "海外の観光地レビュー",
+      tripadvisorDesc: "Internationale Bewertungen von Touristenattraktionen",
       viewAll: "Alle Sehenswürdigkeiten in {city} ansehen",
       viewDetails: "Details anzeigen",
       viewMore: "Mehr Sehenswürdigkeiten ansehen"
@@ -30365,9 +30365,9 @@ export const translations: Record<Language, Translations> = {
     cityFood: {
       avgPrice: "Durchschnittspreis",
       cuisine: "Küche",
-      dataSourcesDesc: "権威ある情報源からまとめた飲食店データ。訪問前に詳細を確認してください：",
-      dataSourcesHeading: "データソースと参考資料",
-      dianpingDesc: "中国最大のローカル生活サービスプラットフォーム",
+      dataSourcesDesc: "Restaurantdaten aus autoritativen Quellen. Bitte vor dem Besuch Details prüfen:",
+      dataSourcesHeading: "Datenquellen und Referenzen",
+      dianpingDesc: "Chinas größte Plattform für lokale Dienstleistungen",
       disclaimer: "Telefonnummern und Adressen können sich ändern. Wir empfehlen, die Informationen über die offiziellen Kanäle des Restaurants oder telefonisch zu überprüfen.",
       filterAll: "Alle",
       filterBlackPearl: "Schwarze Perle",
@@ -30377,16 +30377,16 @@ export const translations: Record<Language, Translations> = {
       filterMichelin: "Michelin",
       filteringLabel: "Filtern nach:",
       googleMaps: "Google Maps",
-      meituanDesc: "出前・レビュープラットフォーム",
-      michelinDesc: "国際的に権威ある飲食店評価",
-      nextCity: "次の都市",
-      previousCity: "前の都市",
+      meituanDesc: "Liefer- und Bewertungsplattform",
+      michelinDesc: "International anerkannte Restaurantbewertungen",
+      nextCity: "Nächste Stadt",
+      previousCity: "Vorherige Stadt",
       signatureDishes: "Empfehlungen",
       subtitle: "Michelin-Sterne, Favoriten der Schwarzen Perle und lokale Schätze.",
       title: "Restaurants in {city}",
       viewAll: "Alle Restaurants in {city} ansehen",
       viewDetails: "Details anzeigen",
-      xiaohongshuDesc: "ローカルグルメ探索ガイド"
+      xiaohongshuDesc: "Lokaler Food-Entdecker-Guide"
     },
     cityHotels: {
       bookCta: "Hoteldetails ansehen",
@@ -30414,7 +30414,7 @@ export const translations: Record<Language, Translations> = {
       bookHotelCta: "Hotels in {city} finden",
       bookTourCta: "Eine Tour in {city} buchen",
       citySubtitle: "Der vollständige Reiseführer für {city}, China. Entdecken Sie die besten Restaurants, Sehenswürdigkeiten, Hotels und Reisetipps.",
-      climate: "気候",
+      climate: "Klima",
       connectivitySubtitle: "Bleiben Sie mit Daten verbunden.",
       contactCount: "{count} Kontakte",
       cultureSubtitle: "Lokale Bräuche und Etikette.",
@@ -30423,8 +30423,8 @@ export const translations: Record<Language, Translations> = {
       dataSourcesDesc: "Woher diese Daten stammen",
       dataSourcesHeading: "Datenquellen",
       downloadBefore: "Laden Sie diese Apps herunter, bevor Sie nach China einreisen.",
-      durationLabel: "所要時間：",
-      electricity: "電圧・電源",
+      durationLabel: "Dauer:",
+      electricity: "Spannung/Strom",
       elevation: "Höhe",
       emergencySubtitle: "Wichtige Telefonnummern und Botschaften.",
       emergencySubtitleDynamic: "Wichtige Telefonnummern in {city}",
@@ -30437,7 +30437,7 @@ export const translations: Record<Language, Translations> = {
       foodHighlightsHeading: "Highlights der Gastronomie",
       foodHighlightsSubtitle: "Lokal empfohlen",
       foodSubtitle: "Michelin-Sterne, Black Pearl-Auswahl und lokale Favoriten",
-      frequencyLabel: "周波数：",
+      frequencyLabel: "Frequenz:",
       gettingAround: "Unterwegs",
       gettingTo: "Anreise nach {city}",
       heroEyebrow: "Reiseführer",
@@ -30446,13 +30446,13 @@ export const translations: Record<Language, Translations> = {
       hotelsCountUnit: "Hotels",
       hotelsHeading: "Wo man übernachten kann",
       hotelsSubtitle: "Von Boutique-Hotels bis hin zu internationalen Ketten.",
-      howToUseLabel: "使い方：",
+      howToUseLabel: "Verwendung:",
       importantNumbers: "Wichtige Telefonnummern in {city}",
       intro: "Willkommen in {city}, einem der faszinierendsten Reiseziele Chinas.",
       language: "Sprache",
       localFoodHighlights: "Local Food Highlights",
       localFoodHighlightsDesc: "Hand-picked local dining picks in {city}",
-      mapLayerDesc: "レイヤー切替：ミシュラン星、黒珍珠ランキング、地元のおすすめ",
+      mapLayerDesc: "Ebenenwechsel: Michelin-Sterne, Black Pearl Ranking, lokale Empfehlungen",
       moreCities: "Weitere Städte",
       nextCity: "Nächste Stadt",
       noHotels: "Keine Hotels gefunden",
@@ -30466,7 +30466,7 @@ export const translations: Record<Language, Translations> = {
       phoneIcon: "📞",
       population: "Einwohnerzahl",
       previousCity: "Vorherige Stadt",
-      priceLabel: "料金：",
+      priceLabel: "Preis:",
       proTipBooking: "Tipp: Buchen Sie Hotels 2-3 Wochen im Voraus für die besten Tarife.",
       proTipEsim1: "eSIM funktioniert am besten, wenn Ihr Telefon dies unterstützt (iPhone XS+ und die meisten Android-Flaggschiffe).",
       proTipEsim2: "Laden Sie eSIM-Apps herunter, bevor Sie nach China einreisen.",
@@ -30474,11 +30474,11 @@ export const translations: Record<Language, Translations> = {
       proTips: "Praktische Tipps",
       quickFacts: "Schnelle Fakten",
       quickFactsHeading: "Schnelle Fakten",
-      recommendedPaymentApps: "おすすめ決済アプリ",
-      recommendedTransportApps: "おすすめ交通アプリ",
+      recommendedPaymentApps: "Empfohlene Zahlungs-Apps",
+      recommendedTransportApps: "Empfohlene Transport-Apps",
       region: "Region",
       restaurantCount: "{count} Restaurants",
-      restaurantsLabel: "レストラン",
+      restaurantsLabel: "Restaurants",
       sectionApps: "Unverzichtbare Apps",
       sectionAttractions: "Top-Sehenswürdigkeiten",
       sectionConnectivity: "SIM & eSIM",
@@ -30488,11 +30488,11 @@ export const translations: Record<Language, Translations> = {
       sectionHotels: "Übernachtungsmöglichkeiten",
       sectionOverview: "Überblick",
       sectionPayment: "Zahlung & Geld",
-      sectionScenic: "景勝地",
+      sectionScenic: "Sehenswürdigkeiten",
       sectionTransport: "Unterwegs",
       sectionVisa: "Visum & Einreise",
       sosTip: "Speichern Sie diese Nummern, bevor Sie ankommen – der Mobilfunkempfang kann in abgelegenen Gebieten eingeschränkt sein.",
-      summer: "夏：",
+      summer: "Sommer:",
       switchToEnglishMode: "Schalten Sie in den Englisch-Modus in den App-Einstellungen, wenn Sie die chinesische Benutzeroberfläche sehen. Sowohl Alipay als auch WeChat Pay unterstützen ausländische Kreditkarten.",
       tabApps: "Apps",
       tabAttractions: "Sehenswürdigkeiten",
@@ -30506,21 +30506,21 @@ export const translations: Record<Language, Translations> = {
       tabTransport: "Transport",
       timezone: "Zeitzone",
       tipCount: "{count} Tipps",
-      tipsLabel: "ポイント：",
+      tipsLabel: "Punkte:",
       topHighlightsHeading: "Highlights",
       transportSubtitle: "Unterwegs in {city}",
       travelTo: "Reise nach {city}",
       viewAllAttractions: "View all attractions",
       viewAllHotels: "Alle {totalHotelCount} Hotels ansehen",
       viewAllRestaurants: "View all restaurants",
-      visa: "ビザ",
+      visa: "Visum",
       visaSubtitle: "Visa-free policies and entry requirements.",
       visit: "Visit",
       weatherForecast: "Weather forecast",
-      weatherNA: "天気データなし",
+      weatherNA: "Keine Wetterdaten",
       weatherNotAvailable: "Weather not available",
       weatherNow: "Now",
-      winter: "冬：",
+      winter: "Winter:",
       youMayAlsoLike: "You may also like"
     },
     common: {
@@ -30557,54 +30557,54 @@ export const translations: Record<Language, Translations> = {
       viewMore: "View more"
     },
     communicationGuide: {
-      tabApps: "必須アプリ",
-      tabSetup: "セットアップガイド",
-      tabSim: "SIM/eSIMオプション",
-      tabVpn: "VPN設定"
+      tabApps: "Unverzichtbare Apps",
+      tabSetup: "Einrichtungsanleitung",
+      tabSim: "SIM/eSIM-Optionen",
+      tabVpn: "VPN-Einstellungen"
     },
     culturalWarnings: {
-      all: "すべて",
-      catColors: "色",
-      catDining: "食事",
-      catGiftEtiquette: "贈答マナー",
-      catGifts: "贈り物",
-      catNumbers: "数字",
-      catPhoto: "写真",
-      catPhotography: "写真撮影",
-      catSocial: "社交",
-      critical: "重要",
-      general: "一般",
-      note: "注意",
-      warning: "警告"
+      all: "Alle",
+      catColors: "Farbe",
+      catDining: "Essen",
+      catGiftEtiquette: "Geschenk-Etikette",
+      catGifts: "Geschenke",
+      catNumbers: "Zahlen",
+      catPhoto: "Fotos",
+      catPhotography: "Fotografieren",
+      catSocial: "Soziales",
+      critical: "Wichtig",
+      general: "Allgemein",
+      note: "Hinweis",
+      warning: "Warnung"
     },
     departureGuide: {
-      tabAirport: "空港情報",
-      tabChecklist: "チェックリスト",
-      tabSteps: "出国手順",
-      tabTax: "税還付"
+      tabAirport: "Flughafeninformationen",
+      tabChecklist: "Checkliste",
+      tabSteps: "Ausreiseverfahren",
+      tabTax: "Steuerrückerstattung"
     },
     diningGuide: {
-      allergenCard: "アレルゲン翻訳カード",
-      budgetHeading: "予算ガイド（1人あたり）",
-      casual: "カジュアルレストラン",
-      categoriesHeading: "人気料理カテゴリー",
-      chinesePhrases: "中国語フレーズ：",
-      commonAllergies: "よくあるアレルゲン：",
-      dietary: "食事制限",
-      diningEtiquette: "食事マナー",
-      faqsHeading: "よくある質問",
-      importantAllergyInfo: "重要なアレルギー情報",
-      orderingPhrases: "注文フレーズ",
-      popularDishesHeading: "人気料理：",
-      proTips: "プロのヒント：",
-      safeOptions: "安心な選択肢：",
-      streetFood: "屋台料理",
-      tabAllergies: "アレルギー",
-      tabBudget: "予算ガイド",
-      tabCategories: "カテゴリー",
-      tabDishes: "人気料理",
-      tabEtiquette: "マナー",
-      tabPhrases: "フレーズ集"
+      allergenCard: "Allergen-Übersetzungskarte",
+      budgetHeading: "Budget-Leitfaden (pro Person)",
+      casual: "Ungezwungene Restaurants",
+      categoriesHeading: "Beliebte Gerichtskategorien",
+      chinesePhrases: "Chinesische Sätze:",
+      commonAllergies: "Häufige Allergene:",
+      dietary: "Ernährungseinschränkungen",
+      diningEtiquette: "Tischmanieren",
+      faqsHeading: "Häufig gestellte Fragen",
+      importantAllergyInfo: "Wichtige Allergieinformationen",
+      orderingPhrases: "Bestellphrasen",
+      popularDishesHeading: "Beliebte Gerichte:",
+      proTips: "Profitipps:",
+      safeOptions: "Sichere Optionen:",
+      streetFood: "Straßenimbisse",
+      tabAllergies: "Allergien",
+      tabBudget: "Budget-Leitfaden",
+      tabCategories: "Kategorien",
+      tabDishes: "Beliebte Gerichte",
+      tabEtiquette: "Etikette",
+      tabPhrases: "Phrasensammlung"
     },
     emergency: {
       address: "Address",
@@ -30629,15 +30629,15 @@ export const translations: Record<Language, Translations> = {
       viewAllContacts: "View all contacts"
     },
     emergencyGuide: {
-      bannerSubtitle: "この番号を保存してください — 警察：110、救急：120、消防：119",
-      bannerTitle: "中国の緊急番号",
-      labelAmbulance: "救急",
-      labelFire: "消防",
-      labelPolice: "警察",
-      tabContacts: "緊急連絡先",
-      tabEmbassy: "大使館情報",
-      tabOverview: "緊急時の種類",
-      tabPhrases: "便利フレーズ"
+      bannerSubtitle: "Speichern Sie diese Nummern — Polizei: 110, Notarzt: 120, Feuerwehr: 119",
+      bannerTitle: "Notrufnummern in China",
+      labelAmbulance: "Notarzt",
+      labelFire: "Feuerwehr",
+      labelPolice: "Polizei",
+      tabContacts: "Notfallkontakte",
+      tabEmbassy: "Botschaftsinformationen",
+      tabOverview: "Arten von Notfällen",
+      tabPhrases: "Nützliche Sätze"
     },
     emergencyPage: {
       ambulance: "Krankenwagen",
@@ -30751,7 +30751,7 @@ export const translations: Record<Language, Translations> = {
       unauthorized: "Nicht autorisiert"
     },
     etiquette: {
-      placeholder: "近日公開"
+      placeholder: "Bald verfügbar"
     },
     features: {
       accommodation: "Unterkunft",
@@ -30978,7 +30978,7 @@ export const translations: Record<Language, Translations> = {
     },
     hard: {
       accommodation: {
-        guide: "宿泊施設ガイド"
+        guide: "Unterkunftsleitfaden"
       },
       after: {
         landing: {
@@ -30993,7 +30993,7 @@ export const translations: Record<Language, Translations> = {
                           can: {
                             help: {
                               with: {
-                                directio: "着陸後、標識に従って地下鉄またはタクシーに乗ります。空港スタッフが道順をお手伝いします。"
+                                directio: "Nach der Landung folgen Sie den Schildern zur U-Bahn oder zum Taxi. Flughafenpersonal hilft Ihnen bei der Orientierung."
                               }
                             }
                           }
@@ -31009,9 +31009,9 @@ export const translations: Record<Language, Translations> = {
       },
       ai: {
         requests: {
-          month: "AIリクエスト/月",
+          month: "KI-Anfragen/Monat",
           this: {
-            month: "今月のAIリクエスト"
+            month: "KI-Anfragen diesen Monat"
           }
         },
         responses: {
@@ -31021,7 +31021,7 @@ export const translations: Record<Language, Translations> = {
                 only: {
                   always: {
                     verify: {
-                      locally: "AIの応答は参考用です。常に現地で確認してください。"
+                      locally: "KI-Antworten dienen nur zur Referenz. Bitte immer vor Ort überprüfen."
                     }
                   }
                 }
@@ -31033,7 +31033,7 @@ export const translations: Record<Language, Translations> = {
       aichat: {
         error: {
           boundary: {
-            caught: "AIチャットエラー境界でキャッチされました："
+            caught: "KI-Chat-Fehler an Grenze abgefangen:"
           }
         }
       },
@@ -31046,7 +31046,7 @@ export const translations: Record<Language, Translations> = {
                   inter: {
                     city: {
                       transport: {
-                        options: "空港到着、メトロ、バス、タクシー、および都市間交通のオプション"
+                        options: "Flughafenankunft, U-Bahn, Bus, Taxi und Optionen für den Fernverkehr"
                       }
                     }
                   }
@@ -31061,7 +31061,7 @@ export const translations: Record<Language, Translations> = {
               connect: {
                 before: {
                   buying: {
-                    sim: "空港のWi-Fiは通常利用可能です - SIMカードを購入する前に接続してください"
+                    sim: "Flughafen-WLAN ist normalerweise verfügbar – verbinden Sie sich, bevor Sie eine SIM-Karte kaufen"
                   }
                 }
               }
@@ -31078,7 +31078,7 @@ export const translations: Record<Language, Translations> = {
                   refund: {
                     procedures: {
                       in: {
-                        china: "中国におけるAlipay、WeChat Pay、現金および税金還付の手続き"
+                        china: "Alipay, WeChat Pay, Bargeld und Steuerrückerstattung in China"
                       }
                     }
                   }
@@ -31090,20 +31090,20 @@ export const translations: Record<Language, Translations> = {
       },
       allergen: {
         translation: {
-          card: "アレルゲン翻訳カード"
+          card: "Allergen-Übersetzungskarte"
         }
       },
       amap: {
         api: {
           not: {
-            loaded: "Amap APIが読み込まれていません"
+            loaded: "Amap-API nicht geladen"
           }
         }
       },
       an: {
         unexpected: {
           error: {
-            occurred: "予期しないエラーが発生しました"
+            occurred: "Unerwarteter Fehler aufgetreten"
           }
         },
         unknown: {
@@ -31112,7 +31112,7 @@ export const translations: Record<Language, Translations> = {
               while: {
                 getting: {
                   your: {
-                    location: "位置情報を取得中に不明なエラーが発生しました。"
+                    location: "Unbekannter Fehler beim Abrufen des Standorts."
                   }
                 }
               }
@@ -31128,7 +31128,7 @@ export const translations: Record<Language, Translations> = {
                 scenic: {
                   spots: {
                     in: {
-                      china: "中国の観光地を見つけて案内するためのアプリ"
+                      china: "Apps zum Finden und Navigieren zu chinesischen Sehenswürdigkeiten"
                     }
                   }
                 }
@@ -31140,7 +31140,7 @@ export const translations: Record<Language, Translations> = {
       arrival: {
         to: {
           inter: {
-            city: "到着から都市間移動まで"
+            city: "Von der Ankunft bis zum Fernverkehr"
           }
         }
       },
@@ -31148,7 +31148,7 @@ export const translations: Record<Language, Translations> = {
         about: {
           your: {
             china: {
-              trip: "あなたの中国旅行について質問する..."
+              trip: "Stellen Sie eine Frage zu Ihrer China-Reise..."
             }
           }
         }
@@ -31166,7 +31166,7 @@ export const translations: Record<Language, Translations> = {
                 have: {
                   best: {
                     exchange: {
-                      rates: "空港や銀行のATMが最も良い為替レートです"
+                      rates: "Geldautomaten am Flughafen oder in Banken bieten die besten Wechselkurse"
                     }
                   }
                 }
@@ -31176,13 +31176,13 @@ export const translations: Record<Language, Translations> = {
         }
       },
       authentication: {
-        failed: "認証に失敗しました"
+        failed: "Authentifizierung fehlgeschlagen"
       },
       best: {
         atms: {
           for: {
             international: {
-              cards: "国際カードに最適なベストなATM"
+              cards: "Beste Geldautomaten für internationale Karten"
             }
           }
         },
@@ -31194,7 +31194,7 @@ export const translations: Record<Language, Translations> = {
                   that: {
                     tourists: {
                       usually: {
-                        miss: "観光客が通常見逃す成都のベストローカルストリートフード"
+                        miss: "Beste lokale Straßenimbisse in Chengdu, die Touristen normalerweise übersehen"
                       }
                     }
                   }
@@ -31217,7 +31217,7 @@ export const translations: Record<Language, Translations> = {
                               best: {
                                 for: {
                                   first: {
-                                    timers: "中国の長城を訪れるベストな方法は？初心者に最適なセクションは？"
+                                    timers: "Wie besucht man am besten die Chinesische Mauer? Welche Abschnitte sind für Anfänger am besten?"
                                   }
                                 }
                               }
@@ -31236,7 +31236,7 @@ export const translations: Record<Language, Translations> = {
       book: {
         high: {
           speed: {
-            rail: "高速鉄道を予約する"
+            rail: "Hochgeschwindigkeitszug buchen"
           }
         },
         professional: {
@@ -31248,7 +31248,7 @@ export const translations: Record<Language, Translations> = {
                     business: {
                       visits: {
                         in: {
-                          china: "中国のビジネス訪問のためにプロの通訳者と翻訳者を予約する。逐次通訳、同時通訳、公文書翻訳。"
+                          china: "Buchen Sie professionelle Dolmetscher und Übersetzer für Geschäftsbesuche in China. Konsekutivdolmetschen, Simultandolmetschen, Übersetzung offizieller Dokumente."
                         }
                       }
                     }
@@ -31266,7 +31266,7 @@ export const translations: Record<Language, Translations> = {
                   meetings: {
                     conferences: {
                       and: {
-                        negotiatio: "中国での会議、カンファレンス、交渉のために、審査を受けた通訳者と翻訳者を予約しましょう。"
+                        negotiatio: "Buchen Sie geprüfte Dolmetscher und Übersetzer für Meetings, Konferenzen und Verhandlungen in China."
                       }
                     }
                   }
@@ -31278,30 +31278,30 @@ export const translations: Record<Language, Translations> = {
       },
       business: {
         etiquette: {
-          essentials: "ビジネスエチケットの基本",
+          essentials: "Grundlagen der Geschäftsetikette",
           tips: {
             for: {
               meeting: {
                 chinese: {
-                  partners: "中国のビジネスパートナーとのミーティングのためのビジネスエチケットのヒント"
+                  partners: "Tipps zur Geschäftsetikette für Treffen mit chinesischen Geschäftspartnern"
                 }
               }
             }
           }
         },
         express: {
-          chinaconnect: "ビジネスエクスプレス - ChinaConnect"
+          chinaconnect: "Business Express - ChinaConnect"
         },
         invitation: {
           letter: {
             templates: {
-              chinaconnect: "ビジネス招待状テンプレート - ChinaConnect"
+              chinaconnect: "Vorlage für Geschäftseinladungsschreiben - ChinaConnect"
             }
           }
         }
       },
       calculating: {
-        routes: "ルートを計算中..."
+        routes: "Route wird berechnet..."
       },
       can: {
         i: {
@@ -31310,7 +31310,7 @@ export const translations: Record<Language, Translations> = {
               china: {
                 visa: {
                   on: {
-                    arrival: "中国ビザは到着時に取得できますか？"
+                    arrival: "Kann ich ein China-Visum bei der Ankunft erhalten?"
                   }
                 }
               },
@@ -31319,7 +31319,7 @@ export const translations: Record<Language, Translations> = {
                   on: {
                     purchases: {
                       in: {
-                        china: "中国での購入で税金還付を受けられますか？"
+                        china: "Kann ich für Einkäufe in China eine Steuerrückerstattung erhalten?"
                       }
                     }
                   }
@@ -31337,7 +31337,7 @@ export const translations: Record<Language, Translations> = {
                         apps: {
                           do: {
                             i: {
-                              need: "中国でApple Payは使えますか？どの支払いアプリが必要ですか？"
+                              need: "Kann ich Apple Pay in China verwenden? Welche Zahlungs-Apps benötige ich?"
                             }
                           }
                         }
@@ -31357,7 +31357,7 @@ export const translations: Record<Language, Translations> = {
               about: {
                 international: {
                   withdrawal: {
-                    fees: "国際引き出し手数料について銀行に確認してください"
+                    fees: "Fragen Sie Ihre Bank nach internationalen Abhebungsgebühren"
                   }
                 }
               }
@@ -31369,7 +31369,7 @@ export const translations: Record<Language, Translations> = {
             to: {
               confirm: {
                 your: {
-                  account: "アカウントを確認するためにメールをチェックしてください。"
+                  account: "Überprüfen Sie Ihre E-Mails, um Ihr Konto zu bestätigen."
                 }
               }
             }
@@ -31378,19 +31378,19 @@ export const translations: Record<Language, Translations> = {
       },
       checking: {
         visa: {
-          requirements: "ビザの必要条件を調べています..."
+          requirements: "Visumanforderungen werden geprüft..."
         },
-        weather: "天気を調べています..."
+        weather: "Wetter wird geprüft..."
       },
       china: {
         business: {
-          etiquette: "中国のビジネスエチケット",
-          guide: "中国ビジネスガイド"
+          etiquette: "Chinesische Geschäftsetikette",
+          guide: "China-Geschäftsleitfaden"
         },
         company: {
           registration: {
             guide: {
-              chinaconnect: "中国会社登録ガイド - ChinaConnect"
+              chinaconnect: "Leitfaden zur Firmenregistrierung in China - ChinaConnect"
             }
           }
         },
@@ -31406,7 +31406,7 @@ export const translations: Record<Language, Translations> = {
                           you: {
                             must: {
                               apply: {
-                                befo: "中国はほとんどの国籍に対して到着時のビザを提供していません。旅行前に中国の大使館、総領事館、または認可されたビザセンターで申請する必要があります。"
+                                befo: "China bietet für die meisten Nationalitäten kein Visum bei der Ankunft an. Sie müssen vor der Reise bei der chinesischen Botschaft, dem Konsulat oder einem autorisierten Visumzentrum beantragen."
                               }
                             }
                           }
@@ -31421,50 +31421,50 @@ export const translations: Record<Language, Translations> = {
         },
         expo: {
           calendar: {
-            chinaconnect: "中国展示会カレンダー - ChinaConnect"
+            chinaconnect: "Messe-Kalender China - ChinaConnect"
           }
         },
         interpreter: {
-          booking: "中国通訳者予約"
+          booking: "Dolmetscher in China buchen"
         },
         invitation: {
-          letter: "中国招待状"
+          letter: "Einladungsschreiben China"
         }
       },
       chinese: {
         business: {
           etiquette: {
             guide: {
-              chinaconnect: "中国ビジネスエチケットガイド - ChinaConnect"
+              chinaconnect: "Leitfaden zur Geschäftsetikette in China - ChinaConnect"
             }
           }
         },
-        restaurants: "中華レストラン"
+        restaurants: "Chinesische Restaurants"
       },
       city: {
         distance: {
           travel: {
-            time: "都市間の距離と移動時間"
+            time: "Entfernungen und Reisezeiten zwischen Städten"
           }
         }
       },
       close: {
         emergency: {
-          menu: "緊急メニューを閉じる"
+          menu: "Notfallmenü schließen"
         }
       },
       collect: {
         your: {
-          passport: "パスポートを受け取る"
+          passport: "Reisepass erhalten"
         }
       },
       communication: {
-        guide: "コミュニケーションガイド",
-        setup: "コミュニケーション設定"
+        guide: "Kommunikationsleitfaden",
+        setup: "Kommunikationseinstellungen"
       },
       company: {
         registration: {
-          guide: "会社登録ガイド"
+          guide: "Leitfaden zur Firmenregistrierung"
         }
       },
       complete: {
@@ -31478,7 +31478,7 @@ export const translations: Record<Language, Translations> = {
                       in: {
                         china: {
                           including: {
-                            canton: "中国で開催される主要な見本市や展示会（広州交易会、自動車ショー、産業イベントを含む）の完全なカレンダー。主要イベントに合わせて出張を計画してください。"
+                            canton: "Vollständiger Kalender der wichtigsten Messen und Ausstellungen in China (einschließlich Canton Fair, Automessen, Industrieveranstaltungen). Planen Sie Geschäftsreisen rund um wichtige Ereignisse."
                           }
                         }
                       }
@@ -31489,10 +31489,10 @@ export const translations: Record<Language, Translations> = {
             }
           }
         },
-        registration: "登録を完了する",
+        registration: "Registrierung abschließen",
         the: {
           application: {
-            form: "申請フォームを記入する"
+            form: "Antragsformular ausfüllen"
           },
           foreign: {
             passport: {
@@ -31520,13 +31520,13 @@ export const translations: Record<Language, Translations> = {
         }
       },
       consular: {
-        assistance: "領事サポート"
+        assistance: "Konsularische Unterstützung"
       },
       conversation: {
-        history: "会話履歴"
+        history: "Gesprächsverlauf"
       },
       current: {
-        subscription: "現在のサブスクリプション"
+        subscription: "Aktuelles Abonnement"
       },
       daily: {
         details: {
@@ -31534,7 +31534,7 @@ export const translations: Record<Language, Translations> = {
             appear: {
               after: {
                 full: {
-                  planning: "詳細な日程は完全な計画後に表示されます"
+                  planning: "Detaillierte Reiseroute wird nach vollständiger Planung angezeigt"
                 }
               }
             }
@@ -31543,23 +31543,23 @@ export const translations: Record<Language, Translations> = {
       },
       delete: {
         this: {
-          conversation: "この会話を削除しますか？"
+          conversation: "Diesen Chat löschen?"
         }
       },
       detailed: {
         feature: {
-          comparison: "詳細な機能比較"
+          comparison: "Detaillierter Funktionsvergleich"
         }
       },
       determine: {
         your: {
           visa: {
-            type: "ビザの種類を確認する"
+            type: "Visumtyp prüfen"
           }
         }
       },
       dietary: {
-        restrictions: "食事制限"
+        restrictions: "Ernährungseinschränkungen"
       },
       do: {
         i: {
@@ -31570,7 +31570,7 @@ export const translations: Record<Language, Translations> = {
                   account: {
                     for: {
                       mobile: {
-                        payments: "モバイル決済に中国の銀行口座は必要ですか？"
+                        payments: "Benötige ich ein chinesisches Bankkonto für mobiles Bezahlen?"
                       }
                     }
                   }
@@ -31583,7 +31583,7 @@ export const translations: Record<Language, Translations> = {
                   for: {
                     a: {
                       china: {
-                        visa: "中国ビザに招待状は必要ですか？"
+                        visa: "Benötige ich ein Einladungsschreiben für ein China-Visum?"
                       }
                     }
                   }
@@ -31594,7 +31594,7 @@ export const translations: Record<Language, Translations> = {
         },
         you: {
           speak: {
-            english: "英語は話せますか？"
+            english: "Sprechen Sie Englisch?"
           }
         }
       },
@@ -31604,7 +31604,7 @@ export const translations: Record<Language, Translations> = {
             for: {
               this: {
                 city: {
-                  again: "この都市では再度表示しない"
+                  again: "In dieser Stadt nicht mehr anzeigen"
                 }
               }
             }
@@ -31615,7 +31615,7 @@ export const translations: Record<Language, Translations> = {
         alipay: {
           or: {
             wechat: {
-              pay: "AlipayまたはWeChat Payをダウンロードする"
+              pay: "Alipay oder WeChat Pay herunterladen"
             }
           }
         },
@@ -31627,7 +31627,7 @@ export const translations: Record<Language, Translations> = {
                   before: {
                     arriving: {
                       in: {
-                        china: "これらのアプリを中国に到着する前にダウンロードして設定してください"
+                        china: "Laden Sie diese Apps vor Ihrer Ankunft in China herunter und richten Sie sie ein"
                       }
                     }
                   }
@@ -31643,7 +31643,7 @@ export const translations: Record<Language, Translations> = {
                 is: {
                   blocked: {
                     in: {
-                      china: "到着前にダウンロード - Google Playは中国でブロックされています"
+                      china: "Vor der Ankunft herunterladen – Google Play ist in China blockiert"
                     }
                   }
                 }
@@ -31661,7 +31661,7 @@ export const translations: Record<Language, Translations> = {
                       for: {
                         china: {
                           visa: {
-                            appli: "中国ビザ申請およびビジネス訪問用のすぐに使えるバイリンガル招待状テンプレートをダウンロードしてください。必要事項を記入してすぐにダウンロードできます。"
+                            appli: "Laden Sie sofort einsatzbereite zweisprachige Einladungsschreiben-Vorlagen für China-Visumanträge und Geschäftsbesuche herunter. Ausfüllen und sofort herunterladen."
                           }
                         }
                       }
@@ -31670,7 +31670,7 @@ export const translations: Record<Language, Translations> = {
                   letters: {
                     for: {
                       visa: {
-                        applications: "ビザ申請用のすぐに使えるバイリンガル招待状をダウンロードする"
+                        applications: "Sofort einsatzbereite zweisprachige Einladungsschreiben für Visumanträge herunterladen"
                       }
                     }
                   }
@@ -31684,7 +31684,7 @@ export const translations: Record<Language, Translations> = {
             before: {
               arriving: {
                 in: {
-                  china: "これらのアプリを中国に到着する前にダウンロードする"
+                  china: "Diese Apps vor Ihrer Ankunft in China herunterladen"
                 }
               }
             }
@@ -31701,15 +31701,15 @@ export const translations: Record<Language, Translations> = {
         }
       },
       emergency: {
-        assistance: "緊急時のサポート",
+        assistance: "Notfallunterstützung",
         numbers: {
           in: {
-            china: "中国の緊急連絡先"
+            china: "Notrufnummern in China"
           }
         },
-        procedures: "緊急時の手順",
+        procedures: "Notfallverfahren",
         travel: {
-          documents: "緊急時の旅行書類"
+          documents: "Reisedokumente für Notfälle"
         }
       },
       enjoy: {
@@ -31719,7 +31719,7 @@ export const translations: Record<Language, Translations> = {
               support: {
                 for: {
                   team: {
-                    plans: "すべての機能をお楽しみください。チームプランについてはサポートにお問い合わせください。"
+                    plans: "Genießen Sie alle Funktionen. Für Teampläne kontaktieren Sie den Support."
                   }
                 }
               }
@@ -31735,13 +31735,13 @@ export const translations: Record<Language, Translations> = {
                 a: {
                   password: {
                     reset: {
-                      link: "パスワードリセットリンクを受信するにはメールアドレスを入力してください。"
+                      link: "Geben Sie Ihre E-Mail-Adresse ein, um den Link zum Zurücksetzen des Passworts zu erhalten."
                     }
                   },
                   passwordless: {
                     sign: {
                       in: {
-                        link: "パスワードレスサインインリンクを受信するにはメールアドレスを入力してください。"
+                        link: "Geben Sie Ihre E-Mail-Adresse ein, um den Link für die passwortlose Anmeldung zu erhalten."
                       }
                     }
                   }
@@ -31756,7 +31756,7 @@ export const translations: Record<Language, Translations> = {
           for: {
             getting: {
               around: {
-                china: "中国での移動に必要なアプリ"
+                china: "Apps, die Sie für die Fortbewegung in China benötigen"
               }
             }
           },
@@ -31765,7 +31765,7 @@ export const translations: Record<Language, Translations> = {
               interface: {
                 for: {
                   navigating: {
-                    china: "中国での移動に便利な英語インターフェース付きアプリ"
+                    china: "Apps mit englischer Oberfläche für die Fortbewegung in China"
                   }
                 }
               }
@@ -31775,46 +31775,46 @@ export const translations: Record<Language, Translations> = {
         messaging: {
           and: {
             connectivity: {
-              apps: "必須のメッセージングおよび接続アプリ"
+              apps: "Unverzichtbare Messaging- und Konnektivitäts-Apps"
             }
           }
         }
       },
       expo: {
         event: {
-          calendar: "展示会＆イベントカレンダー"
+          calendar: "Messe- und Veranstaltungskalender"
         }
       },
       failed: {
         to: {
           fetch: {
             city: {
-              scores: "都市のスコアを取得できませんでした："
+              scores: "Stadtbewertung konnte nicht abgerufen werden:"
             },
-            profile: "プロフィールの取得に失敗しました："
+            profile: "Profil konnte nicht abgerufen werden:"
           },
           load: {
             amap: {
-              api: "Amap APIの読み込みに失敗しました"
+              api: "Amap-API konnte nicht geladen werden"
             },
-            weather: "天気の読み込みに失敗しました"
+            weather: "Wetter konnte nicht geladen werden"
           },
           save: {
-            route: "ルートの保存に失敗しました："
+            route: "Route konnte nicht gespeichert werden:"
           },
           search: {
             nearby: {
-              places: "近くの場所の検索に失敗しました："
+              places: "Suche nach Orten in der Nähe fehlgeschlagen:"
             }
           },
           update: {
-            profile: "プロフィールの更新に失敗しました："
+            profile: "Profil konnte nicht aktualisiert werden:"
           }
         }
       },
       fermented: {
         soybean: {
-          milk: "発酵豆乳"
+          milk: "Fermentierte Sojamilch"
         }
       },
       fill: {
@@ -31830,7 +31830,7 @@ export const translations: Record<Language, Translations> = {
                           hotels: {
                             use: {
                               digital: {
-                                regist: "チェックイン時に一時滞在届を記入してください。一部のホテルではデジタル登録を使用しています。"
+                                regist: "Füllen Sie beim Check-in das Anmeldeformular für vorübergehende Aufenthalte aus. Einige Hotels verwenden digitale Registrierung."
                               }
                             }
                           }
@@ -31845,14 +31845,14 @@ export const translations: Record<Language, Translations> = {
         }
       },
       finding: {
-        restaurants: "レストランを探しています...",
+        restaurants: "Restaurants werden gesucht...",
         transport: {
-          options: "交通手段を探しています..."
+          options: "Transportmöglichkeiten werden gesucht..."
         }
       },
       flight: {
         booking: {
-          tips: "フライト予約のヒント"
+          tips: "Tipps zur Flugbuchung"
         }
       },
       for: {
@@ -31872,7 +31872,7 @@ export const translations: Record<Language, Translations> = {
                         required: {
                           but: {
                             strengthens: {
-                              yo: "観光ビザの場合、招待状は必ずしも必要ではありませんが、申請を強化します。ビジネスビザの場合は通常、中国企業からの招待状が必要です。"
+                              yo: "Für Touristenvisa ist ein Einladungsschreiben nicht unbedingt erforderlich, stärkt aber den Antrag. Für Geschäftsvisa ist in der Regel ein Einladungsschreiben eines chinesischen Unternehmens erforderlich."
                             }
                           }
                         }
@@ -31898,7 +31898,7 @@ export const translations: Record<Language, Translations> = {
                           but: {
                             with: {
                               limitations: {
-                                fo: "外国のクレジットカードはAlipayおよびWeChat Payで動作するようになりましたが、制限があります。すべての機能を利用するには中国の銀行口座が役立ちますが、必ずしも必要ではありません。"
+                                fo: "Ausländische Kreditkarten funktionieren jetzt mit Alipay und WeChat Pay, jedoch mit Einschränkungen. Ein chinesisches Bankkonto hilft für alle Funktionen, ist aber nicht unbedingt erforderlich."
                               }
                             }
                           }
@@ -31914,12 +31914,12 @@ export const translations: Record<Language, Translations> = {
       },
       frequently: {
         asked: {
-          questions: "よくある質問"
+          questions: "Häufig gestellte Fragen"
         }
       },
       gather: {
         required: {
-          documents: "必要な書類を準備する"
+          documents: "Erforderliche Dokumente vorbereiten"
         }
       },
       generate: {
@@ -31930,7 +31930,7 @@ export const translations: Record<Language, Translations> = {
                 chatting: {
                   with: {
                     the: {
-                      ai: "AIとチャットして最初に旅程を作成する"
+                      ai: "Chatten Sie mit KI, um zuerst eine Reiseroute zu erstellen"
                     }
                   }
                 }
@@ -31945,7 +31945,7 @@ export const translations: Record<Language, Translations> = {
             supported: {
               by: {
                 your: {
-                  browser: "お使いのブラウザはジオロケーションに対応していません"
+                  browser: "Ihr Browser unterstützt keine Geolokalisierung"
                 }
               }
             }
@@ -31954,7 +31954,7 @@ export const translations: Record<Language, Translations> = {
       },
       getting: {
         exchange: {
-          rates: "為替レートを取得しています..."
+          rates: "Wechselkurse werden abgerufen..."
         }
       },
       have: {
@@ -31968,7 +31968,7 @@ export const translations: Record<Language, Translations> = {
                       for: {
                         all: {
                           foreign: {
-                            gu: "パスポートを準備してください。ホテルではすべての外国人ゲストのパスポート登録が必要です。"
+                            gu: "Halten Sie Ihren Reisepass bereit. Hotels benötigen die Registrierung des Reisepasses aller ausländischen Gäste."
                           }
                         }
                       }
@@ -31982,10 +31982,10 @@ export const translations: Record<Language, Translations> = {
       },
       hear: {
         chinese: {
-          pronunciation: "中国語の発音を聞く"
+          pronunciation: "Chinesische Aussprache anhören"
         },
         english: {
-          pronunciation: "英語の発音を聞く"
+          pronunciation: "Englische Aussprache anhören"
         }
       },
       hotel: {
@@ -31997,7 +31997,7 @@ export const translations: Record<Language, Translations> = {
                   process: {
                     and: {
                       staying: {
-                        comfortably: "ホテルの種類、予約のヒント、チェックイン手続き、および快適に滞在する方法"
+                        comfortably: "Hoteltypen, Buchungstipps, Check-in-Verfahren und wie Sie angenehm übernachten"
                       }
                     }
                   }
@@ -32013,7 +32013,7 @@ export const translations: Record<Language, Translations> = {
             get: {
               to: {
                 the: {
-                  hospital: "病院にはどうやって行けばいいですか？"
+                  hospital: "Wie komme ich zum Krankenhaus?"
                 }
               }
             },
@@ -32025,7 +32025,7 @@ export const translations: Record<Language, Translations> = {
                       as: {
                         a: {
                           foreign: {
-                            tourist: "外国人観光客としてWeChat PayとAlipayを使用するにはどうすればよいですか？"
+                            tourist: "Wie verwende ich WeChat Pay und Alipay als ausländischer Tourist?"
                           }
                         }
                       }
@@ -32045,7 +32045,7 @@ export const translations: Record<Language, Translations> = {
                     a: {
                       china: {
                         tourist: {
-                          visa: "中国観光ビザの取得にはどのくらい時間がかかりますか？"
+                          visa: "Wie lange dauert es, ein China-Touristenvisum zu erhalten?"
                         }
                       }
                     }
@@ -32061,7 +32061,7 @@ export const translations: Record<Language, Translations> = {
               i: {
                 bring: {
                   to: {
-                    china: "中国にはどのくらいの現金を持っていくべきですか？"
+                    china: "Wie viel Bargeld sollte ich nach China mitnehmen?"
                   }
                 }
               }
@@ -32071,7 +32071,7 @@ export const translations: Record<Language, Translations> = {
             a: {
               china: {
                 visa: {
-                  cost: "中国ビザの費用はいくらですか？"
+                  cost: "Was kostet ein China-Visum?"
                 }
               }
             }
@@ -32083,7 +32083,7 @@ export const translations: Record<Language, Translations> = {
               a: {
                 china: {
                   tourist: {
-                    visa: "中国観光ビザの申請方法"
+                    visa: "So beantragen Sie ein China-Touristenvisum"
                   }
                 }
               }
@@ -32095,7 +32095,7 @@ export const translations: Record<Language, Translations> = {
                 into: {
                   hotels: {
                     in: {
-                      china: "中国のホテルの予約とチェックイン方法"
+                      china: "So buchen und checken Sie in China in Hotels ein"
                     }
                   }
                 }
@@ -32113,7 +32113,7 @@ export const translations: Record<Language, Translations> = {
                           china: {
                             as: {
                               a: {
-                                tourist: "中国で観光客としてSIMカードとインターネットアクセスを取得する方法"
+                                tourist: "So erhalten Sie als Tourist in China eine SIM-Karte und Internetzugang"
                               }
                             }
                           }
@@ -32128,7 +32128,7 @@ export const translations: Record<Language, Translations> = {
               china: {
                 as: {
                   a: {
-                    tourist: "観光客として中国を移動する方法"
+                    tourist: "So bewegen Sie sich als Tourist in China fort"
                   }
                 }
               },
@@ -32138,7 +32138,7 @@ export const translations: Record<Language, Translations> = {
                     metro: {
                       taxi: {
                         or: {
-                          bike: "中国の都市での移動方法：地下鉄、タクシー、それとも自転車？"
+                          bike: "Fortbewegung in chinesischen Städten: U-Bahn, Taxi oder Fahrrad?"
                         }
                       }
                     }
@@ -32152,7 +32152,7 @@ export const translations: Record<Language, Translations> = {
               china: {
                 as: {
                   a: {
-                    foreigner: "外国人として中国で支払いをする方法"
+                    foreigner: "So bezahlen Sie als Ausländer in China"
                   }
                 }
               }
@@ -32167,7 +32167,7 @@ export const translations: Record<Language, Translations> = {
                       by: {
                         high: {
                           speed: {
-                            rail: "上海から西安まで高速鉄道で旅行する方法"
+                            rail: "So reisen Sie mit dem Hochgeschwindigkeitszug von Shanghai nach Xi'an"
                           }
                         }
                       }
@@ -32189,7 +32189,7 @@ export const translations: Record<Language, Translations> = {
                     food: {
                       destinations: {
                         in: {
-                          china: "私はグルメです。中国の最高のグルメスポットを教えてください"
+                          china: "Ich bin ein Feinschmecker. Zeigen Sie mir die besten kulinarischen Orte in China"
                         }
                       }
                     }
@@ -32199,12 +32199,12 @@ export const translations: Record<Language, Translations> = {
             }
           },
           allergic: {
-            to: "私は...にアレルギーがあります"
+            to: "Ich bin allergisch gegen..."
           },
           sick: {
             i: {
               feel: {
-                unwell: "体調が悪い / 気分が優れません"
+                unwell: "Mir geht es nicht gut / Ich fühle mich unwohl"
               }
             }
           }
@@ -32233,7 +32233,7 @@ export const translations: Record<Language, Translations> = {
         },
         do: {
           not: {
-            understand: "理解できません"
+            understand: "Ich verstehe nicht"
           }
         },
         have: {
@@ -32249,7 +32249,7 @@ export const translations: Record<Language, Translations> = {
                             info: {
                               and: {
                                 transport: {
-                                  tip: "来週深圳でビジネスミーティングがあります。ビザの情報と交通のヒントが必要です"
+                                  tip: "Ich habe nächste Woche ein Geschäftstreffen in Shenzhen. Ich brauche Visuminformationen und Transporttipps"
                                 }
                               }
                             }
@@ -32261,18 +32261,18 @@ export const translations: Record<Language, Translations> = {
                 }
               }
             },
-            stomachache: "腹痛があります"
+            stomachache: "Ich habe Bauchschmerzen"
           },
           been: {
-            assaulted: "暴行を受けました"
+            assaulted: "Ich wurde angegriffen"
           }
         },
         need: {
           a: {
-            translator: "通訳が必要です"
+            translator: "Ich brauche einen Dolmetscher"
           },
           an: {
-            ambulance: "救急車を呼ぶ必要があります"
+            ambulance: "Ich muss einen Krankenwagen rufen"
           }
         },
         want: {
@@ -32289,12 +32289,12 @@ export const translations: Record<Language, Translations> = {
       },
       important: {
         allergy: {
-          information: "重要なアレルギー情報"
+          information: "Wichtige Allergieinformationen"
         }
       },
       invitation: {
         letter: {
-          templates: "招待状のテンプレート"
+          templates: "Vorlagen für Einladungsschreiben"
         }
       },
       is: {
@@ -32305,7 +32305,7 @@ export const translations: Record<Language, Translations> = {
                 mobile: {
                   payments: {
                     in: {
-                      china: "中国でモバイル決済を使用するのは安全ですか？"
+                      china: "Ist mobiles Bezahlen in China sicher?"
                     }
                   }
                 }
@@ -32323,7 +32323,7 @@ export const translations: Record<Language, Translations> = {
                   need: {
                     it: {
                       for: {
-                        emigration: "入国カードを安全に保管してください - 出国の際に必要になります"
+                        emigration: "Bewahren Sie Ihre Einreisekarte sicher auf – Sie benötigen sie bei der Ausreise"
                       }
                     }
                   }
@@ -32336,13 +32336,13 @@ export const translations: Record<Language, Translations> = {
           with: {
             tax: {
               refund: {
-                mark: "税金還付マーク付きの請求書を持っておいてください"
+                mark: "Bewahren Sie Quittungen mit Steuerrückerstattungsmarkierung auf"
               }
             }
           }
         },
         registration: {
-          slip: "登録証を保管してください"
+          slip: "Bewahren Sie die Registrierungsbescheinigung auf"
         },
         your: {
           hotel: {
@@ -32357,7 +32357,7 @@ export const translations: Record<Language, Translations> = {
                             checks: {
                               or: {
                                 other: {
-                                  hot: "ホテルの登録証を保管してください - 警察のチェックや他のホテル予約の際に必要になるかもしれません"
+                                  hot: "Bewahren Sie die Hotelregistrierungsbescheinigung auf – sie kann bei Polizeikontrollen oder anderen Hotelbuchungen erforderlich sein"
                                 }
                               }
                             }
@@ -32373,7 +32373,7 @@ export const translations: Record<Language, Translations> = {
         }
       },
       language: {
-        translation: "言語と翻訳"
+        translation: "Sprache und Übersetzung"
       },
       link: {
         a: {
@@ -32385,7 +32385,7 @@ export const translations: Record<Language, Translations> = {
                     card: {
                       to: {
                         enable: {
-                          payments: "Visa、Mastercard、または他の国際カードをリンクして支払いを有効にします"
+                          payments: "Verknüpfen Sie Visa, Mastercard oder andere internationale Karten, um Zahlungen zu ermöglichen"
                         }
                       }
                     }
@@ -32396,7 +32396,7 @@ export const translations: Record<Language, Translations> = {
           }
         },
         international: {
-          card: "国際カードのリンク"
+          card: "Internationale Karten verknüpfen"
         }
       },
       local: {
@@ -32409,7 +32409,7 @@ export const translations: Record<Language, Translations> = {
                     dining: {
                       etiquette: {
                         in: {
-                          china: "中国のローカル料理、オーダーする際のヒント、食品安全、および食事のマナー"
+                          china: "Lokale chinesische Küche, Tipps zum Bestellen, Lebensmittelsicherheit und Tischmanieren"
                         }
                       }
                     }
@@ -32424,7 +32424,7 @@ export const translations: Record<Language, Translations> = {
         information: {
           is: {
             currently: {
-              unavailable: "現在、位置情報が利用できません"
+              unavailable: "Standort derzeit nicht verfügbar"
             }
           }
         },
@@ -32437,7 +32437,7 @@ export const translations: Record<Language, Translations> = {
                     in: {
                       your: {
                         browser: {
-                          setting: "位置情報の許可が拒否されました。ブラウザの設定で位置情報アクセスを有効にしてください"
+                          setting: "Standortberechtigung verweigert. Bitte aktivieren Sie den Standortzugriff in Ihren Browsereinstellungen"
                         }
                       }
                     }
@@ -32452,7 +32452,7 @@ export const translations: Record<Language, Translations> = {
             out: {
               please: {
                 try: {
-                  again: "位置情報の要求がタイムアウトしました。もう一度お試しください"
+                  again: "Zeitüberschreitung der Standortanfrage. Bitte erneut versuchen"
                 }
               }
             }
@@ -32486,7 +32486,7 @@ export const translations: Record<Language, Translations> = {
                 scams: {
                   and: {
                     embassy: {
-                      contacts: "パスポート紛失、医療緊急事態、盗難、詐欺、および大使館の連絡先"
+                      contacts: "Verlorener Reisepass, medizinische Notfälle, Diebstahl, Betrug und Botschaftskontakte"
                     }
                   }
                 }
@@ -32554,14 +32554,14 @@ export const translations: Record<Language, Translations> = {
                 etiquette: {
                   and: {
                     meeting: {
-                      protocols: "中国のビジネス文化、接待マナー、会合プロトコルをマスターする"
+                      protocols: "Meistern Sie die chinesische Geschäftskultur, Bewirtungsetikette und Meeting-Protokolle"
                     }
                   },
                   gift: {
                     giving: {
                       customs: {
                         and: {
-                          meeting: "中国のビジネス文化、接待マナー、贈答習慣、会合プロトコルをマスターする。よくある間違いを避け、良好な関係を築く。"
+                          meeting: "Meistern Sie die chinesische Geschäftskultur, Bewirtungsetikette, Geschenkbräuche und Meeting-Protokolle. Vermeiden Sie häufige Fehler und bauen Sie gute Beziehungen auf."
                         }
                       }
                     }
@@ -32575,7 +32575,7 @@ export const translations: Record<Language, Translations> = {
                   card: {
                     exchange: {
                       dining: {
-                        meetin: "中国のビジネスエチケット（名刺交換、接待、会合、贈答を含む）をマスターする。外国人ビジネスプロフェッショナル向けの実践的な注意事項。"
+                        meetin: "Meistern Sie die chinesische Geschäftsetikette (einschließlich Visitenkarten, Bewirtung, Meetings und Geschenke). Praktische Hinweise für ausländische Geschäftsleute."
                       }
                     }
                   }
@@ -32587,7 +32587,7 @@ export const translations: Record<Language, Translations> = {
       },
       maximum: {
         level: {
-          reached: "最大レベルに達しました！"
+          reached: "Maximale Stufe erreicht!"
         }
       },
       medical: {
@@ -32602,7 +32602,7 @@ export const translations: Record<Language, Translations> = {
                         foreigners: {
                           a: {
                             good: {
-                              tra: "中国の医療治療は、特に外国人にとって高額になることがあります。安全な旅行には、医療保険付きの優れた旅行保険が不可欠です。"
+                              tra: "Medizinische Behandlungen in China können teuer sein, insbesondere für Ausländer. Eine gute Reiseversicherung mit medizinischer Abdeckung ist für sicheres Reisen unerlässlich."
                             }
                           }
                         }
@@ -32624,7 +32624,7 @@ export const translations: Record<Language, Translations> = {
         ai: {
           requests: {
             used: {
-              up: "月間AIリクエスト使用済み"
+              up: "Monatliche KI-Anfragen aufgebraucht"
             }
           }
         }
@@ -32636,24 +32636,24 @@ export const translations: Record<Language, Translations> = {
         __________________________________________________________________________________________________________________: "hard.no.__________________________________________________________________________________________________________________",
         items: {
           to: {
-            display: "表示するアイテムがありません"
+            display: "Keine Elemente zum Anzeigen"
           }
         },
         itinerary: {
           to: {
-            display: "表示する旅程がありません"
+            display: "Keine Reiserouten zum Anzeigen"
           }
         },
         route: {
           data: {
             to: {
-              save: "保存するルートデータがありません。"
+              save: "Keine Routendaten zum Speichern."
             }
           }
         },
         saved: {
           itineraries: {
-            yet: "まだ保存された旅程はありません"
+            yet: "Noch keine gespeicherten Reiserouten"
           }
         }
       },
@@ -32661,7 +32661,7 @@ export const translations: Record<Language, Translations> = {
         with: {
           soy: {
             bean: {
-              paste: "味噌入り麺"
+              paste: "Nudeln mit fermentierter Bohnenpaste"
             }
           }
         }
@@ -32669,27 +32669,27 @@ export const translations: Record<Language, Translations> = {
       oauth: {
         provider: {
           not: {
-            enabled: "OAuthプロバイダーが有効になっていません"
+            enabled: "OAuth-Anbieter nicht aktiviert"
           }
         }
       },
       open: {
         emergency: {
-          menu: "緊急メニューを開く"
+          menu: "Notfallmenü öffnen"
         }
       },
-      openinghoursspecification: "営業時間仕様",
+      openinghoursspecification: "Öffnungszeiten-Spezifikation",
       pan: {
         fried: {
           pork: {
-            buns: "焼き豚まん"
+            buns: "Gebratene Schweinefleischbrötchen"
           }
         }
       },
       passionate: {
         about: {
           exploring: {
-            china: "中国探索に情熱を注ぐ"
+            china: "Leidenschaftlich China entdecken"
           }
         }
       },
@@ -32704,7 +32704,7 @@ export const translations: Record<Language, Translations> = {
                       depending: {
                         on: {
                           hotel: {
-                            policy: "ホテルのポリシーにより、アリペイ、ウィーチャットペイ、またはクレジットカードでお支払いください。"
+                            policy: "Gemäß Hotelrichtlinien bezahlen Sie bitte mit Alipay, WeChat Pay oder Kreditkarte."
                           }
                         }
                       }
@@ -32719,19 +32719,19 @@ export const translations: Record<Language, Translations> = {
       payment: {
         apps: {
           you: {
-            need: "必要な支払いアプリ"
+            need: "Erforderliche Zahlungs-Apps"
           }
         }
       },
       pdf: {
         generation: {
-          failed: "PDF生成に失敗しました:"
+          failed: "PDF-Erstellung fehlgeschlagen:"
         }
       },
       pian: {
         er: {
           chuan: {
-            noodles: "ピエンアルチュアン麺"
+            noodles: "Pian'er Chuan Nudeln"
           }
         }
       },
@@ -32742,7 +32742,7 @@ export const translations: Record<Language, Translations> = {
               type: {
                 your: {
                   own: {
-                    below: "プロンプトを選択するか、下に独自のものを入力してください"
+                    below: "Wählen Sie einen Prompt oder geben Sie unten Ihren eigenen ein"
                   }
                 }
               }
@@ -32757,7 +32757,7 @@ export const translations: Record<Language, Translations> = {
         your: {
           scenic: {
             spot: {
-              visit: "観光地訪問を計画する"
+              visit: "Besuch von Sehenswürdigkeiten planen"
             }
           },
           trips: {
@@ -32769,7 +32769,7 @@ export const translations: Record<Language, Translations> = {
                       shows: {
                         and: {
                           industry: {
-                            events: "中国のトップトレードショーや業界イベントに合わせて旅行を計画する"
+                            events: "Planen Sie Reisen rund um Chinas Top-Messen und Branchenveranstaltungen"
                           }
                         }
                       }
@@ -32790,23 +32790,23 @@ export const translations: Record<Language, Translations> = {
         allow: {
           popups: {
             to: {
-              print: "印刷するためにポップアップを許可してください"
+              print: "Erlauben Sie Pop-ups zum Drucken"
             }
           }
         },
         call: {
           an: {
-            ambulance: "救急車を呼んでください"
+            ambulance: "Rufen Sie einen Krankenwagen"
           },
           my: {
-            family: "家族に電話してください"
+            family: "Rufen Sie Ihre Familie an"
           }
         },
         enter: {
           a: {
-            name: "名前を入力してください",
+            name: "Namen eingeben",
             phone: {
-              number: "電話番号を入力してください"
+              number: "Telefonnummer eingeben"
             }
           }
         },
@@ -32814,24 +32814,24 @@ export const translations: Record<Language, Translations> = {
           in: {
             to: {
               save: {
-                routes: "ルートを保存するにはサインインしてください"
+                routes: "Melden Sie sich an, um die Route zu speichern"
               }
             }
           }
         },
         speak: {
-          slowly: "ゆっくり話してください"
+          slowly: "Bitte sprechen Sie langsamer"
         }
       },
       popular: {
         food: {
-          categories: "人気の食品カテゴリー"
+          categories: "Beliebte Lebensmittelkategorien"
         }
       },
       powered: {
         by: {
           advanced: {
-            ai: "高度なAI搭載"
+            ai: "Fortschrittlich mit KI"
           }
         }
       },
@@ -32842,7 +32842,7 @@ export const translations: Record<Language, Translations> = {
               business: {
                 travelers: {
                   in: {
-                    china: "中国での外国人ビジネス旅行者向け実用ツール"
+                    china: "Praktische Tools für ausländische Geschäftsreisende in China"
                   }
                 }
               }
@@ -32852,11 +32852,11 @@ export const translations: Record<Language, Translations> = {
       },
       pre: {
         departure: {
-          preparation: "出発前の準備"
+          preparation: "Vorbereitung vor der Abreise"
         }
       },
       premium: {
-        customization: "プレミアムカスタマイズ"
+        customization: "Premium-Anpassung"
       },
       process: {
         at: {
@@ -32864,7 +32864,7 @@ export const translations: Record<Language, Translations> = {
             departure: {
               hall: {
                 before: {
-                  security: "保安検査前の空港出発ロビーの手続き"
+                  security: "Verfahren in der Abflughalle vor der Sicherheitskontrolle"
                 }
               }
             }
@@ -32877,7 +32877,7 @@ export const translations: Record<Language, Translations> = {
             translators: {
               for: {
                 business: {
-                  visits: "ビジネス訪問向けのプロフェッショナル通訳者と翻訳者"
+                  visits: "Professionelle Dolmetscher und Übersetzer für Geschäftsbesuche"
                 }
               }
             }
@@ -32897,7 +32897,7 @@ export const translations: Record<Language, Translations> = {
                           apps: {
                             and: {
                               ride: {
-                                hailing: "空港でSIMまたはeSIMを購入して、ナビゲーションアプリや配車サービスを利用する"
+                                hailing: "Kaufen Sie am Flughafen eine SIM- oder eSIM-Karte, um Navigations- und Mitfahr-Apps zu nutzen"
                               }
                             }
                           }
@@ -32918,7 +32918,7 @@ export const translations: Record<Language, Translations> = {
               hangzhou: {
                 near: {
                   west: {
-                    lake: "西湖近くの杭州にあるブティックホテルを推奨"
+                    lake: "Empfehlung für ein Boutique-Hotel in Hangzhou in der Nähe des Westsees"
                   }
                 }
               }
@@ -32928,21 +32928,21 @@ export const translations: Record<Language, Translations> = {
       },
       remove: {
         from: {
-          favorites: "お気に入りから削除"
+          favorites: "Aus Favoriten entfernen"
         }
       },
       reservation: {
-        required: "予約必須"
+        required: "Reservierung erforderlich"
       },
       route: {
         saved: {
-          successfully: "ルートが保存されました！"
+          successfully: "Route gespeichert!"
         }
       },
       sanlitun: {
         chaoyang: {
           district: {
-            beijing: "北京・朝陽区・三里屯"
+            beijing: "Beijing, Chaoyang, Sanlitun"
           }
         }
       },
@@ -32955,11 +32955,11 @@ export const translations: Record<Language, Translations> = {
           }
         },
         your: {
-          itineraries: "旅程を保存する"
+          itineraries: "Reiseroute speichern"
         }
       },
       saving: {
-        itinerary: "旅程を保存中..."
+        itinerary: "Reiseroute wird gespeichert..."
       },
       scan: {
         merchant: {
@@ -32973,7 +32973,7 @@ export const translations: Record<Language, Translations> = {
                         code: {
                           to: {
                             complete: {
-                              payments: "支払いを行うには、店のQRコードを読み取るか、自分のQRコードを表示してください"
+                              payments: "Scannen Sie den QR-Code des Geschäfts oder zeigen Sie Ihren eigenen QR-Code, um zu bezahlen"
                             }
                           }
                         }
@@ -32990,42 +32990,42 @@ export const translations: Record<Language, Translations> = {
         spots: {
           in: {
             china: {
-              chinaconnect: "中国の観光地 - ChinaConnect"
+              chinaconnect: "Sehenswürdigkeiten in China - ChinaConnect"
             }
           }
         }
       },
       search: {
-        attractions: "観光地を検索...",
+        attractions: "Sehenswürdigkeiten suchen...",
         country: {
-          name: "国名を入力..."
+          name: "Land eingeben..."
         }
       },
       searching: {
-        cities: "都市を検索中...",
+        cities: "Stadt wird gesucht...",
         for: {
-          attractions: "観光地を検索中..."
+          attractions: "Sehenswürdigkeiten werden gesucht..."
         },
-        hotels: "ホテルを検索中...",
+        hotels: "Hotels werden gesucht...",
         the: {
-          web: "ウェブを検索中..."
+          web: "Web wird durchsucht..."
         }
       },
       select: {
         a: {
           transport: {
-            mode: "交通手段を選択"
+            mode: "Transportmittel wählen"
           }
         },
         transport: {
-          mode: "交通手段を選択"
+          mode: "Transportmittel wählen"
         },
         your: {
           country: {
             to: {
               see: {
                 specific: {
-                  requirements: "国を選択して具体的な要件を確認する"
+                  requirements: "Land auswählen, um spezifische Anforderungen zu prüfen"
                 }
               }
             }
@@ -33039,7 +33039,7 @@ export const translations: Record<Language, Translations> = {
               password: {
                 for: {
                   authorizing: {
-                    transactions: "取引を承認するための安全な支払いパスワードを設定する"
+                    transactions: "Legen Sie ein sicheres Zahlungspasswort fest, um Transaktionen zu genehmigen"
                   }
                 }
               }
@@ -33047,13 +33047,13 @@ export const translations: Record<Language, Translations> = {
           }
         },
         payment: {
-          password: "支払いパスワードを設定"
+          password: "Zahlungspasswort festlegen"
         }
       },
       share: {
         your: {
           dining: {
-            experience: "食事体験をシェアする..."
+            experience: "Teilen Sie Ihr kulinarisches Erlebnis..."
           }
         }
       },
@@ -33067,7 +33067,7 @@ export const translations: Record<Language, Translations> = {
                     apps: {
                       for: {
                         staying: {
-                          connected: "SIM/eSIMオプション、VPN設定、接続を維持するための必須アプリ"
+                          connected: "SIM/eSIM-Optionen, VPN-Einstellungen, unverzichtbare Apps, um verbunden zu bleiben"
                         }
                       }
                     }
@@ -33080,12 +33080,12 @@ export const translations: Record<Language, Translations> = {
       },
       something: {
         went: {
-          wrong: "問題が発生しました"
+          wrong: "Ein Problem ist aufgetreten"
         }
       },
       sorry: {
         i: {
-          encountered: "すみません、遭遇した"
+          encountered: "Entschuldigung, wir sind auf"
         }
       },
       sos: {
@@ -33093,7 +33093,7 @@ export const translations: Record<Language, Translations> = {
           tap: {
             to: {
               call: {
-                police: "緊急SOS - タップして警察に電話"
+                police: "Notfall-SOS – Tippen, um die Polizei anzurufen"
               }
             }
           }
@@ -33109,7 +33109,7 @@ export const translations: Record<Language, Translations> = {
       stay: {
         connected: {
           in: {
-            china: "中国でつながる"
+            china: "In China verbunden bleiben"
           }
         }
       },
@@ -33126,7 +33126,7 @@ export const translations: Record<Language, Translations> = {
                           in: {
                             procedures: {
                               in: {
-                                chin: "中国への外国人旅行者向けホテル予約とチェックイン手続きのステップバイステップガイド"
+                                chin: "Schritt-für-Schritt-Anleitung für Hotelbuchung und Check-in für ausländische Reisende in China"
                               }
                             }
                           }
@@ -33155,7 +33155,7 @@ export const translations: Record<Language, Translations> = {
                           and: {
                             using: {
                               mobile: {
-                                pay: "中国でのモバイル決済、現金、カードの使用に関する国際旅行者向けステップバイステップガイド"
+                                pay: "Schritt-für-Schritt-Anleitung für internationale Reisende zur Nutzung von mobilem Bezahlen, Bargeld und Karten in China"
                               }
                             }
                           }
@@ -33170,7 +33170,7 @@ export const translations: Record<Language, Translations> = {
                       china: {
                         including: {
                           airport: {
-                            tran: "中国での交通機関の案内（空港送迎、地下鉄、高速鉄道、タクシー、都市間交通を含む）に関するステップバイステップガイド"
+                            tran: "Schritt-für-Schritt-Anleitung für Transport in China (einschließlich Flughafentransfer, U-Bahn, Hochgeschwindigkeitszug, Taxi, Fernverkehr)"
                           }
                         }
                       }
@@ -33182,7 +33182,7 @@ export const translations: Record<Language, Translations> = {
                     office: {
                       and: {
                         other: {
-                          entities: "WFOE、駐在員事務所およびその他のエンティティに関するステップバイステップガイド"
+                          entities: "Schritt-für-Schritt-Anleitung für WFOE, Repräsentanzen und andere Gesellschaftsformen"
                         }
                       }
                     }
@@ -33198,7 +33198,7 @@ export const translations: Record<Language, Translations> = {
                           or: {
                             other: {
                               entity: {
-                                i: "外国投資家向け中国でのWFOE、駐在員事務所またはその他のエンティティ登録に関するステップバイステップガイド。完全なタイムラインと必要書類リスト。"
+                                i: "Schritt-für-Schritt-Anleitung für ausländische Investoren zur Registrierung einer WFOE, Repräsentanz oder anderen Gesellschaftsform in China. Vollständiger Zeitplan und Dokumentenliste."
                               }
                             }
                           }
@@ -33217,7 +33217,7 @@ export const translations: Record<Language, Translations> = {
                               office: {
                                 in: {
                                   china: {
-                                    doc: "中国でのWFOE、合弁会社（JV）、駐在員事務所の設立に関するステップバイステップガイド。必要書類、タイムライン、コスト、および2026年の最新の規制更新。"
+                                    doc: "Schritt-für-Schritt-Anleitung zur Gründung einer WFOE, Joint Venture (JV) oder Repräsentanz in China. Erforderliche Dokumente, Zeitplan, Kosten und neueste regulatorische Aktualisierungen für 2026."
                                   }
                                 }
                               }
@@ -33236,7 +33236,7 @@ export const translations: Record<Language, Translations> = {
       stir: {
         fried: {
           beef: {
-            offal: "牛肉ホルモンの炒め物"
+            offal: "Gebratenes Rindfleisch mit scharfen Paprika"
           }
         }
       },
@@ -33249,7 +33249,7 @@ export const translations: Record<Language, Translations> = {
                   center: {
                     with: {
                       applicable: {
-                        fees: "該当する料金を添えて中国大使館/領事館/ビザセンターに提出"
+                        fees: "Bei der chinesischen Botschaft / dem Konsulat / dem Visumzentrum mit den entsprechenden Gebühren einreichen"
                       }
                     }
                   }
@@ -33261,18 +33261,18 @@ export const translations: Record<Language, Translations> = {
       },
       switch: {
         map: {
-          provider: "地図プロバイダーを切り替える"
+          provider: "Kartenanbieter wechseln"
         },
         to: {
           google: {
-            maps: "Googleマップに切り替える"
+            maps: "Zu Google Maps wechseln"
           }
         }
       },
       tap: {
         to: {
           hear: {
-            pronunciation: "タップして発音を聞く"
+            pronunciation: "Tippen, um die Aussprache zu hören"
           }
         }
       },
@@ -33285,7 +33285,7 @@ export const translations: Record<Language, Translations> = {
                   shopping: {
                     and: {
                       departure: {
-                        checklist: "税金還付、空港交通、免税ショッピング、出国チェックリスト"
+                        checklist: "Steuerrückerstattung, Flughafentransport, Duty-Free-Shopping, Ausreise-Checkliste"
                       }
                     }
                   }
@@ -33297,64 +33297,64 @@ export const translations: Record<Language, Translations> = {
       },
       taxi: {
         useful: {
-          phrases: "タクシー便利なフレーズ"
+          phrases: "Nützliche Taxi-Sätze"
         }
       },
       thank: {
         you: {
           for: {
             your: {
-              subscription: "ご購読ありがとうございます！"
+              subscription: "Vielen Dank für Ihr Abonnement!"
             }
           }
         }
       },
       toggle: {
         temperature: {
-          unit: "温度単位を切り替える"
+          unit: "Temperatureinheit umschalten"
         }
       },
       translation: {
-        interpreting: "翻訳・通訳",
-        services: "翻訳サービス"
+        interpreting: "Übersetzung und Dolmetschen",
+        services: "Übersetzungsdienste"
       },
       transport: {
         navigation: {
-          apps: "交通・ナビゲーションアプリ"
+          apps: "Transport- und Navigations-Apps"
         }
       },
       travel: {
         insurance: {
           is: {
-            essential: "旅行保険は必須です"
+            essential: "Reiseversicherung ist unerlässlich"
           }
         }
       },
       try: {
         these: {
           quick: {
-            prompts: "これらの簡単なプロンプトを試してみてください"
+            prompts: "Probieren Sie diese einfachen Prompts"
           }
         }
       },
       unlimited: {
         ai: {
-          requests: "無制限のAIリクエスト"
+          requests: "Unbegrenzte KI-Anfragen"
         }
       },
       unsaved: {
-        conversation: "未保存の会話"
+        conversation: "Nicht gespeicherte Unterhaltungen"
       },
       upgrade: {
         to: {
           a: {
             paid: {
-              plan: "有料プランにアップグレード"
+              plan: "Auf kostenpflichtigen Plan upgraden"
             }
           },
           continue: {
             using: {
-              ai: "AIを使い続けるためにアップグレード"
+              ai: "Upgraden, um KI weiter zu nutzen"
             }
           }
         }
@@ -33384,7 +33384,7 @@ export const translations: Record<Language, Translations> = {
                           sites: {
                             often: {
                               have: {
-                                be: "Booking.com、Ctrip、またはFliggyを使用してホテルを予約してください。国際サイトは英語サポートが優れていることが多いです"
+                                be: "Buchen Sie Hotels über Booking.com, Ctrip oder Fliggy. Internationale Websites bieten oft besseren englischen Support"
                               }
                             }
                           }
@@ -33403,7 +33403,7 @@ export const translations: Record<Language, Translations> = {
               banks: {
                 for: {
                   better: {
-                    security: "銀行内のカードマシンを使ってより高いセキュリティを確保"
+                    security: "Nutzen Sie Kartenautomaten in Banken für mehr Sicherheit"
                   }
                 }
               }
@@ -33418,7 +33418,7 @@ export const translations: Record<Language, Translations> = {
                   cheaper: {
                     than: {
                       taxi: {
-                        queue: "空港ピックアップにはDidiアプリを使用 - タクシー待ち行列より安い"
+                        queue: "Nutzen Sie die Didi-App für den Flughafentransfer – günstiger als Taxischlangen"
                       }
                     }
                   }
@@ -33441,7 +33441,7 @@ export const translations: Record<Language, Translations> = {
                               have: {
                                 the: {
                                   best: {
-                                    e: "国際カードにはICBC、中国銀行、またはHSBCのATMを使用してください。彼らは最高の為替レートと最も広いカバレッジを持っています"
+                                    e: "Für internationale Karten verwenden Sie Geldautomaten von ICBC, Bank of China oder HSBC. Sie bieten die besten Wechselkurse und die breiteste Abdeckung"
                                   }
                                 }
                               }
@@ -33459,21 +33459,21 @@ export const translations: Record<Language, Translations> = {
       },
       useful: {
         transport: {
-          phrases: "便利な交通フレーズ"
+          phrases: "Nützliche Transport-Sätze"
         }
       },
       user: {
         accepted: {
           the: {
             install: {
-              prompt: "ユーザーがインストールプロンプトを受け入れました"
+              prompt: "Benutzer hat Installationsaufforderung akzeptiert"
             }
           }
         },
         dismissed: {
           the: {
             install: {
-              prompt: "ユーザーがインストールプロンプトを却下しました"
+              prompt: "Benutzer hat Installationsaufforderung abgelehnt"
             }
           }
         }
@@ -33489,7 +33489,7 @@ export const translations: Record<Language, Translations> = {
                       bookings: {
                         and: {
                           proof: {
-                            of: "有効なパスポート、ビザ申請書、写真、旅行日程、ホテル予約、および財政証明"
+                            of: "Gültiger Reisepass, Visumantragsformular, Fotos, Reiseplan, Hotelreservierungen und finanzielle Nachweise"
                           }
                         }
                       }
@@ -33504,13 +33504,13 @@ export const translations: Record<Language, Translations> = {
       verify: {
         identity: {
           with: {
-            passport: "パスポートで身元を確認する"
+            passport: "Identität mit Reisepass bestätigen"
           }
         }
       },
       visa: {
         overstay: {
-          warning: "ビザのオーバーステイ警告"
+          warning: "Warnung bei Visumüberschreitung"
         },
         requirements: {
           application: {
@@ -33520,7 +33520,7 @@ export const translations: Record<Language, Translations> = {
                   documents: {
                     for: {
                       entering: {
-                        china: "中国入国に必要なビザ要件、申請プロセス、および必須書類"
+                        china: "Visumanforderungen, Antragsverfahren und erforderliche Dokumente für die Einreise nach China"
                       }
                     }
                   }
@@ -33529,7 +33529,7 @@ export const translations: Record<Language, Translations> = {
             }
           },
           by: {
-            country: "国別のビザ要件"
+            country: "Visumanforderungen nach Ländern"
           }
         }
       },
@@ -33539,7 +33539,7 @@ export const translations: Record<Language, Translations> = {
             error: {
               loading: {
                 this: {
-                  content: "このコンテンツの読み込み中にエラーが発生しました"
+                  content: "Fehler beim Laden dieses Inhalts"
                 }
               }
             }
@@ -33550,7 +33550,7 @@ export const translations: Record<Language, Translations> = {
         lake: {
           fish: {
             in: {
-              vinegar: "西湖酢漬けの魚"
+              vinegar: "Westsee-Säurefisch"
             }
           }
         }
@@ -33561,7 +33561,7 @@ export const translations: Record<Language, Translations> = {
             i: {
               use: {
                 in: {
-                  china: "中国ではどのATMを使えばいいですか？"
+                  china: "Welchen Geldautomaten sollte ich in China verwenden?"
                 }
               }
             }
@@ -33574,7 +33574,7 @@ export const translations: Record<Language, Translations> = {
                 know: {
                   before: {
                     visiting: {
-                      china: "中国訪問前に知っておくべき文化的エチケットは何ですか？"
+                      china: "Welche kulturellen Etikette-Regeln sollte ich vor einem Besuch in China kennen?"
                     }
                   }
                 }
@@ -33589,7 +33589,7 @@ export const translations: Record<Language, Translations> = {
                 are: {
                   available: {
                     in: {
-                      china: "中国ではどのような緊急電話番号とサービスが利用できますか？"
+                      china: "Welche Notrufnummern und Dienste gibt es in China?"
                     }
                   }
                 }
@@ -33610,7 +33610,7 @@ export const translations: Record<Language, Translations> = {
                             a: {
                               visa: {
                                 on: {
-                                  arrival: "中国訪問にはどのようなビザが必要ですか？到着時にビザを取得できますか？"
+                                  arrival: "Welches Visum benötige ich für einen Besuch in China? Kann ich ein Visum bei der Ankunft erhalten?"
                                 }
                               }
                             }
@@ -33632,7 +33632,7 @@ export const translations: Record<Language, Translations> = {
               to: {
                 go: {
                   in: {
-                    china: "中国でどこに行きたいですか？"
+                    china: "Wohin möchten Sie in China reisen?"
                   }
                 }
               }
@@ -33641,12 +33641,12 @@ export const translations: Record<Language, Translations> = {
         },
         is: {
           the: {
-            embassy: "大使館はどこですか？",
-            hospital: "病院はどこですか？",
+            embassy: "Wo ist die Botschaft?",
+            hospital: "Wo ist das Krankenhaus?",
             police: {
-              station: "警察署はどこですか？"
+              station: "Wo ist die Polizeistation?"
             },
-            restroom: "トイレはどこですか？"
+            restroom: "Wo ist die Toilette?"
           }
         }
       },
@@ -33706,7 +33706,7 @@ export const translations: Record<Language, Translations> = {
                       that: {
                         wasn: {
                           t: {
-                            saved: "前回のセッションで保存されなかった会話があります"
+                            saved: "Sie haben nicht gespeicherte Unterhaltungen aus der letzten Sitzung"
                           }
                         }
                       }
@@ -33726,7 +33726,7 @@ export const translations: Record<Language, Translations> = {
                     upgrading: {
                       for: {
                         more: {
-                          requests: "月間制限に近づいています。より多くのリクエストにはアップグレードをご検討ください"
+                          requests: "Sie nähern sich dem Monatslimit. Erwägen Sie ein Upgrade für mehr Anfragen"
                         }
                       }
                     }
@@ -33762,7 +33762,7 @@ export const translations: Record<Language, Translations> = {
                 }
               },
               highest: {
-                plan: "あなたは最高のプランをご利用中です！"
+                plan: "Sie nutzen den besten Plan!"
               }
             }
           }
@@ -33774,7 +33774,7 @@ export const translations: Record<Language, Translations> = {
                 limit: {
                   upgrade: {
                     to: {
-                      continue: "月間制限に達しました。アップグレードして続行してください"
+                      continue: "Monatslimit erreicht. Bitte upgraden, um fortzufahren"
                     }
                   }
                 }
@@ -33787,7 +33787,7 @@ export const translations: Record<Language, Translations> = {
         personal: {
           china: {
             travel: {
-              intelligence: "あなたの個人的な中国旅行情報"
+              intelligence: "Ihre persönlichen China-Reiseinformationen"
             }
           }
         },
@@ -33795,7 +33795,7 @@ export const translations: Record<Language, Translations> = {
           includes: {
             unlimited: {
               ai: {
-                requests: "あなたのプランには無制限のAIリクエストが含まれています"
+                requests: "Ihr Plan enthält unbegrenzte KI-Anfragen"
               }
             }
           }
@@ -33852,16 +33852,16 @@ export const translations: Record<Language, Translations> = {
       featuredDestinations: "Basierend auf beliebten Reisezielen"
     },
     invitationLetter: {
-      allowPopups: "印刷のためにポップアップを許可してください",
-      bilingual: "バイリンガル",
-      downloadPdf: "PDFをダウンロード",
-      edit: "編集",
-      english: "英語",
-      generating: "生成中...",
-      pdfFailed: "PDF生成に失敗しました：",
-      pdfFailedRetry: "PDF生成に失敗しました。もう一度お試しください。",
+      allowPopups: "Erlauben Sie Pop-ups zum Drucken",
+      bilingual: "Zweisprachig",
+      downloadPdf: "PDF herunterladen",
+      edit: "Bearbeiten",
+      english: "Englisch",
+      generating: "Wird generiert...",
+      pdfFailed: "PDF-Erstellung fehlgeschlagen:",
+      pdfFailedRetry: "PDF-Erstellung fehlgeschlagen. Bitte erneut versuchen.",
       png: "PNG",
-      preview: "プレビュー"
+      preview: "Vorschau"
     },
     language: {
       chinese: "Chinesisch",
@@ -33869,8 +33869,8 @@ export const translations: Record<Language, Translations> = {
       current: "Aktuell",
       dir: "ltr",
       english: "Englisch",
-      name: "中文（简体）",
-      nativeName: "简体中文",
+      name: "Chinesisch (vereinfacht)",
+      nativeName: "Vereinfachtes Chinesisch",
       switchTo: "Wechsel zu"
     },
     loginPage: {
@@ -33886,7 +33886,7 @@ export const translations: Record<Language, Translations> = {
       guide: "Reiseführer",
       home: "Startseite",
       restaurants: "Restaurants",
-      scenicSpots: "景勝地",
+      scenicSpots: "Sehenswürdigkeiten",
       selectLanguage: "Sprache wählen",
       signIn: "Sign in",
       tagline: "Erkunde China mit KI"
@@ -33967,29 +33967,29 @@ export const translations: Record<Language, Translations> = {
       welcome: "Willkommen bei ChinaConnect!"
     },
     paymentGuide: {
-      atmHeading: "国際カードに強いATM",
-      atmTip1: "空港や銀行のATMが最良の為替レートです",
-      atmTip2: "国際的な引き出し手数料について銀行に確認してください",
-      atmTip3: "一部のATMは外国カードの引き出しを制限します（最大2000元）",
-      atmTip4: "銀行内のATMを使うとより安全です",
-      faqsHeading: "よくある質問",
-      securityWarning: "セキュリティ警告",
-      setupHeading: "設定方法",
+      atmHeading: "Geldautomaten mit starker internationaler Kartenunterstützung",
+      atmTip1: "Geldautomaten am Flughafen oder in Banken bieten die besten Wechselkurse",
+      atmTip2: "Fragen Sie Ihre Bank nach internationalen Abhebungsgebühren",
+      atmTip3: "Einige Geldautomaten begrenzen Abhebungen mit ausländischen Karten (max. 2000 Yuan)",
+      atmTip4: "Geldautomaten in Banken sind sicherer",
+      faqsHeading: "Häufig gestellte Fragen",
+      securityWarning: "Sicherheitswarnung",
+      setupHeading: "Einrichtungsmethode",
       tabAlipay: "Alipay",
       tabAtm: "ATM",
-      tabCash: "現金・カード",
-      tabFaq: "よくある質問",
-      tabTax: "税還付",
+      tabCash: "Bargeld & Karten",
+      tabFaq: "Häufig gestellte Fragen",
+      tabTax: "Steuerrückerstattung",
       tabWechat: "WeChat Pay",
-      taxTip1: "セキュリティチェック前に空港出発ロビーで行ってください",
-      taxTip2: "対象店舗での最低購入額は500元",
-      taxTip3: "還付率：品目カテゴリーにより3-11%",
-      taxTip4: "税還付マーク付きの発注書を保管してください"
+      taxTip1: "In der Abflughalle vor der Sicherheitskontrolle durchführen",
+      taxTip2: "Mindesteinkaufswert von 500 Yuan in teilnehmenden Geschäften",
+      taxTip3: "Erstattungssatz: 3-11% je nach Warenkategorie",
+      taxTip4: "Bewahren Sie Quittungen mit Steuerrückerstattungsmarkierung auf"
     },
     priceTransparency: {
-      all: "すべて",
-      showComparison: "比較表示",
-      showSimplified: "簡略表示"
+      all: "Alle",
+      showComparison: "Vergleichsansicht",
+      showSimplified: "Kompakte Ansicht"
     },
     pricing: {
       annualNote: "Billed annually at ¥659 (save ¥169)",
@@ -34223,7 +34223,7 @@ export const translations: Record<Language, Translations> = {
       title: "Restaurantführer"
     },
     scamPrevention: {
-      all: "すべて"
+      all: "Alle"
     },
     scenicSpots: {
       allSpots: "All Scenic Spots",
@@ -34248,28 +34248,28 @@ export const translations: Record<Language, Translations> = {
       shareTip: "Mit Freunden teilen"
     },
     transportGuide: {
-      airportWifi: "空港WiFiが利用可能な場合が多い — SIM購入前に接続を",
-      arrivalByPlane: "飛行機で",
-      arrivalByTrain: "電車で",
-      arrivalTip: "入国カードは大切に保管してください — 入管審査で必要になります",
-      bookingPlatforms: "予約プラットフォーム",
-      didiTip: "空港送迎にはDidiアプリが便利 — タクシーキューより安い",
-      howToUse: "使い方：",
-      proTips: "プロのヒント：",
-      seatClasses: "シートクラス",
-      selectMode: "交通手段を選択",
-      selectModeHint: "交通手段を選択してください",
-      tabArrival: "到着",
-      tabDistances: "距離",
-      tabIntercity: "都市間",
-      tabLocal: "市内の交通",
-      tabPhrases: "フレーズ集",
-      tabTaxi: "タクシー/Didi",
-      tabTrains: "鉄道予約",
-      taxiPhrases: "タクシー便利フレーズ",
-      trainBookingTips: "鉄道予約のコツ",
+      airportWifi: "Flughafen-WLAN ist oft verfügbar – vor dem SIM-Kauf verbinden",
+      arrivalByPlane: "Mit dem Flugzeug",
+      arrivalByTrain: "Mit dem Zug",
+      arrivalTip: "Bewahren Sie Ihre Einreisekarte sicher auf – sie wird bei der Einwanderungskontrolle benötigt",
+      bookingPlatforms: "Buchungsplattformen",
+      didiTip: "Nutzen Sie die Didi-App für den Flughafentransfer – günstiger als Taxischlangen",
+      howToUse: "Verwendung:",
+      proTips: "Profitipps:",
+      seatClasses: "Sitzplatzklasse",
+      selectMode: "Transportmittel wählen",
+      selectModeHint: "Bitte Transportmittel wählen",
+      tabArrival: "Ankunft",
+      tabDistances: "Entfernung",
+      tabIntercity: "Zwischenstädtisch",
+      tabLocal: "Innerstädtischer Verkehr",
+      tabPhrases: "Phrasensammlung",
+      tabTaxi: "Taxi/Didi",
+      tabTrains: "Zugbuchung",
+      taxiPhrases: "Nützliche Taxi-Sätze",
+      trainBookingTips: "Tipps zur Zugbuchung",
       tripCta: "Trip.com / Ctrip",
-      usefulPhrases: "交通便利フレーズ"
+      usefulPhrases: "Nützliche Transport-Sätze"
     },
     userPage: {
       heading: "Profil",
@@ -34277,42 +34277,42 @@ export const translations: Record<Language, Translations> = {
       title: "Benutzerprofil - ChinaConnect"
     },
     visaPage: {
-      appsHeading: "必須アプリ",
-      appsSubtitle: "到着前にダウンロード — Google Playは中国で利用不可",
-      beforeBuying: "購入前に",
-      digitalCopiesDesc: "デジタルコピーをクラウド（Google Drive、iCloud）に保管し、家族と共有。原本とは別に物理コピーを保管してください。",
-      duration: "滞在期間：",
-      faqHeading: "よくある質問",
-      fee: "料金：",
-      finalPreparations: "最終準備",
-      flightHeading: "フライト予約のコツ",
-      importantReminder: "重要なお知らせ",
+      appsHeading: "Unverzichtbare Apps",
+      appsSubtitle: "Vor der Ankunft herunterladen – Google Play ist in China nicht verfügbar",
+      beforeBuying: "Vor dem Kauf",
+      digitalCopiesDesc: "Bewahren Sie digitale Kopien in der Cloud (Google Drive, iCloud) auf und teilen Sie sie mit der Familie. Bewahren Sie physische Kopien getrennt vom Original auf.",
+      duration: "Aufenthaltsdauer:",
+      faqHeading: "Häufig gestellte Fragen",
+      fee: "Preis:",
+      finalPreparations: "Letzte Vorbereitungen",
+      flightHeading: "Tipps zur Flugbuchung",
+      importantReminder: "Wichtiger Hinweis",
       insuranceDesc: "Medical treatment in China can be expensive, especially for foreigners. A good travel insurance policy with medical coverage is non-negotiable for safe travel.",
-      insuranceHeading: "旅行保険は必須",
-      insuranceTipsHeading: "保険選びのポイント",
-      overstayWarning: "ビザオーバーステイ警告",
-      processing: "処理期間：",
-      recommendedProviders: "おすすめプロバイダー",
-      reqHeading: "国別ビザ要件",
-      reqSubtitle: "国を選択して具体的な要件を確認",
-      requirements: "必要書類：",
-      tabApps: "アプリ・VPN",
-      tabChecklist: "出発前",
-      tabDocuments: "必要書類",
-      tabInsurance: "保険",
-      tabOverview: "概要",
-      tabProcess: "手続き",
-      tabTips: "コツ・よくある質問",
-      weeksBefore: "出発までの週数（4-6週間前）",
-      weeksBeforeDesc: "出発の4-6週間前に完了してください"
+      insuranceHeading: "Reiseversicherung ist unerlässlich",
+      insuranceTipsHeading: "Tipps zur Versicherungswahl",
+      overstayWarning: "Warnung bei Visumüberschreitung",
+      processing: "Bearbeitungszeit:",
+      recommendedProviders: "Empfohlene Anbieter",
+      reqHeading: "Visumanforderungen nach Ländern",
+      reqSubtitle: "Land auswählen, um spezifische Anforderungen zu prüfen",
+      requirements: "Erforderliche Dokumente:",
+      tabApps: "Apps & VPN",
+      tabChecklist: "Vor der Abreise",
+      tabDocuments: "Erforderliche Dokumente",
+      tabInsurance: "Versicherung",
+      tabOverview: "Übersicht",
+      tabProcess: "Verfahren",
+      tabTips: "Tipps & FAQ",
+      weeksBefore: "Wochen vor Abreise (4-6 Wochen vorher)",
+      weeksBeforeDesc: "4-6 Wochen vor Abreise abschließen"
     }
   },
   ar: {
     accommodationGuide: {
-      tabBooking: "予約のコツ",
-      tabCheckin: "チェックインの流れ",
-      tabFaqs: "よくある質問",
-      tabTypes: "ホテルタイプ"
+      tabBooking: "نصائح الحجز",
+      tabCheckin: "إجراءات تسجيل الوصول",
+      tabFaqs: "الأسئلة الشائعة",
+      tabTypes: "أنواع الفنادق"
     },
     accountPage: {
       active: "نشط",
@@ -34626,18 +34626,18 @@ export const translations: Record<Language, Translations> = {
     cityAttractions: {
       categoryAll: "الكل",
       categoryLabel: "الفئة",
-      chinanewsDesc: "公式観光情報",
-      ctripDesc: "観光地のレビュー・予約",
+      chinanewsDesc: "معلومات سياحية رسمية",
+      ctripDesc: "مراجعات وحجوزات المعالم السياحية",
       disclaimer: "قد تتغير ساعات العمل، أسعار التذاكر، وأرقام الهواتف. نوصي بالتحقق عبر الموقع الرسمي للمعلم أو بالاتصال مسبقًا.",
-      mafengwoDesc: "中国最大の旅行コミュニティ",
-      mctDesc: "政府観光データ",
+      mafengwoDesc: "أكبر مجتمع سفر في الصين",
+      mctDesc: "بيانات السياحة الحكومية",
       openOnMap: "افتح على الخريطة",
       openingHours: "ساعات العمل",
       subtitle: "معالم لا بد من زيارتها، متاحف، ومعالم طبيعية.",
       ticketPrice: "سعر التذكرة",
       tipsHeader: "نصائح",
       title: "المعالم في {city}",
-      tripadvisorDesc: "海外の観光地レビュー",
+      tripadvisorDesc: "مراجعات المعالم السياحية العالمية",
       viewAll: "عرض جميع المعالم في {city}",
       viewDetails: "عرض التفاصيل",
       viewMore: "عرض المزيد من المعالم"
@@ -34645,9 +34645,9 @@ export const translations: Record<Language, Translations> = {
     cityFood: {
       avgPrice: "السعر المتوسط",
       cuisine: "المطبخ",
-      dataSourcesDesc: "権威ある情報源からまとめた飲食店データ。訪問前に詳細を確認してください：",
-      dataSourcesHeading: "データソースと参考資料",
-      dianpingDesc: "中国最大のローカル生活サービスプラットフォーム",
+      dataSourcesDesc: "بيانات المطاعم مجمعة من مصادر موثوقة. يرجى التحقق من التفاصيل قبل الزيارة:",
+      dataSourcesHeading: "مصادر البيانات والمراجع",
+      dianpingDesc: "أكبر منصة خدمات محلية في الصين",
       disclaimer: "قد تتغير أرقام الهواتف والعناوين. نوصي بالتحقق عبر القنوات الرسمية للمطعم أو بالاتصال مسبقًا.",
       filterAll: "الكل",
       filterBlackPearl: "اللؤلؤة السوداء",
@@ -34657,16 +34657,16 @@ export const translations: Record<Language, Translations> = {
       filterMichelin: "ميشلان",
       filteringLabel: "التصفية:",
       googleMaps: "خرائط جوجل",
-      meituanDesc: "出前・レビュープラットフォーム",
-      michelinDesc: "国際的に権威ある飲食店評価",
-      nextCity: "次の都市",
-      previousCity: "前の都市",
+      meituanDesc: "منصة توصيل الطعام والمراجعات",
+      michelinDesc: "تقييمات مطاعم دولية موثوقة",
+      nextCity: "المدينة التالية",
+      previousCity: "المدينة السابقة",
       signatureDishes: "الأطباق المميزة",
       subtitle: "نجوم ميشلان، مفضلات اللؤلؤة السوداء، والجواهر المحلية.",
       title: "المطاعم في {city}",
       viewAll: "عرض جميع المطاعم في {city}",
       viewDetails: "عرض التفاصيل",
-      xiaohongshuDesc: "ローカルグルメ探索ガイド"
+      xiaohongshuDesc: "دليل استكشاف الأطعمة المحلية"
     },
     cityHotels: {
       bookCta: "عرض تفاصيل الفندق",
@@ -34694,7 +34694,7 @@ export const translations: Record<Language, Translations> = {
       bookHotelCta: "ابحث عن الفنادق في {city}",
       bookTourCta: "احجز جولة في {city}",
       citySubtitle: "الدليل الشامل للسفر إلى {city}، الصين. ابحث عن أفضل المطاعم، المعالم السياحية، الفنادق ونصائح السفر.",
-      climate: "気候",
+      climate: "المناخ",
       connectivitySubtitle: "ابقَ متصلاً بالبيانات.",
       contactCount: "{count} جهات اتصال",
       cultureSubtitle: "العادات والتقاليد المحلية.",
@@ -34703,8 +34703,8 @@ export const translations: Record<Language, Translations> = {
       dataSourcesDesc: "من أين تأتي هذه البيانات",
       dataSourcesHeading: "مصادر البيانات",
       downloadBefore: "قم بتحميل هذه التطبيقات قبل الوصول إلى الصين.",
-      durationLabel: "所要時間：",
-      electricity: "電圧・電源",
+      durationLabel: "المدة الزمنية:",
+      electricity: "الجهد والتيار الكهربائي",
       elevation: "الارتفاع",
       emergencySubtitle: "الأرقام المهمة والسفارات.",
       emergencySubtitleDynamic: "أرقام الهواتف المهمة في {city}",
@@ -34717,7 +34717,7 @@ export const translations: Record<Language, Translations> = {
       foodHighlightsHeading: "أبرز المأكولات",
       foodHighlightsSubtitle: "موصى به محليًا",
       foodSubtitle: "نجوم ميشلان، اختيارات اللؤلؤ الأسود، والأطباق المحلية المفضلة",
-      frequencyLabel: "周波数：",
+      frequencyLabel: "التردد:",
       gettingAround: "الانتقال",
       gettingTo: "الوصول إلى {city}",
       heroEyebrow: "دليل السفر",
@@ -34726,13 +34726,13 @@ export const translations: Record<Language, Translations> = {
       hotelsCountUnit: "فنادق",
       hotelsHeading: "أين تقيم",
       hotelsSubtitle: "من الفنادق الفاخرة إلى السلاسل الدولية.",
-      howToUseLabel: "使い方：",
+      howToUseLabel: "طريقة الاستخدام:",
       importantNumbers: "الأرقام المهمة في {city}",
       intro: "مرحبًا بكم في {city}، واحدة من أكثر الوجهات جاذبية في الصين.",
       language: "اللغة",
       localFoodHighlights: "Local Food Highlights",
       localFoodHighlightsDesc: "Hand-picked local dining picks in {city}",
-      mapLayerDesc: "レイヤー切替：ミシュラン星、黒珍珠ランキング、地元のおすすめ",
+      mapLayerDesc: "تبديل الطبقات: نجوم ميشلان، تصنيف اللؤلؤة السوداء، توصيات محلية",
       moreCities: "المزيد من المدن",
       nextCity: "المدينة التالية",
       noHotels: "لم يتم العثور على فنادق",
@@ -34746,7 +34746,7 @@ export const translations: Record<Language, Translations> = {
       phoneIcon: "📞",
       population: "السكان",
       previousCity: "المدينة السابقة",
-      priceLabel: "料金：",
+      priceLabel: "التكلفة:",
       proTipBooking: "نصيحة احترافية: احجز الفنادق قبل 2-3 أسابيع للحصول على أفضل الأسعار.",
       proTipEsim1: "تعمل eSIM بشكل أفضل إذا كان هاتفك يدعمها (iPhone XS+ ومعظم الهواتف الرائدة من أندرويد).",
       proTipEsim2: "قم بتحميل تطبيقات eSIM قبل الوصول إلى الصين.",
@@ -34754,11 +34754,11 @@ export const translations: Record<Language, Translations> = {
       proTips: "نصائح احترافية",
       quickFacts: "حقائق سريعة",
       quickFactsHeading: "حقائق سريعة",
-      recommendedPaymentApps: "おすすめ決済アプリ",
-      recommendedTransportApps: "おすすめ交通アプリ",
+      recommendedPaymentApps: "تطبيقات الدفع الموصى بها",
+      recommendedTransportApps: "تطبيقات النقل الموصى بها",
       region: "المنطقة",
       restaurantCount: "{count} مطاعم",
-      restaurantsLabel: "レストラン",
+      restaurantsLabel: "المطاعم",
       sectionApps: "التطبيقات الأساسية",
       sectionAttractions: "أهم المعالم",
       sectionConnectivity: "SIM و eSIM",
@@ -34768,11 +34768,11 @@ export const translations: Record<Language, Translations> = {
       sectionHotels: "أين تقيم",
       sectionOverview: "نظرة عامة",
       sectionPayment: "الدفع والمال",
-      sectionScenic: "景勝地",
+      sectionScenic: "المعالم السياحية",
       sectionTransport: "الانتقال",
       sectionVisa: "الفيزا والدخول",
       sosTip: "احفظ هذه الأرقام قبل وصولك - قد تكون خدمة الهاتف الخلوي محدودة في المناطق النائية.",
-      summer: "夏：",
+      summer: "الصيف:",
       switchToEnglishMode: "قم بالتبديل إلى الوضع الإنجليزي في إعدادات التطبيق إذا رأيت واجهة صينية. تدعم كل من Alipay و WeChat Pay البطاقات الائتمانية الأجنبية.",
       tabApps: "التطبيقات",
       tabAttractions: "المعالم السياحية",
@@ -34786,21 +34786,21 @@ export const translations: Record<Language, Translations> = {
       tabTransport: "النقل",
       timezone: "المنطقة الزمنية",
       tipCount: "{count} نصائح",
-      tipsLabel: "ポイント：",
+      tipsLabel: "النقاط:",
       topHighlightsHeading: "أبرز المعالم",
       transportSubtitle: "الانتقال في {city}",
       travelTo: "السفر إلى {city}",
       viewAllAttractions: "View all attractions",
       viewAllHotels: "عرض جميع الفنادق {totalHotelCount}",
       viewAllRestaurants: "View all restaurants",
-      visa: "ビザ",
+      visa: "التأشيرة",
       visaSubtitle: "Visa-free policies and entry requirements.",
       visit: "Visit",
       weatherForecast: "Weather forecast",
-      weatherNA: "天気データなし",
+      weatherNA: "لا توجد بيانات الطقس",
       weatherNotAvailable: "Weather not available",
       weatherNow: "Now",
-      winter: "冬：",
+      winter: "الشتاء:",
       youMayAlsoLike: "You may also like"
     },
     common: {
@@ -34837,54 +34837,54 @@ export const translations: Record<Language, Translations> = {
       viewMore: "View more"
     },
     communicationGuide: {
-      tabApps: "必須アプリ",
-      tabSetup: "セットアップガイド",
-      tabSim: "SIM/eSIMオプション",
-      tabVpn: "VPN設定"
+      tabApps: "التطبيقات الأساسية",
+      tabSetup: "دليل الإعداد",
+      tabSim: "خيارات SIM/eSIM",
+      tabVpn: "إعداد VPN"
     },
     culturalWarnings: {
-      all: "すべて",
-      catColors: "色",
-      catDining: "食事",
-      catGiftEtiquette: "贈答マナー",
-      catGifts: "贈り物",
-      catNumbers: "数字",
-      catPhoto: "写真",
-      catPhotography: "写真撮影",
-      catSocial: "社交",
-      critical: "重要",
-      general: "一般",
-      note: "注意",
-      warning: "警告"
+      all: "الكل",
+      catColors: "اللون",
+      catDining: "الطعام",
+      catGiftEtiquette: "آداب الهدايا",
+      catGifts: "الهدايا",
+      catNumbers: "الأرقام",
+      catPhoto: "الصور",
+      catPhotography: "التصوير الفوتوغرافي",
+      catSocial: "التواصل الاجتماعي",
+      critical: "مهم",
+      general: "عام",
+      note: "انتبه",
+      warning: "تحذير"
     },
     departureGuide: {
-      tabAirport: "空港情報",
-      tabChecklist: "チェックリスト",
-      tabSteps: "出国手順",
-      tabTax: "税還付"
+      tabAirport: "معلومات المطار",
+      tabChecklist: "قائمة المراجعة",
+      tabSteps: "إجراءات المغادرة",
+      tabTax: "استرداد الضرائب"
     },
     diningGuide: {
-      allergenCard: "アレルゲン翻訳カード",
-      budgetHeading: "予算ガイド（1人あたり）",
-      casual: "カジュアルレストラン",
-      categoriesHeading: "人気料理カテゴリー",
-      chinesePhrases: "中国語フレーズ：",
-      commonAllergies: "よくあるアレルゲン：",
-      dietary: "食事制限",
-      diningEtiquette: "食事マナー",
-      faqsHeading: "よくある質問",
-      importantAllergyInfo: "重要なアレルギー情報",
-      orderingPhrases: "注文フレーズ",
-      popularDishesHeading: "人気料理：",
-      proTips: "プロのヒント：",
-      safeOptions: "安心な選択肢：",
-      streetFood: "屋台料理",
-      tabAllergies: "アレルギー",
-      tabBudget: "予算ガイド",
-      tabCategories: "カテゴリー",
-      tabDishes: "人気料理",
-      tabEtiquette: "マナー",
-      tabPhrases: "フレーズ集"
+      allergenCard: "بطاقة ترجمة مسببات الحساسية",
+      budgetHeading: "دليل الميزانية (للفرد)",
+      casual: "مطاعم عادية",
+      categoriesHeading: "فئات الأطباق الشعبية",
+      chinesePhrases: "عبارات صينية:",
+      commonAllergies: "مسببات الحساسية الشائعة:",
+      dietary: "القيود الغذائية",
+      diningEtiquette: "آداب الطعام",
+      faqsHeading: "الأسئلة الشائعة",
+      importantAllergyInfo: "معلومات حساسية مهمة",
+      orderingPhrases: "عبارات الطلب",
+      popularDishesHeading: "الأطباق الشعبية:",
+      proTips: "نصائح احترافية:",
+      safeOptions: "خيارات آمنة:",
+      streetFood: "أطعمة الشوارع",
+      tabAllergies: "الحساسية",
+      tabBudget: "دليل الميزانية",
+      tabCategories: "الفئات",
+      tabDishes: "الأطباق الشعبية",
+      tabEtiquette: "الآداب",
+      tabPhrases: "قاموس العبارات"
     },
     emergency: {
       address: "Address",
@@ -34909,15 +34909,15 @@ export const translations: Record<Language, Translations> = {
       viewAllContacts: "View all contacts"
     },
     emergencyGuide: {
-      bannerSubtitle: "この番号を保存してください — 警察：110、救急：120、消防：119",
-      bannerTitle: "中国の緊急番号",
-      labelAmbulance: "救急",
-      labelFire: "消防",
-      labelPolice: "警察",
-      tabContacts: "緊急連絡先",
-      tabEmbassy: "大使館情報",
-      tabOverview: "緊急時の種類",
-      tabPhrases: "便利フレーズ"
+      bannerSubtitle: "احفظ هذا الرقم — الشرطة: 110، الإسعاف: 120، الإطفاء: 119",
+      bannerTitle: "أرقام الطوارئ في الصين",
+      labelAmbulance: "الإسعاف",
+      labelFire: "الإطفاء",
+      labelPolice: "الشرطة",
+      tabContacts: "جهات الاتصال في حالات الطوارئ",
+      tabEmbassy: "معلومات السفارة",
+      tabOverview: "أنواع الطوارئ",
+      tabPhrases: "عبارات مفيدة"
     },
     emergencyPage: {
       ambulance: "الإسعاف",
@@ -35031,7 +35031,7 @@ export const translations: Record<Language, Translations> = {
       unauthorized: "غير مصرح"
     },
     etiquette: {
-      placeholder: "近日公開"
+      placeholder: "قريبًا"
     },
     features: {
       accommodation: "السكن",
@@ -35258,7 +35258,7 @@ export const translations: Record<Language, Translations> = {
     },
     hard: {
       accommodation: {
-        guide: "宿泊施設ガイド"
+        guide: "دليل الإقامة"
       },
       after: {
         landing: {
@@ -35273,7 +35273,7 @@ export const translations: Record<Language, Translations> = {
                           can: {
                             help: {
                               with: {
-                                directio: "着陸後、標識に従って地下鉄またはタクシーに乗ります。空港スタッフが道順をお手伝いします。"
+                                directio: "بعد الهبوط، اتبع اللافتات لركوب المترو أو سيارة الأجرة. سيساعدك موظفو المطار في الاتجاهات."
                               }
                             }
                           }
@@ -35289,9 +35289,9 @@ export const translations: Record<Language, Translations> = {
       },
       ai: {
         requests: {
-          month: "AIリクエスト/月",
+          month: "طلبات AI/شهريًا",
           this: {
-            month: "今月のAIリクエスト"
+            month: "طلبات AI هذا الشهر"
           }
         },
         responses: {
@@ -35301,7 +35301,7 @@ export const translations: Record<Language, Translations> = {
                 only: {
                   always: {
                     verify: {
-                      locally: "AIの応答は参考用です。常に現地で確認してください。"
+                      locally: "ردود AI هي للإشارة فقط. تحقق دائمًا محليًا."
                     }
                   }
                 }
@@ -35313,7 +35313,7 @@ export const translations: Record<Language, Translations> = {
       aichat: {
         error: {
           boundary: {
-            caught: "AIチャットエラー境界でキャッチされました："
+            caught: "تم اكتشاف خطأ في حدود محادثة AI:"
           }
         }
       },
@@ -35326,7 +35326,7 @@ export const translations: Record<Language, Translations> = {
                   inter: {
                     city: {
                       transport: {
-                        options: "空港到着、メトロ、バス、タクシー、および都市間交通のオプション"
+                        options: "الوصول إلى المطار، المترو، الحافلات، سيارات الأجرة، وخيارات النقل بين المدن"
                       }
                     }
                   }
@@ -35341,7 +35341,7 @@ export const translations: Record<Language, Translations> = {
               connect: {
                 before: {
                   buying: {
-                    sim: "空港のWi-Fiは通常利用可能です - SIMカードを購入する前に接続してください"
+                    sim: "واي فاي المطار متاح عادةً - اتصل قبل شراء بطاقة SIM"
                   }
                 }
               }
@@ -35358,7 +35358,7 @@ export const translations: Record<Language, Translations> = {
                   refund: {
                     procedures: {
                       in: {
-                        china: "中国におけるAlipay、WeChat Pay、現金および税金還付の手続き"
+                        china: "Alipay و WeChat Pay والنقد وإجراءات استرداد الضرائب في الصين"
                       }
                     }
                   }
@@ -35370,20 +35370,20 @@ export const translations: Record<Language, Translations> = {
       },
       allergen: {
         translation: {
-          card: "アレルゲン翻訳カード"
+          card: "بطاقة ترجمة مسببات الحساسية"
         }
       },
       amap: {
         api: {
           not: {
-            loaded: "Amap APIが読み込まれていません"
+            loaded: "Amap API لم يتم تحميلها"
           }
         }
       },
       an: {
         unexpected: {
           error: {
-            occurred: "予期しないエラーが発生しました"
+            occurred: "حدث خطأ غير متوقع"
           }
         },
         unknown: {
@@ -35392,7 +35392,7 @@ export const translations: Record<Language, Translations> = {
               while: {
                 getting: {
                   your: {
-                    location: "位置情報を取得中に不明なエラーが発生しました。"
+                    location: "حدث خطأ غير معروف أثناء الحصول على الموقع."
                   }
                 }
               }
@@ -35408,7 +35408,7 @@ export const translations: Record<Language, Translations> = {
                 scenic: {
                   spots: {
                     in: {
-                      china: "中国の観光地を見つけて案内するためのアプリ"
+                      china: "تطبيقات للعثور على المعالم السياحية الصينية والتنقل إليها"
                     }
                   }
                 }
@@ -35420,7 +35420,7 @@ export const translations: Record<Language, Translations> = {
       arrival: {
         to: {
           inter: {
-            city: "到着から都市間移動まで"
+            city: "من الوصول إلى التنقل بين المدن"
           }
         }
       },
@@ -35428,7 +35428,7 @@ export const translations: Record<Language, Translations> = {
         about: {
           your: {
             china: {
-              trip: "あなたの中国旅行について質問する..."
+              trip: "اسأل عن رحلتك إلى الصين..."
             }
           }
         }
@@ -35446,7 +35446,7 @@ export const translations: Record<Language, Translations> = {
                 have: {
                   best: {
                     exchange: {
-                      rates: "空港や銀行のATMが最も良い為替レートです"
+                      rates: "أجهزة الصراف الآلي في المطار والبنوك تقدم أفضل أسعار صرف"
                     }
                   }
                 }
@@ -35456,13 +35456,13 @@ export const translations: Record<Language, Translations> = {
         }
       },
       authentication: {
-        failed: "認証に失敗しました"
+        failed: "فشل المصادقة"
       },
       best: {
         atms: {
           for: {
             international: {
-              cards: "国際カードに最適なベストなATM"
+              cards: "أفضل أجهزة الصراف الآلي للبطاقات الدولية"
             }
           }
         },
@@ -35474,7 +35474,7 @@ export const translations: Record<Language, Translations> = {
                   that: {
                     tourists: {
                       usually: {
-                        miss: "観光客が通常見逃す成都のベストローカルストリートフード"
+                        miss: "أفضل أطعمة الشوارع المحلية في تشنغدو التي يفوتها السياح عادةً"
                       }
                     }
                   }
@@ -35497,7 +35497,7 @@ export const translations: Record<Language, Translations> = {
                               best: {
                                 for: {
                                   first: {
-                                    timers: "中国の長城を訪れるベストな方法は？初心者に最適なセクションは？"
+                                    timers: "ما هي أفضل طريقة لزيارة سور الصين العظيم؟ ما هي أفضل الأقسام للمبتدئين؟"
                                   }
                                 }
                               }
@@ -35516,7 +35516,7 @@ export const translations: Record<Language, Translations> = {
       book: {
         high: {
           speed: {
-            rail: "高速鉄道を予約する"
+            rail: "احجز القطار فائق السرعة"
           }
         },
         professional: {
@@ -35528,7 +35528,7 @@ export const translations: Record<Language, Translations> = {
                     business: {
                       visits: {
                         in: {
-                          china: "中国のビジネス訪問のためにプロの通訳者と翻訳者を予約する。逐次通訳、同時通訳、公文書翻訳。"
+                          china: "احجز مترجمين ومترجمين فوريين محترفين لزيارة عمل في الصين. ترجمة فورية، ترجمة متزامنة، وترجمة وثائق رسمية."
                         }
                       }
                     }
@@ -35546,7 +35546,7 @@ export const translations: Record<Language, Translations> = {
                   meetings: {
                     conferences: {
                       and: {
-                        negotiatio: "中国での会議、カンファレンス、交渉のために、審査を受けた通訳者と翻訳者を予約しましょう。"
+                        negotiatio: "احجز مترجمين ومترجمين فوريين معتمدين للاجتماعات والمؤتمرات والمفاوضات في الصين."
                       }
                     }
                   }
@@ -35558,30 +35558,30 @@ export const translations: Record<Language, Translations> = {
       },
       business: {
         etiquette: {
-          essentials: "ビジネスエチケットの基本",
+          essentials: "أساسيات آداب الأعمال",
           tips: {
             for: {
               meeting: {
                 chinese: {
-                  partners: "中国のビジネスパートナーとのミーティングのためのビジネスエチケットのヒント"
+                  partners: "نصائح آداب الأعمال لاجتماعاتك مع شركاء الأعمال الصينيين"
                 }
               }
             }
           }
         },
         express: {
-          chinaconnect: "ビジネスエクスプレス - ChinaConnect"
+          chinaconnect: "Business Express - ChinaConnect"
         },
         invitation: {
           letter: {
             templates: {
-              chinaconnect: "ビジネス招待状テンプレート - ChinaConnect"
+              chinaconnect: "قالب دعوة عمل - ChinaConnect"
             }
           }
         }
       },
       calculating: {
-        routes: "ルートを計算中..."
+        routes: "جارٍ حساب المسار..."
       },
       can: {
         i: {
@@ -35590,7 +35590,7 @@ export const translations: Record<Language, Translations> = {
               china: {
                 visa: {
                   on: {
-                    arrival: "中国ビザは到着時に取得できますか？"
+                    arrival: "هل يمكن الحصول على تأشيرة الصين عند الوصول؟"
                   }
                 }
               },
@@ -35599,7 +35599,7 @@ export const translations: Record<Language, Translations> = {
                   on: {
                     purchases: {
                       in: {
-                        china: "中国での購入で税金還付を受けられますか？"
+                        china: "هل يمكنني استرداد الضرائب على المشتريات في الصين؟"
                       }
                     }
                   }
@@ -35617,7 +35617,7 @@ export const translations: Record<Language, Translations> = {
                         apps: {
                           do: {
                             i: {
-                              need: "中国でApple Payは使えますか？どの支払いアプリが必要ですか？"
+                              need: "هل Apple Pay يعمل في الصين؟ ما هي تطبيقات الدفع التي أحتاجها؟"
                             }
                           }
                         }
@@ -35637,7 +35637,7 @@ export const translations: Record<Language, Translations> = {
               about: {
                 international: {
                   withdrawal: {
-                    fees: "国際引き出し手数料について銀行に確認してください"
+                    fees: "تحقق مع البنك الذي تتعامل معه بشأن رسوم السحب الدولي"
                   }
                 }
               }
@@ -35649,7 +35649,7 @@ export const translations: Record<Language, Translations> = {
             to: {
               confirm: {
                 your: {
-                  account: "アカウントを確認するためにメールをチェックしてください。"
+                  account: "تحقق من بريدك الإلكتروني لتأكيد حسابك."
                 }
               }
             }
@@ -35658,19 +35658,19 @@ export const translations: Record<Language, Translations> = {
       },
       checking: {
         visa: {
-          requirements: "ビザの必要条件を調べています..."
+          requirements: "جارٍ البحث عن متطلبات التأشيرة..."
         },
-        weather: "天気を調べています..."
+        weather: "جارٍ البحث عن الطقس..."
       },
       china: {
         business: {
-          etiquette: "中国のビジネスエチケット",
-          guide: "中国ビジネスガイド"
+          etiquette: "آداب الأعمال الصينية",
+          guide: "دليل الأعمال في الصين"
         },
         company: {
           registration: {
             guide: {
-              chinaconnect: "中国会社登録ガイド - ChinaConnect"
+              chinaconnect: "دليل تسجيل الشركات في الصين - ChinaConnect"
             }
           }
         },
@@ -35686,7 +35686,7 @@ export const translations: Record<Language, Translations> = {
                           you: {
                             must: {
                               apply: {
-                                befo: "中国はほとんどの国籍に対して到着時のビザを提供していません。旅行前に中国の大使館、総領事館、または認可されたビザセンターで申請する必要があります。"
+                                befo: "لا تقدم الصين تأشيرات عند الوصول لمعظم الجنسيات. يجب التقديم قبل السفر إلى السفارة أو القنصلية الصينية أو مراكز التأشيرات المعتمدة."
                               }
                             }
                           }
@@ -35701,50 +35701,50 @@ export const translations: Record<Language, Translations> = {
         },
         expo: {
           calendar: {
-            chinaconnect: "中国展示会カレンダー - ChinaConnect"
+            chinaconnect: "تقويم المعارض في الصين - ChinaConnect"
           }
         },
         interpreter: {
-          booking: "中国通訳者予約"
+          booking: "حجز مترجمين في الصين"
         },
         invitation: {
-          letter: "中国招待状"
+          letter: "دعوة إلى الصين"
         }
       },
       chinese: {
         business: {
           etiquette: {
             guide: {
-              chinaconnect: "中国ビジネスエチケットガイド - ChinaConnect"
+              chinaconnect: "دليل آداب الأعمال الصينية - ChinaConnect"
             }
           }
         },
-        restaurants: "中華レストラン"
+        restaurants: "مطاعم صينية"
       },
       city: {
         distance: {
           travel: {
-            time: "都市間の距離と移動時間"
+            time: "المسافات وأوقات السفر بين المدن"
           }
         }
       },
       close: {
         emergency: {
-          menu: "緊急メニューを閉じる"
+          menu: "إغلاق قائمة الطوارئ"
         }
       },
       collect: {
         your: {
-          passport: "パスポートを受け取る"
+          passport: "استلام جواز السفر"
         }
       },
       communication: {
-        guide: "コミュニケーションガイド",
-        setup: "コミュニケーション設定"
+        guide: "دليل التواصل",
+        setup: "إعدادات التواصل"
       },
       company: {
         registration: {
-          guide: "会社登録ガイド"
+          guide: "دليل تسجيل الشركات"
         }
       },
       complete: {
@@ -35758,7 +35758,7 @@ export const translations: Record<Language, Translations> = {
                       in: {
                         china: {
                           including: {
-                            canton: "中国で開催される主要な見本市や展示会（広州交易会、自動車ショー、産業イベントを含む）の完全なカレンダー。主要イベントに合わせて出張を計画してください。"
+                            canton: "تقويم كامل للمعارض والأحداث التجارية الرئيسية في الصين (بما في ذلك معرض كانتون، معارض السيارات، الأحداث الصناعية). خطط لرحلات العمل حول الأحداث الرئيسية."
                           }
                         }
                       }
@@ -35769,10 +35769,10 @@ export const translations: Record<Language, Translations> = {
             }
           }
         },
-        registration: "登録を完了する",
+        registration: "إكمال التسجيل",
         the: {
           application: {
-            form: "申請フォームを記入する"
+            form: "ملء نموذج الطلب"
           },
           foreign: {
             passport: {
@@ -35800,13 +35800,13 @@ export const translations: Record<Language, Translations> = {
         }
       },
       consular: {
-        assistance: "領事サポート"
+        assistance: "الدعم القنصلي"
       },
       conversation: {
-        history: "会話履歴"
+        history: "سجل المحادثة"
       },
       current: {
-        subscription: "現在のサブスクリプション"
+        subscription: "الاشتراك الحالي"
       },
       daily: {
         details: {
@@ -35814,7 +35814,7 @@ export const translations: Record<Language, Translations> = {
             appear: {
               after: {
                 full: {
-                  planning: "詳細な日程は完全な計画後に表示されます"
+                  planning: "سيتم عرض الجدول التفصيلي بعد اكتمال الخطة"
                 }
               }
             }
@@ -35823,23 +35823,23 @@ export const translations: Record<Language, Translations> = {
       },
       delete: {
         this: {
-          conversation: "この会話を削除しますか？"
+          conversation: "هل تريد حذف هذه المحادثة؟"
         }
       },
       detailed: {
         feature: {
-          comparison: "詳細な機能比較"
+          comparison: "مقارنة الميزات التفصيلية"
         }
       },
       determine: {
         your: {
           visa: {
-            type: "ビザの種類を確認する"
+            type: "تحديد نوع التأشيرة"
           }
         }
       },
       dietary: {
-        restrictions: "食事制限"
+        restrictions: "القيود الغذائية"
       },
       do: {
         i: {
@@ -35850,7 +35850,7 @@ export const translations: Record<Language, Translations> = {
                   account: {
                     for: {
                       mobile: {
-                        payments: "モバイル決済に中国の銀行口座は必要ですか？"
+                        payments: "هل أحتاج إلى حساب بنكي صيني للدفع عبر الهاتف المحمول؟"
                       }
                     }
                   }
@@ -35863,7 +35863,7 @@ export const translations: Record<Language, Translations> = {
                   for: {
                     a: {
                       china: {
-                        visa: "中国ビザに招待状は必要ですか？"
+                        visa: "هل أحتاج إلى دعوة لتأشيرة الصين؟"
                       }
                     }
                   }
@@ -35874,7 +35874,7 @@ export const translations: Record<Language, Translations> = {
         },
         you: {
           speak: {
-            english: "英語は話せますか？"
+            english: "هل تتحدث الإنجليزية؟"
           }
         }
       },
@@ -35884,7 +35884,7 @@ export const translations: Record<Language, Translations> = {
             for: {
               this: {
                 city: {
-                  again: "この都市では再度表示しない"
+                  again: "لا تظهر مرة أخرى في هذه المدينة"
                 }
               }
             }
@@ -35895,7 +35895,7 @@ export const translations: Record<Language, Translations> = {
         alipay: {
           or: {
             wechat: {
-              pay: "AlipayまたはWeChat Payをダウンロードする"
+              pay: "قم بتنزيل Alipay أو WeChat Pay"
             }
           }
         },
@@ -35907,7 +35907,7 @@ export const translations: Record<Language, Translations> = {
                   before: {
                     arriving: {
                       in: {
-                        china: "これらのアプリを中国に到着する前にダウンロードして設定してください"
+                        china: "قم بتنزيل هذه التطبيقات وإعدادها قبل وصولك إلى الصين"
                       }
                     }
                   }
@@ -35923,7 +35923,7 @@ export const translations: Record<Language, Translations> = {
                 is: {
                   blocked: {
                     in: {
-                      china: "到着前にダウンロード - Google Playは中国でブロックされています"
+                      china: "قم بالتنزيل قبل الوصول - Google Play محظور في الصين"
                     }
                   }
                 }
@@ -35941,7 +35941,7 @@ export const translations: Record<Language, Translations> = {
                       for: {
                         china: {
                           visa: {
-                            appli: "中国ビザ申請およびビジネス訪問用のすぐに使えるバイリンガル招待状テンプレートをダウンロードしてください。必要事項を記入してすぐにダウンロードできます。"
+                            appli: "قم بتنزيل قوالب دعوة ثنائية اللغة جاهزة للاستخدام لتأشيرة الصين وزيارات العمل. املأ التفاصيل وقم بالتنزيل فورًا."
                           }
                         }
                       }
@@ -35950,7 +35950,7 @@ export const translations: Record<Language, Translations> = {
                   letters: {
                     for: {
                       visa: {
-                        applications: "ビザ申請用のすぐに使えるバイリンガル招待状をダウンロードする"
+                        applications: "قم بتنزيل دعوة ثنائية اللغة جاهزة للاستخدام لطلب التأشيرة"
                       }
                     }
                   }
@@ -35964,7 +35964,7 @@ export const translations: Record<Language, Translations> = {
             before: {
               arriving: {
                 in: {
-                  china: "これらのアプリを中国に到着する前にダウンロードする"
+                  china: "قم بتنزيل هذه التطبيقات قبل وصولك إلى الصين"
                 }
               }
             }
@@ -35981,15 +35981,15 @@ export const translations: Record<Language, Translations> = {
         }
       },
       emergency: {
-        assistance: "緊急時のサポート",
+        assistance: "الدعم في حالات الطوارئ",
         numbers: {
           in: {
-            china: "中国の緊急連絡先"
+            china: "جهات الاتصال في حالات الطوارئ في الصين"
           }
         },
-        procedures: "緊急時の手順",
+        procedures: "إجراءات الطوارئ",
         travel: {
-          documents: "緊急時の旅行書類"
+          documents: "وثائق السفر في حالات الطوارئ"
         }
       },
       enjoy: {
@@ -35999,7 +35999,7 @@ export const translations: Record<Language, Translations> = {
               support: {
                 for: {
                   team: {
-                    plans: "すべての機能をお楽しみください。チームプランについてはサポートにお問い合わせください。"
+                    plans: "استمتع بجميع الميزات. اتصل بالدعم لخطط الفريق."
                   }
                 }
               }
@@ -36015,13 +36015,13 @@ export const translations: Record<Language, Translations> = {
                 a: {
                   password: {
                     reset: {
-                      link: "パスワードリセットリンクを受信するにはメールアドレスを入力してください。"
+                      link: "أدخل بريدك الإلكتروني لتلقي رابط إعادة تعيين كلمة المرور."
                     }
                   },
                   passwordless: {
                     sign: {
                       in: {
-                        link: "パスワードレスサインインリンクを受信するにはメールアドレスを入力してください。"
+                        link: "أدخل بريدك الإلكتروني لتلقي رابط تسجيل الدخول بدون كلمة مرور."
                       }
                     }
                   }
@@ -36036,7 +36036,7 @@ export const translations: Record<Language, Translations> = {
           for: {
             getting: {
               around: {
-                china: "中国での移動に必要なアプリ"
+                china: "تطبيقات ضرورية للتنقل في الصين"
               }
             }
           },
@@ -36045,7 +36045,7 @@ export const translations: Record<Language, Translations> = {
               interface: {
                 for: {
                   navigating: {
-                    china: "中国での移動に便利な英語インターフェース付きアプリ"
+                    china: "تطبيقات بواجهة إنجليزية مفيدة للتنقل في الصين"
                   }
                 }
               }
@@ -36055,46 +36055,46 @@ export const translations: Record<Language, Translations> = {
         messaging: {
           and: {
             connectivity: {
-              apps: "必須のメッセージングおよび接続アプリ"
+              apps: "تطبيقات المراسلة والتواصل الأساسية"
             }
           }
         }
       },
       expo: {
         event: {
-          calendar: "展示会＆イベントカレンダー"
+          calendar: "تقويم المعارض والأحداث"
         }
       },
       failed: {
         to: {
           fetch: {
             city: {
-              scores: "都市のスコアを取得できませんでした："
+              scores: "تعذر الحصول على درجة المدينة:"
             },
-            profile: "プロフィールの取得に失敗しました："
+            profile: "فشل الحصول على الملف الشخصي:"
           },
           load: {
             amap: {
-              api: "Amap APIの読み込みに失敗しました"
+              api: "فشل تحميل Amap API"
             },
-            weather: "天気の読み込みに失敗しました"
+            weather: "فشل تحميل الطقس"
           },
           save: {
-            route: "ルートの保存に失敗しました："
+            route: "فشل حفظ المسار:"
           },
           search: {
             nearby: {
-              places: "近くの場所の検索に失敗しました："
+              places: "فشل البحث عن الأماكن القريبة:"
             }
           },
           update: {
-            profile: "プロフィールの更新に失敗しました："
+            profile: "فشل تحديث الملف الشخصي:"
           }
         }
       },
       fermented: {
         soybean: {
-          milk: "発酵豆乳"
+          milk: "حليب الصويا المخمر"
         }
       },
       fill: {
@@ -36110,7 +36110,7 @@ export const translations: Record<Language, Translations> = {
                           hotels: {
                             use: {
                               digital: {
-                                regist: "チェックイン時に一時滞在届を記入してください。一部のホテルではデジタル登録を使用しています。"
+                                regist: "املأ نموذج التسجيل المؤقت عند تسجيل الوصول. تستخدم بعض الفنادق التسجيل الرقمي."
                               }
                             }
                           }
@@ -36125,14 +36125,14 @@ export const translations: Record<Language, Translations> = {
         }
       },
       finding: {
-        restaurants: "レストランを探しています...",
+        restaurants: "جارٍ البحث عن مطاعم...",
         transport: {
-          options: "交通手段を探しています..."
+          options: "جارٍ البحث عن وسائل النقل..."
         }
       },
       flight: {
         booking: {
-          tips: "フライト予約のヒント"
+          tips: "نصائح حجز الطيران"
         }
       },
       for: {
@@ -36152,7 +36152,7 @@ export const translations: Record<Language, Translations> = {
                         required: {
                           but: {
                             strengthens: {
-                              yo: "観光ビザの場合、招待状は必ずしも必要ではありませんが、申請を強化します。ビジネスビザの場合は通常、中国企業からの招待状が必要です。"
+                              yo: "لتأشيرة السياحة، الدعوة ليست ضرورية دائمًا ولكنها تعزز الطلب. لتأشيرة الأعمال، عادة ما تكون الدعوة من شركة صينية مطلوبة."
                             }
                           }
                         }
@@ -36178,7 +36178,7 @@ export const translations: Record<Language, Translations> = {
                           but: {
                             with: {
                               limitations: {
-                                fo: "外国のクレジットカードはAlipayおよびWeChat Payで動作するようになりましたが、制限があります。すべての機能を利用するには中国の銀行口座が役立ちますが、必ずしも必要ではありません。"
+                                fo: "تعمل البطاقات الائتمانية الأجنبية الآن مع Alipay و WeChat Pay ولكن مع قيود. الحساب البنكي الصيني مفيد لجميع الميزات ولكنه ليس ضروريًا."
                               }
                             }
                           }
@@ -36194,12 +36194,12 @@ export const translations: Record<Language, Translations> = {
       },
       frequently: {
         asked: {
-          questions: "よくある質問"
+          questions: "الأسئلة الشائعة"
         }
       },
       gather: {
         required: {
-          documents: "必要な書類を準備する"
+          documents: "تحضير المستندات المطلوبة"
         }
       },
       generate: {
@@ -36210,7 +36210,7 @@ export const translations: Record<Language, Translations> = {
                 chatting: {
                   with: {
                     the: {
-                      ai: "AIとチャットして最初に旅程を作成する"
+                      ai: "الدردشة مع AI لإنشاء خط سير الرحلة أولاً"
                     }
                   }
                 }
@@ -36225,7 +36225,7 @@ export const translations: Record<Language, Translations> = {
             supported: {
               by: {
                 your: {
-                  browser: "お使いのブラウザはジオロケーションに対応していません"
+                  browser: "متصفحك لا يدعم تحديد الموقع الجغرافي"
                 }
               }
             }
@@ -36234,7 +36234,7 @@ export const translations: Record<Language, Translations> = {
       },
       getting: {
         exchange: {
-          rates: "為替レートを取得しています..."
+          rates: "جارٍ الحصول على سعر الصرف..."
         }
       },
       have: {
@@ -36248,7 +36248,7 @@ export const translations: Record<Language, Translations> = {
                       for: {
                         all: {
                           foreign: {
-                            gu: "パスポートを準備してください。ホテルではすべての外国人ゲストのパスポート登録が必要です。"
+                            gu: "جهز جواز سفرك. تتطلب الفنادق تسجيل جواز السفر لجميع الضيوف الأجانب."
                           }
                         }
                       }
@@ -36262,10 +36262,10 @@ export const translations: Record<Language, Translations> = {
       },
       hear: {
         chinese: {
-          pronunciation: "中国語の発音を聞く"
+          pronunciation: "استمع إلى النطق الصيني"
         },
         english: {
-          pronunciation: "英語の発音を聞く"
+          pronunciation: "استمع إلى النطق الإنجليزي"
         }
       },
       hotel: {
@@ -36277,7 +36277,7 @@ export const translations: Record<Language, Translations> = {
                   process: {
                     and: {
                       staying: {
-                        comfortably: "ホテルの種類、予約のヒント、チェックイン手続き、および快適に滞在する方法"
+                        comfortably: "أنواع الفنادق، نصائح الحجز، إجراءات تسجيل الوصول، وكيفية إقامة مريحة"
                       }
                     }
                   }
@@ -36293,7 +36293,7 @@ export const translations: Record<Language, Translations> = {
             get: {
               to: {
                 the: {
-                  hospital: "病院にはどうやって行けばいいですか？"
+                  hospital: "كيف أذهب إلى المستشفى؟"
                 }
               }
             },
@@ -36305,7 +36305,7 @@ export const translations: Record<Language, Translations> = {
                       as: {
                         a: {
                           foreign: {
-                            tourist: "外国人観光客としてWeChat PayとAlipayを使用するにはどうすればよいですか？"
+                            tourist: "كيف أستخدم WeChat Pay و Alipay كسائح أجنبي؟"
                           }
                         }
                       }
@@ -36325,7 +36325,7 @@ export const translations: Record<Language, Translations> = {
                     a: {
                       china: {
                         tourist: {
-                          visa: "中国観光ビザの取得にはどのくらい時間がかかりますか？"
+                          visa: "كم من الوقت يستغرق الحصول على تأشيرة سياحية للصين؟"
                         }
                       }
                     }
@@ -36341,7 +36341,7 @@ export const translations: Record<Language, Translations> = {
               i: {
                 bring: {
                   to: {
-                    china: "中国にはどのくらいの現金を持っていくべきですか？"
+                    china: "كم من النقود يجب أن أحمل معي إلى الصين؟"
                   }
                 }
               }
@@ -36351,7 +36351,7 @@ export const translations: Record<Language, Translations> = {
             a: {
               china: {
                 visa: {
-                  cost: "中国ビザの費用はいくらですか？"
+                  cost: "كم تكلفة تأشيرة الصين؟"
                 }
               }
             }
@@ -36363,7 +36363,7 @@ export const translations: Record<Language, Translations> = {
               a: {
                 china: {
                   tourist: {
-                    visa: "中国観光ビザの申請方法"
+                    visa: "كيفية التقدم للحصول على تأشيرة سياحية للصين"
                   }
                 }
               }
@@ -36375,7 +36375,7 @@ export const translations: Record<Language, Translations> = {
                 into: {
                   hotels: {
                     in: {
-                      china: "中国のホテルの予約とチェックイン方法"
+                      china: "كيفية حجز الفنادق وتسجيل الوصول في الصين"
                     }
                   }
                 }
@@ -36393,7 +36393,7 @@ export const translations: Record<Language, Translations> = {
                           china: {
                             as: {
                               a: {
-                                tourist: "中国で観光客としてSIMカードとインターネットアクセスを取得する方法"
+                                tourist: "كيفية الحصول على بطاقة SIM والوصول إلى الإنترنت في الصين كسائح"
                               }
                             }
                           }
@@ -36408,7 +36408,7 @@ export const translations: Record<Language, Translations> = {
               china: {
                 as: {
                   a: {
-                    tourist: "観光客として中国を移動する方法"
+                    tourist: "كيفية التنقل في الصين كسائح"
                   }
                 }
               },
@@ -36418,7 +36418,7 @@ export const translations: Record<Language, Translations> = {
                     metro: {
                       taxi: {
                         or: {
-                          bike: "中国の都市での移動方法：地下鉄、タクシー、それとも自転車？"
+                          bike: "كيفية التنقل في المدن الصينية: مترو، تاكسي، أم دراجة؟"
                         }
                       }
                     }
@@ -36432,7 +36432,7 @@ export const translations: Record<Language, Translations> = {
               china: {
                 as: {
                   a: {
-                    foreigner: "外国人として中国で支払いをする方法"
+                    foreigner: "كيفية الدفع في الصين كأجنبي"
                   }
                 }
               }
@@ -36447,7 +36447,7 @@ export const translations: Record<Language, Translations> = {
                       by: {
                         high: {
                           speed: {
-                            rail: "上海から西安まで高速鉄道で旅行する方法"
+                            rail: "كيفية السفر بالقطار فائق السرعة من شنغهاي إلى شيان"
                           }
                         }
                       }
@@ -36469,7 +36469,7 @@ export const translations: Record<Language, Translations> = {
                     food: {
                       destinations: {
                         in: {
-                          china: "私はグルメです。中国の最高のグルメスポットを教えてください"
+                          china: "أنا من محبي الطعام. أخبرني عن أفضل الأماكن لتناول الطعام في الصين"
                         }
                       }
                     }
@@ -36479,12 +36479,12 @@ export const translations: Record<Language, Translations> = {
             }
           },
           allergic: {
-            to: "私は...にアレルギーがあります"
+            to: "أنا أعاني من حساسية تجاه..."
           },
           sick: {
             i: {
               feel: {
-                unwell: "体調が悪い / 気分が優れません"
+                unwell: "أشعر بالتعب / لست على ما يرام"
               }
             }
           }
@@ -36513,7 +36513,7 @@ export const translations: Record<Language, Translations> = {
         },
         do: {
           not: {
-            understand: "理解できません"
+            understand: "لا أفهم"
           }
         },
         have: {
@@ -36529,7 +36529,7 @@ export const translations: Record<Language, Translations> = {
                             info: {
                               and: {
                                 transport: {
-                                  tip: "来週深圳でビジネスミーティングがあります。ビザの情報と交通のヒントが必要です"
+                                  tip: "لدي اجتماع عمل في شنتشن الأسبوع القادم. أحتاج معلومات التأشيرة ونصائح النقل"
                                 }
                               }
                             }
@@ -36541,18 +36541,18 @@ export const translations: Record<Language, Translations> = {
                 }
               }
             },
-            stomachache: "腹痛があります"
+            stomachache: "أعاني من آلام في المعدة"
           },
           been: {
-            assaulted: "暴行を受けました"
+            assaulted: "تعرضت لاعتداء"
           }
         },
         need: {
           a: {
-            translator: "通訳が必要です"
+            translator: "أحتاج مترجمًا"
           },
           an: {
-            ambulance: "救急車を呼ぶ必要があります"
+            ambulance: "أحتاج إلى استدعاء سيارة إسعاف"
           }
         },
         want: {
@@ -36569,12 +36569,12 @@ export const translations: Record<Language, Translations> = {
       },
       important: {
         allergy: {
-          information: "重要なアレルギー情報"
+          information: "معلومات حساسية مهمة"
         }
       },
       invitation: {
         letter: {
-          templates: "招待状のテンプレート"
+          templates: "قوالب الدعوة"
         }
       },
       is: {
@@ -36585,7 +36585,7 @@ export const translations: Record<Language, Translations> = {
                 mobile: {
                   payments: {
                     in: {
-                      china: "中国でモバイル決済を使用するのは安全ですか？"
+                      china: "هل استخدام الدفع عبر الهاتف المحمول في الصين آمن؟"
                     }
                   }
                 }
@@ -36603,7 +36603,7 @@ export const translations: Record<Language, Translations> = {
                   need: {
                     it: {
                       for: {
-                        emigration: "入国カードを安全に保管してください - 出国の際に必要になります"
+                        emigration: "احتفظ ببطاقة الدخول بأمان - ستحتاجها عند المغادرة"
                       }
                     }
                   }
@@ -36616,13 +36616,13 @@ export const translations: Record<Language, Translations> = {
           with: {
             tax: {
               refund: {
-                mark: "税金還付マーク付きの請求書を持っておいてください"
+                mark: "احتفظ بالفواتير التي تحمل علامة استرداد الضرائب"
               }
             }
           }
         },
         registration: {
-          slip: "登録証を保管してください"
+          slip: "احتفظ بشهادة التسجيل"
         },
         your: {
           hotel: {
@@ -36637,7 +36637,7 @@ export const translations: Record<Language, Translations> = {
                             checks: {
                               or: {
                                 other: {
-                                  hot: "ホテルの登録証を保管してください - 警察のチェックや他のホテル予約の際に必要になるかもしれません"
+                                  hot: "احتفظ بشهادة تسجيل الفندق - قد تحتاجها لفحوصات الشرطة أو حجوزات فنادق أخرى"
                                 }
                               }
                             }
@@ -36653,7 +36653,7 @@ export const translations: Record<Language, Translations> = {
         }
       },
       language: {
-        translation: "言語と翻訳"
+        translation: "اللغة والترجمة"
       },
       link: {
         a: {
@@ -36665,7 +36665,7 @@ export const translations: Record<Language, Translations> = {
                     card: {
                       to: {
                         enable: {
-                          payments: "Visa、Mastercard、または他の国際カードをリンクして支払いを有効にします"
+                          payments: "اربط Visa أو Mastercard أو بطاقة دولية أخرى لتفعيل الدفع"
                         }
                       }
                     }
@@ -36676,7 +36676,7 @@ export const translations: Record<Language, Translations> = {
           }
         },
         international: {
-          card: "国際カードのリンク"
+          card: "ربط البطاقة الدولية"
         }
       },
       local: {
@@ -36689,7 +36689,7 @@ export const translations: Record<Language, Translations> = {
                     dining: {
                       etiquette: {
                         in: {
-                          china: "中国のローカル料理、オーダーする際のヒント、食品安全、および食事のマナー"
+                          china: "الأطباق المحلية الصينية، نصائح الطلب، سلامة الغذاء، وآداب الطعام"
                         }
                       }
                     }
@@ -36704,7 +36704,7 @@ export const translations: Record<Language, Translations> = {
         information: {
           is: {
             currently: {
-              unavailable: "現在、位置情報が利用できません"
+              unavailable: "الموقع غير متاح حاليًا"
             }
           }
         },
@@ -36717,7 +36717,7 @@ export const translations: Record<Language, Translations> = {
                     in: {
                       your: {
                         browser: {
-                          setting: "位置情報の許可が拒否されました。ブラウザの設定で位置情報アクセスを有効にしてください"
+                          setting: "تم رفض إذن الموقع. يرجى تمكين الوصول إلى الموقع في إعدادات المتصفح"
                         }
                       }
                     }
@@ -36732,7 +36732,7 @@ export const translations: Record<Language, Translations> = {
             out: {
               please: {
                 try: {
-                  again: "位置情報の要求がタイムアウトしました。もう一度お試しください"
+                  again: "انتهت مهلة طلب الموقع. يرجى المحاولة مرة أخرى"
                 }
               }
             }
@@ -36766,7 +36766,7 @@ export const translations: Record<Language, Translations> = {
                 scams: {
                   and: {
                     embassy: {
-                      contacts: "パスポート紛失、医療緊急事態、盗難、詐欺、および大使館の連絡先"
+                      contacts: "فقدان جواز السفر، الطوارئ الطبية، السرقة، الاحتيال، واتصالات السفارة"
                     }
                   }
                 }
@@ -36834,14 +36834,14 @@ export const translations: Record<Language, Translations> = {
                 etiquette: {
                   and: {
                     meeting: {
-                      protocols: "中国のビジネス文化、接待マナー、会合プロトコルをマスターする"
+                      protocols: "إتقان ثقافة الأعمال الصينية، آداب الضيافة، وبروتوكول الاجتماعات"
                     }
                   },
                   gift: {
                     giving: {
                       customs: {
                         and: {
-                          meeting: "中国のビジネス文化、接待マナー、贈答習慣、会合プロトコルをマスターする。よくある間違いを避け、良好な関係を築く。"
+                          meeting: "إتقان ثقافة الأعمال الصينية، آداب الضيافة، عادات الهدايا، وبروتوكول الاجتماعات. تجنب الأخطاء الشائعة وبناء علاقات جيدة."
                         }
                       }
                     }
@@ -36855,7 +36855,7 @@ export const translations: Record<Language, Translations> = {
                   card: {
                     exchange: {
                       dining: {
-                        meetin: "中国のビジネスエチケット（名刺交換、接待、会合、贈答を含む）をマスターする。外国人ビジネスプロフェッショナル向けの実践的な注意事項。"
+                        meetin: "إتقان آداب الأعمال الصينية (بما في ذلك تبادل بطاقات العمل، الضيافة، الاجتماعات، والهدايا). نصائح عملية للمحترفين الأجانب."
                       }
                     }
                   }
@@ -36867,7 +36867,7 @@ export const translations: Record<Language, Translations> = {
       },
       maximum: {
         level: {
-          reached: "最大レベルに達しました！"
+          reached: "تم الوصول إلى الحد الأقصى!"
         }
       },
       medical: {
@@ -36882,7 +36882,7 @@ export const translations: Record<Language, Translations> = {
                         foreigners: {
                           a: {
                             good: {
-                              tra: "中国の医療治療は、特に外国人にとって高額になることがあります。安全な旅行には、医療保険付きの優れた旅行保険が不可欠です。"
+                              tra: "يمكن أن يكون العلاج الطبي في الصين مكلفًا، خاصة للأجانب. تأمين سفر جيد مع تغطية طبية ضروري للسفر الآمن."
                             }
                           }
                         }
@@ -36904,7 +36904,7 @@ export const translations: Record<Language, Translations> = {
         ai: {
           requests: {
             used: {
-              up: "月間AIリクエスト使用済み"
+              up: "تم استخدام طلبات AI الشهرية"
             }
           }
         }
@@ -36916,24 +36916,24 @@ export const translations: Record<Language, Translations> = {
         __________________________________________________________________________________________________________________: "hard.no.__________________________________________________________________________________________________________________",
         items: {
           to: {
-            display: "表示するアイテムがありません"
+            display: "لا توجد عناصر للعرض"
           }
         },
         itinerary: {
           to: {
-            display: "表示する旅程がありません"
+            display: "لا توجد خطط سفر للعرض"
           }
         },
         route: {
           data: {
             to: {
-              save: "保存するルートデータがありません。"
+              save: "لا توجد بيانات مسار لحفظها."
             }
           }
         },
         saved: {
           itineraries: {
-            yet: "まだ保存された旅程はありません"
+            yet: "لا توجد خطط سفر محفوظة بعد"
           }
         }
       },
@@ -36941,7 +36941,7 @@ export const translations: Record<Language, Translations> = {
         with: {
           soy: {
             bean: {
-              paste: "味噌入り麺"
+              paste: "نودلز بصلصة الصويا"
             }
           }
         }
@@ -36949,27 +36949,27 @@ export const translations: Record<Language, Translations> = {
       oauth: {
         provider: {
           not: {
-            enabled: "OAuthプロバイダーが有効になっていません"
+            enabled: "مزود OAuth غير مفعل"
           }
         }
       },
       open: {
         emergency: {
-          menu: "緊急メニューを開く"
+          menu: "فتح قائمة الطوارئ"
         }
       },
-      openinghoursspecification: "営業時間仕様",
+      openinghoursspecification: "مواصفات ساعات العمل",
       pan: {
         fried: {
           pork: {
-            buns: "焼き豚まん"
+            buns: "باوزي محشي باللحم المشوي"
           }
         }
       },
       passionate: {
         about: {
           exploring: {
-            china: "中国探索に情熱を注ぐ"
+            china: "شغف باستكشاف الصين"
           }
         }
       },
@@ -36984,7 +36984,7 @@ export const translations: Record<Language, Translations> = {
                       depending: {
                         on: {
                           hotel: {
-                            policy: "ホテルのポリシーにより、アリペイ、ウィーチャットペイ、またはクレジットカードでお支払いください。"
+                            policy: "وفقًا لسياسة الفندق، يرجى الدفع عبر Alipay أو WeChat Pay أو بطاقة الائتمان."
                           }
                         }
                       }
@@ -36999,19 +36999,19 @@ export const translations: Record<Language, Translations> = {
       payment: {
         apps: {
           you: {
-            need: "必要な支払いアプリ"
+            need: "تطبيقات الدفع المطلوبة"
           }
         }
       },
       pdf: {
         generation: {
-          failed: "PDF生成に失敗しました:"
+          failed: "فشل إنشاء PDF:"
         }
       },
       pian: {
         er: {
           chuan: {
-            noodles: "ピエンアルチュアン麺"
+            noodles: "نودلز بيان إر تشوان"
           }
         }
       },
@@ -37022,7 +37022,7 @@ export const translations: Record<Language, Translations> = {
               type: {
                 your: {
                   own: {
-                    below: "プロンプトを選択するか、下に独自のものを入力してください"
+                    below: "اختر موجهًا أو اكتب بنفسك أدناه"
                   }
                 }
               }
@@ -37037,7 +37037,7 @@ export const translations: Record<Language, Translations> = {
         your: {
           scenic: {
             spot: {
-              visit: "観光地訪問を計画する"
+              visit: "خطط لزيارة المعالم السياحية"
             }
           },
           trips: {
@@ -37049,7 +37049,7 @@ export const translations: Record<Language, Translations> = {
                       shows: {
                         and: {
                           industry: {
-                            events: "中国のトップトレードショーや業界イベントに合わせて旅行を計画する"
+                            events: "خطط رحلتك حول أفضل المعارض التجارية والأحداث الصناعية في الصين"
                           }
                         }
                       }
@@ -37070,23 +37070,23 @@ export const translations: Record<Language, Translations> = {
         allow: {
           popups: {
             to: {
-              print: "印刷するためにポップアップを許可してください"
+              print: "يرجى السماح بالنوافذ المنبثقة للطباعة"
             }
           }
         },
         call: {
           an: {
-            ambulance: "救急車を呼んでください"
+            ambulance: "اتصل بالإسعاف"
           },
           my: {
-            family: "家族に電話してください"
+            family: "اتصل بالعائلة"
           }
         },
         enter: {
           a: {
-            name: "名前を入力してください",
+            name: "أدخل الاسم",
             phone: {
-              number: "電話番号を入力してください"
+              number: "أدخل رقم الهاتف"
             }
           }
         },
@@ -37094,24 +37094,24 @@ export const translations: Record<Language, Translations> = {
           in: {
             to: {
               save: {
-                routes: "ルートを保存するにはサインインしてください"
+                routes: "سجل الدخول لحفظ المسار"
               }
             }
           }
         },
         speak: {
-          slowly: "ゆっくり話してください"
+          slowly: "تحدث ببطء"
         }
       },
       popular: {
         food: {
-          categories: "人気の食品カテゴリー"
+          categories: "فئات الأطعمة الشعبية"
         }
       },
       powered: {
         by: {
           advanced: {
-            ai: "高度なAI搭載"
+            ai: "مدعوم بالذكاء الاصطناعي المتقدم"
           }
         }
       },
@@ -37122,7 +37122,7 @@ export const translations: Record<Language, Translations> = {
               business: {
                 travelers: {
                   in: {
-                    china: "中国での外国人ビジネス旅行者向け実用ツール"
+                    china: "أدوات عملية للمسافرين الأجانب بغرض الأعمال في الصين"
                   }
                 }
               }
@@ -37132,11 +37132,11 @@ export const translations: Record<Language, Translations> = {
       },
       pre: {
         departure: {
-          preparation: "出発前の準備"
+          preparation: "التحضير قبل المغادرة"
         }
       },
       premium: {
-        customization: "プレミアムカスタマイズ"
+        customization: "تخصيص مميز"
       },
       process: {
         at: {
@@ -37144,7 +37144,7 @@ export const translations: Record<Language, Translations> = {
             departure: {
               hall: {
                 before: {
-                  security: "保安検査前の空港出発ロビーの手続き"
+                  security: "إجراءات صالة المغادرة في المطار قبل فحص الأمن"
                 }
               }
             }
@@ -37157,7 +37157,7 @@ export const translations: Record<Language, Translations> = {
             translators: {
               for: {
                 business: {
-                  visits: "ビジネス訪問向けのプロフェッショナル通訳者と翻訳者"
+                  visits: "مترجمون ومترجمون فوريون محترفون لزيارات العمل"
                 }
               }
             }
@@ -37177,7 +37177,7 @@ export const translations: Record<Language, Translations> = {
                           apps: {
                             and: {
                               ride: {
-                                hailing: "空港でSIMまたはeSIMを購入して、ナビゲーションアプリや配車サービスを利用する"
+                                hailing: "اشترِ SIM أو eSIM في المطار لاستخدام تطبيقات الملاحة وخدمات النقل"
                               }
                             }
                           }
@@ -37198,7 +37198,7 @@ export const translations: Record<Language, Translations> = {
               hangzhou: {
                 near: {
                   west: {
-                    lake: "西湖近くの杭州にあるブティックホテルを推奨"
+                    lake: "أوصي بفندق بوتيك في هانغتشو بالقرب من بحيرة الغرب"
                   }
                 }
               }
@@ -37208,21 +37208,21 @@ export const translations: Record<Language, Translations> = {
       },
       remove: {
         from: {
-          favorites: "お気に入りから削除"
+          favorites: "إزالة من المفضلة"
         }
       },
       reservation: {
-        required: "予約必須"
+        required: "الحجز مطلوب"
       },
       route: {
         saved: {
-          successfully: "ルートが保存されました！"
+          successfully: "تم حفظ المسار!"
         }
       },
       sanlitun: {
         chaoyang: {
           district: {
-            beijing: "北京・朝陽区・三里屯"
+            beijing: "سانليتون، منطقة تشاويانغ، بكين"
           }
         }
       },
@@ -37235,11 +37235,11 @@ export const translations: Record<Language, Translations> = {
           }
         },
         your: {
-          itineraries: "旅程を保存する"
+          itineraries: "حفظ خط سير الرحلة"
         }
       },
       saving: {
-        itinerary: "旅程を保存中..."
+        itinerary: "جارٍ حفظ خط سير الرحلة..."
       },
       scan: {
         merchant: {
@@ -37253,7 +37253,7 @@ export const translations: Record<Language, Translations> = {
                         code: {
                           to: {
                             complete: {
-                              payments: "支払いを行うには、店のQRコードを読み取るか、自分のQRコードを表示してください"
+                              payments: "لإجراء الدفع، امسح رمز QR الخاص بالمتجر أو اعرض رمز QR الخاص بك"
                             }
                           }
                         }
@@ -37270,42 +37270,42 @@ export const translations: Record<Language, Translations> = {
         spots: {
           in: {
             china: {
-              chinaconnect: "中国の観光地 - ChinaConnect"
+              chinaconnect: "المعالم السياحية في الصين - ChinaConnect"
             }
           }
         }
       },
       search: {
-        attractions: "観光地を検索...",
+        attractions: "ابحث عن معالم سياحية...",
         country: {
-          name: "国名を入力..."
+          name: "أدخل اسم الدولة..."
         }
       },
       searching: {
-        cities: "都市を検索中...",
+        cities: "جارٍ البحث عن مدينة...",
         for: {
-          attractions: "観光地を検索中..."
+          attractions: "جارٍ البحث عن معالم سياحية..."
         },
-        hotels: "ホテルを検索中...",
+        hotels: "جارٍ البحث عن فنادق...",
         the: {
-          web: "ウェブを検索中..."
+          web: "جارٍ البحث على الويب..."
         }
       },
       select: {
         a: {
           transport: {
-            mode: "交通手段を選択"
+            mode: "اختر وسيلة النقل"
           }
         },
         transport: {
-          mode: "交通手段を選択"
+          mode: "اختر وسيلة النقل"
         },
         your: {
           country: {
             to: {
               see: {
                 specific: {
-                  requirements: "国を選択して具体的な要件を確認する"
+                  requirements: "اختر دولة للتحقق من المتطلبات المحددة"
                 }
               }
             }
@@ -37319,7 +37319,7 @@ export const translations: Record<Language, Translations> = {
               password: {
                 for: {
                   authorizing: {
-                    transactions: "取引を承認するための安全な支払いパスワードを設定する"
+                    transactions: "قم بتعيين كلمة مرور دفع آمنة للموافقة على المعاملات"
                   }
                 }
               }
@@ -37327,13 +37327,13 @@ export const translations: Record<Language, Translations> = {
           }
         },
         payment: {
-          password: "支払いパスワードを設定"
+          password: "تعيين كلمة مرور الدفع"
         }
       },
       share: {
         your: {
           dining: {
-            experience: "食事体験をシェアする..."
+            experience: "شارك تجربة تناول الطعام..."
           }
         }
       },
@@ -37347,7 +37347,7 @@ export const translations: Record<Language, Translations> = {
                     apps: {
                       for: {
                         staying: {
-                          connected: "SIM/eSIMオプション、VPN設定、接続を維持するための必須アプリ"
+                          connected: "خيارات SIM/eSIM، إعداد VPN، وتطبيقات أساسية للبقاء متصلاً"
                         }
                       }
                     }
@@ -37360,12 +37360,12 @@ export const translations: Record<Language, Translations> = {
       },
       something: {
         went: {
-          wrong: "問題が発生しました"
+          wrong: "حدثت مشكلة"
         }
       },
       sorry: {
         i: {
-          encountered: "すみません、遭遇した"
+          encountered: "عذرًا، واجهنا"
         }
       },
       sos: {
@@ -37373,7 +37373,7 @@ export const translations: Record<Language, Translations> = {
           tap: {
             to: {
               call: {
-                police: "緊急SOS - タップして警察に電話"
+                police: "SOS للطوارئ - اضغط للاتصال بالشرطة"
               }
             }
           }
@@ -37389,7 +37389,7 @@ export const translations: Record<Language, Translations> = {
       stay: {
         connected: {
           in: {
-            china: "中国でつながる"
+            china: "ابقَ متصلاً في الصين"
           }
         }
       },
@@ -37406,7 +37406,7 @@ export const translations: Record<Language, Translations> = {
                           in: {
                             procedures: {
                               in: {
-                                chin: "中国への外国人旅行者向けホテル予約とチェックイン手続きのステップバイステップガイド"
+                                chin: "دليل خطوة بخطوة لحجز الفنادق وإجراءات تسجيل الوصول للمسافرين الأجانب إلى الصين"
                               }
                             }
                           }
@@ -37435,7 +37435,7 @@ export const translations: Record<Language, Translations> = {
                           and: {
                             using: {
                               mobile: {
-                                pay: "中国でのモバイル決済、現金、カードの使用に関する国際旅行者向けステップバイステップガイド"
+                                pay: "دليل خطوة بخطوة للمسافرين الدوليين حول استخدام الدفع عبر الهاتف المحمول والنقد والبطاقات في الصين"
                               }
                             }
                           }
@@ -37450,7 +37450,7 @@ export const translations: Record<Language, Translations> = {
                       china: {
                         including: {
                           airport: {
-                            tran: "中国での交通機関の案内（空港送迎、地下鉄、高速鉄道、タクシー、都市間交通を含む）に関するステップバイステップガイド"
+                            tran: "دليل خطوة بخطوة للتنقل في الصين (بما في ذلك النقل من المطار، المترو، القطارات فائقة السرعة، سيارات الأجرة، والنقل بين المدن)"
                           }
                         }
                       }
@@ -37462,7 +37462,7 @@ export const translations: Record<Language, Translations> = {
                     office: {
                       and: {
                         other: {
-                          entities: "WFOE、駐在員事務所およびその他のエンティティに関するステップバイステップガイド"
+                          entities: "دليل خطوة بخطوة حول WFOE والمكاتب التمثيلية والكيانات الأخرى"
                         }
                       }
                     }
@@ -37478,7 +37478,7 @@ export const translations: Record<Language, Translations> = {
                           or: {
                             other: {
                               entity: {
-                                i: "外国投資家向け中国でのWFOE、駐在員事務所またはその他のエンティティ登録に関するステップバイステップガイド。完全なタイムラインと必要書類リスト。"
+                                i: "دليل خطوة بخطوة للمستثمرين الأجانب لتسجيل WFOE أو مكتب تمثيلي أو كيان آخر في الصين. الجدول الزمني الكامل وقائمة المستندات المطلوبة."
                               }
                             }
                           }
@@ -37497,7 +37497,7 @@ export const translations: Record<Language, Translations> = {
                               office: {
                                 in: {
                                   china: {
-                                    doc: "中国でのWFOE、合弁会社（JV）、駐在員事務所の設立に関するステップバイステップガイド。必要書類、タイムライン、コスト、および2026年の最新の規制更新。"
+                                    doc: "دليل خطوة بخطوة لإنشاء WFOE أو مشروع مشترك (JV) أو مكتب تمثيلي في الصين. المستندات المطلوبة والجدول الزمني والتكاليف وآخر التحديثات التنظيمية لعام 2026."
                                   }
                                 }
                               }
@@ -37516,7 +37516,7 @@ export const translations: Record<Language, Translations> = {
       stir: {
         fried: {
           beef: {
-            offal: "牛肉ホルモンの炒め物"
+            offal: "لحم بقري مقلي مع الهورمون"
           }
         }
       },
@@ -37529,7 +37529,7 @@ export const translations: Record<Language, Translations> = {
                   center: {
                     with: {
                       applicable: {
-                        fees: "該当する料金を添えて中国大使館/領事館/ビザセンターに提出"
+                        fees: "قدم إلى السفارة/القنصلية/مركز التأشيرات الصيني مع الرسوم المطبقة"
                       }
                     }
                   }
@@ -37541,18 +37541,18 @@ export const translations: Record<Language, Translations> = {
       },
       switch: {
         map: {
-          provider: "地図プロバイダーを切り替える"
+          provider: "تبديل مزود الخريطة"
         },
         to: {
           google: {
-            maps: "Googleマップに切り替える"
+            maps: "التبديل إلى خرائط جوجل"
           }
         }
       },
       tap: {
         to: {
           hear: {
-            pronunciation: "タップして発音を聞く"
+            pronunciation: "اضغط للاستماع إلى النطق"
           }
         }
       },
@@ -37565,7 +37565,7 @@ export const translations: Record<Language, Translations> = {
                   shopping: {
                     and: {
                       departure: {
-                        checklist: "税金還付、空港交通、免税ショッピング、出国チェックリスト"
+                        checklist: "استرداد الضرائب، النقل من المطار، التسوق المعفى من الرسوم، وقائمة مراجعة المغادرة"
                       }
                     }
                   }
@@ -37577,64 +37577,64 @@ export const translations: Record<Language, Translations> = {
       },
       taxi: {
         useful: {
-          phrases: "タクシー便利なフレーズ"
+          phrases: "عبارات مفيدة لسيارات الأجرة"
         }
       },
       thank: {
         you: {
           for: {
             your: {
-              subscription: "ご購読ありがとうございます！"
+              subscription: "شكرًا لاشتراكك!"
             }
           }
         }
       },
       toggle: {
         temperature: {
-          unit: "温度単位を切り替える"
+          unit: "تبديل وحدة درجة الحرارة"
         }
       },
       translation: {
-        interpreting: "翻訳・通訳",
-        services: "翻訳サービス"
+        interpreting: "الترجمة والترجمة الفورية",
+        services: "خدمات الترجمة"
       },
       transport: {
         navigation: {
-          apps: "交通・ナビゲーションアプリ"
+          apps: "تطبيقات النقل والملاحة"
         }
       },
       travel: {
         insurance: {
           is: {
-            essential: "旅行保険は必須です"
+            essential: "تأمين السفر إلزامي"
           }
         }
       },
       try: {
         these: {
           quick: {
-            prompts: "これらの簡単なプロンプトを試してみてください"
+            prompts: "جرب هذه الموجزات البسيطة"
           }
         }
       },
       unlimited: {
         ai: {
-          requests: "無制限のAIリクエスト"
+          requests: "طلبات AI غير محدودة"
         }
       },
       unsaved: {
-        conversation: "未保存の会話"
+        conversation: "محادثات غير محفوظة"
       },
       upgrade: {
         to: {
           a: {
             paid: {
-              plan: "有料プランにアップグレード"
+              plan: "الترقية إلى خطة مدفوعة"
             }
           },
           continue: {
             using: {
-              ai: "AIを使い続けるためにアップグレード"
+              ai: "قم بالترقية لمواصلة استخدام AI"
             }
           }
         }
@@ -37664,7 +37664,7 @@ export const translations: Record<Language, Translations> = {
                           sites: {
                             often: {
                               have: {
-                                be: "Booking.com、Ctrip、またはFliggyを使用してホテルを予約してください。国際サイトは英語サポートが優れていることが多いです"
+                                be: "احجز الفنادق عبر Booking.com أو Ctrip أو Fliggy. غالبًا ما توفر المواقع الدولية دعمًا أفضل باللغة الإنجليزية"
                               }
                             }
                           }
@@ -37683,7 +37683,7 @@ export const translations: Record<Language, Translations> = {
               banks: {
                 for: {
                   better: {
-                    security: "銀行内のカードマシンを使ってより高いセキュリティを確保"
+                    security: "استخدم أجهزة الصراف الآلي داخل البنوك لمزيد من الأمان"
                   }
                 }
               }
@@ -37698,7 +37698,7 @@ export const translations: Record<Language, Translations> = {
                   cheaper: {
                     than: {
                       taxi: {
-                        queue: "空港ピックアップにはDidiアプリを使用 - タクシー待ち行列より安い"
+                        queue: "استخدم تطبيق Didi للنقل من المطار - أرخص من طوابير سيارات الأجرة"
                       }
                     }
                   }
@@ -37721,7 +37721,7 @@ export const translations: Record<Language, Translations> = {
                               have: {
                                 the: {
                                   best: {
-                                    e: "国際カードにはICBC、中国銀行、またはHSBCのATMを使用してください。彼らは最高の為替レートと最も広いカバレッジを持っています"
+                                    e: "استخدم أجهزة الصراف الآلي التابعة لـ ICBC أو بنك الصين أو HSBC للبطاقات الدولية. لديهم أفضل أسعار صرف وأوسع تغطية"
                                   }
                                 }
                               }
@@ -37739,21 +37739,21 @@ export const translations: Record<Language, Translations> = {
       },
       useful: {
         transport: {
-          phrases: "便利な交通フレーズ"
+          phrases: "عبارات نقل مفيدة"
         }
       },
       user: {
         accepted: {
           the: {
             install: {
-              prompt: "ユーザーがインストールプロンプトを受け入れました"
+              prompt: "قبل المستخدم مطالبة التثبيت"
             }
           }
         },
         dismissed: {
           the: {
             install: {
-              prompt: "ユーザーがインストールプロンプトを却下しました"
+              prompt: "رفض المستخدم مطالبة التثبيت"
             }
           }
         }
@@ -37769,7 +37769,7 @@ export const translations: Record<Language, Translations> = {
                       bookings: {
                         and: {
                           proof: {
-                            of: "有効なパスポート、ビザ申請書、写真、旅行日程、ホテル予約、および財政証明"
+                            of: "جواز سفر ساري المفعول، نموذج طلب تأشيرة، صور، خط سير الرحلة، حجوزات الفنادق، وإثبات مالي"
                           }
                         }
                       }
@@ -37784,13 +37784,13 @@ export const translations: Record<Language, Translations> = {
       verify: {
         identity: {
           with: {
-            passport: "パスポートで身元を確認する"
+            passport: "تحقق من الهوية بجواز السفر"
           }
         }
       },
       visa: {
         overstay: {
-          warning: "ビザのオーバーステイ警告"
+          warning: "تحذير تجاوز مدة التأشيرة"
         },
         requirements: {
           application: {
@@ -37800,7 +37800,7 @@ export const translations: Record<Language, Translations> = {
                   documents: {
                     for: {
                       entering: {
-                        china: "中国入国に必要なビザ要件、申請プロセス、および必須書類"
+                        china: "متطلبات التأشيرة للدخول إلى الصين، عملية التقديم، والمستندات المطلوبة"
                       }
                     }
                   }
@@ -37809,7 +37809,7 @@ export const translations: Record<Language, Translations> = {
             }
           },
           by: {
-            country: "国別のビザ要件"
+            country: "متطلبات التأشيرة حسب الدولة"
           }
         }
       },
@@ -37819,7 +37819,7 @@ export const translations: Record<Language, Translations> = {
             error: {
               loading: {
                 this: {
-                  content: "このコンテンツの読み込み中にエラーが発生しました"
+                  content: "حدث خطأ أثناء تحميل هذا المحتوى"
                 }
               }
             }
@@ -37830,7 +37830,7 @@ export const translations: Record<Language, Translations> = {
         lake: {
           fish: {
             in: {
-              vinegar: "西湖酢漬けの魚"
+              vinegar: "سمك ويست ليك بالخل"
             }
           }
         }
@@ -37841,7 +37841,7 @@ export const translations: Record<Language, Translations> = {
             i: {
               use: {
                 in: {
-                  china: "中国ではどのATMを使えばいいですか？"
+                  china: "ما هي أجهزة الصراف الآلي التي يجب استخدامها في الصين؟"
                 }
               }
             }
@@ -37854,7 +37854,7 @@ export const translations: Record<Language, Translations> = {
                 know: {
                   before: {
                     visiting: {
-                      china: "中国訪問前に知っておくべき文化的エチケットは何ですか？"
+                      china: "ما هي الآداب الثقافية التي يجب أن أعرفها قبل زيارة الصين؟"
                     }
                   }
                 }
@@ -37869,7 +37869,7 @@ export const translations: Record<Language, Translations> = {
                 are: {
                   available: {
                     in: {
-                      china: "中国ではどのような緊急電話番号とサービスが利用できますか？"
+                      china: "ما هي أرقام الطوارئ والخدمات المتاحة في الصين؟"
                     }
                   }
                 }
@@ -37890,7 +37890,7 @@ export const translations: Record<Language, Translations> = {
                             a: {
                               visa: {
                                 on: {
-                                  arrival: "中国訪問にはどのようなビザが必要ですか？到着時にビザを取得できますか？"
+                                  arrival: "ما هي التأشيرة التي أحتاجها لزيارة الصين؟ هل يمكنني الحصول عليها عند الوصول؟"
                                 }
                               }
                             }
@@ -37912,7 +37912,7 @@ export const translations: Record<Language, Translations> = {
               to: {
                 go: {
                   in: {
-                    china: "中国でどこに行きたいですか？"
+                    china: "أين تريد أن تذهب في الصين؟"
                   }
                 }
               }
@@ -37921,12 +37921,12 @@ export const translations: Record<Language, Translations> = {
         },
         is: {
           the: {
-            embassy: "大使館はどこですか？",
-            hospital: "病院はどこですか？",
+            embassy: "أين السفارة؟",
+            hospital: "أين المستشفى؟",
             police: {
-              station: "警察署はどこですか？"
+              station: "أين مركز الشرطة؟"
             },
-            restroom: "トイレはどこですか？"
+            restroom: "أين الحمام؟"
           }
         }
       },
@@ -37986,7 +37986,7 @@ export const translations: Record<Language, Translations> = {
                       that: {
                         wasn: {
                           t: {
-                            saved: "前回のセッションで保存されなかった会話があります"
+                            saved: "لديك محادثات غير محفوظة من الجلسة السابقة"
                           }
                         }
                       }
@@ -38006,7 +38006,7 @@ export const translations: Record<Language, Translations> = {
                     upgrading: {
                       for: {
                         more: {
-                          requests: "月間制限に近づいています。より多くのリクエストにはアップグレードをご検討ください"
+                          requests: "أنت تقترب من الحد الشهري. فكر في الترقية لمزيد من الطلبات"
                         }
                       }
                     }
@@ -38042,7 +38042,7 @@ export const translations: Record<Language, Translations> = {
                 }
               },
               highest: {
-                plan: "あなたは最高のプランをご利用中です！"
+                plan: "أنت على أفضل خطة!"
               }
             }
           }
@@ -38054,7 +38054,7 @@ export const translations: Record<Language, Translations> = {
                 limit: {
                   upgrade: {
                     to: {
-                      continue: "月間制限に達しました。アップグレードして続行してください"
+                      continue: "لقد وصلت إلى الحد الشهري. قم بالترقية للمتابعة"
                     }
                   }
                 }
@@ -38067,7 +38067,7 @@ export const translations: Record<Language, Translations> = {
         personal: {
           china: {
             travel: {
-              intelligence: "あなたの個人的な中国旅行情報"
+              intelligence: "معلومات سفرك الشخصية إلى الصين"
             }
           }
         },
@@ -38075,7 +38075,7 @@ export const translations: Record<Language, Translations> = {
           includes: {
             unlimited: {
               ai: {
-                requests: "あなたのプランには無制限のAIリクエストが含まれています"
+                requests: "تتضمن خطتك طلبات AI غير محدودة"
               }
             }
           }
@@ -38132,16 +38132,16 @@ export const translations: Record<Language, Translations> = {
       featuredDestinations: "بناءً على الوجهات الشعبية"
     },
     invitationLetter: {
-      allowPopups: "印刷のためにポップアップを許可してください",
-      bilingual: "バイリンガル",
-      downloadPdf: "PDFをダウンロード",
-      edit: "編集",
-      english: "英語",
-      generating: "生成中...",
-      pdfFailed: "PDF生成に失敗しました：",
-      pdfFailedRetry: "PDF生成に失敗しました。もう一度お試しください。",
+      allowPopups: "يرجى السماح بالنوافذ المنبثقة للطباعة",
+      bilingual: "ثنائي اللغة",
+      downloadPdf: "تنزيل PDF",
+      edit: "تحرير",
+      english: "الإنجليزية",
+      generating: "جارٍ الإنشاء...",
+      pdfFailed: "فشل إنشاء PDF:",
+      pdfFailedRetry: "فشل إنشاء PDF. يرجى المحاولة مرة أخرى.",
       png: "PNG",
-      preview: "プレビュー"
+      preview: "معاينة"
     },
     language: {
       chinese: "الصينية",
@@ -38149,8 +38149,8 @@ export const translations: Record<Language, Translations> = {
       current: "الحالي",
       dir: "rtl",
       english: "الإنجليزية",
-      name: "中文（简体）",
-      nativeName: "简体中文",
+      name: "الصينية (المبسطة)",
+      nativeName: "الصينية المبسطة",
       switchTo: "الانتقال إلى"
     },
     loginPage: {
@@ -38166,7 +38166,7 @@ export const translations: Record<Language, Translations> = {
       guide: "دليل السفر",
       home: "الصفحة الرئيسية",
       restaurants: "المطاعم",
-      scenicSpots: "景勝地",
+      scenicSpots: "المعالم السياحية",
       selectLanguage: "اختيار اللغة",
       signIn: "Sign in",
       tagline: "اكتشف الصين مع الذكاء الاصطناعي"
@@ -38247,29 +38247,29 @@ export const translations: Record<Language, Translations> = {
       welcome: "مرحبًا بكم في ChinaConnect!"
     },
     paymentGuide: {
-      atmHeading: "国際カードに強いATM",
-      atmTip1: "空港や銀行のATMが最良の為替レートです",
-      atmTip2: "国際的な引き出し手数料について銀行に確認してください",
-      atmTip3: "一部のATMは外国カードの引き出しを制限します（最大2000元）",
-      atmTip4: "銀行内のATMを使うとより安全です",
-      faqsHeading: "よくある質問",
-      securityWarning: "セキュリティ警告",
-      setupHeading: "設定方法",
+      atmHeading: "أجهزة صراف آلي جيدة للبطاقات الدولية",
+      atmTip1: "أجهزة الصراف الآلي في المطار والبنوك تقدم أفضل أسعار صرف",
+      atmTip2: "تحقق مع البنك الذي تتعامل معه بشأن رسوم السحب الدولي",
+      atmTip3: "بعض أجهزة الصراف الآلي تحد من السحب للبطاقات الأجنبية (بحد أقصى 2000 يوان)",
+      atmTip4: "استخدم أجهزة الصراف الآلي داخل البنوك لمزيد من الأمان",
+      faqsHeading: "الأسئلة الشائعة",
+      securityWarning: "تحذير أمني",
+      setupHeading: "طريقة الإعداد",
       tabAlipay: "Alipay",
       tabAtm: "ATM",
-      tabCash: "現金・カード",
-      tabFaq: "よくある質問",
-      tabTax: "税還付",
+      tabCash: "النقد والبطاقات",
+      tabFaq: "الأسئلة الشائعة",
+      tabTax: "استرداد الضرائب",
       tabWechat: "WeChat Pay",
-      taxTip1: "セキュリティチェック前に空港出発ロビーで行ってください",
-      taxTip2: "対象店舗での最低購入額は500元",
-      taxTip3: "還付率：品目カテゴリーにより3-11%",
-      taxTip4: "税還付マーク付きの発注書を保管してください"
+      taxTip1: "قم بذلك في صالة المغادرة بالمطار قبل فحص الأمن",
+      taxTip2: "الحد الأدنى للشراء في المتاجر المشاركة هو 500 يوان",
+      taxTip3: "نسبة الاسترداد: 3-11% حسب فئة السلعة",
+      taxTip4: "احتفظ بالفواتير التي تحمل علامة استرداد الضرائب"
     },
     priceTransparency: {
-      all: "すべて",
-      showComparison: "比較表示",
-      showSimplified: "簡略表示"
+      all: "الكل",
+      showComparison: "عرض مقارن",
+      showSimplified: "عرض مبسط"
     },
     pricing: {
       annualNote: "Billed annually at ¥659 (save ¥169)",
@@ -38503,7 +38503,7 @@ export const translations: Record<Language, Translations> = {
       title: "دليل المطاعم"
     },
     scamPrevention: {
-      all: "すべて"
+      all: "الكل"
     },
     scenicSpots: {
       allSpots: "All Scenic Spots",
@@ -38528,28 +38528,28 @@ export const translations: Record<Language, Translations> = {
       shareTip: "مشاركة مع الأصدقاء"
     },
     transportGuide: {
-      airportWifi: "空港WiFiが利用可能な場合が多い — SIM購入前に接続を",
-      arrivalByPlane: "飛行機で",
-      arrivalByTrain: "電車で",
-      arrivalTip: "入国カードは大切に保管してください — 入管審査で必要になります",
-      bookingPlatforms: "予約プラットフォーム",
-      didiTip: "空港送迎にはDidiアプリが便利 — タクシーキューより安い",
-      howToUse: "使い方：",
-      proTips: "プロのヒント：",
-      seatClasses: "シートクラス",
-      selectMode: "交通手段を選択",
-      selectModeHint: "交通手段を選択してください",
-      tabArrival: "到着",
-      tabDistances: "距離",
-      tabIntercity: "都市間",
-      tabLocal: "市内の交通",
-      tabPhrases: "フレーズ集",
-      tabTaxi: "タクシー/Didi",
-      tabTrains: "鉄道予約",
-      taxiPhrases: "タクシー便利フレーズ",
-      trainBookingTips: "鉄道予約のコツ",
+      airportWifi: "واي فاي المطار متاح عادةً — اتصل قبل شراء SIM",
+      arrivalByPlane: "بالطائرة",
+      arrivalByTrain: "بالقطار",
+      arrivalTip: "احتفظ ببطاقة الدخول بأمان — ستحتاجها عند مراجعة الهجرة",
+      bookingPlatforms: "منصات الحجز",
+      didiTip: "استخدم تطبيق Didi للنقل من المطار — أرخص من طوابير سيارات الأجرة",
+      howToUse: "طريقة الاستخدام:",
+      proTips: "نصائح احترافية:",
+      seatClasses: "درجة المقعد",
+      selectMode: "اختر وسيلة النقل",
+      selectModeHint: "يرجى اختيار وسيلة النقل",
+      tabArrival: "الوصول",
+      tabDistances: "المسافة",
+      tabIntercity: "بين المدن",
+      tabLocal: "النقل داخل المدينة",
+      tabPhrases: "قاموس العبارات",
+      tabTaxi: "تاكسي / Didi",
+      tabTrains: "حجز القطار",
+      taxiPhrases: "عبارات مفيدة لسيارات الأجرة",
+      trainBookingTips: "نصائح حجز القطار",
       tripCta: "Trip.com / Ctrip",
-      usefulPhrases: "交通便利フレーズ"
+      usefulPhrases: "عبارات نقل مفيدة"
     },
     userPage: {
       heading: "الملف الشخصي",
@@ -38557,42 +38557,42 @@ export const translations: Record<Language, Translations> = {
       title: "ملف المستخدم - ChinaConnect"
     },
     visaPage: {
-      appsHeading: "必須アプリ",
-      appsSubtitle: "到着前にダウンロード — Google Playは中国で利用不可",
-      beforeBuying: "購入前に",
-      digitalCopiesDesc: "デジタルコピーをクラウド（Google Drive、iCloud）に保管し、家族と共有。原本とは別に物理コピーを保管してください。",
-      duration: "滞在期間：",
-      faqHeading: "よくある質問",
-      fee: "料金：",
-      finalPreparations: "最終準備",
-      flightHeading: "フライト予約のコツ",
-      importantReminder: "重要なお知らせ",
+      appsHeading: "التطبيقات الأساسية",
+      appsSubtitle: "قم بالتنزيل قبل الوصول — Google Play غير متاح في الصين",
+      beforeBuying: "قبل الشراء",
+      digitalCopiesDesc: "احتفظ بنسخة رقمية في السحابة (Google Drive، iCloud) وشاركها مع العائلة. احتفظ بنسخة ورقية منفصلة عن الأصل.",
+      duration: "مدة الإقامة:",
+      faqHeading: "الأسئلة الشائعة",
+      fee: "التكلفة:",
+      finalPreparations: "التحضيرات النهائية",
+      flightHeading: "نصائح حجز الطيران",
+      importantReminder: "إشعار مهم",
       insuranceDesc: "Medical treatment in China can be expensive, especially for foreigners. A good travel insurance policy with medical coverage is non-negotiable for safe travel.",
-      insuranceHeading: "旅行保険は必須",
-      insuranceTipsHeading: "保険選びのポイント",
-      overstayWarning: "ビザオーバーステイ警告",
-      processing: "処理期間：",
-      recommendedProviders: "おすすめプロバイダー",
-      reqHeading: "国別ビザ要件",
-      reqSubtitle: "国を選択して具体的な要件を確認",
-      requirements: "必要書類：",
-      tabApps: "アプリ・VPN",
-      tabChecklist: "出発前",
-      tabDocuments: "必要書類",
-      tabInsurance: "保険",
-      tabOverview: "概要",
-      tabProcess: "手続き",
-      tabTips: "コツ・よくある質問",
-      weeksBefore: "出発までの週数（4-6週間前）",
-      weeksBeforeDesc: "出発の4-6週間前に完了してください"
+      insuranceHeading: "تأمين السفر إلزامي",
+      insuranceTipsHeading: "نقاط اختيار التأمين",
+      overstayWarning: "تحذير تجاوز مدة التأشيرة",
+      processing: "مدة المعالجة:",
+      recommendedProviders: "مزودون موصى بهم",
+      reqHeading: "متطلبات التأشيرة حسب الدولة",
+      reqSubtitle: "اختر دولة للتحقق من المتطلبات المحددة",
+      requirements: "المستندات المطلوبة:",
+      tabApps: "التطبيقات وVPN",
+      tabChecklist: "قبل المغادرة",
+      tabDocuments: "المستندات المطلوبة",
+      tabInsurance: "التأمين",
+      tabOverview: "نظرة عامة",
+      tabProcess: "الإجراءات",
+      tabTips: "نصائح وأسئلة شائعة",
+      weeksBefore: "أسابيع قبل المغادرة (4-6 أسابيع)",
+      weeksBeforeDesc: "أكمل قبل 4-6 أسابيع من المغادرة"
     }
   },
   fa: {
     accommodationGuide: {
-      tabBooking: "予約のコツ",
-      tabCheckin: "チェックインの流れ",
-      tabFaqs: "よくある質問",
-      tabTypes: "ホテルタイプ"
+      tabBooking: "نکات رزرو",
+      tabCheckin: "روند ورود",
+      tabFaqs: "سوالات متداول",
+      tabTypes: "نوع هتل"
     },
     accountPage: {
       active: "فعال",
@@ -38906,18 +38906,18 @@ export const translations: Record<Language, Translations> = {
     cityAttractions: {
       categoryAll: "همه",
       categoryLabel: "دسته‌بندی",
-      chinanewsDesc: "公式観光情報",
-      ctripDesc: "観光地のレビュー・予約",
+      chinanewsDesc: "اطلاعات رسمی گردشگری",
+      ctripDesc: "بررسی و رزرو جاذبه‌های گردشگری",
       disclaimer: "ساعات کار، قیمت بلیط و شماره تلفن ممکن است تغییر کند. توصیه می‌شود از طریق وب‌سایت رسمی جاذبه یا تماس تلفنی اطلاعات را بررسی کنید.",
-      mafengwoDesc: "中国最大の旅行コミュニティ",
-      mctDesc: "政府観光データ",
+      mafengwoDesc: "بزرگترین جامعه مسافرتی چین",
+      mctDesc: "داده‌های گردشگری دولتی",
       openOnMap: "باز کردن روی نقشه",
       openingHours: "ساعات باز بودن",
       subtitle: "جاذبه‌های دیدنی، موزه‌ها و شگفتی‌های طبیعی.",
       ticketPrice: "قیمت بلیط",
       tipsHeader: "نکات",
       title: "جاذبه‌های {city}",
-      tripadvisorDesc: "海外の観光地レビュー",
+      tripadvisorDesc: "بررسی جاذبه‌های گردشگری خارجی",
       viewAll: "نمایش همه جاذبه‌ها در {city}",
       viewDetails: "مشاهده جزئیات",
       viewMore: "نمایش جاذبه‌های بیشتر"
@@ -38925,9 +38925,9 @@ export const translations: Record<Language, Translations> = {
     cityFood: {
       avgPrice: "میانگین قیمت",
       cuisine: "آشپزی",
-      dataSourcesDesc: "権威ある情報源からまとめた飲食店データ。訪問前に詳細を確認してください：",
-      dataSourcesHeading: "データソースと参考資料",
-      dianpingDesc: "中国最大のローカル生活サービスプラットフォーム",
+      dataSourcesDesc: "داده‌های رستوران‌ها که از منابع معتبر جمع‌آوری شده است. قبل از بازدید، جزئیات را بررسی کنید:",
+      dataSourcesHeading: "منابع داده و مراجع",
+      dianpingDesc: "بزرگترین پلتفرم خدمات زندگی محلی چین",
       disclaimer: "شماره تلفن و آدرس ممکن است تغییر کند. توصیه می‌شود از طریق کانال‌های رسمی رستوران یا تماس تلفنی اطلاعات را بررسی کنید.",
       filterAll: "همه",
       filterBlackPearl: "مروارید سیاه",
@@ -38937,16 +38937,16 @@ export const translations: Record<Language, Translations> = {
       filterMichelin: "میشلین",
       filteringLabel: "فیلترینگ:",
       googleMaps: "نقشه گوگل",
-      meituanDesc: "出前・レビュープラットフォーム",
-      michelinDesc: "国際的に権威ある飲食店評価",
-      nextCity: "次の都市",
-      previousCity: "前の都市",
+      meituanDesc: "پلتفرم سفارش غذا و بررسی",
+      michelinDesc: "ارزیابی بین‌المللی معتبر رستوران‌ها",
+      nextCity: "شهر بعدی",
+      previousCity: "شهر قبلی",
       signatureDishes: "غذاهای مشخصه",
       subtitle: "ستاره‌های میشلین، مروارید سیاه و گنج‌های محلی.",
       title: "رستوران‌های {city}",
       viewAll: "همه رستوران‌های {city} را مشاهده کنید",
       viewDetails: "مشاهده جزئیات",
-      xiaohongshuDesc: "ローカルグルメ探索ガイド"
+      xiaohongshuDesc: "راهنمای کشف غذاهای محلی"
     },
     cityHotels: {
       bookCta: "جزئیات هتل را مشاهده کنید",
@@ -38974,7 +38974,7 @@ export const translations: Record<Language, Translations> = {
       bookHotelCta: "هتل‌های {city} را پیدا کنید",
       bookTourCta: "تورهای {city} را رزرو کنید",
       citySubtitle: "راهنمای کامل سفر برای {city}، چین. بهترین رستوران‌ها، جاذبه‌های گردشگری، هتل‌ها و نکات سفر را پیدا کنید.",
-      climate: "気候",
+      climate: "آب و هوا",
       connectivitySubtitle: "با داده‌ها به‌صورت آنلاین باشید.",
       contactCount: "{count} مخاطب",
       cultureSubtitle: "رسوم و آداب محلی.",
@@ -38983,8 +38983,8 @@ export const translations: Record<Language, Translations> = {
       dataSourcesDesc: "منبع این داده‌ها",
       dataSourcesHeading: "منابع داده",
       downloadBefore: "این اپلیکیشن‌ها را قبل از ورود به چین دانلود کنید.",
-      durationLabel: "所要時間：",
-      electricity: "電圧・電源",
+      durationLabel: "مدت زمان:",
+      electricity: "ولتاژ و برق",
       elevation: "ارتفاع",
       emergencySubtitle: "شماره‌های مهم و سفارتخانه‌ها.",
       emergencySubtitleDynamic: "شماره‌های تلفن مهم در {city}",
@@ -38997,7 +38997,7 @@ export const translations: Record<Language, Translations> = {
       foodHighlightsHeading: "برجستگی‌های غذایی",
       foodHighlightsSubtitle: "توصیه‌شده محلی",
       foodSubtitle: "ستاره‌های میشلین، انتخاب‌های مروارید سیاه و موردعلاقه‌های محلی",
-      frequencyLabel: "周波数：",
+      frequencyLabel: "فرکانس:",
       gettingAround: "نحوه جابجایی",
       gettingTo: "رفتن به {city}",
       heroEyebrow: "راهنمای سفر",
@@ -39006,13 +39006,13 @@ export const translations: Record<Language, Translations> = {
       hotelsCountUnit: "هتل",
       hotelsHeading: "جایی برای اقامت",
       hotelsSubtitle: "از هتل‌های بوتیک تا زنجیره‌های بین‌المللی.",
-      howToUseLabel: "使い方：",
+      howToUseLabel: "نحوه استفاده:",
       importantNumbers: "شماره‌های تلفن مهم در {city}",
       intro: "به {city}، یکی از جذاب‌ترین مقاصد چین خوش آمدید.",
       language: "زبان",
       localFoodHighlights: "Local Food Highlights",
       localFoodHighlightsDesc: "Hand-picked local dining picks in {city}",
-      mapLayerDesc: "レイヤー切替：ミシュラン星、黒珍珠ランキング、地元のおすすめ",
+      mapLayerDesc: "تغییر لایه: ستاره میشلن، رتبه‌بندی مروارید سیاه، پیشنهادهای محلی",
       moreCities: "شهرهای بیشتر",
       nextCity: "شهر بعدی",
       noHotels: "هیچ هتلی پیدا نشد",
@@ -39026,7 +39026,7 @@ export const translations: Record<Language, Translations> = {
       phoneIcon: "📞",
       population: "جمعیت",
       previousCity: "شهر قبلی",
-      priceLabel: "料金：",
+      priceLabel: "هزینه:",
       proTipBooking: "نکته حرفه‌ای: هتل‌ها را ۲-۳ هفته قبل رزرو کنید تا بهترین نرخ‌ها را دریافت کنید.",
       proTipEsim1: "eSIM در صورتی بهترین عملکرد را دارد که تلفن شما از آن پشتیبانی کند (iPhone XS+ و اکثر پرچمداران اندروید).",
       proTipEsim2: "اپلیکیشن‌های eSIM را قبل از ورود به چین دانلود کنید.",
@@ -39034,11 +39034,11 @@ export const translations: Record<Language, Translations> = {
       proTips: "نکات حرفه‌ای",
       quickFacts: "حقایق سریع",
       quickFactsHeading: "حقایق سریع",
-      recommendedPaymentApps: "おすすめ決済アプリ",
-      recommendedTransportApps: "おすすめ交通アプリ",
+      recommendedPaymentApps: "اپلیکیشن‌های پرداخت پیشنهادی",
+      recommendedTransportApps: "اپلیکیشن‌های حمل و نقل پیشنهادی",
       region: "منطقه",
       restaurantCount: "{count} رستوران",
-      restaurantsLabel: "レストラン",
+      restaurantsLabel: "رستوران",
       sectionApps: "اپلیکیشن‌های ضروری",
       sectionAttractions: "جاذبه‌های برتر",
       sectionConnectivity: "SIM و eSIM",
@@ -39048,11 +39048,11 @@ export const translations: Record<Language, Translations> = {
       sectionHotels: "جایی برای ماندن",
       sectionOverview: "نمای کلی",
       sectionPayment: "پرداخت و پول",
-      sectionScenic: "景勝地",
+      sectionScenic: "جاذبه گردشگری",
       sectionTransport: "پیمایش",
       sectionVisa: "ویزا و ورود",
       sosTip: "این شماره‌ها را قبل از ورود ذخیره کنید - خدمات تلفن همراه ممکن است در مناطق دورافتاده محدود باشد.",
-      summer: "夏：",
+      summer: "تابستان:",
       switchToEnglishMode: "اگر رابط کاربری چینی می‌بینید، در تنظیمات اپلیکیشن به حالت انگلیسی تغییر دهید. هم Alipay و هم WeChat Pay از کارتهای اعتباری خارجی پشتیبانی می‌کنند.",
       tabApps: "برنامه‌ها",
       tabAttractions: "جاذبه‌ها",
@@ -39066,21 +39066,21 @@ export const translations: Record<Language, Translations> = {
       tabTransport: "حمل‌ونقل",
       timezone: "منطقه زمانی",
       tipCount: "{count} نکته",
-      tipsLabel: "ポイント：",
+      tipsLabel: "نکته:",
       topHighlightsHeading: "برجسته‌ترین‌ها",
       transportSubtitle: "حرکت در {city}",
       travelTo: "سفر به {city}",
       viewAllAttractions: "View all attractions",
       viewAllHotels: "مشاهده همه {totalHotelCount} هتل",
       viewAllRestaurants: "View all restaurants",
-      visa: "ビザ",
+      visa: "ویزا",
       visaSubtitle: "Visa-free policies and entry requirements.",
       visit: "Visit",
       weatherForecast: "Weather forecast",
-      weatherNA: "天気データなし",
+      weatherNA: "داده آب و هوا موجود نیست",
       weatherNotAvailable: "Weather not available",
       weatherNow: "Now",
-      winter: "冬：",
+      winter: "زمستان:",
       youMayAlsoLike: "You may also like"
     },
     common: {
@@ -39117,54 +39117,54 @@ export const translations: Record<Language, Translations> = {
       viewMore: "View more"
     },
     communicationGuide: {
-      tabApps: "必須アプリ",
-      tabSetup: "セットアップガイド",
-      tabSim: "SIM/eSIMオプション",
-      tabVpn: "VPN設定"
+      tabApps: "اپلیکیشن‌های ضروری",
+      tabSetup: "راهنمای راه‌اندازی",
+      tabSim: "گزینه‌های SIM/eSIM",
+      tabVpn: "تنظیمات VPN"
     },
     culturalWarnings: {
-      all: "すべて",
-      catColors: "色",
-      catDining: "食事",
-      catGiftEtiquette: "贈答マナー",
-      catGifts: "贈り物",
-      catNumbers: "数字",
-      catPhoto: "写真",
-      catPhotography: "写真撮影",
-      catSocial: "社交",
-      critical: "重要",
-      general: "一般",
-      note: "注意",
-      warning: "警告"
+      all: "همه",
+      catColors: "رنگ",
+      catDining: "غذا",
+      catGiftEtiquette: "آداب هدیه دادن",
+      catGifts: "هدیه",
+      catNumbers: "اعداد",
+      catPhoto: "عکس",
+      catPhotography: "عکاسی",
+      catSocial: "اجتماعی",
+      critical: "مهم",
+      general: "عمومی",
+      note: "توجه",
+      warning: "هشدار"
     },
     departureGuide: {
-      tabAirport: "空港情報",
-      tabChecklist: "チェックリスト",
-      tabSteps: "出国手順",
-      tabTax: "税還付"
+      tabAirport: "اطلاعات فرودگاه",
+      tabChecklist: "چک‌لیست",
+      tabSteps: "مراحل خروج",
+      tabTax: "بازپرداخت مالیات"
     },
     diningGuide: {
-      allergenCard: "アレルゲン翻訳カード",
-      budgetHeading: "予算ガイド（1人あたり）",
-      casual: "カジュアルレストラン",
-      categoriesHeading: "人気料理カテゴリー",
-      chinesePhrases: "中国語フレーズ：",
-      commonAllergies: "よくあるアレルゲン：",
-      dietary: "食事制限",
-      diningEtiquette: "食事マナー",
-      faqsHeading: "よくある質問",
-      importantAllergyInfo: "重要なアレルギー情報",
-      orderingPhrases: "注文フレーズ",
-      popularDishesHeading: "人気料理：",
-      proTips: "プロのヒント：",
-      safeOptions: "安心な選択肢：",
-      streetFood: "屋台料理",
-      tabAllergies: "アレルギー",
-      tabBudget: "予算ガイド",
-      tabCategories: "カテゴリー",
-      tabDishes: "人気料理",
-      tabEtiquette: "マナー",
-      tabPhrases: "フレーズ集"
+      allergenCard: "کارت ترجمه آلرژن",
+      budgetHeading: "راهنمای بودجه (به ازای هر نفر)",
+      casual: "رستوران معمولی",
+      categoriesHeading: "دسته‌های محبوب غذا",
+      chinesePhrases: "عبارات چینی:",
+      commonAllergies: "آلرژن‌های رایج:",
+      dietary: "محدودیت‌های غذایی",
+      diningEtiquette: "آداب غذا خوردن",
+      faqsHeading: "سوالات متداول",
+      importantAllergyInfo: "اطلاعات مهم آلرژی",
+      orderingPhrases: "عبارات سفارش",
+      popularDishesHeading: "غذاهای محبوب:",
+      proTips: "نکات حرفه‌ای:",
+      safeOptions: "گزینه‌های امن:",
+      streetFood: "غذای خیابانی",
+      tabAllergies: "آلرژی",
+      tabBudget: "راهنمای بودجه",
+      tabCategories: "دسته‌بندی",
+      tabDishes: "غذاهای محبوب",
+      tabEtiquette: "آداب",
+      tabPhrases: "مجموعه عبارات"
     },
     emergency: {
       address: "Address",
@@ -39189,15 +39189,15 @@ export const translations: Record<Language, Translations> = {
       viewAllContacts: "View all contacts"
     },
     emergencyGuide: {
-      bannerSubtitle: "この番号を保存してください — 警察：110、救急：120、消防：119",
-      bannerTitle: "中国の緊急番号",
-      labelAmbulance: "救急",
-      labelFire: "消防",
-      labelPolice: "警察",
-      tabContacts: "緊急連絡先",
-      tabEmbassy: "大使館情報",
-      tabOverview: "緊急時の種類",
-      tabPhrases: "便利フレーズ"
+      bannerSubtitle: "این شماره‌ها را ذخیره کنید — پلیس: 110، اورژانس: 120، آتش‌نشانی: 119",
+      bannerTitle: "شماره‌های اضطراری چین",
+      labelAmbulance: "اورژانس",
+      labelFire: "آتش‌نشانی",
+      labelPolice: "پلیس",
+      tabContacts: "تماس‌های اضطراری",
+      tabEmbassy: "اطلاعات سفارت",
+      tabOverview: "نوع اورژانس",
+      tabPhrases: "عبارات مفید"
     },
     emergencyPage: {
       ambulance: "آمبولانس",
@@ -39311,7 +39311,7 @@ export const translations: Record<Language, Translations> = {
       unauthorized: "عدم دسترسی"
     },
     etiquette: {
-      placeholder: "近日公開"
+      placeholder: "به زودی"
     },
     features: {
       accommodation: "اقامت",
@@ -39538,7 +39538,7 @@ export const translations: Record<Language, Translations> = {
     },
     hard: {
       accommodation: {
-        guide: "宿泊施設ガイド"
+        guide: "راهنمای اقامت"
       },
       after: {
         landing: {
@@ -39553,7 +39553,7 @@ export const translations: Record<Language, Translations> = {
                           can: {
                             help: {
                               with: {
-                                directio: "着陸後、標識に従って地下鉄またはタクシーに乗ります。空港スタッフが道順をお手伝いします。"
+                                directio: "پس از فرود، علائم را دنبال کنید و سوار مترو یا تاکسی شوید. کارکنان فرودگاه به شما در مسیریابی کمک می‌کنند."
                               }
                             }
                           }
@@ -39569,9 +39569,9 @@ export const translations: Record<Language, Translations> = {
       },
       ai: {
         requests: {
-          month: "AIリクエスト/月",
+          month: "درخواست‌های AI در ماه",
           this: {
-            month: "今月のAIリクエスト"
+            month: "درخواست‌های AI این ماه"
           }
         },
         responses: {
@@ -39581,7 +39581,7 @@ export const translations: Record<Language, Translations> = {
                 only: {
                   always: {
                     verify: {
-                      locally: "AIの応答は参考用です。常に現地で確認してください。"
+                      locally: "پاسخ‌های AI فقط برای مرجع است. همیشه در محل تأیید کنید."
                     }
                   }
                 }
@@ -39593,7 +39593,7 @@ export const translations: Record<Language, Translations> = {
       aichat: {
         error: {
           boundary: {
-            caught: "AIチャットエラー境界でキャッチされました："
+            caught: "خطای AI در مرز گرفته شد:"
           }
         }
       },
@@ -39606,7 +39606,7 @@ export const translations: Record<Language, Translations> = {
                   inter: {
                     city: {
                       transport: {
-                        options: "空港到着、メトロ、バス、タクシー、および都市間交通のオプション"
+                        options: "ورود به فرودگاه، مترو، اتوبوس، تاکسی و گزینه‌های حمل و نقل بین شهری"
                       }
                     }
                   }
@@ -39621,7 +39621,7 @@ export const translations: Record<Language, Translations> = {
               connect: {
                 before: {
                   buying: {
-                    sim: "空港のWi-Fiは通常利用可能です - SIMカードを購入する前に接続してください"
+                    sim: "وای‌فای فرودگاه معمولاً در دسترس است - قبل از خرید سیم‌کارت وصل شوید"
                   }
                 }
               }
@@ -39638,7 +39638,7 @@ export const translations: Record<Language, Translations> = {
                   refund: {
                     procedures: {
                       in: {
-                        china: "中国におけるAlipay、WeChat Pay、現金および税金還付の手続き"
+                        china: "روش‌های Alipay، WeChat Pay، پول نقد و بازپرداخت مالیات در چین"
                       }
                     }
                   }
@@ -39650,20 +39650,20 @@ export const translations: Record<Language, Translations> = {
       },
       allergen: {
         translation: {
-          card: "アレルゲン翻訳カード"
+          card: "کارت ترجمه آلرژن"
         }
       },
       amap: {
         api: {
           not: {
-            loaded: "Amap APIが読み込まれていません"
+            loaded: "API نقشه Amap بارگذاری نشده است"
           }
         }
       },
       an: {
         unexpected: {
           error: {
-            occurred: "予期しないエラーが発生しました"
+            occurred: "خطای غیرمنتظره رخ داد"
           }
         },
         unknown: {
@@ -39672,7 +39672,7 @@ export const translations: Record<Language, Translations> = {
               while: {
                 getting: {
                   your: {
-                    location: "位置情報を取得中に不明なエラーが発生しました。"
+                    location: "خطای ناشناخته هنگام دریافت موقعیت مکانی رخ داد."
                   }
                 }
               }
@@ -39688,7 +39688,7 @@ export const translations: Record<Language, Translations> = {
                 scenic: {
                   spots: {
                     in: {
-                      china: "中国の観光地を見つけて案内するためのアプリ"
+                      china: "اپلیکیشن‌هایی برای یافتن و پیمایش جاذبه‌های گردشگری چین"
                     }
                   }
                 }
@@ -39700,7 +39700,7 @@ export const translations: Record<Language, Translations> = {
       arrival: {
         to: {
           inter: {
-            city: "到着から都市間移動まで"
+            city: "از ورود تا حمل و نقل بین شهری"
           }
         }
       },
@@ -39708,7 +39708,7 @@ export const translations: Record<Language, Translations> = {
         about: {
           your: {
             china: {
-              trip: "あなたの中国旅行について質問する..."
+              trip: "در مورد سفر خود به چین سؤال بپرسید..."
             }
           }
         }
@@ -39726,7 +39726,7 @@ export const translations: Record<Language, Translations> = {
                 have: {
                   best: {
                     exchange: {
-                      rates: "空港や銀行のATMが最も良い為替レートです"
+                      rates: "دستگاه‌های خودپرداز فرودگاه و بانک بهترین نرخ ارز را دارند"
                     }
                   }
                 }
@@ -39736,13 +39736,13 @@ export const translations: Record<Language, Translations> = {
         }
       },
       authentication: {
-        failed: "認証に失敗しました"
+        failed: "احراز هویت ناموفق بود"
       },
       best: {
         atms: {
           for: {
             international: {
-              cards: "国際カードに最適なベストなATM"
+              cards: "بهترین خودپردازها برای کارت‌های بین‌المللی"
             }
           }
         },
@@ -39754,7 +39754,7 @@ export const translations: Record<Language, Translations> = {
                   that: {
                     tourists: {
                       usually: {
-                        miss: "観光客が通常見逃す成都のベストローカルストリートフード"
+                        miss: "بهترین غذاهای خیابانی محلی چنگدو که گردشگران معمولاً از دست می‌دهند"
                       }
                     }
                   }
@@ -39777,7 +39777,7 @@ export const translations: Record<Language, Translations> = {
                               best: {
                                 for: {
                                   first: {
-                                    timers: "中国の長城を訪れるベストな方法は？初心者に最適なセクションは？"
+                                    timers: "بهترین راه برای بازدید از دیوار بزرگ چین چیست؟ بهترین بخش برای مبتدیان کدام است؟"
                                   }
                                 }
                               }
@@ -39796,7 +39796,7 @@ export const translations: Record<Language, Translations> = {
       book: {
         high: {
           speed: {
-            rail: "高速鉄道を予約する"
+            rail: "رزرو قطار سریع‌السیر"
           }
         },
         professional: {
@@ -39808,7 +39808,7 @@ export const translations: Record<Language, Translations> = {
                     business: {
                       visits: {
                         in: {
-                          china: "中国のビジネス訪問のためにプロの通訳者と翻訳者を予約する。逐次通訳、同時通訳、公文書翻訳。"
+                          china: "رزرو مترجم و ترجمه حرفه‌ای برای بازدیدهای تجاری در چین. ترجمه شفاهی متوالی، همزمان و ترجمه اسناد رسمی."
                         }
                       }
                     }
@@ -39826,7 +39826,7 @@ export const translations: Record<Language, Translations> = {
                   meetings: {
                     conferences: {
                       and: {
-                        negotiatio: "中国での会議、カンファレンス、交渉のために、審査を受けた通訳者と翻訳者を予約しましょう。"
+                        negotiatio: "مترجمان و ترجمه‌های تأیید شده را برای جلسات، کنفرانس‌ها و مذاکرات در چین رزرو کنید."
                       }
                     }
                   }
@@ -39838,30 +39838,30 @@ export const translations: Record<Language, Translations> = {
       },
       business: {
         etiquette: {
-          essentials: "ビジネスエチケットの基本",
+          essentials: "اصول آداب تجاری",
           tips: {
             for: {
               meeting: {
                 chinese: {
-                  partners: "中国のビジネスパートナーとのミーティングのためのビジネスエチケットのヒント"
+                  partners: "نکات آداب تجاری برای جلسات با شرکای تجاری چینی"
                 }
               }
             }
           }
         },
         express: {
-          chinaconnect: "ビジネスエクスプレス - ChinaConnect"
+          chinaconnect: "Business Express - ChinaConnect"
         },
         invitation: {
           letter: {
             templates: {
-              chinaconnect: "ビジネス招待状テンプレート - ChinaConnect"
+              chinaconnect: "الگوی دعوت‌نامه تجاری - ChinaConnect"
             }
           }
         }
       },
       calculating: {
-        routes: "ルートを計算中..."
+        routes: "در حال محاسبه مسیر..."
       },
       can: {
         i: {
@@ -39870,7 +39870,7 @@ export const translations: Record<Language, Translations> = {
               china: {
                 visa: {
                   on: {
-                    arrival: "中国ビザは到着時に取得できますか？"
+                    arrival: "آیا می‌توانم ویزای چین را هنگام ورود دریافت کنم؟"
                   }
                 }
               },
@@ -39879,7 +39879,7 @@ export const translations: Record<Language, Translations> = {
                   on: {
                     purchases: {
                       in: {
-                        china: "中国での購入で税金還付を受けられますか？"
+                        china: "آیا می‌توانم برای خریدهای خود در چین بازپرداخت مالیات دریافت کنم؟"
                       }
                     }
                   }
@@ -39897,7 +39897,7 @@ export const translations: Record<Language, Translations> = {
                         apps: {
                           do: {
                             i: {
-                              need: "中国でApple Payは使えますか？どの支払いアプリが必要ですか？"
+                              need: "آیا Apple Pay در چین کار می‌کند؟ چه اپلیکیشن‌های پرداختی نیاز دارم؟"
                             }
                           }
                         }
@@ -39917,7 +39917,7 @@ export const translations: Record<Language, Translations> = {
               about: {
                 international: {
                   withdrawal: {
-                    fees: "国際引き出し手数料について銀行に確認してください"
+                    fees: "با بانک خود در مورد کارمزد برداشت بین‌المللی مشورت کنید"
                   }
                 }
               }
@@ -39929,7 +39929,7 @@ export const translations: Record<Language, Translations> = {
             to: {
               confirm: {
                 your: {
-                  account: "アカウントを確認するためにメールをチェックしてください。"
+                  account: "برای تأیید حساب خود ایمیل را بررسی کنید."
                 }
               }
             }
@@ -39938,19 +39938,19 @@ export const translations: Record<Language, Translations> = {
       },
       checking: {
         visa: {
-          requirements: "ビザの必要条件を調べています..."
+          requirements: "در حال بررسی شرایط ویزا..."
         },
-        weather: "天気を調べています..."
+        weather: "در حال بررسی آب و هوا..."
       },
       china: {
         business: {
-          etiquette: "中国のビジネスエチケット",
-          guide: "中国ビジネスガイド"
+          etiquette: "آداب تجاری چین",
+          guide: "راهنمای تجاری چین"
         },
         company: {
           registration: {
             guide: {
-              chinaconnect: "中国会社登録ガイド - ChinaConnect"
+              chinaconnect: "راهنمای ثبت شرکت در چین - ChinaConnect"
             }
           }
         },
@@ -39966,7 +39966,7 @@ export const translations: Record<Language, Translations> = {
                           you: {
                             must: {
                               apply: {
-                                befo: "中国はほとんどの国籍に対して到着時のビザを提供していません。旅行前に中国の大使館、総領事館、または認可されたビザセンターで申請する必要があります。"
+                                befo: "چین برای اکثر ملیت‌ها ویزای هنگام ورود ارائه نمی‌دهد. باید قبل از سفر در سفارت، کنسولگری یا مرکز ویزای مجاز چین درخواست دهید."
                               }
                             }
                           }
@@ -39981,50 +39981,50 @@ export const translations: Record<Language, Translations> = {
         },
         expo: {
           calendar: {
-            chinaconnect: "中国展示会カレンダー - ChinaConnect"
+            chinaconnect: "تقویم نمایشگاه‌های چین - ChinaConnect"
           }
         },
         interpreter: {
-          booking: "中国通訳者予約"
+          booking: "رزرو مترجم چینی"
         },
         invitation: {
-          letter: "中国招待状"
+          letter: "دعوت‌نامه چین"
         }
       },
       chinese: {
         business: {
           etiquette: {
             guide: {
-              chinaconnect: "中国ビジネスエチケットガイド - ChinaConnect"
+              chinaconnect: "راهنمای آداب تجاری چین - ChinaConnect"
             }
           }
         },
-        restaurants: "中華レストラン"
+        restaurants: "رستوران چینی"
       },
       city: {
         distance: {
           travel: {
-            time: "都市間の距離と移動時間"
+            time: "فاصله و زمان سفر بین شهری"
           }
         }
       },
       close: {
         emergency: {
-          menu: "緊急メニューを閉じる"
+          menu: "بستن منوی اضطراری"
         }
       },
       collect: {
         your: {
-          passport: "パスポートを受け取る"
+          passport: "دریافت پاسپورت"
         }
       },
       communication: {
-        guide: "コミュニケーションガイド",
-        setup: "コミュニケーション設定"
+        guide: "راهنمای ارتباطات",
+        setup: "تنظیمات ارتباطی"
       },
       company: {
         registration: {
-          guide: "会社登録ガイド"
+          guide: "راهنمای ثبت شرکت"
         }
       },
       complete: {
@@ -40038,7 +40038,7 @@ export const translations: Record<Language, Translations> = {
                       in: {
                         china: {
                           including: {
-                            canton: "中国で開催される主要な見本市や展示会（広州交易会、自動車ショー、産業イベントを含む）の完全なカレンダー。主要イベントに合わせて出張を計画してください。"
+                            canton: "تقویم کامل نمایشگاه‌ها و رویدادهای تجاری بزرگ در چین (شامل کانتون فیر، نمایشگاه خودرو، رویدادهای صنعتی). سفرهای کاری خود را با رویدادهای کلیدی هماهنگ کنید."
                           }
                         }
                       }
@@ -40049,10 +40049,10 @@ export const translations: Record<Language, Translations> = {
             }
           }
         },
-        registration: "登録を完了する",
+        registration: "تکمیل ثبت‌نام",
         the: {
           application: {
-            form: "申請フォームを記入する"
+            form: "پر کردن فرم درخواست"
           },
           foreign: {
             passport: {
@@ -40080,13 +40080,13 @@ export const translations: Record<Language, Translations> = {
         }
       },
       consular: {
-        assistance: "領事サポート"
+        assistance: "پشتیبانی کنسولی"
       },
       conversation: {
-        history: "会話履歴"
+        history: "تاریخچه گفتگو"
       },
       current: {
-        subscription: "現在のサブスクリプション"
+        subscription: "اشتراک فعلی"
       },
       daily: {
         details: {
@@ -40094,7 +40094,7 @@ export const translations: Record<Language, Translations> = {
             appear: {
               after: {
                 full: {
-                  planning: "詳細な日程は完全な計画後に表示されます"
+                  planning: "برنامه دقیق پس از برنامه‌ریزی کامل نمایش داده می‌شود"
                 }
               }
             }
@@ -40103,23 +40103,23 @@ export const translations: Record<Language, Translations> = {
       },
       delete: {
         this: {
-          conversation: "この会話を削除しますか？"
+          conversation: "این گفتگو حذف شود؟"
         }
       },
       detailed: {
         feature: {
-          comparison: "詳細な機能比較"
+          comparison: "مقایسه دقیق ویژگی‌ها"
         }
       },
       determine: {
         your: {
           visa: {
-            type: "ビザの種類を確認する"
+            type: "بررسی نوع ویزا"
           }
         }
       },
       dietary: {
-        restrictions: "食事制限"
+        restrictions: "محدودیت‌های غذایی"
       },
       do: {
         i: {
@@ -40130,7 +40130,7 @@ export const translations: Record<Language, Translations> = {
                   account: {
                     for: {
                       mobile: {
-                        payments: "モバイル決済に中国の銀行口座は必要ですか？"
+                        payments: "آیا برای پرداخت موبایلی به حساب بانکی چینی نیاز دارم؟"
                       }
                     }
                   }
@@ -40143,7 +40143,7 @@ export const translations: Record<Language, Translations> = {
                   for: {
                     a: {
                       china: {
-                        visa: "中国ビザに招待状は必要ですか？"
+                        visa: "آیا برای ویزای چین دعوت‌نامه لازم است؟"
                       }
                     }
                   }
@@ -40154,7 +40154,7 @@ export const translations: Record<Language, Translations> = {
         },
         you: {
           speak: {
-            english: "英語は話せますか？"
+            english: "آیا انگلیسی صحبت می‌کنید؟"
           }
         }
       },
@@ -40164,7 +40164,7 @@ export const translations: Record<Language, Translations> = {
             for: {
               this: {
                 city: {
-                  again: "この都市では再度表示しない"
+                  again: "در این شهر دوباره نشان نده"
                 }
               }
             }
@@ -40175,7 +40175,7 @@ export const translations: Record<Language, Translations> = {
         alipay: {
           or: {
             wechat: {
-              pay: "AlipayまたはWeChat Payをダウンロードする"
+              pay: "دانلود Alipay یا WeChat Pay"
             }
           }
         },
@@ -40187,7 +40187,7 @@ export const translations: Record<Language, Translations> = {
                   before: {
                     arriving: {
                       in: {
-                        china: "これらのアプリを中国に到着する前にダウンロードして設定してください"
+                        china: "این اپلیکیشن‌ها را قبل از ورود به چین دانلود و تنظیم کنید"
                       }
                     }
                   }
@@ -40203,7 +40203,7 @@ export const translations: Record<Language, Translations> = {
                 is: {
                   blocked: {
                     in: {
-                      china: "到着前にダウンロード - Google Playは中国でブロックされています"
+                      china: "قبل از ورود دانلود کنید - Google Play در چین مسدود است"
                     }
                   }
                 }
@@ -40221,7 +40221,7 @@ export const translations: Record<Language, Translations> = {
                       for: {
                         china: {
                           visa: {
-                            appli: "中国ビザ申請およびビジネス訪問用のすぐに使えるバイリンガル招待状テンプレートをダウンロードしてください。必要事項を記入してすぐにダウンロードできます。"
+                            appli: "الگوهای دعوت‌نامه دوزبانه آماده برای درخواست ویزای چین و بازدیدهای تجاری را دانلود کنید. فیلدهای لازم را پر کنید و فوراً دانلود کنید."
                           }
                         }
                       }
@@ -40230,7 +40230,7 @@ export const translations: Record<Language, Translations> = {
                   letters: {
                     for: {
                       visa: {
-                        applications: "ビザ申請用のすぐに使えるバイリンガル招待状をダウンロードする"
+                        applications: "دانلود دعوت‌نامه دوزبانه آماده برای درخواست ویزا"
                       }
                     }
                   }
@@ -40244,7 +40244,7 @@ export const translations: Record<Language, Translations> = {
             before: {
               arriving: {
                 in: {
-                  china: "これらのアプリを中国に到着する前にダウンロードする"
+                  china: "این اپلیکیشن‌ها را قبل از ورود به چین دانلود کنید"
                 }
               }
             }
@@ -40261,15 +40261,15 @@ export const translations: Record<Language, Translations> = {
         }
       },
       emergency: {
-        assistance: "緊急時のサポート",
+        assistance: "پشتیبانی اضطراری",
         numbers: {
           in: {
-            china: "中国の緊急連絡先"
+            china: "تماس‌های اضطراری چین"
           }
         },
-        procedures: "緊急時の手順",
+        procedures: "روش‌های اضطراری",
         travel: {
-          documents: "緊急時の旅行書類"
+          documents: "اسناد سفر اضطراری"
         }
       },
       enjoy: {
@@ -40279,7 +40279,7 @@ export const translations: Record<Language, Translations> = {
               support: {
                 for: {
                   team: {
-                    plans: "すべての機能をお楽しみください。チームプランについてはサポートにお問い合わせください。"
+                    plans: "از همه ویژگی‌ها لذت ببرید. برای طرح‌های تیمی با پشتیبانی تماس بگیرید."
                   }
                 }
               }
@@ -40295,13 +40295,13 @@ export const translations: Record<Language, Translations> = {
                 a: {
                   password: {
                     reset: {
-                      link: "パスワードリセットリンクを受信するにはメールアドレスを入力してください。"
+                      link: "برای دریافت لینک بازنشانی رمز عبور، ایمیل خود را وارد کنید."
                     }
                   },
                   passwordless: {
                     sign: {
                       in: {
-                        link: "パスワードレスサインインリンクを受信するにはメールアドレスを入力してください。"
+                        link: "برای دریافت لینک ورود بدون رمز، ایمیل خود را وارد کنید."
                       }
                     }
                   }
@@ -40316,7 +40316,7 @@ export const translations: Record<Language, Translations> = {
           for: {
             getting: {
               around: {
-                china: "中国での移動に必要なアプリ"
+                china: "اپلیکیشن‌های ضروری برای جابجایی در چین"
               }
             }
           },
@@ -40325,7 +40325,7 @@ export const translations: Record<Language, Translations> = {
               interface: {
                 for: {
                   navigating: {
-                    china: "中国での移動に便利な英語インターフェース付きアプリ"
+                    china: "اپلیکیشن‌های دارای رابط انگلیسی برای جابجایی در چین"
                   }
                 }
               }
@@ -40335,46 +40335,46 @@ export const translations: Record<Language, Translations> = {
         messaging: {
           and: {
             connectivity: {
-              apps: "必須のメッセージングおよび接続アプリ"
+              apps: "اپلیکیشن‌های ضروری پیام‌رسان و ارتباطی"
             }
           }
         }
       },
       expo: {
         event: {
-          calendar: "展示会＆イベントカレンダー"
+          calendar: "تقویم نمایشگاه‌ها و رویدادها"
         }
       },
       failed: {
         to: {
           fetch: {
             city: {
-              scores: "都市のスコアを取得できませんでした："
+              scores: "دریافت امتیاز شهر ممکن نشد:"
             },
-            profile: "プロフィールの取得に失敗しました："
+            profile: "دریافت پروفایل ناموفق بود:"
           },
           load: {
             amap: {
-              api: "Amap APIの読み込みに失敗しました"
+              api: "بارگذاری API نقشه Amap ناموفق بود"
             },
-            weather: "天気の読み込みに失敗しました"
+            weather: "بارگذاری آب و هوا ناموفق بود"
           },
           save: {
-            route: "ルートの保存に失敗しました："
+            route: "ذخیره مسیر ناموفق بود:"
           },
           search: {
             nearby: {
-              places: "近くの場所の検索に失敗しました："
+              places: "جستجوی مکان‌های نزدیک ناموفق بود:"
             }
           },
           update: {
-            profile: "プロフィールの更新に失敗しました："
+            profile: "به‌روزرسانی پروفایل ناموفق بود:"
           }
         }
       },
       fermented: {
         soybean: {
-          milk: "発酵豆乳"
+          milk: "شیر تخمیر شده"
         }
       },
       fill: {
@@ -40390,7 +40390,7 @@ export const translations: Record<Language, Translations> = {
                           hotels: {
                             use: {
                               digital: {
-                                regist: "チェックイン時に一時滞在届を記入してください。一部のホテルではデジタル登録を使用しています。"
+                                regist: "هنگام ورود، فرم ثبت اقامت موقت را پر کنید. برخی هتل‌ها از ثبت دیجیتال استفاده می‌کنند."
                               }
                             }
                           }
@@ -40405,14 +40405,14 @@ export const translations: Record<Language, Translations> = {
         }
       },
       finding: {
-        restaurants: "レストランを探しています...",
+        restaurants: "در حال جستجوی رستوران‌ها...",
         transport: {
-          options: "交通手段を探しています..."
+          options: "در حال جستجوی حمل و نقل..."
         }
       },
       flight: {
         booking: {
-          tips: "フライト予約のヒント"
+          tips: "نکات رزرو پرواز"
         }
       },
       for: {
@@ -40432,7 +40432,7 @@ export const translations: Record<Language, Translations> = {
                         required: {
                           but: {
                             strengthens: {
-                              yo: "観光ビザの場合、招待状は必ずしも必要ではありませんが、申請を強化します。ビジネスビザの場合は通常、中国企業からの招待状が必要です。"
+                              yo: "برای ویزای توریستی، دعوت‌نامه همیشه لازم نیست، اما درخواست را تقویت می‌کند. برای ویزای تجاری، معمولاً دعوت‌نامه از شرکت چینی لازم است."
                             }
                           }
                         }
@@ -40458,7 +40458,7 @@ export const translations: Record<Language, Translations> = {
                           but: {
                             with: {
                               limitations: {
-                                fo: "外国のクレジットカードはAlipayおよびWeChat Payで動作するようになりましたが、制限があります。すべての機能を利用するには中国の銀行口座が役立ちますが、必ずしも必要ではありません。"
+                                fo: "کارت‌های اعتباری خارجی اکنون با Alipay و WeChat Pay کار می‌کنند، اما محدودیت‌هایی دارند. حساب بانکی چینی برای استفاده از همه ویژگی‌ها مفید است، اما ضروری نیست."
                               }
                             }
                           }
@@ -40474,12 +40474,12 @@ export const translations: Record<Language, Translations> = {
       },
       frequently: {
         asked: {
-          questions: "よくある質問"
+          questions: "سوالات متداول"
         }
       },
       gather: {
         required: {
-          documents: "必要な書類を準備する"
+          documents: "آماده‌سازی مدارک لازم"
         }
       },
       generate: {
@@ -40490,7 +40490,7 @@ export const translations: Record<Language, Translations> = {
                 chatting: {
                   with: {
                     the: {
-                      ai: "AIとチャットして最初に旅程を作成する"
+                      ai: "با AI چت کنید و ابتدا برنامه سفر ایجاد کنید"
                     }
                   }
                 }
@@ -40505,7 +40505,7 @@ export const translations: Record<Language, Translations> = {
             supported: {
               by: {
                 your: {
-                  browser: "お使いのブラウザはジオロケーションに対応していません"
+                  browser: "مرورگر شما از موقعیت جغرافیایی پشتیبانی نمی‌کند"
                 }
               }
             }
@@ -40514,7 +40514,7 @@ export const translations: Record<Language, Translations> = {
       },
       getting: {
         exchange: {
-          rates: "為替レートを取得しています..."
+          rates: "در حال دریافت نرخ ارز..."
         }
       },
       have: {
@@ -40528,7 +40528,7 @@ export const translations: Record<Language, Translations> = {
                       for: {
                         all: {
                           foreign: {
-                            gu: "パスポートを準備してください。ホテルではすべての外国人ゲストのパスポート登録が必要です。"
+                            gu: "پاسپورت خود را آماده کنید. هتل‌ها ثبت پاسپورت همه مهمانان خارجی را الزامی می‌کنند."
                           }
                         }
                       }
@@ -40542,10 +40542,10 @@ export const translations: Record<Language, Translations> = {
       },
       hear: {
         chinese: {
-          pronunciation: "中国語の発音を聞く"
+          pronunciation: "شنیدن تلفظ چینی"
         },
         english: {
-          pronunciation: "英語の発音を聞く"
+          pronunciation: "شنیدن تلفظ انگلیسی"
         }
       },
       hotel: {
@@ -40557,7 +40557,7 @@ export const translations: Record<Language, Translations> = {
                   process: {
                     and: {
                       staying: {
-                        comfortably: "ホテルの種類、予約のヒント、チェックイン手続き、および快適に滞在する方法"
+                        comfortably: "انواع هتل، نکات رزرو، مراحل ورود و نحوه اقامت راحت"
                       }
                     }
                   }
@@ -40573,7 +40573,7 @@ export const translations: Record<Language, Translations> = {
             get: {
               to: {
                 the: {
-                  hospital: "病院にはどうやって行けばいいですか？"
+                  hospital: "چگونه به بیمارستان بروم؟"
                 }
               }
             },
@@ -40585,7 +40585,7 @@ export const translations: Record<Language, Translations> = {
                       as: {
                         a: {
                           foreign: {
-                            tourist: "外国人観光客としてWeChat PayとAlipayを使用するにはどうすればよいですか？"
+                            tourist: "به عنوان گردشگر خارجی چگونه از WeChat Pay و Alipay استفاده کنم؟"
                           }
                         }
                       }
@@ -40605,7 +40605,7 @@ export const translations: Record<Language, Translations> = {
                     a: {
                       china: {
                         tourist: {
-                          visa: "中国観光ビザの取得にはどのくらい時間がかかりますか？"
+                          visa: "دریافت ویزای توریستی چین چقدر طول می‌کشد؟"
                         }
                       }
                     }
@@ -40621,7 +40621,7 @@ export const translations: Record<Language, Translations> = {
               i: {
                 bring: {
                   to: {
-                    china: "中国にはどのくらいの現金を持っていくべきですか？"
+                    china: "چقدر پول نقد باید به چین ببرم؟"
                   }
                 }
               }
@@ -40631,7 +40631,7 @@ export const translations: Record<Language, Translations> = {
             a: {
               china: {
                 visa: {
-                  cost: "中国ビザの費用はいくらですか？"
+                  cost: "هزینه ویزای چین چقدر است؟"
                 }
               }
             }
@@ -40643,7 +40643,7 @@ export const translations: Record<Language, Translations> = {
               a: {
                 china: {
                   tourist: {
-                    visa: "中国観光ビザの申請方法"
+                    visa: "نحوه درخواست ویزای توریستی چین"
                   }
                 }
               }
@@ -40655,7 +40655,7 @@ export const translations: Record<Language, Translations> = {
                 into: {
                   hotels: {
                     in: {
-                      china: "中国のホテルの予約とチェックイン方法"
+                      china: "نحوه رزرو و ورود به هتل در چین"
                     }
                   }
                 }
@@ -40673,7 +40673,7 @@ export const translations: Record<Language, Translations> = {
                           china: {
                             as: {
                               a: {
-                                tourist: "中国で観光客としてSIMカードとインターネットアクセスを取得する方法"
+                                tourist: "نحوه دریافت سیم‌کارت و دسترسی به اینترنت به عنوان گردشگر در چین"
                               }
                             }
                           }
@@ -40688,7 +40688,7 @@ export const translations: Record<Language, Translations> = {
               china: {
                 as: {
                   a: {
-                    tourist: "観光客として中国を移動する方法"
+                    tourist: "نحوه جابجایی در چین به عنوان گردشگر"
                   }
                 }
               },
@@ -40698,7 +40698,7 @@ export const translations: Record<Language, Translations> = {
                     metro: {
                       taxi: {
                         or: {
-                          bike: "中国の都市での移動方法：地下鉄、タクシー、それとも自転車？"
+                          bike: "نحوه جابجایی در شهرهای چین: مترو، تاکسی یا دوچرخه؟"
                         }
                       }
                     }
@@ -40712,7 +40712,7 @@ export const translations: Record<Language, Translations> = {
               china: {
                 as: {
                   a: {
-                    foreigner: "外国人として中国で支払いをする方法"
+                    foreigner: "نحوه پرداخت در چین به عنوان خارجی"
                   }
                 }
               }
@@ -40727,7 +40727,7 @@ export const translations: Record<Language, Translations> = {
                       by: {
                         high: {
                           speed: {
-                            rail: "上海から西安まで高速鉄道で旅行する方法"
+                            rail: "نحوه سفر با قطار سریع‌السیر از شانگهای به شیان"
                           }
                         }
                       }
@@ -40749,7 +40749,7 @@ export const translations: Record<Language, Translations> = {
                     food: {
                       destinations: {
                         in: {
-                          china: "私はグルメです。中国の最高のグルメスポットを教えてください"
+                          china: "من یک خوش‌خوراک هستم. بهترین مکان‌های غذایی چین را معرفی کنید"
                         }
                       }
                     }
@@ -40759,12 +40759,12 @@ export const translations: Record<Language, Translations> = {
             }
           },
           allergic: {
-            to: "私は...にアレルギーがあります"
+            to: "من به ... آلرژی دارم"
           },
           sick: {
             i: {
               feel: {
-                unwell: "体調が悪い / 気分が優れません"
+                unwell: "حالم خوب نیست / حالم خوب نیست"
               }
             }
           }
@@ -40793,7 +40793,7 @@ export const translations: Record<Language, Translations> = {
         },
         do: {
           not: {
-            understand: "理解できません"
+            understand: "متوجه نمی‌شوم"
           }
         },
         have: {
@@ -40809,7 +40809,7 @@ export const translations: Record<Language, Translations> = {
                             info: {
                               and: {
                                 transport: {
-                                  tip: "来週深圳でビジネスミーティングがあります。ビザの情報と交通のヒントが必要です"
+                                  tip: "هفته آینده در شنژن جلسه تجاری دارم. به اطلاعات ویزا و نکات حمل و نقل نیاز دارم"
                                 }
                               }
                             }
@@ -40821,18 +40821,18 @@ export const translations: Record<Language, Translations> = {
                 }
               }
             },
-            stomachache: "腹痛があります"
+            stomachache: "درد شکم دارم"
           },
           been: {
-            assaulted: "暴行を受けました"
+            assaulted: "مورد حمله قرار گرفته‌ام"
           }
         },
         need: {
           a: {
-            translator: "通訳が必要です"
+            translator: "به مترجم نیاز دارم"
           },
           an: {
-            ambulance: "救急車を呼ぶ必要があります"
+            ambulance: "باید آمبولانس صدا کنم"
           }
         },
         want: {
@@ -40849,12 +40849,12 @@ export const translations: Record<Language, Translations> = {
       },
       important: {
         allergy: {
-          information: "重要なアレルギー情報"
+          information: "اطلاعات مهم آلرژی"
         }
       },
       invitation: {
         letter: {
-          templates: "招待状のテンプレート"
+          templates: "الگوی دعوت‌نامه"
         }
       },
       is: {
@@ -40865,7 +40865,7 @@ export const translations: Record<Language, Translations> = {
                 mobile: {
                   payments: {
                     in: {
-                      china: "中国でモバイル決済を使用するのは安全ですか？"
+                      china: "آیا استفاده از پرداخت موبایلی در چین امن است؟"
                     }
                   }
                 }
@@ -40883,7 +40883,7 @@ export const translations: Record<Language, Translations> = {
                   need: {
                     it: {
                       for: {
-                        emigration: "入国カードを安全に保管してください - 出国の際に必要になります"
+                        emigration: "کارت ورود را ایمن نگه دارید - هنگام خروج به آن نیاز خواهید داشت"
                       }
                     }
                   }
@@ -40896,13 +40896,13 @@ export const translations: Record<Language, Translations> = {
           with: {
             tax: {
               refund: {
-                mark: "税金還付マーク付きの請求書を持っておいてください"
+                mark: "فاکتورهای دارای علامت بازپرداخت مالیات را نگه دارید"
               }
             }
           }
         },
         registration: {
-          slip: "登録証を保管してください"
+          slip: "گواهی ثبت را نگه دارید"
         },
         your: {
           hotel: {
@@ -40917,7 +40917,7 @@ export const translations: Record<Language, Translations> = {
                             checks: {
                               or: {
                                 other: {
-                                  hot: "ホテルの登録証を保管してください - 警察のチェックや他のホテル予約の際に必要になるかもしれません"
+                                  hot: "گواهی ثبت هتل را نگه دارید - ممکن است در بازرسی پلیس یا رزرو هتل‌های دیگر به آن نیاز داشته باشید"
                                 }
                               }
                             }
@@ -40933,7 +40933,7 @@ export const translations: Record<Language, Translations> = {
         }
       },
       language: {
-        translation: "言語と翻訳"
+        translation: "زبان و ترجمه"
       },
       link: {
         a: {
@@ -40945,7 +40945,7 @@ export const translations: Record<Language, Translations> = {
                     card: {
                       to: {
                         enable: {
-                          payments: "Visa、Mastercard、または他の国際カードをリンクして支払いを有効にします"
+                          payments: "Visa، Mastercard یا سایر کارت‌های بین‌المللی را برای فعال‌سازی پرداخت پیوند دهید"
                         }
                       }
                     }
@@ -40956,7 +40956,7 @@ export const translations: Record<Language, Translations> = {
           }
         },
         international: {
-          card: "国際カードのリンク"
+          card: "پیوند کارت بین‌المللی"
         }
       },
       local: {
@@ -40969,7 +40969,7 @@ export const translations: Record<Language, Translations> = {
                     dining: {
                       etiquette: {
                         in: {
-                          china: "中国のローカル料理、オーダーする際のヒント、食品安全、および食事のマナー"
+                          china: "غذاهای محلی چین، نکات سفارش، ایمنی غذا و آداب غذا خوردن"
                         }
                       }
                     }
@@ -40984,7 +40984,7 @@ export const translations: Record<Language, Translations> = {
         information: {
           is: {
             currently: {
-              unavailable: "現在、位置情報が利用できません"
+              unavailable: "موقعیت مکانی در حال حاضر در دسترس نیست"
             }
           }
         },
@@ -40997,7 +40997,7 @@ export const translations: Record<Language, Translations> = {
                     in: {
                       your: {
                         browser: {
-                          setting: "位置情報の許可が拒否されました。ブラウザの設定で位置情報アクセスを有効にしてください"
+                          setting: "دسترسی به موقعیت مکانی رد شد. لطفاً در تنظیمات مرورگر دسترسی به موقعیت را فعال کنید"
                         }
                       }
                     }
@@ -41012,7 +41012,7 @@ export const translations: Record<Language, Translations> = {
             out: {
               please: {
                 try: {
-                  again: "位置情報の要求がタイムアウトしました。もう一度お試しください"
+                  again: "درخواست موقعیت مکانی به پایان رسید. دوباره تلاش کنید"
                 }
               }
             }
@@ -41046,7 +41046,7 @@ export const translations: Record<Language, Translations> = {
                 scams: {
                   and: {
                     embassy: {
-                      contacts: "パスポート紛失、医療緊急事態、盗難、詐欺、および大使館の連絡先"
+                      contacts: "گم شدن پاسپورت، اورژانس پزشکی، سرقت، کلاهبرداری و تماس‌های سفارت"
                     }
                   }
                 }
@@ -41114,14 +41114,14 @@ export const translations: Record<Language, Translations> = {
                 etiquette: {
                   and: {
                     meeting: {
-                      protocols: "中国のビジネス文化、接待マナー、会合プロトコルをマスターする"
+                      protocols: "تسلط بر فرهنگ تجاری چین، آداب مهمان‌نوازی و پروتکل جلسات"
                     }
                   },
                   gift: {
                     giving: {
                       customs: {
                         and: {
-                          meeting: "中国のビジネス文化、接待マナー、贈答習慣、会合プロトコルをマスターする。よくある間違いを避け、良好な関係を築く。"
+                          meeting: "تسلط بر فرهنگ تجاری چین، آداب مهمان‌نوازی، آداب هدیه دادن و پروتکل جلسات. از اشتباهات رایج اجتناب کنید و روابط خوب ایجاد کنید."
                         }
                       }
                     }
@@ -41135,7 +41135,7 @@ export const translations: Record<Language, Translations> = {
                   card: {
                     exchange: {
                       dining: {
-                        meetin: "中国のビジネスエチケット（名刺交換、接待、会合、贈答を含む）をマスターする。外国人ビジネスプロフェッショナル向けの実践的な注意事項。"
+                        meetin: "تسلط بر آداب تجاری چین (شامل تبادل کارت ویزیت، مهمان‌نوازی، جلسات و هدیه دادن). نکات عملی برای حرفه‌ای‌های تجاری خارجی."
                       }
                     }
                   }
@@ -41147,7 +41147,7 @@ export const translations: Record<Language, Translations> = {
       },
       maximum: {
         level: {
-          reached: "最大レベルに達しました！"
+          reached: "به حداکثر سطح رسیده‌اید!"
         }
       },
       medical: {
@@ -41162,7 +41162,7 @@ export const translations: Record<Language, Translations> = {
                         foreigners: {
                           a: {
                             good: {
-                              tra: "中国の医療治療は、特に外国人にとって高額になることがあります。安全な旅行には、医療保険付きの優れた旅行保険が不可欠です。"
+                              tra: "درمان پزشکی در چین می‌تواند گران باشد، به ویژه برای خارجی‌ها. بیمه مسافرتی خوب با پوشش پزشکی برای سفر ایمن ضروری است."
                             }
                           }
                         }
@@ -41184,7 +41184,7 @@ export const translations: Record<Language, Translations> = {
         ai: {
           requests: {
             used: {
-              up: "月間AIリクエスト使用済み"
+              up: "درخواست‌های ماهانه AI استفاده شده است"
             }
           }
         }
@@ -41196,24 +41196,24 @@ export const translations: Record<Language, Translations> = {
         __________________________________________________________________________________________________________________: "hard.no.__________________________________________________________________________________________________________________",
         items: {
           to: {
-            display: "表示するアイテムがありません"
+            display: "موردی برای نمایش وجود ندارد"
           }
         },
         itinerary: {
           to: {
-            display: "表示する旅程がありません"
+            display: "برنامه سفری برای نمایش وجود ندارد"
           }
         },
         route: {
           data: {
             to: {
-              save: "保存するルートデータがありません。"
+              save: "داده مسیری برای ذخیره وجود ندارد."
             }
           }
         },
         saved: {
           itineraries: {
-            yet: "まだ保存された旅程はありません"
+            yet: "هنوز برنامه سفری ذخیره نشده است"
           }
         }
       },
@@ -41221,7 +41221,7 @@ export const translations: Record<Language, Translations> = {
         with: {
           soy: {
             bean: {
-              paste: "味噌入り麺"
+              paste: "نودل با سس میسو"
             }
           }
         }
@@ -41229,27 +41229,27 @@ export const translations: Record<Language, Translations> = {
       oauth: {
         provider: {
           not: {
-            enabled: "OAuthプロバイダーが有効になっていません"
+            enabled: "ارائه‌دهنده OAuth فعال نشده است"
           }
         }
       },
       open: {
         emergency: {
-          menu: "緊急メニューを開く"
+          menu: "باز کردن منوی اضطراری"
         }
       },
-      openinghoursspecification: "営業時間仕様",
+      openinghoursspecification: "مشخصات ساعات کاری",
       pan: {
         fried: {
           pork: {
-            buns: "焼き豚まん"
+            buns: "نان بخارپز با گوشت خوک"
           }
         }
       },
       passionate: {
         about: {
           exploring: {
-            china: "中国探索に情熱を注ぐ"
+            china: "با اشتیاق به کاوش چین"
           }
         }
       },
@@ -41264,7 +41264,7 @@ export const translations: Record<Language, Translations> = {
                       depending: {
                         on: {
                           hotel: {
-                            policy: "ホテルのポリシーにより、アリペイ、ウィーチャットペイ、またはクレジットカードでお支払いください。"
+                            policy: "طبق سیاست هتل، لطفاً با Alipay، WeChat Pay یا کارت اعتباری پرداخت کنید."
                           }
                         }
                       }
@@ -41279,19 +41279,19 @@ export const translations: Record<Language, Translations> = {
       payment: {
         apps: {
           you: {
-            need: "必要な支払いアプリ"
+            need: "اپلیکیشن‌های پرداخت لازم"
           }
         }
       },
       pdf: {
         generation: {
-          failed: "PDF生成に失敗しました:"
+          failed: "تولید PDF ناموفق بود:"
         }
       },
       pian: {
         er: {
           chuan: {
-            noodles: "ピエンアルチュアン麺"
+            noodles: "نودل Pian'er Chuan"
           }
         }
       },
@@ -41302,7 +41302,7 @@ export const translations: Record<Language, Translations> = {
               type: {
                 your: {
                   own: {
-                    below: "プロンプトを選択するか、下に独自のものを入力してください"
+                    below: "یک پیشنهاد انتخاب کنید یا مورد خود را در زیر وارد کنید"
                   }
                 }
               }
@@ -41317,7 +41317,7 @@ export const translations: Record<Language, Translations> = {
         your: {
           scenic: {
             spot: {
-              visit: "観光地訪問を計画する"
+              visit: "برنامه‌ریزی بازدید از جاذبه‌ها"
             }
           },
           trips: {
@@ -41329,7 +41329,7 @@ export const translations: Record<Language, Translations> = {
                       shows: {
                         and: {
                           industry: {
-                            events: "中国のトップトレードショーや業界イベントに合わせて旅行を計画する"
+                            events: "سفر خود را با نمایشگاه‌های تجاری برتر و رویدادهای صنعتی چین هماهنگ کنید"
                           }
                         }
                       }
@@ -41350,23 +41350,23 @@ export const translations: Record<Language, Translations> = {
         allow: {
           popups: {
             to: {
-              print: "印刷するためにポップアップを許可してください"
+              print: "برای چاپ، پنجره‌های بازشو را مجاز کنید"
             }
           }
         },
         call: {
           an: {
-            ambulance: "救急車を呼んでください"
+            ambulance: "آمبولانس صدا کنید"
           },
           my: {
-            family: "家族に電話してください"
+            family: "با خانواده تماس بگیرید"
           }
         },
         enter: {
           a: {
-            name: "名前を入力してください",
+            name: "نام را وارد کنید",
             phone: {
-              number: "電話番号を入力してください"
+              number: "شماره تلفن را وارد کنید"
             }
           }
         },
@@ -41374,24 +41374,24 @@ export const translations: Record<Language, Translations> = {
           in: {
             to: {
               save: {
-                routes: "ルートを保存するにはサインインしてください"
+                routes: "برای ذخیره مسیر وارد شوید"
               }
             }
           }
         },
         speak: {
-          slowly: "ゆっくり話してください"
+          slowly: "آهسته صحبت کنید"
         }
       },
       popular: {
         food: {
-          categories: "人気の食品カテゴリー"
+          categories: "دسته‌های محبوب غذا"
         }
       },
       powered: {
         by: {
           advanced: {
-            ai: "高度なAI搭載"
+            ai: "مجهز به AI پیشرفته"
           }
         }
       },
@@ -41402,7 +41402,7 @@ export const translations: Record<Language, Translations> = {
               business: {
                 travelers: {
                   in: {
-                    china: "中国での外国人ビジネス旅行者向け実用ツール"
+                    china: "ابزارهای عملی برای مسافران تجاری خارجی در چین"
                   }
                 }
               }
@@ -41412,11 +41412,11 @@ export const translations: Record<Language, Translations> = {
       },
       pre: {
         departure: {
-          preparation: "出発前の準備"
+          preparation: "آماده‌سازی قبل از سفر"
         }
       },
       premium: {
-        customization: "プレミアムカスタマイズ"
+        customization: "سفارشی‌سازی ویژه"
       },
       process: {
         at: {
@@ -41424,7 +41424,7 @@ export const translations: Record<Language, Translations> = {
             departure: {
               hall: {
                 before: {
-                  security: "保安検査前の空港出発ロビーの手続き"
+                  security: "مراحل در سالن خروج فرودگاه قبل از بازرسی امنیتی"
                 }
               }
             }
@@ -41437,7 +41437,7 @@ export const translations: Record<Language, Translations> = {
             translators: {
               for: {
                 business: {
-                  visits: "ビジネス訪問向けのプロフェッショナル通訳者と翻訳者"
+                  visits: "مترجمان و ترجمه‌های حرفه‌ای برای بازدیدهای تجاری"
                 }
               }
             }
@@ -41457,7 +41457,7 @@ export const translations: Record<Language, Translations> = {
                           apps: {
                             and: {
                               ride: {
-                                hailing: "空港でSIMまたはeSIMを購入して、ナビゲーションアプリや配車サービスを利用する"
+                                hailing: "در فرودگاه سیم‌کارت یا eSIM بخرید تا از اپلیکیشن‌های ناوبری و خدمات تاکسی اینترنتی استفاده کنید"
                               }
                             }
                           }
@@ -41478,7 +41478,7 @@ export const translations: Record<Language, Translations> = {
               hangzhou: {
                 near: {
                   west: {
-                    lake: "西湖近くの杭州にあるブティックホテルを推奨"
+                    lake: "توصیه هتل بوتیک در هانگژو نزدیک دریاچه غربی"
                   }
                 }
               }
@@ -41488,21 +41488,21 @@ export const translations: Record<Language, Translations> = {
       },
       remove: {
         from: {
-          favorites: "お気に入りから削除"
+          favorites: "حذف از علاقه‌مندی‌ها"
         }
       },
       reservation: {
-        required: "予約必須"
+        required: "رزرو الزامی است"
       },
       route: {
         saved: {
-          successfully: "ルートが保存されました！"
+          successfully: "مسیر ذخیره شد!"
         }
       },
       sanlitun: {
         chaoyang: {
           district: {
-            beijing: "北京・朝陽区・三里屯"
+            beijing: "پکن، منطقه چاویانگ، سانلیتون"
           }
         }
       },
@@ -41515,11 +41515,11 @@ export const translations: Record<Language, Translations> = {
           }
         },
         your: {
-          itineraries: "旅程を保存する"
+          itineraries: "ذخیره برنامه سفر"
         }
       },
       saving: {
-        itinerary: "旅程を保存中..."
+        itinerary: "در حال ذخیره برنامه سفر..."
       },
       scan: {
         merchant: {
@@ -41533,7 +41533,7 @@ export const translations: Record<Language, Translations> = {
                         code: {
                           to: {
                             complete: {
-                              payments: "支払いを行うには、店のQRコードを読み取るか、自分のQRコードを表示してください"
+                              payments: "برای پرداخت، کد QR فروشگاه را اسکن کنید یا کد QR خود را نشان دهید"
                             }
                           }
                         }
@@ -41550,42 +41550,42 @@ export const translations: Record<Language, Translations> = {
         spots: {
           in: {
             china: {
-              chinaconnect: "中国の観光地 - ChinaConnect"
+              chinaconnect: "جاذبه‌های گردشگری چین - ChinaConnect"
             }
           }
         }
       },
       search: {
-        attractions: "観光地を検索...",
+        attractions: "جستجوی جاذبه‌ها...",
         country: {
-          name: "国名を入力..."
+          name: "نام کشور را وارد کنید..."
         }
       },
       searching: {
-        cities: "都市を検索中...",
+        cities: "در حال جستجوی شهر...",
         for: {
-          attractions: "観光地を検索中..."
+          attractions: "در حال جستجوی جاذبه‌ها..."
         },
-        hotels: "ホテルを検索中...",
+        hotels: "در حال جستجوی هتل...",
         the: {
-          web: "ウェブを検索中..."
+          web: "در حال جستجوی وب..."
         }
       },
       select: {
         a: {
           transport: {
-            mode: "交通手段を選択"
+            mode: "انتخاب حمل و نقل"
           }
         },
         transport: {
-          mode: "交通手段を選択"
+          mode: "انتخاب حمل و نقل"
         },
         your: {
           country: {
             to: {
               see: {
                 specific: {
-                  requirements: "国を選択して具体的な要件を確認する"
+                  requirements: "کشور را انتخاب کنید تا الزامات خاص را بررسی کنید"
                 }
               }
             }
@@ -41599,7 +41599,7 @@ export const translations: Record<Language, Translations> = {
               password: {
                 for: {
                   authorizing: {
-                    transactions: "取引を承認するための安全な支払いパスワードを設定する"
+                    transactions: "رمز پرداخت امن برای تأیید تراکنش‌ها تنظیم کنید"
                   }
                 }
               }
@@ -41607,13 +41607,13 @@ export const translations: Record<Language, Translations> = {
           }
         },
         payment: {
-          password: "支払いパスワードを設定"
+          password: "تنظیم رمز پرداخت"
         }
       },
       share: {
         your: {
           dining: {
-            experience: "食事体験をシェアする..."
+            experience: "تجربه غذایی خود را به اشتراک بگذارید..."
           }
         }
       },
@@ -41627,7 +41627,7 @@ export const translations: Record<Language, Translations> = {
                     apps: {
                       for: {
                         staying: {
-                          connected: "SIM/eSIMオプション、VPN設定、接続を維持するための必須アプリ"
+                          connected: "گزینه‌های SIM/eSIM، تنظیمات VPN و اپلیکیشن‌های ضروری برای حفظ اتصال"
                         }
                       }
                     }
@@ -41640,12 +41640,12 @@ export const translations: Record<Language, Translations> = {
       },
       something: {
         went: {
-          wrong: "問題が発生しました"
+          wrong: "مشکلی پیش آمد"
         }
       },
       sorry: {
         i: {
-          encountered: "すみません、遭遇した"
+          encountered: "متأسفیم، با مشکل مواجه شدیم"
         }
       },
       sos: {
@@ -41653,7 +41653,7 @@ export const translations: Record<Language, Translations> = {
           tap: {
             to: {
               call: {
-                police: "緊急SOS - タップして警察に電話"
+                police: "SOS اضطراری - برای تماس با پلیس لمس کنید"
               }
             }
           }
@@ -41669,7 +41669,7 @@ export const translations: Record<Language, Translations> = {
       stay: {
         connected: {
           in: {
-            china: "中国でつながる"
+            china: "در چین متصل بمانید"
           }
         }
       },
@@ -41686,7 +41686,7 @@ export const translations: Record<Language, Translations> = {
                           in: {
                             procedures: {
                               in: {
-                                chin: "中国への外国人旅行者向けホテル予約とチェックイン手続きのステップバイステップガイド"
+                                chin: "راهنمای گام‌به‌گام رزرو هتل و مراحل ورود برای گردشگران خارجی در چین"
                               }
                             }
                           }
@@ -41715,7 +41715,7 @@ export const translations: Record<Language, Translations> = {
                           and: {
                             using: {
                               mobile: {
-                                pay: "中国でのモバイル決済、現金、カードの使用に関する国際旅行者向けステップバイステップガイド"
+                                pay: "راهنمای گام‌به‌گام استفاده از پرداخت موبایلی، پول نقد و کارت در چین برای مسافران بین‌المللی"
                               }
                             }
                           }
@@ -41730,7 +41730,7 @@ export const translations: Record<Language, Translations> = {
                       china: {
                         including: {
                           airport: {
-                            tran: "中国での交通機関の案内（空港送迎、地下鉄、高速鉄道、タクシー、都市間交通を含む）に関するステップバイステップガイド"
+                            tran: "راهنمای گام‌به‌گام حمل و نقل در چین (شامل ترانسفر فرودگاه، مترو، قطار سریع‌السیر، تاکسی و حمل و نقل بین شهری)"
                           }
                         }
                       }
@@ -41742,7 +41742,7 @@ export const translations: Record<Language, Translations> = {
                     office: {
                       and: {
                         other: {
-                          entities: "WFOE、駐在員事務所およびその他のエンティティに関するステップバイステップガイド"
+                          entities: "راهنمای گام‌به‌گام WFOE، دفتر نمایندگی و سایر نهادها"
                         }
                       }
                     }
@@ -41758,7 +41758,7 @@ export const translations: Record<Language, Translations> = {
                           or: {
                             other: {
                               entity: {
-                                i: "外国投資家向け中国でのWFOE、駐在員事務所またはその他のエンティティ登録に関するステップバイステップガイド。完全なタイムラインと必要書類リスト。"
+                                i: "راهنمای گام‌به‌گام ثبت WFOE، دفتر نمایندگی یا سایر نهادها در چین برای سرمایه‌گذاران خارجی. جدول زمانی کامل و فهرست مدارک لازم."
                               }
                             }
                           }
@@ -41777,7 +41777,7 @@ export const translations: Record<Language, Translations> = {
                               office: {
                                 in: {
                                   china: {
-                                    doc: "中国でのWFOE、合弁会社（JV）、駐在員事務所の設立に関するステップバイステップガイド。必要書類、タイムライン、コスト、および2026年の最新の規制更新。"
+                                    doc: "راهنمای گام‌به‌گام تأسیس WFOE، شرکت مشترک (JV) یا دفتر نمایندگی در چین. مدارک لازم، جدول زمانی، هزینه‌ها و به‌روزرسانی‌های نظارتی 2026."
                                   }
                                 }
                               }
@@ -41796,7 +41796,7 @@ export const translations: Record<Language, Translations> = {
       stir: {
         fried: {
           beef: {
-            offal: "牛肉ホルモンの炒め物"
+            offal: "گوشت گاو سرخ شده با هورمون"
           }
         }
       },
@@ -41809,7 +41809,7 @@ export const translations: Record<Language, Translations> = {
                   center: {
                     with: {
                       applicable: {
-                        fees: "該当する料金を添えて中国大使館/領事館/ビザセンターに提出"
+                        fees: "ارسال به سفارت/کنسولگری/مرکز ویزای چین با هزینه مربوطه"
                       }
                     }
                   }
@@ -41821,18 +41821,18 @@ export const translations: Record<Language, Translations> = {
       },
       switch: {
         map: {
-          provider: "地図プロバイダーを切り替える"
+          provider: "تغییر ارائه‌دهنده نقشه"
         },
         to: {
           google: {
-            maps: "Googleマップに切り替える"
+            maps: "تغییر به Google Maps"
           }
         }
       },
       tap: {
         to: {
           hear: {
-            pronunciation: "タップして発音を聞く"
+            pronunciation: "برای شنیدن تلفظ لمس کنید"
           }
         }
       },
@@ -41845,7 +41845,7 @@ export const translations: Record<Language, Translations> = {
                   shopping: {
                     and: {
                       departure: {
-                        checklist: "税金還付、空港交通、免税ショッピング、出国チェックリスト"
+                        checklist: "بازپرداخت مالیات، حمل و نقل فرودگاه، خرید بدون عوارض و چک‌لیست خروج"
                       }
                     }
                   }
@@ -41857,64 +41857,64 @@ export const translations: Record<Language, Translations> = {
       },
       taxi: {
         useful: {
-          phrases: "タクシー便利なフレーズ"
+          phrases: "عبارات مفید تاکسی"
         }
       },
       thank: {
         you: {
           for: {
             your: {
-              subscription: "ご購読ありがとうございます！"
+              subscription: "از اشتراک شما متشکریم!"
             }
           }
         }
       },
       toggle: {
         temperature: {
-          unit: "温度単位を切り替える"
+          unit: "تغییر واحد دما"
         }
       },
       translation: {
-        interpreting: "翻訳・通訳",
-        services: "翻訳サービス"
+        interpreting: "ترجمه و تفسیر",
+        services: "خدمات ترجمه"
       },
       transport: {
         navigation: {
-          apps: "交通・ナビゲーションアプリ"
+          apps: "اپلیکیشن‌های حمل و نقل و ناوبری"
         }
       },
       travel: {
         insurance: {
           is: {
-            essential: "旅行保険は必須です"
+            essential: "بیمه مسافرتی ضروری است"
           }
         }
       },
       try: {
         these: {
           quick: {
-            prompts: "これらの簡単なプロンプトを試してみてください"
+            prompts: "این پیشنهادهای ساده را امتحان کنید"
           }
         }
       },
       unlimited: {
         ai: {
-          requests: "無制限のAIリクエスト"
+          requests: "درخواست‌های نامحدود AI"
         }
       },
       unsaved: {
-        conversation: "未保存の会話"
+        conversation: "گفتگوهای ذخیره‌نشده"
       },
       upgrade: {
         to: {
           a: {
             paid: {
-              plan: "有料プランにアップグレード"
+              plan: "ارتقا به پلن پولی"
             }
           },
           continue: {
             using: {
-              ai: "AIを使い続けるためにアップグレード"
+              ai: "برای ادامه استفاده از AI ارتقا دهید"
             }
           }
         }
@@ -41944,7 +41944,7 @@ export const translations: Record<Language, Translations> = {
                           sites: {
                             often: {
                               have: {
-                                be: "Booking.com、Ctrip、またはFliggyを使用してホテルを予約してください。国際サイトは英語サポートが優れていることが多いです"
+                                be: "برای رزرو هتل از Booking.com، Ctrip یا Fliggy استفاده کنید. سایت‌های بین‌المللی اغلب پشتیبانی انگلیسی بهتری دارند"
                               }
                             }
                           }
@@ -41963,7 +41963,7 @@ export const translations: Record<Language, Translations> = {
               banks: {
                 for: {
                   better: {
-                    security: "銀行内のカードマシンを使ってより高いセキュリティを確保"
+                    security: "برای امنیت بیشتر از دستگاه‌های داخل بانک استفاده کنید"
                   }
                 }
               }
@@ -41978,7 +41978,7 @@ export const translations: Record<Language, Translations> = {
                   cheaper: {
                     than: {
                       taxi: {
-                        queue: "空港ピックアップにはDidiアプリを使用 - タクシー待ち行列より安い"
+                        queue: "برای ترانسفر فرودگاه از اپلیکیشن Didi استفاده کنید - ارزان‌تر از صف تاکسی"
                       }
                     }
                   }
@@ -42001,7 +42001,7 @@ export const translations: Record<Language, Translations> = {
                               have: {
                                 the: {
                                   best: {
-                                    e: "国際カードにはICBC、中国銀行、またはHSBCのATMを使用してください。彼らは最高の為替レートと最も広いカバレッジを持っています"
+                                    e: "برای کارت‌های بین‌المللی از خودپردازهای ICBC، بانک چین یا HSBC استفاده کنید. آنها بهترین نرخ ارز و بیشترین پوشش را دارند"
                                   }
                                 }
                               }
@@ -42019,21 +42019,21 @@ export const translations: Record<Language, Translations> = {
       },
       useful: {
         transport: {
-          phrases: "便利な交通フレーズ"
+          phrases: "عبارات مفید حمل و نقل"
         }
       },
       user: {
         accepted: {
           the: {
             install: {
-              prompt: "ユーザーがインストールプロンプトを受け入れました"
+              prompt: "کاربر درخواست نصب را پذیرفت"
             }
           }
         },
         dismissed: {
           the: {
             install: {
-              prompt: "ユーザーがインストールプロンプトを却下しました"
+              prompt: "کاربر درخواست نصب را رد کرد"
             }
           }
         }
@@ -42049,7 +42049,7 @@ export const translations: Record<Language, Translations> = {
                       bookings: {
                         and: {
                           proof: {
-                            of: "有効なパスポート、ビザ申請書、写真、旅行日程、ホテル予約、および財政証明"
+                            of: "پاسپورت معتبر، فرم درخواست ویزا، عکس، برنامه سفر، رزرو هتل و اثبات تمکن مالی"
                           }
                         }
                       }
@@ -42064,13 +42064,13 @@ export const translations: Record<Language, Translations> = {
       verify: {
         identity: {
           with: {
-            passport: "パスポートで身元を確認する"
+            passport: "تأیید هویت با پاسپورت"
           }
         }
       },
       visa: {
         overstay: {
-          warning: "ビザのオーバーステイ警告"
+          warning: "هشدار ماندن بیش از مدت ویزا"
         },
         requirements: {
           application: {
@@ -42080,7 +42080,7 @@ export const translations: Record<Language, Translations> = {
                   documents: {
                     for: {
                       entering: {
-                        china: "中国入国に必要なビザ要件、申請プロセス、および必須書類"
+                        china: "الزامات ویزا، فرآیند درخواست و مدارک لازم برای ورود به چین"
                       }
                     }
                   }
@@ -42089,7 +42089,7 @@ export const translations: Record<Language, Translations> = {
             }
           },
           by: {
-            country: "国別のビザ要件"
+            country: "الزامات ویزا بر اساس کشور"
           }
         }
       },
@@ -42099,7 +42099,7 @@ export const translations: Record<Language, Translations> = {
             error: {
               loading: {
                 this: {
-                  content: "このコンテンツの読み込み中にエラーが発生しました"
+                  content: "خطا در بارگذاری این محتوا رخ داد"
                 }
               }
             }
@@ -42110,7 +42110,7 @@ export const translations: Record<Language, Translations> = {
         lake: {
           fish: {
             in: {
-              vinegar: "西湖酢漬けの魚"
+              vinegar: "ماهی ترش دریاچه غربی"
             }
           }
         }
@@ -42121,7 +42121,7 @@ export const translations: Record<Language, Translations> = {
             i: {
               use: {
                 in: {
-                  china: "中国ではどのATMを使えばいいですか？"
+                  china: "در چین از کدام خودپرداز استفاده کنم؟"
                 }
               }
             }
@@ -42134,7 +42134,7 @@ export const translations: Record<Language, Translations> = {
                 know: {
                   before: {
                     visiting: {
-                      china: "中国訪問前に知っておくべき文化的エチケットは何ですか？"
+                      china: "چه آداب فرهنگی را باید قبل از بازدید از چین بدانم؟"
                     }
                   }
                 }
@@ -42149,7 +42149,7 @@ export const translations: Record<Language, Translations> = {
                 are: {
                   available: {
                     in: {
-                      china: "中国ではどのような緊急電話番号とサービスが利用できますか？"
+                      china: "چه شماره‌ها و خدمات اضطراری در چین موجود است؟"
                     }
                   }
                 }
@@ -42170,7 +42170,7 @@ export const translations: Record<Language, Translations> = {
                             a: {
                               visa: {
                                 on: {
-                                  arrival: "中国訪問にはどのようなビザが必要ですか？到着時にビザを取得できますか？"
+                                  arrival: "برای بازدید از چین به چه ویزایی نیاز دارم؟ آیا می‌توانم هنگام ورود ویزا بگیرم؟"
                                 }
                               }
                             }
@@ -42192,7 +42192,7 @@ export const translations: Record<Language, Translations> = {
               to: {
                 go: {
                   in: {
-                    china: "中国でどこに行きたいですか？"
+                    china: "کجا در چین می‌خواهید بروید؟"
                   }
                 }
               }
@@ -42201,12 +42201,12 @@ export const translations: Record<Language, Translations> = {
         },
         is: {
           the: {
-            embassy: "大使館はどこですか？",
-            hospital: "病院はどこですか？",
+            embassy: "سفارت کجاست؟",
+            hospital: "بیمارستان کجاست؟",
             police: {
-              station: "警察署はどこですか？"
+              station: "ایستگاه پلیس کجاست؟"
             },
-            restroom: "トイレはどこですか？"
+            restroom: "توالت کجاست؟"
           }
         }
       },
@@ -42266,7 +42266,7 @@ export const translations: Record<Language, Translations> = {
                       that: {
                         wasn: {
                           t: {
-                            saved: "前回のセッションで保存されなかった会話があります"
+                            saved: "گفتگوهای ذخیره‌نشده از جلسه قبلی وجود دارد"
                           }
                         }
                       }
@@ -42286,7 +42286,7 @@ export const translations: Record<Language, Translations> = {
                     upgrading: {
                       for: {
                         more: {
-                          requests: "月間制限に近づいています。より多くのリクエストにはアップグレードをご検討ください"
+                          requests: "به محدودیت ماهانه نزدیک می‌شوید. برای درخواست‌های بیشتر ارتقا دهید"
                         }
                       }
                     }
@@ -42322,7 +42322,7 @@ export const translations: Record<Language, Translations> = {
                 }
               },
               highest: {
-                plan: "あなたは最高のプランをご利用中です！"
+                plan: "شما از بهترین پلن استفاده می‌کنید!"
               }
             }
           }
@@ -42334,7 +42334,7 @@ export const translations: Record<Language, Translations> = {
                 limit: {
                   upgrade: {
                     to: {
-                      continue: "月間制限に達しました。アップグレードして続行してください"
+                      continue: "به محدودیت ماهانه رسیده‌اید. برای ادامه ارتقا دهید"
                     }
                   }
                 }
@@ -42347,7 +42347,7 @@ export const translations: Record<Language, Translations> = {
         personal: {
           china: {
             travel: {
-              intelligence: "あなたの個人的な中国旅行情報"
+              intelligence: "اطلاعات شخصی سفر شما به چین"
             }
           }
         },
@@ -42355,7 +42355,7 @@ export const translations: Record<Language, Translations> = {
           includes: {
             unlimited: {
               ai: {
-                requests: "あなたのプランには無制限のAIリクエストが含まれています"
+                requests: "پلن شما شامل درخواست‌های نامحدود AI است"
               }
             }
           }
@@ -42412,16 +42412,16 @@ export const translations: Record<Language, Translations> = {
       featuredDestinations: "بر اساس مقاصد محبوب"
     },
     invitationLetter: {
-      allowPopups: "印刷のためにポップアップを許可してください",
-      bilingual: "バイリンガル",
-      downloadPdf: "PDFをダウンロード",
-      edit: "編集",
-      english: "英語",
-      generating: "生成中...",
-      pdfFailed: "PDF生成に失敗しました：",
-      pdfFailedRetry: "PDF生成に失敗しました。もう一度お試しください。",
+      allowPopups: "برای چاپ، پنجره‌های بازشو را مجاز کنید",
+      bilingual: "دوزبانه",
+      downloadPdf: "دانلود PDF",
+      edit: "ویرایش",
+      english: "انگلیسی",
+      generating: "در حال تولید...",
+      pdfFailed: "تولید PDF ناموفق بود:",
+      pdfFailedRetry: "تولید PDF ناموفق بود. دوباره تلاش کنید.",
       png: "PNG",
-      preview: "プレビュー"
+      preview: "پیش‌نمایش"
     },
     language: {
       chinese: "چینی",
@@ -42429,8 +42429,8 @@ export const translations: Record<Language, Translations> = {
       current: "حال",
       dir: "rtl",
       english: "انگلیسی",
-      name: "中文（简体）",
-      nativeName: "简体中文",
+      name: "چینی (ساده‌شده)",
+      nativeName: "چینی ساده‌شده",
       switchTo: "تغییر به"
     },
     loginPage: {
@@ -42446,7 +42446,7 @@ export const translations: Record<Language, Translations> = {
       guide: "راهنمای سفر",
       home: "خانه",
       restaurants: "رستوران‌ها",
-      scenicSpots: "景勝地",
+      scenicSpots: "جاذبه گردشگری",
       selectLanguage: "انتخاب زبان",
       signIn: "Sign in",
       tagline: "با ای‌آی به چین سفر کنید"
@@ -42527,29 +42527,29 @@ export const translations: Record<Language, Translations> = {
       welcome: "به چایناکانکت خوش آمدید!"
     },
     paymentGuide: {
-      atmHeading: "国際カードに強いATM",
-      atmTip1: "空港や銀行のATMが最良の為替レートです",
-      atmTip2: "国際的な引き出し手数料について銀行に確認してください",
-      atmTip3: "一部のATMは外国カードの引き出しを制限します（最大2000元）",
-      atmTip4: "銀行内のATMを使うとより安全です",
-      faqsHeading: "よくある質問",
-      securityWarning: "セキュリティ警告",
-      setupHeading: "設定方法",
+      atmHeading: "خودپردازهای مناسب برای کارت‌های بین‌المللی",
+      atmTip1: "خودپردازهای فرودگاه و بانک بهترین نرخ ارز را دارند",
+      atmTip2: "در مورد کارمزد برداشت بین‌المللی با بانک خود مشورت کنید",
+      atmTip3: "برخی خودپردازها برداشت با کارت خارجی را محدود می‌کنند (حداکثر 2000 یوان)",
+      atmTip4: "استفاده از خودپردازهای داخل بانک امن‌تر است",
+      faqsHeading: "سوالات متداول",
+      securityWarning: "هشدار امنیتی",
+      setupHeading: "روش تنظیم",
       tabAlipay: "Alipay",
       tabAtm: "ATM",
-      tabCash: "現金・カード",
-      tabFaq: "よくある質問",
-      tabTax: "税還付",
+      tabCash: "پول نقد و کارت",
+      tabFaq: "سوالات متداول",
+      tabTax: "بازپرداخت مالیات",
       tabWechat: "WeChat Pay",
-      taxTip1: "セキュリティチェック前に空港出発ロビーで行ってください",
-      taxTip2: "対象店舗での最低購入額は500元",
-      taxTip3: "還付率：品目カテゴリーにより3-11%",
-      taxTip4: "税還付マーク付きの発注書を保管してください"
+      taxTip1: "در سالن خروج فرودگاه قبل از بازرسی امنیتی انجام دهید",
+      taxTip2: "حداقل خرید 500 یوان در فروشگاه‌های مشمول",
+      taxTip3: "نرخ بازپرداخت: 3-11٪ بسته به دسته کالا",
+      taxTip4: "فاکتورهای دارای علامت بازپرداخت مالیات را نگه دارید"
     },
     priceTransparency: {
-      all: "すべて",
-      showComparison: "比較表示",
-      showSimplified: "簡略表示"
+      all: "همه",
+      showComparison: "نمایش مقایسه‌ای",
+      showSimplified: "نمایش ساده"
     },
     pricing: {
       annualNote: "Billed annually at ¥659 (save ¥169)",
@@ -42783,7 +42783,7 @@ export const translations: Record<Language, Translations> = {
       title: "راهنمای رستوران"
     },
     scamPrevention: {
-      all: "すべて"
+      all: "همه"
     },
     scenicSpots: {
       allSpots: "All Scenic Spots",
@@ -42808,28 +42808,28 @@ export const translations: Record<Language, Translations> = {
       shareTip: "با دوستان به اشتراک بگذارید"
     },
     transportGuide: {
-      airportWifi: "空港WiFiが利用可能な場合が多い — SIM購入前に接続を",
-      arrivalByPlane: "飛行機で",
-      arrivalByTrain: "電車で",
-      arrivalTip: "入国カードは大切に保管してください — 入管審査で必要になります",
-      bookingPlatforms: "予約プラットフォーム",
-      didiTip: "空港送迎にはDidiアプリが便利 — タクシーキューより安い",
-      howToUse: "使い方：",
-      proTips: "プロのヒント：",
-      seatClasses: "シートクラス",
-      selectMode: "交通手段を選択",
-      selectModeHint: "交通手段を選択してください",
-      tabArrival: "到着",
-      tabDistances: "距離",
-      tabIntercity: "都市間",
-      tabLocal: "市内の交通",
-      tabPhrases: "フレーズ集",
-      tabTaxi: "タクシー/Didi",
-      tabTrains: "鉄道予約",
-      taxiPhrases: "タクシー便利フレーズ",
-      trainBookingTips: "鉄道予約のコツ",
+      airportWifi: "وای‌فای فرودگاه اغلب در دسترس است - قبل از خرید سیم‌کارت وصل شوید",
+      arrivalByPlane: "با هواپیما",
+      arrivalByTrain: "با قطار",
+      arrivalTip: "کارت ورود را ایمن نگه دارید - در بازرسی مهاجرت به آن نیاز خواهید داشت",
+      bookingPlatforms: "پلتفرم‌های رزرو",
+      didiTip: "برای ترانسفر فرودگاه از اپلیکیشن Didi استفاده کنید - ارزان‌تر از صف تاکسی",
+      howToUse: "نحوه استفاده:",
+      proTips: "نکات حرفه‌ای:",
+      seatClasses: "کلاس صندلی",
+      selectMode: "انتخاب حمل و نقل",
+      selectModeHint: "لطفاً حمل و نقل را انتخاب کنید",
+      tabArrival: "ورود",
+      tabDistances: "فاصله",
+      tabIntercity: "بین شهری",
+      tabLocal: "حمل و نقل شهری",
+      tabPhrases: "مجموعه عبارات",
+      tabTaxi: "تاکسی/Didi",
+      tabTrains: "رزرو قطار",
+      taxiPhrases: "عبارات مفید تاکسی",
+      trainBookingTips: "نکات رزرو قطار",
       tripCta: "Trip.com / Ctrip",
-      usefulPhrases: "交通便利フレーズ"
+      usefulPhrases: "عبارات مفید حمل و نقل"
     },
     userPage: {
       heading: "پروفایل",
@@ -42837,42 +42837,42 @@ export const translations: Record<Language, Translations> = {
       title: "پروفایل کاربر - ChinaConnect"
     },
     visaPage: {
-      appsHeading: "必須アプリ",
-      appsSubtitle: "到着前にダウンロード — Google Playは中国で利用不可",
-      beforeBuying: "購入前に",
-      digitalCopiesDesc: "デジタルコピーをクラウド（Google Drive、iCloud）に保管し、家族と共有。原本とは別に物理コピーを保管してください。",
-      duration: "滞在期間：",
-      faqHeading: "よくある質問",
-      fee: "料金：",
-      finalPreparations: "最終準備",
-      flightHeading: "フライト予約のコツ",
-      importantReminder: "重要なお知らせ",
+      appsHeading: "اپلیکیشن‌های ضروری",
+      appsSubtitle: "قبل از ورود دانلود کنید - Google Play در چین در دسترس نیست",
+      beforeBuying: "قبل از خرید",
+      digitalCopiesDesc: "نسخه دیجیتال را در فضای ابری (Google Drive، iCloud) نگه دارید و با خانواده به اشتراک بگذارید. نسخه فیزیکی را جدا از اصل نگه دارید.",
+      duration: "مدت اقامت:",
+      faqHeading: "سوالات متداول",
+      fee: "هزینه:",
+      finalPreparations: "آماده‌سازی نهایی",
+      flightHeading: "نکات رزرو پرواز",
+      importantReminder: "اطلاعیه مهم",
       insuranceDesc: "Medical treatment in China can be expensive, especially for foreigners. A good travel insurance policy with medical coverage is non-negotiable for safe travel.",
-      insuranceHeading: "旅行保険は必須",
-      insuranceTipsHeading: "保険選びのポイント",
-      overstayWarning: "ビザオーバーステイ警告",
-      processing: "処理期間：",
-      recommendedProviders: "おすすめプロバイダー",
-      reqHeading: "国別ビザ要件",
-      reqSubtitle: "国を選択して具体的な要件を確認",
-      requirements: "必要書類：",
-      tabApps: "アプリ・VPN",
-      tabChecklist: "出発前",
-      tabDocuments: "必要書類",
-      tabInsurance: "保険",
-      tabOverview: "概要",
-      tabProcess: "手続き",
-      tabTips: "コツ・よくある質問",
-      weeksBefore: "出発までの週数（4-6週間前）",
-      weeksBeforeDesc: "出発の4-6週間前に完了してください"
+      insuranceHeading: "بیمه مسافرتی الزامی است",
+      insuranceTipsHeading: "نکات انتخاب بیمه",
+      overstayWarning: "هشدار اقامت بیش از حد ویزا",
+      processing: "مدت پردازش:",
+      recommendedProviders: "ارائه‌دهندگان پیشنهادی",
+      reqHeading: "الزامات ویزا بر اساس کشور",
+      reqSubtitle: "کشور را انتخاب کنید تا الزامات خاص را مشاهده کنید",
+      requirements: "مدارک لازم:",
+      tabApps: "اپلیکیشن و VPN",
+      tabChecklist: "قبل از سفر",
+      tabDocuments: "مدارک لازم",
+      tabInsurance: "بیمه",
+      tabOverview: "بررسی اجمالی",
+      tabProcess: "مراحل",
+      tabTips: "نکات و سوالات متداول",
+      weeksBefore: "هفته‌های قبل از سفر (۴-۶ هفته قبل)",
+      weeksBeforeDesc: "لطفاً ۴-۶ هفته قبل از سفر تکمیل کنید"
     }
   },
   "zh-CN": {
     accommodationGuide: {
-      tabBooking: "予約のコツ",
-      tabCheckin: "チェックインの流れ",
-      tabFaqs: "よくある質問",
-      tabTypes: "ホテルタイプ"
+      tabBooking: "预订小贴士",
+      tabCheckin: "入住流程",
+      tabFaqs: "常见问题",
+      tabTypes: "酒店类型"
     },
     accountPage: {
       active: "已激活",
@@ -43187,17 +43187,17 @@ export const translations: Record<Language, Translations> = {
       categoryAll: "全部",
       categoryLabel: "类别",
       chinanewsDesc: "公式観光情報",
-      ctripDesc: "観光地のレビュー・予約",
+      ctripDesc: "景点点评与预订",
       disclaimer: "开放时间、门票价格和电话号码可能会更改。我们建议通过景点的官方网站或提前致电进行确认。",
-      mafengwoDesc: "中国最大の旅行コミュニティ",
-      mctDesc: "政府観光データ",
+      mafengwoDesc: "中国最大的旅行社区",
+      mctDesc: "官方旅游数据",
       openOnMap: "在地图上打开",
       openingHours: "开放时间",
       subtitle: "必看的地标、博物馆和自然奇观。",
       ticketPrice: "门票价格",
       tipsHeader: "提示",
       title: "{city}的景点",
-      tripadvisorDesc: "海外の観光地レビュー",
+      tripadvisorDesc: "海外景点点评",
       viewAll: "查看{city}的所有景点",
       viewDetails: "查看详情",
       viewMore: "查看更多景点"
@@ -43205,9 +43205,9 @@ export const translations: Record<Language, Translations> = {
     cityFood: {
       avgPrice: "平均价格",
       cuisine: "美食",
-      dataSourcesDesc: "権威ある情報源からまとめた飲食店データ。訪問前に詳細を確認してください：",
-      dataSourcesHeading: "データソースと参考資料",
-      dianpingDesc: "中国最大のローカル生活サービスプラットフォーム",
+      dataSourcesDesc: "来自权威来源的餐饮数据。访问前请查看详情：",
+      dataSourcesHeading: "数据来源与参考资料",
+      dianpingDesc: "中国最大的本地生活服务平台",
       disclaimer: "电话号码和地址可能会更改。我们建议通过餐厅的官方渠道或提前致电进行确认。",
       filterAll: "全部",
       filterBlackPearl: "黑珍珠",
@@ -43217,16 +43217,16 @@ export const translations: Record<Language, Translations> = {
       filterMichelin: "米其林",
       filteringLabel: "筛选：",
       googleMaps: "谷歌地图",
-      meituanDesc: "出前・レビュープラットフォーム",
-      michelinDesc: "国際的に権威ある飲食店評価",
-      nextCity: "次の都市",
-      previousCity: "前の都市",
+      meituanDesc: "外卖与点评平台",
+      michelinDesc: "国际权威餐厅评级",
+      nextCity: "下一个城市",
+      previousCity: "上一个城市",
       signatureDishes: "招牌菜",
       subtitle: "米其林星级、黑珍珠推荐和本地宝藏。",
       title: "{city}的餐厅",
       viewAll: "查看{city}的所有餐厅",
       viewDetails: "查看详情",
-      xiaohongshuDesc: "ローカルグルメ探索ガイド"
+      xiaohongshuDesc: "本地美食探索指南"
     },
     cityHotels: {
       bookCta: "查看酒店详情",
@@ -43264,7 +43264,7 @@ export const translations: Record<Language, Translations> = {
       dataSourcesHeading: "数据来源",
       downloadBefore: "抵达中国前下载这些应用。",
       durationLabel: "所要時間：",
-      electricity: "電圧・電源",
+      electricity: "电压与电源",
       elevation: "海拔",
       emergencySubtitle: "{city}的重要电话号码和大使馆信息。",
       emergencySubtitleDynamic: "{city}的重要电话号码",
@@ -43286,13 +43286,13 @@ export const translations: Record<Language, Translations> = {
       hotelsCountUnit: "家酒店",
       hotelsHeading: "住宿推荐",
       hotelsSubtitle: "从精品酒店到国际连锁酒店。",
-      howToUseLabel: "使い方：",
+      howToUseLabel: "使用方法：",
       importantNumbers: "{city}的重要电话号码",
       intro: "欢迎来到{city}，中国最迷人的目的地之一。",
       language: "语言",
       localFoodHighlights: "Local Food Highlights",
       localFoodHighlightsDesc: "Hand-picked local dining picks in {city}",
-      mapLayerDesc: "レイヤー切替：ミシュラン星、黒珍珠ランキング、地元のおすすめ",
+      mapLayerDesc: "图层切换：米其林星级、黑珍珠榜单、本地推荐",
       moreCities: "更多城市",
       nextCity: "下一个城市",
       noHotels: "暂无酒店数据",
@@ -43314,11 +43314,11 @@ export const translations: Record<Language, Translations> = {
       proTips: "专业提示",
       quickFacts: "快速事实",
       quickFactsHeading: "城市速览",
-      recommendedPaymentApps: "おすすめ決済アプリ",
-      recommendedTransportApps: "おすすめ交通アプリ",
+      recommendedPaymentApps: "推荐支付应用",
+      recommendedTransportApps: "推荐交通应用",
       region: "地区",
       restaurantCount: "{count}家餐厅",
-      restaurantsLabel: "レストラン",
+      restaurantsLabel: "餐厅",
       sectionApps: "必备应用",
       sectionAttractions: "热门景点",
       sectionConnectivity: "SIM卡和eSIM",
@@ -43346,18 +43346,18 @@ export const translations: Record<Language, Translations> = {
       tabTransport: "交通",
       timezone: "时区",
       tipCount: "{count}条提示",
-      tipsLabel: "ポイント：",
+      tipsLabel: "要点：",
       topHighlightsHeading: "城市亮点",
       transportSubtitle: "抵达与城市内交通",
       travelTo: "前往{city}",
       viewAllAttractions: "查看所有景点",
       viewAllHotels: "查看全部酒店",
       viewAllRestaurants: "查看所有餐厅",
-      visa: "ビザ",
+      visa: "签证",
       visaSubtitle: "免签政策和入境要求。",
       visit: "访问",
       weatherForecast: "天气预报",
-      weatherNA: "天気データなし",
+      weatherNA: "暂无天气数据",
       weatherNotAvailable: "暂无天气信息",
       weatherNow: "现在",
       winter: "冬：",
@@ -43397,17 +43397,17 @@ export const translations: Record<Language, Translations> = {
       viewMore: "View more"
     },
     communicationGuide: {
-      tabApps: "必須アプリ",
-      tabSetup: "セットアップガイド",
-      tabSim: "SIM/eSIMオプション",
+      tabApps: "必备应用",
+      tabSetup: "设置指南",
+      tabSim: "SIM/eSIM选项",
       tabVpn: "VPN設定"
     },
     culturalWarnings: {
-      all: "すべて",
+      all: "全部",
       catColors: "色",
       catDining: "食事",
-      catGiftEtiquette: "贈答マナー",
-      catGifts: "贈り物",
+      catGiftEtiquette: "送礼礼仪",
+      catGifts: "礼物",
       catNumbers: "数字",
       catPhoto: "写真",
       catPhotography: "写真撮影",
@@ -43419,32 +43419,32 @@ export const translations: Record<Language, Translations> = {
     },
     departureGuide: {
       tabAirport: "空港情報",
-      tabChecklist: "チェックリスト",
+      tabChecklist: "清单",
       tabSteps: "出国手順",
       tabTax: "税還付"
     },
     diningGuide: {
-      allergenCard: "アレルゲン翻訳カード",
-      budgetHeading: "予算ガイド（1人あたり）",
-      casual: "カジュアルレストラン",
-      categoriesHeading: "人気料理カテゴリー",
-      chinesePhrases: "中国語フレーズ：",
-      commonAllergies: "よくあるアレルゲン：",
+      allergenCard: "过敏原翻译卡",
+      budgetHeading: "预算指南（每人）",
+      casual: "休闲餐厅",
+      categoriesHeading: "热门菜品分类",
+      chinesePhrases: "中文短语：",
+      commonAllergies: "常见过敏原：",
       dietary: "食事制限",
-      diningEtiquette: "食事マナー",
-      faqsHeading: "よくある質問",
-      importantAllergyInfo: "重要なアレルギー情報",
-      orderingPhrases: "注文フレーズ",
+      diningEtiquette: "用餐礼仪",
+      faqsHeading: "常见问题",
+      importantAllergyInfo: "重要过敏信息",
+      orderingPhrases: "点餐用语",
       popularDishesHeading: "人気料理：",
-      proTips: "プロのヒント：",
-      safeOptions: "安心な選択肢：",
+      proTips: "专业提示：",
+      safeOptions: "安全选择：",
       streetFood: "屋台料理",
-      tabAllergies: "アレルギー",
-      tabBudget: "予算ガイド",
-      tabCategories: "カテゴリー",
+      tabAllergies: "过敏",
+      tabBudget: "预算指南",
+      tabCategories: "分类",
       tabDishes: "人気料理",
-      tabEtiquette: "マナー",
-      tabPhrases: "フレーズ集"
+      tabEtiquette: "礼仪",
+      tabPhrases: "常用语"
     },
     emergency: {
       address: "Address",
@@ -43469,15 +43469,15 @@ export const translations: Record<Language, Translations> = {
       viewAllContacts: "View all contacts"
     },
     emergencyGuide: {
-      bannerSubtitle: "この番号を保存してください — 警察：110、救急：120、消防：119",
-      bannerTitle: "中国の緊急番号",
+      bannerSubtitle: "请保存此号码 — 警察：110，急救：120，火警：119",
+      bannerTitle: "中国紧急号码",
       labelAmbulance: "救急",
       labelFire: "消防",
       labelPolice: "警察",
       tabContacts: "緊急連絡先",
       tabEmbassy: "大使館情報",
-      tabOverview: "緊急時の種類",
-      tabPhrases: "便利フレーズ"
+      tabOverview: "紧急情况类型",
+      tabPhrases: "常用短语"
     },
     emergencyPage: {
       ambulance: "急救",
@@ -43818,7 +43818,7 @@ export const translations: Record<Language, Translations> = {
     },
     hard: {
       accommodation: {
-        guide: "宿泊施設ガイド"
+        guide: "住宿指南"
       },
       after: {
         landing: {
@@ -43833,7 +43833,7 @@ export const translations: Record<Language, Translations> = {
                           can: {
                             help: {
                               with: {
-                                directio: "着陸後、標識に従って地下鉄またはタクシーに乗ります。空港スタッフが道順をお手伝いします。"
+                                directio: "落地后，按照指示牌乘坐地铁或出租车。机场工作人员会协助指路。"
                               }
                             }
                           }
@@ -43849,9 +43849,9 @@ export const translations: Record<Language, Translations> = {
       },
       ai: {
         requests: {
-          month: "AIリクエスト/月",
+          month: "AI请求/月",
           this: {
-            month: "今月のAIリクエスト"
+            month: "本月AI请求"
           }
         },
         responses: {
@@ -43861,7 +43861,7 @@ export const translations: Record<Language, Translations> = {
                 only: {
                   always: {
                     verify: {
-                      locally: "AIの応答は参考用です。常に現地で確認してください。"
+                      locally: "AI回复仅供参考，请务必在当地核实。"
                     }
                   }
                 }
@@ -43873,7 +43873,7 @@ export const translations: Record<Language, Translations> = {
       aichat: {
         error: {
           boundary: {
-            caught: "AIチャットエラー境界でキャッチされました："
+            caught: "AI聊天错误边界捕获："
           }
         }
       },
@@ -43886,7 +43886,7 @@ export const translations: Record<Language, Translations> = {
                   inter: {
                     city: {
                       transport: {
-                        options: "空港到着、メトロ、バス、タクシー、および都市間交通のオプション"
+                        options: "机场到达、地铁、公交、出租车及城际交通选项"
                       }
                     }
                   }
@@ -43901,7 +43901,7 @@ export const translations: Record<Language, Translations> = {
               connect: {
                 before: {
                   buying: {
-                    sim: "空港のWi-Fiは通常利用可能です - SIMカードを購入する前に接続してください"
+                    sim: "机场Wi-Fi通常可用 - 购买SIM卡前请先连接"
                   }
                 }
               }
@@ -43918,7 +43918,7 @@ export const translations: Record<Language, Translations> = {
                   refund: {
                     procedures: {
                       in: {
-                        china: "中国におけるAlipay、WeChat Pay、現金および税金還付の手続き"
+                        china: "中国支付宝、微信支付、现金及退税流程"
                       }
                     }
                   }
@@ -43930,20 +43930,20 @@ export const translations: Record<Language, Translations> = {
       },
       allergen: {
         translation: {
-          card: "アレルゲン翻訳カード"
+          card: "过敏原翻译卡"
         }
       },
       amap: {
         api: {
           not: {
-            loaded: "Amap APIが読み込まれていません"
+            loaded: "高德地图API未加载"
           }
         }
       },
       an: {
         unexpected: {
           error: {
-            occurred: "予期しないエラーが発生しました"
+            occurred: "发生意外错误"
           }
         },
         unknown: {
@@ -43952,7 +43952,7 @@ export const translations: Record<Language, Translations> = {
               while: {
                 getting: {
                   your: {
-                    location: "位置情報を取得中に不明なエラーが発生しました。"
+                    location: "获取位置时发生未知错误。"
                   }
                 }
               }
@@ -43968,7 +43968,7 @@ export const translations: Record<Language, Translations> = {
                 scenic: {
                   spots: {
                     in: {
-                      china: "中国の観光地を見つけて案内するためのアプリ"
+                      china: "查找和导航中国景点的应用"
                     }
                   }
                 }
@@ -43980,7 +43980,7 @@ export const translations: Record<Language, Translations> = {
       arrival: {
         to: {
           inter: {
-            city: "到着から都市間移動まで"
+            city: "从到达至城际交通"
           }
         }
       },
@@ -43988,7 +43988,7 @@ export const translations: Record<Language, Translations> = {
         about: {
           your: {
             china: {
-              trip: "あなたの中国旅行について質問する..."
+              trip: "询问您的中国旅行问题..."
             }
           }
         }
@@ -44006,7 +44006,7 @@ export const translations: Record<Language, Translations> = {
                 have: {
                   best: {
                     exchange: {
-                      rates: "空港や銀行のATMが最も良い為替レートです"
+                      rates: "机场或银行ATM汇率最佳"
                     }
                   }
                 }
@@ -44016,13 +44016,13 @@ export const translations: Record<Language, Translations> = {
         }
       },
       authentication: {
-        failed: "認証に失敗しました"
+        failed: "认证失败"
       },
       best: {
         atms: {
           for: {
             international: {
-              cards: "国際カードに最適なベストなATM"
+              cards: "最适合国际卡的ATM"
             }
           }
         },
@@ -44034,7 +44034,7 @@ export const translations: Record<Language, Translations> = {
                   that: {
                     tourists: {
                       usually: {
-                        miss: "観光客が通常見逃す成都のベストローカルストリートフード"
+                        miss: "游客通常错过的成都最佳本地街头美食"
                       }
                     }
                   }
@@ -44057,7 +44057,7 @@ export const translations: Record<Language, Translations> = {
                               best: {
                                 for: {
                                   first: {
-                                    timers: "中国の長城を訪れるベストな方法は？初心者に最適なセクションは？"
+                                    timers: "游览中国长城的最佳方式？最适合初学者的段落？"
                                   }
                                 }
                               }
@@ -44076,7 +44076,7 @@ export const translations: Record<Language, Translations> = {
       book: {
         high: {
           speed: {
-            rail: "高速鉄道を予約する"
+            rail: "预订高铁"
           }
         },
         professional: {
@@ -44088,7 +44088,7 @@ export const translations: Record<Language, Translations> = {
                     business: {
                       visits: {
                         in: {
-                          china: "中国のビジネス訪問のためにプロの通訳者と翻訳者を予約する。逐次通訳、同時通訳、公文書翻訳。"
+                          china: "为中国商务访问预订专业口译和笔译服务。交替传译、同声传译、公文翻译。"
                         }
                       }
                     }
@@ -44106,7 +44106,7 @@ export const translations: Record<Language, Translations> = {
                   meetings: {
                     conferences: {
                       and: {
-                        negotiatio: "中国での会議、カンファレンス、交渉のために、審査を受けた通訳者と翻訳者を予約しましょう。"
+                        negotiatio: "为在中国的会议、大会、谈判预订经过审核的口译和笔译人员。"
                       }
                     }
                   }
@@ -44118,30 +44118,30 @@ export const translations: Record<Language, Translations> = {
       },
       business: {
         etiquette: {
-          essentials: "ビジネスエチケットの基本",
+          essentials: "商务礼仪基础",
           tips: {
             for: {
               meeting: {
                 chinese: {
-                  partners: "中国のビジネスパートナーとのミーティングのためのビジネスエチケットのヒント"
+                  partners: "与中国商务伙伴会面的商务礼仪提示"
                 }
               }
             }
           }
         },
         express: {
-          chinaconnect: "ビジネスエクスプレス - ChinaConnect"
+          chinaconnect: "商务快线 - ChinaConnect"
         },
         invitation: {
           letter: {
             templates: {
-              chinaconnect: "ビジネス招待状テンプレート - ChinaConnect"
+              chinaconnect: "商务邀请函模板 - ChinaConnect"
             }
           }
         }
       },
       calculating: {
-        routes: "ルートを計算中..."
+        routes: "正在计算路线..."
       },
       can: {
         i: {
@@ -44150,7 +44150,7 @@ export const translations: Record<Language, Translations> = {
               china: {
                 visa: {
                   on: {
-                    arrival: "中国ビザは到着時に取得できますか？"
+                    arrival: "中国签证可以落地签吗？"
                   }
                 }
               },
@@ -44159,7 +44159,7 @@ export const translations: Record<Language, Translations> = {
                   on: {
                     purchases: {
                       in: {
-                        china: "中国での購入で税金還付を受けられますか？"
+                        china: "在中国购物可以退税吗？"
                       }
                     }
                   }
@@ -44177,7 +44177,7 @@ export const translations: Record<Language, Translations> = {
                         apps: {
                           do: {
                             i: {
-                              need: "中国でApple Payは使えますか？どの支払いアプリが必要ですか？"
+                              need: "中国可以使用Apple Pay吗？需要哪些支付应用？"
                             }
                           }
                         }
@@ -44197,7 +44197,7 @@ export const translations: Record<Language, Translations> = {
               about: {
                 international: {
                   withdrawal: {
-                    fees: "国際引き出し手数料について銀行に確認してください"
+                    fees: "请向银行确认国际取款手续费"
                   }
                 }
               }
@@ -44209,7 +44209,7 @@ export const translations: Record<Language, Translations> = {
             to: {
               confirm: {
                 your: {
-                  account: "アカウントを確認するためにメールをチェックしてください。"
+                  account: "请查收邮件以确认账户。"
                 }
               }
             }
@@ -44218,19 +44218,19 @@ export const translations: Record<Language, Translations> = {
       },
       checking: {
         visa: {
-          requirements: "ビザの必要条件を調べています..."
+          requirements: "正在查询签证要求..."
         },
-        weather: "天気を調べています..."
+        weather: "正在查询天气..."
       },
       china: {
         business: {
-          etiquette: "中国のビジネスエチケット",
-          guide: "中国ビジネスガイド"
+          etiquette: "中国商务礼仪",
+          guide: "中国商务指南"
         },
         company: {
           registration: {
             guide: {
-              chinaconnect: "中国会社登録ガイド - ChinaConnect"
+              chinaconnect: "中国公司注册指南 - ChinaConnect"
             }
           }
         },
@@ -44246,7 +44246,7 @@ export const translations: Record<Language, Translations> = {
                           you: {
                             must: {
                               apply: {
-                                befo: "中国はほとんどの国籍に対して到着時のビザを提供していません。旅行前に中国の大使館、総領事館、または認可されたビザセンターで申請する必要があります。"
+                                befo: "中国对大多数国籍不提供落地签证。旅行前需向中国大使馆、领事馆或授权签证中心申请。"
                               }
                             }
                           }
@@ -44261,7 +44261,7 @@ export const translations: Record<Language, Translations> = {
         },
         expo: {
           calendar: {
-            chinaconnect: "中国展示会カレンダー - ChinaConnect"
+            chinaconnect: "中国展会日历 - ChinaConnect"
           }
         },
         interpreter: {
@@ -44275,36 +44275,36 @@ export const translations: Record<Language, Translations> = {
         business: {
           etiquette: {
             guide: {
-              chinaconnect: "中国ビジネスエチケットガイド - ChinaConnect"
+              chinaconnect: "中国商务礼仪指南 - ChinaConnect"
             }
           }
         },
-        restaurants: "中華レストラン"
+        restaurants: "中餐厅"
       },
       city: {
         distance: {
           travel: {
-            time: "都市間の距離と移動時間"
+            time: "城际距离与交通时间"
           }
         }
       },
       close: {
         emergency: {
-          menu: "緊急メニューを閉じる"
+          menu: "关闭紧急菜单"
         }
       },
       collect: {
         your: {
-          passport: "パスポートを受け取る"
+          passport: "领取护照"
         }
       },
       communication: {
-        guide: "コミュニケーションガイド",
-        setup: "コミュニケーション設定"
+        guide: "沟通指南",
+        setup: "沟通设置"
       },
       company: {
         registration: {
-          guide: "会社登録ガイド"
+          guide: "公司注册指南"
         }
       },
       complete: {
@@ -44318,7 +44318,7 @@ export const translations: Record<Language, Translations> = {
                       in: {
                         china: {
                           including: {
-                            canton: "中国で開催される主要な見本市や展示会（広州交易会、自動車ショー、産業イベントを含む）の完全なカレンダー。主要イベントに合わせて出張を計画してください。"
+                            canton: "中国主要贸易展会和展览（包括广交会、车展、行业活动）的完整日历。根据主要活动规划您的商务旅行。"
                           }
                         }
                       }
@@ -44329,10 +44329,10 @@ export const translations: Record<Language, Translations> = {
             }
           }
         },
-        registration: "登録を完了する",
+        registration: "完成注册",
         the: {
           application: {
-            form: "申請フォームを記入する"
+            form: "填写申请表"
           },
           foreign: {
             passport: {
@@ -44360,13 +44360,13 @@ export const translations: Record<Language, Translations> = {
         }
       },
       consular: {
-        assistance: "領事サポート"
+        assistance: "领事支持"
       },
       conversation: {
         history: "会話履歴"
       },
       current: {
-        subscription: "現在のサブスクリプション"
+        subscription: "当前订阅"
       },
       daily: {
         details: {
@@ -44374,7 +44374,7 @@ export const translations: Record<Language, Translations> = {
             appear: {
               after: {
                 full: {
-                  planning: "詳細な日程は完全な計画後に表示されます"
+                  planning: "详细行程将在完整规划后显示"
                 }
               }
             }
@@ -44383,18 +44383,18 @@ export const translations: Record<Language, Translations> = {
       },
       delete: {
         this: {
-          conversation: "この会話を削除しますか？"
+          conversation: "删除此对话？"
         }
       },
       detailed: {
         feature: {
-          comparison: "詳細な機能比較"
+          comparison: "详细功能对比"
         }
       },
       determine: {
         your: {
           visa: {
-            type: "ビザの種類を確認する"
+            type: "确认签证类型"
           }
         }
       },
@@ -44410,7 +44410,7 @@ export const translations: Record<Language, Translations> = {
                   account: {
                     for: {
                       mobile: {
-                        payments: "モバイル決済に中国の銀行口座は必要ですか？"
+                        payments: "移动支付需要中国银行账户吗？"
                       }
                     }
                   }
@@ -44423,7 +44423,7 @@ export const translations: Record<Language, Translations> = {
                   for: {
                     a: {
                       china: {
-                        visa: "中国ビザに招待状は必要ですか？"
+                        visa: "中国签证需要邀请函吗？"
                       }
                     }
                   }
@@ -44434,7 +44434,7 @@ export const translations: Record<Language, Translations> = {
         },
         you: {
           speak: {
-            english: "英語は話せますか？"
+            english: "您会说英语吗？"
           }
         }
       },
@@ -44444,7 +44444,7 @@ export const translations: Record<Language, Translations> = {
             for: {
               this: {
                 city: {
-                  again: "この都市では再度表示しない"
+                  again: "此城市不再显示"
                 }
               }
             }
@@ -44455,7 +44455,7 @@ export const translations: Record<Language, Translations> = {
         alipay: {
           or: {
             wechat: {
-              pay: "AlipayまたはWeChat Payをダウンロードする"
+              pay: "下载支付宝或微信支付"
             }
           }
         },
@@ -44467,7 +44467,7 @@ export const translations: Record<Language, Translations> = {
                   before: {
                     arriving: {
                       in: {
-                        china: "これらのアプリを中国に到着する前にダウンロードして設定してください"
+                        china: "请在抵达中国前下载并设置这些应用"
                       }
                     }
                   }
@@ -44483,7 +44483,7 @@ export const translations: Record<Language, Translations> = {
                 is: {
                   blocked: {
                     in: {
-                      china: "到着前にダウンロード - Google Playは中国でブロックされています"
+                      china: "抵达前下载 - Google Play在中国被屏蔽"
                     }
                   }
                 }
@@ -44501,7 +44501,7 @@ export const translations: Record<Language, Translations> = {
                       for: {
                         china: {
                           visa: {
-                            appli: "中国ビザ申請およびビジネス訪問用のすぐに使えるバイリンガル招待状テンプレートをダウンロードしてください。必要事項を記入してすぐにダウンロードできます。"
+                            appli: "下载即用型双语邀请函模板，用于中国签证申请和商务访问。填写必要信息即可下载。"
                           }
                         }
                       }
@@ -44510,7 +44510,7 @@ export const translations: Record<Language, Translations> = {
                   letters: {
                     for: {
                       visa: {
-                        applications: "ビザ申請用のすぐに使えるバイリンガル招待状をダウンロードする"
+                        applications: "下载用于签证申请的即用型双语邀请函"
                       }
                     }
                   }
@@ -44524,7 +44524,7 @@ export const translations: Record<Language, Translations> = {
             before: {
               arriving: {
                 in: {
-                  china: "これらのアプリを中国に到着する前にダウンロードする"
+                  china: "抵达中国前下载这些应用"
                 }
               }
             }
@@ -44541,15 +44541,15 @@ export const translations: Record<Language, Translations> = {
         }
       },
       emergency: {
-        assistance: "緊急時のサポート",
+        assistance: "紧急支持",
         numbers: {
           in: {
-            china: "中国の緊急連絡先"
+            china: "中国紧急联系方式"
           }
         },
-        procedures: "緊急時の手順",
+        procedures: "紧急情况处理步骤",
         travel: {
-          documents: "緊急時の旅行書類"
+          documents: "紧急旅行证件"
         }
       },
       enjoy: {
@@ -44559,7 +44559,7 @@ export const translations: Record<Language, Translations> = {
               support: {
                 for: {
                   team: {
-                    plans: "すべての機能をお楽しみください。チームプランについてはサポートにお問い合わせください。"
+                    plans: "尽情享受所有功能。如需团队计划，请联系支持。"
                   }
                 }
               }
@@ -44575,13 +44575,13 @@ export const translations: Record<Language, Translations> = {
                 a: {
                   password: {
                     reset: {
-                      link: "パスワードリセットリンクを受信するにはメールアドレスを入力してください。"
+                      link: "输入您的电子邮件以接收密码重置链接。"
                     }
                   },
                   passwordless: {
                     sign: {
                       in: {
-                        link: "パスワードレスサインインリンクを受信するにはメールアドレスを入力してください。"
+                        link: "输入您的电子邮件以接收无密码登录链接。"
                       }
                     }
                   }
@@ -44596,7 +44596,7 @@ export const translations: Record<Language, Translations> = {
           for: {
             getting: {
               around: {
-                china: "中国での移動に必要なアプリ"
+                china: "中国出行必备应用"
               }
             }
           },
@@ -44605,7 +44605,7 @@ export const translations: Record<Language, Translations> = {
               interface: {
                 for: {
                   navigating: {
-                    china: "中国での移動に便利な英語インターフェース付きアプリ"
+                    china: "中国出行必备的英文界面应用"
                   }
                 }
               }
@@ -44615,40 +44615,40 @@ export const translations: Record<Language, Translations> = {
         messaging: {
           and: {
             connectivity: {
-              apps: "必須のメッセージングおよび接続アプリ"
+              apps: "必备通讯和连接应用"
             }
           }
         }
       },
       expo: {
         event: {
-          calendar: "展示会＆イベントカレンダー"
+          calendar: "展会与活动日历"
         }
       },
       failed: {
         to: {
           fetch: {
             city: {
-              scores: "都市のスコアを取得できませんでした："
+              scores: "无法获取城市评分："
             },
-            profile: "プロフィールの取得に失敗しました："
+            profile: "获取个人资料失败："
           },
           load: {
             amap: {
-              api: "Amap APIの読み込みに失敗しました"
+              api: "高德地图API加载失败"
             },
-            weather: "天気の読み込みに失敗しました"
+            weather: "天气加载失败"
           },
           save: {
-            route: "ルートの保存に失敗しました："
+            route: "保存路线失败："
           },
           search: {
             nearby: {
-              places: "近くの場所の検索に失敗しました："
+              places: "搜索附近地点失败："
             }
           },
           update: {
-            profile: "プロフィールの更新に失敗しました："
+            profile: "更新个人资料失败："
           }
         }
       },
@@ -44670,7 +44670,7 @@ export const translations: Record<Language, Translations> = {
                           hotels: {
                             use: {
                               digital: {
-                                regist: "チェックイン時に一時滞在届を記入してください。一部のホテルではデジタル登録を使用しています。"
+                                regist: "入住时请填写临时住宿登记表。部分酒店使用数字登记。"
                               }
                             }
                           }
@@ -44685,14 +44685,14 @@ export const translations: Record<Language, Translations> = {
         }
       },
       finding: {
-        restaurants: "レストランを探しています...",
+        restaurants: "正在查找餐厅...",
         transport: {
-          options: "交通手段を探しています..."
+          options: "正在查找交通方式..."
         }
       },
       flight: {
         booking: {
-          tips: "フライト予約のヒント"
+          tips: "航班预订小贴士"
         }
       },
       for: {
@@ -44712,7 +44712,7 @@ export const translations: Record<Language, Translations> = {
                         required: {
                           but: {
                             strengthens: {
-                              yo: "観光ビザの場合、招待状は必ずしも必要ではありませんが、申請を強化します。ビジネスビザの場合は通常、中国企業からの招待状が必要です。"
+                              yo: "旅游签证通常不需要邀请函，但可以增强申请。商务签证通常需要中国公司的邀请函。"
                             }
                           }
                         }
@@ -44738,7 +44738,7 @@ export const translations: Record<Language, Translations> = {
                           but: {
                             with: {
                               limitations: {
-                                fo: "外国のクレジットカードはAlipayおよびWeChat Payで動作するようになりましたが、制限があります。すべての機能を利用するには中国の銀行口座が役立ちますが、必ずしも必要ではありません。"
+                                fo: "外国信用卡现在可以在支付宝和微信支付上使用，但有局限性。中国银行账户有助于使用所有功能，但并非必需。"
                               }
                             }
                           }
@@ -44754,12 +44754,12 @@ export const translations: Record<Language, Translations> = {
       },
       frequently: {
         asked: {
-          questions: "よくある質問"
+          questions: "常见问题"
         }
       },
       gather: {
         required: {
-          documents: "必要な書類を準備する"
+          documents: "准备所需文件"
         }
       },
       generate: {
@@ -44770,7 +44770,7 @@ export const translations: Record<Language, Translations> = {
                 chatting: {
                   with: {
                     the: {
-                      ai: "AIとチャットして最初に旅程を作成する"
+                      ai: "与AI聊天，先创建行程"
                     }
                   }
                 }
@@ -44785,7 +44785,7 @@ export const translations: Record<Language, Translations> = {
             supported: {
               by: {
                 your: {
-                  browser: "お使いのブラウザはジオロケーションに対応していません"
+                  browser: "您的浏览器不支持地理位置"
                 }
               }
             }
@@ -44794,7 +44794,7 @@ export const translations: Record<Language, Translations> = {
       },
       getting: {
         exchange: {
-          rates: "為替レートを取得しています..."
+          rates: "正在获取汇率..."
         }
       },
       have: {
@@ -44808,7 +44808,7 @@ export const translations: Record<Language, Translations> = {
                       for: {
                         all: {
                           foreign: {
-                            gu: "パスポートを準備してください。ホテルではすべての外国人ゲストのパスポート登録が必要です。"
+                            gu: "请准备好护照。酒店要求所有外籍客人登记护照。"
                           }
                         }
                       }
@@ -44822,10 +44822,10 @@ export const translations: Record<Language, Translations> = {
       },
       hear: {
         chinese: {
-          pronunciation: "中国語の発音を聞く"
+          pronunciation: "听中文发音"
         },
         english: {
-          pronunciation: "英語の発音を聞く"
+          pronunciation: "听英文发音"
         }
       },
       hotel: {
@@ -44837,7 +44837,7 @@ export const translations: Record<Language, Translations> = {
                   process: {
                     and: {
                       staying: {
-                        comfortably: "ホテルの種類、予約のヒント、チェックイン手続き、および快適に滞在する方法"
+                        comfortably: "酒店类型、预订小贴士、入住流程以及如何舒适住宿"
                       }
                     }
                   }
@@ -44853,7 +44853,7 @@ export const translations: Record<Language, Translations> = {
             get: {
               to: {
                 the: {
-                  hospital: "病院にはどうやって行けばいいですか？"
+                  hospital: "怎么去医院？"
                 }
               }
             },
@@ -44865,7 +44865,7 @@ export const translations: Record<Language, Translations> = {
                       as: {
                         a: {
                           foreign: {
-                            tourist: "外国人観光客としてWeChat PayとAlipayを使用するにはどうすればよいですか？"
+                            tourist: "作为外国游客如何使用微信支付和支付宝？"
                           }
                         }
                       }
@@ -44885,7 +44885,7 @@ export const translations: Record<Language, Translations> = {
                     a: {
                       china: {
                         tourist: {
-                          visa: "中国観光ビザの取得にはどのくらい時間がかかりますか？"
+                          visa: "中国旅游签证需要多长时间？"
                         }
                       }
                     }
@@ -44901,7 +44901,7 @@ export const translations: Record<Language, Translations> = {
               i: {
                 bring: {
                   to: {
-                    china: "中国にはどのくらいの現金を持っていくべきですか？"
+                    china: "去中国应该带多少现金？"
                   }
                 }
               }
@@ -44911,7 +44911,7 @@ export const translations: Record<Language, Translations> = {
             a: {
               china: {
                 visa: {
-                  cost: "中国ビザの費用はいくらですか？"
+                  cost: "中国签证费用是多少？"
                 }
               }
             }
@@ -44923,7 +44923,7 @@ export const translations: Record<Language, Translations> = {
               a: {
                 china: {
                   tourist: {
-                    visa: "中国観光ビザの申請方法"
+                    visa: "如何申请中国旅游签证"
                   }
                 }
               }
@@ -44935,7 +44935,7 @@ export const translations: Record<Language, Translations> = {
                 into: {
                   hotels: {
                     in: {
-                      china: "中国のホテルの予約とチェックイン方法"
+                      china: "如何预订中国酒店并办理入住"
                     }
                   }
                 }
@@ -44953,7 +44953,7 @@ export const translations: Record<Language, Translations> = {
                           china: {
                             as: {
                               a: {
-                                tourist: "中国で観光客としてSIMカードとインターネットアクセスを取得する方法"
+                                tourist: "如何在中国获取SIM卡和互联网接入（游客）"
                               }
                             }
                           }
@@ -44968,7 +44968,7 @@ export const translations: Record<Language, Translations> = {
               china: {
                 as: {
                   a: {
-                    tourist: "観光客として中国を移動する方法"
+                    tourist: "作为游客如何在中国出行"
                   }
                 }
               },
@@ -44978,7 +44978,7 @@ export const translations: Record<Language, Translations> = {
                     metro: {
                       taxi: {
                         or: {
-                          bike: "中国の都市での移動方法：地下鉄、タクシー、それとも自転車？"
+                          bike: "如何在中国城市出行：地铁、出租车还是自行车？"
                         }
                       }
                     }
@@ -44992,7 +44992,7 @@ export const translations: Record<Language, Translations> = {
               china: {
                 as: {
                   a: {
-                    foreigner: "外国人として中国で支払いをする方法"
+                    foreigner: "作为外国人在中国如何支付"
                   }
                 }
               }
@@ -45007,7 +45007,7 @@ export const translations: Record<Language, Translations> = {
                       by: {
                         high: {
                           speed: {
-                            rail: "上海から西安まで高速鉄道で旅行する方法"
+                            rail: "如何乘坐高铁从上海到西安"
                           }
                         }
                       }
@@ -45029,7 +45029,7 @@ export const translations: Record<Language, Translations> = {
                     food: {
                       destinations: {
                         in: {
-                          china: "私はグルメです。中国の最高のグルメスポットを教えてください"
+                          china: "我是美食家。请推荐中国最好的美食地点"
                         }
                       }
                     }
@@ -45039,12 +45039,12 @@ export const translations: Record<Language, Translations> = {
             }
           },
           allergic: {
-            to: "私は...にアレルギーがあります"
+            to: "我对...过敏"
           },
           sick: {
             i: {
               feel: {
-                unwell: "体調が悪い / 気分が優れません"
+                unwell: "我感觉不舒服"
               }
             }
           }
@@ -45073,7 +45073,7 @@ export const translations: Record<Language, Translations> = {
         },
         do: {
           not: {
-            understand: "理解できません"
+            understand: "我不明白"
           }
         },
         have: {
@@ -45089,7 +45089,7 @@ export const translations: Record<Language, Translations> = {
                             info: {
                               and: {
                                 transport: {
-                                  tip: "来週深圳でビジネスミーティングがあります。ビザの情報と交通のヒントが必要です"
+                                  tip: "下周我在深圳有商务会议。需要签证信息和交通提示"
                                 }
                               }
                             }
@@ -45101,18 +45101,18 @@ export const translations: Record<Language, Translations> = {
                 }
               }
             },
-            stomachache: "腹痛があります"
+            stomachache: "我肚子疼"
           },
           been: {
-            assaulted: "暴行を受けました"
+            assaulted: "我被袭击了"
           }
         },
         need: {
           a: {
-            translator: "通訳が必要です"
+            translator: "我需要翻译"
           },
           an: {
-            ambulance: "救急車を呼ぶ必要があります"
+            ambulance: "我需要叫救护车"
           }
         },
         want: {
@@ -45129,12 +45129,12 @@ export const translations: Record<Language, Translations> = {
       },
       important: {
         allergy: {
-          information: "重要なアレルギー情報"
+          information: "重要过敏信息"
         }
       },
       invitation: {
         letter: {
-          templates: "招待状のテンプレート"
+          templates: "邀请函模板"
         }
       },
       is: {
@@ -45145,7 +45145,7 @@ export const translations: Record<Language, Translations> = {
                 mobile: {
                   payments: {
                     in: {
-                      china: "中国でモバイル決済を使用するのは安全ですか？"
+                      china: "在中国使用移动支付安全吗？"
                     }
                   }
                 }
@@ -45163,7 +45163,7 @@ export const translations: Record<Language, Translations> = {
                   need: {
                     it: {
                       for: {
-                        emigration: "入国カードを安全に保管してください - 出国の際に必要になります"
+                        emigration: "请妥善保管入境卡 - 出境时需要"
                       }
                     }
                   }
@@ -45176,13 +45176,13 @@ export const translations: Record<Language, Translations> = {
           with: {
             tax: {
               refund: {
-                mark: "税金還付マーク付きの請求書を持っておいてください"
+                mark: "请保留带有退税标记的发票"
               }
             }
           }
         },
         registration: {
-          slip: "登録証を保管してください"
+          slip: "请保管好登记证"
         },
         your: {
           hotel: {
@@ -45197,7 +45197,7 @@ export const translations: Record<Language, Translations> = {
                             checks: {
                               or: {
                                 other: {
-                                  hot: "ホテルの登録証を保管してください - 警察のチェックや他のホテル予約の際に必要になるかもしれません"
+                                  hot: "请保管好酒店登记证 - 警察检查或预订其他酒店时可能需要"
                                 }
                               }
                             }
@@ -45213,7 +45213,7 @@ export const translations: Record<Language, Translations> = {
         }
       },
       language: {
-        translation: "言語と翻訳"
+        translation: "语言与翻译"
       },
       link: {
         a: {
@@ -45225,7 +45225,7 @@ export const translations: Record<Language, Translations> = {
                     card: {
                       to: {
                         enable: {
-                          payments: "Visa、Mastercard、または他の国際カードをリンクして支払いを有効にします"
+                          payments: "关联Visa、Mastercard或其他国际卡以启用支付"
                         }
                       }
                     }
@@ -45236,7 +45236,7 @@ export const translations: Record<Language, Translations> = {
           }
         },
         international: {
-          card: "国際カードのリンク"
+          card: "关联国际卡"
         }
       },
       local: {
@@ -45249,7 +45249,7 @@ export const translations: Record<Language, Translations> = {
                     dining: {
                       etiquette: {
                         in: {
-                          china: "中国のローカル料理、オーダーする際のヒント、食品安全、および食事のマナー"
+                          china: "中国本地美食、点餐提示、食品安全及用餐礼仪"
                         }
                       }
                     }
@@ -45264,7 +45264,7 @@ export const translations: Record<Language, Translations> = {
         information: {
           is: {
             currently: {
-              unavailable: "現在、位置情報が利用できません"
+              unavailable: "当前无法获取位置"
             }
           }
         },
@@ -45277,7 +45277,7 @@ export const translations: Record<Language, Translations> = {
                     in: {
                       your: {
                         browser: {
-                          setting: "位置情報の許可が拒否されました。ブラウザの設定で位置情報アクセスを有効にしてください"
+                          setting: "位置权限被拒绝。请在浏览器设置中启用位置访问"
                         }
                       }
                     }
@@ -45292,7 +45292,7 @@ export const translations: Record<Language, Translations> = {
             out: {
               please: {
                 try: {
-                  again: "位置情報の要求がタイムアウトしました。もう一度お試しください"
+                  again: "位置请求超时。请重试"
                 }
               }
             }
@@ -45326,7 +45326,7 @@ export const translations: Record<Language, Translations> = {
                 scams: {
                   and: {
                     embassy: {
-                      contacts: "パスポート紛失、医療緊急事態、盗難、詐欺、および大使館の連絡先"
+                      contacts: "护照丢失、医疗紧急情况、盗窃、诈骗及大使馆联系方式"
                     }
                   }
                 }
@@ -45394,14 +45394,14 @@ export const translations: Record<Language, Translations> = {
                 etiquette: {
                   and: {
                     meeting: {
-                      protocols: "中国のビジネス文化、接待マナー、会合プロトコルをマスターする"
+                      protocols: "掌握中国商务文化、接待礼仪、会议礼仪"
                     }
                   },
                   gift: {
                     giving: {
                       customs: {
                         and: {
-                          meeting: "中国のビジネス文化、接待マナー、贈答習慣、会合プロトコルをマスターする。よくある間違いを避け、良好な関係を築く。"
+                          meeting: "掌握中国商务文化、接待礼仪、送礼习俗、会议礼仪。避免常见错误，建立良好关系。"
                         }
                       }
                     }
@@ -45415,7 +45415,7 @@ export const translations: Record<Language, Translations> = {
                   card: {
                     exchange: {
                       dining: {
-                        meetin: "中国のビジネスエチケット（名刺交換、接待、会合、贈答を含む）をマスターする。外国人ビジネスプロフェッショナル向けの実践的な注意事項。"
+                        meetin: "掌握中国商务礼仪（包括名片交换、接待、会议、送礼）。面向外国商务人士的实用注意事项。"
                       }
                     }
                   }
@@ -45427,7 +45427,7 @@ export const translations: Record<Language, Translations> = {
       },
       maximum: {
         level: {
-          reached: "最大レベルに達しました！"
+          reached: "已达到最大级别！"
         }
       },
       medical: {
@@ -45442,7 +45442,7 @@ export const translations: Record<Language, Translations> = {
                         foreigners: {
                           a: {
                             good: {
-                              tra: "中国の医療治療は、特に外国人にとって高額になることがあります。安全な旅行には、医療保険付きの優れた旅行保険が不可欠です。"
+                              tra: "中国的医疗费用可能很高，尤其是对外国人。购买包含医疗保险的优质旅行保险对安全旅行至关重要。"
                             }
                           }
                         }
@@ -45464,7 +45464,7 @@ export const translations: Record<Language, Translations> = {
         ai: {
           requests: {
             used: {
-              up: "月間AIリクエスト使用済み"
+              up: "本月AI请求已用完"
             }
           }
         }
@@ -45476,24 +45476,24 @@ export const translations: Record<Language, Translations> = {
         __________________________________________________________________________________________________________________: "hard.no.__________________________________________________________________________________________________________________",
         items: {
           to: {
-            display: "表示するアイテムがありません"
+            display: "没有可显示的项目"
           }
         },
         itinerary: {
           to: {
-            display: "表示する旅程がありません"
+            display: "没有可显示的行程"
           }
         },
         route: {
           data: {
             to: {
-              save: "保存するルートデータがありません。"
+              save: "没有可保存的路线数据。"
             }
           }
         },
         saved: {
           itineraries: {
-            yet: "まだ保存された旅程はありません"
+            yet: "暂无保存的行程"
           }
         }
       },
@@ -45501,7 +45501,7 @@ export const translations: Record<Language, Translations> = {
         with: {
           soy: {
             bean: {
-              paste: "味噌入り麺"
+              paste: "味噌面"
             }
           }
         }
@@ -45509,27 +45509,27 @@ export const translations: Record<Language, Translations> = {
       oauth: {
         provider: {
           not: {
-            enabled: "OAuthプロバイダーが有効になっていません"
+            enabled: "OAuth提供商未启用"
           }
         }
       },
       open: {
         emergency: {
-          menu: "緊急メニューを開く"
+          menu: "打开紧急菜单"
         }
       },
       openinghoursspecification: "営業時間仕様",
       pan: {
         fried: {
           pork: {
-            buns: "焼き豚まん"
+            buns: "叉烧包"
           }
         }
       },
       passionate: {
         about: {
           exploring: {
-            china: "中国探索に情熱を注ぐ"
+            china: "热爱探索中国"
           }
         }
       },
@@ -45544,7 +45544,7 @@ export const translations: Record<Language, Translations> = {
                       depending: {
                         on: {
                           hotel: {
-                            policy: "ホテルのポリシーにより、アリペイ、ウィーチャットペイ、またはクレジットカードでお支払いください。"
+                            policy: "根据酒店政策，请使用支付宝、微信支付或信用卡支付。"
                           }
                         }
                       }
@@ -45559,19 +45559,19 @@ export const translations: Record<Language, Translations> = {
       payment: {
         apps: {
           you: {
-            need: "必要な支払いアプリ"
+            need: "所需支付应用"
           }
         }
       },
       pdf: {
         generation: {
-          failed: "PDF生成に失敗しました:"
+          failed: "PDF生成失败："
         }
       },
       pian: {
         er: {
           chuan: {
-            noodles: "ピエンアルチュアン麺"
+            noodles: "片儿川面"
           }
         }
       },
@@ -45582,7 +45582,7 @@ export const translations: Record<Language, Translations> = {
               type: {
                 your: {
                   own: {
-                    below: "プロンプトを選択するか、下に独自のものを入力してください"
+                    below: "选择一个提示或输入您自己的"
                   }
                 }
               }
@@ -45597,7 +45597,7 @@ export const translations: Record<Language, Translations> = {
         your: {
           scenic: {
             spot: {
-              visit: "観光地訪問を計画する"
+              visit: "规划景点参观"
             }
           },
           trips: {
@@ -45609,7 +45609,7 @@ export const translations: Record<Language, Translations> = {
                       shows: {
                         and: {
                           industry: {
-                            events: "中国のトップトレードショーや業界イベントに合わせて旅行を計画する"
+                            events: "根据中国顶级贸易展和行业活动规划您的旅行"
                           }
                         }
                       }
@@ -45630,23 +45630,23 @@ export const translations: Record<Language, Translations> = {
         allow: {
           popups: {
             to: {
-              print: "印刷するためにポップアップを許可してください"
+              print: "请允许弹出窗口以打印"
             }
           }
         },
         call: {
           an: {
-            ambulance: "救急車を呼んでください"
+            ambulance: "叫救护车"
           },
           my: {
-            family: "家族に電話してください"
+            family: "给家人打电话"
           }
         },
         enter: {
           a: {
-            name: "名前を入力してください",
+            name: "请输入姓名",
             phone: {
-              number: "電話番号を入力してください"
+              number: "请输入电话号码"
             }
           }
         },
@@ -45654,24 +45654,24 @@ export const translations: Record<Language, Translations> = {
           in: {
             to: {
               save: {
-                routes: "ルートを保存するにはサインインしてください"
+                routes: "请登录以保存路线"
               }
             }
           }
         },
         speak: {
-          slowly: "ゆっくり話してください"
+          slowly: "请说慢一点"
         }
       },
       popular: {
         food: {
-          categories: "人気の食品カテゴリー"
+          categories: "热门食品分类"
         }
       },
       powered: {
         by: {
           advanced: {
-            ai: "高度なAI搭載"
+            ai: "高级AI驱动"
           }
         }
       },
@@ -45682,7 +45682,7 @@ export const translations: Record<Language, Translations> = {
               business: {
                 travelers: {
                   in: {
-                    china: "中国での外国人ビジネス旅行者向け実用ツール"
+                    china: "面向在华外国商务旅客的实用工具"
                   }
                 }
               }
@@ -45692,11 +45692,11 @@ export const translations: Record<Language, Translations> = {
       },
       pre: {
         departure: {
-          preparation: "出発前の準備"
+          preparation: "出发前准备"
         }
       },
       premium: {
-        customization: "プレミアムカスタマイズ"
+        customization: "高级定制"
       },
       process: {
         at: {
@@ -45704,7 +45704,7 @@ export const translations: Record<Language, Translations> = {
             departure: {
               hall: {
                 before: {
-                  security: "保安検査前の空港出発ロビーの手続き"
+                  security: "安检前机场出发大厅的流程"
                 }
               }
             }
@@ -45717,7 +45717,7 @@ export const translations: Record<Language, Translations> = {
             translators: {
               for: {
                 business: {
-                  visits: "ビジネス訪問向けのプロフェッショナル通訳者と翻訳者"
+                  visits: "商务访问的专业口译和笔译人员"
                 }
               }
             }
@@ -45737,7 +45737,7 @@ export const translations: Record<Language, Translations> = {
                           apps: {
                             and: {
                               ride: {
-                                hailing: "空港でSIMまたはeSIMを購入して、ナビゲーションアプリや配車サービスを利用する"
+                                hailing: "在机场购买SIM或eSIM，以便使用导航应用和叫车服务"
                               }
                             }
                           }
@@ -45758,7 +45758,7 @@ export const translations: Record<Language, Translations> = {
               hangzhou: {
                 near: {
                   west: {
-                    lake: "西湖近くの杭州にあるブティックホテルを推奨"
+                    lake: "推荐杭州西湖附近的精品酒店"
                   }
                 }
               }
@@ -45768,7 +45768,7 @@ export const translations: Record<Language, Translations> = {
       },
       remove: {
         from: {
-          favorites: "お気に入りから削除"
+          favorites: "从收藏中删除"
         }
       },
       reservation: {
@@ -45776,13 +45776,13 @@ export const translations: Record<Language, Translations> = {
       },
       route: {
         saved: {
-          successfully: "ルートが保存されました！"
+          successfully: "路线已保存！"
         }
       },
       sanlitun: {
         chaoyang: {
           district: {
-            beijing: "北京・朝陽区・三里屯"
+            beijing: "北京朝阳区三里屯"
           }
         }
       },
@@ -45795,11 +45795,11 @@ export const translations: Record<Language, Translations> = {
           }
         },
         your: {
-          itineraries: "旅程を保存する"
+          itineraries: "保存行程"
         }
       },
       saving: {
-        itinerary: "旅程を保存中..."
+        itinerary: "正在保存行程..."
       },
       scan: {
         merchant: {
@@ -45813,7 +45813,7 @@ export const translations: Record<Language, Translations> = {
                         code: {
                           to: {
                             complete: {
-                              payments: "支払いを行うには、店のQRコードを読み取るか、自分のQRコードを表示してください"
+                              payments: "付款时，请扫描商店二维码或出示您的二维码"
                             }
                           }
                         }
@@ -45830,42 +45830,42 @@ export const translations: Record<Language, Translations> = {
         spots: {
           in: {
             china: {
-              chinaconnect: "中国の観光地 - ChinaConnect"
+              chinaconnect: "中国景点 - ChinaConnect"
             }
           }
         }
       },
       search: {
-        attractions: "観光地を検索...",
+        attractions: "搜索景点...",
         country: {
-          name: "国名を入力..."
+          name: "输入国家名称..."
         }
       },
       searching: {
-        cities: "都市を検索中...",
+        cities: "正在搜索城市...",
         for: {
-          attractions: "観光地を検索中..."
+          attractions: "正在搜索景点..."
         },
-        hotels: "ホテルを検索中...",
+        hotels: "正在搜索酒店...",
         the: {
-          web: "ウェブを検索中..."
+          web: "正在搜索网络..."
         }
       },
       select: {
         a: {
           transport: {
-            mode: "交通手段を選択"
+            mode: "选择交通方式"
           }
         },
         transport: {
-          mode: "交通手段を選択"
+          mode: "选择交通方式"
         },
         your: {
           country: {
             to: {
               see: {
                 specific: {
-                  requirements: "国を選択して具体的な要件を確認する"
+                  requirements: "选择国家以查看具体要求"
                 }
               }
             }
@@ -45879,7 +45879,7 @@ export const translations: Record<Language, Translations> = {
               password: {
                 for: {
                   authorizing: {
-                    transactions: "取引を承認するための安全な支払いパスワードを設定する"
+                    transactions: "设置安全支付密码以批准交易"
                   }
                 }
               }
@@ -45887,13 +45887,13 @@ export const translations: Record<Language, Translations> = {
           }
         },
         payment: {
-          password: "支払いパスワードを設定"
+          password: "设置支付密码"
         }
       },
       share: {
         your: {
           dining: {
-            experience: "食事体験をシェアする..."
+            experience: "分享用餐体验..."
           }
         }
       },
@@ -45907,7 +45907,7 @@ export const translations: Record<Language, Translations> = {
                     apps: {
                       for: {
                         staying: {
-                          connected: "SIM/eSIMオプション、VPN設定、接続を維持するための必須アプリ"
+                          connected: "SIM/eSIM选项、VPN设置、保持连接的必备应用"
                         }
                       }
                     }
@@ -45920,12 +45920,12 @@ export const translations: Record<Language, Translations> = {
       },
       something: {
         went: {
-          wrong: "問題が発生しました"
+          wrong: "出现问题"
         }
       },
       sorry: {
         i: {
-          encountered: "すみません、遭遇した"
+          encountered: "抱歉，遇到"
         }
       },
       sos: {
@@ -45933,7 +45933,7 @@ export const translations: Record<Language, Translations> = {
           tap: {
             to: {
               call: {
-                police: "緊急SOS - タップして警察に電話"
+                police: "紧急SOS - 点击拨打警察"
               }
             }
           }
@@ -45949,7 +45949,7 @@ export const translations: Record<Language, Translations> = {
       stay: {
         connected: {
           in: {
-            china: "中国でつながる"
+            china: "在中国保持连接"
           }
         }
       },
@@ -45966,7 +45966,7 @@ export const translations: Record<Language, Translations> = {
                           in: {
                             procedures: {
                               in: {
-                                chin: "中国への外国人旅行者向けホテル予約とチェックイン手続きのステップバイステップガイド"
+                                chin: "面向外国游客的中国酒店预订和入住流程分步指南"
                               }
                             }
                           }
@@ -45995,7 +45995,7 @@ export const translations: Record<Language, Translations> = {
                           and: {
                             using: {
                               mobile: {
-                                pay: "中国でのモバイル決済、現金、カードの使用に関する国際旅行者向けステップバイステップガイド"
+                                pay: "面向国际游客的中国移动支付、现金和银行卡使用分步指南"
                               }
                             }
                           }
@@ -46010,7 +46010,7 @@ export const translations: Record<Language, Translations> = {
                       china: {
                         including: {
                           airport: {
-                            tran: "中国での交通機関の案内（空港送迎、地下鉄、高速鉄道、タクシー、都市間交通を含む）に関するステップバイステップガイド"
+                            tran: "中国交通指南（包括机场接送、地铁、高铁、出租车、城际交通）分步指南"
                           }
                         }
                       }
@@ -46022,7 +46022,7 @@ export const translations: Record<Language, Translations> = {
                     office: {
                       and: {
                         other: {
-                          entities: "WFOE、駐在員事務所およびその他のエンティティに関するステップバイステップガイド"
+                          entities: "WFOE、代表处及其他实体的分步指南"
                         }
                       }
                     }
@@ -46038,7 +46038,7 @@ export const translations: Record<Language, Translations> = {
                           or: {
                             other: {
                               entity: {
-                                i: "外国投資家向け中国でのWFOE、駐在員事務所またはその他のエンティティ登録に関するステップバイステップガイド。完全なタイムラインと必要書類リスト。"
+                                i: "面向外国投资者的中国WFOE、代表处或其他实体注册分步指南。完整时间线和所需文件清单。"
                               }
                             }
                           }
@@ -46057,7 +46057,7 @@ export const translations: Record<Language, Translations> = {
                               office: {
                                 in: {
                                   china: {
-                                    doc: "中国でのWFOE、合弁会社（JV）、駐在員事務所の設立に関するステップバイステップガイド。必要書類、タイムライン、コスト、および2026年の最新の規制更新。"
+                                    doc: "在中国设立WFOE、合资企业（JV）、代表处的分步指南。所需文件、时间线、成本及2026年最新法规更新。"
                                   }
                                 }
                               }
@@ -46076,7 +46076,7 @@ export const translations: Record<Language, Translations> = {
       stir: {
         fried: {
           beef: {
-            offal: "牛肉ホルモンの炒め物"
+            offal: "牛肉炒河粉"
           }
         }
       },
@@ -46089,7 +46089,7 @@ export const translations: Record<Language, Translations> = {
                   center: {
                     with: {
                       applicable: {
-                        fees: "該当する料金を添えて中国大使館/領事館/ビザセンターに提出"
+                        fees: "携带相应费用提交至中国大使馆/领事馆/签证中心"
                       }
                     }
                   }
@@ -46101,18 +46101,18 @@ export const translations: Record<Language, Translations> = {
       },
       switch: {
         map: {
-          provider: "地図プロバイダーを切り替える"
+          provider: "切换地图提供商"
         },
         to: {
           google: {
-            maps: "Googleマップに切り替える"
+            maps: "切换到Google地图"
           }
         }
       },
       tap: {
         to: {
           hear: {
-            pronunciation: "タップして発音を聞く"
+            pronunciation: "点击听发音"
           }
         }
       },
@@ -46125,7 +46125,7 @@ export const translations: Record<Language, Translations> = {
                   shopping: {
                     and: {
                       departure: {
-                        checklist: "税金還付、空港交通、免税ショッピング、出国チェックリスト"
+                        checklist: "退税、机场交通、免税购物、出境清单"
                       }
                     }
                   }
@@ -46137,64 +46137,64 @@ export const translations: Record<Language, Translations> = {
       },
       taxi: {
         useful: {
-          phrases: "タクシー便利なフレーズ"
+          phrases: "出租车常用语"
         }
       },
       thank: {
         you: {
           for: {
             your: {
-              subscription: "ご購読ありがとうございます！"
+              subscription: "感谢您的订阅！"
             }
           }
         }
       },
       toggle: {
         temperature: {
-          unit: "温度単位を切り替える"
+          unit: "切换温度单位"
         }
       },
       translation: {
-        interpreting: "翻訳・通訳",
-        services: "翻訳サービス"
+        interpreting: "翻译与口译",
+        services: "翻译服务"
       },
       transport: {
         navigation: {
-          apps: "交通・ナビゲーションアプリ"
+          apps: "交通与导航应用"
         }
       },
       travel: {
         insurance: {
           is: {
-            essential: "旅行保険は必須です"
+            essential: "旅行保险是必需的"
           }
         }
       },
       try: {
         these: {
           quick: {
-            prompts: "これらの簡単なプロンプトを試してみてください"
+            prompts: "试试这些简单提示"
           }
         }
       },
       unlimited: {
         ai: {
-          requests: "無制限のAIリクエスト"
+          requests: "无限AI请求"
         }
       },
       unsaved: {
-        conversation: "未保存の会話"
+        conversation: "未保存的对话"
       },
       upgrade: {
         to: {
           a: {
             paid: {
-              plan: "有料プランにアップグレード"
+              plan: "升级到付费计划"
             }
           },
           continue: {
             using: {
-              ai: "AIを使い続けるためにアップグレード"
+              ai: "升级以继续使用AI"
             }
           }
         }
@@ -46224,7 +46224,7 @@ export const translations: Record<Language, Translations> = {
                           sites: {
                             often: {
                               have: {
-                                be: "Booking.com、Ctrip、またはFliggyを使用してホテルを予約してください。国際サイトは英語サポートが優れていることが多いです"
+                                be: "使用Booking.com、携程或飞猪预订酒店。国际网站通常提供更好的英文支持"
                               }
                             }
                           }
@@ -46243,7 +46243,7 @@ export const translations: Record<Language, Translations> = {
               banks: {
                 for: {
                   better: {
-                    security: "銀行内のカードマシンを使ってより高いセキュリティを確保"
+                    security: "使用银行内的卡机以获得更高安全性"
                   }
                 }
               }
@@ -46258,7 +46258,7 @@ export const translations: Record<Language, Translations> = {
                   cheaper: {
                     than: {
                       taxi: {
-                        queue: "空港ピックアップにはDidiアプリを使用 - タクシー待ち行列より安い"
+                        queue: "使用滴滴应用进行机场接送 - 比排队等出租车便宜"
                       }
                     }
                   }
@@ -46281,7 +46281,7 @@ export const translations: Record<Language, Translations> = {
                               have: {
                                 the: {
                                   best: {
-                                    e: "国際カードにはICBC、中国銀行、またはHSBCのATMを使用してください。彼らは最高の為替レートと最も広いカバレッジを持っています"
+                                    e: "国际卡请使用工商银行、中国银行或汇丰银行的ATM。它们提供最佳汇率和最广的覆盖范围"
                                   }
                                 }
                               }
@@ -46299,21 +46299,21 @@ export const translations: Record<Language, Translations> = {
       },
       useful: {
         transport: {
-          phrases: "便利な交通フレーズ"
+          phrases: "交通常用语"
         }
       },
       user: {
         accepted: {
           the: {
             install: {
-              prompt: "ユーザーがインストールプロンプトを受け入れました"
+              prompt: "用户已接受安装提示"
             }
           }
         },
         dismissed: {
           the: {
             install: {
-              prompt: "ユーザーがインストールプロンプトを却下しました"
+              prompt: "用户已拒绝安装提示"
             }
           }
         }
@@ -46329,7 +46329,7 @@ export const translations: Record<Language, Translations> = {
                       bookings: {
                         and: {
                           proof: {
-                            of: "有効なパスポート、ビザ申請書、写真、旅行日程、ホテル予約、および財政証明"
+                            of: "有效护照、签证申请表、照片、旅行日程、酒店预订及财务证明"
                           }
                         }
                       }
@@ -46344,13 +46344,13 @@ export const translations: Record<Language, Translations> = {
       verify: {
         identity: {
           with: {
-            passport: "パスポートで身元を確認する"
+            passport: "使用护照确认身份"
           }
         }
       },
       visa: {
         overstay: {
-          warning: "ビザのオーバーステイ警告"
+          warning: "签证逾期警告"
         },
         requirements: {
           application: {
@@ -46360,7 +46360,7 @@ export const translations: Record<Language, Translations> = {
                   documents: {
                     for: {
                       entering: {
-                        china: "中国入国に必要なビザ要件、申請プロセス、および必須書類"
+                        china: "中国入境所需的签证要求、申请流程及必备文件"
                       }
                     }
                   }
@@ -46369,7 +46369,7 @@ export const translations: Record<Language, Translations> = {
             }
           },
           by: {
-            country: "国別のビザ要件"
+            country: "按国家查看签证要求"
           }
         }
       },
@@ -46379,7 +46379,7 @@ export const translations: Record<Language, Translations> = {
             error: {
               loading: {
                 this: {
-                  content: "このコンテンツの読み込み中にエラーが発生しました"
+                  content: "加载此内容时出错"
                 }
               }
             }
@@ -46390,7 +46390,7 @@ export const translations: Record<Language, Translations> = {
         lake: {
           fish: {
             in: {
-              vinegar: "西湖酢漬けの魚"
+              vinegar: "西湖醋鱼"
             }
           }
         }
@@ -46401,7 +46401,7 @@ export const translations: Record<Language, Translations> = {
             i: {
               use: {
                 in: {
-                  china: "中国ではどのATMを使えばいいですか？"
+                  china: "在中国应该使用哪些ATM？"
                 }
               }
             }
@@ -46414,7 +46414,7 @@ export const translations: Record<Language, Translations> = {
                 know: {
                   before: {
                     visiting: {
-                      china: "中国訪問前に知っておくべき文化的エチケットは何ですか？"
+                      china: "访问中国前需要了解哪些文化礼仪？"
                     }
                   }
                 }
@@ -46429,7 +46429,7 @@ export const translations: Record<Language, Translations> = {
                 are: {
                   available: {
                     in: {
-                      china: "中国ではどのような緊急電話番号とサービスが利用できますか？"
+                      china: "中国有哪些紧急电话号码和服务？"
                     }
                   }
                 }
@@ -46450,7 +46450,7 @@ export const translations: Record<Language, Translations> = {
                             a: {
                               visa: {
                                 on: {
-                                  arrival: "中国訪問にはどのようなビザが必要ですか？到着時にビザを取得できますか？"
+                                  arrival: "访问中国需要什么签证？可以落地签吗？"
                                 }
                               }
                             }
@@ -46472,7 +46472,7 @@ export const translations: Record<Language, Translations> = {
               to: {
                 go: {
                   in: {
-                    china: "中国でどこに行きたいですか？"
+                    china: "您想去中国的哪里？"
                   }
                 }
               }
@@ -46481,12 +46481,12 @@ export const translations: Record<Language, Translations> = {
         },
         is: {
           the: {
-            embassy: "大使館はどこですか？",
-            hospital: "病院はどこですか？",
+            embassy: "大使馆在哪里？",
+            hospital: "医院在哪里？",
             police: {
-              station: "警察署はどこですか？"
+              station: "警察局在哪里？"
             },
-            restroom: "トイレはどこですか？"
+            restroom: "洗手间在哪里？"
           }
         }
       },
@@ -46546,7 +46546,7 @@ export const translations: Record<Language, Translations> = {
                       that: {
                         wasn: {
                           t: {
-                            saved: "前回のセッションで保存されなかった会話があります"
+                            saved: "您有上次会话未保存的对话"
                           }
                         }
                       }
@@ -46566,7 +46566,7 @@ export const translations: Record<Language, Translations> = {
                     upgrading: {
                       for: {
                         more: {
-                          requests: "月間制限に近づいています。より多くのリクエストにはアップグレードをご検討ください"
+                          requests: "接近月度限制。如需更多请求，请考虑升级"
                         }
                       }
                     }
@@ -46602,7 +46602,7 @@ export const translations: Record<Language, Translations> = {
                 }
               },
               highest: {
-                plan: "あなたは最高のプランをご利用中です！"
+                plan: "您正在使用最佳计划！"
               }
             }
           }
@@ -46614,7 +46614,7 @@ export const translations: Record<Language, Translations> = {
                 limit: {
                   upgrade: {
                     to: {
-                      continue: "月間制限に達しました。アップグレードして続行してください"
+                      continue: "已达到月度限制。升级以继续"
                     }
                   }
                 }
@@ -46627,7 +46627,7 @@ export const translations: Record<Language, Translations> = {
         personal: {
           china: {
             travel: {
-              intelligence: "あなたの個人的な中国旅行情報"
+              intelligence: "您的个人中国旅行信息"
             }
           }
         },
@@ -46635,7 +46635,7 @@ export const translations: Record<Language, Translations> = {
           includes: {
             unlimited: {
               ai: {
-                requests: "あなたのプランには無制限のAIリクエストが含まれています"
+                requests: "您的计划包含无限AI请求"
               }
             }
           }
@@ -46692,16 +46692,16 @@ export const translations: Record<Language, Translations> = {
       featuredDestinations: "基于热门目的地"
     },
     invitationLetter: {
-      allowPopups: "印刷のためにポップアップを許可してください",
-      bilingual: "バイリンガル",
-      downloadPdf: "PDFをダウンロード",
+      allowPopups: "请允许弹出窗口以打印",
+      bilingual: "双语",
+      downloadPdf: "下载PDF",
       edit: "編集",
       english: "英語",
       generating: "生成中...",
-      pdfFailed: "PDF生成に失敗しました：",
-      pdfFailedRetry: "PDF生成に失敗しました。もう一度お試しください。",
+      pdfFailed: "PDF生成失败：",
+      pdfFailedRetry: "PDF生成失败。请重试。",
       png: "PNG",
-      preview: "プレビュー"
+      preview: "预览"
     },
     language: {
       chinese: "中文",
@@ -46807,27 +46807,27 @@ export const translations: Record<Language, Translations> = {
       welcome: "欢迎使用 ChinaConnect！"
     },
     paymentGuide: {
-      atmHeading: "国際カードに強いATM",
-      atmTip1: "空港や銀行のATMが最良の為替レートです",
-      atmTip2: "国際的な引き出し手数料について銀行に確認してください",
-      atmTip3: "一部のATMは外国カードの引き出しを制限します（最大2000元）",
-      atmTip4: "銀行内のATMを使うとより安全です",
-      faqsHeading: "よくある質問",
-      securityWarning: "セキュリティ警告",
+      atmHeading: "适合国际卡的ATM",
+      atmTip1: "机场或银行ATM汇率最佳",
+      atmTip2: "请向银行确认国际取款手续费",
+      atmTip3: "部分ATM限制外国卡取款（最高2000元）",
+      atmTip4: "使用银行内的ATM更安全",
+      faqsHeading: "常见问题",
+      securityWarning: "安全警告",
       setupHeading: "設定方法",
       tabAlipay: "Alipay",
       tabAtm: "ATM",
-      tabCash: "現金・カード",
-      tabFaq: "よくある質問",
+      tabCash: "现金与银行卡",
+      tabFaq: "常见问题",
       tabTax: "税還付",
       tabWechat: "WeChat Pay",
-      taxTip1: "セキュリティチェック前に空港出発ロビーで行ってください",
-      taxTip2: "対象店舗での最低購入額は500元",
-      taxTip3: "還付率：品目カテゴリーにより3-11%",
-      taxTip4: "税還付マーク付きの発注書を保管してください"
+      taxTip1: "在安检前机场出发大厅办理",
+      taxTip2: "指定商店最低消费500元",
+      taxTip3: "退税率：根据商品类别3-11%",
+      taxTip4: "请保留带有退税标记的发票"
     },
     priceTransparency: {
-      all: "すべて",
+      all: "全部",
       showComparison: "比較表示",
       showSimplified: "簡略表示"
     },
@@ -47063,7 +47063,7 @@ export const translations: Record<Language, Translations> = {
       title: "餐厅"
     },
     scamPrevention: {
-      all: "すべて"
+      all: "全部"
     },
     scenicSpots: {
       allSpots: "All Scenic Spots",
@@ -47088,28 +47088,28 @@ export const translations: Record<Language, Translations> = {
       shareTip: "分享给朋友"
     },
     transportGuide: {
-      airportWifi: "空港WiFiが利用可能な場合が多い — SIM購入前に接続を",
-      arrivalByPlane: "飛行機で",
-      arrivalByTrain: "電車で",
-      arrivalTip: "入国カードは大切に保管してください — 入管審査で必要になります",
-      bookingPlatforms: "予約プラットフォーム",
-      didiTip: "空港送迎にはDidiアプリが便利 — タクシーキューより安い",
-      howToUse: "使い方：",
-      proTips: "プロのヒント：",
-      seatClasses: "シートクラス",
-      selectMode: "交通手段を選択",
-      selectModeHint: "交通手段を選択してください",
+      airportWifi: "机场Wi-Fi通常可用 - 购买SIM卡前请先连接",
+      arrivalByPlane: "乘飞机",
+      arrivalByTrain: "乘火车",
+      arrivalTip: "请妥善保管入境卡 - 入境检查时需要",
+      bookingPlatforms: "预订平台",
+      didiTip: "机场接送使用滴滴应用 - 比排队等出租车便宜",
+      howToUse: "使用方法：",
+      proTips: "专业提示：",
+      seatClasses: "座位等级",
+      selectMode: "选择交通方式",
+      selectModeHint: "请选择交通方式",
       tabArrival: "到着",
       tabDistances: "距離",
       tabIntercity: "都市間",
-      tabLocal: "市内の交通",
-      tabPhrases: "フレーズ集",
-      tabTaxi: "タクシー/Didi",
+      tabLocal: "市内交通",
+      tabPhrases: "常用语",
+      tabTaxi: "出租车/滴滴",
       tabTrains: "鉄道予約",
-      taxiPhrases: "タクシー便利フレーズ",
-      trainBookingTips: "鉄道予約のコツ",
+      taxiPhrases: "出租车常用语",
+      trainBookingTips: "火车预订小贴士",
       tripCta: "Trip.com / Ctrip",
-      usefulPhrases: "交通便利フレーズ"
+      usefulPhrases: "交通常用语"
     },
     userPage: {
       heading: "个人资料",
@@ -47117,42 +47117,42 @@ export const translations: Record<Language, Translations> = {
       title: "用户资料 - ChinaConnect"
     },
     visaPage: {
-      appsHeading: "必須アプリ",
-      appsSubtitle: "到着前にダウンロード — Google Playは中国で利用不可",
-      beforeBuying: "購入前に",
-      digitalCopiesDesc: "デジタルコピーをクラウド（Google Drive、iCloud）に保管し、家族と共有。原本とは別に物理コピーを保管してください。",
+      appsHeading: "必备应用",
+      appsSubtitle: "抵达前下载 - Google Play在中国不可用",
+      beforeBuying: "购买前",
+      digitalCopiesDesc: "将数字副本保存在云端（Google Drive、iCloud）并与家人分享。将实体副本与原件分开存放。",
       duration: "滞在期間：",
-      faqHeading: "よくある質問",
+      faqHeading: "常见问题",
       fee: "料金：",
       finalPreparations: "最終準備",
-      flightHeading: "フライト予約のコツ",
-      importantReminder: "重要なお知らせ",
+      flightHeading: "航班预订小贴士",
+      importantReminder: "重要通知",
       insuranceDesc: "Medical treatment in China can be expensive, especially for foreigners. A good travel insurance policy with medical coverage is non-negotiable for safe travel.",
-      insuranceHeading: "旅行保険は必須",
-      insuranceTipsHeading: "保険選びのポイント",
-      overstayWarning: "ビザオーバーステイ警告",
+      insuranceHeading: "旅行保险是必需的",
+      insuranceTipsHeading: "选择保险的要点",
+      overstayWarning: "签证逾期警告",
       processing: "処理期間：",
-      recommendedProviders: "おすすめプロバイダー",
-      reqHeading: "国別ビザ要件",
-      reqSubtitle: "国を選択して具体的な要件を確認",
+      recommendedProviders: "推荐提供商",
+      reqHeading: "按国家查看签证要求",
+      reqSubtitle: "选择国家以查看具体要求",
       requirements: "必要書類：",
-      tabApps: "アプリ・VPN",
+      tabApps: "应用与VPN",
       tabChecklist: "出発前",
       tabDocuments: "必要書類",
       tabInsurance: "保険",
       tabOverview: "概要",
-      tabProcess: "手続き",
-      tabTips: "コツ・よくある質問",
-      weeksBefore: "出発までの週数（4-6週間前）",
-      weeksBeforeDesc: "出発の4-6週間前に完了してください"
+      tabProcess: "流程",
+      tabTips: "小贴士与常见问题",
+      weeksBefore: "出发前周数（4-6周）",
+      weeksBeforeDesc: "请在出发前4-6周完成"
     }
   },
   "zh-TW": {
     accommodationGuide: {
-      tabBooking: "予約のコツ",
-      tabCheckin: "チェックインの流れ",
-      tabFaqs: "よくある質問",
-      tabTypes: "ホテルタイプ"
+      tabBooking: "預訂小訣竅",
+      tabCheckin: "入住流程",
+      tabFaqs: "常見問題",
+      tabTypes: "飯店類型"
     },
     accountPage: {
       active: "已啟用",
@@ -47390,14 +47390,14 @@ export const translations: Record<Language, Translations> = {
       loadingMore: "Loading more cities...",
       noResults: "沒有符合您篩選條件的城市。",
       of: "of",
-      openingHours: "开放时间",
+      openingHours: "開放時間",
       pageDescription: "探索 ChinaConnect 涵蓋的所有中國城市，從古都到現代大都市。S 級優質城市、A 級半優質城市和 D 級隨選城市。",
       pageTitle: "探索所有城市 - ChinaConnect",
       payment: "支付",
       population: "人口",
       ratingDesc: "基於四個維度的綜合評分：",
       ratingTitle: "ChinaConnect 城市評級™",
-      recommendedTime: "推荐存取时间",
+      recommendedTime: "建議參觀時間",
       refreshedWeekly: "每週更新（含即時氣候調整）",
       region: "地區",
       restaurants: "餐廳",
@@ -47410,7 +47410,7 @@ export const translations: Record<Language, Translations> = {
       sortRegion: "地區",
       sortTier: "等級（S → D）",
       subtitle: "中國主要城市綜合指南",
-      ticketPrice: "门票",
+      ticketPrice: "門票",
       tierAll: "全部",
       tierLabel: "等級：",
       tierNone: "無",
@@ -47467,17 +47467,17 @@ export const translations: Record<Language, Translations> = {
       categoryAll: "全部",
       categoryLabel: "類別",
       chinanewsDesc: "公式観光情報",
-      ctripDesc: "観光地のレビュー・予約",
+      ctripDesc: "景點評論・預訂",
       disclaimer: "開放時間、門票價格和電話號碼可能會變動。我們建議透過景點的官方網站或提前致電確認。",
-      mafengwoDesc: "中国最大の旅行コミュニティ",
-      mctDesc: "政府観光データ",
+      mafengwoDesc: "中國最大的旅遊社群",
+      mctDesc: "官方旅遊數據",
       openOnMap: "在地圖上開啟",
       openingHours: "開放時間",
       subtitle: "必看的地標、博物館和自然奇觀。",
       ticketPrice: "門票價格",
       tipsHeader: "小貼士",
       title: "{city} 的景點",
-      tripadvisorDesc: "海外の観光地レビュー",
+      tripadvisorDesc: "海外景點評論",
       viewAll: "查看 {city} 內的所有景點",
       viewDetails: "查看詳情",
       viewMore: "查看更多景點"
@@ -47485,9 +47485,9 @@ export const translations: Record<Language, Translations> = {
     cityFood: {
       avgPrice: "平均價格",
       cuisine: "菜系",
-      dataSourcesDesc: "権威ある情報源からまとめた飲食店データ。訪問前に詳細を確認してください：",
-      dataSourcesHeading: "データソースと参考資料",
-      dianpingDesc: "中国最大のローカル生活サービスプラットフォーム",
+      dataSourcesDesc: "彙整自權威來源的餐廳資料。造訪前請確認詳細資訊：",
+      dataSourcesHeading: "資料來源與參考",
+      dianpingDesc: "中國最大的本地生活服務平台",
       disclaimer: "電話號碼和地址可能會變動。我們建議透過餐廳的官方管道或提前致電確認。",
       filterAll: "全部",
       filterBlackPearl: "黑珍珠",
@@ -47497,16 +47497,16 @@ export const translations: Record<Language, Translations> = {
       filterMichelin: "米其林",
       filteringLabel: "篩選：",
       googleMaps: "Google 地圖",
-      meituanDesc: "出前・レビュープラットフォーム",
-      michelinDesc: "国際的に権威ある飲食店評価",
-      nextCity: "次の都市",
-      previousCity: "前の都市",
+      meituanDesc: "外送・評論平台",
+      michelinDesc: "國際權威餐廳評鑑",
+      nextCity: "下一個城市",
+      previousCity: "上一個城市",
       signatureDishes: "招牌菜",
       subtitle: "米其林星級、黑珍珠推薦和本地寶藏餐廳。",
       title: "{city} 的餐廳",
       viewAll: "瀏覽{city}的所有餐廳",
       viewDetails: "查看詳情",
-      xiaohongshuDesc: "ローカルグルメ探索ガイド"
+      xiaohongshuDesc: "在地美食探索指南"
     },
     cityHotels: {
       bookCta: "查看酒店詳情",
@@ -47522,7 +47522,7 @@ export const translations: Record<Language, Translations> = {
       appsSubtitle: "抵達前先下載這些應用程式。",
       area: "地區",
       attractionCount: "{count}個景點",
-      attractionsExploreCount: "{city} — {count} 个值得探索的地方",
+      attractionsExploreCount: "{city} — {count} 個值得探索的地方",
       attractionsHeading: "熱門景區",
       attractionsLabel: "attractions",
       attractionsLoadingMore: "Loading more...",
@@ -47544,7 +47544,7 @@ export const translations: Record<Language, Translations> = {
       dataSourcesHeading: "資料來源",
       downloadBefore: "抵達中國前先下載這些應用程式。",
       durationLabel: "所要時間：",
-      electricity: "電圧・電源",
+      electricity: "電壓・電源",
       elevation: "海拔",
       emergencySubtitle: "重要電話號碼和大使館資訊。",
       emergencySubtitleDynamic: "{city} 的重要電話號碼",
@@ -47556,7 +47556,7 @@ export const translations: Record<Language, Translations> = {
       foodHeading: "美食精選",
       foodHighlightsHeading: "美食亮點",
       foodHighlightsSubtitle: "必嚐的招牌菜與餐廳",
-      foodSubtitle: "米其林、黑珍珠与本地最愛",
+      foodSubtitle: "米其林、黑珍珠與在地最愛",
       frequencyLabel: "周波数：",
       gettingAround: "交通指南",
       gettingTo: "如何到達",
@@ -47566,13 +47566,13 @@ export const translations: Record<Language, Translations> = {
       hotelsCountUnit: "家飯店",
       hotelsHeading: "住宿推薦",
       hotelsSubtitle: "從精品酒店到國際連鎖酒店。",
-      howToUseLabel: "使い方：",
+      howToUseLabel: "使用方式：",
       importantNumbers: "{city}的重要電話號碼",
       intro: "歡迎來到{city}，中國最具魅力的目的地之一。",
       language: "語言",
       localFoodHighlights: "Local Food Highlights",
       localFoodHighlightsDesc: "Hand-picked local dining picks in {city}",
-      mapLayerDesc: "レイヤー切替：ミシュラン星、黒珍珠ランキング、地元のおすすめ",
+      mapLayerDesc: "圖層切換：米其林星級、黑珍珠榜單、在地推薦",
       moreCities: "更多城市",
       nextCity: "下一個城市",
       noHotels: "暫無飯店資料",
@@ -47594,11 +47594,11 @@ export const translations: Record<Language, Translations> = {
       proTips: "專業提示",
       quickFacts: "快速事實",
       quickFactsHeading: "城市速覽",
-      recommendedPaymentApps: "おすすめ決済アプリ",
-      recommendedTransportApps: "おすすめ交通アプリ",
+      recommendedPaymentApps: "推薦支付 App",
+      recommendedTransportApps: "推薦交通 App",
       region: "地區",
       restaurantCount: "{count}家餐廳",
-      restaurantsLabel: "レストラン",
+      restaurantsLabel: "餐廳",
       sectionApps: "必備應用程式",
       sectionAttractions: "熱門景點",
       sectionConnectivity: "SIM卡和eSIM",
@@ -47626,18 +47626,18 @@ export const translations: Record<Language, Translations> = {
       tabTransport: "交通",
       timezone: "時區",
       tipCount: "{count}個提示",
-      tipsLabel: "ポイント：",
+      tipsLabel: "重點：",
       topHighlightsHeading: "城市亮點",
       transportSubtitle: "抵達與城市內交通",
       travelTo: "前往{city}",
       viewAllAttractions: "View all attractions",
       viewAllHotels: "查看全部飯店",
       viewAllRestaurants: "View all restaurants",
-      visa: "ビザ",
+      visa: "簽證",
       visaSubtitle: "Visa-free policies and entry requirements.",
       visit: "Visit",
       weatherForecast: "Weather forecast",
-      weatherNA: "天気データなし",
+      weatherNA: "無天氣資料",
       weatherNotAvailable: "Weather not available",
       weatherNow: "Now",
       winter: "冬：",
@@ -47677,17 +47677,17 @@ export const translations: Record<Language, Translations> = {
       viewMore: "View more"
     },
     communicationGuide: {
-      tabApps: "必須アプリ",
-      tabSetup: "セットアップガイド",
-      tabSim: "SIM/eSIMオプション",
+      tabApps: "必備 App",
+      tabSetup: "設定指南",
+      tabSim: "SIM/eSIM 選項",
       tabVpn: "VPN設定"
     },
     culturalWarnings: {
-      all: "すべて",
+      all: "全部",
       catColors: "色",
       catDining: "食事",
-      catGiftEtiquette: "贈答マナー",
-      catGifts: "贈り物",
+      catGiftEtiquette: "送禮禮儀",
+      catGifts: "禮物",
       catNumbers: "数字",
       catPhoto: "写真",
       catPhotography: "写真撮影",
@@ -47699,32 +47699,32 @@ export const translations: Record<Language, Translations> = {
     },
     departureGuide: {
       tabAirport: "空港情報",
-      tabChecklist: "チェックリスト",
-      tabSteps: "出国手順",
+      tabChecklist: "檢查清單",
+      tabSteps: "出境流程",
       tabTax: "税還付"
     },
     diningGuide: {
-      allergenCard: "アレルゲン翻訳カード",
-      budgetHeading: "予算ガイド（1人あたり）",
-      casual: "カジュアルレストラン",
-      categoriesHeading: "人気料理カテゴリー",
-      chinesePhrases: "中国語フレーズ：",
-      commonAllergies: "よくあるアレルゲン：",
+      allergenCard: "過敏原翻譯卡",
+      budgetHeading: "預算指南（每人）",
+      casual: "休閒餐廳",
+      categoriesHeading: "熱門料理類別",
+      chinesePhrases: "中文用語：",
+      commonAllergies: "常見過敏原：",
       dietary: "食事制限",
-      diningEtiquette: "食事マナー",
-      faqsHeading: "よくある質問",
-      importantAllergyInfo: "重要なアレルギー情報",
-      orderingPhrases: "注文フレーズ",
+      diningEtiquette: "用餐禮儀",
+      faqsHeading: "常見問題",
+      importantAllergyInfo: "重要過敏資訊",
+      orderingPhrases: "點餐用語",
       popularDishesHeading: "人気料理：",
-      proTips: "プロのヒント：",
-      safeOptions: "安心な選択肢：",
+      proTips: "專業小訣竅：",
+      safeOptions: "安心選擇：",
       streetFood: "屋台料理",
-      tabAllergies: "アレルギー",
-      tabBudget: "予算ガイド",
-      tabCategories: "カテゴリー",
+      tabAllergies: "過敏",
+      tabBudget: "預算指南",
+      tabCategories: "類別",
       tabDishes: "人気料理",
-      tabEtiquette: "マナー",
-      tabPhrases: "フレーズ集"
+      tabEtiquette: "禮儀",
+      tabPhrases: "常用語手冊"
     },
     emergency: {
       address: "Address",
@@ -47749,15 +47749,15 @@ export const translations: Record<Language, Translations> = {
       viewAllContacts: "View all contacts"
     },
     emergencyGuide: {
-      bannerSubtitle: "この番号を保存してください — 警察：110、救急：120、消防：119",
-      bannerTitle: "中国の緊急番号",
+      bannerSubtitle: "請儲存這個號碼 — 警察：110、救護車：120、消防：119",
+      bannerTitle: "中國緊急電話號碼",
       labelAmbulance: "救急",
       labelFire: "消防",
       labelPolice: "警察",
       tabContacts: "緊急連絡先",
       tabEmbassy: "大使館情報",
-      tabOverview: "緊急時の種類",
-      tabPhrases: "便利フレーズ"
+      tabOverview: "緊急情況類型",
+      tabPhrases: "實用語句"
     },
     emergencyPage: {
       ambulance: "急救",
@@ -47849,7 +47849,7 @@ export const translations: Record<Language, Translations> = {
       viewAllContacts: "查看所有聯絡人"
     },
     empty: {
-      addSome: "开始探索并收藏你喜欢的吧！",
+      addSome: "開始探索並收藏你喜歡的吧！",
       noAttractions: "未找到景區",
       noFavorites: "暫無收藏",
       noRestaurants: "没有符合条件的餐廳",
@@ -47885,11 +47885,11 @@ export const translations: Record<Language, Translations> = {
       emergency: "緊急聯絡",
       emergencyDesc: "保存號碼 — 報警、急救、大使館與遊客熱線一鍵直達。",
       payment: "支付指南",
-      paymentDesc: "支付寶、微信支付、現金 — 中国支付方式的清晰解讀。",
+      paymentDesc: "支付寶、微信支付、現金 — 中國支付方式的清晰解說。",
       restaurantGuide: "餐廳指南",
-      restaurantGuideDesc: "米其林星級、黑珍珠与本地最愛 — 全部由本地人精选。",
+      restaurantGuideDesc: "米其林星級、黑珍珠與在地最愛 — 全部由在地人精選。",
       transport: "交通指南",
-      transportDesc: "地鐵、計程車、火車、共享單車 — 讓你輕�穿梭各大城市。"
+      transportDesc: "地鐵、計程車、火車、共享單車 — 讓你輕鬆穿梭各大城市。"
     },
     foodPage: {
       amapNav: "高德導航",
@@ -48098,7 +48098,7 @@ export const translations: Record<Language, Translations> = {
     },
     hard: {
       accommodation: {
-        guide: "宿泊施設ガイド"
+        guide: "住宿指南"
       },
       after: {
         landing: {
@@ -48113,7 +48113,7 @@ export const translations: Record<Language, Translations> = {
                           can: {
                             help: {
                               with: {
-                                directio: "着陸後、標識に従って地下鉄またはタクシーに乗ります。空港スタッフが道順をお手伝いします。"
+                                directio: "著陸後，依照標誌前往地鐵或計程車。機場工作人員會協助指引方向。"
                               }
                             }
                           }
@@ -48129,9 +48129,9 @@ export const translations: Record<Language, Translations> = {
       },
       ai: {
         requests: {
-          month: "AIリクエスト/月",
+          month: "AI 請求/月",
           this: {
-            month: "今月のAIリクエスト"
+            month: "本月 AI 請求"
           }
         },
         responses: {
@@ -48141,7 +48141,7 @@ export const translations: Record<Language, Translations> = {
                 only: {
                   always: {
                     verify: {
-                      locally: "AIの応答は参考用です。常に現地で確認してください。"
+                      locally: "AI 回覆僅供參考。請務必在當地確認。"
                     }
                   }
                 }
@@ -48153,7 +48153,7 @@ export const translations: Record<Language, Translations> = {
       aichat: {
         error: {
           boundary: {
-            caught: "AIチャットエラー境界でキャッチされました："
+            caught: "AI 聊天錯誤已捕捉："
           }
         }
       },
@@ -48166,7 +48166,7 @@ export const translations: Record<Language, Translations> = {
                   inter: {
                     city: {
                       transport: {
-                        options: "空港到着、メトロ、バス、タクシー、および都市間交通のオプション"
+                        options: "機場抵達、地鐵、公車、計程車及城市間交通選項"
                       }
                     }
                   }
@@ -48181,7 +48181,7 @@ export const translations: Record<Language, Translations> = {
               connect: {
                 before: {
                   buying: {
-                    sim: "空港のWi-Fiは通常利用可能です - SIMカードを購入する前に接続してください"
+                    sim: "機場 Wi-Fi 通常可用 — 購買 SIM 卡前請先連線"
                   }
                 }
               }
@@ -48198,7 +48198,7 @@ export const translations: Record<Language, Translations> = {
                   refund: {
                     procedures: {
                       in: {
-                        china: "中国におけるAlipay、WeChat Pay、現金および税金還付の手続き"
+                        china: "中國的支付寶、微信支付、現金及退稅流程"
                       }
                     }
                   }
@@ -48210,20 +48210,20 @@ export const translations: Record<Language, Translations> = {
       },
       allergen: {
         translation: {
-          card: "アレルゲン翻訳カード"
+          card: "過敏原翻譯卡"
         }
       },
       amap: {
         api: {
           not: {
-            loaded: "Amap APIが読み込まれていません"
+            loaded: "高德地圖 API 未載入"
           }
         }
       },
       an: {
         unexpected: {
           error: {
-            occurred: "予期しないエラーが発生しました"
+            occurred: "發生未預期的錯誤"
           }
         },
         unknown: {
@@ -48232,7 +48232,7 @@ export const translations: Record<Language, Translations> = {
               while: {
                 getting: {
                   your: {
-                    location: "位置情報を取得中に不明なエラーが発生しました。"
+                    location: "取得位置資訊時發生未知錯誤。"
                   }
                 }
               }
@@ -48248,7 +48248,7 @@ export const translations: Record<Language, Translations> = {
                 scenic: {
                   spots: {
                     in: {
-                      china: "中国の観光地を見つけて案内するためのアプリ"
+                      china: "尋找並導覽中國景點的 App"
                     }
                   }
                 }
@@ -48260,7 +48260,7 @@ export const translations: Record<Language, Translations> = {
       arrival: {
         to: {
           inter: {
-            city: "到着から都市間移動まで"
+            city: "從抵達到城市間移動"
           }
         }
       },
@@ -48268,7 +48268,7 @@ export const translations: Record<Language, Translations> = {
         about: {
           your: {
             china: {
-              trip: "あなたの中国旅行について質問する..."
+              trip: "詢問你的中國旅遊問題..."
             }
           }
         }
@@ -48286,7 +48286,7 @@ export const translations: Record<Language, Translations> = {
                 have: {
                   best: {
                     exchange: {
-                      rates: "空港や銀行のATMが最も良い為替レートです"
+                      rates: "機場或銀行 ATM 匯率最佳"
                     }
                   }
                 }
@@ -48296,13 +48296,13 @@ export const translations: Record<Language, Translations> = {
         }
       },
       authentication: {
-        failed: "認証に失敗しました"
+        failed: "驗證失敗"
       },
       best: {
         atms: {
           for: {
             international: {
-              cards: "国際カードに最適なベストなATM"
+              cards: "最適合國際卡的 ATM"
             }
           }
         },
@@ -48314,7 +48314,7 @@ export const translations: Record<Language, Translations> = {
                   that: {
                     tourists: {
                       usually: {
-                        miss: "観光客が通常見逃す成都のベストローカルストリートフード"
+                        miss: "成都最佳在地街頭小吃，觀光客通常會錯過"
                       }
                     }
                   }
@@ -48337,7 +48337,7 @@ export const translations: Record<Language, Translations> = {
                               best: {
                                 for: {
                                   first: {
-                                    timers: "中国の長城を訪れるベストな方法は？初心者に最適なセクションは？"
+                                    timers: "參觀中國長城的最佳方式？最適合新手的路段？"
                                   }
                                 }
                               }
@@ -48356,7 +48356,7 @@ export const translations: Record<Language, Translations> = {
       book: {
         high: {
           speed: {
-            rail: "高速鉄道を予約する"
+            rail: "預訂高鐵"
           }
         },
         professional: {
@@ -48368,7 +48368,7 @@ export const translations: Record<Language, Translations> = {
                     business: {
                       visits: {
                         in: {
-                          china: "中国のビジネス訪問のためにプロの通訳者と翻訳者を予約する。逐次通訳、同時通訳、公文書翻訳。"
+                          china: "為中國商務訪問預訂專業口譯員與翻譯員。逐步口譯、同步口譯、官方文件翻譯。"
                         }
                       }
                     }
@@ -48386,7 +48386,7 @@ export const translations: Record<Language, Translations> = {
                   meetings: {
                     conferences: {
                       and: {
-                        negotiatio: "中国での会議、カンファレンス、交渉のために、審査を受けた通訳者と翻訳者を予約しましょう。"
+                        negotiatio: "為您在中國的會議、研討會、談判預訂經過審核的口譯員與翻譯員。"
                       }
                     }
                   }
@@ -48398,30 +48398,30 @@ export const translations: Record<Language, Translations> = {
       },
       business: {
         etiquette: {
-          essentials: "ビジネスエチケットの基本",
+          essentials: "商務禮儀基礎",
           tips: {
             for: {
               meeting: {
                 chinese: {
-                  partners: "中国のビジネスパートナーとのミーティングのためのビジネスエチケットのヒント"
+                  partners: "與中國商業夥伴會面的商務禮儀小訣竅"
                 }
               }
             }
           }
         },
         express: {
-          chinaconnect: "ビジネスエクスプレス - ChinaConnect"
+          chinaconnect: "商務快遞 - ChinaConnect"
         },
         invitation: {
           letter: {
             templates: {
-              chinaconnect: "ビジネス招待状テンプレート - ChinaConnect"
+              chinaconnect: "商務邀請函範本 - ChinaConnect"
             }
           }
         }
       },
       calculating: {
-        routes: "ルートを計算中..."
+        routes: "計算路線中..."
       },
       can: {
         i: {
@@ -48430,7 +48430,7 @@ export const translations: Record<Language, Translations> = {
               china: {
                 visa: {
                   on: {
-                    arrival: "中国ビザは到着時に取得できますか？"
+                    arrival: "中國簽證可以抵達時辦理嗎？"
                   }
                 }
               },
@@ -48439,7 +48439,7 @@ export const translations: Record<Language, Translations> = {
                   on: {
                     purchases: {
                       in: {
-                        china: "中国での購入で税金還付を受けられますか？"
+                        china: "在中國購物可以退稅嗎？"
                       }
                     }
                   }
@@ -48457,7 +48457,7 @@ export const translations: Record<Language, Translations> = {
                         apps: {
                           do: {
                             i: {
-                              need: "中国でApple Payは使えますか？どの支払いアプリが必要ですか？"
+                              need: "中國可以使用 Apple Pay 嗎？需要哪些支付 App？"
                             }
                           }
                         }
@@ -48477,7 +48477,7 @@ export const translations: Record<Language, Translations> = {
               about: {
                 international: {
                   withdrawal: {
-                    fees: "国際引き出し手数料について銀行に確認してください"
+                    fees: "請向銀行確認國際提款手續費"
                   }
                 }
               }
@@ -48489,7 +48489,7 @@ export const translations: Record<Language, Translations> = {
             to: {
               confirm: {
                 your: {
-                  account: "アカウントを確認するためにメールをチェックしてください。"
+                  account: "請檢查電子郵件以驗證您的帳戶。"
                 }
               }
             }
@@ -48498,19 +48498,19 @@ export const translations: Record<Language, Translations> = {
       },
       checking: {
         visa: {
-          requirements: "ビザの必要条件を調べています..."
+          requirements: "查詢簽證要求中..."
         },
-        weather: "天気を調べています..."
+        weather: "查詢天氣中..."
       },
       china: {
         business: {
-          etiquette: "中国のビジネスエチケット",
-          guide: "中国ビジネスガイド"
+          etiquette: "中國商務禮儀",
+          guide: "中國商務指南"
         },
         company: {
           registration: {
             guide: {
-              chinaconnect: "中国会社登録ガイド - ChinaConnect"
+              chinaconnect: "中國公司註冊指南 - ChinaConnect"
             }
           }
         },
@@ -48526,7 +48526,7 @@ export const translations: Record<Language, Translations> = {
                           you: {
                             must: {
                               apply: {
-                                befo: "中国はほとんどの国籍に対して到着時のビザを提供していません。旅行前に中国の大使館、総領事館、または認可されたビザセンターで申請する必要があります。"
+                                befo: "中國對大多數國籍不提供落地簽證。您必須在旅行前向中國大使館、領事館或授權簽證中心申請。"
                               }
                             }
                           }
@@ -48541,50 +48541,50 @@ export const translations: Record<Language, Translations> = {
         },
         expo: {
           calendar: {
-            chinaconnect: "中国展示会カレンダー - ChinaConnect"
+            chinaconnect: "中國展會行事曆 - ChinaConnect"
           }
         },
         interpreter: {
-          booking: "中国通訳者予約"
+          booking: "中國口譯員預訂"
         },
         invitation: {
-          letter: "中国招待状"
+          letter: "中國邀請函"
         }
       },
       chinese: {
         business: {
           etiquette: {
             guide: {
-              chinaconnect: "中国ビジネスエチケットガイド - ChinaConnect"
+              chinaconnect: "中國商務禮儀指南 - ChinaConnect"
             }
           }
         },
-        restaurants: "中華レストラン"
+        restaurants: "中式餐廳"
       },
       city: {
         distance: {
           travel: {
-            time: "都市間の距離と移動時間"
+            time: "城市間距離與交通時間"
           }
         }
       },
       close: {
         emergency: {
-          menu: "緊急メニューを閉じる"
+          menu: "關閉緊急選單"
         }
       },
       collect: {
         your: {
-          passport: "パスポートを受け取る"
+          passport: "領取護照"
         }
       },
       communication: {
-        guide: "コミュニケーションガイド",
-        setup: "コミュニケーション設定"
+        guide: "溝通指南",
+        setup: "溝通設定"
       },
       company: {
         registration: {
-          guide: "会社登録ガイド"
+          guide: "公司註冊指南"
         }
       },
       complete: {
@@ -48598,7 +48598,7 @@ export const translations: Record<Language, Translations> = {
                       in: {
                         china: {
                           including: {
-                            canton: "中国で開催される主要な見本市や展示会（広州交易会、自動車ショー、産業イベントを含む）の完全なカレンダー。主要イベントに合わせて出張を計画してください。"
+                            canton: "中國主要商展與展覽的完整行事曆（包括廣交會、車展、產業活動）。規劃商務行程以配合重要活動。"
                           }
                         }
                       }
@@ -48609,10 +48609,10 @@ export const translations: Record<Language, Translations> = {
             }
           }
         },
-        registration: "登録を完了する",
+        registration: "完成註冊",
         the: {
           application: {
-            form: "申請フォームを記入する"
+            form: "填寫申請表"
           },
           foreign: {
             passport: {
@@ -48640,13 +48640,13 @@ export const translations: Record<Language, Translations> = {
         }
       },
       consular: {
-        assistance: "領事サポート"
+        assistance: "領事支援"
       },
       conversation: {
-        history: "会話履歴"
+        history: "對話紀錄"
       },
       current: {
-        subscription: "現在のサブスクリプション"
+        subscription: "目前方案"
       },
       daily: {
         details: {
@@ -48654,7 +48654,7 @@ export const translations: Record<Language, Translations> = {
             appear: {
               after: {
                 full: {
-                  planning: "詳細な日程は完全な計画後に表示されます"
+                  planning: "詳細行程將於完整規劃後顯示"
                 }
               }
             }
@@ -48663,18 +48663,18 @@ export const translations: Record<Language, Translations> = {
       },
       delete: {
         this: {
-          conversation: "この会話を削除しますか？"
+          conversation: "刪除此對話？"
         }
       },
       detailed: {
         feature: {
-          comparison: "詳細な機能比較"
+          comparison: "詳細功能比較"
         }
       },
       determine: {
         your: {
           visa: {
-            type: "ビザの種類を確認する"
+            type: "確認簽證類型"
           }
         }
       },
@@ -48690,7 +48690,7 @@ export const translations: Record<Language, Translations> = {
                   account: {
                     for: {
                       mobile: {
-                        payments: "モバイル決済に中国の銀行口座は必要ですか？"
+                        payments: "行動支付需要中國銀行帳戶嗎？"
                       }
                     }
                   }
@@ -48703,7 +48703,7 @@ export const translations: Record<Language, Translations> = {
                   for: {
                     a: {
                       china: {
-                        visa: "中国ビザに招待状は必要ですか？"
+                        visa: "中國簽證需要邀請函嗎？"
                       }
                     }
                   }
@@ -48714,7 +48714,7 @@ export const translations: Record<Language, Translations> = {
         },
         you: {
           speak: {
-            english: "英語は話せますか？"
+            english: "你會說英語嗎？"
           }
         }
       },
@@ -48724,7 +48724,7 @@ export const translations: Record<Language, Translations> = {
             for: {
               this: {
                 city: {
-                  again: "この都市では再度表示しない"
+                  again: "此城市不再顯示"
                 }
               }
             }
@@ -48735,7 +48735,7 @@ export const translations: Record<Language, Translations> = {
         alipay: {
           or: {
             wechat: {
-              pay: "AlipayまたはWeChat Payをダウンロードする"
+              pay: "下載支付寶或微信支付"
             }
           }
         },
@@ -48747,7 +48747,7 @@ export const translations: Record<Language, Translations> = {
                   before: {
                     arriving: {
                       in: {
-                        china: "これらのアプリを中国に到着する前にダウンロードして設定してください"
+                        china: "請在抵達中國前下載並設定這些 App"
                       }
                     }
                   }
@@ -48763,7 +48763,7 @@ export const translations: Record<Language, Translations> = {
                 is: {
                   blocked: {
                     in: {
-                      china: "到着前にダウンロード - Google Playは中国でブロックされています"
+                      china: "抵達前下載 — Google Play 在中國被封鎖"
                     }
                   }
                 }
@@ -48781,7 +48781,7 @@ export const translations: Record<Language, Translations> = {
                       for: {
                         china: {
                           visa: {
-                            appli: "中国ビザ申請およびビジネス訪問用のすぐに使えるバイリンガル招待状テンプレートをダウンロードしてください。必要事項を記入してすぐにダウンロードできます。"
+                            appli: "下載即用型雙語邀請函範本，適用於中國簽證申請及商務訪問。填寫必要資訊後即可下載。"
                           }
                         }
                       }
@@ -48790,7 +48790,7 @@ export const translations: Record<Language, Translations> = {
                   letters: {
                     for: {
                       visa: {
-                        applications: "ビザ申請用のすぐに使えるバイリンガル招待状をダウンロードする"
+                        applications: "下載簽證申請用即用型雙語邀請函"
                       }
                     }
                   }
@@ -48804,7 +48804,7 @@ export const translations: Record<Language, Translations> = {
             before: {
               arriving: {
                 in: {
-                  china: "これらのアプリを中国に到着する前にダウンロードする"
+                  china: "請在抵達中國前下載這些 App"
                 }
               }
             }
@@ -48821,15 +48821,15 @@ export const translations: Record<Language, Translations> = {
         }
       },
       emergency: {
-        assistance: "緊急時のサポート",
+        assistance: "緊急支援",
         numbers: {
           in: {
-            china: "中国の緊急連絡先"
+            china: "中國緊急聯絡方式"
           }
         },
-        procedures: "緊急時の手順",
+        procedures: "緊急處理程序",
         travel: {
-          documents: "緊急時の旅行書類"
+          documents: "緊急旅行文件"
         }
       },
       enjoy: {
@@ -48839,7 +48839,7 @@ export const translations: Record<Language, Translations> = {
               support: {
                 for: {
                   team: {
-                    plans: "すべての機能をお楽しみください。チームプランについてはサポートにお問い合わせください。"
+                    plans: "盡情享受所有功能。如需團隊方案，請聯絡支援團隊。"
                   }
                 }
               }
@@ -48855,13 +48855,13 @@ export const translations: Record<Language, Translations> = {
                 a: {
                   password: {
                     reset: {
-                      link: "パスワードリセットリンクを受信するにはメールアドレスを入力してください。"
+                      link: "請輸入電子郵件以接收密碼重設連結。"
                     }
                   },
                   passwordless: {
                     sign: {
                       in: {
-                        link: "パスワードレスサインインリンクを受信するにはメールアドレスを入力してください。"
+                        link: "請輸入電子郵件以接收無密碼登入連結。"
                       }
                     }
                   }
@@ -48876,7 +48876,7 @@ export const translations: Record<Language, Translations> = {
           for: {
             getting: {
               around: {
-                china: "中国での移動に必要なアプリ"
+                china: "中國行動必備 App"
               }
             }
           },
@@ -48885,7 +48885,7 @@ export const translations: Record<Language, Translations> = {
               interface: {
                 for: {
                   navigating: {
-                    china: "中国での移動に便利な英語インターフェース付きアプリ"
+                    china: "中國行動適用的英文介面 App"
                   }
                 }
               }
@@ -48895,40 +48895,40 @@ export const translations: Record<Language, Translations> = {
         messaging: {
           and: {
             connectivity: {
-              apps: "必須のメッセージングおよび接続アプリ"
+              apps: "必備通訊與連線 App"
             }
           }
         }
       },
       expo: {
         event: {
-          calendar: "展示会＆イベントカレンダー"
+          calendar: "展會與活動行事曆"
         }
       },
       failed: {
         to: {
           fetch: {
             city: {
-              scores: "都市のスコアを取得できませんでした："
+              scores: "無法取得城市評分："
             },
-            profile: "プロフィールの取得に失敗しました："
+            profile: "無法取得個人資料："
           },
           load: {
             amap: {
-              api: "Amap APIの読み込みに失敗しました"
+              api: "高德地圖 API 載入失敗"
             },
-            weather: "天気の読み込みに失敗しました"
+            weather: "天氣載入失敗"
           },
           save: {
-            route: "ルートの保存に失敗しました："
+            route: "路線儲存失敗："
           },
           search: {
             nearby: {
-              places: "近くの場所の検索に失敗しました："
+              places: "搜尋附近地點失敗："
             }
           },
           update: {
-            profile: "プロフィールの更新に失敗しました："
+            profile: "個人資料更新失敗："
           }
         }
       },
@@ -48950,7 +48950,7 @@ export const translations: Record<Language, Translations> = {
                           hotels: {
                             use: {
                               digital: {
-                                regist: "チェックイン時に一時滞在届を記入してください。一部のホテルではデジタル登録を使用しています。"
+                                regist: "入住時請填寫臨時住宿登記表。部分飯店使用數位登記。"
                               }
                             }
                           }
@@ -48965,14 +48965,14 @@ export const translations: Record<Language, Translations> = {
         }
       },
       finding: {
-        restaurants: "レストランを探しています...",
+        restaurants: "尋找餐廳中...",
         transport: {
-          options: "交通手段を探しています..."
+          options: "尋找交通方式中..."
         }
       },
       flight: {
         booking: {
-          tips: "フライト予約のヒント"
+          tips: "航班預訂小訣竅"
         }
       },
       for: {
@@ -48992,7 +48992,7 @@ export const translations: Record<Language, Translations> = {
                         required: {
                           but: {
                             strengthens: {
-                              yo: "観光ビザの場合、招待状は必ずしも必要ではありませんが、申請を強化します。ビジネスビザの場合は通常、中国企業からの招待状が必要です。"
+                              yo: "觀光簽證通常不需要邀請函，但可強化申請。商務簽證通常需要中國公司的邀請函。"
                             }
                           }
                         }
@@ -49018,7 +49018,7 @@ export const translations: Record<Language, Translations> = {
                           but: {
                             with: {
                               limitations: {
-                                fo: "外国のクレジットカードはAlipayおよびWeChat Payで動作するようになりましたが、制限があります。すべての機能を利用するには中国の銀行口座が役立ちますが、必ずしも必要ではありません。"
+                                fo: "外國信用卡現在可用於支付寶和微信支付，但有部分限制。中國銀行帳戶有助於使用所有功能，但並非必要。"
                               }
                             }
                           }
@@ -49034,12 +49034,12 @@ export const translations: Record<Language, Translations> = {
       },
       frequently: {
         asked: {
-          questions: "よくある質問"
+          questions: "常見問題"
         }
       },
       gather: {
         required: {
-          documents: "必要な書類を準備する"
+          documents: "準備所需文件"
         }
       },
       generate: {
@@ -49050,7 +49050,7 @@ export const translations: Record<Language, Translations> = {
                 chatting: {
                   with: {
                     the: {
-                      ai: "AIとチャットして最初に旅程を作成する"
+                      ai: "與 AI 聊天，先建立行程"
                     }
                   }
                 }
@@ -49065,7 +49065,7 @@ export const translations: Record<Language, Translations> = {
             supported: {
               by: {
                 your: {
-                  browser: "お使いのブラウザはジオロケーションに対応していません"
+                  browser: "您的瀏覽器不支援地理位置功能"
                 }
               }
             }
@@ -49074,7 +49074,7 @@ export const translations: Record<Language, Translations> = {
       },
       getting: {
         exchange: {
-          rates: "為替レートを取得しています..."
+          rates: "取得匯率中..."
         }
       },
       have: {
@@ -49088,7 +49088,7 @@ export const translations: Record<Language, Translations> = {
                       for: {
                         all: {
                           foreign: {
-                            gu: "パスポートを準備してください。ホテルではすべての外国人ゲストのパスポート登録が必要です。"
+                            gu: "請準備護照。飯店要求所有外國旅客登記護照。"
                           }
                         }
                       }
@@ -49102,10 +49102,10 @@ export const translations: Record<Language, Translations> = {
       },
       hear: {
         chinese: {
-          pronunciation: "中国語の発音を聞く"
+          pronunciation: "聽中文發音"
         },
         english: {
-          pronunciation: "英語の発音を聞く"
+          pronunciation: "聽英文發音"
         }
       },
       hotel: {
@@ -49117,7 +49117,7 @@ export const translations: Record<Language, Translations> = {
                   process: {
                     and: {
                       staying: {
-                        comfortably: "ホテルの種類、予約のヒント、チェックイン手続き、および快適に滞在する方法"
+                        comfortably: "飯店類型、預訂小訣竅、入住流程，以及如何舒適住宿"
                       }
                     }
                   }
@@ -49133,7 +49133,7 @@ export const translations: Record<Language, Translations> = {
             get: {
               to: {
                 the: {
-                  hospital: "病院にはどうやって行けばいいですか？"
+                  hospital: "如何前往醫院？"
                 }
               }
             },
@@ -49145,7 +49145,7 @@ export const translations: Record<Language, Translations> = {
                       as: {
                         a: {
                           foreign: {
-                            tourist: "外国人観光客としてWeChat PayとAlipayを使用するにはどうすればよいですか？"
+                            tourist: "外國觀光客如何使用微信支付和支付寶？"
                           }
                         }
                       }
@@ -49165,7 +49165,7 @@ export const translations: Record<Language, Translations> = {
                     a: {
                       china: {
                         tourist: {
-                          visa: "中国観光ビザの取得にはどのくらい時間がかかりますか？"
+                          visa: "取得中國觀光簽證需要多久時間？"
                         }
                       }
                     }
@@ -49181,7 +49181,7 @@ export const translations: Record<Language, Translations> = {
               i: {
                 bring: {
                   to: {
-                    china: "中国にはどのくらいの現金を持っていくべきですか？"
+                    china: "我應該帶多少現金去中國？"
                   }
                 }
               }
@@ -49191,7 +49191,7 @@ export const translations: Record<Language, Translations> = {
             a: {
               china: {
                 visa: {
-                  cost: "中国ビザの費用はいくらですか？"
+                  cost: "中國簽證費用是多少？"
                 }
               }
             }
@@ -49203,7 +49203,7 @@ export const translations: Record<Language, Translations> = {
               a: {
                 china: {
                   tourist: {
-                    visa: "中国観光ビザの申請方法"
+                    visa: "如何申請中國觀光簽證"
                   }
                 }
               }
@@ -49215,7 +49215,7 @@ export const translations: Record<Language, Translations> = {
                 into: {
                   hotels: {
                     in: {
-                      china: "中国のホテルの予約とチェックイン方法"
+                      china: "如何預訂中國飯店並辦理入住"
                     }
                   }
                 }
@@ -49233,7 +49233,7 @@ export const translations: Record<Language, Translations> = {
                           china: {
                             as: {
                               a: {
-                                tourist: "中国で観光客としてSIMカードとインターネットアクセスを取得する方法"
+                                tourist: "如何在中國取得 SIM 卡與網路（觀光客適用）"
                               }
                             }
                           }
@@ -49248,7 +49248,7 @@ export const translations: Record<Language, Translations> = {
               china: {
                 as: {
                   a: {
-                    tourist: "観光客として中国を移動する方法"
+                    tourist: "觀光客如何在中國移動"
                   }
                 }
               },
@@ -49258,7 +49258,7 @@ export const translations: Record<Language, Translations> = {
                     metro: {
                       taxi: {
                         or: {
-                          bike: "中国の都市での移動方法：地下鉄、タクシー、それとも自転車？"
+                          bike: "如何在中國城市移動：地鐵、計程車或自行車？"
                         }
                       }
                     }
@@ -49272,7 +49272,7 @@ export const translations: Record<Language, Translations> = {
               china: {
                 as: {
                   a: {
-                    foreigner: "外国人として中国で支払いをする方法"
+                    foreigner: "外國人如何在中國付款"
                   }
                 }
               }
@@ -49287,7 +49287,7 @@ export const translations: Record<Language, Translations> = {
                       by: {
                         high: {
                           speed: {
-                            rail: "上海から西安まで高速鉄道で旅行する方法"
+                            rail: "如何搭乘高鐵從上海到西安"
                           }
                         }
                       }
@@ -49309,7 +49309,7 @@ export const translations: Record<Language, Translations> = {
                     food: {
                       destinations: {
                         in: {
-                          china: "私はグルメです。中国の最高のグルメスポットを教えてください"
+                          china: "我是美食家。請推薦中國最佳美食地點"
                         }
                       }
                     }
@@ -49319,12 +49319,12 @@ export const translations: Record<Language, Translations> = {
             }
           },
           allergic: {
-            to: "私は...にアレルギーがあります"
+            to: "我對...過敏"
           },
           sick: {
             i: {
               feel: {
-                unwell: "体調が悪い / 気分が優れません"
+                unwell: "身體不適 / 感覺不舒服"
               }
             }
           }
@@ -49353,7 +49353,7 @@ export const translations: Record<Language, Translations> = {
         },
         do: {
           not: {
-            understand: "理解できません"
+            understand: "聽不懂"
           }
         },
         have: {
@@ -49369,7 +49369,7 @@ export const translations: Record<Language, Translations> = {
                             info: {
                               and: {
                                 transport: {
-                                  tip: "来週深圳でビジネスミーティングがあります。ビザの情報と交通のヒントが必要です"
+                                  tip: "下週在深圳有商務會議。需要簽證資訊和交通小訣竅"
                                 }
                               }
                             }
@@ -49381,18 +49381,18 @@ export const translations: Record<Language, Translations> = {
                 }
               }
             },
-            stomachache: "腹痛があります"
+            stomachache: "我肚子痛"
           },
           been: {
-            assaulted: "暴行を受けました"
+            assaulted: "我被攻擊了"
           }
         },
         need: {
           a: {
-            translator: "通訳が必要です"
+            translator: "我需要口譯員"
           },
           an: {
-            ambulance: "救急車を呼ぶ必要があります"
+            ambulance: "我需要叫救護車"
           }
         },
         want: {
@@ -49409,12 +49409,12 @@ export const translations: Record<Language, Translations> = {
       },
       important: {
         allergy: {
-          information: "重要なアレルギー情報"
+          information: "重要過敏資訊"
         }
       },
       invitation: {
         letter: {
-          templates: "招待状のテンプレート"
+          templates: "邀請函範本"
         }
       },
       is: {
@@ -49425,7 +49425,7 @@ export const translations: Record<Language, Translations> = {
                 mobile: {
                   payments: {
                     in: {
-                      china: "中国でモバイル決済を使用するのは安全ですか？"
+                      china: "在中國使用行動支付安全嗎？"
                     }
                   }
                 }
@@ -49443,7 +49443,7 @@ export const translations: Record<Language, Translations> = {
                   need: {
                     it: {
                       for: {
-                        emigration: "入国カードを安全に保管してください - 出国の際に必要になります"
+                        emigration: "請妥善保管入境卡 — 出境時需要"
                       }
                     }
                   }
@@ -49456,13 +49456,13 @@ export const translations: Record<Language, Translations> = {
           with: {
             tax: {
               refund: {
-                mark: "税金還付マーク付きの請求書を持っておいてください"
+                mark: "請保留有退稅標誌的發票"
               }
             }
           }
         },
         registration: {
-          slip: "登録証を保管してください"
+          slip: "請保管登記證明"
         },
         your: {
           hotel: {
@@ -49477,7 +49477,7 @@ export const translations: Record<Language, Translations> = {
                             checks: {
                               or: {
                                 other: {
-                                  hot: "ホテルの登録証を保管してください - 警察のチェックや他のホテル予約の際に必要になるかもしれません"
+                                  hot: "請保管飯店登記證明 — 警察臨檢或其他飯店入住時可能需要"
                                 }
                               }
                             }
@@ -49493,7 +49493,7 @@ export const translations: Record<Language, Translations> = {
         }
       },
       language: {
-        translation: "言語と翻訳"
+        translation: "語言與翻譯"
       },
       link: {
         a: {
@@ -49505,7 +49505,7 @@ export const translations: Record<Language, Translations> = {
                     card: {
                       to: {
                         enable: {
-                          payments: "Visa、Mastercard、または他の国際カードをリンクして支払いを有効にします"
+                          payments: "連結 Visa、Mastercard 或其他國際卡以啟用付款"
                         }
                       }
                     }
@@ -49516,7 +49516,7 @@ export const translations: Record<Language, Translations> = {
           }
         },
         international: {
-          card: "国際カードのリンク"
+          card: "連結國際卡"
         }
       },
       local: {
@@ -49529,7 +49529,7 @@ export const translations: Record<Language, Translations> = {
                     dining: {
                       etiquette: {
                         in: {
-                          china: "中国のローカル料理、オーダーする際のヒント、食品安全、および食事のマナー"
+                          china: "中國在地料理、點餐小訣竅、食品安全與用餐禮儀"
                         }
                       }
                     }
@@ -49544,7 +49544,7 @@ export const translations: Record<Language, Translations> = {
         information: {
           is: {
             currently: {
-              unavailable: "現在、位置情報が利用できません"
+              unavailable: "目前無法取得位置資訊"
             }
           }
         },
@@ -49557,7 +49557,7 @@ export const translations: Record<Language, Translations> = {
                     in: {
                       your: {
                         browser: {
-                          setting: "位置情報の許可が拒否されました。ブラウザの設定で位置情報アクセスを有効にしてください"
+                          setting: "位置權限遭拒絕。請在瀏覽器設定中啟用位置存取"
                         }
                       }
                     }
@@ -49572,7 +49572,7 @@ export const translations: Record<Language, Translations> = {
             out: {
               please: {
                 try: {
-                  again: "位置情報の要求がタイムアウトしました。もう一度お試しください"
+                  again: "位置請求逾時。請重試"
                 }
               }
             }
@@ -49606,7 +49606,7 @@ export const translations: Record<Language, Translations> = {
                 scams: {
                   and: {
                     embassy: {
-                      contacts: "パスポート紛失、医療緊急事態、盗難、詐欺、および大使館の連絡先"
+                      contacts: "護照遺失、醫療緊急狀況、遭竊、詐騙及大使館聯絡方式"
                     }
                   }
                 }
@@ -49674,14 +49674,14 @@ export const translations: Record<Language, Translations> = {
                 etiquette: {
                   and: {
                     meeting: {
-                      protocols: "中国のビジネス文化、接待マナー、会合プロトコルをマスターする"
+                      protocols: "掌握中國商務文化、招待禮儀、會議禮儀"
                     }
                   },
                   gift: {
                     giving: {
                       customs: {
                         and: {
-                          meeting: "中国のビジネス文化、接待マナー、贈答習慣、会合プロトコルをマスターする。よくある間違いを避け、良好な関係を築く。"
+                          meeting: "掌握中國商務文化、招待禮儀、送禮習俗、會議禮儀。避免常見錯誤，建立良好關係。"
                         }
                       }
                     }
@@ -49695,7 +49695,7 @@ export const translations: Record<Language, Translations> = {
                   card: {
                     exchange: {
                       dining: {
-                        meetin: "中国のビジネスエチケット（名刺交換、接待、会合、贈答を含む）をマスターする。外国人ビジネスプロフェッショナル向けの実践的な注意事項。"
+                        meetin: "掌握中國商務禮儀（包括名片交換、招待、會議、送禮）。外國商務專業人士的實用注意事項。"
                       }
                     }
                   }
@@ -49707,7 +49707,7 @@ export const translations: Record<Language, Translations> = {
       },
       maximum: {
         level: {
-          reached: "最大レベルに達しました！"
+          reached: "已達最高等級！"
         }
       },
       medical: {
@@ -49722,7 +49722,7 @@ export const translations: Record<Language, Translations> = {
                         foreigners: {
                           a: {
                             good: {
-                              tra: "中国の医療治療は、特に外国人にとって高額になることがあります。安全な旅行には、医療保険付きの優れた旅行保険が不可欠です。"
+                              tra: "中國的醫療費用可能很高，尤其對外國人而言。含醫療保障的優質旅遊保險對安全旅行至關重要。"
                             }
                           }
                         }
@@ -49744,7 +49744,7 @@ export const translations: Record<Language, Translations> = {
         ai: {
           requests: {
             used: {
-              up: "月間AIリクエスト使用済み"
+              up: "本月 AI 請求已用完"
             }
           }
         }
@@ -49756,24 +49756,24 @@ export const translations: Record<Language, Translations> = {
         __________________________________________________________________________________________________________________: "hard.no.__________________________________________________________________________________________________________________",
         items: {
           to: {
-            display: "表示するアイテムがありません"
+            display: "沒有可顯示的項目"
           }
         },
         itinerary: {
           to: {
-            display: "表示する旅程がありません"
+            display: "沒有可顯示的行程"
           }
         },
         route: {
           data: {
             to: {
-              save: "保存するルートデータがありません。"
+              save: "沒有可儲存的路線資料。"
             }
           }
         },
         saved: {
           itineraries: {
-            yet: "まだ保存された旅程はありません"
+            yet: "尚無已儲存的行程"
           }
         }
       },
@@ -49781,7 +49781,7 @@ export const translations: Record<Language, Translations> = {
         with: {
           soy: {
             bean: {
-              paste: "味噌入り麺"
+              paste: "味噌拉麵"
             }
           }
         }
@@ -49789,27 +49789,27 @@ export const translations: Record<Language, Translations> = {
       oauth: {
         provider: {
           not: {
-            enabled: "OAuthプロバイダーが有効になっていません"
+            enabled: "OAuth 提供者未啟用"
           }
         }
       },
       open: {
         emergency: {
-          menu: "緊急メニューを開く"
+          menu: "開啟緊急選單"
         }
       },
       openinghoursspecification: "営業時間仕様",
       pan: {
         fried: {
           pork: {
-            buns: "焼き豚まん"
+            buns: "叉燒包"
           }
         }
       },
       passionate: {
         about: {
           exploring: {
-            china: "中国探索に情熱を注ぐ"
+            china: "熱愛探索中國"
           }
         }
       },
@@ -49824,7 +49824,7 @@ export const translations: Record<Language, Translations> = {
                       depending: {
                         on: {
                           hotel: {
-                            policy: "ホテルのポリシーにより、アリペイ、ウィーチャットペイ、またはクレジットカードでお支払いください。"
+                            policy: "依飯店政策，請使用支付寶、微信支付或信用卡付款。"
                           }
                         }
                       }
@@ -49839,19 +49839,19 @@ export const translations: Record<Language, Translations> = {
       payment: {
         apps: {
           you: {
-            need: "必要な支払いアプリ"
+            need: "必要支付 App"
           }
         }
       },
       pdf: {
         generation: {
-          failed: "PDF生成に失敗しました:"
+          failed: "PDF 產生失敗："
         }
       },
       pian: {
         er: {
           chuan: {
-            noodles: "ピエンアルチュアン麺"
+            noodles: "片兒川麵"
           }
         }
       },
@@ -49862,7 +49862,7 @@ export const translations: Record<Language, Translations> = {
               type: {
                 your: {
                   own: {
-                    below: "プロンプトを選択するか、下に独自のものを入力してください"
+                    below: "選擇提示詞，或在下方向輸入您的內容"
                   }
                 }
               }
@@ -49877,7 +49877,7 @@ export const translations: Record<Language, Translations> = {
         your: {
           scenic: {
             spot: {
-              visit: "観光地訪問を計画する"
+              visit: "規劃景點參觀"
             }
           },
           trips: {
@@ -49889,7 +49889,7 @@ export const translations: Record<Language, Translations> = {
                       shows: {
                         and: {
                           industry: {
-                            events: "中国のトップトレードショーや業界イベントに合わせて旅行を計画する"
+                            events: "配合中國頂級商展與產業活動規劃您的旅行"
                           }
                         }
                       }
@@ -49910,23 +49910,23 @@ export const translations: Record<Language, Translations> = {
         allow: {
           popups: {
             to: {
-              print: "印刷するためにポップアップを許可してください"
+              print: "請允許彈出視窗以進行列印"
             }
           }
         },
         call: {
           an: {
-            ambulance: "救急車を呼んでください"
+            ambulance: "請叫救護車"
           },
           my: {
-            family: "家族に電話してください"
+            family: "請打電話給家人"
           }
         },
         enter: {
           a: {
-            name: "名前を入力してください",
+            name: "請輸入姓名",
             phone: {
-              number: "電話番号を入力してください"
+              number: "請輸入電話號碼"
             }
           }
         },
@@ -49934,24 +49934,24 @@ export const translations: Record<Language, Translations> = {
           in: {
             to: {
               save: {
-                routes: "ルートを保存するにはサインインしてください"
+                routes: "請登入以儲存路線"
               }
             }
           }
         },
         speak: {
-          slowly: "ゆっくり話してください"
+          slowly: "請說慢一點"
         }
       },
       popular: {
         food: {
-          categories: "人気の食品カテゴリー"
+          categories: "熱門食品類別"
         }
       },
       powered: {
         by: {
           advanced: {
-            ai: "高度なAI搭載"
+            ai: "進階 AI 驅動"
           }
         }
       },
@@ -49962,7 +49962,7 @@ export const translations: Record<Language, Translations> = {
               business: {
                 travelers: {
                   in: {
-                    china: "中国での外国人ビジネス旅行者向け実用ツール"
+                    china: "中國外國商務旅客的實用工具"
                   }
                 }
               }
@@ -49972,11 +49972,11 @@ export const translations: Record<Language, Translations> = {
       },
       pre: {
         departure: {
-          preparation: "出発前の準備"
+          preparation: "出發前準備"
         }
       },
       premium: {
-        customization: "プレミアムカスタマイズ"
+        customization: "高級客製化"
       },
       process: {
         at: {
@@ -49984,7 +49984,7 @@ export const translations: Record<Language, Translations> = {
             departure: {
               hall: {
                 before: {
-                  security: "保安検査前の空港出発ロビーの手続き"
+                  security: "安檢前於機場出境大廳辦理"
                 }
               }
             }
@@ -49997,7 +49997,7 @@ export const translations: Record<Language, Translations> = {
             translators: {
               for: {
                 business: {
-                  visits: "ビジネス訪問向けのプロフェッショナル通訳者と翻訳者"
+                  visits: "商務訪問專業口譯員與翻譯員"
                 }
               }
             }
@@ -50017,7 +50017,7 @@ export const translations: Record<Language, Translations> = {
                           apps: {
                             and: {
                               ride: {
-                                hailing: "空港でSIMまたはeSIMを購入して、ナビゲーションアプリや配車サービスを利用する"
+                                hailing: "在機場購買 SIM 或 eSIM，以使用導航 App 和叫車服務"
                               }
                             }
                           }
@@ -50038,7 +50038,7 @@ export const translations: Record<Language, Translations> = {
               hangzhou: {
                 near: {
                   west: {
-                    lake: "西湖近くの杭州にあるブティックホテルを推奨"
+                    lake: "推薦杭州西湖附近的精品飯店"
                   }
                 }
               }
@@ -50048,7 +50048,7 @@ export const translations: Record<Language, Translations> = {
       },
       remove: {
         from: {
-          favorites: "お気に入りから削除"
+          favorites: "從收藏中移除"
         }
       },
       reservation: {
@@ -50056,13 +50056,13 @@ export const translations: Record<Language, Translations> = {
       },
       route: {
         saved: {
-          successfully: "ルートが保存されました！"
+          successfully: "路線已儲存！"
         }
       },
       sanlitun: {
         chaoyang: {
           district: {
-            beijing: "北京・朝陽区・三里屯"
+            beijing: "北京・朝陽區・三里屯"
           }
         }
       },
@@ -50075,11 +50075,11 @@ export const translations: Record<Language, Translations> = {
           }
         },
         your: {
-          itineraries: "旅程を保存する"
+          itineraries: "儲存行程"
         }
       },
       saving: {
-        itinerary: "旅程を保存中..."
+        itinerary: "儲存行程中..."
       },
       scan: {
         merchant: {
@@ -50093,7 +50093,7 @@ export const translations: Record<Language, Translations> = {
                         code: {
                           to: {
                             complete: {
-                              payments: "支払いを行うには、店のQRコードを読み取るか、自分のQRコードを表示してください"
+                              payments: "付款時，請掃描店家 QR Code 或出示您的 QR Code"
                             }
                           }
                         }
@@ -50110,42 +50110,42 @@ export const translations: Record<Language, Translations> = {
         spots: {
           in: {
             china: {
-              chinaconnect: "中国の観光地 - ChinaConnect"
+              chinaconnect: "中國景點 - ChinaConnect"
             }
           }
         }
       },
       search: {
-        attractions: "観光地を検索...",
+        attractions: "搜尋景點...",
         country: {
-          name: "国名を入力..."
+          name: "輸入國家名稱..."
         }
       },
       searching: {
-        cities: "都市を検索中...",
+        cities: "搜尋城市中...",
         for: {
-          attractions: "観光地を検索中..."
+          attractions: "搜尋景點中..."
         },
-        hotels: "ホテルを検索中...",
+        hotels: "搜尋飯店中...",
         the: {
-          web: "ウェブを検索中..."
+          web: "搜尋網路中..."
         }
       },
       select: {
         a: {
           transport: {
-            mode: "交通手段を選択"
+            mode: "選擇交通方式"
           }
         },
         transport: {
-          mode: "交通手段を選択"
+          mode: "選擇交通方式"
         },
         your: {
           country: {
             to: {
               see: {
                 specific: {
-                  requirements: "国を選択して具体的な要件を確認する"
+                  requirements: "選擇國家以查看具體要求"
                 }
               }
             }
@@ -50159,7 +50159,7 @@ export const translations: Record<Language, Translations> = {
               password: {
                 for: {
                   authorizing: {
-                    transactions: "取引を承認するための安全な支払いパスワードを設定する"
+                    transactions: "設定安全支付密碼以授權交易"
                   }
                 }
               }
@@ -50167,13 +50167,13 @@ export const translations: Record<Language, Translations> = {
           }
         },
         payment: {
-          password: "支払いパスワードを設定"
+          password: "設定支付密碼"
         }
       },
       share: {
         your: {
           dining: {
-            experience: "食事体験をシェアする..."
+            experience: "分享用餐體驗..."
           }
         }
       },
@@ -50187,7 +50187,7 @@ export const translations: Record<Language, Translations> = {
                     apps: {
                       for: {
                         staying: {
-                          connected: "SIM/eSIMオプション、VPN設定、接続を維持するための必須アプリ"
+                          connected: "SIM/eSIM 選項、VPN 設定、保持連線的必備 App"
                         }
                       }
                     }
@@ -50200,12 +50200,12 @@ export const translations: Record<Language, Translations> = {
       },
       something: {
         went: {
-          wrong: "問題が発生しました"
+          wrong: "發生問題"
         }
       },
       sorry: {
         i: {
-          encountered: "すみません、遭遇した"
+          encountered: "抱歉，遇到"
         }
       },
       sos: {
@@ -50213,7 +50213,7 @@ export const translations: Record<Language, Translations> = {
           tap: {
             to: {
               call: {
-                police: "緊急SOS - タップして警察に電話"
+                police: "緊急 SOS - 點擊撥打警察"
               }
             }
           }
@@ -50229,7 +50229,7 @@ export const translations: Record<Language, Translations> = {
       stay: {
         connected: {
           in: {
-            china: "中国でつながる"
+            china: "在中國保持連線"
           }
         }
       },
@@ -50246,7 +50246,7 @@ export const translations: Record<Language, Translations> = {
                           in: {
                             procedures: {
                               in: {
-                                chin: "中国への外国人旅行者向けホテル予約とチェックイン手続きのステップバイステップガイド"
+                                chin: "中國外國旅客飯店預訂與入住流程逐步指南"
                               }
                             }
                           }
@@ -50275,7 +50275,7 @@ export const translations: Record<Language, Translations> = {
                           and: {
                             using: {
                               mobile: {
-                                pay: "中国でのモバイル決済、現金、カードの使用に関する国際旅行者向けステップバイステップガイド"
+                                pay: "中國行動支付、現金、信用卡使用逐步指南（國際旅客適用）"
                               }
                             }
                           }
@@ -50290,7 +50290,7 @@ export const translations: Record<Language, Translations> = {
                       china: {
                         including: {
                           airport: {
-                            tran: "中国での交通機関の案内（空港送迎、地下鉄、高速鉄道、タクシー、都市間交通を含む）に関するステップバイステップガイド"
+                            tran: "中國交通逐步指南（包括機場接送、地鐵、高鐵、計程車、城市間交通）"
                           }
                         }
                       }
@@ -50302,7 +50302,7 @@ export const translations: Record<Language, Translations> = {
                     office: {
                       and: {
                         other: {
-                          entities: "WFOE、駐在員事務所およびその他のエンティティに関するステップバイステップガイド"
+                          entities: "WFOE、代表處及其他實體逐步指南"
                         }
                       }
                     }
@@ -50318,7 +50318,7 @@ export const translations: Record<Language, Translations> = {
                           or: {
                             other: {
                               entity: {
-                                i: "外国投資家向け中国でのWFOE、駐在員事務所またはその他のエンティティ登録に関するステップバイステップガイド。完全なタイムラインと必要書類リスト。"
+                                i: "外國投資者在中國註冊 WFOE、代表處或其他實體的逐步指南。完整時間表與所需文件清單。"
                               }
                             }
                           }
@@ -50337,7 +50337,7 @@ export const translations: Record<Language, Translations> = {
                               office: {
                                 in: {
                                   china: {
-                                    doc: "中国でのWFOE、合弁会社（JV）、駐在員事務所の設立に関するステップバイステップガイド。必要書類、タイムライン、コスト、および2026年の最新の規制更新。"
+                                    doc: "在中國設立 WFOE、合資公司（JV）、代表處的逐步指南。所需文件、時間表、成本及 2026 年最新法規更新。"
                                   }
                                 }
                               }
@@ -50356,7 +50356,7 @@ export const translations: Record<Language, Translations> = {
       stir: {
         fried: {
           beef: {
-            offal: "牛肉ホルモンの炒め物"
+            offal: "蔥爆牛肉"
           }
         }
       },
@@ -50369,7 +50369,7 @@ export const translations: Record<Language, Translations> = {
                   center: {
                     with: {
                       applicable: {
-                        fees: "該当する料金を添えて中国大使館/領事館/ビザセンターに提出"
+                        fees: "連同相關費用提交至中國大使館/領事館/簽證中心"
                       }
                     }
                   }
@@ -50381,18 +50381,18 @@ export const translations: Record<Language, Translations> = {
       },
       switch: {
         map: {
-          provider: "地図プロバイダーを切り替える"
+          provider: "切換地圖提供者"
         },
         to: {
           google: {
-            maps: "Googleマップに切り替える"
+            maps: "切換至 Google 地圖"
           }
         }
       },
       tap: {
         to: {
           hear: {
-            pronunciation: "タップして発音を聞く"
+            pronunciation: "點擊聽發音"
           }
         }
       },
@@ -50405,7 +50405,7 @@ export const translations: Record<Language, Translations> = {
                   shopping: {
                     and: {
                       departure: {
-                        checklist: "税金還付、空港交通、免税ショッピング、出国チェックリスト"
+                        checklist: "退稅、機場交通、免稅購物、出境檢查清單"
                       }
                     }
                   }
@@ -50417,64 +50417,64 @@ export const translations: Record<Language, Translations> = {
       },
       taxi: {
         useful: {
-          phrases: "タクシー便利なフレーズ"
+          phrases: "計程車實用語句"
         }
       },
       thank: {
         you: {
           for: {
             your: {
-              subscription: "ご購読ありがとうございます！"
+              subscription: "感謝您的訂閱！"
             }
           }
         }
       },
       toggle: {
         temperature: {
-          unit: "温度単位を切り替える"
+          unit: "切換溫度單位"
         }
       },
       translation: {
-        interpreting: "翻訳・通訳",
-        services: "翻訳サービス"
+        interpreting: "翻譯・口譯",
+        services: "翻譯服務"
       },
       transport: {
         navigation: {
-          apps: "交通・ナビゲーションアプリ"
+          apps: "交通・導航 App"
         }
       },
       travel: {
         insurance: {
           is: {
-            essential: "旅行保険は必須です"
+            essential: "旅遊保險是必需的"
           }
         }
       },
       try: {
         these: {
           quick: {
-            prompts: "これらの簡単なプロンプトを試してみてください"
+            prompts: "試試這些簡單的提示詞"
           }
         }
       },
       unlimited: {
         ai: {
-          requests: "無制限のAIリクエスト"
+          requests: "無限 AI 請求"
         }
       },
       unsaved: {
-        conversation: "未保存の会話"
+        conversation: "未儲存的對話"
       },
       upgrade: {
         to: {
           a: {
             paid: {
-              plan: "有料プランにアップグレード"
+              plan: "升級至付費方案"
             }
           },
           continue: {
             using: {
-              ai: "AIを使い続けるためにアップグレード"
+              ai: "升級以繼續使用 AI"
             }
           }
         }
@@ -50504,7 +50504,7 @@ export const translations: Record<Language, Translations> = {
                           sites: {
                             often: {
                               have: {
-                                be: "Booking.com、Ctrip、またはFliggyを使用してホテルを予約してください。国際サイトは英語サポートが優れていることが多いです"
+                                be: "使用 Booking.com、攜程或飛豬預訂飯店。國際網站通常提供較佳的英文支援"
                               }
                             }
                           }
@@ -50523,7 +50523,7 @@ export const translations: Record<Language, Translations> = {
               banks: {
                 for: {
                   better: {
-                    security: "銀行内のカードマシンを使ってより高いセキュリティを確保"
+                    security: "使用銀行內的卡機以獲得更高的安全性"
                   }
                 }
               }
@@ -50538,7 +50538,7 @@ export const translations: Record<Language, Translations> = {
                   cheaper: {
                     than: {
                       taxi: {
-                        queue: "空港ピックアップにはDidiアプリを使用 - タクシー待ち行列より安い"
+                        queue: "使用滴滴 App 預訂機場接送 — 比排隊等計程車便宜"
                       }
                     }
                   }
@@ -50561,7 +50561,7 @@ export const translations: Record<Language, Translations> = {
                               have: {
                                 the: {
                                   best: {
-                                    e: "国際カードにはICBC、中国銀行、またはHSBCのATMを使用してください。彼らは最高の為替レートと最も広いカバレッジを持っています"
+                                    e: "國際卡請使用工商銀行、中國銀行或匯豐銀行的 ATM。它們提供最佳匯率與最廣的覆蓋範圍"
                                   }
                                 }
                               }
@@ -50579,21 +50579,21 @@ export const translations: Record<Language, Translations> = {
       },
       useful: {
         transport: {
-          phrases: "便利な交通フレーズ"
+          phrases: "實用交通語句"
         }
       },
       user: {
         accepted: {
           the: {
             install: {
-              prompt: "ユーザーがインストールプロンプトを受け入れました"
+              prompt: "使用者已接受安裝提示"
             }
           }
         },
         dismissed: {
           the: {
             install: {
-              prompt: "ユーザーがインストールプロンプトを却下しました"
+              prompt: "使用者已拒絕安裝提示"
             }
           }
         }
@@ -50609,7 +50609,7 @@ export const translations: Record<Language, Translations> = {
                       bookings: {
                         and: {
                           proof: {
-                            of: "有効なパスポート、ビザ申請書、写真、旅行日程、ホテル予約、および財政証明"
+                            of: "有效護照、簽證申請表、照片、旅行行程、飯店預訂及財力證明"
                           }
                         }
                       }
@@ -50624,13 +50624,13 @@ export const translations: Record<Language, Translations> = {
       verify: {
         identity: {
           with: {
-            passport: "パスポートで身元を確認する"
+            passport: "以護照確認身分"
           }
         }
       },
       visa: {
         overstay: {
-          warning: "ビザのオーバーステイ警告"
+          warning: "簽證逾期警告"
         },
         requirements: {
           application: {
@@ -50640,7 +50640,7 @@ export const translations: Record<Language, Translations> = {
                   documents: {
                     for: {
                       entering: {
-                        china: "中国入国に必要なビザ要件、申請プロセス、および必須書類"
+                        china: "中國入境簽證要求、申請流程及必要文件"
                       }
                     }
                   }
@@ -50649,7 +50649,7 @@ export const translations: Record<Language, Translations> = {
             }
           },
           by: {
-            country: "国別のビザ要件"
+            country: "各國簽證要求"
           }
         }
       },
@@ -50659,7 +50659,7 @@ export const translations: Record<Language, Translations> = {
             error: {
               loading: {
                 this: {
-                  content: "このコンテンツの読み込み中にエラーが発生しました"
+                  content: "載入此內容時發生錯誤"
                 }
               }
             }
@@ -50670,7 +50670,7 @@ export const translations: Record<Language, Translations> = {
         lake: {
           fish: {
             in: {
-              vinegar: "西湖酢漬けの魚"
+              vinegar: "西湖醋魚"
             }
           }
         }
@@ -50681,7 +50681,7 @@ export const translations: Record<Language, Translations> = {
             i: {
               use: {
                 in: {
-                  china: "中国ではどのATMを使えばいいですか？"
+                  china: "在中國應該使用哪台 ATM？"
                 }
               }
             }
@@ -50694,7 +50694,7 @@ export const translations: Record<Language, Translations> = {
                 know: {
                   before: {
                     visiting: {
-                      china: "中国訪問前に知っておくべき文化的エチケットは何ですか？"
+                      china: "訪問中國前應了解哪些文化禮儀？"
                     }
                   }
                 }
@@ -50709,7 +50709,7 @@ export const translations: Record<Language, Translations> = {
                 are: {
                   available: {
                     in: {
-                      china: "中国ではどのような緊急電話番号とサービスが利用できますか？"
+                      china: "中國有哪些緊急電話號碼和服務？"
                     }
                   }
                 }
@@ -50730,7 +50730,7 @@ export const translations: Record<Language, Translations> = {
                             a: {
                               visa: {
                                 on: {
-                                  arrival: "中国訪問にはどのようなビザが必要ですか？到着時にビザを取得できますか？"
+                                  arrival: "訪問中國需要什麼簽證？可以落地簽嗎？"
                                 }
                               }
                             }
@@ -50752,7 +50752,7 @@ export const translations: Record<Language, Translations> = {
               to: {
                 go: {
                   in: {
-                    china: "中国でどこに行きたいですか？"
+                    china: "您想去中國的哪裡？"
                   }
                 }
               }
@@ -50761,12 +50761,12 @@ export const translations: Record<Language, Translations> = {
         },
         is: {
           the: {
-            embassy: "大使館はどこですか？",
-            hospital: "病院はどこですか？",
+            embassy: "大使館在哪裡？",
+            hospital: "醫院在哪裡？",
             police: {
-              station: "警察署はどこですか？"
+              station: "警察局在哪裡？"
             },
-            restroom: "トイレはどこですか？"
+            restroom: "洗手間在哪裡？"
           }
         }
       },
@@ -50826,7 +50826,7 @@ export const translations: Record<Language, Translations> = {
                       that: {
                         wasn: {
                           t: {
-                            saved: "前回のセッションで保存されなかった会話があります"
+                            saved: "上次會話有未儲存的對話"
                           }
                         }
                       }
@@ -50846,7 +50846,7 @@ export const translations: Record<Language, Translations> = {
                     upgrading: {
                       for: {
                         more: {
-                          requests: "月間制限に近づいています。より多くのリクエストにはアップグレードをご検討ください"
+                          requests: "接近每月限制。如需更多請求，請考慮升級"
                         }
                       }
                     }
@@ -50882,7 +50882,7 @@ export const translations: Record<Language, Translations> = {
                 }
               },
               highest: {
-                plan: "あなたは最高のプランをご利用中です！"
+                plan: "您正在使用最佳方案！"
               }
             }
           }
@@ -50894,7 +50894,7 @@ export const translations: Record<Language, Translations> = {
                 limit: {
                   upgrade: {
                     to: {
-                      continue: "月間制限に達しました。アップグレードして続行してください"
+                      continue: "已達每月限制。請升級以繼續"
                     }
                   }
                 }
@@ -50907,7 +50907,7 @@ export const translations: Record<Language, Translations> = {
         personal: {
           china: {
             travel: {
-              intelligence: "あなたの個人的な中国旅行情報"
+              intelligence: "您的個人中國旅遊資訊"
             }
           }
         },
@@ -50915,7 +50915,7 @@ export const translations: Record<Language, Translations> = {
           includes: {
             unlimited: {
               ai: {
-                requests: "あなたのプランには無制限のAIリクエストが含まれています"
+                requests: "您的方案包含無限 AI 請求"
               }
             }
           }
@@ -50923,8 +50923,8 @@ export const translations: Record<Language, Translations> = {
       }
     },
     home: {
-      chatWithAI: "与 AI 對話",
-      citiesSubtitle: "從古都到現代都市，通过我们詳盡的指南發現中國最美的城市。",
+      chatWithAI: "與 AI 對話",
+      citiesSubtitle: "從古都到現代都市，透過我們詳盡的指南發現中國最美的城市。",
       citiesTitle: "探索我們的城市",
       clearHistory: "Clear history",
       ctaSubtitle: "用 AI 推薦開始規劃你的旅程。",
@@ -50941,11 +50941,11 @@ export const translations: Record<Language, Translations> = {
       featuresTitle: "中國之旅，你所需的一切",
       heroBadge: "AI-powered travel guide for China",
       heroCTA: "向 AI 詢問行程建議",
-      heroDesc: "米其林·黑珍珠餐廳、景區、交通貼士、緊急聯絡資訊 — 全部由 AI 与本地人精心整理。",
+      heroDesc: "米其林·黑珍珠餐廳、景區、交通貼士、緊急聯絡資訊 — 全部由 AI 與在地人精心整理。",
       heroSubtitle: "可信賴的中國最佳城市嚮導",
       heroTitle: "你的 AI 驅動中國指南",
       noRecentViews: "No recent views yet.",
-      onboarding1Desc: "在 12 座中國城市找到米其林星級与黑珍珠餐廳。",
+      onboarding1Desc: "在 12 座中國城市找到米其林星級與黑珍珠餐廳。",
       onboarding1Title: "發現精彩美食",
       onboarding2Title: "AI 智能贴士",
       onboarding3Title: "安心旅行",
@@ -50953,7 +50953,7 @@ export const translations: Record<Language, Translations> = {
       onboardingNext: "下一步",
       onboardingSkip: "跳過",
       pageDescription: "透過AI驅動的城市指南探索中國。在北京、上海、廣州、西安、成都等中國主要城市中探索最佳餐廳（米其林及黑珍珠）、景點、交通資訊和緊急聯絡方式。",
-      pageTitle: "ChinaConnect - 你的 AI 中国探索指南",
+      pageTitle: "ChinaConnect - 你的 AI 中國探索指南",
       popularCities: "Popular Cities",
       popularCitiesSubtitle: "Explore the most-loved destinations in China",
       popularRestaurants: "Popular Restaurants",
@@ -50972,16 +50972,16 @@ export const translations: Record<Language, Translations> = {
       featuredDestinations: "根據熱門目的地推薦"
     },
     invitationLetter: {
-      allowPopups: "印刷のためにポップアップを許可してください",
-      bilingual: "バイリンガル",
-      downloadPdf: "PDFをダウンロード",
+      allowPopups: "請允許彈出視窗以進行列印",
+      bilingual: "雙語",
+      downloadPdf: "下載 PDF",
       edit: "編集",
       english: "英語",
       generating: "生成中...",
-      pdfFailed: "PDF生成に失敗しました：",
-      pdfFailedRetry: "PDF生成に失敗しました。もう一度お試しください。",
+      pdfFailed: "PDF 產生失敗：",
+      pdfFailedRetry: "PDF 產生失敗。請重試。",
       png: "PNG",
-      preview: "プレビュー"
+      preview: "預覽"
     },
     language: {
       chinese: "中文",
@@ -50989,8 +50989,8 @@ export const translations: Record<Language, Translations> = {
       current: "目前",
       dir: "ltr",
       english: "英語",
-      name: "中文（简体）",
-      nativeName: "简体中文",
+      name: "中文（繁體）",
+      nativeName: "繁體中文",
       switchTo: "切換到"
     },
     loginPage: {
@@ -51074,40 +51074,40 @@ export const translations: Record<Language, Translations> = {
     },
     onboarding: {
       done: "完成",
-      getStarted: "开始使用",
+      getStarted: "開始使用",
       neverShow: "Don't show this again",
       next: "下一步",
       skip: "跳過",
-      step1Desc: "在 12 座中國城市找到米其林星級与黑珍珠餐廳。",
+      step1Desc: "在 12 座中國城市找到米其林星級與黑珍珠餐廳。",
       step1Title: "發現精彩美食",
-      step2Desc: "从我们的 AI 助手获取个性化推荐与本地人才知道的贴士。",
+      step2Desc: "從我們的 AI 助手取得個人化推薦與在地人才知道的貼士。",
       step2Title: "AI 智能贴士",
-      step3Desc: "集中存取緊急聯絡、交通信息与文化貼士。",
+      step3Desc: "集中存取緊急聯絡、交通資訊與文化貼士。",
       step3Title: "安心旅行",
       welcome: "欢迎使用 ChinaConnect！"
     },
     paymentGuide: {
-      atmHeading: "国際カードに強いATM",
-      atmTip1: "空港や銀行のATMが最良の為替レートです",
-      atmTip2: "国際的な引き出し手数料について銀行に確認してください",
-      atmTip3: "一部のATMは外国カードの引き出しを制限します（最大2000元）",
-      atmTip4: "銀行内のATMを使うとより安全です",
-      faqsHeading: "よくある質問",
-      securityWarning: "セキュリティ警告",
+      atmHeading: "國際卡友善 ATM",
+      atmTip1: "機場或銀行 ATM 匯率最佳",
+      atmTip2: "請向銀行確認國際提款手續費",
+      atmTip3: "部分 ATM 限制外國卡提款（最高 2000 元）",
+      atmTip4: "使用銀行內的 ATM 較安全",
+      faqsHeading: "常見問題",
+      securityWarning: "安全警告",
       setupHeading: "設定方法",
       tabAlipay: "Alipay",
       tabAtm: "ATM",
-      tabCash: "現金・カード",
-      tabFaq: "よくある質問",
+      tabCash: "現金・信用卡",
+      tabFaq: "常見問題",
       tabTax: "税還付",
       tabWechat: "WeChat Pay",
-      taxTip1: "セキュリティチェック前に空港出発ロビーで行ってください",
-      taxTip2: "対象店舗での最低購入額は500元",
-      taxTip3: "還付率：品目カテゴリーにより3-11%",
-      taxTip4: "税還付マーク付きの発注書を保管してください"
+      taxTip1: "請於安檢前在機場出境大廳辦理",
+      taxTip2: "指定商店最低消費 500 元",
+      taxTip3: "退稅率：依商品類別 3-11%",
+      taxTip4: "請保留有退稅標誌的發票"
     },
     priceTransparency: {
-      all: "すべて",
+      all: "全部",
       showComparison: "比較表示",
       showSimplified: "簡略表示"
     },
@@ -51264,7 +51264,7 @@ export const translations: Record<Language, Translations> = {
       trustCancelAnytime: "隨時取消",
       trustInstantAccess: "即時訪問",
       trustSecurePayments: "安全支付",
-      trustedBy: "全球旅客信�",
+      trustedBy: "全球旅客信賴",
       unlimited: "無限"
     },
     profilePage: {
@@ -51279,9 +51279,9 @@ export const translations: Record<Language, Translations> = {
     },
     recents: {
       clearAll: "清空",
-      clearHistory: "清空历史",
+      clearHistory: "清除歷史紀錄",
       empty: "暂无最近瀏覽",
-      forYou: "因为你存取过 {city}",
+      forYou: "因為您存取過 {city}",
       recentlyViewed: "最近瀏覽",
       recommended: "為你推薦",
       title: "最近瀏覽"
@@ -51334,7 +51334,7 @@ export const translations: Record<Language, Translations> = {
       blackPearl: "黑珍珠",
       cuisine: "菜系",
       dishes: "招牌菜",
-      hours: "营业时间",
+      hours: "營業時間",
       local: "本地最愛",
       michelin: "米其林",
       rating: "评分",
@@ -51343,7 +51343,7 @@ export const translations: Record<Language, Translations> = {
       title: "餐廳"
     },
     scamPrevention: {
-      all: "すべて"
+      all: "全部"
     },
     scenicSpots: {
       allSpots: "All Scenic Spots",
@@ -51368,28 +51368,28 @@ export const translations: Record<Language, Translations> = {
       shareTip: "分享给朋友"
     },
     transportGuide: {
-      airportWifi: "空港WiFiが利用可能な場合が多い — SIM購入前に接続を",
-      arrivalByPlane: "飛行機で",
-      arrivalByTrain: "電車で",
-      arrivalTip: "入国カードは大切に保管してください — 入管審査で必要になります",
-      bookingPlatforms: "予約プラットフォーム",
-      didiTip: "空港送迎にはDidiアプリが便利 — タクシーキューより安い",
-      howToUse: "使い方：",
-      proTips: "プロのヒント：",
-      seatClasses: "シートクラス",
-      selectMode: "交通手段を選択",
-      selectModeHint: "交通手段を選択してください",
+      airportWifi: "機場 Wi-Fi 通常可用 — 購買 SIM 卡前請先連線",
+      arrivalByPlane: "飛機",
+      arrivalByTrain: "火車",
+      arrivalTip: "請妥善保管入境卡 — 入境審查時需要",
+      bookingPlatforms: "預訂平台",
+      didiTip: "機場接送可使用滴滴 App — 比排隊等計程車便宜",
+      howToUse: "使用方式：",
+      proTips: "專業小訣竅：",
+      seatClasses: "座位等級",
+      selectMode: "選擇交通方式",
+      selectModeHint: "請選擇交通方式",
       tabArrival: "到着",
       tabDistances: "距離",
       tabIntercity: "都市間",
-      tabLocal: "市内の交通",
-      tabPhrases: "フレーズ集",
-      tabTaxi: "タクシー/Didi",
+      tabLocal: "市內交通",
+      tabPhrases: "常用語手冊",
+      tabTaxi: "計程車/滴滴",
       tabTrains: "鉄道予約",
-      taxiPhrases: "タクシー便利フレーズ",
-      trainBookingTips: "鉄道予約のコツ",
+      taxiPhrases: "計程車實用語句",
+      trainBookingTips: "鐵路預訂小訣竅",
       tripCta: "Trip.com / Ctrip",
-      usefulPhrases: "交通便利フレーズ"
+      usefulPhrases: "交通實用語句"
     },
     userPage: {
       heading: "個人檔案",
@@ -51397,34 +51397,34 @@ export const translations: Record<Language, Translations> = {
       title: "用户资料 - ChinaConnect"
     },
     visaPage: {
-      appsHeading: "必須アプリ",
-      appsSubtitle: "到着前にダウンロード — Google Playは中国で利用不可",
-      beforeBuying: "購入前に",
-      digitalCopiesDesc: "デジタルコピーをクラウド（Google Drive、iCloud）に保管し、家族と共有。原本とは別に物理コピーを保管してください。",
+      appsHeading: "必備 App",
+      appsSubtitle: "抵達前下載 — Google Play 在中國無法使用",
+      beforeBuying: "購買前",
+      digitalCopiesDesc: "將數位副本儲存在雲端（Google Drive、iCloud），並與家人分享。另保留實體副本，與正本分開存放。",
       duration: "滞在期間：",
-      faqHeading: "よくある質問",
+      faqHeading: "常見問題",
       fee: "料金：",
       finalPreparations: "最終準備",
-      flightHeading: "フライト予約のコツ",
-      importantReminder: "重要なお知らせ",
+      flightHeading: "航班預訂小訣竅",
+      importantReminder: "重要通知",
       insuranceDesc: "Medical treatment in China can be expensive, especially for foreigners. A good travel insurance policy with medical coverage is non-negotiable for safe travel.",
-      insuranceHeading: "旅行保険は必須",
-      insuranceTipsHeading: "保険選びのポイント",
-      overstayWarning: "ビザオーバーステイ警告",
+      insuranceHeading: "旅遊保險是必需的",
+      insuranceTipsHeading: "保險選擇要點",
+      overstayWarning: "簽證逾期警告",
       processing: "処理期間：",
-      recommendedProviders: "おすすめプロバイダー",
-      reqHeading: "国別ビザ要件",
-      reqSubtitle: "国を選択して具体的な要件を確認",
+      recommendedProviders: "推薦供應商",
+      reqHeading: "各國簽證要求",
+      reqSubtitle: "選擇國家以查看具體要求",
       requirements: "必要書類：",
-      tabApps: "アプリ・VPN",
+      tabApps: "App・VPN",
       tabChecklist: "出発前",
       tabDocuments: "必要書類",
       tabInsurance: "保険",
       tabOverview: "概要",
-      tabProcess: "手続き",
-      tabTips: "コツ・よくある質問",
-      weeksBefore: "出発までの週数（4-6週間前）",
-      weeksBeforeDesc: "出発の4-6週間前に完了してください"
+      tabProcess: "流程",
+      tabTips: "小訣竅・常見問題",
+      weeksBefore: "出發前數週（4-6 週前）",
+      weeksBeforeDesc: "請於出發前 4-6 週完成"
     }
   },
 };
