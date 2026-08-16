@@ -176,9 +176,10 @@ const EMBASSIES: Embassy[] = [
 interface EmbassyLocatorProps {
   className?: string;
   showAll?: boolean;
+  lang?: string;
 }
 
-export function EmbassyLocator({ className = "", showAll = false }: EmbassyLocatorProps) {
+export function EmbassyLocator({ className = "", showAll = false, lang = "en" }: EmbassyLocatorProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedEmbassy, setSelectedEmbassy] = useState<Embassy | null>(null);
 
@@ -279,7 +280,7 @@ export function EmbassyLocator({ className = "", showAll = false }: EmbassyLocat
                     <div className="mt-3 space-y-2">
                       <div className="text-sm">
                         <div className="text-gray-500 text-xs">Address</div>
-                        <div>{embassy.addressCn}</div>
+                {lang !== "en" && <div>{embassy.addressCn}</div>}
                         <div className="text-gray-500">{embassy.address}</div>
                       </div>
                       <div className="text-sm">
@@ -335,7 +336,7 @@ export function EmbassyLocator({ className = "", showAll = false }: EmbassyLocat
             <div className="p-6 space-y-4">
               <div>
                 <div className="text-sm text-gray-500 mb-1">Address</div>
-                <div className="font-medium">{selectedEmbassy.addressCn}</div>
+              {lang !== "en" && <div className="font-medium">{selectedEmbassy.addressCn}</div>}
                 <div className="text-sm text-gray-600">{selectedEmbassy.address}</div>
               </div>
 

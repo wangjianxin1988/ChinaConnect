@@ -14,7 +14,7 @@ LOG_PATH = os.path.join(ROOT, ".audit", "guide-full-chain.log")
 STATE_PATH = os.path.join(ROOT, ".audit", "guide-full-chain-state.json")
 
 GUIDE_LANGS = ["ko", "zh-CN", "zh-TW", "th", "vi", "ru", "fr", "de", "ar", "fa"]
-MAX_FAILURES = 4
+MAX_FAILURES = 2
 SLEEP = 30
 
 def log(msg):
@@ -28,7 +28,7 @@ def quality(lang, kind):
     try:
         r = subprocess.run(
             ["node", ".audit/check-guide-quality.mjs", lang, kind],
-            capture_output=True, text=True, timeout=60,
+            capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=60,
         )
         if r.returncode != 0:
             return 999, 999
@@ -75,7 +75,7 @@ def main():
             state = json.load(open(STATE_PATH, encoding="utf-8"))
         except Exception:
             pass
-    done = set(state.get("done", []))
+    done = {tuple(x.split(":", 1)) for x in state.get("done", [])}
     queue = [(k, l) for k in ("guide", "apps") for l in GUIDE_LANGS]
     queue = [t for t in queue if t not in done]
     i = 0
@@ -107,6 +107,19 @@ def main():
             failures.pop(key, None)
         else:
             log(f"  {key} GAVE UP after {MAX_FAILURES} attempts (manual review)")
+            try:
+                rr = subprocess.run(
+                    ["node", ".audit/check-guide-quality.mjs", lang, kind, "--keys"],
+                    capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=60,
+                )
+                if rr.returncode == 0:
+                    import json as _json
+                    res = _json.loads(rr.stdout.strip())
+                    respath = os.path.join(ROOT, ".audit", f"guide-residue-{kind}-{lang}.json")
+                    _json.dump(res, open(respath, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+                    log(f"  {key} residue dumped -> {respath}")
+            except Exception:
+                pass
             done.add((kind, lang))  # move on; manual review later
         state["done"] = sorted([f"{k}:{l}" for k, l in done])
         state["inflight"] = None

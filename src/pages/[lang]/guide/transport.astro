@@ -12,6 +12,7 @@ import TransportGuideClient from "@/components/Guide/TransportGuideClient";
 import EmbeddedAppRecommendation from "@/components/apps/EmbeddedAppRecommendation";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { translations } from "@/i18n/translations";
+import { ct } from "@/i18n/components-strings";
 import { generateBreadcrumbSchema, generateHowToSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
 import { getLangFromUrl } from '@/i18n/utils';
 
@@ -92,8 +93,8 @@ const transportSchemas = [
         client:visible
         lang={lang}
         categories={["transport", "maps"]}
-        title={lang === "ja" ? "交通・ナビゲーションアプリ" : "Transport & Navigation Apps"}
-        subtitle={lang === "ja" ? "中国国内の移動に必須のアプリ" : "Essential apps for getting around China"}
+        title={ct(lang, "appsec_transport_title", "Transport & Navigation Apps")}
+        subtitle={ct(lang, "appsec_transport_subtitle", "Essential apps for getting around China")}
       />
     </section>
   </main>

@@ -17,6 +17,17 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import { generateBreadcrumbSchema, generateCollectionPageSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
 
 const lang = (Astro.params.lang as string) || "en";
+const t = translations[lang] || translations.en;
+// Category filter labels for the client-side filter bar (12-language safe, English fallback)
+const foodFilterLabels = {
+  filterAll: t.foodPage?.filterAll || translations.en.foodPage?.filterAll || "All",
+  filterLocal: t.foodPage?.filterLocal || translations.en.foodPage?.filterLocal || "Local",
+  filterMichelin: t.foodPage?.filterMichelin || translations.en.foodPage?.filterMichelin || "Michelin",
+  filterBlackPearl: t.foodPage?.filterBlackPearl || translations.en.foodPage?.filterBlackPearl || "Black Pearl",
+  filterBudget: t.foodPage?.filterBudget || translations.en.foodPage?.filterBudget || "Budget",
+  filterStreetFood: t.foodPage?.filterStreetFood || translations.en.foodPage?.filterStreetFood || "Street Food",
+};
+const filteringLabel = t.foodPage?.filteringLabel || translations.en.foodPage?.filteringLabel || "Filtering:";
 const cityNameFor = (slug: string): string =>
   (lang === "en" ? null : getCityData(slug, lang)?.name) || citiesMeta.find((m) => m.slug === slug)?.nameEn || slug;
 const showTitleCn = lang === 'zh-CN' || lang === 'zh-TW';
@@ -315,6 +326,11 @@ const foodSchemas = [
     </section>
   </main>
 
+  <script is:inline define:vars={{ foodFilterLabels, filteringLabel }}>
+    window.__FOOD_FILTER_LABELS__ = foodFilterLabels;
+    window.__FOOD_FILTERING_LABEL__ = filteringLabel;
+  </script>
+
   <script>
     // Client-side category filtering for food listing page
     (function() {
@@ -325,12 +341,12 @@ const foodSchemas = [
       const emptyState = document.getElementById('empty-state');
 
       const categoryMeta: Record<string, { icon: string; labelKey: string; colorClass: string }> = {
-        'all': { icon: '🍽️', labelKey: 'foodPage.filter全部', colorClass: 'bg-gray-50 border-gray-200 text-gray-700' },
-        'local_recommend': { icon: '❤️', labelKey: 'foodPage.filter本地人推荐', colorClass: 'bg-red-50 border-red-200 text-red-700' },
-        'michelin': { icon: '⭐', labelKey: 'foodPage.filter米其林', colorClass: 'bg-amber-50 border-amber-200 text-amber-700' },
-        'blackpearl': { icon: '💎', labelKey: 'foodPage.filter黑珍珠', colorClass: 'bg-slate-800 border-slate-600 text-slate-200' },
-        'affordable': { icon: '💙', labelKey: 'foodPage.filter平价美食', colorClass: 'bg-blue-50 border-blue-200 text-blue-700' },
-        'street_food': { icon: '🔥', labelKey: 'foodPage.filter苍蝇馆子', colorClass: 'bg-orange-50 border-orange-200 text-orange-700' },
+        'all': { icon: '🍽️', labelKey: 'filterAll', colorClass: 'bg-gray-50 border-gray-200 text-gray-700' },
+        'local_recommend': { icon: '❤️', labelKey: 'filterLocal', colorClass: 'bg-red-50 border-red-200 text-red-700' },
+        'michelin': { icon: '⭐', labelKey: 'filterMichelin', colorClass: 'bg-amber-50 border-amber-200 text-amber-700' },
+        'blackpearl': { icon: '💎', labelKey: 'filterBlackPearl', colorClass: 'bg-slate-800 border-slate-600 text-slate-200' },
+        'affordable': { icon: '💙', labelKey: 'filterBudget', colorClass: 'bg-blue-50 border-blue-200 text-blue-700' },
+        'street_food': { icon: '🔥', labelKey: 'filterStreetFood', colorClass: 'bg-orange-50 border-orange-200 text-orange-700' },
       };
 
       // Map category id to data-attribute name
@@ -382,7 +398,8 @@ const foodSchemas = [
           } else {
             const meta = categoryMeta[category];
             if (meta) {
-              filterInfo.innerHTML = ` <span data-i18n="foodPage.filteringLabel">Filtering:</span> <span class="font-medium text-orange-600">${meta.icon} ${meta.labelKey}</span>`;
+              const label = (window.__FOOD_FILTER_LABELS__ && window.__FOOD_FILTER_LABELS__[meta.labelKey]) || meta.labelKey;
+              filterInfo.innerHTML = ` <span>${window.__FOOD_FILTERING_LABEL__ || "Filtering:"}</span> <span class="font-medium text-orange-600">${meta.icon} ${label}</span>`;
             }
           }
         }

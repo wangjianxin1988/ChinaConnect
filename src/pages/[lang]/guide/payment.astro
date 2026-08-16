@@ -12,6 +12,7 @@ import PaymentGuideClient from "@/components/Guide/PaymentGuideClient";
 import EmbeddedAppRecommendation from "@/components/apps/EmbeddedAppRecommendation";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { translations } from "@/i18n/translations";
+import { ct } from "@/i18n/components-strings";
 import { generateBreadcrumbSchema, generateFAQSchema, generateHowToSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
 import { getLangFromUrl } from '@/i18n/utils';
 
@@ -114,8 +115,8 @@ const paymentSchemas = [
         client:visible
         lang={lang}
         categories={["payment"]}
-        title={lang === "ja" ? "おすすめ決済アプリ" : "Payment Apps You Need"}
-        subtitle={lang === "ja" ? "中国に到着する前にダウンロードして設定しておきましょう" : "Download and set up these apps before arriving in China"}
+    title={ct(lang, "appsec_pay_title", "Payment Apps You Need")}
+    subtitle={ct(lang, "appsec_pay_subtitle", "Download and set up these apps before arriving in China")}
         essentialOnly={true}
       />
     </section>

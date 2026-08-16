@@ -242,6 +242,15 @@ const _lookup = (key, vars) => {
   if (typeof cur !== 'string') return key;
   return cur.replace(/\{(\w+)\}/g, (m, k) => (vars && k in vars ? String(vars[k]) : ''));
 };
+const HOTEL_CAT_LABELS: Record<string, Record<string, string>> = {
+  luxury: { en: "Luxury", ja: "ラグジュアリー", ko: "럭셔리", "zh-CN": "豪华", "zh-TW": "豪華", th: "หรูหรา", vi: "Sang trọng", ru: "Люкс", fr: "Luxe", de: "Luxus", ar: "فاخر", fa: "لاکچری" },
+  mid_range: { en: "Mid-Range", ja: "ミッドレンジ", ko: "중급", "zh-CN": "中端", "zh-TW": "中價位", th: "ระดับกลาง", vi: "Tầm trung", ru: "Средний", fr: "Milieu de gamme", de: "Mittelklasse", ar: "متوسط", fa: "متوسط" },
+  budget: { en: "Budget", ja: "バジェット", ko: "예산", "zh-CN": "经济", "zh-TW": "經濟", th: "ประหยัด", vi: "Bình dân", ru: "Бюджетный", fr: "Économique", de: "Budget", ar: "اقتصادي", fa: "اقتصادی" },
+  hostel: { en: "Hostel", ja: "ホステル", ko: "호스텔", "zh-CN": "青年旅舍", "zh-TW": "青年旅館", th: "โฮสเทล", vi: "Nhà nghỉ", ru: "Хостел", fr: "Auberge", de: "Hostel", ar: "نزل شبابي", fa: "هاستل" },
+  love_hotel: { en: "Love Hotel", ja: "ラブホテル", ko: "러브호텔", "zh-CN": "情趣酒店", "zh-TW": "情趣旅館", th: "เลิฟโฮเทล", vi: "Khách sạn tình nhân", ru: "Love-отель", fr: "Love hotel", de: "Love Hotel", ar: "فندق رومانسي", fa: "هتل عاشقانه" },
+  esports_hotel: { en: "Esports", ja: "eスポーツ", ko: "e스포츠", "zh-CN": "电竞酒店", "zh-TW": "電競旅館", th: "อีสปอร์ต", vi: "Esports", ru: "Киберспорт", fr: "Esport", de: "Esports", ar: "رياضات إلكترونية", fa: "ایاسپرت" },
+};
+const hotelCatLabel = (key: string) => HOTEL_CAT_LABELS[key]?.[lang] || HOTEL_CAT_LABELS[key]?.en || key;
 const modules = [
   { id: "overview", label: () => _lookup('cityPage.tabOverview'), icon: "📍", colorClass: "bg-blue-50 text-blue-700 hover:bg-blue-100" },
   { id: "food-highlights", label: () => _lookup('cityPage.tabFood'), icon: "🍜", colorClass: "bg-orange-50 text-orange-700 hover:bg-orange-100" },
@@ -712,7 +721,7 @@ const mapMarkers = [
           <h2 class="section-title flex items-center gap-3">
             <span class="text-2xl">🏨</span> <span data-i18n="cityPage.sectionHotels" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.sectionHotels")}</span>
           </h2>
-          <p class="section-subtitle">{isJapanese ? `${totalHotelCount}軒の選りすぐりホテルを6つのカテゴリーから` : `Browse ${totalHotelCount} vetted hotels across 6 categories in ${city.nameEn}`}</p>
+          <p class="section-subtitle">{_lookup("cityHotels.countSubtitle", { count: String(totalHotelCount) })}</p>
 
           {/* Hotel category entry cards ¡ª each card links to the dedicated
               /city/[slug]/hotels?category=... page with a working filter.
@@ -720,12 +729,12 @@ const mapMarkers = [
               entry point. */}
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mt-6">
             {[
-              { key: "luxury", label: lang === "ja" ? "ラグジュアリー" : "豪华", labelEn: "Luxury", icon: "🏨", colorClass: "border-purple-200 hover:border-purple-400", textClass: "text-purple-700" },
-              { key: "mid_range", label: lang === "ja" ? "ミッドレンジ" : "中端", labelEn: "Mid-Range", icon: "👔", colorClass: "border-blue-200 hover:border-blue-400", textClass: "text-blue-700" },
-              { key: "budget", label: lang === "ja" ? "バジェット" : "经济", labelEn: "Budget", icon: "💰", colorClass: "border-green-200 hover:border-green-400", textClass: "text-green-700" },
-              { key: "hostel", label: lang === "ja" ? "ホステル" : "青年旅舍", labelEn: "Hostel", icon: "🛏", colorClass: "border-amber-200 hover:border-amber-400", textClass: "text-amber-700" },
-              { key: "love_hotel", label: lang === "ja" ? "ラブホテル" : "情趣", labelEn: "Love Hotel", icon: "💋", colorClass: "border-pink-200 hover:border-pink-400", textClass: "text-pink-700" },
-              { key: "esports_hotel", label: lang === "ja" ? "eスポーツ" : "电竞", labelEn: "Esports", icon: "🎮", colorClass: "border-indigo-200 hover:border-indigo-400", textClass: "text-indigo-700" },
+              { key: "luxury", icon: "🏨", colorClass: "border-purple-200 hover:border-purple-400", textClass: "text-purple-700" },
+              { key: "mid_range", icon: "👔", colorClass: "border-blue-200 hover:border-blue-400", textClass: "text-blue-700" },
+              { key: "budget", icon: "💰", colorClass: "border-green-200 hover:border-green-400", textClass: "text-green-700" },
+              { key: "hostel", icon: "🛏", colorClass: "border-amber-200 hover:border-amber-400", textClass: "text-amber-700" },
+              { key: "love_hotel", icon: "💋", colorClass: "border-pink-200 hover:border-pink-400", textClass: "text-pink-700" },
+              { key: "esports_hotel", icon: "🎮", colorClass: "border-indigo-200 hover:border-indigo-400", textClass: "text-indigo-700" },
             ].map(cat => {
               const count = (hotelCategoryCounts as any)[cat.key] || 0;
               return (
@@ -735,9 +744,9 @@ const mapMarkers = [
                   data-category={cat.key}
                 >
                   <span class="text-3xl group-hover:scale-110 transition-transform">{cat.icon}</span>
-                  <span class="text-sm font-semibold text-gray-800">{lang === "ja" ? cat.label : cat.labelEn || cat.label}</span>
+                  <span class="text-sm font-semibold text-gray-800">{hotelCatLabel(cat.key)}</span>
                   <span class={`text-xs ${cat.textClass} font-bold`}><span>{count}</span> <span data-i18n="cityPage.hotelsCountUnit" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.hotelsCountUnit", { count: totalHotelCount })}</span></span>
-                  <span class="text-[10px] text-gray-400 uppercase tracking-wide">{lang === "ja" ? cat.label : cat.labelEn}</span>
+                  <span class="text-[10px] text-gray-400 uppercase tracking-wide">{hotelCatLabel(cat.key)}</span>
                 </a>
               );
             })}
@@ -762,7 +771,7 @@ const mapMarkers = [
           <h2 class="section-title flex items-center gap-3">
             <span class="text-2xl">💳</span> <span data-i18n="cityPage.sectionPayment" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.sectionPayment")}</span>
           </h2>
-          <p class="section-subtitle">{isJapanese ? `${localCityName}での支払い方法` : `How to pay in ${city.nameEn}`}</p>
+          <p class="section-subtitle">{_lookup("cityPage.paymentHowSubtitle")}</p>
 
           <div class="space-y-6">
             {city.payment.map(method => (
@@ -831,7 +840,7 @@ const mapMarkers = [
           <div class="space-y-4">
             <div class="bg-white border rounded-xl p-6">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-                <span>📶</span> <span data-i18n="cityPage.esimRecommended">eSIM（推奨）</span>
+                <span>📶</span> <span data-i18n="cityPage.esimRecommended">{_lookup("cityPage.esimRecommended")}</span>
               </h3>
               <p class="text-gray-600 mb-4" data-i18n="cityPage.esimDescription">{_lookup("cityPage.esimDescription")}</p>
               <InlineAppPillsGroup
@@ -876,7 +885,7 @@ const mapMarkers = [
             <span class="text-2xl">🎎</span> <span data-i18n="cityPage.sectionCulture" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.sectionCulture")}</span>
             <span class="text-sm font-normal text-gray-500 ml-2">({city.culturalTips.length} {ct(lang, "unit_tips", "tips")})</span>
           </h2>
-          <p class="section-subtitle">{isJapanese ? `${localCityName}で必要な文化知識` : `Essential cultural knowledge for ${city.nameEn}`}</p>
+          <p class="section-subtitle">{_lookup("cityPage.cultureSubtitleDynamic")}</p>
 
           <CulturalSection culturalTips={city.culturalTips} lang={lang} client:visible />
         </section>
@@ -887,7 +896,7 @@ const mapMarkers = [
             <span class="text-2xl">🚨</span> <span data-i18n="cityPage.sectionEmergency" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.sectionEmergency")}</span>
             <span class="text-sm font-normal text-gray-500 ml-2">({city.emergencyContacts.length} {ct(lang, "unit_contacts", "contacts")})</span>
           </h2>
-          <p class="section-subtitle">{isJapanese ? `${localCityName}で必要な緊急電話番号` : `Important phone numbers in ${city.nameEn}`}</p>
+          <p class="section-subtitle">{_lookup("cityPage.emergencySubtitleDynamic")}</p>
 
           <EmergencySection contacts={city.emergencyContacts} city={city} lang={lang} client:visible />
         </section>

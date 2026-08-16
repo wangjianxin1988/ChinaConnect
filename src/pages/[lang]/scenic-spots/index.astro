@@ -10,6 +10,7 @@ import { getCityData } from "@/data/cities-i18n";
 import { citySlugs } from "@/data/cities/index";
 import { getLangFromUrl } from "@/i18n/utils";
 import { translations } from "@/i18n/translations";
+import { ct } from "@/i18n/components-strings";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import {
   generateBreadcrumbSchema,
@@ -18,7 +19,6 @@ import {
 } from "@/lib/seo/schema-org";
 
 const lang = (Astro.params.lang as string) || "en";
-const isJa = lang === "ja";
 const t = translations[lang] || translations.en;
 const pageTitle = (t.scenicSpots && t.scenicSpots.pageTitle) || (translations.en.scenicSpots && translations.en.scenicSpots.pageTitle) || "Scenic Spots - ChinaConnect";
 const pageDescription = (t.scenicSpots && t.scenicSpots.pageDescription) || (translations.en.scenicSpots && translations.en.scenicSpots.pageDescription) || "Explore China's most beautiful natural scenery and scenic spots - mountains, lakes, rivers, forests, and geological wonders across all provinces.";
@@ -113,15 +113,15 @@ const keywords = [
       <div class="flex flex-wrap gap-4 mt-4 text-sm text-gray-700">
         <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-green-50 text-green-700 rounded-full">
           <span>&#127796;</span>
-          <strong>{allScenic.length}</strong> {isJa ? "景勝地" : "scenic spots"}
+          <strong>{allScenic.length}</strong> {ct(lang, "scenic_unit_scenic", "scenic spots")}
         </span>
         <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-blue-50 text-blue-700 rounded-full">
           <span>&#127961;</span>
-          <strong>{citiesWithScenic.length}</strong> {isJa ? "都市" : "cities"}
+          <strong>{citiesWithScenic.length}</strong> {ct(lang, "scenic_unit_cities", "cities")}
         </span>
         <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-purple-50 text-purple-700 rounded-full">
           <span>&#127956;</span>
-          {isJa ? "山、湖、川、森林などの自然景観" : "Mountains, lakes, rivers, forests"}
+          {ct(lang, "scenic_nature_desc", "Mountains, lakes, rivers, forests")}
         </span>
       </div>
     </div>
@@ -139,7 +139,7 @@ const keywords = [
               {city.coverImage ? (
                 <img
                   src={city.coverImage}
-                  alt={`${city.nameEn} ${isJa ? "景勝地" : "scenic spots"}`}
+                  alt={`${city.nameEn} ${ct(lang, "scenic_unit_scenic", "scenic spots")}`}
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform"
                   loading="lazy"
                 />
@@ -149,7 +149,7 @@ const keywords = [
             </div>
             <div class="p-3">
               <p class="font-semibold text-gray-900 truncate">{city.nameEn}</p>
-              <p class="text-xs text-gray-500 mt-0.5">{city.count} {isJa ? "景勝地" : "scenic spots"}</p>
+              <p class="text-xs text-gray-500 mt-0.5">{city.count} {ct(lang, "scenic_unit_scenic", "scenic spots")}</p>
             </div>
           </a>
         ))}

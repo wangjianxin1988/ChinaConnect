@@ -43,6 +43,16 @@ const config = TYPE_CONFIG[restaurant.type];
 
 const showTitleCn = lang === "zh-CN" || lang === "zh-TW";
 
+// Full 12-language display dictionaries (proper nouns kept in native script)
+const TYPE_LABELS: Record<string, Record<string, string>> = {
+  michelin: { en: "Michelin", ja: "ミシュラン", ko: "미쉐린", "zh-CN": "米其林", "zh-TW": "米其林", th: "มิชลิน", vi: "Michelin", ru: "Мишлен", fr: "Michelin", de: "Michelin", ar: "ميشلان", fa: "میشلن" },
+  blackpearl: { en: "Black Pearl", ja: "ブラックパール", ko: "블랙 펄", "zh-CN": "黑珍珠", "zh-TW": "黑珍珠", th: "แบล็กเพิร์ล", vi: "Black Pearl", ru: "Чёрная жемчужина", fr: "Black Pearl", de: "Black Pearl", ar: "اللؤلؤة السوداء", fa: "مروارید سیاه" },
+  local: { en: "Local", ja: "地元のおすすめ", ko: "현지 추천", "zh-CN": "本地推荐", "zh-TW": "在地推薦", th: "ร้านท้องถิ่นแนะนำ", vi: "Địa phương", ru: "Местное", fr: "Local", de: "Lokal", ar: "محلي", fa: "محلی" },
+};
+const STAR_SUFFIX: Record<string, string> = { en: "-star", ja: "つ星", ko: "성급", "zh-CN": "星", "zh-TW": "星", th: "ดาว", vi: "sao", ru: " звезды", fr: " étoile", de: " Sterne", ar: " نجوم", fa: " ستاره" };
+const DIAMOND_SUFFIX: Record<string, string> = { en: " diamond", ja: "ダイヤ", ko: "다이아몬드", "zh-CN": "钻", "zh-TW": "鑽", th: "เพชร", vi: "kim cương", ru: " бриллиант", fr: " diamant", de: " Diamant", ar: " ألماسة", fa: " الماس" };
+const TITLE_SUFFIX: Record<string, string> = { en: "Food Recommendation", ja: "おすすめグルメ", ko: "추천 맛집", "zh-CN": "美食推荐", "zh-TW": "美食推薦", th: "ร้านอาหารแนะนำ", vi: "Ẩm thực gợi ý", ru: "Рекомендуемый ресторан", fr: "Restaurant recommandé", de: "Empfohlener Restaurantführer", ar: "مطعم موصى به", fa: "رستوران پیشنهادی" };
+
 const jaFood = (t: string | undefined): string =>
   lang === "ja" && t ? JA_FOOD_OVERRIDES[t] || t : (t || "");
 const enFood = (t: string | undefined): string =>
@@ -74,7 +84,7 @@ const restaurantDetail = {
 };
 ---
 
-<BaseLayout title={lang === "ja" ? `${jaFood(restaurant.name)} - おすすめグルメ` : showTitleCn ? `${restaurant.name} - 美食推荐` : `${restaurant.nameEn || restaurant.name} - Food Recommendation`}>
+<BaseLayout title={`${lang === "ja" ? jaFood(restaurant.name) : showTitleCn ? restaurant.name : restaurant.nameEn || restaurant.name} - ${TITLE_SUFFIX[lang] || TITLE_SUFFIX.en}`}>
   <div class="min-h-screen bg-gray-50">
     <!-- Header -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
@@ -85,9 +95,9 @@ const restaurantDetail = {
             <span data-i18n="foodPage.back">Back</span>
           </a>
           <span class={`text-sm font-medium ${config.color}`}>
-            {config.icon} {lang === "ja" ? config.labelJa : showTitleCn ? config.label : config.labelEn}
-            {restaurant.type === 'michelin' && restaurant.star && (lang === "ja" ? `${restaurant.star}つ星` : showTitleCn ? `${restaurant.star}星` : `${restaurant.star}-star`)}
-            {restaurant.type === 'blackpearl' && restaurant.diamond && (lang === "ja" ? `${restaurant.diamond}ダイヤ` : showTitleCn ? `${restaurant.diamond}钻` : `${restaurant.diamond}-diamond`)}
+            {config.icon} {TYPE_LABELS[restaurant.type]?.[lang] || config.labelEn}
+            {restaurant.type === 'michelin' && restaurant.star && `${restaurant.star}${STAR_SUFFIX[lang] || "-star"}`}
+            {restaurant.type === 'blackpearl' && restaurant.diamond && `${restaurant.diamond}${DIAMOND_SUFFIX[lang] || " diamond"}`}
           </span>
         </div>
       </div>

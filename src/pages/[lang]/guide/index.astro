@@ -7,6 +7,7 @@ export function getStaticPaths() {
 
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { translations } from "@/i18n/translations";
+import { ct } from "@/i18n/components-strings";
 import { getLangFromUrl } from "@/i18n/utils";
 
 const lang = (Astro.params.lang as string) || "en";
@@ -17,17 +18,7 @@ const pageDescription = (translations[lang] || translations.en).guidePage?.index
 const gp = (translations[lang] || translations.en).guidePage || translations.en.guidePage;
 const bgp = (translations[lang] || translations.en).businessGuidePage || translations.en.businessGuidePage;
 const learnMore = (translations[lang] || translations.en).common?.learnMore || "Learn More";
-const jaStageMap: Record<string, string> = {
-  "Stage 1": "第1段階",
-  "Stages 2 & 10": "第2・10段階",
-  "Stage 3": "第3段階",
-  "Stages 4-7": "第4〜7段階",
-  "Stage 8": "第8段階",
-  "Stage 9": "第9段階",
-  "Stage 11": "第11段階",
-  "Stage 12": "第12段階",
-};
-const stageLabel = (st: string) => (lang === "ja" ? jaStageMap[st] || st : st);
+const stageLabel = (st: string) => { const k = { "Stage 1": "stage_1", "Stages 2 & 10": "stage_2_10", "Stage 3": "stage_3", "Stages 4-7": "stage_4_7", "Stage 8": "stage_8", "Stage 9": "stage_9", "Stage 11": "stage_11", "Stage 12": "stage_12" }[st]; return k ? ct(lang, k, st) : st; };
 const guides = [
   {
     title: gp.visaTitleShort || "Visa Guide",

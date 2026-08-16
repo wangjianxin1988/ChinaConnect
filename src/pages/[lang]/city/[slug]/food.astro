@@ -28,6 +28,15 @@ if (!city) {
 const { prev, next } = getAdjacentCities(slug as string);
 const localCityName = translations[lang]?.["city." + city.slug + ".name"] ?? translations.en?.["city." + city.slug + ".name"] ?? city.nameEn;
 const isJapanese = lang === "ja";
+const _ft = (key, vars) => {
+  if (vars === undefined) vars = {};
+  const parts = key.split(".");
+  let cur = translations[lang] || translations.en;
+  for (const k of parts) { if (cur && typeof cur === "object" && k in cur) cur = cur[k]; else return key; }
+  if (typeof cur !== "string") return key;
+  return cur.replace(/\{(\w+)\}/g, (m, k) => (vars && k in vars ? String(vars[k]) : ""));
+};
+
 
 // Three-level filter from URL param
 const filterParam = Astro.url.searchParams.get("filter") || "all";
@@ -502,17 +511,17 @@ function getBadgeLabel(type: Restaurant["type"], lang: string) {
   <!-- Authoritative Data Sources -->
   <section class="container-custom py-8 mt-8 border-t border-gray-200">
     <div class="max-w-3xl mx-auto">
-      <h2 class="text-lg font-semibold text-gray-700 mb-3"><span aria-hidden="true">📊</span> <span data-i18n="cityFood.dataSourcesHeading">データソース＆参考文献</span></h2>
+      <h2 class="text-lg font-semibold text-gray-700 mb-3"><span aria-hidden="true">📊</span> <span data-i18n="cityFood.dataSourcesHeading">{_ft("cityFood.dataSourcesHeading")}</span></h2>
       <div class="bg-gray-50 rounded-xl p-5 text-sm text-gray-600 space-y-2">
-        <p><span data-i18n="cityFood.dataSourcesDesc">レストランデータは権威ある情報源から編集されています。訪問前に詳細を確認することをお勧めします：</span></p>
+        <p><span data-i18n="cityFood.dataSourcesDesc">{_ft("cityFood.dataSourcesDesc")}</span></p>
         <ul class="list-disc list-inside space-y-1 ml-2">
-          <li><a href="https://www.dianping.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{citySourceLabel(lang, "dianping")}</a> — 中国最大のレストランレビュープラットフォーム</li>
-          <li><a href="https://www.michelin.com/en/restaurant-and-hotel/" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{citySourceLabel(lang, "michelin")}</a> — ミシュランの公式評価</li>
-          <li><a href="https://www.meishij.net" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{citySourceLabel(lang, "meishij")}</a> — 中華料理レシピデータベース</li>
-          <li><a href="https://www.ctrip.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{citySourceLabel(lang, "ctrip")}</a> — 旅行とダイニングレビュー</li>
-          <li><a href="https://www.mafengwo.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{citySourceLabel(lang, "mafengwo")}</a> — 旅行コミュニティレビュー</li>
+          <li><a href="https://www.dianping.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{citySourceLabel(lang, "dianping")}</a> — {_ft("cityFood.dianpingDesc")}</li>
+          <li><a href="https://www.michelin.com/en/restaurant-and-hotel/" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{citySourceLabel(lang, "michelin")}</a> — {_ft("cityFood.michelinDesc")}</li>
+          <li><a href="https://www.meishij.net" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{citySourceLabel(lang, "meishij")}</a> — {_ft("cityFood.meishijDesc")}</li>
+          <li><a href="https://www.ctrip.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{citySourceLabel(lang, "ctrip")}</a> — {_ft("cityFood.ctripDesc")}</li>
+          <li><a href="https://www.mafengwo.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{citySourceLabel(lang, "mafengwo")}</a> — {_ft("cityFood.mafengwoDesc")}</li>
         </ul>
-        <p class="text-xs text-gray-400 mt-3"><span data-i18n="cityFood.disclaimer">電話番号と住所は変更される場合があります。公式チャンネルで確認するか、事前に電話で確認することをお勧めします。</span></p>
+        <p class="text-xs text-gray-400 mt-3"><span data-i18n="cityFood.disclaimer">{_ft("cityFood.disclaimer")}</span></p>
       </div>
     </div>
   </section>

@@ -12,6 +12,7 @@ import CommunicationGuideClient from "@/components/Guide/CommunicationGuideClien
 import EmbeddedAppRecommendation from "@/components/apps/EmbeddedAppRecommendation";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { translations } from "@/i18n/translations";
+import { ct } from "@/i18n/components-strings";
 import { getLangFromUrl } from '@/i18n/utils';
 
 const pageTitle = (translations[lang] || translations.en).guidePage?.communicationTitle || "Communication Guide - ChinaConnect";
@@ -66,8 +67,8 @@ const pageDescription = (translations[lang] || translations.en).guidePage?.commu
         client:visible
         lang={lang}
         categories={["social", "connectivity"]}
-        title={lang === "ja" ? "中国でつながり続ける" : "Stay Connected in China"}
-        subtitle={lang === "ja" ? "必須のメッセージ・通信アプリ" : "Essential messaging and connectivity apps"}
+        title={ct(lang, "appsec_comm_title", "Stay Connected in China")}
+        subtitle={ct(lang, "appsec_comm_subtitle", "Essential messaging and connectivity apps")}
       />
     </section>
   </main>

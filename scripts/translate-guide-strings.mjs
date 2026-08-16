@@ -34,8 +34,8 @@ const DISALLOWED = {
 const args = process.argv.slice(2);
 const lang = args.find((a) => a.startsWith("--lang="))?.split("=")[1];
 const force = args.includes("--force");
-if (!lang || lang === "ja") {
-  console.error("--lang required (non-ja)");
+if (!lang) {
+  console.error("--lang required (ja/ko/zh-CN/zh-TW/th/vi/ru/fr/de/ar/fa)");
   process.exit(1);
 }
 const disallow = DISALLOWED[lang] ?? null;
@@ -54,6 +54,19 @@ if (lang === "zh-TW") {
   const cnFile = "src/data/guide/overrides-zh-CN.ts";
   if (fs.existsSync(cnFile)) {
     const text = fs.readFileSync(cnFile, "utf8");
+    const re = /^\s*"((?:[^"\\]|\\.)*)"\s*:\s*"((?:[^"\\]|\\.)*)",?\s*$/gm;
+    for (const m of text.matchAll(re)) {
+      if (existing[unescapeTs(m[1])] === undefined) existing[unescapeTs(m[1])] = unescapeTs(m[2]);
+    }
+  }
+}
+// Seed ja from the existing ja-overrides.ts (keeps current Japanese values,
+// only fills missing keys). Generated file overrides-ja.ts is picked up by
+// the import.meta.glob in guide-i18n.tsx.
+if (lang === "ja" && !fs.existsSync(outFile)) {
+  const jaFile = "src/data/guide/ja-overrides.ts";
+  if (fs.existsSync(jaFile)) {
+    const text = fs.readFileSync(jaFile, "utf8");
     const re = /^\s*"((?:[^"\\]|\\.)*)"\s*:\s*"((?:[^"\\]|\\.)*)",?\s*$/gm;
     for (const m of text.matchAll(re)) {
       if (existing[unescapeTs(m[1])] === undefined) existing[unescapeTs(m[1])] = unescapeTs(m[2]);
@@ -135,15 +148,19 @@ Input JSON:
 ${body}
 RULES:
 - Respond with ONLY a JSON object of the same shape (keys k0..k${keys.length - 1}) where EVERY value is translated into ${TARGETS[lang]}.
-- No markdown, no commentary. Do NOT echo the input. Do NOT leave Chinese characters.
+- No markdown, no commentary. Do NOT echo the input.
 - Do NOT keep English or Chinese text unless it is a brand name, number, price, time, unit, phone number, URL or proper noun.
 - Proper nouns should be transliterated into ${TARGETS[lang]} or kept as standard English/pinyin.
-- For Chinese proper nouns and dish names, give a ${TARGETS[lang]} gloss in parentheses where helpful.`;
+- For Chinese proper nouns and dish names, give a ${TARGETS[lang]} gloss in parentheses where helpful.
+${lang === "ja" ? "- Translate into natural Japanese. Use kanji normally where appropriate (do NOT avoid kanji); kana-only Japanese is wrong.\n" : ""}`;
 }
 
 async function translateBatch(batch) {
+  // Returns a Map<sourceString, translatedValue>. Results are keyed by the
+  // source string so partial acceptance can never shift values onto the wrong
+  // keys (previous versions returned a positional array and misaligned them).
+  const resultMap = new Map();
   const remaining = [...batch];
-  const accepted = [];
   let attempt = 0;
   while (attempt < RETRY_ATTEMPTS && remaining.length > 0) {
     attempt += 1;
@@ -157,7 +174,7 @@ async function translateBatch(batch) {
       remaining.forEach((s, i) => {
         const raw = result[`k${i}`];
         if (goodValue(raw, s)) {
-          accepted.push(raw);
+          resultMap.set(s, raw);
           acceptedNow += 1;
         } else {
           newRemaining.push(s);
@@ -183,22 +200,25 @@ async function translateBatch(batch) {
         const raw = result?.k0;
         if (goodValue(raw, s)) val = raw;
       } catch { /* keep identity for manual review */ }
-      accepted.push(val);
+      if (val !== undefined) resultMap.set(s, val);
       await new Promise((resolve) => setTimeout(resolve, 200));
     }
     console.warn(`  fallback: ${remaining.length} keys single-key`);
   }
-  return accepted;
+  return resultMap;
 }
 
 for (let i = 0; i < needsApi.length; i += BATCH_SIZE) {
   const batch = needsApi.slice(i, i + BATCH_SIZE);
   const startedAt = Date.now();
   const results = await translateBatch(batch);
-  batch.forEach((s, idx) => { existing[s] = results[idx] ?? existing[s] ?? s; });
+  batch.forEach((s) => {
+    const v = results.get(s);
+    if (v !== undefined) existing[s] = v;
+  });
   await writeFile();
   const elapsed = Date.now() - startedAt;
-  console.log(`  [${new Date().toISOString().slice(11, 19)}] batch ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(needsApi.length / BATCH_SIZE)} done ${results.length}/${batch.length} in ${elapsed}ms`);
+  console.log(`  [${new Date().toISOString().slice(11, 19)}] batch ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(needsApi.length / BATCH_SIZE)} done ${results.size}/${batch.length} in ${elapsed}ms`);
 }
 
 async function writeFile() {

@@ -1,0 +1,405 @@
+---
+
+import { EmbassyLocator, EmergencyCard, GPSLocator, QuickDial } from "@/components/Emergency";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { generateBreadcrumbSchema, generateFAQSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
+import { translations } from "@/i18n/translations";
+import type { Language } from "@/i18n/translations";
+
+
+export function getStaticPaths() {
+  const langs = ["ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"];
+  return langs.map((lang) => ({ params: { lang } }));
+}
+
+const lang = (Astro.params.lang as string) || "en";
+const pageTitle = translations[lang]?.emergencyPage?.pageTitle || translations.en.emergencyPage?.pageTitle || "Emergency Contacts & Phrases - ChinaConnect";
+const pageDescription =
+  translations[lang]?.emergencyPage?.pageDescription || translations.en.emergencyPage?.pageDescription || "Essential emergency contacts and translation phrases for travelers in China.";
+
+// Schema.org JSON-LD for Emergency page
+const emergencySchemas = [
+  generateFAQSchema([
+    {
+      question: "What is the emergency number in China?",
+      answer: "Police: 110, Ambulance: 120, Fire: 119, Traffic Accident: 122. For foreign visitors, remain calm and state your location clearly."
+    },
+    {
+      question: "What should I do if I lose my passport in China?",
+      answer: "Report to local police for a theft/loss report, then contact your embassy for emergency travel documents. Keep copies of your passport separately."
+    },
+    {
+      question: "How do I call an ambulance in China?",
+      answer: "Dial 120 for ambulance services. International cards work at most hospitals. For serious emergencies, go directly to the nearest hospital."
+    },
+    {
+      question: "Can I use my home emergency number in China?",
+      answer: "No, international emergency numbers like 911 do not work in China. Use local numbers: 110 (police), 120 (ambulance), 119 (fire)."
+    },
+  ]),
+  generateBreadcrumbSchema([
+    { name: "Home", url: "https://chinaengage.org/" },
+    { name: "Emergency", url: "https://chinaengage.org/emergency" },
+  ]),
+];
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  meta={{
+    keywords: ['emergency china', 'china emergency contacts', 'police china', 'ambulance china', 'emergency phrases china', 'embassy beijing', 'SOS china', 'GPS location china'],
+  }}
+>
+  <!-- Schema.org JSON-LD for SEO/GEO -->
+  <script type="application/ld+json" set:html={generateJsonLdScript(emergencySchemas)} />
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-red-600 to-red-800 text-white py-16">
+    <div class="container-custom">
+      <div class="flex items-center gap-4 mb-4">
+        <span class="text-5xl">🚨</span>
+        <div>
+          <h1 class="text-4xl font-bold mb-2"><span data-i18n="emergencyPage.title">Emergency Contacts & Help</span></h1>
+          <p class="text-red-100 text-lg"><span data-i18n="emergencyPage.subtitle">Essential phone numbers, phrases, and tools for your safety in China</span></p>
+        </div>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+        <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
+          <div class="text-3xl font-bold">110</div>
+          <div class="text-sm text-red-100"><span data-i18n="emergencyPage.police">Police</span></div>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
+          <div class="text-3xl font-bold">120</div>
+          <div class="text-sm text-red-100"><span data-i18n="emergencyPage.ambulance">Ambulance</span></div>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
+          <div class="text-3xl font-bold">119</div>
+          <div class="text-sm text-red-100"><span data-i18n="emergencyPage.fire">Fire</span></div>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
+          <div class="text-3xl font-bold">122</div>
+          <div class="text-sm text-red-100"><span data-i18n="emergencyPage.traffic">Traffic</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Dial Section -->
+  <section class="py-8 bg-red-50 border-b border-red-200">
+    <div class="container-custom">
+      <h2 class="text-2xl font-bold text-red-800 mb-4 flex items-center gap-2">
+        <span>📞</span> <span data-i18n="emergencyPage.oneTapCalls">One-Tap Emergency Calls</span>
+      </h2>
+      <p class="text-red-700 mb-6"><span data-i18n="emergencyPage.oneTapDesc">Tap any number to call immediately. Works with any phone - no app needed.</span></p>
+      <QuickDial client:load lang={lang} />
+    </div>
+  </section>
+
+  <!-- Emergency Translation Card -->
+  <section class="py-8">
+    <div class="container-custom">
+      <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+        <span>📋</span> <span data-i18n="emergencyPage.phrases">Emergency Translation Phrases</span>
+      </h2>
+      <p class="text-gray-600 mb-6"><span data-i18n="emergencyPage.phrasesDesc">Tap any phrase to hear the pronunciation. This card works offline.</span></p>
+    <EmergencyCard client:load lang={lang} />
+    </div>
+  </section>
+
+  <!-- GPS Location Section -->
+  <section class="py-8 bg-gradient-to-br from-green-50 to-teal-50">
+    <div class="container-custom">
+      <div class="grid lg:grid-cols-2 gap-8">
+        <div>
+          <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+            <span>📍</span> <span data-i18n="emergencyPage.gps">GPS Location Share</span>
+          </h2>
+          <p class="text-gray-600 mb-6">
+            <span data-i18n="emergencyPage.gpsDesc">Get your current location and share it with emergency services. The system also helps you find nearby hospitals, pharmacies, and police stations.</span>
+          </p>
+          <GPSLocator client:load lang={lang} />
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+            <span>👥</span> <span data-i18n="emergencyPage.contacts">Emergency Contacts</span>
+          </h2>
+          <p class="text-gray-600 mb-6">
+            <span data-i18n="emergencyPage.contactsDesc">Save your hotel, tour guide, or family contacts for quick access during emergencies.</span>
+          </p>
+          <!-- Preset contacts will be rendered client-side via the SOSButton in BaseLayout -->
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <h3 class="font-semibold mb-4 flex items-center gap-2">
+              <span>💡</span> <span data-i18n="emergencyPage.howToSave">How to save contacts</span>
+            </h3>
+            <ol class="space-y-2 text-gray-600">
+              <li class="flex items-start gap-2">
+                <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm font-medium flex-shrink-0">1</span>
+                <span><span data-i18n="emergencyPage.howToSave1">Look for the red SOS button in the bottom-right corner of any page</span></span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm font-medium flex-shrink-0">2</span>
+                <span><span data-i18n="emergencyPage.howToSave2">Tap the menu button (☰) to open the emergency menu</span></span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm font-medium flex-shrink-0">3</span>
+                <span><span data-i18n="emergencyPage.howToSave3">Go to the "Contacts" tab and add your emergency contacts</span></span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nearby Services -->
+  <section class="py-8">
+    <div class="container-custom">
+      <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+        <span>🏥</span> <span data-i18n="emergencyPage.nearbyHelp">Finding Help Nearby</span>
+      </h2>
+      <p class="text-gray-600 mb-6"><span data-i18n="emergencyPage.nearbyDesc">Use these tips to find medical help, pharmacies, and police quickly.</span></p>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white border rounded-xl p-6 shadow-sm">
+          <h3 class="font-semibold text-lg mb-4 flex items-center gap-2">
+            <span data-i18n="emergencyPage.hospitalsTitle">Hospitals</span>
+          </h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start gap-2">
+              <span class="text-red-500">•</span>
+              <span data-i18n="emergencyPage.hospitalSearch">Search "hospital" in any map app</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500">•</span>
+              <span data-i18n="emergencyPage.hospitalInternational">International hospitals recommended for foreigners</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500">•</span>
+              <span data-i18n="emergencyPage.hospitalCommon">Common: Peking Union Medical College Hospital, Beijing United Family</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white border rounded-xl p-6 shadow-sm">
+          <h3 class="font-semibold text-lg mb-4 flex items-center gap-2">
+            <span data-i18n="emergencyPage.pharmaciesTitle">Pharmacies</span>
+          </h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start gap-2">
+              <span class="text-green-500">•</span>
+              <span data-i18n="emergencyPage.pharmacyGreenCross">Look for the green cross symbol</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-green-500">•</span>
+              <span data-i18n="emergencyPage.pharmacyChains">Large chains: Guoji Yiyao, Lianhua, Yixinke</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-green-500">•</span>
+              <span data-i18n="emergencyPage.pharmacyNoRx">Many medications available without prescription</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white border rounded-xl p-6 shadow-sm">
+          <h3 class="font-semibold text-lg mb-4 flex items-center gap-2">
+            <span data-i18n="emergencyPage.policeTitle">Police Stations</span>
+          </h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start gap-2">
+              <span class="text-blue-500">•</span>
+              <span data-i18n="emergencyPage.policeSearch">Search "police station" for local police stations</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-500">•</span>
+              <span data-i18n="emergencyPage.policeEnglish">English-speaking officers available at major stations</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-500">•</span>
+              <span data-i18n="emergencyPage.policeForeignAffairs">Foreign Affairs Police can help foreigners</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Embassy Section -->
+  <section class="py-8 bg-blue-50">
+    <div class="container-custom">
+      <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+        <span data-i18n="emergencyPage.embassyTitle">Embassy & Consulate Information</span>
+      </h2>
+      <p class="text-gray-600 mb-6"><span data-i18n="emergencyPage.embassyDesc">Find your embassy for passport replacement, emergency assistance, and legal help.</span></p>
+      <EmbassyLocator client:load showAll={true} lang={lang} />
+    </div>
+  </section>
+
+  <!-- Offline & Preparedness -->
+  <section class="py-8">
+    <div class="container-custom">
+      <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+        <span data-i18n="emergencyPage.sosButtonTitle">SOS Button - Available on Every Page</span>
+      </h2>
+      <p class="text-gray-600 mb-6"><span data-i18n="emergencyPage.sosButtonDesc">The emergency SOS button is always available in the bottom-right corner of every page.</span></p>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white border rounded-xl p-6 shadow-sm">
+          <h3 class="font-semibold mb-4 flex items-center gap-2">
+            <span data-i18n="emergencyPage.howToUseSOSTitle">How to Use SOS</span>
+          </h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-bold">1.</span>
+              <span data-i18n="emergencyPage.sosItem1">Tap the red SOS button to immediately call police (110)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-bold">2.</span>
+              <span data-i18n="emergencyPage.sosItem2">Tap the menu button (☰) to open emergency options</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-bold">3.</span>
+              <span data-i18n="emergencyPage.sosItem3">Choose from: Translation Card, GPS Location, Embassy Finder</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-bold">4.</span>
+              <span data-i18n="emergencyPage.sosItem4">Long-press or right-click for quick menu access</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-gradient-to-br from-red-50 to-orange-50 border border-red-200 rounded-xl p-6 shadow-sm">
+          <h3 class="font-semibold mb-4 flex items-center gap-2 text-red-800">
+            <span data-i18n="emergencyPage.offlineAvailableTitle">Offline Available</span>
+          </h3>
+          <ul class="space-y-3 text-red-700">
+            <li class="flex items-start gap-2">
+              <span>✓</span>
+              <span data-i18n="emergencyPage.offlineItem1">SOS button works without internet</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span>✓</span>
+              <span data-i18n="emergencyPage.offlineItem2">Translation phrases cached for offline use</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span>✓</span>
+              <span data-i18n="emergencyPage.offlineItem3">Emergency numbers (110, 120, 119, 122) always accessible</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span>✓</span>
+              <span data-i18n="emergencyPage.offlineItem4">Download offline maps for better preparedness</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Safety Tips -->
+  <section class="py-8 bg-gray-50">
+    <div class="container-custom">
+      <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+        <span data-i18n="emergencyPage.safetyTipsTitle">Safety Tips for Travelers</span>
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white border rounded-xl p-6">
+          <h3 class="font-semibold mb-4"><span data-i18n="emergencyPage.keepDocsTitle">Keep Documents Safe</span></h3>
+          <ul class="space-y-2 text-gray-600 text-sm">
+            <li>• <span data-i18n="emergencyPage.keepDocs1">Scan passport and keep digital copy</span></li>
+            <li>• <span data-i18n="emergencyPage.keepDocs2">Keep physical copy separate from original</span></li>
+            <li>• <span data-i18n="emergencyPage.keepDocs3">Store embassy contact info in phone</span></li>
+            <li>• <span data-i18n="emergencyPage.keepDocs4">Note down local emergency numbers</span></li>
+          </ul>
+        </div>
+
+        <div class="bg-white border rounded-xl p-6">
+          <h3 class="font-semibold mb-4"><span data-i18n="emergencyPage.preparednessTitle">Emergency Preparedness</span></h3>
+          <ul class="space-y-2 text-gray-600 text-sm">
+            <li>• <span data-i18n="emergencyPage.preparedness1">Save emergency numbers in phone contacts</span></li>
+            <li>• <span data-i18n="emergencyPage.preparedness2">Download offline maps (Google Maps)</span></li>
+            <li>• <span data-i18n="emergencyPage.preparedness3">Keep power bank charged</span></li>
+            <li>• <span data-i18n="emergencyPage.preparedness4">Save hotel address in Chinese</span></li>
+          </ul>
+        </div>
+
+        <div class="bg-white border rounded-xl p-6">
+          <h3 class="font-semibold mb-4"><span data-i18n="emergencyPage.communicationTitle">Communication Tips</span></h3>
+          <ul class="space-y-2 text-gray-600 text-sm">
+            <li>• <span data-i18n="emergencyPage.communication1">Learn basic Mandarin phrases</span></li>
+            <li>• <span data-i18n="emergencyPage.communication2">Use translation apps when needed</span></li>
+            <li>• <span data-i18n="emergencyPage.communication3">Download emergency phrase cards</span></li>
+            <li>• <span data-i18n="emergencyPage.communication4">Save your nationality in phone notes</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lost Passport Guide -->
+  <section class="py-8">
+    <div class="container-custom">
+      <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+        <span data-i18n="emergencyPage.lostPassportTitle">Lost Passport? Here's What to Do</span>
+      </h2>
+
+      <div class="bg-white border rounded-xl p-6 shadow-sm">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="font-semibold text-lg mb-4 flex items-center gap-2">
+              <span data-i18n="emergencyPage.inChinaTitle">In China</span>
+            </h3>
+            <ol class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold flex-shrink-0">1</span>
+                <div>
+                  <div class="font-medium"><span data-i18n="emergencyPage.lpStep1Title">Report to Police</span></div>
+                  <div class="text-sm text-gray-600"><span data-i18n="emergencyPage.lpStep1Desc">Go to nearest police station and get a police report</span></div>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold flex-shrink-0">2</span>
+                <div>
+                  <div class="font-medium"><span data-i18n="emergencyPage.lpStep2Title">Contact Embassy</span></div>
+                  <div class="text-sm text-gray-600"><span data-i18n="emergencyPage.lpStep2Desc">Call your embassy for emergency travel document</span></div>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold flex-shrink-0">3</span>
+                <div>
+                  <div class="font-medium"><span data-i18n="emergencyPage.lpStep3Title">Visit Embassy</span></div>
+                  <div class="text-sm text-gray-600"><span data-i18n="emergencyPage.lpStep3Desc">Bring police report, photos, and ID to get emergency passport</span></div>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg mb-4 flex items-center gap-2">
+              <span data-i18n="emergencyPage.importantTipsTitle">Important Tips</span>
+            </h3>
+            <ul class="space-y-3 text-gray-600">
+              <li class="flex items-start gap-2">
+                <span class="text-yellow-500">•</span>
+                <span data-i18n="emergencyPage.lpTip1">Keep digital copies of passport in cloud storage</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-yellow-500">•</span>
+                <span data-i18n="emergencyPage.lpTip2">Emergency passport is usually valid for limited time</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-yellow-500">•</span>
+                <span data-i18n="emergencyPage.lpTip3">Your embassy can contact family if needed</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-yellow-500">•</span>
+                <span data-i18n="emergencyPage.lpTip4">Keep hotel card with Chinese address</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

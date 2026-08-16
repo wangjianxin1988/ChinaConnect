@@ -98,7 +98,7 @@ const emergencySchemas = [
         <span>📋</span> <span data-i18n="emergencyPage.phrases">Emergency Translation Phrases</span>
       </h2>
       <p class="text-gray-600 mb-6"><span data-i18n="emergencyPage.phrasesDesc">Tap any phrase to hear the pronunciation. This card works offline.</span></p>
-      <EmergencyCard client:load />
+    <EmergencyCard client:load lang={lang} />
     </div>
   </section>
 
@@ -227,7 +227,7 @@ const emergencySchemas = [
         <span data-i18n="emergencyPage.embassyTitle">Embassy & Consulate Information</span>
       </h2>
       <p class="text-gray-600 mb-6"><span data-i18n="emergencyPage.embassyDesc">Find your embassy for passport replacement, emergency assistance, and legal help.</span></p>
-      <EmbassyLocator client:load showAll={true} />
+      <EmbassyLocator client:load showAll={true} lang={lang} />
     </div>
   </section>
 

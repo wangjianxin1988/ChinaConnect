@@ -184,9 +184,10 @@ const CATEGORIES = [
 interface EmergencyCardProps {
   className?: string;
   compact?: boolean;
+  lang?: string;
 }
 
-export function EmergencyCard({ className = "", compact = false }: EmergencyCardProps) {
+export function EmergencyCard({ className = "", compact = false, lang = "en" }: EmergencyCardProps & { lang?: string }) {
   const [activeCategory, setActiveCategory] = useState("all");
   const [showPronunciation, setShowPronunciation] = useState(true);
   const [speakingPhrase, setSpeakingPhrase] = useState<string | null>(null);
@@ -307,8 +308,8 @@ export function EmergencyCard({ className = "", compact = false }: EmergencyCard
                 disabled={speakingPhrase === phrase.chinese}
               >
                 <div className="text-sm text-gray-500 mb-1">{phrase.english}</div>
-                <div className="font-semibold text-slate-900 text-lg">{phrase.chinese}</div>
-                {showPronunciation && (
+                <div className="font-semibold text-slate-900 text-lg">{lang === "en" ? phrase.pronunciation : phrase.chinese}</div>
+                {showPronunciation && lang !== "en" && (
                   <div className="text-xs text-gray-400 mt-1 font-mono">{phrase.pronunciation}</div>
                 )}
               </button>

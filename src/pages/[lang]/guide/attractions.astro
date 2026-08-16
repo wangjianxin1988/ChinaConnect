@@ -10,6 +10,7 @@ import { citySlugs } from "@/data/cities/index";
 import { citiesMeta } from "@/data/cities/index";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { translations } from "@/i18n/translations";
+import { ct } from "@/i18n/components-strings";
 
 const lang = (Astro.params.lang as string) || "en";
 const jaCities = lang === "ja" ? citySlugs.map((slug) => getCityData(slug, lang)).filter(Boolean) : citiesMeta;
@@ -70,33 +71,33 @@ const pageDescription = (translations[lang] || translations.en).guidePage?.attra
         <div>
           <h3 class="font-semibold text-gray-700 mb-2" data-i18n="guidePage.cityBeijing">Beijing</h3>
           <ul class="space-y-1 text-gray-600">
-            <li>{lang === "ja" ? `• 故宮博物院 — 皇室の宮殿建築群` : `• Forbidden City - Imperial palace complex`}</li>
-            <li>{lang === "ja" ? `• 万里の長城 — 象徴的な古代の要塞` : `• Great Wall - Iconic ancient fortification`}</li>
-            <li>{lang === "ja" ? `• 天壇 — ユネスコ世界遺産` : `• Temple of Heaven - UNESCO heritage site`}</li>
+            <li>{ct(lang, "atx_forbidden", `• Forbidden City - Imperial palace complex`)}</li>
+            <li>{ct(lang, "atx_greatwall", `• Great Wall - Iconic ancient fortification`)}</li>
+            <li>{ct(lang, "atx_temple", `• Temple of Heaven - UNESCO heritage site`)}</li>
           </ul>
         </div>
         <div>
           <h3 class="font-semibold text-gray-700 mb-2" data-i18n="guidePage.cityShanghai">Shanghai</h3>
           <ul class="space-y-1 text-gray-600">
-            <li>{lang === "ja" ? `• 外灘 — 歴史あるウォーターフロント遊歩道` : `• The Bund - Historic waterfront promenade`}</li>
-            <li>{lang === "ja" ? `• 豫園 — 古典的な中国庭園` : `• Yu Garden - Classical Chinese garden`}</li>
-            <li>{lang === "ja" ? `• 上海タワー — 世界最速のエレベーター` : `• Shanghai Tower - World's fastest elevator`}</li>
+            <li>{ct(lang, "atx_bund", `• The Bund - Historic waterfront promenade`)}</li>
+            <li>{ct(lang, "atx_yu", `• Yu Garden - Classical Chinese garden`)}</li>
+            <li>{ct(lang, "atx_tower", `• Shanghai Tower - World's fastest elevator`)}</li>
           </ul>
         </div>
         <div>
           <h3 class="font-semibold text-gray-700 mb-2" data-i18n="guidePage.cityXian">Xi'an</h3>
           <ul class="space-y-1 text-gray-600">
-            <li>{lang === "ja" ? `• 兵馬俑 — 古代の兵士の像` : `• Terracotta Warriors - Ancient army statue`}</li>
-            <li>{lang === "ja" ? `• 西安城壁 — 保存状態の良い城壁` : `• City Wall - Best-preserved city walls`}</li>
-            <li>{lang === "ja" ? `• ムスリムクォーター — 屋台グルメの楽園` : `• Muslim Quarter - Street food paradise`}</li>
+            <li>{ct(lang, "atx_terracotta", `• Terracotta Warriors - Ancient army statue`)}</li>
+            <li>{ct(lang, "atx_citywall", `• City Wall - Best-preserved city walls`)}</li>
+            <li>{ct(lang, "atx_muslim", `• Muslim Quarter - Street food paradise`)}</li>
           </ul>
         </div>
         <div>
           <h3 class="font-semibold text-gray-700 mb-2" data-i18n="guidePage.cityChengdu">Chengdu</h3>
           <ul class="space-y-1 text-gray-600">
-            <li>{lang === "ja" ? `• ジャイアントパンダ基地 — パンダ保護施設` : `• Giant Panda Base - Panda conservation`}</li>
-            <li>{lang === "ja" ? `• 錦里古街 — 伝統的な商店街` : `• Jinli Street - Traditional shopping street`}</li>
-            <li>{lang === "ja" ? `• 楽山大仏 — ユネスコ世界遺産` : `• Leshan Giant Buddha - UNESCO heritage`}</li>
+            <li>{ct(lang, "atx_panda", `• Giant Panda Base - Panda conservation`)}</li>
+            <li>{ct(lang, "atx_jinli", `• Jinli Street - Traditional shopping street`)}</li>
+            <li>{ct(lang, "atx_buddha", `• Leshan Giant Buddha - UNESCO heritage`)}</li>
           </ul>
         </div>
       </div>

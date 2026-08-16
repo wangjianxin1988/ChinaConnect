@@ -12,22 +12,30 @@ const EMERGENCY_OVERRIDE_MODULES = import.meta.glob(
   { eager: true },
 ) as Record<string, Record<string, unknown>>;
 
-function extractMap(mod: Record<string, unknown>): Record<string, string> | undefined {
-  for (const value of Object.values(mod)) {
-    if (value && typeof value === "object" && !Array.isArray(value)) {
-      return value as Record<string, string>;
-    }
-  }
-  return undefined;
-}
+// Merge every exported record from an override module. Each export is stored
+// under a prefix derived from its export name so component lookups
+// ("app:<id>", "cat:<cat>", "ename:<phone>", "edesc:<phone>") match exactly.
+const EXPORT_PREFIX = {
+  APP_OVERRIDES: "app:",
+  APP_CATEGORY_OVERRIDES: "cat:",
+  EMERGENCY_NAME_OVERRIDES: "ename:",
+  EMERGENCY_DESC_OVERRIDES: "edesc:",
+};
 
 function buildRegistry(modules: Record<string, Record<string, unknown>>): Record<string, Record<string, string>> {
   const registry: Record<string, Record<string, string>> = {};
   for (const [file, mod] of Object.entries(modules)) {
     const match = /overrides-([\w-]+)\.ts$/.exec(file);
     if (match) {
-      const map = extractMap(mod);
-      if (map) registry[match[1]] = map;
+      const lang = match[1];
+      for (const [exportName, value] of Object.entries(mod)) {
+        if (value && typeof value === "object" && !Array.isArray(value)) {
+          const prefix = EXPORT_PREFIX[exportName] ?? "";
+          for (const [k, v] of Object.entries(value as Record<string, string>)) {
+            registry[lang] = { ...(registry[lang] || {}), [prefix + k]: v };
+          }
+        }
+      }
     }
   }
   return registry;

@@ -209,7 +209,7 @@ export function SOSButton({ className = "" }: SOSButtonProps) {
 
             {activeTab === "translation" && (
               <div className="p-3">
-                <EmergencyCard compact />
+                <EmergencyCard compact lang={lang} />
               </div>
             )}
 
@@ -221,7 +221,7 @@ export function SOSButton({ className = "" }: SOSButtonProps) {
 
             {activeTab === "embassy" && (
               <div className="p-3">
-                <EmbassyLocator />
+                <EmbassyLocator lang={lang} />
               </div>
             )}
 
