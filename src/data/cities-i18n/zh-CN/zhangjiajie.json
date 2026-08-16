@@ -8,7 +8,7 @@
     "lat": 29.117,
     "lng": 110.479
   },
-  "timezone": "UTC+8 (China Standard Time)",
+  "timezone": "UTC+8（中国标准时间）",
   "description": "张家界被誉为「阿凡达之家」，以其列入世界遗产的国家森林公园而闻名，公园内拥有高耸的石英砂岩柱、壮丽的喀斯特地貌和茂密的森林。城市独特的柱状石英砂岩柱启发了电影《阿凡达》中的悬浮山。公园之外，游客可探索天门山的玻璃栈道、世界上最长的玻璃桥、古老的土家村落和神秘的洞穴。",
   "coverImage": "/img/ext/a02714487598.webp",
   "highlights": [
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "24C (75F)",
     "avgWinterTemp": "5C (41F)",
-    "tips": "Mountain weather is unpredictable - bring layers. Summer monsoon season brings heavy rain. Winter can see snow on peaks. Morning mists create magical scenery. Book accommodation in park area for early access to attractions."
+    "tips": "山区天气多变，请带好分层衣物。夏季季风季节雨水充沛。冬季山顶可能积雪。晨雾营造出梦幻般的景色。建议预订公园内的住宿，以便清晨进入景点。"
   },
   "attractions": [
     {
@@ -2700,16 +2700,16 @@
         "type": "air",
         "from": "主要国内机场：北京（3.5小时）、上海（2.5小时）、广州（1.5小时）",
         "to": "张家界荷花国际机场（DYG）",
-        "duration": "1.5-3.5 hours",
+        "duration": "1.5-3.5小时",
         "price": "600-2000¥",
-        "frequency": "Multiple daily flights",
+        "frequency": "每日多个航班",
         "tips": "机场距市中心5公里。机场大巴（20元）至市区和景区。有出租车。"
       },
       {
         "type": "train",
         "from": "长沙（3小时）、北京（15小时）、上海（10小时）、广州（8小时）",
         "to": "张家界站 / 张家界西站",
-        "duration": "3-15 hours",
+        "duration": "3-15小时",
         "price": "200-800¥",
         "frequency": "每日多班次",
         "tips": "从长沙有高铁。西站为高铁站，主站为普通列车站。"
@@ -2717,191 +2717,191 @@
       {
         "type": "bus",
         "from": "长沙（4小时），凤凰（3小时），吉首（2小时）",
-        "to": "Zhangjiajie Bus Station",
-        "duration": "2-4 hours",
+        "to": "张家界汽车站",
+        "duration": "2-4小时",
         "price": "100-180¥",
-        "frequency": "Regular departures",
+        "frequency": "班次频繁",
         "tips": "汽车站靠近火车站。有前往景区的旅游巴士。"
       }
     ],
     "local": {
       "metro": [
         {
-          "line": "Line 1",
-          "description": "Connects city center to airport and bus station",
+          "line": "1号线",
+          "description": "连接市中心与机场和汽车站",
           "hours": "06:30-22:00"
         },
         {
-          "line": "Line 2",
-          "description": "Connects railway stations to main tourist areas",
+          "line": "2号线",
+          "description": "连接火车站与主要旅游区",
           "hours": "06:30-22:00"
         },
         {
-          "line": "Future Expansion",
-          "description": "Lines to Wulingyuan and scenic areas planned",
+          "line": "未来扩建",
+          "description": "规划中的武陵源及景区线路",
           "hours": "N/A"
         },
         {
-          "line": "English Signs",
-          "description": "Limited English signage - use translation app",
+          "line": "英文标识",
+          "description": "英文标识有限——请使用翻译应用",
           "hours": "N/A"
         },
         {
-          "line": "Fare",
-          "description": "2-7¥ per journey",
+          "line": "票价",
+          "description": "每次行程2-7元",
           "hours": "N/A"
         },
         {
-          "line": "Peak Hours",
-          "description": "07:00-09:00 and 17:00-19:00 can be crowded",
+          "line": "高峰时段",
+          "description": "07:00-09:00和17:00-19:00可能较为拥挤",
           "hours": "N/A"
         },
         {
-          "line": "Connection",
-          "description": "Connects to bus stations for scenic area access",
+          "line": "换乘",
+          "description": "连接公交站，可前往景区",
           "hours": "N/A"
         },
         {
-          "line": "Cards",
-          "description": "Transportation cards available for tourists",
+          "line": "交通卡",
+          "description": "游客可购买交通卡",
           "hours": "N/A"
         },
         {
-          "line": "Last Train",
-          "description": "Last metro around 22:00 - plan accordingly",
+          "line": "末班车",
+          "description": "末班地铁约在22:00，请合理安排时间",
           "hours": "N/A"
         },
         {
-          "line": "Alternatives",
-          "description": "When metro crowded, buses are good alternative",
+          "line": "其他选择",
+          "description": "地铁拥挤时，公交车是不错的替代选择",
           "hours": "N/A"
         },
         {
-          "line": "City Map",
-          "description": "Get city map at metro stations",
+          "line": "城市地图",
+          "description": "可在各地铁站获取城市地图",
           "hours": "N/A"
         },
         {
-          "line": "Tourist Metro",
-          "description": "Special tourist metro during holidays",
-          "hours": "Seasonal"
+          "line": "旅游专线地铁",
+          "description": "节假日期间设有旅游专线地铁",
+          "hours": "季节性"
         }
       ],
       "bus": [
         {
-          "route": "Tourist Bus 1",
-          "description": "City - Tianmen Mountain",
+          "route": "旅游巴士1号线",
+          "description": "市区 - 天门山",
           "price": "15¥",
-          "frequency": "Every 30 min"
+          "frequency": "每30分钟一班"
         },
         {
-          "route": "Tourist Bus 2",
-          "description": "City - Forest Park",
+          "route": "旅游巴士2号线",
+          "description": "市区 - 森林公园",
           "price": "20¥",
-          "frequency": "Every 20 min"
+          "frequency": "每20分钟一班"
         },
         {
-          "route": "Tourist Bus 3",
-          "description": "City - Grand Canyon",
+          "route": "旅游巴士3号线",
+          "description": "市区 - 大峡谷",
           "price": "25¥",
-          "frequency": "Every 40 min"
+          "frequency": "每40分钟"
         },
         {
-          "route": "Tourist Bus 4",
-          "description": "City - Yellow Dragon Cave",
+          "route": "旅游巴士4路",
+          "description": "市区 - 黄龙洞",
           "price": "22¥",
-          "frequency": "Every 45 min"
+          "frequency": "每45分钟"
         },
         {
-          "route": "Bus 1",
-          "description": "City center loop",
+          "route": "巴士1路",
+          "description": "市中心环线",
           "price": "2¥",
-          "frequency": "Every 10 min"
+          "frequency": "每10分钟"
         },
         {
-          "route": "Bus 5",
-          "description": "Railway station to city",
+          "route": "巴士5路",
+          "description": "火车站到市区",
           "price": "2¥",
-          "frequency": "Every 15 min"
+          "frequency": "每15分钟一班"
         },
         {
-          "route": "Bus 10",
-          "description": "Bus station to scenic areas",
+          "route": "10路公交车",
+          "description": "汽车站到景区",
           "price": "3¥",
-          "frequency": "Every 20 min"
+          "frequency": "每20分钟一班"
         },
         {
-          "route": "Bus 101",
-          "description": "Wulingyuan district inner",
+          "route": "101路公交车",
+          "description": "武陵源区内",
           "price": "2¥",
-          "frequency": "Every 15 min"
+          "frequency": "每15分钟一班"
         },
         {
-          "route": "Airport Bus",
-          "description": "Airport to city center",
+          "route": "机场大巴",
+          "description": "机场到市中心",
           "price": "20¥",
-          "frequency": "Every 30 min"
+          "frequency": "每30分钟一班"
         },
         {
-          "route": "Sightseeing Bus",
-          "description": "Within Forest Park - free with ticket",
-          "price": "Included",
-          "frequency": "Continuous"
+          "route": "观光巴士",
+          "description": "森林公园内 - 凭门票免费",
+          "price": "已包含",
+          "frequency": "连续"
         },
         {
-          "route": "Night Bus",
-          "description": "Night market routes",
+          "route": "夜间巴士",
+          "description": "夜市线路",
           "price": "2¥",
-          "frequency": "Every 30 min"
+          "frequency": "每30分钟一班"
         },
         {
-          "route": "Kandong Bus",
-          "description": "To remote scenic spots",
-          "price": "Varies",
-          "frequency": "Limited"
+          "route": "看洞巴士",
+          "description": "前往偏远景点",
+          "price": "视情况而定",
+          "frequency": "有限"
         },
         {
-          "route": "Express Bus",
-          "description": "Direct to Changsha",
+          "route": "机场快线",
+          "description": "直达长沙",
           "price": "120¥",
-          "frequency": "Several daily"
+          "frequency": "每日多班"
         }
       ],
       "taxi": [
         {
           "type": "Starting Fare",
           "price": "8¥",
-          "description": "First 2km"
+          "description": "首2公里"
         },
         {
           "type": "Per km",
-          "price": "2¥/km",
-          "description": "After first 2km"
+          "price": "2元/公里",
+          "description": "超过首2公里后"
         },
         {
           "type": "To Airport",
           "price": "30-50¥",
-          "description": "From city center"
+          "description": "从市中心出发"
         },
         {
           "type": "To Forest Park",
           "price": "80-120¥",
-          "description": "From city center"
+          "description": "从市中心出发"
         },
         {
           "type": "To Tianmen",
           "price": "50-80¥",
-          "description": "From city center"
+          "description": "从市中心出发"
         },
         {
           "type": "Didi",
-          "description": "Ride-hailing app works in city",
-          "tips": "Set destination carefully"
+          "description": "网约车应用在城市内可用",
+          "tips": "仔细设置目的地"
         },
         {
           "type": "Long Distance",
-          "price": "Negotiable",
-          "description": "To distant attractions"
+          "price": "可议价",
+          "description": "前往偏远景点"
         },
         {
           "type": "Night Surcharge",
@@ -2910,89 +2910,89 @@
         },
         {
           "type": "Tip",
-          "description": "Have destination written in Chinese",
-          "tips": "Show address to driver"
+          "description": "将目的地用中文写好",
+          "tips": "向司机出示地址"
         },
         {
           "type": "Airport Taxi",
-          "price": "Meter",
-          "description": "Official taxis at airport"
+          "price": "计价器",
+          "description": "机场的官方出租车"
         },
         {
           "type": "Hotel Pickup",
-          "description": "Ask hotel to call taxi",
-          "tips": "Useful for early morning"
+          "description": "请酒店帮忙叫出租车",
+          "tips": "清晨时段很有用"
         },
         {
           "type": "Negotiation",
-          "description": "Agree price before for tourist areas",
-          "tips": "Research typical prices"
+          "description": "在旅游区先谈好价格再上车",
+          "tips": "提前了解常规价格"
         }
       ],
       "bike": [
         {
           "type": "E-bike Rental",
-          "price": "50-80¥/day",
-          "locations": "City center and tourist areas",
-          "tips": "Valid driving license needed"
+          "price": "50-80元/天",
+          "locations": "市中心和旅游区",
+          "tips": "需持有有效驾照"
         },
         {
           "type": "Bike Share",
-          "price": "2-5¥/trip",
-          "locations": "City center stations",
-          "tips": "Use WeChat mini program"
+          "price": "2-5元/次",
+          "locations": "市中心车站",
+          "tips": "使用微信小程序"
         },
         {
           "type": "Mountain Bike",
-          "price": "100-150¥/day",
-          "locations": "Near Forest Park",
-          "tips": "For experienced riders only"
+          "price": "100-150元/天",
+          "locations": "靠近森林公园",
+          "tips": "仅限经验丰富的骑行者"
         },
         {
           "type": "Cave Area",
-          "description": "Not recommended - long distances",
-          "suitability": "City exploring only"
+          "description": "不推荐——距离较长",
+          "suitability": "仅限城市观光"
         },
         {
           "type": "Traffic Rules",
-          "description": "Follow local traffic regulations",
-          "tips": "Ride in bike lanes"
+          "description": "遵守当地交通规则",
+          "tips": "在自行车道骑行"
         },
         {
-          "type": "Parking",
+          "type": "停车",
           "price": "1-2¥",
-          "description": "Designated parking areas",
-          "tips": "Lock bike properly"
+          "description": "指定停车区域",
+          "tips": "正确锁好自行车"
         },
         {
           "type": "Helmet",
-          "description": "Recommended but not always provided",
-          "tips": "Bring your own if possible"
+          "description": "建议佩戴，但不一定提供",
+          "tips": "尽量自带"
         },
         {
           "type": "Night Riding",
-          "description": "Not recommended - limited lighting",
-          "tips": "Return before dark"
+          "description": "不推荐——照明有限",
+          "tips": "天黑前返回"
         },
         {
           "type": "Scenic Areas",
-          "description": "Bikes not allowed inside most attractions",
-          "tips": "Park at entrance"
+          "description": "大多数景点内不允许自行车进入",
+          "tips": "在入口处停车"
         },
         {
           "type": "Rain",
-          "description": "Avoid riding in heavy rain",
-          "tips": "Check weather forecast"
+          "description": "避免在大雨中骑行",
+          "tips": "查看天气预报"
         },
         {
           "type": "Distance",
-          "description": "Short distances in city only",
-          "tips": "Use bus for scenic areas"
+          "description": "仅适用于市内短途",
+          "tips": "前往景区请乘坐公交车"
         },
         {
           "type": "Registration",
-          "description": "Some e-bikes require registration",
-          "tips": "Ask rental shop"
+          "description": "部分电动自行车需要登记",
+          "tips": "咨询租赁店"
         }
       ]
     }
@@ -3015,7 +3015,7 @@
         "水疗服务",
         "室外游泳池"
       ],
-      "bookingTips": "Best luxury option near scenic areas. Book directly for free upgrades."
+      "bookingTips": "景区附近的最佳豪华选择。直接预订可享受免费升级。"
     },
     {
       "name": "张家界京武铂尔曼酒店",
@@ -3034,7 +3034,7 @@
         "早餐丰盛",
         "健身中心"
       ],
-      "bookingTips": "Best Western brand in city. Weekend discounts available."
+      "bookingTips": "市内最佳西方品牌酒店。周末有折扣。"
     },
     {
       "name": "张家界万豪酒店",
@@ -3053,14 +3053,14 @@
         "多家餐厅",
         "礼宾服务"
       ],
-      "bookingTips": "Best new luxury hotel. Book river-view rooms."
+      "bookingTips": "最佳新豪华酒店。预订河景房。"
     },
     {
       "name": "张家界铂尔曼酒店",
       "nameEn": "Pullman Zhangjiajie Resort",
       "budget": "luxury",
       "priceRange": "¥900-2200/night",
-      "address": "Wulingyuan Scenic Area",
+      "address": "武陵源风景区",
       "coordinates": {
         "lat": 29.3535,
         "lng": 110.4465
@@ -3072,7 +3072,7 @@
         "班车服务",
         "全包选项"
       ],
-      "bookingTips": "Best for park visitors. Shuttle to park entrance included."
+      "bookingTips": "最适合公园游客。含前往公园入口的班车。"
     },
     {
       "name": "张家界天房酒店",
@@ -3091,7 +3091,7 @@
         "房间干净",
         "员工乐于助人"
       ],
-      "bookingTips": "Best mid-range option in city center. Request quiet rooms."
+      "bookingTips": "市中心最佳中档选择。可要求安静房间。"
     },
     {
       "name": "张家界国宾酒店",
@@ -3110,7 +3110,7 @@
         "商务设施",
         "地下停车场"
       ],
-      "bookingTips": "Good for business travelers. Weekend rates lower."
+      "bookingTips": "适合商务旅客。周末房价更低。"
     },
     {
       "name": "张家界福朋喜来登酒店",
@@ -3129,7 +3129,7 @@
         "舒适的床",
         "优质服务"
       ],
-      "bookingTips": "Best for those with cars. Free parking available."
+      "bookingTips": "最适合自驾游客。提供免费停车。"
     },
     {
       "name": "张家界锦江之星",
@@ -3148,7 +3148,7 @@
         "基本设施",
         "干净"
       ],
-      "bookingTips": "Best budget chain option. Book online for discounts."
+      "bookingTips": "最佳经济型连锁选择。在线预订享折扣。"
     },
     {
       "name": "张家界如家酒店",
@@ -3167,7 +3167,7 @@
         "简单客房",
         "含早餐"
       ],
-      "bookingTips": "Most reliable budget chain. Ask for renovated rooms."
+      "bookingTips": "最可靠的平价连锁酒店。请要求入住翻新过的房间。"
     },
     {
       "name": "张家界7天连锁酒店",
@@ -3186,14 +3186,14 @@
         "基础但干净",
         "适合中转"
       ],
-      "bookingTips": "Best for one-night stays. Book ahead in peak season."
+      "bookingTips": "最适合住一晚。旺季请提前预订。"
     },
     {
       "name": "张家界客栈",
       "nameEn": "Zhangjiajie Inn",
       "budget": "budget",
       "priceRange": "¥150-350/night",
-      "address": "Near Forest Park",
+      "address": "靠近森林公园",
       "coordinates": {
         "lat": 29.3435,
         "lng": 110.4465
@@ -3205,14 +3205,14 @@
         "店主热心",
         "花园环境"
       ],
-      "bookingTips": "Best for park visitors. Owner can arrange tickets."
+      "bookingTips": "最适合游览公园的游客。老板可以帮忙安排门票。"
     },
     {
       "name": "张家界山上客栈",
       "nameEn": "Mountain Inn",
       "budget": "budget",
       "priceRange": "¥200-400/night",
-      "address": "Inside Forest Park",
+      "address": "森林公园内",
       "coordinates": {
         "lat": 29.3535,
         "lng": 110.4435
@@ -3224,7 +3224,7 @@
         "位置安静",
         "亲近自然"
       ],
-      "bookingTips": "Book well ahead - limited rooms. Bring warm clothes."
+      "bookingTips": "请提前预订——房间有限。带上保暖衣物。"
     },
     {
       "name": "张家界民宿",
@@ -3243,14 +3243,14 @@
         "家常菜",
         "宁静"
       ],
-      "bookingTips": "Authentic local experience. Minimum 1 night stay."
+      "bookingTips": "地道本地体验。最少住一晚。"
     },
     {
       "name": "张家界天门山酒店",
       "nameEn": "Tianmen Mountain Hotel",
       "budget": "mid",
       "priceRange": "¥300-600/night",
-      "address": "Near Tianmen Mountain",
+      "address": "靠近天门山",
       "coordinates": {
         "lat": 29.0535,
         "lng": 110.4795
@@ -3262,14 +3262,14 @@
         "现代设施",
         "早餐不错"
       ],
-      "bookingTips": "Best for Tianmen visitors. Early start to mountain."
+      "bookingTips": "最适合游览天门山的游客。早点出发上山。"
     },
     {
       "name": "张家界客栈",
       "nameEn": "Zhangjiajie Boutique Hotel",
       "budget": "mid",
       "priceRange": "¥350-700/night",
-      "address": "City Center",
+      "address": "市中心",
       "coordinates": {
         "lat": 29.1175,
         "lng": 110.4785
@@ -3281,7 +3281,7 @@
         "位置中心",
         "屋顶餐厅"
       ],
-      "bookingTips": "Good balance of price and quality. Ask about packages."
+      "bookingTips": "性价比高，可咨询套餐优惠。"
     },
     {
       "name": "张家界温德姆花园酒店",
@@ -3300,14 +3300,14 @@
         "早餐不错",
         "位置安静"
       ],
-      "bookingTips": "Good value for money. Quiet area away from main road."
+      "bookingTips": "物有所值，远离主干道，环境安静。"
     },
     {
       "name": "张家界华天大酒店",
       "nameEn": "Huatian Hotel Zhangjiajie",
       "budget": "mid",
       "priceRange": "¥300-650/night",
-      "address": "Wuling Road, Zhangjiajie",
+      "address": "张家界武陵路",
       "coordinates": {
         "lat": 29.1235,
         "lng": 110.4765
@@ -3319,14 +3319,14 @@
         "会议设施",
         "服务好"
       ],
-      "bookingTips": "Reliable mid-range option. Book direct for better rates."
+      "bookingTips": "可靠的中档选择，直接预订可享更优价格。"
     },
     {
       "name": "武陵源御笔峰酒店",
       "nameEn": "Yubifeng Hotel",
       "budget": "mid",
       "priceRange": "¥250-550/night",
-      "address": "Wulingyuan District",
+      "address": "武陵源区",
       "coordinates": {
         "lat": 29.3335,
         "lng": 110.5465
@@ -3338,14 +3338,14 @@
         "当地特色",
         "早餐不错"
       ],
-      "bookingTips": "Best location for park visitors. Shuttle service available."
+      "bookingTips": "游览公园的最佳位置，提供班车服务。"
     },
     {
       "name": "张家界锦江都城酒店",
       "nameEn": "Jinjiang Metropolo",
       "budget": "budget",
       "priceRange": "¥180-350/night",
-      "address": "Near Train Station",
+      "address": "靠近火车站",
       "coordinates": {
         "lat": 29.1335,
         "lng": 110.4695
@@ -3357,14 +3357,14 @@
         "基本设施",
         "适合中转"
       ],
-      "bookingTips": "Best for train travelers. Quick access to station."
+      "bookingTips": "最适合火车旅客，快速到达车站。"
     },
     {
       "name": "张家界东玉温泉酒店",
       "nameEn": "Dongyu Hot Spring Hotel",
       "budget": "mid",
       "priceRange": "¥400-900/night",
-      "address": "Near Huanglong Cave",
+      "address": "靠近黄龙洞",
       "coordinates": {
         "lat": 29.2235,
         "lng": 110.5235
@@ -3376,14 +3376,14 @@
         "风景优美",
         "放松氛围"
       ],
-      "bookingTips": "Perfect after touring. Combine with cave visit."
+      "bookingTips": "游览结束后非常合适。可结合洞穴参观。"
     },
     {
       "name": "张家界在路上客栈",
       "nameEn": "On The Way Inn",
       "budget": "budget",
       "priceRange": "¥120-280/night",
-      "address": "Near Tianmen Mountain",
+      "address": "靠近天门山",
       "coordinates": {
         "lat": 29.0525,
         "lng": 110.4795
@@ -3395,7 +3395,7 @@
         "位置优越",
         "社交氛围"
       ],
-      "bookingTips": "Popular with independent travelers. Great for solo travelers."
+      "bookingTips": "深受自由行游客欢迎。非常适合独自旅行者。"
     }
   ],
   "payment": [
@@ -3404,9 +3404,9 @@
       "icon": "alipay",
       "description": "张家界最广泛接受的移动支付方式",
       "howToUse": [
-        "Download Alipay app",
-        "Bind international card",
-        "QR code payment"
+        "下载支付宝应用",
+        "绑定国际信用卡",
+        "二维码支付"
       ],
       "tips": [
         "适用于市内大部分购物",
@@ -3419,13 +3419,13 @@
       "icon": "wechat",
       "description": "滴滴打车和许多本地商店必备",
       "howToUse": [
-        "WeChat app required",
-        "Link card to WeChat",
+        "需要微信应用程序",
+        "将银行卡绑定到微信",
         "扫码或应用内支付"
       ],
       "tips": [
-        "Required for Didi",
-        "Local vendors prefer",
+        "滴滴出行必需",
+        "当地商家更偏好",
         "支付宝和微信都很有用"
       ]
     },
@@ -3434,7 +3434,7 @@
       "icon": "cash",
       "description": "在张家界必备——许多本地商贩和景区只接受cash",
       "howToUse": [
-        "Withdraw from ATMs",
+        "从ATM机取款",
         "农村地区请备500-1000元现金",
         "竹筏经营者通常只收cash"
       ],
@@ -3450,12 +3450,12 @@
       "description": "酒店和较大餐厅接受",
       "howToUse": [
         "酒店接受Visa/Mastercard",
-        "Some restaurants accept",
-        "Most local vendors no"
+        "部分餐厅接受",
+        "大多数本地商家不"
       ],
       "tips": [
-        "Best for hotel bookings",
-        "Upscale restaurants only",
+        "最适合预订酒店",
+        "仅限高档餐厅",
         "携带cash作为备用"
       ]
     },
@@ -3465,13 +3465,13 @@
       "description": "中国bank卡 - 便于ATM取款",
       "howToUse": [
         "使用中国卡进行ATM取款",
-        "Some merchants accept",
-        "Best for residents"
+        "部分商家接受",
+        "最适合居民"
       ],
       "tips": [
-        "ATMs widely available",
+        "ATM机随处可见",
         "手续费低于国际卡",
-        "Tourists may not need"
+        "游客可能不需要"
       ]
     },
     {
@@ -3480,11 +3480,11 @@
       "description": "现代场所越来越接受",
       "howToUse": [
         "在参与商户使用Apple Pay/Google Pay",
-        "Works with bound card",
-        "Tap to pay"
+        "支持绑定银行卡",
+        "轻触支付"
       ],
       "tips": [
-        "Limited acceptance",
+        "有限接受",
         "便利店可能可用",
         "农村地区仍需cash"
       ]

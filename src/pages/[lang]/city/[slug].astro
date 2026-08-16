@@ -441,7 +441,7 @@ const mapMarkers = [
         <!-- Overview Section -->
         <section id="overview" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
-            <span class="text-2xl">📍</span> <span data-i18n="cityPage.tabOverview" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.tabOverview")}</span>
+            <span class="text-2xl">📍</span> <span data-i18n="cityPage.tabOverview" data-i18n-vars={JSON.stringify({ city: localCityName })}>{_lookup("cityPage.tabOverview")}</span>
           </h2>
 
           <!-- Hero Image -->
@@ -472,7 +472,7 @@ const mapMarkers = [
           <!-- Best Time to Visit -->
           <div class="bg-blue-50 rounded-xl p-6 mb-6">
           <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-              <span aria-hidden="true">🌤</span> <span data-i18n="cityPage.bestTimeHeading" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.bestTimeHeading")}</span>
+              <span aria-hidden="true">🌤</span> <span data-i18n="cityPage.bestTimeHeading" data-i18n-vars={JSON.stringify({ city: localCityName })}>{_lookup("cityPage.bestTimeHeading")}</span>
             </h3>
             <p class="text-gray-700 mb-3">{city.climate.tips}</p>
             <div class="flex flex-wrap gap-2">
@@ -484,11 +484,11 @@ const mapMarkers = [
             </div>
             <div class="grid grid-cols-2 gap-4 mt-4 text-sm">
               <div>
-                <span class="font-medium text-gray-700" data-i18n="cityPage.summer" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.summer")}</span>
+                <span class="font-medium text-gray-700" data-i18n="cityPage.summer" data-i18n-vars={JSON.stringify({ city: localCityName })}>{_lookup("cityPage.summer")}</span>
                 <span class="text-gray-600 ml-2">{city.climate.avgSummerTemp}</span>
               </div>
               <div>
-                <span class="font-medium text-gray-700" data-i18n="cityPage.winter" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.winter")}</span>
+                <span class="font-medium text-gray-700" data-i18n="cityPage.winter" data-i18n-vars={JSON.stringify({ city: localCityName })}>{_lookup("cityPage.winter")}</span>
                 <span class="text-gray-600 ml-2">{city.climate.avgWinterTemp}</span>
               </div>
             </div>
@@ -546,8 +546,8 @@ const mapMarkers = [
         <!-- Food Highlights Section (High Priority - Before Attractions) -->
         <section id="food-highlights" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
-            <span class="text-2xl">🍜</span> <span data-i18n="cityPage.foodHighlightsHeading" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.foodHighlightsHeading")}</span>
-            <span class="text-sm font-normal text-gray-500 ml-2" data-i18n="cityPage.foodHighlightsSubtitle" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.foodHighlightsSubtitle")}</span>
+            <span class="text-2xl">🍜</span> <span data-i18n="cityPage.foodHighlightsHeading" data-i18n-vars={JSON.stringify({ city: localCityName })}>{_lookup("cityPage.foodHighlightsHeading")}</span>
+            <span class="text-sm font-normal text-gray-500 ml-2" data-i18n="cityPage.foodHighlightsSubtitle" data-i18n-vars={JSON.stringify({ city: localCityName })}>{_lookup("cityPage.foodHighlightsSubtitle")}</span>
           </h2>
           <p class="section-subtitle" data-i18n="cityPage.foodSubtitle">{isJapanese ? `${localCityName}のグルメハイライト` : `Discover local food highlights in ${city.nameEn}`}</p>
 
@@ -576,7 +576,7 @@ const mapMarkers = [
               href={`${langPrefix}/food?city=${city.slug}`}
               class="shrink-0 px-5 py-2.5 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl font-semibold text-sm hover:from-orange-600 hover:to-red-600 transition-all shadow-md hover:shadow-lg flex items-center gap-2"
             >
-              <span><span data-i18n="cityPage.openFullMap" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.openFullMap")}</span></span>
+              <span><span data-i18n="cityPage.openFullMap" data-i18n-vars={JSON.stringify({ city: localCityName })}>{_lookup("cityPage.openFullMap")}</span></span>
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
@@ -587,7 +587,7 @@ const mapMarkers = [
         <!-- Attractions Section (Lazy loaded with infinite scroll) -->
         <section id="attractions" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
-            <span class="text-2xl">🏛</span> <span data-i18n="cityPage.attractionsHeading" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.attractionsHeading")}</span>
+            <span class="text-2xl">🏛</span> <span data-i18n="cityPage.attractionsHeading" data-i18n-vars={JSON.stringify({ city: localCityName })}>{_lookup("cityPage.attractionsHeading")}</span>
             <span class="text-sm font-normal text-gray-500 ml-2">({city.attractions.length} places)</span>
           </h2>
           <p class="section-subtitle" data-i18n="cityPage.attractionsSubtitle">{isJapanese ? `${localCityName}のベスト観光スポット` : `Discover the best attractions in ${localCityName}`}</p>
@@ -605,13 +605,13 @@ const mapMarkers = [
         <!-- Transport Section -->
         <section id="transport" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
-            <span class="text-2xl">🚇</span> <span data-i18n="cityPage.sectionTransport" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.sectionTransport")}</span>
+            <span class="text-2xl">🚇</span> <span data-i18n="cityPage.sectionTransport" data-i18n-vars={JSON.stringify({ city: localCityName })}>{_lookup("cityPage.sectionTransport")}</span>
           </h2>
-          <p class="section-subtitle" data-i18n="cityPage.transportSubtitle" data-i18n-vars='{"city": localCityName}'>{isJapanese ? `${localCityName}へのアクセスと市内移動` : `Getting to and around ${localCityName}`}</p>
+          <p class="section-subtitle" data-i18n="cityPage.transportSubtitle" data-i18n-vars={JSON.stringify({ city: localCityName })}>{isJapanese ? `${localCityName}へのアクセスと市内移動` : `Getting to and around ${localCityName}`}</p>
 
           <!-- Getting There -->
           <div class="mb-8">
-            <h3 class="text-lg font-semibold mb-4" data-i18n="cityPage.gettingTo" data-i18n-vars='{"city": localCityName}'>{isJapanese ? `${localCityName}へのアクセス` : `Getting to ${localCityName}`}</h3>
+            <h3 class="text-lg font-semibold mb-4" data-i18n="cityPage.gettingTo" data-i18n-vars={JSON.stringify({ city: localCityName })}>{isJapanese ? `${localCityName}へのアクセス` : `Getting to ${localCityName}`}</h3>
             <div class="space-y-4">
               {city.transport.arrival.map(option => (
                 <div class="bg-white border rounded-xl p-6">
@@ -622,15 +622,15 @@ const mapMarkers = [
                   <p class="text-gray-600 mb-2">{option.from}</p>
                   <div class="grid md:grid-cols-3 gap-4 text-sm">
                     <div>
-                      <span class="text-gray-500" data-i18n="cityPage.durationLabel" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.durationLabel")}</span>
+                      <span class="text-gray-500" data-i18n="cityPage.durationLabel" data-i18n-vars={JSON.stringify({ city: localCityName })}>{_lookup("cityPage.durationLabel")}</span>
                       <span class="ml-2 font-medium">{option.duration}</span>
                     </div>
                     <div>
-                      <span class="text-gray-500" data-i18n="cityPage.priceLabel" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.priceLabel")}</span>
+                      <span class="text-gray-500" data-i18n="cityPage.priceLabel" data-i18n-vars={JSON.stringify({ city: localCityName })}>{_lookup("cityPage.priceLabel")}</span>
                       <span class="ml-2 font-medium">{option.price}</span>
                     </div>
                     <div>
-                      <span class="text-gray-500" data-i18n="cityPage.frequencyLabel" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.frequencyLabel")}</span>
+                      <span class="text-gray-500" data-i18n="cityPage.frequencyLabel" data-i18n-vars={JSON.stringify({ city: localCityName })}>{_lookup("cityPage.frequencyLabel")}</span>
                       <span class="ml-2 font-medium">{option.frequency}</span>
                     </div>
                   </div>
@@ -645,7 +645,7 @@ const mapMarkers = [
           </div>
 
           <div>
-            <h3 class="text-lg font-semibold mb-4"><span data-i18n="cityPage.gettingAround" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.gettingAround")}</span></h3>
+            <h3 class="text-lg font-semibold mb-4"><span data-i18n="cityPage.gettingAround" data-i18n-vars={JSON.stringify({ city: localCityName })}>{_lookup("cityPage.gettingAround")}</span></h3>
             <div class="grid md:grid-cols-2 gap-4">
               <div class="bg-white border rounded-xl p-6">
                 <h4 class="font-medium mb-4 flex items-center gap-2">
@@ -719,7 +719,7 @@ const mapMarkers = [
         <!-- Accommodation Section -->
         <section id="accommodation" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
-            <span class="text-2xl">🏨</span> <span data-i18n="cityPage.sectionHotels" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.sectionHotels")}</span>
+            <span class="text-2xl">🏨</span> <span data-i18n="cityPage.sectionHotels" data-i18n-vars={JSON.stringify({ city: localCityName })}>{_lookup("cityPage.sectionHotels")}</span>
           </h2>
           <p class="section-subtitle">{_lookup("cityHotels.countSubtitle", { count: String(totalHotelCount) })}</p>
 
@@ -745,7 +745,7 @@ const mapMarkers = [
                 >
                   <span class="text-3xl group-hover:scale-110 transition-transform">{cat.icon}</span>
                   <span class="text-sm font-semibold text-gray-800">{hotelCatLabel(cat.key)}</span>
-                  <span class={`text-xs ${cat.textClass} font-bold`}><span>{count}</span> <span data-i18n="cityPage.hotelsCountUnit" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.hotelsCountUnit", { count: totalHotelCount })}</span></span>
+                  <span class={`text-xs ${cat.textClass} font-bold`}><span>{count}</span> <span data-i18n="cityPage.hotelsCountUnit" data-i18n-vars={JSON.stringify({ city: localCityName })}>{_lookup("cityPage.hotelsCountUnit", { count: totalHotelCount })}</span></span>
                   <span class="text-[10px] text-gray-400 uppercase tracking-wide">{hotelCatLabel(cat.key)}</span>
                 </a>
               );
@@ -759,7 +759,7 @@ const mapMarkers = [
               class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-teal-500 to-blue-500 text-white rounded-xl font-semibold text-sm hover:from-teal-600 hover:to-blue-600 transition-all shadow-md hover:shadow-lg"
             >
               <span>🏨</span>
-              <span data-i18n="cityPage.viewAllHotels" data-i18n-vars='{"totalHotelCount": totalHotelCount, "count": totalHotelCount, "n": totalHotelCount}'>{ct(lang, "view_all_hotels", "View all {count} hotels").replace("{count}", String(totalHotelCount))}</span>
+              <span data-i18n="cityPage.viewAllHotels" data-i18n-vars={JSON.stringify({ totalHotelCount, count: totalHotelCount, n: totalHotelCount })}>{ct(lang, "view_all_hotels", "View all {count} hotels").replace("{count}", String(totalHotelCount))}</span>
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
@@ -769,7 +769,7 @@ const mapMarkers = [
         <!-- Payment Section -->
         <section id="payment" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
-            <span class="text-2xl">💳</span> <span data-i18n="cityPage.sectionPayment" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.sectionPayment")}</span>
+            <span class="text-2xl">💳</span> <span data-i18n="cityPage.sectionPayment" data-i18n-vars={JSON.stringify({ city: localCityName })}>{_lookup("cityPage.sectionPayment")}</span>
           </h2>
           <p class="section-subtitle">{_lookup("cityPage.paymentHowSubtitle")}</p>
 
@@ -824,7 +824,7 @@ const mapMarkers = [
                 lang={lang}
               />
               <p class="text-xs text-gray-500 mt-2">
-                <span data-i18n="cityPage.switchToEnglishMode" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.switchToEnglishMode")}</span>
+                <span data-i18n="cityPage.switchToEnglishMode" data-i18n-vars={JSON.stringify({ city: localCityName })}>{_lookup("cityPage.switchToEnglishMode")}</span>
               </p>
             </div>
           </div>
@@ -833,7 +833,7 @@ const mapMarkers = [
         <!-- SIM/eSIM & Connectivity Section -->
         <section id="connectivity" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
-            <span class="text-2xl">📶</span> <span data-i18n="cityPage.sectionConnectivity" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.sectionConnectivity")}</span>
+            <span class="text-2xl">📶</span> <span data-i18n="cityPage.sectionConnectivity" data-i18n-vars={JSON.stringify({ city: localCityName })}>{_lookup("cityPage.sectionConnectivity")}</span>
           </h2>
           <p class="section-subtitle" data-i18n="cityPage.connectivitySubtitle">{_lookup("cityPage.connectivitySubtitle")}</p>
 
@@ -866,7 +866,7 @@ const mapMarkers = [
         <!-- Apps Section -->
         <section id="apps" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
-            <span class="text-2xl">📱</span> <span data-i18n="cityPage.sectionApps" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.sectionApps")}</span>
+            <span class="text-2xl">📱</span> <span data-i18n="cityPage.sectionApps" data-i18n-vars={JSON.stringify({ city: localCityName })}>{_lookup("cityPage.sectionApps")}</span>
           </h2>
           <p class="section-subtitle" data-i18n="cityPage.appsSubtitle">{_lookup("cityPage.appsSubtitle")}</p>
 
@@ -882,7 +882,7 @@ const mapMarkers = [
         <!-- Culture Section (Lazy loaded with infinite scroll) -->
         <section id="culture" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
-            <span class="text-2xl">🎎</span> <span data-i18n="cityPage.sectionCulture" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.sectionCulture")}</span>
+            <span class="text-2xl">🎎</span> <span data-i18n="cityPage.sectionCulture" data-i18n-vars={JSON.stringify({ city: localCityName })}>{_lookup("cityPage.sectionCulture")}</span>
             <span class="text-sm font-normal text-gray-500 ml-2">({city.culturalTips.length} {ct(lang, "unit_tips", "tips")})</span>
           </h2>
           <p class="section-subtitle">{_lookup("cityPage.cultureSubtitleDynamic")}</p>
@@ -893,7 +893,7 @@ const mapMarkers = [
         <!-- Emergency Section (Lazy loaded with infinite scroll) -->
         <section id="emergency" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
-            <span class="text-2xl">🚨</span> <span data-i18n="cityPage.sectionEmergency" data-i18n-vars='{"city": localCityName}'>{_lookup("cityPage.sectionEmergency")}</span>
+            <span class="text-2xl">🚨</span> <span data-i18n="cityPage.sectionEmergency" data-i18n-vars={JSON.stringify({ city: localCityName })}>{_lookup("cityPage.sectionEmergency")}</span>
             <span class="text-sm font-normal text-gray-500 ml-2">({city.emergencyContacts.length} {ct(lang, "unit_contacts", "contacts")})</span>
           </h2>
           <p class="section-subtitle">{_lookup("cityPage.emergencySubtitleDynamic")}</p>

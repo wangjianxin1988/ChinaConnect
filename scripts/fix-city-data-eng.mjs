@@ -126,16 +126,22 @@ ${body}
 RULES:
 - Respond with ONLY a JSON object of the same shape (keys k0..k${values.length - 1}) where EVERY value is translated into ${TARGETS[lang]}.
 - No markdown, no commentary. Do NOT echo the input.
-- Output must be fluent natural ${TARGETS[lang]} with NO Chinese characters and NO Japanese kana.
+- Output must be fluent natural ${TARGETS[lang]} with ${
+      lang === "zh-CN" || lang === "zh-TW" ? "NO English words" : "NO Chinese characters"
+    } and NO Japanese kana.
 - Keep numbers, prices, times, units, phone numbers, URLs and brand names (Didi, WeChat, Alipay, Michelin, etc.) unchanged.
 - Keep placeholders like {city}, [NAME] unchanged.
-- For proper nouns (place names, street names, dish names) use the common ${TARGETS[lang]} name; when a Chinese gloss is helpful, write it in ${TARGETS[lang]} script, never Chinese.`;
+- For proper nouns (place names, street names, dish names) use the common ${TARGETS[lang]} name; when a Chinese gloss is helpful, write it in ${TARGETS[lang]} script${lang === "zh-CN" || lang === "zh-TW" ? "" : ", never Chinese"}.`;
 }
 
 function validOutput(raw, lang, source) {
   if (typeof raw !== "string" || raw.trim().length === 0) return false;
   if (raw === source) return false;
-  if (CJK_RE.test(raw) || KANA_RE.test(raw)) return false;
+  if (lang !== "zh-CN" && lang !== "zh-TW") {
+    if (CJK_RE.test(raw) || KANA_RE.test(raw)) return false;
+  } else if (KANA_RE.test(raw)) {
+    return false; // Chinese output must not contain Japanese kana
+  }
   const presence = SCRIPT_PRESENCE[lang];
   if (presence && !presence.test(raw)) return false;
   if (lang === "vi" || lang === "fr" || lang === "de") {

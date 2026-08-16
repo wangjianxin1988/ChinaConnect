@@ -10,6 +10,7 @@ import { cities } from "@/data/food/cities";
 import { getRestaurantById, restaurants } from "@/data/food/restaurants";
 import { JA_FOOD_OVERRIDES } from "@/data/food/ja-food-overrides";
 import { EN_FOOD_OVERRIDES } from "@/data/food/en-food-overrides";
+import { translations } from "@/i18n/translations";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
 
@@ -23,6 +24,7 @@ if (!restaurant) {
 }
 
 const city = cities.find((c) => c.id === restaurant.city);
+const localCityName = translations[lang]?.["city." + (city?.slug ?? restaurant.city) + ".name"] ?? translations.en?.["city." + (city?.slug ?? restaurant.city) + ".name"] ?? city?.nameEn ?? restaurant.city;
 const sameCityRestaurants = restaurants
   .filter((r) => r.city === restaurant.city && r.id !== restaurant.id)
   .slice(0, 4);
@@ -92,7 +94,7 @@ const restaurantDetail = {
         <div class="flex items-center justify-between">
           <a href={`/${lang}/food?city=${restaurant.city}`} class="flex items-center gap-2 text-gray-600 hover:text-gray-900">
             <span aria-hidden="true">←</span>
-            <span data-i18n="foodPage.back">Back</span>
+            <span data-i18n="foodPage.back" data-i18n-vars={JSON.stringify({ city: localCityName })}>Back</span>
           </a>
           <span class={`text-sm font-medium ${config.color}`}>
             {config.icon} {TYPE_LABELS[restaurant.type]?.[lang] || config.labelEn}
@@ -110,7 +112,7 @@ const restaurantDetail = {
       {/* Similar Restaurants */}
       {sameCityRestaurants.length > 0 && (
         <div class="bg-white rounded-xl shadow-md p-6 mt-6">
-          <h2 class="text-lg font-bold text-gray-900 mb-4" data-i18n="foodPage.otherRestaurants">Other restaurants nearby</h2>
+          <h2 class="text-lg font-bold text-gray-900 mb-4" data-i18n="foodPage.otherRestaurants" data-i18n-vars={JSON.stringify({ city: localCityName })}>Other restaurants nearby</h2>
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
             {sameCityRestaurants.map(r => (
               <a href={`/${lang}/food/${r.id}`} class="block group">

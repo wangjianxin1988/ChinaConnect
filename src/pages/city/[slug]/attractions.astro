@@ -60,13 +60,13 @@ const _lookup = (key) => {
         <span class="text-purple-300 mx-2">/</span>
         <a href={`/city/${city.slug}`} class="text-purple-200 hover:text-white transition-colors">{city.nameEn}</a>
         <span class="text-purple-300 mx-2">/</span>
-        <span class="text-white" data-i18n="cityPage.attractionsHeading" data-i18n-vars='{"city": city.nameEn}'>{_lookup("cityPage.attractionsHeading")}</span>
+        <span class="text-white" data-i18n="cityPage.attractionsHeading" data-i18n-vars={JSON.stringify({ city: city.nameEn })}>{_lookup("cityPage.attractionsHeading")}</span>
       </nav>
 
       <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">
         🏛️{_lookup("cityPage.attractionsHeading")} in {city.nameEn}
       </h1>
-      <p class="text-xl text-purple-200" data-i18n="cityPage.attractionsExploreCount">{_lookup("cityPage.attractionsExploreCount")}</p>
+      <p class="text-xl text-purple-200" data-i18n="cityPage.attractionsExploreCount" data-i18n-vars={JSON.stringify({ city: city.nameEn, count: city.attractions.length })}>{_lookup("cityPage.attractionsExploreCount")}</p>
     </div>
   </section>
 
@@ -168,7 +168,7 @@ const _lookup = (key) => {
 
             <div class="space-y-2 mb-4">
               <div class="flex items-center gap-2 text-sm text-gray-600">
-                <span class="text-gray-400" data-i18n="cityPage.phoneIcon" data-i18n-vars='{"city": city.nameEn}'>{_lookup("cityPage.phoneIcon")}</span>
+                <span class="text-gray-400" data-i18n="cityPage.phoneIcon" data-i18n-vars={JSON.stringify({ city: city.nameEn })}>{_lookup("cityPage.phoneIcon")}</span>
                 <span>{attraction.openingHours}</span>
               </div>
               {attraction.address && (
@@ -277,13 +277,13 @@ const _lookup = (key) => {
       <div class="bg-gray-50 rounded-xl p-5 text-sm text-gray-600 space-y-2">
         <p data-i18n="cityPage.dataSourcesDesc">{_lookup("cityPage.dataSourcesDesc")}</p>
         <ul class="list-disc list-inside space-y-1 ml-2">
-          <li><a href="https://www.mafengwo.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Mafengwo</a>  — <span data-i18n="cityAttractions.mafengwoDesc" data-i18n-vars='{"city": city.nameEn}'>{_lookup("cityAttractions.mafengwoDesc")}</span></li>
-          <li><a href="https://www.ctrip.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Ctrip / Trip.com</a>  — <span data-i18n="cityAttractions.ctripDesc" data-i18n-vars='{"city": city.nameEn}'>{_lookup("cityAttractions.ctripDesc")}</span></li>
-          <li><a href="https://www.tripadvisor.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">TripAdvisor</a>  — <span data-i18n="cityAttractions.tripadvisorDesc" data-i18n-vars='{"city": city.nameEn}'>{_lookup("cityAttractions.tripadvisorDesc")}</span></li>
-          <li><a href="https://www.chinanews.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">China News</a>  — <span data-i18n="cityAttractions.chinanewsDesc" data-i18n-vars='{"city": city.nameEn}'>{_lookup("cityAttractions.chinanewsDesc")}</span></li>
-          <li><a href="https://www.mct.gov.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline"Ministry of Culture & Tourism</a>  — <span data-i18n="cityAttractions.mctDesc" data-i18n-vars='{"city": city.nameEn}'>{_lookup("cityAttractions.mctDesc")}</span></li>
+          <li><a href="https://www.mafengwo.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Mafengwo</a>  — <span data-i18n="cityAttractions.mafengwoDesc" data-i18n-vars={JSON.stringify({ city: city.nameEn })}>{_lookup("cityAttractions.mafengwoDesc")}</span></li>
+          <li><a href="https://www.ctrip.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Ctrip / Trip.com</a>  — <span data-i18n="cityAttractions.ctripDesc" data-i18n-vars={JSON.stringify({ city: city.nameEn })}>{_lookup("cityAttractions.ctripDesc")}</span></li>
+          <li><a href="https://www.tripadvisor.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">TripAdvisor</a>  — <span data-i18n="cityAttractions.tripadvisorDesc" data-i18n-vars={JSON.stringify({ city: city.nameEn })}>{_lookup("cityAttractions.tripadvisorDesc")}</span></li>
+          <li><a href="https://www.chinanews.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">China News</a>  — <span data-i18n="cityAttractions.chinanewsDesc" data-i18n-vars={JSON.stringify({ city: city.nameEn })}>{_lookup("cityAttractions.chinanewsDesc")}</span></li>
+          <li><a href="https://www.mct.gov.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline"Ministry of Culture & Tourism</a>  — <span data-i18n="cityAttractions.mctDesc" data-i18n-vars={JSON.stringify({ city: city.nameEn })}>{_lookup("cityAttractions.mctDesc")}</span></li>
         </ul>
-        <p class="text-xs text-gray-400 mt-3"><span data-i18n="cityAttractions.disclaimer" data-i18n-vars='{"city": city.nameEn}'>{_lookup("cityAttractions.disclaimer")}</span></p>
+        <p class="text-xs text-gray-400 mt-3"><span data-i18n="cityAttractions.disclaimer" data-i18n-vars={JSON.stringify({ city: city.nameEn })}>{_lookup("cityAttractions.disclaimer")}</span></p>
       </div>
     </div>
   </section>

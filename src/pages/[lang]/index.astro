@@ -172,10 +172,10 @@ const _lookup = (key) => {
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
             </svg>
-            <span data-i18n="home.heroCTA" data-i18n-vars='{"city": city.nameEn}'>{_lookup("home.heroCTA")}</span>
+            <span data-i18n="home.heroCTA" data-i18n-vars={JSON.stringify({ city: city.nameEn })}>{_lookup("home.heroCTA")}</span>
           </a>
           <a href="#cities" class="flex items-center gap-2 border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition-all">
-            <span data-i18n="home.exploreCities" data-i18n-vars='{"city": city.nameEn}'>{_lookup("home.exploreCities")}</span>
+            <span data-i18n="home.exploreCities" data-i18n-vars={JSON.stringify({ city: city.nameEn })}>{_lookup("home.exploreCities")}</span>
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
@@ -262,7 +262,7 @@ const _lookup = (key) => {
                 {city.description}
               </p>
               <div class="flex items-center text-white text-sm font-medium">
-                <span data-i18n="home.exploreGuide" data-i18n-vars='{"city": city.nameEn}'>{_lookup("home.exploreGuide")}</span>
+                <span data-i18n="home.exploreGuide" data-i18n-vars={JSON.stringify({ city: city.nameEn })}>{_lookup("home.exploreGuide")}</span>
                 <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
@@ -274,7 +274,7 @@ const _lookup = (key) => {
       {localizedCitiesMeta.length > 8 && (
         <div class="text-center mt-8">
           <a href={`/${lang}/cities`} class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-semibold transition-colors">
-            <span data-i18n="home.viewAllCities" data-i18n-vars='{"city": city.nameEn}'>{_lookup("home.viewAllCities")}</span>
+            <span data-i18n="home.viewAllCities" data-i18n-vars={JSON.stringify({ city: city.nameEn })}>{_lookup("home.viewAllCities")}</span>
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
@@ -397,13 +397,13 @@ const _lookup = (key) => {
         <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto" data-i18n="home.ctaSubtitle">{_lookup("home.ctaSubtitle")}</p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href={`/${lang}/city/beijing`} class="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-blue-50 transition-all">
-            <span data-i18n="home.exploreBeijing" data-i18n-vars='{"city": city.nameEn}'>{_lookup("home.exploreBeijing")}</span>
+            <span data-i18n="home.exploreBeijing" data-i18n-vars={JSON.stringify({ city: city.nameEn })}>{_lookup("home.exploreBeijing")}</span>
           </a>
           <a href={`/${lang}/ai`} class="flex items-center gap-2 border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition-all">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
             </svg>
-            <span data-i18n="home.chatWithAI" data-i18n-vars='{"city": city.nameEn}'>{_lookup("home.chatWithAI")}</span>
+            <span data-i18n="home.chatWithAI" data-i18n-vars={JSON.stringify({ city: city.nameEn })}>{_lookup("home.chatWithAI")}</span>
           </a>
         </div>
       </div>

@@ -8,7 +8,7 @@
     "lat": 25.6069,
     "lng": 100.2676
   },
-  "timezone": "UTC+8 (China Standard Time)",
+  "timezone": "UTC+8（中国标准时间）",
   "description": "大理是云南省一座风景如画的小镇，坐落在雄伟的苍山脚下，毗邻碧波荡漾的洱海。这里是白族少数民族的聚居地，拥有千年历史。石板路、传统的白族建筑和充满活力的当地文化是其特色。悠闲的氛围非常适合骑自行车、徒步和文化沉浸体验。",
   "coverImage": "/img/ext/4e2e5e513a4d.webp",
   "highlights": [
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "18-25C (64-77F)",
     "avgWinterTemp": "8-15C (46-59F)",
-    "tips": "Spring (March-May) is flower season with mild weather. Autumn (Sept-Oct) has clear skies and comfortable temps. Summer is rainy but green. Winter is dry and sunny but cold. Bring layers - temperature swings daily."
+    "tips": "春季（3月至5月）是花季，天气温和。秋季（9月至10月）天空晴朗，气温舒适。夏季多雨但绿意盎然。冬季干燥晴朗但寒冷。请分层穿衣——气温每日变化大。"
   },
   "restaurants": [
     {
@@ -1580,9 +1580,9 @@
     "arrival": [
       {
         "type": "air",
-        "from": "Major Chinese cities",
+        "from": "中国主要城市",
         "to": "大理凤仪机场（DLU）",
-        "duration": "Varies (2h from Kunming)",
+        "duration": "各不相同（距昆明2小时）",
         "price": "300-800¥",
         "frequency": "每日有从昆明起飞的航班，部分为季节性航班",
         "tips": "机场距大理古城13公里。可乘机场大巴或出租车前往市区。雾天航班可能延误。"
@@ -1591,7 +1591,7 @@
         "type": "train",
         "from": "昆明（6-8小时）、丽江（2.5小时）",
         "to": "大理火车站（靠近市中心）",
-        "duration": "2.5-8 hours",
+        "duration": "2.5至8小时",
         "price": "100-300¥",
         "frequency": "每日有从云南主要城市发车的列车",
         "tips": "从昆明出发的新高铁风景优美但速度较慢。旧火车更快。大理站比新站更靠近古城。"
@@ -1599,8 +1599,8 @@
       {
         "type": "bus",
         "from": "昆明（4小时）、丽江（2.5小时）",
-        "to": "Dali Bus Station",
-        "duration": "2.5-4 hours",
+        "to": "大理汽车站",
+        "duration": "2.5-4小时",
         "price": "100-200¥",
         "frequency": "从主要城市出发的班车频繁",
         "tips": "从昆明西驿酒店乘坐大巴很舒适。大理汽车站靠近古城。"
@@ -1620,16 +1620,16 @@
         "一日游价格需协商"
       ],
       "bicycle": [
-        "Rent bicycles near Dali Old Town: 30-80¥/day",
-        "Electric bikes available: 80-150¥/day",
-        "Cycling Erhai Lake: 40-60km, full day",
-        "Mountain bikes for Cangshan trails"
+        "在大理古城附近租自行车：30-80元/天",
+        "电动车租赁：80-150元/天",
+        "环洱海骑行：40-60公里，需一整天",
+        "苍山步道适合山地车"
       ],
       "electric-bike": [
-        "Popular way to explore Erhai Lake area",
-        "Rent in Dali or Shuanglang",
-        "80-150¥ per day",
-        "Need to recharge for long trips"
+        "探索洱海地区的热门方式",
+        "在大理或双廊租车",
+        "每天80-150元",
+        "长途旅行需要充电"
       ],
       "metro": [
         "大理古城没有地铁系统",
@@ -1648,7 +1648,7 @@
       "nameEn": "Dali Old Town Lake View Hotel",
       "budget": "mid",
       "priceRange": "¥400-800/night",
-      "address": "Near Dali Old Town",
+      "address": "靠近大理古城",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
@@ -1660,14 +1660,14 @@
         "白族建筑",
         "屋顶咖啡馆"
       ],
-      "bookingTips": "Book well ahead in peak season. Request lake view room."
+      "bookingTips": "旺季需提前预订。请要求湖景房。"
     },
     {
       "name": "双廊海角酒店",
       "nameEn": "Shuanglang Haijiao Hotel",
       "budget": "luxury",
       "priceRange": "¥800-2000/night",
-      "address": "Shuanglang waterfront",
+      "address": "双廊 waterfront",
       "coordinates": {
         "lat": 25.8822,
         "lng": 100.1572
@@ -1679,14 +1679,14 @@
         "精品设计",
         "私人阳台"
       ],
-      "bookingTips": "The best lakeside area in Dali. Premium for Nantian views."
+      "bookingTips": "大理最佳湖畔区域。南天景观需额外付费。"
     },
     {
       "name": "大理中和坊酒店",
       "nameEn": "Dali Zhonghefang Hotel",
       "budget": "mid",
       "priceRange": "¥300-600/night",
-      "address": "Within Dali Old Town",
+      "address": "大理古城内",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
@@ -1698,7 +1698,7 @@
         "安静氛围",
         "白族风格"
       ],
-      "bookingTips": "Good value in old town. Book inner courtyard rooms for quiet."
+      "bookingTips": "古城内性价比高。预订内院房间更安静。"
     },
     {
       "name": "才村码头客栈",
@@ -1717,14 +1717,14 @@
         "当地家庭经营",
         "宁静"
       ],
-      "bookingTips": "Great for cyclists. Families run many guesthouses here."
+      "bookingTips": "非常适合骑行。许多家庭在这里经营客栈。"
     },
     {
       "name": "大理国际大酒店",
       "nameEn": "Dali International Hotel",
       "budget": "luxury",
       "priceRange": "¥600-1500/night",
-      "address": "Dali City, near Erhai",
+      "address": "大理市，洱海附近",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1672
@@ -1736,14 +1736,14 @@
         "多家餐厅",
         "游泳池"
       ],
-      "bookingTips": "Best for comfort seekers. Good location between old town and lake."
+      "bookingTips": "最适合追求舒适的人。位置很好，介于古城和湖泊之间。"
     },
     {
       "name": "大理古城兰陵阁",
       "nameEn": "Dali Old Town Lanlingge",
       "budget": "mid",
       "priceRange": "¥350-700/night",
-      "address": "Within Dali Old Town",
+      "address": "大理古城内",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
@@ -1755,14 +1755,14 @@
         "屋顶景观",
         "白族建筑"
       ],
-      "bookingTips": "Book inner rooms for quiet. Good value for location."
+      "bookingTips": "预订内房可享安静。就位置而言性价比高。"
     },
     {
       "name": "双廊湖思茶屋",
       "nameEn": "Shuanglang Lake Thoughts",
       "budget": "luxury",
       "priceRange": "¥600-1500/night",
-      "address": "Shuanglang, Erhai Lake",
+      "address": "双廊，洱海",
       "coordinates": {
         "lat": 25.8822,
         "lng": 100.1572
@@ -1774,14 +1774,14 @@
         "日落景观",
         "茶馆"
       ],
-      "bookingTips": "Premium lakeside location. Book well ahead in peak season."
+      "bookingTips": "湖畔黄金位置。旺季请提前预订。"
     },
     {
       "name": "才村民宿",
       "nameEn": "Caicun Village Homestay",
       "budget": "budget",
       "priceRange": "¥150-400/night",
-      "address": "Caicun Village, Erhai",
+      "address": "才村，洱海",
       "coordinates": {
         "lat": 25.7222,
         "lng": 100.1672
@@ -1793,14 +1793,14 @@
         "自行车租赁",
         "当地体验"
       ],
-      "bookingTips": "Great for cyclists. Locals are very friendly."
+      "bookingTips": "非常适合骑行。当地人非常友好。"
     },
     {
       "name": "大理风花雪月酒店",
       "nameEn": "Dali Wind Flower Snow Moon Hotel",
       "budget": "mid",
       "priceRange": "¥400-800/night",
-      "address": "Dali City, near old town",
+      "address": "大理市区，靠近古城",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
@@ -1812,14 +1812,14 @@
         "优质服务",
         "性价比"
       ],
-      "bookingTips": "Good balance of comfort and location."
+      "bookingTips": "舒适度与地理位置俱佳。"
     },
     {
       "name": "喜洲杨家拼图",
       "nameEn": "Xizhou Yang's Courtyard",
       "budget": "mid",
       "priceRange": "¥300-600/night",
-      "address": "Xizhou Ancient Town",
+      "address": "喜洲古镇",
       "coordinates": {
         "lat": 25.7622,
         "lng": 100.1272
@@ -1831,14 +1831,14 @@
         "地道装饰",
         "安静"
       ],
-      "bookingTips": "Experience traditional Bai living. Book during market day."
+      "bookingTips": "体验传统白族生活。建议在赶集日预订。"
     },
     {
       "name": "大理背包客青年旅舍",
       "nameEn": "Dali Backpacker Youth Hostel",
       "budget": "budget",
       "priceRange": "¥60-150/night",
-      "address": "Dali Old Town",
+      "address": "大理古城",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
@@ -1850,7 +1850,7 @@
         "中心位置",
         "自行车租赁"
       ],
-      "bookingTips": "Great for solo travelers. Evening pub crawls organized."
+      "bookingTips": "非常适合独自旅行者。晚上有组织酒吧串游活动。"
     },
     {
       "name": "双廊晴天见",
@@ -1869,14 +1869,14 @@
         "日出景观",
         "私人阳台"
       ],
-      "bookingTips": "Best sunrise location in Shuanglang. Book months ahead."
+      "bookingTips": "双廊最佳日出观赏地。需提前数月预订。"
     },
     {
       "name": "挖色洱海客栈",
       "nameEn": "Wase Erhai Inn",
       "budget": "mid",
       "priceRange": "¥250-500/night",
-      "address": "Wase Town, Erhai",
+      "address": "挖色镇，洱海",
       "coordinates": {
         "lat": 25.9222,
         "lng": 100.1872
@@ -1888,14 +1888,14 @@
         "当地家庭",
         "人迹罕至"
       ],
-      "bookingTips": "Good alternative to Shuanglang. Very peaceful."
+      "bookingTips": "双廊之外的好选择，非常宁静。"
     },
     {
       "name": "大理苍山饭店",
       "nameEn": "Dali Cangshan Hotel",
       "budget": "mid",
       "priceRange": "¥400-700/night",
-      "address": "Dali City",
+      "address": "大理市",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1672
@@ -1907,14 +1907,14 @@
         "舒适",
         "早餐好"
       ],
-      "bookingTips": "Good base for exploring. Request mountain view rooms."
+      "bookingTips": "探索周边的好基地，建议选择山景房。"
     },
     {
       "name": "三塔寺周边民宿",
       "nameEn": "Three Pagodas Area Homestay",
       "budget": "budget",
       "priceRange": "¥120-300/night",
-      "address": "Near Three Pagodas",
+      "address": "靠近三塔",
       "coordinates": {
         "lat": 25.6722,
         "lng": 100.1572
@@ -1926,14 +1926,14 @@
         "家庭经营",
         "超值"
       ],
-      "bookingTips": "Good for temple visitors. Very peaceful mornings."
+      "bookingTips": "适合参观寺庙的游客，早晨非常宁静。"
     },
     {
       "name": "银桥花语客栈",
       "nameEn": "Yinqiao Flower Language Inn",
       "budget": "budget",
       "priceRange": "¥150-350/night",
-      "address": "Yinqiao Town",
+      "address": "银桥镇",
       "coordinates": {
         "lat": 25.7222,
         "lng": 100.0872
@@ -1945,14 +1945,14 @@
         "安静",
         "适合骑行"
       ],
-      "bookingTips": "Great for photographers. Perfect for flower season."
+      "bookingTips": "摄影爱好者的天堂，花季时尤其完美。"
     },
     {
       "name": "周城白族客栈",
       "nameEn": "Zhoucheng Bai Homestay",
       "budget": "budget",
       "priceRange": "¥100-280/night",
-      "address": "Zhoucheng Village",
+      "address": "周城村",
       "coordinates": {
         "lat": 25.8022,
         "lng": 100.0872
@@ -1964,14 +1964,14 @@
         "当地家庭",
         "文化沉浸"
       ],
-      "bookingTips": "Best for culture seekers. Morning market is walking distance."
+      "bookingTips": "最适合文化爱好者。早市步行即可到达。"
     },
     {
       "name": "巍山古城客栈",
       "nameEn": "Weishan Ancient Town Inn",
       "budget": "mid",
       "priceRange": "¥200-450/night",
-      "address": "Weishan Ancient Town",
+      "address": "巍山古城",
       "coordinates": {
         "lat": 25.2322,
         "lng": 100.3072
@@ -1983,7 +1983,7 @@
         "正宗",
         "安静"
       ],
-      "bookingTips": "Perfect for escaping tourism. Nanzhao Kingdom atmosphere."
+      "bookingTips": "非常适合避开旅游人群。南诏王国氛围浓厚。"
     }
   ],
   "payment": [
@@ -1992,25 +1992,25 @@
       "icon": "alipay",
       "description": "在大理大部分场所均可使用",
       "howToUse": [
-        "Download before arrival",
-        "Link international card"
+        "抵达前下载",
+        "关联国际信用卡"
       ],
       "tips": [
-        "Common in tourist areas",
+        "在旅游区常见",
         "在偏远村庄可能无法使用"
       ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
-      "description": "Accepted in most places",
+      "description": "大多数地方都接受",
       "howToUse": [
-        "WeChat required",
+        "需要微信",
         "接受国际卡"
       ],
       "tips": [
-        "Set to English mode",
-        "Useful in villages"
+        "设置为英文模式",
+        "在乡村有用"
       ]
     },
     {
@@ -2019,7 +2019,7 @@
       "description": "市场和偏远地区必备",
       "howToUse": [
         "ATM在大理古城",
-        "Banks in city"
+        "城市里的银行"
       ],
       "tips": [
         "环洱海骑行请携带500元以上现金",

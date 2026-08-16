@@ -117,7 +117,11 @@ RULES:
 function validOutput(raw, lang, source) {
   if (typeof raw !== "string" || raw.trim().length === 0) return false;
   if (raw === source) return false;
-  if (CJK_RE.test(raw) || KANA_RE.test(raw)) return false;
+  if (lang !== "zh-CN" && lang !== "zh-TW") {
+    if (CJK_RE.test(raw) || KANA_RE.test(raw)) return false;
+  } else if (KANA_RE.test(raw)) {
+    return false; // Chinese output must not contain Japanese kana
+  }
   const presence = SCRIPT_PRESENCE[lang];
   if (presence && !presence.test(raw)) return false;
   if (lang === "vi" || lang === "fr" || lang === "de") { if (FOREIGN_RE.test(raw)) return false; }

@@ -77,7 +77,7 @@ const restaurantDetail = {
         <div class="flex items-center justify-between">
           <a href={`/food?city=${restaurant.city}`} class="flex items-center gap-2 text-gray-600 hover:text-gray-900">
             <span aria-hidden="true">←</span>
-            <span data-i18n="foodPage.back">Back</span>
+            <span data-i18n="foodPage.back" data-i18n-vars={JSON.stringify({ city: city?.nameEn || restaurant.city })}>Back</span>
           </a>
           <span class={`text-sm font-medium ${config.color}`}>
             {config.icon} {showTitleCn ? config.label : config.labelEn}
@@ -95,7 +95,7 @@ const restaurantDetail = {
       {/* Similar Restaurants */}
       {sameCityRestaurants.length > 0 && (
         <div class="bg-white rounded-xl shadow-md p-6 mt-6">
-          <h2 class="text-lg font-bold text-gray-900 mb-4" data-i18n="foodPage.otherRestaurants">Other restaurants nearby</h2>
+          <h2 class="text-lg font-bold text-gray-900 mb-4" data-i18n="foodPage.otherRestaurants" data-i18n-vars={JSON.stringify({ city: city?.nameEn || restaurant.city })}>Other restaurants nearby</h2>
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
             {sameCityRestaurants.map(r => (
               <a href={`/food/${r.id}`} class="block group">
