@@ -1254,3 +1254,21 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **改动**：提交 3bbe134（AIChatPage 移除旧 ConversationSidebar；AIChat 改为受控组件 + 会话/行程双 Tab 侧栏；useAuth/useAIConversation 分发 cc-auth-changed 事件触发 header 刷新；chat-labels.ts 补 12 语言会话侧栏文案）。
 - **状态**：3bbe134 已 push master，触发 deploy-cf-pages.yml 自动部署生产。
 - **下个会话**：线上验证第三方登录全流程（Google/GitHub 登录、callback 回跳对应语言、header 状态、AI 对话侧栏切换、行程保存）；如 Google 登录页异常用隐身窗口重试或确认同意屏幕已 PUBLISH。
+
+### 2026-08-18 会话 #31（个人中心 12 语言本地化收尾 + 提交部署）
+
+- **起**：接续会话 #30。用户提供 Google/GitHub OAuth 凭据并要求"开始实现第三方登录"。代码侧 OAuth 已就绪（凭据一致、authorize 302 正常）；本次收尾上轮遗留的"个人中心/订阅组件 12 语言本地化"（用户反馈 4：登录后个人中心只显示英文）。
+- **改动（未提交前已有 + 本次修复）**：
+  - 语言感知回调：`src/i18n/i18n.ts` getCurrentLanguage 优先取 `window.__I18N__.serverLang`；`src/supabase/config.ts` / `src/services/auth.ts` / `src/lib/auth/supabase-auth.ts` 的 OAuth/邮箱/魔法链接回调改为 `/{lang}/auth/callback`，登录后回跳不丢语言。
+  - 新建 `src/components/account/account-strings.ts`（108+ keys × 12 语言）：UsageStats/BillingHistory/PlanComparison/UpgradePrompt/UsageExhaustedBanner/SubscriptionCard/MembershipStatusBar/PremiumFeatureBadge/ChatErrorBoundary 全部换用 accountT()。
+  - `src/lib/subscription.ts`：TIER_NAMES/TIER_DESCRIPTIONS/TIER_FEATURES 扩为 12 语言。
+  - 本次修复：tsc 报的 30 处类型错误（isZh/STATUS_LABELS/UPGRADE_SUGGESTIONS 残留、lang 声明顺序、statusLabel 类型）；补 10 个新 key（highestPlanDesc/tipPlanQuestions/tipReset/tipUpgradeBefore/tipUpgradeLink/tipUpgradeAfter/offerFirstMonth/annualPrice/upgradeToContinue/upgradeCta）。
+  - AIChatPage 给 MembershipStatusBar/UsageExhaustedBanner/SubscriptionCard 补传 `language={lang}`（此前默认英文）；AccountPage.astro 三个 React 挂载点由 ccReactLang（zh/en）改为传完整 ccCurrentLang；AIChat 的 ItineraryDisplay/QuickPrompts 子组件仍映射 zh/en。
+  - getUserProfile/getUserDashboard/getUserWallet/getProfile 改 `.maybeSingle()`（无数据时避免 406）。
+- **验证（全部通过）**：
+  - npx tsc --noEmit 0 错误；node scripts/check-i18n.mjs 12/12 全覆盖；pnpm test:unit 115/115。
+  - npx astro build 26,686 页成功（~104s×2），产物 account-strings bundle 含全部 12 语言。
+  - Playwright（重启 dev server 后，live-session.json 刷新 token）实测：/ja /de /zh-CN account 三个 React 板块（用量/账单/套餐）均渲染对应语言；/ja/ai 订阅组件显示「無料 5/5 アップグレード 今月のAIリクエスト」。
+  - 注意：探针需用真实 storage key `sb-xyvuqbpwrhkukjgzveyc-auth-token`（非 sb-auth-token）；会话过期时用 POST /auth/v1/token?grant_type=refresh_token 刷新。
+- **提交**：2446022 已 push master（17 文件 +2550/-265），触发 deploy-cf-pages.yml 自动部署生产（CI 已规避 prebuild）。
+- **下个会话**：线上验证 /ja/account 等 12 语言个人中心 + Google/GitHub 登录全流程（Google 被 GFW 挡属网络问题非代码问题；建议用 VPN/移动网络验证）；后续留意 dist 页数余量。
