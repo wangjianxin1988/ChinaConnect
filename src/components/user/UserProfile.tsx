@@ -7,6 +7,7 @@ import type { Database } from "@/types/database";
 import { POINTS } from "@/types/database";
 import { LevelBadge } from "./LevelBadge";
 import { PointsDisplay } from "./PointsDisplay";
+import { authT, detectAuthLang } from "./auth-strings";
 
 type Profile = Database["public"]["Tables"]["profiles"]["Row"];
 
@@ -33,7 +34,8 @@ export function UserProfile({
   isOwnProfile = false,
   className = "",
 }: UserProfileProps) {
-  const displayName = profile.display_name || "Anonymous";
+  const lang = detectAuthLang();
+  const displayName = profile.display_name || authT(lang, "profileAnonymous");
   const avatarUrl = profile.avatar_url || null;
   const nationality = profile.nationality || null;
   const bio = "bio" in profile ? profile.bio : null;
@@ -96,25 +98,25 @@ export function UserProfile({
       {/* Stats Grid */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
         <StatCard
-          label="Posts"
+          label={authT(lang, "profilePosts")}
           value={finalStats.postsCount}
           subLabel={`+${finalStats.postsCount * POINTS.POST} pts`}
           icon="📝"
         />
         <StatCard
-          label="Check-ins"
+          label={authT(lang, "profileCheckins")}
           value={finalStats.checkInsCount}
           subLabel={`+${finalStats.checkInsCount * POINTS.CHECK_IN} pts`}
           icon="📍"
         />
         <StatCard
-          label="Likes Received"
+          label={authT(lang, "profileLikesReceived")}
           value={finalStats.likesReceived}
           subLabel={`+${finalStats.likesReceived * POINTS.LIKE_RECEIVED} pts`}
           icon="❤️"
         />
         <StatCard
-          label="Best Answers"
+          label={authT(lang, "profileBestAnswers")}
           value={finalStats.bestAnswers}
           subLabel={`+${finalStats.bestAnswers * POINTS.BEST_ANSWER} pts`}
           icon="⭐"
@@ -123,7 +125,7 @@ export function UserProfile({
 
       {/* Member Since */}
       <div className="text-sm text-gray-500 dark:text-gray-400">
-        Member since {new Date(profile.created_at).toLocaleDateString()}
+        {authT(lang, "profileMemberSince") + " " + new Date(profile.created_at).toLocaleDateString()}
       </div>
     </div>
   );

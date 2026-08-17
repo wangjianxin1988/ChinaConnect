@@ -1,4 +1,5 @@
 import { ct } from "@/i18n/components-strings";
+import { getRestaurantHighlightTag } from "@/data/food/categories";
 import type { Restaurant, RestaurantHighlightTag } from "@/data/cities/types";
 import React from "react";
 
@@ -7,32 +8,6 @@ interface FoodHighlightsSectionProps {
   citySlug: string;
   cityName: string;
   lang?: string;
-}
-
-const LOCAL_RECOMMEND_THRESHOLD = 150; // avgPrice below this + local type = local recommend
-const AFFORDABLE_MAX_PRICE = 100; // avgPrice <= this = affordable
-
-function getHighlightTag(r: Restaurant): RestaurantHighlightTag | null {
-  if (r.type === "local") {
-    const tags = r.tags || [];
-    // Has "苍蝇馆子" tag → street food
-    if (tags.some((t) => t.includes("苍蝇馆子") || t.includes("street"))) {
-      return "street_food";
-    }
-    // Low price local restaurant → affordable
-    if (r.avgPrice <= AFFORDABLE_MAX_PRICE) {
-      return "affordable";
-    }
-    // Local type + reasonable price + not street food → local recommend
-    if (r.avgPrice <= LOCAL_RECOMMEND_THRESHOLD) {
-      return "local_recommend";
-    }
-  }
-  // michelin/blackpearl that are affordable (lunch sets, etc.) could be marked affordable
-  if (r.type !== "local" && r.avgPrice <= AFFORDABLE_MAX_PRICE) {
-    return "affordable";
-  }
-  return null;
 }
 
 const HIGHLIGHT_CONFIG: Record<
@@ -179,7 +154,7 @@ export function FoodHighlightsSection({
   };
 
   for (const r of restaurants) {
-    const tag = getHighlightTag(r);
+    const tag = getRestaurantHighlightTag(r);
     if (tag) {
       categorized[tag].push(r);
     }
@@ -211,7 +186,7 @@ export function FoodHighlightsSection({
       </div>
 
       {/* Three category grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Local Recommend */}
         {hasLocalRecommend && (
           <div className="space-y-3">
@@ -229,7 +204,7 @@ export function FoodHighlightsSection({
             </div>
             {categorized.local_recommend.length > 3 && (
               <a
-                href={`${lp}/city/${citySlug}/food?filter=local_recommend`}
+                href={`${lp}/city/${citySlug}/food`}
                 className="block text-center text-sm text-red-600 hover:text-red-700 font-medium py-2 border border-dashed border-red-200 rounded-lg hover:bg-red-50 transition-colors"
               >
                 {ct(lang, "hl_view_all_count", "View all {count}").replace("{count}", String(categorized.local_recommend.length))}
@@ -255,7 +230,7 @@ export function FoodHighlightsSection({
             </div>
             {categorized.affordable.length > 3 && (
               <a
-                href={`${lp}/city/${citySlug}/food?filter=affordable`}
+                href={`${lp}/city/${citySlug}/food`}
                 className="block text-center text-sm text-blue-600 hover:text-blue-700 font-medium py-2 border border-dashed border-blue-200 rounded-lg hover:bg-blue-50 transition-colors"
               >
                 {ct(lang, "hl_view_all_count", "View all {count}").replace("{count}", String(categorized.affordable.length))}
@@ -281,7 +256,7 @@ export function FoodHighlightsSection({
             </div>
             {categorized.street_food.length > 3 && (
               <a
-                href={`${lp}/city/${citySlug}/food?filter=street_food`}
+                href={`${lp}/city/${citySlug}/food`}
                 className="block text-center text-sm text-orange-600 hover:text-orange-700 font-medium py-2 border border-dashed border-orange-200 rounded-lg hover:bg-orange-50 transition-colors"
               >
                 {ct(lang, "hl_view_all_count", "View all {count}").replace("{count}", String(categorized.street_food.length))}

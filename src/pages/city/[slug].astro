@@ -2,6 +2,7 @@
 import EmbeddedAppRecommendation from "@/components/apps/EmbeddedAppRecommendation";
 import { InlineAppPillsGroup, getAppsForSection } from "@/components/apps/InlineAppPills";
 import { pruneAppsForLang } from "@/data/apps/app-recommendations";
+import AIRecommendation from "@/components/city/AIRecommendation.astro";
 import { AttractionCard } from "@/components/city/AttractionCard";
 import { AttractionsSection } from "@/components/city/AttractionsSection";
 import { CityMap } from "@/components/city/CityMap";
@@ -505,6 +506,13 @@ const mapMarkers = [
               </svg>
             </a>
           </div>
+          <AIRecommendation
+            lang={lang}
+            topic="food"
+            topicLabel={_lookup("cityPage.foodHighlightsHeading")}
+            cityName={localCityName}
+            citySlug={city.slug}
+          />
         </section>
 
         <!-- Attractions Section (Lazy loaded with infinite scroll) -->
@@ -521,6 +529,13 @@ const mapMarkers = [
             cityName={city.nameEn}
             totalCount={city.attractions.length}
             client:visible
+          />
+          <AIRecommendation
+            lang={lang}
+            topic="attractions"
+            topicLabel={_lookup("cityPage.attractionsHeading")}
+            cityName={localCityName}
+            citySlug={city.slug}
           />
         </section>
 
@@ -636,6 +651,13 @@ const mapMarkers = [
               </div>
             </div>
           </div>
+          <AIRecommendation
+            lang={lang}
+            topic="transport"
+            topicLabel={_lookup("cityPage.sectionTransport")}
+            cityName={localCityName}
+            citySlug={city.slug}
+          />
         </section>
 
         <!-- Accommodation Section -->
@@ -687,6 +709,13 @@ const mapMarkers = [
               </svg>
             </a>
           </div>
+          <AIRecommendation
+            lang={lang}
+            topic="accommodation"
+            topicLabel={_lookup("cityPage.sectionHotels")}
+            cityName={localCityName}
+            citySlug={city.slug}
+          />
         </section>
         <!-- Payment Section -->
         <section id="payment" class="scroll-mt-32">
@@ -749,6 +778,13 @@ const mapMarkers = [
               </p>
             </div>
           </div>
+          <AIRecommendation
+            lang={lang}
+            topic="payment"
+            topicLabel={_lookup("cityPage.sectionPayment")}
+            cityName={localCityName}
+            citySlug={city.slug}
+          />
         </section>
 
         <!-- SIM/eSIM & Connectivity Section -->
@@ -781,6 +817,13 @@ const mapMarkers = [
               </ul>
             </div>
           </div>
+          <AIRecommendation
+            lang={lang}
+            topic="connectivity"
+            topicLabel={_lookup("cityPage.sectionConnectivity")}
+            cityName={localCityName}
+            citySlug={city.slug}
+          />
         </section>
 
         <!-- Apps Section -->
@@ -796,6 +839,13 @@ const mapMarkers = [
             title={(translations[lang] || translations.en).cityPage?.essentialAppsFor?.replace("{city}", city.nameEn) ?? `Essential Apps for ${localCityName}`}
             subtitle={(translations[lang] || translations.en).cityPage?.downloadBefore ?? "Download these apps before arriving in China"}
           />
+          <AIRecommendation
+            lang={lang}
+            topic="apps"
+            topicLabel={_lookup("cityPage.sectionApps")}
+            cityName={localCityName}
+            citySlug={city.slug}
+          />
         </section>
 
         <!-- Culture Section (Lazy loaded with infinite scroll) -->
@@ -807,6 +857,13 @@ const mapMarkers = [
           <p class="section-subtitle">Essential cultural knowledge for {city.nameEn}</p>
 
           <CulturalSection culturalTips={city.culturalTips} client:visible />
+          <AIRecommendation
+            lang={lang}
+            topic="culture"
+            topicLabel={_lookup("cityPage.sectionCulture")}
+            cityName={localCityName}
+            citySlug={city.slug}
+          />
         </section>
 
         <!-- Emergency Section (Lazy loaded with infinite scroll) -->
@@ -818,6 +875,13 @@ const mapMarkers = [
           <p class="section-subtitle">Important phone numbers in {city.nameEn}</p>
 
           <EmergencySection contacts={city.emergencyContacts} city={city} client:visible />
+          <AIRecommendation
+            lang={lang}
+            topic="emergency"
+            topicLabel={_lookup("cityPage.sectionEmergency")}
+            cityName={localCityName}
+            citySlug={city.slug}
+          />
         </section>
     </div>
   </div>

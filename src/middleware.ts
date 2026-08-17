@@ -13,7 +13,17 @@ import { defineMiddleware } from "astro:middleware";
 // Protected routes that require authentication
 const PROTECTED_ROUTES = ["/account"];
 // Public auth pages that redirect to account if already logged in
-const AUTH_ROUTES = ["/auth/login", "/auth/register"];
+const AUTH_ROUTES = ["/auth/login", "/auth/register", "/auth/reset-password"];
+
+// Strip a /{lang} prefix so guards also cover /ja/account, /fr/auth/login etc.
+function stripLangPrefix(path: string): string {
+  const m = path.match(/^\/(en|ja|ko|zh-CN|zh-TW|th|vi|ru|fr|de|ar|fa)(?:\/|$)/);
+  return m ? path.slice(m[1].length + 1) || "/" : path;
+}
+
+function langPrefix(lang: string): string {
+  return lang && lang !== "en" ? "/" + lang : "";
+}
 
 // Supported languages
 const SUPPORTED = [
@@ -121,11 +131,12 @@ export const onRequest = defineMiddleware(async (context, next) => {
   // Auth Guard (existing logic)
   // =========================================================================
 
+  const cleanPath = stripLangPrefix(pathname);
   const isProtected = PROTECTED_ROUTES.some(
-    (route) => pathname === route || pathname.startsWith(`${route}/`),
+    (route) => cleanPath === route || cleanPath.startsWith(`${route}/`),
   );
   const isAuthPage = AUTH_ROUTES.some(
-    (route) => pathname === route || pathname.startsWith(`${route}/`),
+    (route) => cleanPath === route || cleanPath.startsWith(`${route}/`),
   );
 
   if (!isProtected && !isAuthPage) {
@@ -187,11 +198,11 @@ export const onRequest = defineMiddleware(async (context, next) => {
   }
 
   if (isProtected && !user) {
-    return redirect("/auth/login");
+    return redirect(langPrefix(detectedLang) + "/auth/login");
   }
 
   if (isAuthPage && user) {
-    return redirect("/account");
+    return redirect(langPrefix(detectedLang) + "/account");
   }
 
   return next();

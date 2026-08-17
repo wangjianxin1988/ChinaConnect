@@ -39,6 +39,8 @@ export interface ResolvedRestaurant {
   dishHighlights?: string[];
 }
 
+const CJK_LANGS = new Set(["zh-CN", "zh-TW", "ja"]);
+
 export function getAllRestaurantIds(): string[] {
   const ids = new Set<string>(legacyRestaurants.map((r) => r.id));
   for (const city of cities) {
@@ -66,7 +68,9 @@ export function resolveRestaurant(id: string, lang: string): ResolvedRestaurant 
       citySlug: legacy.city,
       cityName: cityNameFor(legacy.city, lang),
       cityNameEn: legacy.cityZh || legacy.city,
-      name: legacy.name,
+      // CJK pages keep the native (usually Chinese) name; other languages
+      // show the localized English/transliterated name instead.
+      name: CJK_LANGS.has(lang) ? legacy.name || legacy.nameEn : legacy.nameEn || legacy.name,
       nameEn: legacy.nameEn || legacy.name,
       type: legacy.type,
       star: legacy.star,
@@ -110,7 +114,12 @@ export function resolveRestaurant(id: string, lang: string): ResolvedRestaurant 
     citySlug: city.slug,
     cityName: cityNameFor(city.slug, lang),
     cityNameEn: city.nameEn,
-    name: l.name || enRest.name,
+    // Localized display name: i18n `name` is the original (usually Chinese),
+    // `nameEn` is the per-language rendering. CJK pages use the native name,
+    // other languages use the localized nameEn so no Chinese leaks through.
+    name: CJK_LANGS.has(lang)
+      ? l.name || l.nameEn || enRest.name
+      : l.nameEn || l.name || enRest.nameEn || enRest.name,
     nameEn: enRest.nameEn || enRest.name,
     type: enRest.type,
     star: enRest.star,

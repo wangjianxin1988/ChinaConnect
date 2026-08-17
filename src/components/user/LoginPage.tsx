@@ -1,16 +1,23 @@
-﻿/**
+/**
  * LoginPage Component
  * Unified authentication page: email, magic link, OAuth, register, forgot password.
  * Replaces the previous two parallel flows (LoginPage + AuthForms).
  *
+ * Fully localized across all 12 languages. Language is resolved from the
+ * server-rendered __I18N__.serverLang (URL prefix / cookie / Accept-Language),
+ * falling back to localStorage and browser detection. All internal links and
+ * post-auth redirects keep the current language prefix so users never drop
+ * back to the English pages mid-flow.
+ *
  * Gracefully handles "OAuth provider not enabled" errors so the user always has
- * the email + password option even when Google/GitHub isn't configured server-side.
+ * the email + password option even when Google/GitHub is not configured server-side.
  */
 
 import { useAuth } from "@/hooks/useAuth";
 import { cn } from "@/lib/utils";
 import { DEMO_MODE } from "@/services/auth";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { authLangPrefix, authT, detectAuthLang } from "./auth-strings";
 
 type AuthMode = "login" | "register" | "magic_link" | "forgot_password";
 
@@ -19,20 +26,24 @@ const PROVIDER_LABELS: Record<string, string> = {
   github: "GitHub",
 };
 
+function detectLang(): string {
+  return detectAuthLang();
+}
+
 function isProviderNotEnabled(err: unknown): boolean {
   if (!err) return false;
   const msg = (err as { message?: string })?.message || String(err);
   return /provider is not enabled|validation_failed|Unsupported provider/i.test(msg);
 }
 
-function friendlyProviderError(provider: string, err: unknown): string {
+function friendlyProviderError(provider: string, err: unknown, lang: string): string {
   if (isProviderNotEnabled(err)) {
-    return `${PROVIDER_LABELS[provider] || provider} sign-in is being set up. Please use email + password for now.`;
+    return authT(lang, "providerSetup", { provider: PROVIDER_LABELS[provider] || provider });
   }
-  return (err as { message?: string })?.message || "OAuth sign-in failed. Please try email + password.";
+  return authT(lang, "oauthFailed");
 }
 
-export function LoginPage() {
+export function LoginPage({ lang: langProp }: { lang?: string } = {}) {
   const [mode, setMode] = useState<AuthMode>("login");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -41,7 +52,9 @@ export function LoginPage() {
   const [resetPasswordSent, setResetPasswordSent] = useState(false);
   const [oauthPending, setOauthPending] = useState<string | null>(null);
   const [disabledProviders, setDisabledProviders] = useState<Set<string>>(new Set());
-  const [nextPath, setNextPath] = useState<string>("/account");
+  const lang = useMemo<string>(() => langProp || detectLang(), [langProp]);
+  const prefix = authLangPrefix(lang);
+  const [nextPath, setNextPath] = useState<string>(prefix + "/account");
 
   const {
     user,
@@ -115,8 +128,6 @@ export function LoginPage() {
       clearError();
       // Surface a friendly inline notice without throwing
       setOauthPending(provider);
-      // useAuth hook exposes `error` setter indirectly through clearError -> next call sets it.
-      // For inline UX, we just show a banner via state:
       return;
     }
     setOauthPending(provider);
@@ -127,12 +138,10 @@ export function LoginPage() {
     } catch (err) {
       setOauthPending(null);
       // Provide a friendlier message for the common "provider not enabled" case
-      const friendly = friendlyProviderError(provider, err);
+      const friendly = friendlyProviderError(provider, err, lang);
       console.warn("[LoginPage] OAuth failed:", err);
-      // If useAuth did not surface the error (it usually does), still let the user see it
-      if (!error) {
-        // Re-throw via the auth hook's clearError + a manual error display isn't exposed,
-        // but our `error` field above will catch it next render via signInWithProvider return.
+      if (friendly && !error) {
+        // useAuth surfaces the error itself on the next render; nothing extra needed
       }
     }
   };
@@ -155,7 +164,7 @@ export function LoginPage() {
     return (
       <div className="max-w-md mx-auto text-center py-12">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4" />
-        <p className="text-gray-500">Redirecting\u2026</p>
+        <p className="text-gray-500">{authT(lang, "redirecting")}</p>
       </div>
     );
   }
@@ -163,7 +172,7 @@ export function LoginPage() {
   const allProvidersDisabled = disabledProviders.has("google") && disabledProviders.has("github");
 
   return (
-    <div className="max-w-md mx-auto">
+    <div className="max-w-md mx-auto" dir={lang === "ar" || lang === "fa" ? "rtl" : "ltr"}>
       {/* Logo */}
       <div className="text-center mb-8">
         <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 text-blue-600 mb-4">
@@ -179,7 +188,7 @@ export function LoginPage() {
           </svg>
         </div>
         <h1 className="text-2xl font-bold text-gray-900">ChinaConnect</h1>
-        <p className="text-gray-500 mt-1">Your AI-powered China travel companion</p>
+        <p className="text-gray-500 mt-1">{authT(lang, "tagline")}</p>
       </div>
 
       {/* Auth Card */}
@@ -187,8 +196,8 @@ export function LoginPage() {
         {/* Mode Tabs */}
         <div className="flex gap-1 p-1 bg-gray-100 rounded-lg mb-6">
           {[
-            { id: "login", label: "Sign In" },
-            { id: "register", label: "Register" },
+            { id: "login", label: authT(lang, "tabSignIn") },
+            { id: "register", label: authT(lang, "tabRegister") },
           ].map((tab) => (
             <button
               key={tab.id}
@@ -213,8 +222,8 @@ export function LoginPage() {
           <div className="mb-6 p-4 bg-blue-50 rounded-lg">
             <p className="text-sm text-blue-700">
               {mode === "magic_link"
-                ? "Enter your email to receive a passwordless sign-in link."
-                : "Enter your email to receive a password reset link."}
+                ? authT(lang, "magicLinkBanner")
+                : authT(lang, "forgotBanner")}
             </p>
           </div>
         )}
@@ -233,10 +242,10 @@ export function LoginPage() {
                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                 <polyline points="22 4 12 14.01 9 11.01" />
               </svg>
-              <span className="font-medium">Check your email!</span>
+              <span className="font-medium">{authT(lang, "checkEmail")}</span>
             </div>
             <p className="text-sm text-green-600 mt-1">
-              We sent a magic link to {email}. Click the link to sign in.
+              {authT(lang, "magicSentDesc", { email })}
             </p>
           </div>
         )}
@@ -248,10 +257,10 @@ export function LoginPage() {
                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                 <polyline points="22 4 12 14.01 9 11.01" />
               </svg>
-              <span className="font-medium">Check your email!</span>
+              <span className="font-medium">{authT(lang, "checkEmail")}</span>
             </div>
             <p className="text-sm text-green-600 mt-1">
-              If an account exists for {email}, we sent password reset instructions.
+              {authT(lang, "resetSentDesc", { email })}
             </p>
           </div>
         )}
@@ -265,7 +274,7 @@ export function LoginPage() {
               <line x1="12" y1="16" x2="12.01" y2="16" />
             </svg>
             <div>
-              <p className="text-sm font-medium text-red-800">Error</p>
+              <p className="text-sm font-medium text-red-800">{authT(lang, "errorTitle")}</p>
               <p className="text-sm text-red-600 mt-1">{error}</p>
             </div>
           </div>
@@ -274,7 +283,7 @@ export function LoginPage() {
         {/* OAuth unavailable banner */}
         {allProvidersDisabled && (mode === "login" || mode === "register") && (
           <div className="mb-6 p-3 bg-amber-50 border border-amber-200 rounded-lg text-sm text-amber-800">
-            Social sign-in is currently being configured. Please use email + password below.
+            {authT(lang, "oauthUnavailable")}
           </div>
         )}
         {/* Form */}
@@ -282,34 +291,34 @@ export function LoginPage() {
           <form onSubmit={handleSubmit} className="space-y-4">
             {mode === "register" && (
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Display Name</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">{authT(lang, "displayNameLabel")}</label>
                 <input
                   type="text"
                   value={displayName}
                   onChange={(e) => setDisplayName(e.target.value)}
                   required
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
-                  placeholder="Your display name"
+                  placeholder={authT(lang, "displayNamePlaceholder")}
                 />
               </div>
             )}
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+              <label className="block text-sm font-medium text-gray-700 mb-1">{authT(lang, "emailLabel")}</label>
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
-                placeholder="you@example.com"
+                placeholder={authT(lang, "emailPlaceholder")}
               />
             </div>
 
             {mode !== "magic_link" && (
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  {mode === "forgot_password" ? "Confirm Email" : "Password"}
+                  {mode === "forgot_password" ? authT(lang, "confirmEmailLabel") : authT(lang, "passwordLabel")}
                 </label>
                 <input
                   type={mode === "forgot_password" ? "email" : "password"}
@@ -318,7 +327,7 @@ export function LoginPage() {
                   required={mode !== "forgot_password"}
                   minLength={mode !== "forgot_password" ? 6 : undefined}
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
-                  placeholder={mode === "forgot_password" ? "Confirm your email" : "At least 6 characters"}
+                  placeholder={mode === "forgot_password" ? authT(lang, "confirmEmailPlaceholder") : authT(lang, "passwordPlaceholder")}
                 />
               </div>
             )}
@@ -334,16 +343,16 @@ export function LoginPage() {
                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
                   </svg>
-                  Processing\u2026
+                  {authT(lang, "processing")}
                 </span>
               ) : mode === "login" ? (
-                "Sign In"
+                authT(lang, "submitSignIn")
               ) : mode === "register" ? (
-                "Create Account"
+                authT(lang, "submitRegister")
               ) : mode === "magic_link" ? (
-                "Send Magic Link"
+                authT(lang, "submitMagicLink")
               ) : (
-                "Send Reset Link"
+                authT(lang, "submitReset")
               )}
             </button>
           </form>
@@ -357,7 +366,7 @@ export function LoginPage() {
                 <div className="w-full border-t border-gray-200" />
               </div>
               <div className="relative flex justify-center text-sm">
-                <span className="px-2 bg-white text-gray-500">or continue with</span>
+                <span className="px-2 bg-white text-gray-500">{authT(lang, "orContinueWith")}</span>
               </div>
             </div>
 
@@ -396,14 +405,14 @@ export function LoginPage() {
         {/* Demo Mode Quick Login */}
         {DEMO_MODE && mode === "login" && (
           <div className="mt-4 p-3 bg-amber-50 border border-amber-200 rounded-lg">
-            <p className="text-xs text-amber-700 mb-2">Demo mode is active. Use demo credentials to explore.</p>
+            <p className="text-xs text-amber-700 mb-2">{authT(lang, "demoActive")}</p>
             <button
               type="button"
               onClick={handleDemoLogin}
               disabled={isLoading}
               className="w-full py-2 px-3 bg-amber-600 text-white text-sm font-medium rounded-lg hover:bg-amber-700 transition-colors disabled:opacity-50"
             >
-              Try Demo Account
+              {authT(lang, "tryDemo")}
             </button>
           </div>
         )}
@@ -412,42 +421,42 @@ export function LoginPage() {
         <div className="mt-6 text-center text-sm space-x-2">
           {mode === "login" && (
             <>
-              <span className="text-gray-500">No account?</span>
+              <span className="text-gray-500">{authT(lang, "noAccount")}</span>
               <button type="button" className="text-blue-600 hover:underline" onClick={() => { setMode("register"); clearError(); }}>
-                Sign up
+                {authT(lang, "signUp")}
               </button>
               <span className="text-gray-300">|</span>
               <button type="button" className="text-blue-600 hover:underline" onClick={() => { setMode("magic_link"); clearError(); }}>
-                Magic link
+                {authT(lang, "magicLink")}
               </button>
               <span className="text-gray-300">|</span>
               <button type="button" className="text-blue-600 hover:underline" onClick={() => { setMode("forgot_password"); clearError(); }}>
-                Forgot password
+                {authT(lang, "forgotPassword")}
               </button>
             </>
           )}
           {mode === "register" && (
             <>
-              <span className="text-gray-500">Have an account?</span>
+              <span className="text-gray-500">{authT(lang, "haveAccount")}</span>
               <button type="button" className="text-blue-600 hover:underline" onClick={() => { setMode("login"); clearError(); }}>
-                Sign in
+                {authT(lang, "signIn")}
               </button>
             </>
           )}
           {(mode === "magic_link" || mode === "forgot_password") && (
             <button type="button" className="text-blue-600 hover:underline" onClick={() => { setMode("login"); clearError(); }}>
-              Back to sign in
+              {authT(lang, "backToSignIn")}
             </button>
           )}
         </div>
       </div>
 
-      <p className="text-center text-sm text-gray-500 mt-6">
-        By continuing, you agree to our{" "}
-        <a href="/terms" className="text-blue-600 hover:underline">Terms of Service</a>{" "}
-        and{" "}
-        <a href="/privacy" className="text-blue-600 hover:underline">Privacy Policy</a>
-      </p>
+      <p className="text-center text-sm text-gray-500 mt-6" dangerouslySetInnerHTML={{
+        __html: authT(lang, "agreeTerms", {
+          terms: '<a href="' + prefix + '/terms" class="text-blue-600 hover:underline">' + authT(lang, "terms") + "</a>",
+          privacy: '<a href="' + prefix + '/privacy" class="text-blue-600 hover:underline">' + authT(lang, "privacy") + "</a>",
+        }),
+      }} />
     </div>
   );
 }

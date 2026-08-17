@@ -1,0 +1,130 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { translations } from "@/i18n/translations";
+import type { Language } from "@/i18n/translations";
+
+export function getStaticPaths() {
+  const langs = ["ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"] as const;
+  return langs.map((lang) => ({ params: { lang } }));
+}
+
+const lang = (Astro.params.lang as Language) || "en";
+const title = (translations[lang]?.authPage?.callbackTitle) || translations.en.authPage?.callbackTitle || "Signing you in...";
+---
+
+<BaseLayout title={title}>
+  <div class="min-h-screen flex items-center justify-center bg-gray-50 px-4" dir={lang === "ar" || lang === "fa" ? "rtl" : "ltr"}>
+    <div class="max-w-md w-full text-center bg-white rounded-xl shadow-sm border p-8">
+      <div id="auth-spinner">
+        <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+        <p id="auth-signing-in" class="text-gray-600" data-i18n="authPage.signingYouIn">Signing you in...</p>
+      </div>
+      <div id="auth-error" class="hidden">
+        <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-red-100 flex items-center justify-center">
+          <svg class="w-6 h-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </div>
+        <h2 class="text-lg font-semibold text-gray-900 mb-2" data-i18n="authPage.errorTitle">Verification failed</h2>
+        <p id="auth-error-msg" class="text-sm text-gray-600 mb-6"></p>
+        <a id="auth-back-link" href="/auth/login" class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
+          Back to sign in
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  import { exchangeCodeForSession, supabase, verifyOtpToken } from '@/supabase/config';
+  import { authLangPrefix, authT, detectAuthLang } from '@/components/user/auth-strings';
+
+  const lang = detectAuthLang();
+  const prefix = authLangPrefix(lang);
+
+  async function completeAuth(): Promise<void> {
+    const params = new URLSearchParams(window.location.search);
+    const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ''));
+
+    // 1) PKCE flow: ?code=... (default Supabase email confirmation since v2)
+    const code = params.get('code') || hashParams.get('code');
+    if (code) {
+      const { error } = await exchangeCodeForSession(code);
+      if (!error) {
+        // Clean URL, then redirect to account
+        function goNext() {
+          var n = null;
+          try { n = sessionStorage.getItem("auth_next"); } catch (e) { n = null; }
+          try { if (n) sessionStorage.removeItem("auth_next"); } catch (e) {}
+          if (n && n.charAt(0) === "/" && n.charAt(1) !== "/") { window.location.href = n; return; }
+          window.location.href = prefix + "/account";
+        }
+          window.history.replaceState({}, '', window.location.pathname);
+        goNext();
+        return;
+      }
+      console.warn('[auth/callback] exchangeCodeForSession failed:', error);
+    }
+
+    // 2) Token hash flow: ?token_hash=...&type=signup (older / alternate email templates)
+    const tokenHash = params.get('token_hash') || hashParams.get('token_hash');
+    const otpType = params.get('type') || hashParams.get('type');
+    if (tokenHash && otpType) {
+      const { error } = await verifyOtpToken(tokenHash, otpType);
+      if (!error) {
+        window.history.replaceState({}, '', window.location.pathname);
+        goNext();
+        return;
+      }
+      console.warn('[auth/callback] verifyOtp failed:', error);
+    }
+
+    // 3) Some Supabase flows use hash fragments like #access_token=...
+    const accessToken = hashParams.get('access_token');
+    if (accessToken) {
+      // Implicit flow - try to set session from URL
+      const refreshToken = hashParams.get('refresh_token') || '';
+      try {
+        const { error } = await supabase.auth.setSession({
+          access_token: accessToken,
+          refresh_token: refreshToken,
+        });
+        if (!error) {
+          window.history.replaceState({}, '', window.location.pathname);
+          goNext();
+          return;
+        }
+        console.warn('[auth/callback] setSession failed:', error);
+      } catch (e) {
+        console.warn('[auth/callback] setSession threw:', e);
+      }
+    }
+
+    // 4) Fallback: maybe session was already established (e.g., magic link click that auto-sets)
+    const { data: { session } } = await supabase.auth.getSession();
+    if (session) {
+      goNext();
+      return;
+    }
+
+    // 5) Nothing worked - show error UI
+    showAuthError(authT(lang, "callbackErrorDesc"));
+  }
+
+  function showAuthError(msg: string): void {
+    const spinner = document.getElementById('auth-spinner');
+    const errorBox = document.getElementById('auth-error');
+    const errorMsg = document.getElementById('auth-error-msg');
+    const backLink = document.getElementById('auth-back-link') as HTMLAnchorElement | null;
+    if (spinner) spinner.classList.add('hidden');
+    if (errorMsg) errorMsg.textContent = msg;
+    if (backLink) backLink.href = prefix + "/auth/login";
+    if (errorBox) errorBox.classList.remove('hidden');
+  }
+
+  // Run the auth-completion flow
+  completeAuth().catch((err) => {
+    console.error('[auth/callback] unhandled error:', err);
+    showAuthError(authT(lang, "callbackUnexpected"));
+  });
+</script>

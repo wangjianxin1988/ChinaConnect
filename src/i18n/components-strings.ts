@@ -968,7 +968,7 @@ export const COMP_STRINGS: Record<string, Record<ComponentLang, string>> = {
     "zh-CN": "全部",
     "zh-TW": "全部",
     th: "ทั้งหมด",
-    vi: "Tat ca",
+    vi: "Tất cả",
     ru: "Все",
     fr: "Tous",
     de: "Alle",
@@ -981,13 +981,13 @@ export const COMP_STRINGS: Record<string, Record<ComponentLang, string>> = {
     ko: "등급：",
     "zh-CN": "等级：",
     "zh-TW": "等級：",
-    th: "ระดับชนเกรียจ๊องคอนนานชน",
+    th: "ระดับ",
     vi: "Hạng:",
-    ru: "Уировень：",
-    fr: "Categorie :",
+    ru: "Уровень：",
+    fr: "Catégorie :",
     de: "Stufe:",
-    ar: "الفئةة：",
-    fa: "سطحکانی تیر ـتیر استـتیر"
+    ar: "الفئة:",
+    fa: "سطح:"
   },
   tier_all: {
     en: "All",
@@ -996,7 +996,7 @@ export const COMP_STRINGS: Record<string, Record<ComponentLang, string>> = {
     "zh-CN": "全部",
     "zh-TW": "全部",
     th: "ทั้งหมด",
-    vi: "Tat ca",
+    vi: "Tất cả",
     ru: "Все",
     fr: "Tous",
     de: "Alle",
@@ -1010,7 +1010,7 @@ export const COMP_STRINGS: Record<string, Record<ComponentLang, string>> = {
     "zh-CN": "无",
     "zh-TW": "無",
     th: "ไม่มี",
-    vi: "Khong",
+    vi: "Không",
     ru: "Нет",
     fr: "Aucun",
     de: "Keine",
@@ -1024,11 +1024,11 @@ export const COMP_STRINGS: Record<string, Record<ComponentLang, string>> = {
     "zh-CN": "S级",
     "zh-TW": "S級",
     th: "ระดับ S",
-    vi: "Hang S",
+    vi: "Hạng S",
     ru: "S-уровень",
-    fr: "Categorie S",
+    fr: "Catégorie S",
     de: "Stufe S",
-    ar: "الفئةة S",
+    ar: "الفئة S",
     fa: "سطحک S"
   },
   tier_short_a: {
@@ -1042,7 +1042,7 @@ export const COMP_STRINGS: Record<string, Record<ComponentLang, string>> = {
     ru: "A-уровень",
     fr: "Categorie A",
     de: "Stufe A",
-    ar: "الفئةة A",
+    ar: "الفئة A",
     fa: "سطحک A"
   },
   tier_short_b: {
@@ -1052,11 +1052,11 @@ export const COMP_STRINGS: Record<string, Record<ComponentLang, string>> = {
     "zh-CN": "B级",
     "zh-TW": "B級",
     th: "ระดับ B",
-    vi: "Hang B",
+    vi: "Hạng B",
     ru: "B-уровень",
-    fr: "Categorie B",
+    fr: "Catégorie B",
     de: "Stufe B",
-    ar: "الفئةة B",
+    ar: "الفئة B",
     fa: "سطحک B"
   },
   tier_short_c: {
@@ -1070,7 +1070,7 @@ export const COMP_STRINGS: Record<string, Record<ComponentLang, string>> = {
     ru: "C-уровень",
     fr: "Categorie C",
     de: "Stufe C",
-    ar: "الفئةة C",
+    ar: "الفئة C",
     fa: "سطحک C"
   },
   tier_short_d: {
@@ -1084,7 +1084,7 @@ export const COMP_STRINGS: Record<string, Record<ComponentLang, string>> = {
     ru: "D-уровень",
     fr: "Categorie D",
     de: "Stufe D",
-    ar: "الفئةة D",
+    ar: "الفئة D",
     fa: "سطحک D"
   },
   hotel_call: {
@@ -2627,6 +2627,34 @@ export const COMP_STRINGS: Record<string, Record<ComponentLang, string>> = {
     de: "Phase 12",
     ar: "المرحلة 12",
     fa: "مرحله 12",
+  },
+  ai_rec_prompt: {
+    en: "Help me plan {topic} in {city}",
+    ja: "{city}の{topic}を計画するのを手伝って",
+    ko: "{city}의 {topic} 계획을 도와주세요",
+    "zh-CN": "帮我规划{city}的{topic}",
+    "zh-TW": "幫我規劃{city}的{topic}",
+    th: "ช่วยวางแผน{topic}ใน{city}",
+    vi: "Giúp tôi lên kế hoạch {topic} ở {city}",
+    ru: "Помогите спланировать {topic} в {city}",
+    fr: "Aidez-moi à planifier {topic} à {city}",
+    de: "Hilf mir, {topic} in {city} zu planen",
+    ar: "ساعدني في التخطيط لـ {topic} في {city}",
+    fa: "به من در برنامه‌ریزی {topic} در {city} کمک کن"
+  },
+  ai_rec_cta: {
+    en: "Ask the AI Assistant",
+    ja: "AIアシスタントに聞く",
+    ko: "AI 어시스턴트에게 물어보기",
+    "zh-CN": "咨询 AI 助手",
+    "zh-TW": "諮詢 AI 助手",
+    th: "ถามผู้ช่วย AI",
+    vi: "Hỏi trợ lý AI",
+    ru: "Спросить AI-ассистента",
+    fr: "Demander à l'assistant IA",
+    de: "KI-Assistent fragen",
+    ar: "اسأل المساعد الذكي",
+    fa: "از دستیار هوشمند بپرس"
   },
 };
 

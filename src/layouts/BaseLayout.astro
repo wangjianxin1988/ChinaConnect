@@ -250,7 +250,7 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
         var LANG_STORAGE_KEY = "chinaconnect_language";
         // Paths that exist under /<lang>/...; internal links to these must keep the
         // current language prefix so browsing never silently drops back to English.
-        var LOCALIZED_PATHS = ["/cities", "/city", "/food", "/guide", "/blog", "/attractions", "/scenic-spots", "/ai", "/emergency", "/contact", "/terms", "/privacy"];
+        var LOCALIZED_PATHS = ["/cities", "/city", "/food", "/guide", "/blog", "/attractions", "/scenic-spots", "/ai", "/emergency", "/contact", "/terms", "/privacy", "/auth", "/account", "/profile"];
 
         function safeGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
         function safeSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }

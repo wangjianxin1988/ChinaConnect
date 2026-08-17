@@ -1,0 +1,21 @@
+---
+import { LoginPage } from '@/components/user/LoginPage';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { translations } from "@/i18n/translations";
+import type { Language } from "@/i18n/translations";
+
+export function getStaticPaths() {
+  const langs = ["ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"] as const;
+  return langs.map((lang) => ({ params: { lang } }));
+}
+
+const lang = (Astro.params.lang as Language) || "en";
+---
+
+<BaseLayout title={(translations[lang]?.authPage?.loginTitle) || translations.en.authPage?.loginTitle || "Sign In - ChinaConnect"}>
+  <main class="min-h-screen py-12 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <LoginPage client:load lang={lang} />
+    </div>
+  </main>
+</BaseLayout>

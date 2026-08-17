@@ -5,6 +5,7 @@ import { pruneCityEntityNames } from "@/lib/city-name";
 import { getCityData } from "@/data/cities-i18n";
 import { getLangFromUrl } from "@/i18n/utils";
 import { translations } from "@/i18n/translations";
+import AIRecommendation from "@/components/city/AIRecommendation.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
 export function getStaticPaths() {
@@ -120,6 +121,13 @@ const _lookup = (key) => {
 
   <!-- Attractions Grid -->
   <section class="container-custom py-8">
+  <AIRecommendation
+    lang={lang}
+    topic="attractions"
+    topicLabel={_lookup("cityPage.attractionsHeading")}
+    cityName={localCityName}
+    citySlug={city.slug}
+  />
     <div id="attractions-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {city.attractions.map((attraction: any, index: number) => (
         <div

@@ -4,6 +4,7 @@ import { getCityBySlug, citySlugs } from "@/data/cities/index";
 import { getCityData } from "@/data/cities-i18n";
 import { ct } from "@/i18n/components-strings";
 import { translations } from "@/i18n/translations";
+import AIRecommendation from "@/components/city/AIRecommendation.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { cityDisplayName, entityDisplayName, entitySecondaryName, pruneCityEntityNames } from "@/lib/city-name";
 import { citySourceLabel } from "@/lib/city-sources";
@@ -144,6 +145,13 @@ const CAT_LABELS: Record<string, Record<string, string>> = {
 
   <!-- Attractions Grid -->
   <section class="container-custom py-8">
+  <AIRecommendation
+    lang={lang}
+    topic="attractions"
+    topicLabel={_ft("cityPage.attractionsHeading")}
+    cityName={localCityName}
+    citySlug={city.slug}
+  />
     <div id="attractions-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {city.attractions.map((attraction: any, index: number) => (
         <div

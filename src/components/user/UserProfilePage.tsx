@@ -11,6 +11,7 @@ import { supabase } from "@/supabase/config";
 import type { Database } from "@/types/database";
 import { useEffect, useState } from "react";
 import { UserProfile } from "./UserProfile";
+import { authT, detectAuthLang } from "./auth-strings";
 
 type Profile = Database["public"]["Tables"]["profiles"]["Row"];
 
@@ -23,6 +24,7 @@ interface UserProfilePageProps {
 }
 
 export function UserProfilePage({ userId, isOwnProfile = false }: UserProfilePageProps) {
+  const lang = detectAuthLang();
   const [profile, setProfile] = useState<Profile | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isEditing, setIsEditing] = useState(false);
@@ -134,8 +136,8 @@ export function UserProfilePage({ userId, isOwnProfile = false }: UserProfilePag
     return (
       <div className="text-center py-12">
         <span className="text-5xl mb-4 block">😕</span>
-        <h2 className="text-xl font-semibold mb-2">User not found</h2>
-        <p className="text-gray-500">This user doesn't exist or has been removed.</p>
+        <h2 className="text-xl font-semibold mb-2">{authT(lang, "profileUserNotFound")}</h2>
+        <p className="text-gray-500">{authT(lang, "profileNotFoundDesc")}</p>
       </div>
     );
   }
@@ -145,22 +147,22 @@ export function UserProfilePage({ userId, isOwnProfile = false }: UserProfilePag
       {/* Profile Card */}
       <UserProfile profile={profile} stats={stats} isOwnProfile={isOwnProfile} />
 
-      {/* Edit Profile Button (own profile) */}
+      {/* {authT(lang, "profileEdit")} Button (own profile) */}
       {isOwnProfile && !isEditing && (
         <div className="flex justify-end">
           <Button variant="outline" onClick={() => setIsEditing(true)}>
-            Edit Profile
+            {authT(lang, "profileEdit")}
           </Button>
         </div>
       )}
 
-      {/* Edit Profile Form */}
+      {/* {authT(lang, "profileEdit")} Form */}
       {isEditing && (
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-          <h3 className="text-lg font-semibold mb-4">Edit Profile</h3>
+          <h3 className="text-lg font-semibold mb-4">{authT(lang, "profileEdit")}</h3>
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium mb-1">Display Name</label>
+              <label className="block text-sm font-medium mb-1">{authT(lang, "profileDisplayName")}</label>
               <Input
                 type="text"
                 value={editData.display_name}
@@ -168,7 +170,7 @@ export function UserProfilePage({ userId, isOwnProfile = false }: UserProfilePag
               />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1">Bio</label>
+              <label className="block text-sm font-medium mb-1">{authT(lang, "profileBio")}</label>
               <Textarea
                 value={editData.bio}
                 onChange={(e) => setEditData((prev) => ({ ...prev, bio: e.target.value }))}
@@ -176,19 +178,19 @@ export function UserProfilePage({ userId, isOwnProfile = false }: UserProfilePag
               />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1">Nationality</label>
+              <label className="block text-sm font-medium mb-1">{authT(lang, "profileNationality")}</label>
               <Input
                 type="text"
                 value={editData.nationality}
                 onChange={(e) => setEditData((prev) => ({ ...prev, nationality: e.target.value }))}
-                placeholder="e.g., United States"
+                placeholder={authT(lang, "profileNationalityPlaceholder")}
               />
             </div>
             <div className="flex justify-end gap-2">
               <Button variant="outline" onClick={() => setIsEditing(false)}>
                 Cancel
               </Button>
-              <Button onClick={handleUpdateProfile}>Save Changes</Button>
+              <Button onClick={handleUpdateProfile}>{authT(lang, "profileSave")}</Button>
             </div>
           </div>
         </div>

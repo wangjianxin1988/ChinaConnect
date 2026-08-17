@@ -1,6 +1,6 @@
-﻿---
-// /auth/register - alias for /auth/login (with mode=register via hash).
-// The unified LoginPage component renders both modes; keeping a separate
-// URL just for compatibility with older links.
-return Astro.redirect("/auth/login#register");
+---
+// /auth/register - alias for the login page (with mode=register via hash).
+import { authLangPrefix } from '@/components/user/auth-strings';
+const lang = (Astro.locals.lang as string) || "en";
+return Astro.redirect(authLangPrefix(lang) + "/auth/login#register");
 ---

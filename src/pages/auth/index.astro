@@ -1,5 +1,6 @@
-﻿---
-// /auth - unified entry: redirect to /auth/login (the canonical login page).
-// Single sign-in surface prevents confusion between two separate flows.
-return Astro.redirect("/auth/login");
+---
+// /auth - unified entry: redirect to the login page in the detected language.
+import { authLangPrefix } from '@/components/user/auth-strings';
+const lang = (Astro.locals.lang as string) || "en";
+return Astro.redirect(authLangPrefix(lang) + "/auth/login");
 ---

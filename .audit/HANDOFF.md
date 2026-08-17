@@ -1121,3 +1121,64 @@ for lang in LANGS:
 - **提交**：4a55aed（scenic 懒加载 + E2E 修复）、df8fc9d（coverage 报告修复）、76c1179（#22 docs）已全部推送。
 - **遗留**：无强制待办。后续加城市/景点/美食/博客时留意 dist 文件数余量（逼近 20k 时继续用壳+差异方案）。scenic-data JSON 每语言 ~0.5MB，懒加载时按需请求，Cache-Control max-age=86400。
 - **下个会话**：若 E2E coverage job 仍有问题，检查 playwright-report 产物是否生成；无则无强制待办。
+
+### 2026-08-17 会话 #24（第 3 轮反馈：语言自动匹配 + 美食板块三列全量 + 城市页 AI 推荐卡 + 认证流程本地化）
+
+- **起**：用户 4 项反馈（中文）。3 个 worker 子代理并行（Bohr=Worker 语言重定向 / Dalton=美食板块 / Tesla=城市页 AI 推荐卡），主代理做认证流程本地化（任务 4）。
+- **改动（子代理）**：
+  - **Bohr** functions/[[path]].ts：首次访问自动 302 到 /{lang}/... 并种 chinaconnect_language cookie（Accept-Language q 值排序 → CF-IPCountry 兜底）；爬虫/静态资源/系统路径（/img /_astro /api /auth /account /profile /checkout /robots.txt /sitemap* /llms.txt /sw.js 等）/带 cookie /带 ?lang= 均跳过，不碰既有 food delta / PAGE_TITLES 分支；用 new Response 而非 Response.redirect 规避 headers immutable。
+  - **Dalton**：src/data/food/categories.ts 新增 getCityFilterCategory（michelin/blackpearl 优先 → highlight 标签 → 类型兜底，全 11 分类）；FoodHighlightsSection.tsx 三列 grid + "View all"去掉 ?filter= 统一指向 /{lang}/city/{slug}/food；两个城市美食页筛选组从 5 类换成「全部」+CATEGORY_ORDER 11 类（0 计数也显示），FILTER_ALIASES 更新；插入 AIRecommendation 卡（带 .astro 扩展名）。
+  - **Tesla**：新建 src/components/city/AIRecommendation.astro（SSR，12 语言经 ct()）；EN+[lang] 城市详情页 9 个板块（food/attractions/transport/accommodation/payment/connectivity/apps/culture/emergency）各插 1 张，attractions/hotels 列表页顶部各 1 张，/ai?q= 参数正确。
+- **改动（主代理，任务 4 认证本地化）**：
+  - 新建 src/components/user/auth-strings.ts（authT/detectAuthLang/authLangPrefix + 80+ 认证文案 key ×12 语言）；LoginPage.tsx 全量本地化（登录/注册/魔法链接/忘记密码/OAuth/错误/条款链接，语言前缀 + RTL dir）；新建 ResetPasswordPage.tsx + [lang]/auth/reset-password.astro（此前 404）。
+  - 新建 [lang]/auth/login|index|register|callback.astro、[lang]/account.astro、[lang]/profile.astro（getStaticPaths 排除 en，与现有 [lang] 页一致）；account 页抽取为共享组件 src/components/user/AccountPage.astro。
+  - 跳转全链路带语言前缀：AIChatPage 开始对话 → /{lang}/auth/login?next=…；middleware 保护路由支持前缀 + 重定向带前缀；BaseLayout LOCALIZED_PATHS 加入 /auth /account /profile；profile 未登录重定向到 /{lang}/auth/login。
+  - 邮箱/OAuth 回调保持根路径（/auth/callback、/auth/reset-password，规避 Supabase 重定向白名单风险），页面内容运行时本地化（detectAuthLang：前缀页权威 > localStorage 用户选择 > cookie 地区），登录后回跳 /{lang}/account。
+  - UserProfilePage/UserProfile 资料页 15 处文案 12 语言化。
+- **验证**（全部通过）：
+  - pnpm typecheck 0 错误；node node_modules/astro/astro.js build 26,686 页成功；pack-food-details OK（19,833 页→286 delta chunks）。
+  - wrangler pages dev 抽验：/ja|zh-CN|ar/auth/login SSR 已本地化、根 /auth/login 英文、/ja/auth/reset-password 与 /ja/auth/callback 标题本地化、/ja/account 200（マイアカウント）、/ja/profile 重定向 /ja/auth/login、/ja/auth/register → /ja/auth/login#register、/ja/ai 日文 + JS 跳 /{lang}/auth/login?next=、/ja/city/beijing/food 12 筛选 + 50 卡 + 0 个 ?filter= 链接、/ja/city/beijing 9 张 AI 推荐卡。
+- **遗留**：
+  - ja 等语言美食筛选芯片计数偏低是既有数据问题：src/data/cities-i18n/ja/*.json 把 restaurants[].type 枚举也翻译成日文（ミシュラン/ローカル…），导致类型映射匹配不到（50 张卡仍全部渲染可筛，未在本次改数据）。
+  - Supabase 控制台若开启 Google/GitHub OAuth，redirect allowlist 需含 https://chinaengage.org/auth/callback（现行为，未改动）；本次未新增白名单 URL。
+  - dist 9,4xx 文件（新增 ~84 个 auth/account/profile 页），距 20k 上限余量充足。
+- **下个会话**：无强制待办。可在本地预览跑 E2E 确认无回归；后续加城市/美食/景点时留意 dist 余量。
+
+### 2026-08-17 会话 #25（跨语言数据一致性审计 + street_food 分类语言无关化）
+
+- **起**：用户提问「所有语言版本的数据不一致吗？需要全部一致。」+ 交接摘要提示 getRestaurantHighlightTag 硬编码 "苍蝇馆子"/"street" 而 tags 已被翻译。
+- **审计结论**（全 12 语言，en 源为基准）：
+  - 数据量完全一致：restaurants 1750 / attractions 1770 / hotels 575，三类的 id 均与 EN 源 1:1（0 缺失）。
+  - 字段完整性一致：restaurant 的 description/address/cuisine 缺失数全语言均为 0；description 无残留英文。
+  - **行为不一致（已修复）**：i18n 数据把 tags 翻译（street→屋台/거리/街头/…），而 getRestaurantHighlightTag / FoodHighlightsSection.getHighlightTag 硬编码检查 "苍蝇馆子"/"street"，导致 11 个非 EN 语言把 58 家 street 标签本地店误归入 affordable，Street Food 筛选芯片 EN=58、其它语言=0。
+  - 残余（非本次范围）：餐厅 name 大多保留 EN 源值（中文专名，如 新荣记/全聚德），ja 有日文名、zh-CN/TW 保留中文属正常；th/vi/de/ar/fa 等仍以中文专名显示，属翻译质量遗留。另 CATEGORY_CONFIG.labels 有少量乱码（ja 手可な料理、ko 가격매도재、th อาหารสสามารถาบ、vi "Do an via he" 等），建议后续统一清理。
+- **改动**：
+  - src/data/food/categories.ts：从 EN 源（@/data/cities/index）按 id 构建 STREET_FOOD_IDS 白名单（type==="local" && tags 含 street/苍蝇馆子），新增 isStreetFoodRestaurantId()；getRestaurantHighlightTag 先按 id 判定（语言无关），保留原 tag 关键字作为遗留数据兜底。该模块所有调用方本就已引入 cities index / getCityData（eager glob），无新增 bundle。
+  - src/components/city/FoodHighlightsSection.tsx：删除本地重复 getHighlightTag（含硬编码检查），改为复用 categories.ts 的 getRestaurantHighlightTag。
+  - src/components/city/CityFoodNav.tsx：死代码（全仓无引用），同样含硬编码检查，未改动。
+- **验证**（全部通过）：
+  - 全量模拟：修复后 12 语言 street_food=58 / affordable=1189 / local=377 / michelin=26 / blackpearl=38 完全一致。
+  - pnpm typecheck 0 错误；pnpm test:unit 115/115 通过。
+  - dev server（--host 双栈）SSR 抽验 12 语言 /{lang}/city/beijing/food：筛选芯片与卡片计数全一致（All 50 / Michelin 8 / Black Pearl 5 / Local 15 / Affordable 14 / Street Food 8，street_food 卡 8/50）。
+  - 城市详情页美食高亮：en/ja/zh-CN 街边小吃栏计数均 8。
+  - biome 仅报既有格式化风格（CATEGORY_CONFIG 单行 labels 等），非本次引入，未做大面积重排。
+- **提交**：未提交（工作区含会话 #24 未提交改动，需用户确认后一并提交）。
+- **下个会话**：无强制待办。可选：清理 CATEGORY_CONFIG.labels 乱码；评估餐厅中文专名在各语言是否需要「专名保留 + 翻译副名」策略（entitySecondaryName 已有基础）；dist 余量留意。
+
+### 2026-08-17 会话 #26（筛选标签乱码清理 + 餐厅专名本地化显示 + CityFoodNav 死代码删除 + 提交部署）
+
+- **起**：用户要求（1）清理 CATEGORY_CONFIG.labels 乱码；（2）修复非中文语言餐厅专名仍为中文；（3）删除/修复 CityFoodNav 死代码；全部完成后提交并部署生产。
+- **改动**：
+  - src/data/food/categories.ts：12 类 × 12 语言筛选标签全面修正（ja 手可な→手頃な、ko 미신러→미쉐린/블랙폌→블랙펄/가격매도재→가성비 좋은/연체점→체인점/분싸→뷔페/패스트드→패스트푸드、th ประดับดำ→ไข่มุกดำ/อาหารสสามารถาบ→อาหารราคาย่อมเยา/ฟองฟู→อาหารจานด่วน/คาเฟ์→คาเฟ่ 等、vi 全量补越南语变音符、de Guenstig→Günstig/Strassenessen→Straßenessen/Gehobene Kueche→Gehobene Küche、zh-TW 全量转繁体、fr Café/Chaînes/Fast-food、ar اللؤلأ السوداء→اللؤلؤة السوداء/سلاسلي→سلاسل）。
+  - src/i18n/components-strings.ts：food_filter_all / tier_all vi→Tất cả；tier_label th/ru/fr/ar/fa 乱码修正（ระดับ/Уровень：/Catégorie :/الفئة:/سطح:）；tier_short_* 系列 ar الفئةة→الفئة、vi Hang→Hạng、fr Categorie→Catégorie；tier_none vi Khong→Không。
+  - src/components/hotel/HotelCard.tsx：酒店分类标签乱码修正（ko 루첌리→럭셔리/중앙→중급/럭호텔→러브호텔、vi Sang trong→Sang trọng/Tiet kiem→Tiết kiệm/Nha tro→Nhà trọ/Trung cap→Trung cấp 等、th โธมเทล→โฮสเทล、de Günstig、fr Hôtel d'amour、ar فندق الحب）。
+  - src/data/food/resolve.ts：resolveRestaurant 的 name 改为按语言返回本地化显示名（CJK 用 i18n name，其它语言用已本地化的 nameEn，不再泄漏中文）。legacy 分支同样处理。
+  - src/pages/[lang]/food/[id].astro：restaurantDetail.name 与 <title> 直接用本地化 name（此前 city 源被 displayFood 原样返回中文 name，导致 de/ru/th/ar/fa 详情页标题与 h1 显示中文餐厅名）。
+  - src/components/city/CityFoodNav.tsx：确认全仓无引用（死代码），删除（含同样的 street/苍蝇馆子 硬编码检查）。
+- **验证**（全部通过）：
+  - 审计确认数据层 nameEn 全 12 语言 1750/1750 已本地化（此前只是显示层未使用）；name 字段保留中文专名作 CJK 主名/副名。
+  - pnpm typecheck 0 错误；check:i18n 0 缺口（12 语言全覆盖）；pnpm test:unit 115/115。
+  - astro build 26,686 页成功；pack-food-details OK（19,833 页→286 delta chunks + 11 skeletons）。
+  - dev server + wrangler pages dev（dist+functions）抽验：/de|ru|th|ko|ar/food/beijing-4 标题与 h1 均本地化（Kaiserlicher Schatz / Императорское сокровище / อิมพีเรียลทรเจอร์…），副标题保留英文原名；筛选芯片 ja/ko/th/vi/de/zh-TW/ar 全部为修正后文案。
+- **提交**：已提交（含会话 #24 未提交的全部改动：语言重定向、美食板块、AI 推荐卡、认证本地化、type 枚举规范化），push master 触发 CI 自动部署。
+- **下个会话**：无强制待办。可留意 CI deploy 运行与线上抽验（/de/food/beijing-4 标题、筛选芯片、street_food 筛选 58 家全语言一致）。

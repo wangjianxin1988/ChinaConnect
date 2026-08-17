@@ -8,6 +8,7 @@ import { ct } from "@/i18n/components-strings";
 import { translations } from "@/i18n/translations";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { entityDisplayName, entitySecondaryName, pruneCityEntityNames } from "@/lib/city-name";
+import AIRecommendation from "@/components/city/AIRecommendation.astro";
 
 export function getStaticPaths() {
   const langs = ["en", "ja", "ko", "zh-CN", "zh-TW", "th", "vi", "ru", "fr", "de", "ar", "fa"] as const;
@@ -28,6 +29,9 @@ if (!city) {
 const { prev, next } = getAdjacentCities(slug as string);
 const localCityName = translations[lang]?.["city." + city.slug + ".name"] ?? translations.en?.["city." + city.slug + ".name"] ?? city.nameEn;
 const isJapanese = lang === "ja";
+const foodTopicLabel = isJapanese
+  ? `${localCityName}のグルメ`
+  : (translations[lang] || translations.en).cityFood?.title?.replace("{city}", localCityName) ?? `${localCityName} Food`;
 const _ft = (key, vars) => {
   if (vars === undefined) vars = {};
   const parts = key.split(".");
@@ -43,29 +47,26 @@ const filterParam = Astro.url.searchParams.get("filter") || "all";
 
 // ─── Unified Restaurant Category System ──────────────────────────
 // Single source of truth in src/data/food/categories.ts
-import { CATEGORY_CONFIG, getRestaurantFilterCategory, type FilterGroup } from "@/data/food/categories";
+import { CATEGORY_CONFIG, CATEGORY_ORDER, getCityFilterCategory, type FilterGroup } from "@/data/food/categories";
 import { citySourceLabel } from "@/lib/city-sources";
 
 const allRestaurants = city.restaurants;
-// City food page always shows the full filter set (All / Local picks / Michelin /
-// Black Pearl / Affordable / Street food) so the UI is consistent across cities
-// and mirrors the global food directory — zero-count categories stay visible.
-const CITY_FILTER_IDS = ["michelin", "blackpearl", "local_recommend", "affordable", "street_food"];
+// City food page shows All + every CATEGORY_ORDER category (zero-count chips
+// stay visible) so the UI is consistent across cities and mirrors the global
+// food directory.
 const filterGroups: FilterGroup[] = [
   { ...CATEGORY_CONFIG.all, restaurants: allRestaurants },
-  ...CITY_FILTER_IDS.map((id) => {
-    const cfg = id === "local_recommend" ? CATEGORY_CONFIG.local : CATEGORY_CONFIG[id];
-    return {
-      ...cfg,
-      id,
-      restaurants: allRestaurants.filter((r) => getRestaurantFilterCategory(r) === id),
-    };
-  }),
+  ...CATEGORY_ORDER.map((id) => ({
+    ...CATEGORY_CONFIG[id],
+    id,
+    restaurants: allRestaurants.filter((r) => getCityFilterCategory(r) === id),
+  })),
 ];
 // Accept older highlight-tag aliases used by the city detail page "View all" links.
 const FILTER_ALIASES: Record<string, string> = {
-  local: "local_recommend",
-  "local-recommend": "local_recommend",
+  local: "local",
+  local_recommend: "local",
+  "local-recommend": "local",
   budget: "affordable",
   budget_local: "affordable",
   street: "street_food",
@@ -134,6 +135,7 @@ function getBadgeLabel(type: Restaurant["type"], lang: string) {
   </section>
 
   <div class="container-custom py-8">
+    <AIRecommendation lang={lang} topic="food" topicLabel={foodTopicLabel} cityName={localCityName} citySlug={city.slug} />
     <!-- Filter Navigation -->
     <div class="mb-8">
       <div class="flex flex-wrap gap-2" id="filter-buttons">
@@ -190,7 +192,7 @@ function getBadgeLabel(type: Restaurant["type"], lang: string) {
       <div id="restaurant-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" data-current-filter="all">
         {allRestaurants.map((restaurant) => (
           <div
-            data-filter-category={getRestaurantFilterCategory(restaurant)}
+            data-filter-category={getCityFilterCategory(restaurant)}
             class="bg-white border border-gray-100 rounded-xl overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all group restaurant-card"
           >
             {/* Restaurant Image */}

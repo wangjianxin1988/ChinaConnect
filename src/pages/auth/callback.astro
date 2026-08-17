@@ -1,14 +1,18 @@
-﻿---
+---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { translations } from "@/i18n/translations";
+import type { Language } from "@/i18n/translations";
+
+const lang = (Astro.locals.lang as Language) || "en";
+const title = (translations[lang]?.authPage?.callbackTitle) || translations.en.authPage?.callbackTitle || "Signing you in...";
 ---
 
-<BaseLayout title={translations.en.authPage?.callbackTitle || "Signing you in..."}>
-  <div class="min-h-screen flex items-center justify-center bg-gray-50 px-4">
+<BaseLayout title={title}>
+  <div class="min-h-screen flex items-center justify-center bg-gray-50 px-4" dir={lang === "ar" || lang === "fa" ? "rtl" : "ltr"}>
     <div class="max-w-md w-full text-center bg-white rounded-xl shadow-sm border p-8">
       <div id="auth-spinner">
         <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-        <p class="text-gray-600" data-i18n="authPage.signingYouIn">Signing you in...</p>
+        <p id="auth-signing-in" class="text-gray-600" data-i18n="authPage.signingYouIn">Signing you in...</p>
       </div>
       <div id="auth-error" class="hidden">
         <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-red-100 flex items-center justify-center">
@@ -17,10 +21,8 @@ import { translations } from "@/i18n/translations";
           </svg>
         </div>
         <h2 class="text-lg font-semibold text-gray-900 mb-2" data-i18n="authPage.errorTitle">Verification failed</h2>
-        <p id="auth-error-msg" class="text-sm text-gray-600 mb-6">
-          The confirmation link is invalid or has expired. Please try registering again.
-        </p>
-        <a href="/auth/login" class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
+        <p id="auth-error-msg" class="text-sm text-gray-600 mb-6"></p>
+        <a id="auth-back-link" href="/auth/login" class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
           Back to sign in
         </a>
       </div>
@@ -30,6 +32,10 @@ import { translations } from "@/i18n/translations";
 
 <script>
   import { exchangeCodeForSession, supabase, verifyOtpToken } from '@/supabase/config';
+  import { authLangPrefix, authT, detectAuthLang } from '@/components/user/auth-strings';
+
+  const lang = detectAuthLang();
+  const prefix = authLangPrefix(lang);
 
   async function completeAuth(): Promise<void> {
     const params = new URLSearchParams(window.location.search);
@@ -46,7 +52,7 @@ import { translations } from "@/i18n/translations";
           try { n = sessionStorage.getItem("auth_next"); } catch (e) { n = null; }
           try { if (n) sessionStorage.removeItem("auth_next"); } catch (e) {}
           if (n && n.charAt(0) === "/" && n.charAt(1) !== "/") { window.location.href = n; return; }
-          window.location.href = "/account";
+          window.location.href = prefix + "/account";
         }
           window.history.replaceState({}, '', window.location.pathname);
         goNext();
@@ -97,21 +103,23 @@ import { translations } from "@/i18n/translations";
     }
 
     // 5) Nothing worked - show error UI
-    showAuthError('The confirmation link is invalid or has expired. Please try registering again.');
+    showAuthError(authT(lang, "callbackErrorDesc"));
   }
 
   function showAuthError(msg: string): void {
     const spinner = document.getElementById('auth-spinner');
     const errorBox = document.getElementById('auth-error');
     const errorMsg = document.getElementById('auth-error-msg');
+    const backLink = document.getElementById('auth-back-link') as HTMLAnchorElement | null;
     if (spinner) spinner.classList.add('hidden');
     if (errorMsg) errorMsg.textContent = msg;
+    if (backLink) backLink.href = prefix + "/auth/login";
     if (errorBox) errorBox.classList.remove('hidden');
   }
 
   // Run the auth-completion flow
   completeAuth().catch((err) => {
     console.error('[auth/callback] unhandled error:', err);
-    showAuthError('Something went wrong while completing sign-in. Please try again.');
+    showAuthError(authT(lang, "callbackUnexpected"));
   });
 </script>

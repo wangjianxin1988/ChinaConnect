@@ -1,3419 +1,3419 @@
 {
- "slug": "xian",
- "name": "西安",
- "nameEn": "Xi'an",
- "country": "China",
- "population": "1,300만",
- "coordinates": {
-  "lat": 34.3416,
-  "lng": 108.9398
- },
- "timezone": "UTC+8 (중국 표준시)",
- "description": "시안은 중국의 고도이자 실크로드의 출발점이며, 세계 최대의 고고학적 발견인 비막보병대를 보유하고 있습니다. 3,100년의 역사를 가진 시안은 고대 도시벽, 마숙거리의 활기찬 길거리음식, 대야생 pagoda, 서부 지역의 경이로운 풍경을 제공합니다.",
- "coverImage": "/img/ext/7128ba3c0e88.webp",
- "highlights": [
-  "병마용 - 2,000년 된 전사들",
-  "고대 성벽 - 중국에서 가장 잘 보존됨",
-  "대야승탑 - 당대의 랜드마크",
-  "무슬림 지구 - 길거리 음식 천국",
-  "산시 역사 박물관 - 국보"
- ],
- "climate": {
-  "type": "반건조대륙성기후",
-  "bestMonths": [
-   "3월",
-   "4월",
-   "5월",
-   "9월",
-   "10월",
-   "11월"
+  "slug": "xian",
+  "name": "西安",
+  "nameEn": "Xi'an",
+  "country": "China",
+  "population": "1,300만",
+  "coordinates": {
+    "lat": 34.3416,
+    "lng": 108.9398
+  },
+  "timezone": "UTC+8 (중국 표준시)",
+  "description": "시안은 중국의 고도이자 실크로드의 출발점이며, 세계 최대의 고고학적 발견인 비막보병대를 보유하고 있습니다. 3,100년의 역사를 가진 시안은 고대 도시벽, 마숙거리의 활기찬 길거리음식, 대야생 pagoda, 서부 지역의 경이로운 풍경을 제공합니다.",
+  "coverImage": "/img/ext/7128ba3c0e88.webp",
+  "highlights": [
+    "병마용 - 2,000년 된 전사들",
+    "고대 성벽 - 중국에서 가장 잘 보존됨",
+    "대야승탑 - 당대의 랜드마크",
+    "무슬림 지구 - 길거리 음식 천국",
+    "산시 역사 박물관 - 국보"
   ],
-  "avgSummerTemp": "26C (79F)",
-  "avgWinterTemp": "1C (34F)",
-  "tips": "봄과 가을에 방문하기 가장 좋습니다. 여름은 덥지만 해안 도시보다 습도가 낮습니다. 겨울은 춥고 건조하며 가끔 눈이 옵니다. 봄에는 모래폭풍이 가능합니다. 겹쳐 입으세요."
- },
- "attractions": [
-  {
-   "id": "terracotta-army",
-   "name": "秦始皇兵马俑",
-   "nameEn": "병마용",
-   "image": "/img/ext/52306fca3964.webp",
-   "category": "historical",
-   "description": "8,000개 이상의 실제 크기 병마용으로 구성된 거대한 지하군대가 중국 최초의 황제를 내세에서 보호하기 위해 매장되었습니다.",
-   "address": "린퉈구, 시안 동쪽 35km",
-   "coordinates": {
-    "lat": 34.3847,
-    "lng": 109.2785
-   },
-   "openingHours": "08:30-18:30 (3월-11월), 08:00-18:00 (12월-2월)",
-   "ticketPrice": "120¥ (성수기), 80¥ (비성수기)",
-   "recommendedVisitTime": "3-4시간",
-   "highlights": [
-    "Pit 1 - 최대 군대 전시",
-    "Pit 2 - 복잡한 편대",
-    "Pit 3 - 지휘부",
-    "청동 전차 전시"
-   ],
-   "tips": "인파를 피하려면 일찍 도착하세요. 기차역에서 공식 셔틀 버스를 이용하세요. 역사를 위한 오디오 가이드가 필수입니다. 화칭 온천과 함께 방문하는 것을 추천합니다.",
-   "phone": "+86 29 8139 9127"
-  },
-  {
-   "id": "city-wall",
-   "name": "西安城墙",
-   "nameEn": "시안 성벽",
-   "image": "/img/ext/cb0d9cc63128.webp",
-   "category": "historical",
-   "description": "명대로부터 가장 오래된, 가장 완전한 중국의 고대 성벽입니다. 전체 14km를 걸거나 자전거를 타세요.",
-   "address": "남문, 시안",
-   "coordinates": {
-    "lat": 34.2655,
-    "lng": 108.9485
-   },
-   "openingHours": "08:00-22:00 (남문 구간)",
-   "ticketPrice": "54¥ (도보), 100¥ (자전거 대여)",
-   "recommendedVisitTime": "2-3시간",
-   "highlights": [
-    "남문 성루",
-    "북문 누각",
-    "도시 전경",
-    "봉화대 박물관"
-   ],
-   "tips": "각 성문에서 자전거를 대여할 수 있습니다. 남문에서 시작하면 사진 찍기에 가장 좋습니다. 해질녘에는 도시의 전망이 가장 아름답습니다.",
-   "phone": "+86 29 8727 2792"
-  },
-  {
-   "id": "big-wild-goose-pagoda",
-   "name": "大雁塔",
-   "nameEn": "대야승탑",
-   "image": "/img/ext/cdf84d51c448.webp",
-   "category": "cultural",
-   "description": "652년에 건립된 상징적인 불교 탑입니다. 당나라 승려 현장이 인도에서 가져온 불경을 보관하기 위해 세워졌습니다.",
-   "address": "남부 대학 인근,옌타 구",
-   "coordinates": {
-    "lat": 34.2185,
-    "lng": 108.9595
-   },
-   "openingHours": "08:00-18:30 (3월-11월), 08:00-18:00 (12월-2월)",
-   "ticketPrice": "25¥ (입장), 40¥ (탑 오르기)",
-   "recommendedVisitTime": "2시간",
-   "highlights": [
-    "7층 탑",
-    "대사은사",
-    "음악 분수쇼",
-    "당대 건축"
-   ],
-   "tips": "저녁 분수쇼가 spectacular합니다 (20:30). 인근 진링 산맥 day trip과 결합하세요.",
-   "phone": "+86 29 8552 7958"
-  },
-  {
-   "id": "muslim-quarter",
-   "name": "回民街",
-   "nameEn": "시안 회족 지구",
-   "image": "/img/ext/fa0720a50c62.webp",
-   "category": "cultural",
-   "description": "고대 모스크, 전통 건축, 유명한 길거리 음식 등 후이족 무슬림의 활기찬 지역.",
-   "address": "종루 북쪽, 시안",
-   "coordinates": {
-    "lat": 34.2615,
-    "lng": 108.9435
-   },
-   "openingHours": "24시간 운영, 상점 09:00-23:00",
-   "ticketPrice": "무료",
-   "recommendedVisitTime": "2-3시간",
-   "highlights": [
-    "시안 대모스크",
-    "백탑사 음식거리",
-    "회족 건축",
-    "은jewelry 시장"
-   ],
-   "tips": "비앙비앙면, 러우자모, 시빙을 맛보세요. 아침이나 저녁에 걷는 것을 추천합니다. 모스크 내부에서는 촬영 금지이지만 그 외에는 환영합니다.",
-   "phone": "+86 029  0974 1229"
-  },
-  {
-   "id": "shaanxi-museum",
-   "name": "陕西历史博物馆",
-   "nameEn": "산시 역사 박물관",
-   "image": "/img/ext/475dd9f0ea1f.webp",
-   "category": "cultural",
-   "description": "중국에서 가장 훌륭한 성급 박물관 중 하나로, 주나라부터 당나라까지의 공예품, 특히 중국 최고 문명의 발굴 유물을 전시하고 있습니다.",
-   "address": "옌타구 샤오자이로 91번지",
-   "coordinates": {
-    "lat": 34.2295,
-    "lng": 108.9585
-   },
-   "openingHours": "08:30-18:00 (월요일 휴무)",
-   "ticketPrice": "무료 (예약 필요)",
-   "recommendedVisitTime": "3-4시간",
-   "highlights": [
-    "주나라 청동기",
-    "당나라 금제 유물",
-    "명나라 자기",
-    "몽골 유물"
-   ],
-   "tips": "공식 앱에서 몇 주 전에 티켓을 예약하세요. 무료 오디오 가이드가 제한되어 있습니다. 오전 방문이 더 좋습니다.",
-   "phone": "+86 029  2111 9563"
-  },
-  {
-   "id": "huaqing-hot-springs",
-   "name": "华清池",
-   "nameEn": "화칭온천",
-   "image": "/img/ext/b1a91de242ab.webp",
-   "category": "historical",
-   "description": "당나라 황제 현종과 양귀비의 사랑 이야기로 유명한 황실 온천 리조트로, 당나라 궁전 유적이 있습니다.",
-   "address": "린퉁구 화칭로, 시안에서 30km",
-   "coordinates": {
-    "lat": 34.3585,
-    "lng": 109.2095
-   },
-   "openingHours": "07:30-19:00",
-   "ticketPrice": "120¥ (황제의 온천 포함)",
-   "recommendedVisitTime": "2-3시간",
-   "highlights": [
-    "구룡온천",
-    "당나라 궁전 유적",
-    "황제의 개인 온천",
-    "'두 황제의 로맨스' 쇼"
-   ],
-   "tips": "병마용 하루 여행과 결합하세요. 저녁 '장송' 쇼가 화려합니다. 봄에 방문하는 것이 가장 좋습니다.",
-   "phone": "+86 029  6358 7033"
-  },
-  {
-   "id": "bell-tower",
-   "name": "钟楼",
-   "nameEn": "시안 종루",
-   "image": "/img/ext/c74d7faf7bb9.webp",
-   "category": "historical",
-   "description": "중국에서 가장 크고 가장 온전한 종루로, 명나라 때인 1384년에 건립되었습니다.",
-   "address": "신성구 서대거리",
-   "coordinates": {
-    "lat": 34.2625,
-    "lng": 108.9445
-   },
-   "openingHours": "08:30-20:00",
-   "ticketPrice": "35¥ (종루만), 50¥ (고루와 결합)",
-   "recommendedVisitTime": "45분",
-   "highlights": [
-    "중악사 종",
-    "전망대 도시 전경",
-    "전통 건축 세부 사항",
-    "야간 조명"
-   ],
-   "tips": "밤에 외부에서 보는 것이 가장 좋습니다. 고루와의 결합 티켓이 비용을 절약합니다. 지하철 접근이 편리합니다.",
-   "phone": "+86 29 8727 2792"
-  },
-  {
-   "id": "small-wild-goose-pagoda",
-   "name": "小雁塔",
-   "nameEn": "소작루",
-   "image": "/img/ext/2b32c6d81b86.webp",
-   "category": "historical",
-   "description": "706년에 건립된 15층의 당나라 탑으로, 여러 지진을 견디고 살아남았습니다. 시안 박물관 옆에 위치해 있습니다.",
-   "address": "베이린구 유의로 72",
-   "coordinates": {
-    "lat": 34.2315,
-    "lng": 108.9355
-   },
-   "openingHours": "09:00-17:00",
-   "ticketPrice": "시안 박물관 예약 시 무료",
-   "recommendedVisitTime": "1-2시간",
-   "highlights": [
-    "15층 탑",
-    "고대 주지 우물",
-    "시안 박물관",
-    "평화로운 사찰 경내"
-   ],
-   "tips": "대작루보다 덜 붐빕니다. 안뜰에서 멋진 사진을 찍을 수 있습니다. 박물관 예약 시 무료 입장입니다.",
-   "phone": "+86 029  4582 5296"
-  },
-  {
-   "id": "tomb-of-emperor-jingdi",
-   "name": "汉阳陵",
-   "nameEn": "진디 황제의 무덤",
-   "image": "/img/ext/68fb6a7f2cea.webp",
-   "category": "historical",
-   "description": "한나라 진디 황제의 무덤 단지로, 지하 박물관에서 수백 개의 인형을 전시하고 있어 주목할 만합니다.",
-   "address": "시안에서 북쪽으로 20km 떨어진 시양",
-   "coordinates": {
-    "lat": 34.4355,
-    "lng": 108.9435
-   },
-   "openingHours": "08:30-18:30",
-   "ticketPrice": "90¥",
-   "recommendedVisitTime": "2시간",
-   "highlights": [
-    "지하 발굴 박물관",
-    "갑옷 없는 흙인형 하인들",
-    "한대 유물",
-    "협궤 철도"
-   ],
-   "tips": "병마용보다 덜 유명하지만 그만큼 인상적입니다. 시안에서 버스 4번을 타세요. 한나라를 이해하는 데 좋습니다.",
-   "phone": "+86 029  3880 1648"
-  },
-  {
-   "id": "drum-tower",
-   "name": "鼓楼",
-   "nameEn": "시안 북루",
-   "image": "/img/ext/388ea3ed8aa2.webp",
-   "category": "historical",
-   "description": "종루 맞은편에 위치한 역사적인 북루로, 옛 도시의 중심을 표시하며 매일 밤 북 공연이 열립니다.",
-   "address": "신성구 서대거리",
-   "coordinates": {
-    "lat": 34.2615,
-    "lng": 108.9415
-   },
-   "openingHours": "08:30-20:00",
-   "ticketPrice": "35¥ (북루만), 50¥ (종루와 결합)",
-   "recommendedVisitTime": "45분",
-   "highlights": [
-    "거대한 물 북",
-    "야간 공연",
-    "도시 전경",
-    "전통 북 박물관"
-   ],
-   "tips": "종루와의 결합 티켓을 추천합니다. 저녁 북 공연은 20:30에 열립니다. 무슬림 지구 근처에 위치해 있어 좋습니다.",
-   "phone": "+86 29 8727 2792"
-  },
-  {
-   "id": "Mount-hua",
-   "name": "华山",
-   "nameEn": "화산",
-   "image": "/img/ext/994bfae9b723.webp",
-   "category": "natural",
-   "description": "중국의 오악 중 하나로, 협소한 암벽을 따라 이어진 위험한 통나무 길과 극적인 봉우리로 유명합니다. 용기의 시험입니다.",
-   "address": "화산현, 시안에서 동쪽으로 120km",
-   "coordinates": {
-    "lat": 34.4805,
-    "lng": 110.0815
-   },
-   "openingHours": "07:00-19:00 (계절에 따라 변동)",
-   "ticketPrice": "160¥ (성수기), 100¥ (비성수기) + 케이블카 별도",
-   "recommendedVisitTime": "1-2일",
-   "highlights": [
-    "통나무 길 (창먼)",
-    "다섯 봉우리",
-    "동봉에서의 일출",
-    "북봉 케이블카"
-   ],
-   "tips": "시안 북역에서 고속 열차를 타세요. 일출을 보기 위해 하룻밤 머무르는 것이 좋습니다. 체력 필요. 일찍 도착하세요.",
-   "phone": "+86 029  9976 5111"
-  },
-  {
-   "id": "tang-paradise",
-   "name": "大唐芙蓉园",
-   "nameEn": "당원",
-   "image": "/img/ext/9f32b9507fe6.webp",
-   "category": "cultural",
-   "description": "중국에서 가장 큰 당나라 문화 테마파크로, 전통 정원, 공연, 황실 건축을 특징으로 합니다.",
-   "address": "취장신구 당파라다이스",
-   "coordinates": {
-    "lat": 34.2195,
-    "lng": 108.9745
-   },
-   "openingHours": "09:00-22:00",
-   "ticketPrice": "120¥ (성수기), 90¥ (비성수기)",
-   "recommendedVisitTime": "3-4시간",
-   "highlights": [
-    "황실 정원 투어",
-    "당나라 저녁 공연",
-    "레이저 워터 스크린 쇼",
-    "전통 보트 타기"
-   ],
-   "tips": "빛의 쇼를 보기 위해 저녁에 방문하는 것이 가장 좋습니다. 쇼 티켓은 별도로 예약하세요. 봄과 가을이 이상적입니다.",
-   "phone": "+86 029  5490 0339"
-  },
-  {
-   "id": "daming-palace",
-   "name": "大明宫国家遗址公园",
-   "nameEn": "다밍 궁전 국가 유적지",
-   "image": "/img/ext/d9e1e34b36a1.webp",
-   "category": "historical",
-   "description": "당나라의 옛 황궁 단지이며, 현재는 재건된 궁전과 박물관이 있는 광대한 고고학 공원입니다.",
-   "address": "신청구 쯔창동로 단펑문 안",
-   "coordinates": {
-    "lat": 34.2935,
-    "lng": 108.9685
-   },
-   "openingHours": "09:00-18:00",
-   "ticketPrice": "60¥ (공원), 90¥ (박물관 포함)",
-   "recommendedVisitTime": "2-3시간",
-   "highlights": [
-    "단펑 문 재건",
-    "한위안 궁전 기초",
-    "인터랙티브 박물관",
-    "항공 사진 플랫폼"
-   ],
-   "tips": "넓은 지역을 위해 전기 카트를 빌리세요. 저녁 조명 쇼는 20:30에 열립니다. 오디오 가이드와 함께하는 것이 가장 좋습니다.",
-   "phone": "+86 029  0512 0813"
-  },
-  {
-   "id": "yongxing-fang",
-   "name": "永兴坊",
-   "nameEn": "용성 팡",
-   "image": "/img/ext/e24182d97762.webp",
-   "category": "cultural",
-   "description": "전통적인 산시 간식과 무형 문화유산 워크숍으로 유명한 재활성화된 역사적 지역입니다.",
-   "address": "신청구 중산문 안",
-   "coordinates": {
-    "lat": 34.2685,
-    "lng": 108.9565
-   },
-   "openingHours": "10:00-22:00",
-   "ticketPrice": "무료",
-   "recommendedVisitTime": "2-3시간",
-   "highlights": [
-    "산시 간식 거리",
-    "전통 공예 워크숍",
-    "야시장",
-    "문화 공연"
-   ],
-   "tips": "배고프게 와서 많은 간식을 시도하세요. 18:00 이후에 불이 켜지면 가장 좋습니다. 기념품을 사기에 좋습니다.",
-   "phone": "+86 029  5821 4313"
-  },
-  {
-   "id": "hanyao",
-   "name": "寒窑",
-   "nameEn": "한 야오",
-   "image": "/img/ext/d0f816918f00.webp",
-   "category": "cultural",
-   "description": "왕바오촨과 쉬에핑구이의 러브 스토리가 펼쳐진 전설적인 동굴 주거지이며, 현재는 관광 지역입니다.",
-   "address": "취장신구 한야오로",
-   "coordinates": {
-    "lat": 34.2115,
-    "lng": 108.9715
-   },
-   "openingHours": "09:00-18:00",
-   "ticketPrice": "50¥",
-   "recommendedVisitTime": "1-2시간",
-   "highlights": [
-    "전설적인 동굴 거주지",
-    "왕보천의 신전",
-    "낭만적인 장미 정원",
-    "전통 결혼식 공연"
-   ],
-   "tips": "커플에게 최적입니다. 발렌타인데이 특별 이벤트. 근처의 당나라 낙원과 함께 관광하는 것을 추천합니다.",
-   "phone": "+86 029  2401 4891"
-  },
-  {
-   "id": "qinling-zoo",
-   "name": "秦岭野生动物园",
-   "nameEn": "칭링 야생동물원",
-   "image": "/img/ext/b0325eefc49b.webp",
-   "category": "natural",
-   "description": "친링 산맥 기슭에 있는 대형 동물원으로, 산시성을 중심으로 희귀 동물을 전시합니다.",
-   "address": "창안구 루안진",
-   "coordinates": {
-    "lat": 34.0585,
-    "lng": 108.8945
-   },
-   "openingHours": "09:00-18:00",
-   "ticketPrice": "100¥ (열차 포함)",
-   "recommendedVisitTime": "4-5시간",
-   "highlights": [
-    "동물 사파리 열차",
-    "자이언트 판다 번식 센터",
-    "쓰촨 금색 코 원숭이",
-    "희귀 야생 동물 구조"
-   ],
-   "tips": "사파리 열차를 일찍 이용하세요. 반나절 일정으로 차오링 산맥과 함께 방문하시면 좋습니다. 자외선 차단제를 준비하세요.",
-   "phone": "+86 029  0263 0652"
-  },
-  {
-   "id": "lehua-town",
-   "name": "乐华城",
-   "nameEn": "러화 타운",
-   "image": "/img/ext/6e96687388d5.webp",
-   "category": "entertainment",
-   "description": "롤러코스터, 워터 라이드, 가족 친화적 어트랙션이 있는 대규모 테마파크 단지입니다.",
-   "address": "시시안신구 징허신청",
-   "coordinates": {
-    "lat": 34.4415,
-    "lng": 108.8285
-   },
-   "openingHours": "10:00-18:00 (계절별)",
-   "ticketPrice": "230¥ (싱글 파크), 380¥ (콤보)",
-   "recommendedVisitTime": "1-2일",
-   "highlights": [
-    "썬더 드래곤 코스터",
-    "워터파크 구역",
-    "음악 분수",
-    "국제 공연"
-   ],
-   "tips": "온라인 예약 시 할인을 받을 수 있습니다. 여름 워터파크가 인기 있습니다. 각 파크당 최소 하루는 필요합니다.",
-   "phone": "+86 029  2110 1051"
-  },
-  {
-   "id": "famen-temple",
-   "name": "法门寺",
-   "nameEn": "파문사",
-   "image": "/img/ext/13eb656e0bad.webp",
-   "category": "historical",
-   "description": "부처의 손가락뼈 유해를 모시고 있는 중국에서 가장 신성한 사찰 중 하나로 당나라 시대 건축물을 갖추고 있습니다.",
-   "address": "보계시 부풍현 파먼진",
-   "coordinates": {
-    "lat": 34.5555,
-    "lng": 107.0195
-   },
-   "openingHours": "08:00-18:00",
-   "ticketPrice": "100¥(성수기), 90¥(비성수기) + 보물전당 30¥",
-   "recommendedVisitTime": "3-4시간",
-   "highlights": [
-    "부처의 손가락뼈 유해",
-    "천복 사리탑",
-    "당나라 보물전당",
-    "고고학 박물관"
-   ],
-   "tips": "시안에서 약 120km - 일찍 도착하세요. 편한 신발을 착용하세요. 부지 내에 불교 채식 레스토랑이 있습니다.",
-   "phone": "+86 029  0982 3737"
-  },
-  {
-   "id": "beilin-museum",
-   "name": "西安碑林博物馆",
-   "nameEn": "시안 비린 박물관",
-   "image": "/img/ext/65efc8264cfc.webp",
-   "category": "cultural",
-   "description": "중국에서 가장 오래된 석각 박물관으로, 유명한 서예 작품과 고대 비석을 소장하고 있습니다.",
-   "address": "베이린구 싼쉐제 15번지",
-   "coordinates": {
-    "lat": 34.2655,
-    "lng": 108.9555
-   },
-   "openingHours": "08:00-18:00(여름), 08:00-17:30(겨울)",
-   "ticketPrice": "65¥",
-   "recommendedVisitTime": "2-3시간",
-   "highlights": [
-    "천자문 서예",
-    "대왕기 비문",
-    "구경석각",
-    "당나라 서예 비문"
-   ],
-   "tips": "서예 애호가에게 필수입니다. 오디오 가이드 추천합니다. 성벽 산책과 함께하면 좋습니다.",
-   "phone": "+86 029  0135 3507"
-  },
-  {
-   "id": "qujiang-aquarium",
-   "name": "曲江海洋馆",
-   "nameEn": "쿤장 수족관",
-   "image": "/img/ext/9116f853256b.webp",
-   "category": "entertainment",
-   "description": "해양 동물 공연, 열대어 전시, 작은 테마파크가 있는 대규모 수족관입니다.",
-   "address": "취장신구 옌타난루",
-   "coordinates": {
-    "lat": 34.2155,
-    "lng": 108.9645
-   },
-   "openingHours": "09:00-17:30",
-   "ticketPrice": "180¥",
-   "recommendedVisitTime": "3-4시간",
-   "highlights": [
-    "상어 수조 터널",
-    "돌고래 및 Sea Lion 공연",
-    "아마존 열대우림 구역",
-    "인어 공연"
-   ],
-   "tips": "도착 시 공연 일정을 확인하세요. 비 오는 날에도 즐길 수 있습니다. 같은 구역에 있는 당나라 시대의 낙원과 함께 관광을 즐기시기 바랍니다.",
-   "phone": "+86 029  4893 7785"
-  },
-  {
-   "id": "zhongnan-mountain",
-   "name": "终南山",
-   "nameEn": "중난산",
-   "image": "/img/ext/20ba084c3257.webp",
-   "category": "natural",
-   "description": "‘신산’으로 알려진 도교의 성산으로, 고대 사원과 멋진 봉우리들이 특징입니다.",
-   "address": "창안구 난우타이진",
-   "coordinates": {
-    "lat": 34.0625,
-    "lng": 108.9345
-   },
-   "openingHours": "08:00-18:00",
-   "ticketPrice": "25¥",
-   "recommendedVisitTime": "4-6시간",
-   "highlights": [
-    "남천문",
-    "고대 도교 사찰",
-    "운해",
-    "승려 명상 동굴"
-   ],
-   "tips": "케이블카로 오르고 걸어서 내리세요. 정상까지 체력이 필요합니다. 가을에 방문하기 가장 좋습니다.",
-   "phone": "+86 029  8578 9681"
-  },
-  {
-   "id": "daxingshan-temple",
-   "name": "大兴善寺",
-   "nameEn": "대흥산 사찰",
-   "image": "/img/ext/7595c7c20aa3.webp",
-   "category": "cultural",
-   "description": "중국에서 가장 오래되고 중요한 불교 사찰 중 하나로, 수나라 시대에 처음 건축되었습니다.",
-   "address": "옌타구 샤오자이 싱산사 시제",
-   "coordinates": {
-    "lat": 34.2255,
-    "lng": 108.9485
-   },
-   "openingHours": "07:00-18:00",
-   "ticketPrice": "무료",
-   "recommendedVisitTime": "1-2시간",
-   "highlights": [
-    "고대 청동 불상",
-    "작약 정원",
-    "밀교 불교 유물",
-    "평화로운 사찰 경내"
-   ],
-   "tips": "아주 평화롭고 관광객이 적습니다. 4월 모란꽃이 정말 화려합니다. 명상에 좋습니다.",
-   "phone": "+86 029  4488 0852"
-  },
-  {
-   "id": "lishan-forest",
-   "name": "骊山国家森林公园",
-   "nameEn": "리산 국립 산림공원",
-   "image": "/img/ext/c09fcbe63c84.webp",
-   "category": "natural",
-   "description": "화청궁 근처의 경승지로, 층층의 정자와 누각, 시안의 전경으로 유명합니다.",
-   "address": "린퉁구 리산",
-   "coordinates": {
-    "lat": 34.3835,
-    "lng": 109.2445
-   },
-   "openingHours": "07:00-19:00",
-   "ticketPrice": "150¥ (화청궁 포함)",
-   "recommendedVisitTime": "3-4시간",
-   "highlights": [
-    "황제 테라스 전망대",
-    "구 리선 정자",
-    "조각된 돌 터널",
-    "위하의 석촌"
-   ],
-   "tips": "화청온천과 연계. 케이블카 이용. 석촌 방문이 인상적입니다. 봄에는 꽃 감상을.",
-   "phone": "+86 029  4426 1816"
-  },
-  {
-   "id": "hanling-garden",
-   "name": "寒舍遗址公园",
-   "nameEn": "한링 정원 유적 공원",
-   "image": "/img/ext/2197d082103b.webp",
-   "category": "cultural",
-   "description": "정원, 조각, 공연과 함께 전설적 사랑 이야기를 재현한 공원.",
-   "address": "취장신구 한야오루 1번지",
-   "coordinates": {
-    "lat": 34.2105,
-    "lng": 108.9705
-   },
-   "openingHours": "09:00-18:00",
-   "ticketPrice": "45¥",
-   "recommendedVisitTime": "2-3시간",
-   "highlights": [
-    "낭만적 조각",
-    "전통 공연",
-    "장미 정원",
-    "동굴 탐험"
-   ],
-   "tips": "연인에게 적합. 한야오 정비구와 연계. 저녁 조명이 아름답습니다.",
-   "phone": "+86 029  5083 1941"
-  },
-  {
-   "id": "xianyang-huaiyang",
-   "name": "咸阳湖",
-   "nameEn": "시안 호수",
-   "image": "/img/ext/90c2f10df87a.webp",
-   "category": "natural",
-   "description": "경치가 아름다운 호수 지역으로 정원과 산책로, 역사적인 류민교가 있습니다.",
-   "address": "셴양시 웨이양루",
-   "coordinates": {
-    "lat": 34.3315,
-    "lng": 108.7085
-   },
-   "openingHours": "24시간 개방",
-   "ticketPrice": "무료",
-   "recommendedVisitTime": "2시간",
-   "highlights": [
-    "류민교",
-    "일몰 전망",
-    "산책로",
-    "문화 조각상"
-   ],
-   "tips": "일몰 때가 가장 좋습니다. 근처 박물관과 함께 방문하세요. 저녁 산책에 적합합니다.",
-   "phone": "+86 029  9445 2668"
-  },
-  {
-   "id": "baqiao-tomb",
-   "name": "霸陵",
-   "nameEn": "바링(전한 문제의 능)",
-   "image": "/img/ext/c7a0a0d13b1c.webp",
-   "category": "historical",
-   "description": "자비로운 통치와 검소한 장례 풍습으로 알려진 한 문제의 능입니다.",
-   "address": "바차오구",
-   "coordinates": {
-    "lat": 34.2985,
-    "lng": 109.0485
-   },
-   "openingHours": "09:00-17:00",
-   "ticketPrice": "25¥",
-   "recommendedVisitTime": "1-2시간",
-   "highlights": [
-    "능산",
-    "한대 유물",
-    "기념관",
-    "평화로운 부지"
-   ],
-   "tips": "다른 능보다 덜 방문합니다. 역사 애호가에게 좋습니다. 근처 바차오와 함께 방문하세요.",
-   "phone": "+86 029  3723 3267"
-  },
-  {
-   "id": "qinling-mountains",
-   "name": "秦岭分水岭",
-   "nameEn": "진령 수분계",
-   "image": "/img/ext/5a266d59a49f.webp",
-   "category": "natural",
-   "description": "중국 남북을 가르는 자연 경계로, 아름다운 산 경치와 숲이 있습니다.",
-   "address": "창안구 친링산맥",
-   "coordinates": {
-    "lat": 33.9885,
-    "lng": 108.9485
-   },
-   "openingHours": "24시간 개방",
-   "ticketPrice": "무료 (특정 지역은 요금이 있을 수 있음)",
-   "recommendedVisitTime": "4-6시간",
-   "highlights": [
-    "남북 중국 분계",
-    "고산 경관",
-    "숲길",
-    "희귀 조류"
-   ],
-   "tips": "안전을 위해 가이드 투어를 이용하세요. 더위를 피하기 위해 여름에 방문하는 것이 가장 좋습니다. 고지대에서는 겉옷을 준비하세요.",
-   "phone": "+86 029  0188 4479"
-  },
-  {
-   "id": "xianyang-museum",
-   "name": "咸阳博物馆",
-   "nameEn": "셴양 박물관",
-   "image": "/img/ext/c2bc1cb1cd7d.webp",
-   "category": "cultural",
-   "description": "진나라의 수도와 한나라 제국 유물의 역사를 전시하는 박물관입니다.",
-   "address": "셴양시 웨이양동루",
-   "coordinates": {
-    "lat": 34.3295,
-    "lng": 108.7085
-   },
-   "openingHours": "09:00-17:00 (월요일 휴관)",
-   "ticketPrice": "무료",
-   "recommendedVisitTime": "1-2시간",
-   "highlights": [
-    "진나라 청동기",
-    "황제의 도장 복제품",
-    "병마용 조각 파편",
-    "역사적 디오라마"
-   ],
-   "tips": "셴양 호수 방문과 결합하세요. 진시황릉의 병마용 전사와 관련된 진나라 역사를 이해하는 데 좋습니다.",
-   "phone": "+86 029  2649 1326"
-  },
-  {
-   "id": "luoyang-longmen",
-   "name": "洛阳龙门石窟",
-   "nameEn": "룽먼 석굴",
-   "image": "/img/ext/e77c57e7fdf6.webp",
-   "category": "historical",
-   "description": "중국의 3대 불교 석굴 단지 중 하나로, 수천 개의 조각상이 새겨져 있습니다.",
-   "address": "뤄양시 룽먼진",
-   "coordinates": {
-    "lat": 34.4685,
-    "lng": 112.4685
-   },
-   "openingHours": "08:00-18:30",
-   "ticketPrice": "90¥",
-   "recommendedVisitTime": "3-4시간",
-   "highlights": [
-    "봉현사 대불",
-    "만불동",
-    "고대 비문",
-    "이천 전경"
-   ],
-   "tips": "시안에서 약 250km 떨어져 있어 - 당일치기 여행보다는 1박 2일 여행이 좋습니다. 사진 촬영을 위해서는 아침 방문이 가장 좋습니다. 편안한 신발이 필수입니다.",
-   "phone": "+86 029  4588 9449"
-  },
-  {
-   "id": "terracotta",
-   "name": "兵马俑",
-   "nameEn": "병마용",
-   "category": "museum",
-   "description": "세계 8대 불가사의, 진시황릉의 부장갱.",
-   "address": "시안시 린퉁구",
-   "coordinates": {
-    "lat": 34.38,
-    "lng": 109.28
-   },
-   "openingHours": "08:00-18:00",
-   "ticketPrice": "120위안",
-   "recommendedVisitTime": "반나절.",
-   "highlights": [
-    "병마용",
-    "청동 마차와 말"
-   ],
-   "tips": "꼭 봐야 할 곳: 병마용.",
-   "image": "/img/ext/309f30e43563.webp",
-   "phone": "+86 29 8139 9127"
-  },
-  {
-   "id": "big-wild-goose",
-   "name": "大雁塔",
-   "nameEn": "대야승탑",
-   "category": "temple",
-   "description": "당나라 승려 현장이 불교 경전을 보존하기 위해 지은 불탑.",
-   "address": "시안시 옌타구",
-   "coordinates": {
-    "lat": 34.22,
-    "lng": 108.95
-   },
-   "openingHours": "08:00-18:00",
-   "ticketPrice": "50위안",
-   "recommendedVisitTime": "2시간",
-   "highlights": [
-    "불탑",
-    "현장"
-   ],
-   "tips": "당나라 문화에 대해 알아보세요.",
-   "image": "/img/ext/998eb40307b9.webp",
-   "phone": "+86 29 8552 7958"
-  },
-  {
-   "id": "huangqing",
-   "name": "华清池",
-   "nameEn": "화칭 온천",
-   "category": "nature",
-   "description": "당나라의 왕실 온천 궁전으로, 양귀비가 목욕한 곳.",
-   "address": "시안시 린퉁구",
-   "coordinates": {
-    "lat": 34.35,
-    "lng": 109.28
-   },
-   "openingHours": "08:00-18:00",
-   "ticketPrice": "120위안",
-   "recommendedVisitTime": "2시간",
-   "highlights": [
-    "온천",
-    "양귀비"
-   ],
-   "tips": "당나라의 역사에 대해 알아보세요.",
-   "image": "/img/ext/0df1b413372e.webp",
-   "phone": "+86 029  7707 6732"
-  },
-  {
-   "id": "xian-food",
-   "name": "西安美食",
-   "nameEn": "시안 음식",
-   "category": "street",
-   "description": "시안은 중국의 미식 수도로, 다양한 간식을 제공합니다.",
-   "address": "시안시",
-   "coordinates": {
-    "lat": 34.26,
-    "lng": 108.93
-   },
-   "openingHours": "하루 종일",
-   "ticketPrice": "1인당 50위안",
-   "recommendedVisitTime": "하루 종일",
-   "highlights": [
-    "양러우파오모 (양고기 수프와 부순 납작빵)",
-    "로우지아모 (중식 햄버거)"
-   ],
-   "tips": "시안의 현지 별미를 맛보세요.",
-   "image": "/img/ext/b3bbcb98d017.webp",
-   "phone": "+86 029  1244 8931"
-  },
-  {
-   "id": "xian-night",
-   "name": "西安夜景",
-   "nameEn": "시안 야경",
-   "category": "landmark",
-   "description": "종루와 고루, 대안탑에서의 야간 조명 쇼.",
-   "address": "시안시",
-   "coordinates": {
-    "lat": 34.26,
-    "lng": 108.93
-   },
-   "openingHours": "11. 야간.",
-   "ticketPrice": "무료",
-   "recommendedVisitTime": "1시간",
-   "highlights": [
-    "12. 조명 쇼.",
-    "13. 야경."
-   ],
-   "tips": "여름 밤에 가장 아름답습니다.",
-   "image": "/img/ext/933590b9add8.webp",
-   "phone": "+86 029  0589 9488"
-  },
-  {
-   "id": "xian-museum",
-   "name": "西安博物院",
-   "nameEn": "시안 박물관",
-   "category": "museum",
-   "description": "시안의 역사를 보여주는 박물관들.",
-   "address": "시안 베이린구",
-   "coordinates": {
-    "lat": 34.26,
-    "lng": 108.93
-   },
-   "openingHours": "09:00-17:00",
-   "ticketPrice": "무료",
-   "recommendedVisitTime": "1.5시간",
-   "highlights": [
-    "시안의 역사"
-   ],
-   "tips": "시안의 문화에 대해 알아보세요.",
-   "image": "/img/ext/f679681891dd.webp",
-   "phone": "+86 029  2894 5657"
-  },
-  {
-   "id": "xian-park",
-   "name": "兴庆宫公园",
-   "nameEn": "싱칭 궁전 공원",
-   "category": "park",
-   "description": "당나라 흥경궁 유적 위에 세워진 공원.",
-   "address": "시안 베이린구",
-   "coordinates": {
-    "lat": 34.25,
-    "lng": 108.97
-   },
-   "openingHours": "하루 종일",
-   "ticketPrice": "무료",
-   "recommendedVisitTime": "1.5시간",
-   "highlights": [
-    "당나라 유적",
-    "공원"
-   ],
-   "tips": "당나라 문화에 대해 알아보세요.",
-   "image": "/img/ext/a35256bc74dd.webp",
-   "phone": "+86 029  5975 3671"
-  },
-  {
-   "id": "xian-temple",
-   "name": "大慈恩寺",
-   "nameEn": "대사은사",
-   "category": "temple",
-   "description": "당나라의 황실 사찰인 대안탑을 보유한 사찰.",
-   "address": "시안시 옌타구",
-   "coordinates": {
-    "lat": 34.22,
-    "lng": 108.95
-   },
-   "openingHours": "08:00-18:00",
-   "ticketPrice": "50위안",
-   "recommendedVisitTime": "1.5시간",
-   "highlights": [
-    "대안탑",
-    "불교 문화"
-   ],
-   "tips": "당나라 불교에 대해 알아보세요.",
-   "image": "/img/ext/31617e07359d.webp",
-   "phone": "+86 029  6095 0804"
-  },
-  {
-   "id": "xian-street",
-   "name": "书院门",
-   "nameEn": "서원문",
-   "category": "street",
-   "description": "시안에서 가장 오래된 문화 거리로, 다양한 서예, 그림, 그리고 문방사우를 갖추고 있습니다.",
-   "address": "시안 베이린구",
-   "coordinates": {
-    "lat": 34.26,
-    "lng": 108.93
-   },
-   "openingHours": "하루 종일",
-   "ticketPrice": "무료",
-   "recommendedVisitTime": "1시간",
-   "highlights": [
-    "서예와 그림",
-    "문방사우 (붓, 먹, 종이, 벼루)"
-   ],
-   "tips": "시안의 문화에 대해 알아보세요.",
-   "image": "/img/ext/bb1e59b31c2f.webp",
-   "phone": "+86 029  0010 5778"
-  },
-  {
-   "id": "xian-banpo",
-   "name": "半坡博物馆",
-   "nameEn": "반포 박물관",
-   "category": "museum",
-   "description": "6,000년 전 양사오 문화의 유적을 전시하는 박물관입니다.",
-   "address": "시안 바차오구",
-   "coordinates": {
-    "lat": 34.3,
-    "lng": 109.05
-   },
-   "openingHours": "08:00-18:00",
-   "ticketPrice": "30위안",
-   "recommendedVisitTime": "1.5시간",
-   "highlights": [
-    "양사오 문화",
-    "유적지"
-   ],
-   "tips": "선사 시대 문화에 대해 알아보세요.",
-   "image": "/img/ext/6b9b721dc44a.webp",
-   "phone": "+86 029  6166 9908"
-  },
-  {
-   "id": "xian-forest",
-   "name": "碑林",
-   "nameEn": "비석림",
-   "category": "museum",
-   "description": "중국 최대의 석각 비문 박물관으로, 수많은 비석이 있습니다.",
-   "address": "시안 베이린구",
-   "coordinates": {
-    "lat": 34.26,
-    "lng": 108.93
-   },
-   "openingHours": "08:00-18:00",
-   "ticketPrice": "65위안",
-   "recommendedVisitTime": "2시간",
-   "highlights": [
-    "석각 비문",
-    "서예"
-   ],
-   "tips": "중국 서예에 대해 배워보세요.",
-   "image": "/img/ext/932937970df3.webp",
-   "phone": "+86 029  5254 6031"
-  },
-  {
-   "id": "xian-mosque",
-   "name": "大清真寺",
-   "nameEn": "대사원",
-   "category": "temple",
-   "description": "중국 4대 모스크 중 하나로, 1,200년 이상의 역사를 가지고 있습니다.",
-   "address": "시안 롄후구",
-   "coordinates": {
-    "lat": 34.27,
-    "lng": 108.93
-   },
-   "openingHours": "08:00-18:00",
-   "ticketPrice": "25위안",
-   "recommendedVisitTime": "1시간",
-   "highlights": [
-    "이슬람 건축",
-    "종교 문화"
-   ],
-   "tips": "이슬람 문화에 대해 배워보세요.",
-   "image": "/img/ext/7b9294e569ee.webp",
-   "phone": "+86 029  6723 1527"
-  },
-  {
-   "id": "xian-bridge",
-   "name": "灞桥",
-   "nameEn": "파교",
-   "category": "landmark",
-   "description": "시안 동부에 있는 고대 다리로, 2,000년 이상의 역사를 가지고 있습니다.",
-   "address": "시안 바차오구",
-   "coordinates": {
-    "lat": 34.3,
-    "lng": 109.05
-   },
-   "openingHours": "하루 종일",
-   "ticketPrice": "무료",
-   "recommendedVisitTime": "30분",
-   "highlights": [
-    "고대 다리",
-    "역사"
-   ],
-   "tips": "시안의 역사에 대해 알아보세요.",
-   "image": "/img/ext/4a4dcb90ca9a.webp",
-   "phone": "+86 029  8205 2810"
-  },
-  {
-   "id": "xian-wei",
-   "name": "渭河",
-   "nameEn": "웨이강",
-   "category": "nature",
-   "description": "황하의 가장 큰 지류로, 도시를 흐릅니다.",
-   "address": "시안시",
-   "coordinates": {
-    "lat": 34.3,
-    "lng": 108.93
-   },
-   "openingHours": "하루 종일",
-   "ticketPrice": "무료",
-   "recommendedVisitTime": "30분",
-   "highlights": [
-    "강"
-   ],
-   "tips": "웨이허 강의 풍경을 감상하세요.",
-   "image": "/img/ext/a237ca8ba2e4.webp",
-   "phone": "+86 029  5953 4546"
-  },
-  {
-   "id": "xian-mountain",
-   "name": "骊山",
-   "nameEn": "리산산",
-   "category": "nature",
-   "description": "화칭지 뒤에 있는 산으로, 봉화대와 빙젠 정자가 있습니다.",
-   "address": "시안시 린퉁구",
-   "coordinates": {
-    "lat": 34.35,
-    "lng": 109.28
-   },
-   "openingHours": "08:00-18:00",
-   "ticketPrice": "화청지 포함",
-   "recommendedVisitTime": "2시간",
-   "highlights": [
-    "봉화대",
-    "빙검정"
-   ],
-   "tips": "시안의 역사에 대해 알아보세요.",
-   "image": "/img/ext/4d192538c5f9.webp",
-   "phone": "+86 029  5559 0239"
-  },
-  {
-   "id": "xian-famen",
-   "name": "法门寺",
-   "nameEn": "파문사",
-   "category": "temple",
-   "description": "석가모니 부처님의 진신사리를 모신 사찰입니다.",
-   "address": "바오지시 푸펑현",
-   "coordinates": {
-    "lat": 34.38,
-    "lng": 107.88
-   },
-   "openingHours": "08:00-18:00",
-   "ticketPrice": "100위안",
-   "recommendedVisitTime": "반나절.",
-   "highlights": [
-    "부처님 손가락 사리",
-    "지하궁"
-   ],
-   "tips": "불교 문화에 대해 알아보세요.",
-   "image": "/img/ext/e9390b71e607.webp",
-   "phone": "+86 029  6759 4210"
-  },
-  {
-   "id": "xian-huashan",
-   "name": "华山",
-   "nameEn": "화산",
-   "category": "nature",
-   "description": "오악 중 하나인 서악으로, 험준함으로 유명합니다.",
-   "address": "웨이난 화인시",
-   "coordinates": {
-    "lat": 34.48,
-    "lng": 110.1
-   },
-   "openingHours": "하루 종일",
-   "ticketPrice": "160위안",
-   "recommendedVisitTime": "하루 종일",
-   "highlights": [
-    "하늘의 외줄다리",
-    "잉어가 몸을 뒤집다",
-    "일출"
-   ],
-   "tips": "화산에 올라 일출을 감상하세요.",
-   "image": "/img/ext/1b3a09b8ec59.webp",
-   "phone": "+86 029  0011 8775"
-  },
-  {
-   "id": "xian-forest2",
-   "name": "小雁塔",
-   "nameEn": "소작루",
-   "category": "temple",
-   "description": "당나라 불교 탑으로, 대안탑만큼 유명합니다.",
-   "address": "시안시 베이린구",
-   "coordinates": {
-    "lat": 34.25,
-    "lng": 108.93
-   },
-   "openingHours": "09:00-17:00",
-   "ticketPrice": "무료",
-   "recommendedVisitTime": "1시간",
-   "highlights": [
-    "불교 탑",
-    "역사"
-   ],
-   "tips": "당나라 문화에 대해 배워보세요.",
-   "image": "/img/ext/7c1f803fbd3c.webp",
-   "phone": "+86 029  5608 2909"
-  },
-  {
-   "id": "xian-street2",
-   "name": "永兴坊",
-   "nameEn": "용성 팡",
-   "category": "street",
-   "description": "시안에 새로 개발된 음식 거리입니다.",
-   "address": "시안시 베이린구",
-   "coordinates": {
-    "lat": 34.26,
-    "lng": 108.97
-   },
-   "openingHours": "하루 종일",
-   "ticketPrice": "무료",
-   "recommendedVisitTime": "1.5시간",
-   "highlights": [
-    "음식",
-    "술잔 부수기"
-   ],
-   "tips": "시안의 간식을 맛보세요.",
-   "image": "/img/ext/018c7338a6b5.webp",
-   "phone": "+86 029  2400 7088"
-  },
-  {
-   "id": "xian-temple2",
-   "name": "青龙寺",
-   "nameEn": "칭룽사",
-   "category": "temple",
-   "description": "당나라 불교 사원으로, 구카이(홍법대사) 기념비가 있습니다.",
-   "address": "시안시 옌타구",
-   "coordinates": {
-    "lat": 34.22,
-    "lng": 108.95
-   },
-   "openingHours": "08:00-17:00",
-   "ticketPrice": "무료",
-   "recommendedVisitTime": "1시간",
-   "highlights": [
-    "벚꽃",
-    "쿠카이"
-   ],
-   "tips": "벚꽃은 봄에 가장 아름답습니다.",
-   "image": "/img/ext/877fddacc3cd.webp",
-   "phone": "+86 029  3887 8154"
-  },
-  {
-   "id": "xian-park2",
-   "name": "大唐芙蓉园",
-   "nameEn": "당원",
-   "category": "park",
-   "description": "당나라 문화를 주제로 한 대형 공원입니다.",
-   "address": "시안시 옌타구",
-   "coordinates": {
-    "lat": 34.22,
-    "lng": 108.95
-   },
-   "openingHours": "09:00-21:00",
-   "ticketPrice": "120위안",
-   "recommendedVisitTime": "반나절",
-   "highlights": [
-    "당나라 문화",
-    "워터 커튼 영화"
-   ],
-   "tips": "당나라 문화에 대해 배워보세요.",
-   "image": "/img/ext/2bf9c9919c9e.webp",
-   "phone": "+86 029  3195 6417"
-  }
- ],
- "restaurants": [
-  {
-   "id": "xian-1",
-   "name": "长安大牌档",
-   "nameEn": "창안파이탕",
-   "type": "미쉐린",
-   "star": 1,
-   "cuisine": "산시성",
-   "avgPrice": 150,
-   "rating": 4.7,
-   "address": "완다플라자 등 다양한 위치",
-   "coordinates": {
-    "lat": 34.2315,
-    "lng": 108.8935
-   },
-   "phone": "+86 29 6568 9666",
-   "hours": "11:00-22:00",
-   "description": "미쉐린 1스타 레스토랑으로 전통적인 분위기와 민속 공연이 있는 훌륭한 산시 요리를 제공합니다.",
-   "dishHighlights": [
-    "비앙비앙면",
-    "양고기 파오모",
-    "진나라 요리 접시"
-   ],
-   "tags": [
-    "미쉐린",
-    "산시요리",
-    "문화적"
-   ],
-   "diamond": 0,
-   "imageUrl": "/img/ext/10d3f25923d6.webp"
-  },
-  {
-   "id": "xian-2",
-   "name": "우젠창안 (장안을 만나다)",
-   "nameEn": "미트 창안",
-   "type": "로컬",
-   "cuisine": "산시성",
-   "avgPrice": 100,
-   "rating": 4.6,
-   "address": "야타구 샤오짜이 교차로",
-   "coordinates": {
-    "lat": 34.2255,
-    "lng": 108.9535
-   },
-   "hours": "10:30-21:30",
-   "description": "높은 평가를 받는 산시 레스토랑으로 진정한 맛과 현지 특산품을 제공합니다.",
-   "dishHighlights": [
-    "냉면",
-    "볶음 국수",
-    "만두"
-   ],
-   "tags": [
-    "현지",
-    "산시요리",
-    "인기"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "phone": "+86 029  4430 3920",
-   "imageUrl": "/img/ext/1ead642f1e0f.webp"
-  },
-  {
-   "id": "xian-3",
-   "name": "老孙家",
-   "nameEn": " Lao Sun 가",
-   "type": "로컬",
-   "cuisine": "후이 무슬림",
-   "avgPrice": 60,
-   "rating": 4.5,
-   "address": "종루 근처",
-   "coordinates": {
-    "lat": 34.2635,
-    "lng": 108.9455
-   },
-   "description": "전설적인 무슬림 레스토랑으로 훌륭한 양고기 요리와 러우자모로 유명합니다.",
-   "dishHighlights": [
-    "러우자모 (중국식 햄버거)",
-    "양고기 꼬치",
-    "비앙비앙면"
-   ],
-   "tags": [
-    "현지",
-    "무슬림 요리",
-    "역사적인"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "hours": "10:00-22:00",
-   "phone": "+86 029  3193 4918",
-   "imageUrl": "/img/ext/b3d65b5d9444.webp"
-  },
-  {
-   "id": "xian-4",
-   "name": "더파창",
-   "nameEn": "DeFa 창",
-   "type": "로컬",
-   "cuisine": "만두",
-   "avgPrice": 80,
-   "rating": 4.4,
-   "address": "베일린구의 산진 거리",
-   "coordinates": {
-    "lat": 34.2585,
-    "lng": 108.9425
-   },
-   "description": "수세기 동안 100가지 이상의 다양한 만두를 만들어온 것으로 유명합니다.",
-   "dishHighlights": [
-    "다양한 만두",
-    "크리스탈 새우 만두",
-    "야채 만두"
-   ],
-   "tags": [
-    "현지",
-    "딤섬",
-    "역사적인"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "hours": "10:00-22:00",
-   "phone": "+86 029  0923 5691",
-   "imageUrl": "/img/ext/3a727a953eca.webp"
-  },
-  {
-   "id": "xian-5",
-   "name": "춘파성",
-   "nameEn": "춘파성",
-   "type": "로컬",
-   "cuisine": "산시성",
-   "avgPrice": 40,
-   "rating": 4.3,
-   "address": "고루 근처",
-   "coordinates": {
-    "lat": 34.2625,
-    "lng": 108.9415
-   },
-   "description": "시안의 전통적인 아침 식사와 내장 요리를 제공하는 역사적인 레스토랑입니다.",
-   "dishHighlights": [
-    "양고기 수프와 팬케이크",
-    "순대",
-    "전통적인 아침 식사"
-   ],
-   "tags": [
-    "현지",
-    "아침",
-    "전통적인"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "hours": "10:00-22:00",
-   "phone": "+86 029  6663 0682",
-   "imageUrl": "/img/ext/09aa51734b0f.webp"
-  },
-  {
-   "id": "xian-6",
-   "name": "花腰崽",
-   "nameEn": "화요재",
-   "type": "블랙펄",
-   "diamond": 1,
-   "cuisine": "산시성",
-   "avgPrice": 120,
-   "rating": 4.7,
-   "address": "옌타구 남대로 88번지",
-   "coordinates": {
-    "lat": 34.2205,
-    "lng": 108.9465
-   },
-   "phone": "+86 29 8525 2888",
-   "hours": "11:00-21:00",
-   "description": "우아한 당나라 스타일 인테리어에서 정제된 산시 요리를 제공하는 블랙펄 다이아몬드 레스토랑입니다.",
-   "dishHighlights": [
-    "시안 교자",
-    "연잎과 함께 조린 돼지고기",
-    "황금 새우 달걀"
-   ],
-   "tags": [
-    "블랙 펄",
-    "산시요리",
-    "당나라 스타일"
-   ],
-   "star": 0,
-   "imageUrl": "/img/ext/aab7630af4e1.webp"
-  },
-  {
-   "id": "xian-7",
-   "name": "贾三清真灌汤包",
-   "nameEn": "자싼 할랄 수프 교자",
-   "type": "로컬",
-   "cuisine": "후이 무슬림",
-   "avgPrice": 40,
-   "rating": 4.6,
-   "address": "무슬림 지구 서대로",
-   "coordinates": {
-    "lat": 34.2605,
-    "lng": 108.9425
-   },
-   "hours": "08:00-22:00",
-   "description": "무슬림 지구에서 가장 유명한 샤오롱바오(수프 교자) 가게로 항상 붐빕니다.",
-   "dishHighlights": [
-    "소고기 수프 교자",
-    "양고기 만두",
-    "참기름 케이크"
-   ],
-   "tags": [
-    "현지",
-    "무슬림 요리",
-    "수프 교자",
-    "유명"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "phone": "+86 029  8739 1137",
-   "imageUrl": "/img/ext/376ec8b6c2e7.webp"
-  },
-  {
-   "id": "xian-8",
-   "name": "老刘家泡馍",
-   "nameEn": "라오리우지아 파오모",
-   "type": "로컬",
-   "cuisine": "후이 무슬림",
-   "avgPrice": 50,
-   "rating": 4.6,
-   "address": "종루 근처",
-   "coordinates": {
-    "lat": 34.2635,
-    "lng": 108.9455
-   },
-   "description": "전통적인 양러우 파오모(양고기 육수에 손으로 찢은 납작빵)를 제공하는 전설적인 레스토랑입니다.",
-   "dishHighlights": [
-    "양고기 수프와 찢어진 빵 (Yangrou pao mo)",
-    "단무지 마늘",
-    "양의 위"
-   ],
-   "tags": [
-    "현지",
-    "무슬림 요리",
-    "파오모 (pao-mo)",
-    "반드시 시도해야 할"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "hours": "10:00-22:00",
-   "phone": "+86 029  7134 1164",
-   "imageUrl": "/img/ext/ec4a38808f5e.webp"
-  },
-  {
-   "id": "xian-9",
-   "name": "뺑뺑면",
-   "nameEn": "중다 비앙비앙 미엔 (Zhongda Biangbiang Mian)",
-   "type": "로컬",
-   "cuisine": "산시성",
-   "avgPrice": 25,
-   "rating": 4.5,
-   "address": "섬서사범대학 근처",
-   "coordinates": {
-    "lat": 34.2315,
-    "lng": 108.9345
-   },
-   "description": "학생들에게 인기 있는 곳으로, 매운 소스와 함께 제공되는 유명한 넓은 띠 모양의 국수를 저렴하고 진짜 맛으로 제공합니다.",
-   "dishHighlights": [
-    "비앙비앙면 (넓은 띠 모양의 국수)",
-    "매콤하고 새콤한 국수",
-    "진나라 요리 세트 메뉴"
-   ],
-   "tags": [
-    "현지",
-    "면요리",
-    "저렴",
-    "학생 지역"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "hours": "10:00-22:00",
-   "phone": "+86 029  8333 9397",
-   "imageUrl": "/img/ext/a77d25b5ed73.webp"
-  },
-  {
-   "id": "xian-10",
-   "name": "동남아풍 증고 (쩡가오)",
-   "nameEn": "동남아 징 가오 (Dongnanya Jing Gao)",
-   "type": "로컬",
-   "cuisine": "섬서 디저트",
-   "avgPrice": 15,
-   "rating": 4.6,
-   "address": "무슬림 지구",
-   "coordinates": {
-    "lat": 34.26,
-    "lng": 108.943
-   },
-   "description": "무슬림 거리에서 수십 년 동안 유명한 징 가오 (팥과 대추를 넣은 찐 찹쌀)를 판매하는 유명한 디저트 판매점입니다.",
-   "dishHighlights": [
-    "징 가오 (찐 단맛의 쌀)",
-    "양조",
-    "깨 케이크"
-   ],
-   "tags": [
-    "현지",
-    "디저트",
-    "무슬림 요리",
-    "스트리트푸드"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "hours": "10:00-22:00",
-   "phone": "+86 029  1148 8379",
-   "imageUrl": "/img/ext/1ad56b5d9c26.webp"
-  },
-  {
-   "id": "xian-11",
-   "name": "同盛祥",
-   "nameEn": "통성향",
-   "type": "로컬",
-   "cuisine": "후이 무슬림",
-   "avgPrice": 55,
-   "rating": 4.5,
-   "address": "종루 서쪽 거리",
-   "coordinates": {
-    "lat": 34.2645,
-    "lng": 108.9425
-   },
-   "hours": "08:00-21:00",
-   "description": "손으로 뜯은 빵 기법으로 양루오 파오모를 전문으로 하는 100년 전통 식당.",
-   "dishHighlights": [
-    "양루오 파오모",
-    "양의 위",
-    "바삭한 평면빵"
-   ],
-   "tags": [
-    "현지",
-    "무슬림 요리",
-    "파오모 (pao-mo)",
-    "역사적인"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "phone": "+86 029  2760 5982",
-   "imageUrl": "/img/ext/e35a0e5ab570.webp"
-  },
-  {
-   "id": "xian-12",
-   "name": "하이롱 궈티에 (해영鍋貼)",
-   "nameEn": "해룽구오티에",
-   "type": "로컬",
-   "cuisine": "산시성",
-   "avgPrice": 45,
-   "rating": 4.4,
-   "address": "무슬림 거리 베이위안먼",
-   "coordinates": {
-    "lat": 34.2625,
-    "lng": 108.9415
-   },
-   "hours": "10:00-22:00",
-   "description": "시안 길거리 음식의 대표주자로, 속이 촉촉하고 겉이 바삭한 군만두(궈티에)로 유명합니다.",
-   "dishHighlights": [
-    "돼지고기와 부추가 들어간 군만두 (궈티에)",
-    "양고기구오티에",
-    "얼큰하고 새콤한 수프"
-   ],
-   "tags": [
-    "현지",
-    "딤섬",
-    "스트리트푸드",
-    "바삭한"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "phone": "+86 029  3572 9281",
-   "imageUrl": "/img/ext/1795ec53ed4e.webp"
-  },
-  {
-   "id": "xian-13",
-   "name": "魏家凉皮",
-   "nameEn": "위자량피",
-   "type": "로컬",
-   "cuisine": "산시성",
-   "avgPrice": 20,
-   "rating": 4.6,
-   "address": "남쪽 거리",
-   "coordinates": {
-    "lat": 34.2595,
-    "lng": 108.9515
-   },
-   "hours": "10:00-22:00",
-   "description": "비밀 양념 소스와 함께 시원한 양피(량피)를 제공하는 인기 체인점으로, 상쾌하고 맛있습니다.",
-   "dishHighlights": [
-    "양피(량피)",
-    "매운 소스",
-    "오이와콩나물"
-   ],
-   "tags": [
-    "현지",
-    "면요리",
-    "차가운",
-    "매운",
-    "저렴"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "phone": "+86 029  1917 1330",
-   "imageUrl": "/img/ext/8a9278b43f17.webp"
-  },
-  {
-   "id": "xian-14",
-   "name": "子午路肉夹馍",
-   "nameEn": "자우루로우지모",
-   "type": "로컬",
-   "cuisine": "산시성",
-   "avgPrice": 15,
-   "rating": 4.7,
-   "address": "쯔우로",
-   "coordinates": {
-    "lat": 34.2235,
-    "lng": 108.9355
-   },
-   "hours": "07:00-20:00",
-   "description": "완벽하게 조린 돼지고기가 바삭한 빵에 들어간 전설적인 로우지모 상점으로, 시안의 필수 아침 메뉴입니다.",
-   "dishHighlights": [
-    "클래식 로우지모",
-    "건두부 로우지모",
-    "삼겹살 로우지모"
-   ],
-   "tags": [
-    "현지",
-    "로우지모",
-    "아침",
-    "저렴",
-    "유명"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "phone": "+86 029  5363 9740",
-   "imageUrl": "/img/ext/71b23a1406e9.webp"
-  },
-  {
-   "id": "xian-15",
-   "name": "장지 루지아모 (장기육가막)",
-   "nameEn": "장지로우지모",
-   "type": "로컬",
-   "cuisine": "산시성",
-   "avgPrice": 15,
-   "rating": 4.5,
-   "address": "이스트 스트리트",
-   "coordinates": {
-    "lat": 34.2665,
-    "lng": 108.9555
-   },
-   "hours": "07:30-20:00",
-   "description": "넉넉한 양의 조린 돼지고기와 갓 구운 빵으로 유명한 또 다른 로우지모 명소입니다.",
-   "dishHighlights": [
-    "표준 로우지모",
-    "고기추가 로우지모",
-    "양고기 로우지모"
-   ],
-   "tags": [
-    "현지",
-    "로우지모",
-    "아침",
-    "저렴"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "phone": "+86 029  3060 6460",
-   "imageUrl": "/img/ext/e80a516e8881.webp"
-  },
-  {
-   "id": "xian-16",
-   "name": "마후면 (마호면)",
-   "nameEn": "마후마이안",
-   "type": "로컬",
-   "cuisine": "산시성",
-   "avgPrice": 30,
-   "rating": 4.6,
-   "address": "웨스트 7번가",
-   "coordinates": {
-    "lat": 34.2755,
-    "lng": 108.9385
-   },
-   "hours": "06:30-14:00",
-   "description": "수제 당면과 바삭한 로우지모로 유명한 전설적인 아침 식당으로, 일찍 문을 닫습니다.",
-   "dishHighlights": [
-    "손빼기면",
-    "샤오차이 면",
-    "루지모"
-   ],
-   "tags": [
-    "현지",
-    "면요리",
-    "아침",
-    "조기마감",
-    "유명"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "phone": "+86 029  8372 8090",
-   "imageUrl": "/img/ext/3e7b15229c03.webp"
-  },
-  {
-   "id": "xian-17",
-   "name": "柳巷面",
-   "nameEn": "류샹 면",
-   "type": "로컬",
-   "cuisine": "산시성",
-   "avgPrice": 28,
-   "rating": 4.5,
-   "address": "안반 스트리트",
-   "coordinates": {
-    "lat": 34.2685,
-    "lng": 108.9495
-   },
-   "hours": "11:00-21:00",
-   "description": "수십 년간 현지인들에게 사랑받아 온 진한 토마토 계란 소스의 칼국수로 유명합니다.",
-   "dishHighlights": [
-    "칼국수",
-    "토마토 계란 면",
-    "매운 면"
-   ],
-   "tags": [
-    "현지",
-    "면요리",
-    "산시요리",
-    "인기"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "phone": "+86 029  2598 2633",
-   "imageUrl": "/img/ext/40398e7c6daa.webp"
-  },
-  {
-   "id": "xian-18",
-   "name": "정다마 뺑뺑면",
-   "nameEn": "정마마 Biangbiang 면",
-   "type": "로컬",
-   "cuisine": "산시성",
-   "avgPrice": 25,
-   "rating": 4.7,
-   "address": "샤오자이 창안로",
-   "coordinates": {
-    "lat": 34.2285,
-    "lng": 108.9515
-   },
-   "hours": "10:00-22:00",
-   "description": "혼합 토핑과 매운 기름이 함께하는 유명한 넓은 면으로 유명한 높은 평점의 장소입니다.",
-   "dishHighlights": [
-    "삼중 토핑 biangbiang면",
-    "고기 소스 biangbiang면",
-    "야채 biangbiang면"
-   ],
-   "tags": [
-    "현지",
-    "면요리",
-    "빵빵면",
-    "인기"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "phone": "+86 029  5724 8941",
-   "imageUrl": "/img/ext/7b9cefeae05d.webp"
-  },
-  {
-   "id": "xian-19",
-   "name": "定家小酥肉",
-   "nameEn": "딩jia 소고기",
-   "type": "로컬",
-   "cuisine": "후이 무슬림",
-   "avgPrice": 50,
-   "rating": 4.6,
-   "address": "시양 시장 후이민 스트리트",
-   "coordinates": {
-    "lat": 34.2595,
-    "lng": 108.9405
-   },
-   "hours": "10:00-22:00",
-   "description": "시안의 상징적인 무슬림 지구 레스토랑으로 바삭한 양갈비 튀김과 쌀 요리로 유명합니다.",
-   "dishHighlights": [
-    "바삭한 양갈비 튀김",
-    "양고기 밥그릇",
-    "양고기 꼬치"
-   ],
-   "tags": [
-    "현지",
-    "무슬림 요리",
-    "양고기",
-    "유명"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "phone": "+86 029  5614 0902",
-   "imageUrl": "/img/ext/381fbf90ed48.webp"
-  },
-  {
-   "id": "xian-20",
-   "name": "시시 궈쿠이 (희희과괴)",
-   "nameEn": "시시궈쿠이",
-   "type": "로컬",
-   "cuisine": "산시성",
-   "avgPrice": 10,
-   "rating": 4.3,
-   "address": "남문 밖",
-   "coordinates": {
-    "lat": 34.2565,
-    "lng": 108.9495
-   },
-   "hours": "08:00-18:00",
-   "description": "전통적인 빵집으로 유명한 거대한 바삭한 납작빵(궈쿠이)으로 양고기 수프와 잘 어울립니다.",
-   "dishHighlights": [
-    "일반 궈쿠이",
-    "참깨 궈쿠이",
-    "바삭한 빵"
-   ],
-   "tags": [
-    "현지",
-    "간식",
-    "빵",
-    "저렴",
-    "전통적인"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "phone": "+86 029  6191 9266",
-   "imageUrl": "/img/ext/6083da90a1b5.webp"
-  },
-  {
-   "id": "xian-21",
-   "name": "陕十三",
-   "nameEn": "산 13",
-   "type": "블랙펄",
-   "cuisine": "산시성",
-   "avgPrice": 100,
-   "rating": 4.6,
-   "address": "취장 신구",
-   "coordinates": {
-    "lat": 34.2115,
-    "lng": 108.9635
-   },
-   "phone": "+86 29 8932 8888",
-   "hours": "11:00-21:30",
-   "description": "우아한 분위기에서 전통shan시 요리를 현대적으로 재해석한 블랙펄 레스토랑.",
-   "dishHighlights": [
-    "미니 루지모 테이스팅",
-    "디컨스트럭티드 양피",
-    "아티스틱 디저트"
-   ],
-   "tags": [
-    "블랙 펄",
-    "산시요리",
-    "모던",
-    "창의적"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "imageUrl": "/img/ext/de759a7f3057.webp"
-  },
-  {
-   "id": "xian-22",
-   "name": "长安大排档",
-   "nameEn": "창안 대파이다",
-   "type": "로컬",
-   "cuisine": "산시성",
-   "avgPrice": 80,
-   "rating": 4.5,
-   "address": "샤오자이 사이거",
-   "coordinates": {
-    "lat": 34.2245,
-    "lng": 108.9455
-   },
-   "hours": "10:00-22:00",
-   "description": "활기찬 대파이당 분위기 속에서 다양한 산시식 소접시 요리를 제공하는 인기 체인점입니다.",
-   "dishHighlights": [
-    "혼합 전채 플래터",
-    "비앙비앙면",
-    "진나라 요리 시식"
-   ],
-   "tags": [
-    "현지",
-    "산시요리",
-    "다양한",
-    "활기찬"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "phone": "+86 029  4725 3917",
-   "imageUrl": "/img/ext/25db415f1159.webp"
-  },
-  {
-   "id": "xian-new-23",
-   "name": "西安饭庄",
-   "nameEn": "시안 레스토랑",
-   "type": "로컬",
-   "cuisine": "산시성",
-   "avgPrice": 90,
-   "rating": 4.4,
-   "address": "이스트 스트리트",
-   "coordinates": {
-    "lat": 34.2685,
-    "lng": 108.9535
-   },
-   "hours": "10:00-22:00",
-   "description": "1929년에 설립된 역사가 깊은 산시 성의 레스토랑으로 전통 요리로 유명합니다.",
-   "dishHighlights": [
-    "찜 돼지고기",
-    "볶음 국수",
-    "전통적인 만두"
-   ],
-   "tags": [
-    "현지",
-    "산시 요리",
-    "역사적인",
-    "전통적인"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "phone": "+86 029  8460 9895",
-   "imageUrl": "/img/ext/4546cc95fad5.webp"
-  },
-  {
-   "id": "xian-new-24",
-   "name": "老味道",
-   "nameEn": "오래된 풍미",
-   "type": "로컬",
-   "cuisine": "산시",
-   "avgPrice": 70,
-   "rating": 4.5,
-   "address": "베이린 구",
-   "coordinates": {
-    "lat": 34.2645,
-    "lng": 108.9535
-   },
-   "hours": "11:00-21:00",
-   "description": "전통적인 산시 가정식 요리 전문점",
-   "dishHighlights": [
-    "찜닭",
-    "감자 슬라이스",
-    "냉면"
-   ],
-   "tags": [
-    "현지",
-    "산시 요리",
-    "가정식",
-    "정통"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "phone": "+86 029  7307 4512",
-   "imageUrl": "/img/ext/ad609d922c26.webp"
-  },
-  {
-   "id": "xian-new-25",
-   "name": "天下第一面",
-   "nameEn": "천하제일면",
-   "type": "로컬",
-   "cuisine": "산시성",
-   "avgPrice": 40,
-   "rating": 4.4,
-   "address": "옌타 구",
-   "coordinates": {
-    "lat": 34.2195,
-    "lng": 108.9485
-   },
-   "hours": "10:00-22:00",
-   "description": "푸짐한 양의 다양한 전통 산시성 면 요리로 인기가 높습니다.",
-   "dishHighlights": [
-    "묵면",
-    "얼큰한 국수",
-    "밀가루면"
-   ],
-   "tags": [
-    "현지",
-    "면요리",
-    "산시요리",
-    "인기"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "phone": "+86 029  1020 6666",
-   "imageUrl": "/img/ext/__missing.svg"
-  },
-  {
-   "id": "xian-new-26",
-   "name": "小杨烤肉",
-   "nameEn": "샤오양 BBQ",
-   "type": "로컬",
-   "cuisine": "후이 무슬림",
-   "avgPrice": 80,
-   "rating": 4.6,
-   "address": "후이민 스트리트",
-   "coordinates": {
-    "lat": 34.2595,
-    "lng": 108.9415
-   },
-   "hours": "11:00-23:00",
-   "description": "무슬림 지역에서 인기 있는 바비큐 레스토랑으로, 신선한 양고기와 전통적인 양념이 특징입니다.",
-   "dishHighlights": [
-    "양고기 꼬치",
-    "양척추",
-    "구운 납작빵"
-   ],
-   "tags": [
-    "현지",
-    "무슬림 요리",
-    "바비큐",
-    "인기"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "phone": "+86 029  5771 9169",
-   "imageUrl": "/img/ext/0f0eb01a3210.webp"
-  },
-  {
-   "id": "xian-new-27",
-   "name": "大厨小馆",
-   "nameEn": "셰프 키친",
-   "type": "로컬",
-   "cuisine": "산시성",
-   "avgPrice": 85,
-   "rating": 4.5,
-   "address": "취장 신구",
-   "coordinates": {
-    "lat": 34.2125,
-    "lng": 108.9695
-   },
-   "hours": "11:00-21:30",
-   "description": "예술적인 플레이팅으로 세련된 산시 요리를 제공하는 레스토랑입니다.",
-   "dishHighlights": [
-    "찐 만두",
-    "돼지고기 조림",
-    "야채"
-   ],
-   "tags": [
-    "현지",
-    "산시요리",
-    "정교한",
-    "우아한"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "phone": "+86 029  8226 0882",
-   "imageUrl": "/img/ext/f5f94d31f0a9.webp"
-  },
-  {
-   "id": "xian-new-28",
-   "name": "西北饭庄",
-   "nameEn": "서북식당",
-   "type": "로컬",
-   "cuisine": "서북 요리",
-   "avgPrice": 75,
-   "rating": 4.4,
-   "address": "신청 구",
-   "coordinates": {
-    "lat": 34.2745,
-    "lng": 108.9485
-   },
-   "hours": "10:00-22:00",
-   "description": "대형portion으로 알려진 서북 중국 요리의 인기 식당",
-   "dishHighlights": [
-    "손으로 뽑은 국수",
-    "양고기 스튜",
-    "플랫빵"
-   ],
-   "tags": [
-    "현지",
-    "서북",
-    "면요리",
-    "푸짐한"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "phone": "+86 029  6672 8685",
-   "imageUrl": "/img/ext/5b1fb3df83af.webp"
-  },
-  {
-   "id": "xian-new-29",
-   "name": "醉西安",
-   "nameEn": "취한 시안",
-   "type": "로컬",
-   "cuisine": "섬서 퓨전",
-   "avgPrice": 110,
-   "rating": 4.6,
-   "address": "옌타구",
-   "coordinates": {
-    "lat": 34.2255,
-    "lng": 108.9545
-   },
-   "hours": "11:00-22:00",
-   "description": "창의적인 섬서 요리와 크래프트 비어를 제공하는 현대적 레스토랑",
-   "dishHighlights": [
-    "디컨스트럭티드 러지모",
-    "크래프트 비어 페어링",
-    "모던량피"
-   ],
-   "tags": [
-    "현지",
-    "산시요리",
-    "모던",
-    "창의적"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "phone": "+86 029  0395 1646",
-   "imageUrl": "/img/ext/2d1270214eac.webp"
-  },
-  {
-   "id": "xian-new-30",
-   "name": "粉巷13号",
-   "nameEn": "분향13호",
-   "type": "로컬",
-   "cuisine": "산시성",
-   "avgPrice": 60,
-   "rating": 4.5,
-   "address": "베이린구 펀샹",
-   "coordinates": {
-    "lat": 34.2635,
-    "lng": 108.9545
-   },
-   "hours": "10:00-22:00",
-   "description": "전통적인 섬서 조식과 간식을 찾는 인기 장소",
-   "dishHighlights": [
-    "두부피막",
-    "찐빵",
-    "두유"
-   ],
-   "tags": [
-    "현지",
-    "아침",
-    "산시요리",
-    "저렴"
-   ],
-   "star": 0,
-   "diamond": 0,
-   "phone": "+86 029  0006 5045",
-   "imageUrl": "/img/ext/e0e3a2878ec7.webp"
-  },
-  {
-   "id": "xian-31",
-   "name": "노자호 뺑뺑면",
-   "nameEn": "노자호biangbiang면 (biangbiang면)",
-   "type": "길거리",
-   "cuisine": "biangbiang면",
-   "avgPrice": 22,
-   "rating": 4.2,
-   "address": "시안시 옌타구 푸드스트리트 14",
-   "coordinates": {
-    "lat": 34.2975,
-    "lng": 108.9579
-   },
-   "phone": "+86 029 50116398",
-   "hours": "17:00-02:00",
-   "description": "현지인이 추천하는 biangbiang면 전문점, 진짜 맛, 합리적인 가격",
-   "dishHighlights": [
-    "biangbiang면",
-    "로우지아모(중국식 햄버거)",
-    "수제비 만두"
-   ],
-   "tags": [
-    "야시장",
-    "노점",
-    "트렌디한 체크인 명소"
-   ],
-   "diamond": 0,
-   "imageUrl": "/img/ext/4d37d82561b1.webp"
-  },
-  {
-   "id": "xian-33",
-   "name": "길거리 수프 만두",
-   "nameEn": "길거리 수프 만두 (탕포)",
-   "type": "길거리",
-   "cuisine": "수제비 만두",
-   "avgPrice": 53,
-   "rating": 4.8,
-   "address": "시안시 웨이양구 푸드스트리트 190",
-   "coordinates": {
-    "lat": 34.3422,
-    "lng": 108.944
-   },
-   "phone": "+86 029 10693863",
-   "hours": "10:00-22:00",
-   "description": "시안 현지인이 추천하는 만두 전문점으로, 정통 맛과 합리적인 가격을 자랑합니다",
-   "dishHighlights": [
-    "양러우파오모(양고기 수프에 난을 찢어 넣은 요리)",
-    "량피(냉면)",
-    "수제비 만두"
-   ],
-   "tags": [
-    "야시장",
-    "트렌디한 체크인 명소",
-    "심야 음식"
-   ],
-   "diamond": 0,
-   "imageUrl": "/img/ext/fa567ade5072.webp"
-  },
-  {
-   "id": "xian-35",
-   "name": "老街凉皮",
-   "nameEn": "올드스트리트 량피 (량피)",
-   "type": "로컬",
-   "cuisine": "량피(냉면)",
-   "avgPrice": 119,
-   "rating": 4.6,
-   "address": "시안시 베이린구 푸드 스트리트 89번지",
-   "coordinates": {
-    "lat": 34.2945,
-    "lng": 108.9753
-   },
-   "phone": "+86 029 11386772",
-   "hours": "17:00-02:00",
-   "description": "시안 현지인이 추천하는 량피 가게로, 정통 맛과 저렴한 가격이 특징입니다",
-   "dishHighlights": [
-    "양러우 파오모(양고기 수프에 난을 찢어 넣은 요리)",
-    "로우지아모(중국식 햄버거)",
-    "수제 만두"
-   ],
-   "tags": [
-    "가정식 요리",
-    "현지인에게 사랑받는 곳",
-    "오랜 전통의 동네 식당"
-   ],
-   "diamond": 0,
-   "imageUrl": "/img/ext/c179827129ff.webp"
-  },
-  {
-   "id": "xian-37",
-   "name": "노시안 뺑뺑면",
-   "nameEn": "오래된 시안biangbiang면 (biangbiang면)",
-   "type": "카페",
-   "cuisine": "biangbiang면",
-   "avgPrice": 55,
-   "rating": 4.9,
-   "address": "시안시 웨이양구 푸드 스트리트 188번지",
-   "coordinates": {
-    "lat": 34.3749,
-    "lng": 108.9027
-   },
-   "phone": "+86 029 39629315",
-   "hours": "10:30-14:00, 16:30-22:00",
-   "description": "현지인이 추천하는 biangbiang면 전문점, 진짜 맛, 합리적인 가격",
-   "dishHighlights": [
-    "수제 만두",
-    "량피(냉면)",
-    "양러우 파오모(양고기 수프에 난을 찢어 넣은 요리)"
-   ],
-   "tags": [
-    "조용함",
-    "커피",
-    "애프터눈 티"
-   ],
-   "diamond": 0,
-   "imageUrl": "/img/ext/669390ee71d8.webp"
-  },
-  {
-   "id": "xian-39",
-   "name": "地道羊肉泡馍",
-   "nameEn": "진짜 양러우파오모 (양고기 수프에 넣은 납작빵)",
-   "type": "로컬",
-   "cuisine": "양러우파오모(양고기 수프에 넣은 잘게 찢은 납작빵)",
-   "avgPrice": 82,
-   "rating": 4,
-   "address": "시안시 롄후구 푸드 스트리트 22번지",
-   "coordinates": {
-    "lat": 34.2932,
-    "lng": 108.9017
-   },
-   "phone": "+86 029 82819021",
-   "hours": "06:00-14:00",
-   "description": "시안 현지인이 추천하는 양러우파오모 가게로, 정통 맛과 합리적인 가격이 특징입니다",
-   "dishHighlights": [
-    "러우자모(중국식 햄버거)",
-    "양러우파오모(양고기 수프에 넣은 잘게 찢은 납작빵)",
-    "biangbiang면"
-   ],
-   "tags": [
-    "가정식 요리",
-    "오래된 전통 브랜드",
-    "대기 줄의 여왕"
-   ],
-   "diamond": 0,
-   "imageUrl": "/img/ext/51976567dbfc.webp"
-  },
-  {
-   "id": "xian-41",
-   "name": "골목 biangbiang면",
-   "nameEn": "골목빵빵면 (biangbiang면)",
-   "type": "길거리",
-   "cuisine": "biangbiang면",
-   "avgPrice": 54,
-   "rating": 4.8,
-   "address": "시안시 롄후구 푸드 스트리트 1번지",
-   "coordinates": {
-    "lat": 34.3604,
-    "lng": 108.9086
-   },
-   "phone": "+86 029 56507439",
-   "hours": "10:00-22:00",
-   "description": "현지인이 추천하는 biangbiang면 전문점, 진짜 맛, 합리적인 가격",
-   "dishHighlights": [
-    "러우자모(중국식 햄버거)",
-    "양러우파오모(양고기 수프에 넣은 잘게 찢은 납작빵)",
-    "수프 만두"
-   ],
-   "tags": [
-    "노점",
-    "야식",
-    "간식"
-   ],
-   "diamond": 0,
-   "imageUrl": "/img/ext/a64be3138bf4.webp"
-  },
-  {
-   "id": "xian-43",
-   "name": "노시안 뺑뺑면",
-   "nameEn": "오래된 시안biangbiang면 (biangbiang면)",
-   "type": "로컬",
-   "cuisine": "biangbiang면",
-   "avgPrice": 115,
-   "rating": 4.7,
-   "address": "시안시 롄후구 푸드 스트리트 165번지",
-   "coordinates": {
-    "lat": 34.3164,
-    "lng": 108.9473
-   },
-   "phone": "+86 029 87457332",
-   "hours": "17:00-02:00",
-   "description": "현지인이 추천하는 biangbiang면 전문점, 진짜 맛, 합리적인 가격",
-   "dishHighlights": [
-    "양러우파오모(양고기 수프와 납작빵)",
-    "량피(냉면)",
-    "로우지아모(중식 햄버거)"
-   ],
-   "tags": [
-    "대기열의 여왕",
-    "현지인들의 사랑",
-    "가성비 최고"
-   ],
-   "diamond": 0,
-   "imageUrl": "/img/ext/879988d9ba0d.webp"
-  },
-  {
-   "id": "xian-45",
-   "name": "阿婆肉夹馍",
-   "nameEn": "아파 러우지아모 (러우지아모)",
-   "type": "로컬",
-   "cuisine": "로우지아모(중식 햄버거)",
-   "avgPrice": 86,
-   "rating": 4.8,
-   "address": "시안시 베이린구 푸드 스트리트 64번지",
-   "coordinates": {
-    "lat": 34.3794,
-    "lng": 108.9336
-   },
-   "phone": "+86 029 50962473",
-   "hours": "10:00-22:00",
-   "description": "시안 현지인이 추천하는 로우지아모 가게로, 맛이 정통하고 가격이 합리적입니다",
-   "dishHighlights": [
-    "수프 만두",
-    "biangbiang면",
-    "량피(냉면)"
-   ],
-   "tags": [
-    "줄 서서 기다리는 맛집",
-    "가정식 요리",
-    "가성비가 뛰어남"
-   ],
-   "diamond": 0,
-   "imageUrl": "/img/ext/9ea869215e0e.webp"
-  },
-  {
-   "id": "xian-47",
-   "name": "길거리 량피",
-   "nameEn": "길거리 량피 (량피)",
-   "type": "로컬",
-   "cuisine": "량피(냉면)",
-   "avgPrice": 148,
-   "rating": 4.8,
-   "address": "시안시 옌타구 푸드 스트리트 59번지",
-   "coordinates": {
-    "lat": 34.3259,
-    "lng": 108.9318
-   },
-   "phone": "+86 029 74501617",
-   "hours": "06:00-14:00",
-   "description": "시안 현지인이 추천하는 량피 가게로, 정통 맛과 저렴한 가격을 자랑합니다",
-   "dishHighlights": [
-    "탕수육 만두",
-    "량피(냉면)",
-    "biangbiang면"
-   ],
-   "tags": [
-    "현지인들의 사랑을 받는 곳",
-    "오랜 전통의 동네 맛집",
-    "가성비가 뛰어남"
-   ],
-   "diamond": 0,
-   "imageUrl": "/img/ext/09c2e0ca4d0b.webp"
-  },
-  {
-   "id": "xian-49",
-   "name": "길거리 비앙비앙면",
-   "nameEn": "거리쪽빵빵면 (biangbiang면)",
-   "type": "로컬",
-   "cuisine": "biangbiang면",
-   "avgPrice": 75,
-   "rating": 4.9,
-   "address": "시안시 웨이양구 푸드 스트리트 129번지",
-   "coordinates": {
-    "lat": 34.296,
-    "lng": 108.9636
-   },
-   "phone": "+86 029 60744774",
-   "hours": "17:00-02:00",
-   "description": "현지인이 추천하는 biangbiang면 전문점, 진짜 맛, 합리적인 가격",
-   "dishHighlights": [
-    "탕수육 만두",
-    "로우지아모(중국식 햄버거)",
-    "양러우 파오모(양고기 수프에 밀가루 떡을 넣은 요리)"
-   ],
-   "tags": [
-    "오랜 전통의 브랜드",
-    "오랜 세월 자리 잡은 동네 식당",
-    "현지인이 사랑하는 곳"
-   ],
-   "diamond": 0,
-   "imageUrl": "/img/ext/96b0d1881374.webp"
-  },
-  {
-   "id": "xian-51",
-   "name": "老字号羊肉泡馍",
-   "nameEn": "오래된 양러우파오모 (양고기 수프에 넣은 납작빵)",
-   "type": "카페",
-   "cuisine": "양러우파모 (양고기 수프에 부순 납작빵)",
-   "avgPrice": 77,
-   "rating": 4.8,
-   "address": "시안시 웨이양구 푸드 스트리트 7번지",
-   "coordinates": {
-    "lat": 34.3194,
-    "lng": 108.8924
-   },
-   "phone": "+86 029 77159156",
-   "hours": "17:00-02:00",
-   "description": "시안 현지인이 추천하는 양러우파모 가게로, 정통 맛과 합리적인 가격을 자랑합니다",
-   "dishHighlights": [
-    "탕두미 (수프 만두)",
-    "량피 (냉면)",
-    "로우지아모 (중식 햄버거)"
-   ],
-   "tags": [
-    "아트적인",
-    "조용한",
-    "애프터눈 티"
-   ],
-   "diamond": 0,
-   "imageUrl": "/img/ext/3401f898127b.webp"
-  },
-  {
-   "id": "xian-53",
-   "name": "老字号凉皮",
-   "nameEn": "노자호 량피 (량피)",
-   "type": "로컬",
-   "cuisine": "량피 (냉면)",
-   "avgPrice": 42,
-   "rating": 4.8,
-   "address": "시안시 웨이양구 푸드 스트리트 40번지",
-   "coordinates": {
-    "lat": 34.3557,
-    "lng": 108.9423
-   },
-   "phone": "+86 029 45667119",
-   "hours": "06:00-14:00",
-   "description": "시안 현지인이 추천하는 량피 가게로, 정통 맛과 합리적인 가격을 자랑합니다",
-   "dishHighlights": [
-    "biangbiang면",
-    "러우자모",
-    "량피"
-   ],
-   "tags": [
-    "숨은 미식 명소",
-    "오래된 브랜드",
-    "가성비가 뛰어남"
-   ],
-   "diamond": 0,
-   "imageUrl": "/img/ext/049b87fc84e0.webp"
-  },
-  {
-   "id": "xian-55",
-   "name": "西安味凉皮",
-   "nameEn": "시안식 량피 (량피)",
-   "type": "로컬",
-   "cuisine": "량피",
-   "avgPrice": 114,
-   "rating": 4.4,
-   "address": "시안시 웨이양구 푸드 스트리트 98번지",
-   "coordinates": {
-    "lat": 34.3612,
-    "lng": 108.9572
-   },
-   "phone": "+86 029 56724465",
-   "hours": "17:00-02:00",
-   "description": "시안 현지인이 추천하는 량피 가게로, 정통 맛과 합리적인 가격을 자랑합니다",
-   "dishHighlights": [
-    "러우자모",
-    "biangbiang면",
-    "수프 만두"
-   ],
-   "tags": [
-    "오래된 브랜드",
-    "오랜 전통의 동네 맛집",
-    "현지인이 사랑하는 곳"
-   ],
-   "diamond": 0,
-   "imageUrl": "/img/ext/e7d406e63e83.webp"
-  },
-  {
-   "id": "xian-57",
-   "name": "골목 biangbiang면",
-   "nameEn": "골목빵빵면 (biangbiang면)",
-   "type": "길거리",
-   "cuisine": "biangbiang면",
-   "avgPrice": 28,
-   "rating": 4.2,
-   "address": "시안시 베이린구 푸드 스트리트 57번지",
-   "coordinates": {
-    "lat": 34.343,
-    "lng": 108.9296
-   },
-   "phone": "+86 029 33343920",
-   "hours": "10:30-14:00, 16:30-22:00",
-   "description": "현지인이 추천하는 biangbiang면 전문점, 진짜 맛, 합리적인 가격",
-   "dishHighlights": [
-    "수프 만두",
-    "량피(냉면)",
-    "양러우파오모(양고기 수프와 잘게 찢은 납작빵)"
-   ],
-   "tags": [
-    "간식",
-    "노점",
-    "야식"
-   ],
-   "diamond": 0,
-   "imageUrl": "/img/ext/09c2e0ca4d0b.webp"
-  },
-  {
-   "id": "xian-59",
-   "name": "전통 양고기 파오모(양러우파오모)",
-   "nameEn": "전통 양고기 파오모(양고기 파오모)",
-   "type": "로컬",
-   "cuisine": "양러우파오모(양고기 수프와 잘게 찢은 납작빵)",
-   "avgPrice": 103,
-   "rating": 4.4,
-   "address": "시안시 롄후구 푸드 스트리트 144번지",
-   "coordinates": {
-    "lat": 34.3121,
-    "lng": 108.9176
-   },
-   "phone": "+86 029 44961678",
-   "hours": "10:00-22:00",
-   "description": "시안 현지인이 추천하는 양러우파오모 전문점으로, 정통 맛과 합리적인 가격을 자랑합니다",
-   "dishHighlights": [
-    "로우지아모(중국식 햄버거)",
-    "수프 만두",
-    "양러우파오모(양고기 수프와 잘게 찢은 납작빵)"
-   ],
-   "tags": [
-    "현지인 사랑",
-    "오랜 전통 브랜드",
-    "숨은 미식 명소"
-   ],
-   "diamond": 0,
-   "imageUrl": "/img/ext/a547378e7a1f.webp"
-  },
-  {
-   "id": "xian-61",
-   "name": "길거리 비앙비앙면",
-   "nameEn": "거리쪽빵빵면 (biangbiang면)",
-   "type": "로컬",
-   "cuisine": "biangbiang면",
-   "avgPrice": 76,
-   "rating": 4.6,
-   "address": "시안시 롄후구 푸드 스트리트 38번지",
-   "coordinates": {
-    "lat": 34.3619,
-    "lng": 108.9164
-   },
-   "phone": "+86 029 80023727",
-   "hours": "11:00-14:00, 17:00-21:30",
-   "description": "현지인이 추천하는 biangbiang면 전문점, 진짜 맛, 합리적인 가격",
-   "dishHighlights": [
-    "biangbiang면",
-    "로우지아모(중식 햄버거)",
-    "수제 만두"
-   ],
-   "tags": [
-    "오랜 전통의 동네 맛집",
-    "가정식 요리",
-    "오래된 브랜드"
-   ],
-   "diamond": 0,
-   "imageUrl": "/img/ext/a52095e99f36.webp"
-  },
-  {
-   "id": "xian-63",
-   "name": "전통 루지아모(러우지아모)",
-   "nameEn": "전통 루지아모(고기 루지아모)",
-   "type": "길거리",
-   "cuisine": "로우지아모(중식 햄버거)",
-   "avgPrice": 33,
-   "rating": 4,
-   "address": "시안시 롄후구 푸드 스트리트 51번지",
-   "coordinates": {
-    "lat": 34.2925,
-    "lng": 108.9575
-   },
-   "phone": "+86 029 47707241",
-   "hours": "11:00-14:00, 17:00-21:30",
-   "description": "시안 현지인이 추천하는 로우지아모 가게로, 맛이 정통하고 가격이 합리적입니다",
-   "dishHighlights": [
-    "량피(냉면)",
-    "로우지아모(중식 햄버거)",
-    "수제 만두"
-   ],
-   "tags": [
-    "노점",
-    "야시장",
-    "간식"
-   ],
-   "diamond": 0,
-   "imageUrl": "/img/ext/4fcc219f3aae.webp"
-  },
-  {
-   "id": "xian-65",
-   "name": "노포의 국물 만두",
-   "nameEn": "노포의 국물 만두(국물 만두)",
-   "type": "로컬",
-   "cuisine": "국물이 들어 있는 찐빵",
-   "avgPrice": 134,
-   "rating": 4.6,
-   "address": "중국 산시성 시안시 신청구 푸드 스트리트 183번지",
-   "coordinates": {
-    "lat": 34.3422,
-    "lng": 108.9443
-   },
-   "phone": "+86 029 24254571",
-   "hours": "10:30-14:00, 16:30-22:00",
-   "description": "시안 현지인이 추천하는 수제 만두 가게로, 맛이 정통하고 가격이 저렴합니다",
-   "dishHighlights": [
-    "국물 만두",
-    "량피(냉면)",
-    "양러우파오모(양고기 수프와 잘게 찢은 납작빵)"
-   ],
-   "tags": [
-    "현지인이 사랑하는 맛",
-    "숨은 미식 명소",
-    "가정식 요리"
-   ],
-   "diamond": 0,
-   "imageUrl": "/img/ext/1642362ad176.webp"
-  },
-  {
-   "id": "xian-67",
-   "name": "老街肉夹馍",
-   "nameEn": "올드스트리트 러우자모 (러우자모)",
-   "type": "로컬",
-   "cuisine": "루지아모(중식 햄버거)",
-   "avgPrice": 97,
-   "rating": 4.1,
-   "address": "중국 산시성 시안시 롄후구 푸드 스트리트 105번지",
-   "coordinates": {
-    "lat": 34.3152,
-    "lng": 108.9609
-   },
-   "phone": "+86 029 45899272",
-   "hours": "10:30-14:00, 16:30-22:00",
-   "description": "시안 현지인이 추천하는 루지아모 가게로, 정통 맛과 합리적인 가격을 자랑합니다",
-   "dishHighlights": [
-    "biangbiang면",
-    "양러우파오모(양고기 수프와 잘게 찢은 납작빵)",
-    "국물 만두"
-   ],
-   "tags": [
-    "숨은 미식 명소",
-    "현지인이 사랑하는 맛",
-    "오랜 전통을 가진 동네 맛집"
-   ],
-   "diamond": 0,
-   "imageUrl": "/img/ext/8d71a0b05999.webp"
-  },
-  {
-   "id": "xian-69",
-   "name": "옛 거리의 국물 만두",
-   "nameEn": "옛 거리의 국물 만두(국물 만두)",
-   "type": "로컬",
-   "cuisine": "샤오롱바오",
-   "avgPrice": 148,
-   "rating": 4.7,
-   "address": "시안시 옌타구 푸드스트리트 46번지",
-   "coordinates": {
-    "lat": 34.3377,
-    "lng": 108.8929
-   },
-   "phone": "+86 029 11136338",
-   "hours": "06:00-14:00",
-   "description": "시안 현지인이 추천하는 샤오롱바오 맛집으로, 정통 맛과 합리적인 가격을 자랑합니다",
-   "dishHighlights": [
-    "양러우파오모(양고기 수프에 난을 찢어 넣은 요리)",
-    "량피(냉면)",
-    "샤오롱바오"
-   ],
-   "tags": [
-    "숨은 미식 명소",
-    "대기열의 여왕",
-    "가성비 최고"
-   ],
-   "diamond": 0,
-   "imageUrl": "/img/ext/508ac032bcf0.webp"
-  }
- ],
- "transport": {
-  "arrival": [
-   {
-    "type": "air",
-    "from": "주요 국내 공항, 증가하는 국제 노선",
-    "to": "시안 셴양 국제공항 (XIY)",
-    "duration": "출발지에 따라 다름",
-    "price": "500-3000¥",
-    "frequency": "매일 여러 편의 항공편",
-    "tips": "공항 지하철이 도심과 연결됩니다. 많은 도시에서 고속철도를 이용하는 것이 더 편리할 수 있습니다."
-   },
-   {
-    "type": "train",
-    "from": "베이징 (4시간), 상하이 (6시간), 청두 (3시간)",
-    "to": "시안 북역",
-    "duration": "3-6시간",
-    "price": "300-800¥",
-    "frequency": "고속철도 자주 운행",
-    "tips": "고속철도가 가장 빠르고 편안합니다. 시안에는 여러 역이 있으니 목적지를 주의 깊게 확인하세요."
-   }
+  "climate": {
+    "type": "반건조대륙성기후",
+    "bestMonths": [
+      "3월",
+      "4월",
+      "5월",
+      "9월",
+      "10월",
+      "11월"
+    ],
+    "avgSummerTemp": "26C (79F)",
+    "avgWinterTemp": "1C (34F)",
+    "tips": "봄과 가을에 방문하기 가장 좋습니다. 여름은 덥지만 해안 도시보다 습도가 낮습니다. 겨울은 춥고 건조하며 가끔 눈이 옵니다. 봄에는 모래폭풍이 가능합니다. 겹쳐 입으세요."
+  },
+  "attractions": [
+    {
+      "id": "terracotta-army",
+      "name": "秦始皇兵马俑",
+      "nameEn": "병마용",
+      "image": "/img/ext/52306fca3964.webp",
+      "category": "historical",
+      "description": "8,000개 이상의 실제 크기 병마용으로 구성된 거대한 지하군대가 중국 최초의 황제를 내세에서 보호하기 위해 매장되었습니다.",
+      "address": "린퉈구, 시안 동쪽 35km",
+      "coordinates": {
+        "lat": 34.3847,
+        "lng": 109.2785
+      },
+      "openingHours": "08:30-18:30 (3월-11월), 08:00-18:00 (12월-2월)",
+      "ticketPrice": "120¥ (성수기), 80¥ (비성수기)",
+      "recommendedVisitTime": "3-4시간",
+      "highlights": [
+        "Pit 1 - 최대 군대 전시",
+        "Pit 2 - 복잡한 편대",
+        "Pit 3 - 지휘부",
+        "청동 전차 전시"
+      ],
+      "tips": "인파를 피하려면 일찍 도착하세요. 기차역에서 공식 셔틀 버스를 이용하세요. 역사를 위한 오디오 가이드가 필수입니다. 화칭 온천과 함께 방문하는 것을 추천합니다.",
+      "phone": "+86 29 8139 9127"
+    },
+    {
+      "id": "city-wall",
+      "name": "西安城墙",
+      "nameEn": "시안 성벽",
+      "image": "/img/ext/cb0d9cc63128.webp",
+      "category": "historical",
+      "description": "명대로부터 가장 오래된, 가장 완전한 중국의 고대 성벽입니다. 전체 14km를 걸거나 자전거를 타세요.",
+      "address": "남문, 시안",
+      "coordinates": {
+        "lat": 34.2655,
+        "lng": 108.9485
+      },
+      "openingHours": "08:00-22:00 (남문 구간)",
+      "ticketPrice": "54¥ (도보), 100¥ (자전거 대여)",
+      "recommendedVisitTime": "2-3시간",
+      "highlights": [
+        "남문 성루",
+        "북문 누각",
+        "도시 전경",
+        "봉화대 박물관"
+      ],
+      "tips": "각 성문에서 자전거를 대여할 수 있습니다. 남문에서 시작하면 사진 찍기에 가장 좋습니다. 해질녘에는 도시의 전망이 가장 아름답습니다.",
+      "phone": "+86 29 8727 2792"
+    },
+    {
+      "id": "big-wild-goose-pagoda",
+      "name": "大雁塔",
+      "nameEn": "대야승탑",
+      "image": "/img/ext/cdf84d51c448.webp",
+      "category": "cultural",
+      "description": "652년에 건립된 상징적인 불교 탑입니다. 당나라 승려 현장이 인도에서 가져온 불경을 보관하기 위해 세워졌습니다.",
+      "address": "남부 대학 인근,옌타 구",
+      "coordinates": {
+        "lat": 34.2185,
+        "lng": 108.9595
+      },
+      "openingHours": "08:00-18:30 (3월-11월), 08:00-18:00 (12월-2월)",
+      "ticketPrice": "25¥ (입장), 40¥ (탑 오르기)",
+      "recommendedVisitTime": "2시간",
+      "highlights": [
+        "7층 탑",
+        "대사은사",
+        "음악 분수쇼",
+        "당대 건축"
+      ],
+      "tips": "저녁 분수쇼가 spectacular합니다 (20:30). 인근 진링 산맥 day trip과 결합하세요.",
+      "phone": "+86 29 8552 7958"
+    },
+    {
+      "id": "muslim-quarter",
+      "name": "回民街",
+      "nameEn": "시안 회족 지구",
+      "image": "/img/ext/fa0720a50c62.webp",
+      "category": "cultural",
+      "description": "고대 모스크, 전통 건축, 유명한 길거리 음식 등 후이족 무슬림의 활기찬 지역.",
+      "address": "종루 북쪽, 시안",
+      "coordinates": {
+        "lat": 34.2615,
+        "lng": 108.9435
+      },
+      "openingHours": "24시간 운영, 상점 09:00-23:00",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "2-3시간",
+      "highlights": [
+        "시안 대모스크",
+        "백탑사 음식거리",
+        "회족 건축",
+        "은jewelry 시장"
+      ],
+      "tips": "비앙비앙면, 러우자모, 시빙을 맛보세요. 아침이나 저녁에 걷는 것을 추천합니다. 모스크 내부에서는 촬영 금지이지만 그 외에는 환영합니다.",
+      "phone": "+86 029  0974 1229"
+    },
+    {
+      "id": "shaanxi-museum",
+      "name": "陕西历史博物馆",
+      "nameEn": "산시 역사 박물관",
+      "image": "/img/ext/475dd9f0ea1f.webp",
+      "category": "cultural",
+      "description": "중국에서 가장 훌륭한 성급 박물관 중 하나로, 주나라부터 당나라까지의 공예품, 특히 중국 최고 문명의 발굴 유물을 전시하고 있습니다.",
+      "address": "옌타구 샤오자이로 91번지",
+      "coordinates": {
+        "lat": 34.2295,
+        "lng": 108.9585
+      },
+      "openingHours": "08:30-18:00 (월요일 휴무)",
+      "ticketPrice": "무료 (예약 필요)",
+      "recommendedVisitTime": "3-4시간",
+      "highlights": [
+        "주나라 청동기",
+        "당나라 금제 유물",
+        "명나라 자기",
+        "몽골 유물"
+      ],
+      "tips": "공식 앱에서 몇 주 전에 티켓을 예약하세요. 무료 오디오 가이드가 제한되어 있습니다. 오전 방문이 더 좋습니다.",
+      "phone": "+86 029  2111 9563"
+    },
+    {
+      "id": "huaqing-hot-springs",
+      "name": "华清池",
+      "nameEn": "화칭온천",
+      "image": "/img/ext/b1a91de242ab.webp",
+      "category": "historical",
+      "description": "당나라 황제 현종과 양귀비의 사랑 이야기로 유명한 황실 온천 리조트로, 당나라 궁전 유적이 있습니다.",
+      "address": "린퉁구 화칭로, 시안에서 30km",
+      "coordinates": {
+        "lat": 34.3585,
+        "lng": 109.2095
+      },
+      "openingHours": "07:30-19:00",
+      "ticketPrice": "120¥ (황제의 온천 포함)",
+      "recommendedVisitTime": "2-3시간",
+      "highlights": [
+        "구룡온천",
+        "당나라 궁전 유적",
+        "황제의 개인 온천",
+        "'두 황제의 로맨스' 쇼"
+      ],
+      "tips": "병마용 하루 여행과 결합하세요. 저녁 '장송' 쇼가 화려합니다. 봄에 방문하는 것이 가장 좋습니다.",
+      "phone": "+86 029  6358 7033"
+    },
+    {
+      "id": "bell-tower",
+      "name": "钟楼",
+      "nameEn": "시안 종루",
+      "image": "/img/ext/c74d7faf7bb9.webp",
+      "category": "historical",
+      "description": "중국에서 가장 크고 가장 온전한 종루로, 명나라 때인 1384년에 건립되었습니다.",
+      "address": "신성구 서대거리",
+      "coordinates": {
+        "lat": 34.2625,
+        "lng": 108.9445
+      },
+      "openingHours": "08:30-20:00",
+      "ticketPrice": "35¥ (종루만), 50¥ (고루와 결합)",
+      "recommendedVisitTime": "45분",
+      "highlights": [
+        "중악사 종",
+        "전망대 도시 전경",
+        "전통 건축 세부 사항",
+        "야간 조명"
+      ],
+      "tips": "밤에 외부에서 보는 것이 가장 좋습니다. 고루와의 결합 티켓이 비용을 절약합니다. 지하철 접근이 편리합니다.",
+      "phone": "+86 29 8727 2792"
+    },
+    {
+      "id": "small-wild-goose-pagoda",
+      "name": "小雁塔",
+      "nameEn": "소작루",
+      "image": "/img/ext/2b32c6d81b86.webp",
+      "category": "historical",
+      "description": "706년에 건립된 15층의 당나라 탑으로, 여러 지진을 견디고 살아남았습니다. 시안 박물관 옆에 위치해 있습니다.",
+      "address": "베이린구 유의로 72",
+      "coordinates": {
+        "lat": 34.2315,
+        "lng": 108.9355
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "시안 박물관 예약 시 무료",
+      "recommendedVisitTime": "1-2시간",
+      "highlights": [
+        "15층 탑",
+        "고대 주지 우물",
+        "시안 박물관",
+        "평화로운 사찰 경내"
+      ],
+      "tips": "대작루보다 덜 붐빕니다. 안뜰에서 멋진 사진을 찍을 수 있습니다. 박물관 예약 시 무료 입장입니다.",
+      "phone": "+86 029  4582 5296"
+    },
+    {
+      "id": "tomb-of-emperor-jingdi",
+      "name": "汉阳陵",
+      "nameEn": "진디 황제의 무덤",
+      "image": "/img/ext/68fb6a7f2cea.webp",
+      "category": "historical",
+      "description": "한나라 진디 황제의 무덤 단지로, 지하 박물관에서 수백 개의 인형을 전시하고 있어 주목할 만합니다.",
+      "address": "시안에서 북쪽으로 20km 떨어진 시양",
+      "coordinates": {
+        "lat": 34.4355,
+        "lng": 108.9435
+      },
+      "openingHours": "08:30-18:30",
+      "ticketPrice": "90¥",
+      "recommendedVisitTime": "2시간",
+      "highlights": [
+        "지하 발굴 박물관",
+        "갑옷 없는 흙인형 하인들",
+        "한대 유물",
+        "협궤 철도"
+      ],
+      "tips": "병마용보다 덜 유명하지만 그만큼 인상적입니다. 시안에서 버스 4번을 타세요. 한나라를 이해하는 데 좋습니다.",
+      "phone": "+86 029  3880 1648"
+    },
+    {
+      "id": "drum-tower",
+      "name": "鼓楼",
+      "nameEn": "시안 북루",
+      "image": "/img/ext/388ea3ed8aa2.webp",
+      "category": "historical",
+      "description": "종루 맞은편에 위치한 역사적인 북루로, 옛 도시의 중심을 표시하며 매일 밤 북 공연이 열립니다.",
+      "address": "신성구 서대거리",
+      "coordinates": {
+        "lat": 34.2615,
+        "lng": 108.9415
+      },
+      "openingHours": "08:30-20:00",
+      "ticketPrice": "35¥ (북루만), 50¥ (종루와 결합)",
+      "recommendedVisitTime": "45분",
+      "highlights": [
+        "거대한 물 북",
+        "야간 공연",
+        "도시 전경",
+        "전통 북 박물관"
+      ],
+      "tips": "종루와의 결합 티켓을 추천합니다. 저녁 북 공연은 20:30에 열립니다. 무슬림 지구 근처에 위치해 있어 좋습니다.",
+      "phone": "+86 29 8727 2792"
+    },
+    {
+      "id": "Mount-hua",
+      "name": "华山",
+      "nameEn": "화산",
+      "image": "/img/ext/994bfae9b723.webp",
+      "category": "natural",
+      "description": "중국의 오악 중 하나로, 협소한 암벽을 따라 이어진 위험한 통나무 길과 극적인 봉우리로 유명합니다. 용기의 시험입니다.",
+      "address": "화산현, 시안에서 동쪽으로 120km",
+      "coordinates": {
+        "lat": 34.4805,
+        "lng": 110.0815
+      },
+      "openingHours": "07:00-19:00 (계절에 따라 변동)",
+      "ticketPrice": "160¥ (성수기), 100¥ (비성수기) + 케이블카 별도",
+      "recommendedVisitTime": "1-2일",
+      "highlights": [
+        "통나무 길 (창먼)",
+        "다섯 봉우리",
+        "동봉에서의 일출",
+        "북봉 케이블카"
+      ],
+      "tips": "시안 북역에서 고속 열차를 타세요. 일출을 보기 위해 하룻밤 머무르는 것이 좋습니다. 체력 필요. 일찍 도착하세요.",
+      "phone": "+86 029  9976 5111"
+    },
+    {
+      "id": "tang-paradise",
+      "name": "大唐芙蓉园",
+      "nameEn": "당원",
+      "image": "/img/ext/9f32b9507fe6.webp",
+      "category": "cultural",
+      "description": "중국에서 가장 큰 당나라 문화 테마파크로, 전통 정원, 공연, 황실 건축을 특징으로 합니다.",
+      "address": "취장신구 당파라다이스",
+      "coordinates": {
+        "lat": 34.2195,
+        "lng": 108.9745
+      },
+      "openingHours": "09:00-22:00",
+      "ticketPrice": "120¥ (성수기), 90¥ (비성수기)",
+      "recommendedVisitTime": "3-4시간",
+      "highlights": [
+        "황실 정원 투어",
+        "당나라 저녁 공연",
+        "레이저 워터 스크린 쇼",
+        "전통 보트 타기"
+      ],
+      "tips": "빛의 쇼를 보기 위해 저녁에 방문하는 것이 가장 좋습니다. 쇼 티켓은 별도로 예약하세요. 봄과 가을이 이상적입니다.",
+      "phone": "+86 029  5490 0339"
+    },
+    {
+      "id": "daming-palace",
+      "name": "大明宫国家遗址公园",
+      "nameEn": "다밍 궁전 국가 유적지",
+      "image": "/img/ext/d9e1e34b36a1.webp",
+      "category": "historical",
+      "description": "당나라의 옛 황궁 단지이며, 현재는 재건된 궁전과 박물관이 있는 광대한 고고학 공원입니다.",
+      "address": "신청구 쯔창동로 단펑문 안",
+      "coordinates": {
+        "lat": 34.2935,
+        "lng": 108.9685
+      },
+      "openingHours": "09:00-18:00",
+      "ticketPrice": "60¥ (공원), 90¥ (박물관 포함)",
+      "recommendedVisitTime": "2-3시간",
+      "highlights": [
+        "단펑 문 재건",
+        "한위안 궁전 기초",
+        "인터랙티브 박물관",
+        "항공 사진 플랫폼"
+      ],
+      "tips": "넓은 지역을 위해 전기 카트를 빌리세요. 저녁 조명 쇼는 20:30에 열립니다. 오디오 가이드와 함께하는 것이 가장 좋습니다.",
+      "phone": "+86 029  0512 0813"
+    },
+    {
+      "id": "yongxing-fang",
+      "name": "永兴坊",
+      "nameEn": "용성 팡",
+      "image": "/img/ext/e24182d97762.webp",
+      "category": "cultural",
+      "description": "전통적인 산시 간식과 무형 문화유산 워크숍으로 유명한 재활성화된 역사적 지역입니다.",
+      "address": "신청구 중산문 안",
+      "coordinates": {
+        "lat": 34.2685,
+        "lng": 108.9565
+      },
+      "openingHours": "10:00-22:00",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "2-3시간",
+      "highlights": [
+        "산시 간식 거리",
+        "전통 공예 워크숍",
+        "야시장",
+        "문화 공연"
+      ],
+      "tips": "배고프게 와서 많은 간식을 시도하세요. 18:00 이후에 불이 켜지면 가장 좋습니다. 기념품을 사기에 좋습니다.",
+      "phone": "+86 029  5821 4313"
+    },
+    {
+      "id": "hanyao",
+      "name": "寒窑",
+      "nameEn": "한 야오",
+      "image": "/img/ext/d0f816918f00.webp",
+      "category": "cultural",
+      "description": "왕바오촨과 쉬에핑구이의 러브 스토리가 펼쳐진 전설적인 동굴 주거지이며, 현재는 관광 지역입니다.",
+      "address": "취장신구 한야오로",
+      "coordinates": {
+        "lat": 34.2115,
+        "lng": 108.9715
+      },
+      "openingHours": "09:00-18:00",
+      "ticketPrice": "50¥",
+      "recommendedVisitTime": "1-2시간",
+      "highlights": [
+        "전설적인 동굴 거주지",
+        "왕보천의 신전",
+        "낭만적인 장미 정원",
+        "전통 결혼식 공연"
+      ],
+      "tips": "커플에게 최적입니다. 발렌타인데이 특별 이벤트. 근처의 당나라 낙원과 함께 관광하는 것을 추천합니다.",
+      "phone": "+86 029  2401 4891"
+    },
+    {
+      "id": "qinling-zoo",
+      "name": "秦岭野生动物园",
+      "nameEn": "칭링 야생동물원",
+      "image": "/img/ext/b0325eefc49b.webp",
+      "category": "natural",
+      "description": "친링 산맥 기슭에 있는 대형 동물원으로, 산시성을 중심으로 희귀 동물을 전시합니다.",
+      "address": "창안구 루안진",
+      "coordinates": {
+        "lat": 34.0585,
+        "lng": 108.8945
+      },
+      "openingHours": "09:00-18:00",
+      "ticketPrice": "100¥ (열차 포함)",
+      "recommendedVisitTime": "4-5시간",
+      "highlights": [
+        "동물 사파리 열차",
+        "자이언트 판다 번식 센터",
+        "쓰촨 금색 코 원숭이",
+        "희귀 야생 동물 구조"
+      ],
+      "tips": "사파리 열차를 일찍 이용하세요. 반나절 일정으로 차오링 산맥과 함께 방문하시면 좋습니다. 자외선 차단제를 준비하세요.",
+      "phone": "+86 029  0263 0652"
+    },
+    {
+      "id": "lehua-town",
+      "name": "乐华城",
+      "nameEn": "러화 타운",
+      "image": "/img/ext/6e96687388d5.webp",
+      "category": "entertainment",
+      "description": "롤러코스터, 워터 라이드, 가족 친화적 어트랙션이 있는 대규모 테마파크 단지입니다.",
+      "address": "시시안신구 징허신청",
+      "coordinates": {
+        "lat": 34.4415,
+        "lng": 108.8285
+      },
+      "openingHours": "10:00-18:00 (계절별)",
+      "ticketPrice": "230¥ (싱글 파크), 380¥ (콤보)",
+      "recommendedVisitTime": "1-2일",
+      "highlights": [
+        "썬더 드래곤 코스터",
+        "워터파크 구역",
+        "음악 분수",
+        "국제 공연"
+      ],
+      "tips": "온라인 예약 시 할인을 받을 수 있습니다. 여름 워터파크가 인기 있습니다. 각 파크당 최소 하루는 필요합니다.",
+      "phone": "+86 029  2110 1051"
+    },
+    {
+      "id": "famen-temple",
+      "name": "法门寺",
+      "nameEn": "파문사",
+      "image": "/img/ext/13eb656e0bad.webp",
+      "category": "historical",
+      "description": "부처의 손가락뼈 유해를 모시고 있는 중국에서 가장 신성한 사찰 중 하나로 당나라 시대 건축물을 갖추고 있습니다.",
+      "address": "보계시 부풍현 파먼진",
+      "coordinates": {
+        "lat": 34.5555,
+        "lng": 107.0195
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "100¥(성수기), 90¥(비성수기) + 보물전당 30¥",
+      "recommendedVisitTime": "3-4시간",
+      "highlights": [
+        "부처의 손가락뼈 유해",
+        "천복 사리탑",
+        "당나라 보물전당",
+        "고고학 박물관"
+      ],
+      "tips": "시안에서 약 120km - 일찍 도착하세요. 편한 신발을 착용하세요. 부지 내에 불교 채식 레스토랑이 있습니다.",
+      "phone": "+86 029  0982 3737"
+    },
+    {
+      "id": "beilin-museum",
+      "name": "西安碑林博物馆",
+      "nameEn": "시안 비린 박물관",
+      "image": "/img/ext/65efc8264cfc.webp",
+      "category": "cultural",
+      "description": "중국에서 가장 오래된 석각 박물관으로, 유명한 서예 작품과 고대 비석을 소장하고 있습니다.",
+      "address": "베이린구 싼쉐제 15번지",
+      "coordinates": {
+        "lat": 34.2655,
+        "lng": 108.9555
+      },
+      "openingHours": "08:00-18:00(여름), 08:00-17:30(겨울)",
+      "ticketPrice": "65¥",
+      "recommendedVisitTime": "2-3시간",
+      "highlights": [
+        "천자문 서예",
+        "대왕기 비문",
+        "구경석각",
+        "당나라 서예 비문"
+      ],
+      "tips": "서예 애호가에게 필수입니다. 오디오 가이드 추천합니다. 성벽 산책과 함께하면 좋습니다.",
+      "phone": "+86 029  0135 3507"
+    },
+    {
+      "id": "qujiang-aquarium",
+      "name": "曲江海洋馆",
+      "nameEn": "쿤장 수족관",
+      "image": "/img/ext/9116f853256b.webp",
+      "category": "entertainment",
+      "description": "해양 동물 공연, 열대어 전시, 작은 테마파크가 있는 대규모 수족관입니다.",
+      "address": "취장신구 옌타난루",
+      "coordinates": {
+        "lat": 34.2155,
+        "lng": 108.9645
+      },
+      "openingHours": "09:00-17:30",
+      "ticketPrice": "180¥",
+      "recommendedVisitTime": "3-4시간",
+      "highlights": [
+        "상어 수조 터널",
+        "돌고래 및 Sea Lion 공연",
+        "아마존 열대우림 구역",
+        "인어 공연"
+      ],
+      "tips": "도착 시 공연 일정을 확인하세요. 비 오는 날에도 즐길 수 있습니다. 같은 구역에 있는 당나라 시대의 낙원과 함께 관광을 즐기시기 바랍니다.",
+      "phone": "+86 029  4893 7785"
+    },
+    {
+      "id": "zhongnan-mountain",
+      "name": "终南山",
+      "nameEn": "중난산",
+      "image": "/img/ext/20ba084c3257.webp",
+      "category": "natural",
+      "description": "‘신산’으로 알려진 도교의 성산으로, 고대 사원과 멋진 봉우리들이 특징입니다.",
+      "address": "창안구 난우타이진",
+      "coordinates": {
+        "lat": 34.0625,
+        "lng": 108.9345
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "25¥",
+      "recommendedVisitTime": "4-6시간",
+      "highlights": [
+        "남천문",
+        "고대 도교 사찰",
+        "운해",
+        "승려 명상 동굴"
+      ],
+      "tips": "케이블카로 오르고 걸어서 내리세요. 정상까지 체력이 필요합니다. 가을에 방문하기 가장 좋습니다.",
+      "phone": "+86 029  8578 9681"
+    },
+    {
+      "id": "daxingshan-temple",
+      "name": "大兴善寺",
+      "nameEn": "대흥산 사찰",
+      "image": "/img/ext/7595c7c20aa3.webp",
+      "category": "cultural",
+      "description": "중국에서 가장 오래되고 중요한 불교 사찰 중 하나로, 수나라 시대에 처음 건축되었습니다.",
+      "address": "옌타구 샤오자이 싱산사 시제",
+      "coordinates": {
+        "lat": 34.2255,
+        "lng": 108.9485
+      },
+      "openingHours": "07:00-18:00",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1-2시간",
+      "highlights": [
+        "고대 청동 불상",
+        "작약 정원",
+        "밀교 불교 유물",
+        "평화로운 사찰 경내"
+      ],
+      "tips": "아주 평화롭고 관광객이 적습니다. 4월 모란꽃이 정말 화려합니다. 명상에 좋습니다.",
+      "phone": "+86 029  4488 0852"
+    },
+    {
+      "id": "lishan-forest",
+      "name": "骊山国家森林公园",
+      "nameEn": "리산 국립 산림공원",
+      "image": "/img/ext/c09fcbe63c84.webp",
+      "category": "natural",
+      "description": "화청궁 근처의 경승지로, 층층의 정자와 누각, 시안의 전경으로 유명합니다.",
+      "address": "린퉁구 리산",
+      "coordinates": {
+        "lat": 34.3835,
+        "lng": 109.2445
+      },
+      "openingHours": "07:00-19:00",
+      "ticketPrice": "150¥ (화청궁 포함)",
+      "recommendedVisitTime": "3-4시간",
+      "highlights": [
+        "황제 테라스 전망대",
+        "구 리선 정자",
+        "조각된 돌 터널",
+        "위하의 석촌"
+      ],
+      "tips": "화청온천과 연계. 케이블카 이용. 석촌 방문이 인상적입니다. 봄에는 꽃 감상을.",
+      "phone": "+86 029  4426 1816"
+    },
+    {
+      "id": "hanling-garden",
+      "name": "寒舍遗址公园",
+      "nameEn": "한링 정원 유적 공원",
+      "image": "/img/ext/2197d082103b.webp",
+      "category": "cultural",
+      "description": "정원, 조각, 공연과 함께 전설적 사랑 이야기를 재현한 공원.",
+      "address": "취장신구 한야오루 1번지",
+      "coordinates": {
+        "lat": 34.2105,
+        "lng": 108.9705
+      },
+      "openingHours": "09:00-18:00",
+      "ticketPrice": "45¥",
+      "recommendedVisitTime": "2-3시간",
+      "highlights": [
+        "낭만적 조각",
+        "전통 공연",
+        "장미 정원",
+        "동굴 탐험"
+      ],
+      "tips": "연인에게 적합. 한야오 정비구와 연계. 저녁 조명이 아름답습니다.",
+      "phone": "+86 029  5083 1941"
+    },
+    {
+      "id": "xianyang-huaiyang",
+      "name": "咸阳湖",
+      "nameEn": "시안 호수",
+      "image": "/img/ext/90c2f10df87a.webp",
+      "category": "natural",
+      "description": "경치가 아름다운 호수 지역으로 정원과 산책로, 역사적인 류민교가 있습니다.",
+      "address": "셴양시 웨이양루",
+      "coordinates": {
+        "lat": 34.3315,
+        "lng": 108.7085
+      },
+      "openingHours": "24시간 개방",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "2시간",
+      "highlights": [
+        "류민교",
+        "일몰 전망",
+        "산책로",
+        "문화 조각상"
+      ],
+      "tips": "일몰 때가 가장 좋습니다. 근처 박물관과 함께 방문하세요. 저녁 산책에 적합합니다.",
+      "phone": "+86 029  9445 2668"
+    },
+    {
+      "id": "baqiao-tomb",
+      "name": "霸陵",
+      "nameEn": "바링(전한 문제의 능)",
+      "image": "/img/ext/c7a0a0d13b1c.webp",
+      "category": "historical",
+      "description": "자비로운 통치와 검소한 장례 풍습으로 알려진 한 문제의 능입니다.",
+      "address": "바차오구",
+      "coordinates": {
+        "lat": 34.2985,
+        "lng": 109.0485
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "25¥",
+      "recommendedVisitTime": "1-2시간",
+      "highlights": [
+        "능산",
+        "한대 유물",
+        "기념관",
+        "평화로운 부지"
+      ],
+      "tips": "다른 능보다 덜 방문합니다. 역사 애호가에게 좋습니다. 근처 바차오와 함께 방문하세요.",
+      "phone": "+86 029  3723 3267"
+    },
+    {
+      "id": "qinling-mountains",
+      "name": "秦岭分水岭",
+      "nameEn": "진령 수분계",
+      "image": "/img/ext/5a266d59a49f.webp",
+      "category": "natural",
+      "description": "중국 남북을 가르는 자연 경계로, 아름다운 산 경치와 숲이 있습니다.",
+      "address": "창안구 친링산맥",
+      "coordinates": {
+        "lat": 33.9885,
+        "lng": 108.9485
+      },
+      "openingHours": "24시간 개방",
+      "ticketPrice": "무료 (특정 지역은 요금이 있을 수 있음)",
+      "recommendedVisitTime": "4-6시간",
+      "highlights": [
+        "남북 중국 분계",
+        "고산 경관",
+        "숲길",
+        "희귀 조류"
+      ],
+      "tips": "안전을 위해 가이드 투어를 이용하세요. 더위를 피하기 위해 여름에 방문하는 것이 가장 좋습니다. 고지대에서는 겉옷을 준비하세요.",
+      "phone": "+86 029  0188 4479"
+    },
+    {
+      "id": "xianyang-museum",
+      "name": "咸阳博物馆",
+      "nameEn": "셴양 박물관",
+      "image": "/img/ext/c2bc1cb1cd7d.webp",
+      "category": "cultural",
+      "description": "진나라의 수도와 한나라 제국 유물의 역사를 전시하는 박물관입니다.",
+      "address": "셴양시 웨이양동루",
+      "coordinates": {
+        "lat": 34.3295,
+        "lng": 108.7085
+      },
+      "openingHours": "09:00-17:00 (월요일 휴관)",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1-2시간",
+      "highlights": [
+        "진나라 청동기",
+        "황제의 도장 복제품",
+        "병마용 조각 파편",
+        "역사적 디오라마"
+      ],
+      "tips": "셴양 호수 방문과 결합하세요. 진시황릉의 병마용 전사와 관련된 진나라 역사를 이해하는 데 좋습니다.",
+      "phone": "+86 029  2649 1326"
+    },
+    {
+      "id": "luoyang-longmen",
+      "name": "洛阳龙门石窟",
+      "nameEn": "룽먼 석굴",
+      "image": "/img/ext/e77c57e7fdf6.webp",
+      "category": "historical",
+      "description": "중국의 3대 불교 석굴 단지 중 하나로, 수천 개의 조각상이 새겨져 있습니다.",
+      "address": "뤄양시 룽먼진",
+      "coordinates": {
+        "lat": 34.4685,
+        "lng": 112.4685
+      },
+      "openingHours": "08:00-18:30",
+      "ticketPrice": "90¥",
+      "recommendedVisitTime": "3-4시간",
+      "highlights": [
+        "봉현사 대불",
+        "만불동",
+        "고대 비문",
+        "이천 전경"
+      ],
+      "tips": "시안에서 약 250km 떨어져 있어 - 당일치기 여행보다는 1박 2일 여행이 좋습니다. 사진 촬영을 위해서는 아침 방문이 가장 좋습니다. 편안한 신발이 필수입니다.",
+      "phone": "+86 029  4588 9449"
+    },
+    {
+      "id": "terracotta",
+      "name": "兵马俑",
+      "nameEn": "병마용",
+      "category": "museum",
+      "description": "세계 8대 불가사의, 진시황릉의 부장갱.",
+      "address": "시안시 린퉁구",
+      "coordinates": {
+        "lat": 34.38,
+        "lng": 109.28
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "120위안",
+      "recommendedVisitTime": "반나절.",
+      "highlights": [
+        "병마용",
+        "청동 마차와 말"
+      ],
+      "tips": "꼭 봐야 할 곳: 병마용.",
+      "image": "/img/ext/309f30e43563.webp",
+      "phone": "+86 29 8139 9127"
+    },
+    {
+      "id": "big-wild-goose",
+      "name": "大雁塔",
+      "nameEn": "대야승탑",
+      "category": "temple",
+      "description": "당나라 승려 현장이 불교 경전을 보존하기 위해 지은 불탑.",
+      "address": "시안시 옌타구",
+      "coordinates": {
+        "lat": 34.22,
+        "lng": 108.95
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "50위안",
+      "recommendedVisitTime": "2시간",
+      "highlights": [
+        "불탑",
+        "현장"
+      ],
+      "tips": "당나라 문화에 대해 알아보세요.",
+      "image": "/img/ext/998eb40307b9.webp",
+      "phone": "+86 29 8552 7958"
+    },
+    {
+      "id": "huangqing",
+      "name": "华清池",
+      "nameEn": "화칭 온천",
+      "category": "nature",
+      "description": "당나라의 왕실 온천 궁전으로, 양귀비가 목욕한 곳.",
+      "address": "시안시 린퉁구",
+      "coordinates": {
+        "lat": 34.35,
+        "lng": 109.28
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "120위안",
+      "recommendedVisitTime": "2시간",
+      "highlights": [
+        "온천",
+        "양귀비"
+      ],
+      "tips": "당나라의 역사에 대해 알아보세요.",
+      "image": "/img/ext/0df1b413372e.webp",
+      "phone": "+86 029  7707 6732"
+    },
+    {
+      "id": "xian-food",
+      "name": "西安美食",
+      "nameEn": "시안 음식",
+      "category": "street",
+      "description": "시안은 중국의 미식 수도로, 다양한 간식을 제공합니다.",
+      "address": "시안시",
+      "coordinates": {
+        "lat": 34.26,
+        "lng": 108.93
+      },
+      "openingHours": "하루 종일",
+      "ticketPrice": "1인당 50위안",
+      "recommendedVisitTime": "하루 종일",
+      "highlights": [
+        "양러우파오모 (양고기 수프와 부순 납작빵)",
+        "로우지아모 (중식 햄버거)"
+      ],
+      "tips": "시안의 현지 별미를 맛보세요.",
+      "image": "/img/ext/b3bbcb98d017.webp",
+      "phone": "+86 029  1244 8931"
+    },
+    {
+      "id": "xian-night",
+      "name": "西安夜景",
+      "nameEn": "시안 야경",
+      "category": "landmark",
+      "description": "종루와 고루, 대안탑에서의 야간 조명 쇼.",
+      "address": "시안시",
+      "coordinates": {
+        "lat": 34.26,
+        "lng": 108.93
+      },
+      "openingHours": "11. 야간.",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1시간",
+      "highlights": [
+        "12. 조명 쇼.",
+        "13. 야경."
+      ],
+      "tips": "여름 밤에 가장 아름답습니다.",
+      "image": "/img/ext/933590b9add8.webp",
+      "phone": "+86 029  0589 9488"
+    },
+    {
+      "id": "xian-museum",
+      "name": "西安博物院",
+      "nameEn": "시안 박물관",
+      "category": "museum",
+      "description": "시안의 역사를 보여주는 박물관들.",
+      "address": "시안 베이린구",
+      "coordinates": {
+        "lat": 34.26,
+        "lng": 108.93
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1.5시간",
+      "highlights": [
+        "시안의 역사"
+      ],
+      "tips": "시안의 문화에 대해 알아보세요.",
+      "image": "/img/ext/f679681891dd.webp",
+      "phone": "+86 029  2894 5657"
+    },
+    {
+      "id": "xian-park",
+      "name": "兴庆宫公园",
+      "nameEn": "싱칭 궁전 공원",
+      "category": "park",
+      "description": "당나라 흥경궁 유적 위에 세워진 공원.",
+      "address": "시안 베이린구",
+      "coordinates": {
+        "lat": 34.25,
+        "lng": 108.97
+      },
+      "openingHours": "하루 종일",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1.5시간",
+      "highlights": [
+        "당나라 유적",
+        "공원"
+      ],
+      "tips": "당나라 문화에 대해 알아보세요.",
+      "image": "/img/ext/a35256bc74dd.webp",
+      "phone": "+86 029  5975 3671"
+    },
+    {
+      "id": "xian-temple",
+      "name": "大慈恩寺",
+      "nameEn": "대사은사",
+      "category": "temple",
+      "description": "당나라의 황실 사찰인 대안탑을 보유한 사찰.",
+      "address": "시안시 옌타구",
+      "coordinates": {
+        "lat": 34.22,
+        "lng": 108.95
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "50위안",
+      "recommendedVisitTime": "1.5시간",
+      "highlights": [
+        "대안탑",
+        "불교 문화"
+      ],
+      "tips": "당나라 불교에 대해 알아보세요.",
+      "image": "/img/ext/31617e07359d.webp",
+      "phone": "+86 029  6095 0804"
+    },
+    {
+      "id": "xian-street",
+      "name": "书院门",
+      "nameEn": "서원문",
+      "category": "street",
+      "description": "시안에서 가장 오래된 문화 거리로, 다양한 서예, 그림, 그리고 문방사우를 갖추고 있습니다.",
+      "address": "시안 베이린구",
+      "coordinates": {
+        "lat": 34.26,
+        "lng": 108.93
+      },
+      "openingHours": "하루 종일",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1시간",
+      "highlights": [
+        "서예와 그림",
+        "문방사우 (붓, 먹, 종이, 벼루)"
+      ],
+      "tips": "시안의 문화에 대해 알아보세요.",
+      "image": "/img/ext/bb1e59b31c2f.webp",
+      "phone": "+86 029  0010 5778"
+    },
+    {
+      "id": "xian-banpo",
+      "name": "半坡博物馆",
+      "nameEn": "반포 박물관",
+      "category": "museum",
+      "description": "6,000년 전 양사오 문화의 유적을 전시하는 박물관입니다.",
+      "address": "시안 바차오구",
+      "coordinates": {
+        "lat": 34.3,
+        "lng": 109.05
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "30위안",
+      "recommendedVisitTime": "1.5시간",
+      "highlights": [
+        "양사오 문화",
+        "유적지"
+      ],
+      "tips": "선사 시대 문화에 대해 알아보세요.",
+      "image": "/img/ext/6b9b721dc44a.webp",
+      "phone": "+86 029  6166 9908"
+    },
+    {
+      "id": "xian-forest",
+      "name": "碑林",
+      "nameEn": "비석림",
+      "category": "museum",
+      "description": "중국 최대의 석각 비문 박물관으로, 수많은 비석이 있습니다.",
+      "address": "시안 베이린구",
+      "coordinates": {
+        "lat": 34.26,
+        "lng": 108.93
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "65위안",
+      "recommendedVisitTime": "2시간",
+      "highlights": [
+        "석각 비문",
+        "서예"
+      ],
+      "tips": "중국 서예에 대해 배워보세요.",
+      "image": "/img/ext/932937970df3.webp",
+      "phone": "+86 029  5254 6031"
+    },
+    {
+      "id": "xian-mosque",
+      "name": "大清真寺",
+      "nameEn": "대사원",
+      "category": "temple",
+      "description": "중국 4대 모스크 중 하나로, 1,200년 이상의 역사를 가지고 있습니다.",
+      "address": "시안 롄후구",
+      "coordinates": {
+        "lat": 34.27,
+        "lng": 108.93
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "25위안",
+      "recommendedVisitTime": "1시간",
+      "highlights": [
+        "이슬람 건축",
+        "종교 문화"
+      ],
+      "tips": "이슬람 문화에 대해 배워보세요.",
+      "image": "/img/ext/7b9294e569ee.webp",
+      "phone": "+86 029  6723 1527"
+    },
+    {
+      "id": "xian-bridge",
+      "name": "灞桥",
+      "nameEn": "파교",
+      "category": "landmark",
+      "description": "시안 동부에 있는 고대 다리로, 2,000년 이상의 역사를 가지고 있습니다.",
+      "address": "시안 바차오구",
+      "coordinates": {
+        "lat": 34.3,
+        "lng": 109.05
+      },
+      "openingHours": "하루 종일",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "30분",
+      "highlights": [
+        "고대 다리",
+        "역사"
+      ],
+      "tips": "시안의 역사에 대해 알아보세요.",
+      "image": "/img/ext/4a4dcb90ca9a.webp",
+      "phone": "+86 029  8205 2810"
+    },
+    {
+      "id": "xian-wei",
+      "name": "渭河",
+      "nameEn": "웨이강",
+      "category": "nature",
+      "description": "황하의 가장 큰 지류로, 도시를 흐릅니다.",
+      "address": "시안시",
+      "coordinates": {
+        "lat": 34.3,
+        "lng": 108.93
+      },
+      "openingHours": "하루 종일",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "30분",
+      "highlights": [
+        "강"
+      ],
+      "tips": "웨이허 강의 풍경을 감상하세요.",
+      "image": "/img/ext/a237ca8ba2e4.webp",
+      "phone": "+86 029  5953 4546"
+    },
+    {
+      "id": "xian-mountain",
+      "name": "骊山",
+      "nameEn": "리산산",
+      "category": "nature",
+      "description": "화칭지 뒤에 있는 산으로, 봉화대와 빙젠 정자가 있습니다.",
+      "address": "시안시 린퉁구",
+      "coordinates": {
+        "lat": 34.35,
+        "lng": 109.28
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "화청지 포함",
+      "recommendedVisitTime": "2시간",
+      "highlights": [
+        "봉화대",
+        "빙검정"
+      ],
+      "tips": "시안의 역사에 대해 알아보세요.",
+      "image": "/img/ext/4d192538c5f9.webp",
+      "phone": "+86 029  5559 0239"
+    },
+    {
+      "id": "xian-famen",
+      "name": "法门寺",
+      "nameEn": "파문사",
+      "category": "temple",
+      "description": "석가모니 부처님의 진신사리를 모신 사찰입니다.",
+      "address": "바오지시 푸펑현",
+      "coordinates": {
+        "lat": 34.38,
+        "lng": 107.88
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "100위안",
+      "recommendedVisitTime": "반나절.",
+      "highlights": [
+        "부처님 손가락 사리",
+        "지하궁"
+      ],
+      "tips": "불교 문화에 대해 알아보세요.",
+      "image": "/img/ext/e9390b71e607.webp",
+      "phone": "+86 029  6759 4210"
+    },
+    {
+      "id": "xian-huashan",
+      "name": "华山",
+      "nameEn": "화산",
+      "category": "nature",
+      "description": "오악 중 하나인 서악으로, 험준함으로 유명합니다.",
+      "address": "웨이난 화인시",
+      "coordinates": {
+        "lat": 34.48,
+        "lng": 110.1
+      },
+      "openingHours": "하루 종일",
+      "ticketPrice": "160위안",
+      "recommendedVisitTime": "하루 종일",
+      "highlights": [
+        "하늘의 외줄다리",
+        "잉어가 몸을 뒤집다",
+        "일출"
+      ],
+      "tips": "화산에 올라 일출을 감상하세요.",
+      "image": "/img/ext/1b3a09b8ec59.webp",
+      "phone": "+86 029  0011 8775"
+    },
+    {
+      "id": "xian-forest2",
+      "name": "小雁塔",
+      "nameEn": "소작루",
+      "category": "temple",
+      "description": "당나라 불교 탑으로, 대안탑만큼 유명합니다.",
+      "address": "시안시 베이린구",
+      "coordinates": {
+        "lat": 34.25,
+        "lng": 108.93
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1시간",
+      "highlights": [
+        "불교 탑",
+        "역사"
+      ],
+      "tips": "당나라 문화에 대해 배워보세요.",
+      "image": "/img/ext/7c1f803fbd3c.webp",
+      "phone": "+86 029  5608 2909"
+    },
+    {
+      "id": "xian-street2",
+      "name": "永兴坊",
+      "nameEn": "용성 팡",
+      "category": "street",
+      "description": "시안에 새로 개발된 음식 거리입니다.",
+      "address": "시안시 베이린구",
+      "coordinates": {
+        "lat": 34.26,
+        "lng": 108.97
+      },
+      "openingHours": "하루 종일",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1.5시간",
+      "highlights": [
+        "음식",
+        "술잔 부수기"
+      ],
+      "tips": "시안의 간식을 맛보세요.",
+      "image": "/img/ext/018c7338a6b5.webp",
+      "phone": "+86 029  2400 7088"
+    },
+    {
+      "id": "xian-temple2",
+      "name": "青龙寺",
+      "nameEn": "칭룽사",
+      "category": "temple",
+      "description": "당나라 불교 사원으로, 구카이(홍법대사) 기념비가 있습니다.",
+      "address": "시안시 옌타구",
+      "coordinates": {
+        "lat": 34.22,
+        "lng": 108.95
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1시간",
+      "highlights": [
+        "벚꽃",
+        "쿠카이"
+      ],
+      "tips": "벚꽃은 봄에 가장 아름답습니다.",
+      "image": "/img/ext/877fddacc3cd.webp",
+      "phone": "+86 029  3887 8154"
+    },
+    {
+      "id": "xian-park2",
+      "name": "大唐芙蓉园",
+      "nameEn": "당원",
+      "category": "park",
+      "description": "당나라 문화를 주제로 한 대형 공원입니다.",
+      "address": "시안시 옌타구",
+      "coordinates": {
+        "lat": 34.22,
+        "lng": 108.95
+      },
+      "openingHours": "09:00-21:00",
+      "ticketPrice": "120위안",
+      "recommendedVisitTime": "반나절",
+      "highlights": [
+        "당나라 문화",
+        "워터 커튼 영화"
+      ],
+      "tips": "당나라 문화에 대해 배워보세요.",
+      "image": "/img/ext/2bf9c9919c9e.webp",
+      "phone": "+86 029  3195 6417"
+    }
   ],
-  "local": {
-   "metro": [
-    "주요 명소를 연결하는 9개 노선",
-    "단일 승차: 2-9위안",
-    "주요 역에 영어 표지판",
-    "2호선과 4호선이 관광객에게 가장 유용"
-   ],
-   "bus": [
-    "광범위한 네트워크이지만 혼잡함",
-    "노선 번호는 아라비아 숫자",
-    "영어 정보를 위해 'Xi'an Metro' 앱 다운로드"
-   ],
-   "taxi": [
-    "기본 요금: 8.5위안 (첫 2km)",
-    "Didi 앱은 영어로 잘 작동",
-    "공항 택시 카운터는 공식적이고 신뢰할 수 있음"
-   ],
-   "bike": [
-    "Hellobike와 Mobike 이용 가능",
-    "잠금 해제: 1위안",
-    "해안 도시만큼 흔하지 않음",
-    "자전거 도로가 개선되고 있습니다"
-   ]
+  "restaurants": [
+    {
+      "id": "xian-1",
+      "name": "长安大牌档",
+      "nameEn": "창안파이탕",
+      "type": "michelin",
+      "star": 1,
+      "cuisine": "산시성",
+      "avgPrice": 150,
+      "rating": 4.7,
+      "address": "완다플라자 등 다양한 위치",
+      "coordinates": {
+        "lat": 34.2315,
+        "lng": 108.8935
+      },
+      "phone": "+86 29 6568 9666",
+      "hours": "11:00-22:00",
+      "description": "미쉐린 1스타 레스토랑으로 전통적인 분위기와 민속 공연이 있는 훌륭한 산시 요리를 제공합니다.",
+      "dishHighlights": [
+        "비앙비앙면",
+        "양고기 파오모",
+        "진나라 요리 접시"
+      ],
+      "tags": [
+        "미쉐린",
+        "산시요리",
+        "문화적"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/10d3f25923d6.webp"
+    },
+    {
+      "id": "xian-2",
+      "name": "우젠창안 (장안을 만나다)",
+      "nameEn": "미트 창안",
+      "type": "local",
+      "cuisine": "산시성",
+      "avgPrice": 100,
+      "rating": 4.6,
+      "address": "야타구 샤오짜이 교차로",
+      "coordinates": {
+        "lat": 34.2255,
+        "lng": 108.9535
+      },
+      "hours": "10:30-21:30",
+      "description": "높은 평가를 받는 산시 레스토랑으로 진정한 맛과 현지 특산품을 제공합니다.",
+      "dishHighlights": [
+        "냉면",
+        "볶음 국수",
+        "만두"
+      ],
+      "tags": [
+        "현지",
+        "산시요리",
+        "인기"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 029  4430 3920",
+      "imageUrl": "/img/ext/1ead642f1e0f.webp"
+    },
+    {
+      "id": "xian-3",
+      "name": "老孙家",
+      "nameEn": " Lao Sun 가",
+      "type": "local",
+      "cuisine": "후이 무슬림",
+      "avgPrice": 60,
+      "rating": 4.5,
+      "address": "종루 근처",
+      "coordinates": {
+        "lat": 34.2635,
+        "lng": 108.9455
+      },
+      "description": "전설적인 무슬림 레스토랑으로 훌륭한 양고기 요리와 러우자모로 유명합니다.",
+      "dishHighlights": [
+        "러우자모 (중국식 햄버거)",
+        "양고기 꼬치",
+        "비앙비앙면"
+      ],
+      "tags": [
+        "현지",
+        "무슬림 요리",
+        "역사적인"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "hours": "10:00-22:00",
+      "phone": "+86 029  3193 4918",
+      "imageUrl": "/img/ext/b3d65b5d9444.webp"
+    },
+    {
+      "id": "xian-4",
+      "name": "더파창",
+      "nameEn": "DeFa 창",
+      "type": "local",
+      "cuisine": "만두",
+      "avgPrice": 80,
+      "rating": 4.4,
+      "address": "베일린구의 산진 거리",
+      "coordinates": {
+        "lat": 34.2585,
+        "lng": 108.9425
+      },
+      "description": "수세기 동안 100가지 이상의 다양한 만두를 만들어온 것으로 유명합니다.",
+      "dishHighlights": [
+        "다양한 만두",
+        "크리스탈 새우 만두",
+        "야채 만두"
+      ],
+      "tags": [
+        "현지",
+        "딤섬",
+        "역사적인"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "hours": "10:00-22:00",
+      "phone": "+86 029  0923 5691",
+      "imageUrl": "/img/ext/3a727a953eca.webp"
+    },
+    {
+      "id": "xian-5",
+      "name": "춘파성",
+      "nameEn": "춘파성",
+      "type": "local",
+      "cuisine": "산시성",
+      "avgPrice": 40,
+      "rating": 4.3,
+      "address": "고루 근처",
+      "coordinates": {
+        "lat": 34.2625,
+        "lng": 108.9415
+      },
+      "description": "시안의 전통적인 아침 식사와 내장 요리를 제공하는 역사적인 레스토랑입니다.",
+      "dishHighlights": [
+        "양고기 수프와 팬케이크",
+        "순대",
+        "전통적인 아침 식사"
+      ],
+      "tags": [
+        "현지",
+        "아침",
+        "전통적인"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "hours": "10:00-22:00",
+      "phone": "+86 029  6663 0682",
+      "imageUrl": "/img/ext/09aa51734b0f.webp"
+    },
+    {
+      "id": "xian-6",
+      "name": "花腰崽",
+      "nameEn": "화요재",
+      "type": "blackpearl",
+      "diamond": 1,
+      "cuisine": "산시성",
+      "avgPrice": 120,
+      "rating": 4.7,
+      "address": "옌타구 남대로 88번지",
+      "coordinates": {
+        "lat": 34.2205,
+        "lng": 108.9465
+      },
+      "phone": "+86 29 8525 2888",
+      "hours": "11:00-21:00",
+      "description": "우아한 당나라 스타일 인테리어에서 정제된 산시 요리를 제공하는 블랙펄 다이아몬드 레스토랑입니다.",
+      "dishHighlights": [
+        "시안 교자",
+        "연잎과 함께 조린 돼지고기",
+        "황금 새우 달걀"
+      ],
+      "tags": [
+        "블랙 펄",
+        "산시요리",
+        "당나라 스타일"
+      ],
+      "star": 0,
+      "imageUrl": "/img/ext/aab7630af4e1.webp"
+    },
+    {
+      "id": "xian-7",
+      "name": "贾三清真灌汤包",
+      "nameEn": "자싼 할랄 수프 교자",
+      "type": "local",
+      "cuisine": "후이 무슬림",
+      "avgPrice": 40,
+      "rating": 4.6,
+      "address": "무슬림 지구 서대로",
+      "coordinates": {
+        "lat": 34.2605,
+        "lng": 108.9425
+      },
+      "hours": "08:00-22:00",
+      "description": "무슬림 지구에서 가장 유명한 샤오롱바오(수프 교자) 가게로 항상 붐빕니다.",
+      "dishHighlights": [
+        "소고기 수프 교자",
+        "양고기 만두",
+        "참기름 케이크"
+      ],
+      "tags": [
+        "현지",
+        "무슬림 요리",
+        "수프 교자",
+        "유명"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 029  8739 1137",
+      "imageUrl": "/img/ext/376ec8b6c2e7.webp"
+    },
+    {
+      "id": "xian-8",
+      "name": "老刘家泡馍",
+      "nameEn": "라오리우지아 파오모",
+      "type": "local",
+      "cuisine": "후이 무슬림",
+      "avgPrice": 50,
+      "rating": 4.6,
+      "address": "종루 근처",
+      "coordinates": {
+        "lat": 34.2635,
+        "lng": 108.9455
+      },
+      "description": "전통적인 양러우 파오모(양고기 육수에 손으로 찢은 납작빵)를 제공하는 전설적인 레스토랑입니다.",
+      "dishHighlights": [
+        "양고기 수프와 찢어진 빵 (Yangrou pao mo)",
+        "단무지 마늘",
+        "양의 위"
+      ],
+      "tags": [
+        "현지",
+        "무슬림 요리",
+        "파오모 (pao-mo)",
+        "반드시 시도해야 할"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "hours": "10:00-22:00",
+      "phone": "+86 029  7134 1164",
+      "imageUrl": "/img/ext/ec4a38808f5e.webp"
+    },
+    {
+      "id": "xian-9",
+      "name": "뺑뺑면",
+      "nameEn": "중다 비앙비앙 미엔 (Zhongda Biangbiang Mian)",
+      "type": "local",
+      "cuisine": "산시성",
+      "avgPrice": 25,
+      "rating": 4.5,
+      "address": "섬서사범대학 근처",
+      "coordinates": {
+        "lat": 34.2315,
+        "lng": 108.9345
+      },
+      "description": "학생들에게 인기 있는 곳으로, 매운 소스와 함께 제공되는 유명한 넓은 띠 모양의 국수를 저렴하고 진짜 맛으로 제공합니다.",
+      "dishHighlights": [
+        "비앙비앙면 (넓은 띠 모양의 국수)",
+        "매콤하고 새콤한 국수",
+        "진나라 요리 세트 메뉴"
+      ],
+      "tags": [
+        "현지",
+        "면요리",
+        "저렴",
+        "학생 지역"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "hours": "10:00-22:00",
+      "phone": "+86 029  8333 9397",
+      "imageUrl": "/img/ext/a77d25b5ed73.webp"
+    },
+    {
+      "id": "xian-10",
+      "name": "동남아풍 증고 (쩡가오)",
+      "nameEn": "동남아 징 가오 (Dongnanya Jing Gao)",
+      "type": "local",
+      "cuisine": "섬서 디저트",
+      "avgPrice": 15,
+      "rating": 4.6,
+      "address": "무슬림 지구",
+      "coordinates": {
+        "lat": 34.26,
+        "lng": 108.943
+      },
+      "description": "무슬림 거리에서 수십 년 동안 유명한 징 가오 (팥과 대추를 넣은 찐 찹쌀)를 판매하는 유명한 디저트 판매점입니다.",
+      "dishHighlights": [
+        "징 가오 (찐 단맛의 쌀)",
+        "양조",
+        "깨 케이크"
+      ],
+      "tags": [
+        "현지",
+        "디저트",
+        "무슬림 요리",
+        "스트리트푸드"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "hours": "10:00-22:00",
+      "phone": "+86 029  1148 8379",
+      "imageUrl": "/img/ext/1ad56b5d9c26.webp"
+    },
+    {
+      "id": "xian-11",
+      "name": "同盛祥",
+      "nameEn": "통성향",
+      "type": "local",
+      "cuisine": "후이 무슬림",
+      "avgPrice": 55,
+      "rating": 4.5,
+      "address": "종루 서쪽 거리",
+      "coordinates": {
+        "lat": 34.2645,
+        "lng": 108.9425
+      },
+      "hours": "08:00-21:00",
+      "description": "손으로 뜯은 빵 기법으로 양루오 파오모를 전문으로 하는 100년 전통 식당.",
+      "dishHighlights": [
+        "양루오 파오모",
+        "양의 위",
+        "바삭한 평면빵"
+      ],
+      "tags": [
+        "현지",
+        "무슬림 요리",
+        "파오모 (pao-mo)",
+        "역사적인"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 029  2760 5982",
+      "imageUrl": "/img/ext/e35a0e5ab570.webp"
+    },
+    {
+      "id": "xian-12",
+      "name": "하이롱 궈티에 (해영鍋貼)",
+      "nameEn": "해룽구오티에",
+      "type": "local",
+      "cuisine": "산시성",
+      "avgPrice": 45,
+      "rating": 4.4,
+      "address": "무슬림 거리 베이위안먼",
+      "coordinates": {
+        "lat": 34.2625,
+        "lng": 108.9415
+      },
+      "hours": "10:00-22:00",
+      "description": "시안 길거리 음식의 대표주자로, 속이 촉촉하고 겉이 바삭한 군만두(궈티에)로 유명합니다.",
+      "dishHighlights": [
+        "돼지고기와 부추가 들어간 군만두 (궈티에)",
+        "양고기구오티에",
+        "얼큰하고 새콤한 수프"
+      ],
+      "tags": [
+        "현지",
+        "딤섬",
+        "스트리트푸드",
+        "바삭한"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 029  3572 9281",
+      "imageUrl": "/img/ext/1795ec53ed4e.webp"
+    },
+    {
+      "id": "xian-13",
+      "name": "魏家凉皮",
+      "nameEn": "위자량피",
+      "type": "local",
+      "cuisine": "산시성",
+      "avgPrice": 20,
+      "rating": 4.6,
+      "address": "남쪽 거리",
+      "coordinates": {
+        "lat": 34.2595,
+        "lng": 108.9515
+      },
+      "hours": "10:00-22:00",
+      "description": "비밀 양념 소스와 함께 시원한 양피(량피)를 제공하는 인기 체인점으로, 상쾌하고 맛있습니다.",
+      "dishHighlights": [
+        "양피(량피)",
+        "매운 소스",
+        "오이와콩나물"
+      ],
+      "tags": [
+        "현지",
+        "면요리",
+        "차가운",
+        "매운",
+        "저렴"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 029  1917 1330",
+      "imageUrl": "/img/ext/8a9278b43f17.webp"
+    },
+    {
+      "id": "xian-14",
+      "name": "子午路肉夹馍",
+      "nameEn": "자우루로우지모",
+      "type": "local",
+      "cuisine": "산시성",
+      "avgPrice": 15,
+      "rating": 4.7,
+      "address": "쯔우로",
+      "coordinates": {
+        "lat": 34.2235,
+        "lng": 108.9355
+      },
+      "hours": "07:00-20:00",
+      "description": "완벽하게 조린 돼지고기가 바삭한 빵에 들어간 전설적인 로우지모 상점으로, 시안의 필수 아침 메뉴입니다.",
+      "dishHighlights": [
+        "클래식 로우지모",
+        "건두부 로우지모",
+        "삼겹살 로우지모"
+      ],
+      "tags": [
+        "현지",
+        "로우지모",
+        "아침",
+        "저렴",
+        "유명"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 029  5363 9740",
+      "imageUrl": "/img/ext/71b23a1406e9.webp"
+    },
+    {
+      "id": "xian-15",
+      "name": "장지 루지아모 (장기육가막)",
+      "nameEn": "장지로우지모",
+      "type": "local",
+      "cuisine": "산시성",
+      "avgPrice": 15,
+      "rating": 4.5,
+      "address": "이스트 스트리트",
+      "coordinates": {
+        "lat": 34.2665,
+        "lng": 108.9555
+      },
+      "hours": "07:30-20:00",
+      "description": "넉넉한 양의 조린 돼지고기와 갓 구운 빵으로 유명한 또 다른 로우지모 명소입니다.",
+      "dishHighlights": [
+        "표준 로우지모",
+        "고기추가 로우지모",
+        "양고기 로우지모"
+      ],
+      "tags": [
+        "현지",
+        "로우지모",
+        "아침",
+        "저렴"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 029  3060 6460",
+      "imageUrl": "/img/ext/e80a516e8881.webp"
+    },
+    {
+      "id": "xian-16",
+      "name": "마후면 (마호면)",
+      "nameEn": "마후마이안",
+      "type": "local",
+      "cuisine": "산시성",
+      "avgPrice": 30,
+      "rating": 4.6,
+      "address": "웨스트 7번가",
+      "coordinates": {
+        "lat": 34.2755,
+        "lng": 108.9385
+      },
+      "hours": "06:30-14:00",
+      "description": "수제 당면과 바삭한 로우지모로 유명한 전설적인 아침 식당으로, 일찍 문을 닫습니다.",
+      "dishHighlights": [
+        "손빼기면",
+        "샤오차이 면",
+        "루지모"
+      ],
+      "tags": [
+        "현지",
+        "면요리",
+        "아침",
+        "조기마감",
+        "유명"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 029  8372 8090",
+      "imageUrl": "/img/ext/3e7b15229c03.webp"
+    },
+    {
+      "id": "xian-17",
+      "name": "柳巷面",
+      "nameEn": "류샹 면",
+      "type": "local",
+      "cuisine": "산시성",
+      "avgPrice": 28,
+      "rating": 4.5,
+      "address": "안반 스트리트",
+      "coordinates": {
+        "lat": 34.2685,
+        "lng": 108.9495
+      },
+      "hours": "11:00-21:00",
+      "description": "수십 년간 현지인들에게 사랑받아 온 진한 토마토 계란 소스의 칼국수로 유명합니다.",
+      "dishHighlights": [
+        "칼국수",
+        "토마토 계란 면",
+        "매운 면"
+      ],
+      "tags": [
+        "현지",
+        "면요리",
+        "산시요리",
+        "인기"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 029  2598 2633",
+      "imageUrl": "/img/ext/40398e7c6daa.webp"
+    },
+    {
+      "id": "xian-18",
+      "name": "정다마 뺑뺑면",
+      "nameEn": "정마마 Biangbiang 면",
+      "type": "local",
+      "cuisine": "산시성",
+      "avgPrice": 25,
+      "rating": 4.7,
+      "address": "샤오자이 창안로",
+      "coordinates": {
+        "lat": 34.2285,
+        "lng": 108.9515
+      },
+      "hours": "10:00-22:00",
+      "description": "혼합 토핑과 매운 기름이 함께하는 유명한 넓은 면으로 유명한 높은 평점의 장소입니다.",
+      "dishHighlights": [
+        "삼중 토핑 biangbiang면",
+        "고기 소스 biangbiang면",
+        "야채 biangbiang면"
+      ],
+      "tags": [
+        "현지",
+        "면요리",
+        "빵빵면",
+        "인기"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 029  5724 8941",
+      "imageUrl": "/img/ext/7b9cefeae05d.webp"
+    },
+    {
+      "id": "xian-19",
+      "name": "定家小酥肉",
+      "nameEn": "딩jia 소고기",
+      "type": "local",
+      "cuisine": "후이 무슬림",
+      "avgPrice": 50,
+      "rating": 4.6,
+      "address": "시양 시장 후이민 스트리트",
+      "coordinates": {
+        "lat": 34.2595,
+        "lng": 108.9405
+      },
+      "hours": "10:00-22:00",
+      "description": "시안의 상징적인 무슬림 지구 레스토랑으로 바삭한 양갈비 튀김과 쌀 요리로 유명합니다.",
+      "dishHighlights": [
+        "바삭한 양갈비 튀김",
+        "양고기 밥그릇",
+        "양고기 꼬치"
+      ],
+      "tags": [
+        "현지",
+        "무슬림 요리",
+        "양고기",
+        "유명"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 029  5614 0902",
+      "imageUrl": "/img/ext/381fbf90ed48.webp"
+    },
+    {
+      "id": "xian-20",
+      "name": "시시 궈쿠이 (희희과괴)",
+      "nameEn": "시시궈쿠이",
+      "type": "local",
+      "cuisine": "산시성",
+      "avgPrice": 10,
+      "rating": 4.3,
+      "address": "남문 밖",
+      "coordinates": {
+        "lat": 34.2565,
+        "lng": 108.9495
+      },
+      "hours": "08:00-18:00",
+      "description": "전통적인 빵집으로 유명한 거대한 바삭한 납작빵(궈쿠이)으로 양고기 수프와 잘 어울립니다.",
+      "dishHighlights": [
+        "일반 궈쿠이",
+        "참깨 궈쿠이",
+        "바삭한 빵"
+      ],
+      "tags": [
+        "현지",
+        "간식",
+        "빵",
+        "저렴",
+        "전통적인"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 029  6191 9266",
+      "imageUrl": "/img/ext/6083da90a1b5.webp"
+    },
+    {
+      "id": "xian-21",
+      "name": "陕十三",
+      "nameEn": "산 13",
+      "type": "blackpearl",
+      "cuisine": "산시성",
+      "avgPrice": 100,
+      "rating": 4.6,
+      "address": "취장 신구",
+      "coordinates": {
+        "lat": 34.2115,
+        "lng": 108.9635
+      },
+      "phone": "+86 29 8932 8888",
+      "hours": "11:00-21:30",
+      "description": "우아한 분위기에서 전통shan시 요리를 현대적으로 재해석한 블랙펄 레스토랑.",
+      "dishHighlights": [
+        "미니 루지모 테이스팅",
+        "디컨스트럭티드 양피",
+        "아티스틱 디저트"
+      ],
+      "tags": [
+        "블랙 펄",
+        "산시요리",
+        "모던",
+        "창의적"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "/img/ext/de759a7f3057.webp"
+    },
+    {
+      "id": "xian-22",
+      "name": "长安大排档",
+      "nameEn": "창안 대파이다",
+      "type": "local",
+      "cuisine": "산시성",
+      "avgPrice": 80,
+      "rating": 4.5,
+      "address": "샤오자이 사이거",
+      "coordinates": {
+        "lat": 34.2245,
+        "lng": 108.9455
+      },
+      "hours": "10:00-22:00",
+      "description": "활기찬 대파이당 분위기 속에서 다양한 산시식 소접시 요리를 제공하는 인기 체인점입니다.",
+      "dishHighlights": [
+        "혼합 전채 플래터",
+        "비앙비앙면",
+        "진나라 요리 시식"
+      ],
+      "tags": [
+        "현지",
+        "산시요리",
+        "다양한",
+        "활기찬"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 029  4725 3917",
+      "imageUrl": "/img/ext/25db415f1159.webp"
+    },
+    {
+      "id": "xian-new-23",
+      "name": "西安饭庄",
+      "nameEn": "시안 레스토랑",
+      "type": "local",
+      "cuisine": "산시성",
+      "avgPrice": 90,
+      "rating": 4.4,
+      "address": "이스트 스트리트",
+      "coordinates": {
+        "lat": 34.2685,
+        "lng": 108.9535
+      },
+      "hours": "10:00-22:00",
+      "description": "1929년에 설립된 역사가 깊은 산시 성의 레스토랑으로 전통 요리로 유명합니다.",
+      "dishHighlights": [
+        "찜 돼지고기",
+        "볶음 국수",
+        "전통적인 만두"
+      ],
+      "tags": [
+        "현지",
+        "산시 요리",
+        "역사적인",
+        "전통적인"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 029  8460 9895",
+      "imageUrl": "/img/ext/4546cc95fad5.webp"
+    },
+    {
+      "id": "xian-new-24",
+      "name": "老味道",
+      "nameEn": "오래된 풍미",
+      "type": "local",
+      "cuisine": "산시",
+      "avgPrice": 70,
+      "rating": 4.5,
+      "address": "베이린 구",
+      "coordinates": {
+        "lat": 34.2645,
+        "lng": 108.9535
+      },
+      "hours": "11:00-21:00",
+      "description": "전통적인 산시 가정식 요리 전문점",
+      "dishHighlights": [
+        "찜닭",
+        "감자 슬라이스",
+        "냉면"
+      ],
+      "tags": [
+        "현지",
+        "산시 요리",
+        "가정식",
+        "정통"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 029  7307 4512",
+      "imageUrl": "/img/ext/ad609d922c26.webp"
+    },
+    {
+      "id": "xian-new-25",
+      "name": "天下第一面",
+      "nameEn": "천하제일면",
+      "type": "local",
+      "cuisine": "산시성",
+      "avgPrice": 40,
+      "rating": 4.4,
+      "address": "옌타 구",
+      "coordinates": {
+        "lat": 34.2195,
+        "lng": 108.9485
+      },
+      "hours": "10:00-22:00",
+      "description": "푸짐한 양의 다양한 전통 산시성 면 요리로 인기가 높습니다.",
+      "dishHighlights": [
+        "묵면",
+        "얼큰한 국수",
+        "밀가루면"
+      ],
+      "tags": [
+        "현지",
+        "면요리",
+        "산시요리",
+        "인기"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 029  1020 6666",
+      "imageUrl": "/img/ext/__missing.svg"
+    },
+    {
+      "id": "xian-new-26",
+      "name": "小杨烤肉",
+      "nameEn": "샤오양 BBQ",
+      "type": "local",
+      "cuisine": "후이 무슬림",
+      "avgPrice": 80,
+      "rating": 4.6,
+      "address": "후이민 스트리트",
+      "coordinates": {
+        "lat": 34.2595,
+        "lng": 108.9415
+      },
+      "hours": "11:00-23:00",
+      "description": "무슬림 지역에서 인기 있는 바비큐 레스토랑으로, 신선한 양고기와 전통적인 양념이 특징입니다.",
+      "dishHighlights": [
+        "양고기 꼬치",
+        "양척추",
+        "구운 납작빵"
+      ],
+      "tags": [
+        "현지",
+        "무슬림 요리",
+        "바비큐",
+        "인기"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 029  5771 9169",
+      "imageUrl": "/img/ext/0f0eb01a3210.webp"
+    },
+    {
+      "id": "xian-new-27",
+      "name": "大厨小馆",
+      "nameEn": "셰프 키친",
+      "type": "local",
+      "cuisine": "산시성",
+      "avgPrice": 85,
+      "rating": 4.5,
+      "address": "취장 신구",
+      "coordinates": {
+        "lat": 34.2125,
+        "lng": 108.9695
+      },
+      "hours": "11:00-21:30",
+      "description": "예술적인 플레이팅으로 세련된 산시 요리를 제공하는 레스토랑입니다.",
+      "dishHighlights": [
+        "찐 만두",
+        "돼지고기 조림",
+        "야채"
+      ],
+      "tags": [
+        "현지",
+        "산시요리",
+        "정교한",
+        "우아한"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 029  8226 0882",
+      "imageUrl": "/img/ext/f5f94d31f0a9.webp"
+    },
+    {
+      "id": "xian-new-28",
+      "name": "西北饭庄",
+      "nameEn": "서북식당",
+      "type": "local",
+      "cuisine": "서북 요리",
+      "avgPrice": 75,
+      "rating": 4.4,
+      "address": "신청 구",
+      "coordinates": {
+        "lat": 34.2745,
+        "lng": 108.9485
+      },
+      "hours": "10:00-22:00",
+      "description": "대형portion으로 알려진 서북 중국 요리의 인기 식당",
+      "dishHighlights": [
+        "손으로 뽑은 국수",
+        "양고기 스튜",
+        "플랫빵"
+      ],
+      "tags": [
+        "현지",
+        "서북",
+        "면요리",
+        "푸짐한"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 029  6672 8685",
+      "imageUrl": "/img/ext/5b1fb3df83af.webp"
+    },
+    {
+      "id": "xian-new-29",
+      "name": "醉西安",
+      "nameEn": "취한 시안",
+      "type": "local",
+      "cuisine": "섬서 퓨전",
+      "avgPrice": 110,
+      "rating": 4.6,
+      "address": "옌타구",
+      "coordinates": {
+        "lat": 34.2255,
+        "lng": 108.9545
+      },
+      "hours": "11:00-22:00",
+      "description": "창의적인 섬서 요리와 크래프트 비어를 제공하는 현대적 레스토랑",
+      "dishHighlights": [
+        "디컨스트럭티드 러지모",
+        "크래프트 비어 페어링",
+        "모던량피"
+      ],
+      "tags": [
+        "현지",
+        "산시요리",
+        "모던",
+        "창의적"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 029  0395 1646",
+      "imageUrl": "/img/ext/2d1270214eac.webp"
+    },
+    {
+      "id": "xian-new-30",
+      "name": "粉巷13号",
+      "nameEn": "분향13호",
+      "type": "local",
+      "cuisine": "산시성",
+      "avgPrice": 60,
+      "rating": 4.5,
+      "address": "베이린구 펀샹",
+      "coordinates": {
+        "lat": 34.2635,
+        "lng": 108.9545
+      },
+      "hours": "10:00-22:00",
+      "description": "전통적인 섬서 조식과 간식을 찾는 인기 장소",
+      "dishHighlights": [
+        "두부피막",
+        "찐빵",
+        "두유"
+      ],
+      "tags": [
+        "현지",
+        "아침",
+        "산시요리",
+        "저렴"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 029  0006 5045",
+      "imageUrl": "/img/ext/e0e3a2878ec7.webp"
+    },
+    {
+      "id": "xian-31",
+      "name": "노자호 뺑뺑면",
+      "nameEn": "노자호biangbiang면 (biangbiang면)",
+      "type": "street",
+      "cuisine": "biangbiang면",
+      "avgPrice": 22,
+      "rating": 4.2,
+      "address": "시안시 옌타구 푸드스트리트 14",
+      "coordinates": {
+        "lat": 34.2975,
+        "lng": 108.9579
+      },
+      "phone": "+86 029 50116398",
+      "hours": "17:00-02:00",
+      "description": "현지인이 추천하는 biangbiang면 전문점, 진짜 맛, 합리적인 가격",
+      "dishHighlights": [
+        "biangbiang면",
+        "로우지아모(중국식 햄버거)",
+        "수제비 만두"
+      ],
+      "tags": [
+        "야시장",
+        "노점",
+        "트렌디한 체크인 명소"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/4d37d82561b1.webp"
+    },
+    {
+      "id": "xian-33",
+      "name": "길거리 수프 만두",
+      "nameEn": "길거리 수프 만두 (탕포)",
+      "type": "street",
+      "cuisine": "수제비 만두",
+      "avgPrice": 53,
+      "rating": 4.8,
+      "address": "시안시 웨이양구 푸드스트리트 190",
+      "coordinates": {
+        "lat": 34.3422,
+        "lng": 108.944
+      },
+      "phone": "+86 029 10693863",
+      "hours": "10:00-22:00",
+      "description": "시안 현지인이 추천하는 만두 전문점으로, 정통 맛과 합리적인 가격을 자랑합니다",
+      "dishHighlights": [
+        "양러우파오모(양고기 수프에 난을 찢어 넣은 요리)",
+        "량피(냉면)",
+        "수제비 만두"
+      ],
+      "tags": [
+        "야시장",
+        "트렌디한 체크인 명소",
+        "심야 음식"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/fa567ade5072.webp"
+    },
+    {
+      "id": "xian-35",
+      "name": "老街凉皮",
+      "nameEn": "올드스트리트 량피 (량피)",
+      "type": "local",
+      "cuisine": "량피(냉면)",
+      "avgPrice": 119,
+      "rating": 4.6,
+      "address": "시안시 베이린구 푸드 스트리트 89번지",
+      "coordinates": {
+        "lat": 34.2945,
+        "lng": 108.9753
+      },
+      "phone": "+86 029 11386772",
+      "hours": "17:00-02:00",
+      "description": "시안 현지인이 추천하는 량피 가게로, 정통 맛과 저렴한 가격이 특징입니다",
+      "dishHighlights": [
+        "양러우 파오모(양고기 수프에 난을 찢어 넣은 요리)",
+        "로우지아모(중국식 햄버거)",
+        "수제 만두"
+      ],
+      "tags": [
+        "가정식 요리",
+        "현지인에게 사랑받는 곳",
+        "오랜 전통의 동네 식당"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/c179827129ff.webp"
+    },
+    {
+      "id": "xian-37",
+      "name": "노시안 뺑뺑면",
+      "nameEn": "오래된 시안biangbiang면 (biangbiang면)",
+      "type": "cafe",
+      "cuisine": "biangbiang면",
+      "avgPrice": 55,
+      "rating": 4.9,
+      "address": "시안시 웨이양구 푸드 스트리트 188번지",
+      "coordinates": {
+        "lat": 34.3749,
+        "lng": 108.9027
+      },
+      "phone": "+86 029 39629315",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "현지인이 추천하는 biangbiang면 전문점, 진짜 맛, 합리적인 가격",
+      "dishHighlights": [
+        "수제 만두",
+        "량피(냉면)",
+        "양러우 파오모(양고기 수프에 난을 찢어 넣은 요리)"
+      ],
+      "tags": [
+        "조용함",
+        "커피",
+        "애프터눈 티"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/669390ee71d8.webp"
+    },
+    {
+      "id": "xian-39",
+      "name": "地道羊肉泡馍",
+      "nameEn": "진짜 양러우파오모 (양고기 수프에 넣은 납작빵)",
+      "type": "local",
+      "cuisine": "양러우파오모(양고기 수프에 넣은 잘게 찢은 납작빵)",
+      "avgPrice": 82,
+      "rating": 4,
+      "address": "시안시 롄후구 푸드 스트리트 22번지",
+      "coordinates": {
+        "lat": 34.2932,
+        "lng": 108.9017
+      },
+      "phone": "+86 029 82819021",
+      "hours": "06:00-14:00",
+      "description": "시안 현지인이 추천하는 양러우파오모 가게로, 정통 맛과 합리적인 가격이 특징입니다",
+      "dishHighlights": [
+        "러우자모(중국식 햄버거)",
+        "양러우파오모(양고기 수프에 넣은 잘게 찢은 납작빵)",
+        "biangbiang면"
+      ],
+      "tags": [
+        "가정식 요리",
+        "오래된 전통 브랜드",
+        "대기 줄의 여왕"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/51976567dbfc.webp"
+    },
+    {
+      "id": "xian-41",
+      "name": "골목 biangbiang면",
+      "nameEn": "골목빵빵면 (biangbiang면)",
+      "type": "street",
+      "cuisine": "biangbiang면",
+      "avgPrice": 54,
+      "rating": 4.8,
+      "address": "시안시 롄후구 푸드 스트리트 1번지",
+      "coordinates": {
+        "lat": 34.3604,
+        "lng": 108.9086
+      },
+      "phone": "+86 029 56507439",
+      "hours": "10:00-22:00",
+      "description": "현지인이 추천하는 biangbiang면 전문점, 진짜 맛, 합리적인 가격",
+      "dishHighlights": [
+        "러우자모(중국식 햄버거)",
+        "양러우파오모(양고기 수프에 넣은 잘게 찢은 납작빵)",
+        "수프 만두"
+      ],
+      "tags": [
+        "노점",
+        "야식",
+        "간식"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/a64be3138bf4.webp"
+    },
+    {
+      "id": "xian-43",
+      "name": "노시안 뺑뺑면",
+      "nameEn": "오래된 시안biangbiang면 (biangbiang면)",
+      "type": "local",
+      "cuisine": "biangbiang면",
+      "avgPrice": 115,
+      "rating": 4.7,
+      "address": "시안시 롄후구 푸드 스트리트 165번지",
+      "coordinates": {
+        "lat": 34.3164,
+        "lng": 108.9473
+      },
+      "phone": "+86 029 87457332",
+      "hours": "17:00-02:00",
+      "description": "현지인이 추천하는 biangbiang면 전문점, 진짜 맛, 합리적인 가격",
+      "dishHighlights": [
+        "양러우파오모(양고기 수프와 납작빵)",
+        "량피(냉면)",
+        "로우지아모(중식 햄버거)"
+      ],
+      "tags": [
+        "대기열의 여왕",
+        "현지인들의 사랑",
+        "가성비 최고"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/879988d9ba0d.webp"
+    },
+    {
+      "id": "xian-45",
+      "name": "阿婆肉夹馍",
+      "nameEn": "아파 러우지아모 (러우지아모)",
+      "type": "local",
+      "cuisine": "로우지아모(중식 햄버거)",
+      "avgPrice": 86,
+      "rating": 4.8,
+      "address": "시안시 베이린구 푸드 스트리트 64번지",
+      "coordinates": {
+        "lat": 34.3794,
+        "lng": 108.9336
+      },
+      "phone": "+86 029 50962473",
+      "hours": "10:00-22:00",
+      "description": "시안 현지인이 추천하는 로우지아모 가게로, 맛이 정통하고 가격이 합리적입니다",
+      "dishHighlights": [
+        "수프 만두",
+        "biangbiang면",
+        "량피(냉면)"
+      ],
+      "tags": [
+        "줄 서서 기다리는 맛집",
+        "가정식 요리",
+        "가성비가 뛰어남"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/9ea869215e0e.webp"
+    },
+    {
+      "id": "xian-47",
+      "name": "길거리 량피",
+      "nameEn": "길거리 량피 (량피)",
+      "type": "local",
+      "cuisine": "량피(냉면)",
+      "avgPrice": 148,
+      "rating": 4.8,
+      "address": "시안시 옌타구 푸드 스트리트 59번지",
+      "coordinates": {
+        "lat": 34.3259,
+        "lng": 108.9318
+      },
+      "phone": "+86 029 74501617",
+      "hours": "06:00-14:00",
+      "description": "시안 현지인이 추천하는 량피 가게로, 정통 맛과 저렴한 가격을 자랑합니다",
+      "dishHighlights": [
+        "탕수육 만두",
+        "량피(냉면)",
+        "biangbiang면"
+      ],
+      "tags": [
+        "현지인들의 사랑을 받는 곳",
+        "오랜 전통의 동네 맛집",
+        "가성비가 뛰어남"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/09c2e0ca4d0b.webp"
+    },
+    {
+      "id": "xian-49",
+      "name": "길거리 비앙비앙면",
+      "nameEn": "거리쪽빵빵면 (biangbiang면)",
+      "type": "local",
+      "cuisine": "biangbiang면",
+      "avgPrice": 75,
+      "rating": 4.9,
+      "address": "시안시 웨이양구 푸드 스트리트 129번지",
+      "coordinates": {
+        "lat": 34.296,
+        "lng": 108.9636
+      },
+      "phone": "+86 029 60744774",
+      "hours": "17:00-02:00",
+      "description": "현지인이 추천하는 biangbiang면 전문점, 진짜 맛, 합리적인 가격",
+      "dishHighlights": [
+        "탕수육 만두",
+        "로우지아모(중국식 햄버거)",
+        "양러우 파오모(양고기 수프에 밀가루 떡을 넣은 요리)"
+      ],
+      "tags": [
+        "오랜 전통의 브랜드",
+        "오랜 세월 자리 잡은 동네 식당",
+        "현지인이 사랑하는 곳"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/96b0d1881374.webp"
+    },
+    {
+      "id": "xian-51",
+      "name": "老字号羊肉泡馍",
+      "nameEn": "오래된 양러우파오모 (양고기 수프에 넣은 납작빵)",
+      "type": "cafe",
+      "cuisine": "양러우파모 (양고기 수프에 부순 납작빵)",
+      "avgPrice": 77,
+      "rating": 4.8,
+      "address": "시안시 웨이양구 푸드 스트리트 7번지",
+      "coordinates": {
+        "lat": 34.3194,
+        "lng": 108.8924
+      },
+      "phone": "+86 029 77159156",
+      "hours": "17:00-02:00",
+      "description": "시안 현지인이 추천하는 양러우파모 가게로, 정통 맛과 합리적인 가격을 자랑합니다",
+      "dishHighlights": [
+        "탕두미 (수프 만두)",
+        "량피 (냉면)",
+        "로우지아모 (중식 햄버거)"
+      ],
+      "tags": [
+        "아트적인",
+        "조용한",
+        "애프터눈 티"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/3401f898127b.webp"
+    },
+    {
+      "id": "xian-53",
+      "name": "老字号凉皮",
+      "nameEn": "노자호 량피 (량피)",
+      "type": "local",
+      "cuisine": "량피 (냉면)",
+      "avgPrice": 42,
+      "rating": 4.8,
+      "address": "시안시 웨이양구 푸드 스트리트 40번지",
+      "coordinates": {
+        "lat": 34.3557,
+        "lng": 108.9423
+      },
+      "phone": "+86 029 45667119",
+      "hours": "06:00-14:00",
+      "description": "시안 현지인이 추천하는 량피 가게로, 정통 맛과 합리적인 가격을 자랑합니다",
+      "dishHighlights": [
+        "biangbiang면",
+        "러우자모",
+        "량피"
+      ],
+      "tags": [
+        "숨은 미식 명소",
+        "오래된 브랜드",
+        "가성비가 뛰어남"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/049b87fc84e0.webp"
+    },
+    {
+      "id": "xian-55",
+      "name": "西安味凉皮",
+      "nameEn": "시안식 량피 (량피)",
+      "type": "local",
+      "cuisine": "량피",
+      "avgPrice": 114,
+      "rating": 4.4,
+      "address": "시안시 웨이양구 푸드 스트리트 98번지",
+      "coordinates": {
+        "lat": 34.3612,
+        "lng": 108.9572
+      },
+      "phone": "+86 029 56724465",
+      "hours": "17:00-02:00",
+      "description": "시안 현지인이 추천하는 량피 가게로, 정통 맛과 합리적인 가격을 자랑합니다",
+      "dishHighlights": [
+        "러우자모",
+        "biangbiang면",
+        "수프 만두"
+      ],
+      "tags": [
+        "오래된 브랜드",
+        "오랜 전통의 동네 맛집",
+        "현지인이 사랑하는 곳"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/e7d406e63e83.webp"
+    },
+    {
+      "id": "xian-57",
+      "name": "골목 biangbiang면",
+      "nameEn": "골목빵빵면 (biangbiang면)",
+      "type": "street",
+      "cuisine": "biangbiang면",
+      "avgPrice": 28,
+      "rating": 4.2,
+      "address": "시안시 베이린구 푸드 스트리트 57번지",
+      "coordinates": {
+        "lat": 34.343,
+        "lng": 108.9296
+      },
+      "phone": "+86 029 33343920",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "현지인이 추천하는 biangbiang면 전문점, 진짜 맛, 합리적인 가격",
+      "dishHighlights": [
+        "수프 만두",
+        "량피(냉면)",
+        "양러우파오모(양고기 수프와 잘게 찢은 납작빵)"
+      ],
+      "tags": [
+        "간식",
+        "노점",
+        "야식"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/09c2e0ca4d0b.webp"
+    },
+    {
+      "id": "xian-59",
+      "name": "전통 양고기 파오모(양러우파오모)",
+      "nameEn": "전통 양고기 파오모(양고기 파오모)",
+      "type": "local",
+      "cuisine": "양러우파오모(양고기 수프와 잘게 찢은 납작빵)",
+      "avgPrice": 103,
+      "rating": 4.4,
+      "address": "시안시 롄후구 푸드 스트리트 144번지",
+      "coordinates": {
+        "lat": 34.3121,
+        "lng": 108.9176
+      },
+      "phone": "+86 029 44961678",
+      "hours": "10:00-22:00",
+      "description": "시안 현지인이 추천하는 양러우파오모 전문점으로, 정통 맛과 합리적인 가격을 자랑합니다",
+      "dishHighlights": [
+        "로우지아모(중국식 햄버거)",
+        "수프 만두",
+        "양러우파오모(양고기 수프와 잘게 찢은 납작빵)"
+      ],
+      "tags": [
+        "현지인 사랑",
+        "오랜 전통 브랜드",
+        "숨은 미식 명소"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/a547378e7a1f.webp"
+    },
+    {
+      "id": "xian-61",
+      "name": "길거리 비앙비앙면",
+      "nameEn": "거리쪽빵빵면 (biangbiang면)",
+      "type": "local",
+      "cuisine": "biangbiang면",
+      "avgPrice": 76,
+      "rating": 4.6,
+      "address": "시안시 롄후구 푸드 스트리트 38번지",
+      "coordinates": {
+        "lat": 34.3619,
+        "lng": 108.9164
+      },
+      "phone": "+86 029 80023727",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "현지인이 추천하는 biangbiang면 전문점, 진짜 맛, 합리적인 가격",
+      "dishHighlights": [
+        "biangbiang면",
+        "로우지아모(중식 햄버거)",
+        "수제 만두"
+      ],
+      "tags": [
+        "오랜 전통의 동네 맛집",
+        "가정식 요리",
+        "오래된 브랜드"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/a52095e99f36.webp"
+    },
+    {
+      "id": "xian-63",
+      "name": "전통 루지아모(러우지아모)",
+      "nameEn": "전통 루지아모(고기 루지아모)",
+      "type": "street",
+      "cuisine": "로우지아모(중식 햄버거)",
+      "avgPrice": 33,
+      "rating": 4,
+      "address": "시안시 롄후구 푸드 스트리트 51번지",
+      "coordinates": {
+        "lat": 34.2925,
+        "lng": 108.9575
+      },
+      "phone": "+86 029 47707241",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "시안 현지인이 추천하는 로우지아모 가게로, 맛이 정통하고 가격이 합리적입니다",
+      "dishHighlights": [
+        "량피(냉면)",
+        "로우지아모(중식 햄버거)",
+        "수제 만두"
+      ],
+      "tags": [
+        "노점",
+        "야시장",
+        "간식"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/4fcc219f3aae.webp"
+    },
+    {
+      "id": "xian-65",
+      "name": "노포의 국물 만두",
+      "nameEn": "노포의 국물 만두(국물 만두)",
+      "type": "local",
+      "cuisine": "국물이 들어 있는 찐빵",
+      "avgPrice": 134,
+      "rating": 4.6,
+      "address": "중국 산시성 시안시 신청구 푸드 스트리트 183번지",
+      "coordinates": {
+        "lat": 34.3422,
+        "lng": 108.9443
+      },
+      "phone": "+86 029 24254571",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "시안 현지인이 추천하는 수제 만두 가게로, 맛이 정통하고 가격이 저렴합니다",
+      "dishHighlights": [
+        "국물 만두",
+        "량피(냉면)",
+        "양러우파오모(양고기 수프와 잘게 찢은 납작빵)"
+      ],
+      "tags": [
+        "현지인이 사랑하는 맛",
+        "숨은 미식 명소",
+        "가정식 요리"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/1642362ad176.webp"
+    },
+    {
+      "id": "xian-67",
+      "name": "老街肉夹馍",
+      "nameEn": "올드스트리트 러우자모 (러우자모)",
+      "type": "local",
+      "cuisine": "루지아모(중식 햄버거)",
+      "avgPrice": 97,
+      "rating": 4.1,
+      "address": "중국 산시성 시안시 롄후구 푸드 스트리트 105번지",
+      "coordinates": {
+        "lat": 34.3152,
+        "lng": 108.9609
+      },
+      "phone": "+86 029 45899272",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "시안 현지인이 추천하는 루지아모 가게로, 정통 맛과 합리적인 가격을 자랑합니다",
+      "dishHighlights": [
+        "biangbiang면",
+        "양러우파오모(양고기 수프와 잘게 찢은 납작빵)",
+        "국물 만두"
+      ],
+      "tags": [
+        "숨은 미식 명소",
+        "현지인이 사랑하는 맛",
+        "오랜 전통을 가진 동네 맛집"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/8d71a0b05999.webp"
+    },
+    {
+      "id": "xian-69",
+      "name": "옛 거리의 국물 만두",
+      "nameEn": "옛 거리의 국물 만두(국물 만두)",
+      "type": "local",
+      "cuisine": "샤오롱바오",
+      "avgPrice": 148,
+      "rating": 4.7,
+      "address": "시안시 옌타구 푸드스트리트 46번지",
+      "coordinates": {
+        "lat": 34.3377,
+        "lng": 108.8929
+      },
+      "phone": "+86 029 11136338",
+      "hours": "06:00-14:00",
+      "description": "시안 현지인이 추천하는 샤오롱바오 맛집으로, 정통 맛과 합리적인 가격을 자랑합니다",
+      "dishHighlights": [
+        "양러우파오모(양고기 수프에 난을 찢어 넣은 요리)",
+        "량피(냉면)",
+        "샤오롱바오"
+      ],
+      "tags": [
+        "숨은 미식 명소",
+        "대기열의 여왕",
+        "가성비 최고"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/508ac032bcf0.webp"
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "air",
+        "from": "주요 국내 공항, 증가하는 국제 노선",
+        "to": "시안 셴양 국제공항 (XIY)",
+        "duration": "출발지에 따라 다름",
+        "price": "500-3000¥",
+        "frequency": "매일 여러 편의 항공편",
+        "tips": "공항 지하철이 도심과 연결됩니다. 많은 도시에서 고속철도를 이용하는 것이 더 편리할 수 있습니다."
+      },
+      {
+        "type": "train",
+        "from": "베이징 (4시간), 상하이 (6시간), 청두 (3시간)",
+        "to": "시안 북역",
+        "duration": "3-6시간",
+        "price": "300-800¥",
+        "frequency": "고속철도 자주 운행",
+        "tips": "고속철도가 가장 빠르고 편안합니다. 시안에는 여러 역이 있으니 목적지를 주의 깊게 확인하세요."
+      }
+    ],
+    "local": {
+      "metro": [
+        "주요 명소를 연결하는 9개 노선",
+        "단일 승차: 2-9위안",
+        "주요 역에 영어 표지판",
+        "2호선과 4호선이 관광객에게 가장 유용"
+      ],
+      "bus": [
+        "광범위한 네트워크이지만 혼잡함",
+        "노선 번호는 아라비아 숫자",
+        "영어 정보를 위해 'Xi'an Metro' 앱 다운로드"
+      ],
+      "taxi": [
+        "기본 요금: 8.5위안 (첫 2km)",
+        "Didi 앱은 영어로 잘 작동",
+        "공항 택시 카운터는 공식적이고 신뢰할 수 있음"
+      ],
+      "bike": [
+        "Hellobike와 Mobike 이용 가능",
+        "잠금 해제: 1위안",
+        "해안 도시만큼 흔하지 않음",
+        "자전거 도로가 개선되고 있습니다"
+      ]
+    }
+  },
+  "hotels": [
+    {
+      "name": "시안 샹그릴라 호텔",
+      "nameEn": "Shangri-La Hotel Xi'an",
+      "budget": "luxury",
+      "priceRange": "1박에 1500-3000위안",
+      "address": "베이린 구 펜샹 38번지",
+      "coordinates": {
+        "lat": 34.2525,
+        "lng": 108.9455
+      },
+      "rating": 4.8,
+      "highlights": [
+        "종탑 근처 중심부 위치",
+        "훌륭한 서비스",
+        "좋은 조식"
+      ],
+      "bookingTips": "도시 전망을 위해 높은 층을 요청하세요."
+    },
+    {
+      "name": "시안 리츠칼튼 호텔",
+      "nameEn": "The Ritz-Carlton Xi'an",
+      "budget": "luxury",
+      "priceRange": "1박에 1800-3500위안",
+      "address": "옌타 구",
+      "coordinates": {
+        "lat": 34.2295,
+        "lng": 108.8985
+      },
+      "rating": 4.9,
+      "highlights": [
+        "모던한 럭셔리",
+        "훌륭한 스파",
+        "프리미엄 다이닝"
+      ],
+      "bookingTips": "출장 여행객에게 가장 좋으며, 구시가지에서 약간 떨어져 있습니다."
+    },
+    {
+      "name": "시안 셰라톤 그랜드 호텔",
+      "nameEn": "Sheraton Xi'an Hotel",
+      "budget": "mid",
+      "priceRange": "1박에 600-1200위안",
+      "address": "신청구 펑하오로 12번지",
+      "coordinates": {
+        "lat": 34.2665,
+        "lng": 108.9395
+      },
+      "rating": 4.5,
+      "highlights": [
+        "성벽 인근",
+        "좋은 위치",
+        "신뢰할 수 있는 브랜드"
+      ],
+      "bookingTips": "주말 요금이 종종 더 저렴합니다."
+    },
+    {
+      "name": "시안 종루 호텔",
+      "nameEn": "Xi'an Bell Tower Hotel",
+      "budget": "mid",
+      "priceRange": "400-800위안/박",
+      "address": "베이린구 난다지에 3번지",
+      "coordinates": {
+        "lat": 34.2615,
+        "lng": 108.9445
+      },
+      "rating": 4.4,
+      "highlights": [
+        "최고의 도심 위치",
+        "관광 명소에서 도보 거리",
+        "가성비 좋음"
+      ],
+      "bookingTips": "첫 방문객에게 가장 좋은 위치입니다."
+    },
+    {
+      "name": "시안 인자 화원 호텔",
+      "nameEn": "Yin Jia Garden Hotel",
+      "budget": "budget",
+      "priceRange": "1박에 250-500위안",
+      "address": "남문 근처",
+      "coordinates": {
+        "lat": 34.2565,
+        "lng": 108.9475
+      },
+      "rating": 4.3,
+      "highlights": [
+        "성벽 남문 인근",
+        "전통 안뜰",
+        "가성비 좋음"
+      ],
+      "bookingTips": "독특한 경험을 위해 안뜰 객실을 예약하세요."
+    },
+    {
+      "name": "시안 웨스틴 호텔",
+      "nameEn": "The Westin Xi'an",
+      "budget": "luxury",
+      "priceRange": "1박에 1200-2200위안",
+      "address": "옌타구 츠언루 66호",
+      "coordinates": {
+        "lat": 34.2285,
+        "lng": 108.9495
+      },
+      "rating": 4.6,
+      "highlights": [
+        "대안탑 인근",
+        "현대적인 시설",
+        "비즈니스 센터 우수"
+      ],
+      "bookingTips": "탑 전망 객실을 요청하세요."
+    },
+    {
+      "name": "시안 하얏트 호텔",
+      "nameEn": "Hyatt Regency Xi'an",
+      "budget": "luxury",
+      "priceRange": "1박 1100-2000위안",
+      "address": "옌타구 가오신루 282호",
+      "coordinates": {
+        "lat": 34.2285,
+        "lng": 108.9115
+      },
+      "rating": 4.7,
+      "highlights": [
+        "넓은 객실",
+        "좋은 위치",
+        "믿을 수 있는 브랜드"
+      ],
+      "bookingTips": "주말 패키지 이용 가능합니다."
+    },
+    {
+      "name": "시안 힐튼 호텔",
+      "nameEn": "Hilton Xi'an",
+      "budget": "luxury",
+      "priceRange": "1박에 900-1800위안",
+      "address": "신청구 동로 199번지",
+      "coordinates": {
+        "lat": 34.2735,
+        "lng": 108.9515
+      },
+      "rating": 4.5,
+      "highlights": [
+        "기차역 인근",
+        "대형 호텔",
+        "좋은 조식"
+      ],
+      "bookingTips": "기차로 도착하는 여행자에게 가장 적합합니다."
+    },
+    {
+      "name": "시안 JW 메리어트 호텔",
+      "nameEn": "JW Marriott Hotel Xi'an",
+      "budget": "luxury",
+      "priceRange": "1박에 1400-2600위안",
+      "address": "웨이양구 옌밍 호수",
+      "coordinates": {
+        "lat": 34.3115,
+        "lng": 108.9365
+      },
+      "rating": 4.7,
+      "highlights": [
+        "모던한 디자인",
+        "호수 전망",
+        "프리미엄 서비스"
+      ],
+      "bookingTips": "라운지 이용을 위해 이그제큐티브 룸을 예약하세요."
+    },
+    {
+      "name": "시안 소피텔 호텔",
+      "nameEn": "Sofitel Xi'an",
+      "budget": "luxury",
+      "priceRange": "1박 1000-1900위안",
+      "address": "옌타구 창안 서로 319번지",
+      "coordinates": {
+        "lat": 34.2265,
+        "lng": 108.9345
+      },
+      "rating": 4.6,
+      "highlights": [
+        "프랑스 럭셔리 브랜드",
+        "중심부 위치",
+        "좋은 다이닝"
+      ],
+      "bookingTips": "주말 프로모션 이용 가능합니다."
+    },
+    {
+      "name": "시안 톈위 카이라이 그랜드 호텔",
+      "nameEn": "Grand Kaileen Hotel Xi'an",
+      "budget": "mid",
+      "priceRange": "¥500-900/박",
+      "address": "옌타이구 옌인로 15번지",
+      "coordinates": {
+        "lat": 34.2255,
+        "lng": 108.9455
+      },
+      "rating": 4.4,
+      "highlights": [
+        "산시 박물관 인근",
+        "가성비 좋음",
+        "일관된 품질"
+      ],
+      "bookingTips": "박물관 방문에 가장 적합합니다."
+    },
+    {
+      "name": "시안 지앤궈 호텔",
+      "nameEn": "Jianguo Hotel Xi'an",
+      "budget": "mid",
+      "priceRange": "¥450-800/박",
+      "address": "베이린구 유이동로 2번지",
+      "coordinates": {
+        "lat": 34.2385,
+        "lng": 108.9425
+      },
+      "rating": 4.5,
+      "highlights": [
+        "대학 인근",
+        "교통 편리",
+        "믿을 수 있는 서비스"
+      ],
+      "bookingTips": "더 나은 요금을 위해 직접 예약하세요."
+    },
+    {
+      "name": "시안 톈랑 신시대 호텔",
+      "nameEn": "Talent Hotel Xi'an",
+      "budget": "mid",
+      "priceRange": "1박 400-750위안",
+      "address": "옌타이구 가오신로 18번지",
+      "coordinates": {
+        "lat": 34.2325,
+        "lng": 108.9095
+      },
+      "rating": 4.4,
+      "highlights": [
+        "좋은 위치",
+        "모던한 객실",
+        "가성비가 좋음"
+      ],
+      "bookingTips": "출장 여행객에게 가장 적합합니다."
+    },
+    {
+      "name": "시안 진화 호텔",
+      "nameEn": "Jinhua Hotel Xi'an",
+      "budget": "mid",
+      "priceRange": "1박에 350~650위안",
+      "address": "베이린구 유이로 555번지",
+      "coordinates": {
+        "lat": 34.2395,
+        "lng": 108.9365
+      },
+      "rating": 4.3,
+      "highlights": [
+        "대학가 인근",
+        "현지 분위기",
+        "저렴한 가격"
+      ],
+      "bookingTips": "장기 체류에 적합합니다."
+    },
+    {
+      "name": "시안 아토 호텔",
+      "nameEn": "Atour Hotel Xi'an",
+      "budget": "budget",
+      "priceRange": "280-500위안/박",
+      "address": "시내 여러 지점",
+      "coordinates": {
+        "lat": 34.2615,
+        "lng": 108.9485
+      },
+      "rating": 4.6,
+      "highlights": [
+        "로비에 북 라이브러리",
+        "고품질 침구",
+        "모던 차이니즈 디자인"
+      ],
+      "bookingTips": "일관된 품질을 제공하는 인기 브랜드."
+    },
+    {
+      "name": "시안 루자 호텔",
+      "nameEn": "Home Inn Xi'an",
+      "budget": "budget",
+      "priceRange": "150-300위안/박",
+      "address": "복수 지점",
+      "coordinates": {
+        "lat": 34.2655,
+        "lng": 108.9445
+      },
+      "rating": 4.1,
+      "highlights": [
+        "저렴한 가격",
+        "일관된 품질",
+        "좋은 위치"
+      ],
+      "bookingTips": "초저예산 여행자에게 최적."
+    },
+    {
+      "name": "시안 화팅 호텔",
+      "nameEn": "Jiji Hotel Xi'an",
+      "budget": "budget",
+      "priceRange": "1박 220-400위안",
+      "address": "복수 지점",
+      "coordinates": {
+        "lat": 34.2595,
+        "lng": 108.9505
+      },
+      "rating": 4.4,
+      "highlights": [
+        "화텅 브랜드 품질",
+        "모던한 객실",
+        "가성비 좋음"
+      ],
+      "bookingTips": "가격과 품질의 균형이 좋음."
+    },
+    {
+      "name": "시안 성벽 민숙",
+      "nameEn": "City Wall B&B",
+      "budget": "budget",
+      "priceRange": "¥200-400/박",
+      "address": "남문 근처",
+      "coordinates": {
+        "lat": 34.2555,
+        "lng": 108.9485
+      },
+      "rating": 4.5,
+      "highlights": [
+        "전통 안뜰",
+        "성벽 인근",
+        "현지 체험"
+      ],
+      "bookingTips": "최상의 선택을 위해 일찍 예약하세요."
+    }
+  ],
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "표준 결제 방법, 널리 사용됨",
+      "howToUse": [
+        "도착 전에 다운로드하세요",
+        "국제 카드 등록",
+        "QR 코드 결제"
+      ],
+      "tips": [
+        "시안은 관광객에게 친화적입니다 - 많은 곳에서 카드를 받습니다",
+        "하지만 시장과 작은 상점에서는 알리페이가 여전히 필수입니다"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "알리페이와 함께 흔히 사용됨",
+      "howToUse": [
+        "위챗 앱 필요",
+        "설정에서 카드 연결"
+      ],
+      "tips": [
+        "두 앱 모두 시안에서 동일하게 유용합니다",
+        "디디는 위챗이 필요합니다."
+      ]
+    },
+    {
+      "method": "Cash (RMB)",
+      "icon": "cash",
+      "description": "전통 시장과 작은 상점에서 유용함",
+      "howToUse": [
+        "길거리 음식을 위해 작은 지폐를 준비하세요",
+        "모든 bank에 ATM이 있습니다"
+      ],
+      "tips": [
+        "무슬림 쿼터 상점들은 대부분 cash입니다",
+        "관광 명소에는 공식 가격표가 있습니다"
+      ]
+    }
+  ],
+  "culturalTips": [
+    {
+      "category": "food",
+      "title": "산시 요리",
+      "content": "시안은 biangbiang면, 루지아모, 양파모 등 유명한 중국 음식의 탄생지입니다. 무슬림 지구에서는 특별한 회(중국 무슬림) 요리를 즐길 수 있습니다.",
+      "importance": "high"
+    },
+    {
+      "category": "dress",
+      "title": "유적지 방문 시 단정한 복장",
+      "content": "종교 sites와 병마용을 방문할 때는 겸손하고 존중하는 복장을 해야 합니다. 어깨와 무릎을 가려야 합니다.",
+      "importance": "medium"
+    },
+    {
+      "category": "history",
+      "title": "역사적 맥락을 이해하는 것이 중요",
+      "content": "시안은 여러 왕조의 수도였습니다. 중국 역사를 이해하면 경험이 더욱 풍부해집니다. 오디오 가이드 이용을 권장합니다.",
+      "importance": "medium"
+    },
+    {
+      "category": "nightlife",
+      "title": "밤의 성벽",
+      "content": "시안의 성벽은 밤에 남문의 대형 음악 분수 쇼와 함께 압도적입니다. 인근 무슬림 지구에서는 석면에 루지아모, 양꼬치, biangbiang면 등을 판매하는 수백 개의 음식점으로 활기를 띱니다.",
+      "importance": "medium"
+    },
+    {
+      "category": "silk-road",
+      "title": "실크로드 유산",
+      "content": "시안은 고대 비단길의 동쪽 종착점이었습니다. 시안 대사찰은 중앙아시아와 이슬람 세계와의 역사적 연결을 보여줍니다.",
+      "importance": "medium"
+    },
+    {
+      "category": "terracotta",
+      "title": "병마용의 의미",
+      "content": "병마용은 진시황의 불멸에 대한 추구를 나타냅니다. 각 장수의 얼굴은 독특하여 완전히 같은 얼굴은 없습니다.",
+      "importance": "high"
+    },
+    {
+      "category": "muslim-culture",
+      "title": "후이(회) 이슬람 문화",
+      "content": "무슬림 지구(회민가)는 1,000년 이상 이곳에 살아온 시안의 회무슬림 공동체의 근거지입니다. 그들은 이슬람 식단법을 따릅니다 - 돼지고기를 먹지 않습니다.",
+      "importance": "high"
+    },
+    {
+      "category": "noodle-culture",
+      "title": "면 문화",
+      "content": "산시 사람들은 국수를 매우 중요시합니다. Biangbiang면(띠국수)은 현지 특산품입니다 - 'biang'자는 가장 복잡한 중국 문자 중 하나입니다.",
+      "importance": "medium"
+    },
+    {
+      "category": "qin-dynasty",
+      "title": "진나라의 유산",
+      "content": "시안(장안)은 중국을 최초로 통일한 진 왕조의 수도였습니다. 병마용, 성벽, 역사 유적들이 이 유산을 반영합니다.",
+      "importance": "medium"
+    },
+    {
+      "category": "tang-dynasty",
+      "title": "당나라의 황금시대",
+      "content": "당 왕조(618-907년)는 중국의 황금기로 여겨집니다. 시안은 세계 최대 도시로, 비단길로부터 영향을 받은 국제적 문화를 가지고 있었습니다.",
+      "importance": "medium"
+    },
+    {
+      "category": "biking-culture",
+      "title": "자전거로 성벽 타기",
+      "content": "14km의 성벽을 한 바퀴 도는 자전거 여행은 시안의 전통입니다. 남문이나 다른 문에서 자전거를 빌리세요. 해질녘에 도시를 한눈에 조망하는 것이 가장 좋습니다.",
+      "importance": "medium"
+    },
+    {
+      "category": "language",
+      "title": "지역 사투리",
+      "content": "시안 방언은 독특한 특징이 있으며, 문장 끝에 접미사 '더이'를 사용합니다. 많은 현지인들은 특정 한자에 대해 여전히 전통적인 발음을 사용합니다.",
+      "importance": "low"
+    },
+    {
+      "category": "dumpling-culture",
+      "title": "교자 만찬",
+      "content": "시안은 만두(자오쯔) 요리로 유명한가요? 더파창의 만두 연회를 시도해 보세요. 한 끼에 100가지 이상을 맛볼 수 있습니다.",
+      "importance": "medium"
+    },
+    {
+      "category": "tea-culture",
+      "title": "차 문화",
+      "content": "중국 남부만큼 차에 특화되어 있지는 않지만, 시안에는 독특한 차 전통이 있습니다. 현지인들은 허브차와 유명한 연꽃잎 차를 즐깁니다.",
+      "importance": "low"
+    },
+    {
+      "category": "foot-massage",
+      "title": "발 마사지 문화",
+      "content": "많은 중국 도시들처럼, 시안에는 많은 발 마사지 가게가 있습니다. 병마용과 성벽을 걸은 후, 발 마사지는 아늑한 휴식이 됩니다.",
+      "importance": "low"
+    },
+    {
+      "category": "superstitions",
+      "title": "역사적 미신",
+      "content": "영혼과 조상에 대한 전통적 신앙이 여전히 존재합니다. 달을 가리키지 마세요(달신에게 불경), 특정 축제 날 머리카락을 자르는 것을 피하세요.",
+      "importance": "low"
+    },
+    {
+      "category": "festivals",
+      "title": "지역 축제",
+      "content": "춘절 기간 동안 시안의 후이민 거리에는 특별한 음식이 있습니다. 고악 종고제는 고대 음악의 전통을 기념합니다.",
+      "importance": "medium"
+    },
+    {
+      "category": "architecture",
+      "title": "고대 건축",
+      "content": "시안의 건축은 여러 왕조를 반영합니다. 종루와 고루(명나라)는 상징입니다. 한나라와 당나라는 궁전 유적에 그 흔적을 남겼습니다.",
+      "importance": "medium"
+    },
+    {
+      "category": "hot-springs",
+      "title": "온천 문화",
+      "content": "화칭지는 당나라 때부터 휴양지였습니다. 현종 황제는 총애하는 양귀비를 위해 이곳에 궁전을 지었습니다.",
+      "importance": "medium"
+    },
+    {
+      "category": "handicrafts",
+      "title": "전통 공예",
+      "content": "시안은 전통 공예품으로 유명합니다. 그림자 인형, 종이 쪼개기, 유약 도기 등이 있습니다. 당 왕조 공예품은 독특한 기념품입니다.",
+      "importance": "medium"
+    },
+    {
+      "category": "emperor-tombs",
+      "title": "황제릉 문화",
+      "content": "시안은 여러 왕조의 황릉으로 둘러싸여 있습니다. 도시 북서쪽 지역에는 당대 황릉 73개 중 9개가 있습니다.",
+      "importance": "low"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "西安急救中心",
+      "nameEn": "Xi'an Emergency Center",
+      "phone": "120",
+      "address": "광저우",
+      "nameKo": "시안 응급의료센터"
+    },
+    {
+      "type": "police",
+      "name": "西安市公安局",
+      "nameEn": "Xi'an Public Security Bureau",
+      "phone": "110",
+      "address": "광저우",
+      "nameKo": "시안시 공안국"
+    },
+    {
+      "type": "hospital",
+      "name": "시안 국제 의료 센터",
+      "nameEn": "Xi'an International Medical Center",
+      "phone": "+86 29 969 99",
+      "address": "광저우",
+      "coordinates": {
+        "lat": 34.2245,
+        "lng": 108.8845
+      },
+      "notes": "싱가포르 시민용",
+      "nameKo": "시안 국제의료센터"
+    },
+    {
+      "type": "hospital",
+      "name": "西安交通大学第一附属医院",
+      "nameEn": "First Affiliated Hospital of Xi'an Jiaotong University",
+      "phone": "+86 29 8532 3314",
+      "address": "광저우",
+      "coordinates": {
+        "lat": 34.2395,
+        "lng": 108.9345
+      },
+      "notes": "싱가포르 시민용",
+      "nameKo": "시안 자오퉁대학 제1부속병원"
+    },
+    {
+      "type": "embassy",
+      "name": "美国驻西安总领事馆",
+      "nameEn": "US Consulate General Xi'an",
+      "phone": "+86 29 8723 0666",
+      "address": "광저우",
+      "coordinates": {
+        "lat": 34.2665,
+        "lng": 108.9395
+      },
+      "notes": "싱가포르 시민용",
+      "nameKo": "주시안 미국 총영사관"
+    },
+    {
+      "type": "fire",
+      "name": "西安消防支队",
+      "nameEn": "Xi'an Fire Department",
+      "phone": "119",
+      "address": "광저우",
+      "nameKo": "시안 소방서"
+    },
+    {
+      "type": "hospital",
+      "name": "陕西省人民医院",
+      "nameEn": "Shaanxi Provincial People's Hospital",
+      "phone": "+86 29 8525 1331",
+      "address": "광저우",
+      "coordinates": {
+        "lat": 34.2395,
+        "lng": 108.9385
+      },
+      "notes": "싱가포르 시민용",
+      "nameKo": "산시성 인민병원"
+    },
+    {
+      "type": "hospital",
+      "name": "西京医院",
+      "nameEn": "Xijing Hospital",
+      "phone": "+86 29 8477 1454",
+      "address": "광저우",
+      "coordinates": {
+        "lat": 34.2635,
+        "lng": 108.9245
+      },
+      "notes": "싱가포르 시민용",
+      "nameKo": "시징병원"
+    },
+    {
+      "type": "embassy",
+      "name": "英国驻西安总领事馆",
+      "nameEn": "British Consulate General Xi'an",
+      "phone": "+86 29 8722 0949",
+      "address": "광저우",
+      "coordinates": {
+        "lat": 34.2355,
+        "lng": 108.9515
+      },
+      "notes": "싱가포르 시민용",
+      "nameKo": "주시안 영국 총영사관"
+    },
+    {
+      "type": "embassy",
+      "name": "주시안 프랑스 총영사관",
+      "nameEn": "French Consulate General Xi'an",
+      "phone": "+86 29 8767 2686",
+      "address": "광저우",
+      "coordinates": {
+        "lat": 34.2515,
+        "lng": 108.9495
+      },
+      "notes": "싱가포르 시민용",
+      "nameKo": "주시안 프랑스 총영사관"
+    },
+    {
+      "type": "embassy",
+      "name": "주시안 독일연방공화국 총영사관",
+      "nameEn": "German Consulate General Xi'an",
+      "phone": "+86 29 8769 9626",
+      "address": "광저우",
+      "coordinates": {
+        "lat": 34.2395,
+        "lng": 108.9365
+      },
+      "notes": "싱가포르 시민용",
+      "nameKo": "주시안 독일 총영사관"
+    },
+    {
+      "type": "embassy",
+      "name": "日本驻西安总领事馆",
+      "nameEn": "Japanese Consulate General Xi'an",
+      "phone": "+86 29 8832 3000",
+      "address": "광저우",
+      "coordinates": {
+        "lat": 34.2315,
+        "lng": 108.9465
+      },
+      "notes": "싱가포르 시민용",
+      "nameKo": "주시안 일본 총영사관"
+    },
+    {
+      "type": "embassy",
+      "name": "韩国驻西安总领事馆",
+      "nameEn": "Korean Consulate General Xi'an",
+      "phone": "+86 29 8832 3800",
+      "address": "광저우",
+      "coordinates": {
+        "lat": 34.2515,
+        "lng": 108.9485
+      },
+      "notes": "싱가포르 시민용",
+      "nameKo": "주시안 한국 총영사관"
+    },
+    {
+      "type": "tourist-complaint",
+      "name": "시안 관광 불만 신고 핫라인",
+      "nameEn": "Xi'an Tourism Complaint Hotline",
+      "phone": "+86 29 8726 2626",
+      "address": "광저우",
+      "notes": "싱가포르 시민용",
+      "nameKo": "시안 관광 불만 신고 핫라인"
+    }
+  ],
+  "quickFacts": {
+    "language": "중국어 (북경어)",
+    "currency": "인민폐 (CNY/RMB)",
+    "visa": "대부분의 국적은 비자가 필요합니다. 자격이 있는 경우 공항에서 72시간 환승 비자를 받을 수 있습니다.",
+    "timeZone": "UTC+8 (중국 표준시)",
+    "electricity": "220V/50Hz, A/I 타입 플러그",
+    "water": "수돗물은 마실 수 있지만 병물을 권장합니다"
   }
- },
- "hotels": [
-  {
-   "name": "시안 샹그릴라 호텔",
-   "nameEn": "Shangri-La Hotel Xi'an",
-   "budget": "luxury",
-   "priceRange": "1박에 1500-3000위안",
-   "address": "베이린 구 펜샹 38번지",
-   "coordinates": {
-    "lat": 34.2525,
-    "lng": 108.9455
-   },
-   "rating": 4.8,
-   "highlights": [
-    "종탑 근처 중심부 위치",
-    "훌륭한 서비스",
-    "좋은 조식"
-   ],
-   "bookingTips": "도시 전망을 위해 높은 층을 요청하세요."
-  },
-  {
-   "name": "시안 리츠칼튼 호텔",
-   "nameEn": "The Ritz-Carlton Xi'an",
-   "budget": "luxury",
-   "priceRange": "1박에 1800-3500위안",
-   "address": "옌타 구",
-   "coordinates": {
-    "lat": 34.2295,
-    "lng": 108.8985
-   },
-   "rating": 4.9,
-   "highlights": [
-    "모던한 럭셔리",
-    "훌륭한 스파",
-    "프리미엄 다이닝"
-   ],
-   "bookingTips": "출장 여행객에게 가장 좋으며, 구시가지에서 약간 떨어져 있습니다."
-  },
-  {
-   "name": "시안 셰라톤 그랜드 호텔",
-   "nameEn": "Sheraton Xi'an Hotel",
-   "budget": "mid",
-   "priceRange": "1박에 600-1200위안",
-   "address": "신청구 펑하오로 12번지",
-   "coordinates": {
-    "lat": 34.2665,
-    "lng": 108.9395
-   },
-   "rating": 4.5,
-   "highlights": [
-    "성벽 인근",
-    "좋은 위치",
-    "신뢰할 수 있는 브랜드"
-   ],
-   "bookingTips": "주말 요금이 종종 더 저렴합니다."
-  },
-  {
-   "name": "시안 종루 호텔",
-   "nameEn": "Xi'an Bell Tower Hotel",
-   "budget": "mid",
-   "priceRange": "400-800위안/박",
-   "address": "베이린구 난다지에 3번지",
-   "coordinates": {
-    "lat": 34.2615,
-    "lng": 108.9445
-   },
-   "rating": 4.4,
-   "highlights": [
-    "최고의 도심 위치",
-    "관광 명소에서 도보 거리",
-    "가성비 좋음"
-   ],
-   "bookingTips": "첫 방문객에게 가장 좋은 위치입니다."
-  },
-  {
-   "name": "시안 인자 화원 호텔",
-   "nameEn": "Yin Jia Garden Hotel",
-   "budget": "budget",
-   "priceRange": "1박에 250-500위안",
-   "address": "남문 근처",
-   "coordinates": {
-    "lat": 34.2565,
-    "lng": 108.9475
-   },
-   "rating": 4.3,
-   "highlights": [
-    "성벽 남문 인근",
-    "전통 안뜰",
-    "가성비 좋음"
-   ],
-   "bookingTips": "독특한 경험을 위해 안뜰 객실을 예약하세요."
-  },
-  {
-   "name": "시안 웨스틴 호텔",
-   "nameEn": "The Westin Xi'an",
-   "budget": "luxury",
-   "priceRange": "1박에 1200-2200위안",
-   "address": "옌타구 츠언루 66호",
-   "coordinates": {
-    "lat": 34.2285,
-    "lng": 108.9495
-   },
-   "rating": 4.6,
-   "highlights": [
-    "대안탑 인근",
-    "현대적인 시설",
-    "비즈니스 센터 우수"
-   ],
-   "bookingTips": "탑 전망 객실을 요청하세요."
-  },
-  {
-   "name": "시안 하얏트 호텔",
-   "nameEn": "Hyatt Regency Xi'an",
-   "budget": "luxury",
-   "priceRange": "1박 1100-2000위안",
-   "address": "옌타구 가오신루 282호",
-   "coordinates": {
-    "lat": 34.2285,
-    "lng": 108.9115
-   },
-   "rating": 4.7,
-   "highlights": [
-    "넓은 객실",
-    "좋은 위치",
-    "믿을 수 있는 브랜드"
-   ],
-   "bookingTips": "주말 패키지 이용 가능합니다."
-  },
-  {
-   "name": "시안 힐튼 호텔",
-   "nameEn": "Hilton Xi'an",
-   "budget": "luxury",
-   "priceRange": "1박에 900-1800위안",
-   "address": "신청구 동로 199번지",
-   "coordinates": {
-    "lat": 34.2735,
-    "lng": 108.9515
-   },
-   "rating": 4.5,
-   "highlights": [
-    "기차역 인근",
-    "대형 호텔",
-    "좋은 조식"
-   ],
-   "bookingTips": "기차로 도착하는 여행자에게 가장 적합합니다."
-  },
-  {
-   "name": "시안 JW 메리어트 호텔",
-   "nameEn": "JW Marriott Hotel Xi'an",
-   "budget": "luxury",
-   "priceRange": "1박에 1400-2600위안",
-   "address": "웨이양구 옌밍 호수",
-   "coordinates": {
-    "lat": 34.3115,
-    "lng": 108.9365
-   },
-   "rating": 4.7,
-   "highlights": [
-    "모던한 디자인",
-    "호수 전망",
-    "프리미엄 서비스"
-   ],
-   "bookingTips": "라운지 이용을 위해 이그제큐티브 룸을 예약하세요."
-  },
-  {
-   "name": "시안 소피텔 호텔",
-   "nameEn": "Sofitel Xi'an",
-   "budget": "luxury",
-   "priceRange": "1박 1000-1900위안",
-   "address": "옌타구 창안 서로 319번지",
-   "coordinates": {
-    "lat": 34.2265,
-    "lng": 108.9345
-   },
-   "rating": 4.6,
-   "highlights": [
-    "프랑스 럭셔리 브랜드",
-    "중심부 위치",
-    "좋은 다이닝"
-   ],
-   "bookingTips": "주말 프로모션 이용 가능합니다."
-  },
-  {
-   "name": "시안 톈위 카이라이 그랜드 호텔",
-   "nameEn": "Grand Kaileen Hotel Xi'an",
-   "budget": "mid",
-   "priceRange": "¥500-900/박",
-   "address": "옌타이구 옌인로 15번지",
-   "coordinates": {
-    "lat": 34.2255,
-    "lng": 108.9455
-   },
-   "rating": 4.4,
-   "highlights": [
-    "산시 박물관 인근",
-    "가성비 좋음",
-    "일관된 품질"
-   ],
-   "bookingTips": "박물관 방문에 가장 적합합니다."
-  },
-  {
-   "name": "시안 지앤궈 호텔",
-   "nameEn": "Jianguo Hotel Xi'an",
-   "budget": "mid",
-   "priceRange": "¥450-800/박",
-   "address": "베이린구 유이동로 2번지",
-   "coordinates": {
-    "lat": 34.2385,
-    "lng": 108.9425
-   },
-   "rating": 4.5,
-   "highlights": [
-    "대학 인근",
-    "교통 편리",
-    "믿을 수 있는 서비스"
-   ],
-   "bookingTips": "더 나은 요금을 위해 직접 예약하세요."
-  },
-  {
-   "name": "시안 톈랑 신시대 호텔",
-   "nameEn": "Talent Hotel Xi'an",
-   "budget": "mid",
-   "priceRange": "1박 400-750위안",
-   "address": "옌타이구 가오신로 18번지",
-   "coordinates": {
-    "lat": 34.2325,
-    "lng": 108.9095
-   },
-   "rating": 4.4,
-   "highlights": [
-    "좋은 위치",
-    "모던한 객실",
-    "가성비가 좋음"
-   ],
-   "bookingTips": "출장 여행객에게 가장 적합합니다."
-  },
-  {
-   "name": "시안 진화 호텔",
-   "nameEn": "Jinhua Hotel Xi'an",
-   "budget": "mid",
-   "priceRange": "1박에 350~650위안",
-   "address": "베이린구 유이로 555번지",
-   "coordinates": {
-    "lat": 34.2395,
-    "lng": 108.9365
-   },
-   "rating": 4.3,
-   "highlights": [
-    "대학가 인근",
-    "현지 분위기",
-    "저렴한 가격"
-   ],
-   "bookingTips": "장기 체류에 적합합니다."
-  },
-  {
-   "name": "시안 아토 호텔",
-   "nameEn": "Atour Hotel Xi'an",
-   "budget": "budget",
-   "priceRange": "280-500위안/박",
-   "address": "시내 여러 지점",
-   "coordinates": {
-    "lat": 34.2615,
-    "lng": 108.9485
-   },
-   "rating": 4.6,
-   "highlights": [
-    "로비에 북 라이브러리",
-    "고품질 침구",
-    "모던 차이니즈 디자인"
-   ],
-   "bookingTips": "일관된 품질을 제공하는 인기 브랜드."
-  },
-  {
-   "name": "시안 루자 호텔",
-   "nameEn": "Home Inn Xi'an",
-   "budget": "budget",
-   "priceRange": "150-300위안/박",
-   "address": "복수 지점",
-   "coordinates": {
-    "lat": 34.2655,
-    "lng": 108.9445
-   },
-   "rating": 4.1,
-   "highlights": [
-    "저렴한 가격",
-    "일관된 품질",
-    "좋은 위치"
-   ],
-   "bookingTips": "초저예산 여행자에게 최적."
-  },
-  {
-   "name": "시안 화팅 호텔",
-   "nameEn": "Jiji Hotel Xi'an",
-   "budget": "budget",
-   "priceRange": "1박 220-400위안",
-   "address": "복수 지점",
-   "coordinates": {
-    "lat": 34.2595,
-    "lng": 108.9505
-   },
-   "rating": 4.4,
-   "highlights": [
-    "화텅 브랜드 품질",
-    "모던한 객실",
-    "가성비 좋음"
-   ],
-   "bookingTips": "가격과 품질의 균형이 좋음."
-  },
-  {
-   "name": "시안 성벽 민숙",
-   "nameEn": "City Wall B&B",
-   "budget": "budget",
-   "priceRange": "¥200-400/박",
-   "address": "남문 근처",
-   "coordinates": {
-    "lat": 34.2555,
-    "lng": 108.9485
-   },
-   "rating": 4.5,
-   "highlights": [
-    "전통 안뜰",
-    "성벽 인근",
-    "현지 체험"
-   ],
-   "bookingTips": "최상의 선택을 위해 일찍 예약하세요."
-  }
- ],
- "payment": [
-  {
-   "method": "Alipay",
-   "icon": "alipay",
-   "description": "표준 결제 방법, 널리 사용됨",
-   "howToUse": [
-    "도착 전에 다운로드하세요",
-    "국제 카드 등록",
-    "QR 코드 결제"
-   ],
-   "tips": [
-    "시안은 관광객에게 친화적입니다 - 많은 곳에서 카드를 받습니다",
-    "하지만 시장과 작은 상점에서는 알리페이가 여전히 필수입니다"
-   ]
-  },
-  {
-   "method": "WeChat Pay",
-   "icon": "wechat",
-   "description": "알리페이와 함께 흔히 사용됨",
-   "howToUse": [
-    "위챗 앱 필요",
-    "설정에서 카드 연결"
-   ],
-   "tips": [
-    "두 앱 모두 시안에서 동일하게 유용합니다",
-    "디디는 위챗이 필요합니다."
-   ]
-  },
-  {
-   "method": "Cash (RMB)",
-   "icon": "cash",
-   "description": "전통 시장과 작은 상점에서 유용함",
-   "howToUse": [
-    "길거리 음식을 위해 작은 지폐를 준비하세요",
-    "모든 bank에 ATM이 있습니다"
-   ],
-   "tips": [
-    "무슬림 쿼터 상점들은 대부분 cash입니다",
-    "관광 명소에는 공식 가격표가 있습니다"
-   ]
-  }
- ],
- "culturalTips": [
-  {
-   "category": "food",
-   "title": "산시 요리",
-   "content": "시안은 biangbiang면, 루지아모, 양파모 등 유명한 중국 음식의 탄생지입니다. 무슬림 지구에서는 특별한 회(중국 무슬림) 요리를 즐길 수 있습니다.",
-   "importance": "high"
-  },
-  {
-   "category": "dress",
-   "title": "유적지 방문 시 단정한 복장",
-   "content": "종교 sites와 병마용을 방문할 때는 겸손하고 존중하는 복장을 해야 합니다. 어깨와 무릎을 가려야 합니다.",
-   "importance": "medium"
-  },
-  {
-   "category": "history",
-   "title": "역사적 맥락을 이해하는 것이 중요",
-   "content": "시안은 여러 왕조의 수도였습니다. 중국 역사를 이해하면 경험이 더욱 풍부해집니다. 오디오 가이드 이용을 권장합니다.",
-   "importance": "medium"
-  },
-  {
-   "category": "nightlife",
-   "title": "밤의 성벽",
-   "content": "시안의 성벽은 밤에 남문의 대형 음악 분수 쇼와 함께 압도적입니다. 인근 무슬림 지구에서는 석면에 루지아모, 양꼬치, biangbiang면 등을 판매하는 수백 개의 음식점으로 활기를 띱니다.",
-   "importance": "medium"
-  },
-  {
-   "category": "silk-road",
-   "title": "실크로드 유산",
-   "content": "시안은 고대 비단길의 동쪽 종착점이었습니다. 시안 대사찰은 중앙아시아와 이슬람 세계와의 역사적 연결을 보여줍니다.",
-   "importance": "medium"
-  },
-  {
-   "category": "terracotta",
-   "title": "병마용의 의미",
-   "content": "병마용은 진시황의 불멸에 대한 추구를 나타냅니다. 각 장수의 얼굴은 독특하여 완전히 같은 얼굴은 없습니다.",
-   "importance": "high"
-  },
-  {
-   "category": "muslim-culture",
-   "title": "후이(회) 이슬람 문화",
-   "content": "무슬림 지구(회민가)는 1,000년 이상 이곳에 살아온 시안의 회무슬림 공동체의 근거지입니다. 그들은 이슬람 식단법을 따릅니다 - 돼지고기를 먹지 않습니다.",
-   "importance": "high"
-  },
-  {
-   "category": "noodle-culture",
-   "title": "면 문화",
-   "content": "산시 사람들은 국수를 매우 중요시합니다. Biangbiang면(띠국수)은 현지 특산품입니다 - 'biang'자는 가장 복잡한 중국 문자 중 하나입니다.",
-   "importance": "medium"
-  },
-  {
-   "category": "qin-dynasty",
-   "title": "진나라의 유산",
-   "content": "시안(장안)은 중국을 최초로 통일한 진 왕조의 수도였습니다. 병마용, 성벽, 역사 유적들이 이 유산을 반영합니다.",
-   "importance": "medium"
-  },
-  {
-   "category": "tang-dynasty",
-   "title": "당나라의 황금시대",
-   "content": "당 왕조(618-907년)는 중국의 황금기로 여겨집니다. 시안은 세계 최대 도시로, 비단길로부터 영향을 받은 국제적 문화를 가지고 있었습니다.",
-   "importance": "medium"
-  },
-  {
-   "category": "biking-culture",
-   "title": "자전거로 성벽 타기",
-   "content": "14km의 성벽을 한 바퀴 도는 자전거 여행은 시안의 전통입니다. 남문이나 다른 문에서 자전거를 빌리세요. 해질녘에 도시를 한눈에 조망하는 것이 가장 좋습니다.",
-   "importance": "medium"
-  },
-  {
-   "category": "language",
-   "title": "지역 사투리",
-   "content": "시안 방언은 독특한 특징이 있으며, 문장 끝에 접미사 '더이'를 사용합니다. 많은 현지인들은 특정 한자에 대해 여전히 전통적인 발음을 사용합니다.",
-   "importance": "low"
-  },
-  {
-   "category": "dumpling-culture",
-   "title": "교자 만찬",
-   "content": "시안은 만두(자오쯔) 요리로 유명한가요? 더파창의 만두 연회를 시도해 보세요. 한 끼에 100가지 이상을 맛볼 수 있습니다.",
-   "importance": "medium"
-  },
-  {
-   "category": "tea-culture",
-   "title": "차 문화",
-   "content": "중국 남부만큼 차에 특화되어 있지는 않지만, 시안에는 독특한 차 전통이 있습니다. 현지인들은 허브차와 유명한 연꽃잎 차를 즐깁니다.",
-   "importance": "low"
-  },
-  {
-   "category": "foot-massage",
-   "title": "발 마사지 문화",
-   "content": "많은 중국 도시들처럼, 시안에는 많은 발 마사지 가게가 있습니다. 병마용과 성벽을 걸은 후, 발 마사지는 아늑한 휴식이 됩니다.",
-   "importance": "low"
-  },
-  {
-   "category": "superstitions",
-   "title": "역사적 미신",
-   "content": "영혼과 조상에 대한 전통적 신앙이 여전히 존재합니다. 달을 가리키지 마세요(달신에게 불경), 특정 축제 날 머리카락을 자르는 것을 피하세요.",
-   "importance": "low"
-  },
-  {
-   "category": "festivals",
-   "title": "지역 축제",
-   "content": "춘절 기간 동안 시안의 후이민 거리에는 특별한 음식이 있습니다. 고악 종고제는 고대 음악의 전통을 기념합니다.",
-   "importance": "medium"
-  },
-  {
-   "category": "architecture",
-   "title": "고대 건축",
-   "content": "시안의 건축은 여러 왕조를 반영합니다. 종루와 고루(명나라)는 상징입니다. 한나라와 당나라는 궁전 유적에 그 흔적을 남겼습니다.",
-   "importance": "medium"
-  },
-  {
-   "category": "hot-springs",
-   "title": "온천 문화",
-   "content": "화칭지는 당나라 때부터 휴양지였습니다. 현종 황제는 총애하는 양귀비를 위해 이곳에 궁전을 지었습니다.",
-   "importance": "medium"
-  },
-  {
-   "category": "handicrafts",
-   "title": "전통 공예",
-   "content": "시안은 전통 공예품으로 유명합니다. 그림자 인형, 종이 쪼개기, 유약 도기 등이 있습니다. 당 왕조 공예품은 독특한 기념품입니다.",
-   "importance": "medium"
-  },
-  {
-   "category": "emperor-tombs",
-   "title": "황제릉 문화",
-   "content": "시안은 여러 왕조의 황릉으로 둘러싸여 있습니다. 도시 북서쪽 지역에는 당대 황릉 73개 중 9개가 있습니다.",
-   "importance": "low"
-  }
- ],
- "emergencyContacts": [
-  {
-   "type": "ambulance",
-   "name": "西安急救中心",
-   "nameEn": "Xi'an Emergency Center",
-   "phone": "120",
-   "address": "광저우",
-   "nameKo": "시안 응급의료센터"
-  },
-  {
-   "type": "police",
-   "name": "西安市公安局",
-   "nameEn": "Xi'an Public Security Bureau",
-   "phone": "110",
-   "address": "광저우",
-   "nameKo": "시안시 공안국"
-  },
-  {
-   "type": "hospital",
-   "name": "시안 국제 의료 센터",
-   "nameEn": "Xi'an International Medical Center",
-   "phone": "+86 29 969 99",
-   "address": "광저우",
-   "coordinates": {
-    "lat": 34.2245,
-    "lng": 108.8845
-   },
-   "notes": "싱가포르 시민용",
-   "nameKo": "시안 국제의료센터"
-  },
-  {
-   "type": "hospital",
-   "name": "西安交通大学第一附属医院",
-   "nameEn": "First Affiliated Hospital of Xi'an Jiaotong University",
-   "phone": "+86 29 8532 3314",
-   "address": "광저우",
-   "coordinates": {
-    "lat": 34.2395,
-    "lng": 108.9345
-   },
-   "notes": "싱가포르 시민용",
-   "nameKo": "시안 자오퉁대학 제1부속병원"
-  },
-  {
-   "type": "embassy",
-   "name": "美国驻西安总领事馆",
-   "nameEn": "US Consulate General Xi'an",
-   "phone": "+86 29 8723 0666",
-   "address": "광저우",
-   "coordinates": {
-    "lat": 34.2665,
-    "lng": 108.9395
-   },
-   "notes": "싱가포르 시민용",
-   "nameKo": "주시안 미국 총영사관"
-  },
-  {
-   "type": "fire",
-   "name": "西安消防支队",
-   "nameEn": "Xi'an Fire Department",
-   "phone": "119",
-   "address": "광저우",
-   "nameKo": "시안 소방서"
-  },
-  {
-   "type": "hospital",
-   "name": "陕西省人民医院",
-   "nameEn": "Shaanxi Provincial People's Hospital",
-   "phone": "+86 29 8525 1331",
-   "address": "광저우",
-   "coordinates": {
-    "lat": 34.2395,
-    "lng": 108.9385
-   },
-   "notes": "싱가포르 시민용",
-   "nameKo": "산시성 인민병원"
-  },
-  {
-   "type": "hospital",
-   "name": "西京医院",
-   "nameEn": "Xijing Hospital",
-   "phone": "+86 29 8477 1454",
-   "address": "광저우",
-   "coordinates": {
-    "lat": 34.2635,
-    "lng": 108.9245
-   },
-   "notes": "싱가포르 시민용",
-   "nameKo": "시징병원"
-  },
-  {
-   "type": "embassy",
-   "name": "英国驻西安总领事馆",
-   "nameEn": "British Consulate General Xi'an",
-   "phone": "+86 29 8722 0949",
-   "address": "광저우",
-   "coordinates": {
-    "lat": 34.2355,
-    "lng": 108.9515
-   },
-   "notes": "싱가포르 시민용",
-   "nameKo": "주시안 영국 총영사관"
-  },
-  {
-   "type": "embassy",
-   "name": "주시안 프랑스 총영사관",
-   "nameEn": "French Consulate General Xi'an",
-   "phone": "+86 29 8767 2686",
-   "address": "광저우",
-   "coordinates": {
-    "lat": 34.2515,
-    "lng": 108.9495
-   },
-   "notes": "싱가포르 시민용",
-   "nameKo": "주시안 프랑스 총영사관"
-  },
-  {
-   "type": "embassy",
-   "name": "주시안 독일연방공화국 총영사관",
-   "nameEn": "German Consulate General Xi'an",
-   "phone": "+86 29 8769 9626",
-   "address": "광저우",
-   "coordinates": {
-    "lat": 34.2395,
-    "lng": 108.9365
-   },
-   "notes": "싱가포르 시민용",
-   "nameKo": "주시안 독일 총영사관"
-  },
-  {
-   "type": "embassy",
-   "name": "日本驻西安总领事馆",
-   "nameEn": "Japanese Consulate General Xi'an",
-   "phone": "+86 29 8832 3000",
-   "address": "광저우",
-   "coordinates": {
-    "lat": 34.2315,
-    "lng": 108.9465
-   },
-   "notes": "싱가포르 시민용",
-   "nameKo": "주시안 일본 총영사관"
-  },
-  {
-   "type": "embassy",
-   "name": "韩国驻西安总领事馆",
-   "nameEn": "Korean Consulate General Xi'an",
-   "phone": "+86 29 8832 3800",
-   "address": "광저우",
-   "coordinates": {
-    "lat": 34.2515,
-    "lng": 108.9485
-   },
-   "notes": "싱가포르 시민용",
-   "nameKo": "주시안 한국 총영사관"
-  },
-  {
-   "type": "tourist-complaint",
-   "name": "시안 관광 불만 신고 핫라인",
-   "nameEn": "Xi'an Tourism Complaint Hotline",
-   "phone": "+86 29 8726 2626",
-   "address": "광저우",
-   "notes": "싱가포르 시민용",
-   "nameKo": "시안 관광 불만 신고 핫라인"
-  }
- ],
- "quickFacts": {
-  "language": "중국어 (북경어)",
-  "currency": "인민폐 (CNY/RMB)",
-  "visa": "대부분의 국적은 비자가 필요합니다. 자격이 있는 경우 공항에서 72시간 환승 비자를 받을 수 있습니다.",
-  "timeZone": "UTC+8 (중국 표준시)",
-  "electricity": "220V/50Hz, A/I 타입 플러그",
-  "water": "수돗물은 마실 수 있지만 병물을 권장합니다"
- }
 }

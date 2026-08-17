@@ -18,6 +18,7 @@ import { getCityData } from "@/data/cities-i18n";
 import { getHotelsByCity, getHotelCategoryCounts, getHotelCount } from "@/data/hotels";
 import { HOTEL_CATEGORY_CONFIG, type HotelCategory } from "@/components/hotel/HotelCard";
 import { getLangFromUrl } from "@/i18n/utils";
+import AIRecommendation from "@/components/city/AIRecommendation.astro";
 
 export function getStaticPaths() {
   return citySlugs.map((slug) => ({ params: { slug } }));
@@ -107,6 +108,13 @@ const pageDescription = initialCategory
 
   <!-- Main Content -->
   <div class="container-custom py-8">
+  <AIRecommendation
+    lang={lang}
+    topic="accommodation"
+    topicLabel="Hotels"
+    cityName={city.nameEn}
+    citySlug={city.slug}
+  />
     <!-- Category Filter -->
     <div class="mb-8">
       <HotelCategoryFilter

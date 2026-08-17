@@ -1,0 +1,20 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import AccountPage from '@/components/user/AccountPage.astro';
+import { translations } from "@/i18n/translations";
+import type { Language } from "@/i18n/translations";
+
+export function getStaticPaths() {
+  const langs = ["ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"] as const;
+  return langs.map((lang) => ({ params: { lang } }));
+}
+
+const lang = (Astro.params.lang as Language) || "en";
+
+// Auth is handled by middleware (SSR) and client-side JS (static).
+// The account page renders a loading state and checks auth via client JS.
+---
+
+<BaseLayout title={translations[lang]?.accountPage?.pageTitle ?? "My Account - ChinaConnect"}>
+  <AccountPage lang={lang} />
+</BaseLayout>

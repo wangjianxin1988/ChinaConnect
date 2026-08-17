@@ -360,9 +360,11 @@ export default function AIChatPage() {
 
   // Public visitors can browse the AI page; sign-in is only required when they
   // actually start chatting. Redirect to the single unified login page.
-  const handleStartChat = useCallback(() => {
+    const handleStartChat = useCallback(() => {
+    const currentLang = ((window as unknown as { __I18N__?: { serverLang?: string } }).__I18N__?.serverLang) || "en";
+    const langPrefix = currentLang && currentLang !== "en" ? "/" + currentLang : "";
     const next = encodeURIComponent(window.location.pathname + window.location.search);
-    window.location.href = `/auth/login?next=${next}`;
+    window.location.href = langPrefix + "/auth/login?next=" + next;
   }, []);
 
   // Public landing view: browseable without an account, no login wall.

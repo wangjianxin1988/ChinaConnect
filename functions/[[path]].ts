@@ -33,6 +33,46 @@ const DEFAULT_LOCALE = "en";
 const PAGES_SUBDOMAIN = "chinaconnect.pages.dev";
 const CANONICAL_HOST = "chinaengage.org";
 
+// =====================================================================
+// First-visit language auto-redirect
+// =====================================================================
+const LANG_COOKIE = "chinaconnect_language";
+const LOCALE_PREFIX_RE = /^\/(en|ja|ko|zh-CN|zh-TW|th|vi|ru|fr|de|ar|fa)(?:\/|$)/;
+const SYSTEM_PATH_PREFIXES = [
+  "/img",
+  "/_astro",
+  "/logo",
+  "/favicon",
+  "/offline",
+  "/api",
+  "/auth",
+  "/account",
+  "/user",
+  "/profile",
+  "/checkout",
+];
+const BOT_UA_RE =
+  /googlebot|bingbot|baiduspider|yandex|sogou|360spider|semrush|ahrefs|mj12|petalbot|bytespider|duckduckbot|applebot|facebookexternalhit|twitterbot|ia_archiver|gptbot|claudebot|perplexitybot|linkedinbot|slurp/i;
+const IP_COUNTRY_LOCALE: Record<string, string> = {
+  JP: "ja",
+  KR: "ko",
+  CN: "zh-CN",
+  TW: "zh-TW",
+  HK: "zh-TW",
+  MO: "zh-TW",
+  TH: "th",
+  VN: "vi",
+  RU: "ru",
+  FR: "fr",
+  DE: "de",
+  SA: "ar",
+  AE: "ar",
+  EG: "ar",
+  IR: "fa",
+  QA: "ar",
+  KW: "ar",
+};
+
 // Food detail pages: free plan caps deployments at 20,000 files, so the 11
 // non-English restaurant detail sets are packed at build time into shared
 // skeletons + per-restaurant deltas (scripts/pack-food-details.mjs) and
@@ -49,6 +89,34 @@ function fnv1a(str: string): number {
     h = Math.imul(h, 0x01000193);
   }
   return h >>> 0;
+}
+
+// Port of src/middleware.ts detectFromHeader: Accept-Language header -> locale.
+// q-value sort, exact match, prefix match (ja-JP -> ja), zh special cases.
+function detectFromHeader(acceptLang: string | null): string | null {
+  if (!acceptLang) return null;
+
+  const langs = acceptLang
+    .split(",")
+    .map((part) => {
+      const [code, q] = part.trim().split(";q=");
+      return { code: code.trim(), q: q ? Number.parseFloat(q) : 1.0 };
+    })
+    .sort((a, b) => b.q - a.q);
+
+  for (const { code } of langs) {
+    // Exact match
+    if (SUPPORTED_LOCALES.includes(code)) return code;
+    // Prefix match: "ja-JP" -> "ja"
+    const prefix = code.split("-")[0];
+    if (SUPPORTED_LOCALES.includes(prefix)) return prefix;
+    // Special: "zh" -> "zh-CN"; "zh-TW"/"zh-Hant"/"zh-HK" -> "zh-TW"
+    if (prefix === "zh") {
+      if (code.includes("TW") || code.includes("Hant") || code.includes("HK")) return "zh-TW";
+      return "zh-CN";
+    }
+  }
+  return null;
 }
 
 export const onRequest: PagesFunction = async (context) => {
@@ -75,6 +143,76 @@ export const onRequest: PagesFunction = async (context) => {
           "Cache-Control": "public, max-age=3600",
         },
       });
+    }
+  }
+
+  // =====================================================================
+  // First-visit language auto-redirect
+  //
+  // Fires only for real browser navigations to unprefixed EN pages when the
+  // visitor has no language cookie and no ?lang= param. Skipped for crawlers,
+  // assets, and system paths so SEO/GEO and existing logic stay untouched.
+  // The Set-Cookie makes this effectively a one-time redirect per visitor.
+  // =====================================================================
+  const method = context.request.method;
+  if (method === "GET" || method === "HEAD") {
+    const isLocalePrefixed = LOCALE_PREFIX_RE.test(path);
+    const cookieHeader = context.request.headers.get("Cookie") || "";
+    const hasLangCookie = cookieHeader
+      .split(";")
+      .some((c) => c.trim().startsWith(`${LANG_COOKIE}=`));
+    const hasLangParam = url.searchParams.has("lang");
+    const isSystemPath = SYSTEM_PATH_PREFIXES.some(
+      (p) => path === p || path.startsWith(p + "/") || path.startsWith(p + "."),
+    );
+    const isSystemFile =
+      path === "/robots.txt" ||
+      path === "/llms.txt" ||
+      path === "/sw.js" ||
+      /^\/sitemap.*\.xml$/.test(path) ||
+      /^\/manifest/.test(path) ||
+      /^\/google.*\.html$/.test(path);
+    const userAgent = context.request.headers.get("User-Agent") || "";
+    const isBot = BOT_UA_RE.test(userAgent);
+    const secFetchDest = context.request.headers.get("Sec-Fetch-Dest");
+    const acceptHeader = context.request.headers.get("Accept") || "";
+    const isBrowserNavigation =
+      secFetchDest === "document" ||
+      (secFetchDest === null && acceptHeader.includes("text/html"));
+
+    if (
+      !isLocalePrefixed &&
+      !hasLangCookie &&
+      !hasLangParam &&
+      !isSystemPath &&
+      !isSystemFile &&
+      !isBot &&
+      isBrowserNavigation
+    ) {
+      // Priority 1: Accept-Language header (q-sorted, exact then prefix match)
+      let targetLang: string | null = detectFromHeader(
+        context.request.headers.get("Accept-Language"),
+      );
+      // Priority 2: region fallback via CF-IPCountry when no non-en language
+      if (!targetLang || targetLang === DEFAULT_LOCALE) {
+        const country = (context.request.headers.get("CF-IPCountry") || "").toUpperCase();
+        targetLang = IP_COUNTRY_LOCALE[country] || null;
+      }
+
+      if (targetLang && targetLang !== DEFAULT_LOCALE) {
+        const target = new URL(
+          `/${targetLang}${path}${url.search}`,
+          `https://${CANONICAL_HOST}`,
+        );
+        return new Response(null, {
+          status: 302,
+          headers: {
+            Location: target.toString(),
+            "Set-Cookie": `${LANG_COOKIE}=${targetLang}; Path=/; Max-Age=31536000; SameSite=Lax`,
+            "Cache-Control": "no-store",
+          },
+        });
+      }
     }
   }
 

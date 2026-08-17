@@ -63,7 +63,7 @@ const displayFood = (t: string | undefined): string => {
 
 const restaurantDetail = {
   id: restaurant.id,
-  name: lang === "en" ? restaurant.nameEn || restaurant.name : displayFood(restaurant.name),
+  name: restaurant.name,
   name_en: lang === "en" ? "" : restaurant.nameEn,
   cuisine: displayFood(restaurant.cuisine),
   rating: restaurant.rating,
@@ -86,7 +86,7 @@ const restaurantDetail = {
 };
 ---
 
-<BaseLayout title={`${lang === "en" ? restaurant.nameEn || restaurant.name : displayFood(restaurant.name)} - ${TITLE_SUFFIX[lang] || TITLE_SUFFIX.en}`}>
+<BaseLayout title={`${restaurant.name} - ${TITLE_SUFFIX[lang] || TITLE_SUFFIX.en}`}>
   <div class="min-h-screen bg-gray-50">
     <!-- Header -->
     <!--FOOD_HEADER_START-->

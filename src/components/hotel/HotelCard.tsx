@@ -37,7 +37,7 @@ export const HOTEL_CATEGORY_CONFIG: Record<
   luxury: {
     label: "豪华",
     labelEn: "Luxury",
-    labels: { ja: "ラグジュアリー", ko: "루첌리", "zh-CN": "豪华", "zh-TW": "豪華", th: "หรูหรา", vi: "Sang trong", ru: "Роскошный", fr: "Luxe", de: "Luxus", ar: "فاخر", fa: "لوکس" },
+    labels: { ja: "ラグジュアリー", ko: "럭셔리", "zh-CN": "豪华", "zh-TW": "豪華", th: "หรูหรา", vi: "Sang trọng", ru: "Роскошный", fr: "Luxe", de: "Luxus", ar: "فاخر", fa: "لوکس" },
     color: "text-purple-700",
     bg: "bg-purple-100",
     icon: "👑",
@@ -45,7 +45,7 @@ export const HOTEL_CATEGORY_CONFIG: Record<
   mid_range: {
     label: "中端",
     labelEn: "Mid-Range",
-    labels: { ja: "ミッドレンジ", ko: "중앙", "zh-CN": "中端", "zh-TW": "中端", th: "ระดับกลาง", vi: "Trung cap", ru: "Средний", fr: "Moyen", de: "Mittelklasse", ar: "متوسط", fa: "متوسط" },
+    labels: { ja: "ミッドレンジ", ko: "중급", "zh-CN": "中端", "zh-TW": "中端", th: "ระดับกลาง", vi: "Trung cấp", ru: "Средний", fr: "Milieu de gamme", de: "Mittelklasse", ar: "متوسط", fa: "متوسط" },
     color: "text-blue-700",
     bg: "bg-blue-100",
     icon: "🏨",
@@ -53,7 +53,7 @@ export const HOTEL_CATEGORY_CONFIG: Record<
   budget: {
     label: "经济",
     labelEn: "Budget",
-    labels: { ja: "バジェット", ko: "경제", "zh-CN": "经济", "zh-TW": "經濟", th: "ประหยัด", vi: "Tiet kiem", ru: "Бюджетный", fr: "Economique", de: "Guenstig", ar: "اقتصادي", fa: "اقتصادی" },
+    labels: { ja: "バジェット", ko: "경제", "zh-CN": "经济", "zh-TW": "經濟", th: "ประหยัด", vi: "Tiết kiệm", ru: "Бюджетный", fr: "Économique", de: "Günstig", ar: "اقتصادي", fa: "اقتصادی" },
     color: "text-green-700",
     bg: "bg-green-100",
     icon: "💰",
@@ -61,7 +61,7 @@ export const HOTEL_CATEGORY_CONFIG: Record<
   hostel: {
     label: "青年旅舍",
     labelEn: "Hostel",
-    labels: { ja: "ホステル", ko: "호스텔", "zh-CN": "青年旅舍", "zh-TW": "青年旅社", th: "โธมเทล", vi: "Nha tro", ru: "Хостел", fr: "Auberge", de: "Hostel", ar: "نزل", fa: "هاستل" },
+    labels: { ja: "ホステル", ko: "호스텔", "zh-CN": "青年旅舍", "zh-TW": "青年旅社", th: "โฮสเทล", vi: "Nhà trọ", ru: "Хостел", fr: "Auberge", de: "Hostel", ar: "نزل", fa: "هاستل" },
     color: "text-cyan-700",
     bg: "bg-cyan-100",
     icon: "🛏️",
@@ -69,7 +69,7 @@ export const HOTEL_CATEGORY_CONFIG: Record<
   love_hotel: {
     label: "情趣",
     labelEn: "Love Hotel",
-    labels: { ja: "ラブホテル", ko: "럭호텔", "zh-CN": "情趣", "zh-TW": "情趣", th: "โรงแรม", vi: "Khach san tinh yeu", ru: "Отель любви", fr: "Hotel d amours", de: "Stundenhotel", ar: "فندق حب", fa: "هتل عشق" },
+    labels: { ja: "ラブホテル", ko: "러브호텔", "zh-CN": "情趣", "zh-TW": "情趣", th: "โรงแรม", vi: "Khách sạn tình yêu", ru: "Отель любви", fr: "Hôtel d'amour", de: "Stundenhotel", ar: "فندق الحب", fa: "هتل عشق" },
     color: "text-pink-700",
     bg: "bg-pink-100",
     icon: "💕",
@@ -77,7 +77,7 @@ export const HOTEL_CATEGORY_CONFIG: Record<
   esports_hotel: {
     label: "电竞",
     labelEn: "Esports",
-    labels: { ja: "エスポーツ", ko: "이스포츠", "zh-CN": "电竞", "zh-TW": "電競", th: "อีสปอร์ต", vi: "The thao dien tu", ru: "Киберспорт", fr: "Esports", de: "E-Sport", ar: "الألعاب الإلكترونية", fa: "اسپورت" },
+    labels: { ja: "エスポーツ", ko: "이스포츠", "zh-CN": "电竞", "zh-TW": "電競", th: "อีสปอร์ต", vi: "Thể thao điện tử", ru: "Киберспорт", fr: "Esports", de: "E-Sport", ar: "الألعاب الإلكترونية", fa: "اسپورت" },
     color: "text-orange-700",
     bg: "bg-orange-100",
     icon: "🎮",
