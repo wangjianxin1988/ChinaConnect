@@ -49,7 +49,7 @@ jobs:
           PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key' }}
 
       - name: Run Playwright E2E Tests (Chromium only for CI)
-        run: pnpm test:e2e --project=chromium --reporter=list
+        run: pnpm test:e2e --project=chromium
         env:
           CI: true
           PLAYWRIGHT_BASE_URL: ${{ env.PLAYWRIGHT_BASE_URL }}
@@ -114,7 +114,7 @@ jobs:
           PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key' }}
 
       - name: Run Playwright E2E Tests (All Browsers)
-        run: pnpm test:e2e --reporter=list
+        run: pnpm test:e2e
         env:
           CI: true
           PLAYWRIGHT_BASE_URL: ${{ env.PLAYWRIGHT_BASE_URL }}
