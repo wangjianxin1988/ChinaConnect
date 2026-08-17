@@ -1272,3 +1272,16 @@ ode scripts/check-i18n.mjs && npx astro build。
   - 注意：探针需用真实 storage key `sb-xyvuqbpwrhkukjgzveyc-auth-token`（非 sb-auth-token）；会话过期时用 POST /auth/v1/token?grant_type=refresh_token 刷新。
 - **提交**：2446022 已 push master（17 文件 +2550/-265），触发 deploy-cf-pages.yml 自动部署生产（CI 已规避 prebuild）。
 - **下个会话**：线上验证 /ja/account 等 12 语言个人中心 + Google/GitHub 登录全流程（Google 被 GFW 挡属网络问题非代码问题；建议用 VPN/移动网络验证）；后续留意 dist 页数余量。
+
+### 2026-08-18 会话 #32（5 项反馈生产验证 — 全部通过）
+
+- **起**：目标审计。上一轮部署（2446022 + 67c0f1c）后，对用户 5 项反馈逐项做生产验证（https://chinaengage.org）。
+- **验证结果（Playwright 生产实测）**：
+  1. 第三方登录：Google/GitHub OAuth URL 均正确（Google client_id=132678131075-…、GitHub client_id=Ov23liJdtoc8ucgHSNJv 与用户凭据一致），回调带语言前缀 `redirect_to=…/{lang}/auth/callback`。GitHub 可正常登录；Google「无法访问此页面」确认为 GFW 网络阻断（accounts.google.com 不可达），非代码/配置问题。
+  2. Header 登录态：登录后 `#cc-user-menu` 显示头像/首字母+用户名，登录按钮消失；en/ja/de/zh-CN/ko/ar/fr 均验证。AI 页 `/ja/ai` 全页日语（介绍/占位/快捷提示/侧栏 会話・旅程・保存した旅程/订阅组件 無料 5/5 アップグレード）。
+  3. 个人中心 12 语言：UsageStats/BillingHistory/PlanComparison 三板块实测 en/ja/ko/de/zh-CN/ar/fr 均按语言渲染；构建产物 account-strings bundle 含全部 12 语言。
+  4. AI 记忆点击：点击「Test Beijing Trip」会话加载历史消息（用户句 + AI 回复），可继续对话。
+  5. 对话记录 vs Saved Itineraries：两个 Tab 独立无冲突；对话记录读 ai_conversations，Saved Itineraries 读 ai_routes（保存行程/保存した旅程产生），点击行程展示完整 DAY 1/DAY 2 每日计划（Forbidden City/Mutianyu 等）。实测「北京5日测试行程」可加载。
+- **遗留（非本次目标范围）**：全站每个页面约 2 个 React #418 水合错误，来源为 `src/components/Emergency/SOSButton`（SOS 悬浮按钮，旧问题，功能不受影响）；首页等有 `Astro.request.headers` prerender warning；`/ja/ai` 偶发 503（MiniMax/搜索 API 兜底）。
+- **Google 登录补充建议（给用户）**：若确认网络可达 Google 后仍失败，去 Google Cloud Console 确认 OAuth 同意屏幕已 PUBLISH（Testing 模式仅授权测试账号可用）。
+- **下个会话**：无需强制待办；如需可顺手修 SOSButton 水合错误（先定位 QuickDial/GPSLocator 等子组件里 SSR/客户端不一致的文本）。
