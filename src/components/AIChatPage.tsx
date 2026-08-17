@@ -367,26 +367,67 @@ export default function AIChatPage() {
 
   // Public landing view: browseable without an account, no login wall.
   if (!isAuthenticated) {
+    const featureCards = [
+      { icon: "🗺", title: aiT("featItineraryTitle", "Custom Itineraries"), desc: aiT("featItineraryDesc", "Day-by-day plans tailored to your city, budget and travel style.") },
+      { icon: "🍜", title: aiT("featFoodTitle", "Food & Dining"), desc: aiT("featFoodDesc", "Michelin, Black Pearl and local hidden gems you won’t find in guidebooks.") },
+      { icon: "🏨", title: aiT("featHotelTitle", "Hotels in 3 Tiers"), desc: aiT("featHotelDesc", "Budget, mid-range and luxury options side by side with nightly rates and booking links.") },
+      { icon: "🚄", title: aiT("featTransportTitle", "Transport & Routes"), desc: aiT("featTransportDesc", "Real-time train and flight options, metro routes, prices and booking links.") },
+      { icon: "💳", title: aiT("featPayTitle", "Payments & Practical"), desc: aiT("featPayDesc", "Alipay, WeChat Pay, SIM cards, visa rules and every practical detail.") },
+      { icon: "🧭", title: aiT("featLocalTitle", "Local Know-How"), desc: aiT("featLocalDesc", "Cultural etiquette, crowd levels, weather, emergency contacts and phrase translations.") },
+    ];
+    const powerItems = [
+      { icon: "🎯", title: aiT("featPrefsTitle", "Personalized to You"), desc: aiT("featPrefsDesc", "Tells you exactly what it needs: budget, travel style, transport, hotel type, group size, days and nationality.") },
+      { icon: "📅", title: aiT("featPlanTitle", "Complete Day Plans"), desc: aiT("featPlanDesc", "Hour-by-hour itinerary tables plus 3-tier hotels, meals, transport and a 3-level daily budget summary.") },
+      { icon: "📡", title: aiT("featRealtimeTitle", "Based on Real-Time Data"), desc: aiT("featRealtimeDesc", "Connects to live data sources so prices, routes, opening hours and crowd levels stay accurate and current.") },
+      { icon: "🌐", title: aiT("featLangTitle", "Speaks Your Language"), desc: aiT("featLangDesc", "Chat in English, 日本語, 한국어, 中文, ไทย, Tiếng Việt, Русский, Français, Deutsch, العربية, فارسی and more.") },
+    ];
+    const examplePrompts = t.aiPage?.prompts && t.aiPage.prompts.length > 0 ? t.aiPage.prompts : FALLBACK_PROMPTS;
+
     return (
       <div className="min-h-[calc(100vh-64px)] bg-gradient-to-br from-slate-50 via-white to-purple-50">
         <div className="container-custom py-12 md:py-16">
-          <div className="text-center mb-10">
-            <h1 className="text-4xl md:text-5xl font-black text-gray-900 mb-3">ChinaGuide AI</h1>
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-100 text-purple-700 text-sm font-medium mb-4">
+              {aiT("heroBadge", "Powered by Advanced AI")}
+            </div>
+            <h1 className="text-4xl md:text-5xl font-black text-gray-900 mb-3">
+              {aiT("heroTitle", "ChinaGuide AI")}
+            </h1>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">
               {aiT("heroSubtitle", "Your personal China travel intelligence — itineraries, local insights, and real-time guidance.")}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-12">
-            {[
-              { icon: "🗺", title: aiT("featItineraryTitle", "Custom Itineraries"), desc: aiT("featItineraryDesc", "Day-by-day plans tailored to any city, budget and travel style.") },
-              { icon: "🍜", title: aiT("featFoodTitle", "Food & Dining"), desc: aiT("featFoodDesc", "Michelin, Black Pearl and local hidden gems you won’t find in guidebooks.") },
-              { icon: "💳", title: aiT("featPayTitle", "Payments & Practical"), desc: aiT("featPayDesc", "Alipay, WeChat Pay, SIM cards, VPNs and every practical detail.") },
-            ].map((f) => (
-              <div key={f.title} className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 text-center">
+          <h2 className="text-xl font-bold text-gray-900 text-center mb-2">
+            {aiT("powersTitle", "What ChinaGuide AI Can Do")}
+          </h2>
+          <p className="text-gray-500 text-center mb-8">
+            {aiT("powersSubtitle", "Every answer is built on real, current China travel data.")}
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto mb-14">
+            {featureCards.map((f) => (
+              <div key={f.title} className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
                 <div className="text-4xl mb-3">{f.icon}</div>
                 <h3 className="font-semibold text-gray-900 mb-1.5">{f.title}</h3>
                 <p className="text-sm text-gray-500 leading-relaxed">{f.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <h2 className="text-xl font-bold text-gray-900 text-center mb-2">
+            {aiT("featuresTitle", "Why ChinaGuide AI")}
+          </h2>
+          <p className="text-gray-500 text-center mb-8">
+            {aiT("featuresSubtitle", "A full China travel concierge — not just a chatbot.")}
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto mb-14">
+            {powerItems.map((f) => (
+              <div key={f.title} className="flex gap-4 bg-white rounded-2xl border border-gray-200 shadow-sm p-5">
+                <div className="text-3xl shrink-0">{f.icon}</div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-1">{f.title}</h3>
+                  <p className="text-sm text-gray-500 leading-relaxed">{f.desc}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -396,9 +437,9 @@ export default function AIChatPage() {
               {aiT("tryExamplesTitle", "Try asking things like…")}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {FALLBACK_PROMPTS.map((pr) => (
+              {examplePrompts.map((pr: { icon: string; text: string }, i: number) => (
                 <button
-                  key={pr.text}
+                  key={i}
                   type="button"
                   onClick={handleStartChat}
                   className="text-left flex items-start gap-3 p-4 rounded-xl bg-white border border-gray-200 hover:border-purple-300 hover:shadow-md transition-shadow"
@@ -426,7 +467,6 @@ export default function AIChatPage() {
       </div>
     );
   }
-
   return (
     <div className="min-h-[calc(100vh-64px)] bg-white flex">
       <ConversationSidebarInner

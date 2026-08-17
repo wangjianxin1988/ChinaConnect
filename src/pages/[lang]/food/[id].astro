@@ -1,47 +1,43 @@
 ---
 export function getStaticPaths() {
   const langs = ["ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"];
-  const ids = ["bj-michelin-1","bj-blackpearl-1","bj-local-1","bj-local-2","bj-michelin-2","sh-michelin-1","sh-blackpearl-1","sh-local-1","sh-local-2","sh-blackpearl-2","hz-michelin-1","hz-blackpearl-1","hz-local-1","hz-local-2","hz-michelin-2","cd-blackpearl-1","cd-local-1","cd-local-2","cd-michelin-1","cd-local-3","gz-michelin-1","gz-blackpearl-1","gz-local-1","gz-local-2","gz-blackpearl-2","xa-blackpearl-1","xa-local-1","xa-local-2","xa-michelin-1","xa-local-3","cq-blackpearl-1","cq-michelin-1","cq-local-1","cq-local-2","dl-blackpearl-1","dl-local-1","dl-local-2","gl-blackpearl-1","gl-local-1","gl-local-2","gl-local-3","nj-blackpearl-1","nj-michelin-1","nj-local-1","nj-local-2","sz-michelin-1","sz-blackpearl-1","sz-local-1","sz-local-2","szh-blackpearl-1","szh-michelin-1","szh-local-1","szh-local-2"];
+  const ids = getAllRestaurantIds();
   return langs.flatMap((lang) => ids.map((id) => ({ params: { lang, id } })));
 }
 
 import RestaurantDetail from "@/components/food/RestaurantDetail";
-import { cities } from "@/data/food/cities";
-import { getRestaurantById, restaurants } from "@/data/food/restaurants";
+import { getAllRestaurantIds, resolveRestaurant, getSameCityRestaurants } from "@/data/food/resolve";
 import { JA_FOOD_OVERRIDES } from "@/data/food/ja-food-overrides";
 import { EN_FOOD_OVERRIDES } from "@/data/food/en-food-overrides";
-import { translations } from "@/i18n/translations";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
 
 
 const { id, lang: paramLang } = Astro.params;
 const lang = (paramLang as string) || "en";
-const restaurant = getRestaurantById(id as string);
+const restaurant = resolveRestaurant(id as string, lang);
 
 if (!restaurant) {
   return Astro.redirect("/food");
 }
 
-const city = cities.find((c) => c.id === restaurant.city);
-const localCityName = translations[lang]?.["city." + (city?.slug ?? restaurant.city) + ".name"] ?? translations.en?.["city." + (city?.slug ?? restaurant.city) + ".name"] ?? city?.nameEn ?? restaurant.city;
-const sameCityRestaurants = restaurants
-  .filter((r) => r.city === restaurant.city && r.id !== restaurant.id)
-  .slice(0, 4);
+const legacySource = restaurant.source === "legacy";
+const localCityName = restaurant.cityName;
+const sameCityRestaurants = getSameCityRestaurants(id as string, lang, 4);
 
-const TYPE_CONFIG = {
-  michelin: { label: "米其林", labelEn: "Michelin", labelJa: "ミシュラン", icon: "⭐", stars: restaurant.star, color: "text-[#1E3A5F]" },
+const TYPE_CONFIG: Record<string, { label: string; labelEn: string; labelJa: string; icon: string; color: string }> = {
+  michelin: { label: "米其林", labelEn: "Michelin", labelJa: "ミシュラン", icon: "⭐", color: "text-[#1E3A5F]" },
   blackpearl: {
     label: "黑珍珠",
     labelEn: "Black Pearl", labelJa: "ブラックパール",
     icon: "💎",
-    diamonds: restaurant.diamond,
     color: "text-[#2D1B4E]",
   },
   local: { label: "本地推荐", labelEn: "Local", labelJa: "地元のおすすめ", icon: "🔥", color: "text-[#B8383D]" },
+  default: { label: "精选", labelEn: "Featured", labelJa: "おすすめ", icon: "🍽️", color: "text-gray-700" },
 };
 
-const config = TYPE_CONFIG[restaurant.type];
+const config = TYPE_CONFIG[restaurant.type] || TYPE_CONFIG.default;
 
 const showTitleCn = lang === "zh-CN" || lang === "zh-TW";
 
@@ -59,11 +55,15 @@ const jaFood = (t: string | undefined): string =>
   lang === "ja" && t ? JA_FOOD_OVERRIDES[t] || t : (t || "");
 const enFood = (t: string | undefined): string =>
   lang === "en" && t ? EN_FOOD_OVERRIDES[t] || t : (t || "");
-const displayFood = (t: string | undefined): string => (lang === "en" ? enFood(t) : jaFood(t));
+const displayFood = (t: string | undefined): string => {
+  if (!t) return "";
+  if (!legacySource) return t;
+  return lang === "en" ? enFood(t) : jaFood(t);
+};
 
 const restaurantDetail = {
   id: restaurant.id,
-  name: lang === "en" ? restaurant.nameEn || restaurant.name : jaFood(restaurant.name),
+  name: lang === "en" ? restaurant.nameEn || restaurant.name : displayFood(restaurant.name),
   name_en: lang === "en" ? "" : restaurant.nameEn,
   cuisine: displayFood(restaurant.cuisine),
   rating: restaurant.rating,
@@ -86,13 +86,13 @@ const restaurantDetail = {
 };
 ---
 
-<BaseLayout title={`${lang === "ja" ? jaFood(restaurant.name) : showTitleCn ? restaurant.name : restaurant.nameEn || restaurant.name} - ${TITLE_SUFFIX[lang] || TITLE_SUFFIX.en}`}>
+<BaseLayout title={`${lang === "en" ? restaurant.nameEn || restaurant.name : displayFood(restaurant.name)} - ${TITLE_SUFFIX[lang] || TITLE_SUFFIX.en}`}>
   <div class="min-h-screen bg-gray-50">
     <!-- Header -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
       <div class="max-w-4xl mx-auto px-4 py-4">
         <div class="flex items-center justify-between">
-          <a href={`/${lang}/food?city=${restaurant.city}`} class="flex items-center gap-2 text-gray-600 hover:text-gray-900">
+          <a href={`/${lang}/city/${restaurant.citySlug}/food/`} class="flex items-center gap-2 text-gray-600 hover:text-gray-900">
             <span aria-hidden="true">←</span>
             <span data-i18n="foodPage.back" data-i18n-vars={JSON.stringify({ city: localCityName })}>Back</span>
           </a>
@@ -118,11 +118,11 @@ const restaurantDetail = {
               <a href={`/${lang}/food/${r.id}`} class="block group">
                 {r.imageUrl && (
                   <div class="h-24 rounded-lg overflow-hidden mb-2">
-                    <img src={r.imageUrl} alt={jaFood(r.name)} class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                    <img src={r.imageUrl} alt={displayFood(r.name)} class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                   </div>
                 )}
-                <p class="font-medium text-gray-900 text-sm line-clamp-1">{jaFood(r.name)}</p>
-                <p class="text-xs text-gray-500">{jaFood(r.cuisine)}</p>
+                <p class="font-medium text-gray-900 text-sm line-clamp-1">{displayFood(r.name)}</p>
+                <p class="text-xs text-gray-500">{displayFood(r.cuisine)}</p>
               </a>
             ))}
           </div>

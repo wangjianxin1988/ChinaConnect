@@ -32,11 +32,35 @@ const filterParam = Astro.url.searchParams.get("filter") || "all";
 
 // ─── Unified Restaurant Category System ──────────────────────────
 // Single source of truth in src/data/food/categories.ts
-import { CATEGORY_CONFIG, buildFilterGroups, getHighlightCategory, type FilterGroup } from "@/data/food/categories";
+import { CATEGORY_CONFIG, getRestaurantFilterCategory, type FilterGroup } from "@/data/food/categories";
 
 const allRestaurants = city.restaurants;
-const filterGroups: FilterGroup[] = buildFilterGroups(allRestaurants);
-const currentFilter = filterGroups.find(g => g.id === filterParam) || filterGroups[0];
+// City food page always shows the full filter set (All / Local picks / Michelin /
+// Black Pearl / Affordable / Street food) so the UI is consistent across cities
+// and mirrors the global food directory — zero-count categories stay visible.
+const CITY_FILTER_IDS = ["michelin", "blackpearl", "local_recommend", "affordable", "street_food"];
+const filterGroups: FilterGroup[] = [
+  { ...CATEGORY_CONFIG.all, restaurants: allRestaurants },
+  ...CITY_FILTER_IDS.map((id) => {
+    const cfg = id === "local_recommend" ? CATEGORY_CONFIG.local : CATEGORY_CONFIG[id];
+    return {
+      ...cfg,
+      id,
+      restaurants: allRestaurants.filter((r) => getRestaurantFilterCategory(r) === id),
+    };
+  }),
+];
+// Accept older highlight-tag aliases used by the city detail page "View all" links.
+const FILTER_ALIASES: Record<string, string> = {
+  local: "local_recommend",
+  "local-recommend": "local_recommend",
+  budget: "affordable",
+  budget_local: "affordable",
+  street: "street_food",
+  street_food: "street_food",
+};
+const resolvedFilter = FILTER_ALIASES[filterParam] || filterParam;
+const currentFilter = filterGroups.find((g) => g.id === resolvedFilter) || filterGroups[0];
 
 const pageTitle = (translations[lang] || translations.en).cityFood?.title?.replace("{city}", localCityName) + " - ChinaConnect" ?? "Restaurants in " + localCityName + " - ChinaConnect";
 const pageDescription = `${localCityName} Food Guide: complete Michelin, Black Pearl, and local picks`;
@@ -94,7 +118,7 @@ const _lookup = (key) => {
 
       <!-- Quick stats (dynamic from filterGroups) -->
       <div class="flex flex-wrap items-center gap-4 mt-4 text-sm text-orange-100">
-        {filterGroups.filter(g => g.id !== 'all').slice(0, 5).map(group => {
+        {filterGroups.filter(g => g.id !== 'all' && g.restaurants.length > 0).slice(0, 5).map(group => {
           const statLabel = group.labels?.[lang] || group.label;
           return (
           <span class="flex items-center gap-1">
@@ -162,7 +186,7 @@ const _lookup = (key) => {
       <div id="restaurant-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" data-current-filter="all">
         {allRestaurants.map((restaurant) => (
           <div
-            data-filter-category={getHighlightCategory(restaurant)}
+            data-filter-category={getRestaurantFilterCategory(restaurant)}
             class="bg-white border border-gray-100 rounded-xl overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all group restaurant-card"
           >
             {/* Restaurant Image */}

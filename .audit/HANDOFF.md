@@ -1053,3 +1053,21 @@ for lang in LANGS:
   2. 部署成功后 curl 线上抽验：首页弹窗公告、`/ja/ai` 落地页、`/ja/city/beijing` 语言保持、`/auth/login` 统一登录。
   3. 把部署结果补写回本条 §10。
   4. 公告更新流程已就绪：`src/data/announcements.ts` 每条公告 12 语言 title/body + 唯一 id，改完 push 即全语言公告。
+
+### 2026-08-17 会话 #20（第 2 轮反馈：美食/景区筛选位置 + 餐厅详情 404 + AI 页重写 + 邮箱）
+
+- **起**：用户第 2 轮 5 项反馈。先读 HANDOFF 全文并核对工作区（上一会话 16 个已改未提交文件）。用户确认「景胜地板块」按两项都做（城市景区页保留筛选 + 全站 /scenic-spots 加真实筛选）。
+- **改动**：
+  - **餐厅详情 404 修复**：新建 src/data/food/resolve.ts（resolveRestaurant(id, lang) / getAllRestaurantIds() / getSameCityRestaurants()），旧表 53 个 id + 35 城 1750 个城市 JSON id 全覆盖；城市 id 走 cities-i18n/{lang}/{slug}.json 字段级本地化（名称/菜系/地址/描述/标签）。src/pages/food/[id].astro + src/pages/[lang]/food/[id].astro 改用 resolver，getStaticPaths 生成全量 id（EN 1803 + 11 语言各 1803），TYPE_CONFIG 加 default 兜底（cafe/street 等类型不崩），返回链接改为 /{lang}/city/{citySlug}/food/。
+  - **全站 /attractions 死链筛选移除**：EN + [lang] 删除「Browse by Category」#cat-* 死链区块与 categoryCounts 死代码（线上该区块锚点不存在，纯死链）。
+  - **全站 /scenic-spots 加真实筛选**：EN + [lang] 从「仅 nature」改为收录全部景点（~1770 条），新增客户端分类筛选（scenic-category-filter + .scenic-card data-category，全部/历史/文化/自然…共 26 个按钮），分类标签 12 语言化（复用 attractions 的 CAT_LABELS），hero 第三 chip 改用新 key；[lang] 版链接补 lang 前缀。components-strings.ts 新增 scenic_filter_all + scenic_categories_desc（12 语言）。
+  - **AI 页重写 + 12 语言**：AIChatPage.tsx 未登录落地页扩为 6 能力卡（行程/美食/酒店/交通/支付实用/本地攻略）+ 4 项差异化特性（偏好采集/逐日完整计划/实时数据/多语言）+ 本地化示例（读 t.aiPage.prompts）+ 登录墙 CTA。translations.ts 12 语言 aiPage 各补 27 个新键（feat*、features*、powers*、tryExamplesTitle、startChatCta、loginHint），全部手工翻译（MiniMax key 失效，未触发 prebuild）。
+  - **邮箱**（上一会话已完成，本轮复核）：support@/partnerships@ 全仓 0 残留，18801400211@163.com 共 49 处。
+- **验证**（全部通过）：
+  - npx tsc --noEmit 0 错误；pnpm check:i18n 12/12 语言 0 缺失。
+  - node node_modules/astro/astro.js build **26609 页 94.7s 成功**（新增 ~21000 餐厅详情页）。
+  - Playwright 5/5：scenic-spots 筛选（点「历史」只剩 historical、点「全部」还原 1770 卡）、城市美食页筛选 + 卡片链接跳详情 200、attractions 无筛选块、/zh-CN/food/beijing-1 显示新荣记、AI 落地页 zh 文案 + Start Chatting → /auth/login?next=。
+  - dist 抽查：/zh-CN/food/beijing-{1,9,25,26} 生成；详情页含同城 4 卡 + 返回 /zh-CN/city/beijing/food/；contact/terms/privacy 三页含新邮箱；全站 food 页无 category-btn。
+  - 清理 .audit 临时文件 1922 个（按 §7.1 保留清单）。
+- **遗留**：无已知未完成项。scenic-spots 页 SSR ~3MB（1770 卡）偏重，若后续 Lighthouse 性能告警可考虑懒加载/分页（本次未动）。
+- **下个会话**：git 提交本轮改动（src/data/food/resolve.ts、两个 food/[id].astro、attractions ×2、scenic-spots ×2、components-strings.ts、AIChatPage.tsx、translations.ts 等），推送后 gh run watch 部署，线上 curl + Playwright 抽验（/zh-CN/food/beijing-1 200、/zh-CN/scenic-spots 筛选、/zh-CN/ai 日文/中文、contact/terms/privacy 邮箱）。部署前需用户确认。

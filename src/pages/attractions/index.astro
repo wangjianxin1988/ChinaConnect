@@ -79,12 +79,6 @@ for (const city of cities as CityLike[]) {
   }
 }
 
-// Stats: by category
-const categoryCounts: Record<string, number> = {};
-for (const a of allAttractions) {
-  const cat = (a.category || "other").toString();
-  categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
-}
 
 // Sort by most-attractions first
 citiesWithAttractions.sort((a, b) => b.count - a.count);
@@ -146,24 +140,6 @@ const keywords = [
         </span>
       </div>
     </div>
-
-    <!-- Category filter chips (informational; quick visual overview) -->
-    {Object.keys(categoryCounts).length > 0 && (
-      <section class="mb-8">
-        <h2 class="text-xl font-semibold mb-3 text-gray-900" data-i18n="attractions.browseCategory">Browse by Category</h2>
-        <div class="flex flex-wrap gap-2">
-          {Object.entries(categoryCounts).map(([cat, count]) => (
-            <a
-              href={`#cat-${cat}`}
-              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-gray-50 hover:bg-gray-100 text-sm text-gray-700 border border-gray-200"
-            >
-              <span class="font-medium capitalize">{cat}</span>
-              <span class="text-xs text-gray-500">{count}</span>
-            </a>
-          ))}
-        </div>
-      </section>
-    )}
 
     <!-- Featured cities (most attractions) -->
     <section class="mb-10">

@@ -211,7 +211,7 @@ export function generateOrganizationSchema() {
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",
-      email: "support@chinaengage.org",
+      email: "18801400211@163.com",
       availableLanguage: ["English", "Chinese"],
     },
   };

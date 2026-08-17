@@ -23,6 +23,34 @@ const t = translations[lang] || translations.en;
 const pageTitle = (t.scenicSpots && t.scenicSpots.pageTitle) || (translations.en.scenicSpots && translations.en.scenicSpots.pageTitle) || "Scenic Spots - ChinaConnect";
 const pageDescription = (t.scenicSpots && t.scenicSpots.pageDescription) || (translations.en.scenicSpots && translations.en.scenicSpots.pageDescription) || "Explore China's most beautiful natural scenery and scenic spots - mountains, lakes, rivers, forests, and geological wonders across all provinces.";
 
+const CAT_LABELS: Record<string, Record<string, string>> = {
+  cultural: { en: "cultural", ja: "文化", ko: "문화", "zh-CN": "文化", "zh-TW": "文化", th: "วัฒนธรรม", vi: "văn hóa", ru: "культурный", fr: "culturel", de: "kulturell", ar: "ثقافي", fa: "فرهنگی" },
+  natural: { en: "natural", ja: "自然", ko: "자연", "zh-CN": "自然", "zh-TW": "自然", th: "ธรรมชาติ", vi: "thiên nhiên", ru: "природный", fr: "naturel", de: "natürlich", ar: "طبيعي", fa: "طبیعی" },
+  nature: { en: "nature", ja: "自然", ko: "자연", "zh-CN": "自然", "zh-TW": "自然", th: "ธรรมชาติ", vi: "thiên nhiên", ru: "природа", fr: "nature", de: "Natur", ar: "طبيعة", fa: "طبیعت" },
+  landmark: { en: "landmark", ja: "ランドマーク", ko: "랜드마크", "zh-CN": "地标", "zh-TW": "地標", th: "สถานที่สำคัญ", vi: "địa danh", ru: "достопримечательность", fr: "point de repère", de: "Wahrzeichen", ar: "معلم", fa: "نشانه" },
+  street: { en: "street", ja: "通り", ko: "거리", "zh-CN": "街道", "zh-TW": "街道", th: "ถนน", vi: "phố", ru: "улица", fr: "rue", de: "Straße", ar: "شارع", fa: "خیابان" },
+  historical: { en: "historical", ja: "歴史", ko: "역사", "zh-CN": "历史", "zh-TW": "歷史", th: "ประวัติศาสตร์", vi: "lịch sử", ru: "исторический", fr: "historique", de: "historisch", ar: "تاريخي", fa: "تاریخی" },
+  museum: { en: "museum", ja: "博物館", ko: "박물관", "zh-CN": "博物馆", "zh-TW": "博物館", th: "พิพิธภัณฑ์", vi: "bảo tàng", ru: "музей", fr: "musée", de: "Museum", ar: "متحف", fa: "موزه" },
+  park: { en: "park", ja: "公園", ko: "공원", "zh-CN": "公园", "zh-TW": "公園", th: "สวนสาธารณะ", vi: "công viên", ru: "парк", fr: "parc", de: "Park", ar: "حديقة", fa: "پارک" },
+  temple: { en: "temple", ja: "寺院", ko: "사찰", "zh-CN": "寺庙", "zh-TW": "寺廟", th: "วัด", vi: "chùa", ru: "храм", fr: "temple", de: "Tempel", ar: "معبد", fa: "معبد" },
+  modern: { en: "modern", ja: "モダン", ko: "현대", "zh-CN": "现代", "zh-TW": "現代", th: "ทันสมัย", vi: "hiện đại", ru: "современный", fr: "moderne", de: "modern", ar: "حديث", fa: "مدرن" },
+  beach: { en: "beach", ja: "ビーチ", ko: "해변", "zh-CN": "海滩", "zh-TW": "海灘", th: "ชายหาด", vi: "bãi biển", ru: "пляж", fr: "plage", de: "Strand", ar: "شاطئ", fa: "ساحل" },
+  entertainment: { en: "entertainment", ja: "エンタメ", ko: "오락", "zh-CN": "娱乐", "zh-TW": "娛樂", th: "ความบันเทิง", vi: "giải trí", ru: "развлечения", fr: "divertissement", de: "Unterhaltung", ar: "ترفيه", fa: "سرگرمی" },
+  shopping: { en: "shopping", ja: "ショッピング", ko: "쇼핑", "zh-CN": "购物", "zh-TW": "購物", th: "ช้อปปิ้ง", vi: "mua sắm", ru: "шопинг", fr: "shopping", de: "Einkaufen", ar: "تسوق", fa: "خرید" },
+  culture: { en: "culture", ja: "文化", ko: "문화", "zh-CN": "文化", "zh-TW": "文化", th: "วัฒนธรรม", vi: "văn hóa", ru: "культура", fr: "culture", de: "Kultur", ar: "ثقافة", fa: "فرهنگ" },
+  market: { en: "market", ja: "市場", ko: "시장", "zh-CN": "市场", "zh-TW": "市場", th: "ตลาด", vi: "chợ", ru: "рынок", fr: "marché", de: "Markt", ar: "سوق", fa: "بازار" },
+  family: { en: "family", ja: "ファミリー", ko: "가족", "zh-CN": "亲子", "zh-TW": "親子", th: "ครอบครัว", vi: "gia đình", ru: "семейный", fr: "familial", de: "Familie", ar: "عائلي", fa: "خانوادگی" },
+  adventure: { en: "adventure", ja: "冒険", ko: "모험", "zh-CN": "探险", "zh-TW": "探險", th: "ผจญภัย", vi: "phiêu lưu", ru: "приключение", fr: "aventure", de: "Abenteuer", ar: "مغامرة", fa: "ماجراجویی" },
+  "theme-park": { en: "theme park", ja: "テーマパーク", ko: "테마파크", "zh-CN": "主题公园", "zh-TW": "主題公園", th: "สวนสนุก", vi: "công viên giải trí", ru: "тематический парк", fr: "parc à thème", de: "Themenpark", ar: "حديقة ترفيهية", fa: "پارک موضوعی" },
+  seasonal: { en: "seasonal", ja: "季節", ko: "계절", "zh-CN": "季节", "zh-TW": "季節", th: "ตามฤดูกาล", vi: "theo mùa", ru: "сезонный", fr: "saisonnier", de: "saisonal", ar: "موسمي", fa: "فصلی" },
+  resort: { en: "resort", ja: "リゾート", ko: "리조트", "zh-CN": "度假村", "zh-TW": "度假村", th: "รีสอร์ท", vi: "khu nghỉ dưỡng", ru: "курорт", fr: "station", de: "Resort", ar: "منتجع", fa: "استراحتگاه" },
+  island: { en: "island", ja: "島", ko: "섬", "zh-CN": "岛屿", "zh-TW": "島嶼", th: "เกาะ", vi: "đảo", ru: "остров", fr: "île", de: "Insel", ar: "جزيرة", fa: "جزیره" },
+  wellness: { en: "wellness", ja: "ウェルネス", ko: "웰니스", "zh-CN": "养生", "zh-TW": "養生", th: "สุขภาพ", vi: "chăm sóc sức khỏe", ru: "оздоровление", fr: "bien-être", de: "Wellness", ar: "عافية", fa: "تندرستی" },
+  aquarium: { en: "aquarium", ja: "水族館", ko: "아쿠아리움", "zh-CN": "水族馆", "zh-TW": "水族館", th: "พิพิธภัณฑ์สัตว์น้ำ", vi: "thủy cung", ru: "аквариум", fr: "aquarium", de: "Aquarium", ar: "حوض أسماك", fa: "آکواریوم" },
+  sports: { en: "sports", ja: "スポーツ", ko: "스포츠", "zh-CN": "体育", "zh-TW": "體育", th: "กีฬา", vi: "thể thao", ru: "спорт", fr: "sport", de: "Sport", ar: "رياضة", fa: "ورزش" },
+  festival: { en: "festival", ja: "祭り", ko: "축제", "zh-CN": "节日", "zh-TW": "節日", th: "เทศกาล", vi: "lễ hội", ru: "фестиваль", fr: "festival", de: "Festival", ar: "مهرجان", fa: "جشنواره" },
+};
+const catLabel = (cat: string): string => CAT_LABELS[cat]?.[lang] || CAT_LABELS[cat]?.en || cat;
 type AttractionLike = {
   id?: string;
   name?: string;
@@ -44,12 +72,12 @@ type CityLike = {
   attractions?: AttractionLike[];
 };
 
-// Collect nature-category attractions across all cities
+// Collect attractions across all cities
 const allScenic: Array<AttractionLike & { citySlug: string; cityNameEn: string; cityName: string; cityCover: string | undefined; }> = [];
 const citiesWithScenic: Array<{ slug: string; nameEn: string; name: string; count: number; coverImage: string | undefined; }> = [];
 
 for (const city of citySlugs.map((slug) => getCityData(slug, lang)).filter(Boolean) as CityLike[]) {
-  const list = (city.attractions || []).filter((a) => (a.category || "").toLowerCase() === "nature");
+  const list = city.attractions || [];
   if (list.length === 0) continue;
   citiesWithScenic.push({
     slug: city.slug,
@@ -70,6 +98,13 @@ for (const city of citySlugs.map((slug) => getCityData(slug, lang)).filter(Boole
 }
 
 citiesWithScenic.sort((a, b) => b.count - a.count);
+
+const categoryCounts: Record<string, number> = {};
+for (const a of allScenic) {
+  const cat = (a.category || "other").toString();
+  categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
+}
+const categories = Object.keys(categoryCounts).sort();
 
 const scenicSchemas = [
   generateCollectionPageSchema({
@@ -121,7 +156,7 @@ const keywords = [
         </span>
         <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-purple-50 text-purple-700 rounded-full">
           <span>&#127956;</span>
-          {ct(lang, "scenic_nature_desc", "Mountains, lakes, rivers, forests")}
+          {ct(lang, "scenic_categories_desc", "Historical, cultural, natural, modern")}
         </span>
       </div>
     </div>
@@ -132,7 +167,7 @@ const keywords = [
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
         {citiesWithScenic.slice(0, 12).map((city) => (
           <a
-            href={`/city/${city.slug}#attractions`}
+            href={`/${lang}/city/${city.slug}#attractions`}
             class="group bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-green-300 hover:shadow-md transition-all"
           >
             <div class="aspect-[4/3] bg-gray-100 overflow-hidden">
@@ -156,14 +191,35 @@ const keywords = [
       </div>
     </section>
 
+    <!-- Category filter -->
+    <section class="mb-8">
+      <div class="flex flex-wrap gap-2">
+        <button
+          class="scenic-category-filter px-4 py-2 rounded-lg text-sm font-medium transition-colors bg-green-600 text-white"
+          data-category="all"
+        >
+          {ct(lang, "scenic_filter_all", "All")} ({allScenic.length})
+        </button>
+        {categories.map((cat) => (
+          <button
+            class="scenic-category-filter px-4 py-2 rounded-lg text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200"
+            data-category={cat}
+          >
+            {catLabel(cat)} ({categoryCounts[cat]})
+          </button>
+        ))}
+      </div>
+    </section>
+
     <!-- All scenic spots -->
     <section class="mb-10">
       <h2 class="text-xl font-semibold mb-4 text-gray-900" data-i18n="scenicSpots.allSpots">All Scenic Spots</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {allScenic.map((a) => (
           <a
-            href={`/city/${a.citySlug}#attractions`}
-            class="group bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-green-300 hover:shadow-md transition-all"
+            href={`/${lang}/city/${a.citySlug}#attractions`}
+            class="scenic-card group bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-green-300 hover:shadow-md transition-all"
+            data-category={(a.category || "other").toString()}
           >
             <div class="aspect-[16/9] bg-gray-100 overflow-hidden">
               {a.image ? (
@@ -190,3 +246,31 @@ const keywords = [
     <EmbeddedAppRecommendation client:idle lang={lang} categories={["travel", "maps", "transport"]} title={t.scenicSpots?.appTitle ?? "Plan Your Scenic Spot Visit"} subtitle={t.scenicSpots?.appSubtitle ?? "Apps for finding and navigating scenic spots in China"} />
   </main>
 </BaseLayout>
+
+<script>
+  // Client-side category filter for the scenic spots grid
+  document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.scenic-card');
+    const filterButtons = document.querySelectorAll('.scenic-category-filter');
+    let activeCategory = 'all';
+
+    function filterCards() {
+      cards.forEach((card) => {
+        const category = card.getAttribute('data-category');
+        const matches = activeCategory === 'all' || category === activeCategory;
+        (card as HTMLElement).style.display = matches ? '' : 'none';
+      });
+    }
+
+    filterButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        activeCategory = btn.getAttribute('data-category') || 'all';
+        filterButtons.forEach((b) => {
+          b.className = 'scenic-category-filter px-4 py-2 rounded-lg text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200';
+        });
+        btn.className = 'scenic-category-filter px-4 py-2 rounded-lg text-sm font-medium transition-colors bg-green-600 text-white';
+        filterCards();
+      });
+    });
+  });
+</script>

@@ -1,43 +1,40 @@
 ---
 
 import RestaurantDetail from "@/components/food/RestaurantDetail";
-import { cities } from "@/data/food/cities";
-import { getRestaurantById, restaurants } from "@/data/food/restaurants";
+import { getAllRestaurantIds, resolveRestaurant, getSameCityRestaurants } from "@/data/food/resolve";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { getLangFromUrl } from "@/i18n/utils";
 import { EN_FOOD_OVERRIDES } from "@/data/food/en-food-overrides";
 
 export function getStaticPaths() {
-  return restaurants.map((r) => ({
-    params: { id: r.id },
+  return getAllRestaurantIds().map((id) => ({
+    params: { id },
   }));
 }
 
 const { id } = Astro.params;
-const restaurant = getRestaurantById(id as string);
+const restaurant = resolveRestaurant(id as string, "en");
 
 if (!restaurant) {
   return Astro.redirect("/food");
 }
 
-const city = cities.find((c) => c.id === restaurant.city);
-const sameCityRestaurants = restaurants
-  .filter((r) => r.city === restaurant.city && r.id !== restaurant.id)
-  .slice(0, 4);
+const localCityName = restaurant.cityNameEn;
+const sameCityRestaurants = getSameCityRestaurants(id as string, "en", 4);
 
-const TYPE_CONFIG = {
-  michelin: { label: "米其林", labelEn: "Michelin", icon: "⭐", stars: restaurant.star, color: "text-[#1E3A5F]" },
+const TYPE_CONFIG: Record<string, { label: string; labelEn: string; icon: string; color: string }> = {
+  michelin: { label: "米其林", labelEn: "Michelin", icon: "⭐", color: "text-[#1E3A5F]" },
   blackpearl: {
     label: "黑珍珠",
     labelEn: "Black Pearl",
     icon: "💎",
-    diamonds: restaurant.diamond,
     color: "text-[#2D1B4E]",
   },
   local: { label: "本地推荐", labelEn: "Local", icon: "🔥", color: "text-[#B8383D]" },
+  default: { label: "精选", labelEn: "Featured", icon: "🍽️", color: "text-gray-700" },
 };
 
-const config = TYPE_CONFIG[restaurant.type];
+const config = TYPE_CONFIG[restaurant.type] || TYPE_CONFIG.default;
 
 // Convert to RestaurantDetail-compatible format
 const lang = getLangFromUrl(Astro.url);
@@ -75,9 +72,9 @@ const restaurantDetail = {
     <header class="bg-white shadow-sm sticky top-0 z-50">
       <div class="max-w-4xl mx-auto px-4 py-4">
         <div class="flex items-center justify-between">
-          <a href={`/food?city=${restaurant.city}`} class="flex items-center gap-2 text-gray-600 hover:text-gray-900">
+          <a href={`/city/${restaurant.citySlug}/food/`} class="flex items-center gap-2 text-gray-600 hover:text-gray-900">
             <span aria-hidden="true">←</span>
-            <span data-i18n="foodPage.back" data-i18n-vars={JSON.stringify({ city: city?.nameEn || restaurant.city })}>Back</span>
+            <span data-i18n="foodPage.back" data-i18n-vars={JSON.stringify({ city: localCityName })}>Back</span>
           </a>
           <span class={`text-sm font-medium ${config.color}`}>
             {config.icon} {showTitleCn ? config.label : config.labelEn}
@@ -95,7 +92,7 @@ const restaurantDetail = {
       {/* Similar Restaurants */}
       {sameCityRestaurants.length > 0 && (
         <div class="bg-white rounded-xl shadow-md p-6 mt-6">
-          <h2 class="text-lg font-bold text-gray-900 mb-4" data-i18n="foodPage.otherRestaurants" data-i18n-vars={JSON.stringify({ city: city?.nameEn || restaurant.city })}>Other restaurants nearby</h2>
+          <h2 class="text-lg font-bold text-gray-900 mb-4" data-i18n="foodPage.otherRestaurants" data-i18n-vars={JSON.stringify({ city: localCityName })}>Other restaurants nearby</h2>
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
             {sameCityRestaurants.map(r => (
               <a href={`/food/${r.id}`} class="block group">

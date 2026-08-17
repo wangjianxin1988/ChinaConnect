@@ -215,3 +215,42 @@ export function buildFilterGroups(restaurants: Restaurant[]): FilterGroup[] {
   ];
   return groups;
 }
+
+/**
+ * Price/tag-based tagging used by the city food page filters and the city
+ * detail food highlights. "local" restaurants are split by street-food tag,
+ * then price; Michelin/Black Pearl stay in their own type groups so those
+ * filters are always meaningful on city pages.
+ */
+export type RestaurantFilterTag = "local_recommend" | "affordable" | "street_food";
+
+const AFFORDABLE_MAX_PRICE = 100;
+const LOCAL_RECOMMEND_MAX_PRICE = 150;
+
+export function getRestaurantHighlightTag(r: {
+  type?: string;
+  tags?: string[];
+  avgPrice?: number;
+}): RestaurantFilterTag | null {
+  const type = r.type || "";
+  const price = Number(r.avgPrice) || 0;
+  if (type === "local") {
+    const tags = r.tags || [];
+    if (tags.some((t) => t.includes("苍蝇馆子") || t.includes("street"))) return "street_food";
+    if (price <= AFFORDABLE_MAX_PRICE) return "affordable";
+    if (price <= LOCAL_RECOMMEND_MAX_PRICE) return "local_recommend";
+  }
+  if (type !== "local" && price <= AFFORDABLE_MAX_PRICE) return "affordable";
+  return null;
+}
+
+/** Single filter category per restaurant (chip counts always match cards). */
+export function getRestaurantFilterCategory(r: {
+  type?: string;
+  tags?: string[];
+  avgPrice?: number;
+}): string {
+  if (r.type === "michelin") return "michelin";
+  if (r.type === "blackpearl") return "blackpearl";
+  return getRestaurantHighlightTag(r) ?? "other";
+}
