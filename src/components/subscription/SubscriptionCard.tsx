@@ -4,6 +4,7 @@
  */
 
 import React from "react";
+import { accountT, toAccountLang, type AccountLang } from "@/components/account/account-strings";
 import { getCurrentTier, TIER_NAMES, TIER_LIMITS, type SubscriptionTier } from "@/lib/subscription";
 import {
   getRemainingRequests,
@@ -13,7 +14,7 @@ import {
 } from "@/lib/usage-tracker";
 
 interface SubscriptionCardProps {
-  language?: "en" | "zh";
+  language?: AccountLang | string;
   compact?: boolean;
 }
 
@@ -51,13 +52,14 @@ export const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
   language = "en",
   compact = false,
 }) => {
+  const lang = toAccountLang(language);
   const tier = getCurrentTier();
   const [remaining, setRemaining] = React.useState(getRemainingRequests());
   const [used, setUsed] = React.useState(getUsageCount());
   const [max, setMax] = React.useState(getMaxRequests());
   const [percentage, setPercentage] = React.useState(getUsagePercentage());
   const colors = TIER_COLORS[tier];
-  const tierName = TIER_NAMES[tier][language];
+  const tierName = TIER_NAMES[tier][toAccountLang(language)];
 
   const isUnlimited = max === -1;
 
@@ -89,18 +91,18 @@ export const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
             {tierName}
           </span>
           <a href="/pricing" className="text-xs text-blue-600 hover:text-blue-800 hover:underline">
-            {language === "zh" ? "升级" : "Upgrade"}
+            {accountT(lang, "upgradeShort")}
           </a>
         </div>
         <div className="text-xs text-gray-600">
           {isUnlimited ? (
             <span className="text-green-600 font-medium">
-              {language === "zh" ? "✦ 无限AI请求" : "✦ Unlimited AI requests"}
+              {accountT(lang, "unlimitedAi")}
             </span>
           ) : (
             <div>
               <div className="flex justify-between mb-1">
-                <span>{language === "zh" ? "AI请求" : "AI Requests"}</span>
+                <span>{accountT(lang, "aiRequests")}</span>
                 <span className="font-medium">
                   {remaining}/{max}
                 </span>
@@ -129,7 +131,7 @@ export const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
       <div className="flex items-center justify-between mb-4">
         <div>
           <span className={`text-xs font-medium px-2.5 py-1 rounded-full ${colors.badge}`}>
-            {language === "zh" ? "当前套餐" : "Current Plan"}
+            {accountT(lang, "currentPlanLabel")}
           </span>
           <h3 className={`text-lg font-bold mt-2 ${colors.text}`}>{tierName}</h3>
         </div>
@@ -145,10 +147,10 @@ export const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
       <div className="mb-4">
         <div className="flex justify-between text-sm mb-1.5">
           <span className="text-gray-600">
-            {language === "zh" ? "本月AI请求" : "AI Requests This Month"}
+            {accountT(lang, "monthlyAi")}
           </span>
           <span className={`font-semibold ${colors.text}`}>
-            {isUnlimited ? (language === "zh" ? "无限" : "Unlimited") : `${used}/${max}`}
+            {isUnlimited ? accountT(lang, "unlimited") : `${used}/${max}`}
           </span>
         </div>
         {!isUnlimited && (
@@ -167,12 +169,8 @@ export const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
             </div>
             <p className="text-xs text-gray-500 mt-1">
               {remaining > 0
-                ? language === "zh"
-                  ? `剩余 ${remaining} 次`
-                  : `${remaining} remaining`
-                : language === "zh"
-                  ? "已达上限"
-                  : "Limit reached"}
+                ? accountT(lang, "remainingCount", { n: remaining })
+                : accountT(lang, "limitReached")}
             </p>
           </>
         )}
@@ -195,7 +193,7 @@ export const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
                 d="M5 13l4 4L19 7"
               />
             </svg>
-            {language === "zh" ? "保存行程" : "Save itineraries"}
+            {accountT(lang, "saveItineraries")}
           </div>
         )}
         {TIER_LIMITS[tier].exportPDF && (
@@ -213,7 +211,7 @@ export const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
                 d="M5 13l4 4L19 7"
               />
             </svg>
-            {language === "zh" ? "PDF导出" : "PDF export"}
+            {accountT(lang, "pdfExport")}
           </div>
         )}
         {TIER_LIMITS[tier].premiumCustomization && (
@@ -231,7 +229,7 @@ export const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
                 d="M5 13l4 4L19 7"
               />
             </svg>
-            {language === "zh" ? "高级自定义" : "Premium customization"}
+            {accountT(lang, "premiumCustomization")}
           </div>
         )}
         {TIER_LIMITS[tier].businessTemplates && (
@@ -249,7 +247,7 @@ export const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
                 d="M5 13l4 4L19 7"
               />
             </svg>
-            {language === "zh" ? "商务模板" : "Business templates"}
+            {accountT(lang, "businessTemplates")}
           </div>
         )}
       </div>
@@ -260,7 +258,7 @@ export const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
           href="/pricing"
           className="block w-full text-center py-2.5 px-4 rounded-lg bg-blue-600 text-white font-medium text-sm hover:bg-blue-700 transition-colors"
         >
-          {language === "zh" ? "升级套餐" : "Upgrade Plan"}
+          {accountT(lang, "upgradePlan")}
         </a>
       )}
     </div>

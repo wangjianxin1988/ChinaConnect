@@ -517,12 +517,15 @@ export default function AIChatPage() {
             {/* Core panel: usage banner + chat. Always first so the AI surface
                 remains the widest block across breakpoints. */}
             <div className="mb-3">
-              <MembershipStatusBar />
+              <MembershipStatusBar language={lang} />
             </div>
 
             {showExhaustedBanner && (
               <div className="mb-3">
-                <UsageExhaustedBanner onDismiss={() => setShowExhaustedBanner(false)} />
+                <UsageExhaustedBanner
+                  language={lang}
+                  onDismiss={() => setShowExhaustedBanner(false)}
+                />
               </div>
             )}
 
@@ -560,7 +563,7 @@ export default function AIChatPage() {
                 unauthenticated visitors see the upgrade path after the chat. */}
             {!chatStarted && (
               <div className="mt-6">
-                <SubscriptionCard />
+                <SubscriptionCard language={lang} />
               </div>
             )}
           </div>

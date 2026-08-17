@@ -116,7 +116,24 @@ function createAuthStorage() {
 }
 
 function callbackUrl(): string {
-  if (typeof window !== "undefined") return `${window.location.origin}/auth/callback`;
+  if (typeof window !== "undefined") {
+    // Keep OAuth callbacks on the user's current language (e.g. /ja/auth/callback)
+    // so the post-login redirect never drops to the English account page.
+    const w = window as unknown as { __I18N__?: { serverLang?: string } };
+    const serverLang = w.__I18N__?.serverLang || "";
+    let lang = serverLang && serverLang !== "en" ? serverLang : "";
+    if (!lang) {
+      try {
+        const stored = localStorage.getItem("chinaconnect_language");
+        if (stored && stored !== "en") lang = stored;
+      } catch {
+        // ignore
+      }
+    }
+    return lang
+      ? `${window.location.origin}/${lang}/auth/callback`
+      : `${window.location.origin}/auth/callback`;
+  }
   return "/auth/callback";
 }
 

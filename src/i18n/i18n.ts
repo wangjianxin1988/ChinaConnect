@@ -74,6 +74,15 @@ export function detectBrowserLanguage(): Language {
 export function getCurrentLanguage(): Language {
   if (typeof window === "undefined") return "en";
 
+  // The URL the server actually served is authoritative (e.g. /ja/...): client
+  // islands like the AI chat must render in that language even before the
+  // runtime script syncs localStorage on first paint.
+  const w = window as unknown as { __I18N__?: { serverLang?: Language } };
+  const serverLang = w.__I18N__?.serverLang;
+  if (serverLang && isValidLanguage(serverLang)) {
+    return serverLang;
+  }
+
   const stored = localStorage.getItem(STORAGE_KEY) as Language | null;
   if (stored && isValidLanguage(stored)) {
     return stored;

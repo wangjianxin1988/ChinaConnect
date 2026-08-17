@@ -16,6 +16,7 @@ import { extractRouteFromConversation, saveRoute } from "@/lib/ai/route-saver";
 import { getCurrentUser } from "@/lib/auth/supabase-auth";
 import { getCurrentTier, TIER_LIMITS, type SubscriptionTier } from "@/lib/subscription";
 import { UpgradePrompt } from "@/components/subscription/UpgradePrompt";
+import { accountT, toAccountLang, type AccountLang } from "@/components/account/account-strings";
 import React, {
   useState,
   useRef,
@@ -95,16 +96,15 @@ class ChatErrorBoundary extends Component<
 
   render() {
     if (this.state.hasError) {
-      const isZh = this.props.language === "zh";
+      const lang = toAccountLang(this.props.language || "en");
       return (
         <div className="flex flex-col items-center justify-center h-full p-8 text-center">
           <div className="text-5xl mb-4">😵</div>
           <h3 className="text-lg font-semibold text-gray-800 mb-2">
-            {isZh ? "出了点问题" : "Something went wrong"}
+            {accountT(lang, "errorTitle")}
           </h3>
           <p className="text-sm text-gray-500 mb-4 max-w-md">
-            {this.state.error?.message ||
-              (isZh ? "发生了一个意外错误" : "An unexpected error occurred")}
+            {this.state.error?.message || accountT(lang, "errorDesc")}
           </p>
           <button
             onClick={() => {
@@ -113,7 +113,7 @@ class ChatErrorBoundary extends Component<
             }}
             className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
           >
-            {isZh ? "重新加载" : "Reload Page"}
+            {accountT(lang, "reloadPage")}
           </button>
         </div>
       );
@@ -752,7 +752,7 @@ export const AIChat: React.FC<AIChatProps> = ({
   }, []);
 
   return (
-    <ChatErrorBoundary language={isZh ? "zh" : "en"}>
+    <ChatErrorBoundary language={language}>
       <div className="flex h-full bg-gray-50">
         {/* Sidebar - Conversations + Itineraries (single panel, tabbed) */}
         {showItinerary && (
@@ -1251,7 +1251,7 @@ export const AIChat: React.FC<AIChatProps> = ({
           currentTier={currentTier}
           requiredTier={upgradePrompt.requiredTier}
           featureName={upgradePrompt.featureName}
-          language={isZh ? "zh" : "en"}
+          language={language}
         />
 
         {/* Animation styles */}

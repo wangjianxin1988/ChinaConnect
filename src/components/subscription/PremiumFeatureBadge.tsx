@@ -5,11 +5,12 @@
  */
 
 import React from "react";
+import { accountT, toAccountLang, type AccountLang } from "@/components/account/account-strings";
 import { TIER_NAMES, type SubscriptionTier } from "@/lib/subscription";
 
 interface PremiumFeatureBadgeProps {
   requiredTier: SubscriptionTier;
-  language?: "en" | "zh";
+  language?: AccountLang | string;
   size?: "sm" | "xs";
   onClick?: () => void;
 }
@@ -29,9 +30,9 @@ export const PremiumFeatureBadge: React.FC<PremiumFeatureBadgeProps> = ({
 }) => {
   if (requiredTier === "free") return null;
 
-  const tierName = TIER_NAMES[requiredTier][language];
+  const lang = toAccountLang(language);
+  const tierName = TIER_NAMES[requiredTier][lang];
   const colorClasses = TIER_COLORS[requiredTier];
-  const isZh = language === "zh";
   const sizeClasses = size === "sm" ? "text-xs px-2 py-0.5" : "text-[10px] px-1.5 py-0.5";
 
   const Wrapper = onClick ? "button" : "span";
@@ -56,7 +57,7 @@ export const PremiumFeatureBadge: React.FC<PremiumFeatureBadgeProps> = ({
           d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
         />
       </svg>
-      {isZh ? `${tierName}` : tierName}
+      {tierName}
     </Wrapper>
   );
 };

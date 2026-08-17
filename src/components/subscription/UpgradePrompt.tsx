@@ -5,6 +5,12 @@
  */
 
 import React from "react";
+import {
+  accountT,
+  toAccountLang,
+  type AccountLang,
+  type AccountKey,
+} from "@/components/account/account-strings";
 import type { SubscriptionTier } from "@/lib/subscription";
 import { TIER_NAMES, TIER_PRICING, TIER_LIMITS, TIER_FEATURES } from "@/lib/subscription";
 
@@ -14,16 +20,16 @@ interface UpgradePromptProps {
   currentTier: SubscriptionTier;
   requiredTier: SubscriptionTier;
   featureName: string;
-  language?: "en" | "zh";
+  language?: AccountLang | string;
 }
 
-const FEATURE_NAMES: Record<string, { en: string; zh: string }> = {
-  saveItineraries: { en: "Save Itineraries", zh: "保存行程" },
-  exportPDF: { en: "PDF Export", zh: "PDF导出" },
-  conversationHistory: { en: "Conversation History", zh: "对话历史" },
-  aiRequests: { en: "AI Requests", zh: "AI请求次数" },
-  premiumCustomization: { en: "Premium Customization", zh: "高级自定义" },
-  businessTemplates: { en: "Business Templates", zh: "商务模板" },
+const FEATURE_NAME_KEYS: Record<string, AccountKey> = {
+  saveItineraries: "featSaveItineraries",
+  exportPDF: "featPdfExport",
+  conversationHistory: "featConversationHistory",
+  aiRequests: "featAiRequests",
+  premiumCustomization: "featPremiumCustomization",
+  businessTemplates: "featBusinessTemplates",
 };
 
 const TIER_ICONS: Record<SubscriptionTier, string> = {
@@ -43,12 +49,12 @@ export const UpgradePrompt: React.FC<UpgradePromptProps> = ({
 }) => {
   if (!isOpen) return null;
 
-  const isZh = language === "zh";
-  const feature = FEATURE_NAMES[featureName] || { en: featureName, zh: featureName };
-  const currentName = TIER_NAMES[currentTier]?.[language] || currentTier;
-  const requiredName = TIER_NAMES[requiredTier]?.[language] || requiredTier;
+  const lang = toAccountLang(language);
+  const featureLabelKey = FEATURE_NAME_KEYS[featureName];
+  const currentName = TIER_NAMES[currentTier]?.[lang] || currentTier;
+  const requiredName = TIER_NAMES[requiredTier]?.[lang] || requiredTier;
   const requiredPricing = TIER_PRICING[requiredTier];
-  const requiredFeatures = TIER_FEATURES[requiredTier]?.[language] || [];
+  const requiredFeatures = TIER_FEATURES[requiredTier]?.[lang] || [];
 
   // Calculate time-limited offer (simulated: offer expires in ~3 days)
   const offerHours = 72;
@@ -87,12 +93,12 @@ export const UpgradePrompt: React.FC<UpgradePromptProps> = ({
               <span className="text-3xl">{TIER_ICONS[requiredTier]}</span>
             </div>
             <h2 className="text-xl font-bold text-white mb-1">
-              {isZh ? `升级到${requiredName}` : `Upgrade to ${requiredName}`}
+              {accountT(lang, "upgradeTo", { name: requiredName })}
             </h2>
             <p className="text-sm text-white/70">
-              {isZh
-                ? `解锁 ${feature.zh} 及更多高级功能`
-                : `Unlock ${feature.en} and more premium features`}
+              {accountT(lang, "unlockFeature", {
+                feature: accountT(lang, featureLabelKey || "featAiRequests"),
+              })}
             </p>
           </div>
         </div>
@@ -102,13 +108,9 @@ export const UpgradePrompt: React.FC<UpgradePromptProps> = ({
           <div className="flex items-center gap-2 bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-200 rounded-xl px-4 py-3 mb-5">
             <span className="text-lg">🔥</span>
             <div className="flex-1">
-              <p className="text-xs font-bold text-orange-800">
-                {isZh ? "限时优惠" : "Limited Time Offer"}
-              </p>
+              <p className="text-xs font-bold text-orange-800">{accountT(lang, "limitedOffer")}</p>
               <p className="text-[11px] text-orange-600">
-                {isZh
-                  ? `首月享 20% 折扣，仅剩 ${offerHours} 小时`
-                  : `Get 20% off your first month — ${offerHours}h remaining`}
+                {accountT(lang, "offerFirstMonth", { h: offerHours })}
               </p>
             </div>
             <span className="text-xs font-bold text-orange-700 bg-orange-100 px-2 py-1 rounded-full">
@@ -119,7 +121,7 @@ export const UpgradePrompt: React.FC<UpgradePromptProps> = ({
           {/* Tier comparison */}
           <div className="flex items-center gap-3 mb-5">
             <div className="flex-1 text-center p-3 bg-gray-50 rounded-xl border border-gray-200">
-              <span className="text-xs text-gray-400 block mb-1">{isZh ? "当前" : "Current"}</span>
+              <span className="text-xs text-gray-400 block mb-1">{accountT(lang, "current")}</span>
               <span className="text-2xl">{TIER_ICONS[currentTier]}</span>
               <span className="font-semibold text-gray-600 text-sm block mt-1">{currentName}</span>
             </div>
@@ -140,7 +142,7 @@ export const UpgradePrompt: React.FC<UpgradePromptProps> = ({
             </div>
             <div className="flex-1 text-center p-3 bg-blue-50 rounded-xl border-2 border-blue-300">
               <span className="text-xs text-blue-500 block mb-1">
-                {isZh ? "升级到" : "Upgrade to"}
+                {accountT(lang, "upgradeToLabel")}
               </span>
               <span className="text-2xl">{TIER_ICONS[requiredTier]}</span>
               <span className="font-bold text-blue-700 text-sm block mt-1">{requiredName}</span>
@@ -150,7 +152,7 @@ export const UpgradePrompt: React.FC<UpgradePromptProps> = ({
           {/* Feature list */}
           <div className="mb-5">
             <h4 className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">
-              {isZh ? "您将获得" : "What you'll get"}
+              {accountT(lang, "whatYouGet")}
             </h4>
             <div className="space-y-2">
               {requiredFeatures.slice(0, 5).map((feat, i) => (
@@ -180,12 +182,13 @@ export const UpgradePrompt: React.FC<UpgradePromptProps> = ({
           <div className="bg-gray-50 rounded-xl p-4 mb-5">
             <div className="flex items-baseline justify-center gap-1">
               <span className="text-2xl font-bold text-gray-900">${requiredPricing.monthly}</span>
-              <span className="text-sm text-gray-500">/{isZh ? "月" : "mo"}</span>
+              <span className="text-sm text-gray-500">/{accountT(lang, "monthUnit")}</span>
             </div>
             <p className="text-xs text-gray-400 text-center mt-1">
-              {isZh
-                ? `或 $${requiredPricing.annual}/年 (省 ${Math.round((1 - requiredPricing.annual / (requiredPricing.monthly * 12)) * 100)}%)`
-                : `or $${requiredPricing.annual}/yr (save ${Math.round((1 - requiredPricing.annual / (requiredPricing.monthly * 12)) * 100)}%)`}
+              {accountT(lang, "annualPrice", {
+                annual: requiredPricing.annual,
+                p: Math.round((1 - requiredPricing.annual / (requiredPricing.monthly * 12)) * 100),
+              })}
             </p>
           </div>
 
@@ -195,13 +198,13 @@ export const UpgradePrompt: React.FC<UpgradePromptProps> = ({
               onClick={onClose}
               className="flex-1 px-4 py-3 bg-gray-100 text-gray-600 rounded-xl hover:bg-gray-200 transition-colors text-sm font-medium"
             >
-              {isZh ? "稍后再说" : "Maybe Later"}
+              {accountT(lang, "maybeLater")}
             </button>
             <a
               href="/pricing"
               className="flex-1 px-4 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl hover:from-blue-700 hover:to-indigo-700 transition-all text-sm font-bold text-center shadow-lg shadow-blue-200"
             >
-              {isZh ? "立即升级" : "Upgrade Now"}
+              {accountT(lang, "upgradeNow")}
             </a>
           </div>
 
@@ -216,7 +219,7 @@ export const UpgradePrompt: React.FC<UpgradePromptProps> = ({
                   d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
                 />
               </svg>
-              {isZh ? "安全支付" : "Secure payment"}
+              {accountT(lang, "securePayment")}
             </span>
             <span className="flex items-center gap-1">
               <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -227,7 +230,7 @@ export const UpgradePrompt: React.FC<UpgradePromptProps> = ({
                   d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
                 />
               </svg>
-              {isZh ? "随时取消" : "Cancel anytime"}
+              {accountT(lang, "cancelAnytime")}
             </span>
             <span className="flex items-center gap-1">
               <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -238,7 +241,7 @@ export const UpgradePrompt: React.FC<UpgradePromptProps> = ({
                   d="M13 10V3L4 14h7v7l9-11h-7z"
                 />
               </svg>
-              {isZh ? "即时生效" : "Instant access"}
+              {accountT(lang, "instantAccess")}
             </span>
           </div>
         </div>

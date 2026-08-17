@@ -5,33 +5,20 @@
  */
 
 import React from "react";
+import { accountT, toAccountLang, type AccountLang } from "@/components/account/account-strings";
 import {
   getCurrentTier,
   TIER_NAMES,
   TIER_PRICING,
+  TIER_FEATURES,
   type SubscriptionTier,
 } from "@/lib/subscription";
 
 interface UsageExhaustedBannerProps {
-  language?: "en" | "zh";
+  language?: AccountLang | string;
   onDismiss?: () => void;
   className?: string;
 }
-
-const UPGRADE_SUGGESTIONS: Record<string, { en: string[]; zh: string[] }> = {
-  explorer: {
-    en: ["4x more AI requests", "Save your itineraries", "Priority support"],
-    zh: ["4倍AI请求次数", "保存行程", "优先支持"],
-  },
-  traveler: {
-    en: ["8x more requests", "PDF export", "Premium customization"],
-    zh: ["8倍请求次数", "PDF导出", "高级自定义"],
-  },
-  business: {
-    en: ["Unlimited requests", "Business templates", "Team collaboration"],
-    zh: ["无限请求", "商务模板", "团队协作"],
-  },
-};
 
 export const UsageExhaustedBanner: React.FC<UsageExhaustedBannerProps> = ({
   language = "en",
@@ -39,7 +26,7 @@ export const UsageExhaustedBanner: React.FC<UsageExhaustedBannerProps> = ({
   className = "",
 }) => {
   const currentTier = getCurrentTier();
-  const isZh = language === "zh";
+  const lang = toAccountLang(language);
 
   // Determine suggested upgrade tier
   const tierOrder: SubscriptionTier[] = ["free", "explorer", "traveler", "business"];
@@ -48,9 +35,9 @@ export const UsageExhaustedBanner: React.FC<UsageExhaustedBannerProps> = ({
 
   if (!suggestedTier) return null;
 
-  const suggestions = UPGRADE_SUGGESTIONS[suggestedTier]?.[language] || [];
+  const suggestions = TIER_FEATURES[suggestedTier]?.[lang] || [];
   const pricing = TIER_PRICING[suggestedTier];
-  const suggestedName = TIER_NAMES[suggestedTier][language];
+  const suggestedName = TIER_NAMES[suggestedTier][lang];
 
   return (
     <div
@@ -84,13 +71,9 @@ export const UsageExhaustedBanner: React.FC<UsageExhaustedBannerProps> = ({
             <span className="text-xl">⚡</span>
           </div>
           <div>
-            <h3 className="font-bold text-gray-900 text-sm">
-              {isZh ? "本月AI请求已用完" : "Monthly AI Requests Used Up"}
-            </h3>
+            <h3 className="font-bold text-gray-900 text-sm">{accountT(lang, "exhaustedTitle")}</h3>
             <p className="text-xs text-gray-600 mt-0.5">
-              {isZh
-                ? `升级到${suggestedName}以继续使用AI旅行助手`
-                : `Upgrade to ${suggestedName} to continue using AI travel assistant`}
+              {accountT(lang, "upgradeToContinue", { tier: suggestedName })}
             </p>
           </div>
         </div>
@@ -126,15 +109,13 @@ export const UsageExhaustedBanner: React.FC<UsageExhaustedBannerProps> = ({
             href="/pricing"
             className="flex-1 px-4 py-2.5 bg-gradient-to-r from-amber-500 to-orange-500 text-white rounded-xl font-medium text-sm text-center hover:from-amber-600 hover:to-orange-600 transition-all shadow-sm shadow-amber-200"
           >
-            {isZh
-              ? `升级到 ${suggestedName} — $${pricing.monthly}/月`
-              : `Upgrade to ${suggestedName} — $${pricing.monthly}/mo`}
+            {accountT(lang, "upgradeCta", { tier: suggestedName, price: pricing.monthly })}
           </a>
         </div>
 
         {/* Fine print */}
         <p className="text-[10px] text-gray-400 text-center mt-2">
-          {isZh ? "随时可以取消 · 立即生效" : "Cancel anytime · Instant activation"}
+          {accountT(lang, "cancelInstant")}
         </p>
       </div>
     </div>

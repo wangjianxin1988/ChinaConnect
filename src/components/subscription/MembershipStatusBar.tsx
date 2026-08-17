@@ -5,6 +5,7 @@
  */
 
 import React from "react";
+import { accountT, toAccountLang, type AccountLang } from "@/components/account/account-strings";
 import { getCurrentTier, TIER_NAMES, type SubscriptionTier } from "@/lib/subscription";
 import {
   getRemainingRequests,
@@ -14,7 +15,7 @@ import {
 } from "@/lib/usage-tracker";
 
 interface MembershipStatusBarProps {
-  language?: "en" | "zh";
+  language?: AccountLang | string;
 }
 
 const TIER_STYLES: Record<
@@ -61,10 +62,10 @@ export const MembershipStatusBar: React.FC<MembershipStatusBarProps> = ({ langua
   const [max, setMax] = React.useState(getMaxRequests());
   const [percentage, setPercentage] = React.useState(getUsagePercentage());
 
+  const lang = toAccountLang(language);
   const styles = TIER_STYLES[tier];
-  const tierName = TIER_NAMES[tier][language];
+  const tierName = TIER_NAMES[tier][lang];
   const isUnlimited = max === -1;
-  const isZh = language === "zh";
 
   React.useEffect(() => {
     const refresh = () => {
@@ -104,7 +105,7 @@ export const MembershipStatusBar: React.FC<MembershipStatusBarProps> = ({ langua
         {isUnlimited ? (
           <span className="text-xs text-green-600 font-medium flex items-center gap-1">
             <span className="w-1.5 h-1.5 bg-green-500 rounded-full" />
-            {isZh ? "无限请求" : "Unlimited"}
+            {accountT(lang, "unlimitedRequests")}
           </span>
         ) : (
           <div className="flex items-center gap-2 flex-1 min-w-0">
@@ -135,7 +136,7 @@ export const MembershipStatusBar: React.FC<MembershipStatusBarProps> = ({ langua
           href="/pricing"
           className="text-xs font-medium text-blue-600 hover:text-blue-800 hover:bg-blue-100 px-2 py-1 rounded-lg transition-colors whitespace-nowrap"
         >
-          {isZh ? "升级" : "Upgrade"}
+          {accountT(lang, "upgradeShort")}
         </a>
       )}
     </div>

@@ -5,6 +5,7 @@
  */
 
 import React from "react";
+import { accountT, toAccountLang, type AccountLang, type AccountKey } from "./account-strings";
 import {
   getCurrentTier,
   TIER_NAMES,
@@ -65,7 +66,7 @@ function loadBillingData(): BillingRecord[] {
 }
 
 interface BillingHistoryProps {
-  language?: "en" | "zh";
+  language?: AccountLang | string;
 }
 
 const STATUS_STYLES: Record<string, string> = {
@@ -75,15 +76,19 @@ const STATUS_STYLES: Record<string, string> = {
   refunded: "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400",
 };
 
-const STATUS_LABELS: Record<string, { en: string; zh: string }> = {
-  paid: { en: "Paid", zh: "已付款" },
-  pending: { en: "Pending", zh: "待付款" },
-  failed: { en: "Failed", zh: "失败" },
-  refunded: { en: "Refunded", zh: "已退款" },
+const STATUS_KEYS: Record<BillingRecord["status"], AccountKey> = {
+  paid: "statusPaid",
+  pending: "statusPending",
+  failed: "statusFailed",
+  refunded: "statusRefunded",
 };
 
+function statusLabel(lang: AccountLang, status: BillingRecord["status"]): string {
+  return accountT(lang, STATUS_KEYS[status]);
+}
+
 export const BillingHistory: React.FC<BillingHistoryProps> = ({ language = "en" }) => {
-  const isZh = language === "zh";
+  const lang = toAccountLang(language);
   const [records, setRecords] = React.useState<BillingRecord[]>([]);
   const [currentTier, setCurrentTierState] = React.useState<SubscriptionTier>("free");
   const [mounted, setMounted] = React.useState(false);
@@ -97,7 +102,7 @@ export const BillingHistory: React.FC<BillingHistoryProps> = ({ language = "en" 
   if (!mounted) return null;
 
   const isFree = currentTier === "free";
-  const tierName = TIER_NAMES[currentTier][language];
+  const tierName = TIER_NAMES[currentTier][lang];
   const pricing = TIER_PRICING[currentTier];
 
   const handleDownloadInvoice = (invoiceNumber: string) => {
@@ -116,7 +121,7 @@ export const BillingHistory: React.FC<BillingHistoryProps> = ({ language = "en" 
       "",
       `Plan: ${TIER_NAMES[record.plan].en}`,
       `Amount: $${record.amount.toFixed(2)} USD`,
-      `Status: ${STATUS_LABELS[record.status].en}`,
+      `Status: ${statusLabel("en", record.status)}`,
       `Payment Method: ${record.paymentMethod}`,
       "",
       "───────────────────────────────────────",
@@ -138,7 +143,7 @@ export const BillingHistory: React.FC<BillingHistoryProps> = ({ language = "en" 
     <div className="space-y-6">
       {/* Header */}
       <h2 className="text-xl font-bold text-gray-900 dark:text-white">
-        {isZh ? "账单历史" : "Billing History"}
+        {accountT(lang, "billingTitle")}
       </h2>
 
       {/* Current Subscription Card */}
@@ -146,7 +151,7 @@ export const BillingHistory: React.FC<BillingHistoryProps> = ({ language = "en" 
         <div className="flex items-center justify-between mb-4">
           <div>
             <p className="text-xs font-medium text-blue-600 dark:text-blue-400 uppercase tracking-wide">
-              {isZh ? "当前订阅" : "Current Subscription"}
+              {accountT(lang, "currentSub")}
             </p>
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-1">{tierName}</h3>
           </div>
@@ -154,17 +159,17 @@ export const BillingHistory: React.FC<BillingHistoryProps> = ({ language = "en" 
             <p className="text-3xl font-bold text-blue-600 dark:text-blue-400">
               ${pricing.monthly.toFixed(2)}
             </p>
-            <p className="text-xs text-gray-500 dark:text-gray-400">{isZh ? "/月" : "/month"}</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400">{accountT(lang, "perMonth")}</p>
           </div>
         </div>
         {!isFree && (
           <div className="flex items-center justify-between text-sm pt-4 border-t border-blue-200 dark:border-blue-700">
             <span className="text-gray-600 dark:text-gray-400">
-              {isZh ? "下次扣款日" : "Next billing date"}
+              {accountT(lang, "nextBilling")}
             </span>
             <span className="font-medium text-gray-900 dark:text-white">
               {new Date(new Date().setMonth(new Date().getMonth() + 1, 1)).toLocaleDateString(
-                language === "zh" ? "zh-CN" : "en-US",
+                lang,
                 {
                   year: "numeric",
                   month: "long",
@@ -180,7 +185,7 @@ export const BillingHistory: React.FC<BillingHistoryProps> = ({ language = "en" 
               href="/pricing"
               className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
             >
-              {isZh ? "升级到付费套餐" : "Upgrade to a paid plan"} →
+              {accountT(lang, "upgradePlan")} →
             </a>
           </div>
         )}
@@ -191,7 +196,7 @@ export const BillingHistory: React.FC<BillingHistoryProps> = ({ language = "en" 
         <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden shadow-sm">
           <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
             <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">
-              {isZh ? "付款记录" : "Payment Records"}
+              {accountT(lang, "paymentRecords")}
             </h3>
           </div>
 
@@ -201,22 +206,22 @@ export const BillingHistory: React.FC<BillingHistoryProps> = ({ language = "en" 
               <thead>
                 <tr className="bg-gray-50 dark:bg-gray-750">
                   <th className="text-left px-6 py-3 text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                    {isZh ? "日期" : "Date"}
+                    {accountT(lang, "colDate")}
                   </th>
                   <th className="text-left px-6 py-3 text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                    {isZh ? "套餐" : "Plan"}
+                    {accountT(lang, "colPlan")}
                   </th>
                   <th className="text-left px-6 py-3 text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                    {isZh ? "账单周期" : "Billing Period"}
+                    {accountT(lang, "colPeriod")}
                   </th>
                   <th className="text-left px-6 py-3 text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                    {isZh ? "金额" : "Amount"}
+                    {accountT(lang, "colAmount")}
                   </th>
                   <th className="text-left px-6 py-3 text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                    {isZh ? "状态" : "Status"}
+                    {accountT(lang, "colStatus")}
                   </th>
                   <th className="text-right px-6 py-3 text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                    {isZh ? "发票" : "Invoice"}
+                    {accountT(lang, "colInvoice")}
                   </th>
                 </tr>
               </thead>
@@ -227,14 +232,15 @@ export const BillingHistory: React.FC<BillingHistoryProps> = ({ language = "en" 
                     className="hover:bg-gray-50 dark:hover:bg-gray-750 transition-colors"
                   >
                     <td className="px-6 py-4 text-gray-900 dark:text-white">
-                      {new Date(record.date).toLocaleDateString(
-                        language === "zh" ? "zh-CN" : "en-US",
-                        { year: "numeric", month: "short", day: "numeric" },
-                      )}
+                      {new Date(record.date).toLocaleDateString(lang, {
+                        year: "numeric",
+                        month: "short",
+                        day: "numeric",
+                      })}
                     </td>
                     <td className="px-6 py-4">
                       <span className="font-medium text-gray-900 dark:text-white">
-                        {TIER_NAMES[record.plan][language]}
+                        {TIER_NAMES[record.plan][lang]}
                       </span>
                     </td>
                     <td className="px-6 py-4 text-gray-500 dark:text-gray-400 text-xs">
@@ -247,7 +253,7 @@ export const BillingHistory: React.FC<BillingHistoryProps> = ({ language = "en" 
                       <span
                         className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${STATUS_STYLES[record.status]}`}
                       >
-                        {STATUS_LABELS[record.status][language]}
+                        {statusLabel(lang, record.status)}
                       </span>
                     </td>
                     <td className="px-6 py-4 text-right">
@@ -283,20 +289,21 @@ export const BillingHistory: React.FC<BillingHistoryProps> = ({ language = "en" 
               <div key={record.id} className="p-4 space-y-2">
                 <div className="flex items-center justify-between">
                   <span className="text-sm font-medium text-gray-900 dark:text-white">
-                    {TIER_NAMES[record.plan][language]}
+                    {TIER_NAMES[record.plan][lang]}
                   </span>
                   <span
                     className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium ${STATUS_STYLES[record.status]}`}
                   >
-                    {STATUS_LABELS[record.status][language]}
+                    {statusLabel(lang, record.status)}
                   </span>
                 </div>
                 <div className="flex justify-between text-xs text-gray-500 dark:text-gray-400">
                   <span>
-                    {new Date(record.date).toLocaleDateString(
-                      language === "zh" ? "zh-CN" : "en-US",
-                      { year: "numeric", month: "short", day: "numeric" },
-                    )}
+                    {new Date(record.date).toLocaleDateString(lang, {
+                      year: "numeric",
+                      month: "short",
+                      day: "numeric",
+                    })}
                   </span>
                   <span className="font-semibold text-gray-900 dark:text-white">
                     ${record.amount.toFixed(2)}
@@ -314,7 +321,7 @@ export const BillingHistory: React.FC<BillingHistoryProps> = ({ language = "en" 
                       d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                     />
                   </svg>
-                  {isZh ? "下载发票" : "Download Invoice"}
+                  {accountT(lang, "downloadInvoice")}
                 </button>
               </div>
             ))}
@@ -339,18 +346,16 @@ export const BillingHistory: React.FC<BillingHistoryProps> = ({ language = "en" 
             </svg>
           </div>
           <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1">
-            {isZh ? "暂无账单记录" : "No Billing Records"}
+            {accountT(lang, "noRecords")}
           </h3>
           <p className="text-xs text-gray-500 dark:text-gray-400 max-w-sm mx-auto">
-            {isZh
-              ? "您当前使用的是免费套餐。升级到付费套餐后，账单记录将显示在这里。"
-              : "You're on the free plan. Billing records will appear here after you upgrade to a paid plan."}
+            {accountT(lang, "noRecordsDesc")}
           </p>
           <a
             href="/pricing"
             className="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
           >
-            {isZh ? "查看套餐" : "View Plans"}
+            {accountT(lang, "viewPlans")}
           </a>
         </div>
       )}

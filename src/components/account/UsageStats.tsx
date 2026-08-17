@@ -5,6 +5,7 @@
  */
 
 import React from "react";
+import { accountT, toAccountLang, type AccountLang } from "./account-strings";
 import { getCurrentTier, TIER_LIMITS, TIER_NAMES, type SubscriptionTier } from "@/lib/subscription";
 import {
   getUsageCount,
@@ -76,7 +77,7 @@ function ensureDemoData(): DailyUsage[] {
 }
 
 interface UsageStatsProps {
-  language?: "en" | "zh";
+  language?: AccountLang | string;
 }
 
 const TIER_COLOR_MAP: Record<SubscriptionTier, string> = {
@@ -87,7 +88,7 @@ const TIER_COLOR_MAP: Record<SubscriptionTier, string> = {
 };
 
 export const UsageStats: React.FC<UsageStatsProps> = ({ language = "en" }) => {
-  const isZh = language === "zh";
+  const lang = toAccountLang(language);
   const [tier, setTier] = React.useState<SubscriptionTier>("free");
   const [used, setUsed] = React.useState(0);
   const [max, setMax] = React.useState(0);
@@ -125,7 +126,7 @@ export const UsageStats: React.FC<UsageStatsProps> = ({ language = "en" }) => {
 
   const isUnlimited = max === -1;
   const tierColor = TIER_COLOR_MAP[tier];
-  const tierName = TIER_NAMES[tier][language];
+  const tierName = TIER_NAMES[tier][lang];
   const recentHistory = history.slice(-7);
   const maxChartValue = Math.max(...recentHistory.map((d) => d.count), 1);
 
@@ -134,7 +135,7 @@ export const UsageStats: React.FC<UsageStatsProps> = ({ language = "en" }) => {
       {/* Header */}
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-bold text-gray-900 dark:text-white">
-          {isZh ? "用量统计" : "Usage Statistics"}
+          {accountT(lang, "usageTitle")}
         </h2>
         <span
           className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold text-white"
@@ -148,7 +149,7 @@ export const UsageStats: React.FC<UsageStatsProps> = ({ language = "en" }) => {
       <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-6 shadow-sm">
         <div className="flex items-center justify-between mb-4">
           <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">
-            {isZh ? "本月AI请求次数" : "AI Requests This Month"}
+            {accountT(lang, "monthRequests")}
           </h3>
           <span className="text-2xl font-bold" style={{ color: tierColor }}>
             {isUnlimited ? "∞" : `${used}`}
@@ -175,10 +176,10 @@ export const UsageStats: React.FC<UsageStatsProps> = ({ language = "en" }) => {
 
             <div className="flex justify-between text-sm">
               <span className="text-gray-500 dark:text-gray-400">
-                {isZh ? `已使用 ${used} 次` : `${used} used`}
+                {accountT(lang, "usedCount", { n: used })}
               </span>
               <span className="font-medium text-gray-700 dark:text-gray-300">
-                {isZh ? `剩余 ${remaining} 次` : `${remaining} remaining`}
+                {accountT(lang, "remainingCount", { n: remaining })}
                 <span className="text-gray-400 dark:text-gray-500"> / {max}</span>
               </span>
             </div>
@@ -205,10 +206,10 @@ export const UsageStats: React.FC<UsageStatsProps> = ({ language = "en" }) => {
               </div>
               <div>
                 <p className="text-sm font-semibold text-green-700 dark:text-green-300">
-                  {isZh ? "无限AI请求" : "Unlimited AI Requests"}
+                  {accountT(lang, "unlimitedTitle")}
                 </p>
                 <p className="text-xs text-green-600 dark:text-green-400">
-                  {isZh ? "您的套餐包含无限次AI请求" : "Your plan includes unlimited AI requests"}
+                  {accountT(lang, "unlimitedDesc")}
                 </p>
               </div>
             </div>
@@ -232,9 +233,7 @@ export const UsageStats: React.FC<UsageStatsProps> = ({ language = "en" }) => {
                   d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              {isZh
-                ? "您即将达到本月限额，考虑升级套餐以获得更多请求次数。"
-                : "You're approaching your monthly limit. Consider upgrading for more requests."}
+              {accountT(lang, "limitWarning")}
             </p>
           </div>
         )}
@@ -243,21 +242,18 @@ export const UsageStats: React.FC<UsageStatsProps> = ({ language = "en" }) => {
       {/* 7-Day History Chart */}
       <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-6 shadow-sm">
         <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-4">
-          {isZh ? "最近7天用量" : "Last 7 Days Usage"}
+          {accountT(lang, "last7Days")}
         </h3>
 
         {recentHistory.length === 0 ? (
           <p className="text-sm text-gray-400 dark:text-gray-500 text-center py-8">
-            {isZh ? "暂无数据" : "No data yet"}
+            {accountT(lang, "noData")}
           </p>
         ) : (
           <div className="flex items-end gap-2 h-40">
             {recentHistory.map((day, i) => {
               const heightPct = maxChartValue > 0 ? (day.count / maxChartValue) * 100 : 0;
-              const dayLabel = new Date(day.date).toLocaleDateString(
-                language === "zh" ? "zh-CN" : "en-US",
-                { weekday: "short" },
-              );
+              const dayLabel = new Date(day.date).toLocaleDateString(lang, { weekday: "short" });
               const isToday = day.date === new Date().toISOString().slice(0, 10);
 
               return (
@@ -277,7 +273,7 @@ export const UsageStats: React.FC<UsageStatsProps> = ({ language = "en" }) => {
                           ? `linear-gradient(180deg, ${tierColor}, ${tierColor}99)`
                           : `linear-gradient(180deg, ${tierColor}66, ${tierColor}33)`,
                       }}
-                      title={`${day.date}: ${day.count} ${isZh ? "次" : "requests"}`}
+                      title={`${day.date}: ${day.count} ${accountT(lang, "requestsUnit")}`}
                     />
                   </div>
 
@@ -300,17 +296,13 @@ export const UsageStats: React.FC<UsageStatsProps> = ({ language = "en" }) => {
         {/* Summary row */}
         <div className="flex justify-between mt-4 pt-4 border-t border-gray-100 dark:border-gray-700">
           <div className="text-center flex-1">
-            <p className="text-xs text-gray-500 dark:text-gray-400">
-              {isZh ? "7天总计" : "7-Day Total"}
-            </p>
+            <p className="text-xs text-gray-500 dark:text-gray-400">{accountT(lang, "total7d")}</p>
             <p className="text-sm font-bold text-gray-900 dark:text-white">
               {recentHistory.reduce((s, d) => s + d.count, 0)}
             </p>
           </div>
           <div className="text-center flex-1">
-            <p className="text-xs text-gray-500 dark:text-gray-400">
-              {isZh ? "日均" : "Daily Avg"}
-            </p>
+            <p className="text-xs text-gray-500 dark:text-gray-400">{accountT(lang, "dailyAvg")}</p>
             <p className="text-sm font-bold text-gray-900 dark:text-white">
               {recentHistory.length > 0
                 ? (recentHistory.reduce((s, d) => s + d.count, 0) / recentHistory.length).toFixed(1)
@@ -318,7 +310,7 @@ export const UsageStats: React.FC<UsageStatsProps> = ({ language = "en" }) => {
             </p>
           </div>
           <div className="text-center flex-1">
-            <p className="text-xs text-gray-500 dark:text-gray-400">{isZh ? "峰值" : "Peak"}</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400">{accountT(lang, "peak")}</p>
             <p className="text-sm font-bold text-gray-900 dark:text-white">
               {Math.max(...recentHistory.map((d) => d.count), 0)}
             </p>
@@ -329,41 +321,18 @@ export const UsageStats: React.FC<UsageStatsProps> = ({ language = "en" }) => {
       {/* Quick Tips */}
       <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-4">
         <h4 className="text-sm font-semibold text-blue-700 dark:text-blue-300 mb-2">
-          💡 {isZh ? "使用提示" : "Usage Tips"}
+          💡 {accountT(lang, "usageTips")}
         </h4>
         <ul className="text-xs text-blue-600 dark:text-blue-400 space-y-1.5">
-          <li>
-            •{" "}
-            {isZh
-              ? "每次AI对话消耗1次请求，请合理规划问题。"
-              : "Each AI conversation uses 1 request. Plan your questions."}
-          </li>
-          <li>
-            •{" "}
-            {isZh
-              ? "每月1日自动重置使用次数。"
-              : "Usage resets automatically on the 1st of each month."}
-          </li>
+          <li>• {accountT(lang, "tipPlanQuestions")}</li>
+          <li>• {accountT(lang, "tipReset")}</li>
           {!isUnlimited && (
             <li>
-              •{" "}
-              {isZh ? (
-                <>
-                  升级到{" "}
-                  <a href="/pricing" className="underline font-medium hover:text-blue-800">
-                    更高套餐
-                  </a>{" "}
-                  获得更多请求次数。
-                </>
-              ) : (
-                <>
-                  Upgrade to a{" "}
-                  <a href="/pricing" className="underline font-medium hover:text-blue-800">
-                    higher plan
-                  </a>{" "}
-                  for more requests.
-                </>
-              )}
+              • {accountT(lang, "tipUpgradeBefore")}{" "}
+              <a href="/pricing" className="underline font-medium hover:text-blue-800">
+                {accountT(lang, "tipUpgradeLink")}
+              </a>{" "}
+              {accountT(lang, "tipUpgradeAfter")}
             </li>
           )}
         </ul>

@@ -226,7 +226,7 @@ export async function signUpWithEmail(data: SignUpData): Promise<AuthResponse> {
         nationality: data.nationality,
         native_language: data.nativeLanguage,
       },
-      emailRedirectTo: `${window.location.origin}/auth/callback`,
+      emailRedirectTo: authCallbackUrl(),
     },
   });
 
@@ -244,6 +244,29 @@ export async function signUpWithEmail(data: SignUpData): Promise<AuthResponse> {
     session: authData.session,
     error: null,
   };
+}
+
+/**
+ * Language-aware auth callback URL: keeps OAuth/email confirmations on the
+ * user's current language (e.g. /ja/auth/callback) so the post-login redirect
+ * never drops to the English account page.
+ */
+function authCallbackUrl(): string {
+  if (typeof window === "undefined") return "/auth/callback";
+  const w = window as unknown as { __I18N__?: { serverLang?: string } };
+  const serverLang = w.__I18N__?.serverLang || "";
+  let lang = serverLang && serverLang !== "en" ? serverLang : "";
+  if (!lang) {
+    try {
+      const stored = localStorage.getItem("chinaconnect_language");
+      if (stored && stored !== "en") lang = stored;
+    } catch {
+      /* ignore */
+    }
+  }
+  return lang
+    ? `${window.location.origin}/${lang}/auth/callback`
+    : `${window.location.origin}/auth/callback`;
 }
 
 /**
@@ -266,7 +289,7 @@ export async function signInWithOAuth(provider: AuthProvider): Promise<AuthRespo
   const { data, error } = await authClient.auth.signInWithOAuth({
     provider: provider === "email" ? "google" : provider,
     options: {
-      redirectTo: `${window.location.origin}/auth/callback`,
+      redirectTo: authCallbackUrl(),
     },
   });
 
@@ -297,7 +320,7 @@ export async function signInWithMagicLink(
   const { error } = await authClient.auth.signInWithOtp({
     email,
     options: {
-      emailRedirectTo: redirectTo || `${window.location.origin}/auth/callback`,
+      emailRedirectTo: redirectTo || authCallbackUrl(),
     },
   });
 
@@ -432,7 +455,7 @@ export async function getProfile(userId: string): Promise<ProfileResponse> {
       .from("profiles")
       .select("*")
       .eq("user_id", userId)
-      .single();
+      .maybeSingle();
 
     if (error) return { profile: null, error };
 

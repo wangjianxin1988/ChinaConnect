@@ -60,11 +60,30 @@ export async function signInWithGoogle() {
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider: "google",
     options: {
-      redirectTo: `${window.location.origin}/auth/callback`,
+      redirectTo: authCallbackUrl(),
     },
   });
 
   return { data, error };
+}
+
+/** Language-aware OAuth callback URL: keeps /<lang>/auth/callback on localized pages. */
+function authCallbackUrl(): string {
+  if (typeof window === "undefined") return "/auth/callback";
+  const w = window as unknown as { __I18N__?: { serverLang?: string } };
+  const serverLang = w.__I18N__?.serverLang || "";
+  let lang = serverLang && serverLang !== "en" ? serverLang : "";
+  if (!lang) {
+    try {
+      const stored = localStorage.getItem("chinaconnect_language");
+      if (stored && stored !== "en") lang = stored;
+    } catch {
+      /* ignore */
+    }
+  }
+  return lang
+    ? `${window.location.origin}/${lang}/auth/callback`
+    : `${window.location.origin}/auth/callback`;
 }
 
 /**
@@ -117,7 +136,7 @@ export async function getUserProfile(userId: string) {
     .from("profiles")
     .select("*")
     .eq("user_id", userId)
-    .single();
+    .maybeSingle();
 
   return { profile: data, error };
 }
@@ -130,7 +149,7 @@ export async function getUserDashboard(userId: string) {
     .from("user_dashboard")
     .select("*")
     .eq("user_id", userId)
-    .single();
+    .maybeSingle();
 
   return { dashboard: data, error };
 }
@@ -139,7 +158,11 @@ export async function getUserDashboard(userId: string) {
  * Fetch the user's wallet balance.
  */
 export async function getUserWallet(userId: string) {
-  const { data, error } = await supabase.from("wallets").select("*").eq("user_id", userId).single();
+  const { data, error } = await supabase
+    .from("wallets")
+    .select("*")
+    .eq("user_id", userId)
+    .maybeSingle();
 
   return { wallet: data, error };
 }
