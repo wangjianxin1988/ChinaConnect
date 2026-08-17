@@ -131,6 +131,11 @@ export function useAuth(options: UseAuthOptions = {}): UseAuthReturn {
     const {
       data: { subscription },
     } = onAuthStateChange((authState) => {
+      if (typeof window !== "undefined") {
+        window.dispatchEvent(
+          new CustomEvent("cc-auth-changed", { detail: { authenticated: !!authState.user } }),
+        );
+      }
       if (isMounted) {
         setUser(authState.user);
         setProfile(authState.profile);

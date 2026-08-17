@@ -183,131 +183,6 @@ function AuthGate() {
 }
 
 // ============================================
-// Conversation sidebar
-// ============================================
-
-interface ConversationSidebarProps {
-  conversations: { id: string; name: string; messageCount: number; createdAt: string }[];
-  activeId: string | null;
-  onSelect: (id: string) => void;
-  onNew: () => void;
-  onDelete: (id: string) => void;
-  collapsed: boolean;
-  onToggle: () => void;
-}
-
-function ConversationSidebarInner({
-  aiT,
-  conversations,
-  activeId,
-  onSelect,
-  onNew,
-  onDelete,
-  collapsed,
-  onToggle,
-}: ConversationSidebarProps & { aiT: AiT }) {
-  if (collapsed) {
-    return (
-      <button
-        onClick={onToggle}
-        className="fixed left-4 top-20 z-30 w-10 h-10 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center hover:bg-gray-50"
-        title={aiT("showSidebarTitle")}
-        type="button"
-      >
-        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-      </button>
-    );
-  }
-
-  return (
-    <aside className="hidden lg:flex flex-col w-72 shrink-0 bg-white border-r border-gray-200 h-[calc(100vh-64px)] sticky top-16">
-      <div className="p-4 border-b border-gray-100 flex items-center justify-between">
-        <h2 className="text-sm font-semibold text-gray-900">{aiT("conversationsTitle")}</h2>
-        <button
-          onClick={onToggle}
-          className="text-gray-400 hover:text-gray-600"
-          title={aiT("hideSidebarTitle")}
-          type="button"
-        >
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-        </button>
-      </div>
-      <div className="p-3">
-        <button
-          onClick={onNew}
-          className="w-full px-4 py-2.5 bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-sm font-semibold rounded-lg hover:from-purple-700 hover:to-indigo-700 transition-all"
-          type="button"
-        >
-          {aiT("newChatButton")}
-        </button>
-      </div>
-      <div className="flex-1 overflow-y-auto px-2 pb-4">
-        {conversations.length === 0 ? (
-          <p className="text-xs text-gray-400 text-center py-8">{aiT("noConversationsYet")}</p>
-        ) : (
-          <ul className="space-y-1">
-            {conversations.map((c) => (
-              <li key={c.id}>
-                <div
-                  className={`group flex items-center gap-1 rounded-lg ${
-                    activeId === c.id ? "bg-purple-50" : "hover:bg-gray-50"
-                  }`}
-                >
-                  <button
-                    onClick={() => onSelect(c.id)}
-                    className="flex-1 text-left px-3 py-2 text-sm min-w-0"
-                    type="button"
-                  >
-                    <p className="font-medium text-gray-900 truncate">{c.name}</p>
-                    <p className="text-xs text-gray-500">
-                      {c.messageCount}{" "}
-                      {c.messageCount === 1 ? aiT("messageLabel") : aiT("messagesLabel")} ·{" "}
-                      {new Date(c.createdAt).toLocaleDateString()}
-                    </p>
-                  </button>
-                  <button
-                    onClick={() => {
-                      if (confirm(aiT("deleteConfirm", "Delete this conversation?")))
-                        onDelete(c.id);
-                    }}
-                    className="opacity-0 group-hover:opacity-100 p-2 text-gray-400 hover:text-red-600 transition-opacity"
-                    title={aiT("deleteTitle")}
-                    type="button"
-                  >
-                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6M1 7h22M9 7V4a2 2 0 012-2h2a2 2 0 012 2v3"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
-    </aside>
-  );
-}
-
-// ============================================
 // Main Component
 // ============================================
 
@@ -319,7 +194,6 @@ export default function AIChatPage() {
   const [chatStarted, setChatStarted] = useState(false);
   const [showExhaustedBanner, setShowExhaustedBanner] = useState(false);
   const [activeConversationId, setActiveConversationId] = useState<string | null>(null);
-  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
 
   const {
     conversationHistory,
@@ -564,17 +438,6 @@ export default function AIChatPage() {
   }
   return (
     <div className="min-h-[calc(100vh-64px)] bg-white flex">
-      <ConversationSidebarInner
-        aiT={aiT}
-        conversations={conversationHistory}
-        activeId={activeConversationId}
-        onSelect={handleSelectConversation}
-        onNew={handleNewConversation}
-        onDelete={deleteConversation}
-        collapsed={sidebarCollapsed}
-        onToggle={() => setSidebarCollapsed(!sidebarCollapsed)}
-      />
-
       <div className="flex-1 min-w-0">
         {/* Hero (only when chat hasn't started) */}
         {!chatStarted && (
@@ -686,6 +549,10 @@ export default function AIChatPage() {
                 exportItinerary={exportItinerary}
                 shareItinerary={shareItinerary}
                 getShareLink={getShareLink}
+                activeConversationId={activeConversationId}
+                onConversationSelect={handleSelectConversation}
+                onNewChat={handleNewConversation}
+                onDeleteConversation={deleteConversation}
               />
             </div>
 

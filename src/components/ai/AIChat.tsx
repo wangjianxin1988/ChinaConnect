@@ -61,6 +61,10 @@ interface AIChatProps {
   exportItinerary: (format: "text" | "json") => string;
   shareItinerary: (id: string) => string;
   getShareLink: (shareCode: string) => string;
+  activeConversationId?: string | null;
+  onConversationSelect?: (id: string) => void;
+  onNewChat?: () => void;
+  onDeleteConversation?: (id: string) => void;
 }
 
 // ============================================
@@ -598,6 +602,10 @@ export const AIChat: React.FC<AIChatProps> = ({
   exportItinerary,
   shareItinerary,
   getShareLink,
+  activeConversationId,
+  onConversationSelect,
+  onNewChat,
+  onDeleteConversation,
 }) => {
   // Local state
   const [inputValue, setInputValue] = useState("");
@@ -609,6 +617,7 @@ export const AIChat: React.FC<AIChatProps> = ({
   const [routeSaving, setRouteSaving] = useState(false);
   const [routeSaved, setRouteSaved] = useState(false);
   const [routeSaveError, setRouteSaveError] = useState<string | null>(null);
+  const [sidebarTab, setSidebarTab] = useState<"conversations" | "itineraries">("conversations");
 
   // Subscription tier enforcement state
   const [upgradePrompt, setUpgradePrompt] = useState<{
@@ -745,51 +754,147 @@ export const AIChat: React.FC<AIChatProps> = ({
   return (
     <ChatErrorBoundary language={isZh ? "zh" : "en"}>
       <div className="flex h-full bg-gray-50">
-        {/* Sidebar - Itinerary */}
+        {/* Sidebar - Conversations + Itineraries (single panel, tabbed) */}
         {showItinerary && (
           <div className="chat-sidebar w-80 border-r border-gray-200 bg-white flex flex-col overflow-hidden hidden md:flex">
-            <div className="flex-1 overflow-y-auto">
-              <div className="p-4 border-b border-gray-100">
-                <h3 className="font-semibold text-gray-800 mb-2">{LABELS.savedItineraries}</h3>
-              </div>
-              {savedItineraries.length === 0 ? (
-                <p className="text-sm text-gray-400 text-center py-8 px-4">
-                  {LABELS.noSavedItineraries}
-                </p>
-              ) : (
-                savedItineraries.map((it) => (
-                  <button
-                    key={it.id}
-                    onClick={() => loadItinerary(it.id)}
-                    className={`w-full text-left px-4 py-3 border-b border-gray-50 hover:bg-blue-50 transition-colors ${
-                      currentItinerary?.id === it.id
-                        ? "bg-blue-50 border-l-4 border-l-blue-500"
-                        : ""
-                    }`}
-                  >
-                    <div className="font-medium text-gray-800 text-sm truncate">{it.name}</div>
-                    <div className="text-xs text-gray-500 mt-0.5">
-                      {it.destination} · {it.days} days
-                    </div>
-                  </button>
-                ))
-              )}
+            <div className="flex border-b border-gray-200 shrink-0">
+              <button
+                type="button"
+                onClick={() => setSidebarTab("conversations")}
+                className={`flex-1 px-3 py-3 text-sm font-medium transition-colors ${
+                  sidebarTab === "conversations"
+                    ? "bg-blue-50 text-blue-700 border-b-2 border-blue-500"
+                    : "text-gray-500 hover:bg-gray-50"
+                }`}
+              >
+                {LABELS.conversations}
+              </button>
+              <button
+                type="button"
+                onClick={() => setSidebarTab("itineraries")}
+                className={`flex-1 px-3 py-3 text-sm font-medium transition-colors ${
+                  sidebarTab === "itineraries"
+                    ? "bg-blue-50 text-blue-700 border-b-2 border-blue-500"
+                    : "text-gray-500 hover:bg-gray-50"
+                }`}
+              >
+                {LABELS.itineraries}
+              </button>
             </div>
 
-            {currentItinerary && (
-              <div className="border-t border-gray-200 p-4 bg-gray-50">
-                <ItineraryDisplay
-                  itinerary={currentItinerary}
-                  language={isZh ? "zh" : "en"}
-                  compact
-                  onSave={saveCurrentItinerary}
-                  onExport={handleExport}
-                  onShare={handleShare}
-                  onDelete={
-                    currentItinerary.id ? () => deleteItinerary(currentItinerary.id) : undefined
-                  }
-                />
+            {sidebarTab === "conversations" ? (
+              <div className="flex-1 overflow-y-auto">
+                {onNewChat && (
+                  <div className="p-3">
+                    <button
+                      type="button"
+                      onClick={onNewChat}
+                      className="w-full px-4 py-2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-sm font-semibold rounded-lg hover:from-purple-700 hover:to-indigo-700 transition-all"
+                    >
+                      {LABELS.newChatButton}
+                    </button>
+                  </div>
+                )}
+                {conversationHistory.length === 0 ? (
+                  <p className="text-sm text-gray-400 text-center py-8 px-4">
+                    {LABELS.noConversationsYet}
+                  </p>
+                ) : (
+                  conversationHistory.map((conv) => (
+                    <div
+                      key={conv.id}
+                      className={`group flex items-center border-b border-gray-50 ${
+                        activeConversationId === conv.id ? "bg-blue-50" : ""
+                      }`}
+                    >
+                      <button
+                        type="button"
+                        onClick={() => onConversationSelect?.(conv.id)}
+                        className="flex-1 text-left px-4 py-3 hover:bg-blue-50 transition-colors min-w-0"
+                      >
+                        <div className="font-medium text-gray-800 text-sm truncate">
+                          {conv.name}
+                        </div>
+                        <div className="text-xs text-gray-400 mt-0.5">
+                          {conv.createdAt
+                            ? new Date(conv.createdAt).toLocaleDateString()
+                            : LABELS.justNow}
+                        </div>
+                      </button>
+                      {onDeleteConversation && (
+                        <button
+                          type="button"
+                          onClick={() => {
+                            if (window.confirm(LABELS.deleteConfirm)) onDeleteConversation(conv.id);
+                          }}
+                          className="opacity-0 group-hover:opacity-100 p-2 text-gray-400 hover:text-red-600 transition-opacity shrink-0"
+                          title={LABELS.deleteTitle}
+                        >
+                          <svg
+                            className="w-4 h-4"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6M1 7h22M9 7V4a2 2 0 012-2h2a2 2 0 012 2v3"
+                            />
+                          </svg>
+                        </button>
+                      )}
+                    </div>
+                  ))
+                )}
               </div>
+            ) : (
+              <>
+                <div className="flex-1 overflow-y-auto">
+                  <div className="p-4 border-b border-gray-100">
+                    <h3 className="font-semibold text-gray-800">{LABELS.savedItineraries}</h3>
+                  </div>
+                  {savedItineraries.length === 0 ? (
+                    <p className="text-sm text-gray-400 text-center py-8 px-4">
+                      {LABELS.noSavedItineraries}
+                    </p>
+                  ) : (
+                    savedItineraries.map((it) => (
+                      <button
+                        key={it.id}
+                        onClick={() => loadItinerary(it.id)}
+                        className={`w-full text-left px-4 py-3 border-b border-gray-50 hover:bg-blue-50 transition-colors ${
+                          currentItinerary?.id === it.id
+                            ? "bg-blue-50 border-l-4 border-l-blue-500"
+                            : ""
+                        }`}
+                      >
+                        <div className="font-medium text-gray-800 text-sm truncate">{it.name}</div>
+                        <div className="text-xs text-gray-500 mt-0.5">
+                          {it.destination} · {it.days} {LABELS.days}
+                        </div>
+                      </button>
+                    ))
+                  )}
+                </div>
+
+                {currentItinerary && (
+                  <div className="border-t border-gray-200 p-4 bg-gray-50">
+                    <ItineraryDisplay
+                      itinerary={currentItinerary}
+                      language={isZh ? "zh" : "en"}
+                      compact
+                      onSave={saveCurrentItinerary}
+                      onExport={handleExport}
+                      onShare={handleShare}
+                      onDelete={
+                        currentItinerary.id ? () => deleteItinerary(currentItinerary.id) : undefined
+                      }
+                    />
+                  </div>
+                )}
+              </>
             )}
           </div>
         )}

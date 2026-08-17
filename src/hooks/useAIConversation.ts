@@ -180,6 +180,11 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
 
     const { data: sub } = supabase.auth.onAuthStateChange((_event, session) => {
       setIsAuthenticated(!!session?.user);
+      if (typeof window !== "undefined") {
+        window.dispatchEvent(
+          new CustomEvent("cc-auth-changed", { detail: { authenticated: !!session?.user } }),
+        );
+      }
       if (session?.user) {
         refreshUsage();
         loadConversationHistory();

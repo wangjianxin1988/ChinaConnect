@@ -45,6 +45,14 @@ export interface AiChatLabels {
   shareCode: string;
   close: string;
   copyLink: string;
+  conversations: string;
+  itineraries: string;
+  newChatButton: string;
+  noConversationsYet: string;
+  justNow: string;
+  days: string;
+  deleteTitle: string;
+  deleteConfirm: string;
 }
 
 export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
@@ -78,6 +86,14 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     shareCode: "Share Code:",
     close: "Close",
     copyLink: "Copy Link",
+    conversations: "Conversations",
+    itineraries: "Itineraries",
+    newChatButton: "New Chat",
+    noConversationsYet: "No conversations yet",
+    justNow: "Just now",
+    days: "days",
+    deleteTitle: "Delete",
+    deleteConfirm: "Delete this conversation?",
   },
   ja: {
     placeholder: "中国旅行について質問してください...",
@@ -109,6 +125,14 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     shareCode: "共有コード：",
     close: "閉じる",
     copyLink: "リンクをコピー",
+    conversations: "会話",
+    itineraries: "旅程",
+    newChatButton: "新しいチャット",
+    noConversationsYet: "まだ会話がありません",
+    justNow: "たった今",
+    days: "日",
+    deleteTitle: "削除",
+    deleteConfirm: "この会話を削除しますか？",
   },
   ko: {
     placeholder: "중국 여행에 대해 물어보세요...",
@@ -140,6 +164,14 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     shareCode: "공유 코드:",
     close: "닫기",
     copyLink: "링크 복사",
+    conversations: "대화",
+    itineraries: "일정",
+    newChatButton: "새 대화",
+    noConversationsYet: "아직 대화가 없습니다",
+    justNow: "방금 전",
+    days: "일",
+    deleteTitle: "삭제",
+    deleteConfirm: "이 대화를 삭제하시겠습니까?",
   },
   "zh-CN": {
     placeholder: "输入您的中国旅行问题...",
@@ -170,6 +202,14 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     shareCode: "分享码：",
     close: "关闭",
     copyLink: "复制链接",
+    conversations: "对话记录",
+    itineraries: "行程",
+    newChatButton: "新建对话",
+    noConversationsYet: "还没有对话",
+    justNow: "刚刚",
+    days: "天",
+    deleteTitle: "删除",
+    deleteConfirm: "删除这个对话？",
   },
   "zh-TW": {
     placeholder: "輸入您的中國旅行問題...",
@@ -200,6 +240,14 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     shareCode: "分享碼：",
     close: "關閉",
     copyLink: "複製連結",
+    conversations: "對話記錄",
+    itineraries: "行程",
+    newChatButton: "新對話",
+    noConversationsYet: "還沒有對話",
+    justNow: "剛剛",
+    days: "天",
+    deleteTitle: "刪除",
+    deleteConfirm: "刪除這個對話？",
   },
   th: {
     placeholder: "ถามเกี่ยวกับการเดินทางจีนของคุณ...",
@@ -230,6 +278,14 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     shareCode: "รหัสแชร์:",
     close: "ปิด",
     copyLink: "คัดลอกลิงก์",
+    conversations: "การสนทนา",
+    itineraries: "แผนการเดินทาง",
+    newChatButton: "แชทใหม่",
+    noConversationsYet: "ยังไม่มีการสนทนา",
+    justNow: "เมื่อสักครู่",
+    days: "วัน",
+    deleteTitle: "ลบ",
+    deleteConfirm: "ลบการสนทนานี้หรือไม่",
   },
   vi: {
     placeholder: "Hỏi về chuyến đi Trung Quốc của bạn...",
@@ -262,6 +318,14 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     shareCode: "Mã chia sẻ:",
     close: "Đóng",
     copyLink: "Sao chép liên kết",
+    conversations: "Hội thoại",
+    itineraries: "Hành trình",
+    newChatButton: "Hội thoại mới",
+    noConversationsYet: "Chưa có hội thoại nào",
+    justNow: "Vừa xong",
+    days: "ngày",
+    deleteTitle: "Xóa",
+    deleteConfirm: "Xóa hội thoại này?",
   },
   ru: {
     placeholder: "Спросите о поездке в Китай...",
@@ -295,6 +359,14 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     shareCode: "Код доступа:",
     close: "Закрыть",
     copyLink: "Копировать ссылку",
+    conversations: "Диалоги",
+    itineraries: "Маршруты",
+    newChatButton: "Новый чат",
+    noConversationsYet: "Диалогов пока нет",
+    justNow: "Только что",
+    days: "дней",
+    deleteTitle: "Удалить",
+    deleteConfirm: "Удалить этот диалог?",
   },
   fr: {
     placeholder: "Posez une question sur votre voyage en Chine...",
@@ -328,6 +400,14 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     shareCode: "Code de partage :",
     close: "Fermer",
     copyLink: "Copier le lien",
+    conversations: "Conversations",
+    itineraries: "Itinéraires",
+    newChatButton: "Nouvelle discussion",
+    noConversationsYet: "Aucune discussion",
+    justNow: "À l'instant",
+    days: "jours",
+    deleteTitle: "Supprimer",
+    deleteConfirm: "Supprimer cette discussion ?",
   },
   de: {
     placeholder: "Fragen Sie nach Ihrer China-Reise...",
@@ -361,6 +441,14 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     shareCode: "Freigabecode:",
     close: "Schließen",
     copyLink: "Link kopieren",
+    conversations: "Unterhaltungen",
+    itineraries: "Reisepläne",
+    newChatButton: "Neuer Chat",
+    noConversationsYet: "Noch keine Unterhaltungen",
+    justNow: "Gerade eben",
+    days: "Tage",
+    deleteTitle: "Löschen",
+    deleteConfirm: "Diese Unterhaltung löschen?",
   },
   ar: {
     placeholder: "اسأل عن رحلتك إلى الصين...",
@@ -392,6 +480,14 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     shareCode: "رمز المشاركة:",
     close: "إغلاق",
     copyLink: "نسخ الرابط",
+    conversations: "المحادثات",
+    itineraries: "مسارات الرحلة",
+    newChatButton: "محادثة جديدة",
+    noConversationsYet: "لا توجد محادثات بعد",
+    justNow: "الآن",
+    days: "أيام",
+    deleteTitle: "حذف",
+    deleteConfirm: "حذف هذه المحادثة؟",
   },
   fa: {
     placeholder: "درباره سفرتان به چین بپرسید...",
@@ -423,5 +519,13 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     shareCode: "کد اشتراک‌گذاری:",
     close: "بستن",
     copyLink: "کپی لینک",
+    conversations: "گفتگوها",
+    itineraries: "برنامه سفر",
+    newChatButton: "گفتگوی جدید",
+    noConversationsYet: "هنوز گفتگویی وجود ندارد",
+    justNow: "همین حالا",
+    days: "روز",
+    deleteTitle: "حذف",
+    deleteConfirm: "این گفتگو حذف شود؟",
   },
 };
