@@ -4,8 +4,14 @@
  * message dedup, tool-call state display, structured itinerary display.
  */
 
-import { useAIConversation } from "@/hooks/useAIConversation";
-import type { Message, ToolCall, WorkflowProgress } from "@/lib/ai/types";
+import type {
+  Message,
+  ToolCall,
+  WorkflowProgress,
+  SavedItinerary,
+  ConversationSummary,
+} from "@/lib/ai/types";
+import { CHAT_LABELS, type AiChatLang } from "./chat-labels";
 import { extractRouteFromConversation, saveRoute } from "@/lib/ai/route-saver";
 import { getCurrentUser } from "@/lib/auth/supabase-auth";
 import { getCurrentTier, TIER_LIMITS, type SubscriptionTier } from "@/lib/subscription";
@@ -28,8 +34,7 @@ import ItineraryMap from "@/components/Map/ItineraryMap";
 // ============================================
 
 interface AIChatProps {
-  language?: "en" | "zh" | "ja" | "ko";
-  budgetLevel?: "budget" | "medium" | "luxury";
+  language?: AiChatLang;
   theme?: "light" | "dark";
   showItinerary?: boolean;
   initialMessage?: string;
@@ -37,6 +42,25 @@ interface AIChatProps {
   onExternalPromptConsumed?: () => void;
   onConversationStart?: (id: string) => void;
   onConversationEnd?: (id: string) => void;
+  // Controlled state + actions - owned by the parent's single useAIConversation instance
+  messages: Message[];
+  isLoading: boolean;
+  workflowProgress: WorkflowProgress | null;
+  savedItineraries: SavedItinerary[];
+  conversationHistory: ConversationSummary[];
+  currentItinerary: SavedItinerary | null;
+  isMiniMaxAvailable: boolean;
+  usageExceeded: boolean;
+  remainingRequests: number;
+  sendMessage: (content: string) => Promise<void>;
+  clearConversation: () => void;
+  saveCurrentItinerary: (name: string) => Promise<SavedItinerary | null>;
+  loadItinerary: (id: string) => void;
+  deleteItinerary: (id: string) => void;
+  loadConversation: (id: string) => Promise<void>;
+  exportItinerary: (format: "text" | "json") => string;
+  shareItinerary: (id: string) => string;
+  getShareLink: (shareCode: string) => string;
 }
 
 // ============================================
@@ -552,34 +576,29 @@ const ConversationHistory: React.FC<{
 
 export const AIChat: React.FC<AIChatProps> = ({
   language = "en",
-  budgetLevel = "medium",
   showItinerary = true,
   initialMessage,
   externalPrompt,
   onExternalPromptConsumed,
+  messages,
+  isLoading,
+  workflowProgress,
+  savedItineraries,
+  conversationHistory,
+  currentItinerary,
+  isMiniMaxAvailable,
+  usageExceeded,
+  remainingRequests,
+  sendMessage,
+  clearConversation,
+  saveCurrentItinerary,
+  loadItinerary,
+  deleteItinerary,
+  loadConversation,
+  exportItinerary,
+  shareItinerary,
+  getShareLink,
 }) => {
-  // Hook
-  const {
-    messages,
-    isLoading,
-    workflowProgress,
-    savedItineraries,
-    conversationHistory,
-    currentItinerary,
-    isMiniMaxAvailable,
-    usageExceeded,
-    remainingRequests,
-    sendMessage,
-    clearConversation,
-    saveCurrentItinerary,
-    loadItinerary,
-    deleteItinerary,
-    loadConversation,
-    exportItinerary,
-    shareItinerary,
-    getShareLink,
-  } = useAIConversation({ language, budgetLevel });
-
   // Local state
   const [inputValue, setInputValue] = useState("");
   const [showHistory, setShowHistory] = useState(false);
@@ -598,7 +617,8 @@ export const AIChat: React.FC<AIChatProps> = ({
     requiredTier: SubscriptionTier;
   }>({ isOpen: false, featureName: "", requiredTier: "explorer" });
 
-  const isZh = language === "zh";
+  const LABELS = CHAT_LABELS[language] || CHAT_LABELS.en;
+  const isZh = language === "zh-CN" || language === "zh-TW";
   const currentTier = getCurrentTier();
 
   // Conversation ID ref for route saving
@@ -722,34 +742,8 @@ export const AIChat: React.FC<AIChatProps> = ({
     }
   }, []);
 
-  // Labels
-  const LABELS =
-    language === "zh"
-      ? {
-          placeholder: "输入您的中国旅行问题...",
-          send: "发送",
-          history: "历史",
-          newChat: "新建对话",
-          savedItineraries: "已保存的行程",
-          mcpOnline: "AI 在线",
-          mcpOffline: "AI 离线",
-          cancel: "取消",
-          thinking: "思考中...",
-        }
-      : {
-          placeholder: "Ask about your China trip...",
-          send: "Send",
-          history: "History",
-          newChat: "New Chat",
-          savedItineraries: "Saved Itineraries",
-          mcpOnline: "AI Online",
-          mcpOffline: "AI Offline",
-          cancel: "Cancel",
-          thinking: "Thinking...",
-        };
-
   return (
-    <ChatErrorBoundary language={language === "zh" ? "zh" : "en"}>
+    <ChatErrorBoundary language={isZh ? "zh" : "en"}>
       <div className="flex h-full bg-gray-50">
         {/* Sidebar - Itinerary */}
         {showItinerary && (
@@ -760,7 +754,7 @@ export const AIChat: React.FC<AIChatProps> = ({
               </div>
               {savedItineraries.length === 0 ? (
                 <p className="text-sm text-gray-400 text-center py-8 px-4">
-                  {language === "zh" ? "还没有保存的行程" : "No saved itineraries yet"}
+                  {LABELS.noSavedItineraries}
                 </p>
               ) : (
                 savedItineraries.map((it) => (
@@ -786,7 +780,7 @@ export const AIChat: React.FC<AIChatProps> = ({
               <div className="border-t border-gray-200 p-4 bg-gray-50">
                 <ItineraryDisplay
                   itinerary={currentItinerary}
-                  language={language === "zh" ? "zh" : "en"}
+                  language={isZh ? "zh" : "en"}
                   compact
                   onSave={saveCurrentItinerary}
                   onExport={handleExport}
@@ -824,7 +818,7 @@ export const AIChat: React.FC<AIChatProps> = ({
               <button
                 onClick={() => setShowMap(!showMap)}
                 className={`p-2 rounded-lg transition-colors ${showMap ? "bg-blue-100 text-blue-600" : "hover:bg-gray-100 text-gray-600"}`}
-                title={language === "zh" ? "地图" : "Map"}
+                title={LABELS.map}
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
@@ -843,7 +837,7 @@ export const AIChat: React.FC<AIChatProps> = ({
 
                     const user = await getCurrentUser();
                     if (!user) {
-                      alert(isZh ? "请登录后再保存路线。" : "Please sign in to save routes.");
+                      alert(LABELS.signInToSave);
                       return;
                     }
                     const routeData = extractRouteFromConversation(
@@ -851,20 +845,18 @@ export const AIChat: React.FC<AIChatProps> = ({
                       currentItinerary?.data,
                     );
                     if (!routeData) {
-                      alert(isZh ? "没有可保存的路线数据。" : "No route data to save.");
+                      alert(LABELS.noRouteData);
                       return;
                     }
                     const result = await saveRoute(user.id, conversationIdRef.current, routeData);
                     if (result.success) {
-                      alert(
-                        result.error || (isZh ? "路线保存成功！" : "Route saved successfully!"),
-                      );
+                      alert(result.error || LABELS.routeSaved);
                     } else {
-                      alert((isZh ? "保存路线失败：" : "Failed to save route: ") + result.error);
+                      alert(LABELS.routeSaveFailed + result.error);
                     }
                   }}
                   className="p-2 hover:bg-green-100 rounded-lg transition-colors"
-                  title={isZh ? "保存路线" : "Save Route"}
+                  title={LABELS.saveRoute}
                 >
                   <svg
                     className="w-5 h-5 text-green-600"
@@ -978,17 +970,11 @@ export const AIChat: React.FC<AIChatProps> = ({
             {messages.length === 0 ? (
               <div className="flex flex-col items-center justify-center h-full text-center px-4">
                 <div className="text-5xl mb-4">🌏</div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  {language === "zh" ? "您想去中国的哪里？" : "Where do you want to go in China?"}
-                </h3>
-                <p className="text-gray-500 max-w-md mb-8">
-                  {language === "zh"
-                    ? "我可以帮您规划行程、推荐美食、解答生活问题。试试快捷提示或直接问我！"
-                    : "I can help you plan itineraries, recommend restaurants, and answer life questions. Try quick prompts or just ask!"}
-                </p>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">{LABELS.whereToGo}</h3>
+                <p className="text-gray-500 max-w-md mb-8">{LABELS.intro}</p>
                 <div className="w-full max-w-md">
                   <QuickPrompts
-                    language={language === "zh" ? "zh" : "en"}
+                    language={isZh ? "zh" : "en"}
                     onSelect={sendMessage}
                     variant="expanded"
                   />
@@ -1017,7 +1003,7 @@ export const AIChat: React.FC<AIChatProps> = ({
           {messages.length > 0 && !isLoading && (
             <div className="px-4 pb-2 shrink-0">
               <QuickPrompts
-                language={language === "zh" ? "zh" : "en"}
+                language={isZh ? "zh" : "en"}
                 onSelect={sendMessage}
                 variant="compact"
                 showLabels={false}
@@ -1029,13 +1015,9 @@ export const AIChat: React.FC<AIChatProps> = ({
           {!usageExceeded && remainingRequests !== -1 && (
             <div className="px-4 pb-1 shrink-0">
               <div className="flex items-center justify-between text-xs text-gray-500">
-                <span>
-                  {language === "zh"
-                    ? `本月剩余 ${remainingRequests} 次AI请求`
-                    : `${remainingRequests} AI requests remaining this month`}
-                </span>
+                <span>{LABELS.requestsRemaining.replace("{n}", String(remainingRequests))}</span>
                 <a href="/pricing" className="text-blue-600 hover:underline">
-                  {language === "zh" ? "升级" : "Upgrade"}
+                  {LABELS.upgrade}
                 </a>
               </div>
             </div>
@@ -1059,17 +1041,13 @@ export const AIChat: React.FC<AIChatProps> = ({
                       d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"
                     />
                   </svg>
-                  <span className="text-sm text-amber-800">
-                    {language === "zh"
-                      ? "您已达到本月AI请求上限，请升级以继续使用"
-                      : "You've reached your monthly limit. Upgrade to continue."}
-                  </span>
+                  <span className="text-sm text-amber-800">{LABELS.monthlyLimitReached}</span>
                 </div>
                 <a
                   href="/pricing"
                   className="text-sm font-medium text-blue-600 hover:text-blue-800 hover:underline"
                 >
-                  {language === "zh" ? "升级套餐" : "Upgrade Plan"} →
+                  {LABELS.upgradePlan} →
                 </a>
               </div>
             </div>
@@ -1083,13 +1061,7 @@ export const AIChat: React.FC<AIChatProps> = ({
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder={
-                  usageExceeded
-                    ? language === "zh"
-                      ? "请升级以继续使用AI助手..."
-                      : "Upgrade to continue using AI..."
-                    : LABELS.placeholder
-                }
+                placeholder={usageExceeded ? LABELS.upgradeToContinue : LABELS.placeholder}
                 rows={1}
                 disabled={usageExceeded}
                 className={`flex-1 resize-none rounded-xl border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent ${usageExceeded ? "bg-gray-100 cursor-not-allowed" : ""}`}
@@ -1124,11 +1096,7 @@ export const AIChat: React.FC<AIChatProps> = ({
                 </button>
               )}
             </div>
-            <p className="text-xs text-gray-400 mt-2 text-center">
-              {language === "zh"
-                ? "AI回复仅供参考，请以当地实际信息为准"
-                : "AI responses are for reference only. Always verify locally."}
-            </p>
+            <p className="text-xs text-gray-400 mt-2 text-center">{LABELS.aiDisclaimer}</p>
           </div>
         </div>
 
@@ -1142,11 +1110,9 @@ export const AIChat: React.FC<AIChatProps> = ({
               className="bg-white rounded-2xl p-6 w-96 shadow-2xl mx-4"
               onClick={(e) => e.stopPropagation()}
             >
-              <h3 className="font-semibold text-lg mb-4">
-                {language === "zh" ? "分享行程" : "Share Itinerary"}
-              </h3>
+              <h3 className="font-semibold text-lg mb-4">{LABELS.shareItinerary}</h3>
               <div className="bg-gray-50 rounded-lg p-3 mb-4">
-                <p className="text-xs text-gray-500 mb-1">Share Code:</p>
+                <p className="text-xs text-gray-500 mb-1">{LABELS.shareCode}</p>
                 <p className="font-mono text-lg font-bold text-blue-600">{shareCode}</p>
               </div>
               <input
@@ -1160,13 +1126,13 @@ export const AIChat: React.FC<AIChatProps> = ({
                   onClick={() => setShowShareDialog(false)}
                   className="flex-1 px-4 py-2.5 bg-gray-100 text-gray-700 rounded-xl hover:bg-gray-200 transition-colors text-sm font-medium"
                 >
-                  {language === "zh" ? "关闭" : "Close"}
+                  {LABELS.close}
                 </button>
                 <button
                   onClick={handleCopyLink}
                   className="flex-1 px-4 py-2.5 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors text-sm font-medium"
                 >
-                  {language === "zh" ? "复制链接" : "Copy Link"}
+                  {LABELS.copyLink}
                 </button>
               </div>
             </div>
@@ -1180,7 +1146,7 @@ export const AIChat: React.FC<AIChatProps> = ({
           currentTier={currentTier}
           requiredTier={upgradePrompt.requiredTier}
           featureName={upgradePrompt.featureName}
-          language={language === "zh" ? "zh" : "en"}
+          language={isZh ? "zh" : "en"}
         />
 
         {/* Animation styles */}

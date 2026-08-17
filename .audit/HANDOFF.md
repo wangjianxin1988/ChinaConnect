@@ -1211,3 +1211,28 @@ for lang in LANGS:
   - wrangler pages dev GET /api/auth/providers → providers.google/github=true、configured=true、source=supabase（providers.ts 实时探测生效）。
 - **部署**：push master（0ce68f5，含 providers.ts 实时探测 + 会话 #27 HANDOFF 记录）触发 CI → Cloudflare Pages 自动部署。
 - **下个会话**：线上验证（/api/auth/providers、登录页 Google/GitHub 按钮亮起、真实 OAuth 全流程含 12 语言回调、登录后 /{lang}/account 跳转）；Google 侧若未发布应用需 PUBLISH APP 或把测试邮箱加入 Test users；GitHub secret 只显示一次已配置无需再取。
+
+### 2026-08-18 会话 #29（第三方登录上线后 5 项修复 — header 同步/个人中心语言/对话侧栏/行程保存/AIChat 12 语言）
+
+- **起**：用户反馈 5 项问题：(1) Google 登录「无法访问此页面」；(2) header 登录状态不刷新；(3) 个人中心只有英文；(4) 左侧对话记录点击没反应；(5) Saved Itineraries 空/无功能。
+- **排查结论**：
+  - (1) Google 授权 URL 302 正确（client_id 正确、redirect_uri=https://xyvuqbpwrhkukjgzveyc.supabase.co/auth/v1/callback），Google 返回登录页无 redirect_uri_mismatch → **代码侧无问题**，疑为设备网络/缓存；建议隐身窗口重试或确认 Google OAuth 同意屏幕已 PUBLISH。
+  - (2) 根因：supabase-js 客户端只写 localStorage，header 的 /api/auth/state 只读 cookie，两者不同步。
+  - (3) 根因：AccountPage.astro 的 mountReactComponents() 三处硬编码 language:'en'。
+  - (4) 根因：AIChatPage.tsx 与 AIChat.tsx 各自调用 useAIConversation()，两个独立 hook 实例，侧栏 loadConversation 只更新 AIChatPage state。
+  - (5) 根因：useAIConversation.ts 的 savedItineraries 是 useState([]) 永不更新，save/load/delete 都是 stub。
+- **改动**：
+  - src/supabase/config.ts：新增 createAuthStorage()（localStorage + cookie 镜像 sb-auth-token，remove 时清 cookie）并接入 supabase 客户端 storage。
+  - src/components/ai/chat-labels.ts（新建）：12 语言 CHAT_LABELS 字典（en/ja/ko/zh-CN/zh-TW/th/vi/ru/fr/de/ar/fa），覆盖 placeholder/send/history/newChat/savedItineraries/mcpOnline/mcpOffline/cancel/thinking/map/saveRoute/signInToSave/noRouteData/routeSaved/routeSaveFailed/whereToGo/intro/requestsRemaining/upgrade/monthlyLimitReached/upgradePlan/upgradeToContinue/aiDisclaimer/shareItinerary/shareCode/close/copyLink。
+  - src/lib/ai/itinerary-builder.ts（新建）：extractedRouteToSavedItinerary / buildSavedItineraryFromConversation / routeRowToSavedItinerary / savedItineraryToExtractedRoute。
+  - src/lib/ai/route-saver.ts：saveRoute 的 route_data 增加 destination/title/title_zh/summary/days/currency，供还原。
+  - src/hooks/useAIConversation.ts：savedItineraries 改可变 state + loadSavedItineraries()（localStorage cc_ai_saved_routes + Supabase ai_routes 合并）；saveCurrentItinerary 真实保存（已存 rename、新存 saveRoute）；loadItinerary/deleteItinerary 真实现；onComplete 用 buildSavedItineraryFromConversation 设置 currentItinerary；language 类型扩为 AiChatLang。
+  - src/components/ai/AIChat.tsx：改为受控组件（messages/isLoading/savedItineraries/currentItinerary/sendMessage/loadConversation 等全部由父组件传入，删除内部 useAIConversation 调用）；所有 language==="zh" 文案替换为 CHAT_LABELS[lang]（12 语言）；子组件 ItineraryDisplay/QuickPrompts/UpgradePrompt 仍映射 zh/en。
+  - src/components/AIChatPage.tsx：唯一 useAIConversation 实例，language 用 useTranslation().lang，完整解构并传给 <AIChat>。
+  - src/components/user/AccountPage.astro：ccReactLang（zh-CN/zh-TW→zh，其余→en）用于 UsageStats/BillingHistory/PlanComparison。
+  - src/layouts/BaseLayout.astro：新增 langPrefix()，登录/账户/个人中心链接与登出跳转带语言前缀。
+  - src/pages/auth/callback.astro + src/pages/[lang]/auth/callback.astro：goNext() 内 dispatch cc-auth-changed（authenticated:true）触发 header 刷新。
+- **验证**：npx tsc --noEmit 0 错误；pnpm test:unit 115/115；biome check --write 修复 6 文件；npx astro build 26,686 页成功（~97s）；构建产物确认 callback 打包 JS 含 cc-auth-changed true、AIChatPage 客户端包含 ja/ko/zh-TW 等 12 语言标签。
+- **状态**：全部改动未提交；待 push master 触发 CI 自动部署（deploy-cf-pages.yml）。
+- **下个会话**：提交部署后线上验证：登录后 header 立即显示用户菜单、/{lang}/account 个人中心非英文、AI 左侧对话记录点击可切换会话、Saved Itineraries 可保存/加载/删除、AIChat 12 语言文案；Google 登录若仍报错用隐身窗口或确认应用发布状态。
+

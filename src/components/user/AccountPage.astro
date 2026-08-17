@@ -265,6 +265,7 @@ const prefix = lang && lang !== "en" ? "/" + lang : "";
 <script>
   const ccCurrentLang = (window.__I18N__ && window.__I18N__.serverLang) || document.documentElement.lang || "en";
   const ccLangPrefix = ccCurrentLang && ccCurrentLang !== "en" ? "/" + ccCurrentLang : "";
+  const ccReactLang = (ccCurrentLang === 'zh-CN' || ccCurrentLang === 'zh-TW') ? 'zh' : 'en';
 
   import {
     getCurrentUser,
@@ -350,21 +351,21 @@ const prefix = lang && lang !== "en" ? "/" + lang : "";
     const usageRoot = document.getElementById('usage-stats-root');
     if (usageRoot) {
       const { UsageStats } = await import('@/components/account/UsageStats');
-      createRoot(usageRoot).render(createElement(UsageStats, { language: 'en' }));
+      createRoot(usageRoot).render(createElement(UsageStats, { language: ccReactLang }));
     }
 
     // BillingHistory
     const billingRoot = document.getElementById('billing-history-root');
     if (billingRoot) {
       const { BillingHistory } = await import('@/components/account/BillingHistory');
-      createRoot(billingRoot).render(createElement(BillingHistory, { language: 'en' }));
+      createRoot(billingRoot).render(createElement(BillingHistory, { language: ccReactLang }));
     }
 
     // PlanComparison
     const plansRoot = document.getElementById('plan-comparison-root');
     if (plansRoot) {
       const { PlanComparison } = await import('@/components/account/PlanComparison');
-      createRoot(plansRoot).render(createElement(PlanComparison, { language: 'en' }));
+      createRoot(plansRoot).render(createElement(PlanComparison, { language: ccReactLang }));
     }
   }
 

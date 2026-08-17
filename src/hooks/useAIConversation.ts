@@ -32,13 +32,21 @@ import {
   getRemainingRequests as getRemainingAIRequests,
 } from "@/lib/usage-tracker";
 import { supabase } from "@/supabase/config";
+import type { AiChatLang } from "@/components/ai/chat-labels";
+import { saveRoute } from "@/lib/ai/route-saver";
+import {
+  buildSavedItineraryFromConversation,
+  extractedRouteToSavedItinerary,
+  routeRowToSavedItinerary,
+  savedItineraryToExtractedRoute,
+} from "@/lib/ai/itinerary-builder";
 
 // ============================================
 // Hook Types
 // ============================================
 
 export interface UseAIConversationOptions {
-  language?: "en" | "zh" | "ja" | "ko";
+  language?: AiChatLang;
   budgetLevel?: "budget" | "medium" | "luxury";
   userId?: string;
   autoSave?: boolean;
@@ -60,8 +68,9 @@ export interface UseAIConversationReturn {
   sendMessage: (content: string) => Promise<void>;
   clearConversation: () => void;
   refreshUsage: () => Promise<void>;
-  saveCurrentItinerary: (name: string) => SavedItinerary | null;
+  saveCurrentItinerary: (name: string) => Promise<SavedItinerary | null>;
   loadItinerary: (id: string) => void;
+  loadSavedItineraries: () => Promise<void>;
   deleteItinerary: (id: string) => void;
   loadConversation: (id: string) => Promise<void>;
   deleteConversation: (id: string) => Promise<void>;
@@ -130,7 +139,7 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
   const [messages, setMessages] = useState<Message[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [workflowProgress, setWorkflowProgress] = useState<WorkflowProgress | null>(null);
-  const [savedItineraries] = useState<SavedItinerary[]>([]);
+  const [savedItineraries, setSavedItineraries] = useState<SavedItinerary[]>([]);
   const [conversationHistory, setConversationHistory] = useState<ConversationSummary[]>([]);
   const [currentItinerary, setCurrentItinerary] = useState<SavedItinerary | null>(null);
   const [isMCPAvailable, setIsMCPAvailable] = useState(false);
@@ -160,8 +169,10 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
       if (userData?.user) {
         await refreshUsage();
         await loadConversationHistory();
+        await loadSavedItineraries();
       } else {
         setConversationHistory([]);
+        setSavedItineraries([]);
       }
     };
 
@@ -172,8 +183,10 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
       if (session?.user) {
         refreshUsage();
         loadConversationHistory();
+        loadSavedItineraries();
       } else {
         setConversationHistory([]);
+        setSavedItineraries([]);
         setMessages([]);
         conversationIdRef.current = null;
       }
@@ -334,6 +347,13 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
                 m.id === assistantId ? { ...m, content: finalText, isStreaming: false } : m,
               ),
             );
+            const fullConversation: Message[] = [
+              ...messages,
+              userMsg,
+              { id: assistantId, role: "assistant", content: finalText, timestamp: new Date() },
+            ];
+            const built = buildSavedItineraryFromConversation(fullConversation);
+            if (built) setCurrentItinerary(built);
           },
           onError: (err) => {
             setMessages((prev) =>
@@ -413,27 +433,147 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
   }, [clearConversation]);
 
   // ============================================
-  // Itinerary management (kept from old API, local only)
+  // ============================================
+  // Itinerary management (real: ai_routes + localStorage)
   // ============================================
 
+  const loadSavedItineraries = useCallback(async () => {
+    const merged: SavedItinerary[] = [];
+
+    // localStorage routes (offline-first cache written by route-saver)
+    try {
+      const raw = localStorage.getItem("cc_ai_saved_routes");
+      if (raw) {
+        const local = JSON.parse(raw) as Array<Record<string, unknown>>;
+        for (const r of local) {
+          const route = r as unknown as {
+            id?: string;
+            destination?: string;
+            titleZh?: string;
+            title?: string;
+            days?: number;
+            createdAt?: string;
+            dailyPlans?: Array<Record<string, unknown>>;
+            totalEstimatedCost?: number;
+            currency?: string;
+            highlights?: string[];
+            tips?: string[];
+          };
+          if (!route.destination && !route.dailyPlans) continue;
+          const it = extractedRouteToSavedItinerary(route as never);
+          if (route.id) it.id = route.id;
+          if (route.createdAt) it.createdAt = route.createdAt;
+          if (!merged.some((m) => m.id === it.id)) merged.push(it);
+        }
+      }
+    } catch {
+      // ignore malformed cache
+    }
+
+    // Supabase ai_routes for the current user
+    const { data: userData } = await supabase.auth.getUser();
+    if (userData?.user) {
+      const { data, error } = await supabase
+        .from("ai_routes")
+        .select(
+          "id, title, title_zh, summary, summary_zh, days, route_data, created_at, updated_at",
+        )
+        .eq("user_id", userData.user.id)
+        .order("created_at", { ascending: false })
+        .limit(50);
+      if (!error && data) {
+        for (const row of data) {
+          const it = routeRowToSavedItinerary(row as never);
+          if (!merged.some((m) => m.id === it.id)) merged.push(it);
+        }
+      }
+    }
+
+    setSavedItineraries(merged);
+  }, []);
+
   const saveCurrentItinerary = useCallback(
-    (name: string): SavedItinerary | null => {
+    async (name: string): Promise<SavedItinerary | null> => {
       if (!currentItinerary) return null;
-      const saved: SavedItinerary = { ...currentItinerary, name };
-      setCurrentItinerary(saved);
-      return saved;
+      const updated: SavedItinerary = { ...currentItinerary, name };
+
+      const { data: userData } = await supabase.auth.getUser();
+      if (userData?.user && !currentItinerary.id.startsWith("local_")) {
+        // Already persisted -> rename in ai_routes
+        try {
+          await supabase
+            .from("ai_routes")
+            .update({ title: name, title_zh: name })
+            .eq("id", currentItinerary.id);
+        } catch (err) {
+          console.warn("[useAIConversation] rename route failed:", err);
+        }
+      } else if (userData?.user) {
+        // New route -> persist via route-saver
+        const route = savedItineraryToExtractedRoute(updated);
+        try {
+          const result = await saveRoute(userData.user.id, conversationIdRef.current ?? "", route);
+          if (result.routeId) updated.id = result.routeId;
+        } catch (err) {
+          console.warn("[useAIConversation] save route failed:", err);
+        }
+      }
+
+      setCurrentItinerary(updated);
+      await loadSavedItineraries();
+      return updated;
     },
-    [currentItinerary],
+    [currentItinerary, loadSavedItineraries],
   );
 
-  const loadItinerary = useCallback((id: string) => {
-    // No local itinerary store; this is a stub for backward compatibility
-    void id;
-  }, []);
+  const loadItinerary = useCallback(
+    async (id: string) => {
+      const found = savedItineraries.find((it) => it.id === id);
+      if (found) {
+        setCurrentItinerary(found);
+        return;
+      }
+      // Fall back to ai_routes by id
+      const { data: userData } = await supabase.auth.getUser();
+      if (userData?.user) {
+        const { data } = await supabase
+          .from("ai_routes")
+          .select(
+            "id, title, title_zh, summary, summary_zh, days, route_data, created_at, updated_at",
+          )
+          .eq("id", id)
+          .single();
+        if (data) {
+          setCurrentItinerary(routeRowToSavedItinerary(data as never));
+        }
+      }
+    },
+    [savedItineraries],
+  );
 
-  const deleteItinerary = useCallback((id: string) => {
-    void id;
-  }, []);
+  const deleteItinerary = useCallback(
+    async (id: string) => {
+      const { data: userData } = await supabase.auth.getUser();
+      if (userData?.user && !id.startsWith("local_")) {
+        await supabase.from("ai_routes").delete().eq("id", id).eq("user_id", userData.user.id);
+      }
+      try {
+        const raw = localStorage.getItem("cc_ai_saved_routes");
+        if (raw) {
+          const routes = JSON.parse(raw) as Array<{ id: string }>;
+          localStorage.setItem(
+            "cc_ai_saved_routes",
+            JSON.stringify(routes.filter((r) => r.id !== id)),
+          );
+        }
+      } catch {
+        // ignore
+      }
+      if (currentItinerary?.id === id) setCurrentItinerary(null);
+      await loadSavedItineraries();
+    },
+    [currentItinerary, loadSavedItineraries],
+  );
 
   const exportItinerary = useCallback(
     (format: "text" | "json"): string => {
@@ -496,6 +636,7 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
     saveCurrentItinerary,
     loadItinerary,
     deleteItinerary,
+    loadSavedItineraries,
     loadConversation,
     deleteConversation,
     createNewConversation,

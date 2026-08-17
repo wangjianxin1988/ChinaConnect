@@ -312,7 +312,7 @@ function ConversationSidebarInner({
 // ============================================
 
 export default function AIChatPage() {
-  const { t } = useTranslation();
+  const { t, lang } = useTranslation();
   const aiT = buildAiT(t);
   const [externalPrompt, setExternalPrompt] = useState<string | null>(null);
   const [_savedItinerary, _setSavedItinerary] = useState<SavedItinerary | null>(null);
@@ -331,7 +331,19 @@ export default function AIChatPage() {
     loadConversation,
     deleteConversation,
     createNewConversation,
-  } = useAIConversation({ language: "en" });
+    workflowProgress,
+    savedItineraries,
+    currentItinerary,
+    isMiniMaxAvailable,
+    remainingRequests,
+    saveCurrentItinerary,
+    loadItinerary,
+    deleteItinerary,
+    exportItinerary,
+    shareItinerary,
+    getShareLink,
+    clearConversation,
+  } = useAIConversation({ language: lang });
 
   // Re-show exhausted banner when usage runs out mid-chat
   useEffect(() => {
@@ -360,8 +372,9 @@ export default function AIChatPage() {
 
   // Public visitors can browse the AI page; sign-in is only required when they
   // actually start chatting. Redirect to the single unified login page.
-    const handleStartChat = useCallback(() => {
-    const currentLang = ((window as unknown as { __I18N__?: { serverLang?: string } }).__I18N__?.serverLang) || "en";
+  const handleStartChat = useCallback(() => {
+    const currentLang =
+      (window as unknown as { __I18N__?: { serverLang?: string } }).__I18N__?.serverLang || "en";
     const langPrefix = currentLang && currentLang !== "en" ? "/" + currentLang : "";
     const next = encodeURIComponent(window.location.pathname + window.location.search);
     window.location.href = langPrefix + "/auth/login?next=" + next;
@@ -370,20 +383,91 @@ export default function AIChatPage() {
   // Public landing view: browseable without an account, no login wall.
   if (!isAuthenticated) {
     const featureCards = [
-      { icon: "🗺", title: aiT("featItineraryTitle", "Custom Itineraries"), desc: aiT("featItineraryDesc", "Day-by-day plans tailored to your city, budget and travel style.") },
-      { icon: "🍜", title: aiT("featFoodTitle", "Food & Dining"), desc: aiT("featFoodDesc", "Michelin, Black Pearl and local hidden gems you won’t find in guidebooks.") },
-      { icon: "🏨", title: aiT("featHotelTitle", "Hotels in 3 Tiers"), desc: aiT("featHotelDesc", "Budget, mid-range and luxury options side by side with nightly rates and booking links.") },
-      { icon: "🚄", title: aiT("featTransportTitle", "Transport & Routes"), desc: aiT("featTransportDesc", "Real-time train and flight options, metro routes, prices and booking links.") },
-      { icon: "💳", title: aiT("featPayTitle", "Payments & Practical"), desc: aiT("featPayDesc", "Alipay, WeChat Pay, SIM cards, visa rules and every practical detail.") },
-      { icon: "🧭", title: aiT("featLocalTitle", "Local Know-How"), desc: aiT("featLocalDesc", "Cultural etiquette, crowd levels, weather, emergency contacts and phrase translations.") },
+      {
+        icon: "🗺",
+        title: aiT("featItineraryTitle", "Custom Itineraries"),
+        desc: aiT(
+          "featItineraryDesc",
+          "Day-by-day plans tailored to your city, budget and travel style.",
+        ),
+      },
+      {
+        icon: "🍜",
+        title: aiT("featFoodTitle", "Food & Dining"),
+        desc: aiT(
+          "featFoodDesc",
+          "Michelin, Black Pearl and local hidden gems you won’t find in guidebooks.",
+        ),
+      },
+      {
+        icon: "🏨",
+        title: aiT("featHotelTitle", "Hotels in 3 Tiers"),
+        desc: aiT(
+          "featHotelDesc",
+          "Budget, mid-range and luxury options side by side with nightly rates and booking links.",
+        ),
+      },
+      {
+        icon: "🚄",
+        title: aiT("featTransportTitle", "Transport & Routes"),
+        desc: aiT(
+          "featTransportDesc",
+          "Real-time train and flight options, metro routes, prices and booking links.",
+        ),
+      },
+      {
+        icon: "💳",
+        title: aiT("featPayTitle", "Payments & Practical"),
+        desc: aiT(
+          "featPayDesc",
+          "Alipay, WeChat Pay, SIM cards, visa rules and every practical detail.",
+        ),
+      },
+      {
+        icon: "🧭",
+        title: aiT("featLocalTitle", "Local Know-How"),
+        desc: aiT(
+          "featLocalDesc",
+          "Cultural etiquette, crowd levels, weather, emergency contacts and phrase translations.",
+        ),
+      },
     ];
     const powerItems = [
-      { icon: "🎯", title: aiT("featPrefsTitle", "Personalized to You"), desc: aiT("featPrefsDesc", "Tells you exactly what it needs: budget, travel style, transport, hotel type, group size, days and nationality.") },
-      { icon: "📅", title: aiT("featPlanTitle", "Complete Day Plans"), desc: aiT("featPlanDesc", "Hour-by-hour itinerary tables plus 3-tier hotels, meals, transport and a 3-level daily budget summary.") },
-      { icon: "📡", title: aiT("featRealtimeTitle", "Based on Real-Time Data"), desc: aiT("featRealtimeDesc", "Connects to live data sources so prices, routes, opening hours and crowd levels stay accurate and current.") },
-      { icon: "🌐", title: aiT("featLangTitle", "Speaks Your Language"), desc: aiT("featLangDesc", "Chat in English, 日本語, 한국어, 中文, ไทย, Tiếng Việt, Русский, Français, Deutsch, العربية, فارسی and more.") },
+      {
+        icon: "🎯",
+        title: aiT("featPrefsTitle", "Personalized to You"),
+        desc: aiT(
+          "featPrefsDesc",
+          "Tells you exactly what it needs: budget, travel style, transport, hotel type, group size, days and nationality.",
+        ),
+      },
+      {
+        icon: "📅",
+        title: aiT("featPlanTitle", "Complete Day Plans"),
+        desc: aiT(
+          "featPlanDesc",
+          "Hour-by-hour itinerary tables plus 3-tier hotels, meals, transport and a 3-level daily budget summary.",
+        ),
+      },
+      {
+        icon: "📡",
+        title: aiT("featRealtimeTitle", "Based on Real-Time Data"),
+        desc: aiT(
+          "featRealtimeDesc",
+          "Connects to live data sources so prices, routes, opening hours and crowd levels stay accurate and current.",
+        ),
+      },
+      {
+        icon: "🌐",
+        title: aiT("featLangTitle", "Speaks Your Language"),
+        desc: aiT(
+          "featLangDesc",
+          "Chat in English, 日本語, 한국어, 中文, ไทย, Tiếng Việt, Русский, Français, Deutsch, العربية, فارسی and more.",
+        ),
+      },
     ];
-    const examplePrompts = t.aiPage?.prompts && t.aiPage.prompts.length > 0 ? t.aiPage.prompts : FALLBACK_PROMPTS;
+    const examplePrompts =
+      t.aiPage?.prompts && t.aiPage.prompts.length > 0 ? t.aiPage.prompts : FALLBACK_PROMPTS;
 
     return (
       <div className="min-h-[calc(100vh-64px)] bg-gradient-to-br from-slate-50 via-white to-purple-50">
@@ -396,7 +480,10 @@ export default function AIChatPage() {
               {aiT("heroTitle", "ChinaGuide AI")}
             </h1>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-              {aiT("heroSubtitle", "Your personal China travel intelligence — itineraries, local insights, and real-time guidance.")}
+              {aiT(
+                "heroSubtitle",
+                "Your personal China travel intelligence — itineraries, local insights, and real-time guidance.",
+              )}
             </p>
           </div>
 
@@ -408,7 +495,10 @@ export default function AIChatPage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto mb-14">
             {featureCards.map((f) => (
-              <div key={f.title} className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
+              <div
+                key={f.title}
+                className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6"
+              >
                 <div className="text-4xl mb-3">{f.icon}</div>
                 <h3 className="font-semibold text-gray-900 mb-1.5">{f.title}</h3>
                 <p className="text-sm text-gray-500 leading-relaxed">{f.desc}</p>
@@ -424,7 +514,10 @@ export default function AIChatPage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto mb-14">
             {powerItems.map((f) => (
-              <div key={f.title} className="flex gap-4 bg-white rounded-2xl border border-gray-200 shadow-sm p-5">
+              <div
+                key={f.title}
+                className="flex gap-4 bg-white rounded-2xl border border-gray-200 shadow-sm p-5"
+              >
                 <div className="text-3xl shrink-0">{f.icon}</div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">{f.title}</h3>
@@ -572,8 +665,27 @@ export default function AIChatPage() {
 
             <div className="w-full bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
               <AIChat
+                language={lang}
                 externalPrompt={externalPrompt}
                 onExternalPromptConsumed={() => setExternalPrompt(null)}
+                messages={messages}
+                isLoading={isLoading}
+                workflowProgress={workflowProgress}
+                savedItineraries={savedItineraries}
+                conversationHistory={conversationHistory}
+                currentItinerary={currentItinerary}
+                isMiniMaxAvailable={isMiniMaxAvailable}
+                usageExceeded={usageExceeded}
+                remainingRequests={remainingRequests}
+                sendMessage={sendMessage}
+                clearConversation={clearConversation}
+                saveCurrentItinerary={saveCurrentItinerary}
+                loadItinerary={loadItinerary}
+                deleteItinerary={deleteItinerary}
+                loadConversation={loadConversation}
+                exportItinerary={exportItinerary}
+                shareItinerary={shareItinerary}
+                getShareLink={getShareLink}
               />
             </div>
 

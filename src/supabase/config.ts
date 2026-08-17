@@ -37,8 +37,83 @@ export const supabase: SupabaseClient = createClient(supabaseUrl, supabaseKey, {
     autoRefreshToken: true,
     persistSession: true,
     detectSessionInUrl: false,
+    storage: createAuthStorage(),
   },
 });
+
+// Cookie mirror so Cloudflare Pages Functions (/api/auth/state) can verify the
+// session server-side. supabase-js persists to localStorage by default, but the
+// header auth state is read from a cookie; keep both in sync.
+const AUTH_COOKIE_NAME = "sb-auth-token";
+const AUTH_COOKIE_MAX_AGE = 7 * 24 * 3600;
+
+function writeAuthCookie(value: string | null): void {
+  if (typeof document === "undefined") return;
+  try {
+    if (value === null) {
+      document.cookie = AUTH_COOKIE_NAME + "=; Path=/; SameSite=Lax; Max-Age=0";
+      return;
+    }
+    document.cookie =
+      AUTH_COOKIE_NAME +
+      "=" +
+      encodeURIComponent(value) +
+      "; Path=/; SameSite=Lax; Max-Age=" +
+      AUTH_COOKIE_MAX_AGE;
+  } catch {
+    // Cookies may be unavailable (e.g. third-party iframe); localStorage still works.
+  }
+}
+
+function createAuthStorage() {
+  return {
+    getItem: async function (key: string): Promise<string | null> {
+      if (typeof localStorage === "undefined") return null;
+      try {
+        return localStorage.getItem(key);
+      } catch {
+        return null;
+      }
+    },
+    setItem: async function (key: string, value: string): Promise<void> {
+      if (typeof localStorage !== "undefined") {
+        try {
+          localStorage.setItem(key, value);
+        } catch {
+          // storage may be full/blocked; still try the cookie
+        }
+      }
+      try {
+        const parsed = JSON.parse(value) as {
+          access_token?: string;
+          refresh_token?: string;
+          expires_at?: number;
+        };
+        if (parsed.access_token) {
+          writeAuthCookie(
+            JSON.stringify({
+              access_token: parsed.access_token,
+              refresh_token: parsed.refresh_token ?? "",
+              expires_at: parsed.expires_at ?? 0,
+            }),
+          );
+        }
+      } catch {
+        // not a session payload; ignore
+      }
+    },
+    removeItem: async function (key: string): Promise<void> {
+      if (typeof localStorage !== "undefined") {
+        try {
+          localStorage.removeItem(key);
+        } catch {
+          // ignore
+        }
+      }
+      writeAuthCookie(null);
+    },
+  };
+}
 
 function callbackUrl(): string {
   if (typeof window !== "undefined") return `${window.location.origin}/auth/callback`;

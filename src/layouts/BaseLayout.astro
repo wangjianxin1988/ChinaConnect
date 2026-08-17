@@ -559,11 +559,18 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
             .replace(/'/g, "&#39;");
         }
 
+        // Language prefix for auth navigation links: empty for English,
+        // "/<lang>" otherwise, matching the server-side lp used for nav links.
+        function langPrefix() {
+          var l = getLangInfo().lang;
+          return l === "en" ? "" : "/" + l;
+        }
+
         function renderLoggedOut() {
           var c = document.getElementById("auth-nav-container");
           if (!c) return;
           c.innerHTML =
-            '<a href="/auth/login" class="flex items-center gap-2 px-4 py-1.5 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-medium transition-colors" aria-label="Sign In">' +
+            '<a href="' + langPrefix() + '/auth/login" class="flex items-center gap-2 px-4 py-1.5 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-medium transition-colors" aria-label="Sign In">' +
               '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>' +
               '<span data-i18n="auth.signIn">' + escapeHtml("Sign In") + '</span>' +
             '</a>';
@@ -591,11 +598,11 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
                   '<p class="text-sm font-medium text-gray-900 truncate">' + escapeHtml(user.displayName || "User") + '</p>' +
                   '<p class="text-xs text-gray-500 truncate">' + escapeHtml(user.email || "") + '</p>' +
                 '</div>' +
-                '<a href="/account" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50" role="menuitem">' +
+                '<a href="' + langPrefix() + '/account" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50" role="menuitem">' +
                   '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>' +
                   '<span data-i18n="auth.myAccount">' + escapeHtml("My Account") + '</span>' +
                 '</a>' +
-                '<a href="/profile" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50" role="menuitem">' +
+                '<a href="' + langPrefix() + '/profile" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50" role="menuitem">' +
                   '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>' +
                   '<span data-i18n="auth.profileCenter">' + escapeHtml("Profile Center") + '</span>' +
                 '</a>' +
@@ -630,8 +637,10 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
                 .catch(function () {})
                 .finally(function () {
                   window.dispatchEvent(new CustomEvent("cc-auth-changed", { detail: { authenticated: false } }));
-                  if (window.location.pathname.indexOf("/account") === 0) {
-                    window.location.href = "/";
+                  var lp = langPrefix();
+                  var pathNoLang = window.location.pathname.replace(/^\/(en|ja|ko|zh-CN|zh-TW|th|vi|ru|fr|de|ar|fa)(?=\/|$)/, "");
+                  if (pathNoLang.indexOf("/account") === 0) {
+                    window.location.href = lp + "/";
                   } else {
                     window.location.reload();
                   }

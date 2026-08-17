@@ -304,8 +304,13 @@ export async function saveRoute(
         summary_zh: routeData.summaryZh || null,
         days: routeData.days,
         route_data: {
+          destination: routeData.destination,
+          title: routeData.title,
+          title_zh: routeData.titleZh || null,
+          summary: routeData.summary,
           days: routeData.dailyPlans,
           total_estimated_cost: routeData.totalEstimatedCost,
+          currency: routeData.currency,
           transport_summary: routeData.transportSummary,
           highlights: routeData.highlights,
           tips: routeData.tips,

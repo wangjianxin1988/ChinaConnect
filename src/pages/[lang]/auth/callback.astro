@@ -53,6 +53,7 @@ const title = (translations[lang]?.authPage?.callbackTitle) || translations.en.a
       if (!error) {
         // Clean URL, then redirect to account
         function goNext() {
+          try { window.dispatchEvent(new CustomEvent("cc-auth-changed", { detail: { authenticated: true } })); } catch (e) {}
           var n = null;
           try { n = sessionStorage.getItem("auth_next"); } catch (e) { n = null; }
           try { if (n) sessionStorage.removeItem("auth_next"); } catch (e) {}
