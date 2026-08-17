@@ -1182,3 +1182,19 @@ for lang in LANGS:
   - dev server + wrangler pages dev（dist+functions）抽验：/de|ru|th|ko|ar/food/beijing-4 标题与 h1 均本地化（Kaiserlicher Schatz / Императорское сокровище / อิมพีเรียลทรเจอร์…），副标题保留英文原名；筛选芯片 ja/ko/th/vi/de/zh-TW/ar 全部为修正后文案。
 - **提交**：已提交（含会话 #24 未提交的全部改动：语言重定向、美食板块、AI 推荐卡、认证本地化、type 枚举规范化），push master 触发 CI 自动部署。
 - **下个会话**：无强制待办。可留意 CI deploy 运行与线上抽验（/de/food/beijing-4 标题、筛选芯片、street_food 筛选 58 家全语言一致）。
+
+
+### 2026-08-18 会话 #27（实现第三方登录 — 基础设施配置 + provider 实时探测）
+
+- **起**：用户要求「开始实现第三方登录」。
+- **摸底**：前端 OAuth 链路已就绪（LoginPage 有 Google/GitHub 按钮 + /api/auth/providers 探测 + 友好错误；/auth/callback 支持 PKCE 换 session 且 detectAuthLang 保持语言，含 [lang]/auth/callback 12 语言版）。生产 Supabase（ref xyvuqbpwrhkukjgzveyc）google/github **均未启用**，site_url 仍是默认 http://localhost:3000，uri_allow_list 空。全仓/GitHub secrets/Cloudflare/本地均无 OAuth Client ID/Secret。
+- **改动**：
+  - Supabase 生产 Auth 配置（Management API，token 从 cmdkey Supabase CLI:supabase 经 Python ctypes CredReadW 读 blob，仅内存使用不落盘）：site_url → https://chinaengage.org；uri_allow_list → https://chinaengage.org/auth/callback,https://www.chinaengage.org/auth/callback,http://localhost:4321/auth/callback,http://localhost:3000/auth/callback。已验证 PATCH 200 生效（注意 API 是 PATCH 非 PUT、uri_allow_list 是逗号分隔字符串非数组）。
+  - functions/api/auth/providers.ts：改为实时探测 GoTrue 公开端点 {PUBLIC_SUPABASE_URL}/auth/v1/settings（带 anon key，AbortController 5s 超时），返回 providers.google/github/email + source；探测失败回退 OAUTH_PROVIDERS_ENABLED env var。启用 provider 后前端按钮无需改代码/重新部署即自动亮起。
+- **验证**：npx tsc --noEmit 0 错误；wrangler pages dev（dist+functions）GET /api/auth/providers → status 200，source=supabase、google=false/github=false/email=true，与 Supabase 真实配置一致。
+- **遗留（关键）**：缺少 Google/GitHub OAuth Client ID/Secret，**无法真正启用 provider**。用户需创建：
+  - Google Cloud Console → OAuth Client（Web），授权重定向 URI = https://xyvuqbpwrhkukjgzveyc.supabase.co/auth/v1/callback
+  - GitHub Settings → Developer settings → OAuth Apps，callback URL 同上
+  - 拿到 Client ID/Secret 后：Management API PATCH /v1/projects/xyvuqbpwrhkukjgzveyc/config/auth 设置 external_google_enabled=true + external_google_client_id/secret（github 同理），再部署并线上验证。
+- **状态**：providers.ts 已改未提交；Supabase 配置已生效（生产）。
+- **下个会话**：提交 providers.ts → 向用户要 OAuth 凭据 → 启用 provider → 部署（push master 触发 CI）→ 线上验证登录页按钮亮起 + Google/GitHub 全流程（含 12 语言回调）。
