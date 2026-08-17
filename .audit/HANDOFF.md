@@ -1100,3 +1100,24 @@ for lang in LANGS:
 - **结论**：免费套餐 20k 文件上限方案已上线，12 语言详情页与原先静态页输出一致（打包时逐字节校验 19,833 页兜底），dist 9,455 文件，余量 ~10.5k。
 - **遗留**：无。scenic-spots 页 SSR ~3MB 偏重（此前记录，本次未动）。
 - **下个会话**：无强制待办；后续加城市/餐厅/景点/博客时留意 dist 文件数余量（逼近 20k 时可用同一套「壳+差异」技术扩展）。
+
+### 2026-08-17 会话 #23（scenic-spots 首屏 SSR + 滚动懒加载 + E2E 修复，已部署生产）
+
+- **起**：接 #22 遗留（scenic-spots SSR ~3MB 偏重）。用户确认按「首屏 SSR + 滚动懒加载」改造，四项（懒加载/分页/SEO/GEO/UX）不降质量全做，直接部署生产。
+- **改动**：
+  - src/pages/scenic-data/[lang].json.ts：构建期生成 12 语言全量景区 JSON（/scenic-data/{lang}.json，ja 约 537KB）。
+  - src/scripts/scenic-lazy.ts：客户端懒加载脚本（SSR 前 36 张 + Load more + IntersectionObserver 滚动触发 + 分类/城市筛选 + 计数状态 + loadAll 共享 promise 防竞态）。
+  - src/pages/scenic-spots/index.astro 与 [lang]/scenic-spots/index.astro：SSR 只渲染 36 张卡（页面 ~3MB → ~210KB），筛选区块移入 #scenic-app（否则事件绑不上），新增城市下拉（35 城）。
+  - src/i18n/components-strings.ts：scenic_load_more / scenic_all_cities / scenic_shown_of × 12 语言。
+  - tests/e2e/scenic-spots.spec.ts 新建；ai-chat 标题正则更新（AI 页重写后标题为 ChinaGuide AI - Your Intelligent China Travel Expert）。
+  - playwright.config.ts：CI 用 astro preview；serviceWorkers: "block"（根因：public/sw.js activate 里 c.navigate(c.url) 强制刷新所有页面，把不等待的 count()/evaluateAll 断言全部打挂）。
+  - e2e.yml：4 处 pnpm build 改为 check:i18n + astro build（跳过 prebuild MiniMax）；去掉 --reporter=list 覆盖，让 HTML 报告生成以便 coverage job 下载。
+  - package.json：@playwright/test ^1.60.0 → ^1.62.1（与 playwright CLI 对齐）。
+- **验证**：
+  - check:i18n 0 缺口、tsc --noEmit 通过；构建 26,609 页；packer --full-verify 19,833 页逐字节校验全过；dist 9,470 文件（余量 ~10.5k）。
+  - 本地 preview 全量 chromium：196 通过 / 6 跳过 / 0 失败（此前 4 失败 4 抖动全消）。
+  - CI E2E（push 4a55aed）：Chromium ✓ / All Browsers ✓ / Perf ✓（11-12 分钟）；Coverage job 因无 HTML 报告失败，已由 df8fc9d 修复。
+  - 部署 run 32029609136 成功；线上抽验 /scenic-spots（36 SSR 卡、209KB、scenic-app）、/scenic-data/ja.json 200、/zh-CN/scenic-spots 200、/ar/scenic-spots 200、/zh-CN/food/beijing-1 200（Worker 拼装无回归）。
+- **提交**：4a55aed（scenic 懒加载 + E2E 修复）、df8fc9d（coverage 报告修复）、76c1179（#22 docs）已全部推送。
+- **遗留**：无强制待办。后续加城市/景点/美食/博客时留意 dist 文件数余量（逼近 20k 时继续用壳+差异方案）。scenic-data JSON 每语言 ~0.5MB，懒加载时按需请求，Cache-Control max-age=86400。
+- **下个会话**：若 E2E coverage job 仍有问题，检查 playwright-report 产物是否生成；无则无强制待办。
