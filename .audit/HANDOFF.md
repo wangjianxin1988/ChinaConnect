@@ -1071,3 +1071,19 @@ for lang in LANGS:
   - 清理 .audit 临时文件 1922 个（按 §7.1 保留清单）。
 - **遗留**：无已知未完成项。scenic-spots 页 SSR ~3MB（1770 卡）偏重，若后续 Lighthouse 性能告警可考虑懒加载/分页（本次未动）。
 - **下个会话**：git 提交本轮改动（src/data/food/resolve.ts、两个 food/[id].astro、attractions ×2、scenic-spots ×2、components-strings.ts、AIChatPage.tsx、translations.ts 等），推送后 gh run watch 部署，线上 curl + Playwright 抽验（/zh-CN/food/beijing-1 200、/zh-CN/scenic-spots 筛选、/zh-CN/ai 日文/中文、contact/terms/privacy 邮箱）。部署前需用户确认。
+
+
+### 2026-08-17 会话 #21（部署受阻 → 设计免费套餐方案 → 用户暂停，6 点后续做）
+
+- **部署受阻**：push adc098b 后 Deploy workflow 失败 —— Cloudflare Pages 免费套餐单次部署上限 20,000 文件，本次新增 ~21,636 个餐厅详情静态页后 dist 共 28,991 文件超限。构建/check:i18n 均通过，仅 wrangler pages deploy 被拒。**线上仍是 234ab40（第 2 轮 5 项修复尚未上线）**。
+- **用户决策**：不升付费套餐；12 语言全保留；质量（SEO/GEO/UX）不降；以后持续加内容。
+- **方案（已定，已验证可行）**：EN 餐厅详情页保持纯静态；11 语言详情页构建后由 scripts/pack-food-details.mjs 打包成 food-skeleton/{lang}.html（每语言共享壳）+ food-delta/{lang}/{0..25}.json（每餐厅差异，26 块/语言，FNV-1a(id)%26 定位），Worker（functions/[[path]].ts）按需拼装，输出与现静态页逐字节一致（打包时自动校验）。文件数 28,991 → ~9.4k，余量 ~10.7k。
+- **已验证的关键事实**：同语言内餐厅页差异全部落在 3 个动态区（header/island/same-city）+ head 7 个 token（html 标签/title/og:title/twitter:title/og:url/canonical/hreflang 块）；餐厅页无 JSON-LD；robots 全放行；hreflang 现状为 ?lang= 查询串（既有行为，保持）。
+- **已完成**：src/pages/[lang]/food/[id].astro 加 FOOD_HEADER/ISLAND/SAMECITY 标记注释；scripts/pack-food-details.mjs 写好（CHUNK_COUNT=26，--full-verify 支持）。均未提交。
+- **待做（6 点后）**：
+  1. functions/[[path]].ts 加非 en 语言 food 分支（remainingPath 匹配 ^/food/([^/]+)/?\$ → 取 skeleton+delta 拼装 → 注入 locale script+cookie+Cache-Control，404 兜底）；CHUNK_COUNT=26 与 packer 一致。
+  2. deploy-cf-pages.yml 构建命令加 && node scripts/pack-food-details.mjs。
+  3. node node_modules/astro/astro.js build → node scripts/pack-food-details.mjs --full-verify → 文件数 <20k。
+  4. npx wrangler pages dev dist 本地端到端（/zh-CN/food/beijing-1 拼装、/ja/food/beijing-1、/food/beijing-1 静态、404、其它页正常）。
+  5. 提交推送 → gh run watch → 线上 curl/Playwright 抽验。
+- **注意**：git 已提交并推送 8a08530（round-2 修复）+ adc098b（.audit 清理）；未提交：上述两个文件。dev server 未运行。

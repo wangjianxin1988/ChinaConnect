@@ -33,6 +33,24 @@ const DEFAULT_LOCALE = "en";
 const PAGES_SUBDOMAIN = "chinaconnect.pages.dev";
 const CANONICAL_HOST = "chinaengage.org";
 
+// Food detail pages: free plan caps deployments at 20,000 files, so the 11
+// non-English restaurant detail sets are packed at build time into shared
+// skeletons + per-restaurant deltas (scripts/pack-food-details.mjs) and
+// assembled here on demand. CHUNK_COUNT must match the packer script.
+const FOOD_CHUNK_COUNT = 26;
+const FOOD_SKELETON_DIR = "food-skeleton";
+const FOOD_DELTA_DIR = "food-delta";
+
+// FNV-1a hash — must stay in sync with scripts/pack-food-details.mjs
+function fnv1a(str: string): number {
+  let h = 0x811c9dc5;
+  for (let i = 0; i < str.length; i++) {
+    h ^= str.charCodeAt(i);
+    h = Math.imul(h, 0x01000193);
+  }
+  return h >>> 0;
+}
+
 export const onRequest: PagesFunction = async (context) => {
   const url = new URL(context.request.url);
   const host = url.hostname.toLowerCase();
@@ -66,6 +84,57 @@ export const onRequest: PagesFunction = async (context) => {
   if (localeMatch) {
     const locale = localeMatch[1];
     const remainingPath = localeMatch[2] || "/";
+
+    // Non-English food detail pages are assembled from build-time deltas;
+    // output is byte-identical to the previously static localized pages.
+    const foodDetailMatch = remainingPath.match(/^\/food\/([^/]+)\/?$/);
+    if (locale !== "en" && foodDetailMatch) {
+      const foodId = foodDetailMatch[1];
+      const chunkIndex = fnv1a(foodId) % FOOD_CHUNK_COUNT;
+      const skeletonPath = `/${FOOD_SKELETON_DIR}/${locale}.html`;
+      const deltaPath = `/${FOOD_DELTA_DIR}/${locale}/${chunkIndex}.json`;
+      const [skeletonRes, deltaRes] = await Promise.all([
+        context.env.ASSETS.fetch(new URL(skeletonPath, url.origin).toString()),
+        context.env.ASSETS.fetch(new URL(deltaPath, url.origin).toString()),
+      ]);
+      if (skeletonRes.ok && deltaRes.ok) {
+        const [skeleton, delta] = await Promise.all([skeletonRes.text(), deltaRes.json()]);
+        const entry = delta[foodId];
+        if (entry) {
+          let finalHtml = skeleton;
+          finalHtml = finalHtml
+            .split("{{HTML_TAG}}").join(entry.htmlTag)
+            .split("{{TITLE}}").join(entry.title)
+            .split("{{OG_TITLE}}").join(entry.ogTitle)
+            .split("{{TW_TITLE}}").join(entry.twTitle)
+            .split("{{OG_URL}}").join(entry.ogUrl)
+            .split("{{CANONICAL}}").join(entry.canonical)
+            .split("{{HREFLANG}}").join(entry.hreflang)
+            .split("{{HEADER}}").join(entry.header)
+            .split("{{ISLAND}}").join(entry.island)
+            .split("{{SAMECITY}}").join(entry.sameCity || "");
+
+          const localeScript = `<script>
+        (function() {
+          localStorage.setItem('chinaconnect_language', '${locale}');
+          window.__LOCALE__ = '${locale}';
+        })();
+      </script>`;
+
+          const final = finalHtml.replace("</head>", `${localeScript}</head>`);
+
+          return new Response(final, {
+            headers: {
+              "Content-Type": "text/html;charset=UTF-8",
+              "Cache-Control": "public, max-age=3600",
+              "Set-Cookie": `chinaconnect_language=${locale}; Path=/; Max-Age=31536000; SameSite=Lax`,
+            },
+          });
+        }
+      }
+
+      return new Response("Not Found", { status: 404 });
+    }
 
     // Prefer the locale-prefixed static asset first (Astro SSG now emits
     // dist/<lang>/city/<slug>/index.html etc.). Only fall back to the

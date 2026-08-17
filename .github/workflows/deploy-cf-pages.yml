@@ -28,7 +28,7 @@ jobs:
       # unavailable/expired each call burns 3 x 25s timeouts (~8h total),
       # exceeding the job limit; when valid it rewrites curated translations.
       # All 12-language content is committed, so build directly (like local CI).
-      - run: pnpm check:i18n && node node_modules/astro/astro.js build
+      - run: pnpm check:i18n && node node_modules/astro/astro.js build && node scripts/pack-food-details.mjs
         env:
           PUBLIC_SUPABASE_URL: ${{ secrets.PUBLIC_SUPABASE_URL }}
           PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY }}

@@ -89,6 +89,7 @@ const restaurantDetail = {
 <BaseLayout title={`${lang === "en" ? restaurant.nameEn || restaurant.name : displayFood(restaurant.name)} - ${TITLE_SUFFIX[lang] || TITLE_SUFFIX.en}`}>
   <div class="min-h-screen bg-gray-50">
     <!-- Header -->
+    <!--FOOD_HEADER_START-->
     <header class="bg-white shadow-sm sticky top-0 z-50">
       <div class="max-w-4xl mx-auto px-4 py-4">
         <div class="flex items-center justify-between">
@@ -104,12 +105,16 @@ const restaurantDetail = {
         </div>
       </div>
     </header>
+    <!--FOOD_HEADER_END-->
 
     <main class="max-w-4xl mx-auto px-4 py-6">
       <!-- Restaurant Detail with Favorites and Reviews -->
+      <!--FOOD_ISLAND_START-->
       <RestaurantDetail restaurant={restaurantDetail} lang={lang} client:load />
+      <!--FOOD_ISLAND_END-->
 
       {/* Similar Restaurants */}
+      <!--FOOD_SAMECITY_START-->
       {sameCityRestaurants.length > 0 && (
         <div class="bg-white rounded-xl shadow-md p-6 mt-6">
           <h2 class="text-lg font-bold text-gray-900 mb-4" data-i18n="foodPage.otherRestaurants" data-i18n-vars={JSON.stringify({ city: localCityName })}>Other restaurants nearby</h2>
@@ -128,6 +133,7 @@ const restaurantDetail = {
           </div>
         </div>
       )}
+      <!--FOOD_SAMECITY_END-->
     </main>
 
     {/* Footer */}
