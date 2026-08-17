@@ -43,7 +43,7 @@ jobs:
         run: pnpm playwright:install --with-deps chromium
 
       - name: Build project
-        run: pnpm build
+        run: pnpm check:i18n && node node_modules/astro/astro.js build
         env:
           PUBLIC_SUPABASE_URL: ${{ secrets.PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co' }}
           PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key' }}
@@ -108,7 +108,7 @@ jobs:
         run: pnpm playwright:install --with-deps
 
       - name: Build project
-        run: pnpm build
+        run: pnpm check:i18n && node node_modules/astro/astro.js build
         env:
           PUBLIC_SUPABASE_URL: ${{ secrets.PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co' }}
           PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key' }}
@@ -161,7 +161,7 @@ jobs:
         run: pnpm playwright:install --with-deps chromium
 
       - name: Build project
-        run: pnpm build
+        run: pnpm check:i18n && node node_modules/astro/astro.js build
         env:
           PUBLIC_SUPABASE_URL: ${{ secrets.PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co' }}
           PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key' }}
@@ -251,7 +251,7 @@ jobs:
         run: pnpm playwright:install --with-deps chromium
 
       - name: Build project
-        run: pnpm build
+        run: pnpm check:i18n && node node_modules/astro/astro.js build
         env:
           PUBLIC_SUPABASE_URL: ${{ secrets.PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co' }}
           PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key' }}

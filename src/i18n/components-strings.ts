@@ -1843,6 +1843,48 @@ export const COMP_STRINGS: Record<string, Record<ComponentLang, string>> = {
     ar: "تاريخية وثقافية وطبيعية وحديثة",
     fa: "تاریخی، فرهنگی، طبیعی، مدرن"
   },
+  scenic_load_more: {
+    en: "Load more",
+    ja: "さらに表示",
+    ko: "더 보기",
+    "zh-CN": "加载更多",
+    "zh-TW": "載入更多",
+    th: "โหลดเพิ่ม",
+    vi: "Tải thêm",
+    ru: "Показать ещё",
+    fr: "Voir plus",
+    de: "Mehr laden",
+    ar: "عرض المزيد",
+    fa: "نمایش بیشتر"
+  },
+  scenic_all_cities: {
+    en: "All cities",
+    ja: "すべての都市",
+    ko: "전체 도시",
+    "zh-CN": "全部城市",
+    "zh-TW": "全部城市",
+    th: "ทุกเมือง",
+    vi: "Tất cả thành phố",
+    ru: "Все города",
+    fr: "Toutes les villes",
+    de: "Alle Städte",
+    ar: "جميع المدن",
+    fa: "همه شهرها"
+  },
+  scenic_shown_of: {
+    en: "Showing {shown} of {total}",
+    ja: "{shown} / {total} 件を表示",
+    ko: "{shown} / {total} 표시 중",
+    "zh-CN": "已显示 {shown} / {total}",
+    "zh-TW": "已顯示 {shown} / {total}",
+    th: "กำลังแสดง {shown} จาก {total}",
+    vi: "Đang hiển thị {shown} / {total}",
+    ru: "Показано {shown} из {total}",
+    fr: "Affichage de {shown} sur {total}",
+    de: "{shown} von {total} angezeigt",
+    ar: "عرض {shown} من {total}",
+    fa: "نمایش {shown} از {total}"
+  },
   scenic_nature_desc: {
     en: "Mountains, lakes, rivers, forests",
     ja: "山、湖、川、森林などの自然景観",

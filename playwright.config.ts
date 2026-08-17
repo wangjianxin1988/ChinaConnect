@@ -67,6 +67,11 @@ export default defineConfig({
     locale: "en-US",
     timezoneId: "Asia/Shanghai",
 
+    // Block the service worker: sw.js's activate handler calls c.navigate(c.url)
+    // which force-reloads every open page right after load, destroying the execution
+    // context and racing non-waiting assertions (count()/evaluateAll).
+    serviceWorkers: "block",
+
     // Extra HTTP headers for testing
     extraHTTPHeaders: {
       // Pre-set localStorage to skip onboarding modal in e2e tests
@@ -109,16 +114,16 @@ export default defineConfig({
   ],
 
   // Web server configuration for local dev
-  webServer: process.env.CI
-    ? undefined
-    : {
-        command: "pnpm dev",
-        url: BASE_URL,
-        reuseExistingServer: !process.env.CI,
-        timeout: 120000,
-        stdout: "ignore",
-        stderr: "pipe",
-      },
+  webServer: {
+    command: process.env.CI
+      ? "node node_modules/astro/astro.js preview --host 127.0.0.1 --port 4321"
+      : "pnpm dev",
+    url: BASE_URL,
+    reuseExistingServer: !process.env.CI,
+    timeout: 120000,
+    stdout: "ignore",
+    stderr: "pipe",
+  },
 
   // Global timeout settings
   timeout: PAGE_TIMEOUT,

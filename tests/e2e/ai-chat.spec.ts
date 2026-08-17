@@ -56,7 +56,7 @@ test.describe("AI Chat Page - Core Load", () => {
     await page.goto("/ai", { timeout: 30000 });
     await waitForHydration(page);
 
-    await expect(page).toHaveTitle(/AI.*Travel.*Assistant|Chinese|i.*chat|ChinaConnect/i, {
+    await expect(page).toHaveTitle(/ChinaGuide AI|AI.*(Travel|Assistant|Expert|Concierge)|ChinaConnect/i, {
       timeout: 15000,
     });
   });

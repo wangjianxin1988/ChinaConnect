@@ -105,6 +105,10 @@ for (const a of allScenic) {
   categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
 }
 const categories = Object.keys(categoryCounts).sort();
+const SCENIC_SSR_COUNT = 36;
+const SCENIC_CHUNK = 36;
+const initialScenic = allScenic.slice(0, SCENIC_SSR_COUNT);
+const jsonUrl = "/scenic-data/" + lang + ".json";
 
 const scenicSchemas = [
   generateCollectionPageSchema({
@@ -191,8 +195,12 @@ const keywords = [
       </div>
     </section>
 
+
+    <!-- All scenic spots -->
+    <section id="scenic-app" class="mb-10" data-json-url={jsonUrl} data-ssr-count={SCENIC_SSR_COUNT} data-chunk-size={SCENIC_CHUNK} data-total={allScenic.length} data-load-more={ct(lang, "scenic_load_more", "Load more")} data-all-cities={ct(lang, "scenic_all_cities", "All cities")} data-shown-of={ct(lang, "scenic_shown_of", "Showing {shown} of {total}")} data-loading={ct(lang, "list_loading_more", "Loading more...")}>
+
     <!-- Category filter -->
-    <section class="mb-8">
+    <div class="mb-6">
       <div class="flex flex-wrap gap-2">
         <button
           class="scenic-category-filter px-4 py-2 rounded-lg text-sm font-medium transition-colors bg-green-600 text-white"
@@ -209,17 +217,24 @@ const keywords = [
           </button>
         ))}
       </div>
-    </section>
-
-    <!-- All scenic spots -->
-    <section class="mb-10">
-      <h2 class="text-xl font-semibold mb-4 text-gray-900" data-i18n="scenicSpots.allSpots">All Scenic Spots</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {allScenic.map((a) => (
+    </div>
+      <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+        <h2 class="text-xl font-semibold text-gray-900" data-i18n="scenicSpots.allSpots">All Scenic Spots</h2>
+        <label class="sr-only" for="scenic-city-filter">{ct(lang, "scenic_all_cities", "All cities")}</label>
+        <select id="scenic-city-filter" class="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-800" aria-label={ct(lang, "scenic_all_cities", "All cities")}>
+          <option value="all">{ct(lang, "scenic_all_cities", "All cities")}</option>
+          {citiesWithScenic.map((city) => (
+            <option value={city.slug}>{city.nameEn}</option>
+          ))}
+        </select>
+      </div>
+      <div id="scenic-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {initialScenic.map((a) => (
           <a
-            href={`/${lang}/city/${a.citySlug}#attractions`}
+            href={'/' + lang + '/city/' + a.citySlug + '#attractions'}
             class="scenic-card group bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-green-300 hover:shadow-md transition-all"
             data-category={(a.category || "other").toString()}
+            data-city={a.citySlug}
           >
             <div class="aspect-[16/9] bg-gray-100 overflow-hidden">
               {a.image ? (
@@ -241,6 +256,13 @@ const keywords = [
           </a>
         ))}
       </div>
+      <div class="mt-6 text-center">
+        <button id="scenic-load-more" class="px-5 py-2.5 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition-colors">
+          {ct(lang, "scenic_load_more", "Load more")}
+        </button>
+        <p id="scenic-status" class="text-sm text-gray-500 mt-2 hidden"></p>
+      </div>
+      <div id="scenic-sentinel" class="h-px" aria-hidden="true"></div>
     </section>
 
     <EmbeddedAppRecommendation client:idle lang={lang} categories={["travel", "maps", "transport"]} title={t.scenicSpots?.appTitle ?? "Plan Your Scenic Spot Visit"} subtitle={t.scenicSpots?.appSubtitle ?? "Apps for finding and navigating scenic spots in China"} />
@@ -248,29 +270,10 @@ const keywords = [
 </BaseLayout>
 
 <script>
-  // Client-side category filter for the scenic spots grid
-  document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.scenic-card');
-    const filterButtons = document.querySelectorAll('.scenic-category-filter');
-    let activeCategory = 'all';
+  import { initScenicLazy } from "@/scripts/scenic-lazy";
 
-    function filterCards() {
-      cards.forEach((card) => {
-        const category = card.getAttribute('data-category');
-        const matches = activeCategory === 'all' || category === activeCategory;
-        (card as HTMLElement).style.display = matches ? '' : 'none';
-      });
-    }
-
-    filterButtons.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        activeCategory = btn.getAttribute('data-category') || 'all';
-        filterButtons.forEach((b) => {
-          b.className = 'scenic-category-filter px-4 py-2 rounded-lg text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200';
-        });
-        btn.className = 'scenic-category-filter px-4 py-2 rounded-lg text-sm font-medium transition-colors bg-green-600 text-white';
-        filterCards();
-      });
-    });
-  });
+  const scenicApp = document.getElementById("scenic-app");
+  if (scenicApp) {
+    initScenicLazy(scenicApp as HTMLElement);
+  }
 </script>
