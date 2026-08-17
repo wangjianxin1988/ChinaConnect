@@ -1235,4 +1235,22 @@ for lang in LANGS:
 - **验证**：npx tsc --noEmit 0 错误；pnpm test:unit 115/115；biome check --write 修复 6 文件；npx astro build 26,686 页成功（~97s）；构建产物确认 callback 打包 JS 含 cc-auth-changed true、AIChatPage 客户端包含 ja/ko/zh-TW 等 12 语言标签。
 - **状态**：全部改动未提交；待 push master 触发 CI 自动部署（deploy-cf-pages.yml）。
 - **下个会话**：提交部署后线上验证：登录后 header 立即显示用户菜单、/{lang}/account 个人中心非英文、AI 左侧对话记录点击可切换会话、Saved Itineraries 可保存/加载/删除、AIChat 12 语言文案；Google 登录若仍报错用隐身窗口或确认应用发布状态。
+### 2026-08-18 会话 #30（第三方登录凭据确认 + 侧栏合并验证 + 提交部署）
 
+- **起**：用户提供 Google/GitHub OAuth 凭据（Google client_id=132678131075-...，GitHub client_id=Ov23liJdtoc8ucgHSNJv）；上一会话遗留的侧栏合并改动（会话 #29 后续）需类型检查验证后提交。
+- **验证**：
+  - 
+px tsc --noEmit 0 错误
+  - pnpm test:unit 115/115 通过
+  - 
+ode scripts/check-i18n.mjs 12 语言全覆盖，blog slug 对齐
+  - 
+px astro build 26,686 页成功（~104s）
+  - biome 修复 1 处格式（AIChat.tsx JSX 换行）
+  - Supabase /auth/v1/settings：google=true、github=true、email=true
+  - authorize URL 302 确认 client_id 与用户提供凭据完全一致（Google + GitHub），redirect_uri=https://xyvuqbpwrhkukjgzveyc.supabase.co/auth/v1/callback 正确
+- **事故与处理**：误跑 pnpm build 触发 prebuild（auto-translate-new-cities.mjs）联网翻译，把 385 个 cities-i18n JSON 的 	ype 枚举（michelin/blackpearl 等）改写为本地化字符串（数据损坏）。已 git checkout -- src/data/cities-i18n/ 全部回滚，工作区恢复仅 5 个 auth 文件。CI 的 deploy-cf-pages.yml 已正确规避 prebuild（直接 check:i18n + astro build），本地后续请勿再跑 pnpm build，改用 
+ode scripts/check-i18n.mjs && npx astro build。
+- **改动**：提交 3bbe134（AIChatPage 移除旧 ConversationSidebar；AIChat 改为受控组件 + 会话/行程双 Tab 侧栏；useAuth/useAIConversation 分发 cc-auth-changed 事件触发 header 刷新；chat-labels.ts 补 12 语言会话侧栏文案）。
+- **状态**：3bbe134 已 push master，触发 deploy-cf-pages.yml 自动部署生产。
+- **下个会话**：线上验证第三方登录全流程（Google/GitHub 登录、callback 回跳对应语言、header 状态、AI 对话侧栏切换、行程保存）；如 Google 登录页异常用隐身窗口重试或确认同意屏幕已 PUBLISH。
