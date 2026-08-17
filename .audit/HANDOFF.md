@@ -1087,3 +1087,16 @@ for lang in LANGS:
   4. npx wrangler pages dev dist 本地端到端（/zh-CN/food/beijing-1 拼装、/ja/food/beijing-1、/food/beijing-1 静态、404、其它页正常）。
   5. 提交推送 → gh run watch → 线上 curl/Playwright 抽验。
 - **注意**：git 已提交并推送 8a08530（round-2 修复）+ adc098b（.audit 清理）；未提交：上述两个文件。dev server 未运行。
+
+### 2026-08-17 会话 #22（继续 #21：内容级验证 + 提交 + 部署生产，全部通过）
+
+- **起**：接 #21 待办 4/5/6。wrangler pages dev（8788）已在跑；用 Python 重新做了内容级验证（此前 PS 变量匹配法不可信）。
+- **改动**：
+  - scripts/pack-food-details.mjs 头注释 13→26 chunks（与 CHUNK_COUNT 一致，防误导）。
+  - 提交 ce7e2bb：packer + Worker 拼装分支 + food/[id].astro 标记 + workflow 构建命令 + HANDOFF §21 记录。
+- **验证**（本地 wrangler + 生产双轮）：
+  - 本地：12 语言 × 7 id（beijing-1/26、shanghai-1、guangzhou-1、chengdu-1、xian-1、suzhou-1）= 84/84 PASS：status 200、>50KB、html lang/dir 正确（ar/fa rtl）、canonical 正确、无残留 {{、无 FOOD_HEADER/ISLAND/SAMECITY 标记泄漏、注入 chinaconnect_language、Cache-Control max-age=3600；EN 静态页 canonical 无前缀路径属既有行为；不存在的 id 404；food 列表/城市页/scenic-spots/AI/contact 均 200。
+  - 生产（chinaengage.org，部署 run 32019146033 5m5s 成功，Live probe 过）：4 语言 × 3 id + 其余 8 语言 × beijing-1 = 20+8 全 PASS（含 Set-Cookie、Cache-Control、canonical、lang/dir）；404 兜底正常；city/food/scenic-spots/ai/contact/terms/privacy 200；contact/terms/privacy 含 18801400211@163.com。
+- **结论**：免费套餐 20k 文件上限方案已上线，12 语言详情页与原先静态页输出一致（打包时逐字节校验 19,833 页兜底），dist 9,455 文件，余量 ~10.5k。
+- **遗留**：无。scenic-spots 页 SSR ~3MB 偏重（此前记录，本次未动）。
+- **下个会话**：无强制待办；后续加城市/餐厅/景点/博客时留意 dist 文件数余量（逼近 20k 时可用同一套「壳+差异」技术扩展）。
