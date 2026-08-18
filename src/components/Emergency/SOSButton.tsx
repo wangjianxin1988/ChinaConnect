@@ -177,7 +177,7 @@ export function SOSButton({ className = "", lang: propLang }: SOSButtonProps) {
                 <div>
                   <h3 className="text-sm font-semibold text-gray-700 mb-2">{s.emergencyNumbers}</h3>
                   <div className="space-y-2">
-                    <QuickDial compact onCall={callEmergency} />
+                    <QuickDial compact onCall={callEmergency} lang={lang} />
                   </div>
                 </div>
 
@@ -233,6 +233,7 @@ export function SOSButton({ className = "", lang: propLang }: SOSButtonProps) {
                   onAdd={addPresetContact}
                   onRemove={removePresetContact}
                   onCall={handleCallPresetContact}
+                  lang={lang}
                 />
               </div>
             )}
@@ -242,9 +243,7 @@ export function SOSButton({ className = "", lang: propLang }: SOSButtonProps) {
                 <div className="text-center">
                   <span className="text-4xl block mb-2">🏮</span>
                   <h3 className="text-sm font-semibold text-gray-800 mb-1">{s.culturalTips}</h3>
-                  <p className="text-xs text-gray-500 mb-4">
-                    {s.culturalSub}
-                  </p>
+                  <p className="text-xs text-gray-500 mb-4">{s.culturalSub}</p>
                 </div>
                 <button
                   onClick={() => {

@@ -66,7 +66,10 @@ export function GPSLocator({ className = "", lang = "en" }: GPSLocatorProps) {
       switch (geolocationError.code) {
         case geolocationError.PERMISSION_DENIED:
           setError(
-            gpsT(lang, "Location permission denied. Please enable location access in your browser settings."),
+            gpsT(
+              lang,
+              "Location permission denied. Please enable location access in your browser settings.",
+            ),
           );
           break;
         case geolocationError.POSITION_UNAVAILABLE:
@@ -181,7 +184,9 @@ City: Please provide your city
         <h2 className="text-lg font-bold flex items-center gap-2">
           <span>📍</span> {gpsT(lang, "GPS Location")}
         </h2>
-        <p className="text-sm opacity-90 mt-1">{gpsT(lang, "Share your location with emergency services")}</p>
+        <p className="text-sm opacity-90 mt-1">
+          {gpsT(lang, "Share your location with emergency services")}
+        </p>
       </div>
 
       <div className="p-4 space-y-4">
@@ -199,7 +204,9 @@ City: Please provide your city
           ) : (
             <>
               <span>📡</span>
-              <span>{location ? gpsT(lang, "Refresh Location") : gpsT(lang, "Get My Location")}</span>
+              <span>
+                {location ? gpsT(lang, "Refresh Location") : gpsT(lang, "Get My Location")}
+              </span>
             </>
           )}
         </button>
@@ -309,7 +316,10 @@ City: Please provide your city
         <div className="bg-amber-50 border border-amber-200 rounded-xl p-3 text-xs text-amber-800 flex items-center gap-2">
           <span>💡</span>
           <span>
-            {gpsT(lang, "This feature requires internet. Download offline maps for better preparedness.")}
+            {gpsT(
+              lang,
+              "This feature requires internet. Download offline maps for better preparedness.",
+            )}
           </span>
         </div>
       </div>

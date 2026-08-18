@@ -184,7 +184,11 @@ interface EmbassyLocatorProps {
   lang?: string;
 }
 
-export function EmbassyLocator({ className = "", showAll = false, lang = "en" }: EmbassyLocatorProps) {
+export function EmbassyLocator({
+  className = "",
+  showAll = false,
+  lang = "en",
+}: EmbassyLocatorProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedEmbassy, setSelectedEmbassy] = useState<Embassy | null>(null);
 
@@ -214,7 +218,9 @@ export function EmbassyLocator({ className = "", showAll = false, lang = "en" }:
         <h2 className="text-lg font-bold flex items-center gap-2">
           <span>🏛️</span> {embT(lang, "Embassy & Consulate Locator")}
         </h2>
-        <p className="text-sm opacity-90 mt-1">{embT(lang, "Find your embassy for emergency assistance")}</p>
+        <p className="text-sm opacity-90 mt-1">
+          {embT(lang, "Find your embassy for emergency assistance")}
+        </p>
       </div>
 
       {/* Search */}
@@ -285,7 +291,7 @@ export function EmbassyLocator({ className = "", showAll = false, lang = "en" }:
                     <div className="mt-3 space-y-2">
                       <div className="text-sm">
                         <div className="text-gray-500 text-xs">Address</div>
-                {lang !== "en" && <div>{embassy.addressCn}</div>}
+                        {lang !== "en" && <div>{embassy.addressCn}</div>}
                         <div className="text-gray-500">{embassy.address}</div>
                       </div>
                       <div className="text-sm">
@@ -319,7 +325,9 @@ export function EmbassyLocator({ className = "", showAll = false, lang = "en" }:
         {filteredEmbassies.length === 0 && (
           <div className="text-center py-8 text-gray-500">
             <span className="text-4xl mb-2 block">🔍</span>
-            <p>{embT(lang, "No embassies found matching")} "{searchQuery}"</p>
+            <p>
+              {embT(lang, "No embassies found matching")} "{searchQuery}"
+            </p>
           </div>
         )}
       </div>
@@ -341,7 +349,7 @@ export function EmbassyLocator({ className = "", showAll = false, lang = "en" }:
             <div className="p-6 space-y-4">
               <div>
                 <div className="text-sm text-gray-500 mb-1">{embT(lang, "Address")}</div>
-              {lang !== "en" && <div className="font-medium">{selectedEmbassy.addressCn}</div>}
+                {lang !== "en" && <div className="font-medium">{selectedEmbassy.addressCn}</div>}
                 <div className="text-sm text-gray-600">{selectedEmbassy.address}</div>
               </div>
 

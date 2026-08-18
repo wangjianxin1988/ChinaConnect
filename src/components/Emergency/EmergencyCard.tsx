@@ -196,7 +196,11 @@ interface EmergencyCardProps {
   lang?: string;
 }
 
-export function EmergencyCard({ className = "", compact = false, lang = "en" }: EmergencyCardProps & { lang?: string }) {
+export function EmergencyCard({
+  className = "",
+  compact = false,
+  lang = "en",
+}: EmergencyCardProps & { lang?: string }) {
   const [activeCategory, setActiveCategory] = useState("all");
   const [showPronunciation, setShowPronunciation] = useState(true);
   const [speakingPhrase, setSpeakingPhrase] = useState<string | null>(null);
@@ -273,7 +277,9 @@ export function EmergencyCard({ className = "", compact = false, lang = "en" }: 
               <span>🚨</span> {ecT(lang, "Emergency Translation Card")}
             </h2>
             <p className="text-sm opacity-90 mt-1">
-              {compact ? ecT(lang, "Tap to hear pronunciation") : ecT(lang, "20+ essential phrases for emergencies")}
+              {compact
+                ? ecT(lang, "Tap to hear pronunciation")
+                : ecT(lang, "20+ essential phrases for emergencies")}
             </p>
           </div>
           <button
@@ -317,7 +323,9 @@ export function EmergencyCard({ className = "", compact = false, lang = "en" }: 
                 disabled={speakingPhrase === phrase.chinese}
               >
                 <div className="text-sm text-gray-500 mb-1">{ecPhrase(lang, phrase.english)}</div>
-                <div className="font-semibold text-slate-900 text-lg">{lang === "en" ? phrase.pronunciation : phrase.chinese}</div>
+                <div className="font-semibold text-slate-900 text-lg">
+                  {lang === "en" ? phrase.pronunciation : phrase.chinese}
+                </div>
                 {showPronunciation && lang !== "en" && (
                   <div className="text-xs text-gray-400 mt-1 font-mono">{phrase.pronunciation}</div>
                 )}
@@ -355,7 +363,9 @@ export function EmergencyCard({ className = "", compact = false, lang = "en" }: 
       {/* Offline Notice */}
       <div className="bg-amber-50 border-t border-amber-200 p-3 text-xs text-amber-800 flex items-center gap-2">
         <span>💡</span>
-        <span>{ecT(lang, "Works offline - phrases are cached. Tap any phrase to hear pronunciation.")}</span>
+        <span>
+          {ecT(lang, "Works offline - phrases are cached. Tap any phrase to hear pronunciation.")}
+        </span>
       </div>
     </div>
   );

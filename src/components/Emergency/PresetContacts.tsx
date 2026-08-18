@@ -13,6 +13,7 @@ interface PresetContactsProps {
   onAdd: (contact: PresetContact) => void;
   onRemove: (id: string) => void;
   onCall?: (phone: string) => void;
+  lang?: string;
   className?: string;
 }
 
@@ -32,9 +33,10 @@ export function PresetContacts({
   onAdd,
   onRemove,
   onCall,
+  lang: propLang,
   className = "",
 }: PresetContactsProps) {
-  const lang = useClientLang();
+  const lang = propLang || useClientLang();
   const [showAddForm, setShowAddForm] = useState(false);
   const [newContact, setNewContact] = useState({
     name: "",
@@ -87,7 +89,9 @@ export function PresetContacts({
             <h2 className="text-lg font-bold flex items-center gap-2">
               <span>👥</span> {pcT(lang, "Emergency Contacts")}
             </h2>
-            <p className="text-sm opacity-90 mt-1">{pcT(lang, "Save your emergency contacts here")}</p>
+            <p className="text-sm opacity-90 mt-1">
+              {pcT(lang, "Save your emergency contacts here")}
+            </p>
           </div>
           <button
             onClick={() => setShowAddForm(!showAddForm)}
@@ -103,7 +107,9 @@ export function PresetContacts({
         <div className="p-4 bg-slate-50 border-b">
           <div className="space-y-3">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">{pcT(lang, "Name")}</label>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                {pcT(lang, "Name")}
+              </label>
               <input
                 type="text"
                 value={newContact.name}
@@ -113,7 +119,9 @@ export function PresetContacts({
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">{pcT(lang, "Phone")}</label>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                {pcT(lang, "Phone")}
+              </label>
               <input
                 type="tel"
                 value={newContact.phone}
@@ -123,7 +131,9 @@ export function PresetContacts({
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">{pcT(lang, "Relationship")}</label>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                {pcT(lang, "Relationship")}
+              </label>
               <select
                 value={newContact.relationship}
                 onChange={(e) => setNewContact({ ...newContact, relationship: e.target.value })}
@@ -202,7 +212,9 @@ export function PresetContacts({
       {/* Tip */}
       <div className="bg-amber-50 border-t border-amber-200 p-3 text-xs text-amber-800 flex items-center gap-2">
         <span>💡</span>
-        <span>{pcT(lang, "Add your hotel or tour guide for quick access during emergencies.")}</span>
+        <span>
+          {pcT(lang, "Add your hotel or tour guide for quick access during emergencies.")}
+        </span>
       </div>
     </div>
   );

@@ -4,7 +4,12 @@
  */
 
 import React from "react";
-import { accountT, toAccountLang, type AccountLang } from "@/components/account/account-strings";
+import {
+  accountT,
+  toAccountLang,
+  type AccountLang,
+  localizedHref,
+} from "@/components/account/account-strings";
 import { getCurrentTier, TIER_NAMES, TIER_LIMITS, type SubscriptionTier } from "@/lib/subscription";
 import {
   getRemainingRequests,
@@ -90,15 +95,16 @@ export const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
           <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${colors.badge}`}>
             {tierName}
           </span>
-          <a href="/pricing" className="text-xs text-blue-600 hover:text-blue-800 hover:underline">
+          <a
+            href={localizedHref(lang, "/pricing")}
+            className="text-xs text-blue-600 hover:text-blue-800 hover:underline"
+          >
             {accountT(lang, "upgradeShort")}
           </a>
         </div>
         <div className="text-xs text-gray-600">
           {isUnlimited ? (
-            <span className="text-green-600 font-medium">
-              {accountT(lang, "unlimitedAi")}
-            </span>
+            <span className="text-green-600 font-medium">{accountT(lang, "unlimitedAi")}</span>
           ) : (
             <div>
               <div className="flex justify-between mb-1">
@@ -146,9 +152,7 @@ export const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
       {/* Usage Stats */}
       <div className="mb-4">
         <div className="flex justify-between text-sm mb-1.5">
-          <span className="text-gray-600">
-            {accountT(lang, "monthlyAi")}
-          </span>
+          <span className="text-gray-600">{accountT(lang, "monthlyAi")}</span>
           <span className={`font-semibold ${colors.text}`}>
             {isUnlimited ? accountT(lang, "unlimited") : `${used}/${max}`}
           </span>
@@ -255,7 +259,7 @@ export const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
       {/* Upgrade Button */}
       {tier !== "business" && (
         <a
-          href="/pricing"
+          href={localizedHref(lang, "/pricing")}
           className="block w-full text-center py-2.5 px-4 rounded-lg bg-blue-600 text-white font-medium text-sm hover:bg-blue-700 transition-colors"
         >
           {accountT(lang, "upgradePlan")}

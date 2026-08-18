@@ -1874,3 +1874,9 @@ export function accountT(
 export function toAccountLang(lang: string): AccountLang {
   return (ACCOUNT_LANGS as string[]).includes(lang) ? (lang as AccountLang) : "en";
 }
+
+/** Build a language-prefixed internal path (e.g. /ja/pricing; en stays unprefixed). */
+export function localizedHref(lang: AccountLang | string, path: string): string {
+  const l = toAccountLang(lang);
+  return l === "en" ? path : `/${l}${path}`;
+}

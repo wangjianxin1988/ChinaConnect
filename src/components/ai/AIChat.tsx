@@ -530,49 +530,53 @@ const ConversationHistory: React.FC<{
   conversations: { id: string; name: string; updatedAt?: string }[];
   onSelect: (id: string) => void;
   onClose: () => void;
-}> = ({ conversations, onSelect, onClose }) => (
-  <div className="w-72 bg-white border-r border-gray-200 flex flex-col">
-    <div className="p-3 border-b border-gray-200 flex items-center justify-between">
-      <h3 className="font-semibold text-gray-800">History</h3>
-      <button onClick={onClose} className="p-1 hover:bg-gray-100 rounded">
-        <svg
-          className="w-5 h-5 text-gray-500"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M6 18L18 6M6 6l12 12"
-          />
-        </svg>
-      </button>
-    </div>
-    <div className="flex-1 overflow-y-auto">
-      {conversations.length === 0 ? (
-        <p className="text-sm text-gray-400 text-center py-8">No conversations yet</p>
-      ) : (
-        conversations.map((conv) => (
-          <button
-            key={conv.id}
-            onClick={() => {
-              onSelect(conv.id);
-              onClose();
-            }}
-            className="w-full text-left px-4 py-3 hover:bg-gray-50 border-b border-gray-100 transition-colors"
+  language?: AiChatLang;
+}> = ({ conversations, onSelect, onClose, language = "en" }) => {
+  const LABELS = CHAT_LABELS[language] || CHAT_LABELS.en;
+  return (
+    <div className="w-72 bg-white border-r border-gray-200 flex flex-col">
+      <div className="p-3 border-b border-gray-200 flex items-center justify-between">
+        <h3 className="font-semibold text-gray-800">{LABELS.history}</h3>
+        <button onClick={onClose} className="p-1 hover:bg-gray-100 rounded">
+          <svg
+            className="w-5 h-5 text-gray-500"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            <div className="font-medium text-gray-800 text-sm truncate">{conv.name}</div>
-            <div className="text-xs text-gray-400 mt-0.5">
-              {conv.updatedAt ? new Date(conv.updatedAt).toLocaleDateString() : "Just now"}
-            </div>
-          </button>
-        ))
-      )}
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+      <div className="flex-1 overflow-y-auto">
+        {conversations.length === 0 ? (
+          <p className="text-sm text-gray-400 text-center py-8">{LABELS.noConversationsYet}</p>
+        ) : (
+          conversations.map((conv) => (
+            <button
+              key={conv.id}
+              onClick={() => {
+                onSelect(conv.id);
+                onClose();
+              }}
+              className="w-full text-left px-4 py-3 hover:bg-gray-50 border-b border-gray-100 transition-colors"
+            >
+              <div className="font-medium text-gray-800 text-sm truncate">{conv.name}</div>
+              <div className="text-xs text-gray-400 mt-0.5">
+                {conv.updatedAt ? new Date(conv.updatedAt).toLocaleDateString() : LABELS.justNow}
+              </div>
+            </button>
+          ))
+        )}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 // ============================================
 // Main Component
@@ -1036,6 +1040,7 @@ export const AIChat: React.FC<AIChatProps> = ({
               }))}
               onSelect={loadConversation}
               onClose={() => setShowHistory(false)}
+              language={language}
             />
           )}
 

@@ -10,6 +10,7 @@ import {
   toAccountLang,
   type AccountLang,
   type AccountKey,
+  localizedHref,
 } from "@/components/account/account-strings";
 import type { SubscriptionTier } from "@/lib/subscription";
 import { TIER_NAMES, TIER_PRICING, TIER_LIMITS, TIER_FEATURES } from "@/lib/subscription";
@@ -201,7 +202,7 @@ export const UpgradePrompt: React.FC<UpgradePromptProps> = ({
               {accountT(lang, "maybeLater")}
             </button>
             <a
-              href="/pricing"
+              href={localizedHref(lang, "/pricing")}
               className="flex-1 px-4 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl hover:from-blue-700 hover:to-indigo-700 transition-all text-sm font-bold text-center shadow-lg shadow-blue-200"
             >
               {accountT(lang, "upgradeNow")}

@@ -1,18 +1,21 @@
 ---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { translations } from '@/i18n/translations';
+import type { Language } from '@/i18n/translations';
 
-/**
- * Checkout Success Page
- * Shown after successful Creem checkout
- * Retrieves session details and updates localStorage
- */
-import BaseLayout from '@/layouts/BaseLayout.astro';
-import { translations } from "@/i18n/translations";
+export function getStaticPaths() {
+  const langs = ["ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"] as Language[];
+  return langs.map((lang) => ({ params: { lang } }));
+}
 
-const title = translations.en.checkoutPage?.title || "Payment Successful - ChinaConnect";
-const description = translations.en.checkoutPage?.description || "Your subscription has been activated successfully";
+const lang = (Astro.params.lang as Language) || "en";
+const t = translations[lang] || translations.en;
+const title = (t.checkoutPage?.successTitle || t.checkoutPage?.processing || "Payment Successful") + " - ChinaConnect";
+const description = t.checkoutPage?.description || translations.en.checkoutPage?.description || "Your subscription has been activated successfully";
+const lp = "/" + lang;
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} lang={lang}>
   <main class="min-h-screen bg-gradient-to-b from-green-50 to-white flex items-center justify-center py-16">
 
 
@@ -41,13 +44,13 @@ const description = translations.en.checkoutPage?.description || "Your subscript
 
         <div class="flex flex-col sm:flex-row gap-3 justify-center">
           <a
-            href="/ai"
+            href={`${lp}/ai`}
             class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
           >
             <span data-i18n="checkoutPage.startPlanning">Start Planning →</span>
           </a>
           <a
-            href="/account"
+            href={`${lp}/account`}
             class="inline-flex items-center justify-center gap-2 px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors"
           >
             <span data-i18n="checkoutPage.viewAccount">View Account</span>
@@ -67,7 +70,7 @@ const description = translations.en.checkoutPage?.description || "Your subscript
           We couldn't verify your payment. Please contact support if you were charged.
         </p>
         <a
-          href="/pricing"
+          href={`${lp}/pricing`}
           class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
         >
           <span data-i18n="checkoutPage.backToPricing">Back to Pricing</span>
@@ -78,6 +81,15 @@ const description = translations.en.checkoutPage?.description || "Your subscript
 </BaseLayout>
 
 <script>
+  function lookupT(key) {
+    var s = (window.__I18N__ && window.__I18N__.serverLang) || "en";
+    var t = (window.__I18N__ && window.__I18N__.translations) || {};
+    var cur = t[s] || t.en || {};
+    var parts = key.split(".");
+    for (var i = 0; i < parts.length && cur; i++) cur = cur[parts[i]];
+    return typeof cur === "string" ? cur : null;
+  }
+
   async function verifyCheckout() {
     const params = new URLSearchParams(window.location.search);
     const sessionId = params.get("session") || params.get("session_id");
@@ -115,7 +127,8 @@ const description = translations.en.checkoutPage?.description || "Your subscript
           if (tier) {
             localStorage.setItem("subscription_tier", tier);
             if (tierName && messageEl) {
-              messageEl.textContent = "Your " + tierName + " plan is now active.";
+              var desc = lookupT("checkoutPage.successDesc") || "Your subscription has been activated.";
+              messageEl.textContent = desc + " (" + tierName + ")";
             }
           }
         }

@@ -5,7 +5,12 @@
  */
 
 import React from "react";
-import { accountT, toAccountLang, type AccountLang } from "@/components/account/account-strings";
+import {
+  accountT,
+  toAccountLang,
+  type AccountLang,
+  localizedHref,
+} from "@/components/account/account-strings";
 import {
   getCurrentTier,
   TIER_NAMES,
@@ -106,7 +111,7 @@ export const UsageExhaustedBanner: React.FC<UsageExhaustedBannerProps> = ({
         {/* CTA */}
         <div className="flex items-center gap-3">
           <a
-            href="/pricing"
+            href={localizedHref(lang, "/pricing")}
             className="flex-1 px-4 py-2.5 bg-gradient-to-r from-amber-500 to-orange-500 text-white rounded-xl font-medium text-sm text-center hover:from-amber-600 hover:to-orange-600 transition-all shadow-sm shadow-amber-200"
           >
             {accountT(lang, "upgradeCta", { tier: suggestedName, price: pricing.monthly })}

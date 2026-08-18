@@ -5,7 +5,12 @@
  */
 
 import React from "react";
-import { accountT, toAccountLang, type AccountLang } from "@/components/account/account-strings";
+import {
+  accountT,
+  toAccountLang,
+  type AccountLang,
+  localizedHref,
+} from "@/components/account/account-strings";
 import { getCurrentTier, TIER_NAMES, type SubscriptionTier } from "@/lib/subscription";
 import {
   getRemainingRequests,
@@ -133,7 +138,7 @@ export const MembershipStatusBar: React.FC<MembershipStatusBarProps> = ({ langua
       {/* Upgrade Button (hide for business tier) */}
       {tier !== "business" && (
         <a
-          href="/pricing"
+          href={localizedHref(lang, "/pricing")}
           className="text-xs font-medium text-blue-600 hover:text-blue-800 hover:bg-blue-100 px-2 py-1 rounded-lg transition-colors whitespace-nowrap"
         >
           {accountT(lang, "upgradeShort")}

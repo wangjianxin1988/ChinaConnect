@@ -1,20 +1,34 @@
 ---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import type { Language } from "@/i18n/translations";
 
-/**
- * Pricing Page - Professional Redesign
- * Displays subscription tiers, feature comparison, FAQ, and testimonials
- * Integrates with Creem Checkout for real payments
- */
-import { translations } from "@/i18n/translations";
-import BaseLayout from '../layouts/BaseLayout.astro';
+export function getStaticPaths() {
+  const langs = ["ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"] as Language[];
+  return langs.map((lang) => ({ params: { lang } }));
+}
 
-const lang = (Astro.locals.lang as Language) || "en";
-const title = "Pricing Plans - ChinaConnect AI";
-const description = "Choose the perfect AI travel assistant plan for your China journey. From free to unlimited, find the plan that fits your needs.";
+const lang = (Astro.params.lang as Language) || "en";
+const PRICING_META: Record<string, { title: string; description: string }> = {
+  ja: { title: "料金プラン - ChinaConnect AI", description: "中国旅行に最適なAI旅行アシスタントのプランをお選びください。無料から無制限まで、ニーズに合ったプランが見つかります。" },
+  ko: { title: "요금제 - ChinaConnect AI", description: "중국 여행에 딱 맞는 AI 여행 어시스턴트 요금제를 선택하세요. 무료부터 무제한까지, 필요에 맞는 플랜을 찾아보세요." },
+  "zh-CN": { title: "会员方案 - ChinaConnect AI", description: "为您的中国之旅选择完美的 AI 旅行助手方案。从免费到无限，找到适合您的方案。" },
+  "zh-TW": { title: "會員方案 - ChinaConnect AI", description: "為您的中國之旅選擇完美的 AI 旅行助手方案。從免費到無限，找到適合您的方案。" },
+  th: { title: "แพ็กเกจราคา - ChinaConnect AI", description: "เลือกแพ็กเกจผู้ช่วยท่องเที่ยว AI ที่สมบูรณ์แบบสำหรับการเดินทางจีนของคุณ ตั้งแต่ฟรีไปจนถึงไม่จำกัด" },
+  vi: { title: "Bảng giá - ChinaConnect AI", description: "Chọn gói trợ lý du lịch AI hoàn hảo cho hành trình Trung Quốc của bạn. Từ miễn phí đến không giới hạn" },
+  ru: { title: "Тарифы - ChinaConnect AI", description: "Выберите идеальный план AI-помощника для путешествия по Китаю. От бесплатного до безлимитного" },
+  fr: { title: "Tarifs - ChinaConnect AI", description: "Choisissez le plan d'assistant IA de voyage parfait pour votre voyage en Chine. Du gratuit à l'illimité" },
+  de: { title: "Preise - ChinaConnect AI", description: "Wählen Sie den perfekten KI-Reiseassistenten-Plan für Ihre China-Reise. Von kostenlos bis unbegrenzt" },
+  ar: { title: "الأسعار - ChinaConnect AI", description: "اختر خطة مساعد السفر الذكي المثالية لرحلتك إلى الصين. من المجاني إلى غير المحدود" },
+  fa: { title: "قیمت‌ها - ChinaConnect AI", description: "بهترین طرح دستیار سفر هوشمند را برای سفر چین انتخاب کنید. از رایگان تا نامحدود" },
+};
+const meta = PRICING_META[lang] || PRICING_META.ja;
+const title = meta.title;
+const description = meta.description;
 const cancelled = Astro.url.searchParams.get('cancelled');
+const lp = "/" + lang;
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} lang={lang}>
   <main class="min-h-screen">
     {/* Cancelled notice */}
     {cancelled && (
@@ -512,11 +526,11 @@ const cancelled = Astro.url.searchParams.get('cancelled');
         <h2 class="text-3xl md:text-4xl font-bold text-white mb-5"><span data-i18n="pricing.ctaTitle">Ready to Start Your China Adventure?</span></h2>
         <p class="text-blue-100 mb-10 max-w-xl mx-auto text-lg"><span data-i18n="pricing.ctaSubtitle">Join thousands of travelers using AI to plan their perfect China trip.</span></p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="/ai" class="inline-flex items-center gap-2 py-3.5 px-8 rounded-xl bg-white text-indigo-700 font-bold hover:bg-blue-50 transition-colors shadow-lg text-base">
+          <a href={`${lp}/ai`} class="inline-flex items-center gap-2 py-3.5 px-8 rounded-xl bg-white text-indigo-700 font-bold hover:bg-blue-50 transition-colors shadow-lg text-base">
             <span data-i18n="pricing.ctaPrimary">Start Free Today</span>
             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
           </a>
-          <a href="/guide" class="inline-flex items-center gap-2 py-3.5 px-8 rounded-xl border-2 border-white/30 text-white font-semibold hover:bg-white/10 transition-colors text-base">
+          <a href={`${lp}/guide`} class="inline-flex items-center gap-2 py-3.5 px-8 rounded-xl border-2 border-white/30 text-white font-semibold hover:bg-white/10 transition-colors text-base">
             <span data-i18n="pricing.ctaSecondary">Explore Features</span>
           </a>
         </div>

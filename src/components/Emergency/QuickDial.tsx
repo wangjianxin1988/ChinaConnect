@@ -62,8 +62,18 @@ const BG_COLOR_MAP: Record<string, string> = {
 export function QuickDial({ compact = false, onCall, lang: propLang }: QuickDialProps) {
   const lang = propLang || useClientLang();
   const s = SOS_STRINGS[lang] || SOS_STRINGS.en;
-  const names: Record<string, string> = { Police: s.police, Ambulance: s.ambulance, Fire: s.fire, Traffic: s.traffic };
-  const localized = EMERGENCY_NUMBERS.map((c) => ({ ...c, name: names[c.name] || c.name, nameCn: names[c.name] || c.nameCn, label: (names[c.name] || c.name) + " - " + (names[c.name] || c.name) }));
+  const names: Record<string, string> = {
+    Police: s.police,
+    Ambulance: s.ambulance,
+    Fire: s.fire,
+    Traffic: s.traffic,
+  };
+  const localized = EMERGENCY_NUMBERS.map((c) => ({
+    ...c,
+    name: names[c.name] || c.name,
+    nameCn: names[c.name] || c.nameCn,
+    label: names[c.name] || c.name,
+  }));
   const handleCall = useCallback(
     (number: string) => {
       if (onCall) {

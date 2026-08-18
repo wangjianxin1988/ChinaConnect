@@ -1285,3 +1285,22 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **遗留（非本次目标范围）**：全站每个页面约 2 个 React #418 水合错误，来源为 `src/components/Emergency/SOSButton`（SOS 悬浮按钮，旧问题，功能不受影响）；首页等有 `Astro.request.headers` prerender warning；`/ja/ai` 偶发 503（MiniMax/搜索 API 兜底）。
 - **Google 登录补充建议（给用户）**：若确认网络可达 Google 后仍失败，去 Google Cloud Console 确认 OAuth 同意屏幕已 PUBLISH（Testing 模式仅授权测试账号可用）。
 - **下个会话**：无需强制待办；如需可顺手修 SOSButton 水合错误（先定位 QuickDial/GPSLocator 等子组件里 SSR/客户端不一致的文本）。
+
+### 2026-08-18 会话 #33（SOS 水合修复 + 会员系统深度模拟测试 — 90/90 全绿）
+
+- **起**：用户要求「水合问题顺手修了吧，然后深度模拟用户测试会员系统，确保所有功能都能正常使用，所有语言版本都正常」。
+- **改动（src 17 文件 + AIChat.tsx，共 18 文件）**：
+  1. **SOS 水合修复**：`SOSButton.tsx` 给 `QuickDial`/`PresetContacts` 传 `lang`；`PresetContacts.tsx` 新增 `lang?: string` prop；`QuickDial.tsx` 修复 `X - X` label 重复；`sos-strings.ts` 相关键补 12 语言。实测 7 个代表性页面（/ja /en /ja/city/beijing /zh-CN /ar /ja/ai /ja/account）水合错误 0。
+  2. **`src/lib/subscription.ts` 数据损坏修复（生产已存在严重 bug）**：文件内是双反斜杠字面量 `\\u7121`（非 JS 转义），运行时显示字面 `\u7121\u6599` 等乱码。用 `.audit/fix-subscription-escapes.py` 解码 2534 处 `\\uXXXX` → 真实 UTF-8。TIER_NAMES/TIER_DESCRIPTIONS/TIER_FEATURES 12 语言恢复。此前 2446022 部署的生产页面正在显示乱码。
+  3. **AI 会话历史侧栏本地化修复**：`src/components/ai/AIChat.tsx` 的 `ConversationHistory` 硬编码英文 `History`/`No conversations yet`/`Just now`，改为经 `language` prop 走 `CHAT_LABELS`（12 语言），并给调用点补传 `language`。
+  4. **pricing / checkout 本地化（上一会话已做，本会话验证）**：`[lang]/pricing.astro`、`[lang]/checkout/success.astro` 新建；checkout edge function 支持 `lang` 参数并已部署 Supabase 生产；订阅组件 5 处链接改 `localizedHref(lang, ...)`。
+- **会员系统深度模拟测试（`.audit/probe-membership3.cjs`，90 项 90 PASS）**：
+  - A：ja account 4 档套餐（free/explorer/traveler/business）×（usage/billing/plans）12 项全过。
+  - B：ja AI 登录态 4 档 statusbar + SubscriptionCard + textarea 12 项全过（等待水合用 `waitForSelector("textarea")`，避免 SSR 早匹配）。
+  - C：**真实耗尽**——用 service key 把测试用户 `ai_usage`（period `202608`）`request_count` 置 5，页面 RPC 返回 5，textarea disabled、站内 banner（今月のAIリクエスト上限に達しました）、statusbar 0/5、大 UsageExhaustedBanner（エクスプローラー にアップグレード）全部出现；测完还原 count=1。
+  - D：tier gate——free 点「履歴」弹 UpgradePrompt modal（今すぐアップグレード），explorer 打开历史面板（h3=履歴）；精确选择器断言。
+  - E1：account usage 标题 12 语言；E2a：AI 页未登录 CTA 12 语言；E2b：AI 页登录态订阅组件 12 语言；E3：pricing H1 12 语言；E4：checkout success 标题 12 语言。
+  - **踩坑记录（重要）**：探针 `monthStr` 曾为 `2026-08`（带横杠），导致 `readAiUsage/setAiUsage` 一直 PATCH 错误的行（DB 里出现垃圾行 `period_yyyymm='2026-08'`），而浏览器 RPC 读真实行 `202608`（count=1），表现为「置 5 却未禁用」。修正为 `YYYYMM`（与 RPC `to_char(NOW() AT TIME ZONE 'UTC','YYYYMM')` 一致）并删除垃圾行后全绿。
+- **验证**：`npx tsc --noEmit` 0 错误；`npx biome check --write` 通过；`node scripts/check-i18n.mjs` 12/12 全覆盖；`npx astro build` 26,708 页成功（~103s）。水合探针 7 页 0 错误。
+- **遗留**：首页等 `Astro.request.headers` prerender warning（既有，非本次范围）；`.audit/` 下临时脚本不提交。
+- **下个会话**：提交本会话 src 改动 → push master → CI 自动部署生产后，生产复测 `/ja/account`、`/ja/ai`、`/ja/pricing`、`/ja/checkout/success` 无水合错误 + 会员功能正常。

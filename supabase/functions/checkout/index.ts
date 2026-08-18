@@ -13,6 +13,14 @@ const corsHeaders = {
 interface CheckoutRequest {
   tier: string;
   billing: "monthly" | "yearly";
+  lang?: string;
+}
+
+// Site languages that have localized pricing/checkout pages under /{lang}/.
+const SUPPORTED_LANGS = ["ja", "ko", "zh-CN", "zh-TW", "th", "vi", "ru", "fr", "de", "ar", "fa"];
+function langPrefix(lang: string | undefined): string {
+  if (lang && SUPPORTED_LANGS.includes(lang)) return "/" + lang;
+  return "";
 }
 
 const TIER_TO_PRODUCT_ENV: Record<string, string> = {
@@ -97,8 +105,9 @@ Deno.serve(async (req: Request) => {
     );
   }
 
-  const successUrl = `${siteUrl}/checkout/success?session={CHECKOUT_SESSION_ID}`;
-  const cancelUrl = `${siteUrl}/pricing?cancelled=1`;
+  const lp = langPrefix(body.lang);
+  const successUrl = `${siteUrl}${lp}/checkout/success?session={CHECKOUT_SESSION_ID}`;
+  const cancelUrl = `${siteUrl}${lp}/pricing?cancelled=1`;
 
   try {
     const creemRes = await fetch(`${creemBaseUrl}/checkouts`, {
