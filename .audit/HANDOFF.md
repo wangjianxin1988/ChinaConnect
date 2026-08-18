@@ -1303,4 +1303,5 @@ ode scripts/check-i18n.mjs && npx astro build。
   - **踩坑记录（重要）**：探针 `monthStr` 曾为 `2026-08`（带横杠），导致 `readAiUsage/setAiUsage` 一直 PATCH 错误的行（DB 里出现垃圾行 `period_yyyymm='2026-08'`），而浏览器 RPC 读真实行 `202608`（count=1），表现为「置 5 却未禁用」。修正为 `YYYYMM`（与 RPC `to_char(NOW() AT TIME ZONE 'UTC','YYYYMM')` 一致）并删除垃圾行后全绿。
 - **验证**：`npx tsc --noEmit` 0 错误；`npx biome check --write` 通过；`node scripts/check-i18n.mjs` 12/12 全覆盖；`npx astro build` 26,708 页成功（~103s）。水合探针 7 页 0 错误。
 - **遗留**：首页等 `Astro.request.headers` prerender warning（既有，非本次范围）；`.audit/` 下临时脚本不提交。
-- **下个会话**：提交本会话 src 改动 → push master → CI 自动部署生产后，生产复测 `/ja/account`、`/ja/ai`、`/ja/pricing`、`/ja/checkout/success` 无水合错误 + 会员功能正常。
+- **部署与生产复测（本会话已完成）**：提交 d9660f8 已 push master，CI `deploy-cf-pages.yml` 部署成功（含 Live probe）。生产实测：`/ja /ko /zh-CN /pricing` H1 本地化、`/ja /de /checkout/success` 标题本地化、`/ja /zh-CN /ai` 登录态订阅组件（無料/免费版 + textarea）、`/ja /ko /zh-CN /account` usage 板块（使用統計/사용 통계/用量统计 + 無料/무료/免费版）全部正常，7 页水合错误 0——证明 subscription.ts 解码修复与本地化已上线。
+- **下个会话**：无强制待办；如需可继续关注 `Astro.request.headers` prerender warning（既有）与 `/ja/ai` 偶发 503（MiniMax/搜索 API 兜底）。
