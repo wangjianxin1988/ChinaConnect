@@ -124,7 +124,7 @@ const prefix = lang && lang !== "en" ? "/" + lang : "";
             <div class="flex items-center justify-between mb-4">
               <h2 class="text-lg font-semibold text-gray-900 dark:text-white"><span data-i18n="accountPage.membership">Membership</span></h2>
               <div class="flex items-center gap-3">
-                <a href="/pricing" class="text-sm text-blue-600 dark:text-blue-400 hover:underline font-medium"><span data-i18n="accountPage.upgrade">Upgrade</span> →</a>
+                <a href={prefix + "/pricing"} class="text-sm text-blue-600 dark:text-blue-400 hover:underline font-medium"><span data-i18n="accountPage.upgrade">Upgrade</span> →</a>
               </div>
             </div>
 
@@ -475,13 +475,23 @@ const prefix = lang && lang !== "en" ? "/" + lang : "";
     `;
   }
 
+  let loadSeq = 0;
+
   async function loadAccount() {
+    const seq = ++loadSeq;
     showSection('loading');
 
-    const user = await getCurrentUser();
+    let user = await getCurrentUser();
     if (!user) {
-      showSection('unauth');
-      return;
+      // Slow session refresh / transient network failure must not flip a
+      // signed-in user to the "not signed in" screen: retry once first.
+      await new Promise((resolve) => setTimeout(resolve, 600));
+      if (seq !== loadSeq) return;
+      user = await getCurrentUser();
+      if (!user) {
+        showSection('unauth');
+        return;
+      }
     }
 
     const [profileRes, dashboardRes, walletRes, ordersRes, routesRes, favoritesRes] = await Promise.all([
@@ -609,7 +619,7 @@ const prefix = lang && lang !== "en" ? "/" + lang : "";
     if (manageBtn) {
       manageBtn.addEventListener('click', async () => {
         try {
-          window.location.href = '/pricing';
+          window.location.href = ccLangPrefix + '/pricing';
         } catch (err) {
           console.error('Portal error:', err);
           alert(t('accountPage.alertSignOutError'));
@@ -617,6 +627,7 @@ const prefix = lang && lang !== "en" ? "/" + lang : "";
       });
     }
 
+    if (seq !== loadSeq) return;
     showSection('content');
   }
 

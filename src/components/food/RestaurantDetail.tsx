@@ -56,7 +56,9 @@ interface RestaurantDetailProps {
 }
 
 export function RestaurantDetail({ restaurant, lang = "en" }: RestaurantDetailProps) {
-  const t = (en: string, zh: string, ja: string) => (lang === "ja" ? ja : lang === "zh-CN" || lang === "zh-TW" ? zh : en);
+  const t = (en: string, zh: string, ja: string) =>
+    lang === "ja" ? ja : lang === "zh-CN" || lang === "zh-TW" ? zh : en;
+  const authPath = lang === "en" ? "/auth" : `/${lang}/auth`;
   const [isFavorited, setIsFavorited] = useState(false);
   const [reviews, setReviews] = useState<Review[]>([]);
   const [newReview, setNewReview] = useState("");
@@ -128,7 +130,7 @@ export function RestaurantDetail({ restaurant, lang = "en" }: RestaurantDetailPr
   const handleToggleFavorite = async () => {
     const userId = await getCurrentUserId();
     if (!userId) {
-      window.location.href = "/auth";
+      window.location.href = authPath;
       return;
     }
 
@@ -164,7 +166,7 @@ export function RestaurantDetail({ restaurant, lang = "en" }: RestaurantDetailPr
 
     const userId = await getCurrentUserId();
     if (!userId) {
-      window.location.href = "/auth";
+      window.location.href = authPath;
       return;
     }
 
@@ -283,12 +285,22 @@ export function RestaurantDetail({ restaurant, lang = "en" }: RestaurantDetailPr
           )}
           {restaurant.michelin_stars && restaurant.michelin_stars > 0 && (
             <div className="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg">
-              ⭐ {t(`${restaurant.michelin_stars}-Star Michelin`, `${restaurant.michelin_stars}星 米其林`, `${restaurant.michelin_stars}つ星 ミシュラン`)}
+              ⭐{" "}
+              {t(
+                `${restaurant.michelin_stars}-Star Michelin`,
+                `${restaurant.michelin_stars}星 米其林`,
+                `${restaurant.michelin_stars}つ星 ミシュラン`,
+              )}
             </div>
           )}
           {restaurant.heizhenzhu_rank && restaurant.heizhenzhu_rank > 0 && (
             <div className="px-3 py-1 bg-purple-100 text-purple-700 rounded-lg">
-              💎 {t(`${restaurant.heizhenzhu_rank} Black Pearl`, `${restaurant.heizhenzhu_rank}钻 黑珍珠`, `${restaurant.heizhenzhu_rank}ダイヤ ブラックパール`)}
+              💎{" "}
+              {t(
+                `${restaurant.heizhenzhu_rank} Black Pearl`,
+                `${restaurant.heizhenzhu_rank}钻 黑珍珠`,
+                `${restaurant.heizhenzhu_rank}ダイヤ ブラックパール`,
+              )}
             </div>
           )}
         </div>
@@ -312,8 +324,12 @@ export function RestaurantDetail({ restaurant, lang = "en" }: RestaurantDetailPr
           </div>
           {restaurant.avg_meal_duration && (
             <div>
-              <p className="text-sm text-gray-500">{t("Avg Duration", "平均时长", "平均滞在時間")}</p>
-              <p className="font-medium">{restaurant.avg_meal_duration} {t("min", "分钟", "分")}</p>
+              <p className="text-sm text-gray-500">
+                {t("Avg Duration", "平均时长", "平均滞在時間")}
+              </p>
+              <p className="font-medium">
+                {restaurant.avg_meal_duration} {t("min", "分钟", "分")}
+              </p>
             </div>
           )}
           {restaurant.address && (
@@ -336,7 +352,9 @@ export function RestaurantDetail({ restaurant, lang = "en" }: RestaurantDetailPr
           <div>
             <p className="text-sm text-gray-500">{t("Booking", "预约", "予約")}</p>
             <p className="font-medium">
-              {restaurant.booking_required ? t("Required", "必须", "要") : t("Not required", "非必须", "不要")}
+              {restaurant.booking_required
+                ? t("Required", "必须", "要")
+                : t("Not required", "非必须", "不要")}
             </p>
           </div>
         </div>
@@ -351,8 +369,14 @@ export function RestaurantDetail({ restaurant, lang = "en" }: RestaurantDetailPr
         {/* Blogger Recommendation */}
         {restaurant.blogger_recommended && restaurant.blogger_name && (
           <div className="mt-4 p-4 bg-gradient-to-r from-pink-50 to-orange-50 rounded-lg">
-            <p className="text-sm text-gray-500">{t("Blogger Recommended", "博主推荐", "ブロガーおすすめ")}</p>
-            <p className="font-medium">{lang === "ja" ? `${restaurant.blogger_name} によるおすすめ` : `by ${restaurant.blogger_name}`}</p>
+            <p className="text-sm text-gray-500">
+              {t("Blogger Recommended", "博主推荐", "ブロガーおすすめ")}
+            </p>
+            <p className="font-medium">
+              {lang === "ja"
+                ? `${restaurant.blogger_name} によるおすすめ`
+                : `by ${restaurant.blogger_name}`}
+            </p>
           </div>
         )}
       </div>
@@ -361,13 +385,17 @@ export function RestaurantDetail({ restaurant, lang = "en" }: RestaurantDetailPr
       <div className="bg-white rounded-xl shadow-md p-6">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-xl font-bold">{t("Reviews", "评论", "レビュー")}</h2>
-          <span className="text-gray-500">{reviews.length} {t("reviews", "条评论", "件")}</span>
+          <span className="text-gray-500">
+            {reviews.length} {t("reviews", "条评论", "件")}
+          </span>
         </div>
 
         {/* Add Review Form */}
         <form onSubmit={handleSubmitReview} className="mb-6">
           <div className="flex items-center gap-2 mb-3">
-            <span className="text-sm text-gray-500">{t("Your Rating:", "你的评分：", "あなたの評価：")}</span>
+            <span className="text-sm text-gray-500">
+              {t("Your Rating:", "你的评分：", "あなたの評価：")}
+            </span>
             {[1, 2, 3, 4, 5].map((star) => (
               <button
                 key={star}
@@ -384,13 +412,19 @@ export function RestaurantDetail({ restaurant, lang = "en" }: RestaurantDetailPr
           <textarea
             value={newReview}
             onChange={(e) => setNewReview(e.target.value)}
-            placeholder={t("Share your dining experience...", "分享你的用餐体验...", "食事の体験を共有しましょう...")}
+            placeholder={t(
+              "Share your dining experience...",
+              "分享你的用餐体验...",
+              "食事の体験を共有しましょう...",
+            )}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
             rows={3}
           />
           <div className="flex justify-end mt-3">
             <Button type="submit" disabled={isLoading || !newReview.trim()}>
-              {isLoading ? t("Submitting...", "提交中...", "送信中...") : t("Submit Review", "提交评论", "レビューを投稿")}
+              {isLoading
+                ? t("Submitting...", "提交中...", "送信中...")
+                : t("Submit Review", "提交评论", "レビューを投稿")}
             </Button>
           </div>
         </form>
@@ -400,7 +434,13 @@ export function RestaurantDetail({ restaurant, lang = "en" }: RestaurantDetailPr
           {displayReviews.length === 0 ? (
             <div className="text-center py-8 text-gray-500">
               <span className="text-4xl mb-2 block">💬</span>
-              <p>{t("No reviews yet. Be the first to share your experience!", "还没有评价，快来分享你的体验吧！", "まだレビューがありません。最初のレビューを投稿しましょう！")}</p>
+              <p>
+                {t(
+                  "No reviews yet. Be the first to share your experience!",
+                  "还没有评价，快来分享你的体验吧！",
+                  "まだレビューがありません。最初のレビューを投稿しましょう！",
+                )}
+              </p>
             </div>
           ) : (
             displayReviews.map((review) => (
@@ -446,7 +486,11 @@ export function RestaurantDetail({ restaurant, lang = "en" }: RestaurantDetailPr
             onClick={() => setShowAllReviews(true)}
             className="mt-4 text-blue-600 hover:underline"
           >
-            {t(`Show ${remainingReviews} more reviews`, `还有 ${remainingReviews} 条评论`, `他 ${remainingReviews} 件のレビューを見る`)}
+            {t(
+              `Show ${remainingReviews} more reviews`,
+              `还有 ${remainingReviews} 条评论`,
+              `他 ${remainingReviews} 件のレビューを見る`,
+            )}
           </button>
         )}
       </div>

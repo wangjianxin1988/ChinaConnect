@@ -16,7 +16,12 @@ import { extractRouteFromConversation, saveRoute } from "@/lib/ai/route-saver";
 import { getCurrentUser } from "@/lib/auth/supabase-auth";
 import { getCurrentTier, TIER_LIMITS, type SubscriptionTier } from "@/lib/subscription";
 import { UpgradePrompt } from "@/components/subscription/UpgradePrompt";
-import { accountT, toAccountLang, type AccountLang } from "@/components/account/account-strings";
+import {
+  accountT,
+  localizedHref,
+  toAccountLang,
+  type AccountLang,
+} from "@/components/account/account-strings";
 import React, {
   useState,
   useRef,
@@ -1126,7 +1131,10 @@ export const AIChat: React.FC<AIChatProps> = ({
             <div className="px-4 pb-1 shrink-0">
               <div className="flex items-center justify-between text-xs text-gray-500">
                 <span>{LABELS.requestsRemaining.replace("{n}", String(remainingRequests))}</span>
-                <a href="/pricing" className="text-blue-600 hover:underline">
+                <a
+                  href={localizedHref(language, "/pricing")}
+                  className="text-blue-600 hover:underline"
+                >
                   {LABELS.upgrade}
                 </a>
               </div>
@@ -1154,7 +1162,7 @@ export const AIChat: React.FC<AIChatProps> = ({
                   <span className="text-sm text-amber-800">{LABELS.monthlyLimitReached}</span>
                 </div>
                 <a
-                  href="/pricing"
+                  href={localizedHref(language, "/pricing")}
                   className="text-sm font-medium text-blue-600 hover:text-blue-800 hover:underline"
                 >
                   {LABELS.upgradePlan} →

@@ -196,7 +196,7 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
 
           <div class="flex items-center gap-3">
             <div id="auth-nav-container" class="flex items-center">
-            <a href="/auth/login" class="flex items-center gap-2 px-4 py-1.5 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-medium transition-colors" aria-label="Sign In" data-i18n-aria="auth.signIn">
+            <a href={`${lp}/auth/login`} class="flex items-center gap-2 px-4 py-1.5 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-medium transition-colors" aria-label="Sign In" data-i18n-aria="auth.signIn">
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
               <span data-i18n="auth.signIn">Sign In</span>
             </a>
@@ -250,7 +250,7 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
         var LANG_STORAGE_KEY = "chinaconnect_language";
         // Paths that exist under /<lang>/...; internal links to these must keep the
         // current language prefix so browsing never silently drops back to English.
-        var LOCALIZED_PATHS = ["/cities", "/city", "/food", "/guide", "/blog", "/attractions", "/scenic-spots", "/ai", "/emergency", "/contact", "/terms", "/privacy", "/auth", "/account", "/profile", "/pricing"];
+        var LOCALIZED_PATHS = ["/cities", "/city", "/food", "/guide", "/blog", "/attractions", "/scenic-spots", "/ai", "/emergency", "/contact", "/terms", "/privacy", "/auth", "/account", "/profile", "/pricing", "/checkout", "/recent"];
 
         function safeGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
         function safeSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
@@ -539,8 +539,37 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
           if (container && !container.contains(target)) closeLangMenu();
         });
 
+        // Safety net: rewrite any hardcoded unprefixed internal links after
+        // render/navigation so middle-clicks, target=_blank and JS-created links
+        // never silently fall back to English. Idempotent - already-prefixed
+        // links are left untouched.
+        function rewriteLocalizedLinks() {
+          try {
+            var curLang = getLangInfo().lang;
+            if (!curLang || curLang === "en") return;
+            var links = document.querySelectorAll("a[href]");
+            for (var i = 0; i < links.length; i++) {
+              var link = links[i];
+              var href = link.getAttribute("href");
+              if (!href || href.charAt(0) !== "/" || href.charAt(1) === "/") continue;
+              var pathPart = href.split(/[?#]/)[0];
+              var pathNoLang = pathPart.replace(/^\/(en|ja|ko|zh-CN|zh-TW|th|vi|ru|fr|de|ar|fa)(?=\/|$)/, "");
+              if (pathNoLang === "") pathNoLang = "/";
+              var isLocalizable = pathNoLang === "/" || LOCALIZED_PATHS.some(function (p) {
+                return pathNoLang === p || pathNoLang.indexOf(p + "/") === 0;
+              });
+              if (!isLocalizable) continue;
+              var query = href.indexOf("?") >= 0 ? href.slice(href.indexOf("?")) : "";
+              var hash = href.indexOf("#") >= 0 ? href.slice(href.indexOf("#")) : "";
+              var newHref = "/" + curLang + pathNoLang + query + hash;
+              if (link.getAttribute("href") !== newHref) link.setAttribute("href", newHref);
+            }
+          } catch (e) { console.warn("[i18n] link rewrite failed", e); }
+        }
+
         function runLangInit() {
           try { initLanguageUI(); } catch (e) { console.warn("[i18n] init failed", e); }
+          rewriteLocalizedLinks();
         }
         document.addEventListener("DOMContentLoaded", runLangInit);
         if (document.readyState !== "loading") runLangInit();
@@ -661,16 +690,53 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
           }
         });
 
+        // Read the local Supabase session synchronously so the header can render
+        // the signed-in state immediately, without waiting on /api/auth/state.
+        function optimisticAuthUser() {
+          try {
+            var raw = safeGet("sb-xyvuqbpwrhkukjgzveyc-auth-token");
+            if (!raw) return null;
+            var session = JSON.parse(raw);
+            if (!session || !session.access_token || !session.user) return null;
+            var um = session.user.user_metadata || {};
+            return {
+              displayName: um.full_name || um.name || um.display_name || session.user.email || "",
+              email: session.user.email || "",
+              avatarUrl: um.avatar_url || um.picture || null,
+            };
+          } catch (e) { return null; }
+        }
+
         function refreshAuthNav() {
           var c = document.getElementById("auth-nav-container");
           if (!c) return;
+          // Optimistic render first: a signed-in user must never see a "Sign In"
+          // flash while the network validation is in flight.
+          var optimistic = optimisticAuthUser();
+          if (optimistic) renderLoggedIn(optimistic);
+          else renderLoggedOut();
           fetch(window.location.origin + "/api/auth/state", { credentials: "same-origin", cache: "no-store" })
-            .then(function (r) { return r && r.ok ? r.json() : { authenticated: false }; })
+            .then(function (r) {
+              if (!r || !r.ok) {
+                // Non-2xx / proxy hiccup: keep the optimistic local state instead
+                // of flashing a signed-in user to "Sign In". Only fill empty containers.
+                var c2 = document.getElementById("auth-nav-container");
+                if (c2 && !c2.innerHTML.trim()) renderLoggedOut();
+                return null;
+              }
+              return r.json();
+            })
             .then(function (data) {
-              if (data && data.authenticated && data.user) renderLoggedIn(data.user);
+              if (!data) return; // non-2xx handled above: optimistic state kept
+              if (data.authenticated && data.user) renderLoggedIn(data.user);
               else renderLoggedOut();
             })
-            .catch(function () { renderLoggedOut(); });
+            .catch(function () {
+              // Network hiccup: keep the optimistic state instead of flashing
+              // "Sign In". Only fall back if nothing was rendered at all.
+              var c = document.getElementById("auth-nav-container");
+              if (c && !c.innerHTML.trim()) renderLoggedOut();
+            });
         }
 
         function runAuthInit() {

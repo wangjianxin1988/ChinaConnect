@@ -5,7 +5,13 @@
  */
 
 import React from "react";
-import { accountT, toAccountLang, type AccountLang, type AccountKey } from "./account-strings";
+import {
+  accountT,
+  localizedHref,
+  toAccountLang,
+  type AccountLang,
+  type AccountKey,
+} from "./account-strings";
 import {
   getCurrentTier,
   TIER_LIMITS,
@@ -163,7 +169,7 @@ export const PlanComparison: React.FC<PlanComparisonProps> = ({ language = "en" 
           {accountT(lang, "planTitle")}
         </h2>
         <a
-          href="/pricing"
+          href={localizedHref(language, "/pricing")}
           className="text-sm text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium hover:underline"
         >
           {accountT(lang, "viewFullPricing")} →
@@ -274,7 +280,7 @@ export const PlanComparison: React.FC<PlanComparisonProps> = ({ language = "en" 
                 </div>
 
                 <a
-                  href="/pricing"
+                  href={localizedHref(language, "/pricing")}
                   className={`block w-full text-center py-2.5 px-4 rounded-lg text-white text-sm font-medium transition-colors ${TIER_BTN_COLORS[tier]}`}
                 >
                   {accountT(lang, "upgradeTo", { name: TIER_NAMES[tier][lang] })}

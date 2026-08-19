@@ -98,13 +98,29 @@ export async function signOut() {
  * Get the currently authenticated user (from session).
  */
 export async function getCurrentUser(): Promise<User | null> {
-  const {
-    data: { user },
-    error,
-  } = await supabase.auth.getUser();
+  // Validate/refresh the token via network first.
+  try {
+    const {
+      data: { user },
+      error,
+    } = await supabase.auth.getUser();
 
-  if (error || !user) return null;
-  return user;
+    if (!error && user) return user;
+  } catch {
+    // Network failure - fall through to the local session below.
+  }
+
+  // A slow or failed validation call must not flip a signed-in user to the
+  // "not authenticated" screen: the local session is still authoritative
+  // for rendering, and server-side APIs re-validate the token themselves.
+  try {
+    const {
+      data: { session },
+    } = await supabase.auth.getSession();
+    return session?.user ?? null;
+  } catch {
+    return null;
+  }
 }
 
 /**

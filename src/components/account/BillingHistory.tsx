@@ -5,7 +5,13 @@
  */
 
 import React from "react";
-import { accountT, toAccountLang, type AccountLang, type AccountKey } from "./account-strings";
+import {
+  accountT,
+  localizedHref,
+  toAccountLang,
+  type AccountLang,
+  type AccountKey,
+} from "./account-strings";
 import {
   getCurrentTier,
   TIER_NAMES,
@@ -182,7 +188,7 @@ export const BillingHistory: React.FC<BillingHistoryProps> = ({ language = "en" 
         {isFree && (
           <div className="pt-4 border-t border-blue-200 dark:border-blue-700">
             <a
-              href="/pricing"
+              href={localizedHref(language, "/pricing")}
               className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
             >
               {accountT(lang, "upgradePlan")} →
@@ -352,7 +358,7 @@ export const BillingHistory: React.FC<BillingHistoryProps> = ({ language = "en" 
             {accountT(lang, "noRecordsDesc")}
           </p>
           <a
-            href="/pricing"
+            href={localizedHref(language, "/pricing")}
             className="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
           >
             {accountT(lang, "viewPlans")}

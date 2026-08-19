@@ -402,7 +402,8 @@ const _lookup = (key) => {
         var lang2 = (document.documentElement.lang || "en").toLowerCase().split("-")[0];
         recommended.forEach(function(city) {
           var div = document.createElement('a');
-          div.href = '/city/' + city.slug;
+          var langFull = (document.documentElement.lang || 'en').toLowerCase();
+          div.href = (langFull === 'en' ? '' : '/' + langFull) + '/city/' + city.slug;
           div.className = 'group relative overflow-hidden rounded-2xl card-hover block';
           var bgStyle = city.coverImage
             ? 'background-image: url(\'' + city.coverImage + '\'); background-size: cover; background-position: center;'

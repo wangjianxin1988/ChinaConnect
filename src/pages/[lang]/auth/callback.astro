@@ -9,6 +9,7 @@ export function getStaticPaths() {
 }
 
 const lang = (Astro.params.lang as Language) || "en";
+const prefix = lang && lang !== "en" ? "/" + lang : "";
 const title = (translations[lang]?.authPage?.callbackTitle) || translations.en.authPage?.callbackTitle || "Signing you in...";
 ---
 
@@ -27,7 +28,7 @@ const title = (translations[lang]?.authPage?.callbackTitle) || translations.en.a
         </div>
         <h2 class="text-lg font-semibold text-gray-900 mb-2" data-i18n="authPage.errorTitle">Verification failed</h2>
         <p id="auth-error-msg" class="text-sm text-gray-600 mb-6"></p>
-        <a id="auth-back-link" href="/auth/login" class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
+        <a id="auth-back-link" href={prefix + "/auth/login"} class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
           Back to sign in
         </a>
       </div>

@@ -207,7 +207,7 @@ const colorClasses = {
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {guides.map((guide, index) => (
         <a
-          href={guide.href}
+          href={`/${lang}${guide.href}`}
           class={`group relative overflow-hidden rounded-2xl bg-gradient-to-br ${colorClasses[guide.color as keyof typeof colorClasses]} p-6 text-white shadow-lg hover:shadow-xl transition-all hover:-translate-y-1`}
         >
           <div class="absolute top-4 right-4 text-white/30 text-6xl font-bold">
@@ -245,7 +245,7 @@ const colorClasses = {
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {businessGuides.map((guide) => (
         <a
-          href={guide.href}
+          href={`/${lang}${guide.href}`}
           class="group bg-card rounded-2xl border overflow-hidden hover:shadow-lg transition-all hover:-translate-y-1"
         >
           <div class="bg-gradient-to-br from-slate-700 to-slate-800 p-6 h-28 flex items-center justify-center">

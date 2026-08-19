@@ -5,7 +5,7 @@
  */
 
 import React from "react";
-import { accountT, toAccountLang, type AccountLang } from "./account-strings";
+import { accountT, localizedHref, toAccountLang, type AccountLang } from "./account-strings";
 import { getCurrentTier, TIER_LIMITS, TIER_NAMES, type SubscriptionTier } from "@/lib/subscription";
 import {
   getUsageCount,
@@ -329,7 +329,10 @@ export const UsageStats: React.FC<UsageStatsProps> = ({ language = "en" }) => {
           {!isUnlimited && (
             <li>
               • {accountT(lang, "tipUpgradeBefore")}{" "}
-              <a href="/pricing" className="underline font-medium hover:text-blue-800">
+              <a
+                href={localizedHref(language, "/pricing")}
+                className="underline font-medium hover:text-blue-800"
+              >
                 {accountT(lang, "tipUpgradeLink")}
               </a>{" "}
               {accountT(lang, "tipUpgradeAfter")}

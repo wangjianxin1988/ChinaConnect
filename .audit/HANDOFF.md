@@ -1305,3 +1305,28 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **遗留**：首页等 `Astro.request.headers` prerender warning（既有，非本次范围）；`.audit/` 下临时脚本不提交。
 - **部署与生产复测（本会话已完成）**：提交 d9660f8 已 push master，CI `deploy-cf-pages.yml` 部署成功（含 Live probe）。生产实测：`/ja /ko /zh-CN /pricing` H1 本地化、`/ja /de /checkout/success` 标题本地化、`/ja /zh-CN /ai` 登录态订阅组件（無料/免费版 + textarea）、`/ja /ko /zh-CN /account` usage 板块（使用統計/사용 통계/用量统计 + 無料/무료/免费版）全部正常，7 页水合错误 0——证明 subscription.ts 解码修复与本地化已上线。
 - **下个会话**：无强制待办；如需可继续关注 `Astro.request.headers` prerender warning（既有）与 `/ja/ai` 偶发 503（MiniMax/搜索 API 兜底）。
+
+### 2026-08-19 会话 #34（链接英文回退深度修复 + 个人中心未登录闪现修复）
+
+- **起**：用户反馈两条：1）链接有时仍会跳回英文版（很多地方），需深度修复；2）切换个人中心按钮时经常出现"未登录"页面，疑似数据拉取慢，需修复。
+- **链接英文回退修复（源码硬编码 11 处 + 全局兜底）**：
+  1. `src/pages/[lang]/index.astro`：首页推荐城市卡（上海/成都/西安）`div.href = '/city/' + city.slug` → 补 `document.documentElement.lang` 前缀（探针证实此前 /ja /zh-CN 首页跳英文）。
+  2. `src/pages/[lang]/guide/index.astro`：13 个指南/商务卡片 `href={guide.href}` → `href={`/${lang}${guide.href}`}`。
+  3. `src/components/user/AccountPage.astro`：Upgrade 链接与 `window.location.href = '/pricing'` → `prefix`/`ccLangPrefix` 前缀。
+  4. `src/components/food/RestaurantDetail.tsx`：2 处 `window.location.href = "/auth"` → `authPath`（带 lang 前缀）。
+  5. `src/components/ai/AIChat.tsx` + `src/components/account/{BillingHistory,PlanComparison,UsageStats}.tsx`：全部 7 处 `href="/pricing"` → `localizedHref(language, "/pricing")`。
+  6. `src/layouts/BaseLayout.astro`：SSR header 登录链接 `/auth/login` → `${lp}/auth/login`；`LOCALIZED_PATHS` 补 `/checkout`、`/recent`；新增 `rewriteLocalizedLinks()` 文档就绪/导航后全量重写无前缀内链（处理 target=_blank、JS 创建链接、中键点击），幂等且跳过非本地化路径（/api、/images、mailto 等）。
+  7. `src/pages/[lang]/auth/callback.astro`：错误回退链接 `/auth/login` → `prefix + "/auth/login"`。
+- **个人中心"未登录"闪现修复**：
+  1. `src/lib/auth/supabase-auth.ts` `getCurrentUser()`：`getUser()` 网络失败/超时后兜底 `getSession()` 返回本地会话，不再因一次网络抖动就判未登录（服务端 API 仍自行校验 token）。
+  2. `src/components/user/AccountPage.astro` `loadAccount()`：600ms 后重试一次 + `loadSeq` 请求序号防竞态（deleteRoute 等重复调用不会互相覆盖）。
+  3. `src/layouts/BaseLayout.astro` `refreshAuthNav()`：先读本地 Supabase 会话 `optimisticAuthUser()` 立即渲染登录态（消除 Sign In 闪现）；fetch 网络失败或非 2xx 时保留乐观状态，仅服务器明确返回 `authenticated:false` 才切登出。
+- **验证**：
+  - `npx tsc --noEmit` 0 错误；`npx biome check --write` 通过；`node scripts/check-i18n.mjs` 12/12。
+  - `.audit/probe-links2.cjs` 24 页全站无前缀链接 = 0（修复前有首页 3 卡 + 指南 13 卡 + account/pricing 等多处）。
+  - 针对性探针：/ja /zh-CN 首页 3 推荐卡、/ja/guide 13 卡、/ar/guide、/ja/account、/ja/checkout/success 全部带语言前缀。
+  - 登录态探针（刷新 live-session 后）：/ja/account 初始即 content、6 次 tab 快速切换 0 次未登录闪现；header 在 /api/auth/state 被 abort 时保持用户菜单（此前会闪"ログイン"）。
+  - `npx astro build` 26,708 页成功（~107s）。
+- **踩坑记录**：live-session.json 的 access_token 已过期 26h，导致 supabase-js 初始化时清/建会话引发 header 抖动假象；已用 refresh_token 刷新会话（expires_at 1787157235）。定位过程中发现 dev 下 SW controller 会让页面双加载（开发态现象，非本次问题）。
+- **遗留**：首页等 `Astro.request.headers` prerender warning（既有）；`.audit/` 临时探测脚本不提交。
+- **下个会话**：提交 push 后验证生产同页面无英文回退、个人中心无未登录闪现；如仍有问题可复查 `LOCALIZED_PATHS` 覆盖与 SPA 内动态路由。
