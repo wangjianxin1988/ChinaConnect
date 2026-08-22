@@ -486,7 +486,7 @@ export const BillingHistory: React.FC<{ language?: AccountLang | string }> = ({ 
             {accountT(lang, "noRecords")}
           </h3>
           <p className="text-xs text-gray-500 dark:text-gray-400 max-w-sm mx-auto">
-            {accountT(lang, "noRecordsDesc")}
+            {accountT(lang, isFree ? "noRecordsDesc" : "noRecordsPaidDesc")}
           </p>
           <a
             href={localizedHref(language, "/pricing")}

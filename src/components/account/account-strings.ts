@@ -157,6 +157,7 @@ export type AccountKey =
   | "upgradeToContinue"
   | "upgradeCta"
   | "lifetimePlan"
+  | "noRecordsPaidDesc"
   | "favRestaurant"
   | "favAttraction"
   | "favCity"
@@ -1915,6 +1916,20 @@ const ACCOUNT_STRINGS: Record<AccountKey, Record<AccountLang, string>> = {
     de: "Reiseplan",
     ar: "مسار الرحلة",
     fa: "برنامه سفر",
+  },
+  noRecordsPaidDesc: {
+    en: "No payment records yet. Your subscription and invoices will appear here.",
+    ja: "まだ支払い記録がありません。サブスクリプションと請求書はここに表示されます。",
+    ko: "아직 결제 기록이 없습니다. 구독과 청구서가 여기에 표시됩니다.",
+    "zh-CN": "暂无支付记录。您的订阅和发票将显示在这里。",
+    "zh-TW": "暫無付款記錄。您的訂閱和發票將顯示在這裡。",
+    th: "ยังไม่มีบันทึกการชำระเงิน การสมัครสมาชิกและใบแจ้งหนี้ของคุณจะแสดงที่นี่",
+    vi: "Chưa có lịch sử thanh toán. Gói đăng ký và hóa đơn của bạn sẽ hiển thị tại đây.",
+    ru: "Пока нет записей об оплате. Ваша подписка и счета появятся здесь.",
+    fr: "Aucun historique de paiement pour le moment. Votre abonnement et vos factures apparaîtront ici.",
+    de: "Noch keine Zahlungshistorie. Ihr Abo und Ihre Rechnungen erscheinen hier.",
+    ar: "لا توجد سجلات دفع بعد. ستظهر اشتراكاتك وفواتيرك هنا.",
+    fa: "هنوز سابقه پرداختی وجود ندارد. اشتراک و صورتحساب‌های شما در اینجا نمایش داده می‌شوند.",
   },
   lifetimePlan: {
     en: "Lifetime plan",
