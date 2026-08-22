@@ -1373,4 +1373,12 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **验证**：`npx tsc --noEmit` 0 错误、esbuild 打包通过、i18n 12/12、`npx astro build` 26,708 页成功；Edge Function 已 `supabase functions deploy chat`；生产直测（zh-CN 全 18 工具）返回完整一日行程表+三档酒店+电话/导航/交通表+三档预算+「💡 你可能还想知道」+来源，tokens 6629。提交 `1f6ff99` 已 push master（CI 自动部署）。
 - **下个会话**：确认 CI Deploy 绿后复测各语言 AI 回复；可选：给 Google OAuth 新用户补 profiles 行逻辑；补 `AMAP_WEB_API_KEY`（高德 Web 服务 key，用户待提供）。
 
+### 2026-08-22 会话 #37（付费版本显示修复 + Google OAuth profiles 自动创建）
+
+- **根因**：客户端两层问题——① `useAIConversation.ts` 的 `refreshUsage` 未处理 `max === -1`（无限额度），`5 < -1` 为 false → 误判 `usageExceeded=true`、`remaining=0` → 输入框禁用；② tier 徽章读 localStorage `subscription_tier`（旧值 free），从不刷新（`fetchTierFromServer`/`getAuthAwareTier` 全仓无调用点）。
+- **修复（提交 54a1bfd）**：`refreshUsage` 正确处理 -1（unlimited → 不超限、remaining=-1）；`fetchUsageFromServer` 同步 `setCurrentTier` + 派发 `ai-usage-updated` 事件；`MembershipStatusBar`/`SubscriptionCard`/`UsageStats` 对 tier 变化响应式；`UsageStats` 挂载时从服务器拉权威 usage。生产 RPC 已验证：王子默 `get_user_ai_usage`→business/max=-1、`get_user_membership`→Business/is_active=true。
+- **Google OAuth profiles**：根因——prod 无 `on_auth_user_created` trigger（9 用户仅 1 有 profile），且旧 `handle_new_user()` 只读 `display_name`（OAuth 用户是 full_name/name）。修复：新增迁移 `supabase/migrations/20260822_fix_profile_autocreate.sql`（增强 handle_new_user 读取 full_name/name/picture + ON CONFLICT 更新 + 回填存量），已通过临时 Edge Function 用 `SUPABASE_DB_URL` 应用到生产（9/9 用户已有 profile，含王子默 Google 头像）；客户端 `src/services/auth.ts` onAuthStateChange 在 profile 缺失时用 OAuth 元数据 upsertProfile 兜底。
+- **待办**：确认 CI Deploy 绿后复测 AI 页各语言；`AMAP_WEB_API_KEY`（高德 Web 服务 key）仍待用户申请并提供。
+
+
 
