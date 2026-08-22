@@ -313,7 +313,7 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
         const mmMessages: MiniMaxMessage[] = [
           {
             role: "system",
-            content: SYSTEM_PROMPT + buildLanguageHint(language) + "\n\n" + CITY_CONTEXT,
+            content: buildLanguageHint(language) + "\n\n" + SYSTEM_PROMPT + "\n\n" + CITY_CONTEXT,
           },
           ...messages.map((m) => ({ role: m.role, content: m.content })),
           { role: "user", content: text },

@@ -580,10 +580,39 @@ Deno.serve(async (req: Request) => {
       content: lastUserMsg.content,
     });
   }
-
   // Run the agent loop: keep calling MiniMax until no more tool calls
   const model = body.model || "MiniMax-Text-01";
   const currentMessages: ChatMessage[] = [...body.messages];
+
+
+  // Strengthen language adherence: append an explicit language directive to the
+  // final user message (after persistence, so stored history stays clean).
+  const LANGUAGE_DIRECTIVES: Record<string, string> = {
+    en: "IMPORTANT: Reply entirely in English.",
+    "zh-CN": "IMPORTANT: Reply entirely in Simplified Chinese (简体中文).",
+    "zh-TW": "IMPORTANT: Reply entirely in Traditional Chinese (繁體中文).",
+    ja: "IMPORTANT: Reply entirely in Japanese (日本語).",
+    ko: "IMPORTANT: Reply entirely in Korean (한국어).",
+    fr: "IMPORTANT: Reply entirely in French (Français).",
+    de: "IMPORTANT: Reply entirely in German (Deutsch).",
+    ru: "IMPORTANT: Reply entirely in Russian (Русский).",
+    ar: "IMPORTANT: Reply entirely in Arabic (العربية).",
+    th: "IMPORTANT: Reply entirely in Thai (ภาษาไทย).",
+    vi: "IMPORTANT: Reply entirely in Vietnamese (Tiếng Việt).",
+    fa: "IMPORTANT: Reply entirely in Persian/Farsi (فارسی).",
+  };
+  const langDir = body.language ? LANGUAGE_DIRECTIVES[body.language] : undefined;
+  if (langDir) {
+    const lastUserIdx = currentMessages.length - 1;
+    const lastMsg = currentMessages[lastUserIdx];
+    if (lastMsg && lastMsg.role === "user") {
+      currentMessages[lastUserIdx] = {
+        ...lastMsg,
+        content: lastMsg.content + "\n\n" + langDir,
+      };
+    }
+  }
+
   const tools = body.tools && body.tools.length > 0 ? body.tools : undefined;
   let totalTokens = 0;
   let lastFinishReason = "stop";

@@ -220,20 +220,20 @@ const LANG_ALIASES: Record<string, string> = {
 export function buildLanguageHint(detectedLang: string): string {
   const lang = LANG_ALIASES[detectedLang] || detectedLang.split("-")[0];
   const langMap: Record<string, string> = {
-    zh: "Respond in Simplified Chinese (简体中文).",
-    "zh-Hant": "Respond in Traditional Chinese (繁體中文).",
-    en: "Respond in English.",
-    ja: "Respond in Japanese (日本語).",
-    ko: "Respond in Korean (한국어).",
-    fr: "Respond in French (Français).",
-    de: "Respond in German (Deutsch).",
-    es: "Respond in Spanish (Español).",
-    pt: "Respond in Portuguese (Português).",
-    ru: "Respond in Russian (Русский).",
-    ar: "Respond in Arabic (العربية).",
-    th: "Respond in Thai (ภาษาไทย).",
-    vi: "Respond in Vietnamese (Tiếng Việt).",
-    fa: "Respond in Persian/Farsi (فارسی).",
+    zh: "IMPORTANT: You MUST reply entirely in Simplified Chinese (简体中文). Every word of your answer must be Chinese.",
+    "zh-Hant": "IMPORTANT: You MUST reply entirely in Traditional Chinese (繁體中文). Every word of your answer must be Chinese.",
+    en: "IMPORTANT: You MUST reply entirely in English.",
+    ja: "IMPORTANT: You MUST reply entirely in Japanese (日本語). Every word of your answer must be Japanese.",
+    ko: "IMPORTANT: You MUST reply entirely in Korean (한국어). Every word of your answer must be Korean.",
+    fr: "IMPORTANT: You MUST reply entirely in French (Français). Every word of your answer must be French.",
+    de: "IMPORTANT: You MUST reply entirely in German (Deutsch). Every word of your answer must be German.",
+    es: "IMPORTANT: You MUST reply entirely in Spanish (Español). Every word of your answer must be Spanish.",
+    pt: "IMPORTANT: You MUST reply entirely in Portuguese (Português). Every word of your answer must be Portuguese.",
+    ru: "IMPORTANT: You MUST reply entirely in Russian (Русский). Every word of your answer must be Russian.",
+    ar: "IMPORTANT: You MUST reply entirely in Arabic (العربية). Every word of your answer must be Arabic.",
+    th: "IMPORTANT: You MUST reply entirely in Thai (ภาษาไทย). Every word of your answer must be Thai.",
+    vi: "IMPORTANT: You MUST reply entirely in Vietnamese (Tiếng Việt). Every word of your answer must be Vietnamese.",
+    fa: "IMPORTANT: You MUST reply entirely in Persian/Farsi (فارسی). Every word of your answer must be Persian.",
   };
   return langMap[lang] ? `\n\nLanguage: ${langMap[lang]}` : "";
 }
