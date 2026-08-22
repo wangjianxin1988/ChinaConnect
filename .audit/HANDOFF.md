@@ -1355,3 +1355,12 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **部署**：Edge Function 已 supabase functions deploy chat --project-ref xyvuqbpwrhkukjgzveyc 上线；前端+代理改动提交 98e020d 已 push master；CI 工作流补充 AMAP_WEB_API_KEY 同步步骤（提交 7ef9b40 因 if 表达式报 workflow 解析失败，012a8f8 改为 shell 空值守卫后 Deploy+Live probe 全绿）。生产实测 AIChatPage bundle 已含新提示词（REAL-TIME FIRST / VERIFY & CITE）。
 - **遗留**：.audit/ 下新增探针（_probe_ai_rt*.cjs、_probe_ai_fulltools.cjs、_create_new_user.cjs、_tools_defs.cjs 等）不提交；生产 amap 代理仍缺 AMAP_WEB_API_KEY（.env 的 AMAP_SECURITY_KEY 经直测返回 INVALID_USER_KEY，非有效 Web 服务 key）——需用户在高德开放平台注册 Web服务 key 并添加 GitHub secret AMAP_WEB_API_KEY 后重新 push 即可自动同步，此后 AmapPOISearch/AmapRouteSearch 才可用（当前模型会自动改用 WebSearch 兜底）；后续若站内数据（美食/酒店/景点）增多，重跑 node scripts/generate-ai-data.mjs 并重新部署 chat 函数即可；E2E Tests (Playwright) 为既存长跑任务（本次改动后仍在跑，未拦部署）。
 - **下个会话**：确认 CI 部署成功后在 production 复测 AI 页多语言实时回复；如有需要可再补 AmapPOISearch 生产验证与 Edge Function 日志（Supabase Dashboard > Edge Functions > chat > Logs）。
+
+### 2026-08-22 会话 #35b（AI 实时能力收尾：语言指令部署 + 前端构建推送）
+
+- **语言指令部署**：Edge Function `supabase/functions/chat/index.ts` 中语言指令块原先在 `currentMessages` 声明之前引用（TDZ 运行时崩溃），已移动到声明之后（line 585 声明 → 588 指令块），esbuild 打包 + `supabase functions deploy chat` 通过。
+- **日语复测（PASS）**：用新测试账号 `ai.codextest.1787386274959@example.com` 直测生产 chat 函数（language=ja）——回复全日语，含「📡 Based on real-time data:」标记、大阪→上海航班+来源（Skyscanner）、上海天气+来源（Weather.com）、南翔小笼包（地址/电话/Dianping 来源）、App 下载区。
+- **前端构建推送**：`src/lib/ai/prompts.ts`（buildLanguageHint 12 语言强化）+ `src/hooks/useAIConversation.ts`（语言提示前置到系统消息首段）已随提交 cb67bfd push master（CI 自动部署 Cloudflare Pages）。验证：`npx tsc --noEmit` 0 错误、`node scripts/check-i18n.mjs` 12/12、`npx astro build` 26,708 页成功。
+- **环境确认**：Supabase secrets 已有 `MINIMAX_API_KEY`、`VITE_ANYSEARCH_API_KEY`（Edge Function WebSearch/TransportSearch/VisaInfo 可用）。`AMAP_WEB_API_KEY` 仍缺失 → AmapPOISearch/AmapRouteSearch 生产返回 500（模型自动 WebSearch 兜底）。**待用户**：在高德开放平台申请 Web 服务 key 后设为 GitHub secret `AMAP_WEB_API_KEY`，重新 push 即可 CI 同步。
+- **测试账号额度**：`ai.codextest.1787386274959@example.com` 本月 5 次免费额度（探针已用 1 次），会话存 `.audit/test-session.json`；原 `codextest1786991529@example.com` 已满（429）。
+
