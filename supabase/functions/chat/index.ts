@@ -635,7 +635,7 @@ Deno.serve(async (req: Request) => {
           messages: currentMessages,
           stream: false,
           temperature: 0.7,
-          max_tokens: 2048,
+          max_tokens: 4096,
           ...(tools ? { tools } : {}),
         },
         abortController.signal,

@@ -436,11 +436,14 @@ const MessageBubble: React.FC<{
   message: Message;
   onRetry?: () => void;
   onCitationClick?: (text: string) => void;
-}> = ({ message, onRetry, onCitationClick }) => {
+  language?: string;
+  showFirstUseNotice?: boolean;
+}> = ({ message, onRetry, onCitationClick, language, showFirstUseNotice }) => {
   const isUser = message.role === "user";
   const isStreaming = message.isStreaming;
   const isError =
     message.content.startsWith("⚠️") || message.content.startsWith("Sorry, I encountered");
+  const LABELS = CHAT_LABELS[(language as AiChatLang) || "en"] || CHAT_LABELS.en;
 
   return (
     <div className={`flex ${isUser ? "justify-end" : "justify-start"} message-enter`}>
@@ -477,9 +480,16 @@ const MessageBubble: React.FC<{
             {message.content ? (
               <span className="inline-block w-0.5 h-4 bg-blue-500 ml-0.5 align-middle streaming-cursor" />
             ) : (
-              <div className="flex items-center gap-2">
-                <TypingDots color={isUser ? "bg-blue-300" : "bg-gray-400"} />
-                <span className="text-xs text-gray-400 animate-pulse">Thinking...</span>
+              <div className="flex flex-col gap-2">
+                <div className="flex items-center gap-2">
+                  <TypingDots color={isUser ? "bg-blue-300" : "bg-gray-400"} />
+                  <span className="text-xs text-gray-400 animate-pulse">{LABELS.thinking}</span>
+                </div>
+                {showFirstUseNotice && (
+                  <span className="text-xs text-amber-600 leading-relaxed max-w-[26rem]">
+                    ⏳ {LABELS.firstUseNotice}
+                  </span>
+                )}
               </div>
             )}
           </div>
@@ -1086,7 +1096,10 @@ export const AIChat: React.FC<AIChatProps> = ({
               <div className="flex flex-col items-center justify-center h-full text-center px-4">
                 <div className="text-5xl mb-4">🌏</div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">{LABELS.whereToGo}</h3>
-                <p className="text-gray-500 max-w-md mb-8">{LABELS.intro}</p>
+                <p className="text-gray-500 max-w-md mb-4">{LABELS.intro}</p>
+                <div className="w-full max-w-md mb-8 rounded-xl bg-amber-50 border border-amber-200 px-4 py-3 text-xs text-amber-800 leading-relaxed">
+                  ⏳ {LABELS.firstUseNotice}
+                </div>
                 <div className="w-full max-w-md">
                   <QuickPrompts
                     language={isZh ? "zh" : "en"}
@@ -1101,6 +1114,8 @@ export const AIChat: React.FC<AIChatProps> = ({
                   <MessageBubble
                     key={message.id}
                     message={message}
+                    language={language}
+                    showFirstUseNotice={messages.length === 1}
                     onRetry={
                       message.content.startsWith("⚠️") ||
                       message.content.startsWith("Sorry, I encountered")

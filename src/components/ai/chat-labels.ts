@@ -41,6 +41,7 @@ export interface AiChatLabels {
   upgradePlan: string;
   upgradeToContinue: string;
   aiDisclaimer: string;
+  firstUseNotice: string;
   shareItinerary: string;
   shareCode: string;
   close: string;
@@ -82,6 +83,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     upgradePlan: "Upgrade Plan",
     upgradeToContinue: "Upgrade to continue using AI...",
     aiDisclaimer: "AI responses are for reference only. Always verify locally.",
+    firstUseNotice: "When you ask for a detailed itinerary, the AI searches live and plans in real time. First-time requests can take a few minutes — usually no more than 5 minutes. Please wait patiently.",
     shareItinerary: "Share Itinerary",
     shareCode: "Share Code:",
     close: "Close",
@@ -121,6 +123,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     upgradePlan: "プランをアップグレード",
     upgradeToContinue: "AIを続けて使うにはアップグレードしてください...",
     aiDisclaimer: "AIの回答は参考用です。現地の最新情報を必ず確認してください",
+    firstUseNotice: "初めてAIで詳細な旅程を計画する場合、AIがリアルタイムに検索・処理するため時間がかかります。通常5分以内ですので、しばらくお待ちください。",
     shareItinerary: "旅程を共有",
     shareCode: "共有コード：",
     close: "閉じる",
@@ -160,6 +163,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     upgradePlan: "요금제 업그레이드",
     upgradeToContinue: "AI를 계속 사용하려면 업그레이드하세요...",
     aiDisclaimer: "AI 답변은 참고용입니다. 현지 실제 정보를 꼭 확인하세요",
+    firstUseNotice: "AI로 상세 일정을 처음 계획할 때는 실시간 검색과 처리를 위해 시간이 걸립니다. 보통 5분을 넘지 않으니 잠시만 기다려 주세요.",
     shareItinerary: "일정 공유",
     shareCode: "공유 코드:",
     close: "닫기",
@@ -198,6 +202,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     upgradePlan: "升级套餐",
     upgradeToContinue: "请升级以继续使用AI助手...",
     aiDisclaimer: "AI回复仅供参考，请以当地实际信息为准",
+    firstUseNotice: "首次使用AI规划详细内容时，AI需要联网搜索并长时间思考和处理，等待时间较长，通常不会超过5分钟，请耐心等待。",
     shareItinerary: "分享行程",
     shareCode: "分享码：",
     close: "关闭",
@@ -236,6 +241,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     upgradePlan: "升級方案",
     upgradeToContinue: "請升級以繼續使用AI助手...",
     aiDisclaimer: "AI回覆僅供參考，請以當地實際資訊為準",
+    firstUseNotice: "首次使用AI規劃詳細內容時，AI需要聯網搜尋並長時間思考與處理，等待時間較長，通常不會超過5分鐘，請耐心等待。",
     shareItinerary: "分享行程",
     shareCode: "分享碼：",
     close: "關閉",
@@ -274,6 +280,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     upgradePlan: "อัปเกรดแพ็กเกจ",
     upgradeToContinue: "อัปเกรดเพื่อใช้ AI ต่อไป...",
     aiDisclaimer: "คำตอบจาก AI เป็นเพียงข้อมูลอ้างอิง โปรดตรวจสอบข้อมูลจริงในท้องถิ่น",
+    firstUseNotice: "เมื่อใช้ AI วางแผนรายละเอียดครั้งแรก AI จะค้นหาและประมวลผลแบบเรียลไทม์ อาจใช้เวลาสักครู่ โดยปกติไม่เกิน 5 นาที กรุณารอสักครู่",
     shareItinerary: "แชร์แผนการเดินทาง",
     shareCode: "รหัสแชร์:",
     close: "ปิด",
@@ -314,6 +321,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     upgradeToContinue: "Nâng cấp để tiếp tục sử dụng AI...",
     aiDisclaimer:
       "Câu trả lời của AI chỉ mang tính tham khảo. Luôn kiểm tra thông tin thực tế tại địa phương",
+    firstUseNotice: "Khi dùng AI lập kế hoạch chi tiết lần đầu, AI sẽ tìm kiếm và xử lý theo thời gian thực nên cần chờ lâu hơn, thường không quá 5 phút. Vui lòng kiên nhẫn chờ đợi.",
     shareItinerary: "Chia sẻ hành trình",
     shareCode: "Mã chia sẻ:",
     close: "Đóng",
@@ -355,6 +363,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     upgradeToContinue: "Обновите тариф, чтобы продолжить использование ИИ...",
     aiDisclaimer:
       "Ответы ИИ носят справочный характер. Всегда проверяйте актуальную информацию на месте",
+    firstUseNotice: "При первом использовании ИИ для детального планирования требуется время на поиск и обработку данных в реальном времени. Обычно это занимает не более 5 минут. Пожалуйста, подождите.",
     shareItinerary: "Поделиться маршрутом",
     shareCode: "Код доступа:",
     close: "Закрыть",
@@ -396,6 +405,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     upgradeToContinue: "Mettez à niveau pour continuer à utiliser l'IA...",
     aiDisclaimer:
       "Les réponses de l'IA sont fournies à titre indicatif. Vérifiez toujours les informations locales",
+    firstUseNotice: "Lors de la première utilisation de l'IA pour planifier en détail, l'IA recherche et traite en temps réel. L'attente peut être longue, généralement pas plus de 5 minutes. Merci de patienter.",
     shareItinerary: "Partager l'itinéraire",
     shareCode: "Code de partage :",
     close: "Fermer",
@@ -437,6 +447,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     upgradeToContinue: "Upgraden Sie, um die KI weiter zu nutzen...",
     aiDisclaimer:
       "KI-Antworten dienen nur zur Referenz. Prüfen Sie immer die lokalen Informationen",
+    firstUseNotice: "Bei der ersten Nutzung der KI für eine detaillierte Planung sucht und verarbeitet die KI in Echtzeit. Die Wartezeit kann länger sein, in der Regel nicht mehr als 5 Minuten. Bitte haben Sie Geduld.",
     shareItinerary: "Reiseroute teilen",
     shareCode: "Freigabecode:",
     close: "Schließen",
@@ -476,6 +487,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     upgradePlan: "ترقية الخطة",
     upgradeToContinue: "قم بالترقية لمواصلة استخدام الذكاء الاصطناعي...",
     aiDisclaimer: "إجابات الذكاء الاصطناعي للرجوع إليها فقط. تحقق دائماً من المعلومات المحلية",
+    firstUseNotice: "عند أول استخدام للذكاء الاصطناعي لتخطيط تفاصيل الرحلة، يقوم بالبحث والمعالجة في الوقت الفعلي وقد يستغرق وقتاً أطول، عادة لا يتجاوز 5 دقائق. يرجى الانتظار بصبر.",
     shareItinerary: "مشاركة الرحلة",
     shareCode: "رمز المشاركة:",
     close: "إغلاق",
@@ -515,6 +527,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     upgradePlan: "ارتقای طرح",
     upgradeToContinue: "برای ادامه استفاده از هوش مصنوعی ارتقا دهید...",
     aiDisclaimer: "پاسخ‌های هوش مصنوعی فقط جنبه مرجع دارند. همیشه اطلاعات واقعی محلی را بررسی کنید",
+    firstUseNotice: "هنگام اولین استفاده از هوش مصنوعی برای برنامه‌ریزی جزئیات، هوش مصنوعی به صورت زنده جستجو و پردازش می‌کند و ممکن است زمان بیشتری ببرد، معمولاً بیشتر از ۵ دقیقه نیست. لطفاً صبور باشید.",
     shareItinerary: "اشتراک‌گذاری سفر",
     shareCode: "کد اشتراک‌گذاری:",
     close: "بستن",
