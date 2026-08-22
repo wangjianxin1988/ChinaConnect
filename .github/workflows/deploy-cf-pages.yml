@@ -49,6 +49,13 @@ jobs:
         run: |
           printf "%s" "$MINIMAX_API_KEY" | wrangler pages secret put MINIMAX_API_KEY --project-name=${{ env.CLOUDFLARE_PROJECT_NAME }} --env production
           printf "%s" "$ANYSEARCH_API_KEY" | wrangler pages secret put ANYSEARCH_API_KEY --project-name=${{ env.CLOUDFLARE_PROJECT_NAME }} --env production
+      - name: Sync Amap secret (production env)
+        if: ${{ secrets.AMAP_WEB_API_KEY != null && secrets.AMAP_WEB_API_KEY != '' }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          AMAP_WEB_API_KEY: ${{ secrets.AMAP_WEB_API_KEY }}
+        run: |
+          printf "%s" "$AMAP_WEB_API_KEY" | wrangler pages secret put AMAP_WEB_API_KEY --project-name=${{ env.CLOUDFLARE_PROJECT_NAME }} --env production
       - name: Deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
