@@ -179,7 +179,7 @@ export const BillingHistory: React.FC<{ language?: AccountLang | string }> = ({ 
 
     try {
       // Record the issued invoice (best-effort; the PDF is generated client-side).
-      void supabase.from("invoices").upsert(
+      await supabase.from("invoices").upsert(
         {
           user_id: user?.id || "",
           order_id: record.id,
