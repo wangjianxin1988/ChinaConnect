@@ -179,18 +179,12 @@ export const BillingHistory: React.FC<{ language?: AccountLang | string }> = ({ 
 
     try {
       // Record the issued invoice (best-effort; the PDF is generated client-side).
-      await supabase.from("invoices").upsert(
-        {
-          user_id: user?.id || "",
-          order_id: record.id,
-          invoice_number: invoiceNumber,
-          amount: record.amount,
-          currency: record.currency,
-          billing_cycle: record.billingCycle || undefined,
-          status: "issued",
-        },
-        { onConflict: "invoice_number" },
-      );
+      // Server-side RPC validates the order belongs to the current user and
+      // derives amount/currency from the order row — clients cannot forge invoices.
+      await supabase.rpc("record_invoice", {
+        p_order_id: record.id,
+        p_invoice_number: invoiceNumber,
+      });
     } catch {
       // ignore DB errors — download still works
     }

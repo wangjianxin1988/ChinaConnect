@@ -1457,3 +1457,29 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **测试账号**: 沿用 #41：A=ai.codextest.1787386274959@example.com（business/无限，user_id ad40046a-7b57-48a5-9840-6a0e908bbe39）；B=ai.isolation.b.1787386@example.com（free，user_id 99a82a6f-777d-4871-93fc-0ae22e3f535f）。
 - **遗留（低风险，未改）**: profiles 公开策略仍允许匿名读 display_name/avatar 等公开字段（设计如此，用于公开展示）；city_rankings 视图为公开参考数据未加 security_invoker（不含用户数据）；AI Edge Function 偶发 Failed to fetch（历史已知）。
 - **注意**: 本会话未跑 pnpm build（prebuild 自动翻译会损坏 cities-i18n JSON）；未改 Edge Function 代码，无需重新 deploy chat。
+
+
+### 2026-08-22 会话 #43（AI 数据隔离深度检查第三轮 — 提权漏洞 6 连修 + 全量攻击矩阵复验）
+
+- **背景**: 用户要求「在深度检查验证一下吧，确保安全可靠」——在 #42 加固视图/触发器/RLS 后，继续深挖账户/会员/钱包/发票等资金与权限面。
+- **新发现并修复（6 类提权漏洞，均为生产实测确认后修复）**:
+  1. **user_memberships 自助升级（高危，已实测）**: INSERT/UPDATE 策略允许任意登录用户创建自己的 Business 会员（免费无限 AI + 全部付费功能）。实测 B 插入 tier_id=business 后 get_user_ai_usage 立即返回 max_requests=-1。修复：删除 INSERT/UPDATE 策略，客户端只读（20260902）。
+  2. **wallets 自改余额（高危，已实测）**: UPDATE 策略让用户改自己钱包余额（实测 B 0→99999）。修复：删除 UPDATE 策略，客户端只读（20260902）。
+  3. **orders 自改状态/金额**: UPDATE 策略存在（客户端本无合法写路径）。修复：删除 UPDATE 策略（20260902）。
+  4. **notifications 跨用户写入**: INSERT 策略 WITH CHECK(true)，跨用户写入此前仅靠 auth.users FK 的 RLS 间接拦截。修复：改为 auth.uid()=user_id（20260902）。
+  5. **profiles 系统列篡改（高危，已实测）**: 用户可改 membership_tier / wallet_balance / points（实测 B 改 points=999999 / membership_tier=business / wallet_balance=88888）。修复：先 REVOKE 列级 UPDATE，因 Supabase 表级 GRANT 使列级 REVOKE 失效，最终用 BEFORE UPDATE 触发器按 auth.role() 拦截（20260903 + 20260904 修正 role 判断：只看 auth.role()，仅 service_role/NULL 放行、authenticated 拦截）；points/badges/travel_level 保持客户端可写（gamification 设计）。
+  6. **invoices 伪造/篡改（已实测）**: INSERT/UPDATE 策略允许用户伪造发票金额。修复：删除策略 + 新增 SECURITY DEFINER RPC record_invoice(p_order_id, p_invoice_number)，校验订单归属并金额取自真实订单 final_amount（20260902）；前端 BillingHistory.tsx 由 invoices upsert 改为调用 RPC。
+- **迁移**: 20260902_close_privilege_escalation.sql / 20260903_profiles_guard_and_wallet_ledger.sql / 20260904_fix_profiles_guard.sql（均已 supabase db push 生产，migration list 无冲突）。
+- **验证（全部 PASS，生产直测）**:
+  - 跨用户 INSERT 矩阵 12 项全 403（含 ai_messages/快照/书签真实列名重测）；匿名 INSERT 401/403。
+  - 跨用户 UPDATE/DELETE 11 项全 0 行受影响，service_role 复核 A 数据完好（会话 14/路线 1/书签 1/消息 38，无 hacked 残留）。
+  - 匿名 SELECT 用户表/user_dashboard 全 0 行。
+  - 5 个用户级 RPC B→A 全 permission denied，B→B / A→A 正常（B free/200 上限；A business/-1）。
+  - wallet_transactions 客户端 INSERT（带/不带 wallet_id）均 403（策略已删）。
+  - record_invoice 正常路径：B 自建订单(201) → RPC(204) → 发票落库金额=8.00=订单 final_amount；B 用他人/随机订单 → 'order not found'；匿名 → 'permission denied'。
+  - profiles 防护：display_name 正常可写；membership_tier/wallet_balance 客户端修改 → 400 'system-controlled profile fields cannot be changed by clients'；service_role 写系统列放行（同步链路正常）。
+  - Edge Function IDOR 复测：B 带 A 会话 ID 调 chat → 返回 B 自己新会话（free/5 上限），A 会话未污染；A 新建会话收回复正常。
+- **清理**: 测试订单/发票/会话/消息全部删除，B 的 ai_usage.tier_slug 由上轮测试残留 business 还原为 free、计数清零；A/B 数据恢复审计前状态（A 会话 14、B 会话 0）。
+- **测试账号**: 沿用 #41/#42：A=ai.codextest.1787386274959@example.com（business/无限）；B=ai.isolation.b.1787386@example.com（free）。
+- **遗留（低风险，未改）**: profiles 公开 SELECT 策略（公开展示设计）；city_rankings 视图无 security_invoker（公开参考数据，不含用户字段）；AI Edge Function 偶发 Failed to fetch（历史已知）。
+- **注意**: 本会话未跑 pnpm build（prebuild 自动翻译会损坏 cities-i18n JSON）；pnpm typecheck 0 错误；未改 Edge Function 代码，无需重新 deploy chat。
