@@ -1428,3 +1428,17 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **部署完成（会话 #40 补充）**: 提交 `c9a5c7f` 已 push master；Edge Function 已 `supabase functions deploy chat` 上线；Cloudflare Pages 已自动部署（Deploy 工作流含 Live probe 全绿，Unit+Integration / E2E 三个 CI 全绿）。
 - **生产验证（PASS）**: 登录测试号直测生产 chat 函数（完整 18 工具 + 系统提示 + MiniMax-Text-01，zh-CN）——回复 3 家北京烤鸭（全聚德/大董/便宜坊）带地址+电话+免费 `uri.amap.com/search` 链接，天安门→故宫免费 `uri.amap.com/route/plan` 导航链接，"📡 基于实时数据"标记正常，全程零错误零 key。`/api/amap` 生产已返回 404（代理已移除）。
 - **注意**: 探针若只传部分工具/不带系统提示/用 abab6.5s-chat，模型可能把工具调用当文本输出（第一次实测就遇到），完整工具列表 + 系统提示 + MiniMax-Text-01 才触发正确工具链路。
+
+
+### 2026-08-22 会话 #41（AI 数据隔离深度审查 + IDOR/RPC 权限修复）
+
+- **背景**: 用户要求确保每个账号的会话、记忆、路线保存完全隔离，互不串数据，各自拥有独立 Agent。
+- **审查结论（实测）**: 常规路径隔离正常——REST 层 RLS 生效（账号 B 查账号 A 的 ai_conversations/ai_messages/ai_routes 均返回空）；记忆（`src/lib/ai/memory.ts` localStorage key 含 userId）按账号隔离；前端路线列表按 `user_id` 过滤。**但发现 2 个真实漏洞**：
+  1. **Edge Function conversationId IDOR（高危，已确认）**: Edge Function 用 service_role key（绕过 RLS），客户端传入任意 `conversationId` 不校验归属 → 账号 B 实测把消息写入账号 A 的会话、覆盖 A 的 summary/message_count/last_message_at。
+  2. **SECURITY DEFINER RPC 无 auth 校验（高危）**: `get_user_ai_usage` / `get_user_ai_usage_daily` / `increment_ai_usage` / `get_user_membership` / `update_ai_usage_tier` 均不校验 `p_user_id = auth.uid()`，任意登录用户可查/消耗他人配额、查看他人会员，甚至改他人套餐。
+- **修复**:
+  1. `supabase/functions/chat/index.ts`：收到客户端 `conversationId` 时先 `.eq("id",id).eq("user_id",userId)` 校验归属，不属当前用户则新建会话（已部署生产，重测通过：B 带 A 的会话 ID 返回 B 的新会话）。
+  2. 新迁移 `supabase/migrations/20260830_ai_rpc_auth_guard.sql`（已 `supabase db push` 生产）：新增 `is_self_or_service(p_user_id)` 守卫，5 个用户级 RPC 均要求 owner 或 service_role；`update_ai_usage_tier` 仅允许 service_role。
+- **验证（全部 PASS）**: B→A 三个 RPC 返回 permission denied；B→B / A→A 正常（A business/-1）；B 读 A 会话/消息/路线 REST 全空；B 带 A conversationId 调 chat 得到新会话；污染数据已清理（A 会话 message_count/summary 已恢复）。typecheck 0 错误、Edge Function 语法 0 错误。
+- **测试账号**: `ai.isolation.b.1787386@example.com` / `CodexTest!2026x`（user_id `99a82a6f-777d-4871-93fc-0ae22e3f535f`，free）——隔离测试专用，可复用。
+- **遗留**: `ai_routes.conversation_id` 未校验归属（低危，路线列表按 user_id 过滤不受影响）；AI Edge Function 偶发 Failed to fetch（前会话已记录）；`get_user_ai_usage` 等 RPC 的 GRANT 默认 public 但已有函数内守卫。

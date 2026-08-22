@@ -608,9 +608,34 @@ Deno.serve(async (req: Request) => {
     );
   }
 
-  // Resolve or create conversation
+  // Resolve or create conversation.
+  // IMPORTANT: a client-supplied conversationId must belong to the current user.
+  // The Edge Function uses the service_role key (RLS is bypassed), so we must
+  // verify ownership here to keep every user's conversations/messages isolated.
   let conversationId = body.conversationId;
-  if (!conversationId) {
+  if (conversationId) {
+    const { data: ownedConv } = await supabase
+      .from("ai_conversations")
+      .select("id")
+      .eq("id", conversationId)
+      .eq("user_id", userId)
+      .maybeSingle();
+    // Not owned or missing -> ignore the provided id and create a fresh conversation.
+    if (!ownedConv) {
+      const { data: conv, error: convErr } = await supabase
+        .from("ai_conversations")
+        .insert({ user_id: userId, message_count: 0, language: body.language ?? null })
+        .select("id")
+        .single();
+      if (convErr || !conv) {
+        return new Response(JSON.stringify({ error: "Failed to create conversation" }), {
+          status: 500,
+          headers: { ...corsHeaders, "Content-Type": "application/json" },
+        });
+      }
+      conversationId = conv.id;
+    }
+  } else {
     const { data: conv, error: convErr } = await supabase
       .from("ai_conversations")
       .insert({ user_id: userId, message_count: 0, language: body.language ?? null })
