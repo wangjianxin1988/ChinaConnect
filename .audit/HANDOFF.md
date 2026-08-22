@@ -1380,5 +1380,13 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **Google OAuth profiles**：根因——prod 无 `on_auth_user_created` trigger（9 用户仅 1 有 profile），且旧 `handle_new_user()` 只读 `display_name`（OAuth 用户是 full_name/name）。修复：新增迁移 `supabase/migrations/20260822_fix_profile_autocreate.sql`（增强 handle_new_user 读取 full_name/name/picture + ON CONFLICT 更新 + 回填存量），已通过临时 Edge Function 用 `SUPABASE_DB_URL` 应用到生产（9/9 用户已有 profile，含王子默 Google 头像）；客户端 `src/services/auth.ts` onAuthStateChange 在 profile 缺失时用 OAuth 元数据 upsertProfile 兜底。
 - **待办**：确认 CI Deploy 绿后复测 AI 页各语言；`AMAP_WEB_API_KEY`（高德 Web 服务 key）仍待用户申请并提供。
 
+### 2026-08-22 会话 #38（付费版本显示/权益门控深修 + 套餐 tier 数据源统一）
 
-
+- **用户反馈**：王子默账号已升无限，但 AI 页仍显示免费版/已用完/输入框禁用（上轮 54a1bfd 修复已部署后，反馈仍存在）。
+- **核查结论**：54a1bfd 已部署（Cloudflare Pages deploy 绿），生产探针（Playwright + 注入旧 localStorage free/5/5 登录测试号）确认 AI 页已正确显示「商务版/无限请求」且输入框可用——localStorage 会被服务器权威数据覆盖为 business/-1。用户侧大概率是浏览器缓存旧 bundle 或测试早于部署完成。
+- **本轮深修（提交 4xxxxxx）**：
+  1. src/components/ai/AIChat.tsx：权益门控 tier 由「渲染时同步读 localStorage」改为响应式 state，监听 ai-usage-updated/storage/cc-auth-changed，确保 Business 用户保存行程/导出 PDF/会话历史等权益立即按权威套餐生效（此前会读陈旧 free 而弹升级）。
+  2. 新迁移 supabase/migrations/20260823_fix_usage_tier_authority.sql：get_user_ai_usage 改为以 user_memberships（active）为 tier 权威，回退到 ai_usage 行再到 free，并在每次读取时自愈陈旧 ai_usage.tier_slug。increment_ai_usage（Edge Function 门控）自动继承。修复期间发现 period_yyyymm 与 OUT 参数歧义，已加表别名修复并重新 push。
+  3. 数据一致性：测试号 ai.codextest.1787386274959@example.com 补插 business user_memberships 行；两个被授权账号的 profiles.membership_tier 同步为 business。生产 RPC 验证：两账号 get_user_ai_usage 返回 business/-1、get_user_membership 返回 Business/is_active=true 一致。
+- **验证**：npx tsc --noEmit 0 错误、node scripts/check-i18n.mjs 12/12、npx astro build 26,708 页成功。生产库迁移已 push（supabase db push）。
+- **待办**：确认本轮 CI Deploy 绿后复测生产 AI 页各语言；AMAP_WEB_API_KEY（高德 Web 服务 key）仍待用户申请并提供。

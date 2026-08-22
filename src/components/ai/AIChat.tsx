@@ -647,7 +647,23 @@ export const AIChat: React.FC<AIChatProps> = ({
 
   const LABELS = CHAT_LABELS[language] || CHAT_LABELS.en;
   const isZh = language === "zh-CN" || language === "zh-TW";
-  const currentTier = getCurrentTier();
+  const [currentTier, setCurrentTierState] = useState<SubscriptionTier>(getCurrentTier());
+
+  // Keep the tier used for feature gating in sync with the authoritative
+  // server value. The usage tracker updates localStorage + dispatches
+  // ai-usage-updated after every server fetch, so a Business/Explorer grant
+  // is reflected immediately instead of reading a stale localStorage hint.
+  useEffect(() => {
+    const refreshTier = () => setCurrentTierState(getCurrentTier());
+    window.addEventListener("ai-usage-updated", refreshTier);
+    window.addEventListener("storage", refreshTier);
+    window.addEventListener("cc-auth-changed", refreshTier);
+    return () => {
+      window.removeEventListener("ai-usage-updated", refreshTier);
+      window.removeEventListener("storage", refreshTier);
+      window.removeEventListener("cc-auth-changed", refreshTier);
+    };
+  }, []);
 
   // Conversation ID ref for route saving
   const conversationIdRef = useRef(`conv_${Date.now()}`);
