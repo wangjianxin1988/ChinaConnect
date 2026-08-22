@@ -1331,7 +1331,7 @@ export const LOCAL_TOOL_DEFINITIONS = [
     function: {
       name: "CitySearch",
       description:
-        "Search for a Chinese city and get its overview, top attractions, restaurants, climate, and transport info.",
+        "Search for a Chinese city and get ChinaConnect's curated overview (attractions, climate, transport). Curated data may become outdated — always verify opening hours, ticket prices and other time-sensitive facts with WebSearch before stating them.",
       parameters: {
         type: "object",
         properties: {
@@ -1349,7 +1349,7 @@ export const LOCAL_TOOL_DEFINITIONS = [
     function: {
       name: "HotelSearch",
       description:
-        "Search for hotels in a Chinese city. Returns 3 price tiers (budget/mid/luxury) with real-time Amap data and booking links. Call this tool once — it automatically returns all 3 tiers.",
+        "Search ChinaConnect's curated hotel database for a Chinese city. Returns 3 price tiers (budget/mid/luxury) with phone numbers, addresses and booking links. Curated prices may change — verify availability/price with WebSearch when time-sensitive.",
       parameters: {
         type: "object",
         properties: {
@@ -1368,7 +1368,7 @@ export const LOCAL_TOOL_DEFINITIONS = [
     function: {
       name: "FoodSearch",
       description:
-        "Search for food in a Chinese city. Returns multiple categories: restaurants (3 tiers: budget/mid/luxury), bubble tea shops, street food snacks, fruit shops. Each with real-time Amap data, addresses, and navigation links.",
+        "Search ChinaConnect's curated restaurant database for a Chinese city. Returns multiple categories (fine dining, local favorites, street food, night markets) with addresses, phone numbers and Amap links. Prices/hours may change — verify with WebSearch when time-sensitive.",
       parameters: {
         type: "object",
         properties: {
@@ -1388,7 +1388,7 @@ export const LOCAL_TOOL_DEFINITIONS = [
     function: {
       name: "TransportSearch",
       description:
-        "Search for transport options between two Chinese cities. Returns train, flight, and driving options with specific price ranges (never 'Varies'), real-time WebSearch data, and comprehensive booking links (12306, Trip.com, Qunar, Amap navigation).",
+        "Search real-time transport options between two Chinese cities. Runs live web search for current train/flight schedules and prices, then returns booking links (12306, Trip.com, Qunar, Amap). Always cite the real-time sources in your reply.",
       parameters: {
         type: "object",
         properties: {

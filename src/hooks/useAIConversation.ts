@@ -20,9 +20,9 @@ import {
   CITY_CONTEXT,
   MiniMaxClient,
   type MiniMaxMessage,
-  TRAVEL_PLANNING_SYSTEM,
   cleanModelResponse,
 } from "@/services/minimax";
+import { SYSTEM_PROMPT, buildLanguageHint } from "@/lib/ai/prompts";
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
   bumpLocalCount,
@@ -311,7 +311,10 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
 
         // Build MiniMax messages
         const mmMessages: MiniMaxMessage[] = [
-          { role: "system", content: TRAVEL_PLANNING_SYSTEM + "\n\n" + CITY_CONTEXT },
+          {
+            role: "system",
+            content: SYSTEM_PROMPT + buildLanguageHint(language) + "\n\n" + CITY_CONTEXT,
+          },
           ...messages.map((m) => ({ role: m.role, content: m.content })),
           { role: "user", content: text },
         ];

@@ -382,16 +382,17 @@ export class MiniMaxClient {
 // ---------------------------------------------------------------------------
 // System prompt & context
 // ---------------------------------------------------------------------------
+// The full agent system prompt lives in src/lib/ai/prompts.ts (SYSTEM_PROMPT).
+// TRAVEL_PLANNING_SYSTEM is kept as a backwards-compatible alias.
 
-export const TRAVEL_PLANNING_SYSTEM = `# Role Definition
+import { SYSTEM_PROMPT } from "@/lib/ai/prompts";
 
-You are **ChinaConnect AI** (\u4e2d\u56fd\u65c5\u884c\u4e13\u5bb6), an authoritative and friendly travel expert specializing in China tourism.`;
+export const TRAVEL_PLANNING_SYSTEM = SYSTEM_PROMPT;
 
-// (City context + system prompt body is loaded from src/lib/ai/prompts.ts to keep this file lean.
 export const CITY_CONTEXT = `
-Available cities: Beijing, Shanghai, Guangzhou, Xi'an, Chengdu, Guilin, Hangzhou, Suzhou, Chengdu, Hong Kong, Macau, Lijiang, Xiamen, Qingdao, Wuhan, Changsha, Sanya, Harbin, Kunming, Dalian, Tianjin, Nanjing, Huangshan, Yangshuo, Wuyuan, Pingyao, Datong, Turpan, Kashgar.
+Available cities: Beijing, Shanghai, Guangzhou, Xi'an, Chengdu, Guilin, Hangzhou, Chongqing, Dali, Nanjing, Suzhou, Shenzhen, Xiamen, Qingdao, Kunming, Lijiang, Zhangjiajie, Sanya, Wuhan, Changsha, Tianjin, Harbin, Dalian, Ningbo, Chengde, Luoyang, Jinan, Yantai, Weihai, Fuzhou, Quanzhou, Hulunbuir, Xining, Lanzhou, Dunhuang.
 
-Each city has curated data: top attractions, signature foods, transport options, weather, scams to avoid, and recommended day count.
+Each city has curated data: top attractions, signature foods, transport options, weather, scams to avoid, and recommended day count. Use CitySearch to pull the exact city data.
 `;
 
 export function createMiniMaxClient(): MiniMaxClient {

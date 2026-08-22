@@ -1,14 +1,27 @@
 /**
- * Amap (高德地图) API Proxy
+ * Amap (楂樺痉鍦板浘) API Proxy
  *
  * Proxies requests to Amap Web API to keep the API key server-side.
  *
- * Usage: GET /api/amap?keywords=...&city=...&type=restaurant
+ * Usage:
+ *   POI:     GET /api/amap?keywords=...&city=...&type=restaurant
+ *   Route:   GET /api/amap?endpoint=direction/transit/integrated&origin=...&destination=...&mode=...
  */
 
 interface Env {
   AMAP_WEB_API_KEY: string;
 }
+
+const AMAP_BASES: Record<string, string> = {
+  "place/text": "https://restapi.amap.com/v3/place/text",
+  "direction/driving": "https://restapi.amap.com/v3/direction/driving",
+  "direction/transit/integrated": "https://restapi.amap.com/v3/direction/transit/integrated",
+  "direction/walking": "https://restapi.amap.com/v3/direction/walking",
+  "direction/bicycling": "https://restapi.amap.com/v3/direction/bicycling",
+};
+
+const DEFAULT_ALLOWED = ["keywords", "city", "citylimit", "type", "offset", "page", "extensions"];
+const DIRECTION_ALLOWED = ["origin", "destination", "strategy", "city", "cityd", "output", "extensions", "size", "time"];
 
 export const onRequestGet = async (context) => {
   const { request, env } = context;
@@ -22,11 +35,14 @@ export const onRequestGet = async (context) => {
     });
   }
 
-  // Forward query params to Amap
-  const amapUrl = new URL("https://restapi.amap.com/v3/place/text");
+  // Route to the right Amap endpoint based on the optional `endpoint` param.
+  const endpoint = url.searchParams.get("endpoint") || "place/text";
+  const amapBase = AMAP_BASES[endpoint] || AMAP_BASES["place/text"];
+  const allowedParams = endpoint === "place/text" ? DEFAULT_ALLOWED : DIRECTION_ALLOWED;
+
+  const amapUrl = new URL(amapBase);
 
   // Copy allowed params from client request
-  const allowedParams = ["keywords", "city", "citylimit", "type", "offset", "page", "extensions"];
   for (const param of allowedParams) {
     const value = url.searchParams.get(param);
     if (value) {
@@ -34,12 +50,14 @@ export const onRequestGet = async (context) => {
     }
   }
 
-  // Set defaults
-  if (!amapUrl.searchParams.has("offset")) {
-    amapUrl.searchParams.set("offset", "25");
-  }
-  if (!amapUrl.searchParams.has("extensions")) {
-    amapUrl.searchParams.set("extensions", "all");
+  // Set defaults for POI search
+  if (endpoint === "place/text") {
+    if (!amapUrl.searchParams.has("offset")) {
+      amapUrl.searchParams.set("offset", "25");
+    }
+    if (!amapUrl.searchParams.has("extensions")) {
+      amapUrl.searchParams.set("extensions", "all");
+    }
   }
 
   // Add server-side API key

@@ -3,6 +3,9 @@
 // and tool calling loop. Replaces the missing /api/chat endpoint.
 
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.49.1";
+import { FOOD_DATA } from "./data/food-data.ts";
+import { HOTEL_DATA } from "./data/hotel-data.ts";
+import { EMERGENCY_DATA } from "./data/emergency-data.ts";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -42,7 +45,7 @@ const TIER_LIMITS: Record<string, number> = {
   enterprise: -1,
 };
 
-const MAX_TOOL_ITERATIONS = 5;
+const MAX_TOOL_ITERATIONS = 6;
 
 async function getAccessToken(req: Request): Promise<string> {
   const authHeader = req.headers.get("Authorization");
@@ -73,6 +76,70 @@ async function callMinimax(
 // Mini server-side tool implementations
 // ---------------------------------------------------------------------------
 
+// ---------------------------------------------------------------------------
+// Bundled static dataset helpers
+// ---------------------------------------------------------------------------
+
+interface FoodEntry {
+  id?: string; name?: string; nameEn?: string; type?: string; cuisine?: string;
+  avgPrice?: number; rating?: number; address?: string; district?: string;
+  city?: string; cityZh?: string; phone?: string; hours?: string;
+  tags?: string[]; lat?: number; lng?: number;
+}
+
+interface HotelEntry {
+  id?: string; name?: string; nameEn?: string; category?: string;
+  priceMin?: number; priceMax?: number; city?: string; cityZh?: string;
+  district?: string; address?: string; rating?: number; phone?: string;
+}
+
+interface EmergencyEntry {
+  id?: string; name?: string; nameCn?: string; province?: string;
+  police?: string; ambulance?: string; fire?: string; traffic?: string; info?: string;
+}
+
+function normCity(s: string): string {
+  return (s || "").trim().toLowerCase();
+}
+
+function matchCityFields(
+  entryCity: string | undefined,
+  entryCityZh: string | undefined,
+  entryName: string | undefined,
+  entryNameEn: string | undefined,
+  kw: string | undefined,
+): boolean {
+  const k = normCity(kw || "");
+  if (!k) return true;
+  const raw = kw || "";
+  const city = normCity(entryCity || "");
+  const name = normCity(entryName || "");
+  const nameEn = normCity(entryNameEn || "");
+  const cityZh = entryCityZh || "";
+  return (
+    city.includes(k) ||
+    cityZh.includes(raw) ||
+    cityZh.includes(k) ||
+    name.includes(k) ||
+    nameEn.includes(k)
+  );
+}
+
+function amapSearchLink(name: string): string {
+  return "https://uri.amap.com/search?keyword=" + encodeURIComponent(name || "");
+}
+
+function amapMarkerLink(lat: number | undefined, lng: number | undefined, name: string | undefined): string {
+  if (lat && lng) {
+    return "https://uri.amap.com/marker?position=" + lng + "," + lat + "&name=" + encodeURIComponent(name || "");
+  }
+  return amapSearchLink(name || "");
+}
+
+// ---------------------------------------------------------------------------
+// Mini server-side tool implementations
+// ---------------------------------------------------------------------------
+
 async function toolWebSearch(args: Record<string, string>): Promise<string> {
   const query = args.query || args.q || "";
   const apiKey = Deno.env.get("VITE_ANYSEARCH_API_KEY");
@@ -81,8 +148,8 @@ async function toolWebSearch(args: Record<string, string>): Promise<string> {
   try {
     const res = await fetch("https://api.anysearch.com/v1/search", {
       method: "POST",
-      headers: { "Content-Type": "application/json", Authorization: `Bearer ${apiKey}` },
-      body: JSON.stringify({ query, max_results: 5 }),
+      headers: { "Content-Type": "application/json", Authorization: "Bearer " + apiKey },
+      body: JSON.stringify({ query, max_results: Number(args.max_results) || 5 }),
       signal: AbortSignal.timeout(5000),
     });
     if (!res.ok) return JSON.stringify({ error: "search_failed", status: res.status, results: [] });
@@ -101,79 +168,257 @@ async function toolCitySearch(
   const { data, error } = await supabase
     .from("cities")
     .select(
-      "id, name, name_zh, name_pinyin, province, tier, summary, climate, best_time, days_recommended",
+      "id, name_en, name_zh, slug, province, country, lat, lng, population, timezone, description, description_zh, climate, best_season, cost_level, airport_code, high_speed_rail_available",
     )
-    .or(`name.ilike.%${city}%,name_zh.ilike.%${city}%,name_pinyin.ilike.%${city}%`)
+    .or(
+      "name_en.ilike.%" + city + "%,name_zh.ilike.%" + city + "%,slug.ilike.%" + city + "%",
+    )
     .limit(5);
   if (error) return JSON.stringify({ error: error.message, cities: [] });
   return JSON.stringify({ cities: data ?? [] });
 }
 
-async function toolHotelSearch(
-  supabase: ReturnType<typeof createClient>,
-  args: Record<string, string>,
-): Promise<string> {
+async function toolFoodSearch(args: Record<string, string>): Promise<string> {
   const city = args.city || "";
-  const budget = args.budget || args.category;
-  const { data, error } = await supabase
-    .from("hotels")
-    .select("id, name, name_zh, city, category, price_per_night, rating, address, amenities")
-    .ilike("city", `%${city}%`)
-    .limit(10);
-  if (error) return JSON.stringify({ error: error.message, hotels: [] });
-  return JSON.stringify({ hotels: data ?? [] });
+  const cuisine = (args.cuisine || "").trim().toLowerCase();
+  const budget = (args.budget || "").trim().toLowerCase();
+
+  let list = (FOOD_DATA as FoodEntry[]).filter((e) =>
+    matchCityFields(e.city, e.cityZh, e.name, e.nameEn, city),
+  );
+  if (cuisine) {
+    list = list.filter((e) => {
+      const hay = ((e.cuisine || "") + " " + (e.type || "") + " " + (e.tags || []).join(" ")).toLowerCase();
+      return hay.includes(cuisine);
+    });
+  }
+  if (budget === "low" || budget === "budget") {
+    list = list.filter((e) => (e.avgPrice ?? 300) < 100);
+  } else if (budget === "medium" || budget === "mid") {
+    list = list.filter((e) => {
+      const p = e.avgPrice ?? 300;
+      return p >= 100 && p <= 300;
+    });
+  } else if (budget === "high" || budget === "luxury") {
+    list = list.filter((e) => (e.avgPrice ?? 0) > 300);
+  }
+
+  const top = [...list]
+    .sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0))
+    .slice(0, 15)
+    .map((e) => ({
+      name: e.name,
+      nameEn: e.nameEn,
+      type: e.type,
+      cuisine: e.cuisine,
+      avgPrice: e.avgPrice,
+      rating: e.rating,
+      address: e.address,
+      district: e.district,
+      city: e.cityZh || e.city,
+      phone: e.phone,
+      hours: e.hours,
+      tags: e.tags,
+      amap: amapMarkerLink(e.lat, e.lng, e.nameEn || e.name),
+      dianping: "https://www.dianping.com/search/keyword/0/0_" + encodeURIComponent(e.nameEn || e.name || ""),
+    }));
+
+  return JSON.stringify({ city, matched: list.length, restaurants: top });
 }
 
-async function toolFoodSearch(
-  supabase: ReturnType<typeof createClient>,
-  args: Record<string, string>,
-): Promise<string> {
+async function toolHotelSearch(args: Record<string, string>): Promise<string> {
   const city = args.city || "";
-  const { data, error } = await supabase
-    .from("restaurants")
-    .select("id, name, name_zh, city, cuisine, price_range, rating, address, specialties")
-    .ilike("city", `%${city}%`)
-    .limit(10);
-  if (error) return JSON.stringify({ error: error.message, restaurants: [] });
-  return JSON.stringify({ restaurants: data ?? [] });
+  const budget = (args.budget || args.category || "").trim().toLowerCase();
+
+  const list = (HOTEL_DATA as HotelEntry[]).filter((e) =>
+    matchCityFields(e.city, e.cityZh, e.name, e.nameEn, city),
+  );
+
+  const tierMap: Record<string, string[]> = {
+    budget: ["budget", "hostel"],
+    mid: ["mid_range", "mid"],
+    luxury: ["luxury"],
+  };
+
+  let tiers: string[];
+  if (budget === "budget" || budget === "low") tiers = ["budget"];
+  else if (budget === "mid" || budget === "medium") tiers = ["mid"];
+  else if (budget === "luxury" || budget === "high") tiers = ["luxury"];
+  else tiers = ["budget", "mid", "luxury"];
+
+  const result: { tier: string; hotels: unknown[] }[] = [];
+  for (const tier of tiers) {
+    const cats = tierMap[tier] || [tier];
+    const picks = list
+      .filter((e) => cats.includes((e.category || "").toLowerCase()))
+      .sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0))
+      .slice(0, 5)
+      .map((e) => ({
+        name: e.nameEn || e.name,
+        nameZh: e.name,
+        category: e.category,
+        pricePerNight:
+          e.priceMin && e.priceMax ? "¥" + e.priceMin + "-" + e.priceMax : undefined,
+        rating: e.rating,
+        district: e.district,
+        address: e.address,
+        phone: e.phone,
+        amap: amapSearchLink(e.nameEn || e.name || ""),
+        bookTrip:
+          "https://hotels.ctrip.com/hotels/list?city=" +
+          encodeURIComponent(e.cityZh || e.city || ""),
+        bookBooking:
+          "https://www.booking.com/searchresults.html?ss=" +
+          encodeURIComponent(e.nameEn || e.name || ""),
+      }));
+    if (picks.length) result.push({ tier, hotels: picks });
+  }
+
+  return JSON.stringify({ city, matched: list.length, tiers: result });
 }
 
-async function toolTransportSearch(
-  supabase: ReturnType<typeof createClient>,
-  args: Record<string, string>,
-): Promise<string> {
+async function toolTransportSearch(args: Record<string, string>): Promise<string> {
   const from = args.from || args.origin || "";
   const to = args.to || args.destination || "";
-  const { data, error } = await supabase
-    .from("transport_routes")
-    .select("id, from_city, to_city, mode, duration_minutes, distance_km, price_range, frequency")
-    .or(`from_city.ilike.%${from}%,to_city.ilike.%${to}%`)
-    .limit(10);
-  if (error) return JSON.stringify({ error: error.message, routes: [] });
-  return JSON.stringify({ routes: data ?? [] });
+  if (!from || !to) {
+    return JSON.stringify({ error: "Both 'from' and 'to' cities are required." });
+  }
+  const [trainRaw, flightRaw] = await Promise.all([
+    toolWebSearch({ query: from + " to " + to + " China high-speed train schedule ticket price", max_results: "6" }),
+    toolWebSearch({ query: from + " to " + to + " flight ticket price schedule today", max_results: "6" }),
+  ]);
+  let trains: unknown = { error: "empty" };
+  let flights: unknown = { error: "empty" };
+  try { trains = JSON.parse(trainRaw); } catch { trains = { error: "parse_error" }; }
+  try { flights = JSON.parse(flightRaw); } catch { flights = { error: "parse_error" }; }
+  return JSON.stringify({
+    from,
+    to,
+    trains,
+    flights,
+    bookingLinks: {
+      train12306: "https://www.12306.cn/index/",
+      trainTrip: "https://trains.ctrip.com/TrainBooking/index",
+      flightTrip:
+        "https://flights.ctrip.com/online/list/oneway-" +
+        encodeURIComponent(from) +
+        "-" +
+        encodeURIComponent(to),
+      qunarFlight: "https://flight.qunar.com/",
+      amap: "https://uri.amap.com/",
+    },
+    note: "Schedules and prices change daily. Use the booking links to verify and book.",
+  });
 }
 
 async function toolWeatherInfo(args: Record<string, string>): Promise<string> {
   const city = args.city || "Beijing";
   try {
     const geoRes = await fetch(
-      `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(city)}&count=1&language=en`,
+      "https://geocoding-api.open-meteo.com/v1/search?name=" +
+        encodeURIComponent(city) +
+        "&count=1&language=en",
       { signal: AbortSignal.timeout(5000) },
     );
     const geo = await geoRes.json();
     if (!geo.results?.[0]) return JSON.stringify({ error: "city_not_found", city });
     const { latitude, longitude, name } = geo.results[0];
     const wxRes = await fetch(
-      `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,weather_code,wind_speed_10m&timezone=auto`,
+      "https://api.open-meteo.com/v1/forecast?latitude=" +
+        latitude +
+        "&longitude=" +
+        longitude +
+        "&current=temperature_2m,weather_code,wind_speed_10m&timezone=auto",
       { signal: AbortSignal.timeout(5000) },
     );
     const wx = await wxRes.json();
-    return JSON.stringify({ city: name, current: wx.current });
+    return JSON.stringify({ city: name, current: wx.current, forecastLink: "https://open-meteo.com/" });
   } catch (e) {
     return JSON.stringify({ error: String(e) });
   }
 }
 
+async function toolEmergencyInfo(args: Record<string, string>): Promise<string> {
+  const city = (args.city || "").trim();
+  let matches = (EMERGENCY_DATA as EmergencyEntry[]).filter(
+    (e) =>
+      normCity(e.id || "").includes(normCity(city)) ||
+      normCity(e.name || "").includes(normCity(city)) ||
+      (e.nameCn || "").includes(city),
+  );
+  if (matches.length === 0) matches = EMERGENCY_DATA as EmergencyEntry[];
+  return JSON.stringify({
+    city: city || "China (national)",
+    national: { police: "110", ambulance: "120", fire: "119" },
+    cities: matches.slice(0, 3),
+  });
+}
+
+async function toolAmapPOISearch(args: Record<string, string>): Promise<string> {
+  const keywords = args.keywords || "";
+  if (!keywords) return JSON.stringify({ error: "keywords required", pois: [] });
+  const params = new URLSearchParams({
+    keywords,
+    offset: String(Math.min(Number(args.pageSize) || 10, 25)),
+    page: String(args.page || 1),
+  });
+  if (args.city) params.set("city", args.city);
+  if (args.type) params.set("type", args.type);
+  try {
+    const res = await fetch("https://chinaengage.org/api/amap?" + params.toString(), {
+      signal: AbortSignal.timeout(10000),
+    });
+    if (!res.ok) return JSON.stringify({ error: "amap_proxy_error", status: res.status, pois: [] });
+    return (await res.text()).slice(0, 4000);
+  } catch (e) {
+    return JSON.stringify({ error: String(e), pois: [] });
+  }
+}
+
+async function toolAmapRouteSearch(args: Record<string, string>): Promise<string> {
+  const origin = args.origin || "";
+  const destination = args.destination || "";
+  const mode = args.mode || "driving";
+  if (!origin || !destination) {
+    return JSON.stringify({ error: "origin and destination are required" });
+  }
+  const base =
+    mode === "driving"
+      ? "direction/driving"
+      : mode === "transit"
+        ? "direction/transit/integrated"
+        : mode === "walking"
+          ? "direction/walking"
+          : "direction/bicycling";
+  const params = new URLSearchParams({ endpoint: base, origin, destination, output: "json" });
+  if (mode === "transit" && args.city) {
+    params.set("city", args.city);
+    params.set("cityd", args.city);
+  }
+  try {
+    const res = await fetch("https://chinaengage.org/api/amap?" + params.toString(), {
+      signal: AbortSignal.timeout(10000),
+    });
+    if (!res.ok) return JSON.stringify({ error: "amap_proxy_error", status: res.status });
+    return (await res.text()).slice(0, 4000);
+  } catch (e) {
+    return JSON.stringify({ error: String(e) });
+  }
+}
+
+async function toolVisaInfo(args: Record<string, string>): Promise<string> {
+  const nationality = args.nationality || "United States";
+  return toolWebSearch({
+    query: "China visa policy " + nationality + " tourist entry requirements 2026",
+    max_results: "6",
+  });
+}
+
+function toolFallback(name: string): string {
+  return JSON.stringify({
+    error: "Tool '" + name + "' is not available server-side. Use WebSearch instead for real-time information.",
+  });
+}
 async function executeToolCall(
   supabase: ReturnType<typeof createClient>,
   name: string,
@@ -186,21 +431,28 @@ async function executeToolCall(
       case "CitySearch":
         return await toolCitySearch(supabase, args);
       case "HotelSearch":
-        return await toolHotelSearch(supabase, args);
+        return await toolHotelSearch(args);
       case "FoodSearch":
-        return await toolFoodSearch(supabase, args);
+        return await toolFoodSearch(args);
       case "TransportSearch":
-        return await toolTransportSearch(supabase, args);
+        return await toolTransportSearch(args);
       case "WeatherInfo":
         return await toolWeatherInfo(args);
+      case "EmergencyInfo":
+        return await toolEmergencyInfo(args);
+      case "AmapPOISearch":
+        return await toolAmapPOISearch(args);
+      case "AmapRouteSearch":
+        return await toolAmapRouteSearch(args);
+      case "VisaInfo":
+        return await toolVisaInfo(args);
       default:
-        return JSON.stringify({ error: `Unknown tool: ${name}` });
+        return toolFallback(name);
     }
   } catch (e) {
-    return JSON.stringify({ error: `Tool ${name} failed: ${String(e)}` });
+    return JSON.stringify({ error: "Tool " + name + " failed: " + String(e) });
   }
 }
-
 // ---------------------------------------------------------------------------
 // Main handler
 // ---------------------------------------------------------------------------
