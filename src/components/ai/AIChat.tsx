@@ -12,7 +12,6 @@ import type {
   ConversationSummary,
 } from "@/lib/ai/types";
 import { CHAT_LABELS, type AiChatLang } from "./chat-labels";
-import { extractRouteFromConversation, saveRoute } from "@/lib/ai/route-saver";
 import { getCurrentUser } from "@/lib/auth/supabase-auth";
 import { getCurrentTier, TIER_LIMITS, type SubscriptionTier } from "@/lib/subscription";
 import { UpgradePrompt } from "@/components/subscription/UpgradePrompt";
@@ -665,9 +664,6 @@ export const AIChat: React.FC<AIChatProps> = ({
     };
   }, []);
 
-  // Conversation ID ref for route saving
-  const conversationIdRef = useRef(`conv_${Date.now()}`);
-
   // Check tier for feature gating
   const checkTierForFeature = useCallback(
     (feature: string, requiredTier: SubscriptionTier): boolean => {
@@ -759,10 +755,117 @@ export const AIChat: React.FC<AIChatProps> = ({
     navigator.clipboard.writeText(link).catch(console.error);
   }, [shareCode, getShareLink]);
 
-  // Export handler - Task 2: enforce PDF export restriction (Traveler+)
+  // Export handler - enforce PDF export restriction (Traveler+)
   const handleExport = useCallback(
-    (format: "text" | "json") => {
+    async (format: "text" | "json" | "pdf") => {
       if (!checkTierForFeature("exportPDF", "traveler")) return;
+
+      if (format === "pdf") {
+        if (!currentItinerary) {
+          alert(LABELS.noRouteData);
+          return;
+        }
+        try {
+          const { jsPDF } = await import("jspdf");
+          const doc = new jsPDF({ unit: "pt", format: "a4" });
+          const W = doc.internal.pageSize.getWidth();
+          const M = 48;
+          let y = 56;
+
+          doc.setFillColor(37, 99, 235);
+          doc.rect(0, 0, W, 92, "F");
+          doc.setTextColor(255, 255, 255);
+          doc.setFont("helvetica", "bold");
+          doc.setFontSize(22);
+          doc.text("ChinaGuide AI", M, 46);
+          doc.setFont("helvetica", "normal");
+          doc.setFontSize(10);
+          doc.text("Travel Itinerary", W - M, 40, { align: "right" });
+          doc.text(new Date().toLocaleDateString(), W - M, 56, { align: "right" });
+
+          doc.setTextColor(15, 23, 42);
+          doc.setFont("helvetica", "bold");
+          doc.setFontSize(16);
+          doc.text(currentItinerary.name || "Travel Plan", M, 124);
+          doc.setFont("helvetica", "normal");
+          doc.setFontSize(10);
+          doc.setTextColor(100, 116, 139);
+          doc.text(
+            `${currentItinerary.destination || ""}  ·  ${currentItinerary.days} day(s)`,
+            M,
+            140,
+          );
+          y = 168;
+
+          const summary = currentItinerary.data?.summary;
+          const writeLine = (text: string, size = 9, color: [number, number, number] = [71, 85, 105], indent = 0) => {
+            doc.setFontSize(size);
+            doc.setTextColor(color[0], color[1], color[2]);
+            const maxWidth = W - M * 2 - indent;
+            const lines = doc.splitTextToSize(text, maxWidth) as string[];
+            for (const ln of lines) {
+              if (y > 760) {
+                doc.addPage();
+                y = 56;
+              }
+              doc.text(ln, M + indent, y);
+              y += size + 6;
+            }
+          };
+
+          if (summary?.topHighlights && summary.topHighlights.length > 0) {
+            doc.setFont("helvetica", "bold");
+            writeLine("TOP HIGHLIGHTS", 10, [37, 99, 235]);
+            doc.setFont("helvetica", "normal");
+            summary.topHighlights.slice(0, 8).forEach((h) => writeLine(`•  ${h}`, 9.5));
+            y += 10;
+          }
+
+          const daily = currentItinerary.data?.dailyItinerary || [];
+          if (daily.length > 0) {
+            daily.forEach((day) => {
+              doc.setFont("helvetica", "bold");
+              writeLine(`Day ${day.day}${day.theme ? " — " + day.theme : ""}`, 11, [30, 64, 175]);
+              doc.setFont("helvetica", "normal");
+              (day.locations || []).forEach((loc) => {
+                writeLine(`•  ${loc.name}${loc.durationHours ? ` (${loc.durationHours}h)` : ""}`, 9.5);
+                (loc.highlights || []).slice(0, 3).forEach((h) => writeLine(`      ${h}`, 8.5, [148, 163, 184]));
+              });
+              const meals = [day.meals?.breakfast, day.meals?.lunch, day.meals?.dinner].filter(Boolean) as Array<{ name?: string }>;
+              if (meals.length > 0) {
+                writeLine(`Meals: ${meals.map((m) => m.name || "").join("  |  ")}`, 9);
+              }
+              if (day.transportToAttractions?.route) {
+                writeLine(`Transport: ${day.transportToAttractions.route}`, 9);
+              }
+              if (day.notes && day.notes.length > 0) {
+                day.notes.slice(0, 6).forEach((n) => writeLine(n, 8.5, [100, 116, 139]));
+              }
+              y += 6;
+            });
+          } else if (currentItinerary.data?.rawPlan) {
+            doc.setFont("helvetica", "bold");
+            writeLine("PLAN DETAILS", 10, [37, 99, 235]);
+            doc.setFont("helvetica", "normal");
+            currentItinerary.data.rawPlan
+              .split(/\r?\n/)
+              .map((l) => l.trim())
+              .filter(Boolean)
+              .slice(0, 60)
+              .forEach((l) => writeLine(l, 9));
+          }
+
+          doc.setFontSize(9);
+          doc.setTextColor(148, 163, 184);
+          doc.text("Generated by ChinaGuide AI — chinaengage.org", M, 800);
+          doc.save(`chinaconnect-itinerary-${Date.now()}.pdf`);
+          return;
+        } catch (err) {
+          console.error("PDF export failed", err);
+          alert("PDF export failed. Please try again.");
+          return;
+        }
+      }
 
       const content = exportItinerary(format);
       const blob = new Blob([content], {
@@ -775,7 +878,7 @@ export const AIChat: React.FC<AIChatProps> = ({
       a.click();
       URL.revokeObjectURL(url);
     },
-    [exportItinerary, checkTierForFeature],
+    [exportItinerary, checkTierForFeature, currentItinerary],
   );
 
   // Cancel in-flight request
@@ -980,19 +1083,13 @@ export const AIChat: React.FC<AIChatProps> = ({
                       alert(LABELS.signInToSave);
                       return;
                     }
-                    const routeData = extractRouteFromConversation(
-                      messages,
-                      currentItinerary?.data,
+                    const saved = await saveCurrentItinerary(
+                      currentItinerary.name || "Travel Plan",
                     );
-                    if (!routeData) {
-                      alert(LABELS.noRouteData);
-                      return;
-                    }
-                    const result = await saveRoute(user.id, conversationIdRef.current, routeData);
-                    if (result.success) {
-                      alert(result.error || LABELS.routeSaved);
+                    if (saved) {
+                      alert(LABELS.routeSaved);
                     } else {
-                      alert(LABELS.routeSaveFailed + result.error);
+                      alert(LABELS.noRouteData);
                     }
                   }}
                   className="p-2 hover:bg-green-100 rounded-lg transition-colors"

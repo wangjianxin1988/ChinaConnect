@@ -78,6 +78,7 @@ function toDailyPlan(day: {
   meals?: { breakfast?: string; lunch?: string; dinner?: string };
   transport: string;
   accommodation?: string;
+  notes?: string[];
 }): DailyPlan {
   const transportSegment: TransportSegment = {
     type: "walk",
@@ -100,6 +101,7 @@ function toDailyPlan(day: {
     },
     transportToAttractions: transportSegment,
     accommodation,
+    notes: day.notes,
   };
 }
 
@@ -125,7 +127,10 @@ export function extractedRouteToSavedItinerary(route: ExtractedRoute): SavedItin
     days: route.days || 1,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
-    data,
+    data: {
+      ...data,
+      rawPlan: route.rawPlan || undefined,
+    },
   };
 }
 
@@ -137,6 +142,53 @@ export function buildSavedItineraryFromConversation(messages: Message[]): SavedI
   const route = extractRouteFromConversation(messages, null);
   if (!route) return null;
   return extractedRouteToSavedItinerary(route);
+}
+
+/**
+ * Fallback itinerary builder — always produces a SavedItinerary from the last
+ * assistant reply so the "Save itinerary" button is available after every
+ * completed exchange, even when destination parsing is ambiguous.
+ */
+export function buildFallbackItinerary(messages: Message[]): SavedItinerary | null {
+  let content = "";
+  for (let i = messages.length - 1; i >= 0; i--) {
+    if (messages[i].role === "assistant" && messages[i].content.trim()) {
+      content = messages[i].content.trim();
+      break;
+    }
+  }
+  if (!content) return null;
+
+  const route = extractRouteFromConversation(messages, null);
+  const destination = route?.destination || "China Travel";
+  const days = route?.days || 1;
+  const highlights = route?.highlights || [];
+
+  const data: ParsedItinerary = {
+    summary: {
+      destination,
+      totalDays: days,
+      bestSeason: "",
+      estimatedTotalCost: route?.totalEstimatedCost || 0,
+      currency: route?.currency || "CNY",
+      costBreakdown: { accommodation: 0, food: 0, transport: 0, attractions: 0 },
+      topHighlights: highlights,
+      travelTips: route?.tips || [],
+    },
+    dailyItinerary: (route?.dailyPlans || []).map(toDailyPlan),
+    rawPlan: content,
+  };
+
+  const generic = destination === "China Travel";
+  return {
+    id: "local_" + Date.now() + "_" + Math.random().toString(36).slice(2, 8),
+    name: generic ? "Travel Plan" : `${destination} ${days}-Day Trip`,
+    destination,
+    days,
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
+    data,
+  };
 }
 
 // ---------------------------------------------------------------------------
@@ -158,6 +210,7 @@ interface RouteRow {
     transport_summary?: string[];
     highlights?: string[];
     tips?: string[];
+    raw_plan?: string | null;
   } | null;
   created_at?: string | null;
   updated_at?: string | null;
@@ -194,6 +247,7 @@ export function routeRowToSavedItinerary(row: RouteRow): SavedItinerary {
       meals?: { breakfast?: string; lunch?: string; dinner?: string };
       transport?: string;
       accommodation?: string;
+      notes?: string[];
     };
     return toDailyPlan({
       day: day.day ?? 1,
@@ -203,6 +257,7 @@ export function routeRowToSavedItinerary(row: RouteRow): SavedItinerary {
       meals: day.meals,
       transport: day.transport ?? "",
       accommodation: day.accommodation,
+      notes: day.notes,
     });
   });
 
@@ -218,6 +273,7 @@ export function routeRowToSavedItinerary(row: RouteRow): SavedItinerary {
       travelTips: rd.tips ?? [],
     },
     dailyItinerary,
+    rawPlan: rd.raw_plan ?? undefined,
   };
 
   return {
@@ -242,6 +298,7 @@ export function savedItineraryToExtractedRoute(it: SavedItinerary): ExtractedRou
     titleZh: it.name,
     summary: it.data.summary.topHighlights.join(", ") || it.name,
     summaryZh: "",
+    rawPlan: it.data.rawPlan,
     destination: it.destination,
     days: it.days || it.data.summary.totalDays || 1,
     dailyPlans: (it.data.dailyItinerary || []).map((d) => ({

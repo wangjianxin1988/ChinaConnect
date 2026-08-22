@@ -8,10 +8,11 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { supabase } from "@/supabase/config";
+import { getCurrentUser } from "@/lib/auth/supabase-auth";
 import type { Database } from "@/types/database";
 import { useEffect, useState } from "react";
 import { UserProfile } from "./UserProfile";
-import { authT, detectAuthLang } from "./auth-strings";
+import { authT, authLangPrefix, detectAuthLang } from "./auth-strings";
 
 type Profile = Database["public"]["Tables"]["profiles"]["Row"];
 
@@ -19,7 +20,8 @@ type Profile = Database["public"]["Tables"]["profiles"]["Row"];
 const USE_MOCK = !import.meta.env.PUBLIC_SUPABASE_URL;
 
 interface UserProfilePageProps {
-  userId: string;
+  /** Auth user id. Omitted on statically-rendered pages: resolved client-side. */
+  userId?: string;
   isOwnProfile?: boolean;
 }
 
@@ -27,7 +29,9 @@ export function UserProfilePage({ userId, isOwnProfile = false }: UserProfilePag
   const lang = detectAuthLang();
   const [profile, setProfile] = useState<Profile | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [needsAuth, setNeedsAuth] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
+  const [notice, setNotice] = useState<{ type: "success" | "error"; text: string } | null>(null);
   const [editData, setEditData] = useState({
     display_name: "",
     bio: "",
@@ -37,6 +41,17 @@ export function UserProfilePage({ userId, isOwnProfile = false }: UserProfilePag
   useEffect(() => {
     const fetchProfile = async () => {
       try {
+        // Resolve the current user client-side when the page is static.
+        let uid = userId;
+        if (!uid) {
+          const user = await getCurrentUser();
+          if (!user) {
+            setNeedsAuth(true);
+            return;
+          }
+          uid = user.id;
+        }
+
         if (USE_MOCK) {
           // Use mock profile data
           const mockProfile: Profile = {
@@ -61,8 +76,8 @@ export function UserProfilePage({ userId, isOwnProfile = false }: UserProfilePag
           const { data: profileData, error: profileError } = await supabase
             .from("profiles")
             .select("*")
-            .eq("id", userId)
-            .single();
+            .eq("user_id", uid)
+            .maybeSingle();
 
           if (profileError) throw profileError;
           setProfile(profileData as Profile);
@@ -80,7 +95,7 @@ export function UserProfilePage({ userId, isOwnProfile = false }: UserProfilePag
     };
 
     fetchProfile();
-  }, [userId]);
+  }, [userId, lang]);
 
   const handleUpdateProfile = async () => {
     try {
@@ -103,13 +118,14 @@ export function UserProfilePage({ userId, isOwnProfile = false }: UserProfilePag
             bio: editData.bio,
             nationality: editData.nationality,
           })
-          .eq("id", userId)
+          .eq("user_id", profile.user_id || userId)
           .select()
           .single();
 
         if (error) throw error;
         setProfile(data as Profile);
         setIsEditing(false);
+        setNotice({ type: "success", text: authT(lang, "profileUpdateSuccess") });
       }
     } catch (err) {
       console.error("Failed to update profile:", err);
@@ -122,6 +138,22 @@ export function UserProfilePage({ userId, isOwnProfile = false }: UserProfilePag
     likesReceived: 0,
     bestAnswers: 0,
   };
+
+  if (needsAuth) {
+    return (
+      <div className="text-center py-20">
+        <div className="text-6xl mb-4">🔒</div>
+        <h2 className="text-2xl font-bold mb-2">{authT(lang, "profileSignInRequired")}</h2>
+        <p className="text-gray-500 dark:text-gray-400 mb-6">{authT(lang, "profileSignInRequiredDesc")}</p>
+        <a
+          href={authLangPrefix(lang) + "/auth/login"}
+          className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-2.5 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+        >
+          {authT(lang, "signIn")}
+        </a>
+      </div>
+    );
+  }
 
   if (isLoading) {
     return (
@@ -146,6 +178,19 @@ export function UserProfilePage({ userId, isOwnProfile = false }: UserProfilePag
     <div className="space-y-6">
       {/* Profile Card */}
       <UserProfile profile={profile} stats={stats} isOwnProfile={isOwnProfile} />
+
+      {/* Notice banner */}
+      {notice && (
+        <div
+          className={`rounded-lg p-3 text-sm mb-4 ${
+            notice.type === "success"
+              ? "bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300 border border-green-200 dark:border-green-800"
+              : "bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300 border border-red-200 dark:border-red-800"
+          }`}
+        >
+          {notice.text}
+        </div>
+      )}
 
       {/* {authT(lang, "profileEdit")} Button (own profile) */}
       {isOwnProfile && !isEditing && (
@@ -187,8 +232,8 @@ export function UserProfilePage({ userId, isOwnProfile = false }: UserProfilePag
               />
             </div>
             <div className="flex justify-end gap-2">
-              <Button variant="outline" onClick={() => setIsEditing(false)}>
-                Cancel
+              <Button variant="outline" onClick={() => { setIsEditing(false); setNotice(null); }}>
+                {authT(lang, "profileCancel")}
               </Button>
               <Button onClick={handleUpdateProfile}>{authT(lang, "profileSave")}</Button>
             </div>

@@ -305,6 +305,15 @@ const prefix = lang && lang !== "en" ? "/" + lang : "";
     contentEl.classList.toggle('hidden', section !== 'content');
   }
 
+  function escapeHtml(value: string): string {
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
   function formatCurrency(amount: number): string {
     return `$${Number(amount).toFixed(2)}`;
   }
@@ -423,15 +432,33 @@ const prefix = lang && lang !== "en" ? "/" + lang : "";
       container.innerHTML = '<p class="text-sm text-gray-500 dark:text-gray-400">' + t('accountPage.emptyFavoritesHint') + '</p>';
       return;
     }
-    container.innerHTML = favorites.map(f => `
-      <div class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-750 rounded-lg">
-        <span class="text-xl">⭐</span>
-        <div class="flex-1 min-w-0">
-          <div class="text-sm font-medium text-gray-900 dark:text-white truncate">${f.title || f.item_type || 'Saved Item'}</div>
-          <div class="text-xs text-gray-500 dark:text-gray-400">${f.item_type || ''} · ${new Date(f.created_at).toLocaleDateString()}</div>
-        </div>
-      </div>
-    `).join('');
+    const typeLabels: Record<string, string> = {
+      restaurant: t('accountPage.favRestaurant'),
+      attraction: t('accountPage.favAttraction'),
+      city: t('accountPage.favCity'),
+      itinerary: t('accountPage.favItinerary'),
+      route: t('accountPage.favRoute'),
+    };
+    container.innerHTML = favorites.map(f => {
+      const md = (f.metadata && typeof f.metadata === 'object') ? f.metadata : {};
+      const title = md.title || f.reference_id || f.item_type || 'Saved Item';
+      const subtitle = md.cuisine || md.city || typeLabels[f.bookmark_type] || f.bookmark_type || '';
+      const link = f.bookmark_type === 'restaurant' && f.reference_id
+        ? ccLangPrefix + '/food/' + encodeURIComponent(f.reference_id)
+        : '#';
+      const image = md.imageUrl
+        ? '<img src="' + md.imageUrl + '" alt="" class="w-10 h-10 rounded-lg object-cover mr-3" />'
+        : '<span class="text-xl">⭐</span>';
+      return `
+        <a href="${link}" class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-750 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+          ${image}
+          <div class="flex-1 min-w-0">
+            <div class="text-sm font-medium text-gray-900 dark:text-white truncate">${escapeHtml(String(title))}</div>
+            <div class="text-xs text-gray-500 dark:text-gray-400">${escapeHtml(String(subtitle || ''))}${f.created_at ? ' · ' + new Date(f.created_at).toLocaleDateString() : ''}</div>
+          </div>
+        </a>
+      `;
+    }).join('');
   }
 
   function renderOrders(orders: any[]) {
@@ -571,18 +598,28 @@ const prefix = lang && lang !== "en" ? "/" + lang : "";
       }
 
       const savedRoutes = (dashboard as any).saved_routes || 0;
-      const maxRoutes = 5;
+      const maxRoutes = (dashboard as any).max_saved_routes ?? 5;
       const routesBar = document.getElementById('routes-bar')!;
       const routesText = document.getElementById('routes-text')!;
-      routesBar.style.width = `${Math.min(100, (savedRoutes / maxRoutes) * 100)}%`;
-      routesText.textContent = `${savedRoutes}/${maxRoutes}`;
+      if (maxRoutes === -1) {
+        routesBar.style.width = '5%';
+        routesText.textContent = `${savedRoutes} / ∞`;
+      } else {
+        routesBar.style.width = `${Math.min(100, (savedRoutes / maxRoutes) * 100)}%`;
+        routesText.textContent = `${savedRoutes}/${maxRoutes}`;
+      }
 
       const favCount = (dashboard as any).favorites_count || 0;
-      const maxFav = 50;
+      const maxFav = (dashboard as any).max_favorites ?? 50;
       const favBar = document.getElementById('favorites-bar')!;
       const favText = document.getElementById('favorites-text')!;
-      favBar.style.width = `${Math.min(100, (favCount / maxFav) * 100)}%`;
-      favText.textContent = `${favCount}/${maxFav}`;
+      if (maxFav === -1) {
+        favBar.style.width = '5%';
+        favText.textContent = `${favCount} / ∞`;
+      } else {
+        favBar.style.width = `${Math.min(100, (favCount / maxFav) * 100)}%`;
+        favText.textContent = `${favCount}/${maxFav}`;
+      }
 
       // Membership status
       const planNameEl = document.getElementById('membership-plan-name')!;

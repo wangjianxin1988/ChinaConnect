@@ -35,6 +35,7 @@ import { supabase } from "@/supabase/config";
 import type { AiChatLang } from "@/components/ai/chat-labels";
 import { saveRoute } from "@/lib/ai/route-saver";
 import {
+  buildFallbackItinerary,
   buildSavedItineraryFromConversation,
   extractedRouteToSavedItinerary,
   routeRowToSavedItinerary,
@@ -356,7 +357,9 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
               userMsg,
               { id: assistantId, role: "assistant", content: finalText, timestamp: new Date() },
             ];
-            const built = buildSavedItineraryFromConversation(fullConversation);
+            const built =
+              buildSavedItineraryFromConversation(fullConversation) ||
+              buildFallbackItinerary(fullConversation);
             if (built) setCurrentItinerary(built);
           },
           onError: (err) => {

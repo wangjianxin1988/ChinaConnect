@@ -127,6 +127,8 @@ export interface ParsedItinerary {
   summary: ItinerarySummary;
   dailyItinerary: DailyPlan[];
   practicalInfo?: PracticalInfo[];
+  /** Full assistant reply (markdown with booking links) kept for saved routes. */
+  rawPlan?: string;
 }
 
 export interface ItinerarySummary {
@@ -157,6 +159,7 @@ export interface DailyPlan {
   };
   transportToAttractions: TransportSegment;
   accommodation?: AccommodationPlan;
+  notes?: string[];
 }
 
 export interface PlannedLocation {

@@ -8,7 +8,7 @@ export type AuthLang = "en" | "ja" | "ko" | "zh-CN" | "zh-TW" | "th" | "vi" | "r
 
 export const AUTH_LANGS: AuthLang[] = ["en","ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"];
 
-type AuthKey = "profileUserNotFound" | "profileNotFoundDesc" | "profileEdit" | "profileDisplayName" | "profileBio" | "profileNationality" | "profileNationalityPlaceholder" | "profileCancel" | "profileSave" | "profilePosts" | "profileCheckins" | "profileLikesReceived" | "profileBestAnswers" | "profileMemberSince" | "profileAnonymous" | "callbackSigningYouIn" | "callbackErrorTitle" | "callbackErrorDesc" | "callbackUnexpected" | "callbackBackToSignIn" | "tagline" | "tabSignIn" | "tabRegister" | "magicLinkBanner" | "forgotBanner" | "checkEmail" | "magicSentDesc" | "resetSentDesc" | "errorTitle" | "oauthUnavailable" | "displayNameLabel" | "displayNamePlaceholder" | "emailLabel" | "emailPlaceholder" | "passwordLabel" | "confirmEmailLabel" | "passwordPlaceholder" | "confirmEmailPlaceholder" | "processing" | "submitSignIn" | "submitRegister" | "submitMagicLink" | "submitReset" | "orContinueWith" | "demoActive" | "tryDemo" | "noAccount" | "signUp" | "magicLink" | "forgotPassword" | "haveAccount" | "signIn" | "backToSignIn" | "agreeTerms" | "terms" | "privacy" | "redirecting" | "providerSetup" | "oauthFailed" | "resetTitle" | "newPasswordLabel" | "newPasswordPlaceholder" | "confirmPasswordLabel" | "resetSubmit" | "resetDone" | "resetInvalid" | "resetLinkToLogin" | "updateFailed" | "resetPageTitle";
+type AuthKey = "profileUserNotFound" | "profileNotFoundDesc" | "profileEdit" | "profileDisplayName" | "profileBio" | "profileNationality" | "profileNationalityPlaceholder" | "profileCancel" | "profileSave" | "profilePosts" | "profileCheckins" | "profileLikesReceived" | "profileBestAnswers" | "profileMemberSince" | "profileAnonymous" | "profileSignInRequired" | "profileSignInRequiredDesc" | "profileUpdateSuccess" | "profileUpdateError" | "callbackSigningYouIn" | "callbackErrorTitle" | "callbackErrorDesc" | "callbackUnexpected" | "callbackBackToSignIn" | "tagline" | "tabSignIn" | "tabRegister" | "magicLinkBanner" | "forgotBanner" | "checkEmail" | "magicSentDesc" | "resetSentDesc" | "errorTitle" | "oauthUnavailable" | "displayNameLabel" | "displayNamePlaceholder" | "emailLabel" | "emailPlaceholder" | "passwordLabel" | "confirmEmailLabel" | "passwordPlaceholder" | "confirmEmailPlaceholder" | "processing" | "submitSignIn" | "submitRegister" | "submitMagicLink" | "submitReset" | "orContinueWith" | "demoActive" | "tryDemo" | "noAccount" | "signUp" | "magicLink" | "forgotPassword" | "haveAccount" | "signIn" | "backToSignIn" | "agreeTerms" | "terms" | "privacy" | "redirecting" | "providerSetup" | "oauthFailed" | "resetTitle" | "newPasswordLabel" | "newPasswordPlaceholder" | "confirmPasswordLabel" | "resetSubmit" | "resetDone" | "resetInvalid" | "resetLinkToLogin" | "updateFailed" | "resetPageTitle";
 
 const AUTH_STRINGS: Record<AuthKey, Record<AuthLang, string>> = {
   "tagline": {
@@ -908,6 +908,62 @@ const AUTH_STRINGS: Record<AuthKey, Record<AuthLang, string>> = {
     "de": "Anonym",
     "ar": "مجهول",
     "fa": "ناشناس"
+  },
+  "profileSignInRequired": {
+    "en": "Sign in required",
+    "ja": "ログインが必要です",
+    "ko": "로그인이 필요합니다",
+    "zh-CN": "需要登录",
+    "zh-TW": "需要登入",
+    "th": "ต้องเข้าสู่ระบบ",
+    "vi": "Yêu cầu đăng nhập",
+    "ru": "Требуется вход",
+    "fr": "Connexion requise",
+    "de": "Anmeldung erforderlich",
+    "ar": "تسجيل الدخول مطلوب",
+    "fa": "ورود الزامی است"
+  },
+  "profileSignInRequiredDesc": {
+    "en": "Please sign in to view and edit your profile.",
+    "ja": "プロフィールの表示・編集にはログインしてください。",
+    "ko": "프로필을 보고 편집하려면 로그인하세요.",
+    "zh-CN": "请登录后查看和编辑您的个人资料。",
+    "zh-TW": "請登入後查看和編輯您的個人資料。",
+    "th": "กรุณาเข้าสู่ระบบเพื่อดูและแก้ไขโปรไฟล์ของคุณ",
+    "vi": "Vui lòng đăng nhập để xem và chỉnh sửa hồ sơ của bạn.",
+    "ru": "Пожалуйста, войдите, чтобы просмотреть и редактировать профиль.",
+    "fr": "Veuillez vous connecter pour voir et modifier votre profil.",
+    "de": "Bitte melden Sie sich an, um Ihr Profil anzusehen und zu bearbeiten.",
+    "ar": "يرجى تسجيل الدخول لعرض وتعديل ملفك الشخصي.",
+    "fa": "لطفاً برای مشاهده و ویرایش پروفایل خود وارد شوید."
+  },
+  "profileUpdateSuccess": {
+    "en": "Profile updated successfully.",
+    "ja": "プロフィールを更新しました。",
+    "ko": "프로필이 업데이트되었습니다.",
+    "zh-CN": "个人资料更新成功。",
+    "zh-TW": "個人資料更新成功。",
+    "th": "อัปเดตโปรไฟล์สำเร็จ",
+    "vi": "Đã cập nhật hồ sơ thành công.",
+    "ru": "Профиль успешно обновлён.",
+    "fr": "Profil mis à jour avec succès.",
+    "de": "Profil erfolgreich aktualisiert.",
+    "ar": "تم تحديث الملف الشخصي بنجاح.",
+    "fa": "پروفایل با موفقیت به‌روزرسانی شد."
+  },
+  "profileUpdateError": {
+    "en": "Failed to update profile. Please try again.",
+    "ja": "プロフィールの更新に失敗しました。もう一度お試しください。",
+    "ko": "프로필 업데이트에 실패했습니다. 다시 시도해 주세요.",
+    "zh-CN": "个人资料更新失败，请重试。",
+    "zh-TW": "個人資料更新失敗，請重試。",
+    "th": "อัปเดตโปรไฟล์ไม่สำเร็จ โปรดลองอีกครั้ง",
+    "vi": "Không thể cập nhật hồ sơ. Vui lòng thử lại.",
+    "ru": "Не удалось обновить профиль. Попробуйте ещё раз.",
+    "fr": "Échec de la mise à jour du profil. Veuillez réessayer.",
+    "de": "Profil konnte nicht aktualisiert werden. Bitte versuchen Sie es erneut.",
+    "ar": "تعذر تحديث الملف الشخصي. حاول مرة أخرى.",
+    "fa": "به‌روزرسانی پروفایل ناموفق بود. دوباره تلاش کنید."
   },
   "callbackSigningYouIn": {
     "en": "Signing you in...",

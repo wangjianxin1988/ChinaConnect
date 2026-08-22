@@ -114,6 +114,40 @@ Deno.serve(async (req: Request) => {
       const periodMs = billing === "yearly" ? 365 * 24 * 60 * 60 * 1000 : 30 * 24 * 60 * 60 * 1000;
       const expiresAt = new Date(Date.now() + periodMs).toISOString();
 
+      // Create order record (drives billing history + invoices)
+      const { data: priceRow } = await supabase
+        .from("membership_tiers")
+        .select("price_monthly, price_yearly, currency")
+        .eq("slug", tierSlug)
+        .single();
+      const unitPrice =
+        billing === "yearly" ? Number(priceRow?.price_yearly || 0) : Number(priceRow?.price_monthly || 0);
+      const paidAmount = Number(eventData.amount || eventData.total_amount || unitPrice || 0);
+      const orderNumber = `CC${Date.now()}${Math.floor(Math.random() * 900 + 100)}`;
+      const { data: orderRow } = await supabase
+        .from("orders")
+        .insert({
+          user_id: userId,
+          order_type: "membership_new",
+          order_number: orderNumber,
+          amount: paidAmount,
+          currency: String(eventData.currency || priceRow?.currency || "CNY"),
+          discount_amount: 0,
+          final_amount: paidAmount,
+          tier_id: tierRow.id,
+          billing_cycle: billing,
+          status: "paid",
+          payment_method: "creem",
+          payment_provider: "creem",
+          external_order_id: String(eventData.id || eventData.checkout_id || ""),
+          paid_at: new Date().toISOString(),
+          completed_at: new Date().toISOString(),
+          description: `Membership upgrade to ${tierSlug}`,
+          metadata: { ...metadata, raw_event: eventType },
+        })
+        .select("id")
+        .single();
+
       // Insert new membership
       await supabase.from("user_memberships").insert({
         user_id: userId,
@@ -123,6 +157,7 @@ Deno.serve(async (req: Request) => {
         started_at: new Date().toISOString(),
         expires_at: expiresAt,
         auto_renew: true,
+        order_id: orderRow?.id || null,
         payment_channel: "creem",
         payment_provider: "creem",
         metadata: { ...metadata, raw_event: eventType },

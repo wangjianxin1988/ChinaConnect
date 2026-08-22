@@ -155,7 +155,13 @@ export type AccountKey =
   | "offerFirstMonth"
   | "annualPrice"
   | "upgradeToContinue"
-  | "upgradeCta";
+  | "upgradeCta"
+  | "lifetimePlan"
+  | "favRestaurant"
+  | "favAttraction"
+  | "favCity"
+  | "favItinerary"
+  | "favRoute";
 
 const ACCOUNT_STRINGS: Record<AccountKey, Record<AccountLang, string>> = {
   usageTitle: {
@@ -1853,6 +1859,90 @@ const ACCOUNT_STRINGS: Record<AccountKey, Record<AccountLang, string>> = {
     de: "Upgrade auf {tier} — ${price}/Monat",
     ar: "الترقية إلى {tier} — ${price}/شهر",
     fa: "ارتقا به {tier} — ${price}/ماه",
+  },
+  favRestaurant: {
+    en: "Restaurant",
+    ja: "レストラン",
+    ko: "레스토랑",
+    "zh-CN": "餐厅",
+    "zh-TW": "餐廳",
+    th: "ร้านอาหาร",
+    vi: "Nhà hàng",
+    ru: "Ресторан",
+    fr: "Restaurant",
+    de: "Restaurant",
+    ar: "مطعم",
+    fa: "رستوران",
+  },
+  favAttraction: {
+    en: "Attraction",
+    ja: "観光スポット",
+    ko: "명소",
+    "zh-CN": "景点",
+    "zh-TW": "景點",
+    th: "สถานที่ท่องเที่ยว",
+    vi: "Điểm tham quan",
+    ru: "Достопримечательность",
+    fr: "Attraction",
+    de: "Sehenswürdigkeit",
+    ar: "معلم سياحي",
+    fa: "جاذبه گردشگری",
+  },
+  favCity: {
+    en: "City",
+    ja: "都市",
+    ko: "도시",
+    "zh-CN": "城市",
+    "zh-TW": "城市",
+    th: "เมือง",
+    vi: "Thành phố",
+    ru: "Город",
+    fr: "Ville",
+    de: "Stadt",
+    ar: "مدينة",
+    fa: "شهر",
+  },
+  favItinerary: {
+    en: "Itinerary",
+    ja: "旅程",
+    ko: "여정",
+    "zh-CN": "行程",
+    "zh-TW": "行程",
+    th: "กำหนดการเดินทาง",
+    vi: "Hành trình",
+    ru: "Маршрут",
+    fr: "Itinéraire",
+    de: "Reiseplan",
+    ar: "مسار الرحلة",
+    fa: "برنامه سفر",
+  },
+  lifetimePlan: {
+    en: "Lifetime plan",
+    ja: "生涯プラン",
+    ko: "평생 플랜",
+    "zh-CN": "终身套餐",
+    "zh-TW": "終身方案",
+    th: "แผนตลอดชีพ",
+    vi: "Gói trọn đời",
+    ru: "Пожизненный план",
+    fr: "Forfait à vie",
+    de: "Lebenslanger Plan",
+    ar: "خطة مدى الحياة",
+    fa: "پلن مادام‌العمر",
+  },
+  favRoute: {
+    en: "Route",
+    ja: "ルート",
+    ko: "경로",
+    "zh-CN": "路线",
+    "zh-TW": "路線",
+    th: "เส้นทาง",
+    vi: "Tuyến đường",
+    ru: "Маршрут",
+    fr: "Itinéraire",
+    de: "Route",
+    ar: "مسار",
+    fa: "مسیر",
   },
 };
 

@@ -7,6 +7,7 @@ import type { Database } from "@/types/database";
 import { POINTS } from "@/types/database";
 import { LevelBadge } from "./LevelBadge";
 import { PointsDisplay } from "./PointsDisplay";
+import { useState } from "react";
 import { authT, detectAuthLang } from "./auth-strings";
 
 type Profile = Database["public"]["Tables"]["profiles"]["Row"];
@@ -35,6 +36,7 @@ export function UserProfile({
   className = "",
 }: UserProfileProps) {
   const lang = detectAuthLang();
+  const [avatarFailed, setAvatarFailed] = useState(false);
   const displayName = profile.display_name || authT(lang, "profileAnonymous");
   const avatarUrl = profile.avatar_url || null;
   const nationality = profile.nationality || null;
@@ -57,11 +59,12 @@ export function UserProfile({
       <div className="flex items-start gap-4 mb-6">
         {/* Avatar */}
         <div className="relative">
-          {avatarUrl ? (
+          {avatarUrl && !avatarFailed ? (
             <img
               src={avatarUrl}
               alt={displayName || "User avatar"}
               className="w-20 h-20 rounded-full object-cover border-2 border-gray-200"
+              onError={() => setAvatarFailed(true)}
             />
           ) : (
             <div className="w-20 h-20 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-3xl">

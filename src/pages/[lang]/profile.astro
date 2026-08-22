@@ -3,9 +3,6 @@ import { UserProfilePage } from '@/components/user/UserProfilePage';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { translations } from "@/i18n/translations";
 import type { Language } from "@/i18n/translations";
-import { authLangPrefix } from '@/components/user/auth-strings';
-import { supabase } from '@/supabase/config';
-
 export function getStaticPaths() {
   const langs = ["ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"] as const;
   return langs.map((lang) => ({ params: { lang } }));
@@ -13,16 +10,12 @@ export function getStaticPaths() {
 
 const lang = (Astro.params.lang as Language) || "en";
 
-// Redirect to login (in the current language) if not authenticated
-const { data: { session } } = await supabase.auth.getSession();
-
-if (!session) {
-  return Astro.redirect(authLangPrefix(lang) + "/auth/login");
-}
+// Auth is handled client-side (static). The profile page renders a loading
+// state and checks auth via client JS, mirroring the /account page.
 ---
 
 <BaseLayout title={(translations[lang]?.profilePage?.title) || translations.en.profilePage?.title || "My Profile - ChinaConnect"}>
   <main class="container mx-auto px-4 py-8">
-    <UserProfilePage userId={session.user.id} isOwnProfile={true} client:load />
+    <UserProfilePage isOwnProfile={true} client:load />
   </main>
 </BaseLayout>

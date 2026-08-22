@@ -36,46 +36,38 @@ function loadHistory(): DailyUsage[] {
 }
 
 /**
- * Save a usage event to today's entry in history
+ * Load 7-day usage history from the server (authoritative).
+ * Falls back to the local cache when offline / signed out.
  */
-function recordUsageToday(): void {
-  if (typeof window === "undefined") return;
-  const today = new Date().toISOString().slice(0, 10);
-  const history = loadHistory();
-  const lastEntry = history[history.length - 1];
-
-  if (lastEntry && lastEntry.date === today) {
-    lastEntry.count += 1;
-  } else {
-    history.push({ date: today, count: 1 });
-  }
-
-  // Keep only last 30 days
-  while (history.length > 30) history.shift();
-  localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
-}
-
-/**
- * Initialize with mock data for demo if history is empty
- */
-function ensureDemoData(): DailyUsage[] {
-  const history = loadHistory();
-  if (history.length > 0) return history;
-
-  // Generate 7 days of sample data
-  const data: DailyUsage[] = [];
-  const now = new Date();
-  for (let i = 6; i >= 0; i--) {
-    const d = new Date(now);
-    d.setDate(d.getDate() - i);
-    data.push({
-      date: d.toISOString().slice(0, 10),
-      count: Math.floor(Math.random() * 8) + 1,
+async function fetchDailyUsage(days = 7): Promise<DailyUsage[]> {
+  try {
+    const { supabase } = await import("@/supabase/config");
+    const { data: userData } = await supabase.auth.getUser();
+    if (!userData?.user) return loadHistory();
+    const { data, error } = await supabase.rpc("get_user_ai_usage_daily", {
+      p_user_id: userData.user.id,
+      p_days: days,
     });
+    if (error) {
+      console.warn("get_user_ai_usage_daily failed", error);
+      return loadHistory();
+    }
+    const rows = Array.isArray(data) ? data : [];
+    const list: DailyUsage[] = rows.map((r) => ({
+      date: String(r.usage_date).slice(0, 10),
+      count: Number(r.request_count) || 0,
+    }));
+    try {
+      localStorage.setItem(HISTORY_KEY, JSON.stringify(list));
+    } catch {
+      // ignore
+    }
+    return list;
+  } catch {
+    return loadHistory();
   }
-  localStorage.setItem(HISTORY_KEY, JSON.stringify(data));
-  return data;
 }
+
 
 interface UsageStatsProps {
   language?: AccountLang | string;
@@ -106,11 +98,15 @@ export const UsageStats: React.FC<UsageStatsProps> = ({ language = "en" }) => {
     setMax(getMaxRequests());
     setRemaining(getRemainingRequests());
     setPercentage(getUsagePercentage());
-    setHistory(ensureDemoData());
+    setHistory(loadHistory());
 
-    // Pull the authoritative usage + tier from the server once mounted
-    // so upgrades/grants are reflected immediately (no stale localStorage).
+    // Pull the authoritative usage + tier + 7-day history from the server
+    // once mounted so upgrades/grants are reflected immediately.
     let cancelled = false;
+    fetchDailyUsage(7).then((rows) => {
+      if (cancelled || !rows || rows.length === 0) return;
+      setHistory(rows);
+    });
     fetchUsageFromServer().then((usage) => {
       if (cancelled || !usage) return;
       setTier(usage.tier);

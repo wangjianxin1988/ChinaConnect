@@ -189,7 +189,7 @@ export async function getUserWallet(userId: string) {
 export async function getUserOrders(userId: string, limit = 10) {
   const { data, error } = await supabase
     .from("orders")
-    .select("*")
+    .select("*, membership_tiers(slug, name)")
     .eq("user_id", userId)
     .order("created_at", { ascending: false })
     .limit(limit);
@@ -217,7 +217,7 @@ export async function getUserRoutes(userId: string, limit = 20) {
 export async function getUserFavorites(userId: string, limit = 20) {
   const { data, error } = await supabase
     .from("bookmarks")
-    .select("*")
+    .select("id, user_id, bookmark_type, reference_id, metadata, created_at")
     .eq("user_id", userId)
     .order("created_at", { ascending: false })
     .limit(limit);

@@ -1,7 +1,8 @@
 /**
  * BillingHistory Component
- * Displays subscription history, payment records, and invoice download links.
- * Uses localStorage for demo data.
+ * Displays real subscription orders from Supabase, the next charge date
+ * (started_at + 1 month/1 year from the membership record) and generates
+ * real invoice PDFs (order number / amount / user email) via jsPDF.
  */
 
 import React from "react";
@@ -15,64 +16,114 @@ import {
 import {
   getCurrentTier,
   TIER_NAMES,
-  TIER_PRICING,
   type SubscriptionTier,
 } from "@/lib/subscription";
+import { getCurrentUser, getUserOrders } from "@/lib/auth/supabase-auth";
+import { supabase } from "@/supabase/config";
 
 interface BillingRecord {
   id: string;
+  orderNumber: string;
   date: string;
   plan: SubscriptionTier;
+  planName: string;
   amount: number;
+  currency: string;
   status: "paid" | "pending" | "failed" | "refunded";
   invoiceNumber: string;
   billingPeriod: string;
   paymentMethod: string;
+  billingCycle?: string | null;
 }
 
-const BILLING_KEY = "cc_billing_history";
+interface MembershipInfo {
+  tier: SubscriptionTier;
+  tierName: string;
+  nextChargeAt: string | null;
+  billingCycle: string | null;
+}
 
-/**
- * Generate demo billing data for the current tier
- */
-function loadBillingData(): BillingRecord[] {
-  if (typeof window === "undefined") return [];
+function mapDbTierToLocal(dbSlug: string): SubscriptionTier {
+  const mapping: Record<string, SubscriptionTier> = {
+    free: "free",
+    explorer: "explorer",
+    traveler: "traveler",
+    business: "business",
+    pro: "traveler",
+    enterprise: "business",
+  };
+  return mapping[dbSlug] || "free";
+}
+
+function mapOrderStatus(status: string): BillingRecord["status"] {
+  if (status === "paid" || status === "completed") return "paid";
+  if (status === "pending" || status === "processing") return "pending";
+  if (status === "failed" || status === "cancelled") return "failed";
+  if (status === "refunded" || status === "partially_refunded") return "refunded";
+  return "paid";
+}
+
+function formatBillingPeriod(dateStr: string, cycle: string | undefined, lang: string): string {
+  const d = new Date(dateStr);
+  if (!cycle || cycle === "lifetime") {
+    return new Date(d).toLocaleDateString(lang, { year: "numeric", month: "short", day: "numeric" });
+  }
+  const end = new Date(d);
+  if (cycle === "yearly") end.setFullYear(end.getFullYear() + 1);
+  else end.setMonth(end.getMonth() + 1);
+  return `${new Date(d).toLocaleDateString(lang, { month: "short", day: "numeric" })} - ${end.toLocaleDateString(lang, { month: "short", day: "numeric", year: "numeric" })}`;
+}
+
+async function loadRealBilling(): Promise<{ records: BillingRecord[]; membership: MembershipInfo | null }> {
+  const user = await getCurrentUser();
+  if (!user) return { records: [], membership: null };
+
+  let membership: MembershipInfo | null = null;
   try {
-    const stored = localStorage.getItem(BILLING_KEY);
-    if (stored) return JSON.parse(stored);
-  } catch {}
-
-  const tier = getCurrentTier();
-  if (tier === "free") return [];
-
-  const pricing = TIER_PRICING[tier];
-  const now = new Date();
-  const records: BillingRecord[] = [];
-
-  for (let i = 0; i < 3; i++) {
-    const date = new Date(now);
-    date.setMonth(date.getMonth() - i);
-    const periodStart = new Date(date.getFullYear(), date.getMonth(), 1);
-    const periodEnd = new Date(date.getFullYear(), date.getMonth() + 1, 0);
-
-    records.push({
-      id: `INV-${date.getFullYear()}${String(date.getMonth() + 1).padStart(2, "0")}-CC`,
-      date: date.toISOString().slice(0, 10),
-      plan: tier,
-      amount: pricing.monthly,
-      status: i === 0 ? "paid" : "paid",
-      invoiceNumber: `INV-${date.getFullYear()}${String(date.getMonth() + 1).padStart(2, "0")}-CC`,
-      billingPeriod: `${periodStart.toLocaleDateString("en-US", { month: "short", day: "numeric" })} - ${periodEnd.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}`,
-      paymentMethod: "•••• 4242",
-    });
+    const { data, error } = await supabase.rpc("get_user_membership", { p_user_id: user.id });
+    if (!error) {
+      const row = Array.isArray(data) ? data[0] : data;
+      if (row) {
+        const tier = mapDbTierToLocal(row.tier_slug || "free");
+        membership = {
+          tier,
+          tierName: row.tier_name || TIER_NAMES[tier].en,
+          nextChargeAt: row.next_charge_at || null,
+          billingCycle: row.billing_cycle || null,
+        };
+      }
+    }
+  } catch {
+    // fall through — membership UI still works with local tier
   }
 
-  localStorage.setItem(BILLING_KEY, JSON.stringify(records));
-  return records;
-}
+  const { orders } = await getUserOrders(user.id, 20);
+  if (!orders || orders.length === 0) return { records: [], membership };
 
-interface BillingHistoryProps {
-  language?: AccountLang | string;
+  const records: BillingRecord[] = orders
+    .filter((o) => o.status === "paid" || o.status === "completed" || o.status === "pending" || o.status === "failed" || o.status === "refunded")
+    .map((o) => {
+      const tierInfo = (o as unknown as { membership_tiers?: { slug?: string; name?: string } }).membership_tiers;
+      const planSlug = tierInfo?.slug || "business";
+      const plan = mapDbTierToLocal(planSlug);
+      const cycle = o.billing_cycle || undefined;
+      return {
+        id: o.id,
+        orderNumber: o.order_number || o.id.slice(0, 8).toUpperCase(),
+        date: o.paid_at || o.created_at || new Date().toISOString(),
+        plan,
+        planName: tierInfo?.name || TIER_NAMES[plan].en,
+        amount: Number(o.final_amount ?? o.amount ?? 0),
+        currency: o.currency || "CNY",
+        status: mapOrderStatus(o.status || ""),
+        invoiceNumber: "INV-" + (o.order_number || o.id.slice(0, 8)).toUpperCase(),
+        billingPeriod: formatBillingPeriod(o.paid_at || o.created_at, cycle, toAccountLang("en")),
+        paymentMethod: o.payment_method || o.payment_provider || "Online",
+        billingCycle: cycle || null,
+      };
+    });
+
+  return { records, membership };
 }
 
 const STATUS_STYLES: Record<string, string> = {
@@ -93,100 +144,180 @@ function statusLabel(lang: AccountLang, status: BillingRecord["status"]): string
   return accountT(lang, STATUS_KEYS[status]);
 }
 
-export const BillingHistory: React.FC<BillingHistoryProps> = ({ language = "en" }) => {
+export const BillingHistory: React.FC<{ language?: AccountLang | string }> = ({ language = "en" }) => {
   const lang = toAccountLang(language);
   const [records, setRecords] = React.useState<BillingRecord[]>([]);
+  const [membership, setMembership] = React.useState<MembershipInfo | null>(null);
   const [currentTier, setCurrentTierState] = React.useState<SubscriptionTier>("free");
   const [mounted, setMounted] = React.useState(false);
 
   React.useEffect(() => {
     setMounted(true);
     setCurrentTierState(getCurrentTier());
-    setRecords(loadBillingData());
+    let cancelled = false;
+    loadRealBilling().then(({ records: recs, membership: mem }) => {
+      if (cancelled) return;
+      setRecords(recs);
+      if (mem) setMembership(mem);
+    });
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   if (!mounted) return null;
 
-  const isFree = currentTier === "free";
-  const tierName = TIER_NAMES[currentTier][lang];
-  const pricing = TIER_PRICING[currentTier];
+  const effectiveTier = membership?.tier || currentTier;
+  const isFree = effectiveTier === "free";
+  const tierName = membership?.tierName || TIER_NAMES[effectiveTier][lang];
 
-  const handleDownloadInvoice = (invoiceNumber: string) => {
-    // Generate a simple PDF-like text receipt
+  const handleDownloadInvoice = async (invoiceNumber: string) => {
     const record = records.find((r) => r.invoiceNumber === invoiceNumber);
     if (!record) return;
+    const user = await getCurrentUser();
+    const email = user?.email || "";
 
-    const content = [
-      "═══════════════════════════════════════",
-      "         ChinaConnect Invoice",
-      "═══════════════════════════════════════",
-      "",
-      `Invoice Number: ${record.invoiceNumber}`,
-      `Date: ${record.date}`,
-      `Billing Period: ${record.billingPeriod}`,
-      "",
-      `Plan: ${TIER_NAMES[record.plan].en}`,
-      `Amount: $${record.amount.toFixed(2)} USD`,
-      `Status: ${statusLabel("en", record.status)}`,
-      `Payment Method: ${record.paymentMethod}`,
-      "",
-      "───────────────────────────────────────",
-      "Thank you for your subscription!",
-      "support@chinaconnect.app",
-      "═══════════════════════════════════════",
-    ].join("\n");
+    try {
+      // Record the issued invoice (best-effort; the PDF is generated client-side).
+      void supabase.from("invoices").upsert(
+        {
+          user_id: user?.id || "",
+          order_id: record.id,
+          invoice_number: invoiceNumber,
+          amount: record.amount,
+          currency: record.currency,
+          billing_cycle: record.billingCycle || undefined,
+          status: "issued",
+        },
+        { onConflict: "invoice_number" },
+      );
+    } catch {
+      // ignore DB errors — download still works
+    }
 
-    const blob = new Blob([content], { type: "text/plain" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `${invoiceNumber}.txt`;
-    a.click();
-    URL.revokeObjectURL(url);
+    const { jsPDF } = await import("jspdf");
+    const doc = new jsPDF({ unit: "pt", format: "a4" });
+    const W = doc.internal.pageSize.getWidth();
+
+    // Header
+    doc.setFillColor(37, 99, 235);
+    doc.rect(0, 0, W, 90, "F");
+    doc.setTextColor(255, 255, 255);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(22);
+    doc.text("ChinaConnect", 40, 42);
+    doc.setFontSize(11);
+    doc.setFont("helvetica", "normal");
+    doc.text("Invoice", W - 40, 42, { align: "right" });
+    doc.text(invoiceNumber, W - 40, 58, { align: "right" });
+
+    // Billing details
+    doc.setTextColor(30, 41, 59);
+    doc.setFontSize(10);
+    doc.text("Billed To", 40, 130);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(11);
+    doc.text(user?.user_metadata?.display_name || user?.email?.split("@")[0] || "Customer", 40, 146);
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(10);
+    doc.setTextColor(100, 116, 139);
+    doc.text(email, 40, 162);
+    doc.text(new Date(record.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" }), 40, 178);
+
+    // Line items
+    const startY = 220;
+    doc.setFillColor(241, 245, 249);
+    doc.rect(40, startY, W - 80, 26, "F");
+    doc.setTextColor(71, 85, 105);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(9);
+    doc.text("DESCRIPTION", 52, startY + 17);
+    doc.text("PERIOD", 240, startY + 17);
+    doc.text("AMOUNT", W - 52, startY + 17, { align: "right" });
+
+    doc.setTextColor(30, 41, 59);
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(11);
+    doc.text(record.planName + " Membership", 52, startY + 52);
+    doc.setFontSize(9);
+    doc.setTextColor(100, 116, 139);
+    doc.text(record.billingPeriod, 240, startY + 52);
+    doc.text(
+      `${record.currency === "CNY" ? "¥" : "$"}${record.amount.toFixed(2)}`,
+      W - 52,
+      startY + 52,
+      { align: "right" },
+    );
+
+    // Total
+    const totalY = startY + 88;
+    doc.setDrawColor(226, 232, 240);
+    doc.line(40, totalY, W - 40, totalY);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(11);
+    doc.setTextColor(15, 23, 42);
+    doc.text("Total Paid", 40, totalY + 22);
+    doc.text(
+      `${record.currency === "CNY" ? "¥" : "$"}${record.amount.toFixed(2)} ${record.currency}`,
+      W - 40,
+      totalY + 22,
+      { align: "right" },
+    );
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(9);
+    doc.setTextColor(100, 116, 139);
+    doc.text(`Order ${record.orderNumber} · Status: ${statusLabel("en", record.status)}`, 40, totalY + 40);
+
+    // Footer
+    doc.setFontSize(9);
+    doc.setTextColor(148, 163, 184);
+    doc.text("Thank you for choosing ChinaConnect!", 40, 740);
+    doc.text("support@chinaconnect.org", 40, 754);
+
+    doc.save(`${invoiceNumber}.pdf`);
   };
+
+  const nextChargeLabel =
+    membership && membership.nextChargeAt
+      ? new Date(membership.nextChargeAt).toLocaleDateString(lang, {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })
+      : membership && !isFree && membership.billingCycle === "lifetime"
+        ? accountT(lang, "lifetimePlan")
+        : null;
 
   return (
     <div className="space-y-6">
-      {/* Header */}
-      <h2 className="text-xl font-bold text-gray-900 dark:text-white">
-        {accountT(lang, "billingTitle")}
-      </h2>
-
       {/* Current Subscription Card */}
-      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-xl border border-blue-200 dark:border-blue-800 p-6">
-        <div className="flex items-center justify-between mb-4">
+      <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border border-blue-100 dark:border-blue-800 rounded-xl p-6 shadow-sm">
+        <div className="flex items-center justify-between">
           <div>
-            <p className="text-xs font-medium text-blue-600 dark:text-blue-400 uppercase tracking-wide">
+            <p className="text-xs font-medium text-blue-600 dark:text-blue-400 uppercase tracking-wider">
               {accountT(lang, "currentSub")}
             </p>
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-1">{tierName}</h3>
           </div>
           <div className="text-right">
             <p className="text-3xl font-bold text-blue-600 dark:text-blue-400">
-              ${pricing.monthly.toFixed(2)}
+              {isFree ? "—" : records[0] ? `${records[0].currency === "CNY" ? "¥" : "$"}${records[0].amount.toFixed(2)}` : "—"}
             </p>
-            <p className="text-xs text-gray-500 dark:text-gray-400">{accountT(lang, "perMonth")}</p>
+            {!isFree && records[0] && (
+              <p className="text-xs text-gray-500 dark:text-gray-400">
+                {records[0].billingPeriod}
+              </p>
+            )}
           </div>
         </div>
-        {!isFree && (
-          <div className="flex items-center justify-between text-sm pt-4 border-t border-blue-200 dark:border-blue-700">
-            <span className="text-gray-600 dark:text-gray-400">
-              {accountT(lang, "nextBilling")}
-            </span>
-            <span className="font-medium text-gray-900 dark:text-white">
-              {new Date(new Date().setMonth(new Date().getMonth() + 1, 1)).toLocaleDateString(
-                lang,
-                {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                },
-              )}
-            </span>
+        {!isFree && nextChargeLabel && (
+          <div className="flex items-center justify-between text-sm pt-4 border-t border-blue-200 dark:border-blue-700 mt-4">
+            <span className="text-gray-600 dark:text-gray-400">{accountT(lang, "nextBilling")}</span>
+            <span className="font-medium text-gray-900 dark:text-white">{nextChargeLabel}</span>
           </div>
         )}
         {isFree && (
-          <div className="pt-4 border-t border-blue-200 dark:border-blue-700">
+          <div className="pt-4 border-t border-blue-200 dark:border-blue-700 mt-4">
             <a
               href={localizedHref(language, "/pricing")}
               className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
@@ -246,14 +377,14 @@ export const BillingHistory: React.FC<BillingHistoryProps> = ({ language = "en" 
                     </td>
                     <td className="px-6 py-4">
                       <span className="font-medium text-gray-900 dark:text-white">
-                        {TIER_NAMES[record.plan][lang]}
+                        {record.planName}
                       </span>
                     </td>
                     <td className="px-6 py-4 text-gray-500 dark:text-gray-400 text-xs">
                       {record.billingPeriod}
                     </td>
                     <td className="px-6 py-4 font-semibold text-gray-900 dark:text-white">
-                      ${record.amount.toFixed(2)}
+                      {record.currency === "CNY" ? "¥" : "$"}{record.amount.toFixed(2)}
                     </td>
                     <td className="px-6 py-4">
                       <span
@@ -295,7 +426,7 @@ export const BillingHistory: React.FC<BillingHistoryProps> = ({ language = "en" 
               <div key={record.id} className="p-4 space-y-2">
                 <div className="flex items-center justify-between">
                   <span className="text-sm font-medium text-gray-900 dark:text-white">
-                    {TIER_NAMES[record.plan][lang]}
+                    {record.planName}
                   </span>
                   <span
                     className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium ${STATUS_STYLES[record.status]}`}
@@ -312,7 +443,7 @@ export const BillingHistory: React.FC<BillingHistoryProps> = ({ language = "en" 
                     })}
                   </span>
                   <span className="font-semibold text-gray-900 dark:text-white">
-                    ${record.amount.toFixed(2)}
+                    {record.currency === "CNY" ? "¥" : "$"}{record.amount.toFixed(2)}
                   </span>
                 </div>
                 <button

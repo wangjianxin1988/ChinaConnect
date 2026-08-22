@@ -41,6 +41,7 @@ export interface ExtractedRoute {
   tags: string[];
   startDate?: string;
   endDate?: string;
+  rawPlan?: string;
   aiModel: string;
   aiProvider: string;
 }
@@ -57,6 +58,7 @@ export interface ExtractedDayPlan {
   };
   transport: string;
   accommodation?: string;
+  notes?: string[];
 }
 
 export interface ExtractedLocation {
@@ -106,10 +108,17 @@ export function extractRouteFromConversation(
 
   if (!destination) return null;
 
-  // Build daily plans
+  // Keep the full assistant reply (markdown with booking links) so saved
+  // itineraries always contain the detailed confirmed plan.
+  const rawPlan = getLastAssistantContent(messages) || "";
+
+  // Build daily plans: structured itinerary first, else parse day sections
+  // from the assistant reply (multi-language).
   const dailyPlans: ExtractedDayPlan[] = itinerary?.dailyItinerary
     ? itinerary.dailyItinerary.map(extractDayPlan)
-    : [];
+    : rawPlan
+      ? parseDailyPlansFromContent(rawPlan)
+      : [];
 
   // Determine travel style from budget level or itinerary hints
   const travelStyle = determineTravelStyle(userParams?.budgetLevel, messages);
@@ -145,6 +154,7 @@ export function extractRouteFromConversation(
     transportSummary,
     travelStyle,
     tags,
+    rawPlan,
     aiModel: AI_MODEL,
     aiProvider: AI_PROVIDER,
   };
@@ -186,33 +196,182 @@ function extractLocation(loc: PlannedLocation): ExtractedLocation {
   };
 }
 
-function extractDestinationFromMessages(messages: Message[]): string | undefined {
-  // Look in user messages for destination keywords
-  for (const msg of messages) {
-    if (msg.role !== "user") continue;
-    const match = msg.content.match(
-      /(?:visit|go to|travel to|trip to|explore|plan.*?to|want.*?to go)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)/i,
-    );
-    if (match) return match[1];
-  }
-  // Look in assistant messages for destination headers
-  for (const msg of messages) {
-    if (msg.role !== "assistant") continue;
-    const match = msg.content.match(
-      /(?:#|##)\s*(?:Trip to|Itinerary.*?for|Exploring)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)/i,
-    );
-    if (match) return match[1];
+function getLastAssistantContent(messages: Message[]): string | undefined {
+  for (let i = messages.length - 1; i >= 0; i--) {
+    if (messages[i].role === "assistant" && messages[i].content.trim()) {
+      return messages[i].content.trim();
+    }
   }
   return undefined;
 }
 
+const DESTINATION_PATTERNS: RegExp[] = [
+  // English
+  /(?:visit|go to|travel to|trip to|explore|heading to|going to|want to (?:go|travel|visit)|plan (?:a |my )?(?:trip|travel|visit|itinerary) to)\s+([A-Za-z][A-Za-z\u00C0-\u024F\u4e00-\u9fff\s'\-]{1,40}?)(?=\s*(?:,|\n|[。，.。!?；;]|for |in |on |from |$))/i,
+  // Chinese (simplified/traditional)
+  /(?:去|前往|到|想去|打算去|计划去|安排去|游玩|旅游|旅行)\s*(?:一下)?\s*([\u4e00-\u9fffA-Za-z]{2,12})/,
+  // Japanese
+  /(?:へ|に|で)\s*(?:旅行|旅|観光|行く|訪れる)|(?:旅行|観光|旅)\s*(?:先|は)\s*([\u4e00-\u9fffA-Za-z]{2,12})/,
+  // Korean
+  /(?:여행|가고|가고 싶|방문|계획)\s*(?:할까|해|합니다|이에요|이야)?\s*([가-힣A-Za-z]{2,12})/,
+  // Vietnamese
+  /(?:đến|tới|đi|du lịch|tham quan)\s+([A-Za-z\u00C0-\u024F]{2,20})/i,
+  // Russian
+  /(?:поехать|поездка|путешествие|отправиться|посетить)\s+(?:в|во|на)\s+([A-Za-z\u0400-\u04FF]{2,20})/i,
+  // French
+  /(?:visiter|aller|voyager|partir|voyage)\s+(?:à|a|en|au|aux|pour)\s+([A-Za-z\u00C0-\u024F]{2,20})/i,
+  // German
+  /(?:reisen|fahren|fliegen|besuchen|Reise)\s+(?:nach|in|zu)\s+([A-Za-z\u00C0-\u024F]{2,20})/i,
+  // Arabic
+  /(?:سفر|زيارة|الذهاب|السفر)\s+(?:إلى|الي|الى)\s+([\u0600-\u06FF A-Za-z]{2,20})/i,
+  // Persian
+  /(?:سفر|گردش|رفتن|بازدید)\s+(?:به|ب)\s+([\u0600-\u06FF A-Za-z]{2,20})/i,
+  // Thai
+  /(?:เที่ยว|ไป|เดินทาง|ท่องเที่ยว)\s+([\u0E00-\u0E7F A-Za-z]{2,20})/i,
+];
+
+function extractDestinationFromMessages(messages: Message[]): string | undefined {
+  const clean = (raw: string): string =>
+    raw.trim().replace(/^[\s\-—:：|]+|[\s\-—:：|]+$/g, "");
+
+  // Look in user messages first
+  for (const msg of messages) {
+    if (msg.role !== "user") continue;
+    for (const re of DESTINATION_PATTERNS) {
+      const match = msg.content.match(re);
+      if (match?.[1]) {
+        const value = clean(match[1]);
+        if (value && value.length >= 2) return value;
+      }
+    }
+    // Fallback: any CJK city-like token (2-6 chars) after common verbs
+    const cjk = msg.content.match(/[\u4e00-\u9fff]{2,6}(?:市|城)?/);
+    if (cjk && cjk[0] && !/^(你好|请问|帮我|计划|安排|准备|想要|希望|谢谢|再见|好的|中国|旅游|旅行|行程|酒店|美食|交通|景点|几天|预算|大概|多少)$/.test(cjk[0])) {
+      return cjk[0];
+    }
+  }
+  // Then look in assistant messages for destination headers
+  for (const msg of messages) {
+    if (msg.role !== "assistant") continue;
+    const match = msg.content.match(
+      /(?:#{1,3}\s*)?(?:Trip to|Itinerary.*?for|Exploring|行程|旅行|旅程|Plan for|Reise(?:plan)? (?:nach|für)|Путешествие в|Voyage à|Viaggio a)\s+([A-Za-z\u00C0-\u024F\u4e00-\u9fff\s'\-]{2,40})/i,
+    );
+    if (match?.[1]) {
+      const value = clean(match[1]);
+      if (value) return value;
+    }
+  }
+  return undefined;
+}
+
+const DAY_COUNT_PATTERNS: RegExp[] = [
+  /(\d+)\s*(?:day|days|night|nights|天|日|日間|일|วัน|ngày|дней|дня|день|jours|tages|tage|أيام|روز|日目)/i,
+  /(?:第|day|jour|день|ngày|วัน)\s*(\d+)\s*(?:天|日|일|วัน|ngày)?/i,
+];
+
 function extractDaysFromMessages(messages: Message[]): number | undefined {
   for (const msg of messages) {
     if (msg.role !== "user") continue;
-    const match = msg.content.match(/(\d+)\s*(?:day|days|天)/i);
-    if (match) return parseInt(match[1], 10);
+    for (const re of DAY_COUNT_PATTERNS) {
+      const match = msg.content.match(re);
+      if (match?.[1]) {
+        const n = parseInt(match[1], 10);
+        if (n >= 1 && n <= 90) return n;
+      }
+    }
   }
   return undefined;
+}
+
+const DAY_HEADER_PATTERNS: RegExp[] = [
+  /^#{1,3}\s*(?:Day|Día|Jour|Tag|Dag|Ngày|День|วัน)\s*[:：]?\s*(\d+)/i,
+  /^#{1,3}\s*(?:第|第)\s*(\d+)\s*(?:天|日|日目)/i,
+  /^#{1,3}\s*(\d+)\s*(?:日目|일|วัน|ngày|день)/i,
+  /^#{1,3}\s*اليوم\s*(\d+)/i,
+  /^#{1,3}\s*روز\s*(\d+)/i,
+  /^#{1,3}\s*(\d+)\s*[-–—]?\s*(?:Day|Jour|Tag)/i,
+];
+
+function parseDailyPlansFromContent(content: string): ExtractedDayPlan[] {
+  const lines = content.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
+  const days: { day: number; lines: string[] }[] = [];
+  let current: { day: number; lines: string[] } | null = null;
+
+  for (const line of lines) {
+    let dayNum: number | null = null;
+    for (const re of DAY_HEADER_PATTERNS) {
+      const m = line.match(re);
+      if (m?.[1]) {
+        dayNum = parseInt(m[1], 10);
+        break;
+      }
+    }
+    if (dayNum !== null) {
+      current = { day: dayNum, lines: [line] };
+      days.push(current);
+    } else if (current) {
+      current.lines.push(line);
+    }
+  }
+
+  if (days.length === 0) return [];
+
+  const mealKeywords = /早餐|午餐|晚餐|早饭|午饭|晚饭|breakfast|lunch|dinner|朝食|昼食|夕食|아침|점심|저녁|sáng|trưa|tối|завтрак|обе[дл]|ужин|petit[- ]déjeuner|déjeuner|dîner|frühstück|mittagessen|abendessen|الإفطار|الغداء|العشاء|صبحانه|ناهار|ชา|อาหารเช้า|อาหารกลางวัน|อาหารเย็น/i;
+  const transportKeywords = /交通|transport|metro|taxi|train|flight|high.?speed|乗り換え|地下鉄|電車|バス|タクシー|교통|지하철|di chuyển|tàu|máy bay|транспорт|метро|поезд|трансфер|transport|métro|metro|zug|flug|bus|قطار|مترو|รถไฟ|แท็กซี่/i;
+
+  return days.map((d) => {
+    const locations: ExtractedLocation[] = [];
+    const meals: ExtractedDayPlan["meals"] = {};
+    const transport: string[] = [];
+    const notes: string[] = [];
+
+    for (const line of d.lines) {
+      const urlMatch = line.match(/https?:\/\/[^\s)]+/g) || [];
+      const isBullet = /^[-*•·\d\.]+\s+/.test(line) || line.startsWith("- ") || line.startsWith("•");
+      if (mealKeywords.test(line)) {
+        if (/早餐|早饭|breakfast|朝食|아침|завтрак|petit[- ]déjeuner|frühstück|الإفطار|صبحانه|อาหารเช้า/i.test(line)) meals.breakfast = cleanLine(line);
+        else if (/午餐|午饭|lunch|昼食|점심|обед|déjeuner|mittagessen|الغداء|ناهار|อาหารกลางวัน/i.test(line)) meals.lunch = cleanLine(line);
+        else if (/晚餐|晚饭|dinner|夕食|저녁|ужин|dîner|abendessen|العشاء|شام|อาหารเย็น/i.test(line)) meals.dinner = cleanLine(line);
+        notes.push(line);
+        continue;
+      }
+      if (transportKeywords.test(line)) {
+        transport.push(cleanLine(line));
+        notes.push(line);
+        continue;
+      }
+      if (isBullet && line.length > 2) {
+        locations.push({
+          name: cleanLine(line).replace(/^[-*•·\d\.]+\s+/, "").slice(0, 60),
+          nameZh: undefined,
+          lat: 0,
+          lng: 0,
+          durationHours: 1,
+          bestTime: "",
+          ticketPrice: "Free",
+          highlights: [line, ...(urlMatch.length ? urlMatch : [])],
+          insiderTip: undefined,
+        });
+      }
+      notes.push(line);
+    }
+
+    const theme = cleanLine(d.lines[0]).replace(/^#{1,3}\s*/, "").replace(/^[-*•·\d\.]+\s+/, "").slice(0, 80);
+
+    return {
+      day: d.day,
+      theme,
+      dailyCost: 0,
+      locations,
+      meals,
+      transport: transport.join(" | ") || "",
+      ...(notes.length ? { notes } : {}),
+    };
+  });
+}
+
+function cleanLine(line: string): string {
+  return line.replace(/^[-*•·\d\.]+\s+/, "").replace(/^#{1,3}\s*/, "").trim();
 }
 
 function extractHighlightsFromMessages(messages: Message[]): string[] {
@@ -314,6 +473,7 @@ export async function saveRoute(
           transport_summary: routeData.transportSummary,
           highlights: routeData.highlights,
           tips: routeData.tips,
+          raw_plan: routeData.rawPlan || null,
         },
         tags: routeData.tags,
         travel_style: routeData.travelStyle,

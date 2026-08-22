@@ -16,7 +16,7 @@ interface ItineraryDisplayProps {
   // LABEL table is only translated for en/zh; ja/ko falls back to en at runtime.
   language?: "en" | "zh";
   onSave?: (name: string) => void;
-  onExport?: (format: "text" | "json") => void;
+  onExport?: (format: "text" | "json" | "pdf") => void;
   onShare?: () => void;
   onDelete?: () => void;
   compact?: boolean;
@@ -30,6 +30,9 @@ const LABEL = {
   en: {
     save: "Save",
     export: "Export",
+    exportPdf: "PDF",
+    exportText: "Text",
+    exportJson: "JSON",
     share: "Share",
     delete: "Delete",
     saved: "Saved",
@@ -40,6 +43,7 @@ const LABEL = {
     budget: "Budget Breakdown",
     total: "Total",
     day: "Day",
+    details: "Plan Details",
     morning: "Morning",
     afternoon: "Afternoon",
     evening: "Evening",
@@ -83,6 +87,9 @@ const LABEL = {
   zh: {
     save: "保存",
     export: "导出",
+    exportPdf: "PDF",
+    exportText: "文本",
+    exportJson: "JSON",
     share: "分享",
     delete: "删除",
     saved: "已保存",
@@ -93,6 +100,7 @@ const LABEL = {
     budget: "预算明细",
     total: "总计",
     day: "第",
+    details: "行程详情",
     morning: "上午",
     afternoon: "下午",
     evening: "晚上",
@@ -342,6 +350,45 @@ const TimelineActivity: React.FC<{
 );
 
 // ============================================
+// Plan Text Component — renders AI markdown lines with clickable links
+// ============================================
+
+const PlanText: React.FC<{ text: string; className?: string }> = ({ text, className }) => {
+  const lines = text.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
+  if (lines.length === 0) return null;
+  const linkify = (line: string, key: number) => {
+    const parts = line.split(/(https?:\/\/[^\s)]+)/g);
+    return (
+      <span key={key}>
+        {parts.map((part, i) =>
+          /^https?:\/\//.test(part) ? (
+            <a
+              key={i}
+              href={part}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 dark:text-blue-400 hover:underline break-all"
+            >
+              {part}
+            </a>
+          ) : (
+            <span key={i}>{part}</span>
+          ),
+        )}
+      </span>
+    );
+  };
+  return (
+    <div className={`space-y-1.5 text-sm text-gray-700 dark:text-gray-300 ${className || ""}`}>
+      {lines.map((line, i) => (
+        <p key={i} className="leading-relaxed">
+          {linkify(line, i)}
+        </p>
+      ))}
+    </div>
+  );
+};
+
 // Day Card Component
 // ============================================
 
@@ -475,6 +522,16 @@ const DayCard: React.FC<{
                   ))}
                 </div>
               )}
+            </div>
+          )}
+
+          {/* Raw notes with links */}
+          {day.notes && day.notes.length > 0 && (
+            <div className="bg-gray-50 rounded-xl border border-gray-200 p-4">
+              <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
+                {labels.details}
+              </div>
+              <PlanText text={day.notes.join("\n")} />
             </div>
           )}
         </div>
@@ -649,6 +706,7 @@ export const ItineraryDisplay: React.FC<ItineraryDisplayProps> = ({
   const [activeTab, setActiveTab] = useState<"overview" | "daily" | "practical">("daily");
   const [editName, setEditName] = useState("");
   const [showSaveDialog, setShowSaveDialog] = useState(false);
+  const [showExportMenu, setShowExportMenu] = useState(false);
 
   const handleSaveClick = useCallback(() => {
     if (!itinerary) return;
@@ -719,20 +777,47 @@ export const ItineraryDisplay: React.FC<ItineraryDisplayProps> = ({
             </svg>
             {labels.save}
           </button>
-          <button
-            onClick={() => onExport?.("text")}
-            className="flex-1 bg-white/20 hover:bg-white/30 backdrop-blur-sm px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-1.5"
-          >
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-              />
-            </svg>
-            {labels.export}
-          </button>
+          <div className="relative flex-1">
+            <button
+              onClick={() => setShowExportMenu(!showExportMenu)}
+              className="w-full bg-white/20 hover:bg-white/30 backdrop-blur-sm px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-1.5"
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
+              </svg>
+              {labels.export}
+              <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            {showExportMenu && (
+              <div className="absolute right-0 top-full mt-1 w-40 bg-white rounded-lg shadow-xl border border-gray-100 py-1 z-30">
+                {(
+                  [
+                    { key: "pdf", label: labels.exportPdf },
+                    { key: "text", label: labels.exportText },
+                    { key: "json", label: labels.exportJson },
+                  ] as const
+                ).map((opt) => (
+                  <button
+                    key={opt.key}
+                    onClick={() => {
+                      setShowExportMenu(false);
+                      onExport?.(opt.key);
+                    }}
+                    className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
+                  >
+                    {opt.label}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
           {isSaved && (
             <button
               onClick={onShare}
@@ -793,14 +878,24 @@ export const ItineraryDisplay: React.FC<ItineraryDisplayProps> = ({
         {activeTab === "daily" && (
           <div className="space-y-4">
             {daily.length === 0 ? (
-              <div className="text-center py-12">
-                <div className="text-4xl mb-3">📅</div>
-                <p className="text-gray-500 text-sm">
-                  {language === "zh"
-                    ? "每日行程详情将在完整规划后显示"
-                    : "Daily details will appear after full planning"}
-                </p>
-              </div>
+              itinerary.data?.rawPlan ? (
+                <div className="bg-white rounded-xl border border-gray-200 p-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-lg">📋</span>
+                    <h3 className="font-semibold text-gray-800 text-sm">{labels.details}</h3>
+                  </div>
+                  <PlanText text={itinerary.data.rawPlan} />
+                </div>
+              ) : (
+                <div className="text-center py-12">
+                  <div className="text-4xl mb-3">📅</div>
+                  <p className="text-gray-500 text-sm">
+                    {language === "zh"
+                      ? "每日行程详情将在完整规划后显示"
+                      : "Daily details will appear after full planning"}
+                  </p>
+                </div>
+              )
             ) : (
               daily.map((day: DailyPlan) => (
                 <DayCard key={day.day} day={day} labels={labels} language={language} />
