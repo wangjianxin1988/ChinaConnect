@@ -1390,3 +1390,23 @@ ode scripts/check-i18n.mjs && npx astro build。
   3. 数据一致性：测试号 ai.codextest.1787386274959@example.com 补插 business user_memberships 行；两个被授权账号的 profiles.membership_tier 同步为 business。生产 RPC 验证：两账号 get_user_ai_usage 返回 business/-1、get_user_membership 返回 Business/is_active=true 一致。
 - **验证**：npx tsc --noEmit 0 错误、node scripts/check-i18n.mjs 12/12、npx astro build 26,708 页成功。生产库迁移已 push（supabase db push）。
 - **待办**：确认本轮 CI Deploy 绿后复测生产 AI 页各语言；AMAP_WEB_API_KEY（高德 Web 服务 key）仍待用户申请并提供。
+
+
+### 2026-08-22 会话 #39（个人中心真实功能收尾 + 发票落库深修 + 生产全链路实测）
+
+- **起**: 用户 7 项反馈（头像 / profile 直达 / AI 行程保存 / 商务版权益真实落地 / 个人中心各板块 / 用量与账单 / 12 语言同步）。上一会话 314df39 已实现大部分并部署，本会话做生产实测收尾并深修真实 bug。
+- **深修（本次发现并修复的真实 bug）**:
+  1. `BillingHistory.tsx` 发票落库从未生效：supabase-js v2 查询构建器是惰性 thenable，`void supabase.from("invoices").upsert(...)` 不消费返回值 → HTTP 请求从不发出（网络抓包证实点击后无任何 invoices POST）。改为 `await supabase.from("invoices").upsert(...)`（提交 697d48d）。
+  2. 新增迁移 `20260829_invoices_update_policy.sql`：invoices 补 owner UPDATE 策略，防 upsert 走 `ON CONFLICT DO UPDATE` 路径被 RLS 拦截，已 `supabase db push` 生产（提交 2dc0fb6）。
+  3. 付费用户空账单文案：`BillingHistory` 空态按 isFree 区分 `noRecordsDesc` / `noRecordsPaidDesc`，account-strings 新增 12 语言 key（提交 a1d6cef）。
+- **生产实测（Playwright 真机）**:
+  - 账单/发票全链路：插入一条测试订单后，账单 tab 显示订单（INV- 编号 / $29.99 / 已付款 / 下次扣款日），点发票按钮下载真实 PDF（文件头 %PDF-），invoices 表落库 201 且正确关联 order_id（修复前 0 行、修复后成功）。测试订单与发票已清理。
+  - AI 行程保存全链路：登录 → /zh-CN/ai 发「苏州2日游」→ 等约 110s 回复完成 → 点保存按钮（title=保存路线）→ 弹窗「路线保存成功！」→ 已保存的行程列表出现行程（每日行程/概览/实用信息 tab）；ai_routes 落库 route_data.raw_plan = 3411 字完整行程（含链接）。
+  - 编辑资料：/zh-CN/profile 点「编辑资料」→ 显示名称/个人简介/国籍表单 → 修改保存 → 提示「个人资料更新成功。」且新值展示；已还原为原资料。
+  - 头像：王子默 profiles.avatar_url 存在（Google 头像）；header 头像优先取 OAuth user_metadata.avatar_url/picture，再由 /api/auth/state 的 profile.avatar_url 兜底；UserProfile img 带 onError 首字母兜底。
+  - 王子默账号：get_user_membership → Business / -1 无限 / lifetime / is_active；get_user_ai_usage → business / max=-1 / 本月已用 8 次。
+- **验证**: `npx tsc --noEmit` 0 错误；`node scripts/check-i18n.mjs` 12/12 全覆盖；GitHub CI 三个工作流（Unit+Integration / E2E / Deploy to Cloudflare Pages）全绿。
+- **待办**:
+  - AI Edge Function（/functions/v1/chat）偶发「Failed to fetch」（约 3 分钟连接中断，MiniMax 上游耗时波动，10 次实测约 1 次失败）——建议后续改为流式返回或前端更长重试；不影响行程保存功能本身。
+  - AMAP_WEB_API_KEY 仍待用户申请并提供。
+  - 免费套餐不升级但保持 12 语言：当前已用 Cloudflare 免费版 + SSR + 懒加载控体积，无需压缩语言。
