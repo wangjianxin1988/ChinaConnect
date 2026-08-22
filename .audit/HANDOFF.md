@@ -1483,3 +1483,39 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **测试账号**: 沿用 #41/#42：A=ai.codextest.1787386274959@example.com（business/无限）；B=ai.isolation.b.1787386@example.com（free）。
 - **遗留（低风险，未改）**: profiles 公开 SELECT 策略（公开展示设计）；city_rankings 视图无 security_invoker（公开参考数据，不含用户字段）；AI Edge Function 偶发 Failed to fetch（历史已知）。
 - **注意**: 本会话未跑 pnpm build（prebuild 自动翻译会损坏 cities-i18n JSON）；pnpm typecheck 0 错误；未改 Edge Function 代码，无需重新 deploy chat。
+
+### 2026-08-22 会话 #44（深度全面测试 — AI 能力/安全 + 用户系统 + P0 密钥泄露）
+
+- **背景**: 用户要求「再深度全面测试 AI 能力、AI 安全漏洞、用户系统等，确保万无一失」。
+- **🔴 P0 发现 — 公开仓库密钥泄露（需用户立即行动）**:
+  - 仓库 wangjianxin1988/ChinaConnect 为 **PUBLIC**。
+  - scripts/verify-ai-service.mjs（已提交 f4545fa，在 origin/master）硬编码 **Supabase service_role key（完整 JWT，有效期至 2095）** + anon key。
+  - .env.backup（已提交 6d2fc66 起，公开约 4 个月）含 **MiniMax API key（sk-cp-…）、AnySearch key（as_sk_…）、高德 AMAP_WEB_API_KEY / AMAP_SECURITY_KEY、Pexels key** 及 anon key。
+  - wrangler.toml 仅含 anon key（公开无害）。
+  - **已做**：git rm --cached .env.backup、verify-ai-service.mjs 硬编码 key 删除改为 env-only、.gitignore 加固（.env.backup/.env.* + .audit 仅留 HANDOFF.md）、提交 7882db1 已 push。
+  - **用户必须做（本会话无法代做）**：
+    1. Supabase Dashboard → Settings → API → **撤销并重新生成 service_role key**（泄露 key 实测仍有效，可完全控制数据库）。同步更新 Supabase Secrets（SUPABASE_SERVICE_ROLE_KEY）与 GitHub Actions secrets。
+    2. 轮换 MiniMax / AnySearch / 高德 / Pexels keys（泄露者可用你的配额）。
+    3. 历史清理可选：git filter-repo 重写历史 + force push（会改全部提交 hash，需先备份）；GitHub 缓存无法彻底清除，**密钥轮换是唯一彻底方案**。
+- **AI 安全（生产实测）**:
+  - 鉴权边界：无 token/伪造 token/GET → 401；OPTIONS CORS *（标准）；空 messages/非 JSON → 400。全 PASS。
+  - **并发限额绕过：8 并发打 free 5 次/月配额 → 恰好放行 5 次、3 次 429，计数收敛 5/5，无绕过**（increment_ai_usage FOR UPDATE 原子性正确）。
+  - **check_ai_limit(p_user_id) 越权（新发现，已修）**: SECURITY DEFINER 无 owner 校验，任意登录/匿名可探测他人限额并重置他人 user_memberships 计数器。修复：加 is_self_or_service 守卫 + REVOKE anon/authenticated（迁移 20260905 已 push 生产，复测 B→A / anon 均 permission denied，本人正常）。
+  - 提示注入 + 伪造工具名（ReadSystemPrompt/Eval/ReadEnvVar）：工具白名单兜底，无法越权、无 key 泄露（模型只输出了 MiniMax 平台默认 prompt，非项目 secret）。
+  - 工具层：executeToolCall 白名单 switch，无 SSRF/任意 URL（WebSearch/Weather 固定域名）；toolCitySearch 的 PostgREST or() 拼接有低危语义面（仅公开 cities 表）。
+  - 会话/消息/快照/路线隔离：#41-#43 已修，本轮复测无误。
+- **AI 能力（生产实测，A business 无限）**:
+  - 真实路径（SYSTEM_PROMPT+完整工具+历史）：多语言 zh-CN ✓、📡 实时数据标记 ✓、具体班次/票价/订票链接 ✓、同会话上下文记忆 ✓（返程方向正确）、主动补充建议 ✓。
+  - **问题：回复缺 🔗 Sources URL 章节**（模型偷懒，未完全遵守 VERIFY & CITE）。已强化 SYSTEM_PROMPT（Sources 必须为回复最后章节、不得省略、不得编造 URL，提交 508a2a1，待 CI 部署前端后生效）。
+  - 缺少系统提示时模型会跳过搜索直接编造（前端真实路径始终带提示，属测试构造差异）。
+- **用户系统（生产实测）**:
+  - 新用户注册 → handle_new_user 触发器自动创建 profile（display_name/membership_tier=free/wallet_balance=0）✓；登录 ✓；测试用户已清理。
+  - 会员权益：get_user_membership 返回完整（A Business：AI 无限/路线无限/features/终身 cycle）✓。
+  - **membership_tiers features 数据不一致（已修）**: explorer/traveler/business 仅 2 个 feature 键（缺 group_planning/offline_access/advanced_ai_model），business 反而缺 advanced_ai_model。迁移 20260906 补全 6 档套餐 5 字段完整结构（business 全开），已 push 生产并复验。
+  - 12 语言：AI 页 + 登录页 SSR 全部 200、标题本地化正确（en/ja/ko/zh-CN/zh-TW/th/vi/ru/fr/de/ar/fa）。
+  - 发票/钱包/订单：#43 已修并复验；record_invoice 正常路径 ✓。
+- **遗留/记录**:
+  - supabase/functions/flarum-sso/index.ts 从 esm.twilio.com 导入 supabase 客户端（**不可部署**，生产也未部署该函数）——若未来启用论坛 SSO 必须先修复导入。
+  - checkout-webhook HMAC 比较用非 timing-safe 字符串比较（低危，Creem 远程签名）；cookie sb-auth-token 无 Secure 标志（站点为 HTTPS，低危加固项）。
+  - AI 偶发「Failed to fetch」历史已知。
+- **注意**: 本会话未跑 pnpm build（prebuild 翻译会损坏数据）；pnpm typecheck 0 错误；已提交 7882db1（secret 清理+check_ai_limit）与 508a2a1（提示词+features）并 push master。**待 CI 部署前端后，新 SYSTEM_PROMPT 才在生产生效**。
