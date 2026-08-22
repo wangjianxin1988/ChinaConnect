@@ -61,7 +61,7 @@ const TIER_ICONS: Record<SubscriptionTier, string> = {
 };
 
 export const MembershipStatusBar: React.FC<MembershipStatusBarProps> = ({ language = "en" }) => {
-  const tier = getCurrentTier();
+  const [tier, setTier] = React.useState<SubscriptionTier>(getCurrentTier());
   const [remaining, setRemaining] = React.useState(getRemainingRequests());
   const [used, setUsed] = React.useState(getUsageCount());
   const [max, setMax] = React.useState(getMaxRequests());
@@ -74,6 +74,7 @@ export const MembershipStatusBar: React.FC<MembershipStatusBarProps> = ({ langua
 
   React.useEffect(() => {
     const refresh = () => {
+      setTier(getCurrentTier());
       setRemaining(getRemainingRequests());
       setUsed(getUsageCount());
       setMax(getMaxRequests());

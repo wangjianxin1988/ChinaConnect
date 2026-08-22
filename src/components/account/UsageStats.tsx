@@ -12,6 +12,7 @@ import {
   getMaxRequests,
   getRemainingRequests,
   getUsagePercentage,
+  fetchUsageFromServer,
 } from "@/lib/usage-tracker";
 
 interface DailyUsage {
@@ -107,8 +108,21 @@ export const UsageStats: React.FC<UsageStatsProps> = ({ language = "en" }) => {
     setPercentage(getUsagePercentage());
     setHistory(ensureDemoData());
 
+    // Pull the authoritative usage + tier from the server once mounted
+    // so upgrades/grants are reflected immediately (no stale localStorage).
+    let cancelled = false;
+    fetchUsageFromServer().then((usage) => {
+      if (cancelled || !usage) return;
+      setTier(usage.tier);
+      setUsed(usage.count);
+      setMax(usage.max);
+      setRemaining(usage.max === -1 ? -1 : Math.max(0, usage.max - usage.count));
+      setPercentage(usage.max === -1 ? -1 : Math.min(100, Math.round((usage.count / usage.max) * 100)));
+    });
+
     // Listen for usage updates
     const refresh = () => {
+      setTier(getCurrentTier());
       setUsed(getUsageCount());
       setRemaining(getRemainingRequests());
       setPercentage(getUsagePercentage());
@@ -117,6 +131,7 @@ export const UsageStats: React.FC<UsageStatsProps> = ({ language = "en" }) => {
     window.addEventListener("ai-usage-updated", refresh);
     window.addEventListener("storage", refresh);
     return () => {
+      cancelled = true;
       window.removeEventListener("ai-usage-updated", refresh);
       window.removeEventListener("storage", refresh);
     };

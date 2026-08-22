@@ -534,6 +534,23 @@ export function onAuthStateChange(callback: (authState: AuthState) => void) {
     if (user) {
       const { profile: fetchedProfile } = await getProfile(user.id);
       profile = fetchedProfile;
+      if (!profile && session?.user?.user_metadata) {
+        // Auto-create the profile row from OAuth metadata (Google/GitHub)
+        // in case the DB trigger was missing or the provider used different keys.
+        const meta = session.user.user_metadata as Record<string, unknown>;
+        const displayName = String(
+          meta.display_name || meta.full_name || meta.name || meta.preferred_username || "",
+        )
+          .trim();
+        const avatarUrl = String(meta.avatar_url || meta.picture || "").trim();
+        if (displayName || avatarUrl) {
+          const { profile: created } = await upsertProfile(user.id, {
+            display_name: displayName || undefined,
+            avatar_url: avatarUrl || undefined,
+          });
+          if (created) profile = created;
+        }
+      }
     }
 
     callback({

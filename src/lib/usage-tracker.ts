@@ -162,6 +162,15 @@ export async function fetchUsageFromServer(): Promise<UsageCache | null> {
       fetchedAt: Date.now(),
     };
     saveCache(cache);
+    // Keep the tier badge in sync with the server (the server is authoritative).
+    setCurrentTier(cache.tier);
+    if (typeof window !== "undefined") {
+      window.dispatchEvent(
+        new CustomEvent("ai-usage-updated", {
+          detail: { count: cache.count, max: cache.max, tier: cache.tier },
+        }),
+      );
+    }
     return cache;
   } catch (e) {
     console.warn("fetchUsageFromServer failed", e);

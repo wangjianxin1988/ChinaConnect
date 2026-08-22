@@ -58,7 +58,7 @@ export const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
   compact = false,
 }) => {
   const lang = toAccountLang(language);
-  const tier = getCurrentTier();
+  const [tier, setTier] = React.useState<SubscriptionTier>(getCurrentTier());
   const [remaining, setRemaining] = React.useState(getRemainingRequests());
   const [used, setUsed] = React.useState(getUsageCount());
   const [max, setMax] = React.useState(getMaxRequests());
@@ -71,6 +71,7 @@ export const SubscriptionCard: React.FC<SubscriptionCardProps> = ({
   // Re-render when localStorage changes (usage increment)
   React.useEffect(() => {
     const refresh = () => {
+      setTier(getCurrentTier());
       setRemaining(getRemainingRequests());
       setUsed(getUsageCount());
       setMax(getMaxRequests());

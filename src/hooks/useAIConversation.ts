@@ -271,13 +271,9 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
   const refreshUsage = useCallback(async () => {
     const usage = await fetchUsageFromServer();
     if (usage) {
-      const limit = {
-        allowed: usage.count < usage.max,
-        remaining: Math.max(0, usage.max - usage.count),
-        max: usage.max,
-      };
-      setUsageExceeded(!limit.allowed);
-      setRemainingRequests(limit.remaining);
+      const unlimited = usage.max === -1;
+      setUsageExceeded(!unlimited && usage.count >= usage.max);
+      setRemainingRequests(unlimited ? -1 : Math.max(0, usage.max - usage.count));
     } else {
       // Fallback to local cache so the UI is never blank
       const local = checkUsageLimit();
