@@ -689,7 +689,6 @@ for lang in LANGS:
   - 修复 CityTierFilter.tsx i18n 化 Tier 标签
   - 启动数据层翻译（35 城市 x 11 语言 x 多个字段）
 
-
 ### 2026-08-13 会话 #3（续）
 
 - **起**：从 §3 P0-1 转移来读 HANDOFF.md；上一会话（#2）修了一轮页面 i18n，本会话聚焦剩余 11 语言数据层 + 代码小修
@@ -717,7 +716,6 @@ for lang in LANGS:
   - pnpm typecheck / build 验证
   - 把进度更新到 §10
 
-
 ### 2026-08-13 会话 #4（继续运行中）
 
 - **起**：上一会话（#3）启动 10 个翻译进程后等待；本会话继续推进
@@ -738,7 +736,6 @@ for lang in LANGS:
   - 翻译完成后再 verify 一遍
   - 重启 zh-TW 收尾 5 个遗留英文短字段（如需要）
 - **注意**：每个 batch 现在 10-100s（API 限速），预计整体完成还需 1-2 小时
-
 
 ### 2026-08-13 会话 #5（最终）
 
@@ -837,7 +834,6 @@ for lang in LANGS:
   5. 本次新增脚本（.audit/）：`fix-ja-cn.mjs` / `fix-ja-cn2.mjs`（中文残留修复）、`scan-cn-*.mjs` / `scan-func.mjs` / `scan-remain.mjs`（中文残留扫描）、`del-dup-first.mjs`（重复键清理）、`patch-build.mjs` / `patch-paykey.mjs`（构建修复）、`verify-ja-links.mjs` + `ja-all-urls.txt`（全量链接验证）。
 - **本地测试地址**：主站 `http://localhost:4321/`；ja 版 `http://localhost:4321/ja/`；全量 432 页清单 `.audit/ja-all-urls.txt`。
 
-
 ### 2026-08-16 会话 #9（规划 + 基线提交）
 
 - **起**：用户审读交接文档后拍板三项决定：1) guide/apps/紧急联系人等 ja 已覆盖的层，10 语言全做，且要检查遗漏页面，严格全量；2) 先 git 提交当前状态做基线；3) EN 源中文散文必须清理——英文版不能出现中文（推翻「不改 EN 源」旧约定，硬性标准）。
@@ -854,7 +850,6 @@ for lang in LANGS:
   - 非前缀遗留路由多为重定向（auth/index→login），auth/account/pricing 等已用 i18n
 - **遗留**：按 PLAN-2026-08-16.md Phase 1 开始（EN 源清理）→ Phase 2 起 10 语言数据层。注意 verify_data_i18n.mjs 的 fr/de/vi isTranslated 逻辑有 bug 需先修。
 - **下个会话**：Phase 1a 写 EN 源中文清理脚本（MiniMax/DeepSeek，35 城分批），小批量试跑 1-2 城验证质量后全量；同步修组件 name 渲染逻辑（非 CJK 用 nameEn）。
-
 
 ### 2026-08-16 会话 #10（Phase 1 EN 清理完成 + 提交基线）
 
@@ -1072,7 +1067,6 @@ for lang in LANGS:
 - **遗留**：无已知未完成项。scenic-spots 页 SSR ~3MB（1770 卡）偏重，若后续 Lighthouse 性能告警可考虑懒加载/分页（本次未动）。
 - **下个会话**：git 提交本轮改动（src/data/food/resolve.ts、两个 food/[id].astro、attractions ×2、scenic-spots ×2、components-strings.ts、AIChatPage.tsx、translations.ts 等），推送后 gh run watch 部署，线上 curl + Playwright 抽验（/zh-CN/food/beijing-1 200、/zh-CN/scenic-spots 筛选、/zh-CN/ai 日文/中文、contact/terms/privacy 邮箱）。部署前需用户确认。
 
-
 ### 2026-08-17 会话 #21（部署受阻 → 设计免费套餐方案 → 用户暂停，6 点后续做）
 
 - **部署受阻**：push adc098b 后 Deploy workflow 失败 —— Cloudflare Pages 免费套餐单次部署上限 20,000 文件，本次新增 ~21,636 个餐厅详情静态页后 dist 共 28,991 文件超限。构建/check:i18n 均通过，仅 wrangler pages deploy 被拒。**线上仍是 234ab40（第 2 轮 5 项修复尚未上线）**。
@@ -1182,11 +1176,6 @@ for lang in LANGS:
   - dev server + wrangler pages dev（dist+functions）抽验：/de|ru|th|ko|ar/food/beijing-4 标题与 h1 均本地化（Kaiserlicher Schatz / Императорское сокровище / อิมพีเรียลทรเจอร์…），副标题保留英文原名；筛选芯片 ja/ko/th/vi/de/zh-TW/ar 全部为修正后文案。
 - **提交**：已提交（含会话 #24 未提交的全部改动：语言重定向、美食板块、AI 推荐卡、认证本地化、type 枚举规范化），push master 触发 CI 自动部署。
 - **下个会话**：无强制待办。可留意 CI deploy 运行与线上抽验（/de/food/beijing-4 标题、筛选芯片、street_food 筛选 58 家全语言一致）。
-
-
-
-
-
 
 ### 2026-08-18 会话 #27（实现第三方登录 — 基础设施配置 + provider 实时探测）
 
@@ -1331,7 +1320,6 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **遗留**：首页等 `Astro.request.headers` prerender warning（既有）；`.audit/` 临时探测脚本不提交。
 - **下个会话**：提交 push 后验证生产同页面无英文回退、个人中心无未登录闪现；如仍有问题可复查 `LOCALIZED_PATHS` 覆盖与 SPA 内动态路由。
 
-
 ### 2026-08-22 会话 #35（AI Agent 实时联网能力恢复 + 查证/出处强化）
 
 - **起**：用户反馈 AI 回复不再大量使用联网搜索、不再给详细链接/航班/电话等实时信息，要求回顾整套 Agent 设计目标并修复；随后追加要求：站内数据只作数据源之一（后续会持续增长），AI 使用站内数据时必须强制联网查证真实性与时效性（航班/交通/美食/住宿/签证等），所有实时数据回复必须注明出处且可点击跳转到实时引用页面。
@@ -1391,7 +1379,6 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **验证**：npx tsc --noEmit 0 错误、node scripts/check-i18n.mjs 12/12、npx astro build 26,708 页成功。生产库迁移已 push（supabase db push）。
 - **待办**：确认本轮 CI Deploy 绿后复测生产 AI 页各语言；AMAP_WEB_API_KEY（高德 Web 服务 key）仍待用户申请并提供。
 
-
 ### 2026-08-22 会话 #39（个人中心真实功能收尾 + 发票落库深修 + 生产全链路实测）
 
 - **起**: 用户 7 项反馈（头像 / profile 直达 / AI 行程保存 / 商务版权益真实落地 / 个人中心各板块 / 用量与账单 / 12 语言同步）。上一会话 314df39 已实现大部分并部署，本会话做生产实测收尾并深修真实 bug。
@@ -1411,7 +1398,6 @@ ode scripts/check-i18n.mjs && npx astro build。
   - AMAP_WEB_API_KEY 仍待用户申请并提供。
   - 免费套餐不升级但保持 12 语言：当前已用 Cloudflare 免费版 + SSR + 懒加载控体积，无需压缩语言。
 
-
 ### 2026-08-22 会话 #40（高德完全免费改造：移除 Web 服务 key 依赖）
 
 - **背景**: 用户要求 AI 的 POI/路径规划「用完全免费的方法实现」，不申请高德 Web 服务 key。实测项目里已有的 key（ItineraryMap.tsx 硬编码 `REDACTED_AMAP_WEB_KEY`）是「Web端(JS API)」类型，调 restapi.amap.com 返回 `USERKEY_PLAT_NOMATCH`（10009）——只能前端加载地图 SDK，不能用于 Web 服务接口。
@@ -1428,7 +1414,6 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **部署完成（会话 #40 补充）**: 提交 `c9a5c7f` 已 push master；Edge Function 已 `supabase functions deploy chat` 上线；Cloudflare Pages 已自动部署（Deploy 工作流含 Live probe 全绿，Unit+Integration / E2E 三个 CI 全绿）。
 - **生产验证（PASS）**: 登录测试号直测生产 chat 函数（完整 18 工具 + 系统提示 + MiniMax-Text-01，zh-CN）——回复 3 家北京烤鸭（全聚德/大董/便宜坊）带地址+电话+免费 `uri.amap.com/search` 链接，天安门→故宫免费 `uri.amap.com/route/plan` 导航链接，"📡 基于实时数据"标记正常，全程零错误零 key。`/api/amap` 生产已返回 404（代理已移除）。
 - **注意**: 探针若只传部分工具/不带系统提示/用 abab6.5s-chat，模型可能把工具调用当文本输出（第一次实测就遇到），完整工具列表 + 系统提示 + MiniMax-Text-01 才触发正确工具链路。
-
 
 ### 2026-08-22 会话 #41（AI 数据隔离深度审查 + IDOR/RPC 权限修复）
 
@@ -1457,7 +1442,6 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **测试账号**: 沿用 #41：A=ai.codextest.1787386274959@example.com（business/无限，user_id ad40046a-7b57-48a5-9840-6a0e908bbe39）；B=ai.isolation.b.1787386@example.com（free，user_id 99a82a6f-777d-4871-93fc-0ae22e3f535f）。
 - **遗留（低风险，未改）**: profiles 公开策略仍允许匿名读 display_name/avatar 等公开字段（设计如此，用于公开展示）；city_rankings 视图为公开参考数据未加 security_invoker（不含用户数据）；AI Edge Function 偶发 Failed to fetch（历史已知）。
 - **注意**: 本会话未跑 pnpm build（prebuild 自动翻译会损坏 cities-i18n JSON）；未改 Edge Function 代码，无需重新 deploy chat。
-
 
 ### 2026-08-22 会话 #43（AI 数据隔离深度检查第三轮 — 提权漏洞 6 连修 + 全量攻击矩阵复验）
 
@@ -1535,6 +1519,12 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **⚠ 风险接受（用户决定）**: 旧历史曾在公网公开约 4 个月，GitHub 缓存无法彻底清除；任何 fork/本地 clone 仍持有旧 key。**当前不轮换 = 风险接受**。上线或出现真实用户前必须：
   1. Supabase Dashboard → Settings → API → 重新生成 service_role key，并同步 Supabase Secrets / GitHub Actions 的 `SUPABASE_SERVICE_ROLE_KEY`；
   2. 轮换 MiniMax / AnySearch / 高德 / Pexels keys。
-- **遗留**: 本地 gitignored 脚本（如 `.audit/create-test-user.py`）仍含 service_role key，上线前清理；备份 bundle 含旧 secrets。
-- **可选加固（低危，未做）**: supabase/functions/flarum-sso 可疑 twilio 导入（未部署，启用论坛 SSO 前必须先修）；checkout-webhook HMAC 改 timing-safe 比较；sb-auth-token cookie 加 Secure 标志。
+- **遗留（全部待修，支付开发完成后统一修改完成）**:
+  1. **密钥轮换（上线/出现真实用户前必须）**: Supabase Dashboard → Settings → API → 重新生成 service_role key，同步 Supabase Secrets / GitHub Actions 的 `SUPABASE_SERVICE_ROLE_KEY`；轮换 MiniMax / AnySearch / 高德 / Pexels keys。
+  2. **本地敏感脚本清理**: gitignored 脚本（如 `.audit/create-test-user.py`）仍含 service_role key，上线前清理。
+  3. **备份 bundle 处置**: `D:/suoyouxiangmu/chinaconnect-backup-20260823-000213.bundle` 含旧 secrets，需安全保管或删除。
+  4. **flarum-sso 修复**: supabase/functions/flarum-sso/index.ts 从 esm.twilio.com 导入 supabase 客户端，不可部署；启用论坛 SSO 前必须先修复导入。
+  5. **checkout-webhook HMAC**: 改用 timing-safe 比较（crypto.timingSafeEqual）。
+  6. **cookie Secure 标志**: sb-auth-token cookie 加 Secure 标志。
+
 - **注意**: 本会话未跑 pnpm build（prebuild 翻译会损坏数据）；测试账号 A（business/无限 `ad40046a-7b57-48a5-9840-6a0e908bbe39`）/ B（free `99a82a6f-777d-4871-93fc-0ae22e3f535f`）可复用。
