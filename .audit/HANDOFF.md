@@ -1330,3 +1330,28 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **踩坑记录**：live-session.json 的 access_token 已过期 26h，导致 supabase-js 初始化时清/建会话引发 header 抖动假象；已用 refresh_token 刷新会话（expires_at 1787157235）。定位过程中发现 dev 下 SW controller 会让页面双加载（开发态现象，非本次问题）。
 - **遗留**：首页等 `Astro.request.headers` prerender warning（既有）；`.audit/` 临时探测脚本不提交。
 - **下个会话**：提交 push 后验证生产同页面无英文回退、个人中心无未登录闪现；如仍有问题可复查 `LOCALIZED_PATHS` 覆盖与 SPA 内动态路由。
+
+
+### 2026-08-22 会话 #35（AI Agent 实时联网能力恢复 + 查证/出处强化）
+
+- **起**：用户反馈 AI 回复不再大量使用联网搜索、不再给详细链接/航班/电话等实时信息，要求回顾整套 Agent 设计目标并修复；随后追加要求：站内数据只作数据源之一（后续会持续增长），AI 使用站内数据时必须强制联网查证真实性与时效性（航班/交通/美食/住宿/签证等），所有实时数据回复必须注明出处且可点击跳转到实时引用页面。
+- **设计目标回顾（来自历史提交与提示词）**：完整设计在 src/lib/ai/prompts.ts（SYSTEM_PROMPT）+ 历史提交 8d752f6/28b8058/ed99b3f/42a4390/dc80e08：强制先收集偏好、酒店 3 档含预订链接、美食多分类含地址价格、交通含具体车次/航班号/票价/12306/Trip.com/Qunar/Amap 链接、回复须标注“📡 Based on real-time data:”、强制可点击链接 + 必备 App 下载区。
+- **根因（4 个）**：
+  1. 客户端系统提示词被精简成一行 stub（src/services/minimax.ts 的 TRAVEL_PLANNING_SYSTEM），85311bb 迁移 Edge Function 时删掉完整提示词且从未从 prompts.ts 加载——模型根本不知道要调工具。
+  2. 完整工具定义其实已随 chatStream body 传给 Edge Function（tools 有传），此项无需修。
+  3. Edge Function chat 数据工具大面积损坏：toolCitySearch 查 name 列（实际 name_en/name_zh）；toolHotelSearch/toolTransportSearch 查不存在的 hotels/transport_routes 表（404）；toolFoodSearch 查 Supabase restaurants 表仅 3 行（真实 1873 条在静态 src/data）；仅实现 6 个工具，其余返回 Unknown tool。
+  4. 生产 AnySearch 代理 /api/search 与 Cloudflare /api/chat（生产 MINIMAX key）均正常；本地 .env MINIMAX key 已失效 401——排查时勿用本地 key。
+- **修复**：
+  1. 重写 src/lib/ai/prompts.ts 的 SYSTEM_PROMPT：新增“⚡ REAL-TIME FIRST（强制先调工具）”与“✅ VERIFY & CITE（站内数据是策展起点、时效性必须 WebSearch 交叉核验、回复末尾必须带可点击 Sources 章节、不得编造 URL）”，保留偏好收集/3 档酒店/美食多分类/交通链接/响应格式/App 下载区/安全规则；buildLanguageHint 支持 zh-CN/zh-TW/en/fa 等全部 12 语言。
+  2. src/hooks/useAIConversation.ts 系统消息改为 SYSTEM_PROMPT + buildLanguageHint(language) + CITY_CONTEXT（此前用的 stub）；src/services/minimax.ts 的 TRAVEL_PLANNING_SYSTEM 改为 SYSTEM_PROMPT 别名，CITY_CONTEXT 列出全部 35 城。
+  3. supabase/functions/chat/index.ts：修 toolCitySearch 列名；toolFoodSearch/toolHotelSearch 改为读随函数部署的完整静态数据集（1873 餐厅 / 6300 酒店 / 35 城紧急电话），支持城市/菜系/预算过滤并返回 Amap/Dianping/Trip.com/Booking 链接；toolTransportSearch 改为实时 WebSearch（高铁+航班）并返回 12306/Trip.com/Qunar 预订链接；新增 toolEmergencyInfo（含 110/120/119）、toolAmapPOISearch、toolAmapRouteSearch（走 chinaengage.org/api/amap 代理）、toolVisaInfo（WebSearch）；未实现工具返回友好提示引导 WebSearch；MAX_TOOL_ITERATIONS 5→6。
+  4. functions/api/amap.ts 代理支持 endpoint 路由（place/text + direction/driving|transit/integrated|walking|bicycling），让 AmapRouteSearch 真正可用。
+  5. 新增 scripts/generate-ai-data.mjs（Node 24 原生 TS 类型剥离，无新依赖）从 src/data 重新生成 supabase/functions/chat/data/{food,hotel,emergency}-data.ts。
+- **验证**：
+  - npx tsc --noEmit 0 错误；node scripts/check-i18n.mjs 12/12；npx astro build 26,708 页成功（~105s，仅既有 Astro.request.headers warning）。
+  - esbuild 打包 Edge Function 通过（含数据 ~2.95MB）。
+  - 生产 Edge Function 直测（带新提示词 + 工具，zh-CN）：天气+Open-Meteo 来源、北京→上海高铁 G1/G3/G5+¥553-933+12306/Trip.com/Qunar 链接、烤鸭店地址+电话+Dianping 来源、App 下载区——全部正常。
+  - 生产 Edge Function 直测（en）：上海三档酒店（含电话+预订链接）、美国游客签证政策+visaforchina/美使馆来源——正常。
+- **部署**：Edge Function 已 supabase functions deploy chat --project-ref xyvuqbpwrhkukjgzveyc 上线；前端+代理改动提交 98e020d 已 push master；CI 工作流补充 AMAP_WEB_API_KEY 同步步骤（提交 7ef9b40 因 if 表达式报 workflow 解析失败，012a8f8 改为 shell 空值守卫后 Deploy+Live probe 全绿）。生产实测 AIChatPage bundle 已含新提示词（REAL-TIME FIRST / VERIFY & CITE）。
+- **遗留**：.audit/ 下新增探针（_probe_ai_rt*.cjs、_probe_ai_fulltools.cjs、_create_new_user.cjs、_tools_defs.cjs 等）不提交；生产 amap 代理仍缺 AMAP_WEB_API_KEY（.env 的 AMAP_SECURITY_KEY 经直测返回 INVALID_USER_KEY，非有效 Web 服务 key）——需用户在高德开放平台注册 Web服务 key 并添加 GitHub secret AMAP_WEB_API_KEY 后重新 push 即可自动同步，此后 AmapPOISearch/AmapRouteSearch 才可用（当前模型会自动改用 WebSearch 兜底）；后续若站内数据（美食/酒店/景点）增多，重跑 node scripts/generate-ai-data.mjs 并重新部署 chat 函数即可；E2E Tests (Playwright) 为既存长跑任务（本次改动后仍在跑，未拦部署）。
+- **下个会话**：确认 CI 部署成功后在 production 复测 AI 页多语言实时回复；如有需要可再补 AmapPOISearch 生产验证与 Edge Function 日志（Supabase Dashboard > Edge Functions > chat > Logs）。
