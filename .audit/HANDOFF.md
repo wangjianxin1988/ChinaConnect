@@ -1424,3 +1424,7 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **验证**: `pnpm typecheck` 0 错误；`pnpm exec astro build` 26708 页成功；Edge Function 用 TS transpile 校验语法 0 错误；临时 vitest（6 用例）验证前端两工具：北京烤鸭命中、故宫景点命中、Starbucks 无匹配返回免费链接、未知城市 source=none、公交导航链接 mode=bus、缺参数返回 error——全过（测试文件已删）；真实数据模拟：北京烤鸭 2 条（含电话/价格）、上海酒店 5 条。
 - **重要提醒**: 千万别跑完整 `pnpm build`（prebuild 的 auto-translate 脚本会把 cities-i18n JSON 的 `type: "michelin"` 误译成阿语等，并因 MiniMax key 过期卡十几分钟）。本地验证一律 `pnpm exec astro build`（跳过 prebuild）+ `pnpm typecheck`。
 - **待办**: 本会话未部署。部署 = `supabase functions deploy chat --project-ref xyvuqbpwrhkukjgzveyc` + git push（触发 CI 部署 Cloudflare Pages，删代理后 amap 函数自动消失）。部署后生产复测 AI 页 POI/路线链接 12 语言。
+
+- **部署完成（会话 #40 补充）**: 提交 `c9a5c7f` 已 push master；Edge Function 已 `supabase functions deploy chat` 上线；Cloudflare Pages 已自动部署（Deploy 工作流含 Live probe 全绿，Unit+Integration / E2E 三个 CI 全绿）。
+- **生产验证（PASS）**: 登录测试号直测生产 chat 函数（完整 18 工具 + 系统提示 + MiniMax-Text-01，zh-CN）——回复 3 家北京烤鸭（全聚德/大董/便宜坊）带地址+电话+免费 `uri.amap.com/search` 链接，天安门→故宫免费 `uri.amap.com/route/plan` 导航链接，"📡 基于实时数据"标记正常，全程零错误零 key。`/api/amap` 生产已返回 404（代理已移除）。
+- **注意**: 探针若只传部分工具/不带系统提示/用 abab6.5s-chat，模型可能把工具调用当文本输出（第一次实测就遇到），完整工具列表 + 系统提示 + MiniMax-Text-01 才触发正确工具链路。
