@@ -1442,3 +1442,18 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **验证（全部 PASS）**: B→A 三个 RPC 返回 permission denied；B→B / A→A 正常（A business/-1）；B 读 A 会话/消息/路线 REST 全空；B 带 A conversationId 调 chat 得到新会话；污染数据已清理（A 会话 message_count/summary 已恢复）。typecheck 0 错误、Edge Function 语法 0 错误。
 - **测试账号**: `ai.isolation.b.1787386@example.com` / `CodexTest!2026x`（user_id `99a82a6f-777d-4871-93fc-0ae22e3f535f`，free）——隔离测试专用，可复用。
 - **遗留**: `ai_routes.conversation_id` 未校验归属（低危，路线列表按 user_id 过滤不受影响）；AI Edge Function 偶发 Failed to fetch（前会话已记录）；`get_user_ai_usage` 等 RPC 的 GRANT 默认 public 但已有函数内守卫。
+
+### 2026-08-22 会话 #42（AI 数据隔离深度检查第二轮 — user_dashboard/触发器/RLS 加固）
+
+- **背景**: 用户要求「再深度检查一下，这个问题很重要不能糊弄」——在会话 #41 修复 IDOR + RPC 越权后，继续深挖剩余隔离漏洞。
+- **新发现并修复（均为生产实测确认）**:
+  1. **user_dashboard 视图仍可枚举全站用户（高危）**: security_invoker 生效后敏感列已置 NULL，但 profiles 公开策略 USING(true) 导致任意登录用户/匿名仍可列出全站 user_id + display_name + wallet_balance=0。修复：视图加 WHERE p.user_id = auth.uid()（20260901 迁移），owner 看到完整 dashboard，他人/匿名 0 行。
+  2. **ai_conversation_snapshots 跨会话注入（高危，已实测）**: INSERT 策略只查 auth.uid()=user_id，B 可用自己的 user_id + A 的 conversation_id 插入快照，SECURITY DEFINER 触发器 update_snapshot_latest_flag 把 A 的 is_latest 翻转为 false（实测 A 快照 true→false）。修复：INSERT 策略增加会话归属 EXISTS 校验 + 触发器按 NEW.user_id 限定作用域。
+  3. **ai_routes 跨会话注入（高危，已实测）**: INSERT/UPDATE 策略只查 user_id，B 插入 route 引用 A 的 conversation_id 后，SECURITY DEFINER 触发器 mark_conversation_route_saved 把 A 会话改为 is_route_saved=true + route_id=B 的路线（实测确认）。修复：INSERT/UPDATE 策略增加会话归属校验（允许 conversation_id 为 NULL）+ 触发器按 NEW.user_id 限定。
+  4. **order_summary 视图（防御性）**: 未用但经 PostgREST 暴露、无 security_invoker 无 owner 过滤。修复：加 WHERE o.user_id = auth.uid() + security_invoker。
+- **迁移**: supabase/migrations/20260901_ai_isolation_hardening.sql（已 supabase db push 生产，migration list 无冲突）。
+- **验证（全部 PASS，生产直测）**: B→A 全部 10 张用户表 SELECT 返回 0 行；B/匿名查 user_dashboard 0 行，A 查自己 business/20 次正常；B 插入 A 会话快照/路线均被 RLS 42501 拦截；5 个用户级 RPC B→A 全部 permission denied、A→A 正常；Edge Function E2E（A 建会话收回复 + B 带 A 会话 ID 得到自己新会话且 A 会话未被污染）全过；ai_messages 跨用户读写已由会话归属策略拦截（B 读 A 会话 0 行 / 插入 42501）。
+- **清理**: 本次审计创建的全部测试会话/快照/路线已删除，库恢复干净（snapshots 空、仅保留历史会话）。
+- **测试账号**: 沿用 #41：A=ai.codextest.1787386274959@example.com（business/无限，user_id ad40046a-7b57-48a5-9840-6a0e908bbe39）；B=ai.isolation.b.1787386@example.com（free，user_id 99a82a6f-777d-4871-93fc-0ae22e3f535f）。
+- **遗留（低风险，未改）**: profiles 公开策略仍允许匿名读 display_name/avatar 等公开字段（设计如此，用于公开展示）；city_rankings 视图为公开参考数据未加 security_invoker（不含用户数据）；AI Edge Function 偶发 Failed to fetch（历史已知）。
+- **注意**: 本会话未跑 pnpm build（prebuild 自动翻译会损坏 cities-i18n JSON）；未改 Edge Function 代码，无需重新 deploy chat。
