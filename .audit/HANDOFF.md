@@ -1364,3 +1364,13 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **环境确认**：Supabase secrets 已有 `MINIMAX_API_KEY`、`VITE_ANYSEARCH_API_KEY`（Edge Function WebSearch/TransportSearch/VisaInfo 可用）。`AMAP_WEB_API_KEY` 仍缺失 → AmapPOISearch/AmapRouteSearch 生产返回 500（模型自动 WebSearch 兜底）。**待用户**：在高德开放平台申请 Web 服务 key 后设为 GitHub secret `AMAP_WEB_API_KEY`，重新 push 即可 CI 同步。
 - **测试账号额度**：`ai.codextest.1787386274959@example.com` 本月 5 次免费额度（探针已用 1 次），会话存 `.audit/test-session.json`；原 `codextest1786991529@example.com` 已满（429）。
 
+### 2026-08-22 会话 #36（AI 体验升级：等待提示 + 反偷懒 + 主动补充 + 测试账号无限额度）
+
+- **等待提示（任务1）**：`src/components/ai/chat-labels.ts` 新增 `firstUseNotice` 键（12 语言）；`src/components/ai/AIChat.tsx` 空状态 intro 加 ⏳ 提示框 + 首次回复加载态（MessageBubble 加 `language`/`showFirstUseNotice` prop，`Thinking...` 本地化）——文案：首次详细规划 AI 需长时间思考处理，通常不超 5 分钟。
+- **账号升级（任务2）**：王子默（`237905750@qq.com`，Google 登录，user_id `b1e37be6-6aeb-4fb1-96db-1180e0d1eb4e`）已升 business（无限 AI）：`user_memberships` 插入 active/lifetime Business（tier `487a9896-ef7c-4064-8300-cb198f4aef94`）+ `ai_usage`(202608) tier_slug=business；RPC 验证 `get_user_ai_usage` max=-1、`get_user_membership` is_active=true。另将 AI 测试号 `ai.codextest.1787386274959@example.com` 也升 business 便于探针（原 5/5 满额）。注意：Google OAuth 登录用户不会自动创建 `profiles` 行（该表仅 testuser0601c 一行），如需完整用户资料需补 profile。
+- **反偷懒（任务3）**：`src/lib/ai/prompts.ts` 新增「📚 COMPLETENESS — NEVER LAZY」强制章节：多部分问题全答、不得省略步骤/链接/电话/价格、N 天行程必须逐日完整、禁止 etc./… 跳项；Edge Function `max_tokens` 2048→4096。
+- **主动补充（任务4）**：新增「💡 PROACTIVE — ADD VALUE BEYOND THE QUESTION」强制章节：回答末尾必须加「💡 You may also want to know」4-6 条（签证/支付/SIM/交通/天气/防骗/备选/预订技巧），每条带链接；同时写入 RESPONSE FORMAT 的 For Questions 规则。
+- **验证**：`npx tsc --noEmit` 0 错误、esbuild 打包通过、i18n 12/12、`npx astro build` 26,708 页成功；Edge Function 已 `supabase functions deploy chat`；生产直测（zh-CN 全 18 工具）返回完整一日行程表+三档酒店+电话/导航/交通表+三档预算+「💡 你可能还想知道」+来源，tokens 6629。提交 `1f6ff99` 已 push master（CI 自动部署）。
+- **下个会话**：确认 CI Deploy 绿后复测各语言 AI 回复；可选：给 Google OAuth 新用户补 profiles 行逻辑；补 `AMAP_WEB_API_KEY`（高德 Web 服务 key，用户待提供）。
+
+
