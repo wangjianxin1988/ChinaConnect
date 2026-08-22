@@ -1519,3 +1519,22 @@ ode scripts/check-i18n.mjs && npx astro build。
   - checkout-webhook HMAC 比较用非 timing-safe 字符串比较（低危，Creem 远程签名）；cookie sb-auth-token 无 Secure 标志（站点为 HTTPS，低危加固项）。
   - AI 偶发「Failed to fetch」历史已知。
 - **注意**: 本会话未跑 pnpm build（prebuild 翻译会损坏数据）；pnpm typecheck 0 错误；已提交 7882db1（secret 清理+check_ai_limit）与 508a2a1（提示词+features）并 push master。**待 CI 部署前端后，新 SYSTEM_PROMPT 才在生产生效**。
+
+### 2026-08-23 会话 #45（P0 密钥泄露最终处置 — 历史重写 + 用户决定不轮换）
+
+- **背景**: 会话 #44 发现公开仓库 ChinaConnect（PUBLIC）泄露 service_role key / MiniMax / AnySearch / 高德 / Pexels 密钥。用户指示：**不轮换 MiniMax 与 AnySearch**；**任何需要轮换的都不用轮换（网站还没有真实用户）**；并授权「p0修复你全部都可以做的，你有权限的」→ 即完成除密钥轮换外的全部 P0 处置。
+- **已执行（全部落地并 push）**:
+  1. **备份**: `D:/suoyouxiangmu/chinaconnect-backup-20260823-000213.bundle`（278MB，含全部旧历史与旧密钥 material——**敏感文件，需安全保管或删除**）。
+  2. **安装 git-filter-repo**（`pip install git-filter-repo`，已验证可用）。
+  3. **重写全部历史**: `git filter-repo --force --invert-paths --path .env.backup --replace-text .audit/.filter-rules.txt`
+     - 从所有 commits 删除 `.env.backup`；
+     - 全局 redact：JWT → REDACTED_JWT、sk-cp-… → REDACTED_MINIMAX_KEY、as_sk_… → REDACTED_ANYSEARCH_KEY、Pexels/高德 key（规则文件 `.audit/.filter-rules.txt` 已 gitignore）。
+  4. **Force push 成功**: `git push --force origin master` → HEAD 现为 `397061d`（远端 `git ls-remote` 一致）。
+  5. **验证无残留**: `git grep JWT` 于 origin/master = 0 结果；`.env.backup` 无历史残留；`.github/workflows/*.yml` 全部走 `secrets.*` 无硬编码；`.env.example` 全占位符；全仓库唯一 JWT 匹配是 `.audit/HANDOFF.md` 中描述文本（无真实值）。
+- **关键提交（filter-repo 重写后新 hash）**: `397061d` docs #44；`0c7f61d` 强制 Sources 引用 + 套餐 feature 全量；`cc0393c` revoke check_ai_limit + 移除已提交 secrets；`8b045b0` 提权漏洞 6 连修；`b075e0c` user_dashboard/触发器/RLS 加固。
+- **⚠ 风险接受（用户决定）**: 旧历史曾在公网公开约 4 个月，GitHub 缓存无法彻底清除；任何 fork/本地 clone 仍持有旧 key。**当前不轮换 = 风险接受**。上线或出现真实用户前必须：
+  1. Supabase Dashboard → Settings → API → 重新生成 service_role key，并同步 Supabase Secrets / GitHub Actions 的 `SUPABASE_SERVICE_ROLE_KEY`；
+  2. 轮换 MiniMax / AnySearch / 高德 / Pexels keys。
+- **遗留**: 本地 gitignored 脚本（如 `.audit/create-test-user.py`）仍含 service_role key，上线前清理；备份 bundle 含旧 secrets。
+- **可选加固（低危，未做）**: supabase/functions/flarum-sso 可疑 twilio 导入（未部署，启用论坛 SSO 前必须先修）；checkout-webhook HMAC 改 timing-safe 比较；sb-auth-token cookie 加 Secure 标志。
+- **注意**: 本会话未跑 pnpm build（prebuild 翻译会损坏数据）；测试账号 A（business/无限 `ad40046a-7b57-48a5-9840-6a0e908bbe39`）/ B（free `99a82a6f-777d-4871-93fc-0ae22e3f535f`）可复用。
