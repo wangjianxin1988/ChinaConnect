@@ -12,8 +12,8 @@ import { createClient } from "@supabase/supabase-js";
 
 const PROJECT_REF = "xyvuqbpwrhkukjgzveyc";
 const SUPABASE_URL = `https://${PROJECT_REF}.supabase.co`;
-const SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY
-  || "REDACTED_JWT";
+const SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
+if (!SERVICE_KEY) { console.error("SUPABASE_SERVICE_ROLE_KEY env var required"); process.exit(2); }
 
 const adminClient = createClient(SUPABASE_URL, SERVICE_KEY, {
   auth: { autoRefreshToken: false, persistSession: false },
@@ -84,7 +84,7 @@ async function main() {
   // 2. Anon key POST -> 401 (anon != user)
   console.log("\n[2/6] Anon-key request -> 401");
   {
-    const anonKey = "REDACTED_JWT";
+    const anonKey = process.env.PUBLIC_SUPABASE_ANON_KEY || "";
     const res = await fetch(`${SUPABASE_URL}/functions/v1/chat`, {
       method: "POST",
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${anonKey}` },

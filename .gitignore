@@ -113,3 +113,15 @@ _*.py
 # Audit caches
 .audit/*.pkl
 .audit/__pycache__/
+
+
+# Secret env backups must never be committed (contain live API keys)
+.env.backup
+.env.*.backup
+.env.production
+.env.test
+.env.dev
+
+# .audit scratch scripts may contain embedded credentials — ignore all but HANDOFF.md
+/.audit/*
+!/.audit/HANDOFF.md
