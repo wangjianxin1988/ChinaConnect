@@ -355,55 +355,109 @@ async function toolEmergencyInfo(args: Record<string, string>): Promise<string> 
 }
 
 async function toolAmapPOISearch(args: Record<string, string>): Promise<string> {
-  const keywords = args.keywords || "";
+  const keywords = (args.keywords || "").trim();
   if (!keywords) return JSON.stringify({ error: "keywords required", pois: [] });
-  const params = new URLSearchParams({
-    keywords,
-    offset: String(Math.min(Number(args.pageSize) || 10, 25)),
-    page: String(args.page || 1),
-  });
-  if (args.city) params.set("city", args.city);
-  if (args.type) params.set("type", args.type);
-  try {
-    const res = await fetch("https://chinaengage.org/api/amap?" + params.toString(), {
-      signal: AbortSignal.timeout(10000),
-    });
-    if (!res.ok) return JSON.stringify({ error: "amap_proxy_error", status: res.status, pois: [] });
-    return (await res.text()).slice(0, 4000);
-  } catch (e) {
-    return JSON.stringify({ error: String(e), pois: [] });
+  const city = args.city || "";
+  const type = (args.type || "").toLowerCase();
+  const pageSize = Math.min(Number(args.pageSize) || 10, 25);
+
+  // FREE Amap deep link — no API key required (uri.amap.com).
+  const freeSearchLink =
+    "https://uri.amap.com/search?keyword=" +
+    encodeURIComponent(keywords) +
+    "&city=" +
+    encodeURIComponent(city) +
+    "&callnative=1";
+
+  const kw = keywords.toLowerCase();
+  const isHotel =
+    type === "hotel" || type === "accommodation" || type === "lodging";
+  const isRestaurant =
+    type === "" || type === "restaurant" || type === "food" || type === "dining" || type === "cafe" || type === "bar";
+
+  const pois: Array<Record<string, unknown>> = [];
+
+  if (isRestaurant) {
+    const foods = (FOOD_DATA as FoodEntry[]).filter(
+      (e) =>
+        matchCityFields(e.city, e.cityZh, e.name, e.nameEn, city) &&
+        ((e.name || "").toLowerCase().includes(kw) ||
+          (e.nameEn || "").toLowerCase().includes(kw) ||
+          (e.cuisine || "").toLowerCase().includes(kw) ||
+          (e.address || "").toLowerCase().includes(kw)),
+    );
+    for (const e of foods.slice(0, pageSize)) {
+      pois.push({
+        name: e.nameEn || e.name,
+        type: e.type || "Restaurant",
+        address: e.address || "",
+        location: e.lat && e.lng ? { lng: e.lng, lat: e.lat } : { lng: 0, lat: 0 },
+        tel: e.phone,
+        rating: e.rating ? String(e.rating) : undefined,
+        cost: e.avgPrice ? "¥" + e.avgPrice : undefined,
+        city: e.cityZh || e.city,
+      });
+    }
   }
+
+  if (isHotel) {
+    const hotels = (HOTEL_DATA as HotelEntry[]).filter(
+      (e) =>
+        matchCityFields(e.city, e.cityZh, e.name, e.nameEn, city) &&
+        ((e.name || "").toLowerCase().includes(kw) ||
+          (e.nameEn || "").toLowerCase().includes(kw) ||
+          (e.address || "").toLowerCase().includes(kw)),
+    );
+    for (const e of hotels.slice(0, pageSize)) {
+      pois.push({
+        name: e.nameEn || e.name,
+        type: e.category || "Hotel",
+        address: e.address || "",
+        location: { lng: 0, lat: 0 },
+        tel: e.phone,
+        rating: e.rating ? String(e.rating) : undefined,
+        cost: e.priceMin && e.priceMax ? "¥" + e.priceMin + "-" + e.priceMax : undefined,
+        city: e.cityZh || e.city,
+      });
+    }
+  }
+
+  return JSON.stringify({
+    success: true,
+    count: pois.length,
+    pois,
+    freeSearchLink,
+    note: pois.length === 0
+      ? "No match in built-in dataset. Use WebSearch for real-time POI details."
+      : "Built-in dataset + free Amap link (no API key required).",
+  });
 }
 
 async function toolAmapRouteSearch(args: Record<string, string>): Promise<string> {
-  const origin = args.origin || "";
-  const destination = args.destination || "";
-  const mode = args.mode || "driving";
+  const origin = (args.origin || "").trim();
+  const destination = (args.destination || "").trim();
   if (!origin || !destination) {
     return JSON.stringify({ error: "origin and destination are required" });
   }
-  const base =
-    mode === "driving"
-      ? "direction/driving"
-      : mode === "transit"
-        ? "direction/transit/integrated"
-        : mode === "walking"
-          ? "direction/walking"
-          : "direction/bicycling";
-  const params = new URLSearchParams({ endpoint: base, origin, destination, output: "json" });
-  if (mode === "transit" && args.city) {
-    params.set("city", args.city);
-    params.set("cityd", args.city);
-  }
-  try {
-    const res = await fetch("https://chinaengage.org/api/amap?" + params.toString(), {
-      signal: AbortSignal.timeout(10000),
-    });
-    if (!res.ok) return JSON.stringify({ error: "amap_proxy_error", status: res.status });
-    return (await res.text()).slice(0, 4000);
-  } catch (e) {
-    return JSON.stringify({ error: String(e) });
-  }
+  const mode = args.mode || "driving";
+  const amapMode =
+    mode === "driving" ? "car" : mode === "transit" ? "bus" : mode === "walking" ? "walk" : "ride";
+  const navLink =
+    "https://uri.amap.com/route/plan?from=" +
+    encodeURIComponent(origin) +
+    "&to=" +
+    encodeURIComponent(destination) +
+    "&mode=" +
+    amapMode +
+    "&callnative=1";
+  return JSON.stringify({
+    success: true,
+    origin,
+    destination,
+    mode,
+    freeNavigationLink: navLink,
+    note: "Free Amap navigation link (no API key required). For real-time schedules/prices use TransportSearch/WebSearch.",
+  });
 }
 
 async function toolVisaInfo(args: Record<string, string>): Promise<string> {

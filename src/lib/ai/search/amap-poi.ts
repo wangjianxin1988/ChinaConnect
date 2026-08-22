@@ -1,9 +1,11 @@
 /**
  * AmapPOISearch Tool for ChinaConnect AI
  * Searches for Points of Interest (restaurants, hotels, attractions, etc.)
- * using the Amap (高德地图) Web API.
+ * using ChinaConnect's built-in city dataset, then returns FREE Amap (高德地图)
+ * deep links — uri.amap.com links need NO Amap Web API key.
  *
- * API Docs: https://lbs.amap.com/api/webservice/guide/api/search
+ * For real-time verification (opening hours, prices, phone numbers) the AI must
+ * also call WebSearch.
  */
 
 // ============================================
@@ -36,66 +38,52 @@ export interface AmapPOIResult {
   count: number;
   pois: AmapPOIItem[];
   error?: string;
+  /** Free Amap deep link (no API key required) */
+  freeSearchLink?: string;
+  /** Result source: "builtin" (in-site dataset) or "none" */
+  source?: "builtin" | "none";
 }
 
 // ============================================
-// Amap API Configuration
+// Built-in dataset search (100% free, no API key)
 // ============================================
 
-const AMAP_WEB_API_BASE = "/api/amap";
+import { cities } from "@/data/cities";
+import type { City } from "@/data/cities/types";
 
-/**
- * Amap API key is now handled server-side via /api/amap proxy.
- * No key is needed on the client.
- */
-function getAmapKey(): string | undefined {
-  // Key is injected server-side by the proxy — return a marker so callers
-  // know the feature is available.
-  return "proxied";
+function findCity(input?: string): City | null {
+  if (!input) return null;
+  const lower = input.toLowerCase().trim();
+  if (!lower) return null;
+  for (const city of cities) {
+    const nameEn = (city.nameEn || "").toLowerCase();
+    const nameZh = (city.name || "").toLowerCase();
+    const slug = city.slug.toLowerCase();
+    if (
+      nameEn.includes(lower) ||
+      nameZh.includes(lower) ||
+      slug.includes(lower) ||
+      lower.includes(nameEn) ||
+      lower.includes(nameZh)
+    ) {
+      return city;
+    }
+  }
+  return null;
+}
+
+function matchKw(haystack: string | undefined, kw: string): boolean {
+  if (!kw) return true;
+  return (haystack || "").toLowerCase().includes(kw);
 }
 
 /**
- * Map user-friendly POI type keywords to Amap type codes.
- * See: https://lbs.amap.com/api/webservice/guide/api/search#s4
- */
-const AMAP_TYPE_MAP: Record<string, string> = {
-  restaurant: "050000",
-  food: "050000",
-  dining: "050000",
-  hotel: "100000",
-  accommodation: "100000",
-  lodging: "100000",
-  attraction: "110000",
-  scenic: "110000",
-  sightseeing: "110000",
-  shopping: "060000",
-  mall: "060000",
-  hospital: "090100",
-  pharmacy: "090600",
-  bank: "160100",
-  atm: "160102",
-  subway: "150500",
-  metro: "150500",
-  airport: "150100",
-  train: "150200",
-  station: "150200",
-  gas: "011100",
-  parking: "150900",
-  cafe: "050300",
-  bar: "050400",
-  tea: "050500",
-};
-
-// ============================================
-// Amap POI Search Implementation
-// ============================================
-
-/**
- * Search for POIs using Amap Web API.
- * Returns structured JSON data suitable for AI consumption.
+ * Search POIs using ChinaConnect's built-in city dataset.
+ * Returns structured JSON plus a free Amap deep link for navigation.
+ * No Amap Web API key is required.
  */
 export async function executeAmapPOISearch(params: AmapPOIParams): Promise<AmapPOIResult> {
-  const { keywords, city, type, page = 1, pageSize = 10 } = params;
+  const { keywords, city: cityName, type, page = 1, pageSize = 10 } = params;
 
   if (!keywords || keywords.trim().length === 0) {
     return {
@@ -106,99 +94,126 @@ export async function executeAmapPOISearch(params: AmapPOIParams): Promise<AmapP
     };
   }
 
-  const amapKey = getAmapKey();
-  if (!amapKey) {
-    return {
-      success: false,
-      count: 0,
-      pois: [],
-      error: "Amap API proxy not available. Ensure the /api/amap endpoint is deployed.",
-    };
-  }
+  const kw = keywords.trim().toLowerCase();
+  const city = findCity(cityName);
+  const typeKey = (type || "").toLowerCase();
 
-  try {
-    const params_obj = new URLSearchParams({
-      endpoint: "place/text",
-      keywords: keywords.trim(),
-      offset: String(Math.min(pageSize, 25)),
-      page: String(page),
-      extensions: "all", // include detailed info (photos, rating, etc.)
-      output: "json",
-    });
+  const freeSearchLink =
+    "https://uri.amap.com/search?keyword=" +
+    encodeURIComponent(keywords.trim()) +
+    "&city=" +
+    encodeURIComponent(city?.nameEn || cityName || "") +
+    "&callnative=1";
 
-    // Add city filter
-    if (city) {
-      params_obj.set("city", city);
-    }
-
-    // Add type filter
-    if (type) {
-      const amapType = AMAP_TYPE_MAP[type.toLowerCase()] || type;
-      params_obj.set("types", amapType);
-    }
-
-    const url = `${AMAP_WEB_API_BASE}?${params_obj}`;
-    const response = await fetch(url, {
-      signal: AbortSignal.timeout(10000),
-      headers: { Accept: "application/json" },
-    });
-
-    if (!response.ok) {
-      throw new Error(`Amap API returned HTTP ${response.status}`);
-    }
-
-    const data = await response.json();
-
-    if (data.status !== "1") {
-      return {
-        success: false,
-        count: 0,
-        pois: [],
-        error: `Amap API error: ${data.info || "Unknown error"} (infocode: ${data.infocode})`,
-      };
-    }
-
-    const pois: AmapPOIItem[] = (data.pois || []).map((poi: Record<string, unknown>) => {
-      const location = String(poi.location || "").split(",");
-      const photos = Array.isArray(poi.photos)
-        ? (poi.photos as Array<{ title?: string; url?: string }>).slice(0, 3).map((p) => ({
-            title: p.title || "",
-            url: p.url || "",
-          }))
-        : [];
-
-      return {
-        name: String(poi.name || ""),
-        type: String(poi.type || ""),
-        address: String(poi.address || ""),
-        location: {
-          lng: parseFloat(location[0]) || 0,
-          lat: parseFloat(location[1]) || 0,
-        },
-        tel: poi.tel ? String(poi.tel) : undefined,
-        distance: poi.distance ? String(poi.distance) : undefined,
-        rating: poi.biz_ext
-          ? String((poi.biz_ext as Record<string, unknown>).rating || "")
-          : undefined,
-        cost: poi.biz_ext ? String((poi.biz_ext as Record<string, unknown>).cost || "") : undefined,
-        businessArea: poi.business_area ? String(poi.business_area) : undefined,
-        photos: photos.length > 0 ? photos : undefined,
-      };
-    });
-
+  if (!city) {
     return {
       success: true,
-      count: parseInt(String(data.count || "0"), 10),
-      pois,
-    };
-  } catch (error) {
-    return {
-      success: false,
       count: 0,
       pois: [],
-      error: `Amap POI search failed: ${String(error)}`,
+      source: "none",
+      freeSearchLink,
+      error:
+        "City not found in built-in dataset. Use WebSearch for real-time POI details.",
     };
   }
+
+  const pois: AmapPOIItem[] = [];
+
+  const isRestaurant =
+    typeKey === "" ||
+    typeKey === "restaurant" ||
+    typeKey === "food" ||
+    typeKey === "dining" ||
+    typeKey === "cafe" ||
+    typeKey === "bar" ||
+    typeKey === "tea";
+  const isHotel = typeKey === "hotel" || typeKey === "accommodation" || typeKey === "lodging";
+  const isAttraction = typeKey === "attraction" || typeKey === "scenic" || typeKey === "sightseeing";
+
+  if (isRestaurant) {
+    for (const r of city.restaurants || []) {
+      if (
+        !matchKw(r.name, kw) &&
+        !matchKw(r.nameEn, kw) &&
+        !matchKw(r.cuisine, kw) &&
+        !matchKw(r.address, kw) &&
+        !matchKw(r.dishHighlights?.join(" "), kw)
+      ) {
+        continue;
+      }
+      pois.push({
+        name: r.nameEn || r.name,
+        type:
+          r.type === "michelin"
+            ? "Michelin"
+            : r.type === "blackpearl"
+              ? "Black Pearl"
+              : "Local",
+        address: r.address || "",
+        location: r.coordinates
+          ? { lng: r.coordinates.lng, lat: r.coordinates.lat }
+          : { lng: 0, lat: 0 },
+        tel: r.phone,
+        rating: r.rating ? String(r.rating) : undefined,
+        cost: r.avgPrice ? `¥${r.avgPrice}` : undefined,
+      });
+    }
+  }
+
+  if (isHotel) {
+    for (const h of city.hotels || []) {
+      if (
+        !matchKw(h.name, kw) &&
+        !matchKw(h.nameEn, kw) &&
+        !matchKw(h.address, kw)
+      ) {
+        continue;
+      }
+      pois.push({
+        name: h.nameEn || h.name,
+        type: h.budget === "luxury" ? "Luxury" : h.budget === "mid" ? "Mid-range" : "Budget",
+        address: h.address || "",
+        location: { lng: 0, lat: 0 },
+        rating: h.rating ? String(h.rating) : undefined,
+        cost: h.priceRange,
+      });
+    }
+  }
+
+  if (isAttraction) {
+    for (const a of city.attractions || []) {
+      if (
+        !matchKw(a.name, kw) &&
+        !matchKw(a.nameEn, kw) &&
+        !matchKw(a.category, kw) &&
+        !matchKw(a.address, kw)
+      ) {
+        continue;
+      }
+      pois.push({
+        name: a.nameEn || a.name,
+        type: a.category || "Attraction",
+        address: a.address || "",
+        location: a.coordinates
+          ? { lng: a.coordinates.lng, lat: a.coordinates.lat }
+          : { lng: 0, lat: 0 },
+        cost: a.ticketPrice,
+      });
+    }
+  }
+
+  pois.sort((a, b) => Number(b.rating || 0) - Number(a.rating || 0));
+
+  const start = (page - 1) * pageSize;
+  const pagePois = pois.slice(start, start + pageSize);
+
+  return {
+    success: true,
+    count: pois.length,
+    pois: pagePois,
+    source: "builtin",
+    freeSearchLink,
+  };
 }
 
 // ============================================
@@ -210,24 +225,24 @@ export const AmapPOISearchToolDefinition = {
   function: {
     name: "AmapPOISearch",
     description:
-      "Search for Points of Interest in China using Amap (高德地图). Find restaurants, hotels, attractions, hospitals, shopping malls, subway stations, and more. Returns name, address, phone, location coordinates, rating, and price info.",
+      "Search for Points of Interest (restaurants, hotels, attractions) using ChinaConnect's built-in city dataset, plus a FREE Amap (高德地图) navigation deep link. No API key required. If built-in data has no match, use WebSearch for real-time details.",
     parameters: {
       type: "object",
       properties: {
         keywords: {
           type: "string",
           description:
-            "Search keywords, e.g. '烤鸭' (Peking duck), '故宫' (Forbidden City), '星巴克' (Starbucks). Chinese or English both work.",
+            "Search keywords, e.g. 'Peking duck', 'Forbidden City', 'Starbucks'. Chinese or English both work.",
         },
         city: {
           type: "string",
           description:
-            "City name to limit search scope, e.g. '北京', '上海', '成都'. Supports Chinese city names.",
+            "City name to limit search scope, e.g. 'Beijing', '北京', 'Shanghai'. Supports Chinese and English city names.",
         },
         type: {
           type: "string",
           description:
-            "POI type filter: 'restaurant', 'hotel', 'attraction', 'shopping', 'hospital', 'subway', 'cafe', 'bar'. Maps to Amap type codes automatically.",
+            "POI type filter: 'restaurant', 'hotel', 'attraction'. Defaults to restaurant.",
         },
         page: {
           type: "number",
@@ -235,7 +250,7 @@ export const AmapPOISearchToolDefinition = {
         },
         pageSize: {
           type: "number",
-          description: "Results per page (1-25, default 10).",
+          description: "Results per page (default 10).",
         },
       },
       required: ["keywords"],

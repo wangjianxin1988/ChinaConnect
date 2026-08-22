@@ -1410,3 +1410,17 @@ ode scripts/check-i18n.mjs && npx astro build。
   - AI Edge Function（/functions/v1/chat）偶发「Failed to fetch」（约 3 分钟连接中断，MiniMax 上游耗时波动，10 次实测约 1 次失败）——建议后续改为流式返回或前端更长重试；不影响行程保存功能本身。
   - AMAP_WEB_API_KEY 仍待用户申请并提供。
   - 免费套餐不升级但保持 12 语言：当前已用 Cloudflare 免费版 + SSR + 懒加载控体积，无需压缩语言。
+
+
+### 2026-08-22 会话 #40（高德完全免费改造：移除 Web 服务 key 依赖）
+
+- **背景**: 用户要求 AI 的 POI/路径规划「用完全免费的方法实现」，不申请高德 Web 服务 key。实测项目里已有的 key（ItineraryMap.tsx 硬编码 `REDACTED_AMAP_WEB_KEY`）是「Web端(JS API)」类型，调 restapi.amap.com 返回 `USERKEY_PLAT_NOMATCH`（10009）——只能前端加载地图 SDK，不能用于 Web 服务接口。
+- **方案（100% 免费，零外部付费 API）**: 高德功能改为「站内数据 + uri.amap.com 免费深链 + WebSearch 实时兜底」：
+  1. `src/lib/ai/search/amap-poi.ts`：`executeAmapPOISearch` 改为站内城市数据（restaurants/hotels/attractions）关键词搜索（中英文名/菜系/地址/标签），返回 name/address/tel/rating/cost + `freeSearchLink`（uri.amap.com/search，无 key）；无匹配返回免费链接并提示 WebSearch。修复了 nameEn 非空时忽略中文名 name 的匹配 bug。
+  2. `src/lib/ai/search/amap-route.ts`：`executeAmapRouteSearch` 改为返回 `uri.amap.com/route/plan?from=..&to=..&mode=car|bus|walk|ride` 免费导航链接（删除 300+ 行 restapi 解析逻辑），实时车次/票价交给 TransportSearch/WebSearch。
+  3. `supabase/functions/chat/index.ts`：`toolAmapPOISearch` 用随函数部署的 FOOD_DATA(1873)/HOTEL_DATA(6300) 站内搜索 + 免费链接；`toolAmapRouteSearch` 返回免费导航链接；不再 fetch chinaengage.org/api/amap。
+  4. `src/lib/ai/prompts.ts`：更新工具说明（免费、无 key、必须 WebSearch 核实实时信息、禁止编造工具未返回的实时数据）。
+  5. 删除 `functions/api/amap.ts` 代理（83 行）与 deploy-cf-pages.yml 的 AMAP_WEB_API_KEY 同步步骤——完全清除对高德 Web 服务 key 的依赖。
+- **验证**: `pnpm typecheck` 0 错误；`pnpm exec astro build` 26708 页成功；Edge Function 用 TS transpile 校验语法 0 错误；临时 vitest（6 用例）验证前端两工具：北京烤鸭命中、故宫景点命中、Starbucks 无匹配返回免费链接、未知城市 source=none、公交导航链接 mode=bus、缺参数返回 error——全过（测试文件已删）；真实数据模拟：北京烤鸭 2 条（含电话/价格）、上海酒店 5 条。
+- **重要提醒**: 千万别跑完整 `pnpm build`（prebuild 的 auto-translate 脚本会把 cities-i18n JSON 的 `type: "michelin"` 误译成阿语等，并因 MiniMax key 过期卡十几分钟）。本地验证一律 `pnpm exec astro build`（跳过 prebuild）+ `pnpm typecheck`。
+- **待办**: 本会话未部署。部署 = `supabase functions deploy chat --project-ref xyvuqbpwrhkukjgzveyc` + git push（触发 CI 部署 Cloudflare Pages，删代理后 amap 函数自动消失）。部署后生产复测 AI 页 POI/路线链接 12 语言。

@@ -1,10 +1,10 @@
-// @ts-nocheck
 /**
  * AmapRouteSearch Tool for ChinaConnect AI
- * Gets driving and transit route directions between two locations
- * using the Amap (高德地图) Web API.
+ * Returns FREE Amap (高德地图) navigation deep links between two locations.
+ * uri.amap.com deep links need NO Amap Web API key.
  *
- * API Docs: https://lbs.amap.com/api/webservice/guide/api/direction
+ * For real-time schedules / prices / live routes, the AI must call
+ * TransportSearch / WebSearch (trains, flights, taxis, etc.).
  */
 
 // ============================================
@@ -55,53 +55,28 @@ export interface AmapRouteResult {
   destination: string;
   routes: AmapRoute[];
   error?: string;
+  /** Free Amap navigation deep link (no API key required) */
+  freeNavigationLink?: string;
+  note?: string;
 }
 
 // ============================================
-// Amap API Configuration
+// Route Search (100% free, no API key)
 // ============================================
 
-const AMAP_DIRECTION_API_BASE: Record<string, string> = {
-  driving: "direction/driving",
-  transit: "direction/transit/integrated",
-  walking: "direction/walking",
-  riding: "direction/bicycling",
+const MODE_MAP: Record<string, string> = {
+  driving: "car",
+  transit: "bus",
+  walking: "walk",
+  riding: "ride",
 };
 
 /**
- * Amap API key is now handled server-side via /api/amap proxy.
- * No key is needed on the client.
- */
-function getAmapKey(): string | undefined {
-  // Key is injected server-side by the proxy — return a marker so callers
-  // know the feature is available.
-  return "proxied";
-}
-
-/**
- * Parse a location string into coordinates if possible.
- * Accepts: "lng,lat" format, or a place name to geocode.
- * Returns the string as-is for Amap API (it handles geocoding internally).
- */
-function normalizeLocation(loc: string): string {
-  // If already in lng,lat format, return as-is
-  if (/^\d+\.\d+,\d+\.\d+$/.test(loc.trim())) {
-    return loc.trim();
-  }
-  // Amap direction API accepts place names and geocodes them
-  return loc.trim();
-}
-
-// ============================================
-// Route Search Implementation
-// ============================================
-
-/**
- * Execute a route search using Amap Direction API.
- * Supports driving, transit, walking, and riding modes.
+ * Build a FREE Amap navigation deep link (uri.amap.com — no API key required).
+ * The user opens it in the Amap app / web and sees the live route.
  */
 export async function executeAmapRouteSearch(params: AmapRouteParams): Promise<AmapRouteResult> {
-  const { origin, destination, mode = "driving", city = "全国", strategy } = params;
+  const { origin, destination, mode = "driving", city } = params;
 
   if (!origin || !destination) {
     return {
@@ -114,283 +89,26 @@ export async function executeAmapRouteSearch(params: AmapRouteParams): Promise<A
     };
   }
 
-  const amapKey = getAmapKey();
-  if (!amapKey) {
-    return {
-      success: false,
-      mode,
-      origin,
-      destination,
-      routes: [],
-      error: "Amap API proxy not available. Ensure the /api/amap endpoint is deployed.",
-    };
-  }
+  const amapMode = MODE_MAP[mode] || "car";
+  const navLink =
+    "https://uri.amap.com/route/plan?from=" +
+    encodeURIComponent(origin) +
+    "&to=" +
+    encodeURIComponent(destination) +
+    "&mode=" +
+    amapMode +
+    (city ? "&city=" + encodeURIComponent(city) : "") +
+    "&callnative=1";
 
-  const apiUrl = AMAP_DIRECTION_API_BASE[mode];
-  if (!apiUrl) {
-    return {
-      success: false,
-      mode,
-      origin,
-      destination,
-      routes: [],
-      error: `Unsupported route mode: ${mode}. Use 'driving', 'transit', 'walking', or 'riding'.`,
-    };
-  }
-
-  try {
-    const params_obj = new URLSearchParams({
-      endpoint: apiUrl,
-      origin: normalizeLocation(origin),
-      destination: normalizeLocation(destination),
-      output: "json",
-    });
-
-    // Transit mode requires city parameter
-    if (mode === "transit") {
-      params_obj.set("city", city);
-      params_obj.set("cityd", city);
-    }
-
-    // Strategy for driving/transit
-    if (strategy !== undefined) {
-      params_obj.set("strategy", String(strategy));
-    }
-
-    const url = `/api/amap?${params_obj}`;
-    const response = await fetch(url, {
-      signal: AbortSignal.timeout(10000),
-      headers: { Accept: "application/json" },
-    });
-
-    if (!response.ok) {
-      throw new Error(`Amap API returned HTTP ${response.status}`);
-    }
-
-    const data = await response.json();
-
-    if (data.status !== "1") {
-      return {
-        success: false,
-        mode,
-        origin,
-        destination,
-        routes: [],
-        error: `Amap API error: ${data.info || "Unknown error"} (infocode: ${data.infocode})`,
-      };
-    }
-
-    const routes: AmapRoute[] = parseRoutes(data, mode);
-
-    return {
-      success: routes.length > 0,
-      mode,
-      origin,
-      destination,
-      routes,
-    };
-  } catch (error) {
-    return {
-      success: false,
-      mode,
-      origin,
-      destination,
-      routes: [],
-      error: `Amap route search failed: ${String(error)}`,
-    };
-  }
-}
-
-// ============================================
-// Response Parsing
-// ============================================
-
-function parseRoutes(data: Record<string, unknown>, mode: string): AmapRoute[] {
-  switch (mode) {
-    case "driving":
-      return parseDrivingRoutes(data);
-    case "transit":
-      return parseTransitRoutes(data);
-    case "walking":
-      return parseWalkingRoutes(data);
-    case "riding":
-      return parseRidingRoutes(data);
-    default:
-      return [];
-  }
-}
-
-function parseDrivingRoutes(data: Record<string, unknown>): AmapRoute[] {
-  const route = data.route as Record<string, unknown> | undefined;
-  if (!route) return [];
-
-  const paths = Array.isArray(route.paths) ? route.paths : [];
-  return paths.slice(0, 3).map((path: Record<string, unknown>) => {
-    const steps = Array.isArray(path.steps)
-      ? (path.steps as Array<Record<string, unknown>>).map((s) => ({
-          instruction: String(s.instruction || ""),
-          road: s.road ? String(s.road) : undefined,
-          distance: s.distance ? `${s.distance}m` : undefined,
-          duration: s.duration ? `${Math.round(Number(s.duration) / 60)}min` : undefined,
-          action: s.action ? String(s.action) : undefined,
-          assistantAction: s.assistant_action ? String(s.assistant_action) : undefined,
-        }))
-      : [];
-
-    return {
-      distance: formatDistance(Number(path.distance) || 0),
-      duration: formatDuration(Number(path.duration) || 0),
-      steps,
-      taxiCost: path.tolls ? `¥${path.tolls}` : undefined,
-      tolls: path.tolls ? `¥${path.tolls}` : undefined,
-    };
-  });
-}
-
-function parseTransitRoutes(data: Record<string, unknown>): AmapRoute[] {
-  const route = data.route as Record<string, unknown> | undefined;
-  if (!route) return [];
-
-  const transits = Array.isArray(route.transits) ? route.transits : [];
-  return transits.slice(0, 3).map((transit: Record<string, unknown>) => {
-    const segments: AmapRouteSegment[] = [];
-    const steps = Array.isArray(transit.segments) ? transit.segments : [];
-
-    for (const seg of steps) {
-      const bus = seg.bus as Record<string, unknown> | undefined;
-      const railway = seg.railway as Record<string, unknown> | undefined;
-      const taxi = seg.taxi as Record<string, unknown> | undefined;
-
-      if (bus && Array.isArray(bus.buslines) && bus.buslines.length > 0) {
-        const line = bus.buslines[0] as Record<string, unknown>;
-        segments.push({
-          mode: "bus",
-          lineName: line.name ? String(line.name) : undefined,
-          departureStop: line.departure_stop
-            ? String((line.departure_stop as Record<string, unknown>).name || "")
-            : undefined,
-          arrivalStop: line.arrival_stop
-            ? String((line.arrival_stop as Record<string, unknown>).name || "")
-            : undefined,
-          stationNum: line.via_num ? Number(line.via_num) + 1 : undefined,
-        });
-      }
-
-      if (railway) {
-        segments.push({
-          mode: "railway",
-          lineName: railway.name ? String(railway.name) : undefined,
-          departureStop: railway.departure_stop
-            ? String((railway.departure_stop as Record<string, unknown>).name || "")
-            : undefined,
-          arrivalStop: railway.arrival_stop
-            ? String((railway.arrival_stop as Record<string, unknown>).name || "")
-            : undefined,
-          departureTime: railway.departure_stop
-            ? String((railway.departure_stop as Record<string, unknown>).time || "")
-            : undefined,
-          arrivalTime: railway.arrival_stop
-            ? String((railway.arrival_stop as Record<string, unknown>).time || "")
-            : undefined,
-          price: railway.price ? `¥${railway.price}` : undefined,
-          stationNum: railway.via_num ? Number(railway.via_num) + 1 : undefined,
-        });
-      }
-
-      if (taxi) {
-        segments.push({
-          mode: "taxi",
-          price: taxi.price ? `¥${taxi.price}` : undefined,
-        });
-      }
-
-      // Walking segment
-      if (seg.walking) {
-        const walking = seg.walking as Record<string, unknown>;
-        if (walking.distance && Number(walking.distance) > 0) {
-          segments.push({
-            mode: "walking",
-            distance: formatDistance(Number(walking.distance)),
-            duration: walking.duration ? formatDuration(Number(walking.duration)) : undefined,
-          });
-        }
-      }
-    }
-
-    return {
-      distance: formatDistance(Number(transit.distance) || 0),
-      duration: formatDuration(Number(transit.duration) || 0),
-      steps: [],
-      segments,
-      taxiCost: transit.cost ? `¥${transit.cost}` : undefined,
-    };
-  });
-}
-
-function parseWalkingRoutes(data: Record<string, unknown>): AmapRoute[] {
-  const route = data.route as Record<string, unknown> | undefined;
-  if (!route) return [];
-
-  const paths = Array.isArray(route.paths) ? route.paths : [];
-  return paths.slice(0, 2).map((path: Record<string, unknown>) => {
-    const steps = Array.isArray(path.steps)
-      ? (path.steps as Array<Record<string, unknown>>).map((s) => ({
-          instruction: String(s.instruction || ""),
-          road: s.road ? String(s.road) : undefined,
-          distance: s.distance ? `${s.distance}m` : undefined,
-          duration: s.duration ? `${Math.round(Number(s.duration) / 60)}min` : undefined,
-        }))
-      : [];
-
-    return {
-      distance: formatDistance(Number(path.distance) || 0),
-      duration: formatDuration(Number(path.duration) || 0),
-      steps,
-    };
-  });
-}
-
-function parseRidingRoutes(data: Record<string, unknown>): AmapRoute[] {
-  const data_inner = data.data as Record<string, unknown> | undefined;
-  if (!data_inner) return [];
-
-  const paths = Array.isArray(data_inner.paths) ? data_inner.paths : [];
-  return paths.slice(0, 2).map((path: Record<string, unknown>) => {
-    const steps = Array.isArray(path.steps)
-      ? (path.steps as Array<Record<string, unknown>>).map((s) => ({
-          instruction: String(s.instruction || ""),
-          road: s.road ? String(s.road) : undefined,
-          distance: s.distance ? `${s.distance}m` : undefined,
-          duration: s.duration ? `${Math.round(Number(s.duration) / 60)}min` : undefined,
-        }))
-      : [];
-
-    return {
-      distance: formatDistance(Number(path.distance) || 0),
-      duration: formatDuration(Number(path.duration) || 0),
-      steps,
-    };
-  });
-}
-
-// ============================================
-// Helpers
-// ============================================
-
-function formatDistance(meters: number): string {
-  if (meters >= 1000) {
-    return `${(meters / 1000).toFixed(1)}km`;
-  }
-  return `${meters}m`;
-}
-
-function formatDuration(seconds: number): string {
-  if (seconds >= 3600) {
-    const hours = Math.floor(seconds / 3600);
-    const mins = Math.round((seconds % 3600) / 60);
-    return mins > 0 ? `${hours}h${mins}min` : `${hours}h`;
-  }
-  return `${Math.round(seconds / 60)}min`;
+  return {
+    success: true,
+    mode,
+    origin,
+    destination,
+    routes: [],
+    freeNavigationLink: navLink,
+    note: "Free Amap navigation link (no API key required). For real-time schedules/prices use TransportSearch/WebSearch.",
+  };
 }
 
 // ============================================
@@ -402,19 +120,18 @@ export const AmapRouteSearchToolDefinition = {
   function: {
     name: "AmapRouteSearch",
     description:
-      "Get driving, transit, walking, or cycling directions between two locations in China using Amap (高德地图). Returns distance, duration, route steps, transit details (bus/subway lines), and estimated costs.",
+      "Get a FREE Amap (高德地图) navigation deep link between two locations in China (driving, transit, walking, or cycling). No API key required — the link opens Amap for live navigation. For real-time schedules and prices, use TransportSearch / WebSearch.",
     parameters: {
       type: "object",
       properties: {
         origin: {
           type: "string",
           description:
-            "Starting location. Can be a place name (e.g. '天安门') or coordinates 'lng,lat' (e.g. '116.397428,39.90923').",
+            "Starting location. Can be a place name (e.g. 'Tiananmen', '天安门').",
         },
         destination: {
           type: "string",
-          description:
-            "Ending location. Same format as origin: place name or 'lng,lat' coordinates.",
+          description: "Ending location. Same format as origin: place name.",
         },
         mode: {
           type: "string",
@@ -424,13 +141,12 @@ export const AmapRouteSearchToolDefinition = {
         },
         city: {
           type: "string",
-          description:
-            "City name for transit routes (required for transit mode), e.g. '北京', '上海'. Default: '全国'.",
+          description: "City name for transit routes, e.g. 'Beijing', '北京'. Default: none.",
         },
         strategy: {
           type: "number",
           description:
-            "Route strategy for driving: 0=recommended, 1=avoid tolls, 2=shortest distance, 4=avoid highways. For transit: 0=fastest, 1=fewest transfers, 2=cheapest.",
+            "Unused in free mode (Amap app chooses the route). Kept for API compatibility.",
         },
       },
       required: ["origin", "destination"],
