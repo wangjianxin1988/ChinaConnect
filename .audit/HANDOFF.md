@@ -1700,3 +1700,22 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **测试清理**：ccqaotp1787510587701@emalupe.com 已删（admin API）；临时脚本已删（`scripts/_qa-*.mjs` 为 gitignore 临时文件）；保留 qa.otp.20260824015823@chinaconnect.org 备用。
 - **待办（用户）**：1) 配置自定义 SMTP + 调高 rate_limit_email_sent；2) 生产重新部署前端（Cloudflare Pages）使头像/结算/验证/行程/AI 边界等全部生效。
 ---
+
+
+### 2026-08-24 会话 #55：生产部署完成（9 项修复全部上线 chinaengage.org 并实测）
+
+- **起**：承接 #54。发现生产 chinaengage.org 仍是旧构建（`/avatars/avatar-0.svg` 404、pricing 仍显示 Business $29.99 旧价、无 `__SUPABASE_TOKEN__` 初始化）→ 9 项修复仅在本地/分支，未上线。
+- **已执行**：本地复现 CI 构建命令全部通过（`pnpm check:i18n` ✅ + `node node_modules/astro/astro.js build` 26709 页 ✅ + `node scripts/pack-food-details.mjs` ✅），然后 `git push origin master`（f9f1c4e..05de5f4，3 提交：d737c7e 9 项修复 + c39ab61 AI 边界 + 05de5f4 交接）→ GitHub Actions `deploy-cf-pages.yml` 自动构建部署成功（含 Live probe）。
+- **生产实测（全部通过）**：
+  - 头像：`/avatars/avatar-0.svg`/`avatar-11.svg` 200；account 页含 `PRESET_AVATAR_PATHS`（12 个预设头像）。
+  - 结算：Playwright 登录 chinaengage.org → pricing `__SUPABASE_TOKEN__` 填充真实 JWT → 点 Business 订阅 → **checkout 200 → 跳转 `https://www.creem.io/checkout/prod_6wlYIn6Cc2gWZ5G05v9Aoy/ch_...`**（真实 Creem 结账页，不再报 "Please sign in"）。注：返回的是 prod_ 产品结账链接，说明 secrets 已是生产模式（非 /test/checkout）。
+  - 定价：pricing 显示 19.99/191.99（Business 新价），无 29.99。
+  - 注册/验证 + 免密 + 找回：auth-strings chunk 上线（邮箱验证码/验证并登录/请查收邮件/重新发送等）；reset-password 页 200。
+  - AI 高度 + 行程保存：`AIChatPage` bundle 含 `h-[600px]`/`100vh-340px`/行程已生成/保存行程。
+  - AI 边界：chat 函数 v17 生产实测拒绝"写 Python 爬虫抓京东"（"专门提供中国旅行建议…"）。
+- **git 状态**：master 与 origin/master 同步；工作区干净。
+- **待办（用户，外部依赖）**：
+  1. Supabase Dashboard 配置自定义 SMTP 并调高 `rate_limit_email_sent`（2 → 如 30）。当前无 SMTP 时平台限流 ~2 封/小时，真实用户注册/验证码/找回邮件可能间歇 429（代码链路已全部修复，本会话真实邮件 E2E 已证明）。
+  2. Creem 正式收款待 Creem 团队审核放行（KYC 已过、支付宝收款账户已绑定，#49）；当前 checkout 已返回生产结账链接。
+  3. 生产环境建议后续把 Supabase 项目页面的 custom domain / 邮件模板等按需完善（非阻塞）。
+---
