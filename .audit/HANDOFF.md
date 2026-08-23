@@ -1553,7 +1553,6 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **下个会话**: 先跑 `supabase functions list --project-ref xyvuqbpwrhkukjgzveyc` 确认现状；等用户提供 Creem 凭据后配 secrets → 部署 3 个函数 → test mode 实测 checkout→webhook→membership 全链路 → 提交代码（本次改动未 commit）。
 - **注意**: 本次代码未 commit、未部署；HEAD 仍为 cad1695。测试账号 A（business/无限 ad40046a-7b57-48a5-9840-6a0e908bbe39）/ B（free 99a82a6f-777d-4871-93fc-0ae22e3f535f）可复用。
 
-
 ### 2026-08-23 会话 #47：Creem 后台配置完成（用户已登录，AI 代操作）
 
 - **背景**: 用户在浏览器登录 Creem（商店 xinshoping，sto_G1sBQFxCPAc9mdr5YITWi），授权 AI 通过浏览器代操作完成后台配置。
@@ -1573,7 +1572,6 @@ ode scripts/check-i18n.mjs && npx astro build。
   1. Creem 后台当前无 test/live 切换入口；余额页显示“测试模式下不可用支付”。产品 mode=prod 已就绪。
   2. 支付账户未配置：需用户本人完成 3 步（业务详情/KYC-KYB/添加收款账户），涉及敏感信息，AI 不可代办。
   3. 下一步：用户确认后配置 Supabase Secrets（CREEM_API_KEY/CREEM_WEBHOOK_SECRET/6 个产品/SITE_URL/CREEM_TEST_MODE=false），部署 checkout（verify-jwt）、checkout-webhook 与 checkout-verify（--no-verify-jwt），做真实小额定单全链路测试，再切正式收款。
-
 
 ### 2026-08-23 会话 #48：Creem Secrets 配置 + 3 函数部署 + 测试模式全链路实测通过
 
@@ -1595,7 +1593,6 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **待办（用户）**: 完成 KYC/收款账户（余额→支付账户 3 步）→ 之后切换到 Live：重新获取 prod 环境 key/产品已在 #47 建好（prod_6IW7... 等），把 secrets 切回 prod（CREEM_TEST_MODE=false + prod key + 6 个 prod 产品 + prod webhook secret whsec_TAhA2O4y14ObSBJhf6vgm），再做真实 1 美元级订单终验。
 - **注意**: 本会话改动未提交（git status 含 checkout/checkout-webhook/checkout-verify 改动 + HANDOFF）；未跑 pnpm build（prebuild 会损坏 i18n 数据，前端改动仅 pricing/success 页面已在 #46 验证）。
 
-
 ### 2026-08-23 会话 #49：KYC 全部通过 + 支付宝收款账户绑定 + Secrets 切生产（真实收款前最后一步 = Creem 团队审核）
 
 - **起**: 用户提供真实身份（王建信 / 身份证 370683198812077235 / 支付宝 18801400211）并授权 AI 操作真实收款入驻。用户本人在浏览器手动完成 Sumsub 活体检测（"验证指挥中心操作完成"）。
@@ -1613,7 +1610,6 @@ ode scripts/check-i18n.mjs && npx astro build。
   3. 支付开发全部收尾后：按 §2 P0 遗留轮换密钥（Supabase service_role / MiniMax / AnySearch / 高德 / Pexels）。
 - **注意**: 未跑 pnpm build（prebuild 会损坏 i18n）；本次无代码改动，仅 Secrets 变更 + 后台配置；真实支付尚未发生（避免误扣费）。
 
-
 ### 2026-08-24 会话 #50：登录页「社交账号登录正在配置中」误报修复（Google/GitHub 本就已启用）
 
 - **用户反馈**: 登录页显示「社交账号登录正在配置中，请先使用邮箱和密码登录」，但 Google/GitHub 第三方登录早已实现。
@@ -1626,7 +1622,6 @@ ode scripts/check-i18n.mjs && npx astro build。
   - 浏览器打开 `https://chinaengage.org/zh-CN/auth/login` → 横幅消失，「或使用以下方式继续 / Google / GitHub」按钮正常显示。
   - 注意：首次部署后旧响应可能被 CDN 短暂缓存，带 `?cb=` 参数可绕过。
 - **提交**: a166bdc（wrangler.toml + workflow + HANDOFF #49）、282d6c3（workflow 修复 binding 冲突）。CI deploy 成功（run 32650271211，部署 9c2b3f7d.chinaconnect.pages.dev → 生产域名已更新）。
-
 
 ### 2026-08-24 会话 #51：修复「点击退出登录后仍停留在 AI 对话页且还能继续对话」
 
@@ -1647,7 +1642,6 @@ ode scripts/check-i18n.mjs && npx astro build。
   - 注意：本地 dev 不挂载 `functions/`（`/api/auth/signout` 404），但客户端清理逻辑独立生效——这正是修复的关键。
 - **提交**: 见 git log（本会话提交）。
 - **下一步**: 推送 master 触发 CI 部署（deploy-cf-pages.yml）；后续若再出现「退出后仍可操作」类反馈，优先检查是否有新的登录入口未走统一 signOut 清理。
-
 
 ### 2026-08-24 会话 #52：9 项问题反馈修复（头像 / 结算 / 注册验证 / 免密登录 / 找回密码 / AI 高度 / 行程保存 / AI 边界 / 定价统一）
 
@@ -1684,3 +1678,25 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **验证**：`npx tsc --noEmit` 0 错误；`node scripts/check-i18n.mjs` 12/12、0 缺失。
 - **测试清理**：qa.signup2.* 已删；qa.otp.20260824015823 已重置 ai_usage（保留用于 /otp 真实发信 E2E）；测试 ai_routes 行已删。
 - **待办（下个会话）**：1) 用户确认后 `supabase functions deploy chat`（让服务端边界生效）；2) 用户 Dashboard 配置自定义 SMTP 并调高 `rate_limit_email_sent`（否则真实用户注册/验证码/找回邮件会被 429 阻断）；3) /otp 真实发信 E2E 需等限流窗口重置（上次成功 ~01:49+08，预计 02:49 后）或 SMTP 配置后。
+
+### 2026-08-24 会话 #54：chat v17 部署 + 真实邮件全链路实证（问题 3/4 完成、问题 8 生产生效）
+
+- **起**：承接 #53。目标：完成问题 4 真实邮件最后一环 + 让问题 8 服务端边界在生产生效。
+- **问题 8 已完成并部署**：`supabase functions deploy chat` → **v17**（原 v16 为 08-22 部署，缺 SCOPE_DIRECTIVE）。生产直连测试（无客户端系统提示词）：
+  - "写 Python 爬虫抓京东价格" → 拒绝（"作为中国旅行助手…"）✅
+  - "帮我写一个网站搭建的开发计划"（带客户端 SYSTEM_PROMPT）→ 拒绝 ✅
+  - "上海2日游行程" → 正常输出完整行程（1140 字）✅
+  - 根因修复：`supabase/functions/chat/index.ts:699` SCOPE_DIRECTIVE 无条件追加（原在 `if(langDir)` 内，请求不带 language 时服务端边界完全跳过）。
+- **问题 3 真实邮件闭环（实测）**：
+  - 用 mail.tm（emalupe.com = mail.tm 唯一活跃域）建测试邮箱 `ccqaotp1787510587701@emalupe.com`。
+  - 浏览器 localhost:4322 注册 → **真实收到确认邮件**（noreply@mail.app.supabase.io，"Confirm your email address"）→ 点击 `verify?token=pkce_...&type=signup&redirect_to=http://localhost:4322/zh-CN/auth/callback` → 落地 `/zh-CN/account` 且 `email_confirmed_at` 已写（DB 时间 18:47:11Z，**注意 Supabase DB 时钟比本地慢约 3.3 分钟**）。
+- **问题 4 免密验证码真实邮件全链路（实测完成）**：
+  1. 真实 OTP 邮件到达 mail.tm：subject "Your sign-in link"，HTML 渲染 `<strong>740901</strong>`（自定义模板 `mailer_templates_magic_link_content` 的 `{{ .Token }}` 生效）。
+  2. `POST /auth/v1/verify`（email + 码 740901 + type=email）→ **200 + 真实 session**（码来自真实邮件）。
+  3. 浏览器 UI（拦截 /otp 让表单出现，因发信被限流）→ 输入 generate_link 新码 936217 → **跳转 `/zh-CN/account`、localStorage 有真实会话、header 显示预设头像 `/avatars/avatar-0.svg`**。
+  4. 说明：码为一次性，API 验证后即失效（再输入报 "Token has expired or is invalid" 属预期）。
+- **平台邮件限流（唯一剩余外部阻塞）**：`rate_limit_email_sent=2`、无自定义 SMTP，实测 `429 over_email_send_rate_limit`（约 1 封/小时节奏）。gotrue 源码：`internal/api/mail.go:805` 唯一限流点；`conf/rate.go` 默认 `2/1h` IntervalLimiter（固定窗口，相对进程启动）。**用户必须 Dashboard 配置自定义 SMTP 并调高限流，否则真实用户高频注册/验证码/找回邮件会被 429 阻断**。
+- **验证**：`npx tsc --noEmit` 0 错误；`node scripts/check-i18n.mjs` 12/12、0 缺失。
+- **测试清理**：ccqaotp1787510587701@emalupe.com 已删（admin API）；临时脚本已删（`scripts/_qa-*.mjs` 为 gitignore 临时文件）；保留 qa.otp.20260824015823@chinaconnect.org 备用。
+- **待办（用户）**：1) 配置自定义 SMTP + 调高 rate_limit_email_sent；2) 生产重新部署前端（Cloudflare Pages）使头像/结算/验证/行程/AI 边界等全部生效。
+---
