@@ -1528,3 +1528,69 @@ ode scripts/check-i18n.mjs && npx astro build。
   6. **cookie Secure 标志**: sb-auth-token cookie 加 Secure 标志。
 
 - **注意**: 本会话未跑 pnpm build（prebuild 翻译会损坏数据）；测试账号 A（business/无限 `ad40046a-7b57-48a5-9840-6a0e908bbe39`）/ B（free `99a82a6f-777d-4871-93fc-0ae22e3f535f`）可复用。
+
+### 2026-08-23 会话 #46（Creem 支付开发 — 渠道确认后核心实现完成）
+
+- **起**: 用户确认主力支付渠道 = Creem（费率 3.9%+$0.40，MoR 合规，支持支付宝/银行转账/USDC 提现回国，中国大陆个人可注册）。本会话完成支付核心代码实现 + 本地全链路验证。
+- **改动（7 个文件 + 1 个新函数）**:
+  - `supabase/functions/checkout/index.ts` 重写: 认证头改 `x-api-key`（原错误用 Authorization: Bearer）；产品映射扩为 6 个 env（3 套餐 × monthly/yearly，Creem 产品自带 billing_period，无 billing 参数）；billing 归一化兼容 annual/yearly；success_url 去掉 session 参数（Creem 自动追加回调参数）；支持 CREEM_TEST_MODE=true 切 test-api.creem.io；去掉 customer.id（Creem 客户 ID 不能用内部 UUID）；加 request_id 关联。
+  - `supabase/functions/checkout-webhook/index.ts` 重写: 事件名读 `payload.eventType`（原读 event_type 错）；数据从 `payload.object` 取；HMAC-SHA256 用 timing-safe 比较（修复交接 #45 遗留第 5 项）；金额从 `object.order.amount` 或 `object.product.price` 取并 ÷100；`checkout.completed`/`subscription.paid` 建单+激活（幂等：先查 orders.external_order_id）；`subscription.paid` 续费延长同一条 membership 的 expires_at（用 Creem current_period_end_date），不重复开新会员；`subscription.active` 只做同步不建单（防重复订单）；`subscription.canceled`（单 l）标记取消；`subscription.scheduled_cancel` 保留访问关 auto_renew；`subscription.past_due` 记录；metadata 从 `object.metadata` 取 user_id/tier/billing/subscription_id。
+  - 新增 `supabase/functions/checkout-verify/index.ts`: 用 CREEM_API_KEY 作盐验签成功页重定向签名（按 URL 参数顺序拼接、排除 null/空、SHA-256 hex、timing-safe 比较），通过后查 orders 返回真实 tier；未落库则返回 pending。
+  - `src/pages/[lang]/checkout/success.astro` + `src/pages/checkout/success.astro`（英文默认页）: 从 URL 读 Creem 回调参数 → POST checkout-verify 验签 → 显示成功 + 轮询 membership（2s×8 次 verify + 1.5s×10 次 membership）→ 验签通过但 webhook 未落库时用 pending_checkout_tier 兜底显示成功。
+  - `src/pages/[lang]/pricing.astro` + `src/pages/pricing.astro`: 订阅按钮 billing 传值 annual→yearly（与后端归一化一致，修原「点年度却当月度」bug）。
+  - `.env.example`: 补 CREEM_PRODUCT_{EXPLORER,TRAVELER,BUSINESS}_{MONTHLY,YEARLY} 6 个产品 env、CREEM_TEST_MODE、CREEM_BASE_URL、SITE_URL。
+- **验证（本地全绿）**:
+  - `deno check` 3 个函数 0 错误。
+  - `checkout-verify` 功能测试 5/5：有效签名接受 / 篡改拒绝 / 空值排除 / 缺失签名拒绝。
+  - `checkout-webhook` 全流程 Mock PostgREST 测试 37/37：首购激活（金额分→元、tier_id、external_order_id、billing）／重复事件幂等／续费延长同 membership／取消（单 l）／scheduled_cancel 保访问／subscription.active 同步不建单。
+  - `pnpm typecheck` 0 错误（未跑 pnpm build，prebuild 会损坏 i18n 数据）。
+- **遗留/待办（需要用户提供才能继续）**:
+  1. **用户需在 Creem（creem.io）注册并创建 6 个产品**（Explorer/Traveler/Business × Monthly/Yearly，价格 4.99/47.99、9.99/95.99、19.99/191.99 USD），从 Dashboard 复制 API Key + Webhook Secret。
+  2. **Webhook URL 填**: `https://xyvuqbpwrhkukjgzveyc.supabase.co/functions/v1/checkout-webhook`，勾选 checkout.completed / subscription.active / subscription.paid / subscription.canceled / subscription.scheduled_cancel / subscription.past_due。
+  3. **配置 Supabase Secrets**（checkout / checkout-webhook / checkout-verify 三个函数）: CREEM_API_KEY、CREEM_WEBHOOK_SECRET、6 个 CREEM_PRODUCT_*、SITE_URL、SUPABASE_SERVICE_ROLE_KEY（已有）；测试阶段加 CREEM_TEST_MODE=true。
+  4. **部署**: `supabase functions deploy checkout --project-ref xyvuqbpwrhkukjgzveyc`（保留 verify-jwt）；`checkout-webhook` 与 `checkout-verify` 必须 `--no-verify-jwt`（Creem 回调与浏览器无 Authorization 头）。
+  5. **测试模式全链路实测**（test-api.creem.io + 测试产品）后再切生产。
+- **下个会话**: 先跑 `supabase functions list --project-ref xyvuqbpwrhkukjgzveyc` 确认现状；等用户提供 Creem 凭据后配 secrets → 部署 3 个函数 → test mode 实测 checkout→webhook→membership 全链路 → 提交代码（本次改动未 commit）。
+- **注意**: 本次代码未 commit、未部署；HEAD 仍为 cad1695。测试账号 A（business/无限 ad40046a-7b57-48a5-9840-6a0e908bbe39）/ B（free 99a82a6f-777d-4871-93fc-0ae22e3f535f）可复用。
+
+
+### 2026-08-23 会话 #47：Creem 后台配置完成（用户已登录，AI 代操作）
+
+- **背景**: 用户在浏览器登录 Creem（商店 xinshoping，sto_G1sBQFxCPAc9mdr5YITWi），授权 AI 通过浏览器代操作完成后台配置。
+- **已完成**:
+  1. 创建 6 个产品（USD，recurring，tax_category=digital-goods-service）：
+     - Explorer Monthly $4.99 = prod_6IW7zqp1TLW5s1xmtzJVrL
+     - Explorer Yearly $47.99 = prod_5GnN6XBDgGhmuaZkywhGZ
+     - Traveler Monthly $9.99 = prod_5W19RkpdtY4Gd9PGNJhuPT
+     - Traveler Yearly $95.99 = prod_3Wf7i32YLWV9584I7TQTFu
+     - Business Monthly $19.99 = prod_6wlYIn6Cc2gWZ5G05v9Aoy
+     - Business Yearly $191.99 = prod_47vko6ERNkJXKfubzYVEXs
+     - API 验证通过：GET api.creem.io/v1/products/search 返回 6 个产品，mode=prod，价格/周期正确。
+  2. 创建 API Key：creem_2aq0YMk4waUvi2RS7BdvR7（仅生产 api.creem.io 有效；test-api.creem.io 返回 401）。
+  3. 创建 Webhook：名称 chinaengage checkout-webhook，URL = https://xyvuqbpwrhkukjgzveyc.supabase.co/functions/v1/checkout-webhook，ID = wh_61NMJKwLO8M0zmj3WtdnBJ，启用 6 事件：checkout.completed / subscription.active / subscription.canceled / subscription.scheduled_cancel / subscription.paid / subscription.past_due。签名密钥 whsec_TAhA2O4y14ObSBJhf6vgm。
+- **凭据已保存**: .env.creem.local（gitignore 已排除，勿提交/勿外发）。
+- **注意/遗留**:
+  1. Creem 后台当前无 test/live 切换入口；余额页显示“测试模式下不可用支付”。产品 mode=prod 已就绪。
+  2. 支付账户未配置：需用户本人完成 3 步（业务详情/KYC-KYB/添加收款账户），涉及敏感信息，AI 不可代办。
+  3. 下一步：用户确认后配置 Supabase Secrets（CREEM_API_KEY/CREEM_WEBHOOK_SECRET/6 个产品/SITE_URL/CREEM_TEST_MODE=false），部署 checkout（verify-jwt）、checkout-webhook 与 checkout-verify（--no-verify-jwt），做真实小额定单全链路测试，再切正式收款。
+
+
+### 2026-08-23 会话 #48：Creem Secrets 配置 + 3 函数部署 + 测试模式全链路实测通过
+
+- **背景**: 用户授权 AI 全权操作（配置 Supabase Secrets、部署、测试）。
+- **已配置 Secrets**（项目 xyvuqbpwrhkukjgzveyc）: CREEM_API_KEY（当前 test key creem_test_2UQ5ExEJtDuusCUcFXcwW0）、CREEM_WEBHOOK_SECRET（test whsec_2EFPg2ricqMc6RyuQlXGxY）、6 个 CREEM_PRODUCT_*（test 环境产品 ID）、SITE_URL=https://chinaengage.org、CREEM_TEST_MODE=true。
+- **已部署**（版本号见 supabase dashboard）: checkout（verify-jwt 保留）、checkout-webhook（--no-verify-jwt）、checkout-verify（--no-verify-jwt）。
+- **发现的 bug 与修复**:
+  1. checkout 函数发送 cancel_url 被 Creem API 拒绝（property cancel_url should not exist）→ 已删除 cancel_url/cancelUrl。
+  2. checkout-webhook 的 subscription.paid 用 order_type="membership_renewal" 违反 orders_order_type_check（合法值 recharge/membership_upgrade/membership_renew/membership_new）→ 改为 "membership_renew"。同时改进错误日志：PostgREST 错误 JSON.stringify（含 message/code/details/hint），不再 [object Object]。
+- **测试模式全链路实测（真实测试支付，账号 B=free，user_id 99a82a6f-777d-4871-93fc-0ae22e3f535f）**:
+  - checkout 创建成功（测试链接 /test/checkout/...）。
+  - 结账页选国家 China + 测试卡 4242 4242 4242 4242 / 12/34 / 123 / 持卡人姓名 Test User → 支付成功（订单 ORD-1A02EC8E99AF79D0）。
+  - webhook checkout.completed 成功 → orders 新订单（membership_new, $4.99, external ord_2z9juT7A0ym0n1MfxOoP8U, subscription sub_4OUvlB6JTDddzYMOG2u39v）+ user_memberships active（explorer/monthly, expires 2026-09-23）。
+  - webhook subscription.paid 修复后重发成功 → 续费订单（membership_renew, external tran_5RkUNS6FnlJ81OrTftGg3q），membership 同一条延长 expires_at。
+  - AI 档位同步: get_user_ai_usage → explorer/max_requests=20; get_user_membership → Explorer/active。
+  - checkout-verify 验签: 真实签名 valid:true + 查回订单（explorer/monthly/paid）；篡改签名 valid:false；签名正确但订单不存在 order:null（成功页 pending 设计）。
+  - webhook 伪造签名 401。
+- **关键环境事实**: Creem 后台有测试/生产切换（余额页底部入口 /dashboard/test-mode）。测试环境产品/API Key/Webhook 全部独立（之前会话 #47 创建的是 prod 环境）。当前 CREEM_TEST_MODE=true + test key 生效中。
+- **待办（用户）**: 完成 KYC/收款账户（余额→支付账户 3 步）→ 之后切换到 Live：重新获取 prod 环境 key/产品已在 #47 建好（prod_6IW7... 等），把 secrets 切回 prod（CREEM_TEST_MODE=false + prod key + 6 个 prod 产品 + prod webhook secret whsec_TAhA2O4y14ObSBJhf6vgm），再做真实 1 美元级订单终验。
+- **注意**: 本会话改动未提交（git status 含 checkout/checkout-webhook/checkout-verify 改动 + HANDOFF）；未跑 pnpm build（prebuild 会损坏 i18n 数据，前端改动仅 pricing/success 页面已在 #46 验证）。

@@ -623,7 +623,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
             "Content-Type": "application/json",
             Authorization: "Bearer " + accessToken,
           },
-          body: JSON.stringify({ tier, billing: currentBilling, lang: (window.__I18N__ && window.__I18N__.serverLang) || "en" }),
+          body: JSON.stringify({ tier, billing: currentBilling === "annual" ? "yearly" : "monthly", lang: (window.__I18N__ && window.__I18N__.serverLang) || "en" }),
         });
 
         const data = await response.json();

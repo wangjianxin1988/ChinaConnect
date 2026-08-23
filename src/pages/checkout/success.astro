@@ -78,65 +78,110 @@ const description = translations.en.checkoutPage?.description || "Your subscript
 </BaseLayout>
 
 <script>
-  async function verifyCheckout() {
+  function collectParams() {
     const params = new URLSearchParams(window.location.search);
-    const sessionId = params.get("session") || params.get("session_id");
+    const ordered = [];
+    params.forEach((value, key) => {
+      ordered.push([key, value]);
+    });
+    return ordered;
+  }
 
+  async function verifyWithServer() {
+    const ordered = collectParams();
+    if (ordered.length === 0) return { valid: false, error: "no_params" };
+    const supabaseUrl = window.__SUPABASE_URL__ || "";
+    const signature = new URLSearchParams(window.location.search).get("signature") || "";
+    const res = await fetch(supabaseUrl + "/functions/v1/checkout-verify", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ params: ordered, signature }),
+    });
+    if (!res.ok) throw new Error("verify request failed: " + res.status);
+    return res.json();
+  }
+
+  async function fetchMembership() {
+    const supabaseUrl = window.__SUPABASE_URL__ || "";
+    const accessToken = window.__SUPABASE_TOKEN__ || "";
+    const anonKey = window.__SUPABASE_ANON_KEY__ || "";
+    if (!supabaseUrl || !accessToken) return null;
+    const res = await fetch(
+      supabaseUrl +
+        "/rest/v1/user_memberships?select=membership_tiers(slug,name),status,expires_at&status=eq.active&order=created_at.desc&limit=1",
+      { headers: { apikey: anonKey, Authorization: "Bearer " + accessToken } },
+    );
+    if (!res.ok) return null;
+    const rows = await res.json();
+    return rows && rows.length > 0 ? rows[0] : null;
+  }
+
+  function showSuccess(tierName) {
     const loadingEl = document.getElementById("checkout-loading");
     const successEl = document.getElementById("checkout-success");
     const errorEl = document.getElementById("checkout-error");
     const messageEl = document.getElementById("success-message");
 
-    if (!sessionId) {
-      loadingEl?.classList.add("hidden");
-      errorEl?.classList.remove("hidden");
-      return;
+    const pendingTier = localStorage.getItem("pending_checkout_tier");
+    const tier = tierName ? tierName.slug : pendingTier;
+    if (tier) localStorage.setItem("subscription_tier", tier);
+
+    if (tierName && messageEl) {
+      messageEl.textContent = "Your " + tierName.name + " plan is now active.";
+    } else if (pendingTier && messageEl) {
+      messageEl.textContent =
+        "Your " + pendingTier.charAt(0).toUpperCase() + pendingTier.slice(1) + " plan is now active.";
     }
 
+    localStorage.removeItem("pending_checkout_tier");
+    loadingEl?.classList.add("hidden");
+    errorEl?.classList.add("hidden");
+    successEl?.classList.remove("hidden");
+  }
+
+  function showError() {
+    const loadingEl = document.getElementById("checkout-loading");
+    const successEl = document.getElementById("checkout-success");
+    const errorEl = document.getElementById("checkout-error");
+    loadingEl?.classList.add("hidden");
+    successEl?.classList.add("hidden");
+    errorEl?.classList.remove("hidden");
+    localStorage.removeItem("pending_checkout_tier");
+  }
+
+  async function verifyCheckout() {
+    const params = new URLSearchParams(window.location.search);
+    if (!params.get("checkout_id") && !params.get("signature")) {
+      showError();
+      return;
+    }
     try {
-      // Wait briefly so the webhook has time to land
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-
-      const supabaseUrl = (window).__SUPABASE_URL__ || "";
-      const accessToken = (window).__SUPABASE_TOKEN__ || "";
-
-      if (supabaseUrl && accessToken) {
-        // Pull the current membership from Supabase and surface the real tier
-        const res = await fetch(supabaseUrl + "/rest/v1/user_memberships?select=membership_tiers(slug,name),status,expires_at&status=eq.active&order=created_at.desc&limit=1", {
-          headers: {
-            apikey: (window).__SUPABASE_ANON_KEY__ || "",
-            Authorization: "Bearer " + accessToken,
-          },
-        });
-        if (res.ok) {
-          const rows = await res.json();
-          const tier = rows?.[0]?.membership_tiers?.slug;
-          const tierName = rows?.[0]?.membership_tiers?.name;
-          if (tier) {
-            localStorage.setItem("subscription_tier", tier);
-            if (tierName && messageEl) {
-              messageEl.textContent = "Your " + tierName + " plan is now active.";
-            }
-          }
-        }
+      let verified = null;
+      for (let attempt = 0; attempt < 8; attempt++) {
+        verified = await verifyWithServer();
+        if (verified && verified.valid === true) break;
+        if (attempt < 7) await new Promise((r) => setTimeout(r, 2000));
       }
-
-      // Fall back to the pending tier that pricing.astro stashed
-      const pendingTier = localStorage.getItem("pending_checkout_tier");
-      if (pendingTier && !localStorage.getItem("subscription_tier")) {
-        localStorage.setItem("subscription_tier", pendingTier);
-        if (messageEl) {
-          messageEl.textContent = "Your " + pendingTier.charAt(0).toUpperCase() + pendingTier.slice(1) + " plan is now active.";
-        }
+      if (!verified || verified.valid !== true) {
+        showError();
+        return;
       }
-      localStorage.removeItem("pending_checkout_tier");
-
-      loadingEl?.classList.add("hidden");
-      successEl?.classList.remove("hidden");
+      if (verified.order && verified.order.tier) {
+        showSuccess({ slug: verified.order.tier, name: verified.order.tier });
+        return;
+      }
+      for (let i = 0; i < 10; i++) {
+        const membership = await fetchMembership();
+        if (membership) {
+          showSuccess(membership.membership_tiers);
+          return;
+        }
+        await new Promise((r) => setTimeout(r, 1500));
+      }
+      showSuccess(null);
     } catch (error) {
       console.error("Checkout verification error:", error);
-      loadingEl?.classList.add("hidden");
-      successEl?.classList.remove("hidden");
+      showSuccess(null);
     }
   }
 
