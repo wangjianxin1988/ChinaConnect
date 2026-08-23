@@ -1612,3 +1612,17 @@ ode scripts/check-i18n.mjs && npx astro build。
   2. 若审核页出现「合规清单」提示（首页 banner 的 合规清单 链接误指向 /dashboard/referrals，是 Creem 路由 bug，非本站问题），需联系 Creem support 确认是否有额外材料。
   3. 支付开发全部收尾后：按 §2 P0 遗留轮换密钥（Supabase service_role / MiniMax / AnySearch / 高德 / Pexels）。
 - **注意**: 未跑 pnpm build（prebuild 会损坏 i18n）；本次无代码改动，仅 Secrets 变更 + 后台配置；真实支付尚未发生（避免误扣费）。
+
+
+### 2026-08-24 会话 #50：登录页「社交账号登录正在配置中」误报修复（Google/GitHub 本就已启用）
+
+- **用户反馈**: 登录页显示「社交账号登录正在配置中，请先使用邮箱和密码登录」，但 Google/GitHub 第三方登录早已实现。
+- **根因**: 登录页通过 `GET /api/auth/providers`（`functions/api/auth/providers.ts`）探测 Supabase 是否启用 OAuth。该函数先调 Supabase `{PUBLIC_SUPABASE_URL}/auth/v1/settings`，失败则回退 `OAUTH_PROVIDERS_ENABLED` allowlist，再否则默认全 false。线上一直返回 `source:"allowlist"` 且为空 → 因为 **`wrangler.toml` 的 `[vars]` 会在 Pages 部署时作为运行时绑定下发，而 `PUBLIC_SUPABASE_ANON_KEY = "REDACTED_JWT"` 是占位符** → Supabase settings 探测拿到的 anon key 非法 → 400 → 回退 allowlist（未设置）→ google/github=false → 登录页隐藏 OAuth 按钮并显示该横幅。Supabase 侧 google/github 实际都是 true。
+- **修复**:
+  1. `wrangler.toml`: 把 `PUBLIC_SUPABASE_ANON_KEY` 从占位符 `REDACTED_JWT` 换成真实 public anon key（`supabase projects api-keys` 获取，本来就是公开值）。此为其根因修复——[vars] 部署后探测成功，`/api/auth/providers` 返回 `source:"supabase"` + google/github=true。
+  2. `.github/workflows/deploy-cf-pages.yml`: 曾尝试把 PUBLIC_SUPABASE_URL/ANON_KEY 用 `wrangler pages secret put` 同步为 Pages Secret，导致与 [vars] 同名绑定冲突（Deploy 报 "Binding name already in use"）。已改为：**删除这两个同名 Secret**（`wrangler pages secret delete ... || true`）+ 只额外同步 `OAUTH_PROVIDERS_ENABLED=google,github` 作为探测失败的兜底 allowlist。
+- **验证（已部署生产）**:
+  - `curl https://chinaengage.org/api/auth/providers?cb=<ts>` → `{google:true, github:true, email:true, source:"supabase"}`。
+  - 浏览器打开 `https://chinaengage.org/zh-CN/auth/login` → 横幅消失，「或使用以下方式继续 / Google / GitHub」按钮正常显示。
+  - 注意：首次部署后旧响应可能被 CDN 短暂缓存，带 `?cb=` 参数可绕过。
+- **提交**: a166bdc（wrangler.toml + workflow + HANDOFF #49）、282d6c3（workflow 修复 binding 冲突）。CI deploy 成功（run 32650271211，部署 9c2b3f7d.chinaconnect.pages.dev → 生产域名已更新）。
