@@ -1594,3 +1594,21 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **关键环境事实**: Creem 后台有测试/生产切换（余额页底部入口 /dashboard/test-mode）。测试环境产品/API Key/Webhook 全部独立（之前会话 #47 创建的是 prod 环境）。当前 CREEM_TEST_MODE=true + test key 生效中。
 - **待办（用户）**: 完成 KYC/收款账户（余额→支付账户 3 步）→ 之后切换到 Live：重新获取 prod 环境 key/产品已在 #47 建好（prod_6IW7... 等），把 secrets 切回 prod（CREEM_TEST_MODE=false + prod key + 6 个 prod 产品 + prod webhook secret whsec_TAhA2O4y14ObSBJhf6vgm），再做真实 1 美元级订单终验。
 - **注意**: 本会话改动未提交（git status 含 checkout/checkout-webhook/checkout-verify 改动 + HANDOFF）；未跑 pnpm build（prebuild 会损坏 i18n 数据，前端改动仅 pricing/success 页面已在 #46 验证）。
+
+
+### 2026-08-23 会话 #49：KYC 全部通过 + 支付宝收款账户绑定 + Secrets 切生产（真实收款前最后一步 = Creem 团队审核）
+
+- **起**: 用户提供真实身份（王建信 / 身份证 370683198812077235 / 支付宝 18801400211）并授权 AI 操作真实收款入驻。用户本人在浏览器手动完成 Sumsub 活体检测（"验证指挥中心操作完成"）。
+- **Sumsub KYC 完成（全 Approved）**:
+  1. 业务详情向导已提交（个人/自由职业者；Wang Jianxin；山东省莱州市沙河镇战家村160号 / 莱州 / Shandong / 261432；站点 chinaengage.org；支持邮箱 18801400211@163.com）。
+  2. 身份验证：税务居住国 PRC、身份证号 370683198812077235、证件=中国居民身份证 → 活体检测由用户本人完成 → **Verification approved**。
+  3. 收款账户：Creem → 添加支付账户 → Open Paysway → China / CNY / **Alipay** / 账号 18801400211 / 持有人 **Wang Jianxin**（拉丁拼音为 Paysway 要求格式，中文「王建信」会被判 invalid characters）→ 地址 No.160 Zhanjia Village, Shahe Town / Laizhou / SD / 261432 → **Bank payout verification Approved**（Creem 显示 Verified Bank Account: Wang Jianxin / ****0211 / GENERIC）。
+- **生产模式确认**: Creem API 密钥页显示 "chinaengage.org production" key（creem_2aq0YMk4waUvi2RS7BdvR7 生效）；test-mode 页显示「启用测试模式」按钮（即当前已是生产模式）。Webhook 已指向 https://xyvuqbpwrhkukjgzveyc.supabase.co/functions/v1/checkout-webhook（启用 6 事件）。
+- **Supabase Secrets 已切生产**（项目 xyvuqbpwrhkukjgzveyc，digest 已变化确认）: CREEM_TEST_MODE=false、CREEM_API_KEY=creem_2aq0YMk4waUvi2RS7BdvR7、CREEM_WEBHOOK_SECRET=whsec_TAhA2O4y14ObSBJhf6vgm、6 个 prod 产品 ID（prod_6IW7.../prod_5GnN.../prod_5W19.../prod_3Wf7.../prod_6wlY.../prod_47vk...）、SITE_URL=https://chinaengage.org。
+- **生产 checkout 实测（账号 B=free 99a82a6f-777d-4871-93fc-0ae22e3f535f）**: POST /functions/v1/checkout {tier:explorer, billing:monthly} → 200，返回真实链接 https://creem.io/checkout/prod_6IW7zqp1TLW5s1xmtzJVrL/ch_1SsCmK13S4TtUkilcNTlqI（checkoutId ch_1SsCmK13S4TtUkilcNTlqI）。
+- **卡点（真实收款未启用）**: 打开该结账链接显示 "Live payments are not enabled for your account / Account Verification Required"。余额页「完成设置以启用付款」清单 4 项中前 3 项已完成，第 4 项 **Review by Creem Team 待人工审核**（商店整体状态「审核中 4/4」）。此步只能等 Creem 审核（通常 1-3 个工作日），AI 无法代办。
+- **遗留/下一步**:
+  1. Creem 团队审核通过后，重开同一 checkout 链接（或重新创建）→ 完成真实 \.99 支付（用户本人付）→ 验证 webhook → orders + user_memberships + AI 档位全链路。
+  2. 若审核页出现「合规清单」提示（首页 banner 的 合规清单 链接误指向 /dashboard/referrals，是 Creem 路由 bug，非本站问题），需联系 Creem support 确认是否有额外材料。
+  3. 支付开发全部收尾后：按 §2 P0 遗留轮换密钥（Supabase service_role / MiniMax / AnySearch / 高德 / Pexels）。
+- **注意**: 未跑 pnpm build（prebuild 会损坏 i18n）；本次无代码改动，仅 Secrets 变更 + 后台配置；真实支付尚未发生（避免误扣费）。

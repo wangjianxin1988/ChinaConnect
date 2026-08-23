@@ -46,9 +46,15 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
           ANYSEARCH_API_KEY: ${{ secrets.ANYSEARCH_API_KEY }}
+          PUBLIC_SUPABASE_URL: ${{ secrets.PUBLIC_SUPABASE_URL }}
+          PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY }}
+          OAUTH_PROVIDERS_ENABLED: "google,github"
         run: |
           printf "%s" "$MINIMAX_API_KEY" | wrangler pages secret put MINIMAX_API_KEY --project-name=${{ env.CLOUDFLARE_PROJECT_NAME }} --env production
           printf "%s" "$ANYSEARCH_API_KEY" | wrangler pages secret put ANYSEARCH_API_KEY --project-name=${{ env.CLOUDFLARE_PROJECT_NAME }} --env production
+          printf "%s" "$PUBLIC_SUPABASE_URL" | wrangler pages secret put PUBLIC_SUPABASE_URL --project-name=${{ env.CLOUDFLARE_PROJECT_NAME }} --env production
+          printf "%s" "$PUBLIC_SUPABASE_ANON_KEY" | wrangler pages secret put PUBLIC_SUPABASE_ANON_KEY --project-name=${{ env.CLOUDFLARE_PROJECT_NAME }} --env production
+          printf "%s" "$OAUTH_PROVIDERS_ENABLED" | wrangler pages secret put OAUTH_PROVIDERS_ENABLED --project-name=${{ env.CLOUDFLARE_PROJECT_NAME }} --env production
 
       - name: Deploy
         env:
