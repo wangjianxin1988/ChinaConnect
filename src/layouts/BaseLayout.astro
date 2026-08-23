@@ -662,6 +662,23 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
           if (so) {
             so.addEventListener("click", function (e) {
               e.preventDefault();
+              // Clear the persisted Supabase session from localStorage and the
+              // mirrored auth cookie. The server API only clears HttpOnly
+              // cookies; without this the session would be restored on reload
+              // and the user would appear to stay signed in (e.g. AI chat).
+              try {
+                var authKeys = [];
+                for (var ai = 0; ai < localStorage.length; ai++) {
+                  var ak = localStorage.key(ai);
+                  if (ak && (ak.indexOf("sb-") === 0 || ak.indexOf("-auth-token") >= 0)) {
+                    authKeys.push(ak);
+                  }
+                }
+                authKeys.forEach(function (k) { localStorage.removeItem(k); });
+              } catch (err) {}
+              try {
+                document.cookie = "sb-auth-token=; Path=/; Max-Age=0; SameSite=Lax";
+              } catch (err) {}
               fetch(window.location.origin + "/api/auth/signout", { method: "POST", credentials: "same-origin" })
                 .catch(function () {})
                 .finally(function () {

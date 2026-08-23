@@ -198,6 +198,22 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
       }
     });
 
+    // Safety net: when the navbar (or any other surface) broadcasts a sign-out
+    // via cc-auth-changed, lock the chat immediately instead of waiting for a
+    // page reload. Prevents a stale session from continuing to chat.
+    const resetToSignedOut = () => {
+      setIsAuthenticated(false);
+      setConversationHistory([]);
+      setSavedItineraries([]);
+      setMessages([]);
+      conversationIdRef.current = null;
+    };
+    const onAuthChangedEvent = (ev: Event) => {
+      const detail = (ev as CustomEvent<{ authenticated?: boolean }>).detail;
+      if (detail && detail.authenticated === false) resetToSignedOut();
+    };
+    window.addEventListener("cc-auth-changed", onAuthChangedEvent);
+
     // Check MCP availability
     anySearchRef.current.initialize().then(() => {
       if (!cancelled) setIsMCPAvailable(anySearchRef.current.isMCPAvailable());
@@ -206,6 +222,7 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
     return () => {
       cancelled = true;
       sub.subscription.unsubscribe();
+      window.removeEventListener("cc-auth-changed", onAuthChangedEvent);
     };
   }, []);
 

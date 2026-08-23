@@ -1626,3 +1626,24 @@ ode scripts/check-i18n.mjs && npx astro build。
   - 浏览器打开 `https://chinaengage.org/zh-CN/auth/login` → 横幅消失，「或使用以下方式继续 / Google / GitHub」按钮正常显示。
   - 注意：首次部署后旧响应可能被 CDN 短暂缓存，带 `?cb=` 参数可绕过。
 - **提交**: a166bdc（wrangler.toml + workflow + HANDOFF #49）、282d6c3（workflow 修复 binding 冲突）。CI deploy 成功（run 32650271211，部署 9c2b3f7d.chinaconnect.pages.dev → 生产域名已更新）。
+
+
+### 2026-08-24 会话 #51：修复「点击退出登录后仍停留在 AI 对话页且还能继续对话」
+
+- **用户反馈**: 在站内点击「退出登录」后仍停留在 AI 对话页，未退出，且还能继续跟 AI 对话。
+- **根因（链条）**:
+  1. 导航栏退出按钮（`src/layouts/BaseLayout.astro` 的 `#cc-signout` 处理）只 `fetch("/api/auth/signout")` → 派发 `cc-auth-changed` → `location.reload()`，**没有清理客户端 localStorage 里的 Supabase 会话**。
+  2. `functions/api/auth/signout.ts` 只清 `sb-*`/`-auth-token` cookie + 调 Supabase `/auth/v1/logout`（没带用户 access_token，基本无效），**不碰客户端 localStorage**。
+  3. 自定义存储（`src/supabase/config.ts` `createAuthStorage()`）把会话存在 `localStorage["sb-xyvuqbpwrhkukjgzveyc-auth-token"]` + 镜像 cookie `sb-auth-token`；`persistSession: true`。
+  4. 刷新后 `supabase.auth.getUser()` 从 localStorage 恢复会话 → `useAIConversation` 的 `isAuthenticated` 仍为 true → AI 页照常渲染聊天、可继续对话。
+- **修复（2 处，全部语言共用，无 i18n 差异）**:
+  1. `src/layouts/BaseLayout.astro` 退出处理：在调服务端 API 前，先遍历 localStorage 删除所有 `sb-` 前缀 key（含 `sb-xyvuqbpwrhkukjgzveyc-auth-token`）并清除 `sb-auth-token` cookie，再照旧 dispatch + reload。
+  2. `src/hooks/useAIConversation.ts` 加兜底：监听 `cc-auth-changed`，当 `detail.authenticated === false` 时立即 `setIsAuthenticated(false)` 并清空会话/消息/行程本地状态，防止任何退出路径（即使不刷新）在 AI 页残留可对话状态。
+- **验证（本地 dev 实测，真实 Supabase 会话）**:
+  - 用 service_role 建临时账号 `qa-signout-test@chinaconnect.org`（已删除清理），取真实 password grant 会话注入 localStorage + cookie。
+  - 打开 `/zh-CN/ai`：登录态正确（导航用户菜单在、无 Sign In、聊天 textarea 存在）。
+  - 点用户菜单 → 退出登录 → 刷新后断言全部通过：`localStorage sb-*` 为空、`sb-auth-token` cookie 已清、导航变「登录」、AI 页 textarea=0（公开落地页，无法再对话）、URL 仍为 `/zh-CN/ai`（语言未跳英文）。
+  - `pnpm typecheck` 通过；改动文件 biome 通过（全仓 lint 的 440 个报错全部来自 `.audit/` 旧探针脚本，与本次无关）。
+  - 注意：本地 dev 不挂载 `functions/`（`/api/auth/signout` 404），但客户端清理逻辑独立生效——这正是修复的关键。
+- **提交**: 见 git log（本会话提交）。
+- **下一步**: 推送 master 触发 CI 部署（deploy-cf-pages.yml）；后续若再出现「退出后仍可操作」类反馈，优先检查是否有新的登录入口未走统一 signOut 清理。
