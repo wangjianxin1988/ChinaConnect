@@ -691,15 +691,13 @@ Deno.serve(async (req: Request) => {
     "\"I'm ChinaConnect AI, specialized in China travel advice. That's outside what I can help with.\" " +
     "Stay fully helpful within travel: itineraries, food, transport, hotels, visas, payment/SIM tips, " +
     "language phrases, culture, and real-time travel questions are all welcome.";
-  if (langDir) {
-    const lastUserIdx = currentMessages.length - 1;
-    const lastMsg = currentMessages[lastUserIdx];
-    if (lastMsg && lastMsg.role === "user") {
-      currentMessages[lastUserIdx] = {
-        ...lastMsg,
-        content: lastMsg.content + "\n\n" + langDir + SCOPE_DIRECTIVE,
-      };
-    }
+  const lastUserIdx = currentMessages.length - 1;
+  const lastMsg = currentMessages[lastUserIdx];
+  if (lastMsg && lastMsg.role === "user") {
+    currentMessages[lastUserIdx] = {
+      ...lastMsg,
+      content: lastMsg.content + "\n\n" + (langDir || "") + SCOPE_DIRECTIVE,
+    };
   }
 
   const tools = body.tools && body.tools.length > 0 ? body.tools : undefined;

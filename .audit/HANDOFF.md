@@ -1666,3 +1666,21 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **验证**：`npx tsc --noEmit` 0 错误；`node scripts/check-i18n.mjs` 12 语言 0 缺失；auth-strings 79 key × 12 语言齐全。未跑 `pnpm build`（prebuild 会损坏 i18n）。
 - **测试清理**：已删除测试用户 qa.signup.* / qa.cb.*（admin API）、测试 ai_routes 行；QA 账号 qa.avatar.20260824@chinaconnect.org 密码已恢复 QaTest#2026x、tier 恢复 free、ai_usage 归零。
 - **注意**：AI 页偶发 "Failed to fetch"（本会话 headless Chromium 有瞬态 `ERR_SSL_PROTOCOL_ERROR`，重试即恢复，生产未见）。本地 dev 不挂载 `functions/`，checkout/chat 直连真实 Supabase edge function。
+---
+
+### 2026-08-24 会话 #53：9 项反馈复验 + AI 边界服务端修复（续 #52）
+
+- **起**：承接 #52，对本会话 9 项修复做最终自检；重点实证问题 4（免密验证码）与问题 8（AI 边界）。
+- **问题 4 复验（关键新动作）**：
+  - magic link 邮件模板原为默认（仅链接、不含验证码），**已通过 Management API 更新** `mailer_templates_magic_link_content`，加入 `{{ .Token }}` 6 位码（保留链接备选）。gotrue 源码确认 `sendMagicLink` 始终把 `otp` 传给模板（`data.Token`）。
+  - 实测 `verifyOtp({email, token, type:'email'})` → `/auth/v1/verify` 返回 200 + 真实 session（用 generate_link 的 email_otp）。
+  - Playwright E2E：拦截 /otp 让表单出现（生产被限流）→ 输入真实有效码 → 跳转 /zh-CN/account、localStorage 有真实会话、header 显示头像。错误码路径正确（"Token has expired or is invalid"、停留登录页）。
+  - **平台限流确认**：`rate_limit_email_sent=2`（无自定义 SMTP 时平台硬限制 ~2 封/小时/项目，Management API 拒绝调高，报 "Custom SMTP required"）。当前 /otp 被 429 阻断，**用户需在 Dashboard 配置 SMTP 后调高**（这是注册/验证码/找回邮件可用的前提）。
+- **问题 8 复验（发现服务端未生效）**：
+  - 直连 chat edge function（不带客户端系统提示词）请求"写 Python 爬虫抓京东价格"→ **AI 直接给出完整脚本** ❌。原因：部署的 chat 函数是 **v16（2026-08-22）**，不含 08-24 提交的 SCOPE_DIRECTIVE。
+  - 带客户端 SYSTEM_PROMPT（真实浏览器流程）→ AI 拒绝并提供合规替代（官方 API 等）✅（客户端 SECURITY RULES 7-9 生效）。
+  - **修复**：`supabase/functions/chat/index.ts` 的 SCOPE_DIRECTIVE 原本包在 `if (langDir)` 内（请求不带 language 时服务端边界完全跳过）→ 已改为无条件追加 `(langDir || "") + SCOPE_DIRECTIVE`。语法检查通过。**需 `supabase functions deploy chat` 后服务端边界才在生产生效**（待用户确认部署）。
+- **其它项复验**：问题 2 结算（真实 Creem URL 生成，年付正确选 Business Yearly 产品）；问题 3 注册确认（signup 链接 → callback → account + email_confirmed_at 写入，实测 2026-08-23 18:01:58Z）；问题 5 找回密码（恢复链接 → reset-password 页 → 新密码 → PUT /user → account → 新密码可登录，完整闭环）；问题 6 AI 高度（`h-[600px] lg:h-[calc(100vh-340px)] min-h-[420px]` DOM 确认）；问题 7 行程保存（AI 回复 → "行程已生成"横幅 → 保存对话框 → ai_routes 落库 title/days/route_data，实测 "行程已保存！"）；问题 9 定价（Creem API 6 产品实测 $4.99/$47.99/$9.99/$95.99/$19.99/$191.99 与代码完全一致）。
+- **验证**：`npx tsc --noEmit` 0 错误；`node scripts/check-i18n.mjs` 12/12、0 缺失。
+- **测试清理**：qa.signup2.* 已删；qa.otp.20260824015823 已重置 ai_usage（保留用于 /otp 真实发信 E2E）；测试 ai_routes 行已删。
+- **待办（下个会话）**：1) 用户确认后 `supabase functions deploy chat`（让服务端边界生效）；2) 用户 Dashboard 配置自定义 SMTP 并调高 `rate_limit_email_sent`（否则真实用户注册/验证码/找回邮件会被 429 阻断）；3) /otp 真实发信 E2E 需等限流窗口重置（上次成功 ~01:49+08，预计 02:49 后）或 SMTP 配置后。
