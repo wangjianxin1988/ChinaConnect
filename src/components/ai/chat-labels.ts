@@ -54,6 +54,12 @@ export interface AiChatLabels {
   days: string;
   deleteTitle: string;
   deleteConfirm: string;
+  itineraryReady: string;
+  saveItineraryNow: string;
+  notNow: string;
+  saveItineraryTitle: string;
+  itineraryName: string;
+  savedNotice: string;
 }
 
 export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
@@ -96,6 +102,13 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     days: "days",
     deleteTitle: "Delete",
     deleteConfirm: "Delete this conversation?",
+    itineraryReady: "Your itinerary is ready - save it to keep it forever.",
+    saveItineraryNow: "Save this itinerary",
+    notNow: "Not now",
+    saveItineraryTitle: "Save Itinerary",
+    itineraryName: "Itinerary name",
+    savedNotice: "Itinerary saved!",
+
   },
   ja: {
     placeholder: "中国旅行について質問してください...",
@@ -136,6 +149,13 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     days: "日",
     deleteTitle: "削除",
     deleteConfirm: "この会話を削除しますか？",
+    itineraryReady: "旅程が完成しました - 保存していつでも見返せます。",
+    saveItineraryNow: "この旅程を保存",
+    notNow: "あとで",
+    saveItineraryTitle: "旅程を保存",
+    itineraryName: "旅程名",
+    savedNotice: "旅程を保存しました！",
+
   },
   ko: {
     placeholder: "중국 여행에 대해 물어보세요...",
@@ -176,6 +196,13 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     days: "일",
     deleteTitle: "삭제",
     deleteConfirm: "이 대화를 삭제하시겠습니까?",
+    itineraryReady: "여행 일정이 완성되었습니다 - 저장해 두면 언제든 다시 볼 수 있습니다.",
+    saveItineraryNow: "이 일정 저장",
+    notNow: "나중에",
+    saveItineraryTitle: "일정 저장",
+    itineraryName: "일정 이름",
+    savedNotice: "일정이 저장되었습니다!",
+
   },
   "zh-CN": {
     placeholder: "输入您的中国旅行问题...",
@@ -215,6 +242,13 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     days: "天",
     deleteTitle: "删除",
     deleteConfirm: "删除这个对话？",
+    itineraryReady: "行程已生成 - 保存后随时可以查看。",
+    saveItineraryNow: "保存这个行程",
+    notNow: "暂不保存",
+    saveItineraryTitle: "保存行程",
+    itineraryName: "行程名称",
+    savedNotice: "行程已保存！",
+
   },
   "zh-TW": {
     placeholder: "輸入您的中國旅行問題...",
@@ -254,6 +288,13 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     days: "天",
     deleteTitle: "刪除",
     deleteConfirm: "刪除這個對話？",
+    itineraryReady: "行程已生成 - 儲存後隨時可以查看。",
+    saveItineraryNow: "儲存這個行程",
+    notNow: "暫不儲存",
+    saveItineraryTitle: "儲存行程",
+    itineraryName: "行程名稱",
+    savedNotice: "行程已儲存！",
+
   },
   th: {
     placeholder: "ถามเกี่ยวกับการเดินทางจีนของคุณ...",
@@ -293,6 +334,13 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     days: "วัน",
     deleteTitle: "ลบ",
     deleteConfirm: "ลบการสนทนานี้หรือไม่",
+    itineraryReady: "แผนการเดินทางพร้อมแล้ว - บันทึกไว้เพื่อดูได้ตลอด",
+    saveItineraryNow: "บันทึกแผนนี้",
+    notNow: "ไม่ตอนนี้",
+    saveItineraryTitle: "บันทึกแผนการเดินทาง",
+    itineraryName: "ชื่อแผน",
+    savedNotice: "บันทึกแผนแล้ว!",
+
   },
   vi: {
     placeholder: "Hỏi về chuyến đi Trung Quốc của bạn...",
@@ -334,6 +382,13 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     days: "ngày",
     deleteTitle: "Xóa",
     deleteConfirm: "Xóa hội thoại này?",
+    itineraryReady: "Hành trình của bạn đã sẵn sàng - hãy lưu để xem lại bất cứ lúc nào.",
+    saveItineraryNow: "Lưu hành trình này",
+    notNow: "Để sau",
+    saveItineraryTitle: "Lưu hành trình",
+    itineraryName: "Tên hành trình",
+    savedNotice: "Đã lưu hành trình!",
+
   },
   ru: {
     placeholder: "Спросите о поездке в Китай...",
@@ -376,6 +431,13 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     days: "дней",
     deleteTitle: "Удалить",
     deleteConfirm: "Удалить этот диалог?",
+    itineraryReady: "Ваш маршрут готов - сохраните его, чтобы возвращаться к нему в любое время.",
+    saveItineraryNow: "Сохранить маршрут",
+    notNow: "Не сейчас",
+    saveItineraryTitle: "Сохранить маршрут",
+    itineraryName: "Название маршрута",
+    savedNotice: "Маршрут сохранён!",
+
   },
   fr: {
     placeholder: "Posez une question sur votre voyage en Chine...",
@@ -418,6 +480,13 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     days: "jours",
     deleteTitle: "Supprimer",
     deleteConfirm: "Supprimer cette discussion ?",
+    itineraryReady: "Votre itinéraire est prêt - enregistrez-le pour le retrouver à tout moment.",
+    saveItineraryNow: "Enregistrer cet itinéraire",
+    notNow: "Plus tard",
+    saveItineraryTitle: "Enregistrer l'itinéraire",
+    itineraryName: "Nom de l'itinéraire",
+    savedNotice: "Itinéraire enregistré !",
+
   },
   de: {
     placeholder: "Fragen Sie nach Ihrer China-Reise...",
@@ -460,6 +529,13 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     days: "Tage",
     deleteTitle: "Löschen",
     deleteConfirm: "Diese Unterhaltung löschen?",
+    itineraryReady: "Ihre Reiseroute ist fertig - speichern Sie sie, um jederzeit darauf zurückzugreifen.",
+    saveItineraryNow: "Diese Reiseroute speichern",
+    notNow: "Später",
+    saveItineraryTitle: "Reiseroute speichern",
+    itineraryName: "Name der Reiseroute",
+    savedNotice: "Reiseroute gespeichert!",
+
   },
   ar: {
     placeholder: "اسأل عن رحلتك إلى الصين...",
@@ -500,6 +576,13 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     days: "أيام",
     deleteTitle: "حذف",
     deleteConfirm: "حذف هذه المحادثة؟",
+    itineraryReady: "خط سيرك جاهز - احفظه للرجوع إليه في أي وقت.",
+    saveItineraryNow: "حفظ خط السير",
+    notNow: "ليس الآن",
+    saveItineraryTitle: "حفظ خط السير",
+    itineraryName: "اسم خط السير",
+    savedNotice: "تم حفظ خط السير!",
+
   },
   fa: {
     placeholder: "درباره سفرتان به چین بپرسید...",
@@ -540,5 +623,12 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     days: "روز",
     deleteTitle: "حذف",
     deleteConfirm: "این گفتگو حذف شود؟",
+    itineraryReady: "برنامه سفر شما آماده است - آن را ذخیره کنید تا همیشه در دسترس باشد.",
+    saveItineraryNow: "ذخیره این برنامه",
+    notNow: "فعلاً نه",
+    saveItineraryTitle: "ذخیره برنامه سفر",
+    itineraryName: "نام برنامه سفر",
+    savedNotice: "برنامه سفر ذخیره شد!",
+
   },
 };

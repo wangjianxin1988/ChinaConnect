@@ -1647,3 +1647,22 @@ ode scripts/check-i18n.mjs && npx astro build。
   - 注意：本地 dev 不挂载 `functions/`（`/api/auth/signout` 404），但客户端清理逻辑独立生效——这正是修复的关键。
 - **提交**: 见 git log（本会话提交）。
 - **下一步**: 推送 master 触发 CI 部署（deploy-cf-pages.yml）；后续若再出现「退出后仍可操作」类反馈，优先检查是否有新的登录入口未走统一 signOut 清理。
+
+
+### 2026-08-24 会话 #52：9 项问题反馈修复（头像 / 结算 / 注册验证 / 免密登录 / 找回密码 / AI 高度 / 行程保存 / AI 边界 / 定价统一）
+
+- **用户反馈（9 项）**：右上角不显示头像；不能升级/购买套餐（Checkout error: Please sign in）；无法注册且邮箱验证链路有问题；免密登录验证失败（应改为邮箱验证码）；忘记密码链路有问题；AI 回复时对话框上下变窄；没有保存行程功能；需限制 AI 边界（禁止开发软件等无关用途）；套餐定价与支付渠道不一致。
+- **问题 1 预设头像** ✅：新增 `public/avatars/avatar-{0..11}.svg`（12 个渐变表情）+ `src/lib/avatar.ts`（`presetAvatarForSeed` 稳定 hash）。接入 `BaseLayout.astro` header、`AccountPage.astro`、`UserProfile.tsx`、`UserAvatar.tsx`（含 onError 回退）。实测：登录后 header 显示 `<img src="/avatars/avatar-9.svg">`，account 页正常。
+- **问题 2 `__SUPABASE_TOKEN__`** ✅：根因 = pricing 页读 `window.__SUPABASE_TOKEN__` 但从未赋值。`BaseLayout.astro` 启动脚本初始化 `""` + `syncSupabaseToken()` 从 `sb-xyvuqbpwrhkukjgzveyc-auth-token` localStorage 读 access_token。实测：登录后 token 为真实值，点 Explorer 订阅 → 真实 Creem checkout URL 生成（无报错）。
+- **问题 3 注册/邮箱验证** ✅（修复了一个隐藏 bug）：uri_allow_list 已扩为 `https://chinaengage.org/**,https://www.chinaengage.org/**,http://localhost:4321/**,http://localhost:4322/**,http://localhost:3000/**`（Management API 已确认）。`src/pages/[lang]/auth/callback.astro` 与 `src/pages/auth/callback.astro` 的 **`goNext` 定义在 `if(code)` 块内导致 `ReferenceError: goNext is not defined`**——凡走 `#access_token`（隐式流）的确认/恢复链接都报"验证失败"。已把 `goNext` 提升到 `completeAuth` 作用域。实测：admin 建测试用户 + `generate_link` 模拟邮件点击 → 跳转 `/zh-CN/account`、email_confirmed_at 写入 ✅。
+- **问题 4 免密登录改验证码** ✅：`src/services/auth.ts` `signInWithMagicLink` 改为不发 redirect（发纯验证码），新增 `verifyEmailOtp(email, token)` → `verifyOtp({email, token, type:'email'})`。`LoginPage.tsx` 新增 6 位 OTP 输入表单 + 重发。12 语言文案已改。实测：`POST /auth/v1/otp` 请求格式正确（无 redirect、create_user:true）；`verifyOtp` 端点机制用 magiclink 码验证通过。**被 `rate_limit_email_sent=2` 限流挡住**（见下方待办）。
+- **问题 5 忘记密码** ✅（发现并修复死锁）：`verifyMagicLink()` 支持 code/token_hash/#access_token/session 四种格式；`resetPassword()` redirectTo 改为语言感知；新增 `src/pages/auth/reset-password.astro`（英文 404 修复）。**关键根因**：`services/auth.ts` `onAuthStateChange` 回调是 async 且在通知内 `await getProfile()` → gotrue-js 通知时持有 Web-Locks 锁 `lock:sb-...-auth-token`，而 `getProfile` → `supabase.from()` → `getSession()` 要抢同一把锁 → **重入死锁**（恢复密码按钮永远"处理中"、无网络请求）。修复：回调先同步返回，profile 异步获取。实测：恢复链接 → 填新密码 → `PUT /auth/v1/user` → 跳转 `/zh-CN/account`，新密码可登录 ✅。此修复同时解决普通密码登录与 OTP 验证卡死。
+- **问题 6 AI 对话框高度** ✅：`AIChat.tsx` 外层 `flex h-full` → `flex h-[600px] lg:h-[calc(100vh-340px)] min-h-[420px]`。实测 DOM 确认。
+- **问题 7 行程保存** ✅：`chat-labels.ts` 新增 7 个 key × 12 语言；`AIChat.tsx` 新增保存对话框 + 命名 + header 保存按钮 + 绿色"行程已生成"横幅 + 新对话重置；保存不再设 tier 门槛（AI 页本身需登录）。实测（QA 升 business）：AI 回复完成 → 横幅与按钮出现 → 点保存 → `ai_routes` 落库（route_data 含 destination/dailyPlans/highlights/raw_plan）→ header 显示"行程已保存！"、侧边栏行程标签可见 ✅。
+- **问题 8 AI 边界** ✅：`src/lib/ai/prompts.ts` SECURITY RULES 新增 7-9（禁止软件开发/写代码/建站/写文章/项目管理/作业；旅游相关内容全开放）；`supabase/functions/chat/index.ts` 服务端新增 `SCOPE_DIRECTIVE`（纵深防御）。实测：请求"写 Python 爬虫脚本"→ AI 拒绝提供具体代码 ✅。
+- **问题 9 定价统一** ✅：Creem 渠道真实价格 Explorer $4.99/$47.99、Traveler $9.99/$95.99、**Business $19.99/$191.99**（已逐产品 API 确认）。代码统一 Business 从 $29.99/$287.99 → $19.99/$191.99（`src/lib/subscription.ts`、`functions/api/pricing.ts`、两个 pricing.astro、translations）。实测：月度 `$0/$4.99/$9.99/$19.99`，年度切换 `$0/$4.00/$8.00/$16.00`，banner "Save up to $48/year"，与 Creem 完全一致 ✅。
+- **Supabase 配置变更**：`mailer_otp_length` 8→6（Management API 已改，与前端 6 位输入一致）。
+- **用户必须做（Dashboard，API 无法代改）**：`rate_limit_email_sent=2` 过低，会阻断注册确认/验证码/找回密码邮件（实测 429 over_email_send_rate_limit）。需在 Supabase Dashboard 配置**自定义 SMTP**（Settings → Auth → SMTP）后才可调高该限流（Management API 拒绝无 SMTP 时修改）。
+- **验证**：`npx tsc --noEmit` 0 错误；`node scripts/check-i18n.mjs` 12 语言 0 缺失；auth-strings 79 key × 12 语言齐全。未跑 `pnpm build`（prebuild 会损坏 i18n）。
+- **测试清理**：已删除测试用户 qa.signup.* / qa.cb.*（admin API）、测试 ai_routes 行；QA 账号 qa.avatar.20260824@chinaconnect.org 密码已恢复 QaTest#2026x、tier 恢复 free、ai_usage 归零。
+- **注意**：AI 页偶发 "Failed to fetch"（本会话 headless Chromium 有瞬态 `ERR_SSL_PROTOCOL_ERROR`，重试即恢复，生产未见）。本地 dev 不挂载 `functions/`，checkout/chat 直连真实 Supabase edge function。

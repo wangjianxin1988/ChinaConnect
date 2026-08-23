@@ -62,7 +62,7 @@ export const TIER_PRICING: Record<SubscriptionTier, { monthly: number; annual: n
   free: { monthly: 0, annual: 0 },
   explorer: { monthly: 4.99, annual: 47.99 },
   traveler: { monthly: 9.99, annual: 95.99 },
-  business: { monthly: 29.99, annual: 287.99 },
+  business: { monthly: 19.99, annual: 191.99 },
 };
 
 export const TIER_NAMES: Record<SubscriptionTier, Record<AccountLang, string>> = {

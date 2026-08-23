@@ -42,6 +42,14 @@ const title = (translations[lang]?.authPage?.callbackTitle) || translations.en.a
 
   const lang = detectAuthLang();
   const prefix = authLangPrefix(lang);
+  function goNext() {
+          try { window.dispatchEvent(new CustomEvent("cc-auth-changed", { detail: { authenticated: true } })); } catch (e) {}
+          var n = null;
+          try { n = sessionStorage.getItem("auth_next"); } catch (e) { n = null; }
+          try { if (n) sessionStorage.removeItem("auth_next"); } catch (e) {}
+          if (n && n.charAt(0) === "/" && n.charAt(1) !== "/") { window.location.href = n; return; }
+          window.location.href = prefix + "/account";
+        }
 
   async function completeAuth(): Promise<void> {
     const params = new URLSearchParams(window.location.search);
@@ -52,15 +60,6 @@ const title = (translations[lang]?.authPage?.callbackTitle) || translations.en.a
     if (code) {
       const { error } = await exchangeCodeForSession(code);
       if (!error) {
-        // Clean URL, then redirect to account
-        function goNext() {
-          try { window.dispatchEvent(new CustomEvent("cc-auth-changed", { detail: { authenticated: true } })); } catch (e) {}
-          var n = null;
-          try { n = sessionStorage.getItem("auth_next"); } catch (e) { n = null; }
-          try { if (n) sessionStorage.removeItem("auth_next"); } catch (e) {}
-          if (n && n.charAt(0) === "/" && n.charAt(1) !== "/") { window.location.href = n; return; }
-          window.location.href = prefix + "/account";
-        }
           window.history.replaceState({}, '', window.location.pathname);
         goNext();
         return;

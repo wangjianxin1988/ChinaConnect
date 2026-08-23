@@ -66,7 +66,7 @@ const TIERS = [
     id: "business",
     name: { en: "Business", zh: "商务版" },
     description: { en: "Full access for travel professionals", zh: "旅行专业人士的完整功能" },
-    pricing: { monthly: 29.99, annual: 287.99 },
+    pricing: { monthly: 19.99, annual: 191.99 },
     features: {
       en: [
         "Unlimited AI requests",

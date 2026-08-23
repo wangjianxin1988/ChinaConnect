@@ -548,7 +548,20 @@ const prefix = lang && lang !== "en" ? "/" + lang : "";
     if (profile?.avatar_url) {
       avatarEl.innerHTML = `<img src="${profile.avatar_url}" alt="${displayName}" class="w-16 h-16 rounded-full object-cover" />`;
     } else {
-      avatarEl.textContent = displayName.charAt(0).toUpperCase();
+      // Deterministic preset avatar (same user always gets the same one).
+      const presetPaths = [
+        "/avatars/avatar-0.svg","/avatars/avatar-1.svg","/avatars/avatar-2.svg",
+        "/avatars/avatar-3.svg","/avatars/avatar-4.svg","/avatars/avatar-5.svg",
+        "/avatars/avatar-6.svg","/avatars/avatar-7.svg","/avatars/avatar-8.svg",
+        "/avatars/avatar-9.svg","/avatars/avatar-10.svg","/avatars/avatar-11.svg"
+      ];
+      const seed = user.id || user.email || displayName || "";
+      let hash = 0;
+      for (let i = 0; i < seed.length; i++) {
+        hash = (hash * 31 + seed.charCodeAt(i)) >>> 0;
+      }
+      const preset = presetPaths[hash % presetPaths.length];
+      avatarEl.innerHTML = `<img src="${preset}" alt="${displayName}" class="w-16 h-16 rounded-full object-cover" />`;
     }
 
     if (profile?.level) {

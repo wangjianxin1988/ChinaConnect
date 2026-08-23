@@ -67,7 +67,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
           </button>
         </div>
         <p id="savings-hint" class="text-sm text-gray-500 mt-3 hidden">
-          <span data-i18n="pricing.savingsHint">Save up to $72/year with annual billing</span>
+          <span data-i18n="pricing.savingsHint">Save up to $48/year with annual billing</span>
         </p>
       </div>
     </section>
@@ -134,7 +134,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
             </div>
             <div class="text-center mb-6 pb-6 border-b border-gray-100">
               <div class="flex items-baseline justify-center gap-1">
-                <span class="text-5xl font-extrabold text-blue-600 price-amount" data-monthly="4.99" data-annual="3.99">$4.99</span>
+                <span class="text-5xl font-extrabold text-blue-600 price-amount" data-monthly="4.99" data-annual="4.00">$4.99</span>
                 <span class="text-gray-400 text-sm price-period">/mo</span>
               </div>
               <p class="text-xs text-green-600 mt-2 font-medium price-annual-note hidden">Billed $47.99/year (save $12)</p>
@@ -179,7 +179,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
             </div>
             <div class="text-center mb-6 pb-6 border-b border-gray-100">
               <div class="flex items-baseline justify-center gap-1">
-                <span class="text-5xl font-extrabold text-purple-600 price-amount" data-monthly="9.99" data-annual="7.99">$9.99</span>
+                <span class="text-5xl font-extrabold text-purple-600 price-amount" data-monthly="9.99" data-annual="8.00">$9.99</span>
                 <span class="text-gray-400 text-sm price-period">/mo</span>
               </div>
               <p class="text-xs text-green-600 mt-2 font-medium price-annual-note hidden">Billed $95.99/year (save $24)</p>
@@ -224,10 +224,10 @@ const cancelled = Astro.url.searchParams.get('cancelled');
             </div>
             <div class="text-center mb-6 pb-6 border-b border-gray-100">
               <div class="flex items-baseline justify-center gap-1">
-                <span class="text-5xl font-extrabold text-amber-600 price-amount" data-monthly="29.99" data-annual="23.99">$29.99</span>
+                <span class="text-5xl font-extrabold text-amber-600 price-amount" data-monthly="19.99" data-annual="16.00">$19.99</span>
                 <span class="text-gray-400 text-sm price-period">/mo</span>
               </div>
-              <p class="text-xs text-green-600 mt-2 font-medium price-annual-note hidden">Billed $287.99/year (save $72)</p>
+              <p class="text-xs text-green-600 mt-2 font-medium price-annual-note hidden">Billed $191.99/year (save $48)</p>
               <p class="text-xs text-gray-400 mt-1" data-i18n="pricing.billingMonthlyNote">Billed monthly · auto-renew each month</p>
               <p class="text-xs text-gray-400" data-i18n="pricing.autoRenewNote">Auto-renew, cancel anytime</p>
             </div>
@@ -567,6 +567,15 @@ const cancelled = Astro.url.searchParams.get('cancelled');
 
       annualNotes.forEach((note) => {
         note.style.display = billing === "annual" ? "block" : "none";
+      });
+
+      // Swap the big price to the monthly-equivalent for the selected billing cycle.
+      priceAmounts.forEach(function (el) {
+        var attr = billing === "annual" ? "data-annual" : "data-monthly";
+        var value = el.getAttribute(attr);
+        if (value) {
+          el.textContent = "$" + value;
+        }
       });
 
       if (savingsHint) {

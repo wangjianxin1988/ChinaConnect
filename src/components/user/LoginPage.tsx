@@ -49,6 +49,7 @@ export function LoginPage({ lang: langProp }: { lang?: string } = {}) {
   const [password, setPassword] = useState("");
   const [displayName, setDisplayName] = useState("");
   const [magicLinkSent, setMagicLinkSent] = useState(false);
+  const [otpCode, setOtpCode] = useState("");
   const [resetPasswordSent, setResetPasswordSent] = useState(false);
   const [oauthPending, setOauthPending] = useState<string | null>(null);
   const [disabledProviders, setDisabledProviders] = useState<Set<string>>(new Set());
@@ -64,6 +65,7 @@ export function LoginPage({ lang: langProp }: { lang?: string } = {}) {
     signUp,
     signInWithProvider,
     signInWithLink,
+    verifyEmailOtp,
     resetPassword,
     clearError,
   } = useAuth();
@@ -121,6 +123,21 @@ export function LoginPage({ lang: langProp }: { lang?: string } = {}) {
       const { sent } = await resetPassword(email);
       if (sent) setResetPasswordSent(true);
     }
+  };
+
+  const handleVerifyOtp = async (e: React.FormEvent) => {
+    e.preventDefault();
+    clearError();
+    const code = otpCode.trim();
+    if (!code) return;
+    const ok = await verifyEmailOtp(email, code);
+    // Success redirects automatically via the user effect; failures surface in the error box.
+  };
+
+  const handleResendOtp = async () => {
+    clearError();
+    setOtpCode("");
+    await signInWithLink(email);
   };
 
   const handleOAuth = async (provider: "google" | "github") => {
@@ -245,9 +262,46 @@ export function LoginPage({ lang: langProp }: { lang?: string } = {}) {
               <span className="font-medium">{authT(lang, "checkEmail")}</span>
             </div>
             <p className="text-sm text-green-600 mt-1">
-              {authT(lang, "magicSentDesc", { email })}
+              {authT(lang, "otpSentDesc", { email })}
             </p>
           </div>
+        )}
+
+        {/* Email verification code form (passwordless login) */}
+        {mode === "magic_link" && magicLinkSent && (
+          <form onSubmit={handleVerifyOtp} className="mb-6 space-y-4">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                {authT(lang, "otpCodeLabel")}
+              </label>
+              <input
+                type="text"
+                inputMode="numeric"
+                autoComplete="one-time-code"
+                value={otpCode}
+                onChange={(e) => setOtpCode(e.target.value.replace(/[^0-9]/g, "").slice(0, 6))}
+                required
+                maxLength={6}
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none text-center text-lg tracking-[0.5em] font-mono"
+                placeholder={authT(lang, "otpCodePlaceholder")}
+              />
+            </div>
+            <button
+              type="submit"
+              disabled={isLoading || otpCode.length < 6}
+              className="w-full py-2.5 px-4 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            >
+              {isLoading ? authT(lang, "processing") : authT(lang, "verifyCode")}
+            </button>
+            <button
+              type="button"
+              onClick={handleResendOtp}
+              disabled={isLoading}
+              className="w-full text-center text-sm text-blue-600 hover:underline disabled:opacity-50"
+            >
+              {authT(lang, "resendCode")}
+            </button>
+          </form>
         )}
 
         {resetPasswordSent && (

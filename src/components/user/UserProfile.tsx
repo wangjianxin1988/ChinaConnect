@@ -9,6 +9,7 @@ import { LevelBadge } from "./LevelBadge";
 import { PointsDisplay } from "./PointsDisplay";
 import { useState } from "react";
 import { authT, detectAuthLang } from "./auth-strings";
+import { presetAvatarForSeed } from "@/lib/avatar";
 
 type Profile = Database["public"]["Tables"]["profiles"]["Row"];
 
@@ -39,6 +40,9 @@ export function UserProfile({
   const [avatarFailed, setAvatarFailed] = useState(false);
   const displayName = profile.display_name || authT(lang, "profileAnonymous");
   const avatarUrl = profile.avatar_url || null;
+  const presetAvatarUrl = avatarUrl
+    ? null
+    : presetAvatarForSeed(profile.user_id || displayName);
   const nationality = profile.nationality || null;
   const bio = "bio" in profile ? profile.bio : null;
   const level = "level" in profile ? profile.level : "小白";
@@ -65,6 +69,12 @@ export function UserProfile({
               alt={displayName || "User avatar"}
               className="w-20 h-20 rounded-full object-cover border-2 border-gray-200"
               onError={() => setAvatarFailed(true)}
+            />
+          ) : presetAvatarUrl ? (
+            <img
+              src={presetAvatarUrl}
+              alt={displayName || "User avatar"}
+              className="w-20 h-20 rounded-full object-cover border-2 border-gray-200"
             />
           ) : (
             <div className="w-20 h-20 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-3xl">

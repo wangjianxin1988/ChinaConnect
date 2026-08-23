@@ -681,13 +681,23 @@ Deno.serve(async (req: Request) => {
     fa: "IMPORTANT: Reply entirely in Persian/Farsi (فارسی).",
   };
   const langDir = body.language ? LANGUAGE_DIRECTIVES[body.language] : undefined;
+  // Server-side scope guard: reinforce that ChinaConnect AI is a China-travel
+  // assistant only (defense-in-depth alongside the client system prompt).
+  const SCOPE_DIRECTIVE =
+    "\n\nSCOPE RULE (MANDATORY): You are ChinaConnect AI, a China travel assistant only. " +
+    "Decline requests that are NOT about travel/trips to China — especially software development, " +
+    "coding, programming, building websites/apps/scripts, writing essays or reports, project " +
+    "management/Scrum, homework, or any unrelated high-output work. Reply briefly: " +
+    "\"I'm ChinaConnect AI, specialized in China travel advice. That's outside what I can help with.\" " +
+    "Stay fully helpful within travel: itineraries, food, transport, hotels, visas, payment/SIM tips, " +
+    "language phrases, culture, and real-time travel questions are all welcome.";
   if (langDir) {
     const lastUserIdx = currentMessages.length - 1;
     const lastMsg = currentMessages[lastUserIdx];
     if (lastMsg && lastMsg.role === "user") {
       currentMessages[lastUserIdx] = {
         ...lastMsg,
-        content: lastMsg.content + "\n\n" + langDir,
+        content: lastMsg.content + "\n\n" + langDir + SCOPE_DIRECTIVE,
       };
     }
   }

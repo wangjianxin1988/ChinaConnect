@@ -153,6 +153,7 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
         try {
           window.__SUPABASE_URL__ = JSON.parse(supabaseUrlJson) || "";
           window.__SUPABASE_ANON_KEY__ = JSON.parse(supabaseAnonKeyJson) || "";
+          window.__SUPABASE_TOKEN__ = "";
           window.__I18N__ = {
             translations: JSON.parse(translationsJson) || {},
             languages: JSON.parse(supportedLanguagesJson) || [],
@@ -162,6 +163,7 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
           console.warn("[i18n boot] parse failed:", err);
           window.__SUPABASE_URL__ = window.__SUPABASE_URL__ || "";
           window.__SUPABASE_ANON_KEY__ = window.__SUPABASE_ANON_KEY__ || "";
+          window.__SUPABASE_TOKEN__ = window.__SUPABASE_TOKEN__ || "";
           window.__I18N__ = window.__I18N__ || { translations: {}, languages: [], serverLang: lang };
         }
       })();
@@ -606,10 +608,25 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
           applyTranslationsTo(c);
         }
 
+        var PRESET_AVATAR_PATHS = [
+          "/avatars/avatar-0.svg","/avatars/avatar-1.svg","/avatars/avatar-2.svg",
+          "/avatars/avatar-3.svg","/avatars/avatar-4.svg","/avatars/avatar-5.svg",
+          "/avatars/avatar-6.svg","/avatars/avatar-7.svg","/avatars/avatar-8.svg",
+          "/avatars/avatar-9.svg","/avatars/avatar-10.svg","/avatars/avatar-11.svg"
+        ];
+        function presetAvatar(seed) {
+          var s = String(seed || "guest");
+          var hash = 0;
+          for (var i = 0; i < s.length; i++) {
+            hash = (hash * 31 + s.charCodeAt(i)) >>> 0;
+          }
+          return PRESET_AVATAR_PATHS[hash % PRESET_AVATAR_PATHS.length];
+        }
+
         function renderLoggedIn(user) {
           var c = document.getElementById("auth-nav-container");
           if (!c) return;
-          var avatar = user.avatarUrl;
+          var avatar = user.avatarUrl || presetAvatar(user.id || user.email || "");
           var initial = (user.displayName || user.email || "U").charAt(0).toUpperCase();
           var avatarHtml = avatar
             ? '<img src="' + escapeHtml(avatar) + '" alt="" class="w-7 h-7 rounded-full object-cover" />'
@@ -717,6 +734,7 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
             if (!session || !session.access_token || !session.user) return null;
             var um = session.user.user_metadata || {};
             return {
+              id: session.user.id || "",
               displayName: um.full_name || um.name || um.display_name || session.user.email || "",
               email: session.user.email || "",
               avatarUrl: um.avatar_url || um.picture || null,
@@ -756,7 +774,24 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
             });
         }
 
+        function syncSupabaseToken() {
+          try {
+            var raw = safeGet("sb-xyvuqbpwrhkukjgzveyc-auth-token");
+            var token = "";
+            if (raw) {
+              try {
+                var session = JSON.parse(raw);
+                if (session && session.access_token) token = session.access_token;
+              } catch (e) { /* ignore */ }
+            }
+            window.__SUPABASE_TOKEN__ = token;
+          } catch (e) {
+            window.__SUPABASE_TOKEN__ = "";
+          }
+        }
+
         function runAuthInit() {
+          syncSupabaseToken();
           try { refreshAuthNav(); } catch (e) { console.warn("[auth] init failed", e); }
         }
         document.addEventListener("DOMContentLoaded", runAuthInit);

@@ -4097,7 +4097,7 @@ export const translations: Record<Language, Translations> = {
       billingPeriodMonth: "/mo",
       billingPeriodYear: "/yr",
       business: {
-        annualNote: "Billed $287.99/year (save $72)",
+        annualNote: "Billed $191.99/year (save $48)",
         description: "For travel agents and teams",
         feature1: "Unlimited AI requests",
         feature2: "Team collaboration (up to 5)",
@@ -4105,7 +4105,7 @@ export const translations: Record<Language, Translations> = {
         feature4: "API access",
         feature5: "Dedicated account manager",
         name: "Business",
-        price: "$29.99"
+        price: "$19.99"
       },
       cancelAnytime: "Cancel anytime",
       cancelledNotice: "Payment was cancelled. You can try again below.",
@@ -4203,7 +4203,7 @@ export const translations: Record<Language, Translations> = {
         description: "For active travelers"
       },
       saveBadge: "Save 20%",
-      savingsHint: "Save up to $72/year with annual billing",
+      savingsHint: "Save up to $48/year with annual billing",
       securePayment: "Secure payment",
       subscribeNow: "Subscribe Now",
       testimonial1: "ChinaConnect saved me hours of research. The AI routes are spot-on.",
@@ -17357,7 +17357,7 @@ export const translations: Record<Language, Translations> = {
       billingPeriodMonth: "/เดือน",
       billingPeriodYear: "/ปี",
       business: {
-        annualNote: "คิดเงิน $287.99/ปี (وفر $72)",
+        annualNote: "คิดเงิน $191.99/ปี (ประหยัด $48)",
         description: "สำหรับนักท่องเที่ยวและทีม",
         feature1: "คำขอ AI ไม่จำกัด",
         feature2: "การทำงานร่วมกันของทีม (สูงสุด 5 คน)",
@@ -17365,7 +17365,7 @@ export const translations: Record<Language, Translations> = {
         feature4: "การเข้าถึง API",
         feature5: "ผู้จัดการบัญชีที่ได้รับมอบหมาย",
         name: "ธุรกิจ",
-        price: "$29.99"
+        price: "$19.99"
       },
       cancelAnytime: "ยกเลิกตลอดเวลา",
       cancelledNotice: "การชำระเงินถูกยกเลิก คุณสามารถลองอีกครั้งด้านล่างได้",
@@ -21775,7 +21775,7 @@ export const translations: Record<Language, Translations> = {
       billingPeriodMonth: "/tháng",
       billingPeriodYear: "/năm",
       business: {
-        annualNote: "Được tính phí $287.99/năm (tiết kiệm $72)",
+        annualNote: "Được tính phí $191.99/năm (tiết kiệm $48)",
         description: "Dành cho đại lý du lịch và nhóm",
         feature1: "Yêu cầu AI không giới hạn",
         feature2: "Hợp tác nhóm (tối đa 5 người)",
@@ -21783,7 +21783,7 @@ export const translations: Record<Language, Translations> = {
         feature4: "Truy cập API",
         feature5: "Quản lý tài khoản riêng",
         name: "Doanh nghiệp",
-        price: "$29.99"
+        price: "$19.99"
       },
       cancelAnytime: "Hủy bất cứ lúc nào",
       cancelledNotice: "Thanh toán đã bị hủy. Bạn có thể thử lại bên dưới.",
@@ -26193,7 +26193,7 @@ export const translations: Record<Language, Translations> = {
       billingPeriodMonth: "/мес",
       billingPeriodYear: "/год",
       business: {
-        annualNote: "Оплата $287.99/год (экономия $72)",
+        annualNote: "Оплата $191.99/год (экономия $48)",
         description: "Для турагентов и команд",
         feature1: "Неограниченные запросы к ИИ",
         feature2: "Совместная работа команды (до 5 человек)",
@@ -26201,7 +26201,7 @@ export const translations: Record<Language, Translations> = {
         feature4: "Доступ к API",
         feature5: "Персональный менеджер",
         name: "Бизнес",
-        price: "$29.99"
+        price: "$19.99"
       },
       cancelAnytime: "Отмена в любое время",
       cancelledNotice: "Платеж был отменен. Вы можете повторить попытку ниже.",
@@ -30611,7 +30611,7 @@ export const translations: Record<Language, Translations> = {
       billingPeriodMonth: "/mois",
       billingPeriodYear: "/an",
       business: {
-        annualNote: "Facturé 287,99 $/an (économisez 72 $)",
+        annualNote: "Facturé 191,99 $/an (économisez 48 $)",
         description: "Pour les agents de voyage et les équipes",
         feature1: "Requêtes AI illimitées",
         feature2: "Collaboration d'équipe (jusqu'à 5)",
@@ -35029,7 +35029,7 @@ export const translations: Record<Language, Translations> = {
       billingPeriodMonth: "/Monat",
       billingPeriodYear: "/Jahr",
       business: {
-        annualNote: "In Rechnung gestellt: 287,99 USD/Jahr (sparen Sie 72 USD)",
+        annualNote: "In Rechnung gestellt: 191,99 USD/Jahr (sparen Sie 48 USD)",
         description: "Für Reisebüros und Teams",
         feature1: "Unbegrenzte KI-Anfragen",
         feature2: "Teamarbeit (bis zu 5 Personen)",
@@ -35037,7 +35037,7 @@ export const translations: Record<Language, Translations> = {
         feature4: "API-Zugriff",
         feature5: "Dedizierter Kundenbetreuer",
         name: "Geschäft",
-        price: "$29,99"
+        price: "$19,99"
       },
       cancelAnytime: "Jederzeit kündbar",
       cancelledNotice: "Die Zahlung wurde storniert. Sie können unten erneut versuchen.",
@@ -39447,7 +39447,7 @@ export const translations: Record<Language, Translations> = {
       billingPeriodMonth: "/شهريًا",
       billingPeriodYear: "/سنويًا",
       business: {
-        annualNote: "فاتورة بمبلغ 287.99 دولارًا أمريكيًا في السنة (وفر 72 دولارًا)",
+        annualNote: "فاتورة بمبلغ 191.99 دولارًا أمريكيًا في السنة (وفر 48 دولارًا)",
         description: "لموظفي ومنظمي الرحلات السياحية",
         feature1: "طلبات الذكاء الاصطناعي غير المحدودة",
         feature2: "التعاون الجماعي (حتى 5)",
@@ -39455,7 +39455,7 @@ export const translations: Record<Language, Translations> = {
         feature4: "الوصول إلى واجهة برمجة التطبيقات",
         feature5: "مدير حساب مخصص",
         name: "الأعمال",
-        price: "$29.99"
+        price: "$19.99"
       },
       cancelAnytime: "إلغاء في أي وقت",
       cancelledNotice: "تم إلغاء الدفع. يمكنك المحاولة مرة أخرى أدناه.",
@@ -43873,7 +43873,7 @@ export const translations: Record<Language, Translations> = {
         feature4: "دسترسی به API",
         feature5: "مدیر حساب اختصاصی",
         name: "تجاری",
-        price: "$29.99"
+        price: "$19.99"
       },
       cancelAnytime: "لغو در هر زمان",
       cancelledNotice: "پرداخت لغو شد. می‌توانید دوباره زیر تلاش کنید.",

@@ -634,6 +634,9 @@ export const AIChat: React.FC<AIChatProps> = ({
   const [showMap, setShowMap] = useState(false);
   const [routeSaving, setRouteSaving] = useState(false);
   const [routeSaved, setRouteSaved] = useState(false);
+  const [showSaveDialog, setShowSaveDialog] = useState(false);
+  const [saveName, setSaveName] = useState("");
+  const [saveDismissed, setSaveDismissed] = useState(false);
   const [routeSaveError, setRouteSaveError] = useState<string | null>(null);
   const [sidebarTab, setSidebarTab] = useState<"conversations" | "itineraries">("conversations");
 
@@ -881,6 +884,43 @@ export const AIChat: React.FC<AIChatProps> = ({
     [exportItinerary, checkTierForFeature, currentItinerary],
   );
 
+  const openSaveDialog = useCallback(() => {
+    setSaveName(currentItinerary?.name || "Travel Plan");
+    setShowSaveDialog(true);
+  }, [currentItinerary]);
+
+  const handleSaveRoute = useCallback(async () => {
+    if (!currentItinerary) return;
+    const user = await getCurrentUser();
+    if (!user) {
+      alert(LABELS.signInToSave);
+      return;
+    }
+    setRouteSaving(true);
+    try {
+      const saved = await saveCurrentItinerary(saveName.trim() || currentItinerary.name || "Travel Plan");
+      if (saved) {
+        setRouteSaved(true);
+        setShowSaveDialog(false);
+      } else {
+        alert(LABELS.noRouteData);
+      }
+    } catch (err) {
+      console.error("Save route failed", err);
+      alert(LABELS.routeSaveFailed + (err instanceof Error ? err.message : String(err)));
+    } finally {
+      setRouteSaving(false);
+    }
+  }, [currentItinerary, saveName, checkTierForFeature, saveCurrentItinerary, LABELS]);
+
+  // Reset the "ready to save" banner when the conversation starts fresh.
+  useEffect(() => {
+    if (messages.length === 0) {
+      setRouteSaved(false);
+      setSaveDismissed(false);
+    }
+  }, [messages.length]);
+
   // Cancel in-flight request
   const handleCancel = useCallback(() => {
     if (abortControllerRef.current) {
@@ -891,7 +931,7 @@ export const AIChat: React.FC<AIChatProps> = ({
 
   return (
     <ChatErrorBoundary language={language}>
-      <div className="flex h-full bg-gray-50">
+      <div className="flex h-[600px] lg:h-[calc(100vh-340px)] min-h-[420px] bg-gray-50">
         {/* Sidebar - Conversations + Itineraries (single panel, tabbed) */}
         {showItinerary && (
           <div className="chat-sidebar w-80 border-r border-gray-200 bg-white flex flex-col overflow-hidden hidden md:flex">
@@ -1075,28 +1115,13 @@ export const AIChat: React.FC<AIChatProps> = ({
               {/* Save Route Button - Task 1: Check tier (Explorer+ required) */}
               {currentItinerary && (
                 <button
-                  onClick={async () => {
-                    if (!checkTierForFeature("saveItineraries", "explorer")) return;
-
-                    const user = await getCurrentUser();
-                    if (!user) {
-                      alert(LABELS.signInToSave);
-                      return;
-                    }
-                    const saved = await saveCurrentItinerary(
-                      currentItinerary.name || "Travel Plan",
-                    );
-                    if (saved) {
-                      alert(LABELS.routeSaved);
-                    } else {
-                      alert(LABELS.noRouteData);
-                    }
-                  }}
-                  className="p-2 hover:bg-green-100 rounded-lg transition-colors"
+                  onClick={openSaveDialog}
+                  disabled={routeSaving}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-green-50 text-green-700 hover:bg-green-100 font-medium text-sm transition-colors disabled:opacity-50"
                   title={LABELS.saveRoute}
                 >
                   <svg
-                    className="w-5 h-5 text-green-600"
+                    className="w-4 h-4"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -1108,6 +1133,7 @@ export const AIChat: React.FC<AIChatProps> = ({
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
+                  {routeSaved ? LABELS.savedNotice : LABELS.saveRoute}
                 </button>
               )}
               {/* History Button - Task 3: Check tier (Explorer+ required) */}
@@ -1299,6 +1325,32 @@ export const AIChat: React.FC<AIChatProps> = ({
             </div>
           )}
 
+          {/* Itinerary ready-to-save banner */}
+          {currentItinerary && !routeSaved && !saveDismissed && messages.length > 0 && (
+            <div className="px-4 pb-2 shrink-0">
+              <div className="bg-green-50 border border-green-200 rounded-xl p-3 flex items-center justify-between gap-3">
+                <div className="flex items-center gap-2 min-w-0">
+                  <span className="text-xl shrink-0">💾</span>
+                  <p className="text-sm text-green-800 leading-snug">{LABELS.itineraryReady}</p>
+                </div>
+                <div className="flex items-center gap-2 shrink-0">
+                  <button
+                    onClick={openSaveDialog}
+                    className="px-3 py-1.5 rounded-lg bg-green-600 text-white text-sm font-medium hover:bg-green-700 transition-colors"
+                  >
+                    {LABELS.saveItineraryNow}
+                  </button>
+                  <button
+                    onClick={() => setSaveDismissed(true)}
+                    className="px-2 py-1.5 rounded-lg text-sm text-gray-500 hover:bg-gray-100 transition-colors"
+                  >
+                    {LABELS.notNow}
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* Input Area */}
           <div className="bg-white border-t border-gray-200 p-4 shrink-0">
             <div className="flex gap-3">
@@ -1379,6 +1431,45 @@ export const AIChat: React.FC<AIChatProps> = ({
                   className="flex-1 px-4 py-2.5 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors text-sm font-medium"
                 >
                   {LABELS.copyLink}
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Save Itinerary Dialog */}
+        {showSaveDialog && (
+          <div
+            className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50"
+            onClick={() => setShowSaveDialog(false)}
+          >
+            <div
+              className="bg-white rounded-2xl p-6 w-96 shadow-2xl mx-4"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <h3 className="font-semibold text-lg mb-4">{LABELS.saveItineraryTitle}</h3>
+              <input
+                type="text"
+                value={saveName}
+                onChange={(e) => setSaveName(e.target.value)}
+                placeholder={LABELS.itineraryName}
+                className="w-full px-4 py-3 border border-gray-300 rounded-xl mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                autoFocus
+                onKeyDown={(e) => e.key === "Enter" && handleSaveRoute()}
+              />
+              <div className="flex gap-3">
+                <button
+                  onClick={() => setShowSaveDialog(false)}
+                  className="flex-1 px-4 py-2.5 bg-gray-100 text-gray-700 rounded-xl hover:bg-gray-200 transition-colors text-sm font-medium"
+                >
+                  {LABELS.cancel}
+                </button>
+                <button
+                  onClick={handleSaveRoute}
+                  disabled={routeSaving || !saveName.trim()}
+                  className="flex-1 px-4 py-2.5 bg-green-600 text-white rounded-xl hover:bg-green-700 transition-colors text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {routeSaving ? "Saving..." : LABELS.saveItineraryNow}
                 </button>
               </div>
             </div>

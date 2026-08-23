@@ -15,6 +15,7 @@ import {
   signInWithMagicLink,
   signInWithOAuth,
   signUpWithEmail,
+  verifyEmailOtp as authVerifyEmailOtp,
   verifyMagicLink,
 } from "@/services/auth";
 import type { AuthProvider, SignUpData, User, UserProfile } from "@/types/user";
@@ -44,6 +45,7 @@ export interface UseAuthReturn {
   signUp: (data: SignUpData) => Promise<boolean>;
   signInWithProvider: (provider: AuthProvider) => Promise<void>;
   signInWithLink: (email: string) => Promise<{ sent: boolean; error: string | null }>;
+  verifyEmailOtp: (email: string, token: string) => Promise<boolean>;
   verifyEmailLink: () => Promise<boolean>;
   signOut: () => Promise<void>;
   updateProfile: (
@@ -82,18 +84,25 @@ export function useAuth(options: UseAuthOptions = {}): UseAuthReturn {
       try {
         setIsLoading(true);
 
-        // Check for magic link callback
+        // Check for magic link / recovery / signup callback tokens
+        // (?code= PKCE, ?token_hash=, ?confirmation_token=, or #access_token=)
         const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.has("token_hash") || urlParams.has("confirmation_token")) {
-          const { user: magicLinkUser, error: magicError } = await verifyMagicLink();
+        const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ""));
+        if (
+          urlParams.has("token_hash") ||
+          urlParams.has("confirmation_token") ||
+          urlParams.has("code") ||
+          hashParams.has("access_token")
+        ) {
+          const { user: linkUser, error: linkError } = await verifyMagicLink();
           if (isMounted) {
-            if (magicError) {
-              setError(magicError.message);
-            } else if (magicLinkUser) {
-              setUser(magicLinkUser);
+            if (linkError) {
+              setError(linkError.message);
+            } else if (linkUser) {
+              setUser(linkUser);
             }
           }
-          // Clean URL
+          // Clean URL so a refresh doesn't re-consume the one-time token
           window.history.replaceState({}, document.title, window.location.pathname);
         }
 
@@ -253,6 +262,30 @@ export function useAuth(options: UseAuthOptions = {}): UseAuthReturn {
     },
     [redirectTo],
   );
+
+  const verifyEmailOtp = useCallback(async (email: string, token: string): Promise<boolean> => {
+    try {
+      setIsLoading(true);
+      setError(null);
+      const { user: otpUser, error: otpError } = await authVerifyEmailOtp(email, token);
+      if (otpError) {
+        setError(otpError.message);
+        return false;
+      }
+      if (otpUser) {
+        setUser(otpUser);
+        const { profile: userProfile } = await getCurrentProfile();
+        setProfile(userProfile);
+        return true;
+      }
+      return false;
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Email code verification failed");
+      return false;
+    } finally {
+      setIsLoading(false);
+    }
+  }, []);
 
   const verifyEmailLink = useCallback(async (): Promise<boolean> => {
     try {
@@ -428,6 +461,7 @@ export function useAuth(options: UseAuthOptions = {}): UseAuthReturn {
     signUp,
     signInWithProvider,
     signInWithLink,
+    verifyEmailOtp,
     verifyEmailLink,
     signOut,
     updateProfile,

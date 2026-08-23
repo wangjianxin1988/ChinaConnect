@@ -300,7 +300,9 @@ export async function signInWithOAuth(provider: AuthProvider): Promise<AuthRespo
 }
 
 /**
- * Sign in with magic link (passwordless email)
+ * Passwordless sign-in: email a 6-digit verification code.
+ * (No emailRedirectTo is passed so the email template renders the numeric
+ * code instead of a magic-link URL.)
  */
 export async function signInWithMagicLink(
   email: string,
@@ -320,7 +322,8 @@ export async function signInWithMagicLink(
   const { error } = await authClient.auth.signInWithOtp({
     email,
     options: {
-      emailRedirectTo: redirectTo || authCallbackUrl(),
+      // Keep backward compatibility for callers that still rely on a link.
+      ...(redirectTo ? { emailRedirectTo: redirectTo } : {}),
     },
   });
 
@@ -328,7 +331,41 @@ export async function signInWithMagicLink(
 }
 
 /**
- * Verify magic link token from URL
+ * Verify the 6-digit email verification code sent by signInWithMagicLink.
+ */
+export async function verifyEmailOtp(
+  email: string,
+  token: string,
+): Promise<AuthResponse> {
+  const { data, error } = await authClient.auth.verifyOtp({
+    email,
+    token: token.trim(),
+    type: "email",
+  });
+
+  if (error) return { user: null, session: null, error };
+
+  return {
+    user: data.user
+      ? {
+          id: data.user.id,
+          email: data.user.email || "",
+          created_at: data.user.created_at,
+          updated_at: data.user.updated_at || data.user.created_at,
+        }
+      : null,
+    session: data.session,
+    error: null,
+  };
+}
+
+/**
+ * Verify a magic link / recovery / signup token from the current URL.
+ * Handles every link format Supabase can produce:
+ *   1. ?code=...            (PKCE flow — email confirmation & recovery)
+ *   2. ?token_hash=&type=   (legacy / alternate email templates)
+ *   3. #access_token=...    (implicit flow)
+ *   4. already-established session (fallback)
  */
 export async function verifyMagicLink(): Promise<AuthResponse> {
   // Demo mode - return demo user
@@ -336,8 +373,61 @@ export async function verifyMagicLink(): Promise<AuthResponse> {
     return { user: demoUser, session: null, error: null };
   }
 
-  const { data, error } = await authClient.auth.getSession();
+  if (typeof window === "undefined") {
+    return { user: null, session: null, error: null };
+  }
 
+  const params = new URLSearchParams(window.location.search);
+  const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ""));
+
+  function toUser(session: import("@supabase/supabase-js").Session) {
+    return {
+      id: session.user.id,
+      email: session.user.email || "",
+      created_at: session.user.created_at,
+      updated_at: session.user.updated_at || session.user.created_at,
+    };
+  }
+
+  // 1) PKCE code exchange (signup confirmations & password recovery)
+  const code = params.get("code") || hashParams.get("code");
+  if (code) {
+    const { data, error } = await authClient.auth.exchangeCodeForSession(code);
+    if (error) return { user: null, session: null, error };
+    if (data.session) {
+      return { user: toUser(data.session), session: data.session, error: null };
+    }
+  }
+
+  // 2) token_hash + type (magiclink / recovery / signup / email_change)
+  const tokenHash = params.get("token_hash") || hashParams.get("token_hash");
+  const otpType = params.get("type") || hashParams.get("type");
+  if (tokenHash && otpType) {
+    const { data, error } = await authClient.auth.verifyOtp({
+      token_hash: tokenHash,
+      type: otpType as "signup" | "recovery" | "magiclink" | "email_change" | "sms",
+    });
+    if (error) return { user: null, session: null, error };
+    if (data.session) {
+      return { user: toUser(data.session), session: data.session, error: null };
+    }
+  }
+
+  // 3) Implicit flow (#access_token=...)
+  const accessToken = hashParams.get("access_token");
+  if (accessToken) {
+    const { data, error } = await authClient.auth.setSession({
+      access_token: accessToken,
+      refresh_token: hashParams.get("refresh_token") || "",
+    });
+    if (error) return { user: null, session: null, error };
+    if (data.session) {
+      return { user: toUser(data.session), session: data.session, error: null };
+    }
+  }
+
+  // 4) Fallback: session already established
+  const { data, error } = await authClient.auth.getSession();
   if (error) return { user: null, session: null, error };
 
   if (!data.session) {
@@ -346,19 +436,14 @@ export async function verifyMagicLink(): Promise<AuthResponse> {
       session: null,
       error: {
         name: "AuthError",
-        message: "No session found after magic link verification",
+        message: "No session found after link verification",
         status: 400,
       } as SupabaseAuthError,
     };
   }
 
   return {
-    user: {
-      id: data.session.user.id,
-      email: data.session.user.email || "",
-      created_at: data.session.user.created_at,
-      updated_at: data.session.user.updated_at || data.session.user.created_at,
-    },
+    user: toUser(data.session),
     session: data.session,
     error: null,
   };
@@ -388,7 +473,7 @@ export async function resetPassword(email: string): Promise<{ error: SupabaseAut
   }
 
   const { error } = await authClient.auth.resetPasswordForEmail(email, {
-    redirectTo: `${window.location.origin}/auth/reset-password`,
+    redirectTo: `${authCallbackUrl().replace(/\/auth\/callback$/, "")}/auth/reset-password`,
   });
   return { error };
 }
@@ -520,7 +605,7 @@ export async function upsertProfile(
  * Subscribe to auth state changes
  */
 export function onAuthStateChange(callback: (authState: AuthState) => void) {
-  return authClient.auth.onAuthStateChange(async (_event, session) => {
+  return authClient.auth.onAuthStateChange((_event, session) => {
     const user = session?.user
       ? {
           id: session.user.id,
@@ -530,36 +615,61 @@ export function onAuthStateChange(callback: (authState: AuthState) => void) {
         }
       : null;
 
-    let profile: UserProfile | null = null;
-    if (user) {
-      const { profile: fetchedProfile } = await getProfile(user.id);
-      profile = fetchedProfile;
-      if (!profile && session?.user?.user_metadata) {
-        // Auto-create the profile row from OAuth metadata (Google/GitHub)
-        // in case the DB trigger was missing or the provider used different keys.
-        const meta = session.user.user_metadata as Record<string, unknown>;
-        const displayName = String(
-          meta.display_name || meta.full_name || meta.name || meta.preferred_username || "",
-        )
-          .trim();
-        const avatarUrl = String(meta.avatar_url || meta.picture || "").trim();
-        if (displayName || avatarUrl) {
-          const { profile: created } = await upsertProfile(user.id, {
-            display_name: displayName || undefined,
-            avatar_url: avatarUrl || undefined,
-          });
-          if (created) profile = created;
-        }
-      }
-    }
-
+    // Fire the callback synchronously. Never await DB work inside the auth
+    // notification: gotrue-js holds a Web-Locks lock (lock:<storageKey>) while
+    // notifying subscribers, and supabase queries call getSession(), which
+    // tries to acquire the SAME lock -> re-entrant deadlock (e.g. the reset
+    // password button stuck at "Processing..." forever). The profile fetch is
+    // therefore deferred until after the notification releases the lock.
     callback({
       user,
-      profile,
+      profile: null,
       isLoading: false,
       isAuthenticated: !!user,
       error: null,
     });
+
+    if (!user) return;
+
+    void (async () => {
+      try {
+        let profile: UserProfile | null = null;
+        const { profile: fetchedProfile } = await getProfile(user.id);
+        profile = fetchedProfile;
+        if (!profile && session?.user?.user_metadata) {
+          // Auto-create the profile row from OAuth metadata (Google/GitHub)
+          // in case the DB trigger was missing or the provider used different keys.
+          const meta = session.user.user_metadata as Record<string, unknown>;
+          const displayName = String(
+            meta.display_name || meta.full_name || meta.name || meta.preferred_username || "",
+          )
+            .trim();
+          const avatarUrl = String(meta.avatar_url || meta.picture || "").trim();
+          if (displayName || avatarUrl) {
+            const { profile: created } = await upsertProfile(user.id, {
+              display_name: displayName || undefined,
+              avatar_url: avatarUrl || undefined,
+            });
+            if (created) profile = created;
+          }
+        }
+        callback({
+          user,
+          profile,
+          isLoading: false,
+          isAuthenticated: true,
+          error: null,
+        });
+      } catch {
+        callback({
+          user,
+          profile: null,
+          isLoading: false,
+          isAuthenticated: true,
+          error: null,
+        });
+      }
+    })();
   });
 }
 

@@ -6,6 +6,8 @@
 
 import { cn } from "@/lib/utils";
 import type { UserProfile } from "@/types/user";
+import { presetAvatarForSeed } from "@/lib/avatar";
+import { useState } from "react";
 
 interface UserAvatarProps {
   user:
@@ -14,6 +16,8 @@ interface UserAvatarProps {
   size?: "xs" | "sm" | "md" | "lg" | "xl";
   showLevel?: boolean;
   className?: string;
+  /** Stable seed for picking a preset avatar when the user has none. */
+  seed?: string | null;
 }
 
 const sizeClasses = {
@@ -53,18 +57,39 @@ function getAvatarUrl(url: string | null | undefined): string | null {
   return null;
 }
 
-export function UserAvatar({ user, size = "md", showLevel = false, className }: UserAvatarProps) {
+export function UserAvatar({
+  user,
+  size = "md",
+  showLevel = false,
+  className,
+  seed,
+}: UserAvatarProps) {
+  const [failed, setFailed] = useState(false);
   const initials = getInitials(user?.display_name);
   const avatarUrl = getAvatarUrl(user?.avatar_url);
+  const presetUrl = avatarUrl
+    ? null
+    : presetAvatarForSeed(seed || user?.display_name);
   const level = user?.level || "小白";
   const levelColor = levelColors[level] || levelColors.小白;
 
   return (
     <div className={cn("relative inline-flex", className)}>
       {/* Avatar */}
-      {avatarUrl ? (
+      {avatarUrl && !failed ? (
         <img
           src={avatarUrl}
+          alt={user?.display_name || "User avatar"}
+          onError={() => setFailed(true)}
+          className={cn(
+            "rounded-full object-cover border-2 bg-gray-50",
+            sizeClasses[size],
+            showLevel && levelColor.split(" ")[1],
+          )}
+        />
+      ) : presetUrl ? (
+        <img
+          src={presetUrl}
           alt={user?.display_name || "User avatar"}
           className={cn(
             "rounded-full object-cover border-2 bg-gray-50",
