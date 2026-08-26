@@ -34,6 +34,8 @@ interface ChatRequest {
   model?: string;
   tools?: unknown[];
   stream?: boolean;
+  /** Client-generated id of the message being sent — used to keep persistence idempotent */
+  clientMsgId?: string;
 }
 
 const TIER_LIMITS: Record<string, number> = {
@@ -650,14 +652,22 @@ Deno.serve(async (req: Request) => {
     conversationId = conv.id;
   }
 
-  // Persist the last user message
+  // Persist the last user message (idempotent: a retry that carries the same
+  // clientMsgId can never create a duplicate row).
   const lastUserMsg = [...body.messages].reverse().find((m) => m.role === "user");
   if (lastUserMsg) {
-    await supabase.from("ai_messages").insert({
-      conversation_id: conversationId,
-      role: "user",
-      content: lastUserMsg.content,
-    });
+    const { error: userMsgErr } = await supabase.from("ai_messages").upsert(
+      {
+        conversation_id: conversationId,
+        role: "user",
+        content: lastUserMsg.content,
+        client_msg_id: body.clientMsgId || undefined,
+      },
+      { onConflict: "client_msg_id", ignoreDuplicates: true },
+    );
+    if (userMsgErr) {
+      console.warn("[chat] user message persist warning:", userMsgErr.message);
+    }
   }
   // Run the agent loop: keep calling MiniMax until no more tool calls
   const model = body.model || "MiniMax-Text-01";
@@ -795,15 +805,23 @@ Deno.serve(async (req: Request) => {
     currentMessages.push(...toolResults);
   }
 
-  // Persist the final assistant message
+  // Persist the final assistant message (idempotent: keyed to the same user
+  // message, so a retry replaces the earlier reply instead of duplicating it).
   if (lastAssistantContent) {
-    await supabase.from("ai_messages").insert({
-      conversation_id: conversationId,
-      role: "assistant",
-      content: lastAssistantContent,
-      model,
-      tokens_used: totalTokens,
-    });
+    const { error: assistantMsgErr } = await supabase.from("ai_messages").upsert(
+      {
+        conversation_id: conversationId,
+        role: "assistant",
+        content: lastAssistantContent,
+        model,
+        tokens_used: totalTokens,
+        client_msg_id: body.clientMsgId ? body.clientMsgId + ":reply" : undefined,
+      },
+      { onConflict: "client_msg_id" },
+    );
+    if (assistantMsgErr) {
+      console.warn("[chat] assistant message persist warning:", assistantMsgErr.message);
+    }
   }
 
   // Update conversation metadata

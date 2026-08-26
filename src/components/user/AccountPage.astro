@@ -40,11 +40,30 @@ const prefix = lang && lang !== "en" ? "/" + lang : "";
               </div>
             </div>
             <div class="flex items-center gap-2 sm:gap-3 shrink-0">
-              <a href={prefix + "/profile"} class="text-sm text-blue-600 dark:text-blue-400 hover:underline font-medium"><span data-i18n="accountPage.editProfile">Edit Profile</span></a>
+              <button id="edit-profile-btn" type="button" class="text-sm text-blue-600 dark:text-blue-400 hover:underline font-medium"><span data-i18n="accountPage.editProfile">Edit Profile</span></button>
               <span class="text-gray-300 dark:text-gray-600">|</span>
               <button id="signout-btn" class="text-sm text-red-500 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 hover:underline font-medium">
                 <span data-i18n="accountPage.signOut">Sign Out</span>
               </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Edit Profile Modal -->
+        <div id="edit-profile-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4">
+          <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl w-full max-w-md p-6 transition-colors">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4"><span data-i18n="accountPage.editProfile">Edit Profile</span></h3>
+            <div class="mb-4">
+              <p class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"><span data-i18n="accountPage.avatarPickerTitle">Choose an avatar</span></p>
+              <div id="avatar-picker" class="grid grid-cols-6 gap-2"></div>
+            </div>
+            <div class="mb-4">
+              <label for="edit-display-name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"><span data-i18n="accountPage.displayNameLabel">Display name</span></label>
+              <input id="edit-display-name" type="text" maxlength="60" class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg text-sm bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none" />
+            </div>
+            <div class="flex justify-end gap-2">
+              <button id="edit-cancel" type="button" class="px-4 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg"><span data-i18n="accountPage.cancelEdit">Cancel</span></button>
+              <button id="edit-save" type="button" class="px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg"><span data-i18n="accountPage.saveChanges">Save Changes</span></button>
             </div>
           </div>
         </div>
@@ -277,6 +296,17 @@ const prefix = lang && lang !== "en" ? "/" + lang : "";
     signOut,
   } from '@/lib/auth/supabase-auth';
   import { clearTierCache } from '@/lib/usage-tracker';
+  import { supabase } from '@/supabase/config';
+
+  // Preset avatar set (kept in sync with src/lib/avatar.ts).
+  const PRESET_AVATAR_PATHS = [
+    "/avatars/avatar-0.svg","/avatars/avatar-1.svg","/avatars/avatar-2.svg",
+    "/avatars/avatar-3.svg","/avatars/avatar-4.svg","/avatars/avatar-5.svg",
+    "/avatars/avatar-6.svg","/avatars/avatar-7.svg","/avatars/avatar-8.svg",
+    "/avatars/avatar-9.svg","/avatars/avatar-10.svg","/avatars/avatar-11.svg"
+  ];
+  let selectedAvatar: string | null = null;
+  let editUser: any = null;
 
   // i18n helper for runtime
   function t(key) {
@@ -405,6 +435,7 @@ const prefix = lang && lang !== "en" ? "/" + lang : "";
         </div>
         <div class="flex items-center gap-2">
           ${r.synced === false ? '<span class="text-xs text-amber-500" title="' + t('accountPage.savedLocally') + '">📱</span>' : '<span class="text-xs text-green-500" title="' + t('accountPage.syncedToCloud') + '">☁️</span>'}
+          <a href="' + ccLangPrefix + '/ai?openItinerary=' + encodeURIComponent('${r.id}') + '" class="px-2.5 py-1 rounded-lg text-xs font-medium text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-800 hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-colors" title="' + t('accountPage.viewRoute') + '">' + t('accountPage.viewRoute') + '</a>
           <button onclick="deleteRoute('${r.id}')" class="p-1 hover:bg-red-100 dark:hover:bg-red-900/30 rounded text-gray-400 hover:text-red-500" title="' + t('accountPage.deleteAction') + '">
             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
           </button>
@@ -413,7 +444,7 @@ const prefix = lang && lang !== "en" ? "/" + lang : "";
     `).join('');
   }
 
-  (window as any).deleteRoute = function(routeId: string) {
+    (window as any).deleteRoute = async function(routeId: string) {
     if (!confirm(t('accountPage.deleteRouteConfirm'))) return;
     try {
       const stored = localStorage.getItem('cc_ai_saved_routes');
@@ -423,8 +454,92 @@ const prefix = lang && lang !== "en" ? "/" + lang : "";
         localStorage.setItem('cc_ai_saved_routes', JSON.stringify(filtered));
       }
     } catch {}
+    if (routeId && !String(routeId).startsWith('local_') && editUser) {
+      try {
+        await supabase.from('ai_routes').delete().eq('id', routeId).eq('user_id', editUser.id);
+      } catch (err) {
+        console.warn('server route delete failed', err);
+      }
+    }
     loadAccount();
   };
+
+  function buildAvatarPicker() {
+    const picker = document.getElementById('avatar-picker');
+    if (!picker) return;
+    const current = selectedAvatar || '';
+    picker.innerHTML = PRESET_AVATAR_PATHS.map((path) => {
+      const active = path === current;
+      return '<button type="button" data-avatar="' + path + '" class="aspect-square rounded-full overflow-hidden ring-2 transition-all ' + (active ? 'ring-blue-500 scale-105' : 'ring-transparent hover:ring-gray-300') + '"><img src="' + path + '" alt="" class="w-full h-full object-cover" /></button>';
+    }).join('');
+    picker.querySelectorAll('button[data-avatar]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        selectedAvatar = btn.getAttribute('data-avatar');
+        buildAvatarPicker();
+      });
+    });
+  }
+
+  function presetFallbackAvatar(seed: string): string {
+    let hash = 0;
+    for (let i = 0; i < seed.length; i++) {
+      hash = (hash * 31 + seed.charCodeAt(i)) >>> 0;
+    }
+    return PRESET_AVATAR_PATHS[hash % PRESET_AVATAR_PATHS.length];
+  }
+
+  function openEditProfile() {
+    if (!editUser) return;
+    selectedAvatar = (editUser as any)._profileAvatar || presetFallbackAvatar(editUser.id || editUser.email || '');
+    const nameInput = document.getElementById('edit-display-name') as HTMLInputElement | null;
+    if (nameInput) nameInput.value = (editUser as any)._profileName || editUser.email?.split('@')[0] || '';
+    buildAvatarPicker();
+    const modal = document.getElementById('edit-profile-modal');
+    if (modal) modal.classList.remove('hidden');
+  }
+
+  function closeEditProfile() {
+    const modal = document.getElementById('edit-profile-modal');
+    if (modal) modal.classList.add('hidden');
+  }
+
+  document.getElementById('edit-profile-btn')?.addEventListener('click', openEditProfile);
+  document.getElementById('edit-cancel')?.addEventListener('click', closeEditProfile);
+  document.getElementById('edit-profile-modal')?.addEventListener('click', (e) => {
+    if (e.target === e.currentTarget) closeEditProfile();
+  });
+  document.getElementById('edit-save')?.addEventListener('click', async () => {
+    if (!editUser) return;
+    const saveBtn = document.getElementById('edit-save') as HTMLButtonElement | null;
+    if (saveBtn) saveBtn.disabled = true;
+    try {
+      const nameInput = document.getElementById('edit-display-name') as HTMLInputElement | null;
+      const displayName = (nameInput?.value || '').trim();
+      const avatarUrl = selectedAvatar || null;
+      const patch: Record<string, unknown> = {};
+      if (displayName) patch.display_name = displayName;
+      if (avatarUrl) patch.avatar_url = avatarUrl;
+      if (Object.keys(patch).length > 0) {
+        await supabase.from('profiles').update(patch).eq('user_id', editUser.id);
+      }
+      // Keep header avatar in sync: write avatar + name into auth user_metadata too.
+      const meta: Record<string, unknown> = {};
+      if (displayName) meta.display_name = displayName;
+      if (avatarUrl) meta.avatar_url = avatarUrl;
+      if (Object.keys(meta).length > 0) {
+        await supabase.auth.updateUser({ data: meta });
+      }
+      window.dispatchEvent(new CustomEvent('cc-auth-changed'));
+      closeEditProfile();
+      alert(t('accountPage.profileUpdated'));
+      loadAccount();
+    } catch (err) {
+      console.error('profile update failed', err);
+      alert('Failed to save profile. Please try again.');
+    } finally {
+      if (saveBtn) saveBtn.disabled = false;
+    }
+  });
 
   function renderFavorites(favorites: any[]) {
     const container = document.getElementById('favorites-list')!;
@@ -531,6 +646,11 @@ const prefix = lang && lang !== "en" ? "/" + lang : "";
     ]);
 
     const profile = profileRes.profile;
+    editUser = user;
+    if (profile) {
+      (editUser as any)._profileAvatar = profile.avatar_url || null;
+      (editUser as any)._profileName = profile.display_name || null;
+    }
     const dashboard = dashboardRes.dashboard;
     const wallet = walletRes.wallet;
 

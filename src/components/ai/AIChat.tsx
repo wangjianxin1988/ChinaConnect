@@ -12,6 +12,7 @@ import type {
   ConversationSummary,
 } from "@/lib/ai/types";
 import { CHAT_LABELS, type AiChatLang } from "./chat-labels";
+import { EXPORT_LABELS } from "@/lib/ai/export-labels";
 import { getCurrentUser } from "@/lib/auth/supabase-auth";
 import { getCurrentTier, TIER_LIMITS, type SubscriptionTier } from "@/lib/subscription";
 import { UpgradePrompt } from "@/components/subscription/UpgradePrompt";
@@ -64,7 +65,7 @@ interface AIChatProps {
   deleteItinerary: (id: string) => void;
   loadConversation: (id: string) => Promise<void>;
   exportItinerary: (format: "text" | "json") => string;
-  shareItinerary: (id: string) => string;
+  shareItinerary: (id: string) => Promise<string>;
   getShareLink: (shareCode: string) => string;
   activeConversationId?: string | null;
   onConversationSelect?: (id: string) => void;
@@ -596,6 +597,102 @@ const ConversationHistory: React.FC<{
 // Main Component
 // ============================================
 
+
+// ============================================
+// PDF export helper — builds a printable HTML snapshot
+// ============================================
+
+const escHtml = (v: unknown): string =>
+  String(v ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+
+function buildExportHtml(it: SavedItinerary, lang: AiChatLang): string {
+  const L = EXPORT_LABELS[lang] || EXPORT_LABELS.en;
+  const isRtl = lang === "ar" || lang === "fa";
+  const s = it.data?.summary;
+  const daily = it.data?.dailyItinerary || [];
+  const urlize = (text: string): string =>
+    escHtml(text).replace(
+      /(https?:\/\/[^\s)]+)/g,
+      '<a href="$1" style="color:#2563eb;word-break:break-all;">$1</a>',
+    );
+  const parts: string[] = [];
+  parts.push(
+    "<div style=\"font-family:-apple-system,'PingFang SC','Microsoft YaHei','Segoe UI','Noto Sans SC','Noto Sans Thai','Noto Sans Arabic','Noto Sans JP','Noto Sans KR',sans-serif;color:#111827;max-width:714px;direction:\" + (isRtl ? \"rtl\" : \"ltr\") + \";text-align:\" + (isRtl ? \"right\" : \"left\") + \"\">",
+  );
+  parts.push(
+    "<div style=\"background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;border-radius:14px;padding:24px 28px;margin-bottom:20px;\">" +
+      "<div style=\"font-size:11px;letter-spacing:1px;opacity:.85;\">ChinaGuide AI</div>" +
+      "<div style=\"font-size:26px;font-weight:700;margin:4px 0 6px;\">" + escHtml(it.name) + "</div>" +
+      "<div style=\"font-size:13px;opacity:.9;\">" + L.dest + ": " + escHtml(it.destination || "-") + " &nbsp;·&nbsp; " + escHtml(it.days) + " " + L.days + "</div>" +
+      "</div>",
+  );
+  if (s) {
+    if (s.topHighlights && s.topHighlights.length) {
+      parts.push("<div style=\"margin-bottom:14px;\"><div style=\"font-weight:700;font-size:14px;margin-bottom:6px;\">✨ " + L.highlights + "</div>");
+      s.topHighlights.slice(0, 10).forEach((h) => parts.push("<div style=\"font-size:13px;padding:2px 0;\">• " + urlize(h) + "</div>"));
+      parts.push("</div>");
+    }
+    if (s.estimatedTotalCost) {
+      parts.push(
+        "<div style=\"margin-bottom:14px;\"><div style=\"font-weight:700;font-size:14px;margin-bottom:4px;\">💰 " + L.cost + "</div>" +
+          "<div style=\"font-size:20px;font-weight:700;color:#059669;\">" + (s.currency === "CNY" ? "¥" : s.currency + " ") + escHtml(s.estimatedTotalCost) + "</div></div>",
+      );
+    }
+    if (s.travelTips && s.travelTips.length) {
+      parts.push("<div style=\"margin-bottom:14px;\"><div style=\"font-weight:700;font-size:14px;margin-bottom:6px;\">💡 " + L.tips + "</div>");
+      s.travelTips.slice(0, 10).forEach((tip) => parts.push("<div style=\"font-size:13px;padding:2px 0;\">• " + urlize(tip) + "</div>"));
+      parts.push("</div>");
+    }
+  }
+  if (daily.length) {
+    parts.push("<div style=\"font-weight:700;font-size:15px;margin:18px 0 8px;\">🗓 " + L.daily + "</div>");
+    daily.forEach((day) => {
+      parts.push(
+        "<div style=\"border:1px solid #e5e7eb;border-radius:12px;padding:14px 16px;margin-bottom:12px;\">" +
+          "<div style=\"font-weight:700;font-size:15px;color:#1d4ed8;margin-bottom:6px;\">" + L.day + " " + escHtml(day.day) + (day.theme ? " — " + escHtml(day.theme) : "") + "</div>",
+      );
+      if (day.transportToAttractions?.route) {
+        parts.push("<div style=\"font-size:12px;color:#374151;margin-bottom:6px;\">🚇 " + L.transport + ": " + escHtml(day.transportToAttractions.route) + "</div>");
+      }
+      (day.locations || []).forEach((loc, i) => {
+        const time =
+          loc.bestTimeStart || loc.bestTimeEnd
+            ? " [" + [loc.bestTimeStart, loc.bestTimeEnd].filter(Boolean).join(" - ") + "]"
+            : "";
+        const dur = loc.durationHours ? " (" + escHtml(loc.durationHours) + L.duration + ")" : "";
+        const price = loc.ticketInfo?.price ? " — " + escHtml(loc.ticketInfo.price) : "";
+        parts.push("<div style=\"font-size:13px;margin:6px 0 2px;\"><b>" + (i + 1) + ". " + escHtml(loc.name) + "</b>" + escHtml(time) + dur + price + "</div>");
+        (loc.highlights || []).slice(0, 3).forEach((h) => parts.push("<div style=\"font-size:12px;color:#6b7280;padding-left:16px;\">• " + urlize(h) + "</div>"));
+        if (loc.insiderTip) parts.push("<div style=\"font-size:12px;color:#b45309;padding-left:16px;\">💡 " + urlize(loc.insiderTip) + "</div>");
+        if (loc.ticketInfo?.bookingUrl) parts.push("<div style=\"font-size:12px;color:#2563eb;padding-left:16px;\">🔗 " + urlize(loc.ticketInfo.bookingUrl) + "</div>");
+      });
+      const meals = [day.meals?.breakfast, day.meals?.lunch, day.meals?.dinner].filter(Boolean) as Array<{ name?: string }>;
+      if (meals.length) {
+        parts.push("<div style=\"font-size:12px;color:#374151;margin-top:6px;\">🍜 " + L.meals + ": " + escHtml(meals.map((m) => m.name || "").filter(Boolean).join("  |  ")) + "</div>");
+      }
+      if (day.accommodation?.name) {
+        parts.push("<div style=\"font-size:12px;color:#374151;margin-top:4px;\">🏨 " + L.accommodation + ": " + escHtml(day.accommodation.name) + (day.accommodation.location ? " — " + escHtml(day.accommodation.location) : "") + "</div>");
+      }
+      if (day.notes && day.notes.length) {
+        parts.push("<div style=\"font-size:12px;color:#6b7280;margin-top:6px;\">📋 " + L.notes + ":</div>");
+        day.notes.slice(0, 10).forEach((n) => parts.push("<div style=\"font-size:12px;color:#6b7280;padding-left:12px;\">• " + urlize(n) + "</div>"));
+      }
+      parts.push("</div>");
+    });
+  }
+  if (it.data?.rawPlan) {
+    parts.push("<div style=\"font-weight:700;font-size:15px;margin:18px 0 8px;\">📄 " + L.originalPlan + "</div>");
+    parts.push("<div style=\"font-size:12px;color:#4b5563;white-space:pre-wrap;\">" + urlize(it.data.rawPlan.slice(0, 6000)) + "</div>");
+  }
+  parts.push("<div style=\"font-size:11px;color:#9ca3af;margin-top:20px;text-align:center;\">" + L.generated + "</div>");
+  parts.push("</div>");
+  return parts.join("");
+}
+
 export const AIChat: React.FC<AIChatProps> = ({
   language = "en",
   showItinerary = true,
@@ -744,19 +841,23 @@ export const AIChat: React.FC<AIChatProps> = ({
     }
   }, [messages, sendMessage]);
 
-  // Share handler
-  const handleShare = useCallback(() => {
+  // Share handler — creates a real public share link (/trip/<token>)
+  const handleShare = useCallback(async () => {
     if (!currentItinerary?.id) return;
-    const code = shareItinerary(currentItinerary.id);
-    setShareCode(code);
-    setShowShareDialog(true);
-  }, [currentItinerary, shareItinerary]);
+    try {
+      const link = await shareItinerary(currentItinerary.id);
+      setShareCode(link);
+      setShowShareDialog(true);
+    } catch (err) {
+      console.error("Share failed", err);
+      alert(LABELS.routeSaveFailed || "Share failed, please try again.");
+    }
+  }, [currentItinerary, shareItinerary, LABELS]);
 
   // Copy share link
   const handleCopyLink = useCallback(() => {
-    const link = getShareLink(shareCode);
-    navigator.clipboard.writeText(link).catch(console.error);
-  }, [shareCode, getShareLink]);
+    navigator.clipboard.writeText(shareCode).catch(console.error);
+  }, [shareCode]);
 
   // Export handler - enforce PDF export restriction (Traveler+)
   const handleExport = useCallback(
@@ -769,99 +870,45 @@ export const AIChat: React.FC<AIChatProps> = ({
           return;
         }
         try {
-          const { jsPDF } = await import("jspdf");
-          const doc = new jsPDF({ unit: "pt", format: "a4" });
-          const W = doc.internal.pageSize.getWidth();
-          const M = 48;
-          let y = 56;
-
-          doc.setFillColor(37, 99, 235);
-          doc.rect(0, 0, W, 92, "F");
-          doc.setTextColor(255, 255, 255);
-          doc.setFont("helvetica", "bold");
-          doc.setFontSize(22);
-          doc.text("ChinaGuide AI", M, 46);
-          doc.setFont("helvetica", "normal");
-          doc.setFontSize(10);
-          doc.text("Travel Itinerary", W - M, 40, { align: "right" });
-          doc.text(new Date().toLocaleDateString(), W - M, 56, { align: "right" });
-
-          doc.setTextColor(15, 23, 42);
-          doc.setFont("helvetica", "bold");
-          doc.setFontSize(16);
-          doc.text(currentItinerary.name || "Travel Plan", M, 124);
-          doc.setFont("helvetica", "normal");
-          doc.setFontSize(10);
-          doc.setTextColor(100, 116, 139);
-          doc.text(
-            `${currentItinerary.destination || ""}  ·  ${currentItinerary.days} day(s)`,
-            M,
-            140,
-          );
-          y = 168;
-
-          const summary = currentItinerary.data?.summary;
-          const writeLine = (text: string, size = 9, color: [number, number, number] = [71, 85, 105], indent = 0) => {
-            doc.setFontSize(size);
-            doc.setTextColor(color[0], color[1], color[2]);
-            const maxWidth = W - M * 2 - indent;
-            const lines = doc.splitTextToSize(text, maxWidth) as string[];
-            for (const ln of lines) {
-              if (y > 760) {
-                doc.addPage();
-                y = 56;
-              }
-              doc.text(ln, M + indent, y);
-              y += size + 6;
-            }
-          };
-
-          if (summary?.topHighlights && summary.topHighlights.length > 0) {
-            doc.setFont("helvetica", "bold");
-            writeLine("TOP HIGHLIGHTS", 10, [37, 99, 235]);
-            doc.setFont("helvetica", "normal");
-            summary.topHighlights.slice(0, 8).forEach((h) => writeLine(`•  ${h}`, 9.5));
-            y += 10;
+          const [{ jsPDF }, html2canvasModule] = await Promise.all([
+            import("jspdf"),
+            import("html2canvas"),
+          ]);
+          const html2canvas = html2canvasModule.default || html2canvasModule;
+          const printRoot = document.createElement("div");
+          printRoot.id = "cc-pdf-export-root";
+          printRoot.style.position = "fixed";
+          printRoot.style.left = "-10000px";
+          printRoot.style.top = "0";
+          printRoot.style.width = "794px";
+          printRoot.style.background = "#ffffff";
+          printRoot.innerHTML = buildExportHtml(currentItinerary, language);
+          document.body.appendChild(printRoot);
+          const canvas = await html2canvas(printRoot, {
+            scale: 2,
+            backgroundColor: "#ffffff",
+            useCORS: true,
+            logging: false,
+            windowWidth: 794,
+          });
+          document.body.removeChild(printRoot);
+          const pdf = new jsPDF({ unit: "pt", format: "a4", orientation: "portrait" });
+          const pageW = pdf.internal.pageSize.getWidth();
+          const pageH = pdf.internal.pageSize.getHeight();
+          const imgW = pageW;
+          const imgH = (canvas.height * pageW) / canvas.width;
+          const imgData = canvas.toDataURL("image/jpeg", 0.95);
+          let heightLeft = imgH;
+          let position = 0;
+          pdf.addImage(imgData, "JPEG", 0, position, imgW, imgH);
+          heightLeft -= pageH;
+          while (heightLeft > 0) {
+            position -= pageH;
+            pdf.addPage();
+            pdf.addImage(imgData, "JPEG", 0, position, imgW, imgH);
+            heightLeft -= pageH;
           }
-
-          const daily = currentItinerary.data?.dailyItinerary || [];
-          if (daily.length > 0) {
-            daily.forEach((day) => {
-              doc.setFont("helvetica", "bold");
-              writeLine(`Day ${day.day}${day.theme ? " — " + day.theme : ""}`, 11, [30, 64, 175]);
-              doc.setFont("helvetica", "normal");
-              (day.locations || []).forEach((loc) => {
-                writeLine(`•  ${loc.name}${loc.durationHours ? ` (${loc.durationHours}h)` : ""}`, 9.5);
-                (loc.highlights || []).slice(0, 3).forEach((h) => writeLine(`      ${h}`, 8.5, [148, 163, 184]));
-              });
-              const meals = [day.meals?.breakfast, day.meals?.lunch, day.meals?.dinner].filter(Boolean) as Array<{ name?: string }>;
-              if (meals.length > 0) {
-                writeLine(`Meals: ${meals.map((m) => m.name || "").join("  |  ")}`, 9);
-              }
-              if (day.transportToAttractions?.route) {
-                writeLine(`Transport: ${day.transportToAttractions.route}`, 9);
-              }
-              if (day.notes && day.notes.length > 0) {
-                day.notes.slice(0, 6).forEach((n) => writeLine(n, 8.5, [100, 116, 139]));
-              }
-              y += 6;
-            });
-          } else if (currentItinerary.data?.rawPlan) {
-            doc.setFont("helvetica", "bold");
-            writeLine("PLAN DETAILS", 10, [37, 99, 235]);
-            doc.setFont("helvetica", "normal");
-            currentItinerary.data.rawPlan
-              .split(/\r?\n/)
-              .map((l) => l.trim())
-              .filter(Boolean)
-              .slice(0, 60)
-              .forEach((l) => writeLine(l, 9));
-          }
-
-          doc.setFontSize(9);
-          doc.setTextColor(148, 163, 184);
-          doc.text("Generated by ChinaGuide AI — chinaengage.org", M, 800);
-          doc.save(`chinaconnect-itinerary-${Date.now()}.pdf`);
+          pdf.save(`chinaconnect-itinerary-${Date.now()}.pdf`);
           return;
         } catch (err) {
           console.error("PDF export failed", err);
@@ -1061,7 +1108,7 @@ export const AIChat: React.FC<AIChatProps> = ({
                   <div className="border-t border-gray-200 p-4 bg-gray-50">
                     <ItineraryDisplay
                       itinerary={currentItinerary}
-                      language={isZh ? "zh" : "en"}
+                      language={language}
                       compact
                       onSave={saveCurrentItinerary}
                       onExport={handleExport}
@@ -1241,7 +1288,7 @@ export const AIChat: React.FC<AIChatProps> = ({
                 </div>
                 <div className="w-full max-w-md">
                   <QuickPrompts
-                    language={isZh ? "zh" : "en"}
+                    language={language}
                     onSelect={sendMessage}
                     variant="expanded"
                   />
@@ -1272,7 +1319,7 @@ export const AIChat: React.FC<AIChatProps> = ({
           {messages.length > 0 && !isLoading && (
             <div className="px-4 pb-2 shrink-0">
               <QuickPrompts
-                language={isZh ? "zh" : "en"}
+                language={language}
                 onSelect={sendMessage}
                 variant="compact"
                 showLabels={false}
@@ -1411,14 +1458,14 @@ export const AIChat: React.FC<AIChatProps> = ({
               <h3 className="font-semibold text-lg mb-4">{LABELS.shareItinerary}</h3>
               <div className="bg-gray-50 rounded-lg p-3 mb-4">
                 <p className="text-xs text-gray-500 mb-1">{LABELS.shareCode}</p>
-                <p className="font-mono text-lg font-bold text-blue-600">{shareCode}</p>
+                <input
+                  type="text"
+                  value={shareCode}
+                  readOnly
+                  className="w-full px-3 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm"
+                />
+                <p className="text-xs text-gray-400 mt-1.5">Anyone with the link can view this itinerary.</p>
               </div>
-              <input
-                type="text"
-                value={getShareLink(shareCode)}
-                readOnly
-                className="w-full px-3 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm mb-4"
-              />
               <div className="flex gap-3">
                 <button
                   onClick={() => setShowShareDialog(false)}

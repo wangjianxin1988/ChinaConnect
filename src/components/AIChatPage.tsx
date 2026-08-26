@@ -219,6 +219,26 @@ export default function AIChatPage() {
     clearConversation,
   } = useAIConversation({ language: lang });
 
+  // Open a specific saved itinerary passed via ?openItinerary=<id> (used by
+  // the account page "View" button on saved routes).
+  useEffect(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("openItinerary");
+      if (id) {
+        loadItinerary(id);
+        setChatStarted(true);
+        // Clean the query string so a refresh does not re-open the same plan.
+        const url = new URL(window.location.href);
+        url.searchParams.delete("openItinerary");
+        window.history.replaceState({}, "", url.toString());
+      }
+    } catch (err) {
+      console.warn("[AIChatPage] openItinerary failed", err);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   // Re-show exhausted banner when usage runs out mid-chat
   useEffect(() => {
     if (usageExceeded && chatStarted) setShowExhaustedBanner(true);

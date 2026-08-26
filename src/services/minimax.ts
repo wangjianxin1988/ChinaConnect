@@ -108,6 +108,8 @@ export interface ChatStreamOptions {
   language?: string;
   /** Model id override */
   model?: string;
+  /** Client-generated id of the message being sent (for idempotent persistence) */
+  clientMsgId?: string;
 }
 
 export interface ChatUsage {
@@ -262,6 +264,7 @@ export class MiniMaxClient {
       conversationId,
       language,
       model,
+      clientMsgId,
     } = options;
 
     this.cancel();
@@ -291,6 +294,7 @@ export class MiniMaxClient {
             conversationId,
             language,
             model: model || "MiniMax-Text-01",
+            clientMsgId,
           }),
         },
         3,

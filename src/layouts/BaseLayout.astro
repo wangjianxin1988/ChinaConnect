@@ -253,7 +253,7 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
         var LANG_STORAGE_KEY = "chinaconnect_language";
         // Paths that exist under /<lang>/...; internal links to these must keep the
         // current language prefix so browsing never silently drops back to English.
-        var LOCALIZED_PATHS = ["/cities", "/city", "/food", "/guide", "/blog", "/attractions", "/scenic-spots", "/ai", "/emergency", "/contact", "/terms", "/privacy", "/auth", "/account", "/profile", "/pricing", "/checkout", "/recent"];
+        var LOCALIZED_PATHS = ["/cities", "/city", "/food", "/guide", "/blog", "/attractions", "/scenic-spots", "/ai", "/emergency", "/contact", "/terms", "/privacy", "/auth", "/account", "/pricing", "/checkout", "/recent"];
 
         function safeGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
         function safeSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
@@ -648,10 +648,6 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
                 '<a href="' + langPrefix() + '/account" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50" role="menuitem">' +
                   '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>' +
                   '<span data-i18n="auth.myAccount">' + escapeHtml("My Account") + '</span>' +
-                '</a>' +
-                '<a href="' + langPrefix() + '/profile" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50" role="menuitem">' +
-                  '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>' +
-                  '<span data-i18n="auth.profileCenter">' + escapeHtml("Profile Center") + '</span>' +
                 '</a>' +
                 '<div class="border-t border-gray-100 my-1"></div>' +
                 '<button id="cc-signout" type="button" class="w-full flex items-center gap-2 px-4 py-2 text-sm text-red-600 hover:bg-red-50" role="menuitem">' +

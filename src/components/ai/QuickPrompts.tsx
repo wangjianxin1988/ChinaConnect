@@ -4,6 +4,7 @@
  */
 
 import React, { useCallback } from "react";
+import type { AiChatLang } from "./chat-labels";
 
 interface QuickPrompt {
   label: string;
@@ -13,7 +14,7 @@ interface QuickPrompt {
 
 interface QuickPromptsProps {
   // PROMPT_CATEGORIES is only defined for en/zh; ja/ko falls back to en at runtime.
-  language?: "en" | "zh";
+  language?: AiChatLang;
   onSelect: (prompt: string) => void;
   variant?: "default" | "compact" | "expanded";
   showLabels?: boolean;
@@ -205,7 +206,7 @@ export const QuickPrompts: React.FC<QuickPromptsProps> = ({
   variant = "default",
   showLabels = true,
 }) => {
-  const prompts = QUICK_PROMPTS[language] || QUICK_PROMPTS.en;
+  const prompts = QUICK_PROMPTS[language] || (language === "zh-TW" ? QUICK_PROMPTS.zh : QUICK_PROMPTS.en);
 
   const handleSelect = useCallback(
     (prompt: string) => {
@@ -234,7 +235,7 @@ export const QuickPrompts: React.FC<QuickPromptsProps> = ({
 
   // Expanded variant - grouped by category
   if (variant === "expanded") {
-    const categories = PROMPT_CATEGORIES[language] || PROMPT_CATEGORIES.en;
+    const categories = (PROMPT_CATEGORIES as Record<string, typeof PROMPT_CATEGORIES.en>)[language] || (language === "zh-TW" ? PROMPT_CATEGORIES.zh : PROMPT_CATEGORIES.en);
     const _categoryGroups = CATEGORY_GROUPS[language] || CATEGORY_GROUPS.en;
 
     // Split prompts into groups
@@ -312,7 +313,7 @@ export const QuickPrompts: React.FC<QuickPromptsProps> = ({
   return (
     <div className="space-y-3">
       <p className="text-xs text-gray-500 font-medium px-1">
-        {language === "zh" ? "试试这些快捷提示" : "Try these quick prompts"}
+        {language === "zh-CN" || language === "zh-TW" ? "试试这些快捷提示" : "Try these quick prompts"}
       </p>
       <div className="flex flex-wrap gap-2">
         {prompts.map((item, index) => (

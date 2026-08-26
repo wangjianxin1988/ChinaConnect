@@ -34,6 +34,7 @@ import {
 import { supabase } from "@/supabase/config";
 import type { AiChatLang } from "@/components/ai/chat-labels";
 import { saveRoute } from "@/lib/ai/route-saver";
+import { EXPORT_LABELS, type ExportLang } from "@/lib/ai/export-labels";
 import {
   buildFallbackItinerary,
   buildSavedItineraryFromConversation,
@@ -77,7 +78,7 @@ export interface UseAIConversationReturn {
   deleteConversation: (id: string) => Promise<void>;
   createNewConversation: () => void;
   exportItinerary: (format: "text" | "json") => string;
-  shareItinerary: (id: string) => string;
+  shareItinerary: (id: string) => Promise<string>;
   getShareLink: (shareCode: string) => string;
   generateQuickResponse: (type: string) => Promise<void>;
 }
@@ -129,6 +130,77 @@ function dbConversationToSummary(row: {
 // Hook
 // ============================================
 
+/** Build a rich plain-text version of a saved itinerary (multilingual headings). */
+function itineraryToText(it: SavedItinerary, lang: ExportLang = "en"): string {
+  const L = EXPORT_LABELS[lang] || EXPORT_LABELS.en;
+  const lines: string[] = [];
+  lines.push(`# ${it.name}`);
+  lines.push(`${L.dest}: ${it.destination || ""}`);
+  lines.push(`${L.tripLength}: ${it.days} ${L.days}`);
+  lines.push("");
+  const s = it.data?.summary;
+  if (s) {
+    if (s.topHighlights?.length) {
+      lines.push(`## ${L.highlights}`);
+      s.topHighlights.forEach((h) => lines.push(`- ${h}`));
+      lines.push("");
+    }
+    if (s.estimatedTotalCost) {
+      lines.push(
+        `## ${L.cost}: ${s.currency === "CNY" ? "¥" : s.currency + " "}${s.estimatedTotalCost}`,
+      );
+      lines.push("");
+    }
+    if (s.travelTips?.length) {
+      lines.push(`## ${L.tips}`);
+      s.travelTips.forEach((t) => lines.push(`- ${t}`));
+      lines.push("");
+    }
+  }
+  const daily = it.data?.dailyItinerary || [];
+  if (daily.length) {
+    lines.push(`## ${L.daily}`);
+    daily.forEach((day) => {
+      lines.push("");
+      lines.push(`### ${L.day} ${day.day}${day.theme ? " — " + day.theme : ""}`);
+      if (day.transportToAttractions?.route) {
+        lines.push(`${L.transport}: ${day.transportToAttractions.route}`);
+      }
+      (day.locations || []).forEach((loc) => {
+        const time =
+          loc.bestTimeStart || loc.bestTimeEnd
+            ? ` [${[loc.bestTimeStart, loc.bestTimeEnd].filter(Boolean).join(" - ")}]`
+            : "";
+        const dur = loc.durationHours ? ` (${loc.durationHours}${L.duration})` : "";
+        const price = loc.ticketInfo?.price ? ` — ${loc.ticketInfo.price}` : "";
+        lines.push(`- ${loc.name}${time}${dur}${price}`);
+        (loc.highlights || []).slice(0, 3).forEach((h) => lines.push(`   - ${h}`));
+        if (loc.insiderTip) lines.push(`   💡 ${loc.insiderTip}`);
+        if (loc.ticketInfo?.bookingUrl) lines.push(`   🔗 ${loc.ticketInfo.bookingUrl}`);
+      });
+      const meals = [day.meals?.breakfast, day.meals?.lunch, day.meals?.dinner].filter(
+        Boolean,
+      ) as Array<{ name?: string }>;
+      if (meals.length) {
+        lines.push(`${L.meals}: ${meals.map((m) => m.name || "").filter(Boolean).join("  |  ")}`);
+      }
+      if (day.accommodation?.name) {
+        lines.push(`${L.accommodation}: ${day.accommodation.name}`);
+      }
+      if (day.notes?.length) {
+        day.notes.slice(0, 12).forEach((n) => lines.push(`  - ${n}`));
+      }
+    });
+  }
+  if (it.data?.rawPlan) {
+    lines.push("");
+    lines.push(`## ${L.originalPlan}`);
+    lines.push(it.data.rawPlan);
+  }
+  lines.push("");
+  lines.push(L.generated);
+  return lines.join("\n");
+}
 export function useAIConversation(options: UseAIConversationOptions = {}): UseAIConversationReturn {
   const {
     language = "en",
@@ -358,6 +430,7 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
           tools: ALL_TOOL_DEFINITIONS,
           language,
           conversationId: conversationId ?? undefined,
+          clientMsgId: userMsg.id,
           onChunk: (partial) => {
             setMessages((prev) =>
               prev.map((m) => (m.id === assistantId ? { ...m, content: partial } : m)),
@@ -557,6 +630,22 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
         setCurrentItinerary(found);
         return;
       }
+      // Fall back to the local offline cache (local_* ids and pre-sync routes).
+      try {
+        const raw = localStorage.getItem("cc_ai_saved_routes");
+        if (raw) {
+          const routes = JSON.parse(raw) as Array<Record<string, unknown>>;
+          const route = routes.find((r) => r.id === id);
+          if (route) {
+            const it = extractedRouteToSavedItinerary(route as never);
+            if (typeof route.createdAt === "string") it.createdAt = route.createdAt;
+            setCurrentItinerary(it);
+            return;
+          }
+        }
+      } catch {
+        // ignore malformed cache
+      }
       // Fall back to ai_routes by id
       const { data: userData } = await supabase.auth.getUser();
       if (userData?.user) {
@@ -603,24 +692,46 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
     (format: "text" | "json"): string => {
       if (!currentItinerary) return "";
       if (format === "json") return JSON.stringify(currentItinerary, null, 2);
-      const lines: string[] = [];
-      lines.push(`# ${currentItinerary.name}`);
-      lines.push(`Destination: ${currentItinerary.destination}`);
-      lines.push(`Duration: ${currentItinerary.days} days`);
-      lines.push("");
-      lines.push("Generated by ChinaConnect AI");
-      return lines.join("\n");
+      return itineraryToText(currentItinerary, language);
     },
-    [currentItinerary],
+    [currentItinerary, language],
   );
 
-  const shareItinerary = useCallback((id: string): string => {
-    void id;
-    return Math.random().toString(36).slice(2, 8).toUpperCase();
-  }, []);
+  const shareItinerary = useCallback(
+    async (id: string): Promise<string> => {
+      const token =
+        Math.random().toString(36).slice(2, 10) + Math.random().toString(36).slice(2, 6);
+      const origin = typeof window !== "undefined" ? window.location.origin : "";
+      const link = `${origin}/trip/${token}`;
+      const { data: userData } = await supabase.auth.getUser();
+      if (userData?.user && !id.startsWith("local_")) {
+        try {
+          await supabase
+            .from("ai_routes")
+            .update({ share_token: token, is_public: true, status: "published" })
+            .eq("id", id)
+            .eq("user_id", userData.user.id);
+        } catch (err) {
+          console.warn("[useAIConversation] share persist failed:", err);
+        }
+      }
+      // Keep a local token->id index so the same browser can resolve it too.
+      try {
+        const key = "cc_ai_share_index";
+        const raw = localStorage.getItem(key);
+        const index = raw ? (JSON.parse(raw) as Record<string, string>) : {};
+        index[token] = id;
+        localStorage.setItem(key, JSON.stringify(index));
+      } catch {
+        // ignore
+      }
+      return link;
+    },
+    [],
+  );
 
   const getShareLink = useCallback((shareCode: string): string => {
-    return `${typeof window !== "undefined" ? window.location.origin : ""}/ai?share=${shareCode}`;
+    return `${typeof window !== "undefined" ? window.location.origin : ""}/trip/${shareCode}`;
   }, []);
 
   // ============================================

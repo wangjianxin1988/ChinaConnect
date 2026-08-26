@@ -1,0 +1,11 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import TripView from '@/components/trip/TripView';
+
+// Public shared-itinerary shell. The share token is resolved client-side
+// from the URL (either /trip/<token> or /<locale>/trip/<token> path segments
+// or the ?token= query), so this page can be statically prerendered.
+---
+<BaseLayout title="Shared Itinerary - ChinaConnect">
+  <TripView client:load />
+</BaseLayout>

@@ -1,16 +1,4 @@
 ---
-import { UserProfilePage } from '@/components/user/UserProfilePage';
-import BaseLayout from '@/layouts/BaseLayout.astro';
-import { translations } from "@/i18n/translations";
-import type { Language } from "@/i18n/translations";
-const lang = (Astro.locals.lang as Language) || "en";
-
-// Auth is handled client-side (static). The profile page renders a loading
-// state and checks auth via client JS, mirroring the /account page.
+// Personal center page removed — redirect to the account page.
+return Astro.redirect("/account", 301);
 ---
-
-<BaseLayout title={(translations[lang]?.profilePage?.title) || translations.en.profilePage?.title || "My Profile - ChinaConnect"}>
-  <main class="container mx-auto px-4 py-8">
-    <UserProfilePage isOwnProfile={true} client:load />
-  </main>
-</BaseLayout>

@@ -109,8 +109,9 @@ export function extractRouteFromConversation(
   if (!destination) return null;
 
   // Keep the full assistant reply (markdown with booking links) so saved
-  // itineraries always contain the detailed confirmed plan.
-  const rawPlan = getLastAssistantContent(messages) || "";
+  // itineraries always contain the detailed confirmed plan. In multi-turn
+  // conversations the final CONFIRMED plan is selected (last full day-plan).
+  const rawPlan = getFinalPlanContent(messages) || "";
 
   // Build daily plans: structured itinerary first, else parse day sections
   // from the assistant reply (multi-language).
@@ -203,6 +204,56 @@ function getLastAssistantContent(messages: Message[]): string | undefined {
     }
   }
   return undefined;
+}
+
+/**
+ * Pick the FINAL confirmed itinerary from a multi-turn conversation.
+ *
+ * Heuristics:
+ *  - An assistant message that looks like a complete day-by-day plan (contains
+ *    day markers and/or several clock times) is preferred over a short reply.
+ *  - Among plan-looking messages the LAST one wins (it reflects the user's
+ *    final refinements).
+ *  - Short confirmations ("Sure!", "Happy to help") are never chosen as the
+ *    saved plan; we fall back to the most recent full plan.
+ */
+export function getFinalPlanContent(messages: Message[]): string | undefined {
+  let lastFallback: string | undefined;
+  let lastPlan: string | undefined;
+  for (let i = messages.length - 1; i >= 0; i--) {
+    const msg = messages[i];
+    if (msg.role !== "assistant" || !msg.content.trim()) continue;
+    const content = msg.content.trim();
+    if (!lastFallback) lastFallback = content;
+    if (looksLikeFullPlan(content)) {
+      lastPlan = content;
+      break;
+    }
+  }
+  return lastPlan || lastFallback;
+}
+
+/** Multi-language day-plan signatures used to spot a full itinerary reply. */
+const PLAN_SIGNATURES: RegExp[] = [
+  /\bday\s+\d+/i,            // en
+  /第\s*\d+\s*天/,            // zh
+  /第\s*\d+\s*[日天]/,        // ja / zh-TW
+  /\d+\s*일차/,                // ko
+  /(?:ngày|day)\s+\d+/i,     // vi / en
+  /[дд]ень\s*\d+/i,          // ru
+  /(?:jour|journée)\s*\d+/i, // fr
+  /tag\s*\d+/i,               // de
+  /اليوم\s*\d+|يوم\s*\d+/,   // ar
+  /روز\s*\d+|روز\d+/i,       // fa
+  /วันที่\s*\d+/,              // th
+];
+
+function looksLikeFullPlan(content: string): boolean {
+  // A full plan usually has day markers and multiple time-stamped entries.
+  const hasDay = PLAN_SIGNATURES.some((re) => re.test(content));
+  const timeCount = (content.match(/\b(?:0?\d|1\d|2[0-3])[:：]\d{2}\b/g) || []).length;
+  const bulletCount = (content.match(/^[-*•·]\s+/gm) || []).length;
+  return hasDay && (timeCount >= 2 || bulletCount >= 4);
 }
 
 const DESTINATION_PATTERNS: RegExp[] = [
