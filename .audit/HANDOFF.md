@@ -1734,3 +1734,26 @@ ode scripts/check-i18n.mjs && npx astro build。
   - **待用户提供**：任一 SMTP 服务商凭据（host/port/user/pass + 已验证发信域名），或先在 Resend 验证 chinaconnect.org 域名后复用该 key。拿到后执行 PATCH /v1/projects/xyvuqbpwrhkukjgzveyc/config/auth body: smtp_admin_email/smtp_host/smtp_port/smtp_user/smtp_pass/smtp_sender_name/mailer_secure_email_change_enabled=false/rate_limit_email_sent=30。
 - **git 状态**：master fcfa3dd 已推送，origin 同步；工作区干净。
 ---
+
+
+### 2026-08-26 会话 #57：SMTP 已配好（真实验证）+ 语言化导出上线 + 行程分享/账号头像等修复部署
+
+- **起**：承接 #56。用户授权自行处理 Supabase SMTP；新增需求"下载文档按用户语言输出"；并需将上一批反馈（智能保存/查看/分享行程、AI 详细化、个人中心移除+头像、对话框重复提问）构建部署上线。
+- **SMTP（核心，已完成并真实验证）**：
+  - Management API PATCH `xyvuqbpwrhkukjgzveyc/config/auth`：`smtp_host=smtp.resend.com`、`smtp_port=587`、**`smtp_user=resend`（关键：非 API key，固定用户名 `resend`）**、`smtp_pass=RESEND_API_KEY`（取自 ai-student-survival/.env）、`smtp_admin_email=noreply@mi-to-ai.com`、`smtp_sender_name=ChinaConnect`、`mailer_secure_email_change_enabled=false`、**`rate_limit_email_sent=30`**。
+  - 首次 PATCH 误用 API key 当 smtp_user → 邮件 500 `535 Invalid username`；对照另一项目（test `giynvpfnzzelzwpmsgtf`）发现正确用法后修复。
+  - E2E 真实验证：mail.tm 临时邮箱 → `/auth/v1/otp` 200 → 3 秒内收到 noreply@mi-to-ai.com 邮件（signup 确认链接 + 免密 "Your sign-in link" 含 6 位 OTP `311436`）→ 验证码登录成功拿 session → 用该 JWT 调生产 chat 函数 200 返回"你好！"。注册确认/免密验证码/邮箱链路全通。
+- **代码（已提交 256e6df 并推送，CI Deploy+Live probe 全绿）**：
+  - 文档按语言导出：`src/lib/ai/export-labels.ts`（12 语言标签）；`AIChat.tsx buildExportHtml(it, lang)` + RTL；`useAIConversation.itineraryToText(it, lang)`；文本导出不再硬编码英文。
+  - PDF 乱码修复：弃用 jsPDF 文本绘制，改 html2canvas 渲染 HTML 快照 → 图片式 PDF（`cc-pdf-export-root`）。
+  - 多轮保存行程：`route-saver.ts` 新增 `getFinalPlanContent`（找最后的完整 day-by-day 计划，跳过"好的！"等短回复）。
+  - 已存行程可查看：账号页每行「查看」→ `/ai?openItinerary=<id>`；`AIChatPage` mount 时 `loadItinerary`；本地 `local_` id 走 localStorage 回退。
+  - 分享：`shareItinerary` 异步写 `share_token`+`is_public`（服务端 ai_routes + 本地 cc_ai_share_index），链接 `/trip/<token>`；TripView 读取。
+  - trip 分享页静态化：`src/pages/trip/[token].astro` 删除 → `src/pages/trip/index.astro`（静态壳）+ TripView 从 URL pathname/query 解析 token；`functions/[[path]].ts` 对 `/trip/<token>`（含语言前缀变体）serve `/trip/index.html`。E2E：service key 插入共享行程 → anon 按 share_token 读到 → 清理，通过。
+  - 个人中心移除：`/profile` 与 `/[lang]/profile` 301/页面重定向到 account；BaseLayout 下拉菜单删 Profile 链接。
+  - 账号页头像：新增编辑资料弹窗（12 预设头像网格 + 显示名），保存同时写 `profiles` + `supabase.auth.updateUser({data})`（同步 header 头像）。修复两个结构 bug：avatar 弹窗代码误嵌在 deleteRoute 内（已移出顶层）；`PRESET_AVATAR_PATHS`/`selectedAvatar`/`editUser` 未声明（已补）。
+  - chat 幂等（防对话框重复问答）：`clientMsgId` 透传，用户消息 `upsert(onConflict:client_msg_id, ignoreDuplicates)`，助手消息 `clientMsgId+":reply"` upsert；已 `supabase functions deploy chat` 上线。数据库 `ai_messages_client_msg_id_key`、`ai_routes_share_token_key` 唯一索引、`Anyone can view shared routes` RLS 均已确认存在。
+  - AI 提示词：新增 first-timer 友好强制细则（时段、双语景点名+地址+票价+Amap 链接、每餐地址价格、精确交通/车次、游华清单、禁填充语等）。
+- **验证**：`node scripts/check-i18n.mjs` 12/12、0 缺失；`npx tsc --noEmit` 0 错误；`node node_modules/astro/astro.js build` 26710 页成功；`node scripts/pack-food-details.mjs` OK；生产 `/trip/`、`/trip/testtoken123` 200（含 TripView）；`/account` 含 avatar-picker+12 头像；`/ai` AIChatPage chunk 含 openItinerary/行程计划/cc-pdf-export-root；`/profile` 输出 meta-refresh 重定向到 /account。
+- **待办（外部）**：Creem Request re-review（已在 #56 提示）；Resend key 若到期需更新 smtp_pass；如需正式发信域名可把 chinaconnect.org 加到 Resend 验证。
+- **下个会话**：如需调整导出 PDF 的字体/分页（html2canvas 图片式）或行程排版细节继续迭代；确认用户对生产体验无新反馈。
