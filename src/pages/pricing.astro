@@ -2,7 +2,7 @@
 
 /**
  * Pricing Page - Professional Redesign
- * Displays subscription tiers, feature comparison, FAQ, and testimonials
+ * Displays subscription tiers, feature comparison, and FAQ
  * Integrates with Creem Checkout for real payments
  */
 import { translations } from "@/i18n/translations";
@@ -33,10 +33,6 @@ const cancelled = Astro.url.searchParams.get('cancelled');
         <div class="absolute bottom-0 right-1/4 w-80 h-80 bg-white rounded-full blur-3xl translate-y-1/2"></div>
       </div>
       <div class="container-custom relative z-10 text-center">
-        <div class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm rounded-full px-4 py-1.5 mb-6">
-          <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-          <span class="text-sm text-white/90 font-medium"><span data-i18n="pricing.trustedBy">Trusted by 10,000+ travelers</span></span>
-        </div>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
           <span data-i18n="pricing.heroTitle">Simple, Transparent Pricing</span>
         </h1>
@@ -365,61 +361,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
       </div>
     </section>
 
-    {/* Testimonials */}
-    <section class="py-20 bg-white">
-      <div class="container-custom">
-        <div class="text-center mb-14">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4"><span data-i18n="pricing.testimonialsTitle">Loved by Travelers Worldwide</span></h2>
-          <p class="text-gray-600 max-w-xl mx-auto"><span data-i18n="pricing.testimonialsSubtitle">Hear what our users say about their ChinaConnect experience</span></p>
-        </div>
-        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {/* Testimonial 1 */}
-          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100 hover:shadow-lg transition-shadow">
-            <div class="flex items-center gap-1 mb-4">
-              <span class="text-amber-400 text-lg">★★★★�?/span>
-            </div>
-            <p class="text-gray-700 text-sm leading-relaxed mb-6">"ChinaConnect made planning my first trip to Beijing incredibly easy. The AI suggestions for local restaurants were spot-on �?better than any travel book!"</p>
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-blue-200 flex items-center justify-center text-blue-700 font-bold text-sm">SK</div>
-              <div>
-                <p class="text-sm font-semibold text-gray-900">Sarah K.</p>
-                <p class="text-xs text-gray-500">Explorer Plan · 🇺🇸 USA</p>
-              </div>
-            </div>
-          </div>
-          {/* Testimonial 2 */}
-          <div class="bg-gradient-to-br from-purple-50 to-violet-50 rounded-2xl p-8 border border-purple-100 hover:shadow-lg transition-shadow">
-            <div class="flex items-center gap-1 mb-4">
-              <span class="text-amber-400 text-lg">★★★★�?/span>
-            </div>
-            <p class="text-gray-700 text-sm leading-relaxed mb-6">"As a travel agent, the Business plan is worth every penny. I create custom itineraries for clients in minutes. The PDF export feature saves me hours of work."</p>
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-purple-200 flex items-center justify-center text-purple-700 font-bold text-sm">LT</div>
-              <div>
-                <p class="text-sm font-semibold text-gray-900">Li Wei T.</p>
-                <p class="text-xs text-gray-500">Business Plan · 🇬🇧 UK</p>
-              </div>
-            </div>
-          </div>
-          {/* Testimonial 3 */}
-          <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 border border-amber-100 hover:shadow-lg transition-shadow">
-            <div class="flex items-center gap-1 mb-4">
-              <span class="text-amber-400 text-lg">★★★★�?/span>
-            </div>
-            <p class="text-gray-700 text-sm leading-relaxed mb-6">"I upgraded to Traveler after my free requests ran out. The premium customization helped me plan a perfect 2-week cultural immersion trip. Highly recommend!"</p>
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-amber-200 flex items-center justify-center text-amber-700 font-bold text-sm">MR</div>
-              <div>
-                <p class="text-sm font-semibold text-gray-900">Maria R.</p>
-                <p class="text-xs text-gray-500">Traveler Plan · 🇩🇪 Germany</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    {/* FAQ Section */}
+        {/* FAQ Section */}
     <section class="py-20 bg-gray-50">
       <div class="container-custom">
         <div class="text-center mb-14">
@@ -510,7 +452,6 @@ const cancelled = Astro.url.searchParams.get('cancelled');
       </div>
       <div class="container-custom text-center relative z-10">
         <h2 class="text-3xl md:text-4xl font-bold text-white mb-5"><span data-i18n="pricing.ctaTitle">Ready to Start Your China Adventure?</span></h2>
-        <p class="text-blue-100 mb-10 max-w-xl mx-auto text-lg"><span data-i18n="pricing.ctaSubtitle">Join thousands of travelers using AI to plan their perfect China trip.</span></p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href="/ai" class="inline-flex items-center gap-2 py-3.5 px-8 rounded-xl bg-white text-indigo-700 font-bold hover:bg-blue-50 transition-colors shadow-lg text-base">
             <span data-i18n="pricing.ctaPrimary">Start Free Today</span>
