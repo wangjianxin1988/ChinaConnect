@@ -1757,3 +1757,14 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **验证**：`node scripts/check-i18n.mjs` 12/12、0 缺失；`npx tsc --noEmit` 0 错误；`node node_modules/astro/astro.js build` 26710 页成功；`node scripts/pack-food-details.mjs` OK；生产 `/trip/`、`/trip/testtoken123` 200（含 TripView）；`/account` 含 avatar-picker+12 头像；`/ai` AIChatPage chunk 含 openItinerary/行程计划/cc-pdf-export-root；`/profile` 输出 meta-refresh 重定向到 /account。
 - **待办（外部）**：Creem Request re-review（已在 #56 提示）；Resend key 若到期需更新 smtp_pass；如需正式发信域名可把 chinaconnect.org 加到 Resend 验证。
 - **下个会话**：如需调整导出 PDF 的字体/分页（html2canvas 图片式）或行程排版细节继续迭代；确认用户对生产体验无新反馈。
+
+
+### 2026-08-26 会话 #57（补充）：Creem 合规二轮整改 — 移除定价页评价与"10,000+ 旅客"等宣传
+
+- **起**：Creem 复审反馈两项不合规：1) 定价页展示客户评价但无真实客户证据；2) 定价页出现 "Trusted by 10,000+ travelers" 与 "Join thousands of travelers"，要求移除或提供证据。
+- **改动（提交 0a44d95，CI Deploy+Live probe 全绿）**：
+  - `src/pages/pricing.astro` + `src/pages/[lang]/pricing.astro`：删除 hero 的 "Trusted by 10,000+ travelers" 徽章；删除整个 Testimonials 区块（3 条评价 + 作者头像）；删除 CTA 的 "Join thousands of travelers..." 副标题行。
+  - `src/i18n/translations.ts`：删除 12 语言 × 17 个键 = 204 行（`pricing.trustedBy`、`testimonials*`、`testimonial1..3*`、以及 `ctaSubtitle` 中 12 条含"千/万"宣传值，保留 12 条 "Start planning your trip..." 合法值）。理由：页面 HTML 内嵌 `window.__I18N__` 全量翻译字典，仅删元素仍会在页面源码中残留宣传字样，必须连字典一起删。
+  - 细节：translations.ts 删除时正则需连 `\r\n` 一起消费，否则会留下 204 行空行（第一次踩坑已回退重做）；`ctaSubtitle` 在另一个区块有合法值，按值过滤只删宣传行。
+- **验证**：`check-i18n.mjs` 12/12、0 缺失（used keys 600）；`tsc --noEmit` 0 错误；build 26710 页成功；本地 dist 12 个定价页 grep 无任何宣传字样；生产 12 个语言 `/pricing/` 全部 200 且 CLEAN（hero/Free/对比/FAQ/CTA 结构完整，CTA 按钮 2 个）。
+- **下个会话**：用户在 Creem 后台 https://creem.io/dashboard/balances/accounts 点 **Request re-review**（预计 24-48h）。若 Creem 还提新项，按同样"页面元素 + 内嵌翻译字典"双删原则处理。
