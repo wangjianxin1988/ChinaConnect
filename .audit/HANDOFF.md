@@ -1795,3 +1795,22 @@ ode scripts/check-i18n.mjs && npx astro build。
   - 数据库里 08-26 当天因登录故障产生的空会话（message_count=0）未清理，如需可删。
   - 用户 237905750@qq.com 的历史会话 `867f91c1` message_count=4 但仅 1 条消息，若用户反馈旧记录打开为空需进一步排查（多为当日登录故障遗留）。
 - **下个会话**: 若用户反馈新问题，先检查登录是否正常（本会话已修根因）；继续此前待办（行程保存智能化、AI 回答详尽度、账户页头像编辑等）。
+
+
+### 2026-08-26 会话 #59：故障遗留会话清理 + Creem 审核通过后支付链路核对（全绿）
+
+- **起**: 用户要求清理 08-26 登录故障遗留的会话；同时 Creem 团队已发来 **Account Approved** 邮件（xinshoping 商店审核通过，收款账户激活），需核对支付/webhook 链路。
+- **故障遗留清理（已完成）**:
+  - 删除 ai_conversations 中无任何 ai_messages 的空会话共 **13 条**（08-26 故障期 QA 空壳 11 条 + 真实用户 237905750@qq.com 的空壳 1 条 ab4f02c1 + 08-18 codextest 测试空壳 1 条 2f044a32）。删除前逐一确认均无关联 ai_routes/ai_conversation_snapshots。
+  - 另删 1 条孤立 ai_routes（2ede5100，08-17 codextest 测试行程，父会话早已不存在，页面不可访问）。
+  - **保留**：真实用户 237905750@qq.com 的 867f91c1（message_count=4 但仅 1 条消息，属当日故障遗留但含真实提问，不删）。
+  - 清理后孤儿检查：orphan_messages=0、orphan_routes=0、orphan_snapshots=0。
+- **支付链路核对（Creem 已批准，全链路真实可收款）**:
+  - Webhook 指向确认（.audit/HANDOFF.md 会话46 记录 + secrets 核对）：Creem dashboard 的 webhook 端点 = https://xyvuqbpwrhkukjgzveyc.supabase.co/functions/v1/checkout-webhook，启用 6 事件；**不是** CF Pages 的 /api/creem-webhook。
+  - Supabase secrets（项目 xyvuqbpwrhkukjgzveyc）：CREEM_API_KEY/CREEM_WEBHOOK_SECRET/6 个 prod 产品 ID/SITE_URL/CREEM_TEST_MODE 全部在列；本地 whsec_TAhA... 的 sha256 与远端 digest 9052247e... 完全一致。
+  - Edge function 部署状态：checkout v8 / checkout-webhook v9 / checkout-verify v4 / chat v18，全部 ACTIVE。
+- **Webhook 激活链路 E2E（生产实测）**: 用真实 CREEM_WEBHOOK_SECRET 对构造的 checkout.completed 事件签名 → POST 生产函数 → 200 {ok, action, orderId}；DB 验证：orders 建单（explorer/$4.99/USD/paid）、user_memberships 激活（active/monthly/auto_renew）、update_ai_usage_tier RPC 把 ai_usage.tier_slug 同步为 explorer。重放同一事件返回 duplicate（幂等）；无签名/错签名均 401（验签）。测试数据已全部清理。
+- **死代码清理**: 删除 functions/api/checkout.ts + functions/api/creem-webhook.ts（前端只调 Supabase /functions/v1/checkout，两个 CF 实现为占位产品 ID prod_*_monthly 死代码，若被误用会静默失败）。functions/api/pricing.ts 等其余 CF 函数仍被使用，保留。
+- **验证**: npx tsc --noEmit 0 错误；check-i18n.mjs 12/12、0 缺失；node node_modules/astro/astro.js build 26710 页成功（与 CI 同命令，未触发 prebuild 翻译）。
+- **定价一致性（复核）**: 上一会话已逐产品确认 Creem 渠道 Explorer $4.99/$47.99、Traveler $9.99/$95.99、Business $19.99/$191.99 与站点完全一致；本会话 6 个 checkout 页用 Playwright 复核金额一致。
+- **下一步（用户/待办）**: 真实收款前建议用户本人完成一笔真实小额支付（如 Explorer monthly）走完 Creem 结账 → webhook → 订单/会员/AI 档位闭环；此后可继续行程保存智能化、AI 回答详尽度、账户页头像编辑等迭代项。
