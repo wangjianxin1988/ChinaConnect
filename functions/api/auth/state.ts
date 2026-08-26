@@ -97,10 +97,10 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
       (typeof meta.picture === "string" && meta.picture) ||
       null;
 
-    let profile: { avatar_url: string | null; display_name: string | null; nationality: string | null; level: string | null; points: number | null } | null = null;
+    let profile: { avatar_url: string | null; display_name: string | null; nationality: string | null; travel_level: number | null; points: number | null } | null = null;
     try {
       const profileRes = await fetch(
-        `${supabaseUrl}/rest/v1/profiles?user_id=eq.${user.id}&select=avatar_url,display_name,nationality,level,points&limit=1`,
+        `${supabaseUrl}/rest/v1/profiles?user_id=eq.${user.id}&select=avatar_url,display_name,nationality,travel_level,points&limit=1`,
         {
           headers: {
             apikey: supabaseAnonKey,
@@ -109,7 +109,7 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
         },
       );
       if (profileRes.ok) {
-        const arr = (await profileRes.json()) as Array<{ avatar_url: string | null; display_name: string | null; nationality: string | null; level: string | null; points: number | null }>;
+        const arr = (await profileRes.json()) as Array<{ avatar_url: string | null; display_name: string | null; nationality: string | null; travel_level: number | null; points: number | null }>;
         if (arr && arr.length > 0) profile = arr[0];
       }
     } catch {
@@ -127,7 +127,7 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
           ? {
               displayName: profile.display_name,
               nationality: profile.nationality,
-              level: profile.level,
+              travel_level: profile.travel_level,
               points: profile.points,
             }
           : null,

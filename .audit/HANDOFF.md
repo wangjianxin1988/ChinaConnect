@@ -1839,3 +1839,17 @@ ode scripts/check-i18n.mjs && npx astro build。
   - Resend 账户若再出现 550/535，先测 key 是否有效（SMTP AUTH 到 smtp.resend.com）；**勿用 @example.com 收件测试**（Resend 保留域名必拒）；改 Supabase auth config 时务必全量 PATCH（smtp_pass 单字段会重置其它项）。
   - `src/pages/[lang]/index.astro.bak` 为历史残留未跟踪文件，可删。
   - 真实收款前建议用户本人完成一笔真实小额支付走完 Creem 结账 → webhook → 订单/会员/AI 档位闭环（#59 已备）。
+
+
+### 2026-08-27 会话 #61 — 上线前深度审计（RLS 加固 / 认证 E2E / 隔离 / 支付）
+
+- **结论先行**: 上线前审计完成，修复 2 个问题（1 个 P0 权限漏洞 + 1 个头像查询 bug），其余全链路验证通过。
+- **P0 已修复并上线**: 14 张公开内容表（cities/restaurants/attractions/emergency_info 等）此前无 RLS 且 anon/authenticated 拥有 INSERT/UPDATE/DELETE/TRUNCATE 权限——任何人可用公开 anon key 增删改全库。已应用 `supabase/migrations/20260827_rls_harden_public_content.sql`（ENABLE RLS + Public read 策略 + 回收写权限），复验：anon 写入被拒(401/42501)、读取正常、service_role 管理写入不受影响。
+- **头像 bug 已修复**: `functions/api/auth/state.ts` 查询 profiles 用了不存在的 `level` 列 → PostgREST 400 → 头像永远取不到 profile.avatar_url。已改为 `travel_level`（前端 header 只消费 avatarUrl/displayName，`profile` 子对象无副作用）。
+- **认证 E2E 全绿**（mail.tm 真实收件）: 注册→确认邮件(noreply@mi-to-ai.com)→点击确认→建号+profile；密码登录；免密登录（邮件 6 位验证码→验证码登录，REST+UI 双验证）；忘记密码→恢复邮件→重置页→新密码登录成功、旧密码被拒。
+- **第三方登录**: Supabase google/github enabled；登录页按钮→跳转真实 OAuth 端点（Google accounts.google.com / GitHub github.com/login），redirect_to=/auth/callback；生产 /api/auth/providers 200。
+- **双账号隔离**: A 建对话/路由/行程/收藏，B 无法读(空)/改(0 行)/删(0 行) A 的数据，A 数据完好；公开行程(is_public+published)按设计可见；profiles 公共读为设计行为（钱包在 wallets 表 RLS 仅本人）。
+- **AI/用户中心/支付**: 聊天函数 200；会话持久化+刷新恢复；账户已保存行程可点击查看；行程详情页无原始代码；分享页正常+复制链接；PDF 导出正常(122KB %PDF)；账户资料编辑+预设头像(12 个 SVG)+收藏+订单+订阅齐全；checkout edge function 6 种套餐组合全部返回有效 Creem URL；UI 点击 Subscribe→跳转 creem.io。
+- **验证**: `npx tsc --noEmit` 过、`pnpm test` 123/123、`scripts/check-i18n.mjs` 12 语言 0 缺口、生产构建 26722 页 111.8s、生产关键页面(login/account/ai/pricing/city-beijing) 200。
+- **遗留**: 测试账号 `ai.codextest.1787386274959@example.com`（business 档）保留作回归；探针数据与测试用户已清理。
+- **下一会话**: 部署后可在生产复跑认证 E2E（redirect_to 需为 chinaengage.org）；关注 SMTP 限流（当前 30/小时）与 Creem webhook 回调测试。
