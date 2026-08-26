@@ -1,8 +1,11 @@
-﻿/**
+/**
  * Supabase config: shared client + auth helpers.
  * The redirect URL for email confirmations is set to /auth/callback so the
  * verification link the user receives in their email points to our callback
- * page, which exchanges the code for a session.
+ * page, which completes the session (implicit #access_token or token_hash).
+ * flowType is implicit: PKCE breaks numeric OTP verify (supabase/auth-js #662)
+ * because verifyOtp() never sends the code_verifier, so passwordless login,
+ * signup confirmations and password recovery fail with 403 otp_expired.
  */
 
 import { type SupabaseClient, createClient } from "@supabase/supabase-js";
@@ -33,7 +36,7 @@ if (typeof window === "undefined" && typeof globalThis !== "undefined") {
 
 export const supabase: SupabaseClient = createClient(supabaseUrl, supabaseKey, {
   auth: {
-    flowType: "pkce",
+    flowType: "implicit",
     autoRefreshToken: true,
     persistSession: true,
     detectSessionInUrl: false,

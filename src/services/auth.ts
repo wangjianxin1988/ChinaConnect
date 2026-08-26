@@ -340,7 +340,7 @@ export async function verifyEmailOtp(
   const { data, error } = await authClient.auth.verifyOtp({
     email,
     token: token.trim(),
-    type: "email",
+    type: "magiclink",
   });
 
   if (error) return { user: null, session: null, error };

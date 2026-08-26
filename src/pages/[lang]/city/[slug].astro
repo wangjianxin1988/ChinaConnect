@@ -503,7 +503,7 @@ const mapMarkers = [
             <div class="grid md:grid-cols-2 gap-3">
               {city.highlights.map(h => (
                 <div class="flex items-start gap-2">
-                  <span class="text-blue-500 mt-1">?</span>
+                  <span class="text-blue-500 mt-1">•</span>
                   <span class="text-gray-700">{h}</span>
                 </div>
               ))}
@@ -536,7 +536,7 @@ const mapMarkers = [
                 </div>
               </div>
               <div class="flex items-center gap-3">
-                <span class="text-2xl">?</span>
+                <span class="text-2xl">🔌</span>
                 <div>
                   <div class="text-sm text-gray-500" data-i18n="cityPage.electricity">{_lookup("cityPage.electricity")}</div>
                   <div class="font-medium">{city.quickFacts.electricity}</div>
@@ -671,7 +671,7 @@ const mapMarkers = [
                 <ul class="space-y-2 text-sm text-gray-600">
                   {(city.transport.local.metro || []).flat(Infinity).map(item => (
                     <li class="flex items-start gap-2">
-                      <span class="text-blue-500">?</span>
+                      <span class="text-blue-500">•</span>
                       <span>{formatTransportItem(item)}</span>
                     </li>
                   ))}
@@ -695,7 +695,7 @@ const mapMarkers = [
                 <ul class="space-y-2 text-sm text-gray-600">
                   {(city.transport.local.bus || []).flat(Infinity).map(item => (
                     <li class="flex items-start gap-2">
-                      <span class="text-green-500">?</span>
+                      <span class="text-green-500">•</span>
                       <span>{formatTransportItem(item)}</span>
                     </li>
                   ))}
@@ -709,7 +709,7 @@ const mapMarkers = [
                 <ul class="space-y-2 text-sm text-gray-600">
                   {(city.transport.local.taxi || []).flat(Infinity).map(item => (
                     <li class="flex items-start gap-2">
-                      <span class="text-orange-500">?</span>
+                      <span class="text-orange-500">•</span>
                       <span>{formatTransportItem(item)}</span>
                     </li>
                   ))}
@@ -723,7 +723,7 @@ const mapMarkers = [
                 <ul class="space-y-2 text-sm text-gray-600">
                   {(city.transport.local.bike || []).flat(Infinity).map(item => (
                     <li class="flex items-start gap-2">
-                      <span class="text-purple-500">?</span>
+                      <span class="text-purple-500">•</span>
                       <span>{formatTransportItem(item)}</span>
                     </li>
                   ))}
@@ -834,7 +834,7 @@ const mapMarkers = [
                     <ul class="space-y-2">
                       {method.tips.map(tip => (
                         <li class="flex items-start gap-2 text-sm">
-                          <span class="text-amber-500">?</span>
+                          <span class="text-amber-500">•</span>
                           <span class="text-gray-600">{tip}</span>
                         </li>
                       ))}
@@ -893,9 +893,9 @@ const mapMarkers = [
                 <span>💡</span> <span data-i18n="cityPage.proTips">{_lookup("cityPage.proTips")}</span>
               </h4>
               <ul class="text-sm text-blue-700 space-y-1">
-                <li data-i18n="cityPage.proTipEsim1"><span>{isJapanese ? "💡" : "?"}</span> {isJapanese ? "eSIMは、お使いのスマホが対応している場合（iPhone XS以降および大半のAndroidフラッグシップ機）に最も便利です。" : "eSIM works best if your phone supports it (iPhone XS+ and most Android flagships)."}</li>
-                <li data-i18n="cityPage.proTipEsim2"><span>{isJapanese ? "💡" : "?"}</span> {isJapanese ? "中国到着前にeSIMアプリをダウンロードしておきましょう。" : "Download eSIM apps before arriving in China."}</li>
-                <li data-i18n="cityPage.proTipEsim3"><span>{isJapanese ? "💡" : "?"}</span> {isJapanese ? "AiraloとHolaflyは、データ無制限プランを含む中国向けeSIMを提供しています。" : "Airalo and Holafly offer China-specific plans with unlimited data options."}</li>
+                <li data-i18n="cityPage.proTipEsim1"><span>💡</span> {isJapanese ? "eSIMは、お使いのスマホが対応している場合（iPhone XS以降および大半のAndroidフラッグシップ機）に最も便利です。" : "eSIM works best if your phone supports it (iPhone XS+ and most Android flagships)."}</li>
+                <li data-i18n="cityPage.proTipEsim2"><span>💡</span> {isJapanese ? "中国到着前にeSIMアプリをダウンロードしておきましょう。" : "Download eSIM apps before arriving in China."}</li>
+                <li data-i18n="cityPage.proTipEsim3"><span>💡</span> {isJapanese ? "AiraloとHolaflyは、データ無制限プランを含む中国向けeSIMを提供しています。" : "Airalo and Holafly offer China-specific plans with unlimited data options."}</li>
               </ul>
             </div>
           </div>
