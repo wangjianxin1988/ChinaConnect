@@ -1768,3 +1768,30 @@ ode scripts/check-i18n.mjs && npx astro build。
   - 细节：translations.ts 删除时正则需连 `\r\n` 一起消费，否则会留下 204 行空行（第一次踩坑已回退重做）；`ctaSubtitle` 在另一个区块有合法值，按值过滤只删宣传行。
 - **验证**：`check-i18n.mjs` 12/12、0 缺失（used keys 600）；`tsc --noEmit` 0 错误；build 26710 页成功；本地 dist 12 个定价页 grep 无任何宣传字样；生产 12 个语言 `/pricing/` 全部 200 且 CLEAN（hero/Free/对比/FAQ/CTA 结构完整，CTA 按钮 2 个）。
 - **下个会话**：用户在 Creem 后台 https://creem.io/dashboard/balances/accounts 点 **Request re-review**（预计 24-48h）。若 Creem 还提新项，按同样"页面元素 + 内嵌翻译字典"双删原则处理。
+
+
+
+### 2026-08-26 会话 #58（问题反馈修复：头像 / AI 不回复 / 城市页问号）
+
+- **起**: 用户报 3 问题：①右上角头像不显示；②AI 不回复、刷新后会话丢失、历史记录不见；③城市详情页大量问号（所有语言）。
+- **根因（一石多鸟）**:
+  - `src/supabase/config.ts` 设 `flowType: "pkce"`：PKCE 下 `signInWithOtp` 请求带 `code_challenge`，但 `verifyOtp` 从不发 `code_verifier`（supabase/auth-js #662），6 位验证码 verify 恒 403 `otp_expired` → 免密登录/注册确认/找回密码全部失败 → 无会话无 cookie → 头像不显示 + AI `getAccessToken()` 抛 "Authentication required" → 只建空会话无消息（历史记录"消失"）。
+  - `src/services/auth.ts` `verifyEmailOtp` 用 `type: "email"`，GoTrue 邮件 OTP 实际要求 `type: "magiclink"`（实测 HTTP：magiclink 200 / email 403）。
+- **改动**:
+  - `src/supabase/config.ts`: `flowType: "pkce" -> "implicit"`（callback/useAuth 已兼容 `#access_token` + `token_hash` 分支）。
+  - `src/services/auth.ts`: `verifyEmailOtp` type `email -> magiclink`。
+  - `src/pages/[lang]/city/[slug].astro`: eSIM pro-tip 项目符号字面 `?` → `💡`；其余 `?` → `•` / `🔌`（上一会话已改）。
+  - `src/data/cities-i18n/fr/harbin.json` + `fr/hulunbuir.json`: 6 处字面 `"??"` → 对照英文源（Laodao Wai / Lao Ding Feng / Caviar / Guo Luo Ji / Lao Du Yi Fang / Caviar）。
+- **验证**（本地 dev + 生产 chinaengage.org 双跑，Playwright + mail.tm）:
+  - 注册(email+password)→确认链接→implicit `#access_token`→会话+Cookie ✅
+  - 免密 6 位验证码登录 → 会话+Cookie ✅；找回密码→重置页建会话→改密→新密码可登录 ✅
+  - 右上角头像显示（预设头像 img + 用户名）✅
+  - AI 对话 200 返回真实行程，刷新后 prompt+回复从 DB 恢复 ✅
+  - 城市页 `>?<` 0、U+FFFD 0（dist 全量 + 生产 ar/ja/th/fr/zh-CN/en 抽样）✅
+- **部署**: commit `2fb91a1` → `git push origin master` → GitHub Actions `deploy-cf-pages.yml` 成功。
+- **遗留/提示**:
+  - 本地 dev 偶发 `ERR_SSL_PROTOCOL_ERROR`（本机网络抖动，重放同请求成功；生产无此问题）。
+  - Supabase 邮件限流 `rate_limit_email_sent=30` 已生效；测试频发邮件会触发 per-address 52s 冷却。
+  - 数据库里 08-26 当天因登录故障产生的空会话（message_count=0）未清理，如需可删。
+  - 用户 237905750@qq.com 的历史会话 `867f91c1` message_count=4 但仅 1 条消息，若用户反馈旧记录打开为空需进一步排查（多为当日登录故障遗留）。
+- **下个会话**: 若用户反馈新问题，先检查登录是否正常（本会话已修根因）；继续此前待办（行程保存智能化、AI 回答详尽度、账户页头像编辑等）。
