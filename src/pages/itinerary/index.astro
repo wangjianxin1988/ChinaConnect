@@ -1,0 +1,11 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import SavedTripPage from '@/components/trip/SavedTripPage';
+
+// Saved-itinerary detail shell. The row id is resolved client-side from the
+// URL (either /itinerary/<id> or /<locale>/itinerary/<id> path segments), so
+// this page can be statically prerendered. Auth + RLS gate the actual row.
+---
+<BaseLayout title="My Itinerary - ChinaConnect" meta={{ noIndex: true }}>
+  <SavedTripPage client:load />
+</BaseLayout>

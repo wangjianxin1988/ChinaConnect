@@ -1,0 +1,33 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import SavedTripPage from '@/components/trip/SavedTripPage';
+
+// Locale-prefixed saved-itinerary detail shell (/<locale>/itinerary/<id>).
+// Mirrors src/pages/itinerary/index.astro; the row id is resolved client-side
+// from the URL path, so this page can be statically prerendered per locale.
+// Auth + RLS gate the actual row.
+
+const TITLES: Record<string, string> = {
+  ja: "マイ旅程 - ChinaConnect",
+  ko: "내 일정 - ChinaConnect",
+  "zh-CN": "我的行程 - ChinaConnect",
+  "zh-TW": "我的行程 - ChinaConnect",
+  th: "แผนการเดินทางของฉัน - ChinaConnect",
+  vi: "Hành trình của tôi - ChinaConnect",
+  ru: "Мой маршрут - ChinaConnect",
+  fr: "Mon itinéraire - ChinaConnect",
+  de: "Meine Reiseroute - ChinaConnect",
+  ar: "رحلتي - ChinaConnect",
+  fa: "سفر من - ChinaConnect",
+};
+
+export function getStaticPaths() {
+  const langs = ["ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"] as const;
+  return langs.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as string;
+---
+<BaseLayout title={TITLES[lang] ?? "My Itinerary - ChinaConnect"} meta={{ noIndex: true }}>
+  <SavedTripPage client:load />
+</BaseLayout>

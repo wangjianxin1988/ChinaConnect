@@ -9,6 +9,8 @@
  */
 
 import { supabase } from "@/services/supabase";
+import { parseDailyPlansFromContent } from "./parse-days";
+
 import { getLocalStorageManager, type ConversationSnapshot } from "./local-storage-manager";
 import type {
   ConversationSummary,
@@ -332,97 +334,6 @@ function extractDaysFromMessages(messages: Message[]): number | undefined {
     }
   }
   return undefined;
-}
-
-const DAY_HEADER_PATTERNS: RegExp[] = [
-  /^#{1,3}\s*(?:Day|Día|Jour|Tag|Dag|Ngày|День|วัน)\s*[:：]?\s*(\d+)/i,
-  /^#{1,3}\s*(?:第|第)\s*(\d+)\s*(?:天|日|日目)/i,
-  /^#{1,3}\s*(\d+)\s*(?:日目|일|วัน|ngày|день)/i,
-  /^#{1,3}\s*اليوم\s*(\d+)/i,
-  /^#{1,3}\s*روز\s*(\d+)/i,
-  /^#{1,3}\s*(\d+)\s*[-–—]?\s*(?:Day|Jour|Tag)/i,
-];
-
-function parseDailyPlansFromContent(content: string): ExtractedDayPlan[] {
-  const lines = content.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
-  const days: { day: number; lines: string[] }[] = [];
-  let current: { day: number; lines: string[] } | null = null;
-
-  for (const line of lines) {
-    let dayNum: number | null = null;
-    for (const re of DAY_HEADER_PATTERNS) {
-      const m = line.match(re);
-      if (m?.[1]) {
-        dayNum = parseInt(m[1], 10);
-        break;
-      }
-    }
-    if (dayNum !== null) {
-      current = { day: dayNum, lines: [line] };
-      days.push(current);
-    } else if (current) {
-      current.lines.push(line);
-    }
-  }
-
-  if (days.length === 0) return [];
-
-  const mealKeywords = /早餐|午餐|晚餐|早饭|午饭|晚饭|breakfast|lunch|dinner|朝食|昼食|夕食|아침|점심|저녁|sáng|trưa|tối|завтрак|обе[дл]|ужин|petit[- ]déjeuner|déjeuner|dîner|frühstück|mittagessen|abendessen|الإفطار|الغداء|العشاء|صبحانه|ناهار|ชา|อาหารเช้า|อาหารกลางวัน|อาหารเย็น/i;
-  const transportKeywords = /交通|transport|metro|taxi|train|flight|high.?speed|乗り換え|地下鉄|電車|バス|タクシー|교통|지하철|di chuyển|tàu|máy bay|транспорт|метро|поезд|трансфер|transport|métro|metro|zug|flug|bus|قطار|مترو|รถไฟ|แท็กซี่/i;
-
-  return days.map((d) => {
-    const locations: ExtractedLocation[] = [];
-    const meals: ExtractedDayPlan["meals"] = {};
-    const transport: string[] = [];
-    const notes: string[] = [];
-
-    for (const line of d.lines) {
-      const urlMatch = line.match(/https?:\/\/[^\s)]+/g) || [];
-      const isBullet = /^[-*•·\d\.]+\s+/.test(line) || line.startsWith("- ") || line.startsWith("•");
-      if (mealKeywords.test(line)) {
-        if (/早餐|早饭|breakfast|朝食|아침|завтрак|petit[- ]déjeuner|frühstück|الإفطار|صبحانه|อาหารเช้า/i.test(line)) meals.breakfast = cleanLine(line);
-        else if (/午餐|午饭|lunch|昼食|점심|обед|déjeuner|mittagessen|الغداء|ناهار|อาหารกลางวัน/i.test(line)) meals.lunch = cleanLine(line);
-        else if (/晚餐|晚饭|dinner|夕食|저녁|ужин|dîner|abendessen|العشاء|شام|อาหารเย็น/i.test(line)) meals.dinner = cleanLine(line);
-        notes.push(line);
-        continue;
-      }
-      if (transportKeywords.test(line)) {
-        transport.push(cleanLine(line));
-        notes.push(line);
-        continue;
-      }
-      if (isBullet && line.length > 2) {
-        locations.push({
-          name: cleanLine(line).replace(/^[-*•·\d\.]+\s+/, "").slice(0, 60),
-          nameZh: undefined,
-          lat: 0,
-          lng: 0,
-          durationHours: 1,
-          bestTime: "",
-          ticketPrice: "Free",
-          highlights: [line, ...(urlMatch.length ? urlMatch : [])],
-          insiderTip: undefined,
-        });
-      }
-      notes.push(line);
-    }
-
-    const theme = cleanLine(d.lines[0]).replace(/^#{1,3}\s*/, "").replace(/^[-*•·\d\.]+\s+/, "").slice(0, 80);
-
-    return {
-      day: d.day,
-      theme,
-      dailyCost: 0,
-      locations,
-      meals,
-      transport: transport.join(" | ") || "",
-      ...(notes.length ? { notes } : {}),
-    };
-  });
-}
-
-function cleanLine(line: string): string {
-  return line.replace(/^[-*•·\d\.]+\s+/, "").replace(/^#{1,3}\s*/, "").trim();
 }
 
 function extractHighlightsFromMessages(messages: Message[]): string[] {

@@ -19,6 +19,7 @@ interface ItineraryDisplayProps {
   onExport?: (format: "text" | "json" | "pdf") => void;
   onShare?: () => void;
   onDelete?: () => void;
+  onOpenDetail?: (id: string) => void;
   compact?: boolean;
 }
 
@@ -34,6 +35,9 @@ const LABEL = {
     exportText: "Text",
     exportJson: "JSON",
     share: "Share",
+    viewDetails: "View Full Details",
+    viewDetailsHint: "Preview only — open the full itinerary page for complete details.",
+    stops: "stops",
     delete: "Delete",
     saved: "Saved",
     overview: "Overview",
@@ -91,6 +95,9 @@ const LABEL = {
     exportText: "テキスト",
     exportJson: "JSON",
     share: "共有",
+    viewDetails: "詳細を見る",
+    viewDetailsHint: "プレビューのみ表示です。完全な内容は詳細ページでご覧ください。",
+    stops: "スポット",
     delete: "削除",
     saved: "保存済み",
     overview: "概要",
@@ -148,6 +155,9 @@ const LABEL = {
     exportText: "텍스트",
     exportJson: "JSON",
     share: "공유",
+    viewDetails: "전체 보기",
+    viewDetailsHint: "미리보기입니다. 전체 내용은 상세 페이지에서 확인하세요.",
+    stops: "곳",
     delete: "삭제",
     saved: "저장됨",
     overview: "개요",
@@ -205,6 +215,9 @@ const LABEL = {
     exportText: "文本",
     exportJson: "JSON",
     share: "分享",
+    viewDetails: "查看完整行程",
+    viewDetailsHint: "此处仅显示预览，点击上方按钮前往详情页查看完整行程。",
+    stops: "个地点",
     delete: "删除",
     saved: "已保存",
     overview: "概览",
@@ -262,6 +275,9 @@ const LABEL = {
     exportText: "文字",
     exportJson: "JSON",
     share: "分享",
+    viewDetails: "查看完整行程",
+    viewDetailsHint: "此處僅顯示預覽，點擊上方按鈕前往詳情頁查看完整行程。",
+    stops: "個景點",
     delete: "刪除",
     saved: "已儲存",
     overview: "總覽",
@@ -319,6 +335,9 @@ const LABEL = {
     exportText: "ข้อความ",
     exportJson: "JSON",
     share: "แชร์",
+    viewDetails: "ดูรายละเอียดทั้งหมด",
+    viewDetailsHint: "นี่คือตัวอย่างเท่านั้น คลิกเพื่อดูรายละเอียดทั้งหมด",
+    stops: "จุด",
     delete: "ลบ",
     saved: "บันทึกแล้ว",
     overview: "ภาพรวม",
@@ -376,6 +395,9 @@ const LABEL = {
     exportText: "Văn bản",
     exportJson: "JSON",
     share: "Chia sẻ",
+    viewDetails: "Xem chi tiết",
+    viewDetailsHint: "Chỉ là bản xem trước. Mở trang chi tiết để xem đầy đủ.",
+    stops: "điểm",
     delete: "Xóa",
     saved: "Đã lưu",
     overview: "Tổng quan",
@@ -433,6 +455,9 @@ const LABEL = {
     exportText: "Текст",
     exportJson: "JSON",
     share: "Поделиться",
+    viewDetails: "Подробнее",
+    viewDetailsHint: "Это только предпросмотр. Откройте страницу с полными деталями.",
+    stops: "мест",
     delete: "Удалить",
     saved: "Сохранено",
     overview: "Обзор",
@@ -490,6 +515,9 @@ const LABEL = {
     exportText: "Texte",
     exportJson: "JSON",
     share: "Partager",
+    viewDetails: "Voir les détails",
+    viewDetailsHint: "Aperçu uniquement — ouvrez la page de détails pour voir tout.",
+    stops: "étapes",
     delete: "Supprimer",
     saved: "Enregistré",
     overview: "Aperçu",
@@ -547,6 +575,9 @@ const LABEL = {
     exportText: "Text",
     exportJson: "JSON",
     share: "Teilen",
+    viewDetails: "Details ansehen",
+    viewDetailsHint: "Nur eine Vorschau — öffnen Sie die Detailseite für alle Details.",
+    stops: "Stationen",
     delete: "Löschen",
     saved: "Gespeichert",
     overview: "Übersicht",
@@ -604,6 +635,9 @@ const LABEL = {
     exportText: "نص",
     exportJson: "JSON",
     share: "مشاركة",
+    viewDetails: "عرض التفاصيل",
+    viewDetailsHint: "معاينة فقط — افتح صفحة التفاصيل لعرض المحتوى الكامل.",
+    stops: "محطات",
     delete: "حذف",
     saved: "تم الحفظ",
     overview: "نظرة عامة",
@@ -661,6 +695,9 @@ const LABEL = {
     exportText: "متن",
     exportJson: "JSON",
     share: "اشتراک‌گذاری",
+    viewDetails: "مشاهده جزئیات",
+    viewDetailsHint: "فقط پیشنمایش — برای مشاهده کامل، صفحه جزئیات را باز کنید.",
+    stops: "ایستگاه",
     delete: "حذف",
     saved: "ذخیره شد",
     overview: "مرور کلی",
@@ -795,7 +832,7 @@ const MealCard: React.FC<{
       <span className="text-lg">{icon}</span>
       <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide">{label}</span>
     </div>
-    <div className="font-medium text-gray-800 text-sm">{meal.name}</div>
+    <div className="font-medium text-gray-800 text-sm">{cleanMarkdown(meal.name)}</div>
     <div className="text-xs text-gray-500 mt-1 flex items-center gap-1.5">
       <span className="text-orange-500">🍽</span>
       <span>
@@ -875,7 +912,7 @@ const TimelineActivity: React.FC<{
                 {location.bestTimeStart} – {location.bestTimeEnd}
               </span>
             </div>
-            <h4 className="font-semibold text-gray-800 text-sm">{location.name}</h4>
+            <h4 className="font-semibold text-gray-800 text-sm">{cleanMarkdown(location.name)}</h4>
             {location.nameZh && <p className="text-xs text-gray-400">{location.nameZh}</p>}
           </div>
           {location.ticketInfo?.price && (
@@ -900,7 +937,7 @@ const TimelineActivity: React.FC<{
           <div className="flex flex-wrap gap-1 mb-2">
             {location.highlights.slice(0, 3).map((h, i) => (
               <span key={i} className="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full">
-                ✨ {h}
+                ✨ <LinkifyText text={h} />
               </span>
             ))}
           </div>
@@ -934,44 +971,235 @@ const TimelineActivity: React.FC<{
   </div>
 );
 
+
+/** Strip common markdown markers from plain-text fields (names, meal labels). */
+const cleanMarkdown = (v: string): string =>
+  String(v ?? "")
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/\*([^*]+)\*/g, "$1")
+    .replace(/`([^`]+)`/g, "$1")
+    .replace(/\*\*/g, "")
+    .trim();
+
+/** Render text with clickable http(s) URLs (used in location/accommodation highlights). */
+const LinkifyText: React.FC<{ text: string }> = ({ text }) => {
+  const parts = String(text ?? "").split(/(https?:\/\/[^\s)]+)/g);
+  return (
+    <>
+      {parts.map((part, i) =>
+        /^https?:\/\//.test(part) ? (
+          <a
+            key={i}
+            href={part}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline break-all"
+          >
+            {part}
+          </a>
+        ) : (
+          <span key={i}>{part}</span>
+        ),
+      )}
+    </>
+  );
+};
+
 // ============================================
-// Plan Text Component — renders AI markdown lines with clickable links
+// Plan Text Component — renders AI markdown (headings, tables, lists, links)
 // ============================================
 
+const InlineText: React.FC<{ text: string }> = ({ text }) => {
+  const nodes: React.ReactNode[] = [];
+  const regex =
+    /(`[^`]+`)|(\*\*[^*]+\*\*)|(\*[^*]+\*)|(\[[^\]]+\]\([^)]+\))|(https?:\/\/[^\s)]+)/g;
+  let last = 0;
+  let m: RegExpExecArray | null;
+  let k = 0;
+  while ((m = regex.exec(text))) {
+    if (m.index > last) nodes.push(text.slice(last, m.index));
+    const [, code, bold, italic, link, url] = m;
+    if (code) {
+      nodes.push(
+        <code
+          key={k++}
+          className="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-xs font-mono"
+        >
+          {code.slice(1, -1)}
+        </code>,
+      );
+    } else if (bold) {
+      nodes.push(<strong key={k++}>{bold.slice(2, -2)}</strong>);
+    } else if (italic) {
+      nodes.push(<em key={k++}>{italic.slice(1, -1)}</em>);
+    } else if (link) {
+      const lm = link.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+      nodes.push(
+        <a
+          key={k++}
+          href={lm?.[2]}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 underline break-all"
+        >
+          {lm?.[1] || link}
+        </a>,
+      );
+    } else if (url) {
+      nodes.push(
+        <a
+          key={k++}
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 underline break-all"
+        >
+          {url}
+        </a>,
+      );
+    }
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) nodes.push(text.slice(last));
+  return <>{nodes}</>;
+};
+
 const PlanText: React.FC<{ text: string; className?: string }> = ({ text, className }) => {
-  const lines = text.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
-  if (lines.length === 0) return null;
-  const linkify = (line: string, key: number) => {
-    const parts = line.split(/(https?:\/\/[^\s)]+)/g);
-    return (
-      <span key={key}>
-        {parts.map((part, i) =>
-          /^https?:\/\//.test(part) ? (
-            <a
-              key={i}
-              href={part}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 dark:text-blue-400 hover:underline break-all"
-            >
-              {part}
-            </a>
-          ) : (
-            <span key={i}>{part}</span>
-          ),
-        )}
-      </span>
+  const blocks: React.ReactNode[] = [];
+  // Strip stray ** markers from lines that have no complete **...** pair
+  // (the AI sometimes emits an unclosed bold marker which renders literally).
+  const cleaned = text
+    .split(/\r?\n/)
+    .map((l) => (/\*\*[^*\n]+\*\*/.test(l) ? l : l.replace(/\*\*/g, "")))
+    .join("\n");
+  const lines = cleaned.split(/\r?\n/);
+  let i = 0;
+  let key = 0;
+
+  while (i < lines.length) {
+    const line = lines[i].trim();
+    if (!line) {
+      i++;
+      continue;
+    }
+    // Table
+    if (line.startsWith("|")) {
+      const rows: string[][] = [];
+      while (i < lines.length && lines[i].trim().startsWith("|")) {
+        const cells = lines[i]
+          .trim()
+          .split("|")
+          .slice(1, -1)
+          .map((c) => c.trim());
+        if (!(cells.length > 0 && cells.every((c) => /^[-:]+$/.test(c)))) rows.push(cells);
+        i++;
+      }
+      if (rows.length > 0) {
+        const [head, ...body] = rows;
+        blocks.push(
+          <div key={key++} className="overflow-x-auto my-2">
+            <table className="min-w-full text-xs border border-gray-200 rounded-lg overflow-hidden">
+              <thead>
+                <tr className="bg-gray-50">
+                  {head.map((c, ci) => (
+                    <th
+                      key={ci}
+                      className="px-2.5 py-1.5 text-left font-semibold text-gray-700 border-b border-gray-200"
+                    >
+                      <InlineText text={c} />
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {body.map((row, ri) => (
+                  <tr key={ri} className={ri % 2 ? "bg-white" : "bg-gray-50/50"}>
+                    {row.map((c, ci) => (
+                      <td key={ci} className="px-2.5 py-1.5 text-gray-600 border-b border-gray-100">
+                        <InlineText text={c} />
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>,
+        );
+      }
+      continue;
+    }
+    // Heading
+    const h = line.match(/^(#{1,6})\s+(.*)$/);
+    if (h) {
+      const size =
+        h[1].length <= 2
+          ? "text-base font-bold mt-3 mb-1"
+          : h[1].length === 3
+            ? "text-sm font-bold mt-2.5 mb-1"
+            : "text-sm font-semibold mt-2 mb-0.5";
+      blocks.push(
+        <div key={key++} className={`${size} text-gray-800`}>
+          <InlineText text={h[2]} />
+        </div>,
+      );
+      i++;
+      continue;
+    }
+    // Horizontal rule
+    if (/^([-*_])\1{2,}$/.test(line)) {
+      blocks.push(<hr key={key++} className="my-2 border-gray-200" />);
+      i++;
+      continue;
+    }
+    // List
+    if (/^[-*•·]\s+/.test(line) || /^\d+[.、)]\s+/.test(line)) {
+      const items: string[] = [];
+      while (
+        i < lines.length &&
+        (/^[-*•·]\s+/.test(lines[i].trim()) || /^\d+[.、)]\s+/.test(lines[i].trim()))
+      ) {
+        items.push(
+          lines[i]
+            .trim()
+            .replace(/^[-*•·]\s+|^\d+[.、)]\s+/, "")
+            .trim(),
+        );
+        i++;
+      }
+      blocks.push(
+        <ul key={key++} className="list-disc pl-5 space-y-1 my-1">
+          {items.map((it, ix) => (
+            <li key={ix} className="text-sm leading-relaxed text-gray-700">
+              <InlineText text={it} />
+            </li>
+          ))}
+        </ul>,
+      );
+      continue;
+    }
+    // Paragraph
+    const para: string[] = [line];
+    i++;
+    while (
+      i < lines.length &&
+      lines[i].trim() &&
+      !lines[i].trim().startsWith("|") &&
+      !/^(#{1,6})\s/.test(lines[i].trim()) &&
+      !/^[-*•·]\s+/.test(lines[i].trim()) &&
+      !/^([-*_])\1{2,}$/.test(lines[i].trim()) &&
+      !/^\d+[.、)]\s+/.test(lines[i].trim())
+    ) {
+      para.push(lines[i].trim());
+      i++;
+    }
+    blocks.push(
+      <p key={key++} className="text-sm leading-relaxed text-gray-700 my-1">
+        <InlineText text={para.join(" ")} />
+      </p>,
     );
-  };
-  return (
-    <div className={`space-y-1.5 text-sm text-gray-700 dark:text-gray-300 ${className || ""}`}>
-      {lines.map((line, i) => (
-        <p key={i} className="leading-relaxed">
-          {linkify(line, i)}
-        </p>
-      ))}
-    </div>
-  );
+  }
+
+  return <div className={`space-y-1 ${className || ""}`}>{blocks}</div>;
 };
 
 // Day Card Component
@@ -1076,7 +1304,7 @@ const DayCard: React.FC<{
                   {labels.accommodation}
                 </span>
               </div>
-              <div className="font-medium text-gray-800">{day.accommodation.name}</div>
+              <div className="font-medium text-gray-800">{cleanMarkdown(day.accommodation.name)}</div>
               <div className="flex items-center gap-3 mt-1 text-sm text-gray-600">
                 <div className="flex items-center gap-0.5">
                   {Array.from({ length: 5 }).map((_, i) => (
@@ -1102,7 +1330,7 @@ const DayCard: React.FC<{
                       key={i}
                       className="bg-indigo-100 text-indigo-700 text-xs px-2 py-0.5 rounded-full"
                     >
-                      {h}
+                      <LinkifyText text={h} />
                     </span>
                   ))}
                 </div>
@@ -1285,6 +1513,7 @@ export const ItineraryDisplay: React.FC<ItineraryDisplayProps> = ({
   onExport,
   onShare,
   onDelete,
+  onOpenDetail,
   compact = false,
 }) => {
   const labels = (LABEL[language] || LABEL.en) as typeof LABEL.en;
@@ -1346,7 +1575,7 @@ export const ItineraryDisplay: React.FC<ItineraryDisplayProps> = ({
           )}
         </div>
 
-        {/* Action Buttons */}
+        {!compact && (
         <div className="flex gap-2 mt-4">
           <button
             onClick={handleSaveClick}
@@ -1436,8 +1665,136 @@ export const ItineraryDisplay: React.FC<ItineraryDisplayProps> = ({
             </button>
           )}
         </div>
+        )}
       </div>
 
+      {/* Compact preview mode */}
+      {compact ? (
+        <div className="p-4">
+          {/* Primary CTA — open the full detail page */}
+          {itinerary.id && !itinerary.id.startsWith("local_") && onOpenDetail && (
+            <>
+              <button
+                type="button"
+                onClick={() => onOpenDetail(itinerary.id as string)}
+                className="w-full mb-2 px-4 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-sm font-bold hover:opacity-90 transition-opacity shadow-sm flex items-center justify-center gap-2"
+              >
+                {labels.viewDetails}
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+              <p className="text-[11px] text-gray-400 text-center mb-3">{labels.viewDetailsHint}</p>
+            </>
+          )}
+
+          {/* Preview */}
+          {summary?.topHighlights && summary.topHighlights.length > 0 && (
+            <div className="mb-3">
+              <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">
+                {labels.highlights}
+              </div>
+              {summary.topHighlights.slice(0, 3).map((h, i) => (
+                <div key={i} className="flex items-start gap-1.5 text-xs text-gray-600 mb-1">
+                  <span className="text-blue-500 mt-0.5 shrink-0">•</span>
+                  <span className="truncate">{h}</span>
+                </div>
+              ))}
+            </div>
+          )}
+          {daily.length > 0 && (
+            <div className="mb-3">
+              <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">
+                {labels.daily}
+              </div>
+              <div className="text-xs text-gray-600">
+                {daily.length} {labels.days} ·{" "}
+                {daily.reduce((a, d) => a + (d.locations?.length || 0), 0)}{" "}
+                {labels.stops || "stops"}
+              </div>
+            </div>
+          )}
+          {itinerary.data?.rawPlan && (
+            <p className="text-xs text-gray-400 mb-3 leading-relaxed line-clamp-2">
+              {itinerary.data.rawPlan.replace(/[#*`|>\s]+/g, " ").replace(/\s+/g, " ").slice(0, 120)}
+              …
+            </p>
+          )}
+
+          {/* Secondary actions — save / export / share / delete */}
+          <div className="flex gap-1.5 mt-1">
+            {onSave && !isSaved && (
+              <button
+                onClick={handleSaveClick}
+                className="flex-1 bg-blue-50 hover:bg-blue-100 text-blue-700 px-2.5 py-1.5 rounded-lg text-xs font-medium transition-colors flex items-center justify-center gap-1"
+              >
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4" />
+                </svg>
+                {labels.save}
+              </button>
+            )}
+            {onExport && (
+              <div className="relative flex-1">
+                <button
+                  onClick={() => setShowExportMenu(!showExportMenu)}
+                  className="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 px-2.5 py-1.5 rounded-lg text-xs font-medium transition-colors flex items-center justify-center gap-1"
+                >
+                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  {labels.export}
+                </button>
+                {showExportMenu && (
+                  <div className="absolute right-0 bottom-full mb-1 w-36 bg-white rounded-lg shadow-xl border border-gray-100 py-1 z-30">
+                    {(
+                      [
+                        { key: "pdf", label: labels.exportPdf },
+                        { key: "text", label: labels.exportText },
+                        { key: "json", label: labels.exportJson },
+                      ] as const
+                    ).map((opt) => (
+                      <button
+                        key={opt.key}
+                        onClick={() => {
+                          setShowExportMenu(false);
+                          onExport?.(opt.key);
+                        }}
+                        className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
+                      >
+                        {opt.label}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+            {isSaved && onShare && (
+              <button
+                onClick={onShare}
+                className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 px-2.5 py-1.5 rounded-lg text-xs font-medium transition-colors flex items-center justify-center gap-1"
+              >
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                </svg>
+                {labels.share}
+              </button>
+            )}
+            {isSaved && onDelete && (
+              <button
+                onClick={onDelete}
+                className="px-2.5 py-1.5 bg-red-50 hover:bg-red-100 text-red-600 rounded-lg text-xs font-medium transition-colors"
+                title={labels.delete}
+              >
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                </svg>
+              </button>
+            )}
+          </div>
+        </div>
+      ) : (
+        <>
       {/* Tabs */}
       <div className="border-b border-gray-200 bg-gray-50/80 backdrop-blur-sm sticky top-0 z-10">
         <nav className="flex px-2">
@@ -1544,6 +1901,10 @@ export const ItineraryDisplay: React.FC<ItineraryDisplayProps> = ({
         {/* Practical Tab */}
         {activeTab === "practical" && <PracticalInfoSection labels={labels} />}
       </div>
+
+
+        </>
+      )}
 
       {/* Save Dialog */}
       {showSaveDialog && (

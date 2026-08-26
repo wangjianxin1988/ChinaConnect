@@ -12,7 +12,7 @@ import type {
   ConversationSummary,
 } from "@/lib/ai/types";
 import { CHAT_LABELS, type AiChatLang } from "./chat-labels";
-import { EXPORT_LABELS } from "@/lib/ai/export-labels";
+import { downloadItineraryFile, type ExportLang } from "@/lib/ai/export-itinerary";
 import { getCurrentUser } from "@/lib/auth/supabase-auth";
 import { getCurrentTier, TIER_LIMITS, type SubscriptionTier } from "@/lib/subscription";
 import { UpgradePrompt } from "@/components/subscription/UpgradePrompt";
@@ -450,7 +450,7 @@ const MessageBubble: React.FC<{
       <div
         className={`max-w-[90%] sm:max-w-[85%] rounded-2xl px-4 py-3 ${
           isUser
-            ? "bg-blue-600 text-white rounded-br-sm"
+            ? "bg-indigo-50 text-gray-900 border border-indigo-100 rounded-br-sm"
             : isError
               ? "bg-red-50 border border-red-200 text-red-800 rounded-bl-sm"
               : "bg-white border border-gray-200 text-gray-800 rounded-bl-sm shadow-sm"
@@ -482,7 +482,7 @@ const MessageBubble: React.FC<{
             ) : (
               <div className="flex flex-col gap-2">
                 <div className="flex items-center gap-2">
-                  <TypingDots color={isUser ? "bg-blue-300" : "bg-gray-400"} />
+                  <TypingDots color={isUser ? "bg-gray-300" : "bg-gray-400"} />
                   <span className="text-xs text-gray-400 animate-pulse">{LABELS.thinking}</span>
                 </div>
                 {showFirstUseNotice && (
@@ -528,7 +528,7 @@ const MessageBubble: React.FC<{
         )}
 
         <div
-          className={`text-xs mt-1.5 ${isUser ? "text-blue-200" : isError ? "text-red-300" : "text-gray-400"} text-right`}
+          className={`text-xs mt-1.5 ${isUser ? "text-gray-400" : isError ? "text-red-300" : "text-gray-400"} text-right`}
         >
           {message.timestamp.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
         </div>
@@ -602,97 +602,6 @@ const ConversationHistory: React.FC<{
 // PDF export helper — builds a printable HTML snapshot
 // ============================================
 
-const escHtml = (v: unknown): string =>
-  String(v ?? "")
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
-
-function buildExportHtml(it: SavedItinerary, lang: AiChatLang): string {
-  const L = EXPORT_LABELS[lang] || EXPORT_LABELS.en;
-  const isRtl = lang === "ar" || lang === "fa";
-  const s = it.data?.summary;
-  const daily = it.data?.dailyItinerary || [];
-  const urlize = (text: string): string =>
-    escHtml(text).replace(
-      /(https?:\/\/[^\s)]+)/g,
-      '<a href="$1" style="color:#2563eb;word-break:break-all;">$1</a>',
-    );
-  const parts: string[] = [];
-  parts.push(
-    "<div style=\"font-family:-apple-system,'PingFang SC','Microsoft YaHei','Segoe UI','Noto Sans SC','Noto Sans Thai','Noto Sans Arabic','Noto Sans JP','Noto Sans KR',sans-serif;color:#111827;max-width:714px;direction:\" + (isRtl ? \"rtl\" : \"ltr\") + \";text-align:\" + (isRtl ? \"right\" : \"left\") + \"\">",
-  );
-  parts.push(
-    "<div style=\"background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;border-radius:14px;padding:24px 28px;margin-bottom:20px;\">" +
-      "<div style=\"font-size:11px;letter-spacing:1px;opacity:.85;\">ChinaGuide AI</div>" +
-      "<div style=\"font-size:26px;font-weight:700;margin:4px 0 6px;\">" + escHtml(it.name) + "</div>" +
-      "<div style=\"font-size:13px;opacity:.9;\">" + L.dest + ": " + escHtml(it.destination || "-") + " &nbsp;·&nbsp; " + escHtml(it.days) + " " + L.days + "</div>" +
-      "</div>",
-  );
-  if (s) {
-    if (s.topHighlights && s.topHighlights.length) {
-      parts.push("<div style=\"margin-bottom:14px;\"><div style=\"font-weight:700;font-size:14px;margin-bottom:6px;\">✨ " + L.highlights + "</div>");
-      s.topHighlights.slice(0, 10).forEach((h) => parts.push("<div style=\"font-size:13px;padding:2px 0;\">• " + urlize(h) + "</div>"));
-      parts.push("</div>");
-    }
-    if (s.estimatedTotalCost) {
-      parts.push(
-        "<div style=\"margin-bottom:14px;\"><div style=\"font-weight:700;font-size:14px;margin-bottom:4px;\">💰 " + L.cost + "</div>" +
-          "<div style=\"font-size:20px;font-weight:700;color:#059669;\">" + (s.currency === "CNY" ? "¥" : s.currency + " ") + escHtml(s.estimatedTotalCost) + "</div></div>",
-      );
-    }
-    if (s.travelTips && s.travelTips.length) {
-      parts.push("<div style=\"margin-bottom:14px;\"><div style=\"font-weight:700;font-size:14px;margin-bottom:6px;\">💡 " + L.tips + "</div>");
-      s.travelTips.slice(0, 10).forEach((tip) => parts.push("<div style=\"font-size:13px;padding:2px 0;\">• " + urlize(tip) + "</div>"));
-      parts.push("</div>");
-    }
-  }
-  if (daily.length) {
-    parts.push("<div style=\"font-weight:700;font-size:15px;margin:18px 0 8px;\">🗓 " + L.daily + "</div>");
-    daily.forEach((day) => {
-      parts.push(
-        "<div style=\"border:1px solid #e5e7eb;border-radius:12px;padding:14px 16px;margin-bottom:12px;\">" +
-          "<div style=\"font-weight:700;font-size:15px;color:#1d4ed8;margin-bottom:6px;\">" + L.day + " " + escHtml(day.day) + (day.theme ? " — " + escHtml(day.theme) : "") + "</div>",
-      );
-      if (day.transportToAttractions?.route) {
-        parts.push("<div style=\"font-size:12px;color:#374151;margin-bottom:6px;\">🚇 " + L.transport + ": " + escHtml(day.transportToAttractions.route) + "</div>");
-      }
-      (day.locations || []).forEach((loc, i) => {
-        const time =
-          loc.bestTimeStart || loc.bestTimeEnd
-            ? " [" + [loc.bestTimeStart, loc.bestTimeEnd].filter(Boolean).join(" - ") + "]"
-            : "";
-        const dur = loc.durationHours ? " (" + escHtml(loc.durationHours) + L.duration + ")" : "";
-        const price = loc.ticketInfo?.price ? " — " + escHtml(loc.ticketInfo.price) : "";
-        parts.push("<div style=\"font-size:13px;margin:6px 0 2px;\"><b>" + (i + 1) + ". " + escHtml(loc.name) + "</b>" + escHtml(time) + dur + price + "</div>");
-        (loc.highlights || []).slice(0, 3).forEach((h) => parts.push("<div style=\"font-size:12px;color:#6b7280;padding-left:16px;\">• " + urlize(h) + "</div>"));
-        if (loc.insiderTip) parts.push("<div style=\"font-size:12px;color:#b45309;padding-left:16px;\">💡 " + urlize(loc.insiderTip) + "</div>");
-        if (loc.ticketInfo?.bookingUrl) parts.push("<div style=\"font-size:12px;color:#2563eb;padding-left:16px;\">🔗 " + urlize(loc.ticketInfo.bookingUrl) + "</div>");
-      });
-      const meals = [day.meals?.breakfast, day.meals?.lunch, day.meals?.dinner].filter(Boolean) as Array<{ name?: string }>;
-      if (meals.length) {
-        parts.push("<div style=\"font-size:12px;color:#374151;margin-top:6px;\">🍜 " + L.meals + ": " + escHtml(meals.map((m) => m.name || "").filter(Boolean).join("  |  ")) + "</div>");
-      }
-      if (day.accommodation?.name) {
-        parts.push("<div style=\"font-size:12px;color:#374151;margin-top:4px;\">🏨 " + L.accommodation + ": " + escHtml(day.accommodation.name) + (day.accommodation.location ? " — " + escHtml(day.accommodation.location) : "") + "</div>");
-      }
-      if (day.notes && day.notes.length) {
-        parts.push("<div style=\"font-size:12px;color:#6b7280;margin-top:6px;\">📋 " + L.notes + ":</div>");
-        day.notes.slice(0, 10).forEach((n) => parts.push("<div style=\"font-size:12px;color:#6b7280;padding-left:12px;\">• " + urlize(n) + "</div>"));
-      }
-      parts.push("</div>");
-    });
-  }
-  if (it.data?.rawPlan) {
-    parts.push("<div style=\"font-weight:700;font-size:15px;margin:18px 0 8px;\">📄 " + L.originalPlan + "</div>");
-    parts.push("<div style=\"font-size:12px;color:#4b5563;white-space:pre-wrap;\">" + urlize(it.data.rawPlan.slice(0, 6000)) + "</div>");
-  }
-  parts.push("<div style=\"font-size:11px;color:#9ca3af;margin-top:20px;text-align:center;\">" + L.generated + "</div>");
-  parts.push("</div>");
-  return parts.join("");
-}
-
 export const AIChat: React.FC<AIChatProps> = ({
   language = "en",
   showItinerary = true,
@@ -736,6 +645,7 @@ export const AIChat: React.FC<AIChatProps> = ({
   const [saveDismissed, setSaveDismissed] = useState(false);
   const [routeSaveError, setRouteSaveError] = useState<string | null>(null);
   const [sidebarTab, setSidebarTab] = useState<"conversations" | "itineraries">("conversations");
+  const [previewFromList, setPreviewFromList] = useState(false);
 
   // Subscription tier enforcement state
   const [upgradePrompt, setUpgradePrompt] = useState<{
@@ -818,6 +728,7 @@ export const AIChat: React.FC<AIChatProps> = ({
     setLastSentAt(now);
 
     setInputValue("");
+    setPreviewFromList(false);
     sendMessage(text);
     inputRef.current?.focus();
   }, [inputValue, isLoading, sendMessage, lastSentAt]);
@@ -859,6 +770,15 @@ export const AIChat: React.FC<AIChatProps> = ({
     navigator.clipboard.writeText(shareCode).catch(console.error);
   }, [shareCode]);
 
+  // Open the full saved-itinerary detail page for an id.
+  const handleOpenDetail = useCallback(
+    (id: string) => {
+      const langPrefix = language && language !== "en" ? "/" + language : "";
+      window.location.href = `${langPrefix}/itinerary/${id}`;
+    },
+    [language],
+  );
+
   // Export handler - enforce PDF export restriction (Traveler+)
   const handleExport = useCallback(
     async (format: "text" | "json" | "pdf") => {
@@ -869,54 +789,10 @@ export const AIChat: React.FC<AIChatProps> = ({
           alert(LABELS.noRouteData);
           return;
         }
-        try {
-          const [{ jsPDF }, html2canvasModule] = await Promise.all([
-            import("jspdf"),
-            import("html2canvas"),
-          ]);
-          const html2canvas = html2canvasModule.default || html2canvasModule;
-          const printRoot = document.createElement("div");
-          printRoot.id = "cc-pdf-export-root";
-          printRoot.style.position = "fixed";
-          printRoot.style.left = "-10000px";
-          printRoot.style.top = "0";
-          printRoot.style.width = "794px";
-          printRoot.style.background = "#ffffff";
-          printRoot.innerHTML = buildExportHtml(currentItinerary, language);
-          document.body.appendChild(printRoot);
-          const canvas = await html2canvas(printRoot, {
-            scale: 2,
-            backgroundColor: "#ffffff",
-            useCORS: true,
-            logging: false,
-            windowWidth: 794,
-          });
-          document.body.removeChild(printRoot);
-          const pdf = new jsPDF({ unit: "pt", format: "a4", orientation: "portrait" });
-          const pageW = pdf.internal.pageSize.getWidth();
-          const pageH = pdf.internal.pageSize.getHeight();
-          const imgW = pageW;
-          const imgH = (canvas.height * pageW) / canvas.width;
-          const imgData = canvas.toDataURL("image/jpeg", 0.95);
-          let heightLeft = imgH;
-          let position = 0;
-          pdf.addImage(imgData, "JPEG", 0, position, imgW, imgH);
-          heightLeft -= pageH;
-          while (heightLeft > 0) {
-            position -= pageH;
-            pdf.addPage();
-            pdf.addImage(imgData, "JPEG", 0, position, imgW, imgH);
-            heightLeft -= pageH;
-          }
-          pdf.save(`chinaconnect-itinerary-${Date.now()}.pdf`);
-          return;
-        } catch (err) {
-          console.error("PDF export failed", err);
-          alert("PDF export failed. Please try again.");
-          return;
-        }
+        const file = await downloadItineraryFile(currentItinerary, language as ExportLang, "pdf");
+        if (!file) alert("PDF export failed. Please try again.");
+        return;
       }
-
       const content = exportItinerary(format);
       const blob = new Blob([content], {
         type: format === "json" ? "application/json" : "text/plain",
@@ -1088,14 +964,26 @@ export const AIChat: React.FC<AIChatProps> = ({
                     savedItineraries.map((it) => (
                       <button
                         key={it.id}
-                        onClick={() => loadItinerary(it.id)}
-                        className={`w-full text-left px-4 py-3 border-b border-gray-50 hover:bg-blue-50 transition-colors ${
+                        onClick={() => {
+                          // On mobile the sidebar card is hidden, so open the
+                          // full detail page directly.
+                          if (window.matchMedia("(max-width: 767px)").matches) {
+                            handleOpenDetail(it.id);
+                            return;
+                          }
+                          setPreviewFromList(true);
+                          loadItinerary(it.id);
+                        }}
+                        className={`group w-full text-left px-4 py-3 border-b border-gray-50 hover:bg-blue-50 transition-colors ${
                           currentItinerary?.id === it.id
                             ? "bg-blue-50 border-l-4 border-l-blue-500"
                             : ""
                         }`}
                       >
-                        <div className="font-medium text-gray-800 text-sm truncate">{it.name}</div>
+                        <div className="flex items-center justify-between gap-2">
+                          <div className="font-medium text-gray-800 text-sm truncate">{it.name}</div>
+                          <span className="text-gray-300 group-hover:text-blue-500 shrink-0">→</span>
+                        </div>
                         <div className="text-xs text-gray-500 mt-0.5">
                           {it.destination} · {it.days} {LABELS.days}
                         </div>
@@ -1104,21 +992,7 @@ export const AIChat: React.FC<AIChatProps> = ({
                   )}
                 </div>
 
-                {currentItinerary && (
-                  <div className="border-t border-gray-200 p-4 bg-gray-50">
-                    <ItineraryDisplay
-                      itinerary={currentItinerary}
-                      language={language}
-                      compact
-                      onSave={saveCurrentItinerary}
-                      onExport={handleExport}
-                      onShare={handleShare}
-                      onDelete={
-                        currentItinerary.id ? () => deleteItinerary(currentItinerary.id) : undefined
-                      }
-                    />
-                  </div>
-                )}
+
               </>
             )}
           </div>
@@ -1394,6 +1268,26 @@ export const AIChat: React.FC<AIChatProps> = ({
                     {LABELS.notNow}
                   </button>
                 </div>
+              </div>
+            </div>
+          )}
+
+          {/* Saved itinerary preview panel — wide preview with Save/Export/Share + View Details CTA */}
+          {currentItinerary && previewFromList && (
+            <div className="px-4 pb-2 shrink-0">
+              <div className="max-w-3xl mx-auto">
+                <ItineraryDisplay
+                  itinerary={currentItinerary}
+                  language={language}
+                  compact
+                  onSave={saveCurrentItinerary}
+                  onExport={handleExport}
+                  onShare={handleShare}
+                  onDelete={
+                    currentItinerary.id ? () => deleteItinerary(currentItinerary.id) : undefined
+                  }
+                  onOpenDetail={handleOpenDetail}
+                />
               </div>
             </div>
           )}

@@ -1814,3 +1814,28 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **验证**: npx tsc --noEmit 0 错误；check-i18n.mjs 12/12、0 缺失；node node_modules/astro/astro.js build 26710 页成功（与 CI 同命令，未触发 prebuild 翻译）。
 - **定价一致性（复核）**: 上一会话已逐产品确认 Creem 渠道 Explorer $4.99/$47.99、Traveler $9.99/$95.99、Business $19.99/$191.99 与站点完全一致；本会话 6 个 checkout 页用 Playwright 复核金额一致。
 - **下一步（用户/待办）**: 真实收款前建议用户本人完成一笔真实小额支付（如 Explorer monthly）走完 Creem 结账 → webhook → 订单/会员/AI 档位闭环；此后可继续行程保存智能化、AI 回答详尽度、账户页头像编辑等迭代项。
+
+
+### 2026-08-27 会话 #60：上线前最终排查 — 5 项用户问题修复 + 认证/支付链路深检（全绿）
+
+- **起**: 承接 #59。用户列出上线前 5 项最终排查项：1) AI 对话用户气泡蓝底看不清；2) 账户页已存行程详情页显示代码；3) AI 页已存行程卡片太小/按钮无功能，需预览+去详情页；4) 导出 PDF 排版/乱码/语言匹配 + 分享链接显示代码 + 保存/分享按钮无功能；5) 深度排查登录/注册/找回/第三方/邮件 + 支付链路，模拟用户逐项核对。
+- **修复（代码，tsc 0 错误、build 26722 页成功、check-i18n 12/12）**:
+  - 用户消息气泡 `bg-blue-600 text-white` → `bg-indigo-50 text-gray-900 border-indigo-100`（实测 rgb(238,242,255)/rgb(17,24,39) 可读）。
+  - 账户页「查看」链接改为 `/itinerary/<id>`；新增 `src/pages/itinerary/index.astro` + `src/pages/[lang]/itinerary/index.astro`（11 语言壳，`functions/[[path]].ts` 对 `/itinerary/<id>` 与 `/<locale>/itinerary/<id>` rewrite 到壳）。修复详情页/SavedTripPage 无代码残留。
+  - AI 页已存行程紧凑卡片从 320px 侧栏移到主对话区（768px 宽）：顶部「View Full Details」大按钮 + 预览提示、中间仅预览（Highlights 前 3/天数/停靠点/rawPlan 摘要）、底部 Save/Export/Share/Delete；`useAIConversation` 会话标题去 markdown `**`。
+  - 分享页 TripView：修复 12 语言真实文案（原为字面占位符 `{TRIP_LABELS[...]}`）、Share 弹窗 + 复制链接（clipboard 降级 execCommand）、登录用户 Save 弹「Saved to your account」、导出 PDF/Text/JSON；`src/lib/ai/export-itinerary.ts` 统一导出（markdown 清洗 + 文件名带语言 `chinaconnect-<slug>-<lang>-<date>`）。
+  - PDF 乱码根因修复：jsPDF 文本路径无法编码 CJK → 改 html2canvas 栅格化分页导出（5 页 A4、无空白页、png 渲染验证）；rawPlan 截断防超高块；`ItineraryDisplay` 各字段 cleanMarkdown/LinkifyText（名称/餐食/亮点去 `**`、链接可点）。
+- **认证链路深检（生产实测）**:
+  - SMTP 配置核对：smtp.resend.com:587 / user=resend / admin noreply@mi-to-ai.com / rate_limit_email_sent=30（本会话 PATCH 全量恢复过一次，因只 PATCH smtp_pass 会把其它字段重置回默认 2）。
+  - 排查误区澄清：`@example.com` 测试地址发信 500 是 **Resend 保留域名策略 550**（非配置故障）；真实地址（qq.com/gmail/mi-to-ai.com）SMTP 全通。当前 Resend key `re_fRYASk3f_...`（ai-student-survival/.env）有效，AUTH OK + 真实送达。
+  - 完整 UI E2E：mail.tm 新邮箱 → 注册表单 → 确认信（noreply@mi-to-ai.com "Confirm your email address"）→ 点击链接 → **自动登录进入 /account，头部显示用户名+邮箱** ✅；找回密码邮件 "Reset your password" 送达 ✅；OTP 相邻 60s 冷却 429（预期限流）✅；/auth/login、/auth/register、/auth/callback（PKCE+token_hash+implicit #access_token 三路）、/auth/reset-password 全部正常。
+  - 清理生产库 40 个历史 QA 测试账号（emalupe.com 系，无任何关联 profiles/ai_conversations/ai_routes/ai_messages/orders/user_memberships/favorites 数据，已用 admin API 删除并复核 0 残留）。
+- **支付链路深检（Creem 已批准）**:
+  - 6 个产品 checkout 全 200 → 真实 Creem 结账 URL（Explorer $4.99/$47.99、Traveler $9.99/$95.99、Business $19.99/$191.99 与站点一致）；定价页无评价/无 "10,000+ travelers" 虚假宣传；AI chat 生产函数 200 真实回答（business 档无限制）。
+  - 本会话发现并修正：`CREEM_TEST_MODE`/`SITE_URL` 等 secrets 显示为 SHA-256 digest（非误配，实值正确）。
+- **验证命令**: `npx tsc --noEmit` 0 错误；`node scripts/check-i18n.mjs` 12/12、0 缺失；`node node_modules/astro/astro.js build` 26722 页成功；`scripts/pack-food-details.mjs` CI 同款；生产 build 产物含 /itinerary/index.html、10+1 语言壳、/trip/index.html。
+- **部署**: commit + push master → GitHub Actions deploy-cf-pages（自动）→ 生产验证 /itinerary/<id>、/<locale>/itinerary/<id>、/trip/<token> rewrite。
+- **遗留/提示**:
+  - Resend 账户若再出现 550/535，先测 key 是否有效（SMTP AUTH 到 smtp.resend.com）；**勿用 @example.com 收件测试**（Resend 保留域名必拒）；改 Supabase auth config 时务必全量 PATCH（smtp_pass 单字段会重置其它项）。
+  - `src/pages/[lang]/index.astro.bak` 为历史残留未跟踪文件，可删。
+  - 真实收款前建议用户本人完成一笔真实小额支付走完 Creem 结账 → webhook → 订单/会员/AI 档位闭环（#59 已备）。

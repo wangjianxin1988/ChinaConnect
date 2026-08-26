@@ -34,7 +34,7 @@ import {
 import { supabase } from "@/supabase/config";
 import type { AiChatLang } from "@/components/ai/chat-labels";
 import { saveRoute } from "@/lib/ai/route-saver";
-import { EXPORT_LABELS, type ExportLang } from "@/lib/ai/export-labels";
+import { itineraryToText } from "@/lib/ai/export-itinerary";
 import {
   buildFallbackItinerary,
   buildSavedItineraryFromConversation,
@@ -108,6 +108,19 @@ function dbMessageToMessage(row: {
   };
 }
 
+/** Strip markdown markers and newlines so conversation titles stay readable. */
+function cleanConversationTitle(raw: string): string {
+  return String(raw ?? "")
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/\*([^*]+)\*/g, "$1")
+    .replace(/`([^`]+)`/g, "$1")
+    .replace(/\*\*/g, "")
+    .replace(/[#>*|\s]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 80);
+}
+
 function dbConversationToSummary(row: {
   id: string;
   title: string | null;
@@ -119,7 +132,7 @@ function dbConversationToSummary(row: {
 }): ConversationSummary {
   return {
     id: row.id,
-    name: row.title || row.summary || "New conversation",
+    name: cleanConversationTitle(row.title || row.summary || "New conversation"),
     createdAt: row.created_at,
     messageCount: row.message_count ?? 0,
     hasItinerary: false,
@@ -130,77 +143,6 @@ function dbConversationToSummary(row: {
 // Hook
 // ============================================
 
-/** Build a rich plain-text version of a saved itinerary (multilingual headings). */
-function itineraryToText(it: SavedItinerary, lang: ExportLang = "en"): string {
-  const L = EXPORT_LABELS[lang] || EXPORT_LABELS.en;
-  const lines: string[] = [];
-  lines.push(`# ${it.name}`);
-  lines.push(`${L.dest}: ${it.destination || ""}`);
-  lines.push(`${L.tripLength}: ${it.days} ${L.days}`);
-  lines.push("");
-  const s = it.data?.summary;
-  if (s) {
-    if (s.topHighlights?.length) {
-      lines.push(`## ${L.highlights}`);
-      s.topHighlights.forEach((h) => lines.push(`- ${h}`));
-      lines.push("");
-    }
-    if (s.estimatedTotalCost) {
-      lines.push(
-        `## ${L.cost}: ${s.currency === "CNY" ? "¥" : s.currency + " "}${s.estimatedTotalCost}`,
-      );
-      lines.push("");
-    }
-    if (s.travelTips?.length) {
-      lines.push(`## ${L.tips}`);
-      s.travelTips.forEach((t) => lines.push(`- ${t}`));
-      lines.push("");
-    }
-  }
-  const daily = it.data?.dailyItinerary || [];
-  if (daily.length) {
-    lines.push(`## ${L.daily}`);
-    daily.forEach((day) => {
-      lines.push("");
-      lines.push(`### ${L.day} ${day.day}${day.theme ? " — " + day.theme : ""}`);
-      if (day.transportToAttractions?.route) {
-        lines.push(`${L.transport}: ${day.transportToAttractions.route}`);
-      }
-      (day.locations || []).forEach((loc) => {
-        const time =
-          loc.bestTimeStart || loc.bestTimeEnd
-            ? ` [${[loc.bestTimeStart, loc.bestTimeEnd].filter(Boolean).join(" - ")}]`
-            : "";
-        const dur = loc.durationHours ? ` (${loc.durationHours}${L.duration})` : "";
-        const price = loc.ticketInfo?.price ? ` — ${loc.ticketInfo.price}` : "";
-        lines.push(`- ${loc.name}${time}${dur}${price}`);
-        (loc.highlights || []).slice(0, 3).forEach((h) => lines.push(`   - ${h}`));
-        if (loc.insiderTip) lines.push(`   💡 ${loc.insiderTip}`);
-        if (loc.ticketInfo?.bookingUrl) lines.push(`   🔗 ${loc.ticketInfo.bookingUrl}`);
-      });
-      const meals = [day.meals?.breakfast, day.meals?.lunch, day.meals?.dinner].filter(
-        Boolean,
-      ) as Array<{ name?: string }>;
-      if (meals.length) {
-        lines.push(`${L.meals}: ${meals.map((m) => m.name || "").filter(Boolean).join("  |  ")}`);
-      }
-      if (day.accommodation?.name) {
-        lines.push(`${L.accommodation}: ${day.accommodation.name}`);
-      }
-      if (day.notes?.length) {
-        day.notes.slice(0, 12).forEach((n) => lines.push(`  - ${n}`));
-      }
-    });
-  }
-  if (it.data?.rawPlan) {
-    lines.push("");
-    lines.push(`## ${L.originalPlan}`);
-    lines.push(it.data.rawPlan);
-  }
-  lines.push("");
-  lines.push(L.generated);
-  return lines.join("\n");
-}
 export function useAIConversation(options: UseAIConversationOptions = {}): UseAIConversationReturn {
   const {
     language = "en",
