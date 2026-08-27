@@ -71,6 +71,17 @@ export function DualMap({
     }
   }, [isDetectingGeo, isChina]);
 
+  // Once a tile source fails (unreachable over the user's network), fall
+  // back to the other provider exactly once per mount and let the manual
+  // choice stick (geo detection must not override it afterwards).
+  const [mapFallbackTried, setMapFallbackTried] = useState(false);
+  const handleTileError = useCallback(() => {
+    if (mapFallbackTried) return;
+    setMapFallbackTried(true);
+    userTouchedProviderRef.current = true;
+    setProvider(provider === "amap" ? "google" : "amap");
+  }, [mapFallbackTried, provider, setProvider]);
+
   // Actually switch tiles to the geo-recommended provider once detection
   // finishes (unless the user already picked a provider manually this session).
   const userTouchedProviderRef = useRef(false);
@@ -164,6 +175,7 @@ export function DualMap({
             provider={provider}
             layer={currentLayer}
             onMarkerClick={onMarkerClick}
+            onTileError={handleTileError}
           />
         ) : (
           <div className="w-full h-full bg-slate-100 flex items-center justify-center">

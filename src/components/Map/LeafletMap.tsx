@@ -1,7 +1,7 @@
 import { wgs84ToGcj02 } from "@/lib/coordinates";
 import type { MapLayer, MapMarker, MapProvider } from "@/lib/map-types";
 import L from "leaflet";
-import React, { useEffect, useMemo } from "react";
+import React, { useCallback, useEffect, useMemo, useRef } from "react";
 import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
@@ -121,6 +121,8 @@ interface LeafletMapProps {
   showControls?: boolean;
   className?: string;
   onMarkerClick?: (marker: MapMarker) => void;
+  /** Called when the current tile source fails repeatedly (auto provider fallback). */
+  onTileError?: () => void;
 }
 
 export function LeafletMap({
@@ -131,7 +133,22 @@ export function LeafletMap({
   layer = "standard",
   className = "",
   onMarkerClick,
+  onTileError,
 }: LeafletMapProps) {
+  // Watch for repeated tile failures (e.g. a provider that is unreachable
+  // over the user's network/IPv6) and let the parent fall back to the other
+  // provider so the base map always renders.
+  const tileErrorCount = useRef(0);
+  const tileErrorReported = useRef(false);
+  const handleTileError = useCallback(() => {
+    if (tileErrorReported.current || !onTileError) return;
+    tileErrorCount.current += 1;
+    if (tileErrorCount.current >= 8) {
+      tileErrorReported.current = true;
+      onTileError();
+    }
+  }, [onTileError]);
+
   // Convert center coordinates for the provider
   const mapCenter = useMemo(() => {
     if (provider === "google") {
@@ -159,6 +176,7 @@ export function LeafletMap({
           attribution={attribution}
           subdomains={provider === "amap" ? "1234" : "abc"}
           maxZoom={19}
+          eventHandlers={{ tileerror: handleTileError }}
         />
 
         {/* Center updater */}
