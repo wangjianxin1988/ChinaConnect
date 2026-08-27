@@ -85,27 +85,31 @@ function MapResizer() {
   return null;
 }
 
-// Tile layer URLs for different providers and layers
-// Using OpenStreetMap as default to avoid CORS issues with Google/Amap tiles
+// Tile layer URLs for different providers and layers.
+// 2026-08: OSM/Google/Carto tile hosts are unreachable from China (000),
+// so the global provider uses Esri (reachable worldwide incl. CN) and the
+// China provider uses real Amap tiles (reachable in CN).
 const TILE_LAYERS = {
   google: {
-    standard: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    standard:
+      "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
     satellite:
       "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-    terrain: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    terrain:
+      "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
   },
   amap: {
-    standard: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-    satellite:
-      "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-    terrain: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    standard: "https://webst0{s}.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}",
+    satellite: "https://webst0{s}.is.autonavi.com/appmaptile?style=3&x={x}&y={y}&z={z}",
+    terrain: "https://webst0{s}.is.autonavi.com/appmaptile?style=5&x={x}&y={y}&z={z}",
   },
 };
 
 // Attribution text
 const ATTRIBUTIONS = {
-  google: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  amap: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  google:
+    '&copy; <a href="https://www.esri.com/en-us/home" target="_blank" rel="noopener noreferrer">Esri</a>, <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors',
+  amap: '&copy; <a href="https://www.amap.com/" target="_blank" rel="noopener noreferrer">高德地图</a>',
 };
 
 interface LeafletMapProps {
@@ -149,7 +153,12 @@ export function LeafletMap({
         zoomControl={true}
         scrollWheelZoom={true}
       >
-        <TileLayer url={tileUrl} attribution={attribution} maxZoom={19} />
+        <TileLayer
+          url={tileUrl}
+          attribution={attribution}
+          subdomains={provider === "amap" ? "1234" : undefined}
+          maxZoom={19}
+        />
 
         {/* Center updater */}
         <MapCenterUpdater center={mapCenter} zoom={zoom} />

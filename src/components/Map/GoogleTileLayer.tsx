@@ -7,19 +7,25 @@ import type { TileLayerConfig } from "@/types/map";
 import React from "react";
 import { TileLayer } from "react-leaflet";
 
-/** Google Maps tile layer URLs for different map types */
+/** Global tile layer URLs for different map types.
+ * 2026-08: real Google tiles are unreachable from China, so the "google"
+ * (global) provider serves Esri tiles which are reachable worldwide incl. CN.
+ */
 const GOOGLE_TILE_URLS = {
-  standard: "https://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}",
-  satellite: "https://{s}.google.com/vt?lyrs=s&x={x}&y={y}&z={z}",
-  terrain: "https://{s}.google.com/vt?lyrs=p&x={x}&y={y}&z={z}",
+  standard:
+    "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+  satellite:
+    "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+  terrain:
+    "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
 } as const;
 
-/** Google Maps attribution text */
+/** Global map attribution text */
 const GOOGLE_ATTRIBUTION =
-  '&copy; <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">Google Maps</a>';
+  '&copy; <a href="https://www.esri.com/en-us/home" target="_blank" rel="noopener noreferrer">Esri</a>, <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors';
 
-/** Google Maps subdomains */
-const GOOGLE_SUBDOMAINS = "1234";
+/** Global map subdomains (Esri has no per-tile subdomains) */
+const GOOGLE_SUBDOMAINS = "";
 
 /** Maximum zoom level for Google Maps */
 const GOOGLE_MAX_ZOOM = 20;

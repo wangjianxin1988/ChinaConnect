@@ -522,6 +522,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
       if (savingsHint) {
         savingsHint.style.display = billing === "annual" ? "block" : "none";
       }
+      refreshCurrentPlan();
     });
   });
 
@@ -593,7 +594,15 @@ const cancelled = Astro.url.searchParams.get('cancelled');
       } catch (error) {
         const message = error instanceof Error ? error.message : "Unknown error";
         console.error("Checkout error:", message);
-        alert("Checkout error: " + message + "\n\nPlease make sure payment is configured properly.");
+        const hint =
+          message.indexOf("already have an active") !== -1 ||
+          message.indexOf("higher") !== -1 ||
+          message.indexOf("无需再购买") !== -1 ||
+          message.indexOf("不能重复购买") !== -1 ||
+          message.indexOf("已开通") !== -1
+            ? ""
+            : "\n\nPlease make sure payment is configured properly.";
+        alert("Checkout error: " + message + hint);
         button.textContent = originalText;
         button.disabled = false;
         button.style.opacity = "1";
@@ -602,18 +611,137 @@ const cancelled = Astro.url.searchParams.get('cancelled');
     });
   });
 
-  // Highlight current tier
-  const currentTier = localStorage.getItem("subscription_tier") || "free";
-  document.querySelectorAll("[data-tier]").forEach((btn) => {
-    const tier = btn.getAttribute("data-tier");
-    if (tier === currentTier && btn.classList.contains("subscribe-btn")) {
-      btn.textContent = "Current Plan ?";
-      btn.disabled = true;
-      btn.classList.add("opacity-60", "cursor-not-allowed");
-      btn.classList.remove("subscribe-btn");
+  // ------------------------------------------------------------------
+  // Current-plan state (authoritative from server): disable duplicate
+  // purchases and blocked downgrades, keep upgrades and billing-cycle
+  // switches available. Prevents double-charging and "upgrade not active".
+  // ------------------------------------------------------------------
+  const TIER_ORDER = ["free", "explorer", "traveler", "business"];
+
+  function decodeJwtPayload(token) {
+    try {
+      const part = token.split(".")[1];
+      const b64 = part.replace(/-/g, "+").replace(/_/g, "/");
+      return JSON.parse(decodeURIComponent(escape(atob(b64))));
+    } catch (e) {
+      return null;
     }
-    if (tier === "free" && currentTier === "free") {
-      btn.textContent = "Current Plan ?";
+  }
+
+  async function fetchServerMembership() {
+    try {
+      const url = window.__SUPABASE_URL__;
+      const token = window.__SUPABASE_TOKEN__;
+      const anonKey = window.__SUPABASE_ANON_KEY__;
+      if (!url || !token) return null;
+      const payload = decodeJwtPayload(token);
+      const uid = payload && payload.sub;
+      if (!uid) return null;
+      const res = await fetch(url + "/rest/v1/rpc/get_user_membership", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          apikey: anonKey,
+          Authorization: "Bearer " + token,
+        },
+        body: JSON.stringify({ p_user_id: uid }),
+      });
+      if (!res.ok) return null;
+      const row = await res.json();
+      return Array.isArray(row) ? row[0] : row;
+    } catch (e) {
+      return null;
     }
-  });
+  }
+
+  function serverBillingToToggle(cycle) {
+    return cycle === "yearly" ? "annual" : "monthly";
+  }
+
+  function uiText(key) {
+    const lang = (window.__I18N__ && window.__I18N__.serverLang) || "en";
+    const zh = lang === "zh-CN" || lang === "zh-TW";
+    const zhMap = {
+      currentPlan: "✓ 当前套餐",
+      currentPlanActive: "当前套餐生效中",
+      upgrade: "升级",
+      switchYearly: "切换到年付",
+      switchMonthly: "切换到月付",
+      free: "免费",
+    };
+    const enMap = {
+      currentPlan: "✓ Current Plan",
+      currentPlanActive: "Current plan active",
+      upgrade: "Upgrade",
+      switchYearly: "Switch to Yearly Billing",
+      switchMonthly: "Switch to Monthly Billing",
+      free: "Free",
+    };
+    return zh ? zhMap[key] : enMap[key];
+  }
+
+  async function refreshCurrentPlan() {
+    let tier = (localStorage.getItem("subscription_tier") || "free").toLowerCase();
+    let billingCycle = "monthly";
+    let autoRenew = true;
+    let isUnlimited = tier === "business" || tier === "enterprise";
+
+    const membership = await fetchServerMembership();
+    if (membership && membership.tier_slug) {
+      tier = String(membership.tier_slug).toLowerCase();
+      billingCycle = membership.billing_cycle || "monthly";
+      autoRenew = membership.is_active !== false;
+      isUnlimited = tier === "business" || tier === "enterprise";
+      localStorage.setItem("subscription_tier", tier);
+    }
+
+    const currentRank = TIER_ORDER.indexOf(tier);
+    const currentTierRank = currentRank === -1 ? 0 : currentRank;
+
+    // Free card button
+    document.querySelectorAll('[data-tier="free"]').forEach((btn) => {
+      btn.textContent = currentTierRank === 0 ? uiText("currentPlan") : uiText("free");
+    });
+
+    document.querySelectorAll(".subscribe-btn").forEach((btn) => {
+      const requested = btn.getAttribute("data-tier");
+      const reqRank = TIER_ORDER.indexOf(requested);
+      if (reqRank === -1) return;
+
+      const originalText = btn.getAttribute("data-original-text") || btn.textContent.trim();
+      btn.setAttribute("data-original-text", originalText);
+      btn.disabled = false;
+      btn.classList.remove("opacity-60", "cursor-not-allowed");
+      btn.textContent = originalText;
+
+      if (isUnlimited) {
+        btn.textContent = uiText("currentPlan");
+        btn.disabled = true;
+        btn.classList.add("opacity-60", "cursor-not-allowed");
+        return;
+      }
+      if (requested === tier) {
+        const sameBilling = serverBillingToToggle(billingCycle) === currentBilling;
+        if (sameBilling) {
+          btn.textContent = uiText("currentPlan");
+          btn.disabled = true;
+          btn.classList.add("opacity-60", "cursor-not-allowed");
+        } else {
+          btn.textContent = uiText(currentBilling === "annual" ? "switchYearly" : "switchMonthly");
+        }
+        return;
+      }
+      if (reqRank < currentTierRank && autoRenew) {
+        btn.textContent = uiText("currentPlanActive");
+        btn.disabled = true;
+        btn.classList.add("opacity-60", "cursor-not-allowed");
+        return;
+      }
+      if (reqRank > currentTierRank) {
+        btn.textContent = uiText("upgrade");
+      }
+    });
+  }
+
+  refreshCurrentPlan();
 </script>

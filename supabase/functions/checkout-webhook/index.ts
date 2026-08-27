@@ -10,6 +10,14 @@
 //  - Amount is in cents: object.order.amount (1000 == EUR 10.00).
 //  - Renewal payments also arrive as subscription.paid.
 //  - Cancellation event is spelled subscription.canceled (single "l").
+//
+// 2026-08: upgrade/renewal lifecycle —
+//   * When a NEW subscription is paid while another active membership exists
+//     (upgrade or billing-cycle switch), the old membership is marked
+//     "superseded" and its Creem subscription is canceled with
+//     mode=scheduled (period-end) so the customer is never double-charged.
+//   * subscription.canceled recomputes the effective tier from any remaining
+//     active membership instead of always downgrading to free.
 
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.49.1";
 
@@ -38,6 +46,7 @@ interface MembershipMeta {
 }
 
 const VALID_TIERS = ["explorer", "traveler", "business"];
+const TIER_RANK: Record<string, number> = { free: 0, explorer: 1, traveler: 2, business: 3, pro: 2, enterprise: 3 };
 
 function safeMeta(meta: unknown): MembershipMeta {
   const raw = (meta && typeof meta === "object" ? meta : {}) as Record<string, unknown>;
@@ -92,6 +101,73 @@ async function hmacSha256Hex(secret: string, data: string): Promise<string> {
   return Array.from(new Uint8Array(sig))
     .map((b) => b.toString(16).padStart(2, "0"))
     .join("");
+}
+
+// Cancel a Creem subscription at the end of its current period (scheduled).
+// This is the no-refund, no-further-charge path used when a customer upgrades
+// or switches billing cycle so they are never double-billed.
+async function cancelCreemSubscription(subscriptionId: string): Promise<boolean> {
+  if (!subscriptionId) return false;
+  const apiKey = Deno.env.get("CREEM_API_KEY") || "";
+  if (!apiKey) return false;
+  const testMode = Deno.env.get("CREEM_TEST_MODE") === "true";
+  const baseUrl =
+    Deno.env.get("CREEM_BASE_URL") ||
+    (testMode ? "https://test-api.creem.io/v1" : "https://api.creem.io/v1");
+  try {
+    const res = await fetch(`${baseUrl}/subscriptions/${subscriptionId}/cancel`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "x-api-key": apiKey },
+      body: JSON.stringify({ mode: "scheduled" }),
+    });
+    if (!res.ok) {
+      console.warn("Creem cancel (scheduled) failed:", res.status, subscriptionId, await res.text());
+      return false;
+    }
+    console.log("Creem subscription scheduled for cancel:", subscriptionId);
+    return true;
+  } catch (e) {
+    console.warn("Creem cancel error:", subscriptionId, String(e));
+    return false;
+  }
+}
+
+// Mark every other active membership as superseded and cancel its Creem
+// subscription (scheduled) so upgrades never double-charge the customer.
+async function supersedeOtherMemberships(
+  supabase: ReturnType<typeof createClient>,
+  userId: string,
+  keepId: string | null | undefined,
+  newSubscriptionId: string | null | undefined,
+): Promise<void> {
+  let q = supabase
+    .from("user_memberships")
+    .select("id, status, tier_id, auto_renew, metadata")
+    .eq("user_id", userId)
+    .eq("status", "active");
+  if (keepId) q = q.neq("id", keepId);
+  const { data: others } = await q;
+
+  for (const row of (others || []) as Array<Record<string, any>>) {
+    const meta = (row.metadata && typeof row.metadata === "object" ? row.metadata : {}) as Record<string, unknown>;
+    const oldSubId = typeof meta.subscription_id === "string" ? meta.subscription_id : "";
+    if (oldSubId) {
+      await cancelCreemSubscription(oldSubId);
+    }
+    await supabase
+      .from("user_memberships")
+      .update({
+        status: "superseded",
+        auto_renew: false,
+        cancelled_at: new Date().toISOString(),
+        metadata: {
+          ...meta,
+          superseded_by: newSubscriptionId || null,
+          superseded_at: new Date().toISOString(),
+        },
+      })
+      .eq("id", row.id);
+  }
 }
 
 Deno.serve(async (req: Request) => {
@@ -269,7 +345,6 @@ Deno.serve(async (req: Request) => {
           .select("id")
           .single();
         if (orderErr) {
-          console.error("Order insert failed:", orderErr);
           const orderErrDetail = JSON.stringify({ message: orderErr?.message, code: orderErr?.code, details: orderErr?.details, hint: orderErr?.hint });
           console.error("Order insert failed:", orderErrDetail);
           return new Response(JSON.stringify({ error: "Order insert failed", detail: orderErrDetail }), {
@@ -284,39 +359,63 @@ Deno.serve(async (req: Request) => {
           currentPeriodEnd ||
           new Date(Date.now() + (billing === "yearly" ? 365 : 30) * 24 * 60 * 60 * 1000).toISOString();
 
-        if (subId) {
-          // Renewal / existing subscription: extend the same membership row.
-          const { data: existingMembership } = await supabase
-            .from("user_memberships")
-            .select("id, status")
-            .eq("user_id", userId)
-            .eq("metadata->>subscription_id", subId)
-            .maybeSingle();
-
-          if (existingMembership) {
-            const { error: updErr } = await supabase
+        const existingMembershipQuery = subId
+          ? await supabase
               .from("user_memberships")
-              .update({
-                status: "active",
-                tier_id: tierRow.id,
-                billing_cycle: billing,
-                expires_at: expiresAt,
-                cancelled_at: null,
-                auto_renew: true,
-                order_id: orderRow.id,
-                started_at: existingMembership.status === "cancelled" ? startedAt : undefined,
-                metadata: {
-                  ...metadata,
-                  subscription_id: subId,
-                  checkout_id: checkoutId || null,
-                  last_renewal: paidAt,
-                  raw_event: eventType,
-                },
-              })
-              .eq("id", existingMembership.id);
-            if (updErr) console.error("Membership renew update failed:", updErr);
-          } else {
-            await supabase.from("user_memberships").insert({
+              .select("id, status")
+              .eq("user_id", userId)
+              .eq("metadata->>subscription_id", subId)
+              .maybeSingle()
+          : { data: null };
+
+        const existingMembership = existingMembershipQuery.data;
+        const newMembershipMeta = {
+          ...metadata,
+          subscription_id: subId || null,
+          checkout_id: checkoutId || null,
+          product_id: productId || null,
+          last_renewal: paidAt,
+          raw_event: eventType,
+          event_id: payload.id || null,
+        };
+
+        let membershipId: string | null = null;
+
+        if (existingMembership) {
+          // Renewal of the SAME Creem subscription: extend the same row.
+          const { data: updatedRow, error: updErr } = await supabase
+            .from("user_memberships")
+            .update({
+              status: "active",
+              tier_id: tierRow.id,
+              billing_cycle: billing,
+              expires_at: expiresAt,
+              cancelled_at: null,
+              auto_renew: true,
+              order_id: orderRow.id,
+              started_at: existingMembership.status === "cancelled" ? startedAt : undefined,
+              metadata: newMembershipMeta,
+            })
+            .eq("id", existingMembership.id)
+            .select("id")
+            .single();
+          if (updErr) {
+            console.error("Membership renew update failed:", updErr);
+            return new Response(JSON.stringify({ error: "Membership update failed", detail: String(updErr?.message) }), {
+              status: 500,
+              headers: { ...corsHeaders, "Content-Type": "application/json" },
+            });
+          }
+          membershipId = updatedRow?.id || existingMembership.id;
+        } else {
+          // NEW subscription (first purchase / upgrade / billing switch):
+          // supersede any other active membership and its Creem subscription
+          // first, then insert a fresh active row.
+          await supersedeOtherMemberships(supabase, userId, null, typeof subId === "string" ? subId : null);
+
+          const { data: insertedRow, error: insertErr } = await supabase
+            .from("user_memberships")
+            .insert({
               user_id: userId,
               tier_id: tierRow.id,
               status: "active",
@@ -325,41 +424,25 @@ Deno.serve(async (req: Request) => {
               expires_at: expiresAt,
               auto_renew: true,
               order_id: orderRow.id,
-              metadata: {
-                ...metadata,
-                subscription_id: subId,
-                checkout_id: checkoutId || null,
-                last_renewal: paidAt,
-                raw_event: eventType,
-              },
+              metadata: newMembershipMeta,
+            })
+            .select("id")
+            .single();
+          if (insertErr) {
+            console.error("Membership insert failed:", insertErr);
+            return new Response(JSON.stringify({ error: "Membership insert failed", detail: String(insertErr?.message) }), {
+              status: 500,
+              headers: { ...corsHeaders, "Content-Type": "application/json" },
             });
           }
-        } else {
-          // One-time purchase or no subscription id: cancel any other active
-          // membership for this user, then insert a fresh one.
-          await supabase
-            .from("user_memberships")
-            .update({ status: "cancelled", cancelled_at: new Date().toISOString(), auto_renew: false })
-            .eq("user_id", userId)
-            .eq("status", "active");
-          await supabase.from("user_memberships").insert({
-            user_id: userId,
-            tier_id: tierRow.id,
-            status: "active",
-            billing_cycle: billing,
-            started_at: startedAt,
-            expires_at: expiresAt,
-            auto_renew: true,
-            order_id: orderRow.id,
-            metadata: { ...metadata, raw_event: eventType, checkout_id: checkoutId || null },
-          });
+          membershipId = insertedRow?.id || null;
         }
 
         // -- Sync AI usage tier -------------------------------------------------
         await supabase.rpc("update_ai_usage_tier", { p_user_id: userId, p_tier_slug: tier });
 
         return new Response(
-          JSON.stringify({ ok: true, action: eventType, tier, orderId: orderRow.id }),
+          JSON.stringify({ ok: true, action: eventType, tier, orderId: orderRow.id, membershipId }),
           { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } },
         );
       }
@@ -404,6 +487,10 @@ Deno.serve(async (req: Request) => {
       }
 
       case "subscription.canceled": {
+        // Mark the canceled subscription's memberships as canceled, then
+        // recompute the effective tier from any REMAINING active membership
+        // (e.g. after an upgrade the old subscription is canceled but the new
+        // one stays active — the user must NOT be downgraded to free).
         const subId = typeof eventData.id === "string" ? String(eventData.id) : undefined;
         const q = supabase.from("user_memberships");
         let query = q.update({ status: "cancelled", cancelled_at: new Date().toISOString(), auto_renew: false });
@@ -413,8 +500,17 @@ Deno.serve(async (req: Request) => {
           query = query.eq("user_id", userId).eq("status", "active");
         }
         await query;
-        await supabase.rpc("update_ai_usage_tier", { p_user_id: userId, p_tier_slug: "free" });
-        return new Response(JSON.stringify({ ok: true, action: "canceled" }), {
+
+        const { data: remaining } = await supabase
+          .from("user_memberships")
+          .select("membership_tiers(slug)")
+          .eq("user_id", userId)
+          .eq("status", "active")
+          .order("created_at", { ascending: false })
+          .limit(1);
+        const effectiveTier = (remaining && remaining[0]?.membership_tiers?.slug) || "free";
+        await supabase.rpc("update_ai_usage_tier", { p_user_id: userId, p_tier_slug: effectiveTier });
+        return new Response(JSON.stringify({ ok: true, action: "canceled", effectiveTier }), {
           status: 200,
           headers: { ...corsHeaders, "Content-Type": "application/json" },
         });
