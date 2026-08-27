@@ -154,6 +154,7 @@ export function LeafletMap({
         scrollWheelZoom={true}
       >
         <TileLayer
+          key={provider}
           url={tileUrl}
           attribution={attribution}
           subdomains={provider === "amap" ? "1234" : "abc"}
