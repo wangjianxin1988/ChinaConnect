@@ -17,9 +17,9 @@ import { TileLayer } from "react-leaflet";
  * must be converted before rendering markers
  */
 const AMAP_TILE_URLS = {
-  standard: "https://webst0{s}.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}",
-  satellite: "https://webst0{s}.is.autonavi.com/appmaptile?style=3&x={x}&y={y}&z={z}",
-  terrain: "https://webst0{s}.is.autonavi.com/appmaptile?style=5&x={x}&y={y}&z={z}",
+  standard: "https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}",
+  satellite: "https://webst0{s}.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}",
+  terrain: "https://webst0{s}.is.autonavi.com/appmaptile?style=8&x={x}&y={y}&z={z}",
 } as const;
 
 /** Amap attribution text */
