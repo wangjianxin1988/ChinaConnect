@@ -338,11 +338,12 @@ export const useGamificationStore = create<GamificationStore>()(
       },
 
       loadFromProfile: (profile) => {
-        const newLevel = profile.level || calculateLevel(profile.points);
+        const pts = profile.points ?? 0;
+        const newLevel = profile.level || calculateLevel(pts);
         set({
-          points: profile.points,
+          points: pts,
           level: newLevel,
-          pointsToNextLevel: getPointsToNextLevel(profile.points),
+          pointsToNextLevel: getPointsToNextLevel(pts),
         });
       },
     }),

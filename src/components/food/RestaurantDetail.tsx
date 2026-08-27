@@ -46,7 +46,6 @@ interface Review {
   profiles?: {
     display_name: string;
     avatar_url?: string;
-    level: string;
   };
 }
 
@@ -109,8 +108,8 @@ export function RestaurantDetail({ restaurant, lang = "en" }: RestaurantDetailPr
       try {
         const { data } = await supabase
           .from("comments")
-          .select("*, profiles:user_id(display_name, avatar_url, level)")
-          .eq("post_id", restaurant.id)
+          .select("*, profiles:user_id(display_name, avatar_url)")
+          .eq("restaurant_id", restaurant.id)
           .order("created_at", { ascending: false })
           .limit(10);
 
@@ -176,12 +175,13 @@ export function RestaurantDetail({ restaurant, lang = "en" }: RestaurantDetailPr
       const { data } = await supabase
         .from("comments")
         .insert({
-          post_id: restaurant.id,
+          restaurant_id: restaurant.id,
           user_id: userId,
           content: newReview,
+          rating: newRating,
           is_best_answer: false,
         })
-        .select("*, profiles:user_id(display_name, avatar_url, level)")
+        .select("*, profiles:user_id(display_name, avatar_url)")
         .single();
 
       if (data) {
@@ -197,7 +197,7 @@ export function RestaurantDetail({ restaurant, lang = "en" }: RestaurantDetailPr
         rating: newRating,
         content: newReview,
         created_at: new Date().toISOString(),
-        profiles: { display_name: "Demo User", level: "探索者" },
+        profiles: { display_name: "Demo User" },
       };
       setReviews([mockReview, ...reviews]);
       setNewReview("");

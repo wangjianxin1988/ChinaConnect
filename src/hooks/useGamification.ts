@@ -5,7 +5,7 @@
  */
 
 import { authClient } from "@/services/auth";
-import { getPointsToNextLevel } from "@/types/database";
+import { calculateLevel, getPointsToNextLevel } from "@/types/database";
 import type {
   Badge,
   EarnedBadge,
@@ -26,16 +26,9 @@ import { useCallback, useEffect, useState } from "react";
 
 interface ProfilePointsData {
   points: number | null;
-  level: UserLevel | null;
   badges: string[] | null;
 }
 
-interface ProfileStatsData {
-  check_ins_count: number | null;
-  posts_count: number | null;
-  likes_received: number | null;
-  badges: string[] | null;
-}
 
 // ============================================
 // Hook Types
@@ -399,14 +392,16 @@ export function useGamification(options: UseGamificationOptions = {}): UseGamifi
       // Load profile for points/level
       const { data: profileData } = (await authClient
         .from("profiles")
-        .select("points, level, badges")
+        .select("points, badges")
         .eq("user_id", userId)
         .single()) as { data: ProfilePointsData | null };
 
       if (profileData) {
-        setPoints(profileData.points ?? 0);
-        setLevel(profileData.level ?? "小白");
-        setPointsToNextLevel(getPointsToNextLevel(profileData.points ?? 0));
+        const pts = profileData.points ?? 0;
+        setPoints(pts);
+        // level is derived from points (no level column in profiles)
+        setLevel(calculateLevel(pts));
+        setPointsToNextLevel(getPointsToNextLevel(pts));
       }
 
       // Load streak from local storage
@@ -543,19 +538,18 @@ export function useGamification(options: UseGamificationOptions = {}): UseGamifi
     try {
       setError(null);
 
-      // Get current profile stats
-      const { data: profileData } = (await authClient
-        .from("profiles")
-        .select("check_ins_count, posts_count, likes_received, badges")
-        .eq("user_id", userId)
-        .single()) as { data: ProfileStatsData | null };
-
-      if (!profileData) return [];
+      // Compute real stats from the actual tables (profiles has no
+      // check_ins_count/posts_count/likes_received columns).
+      const [checkInsRes, postsRes, likesRes] = await Promise.all([
+        authClient.from("check_ins").select("id", { count: "exact", head: true }).eq("user_id", userId),
+        authClient.from("community_posts").select("id", { count: "exact", head: true }).eq("user_id", userId),
+        authClient.from("community_posts").select("likes_count").eq("user_id", userId),
+      ]);
 
       const stats = {
-        checkIns: profileData.check_ins_count ?? 0,
-        posts: profileData.posts_count ?? 0,
-        likes: profileData.likes_received ?? 0,
+        checkIns: checkInsRes.count ?? 0,
+        posts: postsRes.count ?? 0,
+        likes: (likesRes.data ?? []).reduce((sum, p) => sum + (p.likes_count ?? 0), 0),
       };
 
       const earnedBadges = getEarnedBadgesFromStorage();

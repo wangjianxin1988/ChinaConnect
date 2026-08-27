@@ -299,6 +299,7 @@ const prefix = lang && lang !== "en" ? "/" + lang : "";
   import { supabase } from '@/supabase/config';
   import { getLocalStorageManager } from '@/lib/ai/local-storage-manager';
   import { pickItineraryName } from '@/lib/ai/itinerary-i18n';
+  import { calculateLevel } from '@/types/database';
 
   // Preset avatar set (kept in sync with src/lib/avatar.ts).
   const PRESET_AVATAR_PATHS = [
@@ -690,8 +691,10 @@ const prefix = lang && lang !== "en" ? "/" + lang : "";
       avatarEl.innerHTML = `<img src="${preset}" alt="${displayName}" class="w-16 h-16 rounded-full object-cover" />`;
     }
 
-    if (profile?.level) {
-      levelEl.textContent = profile.level;
+    // profiles has no level column — derive it from points.
+    const computedLevel = calculateLevel(profile?.points ?? 0);
+    if (computedLevel) {
+      levelEl.textContent = computedLevel;
     }
     if (profile?.points !== undefined) {
       pointsEl.textContent = `${profile.points} ${t('accountPage.pointsUnit')}`;

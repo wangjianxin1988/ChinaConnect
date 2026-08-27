@@ -4,7 +4,7 @@
  */
 
 import type { Database } from "@/types/database";
-import { POINTS } from "@/types/database";
+import { calculateLevel, POINTS } from "@/types/database";
 import { LevelBadge } from "./LevelBadge";
 import { PointsDisplay } from "./PointsDisplay";
 import { useState } from "react";
@@ -45,7 +45,7 @@ export function UserProfile({
     : presetAvatarForSeed(profile.user_id || displayName);
   const nationality = profile.nationality || null;
   const bio = "bio" in profile ? profile.bio : null;
-  const level = "level" in profile ? profile.level : "小白";
+  const level = calculateLevel(profile.points ?? 0);
   const points = profile.points || 0;
 
   const finalStats = {
@@ -138,7 +138,7 @@ export function UserProfile({
 
       {/* Member Since */}
       <div className="text-sm text-gray-500 dark:text-gray-400">
-        {authT(lang, "profileMemberSince") + " " + new Date(profile.created_at).toLocaleDateString()}
+        {authT(lang, "profileMemberSince") + " " + new Date(profile.created_at ?? Date.now()).toLocaleDateString()}
       </div>
     </div>
   );
