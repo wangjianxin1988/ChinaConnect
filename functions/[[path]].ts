@@ -15,6 +15,18 @@
 
 import type { PagesFunction } from "@cloudflare/workers-types";
 
+// Security headers for HTML responses served by this function. Kept in sync
+// with public/_headers (which only applies to static assets — Pages Functions
+// build their own Response headers).
+const HTML_SECURITY_HEADERS: Record<string, string> = {
+  "Content-Security-Policy":
+    "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://unpkg.com https://webapi.amap.com https://restapi.amap.com https://jsapi.amap.com https://jsapi-service.amap.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https://*.supabase.co https://api.minimax.chat https://*.cloudflare.com wss://*.supabase.co https://*.amap.com https://*.autonavi.com; frame-ancestors 'self';",
+  "X-Frame-Options": "SAMEORIGIN",
+  "X-Content-Type-Options": "nosniff",
+  "Referrer-Policy": "strict-origin-when-cross-origin",
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+};
+
 const SUPPORTED_LOCALES = [
   "en",
   "ja",
@@ -166,6 +178,7 @@ export const onRequest: PagesFunction = async (context) => {
         headers: {
           "Content-Type": "text/html; charset=utf-8",
           "Cache-Control": "private, max-age=60",
+          ...HTML_SECURITY_HEADERS,
         },
       });
     }
@@ -180,6 +193,7 @@ export const onRequest: PagesFunction = async (context) => {
         headers: {
           "Content-Type": "text/html; charset=utf-8",
           "Cache-Control": "public, max-age=300",
+          ...HTML_SECURITY_HEADERS,
         },
       });
     }
@@ -306,6 +320,7 @@ export const onRequest: PagesFunction = async (context) => {
               "Content-Type": "text/html;charset=UTF-8",
               "Cache-Control": "public, max-age=3600",
               "Set-Cookie": `chinaconnect_language=${locale}; Path=/; Max-Age=31536000; SameSite=Lax`,
+              ...HTML_SECURITY_HEADERS,
             },
           });
         }
@@ -546,6 +561,7 @@ export const onRequest: PagesFunction = async (context) => {
           "Content-Type": "text/html;charset=UTF-8",
           "Cache-Control": "public, max-age=3600",
           "Set-Cookie": `chinaconnect_language=${locale}; Path=/; Max-Age=31536000; SameSite=Lax`,
+          ...HTML_SECURITY_HEADERS,
         },
       });
     }
