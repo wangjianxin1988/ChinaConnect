@@ -2,9 +2,13 @@
 -- Previously RestaurantDetail queried `comments` which never existed; the real
 -- community table is post_comments (posts, no rating). This table backs the
 -- "User reviews" section on restaurant detail pages.
+--
+-- restaurant_id is the frontend restaurant page id (text, e.g. "bj-michelin-1",
+-- "beijing-1"); the restaurant detail pages are built from static per-city data
+-- so there is no reliable uuid mapping to public.restaurants.
 CREATE TABLE IF NOT EXISTS public.comments (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-  restaurant_id uuid NOT NULL REFERENCES public.restaurants(id) ON DELETE CASCADE,
+  restaurant_id text NOT NULL,
   user_id uuid NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
   rating integer NOT NULL DEFAULT 5 CHECK (rating BETWEEN 1 AND 5),
   content text NOT NULL,
@@ -44,4 +48,4 @@ GRANT SELECT, INSERT, UPDATE, DELETE, REFERENCES, TRIGGER ON public.comments TO 
 GRANT SELECT, INSERT, UPDATE, DELETE, REFERENCES, TRIGGER, TRUNCATE ON public.comments TO postgres;
 
 COMMENT ON TABLE public.comments IS
-  'Restaurant reviews. Publicly readable; only the author can create/update/delete their own review.';
+  'Restaurant reviews. Publicly readable; only the author can create/update/delete their own review. restaurant_id is the frontend restaurant page id (text).';

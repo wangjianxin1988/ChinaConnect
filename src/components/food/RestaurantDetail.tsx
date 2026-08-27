@@ -108,13 +108,27 @@ export function RestaurantDetail({ restaurant, lang = "en" }: RestaurantDetailPr
       try {
         const { data } = await supabase
           .from("comments")
-          .select("*, profiles:user_id(display_name, avatar_url)")
+          .select("*")
           .eq("restaurant_id", restaurant.id)
           .order("created_at", { ascending: false })
           .limit(10);
 
         if (data) {
-          setReviews(data as unknown as Review[]);
+          // comments has no FK to profiles, so fetch author info separately
+          const userIds = Array.from(new Set(data.map((c) => c.user_id)));
+          const { data: authors } = userIds.length
+            ? await supabase
+                .from("profiles")
+                .select("user_id, display_name, avatar_url")
+                .in("user_id", userIds)
+            : { data: null };
+          const authorMap = new Map((authors ?? []).map((a) => [a.user_id, a]));
+          setReviews(
+            data.map((c) => ({
+              ...c,
+              profiles: authorMap.get(c.user_id) ?? { display_name: "Traveler" },
+            })) as Review[]
+          );
         }
       } catch {
         // Comments may not exist in demo mode
@@ -181,11 +195,19 @@ export function RestaurantDetail({ restaurant, lang = "en" }: RestaurantDetailPr
           rating: newRating,
           is_best_answer: false,
         })
-        .select("*, profiles:user_id(display_name, avatar_url)")
+        .select("*")
         .single();
 
       if (data) {
-        setReviews([data as unknown as Review, ...reviews]);
+        const { data: author } = await supabase
+          .from("profiles")
+          .select("display_name, avatar_url")
+          .eq("user_id", userId)
+          .single();
+        setReviews([
+          { ...data, profiles: author ?? { display_name: "Traveler" } },
+          ...reviews,
+        ] as Review[]);
         setNewReview("");
         setNewRating(5);
       }
