@@ -13,6 +13,7 @@ import { downloadItineraryFile, type ExportLang } from "@/lib/ai/export-itinerar
 import { savedItineraryToExtractedRoute } from "@/lib/ai/itinerary-builder";
 import { saveRoute } from "@/lib/ai/route-saver";
 import { getCurrentUser } from "@/lib/auth/supabase-auth";
+import { getLocalStorageManager } from "@/lib/ai/local-storage-manager";
 
 const TRIP_LABELS: Record<string, { loading: string; notFound: string; notFoundDesc: string; cta: string; shared: string; plan: string; days: string }> = {
   en: { loading: "Loading itinerary…", notFound: "Itinerary not found", notFoundDesc: "This shared link is invalid or the itinerary has been deleted. Please ask the owner for a new link.", cta: "✨ Plan a new trip with ChinaGuide AI", shared: "Shared itinerary · chinaengage.org", plan: "✨ Plan your own trip with ChinaGuide AI", days: "day(s)" },
@@ -159,25 +160,31 @@ export function TripView({ token: tokenProp }: TripViewProps) {
       return;
     }
     (async () => {
+      // Bind localStorage to the signed-in user so share lookups never
+      // cross accounts on the same browser.
+      try {
+        const user = await getCurrentUser();
+        getLocalStorageManager(user?.id ?? null);
+      } catch {
+        getLocalStorageManager(null);
+      }
+      if (cancelled) return;
+
       // 1. Same-browser local routes (offline / not-yet-synced shares)
       try {
-        const rawIndex = localStorage.getItem("cc_ai_share_index");
-        const rawRoutes = localStorage.getItem("cc_ai_saved_routes");
-        if (rawIndex && rawRoutes) {
-          const index = JSON.parse(rawIndex) as Record<string, string>;
-          const localId = index[token];
-          if (localId) {
-            const routes = JSON.parse(rawRoutes) as Array<Record<string, unknown>>;
-            const route = routes.find((r) => r.id === localId);
-            if (route) {
-              const it = extractedRouteToSavedItinerary(route as never);
-              if (typeof route.createdAt === "string") it.createdAt = route.createdAt;
-              if (!cancelled) {
-                setItinerary(it);
-                setState("ready");
-              }
-              return;
+        const lsm = getLocalStorageManager();
+        const index = lsm.loadShareIndex();
+        const localId = index[token];
+        if (localId) {
+          const route = lsm.loadSavedRoutes().find((r) => r.id === localId);
+          if (route) {
+            const it = extractedRouteToSavedItinerary(route as never, lang);
+            if (typeof route.createdAt === "string") it.createdAt = route.createdAt;
+            if (!cancelled) {
+              setItinerary(it);
+              setState("ready");
             }
+            return;
           }
         }
       } catch {
@@ -198,7 +205,7 @@ export function TripView({ token: tokenProp }: TripViewProps) {
           setState("notfound");
           return;
         }
-        setItinerary(routeRowToSavedItinerary(data as never));
+        setItinerary(routeRowToSavedItinerary(data as never, lang));
         setState("ready");
       } catch {
         if (!cancelled) setState("notfound");

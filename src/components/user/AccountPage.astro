@@ -297,6 +297,8 @@ const prefix = lang && lang !== "en" ? "/" + lang : "";
   } from '@/lib/auth/supabase-auth';
   import { clearTierCache } from '@/lib/usage-tracker';
   import { supabase } from '@/supabase/config';
+  import { getLocalStorageManager } from '@/lib/ai/local-storage-manager';
+  import { pickItineraryName } from '@/lib/ai/itinerary-i18n';
 
   // Preset avatar set (kept in sync with src/lib/avatar.ts).
   const PRESET_AVATAR_PATHS = [
@@ -408,12 +410,21 @@ const prefix = lang && lang !== "en" ? "/" + lang : "";
   }
 
   // ─── Existing Overview Logic ─────────────────────────────────
+  function routeDisplayTitle(r: any): string {
+    const i18n = r?.route_data?.title_i18n;
+    return pickItineraryName(r?.title, r?.title_zh, i18n, ccCurrentLang) || t('accountPage.untitledRoute');
+  }
+
+  function routeDisplayDestination(r: any): string {
+    return r?.route_data?.destination || r?.destination_city || '';
+  }
+
   function renderRoutes(routes: any[]) {
     const container = document.getElementById('routes-list')!;
     let localRoutes: any[] = [];
     try {
-      const stored = localStorage.getItem('cc_ai_saved_routes');
-      if (stored) localRoutes = JSON.parse(stored);
+      const lsm = getLocalStorageManager(editUser ? editUser.id : null);
+      localRoutes = lsm.loadSavedRoutes();
     } catch {}
     const allRoutes = [...routes];
     for (const lr of localRoutes) {
@@ -429,8 +440,8 @@ const prefix = lang && lang !== "en" ? "/" + lang : "";
       <div class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-750 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
         <span class="text-xl">🗺️</span>
         <div class="flex-1 min-w-0">
-          <div class="text-sm font-medium text-gray-900 dark:text-white truncate">${r.title || t('accountPage.untitledRoute')}</div>
-          <div class="text-xs text-gray-500 dark:text-gray-400">${r.destination || r.destination_city || ''} · ${r.days || '?'} days · ${new Date(r.createdAt || r.created_at).toLocaleDateString()}</div>
+          <div class="text-sm font-medium text-gray-900 dark:text-white truncate">${routeDisplayTitle(r)}</div>
+          <div class="text-xs text-gray-500 dark:text-gray-400">${routeDisplayDestination(r)} · ${r.days || '?'} days · ${new Date(r.createdAt || r.created_at).toLocaleDateString()}</div>
           ${r.highlights && r.highlights.length > 0 ? `<div class="text-xs text-gray-400 dark:text-gray-500 mt-1 truncate">${r.highlights.slice(0, 2).join(' • ')}</div>` : ''}
         </div>
         <div class="flex items-center gap-2">
@@ -447,12 +458,7 @@ const prefix = lang && lang !== "en" ? "/" + lang : "";
     (window as any).deleteRoute = async function(routeId: string) {
     if (!confirm(t('accountPage.deleteRouteConfirm'))) return;
     try {
-      const stored = localStorage.getItem('cc_ai_saved_routes');
-      if (stored) {
-        const routes = JSON.parse(stored);
-        const filtered = routes.filter((r: any) => r.id !== routeId);
-        localStorage.setItem('cc_ai_saved_routes', JSON.stringify(filtered));
-      }
+      getLocalStorageManager(editUser ? editUser.id : null).removeSavedRoute(routeId);
     } catch {}
     if (routeId && !String(routeId).startsWith('local_') && editUser) {
       try {

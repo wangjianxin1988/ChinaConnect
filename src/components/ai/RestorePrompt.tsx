@@ -7,6 +7,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { findRestorableConversation, dismissRestorableConversation } from "@/lib/ai/route-saver";
 import { getLocalStorageManager, deserializeMessage } from "@/lib/ai/local-storage-manager";
+import { supabase } from "@/supabase/config";
 import type { Message } from "@/lib/ai/types";
 
 // ============================================
@@ -46,13 +47,29 @@ export const RestorePrompt: React.FC<RestorePromptProps> = ({
   const [isRestoring, setIsRestoring] = useState(false);
   const [countdown, setCountdown] = useState(autoDismissSeconds);
 
-  // Check for restorable conversation on mount
+  // Check for restorable conversation on mount. The storage manager is
+  // bound to the signed-in user first so snapshots never leak across accounts.
   useEffect(() => {
-    const info = findRestorableConversation();
-    if (info) {
-      setRestorable(info);
-      setIsVisible(true);
-    }
+    let cancelled = false;
+    (async () => {
+      let userId: string | null = null;
+      try {
+        const { data: sessionData } = await supabase.auth.getSession();
+        userId = sessionData.session?.user?.id ?? null;
+      } catch {
+        // anonymous
+      }
+      if (cancelled) return;
+      getLocalStorageManager(userId);
+      const info = findRestorableConversation(userId);
+      if (info) {
+        setRestorable(info);
+        setIsVisible(true);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   // Auto-dismiss countdown
@@ -97,7 +114,7 @@ export const RestorePrompt: React.FC<RestorePromptProps> = ({
   // Handle dismiss
   const handleDismiss = useCallback(() => {
     if (restorable) {
-      dismissRestorableConversation(restorable.conversationId);
+      dismissRestorableConversation(restorable.conversationId, getLocalStorageManager().getUserId());
     }
     setIsVisible(false);
     onDismiss?.();

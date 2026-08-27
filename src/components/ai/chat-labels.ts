@@ -27,6 +27,7 @@ export interface AiChatLabels {
   mcpOffline: string;
   cancel: string;
   thinking: string;
+  saving: string;
   map: string;
   saveRoute: string;
   signInToSave: string;
@@ -60,6 +61,7 @@ export interface AiChatLabels {
   saveItineraryTitle: string;
   itineraryName: string;
   savedNotice: string;
+  pdfExportFailed: string;
 }
 
 export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
@@ -74,6 +76,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     mcpOffline: "AI Offline",
     cancel: "Cancel",
     thinking: "Thinking...",
+    saving: "Saving...",
     map: "Map",
     saveRoute: "Save Route",
     signInToSave: "Please sign in to save routes.",
@@ -108,6 +111,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     saveItineraryTitle: "Save Itinerary",
     itineraryName: "Itinerary name",
     savedNotice: "Itinerary saved!",
+    pdfExportFailed: "PDF export failed. Please try again.",
 
   },
   ja: {
@@ -121,6 +125,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     mcpOffline: "AI オフライン",
     cancel: "キャンセル",
     thinking: "考え中...",
+    saving: "保存中...",
     map: "地図",
     saveRoute: "旅程を保存",
     signInToSave: "旅程を保存するにはログインしてください。",
@@ -155,6 +160,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     saveItineraryTitle: "旅程を保存",
     itineraryName: "旅程名",
     savedNotice: "旅程を保存しました！",
+    pdfExportFailed: "PDFの出力に失敗しました。もう一度お試しください。",
 
   },
   ko: {
@@ -168,6 +174,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     mcpOffline: "AI 오프라인",
     cancel: "취소",
     thinking: "생각 중...",
+    saving: "저장 중...",
     map: "지도",
     saveRoute: "일정 저장",
     signInToSave: "일정을 저장하려면 로그인하세요.",
@@ -202,6 +209,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     saveItineraryTitle: "일정 저장",
     itineraryName: "일정 이름",
     savedNotice: "일정이 저장되었습니다!",
+    pdfExportFailed: "PDF 내보내기에 실패했습니다. 다시 시도해 주세요.",
 
   },
   "zh-CN": {
@@ -215,6 +223,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     mcpOffline: "AI 离线",
     cancel: "取消",
     thinking: "思考中...",
+    saving: "保存中...",
     map: "地图",
     saveRoute: "保存路线",
     signInToSave: "请登录后再保存路线。",
@@ -248,6 +257,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     saveItineraryTitle: "保存行程",
     itineraryName: "行程名称",
     savedNotice: "行程已保存！",
+    pdfExportFailed: "PDF 导出失败，请重试。",
 
   },
   "zh-TW": {
@@ -261,6 +271,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     mcpOffline: "AI 離線",
     cancel: "取消",
     thinking: "思考中...",
+    saving: "儲存中...",
     map: "地圖",
     saveRoute: "儲存路線",
     signInToSave: "請登入後再儲存路線。",
@@ -294,6 +305,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     saveItineraryTitle: "儲存行程",
     itineraryName: "行程名稱",
     savedNotice: "行程已儲存！",
+    pdfExportFailed: "PDF 匯出失敗，請重試。",
 
   },
   th: {
@@ -307,6 +319,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     mcpOffline: "AI ออฟไลน์",
     cancel: "ยกเลิก",
     thinking: "กำลังคิด...",
+    saving: "กำลังบันทึก...",
     map: "แผนที่",
     saveRoute: "บันทึกเส้นทาง",
     signInToSave: "กรุณาเข้าสู่ระบบเพื่อบันทึกเส้นทาง",
@@ -340,6 +353,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     saveItineraryTitle: "บันทึกแผนการเดินทาง",
     itineraryName: "ชื่อแผน",
     savedNotice: "บันทึกแผนแล้ว!",
+    pdfExportFailed: "การส่งออก PDF ล้มเหลว กรุณาลองอีกครั้ง",
 
   },
   vi: {
@@ -353,6 +367,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     mcpOffline: "AI ngoại tuyến",
     cancel: "Hủy",
     thinking: "Đang suy nghĩ...",
+    saving: "Đang lưu...",
     map: "Bản đồ",
     saveRoute: "Lưu hành trình",
     signInToSave: "Vui lòng đăng nhập để lưu hành trình.",
@@ -388,6 +403,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     saveItineraryTitle: "Lưu hành trình",
     itineraryName: "Tên hành trình",
     savedNotice: "Đã lưu hành trình!",
+    pdfExportFailed: "Xuất PDF thất bại. Vui lòng thử lại.",
 
   },
   ru: {
@@ -401,6 +417,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     mcpOffline: "ИИ офлайн",
     cancel: "Отмена",
     thinking: "Думаю...",
+    saving: "Сохранение...",
     map: "Карта",
     saveRoute: "Сохранить маршрут",
     signInToSave: "Войдите, чтобы сохранять маршруты.",
@@ -437,6 +454,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     saveItineraryTitle: "Сохранить маршрут",
     itineraryName: "Название маршрута",
     savedNotice: "Маршрут сохранён!",
+    pdfExportFailed: "Не удалось экспортировать PDF. Попробуйте ещё раз.",
 
   },
   fr: {
@@ -450,6 +468,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     mcpOffline: "IA hors ligne",
     cancel: "Annuler",
     thinking: "Réflexion...",
+    saving: "Enregistrement...",
     map: "Carte",
     saveRoute: "Enregistrer l'itinéraire",
     signInToSave: "Veuillez vous connecter pour enregistrer des itinéraires.",
@@ -486,6 +505,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     saveItineraryTitle: "Enregistrer l'itinéraire",
     itineraryName: "Nom de l'itinéraire",
     savedNotice: "Itinéraire enregistré !",
+    pdfExportFailed: "Échec de l'export PDF. Veuillez réessayer.",
 
   },
   de: {
@@ -499,6 +519,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     mcpOffline: "KI offline",
     cancel: "Abbrechen",
     thinking: "Denke nach...",
+    saving: "Speichern...",
     map: "Karte",
     saveRoute: "Route speichern",
     signInToSave: "Bitte melden Sie sich an, um Routen zu speichern.",
@@ -535,6 +556,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     saveItineraryTitle: "Reiseroute speichern",
     itineraryName: "Name der Reiseroute",
     savedNotice: "Reiseroute gespeichert!",
+    pdfExportFailed: "PDF-Export fehlgeschlagen. Bitte erneut versuchen.",
 
   },
   ar: {
@@ -548,6 +570,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     mcpOffline: "الذكاء الاصطناعي غير متصل",
     cancel: "إلغاء",
     thinking: "جارٍ التفكير...",
+    saving: "جارٍ الحفظ...",
     map: "الخريطة",
     saveRoute: "حفظ المسار",
     signInToSave: "يرجى تسجيل الدخول لحفظ المسارات.",
@@ -582,6 +605,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     saveItineraryTitle: "حفظ خط السير",
     itineraryName: "اسم خط السير",
     savedNotice: "تم حفظ خط السير!",
+    pdfExportFailed: "فشل تصدير PDF. يرجى المحاولة مرة أخرى.",
 
   },
   fa: {
@@ -595,6 +619,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     mcpOffline: "هوش مصنوعی آفلاین",
     cancel: "لغو",
     thinking: "در حال فکر کردن...",
+    saving: "در حال ذخیرهسازی...",
     map: "نقشه",
     saveRoute: "ذخیره مسیر",
     signInToSave: "برای ذخیره مسیر لطفاً وارد شوید.",
@@ -629,6 +654,7 @@ export const CHAT_LABELS: Record<AiChatLang, AiChatLabels> = {
     saveItineraryTitle: "ذخیره برنامه سفر",
     itineraryName: "نام برنامه سفر",
     savedNotice: "برنامه سفر ذخیره شد!",
+    pdfExportFailed: "صدور PDF ناموفق بود. لطفاً دوباره تلاش کنید.",
 
   },
 };

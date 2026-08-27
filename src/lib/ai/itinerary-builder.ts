@@ -15,6 +15,13 @@ import type {
   TransportSegment,
 } from "./types";
 import { extractRouteFromConversation, type ExtractedRoute } from "./route-saver";
+import {
+  ITINERARY_LANGS,
+  localizeGenericName,
+  localizeTitle,
+  normalizeItineraryLang,
+  pickItineraryName,
+} from "./itinerary-i18n";
 
 // ---------------------------------------------------------------------------
 // ExtractedRoute -> SavedItinerary
@@ -106,7 +113,10 @@ function toDailyPlan(day: {
 }
 
 /** Convert an extracted route (from a conversation or ai_routes row) into a SavedItinerary. */
-export function extractedRouteToSavedItinerary(route: ExtractedRoute): SavedItinerary {
+export function extractedRouteToSavedItinerary(
+  route: ExtractedRoute,
+  lang?: string,
+): SavedItinerary {
   const data: ParsedItinerary = {
     summary: {
       destination: route.destination,
@@ -122,7 +132,7 @@ export function extractedRouteToSavedItinerary(route: ExtractedRoute): SavedItin
   };
   return {
     id: "local_" + Date.now() + "_" + Math.random().toString(36).slice(2, 8),
-    name: route.titleZh || route.title,
+    name: pickItineraryName(route.title, route.titleZh, route.titleLocalized, lang),
     destination: route.destination,
     days: route.days || 1,
     createdAt: new Date().toISOString(),
@@ -138,10 +148,13 @@ export function extractedRouteToSavedItinerary(route: ExtractedRoute): SavedItin
  * Try to build a SavedItinerary from the current conversation messages.
  * Returns null when no destination can be identified yet.
  */
-export function buildSavedItineraryFromConversation(messages: Message[]): SavedItinerary | null {
-  const route = extractRouteFromConversation(messages, null);
+export function buildSavedItineraryFromConversation(
+  messages: Message[],
+  language: string = "en",
+): SavedItinerary | null {
+  const route = extractRouteFromConversation(messages, null, undefined, language);
   if (!route) return null;
-  return extractedRouteToSavedItinerary(route);
+  return extractedRouteToSavedItinerary(route, language);
 }
 
 /**
@@ -149,7 +162,10 @@ export function buildSavedItineraryFromConversation(messages: Message[]): SavedI
  * assistant reply so the "Save itinerary" button is available after every
  * completed exchange, even when destination parsing is ambiguous.
  */
-export function buildFallbackItinerary(messages: Message[]): SavedItinerary | null {
+export function buildFallbackItinerary(
+  messages: Message[],
+  language: string = "en",
+): SavedItinerary | null {
   let content = "";
   for (let i = messages.length - 1; i >= 0; i--) {
     if (messages[i].role === "assistant" && messages[i].content.trim()) {
@@ -182,7 +198,7 @@ export function buildFallbackItinerary(messages: Message[]): SavedItinerary | nu
   const generic = destination === "China Travel";
   return {
     id: "local_" + Date.now() + "_" + Math.random().toString(36).slice(2, 8),
-    name: generic ? "Travel Plan" : `${destination} ${days}-Day Trip`,
+    name: generic ? localizeGenericName(language) : localizeTitle(normalizeItineraryLang(language), destination, days),
     destination,
     days,
     createdAt: new Date().toISOString(),
@@ -204,6 +220,8 @@ interface RouteRow {
   days?: number | null;
   route_data?: {
     destination?: string | null;
+    title_i18n?: Record<string, string> | null;
+    summary_i18n?: Record<string, string> | null;
     days?: Array<Record<string, unknown>>;
     total_estimated_cost?: number;
     currency?: string;
@@ -222,7 +240,7 @@ function destinationFromTitle(title: string): string {
 }
 
 /** Convert an ai_routes row (from Supabase) into a SavedItinerary. */
-export function routeRowToSavedItinerary(row: RouteRow): SavedItinerary {
+export function routeRowToSavedItinerary(row: RouteRow, lang?: string): SavedItinerary {
   const rd = row.route_data ?? {};
   const destination = rd.destination || destinationFromTitle(row.title || "");
   const rawDays = Array.isArray(rd.days) ? (rd.days as Array<Record<string, unknown>>) : [];
@@ -278,7 +296,7 @@ export function routeRowToSavedItinerary(row: RouteRow): SavedItinerary {
 
   return {
     id: row.id,
-    name: row.title_zh || row.title || "Saved itinerary",
+    name: pickItineraryName(row.title, row.title_zh, rd.title_i18n, lang),
     destination,
     days: daysCount,
     createdAt: row.created_at || new Date().toISOString(),
@@ -293,11 +311,21 @@ export function routeRowToSavedItinerary(row: RouteRow): SavedItinerary {
 
 /** Convert a SavedItinerary back into an ExtractedRoute so it can be saved to ai_routes. */
 export function savedItineraryToExtractedRoute(it: SavedItinerary): ExtractedRoute {
+  const summaryText = it.data.summary.topHighlights.join(", ") || it.name;
+  // Keep the user's chosen name/summary visible in every UI language.
+  const titleLocalized: Record<string, string> = {};
+  const summaryLocalized: Record<string, string> = {};
+  for (const l of ITINERARY_LANGS) {
+    titleLocalized[l] = it.name;
+    summaryLocalized[l] = summaryText;
+  }
   return {
     title: it.name,
     titleZh: it.name,
-    summary: it.data.summary.topHighlights.join(", ") || it.name,
-    summaryZh: "",
+    titleLocalized,
+    summary: summaryText,
+    summaryZh: summaryText,
+    summaryLocalized,
     rawPlan: it.data.rawPlan,
     destination: it.destination,
     days: it.days || it.data.summary.totalDays || 1,

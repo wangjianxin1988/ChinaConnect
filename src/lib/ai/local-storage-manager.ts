@@ -2,6 +2,11 @@
  * Local Storage Manager for AI Conversations
  * Handles offline-first persistence with graceful quota management.
  * Used as primary store; Supabase is the backup/sync target.
+ *
+ * 2026-08: ALL keys are now namespaced per authenticated user
+ * (cc_ai_<userId>_*) so switching accounts on the same browser can never
+ * leak conversations, snapshots or saved routes between users. Legacy
+ * unscoped keys are migrated once on first login and then removed.
  */
 
 import type { Message, ParsedItinerary } from "./types";
@@ -27,6 +32,8 @@ export interface ConversationSnapshot {
   savedAt: string;
   messageCount: number;
   syncedToSupabase: boolean;
+  /** Owning user id (used to migrate legacy unscoped snapshots). */
+  userId?: string;
 }
 
 export interface SerializedMessage {
@@ -44,11 +51,24 @@ export interface SerializedMessage {
 // Storage Keys
 // ============================================
 
-const KEYS = {
+/** Base key names (scoped under cc_ai_<userId>_ at runtime). */
+const BASE_KEYS = {
+  CONVERSATIONS: "conversations",
+  SNAPSHOTS_PREFIX: "snapshots_",
+  PENDING_SYNC: "pending_sync",
+  LAST_CLEANUP: "last_cleanup",
+  SAVED_ROUTES: "saved_routes",
+  SHARE_INDEX: "share_index",
+} as const;
+
+/** Legacy unscoped keys (pre-2026-08). */
+const LEGACY_KEYS = {
   CONVERSATIONS: "cc_ai_conversations",
   SNAPSHOTS_PREFIX: "cc_ai_snapshots_",
   PENDING_SYNC: "cc_ai_pending_sync",
   LAST_CLEANUP: "cc_ai_last_cleanup",
+  SAVED_ROUTES: "cc_ai_saved_routes",
+  SHARE_INDEX: "cc_ai_share_index",
 } as const;
 
 const MAX_CONVERSATIONS = 50;
@@ -102,7 +122,9 @@ function safeRemoveItem(key: string): void {
 function handleQuotaExceeded(key: string, value: string): boolean {
   try {
     const allKeys = Object.keys(localStorage);
-    const snapshotKeys = allKeys.filter((k) => k.startsWith(KEYS.SNAPSHOTS_PREFIX)).sort();
+    const snapshotKeys = allKeys
+      .filter((k) => k.includes(BASE_KEYS.SNAPSHOTS_PREFIX))
+      .sort();
 
     const toRemove = snapshotKeys.slice(0, Math.ceil(snapshotKeys.length / 2));
     for (const k of toRemove) {
@@ -114,7 +136,7 @@ function handleQuotaExceeded(key: string, value: string): boolean {
       return true;
     } catch {
       const remaining = Object.keys(localStorage).filter((k) =>
-        k.startsWith(KEYS.SNAPSHOTS_PREFIX),
+        k.includes(BASE_KEYS.SNAPSHOTS_PREFIX),
       );
       for (const k of remaining) {
         localStorage.removeItem(k);
@@ -166,10 +188,139 @@ export function deserializeMessage(sm: SerializedMessage): Message {
 }
 
 // ============================================
-// LocalStorageManager (singleton)
+// LocalStorageManager (singleton, per-user keys)
 // ============================================
 
 class LocalStorageManager {
+  /** Currently bound user. All keys are scoped to this id. */
+  private userId: string | null = null;
+  /** Avoid re-running migration on every setUserId call. */
+  private lastMigratedUserId: string | null = null;
+
+  /** Bind storage to a user. Passing null reverts to legacy unscoped keys. */
+  setUserId(userId: string | null): void {
+    const next = userId || null;
+    if (next !== this.lastMigratedUserId) {
+      this.userId = next;
+      if (next) this.migrateLegacyData(next);
+      this.lastMigratedUserId = next;
+    } else {
+      this.userId = next;
+    }
+  }
+
+  getUserId(): string | null {
+    return this.userId;
+  }
+
+  /** Runtime storage key for a base key (scoped to the bound user). */
+  private key(base: string): string {
+    if (this.userId) return `cc_ai_${this.userId}_${base}`;
+    // Anonymous fallback keeps pre-auth behavior intact.
+    const entry = Object.entries(BASE_KEYS).find(([, v]) => v === base);
+    if (entry) {
+      const legacyKey = (LEGACY_KEYS as Record<string, string>)[entry[0]];
+      if (legacyKey) return legacyKey;
+    }
+    return `cc_ai_${base}`;
+  }
+
+  private snapshotPrefix(): string {
+    return this.key(BASE_KEYS.SNAPSHOTS_PREFIX);
+  }
+
+  /**
+   * One-time migration: move legacy unscoped data into the current user's
+   * scoped keys, attribute saved routes by their embedded userId, then
+   * remove the legacy keys so they can never leak across accounts.
+   */
+  private migrateLegacyData(userId: string): void {
+    if (!isBrowser()) return;
+
+    // 1. Saved routes — entries carry their owner userId.
+    const legacyRoutes = safeGetItem(LEGACY_KEYS.SAVED_ROUTES);
+    if (legacyRoutes) {
+      try {
+        const routes = JSON.parse(legacyRoutes) as Array<Record<string, unknown>>;
+        if (Array.isArray(routes)) {
+          const mine = routes.filter((r) => !r.userId || String(r.userId) === userId);
+          const existing = this.loadSavedRoutes();
+          const merged = [...existing];
+          for (const r of mine) {
+            const id = String((r as { id?: unknown }).id ?? "");
+            if (id && !merged.some((m) => m.id === id)) merged.push(r);
+          }
+          safeSetItem(this.key(BASE_KEYS.SAVED_ROUTES), JSON.stringify(merged.slice(0, 50)));
+        }
+      } catch {
+        // ignore malformed cache
+      }
+      safeRemoveItem(LEGACY_KEYS.SAVED_ROUTES);
+    }
+
+    // 2. Share index (token -> itinerary id).
+    const legacyShare = safeGetItem(LEGACY_KEYS.SHARE_INDEX);
+    if (legacyShare) {
+      try {
+        const idx = JSON.parse(legacyShare) as Record<string, string>;
+        const merged = { ...this.loadShareIndex(), ...idx };
+        this.saveShareIndex(merged);
+      } catch {
+        // ignore
+      }
+      safeRemoveItem(LEGACY_KEYS.SHARE_INDEX);
+    }
+
+    // 3. Snapshots — only migratable when the snapshot carries a userId.
+    try {
+      const keys = Object.keys(localStorage).filter((k) =>
+        k.startsWith(LEGACY_KEYS.SNAPSHOTS_PREFIX),
+      );
+      for (const k of keys) {
+        const convId = k.slice(LEGACY_KEYS.SNAPSHOTS_PREFIX.length);
+        try {
+          const raw = localStorage.getItem(k);
+          if (raw) {
+            const snap = JSON.parse(raw) as { userId?: string };
+            if (snap.userId && snap.userId === userId) {
+              localStorage.setItem(this.snapshotPrefix() + convId, raw);
+            }
+          }
+        } catch {
+          // ignore malformed
+        }
+        localStorage.removeItem(k);
+      }
+    } catch {
+      // ignore storage errors
+    }
+
+    // 4. Conversations index / pending sync / last cleanup have no owner
+    //    metadata — attribute to this user only when their scoped key is
+    //    still empty (keeps the most recent session working after upgrade).
+    if (!safeGetItem(this.key(BASE_KEYS.CONVERSATIONS))) {
+      const legacy = safeGetItem(LEGACY_KEYS.CONVERSATIONS);
+      if (legacy) {
+        safeSetItem(this.key(BASE_KEYS.CONVERSATIONS), legacy);
+        safeRemoveItem(LEGACY_KEYS.CONVERSATIONS);
+      }
+    }
+    if (!safeGetItem(this.key(BASE_KEYS.PENDING_SYNC))) {
+      const legacy = safeGetItem(LEGACY_KEYS.PENDING_SYNC);
+      if (legacy) {
+        safeSetItem(this.key(BASE_KEYS.PENDING_SYNC), legacy);
+        safeRemoveItem(LEGACY_KEYS.PENDING_SYNC);
+      }
+    }
+    if (!safeGetItem(this.key(BASE_KEYS.LAST_CLEANUP))) {
+      const legacy = safeGetItem(LEGACY_KEYS.LAST_CLEANUP);
+      if (legacy) {
+        safeSetItem(this.key(BASE_KEYS.LAST_CLEANUP), legacy);
+        safeRemoveItem(LEGACY_KEYS.LAST_CLEANUP);
+      }
+    }
+  }
+
   // ----------------------------------------
   // Conversations Index
   // ----------------------------------------
@@ -177,12 +328,12 @@ class LocalStorageManager {
   /** Save the conversations index (list of conversation summaries). */
   saveConversations(conversations: StoredConversation[]): boolean {
     const trimmed = conversations.slice(0, MAX_CONVERSATIONS);
-    return safeSetItem(KEYS.CONVERSATIONS, JSON.stringify(trimmed));
+    return safeSetItem(this.key(BASE_KEYS.CONVERSATIONS), JSON.stringify(trimmed));
   }
 
   /** Load the conversations index. */
   loadConversations(): StoredConversation[] {
-    const data = safeGetItem(KEYS.CONVERSATIONS);
+    const data = safeGetItem(this.key(BASE_KEYS.CONVERSATIONS));
     if (!data) return [];
     try {
       return JSON.parse(data) as StoredConversation[];
@@ -215,7 +366,7 @@ class LocalStorageManager {
   // ----------------------------------------
 
   private snapshotKey(conversationId: string): string {
-    return KEYS.SNAPSHOTS_PREFIX + conversationId;
+    return this.snapshotPrefix() + conversationId;
   }
 
   /**
@@ -235,6 +386,7 @@ class LocalStorageManager {
       savedAt: new Date().toISOString(),
       messageCount: messages.length,
       syncedToSupabase,
+      userId: this.userId || undefined,
     };
 
     return safeSetItem(this.snapshotKey(conversationId), JSON.stringify(snapshot));
@@ -259,11 +411,12 @@ class LocalStorageManager {
   /** Get all snapshot conversation IDs currently in storage. */
   getAllSnapshotConversationIds(): string[] {
     if (!isBrowser()) return [];
+    const prefix = this.snapshotPrefix();
     const keys: string[] = [];
     for (let i = 0; i < localStorage.length; i++) {
       const key = localStorage.key(i);
-      if (key && key.startsWith(KEYS.SNAPSHOTS_PREFIX)) {
-        keys.push(key.slice(KEYS.SNAPSHOTS_PREFIX.length));
+      if (key && key.startsWith(prefix)) {
+        keys.push(key.slice(prefix.length));
       }
     }
     return keys;
@@ -328,19 +481,19 @@ class LocalStorageManager {
     const pending = this.getPendingSync();
     if (!pending.includes(conversationId)) {
       pending.push(conversationId);
-      safeSetItem(KEYS.PENDING_SYNC, JSON.stringify(pending));
+      safeSetItem(this.key(BASE_KEYS.PENDING_SYNC), JSON.stringify(pending));
     }
   }
 
   /** Remove from pending sync queue (after successful sync). */
   removeFromPendingSync(conversationId: string): void {
     const pending = this.getPendingSync().filter((id) => id !== conversationId);
-    safeSetItem(KEYS.PENDING_SYNC, JSON.stringify(pending));
+    safeSetItem(this.key(BASE_KEYS.PENDING_SYNC), JSON.stringify(pending));
   }
 
   /** Get all conversation IDs pending sync. */
   getPendingSync(): string[] {
-    const data = safeGetItem(KEYS.PENDING_SYNC);
+    const data = safeGetItem(this.key(BASE_KEYS.PENDING_SYNC));
     if (!data) return [];
     try {
       return JSON.parse(data) as string[];
@@ -350,12 +503,67 @@ class LocalStorageManager {
   }
 
   // ----------------------------------------
+  // Saved Routes (offline cache)
+  // ----------------------------------------
+
+  /** Load the current user's locally cached saved routes. */
+  loadSavedRoutes(): Array<Record<string, unknown>> {
+    const data = safeGetItem(this.key(BASE_KEYS.SAVED_ROUTES));
+    if (!data) return [];
+    try {
+      const arr = JSON.parse(data);
+      return Array.isArray(arr) ? (arr as Array<Record<string, unknown>>) : [];
+    } catch {
+      return [];
+    }
+  }
+
+  /** Insert or update a route in the local cache (keeps max 50). */
+  upsertSavedRoute(route: Record<string, unknown>): void {
+    const routes = this.loadSavedRoutes();
+    const idx = routes.findIndex((r) => r.id === route.id);
+    if (idx >= 0) {
+      routes[idx] = { ...routes[idx], ...route };
+    } else {
+      routes.unshift(route);
+    }
+    safeSetItem(this.key(BASE_KEYS.SAVED_ROUTES), JSON.stringify(routes.slice(0, 50)));
+  }
+
+  /** Remove a route from the local cache. */
+  removeSavedRoute(id: string): void {
+    const routes = this.loadSavedRoutes().filter((r) => r.id !== id);
+    safeSetItem(this.key(BASE_KEYS.SAVED_ROUTES), JSON.stringify(routes));
+  }
+
+  // ----------------------------------------
+  // Share Index (token -> route id)
+  // ----------------------------------------
+
+  /** Load the current user's local share token index. */
+  loadShareIndex(): Record<string, string> {
+    const data = safeGetItem(this.key(BASE_KEYS.SHARE_INDEX));
+    if (!data) return {};
+    try {
+      const idx = JSON.parse(data);
+      return idx && typeof idx === "object" ? (idx as Record<string, string>) : {};
+    } catch {
+      return {};
+    }
+  }
+
+  /** Persist the current user's share token index. */
+  saveShareIndex(index: Record<string, string>): void {
+    safeSetItem(this.key(BASE_KEYS.SHARE_INDEX), JSON.stringify(index));
+  }
+
+  // ----------------------------------------
   // Maintenance
   // ----------------------------------------
 
   /** Run periodic cleanup. Called once per session at most. */
   runCleanupIfNeeded(): void {
-    const lastCleanup = safeGetItem(KEYS.LAST_CLEANUP);
+    const lastCleanup = safeGetItem(this.key(BASE_KEYS.LAST_CLEANUP));
     const now = Date.now();
 
     if (lastCleanup && now - Number(lastCleanup) < CLEANUP_INTERVAL_MS) {
@@ -367,7 +575,7 @@ class LocalStorageManager {
       console.log("[LocalStorageManager] Cleaned up " + removed + " old snapshots");
     }
 
-    safeSetItem(KEYS.LAST_CLEANUP, String(now));
+    safeSetItem(this.key(BASE_KEYS.LAST_CLEANUP), String(now));
   }
 
   /** Get approximate storage usage in chars for AI data. */
@@ -390,8 +598,18 @@ class LocalStorageManager {
     return { used: total, breakdown };
   }
 
-  /** Clear all AI-related localStorage data. */
+  /** Clear AI data for the currently bound user only. */
   clearAll(): void {
+    if (!isBrowser()) return;
+    const prefix = this.userId ? `cc_ai_${this.userId}_` : "cc_ai_";
+    const keysToRemove = Object.keys(localStorage).filter((k) => k.startsWith(prefix));
+    for (const key of keysToRemove) {
+      localStorage.removeItem(key);
+    }
+  }
+
+  /** Clear ALL AI-related localStorage data (sign-out / reset). */
+  clearAllUsers(): void {
     if (!isBrowser()) return;
     const keysToRemove = Object.keys(localStorage).filter((k) => k.startsWith("cc_ai_"));
     for (const key of keysToRemove) {
@@ -406,9 +624,12 @@ class LocalStorageManager {
 
 let instance: LocalStorageManager | null = null;
 
-export function getLocalStorageManager(): LocalStorageManager {
+export function getLocalStorageManager(userId?: string | null): LocalStorageManager {
   if (!instance) {
     instance = new LocalStorageManager();
+  }
+  if (userId !== undefined) {
+    instance.setUserId(userId);
   }
   return instance;
 }

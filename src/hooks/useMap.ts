@@ -2,7 +2,9 @@ import { wgs84ToGcj02 } from "@/lib/coordinates";
 import type { MapProvider, MapViewState } from "@/lib/map-types";
 import { useCallback, useEffect, useState } from "react";
 
-const IP_API_URL = "https://ipapi.co/json/";
+// Cloudflare trace endpoint is CSP-allowlisted and returns the requester
+// country code (loc=XX) without a third-party key.
+const CF_TRACE_URL = "https://www.cloudflare.com/cdn-cgi/trace";
 const LOCATION_STORAGE_KEY = "chinaconnect-map-provider";
 
 interface UseMapOptions {
@@ -63,10 +65,15 @@ export function useMap(options: UseMapOptions = {}): UseMapReturn {
       try {
         var fetchSignal =
           typeof AbortSignal.timeout === "function" ? AbortSignal.timeout(5000) : undefined;
-        const response = await fetch(IP_API_URL, fetchSignal ? { signal: fetchSignal } : {});
+        const response = await fetch(CF_TRACE_URL, fetchSignal ? { signal: fetchSignal } : {});
         if (!response.ok) throw new Error("Failed to fetch IP info");
-        const data = await response.json();
-        const countryCode = data.country_code || data.country;
+        const text = await response.text();
+        const data: Record<string, string> = {};
+        for (const line of text.split("\n")) {
+          const eq = line.indexOf("=");
+          if (eq > 0) data[line.slice(0, eq).trim()] = line.slice(eq + 1).trim();
+        }
+        const countryCode = data.loc || "";
 
         setUserCountry(countryCode);
 

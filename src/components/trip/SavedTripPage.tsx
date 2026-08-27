@@ -13,6 +13,7 @@ import { ItineraryDisplay } from "@/components/ai/ItineraryDisplay";
 import { downloadItineraryFile, type ExportLang } from "@/lib/ai/export-itinerary";
 import { getCurrentUser } from "@/lib/auth/supabase-auth";
 import { getCurrentTier } from "@/lib/subscription";
+import { fetchUsageFromServer } from "@/lib/usage-tracker";
 
 const PAGE_LABELS: Record<
   string,
@@ -37,6 +38,7 @@ const PAGE_LABELS: Record<
     deleteConfirm: string;
     deleteFailed: string;
     shareFailed: string;
+    exportFailed: string;
     pdfRestricted: string;
   }
 > = {
@@ -47,7 +49,7 @@ const PAGE_LABELS: Record<
     copy: "Copy link", copied: "Copied!", close: "Close", downloadTitle: "Download",
     renameTitle: "Save itinerary", renamePlaceholder: "Itinerary name", cancel: "Cancel", confirm: "Save",
     deleteConfirm: "Delete this itinerary?", deleteFailed: "Delete failed, please try again.",
-    shareFailed: "Share failed, please try again.", pdfRestricted: "PDF export requires the Traveler plan or higher.",
+    shareFailed: "Share failed, please try again.", exportFailed: "Export failed, please try again.", pdfRestricted: "PDF export requires the Traveler plan or higher.",
   },
   "zh-CN": {
     loading: "正在加载行程…", notFound: "行程未找到", notFoundDesc: "此行程为私有内容或已被删除。",
@@ -56,7 +58,7 @@ const PAGE_LABELS: Record<
     copy: "复制链接", copied: "已复制！", close: "关闭", downloadTitle: "下载",
     renameTitle: "保存行程", renamePlaceholder: "行程名称", cancel: "取消", confirm: "保存",
     deleteConfirm: "确定删除此行程？", deleteFailed: "删除失败，请重试。",
-    shareFailed: "分享失败，请重试。", pdfRestricted: "PDF 导出需要 Traveler 及以上套餐。",
+    shareFailed: "分享失败，请重试。", exportFailed: "导出失败，请重试。", pdfRestricted: "PDF 导出需要 Traveler 及以上套餐。",
   },
   "zh-TW": {
     loading: "正在載入行程…", notFound: "找不到行程", notFoundDesc: "此行程為私有內容或已被刪除。",
@@ -65,7 +67,7 @@ const PAGE_LABELS: Record<
     copy: "複製連結", copied: "已複製！", close: "關閉", downloadTitle: "下載",
     renameTitle: "儲存行程", renamePlaceholder: "行程名稱", cancel: "取消", confirm: "儲存",
     deleteConfirm: "確定刪除此行程？", deleteFailed: "刪除失敗，請重試。",
-    shareFailed: "分享失敗，請重試。", pdfRestricted: "PDF 匯出需要 Traveler 以上方案。",
+    shareFailed: "分享失敗，請重試。", exportFailed: "匯出失敗，請重試。", pdfRestricted: "PDF 匯出需要 Traveler 以上方案。",
   },
   ja: {
     loading: "行程を読み込み中…", notFound: "行程が見つかりません", notFoundDesc: "この行程は非公開か削除されています。",
@@ -74,7 +76,7 @@ const PAGE_LABELS: Record<
     copy: "リンクをコピー", copied: "コピーしました！", close: "閉じる", downloadTitle: "ダウンロード",
     renameTitle: "行程を保存", renamePlaceholder: "行程名", cancel: "キャンセル", confirm: "保存",
     deleteConfirm: "この行程を削除しますか？", deleteFailed: "削除に失敗しました。",
-    shareFailed: "共有に失敗しました。", pdfRestricted: "PDF 出力には Traveler プラン以上が必要です。",
+    shareFailed: "共有に失敗しました。", exportFailed: "出力に失敗しました。もう一度お試しください。", pdfRestricted: "PDF 出力には Traveler プラン以上が必要です。",
   },
   ko: {
     loading: "일정을 불러오는 중…", notFound: "일정을 찾을 수 없습니다", notFoundDesc: "이 일정은 비공개이거나 삭제되었습니다.",
@@ -83,7 +85,7 @@ const PAGE_LABELS: Record<
     copy: "링크 복사", copied: "복사됨!", close: "닫기", downloadTitle: "다운로드",
     renameTitle: "일정 저장", renamePlaceholder: "일정 이름", cancel: "취소", confirm: "저장",
     deleteConfirm: "이 일정을 삭제하시겠습니까?", deleteFailed: "삭제에 실패했습니다.",
-    shareFailed: "공유에 실패했습니다.", pdfRestricted: "PDF 내보내기는 Traveler 이상 플랜이 필요합니다.",
+    shareFailed: "공유에 실패했습니다.", exportFailed: "내보내기에 실패했습니다. 다시 시도해 주세요.", pdfRestricted: "PDF 내보내기는 Traveler 이상 플랜이 필요합니다.",
   },
 };
 
@@ -169,6 +171,9 @@ export default function SavedTripPage() {
   useEffect(() => {
     let cancelled = false;
     (async () => {
+      // Sync the authoritative subscription tier from the server so the
+      // PDF export gate uses the real plan instead of a stale local hint.
+      fetchUsageFromServer().catch(() => {});
       const id = resolveId();
       if (!id) {
         setState("notfound");
@@ -190,7 +195,7 @@ export default function SavedTripPage() {
         setState("notfound");
         return;
       }
-      const it = routeRowToSavedItinerary(data as never);
+      const it = routeRowToSavedItinerary(data as never, lang);
       setItinerary(it);
       setState("ready");
     })();
@@ -203,9 +208,24 @@ export default function SavedTripPage() {
     if (!itinerary || !renameValue.trim()) return;
     setRenaming(true);
     try {
+      const newName = renameValue.trim();
+      const titleLocalized: Record<string, string> = {};
+      for (const l of ["en", "ja", "ko", "zh-CN", "zh-TW", "th", "vi", "ru", "fr", "de", "ar", "fa"]) {
+        titleLocalized[l] = newName;
+      }
+      const { data: existingRow } = await supabase
+        .from("ai_routes")
+        .select("route_data")
+        .eq("id", itinerary.id)
+        .maybeSingle();
+      const rd = (existingRow?.route_data as Record<string, unknown>) ?? {};
       await supabase
         .from("ai_routes")
-        .update({ title: renameValue.trim(), title_zh: renameValue.trim() })
+        .update({
+          title: newName,
+          title_zh: newName,
+          route_data: { ...rd, title: newName, title_zh: newName, title_i18n: titleLocalized },
+        })
         .eq("id", itinerary.id);
       setItinerary({ ...itinerary, name: renameValue.trim() });
       setShowRename(false);
@@ -229,7 +249,8 @@ export default function SavedTripPage() {
           return;
         }
       }
-      await downloadItineraryFile(itinerary, lang as ExportLang, format);
+      const file = await downloadItineraryFile(itinerary, lang as ExportLang, format);
+      if (!file) alert(L.exportFailed);
     },
     [itinerary, lang, L],
   );

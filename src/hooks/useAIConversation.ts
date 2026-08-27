@@ -34,6 +34,7 @@ import {
 import { supabase } from "@/supabase/config";
 import type { AiChatLang } from "@/components/ai/chat-labels";
 import { saveRoute } from "@/lib/ai/route-saver";
+import { getLocalStorageManager } from "@/lib/ai/local-storage-manager";
 import { itineraryToText } from "@/lib/ai/export-itinerary";
 import {
   buildFallbackItinerary,
@@ -180,6 +181,8 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
       const { data: userData } = await supabase.auth.getUser();
       if (cancelled) return;
       setIsAuthenticated(!!userData?.user);
+      // Bind localStorage to this user so per-user keys are used.
+      getLocalStorageManager(userData?.user?.id ?? null);
 
       if (userData?.user) {
         await refreshUsage();
@@ -195,6 +198,8 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
 
     const { data: sub } = supabase.auth.onAuthStateChange((_event, session) => {
       setIsAuthenticated(!!session?.user);
+      // Rebind localStorage when the signed-in user changes.
+      getLocalStorageManager(session?.user?.id ?? null);
       if (typeof window !== "undefined") {
         window.dispatchEvent(
           new CustomEvent("cc-auth-changed", { detail: { authenticated: !!session?.user } }),
@@ -390,8 +395,8 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
               { id: assistantId, role: "assistant", content: finalText, timestamp: new Date() },
             ];
             const built =
-              buildSavedItineraryFromConversation(fullConversation) ||
-              buildFallbackItinerary(fullConversation);
+              buildSavedItineraryFromConversation(fullConversation, language) ||
+              buildFallbackItinerary(fullConversation, language);
             if (built) setCurrentItinerary(built);
           },
           onError: (err) => {
@@ -479,11 +484,11 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
   const loadSavedItineraries = useCallback(async () => {
     const merged: SavedItinerary[] = [];
 
-    // localStorage routes (offline-first cache written by route-saver)
+    // localStorage routes (offline-first cache written by route-saver).
+    // Read through the per-user manager so accounts stay isolated.
     try {
-      const raw = localStorage.getItem("cc_ai_saved_routes");
-      if (raw) {
-        const local = JSON.parse(raw) as Array<Record<string, unknown>>;
+      const local = getLocalStorageManager().loadSavedRoutes();
+      if (local.length) {
         for (const r of local) {
           const route = r as unknown as {
             id?: string;
@@ -499,7 +504,7 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
             tips?: string[];
           };
           if (!route.destination && !route.dailyPlans) continue;
-          const it = extractedRouteToSavedItinerary(route as never);
+          const it = extractedRouteToSavedItinerary(route as never, language);
           if (route.id) it.id = route.id;
           if (route.createdAt) it.createdAt = route.createdAt;
           if (!merged.some((m) => m.id === it.id)) merged.push(it);
@@ -511,6 +516,8 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
 
     // Supabase ai_routes for the current user
     const { data: userData } = await supabase.auth.getUser();
+    // Rebind storage to the resolved user (local routes above already scoped).
+    getLocalStorageManager(userData?.user?.id ?? null);
     if (userData?.user) {
       const { data, error } = await supabase
         .from("ai_routes")
@@ -522,14 +529,14 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
         .limit(50);
       if (!error && data) {
         for (const row of data) {
-          const it = routeRowToSavedItinerary(row as never);
+          const it = routeRowToSavedItinerary(row as never, language);
           if (!merged.some((m) => m.id === it.id)) merged.push(it);
         }
       }
     }
 
     setSavedItineraries(merged);
-  }, []);
+  }, [language]);
 
   const saveCurrentItinerary = useCallback(
     async (name: string): Promise<SavedItinerary | null> => {
@@ -540,9 +547,25 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
       if (userData?.user && !currentItinerary.id.startsWith("local_")) {
         // Already persisted -> rename in ai_routes
         try {
+          // Keep every localized title in sync with the user's chosen name,
+          // merging into the existing route_data so days/highlights survive.
+          const titleLocalized: Record<string, string> = {};
+          for (const l of ["en", "ja", "ko", "zh-CN", "zh-TW", "th", "vi", "ru", "fr", "de", "ar", "fa"]) {
+            titleLocalized[l] = name;
+          }
+          const { data: existingRow } = await supabase
+            .from("ai_routes")
+            .select("route_data")
+            .eq("id", currentItinerary.id)
+            .maybeSingle();
+          const rd = (existingRow?.route_data as Record<string, unknown>) ?? {};
           await supabase
             .from("ai_routes")
-            .update({ title: name, title_zh: name })
+            .update({
+              title: name,
+              title_zh: name,
+              route_data: { ...rd, title: name, title_zh: name, title_i18n: titleLocalized },
+            })
             .eq("id", currentItinerary.id);
         } catch (err) {
           console.warn("[useAIConversation] rename route failed:", err);
@@ -574,16 +597,13 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
       }
       // Fall back to the local offline cache (local_* ids and pre-sync routes).
       try {
-        const raw = localStorage.getItem("cc_ai_saved_routes");
-        if (raw) {
-          const routes = JSON.parse(raw) as Array<Record<string, unknown>>;
-          const route = routes.find((r) => r.id === id);
-          if (route) {
-            const it = extractedRouteToSavedItinerary(route as never);
-            if (typeof route.createdAt === "string") it.createdAt = route.createdAt;
-            setCurrentItinerary(it);
-            return;
-          }
+        const routes = getLocalStorageManager().loadSavedRoutes();
+        const route = routes.find((r) => r.id === id);
+        if (route) {
+          const it = extractedRouteToSavedItinerary(route as never, language);
+          if (typeof route.createdAt === "string") it.createdAt = route.createdAt;
+          setCurrentItinerary(it);
+          return;
         }
       } catch {
         // ignore malformed cache
@@ -599,11 +619,11 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
           .eq("id", id)
           .single();
         if (data) {
-          setCurrentItinerary(routeRowToSavedItinerary(data as never));
+          setCurrentItinerary(routeRowToSavedItinerary(data as never, language));
         }
       }
     },
-    [savedItineraries],
+    [savedItineraries, language],
   );
 
   const deleteItinerary = useCallback(
@@ -613,14 +633,7 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
         await supabase.from("ai_routes").delete().eq("id", id).eq("user_id", userData.user.id);
       }
       try {
-        const raw = localStorage.getItem("cc_ai_saved_routes");
-        if (raw) {
-          const routes = JSON.parse(raw) as Array<{ id: string }>;
-          localStorage.setItem(
-            "cc_ai_saved_routes",
-            JSON.stringify(routes.filter((r) => r.id !== id)),
-          );
-        }
+        getLocalStorageManager().removeSavedRoute(id);
       } catch {
         // ignore
       }
@@ -659,11 +672,10 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
       }
       // Keep a local token->id index so the same browser can resolve it too.
       try {
-        const key = "cc_ai_share_index";
-        const raw = localStorage.getItem(key);
-        const index = raw ? (JSON.parse(raw) as Record<string, string>) : {};
+        const lsm = getLocalStorageManager();
+        const index = lsm.loadShareIndex();
         index[token] = id;
-        localStorage.setItem(key, JSON.stringify(index));
+        lsm.saveShareIndex(index);
       } catch {
         // ignore
       }

@@ -5,7 +5,9 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
-const IP_API_URL = "https://ipapi.co/json/";
+// Cloudflare trace endpoint is CSP-allowlisted (https://*.cloudflare.com) and
+// returns the requester country code (loc=XX) without any third-party API key.
+const CF_TRACE_URL = "https://www.cloudflare.com/cdn-cgi/trace";
 const GEO_CACHE_KEY = "chinaconnect-geo-data";
 const GEO_CACHE_TTL = 30 * 60 * 1000; // 30 minutes
 
@@ -80,23 +82,29 @@ export function useGeoLocation(): UseGeoLocationReturn {
         typeof AbortSignal.timeout === "function"
           ? AbortSignal.timeout(5000)
           : abortRef.current.signal;
-      const response = await fetch(IP_API_URL, {
+      const response = await fetch(CF_TRACE_URL, {
         signal: fetchSignal,
       });
 
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
-      const data = await response.json();
+      // Parse the plain-text "k=v" lines Cloudflare returns.
+      const text = await response.text();
+      const data: Record<string, string> = {};
+      for (const line of text.split("\n")) {
+        const eq = line.indexOf("=");
+        if (eq > 0) data[line.slice(0, eq).trim()] = line.slice(eq + 1).trim();
+      }
 
       const detected: GeoData = {
         ip: data.ip || "unknown",
-        country: data.country_name || "Unknown",
-        countryCode: data.country_code || data.country || "US",
-        region: data.region || "",
-        city: data.city || "",
-        lat: data.latitude ?? 39.9042,
-        lng: data.longitude ?? 116.4074,
-        timezone: data.timezone || "Asia/Shanghai",
+        country: data.loc === "CN" ? "China" : "Unknown",
+        countryCode: data.loc || "US",
+        region: data.colo || "",
+        city: "",
+        lat: 39.9042,
+        lng: 116.4074,
+        timezone: "Asia/Shanghai",
         detectedAt: Date.now(),
       };
 

@@ -293,7 +293,19 @@ export function buildLanguageHint(detectedLang: string): string {
     vi: "IMPORTANT: You MUST reply entirely in Vietnamese (Tiếng Việt). Every word of your answer must be Vietnamese.",
     fa: "IMPORTANT: You MUST reply entirely in Persian/Farsi (فارسی). Every word of your answer must be Persian.",
   };
-  return langMap[lang] ? `\n\nLanguage: ${langMap[lang]}` : "";
+  const languageInstruction = langMap[lang]
+    ? `\n\nLanguage: ${langMap[lang]}`
+    : "";
+  // Links must be useful to a traveller: localized map links (Amap for
+  // China POIs / Google Maps with the right language), descriptive labels in
+  // the reply language, never bare or invented URLs.
+  const linkInstruction =
+    "\n\nLinks & maps (MANDATORY):\n" +
+    "- Give EVERY place a clickable, precise link. For China attractions/restaurants/hotels prefer an Amap deep link: https://uri.amap.com/marker?position=<lng>,<lat>&name=<name> (replace lng/lat/name).\n" +
+    "- For general maps/directions use Google Maps: https://www.google.com/maps/search/?api=1&query=<place+name> (URL-encoded, no invented coordinates).\n" +
+    "- Every URL must be a Markdown link with a descriptive label written in the reply language (e.g. \"[上海博物馆 の地図](https://www.google.com/maps/search/?api=1&query=%E4%B8%8A%E6%B5%B7%E5%8D%9A%E7%89%A9%E9%A6%86)\").\n" +
+    "- Never output a bare URL, never invent or guess a URL, and always include booking/official links (12306, Trip.com, official sites) when available.";
+  return languageInstruction + linkInstruction;
 }
 
 // ============================================

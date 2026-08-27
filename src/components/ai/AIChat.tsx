@@ -12,6 +12,7 @@ import type {
   ConversationSummary,
 } from "@/lib/ai/types";
 import { CHAT_LABELS, type AiChatLang } from "./chat-labels";
+import { localizeGenericName } from "@/lib/ai/itinerary-i18n";
 import { downloadItineraryFile, type ExportLang } from "@/lib/ai/export-itinerary";
 import { getCurrentUser } from "@/lib/auth/supabase-auth";
 import { getCurrentTier, TIER_LIMITS, type SubscriptionTier } from "@/lib/subscription";
@@ -790,7 +791,7 @@ export const AIChat: React.FC<AIChatProps> = ({
           return;
         }
         const file = await downloadItineraryFile(currentItinerary, language as ExportLang, "pdf");
-        if (!file) alert("PDF export failed. Please try again.");
+        if (!file) alert(LABELS.pdfExportFailed);
         return;
       }
       const content = exportItinerary(format);
@@ -808,9 +809,9 @@ export const AIChat: React.FC<AIChatProps> = ({
   );
 
   const openSaveDialog = useCallback(() => {
-    setSaveName(currentItinerary?.name || "Travel Plan");
+    setSaveName(currentItinerary?.name || localizeGenericName(language));
     setShowSaveDialog(true);
-  }, [currentItinerary]);
+  }, [currentItinerary, language]);
 
   const handleSaveRoute = useCallback(async () => {
     if (!currentItinerary) return;
@@ -1410,7 +1411,7 @@ export const AIChat: React.FC<AIChatProps> = ({
                   disabled={routeSaving || !saveName.trim()}
                   className="flex-1 px-4 py-2.5 bg-green-600 text-white rounded-xl hover:bg-green-700 transition-colors text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {routeSaving ? "Saving..." : LABELS.saveItineraryNow}
+                  {routeSaving ? LABELS.saving : LABELS.saveItineraryNow}
                 </button>
               </div>
             </div>

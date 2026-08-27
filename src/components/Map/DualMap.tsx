@@ -2,7 +2,7 @@ import { useGeoLocation } from "@/hooks/useGeoLocation";
 import { ct } from "@/i18n/components-strings";
 import { useMap } from "@/hooks/useMap";
 import type { MapLayer, MapMarker } from "@/lib/map-types";
-import React, { useState, useCallback, useMemo, useEffect } from "react";
+import React, { useState, useCallback, useMemo, useEffect, useRef } from "react";
 import { LeafletMap } from "./LeafletMap";
 
 export interface DualMapLocation {
@@ -49,7 +49,7 @@ export function DualMap({
   className = "",
   lang = "en",
 }: DualMapProps) {
-  const { provider, toggleProvider, setViewState, viewState, isDetectingLocation } = useMap({
+  const { provider, setProvider, toggleProvider, setViewState, viewState, isDetectingLocation } = useMap({
     initialProvider: undefined, // Let hook auto-detect
     initialCenter: { lat: initialLocation.lat, lng: initialLocation.lng },
     initialZoom: 13,
@@ -70,6 +70,15 @@ export function DualMap({
       setGeoDetectedProvider(isChina ? "amap" : "google");
     }
   }, [isDetectingGeo, isChina]);
+
+  // Actually switch tiles to the geo-recommended provider once detection
+  // finishes (unless the user already picked a provider manually this session).
+  const userTouchedProviderRef = useRef(false);
+  useEffect(() => {
+    if (!isDetectingGeo && geoDetectedProvider && !userTouchedProviderRef.current) {
+      setProvider(geoDetectedProvider);
+    }
+  }, [isDetectingGeo, geoDetectedProvider, setProvider]);
 
   // Ensure geo detection doesn't block the map indefinitely
   useEffect(() => {
@@ -171,7 +180,10 @@ export function DualMap({
         <div className="absolute top-3 right-3 flex flex-col gap-2 z-[500]">
           {/* Provider Switch */}
           <button
-            onClick={toggleProvider}
+            onClick={() => {
+              userTouchedProviderRef.current = true;
+              toggleProvider();
+            }}
             className={PROVIDER_BUTTON_STYLES}
             title={ct(lang, "map_switch_title", "Switch map provider")}
           >

@@ -12,6 +12,12 @@ import { supabase } from "@/services/supabase";
 import { parseDailyPlansFromContent } from "./parse-days";
 
 import { getLocalStorageManager, type ConversationSnapshot } from "./local-storage-manager";
+import {
+  ITINERARY_LANGS,
+  localizeSummary,
+  localizeTitle,
+  normalizeItineraryLang,
+} from "./itinerary-i18n";
 import type {
   ConversationSummary,
   DailyPlan,
@@ -29,8 +35,12 @@ import type {
 export interface ExtractedRoute {
   title: string;
   titleZh?: string;
+  /** Per-language localized titles (keyed by ItineraryLang). */
+  titleLocalized?: Record<string, string>;
   summary: string;
   summaryZh?: string;
+  /** Per-language localized summaries (keyed by ItineraryLang). */
+  summaryLocalized?: Record<string, string>;
   destination: string;
   days: number;
   dailyPlans: ExtractedDayPlan[];
@@ -98,6 +108,7 @@ export function extractRouteFromConversation(
   messages: Message[],
   itinerary?: ParsedItinerary | null,
   userParams?: { destination?: string; days?: number; budgetLevel?: string },
+  language: string = "en",
 ): ExtractedRoute | null {
   // Try to get data from itinerary first, fall back to message parsing
   const destination =
@@ -136,6 +147,18 @@ export function extractRouteFromConversation(
   const summary = generateSummary(destination, days, highlights);
   const summaryZh = generateSummaryZh(destination, days, highlights);
 
+  // Per-language title/summary so saved routes always display in the
+  // user's own language (schema keeps title/title_zh; title_i18n holds the rest).
+  const langKey = normalizeItineraryLang(language);
+  const titleLocalized: Record<string, string> = {};
+  const summaryLocalized: Record<string, string> = {};
+  for (const l of ITINERARY_LANGS) {
+    titleLocalized[l] = localizeTitle(l, destination, days);
+    summaryLocalized[l] = localizeSummary(l, destination, days, highlights);
+  }
+  titleLocalized[langKey] = localizeTitle(langKey, destination, days);
+  summaryLocalized[langKey] = localizeSummary(langKey, destination, days, highlights);
+
   // Extract transport summary
   const transportSummary = dailyPlans.map((dp) => dp.transport).filter((t) => t && t !== "walk");
 
@@ -145,8 +168,10 @@ export function extractRouteFromConversation(
   return {
     title,
     titleZh,
+    titleLocalized,
     summary,
     summaryZh,
+    summaryLocalized,
     destination,
     days: days || 1,
     dailyPlans,
@@ -410,7 +435,7 @@ export async function saveRoute(
   conversationId: string,
   routeData: ExtractedRoute,
 ): Promise<{ success: boolean; routeId?: string; error?: string }> {
-  const lsm = getLocalStorageManager();
+  const lsm = getLocalStorageManager(userId);
 
   try {
     // Try Supabase first
@@ -428,7 +453,9 @@ export async function saveRoute(
           destination: routeData.destination,
           title: routeData.title,
           title_zh: routeData.titleZh || null,
+          title_i18n: routeData.titleLocalized || null,
           summary: routeData.summary,
+          summary_i18n: routeData.summaryLocalized || null,
           days: routeData.dailyPlans,
           total_estimated_cost: routeData.totalEstimatedCost,
           currency: routeData.currency,
@@ -466,6 +493,7 @@ export async function saveRoute(
 
 /**
  * Save route data to localStorage (offline cache).
+ * Stored under a per-user key so accounts can never cross-contaminate.
  */
 function saveRouteLocally(
   userId: string,
@@ -474,11 +502,8 @@ function saveRouteLocally(
   supabaseId?: string,
 ): void {
   try {
-    const key = "cc_ai_saved_routes";
-    const existing = localStorage.getItem(key);
-    const routes = existing ? JSON.parse(existing) : [];
-
-    routes.unshift({
+    const lsm = getLocalStorageManager(userId);
+    lsm.upsertSavedRoute({
       id: supabaseId || "local_" + Date.now(),
       userId,
       conversationId,
@@ -486,10 +511,6 @@ function saveRouteLocally(
       createdAt: new Date().toISOString(),
       synced: !!supabaseId,
     });
-
-    // Keep max 50 routes locally
-    const trimmed = routes.slice(0, 50);
-    localStorage.setItem(key, JSON.stringify(trimmed));
   } catch (e) {
     console.error("[RouteSaver] Failed to save route locally:", e);
   }
@@ -512,7 +533,7 @@ export async function autoSaveSnapshot(
 ): Promise<void> {
   if (messages.length === 0) return;
 
-  const lsm = getLocalStorageManager();
+  const lsm = getLocalStorageManager(userId);
 
   // 1. Always save to localStorage first (instant, no network)
   const saved = lsm.saveSnapshot(conversationId, messages, itinerary, false);
@@ -546,7 +567,7 @@ async function syncSnapshotToSupabase(
   conversationId: string,
   messages: Message[],
 ): Promise<void> {
-  const lsm = getLocalStorageManager();
+  const lsm = getLocalStorageManager(userId);
 
   try {
     // Serialize messages for storage
@@ -587,7 +608,7 @@ async function syncSnapshotToSupabase(
  * Call this on page load or when coming back online.
  */
 export async function syncPendingSnapshots(userId: string): Promise<number> {
-  const lsm = getLocalStorageManager();
+  const lsm = getLocalStorageManager(userId);
   const pending = lsm.getPendingSync();
   let synced = 0;
 
@@ -640,7 +661,15 @@ export async function syncPendingSnapshots(userId: string): Promise<number> {
 export async function restoreSnapshot(
   conversationId: string,
 ): Promise<ConversationSnapshot | null> {
-  const lsm = getLocalStorageManager();
+  // Bind storage to the current user so per-user keys are used.
+  let userId: string | null = null;
+  try {
+    const { data: sessionData } = await supabase.auth.getSession();
+    userId = sessionData.session?.user?.id ?? null;
+  } catch {
+    // anonymous
+  }
+  const lsm = getLocalStorageManager(userId);
 
   // Try localStorage first
   const local = lsm.loadSnapshot(conversationId);
@@ -687,13 +716,13 @@ export async function restoreSnapshot(
 /**
  * Find and return the most recent unsaved conversation (for restore prompt on page load).
  */
-export function findRestorableConversation(): {
+export function findRestorableConversation(userId?: string | null): {
   conversationId: string;
   messageCount: number;
   savedAt: string;
   preview: string;
 } | null {
-  const lsm = getLocalStorageManager();
+  const lsm = getLocalStorageManager(userId);
   const snap = lsm.findUnsavedSnapshot();
 
   if (!snap || snap.messageCount === 0) return null;
@@ -715,8 +744,11 @@ export function findRestorableConversation(): {
 /**
  * Dismiss a restorable conversation (delete its snapshot).
  */
-export function dismissRestorableConversation(conversationId: string): void {
-  const lsm = getLocalStorageManager();
+export function dismissRestorableConversation(
+  conversationId: string,
+  userId?: string | null,
+): void {
+  const lsm = getLocalStorageManager(userId);
   lsm.deleteSnapshot(conversationId);
 }
 
@@ -737,7 +769,7 @@ export async function saveConversationEnd(
   itinerary?: ParsedItinerary | null,
   userParams?: { destination?: string; days?: number; budgetLevel?: string },
 ): Promise<{ routeId?: string; snapshotSaved: boolean }> {
-  const lsm = getLocalStorageManager();
+  const lsm = getLocalStorageManager(userId);
   let routeId: string | undefined;
 
   // 1. Save final snapshot
