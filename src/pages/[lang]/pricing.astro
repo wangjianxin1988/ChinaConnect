@@ -645,8 +645,19 @@ const lp = "/" + lang;
   async function fetchServerMembership() {
     try {
       const url = window.__SUPABASE_URL__;
-      const token = window.__SUPABASE_TOKEN__;
+      let token = window.__SUPABASE_TOKEN__ || "";
       const anonKey = window.__SUPABASE_ANON_KEY__;
+      // The BaseLayout auth listener may not have run yet (module scripts run
+      // before DOMContentLoaded) — fall back to the stored Supabase session.
+      if (!token) {
+        try {
+          const raw = localStorage.getItem("sb-xyvuqbpwrhkukjgzveyc-auth-token");
+          if (raw) {
+            const sess = JSON.parse(raw);
+            if (sess && sess.access_token) token = sess.access_token;
+          }
+        } catch (e) { /* ignore */ }
+      }
       if (!url || !token) return null;
       const payload = decodeJwtPayload(token);
       const uid = payload && payload.sub;
