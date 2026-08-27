@@ -8,6 +8,7 @@
 
 import { supabase } from "@/supabase/config";
 import type { User } from "@supabase/supabase-js";
+import { PROFILE_PUBLIC_SELECT } from "@/lib/auth/profile-columns";
 
 // ============================================
 // Auth Functions
@@ -150,7 +151,7 @@ export function onAuthStateChange(callback: (event: string, user: User | null) =
 export async function getUserProfile(userId: string) {
   const { data, error } = await supabase
     .from("profiles")
-    .select("*")
+    .select(PROFILE_PUBLIC_SELECT)
     .eq("user_id", userId)
     .maybeSingle();
 

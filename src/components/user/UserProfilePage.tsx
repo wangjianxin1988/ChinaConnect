@@ -13,6 +13,7 @@ import type { Database } from "@/types/database";
 import { useEffect, useState } from "react";
 import { UserProfile } from "./UserProfile";
 import { authT, authLangPrefix, detectAuthLang } from "./auth-strings";
+import { PROFILE_PUBLIC_SELECT } from "@/lib/auth/profile-columns";
 
 type Profile = Database["public"]["Tables"]["profiles"]["Row"];
 
@@ -75,7 +76,7 @@ export function UserProfilePage({ userId, isOwnProfile = false }: UserProfilePag
           // Use real Supabase data
           const { data: profileData, error: profileError } = await supabase
             .from("profiles")
-            .select("*")
+            .select(PROFILE_PUBLIC_SELECT)
             .eq("user_id", uid)
             .maybeSingle();
 
@@ -119,7 +120,7 @@ export function UserProfilePage({ userId, isOwnProfile = false }: UserProfilePag
             nationality: editData.nationality,
           })
           .eq("user_id", profile.user_id || userId)
-          .select()
+          .select(PROFILE_PUBLIC_SELECT)
           .single();
 
         if (error) throw error;

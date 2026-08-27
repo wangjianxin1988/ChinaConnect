@@ -7,6 +7,7 @@ import type { Database, UserLevel } from "@/types/database";
 import type { AuthProvider, AuthState, SignUpData, User, UserProfile } from "@/types/user";
 import { type AuthError as SupabaseAuthError } from "@supabase/supabase-js";
 import { supabase } from "@/supabase/config";
+import { PROFILE_PUBLIC_SELECT } from "@/lib/auth/profile-columns";
 
 // ============================================
 // Demo Mode Configuration
@@ -520,12 +521,12 @@ export async function updateProfile(
       .from("profiles")
       .update(updates)
       .eq("user_id", user.id)
-      .select()
+      .select(PROFILE_PUBLIC_SELECT)
       .single();
 
     if (error) return { profile: null, error };
 
-    return { profile: data as UserProfile, error: null };
+    return { profile: data as unknown as UserProfile, error: null };
   } catch (err) {
     return { profile: null, error: err instanceof Error ? err : new Error("Unknown error") };
   }
@@ -538,13 +539,13 @@ export async function getProfile(userId: string): Promise<ProfileResponse> {
   try {
     const { data, error } = await authClient
       .from("profiles")
-      .select("*")
+      .select(PROFILE_PUBLIC_SELECT)
       .eq("user_id", userId)
       .maybeSingle();
 
     if (error) return { profile: null, error };
 
-    return { profile: data as UserProfile, error: null };
+    return { profile: data as unknown as UserProfile, error: null };
   } catch (err) {
     return { profile: null, error: err instanceof Error ? err : new Error("Unknown error") };
   }
@@ -590,12 +591,12 @@ export async function upsertProfile(
         },
         { onConflict: "user_id" },
       )
-      .select()
+      .select(PROFILE_PUBLIC_SELECT)
       .single();
 
     if (error) return { profile: null, error };
 
-    return { profile: result as UserProfile, error: null };
+    return { profile: result as unknown as UserProfile, error: null };
   } catch (err) {
     return { profile: null, error: err instanceof Error ? err : new Error("Unknown error") };
   }
