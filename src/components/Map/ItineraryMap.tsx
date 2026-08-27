@@ -52,7 +52,10 @@ function loadAmapAPI(): Promise<void> {
     }
 
     // Get API key — hardcoded as fallback (Vite tree-shakes import.meta.env with optional chaining)
-    const key = import.meta.env.PUBLIC_AMAP_KEY || "REDACTED_AMAP_WEB_KEY";
+    const key =
+      import.meta.env.VITE_AMAP_WEB_API_KEY ||
+      import.meta.env.PUBLIC_AMAP_KEY ||
+      "013d6b96800d73eeb66dcbf3dd3b068a";
     if (!key) {
       reject(
         new Error(
@@ -61,6 +64,14 @@ function loadAmapAPI(): Promise<void> {
       );
       return;
     }
+
+    // JS API v2.0 requires the security code to be set BEFORE the SDK loads.
+    // The security code is public (embedded in the page per Amap docs).
+    const securityCode =
+      import.meta.env.PUBLIC_AMAP_SECURITY_KEY || "a4650b55cffb613f2ed3955e1f2efe48";
+    (window as unknown as Record<string, unknown>)._AMapSecurityConfig = {
+      securityJsCode: securityCode,
+    };
 
     // Load script
     const script = document.createElement("script");
