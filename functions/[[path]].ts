@@ -20,7 +20,7 @@ import type { PagesFunction } from "@cloudflare/workers-types";
 // build their own Response headers).
 const HTML_SECURITY_HEADERS: Record<string, string> = {
   "Content-Security-Policy":
-    "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://unpkg.com https://static.cloudflareinsights.com https://webapi.amap.com https://restapi.amap.com https://jsapi.amap.com https://jsapi-service.amap.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https://*.supabase.co https://api.minimax.chat https://*.cloudflare.com https://cloudflareinsights.com wss://*.supabase.co https://*.amap.com https://*.autonavi.com; frame-ancestors 'self';",
+    "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://unpkg.com https://static.cloudflareinsights.com https://webapi.amap.com https://restapi.amap.com https://jsapi.amap.com https://jsapi-service.amap.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https://*.supabase.co https://api.minimax.chat https://*.cloudflare.com https://cloudflareinsights.com wss://*.supabase.co https://*.amap.com https://*.autonavi.com https://api.open-meteo.com https://geocoding-api.open-meteo.com; frame-ancestors 'self';",
   "X-Frame-Options": "SAMEORIGIN",
   "X-Content-Type-Options": "nosniff",
   "Referrer-Policy": "strict-origin-when-cross-origin",
