@@ -156,7 +156,7 @@ export function LeafletMap({
         <TileLayer
           url={tileUrl}
           attribution={attribution}
-          subdomains={provider === "amap" ? "1234" : undefined}
+          subdomains={provider === "amap" ? "1234" : "abc"}
           maxZoom={19}
         />
 

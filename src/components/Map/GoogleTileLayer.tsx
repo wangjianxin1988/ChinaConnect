@@ -25,7 +25,7 @@ const GOOGLE_ATTRIBUTION =
   '&copy; <a href="https://www.esri.com/en-us/home" target="_blank" rel="noopener noreferrer">Esri</a>, <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors';
 
 /** Global map subdomains (Esri has no per-tile subdomains) */
-const GOOGLE_SUBDOMAINS = "";
+const GOOGLE_SUBDOMAINS = "abc";
 
 /** Maximum zoom level for Google Maps */
 const GOOGLE_MAX_ZOOM = 20;
