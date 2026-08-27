@@ -8,7 +8,7 @@ export type AuthLang = "en" | "ja" | "ko" | "zh-CN" | "zh-TW" | "th" | "vi" | "r
 
 export const AUTH_LANGS: AuthLang[] = ["en","ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"];
 
-type AuthKey = "profileUserNotFound" | "profileNotFoundDesc" | "profileEdit" | "profileDisplayName" | "profileBio" | "profileNationality" | "profileNationalityPlaceholder" | "profileCancel" | "profileSave" | "profilePosts" | "profileCheckins" | "profileLikesReceived" | "profileBestAnswers" | "profileMemberSince" | "profileAnonymous" | "profileSignInRequired" | "profileSignInRequiredDesc" | "profileUpdateSuccess" | "profileUpdateError" | "callbackSigningYouIn" | "callbackErrorTitle" | "callbackErrorDesc" | "callbackUnexpected" | "callbackBackToSignIn" | "tagline" | "tabSignIn" | "tabRegister" | "magicLinkBanner" | "forgotBanner" | "checkEmail" | "magicSentDesc" | "resetSentDesc" | "errorTitle" | "oauthUnavailable" | "displayNameLabel" | "displayNamePlaceholder" | "emailLabel" | "emailPlaceholder" | "passwordLabel" | "confirmEmailLabel" | "passwordPlaceholder" | "confirmEmailPlaceholder" | "processing" | "submitSignIn" | "submitRegister" | "submitMagicLink" | "submitReset" | "orContinueWith" | "demoActive" | "tryDemo" | "noAccount" | "signUp" | "magicLink" | "forgotPassword" | "haveAccount" | "signIn" | "backToSignIn" | "agreeTerms" | "terms" | "privacy" | "redirecting" | "providerSetup" | "oauthFailed" | "resetTitle" | "newPasswordLabel" | "newPasswordPlaceholder" | "confirmPasswordLabel" | "resetSubmit" | "resetDone" | "resetInvalid" | "resetLinkToLogin" | "updateFailed" | "resetPageTitle" | "otpSentDesc" | "otpCodeLabel" | "otpCodePlaceholder" | "verifyCode" | "resendCode" | "invalidCode";
+type AuthKey = "profileUserNotFound" | "profileNotFoundDesc" | "profileEdit" | "profileDisplayName" | "profileBio" | "profileNationality" | "profileNationalityPlaceholder" | "profileCancel" | "profileSave" | "profilePosts" | "profileCheckins" | "profileLikesReceived" | "profileBestAnswers" | "profileMemberSince" | "profileAnonymous" | "profileSignInRequired" | "profileSignInRequiredDesc" | "profileUpdateSuccess" | "profileUpdateError" | "callbackSigningYouIn" | "callbackErrorTitle" | "callbackErrorDesc" | "callbackUnexpected" | "callbackBackToSignIn" | "tagline" | "tabSignIn" | "tabRegister" | "magicLinkBanner" | "forgotBanner" | "checkEmail" | "magicSentDesc" | "resetSentDesc" | "errorTitle" | "oauthUnavailable" | "displayNameLabel" | "displayNamePlaceholder" | "emailLabel" | "emailPlaceholder" | "passwordLabel" | "confirmEmailLabel" | "passwordPlaceholder" | "confirmEmailPlaceholder" | "processing" | "submitSignIn" | "submitRegister" | "submitMagicLink" | "submitReset" | "orContinueWith" | "demoActive" | "tryDemo" | "noAccount" | "signUp" | "magicLink" | "forgotPassword" | "haveAccount" | "signIn" | "backToSignIn" | "agreeTerms" | "terms" | "privacy" | "redirecting" | "providerSetup" | "oauthFailed" | "resetTitle" | "newPasswordLabel" | "newPasswordPlaceholder" | "confirmPasswordLabel" | "resetSubmit" | "resetDone" | "resetInvalid" | "resetLinkToLogin" | "updateFailed" | "resetPageTitle" | "otpSentDesc" | "otpCodeLabel" | "otpCodePlaceholder" | "verifyCode" | "resendCode" | "invalidCode" | "confirmSentDesc";
 
 const AUTH_STRINGS: Record<AuthKey, Record<AuthLang, string>> = {
   "tagline": {
@@ -122,6 +122,20 @@ const AUTH_STRINGS: Record<AuthKey, Record<AuthLang, string>> = {
     "de": "Wenn ein Konto für {email} existiert, haben wir Anweisungen gesendet.",
     "ar": "إذا كان هناك حساب لـ {email}، فقد أرسلنا تعليمات إعادة تعيين كلمة المرور.",
     "fa": "اگر حسابی برای {email} وجود داشته باشد، دستورالعمل بازیابی رمز ارسال شده است.",
+  },
+  "confirmSentDesc": {
+    "en": "We sent a confirmation link to {email}. Please check your inbox to activate your account.",
+    "ja": "{email} に確認リンクを送信しました。受信トレイを確認してアカウントを有効化してください。",
+    "ko": "{email}로 확인 링크를 보냈습니다. 받은 편지함을 확인하고 계정을 활성화하세요.",
+    "zh-CN": "我们已向 {email} 发送确认链接，请查收邮件完成注册。",
+    "zh-TW": "我們已寄送確認連結至 {email}，請收信完成註冊。",
+    "th": "เราได้ส่งลิงก์ยืนยันไปยัง {email} แล้ว กรุณาตรวจสอบอีเมลเพื่อเปิดใช้งานบัญชี",
+    "vi": "Chúng tôi đã gửi liên kết xác nhận tới {email}. Vui lòng kiểm tra hộp thư để kích hoạt tài khoản.",
+    "ru": "Мы отправили ссылку для подтверждения на {email}. Проверьте почту, чтобы активировать аккаунт.",
+    "fr": "Nous avons envoyé un lien de confirmation à {email}. Vérifiez votre boîte mail pour activer votre compte.",
+    "de": "Wir haben einen Bestätigungslink an {email} gesendet. Bitte prüfen Sie Ihren Posteingang.",
+    "ar": "أرسلنا رابط التأكيد إلى {email}. يرجى التحقق من بريدك الإلكتروني لتفعيل الحساب.",
+    "fa": "لینک تأیید به {email} ارسال شد. لطفاً ایمیل خود را بررسی کنید تا حساب فعال شود.",
   },
   "errorTitle": {
     "en": "Error",

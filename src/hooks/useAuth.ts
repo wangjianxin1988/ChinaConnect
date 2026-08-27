@@ -42,7 +42,7 @@ export interface UseAuthReturn {
 
   // Actions
   signIn: (email: string, password: string) => Promise<boolean>;
-  signUp: (data: SignUpData) => Promise<boolean>;
+  signUp: (data: SignUpData) => Promise<{ ok: boolean; needsConfirmation: boolean }>;
   signInWithProvider: (provider: AuthProvider) => Promise<void>;
   signInWithLink: (email: string) => Promise<{ sent: boolean; error: string | null }>;
   verifyEmailOtp: (email: string, token: string) => Promise<boolean>;
@@ -199,7 +199,7 @@ export function useAuth(options: UseAuthOptions = {}): UseAuthReturn {
     }
   }, []);
 
-  const signUp = useCallback(async (data: SignUpData): Promise<boolean> => {
+  const signUp = useCallback(async (data: SignUpData): Promise<{ ok: boolean; needsConfirmation: boolean }> => {
     try {
       setIsLoading(true);
       setError(null);
@@ -208,18 +208,20 @@ export function useAuth(options: UseAuthOptions = {}): UseAuthReturn {
 
       if (signUpError) {
         setError(signUpError.message);
-        return false;
+        return { ok: false, needsConfirmation: false };
       }
 
       if (newUser) {
         setUser(newUser);
-        return true;
+        return { ok: true, needsConfirmation: false };
       }
 
-      return false;
+      // No error + no user/session => email confirmation is required and the
+      // confirmation email has been sent.
+      return { ok: true, needsConfirmation: true };
     } catch (err) {
       setError(err instanceof Error ? err.message : "Sign up failed");
-      return false;
+      return { ok: false, needsConfirmation: false };
     } finally {
       setIsLoading(false);
     }

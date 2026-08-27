@@ -51,6 +51,7 @@ export function LoginPage({ lang: langProp }: { lang?: string } = {}) {
   const [magicLinkSent, setMagicLinkSent] = useState(false);
   const [otpCode, setOtpCode] = useState("");
   const [resetPasswordSent, setResetPasswordSent] = useState(false);
+  const [registerSent, setRegisterSent] = useState(false);
   const [oauthPending, setOauthPending] = useState<string | null>(null);
   const [disabledProviders, setDisabledProviders] = useState<Set<string>>(new Set());
   const lang = useMemo<string>(() => langProp || detectLang(), [langProp]);
@@ -115,7 +116,8 @@ export function LoginPage({ lang: langProp }: { lang?: string } = {}) {
     if (mode === "login") {
       await signIn(email, password);
     } else if (mode === "register") {
-      await signUp({ email, password, displayName });
+      const res = await signUp({ email, password, displayName });
+      if (res.needsConfirmation) setRegisterSent(true);
     } else if (mode === "magic_link") {
       const { sent } = await signInWithLink(email);
       if (sent) setMagicLinkSent(true);
@@ -315,6 +317,20 @@ export function LoginPage({ lang: langProp }: { lang?: string } = {}) {
             </div>
             <p className="text-sm text-green-600 mt-1">
               {authT(lang, "resetSentDesc", { email })}
+            </p>
+          </div>
+        )}
+        {registerSent && (
+          <div className="mb-6 p-4 bg-green-50 rounded-lg">
+            <div className="flex items-center gap-2 text-green-700">
+              <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+              <span className="font-medium">{authT(lang, "checkEmail")}</span>
+            </div>
+            <p className="text-sm text-green-600 mt-1">
+              {authT(lang, "confirmSentDesc", { email })}
             </p>
           </div>
         )}
