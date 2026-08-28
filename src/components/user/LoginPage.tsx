@@ -16,10 +16,15 @@
 import { useAuth } from "@/hooks/useAuth";
 import { cn } from "@/lib/utils";
 import { DEMO_MODE } from "@/services/auth";
-import { useEffect, useMemo, useState } from "react";
+import { supabase } from "@/supabase/config";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { authLangPrefix, authT, detectAuthLang } from "./auth-strings";
 
 type AuthMode = "login" | "register" | "magic_link" | "forgot_password";
+
+const CONFIRM_POLL_INTERVAL = 8000;
+const CONFIRM_POLL_MAX = 40; // ~5 minutes before giving up
+const PENDING_CONFIRM_KEY = "cc_pending_confirm";
 
 const PROVIDER_LABELS: Record<string, string> = {
   google: "Google",
@@ -52,7 +57,11 @@ export function LoginPage({ lang: langProp }: { lang?: string } = {}) {
   const [otpCode, setOtpCode] = useState("");
   const [resetPasswordSent, setResetPasswordSent] = useState(false);
   const [registerSent, setRegisterSent] = useState(false);
+  const [registerWaiting, setRegisterWaiting] = useState(false);
+  const [registerConfirmed, setRegisterConfirmed] = useState(false);
   const [registerConflict, setRegisterConflict] = useState(false);
+  const pendingConfirm = useRef<{ email: string; password: string | null; nonce: string } | null>(null);
+  const confirmTimer = useRef<ReturnType<typeof setInterval> | null>(null);
   const [localError, setLocalError] = useState<string | null>(null);
   const [oauthPending, setOauthPending] = useState<string | null>(null);
   const [disabledProviders, setDisabledProviders] = useState<Set<string>>(new Set());
@@ -78,6 +87,83 @@ export function LoginPage({ lang: langProp }: { lang?: string } = {}) {
     clearError();
     setRegisterConflict(false);
     setLocalError(null);
+    stopConfirmPoll();
+    clearPendingConfirm();
+  };
+
+  const stopConfirmPoll = () => {
+    if (confirmTimer.current !== null) {
+      clearInterval(confirmTimer.current);
+      confirmTimer.current = null;
+    }
+    setRegisterWaiting(false);
+  };
+
+  const clearPendingConfirm = () => {
+    pendingConfirm.current = null;
+    try {
+      sessionStorage.removeItem(PENDING_CONFIRM_KEY);
+    } catch (e) {
+      /* ignore */
+    }
+  };
+
+  const startConfirmPoll = (email: string, password: string | null, nonce: string) => {
+    stopConfirmPoll();
+    pendingConfirm.current = { email, password, nonce };
+    try {
+      sessionStorage.setItem(PENDING_CONFIRM_KEY, JSON.stringify({ email, nonce }));
+    } catch (e) {
+      /* ignore */
+    }
+    setRegisterConfirmed(false);
+    setRegisterWaiting(true);
+    let attempts = 0;
+    confirmTimer.current = setInterval(async () => {
+      attempts += 1;
+      const p = pendingConfirm.current;
+      if (!p) {
+        stopConfirmPoll();
+        return;
+      }
+      try {
+        const { data } = await supabase.rpc("check_email_confirmed", {
+          target_email: p.email,
+          nonce: p.nonce,
+        });
+        if (data === true) {
+          stopConfirmPoll();
+          // Same-device clicks already set a session in this browser.
+          const { data: sessionData } = await supabase.auth.getSession();
+          if (sessionData.session) {
+            clearPendingConfirm();
+            return;
+          }
+          // Cross-device: auto-login with the password the user just typed.
+          const ok = p.password ? await signIn(p.email, p.password) : false;
+          clearPendingConfirm();
+          if (!ok) setRegisterConfirmed(true);
+          return;
+        }
+      } catch (e) {
+        /* transient RPC error - keep polling */
+      }
+      if (attempts >= CONFIRM_POLL_MAX) {
+        stopConfirmPoll();
+        clearPendingConfirm();
+      }
+    }, CONFIRM_POLL_INTERVAL);
+  };
+
+  const handleConfirmedSignIn = () => {
+    const p = pendingConfirm.current;
+    clearPendingConfirm();
+    if (p?.password) {
+      void signIn(p.email, p.password);
+      return;
+    }
+    setEmail(p?.email || email);
+    switchMode("login");
   };
 
   // Pick up #register hash so /auth/register redirect lands on register tab
@@ -118,6 +204,28 @@ export function LoginPage({ lang: langProp }: { lang?: string } = {}) {
     return function () { cancelled = true; };
   }, []);
 
+  // Restore an in-flight email confirmation after a reload so the desktop tab
+  // still notices when the user confirms the link from another device.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    try {
+      const raw = sessionStorage.getItem(PENDING_CONFIRM_KEY);
+      if (raw) {
+        const p = JSON.parse(raw) as { email?: string; nonce?: string };
+        if (p && p.email && p.nonce) {
+          setEmail(p.email);
+          setRegisterSent(true);
+          startConfirmPoll(p.email, null, p.nonce);
+        }
+      }
+    } catch (e) {
+      /* ignore */
+    }
+    return () => {
+      stopConfirmPoll();
+    };
+  }, []);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     clearError();
@@ -127,9 +235,14 @@ export function LoginPage({ lang: langProp }: { lang?: string } = {}) {
     if (mode === "login") {
       await signIn(email, password);
     } else if (mode === "register") {
-      const res = await signUp({ email, password, displayName });
+      const nonce =
+        typeof crypto !== "undefined" && typeof crypto.randomUUID === "function"
+          ? crypto.randomUUID()
+          : "n" + Date.now().toString(36) + Math.random().toString(36).slice(2, 12);
+      const res = await signUp({ email, password, displayName, confirmNonce: nonce });
       if (res.needsConfirmation) {
         setRegisterSent(true);
+        startConfirmPoll(email, password, nonce);
       } else if (res.code === "email_already_registered") {
         // GoTrue does not send a confirmation email for an existing account;
         // guide the user to sign in / social login / password reset instead.
@@ -198,6 +311,7 @@ export function LoginPage({ lang: langProp }: { lang?: string } = {}) {
   useEffect(() => {
     if (user && !isLoading) {
       try { sessionStorage.removeItem("auth_next"); } catch (e) { /* ignore */ }
+      clearPendingConfirm();
       window.location.href = nextPath;
     }
   }, [user, isLoading, nextPath]);
@@ -355,6 +469,25 @@ export function LoginPage({ lang: langProp }: { lang?: string } = {}) {
             <p className="text-sm text-green-600 mt-1">
               {authT(lang, "confirmSentDesc", { email })}
             </p>
+            {registerWaiting && (
+              <p className="text-sm text-green-700 mt-2 flex items-center gap-2">
+                <span className="inline-block w-3 h-3 border-2 border-green-600 border-t-transparent rounded-full animate-spin" />
+                {authT(lang, "registerWaitHint")}
+              </p>
+            )}
+            {registerConfirmed && (
+              <div className="mt-3 pt-3 border-t border-green-200">
+                <p className="text-sm font-medium text-green-800">{authT(lang, "registerConfirmedTitle")}</p>
+                <p className="text-sm text-green-700 mt-1">{authT(lang, "registerConfirmedDesc")}</p>
+                <button
+                  type="button"
+                  onClick={handleConfirmedSignIn}
+                  className="mt-3 w-full py-2.5 px-4 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors"
+                >
+                  {authT(lang, "registerSignInNow")}
+                </button>
+              </div>
+            )}
           </div>
         )}
 

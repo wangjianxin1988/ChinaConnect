@@ -212,6 +212,10 @@ export interface SignUpData {
   displayName?: string;
   nationality?: string;
   nativeLanguage?: string;
+  /** Random per-signup nonce stored in user_metadata so the registration page
+   * can securely poll check_email_confirmed() after the user confirms from
+   * another device (never exposed beyond the registering browser tab). */
+  confirmNonce?: string;
 }
 
 // ============================================

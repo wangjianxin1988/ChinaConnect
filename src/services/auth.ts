@@ -249,6 +249,7 @@ export async function signUpWithEmail(data: SignUpData): Promise<AuthResponse> {
           display_name: data.displayName || data.email.split("@")[0],
           nationality: data.nationality,
           native_language: data.nativeLanguage,
+          confirm_nonce: data.confirmNonce,
         },
       }),
     });

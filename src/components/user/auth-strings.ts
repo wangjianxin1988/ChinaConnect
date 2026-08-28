@@ -8,7 +8,7 @@ export type AuthLang = "en" | "ja" | "ko" | "zh-CN" | "zh-TW" | "th" | "vi" | "r
 
 export const AUTH_LANGS: AuthLang[] = ["en","ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"];
 
-type AuthKey = "profileUserNotFound" | "profileNotFoundDesc" | "profileEdit" | "profileDisplayName" | "profileBio" | "profileNationality" | "profileNationalityPlaceholder" | "profileCancel" | "profileSave" | "profilePosts" | "profileCheckins" | "profileLikesReceived" | "profileBestAnswers" | "profileMemberSince" | "profileAnonymous" | "profileSignInRequired" | "profileSignInRequiredDesc" | "profileUpdateSuccess" | "profileUpdateError" | "callbackSigningYouIn" | "callbackErrorTitle" | "callbackErrorDesc" | "callbackUnexpected" | "callbackBackToSignIn" | "callbackLinkExpired" | "callbackSignupDoneTitle" | "callbackSignupDoneDesc" | "tagline" | "tabSignIn" | "tabRegister" | "magicLinkBanner" | "forgotBanner" | "checkEmail" | "magicSentDesc" | "resetSentDesc" | "errorTitle" | "oauthUnavailable" | "displayNameLabel" | "displayNamePlaceholder" | "emailLabel" | "emailPlaceholder" | "passwordLabel" | "confirmEmailLabel" | "passwordPlaceholder" | "confirmEmailPlaceholder" | "processing" | "submitSignIn" | "submitRegister" | "submitMagicLink" | "submitReset" | "orContinueWith" | "demoActive" | "tryDemo" | "noAccount" | "signUp" | "magicLink" | "forgotPassword" | "haveAccount" | "signIn" | "backToSignIn" | "agreeTerms" | "terms" | "privacy" | "redirecting" | "providerSetup" | "oauthFailed" | "resetTitle" | "newPasswordLabel" | "newPasswordPlaceholder" | "confirmPasswordLabel" | "resetSubmit" | "resetDone" | "resetInvalid" | "resetLinkToLogin" | "updateFailed" | "resetPageTitle" | "otpSentDesc" | "otpCodeLabel" | "otpCodePlaceholder" | "verifyCode" | "resendCode" | "invalidCode" | "confirmSentDesc" | "emailAlreadyRegistered" | "signupTooFrequent";
+type AuthKey = "profileUserNotFound" | "profileNotFoundDesc" | "profileEdit" | "profileDisplayName" | "profileBio" | "profileNationality" | "profileNationalityPlaceholder" | "profileCancel" | "profileSave" | "profilePosts" | "profileCheckins" | "profileLikesReceived" | "profileBestAnswers" | "profileMemberSince" | "profileAnonymous" | "profileSignInRequired" | "profileSignInRequiredDesc" | "profileUpdateSuccess" | "profileUpdateError" | "callbackSigningYouIn" | "callbackErrorTitle" | "callbackErrorDesc" | "callbackUnexpected" | "callbackBackToSignIn" | "callbackLinkExpired" | "callbackSignupDoneTitle" | "callbackSignupDoneDesc" | "registerWaitHint" | "registerConfirmedTitle" | "registerConfirmedDesc" | "registerSignInNow" | "tagline" | "tabSignIn" | "tabRegister" | "magicLinkBanner" | "forgotBanner" | "checkEmail" | "magicSentDesc" | "resetSentDesc" | "errorTitle" | "oauthUnavailable" | "displayNameLabel" | "displayNamePlaceholder" | "emailLabel" | "emailPlaceholder" | "passwordLabel" | "confirmEmailLabel" | "passwordPlaceholder" | "confirmEmailPlaceholder" | "processing" | "submitSignIn" | "submitRegister" | "submitMagicLink" | "submitReset" | "orContinueWith" | "demoActive" | "tryDemo" | "noAccount" | "signUp" | "magicLink" | "forgotPassword" | "haveAccount" | "signIn" | "backToSignIn" | "agreeTerms" | "terms" | "privacy" | "redirecting" | "providerSetup" | "oauthFailed" | "resetTitle" | "newPasswordLabel" | "newPasswordPlaceholder" | "confirmPasswordLabel" | "resetSubmit" | "resetDone" | "resetInvalid" | "resetLinkToLogin" | "updateFailed" | "resetPageTitle" | "otpSentDesc" | "otpCodeLabel" | "otpCodePlaceholder" | "verifyCode" | "resendCode" | "invalidCode" | "confirmSentDesc" | "emailAlreadyRegistered" | "signupTooFrequent";
 
 const AUTH_STRINGS: Record<AuthKey, Record<AuthLang, string>> = {
   "tagline": {
@@ -1076,6 +1076,62 @@ const AUTH_STRINGS: Record<AuthKey, Record<AuthLang, string>> = {
     "de": "Zurück zur Anmeldung",
     "ar": "العودة إلى تسجيل الدخول",
     "fa": "بازگشت به ورود"
+  },
+  "registerWaitHint": {
+    "en": "Click the confirmation link in the email and this page will sign you in automatically.",
+    "ja": "メール内の確認リンクをクリックすると、このページに自動的にログインします。",
+    "ko": "이메일의 확인 링크를 클릭하면 이 페이지에 자동으로 로그인됩니다.",
+    "zh-CN": "点击邮件中的确认链接后，本页面将自动登录。",
+    "zh-TW": "點擊郵件中的確認連結後，本頁面將自動登入。",
+    "th": "คลิกลิงก์ยืนยันในอีเมลแล้วหน้านี้จะเข้าสู่ระบบให้อัตโนมัติ",
+    "vi": "Nhấp vào liên kết xác nhận trong email và trang này sẽ tự động đăng nhập.",
+    "ru": "Нажмите ссылку подтверждения в письме — эта страница войдёт в аккаунт автоматически.",
+    "fr": "Cliquez sur le lien de confirmation dans l'e-mail et cette page vous connectera automatiquement.",
+    "de": "Klicken Sie auf den Bestätigungslink in der E-Mail und diese Seite meldet Sie automatisch an.",
+    "ar": "انقر رابط التأكيد في البريد الإلكتروني وستقوم هذه الصفحة بتسجيل دخولك تلقائيًا.",
+    "fa": "روی لینک تأیید در ایمیل کلیک کنید؛ این صفحه به‌طور خودکار وارد حساب شما می‌شود."
+  },
+  "registerConfirmedTitle": {
+    "en": "Email confirmed!",
+    "ja": "メール認証が完了しました！",
+    "ko": "이메일 인증이 완료되었습니다!",
+    "zh-CN": "邮箱验证成功！",
+    "zh-TW": "信箱驗證成功！",
+    "th": "ยืนยันอีเมลแล้ว!",
+    "vi": "Đã xác nhận email!",
+    "ru": "Электронная почта подтверждена!",
+    "fr": "E-mail confirmé !",
+    "de": "E-Mail bestätigt!",
+    "ar": "تم تأكيد البريد الإلكتروني!",
+    "fa": "ایمیل تأیید شد!"
+  },
+  "registerConfirmedDesc": {
+    "en": "Your account is ready. Click the button below to sign in.",
+    "ja": "アカウントの準備ができました。下のボタンからログインしてください。",
+    "ko": "계정이 준비되었습니다. 아래 버튼을 눌러 로그인하세요.",
+    "zh-CN": "您的账户已就绪，请点击下方按钮登录。",
+    "zh-TW": "您的帳戶已就緒，請點擊下方按鈕登入。",
+    "th": "บัญชีของคุณพร้อมแล้ว คลิกปุ่มด้านล่างเพื่อเข้าสู่ระบบ",
+    "vi": "Tài khoản của bạn đã sẵn sàng. Nhấp vào nút bên dưới để đăng nhập.",
+    "ru": "Ваш аккаунт готов. Нажмите кнопку ниже, чтобы войти.",
+    "fr": "Votre compte est prêt. Cliquez sur le bouton ci-dessous pour vous connecter.",
+    "de": "Ihr Konto ist bereit. Klicken Sie unten auf die Schaltfläche, um sich anzumelden.",
+    "ar": "حسابك جاهز. اضغط على الزر أدناه لتسجيل الدخول.",
+    "fa": "حساب شما آماده است. برای ورود روی دکمه زیر کلیک کنید."
+  },
+  "registerSignInNow": {
+    "en": "Sign In Now",
+    "ja": "今すぐログイン",
+    "ko": "지금 로그인",
+    "zh-CN": "立即登录",
+    "zh-TW": "立即登入",
+    "th": "เข้าสู่ระบบตอนนี้",
+    "vi": "Đăng nhập ngay",
+    "ru": "Войти сейчас",
+    "fr": "Se connecter maintenant",
+    "de": "Jetzt anmelden",
+    "ar": "تسجيل الدخول الآن",
+    "fa": "هم‌اکنون وارد شوید"
   },
   "callbackLinkExpired": {
     "en": "This confirmation link is invalid or has expired. Please request a new one.",
