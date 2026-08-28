@@ -229,7 +229,13 @@ export async function signUpWithEmail(data: SignUpData): Promise<AuthResponse> {
 
   let res: Response;
   try {
-    res = await fetch(baseUrl + "/auth/v1/signup", {
+    // GoTrue reads `redirect_to` from query params / form data, never from a
+    // JSON body, so it must go on the URL (mirrors supabase-js _request).
+    const signupUrl =
+      baseUrl +
+      "/auth/v1/signup?redirect_to=" +
+      encodeURIComponent(authCallbackUrl());
+    res = await fetch(signupUrl, {
       method: "POST",
       headers: {
         apikey: anonKey,
@@ -244,7 +250,6 @@ export async function signUpWithEmail(data: SignUpData): Promise<AuthResponse> {
           nationality: data.nationality,
           native_language: data.nativeLanguage,
         },
-        redirectTo: authCallbackUrl(),
       }),
     });
   } catch (err) {

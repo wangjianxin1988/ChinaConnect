@@ -26,6 +26,18 @@ const title = (translations[lang]?.authPage?.callbackTitle) || translations.en.a
           Back to sign in
         </a>
       </div>
+      <div id="auth-signup-done" class="hidden">
+        <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center">
+          <svg class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <h2 id="auth-signup-done-title" class="text-lg font-semibold text-gray-900 mb-2">Email confirmed!</h2>
+        <p id="auth-signup-done-desc" class="text-sm text-gray-600 mb-6">Your account is ready. Please sign in to continue.</p>
+        <a id="auth-signup-login-link" href="/auth/login" class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
+          Back to sign in
+        </a>
+      </div>
     </div>
   </div>
 </BaseLayout>
@@ -48,6 +60,16 @@ const title = (translations[lang]?.authPage?.callbackTitle) || translations.en.a
   async function completeAuth(): Promise<void> {
     const params = new URLSearchParams(window.location.search);
     const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ''));
+
+    // 0) GoTrue error redirect (link expired / invalid / already used): the
+    //    browser lands here with error_code/error_description in query + hash.
+    const errCode = params.get('error_code') || hashParams.get('error_code');
+    const errDesc = params.get('error_description') || hashParams.get('error_description');
+    const errFlag = params.get('error') || hashParams.get('error') || errCode || errDesc;
+    if (errFlag) {
+      showAuthError(errCode === 'otp_expired' ? authT(lang, 'callbackLinkExpired') : authT(lang, 'callbackErrorDesc'));
+      return;
+    }
 
     // 1) PKCE flow: ?code=... (default Supabase email confirmation since v2)
     const code = params.get('code') || hashParams.get('code');
@@ -102,8 +124,14 @@ const title = (translations[lang]?.authPage?.callbackTitle) || translations.en.a
       return;
     }
 
-    // 5) Nothing worked - show error UI
-    showAuthError(authT(lang, "callbackErrorDesc"));
+    // 5) Nothing worked. For signup confirmations the email is usually already
+    //    confirmed (GoTrue redirects back here with type=signup once the token
+    //    is consumed) - prompt the user to sign in instead of a dead error.
+    if (otpType === 'signup') {
+      showSignupDone();
+      return;
+    }
+    showAuthError(authT(lang, 'callbackErrorDesc'));
   }
 
   function showAuthError(msg: string): void {
@@ -115,6 +143,19 @@ const title = (translations[lang]?.authPage?.callbackTitle) || translations.en.a
     if (errorMsg) errorMsg.textContent = msg;
     if (backLink) backLink.href = prefix + "/auth/login";
     if (errorBox) errorBox.classList.remove('hidden');
+  }
+
+  function showSignupDone(): void {
+    const spinner = document.getElementById('auth-spinner');
+    const box = document.getElementById('auth-signup-done');
+    const titleEl = document.getElementById('auth-signup-done-title');
+    const descEl = document.getElementById('auth-signup-done-desc');
+    const loginLink = document.getElementById('auth-signup-login-link') as HTMLAnchorElement | null;
+    if (spinner) spinner.classList.add('hidden');
+    if (titleEl) titleEl.textContent = authT(lang, 'callbackSignupDoneTitle');
+    if (descEl) descEl.textContent = authT(lang, 'callbackSignupDoneDesc');
+    if (loginLink) { loginLink.href = prefix + '/auth/login'; loginLink.textContent = authT(lang, 'callbackBackToSignIn'); }
+    if (box) box.classList.remove('hidden');
   }
 
   // Run the auth-completion flow

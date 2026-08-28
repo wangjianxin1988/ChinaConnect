@@ -8,7 +8,7 @@ export type AuthLang = "en" | "ja" | "ko" | "zh-CN" | "zh-TW" | "th" | "vi" | "r
 
 export const AUTH_LANGS: AuthLang[] = ["en","ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"];
 
-type AuthKey = "profileUserNotFound" | "profileNotFoundDesc" | "profileEdit" | "profileDisplayName" | "profileBio" | "profileNationality" | "profileNationalityPlaceholder" | "profileCancel" | "profileSave" | "profilePosts" | "profileCheckins" | "profileLikesReceived" | "profileBestAnswers" | "profileMemberSince" | "profileAnonymous" | "profileSignInRequired" | "profileSignInRequiredDesc" | "profileUpdateSuccess" | "profileUpdateError" | "callbackSigningYouIn" | "callbackErrorTitle" | "callbackErrorDesc" | "callbackUnexpected" | "callbackBackToSignIn" | "tagline" | "tabSignIn" | "tabRegister" | "magicLinkBanner" | "forgotBanner" | "checkEmail" | "magicSentDesc" | "resetSentDesc" | "errorTitle" | "oauthUnavailable" | "displayNameLabel" | "displayNamePlaceholder" | "emailLabel" | "emailPlaceholder" | "passwordLabel" | "confirmEmailLabel" | "passwordPlaceholder" | "confirmEmailPlaceholder" | "processing" | "submitSignIn" | "submitRegister" | "submitMagicLink" | "submitReset" | "orContinueWith" | "demoActive" | "tryDemo" | "noAccount" | "signUp" | "magicLink" | "forgotPassword" | "haveAccount" | "signIn" | "backToSignIn" | "agreeTerms" | "terms" | "privacy" | "redirecting" | "providerSetup" | "oauthFailed" | "resetTitle" | "newPasswordLabel" | "newPasswordPlaceholder" | "confirmPasswordLabel" | "resetSubmit" | "resetDone" | "resetInvalid" | "resetLinkToLogin" | "updateFailed" | "resetPageTitle" | "otpSentDesc" | "otpCodeLabel" | "otpCodePlaceholder" | "verifyCode" | "resendCode" | "invalidCode" | "confirmSentDesc" | "emailAlreadyRegistered" | "signupTooFrequent";
+type AuthKey = "profileUserNotFound" | "profileNotFoundDesc" | "profileEdit" | "profileDisplayName" | "profileBio" | "profileNationality" | "profileNationalityPlaceholder" | "profileCancel" | "profileSave" | "profilePosts" | "profileCheckins" | "profileLikesReceived" | "profileBestAnswers" | "profileMemberSince" | "profileAnonymous" | "profileSignInRequired" | "profileSignInRequiredDesc" | "profileUpdateSuccess" | "profileUpdateError" | "callbackSigningYouIn" | "callbackErrorTitle" | "callbackErrorDesc" | "callbackUnexpected" | "callbackBackToSignIn" | "callbackLinkExpired" | "callbackSignupDoneTitle" | "callbackSignupDoneDesc" | "tagline" | "tabSignIn" | "tabRegister" | "magicLinkBanner" | "forgotBanner" | "checkEmail" | "magicSentDesc" | "resetSentDesc" | "errorTitle" | "oauthUnavailable" | "displayNameLabel" | "displayNamePlaceholder" | "emailLabel" | "emailPlaceholder" | "passwordLabel" | "confirmEmailLabel" | "passwordPlaceholder" | "confirmEmailPlaceholder" | "processing" | "submitSignIn" | "submitRegister" | "submitMagicLink" | "submitReset" | "orContinueWith" | "demoActive" | "tryDemo" | "noAccount" | "signUp" | "magicLink" | "forgotPassword" | "haveAccount" | "signIn" | "backToSignIn" | "agreeTerms" | "terms" | "privacy" | "redirecting" | "providerSetup" | "oauthFailed" | "resetTitle" | "newPasswordLabel" | "newPasswordPlaceholder" | "confirmPasswordLabel" | "resetSubmit" | "resetDone" | "resetInvalid" | "resetLinkToLogin" | "updateFailed" | "resetPageTitle" | "otpSentDesc" | "otpCodeLabel" | "otpCodePlaceholder" | "verifyCode" | "resendCode" | "invalidCode" | "confirmSentDesc" | "emailAlreadyRegistered" | "signupTooFrequent";
 
 const AUTH_STRINGS: Record<AuthKey, Record<AuthLang, string>> = {
   "tagline": {
@@ -1076,6 +1076,48 @@ const AUTH_STRINGS: Record<AuthKey, Record<AuthLang, string>> = {
     "de": "Zurück zur Anmeldung",
     "ar": "العودة إلى تسجيل الدخول",
     "fa": "بازگشت به ورود"
+  },
+  "callbackLinkExpired": {
+    "en": "This confirmation link is invalid or has expired. Please request a new one.",
+    "ja": "この確認リンクは無効または期限切れです。新しいリンクをご依頼ください。",
+    "ko": "이 확인 링크는 유효하지 않거나 만료되었습니다. 새 링크를 요청해 주세요.",
+    "zh-CN": "该确认链接无效或已过期，请重新获取。",
+    "zh-TW": "此確認連結無效或已過期，請重新取得。",
+    "th": "ลิงก์ยืนยันนี้ไม่ถูกต้องหรือหมดอายุแล้ว กรุณาขอลิงก์ใหม่",
+    "vi": "Liên kết xác nhận này không hợp lệ hoặc đã hết hạn. Vui lòng yêu cầu liên kết mới.",
+    "ru": "Эта ссылка подтверждения недействительна или истекла. Запросите новую.",
+    "fr": "Ce lien de confirmation est invalide ou a expiré. Veuillez en demander un nouveau.",
+    "de": "Dieser Bestätigungslink ist ungültig oder abgelaufen. Bitte fordern Sie einen neuen an.",
+    "ar": "رابط التأكيد هذا غير صالح أو منتهي الصلاحية. يرجى طلب رابط جديد.",
+    "fa": "این لینک تأیید نامعتبر یا منقضی است. لطفاً لینک جدیدی درخواست کنید."
+  },
+  "callbackSignupDoneTitle": {
+    "en": "Email confirmed!",
+    "ja": "メール認証が完了しました！",
+    "ko": "이메일 인증이 완료되었습니다!",
+    "zh-CN": "邮箱验证成功！",
+    "zh-TW": "信箱驗證成功！",
+    "th": "ยืนยันอีเมลแล้ว!",
+    "vi": "Đã xác nhận email!",
+    "ru": "Электронная почта подтверждена!",
+    "fr": "E-mail confirmé !",
+    "de": "E-Mail bestätigt!",
+    "ar": "تم تأكيد البريد الإلكتروني!",
+    "fa": "ایمیل تأیید شد!"
+  },
+  "callbackSignupDoneDesc": {
+    "en": "Your account is ready. Please sign in to continue.",
+    "ja": "アカウントの準備ができました。続行するにはログインしてください。",
+    "ko": "계정이 준비되었습니다. 계속하려면 로그인하세요.",
+    "zh-CN": "您的账户已就绪，请登录后继续。",
+    "zh-TW": "您的帳戶已就緒，請登入後繼續。",
+    "th": "บัญชีของคุณพร้อมแล้ว กรุณาเข้าสู่ระบบเพื่อดำเนินการต่อ",
+    "vi": "Tài khoản của bạn đã sẵn sàng. Vui lòng đăng nhập để tiếp tục.",
+    "ru": "Ваш аккаунт готов. Войдите, чтобы продолжить.",
+    "fr": "Votre compte est prêt. Veuillez vous connecter pour continuer.",
+    "de": "Ihr Konto ist bereit. Bitte melden Sie sich an, um fortzufahren.",
+    "ar": "حسابك جاهز. يرجى تسجيل الدخول للمتابعة.",
+    "fa": "حساب شما آماده است. برای ادامه لطفاً وارد شوید."
   },
   "otpSentDesc": {
     "en": "We sent a 6-digit code to {email}. Enter it below to sign in.",

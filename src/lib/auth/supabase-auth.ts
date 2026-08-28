@@ -27,6 +27,7 @@ export async function signUpWithEmail(email: string, password: string, username?
       data: {
         display_name: username || email.split("@")[0],
       },
+      emailRedirectTo: authCallbackUrl(),
     },
   });
 
