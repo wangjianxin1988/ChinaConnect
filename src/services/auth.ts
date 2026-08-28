@@ -218,33 +218,91 @@ export async function signUpWithEmail(data: SignUpData): Promise<AuthResponse> {
     };
   }
 
-  const { data: authData, error } = await authClient.auth.signUp({
-    email: data.email,
-    password: data.password || "",
-    options: {
-      data: {
-        display_name: data.displayName || data.email.split("@")[0],
-        nationality: data.nationality,
-        native_language: data.nativeLanguage,
+  // GoTrue returns the signup payload at the TOP LEVEL (not under `user`), so
+  // supabase-js maps BOTH fresh signups and already-registered emails to
+  // `data.user: null`. To tell them apart we read `identities` directly: an
+  // existing confirmed email returns HTTP 200 with an EMPTY identities array
+  // and no confirmation email is sent (anti-enumeration). Without this check
+  // the UI would show "check your email" forever for existing accounts.
+  const baseUrl = import.meta.env.PUBLIC_SUPABASE_URL || "";
+  const anonKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY || "";
+
+  let res: Response;
+  try {
+    res = await fetch(baseUrl + "/auth/v1/signup", {
+      method: "POST",
+      headers: {
+        apikey: anonKey,
+        Authorization: "Bearer " + anonKey,
+        "Content-Type": "application/json",
       },
-      emailRedirectTo: authCallbackUrl(),
-    },
-  });
+      body: JSON.stringify({
+        email: data.email,
+        password: data.password || "",
+        data: {
+          display_name: data.displayName || data.email.split("@")[0],
+          nationality: data.nationality,
+          native_language: data.nativeLanguage,
+        },
+        redirectTo: authCallbackUrl(),
+      }),
+    });
+  } catch (err) {
+    return {
+      user: null,
+      session: null,
+      error: {
+        name: "AuthError",
+        message: err instanceof Error ? err.message : "Network error during sign up",
+      } as SupabaseAuthError,
+    };
+  }
 
-  if (error) return { user: null, session: null, error };
+  let payload: Record<string, unknown> | null = null;
+  try {
+    payload = (await res.json()) as Record<string, unknown>;
+  } catch {
+    payload = null;
+  }
 
-  return {
-    user: authData.user
-      ? {
-          id: authData.user.id,
-          email: authData.user.email || "",
-          created_at: authData.user.created_at,
-          updated_at: authData.user.updated_at || authData.user.created_at,
-        }
-      : null,
-    session: authData.session,
-    error: null,
-  };
+  if (!res.ok) {
+    const message =
+      (payload && typeof payload.msg === "string" && payload.msg) ||
+      (payload &&
+        typeof payload.error_description === "string" &&
+        payload.error_description) ||
+      (payload && typeof payload.message === "string" && payload.message) ||
+      "Sign up failed (" + res.status + ")";
+    return {
+      user: null,
+      session: null,
+      error: {
+        name: "AuthError",
+        message,
+        status: res.status,
+        code:
+          payload && typeof payload.error_code === "string" ? payload.error_code : undefined,
+      } as SupabaseAuthError,
+    };
+  }
+
+  const identitiesRaw = payload ? payload.identities : null;
+  const identities = Array.isArray(identitiesRaw) ? (identitiesRaw as unknown[]) : null;
+  if (identities !== null && identities.length === 0) {
+    return {
+      user: null,
+      session: null,
+      error: {
+        name: "AuthError",
+        message: "This email is already registered. Please sign in instead.",
+        status: 409,
+        code: "email_already_registered",
+      } as SupabaseAuthError,
+    };
+  }
+
+  // Fresh signup: confirmation email sent (mailer_autoconfirm=false).
+  return { user: null, session: null, error: null };
 }
 
 /**

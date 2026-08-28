@@ -8,7 +8,7 @@ export type AuthLang = "en" | "ja" | "ko" | "zh-CN" | "zh-TW" | "th" | "vi" | "r
 
 export const AUTH_LANGS: AuthLang[] = ["en","ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"];
 
-type AuthKey = "profileUserNotFound" | "profileNotFoundDesc" | "profileEdit" | "profileDisplayName" | "profileBio" | "profileNationality" | "profileNationalityPlaceholder" | "profileCancel" | "profileSave" | "profilePosts" | "profileCheckins" | "profileLikesReceived" | "profileBestAnswers" | "profileMemberSince" | "profileAnonymous" | "profileSignInRequired" | "profileSignInRequiredDesc" | "profileUpdateSuccess" | "profileUpdateError" | "callbackSigningYouIn" | "callbackErrorTitle" | "callbackErrorDesc" | "callbackUnexpected" | "callbackBackToSignIn" | "tagline" | "tabSignIn" | "tabRegister" | "magicLinkBanner" | "forgotBanner" | "checkEmail" | "magicSentDesc" | "resetSentDesc" | "errorTitle" | "oauthUnavailable" | "displayNameLabel" | "displayNamePlaceholder" | "emailLabel" | "emailPlaceholder" | "passwordLabel" | "confirmEmailLabel" | "passwordPlaceholder" | "confirmEmailPlaceholder" | "processing" | "submitSignIn" | "submitRegister" | "submitMagicLink" | "submitReset" | "orContinueWith" | "demoActive" | "tryDemo" | "noAccount" | "signUp" | "magicLink" | "forgotPassword" | "haveAccount" | "signIn" | "backToSignIn" | "agreeTerms" | "terms" | "privacy" | "redirecting" | "providerSetup" | "oauthFailed" | "resetTitle" | "newPasswordLabel" | "newPasswordPlaceholder" | "confirmPasswordLabel" | "resetSubmit" | "resetDone" | "resetInvalid" | "resetLinkToLogin" | "updateFailed" | "resetPageTitle" | "otpSentDesc" | "otpCodeLabel" | "otpCodePlaceholder" | "verifyCode" | "resendCode" | "invalidCode" | "confirmSentDesc";
+type AuthKey = "profileUserNotFound" | "profileNotFoundDesc" | "profileEdit" | "profileDisplayName" | "profileBio" | "profileNationality" | "profileNationalityPlaceholder" | "profileCancel" | "profileSave" | "profilePosts" | "profileCheckins" | "profileLikesReceived" | "profileBestAnswers" | "profileMemberSince" | "profileAnonymous" | "profileSignInRequired" | "profileSignInRequiredDesc" | "profileUpdateSuccess" | "profileUpdateError" | "callbackSigningYouIn" | "callbackErrorTitle" | "callbackErrorDesc" | "callbackUnexpected" | "callbackBackToSignIn" | "tagline" | "tabSignIn" | "tabRegister" | "magicLinkBanner" | "forgotBanner" | "checkEmail" | "magicSentDesc" | "resetSentDesc" | "errorTitle" | "oauthUnavailable" | "displayNameLabel" | "displayNamePlaceholder" | "emailLabel" | "emailPlaceholder" | "passwordLabel" | "confirmEmailLabel" | "passwordPlaceholder" | "confirmEmailPlaceholder" | "processing" | "submitSignIn" | "submitRegister" | "submitMagicLink" | "submitReset" | "orContinueWith" | "demoActive" | "tryDemo" | "noAccount" | "signUp" | "magicLink" | "forgotPassword" | "haveAccount" | "signIn" | "backToSignIn" | "agreeTerms" | "terms" | "privacy" | "redirecting" | "providerSetup" | "oauthFailed" | "resetTitle" | "newPasswordLabel" | "newPasswordPlaceholder" | "confirmPasswordLabel" | "resetSubmit" | "resetDone" | "resetInvalid" | "resetLinkToLogin" | "updateFailed" | "resetPageTitle" | "otpSentDesc" | "otpCodeLabel" | "otpCodePlaceholder" | "verifyCode" | "resendCode" | "invalidCode" | "confirmSentDesc" | "emailAlreadyRegistered" | "signupTooFrequent";
 
 const AUTH_STRINGS: Record<AuthKey, Record<AuthLang, string>> = {
   "tagline": {
@@ -136,6 +136,34 @@ const AUTH_STRINGS: Record<AuthKey, Record<AuthLang, string>> = {
     "de": "Wir haben einen Bestätigungslink an {email} gesendet. Bitte prüfen Sie Ihren Posteingang.",
     "ar": "أرسلنا رابط التأكيد إلى {email}. يرجى التحقق من بريدك الإلكتروني لتفعيل الحساب.",
     "fa": "لینک تأیید به {email} ارسال شد. لطفاً ایمیل خود را بررسی کنید تا حساب فعال شود.",
+  },
+  "emailAlreadyRegistered": {
+    "en": "This email is already registered. Please sign in, use Google/GitHub if you registered that way, or reset your password.",
+    "ja": "このメールアドレスは既に登録されています。ログインするか、以前 Google/GitHub で登録された場合はその方法でログインしてください。パスワードをお忘れの場合は「パスワードをお忘れですか」から再設定できます。",
+    "ko": "이 이메일은 이미 등록되었습니다. 로그인하거나, Google/GitHub로 가입하셨다면 해당 방법으로 로그인해 주세요. 비밀번호를 잊으셨다면 '비밀번호 찾기'를 이용하세요.",
+    "zh-CN": "该邮箱已被注册。请直接登录；如果你之前是用 Google/GitHub 登录的，请使用对应的社交账号登录；忘记密码可点击“忘记密码”。",
+    "zh-TW": "此信箱已被註冊。請直接登入；若您之前是用 Google/GitHub 登入的，請使用對應的社群帳號登入；忘記密碼可點選「忘記密碼」。",
+    "th": "อีเมลนี้ได้ลงทะเบียนแล้ว กรุณาเข้าสู่ระบบ หรือใช้ Google/GitHub หากเคยสมัครด้วยวิธีนั้น หรือกด \u201cลืมรหัสผ่าน\u201d เพื่อรีเซ็ต",
+    "vi": "Email này đã được đăng ký. Vui lòng đăng nhập, hoặc dùng Google/GitHub nếu bạn đã đăng ký bằng cách đó, hoặc đặt lại mật khẩu.",
+    "ru": "Этот адрес электронной почты уже зарегистрирован. Войдите, используйте Google/GitHub, если регистрировались так, или восстановите пароль.",
+    "fr": "Cet e-mail est déjà enregistré. Connectez-vous, utilisez Google/GitHub si vous vous êtes inscrit ainsi, ou réinitialisez votre mot de passe.",
+    "de": "Diese E-Mail ist bereits registriert. Bitte melden Sie sich an, nutzen Sie Google/GitHub, falls Sie sich so registriert haben, oder setzen Sie Ihr Passwort zurück.",
+    "ar": "هذا البريد الإلكتروني مسجّل بالفعل. يرجى تسجيل الدخول، أو استخدام Google/GitHub إذا سجّلت بهذه الطريقة، أو إعادة تعيين كلمة المرور.",
+    "fa": "این ایمیل قبلاً ثبت شده است. لطفاً وارد شوید، یا اگر با Google/GitHub ثبت\u200cنام کرده\u200cاید از همان روش استفاده کنید، یا رمز عبور را بازنشانی کنید.",
+  },
+  "signupTooFrequent": {
+    "en": "Too many attempts. Please wait about a minute and try again (a confirmation email may already have been sent to this address).",
+    "ja": "リクエストが多すぎます。約1分後に再度お試しください（このメールアドレスに確認メールが送信済みの可能性があります）。",
+    "ko": "요청이 너무 잦습니다. 약 1분 후 다시 시도해 주세요 (이 이메일로 확인 메일이 이미 발송되었을 수 있습니다).",
+    "zh-CN": "操作过于频繁，请稍候约 1 分钟再试（该邮箱可能已收到过确认邮件，请先查收）。",
+    "zh-TW": "操作過於頻繁，請稍候約 1 分鐘再試（此信箱可能已收到過確認郵件，請先查收）。",
+    "th": "ส่งบ่อยเกินไป กรุณารอประมาณ 1 นาทีแล้วลองใหม่ (อาจมีอีเมลยืนยันส่งไปแล้วที่อีเมลนี้)",
+    "vi": "Gửi quá thường xuyên. Vui lòng đợi khoảng 1 phút rồi thử lại (email xác nhận có thể đã được gửi tới địa chỉ này).",
+    "ru": "Слишком много попыток. Подождите около минуты и попробуйте снова (на этот адрес уже могло быть отправлено письмо с подтверждением).",
+    "fr": "Trop de tentatives. Veuillez attendre environ une minute et réessayer (un e-mail de confirmation a peut-être déjà été envoyé).",
+    "de": "Zu viele Versuche. Bitte warten Sie etwa eine Minute und versuchen Sie es erneut (möglicherweise wurde bereits eine Bestätigungs-E-Mail gesendet).",
+    "ar": "محاولات كثيرة جدًا. يرجى الانتظار حوالي دقيقة ثم المحاولة مرة أخرى (ربما تم إرسال بريد تأكيد بالفعل).",
+    "fa": "تلاش بیش از حد. لطفاً حدود یک دقیقه صبر کنید و دوباره امتحان کنید (ممکن است ایمیل تأیید قبلاً ارسال شده باشد).",
   },
   "errorTitle": {
     "en": "Error",

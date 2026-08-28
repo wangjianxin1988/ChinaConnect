@@ -52,6 +52,8 @@ export function LoginPage({ lang: langProp }: { lang?: string } = {}) {
   const [otpCode, setOtpCode] = useState("");
   const [resetPasswordSent, setResetPasswordSent] = useState(false);
   const [registerSent, setRegisterSent] = useState(false);
+  const [registerConflict, setRegisterConflict] = useState(false);
+  const [localError, setLocalError] = useState<string | null>(null);
   const [oauthPending, setOauthPending] = useState<string | null>(null);
   const [disabledProviders, setDisabledProviders] = useState<Set<string>>(new Set());
   const lang = useMemo<string>(() => langProp || detectLang(), [langProp]);
@@ -70,6 +72,13 @@ export function LoginPage({ lang: langProp }: { lang?: string } = {}) {
     resetPassword,
     clearError,
   } = useAuth();
+
+  const switchMode = (m: AuthMode) => {
+    setMode(m);
+    clearError();
+    setRegisterConflict(false);
+    setLocalError(null);
+  };
 
   // Pick up #register hash so /auth/register redirect lands on register tab
   useEffect(() => {
@@ -112,12 +121,27 @@ export function LoginPage({ lang: langProp }: { lang?: string } = {}) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     clearError();
+    setRegisterConflict(false);
+    setLocalError(null);
 
     if (mode === "login") {
       await signIn(email, password);
     } else if (mode === "register") {
       const res = await signUp({ email, password, displayName });
-      if (res.needsConfirmation) setRegisterSent(true);
+      if (res.needsConfirmation) {
+        setRegisterSent(true);
+      } else if (res.code === "email_already_registered") {
+        // GoTrue does not send a confirmation email for an existing account;
+        // guide the user to sign in / social login / password reset instead.
+        clearError();
+        setRegisterConflict(true);
+      } else if (
+        res.code === "over_email_send_rate_limit" ||
+        res.code === "over_request_rate_limit"
+      ) {
+        clearError();
+        setLocalError(authT(lang, "signupTooFrequent"));
+      }
     } else if (mode === "magic_link") {
       const { sent } = await signInWithLink(email);
       if (sent) setMagicLinkSent(true);
@@ -221,8 +245,7 @@ export function LoginPage({ lang: langProp }: { lang?: string } = {}) {
             <button
               key={tab.id}
               onClick={() => {
-                setMode(tab.id as AuthMode);
-                clearError();
+                switchMode(tab.id as AuthMode);
               }}
               className={cn(
                 "flex-1 px-4 py-2 rounded-md text-sm font-medium transition-colors",
@@ -345,7 +368,30 @@ export function LoginPage({ lang: langProp }: { lang?: string } = {}) {
             </svg>
             <div>
               <p className="text-sm font-medium text-red-800">{authT(lang, "errorTitle")}</p>
-              <p className="text-sm text-red-600 mt-1">{error}</p>
+              <p className="text-sm text-red-600 mt-1">{localError ?? error}</p>
+            </div>
+          </div>
+        )}
+
+        {/* Email already registered */}
+        {registerConflict && mode === "register" && (
+          <div className="mb-6 p-4 bg-amber-50 border border-amber-200 rounded-lg text-sm text-amber-800">
+            <p>{authT(lang, "emailAlreadyRegistered")}</p>
+            <div className="mt-3 flex flex-wrap gap-4">
+              <button
+                type="button"
+                className="text-blue-600 hover:underline font-medium"
+                onClick={() => switchMode("login")}
+              >
+                {authT(lang, "tabSignIn")}
+              </button>
+              <button
+                type="button"
+                className="text-blue-600 hover:underline font-medium"
+                onClick={() => switchMode("forgot_password")}
+              >
+                {authT(lang, "forgotPassword")}
+              </button>
             </div>
           </div>
         )}
@@ -492,15 +538,15 @@ export function LoginPage({ lang: langProp }: { lang?: string } = {}) {
           {mode === "login" && (
             <>
               <span className="text-gray-500">{authT(lang, "noAccount")}</span>
-              <button type="button" className="text-blue-600 hover:underline" onClick={() => { setMode("register"); clearError(); }}>
+              <button type="button" className="text-blue-600 hover:underline" onClick={() => switchMode("register")}>
                 {authT(lang, "signUp")}
               </button>
               <span className="text-gray-300">|</span>
-              <button type="button" className="text-blue-600 hover:underline" onClick={() => { setMode("magic_link"); clearError(); }}>
+              <button type="button" className="text-blue-600 hover:underline" onClick={() => switchMode("magic_link")}>
                 {authT(lang, "magicLink")}
               </button>
               <span className="text-gray-300">|</span>
-              <button type="button" className="text-blue-600 hover:underline" onClick={() => { setMode("forgot_password"); clearError(); }}>
+              <button type="button" className="text-blue-600 hover:underline" onClick={() => switchMode("forgot_password")}>
                 {authT(lang, "forgotPassword")}
               </button>
             </>
@@ -508,13 +554,13 @@ export function LoginPage({ lang: langProp }: { lang?: string } = {}) {
           {mode === "register" && (
             <>
               <span className="text-gray-500">{authT(lang, "haveAccount")}</span>
-              <button type="button" className="text-blue-600 hover:underline" onClick={() => { setMode("login"); clearError(); }}>
+              <button type="button" className="text-blue-600 hover:underline" onClick={() => switchMode("login")}>
                 {authT(lang, "signIn")}
               </button>
             </>
           )}
           {(mode === "magic_link" || mode === "forgot_password") && (
-            <button type="button" className="text-blue-600 hover:underline" onClick={() => { setMode("login"); clearError(); }}>
+            <button type="button" className="text-blue-600 hover:underline" onClick={() => switchMode("login")}>
               {authT(lang, "backToSignIn")}
             </button>
           )}

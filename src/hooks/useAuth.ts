@@ -42,7 +42,7 @@ export interface UseAuthReturn {
 
   // Actions
   signIn: (email: string, password: string) => Promise<boolean>;
-  signUp: (data: SignUpData) => Promise<{ ok: boolean; needsConfirmation: boolean }>;
+  signUp: (data: SignUpData) => Promise<{ ok: boolean; needsConfirmation: boolean; code?: string | undefined }>;
   signInWithProvider: (provider: AuthProvider) => Promise<void>;
   signInWithLink: (email: string) => Promise<{ sent: boolean; error: string | null }>;
   verifyEmailOtp: (email: string, token: string) => Promise<boolean>;
@@ -199,7 +199,7 @@ export function useAuth(options: UseAuthOptions = {}): UseAuthReturn {
     }
   }, []);
 
-  const signUp = useCallback(async (data: SignUpData): Promise<{ ok: boolean; needsConfirmation: boolean }> => {
+  const signUp = useCallback(async (data: SignUpData): Promise<{ ok: boolean; needsConfirmation: boolean; code?: string | undefined }> => {
     try {
       setIsLoading(true);
       setError(null);
@@ -208,7 +208,7 @@ export function useAuth(options: UseAuthOptions = {}): UseAuthReturn {
 
       if (signUpError) {
         setError(signUpError.message);
-        return { ok: false, needsConfirmation: false };
+        return { ok: false, needsConfirmation: false, code: signUpError.code };
       }
 
       if (newUser) {
