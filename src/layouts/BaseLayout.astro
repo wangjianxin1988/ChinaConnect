@@ -627,10 +627,11 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
         function renderLoggedIn(user) {
           var c = document.getElementById("auth-nav-container");
           if (!c) return;
-          var avatar = user.avatarUrl || presetAvatar(user.id || user.email || "");
+          var fallbackAvatar = presetAvatar(user.id || user.email || "");
+          var avatar = user.avatarUrl || fallbackAvatar;
           var initial = (user.displayName || user.email || "U").charAt(0).toUpperCase();
           var avatarHtml = avatar
-            ? '<img src="' + escapeHtml(avatar) + '" alt="" class="w-7 h-7 rounded-full object-cover" />'
+            ? '<img src="' + escapeHtml(avatar) + '" alt="" onerror="this.onerror=null;this.src=\'' + fallbackAvatar + '\';" class="w-7 h-7 rounded-full object-cover" />'
             : '<div class="w-7 h-7 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 text-white flex items-center justify-center text-xs font-bold">' + escapeHtml(initial) + '</div>';
 
           c.innerHTML =

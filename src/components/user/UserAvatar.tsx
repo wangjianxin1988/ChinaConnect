@@ -47,6 +47,8 @@ function getInitials(name: string | null | undefined): string {
 
 function getAvatarUrl(url: string | null | undefined): string | null {
   if (!url) return null;
+  // Same-origin paths (e.g. bundled /avatars/*.svg preset avatars)
+  if (url.startsWith("/")) return url;
   // Handle Supabase storage URLs
   if (url.startsWith("http")) return url;
   // Handle Supabase storage paths

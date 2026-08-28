@@ -122,7 +122,7 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
         id: user.id,
         email: user.email ?? "",
         displayName,
-        avatarUrl: avatarUrl ?? profile?.avatar_url ?? null,
+        avatarUrl: profile?.avatar_url || avatarUrl || null,
         profile: profile
           ? {
               displayName: profile.display_name,

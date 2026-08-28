@@ -1,7 +1,7 @@
 // ChinaConnect Service Worker with Workbox-style caching strategies
 // Version: 1.1.0 - Enhanced offline support
 
-const CACHE_VERSION = "v1.2.0-mslna5nh";
+const CACHE_VERSION = "v1.3.0-avatar-harden";
 const CACHE_NAME = `chinaconnect-${CACHE_VERSION}`;
 
 // Workbox-style cache names for different strategies
@@ -104,6 +104,20 @@ self.addEventListener("fetch", (event) => {
   // Skip AI API requests - do not cache, these require network
   if (isAIAPIRequest(url)) {
     event.respondWith(networkFirstWithCacheFallback(request, AI_RESPONSE_CACHE));
+    return;
+  }
+
+  // Auth-state endpoints carry per-request auth state - never cache them so a
+  // stale signed-in/out response is never served after re-login.
+  if (url.pathname.startsWith("/api/auth/")) {
+    event.respondWith(
+      fetch(request).catch(function () {
+        return new Response(JSON.stringify({ error: "Offline" }), {
+          status: 503,
+          headers: { "Content-Type": "application/json" },
+        });
+      }),
+    );
     return;
   }
 
@@ -268,11 +282,14 @@ async function networkFirstWithCacheFallback(request, cacheName) {
     const networkResponse = await fetch(request);
 
     if (networkResponse.ok) {
-      const cache = await caches.open(cacheName);
-      cache.put(request, networkResponse.clone());
+      const cacheControl = networkResponse.headers.get("cache-control") || "";
+      if (!cacheControl.includes("no-store")) {
+        const cache = await caches.open(cacheName);
+        cache.put(request, networkResponse.clone());
 
-      // Send cache status update to clients
-      broadcastCacheUpdate(cacheName);
+        // Send cache status update to clients
+        broadcastCacheUpdate(cacheName);
+      }
     }
 
     return networkResponse;
