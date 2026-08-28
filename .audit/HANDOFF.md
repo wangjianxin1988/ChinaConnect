@@ -1853,3 +1853,21 @@ ode scripts/check-i18n.mjs && npx astro build。
 - **验证**: `npx tsc --noEmit` 过、`pnpm test` 123/123、`scripts/check-i18n.mjs` 12 语言 0 缺口、生产构建 26722 页 111.8s、生产关键页面(login/account/ai/pricing/city-beijing) 200。
 - **遗留**: 测试账号 `ai.codextest.1787386274959@example.com`（business 档）保留作回归；探针数据与测试用户已清理。
 - **下一会话**: 部署后可在生产复跑认证 E2E（redirect_to 需为 chinaengage.org）；关注 SMTP 限流（当前 30/小时）与 Creem webhook 回调测试。
+
+### 2026-08-28 会话 #62：修复邮箱注册确认链接不生效（redirect_to 参数位置错误）+ callback 反馈多语言化
+
+- **用户反馈**: 邮箱注册后点击邮件内确认链接，网页登录状态没变、也没有任何提示；要求点击链接直接进入登录态，或提示「注册成功请登录」，并同步 12 语言版本。
+- **根因（源码 + 真实邮件双重实证）**: GoTrue `getRedirectTo`（internal/utilities/request.go）只从 **query 参数 / 表单 body / header** 读取 `redirect_to`，**绝不解析 JSON body**；supabase-js 的 `_request` 也是把 `redirect_to` 追加为 URL query。而 `src/services/auth.ts:signUpWithEmail` 裸 fetch 把 `redirectTo`（后来改成 `redirect_to`）放在 **JSON body** 里 → GoTrue 静默忽略 → 回退 site_url → 确认邮件链接变成 `https://xyvuqbpwrhkukjgzveyc.supabase.co/auth/v1/verify?token=...&type=signup&redirect_to=https://chinaengage.org` → 用户点击后被 GoTrue 重定向到**首页**，从不经过 `/auth/callback`，无登录态也无提示。
+- **修复（commit 139fa1b，已上线）**:
+  - `src/services/auth.ts`: signup 请求改为 `POST /auth/v1/signup?redirect_to=<encoded callback>`（query 参数），移除 body 中的错误字段。
+  - `src/lib/auth/supabase-auth.ts`: 未使用的 SDK signup 补 `emailRedirectTo`（防御一致）。
+  - `src/pages/auth/callback.astro` + `[lang]/auth/callback.astro`: ① 处理 GoTrue 错误重定向（`error_code=otp_expired` 等 query+hash）→ 显示本地化「链接无效或已过期」；② 全流程失败且 `type=signup` → 显示绿色「邮箱验证成功，请登录继续」+ 登录按钮（覆盖“链接已消费但会话未建立”场景）。
+  - `auth-strings.ts`: 新增 `callbackLinkExpired`/`callbackSignupDoneTitle`/`callbackSignupDoneDesc` 三个 key × 12 语言。
+- **验证（本地 + 生产双跑，mail.tm 真实收件 + Playwright）**:
+  - 修复后确认邮件链接 `redirect_to=https://chinaengage.org/ja/auth/callback`（语言前缀正确）。
+  - 本地 E2E：注册(ja) → 收信 → 点击链接 → **直接落在 /ja/account，头部显示用户名+邮箱+预设头像，localStorage 有真实 JWT**。
+  - 生产 E2E：chinaengage.org/ja 注册 → 确认邮件 → 点击 → **落在 https://chinaengage.org/ja/account，账户页显示用户名+邮箱**。
+  - callback 分支 UI：ja/en/zh-CN 的过期链接错误提示 + signup-done 提示均按语言正确渲染，登录按钮指向对应语言前缀。
+  - `npx tsc --noEmit` 0 错误；`check-i18n` 12/12 0 缺失；`node node_modules/astro/astro.js build` 26722 页成功；CI deploy + Live probe 全绿。
+- **清理**: 本会话 10 个 QA 测试账号（emalupe.com/mailinator 系，含上一会话遗留 `cc.signuptest.220309@mailinator.com`）已用 admin API 删除并复核 0 残留。
+- **经验沉淀**: Supabase GoTrue 裸 fetch 时，`redirect_to` 必须放 URL query（`?redirect_to=`），JSON body 会被忽略；SDK 路径用 `emailRedirectTo`/`redirectTo` 选项即可。
