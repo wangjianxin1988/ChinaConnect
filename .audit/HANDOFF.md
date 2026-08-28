@@ -1871,3 +1871,23 @@ ode scripts/check-i18n.mjs && npx astro build。
   - `npx tsc --noEmit` 0 错误；`check-i18n` 12/12 0 缺失；`node node_modules/astro/astro.js build` 26722 页成功；CI deploy + Live probe 全绿。
 - **清理**: 本会话 10 个 QA 测试账号（emalupe.com/mailinator 系，含上一会话遗留 `cc.signuptest.220309@mailinator.com`）已用 admin API 删除并复核 0 残留。
 - **经验沉淀**: Supabase GoTrue 裸 fetch 时，`redirect_to` 必须放 URL query（`?redirect_to=`），JSON body 会被忽略；SDK 路径用 `emailRedirectTo`/`redirectTo` 选项即可。
+### 2026-08-28 会话 #63：跨设备邮箱确认自动登录（电脑端注册页感知确认）
+
+- **用户反馈**: 点击邮箱里的链接会在邮箱所在设备（手机）登录，电脑端注册页没有任何变化。要求：电脑端注册页自动登录，或提示「注册成功请登录」，并同步 12 语言。
+- **方案设计（跨设备通知）**: 注册页与点击链接的设备是两个独立浏览器，无共享 session。采用「注册页轮询 + 随机 nonce 防护」：
+  - 注册时前端生成 `confirm_nonce`（crypto.randomUUID），随 signup `user_metadata` 写入 `raw_user_meta_data->>'confirm_nonce'`，同时存 sessionStorage（`cc_pending_confirm`）。
+  - 新增 security-definer RPC `public.check_email_confirmed(target_email, nonce)`：必须 nonce 匹配才返回该邮箱是否已确认，anon 无法枚举邮箱。
+  - 注册页每 8s 轮询一次（最多 40 次 ≈5 分钟）；确认后：本浏览器已有 session 则直接跳转；无 session 且密码还在内存 → 用刚输入的密码自动登录；刷新过（密码丢失）→ 显示绿色「邮箱验证成功」+「立即登录」按钮。
+- **改动（commit 57367e5，已上线）**:
+  - `supabase/migrations/20260910_check_email_confirmed.sql`（已用 `supabase db query --linked -f` 应用到生产）
+  - `src/types/user.ts`: SignUpData 增加 `confirmNonce`
+  - `src/services/auth.ts`: signup `user_metadata` 写入 `confirm_nonce`
+  - `src/components/user/LoginPage.tsx`: startConfirmPoll / 刷新恢复逻辑 / 确认成功 UI
+  - `src/components/user/auth-strings.ts`: 新增 4 key × 12 语言（registerWaitHint / registerConfirmedTitle / registerConfirmedDesc / registerSignInNow）
+- **验证（本地 + 生产跨设备 E2E 双 PASS）**:
+  - Playwright 双浏览器上下文模拟「电脑 A 注册 → 手机 B 点邮件链接」：A 自动登录 /ja/account（用户名正确显示）。
+  - 场景 2（A 刷新过、密码丢失）：A 显示「メール認証が完了しました」+「今すぐログイン」按钮。
+  - 本地 dev + 生产 chinaengage.org 均 PASS；`npx tsc --noEmit` 0 错；`check-i18n` 12/12 0 缺失；GitHub Actions Deploy 成功。
+- **清理**: 5 个 E2E 测试账号（ccxd*/ccdbg*@emalupe.com）已用 service_role admin API 删除，复核 0 残留。
+- **注意**: GoTrue 确认链接 redirect_to 已在会话 #62 改为 query 参数；本轮只加 nonce 与轮询，未改动 redirect_to。轮询是前台 sessionStorage 方案，关闭标签页后失效（符合预期）；5 分钟超时后需手动点邮件链接走 callback 登录。
+- **下一会话**: 无阻塞项。可关注：生产 SMTP 送达率、Creem webhook 回调测试、新城市/博客更新节奏。
