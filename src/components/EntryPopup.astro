@@ -25,6 +25,12 @@ const UI: Record<string, { title: string; gotIt: string; close: string }> = {
 
 const ui = UI[lang] || UI.en;
 
+// 2026-10-18: announcement links are authored as root-relative ("/city/shangri-la"),
+// which always resolved to the English site. Prefix the current locale so a Japanese
+// reader landing on /ja/ opens /ja/city/shangri-la. English keeps the bare path
+// (prefixDefaultLocale: false in astro.config).
+const langPrefix = lang && lang !== "en" ? `/${lang}` : "";
+
 // Server-side pick the right language for each announcement so the client
 // just renders plain strings (no client-side translation needed).
 const payload = (announcements || [])
@@ -34,7 +40,7 @@ const payload = (announcements || [])
     date: a.date || "",
     title: a.title?.[lang] || a.title?.en || "",
     body: a.body?.[lang] || a.body?.en || "",
-    link: a.link || "",
+    link: a.link ? (a.link.startsWith("/") ? `${langPrefix}${a.link}` : a.link) : "",
   }));
 ---
 

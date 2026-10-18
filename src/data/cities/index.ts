@@ -39,6 +39,7 @@ import luoyang from "@/data/cities/luoyang.json";
 import ningbo from "@/data/cities/ningbo.json";
 import quanzhou from "@/data/cities/quanzhou.json";
 // Batch 4 (Available cities)
+import shangriLa from "@/data/cities/shangri-la.json";
 import tianjin from "@/data/cities/tianjin.json";
 import weihai from "@/data/cities/weihai.json";
 import xining from "@/data/cities/xining.json";
@@ -84,6 +85,8 @@ export const cities: City[] = [
   xining,
   lanzhou,
   dunhuang,
+  // Batch 5 (2026-10-18): 香格里拉 — 第 36 城
+  shangriLa,
 ];
 
 export const citySlugs = cities.map((c) => c.slug);
