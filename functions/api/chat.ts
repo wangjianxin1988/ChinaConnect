@@ -1,9 +1,10 @@
 /**
- * Cloudflare Pages Function — MiniMax API Proxy
+ * Cloudflare Pages Function — LLM API Proxy (DeepSeek, 2026-08-31 起)
  *
- * This server-side proxy forwards chat requests to the MiniMax API.
- * The API key is stored as a Cloudflare Pages secret (MINIMAX_API_KEY),
- * never exposed to the client.
+ * This server-side proxy forwards chat requests to the LLM provider.
+ * 2026-08-31 信哥要求从 MiniMax 切到 DeepSeek：key 读 DEEPSEEK_API_KEY（Pages secret），
+ * 缺失时回落到旧的 MINIMAX_API_KEY / PUBLIC_MINIMAX_API_KEY 以保持向后兼容。
+ * The API key is never exposed to the client.
  *
  * Supports both streaming (SSE) and non-streaming requests.
  */
@@ -11,7 +12,11 @@
 import type { PagesFunction } from "@cloudflare/workers-types";
 
 interface Env {
-  MINIMAX_API_KEY: string;
+  DEEPSEEK_API_KEY?: string;
+  DEEPSEEK_BASE_URL?: string;
+  DEEPSEEK_MODEL?: string;
+  MINIMAX_API_KEY?: string;
+  PUBLIC_MINIMAX_API_KEY?: string;
 }
 
 export const onRequestPost: PagesFunction<Env> = async (context) => {
@@ -24,18 +29,20 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     "Access-Control-Allow-Headers": "Content-Type",
   };
 
-  // Get API key from environment. Prefer the dedicated secret but fall back
-  // to PUBLIC_MINIMAX_API_KEY so Pages runtime (which sometimes loses the
-  // dedicated secret after a wrangler pages secret put round-trip) still
-  // finds a usable MiniMax bearer token.
-  const apiKey =
-    (env as unknown as Record<string, string>).MINIMAX_API_KEY ||
-    (env as unknown as Record<string, string>).PUBLIC_MINIMAX_API_KEY;
+  // Resolve provider: DeepSeek first, MiniMax as legacy fallback.
+  const raw = env as unknown as Record<string, string | undefined>;
+  const deepseekKey = raw.DEEPSEEK_API_KEY;
+  const apiKey = deepseekKey || raw.MINIMAX_API_KEY || raw.PUBLIC_MINIMAX_API_KEY;
+  const upstreamUrl = deepseekKey
+    ? `${(raw.DEEPSEEK_BASE_URL || "https://api.deepseek.com/v1").replace(/\/+$/, "")}/chat/completions`
+    : "https://api.minimax.chat/v1/chat/completions";
+  const defaultModel = deepseekKey ? (raw.DEEPSEEK_MODEL || "deepseek-flash") : "MiniMax-Text-01";
+
   if (!apiKey) {
     return new Response(
       JSON.stringify({
-        error: "Server configuration error: MINIMAX_API_KEY not set",
-        hint: "Set MINIMAX_API_KEY as a Pages secret or in wrangler.toml [vars].",
+        error: "Server configuration error: DEEPSEEK_API_KEY not set",
+        hint: "Set DEEPSEEK_API_KEY as a Pages secret (or keep MINIMAX_API_KEY as legacy fallback).",
       }),
       { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } },
     );
@@ -45,8 +52,13 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     // Parse the request body
     const body = await request.json();
 
-    // Forward to MiniMax API
-    const minimaxResponse = await fetch("https://api.minimax.chat/v1/chat/completions", {
+    // Force a provider-compatible model: client may still send a MiniMax model name.
+    if (deepseekKey && (!body.model || /minimax/i.test(String(body.model)))) {
+      body.model = defaultModel;
+    }
+
+    // Forward to the LLM API
+    const upstreamResponse = await fetch(upstreamUrl, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -57,8 +69,8 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
 
     // If streaming, pipe the response through
     if (body.stream) {
-      return new Response(minimaxResponse.body, {
-        status: minimaxResponse.status,
+      return new Response(upstreamResponse.body, {
+        status: upstreamResponse.status,
         headers: {
           "Content-Type": "text/event-stream",
           "Cache-Control": "no-cache",
@@ -69,9 +81,9 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     }
 
     // Non-streaming: return JSON response
-    const data = await minimaxResponse.text();
+    const data = await upstreamResponse.text();
     return new Response(data, {
-      status: minimaxResponse.status,
+      status: upstreamResponse.status,
       headers: {
         "Content-Type": "application/json",
         ...corsHeaders,

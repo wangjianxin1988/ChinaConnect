@@ -6,10 +6,12 @@
 // This is invoked by the prebuild hook to ensure no city is missing translations.
 import fs from 'fs';
 import path from 'path';
-import { getMiniMaxConfig } from './lib/minimax-config.mjs';
+// 2026-08-31 信哥要求:翻译全部切到 DeepSeek（原 MiniMax key 已失效 HTTP 401）
+// getTranslateProvider() 按 TRANSLATE_PROVIDER > DEEPSEEK_API_KEY > DASHSCOPE > MiniMax 优先级选 provider
+import { getTranslateProvider } from './lib/translate-provider.mjs';
 
-const { apiKey: KEY, baseUrl: HOST } = getMiniMaxConfig();
-const MODEL = "MiniMax-Text-01";
+try { process.loadEnvFile(); } catch (e) { if (e?.code !== 'ENOENT') throw e; }
+const { apiKey: KEY, baseUrl: HOST, model: MODEL } = getTranslateProvider();
 
 const LANGS = ["ja", "ko", "th", "vi", "ru", "fr", "de", "ar", "fa", "zh-CN", "zh-TW"];
 const TARGETS = {
@@ -41,9 +43,13 @@ function getTranslatableFields(city) {
   }
   if (Array.isArray(city.culturalTips)) {
     city.culturalTips.forEach((t, i) => {
-      if (typeof t === 'object') {
+      if (typeof t === 'object' && t !== null) {
         if (t.title) fields['culturalTip.' + i + '.title'] = t.title;
         if (t.content) fields['culturalTip.' + i + '.content'] = t.content;
+      } else if (typeof t === 'string' && t) {
+        // 2026-10-18: some cities store culturalTips as plain strings (beijing uses
+        // objects with title/content). Without this branch those strings never translate.
+        fields['culturalTipStr.' + i] = t;
       }
     });
   }
@@ -70,11 +76,32 @@ function getTranslatableFields(city) {
       if (r.address) fields['rest.' + r.id + '.address'] = r.address;
       if (r.cuisine) fields['rest.' + r.id + '.cuisine'] = r.cuisine;
       if (r.hours) fields['rest.' + r.id + '.hours'] = r.hours;
+      // 2026-10-18: restaurants carry BOTH `highlights` and `dishHighlights`, plus a
+      // `tips` field. Only dishHighlights was handled, so highlights/tips stayed English.
+      if (r.tips) fields['rest.' + r.id + '.tips'] = r.tips;
+      if (Array.isArray(r.highlights)) {
+        r.highlights.forEach((h, i) => { if (h) fields['rest.' + r.id + '.highlight.' + i] = h; });
+      }
       if (Array.isArray(r.dishHighlights)) {
         r.dishHighlights.forEach((d, i) => { if (d) fields['rest.' + r.id + '.dish.' + i] = d; });
       }
       if (Array.isArray(r.tags)) {
         r.tags.forEach((t, i) => { if (t) fields['rest.' + r.id + '.tag.' + i] = t; });
+      }
+    });
+  }
+  // 2026-10-18: hotels were never translated by this script even though live cities
+  // (beijing etc.) do have translated hotels — new cities shipped with English hotels.
+  if (Array.isArray(city.hotels)) {
+    city.hotels.forEach((h) => {
+      if (!h.id) return;
+      if (h.name) fields['hotel.' + h.id + '.name'] = h.name;
+      if (h.description) fields['hotel.' + h.id + '.description'] = h.description;
+      if (h.address) fields['hotel.' + h.id + '.address'] = h.address;
+      if (h.priceRange) fields['hotel.' + h.id + '.priceRange'] = h.priceRange;
+      if (h.tips) fields['hotel.' + h.id + '.tips'] = h.tips;
+      if (Array.isArray(h.highlights)) {
+        h.highlights.forEach((x, i) => { if (x) fields['hotel.' + h.id + '.highlight.' + i] = x; });
       }
     });
   }
@@ -110,98 +137,102 @@ function isTranslated(value, originalEn, lang) {
   return !/^[\\x00-\\x7F]+$/.test(v) || lang === "fr" || lang === "de" || lang === "vi";
 }
 
-function isFieldUntranslated(cityI18n, field, enValue, currentLang) {
-  // field is in dot notation like "attr.beijing-forbidden-city.description"
-  // We need to navigate the city i18n structure
-  const parts = field.split('.');
-  let cur = cityI18n;
-  for (let i = 0; i < parts.length; i++) {
-    if (cur == null) return true;
+// ---------------------------------------------------------------------------
+// Field path resolver (2026-10-18)
+// One walker for both read and write, so isFieldUntranslated and applyTranslation
+// can never disagree. Handles nested arrays (highlights / dishHighlights / tags)
+// which the old hand-written branches wrote to a wrong key (e.g. attr.highlight).
+//   description
+//   highlights.<i>
+//   climate.<key>
+//   culturalTip.<i>.<key>       object-shaped tips
+//   culturalTipStr.<i>          plain-string tips
+//   attr.<id>.<field>  | attr.<id>.highlight.<i>
+//   rest.<id>.<field>  | rest.<id>.dish.<i> | rest.<id>.tag.<i>
+//   hotel.<id>.<field> | hotel.<id>.highlight.<i>
+// ---------------------------------------------------------------------------
+const ROOT_COLLECTIONS = { attr: "attractions", rest: "restaurants", hotel: "hotels" };
+const ARRAY_ALIASES = { highlight: "highlights", dish: "dishHighlights", tag: "tags" };
+
+function resolveSlot(root, field) {
+  const parts = field.split(".");
+  let cur = root;
+  let i = 0;
+
+  while (i < parts.length) {
     const p = parts[i];
-    // attr.X.name -> city.attractions[].name
-    if (parts[0] === 'attr' && i === 1) {
-      const id = parts[1];
-      const attr = (cur.attractions || []).find(a => a.id === id);
-      cur = attr;
-      if (!cur) return true;
+
+    // <collection>.<id>.<rest...>
+    if (i === 0 && ROOT_COLLECTIONS[p]) {
+      const id = parts[i + 1];
+      const arr = cur[ROOT_COLLECTIONS[p]] || [];
+      const item = arr.find((x) => x && x.id === id);
+      if (!item) return null;
+      cur = item;
+      i += 2;
       continue;
     }
-    if (parts[0] === 'rest' && i === 1) {
-      const id = parts[1];
-      const rest = (cur.restaurants || []).find(r => r.id === id);
-      cur = rest;
-      if (!cur) return true;
+
+    // culturalTip.<i>.<key>
+    if (i === 0 && p === "culturalTip") {
+      const idx = Number(parts[i + 1]);
+      const arr = cur.culturalTips || [];
+      const tip = arr[idx];
+      if (tip == null || typeof tip !== "object") return null;
+      cur = tip;
+      i += 2;
       continue;
     }
-    if (parts[0] === 'culturalTip' && i === 1) {
-      const idx = parseInt(parts[1], 10);
-      cur = (cur.culturalTips || [])[idx];
-      if (!cur) return true;
+
+    // culturalTipStr.<i> / highlights.<i> -> direct array slot
+    if (i === 0 && (p === "culturalTipStr" || p === "highlights")) {
+      const arrKey = p === "culturalTipStr" ? "culturalTips" : "highlights";
+      const arr = cur[arrKey];
+      if (!Array.isArray(arr)) return null;
+      return { container: arr, key: Number(parts[i + 1]) };
+    }
+
+    const realKey = ARRAY_ALIASES[p] || p;
+    const nextIsIndex = /^\d+$/.test(parts[i + 1] || "");
+
+    if (nextIsIndex) {
+      const arr = cur[realKey];
+      if (!Array.isArray(arr)) return null;
+      if (i + 2 < parts.length) return null; // deeper array nesting unsupported
+      return { container: arr, key: Number(parts[i + 1]) };
+    }
+
+    if (i + 1 < parts.length) {
+      const next = cur[realKey];
+      if (next == null) return null;
+      cur = next;
+      i += 1;
       continue;
     }
-    if (parts[0] === 'highlights' && i === 0) {
-      const idx = parseInt(parts[1], 10);
-      cur = (cur || [])[idx];
-      if (!cur) return true;
-      continue;
-    }
-    if (parts[0] === 'climate' && i === 1) {
-      cur = (cur.climate || {})[parts[2]];
-      continue;
-    }
-    // generic
-    cur = cur[p];
+
+    return { container: cur, key: realKey };
   }
-  return !isTranslated(cur, enValue, currentLang);
+  return null;
+}
+
+function isFieldUntranslated(cityI18n, field, enValue, currentLang) {
+  const slot = resolveSlot(cityI18n, field);
+  if (!slot) return true;
+  return !isTranslated(slot.container[slot.key], enValue, currentLang);
 }
 
 function applyTranslation(cityI18n, field, value) {
-  const parts = field.split('.');
-  if (parts[0] === 'attr' && parts.length >= 3) {
-    const id = parts[1];
-    const attrName = parts[2];
-    const attr = (cityI18n.attractions || []).find(a => a.id === id);
-    if (attr) attr[attrName] = value;
-    return;
-  }
-  if (parts[0] === 'rest' && parts.length >= 3) {
-    const id = parts[1];
-    const restName = parts[2];
-    const rest = (cityI18n.restaurants || []).find(r => r.id === id);
-    if (rest) rest[restName] = value;
-    return;
-  }
-  if (parts[0] === 'culturalTip' && parts.length >= 3) {
-    const idx = parseInt(parts[1], 10);
-    const tipName = parts[2];
-    if (cityI18n.culturalTips && cityI18n.culturalTips[idx]) {
-      cityI18n.culturalTips[idx][tipName] = value;
-    }
-    return;
-  }
-  if (parts[0] === 'highlights' && parts.length >= 2) {
-    const idx = parseInt(parts[1], 10);
-    if (cityI18n.highlights && cityI18n.highlights[idx] !== undefined) {
-      cityI18n.highlights[idx] = value;
-    }
-    return;
-  }
-  if (parts[0] === 'climate' && parts.length >= 2) {
-    if (!cityI18n.climate) cityI18n.climate = {};
-    cityI18n.climate[parts[1]] = value;
-    return;
-  }
-  if (parts.length === 1) {
-    cityI18n[parts[0]] = value;
-    return;
-  }
+  const slot = resolveSlot(cityI18n, field);
+  if (!slot) return false;
+  slot.container[slot.key] = value;
+  return true;
 }
 
 async function callChat(prompt) {
   const body = { model: MODEL, messages: [{ role: 'user', content: prompt }], temperature: 0.2, max_tokens: 8000 };
   const res = await fetch(HOST + '/v1/chat/completions', {
     method: 'POST',
-    signal: AbortSignal.timeout(25000),
+    signal: AbortSignal.timeout(90000),
     headers: { Authorization: 'Bearer ' + KEY, 'Content-Type': 'application/json' },
     body: JSON.stringify(body),
   });
@@ -220,7 +251,8 @@ function extractJson(content) {
   return JSON.parse(c);
 }
 
-async function translateFields(lang, fields) {
+// Translate one batch of fields (single API call + up to 3 attempts).
+async function translateBatch(lang, fields) {
   const keys = Object.keys(fields);
   if (keys.length === 0) return {};
   const lines = keys.map(k => '- ' + k + ' = "' + String(fields[k]).replace(/"/g, '\\"').replace(/\n/g, ' ') + '"').join('\n');
@@ -231,13 +263,36 @@ async function translateFields(lang, fields) {
       const obj = extractJson(content);
       const result = {};
       for (const k of keys) {
-        if (isTranslated(obj[k], fields[k])) result[k] = obj[k];
+        if (isTranslated(obj[k], fields[k], lang)) result[k] = obj[k];
       }
       if (Object.keys(result).length > 0) return result;
     } catch (e) { /* retry */ }
     await new Promise(r => setTimeout(r, 1500));
   }
   return {};
+}
+
+// BUG FIX 2026-10-18: a single city has ~140 translatable fields. Sending them all in
+// one prompt blows past max_tokens, the JSON gets truncated, every retry fails, and the
+// whole language silently produces zero translations. Batch them instead.
+const BATCH_SIZE = 22;
+
+async function translateFields(lang, fields) {
+  const keys = Object.keys(fields);
+  if (keys.length === 0) return {};
+  if (keys.length <= BATCH_SIZE) return translateBatch(lang, fields);
+
+  const result = {};
+  const total = Math.ceil(keys.length / BATCH_SIZE);
+  for (let i = 0; i < keys.length; i += BATCH_SIZE) {
+    const chunk = {};
+    for (const k of keys.slice(i, i + BATCH_SIZE)) chunk[k] = fields[k];
+    const part = await translateBatch(lang, chunk);
+    Object.assign(result, part);
+    const n = Math.floor(i / BATCH_SIZE) + 1;
+    console.log('  [' + lang + '] batch ' + n + '/' + total + ' → ' + Object.keys(part).length + '/' + Object.keys(chunk).length + ' translated');
+  }
+  return result;
 }
 
 async function run() {
@@ -253,10 +308,16 @@ async function run() {
   if (specific) cities = cities.filter(c => specific.includes(c.slug));
 
   let totalNew = 0;
-  for (const lang of LANGS) {
+
+  // 2026-10-18: translate languages concurrently. Serially this was ~4 min per language
+  // (~44 min for 11). Concurrency 4 brings a single city down to a few minutes.
+  const CONCURRENCY = Number(process.env.TRANSLATE_CONCURRENCY || 4);
+
+  async function processLang(lang) {
     const langDir = path.join(outDir, lang);
     if (!fs.existsSync(langDir)) fs.mkdirSync(langDir, { recursive: true });
     let langNew = 0;
+    let attempted = 0;
     for (const city of cities) {
       const outFile = path.join(langDir, city.slug + '.json');
       let i18n = JSON.parse(JSON.stringify(city.data));
@@ -269,20 +330,54 @@ async function run() {
         if (isFieldUntranslated(i18n, k, v, lang)) untranslated[k] = v;
       }
       if (Object.keys(untranslated).length === 0) continue;
-      const result = await translateFields(lang, untranslated);
-      for (const [k, v] of Object.entries(result)) {
-        applyTranslation(i18n, k, v);
-        langNew++;
+      attempted++;
+      // 2026-10-18: translate batch-by-batch and flush to disk after each batch, so a
+      // killed/time-limited run keeps the batches it already paid for.
+      const uKeys = Object.keys(untranslated);
+      let writeFailed = true;
+      for (let i = 0; i < uKeys.length; i += BATCH_SIZE) {
+        const chunk = {};
+        for (const k of uKeys.slice(i, i + BATCH_SIZE)) chunk[k] = untranslated[k];
+        const part = await translateBatch(lang, chunk);
+        if (Object.keys(part).length === 0) continue;
+        for (const [k, v] of Object.entries(part)) {
+          applyTranslation(i18n, k, v);
+          langNew++;
+        }
+        writeFailed = false;
+        // BUG FIX 2026-08-31: only persist when this batch actually produced translations,
+        // so a failed API call can never overwrite the file with an English copy.
+        fs.writeFileSync(outFile, JSON.stringify(i18n, null, 2), 'utf8');
+        const n = Math.floor(i / BATCH_SIZE) + 1;
+        console.log('  [' + lang + '/' + city.slug + '] batch ' + n + '/' + Math.ceil(uKeys.length / BATCH_SIZE) + ' flushed → ' + Object.keys(part).length + ' fields');
       }
-      fs.writeFileSync(outFile, JSON.stringify(i18n, null, 2), 'utf8');
+      if (writeFailed) {
+        console.warn('  [' + lang + '/' + city.slug + '] skipped write: translation failed (likely API quota/HTTP error), file would have been en-only contamination');
+      }
     }
     if (langNew > 0) {
       console.log('[' + lang + '] translated ' + langNew + ' new fields');
-      totalNew += langNew;
+      return langNew;
+    } else if (attempted > 0) {
+      console.log('[' + lang + '] no new fields translated (likely API failure — file unchanged)');
     } else {
       console.log('[' + lang + '] up to date');
     }
+    return 0;
   }
+
+  // Run languages in waves of CONCURRENCY.
+  for (let i = 0; i < LANGS.length; i += CONCURRENCY) {
+    const wave = LANGS.slice(i, i + CONCURRENCY);
+    const results = await Promise.all(wave.map((lang) =>
+      processLang(lang).catch((e) => {
+        console.error('[' + lang + '] failed:', e?.message || e);
+        return 0;
+      })
+    ));
+    totalNew += results.reduce((a, b) => a + (b || 0), 0);
+  }
+
   console.log('Total new fields translated: ' + totalNew);
 }
 

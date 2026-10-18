@@ -125,3 +125,19 @@ _*.py
 # .audit scratch scripts may contain embedded credentials — ignore all but HANDOFF.md
 /.audit/*
 !/.audit/HANDOFF.md
+
+# GSC OAuth 凭据（独立于 mi-to-ai）
+references/gcp-oauth-client.json
+references/gsc-refresh-token.json
+.audit/gsc-reports/.tmp_*
+.audit/.gsc_access_token_cache.json
+
+# 2026-10-18: GCP OAuth 原始文件含真实 client_secret（35 字符），绝不进 git
+references/gcp-oauth-client.gcp-original.json
+references/*.gcp-original.json
+# Python 缓存
+scripts/__pycache__/
+__pycache__/
+
+# Hermes cron prompt 配置（本机运维资产，不入库）
+.hermes-cron/

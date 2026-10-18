@@ -537,8 +537,13 @@ Deno.serve(async (req: Request) => {
 
   const supabaseUrl = Deno.env.get("SUPABASE_URL");
   const supabaseServiceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
-  const minimaxApiKey = Deno.env.get("MINIMAX_API_KEY");
-  const minimaxBaseUrl = Deno.env.get("MINIMAX_BASE_URL") || "https://api.minimaxi.com/v1";
+  // 2026-08-31 信哥要求：内置 agent 切到 DeepSeek（原 MiniMax key 已失效 HTTP 401）。
+  // 优先 DeepSeek，MINIMAX_* 仅作兜底；两者都是 OpenAI 兼容的 /v1/chat/completions。
+  const usingDeepSeek = Boolean(Deno.env.get("DEEPSEEK_API_KEY"));
+  const minimaxApiKey = Deno.env.get("DEEPSEEK_API_KEY") || Deno.env.get("MINIMAX_API_KEY");
+  const minimaxBaseUrl = usingDeepSeek
+    ? (Deno.env.get("DEEPSEEK_BASE_URL") || "https://api.deepseek.com/v1")
+    : (Deno.env.get("MINIMAX_BASE_URL") || "https://api.minimaxi.com/v1");
 
   if (!supabaseUrl || !supabaseServiceKey) {
     return new Response(JSON.stringify({ error: "Server misconfigured: missing Supabase env" }), {
@@ -548,7 +553,7 @@ Deno.serve(async (req: Request) => {
   }
   if (!minimaxApiKey) {
     return new Response(
-      JSON.stringify({ error: "Server misconfigured: MINIMAX_API_KEY not set" }),
+      JSON.stringify({ error: "Server misconfigured: DEEPSEEK_API_KEY (or MINIMAX_API_KEY) not set" }),
       {
         status: 500,
         headers: { ...corsHeaders, "Content-Type": "application/json" },
@@ -669,8 +674,12 @@ Deno.serve(async (req: Request) => {
       console.warn("[chat] user message persist warning:", userMsgErr.message);
     }
   }
-  // Run the agent loop: keep calling MiniMax until no more tool calls
-  const model = body.model || "MiniMax-Text-01";
+  // Run the agent loop: keep calling the LLM (DeepSeek) until no more tool calls
+  // 2026-08-31: 默认模型切到 DeepSeek；客户端若仍传 MiniMax 模型名会自动替换。
+  const requestedModel = body.model;
+  const model = requestedModel && !/minimax/i.test(requestedModel)
+    ? requestedModel
+    : (Deno.env.get("DEEPSEEK_MODEL") || "deepseek-flash");
   const currentMessages: ChatMessage[] = [...body.messages];
 
 
