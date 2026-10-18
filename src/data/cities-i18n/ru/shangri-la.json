@@ -1027,40 +1027,183 @@
     "localTransport": "Old town is walkable. For Napa Lake (8 km north) and Songzanlin (5 km north): Bus 3 (¥1), shared van (¥5), or taxi (¥20-30). For Pudacuo (22 km east): tourist shuttle from old town (¥30 one-way) or taxi (~¥120 round trip). For Tiger Leaping Gorge (105 km south): tour operators in old town offer day trips (~¥400).",
     "tips": "Diqing Airport flights can be cancelled in winter due to snow — book buffer days if flying out in December-February. The Lijiang-Shangri-La high-speed rail is more reliable than flying in winter. Self-driving from Lijiang: 4h, road is paved (last 30 km to Tiger Leaping Gorge is winding)."
   },
-  "payment": {
-    "currency": "CNY (¥)",
-    "cashVsCard": "Old town shops and most restaurants are CASH ONLY or WeChat/Alipay only. ATMs at ICBC and Agricultural Bank branches on Changzheng Avenue. Visa/MasterCard accepted at the larger hotels (Banyan Tree, Shangri-La Resort) and a few upmarket restaurants. Mobile pay (Alipay/WeChat) is now the dominant payment method.",
-    "wechatAlipay": "Foreign visitors can use Alipay (Tap to Pay with Visa/Mastercard) since 2024. WeChat Pay also works with foreign Visa cards (slower setup, requires Chinese mobile number). Bank of China in the new town supports foreign card cash withdrawal at better rates than the airport ATM.",
-    "tips": "Carry ¥500-1,000 in small bills (¥10/20/50) for old town restaurants and markets. For hotels and tours, mobile pay works reliably. Avoid airport currency exchange — better rates in town.",
-    "atmLocations": [
-      "ICBC ATM (Changzheng Avenue, near old town)",
-      "Agricultural Bank ATM (north end of Changzheng Ave)",
-      "Diqing Airport arrival hall"
-    ]
-  },
-  "culturalTips": [
-    "Поднимаясь к молитвенному барабану: всегда двигайтесь ПО ЧАСОВОЙ СТРЕЛКЕ (буддийское направление). Местные замечают, если вы идете в неправильном направлении.",
-    "Этикет в монастыре: снимайте головные уборы, говорите тихо, сидя не направляйте ноги на статуи Будды, спрашивайте разрешение перед фотосъемкой монахов.",
-    "Места небесных погребений: видны с троп, но закрыты для нетибетских посетителей. Уважайте запрет — это не любопытная достопримечательность, а религиозная практика.",
-    "Тибетские приветствия: «Таши Делек» (བཀྲ་ཤིས་བདེ་ལེགས) — стандартное «здравствуйте». Легкий поклон со сложенными вместе руками вежлив.",
-    "Чай с маслом яка — соленый, а не сладкий. Если хозяин предлагает его, отпейте хотя бы раз — отказ может обидеть.",
-    "Высота: 3,280 м в старом городе, 3,500-4,000 м в Пудацо. Первые 24 часа не перенапрягайтесь — короткие прогулки, без алкоголя, много воды.",
-    "Безопасность с яками и собаками: тибетские мастифы, охраняющие монастыри, выглядят устрашающе — НЕ трогайте их, не смотрите им в глаза, спокойно проходите мимо.",
-    "Фотография: спрашивайте разрешение перед съемкой монахов или тибетских семей. Многие отказываются — уважайте это. Пейзажи и архитектуру снимать можно.",
-    "Пожертвования в монастырях: наличные в ящике для пожертвований приветствуются; ¥10-20 — разумно. Лучше, чем ничего, но не слишком много.",
-    "Торг на ночном рынке: ожидается, но держитесь легко и дружелюбно. Сильный торг с тибетскими продавцами культурно неуместен."
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Иностранные посетители могут пользоваться Alipay (бесконтактная оплата Visa/Mastercard) с 2024 года. Сейчас это доминирующий способ оплаты в Китае.",
+      "howToUse": [
+        "Скачайте Alipay до приезда",
+        "Привяжите карту Visa или Mastercard",
+        "Оплачивайте касанием у продавцов"
+      ],
+      "tips": [
+        "Работает почти в каждом магазине и ресторане",
+        "Оплата касанием поддерживает иностранные карты"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "WeChat Pay также работает с иностранными картами Visa, но настройка медленнее и требует китайского номера мобильного телефона.",
+      "howToUse": [
+        "Скачайте WeChat",
+        "Зарегистрируйтесь с китайским номером мобильного телефона",
+        "Привяжите иностранную карту"
+      ],
+      "tips": [
+        "Магазины в старом городе часто принимают только WeChat Pay или наличные"
+      ]
+    },
+    {
+      "method": "Cash",
+      "icon": "cash",
+      "description": "Магазины в старом городе и большинство ресторанов принимают ТОЛЬКО НАЛИЧНЫЕ или только WeChat/Alipay.",
+      "howToUse": [
+        "Возьмите с собой ¥500-1,000 мелкими купюрами (¥10/20/50) для ресторанов и рынков старого города"
+      ],
+      "tips": [
+        "В отелях и на экскурсиях мобильная оплата работает надёжно",
+        "Избегайте обмена валюты в аэропорту — в городе курс лучше"
+      ]
+    },
+    {
+      "method": "Bank Card",
+      "icon": "card",
+      "description": "Visa/Mastercard принимают в крупных отелях (Banyan Tree, Shangri-La Resort) и некоторых ресторанах высшего класса.",
+      "howToUse": [
+        "Возьмите с собой Visa или Mastercard как запасной вариант"
+      ],
+      "tips": [
+        "Большинство мелких торговцев не принимают иностранные карты"
+      ]
+    },
+    {
+      "method": "ATM",
+      "icon": "atm",
+      "description": "Банкоматы в отделениях ICBC и Agricultural Bank на проспекте Чанчжэн, а также в зале прилёта аэропорта Дицин.",
+      "howToUse": [
+        "Пользуйтесь банкоматами ICBC или Agricultural Bank на проспекте Чанчжэн"
+      ],
+      "tips": [
+        "Bank of China в новом городе позволяет снимать наличные по иностранным картам по лучшему курсу, чем в банкомате аэропорта"
+      ]
+    }
   ],
-  "emergencyContacts": {
-    "police": "110",
-    "ambulance": "120",
-    "fire": "119",
-    "touristHotline": "12345 (Diqing Tourism Bureau, English service limited)",
-    "englishSupport": "Diqing Foreign Affairs Office: +86 887 822 2800 (limited English; better for guides/translators)",
-    "mainHospital": "Diqing People's Hospital (8 km from old town, taxi ¥25). Has English-speaking staff at the international clinic on the 2nd floor.",
-    "mainHospitalAddress": "Jianzi Road, Shangri-La New Town",
-    "mainHospitalPhone": "+86 887 822 2120",
-    "embassies": "For emergency embassy assistance, call the 24/7 Chinese MFA hotline: +86 10 6561 2300."
-  },
+  "culturalTips": [
+    {
+      "category": "etiquette",
+      "title": "Молитвенные барабаны: всегда по часовой стрелке",
+      "content": "Поднимаясь к молитвенным барабанам, всегда идите ПО ЧАСОВОЙ СТРЕЛКЕ (буддийское направление). Местные действительно замечают, если вы пойдёте в неправильную сторону.",
+      "importance": "high"
+    },
+    {
+      "category": "etiquette",
+      "title": "Этикет в монастыре",
+      "content": "Этикет в монастыре: снимайте головные уборы, говорите тихо, не направляйте ступни на статуи Будды, когда сидите, спрашивайте разрешение перед фотосъёмкой монахов.",
+      "importance": "high"
+    },
+    {
+      "category": "respect",
+      "title": "Места небесного погребения закрыты для посетителей",
+      "content": "Места небесного погребения: видны с троп, но закрыты для посетителей-не-тибетцев. Уважайте запрет — это не диковинка, а религиозная практика.",
+      "importance": "high"
+    },
+    {
+      "category": "greeting",
+      "title": "Тибетские приветствия",
+      "content": "Тибетские приветствия: «Tashi Delek» (བཀྲ་ཤིས་བདེ་ལེགས) — стандартное «здравствуйте». Лёгкий поклон со сложенными вместе ладонями — вежливый жест.",
+      "importance": "medium"
+    },
+    {
+      "category": "food",
+      "title": "Чай с ячьим маслом солёный, а не сладкий",
+      "content": "Чай с ячьим маслом солёный, а не сладкий. Если хозяин предлагает его, сделайте хотя бы глоток — отказ может обидеть.",
+      "importance": "medium"
+    },
+    {
+      "category": "health",
+      "title": "Высота: в первый день не перегружайтесь",
+      "content": "Высота: 3,280 м в старом городе, 3,500-4,000 м в Пудацо. Первые 24 часа не перенапрягайтесь — короткие прогулки, без алкоголя, много воды.",
+      "importance": "high"
+    },
+    {
+      "category": "safety",
+      "title": "Тибетские мастифы: держитесь на расстоянии",
+      "content": "Безопасность при встрече с яками и собаками: тибетские мастифы, охраняющие монастыри, выглядят устрашающе — НЕ трогайте их, не встречайтесь с ними взглядом, проходите мимо спокойно.",
+      "importance": "high"
+    },
+    {
+      "category": "photography",
+      "title": "Спрашивайте разрешение перед фотосъёмкой людей",
+      "content": "Фотография: спрашивайте разрешение перед съёмкой монахов или тибетских семей. Многие отказываются — уважайте это. Пейзажи и архитектуру снимать можно.",
+      "importance": "medium"
+    },
+    {
+      "category": "money",
+      "title": "Пожертвования в монастырях",
+      "content": "Пожертвования в монастырях: наличные в ящике для пожертвований приветствуются; ¥10-20 — разумная сумма. Лучше, чем ничего, — но не перебарщивайте.",
+      "importance": "low"
+    },
+    {
+      "category": "shopping",
+      "title": "Торг на ночном рынке",
+      "content": "Торг на ночном рынке: это ожидаемо, но торгуйтесь легко и дружелюбно. Упорный торг с тибетскими продавцами культурно неуместен.",
+      "importance": "low"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "急救",
+      "nameEn": "Ambulance",
+      "phone": "120",
+      "notes": "Единый бесплатный номер экстренных служб по всей стране."
+    },
+    {
+      "type": "police",
+      "name": "报警",
+      "nameEn": "Police",
+      "phone": "110",
+      "notes": "Единый бесплатный номер экстренных служб по всей стране."
+    },
+    {
+      "type": "fire",
+      "name": "火警",
+      "nameEn": "Fire",
+      "phone": "119",
+      "notes": "Единый бесплатный номер экстренных служб по всей стране."
+    },
+    {
+      "type": "tourist",
+      "name": "迪庆州旅游局",
+      "nameEn": "Diqing Tourism Bureau",
+      "phone": "12345",
+      "notes": "Обслуживание на английском ограничено."
+    },
+    {
+      "type": "foreign",
+      "name": "迪庆州外事办",
+      "nameEn": "Diqing Foreign Affairs Office",
+      "phone": "+86 887 822 2800",
+      "notes": "Ограниченный английский; лучше подходит для организации гидов или переводчиков."
+    },
+    {
+      "type": "hospital",
+      "name": "迪庆州人民医院",
+      "nameEn": "Diqing People's Hospital",
+      "phone": "+86 887 822 2120",
+      "address": "улица Цзяньцзы, Шангри-Ла Нью-Таун",
+      "notes": "8 км от старого города, такси ¥25. В международной клинике на 2-м этаже есть англоговорящий персонал."
+    },
+    {
+      "type": "embassy",
+      "name": "中国外交部领保热线",
+      "nameEn": "Chinese MFA 24/7 Consular Hotline",
+      "phone": "+86 10 6561 2300",
+      "notes": "Для экстренной помощи посольства."
+    }
+  ],
   "quickFacts": {
     "population": "180,000 (Diqing Tibetan Autonomous Prefecture)",
     "elevation": "3,280m (old town) — highest prefecture in Yunnan",

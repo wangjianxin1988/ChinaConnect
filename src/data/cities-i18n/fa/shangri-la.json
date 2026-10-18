@@ -1027,40 +1027,183 @@
     "localTransport": "Old town is walkable. For Napa Lake (8 km north) and Songzanlin (5 km north): Bus 3 (¥1), shared van (¥5), or taxi (¥20-30). For Pudacuo (22 km east): tourist shuttle from old town (¥30 one-way) or taxi (~¥120 round trip). For Tiger Leaping Gorge (105 km south): tour operators in old town offer day trips (~¥400).",
     "tips": "Diqing Airport flights can be cancelled in winter due to snow — book buffer days if flying out in December-February. The Lijiang-Shangri-La high-speed rail is more reliable than flying in winter. Self-driving from Lijiang: 4h, road is paved (last 30 km to Tiger Leaping Gorge is winding)."
   },
-  "payment": {
-    "currency": "CNY (¥)",
-    "cashVsCard": "Old town shops and most restaurants are CASH ONLY or WeChat/Alipay only. ATMs at ICBC and Agricultural Bank branches on Changzheng Avenue. Visa/MasterCard accepted at the larger hotels (Banyan Tree, Shangri-La Resort) and a few upmarket restaurants. Mobile pay (Alipay/WeChat) is now the dominant payment method.",
-    "wechatAlipay": "Foreign visitors can use Alipay (Tap to Pay with Visa/Mastercard) since 2024. WeChat Pay also works with foreign Visa cards (slower setup, requires Chinese mobile number). Bank of China in the new town supports foreign card cash withdrawal at better rates than the airport ATM.",
-    "tips": "Carry ¥500-1,000 in small bills (¥10/20/50) for old town restaurants and markets. For hotels and tours, mobile pay works reliably. Avoid airport currency exchange — better rates in town.",
-    "atmLocations": [
-      "ICBC ATM (Changzheng Avenue, near old town)",
-      "Agricultural Bank ATM (north end of Changzheng Ave)",
-      "Diqing Airport arrival hall"
-    ]
-  },
-  "culturalTips": [
-    "بالا رفتن از چرخ دعا: همیشه در جهت عقربه‌های ساعت (جهت بودایی) حرکت کنید. مردم محلی متوجه می‌شوند اگر خلاف جهت بروید.",
-    "آداب صومعه: کلاه را بردارید، آهسته صحبت کنید، هنگام نشستن پاها را به سمت مجسمه‌های بودا نگیرید، پیش از عکاسی از راهبان اجازه بگیرید.",
-    "محل‌های آسمان‌سپاری: از مسیرهای پیاده‌روی دیده می‌شوند اما برای بازدیدکنندگان غیرتبتی بسته هستند. به این بسته‌بودن احترام بگذارید — این یک کنجکاوی نیست، یک آیین مذهبی است.",
-    "سلام‌های تبتی: «تاشی دِلک» (བཀྲ་ཤིས་བདེ་ལེགས) سلام استاندارد است. کمی خم شدن با دستان جفت‌شده مؤدبانه است.",
-    "چای کره یاک مزه‌ای شور دارد، نه شیرین. اگر میزبان تعارف کرد، حداقل یک جرعه بنوشید — رد کردن می‌تواند باعث رنجش شود.",
-    "ارتفاع: 3,280 متر در شهر قدیمی، 3,500-4,000 متر در پوداکو. در 24 ساعت اول آرام باشید — پیاده‌روی‌های کوتاه، بدون الکل، و آب زیاد.",
-    "ایمنی یاک و سگ: ماستیف‌های تبتی نگهبان صومعه‌ها ترسناک به نظر می‌رسند — به آن‌ها دست نزنید، تماس چشمی برقرار نکنید، آرام از کنارشان بگذرید.",
-    "عکاسی: پیش از عکاسی از راهبان یا خانواده‌های تبتی اجازه بگیرید. بسیاری اجازه نمی‌دهند — به آن احترام بگذارید. مناظر و معماری اشکالی ندارد.",
-    "کمک‌های مالی در صومعه‌ها: پول نقد در صندوق کمک‌های مالی پذیرفته است؛ ¥10-20 معقول است. بهتر از هیچ — بهتر از بیش از حد.",
-    "چانه‌زنی در بازار شبانه: انتظار می‌رود، اما آن را سبک و دوستانه نگه دارید. چانه‌زنی سخت با فروشندگان تبتی از نظر فرهنگی ناپسند است."
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "بازدیدکنندگان خارجی از سال 2024 می‌توانند از Alipay (پرداخت با ضربه با Visa/Mastercard) استفاده کنند. اکنون روش پرداخت غالب در چین است.",
+      "howToUse": [
+        "Alipay را قبل از رسیدن دانلود کنید",
+        "کارت Visa یا Mastercard خود را وصل کنید",
+        "با ضربه زدن در فروشگاه‌ها پرداخت کنید"
+      ],
+      "tips": [
+        "تقریباً در هر فروشگاه و رستورانی کار می‌کند",
+        "پرداخت با ضربه از کارت‌های خارجی پشتیبانی می‌کند"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "WeChat Pay نیز با کارت‌های Visa خارجی کار می‌کند، اما راه‌اندازی آن کندتر است و به یک شماره موبایل چینی نیاز دارد.",
+      "howToUse": [
+        "WeChat را دانلود کنید",
+        "با یک شماره موبایل چینی ثبت‌نام کنید",
+        "یک کارت خارجی را وصل کنید"
+      ],
+      "tips": [
+        "فروشگاه‌های شهر قدیمی اغلب فقط WeChat Pay یا پول نقد قبول می‌کنند"
+      ]
+    },
+    {
+      "method": "Cash",
+      "icon": "cash",
+      "description": "فروشگاه‌های شهر قدیمی و بیشتر رستوران‌ها فقط پول نقد یا فقط WeChat/Alipay قبول می‌کنند.",
+      "howToUse": [
+        "برای رستوران‌ها و بازارهای شهر قدیمی، ¥500-1,000 به‌صورت اسکناس‌های خرد (¥10/20/50) همراه داشته باشید"
+      ],
+      "tips": [
+        "برای هتل‌ها و تورها، پرداخت موبایلی به‌طور قابل‌اعتمادی کار می‌کند",
+        "از صرافی فرودگاه اجتناب کنید — نرخ‌ها در شهر بهتر است"
+      ]
+    },
+    {
+      "method": "Bank Card",
+      "icon": "card",
+      "description": "ویزا/مسترکارت در هتل‌های بزرگ‌تر (Banyan Tree، Shangri-La Resort) و چند رستوران لوکس پذیرفته می‌شود.",
+      "howToUse": [
+        "یک کارت ویزا یا مسترکارت به‌عنوان پشتیبان همراه داشته باشید"
+      ],
+      "tips": [
+        "بیشتر فروشندگان کوچک کارت‌های خارجی را نمی‌پذیرند"
+      ]
+    },
+    {
+      "method": "ATM",
+      "icon": "atm",
+      "description": "دستگاه‌های خودپرداز در شعبه‌های ICBC و Agricultural Bank در خیابان چانگ‌ژنگ و در سالن ورودی فرودگاه دی‌چینگ.",
+      "howToUse": [
+        "از خودپردازهای ICBC یا Agricultural Bank در خیابان چانگ‌ژنگ استفاده کنید"
+      ],
+      "tips": [
+        "بانک چین در شهر جدید، برداشت با کارت خارجی را با نرخ‌های بهتر از خودپرداز فرودگاه پشتیبانی می‌کند"
+      ]
+    }
   ],
-  "emergencyContacts": {
-    "police": "110",
-    "ambulance": "120",
-    "fire": "119",
-    "touristHotline": "12345 (Diqing Tourism Bureau, English service limited)",
-    "englishSupport": "Diqing Foreign Affairs Office: +86 887 822 2800 (limited English; better for guides/translators)",
-    "mainHospital": "Diqing People's Hospital (8 km from old town, taxi ¥25). Has English-speaking staff at the international clinic on the 2nd floor.",
-    "mainHospitalAddress": "Jianzi Road, Shangri-La New Town",
-    "mainHospitalPhone": "+86 887 822 2120",
-    "embassies": "For emergency embassy assistance, call the 24/7 Chinese MFA hotline: +86 10 6561 2300."
-  },
+  "culturalTips": [
+    {
+      "category": "etiquette",
+      "title": "چرخ‌های دعا: همیشه در جهت عقربه‌های ساعت",
+      "content": "بالا رفتن از چرخ دعا: همیشه در جهت عقربه‌های ساعت (جهت بودایی) حرکت کنید. مردم محلی متوجه می‌شوند اگر جهت اشتباه بروید.",
+      "importance": "high"
+    },
+    {
+      "category": "etiquette",
+      "title": "آداب صومعه",
+      "content": "آداب صومعه: کلاه را بردارید، آرام صحبت کنید، هنگام نشستن پاهایتان را به سمت مجسمه‌های بودا نگیرید، پیش از عکس گرفتن از راهبان اجازه بگیرید.",
+      "importance": "high"
+    },
+    {
+      "category": "respect",
+      "title": "محل‌های خاک‌سپاری آسمانی به روی بازدیدکنندگان بسته است",
+      "content": "محل‌های خاک‌سپاری آسمانی: از مسیرهای پیاده‌روی قابل مشاهده‌اند اما برای بازدیدکنندگان غیرتبتی بسته‌اند. به این ممنوعیت احترام بگذارید — این یک کنجکاوی نیست، یک آیین مذهبی است.",
+      "importance": "high"
+    },
+    {
+      "category": "greeting",
+      "title": "سلام و احوال‌پرسی تبتی",
+      "content": "سلام و احوال‌پرسی تبتی: «Tashi Delek» (བཀྲ་ཤིས་བདེ་ལེགས) سلام استاندارد است. تعظیم ملایم با دست‌های جفت‌شده مؤدبانه است.",
+      "importance": "medium"
+    },
+    {
+      "category": "food",
+      "title": "چای کره‌ی یال شور است، نه شیرین",
+      "content": "چای کره‌ی یال شور است، نه شیرین. اگر میزبان تعارف کرد، حداقل یک جرعه بنوشید — رد کردن می‌تواند توهین‌آمیز باشد.",
+      "importance": "medium"
+    },
+    {
+      "category": "health",
+      "title": "ارتفاع: روز اول را آرام بگذرانید",
+      "content": "ارتفاع: 3,280 متر در شهر قدیمی، 3,500-4,000 متر در پوداکوئو. در 24 ساعت اول آرام باشید — پیاده‌روی‌های کوتاه، بدون الکل، آب زیاد.",
+      "importance": "high"
+    },
+    {
+      "category": "safety",
+      "title": "ماستیف‌های تبتی: فاصله‌تان را حفظ کنید",
+      "content": "ایمنی یاک و سگ: ماستیف‌های تبتی که از صومعه‌ها نگهبانی می‌کنند ترسناک به نظر می‌رسند — به آن‌ها دست نزنید، تماس چشمی برقرار نکنید، آرام از کنارشان رد شوید.",
+      "importance": "high"
+    },
+    {
+      "category": "photography",
+      "title": "قبل از عکس گرفتن از مردم اجازه بگیرید",
+      "content": "عکاسی: قبل از عکس گرفتن از راهبان یا خانواده‌های تبتی اجازه بگیرید. بسیاری امتناع می‌کنند — به این احترام بگذارید. منظره‌ها و معماری اشکالی ندارد.",
+      "importance": "medium"
+    },
+    {
+      "category": "money",
+      "title": "کمک‌های مالی در صومعه‌ها",
+      "content": "کمک‌های مالی در صومعه‌ها: پول نقد در صندوق کمک‌ها پذیرفته می‌شود؛ ¥10-20 منطقی است. بهتر از هیچ — بهتر از زیادی.",
+      "importance": "low"
+    },
+    {
+      "category": "shopping",
+      "title": "چانه‌زنی در بازار شب",
+      "content": "چانه‌زنی در بازار شب: عادی است، اما آن را سبک و دوستانه نگه دارید. چانه‌زنی سخت با فروشندگان تبتی از نظر فرهنگی پسندیده نیست.",
+      "importance": "low"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "急救",
+      "nameEn": "Ambulance",
+      "phone": "120",
+      "notes": "شماره اضطراری رایگان در سراسر کشور."
+    },
+    {
+      "type": "police",
+      "name": "报警",
+      "nameEn": "Police",
+      "phone": "110",
+      "notes": "شماره اضطراری رایگان در سراسر کشور."
+    },
+    {
+      "type": "fire",
+      "name": "火警",
+      "nameEn": "Fire",
+      "phone": "119",
+      "notes": "شماره اضطراری رایگان در سراسر کشور."
+    },
+    {
+      "type": "tourist",
+      "name": "迪庆州旅游局",
+      "nameEn": "Diqing Tourism Bureau",
+      "phone": "12345",
+      "notes": "خدمات به زبان انگلیسی محدود است."
+    },
+    {
+      "type": "foreign",
+      "name": "迪庆州外事办",
+      "nameEn": "Diqing Foreign Affairs Office",
+      "phone": "+86 887 822 2800",
+      "notes": "انگلیسی محدود؛ برای هماهنگی راهنما یا مترجم بهتر است."
+    },
+    {
+      "type": "hospital",
+      "name": "迪庆州人民医院",
+      "nameEn": "Diqing People's Hospital",
+      "phone": "+86 887 822 2120",
+      "address": "جاده جیانزی، شهر جدید شانگری-لا",
+      "notes": "8 km از شهر قدیمی، تاکسی ¥25. کارکنان انگلیسی‌زبان در کلینیک بین‌المللی در طبقه دوم."
+    },
+    {
+      "type": "embassy",
+      "name": "中国外交部领保热线",
+      "nameEn": "Chinese MFA 24/7 Consular Hotline",
+      "phone": "+86 10 6561 2300",
+      "notes": "برای کمک اضطراری سفارت."
+    }
+  ],
   "quickFacts": {
     "population": "180,000 (Diqing Tibetan Autonomous Prefecture)",
     "elevation": "3,280m (old town) — highest prefecture in Yunnan",

@@ -1027,40 +1027,183 @@
     "localTransport": "Old town is walkable. For Napa Lake (8 km north) and Songzanlin (5 km north): Bus 3 (¥1), shared van (¥5), or taxi (¥20-30). For Pudacuo (22 km east): tourist shuttle from old town (¥30 one-way) or taxi (~¥120 round trip). For Tiger Leaping Gorge (105 km south): tour operators in old town offer day trips (~¥400).",
     "tips": "Diqing Airport flights can be cancelled in winter due to snow — book buffer days if flying out in December-February. The Lijiang-Shangri-La high-speed rail is more reliable than flying in winter. Self-driving from Lijiang: 4h, road is paved (last 30 km to Tiger Leaping Gorge is winding)."
   },
-  "payment": {
-    "currency": "CNY (¥)",
-    "cashVsCard": "Old town shops and most restaurants are CASH ONLY or WeChat/Alipay only. ATMs at ICBC and Agricultural Bank branches on Changzheng Avenue. Visa/MasterCard accepted at the larger hotels (Banyan Tree, Shangri-La Resort) and a few upmarket restaurants. Mobile pay (Alipay/WeChat) is now the dominant payment method.",
-    "wechatAlipay": "Foreign visitors can use Alipay (Tap to Pay with Visa/Mastercard) since 2024. WeChat Pay also works with foreign Visa cards (slower setup, requires Chinese mobile number). Bank of China in the new town supports foreign card cash withdrawal at better rates than the airport ATM.",
-    "tips": "Carry ¥500-1,000 in small bills (¥10/20/50) for old town restaurants and markets. For hotels and tours, mobile pay works reliably. Avoid airport currency exchange — better rates in town.",
-    "atmLocations": [
-      "ICBC ATM (Changzheng Avenue, near old town)",
-      "Agricultural Bank ATM (north end of Changzheng Ave)",
-      "Diqing Airport arrival hall"
-    ]
-  },
-  "culturalTips": [
-    "Khi leo bánh xe cầu nguyện: luôn đi theo chiều KIM ĐỒNG HỒ (chiều Phật giáo). Người địa phương sẽ để ý nếu bạn đi sai chiều.",
-    "Phép lịch sự tại tu viện: bỏ mũ, nói nhỏ, không chĩa chân về phía tượng Phật khi ngồi, hỏi trước khi chụp ảnh các nhà sư.",
-    "Các địa điểm thiên táng: có thể nhìn thấy từ đường mòn nhưng đóng cửa với du khách không phải người Tây Tạng. Hãy tôn trọng việc đóng cửa — đây không phải là nơi để tò mò, mà là một thực hành tôn giáo.",
-    "Lời chào Tây Tạng: 'Tashi Delek' (བཀྲ་ཤིས་བདེ་ལེགས) là lời 'xin chào' tiêu chuẩn. Cúi đầu nhẹ với hai tay chắp lại là lịch sự.",
-    "Trà bơ yak có vị mặn, không ngọt. Nếu chủ nhà mời, hãy nhấp ít nhất một lần — từ chối có thể gây xúc phạm.",
-    "Độ cao: 3,280m ở phố cổ, 3,500-4,000m ở Pudacuo. Hãy thư thả trong 24 giờ đầu — đi bộ quãng ngắn, không uống rượu, uống nhiều nước.",
-    "An toàn với bò yak và chó: chó ngao Tây Tạng canh gác tu viện trông rất dữ — KHÔNG chạm vào chúng, không nhìn thẳng vào mắt, bình tĩnh đi ngang qua.",
-    "Nhiếp ảnh: hỏi trước khi chụp ảnh các nhà sư hoặc gia đình người Tây Tạng. Nhiều người từ chối — hãy tôn trọng điều đó. Phong cảnh và kiến trúc thì được phép.",
-    "Quyên góp tại tu viện: tiền mặt trong hòm quyên góp được hoan nghênh; ¥10-20 là hợp lý. Tốt hơn là không có gì — tốt hơn là quá nhiều.",
-    "Mặc cả ở chợ đêm: là điều thường thấy, nhưng hãy giữ nhẹ nhàng và thân thiện. Mặc cả quá gay gắt với người bán hàng Tây Tạng là không phù hợp văn hóa."
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Khách du lịch nước ngoài có thể sử dụng Alipay (Thanh toán chạm với Visa/Mastercard) từ năm 2024. Hiện là phương thức thanh toán phổ biến nhất ở Trung Quốc.",
+      "howToUse": [
+        "Tải Alipay trước khi đến",
+        "Liên kết thẻ Visa hoặc Mastercard của bạn",
+        "Chạm để thanh toán tại cửa hàng"
+      ],
+      "tips": [
+        "Hoạt động tại hầu hết cửa hàng và nhà hàng",
+        "Thanh toán chạm hỗ trợ thẻ nước ngoài"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "WeChat Pay cũng hoạt động với thẻ Visa nước ngoài, nhưng việc thiết lập chậm hơn và yêu cầu số điện thoại di động Trung Quốc.",
+      "howToUse": [
+        "Tải WeChat",
+        "Đăng ký bằng số điện thoại di động Trung Quốc",
+        "Liên kết thẻ nước ngoài"
+      ],
+      "tips": [
+        "Các cửa hàng ở phố cổ thường chỉ chấp nhận WeChat Pay hoặc tiền mặt"
+      ]
+    },
+    {
+      "method": "Cash",
+      "icon": "cash",
+      "description": "Các cửa hàng ở phố cổ và hầu hết nhà hàng CHỈ NHẬN TIỀN MẶT hoặc chỉ WeChat/Alipay.",
+      "howToUse": [
+        "Mang theo ¥500-1,000 bằng tiền mặt mệnh giá nhỏ (¥10/20/50) cho các nhà hàng và khu chợ phố cổ"
+      ],
+      "tips": [
+        "Với khách sạn và tour, thanh toán di động hoạt động ổn định",
+        "Tránh đổi tiền ở sân bay — tỷ giá trong thị trấn tốt hơn"
+      ]
+    },
+    {
+      "method": "Bank Card",
+      "icon": "card",
+      "description": "Visa/Mastercard được chấp nhận tại các khách sạn lớn hơn (Banyan Tree, Shangri-La Resort) và một vài nhà hàng cao cấp.",
+      "howToUse": [
+        "Mang theo Visa hoặc Mastercard để dự phòng"
+      ],
+      "tips": [
+        "Hầu hết người bán nhỏ không chấp nhận thẻ nước ngoài"
+      ]
+    },
+    {
+      "method": "ATM",
+      "icon": "atm",
+      "description": "ATM tại các chi nhánh ICBC và Agricultural Bank trên Đại lộ Changzheng, và trong sảnh đến Sân bay Diqing.",
+      "howToUse": [
+        "Dùng ATM của ICBC hoặc Agricultural Bank trên Đại lộ Changzheng"
+      ],
+      "tips": [
+        "Bank of China ở khu đô thị mới hỗ trợ rút tiền bằng thẻ nước ngoài với tỷ giá tốt hơn ATM ở sân bay"
+      ]
+    }
   ],
-  "emergencyContacts": {
-    "police": "110",
-    "ambulance": "120",
-    "fire": "119",
-    "touristHotline": "12345 (Diqing Tourism Bureau, English service limited)",
-    "englishSupport": "Diqing Foreign Affairs Office: +86 887 822 2800 (limited English; better for guides/translators)",
-    "mainHospital": "Diqing People's Hospital (8 km from old town, taxi ¥25). Has English-speaking staff at the international clinic on the 2nd floor.",
-    "mainHospitalAddress": "Jianzi Road, Shangri-La New Town",
-    "mainHospitalPhone": "+86 887 822 2120",
-    "embassies": "For emergency embassy assistance, call the 24/7 Chinese MFA hotline: +86 10 6561 2300."
-  },
+  "culturalTips": [
+    {
+      "category": "etiquette",
+      "title": "Bánh xe cầu nguyện: luôn đi theo chiều kim đồng hồ",
+      "content": "Khi leo lên bánh xe cầu nguyện: luôn đi THEO CHIỀU KIM ĐỒNG HỒ (chiều Phật giáo). Người địa phương sẽ để ý nếu bạn đi sai chiều.",
+      "importance": "high"
+    },
+    {
+      "category": "etiquette",
+      "title": "Phép tắc tại tu viện",
+      "content": "Phép tắc tại tu viện: bỏ mũ, nói chuyện nhỏ nhẹ, không chĩa chân về phía tượng Phật khi ngồi, hỏi trước khi chụp ảnh các nhà sư.",
+      "importance": "high"
+    },
+    {
+      "category": "respect",
+      "title": "Các địa điểm thiên táng đóng cửa với du khách",
+      "content": "Các địa điểm thiên táng: có thể nhìn thấy từ đường mòn nhưng đóng cửa với du khách không phải người Tây Tạng. Hãy tôn trọng việc đóng cửa này — không phải để tò mò mà là một nghi lễ tôn giáo.",
+      "importance": "high"
+    },
+    {
+      "category": "greeting",
+      "title": "Lời chào Tây Tạng",
+      "content": "Lời chào Tây Tạng: 'Tashi Delek' (བཀྲ་ཤིས་བདེ་ལེགས) là câu 'xin chào' tiêu chuẩn. Cúi đầu nhẹ với hai tay chắp lại là lịch sự.",
+      "importance": "medium"
+    },
+    {
+      "category": "food",
+      "title": "Trà bơ yak có vị mặn, không ngọt",
+      "content": "Trà bơ yak có vị mặn, không ngọt. Nếu chủ nhà mời, hãy nhấp ít nhất một ngụm — từ chối có thể làm họ phật ý.",
+      "importance": "medium"
+    },
+    {
+      "category": "health",
+      "title": "Độ cao: hãy nghỉ ngơi nhẹ nhàng trong ngày đầu tiên",
+      "content": "Độ cao: 3,280m ở phố cổ, 3,500-4,000m ở Pudacuo. Hãy thong thả trong 24 giờ đầu — đi bộ quãng ngắn, không uống rượu, uống nhiều nước.",
+      "importance": "high"
+    },
+    {
+      "category": "safety",
+      "title": "Chó ngao Tây Tạng: hãy giữ khoảng cách",
+      "content": "An toàn với bò yak và chó: chó ngao Tây Tạng canh gác các tu viện trông đáng sợ — TUYỆT ĐỐI KHÔNG chạm vào chúng, không giao tiếp bằng mắt, bình tĩnh đi ngang qua.",
+      "importance": "high"
+    },
+    {
+      "category": "photography",
+      "title": "Hỏi trước khi chụp ảnh người khác",
+      "content": "Nhiếp ảnh: hãy hỏi trước khi chụp ảnh các nhà sư hoặc các gia đình người Tây Tạng. Nhiều người từ chối — hãy tôn trọng điều đó. Phong cảnh và kiến trúc thì thoải mái.",
+      "importance": "medium"
+    },
+    {
+      "category": "money",
+      "title": "Cúng dường tại tu viện",
+      "content": "Cúng dường tại tu viện: tiền mặt trong hòm công đức được hoan nghênh; ¥10-20 là hợp lý. Có còn hơn không — tốt hơn là quá nhiều.",
+      "importance": "low"
+    },
+    {
+      "category": "shopping",
+      "title": "Mặc cả ở chợ đêm",
+      "content": "Mặc cả ở chợ đêm: điều này được mong đợi, nhưng hãy giữ nhẹ nhàng và thân thiện. Mặc cả quá gay gắt với người bán hàng Tây Tạng là không phù hợp về văn hóa.",
+      "importance": "low"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "急救",
+      "nameEn": "Ambulance",
+      "phone": "120",
+      "notes": "Số khẩn cấp miễn phí trên toàn quốc."
+    },
+    {
+      "type": "police",
+      "name": "报警",
+      "nameEn": "Police",
+      "phone": "110",
+      "notes": "Số khẩn cấp miễn phí trên toàn quốc."
+    },
+    {
+      "type": "fire",
+      "name": "火警",
+      "nameEn": "Fire",
+      "phone": "119",
+      "notes": "Số khẩn cấp miễn phí trên toàn quốc."
+    },
+    {
+      "type": "tourist",
+      "name": "迪庆州旅游局",
+      "nameEn": "Diqing Tourism Bureau",
+      "phone": "12345",
+      "notes": "Dịch vụ tiếng Anh hạn chế."
+    },
+    {
+      "type": "foreign",
+      "name": "迪庆州外事办",
+      "nameEn": "Diqing Foreign Affairs Office",
+      "phone": "+86 887 822 2800",
+      "notes": "Tiếng Anh hạn chế; phù hợp hơn để sắp xếp hướng dẫn viên hoặc phiên dịch."
+    },
+    {
+      "type": "hospital",
+      "name": "迪庆州人民医院",
+      "nameEn": "Diqing People's Hospital",
+      "phone": "+86 887 822 2120",
+      "address": "Đường Jianzi, Khu đô thị mới Shangri-La",
+      "notes": "Cách phố cổ 8 km, taxi ¥25. Nhân viên nói tiếng Anh tại phòng khám quốc tế ở tầng 2."
+    },
+    {
+      "type": "embassy",
+      "name": "中国外交部领保热线",
+      "nameEn": "Chinese MFA 24/7 Consular Hotline",
+      "phone": "+86 10 6561 2300",
+      "notes": "Dành cho hỗ trợ khẩn cấp từ đại sứ quán."
+    }
+  ],
   "quickFacts": {
     "population": "180,000 (Diqing Tibetan Autonomous Prefecture)",
     "elevation": "3,280m (old town) — highest prefecture in Yunnan",

@@ -1027,40 +1027,190 @@
     "localTransport": "Old town is walkable. For Napa Lake (8 km north) and Songzanlin (5 km north): Bus 3 (¥1), shared van (¥5), or taxi (¥20-30). For Pudacuo (22 km east): tourist shuttle from old town (¥30 one-way) or taxi (~¥120 round trip). For Tiger Leaping Gorge (105 km south): tour operators in old town offer day trips (~¥400).",
     "tips": "Diqing Airport flights can be cancelled in winter due to snow — book buffer days if flying out in December-February. The Lijiang-Shangri-La high-speed rail is more reliable than flying in winter. Self-driving from Lijiang: 4h, road is paved (last 30 km to Tiger Leaping Gorge is winding)."
   },
-  "payment": {
-    "currency": "CNY (¥)",
-    "cashVsCard": "Old town shops and most restaurants are CASH ONLY or WeChat/Alipay only. ATMs at ICBC and Agricultural Bank branches on Changzheng Avenue. Visa/MasterCard accepted at the larger hotels (Banyan Tree, Shangri-La Resort) and a few upmarket restaurants. Mobile pay (Alipay/WeChat) is now the dominant payment method.",
-    "wechatAlipay": "Foreign visitors can use Alipay (Tap to Pay with Visa/Mastercard) since 2024. WeChat Pay also works with foreign Visa cards (slower setup, requires Chinese mobile number). Bank of China in the new town supports foreign card cash withdrawal at better rates than the airport ATM.",
-    "tips": "Carry ¥500-1,000 in small bills (¥10/20/50) for old town restaurants and markets. For hotels and tours, mobile pay works reliably. Avoid airport currency exchange — better rates in town.",
-    "atmLocations": [
-      "ICBC ATM (Changzheng Avenue, near old town)",
-      "Agricultural Bank ATM (north end of Changzheng Ave)",
-      "Diqing Airport arrival hall"
-    ]
-  },
-  "culturalTips": [
-    "마니차(기도륜)를 오를 때: 항상 시계 방향(불교 방향)으로 가세요. 반대 방향으로 가면 현지인들이 알아차립니다.",
-    "사원 예절: 모자를 벗고, 조용히 말하며, 앉아 있을 때 발을 불상 쪽으로 뻗지 말고, 승려를 촬영하기 전에 허락을 구하세요.",
-    "천장(하늘장) 장소: 산책로에서 보이지만 티베트인이 아닌 방문객에게는 출입이 금지되어 있습니다. 폐쇄를 존중하세요 — 호기심의 대상이 아니라 종교적 의례입니다.",
-    "티베트 인사: '타시 델렉'(Tashi Delek, བཀྲ་ཤིས་བདེ་ལེགས)은 표준 '안녕하세요'입니다. 두 손을 모으고 가볍게 고개 숙여 인사하는 것이 예의입니다.",
-    "야크 버터 차는 단맛이 아니라 짭짤한 맛입니다. 호스트가 권하면 최소 한 모금은 마시세요 — 거절하면 기분이 상할 수 있습니다.",
-    "고도: 옛 시가지에서는 3,280m, 푸다춰(Pudacuo)에서는 3,500-4,000m입니다. 처음 24시간 동안은 무리하지 마세요 — 짧게 산책하고, 술은 마시지 말고, 물을 많이 드세요.",
-    "야크와 개 안전: 사원을 지키는 티베트 마스티프는 위협적으로 보입니다 — 절대 만지지 말고, 눈을 마주치지 말고, 침착하게 지나가세요.",
-    "사진 촬영: 승려나 티베트인 가족을 촬영하기 전에 허락을 구하세요. 많은 사람이 거절합니다 — 존중하세요. 풍경과 건축물은 촬영해도 됩니다.",
-    "사원 기부: 기부함에 현금을 넣는 것을 환영합니다; ¥10-20이 적당합니다. 아무것도 안 하는 것보다 낫고, 너무 많이 내는 것보다 낫습니다.",
-    "야시장에서 흥정하기: 예상되는 일이지만 가볍고 친근하게 하세요. 티베트 상인과 과도하게 흥정하는 것은 문화적으로 적절하지 않습니다."
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "외국인 방문객은 2024년부터 알리페이(비자/마스터카드 탭 투 페이)를 사용할 수 있습니다. 현재 중국의 주도적인 결제 수단입니다.",
+      "howToUse": [
+        "도착 전에 알리페이 다운로드",
+        "비자 또는 마스터카드 연결",
+        "가맹점에서 탭하여 결제"
+      ],
+      "tips": [
+        "거의 모든 상점과 식당에서 사용 가능",
+        "Tap to Pay는 해외 카드를 지원합니다"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "WeChat Pay도 해외 Visa 카드와 연동할 수 있지만, 설정이 더 느리고 중국 휴대전화 번호가 필요합니다.",
+      "howToUse": [
+        "WeChat 다운로드",
+        "중국 휴대전화 번호로 가입",
+        "해외 카드 연결"
+      ],
+      "tips": [
+        "구시가지 상점에서는 흔히 WeChat Pay나 현금만 받습니다"
+      ]
+    },
+    {
+      "method": "Cash",
+      "icon": "cash",
+      "description": "구시가지 상점과 대부분의 식당은 현금만 받거나 WeChat/Alipay만 받습니다.",
+      "howToUse": [
+        "구시가지 식당과 시장을 위해 ¥500-1,000을 소액권(¥10/20/50)으로 지참하세요"
+      ],
+      "tips": [
+        "호텔과 투어에서는 모바일 결제가 안정적으로 작동합니다",
+        "공항 환전은 피하세요 — 시내 환율이 더 좋습니다"
+      ]
+    },
+    {
+      "method": "Bank Card",
+      "icon": "card",
+      "description": "Visa/Mastercard는 대형 호텔(Banyan Tree, Shangri-La Resort)과 일부 고급 레스토랑에서 사용할 수 있습니다.",
+      "howToUse": [
+        "백업용으로 Visa 또는 Mastercard를 가져가세요"
+      ],
+      "tips": [
+        "대부분의 작은 상점은 해외 카드를 받지 않습니다"
+      ]
+    },
+    {
+      "method": "ATM",
+      "icon": "atm",
+      "description": "Changzheng Avenue의 ICBC 및 Agricultural Bank 지점과 Diqing Airport 도착 홀에 ATM이 있습니다.",
+      "howToUse": [
+        "Changzheng Avenue의 ICBC 또는 Agricultural Bank ATM을 이용하세요"
+      ],
+      "tips": [
+        "신도시의 Bank of China는 공항 ATM보다 더 좋은 환율로 해외 카드 출금을 지원합니다"
+      ]
+    }
   ],
-  "emergencyContacts": {
-    "police": "110",
-    "ambulance": "120",
-    "fire": "119",
-    "touristHotline": "12345 (Diqing Tourism Bureau, English service limited)",
-    "englishSupport": "Diqing Foreign Affairs Office: +86 887 822 2800 (limited English; better for guides/translators)",
-    "mainHospital": "Diqing People's Hospital (8 km from old town, taxi ¥25). Has English-speaking staff at the international clinic on the 2nd floor.",
-    "mainHospitalAddress": "Jianzi Road, Shangri-La New Town",
-    "mainHospitalPhone": "+86 887 822 2120",
-    "embassies": "For emergency embassy assistance, call the 24/7 Chinese MFA hotline: +86 10 6561 2300."
-  },
+  "culturalTips": [
+    {
+      "category": "etiquette",
+      "title": "기도륜: 항상 시계 방향으로",
+      "content": "기도륜을 오를 때는 항상 시계 방향(불교 방향)으로 가세요. 잘못된 방향으로 가면 현지인들이 알아차립니다.",
+      "importance": "high"
+    },
+    {
+      "category": "etiquette",
+      "title": "사원 예절",
+      "content": "사원 예절: 모자를 벗고 조용히 말하며, 앉아 있을 때 불상 쪽으로 발을 가리키지 말고, 승려를 촬영하기 전에 허락을 구하세요.",
+      "importance": "high"
+    },
+    {
+      "category": "respect",
+      "title": "천장(天葬) 장소는 방문객에게 폐쇄되어 있습니다",
+      "content": "천장(天葬) 장소: 탐방로에서 볼 수는 있지만 티베트인이 아닌 방문객에게는 폐쇄되어 있습니다. 출입 금지를 존중하세요 — 구경거리가 아니라 종교적 의례입니다.",
+      "importance": "high"
+    },
+    {
+      "category": "greeting",
+      "title": "티베트 인사말",
+      "content": "티베트 인사말: '타시 델레(Tashi Delek)'(བཀྲ་ཤིས་བདེ་ལེགས)는 표준 '안녕하세요'입니다. 두 손을 모으고 가볍게 고개를 숙이는 것이 예의입니다.",
+      "importance": "medium"
+    },
+    {
+      "category": "food",
+      "title": "야크 버터 차는 달지 않고 짭짤합니다",
+      "content": "야크 버터 차는 달지 않고 짭짤합니다. 주인이 권하면 최소한 한 모금은 마시세요 — 거절하면 기분이 상할 수 있습니다.",
+      "importance": "medium"
+    },
+    {
+      "category": "health",
+      "title": "고도: 첫날은 무리하지 마세요",
+      "content": "고도: 구시가지에서는 3,280m, 푸다춰(Pudacuo)에서는 3,500-4,000m입니다. 첫 24시간 동안은 무리하지 마세요 — 짧게 산책하고, 술은 마시지 말고, 물을 많이 드세요.",
+      "importance": "high"
+    },
+    {
+      "category": "safety",
+      "title": "티베트 마스티프: 거리를 두세요",
+      "content": "야크와 개 안전: 사원을 지키는 티베트 마스티프는 위압적으로 보입니다 — 절대 만지지 말고, 눈을 마주치지 말고, 침착하게 지나가세요.",
+      "importance": "high"
+    },
+    {
+      "category": "photography",
+      "title": "사람을 촬영하기 전에 허락을 받으세요",
+      "content": "사진 촬영: 승려나 티베트인 가족을 촬영하기 전에 허락을 받으세요. 많은 사람이 거절합니다 — 이를 존중하세요. 풍경과 건축물 촬영은 괜찮습니다.",
+      "importance": "medium"
+    },
+    {
+      "category": "money",
+      "title": "사원에서의 기부",
+      "content": "사원에서의 기부: 기부함에 현금을 넣는 것은 환영받습니다; ¥10-20이 적당합니다. 아무것도 안 하는 것보다 낫고 — 너무 많이 내는 것보다 낫습니다.",
+      "importance": "low"
+    },
+    {
+      "category": "shopping",
+      "title": "야시장에서의 흥정",
+      "content": "야시장에서의 흥정: 기대되는 일이지만 가볍고 친근하게 하세요. 티베트 상인과 강하게 값을 깎는 것은 문화적으로 부적절합니다.",
+      "importance": "low"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "急救",
+      "nameEn": "Ambulance",
+      "phone": "120",
+      "notes": "전국 무료 긴급 전화번호입니다.",
+      "nameKo": "응급 의료"
+    },
+    {
+      "type": "police",
+      "name": "报警",
+      "nameEn": "Police",
+      "phone": "110",
+      "notes": "전국 무료 긴급 전화번호입니다.",
+      "nameKo": "경찰 신고"
+    },
+    {
+      "type": "fire",
+      "name": "火警",
+      "nameEn": "Fire",
+      "phone": "119",
+      "notes": "전국 무료 긴급 전화번호입니다.",
+      "nameKo": "화재 신고"
+    },
+    {
+      "type": "tourist",
+      "name": "迪庆州旅游局",
+      "nameEn": "Diqing Tourism Bureau",
+      "phone": "12345",
+      "notes": "영어 서비스가 제한적입니다.",
+      "nameKo": "디칭주 관광국"
+    },
+    {
+      "type": "foreign",
+      "name": "迪庆州外事办",
+      "nameEn": "Diqing Foreign Affairs Office",
+      "phone": "+86 887 822 2800",
+      "notes": "영어 가능 인력이 제한적이며, 가이드나 통역사 섭외에 더 적합합니다.",
+      "nameKo": "디칭주 외사판공실"
+    },
+    {
+      "type": "hospital",
+      "name": "迪庆州人民医院",
+      "nameEn": "Diqing People's Hospital",
+      "phone": "+86 887 822 2120",
+      "address": "젠쯔 로드, 샹그릴라 신도시",
+      "notes": "구시가지에서 8km, 택시 ¥25. 2층 국제 진료소에 영어 가능 직원이 있습니다.",
+      "nameKo": "디칭주 인민병원"
+    },
+    {
+      "type": "embassy",
+      "name": "中国外交部领保热线",
+      "nameEn": "Chinese MFA 24/7 Consular Hotline",
+      "phone": "+86 10 6561 2300",
+      "notes": "대사관 긴급 지원용입니다.",
+      "nameKo": "중국 외교부 영사보호 핫라인"
+    }
+  ],
   "quickFacts": {
     "population": "180,000 (Diqing Tibetan Autonomous Prefecture)",
     "elevation": "3,280m (old town) — highest prefecture in Yunnan",

@@ -1027,40 +1027,183 @@
     "localTransport": "Old town is walkable. For Napa Lake (8 km north) and Songzanlin (5 km north): Bus 3 (¥1), shared van (¥5), or taxi (¥20-30). For Pudacuo (22 km east): tourist shuttle from old town (¥30 one-way) or taxi (~¥120 round trip). For Tiger Leaping Gorge (105 km south): tour operators in old town offer day trips (~¥400).",
     "tips": "Diqing Airport flights can be cancelled in winter due to snow — book buffer days if flying out in December-February. The Lijiang-Shangri-La high-speed rail is more reliable than flying in winter. Self-driving from Lijiang: 4h, road is paved (last 30 km to Tiger Leaping Gorge is winding)."
   },
-  "payment": {
-    "currency": "CNY (¥)",
-    "cashVsCard": "Old town shops and most restaurants are CASH ONLY or WeChat/Alipay only. ATMs at ICBC and Agricultural Bank branches on Changzheng Avenue. Visa/MasterCard accepted at the larger hotels (Banyan Tree, Shangri-La Resort) and a few upmarket restaurants. Mobile pay (Alipay/WeChat) is now the dominant payment method.",
-    "wechatAlipay": "Foreign visitors can use Alipay (Tap to Pay with Visa/Mastercard) since 2024. WeChat Pay also works with foreign Visa cards (slower setup, requires Chinese mobile number). Bank of China in the new town supports foreign card cash withdrawal at better rates than the airport ATM.",
-    "tips": "Carry ¥500-1,000 in small bills (¥10/20/50) for old town restaurants and markets. For hotels and tours, mobile pay works reliably. Avoid airport currency exchange — better rates in town.",
-    "atmLocations": [
-      "ICBC ATM (Changzheng Avenue, near old town)",
-      "Agricultural Bank ATM (north end of Changzheng Ave)",
-      "Diqing Airport arrival hall"
-    ]
-  },
-  "culturalTips": [
-    "صعود عجلة الصلاة: اتجه دائمًا باتجاه عقارب الساعة (الاتجاه البوذي). يلاحظ السكان المحليون إذا سلكت الاتجاه الخاطئ.",
-    "آداب الدير: اخلع القبعات، تحدث بهدوء، لا توجه قدميك نحو تماثيل بوذا أثناء الجلوس، اطلب الإذن قبل تصوير الرهبان.",
-    "مواقع الدفن السماوي: مرئية من الممرات لكنها مغلقة أمام الزوار غير التبتيين. احترم الإغلاق — فهي ليست موضع فضول، بل ممارسة دينية.",
-    "التحيات التبتية: 'تاشي ديليك' (བཀྲ་ཤིས་བདེ་ལེགས) هي التحية القياسية. الانحناء قليلًا مع ضم اليدين من آداب اللباقة.",
-    "شاي زبدة الياك مالح المذاق وليس حلوًا. إذا قدمه لك المضيف، فخذ رشفة واحدة على الأقل — فقد يسيء إليه الرفض.",
-    "الارتفاع: 3,280 متر في البلدة القديمة، و3,500-4,000 متر في بوداكو. تمهل خلال الـ24 ساعة الأولى — مشي قصير، بلا كحول، والكثير من الماء.",
-    "السلامة مع الياك والكلاب: تبدو كلاب الماستيف التبتية التي تحرس الأديرة مخيفة — لا تلمسها، لا تتواصل بالعين، وامر بجانبها بهدوء.",
-    "التصوير: اطلب الإذن قبل تصوير الرهبان أو العائلات التبتية. كثيرون يرفضون — احترم ذلك. المناظر الطبيعية والعمارة لا مشكلة في تصويرها.",
-    "التبرعات في الأديرة: النقد في صندوق التبرعات مرحب به؛ ¥10-20 مبلغ معقول. أفضل من لا شيء — وأفضل من المبالغة.",
-    "المساومة في السوق الليلي: أمر متوقع، لكن اجعلها خفيفة وودية. المساومة الشديدة مع الباعة التبتيين غير لائقة ثقافيًا."
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "يمكن للزوار الأجانب استخدام Alipay (الدفع باللمس باستخدام Visa/Mastercard) منذ 2024. وهي الآن وسيلة الدفع السائدة في الصين.",
+      "howToUse": [
+        "نزّل Alipay قبل الوصول",
+        "اربط بطاقة Visa أو Mastercard الخاصة بك",
+        "ادفع باللمس لدى التجار"
+      ],
+      "tips": [
+        "يعمل في كل متجر ومطعم تقريبًا",
+        "يدعم الدفع باللمس البطاقات الأجنبية"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "يعمل WeChat Pay أيضًا مع بطاقات Visa الأجنبية، لكن الإعداد أبطأ ويتطلب رقم هاتف محمول صينيًا.",
+      "howToUse": [
+        "نزّل WeChat",
+        "سجّل برقم هاتف محمول صيني",
+        "اربط بطاقة أجنبية"
+      ],
+      "tips": [
+        "غالبًا ما تقبل متاجر البلدة القديمة WeChat Pay أو النقد فقط"
+      ]
+    },
+    {
+      "method": "Cash",
+      "icon": "cash",
+      "description": "متاجر البلدة القديمة ومعظم المطاعم تقبل النقد فقط أو WeChat/Alipay فقط.",
+      "howToUse": [
+        "احمل مبلغ ¥500-1,000 بأوراق نقدية صغيرة (¥10/20/50) لمطاعم وأسواق البلدة القديمة"
+      ],
+      "tips": [
+        "في الفنادق والجولات، يعمل الدفع عبر الهاتف المحمول بشكل موثوق",
+        "تجنّب صرف العملات في المطار — أسعار الصرف أفضل في المدينة"
+      ]
+    },
+    {
+      "method": "Bank Card",
+      "icon": "card",
+      "description": "تُقبل بطاقات Visa/Mastercard في الفنادق الكبرى (Banyan Tree، Shangri-La Resort) وفي عدد قليل من المطاعم الراقية.",
+      "howToUse": [
+        "احمل بطاقة Visa أو Mastercard كخيار احتياطي"
+      ],
+      "tips": [
+        "معظم البائعين الصغار لا يقبلون البطاقات الأجنبية"
+      ]
+    },
+    {
+      "method": "ATM",
+      "icon": "atm",
+      "description": "توجد أجهزة صراف آلي في فروع ICBC وAgricultural Bank على جادة Changzheng، وفي صالة الوصول في مطار Diqing.",
+      "howToUse": [
+        "استخدم أجهزة الصراف الآلي التابعة لـ ICBC أو Agricultural Bank على جادة Changzheng"
+      ],
+      "tips": [
+        "يتيح Bank of China في البلدة الجديدة السحب بالبطاقات الأجنبية بمعدلات أفضل من جهاز الصراف الآلي في المطار"
+      ]
+    }
   ],
-  "emergencyContacts": {
-    "police": "110",
-    "ambulance": "120",
-    "fire": "119",
-    "touristHotline": "12345 (Diqing Tourism Bureau, English service limited)",
-    "englishSupport": "Diqing Foreign Affairs Office: +86 887 822 2800 (limited English; better for guides/translators)",
-    "mainHospital": "Diqing People's Hospital (8 km from old town, taxi ¥25). Has English-speaking staff at the international clinic on the 2nd floor.",
-    "mainHospitalAddress": "Jianzi Road, Shangri-La New Town",
-    "mainHospitalPhone": "+86 887 822 2120",
-    "embassies": "For emergency embassy assistance, call the 24/7 Chinese MFA hotline: +86 10 6561 2300."
-  },
+  "culturalTips": [
+    {
+      "category": "etiquette",
+      "title": "عجلات الصلاة: دائمًا باتجاه عقارب الساعة",
+      "content": "عند الطواف بعجلات الصلاة: اتجه دائمًا باتجاه عقارب الساعة (الاتجاه البوذي). يلاحظ السكان المحليون إذا سلكت الاتجاه الخاطئ.",
+      "importance": "high"
+    },
+    {
+      "category": "etiquette",
+      "title": "آداب الأديرة",
+      "content": "آداب الأديرة: اخلع القبعات، وتحدث بهدوء، ولا توجّه قدميك نحو تماثيل بوذا أثناء الجلوس، واسأل قبل تصوير الرهبان.",
+      "importance": "high"
+    },
+    {
+      "category": "respect",
+      "title": "مواقع الدفن السماوي مغلقة أمام الزوار",
+      "content": "مواقع الدفن السماوي: تُرى من المسارات لكنها مغلقة أمام الزوار غير التبتيين. احترم الإغلاق — فهي ليست موضع فضول، بل ممارسة دينية.",
+      "importance": "high"
+    },
+    {
+      "category": "greeting",
+      "title": "التحيات التبتية",
+      "content": "التحيات التبتية: «تاشي ديليك» (བཀྲ་ཤིས་བདེ་ལེགས) هي تحية «مرحبًا» القياسية. الانحناء الخفيف مع ضم اليدين تصرف مؤدب.",
+      "importance": "medium"
+    },
+    {
+      "category": "food",
+      "title": "شاي زبدة الياك مالح وليس حلوًا",
+      "content": "شاي زبدة الياك مالح وليس حلوًا. إذا قدّمه لك مضيفك، فارتشف منه مرة واحدة على الأقل — فقد يسيء الرفض.",
+      "importance": "medium"
+    },
+    {
+      "category": "health",
+      "title": "الارتفاع: خفف الجهد في اليوم الأول",
+      "content": "الارتفاع: 3,280 م في البلدة القديمة، و3,500-4,000 م في بوداتسو. خذ الأمور بهدوء خلال أول 24 ساعة — مشي لمسافات قصيرة، لا كحول، والكثير من الماء.",
+      "importance": "high"
+    },
+    {
+      "category": "safety",
+      "title": "كلاب الماستيف التبتية: ابقَ على مسافة",
+      "content": "سلامة الياك والكلاب: كلاب الماستيف التبتية التي تحرس الأديرة تبدو مرعبة — لا تلمسها، لا تنظر مباشرة في عينيها، وامضِ بهدوء.",
+      "importance": "high"
+    },
+    {
+      "category": "photography",
+      "title": "اسأل قبل تصوير الناس",
+      "content": "التصوير: اسأل قبل تصوير الرهبان أو العائلات التبتية. كثيرون يرفضون — احترم ذلك. المناظر الطبيعية والعمارة لا بأس بها.",
+      "importance": "medium"
+    },
+    {
+      "category": "money",
+      "title": "التبرعات في الأديرة",
+      "content": "التبرعات في الأديرة: النقد في صندوق التبرعات مُرحَّب به؛ ¥10-20 مبلغ معقول. أفضل من لا شيء — وأفضل من المبالغة.",
+      "importance": "low"
+    },
+    {
+      "category": "shopping",
+      "title": "المساومة في السوق الليلي",
+      "content": "المساومة في السوق الليلي: أمر متوقع، لكن اجعلها خفيفة وودية. المساومة الشديدة مع البائعين التبتيين غير لائقة ثقافيًا.",
+      "importance": "low"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "急救",
+      "nameEn": "Ambulance",
+      "phone": "120",
+      "notes": "رقم الطوارئ المجاني على مستوى البلاد."
+    },
+    {
+      "type": "police",
+      "name": "报警",
+      "nameEn": "Police",
+      "phone": "110",
+      "notes": "رقم الطوارئ المجاني على مستوى البلاد."
+    },
+    {
+      "type": "fire",
+      "name": "火警",
+      "nameEn": "Fire",
+      "phone": "119",
+      "notes": "رقم الطوارئ المجاني على مستوى البلاد."
+    },
+    {
+      "type": "tourist",
+      "name": "迪庆州旅游局",
+      "nameEn": "Diqing Tourism Bureau",
+      "phone": "12345",
+      "notes": "خدمة اللغة الإنجليزية محدودة."
+    },
+    {
+      "type": "foreign",
+      "name": "迪庆州外事办",
+      "nameEn": "Diqing Foreign Affairs Office",
+      "phone": "+86 887 822 2800",
+      "notes": "الإنجليزية محدودة؛ من الأفضل لترتيب المرشدين أو المترجمين."
+    },
+    {
+      "type": "hospital",
+      "name": "迪庆州人民医院",
+      "nameEn": "Diqing People's Hospital",
+      "phone": "+86 887 822 2120",
+      "address": "طريق جيانزي، بلدة شانغريلا الجديدة",
+      "notes": "تبعد 8 كم عن البلدة القديمة، والتاكسي ¥25. يوجد موظفون يتحدثون الإنجليزية في العيادة الدولية بالطابق الثاني."
+    },
+    {
+      "type": "embassy",
+      "name": "中国外交部领保热线",
+      "nameEn": "Chinese MFA 24/7 Consular Hotline",
+      "phone": "+86 10 6561 2300",
+      "notes": "للمساعدة الطارئة من السفارة."
+    }
+  ],
   "quickFacts": {
     "population": "180,000 (Diqing Tibetan Autonomous Prefecture)",
     "elevation": "3,280m (old town) — highest prefecture in Yunnan",

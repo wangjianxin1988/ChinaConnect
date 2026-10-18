@@ -1026,40 +1026,183 @@
     "localTransport": "Old town is walkable. For Napa Lake (8 km north) and Songzanlin (5 km north): Bus 3 (¥1), shared van (¥5), or taxi (¥20-30). For Pudacuo (22 km east): tourist shuttle from old town (¥30 one-way) or taxi (~¥120 round trip). For Tiger Leaping Gorge (105 km south): tour operators in old town offer day trips (~¥400).",
     "tips": "Diqing Airport flights can be cancelled in winter due to snow — book buffer days if flying out in December-February. The Lijiang-Shangri-La high-speed rail is more reliable than flying in winter. Self-driving from Lijiang: 4h, road is paved (last 30 km to Tiger Leaping Gorge is winding)."
   },
-  "payment": {
-    "currency": "CNY (¥)",
-    "cashVsCard": "Old town shops and most restaurants are CASH ONLY or WeChat/Alipay only. ATMs at ICBC and Agricultural Bank branches on Changzheng Avenue. Visa/MasterCard accepted at the larger hotels (Banyan Tree, Shangri-La Resort) and a few upmarket restaurants. Mobile pay (Alipay/WeChat) is now the dominant payment method.",
-    "wechatAlipay": "Foreign visitors can use Alipay (Tap to Pay with Visa/Mastercard) since 2024. WeChat Pay also works with foreign Visa cards (slower setup, requires Chinese mobile number). Bank of China in the new town supports foreign card cash withdrawal at better rates than the airport ATM.",
-    "tips": "Carry ¥500-1,000 in small bills (¥10/20/50) for old town restaurants and markets. For hotels and tours, mobile pay works reliably. Avoid airport currency exchange — better rates in town.",
-    "atmLocations": [
-      "ICBC ATM (Changzheng Avenue, near old town)",
-      "Agricultural Bank ATM (north end of Changzheng Ave)",
-      "Diqing Airport arrival hall"
-    ]
-  },
-  "culturalTips": [
-    "參觀巨型轉經輪：務必順時針方向（佛教方向）繞行。若走錯方向，當地人真的會注意到。",
-    "寺院禮儀：脫帽、輕聲說話，坐著時不要把腳指向佛像，拍攝僧侶前先詢問。",
-    "天葬場：從步道可見，但不對非藏族訪客開放。請尊重這項封閉規定——這不是新奇景點，而是宗教儀式。",
-    "藏族問候：「Tashi Delek」（བཀྲ་ཤིས་བདེ་ལེགས）是標準的「你好」。雙手合十、微微鞠躬是禮貌的表現。",
-    "酥油茶是鹹的，不是甜的。如果主人請你喝，至少啜飲一口——拒絕可能會冒犯對方。",
-    "海拔：古城區3,280公尺，普達措3,500-4,000公尺。最初24小時請放輕鬆——短程散步、不要喝酒、多喝水。",
-    "犛牛與狗的安全：守護寺院的藏獒看起來很嚇人——請勿觸摸、不要眼神接觸，冷靜走過去。",
-    "攝影：拍攝僧侶或藏族家庭前先詢問。很多人會拒絕——請尊重。風景與建築則可以拍攝。",
-    "寺院捐獻：歡迎在功德箱投入現金；¥10-20很合理。有捐總比沒捐好——但也不要捐太多。",
-    "夜市殺價：可以預期，但要輕鬆友善。跟藏族攤販強力殺價在文化上不太合適。"
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "自 2024 年起，外國旅客可使用支付寶（以 Visa/Mastercard 感應付款）。現在是中國主要的付款方式。",
+      "howToUse": [
+        "抵達前先下載支付寶",
+        "綁定你的 Visa 或 Mastercard",
+        "在商家感應付款"
+      ],
+      "tips": [
+        "幾乎所有商店和餐廳都能使用",
+        "感應付款支援外國卡片"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "微信支付也支援外國 Visa 卡，但設定較慢，且需要中國手機號碼。",
+      "howToUse": [
+        "下載微信",
+        "使用中國手機號碼註冊",
+        "綁定外國卡片"
+      ],
+      "tips": [
+        "古城商店通常只接受微信支付或現金"
+      ]
+    },
+    {
+      "method": "Cash",
+      "icon": "cash",
+      "description": "古城商店和大多數餐廳只收現金，或僅接受微信支付／支付寶。",
+      "howToUse": [
+        "請攜帶 ¥500-1,000 的小額鈔票（¥10/20/50），以備古城餐廳和市場使用"
+      ],
+      "tips": [
+        "飯店和行程方面，行動支付通常可穩定使用",
+        "避免在機場換匯——市區匯率較好"
+      ]
+    },
+    {
+      "method": "Bank Card",
+      "icon": "card",
+      "description": "較大型飯店（悅榕莊、香格里拉度假酒店）和少數高檔餐廳接受 Visa/Mastercard。",
+      "howToUse": [
+        "請攜帶 Visa 或 Mastercard 作為備用"
+      ],
+      "tips": [
+        "大多數小攤商不接受國外信用卡"
+      ]
+    },
+    {
+      "method": "ATM",
+      "icon": "atm",
+      "description": "長征大道上的中國工商銀行與農業銀行分行，以及迪慶機場入境大廳設有 ATM。",
+      "howToUse": [
+        "使用長征大道上的中國工商銀行或農業銀行 ATM"
+      ],
+      "tips": [
+        "新城區的中國銀行支援國外卡提款，匯率比機場 ATM 好"
+      ]
+    }
   ],
-  "emergencyContacts": {
-    "police": "110",
-    "ambulance": "120",
-    "fire": "119",
-    "touristHotline": "12345 (Diqing Tourism Bureau, English service limited)",
-    "englishSupport": "Diqing Foreign Affairs Office: +86 887 822 2800 (limited English; better for guides/translators)",
-    "mainHospital": "Diqing People's Hospital (8 km from old town, taxi ¥25). Has English-speaking staff at the international clinic on the 2nd floor.",
-    "mainHospitalAddress": "Jianzi Road, Shangri-La New Town",
-    "mainHospitalPhone": "+86 887 822 2120",
-    "embassies": "For emergency embassy assistance, call the 24/7 Chinese MFA hotline: +86 10 6561 2300."
-  },
+  "culturalTips": [
+    {
+      "category": "etiquette",
+      "title": "轉經輪：一律順時針",
+      "content": "轉經輪時，一律順時針（佛教方向）行進。若走錯方向，當地人會注意到。",
+      "importance": "high"
+    },
+    {
+      "category": "etiquette",
+      "title": "寺院禮儀",
+      "content": "寺院禮儀：脫帽、輕聲交談；坐著時不要把腳朝向佛像；拍攝僧侶前請先詢問。",
+      "importance": "high"
+    },
+    {
+      "category": "respect",
+      "title": "天葬場禁止遊客進入",
+      "content": "天葬場：從步道可見，但禁止非藏族遊客進入。請尊重這項禁令——這不是獵奇景點，而是宗教儀式。",
+      "importance": "high"
+    },
+    {
+      "category": "greeting",
+      "title": "藏族問候語",
+      "content": "藏族問候語：「Tashi Delek」（བཀྲ་ཤིས་བདེ་ལེགས）是標準的「你好」。雙手合十、微微鞠躬是禮貌的。",
+      "importance": "medium"
+    },
+    {
+      "category": "food",
+      "title": "犛牛酥油茶是鹹的，不是甜的",
+      "content": "犛牛酥油茶是鹹的，不是甜的。如果主人請你喝，至少啜飲一口——拒絕可能會失禮。",
+      "importance": "medium"
+    },
+    {
+      "category": "health",
+      "title": "海拔：第一天放慢腳步",
+      "content": "海拔：古城 3,280m，普達措 3,500-4,000m。前 24 小時請放慢步調——短距離散步、不要喝酒、多喝水。",
+      "importance": "high"
+    },
+    {
+      "category": "safety",
+      "title": "藏獒：保持距離",
+      "content": "犛牛與犬隻安全：看守寺院的藏獒看起來很嚇人——請勿觸摸、不要和牠們對視，冷靜走過去。",
+      "importance": "high"
+    },
+    {
+      "category": "photography",
+      "title": "拍攝人物前請先詢問",
+      "content": "攝影：拍攝僧侶或藏族家庭前請先詢問。許多人會拒絕——請尊重。風景和建築則可以拍攝。",
+      "importance": "medium"
+    },
+    {
+      "category": "money",
+      "title": "寺院捐款",
+      "content": "寺院捐款：歡迎在功德箱投入現金；¥10-20 很合理。有捐總比沒捐好——但也不宜捐太多。",
+      "importance": "low"
+    },
+    {
+      "category": "shopping",
+      "title": "夜市殺價",
+      "content": "夜市殺價：這是預期中的事，但請輕鬆友善、點到為止。對藏族攤販大肆殺價，在文化上並不恰當。",
+      "importance": "low"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "急救",
+      "nameEn": "Ambulance",
+      "phone": "120",
+      "notes": "全國免費緊急電話號碼。"
+    },
+    {
+      "type": "police",
+      "name": "报警",
+      "nameEn": "Police",
+      "phone": "110",
+      "notes": "全國免費緊急電話號碼。"
+    },
+    {
+      "type": "fire",
+      "name": "火警",
+      "nameEn": "Fire",
+      "phone": "119",
+      "notes": "全國免費緊急電話號碼。"
+    },
+    {
+      "type": "tourist",
+      "name": "迪庆州旅游局",
+      "nameEn": "Diqing Tourism Bureau",
+      "phone": "12345",
+      "notes": "英文服務有限。"
+    },
+    {
+      "type": "foreign",
+      "name": "迪庆州外事办",
+      "nameEn": "Diqing Foreign Affairs Office",
+      "phone": "+86 887 822 2800",
+      "notes": "英文能力有限；較適合安排導遊或翻譯人員。"
+    },
+    {
+      "type": "hospital",
+      "name": "迪庆州人民医院",
+      "nameEn": "Diqing People's Hospital",
+      "phone": "+86 887 822 2120",
+      "address": "香格里拉新城建子路",
+      "notes": "距離古城 8 公里，計程車 ¥25。二樓國際診所有會說英文的員工。"
+    },
+    {
+      "type": "embassy",
+      "name": "中国外交部领保热线",
+      "nameEn": "Chinese MFA 24/7 Consular Hotline",
+      "phone": "+86 10 6561 2300",
+      "notes": "供緊急大使館協助使用。"
+    }
+  ],
   "quickFacts": {
     "population": "180,000 (Diqing Tibetan Autonomous Prefecture)",
     "elevation": "3,280m (old town) — highest prefecture in Yunnan",

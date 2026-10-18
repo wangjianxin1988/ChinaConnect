@@ -1027,40 +1027,183 @@
     "localTransport": "Old town is walkable. For Napa Lake (8 km north) and Songzanlin (5 km north): Bus 3 (¥1), shared van (¥5), or taxi (¥20-30). For Pudacuo (22 km east): tourist shuttle from old town (¥30 one-way) or taxi (~¥120 round trip). For Tiger Leaping Gorge (105 km south): tour operators in old town offer day trips (~¥400).",
     "tips": "Diqing Airport flights can be cancelled in winter due to snow — book buffer days if flying out in December-February. The Lijiang-Shangri-La high-speed rail is more reliable than flying in winter. Self-driving from Lijiang: 4h, road is paved (last 30 km to Tiger Leaping Gorge is winding)."
   },
-  "payment": {
-    "currency": "CNY (¥)",
-    "cashVsCard": "Old town shops and most restaurants are CASH ONLY or WeChat/Alipay only. ATMs at ICBC and Agricultural Bank branches on Changzheng Avenue. Visa/MasterCard accepted at the larger hotels (Banyan Tree, Shangri-La Resort) and a few upmarket restaurants. Mobile pay (Alipay/WeChat) is now the dominant payment method.",
-    "wechatAlipay": "Foreign visitors can use Alipay (Tap to Pay with Visa/Mastercard) since 2024. WeChat Pay also works with foreign Visa cards (slower setup, requires Chinese mobile number). Bank of China in the new town supports foreign card cash withdrawal at better rates than the airport ATM.",
-    "tips": "Carry ¥500-1,000 in small bills (¥10/20/50) for old town restaurants and markets. For hotels and tours, mobile pay works reliably. Avoid airport currency exchange — better rates in town.",
-    "atmLocations": [
-      "ICBC ATM (Changzheng Avenue, near old town)",
-      "Agricultural Bank ATM (north end of Changzheng Ave)",
-      "Diqing Airport arrival hall"
-    ]
-  },
-  "culturalTips": [
-    "Beim Umrunden der Gebetsmühle: immer im UHRZEIGERSINN (buddhistische Richtung) gehen. Einheimische merken es, wenn man in die falsche Richtung geht.",
-    "Kloster-Etikette: Hüte abnehmen, leise sprechen, beim Sitzen die Füße nicht auf Buddha-Statuen richten, vor dem Fotografieren von Mönchen fragen.",
-    "Himmelsbestattungsstätten: von den Wegen aus sichtbar, aber für nicht-tibetische Besucher geschlossen. Respektieren Sie die Schließung – kein Schauobjekt, sondern eine religiöse Praxis.",
-    "Tibetische Begrüßungen: 'Tashi Delek' (བཀྲ་ཤིས་བདེ་ལེགས) ist das übliche 'Hallo'. Eine leichte Verbeugung mit zusammengelegten Händen ist höflich.",
-    "Yakbuttertee ist herzhaft, nicht süß. Wenn Ihr Gastgeber ihn anbietet, nehmen Sie mindestens einen Schluck – eine Ablehnung kann beleidigen.",
-    "Höhenlage: 3,280m in der Altstadt, 3,500-4,000m in Pudacuo. Nehmen Sie es in den ersten 24 Stunden ruhig angehen – kurze Spaziergänge, kein Alkohol, viel Wasser.",
-    "Sicherheit bei Yaks und Hunden: Tibetische Mastiffs, die Klöster bewachen, wirken einschüchternd – NICHT anfassen, keinen Blickkontakt suchen, ruhig vorbeigehen.",
-    "Fotografieren: Vor dem Fotografieren von Mönchen oder tibetischen Familien fragen. Viele lehnen ab – respektieren Sie das. Landschaften und Architektur sind in Ordnung.",
-    "Spenden in Klöstern: Bargeld in der Spendenbox ist willkommen; ¥10-20 sind angemessen. Besser als nichts – besser als zu viel.",
-    "Feilschen auf dem Nachtmarkt: wird erwartet, aber bleiben Sie locker und freundlich. Hartes Feilschen mit tibetischen Verkäufern ist kulturell unpassend."
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Ausländische Besucher können Alipay seit 2024 nutzen (Tap to Pay mit Visa/Mastercard). Inzwischen die dominierende Zahlungsmethode in China.",
+      "howToUse": [
+        "Alipay vor der Ankunft herunterladen",
+        "Visa- oder Mastercard verknüpfen",
+        "Bei Händlern mit Tap to Pay bezahlen"
+      ],
+      "tips": [
+        "Funktioniert in fast jedem Geschäft und Restaurant",
+        "Tap to Pay unterstützt ausländische Karten"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "WeChat Pay funktioniert auch mit ausländischen Visa-Karten, aber die Einrichtung ist langsamer und erfordert eine chinesische Mobilfunknummer.",
+      "howToUse": [
+        "WeChat herunterladen",
+        "Mit einer chinesischen Mobilfunknummer registrieren",
+        "Eine ausländische Karte verknüpfen"
+      ],
+      "tips": [
+        "Geschäfte in der Altstadt akzeptieren oft nur WeChat Pay oder Bargeld"
+      ]
+    },
+    {
+      "method": "Cash",
+      "icon": "cash",
+      "description": "Geschäfte in der Altstadt und die meisten Restaurants akzeptieren NUR BARGELD oder ausschließlich WeChat/Alipay.",
+      "howToUse": [
+        "Führen Sie ¥500-1,000 in kleinen Geldscheinen (¥10/20/50) für Restaurants und Märkte in der Altstadt mit."
+      ],
+      "tips": [
+        "In Hotels und bei Touren funktioniert mobiles Bezahlen zuverlässig.",
+        "Meiden Sie Geldwechsel am Flughafen — bessere Kurse in der Stadt."
+      ]
+    },
+    {
+      "method": "Bank Card",
+      "icon": "card",
+      "description": "Visa/Mastercard werden in den größeren Hotels (Banyan Tree, Shangri-La Resort) und in einigen gehobenen Restaurants akzeptiert.",
+      "howToUse": [
+        "Führen Sie eine Visa- oder Mastercard als Reserve mit."
+      ],
+      "tips": [
+        "Die meisten kleinen Händler akzeptieren keine ausländischen Karten."
+      ]
+    },
+    {
+      "method": "ATM",
+      "icon": "atm",
+      "description": "Geldautomaten in Filialen der ICBC und der Agricultural Bank an der Changzheng Avenue sowie in der Ankunftshalle des Diqing Airport.",
+      "howToUse": [
+        "Nutzen Sie Geldautomaten der ICBC oder der Agricultural Bank an der Changzheng Avenue."
+      ],
+      "tips": [
+        "Die Bank of China in der Neustadt ermöglicht Abhebungen mit ausländischen Karten zu besseren Kursen als der Geldautomat am Flughafen."
+      ]
+    }
   ],
-  "emergencyContacts": {
-    "police": "110",
-    "ambulance": "120",
-    "fire": "119",
-    "touristHotline": "12345 (Diqing Tourism Bureau, English service limited)",
-    "englishSupport": "Diqing Foreign Affairs Office: +86 887 822 2800 (limited English; better for guides/translators)",
-    "mainHospital": "Diqing People's Hospital (8 km from old town, taxi ¥25). Has English-speaking staff at the international clinic on the 2nd floor.",
-    "mainHospitalAddress": "Jianzi Road, Shangri-La New Town",
-    "mainHospitalPhone": "+86 887 822 2120",
-    "embassies": "For emergency embassy assistance, call the 24/7 Chinese MFA hotline: +86 10 6561 2300."
-  },
+  "culturalTips": [
+    {
+      "category": "etiquette",
+      "title": "Gebetsmühlen: immer im Uhrzeigersinn",
+      "content": "Beim Drehen der Gebetsmühlen: immer im UHRZEIGERSINN (buddhistische Richtung). Einheimische bemerken es durchaus, wenn Sie die falsche Richtung nehmen.",
+      "importance": "high"
+    },
+    {
+      "category": "etiquette",
+      "title": "Etikette im Kloster",
+      "content": "Etikette im Kloster: Hüte abnehmen, leise sprechen, beim Sitzen die Füße nicht auf Buddha-Statuen richten, vor dem Fotografieren von Mönchen fragen.",
+      "importance": "high"
+    },
+    {
+      "category": "respect",
+      "title": "Himmelsbestattungsstätten sind für Besucher geschlossen",
+      "content": "Himmelsbestattungsstätten: von den Wanderwegen aus sichtbar, aber für nicht-tibetische Besucher geschlossen. Respektieren Sie die Schließung — keine Kuriosität, sondern eine religiöse Praxis.",
+      "importance": "high"
+    },
+    {
+      "category": "greeting",
+      "title": "Tibetische Begrüßungen",
+      "content": "Tibetische Begrüßungen: „Tashi Delek“ (བཀྲ་ཤིས་བདེ་ལེགས) ist das übliche „Hallo“. Eine leichte Verbeugung mit zusammengelegten Händen ist höflich.",
+      "importance": "medium"
+    },
+    {
+      "category": "food",
+      "title": "Yakbuttertee ist herzhaft, nicht süß",
+      "content": "Yakbuttertee ist herzhaft, nicht süß. Wenn Ihr Gastgeber ihn anbietet, trinken Sie mindestens einmal einen Schluck — eine Ablehnung kann kränken.",
+      "importance": "medium"
+    },
+    {
+      "category": "health",
+      "title": "Höhenlage: Lassen Sie es am ersten Tag ruhig angehen.",
+      "content": "Höhenlage: 3,280 m in der Altstadt, 3,500-4,000 m in Pudacuo. Nehmen Sie es in den ersten 24 Stunden ruhig angehen — kurze Spaziergänge, kein Alkohol, viel Wasser.",
+      "importance": "high"
+    },
+    {
+      "category": "safety",
+      "title": "Tibetmastiffs: Abstand halten",
+      "content": "Sicherheit bei Yaks und Hunden: Tibetmastiffs, die Klöster bewachen, wirken einschüchternd — NICHT anfassen, keinen Blickkontakt aufnehmen, ruhig vorbeigehen.",
+      "importance": "high"
+    },
+    {
+      "category": "photography",
+      "title": "Vor dem Fotografieren von Menschen fragen",
+      "content": "Fotografie: Fragen Sie vor dem Fotografieren von Mönchen oder tibetischen Familien. Viele lehnen ab — respektieren Sie das. Landschaften und Architektur sind in Ordnung.",
+      "importance": "medium"
+    },
+    {
+      "category": "money",
+      "title": "Spenden in Klöstern",
+      "content": "Spenden in Klöstern: Bargeld in der Spendenbox ist willkommen; ¥10-20 sind angemessen. Besser als nichts — besser als zu viel.",
+      "importance": "low"
+    },
+    {
+      "category": "shopping",
+      "title": "Feilschen auf dem Nachtmarkt",
+      "content": "Feilschen auf dem Nachtmarkt: wird erwartet, aber halten Sie es locker und freundlich. Hartes Verhandeln mit tibetischen Händlern ist kulturell unpassend.",
+      "importance": "low"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "急救",
+      "nameEn": "Ambulance",
+      "phone": "120",
+      "notes": "Landesweite kostenlose Notrufnummer."
+    },
+    {
+      "type": "police",
+      "name": "报警",
+      "nameEn": "Police",
+      "phone": "110",
+      "notes": "Landesweite kostenlose Notrufnummer."
+    },
+    {
+      "type": "fire",
+      "name": "火警",
+      "nameEn": "Fire",
+      "phone": "119",
+      "notes": "Landesweite kostenlose Notrufnummer."
+    },
+    {
+      "type": "tourist",
+      "name": "迪庆州旅游局",
+      "nameEn": "Diqing Tourism Bureau",
+      "phone": "12345",
+      "notes": "Englischsprachiger Service eingeschränkt."
+    },
+    {
+      "type": "foreign",
+      "name": "迪庆州外事办",
+      "nameEn": "Diqing Foreign Affairs Office",
+      "phone": "+86 887 822 2800",
+      "notes": "Englischkenntnisse begrenzt; besser, Guides oder Übersetzer zu organisieren."
+    },
+    {
+      "type": "hospital",
+      "name": "迪庆州人民医院",
+      "nameEn": "Diqing People's Hospital",
+      "phone": "+86 887 822 2120",
+      "address": "Jianzi Road, Shangri-La New Town",
+      "notes": "8 km von der Altstadt entfernt, Taxi ¥25. Englischsprachiges Personal in der internationalen Klinik im 2. Stock."
+    },
+    {
+      "type": "embassy",
+      "name": "中国外交部领保热线",
+      "nameEn": "Chinese MFA 24/7 Consular Hotline",
+      "phone": "+86 10 6561 2300",
+      "notes": "Für Notfallunterstützung durch die Botschaft."
+    }
+  ],
   "quickFacts": {
     "population": "180,000 (Diqing Tibetan Autonomous Prefecture)",
     "elevation": "3,280m (old town) — highest prefecture in Yunnan",

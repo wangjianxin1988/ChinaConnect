@@ -1027,40 +1027,183 @@
     "localTransport": "Old town is walkable. For Napa Lake (8 km north) and Songzanlin (5 km north): Bus 3 (¥1), shared van (¥5), or taxi (¥20-30). For Pudacuo (22 km east): tourist shuttle from old town (¥30 one-way) or taxi (~¥120 round trip). For Tiger Leaping Gorge (105 km south): tour operators in old town offer day trips (~¥400).",
     "tips": "Diqing Airport flights can be cancelled in winter due to snow — book buffer days if flying out in December-February. The Lijiang-Shangri-La high-speed rail is more reliable than flying in winter. Self-driving from Lijiang: 4h, road is paved (last 30 km to Tiger Leaping Gorge is winding)."
   },
-  "payment": {
-    "currency": "CNY (¥)",
-    "cashVsCard": "Old town shops and most restaurants are CASH ONLY or WeChat/Alipay only. ATMs at ICBC and Agricultural Bank branches on Changzheng Avenue. Visa/MasterCard accepted at the larger hotels (Banyan Tree, Shangri-La Resort) and a few upmarket restaurants. Mobile pay (Alipay/WeChat) is now the dominant payment method.",
-    "wechatAlipay": "Foreign visitors can use Alipay (Tap to Pay with Visa/Mastercard) since 2024. WeChat Pay also works with foreign Visa cards (slower setup, requires Chinese mobile number). Bank of China in the new town supports foreign card cash withdrawal at better rates than the airport ATM.",
-    "tips": "Carry ¥500-1,000 in small bills (¥10/20/50) for old town restaurants and markets. For hotels and tours, mobile pay works reliably. Avoid airport currency exchange — better rates in town.",
-    "atmLocations": [
-      "ICBC ATM (Changzheng Avenue, near old town)",
-      "Agricultural Bank ATM (north end of Changzheng Ave)",
-      "Diqing Airport arrival hall"
-    ]
-  },
-  "culturalTips": [
-    "การหมุนกงล้อสวดมนต์: ให้หมุนตามเข็มนาฬิกาเสมอ (ทิศทางตามหลักพุทธศาสนา) คนท้องถิ่นสังเกตได้หากคุณหมุนผิดทาง",
-    "มารยาทในอาราม: ถอดหมวก พูดเบา ๆ ห้ามใช้เท้าชี้ไปที่พระพุทธรูปขณะนั่ง ถามก่อนถ่ายรูปพระสงฆ์",
-    "แหล่งฝังศพแบบ Sky Burial: มองเห็นได้จากเส้นทางเดิน แต่ปิดสำหรับผู้เยี่ยมชมที่ไม่ใช่ชาวทิเบต โปรดเคารพการปิดพื้นที่ — ไม่ใช่เรื่องแปลกที่ต้องไปดู แต่เป็นพิธีกรรมทางศาสนา",
-    "การทักทายแบบทิเบต: 'Tashi Delek' (བཀྲ་ཤིས་བདེ་ལེགས) คือคำว่า 'สวัสดี' มาตรฐาน การโค้งเล็กน้อยพร้อมพนมมือถือเป็นการสุภาพ",
-    "ชาเนยจามรีมีรสเค็ม ไม่หวาน หากเจ้าบ้านเสนอให้ จิบอย่างน้อยหนึ่งครั้ง — การปฏิเสธอาจทำให้เจ้าบ้านไม่พอใจ",
-    "ความสูง: 3,280m ที่เมืองเก่า, 3,500-4,000m ที่ Pudacuo ใน 24 ชั่วโมงแรกควรทำตัวสบาย ๆ — เดินระยะสั้น ไม่ดื่มแอลกอฮอล์ ดื่มน้ำมาก ๆ",
-    "ความปลอดภัยจากจามรีและสุนัข: สุนัขทิเบตันมาสทิฟฟ์ที่เฝ้าอารามดูน่ากลัว — ห้ามสัมผัส ห้ามสบตา เดินผ่านไปอย่างสงบ",
-    "การถ่ายภาพ: ถามก่อนถ่ายรูปพระสงฆ์หรือครอบครัวชาวทิเบต หลายคนปฏิเสธ — โปรดเคารพ ภูมิทัศน์และสถาปัตยกรรมถ่ายได้",
-    "การบริจาคที่อาราม: เงินสดในกล่องบริจาคเป็นที่ยอมรับ; ¥10-20 ถือว่าเหมาะสม ดีกว่าไม่ให้เลย — ดีกว่าการให้มากเกินไป",
-    "การต่อรองราคาที่ตลาดกลางคืน: เป็นเรื่องที่คาดหมายได้ แต่ควรทำแบบสบาย ๆ และเป็นมิตร การต่อรองหนัก ๆ กับพ่อค้าชาวทิเบตถือว่าไม่เหมาะสมทางวัฒนธรรม"
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "นักท่องเที่ยวต่างชาติสามารถใช้ Alipay (แตะเพื่อจ่ายด้วย Visa/Mastercard) ได้ตั้งแต่ปี 2024 ปัจจุบันเป็นวิธีชำระเงินหลักในจีน",
+      "howToUse": [
+        "ดาวน์โหลด Alipay ก่อนเดินทางมาถึง",
+        "เชื่อมโยงบัตร Visa หรือ Mastercard ของคุณ",
+        "แตะเพื่อจ่ายที่ร้านค้า"
+      ],
+      "tips": [
+        "ใช้ได้กับร้านค้าและร้านอาหารเกือบทุกแห่ง",
+        "ระบบแตะเพื่อจ่ายรองรับบัตรต่างประเทศ"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "WeChat Pay ยังใช้ได้กับบัตร Visa ต่างประเทศ แต่การตั้งค่าช้ากว่าและต้องใช้หมายเลขโทรศัพท์มือถือจีน",
+      "howToUse": [
+        "ดาวน์โหลด WeChat",
+        "ลงทะเบียนด้วยหมายเลขโทรศัพท์มือถือจีน",
+        "เชื่อมโยงบัตรต่างประเทศ"
+      ],
+      "tips": [
+        "ร้านค้าในเมืองเก่ามักรับเฉพาะ WeChat Pay หรือเงินสด"
+      ]
+    },
+    {
+      "method": "Cash",
+      "icon": "cash",
+      "description": "ร้านค้าในเมืองเก่าและร้านอาหารส่วนใหญ่รับเฉพาะเงินสด หรือเฉพาะ WeChat/Alipay",
+      "howToUse": [
+        "พกเงิน ¥500-1,000 เป็นธนบัตรใบเล็ก (¥10/20/50) สำหรับร้านอาหารและตลาดในเมืองเก่า"
+      ],
+      "tips": [
+        "สำหรับโรงแรมและทัวร์ การจ่ายผ่านมือถือใช้งานได้อย่างน่าเชื่อถือ",
+        "หลีกเลี่ยงการแลกเงินที่สนามบิน — อัตราแลกเปลี่ยนในเมืองดีกว่า"
+      ]
+    },
+    {
+      "method": "Bank Card",
+      "icon": "card",
+      "description": "รับ Visa/Mastercard ที่โรงแรมขนาดใหญ่ (Banyan Tree, Shangri-La Resort) และร้านอาหารหรูบางแห่ง",
+      "howToUse": [
+        "นำ Visa หรือ Mastercard ไปสำรอง"
+      ],
+      "tips": [
+        "แผงค้าขายรายเล็กส่วนใหญ่ไม่รับบัตรต่างประเทศ"
+      ]
+    },
+    {
+      "method": "ATM",
+      "icon": "atm",
+      "description": "ตู้ ATM ที่สาขา ICBC และ Agricultural Bank บนถนน Changzheng Avenue และในโถงผู้โดยสารขาเข้าของสนามบิน Diqing",
+      "howToUse": [
+        "ใช้ตู้ ATM ของ ICBC หรือ Agricultural Bank บนถนน Changzheng Avenue"
+      ],
+      "tips": [
+        "Bank of China ในเมืองใหม่รองรับการถอนเงินด้วยบัตรต่างประเทศในอัตราที่ดีกว่าตู้ ATM ที่สนามบิน"
+      ]
+    }
   ],
-  "emergencyContacts": {
-    "police": "110",
-    "ambulance": "120",
-    "fire": "119",
-    "touristHotline": "12345 (Diqing Tourism Bureau, English service limited)",
-    "englishSupport": "Diqing Foreign Affairs Office: +86 887 822 2800 (limited English; better for guides/translators)",
-    "mainHospital": "Diqing People's Hospital (8 km from old town, taxi ¥25). Has English-speaking staff at the international clinic on the 2nd floor.",
-    "mainHospitalAddress": "Jianzi Road, Shangri-La New Town",
-    "mainHospitalPhone": "+86 887 822 2120",
-    "embassies": "For emergency embassy assistance, call the 24/7 Chinese MFA hotline: +86 10 6561 2300."
-  },
+  "culturalTips": [
+    {
+      "category": "etiquette",
+      "title": "กังหันสวดมนต์: หมุนตามเข็มนาฬิกาเสมอ",
+      "content": "การขึ้นไปหมุนกังหันสวดมนต์: ไปตามเข็มนาฬิกาเสมอ (ทิศทางของชาวพุทธ) คนท้องถิ่นสังเกตได้หากคุณไปผิดทาง",
+      "importance": "high"
+    },
+    {
+      "category": "etiquette",
+      "title": "มารยาทในอาราม",
+      "content": "มารยาทในอาราม: ถอดหมวก พูดเบาๆ ห้ามชี้เท้าไปที่พระพุทธรูปขณะนั่ง ถามก่อนถ่ายรูปพระสงฆ์",
+      "importance": "high"
+    },
+    {
+      "category": "respect",
+      "title": "แหล่งพิธีฝังศพแบบท้องฟ้า (sky burial) ปิดสำหรับผู้มาเยือน",
+      "content": "แหล่งพิธีฝังศพแบบท้องฟ้า (sky burial): มองเห็นได้จากเส้นทางเดินป่า แต่ปิดสำหรับผู้มาเยือนที่ไม่ใช่ชาวทิเบต โปรดเคารพการปิดสถานที่ — ไม่ใช่เรื่องน่าคึกคัก แต่เป็นศาสนพิธี",
+      "importance": "high"
+    },
+    {
+      "category": "greeting",
+      "title": "คำทักทายแบบทิเบต",
+      "content": "คำทักทายแบบทิเบต: 'Tashi Delek' (བཀྲ་ཤིས་བདེ་ལེགས) เป็นคำว่า 'สวัสดี' มาตรฐาน การโค้งเล็กน้อยพร้อมพนมมือเป็นมารยาทที่สุภาพ",
+      "importance": "medium"
+    },
+    {
+      "category": "food",
+      "title": "ชาเนยจามรีมีรสเค็ม ไม่ใช่วาน",
+      "content": "ชาเนยจามรีมีรสเค็ม ไม่ใช่วาน หากเจ้าภาพเสนอให้ จิบอย่างน้อยหนึ่งครั้ง — การปฏิเสธอาจทำให้ไม่พอใจ",
+      "importance": "medium"
+    },
+    {
+      "category": "health",
+      "title": "ระดับความสูง: ใช้วันแรกให้สบายๆ",
+      "content": "ระดับความสูง: 3,280 ม. ที่เมืองเก่า และ 3,500-4,000 ม. ที่ Pudacuo ช่วง 24 ชั่วโมงแรกควรทำตัวเบาๆ เดินสั้นๆ งดแอลกอฮอล์ และดื่มน้ำเยอะๆ",
+      "importance": "high"
+    },
+    {
+      "category": "safety",
+      "title": "มาสทิฟทิเบต: ควรเว้นระยะห่าง",
+      "content": "ความปลอดภัยจากจามรีและสุนัข: มาสทิฟทิเบตที่เฝ้าวัดดูน่ากลัว — ห้ามแตะต้อง ห้ามสบตา และเดินผ่านไปอย่างใจเย็น",
+      "importance": "high"
+    },
+    {
+      "category": "photography",
+      "title": "สอบถามก่อนถ่ายภาพผู้คน",
+      "content": "การถ่ายภาพ: สอบถามก่อนถ่ายภาพพระสงฆ์หรือครอบครัวชาวทิเบต หลายคนปฏิเสธ — โปรดเคารพ ทิวทัศน์และสถาปัตยกรรมถ่ายได้",
+      "importance": "medium"
+    },
+    {
+      "category": "money",
+      "title": "การบริจาคที่วัด",
+      "content": "การบริจาคที่วัด: เงินสดในกล่องบริจาคเป็นที่ยินดีรับ; ¥10-20 ถือว่าเหมาะสม ดีกว่าไม่ให้ — ดีกว่าให้มากเกินไป",
+      "importance": "low"
+    },
+    {
+      "category": "shopping",
+      "title": "การต่อรองราคาที่ตลาดกลางคืน",
+      "content": "การต่อรองราคาที่ตลาดกลางคืน: เป็นเรื่องที่คาดได้ แต่ควรทำแบบสบายๆ และเป็นกันเอง การต่อรองหนักๆ กับพ่อค้าแม่ค้าชาวทิเบตถือว่าไม่เหมาะสมทางวัฒนธรรม",
+      "importance": "low"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "急救",
+      "nameEn": "Ambulance",
+      "phone": "120",
+      "notes": "หมายเลขฉุกเฉินฟรีทั่วประเทศ"
+    },
+    {
+      "type": "police",
+      "name": "报警",
+      "nameEn": "Police",
+      "phone": "110",
+      "notes": "หมายเลขฉุกเฉินฟรีทั่วประเทศ"
+    },
+    {
+      "type": "fire",
+      "name": "火警",
+      "nameEn": "Fire",
+      "phone": "119",
+      "notes": "หมายเลขฉุกเฉินฟรีทั่วประเทศ"
+    },
+    {
+      "type": "tourist",
+      "name": "迪庆州旅游局",
+      "nameEn": "Diqing Tourism Bureau",
+      "phone": "12345",
+      "notes": "บริการภาษาอังกฤษมีจำกัด"
+    },
+    {
+      "type": "foreign",
+      "name": "迪庆州外事办",
+      "nameEn": "Diqing Foreign Affairs Office",
+      "phone": "+86 887 822 2800",
+      "notes": "ภาษาอังกฤษมีจำกัด เหมาะกว่าสำหรับการจัดไกด์หรือล่าม"
+    },
+    {
+      "type": "hospital",
+      "name": "迪庆州人民医院",
+      "nameEn": "Diqing People's Hospital",
+      "phone": "+86 887 822 2120",
+      "address": "ถนน Jianzi เมืองใหม่ Shangri-La",
+      "notes": "ห่างจากเมืองเก่า 8 กม. แท็กซี่ ¥25 มีพนักงานพูดภาษาอังกฤษที่คลินิกนานาชาติชั้น 2"
+    },
+    {
+      "type": "embassy",
+      "name": "中国外交部领保热线",
+      "nameEn": "Chinese MFA 24/7 Consular Hotline",
+      "phone": "+86 10 6561 2300",
+      "notes": "สำหรับความช่วยเหลือฉุกเฉินจากสถานทูต"
+    }
+  ],
   "quickFacts": {
     "population": "180,000 (Diqing Tibetan Autonomous Prefecture)",
     "elevation": "3,280m (old town) — highest prefecture in Yunnan",
