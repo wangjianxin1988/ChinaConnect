@@ -87,11 +87,17 @@ const citySchema = {
   url: `https://chinaengage.org/city/${city.slug}`,
   photo: city.coverImage,
   aggregateRating:
-    city.restaurants.length > 0
+    // 2026-10-18: 有些城市(如 shangri-la)的 restaurants 没有 rating 字段,
+    // 原写法会让 reduce 累加出 NaN,输出 "ratingValue":"NaN" 到 JSON-LD,
+    // Google 会把整段结构化数据判为无效。只在存在有效 rating 时才输出。
+    city.restaurants.filter((r) => typeof r.rating === "number" && r.rating > 0).length > 0
       ? {
           "@type": "AggregateRating",
           ratingValue: (
-            city.restaurants.reduce((sum, r) => sum + r.rating, 0) / city.restaurants.length
+            city.restaurants
+              .filter((r) => typeof r.rating === "number" && r.rating > 0)
+              .reduce((sum, r) => sum + r.rating, 0) /
+            city.restaurants.filter((r) => typeof r.rating === "number" && r.rating > 0).length
           ).toFixed(1),
           reviewCount: city.restaurants.length,
         }
@@ -140,7 +146,14 @@ const restaurantSchemas = city.restaurants.slice(0, 5).map((restaurant) => ({
   alternateName: restaurant.name,
   description: restaurant.description,
   servesCuisine: restaurant.cuisine,
-  priceRange: `$${Math.round(restaurant.avgPrice / 2)} - $${Math.round(restaurant.avgPrice * 1.5)}`,
+  // 2026-10-18: avgPrice 缺失时 Math.round(undefined/2) 会产出 "$NaN - $NaN"。
+  // 优先用城市自带的 priceRange 字符串(如 "¥80-150"),两者都没有就省略该字段,
+  // 绝不输出 NaN(NaN 会让 Google 判定结构化数据无效)。
+  priceRange: restaurant.priceRange
+    ? restaurant.priceRange
+    : typeof restaurant.avgPrice === "number"
+      ? `$${Math.round(restaurant.avgPrice / 2)} - $${Math.round(restaurant.avgPrice * 1.5)}`
+      : undefined,
   aggregateRating: restaurant.rating
     ? {
         "@type": "AggregateRating",

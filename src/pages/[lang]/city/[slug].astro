@@ -110,11 +110,16 @@ const citySchema = {
   url: `https://chinaengage.org${langPrefix}/city/${city.slug}`,
   photo: city.coverImage,
   aggregateRating:
-    city.restaurants.length > 0
+    // 2026-10-18: 部分城市(如 shangri-la)的 restaurants 没有 rating 字段,
+    // 原写法 reduce 会累加出 NaN,输出 "ratingValue":"NaN" 让 JSON-LD 整段失效。
+    city.restaurants.filter((r) => typeof r.rating === "number" && r.rating > 0).length > 0
       ? {
           "@type": "AggregateRating",
           ratingValue: (
-            city.restaurants.reduce((sum, r) => sum + r.rating, 0) / city.restaurants.length
+            city.restaurants
+              .filter((r) => typeof r.rating === "number" && r.rating > 0)
+              .reduce((sum, r) => sum + r.rating, 0) /
+            city.restaurants.filter((r) => typeof r.rating === "number" && r.rating > 0).length
           ).toFixed(1),
           reviewCount: city.restaurants.length,
         }
@@ -163,7 +168,12 @@ const restaurantSchemas = city.restaurants.slice(0, 5).map((restaurant) => ({
   alternateName: restaurant.name,
   description: restaurant.description,
   servesCuisine: restaurant.cuisine,
-  priceRange: `$${Math.round(restaurant.avgPrice / 2)} - $${Math.round(restaurant.avgPrice * 1.5)}`,
+  // 2026-10-18: avgPrice 缺失时 Math.round(undefined/2) 会产出 "$NaN - $NaN"。
+  priceRange: restaurant.priceRange
+    ? restaurant.priceRange
+    : typeof restaurant.avgPrice === "number"
+      ? `$${Math.round(restaurant.avgPrice / 2)} - $${Math.round(restaurant.avgPrice * 1.5)}`
+      : undefined,
   aggregateRating: restaurant.rating
     ? {
         "@type": "AggregateRating",

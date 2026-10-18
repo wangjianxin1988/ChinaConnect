@@ -3,7 +3,16 @@ import { EMERGENCY_NAMES_L10N } from "@/data/emergency/emergency-names-l10n";
 import React from "react";
 
 export interface EmergencyContact {
-  type: "ambulance" | "police" | "fire" | "hospital" | "embassy";
+  // 2026-10-18: 扩展 tourist / foreign —— 香格里拉等城市的数据里有旅游局
+  // 和外事办的联络方式,原来 5 个 type 的联合类型装不下。
+  type:
+    | "ambulance"
+    | "police"
+    | "fire"
+    | "hospital"
+    | "embassy"
+    | "tourist"
+    | "foreign";
   name: string;
   nameEn: string;
   phone: string;
@@ -30,6 +39,14 @@ function getTypeIcon(type: EmergencyContact["type"]) {
       return "🏥";
     case "embassy":
       return "🏛️";
+    case "tourist":
+      return "🧭";
+    case "foreign":
+      return "🌐";
+    default:
+      // 2026-10-18: 城市数据里出现过 tourist / foreign 等新 type,
+      // 没有 default 时返回 undefined,渲染出 class="... undefined"。
+      return "📞";
   }
 }
 
@@ -45,6 +62,12 @@ function getTypeBg(type: EmergencyContact["type"]) {
       return "bg-red-100 text-red-600";
     case "embassy":
       return "bg-purple-100 text-purple-600";
+    case "tourist":
+      return "bg-emerald-100 text-emerald-600";
+    case "foreign":
+      return "bg-indigo-100 text-indigo-600";
+    default:
+      return "bg-gray-100 text-gray-600";
   }
 }
 
