@@ -1021,11 +1021,54 @@
     }
   ],
   "transport": {
-    "byAir": "Diqing Shangri-La Airport (DIG) — 5 km from old town. Direct flights from Kunming (1h, ~¥800), Chengdu (2h, ~¥1,500), Shanghai (4h, ~¥2,500), Lhasa (2h, ~¥2,000), and seasonal Beijing (3h). Airport to old town: taxi ¥30, Bus 3 ¥1. Summer 2026 added direct flights from Guangzhou and Chongqing.",
-    "byTrain": "Lijiang-Shangri-La high-speed rail opened 2023: Lijiang to Shangri-La in 1h 20min, ~¥80. From Kunming via Lijiang: ~5 hours total. The Shangri-La Railway Station is 8 km from old town; taxi ¥25 or Bus 1 ¥1.",
-    "byBus": "From Lijiang: 4-5 hours, ¥72, frequent departures (every 30 min from Lijiang Bus Station). From Kunming: 10-12 hours, ¥250, overnight buses available. Shangri-La Bus Station is 10 min walk from Dukezong south gate.",
-    "localTransport": "Old town is walkable. For Napa Lake (8 km north) and Songzanlin (5 km north): Bus 3 (¥1), shared van (¥5), or taxi (¥20-30). For Pudacuo (22 km east): tourist shuttle from old town (¥30 one-way) or taxi (~¥120 round trip). For Tiger Leaping Gorge (105 km south): tour operators in old town offer day trips (~¥400).",
-    "tips": "Diqing Airport flights can be cancelled in winter due to snow — book buffer days if flying out in December-February. The Lijiang-Shangri-La high-speed rail is more reliable than flying in winter. Self-driving from Lijiang: 4h, road is paved (last 30 km to Tiger Leaping Gorge is winding)."
+    "arrival": [
+      {
+        "type": "air",
+        "from": "كونمينغ، تشنغدو، شنغهاي، لاسا، قوانغتشو، تشونغتشينغ، بكين (موسمي)",
+        "to": "مطار ديغينغ شانغريلا (DIG)، على بعد 5 km من البلدة القديمة",
+        "duration": "كونمينغ 1h، تشنغدو 2h، لاسا 2h، بكين 3h، شنغهاي 4h",
+        "price": "كونمينغ ~¥800، تشنغدو ~¥1,500، لاسا ~¥2,000، شنغهاي ~¥2,500",
+        "frequency": "رحلات مباشرة؛ أُضيفت قوانغتشو وتشونغتشينغ في صيف 2026",
+        "tips": "من المطار إلى البلدة القديمة: سيارة أجرة ¥30، Bus 3 ¥1. قد تُلغى رحلات الشتاء بسبب الثلوج — احجز أيامًا احتياطية إذا كنت مسافرًا جوًا من ديسمبر إلى فبراير."
+      },
+      {
+        "type": "train",
+        "from": "ليجيانغ (مباشر)، كونمينغ (عبر ليجيانغ)",
+        "to": "محطة سكة حديد شانغريلا، على بعد 8 km من البلدة القديمة",
+        "duration": "ليجيانغ 1h 20min؛ كونمينغ عبر ليجيانغ ~5h إجمالًا",
+        "price": "ليجيانغ ~¥80",
+        "frequency": "افتُتحت سكة الحديد فائقة السرعة بين ليجيانغ وشانغريلا في 2023",
+        "tips": "من المحطة إلى البلدة القديمة: سيارة أجرة ¥25 أو Bus 1 ¥1. أكثر موثوقية من الطيران في الشتاء."
+      },
+      {
+        "type": "bus",
+        "from": "ليجيانغ، كونمينغ",
+        "to": "محطة حافلات شانغريلا، على بعد 10 min سيرًا من بوابة دوكيزونغ الجنوبية",
+        "duration": "ليجيانغ 4-5h؛ كونمينغ 10-12h",
+        "price": "ليجيانغ ¥72؛ كونمينغ ¥250",
+        "frequency": "كل 30 min من محطة حافلات ليجيانغ؛ حافلات ليلية من كونمينغ",
+        "tips": "القيادة الذاتية من ليجيانغ تستغرق نحو 4h على طرق معبدة."
+      }
+    ],
+    "local": {
+      "bus": [
+        "Bus 3 إلى دير سونغزانلين (5 km شمالًا) وبحيرة نابا (8 km شمالًا): ¥1",
+        "Bus 1 يربط محطة السكك الحديدية بالبلدة القديمة: ¥1"
+      ],
+      "taxi": [
+        "من البلدة القديمة إلى Songzanlin أو Napa Lake: ¥20-30",
+        "من البلدة القديمة إلى Pudacuo National Park (22 كم شرقًا): ~¥120 ذهابًا وإيابًا",
+        "فان مشترك إلى Napa Lake: ¥5"
+      ],
+      "shuttle": [
+        "حافلة سياحية مكوكية من البلدة القديمة إلى Pudacuo (22 كم شرقًا): ¥30 اتجاه واحد",
+        "جولات يومية إلى Tiger Leaping Gorge (105 كم جنوبًا): ~¥400، تُحجز مع مشغلي الجولات في البلدة القديمة"
+      ],
+      "walking": [
+        "يمكن التجول في البلدة القديمة (Dukezong) سيرًا على الأقدام",
+        "كل ما هو خارج البلدة القديمة يحتاج إلى حافلة أو فان مشترك أو سيارة أجرة"
+      ]
+    }
   },
   "payment": [
     {

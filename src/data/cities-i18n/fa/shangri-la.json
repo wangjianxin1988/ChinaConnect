@@ -1021,11 +1021,54 @@
     }
   ],
   "transport": {
-    "byAir": "Diqing Shangri-La Airport (DIG) — 5 km from old town. Direct flights from Kunming (1h, ~¥800), Chengdu (2h, ~¥1,500), Shanghai (4h, ~¥2,500), Lhasa (2h, ~¥2,000), and seasonal Beijing (3h). Airport to old town: taxi ¥30, Bus 3 ¥1. Summer 2026 added direct flights from Guangzhou and Chongqing.",
-    "byTrain": "Lijiang-Shangri-La high-speed rail opened 2023: Lijiang to Shangri-La in 1h 20min, ~¥80. From Kunming via Lijiang: ~5 hours total. The Shangri-La Railway Station is 8 km from old town; taxi ¥25 or Bus 1 ¥1.",
-    "byBus": "From Lijiang: 4-5 hours, ¥72, frequent departures (every 30 min from Lijiang Bus Station). From Kunming: 10-12 hours, ¥250, overnight buses available. Shangri-La Bus Station is 10 min walk from Dukezong south gate.",
-    "localTransport": "Old town is walkable. For Napa Lake (8 km north) and Songzanlin (5 km north): Bus 3 (¥1), shared van (¥5), or taxi (¥20-30). For Pudacuo (22 km east): tourist shuttle from old town (¥30 one-way) or taxi (~¥120 round trip). For Tiger Leaping Gorge (105 km south): tour operators in old town offer day trips (~¥400).",
-    "tips": "Diqing Airport flights can be cancelled in winter due to snow — book buffer days if flying out in December-February. The Lijiang-Shangri-La high-speed rail is more reliable than flying in winter. Self-driving from Lijiang: 4h, road is paved (last 30 km to Tiger Leaping Gorge is winding)."
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Kunming، Chengdu، Shanghai، Lhasa، Guangzhou، Chongqing، Beijing (فصلی)",
+        "to": "فرودگاه Diqing Shangri-La (DIG)، 5 کیلومتر از شهر قدیمی",
+        "duration": "Kunming 1h، Chengdu 2h، Lhasa 2h، Beijing 3h، Shanghai 4h",
+        "price": "Kunming ~¥800، Chengdu ~¥1,500، Lhasa ~¥2,000، Shanghai ~¥2,500",
+        "frequency": "پروازهای مستقیم؛ Guangzhou و Chongqing در تابستان 2026 افزوده می‌شوند",
+        "tips": "از فرودگاه تا شهر قدیمی: تاکسی ¥30، Bus 3 ¥1. پروازهای زمستانی ممکن است به دلیل برف لغو شوند — اگر در دسامبر تا فوریه پرواز می‌کنید، روزهای بافر رزرو کنید."
+      },
+      {
+        "type": "train",
+        "from": "Lijiang (مستقیم)، Kunming (از طریق Lijiang)",
+        "to": "ایستگاه راه‌آهن Shangri-La، 8 کیلومتر از شهر قدیمی",
+        "duration": "Lijiang 1h 20min؛ Kunming از طریق Lijiang در مجموع ~5h",
+        "price": "Lijiang ~¥80",
+        "frequency": "راه‌آهن سریع‌السیر Lijiang-Shangri-La در 2023 افتتاح شد",
+        "tips": "از ایستگاه تا شهر قدیمی: تاکسی ¥25 یا Bus 1 ¥1. در زمستان قابل‌اعتمادتر از پرواز است."
+      },
+      {
+        "type": "bus",
+        "from": "Lijiang، Kunming",
+        "to": "ایستگاه اتوبوس Shangri-La، 10 min پیاده‌روی از دروازه جنوبی Dukezong",
+        "duration": "Lijiang 4-5h؛ Kunming 10-12h",
+        "price": "Lijiang ¥72؛ Kunming ¥250",
+        "frequency": "هر 30 min از ایستگاه اتوبوس Lijiang؛ اتوبوس‌های شبانه از Kunming",
+        "tips": "رانندگی شخصی از Lijiang حدود 4h روی جاده‌های آسفالت طول می‌کشد."
+      }
+    ],
+    "local": {
+      "bus": [
+        "Bus 3 به صومعه Songzanlin (5 کیلومتر به سمت شمال) و دریاچه Napa (8 کیلومتر به سمت شمال): ¥1",
+        "Bus 1 ایستگاه راه‌آهن را به شهر قدیمی متصل می‌کند: ¥1"
+      ],
+      "taxi": [
+        "از شهر قدیمی تا Songzanlin یا Napa Lake: ¥20-30",
+        "از شهر قدیمی تا پارک ملی Pudacuo (22 km به سمت شرق): حدود ¥120 رفتوبرگشت",
+        "ون اشتراکی به Napa Lake: ¥5"
+      ],
+      "shuttle": [
+        "شاتل گردشگری از شهر قدیمی تا Pudacuo (22 km به سمت شرق): ¥30 یکطرفه",
+        "تورهای یکروزه به Tiger Leaping Gorge (105 km به سمت جنوب): حدود ¥400، با رزرو از طریق اپراتورهای شهر قدیمی"
+      ],
+      "walking": [
+        "شهر قدیمی (Dukezong) قابل پیادهروی است",
+        "برای هر جایی خارج از شهر قدیمی، اتوبوس، ون اشتراکی یا تاکسی لازم است"
+      ]
+    }
   },
   "payment": [
     {

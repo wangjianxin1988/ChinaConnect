@@ -1021,11 +1021,54 @@
     }
   ],
   "transport": {
-    "byAir": "Diqing Shangri-La Airport (DIG) — 5 km from old town. Direct flights from Kunming (1h, ~¥800), Chengdu (2h, ~¥1,500), Shanghai (4h, ~¥2,500), Lhasa (2h, ~¥2,000), and seasonal Beijing (3h). Airport to old town: taxi ¥30, Bus 3 ¥1. Summer 2026 added direct flights from Guangzhou and Chongqing.",
-    "byTrain": "Lijiang-Shangri-La high-speed rail opened 2023: Lijiang to Shangri-La in 1h 20min, ~¥80. From Kunming via Lijiang: ~5 hours total. The Shangri-La Railway Station is 8 km from old town; taxi ¥25 or Bus 1 ¥1.",
-    "byBus": "From Lijiang: 4-5 hours, ¥72, frequent departures (every 30 min from Lijiang Bus Station). From Kunming: 10-12 hours, ¥250, overnight buses available. Shangri-La Bus Station is 10 min walk from Dukezong south gate.",
-    "localTransport": "Old town is walkable. For Napa Lake (8 km north) and Songzanlin (5 km north): Bus 3 (¥1), shared van (¥5), or taxi (¥20-30). For Pudacuo (22 km east): tourist shuttle from old town (¥30 one-way) or taxi (~¥120 round trip). For Tiger Leaping Gorge (105 km south): tour operators in old town offer day trips (~¥400).",
-    "tips": "Diqing Airport flights can be cancelled in winter due to snow — book buffer days if flying out in December-February. The Lijiang-Shangri-La high-speed rail is more reliable than flying in winter. Self-driving from Lijiang: 4h, road is paved (last 30 km to Tiger Leaping Gorge is winding)."
+    "arrival": [
+      {
+        "type": "air",
+        "from": "쿤밍, 청두, 상하이, 라싸, 광저우, 충칭, 베이징 (계절 운항)",
+        "to": "디칭 샹그릴라 공항(DIG), 고성에서 5km",
+        "duration": "쿤밍 1h, 청두 2h, 라싸 2h, 베이징 3h, 상하이 4h",
+        "price": "쿤밍 ~¥800, 청두 ~¥1,500, 라싸 ~¥2,000, 상하이 ~¥2,500",
+        "frequency": "직항편; 광저우와 충칭은 2026년 여름에 추가",
+        "tips": "공항에서 고성까지: 택시 ¥30, Bus 3 ¥1. 겨울철 항공편은 눈으로 인해 결항될 수 있으니 12월~2월에 비행기를 탈 경우 여유 일수를 두고 예약하세요."
+      },
+      {
+        "type": "train",
+        "from": "리장 (직항), 쿤밍 (리장 경유)",
+        "to": "샹그릴라 기차역, 고성에서 8km",
+        "duration": "리장 1h 20min; 리장 경유 쿤밍 총 약 5h",
+        "price": "리장 ~¥80",
+        "frequency": "리장-샹그릴라 고속철도 2023년 개통",
+        "tips": "역에서 고성까지: 택시 ¥25 또는 Bus 1 ¥1. 겨울에는 비행기보다 더 안정적입니다."
+      },
+      {
+        "type": "bus",
+        "from": "리장, 쿤밍",
+        "to": "샹그릴라 버스터미널, 두커쭝 남문에서 도보 10분",
+        "duration": "리장 4-5h; 쿤밍 10-12h",
+        "price": "리장 ¥72; 쿤밍 ¥250",
+        "frequency": "리장 버스터미널에서 30분마다; 쿤밍에서는 야간 버스",
+        "tips": "리장에서 자가운전하면 포장도로로 약 4h 걸립니다."
+      }
+    ],
+    "local": {
+      "bus": [
+        "Bus 3은 송찬린 사원(북쪽 5km)과 나파 호수(북쪽 8km)로 이동: ¥1",
+        "Bus 1은 기차역과 고성을 연결: ¥1"
+      ],
+      "taxi": [
+        "구시가지에서 송잔린(Songzanlin) 또는 나파호(Napa Lake)까지: ¥20-30",
+        "구시가지에서 푸다춰 국립공원(Pudacuo National Park, 동쪽 22 km)까지: 왕복 약 ¥120",
+        "나파호(Napa Lake)까지 합승 밴: ¥5"
+      ],
+      "shuttle": [
+        "구시가지에서 푸다춰(Pudacuo, 동쪽 22 km)까지 관광 셔틀: 편도 ¥30",
+        "호도협(Tiger Leaping Gorge, 남쪽 105 km) 당일 투어: 약 ¥400, 구시가지의 여행사에서 예약"
+      ],
+      "walking": [
+        "구시가지(두커쭝, Dukezong)는 도보로 이동 가능",
+        "구시가지 밖의 모든 곳은 버스, 합승 밴 또는 택시가 필요합니다"
+      ]
+    }
   },
   "payment": [
     {

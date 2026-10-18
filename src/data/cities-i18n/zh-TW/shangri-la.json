@@ -1020,11 +1020,54 @@
     }
   ],
   "transport": {
-    "byAir": "Diqing Shangri-La Airport (DIG) — 5 km from old town. Direct flights from Kunming (1h, ~¥800), Chengdu (2h, ~¥1,500), Shanghai (4h, ~¥2,500), Lhasa (2h, ~¥2,000), and seasonal Beijing (3h). Airport to old town: taxi ¥30, Bus 3 ¥1. Summer 2026 added direct flights from Guangzhou and Chongqing.",
-    "byTrain": "Lijiang-Shangri-La high-speed rail opened 2023: Lijiang to Shangri-La in 1h 20min, ~¥80. From Kunming via Lijiang: ~5 hours total. The Shangri-La Railway Station is 8 km from old town; taxi ¥25 or Bus 1 ¥1.",
-    "byBus": "From Lijiang: 4-5 hours, ¥72, frequent departures (every 30 min from Lijiang Bus Station). From Kunming: 10-12 hours, ¥250, overnight buses available. Shangri-La Bus Station is 10 min walk from Dukezong south gate.",
-    "localTransport": "Old town is walkable. For Napa Lake (8 km north) and Songzanlin (5 km north): Bus 3 (¥1), shared van (¥5), or taxi (¥20-30). For Pudacuo (22 km east): tourist shuttle from old town (¥30 one-way) or taxi (~¥120 round trip). For Tiger Leaping Gorge (105 km south): tour operators in old town offer day trips (~¥400).",
-    "tips": "Diqing Airport flights can be cancelled in winter due to snow — book buffer days if flying out in December-February. The Lijiang-Shangri-La high-speed rail is more reliable than flying in winter. Self-driving from Lijiang: 4h, road is paved (last 30 km to Tiger Leaping Gorge is winding)."
+    "arrival": [
+      {
+        "type": "air",
+        "from": "昆明、成都、上海、拉薩、廣州、重慶、北京（季節性）",
+        "to": "迪慶香格里拉機場（DIG），距古城 5 公里",
+        "duration": "昆明 1h、成都 2h、拉薩 2h、北京 3h、上海 4h",
+        "price": "昆明約 ¥800、成都約 ¥1,500、拉薩約 ¥2,000、上海約 ¥2,500",
+        "frequency": "直飛航班；廣州與重慶於 2026 年夏季新增",
+        "tips": "機場到古城：計程車 ¥30，Bus 3 ¥1。冬季航班可能因雪取消——若在 12 月至 2 月搭機離開，請預留緩衝日。"
+      },
+      {
+        "type": "train",
+        "from": "麗江（直達）、昆明（經麗江）",
+        "to": "香格里拉火車站，距古城 8 公里",
+        "duration": "麗江 1h 20min；昆明經麗江總計約 5h",
+        "price": "麗江約 ¥80",
+        "frequency": "麗江－香格里拉高鐵於 2023 年開通",
+        "tips": "車站到古城：計程車 ¥25 或 Bus 1 ¥1。冬季比搭飛機更可靠。"
+      },
+      {
+        "type": "bus",
+        "from": "麗江、昆明",
+        "to": "香格里拉客運站，步行 10 分鐘可達獨克宗南門",
+        "duration": "麗江 4-5h；昆明 10-12h",
+        "price": "麗江 ¥72；昆明 ¥250",
+        "frequency": "麗江客運站每 30 分鐘一班；昆明有夜班客運",
+        "tips": "從麗江自駕約 4h，沿鋪裝道路行駛。"
+      }
+    ],
+    "local": {
+      "bus": [
+        "Bus 3 往松贊林寺（北方 5 公里）與納帕海（北方 8 公里）：¥1",
+        "Bus 1 連接火車站與古城：¥1"
+      ],
+      "taxi": [
+        "古城到松贊林或納帕海：¥20-30",
+        "古城到普達措國家公園（東邊 22 公里）：來回約 ¥120",
+        "共乘廂型車到納帕海：¥5"
+      ],
+      "shuttle": [
+        "從古城到普達措（東邊 22 公里）的觀光接駁車：單程 ¥30",
+        "虎跳峽（南邊 105 公里）一日遊：約 ¥400，可向古城業者預訂"
+      ],
+      "walking": [
+        "古城（獨克宗）步行即可遊覽",
+        "古城以外的地方都需要搭巴士、共乘廂型車或計程車"
+      ]
+    }
   },
   "payment": [
     {

@@ -1021,11 +1021,54 @@
     }
   ],
   "transport": {
-    "byAir": "Diqing Shangri-La Airport (DIG) — 5 km from old town. Direct flights from Kunming (1h, ~¥800), Chengdu (2h, ~¥1,500), Shanghai (4h, ~¥2,500), Lhasa (2h, ~¥2,000), and seasonal Beijing (3h). Airport to old town: taxi ¥30, Bus 3 ¥1. Summer 2026 added direct flights from Guangzhou and Chongqing.",
-    "byTrain": "Lijiang-Shangri-La high-speed rail opened 2023: Lijiang to Shangri-La in 1h 20min, ~¥80. From Kunming via Lijiang: ~5 hours total. The Shangri-La Railway Station is 8 km from old town; taxi ¥25 or Bus 1 ¥1.",
-    "byBus": "From Lijiang: 4-5 hours, ¥72, frequent departures (every 30 min from Lijiang Bus Station). From Kunming: 10-12 hours, ¥250, overnight buses available. Shangri-La Bus Station is 10 min walk from Dukezong south gate.",
-    "localTransport": "Old town is walkable. For Napa Lake (8 km north) and Songzanlin (5 km north): Bus 3 (¥1), shared van (¥5), or taxi (¥20-30). For Pudacuo (22 km east): tourist shuttle from old town (¥30 one-way) or taxi (~¥120 round trip). For Tiger Leaping Gorge (105 km south): tour operators in old town offer day trips (~¥400).",
-    "tips": "Diqing Airport flights can be cancelled in winter due to snow — book buffer days if flying out in December-February. The Lijiang-Shangri-La high-speed rail is more reliable than flying in winter. Self-driving from Lijiang: 4h, road is paved (last 30 km to Tiger Leaping Gorge is winding)."
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Куньмин, Чэнду, Шанхай, Лхаса, Гуанчжоу, Чунцин, Пекин (сезонно)",
+        "to": "Аэропорт Дицин Шангри-Ла (DIG), 5 км от старого города",
+        "duration": "Куньмин 1h, Чэнду 2h, Лхаса 2h, Пекин 3h, Шанхай 4h",
+        "price": "Куньмин ~¥800, Чэнду ~¥1,500, Лхаса ~¥2,000, Шанхай ~¥2,500",
+        "frequency": "Прямые рейсы; Гуанчжоу и Чунцин добавлены летом 2026",
+        "tips": "Из аэропорта до старого города: такси ¥30, Bus 3 ¥1. Зимой рейсы могут отменяться из-за снега — закладывайте запасные дни, если вылетаете в декабре-феврале."
+      },
+      {
+        "type": "train",
+        "from": "Лицзян (прямой), Куньмин (через Лицзян)",
+        "to": "Железнодорожная станция Шангри-Ла, 8 км от старого города",
+        "duration": "Лицзян 1h 20min; Куньмин через Лицзян ~5h в общей сложности",
+        "price": "Лицзян ~¥80",
+        "frequency": "Высокоскоростная железная дорога Лицзян — Шангри-Ла открылась в 2023",
+        "tips": "От станции до старого города: такси ¥25 или Bus 1 ¥1. Надежнее, чем лететь зимой."
+      },
+      {
+        "type": "bus",
+        "from": "Лицзян, Куньмин",
+        "to": "Автобусная станция Шангри-Ла, 10 min пешком от южных ворот Дукэцзуна",
+        "duration": "Лицзян 4-5h; Куньмин 10-12h",
+        "price": "Лицзян ¥72; Куньмин ¥250",
+        "frequency": "Каждые 30 min с автобусной станции Лицзяна; ночные автобусы из Куньмина",
+        "tips": "На автомобиле из Лицзяна около 4h по асфальтированным дорогам."
+      }
+    ],
+    "local": {
+      "bus": [
+        "Bus 3 до монастыря Сунцзаньлинь (5 км севернее) и озера Напа (8 км севернее): ¥1",
+        "Bus 1 соединяет железнодорожную станцию со старым городом: ¥1"
+      ],
+      "taxi": [
+        "Из старого города до Songzanlin или Napa Lake: ¥20-30",
+        "Из старого города до национального парка Pudacuo (22 км к востоку): ~¥120 туда и обратно",
+        "Маршрутное такси до Napa Lake: ¥5"
+      ],
+      "shuttle": [
+        "Туристический шаттл из старого города до Pudacuo (22 км к востоку): ¥30 в одну сторону",
+        "Однодневные туры к Tiger Leaping Gorge (105 км к югу): ~¥400, бронирование у операторов в старом городе"
+      ],
+      "walking": [
+        "Старый город (Dukezong) можно обойти пешком",
+        "Для всего за пределами старого города нужен автобус, маршрутное такси или такси"
+      ]
+    }
   },
   "payment": [
     {
