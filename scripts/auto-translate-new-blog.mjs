@@ -171,7 +171,11 @@ Translate the following Markdown section into ${TARGETS[lang]}. This is part ${i
 RULES:
 - Output ONLY the translated Markdown. No JSON, no code fences, no commentary.
 - Preserve ALL Markdown syntax exactly: # ## ### headings, - bullets, **bold**, | tables |, [links](url), --- rules, > quotes.
-- Keep numbers, prices (¥45), times, dates, URLs, and proper nouns unchanged.
+- Keep URLs and prices (¥45) unchanged. Keep all figures identical.
+- Write dates and times in the natural form of the target language - never leave an English month name in the output (Japanese: 2026年12月31日; Simplified Chinese: 2026年12月31日; Arabic: 31 ديسمبر 2026).
+- Translate the country name "China" into the target language (Japanese: 中国, Chinese: 中国, Arabic: الصين) except inside URLs or the brand name ChinaConnect.
+- Translate government body names (National Immigration Administration, Ministry of Foreign Affairs, State Council) into the target language.
+- Render all other proper nouns (city, airline, company names) in the script of the target language where a conventional form exists.
 - Do not add, merge, or remove sections. Do not summarise. Translate every sentence.
 - Do not restate these instructions.
 
