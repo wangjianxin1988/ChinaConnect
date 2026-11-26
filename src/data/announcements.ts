@@ -21,6 +21,39 @@ function L(
 
 export const ANNOUNCEMENTS: Announcement[] = [
   {
+    id: "2026-11-26-skiing-chongli-yabuli",
+    date: "2026-11-26",
+    title: L(
+      "New guide: skiing in China 2026-27, Chongli vs Yabuli",
+      "新ガイド：2026-27年中国スキー、崇礼とヤブリの比較",
+      "새 가이드: 2026-27 중국 스키, 충리 대 야부리",
+      "新指南：2026-27 中国滑雪，崇礼与亚布力怎么选",
+      "新指南：2026-27 中國滑雪，崇禮與亞布力怎麼選",
+      "คู่มือใหม่: สกีในจีน 2026-27 ฉงลี่กับย่าปู้ลี่",
+      "Hướng dẫn mới: Trượt tuyết Trung Quốc 2026-27, Chongli và Yabuli",
+      "Новый гид: горные лыжи в Китае 2026-27, Чунли и Ябули",
+      "Nouveau guide : le ski en Chine 2026-27, Chongli vs Yabuli",
+      "Neuer Ratgeber: Skifahren in China 2026-27, Chongli vs. Yabuli",
+      "دليل جديد: التزلج في الصين 2026-27، تشونغلي مقابل يابولي",
+      "راهنمای جدید: اسکی در چین ۲۰۲۶-۲۷، چونگلی در برابر یابولی"
+    ),
+    body: L(
+      "Both mountain areas are open: Wanlong started on 23 October and the Chongli season opened on 31 October, Yabuli on 6 November. The guide lists real lift and lesson prices, the 58-minute train from Beijing Qinghe, ski-bag rules and consignment fees, and the passport-and-payment traps that catch first-time visitors.",
+      "両方のスキーエリアが営業中です。万龍は10月23日、崇礼のシーズンは10月31日に開幕し、ヤブリは11月6日にオープンしました。実際のリフト券・レッスン料金、北京清河からの58分の列車、スキーバッグの規定と託送料金、そして初訪問者がつまずくパスポートと支払いの注意点をまとめています。",
+      "두 스키 지역이 모두 개장했습니다. 완룽은 10월 23일, 충리 시즌은 10월 31일에 시작했고 야부리는 11월 6일에 문을 열었습니다. 실제 리프트권과 강습 가격, 베이징 칭허에서 58분 기차, 스키 가방 규정과 위탁 요금, 처음 방문자가 걸리는 여권·결제 함정을 정리했습니다.",
+      "中国两大雪区均已开放：万龙 10 月 23 日开板，崇礼雪季 10 月 31 日开幕，亚布力 11 月 6 日开滑。指南列出真实缆车票与课程价格、北京清河 58 分钟直达列车、雪具包携带与托运规则，以及第一次去最容易踩的护照和支付坑。",
+      "中國兩大雪區均已開放：萬龍 10 月 23 日開板，崇禮雪季 10 月 31 日開幕，亞布力 11 月 6 日開滑。指南列出真實纜車票與課程價格、北京清河 58 分鐘直達列車、雪具袋攜帶與託運規則，以及第一次去最容易踩的護照和支付坑。",
+      "ทั้งสองพื้นที่สกีเปิดแล้ว วันหลงเริ่ม 23 ตุลาคม ฤดูกาลฉงลี่เปิด 31 ตุลาคม และย่าปู้ลี่เปิด 6 พฤศจิกายน คู่มือรวมราคาลิฟต์และคอร์สเรียนจริง รถไฟ 58 นาทีจากชิงเหอ ปักกิ่ง กฎการพาสกีแบ็กและการฝากส่ง รวมถึงกับดักเรื่องหนังสือเดินทางและการจ่ายเงิน",
+      "Cả hai khu trượt tuyết đã mở: Wanlong khởi động 23/10, mùa Chongli mở 31/10 và Yabuli mở 6/11. Hướng dẫn nêu giá vé cáp treo và học trượt thực tế, chuyến tàu 58 phút từ Thanh Hà (Bắc Kinh), quy định mang và ký gửi túi ván trượt, cùng các bẫy hộ chiếu và thanh toán.",
+      "Оба горнолыжных района открыты: Ваньлун стартовал 23 октября, сезон в Чунли открылся 31 октября, Ябули — 6 ноября. В гиде реальные цены на подъёмники и занятия, 58-минутный поезд из Цинхэ, правила провоза и отправки лыжных чехлов, а также ловушки с паспортом и оплатой.",
+      "Les deux domaines skiables sont ouverts : Wanlong a démarré le 23 octobre, la saison de Chongli le 31 octobre et Yabuli le 6 novembre. Le guide donne les vrais prix des remontées et des cours, le train de 58 minutes depuis Qinghe, les règles de transport des housses de ski et les pièges de passeport et de paiement.",
+      "Beide Skigebiete sind offen: Wanlong startete am 23. Oktober, die Saison in Chongli am 31. Oktober, Yabuli am 6. November. Der Ratgeber nennt echte Preise für Lifte und Kurse, den 58-Minuten-Zug ab Qinghe, Regeln für Skigepäck und Aufgabe, sowie die Pass- und Zahlungsfallen.",
+      "كلا منطقتي التزلج مفتوحتان: بدأ وانلونغ في 23 أكتوبر، وافتُتح موسم تشونغلي في 31 أكتوبر، ويابولي في 6 نوفمبر. يقدّم الدليل أسعارًا حقيقية للمصاعد والدروس، وقطار الـ58 دقيقة من تشينغهي، وقواعد حمل وحجز حقيبة التزلج، ومزالق جواز السفر والدفع.",
+      "هر دو منطقه اسکی باز هستند: وان‌لانگ از ۲۳ اکتبر، فصل چونگلی از ۳۱ اکتبر و یابولی از ۶ نوامبر آغاز شد. راهنما قیمت واقعی لیفت و کلاس، قطار ۵۸ دقیقه‌ای از چینگ‌هه، قواعد حمل و ارسال کیف اسکی و دام‌های گذرنامه و پرداخت را شرح می‌دهد."
+    ),
+    link: "/blog/skiing-in-china-chongli-vs-yabuli-2026-27"
+  },
+  {
     id: "2026-10-18-visa-free-transit",
     date: "2026-10-18",
     title: L(
